@@ -3,21 +3,36 @@ import { DndContext, closestCenter } from '@dnd-kit/core'
 import { SortableContext, arrayMove, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 import { importFromCsvFile, exportToCsv } from '../utils/csv.js'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
+import { Button } from './ui/button.jsx'
+import { Input } from './ui/input.jsx'
+import { Badge } from './ui/badge.jsx'
+import { Separator } from './ui/separator.jsx'
+import { Save, RefreshCw, PlusCircle, Trash2, GripVertical, Download, Upload, AlertCircle } from 'lucide-react'
 
 function SortableItem({ id, label }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id })
   const style = {
     transform: CSS.Transform.toString(transform),
     transition,
-    opacity: isDragging ? 0.7 : 1,
   }
   return (
-    <div ref={setNodeRef} style={style} className="columnItem">
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-        <span className="dragHandle" {...attributes} {...listeners}>⋮⋮</span>
-        <span>{label}</span>
+    <div
+      ref={setNodeRef}
+      style={style}
+      className={`flex items-center justify-between gap-3 rounded-lg border bg-card px-3 py-2.5 ${isDragging ? 'ring-2 ring-ring opacity-80 shadow-lg' : ''}`}
+    >
+      <div className="flex items-center gap-2.5">
+        <button
+          className="cursor-grab touch-none text-muted-foreground hover:text-foreground"
+          {...attributes}
+          {...listeners}
+        >
+          <GripVertical className="h-4 w-4" />
+        </button>
+        <span className="text-sm font-medium">{label}</span>
       </div>
-      <span className="smallMuted">drag to reorder</span>
+      <span className="text-xs text-muted-foreground">drag to reorder</span>
     </div>
   )
 }
@@ -36,11 +51,6 @@ export default function AdminPanel({
   const [removeName, setRemoveName] = useState('')
   const [newColName, setNewColName] = useState('')
   const [importError, setImportError] = useState('')
-
-  // Note: columns can be dragged to any position, so new columns are simply appended.
-  // Admin can reorder via drag-and-drop.
-
-  if (!open) return null
 
   const removeColumn = () => {
     const target = removeName.trim().toLowerCase()
@@ -100,9 +110,7 @@ export default function AdminPanel({
     setImportError('')
     const { columns: cols, rows: importedRows } = await importFromCsvFile(file)
     if (!cols.length) throw new Error('CSV must have a header row (column names).')
-    // Replace dataset (simple & predictable)
     setColumns(cols)
-    // Create ids client-side; DB will accept them as-is
     const withIds = importedRows.map((r) => ({ id: crypto.randomUUID(), data: r.data }))
     setRows(withIds)
   }
@@ -119,45 +127,55 @@ export default function AdminPanel({
   }
 
   return (
-    <div className="modalBackdrop" role="dialog" aria-modal="true">
-      <div className="modal">
-        <div className="modalHeader">
-          <h3>Admin Panel</h3>
-          <button onClick={onClose}>Close</button>
-        </div>
+    <Dialog open={open} onOpenChange={(v) => { if (!v) onClose() }}>
+      <DialogContent className="sm:max-w-3xl grid gap-4">
+        <DialogHeader>
+          <DialogTitle>Admin Panel</DialogTitle>
+          <DialogDescription>
+            Edit the table directly, manage columns, and import/export CSV.
+          </DialogDescription>
+        </DialogHeader>
 
-        <div className="smallMuted">
-          You can edit the table directly, manage columns, and import/export CSV.
-        </div>
-
-        <div className="hr" />
-
-        <div className="row" style={{ justifyContent: 'space-between' }}>
-          <div className="row">
-            <button className="primary" onClick={onSaveToDb} disabled={saving}>
-              {saving ? 'Saving…' : 'Save to Database'}
-            </button>
-            <button onClick={onReloadFromDb} disabled={saving}>Reload from Database</button>
-            <button onClick={addRow} disabled={saving}>Add row</button>
-            <button className="danger" onClick={wipeAll} disabled={saving}>Delete all rows</button>
+        {/* Action bar */}
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-wrap items-center gap-2">
+            <Button size="sm" onClick={onSaveToDb} disabled={saving}>
+              <Save className="h-4 w-4" />
+              {saving ? 'Saving...' : 'Save to Database'}
+            </Button>
+            <Button variant="outline" size="sm" onClick={onReloadFromDb} disabled={saving}>
+              <RefreshCw className="h-4 w-4" />
+              Reload
+            </Button>
+            <Button variant="secondary" size="sm" onClick={addRow} disabled={saving}>
+              <PlusCircle className="h-4 w-4" />
+              Add row
+            </Button>
+            <Button variant="destructive" size="sm" onClick={wipeAll} disabled={saving}>
+              <Trash2 className="h-4 w-4" />
+              Delete all rows
+            </Button>
           </div>
-          <div className="badge">
-            <span className="smallMuted">Columns:</span>
-            <strong>{columns.length}</strong>
-            <span className="smallMuted">Rows:</span>
-            <strong>{rows.length}</strong>
+          <div className="flex items-center gap-3">
+            <Badge variant="outline" className="gap-1.5">
+              Columns: <span className="font-bold">{columns.length}</span>
+            </Badge>
+            <Badge variant="outline" className="gap-1.5">
+              Rows: <span className="font-bold">{rows.length}</span>
+            </Badge>
           </div>
         </div>
 
-        <div className="hr" />
+        <Separator />
 
-        <div className="row" style={{ alignItems: 'flex-start' }}>
-          <div style={{ flex: 1, minWidth: 260 }}>
-            <div className="label">Reorder columns (drag)</div>
-            <div style={{ height: 8 }} />
-            <DndContext collisionDetection={closestCenter} onDragEnd={onDragEnd}>
+        {/* Two-column grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Left: Column reorder */}
+          <div>
+            <h4 className="text-sm font-medium mb-3">Reorder columns (drag)</h4>
+            <DndContext collisionDetection={closestCenter} onDragEnd={onDragEnd} autoScroll={false}>
               <SortableContext items={columns} strategy={verticalListSortingStrategy}>
-                <div className="columnsList">
+                <div className="grid gap-2">
                   {columns.map(col => (
                     <SortableItem key={col} id={col} label={col} />
                   ))}
@@ -166,81 +184,94 @@ export default function AdminPanel({
             </DndContext>
           </div>
 
-          <div style={{ width: 16 }} />
-
-          <div style={{ flex: 1, minWidth: 260 }}>
-            <div className="label">Add new column</div>
-            <div style={{ height: 8 }} />
-            <div className="row">
-              <input
-                type="text"
-                placeholder="New column name"
-                value={newColName}
-                onChange={(e) => setNewColName(e.target.value)}
-                style={{ flex: 1 }}
-              />
-              <button className="primary" onClick={addColumn}>Add</button>
-            </div>
-
-            <div style={{ height: 14 }} />
-
-            <div className="label">Remove column (type the column name)</div>
-            <div style={{ height: 8 }} />
-            <div className="row">
-              <input
-                type="text"
-                placeholder="Column name to remove"
-                value={removeName}
-                onChange={(e) => setRemoveName(e.target.value)}
-                style={{ flex: 1 }}
-              />
-              <button className="danger" onClick={removeColumn}>Remove</button>
-            </div>
-
-            <div style={{ height: 14 }} />
-
-            <div className="label">Import / Export</div>
-            <div style={{ height: 8 }} />
-            <div className="row">
-              <button onClick={() => exportToCsv({ columns, rows })}>Export CSV</button>
-              <label className="badge" style={{ cursor: 'pointer' }}>
-                <input
-                  type="file"
-                  accept=".csv,text/csv"
-                  onChange={async (e) => {
-                    const file = e.target.files?.[0]
-                    if (!file) return
-                    try {
-                      await importCsv(file)
-                    } catch (err) {
-                      setImportError(String(err?.message || err))
-                    } finally {
-                      e.target.value = ''
-                    }
-                  }}
+          {/* Right: Add/Remove columns, CSV */}
+          <div className="space-y-5">
+            <div>
+              <h4 className="text-sm font-medium mb-2">Add new column</h4>
+              <div className="flex gap-2">
+                <Input
+                  placeholder="New column name"
+                  value={newColName}
+                  onChange={(e) => setNewColName(e.target.value)}
+                  className="flex-1"
                 />
-                <span>Import CSV (replaces dataset)</span>
-              </label>
+                <Button size="sm" onClick={addColumn}>
+                  <PlusCircle className="h-4 w-4" />
+                  Add
+                </Button>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-medium mb-2">Remove column</h4>
+              <div className="flex gap-2">
+                <Input
+                  placeholder="Column name to remove"
+                  value={removeName}
+                  onChange={(e) => setRemoveName(e.target.value)}
+                  className="flex-1"
+                />
+                <Button variant="destructive" size="sm" onClick={removeColumn}>
+                  <Trash2 className="h-4 w-4" />
+                  Remove
+                </Button>
+              </div>
+            </div>
+
+            <Separator />
+
+            <div>
+              <h4 className="text-sm font-medium mb-2">Import / Export</h4>
+              <div className="flex flex-wrap gap-2">
+                <Button variant="outline" size="sm" onClick={() => exportToCsv({ columns, rows })}>
+                  <Download className="h-4 w-4" />
+                  Export CSV
+                </Button>
+                <label>
+                  <Button variant="outline" size="sm" asChild>
+                    <span className="cursor-pointer">
+                      <Upload className="h-4 w-4" />
+                      Import CSV
+                    </span>
+                  </Button>
+                  <input
+                    type="file"
+                    accept=".csv,text/csv"
+                    className="hidden"
+                    onChange={async (e) => {
+                      const file = e.target.files?.[0]
+                      if (!file) return
+                      try {
+                        await importCsv(file)
+                      } catch (err) {
+                        setImportError(String(err?.message || err))
+                      } finally {
+                        e.target.value = ''
+                      }
+                    }}
+                  />
+                </label>
+              </div>
+              <p className="text-xs text-muted-foreground mt-2">
+                CSV header row becomes your column names. Import replaces the current table (columns + rows).
+              </p>
             </div>
 
             {importError ? (
-              <div style={{ marginTop: 10 }} className="badge">
-                <span style={{ color: '#fca5a5' }}>{importError}</span>
+              <div className="flex items-center gap-2 rounded-lg border border-destructive/30 bg-destructive/5 px-3 py-2 text-sm text-destructive">
+                <AlertCircle className="h-4 w-4 shrink-0" />
+                {importError}
               </div>
             ) : null}
-
-            <div style={{ marginTop: 12 }} className="smallMuted">
-              Tip: CSV header row becomes your column names. Import replaces the current table (columns + rows).
-            </div>
           </div>
         </div>
 
-        <div className="hr" />
+        <Separator />
 
-        <div className="smallMuted">
+        <p className="text-xs text-muted-foreground">
           Changes to columns affect every row. Save to persist changes to Neon (Postgres).
-        </div>
-      </div>
-    </div>
+        </p>
+      </DialogContent>
+    </Dialog>
   )
 }
