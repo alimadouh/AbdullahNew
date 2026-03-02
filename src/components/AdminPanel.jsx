@@ -8,9 +8,13 @@ import { Button } from './ui/button.jsx'
 import { Input } from './ui/input.jsx'
 import { Badge } from './ui/badge.jsx'
 import { Separator } from './ui/separator.jsx'
-import { Save, RefreshCw, PlusCircle, Trash2, GripVertical, Download, Upload, AlertCircle } from 'lucide-react'
+import {
+  Save, RefreshCw, PlusCircle, Trash2, GripVertical,
+  Download, Upload, AlertCircle, X, Columns3, Table2,
+  ArrowLeftRight, AlertTriangle,
+} from 'lucide-react'
 
-function SortableItem({ id, label }) {
+function SortableColumn({ id, label, onDelete }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id })
   const style = {
     transform: CSS.Transform.toString(transform),
@@ -20,19 +24,23 @@ function SortableItem({ id, label }) {
     <div
       ref={setNodeRef}
       style={style}
-      className={`flex items-center justify-between gap-3 rounded-lg border bg-card px-3 py-2.5 ${isDragging ? 'ring-2 ring-ring opacity-80 shadow-lg' : ''}`}
+      className={`group flex items-center gap-3 rounded-lg border bg-card px-3 py-2.5 ${isDragging ? 'ring-2 ring-ring opacity-80 shadow-lg z-10' : ''}`}
     >
-      <div className="flex items-center gap-2.5">
-        <button
-          className="cursor-grab touch-none text-muted-foreground hover:text-foreground"
-          {...attributes}
-          {...listeners}
-        >
-          <GripVertical className="h-4 w-4" />
-        </button>
-        <span className="text-sm font-medium">{label}</span>
-      </div>
-      <span className="text-xs text-muted-foreground">drag to reorder</span>
+      <button
+        className="cursor-grab touch-none text-muted-foreground hover:text-foreground shrink-0"
+        {...attributes}
+        {...listeners}
+      >
+        <GripVertical className="h-4 w-4" />
+      </button>
+      <span className="text-sm font-medium flex-1 truncate">{label}</span>
+      <button
+        onClick={() => onDelete(id)}
+        className="shrink-0 rounded-md p-1 text-muted-foreground opacity-0 transition-opacity hover:bg-destructive/10 hover:text-destructive group-hover:opacity-100 focus:opacity-100 cursor-pointer"
+        title={`Remove "${label}"`}
+      >
+        <X className="h-3.5 w-3.5" />
+      </button>
     </div>
   )
 }
@@ -48,19 +56,13 @@ export default function AdminPanel({
   saving,
   onReloadFromDb,
 }) {
-  const [removeName, setRemoveName] = useState('')
+  const [activeTab, setActiveTab] = useState('columns')
   const [newColName, setNewColName] = useState('')
   const [importError, setImportError] = useState('')
 
-  const removeColumn = () => {
-    const target = removeName.trim().toLowerCase()
-    if (!target) return
-    const idx = columns.findIndex(c => String(c).toLowerCase() === target)
-    if (idx === -1) {
-      setImportError(`Column not found: "${removeName}"`)
-      return
-    }
-    const col = columns[idx]
+  /* ── Column operations ── */
+  const removeColumn = (col) => {
+    if (!confirm(`Remove column "${col}"? This deletes that field from every row.`)) return
     const nextCols = columns.filter(c => c !== col)
     setColumns(nextCols)
     setRows(rows.map(r => {
@@ -68,7 +70,6 @@ export default function AdminPanel({
       delete data[col]
       return { ...r, data }
     }))
-    setRemoveName('')
     setImportError('')
   }
 
@@ -106,6 +107,7 @@ export default function AdminPanel({
     }
   }
 
+  /* ── CSV operations ── */
   const importCsv = async (file) => {
     setImportError('')
     const { columns: cols, rows: importedRows } = await importFromCsvFile(file)
@@ -113,8 +115,10 @@ export default function AdminPanel({
     setColumns(cols)
     const withIds = importedRows.map((r) => ({ id: crypto.randomUUID(), data: r.data }))
     setRows(withIds)
+    setActiveTab('columns')
   }
 
+  /* ── Row operations ── */
   const addRow = () => {
     const empty = {}
     for (const c of columns) empty[c] = ''
@@ -126,112 +130,183 @@ export default function AdminPanel({
     setRows([])
   }
 
+  /* ── Tab definitions ── */
+  const tabs = [
+    { key: 'columns', label: 'Columns', icon: Columns3 },
+    { key: 'rows', label: 'Rows', icon: Table2 },
+    { key: 'import-export', label: 'Import / Export', icon: ArrowLeftRight },
+  ]
+
   return (
     <Dialog open={open} onOpenChange={(v) => { if (!v) onClose() }}>
-      <DialogContent className="sm:max-w-3xl grid gap-4">
-        <DialogHeader>
-          <DialogTitle>Admin Panel</DialogTitle>
-          <DialogDescription>
-            Edit the table directly, manage columns, and import/export CSV.
-          </DialogDescription>
-        </DialogHeader>
-
-        {/* Action bar */}
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex flex-wrap items-center gap-2">
-            <Button size="sm" onClick={onSaveToDb} disabled={saving}>
-              <Save className="h-4 w-4" />
-              {saving ? 'Saving...' : 'Save to Database'}
-            </Button>
-            <Button variant="outline" size="sm" onClick={onReloadFromDb} disabled={saving}>
-              <RefreshCw className="h-4 w-4" />
-              Reload
-            </Button>
-            <Button variant="secondary" size="sm" onClick={addRow} disabled={saving}>
-              <PlusCircle className="h-4 w-4" />
-              Add row
-            </Button>
-            <Button variant="destructive" size="sm" onClick={wipeAll} disabled={saving}>
-              <Trash2 className="h-4 w-4" />
-              Delete all rows
-            </Button>
+      <DialogContent className="w-[95vw] max-w-5xl max-h-[90vh] flex flex-col p-0 gap-0">
+        {/* ── Sticky top bar ── */}
+        <div className="sticky top-0 z-20 border-b bg-background px-6 py-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <DialogHeader className="space-y-1">
+              <DialogTitle className="text-xl">Admin Panel</DialogTitle>
+              <DialogDescription>
+                Manage columns, rows, and import/export your data.
+              </DialogDescription>
+            </DialogHeader>
+            <div className="flex flex-wrap items-center gap-2">
+              <Badge variant="outline" className="gap-1.5">
+                <Columns3 className="h-3 w-3" />
+                {columns.length} cols
+              </Badge>
+              <Badge variant="outline" className="gap-1.5">
+                <Table2 className="h-3 w-3" />
+                {rows.length} rows
+              </Badge>
+              <Separator orientation="vertical" className="h-6 hidden sm:block" />
+              <Button size="sm" onClick={onSaveToDb} disabled={saving}>
+                <Save className="h-4 w-4" />
+                {saving ? 'Saving…' : 'Save'}
+              </Button>
+              <Button variant="outline" size="sm" onClick={onReloadFromDb} disabled={saving}>
+                <RefreshCw className="h-4 w-4" />
+                Reload
+              </Button>
+            </div>
           </div>
-          <div className="flex items-center gap-3">
-            <Badge variant="outline" className="gap-1.5">
-              Columns: <span className="font-bold">{columns.length}</span>
-            </Badge>
-            <Badge variant="outline" className="gap-1.5">
-              Rows: <span className="font-bold">{rows.length}</span>
-            </Badge>
+
+          {/* ── Tab switcher ── */}
+          <div className="mt-4 flex gap-1 rounded-lg bg-muted p-1">
+            {tabs.map(({ key, label, icon: Icon }) => (
+              <button
+                key={key}
+                onClick={() => { setActiveTab(key); setImportError('') }}
+                className={`flex flex-1 items-center justify-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors cursor-pointer ${
+                  activeTab === key
+                    ? 'bg-background text-foreground shadow-sm'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                <Icon className="h-4 w-4" />
+                <span className="hidden sm:inline">{label}</span>
+              </button>
+            ))}
           </div>
         </div>
 
-        <Separator />
+        {/* ── Scrollable content area ── */}
+        <div className="flex-1 overflow-y-auto px-6 py-5">
+          {/* Error banner */}
+          {importError && (
+            <div className="mb-4 flex items-center gap-2 rounded-lg border border-destructive/30 bg-destructive/5 px-4 py-3 text-sm text-destructive">
+              <AlertCircle className="h-4 w-4 shrink-0" />
+              <span className="flex-1">{importError}</span>
+              <button onClick={() => setImportError('')} className="shrink-0 cursor-pointer">
+                <X className="h-3.5 w-3.5" />
+              </button>
+            </div>
+          )}
 
-        {/* Two-column grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Left: Column reorder */}
-          <div>
-            <h4 className="text-sm font-medium mb-3">Reorder columns (drag)</h4>
-            <DndContext collisionDetection={closestCenter} onDragEnd={onDragEnd} autoScroll={false}>
-              <SortableContext items={columns} strategy={verticalListSortingStrategy}>
-                <div className="grid gap-2">
-                  {columns.map(col => (
-                    <SortableItem key={col} id={col} label={col} />
-                  ))}
+          {/* ── Tab: Columns ── */}
+          {activeTab === 'columns' && (
+            <div className="space-y-5">
+              {columns.length === 0 ? (
+                <div className="rounded-lg border border-dashed py-12 text-center text-muted-foreground">
+                  No columns yet. Add one below or import a CSV.
                 </div>
-              </SortableContext>
-            </DndContext>
-          </div>
+              ) : (
+                <DndContext collisionDetection={closestCenter} onDragEnd={onDragEnd} autoScroll={false}>
+                  <SortableContext items={columns} strategy={verticalListSortingStrategy}>
+                    <div className="grid gap-2">
+                      {columns.map(col => (
+                        <SortableColumn key={col} id={col} label={col} onDelete={removeColumn} />
+                      ))}
+                    </div>
+                  </SortableContext>
+                </DndContext>
+              )}
 
-          {/* Right: Add/Remove columns, CSV */}
-          <div className="space-y-5">
-            <div>
-              <h4 className="text-sm font-medium mb-2">Add new column</h4>
-              <div className="flex gap-2">
-                <Input
-                  placeholder="New column name"
-                  value={newColName}
-                  onChange={(e) => setNewColName(e.target.value)}
-                  className="flex-1"
-                />
-                <Button size="sm" onClick={addColumn}>
+              <Separator />
+
+              {/* Add new column */}
+              <div>
+                <h4 className="text-sm font-medium mb-2">Add New Column</h4>
+                <div className="flex gap-2">
+                  <Input
+                    placeholder="Column name…"
+                    value={newColName}
+                    onChange={(e) => setNewColName(e.target.value)}
+                    onKeyDown={(e) => { if (e.key === 'Enter') addColumn() }}
+                    className="flex-1 max-w-sm"
+                  />
+                  <Button size="sm" onClick={addColumn}>
+                    <PlusCircle className="h-4 w-4" />
+                    Add
+                  </Button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* ── Tab: Rows ── */}
+          {activeTab === 'rows' && (
+            <div className="grid gap-4 sm:grid-cols-2">
+              {/* Add row card */}
+              <div className="rounded-xl border bg-card p-5 space-y-3">
+                <h4 className="text-sm font-semibold">Add Empty Row</h4>
+                <p className="text-sm text-muted-foreground">
+                  Creates a new blank row at the top of the table with all current columns.
+                </p>
+                <Button size="sm" onClick={addRow} disabled={saving || columns.length === 0}>
                   <PlusCircle className="h-4 w-4" />
-                  Add
+                  Add Row
                 </Button>
               </div>
-            </div>
 
-            <div>
-              <h4 className="text-sm font-medium mb-2">Remove column</h4>
-              <div className="flex gap-2">
-                <Input
-                  placeholder="Column name to remove"
-                  value={removeName}
-                  onChange={(e) => setRemoveName(e.target.value)}
-                  className="flex-1"
-                />
-                <Button variant="destructive" size="sm" onClick={removeColumn}>
+              {/* Delete all rows card */}
+              <div className="rounded-xl border border-destructive/20 bg-destructive/5 p-5 space-y-3">
+                <h4 className="text-sm font-semibold text-destructive">Delete All Rows</h4>
+                <p className="text-sm text-muted-foreground">
+                  Permanently removes all <span className="font-bold">{rows.length}</span> rows. Columns are kept.
+                </p>
+                <Button variant="destructive" size="sm" onClick={wipeAll} disabled={saving || rows.length === 0}>
                   <Trash2 className="h-4 w-4" />
-                  Remove
+                  Delete All ({rows.length})
                 </Button>
               </div>
+
+              {/* Summary */}
+              <div className="sm:col-span-2 rounded-lg bg-muted/50 px-4 py-3 text-sm text-muted-foreground">
+                Current dataset: <strong>{columns.length}</strong> columns × <strong>{rows.length}</strong> rows. Remember to <strong>Save</strong> after making changes.
+              </div>
             </div>
+          )}
 
-            <Separator />
-
-            <div>
-              <h4 className="text-sm font-medium mb-2">Import / Export</h4>
-              <div className="flex flex-wrap gap-2">
-                <Button variant="outline" size="sm" onClick={() => exportToCsv({ columns, rows })}>
+          {/* ── Tab: Import / Export ── */}
+          {activeTab === 'import-export' && (
+            <div className="grid gap-4 sm:grid-cols-2">
+              {/* Export card */}
+              <div className="rounded-xl border bg-card p-5 space-y-3">
+                <h4 className="text-sm font-semibold">Export to CSV</h4>
+                <p className="text-sm text-muted-foreground">
+                  Download the current table as a CSV file. Includes all columns and rows.
+                </p>
+                <Button variant="outline" size="sm" onClick={() => exportToCsv({ columns, rows })} disabled={columns.length === 0}>
                   <Download className="h-4 w-4" />
-                  Export CSV
+                  Download CSV
                 </Button>
+              </div>
+
+              {/* Import card */}
+              <div className="rounded-xl border bg-card p-5 space-y-3">
+                <h4 className="text-sm font-semibold">Import from CSV</h4>
+                <p className="text-sm text-muted-foreground">
+                  Upload a CSV file to replace the current table. The header row becomes your column names.
+                </p>
+                <div className="flex items-center gap-2 rounded-md border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-xs text-amber-700 dark:text-amber-400">
+                  <AlertTriangle className="h-3.5 w-3.5 shrink-0" />
+                  Import replaces all existing columns and rows.
+                </div>
                 <label>
                   <Button variant="outline" size="sm" asChild>
                     <span className="cursor-pointer">
                       <Upload className="h-4 w-4" />
-                      Import CSV
+                      Choose CSV File
                     </span>
                   </Button>
                   <input
@@ -252,25 +327,16 @@ export default function AdminPanel({
                   />
                 </label>
               </div>
-              <p className="text-xs text-muted-foreground mt-2">
-                CSV header row becomes your column names. Import replaces the current table (columns + rows).
-              </p>
             </div>
-
-            {importError ? (
-              <div className="flex items-center gap-2 rounded-lg border border-destructive/30 bg-destructive/5 px-3 py-2 text-sm text-destructive">
-                <AlertCircle className="h-4 w-4 shrink-0" />
-                {importError}
-              </div>
-            ) : null}
-          </div>
+          )}
         </div>
 
-        <Separator />
-
-        <p className="text-xs text-muted-foreground">
-          Changes to columns affect every row. Save to persist changes to Neon (Postgres).
-        </p>
+        {/* ── Footer ── */}
+        <div className="border-t px-6 py-3">
+          <p className="text-xs text-muted-foreground text-center">
+            Changes are local until you Save. Save persists to Neon (Postgres).
+          </p>
+        </div>
       </DialogContent>
     </Dialog>
   )

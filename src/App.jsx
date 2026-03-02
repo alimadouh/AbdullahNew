@@ -10,11 +10,18 @@ import { Card, CardContent } from './components/ui/card.jsx'
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from './components/ui/select.jsx'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
-import { Separator } from './components/ui/separator.jsx'
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp } from 'lucide-react'
+
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
+}
+
+const SECTION_THEMES = {
+  clinic:         { primary: 'oklch(0.55 0.18 230)', fg: 'oklch(0.98 0.005 230)', ring: 'oklch(0.55 0.18 230)', pageBg: '#f0f9ff', bg: '#e0f2fe', text: '#0284c7', border: '#7dd3fc' },   // sky blue
+  vaccination:    { primary: 'oklch(0.60 0.15 85)',  fg: 'oklch(0.98 0.005 85)',  ring: 'oklch(0.60 0.15 85)',  pageBg: '#fefce8', bg: '#fef9c3', text: '#a16207', border: '#fde047' },   // light yellow
+  'er-medication':{ primary: 'oklch(0.55 0.2 25)',   fg: 'oklch(0.98 0.005 25)',  ring: 'oklch(0.55 0.2 25)',   pageBg: '#fef2f2', bg: '#fecaca', text: '#dc2626', border: '#fca5a5' },   // light red
+  'er-guidelines':{ primary: 'oklch(0.62 0.16 55)',  fg: 'oklch(0.98 0.005 55)',  ring: 'oklch(0.62 0.16 55)',  pageBg: '#fff7ed', bg: '#ffedd5', text: '#ea580c', border: '#fdba74' },   // light orange
 }
 
 export default function App() {
@@ -30,8 +37,16 @@ export default function App() {
   const [loginPw, setLoginPw] = useState('')
   const [loginErr, setLoginErr] = useState('')
   const [saving, setSaving] = useState(false)
+  const [activeSection, setActiveSection] = useState('clinic')
 
   const adminMode = Boolean(adminToken)
+  const theme = SECTION_THEMES[activeSection]
+
+  // Apply page background color to body
+  useEffect(() => {
+    document.body.style.background = SECTION_THEMES[activeSection].pageBg
+    document.body.style.transition = 'background 0.3s ease'
+  }, [activeSection])
 
   // Back to top
   const [showBackToTop, setShowBackToTop] = useState(false)
@@ -46,11 +61,12 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
-  const reload = async () => {
+  const reload = async (section) => {
+    const s = section || activeSection
     setLoading(true)
     setErr('')
     try {
-      const data = await apiGetData()
+      const data = await apiGetData(s)
       setColumns(data.columns || [])
       setRows(data.rows || [])
     } catch (e) {
@@ -61,10 +77,17 @@ export default function App() {
   }
 
   useEffect(() => {
-    reload()
-  }, [])
+    reload(activeSection)
+  }, [activeSection])
 
-  const categoryCol = useMemo(() => findColumnName(columns, ['category']), [columns])
+  const switchSection = (s) => {
+    if (s === activeSection) return
+    setCategoryFilter('__ALL__')
+    setSearchQuery('')
+    setActiveSection(s)
+  }
+
+  const categoryCol = useMemo(() => findColumnName(columns, ['category', 'age/timing', 'age']), [columns])
   const categories = useMemo(() => {
     if (!categoryCol) return []
     const cats = rows.map(r => String((r.data || {})[categoryCol] ?? '').trim()).filter(Boolean)
@@ -118,7 +141,7 @@ export default function App() {
   const saveToDb = async () => {
     setSaving(true)
     try {
-      await apiAdminUpdate({ token: adminToken, columns, rows })
+      await apiAdminUpdate({ token: adminToken, columns, rows, section: activeSection })
       setAdminOpen(false)
       await reload()
       alert('Saved.')
@@ -131,7 +154,7 @@ export default function App() {
 
   if (loading) {
     return (
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6" style={{ '--color-primary': theme.primary, '--color-primary-foreground': theme.fg }}>
         <Card>
           <CardContent className="flex items-center justify-center gap-3 py-16">
             <Loader2 className="h-6 w-6 animate-spin text-primary" />
@@ -164,7 +187,18 @@ export default function App() {
 
   return (
     <TooltipProvider>
-      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+      <div
+        className="mx-auto max-w-7xl px-4 py-6 sm:px-6"
+        style={{
+          '--color-primary': theme.primary,
+          '--color-primary-foreground': theme.fg,
+          '--color-ring': theme.ring,
+          '--color-success': theme.primary,
+          '--color-success-foreground': theme.fg,
+          '--color-border': theme.border,
+          '--color-input': theme.border,
+        }}
+      >
         {/* Header */}
         <div className="no-print flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-6">
           <div className="flex items-center gap-3">
@@ -202,15 +236,40 @@ export default function App() {
         </div>
 
         {/* Controls */}
-        <div className="no-print flex flex-col gap-3 sm:flex-row sm:items-center mb-5">
+        <div className="no-print flex flex-col gap-3 mb-5">
+          <div className="flex items-center gap-2 flex-wrap">
+            {[
+              { key: 'clinic', label: 'Clinic Medications', Icon: Pill },
+              { key: 'vaccination', label: 'Vaccination', Icon: Syringe },
+              { key: 'er-medication', label: 'ER Medication', Icon: Cross },
+              { key: 'er-guidelines', label: 'ER Guidelines', Icon: BookOpen },
+            ].map(({ key, label, Icon }) => {
+              const t = SECTION_THEMES[key]
+              const active = activeSection === key
+              return (
+                <button
+                  key={key}
+                  onClick={() => switchSection(key)}
+                  className="inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer"
+                  style={active
+                    ? { backgroundColor: t.text, color: '#fff', boxShadow: `0 1px 3px ${t.text}40` }
+                    : { backgroundColor: t.bg, color: t.text, border: `1px solid ${t.border}` }
+                  }
+                >
+                  <Icon className="h-4 w-4" />
+                  {label}
+                </button>
+              )
+            })}
+          </div>
+
           <div className="flex items-center gap-2">
-            <span className="text-sm text-muted-foreground whitespace-nowrap">Category</span>
             <Select
               value={categoryFilter}
               onValueChange={setCategoryFilter}
               disabled={!categoryCol}
             >
-              <SelectTrigger className="w-[200px]">
+              <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="All Categories" />
               </SelectTrigger>
               <SelectContent>
@@ -220,58 +279,38 @@ export default function App() {
                 ))}
               </SelectContent>
             </Select>
-          </div>
 
-          <div className="flex items-center gap-2 flex-1 min-w-0">
-            <span className="text-sm text-muted-foreground whitespace-nowrap">Search</span>
             <div className="relative flex-1">
               <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
-                placeholder="Search anything (generic name, dose, indications...)"
+                placeholder="Search..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-9"
               />
             </div>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button variant="outline" size="icon" onClick={reload}>
+                  <RefreshCw className="h-4 w-4" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Refresh data</TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button variant="outline" size="icon" onClick={() => window.print()}>
+                  <Printer className="h-4 w-4" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Print table</TooltipContent>
+            </Tooltip>
           </div>
-
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button variant="outline" size="icon" onClick={reload}>
-                <RefreshCw className="h-4 w-4" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent>Refresh data</TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button variant="outline" size="icon" onClick={() => window.print()}>
-                <Printer className="h-4 w-4" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent>Print table</TooltipContent>
-          </Tooltip>
         </div>
 
-        <Separator className="no-print mb-5" />
 
-        {/* Stats Bar */}
-        <div className="no-print flex items-center gap-2 mb-4 flex-wrap">
-          <Badge variant="secondary" className="gap-1.5 text-xs">
-            {rows.length} Medications
-          </Badge>
-          {categories.length > 0 && (
-            <Badge variant="secondary" className="gap-1.5 text-xs">
-              {categories.length} Categories
-            </Badge>
-          )}
-          {routeCount > 0 && (
-            <Badge variant="secondary" className="gap-1.5 text-xs">
-              {routeCount} Routes
-            </Badge>
-          )}
-        </div>
 
         {/* Data Table */}
         <DataTable
@@ -294,7 +333,7 @@ export default function App() {
           setRows={setRows}
           saving={saving}
           onSaveToDb={saveToDb}
-          onReloadFromDb={reload}
+          onReloadFromDb={() => reload()}
         />
 
         {/* Login Dialog */}

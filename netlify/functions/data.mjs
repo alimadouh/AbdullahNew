@@ -1,4 +1,4 @@
-import { ensureSchema, sql, DEFAULT_COLUMNS } from './_db.mjs'
+import { ensureSchema, sql, DEFAULT_COLUMNS, VALID_SECTIONS } from './_db.mjs'
 
 function sanitizeColumns(cols) {
   return (Array.isArray(cols) ? cols : [])
@@ -7,25 +7,28 @@ function sanitizeColumns(cols) {
     .filter(c => !/^unnamed\b/i.test(c))
 }
 
-export const handler = async () => {
+export const handler = async (event) => {
   try {
     await ensureSchema()
 
-    const metaRows = await sql`SELECT columns FROM table_meta WHERE id = 1`
+    const params = event.queryStringParameters || {}
+    const section = VALID_SECTIONS.includes(params.section) ? params.section : 'clinic'
+
+    const metaRows = await sql`SELECT columns FROM table_meta WHERE section = ${section} LIMIT 1`
     const rawCols = metaRows?.[0]?.columns
     const columns = sanitizeColumns(rawCols)
-    const finalCols = columns.length ? columns : DEFAULT_COLUMNS
+    const finalCols = columns.length ? columns : (section === 'clinic' ? DEFAULT_COLUMNS : [])
 
     // If DB contains junk/unnamed columns from an old import, clean it up automatically.
     if (rawCols && JSON.stringify(rawCols) !== JSON.stringify(finalCols)) {
       await sql`
         UPDATE table_meta
         SET columns = ${JSON.stringify(finalCols)}::jsonb, updated_at = NOW()
-        WHERE id = 1
+        WHERE section = ${section}
       `
     }
 
-    const dbRows = await sql`SELECT id, data FROM table_rows ORDER BY created_at ASC`
+    const dbRows = await sql`SELECT id, data FROM table_rows WHERE section = ${section} ORDER BY created_at ASC`
     const rows = (dbRows || []).map(r => ({ id: r.id, data: r.data }))
 
     return {

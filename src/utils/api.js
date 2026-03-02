@@ -1,5 +1,5 @@
-export async function apiGetData() {
-  const res = await fetch('/.netlify/functions/data')
+export async function apiGetData(section = 'clinic') {
+  const res = await fetch(`/.netlify/functions/data?section=${encodeURIComponent(section)}`)
   if (!res.ok) throw new Error(`Failed to load data (${res.status})`)
   return res.json()
 }
@@ -17,14 +17,14 @@ export async function apiAdminAuth(password) {
   return res.json()
 }
 
-export async function apiAdminUpdate({ token, columns, rows }) {
+export async function apiAdminUpdate({ token, columns, rows, section = 'clinic' }) {
   const res = await fetch('/.netlify/functions/admin-update', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token}`,
     },
-    body: JSON.stringify({ columns, rows }),
+    body: JSON.stringify({ columns, rows, section }),
   })
   if (!res.ok) {
     const msg = await safeMsg(res)

@@ -5,7 +5,7 @@ function safeLower(v) {
 }
 
 export function groupRows({ columns, rows, categoryFilter, searchQuery }) {
-  const categoryCol = findColumnName(columns, ['category'])
+  const categoryCol = findColumnName(columns, ['category', 'age/timing', 'age'])
   const routeCol = findColumnName(columns, ['route'])
   const q = safeLower(searchQuery)
 

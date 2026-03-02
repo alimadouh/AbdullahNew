@@ -7,12 +7,14 @@ import { Button } from './ui/button.jsx'
 import { Input } from './ui/input.jsx'
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from './ui/table.jsx'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
-import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check } from 'lucide-react'
+import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText } from 'lucide-react'
 
 function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
   const [open, setOpen] = useState(false)
-  const indVal = (row.data || {})[indicationsCol] ?? ''
-  const contraVal = (row.data || {})[contraCol] ?? ''
+  const indVal = indicationsCol ? ((row.data || {})[indicationsCol] ?? '') : ''
+  const contraVal = contraCol ? ((row.data || {})[contraCol] ?? '') : ''
+  const hasIndications = Boolean(indicationsCol)
+  const hasContra = Boolean(contraCol)
 
   return (
     <>
@@ -33,51 +35,55 @@ function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
           {/* Header */}
           <div className="bg-primary/5 px-5 pt-5 pb-4 border-b">
             <DialogHeader>
-              <DialogTitle className="text-base">Medication Details</DialogTitle>
+              <DialogTitle className="text-base">Details</DialogTitle>
               <DialogDescription className="text-xs">
-                {adminMode ? 'Edit the fields below.' : 'Indications & contraindications for this item.'}
+                {adminMode ? 'Edit the fields below.' : hasIndications && hasContra ? 'Indications & contraindications for this item.' : hasContra ? 'Contraindications for this item.' : 'Indications for this item.'}
               </DialogDescription>
             </DialogHeader>
           </div>
 
           <div className="p-5 space-y-4">
             {/* Indications card */}
-            <div className="rounded-lg border bg-emerald-50/50 border-emerald-200/60 p-3.5">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="flex items-center justify-center h-5 w-5 rounded-full bg-emerald-100">
-                  <ShieldCheck className="h-3 w-3 text-emerald-600" />
+            {hasIndications && (
+              <div className="rounded-lg border bg-primary/5 border-primary/20 p-3.5">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="flex items-center justify-center h-5 w-5 rounded-full bg-primary/10">
+                    <ShieldCheck className="h-3 w-3 text-primary" />
+                  </div>
+                  <span className="text-xs font-bold text-foreground uppercase tracking-wide">Indications</span>
                 </div>
-                <span className="text-xs font-bold text-foreground uppercase tracking-wide">Indications</span>
+                {adminMode ? (
+                  <textarea
+                    className="w-full rounded-md border border-primary/20 bg-white px-3 py-2 text-sm min-h-[80px] resize-y focus:outline-none focus:ring-2 focus:ring-primary/30"
+                    value={indVal}
+                    onChange={(e) => onCellChange?.(row.id, indicationsCol, e.target.value)}
+                  />
+                ) : (
+                  <p className="text-sm leading-relaxed text-foreground/80">{String(indVal) || '—'}</p>
+                )}
               </div>
-              {adminMode ? (
-                <textarea
-                  className="w-full rounded-md border border-emerald-200 bg-white px-3 py-2 text-sm min-h-[80px] resize-y focus:outline-none focus:ring-2 focus:ring-emerald-400/50"
-                  value={indVal}
-                  onChange={(e) => onCellChange?.(row.id, indicationsCol, e.target.value)}
-                />
-              ) : (
-                <p className="text-sm leading-relaxed text-foreground/80">{String(indVal) || '—'}</p>
-              )}
-            </div>
+            )}
 
             {/* Contraindications card */}
-            <div className="rounded-lg border bg-red-50/50 border-red-200/60 p-3.5">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="flex items-center justify-center h-5 w-5 rounded-full bg-red-100">
-                  <ShieldAlert className="h-3 w-3 text-red-600" />
+            {hasContra && (
+              <div className="rounded-lg border bg-red-50/50 border-red-200/60 p-3.5">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="flex items-center justify-center h-5 w-5 rounded-full bg-red-100">
+                    <ShieldAlert className="h-3 w-3 text-red-600" />
+                  </div>
+                  <span className="text-xs font-bold text-foreground uppercase tracking-wide">Contraindications</span>
                 </div>
-                <span className="text-xs font-bold text-foreground uppercase tracking-wide">Contraindications</span>
+                {adminMode ? (
+                  <textarea
+                    className="w-full rounded-md border border-red-200 bg-white px-3 py-2 text-sm min-h-[80px] resize-y focus:outline-none focus:ring-2 focus:ring-red-400/50"
+                    value={contraVal}
+                    onChange={(e) => onCellChange?.(row.id, contraCol, e.target.value)}
+                  />
+                ) : (
+                  <p className="text-sm leading-relaxed text-foreground/80">{String(contraVal) || '—'}</p>
+                )}
               </div>
-              {adminMode ? (
-                <textarea
-                  className="w-full rounded-md border border-red-200 bg-white px-3 py-2 text-sm min-h-[80px] resize-y focus:outline-none focus:ring-2 focus:ring-red-400/50"
-                  value={contraVal}
-                  onChange={(e) => onCellChange?.(row.id, contraCol, e.target.value)}
-                />
-              ) : (
-                <p className="text-sm leading-relaxed text-foreground/80">{String(contraVal) || '—'}</p>
-              )}
-            </div>
+            )}
           </div>
         </DialogContent>
       </Dialog>
@@ -94,16 +100,28 @@ export default function DataTable({
   onCellChange,
   onDeleteRow,
 }) {
-  const categoryCol = findColumnName(columns, ['category'])
-  const indicationsCol = findColumnName(columns, ['indications'])
+  const categoryCol = findColumnName(columns, ['category', 'age/timing', 'age'])
   const contraCol = findColumnName(columns, ['contraindications', 'contraindication'])
-  const hasMergedCol = Boolean(indicationsCol && contraCol)
+  const indicationsCol = (() => {
+    const match = findColumnName(columns, ['indications'])
+    // Avoid fuzzy match where "contraindications" matches "indications"
+    return match && match !== contraCol ? match : null
+  })()
+  const hasMergedCol = Boolean(indicationsCol || contraCol)
+  const pdfCol = findColumnName(columns, ['pdf'])
+  // For PDF-based tables (e.g. ER Guidelines), the first non-PDF column is the label for the button
+  const pdfLabelCol = pdfCol ? columns.find(c => c !== pdfCol) : null
 
   const displayColumns = useMemo(() => {
-    if (!hasMergedCol) return columns
+    let cols = columns
+    // Hide the label column when we have a PDF column — the button shows the label
+    if (pdfCol && pdfLabelCol) {
+      cols = cols.filter(c => c !== pdfLabelCol)
+    }
+    if (!hasMergedCol) return cols
     const result = []
     let inserted = false
-    for (const col of columns) {
+    for (const col of cols) {
       if (col === indicationsCol || col === contraCol) {
         if (!inserted) { result.push('__INFO__'); inserted = true }
       } else {
@@ -111,7 +129,7 @@ export default function DataTable({
       }
     }
     return result
-  }, [columns, hasMergedCol, indicationsCol, contraCol])
+  }, [columns, hasMergedCol, indicationsCol, contraCol, pdfCol, pdfLabelCol])
 
   const [expandedRowId, setExpandedRowId] = useState(null)
   const [copiedId, setCopiedId] = useState(null)
@@ -134,15 +152,106 @@ export default function DataTable({
   }
 
   const { groups, filteredCount } = groupRows({ columns, rows, categoryFilter, searchQuery })
-  const showCategoryHeaders = categoryFilter === '__ALL__'
+  const routeCol = findColumnName(columns, ['route'])
+  const showCategoryHeaders = categoryFilter === '__ALL__' && Boolean(categoryCol)
+  const showRouteHeaders = Boolean(routeCol)
   const colSpan = displayColumns.length + (adminMode ? 1 : 0)
 
   let globalRowIdx = 0
 
+  // Collect all rows for PDF grid view
+  const allPdfRows = pdfCol && !adminMode
+    ? groups.flatMap(g => g.routes.flatMap(r => r.rows))
+    : []
+
+  // PDF popup state
+  const [pdfOpen, setPdfOpen] = useState(false)
+  const [pdfSrc, setPdfSrc] = useState('')
+  const [pdfTitle, setPdfTitle] = useState('')
+
+  const openPdf = (path, label) => {
+    setPdfSrc(path)
+    setPdfTitle(label || 'PDF')
+    setPdfOpen(true)
+  }
+
+  // PDF card grid view (non-admin)
+  if (pdfCol && !adminMode) {
+    return (
+      <>
+        <Card className="overflow-hidden">
+          <div className="flex items-center justify-between px-3 py-2 border-b bg-primary/5">
+            <Badge variant="secondary" className="gap-1 text-[11px] px-2 py-0">
+              Guidelines: <span className="font-bold">{filteredCount}</span>
+            </Badge>
+          </div>
+          <CardContent className="p-4">
+            {allPdfRows.length === 0 ? (
+              <p className="text-center py-6 text-muted-foreground">No guidelines match your search.</p>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {allPdfRows.map((r, i) => {
+                  const pdfPath = (r.data || {})[pdfCol] ?? ''
+                  const label = pdfLabelCol ? ((r.data || {})[pdfLabelCol] ?? '') : ''
+                  return (
+                    <button
+                      key={r.id}
+                      onClick={() => pdfPath && openPdf(pdfPath, label)}
+                      className="group flex items-center gap-3 rounded-xl border bg-white p-4 text-left shadow-sm transition-all hover:shadow-md hover:border-primary/40 hover:bg-primary/5 animate-row-in"
+                      style={{ animationDelay: `${i * 0.03}s` }}
+                    >
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                        <svg className="h-6 w-6 text-primary" viewBox="0 0 32 32" fill="none">
+                          <path d="M6 3a2 2 0 0 1 2-2h10l8 8v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V3z" fill="currentColor" opacity="0.15"/>
+                          <path d="M6 3a2 2 0 0 1 2-2h10l8 8v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V3z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                          <path d="M18 1v6a2 2 0 0 0 2 2h6" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                          <text x="16" y="22" textAnchor="middle" fontSize="7.5" fontWeight="bold" fontFamily="Arial,sans-serif" fill="currentColor">PDF</text>
+                        </svg>
+                      </div>
+                      <span className="text-sm font-medium text-foreground leading-snug">{label || 'View PDF'}</span>
+                    </button>
+                  )
+                })}
+              </div>
+            )}
+          </CardContent>
+        </Card>
+
+        {pdfOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm" onClick={() => { setPdfOpen(false); setPdfSrc('') }}>
+            <div
+              className="relative w-[94vw] h-[92vh] max-w-5xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col animate-row-in"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Minimal header */}
+              <div className="flex items-center justify-between px-4 py-2.5 border-b bg-primary/5">
+                <span className="text-sm font-semibold text-foreground truncate">{pdfTitle}</span>
+                <button
+                  onClick={() => { setPdfOpen(false); setPdfSrc('') }}
+                  className="flex items-center justify-center h-8 w-8 rounded-full hover:bg-primary/10 transition-colors cursor-pointer"
+                >
+                  <span className="text-lg leading-none text-muted-foreground">&times;</span>
+                </button>
+              </div>
+              {/* PDF content */}
+              <div className="flex-1 min-h-0">
+                <iframe
+                  src={`${pdfSrc}#toolbar=0&navpanes=0&scrollbar=0&zoom=75`}
+                  className="w-full h-full border-0"
+                  title={pdfTitle}
+                />
+              </div>
+            </div>
+          </div>
+        )}
+      </>
+    )
+  }
+
   return (
     <Card className="overflow-hidden">
       {/* Compact info bar */}
-      <div className="flex items-center justify-between px-3 py-2 border-b bg-muted/30">
+      <div className="flex items-center justify-between px-3 py-2 border-b bg-primary/5">
         <Badge variant="secondary" className="gap-1 text-[11px] px-2 py-0">
           Rows: <span className="font-bold">{filteredCount}</span>
         </Badge>
@@ -153,12 +262,12 @@ export default function DataTable({
 
       <CardContent className="p-0">
         <div className="overflow-x-auto">
-          <Table className="min-w-[760px] table-fixed">
+          <Table className="min-w-[760px]">
             <TableHeader>
-              <TableRow className="bg-muted/60 hover:bg-muted/60">
+              <TableRow className="bg-primary/10 hover:bg-primary/10">
                 {displayColumns.map(col => (
-                  <TableHead key={col} className="whitespace-nowrap">
-                    {col === '__INFO__' ? 'Info' : col}
+                  <TableHead key={col} className={`whitespace-nowrap ${col === '__INFO__' ? 'w-[90px]' : ''}`}>
+                    {col === '__INFO__' ? 'Info' : col === pdfCol ? '' : col}
                   </TableHead>
                 ))}
                 {adminMode ? (
@@ -179,7 +288,7 @@ export default function DataTable({
               {groups.map((catGroup) => (
                 <React.Fragment key={catGroup.category}>
                   {showCategoryHeaders ? (
-                    <TableRow className="bg-primary/5 hover:bg-primary/8">
+                    <TableRow className="bg-primary/8 hover:bg-primary/8">
                       <TableCell colSpan={colSpan} className="py-1 font-semibold text-foreground text-[13px]">
                         <span className="flex items-center gap-1.5">
                           <FolderOpen className="h-3.5 w-3.5 text-primary shrink-0" />
@@ -189,21 +298,52 @@ export default function DataTable({
                     </TableRow>
                   ) : null}
 
-                  {catGroup.routes.map((routeGroup) => (
+                  {catGroup.routes.map((routeGroup) => {
+                    // Detect first-column grouping for tables without category/route (e.g. Vaccination by Age/Timing)
+                    const firstCol = !showCategoryHeaders && !showRouteHeaders && displayColumns.length > 0 ? displayColumns[0] : null
+
+                    return (
                     <React.Fragment key={`${catGroup.category}::${routeGroup.route}`}>
-                      <TableRow className="bg-emerald-50 hover:bg-emerald-50">
-                        <TableCell colSpan={colSpan} className="py-1.5">
-                        </TableCell>
-                      </TableRow>
+                      {showRouteHeaders && (
+                        <TableRow className="bg-primary/5 hover:bg-primary/5">
+                          <TableCell colSpan={colSpan} className="py-1.5">
+                          </TableCell>
+                        </TableRow>
+                      )}
 
                       {routeGroup.rows.map((r, idx) => {
                         const rowDelay = globalRowIdx * 0.03
                         globalRowIdx++
                         const isExpanded = expandedRowId === r.id
+
+                        // Show group separator when first column value changes
+                        const curFirstVal = firstCol ? String((r.data || {})[firstCol] ?? '').trim() : null
+                        const prevFirstVal = firstCol && idx > 0 ? String((routeGroup.rows[idx - 1].data || {})[firstCol] ?? '').trim() : null
+                        const showGroupBreak = firstCol && idx > 0 && curFirstVal !== prevFirstVal
                         return (
                           <React.Fragment key={r.id}>
+                            {showGroupBreak && (
+                              <TableRow className="bg-primary/5 hover:bg-primary/5">
+                                <TableCell colSpan={colSpan} className="py-1 font-semibold text-foreground text-[13px]">
+                                  <span className="flex items-center gap-1.5">
+                                    <FolderOpen className="h-3.5 w-3.5 text-primary shrink-0" />
+                                    {curFirstVal || 'Other'}
+                                  </span>
+                                </TableCell>
+                              </TableRow>
+                            )}
+                            {firstCol && idx === 0 && (
+                              <TableRow className="bg-primary/5 hover:bg-primary/5">
+                                <TableCell colSpan={colSpan} className="py-1 font-semibold text-foreground text-[13px]">
+                                  <span className="flex items-center gap-1.5">
+                                    <FolderOpen className="h-3.5 w-3.5 text-primary shrink-0" />
+                                    {curFirstVal || 'Other'}
+                                  </span>
+                                </TableCell>
+                              </TableRow>
+                            )}
                             <TableRow
-                              className={`animate-row-in ${idx % 2 === 1 ? 'bg-muted/10' : ''} ${!adminMode ? 'cursor-pointer hover:bg-accent/50' : ''}`}
+                              className={`animate-row-in ${idx % 2 === 1 ? 'bg-primary/[0.03]' : ''} ${!adminMode ? 'cursor-pointer hover:bg-primary/5' : ''}`}
                               style={{ animationDelay: `${rowDelay}s` }}
                               onClick={() => { if (!adminMode) setExpandedRowId(isExpanded ? null : r.id) }}
                             >
@@ -221,8 +361,37 @@ export default function DataTable({
                                     </TableCell>
                                   )
                                 }
+                                if (col === pdfCol) {
+                                  const pdfPath = (r.data || {})[col] ?? ''
+                                  const pdfLabel = pdfLabelCol ? ((r.data || {})[pdfLabelCol] ?? '') : ''
+                                  return (
+                                    <TableCell key={`${r.id}:${col}`} className="leading-snug" onClick={(e) => e.stopPropagation()}>
+                                      {adminMode ? (
+                                        <Input
+                                          type="text"
+                                          value={pdfPath}
+                                          onChange={(e) => onCellChange?.(r.id, col, e.target.value)}
+                                          className="h-7 text-[12px] px-1.5"
+                                        />
+                                      ) : pdfPath ? (
+                                        <Button
+                                          variant="outline"
+                                          size="sm"
+                                          className="h-auto py-2 px-4 gap-2 w-full justify-start bg-primary/5 border-primary/20 text-primary hover:bg-primary/15 hover:text-primary"
+                                          onClick={() => window.open(pdfPath, '_blank')}
+                                        >
+                                          <FileText className="h-4 w-4 shrink-0" />
+                                          <span className="text-sm font-medium text-left">{pdfLabel || 'View PDF'}</span>
+                                        </Button>
+                                      ) : (
+                                        <span className="text-muted-foreground text-xs">—</span>
+                                      )}
+                                    </TableCell>
+                                  )
+                                }
                                 const value = (r.data || {})[col] ?? ''
                                 const isCategory = col === categoryCol
+                                const isGroupCol = col === firstCol
                                 return (
                                   <TableCell key={`${r.id}:${col}`} className="leading-snug">
                                     {adminMode ? (
@@ -237,7 +406,7 @@ export default function DataTable({
                                         {String(value)}
                                       </span>
                                     ) : (
-                                      <span className="line-clamp-4">{String(value)}</span>
+                                      <span className={`line-clamp-4 ${isGroupCol ? 'invisible' : ''}`}>{String(value)}</span>
                                     )}
                                   </TableCell>
                                 )
@@ -260,7 +429,7 @@ export default function DataTable({
                             {isExpanded && !adminMode && (
                               <TableRow className="hover:bg-transparent">
                                 <TableCell colSpan={colSpan} className="p-0">
-                                  <div className="animate-expand-in bg-accent/30 border-t border-b border-border px-4 py-3">
+                                  <div className="animate-expand-in bg-primary/5 border-t border-b border-primary/10 px-4 py-3">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
                                       {columns.map(col => {
                                         const val = (r.data || {})[col] ?? ''
@@ -302,7 +471,7 @@ export default function DataTable({
                         )
                       })}
                     </React.Fragment>
-                  ))}
+                  )})}
                 </React.Fragment>
               ))}
             </TableBody>

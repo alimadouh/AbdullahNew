@@ -1,4 +1,4 @@
-import { ensureSchema, sql } from './_db.mjs'
+import { ensureSchema, sql, VALID_SECTIONS } from './_db.mjs'
 import { verifyAdmin } from './_auth.mjs'
 import crypto from 'node:crypto'
 
@@ -23,6 +23,7 @@ export const handler = async (event) => {
     }
 
     const body = JSON.parse(event.body || '{}')
+    const section = VALID_SECTIONS.includes(body.section) ? body.section : 'clinic'
     const columns = Array.isArray(body.columns) ? sanitizeColumns(body.columns) : null
     const rows = Array.isArray(body.rows) ? body.rows : null
 
@@ -41,16 +42,23 @@ export const handler = async (event) => {
       lower.add(lc)
     }
 
-    // Save meta
-    await sql`
-      INSERT INTO table_meta (id, columns, updated_at)
-      VALUES (1, ${JSON.stringify(columns)}::jsonb, NOW())
-      ON CONFLICT (id)
-      DO UPDATE SET columns = EXCLUDED.columns, updated_at = NOW()
-    `
+    // Upsert meta for this section
+    const existing = await sql`SELECT section FROM table_meta WHERE section = ${section} LIMIT 1`
+    if (existing.length > 0) {
+      await sql`
+        UPDATE table_meta
+        SET columns = ${JSON.stringify(columns)}::jsonb, updated_at = NOW()
+        WHERE section = ${section}
+      `
+    } else {
+      await sql`
+        INSERT INTO table_meta (id, columns, section, updated_at)
+        VALUES (${Math.floor(Math.random() * 2000000000)}, ${JSON.stringify(columns)}::jsonb, ${section}, NOW())
+      `
+    }
 
-    // Replace all rows (simple + predictable)
-    await sql`DELETE FROM table_rows`
+    // Replace rows for this section only
+    await sql`DELETE FROM table_rows WHERE section = ${section}`
 
     for (const r of rows) {
       const id = String(r.id || crypto.randomUUID())
@@ -59,8 +67,8 @@ export const handler = async (event) => {
       const clean = {}
       for (const c of columns) clean[c] = data[c] ?? ''
       await sql`
-        INSERT INTO table_rows (id, data, created_at, updated_at)
-        VALUES (${id}, ${JSON.stringify(clean)}::jsonb, NOW(), NOW())
+        INSERT INTO table_rows (id, data, section, created_at, updated_at)
+        VALUES (${id}, ${JSON.stringify(clean)}::jsonb, ${section}, NOW(), NOW())
       `
     }
 

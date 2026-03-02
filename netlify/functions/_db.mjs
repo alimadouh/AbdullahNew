@@ -2,6 +2,8 @@ import { neon } from '@netlify/neon'
 
 export const sql = neon() // uses env NETLIFY_DATABASE_URL automatically
 
+export const VALID_SECTIONS = ['clinic', 'vaccination', 'er-medication', 'er-guidelines']
+
 export const DEFAULT_COLUMNS = [
   "Category",
   "Generic Name",
@@ -12,7 +14,7 @@ export const DEFAULT_COLUMNS = [
 ]
 
 export async function ensureSchema() {
-  // Meta table: stores the current column order/names
+  // Meta table: stores the current column order/names per section
   await sql`
     CREATE TABLE IF NOT EXISTS table_meta (
       id INTEGER PRIMARY KEY,
@@ -30,11 +32,22 @@ export async function ensureSchema() {
     )
   `
 
-  const meta = await sql`SELECT id FROM table_meta WHERE id = 1`
+  // Add section column to both tables (safe to run multiple times)
+  await sql`ALTER TABLE table_meta ADD COLUMN IF NOT EXISTS section TEXT NOT NULL DEFAULT 'clinic'`
+  await sql`ALTER TABLE table_rows ADD COLUMN IF NOT EXISTS section TEXT NOT NULL DEFAULT 'clinic'`
+
+  // Seed default meta for clinic section if missing
+  const meta = await sql`SELECT id FROM table_meta WHERE section = 'clinic' LIMIT 1`
   if (meta.length === 0) {
-    await sql`
-      INSERT INTO table_meta (id, columns)
-      VALUES (1, ${JSON.stringify(DEFAULT_COLUMNS)}::jsonb)
-    `
+    // Migrate existing id=1 row to have section='clinic', or insert fresh
+    const old = await sql`SELECT id FROM table_meta WHERE id = 1`
+    if (old.length > 0) {
+      await sql`UPDATE table_meta SET section = 'clinic' WHERE id = 1`
+    } else {
+      await sql`
+        INSERT INTO table_meta (id, columns, section)
+        VALUES (1, ${JSON.stringify(DEFAULT_COLUMNS)}::jsonb, 'clinic')
+      `
+    }
   }
 }
