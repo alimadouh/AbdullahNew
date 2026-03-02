@@ -31,9 +31,9 @@ function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
       </div>
 
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-md p-0 gap-0 overflow-hidden">
+        <DialogContent className="max-w-md max-h-[80vh] p-0 gap-0 overflow-hidden flex flex-col">
           {/* Header */}
-          <div className="bg-primary/5 px-5 pt-5 pb-4 border-b">
+          <div className="bg-primary/5 px-5 pt-5 pb-4 border-b shrink-0">
             <DialogHeader>
               <DialogTitle className="text-base">Details</DialogTitle>
               <DialogDescription className="text-xs">
@@ -42,7 +42,7 @@ function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
             </DialogHeader>
           </div>
 
-          <div className="p-5 space-y-4">
+          <div className="p-5 space-y-4 overflow-y-auto">
             {/* Indications card */}
             {hasIndications && (
               <div className="rounded-lg border bg-primary/5 border-primary/20 p-3.5">

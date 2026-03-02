@@ -211,6 +211,14 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-2 flex-wrap">
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button variant="outline" size="icon" onClick={() => window.print()}>
+                  <Printer className="h-4 w-4" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Print table</TooltipContent>
+            </Tooltip>
             {adminMode ? (
               <>
                 <Badge variant="success" className="gap-1.5">
@@ -290,23 +298,6 @@ export default function App() {
               />
             </div>
 
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button variant="outline" size="icon" onClick={reload}>
-                  <RefreshCw className="h-4 w-4" />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>Refresh data</TooltipContent>
-            </Tooltip>
-
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button variant="outline" size="icon" onClick={() => window.print()}>
-                  <Printer className="h-4 w-4" />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>Print table</TooltipContent>
-            </Tooltip>
           </div>
         </div>
 
