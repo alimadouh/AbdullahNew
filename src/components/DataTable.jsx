@@ -241,6 +241,15 @@ export default function DataTable({
                   title={pdfTitle}
                 />
               </div>
+              {/* Footer close button */}
+              <div className="shrink-0 border-t bg-primary/5 px-4 py-2.5 flex justify-center">
+                <button
+                  onClick={() => { setPdfOpen(false); setPdfSrc('') }}
+                  className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors cursor-pointer"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         )}
