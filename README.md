@@ -1,8 +1,8 @@
-# West Sabahiya Health Center (Netlify + Neon + GitHub)
+# PCIS Medication (Netlify + Neon + GitHub)
 
 This project is a small React site (Vite) that reads/writes a flexible table from a Neon Postgres database through Netlify Functions.
 
-**Title:** West Sabahiya Health Center  
+**Title:** PCIS Medication  
 **Subtitle:** Dr. Abdullah Almusallam
 
 ## Features

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-West Sabahiya Health Center — a full-stack medical reference app (React + Vite frontend, Netlify Functions backend, Neon Postgres database). Admins manage a dynamic medication table with flexible columns stored as JSONB. Default admin password is `5123`.
+PCIS Medication — a full-stack medical reference app (React + Vite frontend, Netlify Functions backend, Neon Postgres database). Admins manage a dynamic medication table with flexible columns stored as JSONB. Default admin password is `5123`.
 
 ## Commands
 
