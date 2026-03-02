@@ -236,7 +236,7 @@ export default function DataTable({
               {/* PDF content */}
               <div className="flex-1 min-h-0">
                 <iframe
-                  src={`${pdfSrc}#toolbar=0&navpanes=0&scrollbar=0&zoom=75`}
+                  src={`https://docs.google.com/gview?url=${encodeURIComponent(window.location.origin + pdfSrc)}&embedded=true`}
                   className="w-full h-full border-0"
                   title={pdfTitle}
                 />
