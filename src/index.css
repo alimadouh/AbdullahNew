@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Allow pinch-to-zoom on mobile */
+html {
+  touch-action: auto !important;
+}
+
 @theme {
   --color-background: oklch(0.98 0.002 240);
   --color-foreground: oklch(0.15 0.02 260);
