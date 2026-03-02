@@ -164,21 +164,9 @@ export default function DataTable({
     ? groups.flatMap(g => g.routes.flatMap(r => r.rows))
     : []
 
-  // PDF popup state
-  const [pdfOpen, setPdfOpen] = useState(false)
-  const [pdfSrc, setPdfSrc] = useState('')
-  const [pdfTitle, setPdfTitle] = useState('')
-
-  const openPdf = (path, label) => {
-    setPdfSrc(path)
-    setPdfTitle(label || 'PDF')
-    setPdfOpen(true)
-  }
-
   // PDF card grid view (non-admin)
   if (pdfCol && !adminMode) {
     return (
-      <>
         <Card className="overflow-hidden">
           <div className="flex items-center justify-between px-3 py-2 border-b bg-primary/5">
             <Badge variant="secondary" className="gap-1 text-[11px] px-2 py-0">
@@ -194,10 +182,12 @@ export default function DataTable({
                   const pdfPath = (r.data || {})[pdfCol] ?? ''
                   const label = pdfLabelCol ? ((r.data || {})[pdfLabelCol] ?? '') : ''
                   return (
-                    <button
+                    <a
                       key={r.id}
-                      onClick={() => pdfPath && openPdf(pdfPath, label)}
-                      className="group flex items-center gap-3 rounded-xl border bg-white p-4 text-left shadow-sm transition-all hover:shadow-md hover:border-primary/40 hover:bg-primary/5 animate-row-in"
+                      href={pdfPath || '#'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-3 rounded-xl border bg-white p-4 text-left shadow-sm transition-all hover:shadow-md hover:border-primary/40 hover:bg-primary/5 animate-row-in no-underline"
                       style={{ animationDelay: `${i * 0.03}s` }}
                     >
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
@@ -209,51 +199,13 @@ export default function DataTable({
                         </svg>
                       </div>
                       <span className="text-sm font-medium text-foreground leading-snug">{label || 'View PDF'}</span>
-                    </button>
+                    </a>
                   )
                 })}
               </div>
             )}
           </CardContent>
         </Card>
-
-        {pdfOpen && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm" onClick={() => { setPdfOpen(false); setPdfSrc('') }}>
-            <div
-              className="relative w-[94vw] h-[92vh] max-w-5xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col animate-row-in"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Minimal header */}
-              <div className="flex items-center justify-between px-4 py-2.5 border-b bg-primary/5">
-                <span className="text-sm font-semibold text-foreground truncate">{pdfTitle}</span>
-                <button
-                  onClick={() => { setPdfOpen(false); setPdfSrc('') }}
-                  className="flex items-center justify-center h-8 w-8 rounded-full hover:bg-primary/10 transition-colors cursor-pointer"
-                >
-                  <span className="text-lg leading-none text-muted-foreground">&times;</span>
-                </button>
-              </div>
-              {/* PDF content */}
-              <div className="flex-1 min-h-0">
-                <iframe
-                  src={`https://docs.google.com/gview?url=${encodeURIComponent(window.location.origin + pdfSrc)}&embedded=true`}
-                  className="w-full h-full border-0"
-                  title={pdfTitle}
-                />
-              </div>
-              {/* Footer close button */}
-              <div className="shrink-0 border-t bg-primary/5 px-4 py-2.5 flex justify-center">
-                <button
-                  onClick={() => { setPdfOpen(false); setPdfSrc('') }}
-                  className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors cursor-pointer"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
-      </>
     )
   }
 
