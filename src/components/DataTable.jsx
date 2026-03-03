@@ -222,8 +222,8 @@ export default function DataTable({
 
   // Collect all visible rows for mobile card view
   const allRows = groups.flatMap(g => g.routes.flatMap(r => r.rows))
-  const genericCol = findColumnName(columns, ['generic name', 'generic'])
-  const tradingCol = findColumnName(columns, ['trading name', 'trading'])
+  const genericCol = findColumnName(columns, ['generic name', 'generic', 'medication', 'vaccine'])
+  const tradingCol = findColumnName(columns, ['trading name', 'trading', 'administration'])
   const typeCol = findColumnName(columns, ['type'])
   const doseCol = findColumnName(columns, ['dose'])
 
