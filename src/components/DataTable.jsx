@@ -7,7 +7,7 @@ import { Button } from './ui/button.jsx'
 import { Input } from './ui/input.jsx'
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from './ui/table.jsx'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
-import { Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText } from 'lucide-react'
+import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText } from 'lucide-react'
 
 function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
   const [open, setOpen] = useState(false)
