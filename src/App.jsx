@@ -379,7 +379,13 @@ export default function App() {
 
         {/* Login Dialog */}
         <Dialog open={loginOpen} onOpenChange={setLoginOpen}>
-          <DialogContent className="sm:max-w-md">
+          <DialogContent className="sm:max-w-md" style={{
+            '--color-primary': theme.primary,
+            '--color-primary-foreground': theme.fg,
+            '--color-ring': theme.ring,
+            '--color-border': theme.border,
+            '--color-input': theme.border,
+          }}>
             <DialogHeader>
               <DialogTitle>Enter Password</DialogTitle>
               <DialogDescription className="sr-only">Enter password to access admin panel</DialogDescription>
