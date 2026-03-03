@@ -1,4 +1,4 @@
-import { findColumnName } from './columns.js'
+import { findColumnName, parseAgeMonths } from './columns.js'
 
 function safeLower(v) {
   return String(v ?? '').trim().toLowerCase()
@@ -32,7 +32,7 @@ export function groupRows({ columns, rows, categoryFilter, searchQuery }) {
     catMap.get(cat).push(r)
   }
 
-  const cats = Array.from(catMap.keys()).sort((a, b) => a.localeCompare(b))
+  const cats = Array.from(catMap.keys()).sort((a, b) => parseAgeMonths(a) - parseAgeMonths(b) || a.localeCompare(b))
 
   const output = []
   for (const cat of cats) {

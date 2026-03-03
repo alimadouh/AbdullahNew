@@ -7,7 +7,11 @@ import { Button } from './ui/button.jsx'
 import { Input } from './ui/input.jsx'
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from './ui/table.jsx'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
-import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText } from 'lucide-react'
+import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText, Flag, PlusCircle } from 'lucide-react'
+
+function KuwaitFlag({ className = 'h-5' }) {
+  return <img src="/kw.png" alt="Kuwait" className={className} />
+}
 
 function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
   const [open, setOpen] = useState(false)
@@ -94,6 +98,7 @@ export default function DataTable({
   adminMode,
   onCellChange,
   onDeleteRow,
+  onAddRow,
   hideInfoBar,
 }) {
   const categoryCol = findColumnName(columns, ['category', 'age/timing', 'age'])
@@ -110,9 +115,10 @@ export default function DataTable({
 
   // Hide category column when a specific category is already selected
   const hideCategoryCol = categoryFilter && categoryFilter !== '__ALL__' && categoryCol
+  const hasKuwaitCol = columns.includes('__kuwait__')
 
   const displayColumns = useMemo(() => {
-    let cols = columns
+    let cols = columns.filter(c => c !== '__kuwait__')
     // Hide the label column when we have a PDF column — the button shows the label
     if (pdfCol && pdfLabelCol) {
       cols = cols.filter(c => c !== pdfLabelCol)
@@ -137,12 +143,14 @@ export default function DataTable({
   const [expandedRowId, setExpandedRowId] = useState(null)
   const [copiedId, setCopiedId] = useState(null)
 
+  const visibleColumns = columns.filter(c => c !== '__kuwait__')
+
   const formatMedicationText = (row) => {
-    return columns.map(col => `*${col}:* ${(row.data || {})[col] ?? ''}`).join('\n')
+    return visibleColumns.map(col => `*${col}:* ${(row.data || {})[col] ?? ''}`).join('\n')
   }
 
   const copyMedicationInfo = (row) => {
-    const lines = columns.map(col => `${col}: ${(row.data || {})[col] ?? ''}`).join('\n')
+    const lines = visibleColumns.map(col => `${col}: ${(row.data || {})[col] ?? ''}`).join('\n')
     navigator.clipboard.writeText(lines).then(() => {
       setCopiedId(row.id)
       setTimeout(() => setCopiedId(null), 2000)
@@ -158,7 +166,7 @@ export default function DataTable({
   const routeCol = findColumnName(columns, ['route'])
   const showCategoryHeaders = categoryFilter === '__ALL__' && Boolean(categoryCol)
   const showRouteHeaders = Boolean(routeCol)
-  const colSpan = displayColumns.length + (adminMode ? 1 : 0)
+  const colSpan = displayColumns.length + (adminMode ? 1 : 0) + (hasKuwaitCol ? 1 : 0)
 
   let globalRowIdx = 0
 
@@ -231,6 +239,9 @@ export default function DataTable({
           <Table className="min-w-[760px]">
             <TableHeader>
               <TableRow className="bg-primary/10 hover:bg-primary/10">
+                {hasKuwaitCol && (
+                  <TableHead className="w-8 px-1"></TableHead>
+                )}
                 {displayColumns.map(col => (
                   <TableHead key={col} className={`whitespace-nowrap ${col === '__INFO__' ? 'w-[90px]' : ''}`}>
                     {col === '__INFO__' ? 'Info' : col === pdfCol ? '' : col}
@@ -286,6 +297,21 @@ export default function DataTable({
                               style={{ animationDelay: `${rowDelay}s` }}
                               onClick={() => { if (!adminMode) setExpandedRowId(isExpanded ? null : r.id) }}
                             >
+                              {hasKuwaitCol && (
+                                <TableCell key={`${r.id}:__kw__`} className="w-8 px-1 text-center" onClick={(e) => e.stopPropagation()}>
+                                  {adminMode ? (
+                                    <button
+                                      className="cursor-pointer opacity-60 hover:opacity-100 transition-opacity"
+                                      title={((r.data || {}).__kuwait__) ? 'Remove Kuwait flag' : 'Add Kuwait flag'}
+                                      onClick={() => onCellChange?.(r.id, '__kuwait__', ((r.data || {}).__kuwait__) ? '' : '1')}
+                                    >
+                                      {((r.data || {}).__kuwait__) ? <KuwaitFlag /> : <Flag className="h-4 w-4 text-muted-foreground" />}
+                                    </button>
+                                  ) : (
+                                    ((r.data || {}).__kuwait__) ? <KuwaitFlag /> : null
+                                  )}
+                                </TableCell>
+                              )}
                               {displayColumns.map((col) => {
                                 if (col === '__INFO__') {
                                   return (
@@ -369,7 +395,7 @@ export default function DataTable({
                                 <TableCell colSpan={colSpan} className="p-0">
                                   <div className="animate-expand-in bg-primary/5 border-t border-b border-primary/10 px-4 py-3">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
-                                      {columns.map(col => {
+                                      {visibleColumns.map(col => {
                                         const val = (r.data || {})[col] ?? ''
                                         return (
                                           <div key={col} className="flex gap-2">
@@ -416,6 +442,14 @@ export default function DataTable({
           </Table>
         </div>
       </CardContent>
+      {adminMode && onAddRow && (
+        <div className="border-t px-4 py-3">
+          <Button variant="outline" className="w-full" onClick={onAddRow}>
+            <PlusCircle className="h-4 w-4" />
+            Add Row
+          </Button>
+        </div>
+      )}
     </Card>
   )
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState, useCallback } from 'react'
 import DataTable from './components/DataTable.jsx'
 import AdminPanel from './components/AdminPanel.jsx'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
-import { findColumnName } from './utils/columns.js'
+import { findColumnName, parseAgeMonths } from './utils/columns.js'
 import { Button } from './components/ui/button.jsx'
 import { Input } from './components/ui/input.jsx'
 import { Badge } from './components/ui/badge.jsx'
@@ -72,7 +72,12 @@ export default function App() {
     setErr('')
     try {
       const data = await apiGetData(s)
-      setColumns(data.columns || [])
+      const cols = data.columns || []
+      // Ensure __kuwait__ column exists for clinic section
+      if (s === 'clinic' && !cols.includes('__kuwait__')) {
+        cols.push('__kuwait__')
+      }
+      setColumns(cols)
       setRows(data.rows || [])
     } catch (e) {
       setErr(String(e?.message || e))
@@ -96,7 +101,7 @@ export default function App() {
   const categories = useMemo(() => {
     if (!categoryCol) return []
     const cats = rows.map(r => String((r.data || {})[categoryCol] ?? '').trim()).filter(Boolean)
-    return uniq(cats).sort((a, b) => a.localeCompare(b))
+    return uniq(cats).sort((a, b) => parseAgeMonths(a) - parseAgeMonths(b) || a.localeCompare(b))
   }, [rows, categoryCol])
 
   const routeCol = useMemo(() => findColumnName(columns, ['route']), [columns])
@@ -110,6 +115,15 @@ export default function App() {
       if (r.id !== rowId) return r
       return { ...r, data: { ...(r.data || {}), [col]: value } }
     }))
+  }
+
+  const onAddRow = () => {
+    const empty = {}
+    for (const c of columns) empty[c] = ''
+    if (categoryCol && categoryFilter && categoryFilter !== '__ALL__') {
+      empty[categoryCol] = categoryFilter
+    }
+    setRows(prev => [{ id: crypto.randomUUID(), data: empty }, ...prev])
   }
 
   const onDeleteRow = (rowId) => {
@@ -327,7 +341,7 @@ export default function App() {
 
 
         {/* Data Table */}
-        {activeSection !== 'er-guidelines' && !categoryFilter ? (
+        {activeSection !== 'er-guidelines' && !categoryFilter && !searchQuery.trim() ? (
           <Card>
             <CardContent className="flex flex-col items-center gap-3 py-16 text-center">
               <Search className="h-8 w-8 text-muted-foreground" />
@@ -344,6 +358,7 @@ export default function App() {
             adminMode={adminMode}
             onCellChange={onCellChange}
             onDeleteRow={onDeleteRow}
+            onAddRow={onAddRow}
             hideInfoBar={activeSection !== 'er-guidelines'}
           />
         )}
@@ -359,16 +374,15 @@ export default function App() {
           saving={saving}
           onSaveToDb={saveToDb}
           onReloadFromDb={() => reload()}
+          theme={theme}
         />
 
         {/* Login Dialog */}
         <Dialog open={loginOpen} onOpenChange={setLoginOpen}>
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
-              <DialogTitle>Enter admin password</DialogTitle>
-              <DialogDescription>
-                If you don&apos;t want admin access, just close this window and use the filters/search.
-              </DialogDescription>
+              <DialogTitle>Enter Password</DialogTitle>
+              <DialogDescription className="sr-only">Enter password to access admin panel</DialogDescription>
             </DialogHeader>
             <div className="flex gap-2">
               <Input
