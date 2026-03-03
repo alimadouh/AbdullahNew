@@ -222,13 +222,10 @@ export default function DataTable({
 
   // Collect all visible rows for mobile card view
   const allRows = groups.flatMap(g => g.routes.flatMap(r => r.rows))
-  const genericCol = findColumnName(columns, ['generic name', 'generic', 'medication', 'vaccine'])
-  const tradingCol = findColumnName(columns, ['trading name', 'trading', 'administration'])
+  const genericCol = findColumnName(columns, ['generic name', 'generic'])
+  const tradingCol = findColumnName(columns, ['trading name', 'trading'])
   const typeCol = findColumnName(columns, ['type'])
   const doseCol = findColumnName(columns, ['dose'])
-  // Fallback: use first visible column as title if no known name column found
-  const cardTitleCol = genericCol || displayColumns.find(c => c !== '__INFO__' && c !== categoryCol)
-  const cardSubCol = tradingCol || (cardTitleCol ? displayColumns.find(c => c !== '__INFO__' && c !== categoryCol && c !== cardTitleCol) : null)
 
   return (
     <>
@@ -243,11 +240,12 @@ export default function DataTable({
             </Card>
           ) : allRows.map((r, i) => {
             const d = r.data || {}
-            const title = cardTitleCol ? d[cardTitleCol] : ''
-            const sub = cardSubCol ? d[cardSubCol] : ''
+            const generic = genericCol ? d[genericCol] : ''
+            const trading = tradingCol ? d[tradingCol] : ''
+            const type = typeCol ? d[typeCol] : ''
+            const dose = doseCol ? d[doseCol] : ''
+            const route = routeCol ? d[routeCol] : ''
             const isKw = hasKuwaitCol && d.__kuwait__
-            // Remaining columns for badges (exclude title, sub, category, hidden cols)
-            const badgeCols = displayColumns.filter(c => c !== '__INFO__' && c !== cardTitleCol && c !== cardSubCol && c !== categoryCol)
 
             return (
               <div
@@ -259,9 +257,9 @@ export default function DataTable({
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-1.5">
                       {isKw && <KuwaitFlag className="h-4 shrink-0" />}
-                      <span className="font-semibold text-sm text-foreground leading-tight">{title || '—'}</span>
+                      <span className="font-semibold text-sm text-foreground leading-tight">{generic || '—'}</span>
                     </div>
-                    {sub && <p className="text-xs text-primary font-medium mt-0.5 line-clamp-2">{sub}</p>}
+                    {trading && <p className="text-xs text-primary font-medium mt-0.5">{trading}</p>}
                   </div>
                   {hasMergedCol && (
                     <div className="shrink-0" onClick={(e) => e.stopPropagation()}>
@@ -275,13 +273,11 @@ export default function DataTable({
                     </div>
                   )}
                 </div>
-                {badgeCols.some(c => d[c]) && (
+                {(type || dose || route) && (
                   <div className="flex flex-wrap gap-1.5 mt-2">
-                    {badgeCols.map(c => {
-                      const val = d[c]
-                      if (!val) return null
-                      return <span key={c} className="inline-flex items-center px-2 py-0.5 rounded-md bg-primary/10 text-[11px] text-primary font-medium">{String(val)}</span>
-                    })}
+                    {type && <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted text-[11px] text-muted-foreground">{type}</span>}
+                    {dose && <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-primary/10 text-[11px] text-primary font-medium">{dose}</span>}
+                    {route && <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted text-[11px] text-muted-foreground">{route}</span>}
                   </div>
                 )}
               </div>
