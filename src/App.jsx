@@ -99,12 +99,6 @@ export default function App() {
     return uniq(cats).sort((a, b) => a.localeCompare(b))
   }, [rows, categoryCol])
 
-  const routeCol = useMemo(() => findColumnName(columns, ['route']), [columns])
-  const routeCount = useMemo(() => {
-    if (!routeCol) return 0
-    return uniq(rows.map(r => String((r.data || {})[routeCol] ?? '').trim())).length
-  }, [rows, routeCol])
-
   const onCellChange = (rowId, col, value) => {
     setRows(prev => prev.map(r => {
       if (r.id !== rowId) return r
