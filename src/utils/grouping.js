@@ -7,6 +7,9 @@ function safeLower(v) {
 export function groupRows({ columns, rows, categoryFilter, searchQuery }) {
   const categoryCol = findColumnName(columns, ['category', 'age/timing', 'age'])
   const routeCol = findColumnName(columns, ['route'])
+  const genericCol = findColumnName(columns, ['generic name', 'generic'])
+  const tradingCol = findColumnName(columns, ['trading name', 'trading'])
+  const searchCols = [genericCol, tradingCol].filter(Boolean)
   const q = safeLower(searchQuery)
 
   // filter by category + search
@@ -17,7 +20,7 @@ export function groupRows({ columns, rows, categoryFilter, searchQuery }) {
       if (catVal !== categoryFilter) return false
     }
     if (q) {
-      const hay = columns.map(c => String(values[c] ?? '')).join(' ').toLowerCase()
+      const hay = (searchCols.length > 0 ? searchCols : columns).map(c => String(values[c] ?? '')).join(' ').toLowerCase()
       if (!hay.includes(q)) return false
     }
     return true
