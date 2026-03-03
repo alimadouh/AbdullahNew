@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState, useCallback } from 'react'
 import DataTable from './components/DataTable.jsx'
 import AdminPanel from './components/AdminPanel.jsx'
+import ConfirmDialog from './components/ConfirmDialog.jsx'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
 import { findColumnName, parseAgeMonths } from './utils/columns.js'
 import { Button } from './components/ui/button.jsx'
@@ -126,9 +127,15 @@ export default function App() {
     setRows(prev => [{ id: crypto.randomUUID(), data: empty }, ...prev])
   }
 
+  const [confirmDelete, setConfirmDelete] = useState(null)
+
   const onDeleteRow = (rowId) => {
-    if (!confirm('Delete this row?')) return
-    setRows(prev => prev.filter(r => r.id !== rowId))
+    setConfirmDelete(rowId)
+  }
+
+  const doDeleteRow = () => {
+    if (confirmDelete) setRows(prev => prev.filter(r => r.id !== confirmDelete))
+    setConfirmDelete(null)
   }
 
   const openAdmin = () => {
@@ -411,6 +418,17 @@ export default function App() {
             ) : null}
           </DialogContent>
         </Dialog>
+
+        {/* Delete Row Confirm */}
+        <ConfirmDialog
+          open={Boolean(confirmDelete)}
+          onConfirm={doDeleteRow}
+          onCancel={() => setConfirmDelete(null)}
+          title="Delete Row"
+          description="Are you sure you want to delete this row? This cannot be undone."
+          confirmLabel="Delete"
+          variant="destructive"
+        />
 
         {/* Back to Top */}
         {showBackToTop && (
