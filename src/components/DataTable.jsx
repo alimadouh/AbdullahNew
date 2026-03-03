@@ -32,15 +32,10 @@ function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-md max-h-[80vh] p-0 gap-0 overflow-hidden flex flex-col">
-          {/* Header */}
-          <div className="bg-primary/5 px-5 pt-5 pb-4 border-b shrink-0">
-            <DialogHeader>
-              <DialogTitle className="text-base">Details</DialogTitle>
-              <DialogDescription className="text-xs">
-                {adminMode ? 'Edit the fields below.' : hasIndications && hasContra ? 'Indications & contraindications for this item.' : hasContra ? 'Contraindications for this item.' : 'Indications for this item.'}
-              </DialogDescription>
-            </DialogHeader>
-          </div>
+          <DialogHeader className="sr-only">
+            <DialogTitle>Details</DialogTitle>
+            <DialogDescription>Indications and contraindications</DialogDescription>
+          </DialogHeader>
 
           <div className="p-5 space-y-4 overflow-y-auto">
             {/* Indications card */}
@@ -99,6 +94,7 @@ export default function DataTable({
   adminMode,
   onCellChange,
   onDeleteRow,
+  hideInfoBar,
 }) {
   const categoryCol = findColumnName(columns, ['category', 'age/timing', 'age'])
   const contraCol = findColumnName(columns, ['contraindications', 'contraindication'])
@@ -112,11 +108,18 @@ export default function DataTable({
   // For PDF-based tables (e.g. ER Guidelines), the first non-PDF column is the label for the button
   const pdfLabelCol = pdfCol ? columns.find(c => c !== pdfCol) : null
 
+  // Hide category column when a specific category is already selected
+  const hideCategoryCol = categoryFilter && categoryFilter !== '__ALL__' && categoryCol
+
   const displayColumns = useMemo(() => {
     let cols = columns
     // Hide the label column when we have a PDF column — the button shows the label
     if (pdfCol && pdfLabelCol) {
       cols = cols.filter(c => c !== pdfLabelCol)
+    }
+    // Hide category column when filtered to a specific category
+    if (hideCategoryCol) {
+      cols = cols.filter(c => c !== categoryCol)
     }
     if (!hasMergedCol) return cols
     const result = []
@@ -129,7 +132,7 @@ export default function DataTable({
       }
     }
     return result
-  }, [columns, hasMergedCol, indicationsCol, contraCol, pdfCol, pdfLabelCol])
+  }, [columns, hasMergedCol, indicationsCol, contraCol, pdfCol, pdfLabelCol, hideCategoryCol, categoryCol])
 
   const [expandedRowId, setExpandedRowId] = useState(null)
   const [copiedId, setCopiedId] = useState(null)
@@ -212,14 +215,16 @@ export default function DataTable({
   return (
     <Card className="overflow-hidden">
       {/* Compact info bar */}
-      <div className="flex items-center justify-between px-3 py-2 border-b bg-primary/5">
-        <Badge variant="secondary" className="gap-1 text-[11px] px-2 py-0">
-          Rows: <span className="font-bold">{filteredCount}</span>
-        </Badge>
-        <span className="text-[11px] text-muted-foreground">
-          Grouped by <strong>Category &rarr; Route</strong>
-        </span>
-      </div>
+      {!hideInfoBar && (
+        <div className="flex items-center justify-between px-3 py-2 border-b bg-primary/5">
+          <Badge variant="secondary" className="gap-1 text-[11px] px-2 py-0">
+            Rows: <span className="font-bold">{filteredCount}</span>
+          </Badge>
+          <span className="text-[11px] text-muted-foreground">
+            Grouped by <strong>Category &rarr; Route</strong>
+          </span>
+        </div>
+      )}
 
       <CardContent className="p-0">
         <div className="overflow-x-auto">
@@ -260,9 +265,6 @@ export default function DataTable({
                   ) : null}
 
                   {catGroup.routes.map((routeGroup) => {
-                    // Detect first-column grouping for tables without category/route (e.g. Vaccination by Age/Timing)
-                    const firstCol = !showCategoryHeaders && !showRouteHeaders && displayColumns.length > 0 ? displayColumns[0] : null
-
                     return (
                     <React.Fragment key={`${catGroup.category}::${routeGroup.route}`}>
                       {showRouteHeaders && (
@@ -277,32 +279,8 @@ export default function DataTable({
                         globalRowIdx++
                         const isExpanded = expandedRowId === r.id
 
-                        // Show group separator when first column value changes
-                        const curFirstVal = firstCol ? String((r.data || {})[firstCol] ?? '').trim() : null
-                        const prevFirstVal = firstCol && idx > 0 ? String((routeGroup.rows[idx - 1].data || {})[firstCol] ?? '').trim() : null
-                        const showGroupBreak = firstCol && idx > 0 && curFirstVal !== prevFirstVal
                         return (
                           <React.Fragment key={r.id}>
-                            {showGroupBreak && (
-                              <TableRow className="bg-primary/5 hover:bg-primary/5">
-                                <TableCell colSpan={colSpan} className="py-1 font-semibold text-foreground text-[13px]">
-                                  <span className="flex items-center gap-1.5">
-                                    <FolderOpen className="h-3.5 w-3.5 text-primary shrink-0" />
-                                    {curFirstVal || 'Other'}
-                                  </span>
-                                </TableCell>
-                              </TableRow>
-                            )}
-                            {firstCol && idx === 0 && (
-                              <TableRow className="bg-primary/5 hover:bg-primary/5">
-                                <TableCell colSpan={colSpan} className="py-1 font-semibold text-foreground text-[13px]">
-                                  <span className="flex items-center gap-1.5">
-                                    <FolderOpen className="h-3.5 w-3.5 text-primary shrink-0" />
-                                    {curFirstVal || 'Other'}
-                                  </span>
-                                </TableCell>
-                              </TableRow>
-                            )}
                             <TableRow
                               className={`animate-row-in ${idx % 2 === 1 ? 'bg-primary/[0.03]' : ''} ${!adminMode ? 'cursor-pointer hover:bg-primary/5' : ''}`}
                               style={{ animationDelay: `${rowDelay}s` }}
@@ -352,7 +330,6 @@ export default function DataTable({
                                 }
                                 const value = (r.data || {})[col] ?? ''
                                 const isCategory = col === categoryCol
-                                const isGroupCol = col === firstCol
                                 return (
                                   <TableCell key={`${r.id}:${col}`} className="leading-snug">
                                     {adminMode ? (
@@ -367,7 +344,7 @@ export default function DataTable({
                                         {String(value)}
                                       </span>
                                     ) : (
-                                      <span className={`line-clamp-4 ${isGroupCol ? 'invisible' : ''}`}>{String(value)}</span>
+                                      <span className="line-clamp-4">{String(value)}</span>
                                     )}
                                   </TableCell>
                                 )

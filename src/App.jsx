@@ -29,7 +29,7 @@ export default function App() {
   const [rows, setRows] = useState([])
   const [loading, setLoading] = useState(true)
   const [err, setErr] = useState('')
-  const [categoryFilter, setCategoryFilter] = useState('__ALL__')
+  const [categoryFilter, setCategoryFilter] = useState('')
   const [searchQuery, setSearchQuery] = useState('')
   const [adminOpen, setAdminOpen] = useState(false)
   const [adminToken, setAdminToken] = useState(localStorage.getItem('admin_token') || '')
@@ -51,7 +51,7 @@ export default function App() {
   // Zoom
   const [zoom, setZoom] = useState(100)
   const zoomIn = () => setZoom(z => { const next = Math.min(z + 10, 200); document.documentElement.style.zoom = `${next}%`; return next })
-  const zoomOut = () => setZoom(z => { const next = Math.max(z - 10, 50); document.documentElement.style.zoom = `${next}%`; return next })
+  const zoomOut = () => setZoom(z => { const next = Math.max(z - 10, 20); document.documentElement.style.zoom = `${next}%`; return next })
 
   // Back to top
   const [showBackToTop, setShowBackToTop] = useState(false)
@@ -87,7 +87,7 @@ export default function App() {
 
   const switchSection = (s) => {
     if (s === activeSection) return
-    setCategoryFilter('__ALL__')
+    setCategoryFilter(s === 'er-guidelines' ? '__ALL__' : '')
     setSearchQuery('')
     setActiveSection(s)
   }
@@ -299,10 +299,12 @@ export default function App() {
               disabled={!categoryCol}
             >
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="All Categories" />
+                <SelectValue placeholder="Select Category" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="__ALL__">All Categories</SelectItem>
+                {activeSection === 'er-guidelines' && (
+                  <SelectItem value="__ALL__">All Categories</SelectItem>
+                )}
                 {categories.map(c => (
                   <SelectItem key={c} value={c}>{c}</SelectItem>
                 ))}
@@ -325,15 +327,26 @@ export default function App() {
 
 
         {/* Data Table */}
-        <DataTable
-          columns={columns}
-          rows={rows}
-          categoryFilter={categoryFilter}
-          searchQuery={searchQuery}
-          adminMode={adminMode}
-          onCellChange={onCellChange}
-          onDeleteRow={onDeleteRow}
-        />
+        {activeSection !== 'er-guidelines' && !categoryFilter ? (
+          <Card>
+            <CardContent className="flex flex-col items-center gap-3 py-16 text-center">
+              <Search className="h-8 w-8 text-muted-foreground" />
+              <p className="text-lg font-medium text-muted-foreground">Select a category to view medications</p>
+              <p className="text-sm text-muted-foreground">Use the dropdown above to choose a category</p>
+            </CardContent>
+          </Card>
+        ) : (
+          <DataTable
+            columns={columns}
+            rows={rows}
+            categoryFilter={categoryFilter}
+            searchQuery={searchQuery}
+            adminMode={adminMode}
+            onCellChange={onCellChange}
+            onDeleteRow={onDeleteRow}
+            hideInfoBar={activeSection !== 'er-guidelines'}
+          />
+        )}
 
         {/* Admin Panel Dialog */}
         <AdminPanel
