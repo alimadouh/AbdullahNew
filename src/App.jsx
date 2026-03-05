@@ -639,9 +639,6 @@ export default function App() {
                       Clear
                     </Button>
                   )}
-                  <Button variant="ghost" size="sm" className="h-7 w-7 p-0" onClick={loadFeedback} disabled={feedbackLoading}>
-                    <RefreshCw className={`h-3.5 w-3.5 ${feedbackLoading ? 'animate-spin' : ''}`} />
-                  </Button>
                 </div>
               </div>
               <DialogDescription className="sr-only">View and manage user feedback notifications</DialogDescription>
