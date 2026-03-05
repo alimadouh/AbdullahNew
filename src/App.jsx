@@ -12,10 +12,24 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2 } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
+}
+
+function getTimeAgo(dateStr) {
+  const now = Date.now()
+  const diff = now - new Date(dateStr).getTime()
+  const mins = Math.floor(diff / 60000)
+  if (mins < 1) return 'Just now'
+  if (mins < 60) return `${mins}m ago`
+  const hrs = Math.floor(mins / 60)
+  if (hrs < 24) return `${hrs}h ago`
+  const days = Math.floor(hrs / 24)
+  if (days < 7) return `${days}d ago`
+  if (days < 30) return `${Math.floor(days / 7)}w ago`
+  return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
 }
 
 const SECTIONS = ['clinic', 'vaccination', 'er-medication', 'er-guidelines']
@@ -276,10 +290,14 @@ export default function App() {
     } catch {}
   }
 
-  // Load feedback when switching to notifications section
+  // Load feedback count on login and when switching to notifications
+  useEffect(() => {
+    if (adminToken) loadFeedback()
+  }, [adminToken])
+
   useEffect(() => {
     if (activeSection === 'notifications' && adminToken) loadFeedback()
-  }, [activeSection, adminToken])
+  }, [activeSection])
 
   if (loading) {
     return (
@@ -406,18 +424,24 @@ export default function App() {
             ].map(({ key, label, Icon }) => {
               const t = SECTION_THEMES[key]
               const active = activeSection === key
+              const notifCount = key === 'notifications' ? feedbackList.length : 0
               return (
                 <button
                   key={key}
                   onClick={() => switchSection(key)}
-                  className="inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer"
+                  className="relative inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer"
                   style={active
-                    ? { backgroundColor: t.text, color: '#fff', boxShadow: `0 1px 3px ${t.text}40` }
+                    ? { backgroundColor: t.text, color: '#fff', boxShadow: `0 2px 8px ${t.text}30` }
                     : { backgroundColor: t.bg, color: t.text, border: `1px solid ${t.border}` }
                   }
                 >
                   <Icon className="h-4 w-4" />
                   {label}
+                  {notifCount > 0 && !active && (
+                    <span className="absolute -top-1.5 -right-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-destructive text-[10px] font-bold text-white px-1">
+                      {notifCount > 99 ? '99+' : notifCount}
+                    </span>
+                  )}
                 </button>
               )
             })}
@@ -459,58 +483,110 @@ export default function App() {
 
         {/* Content */}
         {activeSection === 'notifications' ? (
-          <Card>
-            <CardContent className="p-4">
-              {feedbackLoading ? (
-                <div className="flex items-center justify-center py-12">
-                  <Loader2 className="h-6 w-6 animate-spin text-primary" />
-                </div>
-              ) : feedbackList.length === 0 ? (
-                <div className="flex flex-col items-center gap-3 py-12 text-center">
-                  <Bell className="h-8 w-8 text-muted-foreground" />
-                  <p className="text-lg font-medium text-muted-foreground">No notifications</p>
-                  <p className="text-sm text-muted-foreground">Feedback from users will appear here</p>
-                </div>
-              ) : (
-                <div className="space-y-2">
-                  {feedbackList.map(f => {
-                    const isOpen = expandedFeedback === f.id
-                    return (
-                      <div key={f.id} className="rounded-lg border overflow-hidden">
-                        <button
-                          className="w-full flex items-center gap-3 px-4 py-3 text-left cursor-pointer hover:bg-muted/50 transition-colors"
-                          onClick={() => setExpandedFeedback(isOpen ? null : f.id)}
-                        >
-                          <MessageSquare className="h-4 w-4 text-muted-foreground shrink-0" />
-                          <div className="flex-1 min-w-0">
-                            <p className="text-sm truncate">{f.message}</p>
-                            <p className="text-[11px] text-muted-foreground mt-0.5">
-                              {new Date(f.created_at).toLocaleString()}
-                            </p>
+          <div className="space-y-4">
+            {/* Notifications header */}
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <h2 className="text-lg font-semibold">Notifications</h2>
+                {feedbackList.length > 0 && (
+                  <span className="inline-flex items-center justify-center h-6 min-w-6 px-1.5 rounded-full text-xs font-bold text-white" style={{ backgroundColor: theme.text }}>
+                    {feedbackList.length}
+                  </span>
+                )}
+              </div>
+              <div className="flex items-center gap-2">
+                {feedbackList.length > 0 && (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-xs text-muted-foreground gap-1.5"
+                    onClick={() => {
+                      if (confirm(`Delete all ${feedbackList.length} notifications?`)) {
+                        feedbackList.forEach(f => deleteFeedback(f.id))
+                      }
+                    }}
+                  >
+                    <CheckCheck className="h-3.5 w-3.5" />
+                    Clear All
+                  </Button>
+                )}
+                <Button variant="outline" size="sm" className="gap-1.5" onClick={loadFeedback} disabled={feedbackLoading}>
+                  <RefreshCw className={`h-3.5 w-3.5 ${feedbackLoading ? 'animate-spin' : ''}`} />
+                  Refresh
+                </Button>
+              </div>
+            </div>
+
+            {/* Notifications list */}
+            {feedbackLoading && feedbackList.length === 0 ? (
+              <Card>
+                <CardContent className="flex flex-col items-center gap-3 py-16">
+                  <Loader2 className="h-8 w-8 animate-spin" style={{ color: theme.text }} />
+                  <p className="text-sm text-muted-foreground">Loading notifications...</p>
+                </CardContent>
+              </Card>
+            ) : feedbackList.length === 0 ? (
+              <Card>
+                <CardContent className="flex flex-col items-center gap-4 py-20 text-center">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full" style={{ backgroundColor: theme.bg }}>
+                    <Inbox className="h-8 w-8" style={{ color: theme.text }} />
+                  </div>
+                  <div>
+                    <p className="text-lg font-semibold">All caught up!</p>
+                    <p className="text-sm text-muted-foreground mt-1">No feedback from users yet.<br/>They'll appear here when submitted.</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ) : (
+              <div className="space-y-2.5">
+                {feedbackList.map((f, i) => {
+                  const isOpen = expandedFeedback === f.id
+                  const timeAgo = getTimeAgo(f.created_at)
+                  return (
+                    <Card key={f.id} className={`overflow-hidden transition-all duration-200 ${isOpen ? 'ring-2 shadow-md' : 'hover:shadow-sm'}`} style={isOpen ? { '--tw-ring-color': theme.border } : {}}>
+                      <button
+                        className="w-full flex items-center gap-3 px-4 py-3.5 text-left cursor-pointer transition-colors hover:bg-muted/40"
+                        onClick={() => setExpandedFeedback(isOpen ? null : f.id)}
+                      >
+                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full" style={{ backgroundColor: theme.bg }}>
+                          <MessageSquare className="h-4 w-4" style={{ color: theme.text }} />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-medium truncate">{f.message}</p>
+                          <div className="flex items-center gap-1.5 mt-1">
+                            <Clock className="h-3 w-3 text-muted-foreground" />
+                            <span className="text-[11px] text-muted-foreground">{timeAgo}</span>
                           </div>
-                        </button>
-                        {isOpen && (
-                          <div className="px-4 pb-3 border-t bg-muted/30">
-                            <p className="text-sm whitespace-pre-wrap pt-3">{f.message}</p>
-                            <div className="flex items-center justify-between mt-3 pt-2 border-t">
-                              <p className="text-[11px] text-muted-foreground">{new Date(f.created_at).toLocaleString()}</p>
-                              <button
-                                className="flex items-center gap-1 text-xs text-destructive hover:underline cursor-pointer"
-                                onClick={() => deleteFeedback(f.id)}
-                              >
-                                <Trash2 className="h-3 w-3" />
-                                Delete
-                              </button>
-                            </div>
+                        </div>
+                        <ChevronRight className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`} />
+                      </button>
+                      {isOpen && (
+                        <div className="border-t">
+                          <div className="px-4 py-3" style={{ backgroundColor: `${theme.bg}40` }}>
+                            <p className="text-sm leading-relaxed whitespace-pre-wrap">{f.message}</p>
                           </div>
-                        )}
-                      </div>
-                    )
-                  })}
-                </div>
-              )}
-            </CardContent>
-          </Card>
+                          <div className="flex items-center justify-between px-4 py-2.5 border-t bg-muted/20">
+                            <span className="text-[11px] text-muted-foreground">
+                              {new Date(f.created_at).toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                            </span>
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="h-7 text-xs text-destructive hover:text-destructive hover:bg-destructive/10 gap-1.5"
+                              onClick={() => deleteFeedback(f.id)}
+                            >
+                              <Trash2 className="h-3.5 w-3.5" />
+                              Delete
+                            </Button>
+                          </div>
+                        </div>
+                      )}
+                    </Card>
+                  )
+                })}
+              </div>
+            )}
+          </div>
         ) : activeSection !== 'er-guidelines' && !categoryFilter && !searchQuery.trim() ? (
           <Card>
             <CardContent className="flex flex-col items-center gap-3 py-16 text-center">
