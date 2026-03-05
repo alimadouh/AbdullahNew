@@ -552,10 +552,9 @@ export default function App() {
                           <MessageSquare className="h-4 w-4" style={{ color: theme.text }} />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-sm font-medium truncate">{f.message}</p>
-                          <div className="flex items-center gap-1.5 mt-1">
+                          <div className="flex items-center gap-1.5">
                             <Clock className="h-3 w-3 text-muted-foreground" />
-                            <span className="text-[11px] text-muted-foreground">{timeAgo}</span>
+                            <span className="text-sm font-medium">{timeAgo}</span>
                           </div>
                         </div>
                         <ChevronRight className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`} />
@@ -563,7 +562,7 @@ export default function App() {
                       {isOpen && (
                         <div className="border-t">
                           <div className="px-4 py-3" style={{ backgroundColor: `${theme.bg}40` }}>
-                            <p className="text-sm leading-relaxed whitespace-pre-wrap">{f.message}</p>
+                            <p className="text-sm leading-relaxed whitespace-pre-wrap break-words" style={{ overflowWrap: 'anywhere' }}>{f.message}</p>
                           </div>
                           <div className="flex items-center justify-between px-4 py-2.5 border-t bg-muted/20">
                             <span className="text-[11px] text-muted-foreground">
