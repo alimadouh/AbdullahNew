@@ -623,23 +623,21 @@ export default function App() {
                     </span>
                   )}
                 </DialogTitle>
-                <div className="flex items-center gap-1.5">
-                  {feedbackList.length > 0 && (
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="h-7 text-[11px] text-muted-foreground gap-1"
-                      onClick={() => {
-                        if (confirm(`Delete all ${feedbackList.length} notifications?`)) {
-                          feedbackList.forEach(f => deleteFeedback(f.id))
-                        }
-                      }}
-                    >
-                      <CheckCheck className="h-3 w-3" />
-                      Clear
-                    </Button>
-                  )}
-                </div>
+                {feedbackList.length > 0 && (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="h-7 text-[11px] text-muted-foreground gap-1 mr-6"
+                    onClick={() => {
+                      if (confirm(`Delete all ${feedbackList.length} notifications?`)) {
+                        feedbackList.forEach(f => deleteFeedback(f.id))
+                      }
+                    }}
+                  >
+                    <CheckCheck className="h-3 w-3" />
+                    Clear
+                  </Button>
+                )}
               </div>
               <DialogDescription className="sr-only">View and manage user feedback notifications</DialogDescription>
             </DialogHeader>
