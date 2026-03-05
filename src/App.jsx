@@ -42,6 +42,8 @@ export default function App() {
   const [loginErr, setLoginErr] = useState('')
   const [saving, setSaving] = useState(false)
   const [activeSection, setActiveSection] = useState('clinic')
+  const [settingsOpen, setSettingsOpen] = useState(false)
+  const settingsRef = useRef(null)
 
   const adminMode = Boolean(adminToken)
   const theme = SECTION_THEMES[activeSection]
@@ -51,6 +53,14 @@ export default function App() {
     document.body.style.background = SECTION_THEMES[activeSection].pageBg
     document.body.style.transition = 'background 0.3s ease'
   }, [activeSection])
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (settingsRef.current && !settingsRef.current.contains(e.target)) setSettingsOpen(false)
+    }
+    document.addEventListener('mousedown', handler)
+    return () => document.removeEventListener('mousedown', handler)
+  }, [])
 
   // Zoom
   const [zoom, setZoom] = useState(100)
@@ -257,7 +267,7 @@ export default function App() {
         }}
       >
         {/* Header */}
-        <div className="no-print flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-6">
+        <div className="no-print flex items-center justify-between mb-6">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Ministry of Health - Kuwait" className="h-16 w-auto" />
             <div>
@@ -267,52 +277,52 @@ export default function App() {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 flex-wrap">
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button variant="outline" size="icon" onClick={zoomOut}>
-                  <ZoomOut className="h-4 w-4" />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>Zoom out ({zoom}%)</TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button variant="outline" size="icon" onClick={zoomIn}>
-                  <ZoomIn className="h-4 w-4" />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>Zoom in ({zoom}%)</TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button variant="outline" size="icon" onClick={() => window.print()}>
-                  <Printer className="h-4 w-4" />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>Print table</TooltipContent>
-            </Tooltip>
-            {adminMode ? (
-              <>
-                <Badge variant="success" className="gap-1.5">
-                  <ShieldCheck className="h-3 w-3" />
-                  Admin
-                </Badge>
-                <Button size="sm" onClick={() => setAdminOpen(true)}>
-                  <Settings className="h-4 w-4" />
-                  Admin Panel
-                </Button>
-                <Button variant="outline" size="sm" onClick={logout}>
-                  <LogOut className="h-4 w-4" />
-                  Logout
-                </Button>
-              </>
-            ) : (
-              <Button size="sm" onClick={openAdmin}>
-                <Settings className="h-4 w-4" />
-                Admin Panel
-              </Button>
+          <div className="flex items-center gap-2">
+            {adminMode && (
+              <Badge variant="success" className="gap-1.5">
+                <ShieldCheck className="h-3 w-3" />
+                Admin
+              </Badge>
             )}
+            <div className="relative" ref={settingsRef}>
+              <Button variant="outline" size="icon" onClick={() => setSettingsOpen(v => !v)}>
+                <Settings className="h-4 w-4" />
+              </Button>
+              {settingsOpen && (
+                <div className="absolute right-0 top-full mt-2 z-50 w-48 rounded-lg border bg-popover shadow-lg py-1">
+                  <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { zoomIn(); }}>
+                    <ZoomIn className="h-4 w-4 text-muted-foreground" />
+                    Zoom In ({zoom}%)
+                  </button>
+                  <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { zoomOut(); }}>
+                    <ZoomOut className="h-4 w-4 text-muted-foreground" />
+                    Zoom Out ({zoom}%)
+                  </button>
+                  <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { window.print(); setSettingsOpen(false) }}>
+                    <Printer className="h-4 w-4 text-muted-foreground" />
+                    Print
+                  </button>
+                  <div className="my-1 border-t" />
+                  {adminMode ? (
+                    <>
+                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setAdminOpen(true); setSettingsOpen(false) }}>
+                        <Settings className="h-4 w-4 text-muted-foreground" />
+                        Admin Panel
+                      </button>
+                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors text-destructive" onClick={() => { logout(); setSettingsOpen(false) }}>
+                        <LogOut className="h-4 w-4" />
+                        Logout
+                      </button>
+                    </>
+                  ) : (
+                    <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { openAdmin(); setSettingsOpen(false) }}>
+                      <Settings className="h-4 w-4 text-muted-foreground" />
+                      Admin Panel
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
