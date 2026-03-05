@@ -66,6 +66,7 @@ export default function App() {
   const [feedbackList, setFeedbackList] = useState([])
   const [feedbackLoading, setFeedbackLoading] = useState(false)
   const [expandedFeedback, setExpandedFeedback] = useState(null)
+  const [notificationsOpen, setNotificationsOpen] = useState(false)
 
   const adminMode = Boolean(adminToken)
   const theme = SECTION_THEMES[activeSection]
@@ -290,14 +291,10 @@ export default function App() {
     } catch {}
   }
 
-  // Load feedback count on login and when switching to notifications
+  // Load feedback count on admin login
   useEffect(() => {
     if (adminToken) loadFeedback()
   }, [adminToken])
-
-  useEffect(() => {
-    if (activeSection === 'notifications' && adminToken) loadFeedback()
-  }, [activeSection])
 
   if (loading) {
     return (
@@ -367,8 +364,13 @@ export default function App() {
               </Badge>
             )}
             <div className="relative" ref={settingsRef}>
-              <Button variant="outline" size="icon" onClick={() => setSettingsOpen(v => !v)}>
+              <Button variant="outline" size="icon" className="relative" onClick={() => setSettingsOpen(v => !v)}>
                 <Settings className="h-4 w-4" />
+                {adminMode && feedbackList.length > 0 && (
+                  <span className="absolute -top-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-destructive text-[9px] font-bold text-white px-0.5">
+                    {feedbackList.length > 99 ? '99+' : feedbackList.length}
+                  </span>
+                )}
               </Button>
               {settingsOpen && (
                 <div className="absolute right-0 top-full mt-2 z-50 w-48 rounded-lg border bg-popover shadow-lg py-1">
@@ -395,6 +397,16 @@ export default function App() {
                         <Settings className="h-4 w-4 text-muted-foreground" />
                         Admin Panel
                       </button>
+                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setNotificationsOpen(true); setSettingsOpen(false); loadFeedback() }}>
+                        <Bell className="h-4 w-4 text-muted-foreground" />
+                        <span className="flex-1">Notifications</span>
+                        {feedbackList.length > 0 && (
+                          <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-destructive text-[10px] font-bold text-white px-1">
+                            {feedbackList.length > 99 ? '99+' : feedbackList.length}
+                          </span>
+                        )}
+                      </button>
+                      <div className="my-1 border-t" />
                       <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors text-destructive" onClick={() => { logout(); setSettingsOpen(false) }}>
                         <LogOut className="h-4 w-4" />
                         Logout
@@ -420,16 +432,14 @@ export default function App() {
               { key: 'vaccination', label: 'Vaccination', Icon: Syringe },
               { key: 'er-medication', label: 'ER Medication', Icon: Cross },
               { key: 'er-guidelines', label: 'ER Guidelines', Icon: BookOpen },
-              ...(adminMode ? [{ key: 'notifications', label: 'Notifications', Icon: Bell }] : []),
             ].map(({ key, label, Icon }) => {
               const t = SECTION_THEMES[key]
               const active = activeSection === key
-              const notifCount = key === 'notifications' ? feedbackList.length : 0
               return (
                 <button
                   key={key}
                   onClick={() => switchSection(key)}
-                  className="relative inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer"
+                  className="inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer"
                   style={active
                     ? { backgroundColor: t.text, color: '#fff', boxShadow: `0 2px 8px ${t.text}30` }
                     : { backgroundColor: t.bg, color: t.text, border: `1px solid ${t.border}` }
@@ -437,17 +447,12 @@ export default function App() {
                 >
                   <Icon className="h-4 w-4" />
                   {label}
-                  {notifCount > 0 && !active && (
-                    <span className="absolute -top-1.5 -right-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-destructive text-[10px] font-bold text-white px-1">
-                      {notifCount > 99 ? '99+' : notifCount}
-                    </span>
-                  )}
                 </button>
               )
             })}
           </div>
 
-          {activeSection !== 'notifications' && <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2">
             <Select
               value={categoryFilter}
               onValueChange={setCategoryFilter}
@@ -476,117 +481,13 @@ export default function App() {
               />
             </div>
 
-          </div>}
+          </div>
         </div>
 
 
 
         {/* Content */}
-        {activeSection === 'notifications' ? (
-          <div className="space-y-4">
-            {/* Notifications header */}
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <h2 className="text-lg font-semibold">Notifications</h2>
-                {feedbackList.length > 0 && (
-                  <span className="inline-flex items-center justify-center h-6 min-w-6 px-1.5 rounded-full text-xs font-bold text-white" style={{ backgroundColor: theme.text }}>
-                    {feedbackList.length}
-                  </span>
-                )}
-              </div>
-              <div className="flex items-center gap-2">
-                {feedbackList.length > 0 && (
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="text-xs text-muted-foreground gap-1.5"
-                    onClick={() => {
-                      if (confirm(`Delete all ${feedbackList.length} notifications?`)) {
-                        feedbackList.forEach(f => deleteFeedback(f.id))
-                      }
-                    }}
-                  >
-                    <CheckCheck className="h-3.5 w-3.5" />
-                    Clear All
-                  </Button>
-                )}
-                <Button variant="outline" size="sm" className="gap-1.5" onClick={loadFeedback} disabled={feedbackLoading}>
-                  <RefreshCw className={`h-3.5 w-3.5 ${feedbackLoading ? 'animate-spin' : ''}`} />
-                  Refresh
-                </Button>
-              </div>
-            </div>
-
-            {/* Notifications list */}
-            {feedbackLoading && feedbackList.length === 0 ? (
-              <Card>
-                <CardContent className="flex flex-col items-center gap-3 py-16">
-                  <Loader2 className="h-8 w-8 animate-spin" style={{ color: theme.text }} />
-                  <p className="text-sm text-muted-foreground">Loading notifications...</p>
-                </CardContent>
-              </Card>
-            ) : feedbackList.length === 0 ? (
-              <Card>
-                <CardContent className="flex flex-col items-center gap-4 py-20 text-center">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full" style={{ backgroundColor: theme.bg }}>
-                    <Inbox className="h-8 w-8" style={{ color: theme.text }} />
-                  </div>
-                  <div>
-                    <p className="text-lg font-semibold">All caught up!</p>
-                    <p className="text-sm text-muted-foreground mt-1">No feedback from users yet.<br/>They'll appear here when submitted.</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ) : (
-              <div className="space-y-2.5">
-                {feedbackList.map((f, i) => {
-                  const isOpen = expandedFeedback === f.id
-                  const timeAgo = getTimeAgo(f.created_at)
-                  return (
-                    <Card key={f.id} className={`overflow-hidden transition-all duration-200 ${isOpen ? 'ring-2 shadow-md' : 'hover:shadow-sm'}`} style={isOpen ? { '--tw-ring-color': theme.border } : {}}>
-                      <button
-                        className="w-full flex items-center gap-3 px-4 py-3.5 text-left cursor-pointer transition-colors hover:bg-muted/40"
-                        onClick={() => setExpandedFeedback(isOpen ? null : f.id)}
-                      >
-                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full" style={{ backgroundColor: theme.bg }}>
-                          <MessageSquare className="h-4 w-4" style={{ color: theme.text }} />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-1.5">
-                            <Clock className="h-3 w-3 text-muted-foreground" />
-                            <span className="text-sm font-medium">{timeAgo}</span>
-                          </div>
-                        </div>
-                        <ChevronRight className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`} />
-                      </button>
-                      {isOpen && (
-                        <div className="border-t">
-                          <div className="px-4 py-3" style={{ backgroundColor: `${theme.bg}40` }}>
-                            <p className="text-sm leading-relaxed whitespace-pre-wrap break-words" style={{ overflowWrap: 'anywhere' }}>{f.message}</p>
-                          </div>
-                          <div className="flex items-center justify-between px-4 py-2.5 border-t bg-muted/20">
-                            <span className="text-[11px] text-muted-foreground">
-                              {new Date(f.created_at).toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
-                            </span>
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              className="h-7 text-xs text-destructive hover:text-destructive hover:bg-destructive/10 gap-1.5"
-                              onClick={() => deleteFeedback(f.id)}
-                            >
-                              <Trash2 className="h-3.5 w-3.5" />
-                              Delete
-                            </Button>
-                          </div>
-                        </div>
-                      )}
-                    </Card>
-                  )
-                })}
-              </div>
-            )}
-          </div>
-        ) : activeSection !== 'er-guidelines' && !categoryFilter && !searchQuery.trim() ? (
+        {activeSection !== 'er-guidelines' && !categoryFilter && !searchQuery.trim() ? (
           <Card>
             <CardContent className="flex flex-col items-center gap-3 py-16 text-center">
               <Search className="h-8 w-8 text-muted-foreground" />
@@ -697,6 +598,121 @@ export default function App() {
                 </div>
               </div>
             )}
+          </DialogContent>
+        </Dialog>
+
+        {/* Notifications Dialog */}
+        <Dialog open={notificationsOpen} onOpenChange={setNotificationsOpen}>
+          <DialogContent className="w-[95vw] max-w-lg p-0 gap-0 rounded-2xl max-h-[85vh] flex flex-col" style={{
+            '--color-primary': SECTION_THEMES.notifications.primary,
+            '--color-primary-foreground': SECTION_THEMES.notifications.fg,
+            '--color-ring': SECTION_THEMES.notifications.ring,
+            '--color-border': SECTION_THEMES.notifications.border,
+            '--color-input': SECTION_THEMES.notifications.border,
+          }}>
+            <DialogHeader className="px-5 pt-5 pb-3 border-b shrink-0">
+              <div className="flex items-center justify-between">
+                <DialogTitle className="flex items-center gap-2.5 text-lg">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full" style={{ backgroundColor: SECTION_THEMES.notifications.bg }}>
+                    <Bell className="h-4 w-4" style={{ color: SECTION_THEMES.notifications.text }} />
+                  </div>
+                  Notifications
+                  {feedbackList.length > 0 && (
+                    <span className="flex h-5 min-w-5 items-center justify-center rounded-full text-[11px] font-bold text-white px-1.5" style={{ backgroundColor: SECTION_THEMES.notifications.text }}>
+                      {feedbackList.length}
+                    </span>
+                  )}
+                </DialogTitle>
+                <div className="flex items-center gap-1.5">
+                  {feedbackList.length > 0 && (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="h-7 text-[11px] text-muted-foreground gap-1"
+                      onClick={() => {
+                        if (confirm(`Delete all ${feedbackList.length} notifications?`)) {
+                          feedbackList.forEach(f => deleteFeedback(f.id))
+                        }
+                      }}
+                    >
+                      <CheckCheck className="h-3 w-3" />
+                      Clear
+                    </Button>
+                  )}
+                  <Button variant="ghost" size="sm" className="h-7 w-7 p-0" onClick={loadFeedback} disabled={feedbackLoading}>
+                    <RefreshCw className={`h-3.5 w-3.5 ${feedbackLoading ? 'animate-spin' : ''}`} />
+                  </Button>
+                </div>
+              </div>
+              <DialogDescription className="sr-only">View and manage user feedback notifications</DialogDescription>
+            </DialogHeader>
+
+            <div className="overflow-y-auto flex-1 p-4">
+              {feedbackLoading && feedbackList.length === 0 ? (
+                <div className="flex flex-col items-center gap-3 py-12">
+                  <Loader2 className="h-7 w-7 animate-spin" style={{ color: SECTION_THEMES.notifications.text }} />
+                  <p className="text-sm text-muted-foreground">Loading...</p>
+                </div>
+              ) : feedbackList.length === 0 ? (
+                <div className="flex flex-col items-center gap-3 py-12 text-center">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full" style={{ backgroundColor: SECTION_THEMES.notifications.bg }}>
+                    <Inbox className="h-7 w-7" style={{ color: SECTION_THEMES.notifications.text }} />
+                  </div>
+                  <div>
+                    <p className="font-semibold">All caught up!</p>
+                    <p className="text-xs text-muted-foreground mt-1">No feedback yet</p>
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  {feedbackList.map(f => {
+                    const isOpen = expandedFeedback === f.id
+                    const timeAgo = getTimeAgo(f.created_at)
+                    const nt = SECTION_THEMES.notifications
+                    return (
+                      <div key={f.id} className={`rounded-xl border overflow-hidden transition-all duration-200 ${isOpen ? 'shadow-md' : 'hover:shadow-sm'}`} style={isOpen ? { borderColor: nt.border } : {}}>
+                        <button
+                          className="w-full flex items-center gap-3 px-3.5 py-3 text-left cursor-pointer transition-colors hover:bg-muted/40"
+                          onClick={() => setExpandedFeedback(isOpen ? null : f.id)}
+                        >
+                          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full" style={{ backgroundColor: nt.bg }}>
+                            <MessageSquare className="h-3.5 w-3.5" style={{ color: nt.text }} />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-1.5">
+                              <Clock className="h-3 w-3 text-muted-foreground" />
+                              <span className="text-sm font-medium">{timeAgo}</span>
+                            </div>
+                          </div>
+                          <ChevronRight className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`} />
+                        </button>
+                        {isOpen && (
+                          <div className="border-t">
+                            <div className="px-4 py-3" style={{ backgroundColor: `${nt.bg}50` }}>
+                              <p className="text-sm leading-relaxed whitespace-pre-wrap break-words" style={{ overflowWrap: 'anywhere' }}>{f.message}</p>
+                            </div>
+                            <div className="flex items-center justify-between px-4 py-2 border-t bg-muted/20">
+                              <span className="text-[11px] text-muted-foreground">
+                                {new Date(f.created_at).toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                              </span>
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                className="h-7 text-xs text-destructive hover:text-destructive hover:bg-destructive/10 gap-1"
+                                onClick={() => deleteFeedback(f.id)}
+                              >
+                                <Trash2 className="h-3 w-3" />
+                                Delete
+                              </Button>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })}
+                </div>
+              )}
+            </div>
           </DialogContent>
         </Dialog>
 
