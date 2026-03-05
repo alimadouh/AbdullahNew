@@ -36,6 +36,15 @@ export async function ensureSchema() {
   await sql`ALTER TABLE table_meta ADD COLUMN IF NOT EXISTS section TEXT NOT NULL DEFAULT 'clinic'`
   await sql`ALTER TABLE table_rows ADD COLUMN IF NOT EXISTS section TEXT NOT NULL DEFAULT 'clinic'`
 
+  // Feedback table
+  await sql`
+    CREATE TABLE IF NOT EXISTS feedback (
+      id SERIAL PRIMARY KEY,
+      message TEXT NOT NULL,
+      created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `
+
   // Seed default meta for clinic section if missing
   const meta = await sql`SELECT id FROM table_meta WHERE section = 'clinic' LIMIT 1`
   if (meta.length === 0) {

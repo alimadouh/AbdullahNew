@@ -12,7 +12,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2 } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -26,6 +26,7 @@ const SECTION_THEMES = {
   vaccination:    { primary: 'oklch(0.60 0.15 85)',  fg: 'oklch(0.98 0.005 85)',  ring: 'oklch(0.60 0.15 85)',  pageBg: '#fefce8', bg: '#fef9c3', text: '#a16207', border: '#fde047' },   // light yellow
   'er-medication':{ primary: 'oklch(0.55 0.2 25)',   fg: 'oklch(0.98 0.005 25)',  ring: 'oklch(0.55 0.2 25)',   pageBg: '#fef2f2', bg: '#fecaca', text: '#dc2626', border: '#fca5a5' },   // light red
   'er-guidelines':{ primary: 'oklch(0.62 0.16 55)',  fg: 'oklch(0.98 0.005 55)',  ring: 'oklch(0.62 0.16 55)',  pageBg: '#fff7ed', bg: '#ffedd5', text: '#ea580c', border: '#fdba74' },   // light orange
+  notifications:  { primary: 'oklch(0.55 0.18 280)', fg: 'oklch(0.98 0.005 280)', ring: 'oklch(0.55 0.18 280)', pageBg: '#f5f3ff', bg: '#ede9fe', text: '#7c3aed', border: '#c4b5fd' },   // purple
 }
 
 export default function App() {
@@ -44,6 +45,13 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('clinic')
   const [settingsOpen, setSettingsOpen] = useState(false)
   const settingsRef = useRef(null)
+  const [feedbackOpen, setFeedbackOpen] = useState(false)
+  const [feedbackMsg, setFeedbackMsg] = useState('')
+  const [feedbackSending, setFeedbackSending] = useState(false)
+  const [feedbackSent, setFeedbackSent] = useState(false)
+  const [feedbackList, setFeedbackList] = useState([])
+  const [feedbackLoading, setFeedbackLoading] = useState(false)
+  const [expandedFeedback, setExpandedFeedback] = useState(null)
 
   const adminMode = Boolean(adminToken)
   const theme = SECTION_THEMES[activeSection]
@@ -217,6 +225,62 @@ export default function App() {
     }
   }
 
+  const submitFeedback = async () => {
+    if (!feedbackMsg.trim()) return
+    setFeedbackSending(true)
+    try {
+      const res = await fetch('/.netlify/functions/feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: feedbackMsg.trim() }),
+      })
+      if (!res.ok) throw new Error('Failed to send')
+      setFeedbackMsg('')
+      setFeedbackSent(true)
+      setTimeout(() => { setFeedbackSent(false); setFeedbackOpen(false) }, 1500)
+    } catch {
+      alert('Failed to send feedback. Please try again.')
+    } finally {
+      setFeedbackSending(false)
+    }
+  }
+
+  const loadFeedback = async () => {
+    if (!adminToken) return
+    setFeedbackLoading(true)
+    try {
+      const res = await fetch('/.netlify/functions/feedback', {
+        headers: { 'Authorization': `Bearer ${adminToken}` },
+      })
+      if (!res.ok) throw new Error()
+      const data = await res.json()
+      setFeedbackList(data.feedback || [])
+    } catch {
+      setFeedbackList([])
+    } finally {
+      setFeedbackLoading(false)
+    }
+  }
+
+  const deleteFeedback = async (id) => {
+    try {
+      await fetch('/.netlify/functions/feedback', {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${adminToken}`,
+        },
+        body: JSON.stringify({ id }),
+      })
+      setFeedbackList(prev => prev.filter(f => f.id !== id))
+    } catch {}
+  }
+
+  // Load feedback when switching to notifications section
+  useEffect(() => {
+    if (activeSection === 'notifications' && adminToken) loadFeedback()
+  }, [activeSection, adminToken])
+
   if (loading) {
     return (
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6" style={{ '--color-primary': theme.primary, '--color-primary-foreground': theme.fg }}>
@@ -302,6 +366,10 @@ export default function App() {
                     <Printer className="h-4 w-4 text-muted-foreground" />
                     Print
                   </button>
+                  <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setFeedbackOpen(true); setFeedbackSent(false); setSettingsOpen(false) }}>
+                    <MessageSquare className="h-4 w-4 text-muted-foreground" />
+                    Send Feedback
+                  </button>
                   <div className="my-1 border-t" />
                   {adminMode ? (
                     <>
@@ -334,6 +402,7 @@ export default function App() {
               { key: 'vaccination', label: 'Vaccination', Icon: Syringe },
               { key: 'er-medication', label: 'ER Medication', Icon: Cross },
               { key: 'er-guidelines', label: 'ER Guidelines', Icon: BookOpen },
+              ...(adminMode ? [{ key: 'notifications', label: 'Notifications', Icon: Bell }] : []),
             ].map(({ key, label, Icon }) => {
               const t = SECTION_THEMES[key]
               const active = activeSection === key
@@ -354,7 +423,7 @@ export default function App() {
             })}
           </div>
 
-          <div className="flex items-center gap-2">
+          {activeSection !== 'notifications' && <div className="flex items-center gap-2">
             <Select
               value={categoryFilter}
               onValueChange={setCategoryFilter}
@@ -383,13 +452,66 @@ export default function App() {
               />
             </div>
 
-          </div>
+          </div>}
         </div>
 
 
 
-        {/* Data Table */}
-        {activeSection !== 'er-guidelines' && !categoryFilter && !searchQuery.trim() ? (
+        {/* Content */}
+        {activeSection === 'notifications' ? (
+          <Card>
+            <CardContent className="p-4">
+              {feedbackLoading ? (
+                <div className="flex items-center justify-center py-12">
+                  <Loader2 className="h-6 w-6 animate-spin text-primary" />
+                </div>
+              ) : feedbackList.length === 0 ? (
+                <div className="flex flex-col items-center gap-3 py-12 text-center">
+                  <Bell className="h-8 w-8 text-muted-foreground" />
+                  <p className="text-lg font-medium text-muted-foreground">No notifications</p>
+                  <p className="text-sm text-muted-foreground">Feedback from users will appear here</p>
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  {feedbackList.map(f => {
+                    const isOpen = expandedFeedback === f.id
+                    return (
+                      <div key={f.id} className="rounded-lg border overflow-hidden">
+                        <button
+                          className="w-full flex items-center gap-3 px-4 py-3 text-left cursor-pointer hover:bg-muted/50 transition-colors"
+                          onClick={() => setExpandedFeedback(isOpen ? null : f.id)}
+                        >
+                          <MessageSquare className="h-4 w-4 text-muted-foreground shrink-0" />
+                          <div className="flex-1 min-w-0">
+                            <p className="text-sm truncate">{f.message}</p>
+                            <p className="text-[11px] text-muted-foreground mt-0.5">
+                              {new Date(f.created_at).toLocaleString()}
+                            </p>
+                          </div>
+                        </button>
+                        {isOpen && (
+                          <div className="px-4 pb-3 border-t bg-muted/30">
+                            <p className="text-sm whitespace-pre-wrap pt-3">{f.message}</p>
+                            <div className="flex items-center justify-between mt-3 pt-2 border-t">
+                              <p className="text-[11px] text-muted-foreground">{new Date(f.created_at).toLocaleString()}</p>
+                              <button
+                                className="flex items-center gap-1 text-xs text-destructive hover:underline cursor-pointer"
+                                onClick={() => deleteFeedback(f.id)}
+                              >
+                                <Trash2 className="h-3 w-3" />
+                                Delete
+                              </button>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })}
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        ) : activeSection !== 'er-guidelines' && !categoryFilter && !searchQuery.trim() ? (
           <Card>
             <CardContent className="flex flex-col items-center gap-3 py-16 text-center">
               <Search className="h-8 w-8 text-muted-foreground" />
@@ -423,6 +545,7 @@ export default function App() {
           onSaveToDb={saveToDb}
           onReloadFromDb={() => reload()}
           theme={theme}
+          adminToken={adminToken}
         />
 
         {/* Login Dialog */}
@@ -457,6 +580,48 @@ export default function App() {
                 {loginErr}
               </div>
             ) : null}
+          </DialogContent>
+        </Dialog>
+
+        {/* Feedback Dialog */}
+        <Dialog open={feedbackOpen} onOpenChange={setFeedbackOpen}>
+          <DialogContent className="sm:max-w-md" style={{
+            '--color-primary': theme.primary,
+            '--color-primary-foreground': theme.fg,
+            '--color-ring': theme.ring,
+            '--color-border': theme.border,
+            '--color-input': theme.border,
+          }}>
+            <DialogHeader>
+              <DialogTitle className="flex items-center gap-2">
+                <MessageSquare className="h-5 w-5" />
+                Send Feedback
+              </DialogTitle>
+              <DialogDescription>Report an error, suggest a feature, or share your thoughts.</DialogDescription>
+            </DialogHeader>
+            {feedbackSent ? (
+              <div className="text-center py-6">
+                <p className="text-lg font-semibold text-primary">Thank you!</p>
+                <p className="text-sm text-muted-foreground mt-1">Your feedback has been sent.</p>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                <textarea
+                  className="w-full min-h-[120px] rounded-lg border border-input bg-transparent px-3 py-2 text-base md:text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring resize-none"
+                  placeholder="Type your feedback here..."
+                  value={feedbackMsg}
+                  onChange={(e) => setFeedbackMsg(e.target.value)}
+                  maxLength={2000}
+                />
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-muted-foreground">{feedbackMsg.length}/2000</span>
+                  <Button onClick={submitFeedback} disabled={feedbackSending || !feedbackMsg.trim()} className="gap-1.5">
+                    <Send className="h-4 w-4" />
+                    {feedbackSending ? 'Sending...' : 'Send'}
+                  </Button>
+                </div>
+              </div>
+            )}
           </DialogContent>
         </Dialog>
 

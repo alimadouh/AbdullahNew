@@ -47,7 +47,16 @@ export function groupRows({ columns, rows, categoryFilter, searchQuery }) {
       if (!routeMap.has(route)) routeMap.set(route, [])
       routeMap.get(route).push(r)
     }
-    const routes = Array.from(routeMap.keys()).sort((a, b) => a.localeCompare(b))
+    const ROUTE_ORDER = ['tablet', 'capsule', 'syrup', 'suspension']
+    const routePriority = (r) => {
+      const l = r.toLowerCase()
+      const idx = ROUTE_ORDER.findIndex(p => l.includes(p))
+      return idx >= 0 ? idx : ROUTE_ORDER.length
+    }
+    const routes = Array.from(routeMap.keys()).sort((a, b) => {
+      const pa = routePriority(a), pb = routePriority(b)
+      return pa !== pb ? pa - pb : a.localeCompare(b)
+    })
     const routeGroups = routes.map(route => {
       const groupRows = routeMap.get(route)
       // stable sort inside group by "Generic Name" if present, otherwise leave as-is

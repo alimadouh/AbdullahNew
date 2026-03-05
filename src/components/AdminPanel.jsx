@@ -66,7 +66,6 @@ export default function AdminPanel({
 
           {/* ── Content ── */}
           <div className="px-6 pb-6 pt-3 space-y-3">
-            {/* Error banner */}
             {importError && (
               <div className="flex items-center gap-2 rounded-lg border border-destructive/30 bg-destructive/5 px-3 py-2.5 text-sm text-destructive">
                 <AlertCircle className="h-4 w-4 shrink-0" />
@@ -77,13 +76,11 @@ export default function AdminPanel({
               </div>
             )}
 
-            {/* Edit data */}
             <Button className="w-full h-11 text-sm font-semibold rounded-xl gap-2" onClick={onClose}>
               <Pencil className="h-4 w-4" />
               Edit Data
             </Button>
 
-            {/* Import / Export */}
             <div className="grid gap-2 grid-cols-2">
               <Button variant="outline" className="h-11 rounded-xl text-sm font-medium gap-2" onClick={() => exportToCsv({ columns, rows })} disabled={columns.length === 0}>
                 <Download className="h-4 w-4" />
@@ -116,13 +113,11 @@ export default function AdminPanel({
               </label>
             </div>
 
-            {/* Save */}
             <Button className="w-full h-11 text-sm font-semibold rounded-xl gap-2" onClick={onSaveToDb} disabled={saving}>
               <Save className="h-4 w-4" />
               {saving ? 'Saving…' : 'Save Changes'}
             </Button>
 
-            {/* Delete all */}
             <button
               className="w-full text-xs text-muted-foreground hover:text-destructive transition-colors py-2 cursor-pointer"
               onClick={() => { setDeleteOpen(true); setDeletePw(''); setDeletePwErr('') }}
