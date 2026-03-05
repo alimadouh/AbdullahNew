@@ -12,7 +12,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, WifiOff } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -39,6 +39,18 @@ export default function App() {
   const [loginErr, setLoginErr] = useState('')
   const [saving, setSaving] = useState(false)
   const [activeSection, setActiveSection] = useState('clinic')
+  const [offline, setOffline] = useState(!navigator.onLine)
+
+  useEffect(() => {
+    const goOffline = () => setOffline(true)
+    const goOnline = () => setOffline(false)
+    window.addEventListener('offline', goOffline)
+    window.addEventListener('online', goOnline)
+    return () => {
+      window.removeEventListener('offline', goOffline)
+      window.removeEventListener('online', goOnline)
+    }
+  }, [])
 
   const adminMode = Boolean(adminToken)
   const theme = SECTION_THEMES[activeSection]
@@ -284,6 +296,14 @@ export default function App() {
             )}
           </div>
         </div>
+
+        {/* Offline banner */}
+        {offline && (
+          <div className="no-print flex items-center gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-sm text-amber-700 dark:text-amber-400 mb-4">
+            <WifiOff className="h-4 w-4 shrink-0" />
+            <span>You're offline. Showing cached data.</span>
+          </div>
+        )}
 
         {/* Controls */}
         <div className="no-print flex flex-col gap-3 mb-5">
