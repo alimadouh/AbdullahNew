@@ -12,7 +12,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -67,6 +67,8 @@ export default function App() {
   const [feedbackLoading, setFeedbackLoading] = useState(false)
   const [expandedFeedback, setExpandedFeedback] = useState(null)
   const [notificationsOpen, setNotificationsOpen] = useState(false)
+  const [visitorStats, setVisitorStats] = useState(null)
+  const [visitorStatsOpen, setVisitorStatsOpen] = useState(false)
 
   const adminMode = Boolean(adminToken)
   const theme = SECTION_THEMES[activeSection]
@@ -291,9 +293,33 @@ export default function App() {
     } catch {}
   }
 
-  // Load feedback count on admin login
+  // Record visit once per session
   useEffect(() => {
-    if (adminToken) loadFeedback()
+    if (!sessionStorage.getItem('visited')) {
+      fetch('/.netlify/functions/visitors', { method: 'POST' }).catch(() => {})
+      sessionStorage.setItem('visited', '1')
+    }
+  }, [])
+
+  const loadVisitorStats = async () => {
+    if (!adminToken) return
+    try {
+      const res = await fetch('/.netlify/functions/visitors', {
+        headers: { 'Authorization': `Bearer ${adminToken}` },
+      })
+      if (!res.ok) throw new Error()
+      setVisitorStats(await res.json())
+    } catch {
+      setVisitorStats(null)
+    }
+  }
+
+  // Load feedback count and visitor stats on admin login
+  useEffect(() => {
+    if (adminToken) {
+      loadFeedback()
+      loadVisitorStats()
+    }
   }, [adminToken])
 
   if (loading) {
@@ -404,6 +430,13 @@ export default function App() {
                           <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-destructive text-[10px] font-bold text-white px-1">
                             {feedbackList.length > 99 ? '99+' : feedbackList.length}
                           </span>
+                        )}
+                      </button>
+                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setVisitorStatsOpen(true); setSettingsOpen(false); loadVisitorStats() }}>
+                        <Eye className="h-4 w-4 text-muted-foreground" />
+                        <span className="flex-1">Visitor Stats</span>
+                        {visitorStats && (
+                          <span className="text-[11px] text-muted-foreground">{visitorStats.total}</span>
                         )}
                       </button>
                       <div className="my-1 border-t" />
@@ -721,6 +754,64 @@ export default function App() {
           confirmLabel="Delete"
           variant="destructive"
         />
+
+        {/* Visitor Stats Dialog */}
+        <Dialog open={visitorStatsOpen} onOpenChange={setVisitorStatsOpen}>
+          <DialogContent className="w-[90vw] max-w-sm p-0 gap-0 rounded-2xl" style={{
+            '--color-primary': theme.primary,
+            '--color-primary-foreground': theme.fg,
+            '--color-ring': theme.ring,
+            '--color-border': theme.border,
+          }}>
+            <DialogHeader className="px-5 pt-5 pb-3 border-b">
+              <DialogTitle className="flex items-center gap-2.5 text-lg">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10">
+                  <Eye className="h-4 w-4 text-primary" />
+                </div>
+                Visitor Stats
+              </DialogTitle>
+              <DialogDescription className="sr-only">Website visitor statistics</DialogDescription>
+            </DialogHeader>
+            <div className="p-5">
+              {visitorStats ? (
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="rounded-xl border p-4 text-center">
+                    <div className="flex items-center justify-center gap-1.5 text-muted-foreground mb-2">
+                      <TrendingUp className="h-3.5 w-3.5" />
+                      <span className="text-xs font-medium">Total</span>
+                    </div>
+                    <p className="text-2xl font-bold">{visitorStats.total.toLocaleString()}</p>
+                  </div>
+                  <div className="rounded-xl border p-4 text-center">
+                    <div className="flex items-center justify-center gap-1.5 text-muted-foreground mb-2">
+                      <Eye className="h-3.5 w-3.5" />
+                      <span className="text-xs font-medium">Today</span>
+                    </div>
+                    <p className="text-2xl font-bold">{visitorStats.today.toLocaleString()}</p>
+                  </div>
+                  <div className="rounded-xl border p-4 text-center">
+                    <div className="flex items-center justify-center gap-1.5 text-muted-foreground mb-2">
+                      <CalendarDays className="h-3.5 w-3.5" />
+                      <span className="text-xs font-medium">This Week</span>
+                    </div>
+                    <p className="text-2xl font-bold">{visitorStats.week.toLocaleString()}</p>
+                  </div>
+                  <div className="rounded-xl border p-4 text-center">
+                    <div className="flex items-center justify-center gap-1.5 text-muted-foreground mb-2">
+                      <Users className="h-3.5 w-3.5" />
+                      <span className="text-xs font-medium">This Month</span>
+                    </div>
+                    <p className="text-2xl font-bold">{visitorStats.month.toLocaleString()}</p>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex items-center justify-center py-8">
+                  <Loader2 className="h-6 w-6 animate-spin text-primary" />
+                </div>
+              )}
+            </div>
+          </DialogContent>
+        </Dialog>
 
         {/* Back to Top */}
         {showBackToTop && (

@@ -45,6 +45,14 @@ export async function ensureSchema() {
     )
   `
 
+  // Visitors table
+  await sql`
+    CREATE TABLE IF NOT EXISTS visitors (
+      id SERIAL PRIMARY KEY,
+      visited_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `
+
   // Seed default meta for clinic section if missing
   const meta = await sql`SELECT id FROM table_meta WHERE section = 'clinic' LIMIT 1`
   if (meta.length === 0) {
