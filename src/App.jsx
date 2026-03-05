@@ -627,7 +627,7 @@ export default function App() {
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="h-7 text-[11px] text-muted-foreground gap-1 mr-6"
+                    className="h-7 text-[11px] text-muted-foreground gap-1 mr-12"
                     onClick={() => {
                       if (confirm(`Delete all ${feedbackList.length} notifications?`)) {
                         feedbackList.forEach(f => deleteFeedback(f.id))
