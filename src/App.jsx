@@ -136,31 +136,6 @@ export default function App() {
     setActiveSection(s)
   }
 
-  // Swipe between sections
-  const touchRef = useRef(null)
-
-  const onTouchStart = useCallback((e) => {
-    const t = e.touches[0]
-    touchRef.current = { x: t.clientX, y: t.clientY }
-  }, [])
-
-  const onTouchEnd = useCallback((e) => {
-    if (!touchRef.current) return
-    const t = e.changedTouches[0]
-    const dx = t.clientX - touchRef.current.x
-    const dy = t.clientY - touchRef.current.y
-    touchRef.current = null
-
-    // Only trigger on horizontal swipes (>80px, more horizontal than vertical)
-    if (Math.abs(dx) < 80 || Math.abs(dy) > Math.abs(dx)) return
-
-    const idx = SECTIONS.indexOf(activeSection)
-    if (dx < 0 && idx < SECTIONS.length - 1) {
-      switchSection(SECTIONS[idx + 1])
-    } else if (dx > 0 && idx > 0) {
-      switchSection(SECTIONS[idx - 1])
-    }
-  }, [activeSection])
 
   const categoryCol = useMemo(() => findColumnName(columns, ['category', 'age/timing', 'age']), [columns])
   const categories = useMemo(() => {
@@ -359,8 +334,6 @@ export default function App() {
     <TooltipProvider>
       <div
         className="mx-auto max-w-7xl px-4 py-6 sm:px-6"
-        onTouchStart={onTouchStart}
-        onTouchEnd={onTouchEnd}
         style={{
           '--color-primary': theme.primary,
           '--color-primary-foreground': theme.fg,
