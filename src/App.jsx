@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState, useCallback, useRef } from 'react'
 import DataTable from './components/DataTable.jsx'
 import AdminPanel from './components/AdminPanel.jsx'
 import ConfirmDialog from './components/ConfirmDialog.jsx'
+import ChatBot from './components/ChatBot.jsx'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
 import { findColumnName, parseAgeMonths } from './utils/columns.js'
 import { Button } from './components/ui/button.jsx'
@@ -796,6 +797,7 @@ export default function App() {
             <ArrowUp className="h-5 w-5" />
           </button>
         )}
+        <ChatBot theme={theme} />
       </div>
     </TooltipProvider>
   )
