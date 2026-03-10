@@ -2,7 +2,6 @@ import React, { useEffect, useMemo, useState, useCallback, useRef } from 'react'
 import DataTable from './components/DataTable.jsx'
 import AdminPanel from './components/AdminPanel.jsx'
 import ConfirmDialog from './components/ConfirmDialog.jsx'
-import ChatBot from './components/ChatBot.jsx'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
 import { findColumnName, parseAgeMonths } from './utils/columns.js'
 import { Button } from './components/ui/button.jsx'
@@ -433,7 +432,7 @@ export default function App() {
 
         {/* Controls */}
         <div className="no-print flex flex-col gap-3 mb-5">
-          <div className="flex items-center gap-2 flex-wrap">
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar flex-nowrap">
             {[
               { key: 'clinic', label: 'Clinic Medications', Icon: Pill },
               { key: 'vaccination', label: 'Vaccination', Icon: Syringe },
@@ -446,7 +445,7 @@ export default function App() {
                 <button
                   key={key}
                   onClick={() => switchSection(key)}
-                  className="inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer"
+                  className="inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer shrink-0 whitespace-nowrap"
                   style={active
                     ? { backgroundColor: t.text, color: '#fff', boxShadow: `0 2px 8px ${t.text}30` }
                     : { backgroundColor: t.bg, color: t.text, border: `1px solid ${t.border}` }
@@ -797,7 +796,6 @@ export default function App() {
             <ArrowUp className="h-5 w-5" />
           </button>
         )}
-        <ChatBot theme={theme} />
       </div>
     </TooltipProvider>
   )

@@ -5,6 +5,10 @@ html {
   touch-action: auto !important;
 }
 
+/* Hide scrollbar but keep scrollable */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
 @theme {
   --color-background: oklch(0.98 0.002 240);
   --color-foreground: oklch(0.15 0.02 260);
