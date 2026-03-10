@@ -7,10 +7,102 @@ import { Button } from './ui/button.jsx'
 import { Input } from './ui/input.jsx'
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from './ui/table.jsx'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
-import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText, Flag, PlusCircle } from 'lucide-react'
+import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText, Flag, PlusCircle, ChevronDown } from 'lucide-react'
 
 function KuwaitFlag({ className = 'h-5' }) {
   return <img src="/kw.png" alt="Kuwait" className={className} />
+}
+
+const IND_FIELDS = [
+  { key: 'indication', label: 'Indication' },
+  { key: 'whenToGive', label: 'When to give' },
+  { key: 'doseCalc', label: 'Dose + Dose calculation' },
+  { key: 'duration', label: 'Duration' },
+  { key: 'evidenceBased', label: 'Evidence Based' },
+]
+
+const CONTRA_FIELDS = [
+  { key: 'absolute', label: 'Absolute contraindications' },
+  { key: 'caution', label: 'Caution' },
+  { key: 'sideEffects', label: 'Side effects' },
+  { key: 'counseling', label: 'Counseling' },
+]
+
+// Parse legacy plain-text value into sub-fields object
+function parseToObj(val, fields) {
+  if (val && typeof val === 'object' && !Array.isArray(val)) return val
+  return {}
+}
+
+function SubFieldEditor({ fields, value, onChange, color }) {
+  const obj = parseToObj(value, fields)
+  const border = color === 'red' ? 'border-red-200' : 'border-primary/20'
+  const ring = color === 'red' ? 'focus:ring-red-400/50' : 'focus:ring-primary/30'
+  const labelColor = color === 'red' ? 'text-red-700' : 'text-primary'
+
+  const update = (key, text) => {
+    onChange({ ...obj, [key]: text })
+  }
+
+  return (
+    <div className="space-y-3">
+      {fields.map(({ key, label }) => (
+        <div key={key}>
+          <label className={`text-xs font-semibold ${labelColor} mb-1 block`}>{label}</label>
+          <textarea
+            className={`w-full rounded-md border ${border} bg-white px-3 py-2 text-sm min-h-[48px] resize-y focus:outline-none focus:ring-2 ${ring}`}
+            value={obj[key] ?? ''}
+            onChange={(e) => update(key, e.target.value)}
+            rows={2}
+          />
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function CollapsibleField({ label, text, color }) {
+  const [open, setOpen] = useState(false)
+  const labelColor = color === 'red' ? 'text-red-700' : 'text-primary'
+
+  return (
+    <div className="border-b last:border-b-0 border-border/40">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between gap-2 py-2 px-1 text-left cursor-pointer hover:opacity-70 transition-opacity"
+      >
+        <span className={`text-[11px] font-bold ${labelColor} uppercase tracking-wide`}>{label}</span>
+        <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
+      </button>
+      {open && (
+        <div className="pb-2 px-1 animate-expand-in">
+          <p className="text-sm leading-relaxed text-foreground/80">{text}</p>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function SubFieldDisplay({ fields, value, color }) {
+  const obj = parseToObj(value, fields)
+  const hasAny = fields.some(f => obj[f.key])
+
+  // Legacy: if value is a plain string, show it as-is
+  if (value && typeof value === 'string') {
+    return <p className="text-sm leading-relaxed text-foreground/80">{value}</p>
+  }
+
+  if (!hasAny) return <p className="text-sm text-foreground/50">—</p>
+
+  return (
+    <div>
+      {fields.map(({ key, label }) => {
+        const text = obj[key]
+        if (!text) return null
+        return <CollapsibleField key={key} label={label} text={text} color={color} />
+      })}
+    </div>
+  )
 }
 
 function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
@@ -42,44 +134,46 @@ function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
           </DialogHeader>
 
           <div className="p-5 space-y-4 overflow-y-auto">
-            {/* Indications card */}
+            {/* Indications */}
             {hasIndications && (
               <div className="rounded-lg border bg-primary/5 border-primary/20 p-3.5">
-                <div className="flex items-center gap-2 mb-2">
+                <div className="flex items-center gap-2 mb-3">
                   <div className="flex items-center justify-center h-5 w-5 rounded-full bg-primary/10">
                     <ShieldCheck className="h-3 w-3 text-primary" />
                   </div>
                   <span className="text-xs font-bold text-foreground uppercase tracking-wide">Indications</span>
                 </div>
                 {adminMode ? (
-                  <textarea
-                    className="w-full rounded-md border border-primary/20 bg-white px-3 py-2 text-sm min-h-[80px] resize-y focus:outline-none focus:ring-2 focus:ring-primary/30"
+                  <SubFieldEditor
+                    fields={IND_FIELDS}
                     value={indVal}
-                    onChange={(e) => onCellChange?.(row.id, indicationsCol, e.target.value)}
+                    onChange={(obj) => onCellChange?.(row.id, indicationsCol, obj)}
+                    color="primary"
                   />
                 ) : (
-                  <p className="text-sm leading-relaxed text-foreground/80">{String(indVal) || '—'}</p>
+                  <SubFieldDisplay fields={IND_FIELDS} value={indVal} color="primary" />
                 )}
               </div>
             )}
 
-            {/* Contraindications card */}
+            {/* Contraindications */}
             {hasContra && (
               <div className="rounded-lg border bg-red-50/50 border-red-200/60 p-3.5">
-                <div className="flex items-center gap-2 mb-2">
+                <div className="flex items-center gap-2 mb-3">
                   <div className="flex items-center justify-center h-5 w-5 rounded-full bg-red-100">
                     <ShieldAlert className="h-3 w-3 text-red-600" />
                   </div>
                   <span className="text-xs font-bold text-foreground uppercase tracking-wide">Contraindications</span>
                 </div>
                 {adminMode ? (
-                  <textarea
-                    className="w-full rounded-md border border-red-200 bg-white px-3 py-2 text-sm min-h-[80px] resize-y focus:outline-none focus:ring-2 focus:ring-red-400/50"
+                  <SubFieldEditor
+                    fields={CONTRA_FIELDS}
                     value={contraVal}
-                    onChange={(e) => onCellChange?.(row.id, contraCol, e.target.value)}
+                    onChange={(obj) => onCellChange?.(row.id, contraCol, obj)}
+                    color="red"
                   />
                 ) : (
-                  <p className="text-sm leading-relaxed text-foreground/80">{String(contraVal) || '—'}</p>
+                  <SubFieldDisplay fields={CONTRA_FIELDS} value={contraVal} color="red" />
                 )}
               </div>
             )}

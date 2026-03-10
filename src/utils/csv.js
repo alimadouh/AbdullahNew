@@ -3,7 +3,11 @@ import Papa from 'papaparse'
 export function exportToCsv({ columns, rows }) {
   const data = rows.map(r => {
     const obj = {}
-    for (const c of columns) obj[c] = (r.data || {})[c] ?? ''
+    for (const c of columns) {
+      const val = (r.data || {})[c] ?? ''
+      // Serialize objects (e.g. Indications/Contraindications sub-fields) as JSON strings
+      obj[c] = (val && typeof val === 'object') ? JSON.stringify(val) : val
+    }
     return obj
   })
   const csv = Papa.unparse(data, { columns })
@@ -37,7 +41,15 @@ export async function importFromCsvFile(file) {
   }
   const rows = (parsed.data || []).map(obj => {
     const data = {}
-    for (const c of columns) data[c] = obj[c] ?? ''
+    for (const c of columns) {
+      const val = obj[c] ?? ''
+      // Try parsing JSON strings back into objects (for Indications/Contraindications sub-fields)
+      if (typeof val === 'string' && val.startsWith('{') && val.endsWith('}')) {
+        try { data[c] = JSON.parse(val) } catch { data[c] = val }
+      } else {
+        data[c] = val
+      }
+    }
     return { data }
   })
   return { columns, rows }
