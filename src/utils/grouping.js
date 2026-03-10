@@ -9,10 +9,10 @@ export function groupRows({ columns, rows, categoryFilter, searchQuery }) {
   const routeCol = findColumnName(columns, ['route'])
   const genericCol = findColumnName(columns, ['generic name', 'generic'])
   const tradingCol = findColumnName(columns, ['trading name', 'trading'])
-  const searchCols = [genericCol, tradingCol].filter(Boolean)
+  const doseCol = findColumnName(columns, ['dose'])
   const q = safeLower(searchQuery)
 
-  // filter by category + search
+  // filter by category + search (search all columns except Dose)
   const filtered = rows.filter(r => {
     const values = r.data || {}
     if (categoryFilter && categoryFilter !== '__ALL__' && categoryCol) {
@@ -20,7 +20,11 @@ export function groupRows({ columns, rows, categoryFilter, searchQuery }) {
       if (catVal !== categoryFilter) return false
     }
     if (q) {
-      const hay = (searchCols.length > 0 ? searchCols : columns).map(c => String(values[c] ?? '')).join(' ').toLowerCase()
+      const hay = columns.filter(c => c !== doseCol).map(c => {
+        const v = values[c]
+        if (v && typeof v === 'object') return Object.values(v).join(' ')
+        return String(v ?? '')
+      }).join(' ').toLowerCase()
       if (!hay.includes(q)) return false
     }
     return true

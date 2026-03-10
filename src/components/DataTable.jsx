@@ -13,6 +13,21 @@ function KuwaitFlag({ className = 'h-5' }) {
   return <img src="/kw.png" alt="Kuwait" className={className} />
 }
 
+function HighlightText({ text, query }) {
+  if (!query || !text) return <>{String(text)}</>
+  const str = String(text)
+  const q = query.toLowerCase()
+  const idx = str.toLowerCase().indexOf(q)
+  if (idx === -1) return <>{str}</>
+  return (
+    <>
+      {str.slice(0, idx)}
+      <mark className="bg-yellow-200 text-foreground rounded-sm px-0.5">{str.slice(idx, idx + q.length)}</mark>
+      {str.slice(idx + q.length)}
+    </>
+  )
+}
+
 const IND_FIELDS = [
   { key: 'indication', label: 'Indication' },
   { key: 'whenToGive', label: 'When to give' },
@@ -351,9 +366,9 @@ export default function DataTable({
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-1.5">
                       {isKw && <KuwaitFlag className="h-4 shrink-0" />}
-                      <span className="font-semibold text-sm text-foreground leading-tight">{generic || '—'}</span>
+                      <span className="font-semibold text-sm text-foreground leading-tight"><HighlightText text={generic || '—'} query={searchQuery} /></span>
                     </div>
-                    {trading && <p className="text-xs text-primary font-medium mt-0.5">{trading}</p>}
+                    {trading && <p className="text-xs text-primary font-medium mt-0.5"><HighlightText text={trading} query={searchQuery} /></p>}
                   </div>
                   {hasMergedCol && (
                     <div className="shrink-0" onClick={(e) => e.stopPropagation()}>
@@ -369,9 +384,9 @@ export default function DataTable({
                 </div>
                 {(type || dose || route) && (
                   <div className="flex flex-wrap gap-1.5 mt-2">
-                    {type && <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted text-[11px] text-muted-foreground">{type}</span>}
+                    {type && <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted text-[11px] text-muted-foreground"><HighlightText text={type} query={searchQuery} /></span>}
                     {dose && <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-primary/10 text-[11px] text-primary font-medium">{dose}</span>}
-                    {route && <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted text-[11px] text-muted-foreground">{route}</span>}
+                    {route && <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted text-[11px] text-muted-foreground"><HighlightText text={route} query={searchQuery} /></span>}
                   </div>
                 )}
               </div>
@@ -516,6 +531,8 @@ export default function DataTable({
                                   }
                                   const value = (r.data || {})[col] ?? ''
                                   const isCategory = col === categoryCol
+                                  const isDose = col === doseCol
+                                  const q = isDose ? '' : searchQuery
                                   return (
                                     <TableCell key={`${r.id}:${col}`} className="leading-snug">
                                       {adminMode ? (
@@ -527,10 +544,10 @@ export default function DataTable({
                                         />
                                       ) : isCategory && value ? (
                                         <span className="inline-flex items-center px-2.5 py-0.5 rounded-md bg-primary/10 text-primary text-xs font-medium">
-                                          {String(value)}
+                                          <HighlightText text={String(value)} query={q} />
                                         </span>
                                       ) : (
-                                        <span className="line-clamp-4">{String(value)}</span>
+                                        <span className="line-clamp-4"><HighlightText text={String(value)} query={q} /></span>
                                       )}
                                     </TableCell>
                                   )
@@ -560,7 +577,7 @@ export default function DataTable({
                                           return (
                                             <div key={col} className="flex gap-2">
                                               <span className="font-medium text-muted-foreground shrink-0">{col}:</span>
-                                              <span className="text-foreground">{String(val) || '—'}</span>
+                                              <span className="text-foreground"><HighlightText text={String(val) || '—'} query={searchQuery} /></span>
                                             </div>
                                           )
                                         })}
