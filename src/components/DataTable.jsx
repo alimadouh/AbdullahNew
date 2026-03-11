@@ -301,17 +301,29 @@ export default function DataTable({
                 {allPdfRows.map((r, i) => {
                   const pdfPath = (r.data || {})[pdfCol] ?? ''
                   const label = pdfLabelCol ? ((r.data || {})[pdfLabelCol] ?? '') : ''
+                  const cat = categoryCol ? String((r.data || {})[categoryCol] ?? '').toLowerCase() : ''
+                  const cardColor = cat === 'boys'
+                    ? { bg: '#eff6ff', border: '#93c5fd', icon: '#3b82f6', hover: '#dbeafe' }
+                    : cat === 'girls'
+                    ? { bg: '#fdf2f8', border: '#f9a8d4', icon: '#ec4899', hover: '#fce7f3' }
+                    : null
                   return (
                     <a
                       key={r.id}
                       href={pdfPath || '#'}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center gap-3 rounded-xl border bg-white p-4 text-left shadow-sm transition-all hover:shadow-md hover:border-primary/40 hover:bg-primary/5 animate-row-in no-underline"
-                      style={{ animationDelay: `${i * 0.03}s` }}
+                      className="group flex items-center gap-3 rounded-xl border p-4 text-left shadow-sm transition-all hover:shadow-md animate-row-in no-underline"
+                      style={{
+                        animationDelay: `${i * 0.03}s`,
+                        backgroundColor: cardColor?.bg || 'white',
+                        borderColor: cardColor?.border || undefined,
+                      }}
+                      onMouseEnter={e => { if (cardColor) e.currentTarget.style.backgroundColor = cardColor.hover }}
+                      onMouseLeave={e => { if (cardColor) e.currentTarget.style.backgroundColor = cardColor.bg }}
                     >
-                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                        <svg className="h-6 w-6 text-primary" viewBox="0 0 32 32" fill="none">
+                      <div className={cardColor ? "flex h-10 w-10 shrink-0 items-center justify-center rounded-lg transition-colors" : "flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors"} style={cardColor ? { backgroundColor: `${cardColor.icon}1a` } : undefined}>
+                        <svg className={cardColor ? "h-6 w-6" : "h-6 w-6 text-primary"} style={cardColor ? { color: cardColor.icon } : undefined} viewBox="0 0 32 32" fill="none">
                           <path d="M6 3a2 2 0 0 1 2-2h10l8 8v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V3z" fill="currentColor" opacity="0.15"/>
                           <path d="M6 3a2 2 0 0 1 2-2h10l8 8v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V3z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
                           <path d="M18 1v6a2 2 0 0 0 2 2h6" stroke="currentColor" strokeWidth="1.5" fill="none"/>

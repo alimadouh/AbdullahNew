@@ -2,7 +2,7 @@ import { neon } from '@netlify/neon'
 
 export const sql = neon() // uses env NETLIFY_DATABASE_URL automatically
 
-export const VALID_SECTIONS = ['clinic', 'vaccination', 'er-medication', 'er-guidelines']
+export const VALID_SECTIONS = ['clinic', 'vaccination', 'er-medication', 'er-guidelines', 'pediatrics']
 
 export const DEFAULT_COLUMNS = [
   "Category",

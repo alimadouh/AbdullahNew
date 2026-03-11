@@ -12,7 +12,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -32,14 +32,15 @@ function getTimeAgo(dateStr) {
   return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
 }
 
-const SECTIONS = ['clinic', 'vaccination', 'er-medication', 'er-guidelines']
-const SECTION_LABELS = { clinic: 'Clinic Medications', vaccination: 'Vaccination', 'er-medication': 'ER Medication', 'er-guidelines': 'ER Guidelines' }
+const SECTIONS = ['clinic', 'vaccination', 'er-medication', 'er-guidelines', 'pediatrics']
+const SECTION_LABELS = { clinic: 'Clinic Medications', vaccination: 'Vaccination', 'er-medication': 'ER Medication', 'er-guidelines': 'ER Guidelines', pediatrics: 'Pediatrics' }
 
 const SECTION_THEMES = {
   clinic:         { primary: 'oklch(0.55 0.18 230)', fg: 'oklch(0.98 0.005 230)', ring: 'oklch(0.55 0.18 230)', pageBg: '#f0f9ff', bg: '#e0f2fe', text: '#0284c7', border: '#7dd3fc' },   // sky blue
   vaccination:    { primary: 'oklch(0.60 0.15 85)',  fg: 'oklch(0.98 0.005 85)',  ring: 'oklch(0.60 0.15 85)',  pageBg: '#fefce8', bg: '#fef9c3', text: '#a16207', border: '#fde047' },   // light yellow
   'er-medication':{ primary: 'oklch(0.55 0.2 25)',   fg: 'oklch(0.98 0.005 25)',  ring: 'oklch(0.55 0.2 25)',   pageBg: '#fef2f2', bg: '#fecaca', text: '#dc2626', border: '#fca5a5' },   // light red
   'er-guidelines':{ primary: 'oklch(0.62 0.16 55)',  fg: 'oklch(0.98 0.005 55)',  ring: 'oklch(0.62 0.16 55)',  pageBg: '#fff7ed', bg: '#ffedd5', text: '#ea580c', border: '#fdba74' },   // light orange
+  pediatrics:     { primary: 'oklch(0.55 0.17 150)', fg: 'oklch(0.98 0.005 150)', ring: 'oklch(0.55 0.17 150)', pageBg: '#f0fdf4', bg: '#dcfce7', text: '#16a34a', border: '#86efac' },   // light green
   notifications:  { primary: 'oklch(0.55 0.18 280)', fg: 'oklch(0.98 0.005 280)', ring: 'oklch(0.55 0.18 280)', pageBg: '#f5f3ff', bg: '#ede9fe', text: '#7c3aed', border: '#c4b5fd' },   // purple
 }
 
@@ -131,7 +132,7 @@ export default function App() {
 
   const switchSection = (s) => {
     if (s === activeSection) return
-    setCategoryFilter(s === 'er-guidelines' ? '__ALL__' : '')
+    setCategoryFilter((s === 'er-guidelines' || s === 'pediatrics') ? '__ALL__' : '')
     setSearchQuery('')
     setActiveSection(s)
   }
@@ -438,6 +439,7 @@ export default function App() {
               { key: 'vaccination', label: 'Vaccination', Icon: Syringe },
               { key: 'er-medication', label: 'ER Medication', Icon: Cross },
               { key: 'er-guidelines', label: 'ER Guidelines', Icon: BookOpen },
+              { key: 'pediatrics', label: 'Pediatrics', Icon: Baby },
             ].map(({ key, label, Icon }) => {
               const t = SECTION_THEMES[key]
               const active = activeSection === key
@@ -458,6 +460,7 @@ export default function App() {
             })}
           </div>
 
+          {activeSection !== 'pediatrics' && (
           <div className="flex items-center gap-2">
             <Select
               value={categoryFilter}
@@ -488,12 +491,13 @@ export default function App() {
             </div>
 
           </div>
+          )}
         </div>
 
 
 
         {/* Content */}
-        {activeSection !== 'er-guidelines' && !categoryFilter && !searchQuery.trim() ? (
+        {activeSection !== 'er-guidelines' && activeSection !== 'pediatrics' && !categoryFilter && !searchQuery.trim() ? (
           <Card>
             <CardContent className="flex flex-col items-center gap-3 py-16 text-center">
               <Search className="h-8 w-8 text-muted-foreground" />
