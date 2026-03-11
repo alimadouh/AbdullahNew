@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState, useCallback, useRef } from 'react'
 import DataTable from './components/DataTable.jsx'
 import AdminPanel from './components/AdminPanel.jsx'
 import ConfirmDialog from './components/ConfirmDialog.jsx'
+import GrowthCalculator from './components/GrowthCalculator.jsx'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
 import { findColumnName, parseAgeMonths } from './utils/columns.js'
 import { Button } from './components/ui/button.jsx'
@@ -12,7 +13,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -58,6 +59,7 @@ export default function App() {
   const [loginErr, setLoginErr] = useState('')
   const [saving, setSaving] = useState(false)
   const [activeSection, setActiveSection] = useState('clinic')
+  const [growthCalcOpen, setGrowthCalcOpen] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const settingsRef = useRef(null)
   const [feedbackOpen, setFeedbackOpen] = useState(false)
@@ -496,6 +498,20 @@ export default function App() {
 
 
 
+        {/* Growth Calculator Button for Pediatrics */}
+        {activeSection === 'pediatrics' && (
+          <div className="mb-4">
+            <Button
+              onClick={() => setGrowthCalcOpen(true)}
+              className="gap-2 text-white"
+              style={{ backgroundColor: theme.text }}
+            >
+              <Calculator className="h-4 w-4" />
+              Growth Chart Calculator
+            </Button>
+          </div>
+        )}
+
         {/* Content */}
         {activeSection !== 'er-guidelines' && activeSection !== 'pediatrics' && !categoryFilter && !searchQuery.trim() ? (
           <Card>
@@ -518,6 +534,13 @@ export default function App() {
             hideInfoBar={activeSection !== 'er-guidelines'}
           />
         )}
+
+        {/* Growth Calculator */}
+        <GrowthCalculator
+          open={growthCalcOpen}
+          onClose={() => setGrowthCalcOpen(false)}
+          theme={theme}
+        />
 
         {/* Admin Panel Dialog */}
         <AdminPanel
