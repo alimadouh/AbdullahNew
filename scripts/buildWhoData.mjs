@@ -7,8 +7,8 @@
 import { readFileSync, writeFileSync } from 'fs'
 
 function lmsToValue(L, M, S, z) {
-  if (Math.abs(L) < 0.0001) return +(M * Math.exp(S * z)).toFixed(1)
-  return +(M * Math.pow(1 + L * S * z, 1 / L)).toFixed(1)
+  if (Math.abs(L) < 0.0001) return +(M * Math.exp(S * z)).toFixed(2)
+  return +(M * Math.pow(1 + L * S * z, 1 / L)).toFixed(2)
 }
 
 function lmsRowToZscores(L, M, S) {

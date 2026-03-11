@@ -38,16 +38,17 @@ function calcZScore(value, dataSet, ageOrLength, keyField = 'month') {
 function getZInterpretation(z, indicator) {
   if (z == null) return '—'
   if (indicator === 'lengthForAge' || indicator === 'heightForAge') {
-    if (z >= 3) return 'Very tall'
+    if (z >= 3) return 'Very tall for age'
+    if (z >= 2) return 'Tall for age'
     if (z >= -2) return 'Normal'
-    if (z >= -3) return 'Stunted'
+    if (z > -3) return 'Stunted'
     return 'Severely stunted'
   }
   if (indicator === 'weightForAge') {
-    if (z >= 3) return 'Very heavy'
-    if (z >= 2) return 'Heavy'
+    if (z >= 3) return 'Very high weight for age'
+    if (z >= 2) return 'High weight for age'
     if (z >= -2) return 'Normal'
-    if (z >= -3) return 'Underweight'
+    if (z > -3) return 'Underweight'
     return 'Severely underweight'
   }
   if (indicator === 'weightForLength' || indicator === 'weightForHeight') {
@@ -55,7 +56,7 @@ function getZInterpretation(z, indicator) {
     if (z >= 2) return 'Overweight'
     if (z >= 1) return 'Possible risk of overweight'
     if (z >= -2) return 'Normal'
-    if (z >= -3) return 'Wasted'
+    if (z > -3) return 'Wasted'
     return 'Severely wasted'
   }
   if (indicator === 'bmiForAge') {
@@ -63,7 +64,7 @@ function getZInterpretation(z, indicator) {
     if (z >= 2) return 'Overweight'
     if (z >= 1) return 'Possible risk of overweight'
     if (z >= -2) return 'Normal'
-    if (z >= -3) return 'Wasted'
+    if (z > -3) return 'Wasted'
     return 'Severely wasted'
   }
   if (z >= 2) return 'Above normal'
@@ -82,9 +83,9 @@ function getZColor(z, indicator) {
   if (z == null) return '#6b7280'
   const interp = getZInterpretation(z, indicator)
   if (interp === 'Normal') return '#16a34a'
-  if (interp === 'Possible risk of overweight' || interp === 'Heavy') return '#ca8a04'
+  if (interp === 'Possible risk of overweight' || interp === 'High weight for age' || interp === 'Tall for age') return '#ca8a04'
   if (interp === 'Stunted' || interp === 'Underweight' || interp === 'Wasted' || interp === 'Overweight' || interp === 'Above normal' || interp === 'Below normal') return '#dc2626'
-  if (interp === 'Severely stunted' || interp === 'Severely underweight' || interp === 'Severely wasted' || interp === 'Obese' || interp === 'Very heavy' || interp === 'Very tall') return '#111111'
+  if (interp === 'Severely stunted' || interp === 'Severely underweight' || interp === 'Severely wasted' || interp === 'Obese' || interp === 'Very high weight for age' || interp === 'Very tall for age') return '#111111'
   return '#6b7280'
 }
 
