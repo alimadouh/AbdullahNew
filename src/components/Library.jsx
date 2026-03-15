@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Card, CardContent } from './ui/card.jsx'
-import { FileText, ArrowLeft, Trophy, Microscope, Dna, Stethoscope, Snowflake, ShieldPlus, ClipboardList } from 'lucide-react'
+import { FileText, ArrowLeft, Trophy, Microscope, Dna, Stethoscope, Snowflake, ShieldPlus, ClipboardList, GraduationCap } from 'lucide-react'
 import { Button } from './ui/button.jsx'
 
 const FOLDERS = [
@@ -25,37 +25,6 @@ const FOLDERS = [
       { file: 'psychiatry.pdf', label: 'Psychiatry' },
       { file: 'respiratory.pdf', label: 'Respiratory' },
       { file: 'surgery.pdf', label: 'Surgery & Male Health' },
-    ],
-  },
-  {
-    name: 'Dermatology', icon: Microscope,
-    books: [
-      { file: 'skin-lesion-guide.pdf', label: 'Skin Lesion Guide' },
-      { file: 'dermatological-cases.pdf', label: 'Dermatological Cases' },
-    ],
-  },
-  {
-    name: 'Genetics', icon: Dna,
-    books: [
-      { file: 'nbs-maro.pdf', label: 'NBS MARO' },
-      { file: 'nbs-manual.pdf', label: 'NBS Manual' },
-    ],
-  },
-  {
-    name: 'Physical Examination', icon: Stethoscope,
-    books: [
-      { file: 'thyroid-examination.pdf', label: 'Thyroid Status Examination OSCE' },
-      { file: 'abdominal-examination.pdf', label: 'Abdominal Examination OSCE' },
-    ],
-  },
-  {
-    name: 'Winter Illnesses', icon: Snowflake,
-    books: [
-      { file: 'winter-illnesses.pdf', label: 'Winter Illnesses (Full)' },
-      { file: 'acute-bronchiolitis.pdf', label: 'Acute Bronchiolitis' },
-      { file: 'pertussis.pdf', label: 'Pertussis' },
-      { file: 'croup.pdf', label: 'Croup' },
-      { file: 'pneumonia.pdf', label: 'Pneumonia' },
     ],
   },
   {
@@ -93,6 +62,48 @@ const FOLDERS = [
       { file: 'page-20.pdf', label: 'Adult Cardiac Arrest Algorithm' },
       { file: 'page-21.pdf', label: 'Adult Bradycardia Algorithm' },
       { file: 'page-22.pdf', label: 'Adult Tachycardia Algorithm' },
+    ],
+  },
+  {
+    name: 'Physical Examination', icon: Stethoscope,
+    books: [
+      { file: 'macleods-clinical-examination.pdf', label: "Macleod's Clinical Examination" },
+      { file: 'thyroid-examination.pdf', label: 'Thyroid Status Examination OSCE' },
+      { file: 'abdominal-examination.pdf', label: 'Abdominal Examination OSCE' },
+    ],
+  },
+  {
+    name: 'Winter Illnesses', icon: Snowflake,
+    books: [
+      { file: 'winter-illnesses.pdf', label: 'Winter Illnesses (Full)' },
+      { file: 'acute-bronchiolitis.pdf', label: 'Acute Bronchiolitis' },
+      { file: 'pertussis.pdf', label: 'Pertussis' },
+      { file: 'croup.pdf', label: 'Croup' },
+      { file: 'pneumonia.pdf', label: 'Pneumonia' },
+    ],
+  },
+  {
+    name: 'Genetics', icon: Dna,
+    books: [
+      { file: 'nbs-maro.pdf', label: 'NBS MARO' },
+      { file: 'nbs-manual.pdf', label: 'NBS Manual' },
+    ],
+  },
+  {
+    name: 'Dermatology', icon: Microscope,
+    books: [
+      { file: 'skin-lesion-guide.pdf', label: 'Skin Lesion Guide' },
+      { file: 'dermatological-cases.pdf', label: 'Dermatological Cases' },
+    ],
+  },
+  {
+    name: 'Exams', icon: GraduationCap,
+    books: [
+      { file: 'internal-medicine-exam.pdf', label: 'Internal Medicine' },
+      { file: 'ob-gyn-exam.pdf', label: 'Ob-Gyn' },
+      { file: 'pediatric-exam.pdf', label: 'Pediatric' },
+      { file: 'surgery-exam.pdf', label: 'Surgery' },
+      { file: 'ethics-exam.pdf', label: 'Ethics' },
     ],
   },
 ]
