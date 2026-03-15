@@ -4,6 +4,8 @@ import AdminPanel from './components/AdminPanel.jsx'
 import ConfirmDialog from './components/ConfirmDialog.jsx'
 import GrowthCalculator from './components/GrowthCalculator.jsx'
 import Library from './components/Library.jsx'
+import { PDFDocument } from 'pdf-lib'
+import { unzipSync, zipSync, strToU8 } from 'fflate'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
 import { findColumnName, parseAgeMonths } from './utils/columns.js'
 import { Button } from './components/ui/button.jsx'
@@ -14,7 +16,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, FileText } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -63,6 +65,18 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('clinic')
   const [growthCalcOpen, setGrowthCalcOpen] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
+  const [leaveFormOpen, setLeaveFormOpen] = useState(false)
+  const [leaveStart, setLeaveStart] = useState('')
+  const [leaveEnd, setLeaveEnd] = useState('')
+  const [onCallFormOpen, setOnCallFormOpen] = useState(false)
+  const [onCallMonth, setOnCallMonth] = useState('')
+  const [onCallRows, setOnCallRows] = useState([
+    { day: '', date: '', start: '', end: '' },
+    { day: '', date: '', start: '', end: '' },
+    { day: '', date: '', start: '', end: '' },
+    { day: '', date: '', start: '', end: '' },
+    { day: '', date: '', start: '', end: '' },
+  ])
   const settingsRef = useRef(null)
   const [feedbackOpen, setFeedbackOpen] = useState(false)
   const [feedbackMsg, setFeedbackMsg] = useState('')
@@ -203,7 +217,6 @@ export default function App() {
       setAdminToken(token)
       setLoginPw('')
       setLoginOpen(false)
-      setAdminOpen(true)
     } catch (e) {
       setLoginErr(String(e?.message || e))
     }
@@ -419,6 +432,15 @@ export default function App() {
                         )}
                       </button>
                       <div className="my-1 border-t" />
+                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setLeaveFormOpen(true); setLeaveStart(''); setLeaveEnd(''); setSettingsOpen(false) }}>
+                        <FileText className="h-4 w-4 text-muted-foreground" />
+                        Return From Leave
+                      </button>
+                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setOnCallFormOpen(true); setOnCallMonth(''); setOnCallRows(Array.from({length:5},()=>({day:'',date:'',start:'',end:''}))); setSettingsOpen(false) }}>
+                        <FileText className="h-4 w-4 text-muted-foreground" />
+                        On-Call Duty Report
+                      </button>
+                      <div className="my-1 border-t" />
                       <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors text-destructive" onClick={() => { logout(); setSettingsOpen(false) }}>
                         <LogOut className="h-4 w-4" />
                         Logout
@@ -548,6 +570,197 @@ export default function App() {
           onClose={() => setGrowthCalcOpen(false)}
           theme={theme}
         />
+
+        {/* Return From Leave Form */}
+        <Dialog open={leaveFormOpen} onOpenChange={setLeaveFormOpen}>
+          <DialogContent className="max-w-sm">
+            <DialogHeader>
+              <DialogTitle>Return From Leave</DialogTitle>
+              <DialogDescription>Fill in leave dates to generate the form</DialogDescription>
+            </DialogHeader>
+            <div className="flex flex-col gap-4 mt-2" dir="rtl">
+              <div className="flex flex-col gap-1.5">
+                <label className="text-sm font-medium">تاريخ الاجازة</label>
+                <Input type="date" value={leaveStart} onChange={e => setLeaveStart(e.target.value)} dir="ltr" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-sm font-medium">تاريخ المباشرة</label>
+                <Input type="date" value={leaveEnd} onChange={e => setLeaveEnd(e.target.value)} dir="ltr" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-sm font-medium">المدة</label>
+                <div className="text-lg font-bold text-primary px-1">
+                  {leaveStart && leaveEnd && new Date(leaveEnd) >= new Date(leaveStart)
+                    ? `${Math.round((new Date(leaveEnd) - new Date(leaveStart)) / 86400000)} يوم`
+                    : '—'}
+                </div>
+              </div>
+              <Button
+                disabled={!leaveStart || !leaveEnd || new Date(leaveEnd) < new Date(leaveStart)}
+                onClick={async () => {
+                  try {
+                    const res = await fetch('/library/return-from-leave.pdf')
+                    const pdfBytes = await res.arrayBuffer()
+                    const pdf = await PDFDocument.load(pdfBytes, { ignoreEncryption: true })
+                    const form = pdf.getForm()
+                    const days = Math.round((new Date(leaveEnd) - new Date(leaveStart)) / 86400000)
+                    const fmtDate = (d) => d.split('-').reverse().join('/')
+                    try { form.getTextField('TEXT 1').setText('Abdullah Fadhel Almusallam') } catch {}
+                    try { form.getTextField('TEXT 2').setText('297060900553') } catch {}
+                    try { form.getTextField('TEXT 3').disableRichFormatting(); form.getTextField('TEXT 3').setText('West Subahiya Health Center') } catch {}
+                    try { form.getTextField('TEXT 4').setText('Assistant Registrar') } catch {}
+                    try { form.getTextField('TEXT 5').setText('PGY1') } catch {}
+                    try { form.getTextField('TEXT 6').setText('178810') } catch {}
+                    try { form.getTextField('TEXT 7').setText(fmtDate(leaveStart)) } catch {}
+                    try { form.getTextField('TEXT 8').setText(fmtDate(leaveEnd)) } catch {}
+                    try { form.getTextField('TEXT 9').setText(String(days) + ' days') } catch {}
+                    try { form.getTextField('TEXT 10').disableRichFormatting(); form.getTextField('TEXT 10').setText('') } catch {}
+                    // Embed signature image
+                    const sigRes = await fetch('/library/signature.png')
+                    const sigBytes = await sigRes.arrayBuffer()
+                    const sigImg = await pdf.embedPng(sigBytes)
+                    const sigDims = sigImg.scale(1)
+                    const boxX = 40, boxY = 370, boxW = 230, boxH = 80
+                    const sigScale = Math.min(boxW / sigDims.width, boxH / sigDims.height) * 0.85
+                    const drawW = sigDims.width * sigScale
+                    const drawH = sigDims.height * sigScale
+                    const page = pdf.getPages()[0]
+                    page.drawImage(sigImg, {
+                      x: boxX + (boxW - drawW) / 2,
+                      y: boxY + (boxH - drawH) / 2,
+                      width: drawW,
+                      height: drawH,
+                    })
+                    form.flatten()
+                    const filled = await pdf.save()
+                    const blob = new Blob([filled], { type: 'application/pdf' })
+                    const url = URL.createObjectURL(blob)
+                    const w = window.open(url, '_blank')
+                    if (!w) {
+                      const a = document.createElement('a')
+                      a.href = url
+                      a.target = '_blank'
+                      a.click()
+                    }
+                    setLeaveFormOpen(false)
+                  } catch (err) {
+                    console.error('PDF fill error:', err)
+                    alert('Error generating PDF: ' + err.message)
+                  }
+                }}
+              >
+                Open PDF
+              </Button>
+            </div>
+          </DialogContent>
+        </Dialog>
+
+        {/* On-Call Duty Report Form */}
+        <Dialog open={onCallFormOpen} onOpenChange={setOnCallFormOpen}>
+          <DialogContent className="max-w-lg max-h-[90vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle>Monthly On-Call Duty Report</DialogTitle>
+              <DialogDescription>Fill in on-call duties then generate the report</DialogDescription>
+            </DialogHeader>
+            <div className="flex flex-col gap-4 mt-2">
+              <div className="flex flex-col gap-1.5">
+                <label className="text-sm font-medium">Month / Year</label>
+                <Input type="month" value={onCallMonth} onChange={e => setOnCallMonth(e.target.value)} />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-medium">On-Call Entries</label>
+                <div className="grid grid-cols-[auto_1fr_1fr_1fr_1fr_auto] gap-2 text-[10px] text-muted-foreground mb-1">
+                  <span>#</span><span>Day</span><span>Date</span><span>Start</span><span>End</span><span></span>
+                </div>
+                {onCallRows.map((row, i) => (
+                  <div key={i} className="grid grid-cols-[auto_1fr_1fr_1fr_1fr_auto] gap-2 items-center">
+                    <span className="text-xs font-medium text-muted-foreground w-4 text-center">{i + 1}</span>
+                    <Input type="date" value={row.date} onChange={e => {
+                      const r = [...onCallRows]
+                      const d = e.target.value ? new Date(e.target.value) : null
+                      const dayName = d ? d.toLocaleDateString('en', { weekday: 'long' }) : ''
+                      r[i] = {...r[i], date: e.target.value, day: dayName}
+                      setOnCallRows(r)
+                    }} className="text-xs" />
+                    <div className="text-xs text-muted-foreground truncate">{row.day || '—'}</div>
+                    <Input type="time" value={row.start} onChange={e => { const r = [...onCallRows]; r[i] = {...r[i], start: e.target.value}; setOnCallRows(r) }} className="text-xs" />
+                    <Input type="time" value={row.end} onChange={e => { const r = [...onCallRows]; r[i] = {...r[i], end: e.target.value}; setOnCallRows(r) }} className="text-xs" />
+                    <button onClick={() => { const r = [...onCallRows]; r.splice(i, 1); setOnCallRows(r) }} className="text-destructive hover:text-destructive/80 cursor-pointer p-0.5" title="Remove row">
+                      <Trash2 className="h-3.5 w-3.5" />
+                    </button>
+                  </div>
+                ))}
+              </div>
+              <div className="text-sm text-muted-foreground">
+                Total On-Calls: <span className="font-bold text-foreground">{onCallRows.filter(r => r.date).length}</span> / 4
+              </div>
+              <Button
+                disabled={!onCallMonth}
+                onClick={async () => {
+                  try {
+                    const res = await fetch('/library/oncall-template.docx')
+                    const buf = await res.arrayBuffer()
+                    const files = unzipSync(new Uint8Array(buf))
+                    let xml = new TextDecoder().decode(files['word/document.xml'])
+
+                    // Month/Year format
+                    const [y, m] = onCallMonth.split('-')
+                    const monthName = new Date(y, m - 1).toLocaleString('en', { month: 'long' })
+                    const monthYear = `${monthName} ${y}`
+
+                    // Replace TEXT 1 (month/year)
+                    xml = xml.replace(/ TEXT 1/g, monthYear)
+
+                    // Replace table rows - handle split tags
+                    // TEXT 2,3 are whole; TEXT 4+ are split as "TEXT" + " N"
+                    const fmtDate = (d) => d ? d.split('-').reverse().join('/') : ''
+                    const vals = {}
+                    onCallRows.forEach((row, i) => {
+                      const base = i * 5
+                      vals[base + 2] = row.day || ''
+                      vals[base + 3] = fmtDate(row.date)
+                      vals[base + 4] = row.start || ''
+                      vals[base + 5] = row.end || ''
+                      vals[base + 6] = '' // Notes - empty
+                    })
+
+                    // Replace TEXT 2 and TEXT 3 (whole tags)
+                    xml = xml.replace(/>TEXT 2</g, '>' + (vals[2] || '') + '<')
+                    xml = xml.replace(/>TEXT 3</g, '>' + (vals[3] || '') + '<')
+
+                    // Replace split tags: "TEXT" + " N" pattern
+                    for (let n = 4; n <= 26; n++) {
+                      const numPart = ' ' + n
+                      const regex = new RegExp('>TEXT</w:t>(.*?)>' + numPart.replace(/\s/, '\\s') + '<', 'g')
+                      xml = xml.replace(regex, '>' + (vals[n] || '') + '</w:t>$1><')
+                    }
+
+                    // Replace TEXT 27 (total)
+                    const total = onCallRows.filter(r => r.date).length
+                    xml = xml.replace(/>TEXT 27</g, '>' + total + '<')
+
+                    // Re-encode and zip
+                    files['word/document.xml'] = strToU8(xml)
+                    const zipped = zipSync(files)
+                    const blob = new Blob([zipped], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' })
+                    const url = URL.createObjectURL(blob)
+                    const a = document.createElement('a')
+                    a.href = url
+                    a.download = `On-Call Report ${monthYear}.docx`
+                    a.click()
+                    URL.revokeObjectURL(url)
+                    setOnCallFormOpen(false)
+                  } catch (err) {
+                    console.error('On-call report error:', err)
+                    alert('Error generating report: ' + err.message)
+                  }
+                }}
+              >
+                Open File
+              </Button>
+            </div>
+          </DialogContent>
+        </Dialog>
 
         {/* Admin Panel Dialog */}
         <AdminPanel
