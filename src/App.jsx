@@ -3,6 +3,7 @@ import DataTable from './components/DataTable.jsx'
 import AdminPanel from './components/AdminPanel.jsx'
 import ConfirmDialog from './components/ConfirmDialog.jsx'
 import GrowthCalculator from './components/GrowthCalculator.jsx'
+import DevMilestones from './components/DevMilestones.jsx'
 import Library from './components/Library.jsx'
 import { PDFDocument } from 'pdf-lib'
 import { unzipSync, zipSync, strToU8 } from 'fflate'
@@ -64,6 +65,7 @@ export default function App() {
   const [saving, setSaving] = useState(false)
   const [activeSection, setActiveSection] = useState('clinic')
   const [growthCalcOpen, setGrowthCalcOpen] = useState(false)
+  const [milestonesOpen, setMilestonesOpen] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [leaveFormOpen, setLeaveFormOpen] = useState(false)
   const [leaveStart, setLeaveStart] = useState('')
@@ -520,9 +522,9 @@ export default function App() {
 
 
 
-        {/* Growth Calculator Button for Pediatrics */}
+        {/* Growth Calculator & Milestones Buttons for Pediatrics */}
         {activeSection === 'pediatrics' && (
-          <div className="mb-4">
+          <div className="mb-4 flex gap-2 flex-wrap">
             <Button
               onClick={() => setGrowthCalcOpen(true)}
               className="gap-2 text-white"
@@ -530,6 +532,14 @@ export default function App() {
             >
               <Calculator className="h-4 w-4" />
               Growth Chart Calculator
+            </Button>
+            <Button
+              onClick={() => setMilestonesOpen(true)}
+              className="gap-2 text-white"
+              style={{ backgroundColor: theme.text }}
+            >
+              <Baby className="h-4 w-4" />
+              Developmental Milestones
             </Button>
           </div>
         )}
@@ -569,6 +579,12 @@ export default function App() {
           open={growthCalcOpen}
           onClose={() => setGrowthCalcOpen(false)}
           theme={theme}
+        />
+
+        {/* Developmental Milestones */}
+        <DevMilestones
+          open={milestonesOpen}
+          onClose={() => setMilestonesOpen(false)}
         />
 
         {/* Return From Leave Form */}
