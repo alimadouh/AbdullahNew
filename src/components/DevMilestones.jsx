@@ -128,6 +128,7 @@ const RED_FLAGS = [
 // ── Helpers ─────────────────────────────────────────────────────────────────
 function ageLabel(months) {
   if (months < 1) return 'Birth'
+  if (months < 2) return '6 weeks'
   if (months < 24) return `${Math.round(months)} mo`
   const y = Math.floor(months / 12)
   const m = Math.round(months % 12)

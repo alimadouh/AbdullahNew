@@ -53,7 +53,7 @@ const SECTION_THEMES = {
 export default function App() {
   const [columns, setColumns] = useState([])
   const [rows, setRows] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [err, setErr] = useState('')
   const [categoryFilter, setCategoryFilter] = useState('')
   const [searchQuery, setSearchQuery] = useState('')
@@ -318,18 +318,6 @@ export default function App() {
     }
   }, [adminToken])
 
-  if (loading) {
-    return (
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6" style={{ '--color-primary': theme.primary, '--color-primary-foreground': theme.fg }}>
-        <Card>
-          <CardContent className="flex items-center justify-center gap-3 py-16">
-            <Loader2 className="h-6 w-6 animate-spin text-primary" />
-            <span className="text-muted-foreground text-lg">Loading {SECTION_LABELS[activeSection]}...</span>
-          </CardContent>
-        </Card>
-      </div>
-    )
-  }
 
   if (err) {
     return (
@@ -524,22 +512,22 @@ export default function App() {
 
         {/* Growth Calculator & Milestones Buttons for Pediatrics */}
         {activeSection === 'pediatrics' && (
-          <div className="mb-4 flex gap-2 flex-wrap">
+          <div className="mb-4 grid grid-cols-2 gap-2">
             <Button
               onClick={() => setGrowthCalcOpen(true)}
-              className="gap-2 text-white"
+              className="gap-1.5 text-white text-xs sm:text-sm h-9"
               style={{ backgroundColor: theme.text }}
             >
-              <Calculator className="h-4 w-4" />
-              Growth Chart Calculator
+              <Calculator className="h-4 w-4 shrink-0" />
+              Growth Calculator
             </Button>
             <Button
               onClick={() => setMilestonesOpen(true)}
-              className="gap-2 text-white"
+              className="gap-1.5 text-white text-xs sm:text-sm h-9"
               style={{ backgroundColor: theme.text }}
             >
-              <Baby className="h-4 w-4" />
-              Developmental Milestones
+              <Baby className="h-4 w-4 shrink-0" />
+              Milestones
             </Button>
           </div>
         )}
