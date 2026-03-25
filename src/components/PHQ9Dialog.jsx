@@ -170,6 +170,7 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
 <html dir="${dir}" lang="${pdfLang}">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PHQ-9 Results</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
@@ -200,7 +201,7 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
 
     <div style="background:${sev.bg};border:2px solid ${sev.color};border-radius:10px;padding:12px 16px;text-align:center;margin-bottom:16px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
       <div style="font-size:28px;font-weight:800;color:${sev.color}">${total}<span style="font-size:14px;font-weight:400;color:#94a3b8"> / 27</span></div>
-      <div style="font-size:15px;font-weight:700;color:${sev.color}">${isAr ? sev.labelAr : sev.label} <span style="font-size:12px;font-weight:400;color:#64748b">${isAr ? sev.label : sev.labelAr}</span></div>
+      <div style="font-size:15px;font-weight:700;color:${sev.color}">${sev.label}</div>
     </div>
 
     <div dir="ltr" style="margin-bottom:20px;padding:16px 20px;border-radius:12px;border-left:4px solid ${sev.color};background:#f8fafc;text-align:left">
@@ -261,7 +262,7 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
           </div>
         )}
 
-        {(status === 'qr' || status === 'results') && (
+        {status === 'qr' && (
           <div className="flex flex-col items-center gap-4 py-4">
             <p className="text-sm text-muted-foreground text-center">Show this QR code to your patient to fill the PHQ-9 questionnaire</p>
             {qrDataUrl && <img src={qrDataUrl} alt="QR Code" className="rounded-lg shadow-md" />}
