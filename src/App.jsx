@@ -5,6 +5,8 @@ import ConfirmDialog from './components/ConfirmDialog.jsx'
 import GrowthCalculator from './components/GrowthCalculator.jsx'
 import DevMilestones from './components/DevMilestones.jsx'
 import Library from './components/Library.jsx'
+import PHQ9Dialog from './components/PHQ9Dialog.jsx'
+import PHQ9PatientForm from './components/PHQ9PatientForm.jsx'
 import { PDFDocument } from 'pdf-lib'
 import { unzipSync, zipSync, strToU8 } from 'fflate'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
@@ -17,7 +19,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, FileText } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, FileText, Brain, ClipboardCheck } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -37,8 +39,8 @@ function getTimeAgo(dateStr) {
   return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
 }
 
-const SECTIONS = ['clinic', 'vaccination', 'er-medication', 'pediatrics', 'library']
-const SECTION_LABELS = { clinic: 'Clinic Medications', vaccination: 'Vaccination', 'er-medication': 'ER Medication', pediatrics: 'Pediatrics', library: 'Library' }
+const SECTIONS = ['clinic', 'vaccination', 'er-medication', 'pediatrics', 'psychiatrics', 'library']
+const SECTION_LABELS = { clinic: 'Clinic Medications', vaccination: 'Vaccination', 'er-medication': 'ER Medication', pediatrics: 'Pediatrics', psychiatrics: 'Psychiatrics', library: 'Library' }
 
 const SECTION_THEMES = {
   clinic:         { primary: 'oklch(0.55 0.18 230)', fg: 'oklch(0.98 0.005 230)', ring: 'oklch(0.55 0.18 230)', pageBg: '#f0f9ff', bg: '#e0f2fe', text: '#0284c7', border: '#7dd3fc' },   // sky blue
@@ -46,6 +48,7 @@ const SECTION_THEMES = {
   'er-medication':{ primary: 'oklch(0.55 0.2 25)',   fg: 'oklch(0.98 0.005 25)',  ring: 'oklch(0.55 0.2 25)',   pageBg: '#fef2f2', bg: '#fecaca', text: '#dc2626', border: '#fca5a5' },   // light red
   'er-guidelines':{ primary: 'oklch(0.62 0.16 55)',  fg: 'oklch(0.98 0.005 55)',  ring: 'oklch(0.62 0.16 55)',  pageBg: '#fff7ed', bg: '#ffedd5', text: '#ea580c', border: '#fdba74' },   // light orange
   pediatrics:     { primary: 'oklch(0.55 0.17 150)', fg: 'oklch(0.98 0.005 150)', ring: 'oklch(0.55 0.17 150)', pageBg: '#f0fdf4', bg: '#dcfce7', text: '#16a34a', border: '#86efac' },   // light green
+  psychiatrics:   { primary: 'oklch(0.55 0.15 195)', fg: 'oklch(0.98 0.005 195)', ring: 'oklch(0.55 0.15 195)', pageBg: '#f0fdfa', bg: '#ccfbf1', text: '#0d9488', border: '#5eead4' },   // teal
   library:        { primary: 'oklch(0.60 0.15 300)', fg: 'oklch(0.98 0.005 300)', ring: 'oklch(0.60 0.15 300)', pageBg: '#faf5ff', bg: '#f3e8ff', text: '#9333ea', border: '#d8b4fe' },   // light purple
   notifications:  { primary: 'oklch(0.55 0.18 280)', fg: 'oklch(0.98 0.005 280)', ring: 'oklch(0.55 0.18 280)', pageBg: '#f5f3ff', bg: '#ede9fe', text: '#7c3aed', border: '#c4b5fd' },   // purple
 }
@@ -66,6 +69,8 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('clinic')
   const [growthCalcOpen, setGrowthCalcOpen] = useState(false)
   const [milestonesOpen, setMilestonesOpen] = useState(false)
+  const [phq9Open, setPhq9Open] = useState(false)
+  const [phq9EnOpen, setPhq9EnOpen] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [leaveFormOpen, setLeaveFormOpen] = useState(false)
   const [leaveStart, setLeaveStart] = useState('')
@@ -128,7 +133,7 @@ export default function App() {
 
   const reload = async (section) => {
     const s = section || activeSection
-    if (s === 'library') { setLoading(false); return }
+    if (s === 'library' || s === 'psychiatrics') { setLoading(false); return }
     setLoading(true)
     setErr('')
     try {
@@ -456,6 +461,7 @@ export default function App() {
               { key: 'vaccination', label: 'Vaccination', Icon: Syringe },
               { key: 'er-medication', label: 'ER Medication', Icon: Cross },
               { key: 'pediatrics', label: 'Pediatrics', Icon: Baby },
+              { key: 'psychiatrics', label: 'Psychiatrics', Icon: Brain },
               { key: 'library', label: 'Library', Icon: LibraryBig },
             ].map(({ key, label, Icon }) => {
               const t = SECTION_THEMES[key]
@@ -477,7 +483,7 @@ export default function App() {
             })}
           </div>
 
-          {activeSection !== 'pediatrics' && activeSection !== 'library' && (
+          {activeSection !== 'pediatrics' && activeSection !== 'psychiatrics' && activeSection !== 'library' && (
           <div className="flex items-center gap-2">
             <Select
               value={categoryFilter}
@@ -532,13 +538,38 @@ export default function App() {
           </div>
         )}
 
+        {/* Psychiatrics */}
+        {activeSection === 'psychiatrics' && (
+          <div className="mb-4 grid grid-cols-2 gap-2">
+            <Button
+              onClick={() => setPhq9Open(true)}
+              className="gap-2 text-white text-sm h-10"
+              style={{ backgroundColor: theme.text }}
+            >
+              <ClipboardCheck className="h-4 w-4 shrink-0" />
+              PHQ-9 - Arabic
+            </Button>
+            <Button
+              onClick={() => setPhq9EnOpen(true)}
+              className="gap-2 text-white text-sm h-10"
+              style={{ backgroundColor: theme.text }}
+            >
+              <ClipboardCheck className="h-4 w-4 shrink-0" />
+              PHQ-9 - English
+            </Button>
+          </div>
+        )}
+
+        <PHQ9Dialog open={phq9Open} onOpenChange={setPhq9Open} theme={theme} lang="ar" />
+        <PHQ9Dialog open={phq9EnOpen} onOpenChange={setPhq9EnOpen} theme={theme} lang="en" />
+
         {/* Library */}
         {activeSection === 'library' && (
           <Library theme={theme} />
         )}
 
         {/* Content */}
-        {activeSection !== 'library' && (
+        {activeSection !== 'library' && activeSection !== 'psychiatrics' && (
           activeSection !== 'pediatrics' && !categoryFilter && !searchQuery.trim() ? (
             <Card>
               <CardContent className="flex flex-col items-center gap-3 py-16 text-center">
