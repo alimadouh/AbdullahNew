@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import QRCode from 'qrcode'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog.jsx'
-import { Brain, Loader2, RotateCcw, Copy, Check } from 'lucide-react'
+import { Brain, Loader2, RotateCcw, Copy, Check, ClipboardCheck } from 'lucide-react'
 import { Button } from './ui/button.jsx'
 
 const QUESTIONS = {
@@ -65,6 +65,7 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
   const [error, setError] = useState('')
   const [sessionUrl, setSessionUrl] = useState('')
   const [copied, setCopied] = useState(false)
+  const [resultsBlobUrl, setResultsBlobUrl] = useState(null)
   const pollRef = useRef(null)
 
   const cleanup = useCallback(() => {
@@ -78,6 +79,7 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
     setError('')
     setSessionUrl('')
     setCopied(false)
+    setResultsBlobUrl(null)
     try {
       const res = await fetch('/.netlify/functions/phq9', {
         method: 'POST',
@@ -223,14 +225,15 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
 </body>
 </html>`
 
-    const win = window.open('', '_blank')
-    if (win) { win.document.write(html); win.document.close() }
+    const blob = new Blob([html], { type: 'text/html' })
+    const blobUrl = URL.createObjectURL(blob)
+    setResultsBlobUrl(blobUrl)
+    setResultsBlobUrl(blobUrl)
   }, [lang])
 
   useEffect(() => {
     if (status === 'results' && response) {
       openResultsPdf(response)
-      setTimeout(() => createSession(), 500)
     }
   }, [status, response])
 
@@ -289,6 +292,30 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
             <Loader2 className="h-12 w-12 animate-spin" style={{ color: theme?.text }} />
             <p className="text-lg font-semibold" style={{ color: theme?.text }}>Waiting for responses...</p>
             <p className="text-sm text-muted-foreground text-center">The patient has opened the form.<br />Results will appear here automatically.</p>
+          </div>
+        )}
+
+        {status === 'results' && resultsBlobUrl && (
+          <div className="flex flex-col items-center gap-4 py-8 text-center">
+            <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: theme?.text + '15' }}>
+              <Check className="h-6 w-6" style={{ color: theme?.text }} />
+            </div>
+            <p className="text-sm font-semibold" style={{ color: theme?.text }}>Patient has submitted their responses!</p>
+            <a
+              href={resultsBlobUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => { e.preventDefault(); window.open(resultsBlobUrl, '_blank') }}
+            >
+              <Button className="gap-2 text-white" style={{ backgroundColor: theme?.text }}>
+                <ClipboardCheck className="h-4 w-4" />
+                View Results
+              </Button>
+            </a>
+            <Button onClick={createSession} variant="outline" size="sm" className="gap-1.5">
+              <RotateCcw className="h-3.5 w-3.5" />
+              New QR Code
+            </Button>
           </div>
         )}
 
