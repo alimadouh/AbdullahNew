@@ -677,7 +677,7 @@ export default function App() {
               placeholder={`Search all ${itemNoun}s by name, dose, indication…`}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="h-11 rounded-xl pl-10 text-sm shadow-sm"
+              className="h-11 rounded-xl pl-10 text-base shadow-sm sm:text-sm"
             />
           </div>
           )}
