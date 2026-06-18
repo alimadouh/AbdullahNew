@@ -173,6 +173,17 @@ export default function App() {
     localStorage.setItem('theme', dark ? 'dark' : 'light')
   }, [dark])
 
+  // Track the visual viewport height so dialogs stay above the on-screen keyboard (iOS)
+  useEffect(() => {
+    const vv = window.visualViewport
+    if (!vv) return
+    const update = () => document.documentElement.style.setProperty('--app-vh', `${vv.height}px`)
+    update()
+    vv.addEventListener('resize', update)
+    vv.addEventListener('scroll', update)
+    return () => { vv.removeEventListener('resize', update); vv.removeEventListener('scroll', update) }
+  }, [])
+
   // Apply page background color to body (light: section tint; dark: token deep slate)
   useEffect(() => {
     document.body.style.background = dark ? '' : theme.pageBg

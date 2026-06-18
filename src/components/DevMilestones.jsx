@@ -388,7 +388,6 @@ export default function DevMilestones({ open, onClose }) {
   .report-actions button { font:600 13px Arial,sans-serif; padding:8px 14px; border-radius:8px; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; }
   .btn-back { background:#f1f5f9; color:#334155; }
   .btn-pdf { background:${accentColor}; color:#fff; }
-  .btn-share { background:#fff; color:${accentColor}; border:1px solid ${accentColor}55; }
   @media print {
     body { background:#fff; }
     .page { margin:0; padding:20px; box-shadow:none; }
@@ -399,7 +398,6 @@ export default function DevMilestones({ open, onClose }) {
 <div class="report-actions no-print">
   <button class="btn-back" onclick="goBack()">&larr; Back</button>
   <div style="flex:1"></div>
-  <button class="btn-share" id="shareBtn" onclick="shareReport()">Share</button>
   <button class="btn-pdf" onclick="window.print()">Save as PDF</button>
 </div>
 <div class="page">
@@ -441,8 +439,6 @@ export default function DevMilestones({ open, onClose }) {
 </div>
 <script>
 function goBack(){try{window.close()}catch(e){}setTimeout(function(){if(!window.closed){if(history.length>1){history.back()}else{window.close()}}},120)}
-function shareReport(){if(navigator.share){navigator.share({title:document.title,text:document.title}).catch(function(){})}else{window.print()}}
-if(!navigator.share){var sb=document.getElementById('shareBtn');if(sb)sb.style.display='none'}
 </script>
 </body></html>`
 
@@ -465,15 +461,15 @@ if(!navigator.share){var sb=document.getElementById('shareBtn');if(sb)sb.style.d
           <div className="flex gap-3 items-end mt-2">
             <div className="flex-1">
               <label className="text-xs font-medium text-muted-foreground">Years</label>
-              <Input type="number" min="0" max="5" placeholder="0" value={years} onChange={e => setYears(e.target.value)} />
+              <Input type="number" inputMode="decimal" min="0" max="5" placeholder="0" value={years} onChange={e => setYears(e.target.value)} />
             </div>
             <div className="flex-1">
               <label className="text-xs font-medium text-muted-foreground">Months</label>
-              <Input type="number" min="0" max="11" placeholder="0" value={months} onChange={e => setMonths(e.target.value)} />
+              <Input type="number" inputMode="decimal" min="0" max="11" placeholder="0" value={months} onChange={e => setMonths(e.target.value)} />
             </div>
             <div className="flex-1">
               <label className="text-xs font-medium text-muted-foreground">Weeks</label>
-              <Input type="number" min="0" max="4" placeholder="0" value={weeks} onChange={e => setWeeks(e.target.value)} />
+              <Input type="number" inputMode="decimal" min="0" max="4" placeholder="0" value={weeks} onChange={e => setWeeks(e.target.value)} />
             </div>
             <Button onClick={() => setApplied(true)} disabled={!hasAge} className="shrink-0">Apply</Button>
           </div>

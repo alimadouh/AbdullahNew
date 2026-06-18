@@ -184,7 +184,6 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
     .report-actions button { font: 600 13px 'Inter',sans-serif; padding: 8px 14px; border-radius: 8px; border: none; cursor: pointer; }
     .btn-back { background: #f1f5f9; color: #334155; }
     .btn-pdf { background: #0d9488; color: #fff; }
-    .btn-share { background: #fff; color: #0d9488; border: 1px solid #0d948855; }
     @media (max-width: 550px) {
       body { padding: 8px; }
       .page { padding: 16px; border-radius: 12px; }
@@ -199,7 +198,6 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
   <div class="report-actions no-print" dir="ltr">
     <button class="btn-back" onclick="goBack()">&larr; ${labels.back}</button>
     <div style="flex:1"></div>
-    <button class="btn-share" id="shareBtn" onclick="shareReport()">${labels.share}</button>
     <button class="btn-pdf" onclick="window.print()">${labels.print}</button>
   </div>
   <div class="page">
@@ -233,8 +231,6 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
   </div>
   <script>
   function goBack(){try{window.close()}catch(e){}setTimeout(function(){if(!window.closed){if(history.length>1){history.back()}else{window.close()}}},120)}
-  function shareReport(){if(navigator.share){navigator.share({title:document.title,text:document.title}).catch(function(){})}else{window.print()}}
-  if(!navigator.share){var sb=document.getElementById('shareBtn');if(sb)sb.style.display='none'}
   </script>
 </body>
 </html>`

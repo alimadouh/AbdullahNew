@@ -23,8 +23,12 @@ DialogOverlay.displayName = "DialogOverlay"
 const DialogContent = React.forwardRef(({ className, children, ...props }, ref) => (
   <DialogPortal>
     <DialogOverlay />
-    {/* Flex-column wrapper: centers when content fits, scrolls when it doesn't */}
-    <div className="fixed inset-0 z-50 flex flex-col items-center overflow-y-auto p-4 sm:p-6">
+    {/* Flex-column wrapper sized to the visible viewport (so it stays above the iOS keyboard);
+        centers when content fits, scrolls when it doesn't */}
+    <div
+      className="fixed inset-x-0 top-0 z-50 flex flex-col items-center overflow-y-auto p-4 sm:p-6"
+      style={{ height: "var(--app-vh, 100dvh)" }}
+    >
       <DialogPrimitive.Content
         ref={ref}
         className={cn(

@@ -561,7 +561,6 @@ function openReportInNewTab({ gender, age, w, h, hc, bmi, zScores, activeCharts 
   .report-actions button { font:600 13px Arial,sans-serif; padding:8px 14px; border-radius:8px; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; }
   .btn-back { background:#f1f5f9; color:#334155; }
   .btn-pdf { background:${accentColor}; color:#fff; }
-  .btn-share { background:#fff; color:${accentColor}; border:1px solid ${accentColor}55; }
   @media print {
     body { background:#fff; }
     .page { margin:0; padding:20px; box-shadow:none; }
@@ -573,7 +572,6 @@ function openReportInNewTab({ gender, age, w, h, hc, bmi, zScores, activeCharts 
 <div class="report-actions no-print">
   <button class="btn-back" onclick="goBack()">&larr; Back</button>
   <div style="flex:1"></div>
-  <button class="btn-share" id="shareBtn" onclick="shareReport()">Share</button>
   <button class="btn-pdf" onclick="window.print()">Save as PDF</button>
 </div>
 <div class="page">
@@ -625,8 +623,6 @@ function openReportInNewTab({ gender, age, w, h, hc, bmi, zScores, activeCharts 
 </div>
 <script>
 function goBack(){try{window.close()}catch(e){}setTimeout(function(){if(!window.closed){if(history.length>1){history.back()}else{window.close()}}},120)}
-function shareReport(){if(navigator.share){navigator.share({title:document.title,text:document.title}).catch(function(){})}else{window.print()}}
-if(!navigator.share){var sb=document.getElementById('shareBtn');if(sb)sb.style.display='none'}
 </script>
 </body></html>`
 
@@ -731,13 +727,13 @@ export default function GrowthCalculator({ open, onClose, theme }) {
             <div className="flex gap-2">
               <div className="flex-1">
                 <div className="relative">
-                  <Input type="number" min="0" max="19" placeholder="0" value={ageYears} onChange={e => setAgeYears(e.target.value)} className="pr-12" />
+                  <Input type="number" inputMode="decimal" min="0" max="19" placeholder="0" value={ageYears} onChange={e => setAgeYears(e.target.value)} className="pr-12" />
                   <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground pointer-events-none">years</span>
                 </div>
               </div>
               <div className="flex-1">
                 <div className="relative">
-                  <Input type="number" min="0" max="11" placeholder="0" value={ageExtraMonths} onChange={e => setAgeExtraMonths(e.target.value)} className="pr-16" />
+                  <Input type="number" inputMode="decimal" min="0" max="11" placeholder="0" value={ageExtraMonths} onChange={e => setAgeExtraMonths(e.target.value)} className="pr-16" />
                   <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground pointer-events-none">months</span>
                 </div>
               </div>
@@ -748,11 +744,11 @@ export default function GrowthCalculator({ open, onClose, theme }) {
           <div className="grid grid-cols-2 gap-3">
             <div>
               <label className="text-sm font-medium mb-1.5 block">Weight (kg)</label>
-              <Input type="number" min="0" step="0.1" placeholder="e.g. 10.5" value={weight} onChange={e => setWeight(e.target.value)} />
+              <Input type="number" inputMode="decimal" min="0" step="0.1" placeholder="e.g. 10.5" value={weight} onChange={e => setWeight(e.target.value)} />
             </div>
             <div>
               <label className="text-sm font-medium mb-1.5 block">{age <= 24 ? 'Length' : 'Height'} (cm)</label>
-              <Input type="number" min="0" step="0.1" placeholder="e.g. 75.5" value={height} onChange={e => setHeight(e.target.value)} />
+              <Input type="number" inputMode="decimal" min="0" step="0.1" placeholder="e.g. 75.5" value={height} onChange={e => setHeight(e.target.value)} />
             </div>
           </div>
 
@@ -766,7 +762,7 @@ export default function GrowthCalculator({ open, onClose, theme }) {
           {age <= 60 && (
             <div>
               <label className="text-sm font-medium mb-1.5 block">Head Circumference (cm) <span className="text-muted-foreground">(optional)</span></label>
-              <Input type="number" min="0" step="0.1" placeholder="e.g. 46" value={headCirc} onChange={e => setHeadCirc(e.target.value)} />
+              <Input type="number" inputMode="decimal" min="0" step="0.1" placeholder="e.g. 46" value={headCirc} onChange={e => setHeadCirc(e.target.value)} />
             </div>
           )}
 
