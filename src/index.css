@@ -213,6 +213,12 @@ html {
   .home-aurora, .home-card, .home-hero-in, .home-card-icon, .home-card-arrow { animation: none !important; transition: none !important; }
 }
 
+/* On touch devices (phones), keep the aurora static + lighter — animating large blurs is
+   very expensive on iOS and makes opening dialogs lag */
+@media (hover: none) {
+  .home-aurora { animation: none !important; filter: blur(55px); opacity: 0.28; }
+}
+
 /* ===== Animated brand title ===== */
 @keyframes title-gradient-shift {
   0%, 100% { background-position: 0% 50%; }

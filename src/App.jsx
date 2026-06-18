@@ -606,7 +606,7 @@ export default function App() {
                   <button
                     key={key}
                     onClick={() => switchSection(key)}
-                    className="home-card group relative flex flex-col items-start overflow-hidden rounded-3xl border border-white/60 p-4 text-left shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] backdrop-blur-xl cursor-pointer dark:border-white/15 dark:shadow-[0_14px_34px_-12px_rgba(0,0,0,0.65)] sm:p-6"
+                    className="home-card group relative flex flex-col items-start overflow-hidden rounded-3xl border border-white/60 p-4 text-left shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] cursor-pointer dark:border-white/15 dark:shadow-[0_14px_34px_-12px_rgba(0,0,0,0.65)] sm:p-6 sm:backdrop-blur-xl"
                     style={{
                       '--card': t.text,
                       animationDelay: `${i * 80}ms`,
