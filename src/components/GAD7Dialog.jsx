@@ -31,15 +31,31 @@ const SCORE_LABELS = {
 }
 
 const PDF_LABELS = {
-  ar: { title: 'مقياس اضطراب القلق العام (GAD-7)', date: 'التاريخ', question: 'السؤال', score: 'الدرجة', answer: 'الإجابة', print: 'حفظ كـ PDF', back: 'رجوع', share: 'مشاركة' },
-  en: { title: 'Generalized Anxiety Disorder-7 (GAD-7)', date: 'Date', question: 'Question', score: 'Score', answer: 'Answer', print: 'Save as PDF', back: 'Back', share: 'Share' },
+  ar: { title: 'مقياس اضطراب القلق العام (GAD-7)', date: 'التاريخ', question: 'السؤال', score: 'الدرجة', answer: 'الإجابة', intervention: 'التدخل العلاجي', print: 'حفظ كـ PDF', back: 'رجوع', share: 'مشاركة' },
+  en: { title: 'Generalized Anxiety Disorder-7 (GAD-7)', date: 'Date', question: 'Question', score: 'Score', answer: 'Answer', intervention: 'Intervention', print: 'Save as PDF', back: 'Back', share: 'Share' },
 }
 
 function getSeverity(score) {
-  if (score <= 4) return { label: 'No to Low Risk', labelAr: 'لا يوجد – منخفض', color: '#22c55e', bg: '#f0fdf4', action: 'None' }
-  if (score <= 9) return { label: 'Mild', labelAr: 'خفيف', color: '#eab308', bg: '#fefce8', action: 'Provide general feedback, repeat GAD-7 at follow up, consider adjusting treatment plan if not improving in last 4 weeks' }
-  if (score <= 14) return { label: 'Moderate', labelAr: 'متوسط', color: '#f97316', bg: '#fff7ed', action: 'Further evaluation recommended; For active treatment plans consider adjustment; For text therapy clients monitor for synchronous therapy' }
-  return { label: 'Severe', labelAr: 'شديد', color: '#dc2626', bg: '#fef2f2', action: 'Adjust treatment plan; focused assessment of safety plan and pharmacotherapy evaluation / re-evaluation; If emergent need then consider referral to higher level of care; Client is not a good candidate for text therapy / asynchronous' }
+  if (score <= 4) return {
+    label: 'No to Low Risk', labelAr: 'لا يوجد إلى منخفض الخطورة', color: '#22c55e', bg: '#f0fdf4',
+    action: 'None',
+    actionAr: 'لا يوجد.',
+  }
+  if (score <= 9) return {
+    label: 'Mild', labelAr: 'خفيف', color: '#eab308', bg: '#fefce8',
+    action: 'Provide general feedback, repeat GAD-7 at follow up, consider adjusting treatment plan if not improving in last 4 weeks',
+    actionAr: 'تقديم ملاحظات عامة، وإعادة تطبيق مقياس GAD-7 في زيارة المتابعة، والنظر في تعديل خطة العلاج إذا لم يطرأ تحسّن خلال الأسابيع الأربعة الماضية.',
+  }
+  if (score <= 14) return {
+    label: 'Moderate', labelAr: 'متوسط', color: '#f97316', bg: '#fff7ed',
+    action: 'Further evaluation recommended; For active treatment plans consider adjustment; For text therapy clients monitor for synchronous therapy',
+    actionAr: 'يُنصح بإجراء تقييم إضافي؛ والنظر في تعديل خطة العلاج للحالات قيد العلاج النشط؛ ومتابعة الحالة عن كثب.',
+  }
+  return {
+    label: 'Severe', labelAr: 'شديد', color: '#dc2626', bg: '#fef2f2',
+    action: 'Adjust treatment plan; focused assessment of safety plan and pharmacotherapy evaluation / re-evaluation; If emergent need then consider referral to higher level of care; Client is not a good candidate for text therapy / asynchronous',
+    actionAr: 'تعديل خطة العلاج؛ وإجراء تقييم مركّز لخطة السلامة وتقييم/إعادة تقييم العلاج الدوائي؛ وفي الحالات الطارئة يُنظر في التحويل إلى مستوى رعاية أعلى.',
+  }
 }
 
 export default function GAD7Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
@@ -185,12 +201,12 @@ export default function GAD7Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
 
     <div style="background:${sev.bg};border:2px solid ${sev.color};border-radius:10px;padding:12px 16px;text-align:center;margin-bottom:16px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
       <div style="font-size:28px;font-weight:800;color:${sev.color}">${total}<span style="font-size:14px;font-weight:400;color:#94a3b8"> / 21</span></div>
-      <div style="font-size:15px;font-weight:700;color:${sev.color}">${sev.label}</div>
+      <div style="font-size:15px;font-weight:700;color:${sev.color}">${isAr ? sev.labelAr : sev.label}</div>
     </div>
 
-    <div dir="ltr" style="margin-bottom:20px;padding:16px 20px;border-radius:12px;border-left:4px solid ${sev.color};background:#f8fafc;text-align:left">
-      <div style="font-size:13px;font-weight:700;color:#000;margin-bottom:4px">Intervention</div>
-      <div style="font-size:14px;color:#334155;line-height:1.7">${sev.action}</div>
+    <div dir="${dir}" style="margin-bottom:20px;padding:16px 20px;border-radius:12px;${isAr ? 'border-right' : 'border-left'}:4px solid ${sev.color};background:#f8fafc;text-align:${textAlign}">
+      <div style="font-size:13px;font-weight:700;color:#000;margin-bottom:4px">${labels.intervention}</div>
+      <div style="font-size:14px;color:#334155;line-height:1.7">${isAr ? sev.actionAr : sev.action}</div>
     </div>
 
     <table>

@@ -8,6 +8,7 @@ import Library from './components/Library.jsx'
 import PHQ9Dialog from './components/PHQ9Dialog.jsx'
 import PHQ9PatientForm from './components/PHQ9PatientForm.jsx'
 import GAD7Dialog from './components/GAD7Dialog.jsx'
+import FIB4Dialog from './components/FIB4Dialog.jsx'
 import { PDFDocument } from 'pdf-lib'
 import { unzipSync, zipSync, strToU8 } from 'fflate'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
@@ -20,7 +21,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, FileText, Brain, ClipboardCheck, Home, Sun, Moon, Wrench, ArrowLeft } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, FileText, Brain, ClipboardCheck, Home, Sun, Moon, Wrench, ArrowLeft, FlaskConical } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -110,6 +111,7 @@ export default function App() {
   const [phq9EnOpen, setPhq9EnOpen] = useState(false)
   const [gad7Open, setGad7Open] = useState(false)
   const [gad7EnOpen, setGad7EnOpen] = useState(false)
+  const [fib4Open, setFib4Open] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [leaveFormOpen, setLeaveFormOpen] = useState(false)
   const [leaveStart, setLeaveStart] = useState('')
@@ -710,6 +712,9 @@ export default function App() {
                   { label: 'English', onClick: () => setGad7EnOpen(true) },
                 ] },
               ] },
+              { section: 'Hepatology', accent: theme.text, tools: [
+                { label: 'FIB-4 Score', desc: 'Liver fibrosis estimate (no biopsy)', Icon: FlaskConical, onClick: () => setFib4Open(true) },
+              ] },
             ].map(({ section, accent, tools }) => (
               <div key={section}>
                 {/* Group label + divider line */}
@@ -779,6 +784,7 @@ export default function App() {
         <PHQ9Dialog open={phq9EnOpen} onOpenChange={setPhq9EnOpen} theme={theme} lang="en" />
         <GAD7Dialog open={gad7Open} onOpenChange={setGad7Open} theme={theme} lang="ar" />
         <GAD7Dialog open={gad7EnOpen} onOpenChange={setGad7EnOpen} theme={theme} lang="en" />
+        <FIB4Dialog open={fib4Open} onOpenChange={setFib4Open} theme={theme} />
 
         {/* Library */}
         {activeSection === 'library' && (

@@ -46,10 +46,21 @@ const FOLDERS = [
     name: 'Guidelines Management', icon: ClipboardList,
     groups: [
       {
-        name: 'Chronic & Emergency',
+        name: 'Chronic Disease Protocols (2026)',
+        books: [
+          { file: 'hypertension.pdf', label: 'Hypertension' },
+          { file: 'diabetes.pdf', label: 'Diabetes' },
+          { file: 'dyslipidemia.pdf', label: 'Dyslipidemia' },
+          { file: 'asthma.pdf', label: 'Asthma' },
+          { file: 'copd.pdf', label: 'COPD' },
+          { file: 'osteoporosis.pdf', label: 'Osteoporosis' },
+          { file: 'spirometer-protocol.pdf', label: 'Spirometer Protocol' },
+        ],
+      },
+      {
+        name: 'Chronic & Screening',
         books: [
           { file: 'chronic-diseases.pdf', label: 'Chronic Diseases' },
-          { file: 'emergency-guidelines.pdf', label: 'Emergency Guidelines' },
           { file: 'mental-health-screening.pdf', label: 'Mental Health Screening' },
         ],
       },
@@ -66,13 +77,19 @@ const FOLDERS = [
     name: 'ER Guidelines', icon: ShieldPlus,
     groups: [
       {
-        name: 'Approach & Resuscitation',
+        name: 'Full Document',
+        books: [
+          { file: 'emergencies-primary-healthcare.pdf', label: 'Emergencies in Primary Healthcare (June 2026)' },
+        ],
+      },
+      {
+        name: 'Approach & Adult Resuscitation',
         books: [
           { file: 'page-01.pdf', label: 'The ABCDE Approach' },
-          { file: 'page-19.pdf', label: 'Adult BLS Algorithm' },
-          { file: 'page-20.pdf', label: 'Adult Cardiac Arrest Algorithm' },
-          { file: 'page-21.pdf', label: 'Adult Bradycardia Algorithm' },
-          { file: 'page-22.pdf', label: 'Adult Tachycardia Algorithm' },
+          { file: 'page-21.pdf', label: 'Adult BLS Algorithm' },
+          { file: 'page-22.pdf', label: 'Adult Cardiac Arrest Algorithm' },
+          { file: 'page-23.pdf', label: 'Adult Bradycardia Algorithm' },
+          { file: 'page-24.pdf', label: 'Adult Tachycardia Algorithm' },
         ],
       },
       {
@@ -80,7 +97,7 @@ const FOLDERS = [
         books: [
           { file: 'page-13.pdf', label: 'Myocardial Infarction' },
           { file: 'page-02.pdf', label: 'Acute Left Ventricular Failure' },
-          { file: 'page-17.pdf', label: 'Stroke / TIA' },
+          { file: 'page-19.pdf', label: 'Stroke / TIA' },
           { file: 'page-03.pdf', label: 'Anaphylaxis' },
           { file: 'page-04.pdf', label: 'Asthma (Acute)' },
           { file: 'page-06.pdf', label: 'Convulsions' },
@@ -88,7 +105,7 @@ const FOLDERS = [
           { file: 'page-09.pdf', label: 'Hyperglycaemia' },
           { file: 'page-11.pdf', label: 'Hypoglycaemia (Adults)' },
           { file: 'page-10.pdf', label: 'Hypertension' },
-          { file: 'page-16.pdf', label: 'Poisoning' },
+          { file: 'page-18.pdf', label: 'Poisoning' },
           { file: 'page-07.pdf', label: 'Croup' },
         ],
       },
@@ -97,9 +114,27 @@ const FOLDERS = [
         books: [
           { file: 'page-05.pdf', label: 'Burns' },
           { file: 'page-14.pdf', label: 'Open Wound / Trauma' },
-          { file: 'page-18.pdf', label: 'Head Trauma & Fractures' },
+          { file: 'page-20.pdf', label: 'Head Trauma & Fractures' },
           { file: 'page-08.pdf', label: 'Foreign Body (Throat & Airway)' },
           { file: 'page-15.pdf', label: 'Drowning' },
+        ],
+      },
+      {
+        name: 'Choking & Airway Obstruction',
+        books: [
+          { file: 'page-25.pdf', label: 'Adult Foreign Body Airway Obstruction' },
+          { file: 'page-17.pdf', label: 'Child Choking' },
+          { file: 'page-29.pdf', label: 'Child Foreign Body Airway Obstruction' },
+          { file: 'page-16.pdf', label: 'Infant Choking' },
+          { file: 'page-30.pdf', label: 'Infant Foreign Body Airway Obstruction' },
+        ],
+      },
+      {
+        name: 'Pediatric & Neonatal Resuscitation',
+        books: [
+          { file: 'page-26.pdf', label: 'Pediatric BLS Algorithm' },
+          { file: 'page-27.pdf', label: 'Pediatric Cardiac Arrest Algorithm' },
+          { file: 'page-28.pdf', label: 'Neonatal Resuscitation Algorithm' },
         ],
       },
     ],
