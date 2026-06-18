@@ -6,58 +6,43 @@ import { Button } from './ui/button.jsx'
 
 const QUESTIONS = {
   ar: [
-    'قلة الاهتمام أو قلة الاستمتاع بممارسة بالقيام بأي عمل',
-    'الشعور بالحزن أو ضيق الصدر أو اليأس',
-    'صعوبة في النوم أو نوم متقطع أو النوم أكثر من المعتاد',
-    'الشعور بالتعب أو بامتلاك القليل جداً من الطاقة',
-    'قلة الشهية أو الزيادة في تناول الطعام عن المعتاد',
-    'الشعور بعدم الرضا عن النفس أو الشعور بأنك قد أخذلت نفسك أو عائلتك',
-    'صعوبة في التركيز مثلاً أثناء قراءة الصحيفة أو مشاهدة التلفزيون',
-    'بطء في الحركة أو بطء في التحدث عما هو معتاد لدرجة ملحوظة من الآخرين / أو على العكس من ذلك التحدث بسرعة وكثرة الحركة أكثر من المعتاد',
-    'راودتك أفكار بأنه من الأفضل لو كنت ميتاً أو أفكار بأن تقوم بإيذاء النفس',
+    'الشعور بالغضب أو القلق أو الانفعال الشديد.',
+    'عدم القدرة على إنهاء القلق أو التحكم فيه.',
+    'القلق المفرط على أشياء مختلفة.',
+    'الصعوبة في الاسترخاء.',
+    'شدة الاضطراب لدرجة صعوبة البقاء في هدوء.',
+    'السرعة في الانزعاج أو الانفعال.',
+    'الشعور بالخوف كما لو أن شيئًا فضيعًا قد يحدث.',
   ],
   en: [
-    'Little interest or pleasure in doing things',
-    'Feeling down, depressed, or hopeless',
-    'Trouble falling or staying asleep, or sleeping too much',
-    'Feeling tired or having little energy',
-    'Poor appetite or overeating',
-    'Feeling bad about yourself — or that you are a failure or have let yourself or your family down',
-    'Trouble concentrating on things, such as reading the newspaper or watching television',
-    'Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual',
-    'Thoughts that you would be better off dead or of hurting yourself in some way',
+    'Feeling nervous, anxious, or on edge',
+    'Not being able to stop or control worrying',
+    'Worrying too much about different things',
+    'Trouble relaxing',
+    'Being so restless that it is hard to sit still',
+    'Becoming easily annoyed or irritable',
+    'Feeling afraid, as if something awful might happen',
   ],
 }
 
 const SCORE_LABELS = {
-  ar: ['ولا مرة', 'عدة أيام', 'أكثر من نصف الأيام', 'تقريباً كل يوم'],
+  ar: ['أبداً', 'بعض الأيام', 'أكثر من نصف الأيام', 'كل يوم تقريباً'],
   en: ['Not at all', 'Several days', 'More than half the days', 'Nearly every day'],
 }
 
-const DIFFICULTY_LABELS = {
-  ar: ['ليست هناك أي صعوبة', 'هناك بعض الصعوبات', 'هناك صعوبات شديدة', 'هناك صعوبات بالغة التعقيد'],
-  en: ['Not difficult at all', 'Somewhat difficult', 'Very difficult', 'Extremely difficult'],
-}
-
-const DIFFICULTY_QUESTION = {
-  ar: 'إذا أشرت إلى أية من المشاكل أعلاه، فإلى أية درجة صعّبت عليك هذه المشاكل القيام بعملك، الاعتناء بالأمور المنزلية، أو الانسجام مع أشخاص آخرين؟',
-  en: 'If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?',
-}
-
 const PDF_LABELS = {
-  ar: { title: 'استبيان عن صحة المرضى - 9 (PHQ-9)', date: 'التاريخ', question: 'السؤال', score: 'الدرجة', answer: 'الإجابة', print: 'حفظ كـ PDF', back: 'رجوع', share: 'مشاركة' },
-  en: { title: 'Patient Health Questionnaire-9 (PHQ-9)', date: 'Date', question: 'Question', score: 'Score', answer: 'Answer', print: 'Save as PDF', back: 'Back', share: 'Share' },
+  ar: { title: 'مقياس اضطراب القلق العام (GAD-7)', date: 'التاريخ', question: 'السؤال', score: 'الدرجة', answer: 'الإجابة', print: 'حفظ كـ PDF', back: 'رجوع', share: 'مشاركة' },
+  en: { title: 'Generalized Anxiety Disorder-7 (GAD-7)', date: 'Date', question: 'Question', score: 'Score', answer: 'Answer', print: 'Save as PDF', back: 'Back', share: 'Share' },
 }
 
 function getSeverity(score) {
-  if (score <= 4) return { label: 'Non \u2013 Minimal', labelAr: 'لا يوجد \u2013 بسيط', color: '#22c55e', bg: '#f0fdf4', action: 'None' }
-  if (score <= 9) return { label: 'Mild', labelAr: 'خفيف', color: '#eab308', bg: '#fefce8', action: 'Watchful waiting; repeat PHQ 9 at follow-up' }
-  if (score <= 14) return { label: 'Moderate', labelAr: 'متوسط', color: '#f97316', bg: '#fff7ed', action: 'Review treatment plan if not improving in past 4 weeks; Consider discussion of additional support such as pharmacotherapy' }
-  if (score <= 19) return { label: 'Moderately Severe', labelAr: 'متوسط الشدة', color: '#ef4444', bg: '#fef2f2', action: 'Consider adjusting treatment plan and/or frequency of sessions; Discuss additional supports such as pharmacotherapy; For SonderMind Anytime Messaging clients, consider converting from asynchronous to synchronous therapy channels' }
-  return { label: 'Severe', labelAr: 'شديد', color: '#991b1b', bg: '#fef2f2', action: 'Adjust treatment plan; focused assessment of safety plan and pharmacotherapy evaluation/ re-evaluation; If emergent then refer to higher level of care; Likely Not a candidate for asynchronous/text therapy' }
+  if (score <= 4) return { label: 'No to Low Risk', labelAr: 'لا يوجد – منخفض', color: '#22c55e', bg: '#f0fdf4', action: 'None' }
+  if (score <= 9) return { label: 'Mild', labelAr: 'خفيف', color: '#eab308', bg: '#fefce8', action: 'Provide general feedback, repeat GAD-7 at follow up, consider adjusting treatment plan if not improving in last 4 weeks' }
+  if (score <= 14) return { label: 'Moderate', labelAr: 'متوسط', color: '#f97316', bg: '#fff7ed', action: 'Further evaluation recommended; For active treatment plans consider adjustment; For text therapy clients monitor for synchronous therapy' }
+  return { label: 'Severe', labelAr: 'شديد', color: '#dc2626', bg: '#fef2f2', action: 'Adjust treatment plan; focused assessment of safety plan and pharmacotherapy evaluation / re-evaluation; If emergent need then consider referral to higher level of care; Client is not a good candidate for text therapy / asynchronous' }
 }
 
-export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
+export default function GAD7Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
   const [sessionId, setSessionId] = useState(null)
   const [qrDataUrl, setQrDataUrl] = useState(null)
   const [status, setStatus] = useState('loading')
@@ -81,7 +66,7 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
     setCopied(false)
     setResultsBlobUrl(null)
     try {
-      const res = await fetch('/.netlify/functions/phq9', {
+      const res = await fetch('/.netlify/functions/gad7', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'create' }),
@@ -90,7 +75,7 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
       if (!data.sessionId) throw new Error('Failed to create session')
       setSessionId(data.sessionId)
 
-      const url = `${window.location.origin}/phq9/${lang}/${data.sessionId}`
+      const url = `${window.location.origin}/gad7/${lang}/${data.sessionId}`
       setSessionUrl(url)
       const dataUrl = await QRCode.toDataURL(url, { width: 280, margin: 2, color: { dark: theme?.text || '#0d9488' } })
       setQrDataUrl(dataUrl)
@@ -98,7 +83,7 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
 
       pollRef.current = setInterval(async () => {
         try {
-          const pollRes = await fetch('/.netlify/functions/phq9', {
+          const pollRes = await fetch('/.netlify/functions/gad7', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ action: 'poll', sessionId: data.sessionId }),
@@ -135,11 +120,8 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
     const isAr = pdfLang === 'ar'
     const dir = isAr ? 'rtl' : 'ltr'
     const textAlign = isAr ? 'right' : 'left'
-    const borderSide = isAr ? 'border-right' : 'border-left'
     const questions = QUESTIONS[pdfLang] || QUESTIONS.ar
     const scoreLabels = SCORE_LABELS[pdfLang] || SCORE_LABELS.ar
-    const diffLabels = DIFFICULTY_LABELS[pdfLang] || DIFFICULTY_LABELS.ar
-    const diffQuestion = DIFFICULTY_QUESTION[pdfLang] || DIFFICULTY_QUESTION.ar
     const labels = PDF_LABELS[pdfLang] || PDF_LABELS.ar
 
     const total = res.answers.reduce((a, b) => a + b, 0)
@@ -159,19 +141,12 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
         </tr>`
     }).join('')
 
-    const difficultyHtml = res.difficulty != null
-      ? `<div style="margin-top:20px;padding:18px 20px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;text-align:${textAlign}">
-           <div style="font-size:13px;line-height:1.8;color:#475569;margin-bottom:6px">${diffQuestion}</div>
-           <div style="font-size:15px;font-weight:700;color:#1e293b">${diffLabels[res.difficulty]}</div>
-         </div>`
-      : ''
-
     const html = `<!DOCTYPE html>
 <html dir="${dir}" lang="${pdfLang}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHQ-9 Results</title>
+  <title>GAD-7 Results</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     @media print { body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } .no-print { display:none !important; } @page { margin: 15mm; } }
@@ -209,12 +184,12 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
     </div>
 
     <div style="background:${sev.bg};border:2px solid ${sev.color};border-radius:10px;padding:12px 16px;text-align:center;margin-bottom:16px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
-      <div style="font-size:28px;font-weight:800;color:${sev.color}">${total}<span style="font-size:14px;font-weight:400;color:#94a3b8"> / 27</span></div>
+      <div style="font-size:28px;font-weight:800;color:${sev.color}">${total}<span style="font-size:14px;font-weight:400;color:#94a3b8"> / 21</span></div>
       <div style="font-size:15px;font-weight:700;color:${sev.color}">${sev.label}</div>
     </div>
 
     <div dir="ltr" style="margin-bottom:20px;padding:16px 20px;border-radius:12px;border-left:4px solid ${sev.color};background:#f8fafc;text-align:left">
-      <div style="font-size:13px;font-weight:700;color:#000;margin-bottom:4px">Proposed Treatment Action</div>
+      <div style="font-size:13px;font-weight:700;color:#000;margin-bottom:4px">Intervention</div>
       <div style="font-size:14px;color:#334155;line-height:1.7">${sev.action}</div>
     </div>
 
@@ -228,8 +203,6 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
       </thead>
       <tbody>${questionsHtml}</tbody>
     </table>
-
-    ${difficultyHtml}
   </div>
   <script>
   function goBack(){try{window.close()}catch(e){}setTimeout(function(){if(!window.closed){if(history.length>1){history.back()}else{window.close()}}},120)}
@@ -241,7 +214,6 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
 
     const blob = new Blob([html], { type: 'text/html' })
     const blobUrl = URL.createObjectURL(blob)
-    setResultsBlobUrl(blobUrl)
     setResultsBlobUrl(blobUrl)
   }, [lang])
 
@@ -256,7 +228,7 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
     onOpenChange(v)
   }
 
-  const dialogTitle = lang === 'en' ? 'PHQ-9 — Patient Health Questionnaire' : 'PHQ-9 — استبيان عن صحة المرضى'
+  const dialogTitle = lang === 'en' ? 'GAD-7 — Anxiety Screening' : 'GAD-7 — مقياس اضطراب القلق'
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
@@ -277,7 +249,7 @@ export default function PHQ9Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
 
         {status === 'qr' && (
           <div className="flex flex-col items-center gap-4 py-4">
-            <p className="text-sm text-muted-foreground text-center">Show this QR code to your patient to fill the PHQ-9 questionnaire</p>
+            <p className="text-sm text-muted-foreground text-center">Show this QR code to your patient to fill the GAD-7 questionnaire</p>
             {qrDataUrl && <img src={qrDataUrl} alt="QR Code" className="rounded-lg shadow-md" />}
             {sessionUrl && (
               <div className="flex items-center gap-1.5 w-full max-w-xs">

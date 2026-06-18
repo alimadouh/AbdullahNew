@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Medical Guidance">
+  <defs>
+    <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset=".5" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+    <style>
+      .mg-sweep {
+        stroke-dasharray: 26 200;
+        stroke-dashoffset: 226;
+        animation: mgSweep 2.6s linear infinite;
+      }
+      @keyframes mgSweep { to { stroke-dashoffset: 0; } }
+      @media (prefers-reduced-motion: reduce) {
+        .mg-sweep { animation: none; stroke-dashoffset: 0; opacity: .9; }
+      }
+    </style>
+  </defs>
+  <path d="M60 10 L99 23 V59 C99 86 80 103 60 111 C40 103 21 86 21 59 V23 Z" fill="url(#mg)"/>
+  <path d="M60 10 L99 23 V42 C70 50 50 50 21 42 V23 Z" fill="#ffffff" opacity=".12"/>
+  <rect x="52" y="34" width="16" height="44" rx="5" fill="#ffffff"/>
+  <rect x="38" y="48" width="44" height="16" rx="5" fill="#ffffff"/>
+  <path d="M34 88 h12 l4 -9 l6 16 l4 -10 h16" fill="none" stroke="#ffffff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity=".4" pathLength="200"/>
+  <path class="mg-sweep" d="M34 88 h12 l4 -9 l6 16 l4 -10 h16" fill="none" stroke="#ffffff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" pathLength="200"/>
+</svg>

@@ -22,7 +22,7 @@ function HighlightText({ text, query }) {
   return (
     <>
       {str.slice(0, idx)}
-      <mark className="bg-yellow-200 text-foreground rounded-sm px-0.5">{str.slice(idx, idx + q.length)}</mark>
+      <mark className="bg-yellow-200 text-foreground rounded-sm px-0.5 dark:bg-yellow-500/40 dark:text-yellow-50">{str.slice(idx, idx + q.length)}</mark>
       {str.slice(idx + q.length)}
     </>
   )
@@ -51,9 +51,9 @@ function parseToObj(val, fields) {
 
 function SubFieldEditor({ fields, value, onChange, color }) {
   const obj = parseToObj(value, fields)
-  const border = color === 'red' ? 'border-red-200' : 'border-primary/20'
+  const border = color === 'red' ? 'border-red-200 dark:border-red-900/50' : 'border-primary/20'
   const ring = color === 'red' ? 'focus:ring-red-400/50' : 'focus:ring-primary/30'
-  const labelColor = color === 'red' ? 'text-red-700' : 'text-primary'
+  const labelColor = color === 'red' ? 'text-red-700 dark:text-red-400' : 'text-primary'
 
   const update = (key, text) => {
     onChange({ ...obj, [key]: text })
@@ -65,7 +65,7 @@ function SubFieldEditor({ fields, value, onChange, color }) {
         <div key={key}>
           <label className={`text-xs font-semibold ${labelColor} mb-1 block`}>{label}</label>
           <textarea
-            className={`w-full rounded-md border ${border} bg-white px-3 py-2 text-sm min-h-[48px] resize-y focus:outline-none focus:ring-2 ${ring}`}
+            className={`w-full rounded-md border ${border} bg-background px-3 py-2 text-sm min-h-[48px] resize-y focus:outline-none focus:ring-2 ${ring}`}
             value={obj[key] ?? ''}
             onChange={(e) => update(key, e.target.value)}
             rows={2}
@@ -78,7 +78,7 @@ function SubFieldEditor({ fields, value, onChange, color }) {
 
 function CollapsibleField({ label, text, color }) {
   const [open, setOpen] = useState(false)
-  const labelColor = color === 'red' ? 'text-red-700' : 'text-primary'
+  const labelColor = color === 'red' ? 'text-red-700 dark:text-red-400' : 'text-primary'
 
   return (
     <div className="border-b last:border-b-0 border-border/40">
@@ -173,10 +173,10 @@ function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
 
             {/* Contraindications */}
             {hasContra && (
-              <div className="rounded-lg border bg-red-50/50 border-red-200/60 p-3.5">
+              <div className="rounded-lg border bg-red-50/50 border-red-200/60 p-3.5 dark:bg-red-950/30 dark:border-red-900/50">
                 <div className="flex items-center gap-2 mb-3">
-                  <div className="flex items-center justify-center h-5 w-5 rounded-full bg-red-100">
-                    <ShieldAlert className="h-3 w-3 text-red-600" />
+                  <div className="flex items-center justify-center h-5 w-5 rounded-full bg-red-100 dark:bg-red-900/40">
+                    <ShieldAlert className="h-3 w-3 text-red-600 dark:text-red-400" />
                   </div>
                   <span className="text-xs font-bold text-foreground uppercase tracking-wide">Contraindications</span>
                 </div>
@@ -209,6 +209,7 @@ export default function DataTable({
   onDeleteRow,
   onAddRow,
   hideInfoBar,
+  dark,
 }) {
   const categoryCol = findColumnName(columns, ['category', 'age/timing', 'age'])
   const contraCol = findColumnName(columns, ['contraindications', 'contraindication'])
@@ -303,9 +304,13 @@ export default function DataTable({
                   const label = pdfLabelCol ? ((r.data || {})[pdfLabelCol] ?? '') : ''
                   const cat = categoryCol ? String((r.data || {})[categoryCol] ?? '').toLowerCase() : ''
                   const cardColor = cat === 'boys'
-                    ? { bg: '#eff6ff', border: '#93c5fd', icon: '#3b82f6', hover: '#dbeafe' }
+                    ? (dark
+                        ? { bg: 'rgba(59,130,246,0.14)', border: 'rgba(96,165,250,0.45)', icon: '#60a5fa', hover: 'rgba(59,130,246,0.24)' }
+                        : { bg: '#eff6ff', border: '#93c5fd', icon: '#3b82f6', hover: '#dbeafe' })
                     : cat === 'girls'
-                    ? { bg: '#fdf2f8', border: '#f9a8d4', icon: '#ec4899', hover: '#fce7f3' }
+                    ? (dark
+                        ? { bg: 'rgba(236,72,153,0.14)', border: 'rgba(244,114,182,0.45)', icon: '#f472b6', hover: 'rgba(236,72,153,0.24)' }
+                        : { bg: '#fdf2f8', border: '#f9a8d4', icon: '#ec4899', hover: '#fce7f3' })
                     : null
                   return (
                     <a
@@ -316,7 +321,7 @@ export default function DataTable({
                       className="group flex items-center gap-3 rounded-xl border p-4 text-left shadow-sm transition-all hover:shadow-md animate-row-in no-underline"
                       style={{
                         animationDelay: `${i * 0.03}s`,
-                        backgroundColor: cardColor?.bg || 'white',
+                        backgroundColor: cardColor?.bg || 'var(--color-card)',
                         borderColor: cardColor?.border || undefined,
                       }}
                       onMouseEnter={e => { if (cardColor) e.currentTarget.style.backgroundColor = cardColor.hover }}

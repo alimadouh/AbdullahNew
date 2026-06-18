@@ -7,6 +7,7 @@ import DevMilestones from './components/DevMilestones.jsx'
 import Library from './components/Library.jsx'
 import PHQ9Dialog from './components/PHQ9Dialog.jsx'
 import PHQ9PatientForm from './components/PHQ9PatientForm.jsx'
+import GAD7Dialog from './components/GAD7Dialog.jsx'
 import { PDFDocument } from 'pdf-lib'
 import { unzipSync, zipSync, strToU8 } from 'fflate'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
@@ -19,7 +20,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, FileText, Brain, ClipboardCheck } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, FileText, Brain, ClipboardCheck, Home, Sun, Moon, Wrench, ArrowLeft } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -39,19 +40,40 @@ function getTimeAgo(dateStr) {
   return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
 }
 
-const SECTIONS = ['clinic', 'vaccination', 'er-medication', 'pediatrics', 'psychiatrics', 'library']
-const SECTION_LABELS = { clinic: 'Clinic Medications', vaccination: 'Vaccination', 'er-medication': 'ER Medication', pediatrics: 'Pediatrics', psychiatrics: 'Psychiatrics', library: 'Library' }
+const SECTIONS = ['clinic', 'vaccination', 'er-medication', 'library', 'tools']
+const SECTION_LABELS = { clinic: 'Clinic Medications', vaccination: 'Vaccination', 'er-medication': 'ER Medication', library: 'Library', tools: 'Tools' }
 
 const SECTION_THEMES = {
-  clinic:         { primary: 'oklch(0.55 0.18 230)', fg: 'oklch(0.98 0.005 230)', ring: 'oklch(0.55 0.18 230)', pageBg: '#f0f9ff', bg: '#e0f2fe', text: '#0284c7', border: '#7dd3fc' },   // sky blue
-  vaccination:    { primary: 'oklch(0.60 0.15 85)',  fg: 'oklch(0.98 0.005 85)',  ring: 'oklch(0.60 0.15 85)',  pageBg: '#fefce8', bg: '#fef9c3', text: '#a16207', border: '#fde047' },   // light yellow
-  'er-medication':{ primary: 'oklch(0.55 0.2 25)',   fg: 'oklch(0.98 0.005 25)',  ring: 'oklch(0.55 0.2 25)',   pageBg: '#fef2f2', bg: '#fecaca', text: '#dc2626', border: '#fca5a5' },   // light red
-  'er-guidelines':{ primary: 'oklch(0.62 0.16 55)',  fg: 'oklch(0.98 0.005 55)',  ring: 'oklch(0.62 0.16 55)',  pageBg: '#fff7ed', bg: '#ffedd5', text: '#ea580c', border: '#fdba74' },   // light orange
-  pediatrics:     { primary: 'oklch(0.55 0.17 150)', fg: 'oklch(0.98 0.005 150)', ring: 'oklch(0.55 0.17 150)', pageBg: '#f0fdf4', bg: '#dcfce7', text: '#16a34a', border: '#86efac' },   // light green
-  psychiatrics:   { primary: 'oklch(0.55 0.15 195)', fg: 'oklch(0.98 0.005 195)', ring: 'oklch(0.55 0.15 195)', pageBg: '#f0fdfa', bg: '#ccfbf1', text: '#0d9488', border: '#5eead4' },   // teal
-  library:        { primary: 'oklch(0.60 0.15 300)', fg: 'oklch(0.98 0.005 300)', ring: 'oklch(0.60 0.15 300)', pageBg: '#faf5ff', bg: '#f3e8ff', text: '#9333ea', border: '#d8b4fe' },   // light purple
+  home:           { primary: 'oklch(0.50 0.04 250)', fg: 'oklch(0.98 0.005 250)', ring: 'oklch(0.50 0.04 250)', pageBg: '#f8fafc', bg: '#e2e8f0', text: '#475569', darkText: '#94a3b8', border: '#cbd5e1' },   // neutral slate
+  clinic:         { primary: 'oklch(0.55 0.18 230)', fg: 'oklch(0.98 0.005 230)', ring: 'oklch(0.55 0.18 230)', pageBg: '#f0f9ff', bg: '#e0f2fe', text: '#0284c7', darkText: '#38bdf8', border: '#7dd3fc' },   // sky blue
+  vaccination:    { primary: 'oklch(0.60 0.15 85)',  fg: 'oklch(0.98 0.005 85)',  ring: 'oklch(0.60 0.15 85)',  pageBg: '#fefce8', bg: '#fef9c3', text: '#a16207', darkText: '#fbbf24', border: '#fde047' },   // amber
+  'er-medication':{ primary: 'oklch(0.55 0.2 25)',   fg: 'oklch(0.98 0.005 25)',  ring: 'oklch(0.55 0.2 25)',   pageBg: '#fef2f2', bg: '#fecaca', text: '#dc2626', darkText: '#f87171', border: '#fca5a5' },   // red
+  'er-guidelines':{ primary: 'oklch(0.62 0.16 55)',  fg: 'oklch(0.98 0.005 55)',  ring: 'oklch(0.62 0.16 55)',  pageBg: '#fff7ed', bg: '#ffedd5', text: '#ea580c', darkText: '#fb923c', border: '#fdba74' },   // orange
+  pediatrics:     { primary: 'oklch(0.55 0.17 150)', fg: 'oklch(0.98 0.005 150)', ring: 'oklch(0.55 0.17 150)', pageBg: '#f0fdf4', bg: '#dcfce7', text: '#16a34a', darkText: '#4ade80', border: '#86efac' },   // green
+  psychiatrics:   { primary: 'oklch(0.55 0.15 195)', fg: 'oklch(0.98 0.005 195)', ring: 'oklch(0.55 0.15 195)', pageBg: '#f0fdfa', bg: '#ccfbf1', text: '#0d9488', darkText: '#2dd4bf', border: '#5eead4' },   // teal
+  library:        { primary: 'oklch(0.60 0.15 300)', fg: 'oklch(0.98 0.005 300)', ring: 'oklch(0.60 0.15 300)', pageBg: '#faf5ff', bg: '#f3e8ff', text: '#9333ea', darkText: '#c084fc', border: '#d8b4fe' },   // purple
+  tools:          { primary: 'oklch(0.55 0.16 275)', fg: 'oklch(0.98 0.005 275)', ring: 'oklch(0.55 0.16 275)', pageBg: '#eef2ff', bg: '#e0e7ff', text: '#4f46e5', darkText: '#818cf8', border: '#a5b4fc' },   // indigo
   notifications:  { primary: 'oklch(0.55 0.18 280)', fg: 'oklch(0.98 0.005 280)', ring: 'oklch(0.55 0.18 280)', pageBg: '#f5f3ff', bg: '#ede9fe', text: '#7c3aed', border: '#c4b5fd' },   // purple
 }
+
+// Single unified theme applied across the whole app (home-page brand look)
+const UNIFIED_THEME = {
+  primary: 'oklch(0.56 0.11 220)',
+  fg: 'oklch(0.99 0.005 220)',
+  ring: 'oklch(0.56 0.11 220)',
+  pageBg: '#f4f8fb',
+  bg: '#e0f2fe',
+  text: '#0e7490',
+  border: '#bae6fd',
+}
+
+const SECTION_ITEMS = [
+  { key: 'clinic', label: 'Clinic Medications', Icon: Pill, desc: 'Adult clinic drug formulary' },
+  { key: 'vaccination', label: 'Vaccination', Icon: Syringe, desc: 'Immunization schedules & doses' },
+  { key: 'er-medication', label: 'ER Medication', Icon: Cross, desc: 'Emergency drugs & dosing' },
+  { key: 'library', label: 'Library', Icon: LibraryBig, desc: 'Guidelines, pediatrics & references' },
+  { key: 'tools', label: 'Tools', Icon: Wrench, desc: 'Growth, milestones & screening' },
+]
 
 export default function App() {
   const [columns, setColumns] = useState([])
@@ -66,11 +88,28 @@ export default function App() {
   const [loginPw, setLoginPw] = useState('')
   const [loginErr, setLoginErr] = useState('')
   const [saving, setSaving] = useState(false)
-  const [activeSection, setActiveSection] = useState('clinic')
+  const [activeSection, setActiveSection] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const param = new URLSearchParams(window.location.search).get('section')
+      if (param && SECTIONS.includes(param)) return param
+    }
+    return 'home'
+  })
+  const [dark, setDark] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const param = new URLSearchParams(window.location.search).get('theme')
+      if (param === 'dark' || param === 'light') return param === 'dark'
+    }
+    const saved = localStorage.getItem('theme')
+    if (saved) return saved === 'dark'
+    return typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  })
   const [growthCalcOpen, setGrowthCalcOpen] = useState(false)
   const [milestonesOpen, setMilestonesOpen] = useState(false)
   const [phq9Open, setPhq9Open] = useState(false)
   const [phq9EnOpen, setPhq9EnOpen] = useState(false)
+  const [gad7Open, setGad7Open] = useState(false)
+  const [gad7EnOpen, setGad7EnOpen] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [leaveFormOpen, setLeaveFormOpen] = useState(false)
   const [leaveStart, setLeaveStart] = useState('')
@@ -97,13 +136,26 @@ export default function App() {
   const [visitorStatsOpen, setVisitorStatsOpen] = useState(false)
 
   const adminMode = Boolean(adminToken)
-  const theme = SECTION_THEMES[activeSection]
+  // Each section keeps its own accent colour (matching its home card) for icons/buttons/table,
+  // but the page background stays consistent app-wide. In dark mode the accent brightens for legibility.
+  const baseTheme = SECTION_THEMES[activeSection] || UNIFIED_THEME
+  const theme = {
+    ...baseTheme,
+    pageBg: UNIFIED_THEME.pageBg,
+    text: dark ? (baseTheme.darkText || baseTheme.text) : baseTheme.text,
+  }
 
-  // Apply page background color to body
+  // Apply dark mode class + persist preference
   useEffect(() => {
-    document.body.style.background = SECTION_THEMES[activeSection].pageBg
+    document.documentElement.classList.toggle('dark', dark)
+    localStorage.setItem('theme', dark ? 'dark' : 'light')
+  }, [dark])
+
+  // Apply page background color to body (light: section tint; dark: token deep slate)
+  useEffect(() => {
+    document.body.style.background = dark ? '' : theme.pageBg
     document.body.style.transition = 'background 0.3s ease'
-  }, [activeSection])
+  }, [activeSection, dark])
 
   useEffect(() => {
     const handler = (e) => {
@@ -133,7 +185,7 @@ export default function App() {
 
   const reload = async (section) => {
     const s = section || activeSection
-    if (s === 'library' || s === 'psychiatrics') { setLoading(false); return }
+    if (s === 'home' || s === 'library' || s === 'tools') { setLoading(false); return }
     setLoading(true)
     setErr('')
     try {
@@ -170,6 +222,17 @@ export default function App() {
     const cats = rows.map(r => String((r.data || {})[categoryCol] ?? '').trim()).filter(Boolean)
     return uniq(cats).sort((a, b) => parseAgeMonths(a) - parseAgeMonths(b) || a.localeCompare(b))
   }, [rows, categoryCol])
+
+  // Categories with medication counts (for the category picker grid)
+  const categoryList = useMemo(() => {
+    if (!categoryCol) return []
+    const counts = {}
+    for (const r of rows) {
+      const c = String((r.data || {})[categoryCol] ?? '').trim()
+      if (c) counts[c] = (counts[c] || 0) + 1
+    }
+    return categories.map(name => ({ name, count: counts[name] || 0 }))
+  }, [rows, categoryCol, categories])
 
   const routeCol = useMemo(() => findColumnName(columns, ['route']), [columns])
   const routeCount = useMemo(() => {
@@ -354,28 +417,45 @@ export default function App() {
           '--color-ring': theme.ring,
           '--color-success': theme.primary,
           '--color-success-foreground': theme.fg,
-          '--color-border': theme.border,
-          '--color-input': theme.border,
+          // In light mode, tint borders with the section color; in dark mode let the dark tokens win
+          ...(dark ? {} : { '--color-border': theme.border, '--color-input': theme.border }),
         }}
       >
         {/* Header */}
         <div className="no-print flex items-center justify-between mb-6">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Ministry of Health - Kuwait" className="h-16 w-auto" />
-            <div>
-              <h1 className="text-2xl font-bold tracking-tight">PCIS Medication</h1>
-              <p className="text-sm font-medium text-muted-foreground">Ministry of Health</p>
-              <p className="text-xs text-muted-foreground mt-0.5">Done by Dr. Abdullah Almusallam</p>
-            </div>
-          </div>
+          <button
+            type="button"
+            onClick={() => switchSection('home')}
+            className="hdr-in-left group flex items-center gap-3 cursor-pointer text-left"
+            title="Go to home"
+            aria-label="Medical Guidance — go to home"
+          >
+            <img
+              src="/logo.svg"
+              alt="Medical Guidance"
+              className="h-16 w-auto transition-transform duration-300 group-hover:scale-105 group-hover:-rotate-3"
+            />
+            <h1 className="title-gradient font-display text-2xl font-extrabold tracking-tight transition-transform duration-300 group-hover:scale-[1.03] sm:text-3xl">
+              Medical Guidance
+            </h1>
+          </button>
 
-          <div className="flex items-center gap-2">
+          <div className="hdr-in-right flex items-center gap-2">
             {adminMode && (
               <Badge variant="success" className="gap-1.5">
                 <ShieldCheck className="h-3 w-3" />
                 Admin
               </Badge>
             )}
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => setDark(d => !d)}
+              aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
+              title={dark ? 'Light mode' : 'Dark mode'}
+            >
+              {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </Button>
             <div className="relative" ref={settingsRef}>
               <Button variant="outline" size="icon" className="relative" onClick={() => setSettingsOpen(v => !v)}>
                 <Settings className="h-4 w-4" />
@@ -453,142 +533,338 @@ export default function App() {
           </div>
         </div>
 
-        {/* Controls */}
-        <div className="no-print flex flex-col gap-3 mb-5">
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar flex-nowrap">
-            {[
-              { key: 'clinic', label: 'Clinic Medications', Icon: Pill },
-              { key: 'vaccination', label: 'Vaccination', Icon: Syringe },
-              { key: 'er-medication', label: 'ER Medication', Icon: Cross },
-              { key: 'pediatrics', label: 'Pediatrics', Icon: Baby },
-              { key: 'psychiatrics', label: 'Psychiatrics', Icon: Brain },
-              { key: 'library', label: 'Library', Icon: LibraryBig },
-            ].map(({ key, label, Icon }) => {
-              const t = SECTION_THEMES[key]
-              const active = activeSection === key
-              return (
-                <button
-                  key={key}
-                  onClick={() => switchSection(key)}
-                  className="inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer shrink-0 whitespace-nowrap"
-                  style={active
-                    ? { backgroundColor: t.text, color: '#fff', boxShadow: `0 2px 8px ${t.text}30` }
-                    : { backgroundColor: t.bg, color: t.text, border: `1px solid ${t.border}` }
-                  }
-                >
-                  <Icon className="h-4 w-4" />
-                  {label}
-                </button>
-              )
-            })}
-          </div>
-
-          {activeSection !== 'pediatrics' && activeSection !== 'psychiatrics' && activeSection !== 'library' && (
-          <div className="flex items-center gap-2">
-            <Select
-              value={categoryFilter}
-              onValueChange={setCategoryFilter}
-              disabled={!categoryCol}
-            >
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Select Category" />
-              </SelectTrigger>
-              <SelectContent>
-                {categories.map(c => (
-                  <SelectItem key={c} value={c}>{c}</SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
-            <div className="relative flex-1">
-              <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
-                placeholder="Search..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-9"
-              />
+        {/* Home — landing page with hero + bento cards */}
+        {activeSection === 'home' && (
+          <div className="no-print relative">
+            {/* Aurora atmosphere */}
+            <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+              <div className="home-aurora home-aurora-1" />
+              <div className="home-aurora home-aurora-2" />
+              <div className="home-aurora home-aurora-3" />
             </div>
 
-          </div>
-          )}
-        </div>
+            {/* Hero */}
+            <div className="home-hero-in mb-9 text-center sm:mb-12">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/70 bg-white/60 px-3.5 py-1.5 text-xs font-medium text-slate-600 shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-white/5 dark:text-slate-300">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-sky-500" />
+                </span>
+                Ministry of Health · Kuwait
+              </span>
+              {/* Animated ECG heartbeat trace */}
+              <div className="mx-auto mt-5 w-full max-w-xl sm:mt-7">
+                <svg
+                  viewBox="0 0 600 120"
+                  className="h-20 w-full overflow-visible sm:h-28"
+                  fill="none"
+                  preserveAspectRatio="xMidYMid meet"
+                  aria-hidden="true"
+                >
+                  <defs>
+                    <linearGradient id="ecgGrad" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stopColor="#0ea5e9" />
+                      <stop offset="50%" stopColor="#06b6d4" />
+                      <stop offset="100%" stopColor="#0d9488" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    className="ecg-base"
+                    pathLength="1000"
+                    d="M0,60 H100 l12,-6 l12,6 H150 l6,6 l8,-46 l8,82 l6,-42 H230 l14,-10 l14,10 H370 l12,-6 l12,6 H410 l6,6 l8,-46 l8,82 l6,-42 H490 l14,-10 l14,10 H600"
+                  />
+                  <path
+                    className="ecg-pulse"
+                    pathLength="1000"
+                    stroke="url(#ecgGrad)"
+                    d="M0,60 H100 l12,-6 l12,6 H150 l6,6 l8,-46 l8,82 l6,-42 H230 l14,-10 l14,10 H370 l12,-6 l12,6 H410 l6,6 l8,-46 l8,82 l6,-42 H490 l14,-10 l14,10 H600"
+                  />
+                  <circle className="ecg-dot" r="4.5" fill="#06b6d4">
+                    <animateMotion
+                      dur="3.2s"
+                      repeatCount="indefinite"
+                      keyPoints="0;1"
+                      keyTimes="0;1"
+                      calcMode="linear"
+                      path="M0,60 H100 l12,-6 l12,6 H150 l6,6 l8,-46 l8,82 l6,-42 H230 l14,-10 l14,10 H370 l12,-6 l12,6 H410 l6,6 l8,-46 l8,82 l6,-42 H490 l14,-10 l14,10 H600"
+                    />
+                  </circle>
+                </svg>
+              </div>
+            </div>
 
+            {/* Bento cards */}
+            <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-3 sm:gap-5">
+              {SECTION_ITEMS.map(({ key, label, desc, Icon }, i) => {
+                const t = SECTION_THEMES[key]
+                return (
+                  <button
+                    key={key}
+                    onClick={() => switchSection(key)}
+                    className="home-card group relative flex flex-col items-start overflow-hidden rounded-3xl border border-white/60 p-4 text-left shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] backdrop-blur-xl cursor-pointer dark:border-white/15 dark:shadow-[0_14px_34px_-12px_rgba(0,0,0,0.65)] sm:p-6"
+                    style={{
+                      '--card': t.text,
+                      animationDelay: `${i * 80}ms`,
+                      background: dark
+                        ? `linear-gradient(155deg, oklch(0.235 0.017 256) 38%, ${t.text}33)`
+                        : `linear-gradient(160deg, rgba(255,255,255,0.92) 50%, ${t.bg})`,
+                    }}
+                  >
+                    {/* Hover glow */}
+                    <div
+                      className="home-card-glow pointer-events-none absolute -right-8 -top-10 h-40 w-40 rounded-full"
+                      style={{ background: `radial-gradient(circle, ${t.text} 0%, transparent 70%)`, opacity: 0 }}
+                    />
+                    {/* Icon tile */}
+                    <div
+                      className="home-card-icon relative flex h-10 w-10 items-center justify-center rounded-2xl sm:h-14 sm:w-14"
+                      style={{ background: `linear-gradient(135deg, ${t.text}, ${t.text}cc)`, boxShadow: `0 10px 22px -6px ${t.text}80` }}
+                    >
+                      <Icon className="h-5 w-5 text-white sm:h-7 sm:w-7" />
+                    </div>
+                    {/* Text */}
+                    <h3 className="font-display mt-3 text-base font-bold leading-tight text-foreground sm:mt-4 sm:text-lg">{label}</h3>
+                    <p className="mt-1 text-[11px] leading-snug text-muted-foreground sm:text-xs">{desc}</p>
+                    {/* Arrow (desktop only) */}
+                    <span className="mt-3 hidden items-center gap-1 text-xs font-semibold sm:inline-flex" style={{ color: t.text }}>
+                      Open
+                      <ChevronRight className="home-card-arrow h-4 w-4" />
+                    </span>
+                  </button>
+                )
+              })}
+            </div>
 
-
-        {/* Growth Calculator & Milestones Buttons for Pediatrics */}
-        {activeSection === 'pediatrics' && (
-          <div className="mb-4 grid grid-cols-2 gap-2">
-            <Button
-              onClick={() => setGrowthCalcOpen(true)}
-              className="gap-1.5 text-white text-xs sm:text-sm h-9"
-              style={{ backgroundColor: theme.text }}
-            >
-              <Calculator className="h-4 w-4 shrink-0" />
-              Growth Calculator
-            </Button>
-            <Button
-              onClick={() => setMilestonesOpen(true)}
-              className="gap-1.5 text-white text-xs sm:text-sm h-9"
-              style={{ backgroundColor: theme.text }}
-            >
-              <Baby className="h-4 w-4 shrink-0" />
-              Milestones
-            </Button>
+            {/* Footer credit */}
+            <p className="mt-10 text-center text-xs text-muted-foreground">
+              Done by Dr. Abdullah Almusallam · West Subahiya Health Center
+            </p>
           </div>
         )}
 
-        {/* Psychiatrics */}
-        {activeSection === 'psychiatrics' && (
-          <div className="mb-4 grid grid-cols-2 gap-2">
+        {/* Controls */}
+        {activeSection !== 'home' && (
+        <div className="no-print flex flex-col gap-3 mb-5">
+          {/* Section breadcrumb header */}
+          <div className="flex items-center gap-3">
             <Button
-              onClick={() => setPhq9Open(true)}
-              className="gap-2 text-white text-sm h-10"
-              style={{ backgroundColor: theme.text }}
+              variant="outline"
+              size="sm"
+              onClick={() => switchSection('home')}
+              className="gap-1.5 shrink-0"
             >
-              <ClipboardCheck className="h-4 w-4 shrink-0" />
-              PHQ-9 - Arabic
+              <Home className="h-4 w-4" />
+              Home
             </Button>
-            <Button
-              onClick={() => setPhq9EnOpen(true)}
-              className="gap-2 text-white text-sm h-10"
-              style={{ backgroundColor: theme.text }}
-            >
-              <ClipboardCheck className="h-4 w-4 shrink-0" />
-              PHQ-9 - English
-            </Button>
+            <ChevronRight className="h-4 w-4 text-muted-foreground shrink-0" />
+            {(() => {
+              const current = SECTION_ITEMS.find(s => s.key === activeSection)
+              const CurrentIcon = current?.Icon || Pill
+              return (
+                <div className="flex items-center gap-2 min-w-0">
+                  <span
+                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl"
+                    style={{ background: `linear-gradient(135deg, ${theme.text}, ${theme.text}cc)`, boxShadow: `0 6px 14px -4px ${theme.text}66` }}
+                  >
+                    <CurrentIcon className="h-4 w-4 text-white" />
+                  </span>
+                  <h2 className="font-display text-lg font-bold tracking-tight truncate sm:text-xl" style={{ color: theme.text }}>
+                    {SECTION_LABELS[activeSection]}
+                  </h2>
+                </div>
+              )
+            })()}
+          </div>
+
+          {activeSection !== 'library' && activeSection !== 'tools' && (
+          <div className="relative">
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              placeholder="Search all medications by name, dose, indication…"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="h-11 rounded-xl pl-10 text-sm shadow-sm"
+            />
+          </div>
+          )}
+        </div>
+        )}
+
+
+
+        {/* Tools section — clean cards grouped by their origin section */}
+        {activeSection === 'tools' && (
+          <div className="mb-4 flex flex-col gap-7">
+            {[
+              { section: 'Pediatrics', accent: theme.text, tools: [
+                { label: 'Growth Calculator', desc: 'WHO percentiles & Z-scores by age', Icon: Calculator, onClick: () => setGrowthCalcOpen(true) },
+                { label: 'Developmental Milestones', desc: 'Milestone checklist & red flags', Icon: Baby, onClick: () => setMilestonesOpen(true) },
+              ] },
+              { section: 'Psychiatrics', accent: theme.text, tools: [
+                { label: 'PHQ-9 Depression Screening', desc: 'Patient Health Questionnaire', Icon: ClipboardCheck, languages: [
+                  { label: 'العربية', onClick: () => setPhq9Open(true) },
+                  { label: 'English', onClick: () => setPhq9EnOpen(true) },
+                ] },
+                { label: 'GAD-7 Anxiety Screening', desc: 'Generalized Anxiety Disorder', Icon: ClipboardCheck, languages: [
+                  { label: 'العربية', onClick: () => setGad7Open(true) },
+                  { label: 'English', onClick: () => setGad7EnOpen(true) },
+                ] },
+              ] },
+            ].map(({ section, accent, tools }) => (
+              <div key={section}>
+                {/* Group label + divider line */}
+                <div className="mb-3 flex items-center gap-2.5">
+                  <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: accent }} />
+                  <span className="text-xs font-bold uppercase tracking-wide" style={{ color: accent }}>{section}</span>
+                  <span className="h-px flex-1 rounded-full" style={{ backgroundColor: accent + '33' }} />
+                </div>
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  {tools.map((tool) => {
+                    const Icon = tool.Icon
+                    const iconTile = (
+                      <span
+                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
+                        style={{ background: `linear-gradient(135deg, ${accent}, ${accent}cc)`, boxShadow: `0 6px 14px -5px ${accent}80` }}
+                      >
+                        <Icon className="h-5 w-5 text-white" />
+                      </span>
+                    )
+                    if (tool.languages) {
+                      return (
+                        <div key={tool.label} className="flex flex-col gap-3 rounded-2xl border bg-card p-4 shadow-sm">
+                          <div className="flex items-center gap-3">
+                            {iconTile}
+                            <div className="min-w-0">
+                              <div className="font-display text-sm font-semibold leading-tight">{tool.label}</div>
+                              <div className="text-xs text-muted-foreground">{tool.desc}</div>
+                            </div>
+                          </div>
+                          <div className="flex gap-2">
+                            {tool.languages.map((lang) => (
+                              <button
+                                key={lang.label}
+                                onClick={lang.onClick}
+                                className="flex-1 rounded-lg px-3 py-2 text-xs font-semibold text-white cursor-pointer transition-transform hover:-translate-y-0.5"
+                                style={{ backgroundColor: accent }}
+                              >
+                                {lang.label}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )
+                    }
+                    return (
+                      <button
+                        key={tool.label}
+                        onClick={tool.onClick}
+                        className="group flex items-center gap-3 rounded-2xl border bg-card p-4 text-left shadow-sm cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-md"
+                      >
+                        {iconTile}
+                        <div className="min-w-0 flex-1">
+                          <div className="font-display text-sm font-semibold leading-tight">{tool.label}</div>
+                          <div className="text-xs text-muted-foreground">{tool.desc}</div>
+                        </div>
+                        <ChevronRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" style={{ color: accent }} />
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+            ))}
           </div>
         )}
 
         <PHQ9Dialog open={phq9Open} onOpenChange={setPhq9Open} theme={theme} lang="ar" />
         <PHQ9Dialog open={phq9EnOpen} onOpenChange={setPhq9EnOpen} theme={theme} lang="en" />
+        <GAD7Dialog open={gad7Open} onOpenChange={setGad7Open} theme={theme} lang="ar" />
+        <GAD7Dialog open={gad7EnOpen} onOpenChange={setGad7EnOpen} theme={theme} lang="en" />
 
         {/* Library */}
         {activeSection === 'library' && (
-          <Library theme={theme} />
+          <Library theme={theme} dark={dark} />
         )}
 
-        {/* Content */}
-        {activeSection !== 'library' && activeSection !== 'psychiatrics' && (
-          activeSection !== 'pediatrics' && !categoryFilter && !searchQuery.trim() ? (
-            <Card>
-              <CardContent className="flex flex-col items-center gap-3 py-16 text-center">
-                <Search className="h-8 w-8 text-muted-foreground" />
-                <p className="text-lg font-medium text-muted-foreground">Select a category to view medications</p>
-                <p className="text-sm text-muted-foreground">Use the dropdown above to choose a category</p>
-              </CardContent>
-            </Card>
-          ) : (
+        {/* Content — medication sections: search · category grid · category table */}
+        {activeSection !== 'home' && activeSection !== 'library' && activeSection !== 'tools' && (
+          searchQuery.trim() ? (
+            /* Search across every category */
             <DataTable
               columns={columns}
               rows={rows}
-              categoryFilter={categoryFilter}
+              categoryFilter="__ALL__"
               searchQuery={searchQuery}
               adminMode={adminMode}
               onCellChange={onCellChange}
               onDeleteRow={onDeleteRow}
               onAddRow={onAddRow}
               hideInfoBar
+              dark={dark}
+            />
+          ) : (categoryCol && categoryList.length > 0 && !adminMode) ? (
+            categoryFilter && categoryFilter !== '__ALL__' ? (
+              /* A category is open → its medications + back button */
+              <div className="flex flex-col gap-3">
+                <div className="flex items-center gap-2">
+                  <Button variant="outline" size="sm" onClick={() => setCategoryFilter('')} className="gap-1.5">
+                    <ArrowLeft className="h-4 w-4" />
+                    All Categories
+                  </Button>
+                  <span className="font-semibold text-sm" style={{ color: theme.text }}>{categoryFilter}</span>
+                </div>
+                <DataTable
+                  columns={columns}
+                  rows={rows}
+                  categoryFilter={categoryFilter}
+                  searchQuery=""
+                  adminMode={adminMode}
+                  onCellChange={onCellChange}
+                  onDeleteRow={onDeleteRow}
+                  onAddRow={onAddRow}
+                  hideInfoBar
+                  dark={dark}
+                />
+              </div>
+            ) : (
+              /* Category picker grid */
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {categoryList.map((cat) => {
+                  const SecIcon = SECTION_ITEMS.find(s => s.key === activeSection)?.Icon || Pill
+                  return (
+                    <button
+                      key={cat.name}
+                      onClick={() => setCategoryFilter(cat.name)}
+                      className="group flex items-center gap-3 rounded-2xl border bg-card p-4 text-left shadow-sm cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-md"
+                    >
+                      <span
+                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
+                        style={{ background: `linear-gradient(135deg, ${theme.text}, ${theme.text}cc)`, boxShadow: `0 6px 14px -5px ${theme.text}80` }}
+                      >
+                        <SecIcon className="h-5 w-5 text-white" />
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <div className="font-display text-sm font-semibold leading-tight">{cat.name}</div>
+                        <div className="text-xs text-muted-foreground">{cat.count} medication{cat.count !== 1 ? 's' : ''}</div>
+                      </div>
+                      <ChevronRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" style={{ color: theme.text }} />
+                    </button>
+                  )
+                })}
+              </div>
+            )
+          ) : (
+            /* No categories (or admin editing) → show the full table */
+            <DataTable
+              columns={columns}
+              rows={rows}
+              categoryFilter="__ALL__"
+              searchQuery={searchQuery}
+              adminMode={adminMode}
+              onCellChange={onCellChange}
+              onDeleteRow={onDeleteRow}
+              onAddRow={onAddRow}
+              hideInfoBar
+              dark={dark}
             />
           )
         )}

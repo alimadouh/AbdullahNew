@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Class-based dark mode (toggle .dark on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Allow pinch-to-zoom on mobile */
 html {
   touch-action: auto !important;
@@ -33,6 +36,26 @@ html {
   --color-ring: oklch(0.55 0.18 230);
   --radius: 0.625rem;
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Bricolage Grotesque", "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Dark theme token overrides (applied when <html class="dark">) */
+.dark {
+  --color-background: oklch(0.165 0.014 256);   /* deep slate page */
+  --color-foreground: oklch(0.97 0.006 250);
+  --color-card: oklch(0.232 0.017 256);         /* clearly lighter than page */
+  --color-card-foreground: oklch(0.97 0.006 250);
+  --color-popover: oklch(0.245 0.018 256);
+  --color-popover-foreground: oklch(0.97 0.006 250);
+  --color-secondary: oklch(0.28 0.018 256);
+  --color-secondary-foreground: oklch(0.97 0.006 250);
+  --color-muted: oklch(0.28 0.018 256);
+  --color-muted-foreground: oklch(0.74 0.02 256);
+  --color-accent: oklch(0.32 0.022 256);
+  --color-accent-foreground: oklch(0.98 0.006 250);
+  --color-border: oklch(0.34 0.02 256);         /* visible borders */
+  --color-input: oklch(0.34 0.02 256);
+  color-scheme: dark;
 }
 
 @layer base {
@@ -105,6 +128,172 @@ html {
 
 .animate-fade-in-up {
   animation: fade-in-up 0.2s ease-out both;
+}
+
+/* ===== Home page (WOW) ===== */
+
+/* Aurora background blobs */
+@keyframes aurora-float-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(6%, 8%) scale(1.15); }
+}
+@keyframes aurora-float-2 {
+  0%, 100% { transform: translate(0, 0) scale(1.1); }
+  50%      { transform: translate(-8%, -6%) scale(1); }
+}
+@keyframes aurora-float-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(5%, -7%) scale(1.2); }
+}
+
+.home-aurora {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.32;
+  will-change: transform;
+}
+.dark .home-aurora { opacity: 0.22; }
+.home-aurora-1 {
+  width: 38rem; height: 38rem;
+  top: -10rem; left: -8rem;
+  background: radial-gradient(circle, #7dd3fc 0%, transparent 70%);
+  animation: aurora-float-1 18s ease-in-out infinite;
+}
+.home-aurora-2 {
+  width: 34rem; height: 34rem;
+  top: -6rem; right: -10rem;
+  background: radial-gradient(circle, #a5b4fc 0%, transparent 70%);
+  animation: aurora-float-2 22s ease-in-out infinite;
+}
+.home-aurora-3 {
+  width: 32rem; height: 32rem;
+  bottom: -12rem; left: 30%;
+  background: radial-gradient(circle, #99f6e4 0%, transparent 70%);
+  animation: aurora-float-3 20s ease-in-out infinite;
+}
+
+/* Entrance animations */
+@keyframes home-rise {
+  from { opacity: 0; transform: translateY(28px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes home-fade-down {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.home-hero-in { animation: home-fade-down 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.home-card {
+  animation: home-rise 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.home-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 50px -12px color-mix(in oklch, var(--card) 45%, transparent);
+  border-color: color-mix(in oklch, var(--card) 55%, transparent);
+}
+.home-card:active { transform: translateY(-3px) scale(0.99); }
+
+/* Icon tile shine */
+.home-card-icon { transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1); }
+.home-card:hover .home-card-icon { transform: scale(1.12) rotate(-6deg); }
+
+/* Glow that intensifies on hover */
+.home-card-glow {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.home-card:hover .home-card-glow { opacity: 1; }
+
+/* Arrow nudge */
+.home-card-arrow { transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.35s ease; }
+.home-card:hover .home-card-arrow { transform: translateX(4px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .home-aurora, .home-card, .home-hero-in, .home-card-icon, .home-card-arrow { animation: none !important; transition: none !important; }
+}
+
+/* ===== Animated brand title ===== */
+@keyframes title-gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+.title-gradient {
+  background: linear-gradient(90deg, #0369a1, #0e7490, #0f766e, #0369a1);
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: title-gradient-shift 9s ease-in-out infinite;
+}
+/* Dark mode: lift the tones slightly so they stay legible on the dark header */
+.dark .title-gradient {
+  background: linear-gradient(90deg, #38bdf8, #22d3ee, #2dd4bf, #38bdf8);
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* Gently speed the shimmer + a soft, subtle glow when hovering the brand */
+.group:hover .title-gradient {
+  animation-duration: 3s;
+  filter: drop-shadow(0 2px 8px rgba(13, 110, 130, 0.25));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title-gradient { animation: none !important; }
+}
+
+/* ===== Hero ECG heartbeat animation ===== */
+.ecg-base {
+  fill: none;
+  stroke: #94a3b8;
+  stroke-width: 2;
+  opacity: 0.22;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.dark .ecg-base { stroke: #64748b; opacity: 0.4; }
+
+.ecg-pulse {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 90 1000;
+  stroke-dashoffset: 1090;
+  animation: ecg-sweep 3.2s linear infinite;
+  filter: drop-shadow(0 0 6px rgba(13, 148, 136, 0.45));
+}
+@keyframes ecg-sweep {
+  from { stroke-dashoffset: 1090; }
+  to   { stroke-dashoffset: 0; }
+}
+
+/* Glowing dot that rides along the trace */
+.ecg-dot {
+  filter: drop-shadow(0 0 5px rgba(8, 145, 178, 0.7));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ecg-pulse { animation: none; stroke-dasharray: none; stroke-dashoffset: 0; opacity: 0.85; }
+  .ecg-dot { display: none; }
+}
+
+/* ===== Header entrance ===== */
+@keyframes hdr-left {
+  from { opacity: 0; transform: translateX(-14px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes hdr-right {
+  from { opacity: 0; transform: translateX(14px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.hdr-in-left  { animation: hdr-left 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hdr-in-right { animation: hdr-right 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hdr-in-left, .hdr-in-right { animation: none !important; }
 }
 
 /* Print styles */

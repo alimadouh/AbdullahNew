@@ -557,13 +557,25 @@ function openReportInNewTab({ gender, age, w, h, hc, bmi, zScores, activeCharts 
   body { font-family:Arial,sans-serif; background:#f5f5f5; color:#333; }
   .page { max-width:900px; margin:20px auto; background:#fff; padding:32px 36px; box-shadow:0 1px 10px rgba(0,0,0,0.12); }
   @media (max-width:640px) { .page { margin:0; padding:20px 14px; box-shadow:none; } }
+  .report-actions { position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:8px; padding:10px 16px; background:rgba(255,255,255,0.96); backdrop-filter:blur(6px); border-bottom:1px solid #e5e7eb; }
+  .report-actions button { font:600 13px Arial,sans-serif; padding:8px 14px; border-radius:8px; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; }
+  .btn-back { background:#f1f5f9; color:#334155; }
+  .btn-pdf { background:${accentColor}; color:#fff; }
+  .btn-share { background:#fff; color:${accentColor}; border:1px solid ${accentColor}55; }
   @media print {
     body { background:#fff; }
     .page { margin:0; padding:20px; box-shadow:none; }
     img { break-inside:avoid; }
+    .no-print { display:none !important; }
   }
 </style>
 </head><body>
+<div class="report-actions no-print">
+  <button class="btn-back" onclick="goBack()">&larr; Back</button>
+  <div style="flex:1"></div>
+  <button class="btn-share" id="shareBtn" onclick="shareReport()">Share</button>
+  <button class="btn-pdf" onclick="window.print()">Save as PDF</button>
+</div>
 <div class="page">
 
   <!-- Header -->
@@ -611,6 +623,11 @@ function openReportInNewTab({ gender, age, w, h, hc, bmi, zScores, activeCharts 
   </div>
 
 </div>
+<script>
+function goBack(){try{window.close()}catch(e){}setTimeout(function(){if(!window.closed){if(history.length>1){history.back()}else{window.close()}}},120)}
+function shareReport(){if(navigator.share){navigator.share({title:document.title,text:document.title}).catch(function(){})}else{window.print()}}
+if(!navigator.share){var sb=document.getElementById('shareBtn');if(sb)sb.style.display='none'}
+</script>
 </body></html>`
 
   const win = window.open('', '_blank')
