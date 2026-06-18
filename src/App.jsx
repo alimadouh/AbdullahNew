@@ -9,6 +9,7 @@ import PHQ9Dialog from './components/PHQ9Dialog.jsx'
 import PHQ9PatientForm from './components/PHQ9PatientForm.jsx'
 import GAD7Dialog from './components/GAD7Dialog.jsx'
 import FIB4Dialog from './components/FIB4Dialog.jsx'
+import CURB65Dialog from './components/CURB65Dialog.jsx'
 import { PDFDocument } from 'pdf-lib'
 import { unzipSync, zipSync, strToU8 } from 'fflate'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
@@ -21,7 +22,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, FileText, Brain, ClipboardCheck, Home, Sun, Moon, Wrench, ArrowLeft, FlaskConical } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, FileText, Brain, ClipboardCheck, Home, Sun, Moon, Wrench, ArrowLeft, FlaskConical, Stethoscope } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -57,6 +58,25 @@ const SECTION_THEMES = {
   notifications:  { primary: 'oklch(0.55 0.18 280)', fg: 'oklch(0.98 0.005 280)', ring: 'oklch(0.55 0.18 280)', pageBg: '#f5f3ff', bg: '#ede9fe', text: '#7c3aed', border: '#c4b5fd' },   // purple
 }
 
+// A row inside the Settings popup
+function SettingsRow({ icon: Icon, label, onClick, badge, value, destructive }) {
+  return (
+    <button
+      onClick={onClick}
+      className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm cursor-pointer transition-colors hover:bg-accent ${destructive ? 'text-destructive' : ''}`}
+    >
+      <Icon className={`h-4 w-4 ${destructive ? '' : 'text-muted-foreground'}`} />
+      <span className="flex-1 text-left">{label}</span>
+      {badge > 0 && (
+        <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-destructive px-1 text-[10px] font-bold text-white">
+          {badge > 99 ? '99+' : badge}
+        </span>
+      )}
+      {value != null && <span className="text-[11px] text-muted-foreground">{value}</span>}
+    </button>
+  )
+}
+
 // Single unified theme applied across the whole app (home-page brand look)
 const UNIFIED_THEME = {
   primary: 'oklch(0.56 0.11 220)',
@@ -70,10 +90,10 @@ const UNIFIED_THEME = {
 
 const SECTION_ITEMS = [
   { key: 'clinic', label: 'Clinic Medications', Icon: Pill, desc: 'Adult clinic drug formulary' },
+  { key: 'tools', label: 'Tools', Icon: Wrench, desc: 'Growth, milestones & screening' },
   { key: 'vaccination', label: 'Vaccination', Icon: Syringe, desc: 'Immunization schedules & doses' },
   { key: 'er-medication', label: 'ER Medication', Icon: Cross, desc: 'Emergency drugs & dosing' },
   { key: 'library', label: 'Library', Icon: LibraryBig, desc: 'Guidelines, pediatrics & references' },
-  { key: 'tools', label: 'Tools', Icon: Wrench, desc: 'Growth, milestones & screening' },
 ]
 
 export default function App() {
@@ -103,7 +123,7 @@ export default function App() {
     }
     const saved = localStorage.getItem('theme')
     if (saved) return saved === 'dark'
-    return typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    return true // default to dark theme
   })
   const [growthCalcOpen, setGrowthCalcOpen] = useState(false)
   const [milestonesOpen, setMilestonesOpen] = useState(false)
@@ -112,6 +132,7 @@ export default function App() {
   const [gad7Open, setGad7Open] = useState(false)
   const [gad7EnOpen, setGad7EnOpen] = useState(false)
   const [fib4Open, setFib4Open] = useState(false)
+  const [curb65Open, setCurb65Open] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [leaveFormOpen, setLeaveFormOpen] = useState(false)
   const [leaveStart, setLeaveStart] = useState('')
@@ -125,7 +146,6 @@ export default function App() {
     { day: '', date: '', start: '', end: '' },
     { day: '', date: '', start: '', end: '' },
   ])
-  const settingsRef = useRef(null)
   const [feedbackOpen, setFeedbackOpen] = useState(false)
   const [feedbackMsg, setFeedbackMsg] = useState('')
   const [feedbackSending, setFeedbackSending] = useState(false)
@@ -158,14 +178,6 @@ export default function App() {
     document.body.style.background = dark ? '' : theme.pageBg
     document.body.style.transition = 'background 0.3s ease'
   }, [activeSection, dark])
-
-  useEffect(() => {
-    const handler = (e) => {
-      if (settingsRef.current && !settingsRef.current.contains(e.target)) setSettingsOpen(false)
-    }
-    document.addEventListener('mousedown', handler)
-    return () => document.removeEventListener('mousedown', handler)
-  }, [])
 
   // Zoom
   const [zoom, setZoom] = useState(100)
@@ -235,6 +247,9 @@ export default function App() {
     }
     return categories.map(name => ({ name, count: counts[name] || 0 }))
   }, [rows, categoryCol, categories])
+
+  // Vaccination lists vaccines, not medications
+  const itemNoun = activeSection === 'vaccination' ? 'vaccine' : 'medication'
 
   const routeCol = useMemo(() => findColumnName(columns, ['route']), [columns])
   const routeCount = useMemo(() => {
@@ -412,7 +427,7 @@ export default function App() {
   return (
     <TooltipProvider>
       <div
-        className="mx-auto max-w-7xl px-4 py-6 sm:px-6"
+        className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6"
         style={{
           '--color-primary': theme.primary,
           '--color-primary-foreground': theme.fg,
@@ -424,7 +439,7 @@ export default function App() {
         }}
       >
         {/* Header */}
-        <div className="no-print flex items-center justify-between mb-6">
+        <div className="no-print flex items-center justify-between mb-4 sm:mb-6">
           <button
             type="button"
             onClick={() => switchSection('home')}
@@ -458,82 +473,68 @@ export default function App() {
             >
               {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
-            <div className="relative" ref={settingsRef}>
-              <Button variant="outline" size="icon" className="relative" onClick={() => setSettingsOpen(v => !v)}>
-                <Settings className="h-4 w-4" />
-                {adminMode && feedbackList.length > 0 && (
-                  <span className="absolute -top-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-destructive text-[9px] font-bold text-white px-0.5">
-                    {feedbackList.length > 99 ? '99+' : feedbackList.length}
-                  </span>
-                )}
-              </Button>
-              {settingsOpen && (
-                <div className="absolute right-0 top-full mt-2 z-50 w-48 rounded-lg border bg-popover shadow-lg py-1">
-                  <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { zoomIn(); }}>
-                    <ZoomIn className="h-4 w-4 text-muted-foreground" />
-                    Zoom In ({zoom}%)
-                  </button>
-                  <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { zoomOut(); }}>
-                    <ZoomOut className="h-4 w-4 text-muted-foreground" />
-                    Zoom Out ({zoom}%)
-                  </button>
-                  <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { window.print(); setSettingsOpen(false) }}>
-                    <Printer className="h-4 w-4 text-muted-foreground" />
-                    Print
-                  </button>
-                  <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setFeedbackOpen(true); setFeedbackSent(false); setSettingsOpen(false) }}>
-                    <MessageSquare className="h-4 w-4 text-muted-foreground" />
-                    Send Feedback
-                  </button>
-                  <div className="my-1 border-t" />
-                  {adminMode ? (
-                    <>
-                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setAdminOpen(true); setSettingsOpen(false) }}>
-                        <Settings className="h-4 w-4 text-muted-foreground" />
-                        Admin Panel
-                      </button>
-                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setNotificationsOpen(true); setSettingsOpen(false); loadFeedback() }}>
-                        <Bell className="h-4 w-4 text-muted-foreground" />
-                        <span className="flex-1">Notifications</span>
-                        {feedbackList.length > 0 && (
-                          <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-destructive text-[10px] font-bold text-white px-1">
-                            {feedbackList.length > 99 ? '99+' : feedbackList.length}
-                          </span>
-                        )}
-                      </button>
-                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setVisitorStatsOpen(true); setSettingsOpen(false); loadVisitorStats() }}>
-                        <Eye className="h-4 w-4 text-muted-foreground" />
-                        <span className="flex-1">Visitor Stats</span>
-                        {visitorStats && (
-                          <span className="text-[11px] text-muted-foreground">{visitorStats.total}</span>
-                        )}
-                      </button>
-                      <div className="my-1 border-t" />
-                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setLeaveFormOpen(true); setLeaveStart(''); setLeaveEnd(''); setSettingsOpen(false) }}>
-                        <FileText className="h-4 w-4 text-muted-foreground" />
-                        Return From Leave
-                      </button>
-                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { setOnCallFormOpen(true); setOnCallMonth(''); setOnCallRows(Array.from({length:5},()=>({day:'',date:'',start:'',end:''}))); setSettingsOpen(false) }}>
-                        <FileText className="h-4 w-4 text-muted-foreground" />
-                        On-Call Duty Report
-                      </button>
-                      <div className="my-1 border-t" />
-                      <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors text-destructive" onClick={() => { logout(); setSettingsOpen(false) }}>
-                        <LogOut className="h-4 w-4" />
-                        Logout
-                      </button>
-                    </>
-                  ) : (
-                    <button className="w-full flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-accent cursor-pointer transition-colors" onClick={() => { openAdmin(); setSettingsOpen(false) }}>
-                      <Settings className="h-4 w-4 text-muted-foreground" />
-                      Admin Panel
-                    </button>
-                  )}
+            <Button variant="outline" size="icon" className="relative" onClick={() => setSettingsOpen(true)} aria-label="Settings" title="Settings">
+              <Settings className="h-4 w-4" />
+              {adminMode && feedbackList.length > 0 && (
+                <span className="absolute -top-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-destructive text-[9px] font-bold text-white px-0.5">
+                  {feedbackList.length > 99 ? '99+' : feedbackList.length}
+                </span>
+              )}
+            </Button>
+          </div>
+        </div>
+
+        {/* Settings popup */}
+        <Dialog open={settingsOpen} onOpenChange={setSettingsOpen}>
+          <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-sm">
+            <DialogHeader>
+              <DialogTitle className="flex items-center gap-2">
+                <Settings className="h-5 w-5" />
+                Settings
+              </DialogTitle>
+              <DialogDescription className="sr-only">App settings and tools</DialogDescription>
+            </DialogHeader>
+
+            <div className="flex flex-col gap-4">
+              <div>
+                <p className="mb-1 px-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Display</p>
+                <SettingsRow icon={ZoomIn} label={`Zoom In (${zoom}%)`} onClick={zoomIn} />
+                <SettingsRow icon={ZoomOut} label={`Zoom Out (${zoom}%)`} onClick={zoomOut} />
+                <SettingsRow icon={dark ? Sun : Moon} label={dark ? 'Light Mode' : 'Dark Mode'} onClick={() => setDark(d => !d)} />
+                <SettingsRow icon={Printer} label="Print" onClick={() => { window.print(); setSettingsOpen(false) }} />
+              </div>
+
+              <div>
+                <p className="mb-1 px-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">General</p>
+                <SettingsRow icon={MessageSquare} label="Send Feedback" onClick={() => { setFeedbackOpen(true); setFeedbackSent(false); setSettingsOpen(false) }} />
+              </div>
+
+              {adminMode ? (
+                <>
+                  <div>
+                    <p className="mb-1 px-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Admin</p>
+                    <SettingsRow icon={Settings} label="Admin Panel" onClick={() => { setAdminOpen(true); setSettingsOpen(false) }} />
+                    <SettingsRow icon={Bell} label="Notifications" badge={feedbackList.length} onClick={() => { setNotificationsOpen(true); setSettingsOpen(false); loadFeedback() }} />
+                    <SettingsRow icon={Eye} label="Visitor Stats" value={visitorStats?.total} onClick={() => { setVisitorStatsOpen(true); setSettingsOpen(false); loadVisitorStats() }} />
+                  </div>
+                  <div>
+                    <p className="mb-1 px-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Documents</p>
+                    <SettingsRow icon={FileText} label="Return From Leave" onClick={() => { setLeaveFormOpen(true); setLeaveStart(''); setLeaveEnd(''); setSettingsOpen(false) }} />
+                    <SettingsRow icon={FileText} label="On-Call Duty Report" onClick={() => { setOnCallFormOpen(true); setOnCallMonth(''); setOnCallRows(Array.from({ length: 5 }, () => ({ day: '', date: '', start: '', end: '' }))); setSettingsOpen(false) }} />
+                  </div>
+                  <div className="border-t pt-2">
+                    <SettingsRow icon={LogOut} label="Logout" destructive onClick={() => { logout(); setSettingsOpen(false) }} />
+                  </div>
+                </>
+              ) : (
+                <div>
+                  <p className="mb-1 px-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Admin</p>
+                  <SettingsRow icon={ShieldCheck} label="Admin Panel" onClick={() => { openAdmin(); setSettingsOpen(false) }} />
                 </div>
               )}
             </div>
-          </div>
-        </div>
+          </DialogContent>
+        </Dialog>
 
         {/* Home — landing page with hero + bento cards */}
         {activeSection === 'home' && (
@@ -545,54 +546,45 @@ export default function App() {
               <div className="home-aurora home-aurora-3" />
             </div>
 
-            {/* Hero */}
-            <div className="home-hero-in mb-9 text-center sm:mb-12">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/70 bg-white/60 px-3.5 py-1.5 text-xs font-medium text-slate-600 shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-white/5 dark:text-slate-300">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-sky-500" />
-                </span>
-                Ministry of Health · Kuwait
-              </span>
-              {/* Animated ECG heartbeat trace */}
-              <div className="mx-auto mt-5 w-full max-w-xl sm:mt-7">
-                <svg
-                  viewBox="0 0 600 120"
-                  className="h-20 w-full overflow-visible sm:h-28"
-                  fill="none"
-                  preserveAspectRatio="xMidYMid meet"
-                  aria-hidden="true"
-                >
-                  <defs>
-                    <linearGradient id="ecgGrad" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0%" stopColor="#0ea5e9" />
-                      <stop offset="50%" stopColor="#06b6d4" />
-                      <stop offset="100%" stopColor="#0d9488" />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    className="ecg-base"
-                    pathLength="1000"
-                    d="M0,60 H100 l12,-6 l12,6 H150 l6,6 l8,-46 l8,82 l6,-42 H230 l14,-10 l14,10 H370 l12,-6 l12,6 H410 l6,6 l8,-46 l8,82 l6,-42 H490 l14,-10 l14,10 H600"
-                  />
-                  <path
-                    className="ecg-pulse"
-                    pathLength="1000"
-                    stroke="url(#ecgGrad)"
-                    d="M0,60 H100 l12,-6 l12,6 H150 l6,6 l8,-46 l8,82 l6,-42 H230 l14,-10 l14,10 H370 l12,-6 l12,6 H410 l6,6 l8,-46 l8,82 l6,-42 H490 l14,-10 l14,10 H600"
-                  />
-                  <circle className="ecg-dot" r="4.5" fill="#06b6d4">
-                    <animateMotion
-                      dur="3.2s"
-                      repeatCount="indefinite"
-                      keyPoints="0;1"
-                      keyTimes="0;1"
-                      calcMode="linear"
-                      path="M0,60 H100 l12,-6 l12,6 H150 l6,6 l8,-46 l8,82 l6,-42 H230 l14,-10 l14,10 H370 l12,-6 l12,6 H410 l6,6 l8,-46 l8,82 l6,-42 H490 l14,-10 l14,10 H600"
-                    />
-                  </circle>
-                </svg>
+            {/* Hero — heartbeat trace with the org name revealed in sync with the pulse */}
+            <div className="home-hero-in relative mx-auto mb-4 mt-0 w-full max-w-xl sm:mb-12 sm:mt-2">
+              {/* Words sit just above the line and appear one-by-one as the pulse sweeps across */}
+              {/* "Ministry of Health" above the line, "Kuwait" below it — revealed word-by-word with the pulse */}
+              <div className="ecg-words pointer-events-none absolute inset-x-0 top-0 z-10 flex h-1/2 items-end justify-center gap-1.5 pb-2 text-[13px] font-medium tracking-wide text-slate-500 dark:text-slate-300 sm:text-sm">
+                <span className="hero-word hero-w1">Ministry</span>
+                <span className="hero-word hero-w2">of</span>
+                <span className="hero-word hero-w3">Health</span>
               </div>
+              <div className="ecg-words pointer-events-none absolute inset-x-0 bottom-0 z-10 flex h-1/2 items-start justify-center pt-2 text-[13px] font-medium tracking-wide text-slate-500 dark:text-slate-300 sm:text-sm">
+                <span className="hero-word hero-w4">Kuwait</span>
+              </div>
+              <svg
+                viewBox="0 0 600 120"
+                className="h-20 w-full overflow-visible sm:h-28"
+                fill="none"
+                preserveAspectRatio="xMidYMid meet"
+                aria-hidden="true"
+              >
+                <defs>
+                  <linearGradient id="ecgGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stopColor="#0ea5e9" />
+                    <stop offset="50%" stopColor="#06b6d4" />
+                    <stop offset="100%" stopColor="#0d9488" />
+                  </linearGradient>
+                </defs>
+                <path
+                  className="ecg-base"
+                  pathLength="1000"
+                  d="M0,60 H100 l12,-6 l12,6 H150 l6,6 l8,-46 l8,82 l6,-42 H230 l14,-10 l14,10 H370 l12,-6 l12,6 H410 l6,6 l8,-46 l8,82 l6,-42 H490 l14,-10 l14,10 H600"
+                />
+                <path
+                  className="ecg-pulse"
+                  pathLength="1000"
+                  stroke="url(#ecgGrad)"
+                  d="M0,60 H100 l12,-6 l12,6 H150 l6,6 l8,-46 l8,82 l6,-42 H230 l14,-10 l14,10 H370 l12,-6 l12,6 H410 l6,6 l8,-46 l8,82 l6,-42 H490 l14,-10 l14,10 H600"
+                />
+                <circle className="ecg-dot" r="4.5" fill="#06b6d4" />
+              </svg>
             </div>
 
             {/* Bento cards */}
@@ -638,8 +630,8 @@ export default function App() {
             </div>
 
             {/* Footer credit */}
-            <p className="mt-10 text-center text-xs text-muted-foreground">
-              Done by Dr. Abdullah Almusallam · West Subahiya Health Center
+            <p className="mt-5 text-center text-xs text-muted-foreground sm:mt-10">
+              Done by Dr. Abdullah Almusallam
             </p>
           </div>
         )}
@@ -682,7 +674,7 @@ export default function App() {
           <div className="relative">
             <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
-              placeholder="Search all medications by name, dose, indication…"
+              placeholder={`Search all ${itemNoun}s by name, dose, indication…`}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="h-11 rounded-xl pl-10 text-sm shadow-sm"
@@ -714,6 +706,9 @@ export default function App() {
               ] },
               { section: 'Hepatology', accent: theme.text, tools: [
                 { label: 'FIB-4 Score', desc: 'Liver fibrosis estimate (no biopsy)', Icon: FlaskConical, onClick: () => setFib4Open(true) },
+              ] },
+              { section: 'Respiratory', accent: theme.text, tools: [
+                { label: 'CURB-65 Score', desc: 'Pneumonia severity & disposition', Icon: Stethoscope, onClick: () => setCurb65Open(true) },
               ] },
             ].map(({ section, accent, tools }) => (
               <div key={section}>
@@ -785,6 +780,7 @@ export default function App() {
         <GAD7Dialog open={gad7Open} onOpenChange={setGad7Open} theme={theme} lang="ar" />
         <GAD7Dialog open={gad7EnOpen} onOpenChange={setGad7EnOpen} theme={theme} lang="en" />
         <FIB4Dialog open={fib4Open} onOpenChange={setFib4Open} theme={theme} />
+        <CURB65Dialog open={curb65Open} onOpenChange={setCurb65Open} theme={theme} />
 
         {/* Library */}
         {activeSection === 'library' && (
@@ -850,7 +846,7 @@ export default function App() {
                       </span>
                       <div className="min-w-0 flex-1">
                         <div className="font-display text-sm font-semibold leading-tight">{cat.name}</div>
-                        <div className="text-xs text-muted-foreground">{cat.count} medication{cat.count !== 1 ? 's' : ''}</div>
+                        <div className="text-xs text-muted-foreground">{cat.count} {itemNoun}{cat.count !== 1 ? 's' : ''}</div>
                       </div>
                       <ChevronRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" style={{ color: theme.text }} />
                     </button>

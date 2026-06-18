@@ -8,6 +8,17 @@
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="apple-touch-icon" href="/logo.png" />
     <meta name="theme-color" content="#0891b2" />
+    <script>
+      // Apply theme before paint (default dark) to avoid a flash of light
+      (function () {
+        try {
+          var p = new URLSearchParams(location.search).get('theme');
+          var saved = localStorage.getItem('theme');
+          var dark = p ? p === 'dark' : (saved ? saved === 'dark' : true);
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) { document.documentElement.classList.add('dark'); }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet" />
