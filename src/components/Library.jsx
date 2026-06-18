@@ -230,8 +230,8 @@ const FOLDERS = [
 export default function Library({ theme, dark }) {
   const [openFolder, setOpenFolder] = useState(null)
   const cardStyle = dark
-    ? { borderColor: theme.text + '55', background: 'linear-gradient(150deg, oklch(0.255 0.014 256), oklch(0.225 0.016 256))' }
-    : { borderColor: theme.border, backgroundColor: theme.bg + '80' }
+    ? { '--lift': theme.text, borderColor: theme.text + '55', background: 'linear-gradient(150deg, oklch(0.255 0.014 256), oklch(0.225 0.016 256))' }
+    : { '--lift': theme.text, borderColor: theme.border, backgroundColor: theme.bg + '80' }
   // In-card label text: light/near-white in dark (readable), brand accent in light
   const labelColor = dark ? '#e8edf4' : theme.text
 
@@ -242,12 +242,12 @@ export default function Library({ theme, dark }) {
   const renderBook = (book) => (
     <Card
       key={book.file}
-      className="cursor-pointer transition-all hover:scale-[1.03] hover:shadow-md"
+      className="lift-card cursor-pointer"
       style={cardStyle}
       onClick={() => window.open(book.file.startsWith('/') ? book.file : `/library/${book.file}`, '_blank')}
     >
       <CardContent className="flex flex-col items-center gap-2 py-5 px-3 text-center">
-        <FileText className="h-10 w-10" style={{ color: theme.text }} />
+        <FileText className="lift-icon h-10 w-10" style={{ color: theme.text }} />
         <span className="text-sm font-medium leading-tight" style={{ color: labelColor }}>
           {book.label}
         </span>
@@ -306,12 +306,12 @@ export default function Library({ theme, dark }) {
         return (
         <Card
           key={folder.name}
-          className="cursor-pointer transition-all hover:scale-[1.03] hover:shadow-md"
+          className="lift-card cursor-pointer"
           style={cardStyle}
           onClick={() => setOpenFolder(folder)}
         >
           <CardContent className="flex flex-col items-center gap-2 py-5 px-3 text-center">
-            <Icon className="h-10 w-10" style={{ color: theme.text }} />
+            <Icon className="lift-icon h-10 w-10" style={{ color: theme.text }} />
             <span className="text-sm font-medium leading-tight" style={{ color: labelColor }}>
               {folder.name}
             </span>

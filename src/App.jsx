@@ -734,7 +734,7 @@ export default function App() {
                     const Icon = tool.Icon
                     const iconTile = (
                       <span
-                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
+                        className="lift-icon flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
                         style={{ background: `linear-gradient(135deg, ${accent}, ${accent}cc)`, boxShadow: `0 6px 14px -5px ${accent}80` }}
                       >
                         <Icon className="h-5 w-5 text-white" />
@@ -742,7 +742,7 @@ export default function App() {
                     )
                     if (tool.languages) {
                       return (
-                        <div key={tool.label} className="flex flex-col gap-3 rounded-2xl border bg-card p-4 shadow-sm">
+                        <div key={tool.label} className="lift-card flex flex-col gap-3 rounded-2xl border bg-card p-4 shadow-sm" style={{ '--lift': accent }}>
                           <div className="flex items-center gap-3">
                             {iconTile}
                             <div className="min-w-0">
@@ -769,7 +769,8 @@ export default function App() {
                       <button
                         key={tool.label}
                         onClick={tool.onClick}
-                        className="group flex items-center gap-3 rounded-2xl border bg-card p-4 text-left shadow-sm cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-md"
+                        className="lift-card group flex items-center gap-3 rounded-2xl border bg-card p-4 text-left shadow-sm cursor-pointer"
+                        style={{ '--lift': accent }}
                       >
                         {iconTile}
                         <div className="min-w-0 flex-1">
@@ -847,10 +848,11 @@ export default function App() {
                     <button
                       key={cat.name}
                       onClick={() => setCategoryFilter(cat.name)}
-                      className="group flex items-center gap-3 rounded-2xl border bg-card p-4 text-left shadow-sm cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-md"
+                      className="lift-card group flex items-center gap-3 rounded-2xl border bg-card p-4 text-left shadow-sm cursor-pointer"
+                      style={{ '--lift': theme.text }}
                     >
                       <span
-                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
+                        className="lift-icon flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
                         style={{ background: `linear-gradient(135deg, ${theme.text}, ${theme.text}cc)`, boxShadow: `0 6px 14px -5px ${theme.text}80` }}
                       >
                         <SecIcon className="h-5 w-5 text-white" />
