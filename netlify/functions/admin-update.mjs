@@ -1,6 +1,7 @@
 import { ensureSchema, sql, VALID_SECTIONS } from './_db.mjs'
 import { verifyAdmin } from './_auth.mjs'
 import crypto from 'node:crypto'
+import { gunzipSync } from 'node:zlib'
 
 function sanitizeColumns(cols) {
   return (Array.isArray(cols) ? cols : [])
@@ -22,7 +23,13 @@ export const handler = async (event) => {
       return json(null, 405, { error: 'Method not allowed' })
     }
 
-    const body = JSON.parse(event.body || '{}')
+    // Large saves arrive gzipped (see apiAdminUpdate) to stay under Netlify's 6 MB request cap
+    const reqHeaders = event.headers || {}
+    const gz = String(reqHeaders['x-body-encoding'] || reqHeaders['X-Body-Encoding'] || '').toLowerCase() === 'gzip'
+    const rawBody = gz
+      ? gunzipSync(Buffer.from(event.body || '', event.isBase64Encoded ? 'base64' : 'binary')).toString('utf8')
+      : (event.isBase64Encoded ? Buffer.from(event.body || '', 'base64').toString('utf8') : event.body)
+    const body = JSON.parse(rawBody || '{}')
     const section = VALID_SECTIONS.includes(body.section) ? body.section : 'clinic'
     const columns = Array.isArray(body.columns) ? sanitizeColumns(body.columns) : null
     const rows = Array.isArray(body.rows) ? body.rows : null

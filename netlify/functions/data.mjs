@@ -1,4 +1,5 @@
 import { ensureSchema, sql, DEFAULT_COLUMNS, VALID_SECTIONS } from './_db.mjs'
+import { gzipSync } from 'node:zlib'
 
 function sanitizeColumns(cols) {
   return (Array.isArray(cols) ? cols : [])
@@ -31,10 +32,23 @@ export const handler = async (event) => {
     const dbRows = await sql`SELECT id, data FROM table_rows WHERE section = ${section} ORDER BY created_at ASC`
     const rows = (dbRows || []).map(r => ({ id: r.id, data: r.data }))
 
+    const body = JSON.stringify({ columns: finalCols, rows })
+    // Netlify caps a function response at 6 MB. With the full medication monographs the clinic
+    // table is ~8 MB of JSON, so send it gzipped (~2 MB); the browser unzips it on its own.
+    const headers = event.headers || {}
+    const acceptsGzip = /gzip/i.test(headers['accept-encoding'] || headers['Accept-Encoding'] || '')
+    if (acceptsGzip) {
+      return {
+        statusCode: 200,
+        headers: { 'Content-Type': 'application/json', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding' },
+        body: gzipSync(body).toString('base64'),
+        isBase64Encoded: true,
+      }
+    }
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ columns: finalCols, rows }),
+      body,
     }
   } catch (err) {
     return {
