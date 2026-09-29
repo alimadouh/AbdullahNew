@@ -8,6 +8,8 @@ import { Input } from './ui/input.jsx'
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from './ui/table.jsx'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
 import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText, Flag, PlusCircle, ChevronDown } from 'lucide-react'
+import MedImageButton, { medImageFor } from './MedImage.jsx'
+import { MedicationDetails, MonographEditor, IND_FIELDS_V2, CONTRA_FIELDS_V2, isMonographV2, monographToText } from './MedicationDetails.jsx'
 
 function KuwaitFlag({ className = 'h-5' }) {
   return <img src="/kw.png" alt="Kuwait" className={className} />
@@ -47,6 +49,25 @@ const CONTRA_FIELDS = [
 function parseToObj(val, fields) {
   if (val && typeof val === 'object' && !Array.isArray(val)) return val
   return {}
+}
+
+// Turn a cell value into labelled parts. Object values (Indications / Contraindications)
+// become [{label, text}] in the known field order; plain values return null.
+function valueParts(val) {
+  if (!val || typeof val !== 'object' || Array.isArray(val)) return null
+  const known = [...IND_FIELDS, ...CONTRA_FIELDS]
+  const ordered = known.filter(f => f.key in val)
+  const extra = Object.keys(val).filter(k => !known.some(f => f.key === k)).map(k => ({ key: k, label: k }))
+  return [...ordered, ...extra]
+    .map(({ key, label }) => ({ label, text: String(val[key] ?? '').trim() }))
+    .filter(p => p.text)
+}
+
+// Plain-text version of a cell value for copy / WhatsApp.
+function valueToText(val, bold = false) {
+  const parts = valueParts(val)
+  if (!parts) return String(val ?? '')
+  return parts.map(p => `\n  • ${bold ? `_${p.label}:_` : `${p.label}:`} ${p.text}`).join('')
 }
 
 function SubFieldEditor({ fields, value, onChange, color }) {
@@ -120,15 +141,21 @@ function SubFieldDisplay({ fields, value, color }) {
   )
 }
 
-function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
+function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange, trigger = 'pill', title }) {
   const [open, setOpen] = useState(false)
   const indVal = indicationsCol ? ((row.data || {})[indicationsCol] ?? '') : ''
   const contraVal = contraCol ? ((row.data || {})[contraCol] ?? '') : ''
   const hasIndications = Boolean(indicationsCol)
   const hasContra = Boolean(contraCol)
+  const v2 = isMonographV2(indVal) || isMonographV2(contraVal)
 
   return (
     <>
+      {trigger === 'button' ? (
+        <Button variant="outline" size="sm" className="gap-1.5 text-xs" onClick={(e) => { e.stopPropagation(); setOpen(true) }}>
+          <Info className="h-3.5 w-3.5" /> Full details
+        </Button>
+      ) : (
       <div className="flex items-center justify-center h-full">
         <Button
           variant="outline"
@@ -140,15 +167,33 @@ function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
           <span className="text-xs font-medium">{adminMode ? 'Edit' : 'View'}</span>
         </Button>
       </div>
+      )}
 
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-md max-h-[80vh] p-0 gap-0 overflow-hidden flex flex-col">
-          <DialogHeader className="sr-only">
-            <DialogTitle>Details</DialogTitle>
-            <DialogDescription>Indications and contraindications</DialogDescription>
+        {/* v2 popups get a fixed height (capped by the visible viewport, which shrinks when the
+            phone keyboard opens) so the box does not resize and jump when sections open/close */}
+        <DialogContent
+          className={`${v2 ? 'max-w-2xl' : 'max-w-md max-h-[80vh]'} p-0 gap-0 overflow-hidden flex flex-col`}
+          style={v2 ? { height: 'min(88vh, calc(var(--app-vh, 100dvh) - 2rem))' } : undefined}
+        >
+          <DialogHeader className={v2 && title ? 'px-5 pt-5 pb-1 text-left' : 'sr-only'}>
+            <DialogTitle className="text-base pr-10">{title || 'Details'}</DialogTitle>
+            <DialogDescription className="sr-only">Medication details</DialogDescription>
           </DialogHeader>
 
-          <div className="p-5 space-y-4 overflow-y-auto">
+          {v2 ? (
+            <div data-dialog-scroll className="flex-1 min-h-0 p-5 pt-3 overflow-y-auto overscroll-contain">
+              {adminMode ? (
+                <div className="space-y-4">
+                  <MonographEditor fields={IND_FIELDS_V2} value={indVal} onChange={(obj) => onCellChange?.(row.id, indicationsCol, obj)} color="primary" />
+                  <MonographEditor fields={CONTRA_FIELDS_V2} value={contraVal} onChange={(obj) => onCellChange?.(row.id, contraCol, obj)} color="red" />
+                </div>
+              ) : (
+                <MedicationDetails ind={isMonographV2(indVal) ? indVal : {}} contra={isMonographV2(contraVal) ? contraVal : {}} />
+              )}
+            </div>
+          ) : (
+          <div data-dialog-scroll className="p-5 space-y-4 overflow-y-auto overscroll-contain">
             {/* Indications */}
             {hasIndications && (
               <div className="rounded-lg border bg-primary/5 border-primary/20 p-3.5">
@@ -193,6 +238,7 @@ function InfoCell({ row, indicationsCol, contraCol, adminMode, onCellChange }) {
               </div>
             )}
           </div>
+          )}
         </DialogContent>
       </Dialog>
     </>
@@ -251,16 +297,39 @@ export default function DataTable({
   }, [columns, hasMergedCol, indicationsCol, contraCol, pdfCol, pdfLabelCol, hideCategoryCol, categoryCol])
 
   const [expandedRowId, setExpandedRowId] = useState(null)
+  const titleGenericCol = findColumnName(columns, ['generic name', 'generic'])
+  const tradeCol = findColumnName(columns, ['trading name', 'trade name', 'brand'])
+  const titleDoseCol = findColumnName(columns, ['dose', 'strength'])
+  const medTitle = (r) => {
+    const d = r.data || {}
+    const g = titleGenericCol ? String(d[titleGenericCol] ?? '').trim() : ''
+    const t = tradeCol ? String(d[tradeCol] ?? '').trim() : ''
+    const st = titleDoseCol ? String(d[titleDoseCol] ?? '').trim() : ''
+    return [g, t && `(${t})`, st].filter(Boolean).join(' ')
+  }
   const [copiedId, setCopiedId] = useState(null)
 
   const visibleColumns = columns.filter(c => c !== '__kuwait__')
 
+  const monographOf = (row) => {
+    const d = row.data || {}
+    const ind = indicationsCol ? d[indicationsCol] : null
+    const con = contraCol ? d[contraCol] : null
+    return isMonographV2(ind) || isMonographV2(con) ? { ind: isMonographV2(ind) ? ind : {}, con: isMonographV2(con) ? con : {} } : null
+  }
+  const plainColumns = visibleColumns.filter(c => c !== indicationsCol && c !== contraCol)
+
   const formatMedicationText = (row) => {
-    return visibleColumns.map(col => `*${col}:* ${(row.data || {})[col] ?? ''}`).join('\n')
+    const m = monographOf(row)
+    if (m) return plainColumns.map(col => `*${col}:* ${(row.data || {})[col] ?? ''}`).join('\n') + '\n\n' + monographToText(m.ind, m.con, { short: true, bold: true })
+    return visibleColumns.map(col => `*${col}:* ${valueToText((row.data || {})[col], true)}`).join('\n')
   }
 
   const copyMedicationInfo = (row) => {
-    const lines = visibleColumns.map(col => `${col}: ${(row.data || {})[col] ?? ''}`).join('\n')
+    const m = monographOf(row)
+    const lines = m
+      ? plainColumns.map(col => `${col}: ${(row.data || {})[col] ?? ''}`).join('\n') + '\n\n' + monographToText(m.ind, m.con)
+      : visibleColumns.map(col => `${col}: ${valueToText((row.data || {})[col])}`).join('\n')
     navigator.clipboard.writeText(lines).then(() => {
       setCopiedId(row.id)
       setTimeout(() => setCopiedId(null), 2000)
@@ -387,15 +456,19 @@ export default function DataTable({
                     </div>
                     {trading && <p className="text-xs text-primary font-medium mt-0.5"><HighlightText text={trading} query={searchQuery} /></p>}
                   </div>
-                  {hasMergedCol && (
-                    <div className="shrink-0" onClick={(e) => e.stopPropagation()}>
-                      <InfoCell
-                        row={r}
-                        indicationsCol={indicationsCol}
-                        contraCol={contraCol}
-                        adminMode={false}
-                        onCellChange={onCellChange}
-                      />
+                  {(hasMergedCol || medImageFor(r)) && (
+                    <div className="shrink-0 flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
+                      <MedImageButton row={r} title={medTitle(r)} />
+                      {hasMergedCol && (
+                        <InfoCell
+                          row={r}
+                          indicationsCol={indicationsCol}
+                          contraCol={contraCol}
+                          adminMode={false}
+                          onCellChange={onCellChange}
+                          title={medTitle(r)}
+                        />
+                      )}
                     </div>
                   )}
                 </div>
@@ -435,7 +508,7 @@ export default function DataTable({
                     <TableHead className="w-8 px-1"></TableHead>
                   )}
                   {displayColumns.map(col => (
-                    <TableHead key={col} className={`whitespace-nowrap ${col === '__INFO__' ? 'w-[90px]' : ''}`}>
+                    <TableHead key={col} className={`whitespace-nowrap ${col === '__INFO__' ? 'w-[130px] text-center' : ''}`}>
                       {col === '__INFO__' ? 'Info' : col === pdfCol ? '' : col}
                     </TableHead>
                   ))}
@@ -508,13 +581,17 @@ export default function DataTable({
                                   if (col === '__INFO__') {
                                     return (
                                       <TableCell key={`${r.id}:__INFO__`} className="leading-snug" onClick={(e) => e.stopPropagation()}>
-                                        <InfoCell
-                                          row={r}
-                                          indicationsCol={indicationsCol}
-                                          contraCol={contraCol}
-                                          adminMode={adminMode}
-                                          onCellChange={onCellChange}
-                                        />
+                                        <div className="flex items-center justify-center gap-2">
+                                          {!adminMode && <MedImageButton row={r} title={medTitle(r)} />}
+                                          <InfoCell
+                                            row={r}
+                                            indicationsCol={indicationsCol}
+                                            contraCol={contraCol}
+                                            adminMode={adminMode}
+                                            onCellChange={onCellChange}
+                                            title={medTitle(r)}
+                                          />
+                                        </div>
                                       </TableCell>
                                     )
                                   }
@@ -591,6 +668,26 @@ export default function DataTable({
                                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
                                         {visibleColumns.map(col => {
                                           const val = (r.data || {})[col] ?? ''
+                                          if (isMonographV2(val)) return null
+                                          const parts = valueParts(val)
+                                          if (parts) {
+                                            const isContra = CONTRA_FIELDS.some(f => f.key in val)
+                                            return (
+                                              <div key={col} className="sm:col-span-2 mt-1.5">
+                                                <span className={`font-medium ${isContra ? 'text-red-700 dark:text-red-400' : 'text-primary'}`}>{col}:</span>
+                                                {parts.length ? (
+                                                  <ul className="mt-1 space-y-1 pl-4 list-disc marker:text-muted-foreground">
+                                                    {parts.map(p => (
+                                                      <li key={p.label}>
+                                                        <span className="font-medium text-muted-foreground">{p.label}: </span>
+                                                        <span className="text-foreground"><HighlightText text={p.text} query={searchQuery} /></span>
+                                                      </li>
+                                                    ))}
+                                                  </ul>
+                                                ) : <span className="text-foreground"> —</span>}
+                                              </div>
+                                            )
+                                          }
                                           return (
                                             <div key={col} className="flex gap-2">
                                               <span className="font-medium text-muted-foreground shrink-0">{col}:</span>
@@ -600,6 +697,15 @@ export default function DataTable({
                                         })}
                                       </div>
                                       <div className="mt-3 flex justify-end gap-2">
+                                        {monographOf(r) && (
+                                          <InfoCell
+                                            row={r}
+                                            indicationsCol={indicationsCol}
+                                            contraCol={contraCol}
+                                            trigger="button"
+                                            title={medTitle(r)}
+                                          />
+                                        )}
                                         <Button
                                           variant="outline"
                                           size="sm"

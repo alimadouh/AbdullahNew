@@ -3,6 +3,8 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 import { neon } from '@neondatabase/serverless'
 import dotenv from 'dotenv'
+import fs from 'node:fs'
+import path from 'node:path'
 
 dotenv.config()
 
@@ -58,6 +60,26 @@ function localDataPlugin() {
             res.end(JSON.stringify({ error: e.message }))
             return
           }
+        }
+
+        // Local preview of staged content: local-data/<section>.json (git-ignored) replaces the
+        // live section in dev only. Admin saves are blocked while staged data is shown, so the
+        // preview can never overwrite the live database by accident.
+        const stagedFile = (section) => path.resolve('local-data', `${section}.json`)
+        if (url.pathname === '/.netlify/functions/data') {
+          const section = url.searchParams.get('section') || 'clinic'
+          if (fs.existsSync(stagedFile(section))) {
+            res.setHeader('Content-Type', 'application/json')
+            res.end(fs.readFileSync(stagedFile(section)))
+            return
+          }
+        }
+        if (url.pathname === '/.netlify/functions/admin-update' && fs.existsSync(path.resolve('local-data'))
+          && fs.readdirSync(path.resolve('local-data')).some(f => f.endsWith('.json'))) {
+          res.statusCode = 409
+          res.setHeader('Content-Type', 'application/json')
+          res.end(JSON.stringify({ error: 'Local preview data is active (local-data/). Saving is disabled so the live site is not overwritten.' }))
+          return
         }
 
         if (url.pathname === '/.netlify/functions/data') {

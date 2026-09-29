@@ -20,14 +20,28 @@ const DialogOverlay = React.forwardRef(({ className, ...props }, ref) => (
 ))
 DialogOverlay.displayName = "DialogOverlay"
 
-const DialogContent = React.forwardRef(({ className, children, ...props }, ref) => (
+// The scroll lock only lets the dialog's own scroll area move, so the mouse wheel did nothing over
+// the title or the dark backdrop. Send those wheel moves to the area marked data-dialog-scroll.
+const forwardWheel = (box, e) => {
+  const area = box?.querySelector("[data-dialog-scroll]")
+  if (!area || area.contains(e.target)) return
+  const step = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? area.clientHeight : 1
+  area.scrollTop += e.deltaY * step
+}
+
+const DialogContent = React.forwardRef(({ className, children, ...props }, ref) => {
+  const boxRef = React.useRef(null)
+  const onWheel = (e) => forwardWheel(boxRef.current, e)
+  return (
   <DialogPortal>
-    <DialogOverlay />
+    <DialogOverlay onWheel={onWheel} />
     {/* Flex-column wrapper sized to the visible viewport (so it stays above the iOS keyboard);
         centers when content fits, scrolls when it doesn't */}
     <div
       className="fixed inset-x-0 top-0 z-50 flex flex-col items-center overflow-y-auto p-4 sm:p-6"
       style={{ height: "var(--app-vh, 100dvh)" }}
+      ref={boxRef}
+      onWheel={onWheel}
     >
       <DialogPrimitive.Content
         ref={ref}
@@ -45,7 +59,8 @@ const DialogContent = React.forwardRef(({ className, children, ...props }, ref) 
       </DialogPrimitive.Content>
     </div>
   </DialogPortal>
-))
+  )
+})
 DialogContent.displayName = "DialogContent"
 
 const DialogHeader = ({ className, ...props }) => (
