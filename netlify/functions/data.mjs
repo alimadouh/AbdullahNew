@@ -34,21 +34,13 @@ export const handler = async (event) => {
 
     const body = JSON.stringify({ columns: finalCols, rows })
     // Netlify caps a function response at 6 MB. With the full medication monographs the clinic
-    // table is ~8 MB of JSON, so send it gzipped (~2 MB); the browser unzips it on its own.
-    const headers = event.headers || {}
-    const acceptsGzip = /gzip/i.test(headers['accept-encoding'] || headers['Accept-Encoding'] || '')
-    if (acceptsGzip) {
-      return {
-        statusCode: 200,
-        headers: { 'Content-Type': 'application/json', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding' },
-        body: gzipSync(body).toString('base64'),
-        isBase64Encoded: true,
-      }
-    }
+    // table is ~8 MB of JSON, so it is always sent gzipped (~2 MB). Netlify's edge only passes
+    // "br" in Accept-Encoding to the function, so don't check that header; every browser takes gzip.
     return {
       statusCode: 200,
-      headers: { 'Content-Type': 'application/json' },
-      body,
+      headers: { 'Content-Type': 'application/json', 'Content-Encoding': 'gzip' },
+      body: gzipSync(body).toString('base64'),
+      isBase64Encoded: true,
     }
   } catch (err) {
     return {
