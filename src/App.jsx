@@ -206,6 +206,10 @@ export default function App() {
       if (s === 'clinic' && !cols.includes('__kuwait__')) {
         cols.push('__kuwait__')
       }
+      // Hidden out-of-stock flag column (same pattern as __kuwait__)
+      if (s === 'clinic' && !cols.includes('__oos__')) {
+        cols.push('__oos__')
+      }
       setColumns(cols)
       setRows(data.rows || [])
     } catch (e) {

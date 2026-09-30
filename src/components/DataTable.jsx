@@ -7,9 +7,19 @@ import { Button } from './ui/button.jsx'
 import { Input } from './ui/input.jsx'
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from './ui/table.jsx'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
-import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText, Flag, PlusCircle, ChevronDown } from 'lucide-react'
+import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText, Flag, PlusCircle, ChevronDown, PackageX } from 'lucide-react'
 import MedImageButton, { medImageFor } from './MedImage.jsx'
 import { MedicationDetails, MonographEditor, IND_FIELDS_V2, CONTRA_FIELDS_V2, isMonographV2, monographToText } from './MedicationDetails.jsx'
+
+// Red "Out of stock" pill shown next to the trading name when a row's __oos__ flag is set
+function OutOfStockBadge({ className = '' }) {
+  return (
+    <span className={`inline-flex items-center gap-1 rounded-full bg-red-100 text-red-700 dark:bg-red-950/60 dark:text-red-300 px-2 py-0.5 text-[11px] font-semibold whitespace-nowrap align-middle ${className}`} title="Out of stock">
+      <PackageX className="h-3 w-3" />
+      Out of stock
+    </span>
+  )
+}
 
 function KuwaitFlag({ className = 'h-5' }) {
   return <img src="/kw.png" alt="Kuwait" className={className} />
@@ -272,9 +282,11 @@ export default function DataTable({
   // Hide category column when a specific category is already selected
   const hideCategoryCol = categoryFilter && categoryFilter !== '__ALL__' && categoryCol
   const hasKuwaitCol = columns.includes('__kuwait__')
+  const hasOosCol = columns.includes('__oos__')
+  const isHiddenCol = (c) => c === '__kuwait__' || c === '__oos__'
 
   const displayColumns = useMemo(() => {
-    let cols = columns.filter(c => c !== '__kuwait__')
+    let cols = columns.filter(c => !isHiddenCol(c))
     // Hide the label column when we have a PDF column — the button shows the label
     if (pdfCol && pdfLabelCol) {
       cols = cols.filter(c => c !== pdfLabelCol)
@@ -309,7 +321,7 @@ export default function DataTable({
   }
   const [copiedId, setCopiedId] = useState(null)
 
-  const visibleColumns = columns.filter(c => c !== '__kuwait__')
+  const visibleColumns = columns.filter(c => !isHiddenCol(c))
 
   const monographOf = (row) => {
     const d = row.data || {}
@@ -441,6 +453,7 @@ export default function DataTable({
             const dose = doseCol ? d[doseCol] : ''
             const route = routeCol ? d[routeCol] : ''
             const isKw = hasKuwaitCol && d.__kuwait__
+            const isOos = hasOosCol && d.__oos__
 
             return (
               <div
@@ -455,6 +468,7 @@ export default function DataTable({
                       <span className="font-semibold text-sm text-foreground leading-tight"><HighlightText text={generic || '—'} query={searchQuery} /></span>
                     </div>
                     {trading && <p className="text-xs text-primary font-medium mt-0.5"><HighlightText text={trading} query={searchQuery} /></p>}
+                    {isOos && <OutOfStockBadge className="mt-1" />}
                   </div>
                   {(hasMergedCol || medImageFor(r)) && (
                     <div className="shrink-0 flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
@@ -575,6 +589,15 @@ export default function DataTable({
                                     ) : (
                                       ((r.data || {}).__kuwait__) ? <KuwaitFlag /> : null
                                     )}
+                                    {adminMode && hasOosCol && (
+                                      <button
+                                        className={`cursor-pointer transition-opacity ml-1 ${((r.data || {}).__oos__) ? 'opacity-100' : 'opacity-40 hover:opacity-100'}`}
+                                        title={((r.data || {}).__oos__) ? 'Mark as in stock' : 'Mark as out of stock'}
+                                        onClick={() => onCellChange?.(r.id, '__oos__', ((r.data || {}).__oos__) ? '' : '1')}
+                                      >
+                                        <PackageX className={`h-4 w-4 ${((r.data || {}).__oos__) ? 'text-red-600' : 'text-muted-foreground'}`} />
+                                      </button>
+                                    )}
                                   </TableCell>
                                 )}
                                 {displayColumns.map((col) => {
@@ -641,7 +664,10 @@ export default function DataTable({
                                           <HighlightText text={String(value)} query={q} />
                                         </span>
                                       ) : (
-                                        <span className="line-clamp-4"><HighlightText text={String(value)} query={q} /></span>
+                                        <>
+                                          <span className="line-clamp-4"><HighlightText text={String(value)} query={q} /></span>
+                                          {col === tradingCol && hasOosCol && (r.data || {}).__oos__ && <OutOfStockBadge className="mt-1" />}
+                                        </>
                                       )}
                                     </TableCell>
                                   )
