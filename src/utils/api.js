@@ -1,7 +1,28 @@
-export async function apiGetData(section = 'clinic') {
+async function fetchData(section) {
   const res = await fetch(`/.netlify/functions/data?section=${encodeURIComponent(section)}`)
   if (!res.ok) throw new Error(`Failed to load data (${res.status})`)
   return res.json()
+}
+
+// The home page loads the sections in the background for its search; the next apiGetData call
+// for that section takes the loaded copy once, and later calls fetch fresh data again.
+const prefetched = new Map()
+export function prefetchData(section) {
+  const have = prefetched.get(section)
+  if (have && Date.now() - have.t < 5 * 60 * 1000) return have.p
+  const p = fetchData(section)
+  p.catch(() => prefetched.delete(section))
+  prefetched.set(section, { p, t: Date.now() })
+  return p
+}
+
+export async function apiGetData(section = 'clinic') {
+  const early = prefetched.get(section)
+  prefetched.delete(section)
+  if (early && Date.now() - early.t < 5 * 60 * 1000) {
+    try { return await early.p } catch { /* fall through to a fresh load */ }
+  }
+  return fetchData(section)
 }
 
 export async function apiAdminAuth(password) {

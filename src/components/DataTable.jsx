@@ -9,6 +9,7 @@ import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
 import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText, Flag, PlusCircle, ChevronDown, PackageX } from 'lucide-react'
 import MedImageButton, { medImageFor } from './MedImage.jsx'
+import CalcButton, { calcsFor } from './CalcButton.jsx'
 import { MedicationDetails, MonographEditor, IND_FIELDS_V2, CONTRA_FIELDS_V2, isMonographV2, monographToText } from './MedicationDetails.jsx'
 
 // Red "Out of stock" pill shown next to the trading name when a row's __oos__ flag is set
@@ -472,6 +473,7 @@ export default function DataTable({
                   </div>
                   {(hasMergedCol || medImageFor(r)) && (
                     <div className="shrink-0 flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
+                      <CalcButton row={r} indicationsCol={indicationsCol} title={medTitle(r)} />
                       <MedImageButton row={r} title={medTitle(r)} />
                       {hasMergedCol && (
                         <InfoCell
@@ -522,7 +524,7 @@ export default function DataTable({
                     <TableHead className="w-8 px-1"></TableHead>
                   )}
                   {displayColumns.map(col => (
-                    <TableHead key={col} className={`whitespace-nowrap ${col === '__INFO__' ? 'w-[130px] text-center' : ''}`}>
+                    <TableHead key={col} className={`whitespace-nowrap ${col === '__INFO__' ? 'w-[170px] text-center' : ''}`}>
                       {col === '__INFO__' ? 'Info' : col === pdfCol ? '' : col}
                     </TableHead>
                   ))}
@@ -605,6 +607,7 @@ export default function DataTable({
                                     return (
                                       <TableCell key={`${r.id}:__INFO__`} className="leading-snug" onClick={(e) => e.stopPropagation()}>
                                         <div className="flex items-center justify-center gap-2">
+                                          {!adminMode && <CalcButton row={r} indicationsCol={indicationsCol} title={medTitle(r)} />}
                                           {!adminMode && <MedImageButton row={r} title={medTitle(r)} />}
                                           <InfoCell
                                             row={r}

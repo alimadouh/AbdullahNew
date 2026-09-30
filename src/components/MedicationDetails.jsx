@@ -71,11 +71,18 @@ function Md({ children }) {
 
 // ---- Dose calculator --------------------------------------------------------
 
-function parseCalc(text) {
+// Two calculator types live in the calc JSON array:
+//  - weight (default): { label, basis: perDose|perDay, mgPerKg, dosesPerDay, concentrationMgPerMl, maxSingleMg, maxDailyMg, minAge, weightMeasure, source }
+//  - age:              { type: 'age', label, bands: [{ minMonths, maxMonths|null, dose, maxPerDay? }], note?, source }
+export function parseCalc(text) {
   if (!text || !String(text).trim()) return []
   try {
     const arr = JSON.parse(text)
-    return Array.isArray(arr) ? arr.filter(c => c && c.mgPerKg > 0 && (c.basis === 'perDose' || c.basis === 'perDay')) : []
+    if (!Array.isArray(arr)) return []
+    return arr.filter(c => c && (
+      (c.type === 'age' && Array.isArray(c.bands) && c.bands.length > 0) ||
+      ((!c.type || c.type === 'weight') && c.mgPerKg > 0 && (c.basis === 'perDose' || c.basis === 'perDay'))
+    ))
   } catch {
     return []
   }
@@ -83,10 +90,100 @@ function parseCalc(text) {
 
 const fmt = (n, d = 1) => Number.isFinite(n) ? Number(n.toFixed(d)).toLocaleString('en-US') : '—'
 
-function DoseCalculator({ calcs }) {
+const ageText = (m) => {
+  if (m == null) return ''
+  if (m < 24) return `${m} month${m === 1 ? '' : 's'}`
+  return m % 12 === 0 ? `${m / 12} years` : `${fmt(m / 12, 1)} years`
+}
+const bandText = (b) => b.maxMonths == null ? `${ageText(b.minMonths)} and over` : `${ageText(b.minMonths)} to under ${ageText(b.maxMonths)}`
+
+function AgeCalc({ c }) {
+  const [years, setYears] = useState('')
+  const [months, setMonths] = useState('')
+  const y = years === '' ? 0 : parseInt(years, 10)
+  const mo = months === '' ? 0 : parseInt(months, 10)
+  const entered = years !== '' || months !== ''
+  const valid = entered && Number.isFinite(y) && Number.isFinite(mo) && y >= 0 && y <= 120 && mo >= 0 && mo <= 11
+  const total = valid ? y * 12 + mo : null
+  const band = valid ? c.bands.find(b => total >= b.minMonths && (b.maxMonths == null || total < b.maxMonths)) : null
+  return (
+    <>
+      <div className="grid grid-cols-2 gap-2">
+        <label className="text-xs text-muted-foreground">Age: years
+          <input type="number" inputMode="numeric" min="0" max="120" value={years} onChange={e => setYears(e.target.value)} placeholder="e.g. 4"
+            className="mt-1 w-full rounded-md border bg-background px-2.5 py-1.5 text-base sm:text-sm" />
+        </label>
+        <label className="text-xs text-muted-foreground">+ months
+          <input type="number" inputMode="numeric" min="0" max="11" value={months} onChange={e => setMonths(e.target.value)} placeholder="0"
+            className="mt-1 w-full rounded-md border bg-background px-2.5 py-1.5 text-base sm:text-sm" />
+        </label>
+      </div>
+      {entered && !valid && <p className="mt-1.5 text-xs text-red-600 dark:text-red-400">Enter years 0–120 and months 0–11.</p>}
+      {valid && (band ? (
+        <div className="mt-2 rounded-md bg-primary/10 px-3 py-2 text-sm">
+          <p className="text-xs text-muted-foreground">Age band: {bandText(band)}</p>
+          <p><strong>{band.dose}</strong></p>
+          {band.maxPerDay && <p className="text-xs text-muted-foreground">Max: {band.maxPerDay}</p>}
+        </div>
+      ) : (
+        <p className="mt-2 rounded-md bg-amber-50 dark:bg-amber-950/30 px-3 py-2 text-xs text-amber-800 dark:text-amber-300">
+          No dose for this age in the source. See the dosing text; do not guess.
+        </p>
+      ))}
+      <details className="mt-2 text-xs text-muted-foreground">
+        <summary className="cursor-pointer">All age bands</summary>
+        <ul className="mt-1 space-y-0.5">
+          {c.bands.map((b, i) => <li key={i}><span className="font-medium">{bandText(b)}:</span> {b.dose}{b.maxPerDay ? ` (max ${b.maxPerDay})` : ''}</li>)}
+        </ul>
+      </details>
+      {c.note && <p className="mt-1.5 text-xs text-muted-foreground">{c.note}</p>}
+    </>
+  )
+}
+
+export function DoseCalculator({ calcs, bare = false }) {
   const [idx, setIdx] = useState(0)
-  const [weight, setWeight] = useState('')
   const c = calcs[Math.min(idx, calcs.length - 1)]
+  if (!c) return null
+  return (
+    <div className={bare ? '' : 'mt-3 rounded-lg border border-primary/25 bg-background/60 p-3'}>
+      {!bare && (
+        <div className="flex items-center gap-1.5 mb-2 text-xs font-bold uppercase tracking-wide text-primary">
+          <Calculator className="h-3.5 w-3.5" /> Dose calculator
+        </div>
+      )}
+      {calcs.length > 1 && (
+        // Tappable cards instead of a <select>: long labels wrap instead of running off a phone screen
+        <div role="radiogroup" aria-label="Choose a calculator" className="mb-3 space-y-1.5">
+          {calcs.map((x, i) => (
+            <button
+              key={i}
+              type="button"
+              role="radio"
+              aria-checked={i === idx}
+              onClick={() => setIdx(i)}
+              className={`w-full text-left rounded-md border px-2.5 py-2 text-[13px] leading-snug transition-colors cursor-pointer ${i === idx ? 'border-primary bg-primary/10 text-foreground' : 'border-border bg-background hover:bg-primary/5 text-muted-foreground'}`}
+            >
+              <span className={`mr-1.5 inline-block rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide ${x.type === 'age' ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/50 dark:text-amber-300' : 'bg-primary/15 text-primary'}`}>
+                {x.type === 'age' ? 'By age' : 'By weight'}
+              </span>
+              <span className={i === idx ? '' : 'line-clamp-2'}>{x.label}</span>
+            </button>
+          ))}
+        </div>
+      )}
+      {calcs.length === 1 && <p className="text-[13px] font-medium mb-2">{c.label}</p>}
+      {c.type === 'age' ? <AgeCalc key={idx} c={c} /> : <WeightCalc key={idx} c={c} />}
+      <p className="mt-2 text-[11px] text-muted-foreground">
+        Check the result against the dosing text and the product strength in hand.
+        {c.source && <> Source: <a href={c.source} target="_blank" rel="noopener noreferrer" className="underline">link</a></>}
+      </p>
+    </div>
+  )
+}
+
+function WeightCalc({ c }) {
+  const [weight, setWeight] = useState('')
   const w = parseFloat(weight)
   const validWeight = Number.isFinite(w) && w > 0 && w <= 250
 
@@ -106,22 +203,8 @@ function DoseCalculator({ calcs }) {
     return { perDay, doses, raw, mgDose, ml, daily: doses ? mgDose * doses : null, capped }
   }, [c, w, validWeight])
 
-  if (!c) return null
   return (
-    <div className="mt-3 rounded-lg border border-primary/25 bg-background/60 p-3">
-      <div className="flex items-center gap-1.5 mb-2 text-xs font-bold uppercase tracking-wide text-primary">
-        <Calculator className="h-3.5 w-3.5" /> Dose calculator
-      </div>
-      {calcs.length > 1 && (
-        <select
-          className="w-full mb-2 rounded-md border bg-background px-2 py-1.5 text-sm"
-          value={idx}
-          onChange={e => setIdx(Number(e.target.value))}
-        >
-          {calcs.map((x, i) => <option key={i} value={i}>{x.label}</option>)}
-        </select>
-      )}
-      {calcs.length === 1 && <p className="text-[13px] font-medium mb-2">{c.label}</p>}
+    <>
       <label className="text-xs text-muted-foreground">
         Weight (kg){c.weightMeasure ? ` — use ${c.weightMeasure}` : ''}
       </label>
@@ -156,16 +239,12 @@ function DoseCalculator({ calcs }) {
       </div>
       {result && (
         <div className="mt-2 rounded-md bg-primary/10 px-3 py-2 text-sm">
-          <p><span className="text-muted-foreground">Dose:</span> <strong>{fmt(result.mgDose)} mg</strong>{result.ml != null && <> = <strong>{fmt(result.ml, 2)} mL</strong></>}{result.doses ? <> , {result.doses} times daily</> : null}</p>
+          <p><span className="text-muted-foreground">Dose:</span> <strong>{fmt(result.mgDose)} mg</strong>{result.ml != null && <> = <strong>{fmt(result.ml, 2)} mL</strong></>}{result.doses ? <>, {result.doses} times daily</> : null}</p>
           {result.daily != null && <p className="text-xs text-muted-foreground">Daily total: {fmt(result.daily)} mg/day</p>}
           {result.capped.map(t => <p key={t} className="text-xs text-amber-700 dark:text-amber-400">Calculated {fmt(result.raw)} mg — {t}.</p>)}
         </div>
       )}
-      <p className="mt-2 text-[11px] text-muted-foreground">
-        Check the result against the dosing text above and the product strength in hand.
-        {c.source && <> Source: <a href={c.source} target="_blank" rel="noopener noreferrer" className="underline">link</a></>}
-      </p>
-    </div>
+    </>
   )
 }
 

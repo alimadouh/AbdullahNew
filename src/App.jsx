@@ -10,6 +10,8 @@ import PHQ9PatientForm from './components/PHQ9PatientForm.jsx'
 import GAD7Dialog from './components/GAD7Dialog.jsx'
 import FIB4Dialog from './components/FIB4Dialog.jsx'
 import CURB65Dialog from './components/CURB65Dialog.jsx'
+import { TopBar, BottomBar } from './components/AppNav.jsx'
+import HomePage from './components/HomePage.jsx'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
 import { findColumnName, parseAgeMonths } from './utils/columns.js'
 import { Button } from './components/ui/button.jsx'
@@ -87,12 +89,15 @@ const UNIFIED_THEME = {
 }
 
 const SECTION_ITEMS = [
-  { key: 'clinic', label: 'Clinic Medications', Icon: Pill, desc: 'Adult clinic drug formulary' },
-  { key: 'tools', label: 'Tools', Icon: Wrench, desc: 'Growth, milestones & screening' },
-  { key: 'vaccination', label: 'Vaccination', Icon: Syringe, desc: 'Immunization schedules & doses' },
-  { key: 'er-medication', label: 'ER Medication', Icon: Cross, desc: 'Emergency drugs & dosing' },
-  { key: 'library', label: 'Library', Icon: LibraryBig, desc: 'Guidelines, pediatrics & references' },
+  { key: 'clinic', label: 'Clinic Medications', short: 'Clinic', Icon: Pill, desc: 'Adult clinic drug formulary' },
+  { key: 'tools', label: 'Tools', short: 'Tools', Icon: Wrench, desc: 'Growth, milestones & screening' },
+  { key: 'vaccination', label: 'Vaccination', short: 'Vaccines', Icon: Syringe, desc: 'Immunization schedules & doses' },
+  { key: 'er-medication', label: 'ER Medication', short: 'ER', Icon: Cross, desc: 'Emergency drugs & dosing' },
+  { key: 'library', label: 'Library', short: 'Library', Icon: LibraryBig, desc: 'Guidelines, pediatrics & references' },
 ]
+
+// Accent of each section on the dark top bar and bottom bar
+const NAV_COLORS = { ...Object.fromEntries(Object.entries(SECTION_THEMES).map(([k, t]) => [k, t.darkText || t.text])), home: '#22d3ee' }
 
 export default function App() {
   const [columns, setColumns] = useState([])
@@ -425,10 +430,35 @@ export default function App() {
     )
   }
 
+  // Tools page groups (also counted on the home page)
+  const toolGroups = [
+    { section: 'Pediatrics', accent: theme.text, tools: [
+      { label: 'Growth Calculator', desc: 'WHO percentiles & Z-scores by age', Icon: Calculator, onClick: () => setGrowthCalcOpen(true) },
+      { label: 'Developmental Milestones', desc: 'Milestone checklist & red flags', Icon: Baby, onClick: () => setMilestonesOpen(true) },
+    ] },
+    { section: 'Psychiatrics', accent: theme.text, tools: [
+      { label: 'PHQ-9 Depression Screening', desc: 'Patient Health Questionnaire', Icon: ClipboardCheck, languages: [
+        { label: 'العربية', onClick: () => setPhq9Open(true) },
+        { label: 'English', onClick: () => setPhq9EnOpen(true) },
+      ] },
+      { label: 'GAD-7 Anxiety Screening', desc: 'Generalized Anxiety Disorder', Icon: ClipboardCheck, languages: [
+        { label: 'العربية', onClick: () => setGad7Open(true) },
+        { label: 'English', onClick: () => setGad7EnOpen(true) },
+      ] },
+    ] },
+    { section: 'Hepatology', accent: theme.text, tools: [
+      { label: 'FIB-4 Score', desc: 'Liver fibrosis estimate (no biopsy)', Icon: FlaskConical, onClick: () => setFib4Open(true) },
+    ] },
+    { section: 'Respiratory', accent: theme.text, tools: [
+      { label: 'CURB-65 Score', desc: 'Pneumonia severity & disposition', Icon: Stethoscope, onClick: () => setCurb65Open(true) },
+    ] },
+  ]
+  const toolCount = toolGroups.reduce((n, g) => n + g.tools.length, 0)
+
   return (
     <TooltipProvider>
       <div
-        className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6"
+        className="min-h-screen pb-[calc(4rem+env(safe-area-inset-bottom))] lg:pb-0"
         style={{
           '--color-primary': theme.primary,
           '--color-primary-foreground': theme.fg,
@@ -439,52 +469,28 @@ export default function App() {
           ...(dark ? {} : { '--color-border': theme.border, '--color-input': theme.border }),
         }}
       >
-        {/* Header */}
-        <div className="no-print flex items-center justify-between mb-4 sm:mb-6">
-          <button
-            type="button"
-            onClick={() => switchSection('home')}
-            className="hdr-in-left group flex items-center gap-3 cursor-pointer text-left"
-            title="Go to home"
-            aria-label="Medical Guidance — go to home"
-          >
-            <img
-              src="/logo.svg"
-              alt="Medical Guidance"
-              className="h-16 w-auto transition-transform duration-300 group-hover:scale-105 group-hover:-rotate-3"
-            />
-            <h1 className="title-gradient font-display text-2xl font-extrabold tracking-tight transition-transform duration-300 group-hover:scale-[1.03] sm:text-3xl">
-              Medical Guidance
-            </h1>
-          </button>
+        <TopBar
+          items={SECTION_ITEMS}
+          colors={NAV_COLORS}
+          active={activeSection}
+          onGo={switchSection}
+          dark={dark}
+          onToggleDark={() => setDark(d => !d)}
+          onSettings={() => setSettingsOpen(true)}
+          adminMode={adminMode}
+          badge={adminMode ? feedbackList.length : 0}
+        />
+        <BottomBar items={SECTION_ITEMS} colors={NAV_COLORS} active={activeSection} onGo={switchSection} />
 
-          <div className="hdr-in-right flex items-center gap-2">
-            {adminMode && (
-              <Badge variant="success" className="gap-1.5">
-                <ShieldCheck className="h-3 w-3" />
-                Admin
-              </Badge>
-            )}
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setDark(d => !d)}
-              aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
-              title={dark ? 'Light mode' : 'Dark mode'}
-            >
-              {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </Button>
-            <Button variant="outline" size="icon" className="relative" onClick={() => setSettingsOpen(true)} aria-label="Settings" title="Settings">
-              <Settings className="h-4 w-4" />
-              {adminMode && feedbackList.length > 0 && (
-                <span className="absolute -top-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-destructive text-[9px] font-bold text-white px-0.5">
-                  {feedbackList.length > 99 ? '99+' : feedbackList.length}
-                </span>
-              )}
-            </Button>
-          </div>
-        </div>
+        {activeSection === 'home' && (
+          <HomePage
+            toolCount={toolCount}
+            colors={Object.fromEntries(['clinic', 'er-medication', 'vaccination'].map(k => [k, dark ? SECTION_THEMES[k].darkText : SECTION_THEMES[k].text]))}
+            onOpen={(section, query) => { setCategoryFilter(''); setSearchQuery(query); setActiveSection(section); window.scrollTo(0, 0) }}
+          />
+        )}
 
+        <div className={`mx-auto max-w-7xl px-4 sm:px-6 ${activeSection === 'home' ? '' : 'py-4 sm:py-6'}`}>
         {/* Settings popup */}
         <Dialog open={settingsOpen} onOpenChange={setSettingsOpen}>
           <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-sm">
@@ -532,121 +538,11 @@ export default function App() {
           </DialogContent>
         </Dialog>
 
-        {/* Home — landing page with hero + bento cards */}
-        {activeSection === 'home' && (
-          <div className="no-print relative">
-            {/* Aurora atmosphere */}
-            <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-              <div className="home-aurora home-aurora-1" />
-              <div className="home-aurora home-aurora-2" />
-              <div className="home-aurora home-aurora-3" />
-            </div>
-
-            {/* Hero — heartbeat trace with the org name revealed in sync with the pulse */}
-            <div className="home-hero-in relative mx-auto mb-4 mt-0 w-full max-w-xl sm:mb-12 sm:mt-2">
-              {/* Words sit just above the line and appear one-by-one as the pulse sweeps across */}
-              {/* "Ministry of Health" above the line, "Kuwait" below it — revealed word-by-word with the pulse */}
-              <div className="ecg-words pointer-events-none absolute inset-x-0 top-0 z-10 flex h-1/2 items-end justify-center gap-1.5 pb-2 text-[13px] font-medium tracking-wide text-slate-500 dark:text-slate-300 sm:text-sm">
-                <span className="hero-word hero-w1">Ministry</span>
-                <span className="hero-word hero-w2">of</span>
-                <span className="hero-word hero-w3">Health</span>
-              </div>
-              <div className="ecg-words pointer-events-none absolute inset-x-0 bottom-0 z-10 flex h-1/2 items-start justify-center pt-2 text-[13px] font-medium tracking-wide text-slate-500 dark:text-slate-300 sm:text-sm">
-                <span className="hero-word hero-w4">Kuwait</span>
-              </div>
-              <svg
-                viewBox="0 0 600 120"
-                className="h-20 w-full overflow-visible sm:h-28"
-                fill="none"
-                preserveAspectRatio="xMidYMid meet"
-                aria-hidden="true"
-              >
-                <defs>
-                  <linearGradient id="ecgGrad" x1="0" y1="0" x2="1" y2="0">
-                    <stop offset="0%" stopColor="#0ea5e9" />
-                    <stop offset="50%" stopColor="#06b6d4" />
-                    <stop offset="100%" stopColor="#0d9488" />
-                  </linearGradient>
-                </defs>
-                <path
-                  className="ecg-base"
-                  pathLength="1000"
-                  d="M0,60 H100 l12,-6 l12,6 H150 l6,6 l8,-46 l8,82 l6,-42 H230 l14,-10 l14,10 H370 l12,-6 l12,6 H410 l6,6 l8,-46 l8,82 l6,-42 H490 l14,-10 l14,10 H600"
-                />
-                <path
-                  className="ecg-pulse"
-                  pathLength="1000"
-                  stroke="url(#ecgGrad)"
-                  d="M0,60 H100 l12,-6 l12,6 H150 l6,6 l8,-46 l8,82 l6,-42 H230 l14,-10 l14,10 H370 l12,-6 l12,6 H410 l6,6 l8,-46 l8,82 l6,-42 H490 l14,-10 l14,10 H600"
-                />
-                <circle className="ecg-dot" r="4.5" fill="#06b6d4" />
-              </svg>
-            </div>
-
-            {/* Bento cards */}
-            <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-3 sm:gap-5">
-              {SECTION_ITEMS.map(({ key, label, desc, Icon }, i) => {
-                const t = SECTION_THEMES[key]
-                return (
-                  <button
-                    key={key}
-                    onClick={() => switchSection(key)}
-                    className="home-card group relative flex flex-col items-start overflow-hidden rounded-3xl border border-white/60 p-4 text-left shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] cursor-pointer dark:border-white/15 dark:shadow-[0_14px_34px_-12px_rgba(0,0,0,0.65)] sm:p-6 sm:backdrop-blur-xl"
-                    style={{
-                      '--card': t.text,
-                      animationDelay: `${i * 80}ms`,
-                      background: dark
-                        ? `linear-gradient(155deg, oklch(0.235 0.017 256) 38%, ${t.text}33)`
-                        : `linear-gradient(160deg, rgba(255,255,255,0.92) 50%, ${t.bg})`,
-                    }}
-                  >
-                    {/* Hover glow */}
-                    <div
-                      className="home-card-glow pointer-events-none absolute -right-8 -top-10 h-40 w-40 rounded-full"
-                      style={{ background: `radial-gradient(circle, ${t.text} 0%, transparent 70%)`, opacity: 0 }}
-                    />
-                    {/* Icon tile */}
-                    <div
-                      className="home-card-icon relative flex h-10 w-10 items-center justify-center rounded-2xl sm:h-14 sm:w-14"
-                      style={{ background: `linear-gradient(135deg, ${t.text}, ${t.text}cc)`, boxShadow: `0 10px 22px -6px ${t.text}80` }}
-                    >
-                      <Icon className="h-5 w-5 text-white sm:h-7 sm:w-7" />
-                    </div>
-                    {/* Text */}
-                    <h3 className="font-display mt-3 text-base font-bold leading-tight text-foreground sm:mt-4 sm:text-lg">{label}</h3>
-                    <p className="mt-1 text-[11px] leading-snug text-muted-foreground sm:text-xs">{desc}</p>
-                    {/* Arrow (desktop only) */}
-                    <span className="mt-3 hidden items-center gap-1 text-xs font-semibold sm:inline-flex" style={{ color: t.text }}>
-                      Open
-                      <ChevronRight className="home-card-arrow h-4 w-4" />
-                    </span>
-                  </button>
-                )
-              })}
-            </div>
-
-            {/* Footer credit */}
-            <p className="mt-5 text-center text-xs text-muted-foreground sm:mt-10">
-              Done by Dr. Abdullah Almusallam
-            </p>
-          </div>
-        )}
-
         {/* Controls */}
         {activeSection !== 'home' && (
         <div className="no-print flex flex-col gap-3 mb-5">
-          {/* Section breadcrumb header */}
+          {/* Section title */}
           <div className="flex items-center gap-3">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => switchSection('home')}
-              className="gap-1.5 shrink-0"
-            >
-              <Home className="h-4 w-4" />
-              Home
-            </Button>
-            <ChevronRight className="h-4 w-4 text-muted-foreground shrink-0" />
             {(() => {
               const current = SECTION_ITEMS.find(s => s.key === activeSection)
               const CurrentIcon = current?.Icon || Pill
@@ -654,7 +550,7 @@ export default function App() {
                 <div className="flex items-center gap-2 min-w-0">
                   <span
                     className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl"
-                    style={{ background: `linear-gradient(135deg, ${theme.text}, ${theme.text}cc)`, boxShadow: `0 6px 14px -4px ${theme.text}66` }}
+                    style={{ background: theme.text }}
                   >
                     <CurrentIcon className="h-4 w-4 text-white" />
                   </span>
@@ -670,7 +566,7 @@ export default function App() {
           <div className="relative">
             <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
-              placeholder={`Search all ${itemNoun}s by name, dose, indication…`}
+              placeholder={`Search ${itemNoun}s by name, dose, use…`}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="h-11 rounded-xl pl-10 text-base shadow-sm sm:text-sm"
@@ -685,28 +581,7 @@ export default function App() {
         {/* Tools section — clean cards grouped by their origin section */}
         {activeSection === 'tools' && (
           <div className="mb-4 flex flex-col gap-7">
-            {[
-              { section: 'Pediatrics', accent: theme.text, tools: [
-                { label: 'Growth Calculator', desc: 'WHO percentiles & Z-scores by age', Icon: Calculator, onClick: () => setGrowthCalcOpen(true) },
-                { label: 'Developmental Milestones', desc: 'Milestone checklist & red flags', Icon: Baby, onClick: () => setMilestonesOpen(true) },
-              ] },
-              { section: 'Psychiatrics', accent: theme.text, tools: [
-                { label: 'PHQ-9 Depression Screening', desc: 'Patient Health Questionnaire', Icon: ClipboardCheck, languages: [
-                  { label: 'العربية', onClick: () => setPhq9Open(true) },
-                  { label: 'English', onClick: () => setPhq9EnOpen(true) },
-                ] },
-                { label: 'GAD-7 Anxiety Screening', desc: 'Generalized Anxiety Disorder', Icon: ClipboardCheck, languages: [
-                  { label: 'العربية', onClick: () => setGad7Open(true) },
-                  { label: 'English', onClick: () => setGad7EnOpen(true) },
-                ] },
-              ] },
-              { section: 'Hepatology', accent: theme.text, tools: [
-                { label: 'FIB-4 Score', desc: 'Liver fibrosis estimate (no biopsy)', Icon: FlaskConical, onClick: () => setFib4Open(true) },
-              ] },
-              { section: 'Respiratory', accent: theme.text, tools: [
-                { label: 'CURB-65 Score', desc: 'Pneumonia severity & disposition', Icon: Stethoscope, onClick: () => setCurb65Open(true) },
-              ] },
-            ].map(({ section, accent, tools }) => (
+            {toolGroups.map(({ section, accent, tools }) => (
               <div key={section}>
                 {/* Group label + divider line */}
                 <div className="mb-3 flex items-center gap-2.5">
@@ -826,21 +701,21 @@ export default function App() {
               </div>
             ) : (
               /* Category picker grid */
-              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
                 {categoryList.map((cat) => {
                   const SecIcon = SECTION_ITEMS.find(s => s.key === activeSection)?.Icon || Pill
                   return (
                     <button
                       key={cat.name}
                       onClick={() => setCategoryFilter(cat.name)}
-                      className="lift-card group flex items-center gap-3 rounded-2xl border bg-card p-4 text-left shadow-sm cursor-pointer"
-                      style={{ '--lift': theme.text }}
+                      className="tile group flex items-center gap-3 rounded-2xl border bg-card p-3.5 text-left cursor-pointer"
+                      style={{ '--tile': theme.text }}
                     >
                       <span
-                        className="lift-icon flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
-                        style={{ background: `linear-gradient(135deg, ${theme.text}, ${theme.text}cc)`, boxShadow: `0 6px 14px -5px ${theme.text}80` }}
+                        className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl"
+                        style={{ background: theme.text + '1f', color: theme.text }}
                       >
-                        <SecIcon className="h-5 w-5 text-white" />
+                        <SecIcon className="h-5 w-5" />
                       </span>
                       <div className="min-w-0 flex-1">
                         <div className="font-display text-sm font-semibold leading-tight">{cat.name}</div>
@@ -1157,12 +1032,13 @@ export default function App() {
         {showBackToTop && (
           <button
             onClick={scrollToTop}
-            className="no-print animate-fade-in-up fixed bottom-6 right-6 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-opacity cursor-pointer"
+            className="no-print animate-fade-in-up fixed bottom-[calc(5rem+env(safe-area-inset-bottom))] right-4 z-50 flex h-10 w-10 lg:bottom-6 lg:right-6 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-opacity cursor-pointer"
             aria-label="Back to top"
           >
             <ArrowUp className="h-5 w-5" />
           </button>
         )}
+        </div>
       </div>
     </TooltipProvider>
   )
