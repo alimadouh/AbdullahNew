@@ -10,6 +10,26 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#0891b2" />
     <script>
+      // One-time reset for people who opened the site before this version: clears saved settings,
+      // old admin logins, cookies and any cached files once, then remembers it was done.
+      // Change RESET to a new value to reset everyone again.
+      (function () {
+        var RESET = '2026-10-01';
+        try {
+          if (localStorage.getItem('site_reset') === RESET) return;
+          localStorage.clear();
+          sessionStorage.clear();
+          document.cookie.split(';').forEach(function (c) {
+            var name = c.split('=')[0].trim();
+            if (name) document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+          });
+          if (window.caches) caches.keys().then(function (keys) { keys.forEach(function (k) { caches.delete(k); }); });
+          if (navigator.serviceWorker) navigator.serviceWorker.getRegistrations().then(function (rs) { rs.forEach(function (r) { r.unregister(); }); });
+          localStorage.setItem('site_reset', RESET);
+        } catch (e) {}
+      })();
+    </script>
+    <script>
       // Apply theme before paint (default dark) to avoid a flash of light
       (function () {
         try {
