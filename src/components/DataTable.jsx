@@ -10,10 +10,10 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { FolderOpen, Trash2, Pencil, ShieldCheck, ShieldAlert, Info, Copy, Check, FileText, Flag, PlusCircle, ChevronDown, PackageX } from 'lucide-react'
 import MedImageButton, { medImageFor } from './MedImage.jsx'
 import CalcButton, { calcsFor } from './CalcButton.jsx'
-import { MedicationDetails, MonographEditor, IND_FIELDS_V2, CONTRA_FIELDS_V2, isMonographV2, monographToText } from './MedicationDetails.jsx'
+import { MedicationDetails, MonographEditor, IND_FIELDS_V2, CONTRA_FIELDS_V2, isMonographV2, monographToText, Md } from './MedicationDetails.jsx'
 
 // Red "Out of stock" pill shown next to the trading name when a row's __oos__ flag is set
-function OutOfStockBadge({ className = '' }) {
+export function OutOfStockBadge({ className = '' }) {
   return (
     <span className={`inline-flex items-center gap-1 rounded-full bg-red-100 text-red-700 dark:bg-red-950/60 dark:text-red-300 px-2 py-0.5 text-[11px] font-semibold whitespace-nowrap align-middle ${className}`} title="Out of stock">
       <PackageX className="h-3 w-3" />
@@ -22,7 +22,7 @@ function OutOfStockBadge({ className = '' }) {
   )
 }
 
-function KuwaitFlag({ className = 'h-5' }) {
+export function KuwaitFlag({ className = 'h-5' }) {
   return <img src="/kw.png" alt="Kuwait" className={className} />
 }
 
@@ -41,7 +41,7 @@ function HighlightText({ text, query }) {
   )
 }
 
-const IND_FIELDS = [
+export const IND_FIELDS = [
   { key: 'indication', label: 'Indication' },
   { key: 'whenToGive', label: 'When to give' },
   { key: 'doseCalc', label: 'Dose + Dose calculation' },
@@ -49,11 +49,13 @@ const IND_FIELDS = [
   { key: 'evidenceBased', label: 'Evidence Based' },
 ]
 
-const CONTRA_FIELDS = [
+export const CONTRA_FIELDS = [
   { key: 'absolute', label: 'Absolute contraindications' },
   { key: 'caution', label: 'Caution' },
   { key: 'sideEffects', label: 'Side effects' },
   { key: 'counseling', label: 'Counseling' },
+  // Vaccines: catch-up advice when this dose was missed
+  { key: 'missedDose', label: 'Missed dose — when to give' },
 ]
 
 // Parse legacy plain-text value into sub-fields object
@@ -73,6 +75,12 @@ function valueParts(val) {
     .map(({ key, label }) => ({ label, text: String(val[key] ?? '').trim() }))
     .filter(p => p.text)
 }
+
+// Markdown text without its source links and bold marks, for one-line previews
+const plainMd = (t) => String(t ?? '')
+  .replace(/\s*\(\[[^\]]*\]\([^)]*\)\)/g, '')
+  .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+  .replace(/\*\*/g, '').replace(/^\s*-\s+/gm, '').replace(/\n+/g, ' ').trim()
 
 // Plain-text version of a cell value for copy / WhatsApp.
 function valueToText(val, bold = false) {
@@ -123,14 +131,14 @@ function CollapsibleField({ label, text, color }) {
       </button>
       {open && (
         <div className="pb-2 px-1 animate-expand-in">
-          <p className="text-sm leading-relaxed text-foreground/80">{text}</p>
+          <Md>{text}</Md>
         </div>
       )}
     </div>
   )
 }
 
-function SubFieldDisplay({ fields, value, color }) {
+export function SubFieldDisplay({ fields, value, color }) {
   const obj = parseToObj(value, fields)
   const hasAny = fields.some(f => obj[f.key])
 
@@ -698,7 +706,7 @@ export default function DataTable({
                                         {visibleColumns.map(col => {
                                           const val = (r.data || {})[col] ?? ''
                                           if (isMonographV2(val)) return null
-                                          const parts = valueParts(val)
+                                          const parts = valueParts(val)?.filter(p => !(val.missedDose && (p.label === 'Counseling' || p.label.startsWith('Missed dose'))))
                                           if (parts) {
                                             const isContra = CONTRA_FIELDS.some(f => f.key in val)
                                             return (
@@ -709,7 +717,7 @@ export default function DataTable({
                                                     {parts.map(p => (
                                                       <li key={p.label}>
                                                         <span className="font-medium text-muted-foreground">{p.label}: </span>
-                                                        <span className="text-foreground"><HighlightText text={p.text} query={searchQuery} /></span>
+                                                        <span className="text-foreground"><HighlightText text={plainMd(p.text)} query={searchQuery} /></span>
                                                       </li>
                                                     ))}
                                                   </ul>

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-PCIS Medication — a full-stack medical reference app (React + Vite frontend, Netlify Functions backend, Neon Postgres database). Admins manage a dynamic medication table with flexible columns stored as JSONB. Default admin password is `5123`.
+PCIS Medication — a full-stack medical reference app (React + Vite frontend, Netlify Functions backend, Neon Postgres database). Admins manage a dynamic medication table with flexible columns stored as JSONB. The admin password is the `ADMIN_PASSWORD` Netlify setting (no default).
 
 ## Commands
 
@@ -28,8 +28,8 @@ No test framework is configured.
 
 Requires a `.env` file (not committed) with:
 - `NETLIFY_DATABASE_URL` — Neon Postgres connection string (auto-set by Netlify Neon integration)
-- `JWT_SECRET` — secret for signing JWTs (required)
-- `ADMIN_PASSWORD` — admin login password (optional, defaults to "5123")
+- `JWT_SECRET` — secret for signing JWTs (required; logins fail without it)
+- `ADMIN_PASSWORD` — admin login password (required; no default)
 
 ## Architecture
 

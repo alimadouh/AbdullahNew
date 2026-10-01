@@ -434,3 +434,15 @@ html {
   .home-glow, .home-track { animation: none; }
   .home-shelf > div { overflow-x: auto; }
 }
+
+/* ===== Admin panel: hover lift on computers, small press shrink on phones ===== */
+.adm .adm-card, .adm .adm-press { transition: transform .16s ease, box-shadow .2s ease, background-color .16s ease, border-color .16s ease; -webkit-tap-highlight-color: transparent; }
+.adm .adm-press:active { transform: scale(.96); }
+.adm .adm-bar { transform-origin: bottom; transform-box: fill-box; animation: adm-grow .5s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes adm-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+.adm .adm-gov { transition: filter .15s ease; }
+@media (hover: hover) and (pointer: fine) {
+  .adm .adm-card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(15, 23, 42, .07); }
+  .adm .adm-gov:hover { filter: brightness(1.1); }
+}
+@media (prefers-reduced-motion: reduce) { .adm .adm-bar { animation: none; } }

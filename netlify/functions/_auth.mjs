@@ -1,11 +1,22 @@
 import jwt from 'jsonwebtoken'
 
+// No built-in fallbacks: a missing setting must stop logins, not open them with a known value
+function required(name) {
+  const v = process.env[name]
+  if (!v) {
+    const e = new Error(`Server is missing the ${name} setting.`)
+    e.statusCode = 500
+    throw e
+  }
+  return v
+}
+
 export function getAdminPassword() {
-  return process.env.ADMIN_PASSWORD || '5123'
+  return required('ADMIN_PASSWORD')
 }
 
 export function getJwtSecret() {
-  return process.env.JWT_SECRET || 'CHANGE_ME_SET_JWT_SECRET'
+  return required('JWT_SECRET')
 }
 
 export function signAdminToken() {

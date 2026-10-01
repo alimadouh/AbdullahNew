@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { ImageIcon } from 'lucide-react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
 import MED_IMAGES from '../data/medImages.json'
+import ZoomImage from './ZoomImage.jsx'
 
 // Product photo for a medication row. Photos live in /public/med-images and are mapped to
 // table rows by row id in src/data/medImages.json ({ "<row id>": "<file>.webp" }).
@@ -32,14 +33,12 @@ export default function MedImageButton({ row, title, className = '' }) {
             <DialogDescription className="sr-only">Product picture</DialogDescription>
           </DialogHeader>
           <div className="px-5 pb-5">
-            <div className="rounded-lg bg-white">
-              <img
-                src={src}
-                alt={title || 'Medication picture'}
-                className="w-full max-h-[70vh] object-contain rounded-lg"
-                loading="lazy"
-              />
-            </div>
+            <ZoomImage
+              src={src}
+              alt={title || 'Medication picture'}
+              className="rounded-lg bg-white"
+              imgClassName="w-full max-h-[70vh] object-contain"
+            />
           </div>
         </DialogContent>
       </Dialog>

@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState, useCallback, useRef } from 'react'
 import DataTable from './components/DataTable.jsx'
 import AdminPanel from './components/AdminPanel.jsx'
+import AdminDashboard from './components/AdminDashboard.jsx'
 import ConfirmDialog from './components/ConfirmDialog.jsx'
 import GrowthCalculator from './components/GrowthCalculator.jsx'
 import DevMilestones from './components/DevMilestones.jsx'
@@ -12,6 +13,7 @@ import FIB4Dialog from './components/FIB4Dialog.jsx'
 import CURB65Dialog from './components/CURB65Dialog.jsx'
 import { TopBar, BottomBar } from './components/AppNav.jsx'
 import HomePage from './components/HomePage.jsx'
+import MedPage from './components/MedPage.jsx'
 import { apiGetData, apiAdminAuth, apiAdminUpdate } from './utils/api.js'
 import { findColumnName, parseAgeMonths } from './utils/columns.js'
 import { Button } from './components/ui/button.jsx'
@@ -22,7 +24,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, Printer, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, Brain, ClipboardCheck, Home, Sun, Moon, Wrench, ArrowLeft, FlaskConical, Stethoscope } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, Brain, ClipboardCheck, Home, Wrench, ArrowLeft, FlaskConical, Stethoscope } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -107,6 +109,7 @@ export default function App() {
   const [categoryFilter, setCategoryFilter] = useState('')
   const [searchQuery, setSearchQuery] = useState('')
   const [adminOpen, setAdminOpen] = useState(false)
+  const [dashOpen, setDashOpen] = useState(false)
   const [adminToken, setAdminToken] = useState(localStorage.getItem('admin_token') || '')
   const [loginOpen, setLoginOpen] = useState(false)
   const [loginPw, setLoginPw] = useState('')
@@ -114,10 +117,18 @@ export default function App() {
   const [saving, setSaving] = useState(false)
   const [activeSection, setActiveSection] = useState(() => {
     if (typeof window !== 'undefined') {
-      const param = new URLSearchParams(window.location.search).get('section')
+      const params = new URLSearchParams(window.location.search)
+      const param = params.get('section')
+      if (params.get('med')) return 'home'
       if (param && SECTIONS.includes(param)) return param
     }
     return 'home'
+  })
+  const [medView, setMedView] = useState(() => {
+    if (typeof window === 'undefined') return null
+    const p = new URLSearchParams(window.location.search)
+    const id = p.get('med'), section = p.get('section') || 'clinic'
+    return id && ['clinic', 'er-medication', 'vaccination'].includes(section) ? { section, id } : null
   })
   const [dark, setDark] = useState(() => {
     if (typeof window !== 'undefined') {
@@ -228,7 +239,27 @@ export default function App() {
     reload(activeSection)
   }, [activeSection])
 
+  // Single medicine page: its own history entry, so the phone Back button returns to Home
+  const openMed = (section, id) => {
+    setMedView({ section, id })
+    window.history.pushState({ med: { section, id } }, '', `?section=${encodeURIComponent(section)}&med=${encodeURIComponent(id)}`)
+    window.scrollTo(0, 0)
+  }
+  const closeMed = () => {
+    if (window.history.state?.med) window.history.back()
+    else { setMedView(null); window.history.replaceState(null, '', window.location.pathname) }
+  }
+  useEffect(() => {
+    const onPop = (e) => { setMedView(e.state?.med || null); window.scrollTo(0, 0) }
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
+
   const switchSection = (s) => {
+    if (medView) {
+      setMedView(null)
+      window.history.replaceState(null, '', window.location.pathname)
+    }
     if (s === activeSection) return
     setCategoryFilter(s === 'pediatrics' ? '__ALL__' : '')
     setSearchQuery('')
@@ -291,7 +322,7 @@ export default function App() {
   }
 
   const openAdmin = () => {
-    if (adminMode) setAdminOpen(true)
+    if (adminMode) setDashOpen(true)
     else setLoginOpen(true)
   }
 
@@ -299,6 +330,7 @@ export default function App() {
     localStorage.removeItem('admin_token')
     setAdminToken('')
     setAdminOpen(false)
+    setDashOpen(false)
   }
 
   const doLogin = async () => {
@@ -310,6 +342,7 @@ export default function App() {
       setAdminToken(token)
       setLoginPw('')
       setLoginOpen(false)
+      setDashOpen(true)
     } catch (e) {
       setLoginErr(String(e?.message || e))
     }
@@ -482,11 +515,26 @@ export default function App() {
         />
         <BottomBar items={SECTION_ITEMS} colors={NAV_COLORS} active={activeSection} onGo={switchSection} />
 
-        {activeSection === 'home' && (
+        {medView ? (
+          <MedPage
+            key={`${medView.section}-${medView.id}`}
+            section={medView.section}
+            id={medView.id}
+            color={dark ? SECTION_THEMES[medView.section].darkText : SECTION_THEMES[medView.section].text}
+            onBack={closeMed}
+            onShowInList={(name) => {
+              const section = medView.section
+              setMedView(null)
+              window.history.replaceState(null, '', window.location.pathname)
+              setCategoryFilter(''); setSearchQuery(name); setActiveSection(section); window.scrollTo(0, 0)
+            }}
+          />
+        ) : activeSection === 'home' && (
           <HomePage
             toolCount={toolCount}
             colors={Object.fromEntries(['clinic', 'er-medication', 'vaccination'].map(k => [k, dark ? SECTION_THEMES[k].darkText : SECTION_THEMES[k].text]))}
-            onOpen={(section, query) => { setCategoryFilter(''); setSearchQuery(query); setActiveSection(section); window.scrollTo(0, 0) }}
+            onOpen={openMed}
+            onSearch={(section, query) => { setCategoryFilter(''); setSearchQuery(query); setActiveSection(section); window.scrollTo(0, 0) }}
           />
         )}
 
@@ -507,8 +555,6 @@ export default function App() {
                 <p className="mb-1 px-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Display</p>
                 <SettingsRow icon={ZoomIn} label={`Zoom In (${zoom}%)`} onClick={zoomIn} />
                 <SettingsRow icon={ZoomOut} label={`Zoom Out (${zoom}%)`} onClick={zoomOut} />
-                <SettingsRow icon={dark ? Sun : Moon} label={dark ? 'Light Mode' : 'Dark Mode'} onClick={() => setDark(d => !d)} />
-                <SettingsRow icon={Printer} label="Print" onClick={() => { window.print(); setSettingsOpen(false) }} />
               </div>
 
               <div>
@@ -520,9 +566,7 @@ export default function App() {
                 <>
                   <div>
                     <p className="mb-1 px-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Admin</p>
-                    <SettingsRow icon={Settings} label="Admin Panel" onClick={() => { setAdminOpen(true); setSettingsOpen(false) }} />
-                    <SettingsRow icon={Bell} label="Notifications" badge={feedbackList.length} onClick={() => { setNotificationsOpen(true); setSettingsOpen(false); loadFeedback() }} />
-                    <SettingsRow icon={Eye} label="Visitor Stats" value={visitorStats?.total} onClick={() => { setVisitorStatsOpen(true); setSettingsOpen(false); loadVisitorStats() }} />
+                    <SettingsRow icon={Settings} label="Admin Panel" badge={feedbackList.length} onClick={() => { setDashOpen(true); setSettingsOpen(false); loadFeedback() }} />
                   </div>
                   <div className="border-t pt-2">
                     <SettingsRow icon={LogOut} label="Logout" destructive onClick={() => { logout(); setSettingsOpen(false) }} />
@@ -1027,6 +1071,20 @@ export default function App() {
             </div>
           </DialogContent>
         </Dialog>
+
+        {dashOpen && adminMode && (
+          <AdminDashboard
+            token={adminToken}
+            onClose={() => setDashOpen(false)}
+            onLogout={logout}
+            feedback={feedbackList}
+            feedbackLoading={feedbackLoading}
+            onReloadFeedback={loadFeedback}
+            onDeleteFeedback={deleteFeedback}
+            sectionLabel={['clinic', 'vaccination', 'er-medication'].includes(activeSection) ? SECTION_LABELS[activeSection] : ''}
+            onOpenTableTools={() => { if (['clinic', 'vaccination', 'er-medication'].includes(activeSection)) setAdminOpen(true) }}
+          />
+        )}
 
         {/* Back to Top */}
         {showBackToTop && (

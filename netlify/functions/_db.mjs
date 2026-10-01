@@ -52,6 +52,9 @@ export async function ensureSchema() {
       visited_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
     )
   `
+  // Where a visit came from (country + Kuwait governorate from Netlify's IP lookup; no IP is stored)
+  await sql`ALTER TABLE visitors ADD COLUMN IF NOT EXISTS country TEXT`
+  await sql`ALTER TABLE visitors ADD COLUMN IF NOT EXISTS region TEXT`
 
   // Seed default meta for clinic section if missing
   const meta = await sql`SELECT id FROM table_meta WHERE section = 'clinic' LIMIT 1`

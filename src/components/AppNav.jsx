@@ -14,7 +14,7 @@ export function TopBar({ items, colors, active, onGo, dark, onToggleDark, onSett
           className="nav-press flex min-w-0 items-center gap-2.5 cursor-pointer text-left"
           aria-label="Medical Guidance — go to home"
         >
-          <img src="/logo.svg" alt="" className="h-9 w-auto shrink-0 sm:h-10" />
+          <img src="/icons/pcis-128.png" alt="" className="h-10 w-10 shrink-0 sm:h-11 sm:w-11" />
           <span className="font-display truncate text-lg font-extrabold tracking-tight sm:text-xl">Medical Guidance</span>
         </button>
 

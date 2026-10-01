@@ -46,7 +46,7 @@ export function isMonographV2(val) {
 
 // ---- Markdown ---------------------------------------------------------------
 
-function Md({ children }) {
+export function Md({ children }) {
   if (!children || !String(children).trim()) return <p className="text-sm text-foreground/50">—</p>
   return (
     <div className="monograph-md text-sm leading-relaxed text-foreground/85">
@@ -250,8 +250,20 @@ function WeightCalc({ c }) {
 
 // ---- Sections ---------------------------------------------------------------
 
-function Section({ n, icon: Icon, title, tone = 'primary', defaultOpen = false, children }) {
-  const [open, setOpen] = useState(defaultOpen)
+// Only one section is open at a time: opening one closes the one that was open before.
+const OpenSection = React.createContext(null)
+
+function Section({ n, icon: Icon, title, tone = 'primary', children }) {
+  const ctx = React.useContext(OpenSection)
+  const [ownOpen, setOwnOpen] = useState(false)
+  const open = ctx ? ctx.open === n : ownOpen
+  const headRef = React.useRef(null)
+  const toggle = () => {
+    if (ctx) ctx.setOpen(open ? null : n)
+    else setOwnOpen(!open)
+    // The section closing above can move this one up and out of view: bring its title back
+    if (!open) requestAnimationFrame(() => headRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' }))
+  }
   const tones = {
     primary: 'bg-primary/5 border-primary/20',
     red: 'bg-red-50/50 border-red-200/60 dark:bg-red-950/30 dark:border-red-900/50',
@@ -259,10 +271,10 @@ function Section({ n, icon: Icon, title, tone = 'primary', defaultOpen = false, 
   }
   const iconTone = { primary: 'text-primary', red: 'text-red-600 dark:text-red-400', amber: 'text-amber-600 dark:text-amber-400' }
   return (
-    <div className={`rounded-lg border ${tones[tone]}`}>
+    <div ref={headRef} className={`scroll-mt-20 rounded-lg border ${tones[tone]}`}>
       <button
         type="button"
-        onClick={() => setOpen(!open)}
+        onClick={toggle}
         className="w-full flex items-center gap-2 px-3.5 py-3 text-left cursor-pointer"
         aria-expanded={open}
       >
@@ -324,7 +336,9 @@ function SideEffects({ contra }) {
 
 export function MedicationDetails({ ind = {}, contra = {} }) {
   const calcs = parseCalc(ind.calc)
+  const [open, setOpen] = useState(null)
   return (
+    <OpenSection.Provider value={{ open, setOpen }}>
     <div className="space-y-2.5">
       <Section n={1} icon={ShieldCheck} title="Indications">
         <Md>{ind.indications}</Md>
@@ -365,6 +379,7 @@ export function MedicationDetails({ ind = {}, contra = {} }) {
         </p>
       )}
     </div>
+    </OpenSection.Provider>
   )
 }
 

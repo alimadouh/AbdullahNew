@@ -77,7 +77,7 @@ function Stat({ value, label, run }) {
   const n = useCountUp(value, run)
   return (
     <div className="min-w-0 text-center">
-      <div className="font-display text-2xl font-extrabold tabular-nums text-white sm:text-3xl">{value ? n : '–'}</div>
+      <div className="font-display text-2xl font-extrabold tabular-nums text-white sm:text-3xl">{value && run ? n : '–'}</div>
       <div className="mt-0.5 truncate text-[11px] font-medium text-slate-400 sm:text-xs">{label}</div>
     </div>
   )
@@ -105,7 +105,7 @@ function useTypingHint(names, active) {
   return text
 }
 
-export default function HomePage({ colors, onOpen, toolCount }) {
+export default function HomePage({ colors, onOpen, onSearch, toolCount }) {
   const [index, setIndex] = useState(indexCache)
   const [q, setQ] = useState('')
   const [focused, setFocused] = useState(false)
@@ -151,14 +151,14 @@ export default function HomePage({ colors, onOpen, toolCount }) {
     return () => document.removeEventListener('pointerdown', onDown)
   }, [])
 
-  const open = (it) => onOpen(it.section, it.name)
+  const open = (it) => onOpen(it.section, it.id)
   const onKey = (e) => {
     if (e.key === 'ArrowDown') { e.preventDefault(); setSel((s) => Math.min(s + 1, results.length - 1)) }
     else if (e.key === 'ArrowUp') { e.preventDefault(); setSel((s) => Math.max(s - 1, 0)) }
     else if (e.key === 'Enter') {
       e.preventDefault()
       if (results[sel]) open(results[sel])
-      else if (q.trim()) onOpen('clinic', q.trim())
+      else if (q.trim()) onSearch('clinic', q.trim())
     } else if (e.key === 'Escape') { setQ(''); inputRef.current?.blur() }
   }
 
@@ -176,17 +176,7 @@ export default function HomePage({ colors, onOpen, toolCount }) {
         </div>
 
         <div className="mx-auto max-w-3xl px-4 pt-9 pb-8 sm:px-6 sm:pt-16 sm:pb-12">
-          <div className="home-hero-in flex justify-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-300">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-60" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-400" />
-              </span>
-              Ministry of Health · Kuwait
-            </span>
-          </div>
-
-          <h2 className="home-hero-in font-display mt-5 text-center text-[34px] font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
+          <h2 className="home-hero-in font-display text-center text-[34px] font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
             Every medicine,
             <span className="block text-cyan-300">one search away.</span>
           </h2>
@@ -340,6 +330,7 @@ export default function HomePage({ colors, onOpen, toolCount }) {
           </div>
         )}
         <p className="mt-10 text-center text-xs text-muted-foreground">Done by Dr. Abdullah Almusallam</p>
+        <p className="mt-1 text-center text-xs text-muted-foreground">Engineered by Ali Madouh</p>
       </section>
     </div>
   )

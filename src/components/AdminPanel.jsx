@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { importFromCsvFile, exportToCsv } from '../utils/csv.js'
+import { apiAdminAuth } from '../utils/api.js'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
 import { Button } from './ui/button.jsx'
 import { Input } from './ui/input.jsx'
@@ -35,8 +36,11 @@ export default function AdminPanel({
     setRows(withIds)
   }
 
-  const confirmWipe = () => {
-    if (deletePw !== '5123') {
+  // The admin password is checked by the server (never stored in the site code)
+  const confirmWipe = async () => {
+    try {
+      await apiAdminAuth(deletePw)
+    } catch {
       setDeletePwErr('Wrong password.')
       return
     }
