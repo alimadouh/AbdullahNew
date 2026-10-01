@@ -106,8 +106,10 @@ export default function App() {
   const [rows, setRows] = useState([])
   const [loading, setLoading] = useState(false)
   const [err, setErr] = useState('')
-  const [categoryFilter, setCategoryFilter] = useState('')
-  const [searchQuery, setSearchQuery] = useState('')
+  // The open category and search come back after a refresh (kept in the page address)
+  const urlParam = (k) => (typeof window === 'undefined' ? '' : new URLSearchParams(window.location.search).get(k) || '')
+  const [categoryFilter, setCategoryFilter] = useState(() => (urlParam('med') ? '' : urlParam('cat')))
+  const [searchQuery, setSearchQuery] = useState(() => (urlParam('med') ? '' : urlParam('q')))
   const [adminOpen, setAdminOpen] = useState(false)
   const [dashOpen, setDashOpen] = useState(false)
   const [adminToken, setAdminToken] = useState(localStorage.getItem('admin_token') || '')
@@ -249,6 +251,17 @@ export default function App() {
     if (window.history.state?.med) window.history.back()
     else { setMedView(null); window.history.replaceState(null, '', window.location.pathname) }
   }
+  // Keep the current section, category and search in the address, so refreshing stays on the same page
+  useEffect(() => {
+    if (medView) return // the medicine page writes its own address
+    const p = new URLSearchParams()
+    if (activeSection !== 'home') p.set('section', activeSection)
+    if (activeSection !== 'home' && categoryFilter && categoryFilter !== '__ALL__') p.set('cat', categoryFilter)
+    if (activeSection !== 'home' && searchQuery.trim()) p.set('q', searchQuery)
+    const next = window.location.pathname + (p.toString() ? `?${p}` : '')
+    if (next !== window.location.pathname + window.location.search) window.history.replaceState(window.history.state, '', next)
+  }, [activeSection, categoryFilter, searchQuery, medView])
+
   useEffect(() => {
     const onPop = (e) => { setMedView(e.state?.med || null); window.scrollTo(0, 0) }
     window.addEventListener('popstate', onPop)

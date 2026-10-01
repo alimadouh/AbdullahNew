@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { LayoutDashboard, MessageSquare, Table2, X, LogOut, RefreshCw, Trash2, Loader2, Users, CalendarDays, TrendingUp, Eye, MapPin, Globe2 } from 'lucide-react'
-import KW from '../data/kwMap.json'
+import { LayoutDashboard, MessageSquare, Table2, X, LogOut, RefreshCw, Trash2, Loader2, Users, CalendarDays, TrendingUp, Eye } from 'lucide-react'
+import KuwaitVisitorsMap from './KuwaitVisitorsMap.jsx'
 
 // Admin panel in the house style: dark top bar (tabs on computers), bottom icon bar on phones,
 // light grey page with white cards, stat tiles first. Overview = visits growth + Kuwait map.
@@ -10,14 +10,7 @@ const TABS = [
   { key: 'feedback', label: 'Feedback', Icon: MessageSquare },
   { key: 'tables', label: 'Tables', Icon: Table2 },
 ]
-const GOV_ORDER = ['Capital', 'Hawalli', 'Farwaniya', 'Mubarak Al-Kabeer', 'Ahmadi', 'Jahra']
-const GOV_LABEL = { Capital: 'Al Asimah', 'Mubarak Al-Kabeer': 'Mubarak Al-Kabeer' }
 const ACCENT = '#0e7490'
-// Map badge spots for the four small city governorates (out in the bay / sea, joined by a line)
-const CALLOUT = { Capital: [452, 200], Hawalli: [552, 240], 'Mubarak Al-Kabeer': [556, 330], Farwaniya: [360, 352] }
-// Big governorates: badge inside their own land, away from the city cluster
-const SPOT = { Jahra: [230, 250], Ahmadi: [470, 440] }
-const SHORT = { Capital: 'Asimah', 'Mubarak Al-Kabeer': 'Mubarak' }
 
 const fmt = (n) => (n ?? 0).toLocaleString()
 const dayKey = (d) => d.toISOString().slice(0, 10)
@@ -171,110 +164,6 @@ function GrowthChart({ daily }) {
   )
 }
 
-// Kuwait governorates shaded by visits, with a count on each and a list beside it
-function KuwaitMap({ places, since }) {
-  const [range, setRange] = useState('all')
-  const key = range === 'all' ? 'count' : 'recent'
-  const { gov, outside, unknown, countries } = useMemo(() => {
-    const gov = Object.fromEntries(GOV_ORDER.map((g) => [g, 0]))
-    let outside = 0, unknown = 0
-    const countries = {}
-    for (const p of places || []) {
-      const n = p[key] || 0
-      if (!n) continue
-      if (!p.country) unknown += n
-      else if (p.country === 'KW') { if (p.region && gov[p.region] != null) gov[p.region] += n; else unknown += n }
-      else { outside += n; countries[p.country] = (countries[p.country] || 0) + n }
-    }
-    return { gov, outside, unknown, countries: Object.entries(countries).sort((a, b) => b[1] - a[1]).slice(0, 5) }
-  }, [places, key])
-  const [mapRef, mapW] = useWidth()
-  const u = mapW ? KW.w / mapW : 1 // map units per screen pixel
-  const inKw = Object.values(gov).reduce((n, v) => n + v, 0)
-  const max = Math.max(1, ...Object.values(gov))
-  const regionName = (c) => { try { return new Intl.DisplayNames(['en'], { type: 'region' }).of(c) } catch { return c } }
-
-  return (
-    <Panel
-      title="Kuwait map"
-      right={<Seg label="Map range" value={range} onChange={setRange} options={[['all', 'All time'], ['30', 'Last 30 days']]} />}
-    >
-      <div className="grid gap-4 lg:grid-cols-[1.3fr_1fr]">
-        <div ref={mapRef} className="relative overflow-hidden rounded-xl bg-sky-50/60 dark:bg-white/5">
-          <svg viewBox={`0 0 ${KW.w} ${KW.h}`} className="mx-auto block h-auto max-h-[440px] w-full" role="img" aria-label="Visits by governorate">
-            {KW.govs.map((g) => {
-              const v = gov[g.name] || 0
-              const t = v / max
-              return (
-                <path key={g.name} d={g.d} className="adm-gov" stroke="#fff" strokeWidth={1.2 * u}
-                  fill={v ? `color-mix(in oklch, ${ACCENT} ${18 + t * 72}%, #e2e8f0)` : '#e2e8f0'}>
-                  <title>{GOV_LABEL[g.name] || g.name}: {v} visits</title>
-                </path>
-              )
-            })}
-            {Object.entries(KW.govCenter).map(([g, [x, y]]) => {
-              const v = gov[g] || 0
-              // the four small city governorates sit close together: their badge goes out to the sea with a line
-              const [bx, by] = CALLOUT[g] || SPOT[g] || [x, y]
-              const label = String(v)
-              const r = (8 + label.length * 3.2) * u
-              return (
-                <g key={g} className="pointer-events-none">
-                  {CALLOUT[g] && <line x1={x} y1={y} x2={bx} y2={by} stroke="#0f172a" strokeOpacity="0.5" strokeWidth={1 * u} />}
-                  {CALLOUT[g] && <circle cx={x} cy={y} r={2.2 * u} fill="#0f172a" />}
-                  <circle cx={bx} cy={by} r={r} fill="#0f172a" opacity="0.9" />
-                  <text x={bx} y={by} textAnchor="middle" dy={3.8 * u} fontSize={11 * u} fontWeight="700" fill="#fff">{label}</text>
-                  <text x={bx} y={by + r + 11 * u} textAnchor="middle" fontSize={9.5 * u} fontWeight="600" fill="#334155">{SHORT[g] || g}</text>
-                </g>
-              )
-            })}
-          </svg>
-          <p className="absolute bottom-1.5 right-2 text-[9px] text-slate-400">Borders: geoBoundaries (CC BY 4.0)</p>
-        </div>
-
-        <div>
-          <ul className="divide-y divide-slate-100 dark:divide-white/10">
-            {GOV_ORDER.map((g) => {
-              const v = gov[g]
-              const pct = inKw ? Math.round((v / inKw) * 100) : 0
-              return (
-                <li key={g} className="flex items-center gap-3 py-2">
-                  <MapPin className="h-3.5 w-3.5 shrink-0 text-slate-400" />
-                  <span className="min-w-0 flex-1 truncate text-sm font-medium">{GOV_LABEL[g] || g}</span>
-                  <span className="hidden h-1.5 w-20 overflow-hidden rounded-full bg-slate-100 dark:bg-white/10 sm:block">
-                    <span className="block h-full rounded-full" style={{ width: `${pct}%`, background: ACCENT }} />
-                  </span>
-                  <span className="w-10 text-right text-sm font-semibold tabular-nums">{fmt(v)}</span>
-                  <span className="w-9 text-right text-[11px] tabular-nums text-slate-400">{pct}%</span>
-                </li>
-              )
-            })}
-          </ul>
-          <div className="mt-3 grid grid-cols-2 gap-2">
-            <div className="rounded-xl bg-slate-50 p-2.5 dark:bg-white/5">
-              <div className="flex items-center gap-1 text-[11px] text-slate-500 dark:text-slate-400"><Globe2 className="h-3 w-3" /> Outside Kuwait</div>
-              <div className="text-lg font-bold tabular-nums">{fmt(outside)}</div>
-            </div>
-            <div className="rounded-xl bg-slate-50 p-2.5 dark:bg-white/5">
-              <div className="text-[11px] text-slate-500 dark:text-slate-400">Location unknown</div>
-              <div className="text-lg font-bold tabular-nums">{fmt(unknown)}</div>
-            </div>
-          </div>
-          {countries.length > 0 && (
-            <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
-              Top countries outside Kuwait: {countries.map(([c, n]) => `${regionName(c)} ${n}`).join(' · ')}
-            </p>
-          )}
-          <p className="mt-2 text-[11px] leading-snug text-slate-400">
-            Area comes from the visitor's internet connection, so it is approximate. No IP address is saved.
-            {since ? ` Location saved since ${new Date(since).toLocaleDateString('en-GB')}; older visits show as unknown.` : ' Older visits have no location and show as unknown.'}
-          </p>
-        </div>
-      </div>
-    </Panel>
-  )
-}
-
 export default function AdminDashboard({ token, onClose, onLogout, feedback, feedbackLoading, onReloadFeedback, onDeleteFeedback, sectionLabel, onOpenTableTools }) {
   const [tab, setTab] = useState('overview')
   const [stats, setStats] = useState(null)
@@ -351,7 +240,7 @@ export default function AdminDashboard({ token, onClose, onLogout, feedback, fee
                 <Kpi label="All time" value={stats?.total} Icon={Users} />
               </div>
               <GrowthChart daily={stats?.daily} />
-              <KuwaitMap places={stats?.places} since={stats?.locationSince} />
+              <KuwaitVisitorsMap places={stats?.places} />
               <p className="px-1 text-[11px] text-slate-400">A visit is counted once per browser session.</p>
             </>
           )}

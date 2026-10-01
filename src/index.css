@@ -446,3 +446,14 @@ html {
   .adm .adm-gov:hover { filter: brightness(1.1); }
 }
 @media (prefers-reduced-motion: reduce) { .adm .adm-bar { animation: none; } }
+
+/* ===== Admin: visitors map (Laborya staff style) ===== */
+.adm-map { --gov-fill: #E4E6EA; --gov-line: #ffffff; --gov-name: #6B7078; --gov-halo: #ffffff; --gov-label: #184f95; --gov-sel: #DCEBFB; }
+.dark .adm-map { --gov-fill: #334155; --gov-line: #1e293b; --gov-name: #94a3b8; --gov-halo: #1e293b; --gov-label: #bfdbfe; --gov-sel: #1e4f8f; }
+.adm-map .adm-gov-path { transition: filter .15s ease; }
+.adm-map .adm-press, .adm .adm-press { -webkit-tap-highlight-color: transparent; transition: transform .16s ease, background-color .16s ease, border-color .16s ease; }
+.adm-map .adm-press:active { transform: scale(.96); }
+@media (hover: hover) and (pointer: fine) {
+  .adm-map .adm-gov-path:hover { filter: brightness(.94); }
+  .adm .adm-gov-bar:hover { filter: brightness(1.12); }
+}
