@@ -137,24 +137,3 @@ export function assess(input, stage) {
 
   return { stage, thr, category, reason: 'frax', crfs, chart, hipChart, base, official, adjustments, mof, hip }
 }
-
-// Kuwait screening checklist: > 60 mandatory; > 50 needs 1 major + 2 minor risk factors
-export function screening(age, majors, minors) {
-  if (age > 60) return { required: true, why: 'Age above 60: screening is mandatory' }
-  if (age > 50 && majors >= 1 && minors >= 2) return { required: true, why: 'Age above 50 with 1 major and 2 minor risk factors' }
-  if (age > 50) return { required: false, why: 'Age above 50: screening needs 1 major and 2 minor risk factors' }
-  return { required: false, why: 'Screening rules start above age 50' }
-}
-
-// Indications for vertebral imaging (VFA or lateral spine X-ray), Kuwait 2022
-export function vfaReasons({ age, sex, lowTraumaFracture, heightLossHistoric, heightLossProspective, glucocorticoids }) {
-  const out = []
-  if ((sex === 'female' && age >= 70) || (sex === 'male' && age >= 80)) out.push(sex === 'female' ? 'Woman aged 70 or older' : 'Man aged 80 or older')
-  if (age > 50) {
-    if (lowTraumaFracture) out.push('Low trauma fracture')
-    if (heightLossHistoric) out.push('Historical height loss of 4 cm or more')
-    if (heightLossProspective) out.push('Prospective height loss of 2 cm or more')
-    if (glucocorticoids) out.push('Recent or ongoing long term glucocorticoid treatment')
-  }
-  return out
-}
