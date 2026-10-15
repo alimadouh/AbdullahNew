@@ -41,12 +41,6 @@ const RISK = {
   vh2:  { label: 'Very high risk', action: 'Treat and consult', bg: '#9b1328', fg: '#ffffff', dots: 4,
           note: 'Treat in agreement with a nephrologist. Closest monitoring: at least four times a year (every 1–3 months).' },
 }
-const LEGEND = [
-  { label: 'Low risk', bg: RISK.low.bg },
-  { label: 'Moderately increased risk', bg: RISK.mod.bg },
-  { label: 'High risk', bg: RISK.high.bg },
-  { label: 'Very high risk', bg: RISK.vh1.bg, bg2: RISK.vh2.bg },
-]
 
 const gIndex = (egfr) => G_ROWS.findIndex(r => egfr >= r.min)
 function aIndex(acr, unit) {
@@ -209,25 +203,6 @@ export default function CKDDialog({ open, onOpenChange, theme }) {
             Enter eGFR and UACR, or tap a box.
           </div>
         )}
-
-        {/* Legend + source, as on the card */}
-        <div className="rounded-lg bg-muted/50 px-3 py-2.5 text-[11px] leading-relaxed text-muted-foreground">
-          <div className="mb-1.5 flex flex-wrap gap-x-3 gap-y-1">
-            {LEGEND.map(l => (
-              <span key={l.label} className="flex items-center gap-1.5">
-                <span className="h-3 w-3 rounded-sm" style={{ background: l.bg }} />
-                {l.bg2 && <span className="-ml-1 h-3 w-3 rounded-sm" style={{ background: l.bg2 }} />}
-                {l.label}
-              </span>
-            ))}
-          </div>
-          <div>
-            Table adapted from{' '}
-            <a href="https://diabetesjournals.org/care/article/45/12/3075/147614" target="_blank" rel="noreferrer" className="underline decoration-dotted underline-offset-2 hover:text-foreground">de Boer et al., Diabetes Care 2022</a>
-            {' · '}
-            <a href="https://www.theisn.org/wp-content/uploads/2022/11/One-Page-Print-Out.pdf" target="_blank" rel="noreferrer" className="underline decoration-dotted underline-offset-2 hover:text-foreground">ISN: CKD early identification</a>
-          </div>
-        </div>
 
         <div className="flex justify-end">
           <Button variant="outline" size="sm" onClick={reset} className="gap-1.5">
