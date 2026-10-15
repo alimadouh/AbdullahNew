@@ -107,12 +107,16 @@ const BMI_WITH_BMD = {
   mof: [13.5, 14.2, 15.0, 15.7, 16.4, 16.7, 16.4, 16.0, 15.7],
   hip: [5.4, 5.5, 5.7, 5.8, 6.0, 6.0, 5.8, 5.6, 5.5],
 }
+const LOW_BMI_BMD_SCALE = 1.47
 export function bmiFactorWithBmd(outcome, b) {
   if (!Number.isFinite(b)) return 1
   const xs = BMI_WITH_BMD.bmi, ys = BMI_WITH_BMD[outcome].map(Math.log)
   const ref = ys[4]
   // beyond the published range keep the end slope, limited to BMI 15–45
-  return Math.exp(cr1(xs, ys, clamp(b, 15, 45)) - ref)
+  const g = cr1(xs, ys, clamp(b, 15, 45)) - ref
+  // Below BMI 24, FRAX Kuwait lowers risk more than the WHO table: ×1.47 on the log effect, fitted to
+  // 6 fraxplus.org cases with BMD and BMI 17.6–22.3 (leave-one-out MOF error 0.71 → 0.45, hip 0.37 → 0.18)
+  return Math.exp(b < 24 ? LOW_BMI_BMD_SCALE * g : g)
 }
 
 // coefficients at any age: interpolated across the chart ages (50–90, clamped)
