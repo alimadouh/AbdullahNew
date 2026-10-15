@@ -161,7 +161,7 @@ export default function CKDDialog({ open, onOpenChange, theme }) {
             <Activity className="h-5 w-5" />
             CKD Prognosis
           </DialogTitle>
-          <DialogDescription className="text-xs">Prognosis of CKD by GFR and albuminuria categories</DialogDescription>
+          <DialogDescription className="sr-only">Prognosis of CKD by GFR and albuminuria categories</DialogDescription>
         </DialogHeader>
 
         <div className="grid grid-cols-2 gap-3">
