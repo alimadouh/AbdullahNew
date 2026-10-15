@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { HeartPulse, RotateCcw, Calculator, AlertTriangle, Info } from 'lucide-react'
+import { HeartPulse, RotateCcw, Calculator, AlertTriangle } from 'lucide-react'
 import { Input } from './ui/input.jsx'
 import { Button } from './ui/button.jsx'
 import {
-  calculate, MODELS, REGIONS, COUNTRIES, regionForCountry, UNCOVERED_REGION_NOTE,
+  calculate, MODELS, REGIONS, COUNTRIES, regionForCountry,
   RESULT_EXPLANATION, UNIT_KINDS, segmentRangeText,
 } from '../lib/cvd/index.js'
 
@@ -154,9 +154,6 @@ export default function CVDTool({ theme }) {
           {COUNTRIES.map(c => <option key={c.country} value={c.country}>{c.country}</option>)}
         </select>
         {errors.region && <div className="text-[11px] font-medium text-red-600 dark:text-red-400">{errors.region}</div>}
-        <p className="flex items-start gap-1.5 rounded-lg bg-amber-500/10 p-2 text-[11px] text-amber-800 dark:text-amber-300">
-          <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />{UNCOVERED_REGION_NOTE}
-        </p>
       </div>
 
       {/* Patient */}
