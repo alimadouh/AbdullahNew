@@ -46,9 +46,9 @@ if (O.assess({ ...base, factors: { fragility: 'spineHip' } }, 'before').category
 eq('crf bmi', O.countCrfs({ secondary: true, smoking: true }, 'bmi'), 2); eq('crf bmd', O.countCrfs({ secondary: true, smoking: true }, 'bmd'), 1)
 eq('t2dm as RA', O.countCrfs({ ra: true, t2dm: true }, 'bmd'), 1)
 // 6. BMD machines → T-score (worked examples from the research notes)
-for (const [type, bmd, want] of [['hologic', 0.700, -1.32], ['hologic', 0.558, -2.50], ['lunar', 1.000, -0.27], ['lunar', 0.800, -1.71], ['norland', 0.900, -0.45], ['norland', 0.700, -1.96]]) eq(`${type} ${bmd}`, O.toTScore(type, bmd), want, 0.005)
-eq('tscore passthrough', O.toTScore('tscore', -2.4), -2.4)
-if (!Number.isNaN(O.toTScore('osteosys', 0.8))) { fails++; console.log('FAIL osteosys should not convert') }
+// Hologic 0.700 → −1.32 (same as fraxplus.org); 0.558 → −2.50
+for (const [type, bmd, want] of [['hologic', 0.700, -1.32], ['hologic', 0.558, -2.50]]) eq(`${type} ${bmd}`, O.toTScore(type, bmd), want, 0.005)
+if (O.BMD_TYPES.map(b => b.label).join('|') !== 'No BMD available|Hologic') { fails++; console.log('FAIL BMD options', O.BMD_TYPES.map(b => b.label)) }
 console.log(fails ? `${fails} FAILURES` : 'ALL TESTS PASSED')
 fs.unlinkSync(tmp)
 process.exit(fails ? 1 : 0)
