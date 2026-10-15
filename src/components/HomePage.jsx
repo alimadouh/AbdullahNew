@@ -25,6 +25,7 @@ function buildIndex(section, data) {
   const genCol = findColumnName(cols, ['generic name', 'generic', 'medication', 'vaccine'])
   const doseCol = findColumnName(cols, ['dose'])
   const typeCol = findColumnName(cols, ['type'])
+  const routeCol = findColumnName(cols, ['route'])
   const indCol = findColumnName(cols, ['indications'])
   // Vaccines repeat by age, so the age goes on the second line
   const ageCol = section === 'vaccination' ? findColumnName(cols, ['age/timing', 'age', 'category']) : null
@@ -33,7 +34,7 @@ function buildIndex(section, data) {
     const d = r.data || {}
     const generic = s(d, genCol)
     const name = s(d, nameCol) || generic
-    return { id: r.id, section, name, generic: generic !== name ? generic : '', age: s(d, ageCol), dose: s(d, doseCol), type: s(d, typeCol), img: medImageFor(r), calc: !!(indCol && d[indCol] && typeof d[indCol] === 'object' && parseCalc(d[indCol].calc).length) }
+    return { id: r.id, section, name, generic: generic !== name ? generic : '', age: s(d, ageCol), dose: s(d, doseCol), type: s(d, typeCol), route: s(d, routeCol), img: medImageFor(r), calc: !!(indCol && d[indCol] && typeof d[indCol] === 'object' && parseCalc(d[indCol].calc).length) }
   }).filter((x) => x.name)
 }
 
@@ -257,7 +258,9 @@ export default function HomePage({ colors, onOpen, onSearch, toolCount }) {
                               <span className="block truncate text-sm font-semibold">{it.name}</span>
                               <span className="block truncate text-xs text-slate-500 dark:text-slate-400">{[it.age, it.generic, it.dose, it.type].filter(Boolean).join(' · ')}</span>
                             </span>
-                            <span className="shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide" style={{ color: c, background: c + '1f' }}>{src.label}</span>
+                            {it.route && (
+                              <span className="max-w-[40%] shrink-0 truncate rounded-full px-2 py-0.5 text-[11px] font-bold" style={{ color: c, background: c + '1f' }}>{it.route}</span>
+                            )}
                           </button>
                         </li>
                       )
