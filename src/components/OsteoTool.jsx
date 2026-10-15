@@ -283,7 +283,7 @@ export default function OsteoTool({ theme }) {
               <p className="mt-2 text-xs font-semibold" style={{ color: '#dc2626' }}>If the previous fracture was spine, hip, or 2 or more other fractures: very high risk — treat with anabolic therapy ± DXA.</p>
             )}
             <p className="mt-2 text-[10px] text-muted-foreground">
-              Estimate from the FRAX Kuwait charts{result.chart?.low != null && ` (chart range ${f1(result.chart.low)}–${f1(result.chart.high)}%)`}; it may differ slightly from fraxplus.org.
+              Estimate fitted to the FRAX Kuwait charts; it may differ slightly from fraxplus.org.
               {result.withBmd && ` Femoral neck T-score ${result.tScore.toFixed(2)} (Hologic BMD, NHANES III reference).`}
               {result.withBmd && q.secondary && ' Secondary osteoporosis is not used when BMD is entered.'}
               {result.tClamped && ' The T-score is outside the chart range (−4.0 to +1.0), so the nearest chart value was used.'}

@@ -7,6 +7,7 @@ import { pathToFileURL } from 'url'
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1')), '..')
 const data = fs.readFileSync(path.join(root, 'src/data/fraxKuwait.json'), 'utf8')
 const src = fs.readFileSync(path.join(root, 'src/lib/osteo.js'), 'utf8').replace("import CHARTS from '../data/fraxKuwait.json'", `const CHARTS = ${data}`)
+  .replace("from './fraxSurrogate.js'", `from '${pathToFileURL(path.join(root, 'src/lib/fraxSurrogate.js')).href}'`)
 const tmp = path.join(os.tmpdir(), `osteo_test_${process.pid}.mjs`); fs.writeFileSync(tmp, src)
 const O = await import(pathToFileURL(tmp).href)
 const C = JSON.parse(data)

@@ -1,6 +1,7 @@
 // Osteoporosis risk logic (Kuwait Osteoporosis Guidelines 2022 / KOPS slides + FRAX Kuwait paper charts).
 // Pure functions only — the page (components/OsteoTool.jsx) shows the results.
 import CHARTS from '../data/fraxKuwait.json'
+import { fraxProbability } from './fraxSurrogate.js'
 
 // Kuwait fracture probability table: 10-year MOF (%) thresholds by age
 const KW_TABLE = [
@@ -219,14 +220,21 @@ export function assess(input, stage) {
   const kind = stage === 'before' ? 'bmi' : 'bmd'
   const x = kind === 'bmi' ? bmi(weight, height) : fnT
   const crfs = countCrfs(f, kind)
-  // With BMD, the BMI effect scales the value and the printed chart range alike
-  const withBmi = (r, outcome) => {
-    if (!r || kind !== 'bmd') return r
-    const k = bmiFactorWithBmd(outcome, bmi(weight, height))
-    return { ...r, value: r.value * k, low: r.low == null ? null : r.low * k, high: r.high == null ? null : r.high * k }
+  // Model fitted to every cell of the FRAX Kuwait charts (src/lib/fraxSurrogate.js); BMI effect with BMD is inside it
+  // A risk factor never lowers the result (with BMD, smoking can lower FRAX MOF slightly through death risk),
+  // so take the highest value over the factors present
+  const on = { prior: f.prevFracture, parentHip: f.parentHip, smoke: f.smoking, gc: f.glucocorticoids, ra: f.ra || f.t2dm || f.adt, secondary: f.secondary, alcohol: f.alcohol }
+  const keys = Object.keys(on).filter(k => on[k])
+  let p = null
+  if (Number.isFinite(x)) {
+    for (let m = 0; m < 1 << keys.length; m++) {
+      const factors = Object.fromEntries(keys.map((k, i) => [k, !!(m & (1 << i))]))
+      const q = fraxProbability({ sex, age, bmi: bmi(weight, height), tScore: kind === 'bmd' ? x : null, factors })
+      p = p ? { mof: Math.max(p.mof, q.mof), hip: Math.max(p.hip, q.hip) } : q
+    }
   }
-  const chart = Number.isFinite(x) ? withBmi(weightedChartProbability({ sex, outcome: 'mof', kind, age, x, factors: f }), 'mof') : null
-  const hipChart = Number.isFinite(x) ? withBmi(weightedChartProbability({ sex, outcome: 'hip', kind, age, x, factors: f }), 'hip') : null
+  const chart = p && Number.isFinite(p.mof) ? { value: p.mof, low: null, high: null } : null
+  const hipChart = p && Number.isFinite(p.hip) ? { value: p.hip, low: null, high: null } : null
   const official = Number.isFinite(overrideMof) && overrideMof > 0
   const base = official ? overrideMof : chart?.value
   if (!Number.isFinite(base)) return { stage, thr, category: null, crfs, chart, hipChart }
