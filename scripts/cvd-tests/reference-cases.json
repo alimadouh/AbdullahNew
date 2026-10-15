@@ -1,0 +1,228 @@
+{
+  "_about": "Reference results from independent sources. 'model' defaults to score2. 'expectedPercent' is compared to the exact result with 'tolerance' (percentage points). 'appWholePercent' is the whole-percent value shown by the ESC CVD Risk app (our exact value rounded must equal it); 'appOneDecimal' is a one-decimal value shown by the app (SCORE2-Diabetes). 'coreOnly' cases bypass input validation because the app accepted a value our UI rejects (e.g. HDL > total cholesterol). Add new cases from the official app here (see docs/TESTING-AGAINST-OFFICIAL-APP.md). 'appScreen' is the exact text shown on the app's result screen; the website's displayed result must be identical.",
+  "cases": [
+    {
+      "id": "paper-example-low",
+      "source": "SCORE2 paper (Eur Heart J 2021;42:2439, doi:10.1093/eurheartj/ehab309): 50-year-old male smoker, SBP 140, TC 5.5, HDL 1.3 -> 5.9% in low-risk countries",
+      "input": {
+        "region": "low",
+        "sex": "male",
+        "age": 50,
+        "smoking": true,
+        "sbp": 140,
+        "totalCholesterol": 5.5,
+        "hdl": 1.3,
+        "cholesterolUnit": "mmol"
+      },
+      "expectedPercent": 5.9,
+      "tolerance": 0.05
+    },
+    {
+      "id": "paper-example-very-high",
+      "source": "SCORE2 paper, same profile -> 14.0% in very-high-risk countries",
+      "input": {
+        "region": "veryHigh",
+        "sex": "male",
+        "age": 50,
+        "smoking": true,
+        "sbp": 140,
+        "totalCholesterol": 5.5,
+        "hdl": 1.3,
+        "cholesterolUnit": "mmol"
+      },
+      "expectedPercent": 14.0,
+      "tolerance": 0.05
+    },
+    {
+      "id": "esc-app-2026-10-15-female-55",
+      "source": "ESC CVD Risk Calculation app (iOS), run by the site owner on 2026-10-15; screenshots reference/app-screenshots/score2-07 and score2-09",
+      "input": {
+        "region": "veryHigh",
+        "sex": "female",
+        "age": 55,
+        "smoking": true,
+        "sbp": 167,
+        "totalCholesterol": 5.3,
+        "hdl": 1.2,
+        "cholesterolUnit": "mmol"
+      },
+      "appWholePercent": 26,
+      "appScreen": "26"
+    },
+    {
+      "id": "esc-app-2026-10-15-score2op-male-80",
+      "model": "score2op",
+      "source": "ESC CVD Risk app, 2026-10-15 (reference/app-screenshots/score2op-*)",
+      "input": {
+        "region": "veryHigh",
+        "sex": "male",
+        "age": 80,
+        "smoking": true,
+        "sbp": 145,
+        "totalCholesterol": 5.1,
+        "hdl": 1.4,
+        "cholesterolUnit": "mmol"
+      },
+      "appWholePercent": 43,
+      "appScreen": "43"
+    },
+    {
+      "id": "esc-app-2026-10-15-score2diabetes-female-60",
+      "model": "score2diabetes",
+      "coreOnly": true,
+      "source": "ESC CVD Risk app, 2026-10-15 (reference/app-screenshots/score2diabetes-*). HDL 3.0 > TC 1.7 was accepted by the app; our UI rejects it, so this case is checked on the core formula.",
+      "input": {
+        "region": "veryHigh",
+        "sex": "female",
+        "age": 60,
+        "diabetesAge": 25,
+        "smoking": false,
+        "sbp": 180,
+        "totalCholesterol": 1.7,
+        "hdl": 3.0,
+        "hba1cPercent": 10,
+        "egfr": 100
+      },
+      "appOneDecimal": "30.7",
+      "appScreen": "30.7"
+    },
+    {
+      "id": "esc-app-2026-10-15-score2diabetes-male-45",
+      "model": "score2diabetes",
+      "source": "ESC CVD Risk app, 2026-10-15 (site owner screenshot): 28.6 %.",
+      "input": {
+        "region": "veryHigh",
+        "sex": "male",
+        "age": 45,
+        "diabetesAge": 35,
+        "smoking": true,
+        "sbp": 160,
+        "totalCholesterol": 6.0,
+        "hdl": 2.0,
+        "hba1c": 8.0,
+        "egfr": 70,
+        "units": {
+          "cholesterol": "mmol",
+          "hba1c": "percent"
+        }
+      },
+      "appOneDecimal": "28.6",
+      "appScreen": "28.6"
+    },
+    {
+      "id": "esc-app-2026-10-15-score2-male-50-7.5",
+      "source": "ESC CVD Risk app, 2026-10-15 (site owner screenshot): 7.5 % (app shows one decimal below 10 %).",
+      "input": {
+        "region": "veryHigh",
+        "sex": "male",
+        "age": 50,
+        "smoking": true,
+        "sbp": 140,
+        "totalCholesterol": 4.0,
+        "hdl": 2.0,
+        "cholesterolUnit": "mmol"
+      },
+      "appScreen": "7.5"
+    },
+    {
+      "id": "esc-app-2026-10-15-score2op-male-75",
+      "model": "score2op",
+      "source": "ESC CVD Risk app, 2026-10-15 (site owner screenshot).",
+      "input": {
+        "region": "veryHigh",
+        "sex": "male",
+        "age": 75,
+        "smoking": true,
+        "sbp": 115,
+        "totalCholesterol": 3.0,
+        "hdl": 2.0,
+        "cholesterolUnit": "mmol"
+      },
+      "appScreen": "26"
+    },
+    {
+      "id": "esc-app-2026-10-15-score2op-male-80-hdl2.1",
+      "model": "score2op",
+      "source": "ESC CVD Risk app, 2026-10-15 (site owner screenshot).",
+      "input": {
+        "region": "veryHigh",
+        "sex": "male",
+        "age": 80,
+        "smoking": true,
+        "sbp": 116,
+        "totalCholesterol": 7.8,
+        "hdl": 2.1,
+        "cholesterolUnit": "mmol"
+      },
+      "appScreen": "42"
+    },
+    {
+      "id": "esc-app-2026-10-15-score2op-male-80-hdl1.0",
+      "model": "score2op",
+      "source": "ESC CVD Risk app, 2026-10-15 (site owner screenshot): 43 %.",
+      "input": {
+        "region": "veryHigh",
+        "sex": "male",
+        "age": 80,
+        "smoking": true,
+        "sbp": 110,
+        "totalCholesterol": 6.0,
+        "hdl": 1.0,
+        "cholesterolUnit": "mmol"
+      },
+      "appScreen": "43"
+    },
+    {
+      "id": "esc-app-2026-10-15-score2-male-45-tc3-hdl2",
+      "source": "ESC CVD Risk app, 2026-10-15 (site owner). Age in the app was 45 (the website run used 44 by mistake).",
+      "input": {
+        "region": "veryHigh",
+        "sex": "male",
+        "age": 45,
+        "smoking": true,
+        "sbp": 115,
+        "totalCholesterol": 3.0,
+        "hdl": 2.0,
+        "cholesterolUnit": "mmol"
+      },
+      "appScreen": "3.2"
+    },
+    {
+      "id": "esc-app-2026-10-15-score2-male-45-tc6-hdl0.8",
+      "source": "ESC CVD Risk app, 2026-10-15 (site owner). Age in the app was 45 (the website run used 44 by mistake).",
+      "input": {
+        "region": "veryHigh",
+        "sex": "male",
+        "age": 45,
+        "smoking": true,
+        "sbp": 115,
+        "totalCholesterol": 6.0,
+        "hdl": 0.8,
+        "cholesterolUnit": "mmol"
+      },
+      "appScreen": "12"
+    },
+    {
+      "id": "esc-app-2026-10-15-score2diabetes-male-45-dx20",
+      "model": "score2diabetes",
+      "source": "ESC CVD Risk app, 2026-10-15 (site owner screenshots): 32.6 %. Exact value sits on the rounding edge (32.552); decided the HbA1c conversion 10.93 x % - 23.5.",
+      "input": {
+        "region": "veryHigh",
+        "sex": "male",
+        "age": 45,
+        "diabetesAge": 20,
+        "smoking": true,
+        "sbp": 144,
+        "totalCholesterol": 8.0,
+        "hdl": 4.0,
+        "hba1c": 9.0,
+        "egfr": 60,
+        "units": {
+          "cholesterol": "mmol",
+          "hba1c": "percent"
+        }
+      },
+      "appScreen": "32.6"
+    }
+  ]
+}

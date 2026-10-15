@@ -1,0 +1,551 @@
+{
+  "_about": "Expected values computed by the independent Python implementation tests/independent/reference_impl.py (written from the published coefficient tables, not from the JavaScript).",
+  "models": {
+    "score2": [
+      {
+        "id": "score2-01",
+        "input": {
+          "region": "low",
+          "sex": "male",
+          "age": 40,
+          "smoking": false,
+          "sbp": 120,
+          "totalCholesterol": 5.0,
+          "hdl": 1.3,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 1.370967
+      },
+      {
+        "id": "score2-02",
+        "input": {
+          "region": "low",
+          "sex": "female",
+          "age": 45,
+          "smoking": true,
+          "sbp": 135,
+          "totalCholesterol": 6.2,
+          "hdl": 1.6,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 2.810774
+      },
+      {
+        "id": "score2-03",
+        "input": {
+          "region": "moderate",
+          "sex": "male",
+          "age": 50,
+          "smoking": true,
+          "sbp": 140,
+          "totalCholesterol": 5.5,
+          "hdl": 1.3,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 7.561251
+      },
+      {
+        "id": "score2-04",
+        "input": {
+          "region": "moderate",
+          "sex": "female",
+          "age": 55,
+          "smoking": false,
+          "sbp": 128,
+          "totalCholesterol": 5.8,
+          "hdl": 1.5,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 2.690063
+      },
+      {
+        "id": "score2-05",
+        "input": {
+          "region": "high",
+          "sex": "male",
+          "age": 60,
+          "smoking": false,
+          "sbp": 150,
+          "totalCholesterol": 6.5,
+          "hdl": 1.0,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 11.793876
+      },
+      {
+        "id": "score2-06",
+        "input": {
+          "region": "high",
+          "sex": "female",
+          "age": 62,
+          "smoking": true,
+          "sbp": 160,
+          "totalCholesterol": 7.0,
+          "hdl": 1.2,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 21.417232
+      },
+      {
+        "id": "score2-07",
+        "input": {
+          "region": "veryHigh",
+          "sex": "male",
+          "age": 65,
+          "smoking": true,
+          "sbp": 170,
+          "totalCholesterol": 4.5,
+          "hdl": 0.9,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 36.014743
+      },
+      {
+        "id": "score2-08",
+        "input": {
+          "region": "veryHigh",
+          "sex": "female",
+          "age": 69,
+          "smoking": false,
+          "sbp": 110,
+          "totalCholesterol": 3.5,
+          "hdl": 2.0,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 13.570312
+      },
+      {
+        "id": "score2-09",
+        "input": {
+          "region": "moderate",
+          "sex": "male",
+          "age": 48,
+          "smoking": false,
+          "sbp": 118,
+          "totalCholesterol": 4.2,
+          "hdl": 1.1,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 2.532596
+      },
+      {
+        "id": "score2-10",
+        "input": {
+          "region": "low",
+          "sex": "female",
+          "age": 67,
+          "smoking": true,
+          "sbp": 190,
+          "totalCholesterol": 8.5,
+          "hdl": 0.8,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 18.512697
+      }
+    ],
+    "score2op": [
+      {
+        "id": "score2op-01",
+        "input": {
+          "region": "low",
+          "sex": "male",
+          "age": 70,
+          "smoking": false,
+          "sbp": 130,
+          "totalCholesterol": 5.0,
+          "hdl": 1.3,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 7.950405
+      },
+      {
+        "id": "score2op-02",
+        "input": {
+          "region": "low",
+          "sex": "female",
+          "age": 72,
+          "smoking": true,
+          "sbp": 145,
+          "totalCholesterol": 6.0,
+          "hdl": 1.5,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 13.185617
+      },
+      {
+        "id": "score2op-03",
+        "input": {
+          "region": "moderate",
+          "sex": "male",
+          "age": 75,
+          "smoking": false,
+          "sbp": 150,
+          "totalCholesterol": 5.5,
+          "hdl": 1.2,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 19.51686
+      },
+      {
+        "id": "score2op-04",
+        "input": {
+          "region": "moderate",
+          "sex": "female",
+          "age": 78,
+          "smoking": false,
+          "sbp": 160,
+          "totalCholesterol": 6.5,
+          "hdl": 1.8,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 18.311444
+      },
+      {
+        "id": "score2op-05",
+        "input": {
+          "region": "high",
+          "sex": "male",
+          "age": 80,
+          "smoking": true,
+          "sbp": 140,
+          "totalCholesterol": 4.8,
+          "hdl": 1.0,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 33.27507
+      },
+      {
+        "id": "score2op-06",
+        "input": {
+          "region": "high",
+          "sex": "female",
+          "age": 82,
+          "smoking": false,
+          "sbp": 170,
+          "totalCholesterol": 5.2,
+          "hdl": 1.4,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 39.645191
+      },
+      {
+        "id": "score2op-07",
+        "input": {
+          "region": "veryHigh",
+          "sex": "male",
+          "age": 85,
+          "smoking": false,
+          "sbp": 120,
+          "totalCholesterol": 4.0,
+          "hdl": 1.1,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 40.705528
+      },
+      {
+        "id": "score2op-08",
+        "input": {
+          "region": "veryHigh",
+          "sex": "female",
+          "age": 89,
+          "smoking": true,
+          "sbp": 180,
+          "totalCholesterol": 7.5,
+          "hdl": 0.9,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 71.597901
+      },
+      {
+        "id": "score2op-09",
+        "input": {
+          "region": "moderate",
+          "sex": "male",
+          "age": 71,
+          "smoking": true,
+          "sbp": 110,
+          "totalCholesterol": 3.5,
+          "hdl": 2.0,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 8.795134
+      },
+      {
+        "id": "score2op-10",
+        "input": {
+          "region": "low",
+          "sex": "female",
+          "age": 86,
+          "smoking": false,
+          "sbp": 200,
+          "totalCholesterol": 8.8,
+          "hdl": 1.0,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 34.91815
+      }
+    ],
+    "score2diabetes": [
+      {
+        "id": "score2diabetes-01",
+        "input": {
+          "region": "low",
+          "sex": "male",
+          "age": 40,
+          "diabetesAge": 38,
+          "smoking": false,
+          "sbp": 120,
+          "totalCholesterol": 5.0,
+          "hdl": 1.2,
+          "hba1c": 6.5,
+          "egfr": 100,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 2.721285
+      },
+      {
+        "id": "score2diabetes-02",
+        "input": {
+          "region": "low",
+          "sex": "female",
+          "age": 45,
+          "diabetesAge": 40,
+          "smoking": true,
+          "sbp": 135,
+          "totalCholesterol": 5.8,
+          "hdl": 1.4,
+          "hba1c": 7.5,
+          "egfr": 95,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 6.25335
+      },
+      {
+        "id": "score2diabetes-03",
+        "input": {
+          "region": "moderate",
+          "sex": "male",
+          "age": 50,
+          "diabetesAge": 45,
+          "smoking": false,
+          "sbp": 140,
+          "totalCholesterol": 5.5,
+          "hdl": 1.1,
+          "hba1c": 8.0,
+          "egfr": 85,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 9.258452
+      },
+      {
+        "id": "score2diabetes-04",
+        "input": {
+          "region": "moderate",
+          "sex": "female",
+          "age": 55,
+          "diabetesAge": 50,
+          "smoking": false,
+          "sbp": 130,
+          "totalCholesterol": 6.0,
+          "hdl": 1.5,
+          "hba1c": 7.0,
+          "egfr": 75,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 6.618732
+      },
+      {
+        "id": "score2diabetes-05",
+        "input": {
+          "region": "high",
+          "sex": "male",
+          "age": 60,
+          "diabetesAge": 48,
+          "smoking": true,
+          "sbp": 150,
+          "totalCholesterol": 6.2,
+          "hdl": 0.9,
+          "hba1c": 9.0,
+          "egfr": 65,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 37.842044
+      },
+      {
+        "id": "score2diabetes-06",
+        "input": {
+          "region": "high",
+          "sex": "female",
+          "age": 62,
+          "diabetesAge": 60,
+          "smoking": false,
+          "sbp": 145,
+          "totalCholesterol": 5.0,
+          "hdl": 1.3,
+          "hba1c": 6.8,
+          "egfr": 55,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 16.358183
+      },
+      {
+        "id": "score2diabetes-07",
+        "input": {
+          "region": "veryHigh",
+          "sex": "male",
+          "age": 65,
+          "diabetesAge": 40,
+          "smoking": true,
+          "sbp": 165,
+          "totalCholesterol": 4.5,
+          "hdl": 1.0,
+          "hba1c": 10.5,
+          "egfr": 45,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 69.839857
+      },
+      {
+        "id": "score2diabetes-08",
+        "input": {
+          "region": "veryHigh",
+          "sex": "female",
+          "age": 69,
+          "diabetesAge": 65,
+          "smoking": false,
+          "sbp": 125,
+          "totalCholesterol": 4.0,
+          "hdl": 1.6,
+          "hba1c": 6.2,
+          "egfr": 90,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 28.302674
+      },
+      {
+        "id": "score2diabetes-09",
+        "input": {
+          "region": "moderate",
+          "sex": "male",
+          "age": 58,
+          "diabetesAge": 30,
+          "smoking": false,
+          "sbp": 118,
+          "totalCholesterol": 3.8,
+          "hdl": 1.2,
+          "hba1c": 12.0,
+          "egfr": 120,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 17.470799
+      },
+      {
+        "id": "score2diabetes-10",
+        "input": {
+          "region": "low",
+          "sex": "female",
+          "age": 66,
+          "diabetesAge": 55,
+          "smoking": true,
+          "sbp": 180,
+          "totalCholesterol": 7.5,
+          "hdl": 1.0,
+          "hba1c": 8.5,
+          "egfr": 35,
+          "units": {
+            "cholesterol": "mmol",
+            "hba1c": "percent"
+          }
+        },
+        "expectedPercent": 28.789461
+      }
+    ]
+  }
+}

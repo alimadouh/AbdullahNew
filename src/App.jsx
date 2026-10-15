@@ -12,6 +12,7 @@ import GAD7Dialog from './components/GAD7Dialog.jsx'
 import FIB4Dialog from './components/FIB4Dialog.jsx'
 import CKDTool from './components/CKDTool.jsx'
 import OsteoTool from './components/OsteoTool.jsx'
+import CVDTool from './components/CVDTool.jsx'
 import CURB65Dialog from './components/CURB65Dialog.jsx'
 import { TopBar, BottomBar } from './components/AppNav.jsx'
 import HomePage from './components/HomePage.jsx'
@@ -26,7 +27,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogPageProvider } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, Brain, ClipboardCheck, Home, Wrench, ArrowLeft, FlaskConical, Stethoscope, Activity, Bone } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, Brain, ClipboardCheck, Home, Wrench, ArrowLeft, FlaskConical, Stethoscope, Activity, Bone, HeartPulse } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -146,7 +147,7 @@ export default function App() {
     return true // default to dark theme
   })
   // Tools that open as their own page (not a popup): ?section=tools&tool=<key>
-  const TOOL_PAGES = ['growth', 'milestones', 'phq9-ar', 'phq9-en', 'gad7-ar', 'gad7-en', 'fib4', 'ckd', 'curb65', 'osteo']
+  const TOOL_PAGES = ['growth', 'milestones', 'phq9-ar', 'phq9-en', 'gad7-ar', 'gad7-en', 'fib4', 'ckd', 'curb65', 'osteo', 'cvd']
   // Tools page: specialty filter chip ('all' or a group name)
   const [toolFilter, setToolFilter] = useState('all')
   const [toolPage, setToolPage] = useState(() => (TOOL_PAGES.includes(urlParam('tool')) ? urlParam('tool') : null))
@@ -526,6 +527,9 @@ export default function App() {
     { section: 'Hepatology', accent: '#d97706', tools: [
       { label: 'FIB-4 Score', desc: 'Liver fibrosis estimate (no biopsy)', Icon: FlaskConical, onClick: () => openTool('fib4') },
     ] },
+    { section: 'Cardiology', accent: '#dc2626', tools: [
+      { label: 'CVD Risk (SCORE2)', desc: '10-year cardiovascular risk · ESC', Icon: HeartPulse, onClick: () => openTool('cvd') },
+    ] },
     { section: 'Endocrinology', accent: '#059669', tools: [
       { label: 'Osteoporosis Risk', desc: 'FRAX Kuwait → DXA → treatment', Icon: Bone, onClick: () => openTool('osteo') },
     ] },
@@ -693,6 +697,7 @@ export default function App() {
               {toolPage === 'curb65' && <CURB65Dialog open onOpenChange={v => { if (!v) closeTool() }} theme={theme} />}
               {toolPage === 'ckd' && <CKDTool theme={theme} />}
               {toolPage === 'osteo' && <OsteoTool theme={theme} />}
+              {toolPage === 'cvd' && <CVDTool theme={theme} />}
             </DialogPageProvider>
           </div>
         )}
