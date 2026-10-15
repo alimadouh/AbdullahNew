@@ -49,6 +49,24 @@ eq('t2dm as RA', O.countCrfs({ ra: true, t2dm: true }, 'bmd'), 1)
 // Hologic 0.700 → −1.32 (same as fraxplus.org); 0.558 → −2.50
 for (const [type, bmd, want] of [['hologic', 0.700, -1.32], ['hologic', 0.558, -2.50]]) eq(`${type} ${bmd}`, O.toTScore(type, bmd), want, 0.005)
 if (O.BMD_TYPES.map(b => b.label).join('|') !== 'No BMD available|Hologic') { fails++; console.log('FAIL BMD options', O.BMD_TYPES.map(b => b.label)) }
+// 7. Risk-factor weighting vs published FRAX Kuwait values (Johansson et al. 2017 IT = woman, BMI 30, prior fracture)
+const P = (sex, age, bmiV, factors, outcome = 'mof') => O.weightedChartProbability({ sex, outcome, kind: 'bmi', age, x: bmiV, factors }).value
+for (const r of O.THRESHOLD_ROWS.filter(r => r.age >= 50 && r.age % 5 === 0)) eq(`Kuwait IT ${r.age}`, P('female', r.age, 30, { prevFracture: true }), r.it, 1.0)
+eq('KW 65F prior fx MOF', P('female', 65, 25, { prevFracture: true }), 8.9, 0.05); eq('KW 65F prior fx hip', P('female', 65, 25, { prevFracture: true }, 'hip'), 2.6, 0.05)
+eq('KW 65M prior fx MOF', P('male', 65, 25, { prevFracture: true }), 5.6, 0.05); eq('KW 65M prior fx hip', P('male', 65, 25, { prevFracture: true }, 'hip'), 1.7, 0.05)
+// 8. Against fraxplus.org Kuwait results (2026-10-15, docs/superpowers/specs/2026-10-15-frax-validation.md): MOF within 1.5 points
+const frax = [
+  [60, 'female', 80, 152, { ra: true }, null, 3.8], [60, 'female', 80, 152, { ra: true }, -2.0, 5.8], [65, 'female', 70, 165, {}, null, 4.3], [65, 'female', 70, 165, {}, -2.4, 6.5],
+  [75, 'female', 65, 160, { prevFracture: true, parentHip: true }, null, 23], [75, 'female', 65, 160, { prevFracture: true, parentHip: true }, -2.5, 26],
+  [55, 'male', 85, 175, { smoking: true }, null, 2.1], [55, 'male', 85, 175, { smoking: true }, -1.0, 2.8], [70, 'male', 75, 170, { glucocorticoids: true, ra: true }, null, 7.2],
+  [70, 'male', 75, 170, { glucocorticoids: true, ra: true }, -1.5, 7.8], [80, 'female', 55, 155, { prevFracture: true, secondary: true }, null, 25], [80, 'female', 55, 155, { prevFracture: true, secondary: true }, -3.0, 17],
+  [50, 'female', 60, 160, { alcohol: true }, null, 2.8], [50, 'female', 60, 160, { alcohol: true }, -1.8, 3.8], [85, 'female', 60, 155, { parentHip: true }, null, 26],
+  [90, 'female', 50, 150, { prevFracture: true, parentHip: true, smoking: true, glucocorticoids: true, ra: true }, -2.8, 53], [65, 'female', 70, 165, {}, (0.700 - 0.858) / 0.120, 3.9],
+]
+for (const [age, sex, w, h, f, t, want] of frax) {
+  const r = O.assess({ age, sex, weight: w, height: h, factors: { fragility: 'none', ...f }, fnT: t ?? NaN }, t == null ? 'before' : 'after')
+  eq(`fraxplus ${age}${sex[0]} ${JSON.stringify(f)} T${t ?? '-'}`, r.mof, want, 1.5)
+}
 console.log(fails ? `${fails} FAILURES` : 'ALL TESTS PASSED')
 fs.unlinkSync(tmp)
 process.exit(fails ? 1 : 0)

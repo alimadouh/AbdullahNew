@@ -78,6 +78,93 @@ export function chartProbability({ sex, outcome, kind, age, x, crfs }) {
   }
 }
 
+// ── Weighting the risk factors ─────────────────────────────────────────────────────────────
+// The paper charts give, for each number of risk factors, a mean and a range: the low end is the
+// weakest factors, the high end the strongest. Where a patient sits in that range is set by FRAX's
+// own weight of each factor, taken from published FRAX outputs for single risk factors (UK model,
+// BMI 25: Kanis et al., Osteoporos Int 2008;19:385–397, Tables 1–2). FRAX weighs risk factors the
+// same way in every country model; only the base rates differ.
+const SINGLE_CRF = {
+  bmi: { // no BMD, ages 50 / 60 / 70 / 80
+    ages: [50, 60, 70, 80],
+    female: {
+      mof: { none: [3.5, 6.0, 11, 17], parentHip: [6.9, 12, 17, 31], smoking: [3.6, 6.5, 12, 19], alcohol: [4.1, 7.3, 14, 22], ra: [4.7, 8.2, 15, 25], glucocorticoids: [5.6, 9.8, 18, 26], prevFracture: [7.4, 12, 20, 28] },
+      hip: { none: [0.2, 0.7, 2.3, 7.0], parentHip: [0.3, 0.9, 5.0, 22], smoking: [0.3, 1.1, 3.4, 9.5], alcohol: [0.3, 1.1, 3.6, 10], ra: [0.4, 1.3, 4.1, 12], glucocorticoids: [0.5, 1.5, 4.8, 13], prevFracture: [0.8, 2.1, 4.9, 11] },
+    },
+    male: {
+      mof: { none: [2.8, 3.9, 5.7, 7.2], parentHip: [5.5, 7.6, 9.1, 15], smoking: [2.8, 4.1, 5.9, 7.5], alcohol: [3.3, 4.7, 7.1, 9.5], ra: [3.7, 5.3, 8.0, 11], glucocorticoids: [4.4, 6.1, 8.5, 10], prevFracture: [5.8, 7.9, 11, 12] },
+      hip: { none: [0.1, 0.4, 1.3, 3.4], parentHip: [0.2, 0.6, 2.8, 11], smoking: [0.2, 0.7, 1.8, 4.2], alcohol: [0.2, 0.7, 2.0, 5.1], ra: [0.2, 0.8, 2.3, 5.8], glucocorticoids: [0.3, 0.9, 2.4, 5.5], prevFracture: [0.5, 1.3, 2.7, 5.2] },
+    },
+  },
+  bmd: { // with BMD: published for age 65, T-score −2.5 only
+    female: {
+      mof: { none: 12.4, parentHip: 22.1, smoking: 13.7, alcohol: 15.4, ra: 16.1, glucocorticoids: 19.7, prevFracture: 20.2 },
+      hip: { none: 3.0, parentHip: 3.2, smoking: 5.1, alcohol: 4.6, ra: 4.3, glucocorticoids: 5.5, prevFracture: 5.0 },
+    },
+    male: {
+      mof: { none: 9.8, parentHip: 16.5, smoking: 11.0, alcohol: 12.5, ra: 12.8, glucocorticoids: 15.0, prevFracture: 16.0 },
+      hip: { none: 3.6, parentHip: 3.7, smoking: 5.6, alcohol: 5.4, ra: 5.0, glucocorticoids: 6.1, prevFracture: 5.9 },
+    },
+  },
+}
+// Factors each chart counts (secondary osteoporosis only without BMD, weighted like rheumatoid arthritis)
+const CHART_FACTORS = {
+  bmi: ['prevFracture', 'parentHip', 'smoking', 'glucocorticoids', 'ra', 'secondary', 'alcohol'],
+  bmd: ['prevFracture', 'parentHip', 'smoking', 'glucocorticoids', 'ra', 'alcohol'],
+}
+
+// Log weight of each factor (ln of probability with the factor ÷ without) for this sex, outcome and age
+export function factorWeights({ sex, outcome, kind, age }) {
+  const w = {}
+  if (kind === 'bmd') {
+    // Published at age 65 only; other ages follow the age change of the no-BMD weights
+    const t = SINGLE_CRF.bmd[sex][outcome]
+    const now = factorWeights({ sex, outcome, kind: 'bmi', age }), at65 = factorWeights({ sex, outcome, kind: 'bmi', age: 65 })
+    for (const k of Object.keys(t)) if (k !== 'none') w[k] = Math.log(t[k] / t.none) + (now[k] - at65[k])
+  } else {
+    const ages = SINGLE_CRF.bmi.ages, t = SINGLE_CRF.bmi[sex][outcome]
+    const a = clamp(age, ages[0], ages[ages.length - 1])
+    let i = ages.findIndex((v, j) => j < ages.length - 1 && a >= v && a <= ages[j + 1]); if (i < 0) i = ages.length - 2
+    const f = (a - ages[i]) / (ages[i + 1] - ages[i])
+    const at = (arr) => lerp(Math.log(arr[i]), Math.log(arr[i + 1]), f)
+    for (const k of Object.keys(t)) if (k !== 'none') w[k] = at(t[k]) - at(t.none)
+  }
+  w.secondary = w.ra
+  return w
+}
+
+// Chart value placed inside the chart range by the weight of the patient's own risk factors
+export function weightedChartProbability({ sex, outcome, kind, age, x, factors }) {
+  const present = CHART_FACTORS[kind].filter(k => factors[k])
+  const base = chartProbability({ sex, outcome, kind, age, x, crfs: present.length })
+  if (!base || base.low == null || base.crfs !== present.length) return { ...base, position: null }
+  const w = factorWeights({ sex, outcome, kind, age })
+  const all = CHART_FACTORS[kind].map(k => w[k]).sort((p, q) => p - q)
+  const n = present.length
+  const lo = all.slice(0, n).reduce((s, v) => s + v, 0)
+  const hi = all.slice(-n).reduce((s, v) => s + v, 0)
+  const sum = present.reduce((s, k) => s + w[k], 0)
+  const position = hi > lo ? clamp((sum - lo) / (hi - lo), 0, 1) : 0.5
+  const value = Math.exp(Math.log(base.low) + position * (Math.log(base.high) - Math.log(base.low)))
+  return { ...base, value, chartMean: base.value, position }
+}
+
+// With BMD the paper charts assume BMI 24. Published FRAX outputs show the small BMI effect that
+// remains once BMD is known (women aged 65, T-score −2.7; Kanis et al., WHO Technical Report 2007,
+// Table 7.17). Used as a ratio to BMI 24 for MOF and hip.
+const BMI_WITH_BMD = {
+  bmi: [16, 18, 20, 22, 24, 26, 28, 30, 32],
+  mof: [13.5, 14.2, 15.0, 15.7, 16.4, 16.7, 16.4, 16.0, 15.7],
+  hip: [5.4, 5.5, 5.7, 5.8, 6.0, 6.0, 5.8, 5.6, 5.5],
+}
+export function bmiFactorWithBmd(outcome, bmiValue) {
+  if (!Number.isFinite(bmiValue)) return 1
+  const rows = BMI_WITH_BMD.bmi.map((b, i) => [b, BMI_WITH_BMD[outcome][i]])
+  const [, v] = interpRow(rows, bmiValue)
+  const [, ref] = interpRow(rows, 24)
+  return v / ref
+}
+
 export const bmi = (kg, cm) => (kg > 0 && cm > 0 ? kg / Math.pow(cm / 100, 2) : NaN)
 
 /**
@@ -110,8 +197,10 @@ export function assess(input, stage) {
   const kind = stage === 'before' ? 'bmi' : 'bmd'
   const x = kind === 'bmi' ? bmi(weight, height) : fnT
   const crfs = countCrfs(f, kind)
-  const chart = Number.isFinite(x) ? chartProbability({ sex, outcome: 'mof', kind, age, x, crfs }) : null
-  const hipChart = Number.isFinite(x) ? chartProbability({ sex, outcome: 'hip', kind, age, x, crfs }) : null
+  const fw = { ...f, ra: f.ra || f.t2dm || f.adt }
+  const withBmi = (r, outcome) => (r && kind === 'bmd' ? { ...r, value: r.value * bmiFactorWithBmd(outcome, bmi(weight, height)) } : r)
+  const chart = Number.isFinite(x) ? withBmi(weightedChartProbability({ sex, outcome: 'mof', kind, age, x, factors: fw }), 'mof') : null
+  const hipChart = Number.isFinite(x) ? withBmi(weightedChartProbability({ sex, outcome: 'hip', kind, age, x, factors: fw }), 'hip') : null
   const official = Number.isFinite(overrideMof) && overrideMof > 0
   const base = official ? overrideMof : chart?.value
   if (!Number.isFinite(base)) return { stage, thr, category: null, crfs, chart, hipChart }
