@@ -39,7 +39,7 @@ const DialogContent = React.forwardRef(({ className, children, ...props }, ref) 
         centers when content fits, scrolls when it doesn't */}
     <div
       className="fixed inset-x-0 top-0 z-50 flex flex-col items-center overflow-y-auto p-4 sm:p-6"
-      style={{ height: "var(--app-vh, 100dvh)" }}
+      style={{ top: "var(--app-vt, 0px)", height: "var(--app-vh, 100dvh)" }}
       ref={boxRef}
       onWheel={onWheel}
     >

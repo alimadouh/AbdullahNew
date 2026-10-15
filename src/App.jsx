@@ -183,7 +183,12 @@ export default function App() {
   useEffect(() => {
     const vv = window.visualViewport
     if (!vv) return
-    const update = () => document.documentElement.style.setProperty('--app-vh', `${vv.height}px`)
+    // iOS also pans the page when the keyboard opens (offsetTop > 0); dialogs move down by that much
+    const update = () => {
+      const root = document.documentElement.style
+      root.setProperty('--app-vh', `${vv.height}px`)
+      root.setProperty('--app-vt', `${Math.max(0, vv.offsetTop)}px`)
+    }
     update()
     vv.addEventListener('resize', update)
     vv.addEventListener('scroll', update)
