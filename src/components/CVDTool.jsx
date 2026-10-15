@@ -4,7 +4,7 @@ import { Input } from './ui/input.jsx'
 import { Button } from './ui/button.jsx'
 import {
   calculate, MODELS, REGIONS, COUNTRIES, regionForCountry, UNCOVERED_REGION_NOTE,
-  DISCLAIMER_SHORT, RESULT_EXPLANATION, UNIT_KINDS, segmentRangeText,
+  RESULT_EXPLANATION, UNIT_KINDS, segmentRangeText,
 } from '../lib/cvd/index.js'
 
 // 10-year cardiovascular risk (ESC SCORE2 family). The maths lives in src/lib/cvd (tested against the
@@ -238,7 +238,6 @@ export default function CVDTool({ theme }) {
         </div>
       )}
 
-      <p className="text-[10px] leading-relaxed text-muted-foreground">{DISCLAIMER_SHORT} Independent implementation of the published ESC SCORE2 algorithms; not endorsed by the ESC.</p>
     </div>
   )
 }
