@@ -318,7 +318,7 @@ export default function DataTable({
   }, [columns, hasMergedCol, indicationsCol, contraCol, pdfCol, pdfLabelCol, hideCategoryCol, categoryCol])
 
   const [expandedRowId, setExpandedRowId] = useState(null)
-  const titleGenericCol = findColumnName(columns, ['generic name', 'generic'])
+  const titleGenericCol = findColumnName(columns, ['generic name', 'generic', 'vaccine'])
   const tradeCol = findColumnName(columns, ['trading name', 'trade name', 'brand'])
   const titleDoseCol = findColumnName(columns, ['dose', 'strength'])
   const medTitle = (r) => {
