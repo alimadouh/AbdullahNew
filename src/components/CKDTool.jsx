@@ -1,5 +1,4 @@
 import { useState, useMemo, useEffect } from 'react'
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog.jsx'
 import { Activity, RotateCcw, CalendarClock } from 'lucide-react'
 import { Input } from './ui/input.jsx'
 import { Button } from './ui/button.jsx'
@@ -127,7 +126,8 @@ function HeatMap({ cell, picked, onPick, acrUnit }) {
   )
 }
 
-export default function CKDDialog({ open, onOpenChange, theme }) {
+// Full page (not a popup) so the whole tool stays reachable when the phone keyboard is open
+export default function CKDTool({ theme }) {
   const accent = theme?.text || '#0ea5e9'
   const [egfr, setEgfr] = useState('')
   const [acr, setAcr] = useState('')
@@ -150,19 +150,15 @@ export default function CKDDialog({ open, onOpenChange, theme }) {
   const reset = () => { setEgfr(''); setAcr(''); setPicked(null) }
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-xl max-h-[90vh] overflow-y-auto">
+    <div className="mx-auto flex w-full max-w-xl flex-col gap-4 rounded-2xl border bg-card p-4 shadow-sm sm:p-6">
         <style>{`
           @keyframes ckd-pulse { 0%,100% { box-shadow: 0 0 0 3px #fff, 0 0 0 5px currentColor } 50% { box-shadow: 0 0 0 3px #fff, 0 0 0 9px transparent } }
           .ckd-pulse { animation: ckd-pulse 1.6s ease-in-out infinite; }
         `}</style>
-        <DialogHeader>
-          <DialogTitle className="flex items-center gap-2" style={{ color: accent }}>
-            <Activity className="h-5 w-5" />
-            CKD Prognosis
-          </DialogTitle>
-          <DialogDescription className="sr-only">Prognosis of CKD by GFR and albuminuria categories</DialogDescription>
-        </DialogHeader>
+        <h2 className="flex items-center gap-2 font-display text-lg font-semibold" style={{ color: accent }}>
+          <Activity className="h-5 w-5" />
+          CKD Prognosis
+        </h2>
 
         <div className="grid grid-cols-2 gap-3">
           <div className="flex flex-col gap-1.5">
@@ -206,7 +202,6 @@ export default function CKDDialog({ open, onOpenChange, theme }) {
             Reset
           </Button>
         </div>
-      </DialogContent>
-    </Dialog>
+    </div>
   )
 }

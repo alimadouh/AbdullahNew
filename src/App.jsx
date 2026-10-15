@@ -10,7 +10,7 @@ import PHQ9Dialog from './components/PHQ9Dialog.jsx'
 import PHQ9PatientForm from './components/PHQ9PatientForm.jsx'
 import GAD7Dialog from './components/GAD7Dialog.jsx'
 import FIB4Dialog from './components/FIB4Dialog.jsx'
-import CKDDialog from './components/CKDDialog.jsx'
+import CKDTool from './components/CKDTool.jsx'
 import CURB65Dialog from './components/CURB65Dialog.jsx'
 import { TopBar, BottomBar } from './components/AppNav.jsx'
 import HomePage from './components/HomePage.jsx'
@@ -152,7 +152,9 @@ export default function App() {
   const [gad7EnOpen, setGad7EnOpen] = useState(false)
   const [fib4Open, setFib4Open] = useState(false)
   const [curb65Open, setCurb65Open] = useState(false)
-  const [ckdOpen, setCkdOpen] = useState(false)
+  // Tools that open as their own page (not a popup): ?section=tools&tool=<key>
+  const TOOL_PAGES = ['ckd']
+  const [toolPage, setToolPage] = useState(() => (TOOL_PAGES.includes(urlParam('tool')) ? urlParam('tool') : null))
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [feedbackOpen, setFeedbackOpen] = useState(false)
   const [feedbackMsg, setFeedbackMsg] = useState('')
@@ -264,6 +266,16 @@ export default function App() {
     if (window.history.state?.med) window.history.back()
     else { setMedView(null); window.history.replaceState(null, '', window.location.pathname) }
   }
+  // A tool page gets its own history entry, so the phone Back button returns to the tools list
+  const openTool = (key) => {
+    setToolPage(key)
+    window.history.pushState({ tool: key }, '', `?section=tools&tool=${key}`)
+    window.scrollTo(0, 0)
+  }
+  const closeTool = () => {
+    if (window.history.state?.tool) window.history.back()
+    else setToolPage(null)
+  }
   // Keep the current section, category and search in the address, so refreshing stays on the same page
   useEffect(() => {
     if (medView) return // the medicine page writes its own address
@@ -271,12 +283,13 @@ export default function App() {
     if (activeSection !== 'home') p.set('section', activeSection)
     if (activeSection !== 'home' && categoryFilter && categoryFilter !== '__ALL__') p.set('cat', categoryFilter)
     if (activeSection !== 'home' && searchQuery.trim()) p.set('q', searchQuery)
+    if (activeSection === 'tools' && toolPage) p.set('tool', toolPage)
     const next = window.location.pathname + (p.toString() ? `?${p}` : '')
     if (next !== window.location.pathname + window.location.search) window.history.replaceState(window.history.state, '', next)
-  }, [activeSection, categoryFilter, searchQuery, medView])
+  }, [activeSection, categoryFilter, searchQuery, medView, toolPage])
 
   useEffect(() => {
-    const onPop = (e) => { setMedView(e.state?.med || null); window.scrollTo(0, 0) }
+    const onPop = (e) => { setMedView(e.state?.med || null); setToolPage(e.state?.tool || null); window.scrollTo(0, 0) }
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
   }, [])
@@ -286,6 +299,7 @@ export default function App() {
       setMedView(null)
       window.history.replaceState(null, '', window.location.pathname)
     }
+    setToolPage(null)
     if (s === activeSection) return
     setCategoryFilter(s === 'pediatrics' ? '__ALL__' : '')
     setSearchQuery('')
@@ -513,7 +527,7 @@ export default function App() {
       { label: 'FIB-4 Score', desc: 'Liver fibrosis estimate (no biopsy)', Icon: FlaskConical, onClick: () => setFib4Open(true) },
     ] },
     { section: 'Nephrology', accent: theme.text, tools: [
-      { label: 'CKD Prognosis', desc: 'Risk by eGFR & albuminuria (KDIGO heat map)', Icon: Activity, onClick: () => setCkdOpen(true) },
+      { label: 'CKD Prognosis', desc: 'Risk by eGFR & albuminuria (KDIGO heat map)', Icon: Activity, onClick: () => openTool('ckd') },
     ] },
     { section: 'Respiratory', accent: theme.text, tools: [
       { label: 'CURB-65 Score', desc: 'Pneumonia severity & disposition', Icon: Stethoscope, onClick: () => setCurb65Open(true) },
@@ -656,7 +670,18 @@ export default function App() {
 
 
         {/* Tools section — clean cards grouped by their origin section */}
-        {activeSection === 'tools' && (
+        {activeSection === 'tools' && toolPage === 'ckd' && (
+          <div className="mb-4 flex flex-col gap-3">
+            <div>
+              <Button variant="outline" size="sm" onClick={closeTool} className="gap-1.5">
+                <ArrowLeft className="h-4 w-4" />
+                All Tools
+              </Button>
+            </div>
+            <CKDTool theme={theme} />
+          </div>
+        )}
+        {activeSection === 'tools' && !toolPage && (
           <div className="mb-4 flex flex-col gap-7">
             {toolGroups.map(({ section, accent, tools }) => (
               <div key={section}>
@@ -730,7 +755,6 @@ export default function App() {
         <GAD7Dialog open={gad7EnOpen} onOpenChange={setGad7EnOpen} theme={theme} lang="en" />
         <FIB4Dialog open={fib4Open} onOpenChange={setFib4Open} theme={theme} />
         <CURB65Dialog open={curb65Open} onOpenChange={setCurb65Open} theme={theme} />
-        <CKDDialog open={ckdOpen} onOpenChange={setCkdOpen} theme={theme} />
 
         {/* Library */}
         {activeSection === 'library' && (
