@@ -292,7 +292,7 @@ export default function DataTable({
   const hideCategoryCol = categoryFilter && categoryFilter !== '__ALL__' && categoryCol
   const hasKuwaitCol = columns.includes('__kuwait__')
   const hasOosCol = columns.includes('__oos__')
-  const isHiddenCol = (c) => c === '__kuwait__' || c === '__oos__'
+  const isHiddenCol = (c) => c === '__kuwait__' || c === '__oos__' || c === '__optional__'
 
   const displayColumns = useMemo(() => {
     let cols = columns.filter(c => !isHiddenCol(c))

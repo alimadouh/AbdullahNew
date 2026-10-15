@@ -228,6 +228,10 @@ export default function App() {
       if (s === 'clinic' && !cols.includes('__oos__')) {
         cols.push('__oos__')
       }
+      // Hidden flag for vaccines outside the obligatory schedule ("1" = non-obligatory)
+      if (s === 'vaccination' && !cols.includes('__optional__')) {
+        cols.push('__optional__')
+      }
       setColumns(cols)
       setRows(data.rows || [])
     } catch (e) {
@@ -291,11 +295,15 @@ export default function App() {
   const categoryList = useMemo(() => {
     if (!categoryCol) return []
     const counts = {}
+    const required = {}
     for (const r of rows) {
       const c = String((r.data || {})[categoryCol] ?? '').trim()
-      if (c) counts[c] = (counts[c] || 0) + 1
+      if (!c) continue
+      counts[c] = (counts[c] || 0) + 1
+      if (String((r.data || {}).__optional__ || '') !== '1') required[c] = true
     }
-    return categories.map(name => ({ name, count: counts[name] || 0 }))
+    // A category is non-obligatory only when every vaccine in it is flagged optional
+    return categories.map(name => ({ name, count: counts[name] || 0, optional: !required[name] }))
   }, [rows, categoryCol, categories])
 
   // Vaccination lists vaccines, not medications
@@ -757,9 +765,21 @@ export default function App() {
                 />
               </div>
             ) : (
-              /* Category picker grid */
+              /* Category picker grid (vaccination: obligatory schedule first, then non-obligatory) */
+              <div className="flex flex-col gap-5">
+              {(categoryList.some(c => c.optional)
+                ? [
+                    { title: 'Obligatory Vaccination', cats: categoryList.filter(c => !c.optional) },
+                    { title: 'Non-obligatory Vaccination', cats: categoryList.filter(c => c.optional) },
+                  ]
+                : [{ title: '', cats: categoryList }]
+              ).map(group => (
+              <div key={group.title || 'all'} className="flex flex-col gap-2.5">
+                {group.title && (
+                  <h2 className="font-display text-sm font-semibold uppercase tracking-wide" style={{ color: theme.text }}>{group.title}</h2>
+                )}
               <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
-                {categoryList.map((cat) => {
+                {group.cats.map((cat) => {
                   const SecIcon = SECTION_ITEMS.find(s => s.key === activeSection)?.Icon || Pill
                   return (
                     <button
@@ -782,6 +802,9 @@ export default function App() {
                     </button>
                   )
                 })}
+              </div>
+              </div>
+              ))}
               </div>
             )
           ) : (
