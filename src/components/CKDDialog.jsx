@@ -198,11 +198,7 @@ export default function CKDDialog({ open, onOpenChange, theme }) {
               GFR: {G_ROWS[view.gi].name} ({G_ROWS[view.gi].range}) · Albuminuria: {A_COLS[view.ai].name} ({acrUnit === 'mgmmol' ? A_COLS[view.ai].mgmmol : A_COLS[view.ai].mgg})
             </div>
           </div>
-        ) : (
-          <div className="rounded-xl border border-dashed p-4 text-center text-sm text-muted-foreground">
-            Enter eGFR and UACR, or tap a box.
-          </div>
-        )}
+        ) : null}
 
         <div className="flex justify-end">
           <Button variant="outline" size="sm" onClick={reset} className="gap-1.5">
