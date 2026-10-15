@@ -3,7 +3,33 @@ import * as DialogPrimitive from "@radix-ui/react-dialog"
 import { X } from "lucide-react"
 import { cn } from "../../lib/utils"
 
-const Dialog = DialogPrimitive.Root
+// Page mode: inside <DialogPageProvider> a Dialog renders inline as a normal page section
+// (no overlay, no portal, no close X), so tools open as their own page and the phone
+// keyboard never covers them. Nested real dialogs inside a page still work as popups.
+const DialogPageContext = React.createContext(false)
+const InlineContext = React.createContext(false)
+const DialogPageProvider = ({ children }) => (
+  <DialogPageContext.Provider value={true}>{children}</DialogPageContext.Provider>
+)
+
+// Tools clean up in their own unmount effects, so leaving the page needs no extra close call
+function InlineDialog({ children }) {
+  return (
+    <DialogPageContext.Provider value={false}>
+      <InlineContext.Provider value={true}>{children}</InlineContext.Provider>
+    </DialogPageContext.Provider>
+  )
+}
+
+const Dialog = ({ children, ...props }) => {
+  const page = React.useContext(DialogPageContext)
+  if (page) return <InlineDialog>{children}</InlineDialog>
+  return (
+    <DialogPrimitive.Root {...props}>
+      <InlineContext.Provider value={false}>{children}</InlineContext.Provider>
+    </DialogPrimitive.Root>
+  )
+}
 const DialogTrigger = DialogPrimitive.Trigger
 const DialogPortal = DialogPrimitive.Portal
 const DialogClose = DialogPrimitive.Close
@@ -29,8 +55,25 @@ const forwardWheel = (box, e) => {
   area.scrollTop += e.deltaY * step
 }
 
+// Popup-only size limits that make no sense on a page
+const stripPopupSizing = (cls) => String(cls || '').split(/\s+/).filter(c => !/^(max-h-|overflow-y-|overflow-)/.test(c)).join(' ')
+
 const DialogContent = React.forwardRef(({ className, children, ...props }, ref) => {
+  const inline = React.useContext(InlineContext)
   const boxRef = React.useRef(null)
+  if (inline) {
+    return (
+      <div
+        ref={ref}
+        className={cn(
+          "relative mx-auto w-full max-w-lg rounded-2xl border bg-card p-4 shadow-sm sm:p-6",
+          stripPopupSizing(className)
+        )}
+      >
+        {children}
+      </div>
+    )
+  }
   const onWheel = (e) => forwardWheel(boxRef.current, e)
   return (
   <DialogPortal>
@@ -73,7 +116,9 @@ const DialogFooter = ({ className, ...props }) => (
 )
 DialogFooter.displayName = "DialogFooter"
 
-const DialogTitle = React.forwardRef(({ className, ...props }, ref) => (
+const DialogTitle = React.forwardRef(({ className, ...props }, ref) => React.useContext(InlineContext) ? (
+  <h2 ref={ref} className={cn("text-lg font-semibold leading-none tracking-tight", className)} {...props} />
+) : (
   <DialogPrimitive.Title
     ref={ref}
     className={cn("text-lg font-semibold leading-none tracking-tight", className)}
@@ -82,7 +127,9 @@ const DialogTitle = React.forwardRef(({ className, ...props }, ref) => (
 ))
 DialogTitle.displayName = "DialogTitle"
 
-const DialogDescription = React.forwardRef(({ className, ...props }, ref) => (
+const DialogDescription = React.forwardRef(({ className, ...props }, ref) => React.useContext(InlineContext) ? (
+  <p ref={ref} className={cn("text-sm text-muted-foreground", className)} {...props} />
+) : (
   <DialogPrimitive.Description
     ref={ref}
     className={cn("text-sm text-muted-foreground", className)}
@@ -93,6 +140,7 @@ DialogDescription.displayName = "DialogDescription"
 
 export {
   Dialog,
+  DialogPageProvider,
   DialogPortal,
   DialogOverlay,
   DialogClose,

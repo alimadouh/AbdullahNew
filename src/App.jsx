@@ -22,7 +22,7 @@ import { Input } from './components/ui/input.jsx'
 import { Badge } from './components/ui/badge.jsx'
 import { Card, CardContent } from './components/ui/card.jsx'
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from './components/ui/select.jsx'
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogPageProvider } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
 import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, Brain, ClipboardCheck, Home, Wrench, ArrowLeft, FlaskConical, Stethoscope, Activity } from 'lucide-react'
@@ -144,16 +144,8 @@ export default function App() {
     if (saved) return saved === 'dark'
     return true // default to dark theme
   })
-  const [growthCalcOpen, setGrowthCalcOpen] = useState(false)
-  const [milestonesOpen, setMilestonesOpen] = useState(false)
-  const [phq9Open, setPhq9Open] = useState(false)
-  const [phq9EnOpen, setPhq9EnOpen] = useState(false)
-  const [gad7Open, setGad7Open] = useState(false)
-  const [gad7EnOpen, setGad7EnOpen] = useState(false)
-  const [fib4Open, setFib4Open] = useState(false)
-  const [curb65Open, setCurb65Open] = useState(false)
   // Tools that open as their own page (not a popup): ?section=tools&tool=<key>
-  const TOOL_PAGES = ['ckd']
+  const TOOL_PAGES = ['growth', 'milestones', 'phq9-ar', 'phq9-en', 'gad7-ar', 'gad7-en', 'fib4', 'ckd', 'curb65']
   // Tools page: specialty filter chip ('all' or a group name)
   const [toolFilter, setToolFilter] = useState('all')
   const [toolPage, setToolPage] = useState(() => (TOOL_PAGES.includes(urlParam('tool')) ? urlParam('tool') : null))
@@ -274,7 +266,11 @@ export default function App() {
     window.history.pushState({ tool: key }, '', `?section=tools&tool=${key}`)
     window.scrollTo(0, 0)
   }
+  // The tool's own close is also called when its page unmounts; only navigate if it is still open
+  const toolPageRef = useRef(toolPage)
+  toolPageRef.current = toolPage
   const closeTool = () => {
+    if (!toolPageRef.current) return
     if (window.history.state?.tool) window.history.back()
     else setToolPage(null)
   }
@@ -301,6 +297,7 @@ export default function App() {
       setMedView(null)
       window.history.replaceState(null, '', window.location.pathname)
     }
+    if (toolPageRef.current) window.history.replaceState(null, '', window.location.pathname)
     setToolPage(null)
     if (s === activeSection) return
     setCategoryFilter(s === 'pediatrics' ? '__ALL__' : '')
@@ -512,27 +509,27 @@ export default function App() {
   // Tools page groups (also counted on the home page)
   const toolGroups = [
     { section: 'Pediatrics', accent: '#0ea5e9', tools: [
-      { label: 'Growth Calculator', desc: 'WHO percentiles & Z-scores by age', Icon: Calculator, onClick: () => setGrowthCalcOpen(true) },
-      { label: 'Developmental Milestones', desc: 'Milestone checklist & red flags', Icon: Baby, onClick: () => setMilestonesOpen(true) },
+      { label: 'Growth Calculator', desc: 'WHO percentiles & Z-scores by age', Icon: Calculator, onClick: () => openTool('growth') },
+      { label: 'Developmental Milestones', desc: 'Milestone checklist & red flags', Icon: Baby, onClick: () => openTool('milestones') },
     ] },
     { section: 'Psychiatry', accent: '#8b5cf6', tools: [
       { label: 'PHQ-9 Depression Screening', desc: 'Patient Health Questionnaire', Icon: ClipboardCheck, languages: [
-        { label: 'العربية', onClick: () => setPhq9Open(true) },
-        { label: 'English', onClick: () => setPhq9EnOpen(true) },
+        { label: 'العربية', onClick: () => openTool('phq9-ar') },
+        { label: 'English', onClick: () => openTool('phq9-en') },
       ] },
       { label: 'GAD-7 Anxiety Screening', desc: 'Generalized Anxiety Disorder', Icon: ClipboardCheck, languages: [
-        { label: 'العربية', onClick: () => setGad7Open(true) },
-        { label: 'English', onClick: () => setGad7EnOpen(true) },
+        { label: 'العربية', onClick: () => openTool('gad7-ar') },
+        { label: 'English', onClick: () => openTool('gad7-en') },
       ] },
     ] },
     { section: 'Hepatology', accent: '#d97706', tools: [
-      { label: 'FIB-4 Score', desc: 'Liver fibrosis estimate (no biopsy)', Icon: FlaskConical, onClick: () => setFib4Open(true) },
+      { label: 'FIB-4 Score', desc: 'Liver fibrosis estimate (no biopsy)', Icon: FlaskConical, onClick: () => openTool('fib4') },
     ] },
     { section: 'Nephrology', accent: '#e11d48', tools: [
       { label: 'CKD Prognosis', desc: 'KDIGO risk by eGFR & albuminuria', Icon: Activity, onClick: () => openTool('ckd') },
     ] },
     { section: 'Respiratory', accent: '#0d9488', tools: [
-      { label: 'CURB-65 Score', desc: 'Pneumonia severity & disposition', Icon: Stethoscope, onClick: () => setCurb65Open(true) },
+      { label: 'CURB-65 Score', desc: 'Pneumonia severity & disposition', Icon: Stethoscope, onClick: () => openTool('curb65') },
     ] },
   ]
   const toolCount = toolGroups.reduce((n, g) => n + g.tools.length, 0)
@@ -672,7 +669,8 @@ export default function App() {
 
 
         {/* Tools section — clean cards grouped by their origin section */}
-        {activeSection === 'tools' && toolPage === 'ckd' && (
+        {/* A chosen tool opens as its own page (never a popup), so the phone keyboard can't cover it */}
+        {activeSection === 'tools' && toolPage && (
           <div className="mb-4 flex flex-col gap-3">
             <div>
               <Button variant="outline" size="sm" onClick={closeTool} className="gap-1.5">
@@ -680,7 +678,17 @@ export default function App() {
                 All Tools
               </Button>
             </div>
-            <CKDTool theme={theme} />
+            <DialogPageProvider>
+              {toolPage === 'growth' && <GrowthCalculator open onClose={closeTool} theme={theme} />}
+              {toolPage === 'milestones' && <DevMilestones open onClose={closeTool} />}
+              {toolPage === 'phq9-ar' && <PHQ9Dialog open onOpenChange={v => { if (!v) closeTool() }} theme={theme} lang="ar" />}
+              {toolPage === 'phq9-en' && <PHQ9Dialog open onOpenChange={v => { if (!v) closeTool() }} theme={theme} lang="en" />}
+              {toolPage === 'gad7-ar' && <GAD7Dialog open onOpenChange={v => { if (!v) closeTool() }} theme={theme} lang="ar" />}
+              {toolPage === 'gad7-en' && <GAD7Dialog open onOpenChange={v => { if (!v) closeTool() }} theme={theme} lang="en" />}
+              {toolPage === 'fib4' && <FIB4Dialog open onOpenChange={v => { if (!v) closeTool() }} theme={theme} />}
+              {toolPage === 'curb65' && <CURB65Dialog open onOpenChange={v => { if (!v) closeTool() }} theme={theme} />}
+              {toolPage === 'ckd' && <CKDTool theme={theme} />}
+            </DialogPageProvider>
           </div>
         )}
         {activeSection === 'tools' && !toolPage && (
@@ -779,12 +787,6 @@ export default function App() {
           </div>
         )}
 
-        <PHQ9Dialog open={phq9Open} onOpenChange={setPhq9Open} theme={theme} lang="ar" />
-        <PHQ9Dialog open={phq9EnOpen} onOpenChange={setPhq9EnOpen} theme={theme} lang="en" />
-        <GAD7Dialog open={gad7Open} onOpenChange={setGad7Open} theme={theme} lang="ar" />
-        <GAD7Dialog open={gad7EnOpen} onOpenChange={setGad7EnOpen} theme={theme} lang="en" />
-        <FIB4Dialog open={fib4Open} onOpenChange={setFib4Open} theme={theme} />
-        <CURB65Dialog open={curb65Open} onOpenChange={setCurb65Open} theme={theme} />
 
         {/* Library */}
         {activeSection === 'library' && (
@@ -900,19 +902,6 @@ export default function App() {
             />
           )
         )}
-
-        {/* Growth Calculator */}
-        <GrowthCalculator
-          open={growthCalcOpen}
-          onClose={() => setGrowthCalcOpen(false)}
-          theme={theme}
-        />
-
-        {/* Developmental Milestones */}
-        <DevMilestones
-          open={milestonesOpen}
-          onClose={() => setMilestonesOpen(false)}
-        />
 
         {/* Admin Panel Dialog */}
         <AdminPanel
