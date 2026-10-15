@@ -154,6 +154,8 @@ export default function App() {
   const [curb65Open, setCurb65Open] = useState(false)
   // Tools that open as their own page (not a popup): ?section=tools&tool=<key>
   const TOOL_PAGES = ['ckd']
+  // Tools page: specialty filter chip ('all' or a group name)
+  const [toolFilter, setToolFilter] = useState('all')
   const [toolPage, setToolPage] = useState(() => (TOOL_PAGES.includes(urlParam('tool')) ? urlParam('tool') : null))
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [feedbackOpen, setFeedbackOpen] = useState(false)
@@ -509,11 +511,11 @@ export default function App() {
 
   // Tools page groups (also counted on the home page)
   const toolGroups = [
-    { section: 'Pediatrics', accent: theme.text, tools: [
+    { section: 'Pediatrics', accent: '#0ea5e9', tools: [
       { label: 'Growth Calculator', desc: 'WHO percentiles & Z-scores by age', Icon: Calculator, onClick: () => setGrowthCalcOpen(true) },
       { label: 'Developmental Milestones', desc: 'Milestone checklist & red flags', Icon: Baby, onClick: () => setMilestonesOpen(true) },
     ] },
-    { section: 'Psychiatrics', accent: theme.text, tools: [
+    { section: 'Psychiatry', accent: '#8b5cf6', tools: [
       { label: 'PHQ-9 Depression Screening', desc: 'Patient Health Questionnaire', Icon: ClipboardCheck, languages: [
         { label: 'العربية', onClick: () => setPhq9Open(true) },
         { label: 'English', onClick: () => setPhq9EnOpen(true) },
@@ -523,13 +525,13 @@ export default function App() {
         { label: 'English', onClick: () => setGad7EnOpen(true) },
       ] },
     ] },
-    { section: 'Hepatology', accent: theme.text, tools: [
+    { section: 'Hepatology', accent: '#d97706', tools: [
       { label: 'FIB-4 Score', desc: 'Liver fibrosis estimate (no biopsy)', Icon: FlaskConical, onClick: () => setFib4Open(true) },
     ] },
-    { section: 'Nephrology', accent: theme.text, tools: [
-      { label: 'CKD Prognosis', desc: 'Risk by eGFR & albuminuria (KDIGO heat map)', Icon: Activity, onClick: () => openTool('ckd') },
+    { section: 'Nephrology', accent: '#e11d48', tools: [
+      { label: 'CKD Prognosis', desc: 'KDIGO risk by eGFR & albuminuria', Icon: Activity, onClick: () => openTool('ckd') },
     ] },
-    { section: 'Respiratory', accent: theme.text, tools: [
+    { section: 'Respiratory', accent: '#0d9488', tools: [
       { label: 'CURB-65 Score', desc: 'Pneumonia severity & disposition', Icon: Stethoscope, onClick: () => setCurb65Open(true) },
     ] },
   ]
@@ -682,43 +684,72 @@ export default function App() {
           </div>
         )}
         {activeSection === 'tools' && !toolPage && (
-          <div className="mb-4 flex flex-col gap-7">
-            {toolGroups.map(({ section, accent, tools }) => (
-              <div key={section}>
-                {/* Group label + divider line */}
-                <div className="mb-3 flex items-center gap-2.5">
-                  <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: accent }} />
-                  <span className="text-xs font-bold uppercase tracking-wide" style={{ color: accent }}>{section}</span>
-                  <span className="h-px flex-1 rounded-full" style={{ backgroundColor: accent + '33' }} />
+          <div className="mb-4 flex flex-col gap-5">
+            {/* Specialty filter — tap a chip to see only that group */}
+            <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="tablist" aria-label="Filter tools by specialty">
+              {[{ section: 'all', label: 'All', accent: theme.text, count: toolCount }, ...toolGroups.map(g => ({ section: g.section, label: g.section, accent: g.accent, count: g.tools.length }))].map(c => {
+                const on = toolFilter === c.section
+                return (
+                  <button
+                    key={c.section}
+                    role="tab"
+                    aria-selected={on}
+                    onClick={() => setToolFilter(c.section)}
+                    className="flex shrink-0 items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-semibold transition-colors cursor-pointer"
+                    style={on ? { background: c.accent, borderColor: c.accent, color: '#fff' } : { color: c.accent }}
+                  >
+                    {c.label}
+                    <span
+                      className="rounded-full px-1.5 text-[10px] font-bold tabular-nums"
+                      style={on ? { background: 'rgba(255,255,255,0.25)' } : { background: c.accent + '1f' }}
+                    >
+                      {c.count}
+                    </span>
+                  </button>
+                )
+              })}
+            </div>
+
+            {toolGroups.filter(g => toolFilter === 'all' || g.section === toolFilter).map(({ section, accent, tools }) => (
+              <section key={section} className="flex flex-col gap-2.5">
+                {/* Group header: colour bar + name + count */}
+                <div className="flex items-center gap-2">
+                  <span className="h-4 w-1 rounded-full" style={{ backgroundColor: accent }} />
+                  <h2 className="font-display text-sm font-bold" style={{ color: accent }}>{section}</h2>
+                  <span className="text-xs text-muted-foreground">· {tools.length} {tools.length === 1 ? 'tool' : 'tools'}</span>
                 </div>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
                   {tools.map((tool) => {
                     const Icon = tool.Icon
                     const iconTile = (
                       <span
                         className="lift-icon flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
-                        style={{ background: `linear-gradient(135deg, ${accent}, ${accent}cc)`, boxShadow: `0 6px 14px -5px ${accent}80` }}
+                        style={{ background: `linear-gradient(135deg, ${accent}, ${accent}c0)`, boxShadow: `0 6px 14px -6px ${accent}99` }}
                       >
                         <Icon className="h-5 w-5 text-white" />
                       </span>
                     )
+                    const text = (
+                      <div className="min-w-0 flex-1">
+                        <div className="font-display text-sm font-semibold leading-tight">{tool.label}</div>
+                        <div className="mt-0.5 truncate text-xs text-muted-foreground">{tool.desc}</div>
+                      </div>
+                    )
                     if (tool.languages) {
+                      // Same card size as the others; the two languages are small buttons on the right
                       return (
-                        <div key={tool.label} className="lift-card flex flex-col gap-3 rounded-2xl border bg-card p-4 shadow-sm" style={{ '--lift': accent }}>
-                          <div className="flex items-center gap-3">
-                            {iconTile}
-                            <div className="min-w-0">
-                              <div className="font-display text-sm font-semibold leading-tight">{tool.label}</div>
-                              <div className="text-xs text-muted-foreground">{tool.desc}</div>
-                            </div>
-                          </div>
-                          <div className="flex gap-2">
+                        <div key={tool.label} className="lift-card flex items-center gap-3 rounded-2xl border bg-card p-3.5 shadow-sm" style={{ '--lift': accent, borderColor: accent + '40' }}>
+                          {iconTile}
+                          {text}
+                          <div className="flex shrink-0 flex-col gap-1.5">
                             {tool.languages.map((lang) => (
                               <button
                                 key={lang.label}
                                 onClick={lang.onClick}
-                                className="flex-1 rounded-lg px-3 py-2 text-xs font-semibold text-white cursor-pointer transition-transform hover:-translate-y-0.5"
-                                style={{ backgroundColor: accent }}
+                                className="min-w-[64px] rounded-lg px-2.5 py-1 text-[11px] font-semibold cursor-pointer transition-colors"
+                                style={{ background: accent + '1a', color: accent }}
+                                onMouseEnter={(e) => { e.currentTarget.style.background = accent; e.currentTarget.style.color = '#fff' }}
+                                onMouseLeave={(e) => { e.currentTarget.style.background = accent + '1a'; e.currentTarget.style.color = accent }}
                               >
                                 {lang.label}
                               </button>
@@ -731,20 +762,19 @@ export default function App() {
                       <button
                         key={tool.label}
                         onClick={tool.onClick}
-                        className="lift-card group flex items-center gap-3 rounded-2xl border bg-card p-4 text-left shadow-sm cursor-pointer"
-                        style={{ '--lift': accent }}
+                        className="lift-card group flex items-center gap-3 rounded-2xl border bg-card p-3.5 text-left shadow-sm cursor-pointer"
+                        style={{ '--lift': accent, borderColor: accent + '40' }}
                       >
                         {iconTile}
-                        <div className="min-w-0 flex-1">
-                          <div className="font-display text-sm font-semibold leading-tight">{tool.label}</div>
-                          <div className="text-xs text-muted-foreground">{tool.desc}</div>
-                        </div>
-                        <ChevronRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" style={{ color: accent }} />
+                        {text}
+                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full" style={{ background: accent + '1a' }}>
+                          <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" style={{ color: accent }} />
+                        </span>
                       </button>
                     )
                   })}
                 </div>
-              </div>
+              </section>
             ))}
           </div>
         )}
