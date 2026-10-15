@@ -109,6 +109,8 @@ export default function App() {
   // The open category and search come back after a refresh (kept in the page address)
   const urlParam = (k) => (typeof window === 'undefined' ? '' : new URLSearchParams(window.location.search).get(k) || '')
   const [categoryFilter, setCategoryFilter] = useState(() => (urlParam('med') ? '' : urlParam('cat')))
+  // Vaccination picker: 'obligatory' schedule or 'optional' (non-obligatory) vaccines
+  const [vaccGroup, setVaccGroup] = useState('obligatory')
   const [searchQuery, setSearchQuery] = useState(() => (urlParam('med') ? '' : urlParam('q')))
   const [adminOpen, setAdminOpen] = useState(false)
   const [dashOpen, setDashOpen] = useState(false)
@@ -765,20 +767,31 @@ export default function App() {
                 />
               </div>
             ) : (
-              /* Category picker grid (vaccination: obligatory schedule first, then non-obligatory) */
-              <div className="flex flex-col gap-5">
-              {(categoryList.some(c => c.optional)
-                ? [
-                    { title: 'Obligatory Vaccination', cats: categoryList.filter(c => !c.optional) },
-                    { title: 'Non-obligatory Vaccination', cats: categoryList.filter(c => c.optional) },
-                  ]
-                : [{ title: '', cats: categoryList }]
-              ).map(group => (
-              <div key={group.title || 'all'} className="flex flex-col gap-2.5">
-                {group.title && (
-                  <h2 className="font-display text-sm font-semibold uppercase tracking-wide" style={{ color: theme.text }}>{group.title}</h2>
-                )}
-              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
+              /* Category picker grid (vaccination: a switch picks obligatory or non-obligatory) */
+              <div className="flex flex-col gap-3">
+              {categoryList.some(c => c.optional) && (
+                <div className="grid grid-cols-2 gap-1 rounded-2xl border bg-card p-1" role="tablist" aria-label="Vaccination type">
+                  {[{ key: 'obligatory', label: 'Obligatory' }, { key: 'optional', label: 'Non-obligatory' }].map(t => {
+                    const on = vaccGroup === t.key
+                    return (
+                      <button
+                        key={t.key}
+                        role="tab"
+                        aria-selected={on}
+                        onClick={() => setVaccGroup(t.key)}
+                        className="rounded-xl px-3 py-2 text-sm font-semibold transition-colors cursor-pointer"
+                        style={on ? { background: theme.primary, color: theme.fg } : { color: theme.text }}
+                      >
+                        {t.label}
+                      </button>
+                    )
+                  })}
+                </div>
+              )}
+              {[{ cats: categoryList.some(c => c.optional)
+                ? categoryList.filter(c => (vaccGroup === 'optional') === c.optional)
+                : categoryList }].map(group => (
+              <div key="cats" className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
                 {group.cats.map((cat) => {
                   const SecIcon = SECTION_ITEMS.find(s => s.key === activeSection)?.Icon || Pill
                   return (
@@ -802,7 +815,6 @@ export default function App() {
                     </button>
                   )
                 })}
-              </div>
               </div>
               ))}
               </div>
