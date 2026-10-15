@@ -10,6 +10,7 @@ import PHQ9Dialog from './components/PHQ9Dialog.jsx'
 import PHQ9PatientForm from './components/PHQ9PatientForm.jsx'
 import GAD7Dialog from './components/GAD7Dialog.jsx'
 import FIB4Dialog from './components/FIB4Dialog.jsx'
+import CKDDialog from './components/CKDDialog.jsx'
 import CURB65Dialog from './components/CURB65Dialog.jsx'
 import { TopBar, BottomBar } from './components/AppNav.jsx'
 import HomePage from './components/HomePage.jsx'
@@ -24,7 +25,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, Brain, ClipboardCheck, Home, Wrench, ArrowLeft, FlaskConical, Stethoscope } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, Brain, ClipboardCheck, Home, Wrench, ArrowLeft, FlaskConical, Stethoscope, Activity } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -151,6 +152,7 @@ export default function App() {
   const [gad7EnOpen, setGad7EnOpen] = useState(false)
   const [fib4Open, setFib4Open] = useState(false)
   const [curb65Open, setCurb65Open] = useState(false)
+  const [ckdOpen, setCkdOpen] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [feedbackOpen, setFeedbackOpen] = useState(false)
   const [feedbackMsg, setFeedbackMsg] = useState('')
@@ -510,6 +512,9 @@ export default function App() {
     { section: 'Hepatology', accent: theme.text, tools: [
       { label: 'FIB-4 Score', desc: 'Liver fibrosis estimate (no biopsy)', Icon: FlaskConical, onClick: () => setFib4Open(true) },
     ] },
+    { section: 'Nephrology', accent: theme.text, tools: [
+      { label: 'CKD Prognosis', desc: 'Risk by eGFR & albuminuria (KDIGO heat map)', Icon: Activity, onClick: () => setCkdOpen(true) },
+    ] },
     { section: 'Respiratory', accent: theme.text, tools: [
       { label: 'CURB-65 Score', desc: 'Pneumonia severity & disposition', Icon: Stethoscope, onClick: () => setCurb65Open(true) },
     ] },
@@ -725,6 +730,7 @@ export default function App() {
         <GAD7Dialog open={gad7EnOpen} onOpenChange={setGad7EnOpen} theme={theme} lang="en" />
         <FIB4Dialog open={fib4Open} onOpenChange={setFib4Open} theme={theme} />
         <CURB65Dialog open={curb65Open} onOpenChange={setCurb65Open} theme={theme} />
+        <CKDDialog open={ckdOpen} onOpenChange={setCkdOpen} theme={theme} />
 
         {/* Library */}
         {activeSection === 'library' && (
