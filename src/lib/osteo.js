@@ -137,3 +137,33 @@ export function assess(input, stage) {
 
   return { stage, thr, category, reason: 'frax', crfs, chart, hipChart, base, official, adjustments, mof, hip }
 }
+
+// Femoral neck BMD entry, as on the FRAX form. Machine values (g/cm²) are turned into a T-score;
+// a machine is listed only once its conversion is confirmed from a primary source.
+// FRAX reference: NHANES III femoral neck, white women aged 20–29 (also used for men):
+// mean 0.858 g/cm², SD 0.120 (Hologic scale; Fujiwara et al. 2008 citing Looker et al. 1998).
+const hologicToT = (bmd) => (bmd - 0.858) / 0.120
+// Other machines → Hologic through standardised BMD (Lu et al. 2001, femoral neck, as printed in
+// Fan et al. 2010): sBMD = 1.087·Hologic + 0.019 = 0.939·Lunar − 0.023 = 0.985·Norland + 0.006.
+// FRAX does not publish its own conversion, so these two are estimates.
+const viaSbmd = (a, b) => (bmd) => hologicToT((a * bmd + b - 0.019) / 1.087)
+
+// Same list and order as the FRAX form. A machine converts only when its formula is published.
+export const BMD_TYPES = [
+  { value: 'none', label: 'No BMD available', unit: '' },
+  { value: 'lunar', label: 'GE-Lunar', unit: 'g/cm²', toT: viaSbmd(0.939, -0.023), estimate: true },
+  { value: 'hologic', label: 'Hologic', unit: 'g/cm²', toT: hologicToT },
+  { value: 'norland', label: 'Norland', unit: 'g/cm²', toT: viaSbmd(0.985, 0.006), estimate: true },
+  { value: 'tscore', label: 'T-score', unit: 'T' },
+  { value: 'dms', label: 'DMS/Medilink', unit: 'g/cm²' },
+  { value: 'imex', label: 'IMEX/Medical', unit: 'g/cm²' },
+  { value: 'mindways', label: 'Mindways QCT', unit: 'g/cm²' },
+  { value: 'osteosys', label: 'Osteosys', unit: 'g/cm²' },
+]
+
+export function toTScore(type, value) {
+  if (!Number.isFinite(value)) return NaN
+  if (type === 'tscore') return value
+  const t = BMD_TYPES.find(b => b.value === type)
+  return t?.toT ? t.toT(value) : NaN
+}

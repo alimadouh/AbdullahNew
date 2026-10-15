@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Bone, RotateCcw, Calculator, Pill, Activity, ClipboardList, Dumbbell, AlertTriangle } from 'lucide-react'
 import { Input } from './ui/input.jsx'
 import { Button } from './ui/button.jsx'
-import { assess, bmi, THRESHOLD_ROWS } from '../lib/osteo.js'
+import { assess, bmi, THRESHOLD_ROWS, BMD_TYPES, toTScore } from '../lib/osteo.js'
 
 // Osteoporosis Risk: the FRAX questionnaire (Kuwait), then the Kuwait Osteoporosis Guidelines 2022
 // decision. Without BMD → LAT/UAT (do DXA or not); with femoral neck T-score → IT/UAT (treatment).
@@ -163,20 +163,24 @@ export default function OsteoTool({ theme }) {
   const [weight, setWeight] = useState('')
   const [height, setHeight] = useState('')
   const [q, setQ] = useState(EMPTY)
-  const [tScore, setTScore] = useState('')
+  const [bmdType, setBmdType] = useState('none')
+  const [bmdValue, setBmdValue] = useState('')
   const [result, setResult] = useState(null)
   const [error, setError] = useState('')
 
   const calculate = () => {
-    const a = num(age), w = num(weight), h = num(height), t = num(tScore)
+    const a = num(age), w = num(weight), h = num(height), t = bmdType === 'none' ? NaN : toTScore(bmdType, num(bmdValue))
     if (!(a >= 40 && a <= 90)) return setError('Enter an age between 40 and 90 years.'), setResult(null)
     if (!(w > 0 && h > 0)) return setError('Enter weight and height.'), setResult(null)
     if (a < 50) return setError('The FRAX Kuwait charts start at age 50.'), setResult(null)
+    const device = BMD_TYPES.find(b => b.value === bmdType)
+    if (bmdType !== 'none' && bmdType !== 'tscore' && !device?.toT) return setError(`There is no published ${device?.label} conversion to the FRAX T-score. Choose "T-score" and enter the femoral neck T-score instead.`), setResult(null)
+    if (bmdType !== 'none' && !Number.isFinite(t)) return setError('Enter the femoral neck BMD value, or choose "No BMD available".'), setResult(null)
     const withBmd = Number.isFinite(t)
     const r = assess({ age: a, sex, weight: w, height: h, factors: { ...q, fragility: 'none' }, fnT: t }, withBmd ? 'after' : 'before')
-    setError(''); setResult({ ...r, age: a, bmiValue: bmi(w, h), withBmd, tClamped: withBmd && (t < -4 || t > 1) })
+    setError(''); setResult({ ...r, age: a, bmiValue: bmi(w, h), withBmd, tScore: t, bmdType, tClamped: withBmd && (t < -4 || t > 1) })
   }
-  const clear = () => { setAge(''); setSex('female'); setWeight(''); setHeight(''); setQ(EMPTY); setTScore(''); setResult(null); setError('') }
+  const clear = () => { setAge(''); setSex('female'); setWeight(''); setHeight(''); setQ(EMPTY); setBmdType('none'); setBmdValue(''); setResult(null); setError('') }
 
   const d = result ? decision(result) : null
   const color = result ? RISK[result.category].color : accent
@@ -227,8 +231,14 @@ export default function OsteoTool({ theme }) {
         ))}
         <Row n={12} label="Femoral neck BMD">
           <div className="flex items-center gap-2">
-            <span className="whitespace-nowrap rounded-md border bg-muted/40 px-2 py-1.5 text-xs font-medium">T-score</span>
-            <Input className="w-20" type="number" inputMode="decimal" step="0.1" value={tScore} onChange={e => setTScore(e.target.value)} placeholder="-2.4" />
+            <select value={bmdType} onChange={e => { setBmdType(e.target.value); setBmdValue('') }} aria-label="Femoral neck BMD type"
+              className="h-9 max-w-[9.5rem] cursor-pointer rounded-md border bg-background px-2 text-xs font-medium">
+              {BMD_TYPES.map(b => <option key={b.value} value={b.value}>{b.label}</option>)}
+            </select>
+            {bmdType !== 'none' && (
+              <Input className="w-20" type="number" inputMode="decimal" step={bmdType === 'tscore' ? '0.1' : '0.001'} value={bmdValue}
+                onChange={e => setBmdValue(e.target.value)} placeholder={bmdType === 'tscore' ? '-2.4' : 'g/cm²'} />
+            )}
           </div>
         </Row>
       </div>
@@ -270,6 +280,7 @@ export default function OsteoTool({ theme }) {
             )}
             <p className="mt-2 text-[10px] text-muted-foreground">
               FRAX Kuwait chart estimate{result.chart?.low != null && ` (chart range ${f1(result.chart.low)}–${f1(result.chart.high)}%)`}.
+              {result.withBmd && result.bmdType !== 'tscore' && ` Femoral neck T-score ${result.tScore.toFixed(1)} (NHANES III reference, from ${BMD_TYPES.find(b => b.value === result.bmdType)?.label} BMD${BMD_TYPES.find(b => b.value === result.bmdType)?.estimate ? '; estimated conversion, may differ slightly from fraxplus.org' : ''}).`}
               {result.withBmd && q.secondary && ' Secondary osteoporosis is not used when BMD is entered.'}
               {result.tClamped && ' T-score outside the chart range (−4.0 to +1.0) was set to the nearest chart value.'}
             </p>
