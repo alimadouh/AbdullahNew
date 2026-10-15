@@ -69,12 +69,16 @@ export default function GAD7Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
   const [resultsBlobUrl, setResultsBlobUrl] = useState(null)
   const pollRef = useRef(null)
 
+  // Each session start gets a number; leaving the page bumps it, so a late reply can't start polling
+  const genRef = useRef(0)
   const cleanup = useCallback(() => {
+    genRef.current += 1
     if (pollRef.current) { clearInterval(pollRef.current); pollRef.current = null }
   }, [])
 
   const createSession = useCallback(async () => {
     cleanup()
+    const gen = genRef.current
     setStatus('loading')
     setResponse(null)
     setError('')
@@ -88,12 +92,14 @@ export default function GAD7Dialog({ open, onOpenChange, theme, lang = 'ar' }) {
         body: JSON.stringify({ action: 'create' }),
       })
       const data = await res.json()
+      if (gen !== genRef.current) return
       if (!data.sessionId) throw new Error('Failed to create session')
       setSessionId(data.sessionId)
 
       const url = `${window.location.origin}/gad7/${lang}/${data.sessionId}`
       setSessionUrl(url)
       const dataUrl = await QRCode.toDataURL(url, { width: 280, margin: 2, color: { dark: theme?.text || '#0d9488' } })
+      if (gen !== genRef.current) return
       setQrDataUrl(dataUrl)
       setStatus('qr')
 

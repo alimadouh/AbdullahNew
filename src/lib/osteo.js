@@ -107,11 +107,11 @@ const SINGLE_CRF = {
     },
   },
 }
-// Factors each chart counts (secondary osteoporosis only without BMD, weighted like rheumatoid arthritis)
-const CHART_FACTORS = {
-  bmi: ['prevFracture', 'parentHip', 'smoking', 'glucocorticoids', 'ra', 'secondary', 'alcohol'],
-  bmd: ['prevFracture', 'parentHip', 'smoking', 'glucocorticoids', 'ra', 'alcohol'],
-}
+// Factors the charts count. Secondary osteoporosis uses the same weight as rheumatoid arthritis, and
+// only when BMD is not entered and RA = no (Kanis et al., WHO Technical Report 2007, p. 197), so it
+// shares RA's slot.
+const CHART_FACTORS = ['prevFracture', 'parentHip', 'smoking', 'glucocorticoids', 'ra', 'alcohol']
+const effectiveFactors = (f, kind) => ({ ...f, ra: !!(f.ra || f.t2dm || f.adt || (kind === 'bmi' && f.secondary)) })
 
 // Log weight of each factor (ln of probability with the factor ÷ without) for this sex, outcome and age
 export function factorWeights({ sex, outcome, kind, age }) {
@@ -133,20 +133,41 @@ export function factorWeights({ sex, outcome, kind, age }) {
   return w
 }
 
-// Chart value placed inside the chart range by the weight of the patient's own risk factors
+// Chart value placed inside the chart range by the weight of the patient's own risk factors.
+// A risk factor can never lower the result: each set takes the highest value of itself and of every
+// smaller set it contains (adding a weak factor moves to the next chart row, whose low end is lower).
 export function weightedChartProbability({ sex, outcome, kind, age, x, factors }) {
-  const present = CHART_FACTORS[kind].filter(k => factors[k])
-  const base = chartProbability({ sex, outcome, kind, age, x, crfs: present.length })
-  if (!base || base.low == null || base.crfs !== present.length) return { ...base, position: null }
+  const eff = effectiveFactors(factors, kind)
+  const present = CHART_FACTORS.filter(k => eff[k])
   const w = factorWeights({ sex, outcome, kind, age })
-  const all = CHART_FACTORS[kind].map(k => w[k]).sort((p, q) => p - q)
-  const n = present.length
-  const lo = all.slice(0, n).reduce((s, v) => s + v, 0)
-  const hi = all.slice(-n).reduce((s, v) => s + v, 0)
-  const sum = present.reduce((s, k) => s + w[k], 0)
-  const position = hi > lo ? clamp((sum - lo) / (hi - lo), 0, 1) : 0.5
-  const value = Math.exp(Math.log(base.low) + position * (Math.log(base.high) - Math.log(base.low)))
-  return { ...base, value, chartMean: base.value, position }
+  const sorted = CHART_FACTORS.map(k => w[k]).sort((p, q) => p - q)
+  const placed = (set) => {
+    const base = chartProbability({ sex, outcome, kind, age, x, crfs: set.length })
+    if (!base) return { base, value: NaN, position: null }
+    if (base.low == null || base.crfs !== set.length) return { base, value: base.value, position: null }
+    const n = set.length
+    const lo = sorted.slice(0, n).reduce((a, v) => a + v, 0)
+    const hi = sorted.slice(-n).reduce((a, v) => a + v, 0)
+    const sum = set.reduce((a, k) => a + w[k], 0)
+    const position = hi > lo ? clamp((sum - lo) / (hi - lo), 0, 1) : 0.5
+    // log scale inside the range; linear when the chart prints 0.0 at the low end
+    const value = base.low > 0
+      ? Math.exp(Math.log(base.low) + position * (Math.log(base.high) - Math.log(base.low)))
+      : base.low + position * (base.high - base.low)
+    return { base, value, position }
+  }
+  const memo = new Map()
+  const best = (set) => {
+    const key = set.join(',')
+    if (memo.has(key)) return memo.get(key)
+    let v = placed(set).value
+    for (const k of set) v = Math.max(v, best(set.filter(j => j !== k)))
+    memo.set(key, v)
+    return v
+  }
+  const top = placed(present)
+  if (!top.base) return null
+  return { ...top.base, value: best(present), chartMean: top.base.value, position: top.position }
 }
 
 // With BMD the paper charts assume BMI 24. Published FRAX outputs show the small BMI effect that
@@ -165,6 +186,9 @@ export function bmiFactorWithBmd(outcome, bmiValue) {
   return v / ref
 }
 
+// FRAX shows probabilities with one decimal below 10 % and whole numbers from 10 %
+export const roundAsShown = (v) => (v < 10 ? Math.round(v * 10) / 10 : Math.round(v))
+
 export const bmi = (kg, cm) => (kg > 0 && cm > 0 ? kg / Math.pow(cm / 100, 2) : NaN)
 
 /**
@@ -174,10 +198,8 @@ export const bmi = (kg, cm) => (kg > 0 && cm > 0 ? kg / Math.pow(cm / 100, 2) : 
  * T2DM and androgen deprivation therapy are entered "as rheumatoid arthritis" (enhancers slide).
  */
 export function countCrfs(f, kind) {
-  const ra = f.ra || f.t2dm || f.adt
-  let n = [f.prevFracture, f.parentHip, f.smoking, f.glucocorticoids, ra, f.alcohol].filter(Boolean).length
-  if (kind === 'bmi' && f.secondary) n += 1
-  return n
+  const e = effectiveFactors(f, kind)
+  return CHART_FACTORS.filter(k => e[k]).length
 }
 
 /**
@@ -197,10 +219,14 @@ export function assess(input, stage) {
   const kind = stage === 'before' ? 'bmi' : 'bmd'
   const x = kind === 'bmi' ? bmi(weight, height) : fnT
   const crfs = countCrfs(f, kind)
-  const fw = { ...f, ra: f.ra || f.t2dm || f.adt }
-  const withBmi = (r, outcome) => (r && kind === 'bmd' ? { ...r, value: r.value * bmiFactorWithBmd(outcome, bmi(weight, height)) } : r)
-  const chart = Number.isFinite(x) ? withBmi(weightedChartProbability({ sex, outcome: 'mof', kind, age, x, factors: fw }), 'mof') : null
-  const hipChart = Number.isFinite(x) ? withBmi(weightedChartProbability({ sex, outcome: 'hip', kind, age, x, factors: fw }), 'hip') : null
+  // With BMD, the BMI effect scales the value and the printed chart range alike
+  const withBmi = (r, outcome) => {
+    if (!r || kind !== 'bmd') return r
+    const k = bmiFactorWithBmd(outcome, bmi(weight, height))
+    return { ...r, value: r.value * k, low: r.low == null ? null : r.low * k, high: r.high == null ? null : r.high * k }
+  }
+  const chart = Number.isFinite(x) ? withBmi(weightedChartProbability({ sex, outcome: 'mof', kind, age, x, factors: f }), 'mof') : null
+  const hipChart = Number.isFinite(x) ? withBmi(weightedChartProbability({ sex, outcome: 'hip', kind, age, x, factors: f }), 'hip') : null
   const official = Number.isFinite(overrideMof) && overrideMof > 0
   const base = official ? overrideMof : chart?.value
   if (!Number.isFinite(base)) return { stage, thr, category: null, crfs, chart, hipChart }
@@ -218,11 +244,15 @@ export function assess(input, stage) {
     if (d.factor !== 1) adjustments.push({ key: 'ls', label: `Lumbar spine ${d.sd} SD lower than femoral neck`, factor: d.factor })
   }
   const mof = Math.min(100, adjustments.reduce((v, a) => v * a.factor, base))
-  const hip = Number.isFinite(overrideHip) && overrideHip > 0 ? overrideHip : hipChart?.value ?? null
+  // Hip fracture is one of the major osteoporotic fractures, so it can never be higher than MOF
+  const hipRaw = Number.isFinite(overrideHip) && overrideHip > 0 ? overrideHip : hipChart?.value ?? null
+  const hip = Number.isFinite(hipRaw) ? Math.min(hipRaw, mof) : null
 
+  // Decide on the number the doctor sees (as FRAX shows it), so the badge never contradicts it
+  const shown = roundAsShown(mof)
   let category
-  if (stage === 'before') category = mof < thr.lat ? 'low' : mof > thr.uat ? 'veryHigh' : 'dxa'
-  else category = mof < thr.it ? 'low' : mof > thr.uat ? 'veryHigh' : 'high'
+  if (stage === 'before') category = shown < thr.lat ? 'low' : shown > thr.uat ? 'veryHigh' : 'dxa'
+  else category = shown < thr.it ? 'low' : shown > thr.uat ? 'veryHigh' : 'high'
 
   return { stage, thr, category, reason: 'frax', crfs, chart, hipChart, base, official, adjustments, mof, hip }
 }
@@ -239,6 +269,10 @@ export const BMD_TYPES = [
   { value: 'none', label: 'No BMD available', unit: '' },
   { value: 'hologic', label: 'Hologic', unit: 'g/cm²', toT: hologicToT },
 ]
+
+// Plausible femoral neck BMD on a Hologic scanner (g/cm²); anything else is likely a typing error
+// (for example a T-score typed into the g/cm² box)
+export const HOLOGIC_RANGE = { min: 0.2, max: 1.6 }
 
 export function toTScore(type, value) {
   if (!Number.isFinite(value)) return NaN

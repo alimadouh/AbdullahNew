@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { HeartPulse, RotateCcw, Calculator, AlertTriangle } from 'lucide-react'
 import { Input } from './ui/input.jsx'
 import { Button } from './ui/button.jsx'
 import {
   calculate, MODELS, REGIONS, COUNTRIES, regionForCountry,
-  RESULT_EXPLANATION, UNIT_KINDS, segmentRangeText,
+  RESULT_EXPLANATION, UNIT_KINDS, segmentRangeText, convertUnit,
 } from '../lib/cvd/index.js'
 
 // 10-year cardiovascular risk (ESC SCORE2 family). The maths lives in src/lib/cvd (tested against the
@@ -12,10 +12,10 @@ import {
 
 const CALCS = [
   { id: 'score2', label: 'SCORE2', sub: '40–69 years' },
-  { id: 'score2op', label: 'SCORE2-OP', sub: '70+ years' },
+  { id: 'score2op', label: 'SCORE2-OP', sub: '70–89 years' },
   { id: 'score2diabetes', label: 'SCORE2-Diabetes', sub: 'Type 2 diabetes' },
 ]
-const EMPTY = { region: '', country: '', sex: 'female', age: '', diabetesAge: '', smoking: false, sbp: '', totalCholesterol: '', hdl: '', hba1c: '', egfr: '' }
+const EMPTY = { region: '', country: '', sex: '', age: '', diabetesAge: '', smoking: false, sbp: '', totalCholesterol: '', hdl: '', hba1c: '', egfr: '' }
 
 function Toggle({ on, onChange, label }) {
   return (
@@ -44,7 +44,7 @@ function UnitSwitch({ value, options, onChange, accent }) {
   return (
     <div className="flex overflow-hidden rounded-md border text-[11px] font-semibold">
       {options.map(([v, l]) => (
-        <button key={v} type="button" onClick={() => onChange(v)} className="px-1.5 py-1.5 cursor-pointer"
+        <button key={v} type="button" aria-pressed={value === v} onClick={() => onChange(v)} className="px-1.5 py-1.5 cursor-pointer"
           style={value === v ? { background: accent, color: '#fff' } : undefined}>{l}</button>
       ))}
     </div>
@@ -52,23 +52,28 @@ function UnitSwitch({ value, options, onChange, accent }) {
 }
 
 // Risk bar: the category segments for this patient, with the patient's risk marked
+// White text is hard to read on yellow and orange; use dark text there
+const textOn = (bg) => (['#e8b326', '#e8832a'].includes(String(bg).toLowerCase()) ? '#1f2937' : '#ffffff')
+
 function RiskBar({ result }) {
   const max = result.scheme.gaugeMax
   const pos = (v) => `${Math.min(100, (Math.min(v, max) / max) * 100)}%`
   return (
-    <div className="pt-7 pb-5">
-      <div className="relative flex h-3 overflow-visible rounded-full">
-        {result.segments.map(s => (
-          <div key={s.label} className="h-3 first:rounded-l-full last:rounded-r-full" style={{ width: `${((Math.min(s.to, max) - s.from) / max) * 100}%`, background: s.color }} />
-        ))}
+    <div className="pt-7 pb-6">
+      <div className="relative h-3">
+        <div className="flex h-3 overflow-hidden rounded-full">
+          {result.segments.map(s => (
+            <div key={s.label} className="h-3" style={{ width: `${((Math.min(s.to, max) - s.from) / max) * 100}%`, background: s.color }} />
+          ))}
+        </div>
         <div className="absolute -top-7 flex -translate-x-1/2 flex-col items-center transition-all duration-500" style={{ left: pos(result.riskPercent) }}>
           <span className="rounded-md bg-foreground px-1.5 py-0.5 text-[10px] font-bold text-background tabular-nums">{result.display}%</span>
           <span className="h-0 w-0 border-x-4 border-t-4 border-x-transparent border-t-foreground" />
         </div>
-        {result.thresholds.map(t => (
+        {result.thresholds.map((t, i) => (
           <div key={t} className="absolute top-3" style={{ left: pos(t) }}>
             <span className="absolute left-0 top-0 h-2 w-px bg-foreground/50" />
-            <span className="absolute left-0 top-2 -translate-x-1/2 text-[10px] font-semibold text-muted-foreground tabular-nums">{t}%</span>
+            <span className={`absolute top-2 whitespace-nowrap text-[10px] font-semibold text-muted-foreground tabular-nums ${i === 0 && result.thresholds.length > 1 ? 'right-0 pr-0.5 text-right' : 'left-0 pl-0.5'}`}>{t}%</span>
           </div>
         ))}
       </div>
@@ -92,6 +97,16 @@ export default function CVDTool({ theme }) {
   const ph = (field, unit) => { const l = lim(field, unit); return `${l.min}–${l.max}` }
 
   const pickCalc = (id) => { setCalc(id); setResult(null); setErrors({}) }
+  // Switching a unit converts what is already typed, so the value keeps its meaning
+  const roundTo = (v, unit) => (unit === 'mgdl' || unit === 'mmolmol' ? String(Math.round(v)) : String(Math.round(v * 10) / 10))
+  const conv = (kind, raw, from, to) => {
+    const v = parseFloat(String(raw).replace(',', '.'))
+    return Number.isFinite(v) ? roundTo(convertUnit(kind, v, from, to), to) : raw
+  }
+  const switchChol = (u) => { if (u === cholUnit) return; setF(p => ({ ...p, totalCholesterol: conv('cholesterol', p.totalCholesterol, cholUnit, u), hdl: conv('cholesterol', p.hdl, cholUnit, u) })); setCholUnit(u) }
+  const switchHba1c = (u) => { if (u === hba1cUnit) return; setF(p => ({ ...p, hba1c: conv('hba1c', p.hba1c, hba1cUnit, u) })); setHba1cUnit(u) }
+  // Any change to the answers hides the old result until Calculate is pressed again
+  useEffect(() => { setResult(null) }, [f, cholUnit, hba1cUnit])
   const pickCountry = (country) => setF(p => ({ ...p, country, region: country ? regionForCountry(country) : p.region }))
 
   const run = () => {
@@ -99,7 +114,7 @@ export default function CVDTool({ theme }) {
     if (!r.ok) { setErrors(r.errors); setResult(null); return }
     setErrors({}); setResult(r)
   }
-  const clear = () => { setF(EMPTY); setResult(null); setErrors({}) }
+  const clear = () => { setF(EMPTY); setCholUnit('mmol'); setHba1cUnit('percent'); setResult(null); setErrors({}) }
 
   const cholLabel = UNIT_KINDS.cholesterol.units[cholUnit]
   const color = result?.category?.color
@@ -142,7 +157,7 @@ export default function CVDTool({ theme }) {
             return (
               <button key={r.id} type="button" onClick={() => setF(p => ({ ...p, region: r.id, country: '' }))}
                 className="rounded-lg border px-1 py-2 text-center text-[11px] font-semibold leading-tight transition-colors cursor-pointer"
-                style={on ? { background: r.color, borderColor: r.color, color: '#fff' } : { borderTop: `3px solid ${r.color}` }}>
+                style={on ? { background: r.color, borderColor: r.color, color: textOn(r.color) } : { borderTop: `3px solid ${r.color}` }}>
                 {r.label}
               </button>
             )
@@ -168,38 +183,38 @@ export default function CVDTool({ theme }) {
           </div>
         </Row>
         <Row label="Age (years)" error={errors.age}>
-          <Input className="w-24" type="number" inputMode="numeric" value={f.age} onChange={e => set('age', e.target.value)} placeholder={ph('age')} />
+          <Input className="w-24" type="text" inputMode="numeric" value={f.age} onChange={e => set('age', e.target.value)} placeholder={ph('age')} />
         </Row>
         {isDm && (
           <Row label="Age at diabetes diagnosis" error={errors.diabetesAge}>
-            <Input className="w-24" type="number" inputMode="numeric" value={f.diabetesAge} onChange={e => set('diabetesAge', e.target.value)} placeholder={ph('diabetesAge')} />
+            <Input className="w-24" type="text" inputMode="numeric" value={f.diabetesAge} onChange={e => set('diabetesAge', e.target.value)} placeholder={ph('diabetesAge')} />
           </Row>
         )}
         <Row label="Current smoking">
           <Toggle on={f.smoking} label="Current smoking" onChange={v => set('smoking', v)} />
         </Row>
         <Row label="Systolic BP (mmHg)" error={errors.sbp}>
-          <Input className="w-24" type="number" inputMode="numeric" value={f.sbp} onChange={e => set('sbp', e.target.value)} placeholder={ph('sbp')} />
+          <Input className="w-24" type="text" inputMode="numeric" value={f.sbp} onChange={e => set('sbp', e.target.value)} placeholder={ph('sbp')} />
         </Row>
         <Row label="Total cholesterol" error={errors.totalCholesterol}>
           <div className="flex items-center gap-1.5">
-            <UnitSwitch value={cholUnit} onChange={setCholUnit} accent={accent} options={[['mmol', 'mmol/L'], ['mgdl', 'mg/dL']]} />
-            <Input className="w-20" type="number" inputMode="decimal" value={f.totalCholesterol} onChange={e => set('totalCholesterol', e.target.value)} placeholder={ph('totalCholesterol', cholUnit)} />
+            <UnitSwitch value={cholUnit} onChange={switchChol} accent={accent} options={[['mmol', 'mmol/L'], ['mgdl', 'mg/dL']]} />
+            <Input className="w-20" type="text" inputMode="decimal" value={f.totalCholesterol} onChange={e => set('totalCholesterol', e.target.value)} placeholder={ph('totalCholesterol', cholUnit)} />
           </div>
         </Row>
         <Row label={`HDL cholesterol (${cholLabel})`} error={errors.hdl}>
-          <Input className="w-20" type="number" inputMode="decimal" value={f.hdl} onChange={e => set('hdl', e.target.value)} placeholder={ph('hdl', cholUnit)} />
+          <Input className="w-20" type="text" inputMode="decimal" value={f.hdl} onChange={e => set('hdl', e.target.value)} placeholder={ph('hdl', cholUnit)} />
         </Row>
         {isDm && (
           <>
             <Row label="HbA1c" error={errors.hba1c}>
               <div className="flex items-center gap-1.5">
-                <UnitSwitch value={hba1cUnit} onChange={setHba1cUnit} accent={accent} options={[['percent', '%'], ['mmolmol', 'mmol/mol']]} />
-                <Input className="w-20" type="number" inputMode="decimal" value={f.hba1c} onChange={e => set('hba1c', e.target.value)} placeholder={ph('hba1c', hba1cUnit)} />
+                <UnitSwitch value={hba1cUnit} onChange={switchHba1c} accent={accent} options={[['percent', '%'], ['mmolmol', 'mmol/mol']]} />
+                <Input className="w-20" type="text" inputMode="decimal" value={f.hba1c} onChange={e => set('hba1c', e.target.value)} placeholder={ph('hba1c', hba1cUnit)} />
               </div>
             </Row>
             <Row label="eGFR (mL/min/1.73m²)" error={errors.egfr}>
-              <Input className="w-24" type="number" inputMode="numeric" value={f.egfr} onChange={e => set('egfr', e.target.value)} placeholder={ph('egfr')} />
+              <Input className="w-24" type="text" inputMode="numeric" value={f.egfr} onChange={e => set('egfr', e.target.value)} placeholder={ph('egfr')} />
             </Row>
           </>
         )}
@@ -211,13 +226,13 @@ export default function CVDTool({ theme }) {
       </div>
 
       {result && (
-        <div className="rounded-xl border p-4" style={{ borderColor: color + '88', background: color + '12' }}>
+        <div className="rounded-xl border p-4" style={{ borderColor: color + '88', background: color + '12' }} aria-live="polite">
           <div className="flex items-start justify-between gap-3">
             <div>
               <div className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">{result.title} · {result.outcome}</div>
-              <div className="text-3xl font-extrabold tabular-nums" style={{ color }}>{result.display}%</div>
+              <div className="flex items-center gap-2"><span className="h-6 w-1.5 rounded-full" style={{ background: color }} /><span className="text-3xl font-extrabold tabular-nums text-foreground">{result.display}%</span></div>
             </div>
-            <span className="shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-bold text-white" style={{ background: color }}>{result.category.label}</span>
+            <span className="shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-bold" style={{ background: color, color: textOn(color) }}>{result.category.label}</span>
           </div>
           <RiskBar result={result} />
           <div className="flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">

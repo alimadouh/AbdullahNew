@@ -67,6 +67,36 @@ for (const [age, sex, w, h, f, t, want] of frax) {
   const r = O.assess({ age, sex, weight: w, height: h, factors: { fragility: 'none', ...f }, fnT: t ?? NaN }, t == null ? 'before' : 'after')
   eq(`fraxplus ${age}${sex[0]} ${JSON.stringify(f)} T${t ?? '-'}`, r.mof, want, 1.5)
 }
+// 9. Safety checks over a wide grid (from the 2026-10-16 audit)
+{
+  const keys = ['prevFracture', 'parentHip', 'smoking', 'glucocorticoids', 'ra', 'secondary', 'alcohol']
+  const order = { low: 0, dxa: 1, high: 1, veryHigh: 2 }
+  let checked = 0, monoFail = 0, hipFail = 0, nanFail = 0
+  for (const sex of ['female', 'male']) for (const age of [50, 57, 65, 72, 81, 89, 90]) for (const h of [150, 165, 180]) for (const w of [45, 70, 110])
+    for (const t of [null, -3.5, -2.5, -1.2, 0.5]) for (let mask = 0; mask < 128; mask++) {
+      const f = { fragility: 'none' }; keys.forEach((k, i) => { f[k] = !!(mask & (1 << i)) })
+      const stage = t == null ? 'before' : 'after'
+      const r = O.assess({ age, sex, weight: w, height: h, factors: f, fnT: t ?? NaN }, stage)
+      checked++
+      if (!Number.isFinite(r.mof) || !Number.isFinite(r.hip)) { nanFail++; continue }
+      if (r.hip > r.mof + 1e-9) hipFail++
+      for (let i = 0; i < keys.length; i++) if (!(mask & (1 << i))) {
+        const g = { ...f, [keys[i]]: true }
+        const r2 = O.assess({ age, sex, weight: w, height: h, factors: g, fnT: t ?? NaN }, stage)
+        if (r2.mof < r.mof - 1e-9 || r2.hip < r.hip - 1e-9 || order[r2.category] < order[r.category]) monoFail++
+      }
+    }
+  console.log('grid cases checked:', checked)
+  if (monoFail) { fails++; console.log('FAIL adding a risk factor lowered the result in', monoFail, 'cases') }
+  if (hipFail) { fails++; console.log('FAIL hip above MOF in', hipFail, 'cases') }
+  if (nanFail) { fails++; console.log('FAIL NaN result in', nanFail, 'cases') }
+}
+// RA and secondary osteoporosis count once (same weight; secondary only without BMD and only if RA = no)
+eq('RA+secondary = RA (no BMD)', O.assess({ age: 70, sex: 'male', weight: 75, height: 170, factors: { ra: true, secondary: true } }, 'before').mof, O.assess({ age: 70, sex: 'male', weight: 75, height: 170, factors: { ra: true } }, 'before').mof)
+eq('secondary alone = RA alone (no BMD)', O.assess({ age: 70, sex: 'male', weight: 75, height: 170, factors: { secondary: true } }, 'before').mof, O.assess({ age: 70, sex: 'male', weight: 75, height: 170, factors: { ra: true } }, 'before').mof)
+eq('secondary ignored with BMD', O.assess({ age: 70, sex: 'male', weight: 75, height: 170, factors: { secondary: true }, fnT: -2 }, 'after').mof, O.assess({ age: 70, sex: 'male', weight: 75, height: 170, factors: {}, fnT: -2 }, 'after').mof)
+// The category is decided on the number shown (e.g. 14.89 shows "15" = IT 15 at age 81 → not Low)
+if (O.roundAsShown(14.89) !== 15 || O.roundAsShown(7.56) !== 7.6) { fails++; console.log('FAIL roundAsShown') }
 console.log(fails ? `${fails} FAILURES` : 'ALL TESTS PASSED')
 fs.unlinkSync(tmp)
 process.exit(fails ? 1 : 0)

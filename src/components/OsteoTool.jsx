@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Bone, RotateCcw, Calculator, Pill, Activity, ClipboardList, Dumbbell, AlertTriangle } from 'lucide-react'
 import { Input } from './ui/input.jsx'
 import { Button } from './ui/button.jsx'
-import { assess, bmi, THRESHOLD_ROWS, BMD_TYPES, toTScore } from '../lib/osteo.js'
+import { assess, bmi, roundAsShown, THRESHOLD_ROWS, BMD_TYPES, toTScore, HOLOGIC_RANGE } from '../lib/osteo.js'
 
 // Osteoporosis Risk: the FRAX questionnaire (Kuwait), then the Kuwait Osteoporosis Guidelines 2022
 // decision. Without BMD → LAT/UAT (do DXA or not); with femoral neck T-score → IT/UAT (treatment).
@@ -27,7 +27,7 @@ const QUESTIONS = [
 const EMPTY = { prevFracture: false, parentHip: false, smoking: false, glucocorticoids: false, ra: false, secondary: false, alcohol: false }
 
 const num = (v) => (v === '' || v == null ? NaN : parseFloat(v))
-const f1 = (v) => (Number.isFinite(v) ? (v < 10 ? v.toFixed(1) : v.toFixed(0)) : '—')
+const f1 = (v) => { if (!Number.isFinite(v)) return '—'; const r = roundAsShown(v); return r < 10 ? r.toFixed(1) : String(r) }
 
 // FRAX-style on/off switch
 function Toggle({ on, onChange, label }) {
@@ -169,15 +169,21 @@ export default function OsteoTool({ theme }) {
   const [error, setError] = useState('')
 
   const calculate = () => {
-    const a = num(age), w = num(weight), h = num(height), t = bmdType === 'none' ? NaN : toTScore(bmdType, num(bmdValue))
+    const a = num(age), w = num(weight), h = num(height), g = num(bmdValue)
+    const t = bmdType === 'none' ? NaN : toTScore(bmdType, g)
     if (!(a >= 40 && a <= 90)) return setError('Enter an age between 40 and 90 years.'), setResult(null)
-    if (!(w > 0 && h > 0)) return setError('Enter weight and height.'), setResult(null)
     if (a < 50) return setError('The FRAX Kuwait charts start at age 50.'), setResult(null)
-    if (bmdType !== 'none' && !Number.isFinite(t)) return setError('Enter the femoral neck BMD value, or choose "No BMD available".'), setResult(null)
+    if (!(w > 0 && h > 0)) return setError('Enter weight and height.'), setResult(null)
+    if (bmdType !== 'none' && !Number.isFinite(g)) return setError('Enter the femoral neck BMD value, or choose "No BMD available".'), setResult(null)
+    if (bmdType === 'hologic' && (g < HOLOGIC_RANGE.min || g > HOLOGIC_RANGE.max))
+      return setError(`Femoral neck BMD must be between ${HOLOGIC_RANGE.min.toFixed(2)} and ${HOLOGIC_RANGE.max.toFixed(2)} g/cm² (Hologic). Enter the BMD in g/cm², not the T-score.`), setResult(null)
     const withBmd = Number.isFinite(t)
     const r = assess({ age: a, sex, weight: w, height: h, factors: { ...q, fragility: 'none' }, fnT: t }, withBmd ? 'after' : 'before')
     setError(''); setResult({ ...r, age: a, bmiValue: bmi(w, h), withBmd, tScore: t, bmdType, tClamped: withBmd && (t < -4 || t > 1) })
   }
+  // Any change to the answers hides the old result until Calculate is pressed again
+  useEffect(() => { setResult(null) }, [age, sex, weight, height, q, bmdType, bmdValue])
+
   const clear = () => { setAge(''); setSex('female'); setWeight(''); setHeight(''); setQ(EMPTY); setBmdType('none'); setBmdValue(''); setResult(null); setError('') }
 
   const d = result ? decision(result) : null
@@ -277,7 +283,7 @@ export default function OsteoTool({ theme }) {
               <p className="mt-2 text-xs font-semibold" style={{ color: '#dc2626' }}>If the previous fracture was spine, hip, or 2 or more other fractures: very high risk — treat with anabolic therapy ± DXA.</p>
             )}
             <p className="mt-2 text-[10px] text-muted-foreground">
-              FRAX Kuwait chart estimate{result.chart?.low != null && ` (chart range ${f1(result.chart.low)}–${f1(result.chart.high)}%)`}.
+              Estimate from the FRAX Kuwait charts{result.chart?.low != null && ` (chart range ${f1(result.chart.low)}–${f1(result.chart.high)}%)`}; it may differ slightly from fraxplus.org.
               {result.withBmd && ` Femoral neck T-score ${result.tScore.toFixed(2)} (Hologic BMD, NHANES III reference).`}
               {result.withBmd && q.secondary && ' Secondary osteoporosis is not used when BMD is entered.'}
               {result.tClamped && ' The T-score is outside the chart range (−4.0 to +1.0), so the nearest chart value was used.'}

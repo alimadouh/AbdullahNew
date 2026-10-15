@@ -219,13 +219,18 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
-  const reload = async (section) => {
+  // Only the latest request may fill the table (a slow reply for an old section is ignored)
+  const loadSeq = useRef(0)
+  const reload = async (section, { fresh = false } = {}) => {
     const s = section || activeSection
+    const seq = ++loadSeq.current
     if (s === 'home' || s === 'library' || s === 'tools') { setLoading(false); return }
+    if (fresh) { setRows([]); setColumns([]) } // never show the previous section's list under the new title
     setLoading(true)
     setErr('')
     try {
       const data = await apiGetData(s)
+      if (seq !== loadSeq.current) return
       const cols = data.columns || []
       // Ensure __kuwait__ column exists for clinic section
       if (s === 'clinic' && !cols.includes('__kuwait__')) {
@@ -242,14 +247,14 @@ export default function App() {
       setColumns(cols)
       setRows(data.rows || [])
     } catch (e) {
-      setErr(String(e?.message || e))
+      if (seq === loadSeq.current) setErr(String(e?.message || e))
     } finally {
-      setLoading(false)
+      if (seq === loadSeq.current) setLoading(false)
     }
   }
 
   useEffect(() => {
-    reload(activeSection)
+    reload(activeSection, { fresh: true })
   }, [activeSection])
 
   // Single medicine page: its own history entry, so the phone Back button returns to Home
@@ -289,7 +294,18 @@ export default function App() {
   }, [activeSection, categoryFilter, searchQuery, medView, toolPage])
 
   useEffect(() => {
-    const onPop = (e) => { setMedView(e.state?.med || null); setToolPage(e.state?.tool || null); window.scrollTo(0, 0) }
+    const onPop = (e) => {
+      const p = new URLSearchParams(window.location.search)
+      const med = e.state?.med || null
+      const section = p.get('section')
+      setMedView(med)
+      setToolPage(e.state?.tool || (section === 'tools' && TOOL_PAGES.includes(p.get('tool')) ? p.get('tool') : null))
+      // The page shown must match the address, whichever entry the browser went back to
+      setActiveSection(med ? 'home' : SECTIONS.includes(section) ? section : 'home')
+      setCategoryFilter(med ? '' : p.get('cat') || '')
+      setSearchQuery(med ? '' : p.get('q') || '')
+      window.scrollTo(0, 0)
+    }
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
   }, [])
@@ -680,7 +696,7 @@ export default function App() {
         {/* A chosen tool opens as its own page (never a popup), so the phone keyboard can't cover it */}
         {activeSection === 'tools' && toolPage && (
           <div className="mb-4 flex flex-col gap-3">
-            <div>
+            <div className="mx-auto w-full max-w-xl">
               <Button variant="outline" size="sm" onClick={closeTool} className="gap-1.5">
                 <ArrowLeft className="h-4 w-4" />
                 All Tools
@@ -804,7 +820,13 @@ export default function App() {
         )}
 
         {/* Content — medication sections: search · category grid · category table */}
-        {activeSection !== 'home' && activeSection !== 'library' && activeSection !== 'tools' && (
+        {/* While a section is loading, show a spinner instead of an empty or out-of-date list */}
+        {activeSection !== 'home' && activeSection !== 'library' && activeSection !== 'tools' && loading && rows.length === 0 && (
+          <div className="flex justify-center py-16" role="status" aria-label="Loading">
+            <Loader2 className="h-7 w-7 animate-spin" style={{ color: theme.text }} />
+          </div>
+        )}
+        {activeSection !== 'home' && activeSection !== 'library' && activeSection !== 'tools' && !(loading && rows.length === 0) && (
           searchQuery.trim() ? (
             /* Search across every category */
             <DataTable
