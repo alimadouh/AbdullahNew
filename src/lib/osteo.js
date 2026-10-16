@@ -232,6 +232,12 @@ export function assess(input, stage) {
       const q = fraxProbability({ sex, age, bmi: bmi(weight, height), tScore: kind === 'bmd' ? x : null, factors })
       p = p ? { mof: Math.max(p.mof, q.mof), hip: Math.max(p.hip, q.hip) } : q
     }
+    // Owner request: parent fractured hip as the only risk factor reads 0.1 high, so lower MOF and hip by 0.1
+    // (never below the no-risk-factor value)
+    if (keys.length === 1 && keys[0] === 'parentHip') {
+      const none = fraxProbability({ sex, age, bmi: bmi(weight, height), tScore: kind === 'bmd' ? x : null, factors: { parentHip: false } })
+      p = { mof: Math.max(none.mof, p.mof - 0.1), hip: Math.max(none.hip, p.hip - 0.1) }
+    }
   }
   const chart = p && Number.isFinite(p.mof) ? { value: p.mof, low: null, high: null } : null
   const hipChart = p && Number.isFinite(p.hip) ? { value: p.hip, low: null, high: null } : null
