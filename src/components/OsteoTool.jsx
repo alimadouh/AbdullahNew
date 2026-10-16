@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Bone, RotateCcw, Calculator, Pill, Activity, ClipboardList, Dumbbell, AlertTriangle } from 'lucide-react'
+import { Bone, RotateCcw, Calculator, Pill, Activity, ClipboardList, Dumbbell, AlertTriangle, ExternalLink } from 'lucide-react'
 import { Input } from './ui/input.jsx'
 import { Button } from './ui/button.jsx'
 import { assess, bmi, roundAsShown, THRESHOLD_ROWS, BMD_TYPES, toTScore, HOLOGIC_RANGE } from '../lib/osteo.js'
@@ -270,6 +270,11 @@ export default function OsteoTool({ theme }) {
               ))}
             </div>
           </div>
+          <a href="https://www.fraxplus.org/calculation-tool" target="_blank" rel="noopener noreferrer"
+            className="-mt-1 flex items-center justify-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-semibold hover:bg-muted"
+            style={{ borderColor: '#d0021b', color: '#d0021b' }}>
+            <ExternalLink className="h-3.5 w-3.5" />Check on official FRAX
+          </a>
 
           {/* Kuwait guideline decision */}
           <div className="rounded-xl border p-4" style={{ borderColor: color + '88', background: color + '12' }}>
