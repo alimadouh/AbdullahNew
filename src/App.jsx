@@ -162,7 +162,10 @@ export default function App() {
     return true // default to dark theme
   })
   // Tools that open as their own page (not a popup): ?section=tools&tool=<key>
-  const TOOL_PAGES = ['growth', 'milestones', 'phq9-ar', 'phq9-en', 'gad7-ar', 'gad7-en', 'fib4', 'ckd', 'curb65', 'osteo', 'cvd']
+  // Tools still being checked: shown as "Coming soon" on the live site, usable only on localhost
+  const LOCAL = import.meta.env.DEV || ['localhost', '127.0.0.1'].includes(window.location.hostname)
+  const COMING_SOON = LOCAL ? [] : ['osteo']
+  const TOOL_PAGES = ['growth', 'milestones', 'phq9-ar', 'phq9-en', 'gad7-ar', 'gad7-en', 'fib4', 'ckd', 'curb65', 'osteo', 'cvd'].filter(k => !COMING_SOON.includes(k))
   // Tools page: specialty filter chip ('all' or a group name)
   const [toolFilter, setToolFilter] = useState('all')
   const [toolPage, setToolPage] = useState(() => (TOOL_PAGES.includes(urlParam('tool')) ? urlParam('tool') : null))
@@ -284,6 +287,7 @@ export default function App() {
   }
   // A tool page gets its own history entry, so the phone Back button returns to the tools list
   const openTool = (key) => {
+    if (!TOOL_PAGES.includes(key)) return
     setToolPage(key)
     window.history.pushState({ tool: key }, '', `?section=tools&tool=${key}`)
     window.scrollTo(0, 0)
@@ -562,7 +566,7 @@ export default function App() {
       { label: 'CVD Risk (SCORE2)', desc: '10-year cardiovascular risk · ESC', Icon: HeartPulse, onClick: () => openTool('cvd') },
     ] },
     { section: 'Endocrinology', accent: '#059669', tools: [
-      { label: 'Osteoporosis Risk', desc: 'Osteoporosis Risk Assessment', Icon: Bone, onClick: () => openTool('osteo') },
+      { label: 'Osteoporosis Risk', desc: 'Osteoporosis Risk Assessment', Icon: Bone, onClick: () => openTool('osteo'), soon: COMING_SOON.includes('osteo') },
     ] },
     { section: 'Nephrology', accent: '#e11d48', tools: [
       { label: 'CKD Prognosis', desc: 'KDIGO risk by eGFR & albuminuria', Icon: Activity, onClick: () => openTool('ckd') },
@@ -784,6 +788,15 @@ export default function App() {
                         <div className="mt-0.5 truncate text-xs text-muted-foreground">{tool.desc}</div>
                       </div>
                     )
+                    if (tool.soon) {
+                      return (
+                        <div key={tool.label} className="flex items-center gap-3 rounded-2xl border bg-card p-3.5 opacity-60 shadow-sm" style={{ borderColor: accent + '40' }} aria-disabled="true">
+                          {iconTile}
+                          {text}
+                          <span className="shrink-0 rounded-full px-2.5 py-1 text-[11px] font-semibold" style={{ background: accent + '1a', color: accent }}>Coming soon</span>
+                        </div>
+                      )
+                    }
                     if (tool.languages) {
                       // Same card size as the others; the two languages are small buttons on the right
                       return (
