@@ -547,7 +547,7 @@ export default function App() {
       { label: 'CVD Risk (SCORE2)', desc: '10-year cardiovascular risk · ESC', Icon: HeartPulse, onClick: () => openTool('cvd') },
     ] },
     { section: 'Endocrinology', accent: '#059669', tools: [
-      { label: 'Osteoporosis Risk', desc: 'FRAX Kuwait → DXA → treatment', Icon: Bone, onClick: () => openTool('osteo') },
+      { label: 'Osteoporosis Risk', desc: 'Osteoporosis Risk Assessment', Icon: Bone, onClick: () => openTool('osteo') },
     ] },
     { section: 'Nephrology', accent: '#e11d48', tools: [
       { label: 'CKD Prognosis', desc: 'KDIGO risk by eGFR & albuminuria', Icon: Activity, onClick: () => openTool('ckd') },
