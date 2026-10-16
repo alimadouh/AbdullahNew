@@ -108,6 +108,7 @@ const BMI_WITH_BMD = {
   hip: [5.4, 5.5, 5.7, 5.8, 6.0, 6.0, 5.8, 5.6, 5.5],
 }
 const LOW_BMI_BMD_SCALE = 1.47
+const HIGH_MOF_NO_BMD = 0.098
 export function bmiFactorWithBmd(outcome, b) {
   if (!Number.isFinite(b)) return 1
   const xs = BMI_WITH_BMD.bmi, ys = BMI_WITH_BMD[outcome].map(Math.log)
@@ -190,6 +191,9 @@ export function fraxProbability({ sex, age, bmi, tScore = null, factors = {} }, 
   let hip = outcomeProb(params, s, 'hip', kind, age, x, mask)
   let mof = outcomeProb(params, s, 'mof', kind, age, x, mask)
   if (kind === 'bmd' && Number.isFinite(bmi)) { hip *= bmiFactorWithBmd('hip', bmi); mof *= bmiFactorWithBmd('mof', bmi) }
+  // Without BMD, MOF above 20 % reads 2–5 % below FRAX Kuwait; fitted to 8 fraxplus.org cases
+  // (leave-one-out mean error 1.13 → 0.38 points). Hip and with-BMD showed no stable gain, so unchanged.
+  if (kind === 'bmi' && mof > 20) mof *= Math.exp(HIGH_MOF_NO_BMD * (mof - 20) / 100)
   return { mof: Math.max(mof, hip), hip }
 }
 
