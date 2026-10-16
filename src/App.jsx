@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState, useCallback, useRef } from 'react'
+import React, { useEffect, useLayoutEffect, useMemo, useState, useCallback, useRef } from 'react'
 import DataTable from './components/DataTable.jsx'
 import AdminPanel from './components/AdminPanel.jsx'
 import AdminDashboard from './components/AdminDashboard.jsx'
@@ -112,6 +112,21 @@ export default function App() {
   // The open category and search come back after a refresh (kept in the page address)
   const urlParam = (k) => (typeof window === 'undefined' ? '' : new URLSearchParams(window.location.search).get(k) || '')
   const [categoryFilter, setCategoryFilter] = useState(() => (urlParam('med') ? '' : urlParam('cat')))
+  // Where the category list was scrolled when a category was opened, so "All Categories" returns there
+  const catScrollRef = useRef(null)
+  const restoreCatScroll = useRef(false)
+  const openCategory = (name) => {
+    catScrollRef.current = { section: activeSection, y: window.scrollY }
+    setCategoryFilter(name)
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }
+  const backToCategories = () => { restoreCatScroll.current = true; setCategoryFilter('') }
+  useLayoutEffect(() => {
+    if (categoryFilter || !restoreCatScroll.current) return
+    restoreCatScroll.current = false
+    const s = catScrollRef.current
+    if (s && s.section === activeSection) window.scrollTo({ top: s.y, behavior: 'instant' })
+  }, [categoryFilter])
   // Vaccination picker: 'obligatory' schedule or 'optional' (non-obligatory) vaccines
   const [vaccGroup, setVaccGroup] = useState('obligatory')
   const [searchQuery, setSearchQuery] = useState(() => (urlParam('med') ? '' : urlParam('q')))
@@ -846,7 +861,7 @@ export default function App() {
               /* A category is open → its medications + back button */
               <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                  <Button variant="outline" size="sm" onClick={() => setCategoryFilter('')} className="gap-1.5">
+                  <Button variant="outline" size="sm" onClick={backToCategories} className="gap-1.5">
                     <ArrowLeft className="h-4 w-4" />
                     All Categories
                   </Button>
@@ -896,7 +911,7 @@ export default function App() {
                   return (
                     <button
                       key={cat.name}
-                      onClick={() => setCategoryFilter(cat.name)}
+                      onClick={() => openCategory(cat.name)}
                       className="tile group flex items-center gap-3 rounded-2xl border bg-card p-3.5 text-left cursor-pointer"
                       style={{ '--tile': theme.text }}
                     >
