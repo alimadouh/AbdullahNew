@@ -13,6 +13,7 @@ import FIB4Dialog from './components/FIB4Dialog.jsx'
 import CKDTool from './components/CKDTool.jsx'
 import OsteoTool from './components/OsteoTool.jsx'
 import CVDTool from './components/CVDTool.jsx'
+import MedCheckTool from './components/MedCheckTool.jsx'
 import CURB65Dialog from './components/CURB65Dialog.jsx'
 import { TopBar, BottomBar } from './components/AppNav.jsx'
 import HomePage from './components/HomePage.jsx'
@@ -27,7 +28,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogPageProvider } from './components/ui/dialog.jsx'
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/ui/tooltip.jsx'
 
-import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, Brain, ClipboardCheck, Home, Wrench, ArrowLeft, FlaskConical, Stethoscope, Activity, Bone, HeartPulse } from 'lucide-react'
+import { Loader2, AlertCircle, RefreshCw, Search, ShieldCheck, LogOut, Settings, ArrowUp, Syringe, Cross, BookOpen, Pill, ZoomIn, ZoomOut, MessageSquare, Send, Bell, Trash2, Inbox, Clock, ChevronRight, CheckCheck, Eye, Users, CalendarDays, TrendingUp, Baby, Calculator, LibraryBig, Brain, ClipboardCheck, Home, Wrench, ArrowLeft, FlaskConical, Stethoscope, Activity, Bone, HeartPulse, ShieldPlus } from 'lucide-react'
 
 function uniq(arr) {
   return Array.from(new Set(arr.filter(Boolean)))
@@ -164,8 +165,8 @@ export default function App() {
   // Tools that open as their own page (not a popup): ?section=tools&tool=<key>
   // Tools still being checked: shown as "Coming soon" on the live site, usable only on localhost
   const LOCAL = import.meta.env.DEV || ['localhost', '127.0.0.1'].includes(window.location.hostname)
-  const COMING_SOON = LOCAL ? [] : ['osteo']
-  const TOOL_PAGES = ['growth', 'milestones', 'phq9-ar', 'phq9-en', 'gad7-ar', 'gad7-en', 'fib4', 'ckd', 'curb65', 'osteo', 'cvd'].filter(k => !COMING_SOON.includes(k))
+  const COMING_SOON = LOCAL ? [] : ['osteo', 'medcheck']
+  const TOOL_PAGES = ['growth', 'milestones', 'phq9-ar', 'phq9-en', 'gad7-ar', 'gad7-en', 'fib4', 'ckd', 'curb65', 'osteo', 'cvd', 'medcheck'].filter(k => !COMING_SOON.includes(k))
   // Tools page: specialty filter chip ('all' or a group name)
   const [toolFilter, setToolFilter] = useState('all')
   const [toolPage, setToolPage] = useState(() => (TOOL_PAGES.includes(urlParam('tool')) ? urlParam('tool') : null))
@@ -565,6 +566,9 @@ export default function App() {
     { section: 'Cardiology', accent: '#dc2626', tools: [
       { label: 'CVD Risk (SCORE2)', desc: '10-year cardiovascular risk · ESC', Icon: HeartPulse, onClick: () => openTool('cvd') },
     ] },
+    { section: 'Pharmacology', accent: '#2563eb', tools: [
+      { label: 'Medication Safety Checker', desc: 'Interactions & patient factors', Icon: ShieldPlus, onClick: () => openTool('medcheck'), soon: COMING_SOON.includes('medcheck') },
+    ] },
     { section: 'Endocrinology', accent: '#059669', tools: [
       { label: 'Osteoporosis Risk', desc: 'Osteoporosis Risk Assessment', Icon: Bone, onClick: () => openTool('osteo'), soon: COMING_SOON.includes('osteo') },
     ] },
@@ -715,7 +719,7 @@ export default function App() {
         {/* A chosen tool opens as its own page (never a popup), so the phone keyboard can't cover it */}
         {activeSection === 'tools' && toolPage && (
           <div className="mb-4 flex flex-col gap-3">
-            <div className="mx-auto w-full max-w-xl">
+            <div className={`mx-auto w-full ${toolPage === 'medcheck' ? 'max-w-6xl' : 'max-w-xl'}`}>
               <Button variant="outline" size="sm" onClick={closeTool} className="gap-1.5">
                 <ArrowLeft className="h-4 w-4" />
                 All Tools
@@ -733,6 +737,7 @@ export default function App() {
               {toolPage === 'ckd' && <CKDTool theme={theme} />}
               {toolPage === 'osteo' && <OsteoTool theme={theme} />}
               {toolPage === 'cvd' && <CVDTool theme={theme} />}
+              {toolPage === 'medcheck' && <MedCheckTool dark={dark} />}
             </DialogPageProvider>
           </div>
         )}
