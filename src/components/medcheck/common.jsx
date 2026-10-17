@@ -48,19 +48,3 @@ export function SourceList({ sources, compact = false }) {
     </ul>
   )
 }
-
-export function Segmented({ value, onChange, options, label, size = 'sm', id }) {
-  return (
-    <div role="radiogroup" aria-label={label} id={id} className="inline-flex flex-wrap gap-1 rounded-lg bg-muted/70 p-0.5">
-      {options.map((o) => {
-        const on = value === o.value
-        return (
-          <button key={String(o.value)} type="button" role="radio" aria-checked={on} onClick={() => onChange(o.value)}
-            className={`rounded-md px-2.5 ${size === 'xs' ? 'py-0.5 text-[11px]' : 'py-1 text-xs'} font-medium transition-colors ${on ? 'bg-card text-foreground shadow-sm ring-1 ring-border' : 'text-muted-foreground hover:text-foreground'} ${o.value === null && on ? 'italic' : ''}`}>
-            {o.label}
-          </button>
-        )
-      })}
-    </div>
-  )
-}
