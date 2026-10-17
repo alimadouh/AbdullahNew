@@ -18,10 +18,7 @@ export function mountMedCheck(root, kb) {
   const VERIFY_TAG = { verified: '', 'name-stated': 'name-stated', unverified: 'ingredients unverified' };
 
   // ---------- setup ----------
-  if (kb.mode !== 'release') {
-    $('banner').hidden = false;
-    $('banner').textContent = kb.notice;
-  }
+  // Demo-build banner removed (owner request)
   $('kb-info').textContent = `Knowledge base ${kb.version} (${kb.mode}) · ${kb.rules.length} rules from ${Object.keys(kb.docs).length} source documents · built ${new Date(kb.builtAt).toLocaleDateString('en-CA')}`;
   // Brands are also found by their verified ingredient names (searching "simvastatin" lists Zocor).
   const products = kb.products.map((p) => ({

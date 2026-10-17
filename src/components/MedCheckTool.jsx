@@ -40,7 +40,6 @@ export default function MedCheckTool({ dark }) {
 
       {kb && (
         <div ref={root}>
-          <div id="mc-banner" className="banner mb-3 rounded-lg" hidden></div>
           <div className="grid">
             <section className="panel" aria-labelledby="mc-meds-h">
               <h2 id="mc-meds-h">Medicines, vitamins &amp; supplements</h2>
