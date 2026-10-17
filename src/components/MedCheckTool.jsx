@@ -25,12 +25,11 @@ export default function MedCheckTool({ dark }) {
 
   return (
     <div className={`medcheck mx-auto w-full max-w-6xl${dark ? ' mc-dark' : ''}`}>
-      <div className="mb-3 rounded-2xl border bg-card p-4 shadow-sm sm:p-5">
-        <h2 className="flex items-center gap-2 font-display text-lg font-semibold" style={{ color: '#2563eb' }}>
+      <div className="mb-3 rounded-2xl border bg-card px-4 py-3 shadow-sm sm:px-5">
+        <h2 className="flex items-center gap-2 font-display text-lg font-semibold" style={{ color: '#2563eb', margin: 0 }}>
           <ShieldPlus className="h-5 w-5" />
           Medication Safety Checker
         </h2>
-        <p className="mt-1 text-sm text-muted-foreground">Enter medicines and supplements. The checker lists interactions between them and, for each one, the patient factors that affect it, using curated rules from official sources. Each alert names exactly what triggered it.</p>
       </div>
 
       {error && <p className="rounded-lg bg-amber-500/10 p-3 text-sm text-amber-700 dark:text-amber-400">Could not load the medicine data. Check the connection and open the tool again.</p>}
@@ -42,25 +41,22 @@ export default function MedCheckTool({ dark }) {
         <div ref={root}>
           <div className="grid">
             <section className="panel" aria-labelledby="mc-meds-h">
-              <h2 id="mc-meds-h">Medicines, vitamins &amp; supplements</h2>
+              <h2 id="mc-meds-h">Medicines &amp; supplements</h2>
               <div className="search">
                 <label className="sr-only" htmlFor="mc-med-search">Search by generic or brand name</label>
                 <div className="search-row">
-                  <input id="mc-med-search" type="search" autoComplete="off" placeholder="Search generic or brand name…" role="combobox" aria-expanded="false" aria-controls="mc-med-results" />
+                  <input id="mc-med-search" type="search" autoComplete="off" placeholder="Search medicine or brand…" role="combobox" aria-expanded="false" aria-controls="mc-med-results" />
                   <select id="mc-country" aria-label="Product market" defaultValue="all">
-                    <option value="all">All markets</option>
+                    <option value="all">All</option>
                     <option value="KW">Kuwait</option>
-                    <option value="US">United States</option>
-                    <option value="any">Generic names</option>
+                    <option value="US">US</option>
+                    <option value="any">Generic</option>
                   </select>
                 </div>
                 <ul id="mc-med-results" className="results-list" role="listbox" hidden></ul>
-                <p className="hint">Press Enter to add a name that isn't in the list. It will be shown as <em>not recognised</em> and won't be checked.</p>
               </div>
               <ul id="mc-med-list" className="entries" aria-live="polite"></ul>
-              <p id="mc-med-empty" className="empty">No medicines entered yet.</p>
-
-              <p className="hint">Patient factors don't need to be entered. For every medicine, the results list what the sources say about G6PD deficiency, pregnancy by trimester, chronic conditions, kidney and liver impairment, breastfeeding, age and allergies.</p>
+              <p id="mc-med-empty" className="empty">No medicines yet.</p>
             </section>
 
             <section className="panel results" aria-labelledby="mc-res-h" aria-live="polite">

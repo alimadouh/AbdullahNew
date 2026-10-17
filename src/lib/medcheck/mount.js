@@ -173,15 +173,24 @@ export function mountMedCheck(root, kb) {
     const evidence = (a.evidence ?? []).map((e) => `${e.scheme}: ${e.text}`).join('; ');
     const sevs = [...new Set((a.sources ?? []).filter((s) => s.severity).map((s) => `${s.title}: ${s.severity}`))];
     const keys = [...(a.items ?? []), a.factor?.id].filter(Boolean).join(' ');
+    // Show only the first sentence; the full text is under "Details"
+    const text = String(a.explanation ?? '');
+    const cut = text.search(/\.\s+(?=[A-Z])/);
+    const first = cut > 0 ? text.slice(0, cut + 1) : text;
+    const rest = cut > 0 ? text.slice(cut + 1).trim() : '';
     return `<article class="alert sev-${a.severity ?? 'none'}" data-keys="${esc(keys)}">
       <div class="alert-head"><span class="cat">${CATEGORY[a.category]}</span><span class="sev">${esc(a.severityLabel)}</span>${a.reviewStatus === 'pending-review' ? '<span class="tag draft">draft rule</span>' : ''}</div>
       <div class="involves">${involves(a)}</div>
-      <p>${esc(a.explanation)}</p>
-      ${a.note ? `<p class="note">${esc(a.note)}</p>` : ''}
-      ${a.conflict ? `<div class="conflict">Sources grade this differently, flagged for review: ${esc(sevs.join(' · '))}</div>` : ''}
-      ${actions.map((q) => `<div class="action"><span class="lbl">Action stated by the source</span>${esc(q)}</div>`).join('')}
-      <p class="meta">Evidence strength: ${esc(evidence || 'not graded by the source')}</p>
-      <details class="refs"><summary>${(a.sources ?? []).length} reference${(a.sources ?? []).length === 1 ? '' : 's'}</summary>${(a.sources ?? []).map(refHtml).join('')}</details>
+      <p>${esc(first)}</p>
+      ${actions.slice(0, 1).map((q) => `<div class="action"><span class="lbl">Action</span>${esc(q)}</div>`).join('')}
+      <details class="refs"><summary>Details</summary>
+        ${rest ? `<p>${esc(rest)}</p>` : ''}
+        ${a.note ? `<p class="note">${esc(a.note)}</p>` : ''}
+        ${a.conflict ? `<div class="conflict">Sources grade this differently: ${esc(sevs.join(' · '))}</div>` : ''}
+        ${actions.slice(1).map((q) => `<div class="action"><span class="lbl">Action</span>${esc(q)}</div>`).join('')}
+        <p class="meta">Evidence: ${esc(evidence || 'not graded')}</p>
+        ${(a.sources ?? []).map(refHtml).join('')}
+      </details>
     </article>`;
   }
 
@@ -195,7 +204,7 @@ export function mountMedCheck(root, kb) {
 
   function clearHtml(list, summary) {
     if (!list.length) return '';
-    const li = (c) => `<li>${esc(c.message)}<span class="meta">Checked: ${esc(c.checkedSources.join('; '))}</span>${c.caveats?.length ? `<span class="meta">These labels also mention drug groups this pilot hasn't mapped to specific medicines: ${esc([...new Set(c.caveats.map((x) => x.text))].join('; '))}</span>` : ''}</li>`;
+    const li = (c) => `<li>${esc(c.message)}<span class="meta">Checked: ${esc(c.checkedSources.join('; '))}</span>${c.caveats?.length ? `<span class="meta">Also mentions drug groups not mapped yet: ${esc([...new Set(c.caveats.map((x) => x.text))].join('; '))}</span>` : ''}</li>`;
     return `<details class="clear-wrap"><summary>${esc(summary)} (${list.length})</summary><ul class="clear-list">${list.map(li).join('')}</ul></details>`;
   }
 
@@ -222,7 +231,7 @@ export function mountMedCheck(root, kb) {
         ${gridHtml(sec.grid)}
         ${sec.alerts.map(alertHtml).join('')}
         ${unableHtml(sec.unable, 'Insufficient information')}
-        ${clearHtml(sec.clear, 'Nothing documented in the checked sources')}
+        ${clearHtml(sec.clear, 'Nothing documented')}
       </div>
     </details>`;
   }
@@ -235,17 +244,17 @@ export function mountMedCheck(root, kb) {
       ? `<div class="stat a"><b>${nAlerts}</b>alert${nAlerts === 1 ? '' : 's'}</div><div class="stat u"><b>${nUnable}</b>unable to assess</div><div class="stat"><b>${res.counts.itemsChecked}/${nEntered}</b>entries checked</div>`
       : '';
     if (!nEntered) {
-      $('between').innerHTML = '<p class="placeholder">Add medicines or supplements to start. Results update automatically whenever you add, remove or change something.</p>';
+      $('between').innerHTML = '<p class="placeholder">Add medicines to start.</p>';
       $('profile').innerHTML = '';
       return;
     }
-    $('between').innerHTML = `<h3 class="block-h">Between your medicines</h3>
-      ${state.items.length < 2 ? '<p class="placeholder small">Add another medicine to check interactions and duplicate ingredients.</p>' : ''}
+    $('between').innerHTML = `<h3 class="block-h">Interactions</h3>
+      ${state.items.length < 2 ? '<p class="placeholder small">Add another medicine to check interactions.</p>' : ''}
       ${res.alerts.map(alertHtml).join('')}
-      ${unableHtml(res.unable, 'Unable to assess / insufficient information')}
-      ${clearHtml(res.clear, 'No documented interaction found in the checked sources')}`;
+      ${unableHtml(res.unable, 'Unable to assess')}
+      ${clearHtml(res.clear, 'No interaction found')}`;
     $('profile').innerHTML = res.counts.itemsChecked
-      ? `<h3 class="block-h">Patient factors that affect these medicines</h3><p class="meta">Listed automatically for every checked medicine. Nothing needs to be selected.</p>${prof.sections.map(sectionHtml).join('')}`
+      ? `<h3 class="block-h">Patient factors</h3>${prof.sections.map(sectionHtml).join('')}`
       : '';
   }
 
