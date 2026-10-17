@@ -1,0 +1,1063 @@
+{
+  "id": "codeine",
+  "name": "Codeine phosphate",
+  "ingredients": ["codeine"],
+  "className": "Opioid analgesic (centrally acting weak analgesic)",
+  "groups": ["opioid"],
+  "searchTerms": ["codeine"],
+  "formulations": [
+    {
+      "id": "codeine-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "30 mg",
+      "release": "immediate",
+      "src": [{"s": "emc-7031", "q": "Codeine phosphate 30mg Tablets BP"}],
+      "sourceIds": ["emc-2375", "emc-7031"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Acute moderate pain not relieved by paracetamol or ibuprofen alone (patients over 12 years); dry or painful cough; diarrhoea.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Codeine is indicated in patients older than 12 years of age for the treatment of acute moderate pain which is not considered to be relieved by other analgesics such as paracetamol or ibuprofen (alone)."
+            },
+            { "s": "emc-2375", "q": "Dry or painful cough Diarrhoea" }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA: in children, only for acute moderate pain in those older than 12 years, and only if paracetamol or ibuprofen alone do not work.",
+          "src": [
+            {
+              "s": "mhra-dsu-codeine-children-2013",
+              "q": "Codeine should only be used to relieve acute moderate pain in children older than 12 years and only if it cannot be relieved by other painkillers such as paracetamol or ibuprofen"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Pain (adults): lowest effective dose for the shortest time, up to 4 times a day at intervals of not less than 6 hours; maximum 240 mg codeine per day; limit to 3 days and review if no effective relief. The SmPCs accessed give no separate adult mg-per-dose figure for pain.",
+          "tag": "Mild to moderate pain",
+          "src": [
+            {
+              "s": "emc-7031",
+              "q": "Adults Codeine should be used at the lowest effective dose for the shortest period of time. The dose may be taken, up to 4 times a day at intervals of not less than 6 hours. Maximum daily dose of codeine should not exceed 240mg."
+            },
+            { "s": "emc-7031", "q": "The duration of treatment should be limited to 3 days" }
+          ]
+        },
+        {
+          "t": "Dry or painful cough (adults): 15-30 mg 3-4 times daily.",
+          "tag": "Cough",
+          "src": [{"s": "emc-7031", "q": "For dry or painful cough Adults: 15-30mg 3-4 times daily."}]
+        },
+        {
+          "t": "Diarrhoea (adults): 30 mg three to four times daily (range 15-60 mg).",
+          "tag": "Diarrhoea",
+          "src": [{"s": "emc-7031", "q": "Diarrhoea Adults: 30mg three to four times daily (range 15-60mg)"}]
+        },
+        {
+          "t": "Elderly: reduce the dose.",
+          "tag": "Elderly",
+          "src": [{"s": "emc-7031", "q": "Elderly Dosage should be reduced in elderly patients."}]
+        },
+        {
+          "t": "Agree a treatment plan and end-of-treatment plan before starting; taper gradually when stopping.",
+          "tag": "Duration",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "When a patient no longer requires therapy with codeine, it may be advisable to taper the dose gradually to prevent symptoms of withdrawal."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Under 12 years: should not be used (risk of opioid toxicity).",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Codeine should not be used in children below the age of 12 years because of the risk of opioid toxicity"
+            }
+          ]
+        },
+        {
+          "t": "12-18 years, pain: 30-60 mg every 6 hours when necessary (0.5-1 mg/kg), maximum 240 mg daily; limit to 3 days (MHRA).",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "The recommended codeine dose for children 12 years and older should be 30-60mg every 6 hours when necessary up to a maximum dose of codeine of 240 mg daily. The dose is based on the body weight (0.5-1mg/kg)."
+            },
+            {
+              "s": "mhra-dsu-codeine-children-2013",
+              "q": "Duration of treatment should be limited to 3 days"
+            }
+          ]
+        },
+        {
+          "t": "Cough: contraindicated under 12 years; not recommended at 12-18 years with compromised respiratory function. Diarrhoea: not recommended in children.",
+          "src": [
+            {
+              "s": "emc-7031",
+              "q": "Codeine is contraindicated in children below the age of 12 years for the symptomatic treatment of cough"
+            },
+            {
+              "s": "emc-7031",
+              "q": "Codeine is not recommended for use in children aged 12 years to 18 years with compromised respiratory function for the symptomatic treatment of cough"
+            }
+          ]
+        },
+        {
+          "t": "Contraindicated in all under-18s having tonsillectomy and/or adenoidectomy for obstructive sleep apnoea. Not recommended where breathing may be compromised.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "In all paediatric patients (0-18 years of age) who undergo tonsillectomy and/or adenoidectomy for obstructive sleep apnoea syndrome"
+            },
+            {
+              "s": "emc-2375",
+              "q": "Codeine is not recommended for use in children in whom respiratory function might be compromised"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Acute respiratory depression; hypersensitivity to codeine or other opioid analgesics; obstructive airways disease; liver disease; severe hepatic dysfunction; acute alcoholism.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Acute respiratory depression, hypersensitivity to codeine or other opioid analgesics or to any of the excipients, obstructive airways disease, liver disease, severe hepatic dysfunction, acute alcoholism."
+            }
+          ]
+        },
+        {
+          "t": "Where inhibition of peristalsis should be avoided: risk of paralytic ileus, abdominal distension, acute ulcerative colitis, antibiotic-associated colitis, diarrhoea caused by poisoning.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Codeine is also contraindicated in conditions where inhibition of peristalsis is to be avoided, where there is a risk of paralytic ileus, where abdominal distension develops"
+            }
+          ]
+        },
+        {
+          "t": "Breastfeeding; known CYP2D6 ultra-rapid metabolisers; under-18s after tonsillectomy/adenoidectomy for obstructive sleep apnoea.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "In women during breastfeeding (see section 4.6) In patients for whom it is known they are CYP2D6 ultra-rapid metabolisers"
+            }
+          ]
+        },
+        {
+          "t": "Also in section 4.3: use should be avoided in raised intracranial pressure or head injury (treated here as a contraindication); should not be given to comatose patients.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Use should be avoided in patients with raised intracranial pressure or head injury"
+            },
+            { "s": "emc-2375", "q": "Codeine should not be given to comatose patients." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Caution or reduced dose in asthma and decreased respiratory reserve; avoid during an acute asthma attack.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Use with caution or in reduced doses in asthma and decreased respiratory reserve, avoid use during an acute asthma attack"
+            }
+          ]
+        },
+        {
+          "t": "Caution or reduced dose: elderly or debilitated, hypotension, hypothyroidism, prostatic hypertrophy, adrenocortical insufficiency, inflammatory or obstructive bowel disorders, urethral stricture, shock, convulsive disorders, myasthenia gravis.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "in patients with hypotension, hypothyroidism, prostatic hypertrophy, adrenocortical insufficiency, inflammatory or obstructive bowel disorders, urethral stricture, shock, convulsive disorders, myasthenia gravis"
+            }
+          ]
+        },
+        {
+          "t": "Tolerance, dependence and opioid use disorder can develop with repeated use; use with caution with a history of drug abuse; discontinue gradually.",
+          "src": [
+            { "s": "emc-2375", "q": "Repeated use of codeine can lead to OUD." },
+            { "s": "emc-2375", "q": "Use with caution in those with a history of drug abuse." }
+          ]
+        },
+        {
+          "t": "CYP2D6 ultra-rapid or extensive metabolisers: increased risk of opioid toxicity even at usual doses.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "if the patient is an extensive or ultra-rapid metaboliser there is an increased risk of developing side effects of opioid toxicity even at commonly prescribed doses"
+            }
+          ]
+        },
+        {
+          "t": "Caution in pancreatitis and biliary tract disease (sphincter of Oddi dysfunction). Another UK SmPC: opioid analgesics should be avoided in biliary tract disorders, or used with an antispasmodic.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "codeine has to be administered with caution in patients with pancreatitis and diseases of the biliary tract"
+            },
+            {
+              "s": "emc-7031",
+              "q": "Opioid analgesics should be avoided in patients with biliary tract disorders or used in conjunction with an antispasmodic."
+            }
+          ]
+        },
+        {
+          "t": "MAOIs: avoid codeine during and for 2 weeks after MAOI treatment.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "the use of codeine should be avoided while the patient is taking MAOIs and for 2 weeks after MAOI discontinuation"
+            }
+          ]
+        },
+        {
+          "t": "Contains lactose (galactose intolerance, Lapp lactase deficiency, glucose-galactose malabsorption should not take).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine as it contains lactose."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Anxiolytics and hypnotics: enhanced sedative effect. MHRA: co-prescribe benzodiazepines and opioids only if no alternative, at lowest doses for shortest time, with close monitoring.",
+          "src": [
+            { "s": "emc-2375", "q": "Anxiolytics and hypnotics: enhanced sedative effect." },
+            {
+              "s": "mhra-dsu-benzodiazepines-opioids-2020",
+              "q": "if a decision is made to co-prescribe, use the lowest doses possible for the shortest duration of time and carefully monitor patients for signs of respiratory depression"
+            }
+          ]
+        },
+        {
+          "t": "Alcohol, anaesthetics, sedating antihistamines, antipsychotics, sodium oxybate: increased CNS/respiratory depression and hypotension.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Alcohol: the hypotensive, sedative and respiratory depressive effects of alcohol may be enhanced."
+            },
+            { "s": "emc-2375", "q": "Antipsychotics: enhanced sedative and hypotensive effect." }
+          ]
+        },
+        {
+          "t": "Gabapentin or pregabalin: respiratory depression, hypotension, profound sedation, coma or death.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "The concomitant use of codeine with gabapentinoids (gabapentin and pregabalin) may result in respiratory depression, hypotension, profound sedation, coma or death"
+            }
+          ]
+        },
+        {
+          "t": "Sertraline (sertraline SmPC): serotonin syndrome / NMS risk is increased with opioids; caution and monitor for symptoms.",
+          "src": [
+            {
+              "s": "emc-1070",
+              "q": "and with opioids. Patients should be monitored for the emergence of signs and symptoms of SS or NMS syndrome"
+            },
+            { "s": "emc-1070", "q": "Caution is also advised with opioids" }
+          ]
+        },
+        {
+          "t": "Clopidogrel (clopidogrel SmPC): opioid agonists may delay and reduce clopidogrel absorption (clinical relevance unknown); in acute coronary syndrome consider a parenteral antiplatelet agent.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "co-administration of opioid agonists has the potential to delay and reduce the absorption of clopidogrel presumably because of slowed gastric emptying. The clinical relevance is unknown."
+            },
+            {
+              "s": "emc-5935",
+              "q": "Consider the use of a parenteral antiplatelet agent in acute coronary syndrome patients requiring co-administration of morphine or other opioid agonists."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Renal impairment: avoid or reduce the dose (no numeric threshold stated).",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "It should be avoided or the dose reduced in patients with renal or hepatic impairment"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Liver disease and severe hepatic dysfunction are listed as contraindications; section 4.4 also says avoid or reduce the dose in hepatic impairment.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "obstructive airways disease, liver disease, severe hepatic dysfunction, acute alcoholism"
+            },
+            {
+              "s": "emc-2375",
+              "q": "It should be avoided or the dose reduced in patients with renal or hepatic impairment"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: caution, especially in the first trimester (possible association with respiratory and cardiac malformations). Regular use may cause neonatal withdrawal; use in labour may depress neonatal breathing.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "As with all medications caution should be exercised during pregnancy, especially in the first trimester. A possible association with respiratory and cardiac malformations has been reported following first trimester exposure to codeine."
+            },
+            { "s": "emc-2375", "q": "Administration during labour may depress respiration in the neonate" }
+          ]
+        },
+        {
+          "t": "BUMPS: take in pregnancy only if recommended by a doctor; most studies do not show harm; use near delivery can cause neonatal withdrawal and breathing problems.",
+          "src": [
+            {
+              "s": "bumps-codeine",
+              "q": "Codeine should only be taken during pregnancy if recommended by your doctor."
+            },
+            {
+              "s": "bumps-codeine",
+              "q": "Codeine used around the time of delivery can affect your baby after birth."
+            }
+          ]
+        },
+        {
+          "t": "SPS: codeine may be used where paracetamol has not been effective; most data do not suggest increased malformation risk.",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-pain-pregnancy",
+              "q": "The weak opioid codeine may be used where paracetamol has not been effective."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Contraindicated in breastfeeding (SmPC 4.3). Section 4.6 wording: not recommended; if opioid toxicity develops in mother or infant, stop all codeine and use non-opioid analgesics; consider naloxone in severe cases.",
+          "src": [
+            { "s": "emc-2375", "q": "In women during breastfeeding (see section 4.6)" },
+            {
+              "s": "emc-2375",
+              "q": "Administration to nursing women is not recommended as codeine may be secreted in breast milk and may cause respiratory depression in the infant."
+            }
+          ]
+        },
+        {
+          "t": "MHRA: codeine should not be used by breastfeeding mothers.",
+          "src": [
+            {
+              "s": "mhra-dsu-codeine-children-2013",
+              "q": "Codeine should not be used by breastfeeding mothers because it can pass to the baby through breast milk and potentially cause harm"
+            }
+          ]
+        },
+        {
+          "t": "SPS: avoid. If a few doses are taken accidentally, stop codeine and monitor the infant (sedation, slow breathing/apnoea, poor feeding); get medical advice for significant effects.",
+          "src": [
+            { "s": "sps-bf-weak-opioids", "q": "Codeine should not be used during breastfeeding." },
+            {
+              "s": "sps-bf-weak-opioids",
+              "q": "the mother should be advised to stop taking codeine and the infant monitored for side effects such as sedation, slowed breathing rate/apnoea"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Sexual dysfunction, erectile dysfunction and decreased libido are listed adverse effects (frequency not stated).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Reproductive system and breast disorders: sexual dysfunction, erectile dysfunction, decreased potency. Decreased libido."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Most common: drowsiness, nausea, vomiting and confusion (tolerance develops with long-term use). Also constipation, dry mouth, dizziness, headache (frequency not tabulated).",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Tolerance and some of the most common side effects - drowsiness, nausea, and vomiting, and confusion - generally develops with long term use."
+            },
+            {
+              "s": "emc-2375",
+              "q": "Gastrointestinal disorders: nausea, vomiting, constipation, dry mouth, stomach cramps, pancreatitis."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Respiratory depression (large doses) and opioid toxicity, especially in CYP2D6 ultra-rapid metabolisers; may be life-threatening.",
+          "src": [
+            { "s": "emc-2375", "q": "Large doses produce respiratory depression." },
+            {
+              "s": "emc-2375",
+              "q": "In severe cases this may include symptoms of circulatory and respiratory depression, which may be life-threatening and very rarely fatal."
+            }
+          ]
+        },
+        {
+          "t": "Addiction and drug withdrawal syndrome; taper to stop.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Regular prolonged use of codeine is known to lead to addiction and tolerance."
+            }
+          ]
+        },
+        {
+          "t": "Convulsions (especially in infants and children), pancreatitis, hypersensitivity syndrome.",
+          "detail": true,
+          "src": [{"s": "emc-2375", "q": "convulsions (especially in infants and children)"}]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Review benefit-risk regularly; monitor for signs of drug-seeking behaviour (e.g. early repeat requests).",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "The risk-benefit of continued use should be assessed regularly by the prescriber."
+            },
+            {
+              "s": "emc-2375",
+              "q": "Patients will require monitoring for signs of drug-seeking behaviour (e.g. too early requests for refills)."
+            }
+          ]
+        },
+        {
+          "t": "Pain: if no effective relief within 3 days, seek medical review.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "The duration of treatment should be limited to 3 days and if no effective pain relief is achieved the patients/carers should be advised to seek the views of a physician."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral.",
+          "src": [{"s": "emc-2375", "q": "4.2 Posology and method of administration Oral route"}]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Can cause drowsiness and blurred or double vision; do not drive or use machines if affected. Alcohol effects are enhanced.",
+          "src": [
+            {
+              "s": "emc-2375",
+              "q": "Codeine produces sedation and may also cause changes in vision, including blurred or double vision. If affected, patients should not drive or operate machinery."
+            }
+          ]
+        },
+        {
+          "t": "MHRA: explain risk of dependence and addiction even at therapeutic doses; do not stop suddenly after long-term use.",
+          "src": [
+            {
+              "s": "mhra-dsu-opioids-dependence-2020",
+              "q": "discuss with patients that prolonged use of opioids may lead to drug dependence and addiction, even at therapeutic doses"
+            }
+          ]
+        },
+        {
+          "t": "Children 12-18: parents should know the signs of morphine toxicity and stop codeine and seek help at once if they occur.",
+          "src": [
+            {
+              "s": "mhra-dsu-codeine-children-2013",
+              "q": "Symptoms of codeine toxicity include: reduced levels of consciousness; lack of appetite; somnolence; constipation; respiratory depression; 'pin-point' pupils; or nausea and vomiting"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "codeine:allergy:opioid",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "codeine",
+      "allergen": ["codeine", "group:opioid"],
+      "concern": "Hypersensitivity to codeine or other opioid analgesics",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: hypersensitivity to codeine or other opioid analgesics",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "hypersensitivity to codeine or other opioid analgesics or to any of the excipients"
+        }
+      ]
+    },
+    {
+      "id": "codeine:breastfeeding:ci",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "codeine",
+      "concern": "Breastfeeding",
+      "consequence": "Codeine and morphine pass into milk; infant respiratory depression and serious harm reported.",
+      "action": "Do not use; choose a non-opioid analgesic (SPS: paracetamol or ibuprofen).",
+      "sourceWording": "Codeine is also contraindicated ... In women during breastfeeding",
+      "src": [
+        { "s": "emc-2375", "q": "In women during breastfeeding (see section 4.6)" },
+        { "s": "mhra-dsu-codeine-children-2013", "q": "Codeine should not be used by breastfeeding mothers" },
+        { "s": "sps-bf-weak-opioids", "q": "Codeine should not be used during breastfeeding." }
+      ]
+    },
+    {
+      "id": "codeine:condition:cyp2d6-urm",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "codeine",
+      "condition": "cyp2d6-ultra-rapid-metaboliser",
+      "effect": "cns-respiratory-depression",
+      "concern": "Known CYP2D6 ultra-rapid metaboliser",
+      "consequence": "Rapid conversion to morphine; life-threatening opioid toxicity.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-2375", "q": "In patients for whom it is known they are CYP2D6 ultra-rapid metabolisers" },
+        {
+          "s": "mhra-dsu-codeine-children-2013",
+          "q": "Codeine is contraindicated in all patients of any age known to be CYP2D6 ultra-rapid metabolisers"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:ta-osa",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "codeine",
+      "condition": "tonsillectomy-adenoidectomy-osa",
+      "age": { "minYears": 0, "maxYears": 18 },
+      "effect": "cns-respiratory-depression",
+      "concern": "Under 18 after tonsillectomy/adenoidectomy for obstructive sleep apnoea",
+      "consequence": "Serious and life-threatening adverse reactions, including death.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "In all paediatric patients (0-18 years of age) who undergo tonsillectomy and/or adenoidectomy for obstructive sleep apnoea syndrome due to an increased risk of developing serious and life-threatening adverse reactions"
+        },
+        {
+          "s": "mhra-dsu-codeine-children-2013",
+          "q": "Codeine is contraindicated in all children (ie, younger than 18 years) who undergo tonsillectomy or adenoidectomy (or both) for obstructive sleep apnoea"
+        }
+      ]
+    },
+    {
+      "id": "codeine:age:under-12",
+      "kind": "age",
+      "level": "avoid",
+      "med": "codeine",
+      "age": { "minYears": 0, "maxYears": 12 },
+      "concern": "Child under 12 years",
+      "consequence": "Risk of opioid toxicity from variable, unpredictable metabolism of codeine to morphine.",
+      "action": "Should not be used (contraindicated for cough under 12).",
+      "sourceWording": "should not be used in children below the age of 12 years",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "Codeine should not be used in children below the age of 12 years because of the risk of opioid toxicity"
+        },
+        {
+          "s": "emc-7031",
+          "q": "Codeine is contraindicated in children below the age of 12 years for the symptomatic treatment of cough"
+        }
+      ]
+    },
+    {
+      "id": "codeine:age:12-18-max",
+      "kind": "age",
+      "level": "dose",
+      "med": "codeine",
+      "age": { "minYears": 12, "maxYears": 18 },
+      "concern": "Age 12-18 years",
+      "consequence": "Dose limits apply.",
+      "action": "30-60 mg every 6 hours when necessary (0.5-1 mg/kg); maximum 240 mg/day; limit to 3 days.",
+      "sourceWording": "the maximum daily dose should not exceed 240 mg",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "The recommended codeine dose for children 12 years and older should be 30-60mg every 6 hours when necessary up to a maximum dose of codeine of 240 mg daily."
+        },
+        {
+          "s": "mhra-dsu-codeine-children-2013",
+          "q": "In children age 12-18 years, the maximum daily dose should not exceed 240 mg."
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:paed-resp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "codeine",
+      "condition": "paediatric-compromised-respiratory-function",
+      "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Child with possibly compromised breathing",
+      "consequence": "Symptoms of morphine toxicity may be worse.",
+      "action": "Not recommended.",
+      "sourceWording": "not recommended",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "Codeine is not recommended for use in children in whom respiratory function might be compromised including neuromuscular disorders, severe cardiac or respiratory conditions, upper respiratory or lung infections, multiple trauma or extensive surgical procedures."
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:resp-depression",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "codeine",
+      "condition": "copd-respiratory-depression",
+      "effect": "cns-respiratory-depression",
+      "concern": "Acute respiratory depression or obstructive airways disease",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Acute respiratory depression ... obstructive airways disease",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "Acute respiratory depression, hypersensitivity to codeine or other opioid analgesics or to any of the excipients, obstructive airways disease"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:acute-asthma",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "codeine",
+      "condition": "acute-asthma-attack",
+      "concern": "Acute asthma attack",
+      "consequence": "Respiratory depression.",
+      "action": "Avoid during an acute attack.",
+      "sourceWording": "avoid use during an acute asthma attack",
+      "src": [{"s": "emc-2375", "q": "avoid use during an acute asthma attack"}]
+    },
+    {
+      "id": "codeine:condition:asthma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "codeine",
+      "condition": "asthma",
+      "concern": "Asthma / decreased respiratory reserve",
+      "consequence": "Respiratory depression.",
+      "action": "Use with caution or in reduced doses.",
+      "sourceWording": "Use with caution or in reduced doses",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "Use with caution or in reduced doses in asthma and decreased respiratory reserve"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:acute-alcoholism",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "codeine",
+      "condition": "acute-alcoholism",
+      "concern": "Acute alcoholism",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: acute alcoholism",
+      "src": [{"s": "emc-2375", "q": "liver disease, severe hepatic dysfunction, acute alcoholism"}]
+    },
+    {
+      "id": "codeine:condition:head-injury",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "codeine",
+      "condition": "head-injury-raised-icp",
+      "concern": "Raised intracranial pressure or head injury",
+      "consequence": "Respiratory depression, raised ICP; may mask pupillary and neurological signs.",
+      "action": "Do not use (listed in SmPC section 4.3, worded 'use should be avoided').",
+      "sourceWording": "4.3 Contraindications: Use should be avoided in patients with raised intracranial pressure or head injury",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "severe hepatic dysfunction, acute alcoholism. Use should be avoided in patients with raised intracranial pressure or head injury"
+        },
+        {
+          "s": "emc-7031",
+          "q": "Use should be avoided in patients with raised intracranial pressure or head injury"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:ileus",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "codeine",
+      "condition": "paralytic-ileus-gi-obstruction",
+      "concern": "Risk of paralytic ileus / inhibition of peristalsis to be avoided",
+      "consequence": "Opioid slows gut transit.",
+      "action": "Do not use.",
+      "sourceWording": "Codeine is also contraindicated",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "Codeine is also contraindicated in conditions where inhibition of peristalsis is to be avoided, where there is a risk of paralytic ileus"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:acute-colitis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "codeine",
+      "condition": "acute-colitis-diarrhoea",
+      "concern": "Acute ulcerative colitis, antibiotic-associated colitis or diarrhoea from poisoning",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "Codeine is also contraindicated",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "in acute diarrhoeal conditions such as acute ulcerative colitis or antibiotic associated colitis (e.g. pseudomembranous colitis) or diarrhoea caused by poisoning"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:ibd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "codeine",
+      "condition": "inflammatory-bowel-disease",
+      "concern": "Inflammatory or obstructive bowel disorder",
+      "consequence": "Not stated in source.",
+      "action": "Use with caution or in reduced dose.",
+      "sourceWording": "should only be used with caution or in reduced dose",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "It should only be used with caution or in reduced dose in elderly patients or debilitated patients"
+        },
+        { "s": "emc-2375", "q": "inflammatory or obstructive bowel disorders" }
+      ]
+    },
+    {
+      "id": "codeine:condition:hypotension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "codeine",
+      "condition": "hypotension",
+      "effect": "hypotension",
+      "concern": "Hypotension",
+      "consequence": "Not stated in source.",
+      "action": "Use with caution or in reduced dose.",
+      "sourceWording": "should only be used with caution or in reduced dose",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "in patients with hypotension, hypothyroidism, prostatic hypertrophy, adrenocortical insufficiency"
+        },
+        {
+          "s": "emc-2375",
+          "q": "It should only be used with caution or in reduced dose in elderly patients or debilitated patients"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "caution",
+      "med": "codeine",
+      "condition": "hypothyroidism",
+      "concern": "Hypothyroidism",
+      "consequence": "Not stated in source.",
+      "action": "Use with caution or in reduced dose.",
+      "sourceWording": "should only be used with caution or in reduced dose",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "in patients with hypotension, hypothyroidism, prostatic hypertrophy, adrenocortical insufficiency"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:prostate",
+      "kind": "condition",
+      "level": "caution",
+      "med": "codeine",
+      "condition": "prostatic-hypertrophy",
+      "concern": "Prostatic hypertrophy",
+      "consequence": "Not stated in source.",
+      "action": "Use with caution or in reduced dose.",
+      "sourceWording": "should only be used with caution or in reduced dose",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "in patients with hypotension, hypothyroidism, prostatic hypertrophy, adrenocortical insufficiency"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:adrenal",
+      "kind": "condition",
+      "level": "caution",
+      "med": "codeine",
+      "condition": "adrenal-insufficiency",
+      "concern": "Adrenocortical insufficiency",
+      "consequence": "Not stated in source.",
+      "action": "Use with caution or in reduced dose.",
+      "sourceWording": "should only be used with caution or in reduced dose",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "in patients with hypotension, hypothyroidism, prostatic hypertrophy, adrenocortical insufficiency"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:epilepsy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "codeine",
+      "condition": "epilepsy",
+      "effect": "seizure-threshold",
+      "concern": "Convulsive disorder",
+      "consequence": "Not stated in source.",
+      "action": "Use with caution or in reduced dose.",
+      "sourceWording": "should only be used with caution or in reduced dose",
+      "src": [{"s": "emc-2375", "q": "urethral stricture, shock, convulsive disorders, myasthenia gravis"}]
+    },
+    {
+      "id": "codeine:condition:myasthenia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "codeine",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "Not stated in source.",
+      "action": "Use with caution or in reduced dose.",
+      "sourceWording": "should only be used with caution or in reduced dose",
+      "src": [{"s": "emc-2375", "q": "urethral stricture, shock, convulsive disorders, myasthenia gravis"}]
+    },
+    {
+      "id": "codeine:condition:biliary",
+      "kind": "condition",
+      "level": "caution",
+      "med": "codeine",
+      "condition": "biliary-tract-disease-pancreatitis",
+      "concern": "Pancreatitis or biliary tract disease",
+      "consequence": "Sphincter of Oddi spasm; biliary symptoms and pancreatitis.",
+      "action": "Use with caution.",
+      "sourceWording": "has to be administered with caution",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "codeine has to be administered with caution in patients with pancreatitis and diseases of the biliary tract"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:substance-use",
+      "kind": "condition",
+      "level": "caution",
+      "med": "codeine",
+      "condition": "substance-use-disorder",
+      "concern": "History of drug abuse / substance use disorder",
+      "consequence": "Higher risk of opioid use disorder.",
+      "action": "Use with caution; monitor for drug-seeking behaviour.",
+      "sourceWording": "Use with caution in those with a history of drug abuse",
+      "src": [{"s": "emc-2375", "q": "Use with caution in those with a history of drug abuse."}]
+    },
+    {
+      "id": "codeine:renal:impairment",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "codeine",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment",
+      "consequence": "Not stated in source.",
+      "action": "Avoid or reduce the dose.",
+      "sourceWording": "should be avoided or the dose reduced",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "It should be avoided or the dose reduced in patients with renal or hepatic impairment"
+        }
+      ]
+    },
+    {
+      "id": "codeine:hepatic:any",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "codeine",
+      "hepatic": ["any"],
+      "concern": "Liver disease / severe hepatic dysfunction",
+      "consequence": "Listed in SmPC section 4.3 (section 4.4 also says avoid or reduce dose in hepatic impairment).",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: liver disease, severe hepatic dysfunction",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "obstructive airways disease, liver disease, severe hepatic dysfunction, acute alcoholism"
+        }
+      ]
+    },
+    {
+      "id": "codeine:pregnancy:caution",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "codeine",
+      "concern": "Pregnancy (especially first trimester)",
+      "consequence": "Possible respiratory/cardiac malformation association; neonatal withdrawal with regular use; neonatal respiratory depression in labour.",
+      "action": "Use with caution; only if recommended by a doctor (BUMPS).",
+      "sourceWording": "caution should be exercised during pregnancy, especially in the first trimester",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "As with all medications caution should be exercised during pregnancy, especially in the first trimester."
+        },
+        {
+          "s": "bumps-codeine",
+          "q": "Codeine should only be taken during pregnancy if recommended by your doctor."
+        }
+      ]
+    },
+    {
+      "id": "codeine:interaction:cns-depressant",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "codeine",
+      "other": "group:cns-depressant",
+      "effect": "cns-respiratory-depression",
+      "concern": "Anxiolytics, hypnotics and other CNS depressants",
+      "consequence": "Enhanced sedation; with benzodiazepines, risk of respiratory depression, coma and death (MHRA).",
+      "action": "Only co-prescribe if no alternative; lowest doses, shortest time, monitor for respiratory depression.",
+      "sourceWording": "enhanced sedative effect; only prescribe together if there is no alternative",
+      "src": [
+        { "s": "emc-2375", "q": "Anxiolytics and hypnotics: enhanced sedative effect." },
+        {
+          "s": "mhra-dsu-benzodiazepines-opioids-2020",
+          "q": "only prescribe benzodiazepines (or benzodiazepine-like drugs) and opioids together if there is no alternative"
+        }
+      ]
+    },
+    {
+      "id": "codeine:condition:biliary-avoid",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "codeine",
+      "condition": "biliary-tract-disease-pancreatitis",
+      "concern": "Biliary tract disorder (one UK SmPC)",
+      "consequence": "Sphincter of Oddi spasm; biliary symptoms and pancreatitis.",
+      "action": "Avoid, or use together with an antispasmodic (one UK 30 mg SmPC; another UK SmPC says use with caution).",
+      "sourceWording": "should be avoided in patients with biliary tract disorders or used in conjunction with an antispasmodic",
+      "src": [
+        {
+          "s": "emc-7031",
+          "q": "Opioid analgesics should be avoided in patients with biliary tract disorders or used in conjunction with an antispasmodic."
+        }
+      ]
+    },
+    {
+      "id": "codeine:interaction:sertraline",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "codeine",
+      "other": "sertraline",
+      "effect": "serotonin-syndrome",
+      "concern": "Sertraline (serotonin syndrome)",
+      "consequence": "Sertraline SmPC: risk of serotonin syndrome or neuroleptic malignant syndrome with SSRIs is increased with opioids.",
+      "action": "Caution; monitor for signs and symptoms of serotonin syndrome or NMS.",
+      "sourceWording": "Caution is also advised with opioids",
+      "src": [
+        {
+          "s": "emc-1070",
+          "q": "and with opioids. Patients should be monitored for the emergence of signs and symptoms of SS or NMS syndrome"
+        },
+        { "s": "emc-1070", "q": "Caution is also advised with opioids" }
+      ]
+    },
+    {
+      "id": "codeine:interaction:clopidogrel",
+      "kind": "interaction",
+      "level": "info",
+      "med": "codeine",
+      "other": "clopidogrel",
+      "concern": "Clopidogrel (absorption delayed by opioids)",
+      "consequence": "Clopidogrel SmPC: opioid agonists may delay and reduce clopidogrel absorption; clinical relevance unknown.",
+      "action": "Clopidogrel SmPC: in acute coronary syndrome needing an opioid, consider a parenteral antiplatelet agent.",
+      "sourceWording": "The clinical relevance is unknown",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "co-administration of opioid agonists has the potential to delay and reduce the absorption of clopidogrel presumably because of slowed gastric emptying. The clinical relevance is unknown."
+        },
+        {
+          "s": "emc-5935",
+          "q": "Consider the use of a parenteral antiplatelet agent in acute coronary syndrome patients requiring co-administration of morphine or other opioid agonists."
+        }
+      ]
+    }
+  ]
+}

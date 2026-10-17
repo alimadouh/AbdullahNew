@@ -1,0 +1,1431 @@
+{
+  "id": "potassium-chloride",
+  "name": "Potassium chloride",
+  "ingredients": [
+    "potassium"
+  ],
+  "className": "Oral potassium supplement",
+  "groups": [
+    "potassium-supplement"
+  ],
+  "searchTerms": [
+    "potassium supplement",
+    "oral potassium",
+    "potassium chloride syrup",
+    "potassium chloride oral solution"
+  ],
+  "formulations": [
+    {
+      "id": "potassium-chloride-eff-tab",
+      "label": "Effervescent tablets (12 mmol K+)",
+      "route": "oral",
+      "strengths": "Potassium chloride 600 mg + potassium bicarbonate 400 mg per tablet (12 mmol K+ per tablet)",
+      "release": "immediate",
+      "note": "SmPC: 2 to 4 tablets = 24 to 48 mmol K+. SPS: each tablet contains 12 mmol potassium. Contains 521.5 mg sucrose per tablet.",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Each tablet contains 600 mg potassium chloride and 400 mg potassium bicarbonate."
+        },
+        {
+          "s": "emc-959",
+          "q": "2 to 4 tablets daily (24 to 48 mmol K+)"
+        },
+        {
+          "s": "sps-hypokalaemia",
+          "q": "each tablet of Sando K contains 12mmol of potassium from potassium chloride and potassium bicarbonate"
+        },
+        {
+          "s": "emc-959",
+          "q": "Each tablet contains 521.5 mg sucrose."
+        }
+      ],
+      "sourceIds": [
+        "emc-959"
+      ]
+    },
+    {
+      "id": "potassium-chloride-syrup-7-5",
+      "label": "Oral solution 7.5% w/v (1 mmol K+/mL)",
+      "route": "oral",
+      "strengths": "Potassium chloride 7.5% w/v (1 mmol K+ per mL)",
+      "release": "n/a",
+      "note": "Contains sorbitol, carmoisine (E122), parahydroxybenzoates, sodium benzoate and propylene glycol.",
+      "src": [
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Potassium chloride 7.5% w/v (equivalent to 1 millimole of potassium per ml)"
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "contains 40% w/v sorbitol, 0.002% w/v carmoisine (E122)"
+        }
+      ],
+      "sourceIds": [
+        "mhra-pl39307-0145-spc"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Prevention and treatment of hypokalaemia, e.g. with potassium-depleting drugs (furosemide, thiazides, corticosteroids, cardiac glycosides), GI losses, alkalosis, aldosterone excess, poor intake; hypokalaemia with hypochloraemic alkalosis.",
+          "formulations": [
+            "potassium-chloride-eff-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Prevention and treatment of hypokalaemic states such as those associated with"
+            },
+            {
+              "s": "emc-959",
+              "q": "it may be used in the treatment of hypokalaemia associated with hypochloraemic alkalosis"
+            }
+          ]
+        },
+        {
+          "t": "Treatment of hypokalaemia and potassium deficiency of renal and extrarenal origin.",
+          "formulations": [
+            "potassium-chloride-syrup-7-5"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "For the treatment of hypokalaemia and potassium deficiency of renal and extrarenal origin."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restrictions in the effervescent tablet or oral solution SmPCs. SPS notes modified-release potassium tablets are considered less suitable for NHS prescribing."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults and children: usually 2 to 4 tablets daily (24 to 48 mmol K+) for prophylaxis or treatment; adjust to diet, clinical state and serum electrolytes.",
+          "tag": "Effervescent tablets: usual dose",
+          "formulations": [
+            "potassium-chloride-eff-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "the administration of 2 to 4 tablets daily (24 to 48 mmol K+) is likely to provide an adequate prophylactic or therapeutic dose in most patients"
+            }
+          ]
+        },
+        {
+          "t": "More severe depletion: serum K+ 2-3 mmol/l, consider up to 100-200 mmol K+ per day (8-16 tablets); serum K+ 3-4 mmol/l, consider up to 50-100 mmol K+ per day (4-8 tablets). Serum K+ below 2 mmol/l may need IV replacement.",
+          "tag": "Effervescent tablets: maximum daily doses by serum potassium",
+          "formulations": [
+            "potassium-chloride-eff-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "For serum levels between 2-3 mmol/l, a maximum daily dose of 100-200 mmol K+ (8-16 tablets)"
+            },
+            {
+              "s": "emc-959",
+              "q": "for serum levels between 3-4 mmol/l, a maximum daily dose of 50-100 mmol K+ (4-8 tablets) should be considered"
+            },
+            {
+              "s": "emc-959",
+              "q": "serum potassium levels below 2 mmol/l may warrant intravenous replacement therapy"
+            }
+          ]
+        },
+        {
+          "t": "Adults: 10 to 50 mL (10 to 50 mmol K+) per day in divided amounts after food; adjust to cause, degree and duration of depletion.",
+          "tag": "Oral solution: adults",
+          "formulations": [
+            "potassium-chloride-syrup-7-5"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Adults: 10 - 50 mL/day in divided amounts after food is usually an adequate dosage."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "equivalent to 1 millimole of potassium per ml"
+            }
+          ]
+        },
+        {
+          "t": "Elderly: usually no special adjustment, but take renal insufficiency into account; monitor serum potassium if clinically needed (oral solution SmPC). Supervise carefully (effervescent tablet SmPC).",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "concurrent renal insufficiency should be taken into account"
+            },
+            {
+              "s": "emc-959",
+              "q": "such patients should be carefully supervised"
+            }
+          ]
+        },
+        {
+          "t": "SPS (adults, acute): mild hypokalaemia (3.0-3.5 mmol/L) oral 24 mmol potassium up to 2 to 3 times a day; moderate (2.5-2.9 mmol/L) oral 24 to 36 mmol up to 3 to 4 times a day. Severe (below 2.5 mmol/L): IV potassium in hospital.",
+          "tag": "SPS: acute hypokalaemia in adults",
+          "src": [
+            {
+              "s": "sps-hypokalaemia",
+              "q": "Give an oral dose of 24mmol of potassium up to 2 to 3 times a day."
+            },
+            {
+              "s": "sps-hypokalaemia",
+              "q": "Give an oral dose of 24 to 36mmol of potassium up to 3 to 4 times a day."
+            },
+            {
+              "s": "sps-hypokalaemia",
+              "q": "IV potassium chloride should be given in a hospital setting."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Effervescent tablets: the SmPC gives one dose statement for adults and children (2 to 4 tablets daily); no age limit stated.",
+          "formulations": [
+            "potassium-chloride-eff-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Posology Adults and children Dosage is dependent upon the clinical conditions and diet of the patient"
+            }
+          ]
+        },
+        {
+          "t": "Oral solution: up to 1 year 0.5-0.75 mL/kg/day; 1 to 12 years 0.5-1.0 mL/kg/day (1 mL = 1 mmol K+), in divided amounts after food, as directed by the clinician; measure with a graduated dropper.",
+          "formulations": [
+            "potassium-chloride-syrup-7-5"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Up to 1 year: The usual dose is 0.5 - 0.75 mL/kg body weight/day in divided amounts after food."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Aged 1 to 12 years: The usual dose is 0.5 - 1.0 mL/kg body weight/day in divided amounts after food."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "The dose should be administered using a graduated dropper."
+            }
+          ]
+        },
+        {
+          "t": "SPS: a licensed 1 mmol/mL potassium oral liquid is available, so using part of an effervescent tablet in children should rarely be needed.",
+          "src": [
+            {
+              "s": "sps-effervescent-children",
+              "q": "A licensed 1mmol/mL potassium oral liquid is available meaning that the need to use part of an effervescent potassium tablet is rare"
+            }
+          ]
+        },
+        {
+          "t": "The oral solution contains sodium benzoate (may increase jaundice in newborns up to 4 weeks) and propylene glycol (serious effects in neonates with alcohol dehydrogenase substrates).",
+          "detail": true,
+          "formulations": [
+            "potassium-chloride-syrup-7-5"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Benzoate salt may increase jaundice (yellowing of the skin and eyes) in newborn babies (up to 4 weeks old)."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Co-administration with any substrate for alcohol dehydrogenase such as ethanol may induce serious adverse effects in neonates."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hyperkalaemia from any cause.",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Hyperkalaemia from any cause"
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Hyperkalaemia from any cause"
+            }
+          ]
+        },
+        {
+          "t": "Severe renal impairment with oliguria (effervescent tablet SmPC); advanced severe renal failure or impaired renal function with oliguria (oral solution SmPC).",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Severe renal impairment with oliguria"
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Advanced, severe renal failure or impaired renal function with oliguria"
+            }
+          ]
+        },
+        {
+          "t": "Inadequately treated Addison's disease.",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Inadequately treated Addison's disease"
+            }
+          ]
+        },
+        {
+          "t": "Crush injuries; conditions with extensive cell destruction such as severe burns (oral solution SmPC).",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Crush injuries"
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "conditions involving extensive cell destruction (e.g. severe burns)"
+            }
+          ]
+        },
+        {
+          "t": "Acute dehydration.",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Acute dehydration"
+            }
+          ]
+        },
+        {
+          "t": "Hypersensitivity to the active substance or excipients.",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "4.3 Contraindications Hypersensitivity to the active substance"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Impaired renal function: avoid doses above requirements (effervescent tablet SmPC); give only with extreme caution because of hyperkalaemia risk (oral solution SmPC).",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Care should be taken to avoid dosage in excess of requirements for patients with impaired renal function."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Potassium salts should only be administered with extreme caution to patients with renal dysfunction or hepatic disease because of the risk of hyperkalaemia."
+            }
+          ]
+        },
+        {
+          "t": "Caution with potassium-sparing diuretics and ACE inhibitors, and in myotonia congenita or severe haemolysis.",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Caution is also necessary in patients receiving potassium-sparing diuretics and ACE-inhibitors, and in patients with myotonia congenita or severe haemolysis."
+            }
+          ]
+        },
+        {
+          "t": "Cardiac disease or digitalis therapy: periodic checks of clinical status, serum electrolytes and ECG are particularly important.",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "This is particularly important in patients with cardiac disease and in those receiving digitalis."
+            }
+          ]
+        },
+        {
+          "t": "Oral solution SmPC: caution with a history of peptic ulcer. Potassium chloride can cause GI ulceration, haemorrhage or stricture (lower oesophagus, small bowel), more likely with local GI disorders, cardiovascular disease or prolonged therapy.",
+          "formulations": [
+            "potassium-chloride-syrup-7-5"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Oral potassium should be prescribed with caution in patients with a history of peptic ulcer."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "may induce ulceration, haemorrhage or stricture formation in the gastrointestinal tract, in particular the lower oesophagus and the small bowel"
+            }
+          ]
+        },
+        {
+          "t": "Oral solution SmPC: potassium chloride may induce hyperkalaemia in familial hyperkalaemic periodic paralysis.",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Ingestion of potassium chloride may induce hyperkalaemia in patients with familial hyperkalaemic periodic paralysis."
+            }
+          ]
+        },
+        {
+          "t": "Acidosis: monitor acid-base balance. Hypertension: correcting hypokalaemia may lower blood pressure.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "In patients with acidosis, the acid-base balance should be monitored."
+            },
+            {
+              "s": "emc-959",
+              "q": "In patients with hypertension, it should be remembered that correction of hypokalaemia may lower blood pressure."
+            }
+          ]
+        },
+        {
+          "t": "Excipients: the effervescent tablets (sucrose) and the oral solution (sorbitol) should not be taken in hereditary fructose intolerance; the oral solution contains E122 and parabens (may cause allergic reactions).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Patients with hereditary fructose intolerance (HFI) should not take/be given this medicine."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "ACE inhibitors (e.g. lisinopril): risk of hyperkalaemia; use with caution. Lisinopril SmPC: combination with potassium supplements is not recommended; if needed, use with caution and frequent serum potassium monitoring.",
+          "tag": "ACE inhibitors",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "If co-administered with potassium-sparing diuretics and ACE-inhibitors, the risk of hyperkalaemia must be considered."
+            },
+            {
+              "s": "emc-15574",
+              "q": "Therefore, the combination of Lisinopril tablet with the above-mentioned drugs is not recommended."
+            },
+            {
+              "s": "emc-15574",
+              "q": "If concomitant use is indicated, they should be used with caution and with frequent monitoring of serum potassium."
+            }
+          ]
+        },
+        {
+          "t": "Potassium-sparing diuretics and aldosterone antagonists (e.g. spironolactone): risk of hyperkalaemia. Spironolactone SmPC: potassium supplements should not be given routinely with spironolactone.",
+          "tag": "Potassium-sparing diuretics",
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Hyperkalaemia can result from the concurrent use of potassium supplements with ACE inhibitors, aldosterone antagonists, angiotensin II receptor antagonists, ciclosporin, potassium sparing diuretics and tacrolimus."
+            },
+            {
+              "s": "emc-1619",
+              "q": "potassium supplements should not be given routinely with Aldactone as hyperkalaemia may be induced"
+            }
+          ]
+        },
+        {
+          "t": "Trimethoprim SmPC: potassium supplements with trimethoprim may significantly raise serum potassium; monitor potassium as appropriate.",
+          "tag": "Trimethoprim",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Concomitant use of drugs that may increase serum potassium levels may lead to a significant increase in serum potassium."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Monitoring of potassium should be undertaken as appropriate"
+            }
+          ]
+        },
+        {
+          "t": "Co-trimoxazole SmPC: co-trimoxazole may cause clinically relevant hyperkalaemia; use caution with other drugs that can cause hyperkalaemia. Oral solution SmPC: use potassium supplements with caution with medicines that may raise plasma potassium.",
+          "tag": "Co-trimoxazole",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Hyperkalaemia: caution should be exercised in patients taking any other drugs that can cause hyperkalaemia"
+            },
+            {
+              "s": "emc-6999",
+              "q": "Concomitant use of trimethoprim-sulfamethoxazole (co-trimoxazole) may result in clinically relevant hyperkalaemia."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Potassium supplements should be used with caution in patients who are receiving medications that may increase plasma potassium levels."
+            }
+          ]
+        },
+        {
+          "t": "The effervescent tablets contain potassium bicarbonate. Ferrous sulfate SmPCs say bicarbonate-containing compounds may reduce iron absorption: separate by at least 2 hours.",
+          "tag": "Iron (effervescent tablets)",
+          "detail": true,
+          "formulations": [
+            "potassium-chloride-eff-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Each tablet contains 600 mg potassium chloride and 400 mg potassium bicarbonate."
+            },
+            {
+              "s": "emc-3130",
+              "q": "Administration of iron preparations with such compounds should be separated by at least 2 hours."
+            }
+          ]
+        },
+        {
+          "t": "Other drugs that raise potassium (angiotensin II receptor antagonists, ciclosporin, tacrolimus, digoxin overdose) increase hyperkalaemia risk; renal impairment increases it further.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Potassium supplements should be used with caution in patients who are receiving medications that may increase plasma potassium levels."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "The incidence of hyperkalaemia is increased by renal impairment."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Contraindicated in severe renal impairment with oliguria (effervescent tablet SmPC) / advanced severe renal failure or impaired renal function with oliguria (oral solution SmPC). No eGFR/CrCl thresholds given.",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Severe renal impairment with oliguria"
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Advanced, severe renal failure or impaired renal function with oliguria"
+            }
+          ]
+        },
+        {
+          "t": "Other renal impairment: avoid excess dosing (effervescent tablet SmPC); extreme caution (oral solution SmPC); lower doses may be needed (SPS).",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Care should be taken to avoid dosage in excess of requirements for patients with impaired renal function."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Potassium salts should only be administered with extreme caution to patients with renal dysfunction or hepatic disease"
+            },
+            {
+              "s": "sps-hypokalaemia",
+              "q": "Lower doses may be required in renal impairment due to the risk of hyperkalaemia."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Oral solution SmPC: give only with extreme caution in hepatic disease (hyperkalaemia risk). Potassium depletion may persist in hepatic ascites.",
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Potassium salts should only be administered with extreme caution to patients with renal dysfunction or hepatic disease because of the risk of hyperkalaemia."
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Some patients may develop potassium depletion despite the use of potassium supplements particularly in digitalised patients, or those with hepatic ascites."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Effervescent tablet SmPC: no clinical problems reported; weigh benefit against risk before use in pregnancy.",
+          "tag": "Effervescent tablet SmPC",
+          "formulations": [
+            "potassium-chloride-eff-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "No clinical problems have been encountered during pregnancy and lactation."
+            },
+            {
+              "s": "emc-959",
+              "q": "the benefit of treatment should be considered in relation to the risks before this medicinal product is given to pregnant or nursing women"
+            }
+          ]
+        },
+        {
+          "t": "Oral solution SmPC: should not be used in pregnancy unless considered essential by the physician.",
+          "tag": "Oral solution SmPC",
+          "formulations": [
+            "potassium-chloride-syrup-7-5"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "should not be used during pregnancy or by nursing women unless considered essential by the physician"
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Effervescent tablet SmPC: weigh benefit against risk before giving to nursing women.",
+          "tag": "Effervescent tablet SmPC",
+          "formulations": [
+            "potassium-chloride-eff-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "the benefit of treatment should be considered in relation to the risks before this medicinal product is given to pregnant or nursing women"
+            }
+          ]
+        },
+        {
+          "t": "Oral solution SmPC: should not be used by nursing women unless considered essential. No SPS breastfeeding page for potassium chloride was found.",
+          "tag": "Oral solution SmPC",
+          "formulations": [
+            "potassium-chloride-syrup-7-5"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "should not be used during pregnancy or by nursing women unless considered essential by the physician"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "No fertility or contraception statements in the effervescent tablet or oral solution SmPCs."
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Abdominal discomfort, diarrhoea, nausea and vomiting may occur (frequency not stated). Give with or after food if there is gastric irritation.",
+          "formulations": [
+            "potassium-chloride-eff-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Abdominal discomfort, diarrhoea, nausea and vomiting may occur."
+            }
+          ]
+        },
+        {
+          "t": "Oral solution SmPC: nausea, vomiting, diarrhoea and abdominal cramps occur rarely.",
+          "detail": true,
+          "formulations": [
+            "potassium-chloride-syrup-7-5"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "In rare cases, oral potassium may invoke nausea, vomiting, diarrhoea and abdominal cramps."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "GI ulceration or obstruction: symptoms or signs are a reason to stop treatment.",
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Symptoms or signs suggesting ulceration or obstruction should be regarded as reasons to discontinue medication."
+            }
+          ]
+        },
+        {
+          "t": "Hyperkalaemia (may be silent; paraesthesia, weakness, confusion, paralysis, hypotension, arrhythmias, heart block, cardiac arrest). ECG changes start with tall peaked T waves.",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Hyperkalaemic symptoms include paraesthesia of the extremities, listlessness, mental confusion, weakness, paralysis, hypotension, cardiac arrhythmias, heart block and cardiac arrest."
+            },
+            {
+              "s": "emc-959",
+              "q": "Hyperkalaemia is often asymptomatic."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "During replacement: periodic clinical review, serum electrolytes and ECG, especially with cardiac disease or digitalis.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Periodic evaluation of the patient's clinical status, serum electrolytes and the ECG should be carried out when replacement therapy is undertaken."
+            }
+          ]
+        },
+        {
+          "t": "Serum potassium monitoring is particularly needed with renal or cardiac disease, especially in the elderly (oral solution SmPC).",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Monitoring of serum potassium is particularly necessary in patients with renal or cardiac diseases, especially the elderly."
+            }
+          ]
+        },
+        {
+          "t": "SPS: monitor serum potassium, serum magnesium and renal function during replacement.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "sps-hypokalaemia",
+              "q": "The monitoring parameters during potassium replacement should include: serum potassium serum magnesium renal function"
+            }
+          ]
+        },
+        {
+          "t": "Stop if symptoms or signs of GI ulceration or obstruction appear.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "Symptoms or signs suggesting ulceration or obstruction should be regarded as reasons to discontinue medication."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Dissolve the effervescent tablet in water before taking; may be taken with food. Give with or after food if there is gastric irritation.",
+          "formulations": [
+            "potassium-chloride-eff-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Oral administration, after dissolution of the tablet in water. May be taken with food if preferred."
+            },
+            {
+              "s": "emc-959",
+              "q": "should be given with or after food"
+            }
+          ]
+        },
+        {
+          "t": "Take the syrup after food, in divided amounts; use a graduated dropper for children.",
+          "formulations": [
+            "potassium-chloride-syrup-7-5"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "in divided amounts after food"
+            },
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "The dose should be administered using a graduated dropper."
+            }
+          ]
+        },
+        {
+          "t": "SPS: give oral potassium with or after food; large doses are limited by nausea and vomiting.",
+          "src": [
+            {
+              "s": "sps-hypokalaemia",
+              "q": "Oral potassium should be given with or after food."
+            },
+            {
+              "s": "sps-hypokalaemia",
+              "q": "large doses are limited by nausea and vomiting"
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Take with or after food; dissolve effervescent tablets fully in water.",
+          "src": [
+            {
+              "s": "emc-959",
+              "q": "Oral administration, after dissolution of the tablet in water."
+            },
+            {
+              "s": "sps-hypokalaemia",
+              "q": "Oral potassium should be given with or after food."
+            }
+          ]
+        },
+        {
+          "t": "Report difficulty swallowing, chest or stomach pain, black stools or vomiting blood (possible GI ulceration).",
+          "src": [
+            {
+              "s": "mhra-pl39307-0145-spc",
+              "q": "may induce ulceration, haemorrhage or stricture formation in the gastrointestinal tract"
+            }
+          ]
+        },
+        {
+          "t": "Do not use potassium-containing salt substitutes without advice when taking ACE inhibitors or potassium-sparing diuretics (named in the lisinopril SmPC).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-15574",
+              "q": "Use of potassium sparing diuretics (e.g. spironolactone, triamterene or amiloride), potassium supplements or potassium-containing salt substitutes, particularly in patients with impaired renal function, may lead to a significant increase in serum potassium."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "potassium-chloride:allergy:potassium",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "potassium-chloride",
+      "allergen": [
+        "potassium"
+      ],
+      "concern": "Hypersensitivity to potassium chloride/bicarbonate or excipients",
+      "consequence": "Allergic reaction.",
+      "action": "Do not use (listed in SmPC 4.3).",
+      "sourceWording": "Contraindications Hypersensitivity to the active substance",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "4.3 Contraindications Hypersensitivity to the active substance"
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "4.3 Contraindications Hypersensitivity to the active substance"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:hyperkalaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "potassium-chloride",
+      "condition": "hyperkalaemia",
+      "effect": "hyperkalaemia",
+      "concern": "Hyperkalaemia from any cause",
+      "consequence": "Worsening hyperkalaemia; arrhythmias.",
+      "action": "Do not use (listed in SmPC 4.3).",
+      "sourceWording": "Contraindications ... Hyperkalaemia from any cause",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Hyperkalaemia from any cause"
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Hyperkalaemia from any cause"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:severe-renal-oliguria",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "potassium-chloride",
+      "condition": "severe-renal-impairment-oliguria",
+      "effect": "hyperkalaemia",
+      "concern": "Severe renal impairment / renal impairment with oliguria",
+      "consequence": "Potassium accumulation (hyperkalaemia).",
+      "action": "Do not use (listed in SmPC 4.3). No eGFR/CrCl threshold given.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Severe renal impairment with oliguria"
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Advanced, severe renal failure or impaired renal function with oliguria"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:addisons",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "potassium-chloride",
+      "condition": "addisons-disease",
+      "effect": "hyperkalaemia",
+      "concern": "Inadequately treated Addison's disease",
+      "consequence": "Hyperkalaemia risk.",
+      "action": "Do not use (listed in SmPC 4.3).",
+      "sourceWording": "Contraindications ... Inadequately treated Addison's disease",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Inadequately treated Addison's disease"
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Inadequately treated Addison's disease"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:crush-injury",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "potassium-chloride",
+      "condition": "crush-injury-cell-destruction",
+      "effect": "hyperkalaemia",
+      "concern": "Crush injuries / extensive cell destruction (e.g. severe burns)",
+      "consequence": "Hyperkalaemia risk.",
+      "action": "Do not use (listed in SmPC 4.3).",
+      "sourceWording": "Contraindications ... Crush injuries",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Crush injuries"
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "conditions involving extensive cell destruction (e.g. severe burns)"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:acute-dehydration",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "potassium-chloride",
+      "condition": "dehydration-hypovolaemia",
+      "effect": "hyperkalaemia",
+      "concern": "Acute dehydration",
+      "consequence": "Hyperkalaemia risk.",
+      "action": "Do not use (listed in SmPC 4.3).",
+      "sourceWording": "Contraindications ... Acute dehydration",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Acute dehydration"
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Acute dehydration"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "condition": "renal-impairment",
+      "effect": "hyperkalaemia",
+      "concern": "Impaired renal function",
+      "consequence": "Risk of hyperkalaemia.",
+      "action": "Avoid doses above requirements (effervescent tablet SmPC); give only with extreme caution (oral solution SmPC); lower doses may be needed (SPS). Monitor serum potassium.",
+      "sourceWording": "should only be administered with extreme caution",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Care should be taken to avoid dosage in excess of requirements for patients with impaired renal function."
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Potassium salts should only be administered with extreme caution to patients with renal dysfunction or hepatic disease because of the risk of hyperkalaemia."
+        },
+        {
+          "s": "sps-hypokalaemia",
+          "q": "Lower doses may be required in renal impairment due to the risk of hyperkalaemia."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "hepatic": [
+        "any"
+      ],
+      "effect": "hyperkalaemia",
+      "concern": "Hepatic disease (oral solution SmPC)",
+      "consequence": "Risk of hyperkalaemia.",
+      "action": "Give only with extreme caution.",
+      "sourceWording": "should only be administered with extreme caution",
+      "src": [
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Potassium salts should only be administered with extreme caution to patients with renal dysfunction or hepatic disease because of the risk of hyperkalaemia."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:peptic-ulcer",
+      "kind": "condition",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "condition": "peptic-ulcer-gi-bleeding",
+      "concern": "History of peptic ulcer (oral solution SmPC)",
+      "consequence": "Potassium chloride can cause GI ulceration or haemorrhage.",
+      "action": "Prescribe with caution.",
+      "sourceWording": "should be prescribed with caution",
+      "src": [
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Oral potassium should be prescribed with caution in patients with a history of peptic ulcer."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:gi-stricture",
+      "kind": "condition",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "condition": "gi-obstruction-stricture",
+      "concern": "Local GI tract disorders (oral solution SmPC)",
+      "consequence": "Higher risk of GI ulceration, haemorrhage or stricture.",
+      "action": "Use with caution; stop if signs of ulceration or obstruction.",
+      "sourceWording": "This possibility is increased in patients with local disorders of the gastrointestinal tract",
+      "src": [
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "This possibility is increased in patients with local disorders of the gastrointestinal tract"
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Symptoms or signs suggesting ulceration or obstruction should be regarded as reasons to discontinue medication."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:myotonia-congenita",
+      "kind": "condition",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "condition": "myotonia-congenita",
+      "concern": "Myotonia congenita",
+      "consequence": "Not stated.",
+      "action": "Caution is necessary.",
+      "sourceWording": "Caution is also necessary",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Caution is also necessary in patients receiving potassium-sparing diuretics and ACE-inhibitors, and in patients with myotonia congenita or severe haemolysis."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:severe-haemolysis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "condition": "severe-haemolysis",
+      "effect": "hyperkalaemia",
+      "concern": "Severe haemolysis",
+      "consequence": "Not stated.",
+      "action": "Caution is necessary.",
+      "sourceWording": "Caution is also necessary",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Caution is also necessary in patients receiving potassium-sparing diuretics and ACE-inhibitors, and in patients with myotonia congenita or severe haemolysis."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:sugar-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "potassium-chloride",
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Hereditary sugar intolerances (effervescent tablets contain sucrose; oral solution contains sorbitol)",
+      "consequence": "Excipient intolerance.",
+      "action": "Effervescent tablets: should not be taken in fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency. Oral solution: should not be taken in hereditary fructose intolerance (its SmPC names HFI only).",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Patients with hereditary fructose intolerance (HFI) should not take/be given this medicine."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:hfi",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "potassium-chloride",
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance (effervescent tablets: sucrose; oral solution: sorbitol)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take either product (both SmPCs, section 4.4).",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Patients with hereditary fructose intolerance (HFI) should not take/be given this medicine."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:severe-renal-failure:kay-cee-l",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "potassium-chloride",
+      "formulations": [
+        "potassium-chloride-syrup-7-5"
+      ],
+      "condition": "severe-renal-impairment",
+      "effect": "hyperkalaemia",
+      "concern": "Advanced, severe renal failure (oral solution SmPC)",
+      "consequence": "Potassium accumulation (hyperkalaemia).",
+      "action": "Oral solution SmPC 4.3 contraindicates advanced, severe renal failure (with or without oliguria). No eGFR/CrCl threshold is given. The effervescent tablet SmPC contraindicates severe renal impairment only with oliguria.",
+      "sourceWording": "Contraindications ... Advanced, severe renal failure",
+      "src": [
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Advanced, severe renal failure or impaired renal function with oliguria"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:condition:fhpp",
+      "kind": "condition",
+      "level": "info",
+      "med": "potassium-chloride",
+      "condition": "familial-hyperkalaemic-periodic-paralysis",
+      "effect": "hyperkalaemia",
+      "concern": "Familial hyperkalaemic periodic paralysis (oral solution SmPC 4.8)",
+      "consequence": "Potassium chloride may induce hyperkalaemia.",
+      "action": "No specific action stated in the SmPC; consider the hyperkalaemia risk.",
+      "sourceWording": "may induce hyperkalaemia",
+      "src": [
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Ingestion of potassium chloride may induce hyperkalaemia in patients with familial hyperkalaemic periodic paralysis."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:age:neonate:kay-cee-l",
+      "kind": "age",
+      "level": "info",
+      "med": "potassium-chloride",
+      "formulations": [
+        "potassium-chloride-syrup-7-5"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 0.077
+      },
+      "concern": "Newborn (up to 4 weeks): oral solution excipients",
+      "consequence": "Sodium benzoate may increase neonatal jaundice; propylene glycol with alcohol dehydrogenase substrates (e.g. ethanol) may cause serious adverse effects in neonates.",
+      "action": "Excipient warnings in SmPC 4.4; no specific action stated.",
+      "sourceWording": "may increase jaundice ... in newborn babies",
+      "src": [
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Benzoate salt may increase jaundice (yellowing of the skin and eyes) in newborn babies (up to 4 weeks old)."
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Co-administration with any substrate for alcohol dehydrogenase such as ethanol may induce serious adverse effects in neonates."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:pregnancy:sando-k",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "formulations": [
+        "potassium-chloride-eff-tab"
+      ],
+      "concern": "Pregnancy (effervescent tablet SmPC)",
+      "consequence": "No clinical problems encountered.",
+      "action": "Consider benefit in relation to risks before use.",
+      "sourceWording": "the benefit of treatment should be considered in relation to the risks",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "the benefit of treatment should be considered in relation to the risks before this medicinal product is given to pregnant or nursing women"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:pregnancy:kay-cee-l",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "potassium-chloride",
+      "formulations": [
+        "potassium-chloride-syrup-7-5"
+      ],
+      "concern": "Pregnancy (oral solution SmPC)",
+      "consequence": "No clinical problems encountered.",
+      "action": "Should not be used unless considered essential by the physician.",
+      "sourceWording": "should not be used during pregnancy ... unless considered essential",
+      "src": [
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "should not be used during pregnancy or by nursing women unless considered essential by the physician"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:breastfeeding:sando-k",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "formulations": [
+        "potassium-chloride-eff-tab"
+      ],
+      "concern": "Breastfeeding (effervescent tablet SmPC)",
+      "consequence": "No clinical problems encountered.",
+      "action": "Consider benefit in relation to risks before use.",
+      "sourceWording": "the benefit of treatment should be considered in relation to the risks",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "the benefit of treatment should be considered in relation to the risks before this medicinal product is given to pregnant or nursing women"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:breastfeeding:kay-cee-l",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "potassium-chloride",
+      "formulations": [
+        "potassium-chloride-syrup-7-5"
+      ],
+      "concern": "Breastfeeding (oral solution SmPC)",
+      "consequence": "No clinical problems encountered.",
+      "action": "Should not be used by nursing women unless considered essential by the physician.",
+      "sourceWording": "should not be used ... by nursing women unless considered essential",
+      "src": [
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "should not be used during pregnancy or by nursing women unless considered essential by the physician"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "ACE inhibitors + potassium (potassium SmPCs)",
+      "consequence": "Risk of hyperkalaemia.",
+      "action": "Caution; consider hyperkalaemia risk and monitor serum potassium.",
+      "sourceWording": "the risk of hyperkalaemia must be considered",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "If co-administered with potassium-sparing diuretics and ACE-inhibitors, the risk of hyperkalaemia must be considered."
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Hyperkalaemia can result from the concurrent use of potassium supplements with ACE inhibitors"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:interaction:lisinopril",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "potassium-chloride",
+      "other": "lisinopril",
+      "effect": "hyperkalaemia",
+      "concern": "Lisinopril + potassium supplements (lisinopril SmPC)",
+      "consequence": "Significant increase in serum potassium, especially with impaired renal function.",
+      "action": "Combination not recommended; if used, use with caution and frequent serum potassium monitoring.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-15574",
+          "q": "Therefore, the combination of Lisinopril tablet with the above-mentioned drugs is not recommended."
+        },
+        {
+          "s": "emc-15574",
+          "q": "If concomitant use is indicated, they should be used with caution and with frequent monitoring of serum potassium."
+        },
+        {
+          "s": "emc-15574",
+          "q": "potassium supplements or potassium-containing salt substitutes, particularly in patients with impaired renal function, may lead to a significant increase in serum potassium"
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:interaction:potassium-sparing-diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics / aldosterone antagonists + potassium (potassium SmPCs)",
+      "consequence": "Risk of hyperkalaemia.",
+      "action": "Caution; consider hyperkalaemia risk and monitor serum potassium.",
+      "sourceWording": "Caution is also necessary",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Caution is also necessary in patients receiving potassium-sparing diuretics and ACE-inhibitors"
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Hyperkalaemia can result from the concurrent use of potassium supplements with ACE inhibitors, aldosterone antagonists, angiotensin II receptor antagonists, ciclosporin, potassium sparing diuretics and tacrolimus."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:interaction:spironolactone",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "potassium-chloride",
+      "other": "spironolactone",
+      "effect": "hyperkalaemia",
+      "concern": "Spironolactone + potassium supplements (spironolactone SmPC)",
+      "consequence": "Hyperkalaemia may be induced.",
+      "action": "Potassium supplements should not be given routinely with spironolactone (spironolactone SmPC section 4.3). In severe heart failure: avoid oral potassium supplements if serum potassium is >3.5 mEq/L.",
+      "sourceWording": "should not be given routinely",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "potassium supplements should not be given routinely with Aldactone as hyperkalaemia may be induced"
+        },
+        {
+          "s": "emc-1619",
+          "q": "Avoid using oral potassium supplements in patients with serum potassium >3.5 mEq/L."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:interaction:co-trimoxazole",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "other": "co-trimoxazole",
+      "effect": "hyperkalaemia",
+      "concern": "Co-trimoxazole + potassium supplements (co-trimoxazole and oral solution SmPCs)",
+      "consequence": "Co-trimoxazole may cause clinically relevant hyperkalaemia.",
+      "action": "Use with caution and check serum potassium. Co-trimoxazole SmPC: caution with any other drugs that can cause hyperkalaemia. Oral solution SmPC: caution with medicines that may increase plasma potassium.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Hyperkalaemia: caution should be exercised in patients taking any other drugs that can cause hyperkalaemia"
+        },
+        {
+          "s": "emc-6999",
+          "q": "Concomitant use of trimethoprim-sulfamethoxazole (co-trimoxazole) may result in clinically relevant hyperkalaemia."
+        },
+        {
+          "s": "mhra-pl39307-0145-spc",
+          "q": "Potassium supplements should be used with caution in patients who are receiving medications that may increase plasma potassium levels."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:interaction:iron:sando-k",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "potassium-chloride",
+      "formulations": [
+        "potassium-chloride-eff-tab"
+      ],
+      "other": "ferrous-sulfate",
+      "effect": "reduced-absorption",
+      "concern": "Effervescent tablets contain potassium bicarbonate: may reduce iron absorption (ferrous sulfate SmPCs)",
+      "consequence": "Bicarbonate-containing compounds may impair iron absorption.",
+      "action": "Two ferrous sulfate SmPCs: separate iron from bicarbonate-containing compounds by at least 2 hours.",
+      "sourceWording": "should be separated by at least 2 hours",
+      "src": [
+        {
+          "s": "emc-959",
+          "q": "Each tablet contains 600 mg potassium chloride and 400 mg potassium bicarbonate."
+        },
+        {
+          "s": "emc-3130",
+          "q": "Compounds containing calcium, magnesium (including antacids and mineral supplements), bicarbonates, carbonates, oxalates or phosphates may impair the absorption of iron."
+        },
+        {
+          "s": "emc-3130",
+          "q": "Administration of iron preparations with such compounds should be separated by at least 2 hours."
+        }
+      ]
+    },
+    {
+      "id": "potassium-chloride:interaction:trimethoprim",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "potassium-chloride",
+      "other": "trimethoprim",
+      "effect": "hyperkalaemia",
+      "concern": "Trimethoprim + potassium supplements (trimethoprim SmPC)",
+      "consequence": "May lead to a significant increase in serum potassium.",
+      "action": "Monitor serum potassium as appropriate.",
+      "sourceWording": "Monitoring of potassium should be undertaken as appropriate",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Potassium-sparing diuretics, potassium supplements, potassium-containing salt substitutes"
+        },
+        {
+          "s": "emc-4566",
+          "q": "Monitoring of potassium should be undertaken as appropriate"
+        }
+      ]
+    }
+  ]
+}

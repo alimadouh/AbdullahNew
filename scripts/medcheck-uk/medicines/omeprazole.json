@@ -1,0 +1,338 @@
+{
+  "id": "omeprazole",
+  "name": "Omeprazole",
+  "ingredients": ["omeprazole"],
+  "className": "Proton pump inhibitor",
+  "groups": ["ppi", "cyp2c19-inhibitor"],
+  "searchTerms": ["omeprazole", "omeprazole magnesium"],
+  "formulations": [
+    {
+      "id": "omeprazole-gr-cap",
+      "label": "Gastro-resistant capsules",
+      "route": "oral",
+      "strengths": "20 mg (only this SmPC used)",
+      "release": "gastro-resistant",
+      "src": [{ "s": "emc-1509", "q": "Losec 20 mg hard gastro-resistant capsules" }],
+      "sourceIds": ["emc-1509"]
+    },
+    {
+      "id": "omeprazole-gr-tab",
+      "label": "Dispersible gastro-resistant tablets",
+      "route": "oral",
+      "strengths": "20 mg (only this SmPC used)",
+      "release": "gastro-resistant",
+      "note": "Tablets can be dispersed in non-carbonated water for swallowing difficulties or children; do not use milk or carbonated water.",
+      "src": [
+        { "s": "emc-1514", "q": "Losec MUPS 20 mg gastro-resistant tablets" },
+        { "s": "emc-1514", "q": "DO NOT USE milk or carbonated water." }
+      ],
+      "sourceIds": ["emc-1514"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Adults: duodenal and gastric ulcer (treatment and prevention of relapse); H. pylori eradication with antibiotics; treatment and prevention of NSAID-associated ulcers; reflux oesophagitis (treatment and long-term management); symptomatic GORD; Zollinger-Ellison syndrome.",
+        "src": [
+          { "s": "emc-1509", "q": "Treatment of duodenal ulcers Prevention of relapse of duodenal ulcers Treatment of gastric ulcers Prevention of relapse of gastric ulcers" },
+          { "s": "emc-1509", "q": "Treatment of NSAID-associated gastric and duodenal ulcers Prevention of NSAID-associated gastric and duodenal ulcers in patients at risk" },
+          { "s": "emc-1509", "q": "Treatment of symptomatic gastro-oesophageal reflux disease Treatment of Zollinger-Ellison syndrome" }
+        ] },
+      { "t": "Children over 1 year and ≥ 10 kg: reflux oesophagitis; heartburn and acid regurgitation in GORD. Children and adolescents over 4 years: H. pylori duodenal ulcer (with antibiotics).",
+        "src": [{ "s": "emc-1509", "q": "Children over 1 year of age and ≥ 10 kg Treatment of reflux oesophagitis Symptomatic treatment of heartburn and acid regurgitation in gastro-oesophageal reflux disease Children and adolescents over 4 years of age" }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Children's H. pylori treatment should be supervised by a specialist.",
+        "src": [{ "s": "emc-1509", "q": "The treatment should be supervised by a specialist." }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "20 mg once daily for 2 weeks (a further 2 weeks if not healed). Poorly responsive: 40 mg once daily, usually healed within 4 weeks.", "tag": "Duodenal ulcer, adults",
+        "src": [
+          { "s": "emc-1509", "q": "The recommended dose in patients with an active duodenal ulcer is Losec 20 mg once daily. In most patients healing occurs within two weeks." },
+          { "s": "emc-1509", "q": "In patients with poorly responsive duodenal ulcer Losec 40 mg once daily is recommended and healing is usually achieved within four weeks." }
+        ] },
+      { "t": "Prevention of duodenal ulcer relapse (H. pylori negative or eradication not possible): 20 mg once daily (10 mg may suffice; up to 40 mg if needed).", "tag": "Duodenal ulcer relapse prevention",
+        "src": [{ "s": "emc-1509", "q": "the recommended dose is Losec 20 mg once daily. In some patients a daily dose of 10 mg may be sufficient. In case of therapy failure, the dose can be increased to 40 mg." }] },
+      { "t": "20 mg once daily for 4 weeks (a further 4 weeks if not healed). Poorly responsive: 40 mg once daily, usually healed within 8 weeks. Relapse prevention: 20 mg once daily, up to 40 mg.", "tag": "Gastric ulcer, adults",
+        "src": [
+          { "s": "emc-1509", "q": "Treatment of gastric ulcers The recommended dose is Losec 20 mg once daily. In most patients healing occurs within four weeks." },
+          { "s": "emc-1509", "q": "In patients with poorly responsive gastric ulcer Losec 40 mg once daily is recommended and healing is usually achieved within eight weeks." }
+        ] },
+      { "t": "H. pylori eradication (one week, choose antibiotics by local guidance): omeprazole 20 mg + clarithromycin 500 mg + amoxicillin 1 g, each twice daily; or omeprazole 20 mg + clarithromycin 250-500 mg + metronidazole 400-500 mg (or tinidazole 500 mg), each twice daily; or omeprazole 40 mg once daily + amoxicillin 500 mg and metronidazole 400 mg three times daily.", "tag": "H. pylori eradication, adults",
+        "src": [{ "s": "emc-1509", "q": "Losec 20 mg + clarithromycin 500 mg + amoxicillin 1 000 mg, each twice daily for one week" }] },
+      { "t": "NSAID-associated ulcers: treatment 20 mg once daily for 4 weeks (further 4 weeks if needed). Prevention in at-risk patients (age > 60, previous ulcer or upper GI bleed): 20 mg once daily.", "tag": "NSAID-associated ulcers",
+        "src": [
+          { "s": "emc-1509", "q": "For the treatment of NSAID - associated gastric and duodenal ulcers, the recommended dose is Losec 20 mg once daily." },
+          { "s": "emc-1509", "q": "(age > 60, previous history of gastric and duodenal ulcers, previous history of upper GI bleeding) the recommended dose is Losec 20 mg once daily" }
+        ] },
+      { "t": "Reflux oesophagitis: 20 mg once daily for 4 weeks (further 4 weeks if needed); severe oesophagitis 40 mg once daily for 8 weeks. Long-term management of healed oesophagitis: 10 mg once daily, up to 20-40 mg.", "tag": "Reflux oesophagitis",
+        "src": [
+          { "s": "emc-1509", "q": "In patients with severe oesophagitis Losec 40 mg once daily is recommended and healing is usually achieved within eight weeks." },
+          { "s": "emc-1509", "q": "For the long-term management of patients with healed reflux oesophagitis the recommended dose is Losec 10 mg once daily. If needed, the dose can be increased to Losec 20 mg to 40 mg once daily." }
+        ] },
+      { "t": "Symptomatic GORD: 20 mg daily (10 mg may be enough). If no control after 4 weeks, investigate further.", "tag": "Symptomatic GORD",
+        "src": [
+          { "s": "emc-1509", "q": "Treatment of symptomatic gastro-oesophageal reflux disease The recommended dose is Losec 20 mg daily." },
+          { "s": "emc-1509", "q": "If symptom control has not been achieved after four weeks treatment with Losec 20 mg daily, further investigation is recommended." }
+        ] },
+      { "t": "Zollinger-Ellison syndrome: start 60 mg daily, adjust individually (20 to 120 mg daily). Doses above 80 mg daily: divide and give twice daily.", "tag": "Zollinger-Ellison syndrome",
+        "src": [
+          { "s": "emc-1509", "q": "The recommended initial dose is Losec 60 mg daily." },
+          { "s": "emc-1509", "q": "When dose exceed Losec 80 mg daily, the dose should be divided and given twice daily." }
+        ] },
+      { "t": "Elderly: no dose adjustment needed.", "tag": "Elderly", "detail": true,
+        "src": [{ "s": "emc-1509", "q": "Elderly Dose adjustment is not needed in the elderly" }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Reflux oesophagitis / GORD symptoms: ≥ 1 year and 10-20 kg: 10 mg once daily (up to 20 mg). ≥ 2 years and > 20 kg: 20 mg once daily (up to 40 mg). Duration: oesophagitis 4 to 8 weeks; GORD symptoms 2 to 4 weeks (investigate if not controlled).",
+        "src": [
+          { "s": "emc-1509", "q": "≥ 1 year of age 10 to 20 kg 10 mg once daily. The dose can be increased to 20 mg once daily if needed ≥ 2 years of age > 20 kg 20 mg once daily. The dose can be increased to 40 mg once daily if needed" },
+          { "s": "emc-1509", "q": "Reflux oesophagitis : The treatment time is 4 to 8 weeks." }
+        ] },
+      { "t": "H. pylori duodenal ulcer, over 4 years (specialist supervised, one week, all twice daily): 15-30 kg: omeprazole 10 mg + amoxicillin 25 mg/kg + clarithromycin 7.5 mg/kg; 31-40 kg: omeprazole 20 mg + amoxicillin 750 mg + clarithromycin 7.5 mg/kg; > 40 kg: omeprazole 20 mg + amoxicillin 1 g + clarithromycin 500 mg.",
+        "src": [{ "s": "emc-1509", "q": "15 to 30 kg Combination with two antibiotics: Losec 10 mg, amoxicillin 25 mg/kg body weight and clarithromycin 7.5 mg/kg body weight are all administered together two times daily for one week." }] },
+      { "t": "Not licensed under 1 year (capsule and dispersible tablet SmPCs). Long-term treatment in children is not recommended, although some with chronic illness may need it.",
+        "src": [
+          { "s": "emc-1509", "q": "Children over 1 year of age and ≥ 10 kg" },
+          { "s": "emc-1509", "q": "Some children with chronic illnesses may require long-term treatment although it is not recommended." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to omeprazole, substituted benzimidazoles or any excipient.",
+        "src": [{ "s": "emc-1509", "q": "Hypersensitivity to the active substance, substituted benzimidazoles or to any of the excipients listed in section 6.1." }] },
+      { "t": "Must not be used with nelfinavir.",
+        "src": [{ "s": "emc-1509", "q": "Omeprazole like other proton pump inhibitors (PPIs) must not be used concomitantly with nelfinavir" }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Alarm symptoms (unintended weight loss, recurrent vomiting, dysphagia, haematemesis, melaena) or suspected gastric ulcer: exclude malignancy first - treatment may mask symptoms.",
+        "src": [{ "s": "emc-1509", "q": "In the presence of any alarm symptom (e.g. significant unintentional weight loss, recurrent vomiting, dysphagia, haematemesis or melena) and when gastric ulcer is suspected or present, malignancy should be excluded" }] },
+      { "t": "Hypomagnesaemia (severe; usually after ≥ 3 months, mostly after 1 year): fatigue, tetany, delirium, convulsions, dizziness, ventricular arrhythmia. Consider measuring magnesium before and during prolonged treatment, especially with digoxin or diuretics.",
+        "src": [
+          { "s": "emc-1509", "q": "Severe hypomagnesaemia has been reported in patients treated with proton pump inhibitors (PPIs) like omeprazole for at least three months, and in most cases for a year." },
+          { "s": "mhra-dsu-ppi-hypomagnesaemia", "q": "consider measurement of magnesium levels before starting PPI treatment and periodically during prolonged treatment, especially in those who will take a PPI concomitantly with digoxin or drugs that may cause hypomagnesaemia (eg, diuretics)" }
+        ] },
+      { "t": "Fractures: high doses and long use (> 1 year) may modestly increase hip, wrist and spine fracture risk (10-40%), mainly in the elderly. Patients at risk of osteoporosis need guideline care with adequate vitamin D and calcium.",
+        "src": [
+          { "s": "emc-1509", "q": "Proton pump inhibitors, especially if used in high doses and over long durations (> 1 year), may modestly increase the risk of hip, wrist and spine fracture, predominantly in the elderly or in presence of other recognised risk factors." },
+          { "s": "mhra-dsu-ppi-fracture", "q": "treat patients at risk of osteoporosis according to current clinical guidelines and ensure they have an adequate intake of vitamin D and calcium" }
+        ] },
+      { "t": "Subacute cutaneous lupus erythematosus (SCLE): if lesions (especially sun-exposed) with arthralgia, seek help promptly and consider stopping. SCLE with one PPI may raise risk with others.",
+        "src": [
+          { "s": "emc-1509", "q": "If lesions occur, especially in sun-exposed areas of the skin, and if accompanied by arthralgia, the patient should seek medical help promptly and the health care professional should consider stopping Losec." },
+          { "s": "mhra-dsu-ppi-scle", "q": "a patient who develops SCLE with a particular PPI may be at risk of the same reaction with another" }
+        ] },
+      { "t": "GI infections: slightly increased risk of Salmonella and Campylobacter, and possibly Clostridioides difficile in hospital.",
+        "src": [{ "s": "emc-1509", "q": "Treatment with proton pump inhibitors may lead to slightly increased risk of gastrointestinal infections such as Salmonella and Campylobacter and, in hospitalised patients, possibly also Clostridioides difficile" }] },
+      { "t": "Vitamin B12: absorption may fall on long-term therapy - consider in those with low stores or risk factors.",
+        "src": [{ "s": "emc-1509", "q": "This should be considered in patients with reduced body stores or risk factors for reduced vitamin B12 absorption on long-term therapy." }] },
+      { "t": "Acute tubulointerstitial nephritis can occur at any time and may progress to renal failure: stop omeprazole if suspected.",
+        "src": [{ "s": "emc-1509", "q": "Omeprazole should be discontinued in case of suspected TIN, and appropriate treatment should be promptly initiated." }] },
+      { "t": "Severe cutaneous adverse reactions (SJS, TEN, DRESS, AGEP) reported rarely/very rarely.",
+        "src": [{ "s": "emc-1509", "q": "Severe cutaneous adverse reactions (SCARs) including Stevens-Johnson syndrome (SJS), toxic epidermal necrolysis (TEN), drug reaction with eosinophilia and systemic symptoms (DRESS) and acute generalized exanthematous pustulosis (AGEP), which can be life-threatening or fatal" }] },
+      { "t": "Chromogranin A tests: stop omeprazole at least 5 days before CgA measurement.", "detail": true,
+        "src": [{ "s": "emc-1509", "q": "omeprazole treatment should be stopped for at least 5 days before CgA measurements" }] },
+      { "t": "Long-term use (especially > 1 year): keep patients under regular surveillance.",
+        "src": [{ "s": "emc-1509", "q": "As in all long-term treatments, especially when exceeding a treatment period of 1 year, patients should be kept under regular surveillance." }] },
+      { "t": "Excipients: capsules contain lactose; dispersible tablets contain sucrose.", "detail": true,
+        "src": [
+          { "s": "emc-1509", "q": "Each capsule contains 8 mg lactose." },
+          { "s": "emc-1514", "q": "Losec gastro-resistant tablets contain sucrose." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Clopidogrel: omeprazole reduces exposure to clopidogrel's active metabolite. SmPC and MHRA: concomitant use should be discouraged (MHRA: unless considered essential). SPS: avoid this combination; other PPIs are considered safe with clopidogrel.",
+        "src": [
+          { "s": "emc-1509", "q": "As a precaution, concomitant use of omeprazole and clopidogrel should be discouraged" },
+          { "s": "mhra-dsu-clopidogrel-ppi", "q": "Concomitant use of clopidogrel and omeprazole or esomeprazole is to be discouraged unless considered essential." },
+          { "s": "sps-clopidogrel-ppi", "q": "Avoid the combined use of clopidogrel with omeprazole or esomeprazole due to a significant interaction. Other PPIs are considered safe with clopidogrel." }
+        ] },
+      { "t": "Nelfinavir: contraindicated. Atazanavir: not recommended (if unavoidable, monitor closely, raise atazanavir dose, do not exceed omeprazole 20 mg). Posaconazole, erlotinib: avoid. Ketoconazole/itraconazole absorption reduced.", "detail": true,
+        "src": [
+          { "s": "emc-1509", "q": "Concomitant administration of omeprazole with nelfinavir is contraindicated" },
+          { "s": "emc-1509", "q": "Concomitant administration of omeprazole with atazanavir is not recommended" },
+          { "s": "emc-1509", "q": "For posaconazole and erlotinib concomitant use should be avoided." }
+        ] },
+      { "t": "CYP2C19 substrates: omeprazole (moderate CYP2C19 inhibitor) may raise levels of R-warfarin and other vitamin K antagonists, cilostazol, diazepam and phenytoin (monitor phenytoin for the first 2 weeks).",
+        "src": [
+          { "s": "emc-1509", "q": "Examples of such drugs are R-warfarin and other vitamin K antagonists, cilostazol, diazepam and phenytoin." },
+          { "s": "emc-1509", "q": "Monitoring phenytoin plasma concentration is recommended during the first two weeks after initiating omeprazole treatment" }
+        ] },
+      { "t": "Methotrexate: levels may rise with PPIs; with high-dose methotrexate consider temporarily stopping omeprazole.",
+        "src": [{ "s": "emc-1509", "q": "In high-dose methotrexate administration a temporary withdrawal of omeprazole may need to be considered." }] },
+      { "t": "Digoxin: bioavailability increased ~10%; caution with high omeprazole doses in the elderly - reinforce digoxin monitoring. Tacrolimus: levels may rise - monitor.", "detail": true,
+        "src": [{ "s": "emc-1509", "q": "caution should be exercised when omeprazole is given at high doses in elderly patients. Therapeutic drug monitoring of digoxin should then be reinforced." }] },
+      { "t": "CYP2C19/CYP3A4 inhibitors (e.g. clarithromycin, voriconazole) raise omeprazole levels - dose change not usually needed (consider in severe hepatic impairment with long-term use). Inducers (rifampicin, St John's wort) lower omeprazole levels.",
+        "src": [
+          { "s": "emc-1509", "q": "active substances known to inhibit CYP2C19 or CYP3A4 (such as clarithromycin and voriconazole) may lead to increased omeprazole serum levels" },
+          { "s": "emc-1509", "q": "Active substances known to induce CYP2C19 or CYP3A4 or both (such as rifampicin and St John's wort) may lead to decreased omeprazole serum levels" }
+        ] },
+      { "t": "Diuretics (and digoxin): consider magnesium monitoring with long-term PPI use (hypomagnesaemia).",
+        "src": [{ "s": "emc-1509", "q": "For patients expected to be on prolonged treatment or who take PPIs with digoxin or drugs that may cause hypomagnesaemia (e.g. diuretics), healthcare professionals should consider measuring magnesium levels before starting PPI treatment and periodically during treatment." }] }
+    ] },
+    "renal": { "items": [
+      { "t": "No dose adjustment needed in renal impairment. Acute tubulointerstitial nephritis can occur - stop if suspected.",
+        "src": [
+          { "s": "emc-1509", "q": "Dose adjustment is not needed in patients with impaired renal function" },
+          { "s": "emc-1509", "q": "Acute tubulointerstitial nephritis can progress to renal failure." }
+        ] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Hepatic impairment: a daily dose of 10 mg to 20 mg may be sufficient. Very rarely, encephalopathy in pre-existing liver disease.",
+        "src": [
+          { "s": "emc-1509", "q": "In patients with impaired hepatic function a daily dose of 10 mg to 20 mg may be sufficient" },
+          { "s": "emc-1509", "q": "Very rare: Hepatic failure, encephalopathy in patients with pre-existing liver disease" }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: omeprazole can be used in pregnancy (> 1000 exposed outcomes, no adverse effects on pregnancy or fetus/newborn).",
+        "src": [
+          { "s": "emc-1509", "q": "indicate no adverse effects of omeprazole on pregnancy or on the health of the foetus/newborn child" },
+          { "s": "emc-1509", "q": "Omeprazole can be used during pregnancy." }
+        ] },
+      { "t": "BUMPS: omeprazole is the preferred PPI in pregnancy (most safety information); no good evidence linking PPIs to miscarriage, birth defects, stillbirth, preterm delivery or low birth weight.",
+        "src": [
+          { "s": "bumps-ppi", "q": "Omeprazole is the PPI that is preferred for use in pregnancy as there is more information about its safety." },
+          { "s": "bumps-ppi", "q": "There is no good evidence that omeprazole or other PPIs are linked to miscarriage, birth defects, stillbirth, preterm delivery, or low infant birth weight." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Excreted in breast milk but not likely to affect the child at therapeutic doses.",
+        "src": [{ "s": "emc-1509", "q": "Omeprazole is excreted in breast milk but is not likely to influence the child when therapeutic doses are used." }] },
+      { "t": "SPS: omeprazole can be used in breastfeeding and is a PPI of choice (with pantoprazole). As a precaution monitor the infant for constipation, diarrhoea, sickness, poor sleeping, irritability or rash.",
+        "src": [
+          { "s": "sps-heartburn-breastfeeding", "q": "Any PPI can be used during breastfeeding, however omeprazole and pantoprazole are the PPIs of choice" },
+          { "s": "sps-heartburn-breastfeeding", "q": "Omeprazole can be used during breastfeeding." },
+          { "s": "sps-heartburn-breastfeeding", "q": "As a precaution monitor for constipation, diarrhoea, sickness, poor sleeping, irritability or rash." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: animal studies show no effect.", "detail": true,
+        "src": [{ "s": "emc-1509", "q": "Animal studies with the racemic mixture omeprazole, given by oral administration do not indicate effects with respect to fertility." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Common (1 to 10%): headache, abdominal pain, constipation, diarrhoea, flatulence, nausea/vomiting, benign fundic gland polyps.",
+        "src": [
+          { "s": "emc-1509", "q": "The most common side effects (1 to 10% of patients) are headache, abdominal pain, constipation, diarrhoea, flatulence and nausea/vomiting." },
+          { "s": "emc-1509", "q": "Common: Abdominal pain, constipation, diarrhoea, flatulence, nausea/vomiting, fundic gland polyps (benign)" }
+        ] },
+      { "t": "Uncommon: hip, wrist or spine fracture; dizziness; rash; raised liver enzymes.", "detail": true,
+        "src": [{ "s": "emc-1509", "q": "Uncommon: Fracture of the hip, wrist or spine" }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Hypersensitivity reactions (rare): fever, angioedema, anaphylactic reaction/shock.",
+        "src": [{ "s": "emc-1509", "q": "Rare: Hypersensitivity reactions e.g. fever, angioedema and anaphylactic reaction/shock" }] },
+      { "t": "Severe skin reactions - SJS/TEN (very rare), DRESS/AGEP (rare): can be life-threatening.",
+        "src": [{ "s": "emc-1509", "q": "Very rare: Erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis (TEN)" }] },
+      { "t": "Tubulointerstitial nephritis (rare, may progress to renal failure): stop omeprazole.",
+        "src": [{ "s": "emc-1509", "q": "Rare: Tubulointerstitial nephritis (with possible progression to renal failure)" }] },
+      { "t": "Severe hypomagnesaemia (frequency not known; may cause hypocalcaemia and hypokalaemia).",
+        "src": [{ "s": "emc-1509", "q": "Not known: Hypomagnesaemia; severe hypomagnesaemia may result in hypocalcaemia. Hypomagnesaemia may also be associated with hypokalaemia." }] },
+      { "t": "Blood disorders: rare leucopenia, thrombocytopenia; very rare agranulocytosis, pancytopenia. Hepatitis (rare), hepatic failure (very rare). Rare hyponatraemia.", "detail": true,
+        "src": [
+          { "s": "emc-1509", "q": "Rare: Leukopenia, thrombocytopenia Very rare: Agranulocytosis, pancytopenia" },
+          { "s": "emc-1509", "q": "Rare: Hepatitis with or without jaundice" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Consider serum magnesium before starting if prolonged treatment is expected or with digoxin/diuretics.", "tag": "baseline",
+        "src": [{ "s": "mhra-dsu-ppi-hypomagnesaemia", "q": "consider measurement of magnesium levels before starting PPI treatment and periodically during prolonged treatment" }] },
+      { "t": "Periodic magnesium during prolonged treatment; regular surveillance beyond 1 year; consider vitamin B12 in those at risk.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-1509", "q": "healthcare professionals should consider measuring magnesium levels before starting PPI treatment and periodically during treatment" },
+          { "s": "emc-1509", "q": "As in all long-term treatments, especially when exceeding a treatment period of 1 year, patients should be kept under regular surveillance." }
+        ] },
+      { "t": "Stop if tubulointerstitial nephritis is suspected; consider stopping if SCLE develops.", "tag": "stop",
+        "src": [
+          { "s": "emc-1509", "q": "Omeprazole should be discontinued in case of suspected TIN" },
+          { "s": "mhra-dsu-ppi-scle", "q": "consider stopping use of the PPI unless it is imperative for a serious acid-related condition" }
+        ] },
+      { "t": "OTC use: do not use non-prescription PPIs for more than 4 weeks without consulting a doctor; see a doctor if no relief within 2 weeks.", "tag": "stop", "detail": true,
+        "src": [{ "s": "mhra-dsu-ppi-fracture", "q": "PPIs obtained without prescription over-the-counter should not be used for more than 4 weeks without consulting a doctor." }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Take in the morning, swallowed whole with half a glass of water; do not chew or crush.",
+        "src": [{ "s": "emc-1509", "q": "It is recommended to take Losec capsules in the morning, swallowed whole with half a glass of water. The capsules must not be chewed or crushed." }] },
+      { "t": "Capsules, swallowing difficulty or children: open and swallow the pellets with water, or mix into slightly acidic fluid (e.g. fruit juice, applesauce) or non-carbonated water; take within 30 minutes; do not chew the pellets.", "formulations": ["omeprazole-gr-cap"],
+        "src": [
+          { "s": "emc-1509", "q": "Patients can open the capsule and swallow the contents with half a glass of water or after mixing the contents in a slightly acidic fluid e.g. fruit juice or applesauce, or in non-carbonated water." },
+          { "s": "emc-1509", "q": "The enteric-coated pellets must not be chewed." }
+        ] },
+      { "t": "Dispersible tablets, swallowing difficulty or children: break and disperse in a spoonful of non-carbonated water (juice or applesauce may be added); take within 30 minutes; do not use milk or carbonated water.", "formulations": ["omeprazole-gr-tab"],
+        "src": [
+          { "s": "emc-1514", "q": "Patients can break the tablet and disperse it in a spoonful of non-carbonated water and if so wished, mix with some fruit juices or applesauce." },
+          { "s": "emc-1514", "q": "DO NOT USE milk or carbonated water." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Report rash on sun-exposed skin with joint pain (possible SCLE); avoid sun exposure if it occurs.",
+        "src": [{ "s": "mhra-dsu-ppi-scle", "q": "advise them to avoid exposing the skin to sunlight" }] },
+      { "t": "If buying omeprazole without prescription, tell the pharmacist if you take clopidogrel.",
+        "src": [{ "s": "mhra-dsu-clopidogrel-ppi", "q": "Doctors should check whether patients who are taking clopidogrel are also buying over-the-counter omeprazole" }] },
+      { "t": "Make sure you get enough vitamin D and calcium on long-term use.", "detail": true,
+        "src": [{ "s": "mhra-dsu-ppi-fracture", "q": "consult your doctor to make sure you are taking enough vitamin D and calcium" }] },
+      { "t": "Dizziness or visual disturbance may occur - do not drive if affected.", "detail": true,
+        "src": [{ "s": "emc-1509", "q": "If affected, patients should not drive or operate machinery." }] }
+    ] }
+  },
+  "rules": [
+    { "id": "omeprazole:allergy:omeprazole", "kind": "allergy", "level": "contraindicated", "med": "omeprazole", "allergen": ["omeprazole"],
+      "concern": "Hypersensitivity to omeprazole or substituted benzimidazoles", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-1509", "q": "Hypersensitivity to the active substance, substituted benzimidazoles or to any of the excipients listed in section 6.1." }] },
+    { "id": "omeprazole:allergy:ppi-scle", "kind": "allergy", "level": "caution", "med": "omeprazole", "allergen": ["group:ppi"],
+      "concern": "Previous subacute cutaneous lupus erythematosus (SCLE) with a PPI", "consequence": "SCLE after a previous PPI may increase the risk of SCLE with another PPI.", "action": "Be aware of cross-reaction risk; stop if lesions recur.", "sourceWording": "may increase the risk of SCLE with other proton pump inhibitors",
+      "src": [
+        { "s": "emc-1509", "q": "SCLE after previous treatment with a proton pump inhibitor may increase the risk of SCLE with other proton pump inhibitors." },
+        { "s": "mhra-dsu-ppi-scle", "q": "a patient who develops SCLE with a particular PPI may be at risk of the same reaction with another" }
+      ] },
+    { "id": "omeprazole:condition:osteoporosis", "kind": "condition", "level": "caution", "med": "omeprazole", "condition": "osteoporosis-risk",
+      "concern": "Risk of osteoporosis / fracture", "consequence": "High-dose, long-term (> 1 year) PPI use may modestly increase hip, wrist and spine fracture risk.", "action": "Care per current guidelines; ensure adequate vitamin D and calcium.", "sourceWording": "should receive care according to current clinical guidelines",
+      "src": [
+        { "s": "emc-1509", "q": "Patients at risk of osteoporosis should receive care according to current clinical guidelines and they should have an adequate intake of vitamin D and calcium." },
+        { "s": "mhra-dsu-ppi-fracture", "q": "treat patients at risk of osteoporosis according to current clinical guidelines and ensure they have an adequate intake of vitamin D and calcium" }
+      ] },
+    { "id": "omeprazole:hepatic:any", "kind": "hepatic", "level": "dose", "med": "omeprazole", "hepatic": ["any"],
+      "concern": "Hepatic impairment", "consequence": "Reduced omeprazole clearance.", "action": "A daily dose of 10 mg to 20 mg may be sufficient.", "sourceWording": "a daily dose of 10 mg to 20 mg may be sufficient",
+      "src": [{ "s": "emc-1509", "q": "In patients with impaired hepatic function a daily dose of 10 mg to 20 mg may be sufficient" }] },
+    { "id": "omeprazole:age:lt1", "kind": "age", "level": "info", "med": "omeprazole", "age": { "minYears": 0, "maxYears": 1 },
+      "concern": "Infant under 1 year", "consequence": "Not licensed below 1 year (capsules/dispersible tablets).", "action": "Paediatric licence starts at over 1 year and ≥ 10 kg.", "sourceWording": "Children over 1 year of age and ≥ 10 kg",
+      "src": [{ "s": "emc-1509", "q": "Children over 1 year of age and ≥ 10 kg" }] },
+    { "id": "omeprazole:pregnancy:info", "kind": "pregnancy", "level": "info", "med": "omeprazole",
+      "concern": "Pregnancy", "consequence": "No adverse effects on pregnancy or fetus in > 1000 exposures.", "action": "Can be used; omeprazole is the preferred PPI in pregnancy (BUMPS).", "sourceWording": "Omeprazole can be used during pregnancy",
+      "src": [
+        { "s": "emc-1509", "q": "Omeprazole can be used during pregnancy." },
+        { "s": "bumps-ppi", "q": "Omeprazole is the PPI that is preferred for use in pregnancy as there is more information about its safety." }
+      ] },
+    { "id": "omeprazole:interaction:clopidogrel", "kind": "interaction", "level": "avoid", "med": "omeprazole", "other": "clopidogrel",
+      "concern": "Omeprazole + clopidogrel", "consequence": "Reduced conversion of clopidogrel to its active metabolite (exposure down ~46%) and less platelet inhibition.", "action": "Avoid the combination (SPS); SmPC/MHRA: discourage unless essential. Consider a different PPI (SPS: other PPIs considered safe).", "sourceWording": "should be discouraged / Avoid the combined use",
+      "src": [
+        { "s": "emc-1509", "q": "resulting in a decreased exposure to the active metabolite of clopidogrel by an average of 46%" },
+        { "s": "emc-1509", "q": "As a precaution, concomitant use of omeprazole and clopidogrel should be discouraged" },
+        { "s": "sps-clopidogrel-ppi", "q": "Avoid the combined use of clopidogrel with omeprazole or esomeprazole due to a significant interaction." }
+      ] },
+    { "id": "omeprazole:interaction:methotrexate", "kind": "interaction", "level": "caution", "med": "omeprazole", "other": "methotrexate",
+      "concern": "Omeprazole + methotrexate (mainly high-dose methotrexate)", "consequence": "Methotrexate levels may increase.", "action": "With high-dose methotrexate, consider temporarily stopping omeprazole.", "sourceWording": "a temporary withdrawal of omeprazole may need to be considered",
+      "src": [{ "s": "emc-1509", "q": "When given together with proton-pump inhibitors, methotrexate levels have been reported to increase in some patients. In high-dose methotrexate administration a temporary withdrawal of omeprazole may need to be considered." }] },
+    { "id": "omeprazole:interaction:warfarin", "kind": "interaction", "level": "info", "med": "omeprazole", "other": "warfarin",
+      "concern": "Omeprazole + warfarin", "consequence": "CYP2C19 inhibition may increase exposure to R-warfarin and other vitamin K antagonists.", "action": "No specific action stated in the SmPC; be aware when starting or stopping omeprazole.", "sourceWording": "the systemic exposure to these substances increased",
+      "src": [
+        { "s": "emc-1509", "q": "the metabolism of concomitant active substances also metabolised by CYP2C19, may be decreased and the systemic exposure to these substances increased" },
+        { "s": "emc-1509", "q": "Examples of such drugs are R-warfarin and other vitamin K antagonists, cilostazol, diazepam and phenytoin." }
+      ] },
+    { "id": "omeprazole:interaction:clarithromycin", "kind": "interaction", "level": "info", "med": "omeprazole", "other": "clarithromycin",
+      "concern": "Omeprazole + clarithromycin", "consequence": "Clarithromycin may increase omeprazole levels.", "action": "Omeprazole dose adjustment not generally required (consider in severe hepatic impairment with long-term use). Used together in H. pylori regimens.", "sourceWording": "adjustment of the omeprazole dose is not generally required",
+      "src": [
+        { "s": "emc-1509", "q": "active substances known to inhibit CYP2C19 or CYP3A4 (such as clarithromycin and voriconazole) may lead to increased omeprazole serum levels" },
+        { "s": "emc-1509", "q": "As high doses of omeprazole have been well-tolerated adjustment of the omeprazole dose is not generally required." }
+      ] },
+    { "id": "omeprazole:interaction:st-johns-wort", "kind": "interaction", "level": "info", "med": "omeprazole", "other": "st-johns-wort",
+      "concern": "Omeprazole + St John's wort", "consequence": "Decreased omeprazole levels (CYP induction).", "action": "Capsule SmPC: be aware of possible reduced effect (no action stated). The St John's wort THR SPC says the two should not be taken together.", "sourceWording": "may lead to decreased omeprazole serum levels",
+      "src": [
+        { "s": "emc-1509", "q": "Active substances known to induce CYP2C19 or CYP3A4 or both (such as rifampicin and St John's wort) may lead to decreased omeprazole serum levels" },
+        { "s": "mhra-thr-13668-0014", "q": "Proton pump inhibitors Lansoprazole Reduced blood levels with risk of Omeprazole therapeutic failure." }
+      ] },
+    { "id": "omeprazole:interaction:diuretic", "kind": "interaction", "level": "monitor", "med": "omeprazole", "other": "group:diuretic",
+      "concern": "Omeprazole (long-term) + diuretic", "consequence": "Additive risk of hypomagnesaemia.", "action": "Consider measuring magnesium before starting and periodically during treatment.", "sourceWording": "should consider measuring magnesium levels",
+      "src": [{ "s": "emc-1509", "q": "For patients expected to be on prolonged treatment or who take PPIs with digoxin or drugs that may cause hypomagnesaemia (e.g. diuretics), healthcare professionals should consider measuring magnesium levels before starting PPI treatment and periodically during treatment." }] }
+  ]
+}

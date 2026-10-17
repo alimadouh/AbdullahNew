@@ -1,0 +1,337 @@
+{
+  "id": "st-johns-wort",
+  "name": "St John's wort (Hypericum perforatum)",
+  "ingredients": ["hypericum"],
+  "className": "Traditional herbal medicinal product (THR)",
+  "groups": ["serotonergic", "cyp3a4-inducer"],
+  "searchTerms": ["st johns wort", "st john's wort", "hypericum", "hypericum perforatum", "SJW"],
+  "formulations": [
+    {
+      "id": "sjw-tab-66mg-extract",
+      "label": "Tablets, 66 mg dry extract (e.g. THR 13668/0014)",
+      "route": "oral",
+      "strengths": "66 mg extract from fresh flowering herb (equivalent to 170-305 mg dried herb)",
+      "release": "immediate",
+      "note": "Herbal products differ in extract and dose; check the specific product's THR SPC.",
+      "src": [{ "s": "mhra-thr-13668-0014", "q": "One tablet contains 66 mg of extract (as dry extract) from fresh St John's wort (Hypericum perforatum L.) flowering herb (equivalent to 170-305 mg of dried St John's wort flowering herb)." }],
+      "sourceIds": ["mhra-thr-13668-0014"]
+    },
+    {
+      "id": "sjw-tab-450mg-extract",
+      "label": "Film-coated tablets, 450 mg dry extract (e.g. THR 43546/0001)",
+      "route": "oral",
+      "strengths": "450 mg extract from aerial parts (equivalent to 1350-2700 mg herb)",
+      "release": "immediate",
+      "note": "Contains soya: must not be used in peanut or soya allergy (this product's SPC).",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "Each film-coated tablet contains: 450mg of extract (as dry extract) from St. John's Wort aerial parts (Hypericum perforatum L.)" },
+        { "s": "mhra-thr-43546-0001", "q": "Patients who are allergic to peanut or soya must not use this medicinal product." }
+      ],
+      "sourceIds": ["mhra-thr-43546-0001"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Traditional herbal medicine to relieve symptoms of slightly low mood and mild anxiety, based on traditional use only.",
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "A traditional herbal medicinal product used to relieve the symptoms of slightly low mood and mild anxiety, based on traditional use only." }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Registered under the Traditional Herbal Registration (THR) scheme - efficacy based on traditional use only. Not intended for depression: people with signs of depression should get medical advice. Some unlicensed St John's wort products sold in the UK or online lack interaction warnings (MHRA).",
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "Patients with signs and symptoms of depression should seek medical advice for appropriate treatment." },
+          { "s": "mhra-dsu-sjw-contraceptives", "q": "Some unlicensed products on the UK market or available online do not include the appropriate warnings regarding possible interactions." }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Adults and elderly: one tablet three times a day; short-term use only. See a doctor if symptoms worsen or do not improve after 6 weeks.", "tag": "Low mood / mild anxiety", "formulations": ["sjw-tab-66mg-extract"],
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "For oral short term use only. Adults and the elderly: Take one tablet three times a day." },
+          { "s": "mhra-thr-13668-0014", "q": "A doctor or qualified healthcare practitioner should be consulted if symptoms worsen, or do not improve after 6 weeks." }
+        ] },
+      { "t": "Adults and elderly: one tablet daily, swallowed whole. See a doctor if symptoms worsen or do not improve after 6 weeks.", "tag": "Low mood / mild anxiety", "formulations": ["sjw-tab-450mg-extract"],
+        "src": [
+          { "s": "mhra-thr-43546-0001", "q": "For adults and the elderly, take 1 tablet daily." },
+          { "s": "mhra-thr-43546-0001", "q": "The patient should consult a doctor or a qualified healthcare practitioner if symptoms worsen or do not improve after 6 weeks." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Not recommended under 18 years (insufficient data).",
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "This product is not recommended for use in children or adolescents under 18 years" },
+          { "s": "mhra-thr-43546-0001", "q": "Kira LowMood relief tablets are not for use in children and adolescents under 18 years old." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to St John's wort or excipients (450 mg-extract product: also peanut or soya allergy).",
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "Hypersensitivity to the active ingredient or any of the excipients." },
+          { "s": "mhra-thr-43546-0001", "q": "Hypersensitivity to the active ingredient, soya, peanut or any of the excipients listed in section 6.1." }
+        ] },
+      { "t": "Known skin photosensitivity, or phototherapy/photodiagnostic procedures.",
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "Patients with known dermal photosensitivity or patients undergoing phototherapy or any photodiagnostic procedures." }] },
+      { "t": "Contraindicated with ciclosporin, systemic tacrolimus, amprenavir, indinavir and other protease inhibitors, irinotecan and warfarin (CYP and P-glycoprotein induction).",
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "Concomitant use with ciclosporin, tacrolimus for systemic use, amprenavir, indinavir and other protease inhibitors, irinotecan and warfarin" },
+          { "s": "mhra-thr-13668-0014", "q": "The concominant use of ciclosporin, tacrolimus for systemic use, amprenavir, indinavir and other protease inhibitors, irinotecan and warfarin is contraindicated." }
+        ] },
+      { "t": "450 mg-extract product SPC 4.3: should not be taken with any of the medicines listed in its section 4.5.", "formulations": ["sjw-tab-450mg-extract"],
+        "src": [{ "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Many interactions: St John's wort induces CYP1A2, CYP2C19, CYP2C9, CYP3A4 and P-glycoprotein, lowering levels and effect of many medicines; pharmacodynamic interactions with SSRIs and triptans.",
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "This results in pharmacokinetic interactions with a large number of medicines leading to a potential decrease in the effectiveness of those medicines." },
+          { "s": "mhra-thr-13668-0014", "q": "Clinically significant pharmacodynamic interactions have also been identified with SSRI antidepressants, and the triptan group of medicines used to treat migraines." }
+        ] },
+      { "t": "Photosensitivity (very rare, especially fair skin): avoid excessive sunbathing, sunbeds and solariums.",
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "Persons using this product should avoid excessive sunbathing or the use of sunbeds or solariums." }] },
+      { "t": "Stop at least 10 days before elective surgery (interactions with anaesthetic medicines).",
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "This product should be discontinued at least 10 days prior to elective surgery due to the potential for interactions with medicinal products used during general and regional anaesthesia" }] },
+      { "t": "Hormonal contraception: women using hormonal contraception to prevent pregnancy should not take St John's wort (unplanned pregnancies and breakthrough bleeding reported).",
+        "src": [{ "s": "mhra-dsu-sjw-contraceptives", "q": "women taking hormonal contraception for pregnancy prevention should not take herbal products that contain St John's wort" }] },
+      { "t": "Epilepsy: concomitant use with any antiepileptic is not recommended; advise patients with epilepsy not to use St John's wort.",
+        "src": [{ "s": "mhra-dsu-sjw-antiepileptics", "q": "concomitant use of St John's wort and antiepileptic medicine is not recommended: healthcare professionals should advise patients with epilepsy not to use products that contain St John's wort" }] },
+      { "t": "Do not exceed the stated dose.", "detail": true,
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "Do not exceed the stated dose." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "THR SPC: should not be taken with the medicines in its interaction table, including: tramadol; clarithromycin (and erythromycin); warfarin (contraindicated); SSRIs (e.g. sertraline) and other antidepressants; triptans; antiepileptics; calcium-channel blockers (e.g. amlodipine); simvastatin and atorvastatin; PPIs (omeprazole, lansoprazole); thyroxine; digoxin; HIV antivirals; hormonal contraceptives and HRT; immunosuppressants.",
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below" },
+          { "s": "mhra-thr-13668-0014", "q": "Analgesics Tramadol Reduced blood levels with risk Do not take with this product." },
+          { "s": "mhra-thr-13668-0014", "q": "Calcium channel blockers Amlodipine" },
+          { "s": "mhra-thr-13668-0014", "q": "Lipid regulating drugs Simvastatin Reduced blood levels with risk of Atorvastatin therapeutic failure." },
+          { "s": "mhra-thr-13668-0014", "q": "Proton pump inhibitors Lansoprazole Reduced blood levels with risk of Omeprazole therapeutic failure." },
+          { "s": "mhra-thr-13668-0014", "q": "Thyroid hormones Thyroxine Reduced blood levels with risk of therapeutic failure." }
+        ] },
+      { "t": "MHRA: CYP3A4 inducers such as St John's wort may reduce simvastatin and atorvastatin levels.",
+        "src": [{ "s": "mhra-dsu-statins-interactions", "q": "Inducers of CYP3A4 (eg, efavirenz, rifampicin, St John's wort) may reduce plasma concentrations of simvastatin and atorvastatin." }] },
+      { "t": "Other UK SmPCs: St John's wort speeds levothyroxine metabolism (levothyroxine dose may need increasing); may lower omeprazole levels; sertraline SmPC - use with caution and avoid whenever possible.",
+        "src": [
+          { "s": "emc-1070", "q": "or the herbal medicine, St John's Wort ( hypericum perforatum ), should be undertaken with caution and avoided whenever possible due to the potential for a pharmacodynamic interaction" },
+          { "s": "emc-435", "q": "Metabolism of levothyroxine (thyroxine) is accelerated by rifampicin, barbituarates, products containing St John's Wort (Hypericum perforatum L.) and primidone." },
+          { "s": "emc-1509", "q": "Active substances known to induce CYP2C19 or CYP3A4 or both (such as rifampicin and St John's wort) may lead to decreased omeprazole serum levels" }
+        ] }
+    ] },
+    "renal": { "status": "not-stated", "note": "No renal impairment information in the two THR SPCs accessed (THR 13668/0014, THR 43546/0001)." },
+    "hepatic": { "status": "not-stated", "note": "No hepatic impairment information in the two THR SPCs accessed (THR 13668/0014, THR 43546/0001)." },
+    "pregnancy": { "items": [
+      { "t": "Safety not established; use in pregnancy is not recommended.",
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "In the absence of sufficient data, the use during pregnancy and lactation is not recommended." }] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Safety not established; use during breastfeeding is not recommended.",
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "Safety of the product during pregnancy and lactation has not been established." },
+          { "s": "mhra-thr-13668-0014", "q": "In the absence of sufficient data, the use during pregnancy and lactation is not recommended." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Reduces the effect of hormonal contraceptives (pills, implants, injections, patches; emergency contraception): risk of unintended pregnancy and breakthrough bleeding. No fertility studies.",
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "Users of oral contraceptives taking St John's wort (Hypericum perforatum) may experience intracyclic menstrual bleeding and risk of contraception failure is increased." },
+          { "s": "mhra-dsu-sjw-contraceptives", "q": "herbal products containing St John's wort can decrease the effect of this contraceptive cover" },
+          { "s": "mhra-thr-13668-0014", "q": "No studies on the effects on fertility have been performed." }
+        ] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Frequency not known: GI upset (dyspepsia, anorexia, nausea, diarrhoea, constipation), allergic skin reactions (rash, urticaria, itch), fatigue, restlessness; sunburn-like reactions in strong sunlight. Also reported: headache, neuropathy, anxiety, dizziness, mania.",
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "Gastrointestinal disorders including dyspepsia, anorexia, nausea, diarrhoea or constipation; allergic skin reactions such as rash, urticaria, pruritis; fatigue and restlessness have been reported. The frequency is not known." },
+          { "s": "mhra-thr-13668-0014", "q": "Other adverse reactions that have been reported include headaches, neuropathy, anxiety, dizziness, and mania." }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Serotonergic adverse reactions with SSRIs/triptans; loss of effect of critical medicines (e.g. transplant rejection with ciclosporin/tacrolimus, loss of HIV suppression, reduced anticoagulation, unintended pregnancy). Mania reported.",
+        "src": [
+          { "s": "mhra-thr-13668-0014", "q": "Due to increased risk of undesirable effects associated with these interactions this product should not be used concomitantly with these types of medicines." },
+          { "s": "mhra-thr-13668-0014", "q": "Reduced blood levels with risk of Sirolimus transplant rejection." },
+          { "s": "mhra-thr-43546-0001", "q": "Reduced blood levels with risk of therapeutic failure." }
+        ] },
+      { "t": "Overdose (5 to 17-fold doses): seizures and confusion reported; protect from sunlight for 1 to 2 weeks after massive overdose.", "detail": true,
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "After ingestion of massive overdoses, the patient should be protected from sunlight and other UV-light sources for 1-2 weeks." }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Review all current medicines (including contraception) for interactions before use.", "tag": "baseline",
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below" }] },
+      { "t": "Seek medical advice if symptoms worsen or last more than 6 weeks.", "tag": "stop",
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "If the condition worsens, or if symptoms persist for more than six weeks medical advice should be sought." }] },
+      { "t": "Stop at least 10 days before elective surgery.", "tag": "stop",
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "This product should be discontinued at least 10 days prior to elective surgery" }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Oral; 66 mg-extract tablets three times a day (short-term use).", "formulations": ["sjw-tab-66mg-extract"],
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "Take one tablet three times a day." }] },
+      { "t": "450 mg-extract tablets once daily, swallowed whole with a little liquid; do not chew.", "formulations": ["sjw-tab-450mg-extract"],
+        "src": [{ "s": "mhra-thr-43546-0001", "q": "The tablets should be swallowed whole with a little liquid. The tablets should not be chewed." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Tell your doctor/pharmacist you take St John's wort - it interacts with many medicines.",
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "This results in pharmacokinetic interactions with a large number of medicines leading to a potential decrease in the effectiveness of those medicines." }] },
+      { "t": "Do not take if you use hormonal contraception to prevent pregnancy; read your contraceptive leaflet.",
+        "src": [{ "s": "mhra-dsu-sjw-contraceptives", "q": "Advise women taking hormonal contraceptives for pregnancy prevention not to take herbal products containing St John's wort" }] },
+      { "t": "Do not use if you have epilepsy.",
+        "src": [{ "s": "mhra-dsu-sjw-antiepileptics", "q": "healthcare professionals should advise patients with epilepsy not to use products that contain St John's wort" }] },
+      { "t": "Avoid strong sun, sunbeds and solariums.",
+        "src": [{ "s": "mhra-thr-13668-0014", "q": "Persons using this product should avoid excessive sunbathing or the use of sunbeds or solariums." }] },
+      { "t": "Look for the THR certification mark on herbal products.", "detail": true,
+        "src": [{ "s": "mhra-dsu-sjw-contraceptives", "q": "Guidance for consumers: the Traditional Herbal Registration (THR) certification mark" }] }
+    ] }
+  },
+  "rules": [
+    { "id": "st-johns-wort:allergy:hypericum", "kind": "allergy", "level": "contraindicated", "med": "st-johns-wort", "allergen": ["hypericum"],
+      "concern": "Hypersensitivity to St John's wort", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity",
+      "src": [{ "s": "mhra-thr-13668-0014", "q": "Hypersensitivity to the active ingredient or any of the excipients." }] },
+    { "id": "st-johns-wort:condition:photosensitivity", "kind": "condition", "level": "contraindicated", "med": "st-johns-wort", "condition": "photosensitivity-phototherapy",
+      "concern": "Known skin photosensitivity or phototherapy/photodiagnostic procedures", "consequence": "Photosensitisation.", "action": "Do not use (both THR SPCs).", "sourceWording": "Contraindications",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "Patients with known dermal photosensitivity or patients undergoing phototherapy or any photodiagnostic procedures." },
+        { "s": "mhra-thr-43546-0001", "q": "Patients with known dermal photosensitivity or patients undergoing phototherapy or any photodiagnostic procedures." }
+      ] },
+    { "id": "st-johns-wort:condition:peanut-soya-allergy", "kind": "condition", "level": "contraindicated", "med": "st-johns-wort", "formulations": ["sjw-tab-450mg-extract"], "condition": "peanut-soya-allergy",
+      "concern": "Peanut or soya allergy (product contains soya)", "consequence": "Allergic reaction.", "action": "Must not be used (THR 43546/0001 SPC; this product contains soya).", "sourceWording": "must not use this medicinal product",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "Hypersensitivity to the active ingredient, soya, peanut or any of the excipients listed in section 6.1." },
+        { "s": "mhra-thr-43546-0001", "q": "Patients who are allergic to peanut or soya must not use this medicinal product." }
+      ] },
+    { "id": "st-johns-wort:condition:hormonal-contraception", "kind": "condition", "level": "avoid", "med": "st-johns-wort", "condition": "hormonal-contraception",
+      "concern": "Hormonal contraception (pill, implant, injection, patch, emergency contraception)", "consequence": "Reduced contraceptive effect: unplanned pregnancy, breakthrough bleeding.", "action": "Women using hormonal contraception for pregnancy prevention should not take St John's wort.", "sourceWording": "should not take herbal products that contain St John's wort",
+      "src": [
+        { "s": "mhra-dsu-sjw-contraceptives", "q": "women taking hormonal contraception for pregnancy prevention should not take herbal products that contain St John's wort" },
+        { "s": "mhra-thr-13668-0014", "q": "risk of contraception failure is increased" }
+      ] },
+    { "id": "st-johns-wort:condition:epilepsy", "kind": "condition", "level": "avoid", "med": "st-johns-wort", "condition": "epilepsy",
+      "concern": "Epilepsy / taking any antiepileptic", "consequence": "Interaction with all antiepileptics; increased seizure frequency and severity reported.", "action": "Not recommended; advise patients with epilepsy not to use St John's wort.", "sourceWording": "is not recommended",
+      "src": [
+        { "s": "mhra-dsu-sjw-antiepileptics", "q": "concomitant use of St John's wort and antiepileptic medicine is not recommended: healthcare professionals should advise patients with epilepsy not to use products that contain St John's wort" },
+        { "s": "mhra-dsu-sjw-antiepileptics", "q": "which resulted in an increase in the frequency and severity of the patient's seizures" }
+      ] },
+    { "id": "st-johns-wort:condition:surgery", "kind": "condition", "level": "avoid", "med": "st-johns-wort", "condition": "surgery-planned",
+      "concern": "Planned elective surgery", "consequence": "Interactions with anaesthetic and peri-operative medicines (e.g. fentanyl, propofol, sevoflurane, midazolam).", "action": "Stop at least 10 days before elective surgery.", "sourceWording": "should be discontinued at least 10 days prior to elective surgery",
+      "src": [{ "s": "mhra-thr-13668-0014", "q": "This product should be discontinued at least 10 days prior to elective surgery due to the potential for interactions with medicinal products used during general and regional anaesthesia" }] },
+    { "id": "st-johns-wort:condition:depression", "kind": "condition", "level": "caution", "med": "st-johns-wort", "condition": "depression-suicidality",
+      "concern": "Signs and symptoms of depression", "consequence": "Product is only for slightly low mood and mild anxiety.", "action": "Patient should seek medical advice for appropriate treatment.", "sourceWording": "should seek medical advice",
+      "src": [{ "s": "mhra-thr-13668-0014", "q": "Patients with signs and symptoms of depression should seek medical advice for appropriate treatment." }] },
+    { "id": "st-johns-wort:age:lt18", "kind": "age", "level": "avoid", "med": "st-johns-wort", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years", "consequence": "Insufficient data.", "action": "Not recommended.", "sourceWording": "not recommended",
+      "src": [{ "s": "mhra-thr-13668-0014", "q": "The use of this product in children or adolescents under 18 years of age is not recommended because data are not sufficient" }] },
+    { "id": "st-johns-wort:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "st-johns-wort",
+      "concern": "Pregnancy", "consequence": "Safety not established.", "action": "Not recommended.", "sourceWording": "is not recommended",
+      "src": [{ "s": "mhra-thr-13668-0014", "q": "In the absence of sufficient data, the use during pregnancy and lactation is not recommended." }] },
+    { "id": "st-johns-wort:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "st-johns-wort",
+      "concern": "Breastfeeding", "consequence": "Safety not established.", "action": "Not recommended.", "sourceWording": "is not recommended",
+      "src": [{ "s": "mhra-thr-13668-0014", "q": "In the absence of sufficient data, the use during pregnancy and lactation is not recommended." }] },
+    { "id": "st-johns-wort:interaction:warfarin", "kind": "interaction", "level": "contraindicated", "med": "st-johns-wort", "other": "warfarin",
+      "concern": "St John's wort + warfarin", "consequence": "Reduced anticoagulant effect; need for increased warfarin dose.", "action": "Contraindicated - do not take together.", "sourceWording": "is contraindicated",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "The concominant use of ciclosporin, tacrolimus for systemic use, amprenavir, indinavir and other protease inhibitors, irinotecan and warfarin is contraindicated." },
+        { "s": "mhra-thr-13668-0014", "q": "Anticoagulants Reduced anticoagulant effect and Do not take with this product. need for increased dose. Warfarin" },
+        { "s": "mhra-thr-43546-0001", "q": "The concomitant use of ciclosporin, tacrolimus for systemic use, amprenavir, indinavir and other protease inhibitors, irinotecan and warfarin is contraindicated." }
+      ] },
+    { "id": "st-johns-wort:interaction:ssri", "kind": "interaction", "level": "avoid", "med": "st-johns-wort", "other": "group:ssri", "effect": "serotonin-syndrome",
+      "concern": "St John's wort + SSRI (e.g. sertraline)", "consequence": "Increased serotonergic effects with more adverse reactions; reduced antidepressant levels.", "action": "Should not be used together.", "sourceWording": "should not be used concomitantly",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "Clinically significant pharmacodynamic interactions have also been identified with SSRI antidepressants" },
+        { "s": "mhra-thr-13668-0014", "q": "Due to increased risk of undesirable effects associated with these interactions this product should not be used concomitantly with these types of medicines." },
+        { "s": "mhra-thr-13668-0014", "q": "SSRIs e.g. Citalopram Escitalopram Fluoxetine Fluvoxamine Paroxetine Sertraline" }
+      ] },
+    { "id": "st-johns-wort:interaction:tramadol", "kind": "interaction", "level": "avoid", "med": "st-johns-wort", "other": "tramadol",
+      "concern": "St John's wort + tramadol", "consequence": "Reduced tramadol levels with risk of therapeutic failure.", "action": "Do not take together.", "sourceWording": "Do not take with this product",
+      "src": [{ "s": "mhra-thr-13668-0014", "q": "Analgesics Tramadol Reduced blood levels with risk Do not take with this product." }] },
+    { "id": "st-johns-wort:interaction:clarithromycin", "kind": "interaction", "level": "avoid", "med": "st-johns-wort", "other": "clarithromycin",
+      "concern": "St John's wort + clarithromycin", "consequence": "Reduced antibacterial levels with risk of therapeutic failure.", "action": "Do not take together.", "sourceWording": "Do not take with this product",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below" },
+        { "s": "mhra-thr-13668-0014", "q": "Antibacterials therapeutic failure. Erythromycin Clarithromycin Telithromycin" },
+        { "s": "mhra-thr-43546-0001", "q": "Antibacterials Erythromycin Reduced blood levels with Do not take with this Clarithromycin risk of therapeutic failure. product." }
+      ] },
+    { "id": "st-johns-wort:interaction:amlodipine", "kind": "interaction", "level": "avoid", "med": "st-johns-wort", "other": "amlodipine",
+      "concern": "St John's wort + amlodipine (calcium-channel blocker)", "consequence": "Reduced amlodipine levels with risk of therapeutic failure.", "action": "Should not be taken together.", "sourceWording": "should not be taken concomitantly",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below" },
+        { "s": "mhra-thr-13668-0014", "q": "Calcium channel blockers Amlodipine Reduced blood levels with risk of Nifedipine therapeutic failure." }
+      ] },
+    { "id": "st-johns-wort:interaction:simvastatin", "kind": "interaction", "level": "avoid", "med": "st-johns-wort", "other": "simvastatin",
+      "concern": "St John's wort + simvastatin", "consequence": "Reduced simvastatin levels with risk of therapeutic failure.", "action": "Should not be taken together (THR SPC). MHRA: CYP3A4 inducers may reduce simvastatin levels.", "sourceWording": "should not be taken concomitantly",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "Lipid regulating drugs Simvastatin Reduced blood levels with risk of Atorvastatin therapeutic failure." },
+        { "s": "mhra-dsu-statins-interactions", "q": "Inducers of CYP3A4 (eg, efavirenz, rifampicin, St John's wort) may reduce plasma concentrations of simvastatin and atorvastatin." }
+      ] },
+    { "id": "st-johns-wort:interaction:atorvastatin", "kind": "interaction", "level": "avoid", "med": "st-johns-wort", "other": "atorvastatin",
+      "concern": "St John's wort + atorvastatin", "consequence": "Reduced atorvastatin levels with risk of therapeutic failure.", "action": "Should not be taken together (THR SPC). MHRA: CYP3A4 inducers may reduce atorvastatin levels.", "sourceWording": "should not be taken concomitantly",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "Lipid regulating drugs Simvastatin Reduced blood levels with risk of Atorvastatin therapeutic failure." },
+        { "s": "mhra-dsu-statins-interactions", "q": "Inducers of CYP3A4 (eg, efavirenz, rifampicin, St John's wort) may reduce plasma concentrations of simvastatin and atorvastatin." }
+      ] },
+    { "id": "st-johns-wort:interaction:omeprazole", "kind": "interaction", "level": "avoid", "med": "st-johns-wort", "other": "omeprazole",
+      "concern": "St John's wort + omeprazole", "consequence": "Reduced omeprazole levels with risk of therapeutic failure.", "action": "Should not be taken together (THR SPC).", "sourceWording": "should not be taken concomitantly",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "Proton pump inhibitors Lansoprazole Reduced blood levels with risk of Omeprazole therapeutic failure." },
+        { "s": "mhra-thr-43546-0001", "q": "Proton pump inhibitors Reduced blood levels with Do not take with this Lansoprazole risk of therapeutic failure. product. Omeprazole" }
+      ] },
+    { "id": "st-johns-wort:interaction:levothyroxine", "kind": "interaction", "level": "avoid", "med": "st-johns-wort", "other": "levothyroxine",
+      "concern": "St John's wort + levothyroxine (thyroxine)", "consequence": "Reduced thyroxine levels with risk of therapeutic failure.", "action": "Do not take together (THR SPC). Levothyroxine SmPC: dose may need increasing if co-administered.", "sourceWording": "Do not take with this product",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "Thyroid hormones Reduced blood levels with Do not take with this Thyroxine risk of therapeutic failure. product." },
+        { "s": "emc-435", "q": "patients on thyroid replacement therapy may require an increase in their dose of thyroid hormone if these products are given concurrently" }
+      ] },
+    { "id": "st-johns-wort:interaction:ssri:kira", "kind": "interaction", "level": "contraindicated", "med": "st-johns-wort", "formulations": ["sjw-tab-450mg-extract"], "other": "group:ssri", "effect": "serotonin-syndrome",
+      "concern": "St John's wort (THR 43546/0001) + SSRI (e.g. sertraline)", "consequence": "Pharmacodynamic interaction with more adverse effects; reduced antidepressant levels.", "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.", "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." },
+        { "s": "mhra-thr-43546-0001", "q": "Clinically significant pharmacodynamic interactions have also been identified with SSRI antidepressants" },
+        { "s": "mhra-thr-43546-0001", "q": "Fluvoxamine risk of therapeutic failure. product. Paroxetine Sertraline" }
+      ] },
+    { "id": "st-johns-wort:interaction:tramadol:kira", "kind": "interaction", "level": "contraindicated", "med": "st-johns-wort", "formulations": ["sjw-tab-450mg-extract"], "other": "tramadol",
+      "concern": "St John's wort (THR 43546/0001) + tramadol", "consequence": "Reduced tramadol levels with risk of therapeutic failure.", "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.", "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." },
+        { "s": "mhra-thr-43546-0001", "q": "Analgesics Tramadol Reduced blood levels with Do not take with this risk of therapeutic failure. product." }
+      ] },
+    { "id": "st-johns-wort:interaction:clarithromycin:kira", "kind": "interaction", "level": "contraindicated", "med": "st-johns-wort", "formulations": ["sjw-tab-450mg-extract"], "other": "clarithromycin",
+      "concern": "St John's wort (THR 43546/0001) + clarithromycin", "consequence": "Reduced antibacterial levels with risk of therapeutic failure.", "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.", "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." },
+        { "s": "mhra-thr-43546-0001", "q": "Antibacterials Erythromycin Reduced blood levels with Do not take with this Clarithromycin risk of therapeutic failure. product." }
+      ] },
+    { "id": "st-johns-wort:interaction:amlodipine:kira", "kind": "interaction", "level": "contraindicated", "med": "st-johns-wort", "formulations": ["sjw-tab-450mg-extract"], "other": "amlodipine",
+      "concern": "St John's wort (THR 43546/0001) + amlodipine", "consequence": "Reduced amlodipine levels.", "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.", "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." },
+        { "s": "mhra-thr-43546-0001", "q": "Calcium channel blockers Reduced blood levels and Do not take with this Amlodipine Nifedipine Verapamil Felodipine" }
+      ] },
+    { "id": "st-johns-wort:interaction:simvastatin:kira", "kind": "interaction", "level": "contraindicated", "med": "st-johns-wort", "formulations": ["sjw-tab-450mg-extract"], "other": "simvastatin",
+      "concern": "St John's wort (THR 43546/0001) + simvastatin", "consequence": "Reduced simvastatin levels with risk of therapeutic failure.", "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.", "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." },
+        { "s": "mhra-thr-43546-0001", "q": "Lipid regulating drugs Simvastatin Reduced blood levels with Do not take with this Atorvastatin risk of therapeutic failure. product." }
+      ] },
+    { "id": "st-johns-wort:interaction:atorvastatin:kira", "kind": "interaction", "level": "contraindicated", "med": "st-johns-wort", "formulations": ["sjw-tab-450mg-extract"], "other": "atorvastatin",
+      "concern": "St John's wort (THR 43546/0001) + atorvastatin", "consequence": "Reduced atorvastatin levels with risk of therapeutic failure.", "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.", "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." },
+        { "s": "mhra-thr-43546-0001", "q": "Lipid regulating drugs Simvastatin Reduced blood levels with Do not take with this Atorvastatin risk of therapeutic failure. product." }
+      ] },
+    { "id": "st-johns-wort:interaction:omeprazole:kira", "kind": "interaction", "level": "contraindicated", "med": "st-johns-wort", "formulations": ["sjw-tab-450mg-extract"], "other": "omeprazole",
+      "concern": "St John's wort (THR 43546/0001) + omeprazole", "consequence": "Reduced omeprazole levels with risk of therapeutic failure.", "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.", "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." },
+        { "s": "mhra-thr-43546-0001", "q": "Proton pump inhibitors Reduced blood levels with Do not take with this Lansoprazole risk of therapeutic failure. product. Omeprazole" }
+      ] },
+    { "id": "st-johns-wort:interaction:levothyroxine:kira", "kind": "interaction", "level": "contraindicated", "med": "st-johns-wort", "formulations": ["sjw-tab-450mg-extract"], "other": "levothyroxine",
+      "concern": "St John's wort (THR 43546/0001) + levothyroxine (thyroxine)", "consequence": "Reduced thyroxine levels with risk of therapeutic failure.", "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.", "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." },
+        { "s": "mhra-thr-43546-0001", "q": "Thyroid hormones Reduced blood levels with Do not take with this Thyroxine risk of therapeutic failure. product." }
+      ] },
+    { "id": "st-johns-wort:condition:hormonal-contraception:kira", "kind": "condition", "level": "contraindicated", "med": "st-johns-wort", "formulations": ["sjw-tab-450mg-extract"], "condition": "hormonal-contraception",
+      "concern": "Hormonal contraception (THR 43546/0001)", "consequence": "Reduced contraceptive effect: breakthrough bleeding and contraceptive failure.", "action": "This product's SPC lists hormonal contraceptives (oral, emergency, implants, injections, patches, hormonal IUDs) in its section 4.5 table, which its 4.3 says it should not be taken with.", "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        { "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." },
+        { "s": "mhra-thr-43546-0001", "q": "Users of oral contraceptives taking St. John's Wort (Hypericum perforatum) may experience intracyclic menstrual bleeding and risk of contraception failure is increased." },
+        { "s": "mhra-thr-43546-0001", "q": "Hormonal implants, injections Transdermal patches, creams etc. Intra-uterine devices with hormones" }
+      ] }
+  ]
+}

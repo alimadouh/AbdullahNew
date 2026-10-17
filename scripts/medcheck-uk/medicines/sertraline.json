@@ -1,0 +1,455 @@
+{
+  "id": "sertraline",
+  "name": "Sertraline",
+  "ingredients": ["sertraline"],
+  "className": "Selective serotonin reuptake inhibitor (SSRI)",
+  "groups": ["ssri", "serotonergic"],
+  "searchTerms": ["sertraline", "sertraline hydrochloride"],
+  "formulations": [
+    {
+      "id": "sertraline-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "50 mg (only this SmPC used)",
+      "release": "immediate",
+      "src": [{ "s": "emc-1070", "q": "Each 50 mg film-coated tablet contains sertraline hydrochloride equivalent to 50 mg sertraline." }],
+      "sourceIds": ["emc-1070"]
+    },
+    {
+      "id": "sertraline-oral-conc",
+      "label": "Concentrate for oral solution",
+      "route": "oral",
+      "strengths": "20 mg/ml",
+      "release": "n/a",
+      "note": "Must be diluted before use. Contains ethanol (94.8 mg/ml): contraindicated with disulfiram.",
+      "src": [
+        { "s": "emc-100294", "q": "Each ml of concentrate for oral solution contains sertraline hydrochloride equivalent to 20 mg of sertraline." },
+        { "s": "emc-100294", "q": "Sertraline concentrate for oral solution must be diluted before use" },
+        { "s": "emc-100294", "q": "Sertraline concentrate for oral solution is contraindicated with the use of disulfiram due to the alcohol content" }
+      ],
+      "sourceIds": ["emc-100294"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Major depressive episodes (treatment and prevention of recurrence); panic disorder with or without agoraphobia; OCD in adults and children 6 to 17 years; social anxiety disorder; post-traumatic stress disorder.",
+        "src": [{ "s": "emc-1070", "q": "Major depressive episodes. Prevention of recurrence of major depressive episodes. Panic disorder, with or without agoraphobia. Obsessive compulsive disorder (OCD) in adults and paediatric patients aged 6-17 years. Social anxiety disorder." }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Not for children and adolescents under 18, except OCD aged 6 to 17. Efficacy not shown in paediatric major depression.",
+        "src": [
+          { "s": "emc-1070", "q": "Sertraline should not be used in the treatment of children and adolescents under the age of 18 years, except for patients with obsessive compulsive disorder aged 6-17 years old." },
+          { "s": "emc-1070", "q": "Efficacy is not shown in paediatric major depressive disorder." }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Start 50 mg once daily. If no response, increase in 50 mg steps at intervals of at least 1 week; maximum 200 mg/day.", "tag": "Depression and OCD, adults",
+        "src": [
+          { "s": "emc-1070", "q": "Depression and OCD Sertraline treatment should be started at a dose of 50 mg/day." },
+          { "s": "emc-1070", "q": "Dose changes should be made in steps of 50 mg at intervals of at least one week, up to a maximum of 200 mg/day." }
+        ] },
+      { "t": "Start 25 mg once daily; after 1 week increase to 50 mg once daily. Then 50 mg steps at least weekly; maximum 200 mg/day.", "tag": "Panic disorder, PTSD, social anxiety disorder, adults",
+        "src": [{ "s": "emc-1070", "q": "Therapy should be initiated at 25 mg/day. After one week, the dose should be increased to 50 mg once daily." }] },
+      { "t": "Maintenance: lowest effective dose. Depression: treat at least 6 months after symptoms resolve; for prevention of recurrence usually the same dose as for the episode. Panic disorder and OCD: review continuation regularly.", "tag": "Maintenance",
+        "src": [
+          { "s": "emc-1070", "q": "Dosage during long-term therapy should be kept at the lowest effective level" },
+          { "s": "emc-1070", "q": "Patients with depression should be treated for a sufficient period of time of at least 6 months to ensure they are free from symptoms." }
+        ] },
+      { "t": "Elderly: dose carefully (higher hyponatraemia risk).", "tag": "Elderly",
+        "src": [{ "s": "emc-1070", "q": "Elderly should be dosed carefully, as elderly may be more at risk for hyponatraemia" }] },
+      { "t": "Stopping: avoid abrupt withdrawal; reduce gradually over at least 1 to 2 weeks (4.2), or over several weeks or months according to need (4.4). If intolerable symptoms, resume previous dose and taper more slowly.", "tag": "Stopping",
+        "src": [
+          { "s": "emc-1070", "q": "When stopping treatment with sertraline the dose should be gradually reduced over a period of at least one to two weeks in order to reduce the risk of withdrawal reactions" },
+          { "s": "emc-1070", "q": "sertraline should be gradually tapered when discontinuing treatment over a period of several weeks or months, according to the patient's needs" }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "OCD aged 13 to 17: start 50 mg once daily. OCD aged 6 to 12: start 25 mg once daily, increase to 50 mg after 1 week. Further 50 mg increases over weeks if needed (not more often than weekly); maximum 200 mg daily; consider lower body weight.",
+        "src": [
+          { "s": "emc-1070", "q": "Age 13-17 years : Initially 50 mg once daily. Age 6-12 years: Initially 25 mg once daily. The dosage may be increased to 50 mg once daily after one week." },
+          { "s": "emc-1070", "q": "The maximum dosage is 200 mg daily." }
+        ] },
+      { "t": "No data under 6 years. Other indications not for under 18. Monitor closely for suicidal behaviour and hostility, and monitor growth and development on long-term treatment.",
+        "src": [
+          { "s": "emc-1070", "q": "No data is available for children under 6 years of age" },
+          { "s": "emc-1070", "q": "the patient should be carefully monitored for appearance of suicidal symptoms, especially in early treatment" },
+          { "s": "emc-1070", "q": "Physicians must monitor paediatric patients on long term treatment for abnormalities in growth and development." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to sertraline or any excipient.", "src": [{ "s": "emc-1070", "q": "Hypersensitivity to the active substance or any of the excipients listed in section 6.1." }] },
+      { "t": "Irreversible MAOIs (e.g. selegiline): contraindicated (serotonin syndrome). Do not start sertraline within 14 days of stopping an irreversible MAOI; stop sertraline at least 7 days before starting one.",
+        "src": [
+          { "s": "emc-1070", "q": "Concomitant treatment with irreversible monoamine oxidase inhibitors (MAOIs) is contraindicated due to the risk of serotonin syndrome" },
+          { "s": "emc-1070", "q": "Sertraline must not be initiated for at least 14 days after discontinuation of treatment with an irreversible MAOI." }
+        ] },
+      { "t": "Pimozide: contraindicated.", "src": [{ "s": "emc-1070", "q": "Concomitant intake of pimozide is contraindicated" }] },
+      { "t": "Oral concentrate only: disulfiram (alcohol content) - do not use with disulfiram or within 14 days of stopping it.", "formulations": ["sertraline-oral-conc"],
+        "src": [{ "s": "emc-100294", "q": "sertraline oral solution should not be used in combination with disulfiram or within 14 days of discontinuing treatment with disulfiram" }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Serotonin syndrome / neuroleptic malignant syndrome: risk rises with other serotonergic drugs, MAOIs, antipsychotics/dopamine antagonists and opioids. Monitor for signs.",
+        "src": [{ "s": "emc-1070", "q": "The risk of SS or NMS with SSRIs is increased with concomitant use of other serotonergic drugs (including other serotonergic antidepressants, amphetamines, triptans)" }, { "s": "emc-1070", "q": "antipsychotics and other dopamine antagonists, and with opioids." }] },
+      { "t": "QTc prolongation / torsade de pointes: use with caution if cardiac disease, hypokalaemia, hypomagnesaemia, family history of long QT, bradycardia or other QT-prolonging drugs.",
+        "src": [{ "s": "emc-1070", "q": "sertraline should be used with caution in patients with additional risk factors for QTc prolongation such as cardiac disease, hypokalaemia or hypomagnesemia, familial history of QTc prolongation, bradycardia and concomitant use of medications which prolong QTc interval" }] },
+      { "t": "Sources differ on QTc: the SmPC says a QTc effect was confirmed in a thorough QTc study (run at 400 mg/day, twice the maximum dose); SPS says sertraline has no effect on QTc at licensed doses.", "detail": true,
+        "src": [
+          { "s": "emc-1070", "q": "Effect on QTc prolongation was confirmed in a thorough QTc study in healthy volunteers" },
+          { "s": "emc-1070", "q": "conducted at steady state at supratherapeutic exposures in healthy volunteers (treated with 400 mg/day, twice the maximum recommended daily dose)" },
+          { "s": "sps-qt-commonly-used", "q": "Fluoxetine, paroxetine and sertraline have no effect on QTc at licensed doses" }
+        ] },
+      { "t": "Bleeding: caution with drugs affecting platelet function (anticoagulants, aspirin, NSAIDs and others) and in bleeding disorders. SSRIs may increase postpartum haemorrhage risk.",
+        "src": [
+          { "s": "emc-1070", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with drugs known to affect platelet function" },
+          { "s": "emc-1070", "q": "SSRIs/SNRIs may increase the risk of postpartum haemorrhage" }
+        ] },
+      { "t": "Hyponatraemia (often SIADH; sodium < 110 mmol/L reported): higher risk in elderly, with diuretics or volume depletion. Consider stopping if symptomatic.",
+        "src": [
+          { "s": "emc-1070", "q": "Elderly patients may be at greater risk of developing hyponatraemia with SSRIs and SNRIs. Also patients taking diuretics or who are otherwise volume-depleted may be at greater risk" },
+          { "s": "emc-1070", "q": "Discontinuation of sertraline should be considered in patients with symptomatic hyponatraemia and appropriate medical intervention should be instituted." }
+        ] },
+      { "t": "Suicidal thoughts/behaviour: monitor closely early in treatment and after dose changes, especially under 25 years and with prior suicidality.",
+        "src": [{ "s": "emc-1070", "q": "Close supervision of patients and in particular those at high risk should accompany drug therapy especially in early treatment and following dose changes." }] },
+      { "t": "Mania/hypomania history: caution; stop if a manic phase starts.",
+        "src": [{ "s": "emc-1070", "q": "sertraline should be used with caution in patients with a history of mania/hypomania" }] },
+      { "t": "Epilepsy: avoid in unstable epilepsy; monitor carefully if controlled; stop if seizures develop.",
+        "src": [{ "s": "emc-1070", "q": "sertraline should be avoided in patients with unstable epilepsy and patients with controlled epilepsy should be carefully monitored. Sertraline should be discontinued in any patient who develops seizures." }] },
+      { "t": "Angle-closure glaucoma: mydriasis may raise intraocular pressure - use with caution.",
+        "src": [{ "s": "emc-1070", "q": "Sertraline should therefore be used with caution in patients with angle-closure glaucoma or history of glaucoma." }] },
+      { "t": "Diabetes: glycaemic control may change; insulin/oral hypoglycaemic dose may need adjustment.",
+        "src": [{ "s": "emc-1070", "q": "In patients with diabetes, treatment with an SSRI may alter glycaemic control. Insulin and/or oral hypoglycaemic dosage may need to be adjusted." }] },
+      { "t": "Sexual dysfunction, sometimes long-lasting after stopping SSRIs.",
+        "src": [{ "s": "emc-1070", "q": "There have been reports of long-lasting sexual dysfunction where the symptoms have continued despite discontinuation of SSRIs." }] },
+      { "t": "Akathisia, mostly in the first weeks; increasing the dose may be harmful.", "detail": true,
+        "src": [{ "s": "emc-1070", "q": "In patients who develop these symptoms, increasing the dose may be detrimental." }] },
+      { "t": "Schizophrenia: psychotic symptoms may worsen. Grapefruit juice not recommended. False-positive urine benzodiazepine screens.", "detail": true,
+        "src": [
+          { "s": "emc-1070", "q": "Psychotic symptoms might become aggravated in schizophrenic patients." },
+          { "s": "emc-1070", "q": "The administration of sertraline with grapefruit juice is not recommended" }
+        ] },
+      { "t": "Oral concentrate contains 94.8 mg ethanol per ml.", "formulations": ["sertraline-oral-conc"], "detail": true,
+        "src": [{ "s": "emc-100294", "q": "This medicine contains 94.8 mg of alcohol (ethanol) in each ml." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Contraindicated: irreversible MAOIs, pimozide (oral concentrate also disulfiram). Do not give with moclobemide or linezolid.",
+        "src": [
+          { "s": "emc-1070", "q": "the combination of sertraline with a reversible and selective MAOI, such as moclobemide, should not be given" },
+          { "s": "emc-1070", "q": "The antibiotic linezolid is a weak reversible and non-selective MAOI and should not be given to patients treated with sertraline" }
+        ] },
+      { "t": "Other serotonergic drugs (e.g. tryptophan, amphetamines, 5-HT agonists/triptans) and St John's wort: use with caution and avoid whenever possible. Opioids (e.g. fentanyl): caution.",
+        "src": [
+          { "s": "emc-1070", "q": "or the herbal medicine, St John's Wort ( hypericum perforatum ), should be undertaken with caution and avoided whenever possible due to the potential for a pharmacodynamic interaction" },
+          { "s": "emc-1070", "q": "Caution is also advised with opioids [e.g. fentanyl (used in general anaesthesia or in the treatment of chronic pain)], and other serotonergic drugs" }
+        ] },
+      { "t": "Drugs affecting platelet function (NSAIDs, aspirin, anticoagulants) or that raise bleeding risk: increased bleeding risk - caution.",
+        "src": [{ "s": "emc-1070", "q": "The risk of bleeding may be increased when medicines acting on platelet function (e.g. NSAIDs, acetylsalicylic acid and ticlopidine) or other medicines that might increase bleeding risk are concomitantly administered with SSRIs, including sertraline" }] },
+      { "t": "Warfarin: small rise in prothrombin time - monitor carefully when sertraline is started or stopped.",
+        "src": [{ "s": "emc-1070", "q": "Accordingly, prothrombin time should be carefully monitored when sertraline therapy is initiated or stopped." }] },
+      { "t": "QT-prolonging drugs (e.g. some antipsychotics and antibiotics): increased risk of QTc prolongation/TdP.",
+        "src": [{ "s": "emc-1070", "q": "The risk of QTc prolongation and/or ventricular arrhythmias (e.g. TdP) may be increased with concomitant use of other drugs which prolong the QTc interval (e.g. some antipsychotics and antibiotics)" }] },
+      { "t": "Potent CYP3A4 inhibitors (e.g. clarithromycin, protease inhibitors, azole antifungals): avoid - may markedly raise sertraline levels. CYP3A4 inducers (e.g. St John's wort, carbamazepine, rifampicin) may lower levels.",
+        "src": [
+          { "s": "emc-1070", "q": "potent CYP3A4 inhibitors, e.g. protease inhibitors, ketoconazole, itraconazole, posaconazole, voriconazole, clarithromycin, telithromycin and nefazodone" },
+          { "s": "emc-1070", "q": "The intake of potent CYP3A4 inhibitors should be avoided during treatment with sertraline." }
+        ] },
+      { "t": "Strong CYP2C19 inhibitors (e.g. omeprazole, other PPIs, fluoxetine, fluvoxamine): an interaction cannot be excluded.",
+        "src": [{ "s": "emc-1070", "q": "Interaction with strong inhibitors of CYP2C19, e.g. omeprazole, lansoprazole, pantoprazole, rabeprazole, fluoxetine, fluvoxamine cannot be excluded." }] },
+      { "t": "Lithium (monitor), phenytoin (monitor levels), CYP2D6 substrates with narrow therapeutic index (e.g. flecainide, propafenone, TCAs), metamizole, alcohol (not recommended).", "detail": true,
+        "src": [
+          { "s": "emc-1070", "q": "When co-administering sertraline with lithium, patients should be appropriately monitored." },
+          { "s": "emc-1070", "q": "the concomitant use of sertraline and alcohol is not recommended" }
+        ] },
+      { "t": "Levothyroxine: levothyroxine SmPC says its effect may be reduced by sertraline.",
+        "src": [{ "s": "emc-435", "q": "Effects of Levothyroxine may be decreased by concomitant sertraline." }] }
+    ] },
+    "renal": { "items": [
+      { "t": "No dose adjustment needed in renal impairment (no PK difference with CrCl 30-60 ml/min or 10-29 ml/min).",
+        "src": [
+          { "s": "emc-1070", "q": "No dosage adjustment is necessary in patients with renal impairment" },
+          { "s": "emc-1070", "q": "(creatinine clearance 30-60 ml/min) or moderate to severe renal impairment (creatinine clearance 10-29 ml/min)" }
+        ] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Hepatic impairment: use with caution and a lower or less frequent dose (about 3-fold higher exposure in mild cirrhosis). Severe hepatic impairment: should not be used (no data).",
+        "src": [
+          { "s": "emc-1070", "q": "A lower or less frequent dose should be used in patients with hepatic impairment" },
+          { "s": "emc-1070", "q": "Sertraline should not be used in cases of severe hepatic impairment as no clinical data are available" }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: not recommended in pregnancy unless the woman's clinical condition means benefit is expected to outweigh risk. No evidence of malformations in substantial data.",
+        "src": [
+          { "s": "emc-1070", "q": "Sertraline is not recommended in pregnancy, unless the clinical condition of the woman is such that the benefit of the treatment is expected to outweigh the potential risk." },
+          { "s": "emc-1070", "q": "a substantial amount of data did not reveal evidence of induction of congenital malformations by sertraline" }
+        ] },
+      { "t": "Late pregnancy/third trimester: observe the neonate (withdrawal or serotonergic symptoms, usually within 24 hours); small increased risk of persistent pulmonary hypertension of the newborn (about 5 per 1000 vs 1-2 per 1000).",
+        "tag": "Third trimester",
+        "src": [
+          { "s": "emc-1070", "q": "Neonates should be observed if maternal use of sertraline continues into the later stages of pregnancy, particularly the third trimester." },
+          { "s": "emc-1070", "q": "The observed risk was approximately 5 cases per 1000 pregnancies." }
+        ] },
+      { "t": "Postpartum haemorrhage: use in the month before delivery may increase risk (less than 2-fold). MHRA: consider individual bleeding/thrombotic risk; do not stop anticoagulants in high-risk women because of this.",
+        "tag": "Month before delivery",
+        "src": [
+          { "s": "emc-1070", "q": "Observational data indicate an increased risk (less than 2-fold) of postpartum haemorrhage following SSRI/SNRI exposure within the month prior to birth" },
+          { "s": "mhra-dsu-ssri-pph", "q": "consider the findings of the review in the context of individual patient risk factors for bleeding or thrombotic events" }
+        ] },
+      { "t": "BUMPS: SSRIs are commonly taken in pregnancy without problems; stopping sertraline can cause relapse and withdrawal - do not stop without advice. Hospital delivery usually advised.",
+        "src": [
+          { "s": "bumps-sertraline", "q": "SSRIs are commonly taken during pregnancy without any problem." },
+          { "s": "bumps-sertraline", "q": "Stopping sertraline can increase the risk of relapse and stopping suddenly can cause withdrawal symptoms." },
+          { "s": "bumps-sertraline", "q": "Women taking an SSRI in pregnancy will usually be advised to have a hospital delivery." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: small amounts pass into milk; no infant harm reported but risk cannot be excluded - not recommended unless benefit outweighs risk.",
+        "src": [{ "s": "emc-1070", "q": "Use in nursing mothers is not recommended unless, in the judgment of the physician, the benefit outweighs the risk." }] },
+      { "t": "SPS (differs from SmPC): sertraline is an SSRI of choice in breastfeeding (very small amounts in milk). As a precaution monitor the infant for agitation, restlessness, sleep disturbance, diarrhoea, poor feeding and weight gain. No need to switch an SSRI used successfully in pregnancy (term, healthy infant).",
+        "src": [
+          { "s": "sps-ssri-bf", "q": "Paroxetine and sertraline are the SSRIs of choice during breastfeeding." },
+          { "s": "sps-ssri-bf", "q": "As a precaution, monitor for agitation, restlessness, insomnia, drowsiness or other sleep disturbances, diarrhoea, poor feeding and adequate weight-gain." },
+          { "s": "sps-ssri-bf", "q": "There is no need to change an SSRI used successfully during pregnancy to a preferred choice in breastfeeding as long as the infant has been born full term and healthy." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: no animal effect; SSRI effects on sperm quality are reversible in case reports. Sexual dysfunction (ejaculation failure very common) - can persist after stopping (MHRA 2026: discuss PSSD when starting/changing dose).",
+        "src": [
+          { "s": "emc-1070", "q": "Human case reports with some SSRI's have shown that an effect on sperm quality is reversible." },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "that there is evidence that some antidepressants [footnote 1] . are associated with a risk of sexual dysfunction and that symptoms may continue after stopping treatment with certain antidepressants" }
+        ] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Very common: nausea, diarrhoea, dry mouth; dizziness, headache, somnolence; insomnia; fatigue; ejaculation failure. Nausea is the most common.",
+        "src": [
+          { "s": "emc-1070", "q": "Nausea is the most common undesirable effect." },
+          { "s": "emc-1070", "q": "Gastrointestinal disorders nausea, diarrhoea, dry mouth" },
+          { "s": "emc-1070", "q": "Nervous system disorders dizziness, headache*, somnolence" }
+        ] },
+      { "t": "Common: dyspepsia, constipation, abdominal pain, vomiting; tremor, paraesthesia; anxiety, agitation, decreased libido; sweating, rash; erectile dysfunction; weight increase; palpitations.",
+        "src": [{ "s": "emc-1070", "q": "dyspepsia, constipation*, abdominal pain*, vomiting*, flatulence" }] },
+      { "t": "Withdrawal symptoms on stopping are common (dizziness, sensory disturbance, sleep disturbance, anxiety, nausea, tremor, headache).",
+        "src": [{ "s": "emc-1070", "q": "Withdrawal symptoms when treatment is discontinued are common, particularly if discontinuation is abrupt" }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Serotonin syndrome or NMS (agitation, confusion, sweating, fever, rigidity, tachycardia): potentially life-threatening; risk higher with other serotonergic drugs. Monitor for signs and symptoms.",
+        "src": [
+          { "s": "emc-1070", "q": "The development of potentially life-threatening syndromes like serotonin syndrome (SS) or Neuroleptic Malignant Syndrome (NMS) has been reported with SSRIs, including treatment with sertraline." },
+          { "s": "emc-1070", "q": "Patients should be monitored for the emergence of signs and symptoms of SS or NMS syndrome" }
+        ] },
+      { "t": "New or worse suicidal thoughts: seek urgent medical attention (MHRA 2026).",
+        "src": [{ "s": "mhra-dsu-antidepressants-2026", "q": "if you have new or worsening suicidal thoughts, particularly when starting or changing dose of antidepressants, seek urgent medical attention" }] },
+      { "t": "Abnormal bleeding (e.g. GI bleeding; uncommon), including fatal haemorrhage reports.",
+        "src": [{ "s": "emc-1070", "q": "other haemorrhagic events such as gastrointestinal or gynaecological bleeding, including fatal haemorrhages" }] },
+      { "t": "Symptomatic hyponatraemia (rare): headache, confusion, weakness, falls; severe - seizures, coma. Consider stopping.",
+        "src": [
+          { "s": "emc-1070", "q": "Signs and symptoms of hyponatraemia include headache, difficulty concentrating, memory impairment, confusion, weakness and unsteadiness which may lead to falls." },
+          { "s": "emc-1070", "q": "Signs and symptoms associated with more severe and/or acute cases have included hallucination, syncope, seizure, coma, respiratory arrest, and death." },
+          { "s": "emc-1070", "q": "Discontinuation of sertraline should be considered in patients with symptomatic hyponatraemia" }
+        ] },
+      { "t": "Rare: QTc prolongation/torsade de pointes, seizures, serious liver events, severe skin reactions (SJS/TEN), mania.", "detail": true,
+        "src": [{ "s": "emc-1070", "q": "hepatic function abnormal, serious liver events (including hepatitis, jaundice and hepatic failure)" }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "When starting or changing dose: discuss risk of suicidal thoughts and of sexual dysfunction; monitor regularly after starting (MHRA 2026).", "tag": "baseline",
+        "src": [
+          { "s": "mhra-dsu-antidepressants-2026", "q": "discuss with patients when starting or changing the dose of an antidepressant or at their next review, the risk of suicidal thoughts and behaviours" },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "monitor your patients regularly after starting treatment with an antidepressant" }
+        ] },
+      { "t": "Close monitoring for clinical worsening and suicidality early in treatment and after dose changes; watch for signs of serotonin syndrome.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-1070", "q": "patients should be closely monitored until such improvement occurs" },
+          { "s": "emc-1070", "q": "Patients should be monitored for the emergence of signs and symptoms of SS or NMS syndrome" }
+        ] },
+      { "t": "Warfarin: monitor prothrombin time/INR when sertraline is started or stopped. Children on long-term treatment: monitor growth and development.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-1070", "q": "prothrombin time should be carefully monitored when sertraline therapy is initiated or stopped" },
+          { "s": "emc-1070", "q": "Physicians must monitor paediatric patients on long term treatment for abnormalities in growth and development." }
+        ] },
+      { "t": "Stop if: manic phase, seizures; consider stopping if symptomatic hyponatraemia. Taper when stopping.", "tag": "stop",
+        "src": [
+          { "s": "emc-1070", "q": "Sertraline should be discontinued in any patient entering a manic phase." },
+          { "s": "emc-1070", "q": "Sertraline should be discontinued in any patient who develops seizures." }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Once daily, morning or evening, with or without food.",
+        "src": [
+          { "s": "emc-1070", "q": "Sertraline should be administered once daily, either in the morning or evening." },
+          { "s": "emc-1070", "q": "Sertraline tablet can be administered with or without food." }
+        ] },
+      { "t": "Oral concentrate: measure with the syringe provided and dilute in about 120 ml of water, ginger ale, lemon/lime soda, lemonade or orange juice only; take immediately; do not prepare in advance.", "formulations": ["sertraline-oral-conc"],
+        "src": [
+          { "s": "emc-100294", "q": "dilute with approximately 120 ml (one glass) of water, ginger ale, lemon/lime soda, lemonade or orange juice" },
+          { "s": "emc-100294", "q": "The dose should be taken immediately after dilution. Do not prepare in advance." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Seek urgent help (NHS 111, crisis team, Samaritans 116 123) for new or worse suicidal thoughts, especially early or after dose changes.",
+        "src": [{ "s": "mhra-dsu-antidepressants-2026", "q": "You can call NHS 111, or your local mental health crisis team, Samaritans on 116 123" }] },
+      { "t": "Sexual problems can occur and may continue after stopping - talk to your prescriber; do not stop without advice.",
+        "src": [{ "s": "mhra-dsu-antidepressants-2026", "q": "do not stop taking your medicine without first speaking to your healthcare professional" }] },
+      { "t": "Do not stop suddenly (withdrawal symptoms); effect may take several weeks.",
+        "src": [
+          { "s": "emc-1070", "q": "Abrupt discontinuation should be avoided." },
+          { "s": "emc-1070", "q": "longer periods are usually necessary to demonstrate therapeutic response, especially in OCD" }
+        ] },
+      { "t": "Avoid alcohol and grapefruit juice. Avoid St John's wort. Be careful driving until you know how you react.",
+        "src": [
+          { "s": "emc-1070", "q": "the concomitant use of sertraline and alcohol is not recommended" },
+          { "s": "emc-1070", "q": "the intake of grapefruit juice should be avoided during treatment with sertraline" },
+          { "s": "emc-1070", "q": "should be undertaken with caution and avoided whenever possible" },
+          { "s": "emc-1070", "q": "the patient should be cautioned accordingly" }
+        ] }
+    ] }
+  },
+  "rules": [
+    { "id": "sertraline:allergy:sertraline", "kind": "allergy", "level": "contraindicated", "med": "sertraline", "allergen": ["sertraline"],
+      "concern": "Hypersensitivity to sertraline", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-1070", "q": "Hypersensitivity to the active substance or any of the excipients listed in section 6.1." }] },
+    { "id": "sertraline:age:lt18", "kind": "age", "level": "avoid", "med": "sertraline", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years", "consequence": "Not for use under 18 except OCD aged 6-17; increased suicidal behaviour and hostility in paediatric trials; no data under 6 years.", "action": "Should not be used except for OCD in 6 to 17 year olds; if used, monitor closely for suicidal symptoms.", "sourceWording": "should not be used in the treatment of children and adolescents under the age of 18 years, except",
+      "src": [
+        { "s": "emc-1070", "q": "Sertraline should not be used in the treatment of children and adolescents under the age of 18 years, except for patients with obsessive compulsive disorder aged 6-17 years old." },
+        { "s": "emc-1070", "q": "No data is available for children under 6 years of age" }
+      ] },
+    { "id": "sertraline:age:elderly", "kind": "age", "level": "caution", "med": "sertraline", "age": { "minYears": 65 }, "effect": "hyponatraemia",
+      "concern": "Elderly (the SmPC's studies define elderly as over 65 years)", "consequence": "Greater risk of hyponatraemia (often SIADH).", "action": "Dose carefully.", "sourceWording": "Elderly should be dosed carefully",
+      "src": [
+        { "s": "emc-1070", "q": "Elderly should be dosed carefully, as elderly may be more at risk for hyponatraemia" },
+        { "s": "emc-1070", "q": "Over 700 elderly patients (>65 years) have participated in clinical studies." }
+      ] },
+    { "id": "sertraline:condition:bipolar", "kind": "condition", "level": "caution", "med": "sertraline", "condition": "bipolar-mania",
+      "concern": "History of mania/hypomania", "consequence": "Mania or hypomania may emerge.", "action": "Use with caution with close surveillance; stop if a manic phase starts.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-1070", "q": "sertraline should be used with caution in patients with a history of mania/hypomania" },
+        { "s": "emc-1070", "q": "Sertraline should be discontinued in any patient entering a manic phase." }
+      ] },
+    { "id": "sertraline:condition:epilepsy", "kind": "condition", "level": "avoid", "med": "sertraline", "condition": "epilepsy",
+      "concern": "Epilepsy", "consequence": "Seizures may occur.", "action": "Avoid in unstable epilepsy; monitor carefully if controlled; stop if seizures develop.", "sourceWording": "should be avoided in patients with unstable epilepsy",
+      "src": [{ "s": "emc-1070", "q": "sertraline should be avoided in patients with unstable epilepsy and patients with controlled epilepsy should be carefully monitored" }] },
+    { "id": "sertraline:condition:qt", "kind": "condition", "level": "caution", "med": "sertraline", "condition": "qt-prolongation", "effect": "qt-prolongation",
+      "concern": "QT prolongation risk factors (incl. family history of long QT)", "consequence": "QTc prolongation / torsade de pointes.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-1070", "q": "sertraline should be used with caution in patients with additional risk factors for QTc prolongation such as cardiac disease, hypokalaemia or hypomagnesemia, familial history of QTc prolongation, bradycardia" }] },
+    { "id": "sertraline:condition:bradycardia", "kind": "condition", "level": "caution", "med": "sertraline", "condition": "bradycardia", "effect": "qt-prolongation",
+      "concern": "Bradycardia", "consequence": "Risk factor for QTc prolongation / TdP.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-1070", "q": "familial history of QTc prolongation, bradycardia and concomitant use of medications which prolong QTc interval" }] },
+    { "id": "sertraline:condition:hypokalaemia", "kind": "condition", "level": "caution", "med": "sertraline", "condition": "hypokalaemia", "effect": "qt-prolongation",
+      "concern": "Hypokalaemia (or hypomagnesaemia)", "consequence": "Risk factor for QTc prolongation / TdP.", "action": "Use with caution; correct electrolytes.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-1070", "q": "such as cardiac disease, hypokalaemia or hypomagnesemia" }] },
+    { "id": "sertraline:condition:bleeding", "kind": "condition", "level": "caution", "med": "sertraline", "condition": "bleeding-disorder", "effect": "bleeding",
+      "concern": "History of bleeding disorders", "consequence": "SSRIs can cause bleeding abnormalities, including fatal haemorrhage.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [{ "s": "emc-1070", "q": "as well as in patients with a history of bleeding disorders" }] },
+    { "id": "sertraline:condition:glaucoma", "kind": "condition", "level": "caution", "med": "sertraline", "condition": "angle-closure-glaucoma",
+      "concern": "Angle-closure glaucoma (or history of glaucoma)", "consequence": "Mydriasis may raise intraocular pressure.", "action": "Use with caution.", "sourceWording": "should therefore be used with caution",
+      "src": [{ "s": "emc-1070", "q": "Sertraline should therefore be used with caution in patients with angle-closure glaucoma or history of glaucoma." }] },
+    { "id": "sertraline:condition:suicidality", "kind": "condition", "level": "monitor", "med": "sertraline", "condition": "depression-suicidality",
+      "concern": "History of suicide-related events or significant suicidal ideation", "consequence": "Greater risk of suicidal thoughts or attempts (also higher under 25 years).", "action": "Careful monitoring, especially early in treatment and after dose changes.", "sourceWording": "should receive careful monitoring during treatment",
+      "src": [{ "s": "emc-1070", "q": "are known to be at greater risk of suicidal thoughts or suicide attempts, and should receive careful monitoring during treatment" }] },
+    { "id": "sertraline:condition:diabetes", "kind": "condition", "level": "info", "med": "sertraline", "condition": "diabetes",
+      "concern": "Diabetes", "consequence": "SSRIs may alter glycaemic control.", "action": "Insulin and/or oral hypoglycaemic dose may need adjustment.", "sourceWording": "may need to be adjusted",
+      "src": [{ "s": "emc-1070", "q": "In patients with diabetes, treatment with an SSRI may alter glycaemic control. Insulin and/or oral hypoglycaemic dosage may need to be adjusted." }] },
+    { "id": "sertraline:hepatic:mild-moderate", "kind": "hepatic", "level": "dose", "med": "sertraline", "hepatic": ["mild", "moderate"],
+      "concern": "Hepatic impairment", "consequence": "About 3-fold higher exposure in mild stable cirrhosis.", "action": "Use with caution; a lower or less frequent dose should be used.", "sourceWording": "A lower or less frequent dose should be used",
+      "src": [
+        { "s": "emc-1070", "q": "A lower or less frequent dose should be used in patients with hepatic impairment" },
+        { "s": "emc-1070", "q": "approximately three-fold greater AUC and Cmax in comparison to normal subjects" }
+      ] },
+    { "id": "sertraline:hepatic:severe", "kind": "hepatic", "level": "avoid", "med": "sertraline", "hepatic": ["severe"],
+      "concern": "Severe hepatic impairment", "consequence": "No clinical data.", "action": "Should not be used.", "sourceWording": "should not be used in cases of severe hepatic impairment",
+      "src": [{ "s": "emc-1070", "q": "Sertraline should not be used in cases of severe hepatic impairment as no clinical data are available" }] },
+    { "id": "sertraline:pregnancy:smpc", "kind": "pregnancy", "level": "avoid", "med": "sertraline",
+      "concern": "Pregnancy (SmPC)", "consequence": "Neonatal withdrawal/serotonergic symptoms; PPHN risk with late use.", "action": "SmPC: not recommended unless the woman's clinical condition means benefit is expected to outweigh risk. BUMPS advice differs (see separate statement).", "sourceWording": "Sertraline is not recommended in pregnancy, unless",
+      "src": [
+        { "s": "emc-1070", "q": "Sertraline is not recommended in pregnancy, unless the clinical condition of the woman is such that the benefit of the treatment is expected to outweigh the potential risk." }
+      ] },
+    { "id": "sertraline:pregnancy:bumps", "kind": "pregnancy", "level": "info", "med": "sertraline",
+      "concern": "Pregnancy (BUMPS)", "consequence": "SSRIs are commonly taken in pregnancy without problems; stopping sertraline can cause relapse, and stopping suddenly can cause withdrawal.", "action": "BUMPS: if well controlled it may be best to stay on sertraline; do not stop without speaking to the midwife, GP or specialist.", "sourceWording": "SSRIs are commonly taken during pregnancy without any problem",
+      "src": [
+        { "s": "bumps-sertraline", "q": "SSRIs are commonly taken during pregnancy without any problem." },
+        { "s": "bumps-sertraline", "q": "If a woman's condition is well-controlled with sertraline, it may be best to stay on it rather than try something new and risk a relapse." },
+        { "s": "bumps-sertraline", "q": "Women should not stop taking sertraline without first speaking to their midwife, GP or specialist." }
+      ] },
+    { "id": "sertraline:pregnancy:late", "kind": "pregnancy", "level": "monitor", "med": "sertraline", "trimesters": [3], "effect": "bleeding",
+      "concern": "Late pregnancy / month before delivery", "consequence": "Neonatal symptoms; PPHN; postpartum haemorrhage risk (less than 2-fold).", "action": "Observe the neonate; consider individual bleeding/thrombotic risk factors (MHRA).", "sourceWording": "Neonates should be observed",
+      "src": [
+        { "s": "emc-1070", "q": "Neonates should be observed if maternal use of sertraline continues into the later stages of pregnancy, particularly the third trimester." },
+        { "s": "mhra-dsu-ssri-pph", "q": "observational data suggest that the use of some antidepressants in the last month before delivery may increase the risk of postpartum haemorrhage" }
+      ] },
+    { "id": "sertraline:breastfeeding:smpc", "kind": "breastfeeding", "level": "avoid", "med": "sertraline",
+      "concern": "Breastfeeding (SmPC)", "consequence": "Small amounts in milk; risk cannot be excluded.", "action": "SmPC: not recommended unless benefit outweighs risk. Note SPS advice differs.", "sourceWording": "not recommended unless",
+      "src": [{ "s": "emc-1070", "q": "Use in nursing mothers is not recommended unless, in the judgment of the physician, the benefit outweighs the risk." }] },
+    { "id": "sertraline:breastfeeding:sps", "kind": "breastfeeding", "level": "info", "med": "sertraline",
+      "concern": "Breastfeeding (SPS)", "consequence": "Very small amounts in milk.", "action": "SPS: SSRI of choice; monitor infant (agitation, sleep, feeding, diarrhoea, weight gain).", "sourceWording": "SSRIs of choice during breastfeeding",
+      "src": [
+        { "s": "sps-ssri-bf", "q": "Paroxetine and sertraline are the SSRIs of choice during breastfeeding." },
+        { "s": "sps-ssri-bf", "q": "As a precaution, monitor for agitation, restlessness, insomnia, drowsiness or other sleep disturbances, diarrhoea, poor feeding and adequate weight-gain." }
+      ] },
+    { "id": "sertraline:interaction:st-johns-wort", "kind": "interaction", "level": "avoid", "med": "sertraline", "other": "st-johns-wort", "effect": "serotonin-syndrome",
+      "concern": "Sertraline + St John's wort", "consequence": "Pharmacodynamic (serotonergic) interaction; St John's wort may also lower sertraline levels.", "action": "Use with caution and avoid whenever possible (St John's wort THR SPC: should not be used together).", "sourceWording": "should be undertaken with caution and avoided whenever possible",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "SSRIs e.g. Citalopram Escitalopram Fluoxetine Fluvoxamine Paroxetine Sertraline" },
+        { "s": "emc-1070", "q": "or the herbal medicine, St John's Wort ( hypericum perforatum ), should be undertaken with caution and avoided whenever possible due to the potential for a pharmacodynamic interaction" },
+        { "s": "emc-1070", "q": "It cannot be excluded that CYP3A4 inducers, e.g. phenobarbital, carbamazepine, St. John's Wort and rifampicin, may cause a reduction of sertraline plasma levels." }
+      ] },
+    { "id": "sertraline:interaction:serotonergic", "kind": "interaction", "level": "caution", "med": "sertraline", "other": "group:serotonergic", "effect": "serotonin-syndrome",
+      "concern": "Sertraline + other serotonergic drug (e.g. tramadol)", "consequence": "Increased risk of serotonin syndrome / NMS.", "action": "Caution; monitor for signs and symptoms of serotonin syndrome. (SmPC 4.4: tryptophan, fenfluramine, amphetamines, 5-HT agonists and St John's wort should be avoided whenever possible; opioids and other serotonergic drugs: caution, 4.5.)", "sourceWording": "Caution is also advised with opioids",
+      "src": [
+        { "s": "emc-1070", "q": "Caution is also advised with opioids [e.g. fentanyl (used in general anaesthesia or in the treatment of chronic pain)], and other serotonergic drugs (including other serotonergic antidepressants, amphetamines, triptans)" },
+        { "s": "emc-1070", "q": "Co-administration of sertraline with other drugs which enhance the effects of serotonergic neurotransmission such as amphetamines, tryptophan or fenfluramine or 5-HT agonists" },
+        { "s": "emc-1070", "q": "Patients should be monitored for the emergence of signs and symptoms of SS or NMS syndrome" }
+      ] },
+    { "id": "sertraline:interaction:opioid", "kind": "interaction", "level": "caution", "med": "sertraline", "other": "group:opioid", "effect": "serotonin-syndrome",
+      "concern": "Sertraline + opioid", "consequence": "Increased risk of serotonin syndrome / NMS.", "action": "Caution; monitor for serotonin syndrome.", "sourceWording": "Caution is also advised with opioids",
+      "src": [
+        { "s": "emc-1070", "q": "Caution is also advised with opioids [e.g. fentanyl (used in general anaesthesia or in the treatment of chronic pain)]" },
+        { "s": "emc-1070", "q": "and with opioids. Patients should be monitored for the emergence of signs and symptoms of SS or NMS syndrome" }
+      ] },
+    { "id": "sertraline:interaction:warfarin", "kind": "interaction", "level": "monitor", "med": "sertraline", "other": "warfarin", "effect": "bleeding",
+      "concern": "Sertraline + warfarin", "consequence": "Small increase in prothrombin time; INR may become unbalanced; added bleeding risk.", "action": "Monitor prothrombin time/INR carefully when sertraline is started or stopped.", "sourceWording": "prothrombin time should be carefully monitored",
+      "src": [
+        { "s": "emc-1070", "q": "Co-administration of sertraline 200 mg daily with warfarin resulted in a small but statistically significant increase in prothrombin time, which may in some rare cases unbalance the INR value." },
+        { "s": "emc-1070", "q": "prothrombin time should be carefully monitored when sertraline therapy is initiated or stopped" }
+      ] },
+    { "id": "sertraline:interaction:anticoagulant", "kind": "interaction", "level": "caution", "med": "sertraline", "other": "group:anticoagulant", "effect": "bleeding",
+      "concern": "Sertraline + anticoagulant", "consequence": "Increased bleeding risk.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [{ "s": "emc-1070", "q": "particularly in concomitant use with drugs known to affect platelet function (e.g. anticoagulants, atypical antipsychotics and phenothiazines, most tricyclic antidepressants, acetylsalicylic acid and non-steroidal anti-inflammatory drugs (NSAIDs))" }] },
+    { "id": "sertraline:interaction:nsaid", "kind": "interaction", "level": "caution", "med": "sertraline", "other": "group:nsaid", "effect": "bleeding",
+      "concern": "Sertraline + NSAID", "consequence": "Increased bleeding risk.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-1070", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with drugs known to affect platelet function" },
+        { "s": "emc-1070", "q": "The risk of bleeding may be increased when medicines acting on platelet function (e.g. NSAIDs, acetylsalicylic acid and ticlopidine)" }
+      ] },
+    { "id": "sertraline:interaction:antiplatelet", "kind": "interaction", "level": "caution", "med": "sertraline", "other": "group:antiplatelet", "effect": "bleeding",
+      "concern": "Sertraline + antiplatelet", "consequence": "Increased bleeding risk.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-1070", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with drugs known to affect platelet function" },
+        { "s": "emc-1070", "q": "The risk of bleeding may be increased when medicines acting on platelet function (e.g. NSAIDs, acetylsalicylic acid and ticlopidine)" }
+      ] },
+    { "id": "sertraline:interaction:qt", "kind": "interaction", "level": "caution", "med": "sertraline", "other": "group:qt-prolonging", "effect": "qt-prolongation",
+      "concern": "Sertraline + QT-prolonging medicine", "consequence": "Increased risk of QTc prolongation / ventricular arrhythmia (TdP).", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-1070", "q": "The risk of QTc prolongation and/or ventricular arrhythmias (e.g. TdP) may be increased with concomitant use of other drugs which prolong the QTc interval" },
+        { "s": "emc-1070", "q": "concomitant use of medications which prolong QTc interval" }
+      ] },
+    { "id": "sertraline:interaction:clarithromycin", "kind": "interaction", "level": "avoid", "med": "sertraline", "other": "clarithromycin",
+      "concern": "Sertraline + clarithromycin (potent CYP3A4 inhibitor)", "consequence": "Sertraline exposure may increase markedly.", "action": "Potent CYP3A4 inhibitors should be avoided during sertraline treatment.", "sourceWording": "should be avoided",
+      "src": [
+        { "s": "emc-1070", "q": "potent CYP3A4 inhibitors, e.g. protease inhibitors, ketoconazole, itraconazole, posaconazole, voriconazole, clarithromycin, telithromycin and nefazodone" },
+        { "s": "emc-1070", "q": "The intake of potent CYP3A4 inhibitors should be avoided during treatment with sertraline." }
+      ] },
+    { "id": "sertraline:interaction:omeprazole", "kind": "interaction", "level": "info", "med": "sertraline", "other": "omeprazole",
+      "concern": "Sertraline + omeprazole (CYP2C19 inhibitor)", "consequence": "Possible increase in sertraline levels.", "action": "No specific action stated; an interaction cannot be excluded.", "sourceWording": "cannot be excluded",
+      "src": [{ "s": "emc-1070", "q": "Interaction with strong inhibitors of CYP2C19, e.g. omeprazole, lansoprazole, pantoprazole, rabeprazole, fluoxetine, fluvoxamine cannot be excluded." }] },
+    { "id": "sertraline:interaction:diuretic", "kind": "interaction", "level": "info", "med": "sertraline", "other": "group:diuretic", "effect": "hyponatraemia",
+      "concern": "Sertraline + diuretic", "consequence": "Greater risk of hyponatraemia (SIADH).", "action": "Be alert to hyponatraemia; consider stopping sertraline if symptomatic.", "sourceWording": "may be at greater risk",
+      "src": [
+        { "s": "emc-1070", "q": "Also patients taking diuretics or who are otherwise volume-depleted may be at greater risk" },
+        { "s": "emc-1070", "q": "Discontinuation of sertraline should be considered in patients with symptomatic hyponatraemia" }
+      ] },
+    { "id": "sertraline:interaction:antidiabetic", "kind": "interaction", "level": "info", "med": "sertraline", "other": "group:oral-antidiabetic",
+      "concern": "Sertraline + antidiabetic medicine", "consequence": "SSRIs may alter glycaemic control.", "action": "Oral hypoglycaemic/insulin dose may need adjustment.", "sourceWording": "may need to be adjusted",
+      "src": [{ "s": "emc-1070", "q": "In patients with diabetes, treatment with an SSRI may alter glycaemic control. Insulin and/or oral hypoglycaemic dosage may need to be adjusted." }] }
+  ]
+}

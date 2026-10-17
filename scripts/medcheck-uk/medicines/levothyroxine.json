@@ -1,0 +1,1370 @@
+{
+  "id": "levothyroxine",
+  "name": "Levothyroxine sodium",
+  "ingredients": [
+    "levothyroxine"
+  ],
+  "className": "Thyroid hormone",
+  "groups": [
+    "thyroid-hormone"
+  ],
+  "searchTerms": [
+    "levothyroxine",
+    "thyroxine",
+    "L-thyroxine",
+    "T4"
+  ],
+  "formulations": [
+    {
+      "id": "levothyroxine-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "100 micrograms (only this SmPC used)",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Each tablet contains 100 micrograms Levothyroxine sodium anhydrous."
+        }
+      ],
+      "sourceIds": [
+        "emc-435"
+      ]
+    },
+    {
+      "id": "levothyroxine-oral-soln",
+      "label": "Oral solution",
+      "route": "oral",
+      "strengths": "100 micrograms/5 ml (only this SmPC used)",
+      "release": "n/a",
+      "note": "Monitor closely when switching between oral solution and tablets.",
+      "src": [
+        {
+          "s": "emc-1217",
+          "q": "Each 5ml of oral solution contains 100micrograms Levothyroxine Sodium"
+        },
+        {
+          "s": "emc-1217",
+          "q": "Patients switching from the oral solution to the tablet form or from the tablet form to the oral solution should be monitored closely."
+        }
+      ],
+      "sourceIds": [
+        "emc-1217"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Hypothyroidism, including congenital hypothyroidism in infants, acquired hypothyroidism in children and juvenile myxoedema.",
+          "formulations": [
+            "levothyroxine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Control of hypothyroidism, congenital hypothyroidism in infants , acquired hypothyroidism in children and juvenile myxoedema."
+            }
+          ]
+        },
+        {
+          "t": "Hypothyroidism (congenital or acquired); diffuse non-toxic goitre; goitre with Hashimoto's thyroiditis; suppression therapy in thyroid carcinoma.",
+          "formulations": [
+            "levothyroxine-oral-soln"
+          ],
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "i) hypothyroidism (congenital or acquired) ii) diffuse non toxic goitre iii) goitre associated with Hashimoto's thyroiditis iv) Suppression therapy in thyroid carcinoma"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Generic prescribing remains appropriate for most patients (MHRA). If a patient is persistently symptomatic after switching products, consider consistently prescribing a specific well-tolerated product; if problems persist, consider an oral solution.",
+          "src": [
+            {
+              "s": "mhra-dsu-levothyroxine-switching",
+              "q": "generic prescribing of levothyroxine remains appropriate for the majority of patients"
+            },
+            {
+              "s": "mhra-dsu-levothyroxine-switching",
+              "q": "consider consistently prescribing a specific levothyroxine product known to be well tolerated by the patient"
+            },
+            {
+              "s": "mhra-dsu-levothyroxine-switching",
+              "q": "if symptoms or poor control of thyroid function persist despite adhering to a specific product, consider prescribing levothyroxine in an oral solution formulation"
+            }
+          ]
+        },
+        {
+          "t": "Not for weight reduction; large doses can cause serious or life-threatening effects, especially with sympathomimetic weight-loss products.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Thyroid hormones should not be given for weight reduction."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults under 50 years: start 100 micrograms daily, before breakfast. Increase by 50 micrograms every 3 to 4 weeks until stable. Usual final dose 100 to 200 micrograms daily.",
+          "tag": "Hypothyroidism, adults < 50 years",
+          "formulations": [
+            "levothyroxine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Patients under 50 years age: Initially 100 micrograms daily, preferably taken before breakfast or the first meal of the day."
+            },
+            {
+              "s": "emc-435",
+              "q": "Adjust at three to four week intervals by 50 micrograms until normal metabolism is steadily maintained. The final daily dose may be up to 100 to 200 micrograms."
+            }
+          ]
+        },
+        {
+          "t": "Over 50 years (and elderly) without cardiac disease: start no more than 50 micrograms daily; increase by 50 micrograms every 3 to 4 weeks. Final dose 50 to 200 micrograms daily.",
+          "tag": "Hypothyroidism, > 50 years, no cardiac disease",
+          "formulations": [
+            "levothyroxine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Initially, it is not advisable to exceed 50 micrograms daily. In this condition, the daily dose may be increased by 50 micrograms at intervals of every 3-4 weeks"
+            },
+            {
+              "s": "emc-435",
+              "q": "Elderly Same as that for patients aged over 50 years."
+            }
+          ]
+        },
+        {
+          "t": "Over 50 years with cardiac disease: 25 micrograms daily or 50 micrograms on alternate days; increase by 25 micrograms every 4 weeks. Final dose 50 to 200 micrograms daily. Clinical response is a better guide than serum levels over 50 years.",
+          "tag": "Hypothyroidism, > 50 years, cardiac disease",
+          "formulations": [
+            "levothyroxine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Where there is cardiac disease, 25 micrograms daily or 50 micrograms on alternate days is more suitable."
+            },
+            {
+              "s": "emc-435",
+              "q": "the daily dose may be increased by 25 micrograms at intervals of every 4 weeks"
+            }
+          ]
+        },
+        {
+          "t": "Adults and children over 12 years: start 50 to 100 micrograms daily before breakfast; usual maintenance 100 to 200 micrograms daily. Adjust by 25 to 50 micrograms every 3 to 4 weeks.",
+          "tag": "Hypothyroidism, adults and children > 12 years",
+          "formulations": [
+            "levothyroxine-oral-soln"
+          ],
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "Initial dose: 50 - 100 micrograms daily before breakfast. Usual maintenance dose: 100 - 200 micrograms daily."
+            },
+            {
+              "s": "emc-1217",
+              "q": "The initial dose is adjusted by 25 to 50 microgram increments at 3 - 4 week intervals"
+            }
+          ]
+        },
+        {
+          "t": "Elderly, coronary heart disease, severe or long-standing hypothyroidism: low start (e.g. 12.5 micrograms/day), increase slowly (e.g. 12.5 micrograms/day every 2 weeks) with frequent thyroid monitoring.",
+          "tag": "High-risk adults",
+          "formulations": [
+            "levothyroxine-oral-soln"
+          ],
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "a low initial dose (for example 12.5 microgram/day) should be given which should then be increased slowly and at lengthy intervals (e.g. a gradual increment of 12.5 microgram/day fortnightly) with frequent monitoring of thyroid hormones"
+            }
+          ]
+        },
+        {
+          "t": "Diffuse non-toxic goitre or Hashimoto's goitre: 50 to 200 µg/day. Stop if no decrease in goitre size after 6 to 12 months (non-toxic goitre with normal T4/TSH).",
+          "tag": "Goitre",
+          "formulations": [
+            "levothyroxine-oral-soln"
+          ],
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "Diffuse non toxic goitre or goitre associated with Hashimoto's thyroiditis The recommended dose is 50-200 µg/day."
+            },
+            {
+              "s": "emc-1217",
+              "q": "If no discernible decrease in size of the goitre occurs after 6 to 12 month, thyroxine therapy should be stopped."
+            }
+          ]
+        },
+        {
+          "t": "Suppression therapy in thyroid carcinoma: 150 to 300 µg/day.",
+          "tag": "Thyroid carcinoma",
+          "formulations": [
+            "levothyroxine-oral-soln"
+          ],
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "Suppression therapy in thyroid carcinoma The recommended dose is 150-300 µg/day."
+            }
+          ]
+        },
+        {
+          "t": "If metabolism rises too fast (diarrhoea, nervousness, fast pulse, insomnia, tremor, angina): reduce or withhold for 1 to 2 days, then restart at a lower dose.",
+          "tag": "Over-replacement",
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "reduce the dose or withhold for 1-2 days and start again at a lower dose"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Neonates and infants with congenital hypothyroidism: 10 to 15 micrograms/kg/day for the first 3 months, then adjust to clinical findings, thyroid hormones and TSH.",
+          "tag": "Congenital hypothyroidism",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "the initial recommended dosage is 10 to 15 micrograms per kg BW per day for the first 3 months"
+            }
+          ]
+        },
+        {
+          "t": "Acquired hypothyroidism in children: start 12.5 to 50 micrograms/day; increase every 2 to 4 weeks by response and TSH until full replacement. Maintenance usually 100 to 150 micrograms/m² body surface area.",
+          "tag": "Acquired hypothyroidism",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "For children with acquired hypothyroidism, the initial recommended dosage is 12.5-50 micrograms per day."
+            },
+            {
+              "s": "emc-435",
+              "q": "The maintenance dose is generally 100 to 150 micrograms per m2 body surface area."
+            }
+          ]
+        },
+        {
+          "t": "Juvenile myxoedema: start 25 micrograms daily; increase by 25 micrograms every 2 to 4 weeks until mild hyperthyroid symptoms, then reduce slightly.",
+          "tag": "Juvenile myxoedema",
+          "formulations": [
+            "levothyroxine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Juvenile myxoedema in children: The initial recommended dosage is 25 micrograms daily."
+            }
+          ]
+        },
+        {
+          "t": "Under 5 years: whole tablets not recommended, and crushing/dispersing tablets is not recommended (dosing inaccuracy); an approved oral solution is preferable.",
+          "formulations": [
+            "levothyroxine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "In children under 5 years of age, the administration of whole tablets is not recommended."
+            },
+            {
+              "s": "emc-435",
+              "q": "In this age group it is preferable to administer an approved oral solution of levothyroxine."
+            }
+          ]
+        },
+        {
+          "t": "Give infants the total daily dose at least 30 minutes before the first meal. Monitor TSH regularly. Very low birth weight preterm neonates: monitor haemodynamics at start (risk of circulatory collapse).",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Infants should be given the total daily dose at least half an hour before the first meal of the day."
+            },
+            {
+              "s": "emc-435",
+              "q": "Haemodynamic parameters should be monitored when levothyroxine therapy is initiated in very low birth weight preterm neonates"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to levothyroxine or any excipient.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Tablet SmPC: thyrotoxicosis; adrenal gland disorder or adrenal insufficiency.",
+          "formulations": [
+            "levothyroxine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Thyrotoxicosis Adrenal gland disorder or adrenal insufficiency"
+            }
+          ]
+        },
+        {
+          "t": "Oral solution SmPC: adrenal insufficiency without adequate corticosteroid cover. (Thyrotoxicosis is not listed in this SmPC's 4.3; its 4.4 says do not give in hyperthyroid states except as supplementation during anti-thyroid treatment.)",
+          "formulations": [
+            "levothyroxine-oral-soln"
+          ],
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "In patients with adrenal insufficiency without adequate corticosteroid cover."
+            },
+            {
+              "s": "emc-1217",
+              "q": "Levothyroxine should not be given in hyperthyreotic states other than as concomitant supplementation during anti-thyroid drug treatment of hyperthyroidism."
+            }
+          ]
+        },
+        {
+          "t": "Must not be started in acute myocardial infarction, acute myocarditis or acute pancarditis (both SmPCs).",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Treatment with Eltroxin must not be initiated in acute myocardial infarction, acute myocarditis, and acute pancarditis."
+            },
+            {
+              "s": "emc-1217",
+              "q": "Treatment with Levothyroxine Oral Solution must not be initiated in acute myocardial infarction, acute myocarditis, and acute pancarditis."
+            }
+          ]
+        },
+        {
+          "t": "Levothyroxine plus anti-thyroid drug for hyperthyroidism is not indicated in pregnancy.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Combination therapy of hyperthyroidism with levothyroxine and anti-thyroid agents is not indicated in pregnancy."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Start very gradually over 50 years and in long-standing hypothyroidism. Use with caution in cardiovascular disorders (angina, coronary artery disease, hypertension) and in the elderly; do an ECG before starting if cardiovascular disease is suspected or high risk, then start low and increase cautiously.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Levothyroxine should be introduced very gradually in patients aged over 50 years (see section 4.2) and those with long standing hypothyroidism"
+            },
+            {
+              "s": "emc-435",
+              "q": "Levothyroxine sodium should be used with caution in patients with cardiovascular disorders, including angina, coronary artery disease, hypertension, and in the elderly"
+            },
+            {
+              "s": "emc-435",
+              "q": "it is important to perform an ECG prior to commencement of levothyroxine treatment in order to detect changes consistent with ischaemia"
+            }
+          ]
+        },
+        {
+          "t": "Panhypopituitarism or adrenal insufficiency risk: start corticosteroid therapy before levothyroxine.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "it is advisable to start corticosteroid therapy before giving levothyroxine to such patients"
+            }
+          ]
+        },
+        {
+          "t": "Over-treatment (low TSH) risks atrial fibrillation and fractures in older people: monitor TSH long term. Subclinical hyperthyroidism may cause bone loss; titrate to the lowest effective dose.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "To minimise the risk of adverse effects of undetected overtreatment, such as atrial fibrillation and fractures associated with low serum levels of thyroid stimulating hormone (TSH) in older patients, it is important to monitor serum TSH"
+            },
+            {
+              "s": "emc-435",
+              "q": "To minimise the risk of osteoporosis, dosage of levothyroxine sodium should be titrated to the lowest possible effective level."
+            }
+          ]
+        },
+        {
+          "t": "Diabetes: may increase insulin/antidiabetic (e.g. metformin) requirements; care needed. Also care in diabetes insipidus.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Thyroid replacement therapy may cause an increase in dosage requirements of insulin or other anti-diabetic therapy (such as metformin). Care is needed for patients with diabetes mellitus, and diabetes insipidus."
+            }
+          ]
+        },
+        {
+          "t": "Epilepsy: care required - seizures reported rarely on starting.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Care is required when levothyroxine is administered to patients with known history of epilepsy."
+            }
+          ]
+        },
+        {
+          "t": "Switching products: a small number of patients report symptoms; consider thyroid function tests.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "If patients report side effects on switching between products, consider thyroid function testing."
+            }
+          ]
+        },
+        {
+          "t": "Biotin can interfere with thyroid immunoassays (falsely high or low results); tell the laboratory.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Biotin may interfere with thyroid immunoassays that are based on a biotin/streptavidin interaction, leading to either falsely decreased or falsely increased test results."
+            }
+          ]
+        },
+        {
+          "t": "Tablets contain lactose (avoid in rare hereditary galactose intolerance, lactase deficiency, glucose-galactose malabsorption). Oral solution contains parahydroxybenzoates and glycerol.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Lactose 48.86mg per tablet"
+            },
+            {
+              "s": "emc-1217",
+              "q": "This product contains: Parahydroxybenzoates. These may cause allergic reactions (possibly delayed)."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Warfarin/anticoagulants: effect increased; anticoagulant dose may need reducing to avoid bleeding.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Levothyroxine increases the effect of anticoagulants (Warfarin) and it may be necessary to reduce the anticoagulation dosage if excessive, hypoprothrombinaemia and bleeding are to be avoided."
+            }
+          ]
+        },
+        {
+          "t": "Antidiabetic medicines (e.g. metformin): blood glucose rises; monitor for increased requirements.",
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "A possible interaction occurs with hypoglycaemic agents, hence diabetic patients should be monitored for increased requirements of insulin or oral hypoglycaemic agents."
+            }
+          ]
+        },
+        {
+          "t": "Antacids, calcium salts (e.g. calcium carbonate), oral iron (e.g. ferrous sulphate), aluminium hydroxide, sucralfate, colestyramine: reduce absorption - separate doses (tablet SmPC: by 4 to 5 hours; oral solution SmPC: by several hours).",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Absorption of levothyroxine (thyroxine) possibly reduced by antacids, calcium salts, cimetidine, oral iron, sucralfate, colestipol, polystyrene sulphonate resin and cholestyramine (administration should be separated by 4-5 hours)."
+            },
+            {
+              "s": "emc-1217",
+              "q": "Cimetidine, aluminium hydroxide, calcium carbonate and ferrous sulphate also reduce absorption of levothyroxine from the G.I. tract. Dosages should be separated by an interval of several hours."
+            }
+          ]
+        },
+        {
+          "t": "Proton pump inhibitors: may reduce absorption - monitor thyroid function during co-treatment and when the PPI stops; dose may need increasing.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Regular monitoring of thyroid function and clinical monitoring is recommended during concomitant treatment. It may be necessary to increase the dose of thyroid hormones. Care should also be taken when treatment with PPI ends."
+            }
+          ]
+        },
+        {
+          "t": "St John's wort, rifampicin, barbiturates, primidone, carbamazepine, phenytoin: increase levothyroxine metabolism - dose may need increasing.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Metabolism of levothyroxine (thyroxine) is accelerated by rifampicin, barbituarates, products containing St John's Wort (Hypericum perforatum L.) and primidone."
+            }
+          ]
+        },
+        {
+          "t": "Sertraline: may reduce the effect of levothyroxine.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Effects of Levothyroxine may be decreased by concomitant sertraline."
+            }
+          ]
+        },
+        {
+          "t": "Orlistat: may reduce absorption (monitor thyroid function). Ritonavir: monitor TSH for at least the first month after starting/stopping. Oestrogens/oral contraceptives may increase requirements. Amiodarone, lithium, tyrosine kinase inhibitors and others can affect thyroid function.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Anti-obesity drugs such as orlistat may decrease levothyroxine absorption which may result in hypothyroidism (monitor for changes in thyroid function)."
+            },
+            {
+              "s": "emc-435",
+              "q": "Thyroid- stimulating hormone (TSH) should be monitored in patients treated with levothyroxine at least the first month after starting and /or ending ritonavir treatment."
+            },
+            {
+              "s": "emc-435",
+              "q": "Oestrogen, oestrogen containing product (including hormone replacement therapy) and oral contraceptives may increase the requirement of thyroid therapy dosage."
+            }
+          ]
+        },
+        {
+          "t": "Tricyclic antidepressants, sympathomimetics: effects enhanced (arrhythmia risk). Digoxin dose may need adjusting. Aspirin/NSAIDs can give falsely low plasma thyroid hormone concentrations.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "concomitant use may precipitate cardiac arrhythmias"
+            },
+            {
+              "s": "emc-435",
+              "q": "If levothyroxine therapy is initiated in digitalised patients, the dose of digitalis may require adjustment."
+            },
+            {
+              "s": "emc-435",
+              "q": "False low plasma concentrations have been observed with concurrent anti-inflammatory treatment such as phenylbutazone or acetylsalicylic acid and levothyroxine therapy."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "status": "not-stated",
+      "note": "No renal impairment dose advice in the tablet or oral solution SmPCs accessed."
+    },
+    "hepatic": {
+      "status": "not-stated",
+      "note": "No hepatic impairment dose advice in the tablet or oral solution SmPCs accessed."
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Tablet SmPC: safety in pregnancy not known; weigh any possible risk against the risk to the fetus of untreated hypothyroidism.",
+          "formulations": [
+            "levothyroxine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "The safety of Levothyroxine treatment during pregnancy is not known, but any possible risk of foetal abnormalities should be weighed against the risk to the foetus of untreated hypothyroidism."
+            }
+          ]
+        },
+        {
+          "t": "Oral solution SmPC: continue treatment consistently in pregnancy; monitor closely - dose requirements may increase. No evidence of teratogenicity at therapeutic doses; avoid excessive doses.",
+          "formulations": [
+            "levothyroxine-oral-soln"
+          ],
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "Women on a maintenance dose for hypothyroidism who become pregnant, must be monitored closely."
+            },
+            {
+              "s": "emc-1217",
+              "q": "Treatment with levothyroxine should be given consistently during pregnancy and breast-feeding in particular. Dosage requirements may even increase during pregnancy."
+            }
+          ]
+        },
+        {
+          "t": "Levothyroxine with anti-thyroid drugs for hyperthyroidism is not indicated in pregnancy (anti-thyroid drugs cross the placenta).",
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "Such combination would require higher doses of anti-thyroid agents, which are known to pass the placenta and to induce hypothyroidism in the infant."
+            }
+          ]
+        },
+        {
+          "t": "SPS: consider referring pregnant or post-partum patients with hypothyroidism.",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-levothyroxine-monitoring",
+              "q": "Consider referring patients with hypothyroidism who"
+            },
+            {
+              "s": "sps-levothyroxine-monitoring",
+              "q": "are pregnant or post-partum"
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Oral solution SmPC: passes into milk but not enough to cause hyperthyroidism or TSH suppression in the infant; can be used during breastfeeding.",
+          "formulations": [
+            "levothyroxine-oral-soln"
+          ],
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "Levothyroxine can be used during breast-feeding."
+            }
+          ]
+        },
+        {
+          "t": "Tablet SmPC: excreted in milk in low concentrations; it is debated whether this can interfere with neonatal screening.",
+          "formulations": [
+            "levothyroxine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Levothyroxine is excreted in breast milk in low concentrations, and it is contentious whether this can interfere with neonatal screening."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Fertility: no data. Oestrogen-containing contraceptives/HRT may increase levothyroxine requirements.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Fertility No data available"
+            },
+            {
+              "s": "emc-435",
+              "q": "Oestrogen, oestrogen containing product (including hormone replacement therapy) and oral contraceptives may increase the requirement of thyroid therapy dosage."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Frequency not known. Side effects usually mean the dose is too high (hyperthyroid symptoms): palpitations, tachycardia, arrhythmia, angina, tremor, restlessness, insomnia, diarrhoea, vomiting, sweating, flushing, weight loss, headache, irregular periods. They usually settle on dose reduction.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Side-effects are usually indicative of excessive dosage and usually disappear on reduction of dosage or withdrawal of treatment for a few days."
+            },
+            {
+              "s": "emc-435",
+              "q": "Cardiac disorders Angina pectoris, arrhythmia, palpitations, tachycardia"
+            }
+          ]
+        },
+        {
+          "t": "Children: transient hair loss in the first months is common and usually regrows.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "partial loss of hair may occur during the first few months of therapy, but this effect is usually transient"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Thyrotoxic crisis (high fever, tachycardia, arrhythmia, hypotension, heart failure, jaundice, confusion, seizures, coma): urgent medical care.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "This is called a \"thyroid crisis\" with any of the following symptoms: Hyperpyrexia, tachycardia, arrhythmia, hypotension, cardiac failure, jaundice, confusion, seizure and coma"
+            }
+          ]
+        },
+        {
+          "t": "Angina or worsening ischaemia (latent cardiac ischaemia) if the dose rises too fast: reduce or withhold, then restart lower.",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "dosage must be reduced, or withheld, for a day or two, and then re-started at a lower dose level"
+            }
+          ]
+        },
+        {
+          "t": "Children: benign intracranial hypertension, craniostenosis in infants, premature closure of epiphyses.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Heat intolerance, transient hair loss, benign intracranial hypertension, craniostenosis in infants and premature closure of epiphysis in children."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before starting: TSH, free T4 (thyroid function tests) and ECG (SPS); ECG especially if cardiovascular disease is suspected (SmPC).",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "sps-levothyroxine-monitoring",
+              "q": "Before starting Required Baseline ECG Free T4 Thyroid function tests Thyroid stimulating hormone"
+            },
+            {
+              "s": "emc-435",
+              "q": "A pre-therapy ECG is valuable because ECG changes due to hypothyroidism may be confused with ECG evidence of cardiac ischaemia."
+            }
+          ]
+        },
+        {
+          "t": "After starting or a dose change: TSH from 6 weeks, repeated every 3 months (free T4 if symptoms continue). Adjust dose about every 4 weeks by 25 to 50 micrograms (25 micrograms in higher-risk patients: over 65, cardiac disease, severe hypothyroidism, thyroid cancer, adrenal insufficiency, pregnancy).",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "sps-levothyroxine-monitoring",
+              "q": "From 6 weeks; repeated every 3 months Thyroid stimulating hormone"
+            },
+            {
+              "s": "sps-levothyroxine-monitoring",
+              "q": "For patients without risk factors, adjust doses every 4 weeks in increments of 25-50 micrograms according to response."
+            },
+            {
+              "s": "sps-levothyroxine-monitoring",
+              "q": "For these patients adjust doses cautiously, for example, every 4 weeks in increments of 25 micrograms according to response."
+            }
+          ]
+        },
+        {
+          "t": "Once stable (2 similar in-range results 3 months apart): TSH annually.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "sps-levothyroxine-monitoring",
+              "q": "Patients who record 2 similar measurements within the reference range 3 months apart should be considered for ongoing once stable monitoring."
+            },
+            {
+              "s": "sps-levothyroxine-monitoring",
+              "q": "Ongoing once stable Required Annually Thyroid stimulating hormone"
+            }
+          ]
+        },
+        {
+          "t": "Thyroid function during and after interacting medicines (PPIs: during co-treatment and when the PPI stops; orlistat; ritonavir: TSH for at least the first month after starting or stopping) and after switching products if symptomatic.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "Regular monitoring of thyroid function and clinical monitoring is recommended during concomitant treatment. It may be necessary to increase the dose of thyroid hormones. Care should also be taken when treatment with PPI ends."
+            },
+            {
+              "s": "emc-435",
+              "q": "Anti-obesity drugs such as orlistat may decrease levothyroxine absorption which may result in hypothyroidism (monitor for changes in thyroid function)."
+            },
+            {
+              "s": "emc-435",
+              "q": "Thyroid- stimulating hormone (TSH) should be monitored in patients treated with levothyroxine at least the first month after starting and /or ending ritonavir treatment."
+            },
+            {
+              "s": "mhra-dsu-levothyroxine-switching",
+              "q": "if a patient reports symptoms after changing their levothyroxine product, consider testing thyroid function"
+            }
+          ]
+        },
+        {
+          "t": "If signs of too-rapid increase in metabolism: reduce or withhold for 1 to 2 days, restart lower.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "reduce the dose or withhold for 1-2 days and start again at a lower dose"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Take once daily on an empty stomach, usually before breakfast.",
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "Levothyroxine is best taken as a single dose on an empty stomach, usually before breakfast."
+            },
+            {
+              "s": "emc-435",
+              "q": "preferably taken before breakfast or the first meal of the day"
+            }
+          ]
+        },
+        {
+          "t": "Separate from antacids, calcium, iron and similar products by several hours (tablet SmPC: 4 to 5 hours).",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "(administration should be separated by 4-5 hours)"
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Usually lifelong treatment for hypothyroidism. Do not use for weight loss.",
+          "src": [
+            {
+              "s": "emc-1217",
+              "q": "Duration of treatment is usually for life in the case of hypothyroidism"
+            },
+            {
+              "s": "emc-1217",
+              "q": "Thyroid hormones are not suitable for weight reduction."
+            }
+          ]
+        },
+        {
+          "t": "Report palpitations, chest pain, tremor, sleeplessness or diarrhoea (dose may be too high).",
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "causing diarrhoea, nervousness, rapid pulse, insomnia, tremors, and sometimes anginal pain where there is latent cardiac ischaemia"
+            }
+          ]
+        },
+        {
+          "t": "Report symptoms after a change of product to your prescriber.",
+          "src": [
+            {
+              "s": "mhra-dsu-levothyroxine-switching",
+              "q": "report suspected adverse reactions to levothyroxine medicines, including symptoms after switching products, to the Yellow Card scheme"
+            }
+          ]
+        },
+        {
+          "t": "Tell the laboratory if you take biotin supplements before thyroid blood tests.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-435",
+              "q": "For patients taking biotin-containing products, laboratory personnel should be informed when a thyroid function test is requested."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "levothyroxine:allergy:levothyroxine",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "levothyroxine",
+      "allergen": [
+        "levothyroxine"
+      ],
+      "concern": "Hypersensitivity to levothyroxine",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:thyrotoxicosis:tab",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "levothyroxine",
+      "formulations": [
+        "levothyroxine-tab"
+      ],
+      "condition": "thyrotoxicosis",
+      "concern": "Thyrotoxicosis",
+      "consequence": "Worsening hyperthyroidism.",
+      "action": "Do not use (tablet SmPC).",
+      "sourceWording": "Contraindications ... Thyrotoxicosis",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Thyrotoxicosis Adrenal gland disorder or adrenal insufficiency"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:thyrotoxicosis:soln",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "levothyroxine",
+      "formulations": [
+        "levothyroxine-oral-soln"
+      ],
+      "condition": "thyrotoxicosis",
+      "concern": "Hyperthyroid state",
+      "consequence": "Worsening hyperthyroidism.",
+      "action": "Should not be given, except as supplementation during anti-thyroid drug treatment (oral solution SmPC).",
+      "sourceWording": "should not be given in hyperthyreotic states",
+      "src": [
+        {
+          "s": "emc-1217",
+          "q": "Levothyroxine should not be given in hyperthyreotic states other than as concomitant supplementation during anti-thyroid drug treatment of hyperthyroidism."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:adrenal:tab",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "levothyroxine",
+      "formulations": [
+        "levothyroxine-tab"
+      ],
+      "condition": "adrenal-insufficiency",
+      "concern": "Adrenal gland disorder or adrenal insufficiency",
+      "consequence": "May react unfavourably; risk of adrenal crisis.",
+      "action": "Contraindicated (tablet SmPC); start corticosteroid before levothyroxine where adrenal insufficiency is possible.",
+      "sourceWording": "Contraindications ... adrenal insufficiency",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Thyrotoxicosis Adrenal gland disorder or adrenal insufficiency"
+        },
+        {
+          "s": "emc-435",
+          "q": "it is advisable to start corticosteroid therapy before giving levothyroxine to such patients"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:adrenal:soln",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "levothyroxine",
+      "formulations": [
+        "levothyroxine-oral-soln"
+      ],
+      "condition": "adrenal-insufficiency",
+      "concern": "Adrenal insufficiency without adequate corticosteroid cover",
+      "consequence": "May react unfavourably to levothyroxine.",
+      "action": "Contraindicated without adequate corticosteroid cover; start corticosteroid first.",
+      "sourceWording": "Contraindications ... without adequate corticosteroid cover",
+      "src": [
+        {
+          "s": "emc-1217",
+          "q": "In patients with adrenal insufficiency without adequate corticosteroid cover."
+        },
+        {
+          "s": "emc-1217",
+          "q": "Patients with adrenal insufficiency may react unfavourably to levothyroxine treatment so it is advisable to initiate corticosteroid therapy before giving levothyroxine."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:recent-mi",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "levothyroxine",
+      "condition": "recent-myocardial-infarction",
+      "concern": "Acute myocardial infarction",
+      "consequence": "Increased metabolic demand; worsening ischaemia.",
+      "action": "Must not be initiated (both SmPCs).",
+      "sourceWording": "must not be initiated",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Treatment with Eltroxin must not be initiated in acute myocardial infarction, acute myocarditis, and acute pancarditis."
+        },
+        {
+          "s": "emc-1217",
+          "q": "Treatment with Levothyroxine Oral Solution must not be initiated in acute myocardial infarction, acute myocarditis, and acute pancarditis."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:myocarditis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "levothyroxine",
+      "condition": "acute-myocarditis-pancarditis",
+      "concern": "Acute myocarditis or pancarditis",
+      "consequence": "Cardiac risk.",
+      "action": "Must not be initiated (both SmPCs).",
+      "sourceWording": "must not be initiated",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Treatment with Eltroxin must not be initiated in acute myocardial infarction, acute myocarditis, and acute pancarditis."
+        },
+        {
+          "s": "emc-1217",
+          "q": "Treatment with Levothyroxine Oral Solution must not be initiated in acute myocardial infarction, acute myocarditis, and acute pancarditis."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:ihd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levothyroxine",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Angina / coronary artery disease",
+      "consequence": "Worsening ischaemia or infarction if dose rises too fast.",
+      "action": "Use with caution: ECG before starting, low starting dose, cautious increases.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Levothyroxine sodium should be used with caution in patients with cardiovascular disorders, including angina, coronary artery disease, hypertension, and in the elderly"
+        },
+        {
+          "s": "emc-435",
+          "q": "levothyroxine should be initiated at a low dose, followed by cautious dose escalation to avoid worsening of ischaemia or precipitation of an infarct"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levothyroxine",
+      "condition": "heart-failure",
+      "concern": "Cardiac insufficiency / myocardial insufficiency",
+      "consequence": "Even slight drug-induced hyperthyroidism must be avoided.",
+      "action": "Special care; frequent checks of thyroid hormone levels.",
+      "sourceWording": "Special care is needed",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Special care is needed for the elderly and for patients with symptoms of myocardial insufficiency"
+        },
+        {
+          "s": "emc-1217",
+          "q": "Even slight drug-induced hyperthyroidism must be avoided in patients with coronary failure, cardiac insufficiency or tachycardiac arrhythmias. Hence frequent checks of thyroid hormone parameters must be made in these cases."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:hypertension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levothyroxine",
+      "condition": "hypertension",
+      "concern": "Hypertension",
+      "consequence": "Cardiovascular strain.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Levothyroxine sodium should be used with caution in patients with cardiovascular disorders, including angina, coronary artery disease, hypertension"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levothyroxine",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus",
+      "consequence": "Insulin or antidiabetic (e.g. metformin) requirements may increase.",
+      "action": "Care needed; monitor glucose control.",
+      "sourceWording": "Care is needed",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Thyroid replacement therapy may cause an increase in dosage requirements of insulin or other anti-diabetic therapy (such as metformin). Care is needed for patients with diabetes mellitus, and diabetes insipidus."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:condition:epilepsy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levothyroxine",
+      "condition": "epilepsy",
+      "concern": "History of epilepsy",
+      "consequence": "Seizures reported rarely on starting.",
+      "action": "Care required.",
+      "sourceWording": "Care is required",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Care is required when levothyroxine is administered to patients with known history of epilepsy."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:age:lt5:tab",
+      "kind": "age",
+      "level": "avoid",
+      "med": "levothyroxine",
+      "formulations": [
+        "levothyroxine-tab"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 5
+      },
+      "concern": "Child under 5 years (tablets)",
+      "consequence": "Whole tablets not recommended; crushing/dispersing tablets can give an inaccurate dose (limited solubility).",
+      "action": "Tablets not recommended at this age; an approved oral solution is preferable (tablet SmPC).",
+      "sourceWording": "the administration of whole tablets is not recommended",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "In children under 5 years of age, the administration of whole tablets is not recommended."
+        },
+        {
+          "s": "emc-435",
+          "q": "In this age group it is preferable to administer an approved oral solution of levothyroxine."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:pregnancy:monitor",
+      "kind": "pregnancy",
+      "level": "monitor",
+      "med": "levothyroxine",
+      "concern": "Pregnancy",
+      "consequence": "Dose requirements may increase.",
+      "action": "Continue treatment; monitor closely (oral solution SmPC). Tablet SmPC: weigh any risk against risk of untreated hypothyroidism.",
+      "sourceWording": "must be monitored closely",
+      "src": [
+        {
+          "s": "emc-1217",
+          "q": "Women on a maintenance dose for hypothyroidism who become pregnant, must be monitored closely."
+        },
+        {
+          "s": "emc-435",
+          "q": "any possible risk of foetal abnormalities should be weighed against the risk to the foetus of untreated hypothyroidism"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:warfarin",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "levothyroxine",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Levothyroxine + warfarin",
+      "consequence": "Anticoagulant effect increased; bleeding risk.",
+      "action": "Warfarin dose may need reducing; monitor anticoagulation.",
+      "sourceWording": "it may be necessary to reduce the anticoagulation dosage",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Levothyroxine increases the effect of anticoagulants (Warfarin) and it may be necessary to reduce the anticoagulation dosage if excessive, hypoprothrombinaemia and bleeding are to be avoided."
+        },
+        {
+          "s": "emc-1217",
+          "q": "The effects of warfarin, dicoumarol, acenocoumarol, phenindione and probably other anticoagulants are increased by the concurrent use of thyroid compounds."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:metformin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "levothyroxine",
+      "other": "metformin",
+      "concern": "Levothyroxine + metformin (antidiabetic)",
+      "consequence": "Blood glucose raised; antidiabetic requirements may increase.",
+      "action": "Monitor for increased antidiabetic requirements; adjust dose if needed.",
+      "sourceWording": "should be monitored for increased requirements",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Thyroid replacement therapy may cause an increase in dosage requirements of insulin or other anti-diabetic therapy (such as metformin)."
+        },
+        {
+          "s": "emc-1217",
+          "q": "diabetic patients should be monitored for increased requirements of insulin or oral hypoglycaemic agents"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:calcium-carbonate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "levothyroxine",
+      "other": "calcium-carbonate",
+      "effect": "reduced-absorption",
+      "concern": "Levothyroxine + calcium carbonate / calcium salts",
+      "consequence": "Reduced levothyroxine absorption.",
+      "action": "Separate doses by 4 to 5 hours (tablet SmPC) / several hours (oral solution SmPC).",
+      "sourceWording": "administration should be separated by 4-5 hours",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Absorption of levothyroxine (thyroxine) possibly reduced by antacids, calcium salts, cimetidine, oral iron"
+        },
+        {
+          "s": "emc-1217",
+          "q": "Cimetidine, aluminium hydroxide, calcium carbonate and ferrous sulphate also reduce absorption of levothyroxine from the G.I. tract. Dosages should be separated by an interval of several hours."
+        },
+        {
+          "s": "emc-435",
+          "q": "(administration should be separated by 4-5 hours)"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:ferrous-sulfate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "levothyroxine",
+      "other": "ferrous-sulfate",
+      "effect": "reduced-absorption",
+      "concern": "Levothyroxine + oral iron (ferrous sulphate)",
+      "consequence": "Reduced levothyroxine absorption.",
+      "action": "Separate doses by 4 to 5 hours (tablet SmPC) / several hours (oral solution SmPC).",
+      "sourceWording": "administration should be separated by 4-5 hours",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Absorption of levothyroxine (thyroxine) possibly reduced by antacids, calcium salts, cimetidine, oral iron"
+        },
+        {
+          "s": "emc-1217",
+          "q": "Cimetidine, aluminium hydroxide, calcium carbonate and ferrous sulphate also reduce absorption of levothyroxine from the G.I. tract. Dosages should be separated by an interval of several hours."
+        },
+        {
+          "s": "emc-435",
+          "q": "(administration should be separated by 4-5 hours)"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:antacid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "levothyroxine",
+      "other": "group:antacid",
+      "effect": "reduced-absorption",
+      "concern": "Levothyroxine + antacids (e.g. aluminium hydroxide)",
+      "consequence": "Reduced levothyroxine absorption.",
+      "action": "Separate doses by 4 to 5 hours (tablet SmPC) / several hours (oral solution SmPC).",
+      "sourceWording": "administration should be separated by 4-5 hours",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Absorption of levothyroxine (thyroxine) possibly reduced by antacids, calcium salts, cimetidine, oral iron"
+        },
+        {
+          "s": "emc-435",
+          "q": "(administration should be separated by 4-5 hours)"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:ppi",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "levothyroxine",
+      "other": "group:ppi",
+      "effect": "reduced-absorption",
+      "concern": "Levothyroxine + proton pump inhibitor",
+      "consequence": "Reduced absorption due to raised gastric pH.",
+      "action": "Monitor thyroid function and clinical state during co-treatment and when the PPI stops; dose may need increasing.",
+      "sourceWording": "Regular monitoring of thyroid function and clinical monitoring is recommended",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Co-administration with PPIs may cause a decrease in the absorption of the thyroid hormones, due to the increase of the intragastric pH caused by PPIs."
+        },
+        {
+          "s": "emc-435",
+          "q": "Regular monitoring of thyroid function and clinical monitoring is recommended during concomitant treatment. It may be necessary to increase the dose of thyroid hormones. Care should also be taken when treatment with PPI ends."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:st-johns-wort",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "levothyroxine",
+      "other": "st-johns-wort",
+      "concern": "Levothyroxine + St John's wort",
+      "consequence": "Faster levothyroxine metabolism; lower thyroid hormone levels.",
+      "action": "Levothyroxine dose may need increasing. (St John's wort THR SPC: should not be taken together.)",
+      "sourceWording": "may require an increase in their dose",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Metabolism of levothyroxine (thyroxine) is accelerated by rifampicin, barbituarates, products containing St John's Wort (Hypericum perforatum L.) and primidone."
+        },
+        {
+          "s": "emc-435",
+          "q": "patients on thyroid replacement therapy may require an increase in their dose of thyroid hormone if these products are given concurrently"
+        },
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below"
+        },
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Thyroid hormones Thyroxine Reduced blood levels with risk of therapeutic failure."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:sertraline",
+      "kind": "interaction",
+      "level": "info",
+      "med": "levothyroxine",
+      "other": "sertraline",
+      "concern": "Levothyroxine + sertraline",
+      "consequence": "Effect of levothyroxine may be reduced.",
+      "action": "No specific action stated in the SmPC; be aware when starting or stopping sertraline.",
+      "sourceWording": "may be decreased by concomitant sertraline",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Effects of Levothyroxine may be decreased by concomitant sertraline."
+        },
+        {
+          "s": "emc-1217",
+          "q": "Effects of levothyroxine may be decreased by concomitant sertraline."
+        }
+      ]
+    }
+  ]
+}

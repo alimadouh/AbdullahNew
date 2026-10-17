@@ -1,0 +1,1266 @@
+{
+  "id": "tramadol",
+  "name": "Tramadol hydrochloride",
+  "ingredients": ["tramadol"],
+  "className": "Centrally acting opioid analgesic",
+  "groups": ["opioid", "serotonergic"],
+  "searchTerms": ["tramadol"],
+  "formulations": [
+    {
+      "id": "tramadol-cap",
+      "label": "Capsules (immediate release)",
+      "route": "oral",
+      "strengths": "50 mg",
+      "release": "immediate",
+      "src": [{"s": "emc-7123", "q": "Each hard capsule contains 50 mg tramadol hydrochloride."}],
+      "sourceIds": ["emc-7123"]
+    },
+    {
+      "id": "tramadol-mr-tab",
+      "label": "Prolonged-release tablets",
+      "route": "oral",
+      "strengths": "100 mg (also 150 mg, 200 mg in the same range)",
+      "release": "modified",
+      "note": "Twice-daily dosing at least 8 hours apart; swallow whole. Dosing differs from immediate-release capsules.",
+      "src": [
+        { "s": "emc-2948", "q": "Each prolonged-release tablet contains 100 mg tramadol hydrochloride" },
+        { "s": "emc-2948", "q": "The dose interval must not be less than 8 hours." }
+      ],
+      "sourceIds": ["emc-2948"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Moderate to severe pain.",
+          "src": [{"s": "emc-7123", "q": "Treatment of moderate to severe pain."}]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA (2025): prolonged-release opioids should not be used for acute pain after surgery; use immediate-release opioids for short-term post-operative pain.",
+          "formulations": ["tramadol-mr-tab"],
+          "src": [
+            {
+              "s": "mhra-dsu-pr-opioids-postop-2025",
+              "q": "prolonged-release opioids provide relief from chronic severe pain, however, they should not be used for the treatment of acute pain following surgery"
+            }
+          ]
+        },
+        {
+          "t": "Not for use in narcotic withdrawal treatment; not a substitute in opioid-dependent patients.",
+          "src": [
+            { "s": "emc-7123", "q": "for use in narcotic withdrawal treatment" },
+            { "s": "emc-7123", "q": "Tramadol is not suitable as a substitute in opioid-dependent patients." }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Acute pain (adults and 12 years and over): initial 100 mg, then 50 or 100 mg every 4-6 hours; match duration to clinical need. Maximum 400 mg/day except in special circumstances.",
+          "tag": "Acute pain",
+          "formulations": ["tramadol-cap"],
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Acute pain: An initial dose of 100 mg is usually necessary. This can be followed by doses of 50 or 100 mg 4-6 hourly intervals"
+            },
+            {
+              "s": "emc-7123",
+              "q": "The total daily dose of 400 mg active substance should not be exceeded, except in special circumstances."
+            }
+          ]
+        },
+        {
+          "t": "Pain with chronic conditions: start 50 mg, then titrate to pain severity; reassess need regularly (dependence and withdrawal reported). Maximum 400 mg/day.",
+          "tag": "Chronic pain",
+          "formulations": ["tramadol-cap"],
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Pain associated with chronic conditions: An initial dose of 50 mg is advised and then titration according to pain severity."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release (adults and over 12 years): usually 100 mg twice daily (morning and evening); increase to 150 mg or 200 mg twice daily if needed. Interval at least 8 hours. Maximum 400 mg/day except in special clinical circumstances.",
+          "tag": "Prolonged-release",
+          "formulations": ["tramadol-mr-tab"],
+          "src": [
+            {
+              "s": "emc-2948",
+              "q": "The starting dose is usually 100 mg tramadol hydrochloride as prolonged-release tablet twice daily, in the morning and in the evening. If the pain relief is not sufficient, the dose may be increased to 150 mg twice daily or 200 mg twice daily."
+            },
+            {
+              "s": "emc-2948",
+              "q": "A total daily dose of 400 mg of tramadol hydrochloride should not be exceeded except in special clinical circumstances."
+            },
+            { "s": "emc-2948", "q": "The dose interval must not be less than 8 hours." }
+          ]
+        },
+        {
+          "t": "Elderly: no adjustment usually needed up to 75 years without hepatic or renal insufficiency; over 75 years extend the dosing interval if necessary.",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "A dose adjustment is not usually necessary in patients up to 75 years without clinically manifest hepatic or renal insufficiency."
+            },
+            {
+              "s": "emc-7123",
+              "q": "Therefore, if necessary the dosage interval is to be extended according to the patient's requirements."
+            }
+          ]
+        },
+        {
+          "t": "Use the lowest effective dose; never longer than absolutely necessary. Agree goals and an end-of-treatment plan; taper gradually when stopping.",
+          "tag": "Duration",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Tramadol should under no circumstances be administered for longer than absolutely necessary."
+            },
+            {
+              "s": "emc-7123",
+              "q": "When a patient no longer requires therapy with tramadol, it may be advisable to taper the dose gradually to prevent symptoms of withdrawal."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Not suitable for children under 12 years (capsules and prolonged-release tablets).",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Tramadol capsules are not suitable for children below the age of 12 years."
+            },
+            {
+              "s": "emc-2948",
+              "q": "Tramadol prolonged-release tablets are not suitable for children under 12 years of age."
+            }
+          ]
+        },
+        {
+          "t": "Post-operative use after tonsillectomy/adenoidectomy for obstructive sleep apnoea: rare life-threatening events; extreme caution and close monitoring. Not recommended where respiratory function may be compromised.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Extreme caution should be exercised when tramadol is administered to children for post-operative pain relief"
+            },
+            {
+              "s": "emc-7123",
+              "q": "Tramadol is not recommended for use in children in whom respiratory function might be compromised"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity; acute intoxication with alcohol, hypnotics, analgesics, opioids or other psychotropic medicines; MAOI now or within 14 days; epilepsy not adequately controlled; narcotic withdrawal treatment.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "in acute intoxication with alcohol, hypnotics, analgesics, opioids, or other psychotropic medicinal products"
+            },
+            {
+              "s": "emc-7123",
+              "q": "in patients who are receiving MAO inhibitors or who have taken them within the last 14 days"
+            },
+            { "s": "emc-7123", "q": "in patients with epilepsy not adequately controlled by treatment" }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Particular caution: opioid dependence, head injury, shock, reduced consciousness of uncertain origin, respiratory centre or function disorders, raised intracranial pressure (MR SmPC also: renal and hepatic impairment).",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Tramadol may only be used with particular caution in opioid-dependent patients, patients with head injury, shock, a reduced level of consciousness of uncertain origin, disorders of the respiratory centre or function, increased intracranial pressure."
+            }
+          ]
+        },
+        {
+          "t": "Seizures reported at recommended doses; higher risk above 400 mg/day or with other seizure-threshold-lowering medicines. Epilepsy or seizure susceptibility: only if compelling circumstances.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Convulsions have been reported in patients receiving tramadol at the recommended dose levels."
+            },
+            {
+              "s": "emc-7123",
+              "q": "Patients with epilepsy or those susceptible to seizures should be only treated with tramadol if there are compelling circumstances."
+            }
+          ]
+        },
+        {
+          "t": "Serotonin syndrome (alone or with serotonergic medicines): observe carefully at start and dose increases; reduce or stop if suspected.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Serotonin syndrome, a potentially life-threatening condition, has been reported in patients receiving tramadol in combination with other serotonergic agents or tramadol alone"
+            },
+            {
+              "s": "emc-7123",
+              "q": "If serotonin syndrome is suspected, a dose reduction or discontinuation of therapy should be considered depending on the severity of the symptoms."
+            }
+          ]
+        },
+        {
+          "t": "Tolerance, dependence and opioid use disorder can develop even at therapeutic doses; higher risk with personal/family history of substance use disorder, tobacco use or mental health disorders. Monitor for drug-seeking behaviour.",
+          "src": [
+            { "s": "emc-7123", "q": "Repeated use of Tramadol can lead to opioid use disorder (OUD)." },
+            {
+              "s": "emc-7123",
+              "q": "Patients will require monitoring for signs of drug-seeking behaviour (e.g. too early requests for refills)."
+            }
+          ]
+        },
+        {
+          "t": "CYP2D6: poor metabolisers may get inadequate analgesia; ultra-rapid metabolisers risk opioid toxicity even at usual doses.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "If a patient has a deficiency or is completely lacking this enzyme an adequate analgesic effect may not be obtained."
+            },
+            {
+              "s": "emc-7123",
+              "q": "if the patient is an ultra-rapid metaboliser there is a risk of developing <side effects> of opioid toxicity even at commonly prescribed doses"
+            }
+          ]
+        },
+        {
+          "t": "Opioids may occasionally cause reversible adrenal insufficiency requiring monitoring and glucocorticoid replacement.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Opioid analgesics may occasionally cause reversible adrenal insufficiency requiring monitoring and glucocorticoid replacement therapy."
+            }
+          ]
+        },
+        {
+          "t": "Sleep-related breathing disorders (central sleep apnoea): consider reducing the opioid dose.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "In patients who present with CSA, consider decreasing the total opioid dosage."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "SSRIs, SNRIs, tricyclics, mirtazapine and MAOIs: serotonin syndrome risk. SSRIs, SNRIs, tricyclics, antipsychotics and other seizure-threshold-lowering drugs: convulsion risk.",
+          "src": [
+            {
+              "s": "emc-2948",
+              "q": "Concomitant therapeutic use of tramadol and serotonergic medicinal products, such as selective serotonin reuptake inhibitors (SSRIs), serotonin-norepinephrine reuptake inhibitors (SNRIs), MAO inhibitors (see section 4.3), tricyclic antidepressants and mirtazapine may cause serotonin syndrome"
+            },
+            {
+              "s": "emc-7123",
+              "q": "Tramadol can induce convulsions and increase the potential for selective serotonin re-uptake inhibitors (SSRIs)"
+            }
+          ]
+        },
+        {
+          "t": "Warfarin and other coumarins: increased INR with major bleeding and bruising reported. Use caution; MHRA advises considering extra INR monitoring when starting tramadol and warning patients about bleeding signs.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Caution should be exercised during concomitant treatment with tramadol and coumarin derivatives (e.g. warfarin) due to reports of increased INR with major bleeding and ecchymoses in some patients."
+            },
+            {
+              "s": "mhra-dsu-warfarin-tramadol-2024",
+              "q": "consider whether additional monitoring of INR is required when starting tramadol or another concomitant medicine"
+            }
+          ]
+        },
+        {
+          "t": "Benzodiazepines, other opioids, other CNS depressants and alcohol: sedation, respiratory depression, coma and death; lowest dose, shortest duration if combined.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "if a decision is made to prescribe tramadol concomitantly with respiratory or CNS depressants, the lowest effective dose of tramadol should be used, and the duration of the concomitant treatment should be as short as possible"
+            }
+          ]
+        },
+        {
+          "t": "CYP3A4 inhibitors (e.g. ketoconazole, ritonavir, erythromycin) might inhibit tramadol metabolism; clinical importance not studied.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Other medicinal products known to inhibit CYP3A4, such as ketoconazole, ritonavir and erythromycin, might inhibit the metabolism of tramadol"
+            },
+            { "s": "emc-7123", "q": "The clinical importance of such an interaction has not been studied" }
+          ]
+        },
+        {
+          "t": "Carbamazepine may reduce the analgesic effect; ondansetron may increase tramadol requirement; gabapentin/pregabalin increase respiratory depression risk.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Simultaneous or previous administration of carbamazepine (enzyme inducer) may reduce the analgesic effect and shorten the duration of action."
+            },
+            {
+              "s": "emc-7123",
+              "q": "The concomitant use of Tramadol with gabapentinoids (gabapentin and pregabalin) may result in respiratory depression, hypotension, profound sedation, coma or death."
+            }
+          ]
+        },
+        {
+          "t": "St John's wort (THR SPC): reduced tramadol blood levels with risk of therapeutic failure; do not take together.",
+          "src": [
+            {
+              "s": "mhra-thr-13668-0014",
+              "q": "Analgesics Tramadol Reduced blood levels with risk Do not take with this product."
+            }
+          ]
+        },
+        {
+          "t": "Ciprofloxacin (ciprofloxacin SmPC): avoid combining with tramadol, which lowers the seizure threshold (risk of seizures, including status epilepticus).",
+          "src": [
+            {
+              "s": "emc-885",
+              "q": "concomitant treatment of ciprofloxacin with drugs known to trigger seizures or lower the seizure threshold, such as but not limited to tramadol, selective serotonin reuptake inhibitors, should be avoided"
+            }
+          ]
+        },
+        {
+          "t": "Clopidogrel (clopidogrel SmPC): opioid agonists may delay and reduce clopidogrel absorption (clinical relevance unknown); in acute coronary syndrome consider a parenteral antiplatelet agent.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "co-administration of opioid agonists has the potential to delay and reduce the absorption of clopidogrel presumably because of slowed gastric emptying. The clinical relevance is unknown."
+            },
+            {
+              "s": "emc-5935",
+              "q": "Consider the use of a parenteral antiplatelet agent in acute coronary syndrome patients requiring co-administration of morphine or other opioid agonists."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Renal insufficiency or dialysis: elimination delayed; carefully consider prolonging the dosing interval (no numeric threshold stated).",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "In patients with renal and/or hepatic insufficiency the elimination of tramadol is delayed. In these patients prolongation of the dosage intervals should be carefully considered according to the patient's requirements."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release tablets: not recommended in severe renal insufficiency.",
+          "formulations": ["tramadol-mr-tab"],
+          "src": [
+            {
+              "s": "emc-2948",
+              "q": "In cases of severe renal and/or severe hepatic insufficiency tramadol hydrochloride prolonged-release tablets are not recommended."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Hepatic insufficiency: elimination delayed; carefully consider prolonging the dosing interval.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "In patients with renal and/or hepatic insufficiency the elimination of tramadol is delayed."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release tablets: not recommended in severe hepatic insufficiency.",
+          "formulations": ["tramadol-mr-tab"],
+          "src": [
+            {
+              "s": "emc-2948",
+              "q": "In cases of severe renal and/or severe hepatic insufficiency tramadol hydrochloride prolonged-release tablets are not recommended."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPCs: inadequate human safety evidence, so tramadol should not be used in pregnant women. Regular use may cause neonatal withdrawal; use in labour may depress neonatal breathing.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "There is inadequate evidence available on the safety of tramadol in human pregnancy. Therefore tramadol should not be used in pregnant women."
+            },
+            { "s": "emc-7123", "q": "Administration during labour may depress respiration in the neonate" }
+          ]
+        },
+        {
+          "t": "BUMPS (differs from SmPC): take only if recommended by a doctor; studies overall do not show miscarriage or birth defects; use near delivery can cause neonatal withdrawal.",
+          "src": [
+            {
+              "s": "bumps-tramadol",
+              "q": "Tramadol should only be taken during pregnancy if recommended by your doctor."
+            },
+            {
+              "s": "bumps-tramadol",
+              "q": "Studies of pregnant women using tramadol do not, overall, show that it causes miscarriage or birth defects in the baby."
+            }
+          ]
+        },
+        {
+          "t": "SPS: reserve tramadol in pregnancy for when other analgesics have been ineffective.",
+          "src": [
+            {
+              "s": "sps-pain-pregnancy",
+              "q": "Reserve tramadol use in pregnancy where other alternative analgesics have been ineffective."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Capsule SmPC: not recommended (may cause infant respiratory depression).",
+          "formulations": ["tramadol-cap"],
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Administration to nursing women is not recommended as tramadol may be secreted in breast milk and may cause respiratory depression in the infant."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release SmPC: should not be used during lactation, or stop breastfeeding during treatment; a single dose usually does not require stopping breastfeeding.",
+          "formulations": ["tramadol-mr-tab"],
+          "src": [
+            {
+              "s": "emc-2948",
+              "q": "For this reason tramadol should not be used during lactation or alternatively, breast-feeding should be discontinued during treatment with tramadol."
+            },
+            {
+              "s": "emc-2948",
+              "q": "Discontinuation of breast-feeding is generally not necessary following a single dose of tramadol."
+            }
+          ]
+        },
+        {
+          "t": "SPS (differs from SmPCs): can be used short term with caution at the lowest effective dose; monitor the infant (sedation, breathing difficulties, feeding, weight gain); extra caution under 2 months; regular use beyond 3 days under close supervision.",
+          "src": [
+            {
+              "s": "sps-bf-weak-opioids",
+              "q": "Tramadol (both oral and intravenous) can be used short-term during breastfeeding with caution and infant monitoring."
+            },
+            {
+              "s": "sps-bf-weak-opioids",
+              "q": "Regular use of any opioid in a breastfeeding mother beyond 3 days should be under close medical supervision."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Post-marketing surveillance does not suggest an effect on fertility.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Post marketing surveillance does not suggest an effect of tramadol on fertility."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common: nausea, dizziness. Common: headache, somnolence, vomiting, constipation, dry mouth, sweating (hyperhidrosis), fatigue.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "The most commonly reported adverse reactions are nausea and dizziness, both occurring in more than 10% of patients."
+            },
+            { "s": "emc-7123", "q": "Common: vomiting, constipation, dry mouth" },
+            { "s": "emc-7123", "q": "Common: headache, somnolence" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Respiratory depression (rare), especially if doses are considerably exceeded or with other CNS depressants.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Rare: respiratory depression, dyspnoea If the recommended doses are considerably exceeded and other centrally depressant substances are administered concomitantly (see section 4.5), respiratory depression may occur."
+            }
+          ]
+        },
+        {
+          "t": "Convulsions (rare), mainly at high doses or with seizure-threshold-lowering drugs.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Epileptiform convulsions occurred mainly after administration of high doses of tramadol or after concomitant treatment with medicinal products which can lower the seizure threshold"
+            }
+          ]
+        },
+        {
+          "t": "Serotonin syndrome (frequency not known): reduce dose or stop.",
+          "src": [{"s": "emc-7123", "q": "Frequency not known: serotonin syndrome"}]
+        },
+        {
+          "t": "Anaphylaxis and allergic reactions (rare); hypoglycaemia (not known); dependence and withdrawal syndrome.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Rare: allergic reactions (e.g. dyspnoea, bronchospasm, wheezing, angioneurotic oedema) and anaphylaxis"
+            },
+            { "s": "emc-7123", "q": "Frequency not known: hypoglycaemia" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Long-term treatment: careful and regular monitoring (with breaks if needed) to decide whether to continue.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "then careful and regular monitoring should be carried out (if necessary with breaks in treatment) to establish whether and to what extent further treatment is necessary"
+            }
+          ]
+        },
+        {
+          "t": "With serotonergic medicines: careful observation especially at start and dose increases.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "careful observation of the patient is advised, particularly during treatment initiation and dose escalations"
+            }
+          ]
+        },
+        {
+          "t": "With warfarin: consider extra INR monitoring when starting tramadol (MHRA).",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "mhra-dsu-warfarin-tramadol-2024",
+              "q": "consider whether additional monitoring of INR is required when starting tramadol or another concomitant medicine"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Capsules: swallow whole, not divided or chewed, with enough liquid, with or without food.",
+          "formulations": ["tramadol-cap"],
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "The capsules are to be taken whole, not divided or chewed, with sufficient liquid, with or without food."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release tablets: swallow whole, not divided or chewed, with enough liquid, regardless of meals.",
+          "formulations": ["tramadol-mr-tab"],
+          "src": [
+            {
+              "s": "emc-2948",
+              "q": "The prolonged-release tablets must be swallowed whole, not divided or chewed, with sufficient liquid, irrespective of mealtimes."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "May cause drowsiness and dizziness; may affect driving, especially with alcohol.",
+          "src": [
+            {
+              "s": "emc-7123",
+              "q": "Tramadol may cause effects such as somnolence and dizziness and therefore may impair the reactions of drivers and machine operators."
+            }
+          ]
+        },
+        {
+          "t": "MHRA: risk of dependence and addiction even at therapeutic doses; learn signs of overdose; do not stop suddenly after long-term use.",
+          "src": [
+            {
+              "s": "mhra-dsu-opioids-dependence-2020",
+              "q": "discuss with patients that prolonged use of opioids may lead to drug dependence and addiction, even at therapeutic doses"
+            }
+          ]
+        },
+        {
+          "t": "If taking warfarin: seek urgent INR test for signs of bleeding (e.g. nosebleed over 10 minutes, blood in urine/stool, severe bruising).",
+          "src": [
+            {
+              "s": "mhra-dsu-warfarin-tramadol-2024",
+              "q": "you should seek medical treatment and have an urgent International Normalised Ratio test should you experience any of the following symptoms"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "tramadol:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "tramadol",
+      "allergen": ["tramadol"],
+      "concern": "Tramadol hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in hypersensitivity",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "in hypersensitivity to the active substance or to any of the excipients listed in section 6.1"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:condition:acute-intoxication",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "tramadol",
+      "condition": "acute-intoxication-cns-depressants",
+      "effect": "cns-respiratory-depression",
+      "concern": "Acute intoxication with alcohol, hypnotics, analgesics, opioids or psychotropics",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "Tramadol is contraindicated",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "in acute intoxication with alcohol, hypnotics, analgesics, opioids, or other psychotropic medicinal products"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:condition:alcoholism-acute",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "tramadol",
+      "condition": "acute-alcoholism",
+      "effect": "cns-respiratory-depression",
+      "concern": "Acute intoxication with alcohol",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "Tramadol is contraindicated",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "in acute intoxication with alcohol, hypnotics, analgesics, opioids, or other psychotropic medicinal products"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:condition:uncontrolled-epilepsy",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "tramadol",
+      "condition": "uncontrolled-epilepsy",
+      "effect": "seizure-threshold",
+      "concern": "Epilepsy not adequately controlled",
+      "consequence": "Seizure risk.",
+      "action": "Do not use.",
+      "sourceWording": "Tramadol is contraindicated",
+      "src": [{"s": "emc-7123", "q": "in patients with epilepsy not adequately controlled by treatment"}]
+    },
+    {
+      "id": "tramadol:condition:epilepsy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tramadol",
+      "condition": "epilepsy",
+      "effect": "seizure-threshold",
+      "concern": "Epilepsy or susceptibility to seizures",
+      "consequence": "Convulsions reported even at recommended doses.",
+      "action": "Use only if there are compelling circumstances.",
+      "sourceWording": "should be only treated with tramadol if there are compelling circumstances",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Patients with epilepsy or those susceptible to seizures should be only treated with tramadol if there are compelling circumstances."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:condition:opioid-dependence",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tramadol",
+      "condition": "opioid-dependence",
+      "concern": "Opioid dependence",
+      "consequence": "Not a substitute; cannot suppress morphine withdrawal.",
+      "action": "Particular caution.",
+      "sourceWording": "may only be used with particular caution",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Tramadol may only be used with particular caution in opioid-dependent patients"
+        },
+        {
+          "s": "emc-7123",
+          "q": "Although it is an opioid agonist, tramadol cannot suppress morphine withdrawal symptoms."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:condition:head-injury",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tramadol",
+      "condition": "head-injury-raised-icp",
+      "concern": "Head injury or raised intracranial pressure",
+      "consequence": "Not stated in source.",
+      "action": "Particular caution.",
+      "sourceWording": "may only be used with particular caution",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Tramadol may only be used with particular caution in opioid-dependent patients, patients with head injury, shock, a reduced level of consciousness of uncertain origin, disorders of the respiratory centre or function, increased intracranial pressure."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:condition:respiratory",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tramadol",
+      "condition": "copd-respiratory-depression",
+      "effect": "cns-respiratory-depression",
+      "concern": "Respiratory depression or disorders of respiratory function",
+      "consequence": "Respiratory depression cannot be excluded.",
+      "action": "Particular caution.",
+      "sourceWording": "may only be used with particular caution",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "disorders of the respiratory centre or function, increased intracranial pressure"
+        },
+        { "s": "emc-7123", "q": "Care should be taken when treating patients with respiratory depression" }
+      ]
+    },
+    {
+      "id": "tramadol:condition:substance-use",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tramadol",
+      "condition": "substance-use-disorder",
+      "concern": "History of substance use disorder (including alcohol)",
+      "consequence": "Higher risk of opioid use disorder.",
+      "action": "Agree goals and stop plan; monitor for drug-seeking behaviour; MR SmPC: only short periods under strict supervision.",
+      "sourceWording": "The risk of developing OUD is increased",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "The risk of developing OUD is increased in patients with a personal or a family history (parents or siblings) of substance use disorders (including alcohol use disorder)"
+        },
+        {
+          "s": "emc-2948",
+          "q": "In patients with a tendency to drug abuse or dependence, treatment with tramadol hydrochloride should only be carried out for short periods under strict medical supervision."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:condition:cyp2d6-urm",
+      "kind": "condition",
+      "level": "info",
+      "med": "tramadol",
+      "condition": "cyp2d6-ultra-rapid-metaboliser",
+      "effect": "cns-respiratory-depression",
+      "concern": "CYP2D6 ultra-rapid metaboliser",
+      "consequence": "Risk of opioid toxicity even at commonly prescribed doses.",
+      "action": "No specific action stated; be alert to opioid toxicity.",
+      "sourceWording": "there is a risk of developing",
+      "src": [
+        {
+          "s": "emc-2948",
+          "q": "if the patient is an ultra-rapid metaboliser there is a risk of developing adverse reactions of opioid toxicity even at commonly prescribed doses"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:condition:ta-osa",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tramadol",
+      "condition": "tonsillectomy-adenoidectomy-osa",
+      "age": { "minYears": 0, "maxYears": 18 },
+      "effect": "cns-respiratory-depression",
+      "concern": "Child after tonsillectomy/adenoidectomy for obstructive sleep apnoea",
+      "consequence": "Rare but life-threatening adverse events reported.",
+      "action": "Extreme caution with close monitoring for opioid toxicity including respiratory depression.",
+      "sourceWording": "Extreme caution should be exercised",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Extreme caution should be exercised when tramadol is administered to children for post-operative pain relief and should be accompanied by close monitoring for symptoms of opioid toxicity including respiratory depression."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:condition:paed-resp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "tramadol",
+      "condition": "paediatric-compromised-respiratory-function",
+      "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Child with possibly compromised breathing",
+      "consequence": "May worsen opioid toxicity.",
+      "action": "Not recommended.",
+      "sourceWording": "not recommended",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Tramadol is not recommended for use in children in whom respiratory function might be compromised"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:age:under-12",
+      "kind": "age",
+      "level": "avoid",
+      "med": "tramadol",
+      "age": { "minYears": 0, "maxYears": 12 },
+      "concern": "Child under 12 years",
+      "consequence": "Not suitable at this age.",
+      "action": "Do not use these products.",
+      "sourceWording": "not suitable for children below the age of 12 years",
+      "src": [
+        { "s": "emc-7123", "q": "Tramadol capsules are not suitable for children below the age of 12 years." },
+        {
+          "s": "emc-2948",
+          "q": "Tramadol prolonged-release tablets are not suitable for children under 12 years of age."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:renal:impairment",
+      "kind": "condition",
+      "level": "dose",
+      "med": "tramadol",
+      "condition": "renal-impairment",
+      "concern": "Renal insufficiency or dialysis",
+      "consequence": "Elimination delayed.",
+      "action": "Carefully consider prolonging the dosing interval.",
+      "sourceWording": "prolongation of the dosage intervals should be carefully considered",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "In patients with renal and/or hepatic insufficiency the elimination of tramadol is delayed. In these patients prolongation of the dosage intervals should be carefully considered according to the patient's requirements."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:renal:severe-mr",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "tramadol",
+      "formulations": ["tramadol-mr-tab"],
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal insufficiency (prolonged-release)",
+      "consequence": "Not stated in source.",
+      "action": "Not recommended.",
+      "sourceWording": "are not recommended",
+      "src": [
+        {
+          "s": "emc-2948",
+          "q": "In cases of severe renal and/or severe hepatic insufficiency tramadol hydrochloride prolonged-release tablets are not recommended."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:hepatic:any",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "tramadol",
+      "hepatic": ["any"],
+      "concern": "Hepatic insufficiency",
+      "consequence": "Elimination delayed.",
+      "action": "Carefully consider prolonging the dosing interval.",
+      "sourceWording": "prolongation of the dosage intervals should be carefully considered",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "In patients with renal and/or hepatic insufficiency the elimination of tramadol is delayed. In these patients prolongation of the dosage intervals should be carefully considered according to the patient's requirements."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:hepatic:severe-mr",
+      "kind": "hepatic",
+      "level": "avoid",
+      "med": "tramadol",
+      "formulations": ["tramadol-mr-tab"],
+      "hepatic": ["severe"],
+      "concern": "Severe hepatic insufficiency (prolonged-release)",
+      "consequence": "Not stated in source.",
+      "action": "Not recommended.",
+      "sourceWording": "are not recommended",
+      "src": [
+        {
+          "s": "emc-2948",
+          "q": "In cases of severe renal and/or severe hepatic insufficiency tramadol hydrochloride prolonged-release tablets are not recommended."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "tramadol",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Inadequate human safety evidence; neonatal withdrawal with regular use.",
+      "action": "Should not be used in pregnant women (SmPC). BUMPS and SPS are less restrictive: see pregnancy section.",
+      "sourceWording": "tramadol should not be used in pregnant women",
+      "src": [
+        { "s": "emc-7123", "q": "Therefore tramadol should not be used in pregnant women." },
+        { "s": "emc-2948", "q": "Therefore, tramadol hydrochloride should not be used in pregnant women." }
+      ]
+    },
+    {
+      "id": "tramadol:pregnancy:sps-bumps",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "tramadol",
+      "concern": "Pregnancy (SPS/BUMPS)",
+      "consequence": "Overall data do not show miscarriage or birth defects; neonatal withdrawal if used near delivery.",
+      "action": "Reserve for when other analgesics have failed; only if recommended by a doctor.",
+      "sourceWording": "Reserve tramadol use in pregnancy where other alternative analgesics have been ineffective",
+      "src": [
+        {
+          "s": "sps-pain-pregnancy",
+          "q": "Reserve tramadol use in pregnancy where other alternative analgesics have been ineffective."
+        },
+        {
+          "s": "bumps-tramadol",
+          "q": "Tramadol should only be taken during pregnancy if recommended by your doctor."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:breastfeeding:cap",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "tramadol",
+      "formulations": ["tramadol-cap"],
+      "concern": "Breastfeeding (capsule SmPC)",
+      "consequence": "May cause respiratory depression in the infant.",
+      "action": "Not recommended (SPS allows short-term use with caution).",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Administration to nursing women is not recommended as tramadol may be secreted in breast milk and may cause respiratory depression in the infant."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:breastfeeding:mr",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "tramadol",
+      "formulations": ["tramadol-mr-tab"],
+      "concern": "Breastfeeding (prolonged-release SmPC)",
+      "consequence": "About 0.1% of maternal dose excreted in milk.",
+      "action": "Should not be used during lactation, or stop breastfeeding during treatment (SPS allows short-term use with caution).",
+      "sourceWording": "tramadol should not be used during lactation",
+      "src": [
+        {
+          "s": "emc-2948",
+          "q": "For this reason tramadol should not be used during lactation or alternatively, breast-feeding should be discontinued during treatment with tramadol."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "tramadol",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Low milk levels; infants under 2 months at most risk.",
+      "action": "Short-term use with caution at lowest effective dose; monitor infant (sedation, breathing, feeding, weight gain).",
+      "sourceWording": "can be used short-term during breastfeeding with caution and infant monitoring",
+      "src": [
+        {
+          "s": "sps-bf-weak-opioids",
+          "q": "Tramadol (both oral and intravenous) can be used short-term during breastfeeding with caution and infant monitoring."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:ssri-serotonin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "tramadol",
+      "other": "group:ssri",
+      "effect": "serotonin-syndrome",
+      "concern": "SSRIs",
+      "consequence": "Serotonin syndrome (potentially life-threatening).",
+      "action": "If clinically warranted, observe carefully at start and dose increases; reduce or stop if suspected.",
+      "sourceWording": "careful observation of the patient is advised",
+      "src": [
+        {
+          "s": "emc-2948",
+          "q": "Concomitant therapeutic use of tramadol and serotonergic medicinal products, such as selective serotonin reuptake inhibitors (SSRIs)"
+        },
+        {
+          "s": "emc-7123",
+          "q": "careful observation of the patient is advised, particularly during treatment initiation and dose escalations"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:ssri-seizure",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tramadol",
+      "other": "group:ssri",
+      "effect": "seizure-threshold",
+      "concern": "SSRIs (seizure threshold)",
+      "consequence": "Increased risk of convulsions.",
+      "action": "Be aware of seizure risk (tramadol 4.4: may increase seizure risk with seizure-threshold-lowering medicines).",
+      "sourceWording": "tramadol may increase the seizure risk",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Tramadol can induce convulsions and increase the potential for selective serotonin re-uptake inhibitors (SSRIs)"
+        },
+        {
+          "s": "emc-7123",
+          "q": "tramadol may increase the seizure risk in patients taking other medicinal products that lowers the seizure threshold"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:serotonergic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "tramadol",
+      "other": "group:serotonergic",
+      "effect": "serotonin-syndrome",
+      "concern": "Other serotonergic medicines",
+      "consequence": "Serotonin syndrome (potentially life-threatening).",
+      "action": "If clinically warranted, observe carefully at start and dose increases; reduce or stop if suspected.",
+      "sourceWording": "careful observation of the patient is advised",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "If concomitant treatment with other serotonergic agents is clinically warranted, careful observation of the patient is advised"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:warfarin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tramadol",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin",
+      "consequence": "Increased INR with major bleeding and bruising; fatal brain bleed reported (MHRA).",
+      "action": "Caution; consider extra INR monitoring when starting tramadol and whether warfarin dose change is needed; warn about bleeding signs.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Caution should be exercised during concomitant treatment with tramadol and coumarin derivatives (e.g. warfarin) due to reports of increased INR with major bleeding and ecchymoses in some patients."
+        },
+        {
+          "s": "mhra-dsu-warfarin-tramadol-2024",
+          "q": "be aware of the risk of increased INR when warfarin and tramadol are used together, with a risk of major bruising and bleeding which could be life-threatening"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:vka",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tramadol",
+      "other": "group:vitamin-k-antagonist",
+      "effect": "bleeding",
+      "concern": "Coumarin anticoagulants",
+      "consequence": "Increased INR with major bleeding.",
+      "action": "Caution; consider extra INR monitoring.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Caution should be exercised during concomitant treatment with tramadol and coumarin derivatives (e.g. warfarin)"
+        },
+        {
+          "s": "mhra-dsu-warfarin-tramadol-2024",
+          "q": "caution should also be taken if tramadol is co-prescribed with other coumarin-derived anticoagulants such as acenocoumarol"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:opioid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tramadol",
+      "other": "group:opioid",
+      "effect": "cns-respiratory-depression",
+      "concern": "Other opioids",
+      "consequence": "Additive CNS depression: sedation, respiratory depression, coma and death.",
+      "action": "Lowest effective tramadol dose and shortest duration.",
+      "sourceWording": "the lowest effective dose of tramadol should be used",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "other respiratory or CNS depressants (e.g. other opioids, antitussives or substitution treatments, barbiturates, antipsychotics, H1-antihistamines, alcohol increases the risk of sedation, respiratory depression, coma and death"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:cns-depressant",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tramadol",
+      "other": "group:cns-depressant",
+      "effect": "cns-respiratory-depression",
+      "concern": "Benzodiazepines and other CNS depressants",
+      "consequence": "Sedation, respiratory depression, coma and death.",
+      "action": "Only if no alternative; lowest dose, shortest duration; monitor closely.",
+      "sourceWording": "should be reserved for patients for whom alternative treatment options are not possible",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "concomitant prescribing with these sedating medicinal products should be reserved for patients for whom alternative treatment options are not possible"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "info",
+      "med": "tramadol",
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "CYP3A4 inhibitors",
+      "consequence": "Might inhibit tramadol metabolism.",
+      "action": "Clinical importance not studied; no action stated.",
+      "sourceWording": "The clinical importance of such an interaction has not been studied",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Other medicinal products known to inhibit CYP3A4, such as ketoconazole, ritonavir and erythromycin, might inhibit the metabolism of tramadol"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:st-johns-wort",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "tramadol",
+      "other": "st-johns-wort",
+      "concern": "St John's wort (reduced tramadol levels)",
+      "consequence": "Reduced tramadol blood levels with risk of therapeutic failure.",
+      "action": "Do not take together.",
+      "sourceWording": "Do not take with this product.",
+      "src": [
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Analgesics Tramadol Reduced blood levels with risk Do not take with this product."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:ciprofloxacin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "tramadol",
+      "other": "ciprofloxacin",
+      "effect": "seizure-threshold",
+      "concern": "Ciprofloxacin (seizure risk)",
+      "consequence": "Increased risk of seizures, including status epilepticus.",
+      "action": "Avoid the combination (ciprofloxacin SmPC).",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-885",
+          "q": "concomitant treatment of ciprofloxacin with drugs known to trigger seizures or lower the seizure threshold, such as but not limited to tramadol, selective serotonin reuptake inhibitors, should be avoided"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:clopidogrel",
+      "kind": "interaction",
+      "level": "info",
+      "med": "tramadol",
+      "other": "clopidogrel",
+      "concern": "Clopidogrel (absorption delayed by opioids)",
+      "consequence": "Clopidogrel SmPC: opioid agonists may delay and reduce clopidogrel absorption; clinical relevance unknown.",
+      "action": "Clopidogrel SmPC: in acute coronary syndrome needing an opioid, consider a parenteral antiplatelet agent.",
+      "sourceWording": "The clinical relevance is unknown",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "co-administration of opioid agonists has the potential to delay and reduce the absorption of clopidogrel presumably because of slowed gastric emptying. The clinical relevance is unknown."
+        },
+        {
+          "s": "emc-5935",
+          "q": "Consider the use of a parenteral antiplatelet agent in acute coronary syndrome patients requiring co-administration of morphine or other opioid agonists."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:age:over-75",
+      "kind": "age",
+      "level": "dose",
+      "med": "tramadol",
+      "age": { "minYears": 75 },
+      "concern": "Age over 75 years",
+      "consequence": "Elimination may be prolonged.",
+      "action": "If necessary, extend the dosing interval according to requirements.",
+      "sourceWording": "if necessary the dosage interval is to be extended",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "In elderly patients over 75 years elimination may be prolonged. Therefore, if necessary the dosage interval is to be extended according to the patient's requirements."
+        },
+        { "s": "emc-2948", "q": "In elderly people over 75 years elimination may be prolonged." }
+      ]
+    }
+  ]
+}

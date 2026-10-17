@@ -1,0 +1,1525 @@
+{
+  "id": "spironolactone",
+  "name": "Spironolactone",
+  "ingredients": [
+    "spironolactone"
+  ],
+  "className": "Potassium-sparing diuretic (aldosterone antagonist)",
+  "groups": [
+    "potassium-sparing-diuretic",
+    "diuretic"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "spironolactone-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "25 mg (SmPC used; 50 mg and 100 mg have their own SmPCs)",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Each tablet contains 25 mg spironolactone"
+        }
+      ],
+      "sourceIds": [
+        "emc-1619"
+      ]
+    },
+    {
+      "id": "spironolactone-susp",
+      "label": "Oral suspension",
+      "route": "oral",
+      "strengths": "10 mg/ml",
+      "release": "n/a",
+      "note": "This SmPC differs from the tablet SmPC: it also lists essential hypertension, gives renal thresholds as GFR values, a hyperkalaemia cut-off (> 5.5 mEq/L) and mg/kg doses for children, and says it is not recommended in women of childbearing potential not using contraception.",
+      "src": [
+        {
+          "s": "emc-100453",
+          "q": "Each ml of suspension contains 10 mg spironolactone."
+        },
+        {
+          "s": "emc-100453",
+          "q": "diagnosis and treatment of primary aldosteronism, essential hypertension."
+        }
+      ],
+      "sourceIds": [
+        "emc-100453"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Tablets: congestive cardiac failure; hepatic cirrhosis with ascites and oedema; malignant ascites; nephrotic syndrome; diagnosis and treatment of primary aldosteronism.",
+          "formulations": [
+            "spironolactone-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Congestive cardiac failure Hepatic cirrhosis with ascites and oedema Malignant ascites Nephrotic syndrome Diagnosis and treatment of primary aldosteronism."
+            }
+          ]
+        },
+        {
+          "t": "Oral suspension: refractory oedema with congestive cardiac failure; hepatic cirrhosis with ascites and oedema; malignant ascites; nephrotic syndrome; primary aldosteronism; essential hypertension.",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "In the management of refractory oedema associated with congestive cardiac failure; hepatic cirrhosis with ascites and oedema, malignant ascites, nephrotic syndrome, diagnosis and treatment of primary aldosteronism, essential hypertension."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Children (and, for the suspension, neonates) should only be treated under the guidance of a paediatric specialist.",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Children should only be treated under guidance of a paediatric specialist."
+            },
+            {
+              "s": "emc-100453",
+              "q": "Neonates, children and adolescents should only be treated under guidance of a paediatric specialist."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Tablets: initially 100 mg daily (single or divided doses), range 25-200 mg daily; maintenance individualised.",
+          "tag": "Congestive heart failure with oedema",
+          "formulations": [
+            "spironolactone-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "For management of oedema an initial daily dose of 100 mg of spironolactone administered in either single or divided doses is recommended, but may range from 25 mg to 200 mg daily."
+            }
+          ]
+        },
+        {
+          "t": "Suspension: usually 100 mg/day, up to 200 mg/day in severe cases; maintenance 75-200 mg/day once oedema controlled.",
+          "tag": "Congestive heart failure with oedema",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Usual dose - 100 mg/day. In difficult or severe cases the dose may be gradually increased up to 200 mg/day. When oedema is controlled, the usual maintenance level is 75 mg/day to 200 mg/day."
+            }
+          ]
+        },
+        {
+          "t": "With standard therapy: start 25 mg once daily only if serum potassium is 5.0 mEq/L or less and serum creatinine is 2.5 mg/dL or less (suspension SmPC: 221 micromol/L or less). If tolerated may increase to 50 mg once daily; if 25 mg daily is not tolerated, reduce to 25 mg every other day.",
+          "tag": "Severe heart failure (NYHA III-IV)",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "treatment in conjunction with standard therapy should be initiated at a dose of spironolactone 25 mg once daily if serum potassium is ≤5.0 mEq/L and serum creatinine is ≤2.5 mg/dL."
+            },
+            {
+              "s": "emc-100453",
+              "q": "in patients with a serum potassium ≤ 5.0 mEq/L and serum creatinine ≤ 221 μmol/L"
+            },
+            {
+              "s": "emc-1619",
+              "q": "Patients who tolerate 25 mg once daily may have their dose increased to 50 mg once daily as clinically indicated. Patients who do not tolerate 25 mg once daily may have their dose reduced to 25 mg every other day."
+            }
+          ]
+        },
+        {
+          "t": "Urinary Na+/K+ ratio above 1.0: 100 mg/day; below 1.0: 200-400 mg/day. Maintenance individualised.",
+          "tag": "Hepatic cirrhosis with ascites and oedema",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "If urinary Na+/K+ ratio is greater than 1.0, 100 mg/day. If the ratio is less than 1.0, 200 mg/day to 400 mg/day."
+            }
+          ]
+        },
+        {
+          "t": "Initially 100-200 mg/day; up to 400 mg/day in severe cases.",
+          "tag": "Malignant ascites",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Initial dose usually 100 mg/day to 200 mg/day. In severe cases the dosage may be gradually increased up to 400 mg/day."
+            }
+          ]
+        },
+        {
+          "t": "100-200 mg/day; only if glucocorticoids alone are not effective enough.",
+          "tag": "Nephrotic syndrome",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Usual dose 100 mg/day to 200 mg/day."
+            },
+            {
+              "s": "emc-1619",
+              "q": "Its use is only advised if glucocorticoids by themselves are insufficiently effective."
+            }
+          ]
+        },
+        {
+          "t": "Diagnosis: 400 mg daily for 3-4 weeks (long test) or 4 days (short test). Pre-operative: 100-400 mg daily. Long-term if unsuitable for surgery: lowest effective dose.",
+          "tag": "Primary aldosteronism",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Long test: Aldactone is administered at a daily dosage of 400 mg for 3 to 4 weeks."
+            },
+            {
+              "s": "emc-1619",
+              "q": "Short test: Aldactone is administered at a daily dosage of 400 mg for 4 days."
+            },
+            {
+              "s": "emc-1619",
+              "q": "Aldactone may be administered at doses of 100 mg to 400 mg daily in preparation for surgery."
+            }
+          ]
+        },
+        {
+          "t": "Suspension only: 50-100 mg/day; in difficult cases increase at 2-weekly intervals up to 200 mg/day. Continue at least 2 weeks before judging response.",
+          "tag": "Essential hypertension",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Essential hypertension Usual dose - 50 mg/day to 100 mg/day, which for difficult or severe cases may be gradually increased at 2 weekly intervals up to 200 mg/day."
+            },
+            {
+              "s": "emc-100453",
+              "q": "Treatment should be continued for 2 weeks or longer since an adequate response may not occur before this time."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: start at the lowest dose and titrate up as needed.",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "It is recommended that treatment is started with the lowest dose and titrated upwards as required to achieve maximum benefit."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Tablets: initial 1-3 mg/kg daily in divided doses, adjusted to response and tolerance. Specialist guidance only; limited paediatric data.",
+          "tag": "Children (tablets)",
+          "formulations": [
+            "spironolactone-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Initial daily dosage should provide 1-3 mg of spironolactone per kilogram body weight given in divided doses."
+            }
+          ]
+        },
+        {
+          "t": "Suspension - diuresis (heart failure, ascites, oedema, nephrotic syndrome): neonate 1-2 mg/kg daily in 1-2 divided doses; 1 month to 18 years 1-3 mg/kg daily in 1-2 divided doses (maximum 200 mg daily).",
+          "tag": "Diuresis (suspension)",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Neonate: 1-2 mg/kg/daily in 1-2 divided doses. Infant or child 1 month to 18 years: 1-3 mg/kg daily in 1-2 divided doses (maximum 200 mg daily)."
+            }
+          ]
+        },
+        {
+          "t": "Suspension - primary hyperaldosteronism or resistant ascites: neonate up to 7 mg/kg daily; 1 month to 18 years up to 9 mg/kg daily (total maximum 400 mg daily).",
+          "tag": "Primary hyperaldosteronism / resistant ascites (suspension)",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Neonate: up to a maximum of 7 mg/kg daily may be used. Infant or Child 1 month to 18 years: up to a maximum of 9 mg/kg daily (total maximum 400 mg daily) may be used."
+            }
+          ]
+        },
+        {
+          "t": "Contraindicated in children with moderate to severe renal impairment (suspension SmPC: GFR 30 to < 60 ml/min and < 30 ml/min). Use with caution in hypertensive children with mild renal insufficiency (hyperkalaemia risk).",
+          "tag": "Children with renal impairment",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Spironolactone is contraindicated in paediatric patients with moderate to severe renal impairment."
+            },
+            {
+              "s": "emc-100453",
+              "q": "Spironolactone is contraindicated in paediatric patients with moderate (GFR 30 - < 60 ml/min) to severe (GFR < 30 ml/min) renal impairment"
+            },
+            {
+              "s": "emc-1619",
+              "q": "Potassium-sparing diuretics should be used with caution in hypertensive paediatric patients with mild renal insufficiency because of the risk of hyperkalaemia."
+            }
+          ]
+        },
+        {
+          "t": "Suspension contains sodium benzoate, which may increase neonatal jaundice.",
+          "tag": "Neonates (suspension)",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Increase in bilirubinaemia following its displacement from albumin may increase neonatal jaundice which may develop into kernicterus"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Tablets: acute renal insufficiency, significant renal compromise, anuria; Addison's disease; hyperkalaemia; hypersensitivity; concomitant eplerenone or other potassium-sparing diuretics.",
+          "formulations": [
+            "spironolactone-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "acute renal insufficiency, significant renal compromise, anuria Addison's disease hyperkalaemia hypersensitivity to spironolactone or to any of the excipients listed in section 6.1 concomitant use of eplerenone or other potassium sparing diuretics."
+            }
+          ]
+        },
+        {
+          "t": "Suspension: hypersensitivity; acute renal insufficiency, severe renal impairment (GFR < 30 ml/min), anuria; Addison's disease; hyperkalaemia (> 5.5 mEq/L); concomitant eplerenone.",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Acute renal insufficiency, severe renal impairment (GFR < 30 ml/min), anuria - Addison's disease - Hyperkalaemia (> 5.5 mEq/L) - Concomitant use of eplerenone."
+            }
+          ]
+        },
+        {
+          "t": "Do not give with other potassium-conserving diuretics; do not give potassium supplements routinely.",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Aldactone should not be administered concurrently with other potassium conserving diuretics and potassium supplements should not be given routinely with Aldactone as hyperkalaemia may be induced."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Hyperkalaemia, which can cause fatal arrhythmias, may occur with renal impairment or high potassium intake. Stop spironolactone if hyperkalaemia develops.",
+          "tag": "Hyperkalaemia",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Hyperkalaemia may occur in patients with impaired renal function or excessive potassium intake and can cause cardiac irregularities which may be fatal."
+            },
+            {
+              "s": "emc-1619",
+              "q": "Should hyperkalaemia develop Aldactone should be discontinued"
+            }
+          ]
+        },
+        {
+          "t": "Severe heart failure: monitor and manage potassium; avoid other potassium-sparing diuretics; avoid oral potassium supplements if potassium is above 3.5 mEq/L. Stop or interrupt if potassium > 5 mEq/L or creatinine > 4 mg/dL (suspension SmPC: > 353 micromol/L).",
+          "tag": "Severe heart failure",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "It is critical to monitor and manage serum potassium in patients with severe heart failure receiving spironolactone. Avoid using other potassium-sparing diuretics. Avoid using oral potassium supplements in patients with serum potassium >3.5 mEq/L."
+            },
+            {
+              "s": "emc-1619",
+              "q": "Discontinue or interrupt treatment for serum potassium >5 mEq/L or for serum creatinine >4 mg/dL"
+            },
+            {
+              "s": "emc-100453",
+              "q": "Discontinue or interrupt treatment for serum potassium > 5 mEq/L or for serum creatinine > 353 μmol/L"
+            }
+          ]
+        },
+        {
+          "t": "Monitor fluid and electrolytes regularly, especially in the elderly and in significant renal or hepatic impairment.",
+          "tag": "Electrolytes",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Fluid and electrolyte status should be regularly monitored particularly in the elderly, in those with significant renal and hepatic impairment."
+            }
+          ]
+        },
+        {
+          "t": "Decompensated hepatic cirrhosis: reversible hyperchloraemic metabolic acidosis (usually with hyperkalaemia) reported, even with normal renal function.",
+          "tag": "Cirrhosis",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Reversible hyperchloraemic metabolic acidosis, usually in association with hyperkalaemia has been reported to occur in some patients with decompensated hepatic cirrhosis, even in the presence of normal renal function."
+            }
+          ]
+        },
+        {
+          "t": "Suspension SmPC: use with particular caution in the elderly, possible urinary tract obstruction, or unstable electrolyte balance; dilutional hyponatraemia may occur with other diuretics.",
+          "tag": "Other",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "The preparation should only be used with particular caution in elderly patients or those with potential obstruction of the urinary tract, or with disorders rendering their electrolyte balance precarious."
+            },
+            {
+              "s": "emc-100453",
+              "q": "Dilution hyponatraemia may occur in combination with other diuretics"
+            }
+          ]
+        },
+        {
+          "t": "Suspension contains 400 mg sucrose per ml: patients with hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take it; take into account in diabetes; may harm teeth.",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "As this medicinal product contains 400 mg sucrose per ml, this has to be taken into consideration in terms of daily intake. This should be taken into account in patients with diabetes mellitus."
+            },
+            {
+              "s": "emc-100453",
+              "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+            }
+          ]
+        },
+        {
+          "t": "Regional or general anaesthesia: take care (reduced vascular response to noradrenaline).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Caution should be exercised in the management of patients subjected to regional or general anaesthesia while they are being treated with Aldactone."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Medicines that raise potassium (other potassium-sparing diuretics, ACE inhibitors, NSAIDs, ARBs, aldosterone blockers, heparins, potassium supplements, potassium-rich diet or salt substitutes): may cause severe hyperkalaemia. Co-trimoxazole: clinically relevant hyperkalaemia.",
+          "tag": "Hyperkalaemia",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Concomitant use of Aldactone with other potassium-sparing diuretics, angiotensin-converting enzyme (ACE) inhibitors, nonsteroidal anti-inflammatory drugs, angiotensin II antagonists, aldosterone blockers, heparin, low molecular weight heparin"
+            },
+            {
+              "s": "emc-1619",
+              "q": "may lead to severe hyperkalaemia."
+            },
+            {
+              "s": "emc-1619",
+              "q": "concomitant use of trimethoprim/sulfamethoxazole (co-trimoxazole) with spironolactone may result in clinically relevant hyperkalaemia."
+            }
+          ]
+        },
+        {
+          "t": "ACE inhibitors: SmPC - should not routinely be used together, particularly in marked renal impairment. MHRA (heart failure) - the combination raises the risk of severe hyperkalaemia, particularly in marked renal impairment, and should be used with caution: use the lowest effective doses, monitor potassium and renal function regularly, and interrupt or stop if hyperkalaemia occurs.",
+          "tag": "ACE inhibitors (e.g. lisinopril)",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Since ACE inhibitors decrease aldosterone production they should not routinely be used with Aldactone, particularly in patients with marked renal impairment."
+            },
+            {
+              "s": "mhra-dsu-spironolactone-ras-hyperkalaemia",
+              "q": "concomitant use of spironolactone with ACEi or ARB increases the risk of severe hyperkalaemia, particularly in patients with marked renal impairment, and should be used with caution"
+            },
+            {
+              "s": "mhra-dsu-spironolactone-ras-hyperkalaemia",
+              "q": "use the lowest effective doses of spironolactone and ACEi or ARB if coadministration is considered essential regularly monitor serum potassium levels and renal function interrupt or discontinue treatment in the event of hyperkalaemia"
+            }
+          ]
+        },
+        {
+          "t": "MHRA: the triple combination of an ACE inhibitor, an ARB and a mineralocorticoid receptor antagonist (or other potassium-sparing diuretic) is not recommended.",
+          "tag": "Triple RAAS combination",
+          "src": [
+            {
+              "s": "mhra-dsu-ras-combination",
+              "q": "The triple combination of an ACE-inhibitor, ARB, and a mineralocorticoid receptor antagonist or other potassium-sparing diuretic is not recommended."
+            }
+          ]
+        },
+        {
+          "t": "NSAIDs (e.g. aspirin, indometacin, mefenamic acid): reduce the diuretic effect, and add to hyperkalaemia risk.",
+          "tag": "NSAIDs",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "have been shown to attenuate the diuretic effect of spironolactone."
+            }
+          ]
+        },
+        {
+          "t": "Other antihypertensives (and other diuretics): effect potentiated; their dose may need reducing (suspension SmPC: by about 50%) and then adjusting.",
+          "tag": "Antihypertensives",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Potentiation of the effect of antihypertensive drugs occurs and their dosage may need to be reduced when Aldactone is added to the treatment regime and then adjusted as necessary."
+            },
+            {
+              "s": "emc-100453",
+              "q": "their dose may need to be reduced by about 50% when spironolactone is added to the treatment regime"
+            }
+          ]
+        },
+        {
+          "t": "Digoxin: spironolactone may raise digoxin levels and interfere with digoxin assays; monitor digoxin response by other means unless the assay is unaffected.",
+          "tag": "Digoxin",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "In patients receiving digoxin and spironolactone the digoxin response should be monitored by means other than serum digoxin concentrations, unless the digoxin assay used has been proven not to be affected by spironolactone therapy."
+            }
+          ]
+        },
+        {
+          "t": "Lithium: risk of lithium toxicity; monitor lithium levels. Abiraterone: not recommended (PSA may rise). Mitotane: do not use together. Carbenoxolone: avoid.",
+          "tag": "Lithium, abiraterone, mitotane, carbenoxolone",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Monitor lithium levels periodically when spironolactone is coadministered."
+            },
+            {
+              "s": "emc-1619",
+              "q": "Use with abiraterone is not recommended."
+            },
+            {
+              "s": "emc-1619",
+              "q": "should not be used concomitantly with mitotane"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Tablets: contraindicated in acute renal insufficiency, significant renal compromise or anuria (no numeric threshold given). Hyperkalaemia more likely with impaired renal function.",
+          "tag": "Tablets SmPC",
+          "formulations": [
+            "spironolactone-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "acute renal insufficiency, significant renal compromise, anuria"
+            }
+          ]
+        },
+        {
+          "t": "Suspension: GFR 60-90 ml/min - start at the lowest dose and monitor potassium and renal function closely. Adults with GFR < 30 ml/min - contraindicated.",
+          "tag": "Suspension SmPC (GFR)",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Patients with mild renal impairment (glomerular filtration rate (GFR) 60 - 90 ml/min) should be started on the lowest dose. Serum potassium levels and renal function should be monitored closely."
+            },
+            {
+              "s": "emc-100453",
+              "q": "Spironolactone is contraindicated in adult patients with severe (GFR < 30 ml/min) renal impairment"
+            }
+          ]
+        },
+        {
+          "t": "Severe heart failure: start only if serum creatinine is 2.5 mg/dL or less (suspension SmPC: 221 micromol/L or less); stop or interrupt if creatinine > 4 mg/dL (suspension SmPC: > 353 micromol/L).",
+          "tag": "Severe heart failure (creatinine)",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "serum creatinine is ≤2.5 mg/dL"
+            },
+            {
+              "s": "emc-1619",
+              "q": "Discontinue or interrupt treatment for serum potassium >5 mEq/L or for serum creatinine >4 mg/dL"
+            },
+            {
+              "s": "emc-100453",
+              "q": "serum creatinine ≤ 221 μmol/L"
+            }
+          ]
+        },
+        {
+          "t": "SPS (heart failure): reduce dose and monitor if creatinine is 220-310 micromol/L or eGFR is between 20 and 30 mL/min/1.73 m²; stop and seek specialist advice if creatinine > 310 micromol/L or eGFR < 20 mL/min/1.73 m².",
+          "tag": "SPS (eGFR / creatinine)",
+          "src": [
+            {
+              "s": "sps-spironolactone-monitoring",
+              "q": "Creatinine is greater than 220 micromol/L and less than 310 micromol/L Estimated glomerular filtration rate eGFR is less than 20 to 30mL/min/1.73m2"
+            },
+            {
+              "s": "sps-spironolactone-monitoring",
+              "q": "Creatinine is greater than 310 micromol/L Estimated glomerular filtration rate eGFR is less than 20mL/min/1.73m2"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Tablets: take care in severe hepatic impairment (may alter metabolism and excretion).",
+          "formulations": [
+            "spironolactone-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Care should be taken with severe hepatic and renal impairment which may alter drug metabolism and excretion."
+            }
+          ]
+        },
+        {
+          "t": "Suspension: impaired hepatic function may reduce elimination; start at the lowest dose, titrate slowly and watch for dose-related adverse reactions.",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "patients with impaired hepatic function should be started on the lowest dose and titrated slowly."
+            }
+          ]
+        },
+        {
+          "t": "Decompensated cirrhosis: reversible hyperchloraemic metabolic acidosis reported.",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "has been reported to occur in some patients with decompensated hepatic cirrhosis"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC (tablets): limited data; anti-androgenic reproductive toxicity in animals. Diuretics may reduce placental perfusion and are not recommended for standard treatment of hypertension and oedema in pregnancy. Should not be used unless the potential benefit justifies the risk.",
+          "tag": "SmPC tablets",
+          "formulations": [
+            "spironolactone-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Diuretics can lead to reduced perfusion of the placenta and thus to impairment of intrauterine growth and are therefore not recommended for the standard therapy for hypertension and oedema during pregnancy."
+            },
+            {
+              "s": "emc-1619",
+              "q": "Spironolactone should not be used during pregnancy, unless the potential benefit justifies the potential risk."
+            }
+          ]
+        },
+        {
+          "t": "SmPC (suspension): not recommended during pregnancy.",
+          "tag": "SmPC suspension",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Qaialdo is not recommended during pregnancy"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (diuretics): rarely needed in pregnancy; may reduce placental blood flow (extra growth scans). Spironolactone may lower fetal testosterone, with concern about male genital development (animal data; one human case report, several normal). Recommended only if benefit outweighs risk.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-diuretics",
+              "q": "Use of spironolactone specifically can potentially reduce levels of the male hormone testosterone in the baby."
+            },
+            {
+              "s": "bumps-diuretics",
+              "q": "Use of a diuretic in pregnancy will only be recommended if the benefits of treating a potentially serious condition outweigh the possible risks."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC (both): canrenone (active metabolite) passes into milk; should not be used during breastfeeding - decide whether to stop breastfeeding or stop/abstain from spironolactone.",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Spironolactone should not be used during breast-feeding."
+            },
+            {
+              "s": "emc-100453",
+              "q": "Qaialdo should not be used during breast-feeding."
+            },
+            {
+              "s": "emc-1619",
+              "q": "A decision must be made whether to discontinue breast-feeding or to discontinue/abstain from spironolactone therapy"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Suspension SmPC: not recommended in women of childbearing potential not using contraception.",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Qaialdo is not recommended during pregnancy and in women of childbearing potential not using contraception."
+            }
+          ]
+        },
+        {
+          "t": "Fertility: reduced fertility in female mice; animal studies suggest possible impairment.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Spironolactone administered to female mice reduced fertility"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common: hyperkalaemia (17.5% in the suspension SmPC summary, mainly with renal impairment or ACE inhibitors/ARBs). Common: confusional state, dizziness, nausea, pruritus, rash, muscle spasms, acute kidney injury, gynaecomastia, breast pain, malaise.",
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "hyperkalaemia, reported in 17.5% of patients, particularly in patients with renal impairment or if receiving ACE-inhibitors or angiotensin II antagonists concomitantly"
+            },
+            {
+              "s": "emc-100453",
+              "q": "Metabolism and nutrition disorders Very common Hyperkalaemia***"
+            },
+            {
+              "s": "emc-100453",
+              "q": "Renal and urinary disorders Common Acute kidney injury Reproductive system and breast disorders Common Gynaecomastia*, Breast pain**"
+            }
+          ]
+        },
+        {
+          "t": "Gynaecomastia is related to dose and duration and is usually reversible on stopping; rarely some breast enlargement persists.",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Development appears to be related to both dosage level and duration of therapy and is normally reversible when the drug is discontinued."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Hyperkalaemia can be fatal (arrhythmia). Stop if hyperkalaemia develops and take measures to lower potassium.",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Hyperkalaemia may be fatal."
+            },
+            {
+              "s": "emc-1619",
+              "q": "Should hyperkalaemia develop Aldactone should be discontinued, and if necessary, active measures taken to reduce the serum potassium to normal"
+            }
+          ]
+        },
+        {
+          "t": "Acute kidney injury (common). Frequency not known: agranulocytosis, leucopenia, thrombocytopenia; toxic epidermal necrolysis, Stevens-Johnson syndrome, DRESS, pemphigoid.",
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Not known Leukopenia, Agranulocytosis, Thrombocytopenia"
+            },
+            {
+              "s": "emc-100453",
+              "q": "Not known Toxic epidermal necrolysis (TEN), Stevens-Johnson syndrome, Drug reaction with eosinophilia and systemic symptoms (DRESS), Pemphigoid"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS (heart failure) baseline: renal function (creatinine/eGFR) and electrolytes; contraindicated if potassium > 5.0 mmol/L or severe renal impairment.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "sps-spironolactone-monitoring",
+              "q": "Electrolytes Serum potassium · contraindicated if greater than 5.0 mmol/L"
+            },
+            {
+              "s": "sps-spironolactone-monitoring",
+              "q": "contraindicated in severe renal impairment or acute renal insufficiency"
+            }
+          ]
+        },
+        {
+          "t": "Potassium and creatinine 1 week after starting or any dose increase, monthly for 3 months, then every 3 months for a year, then every 6 months (SmPC, severe heart failure; SPS the same). Blood pressure before and after each dose change (SPS).",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "The recommended monitoring for potassium and creatinine is 1 week after initiation or increase in dose of spironolactone, monthly for the first 3 months, then quarterly for a year, and then every 6 months."
+            },
+            {
+              "s": "sps-spironolactone-monitoring",
+              "q": "After 1 week; then monthly for first 3 months, then every 3 months for one year"
+            },
+            {
+              "s": "sps-spironolactone-monitoring",
+              "q": "Every 6 months Serum creatinine (for creatinine clearance) or Estimated glomerular filtration rate Electrolytes"
+            }
+          ]
+        },
+        {
+          "t": "SPS: reduce dose and recheck if potassium is > 5.5 and < 6 mmol/L; stop and seek specialist advice if potassium > 6 mmol/L. SmPC (severe heart failure): stop or interrupt if potassium > 5 mEq/L.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "sps-spironolactone-monitoring",
+              "q": "Potassium is greater than 5.5 mmol/L and less than 6 mmol/L"
+            },
+            {
+              "s": "sps-spironolactone-monitoring",
+              "q": "Stop and seek specialist advice if any of the following occur: Potassium Potassium is greater than 6 mmol/L"
+            },
+            {
+              "s": "emc-1619",
+              "q": "Discontinue or interrupt treatment for serum potassium >5 mEq/L"
+            }
+          ]
+        },
+        {
+          "t": "MHRA: with ACE inhibitors/ARBs in heart failure, monitor potassium and renal function regularly.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "mhra-dsu-spironolactone-ras-hyperkalaemia",
+              "q": "regularly monitor serum potassium levels and renal function"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Tablets: once daily with a meal is recommended.",
+          "formulations": [
+            "spironolactone-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Administration of Aldactone once daily with a meal is recommended."
+            }
+          ]
+        },
+        {
+          "t": "Suspension: take with a meal; shake well; use the 1 ml syringe for doses up to 10 mg and the 5 ml syringe for larger doses; follow with water. Can be given via nasogastric tube.",
+          "formulations": [
+            "spironolactone-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-100453",
+              "q": "Spironolactone should be taken together with a meal."
+            },
+            {
+              "s": "emc-100453",
+              "q": "The smaller 1 ml syringe is for measuring doses of less than or equal to 10 mg."
+            },
+            {
+              "s": "emc-100453",
+              "q": "water should be taken after each dose of spironolactone"
+            },
+            {
+              "s": "emc-100453",
+              "q": "Suitable for administration via nasogastric (NG) feeding tubes."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Avoid NSAIDs unless prescribed and avoid potassium-containing salt substitutes. Contact the prescriber if diarrhoea, vomiting, or infection with fever and sweating occurs.",
+          "src": [
+            {
+              "s": "sps-spironolactone-monitoring",
+              "q": "Avoid NSAIDs unless prescribed Avoid salt substitutes containing potassium Contact prescriber if diarrhoea, vomiting, or infection with fever and sweating occurs"
+            }
+          ]
+        },
+        {
+          "t": "Drowsiness and dizziness can occur; take care driving until the response is known.",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Caution is advised when driving or operating machinery until the response to initial treatment has been determined."
+            }
+          ]
+        },
+        {
+          "t": "Breast enlargement or pain can occur in men; usually reversible.",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "Gynaecomastia may develop in association with the use of spironolactone."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "spironolactone:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "allergen": [
+        "spironolactone"
+      ],
+      "concern": "Hypersensitivity to spironolactone",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "hypersensitivity to spironolactone or to any of the excipients listed in section 6.1"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:condition:hyperkalaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "formulations": [
+        "spironolactone-tab"
+      ],
+      "condition": "hyperkalaemia",
+      "concern": "Hyperkalaemia",
+      "consequence": "Further potassium rise; fatal arrhythmia possible.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Spironolactone is contraindicated in adult and paediatric patients with the following:"
+        },
+        {
+          "s": "emc-1619",
+          "q": "Addison's disease hyperkalaemia hypersensitivity"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:condition:hyperkalaemia-susp",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "formulations": [
+        "spironolactone-susp"
+      ],
+      "condition": "hyperkalaemia",
+      "concern": "Hyperkalaemia (> 5.5 mEq/L)",
+      "consequence": "Further potassium rise; fatal arrhythmia possible.",
+      "action": "Do not use if potassium > 5.5 mEq/L.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-100453",
+          "q": "Hyperkalaemia (> 5.5 mEq/L)"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:condition:hyperkalaemia-sps",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "condition": "hyperkalaemia",
+      "concern": "Potassium > 5.0 mmol/L before starting (SPS, heart failure)",
+      "consequence": "Hyperkalaemia risk.",
+      "action": "SPS: contraindicated if baseline potassium is greater than 5.0 mmol/L.",
+      "sourceWording": "contraindicated if greater than 5.0 mmol/L",
+      "src": [
+        {
+          "s": "sps-spironolactone-monitoring",
+          "q": "Electrolytes Serum potassium · contraindicated if greater than 5.0 mmol/L"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:condition:addisons",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "condition": "addisons-disease",
+      "concern": "Addison's disease",
+      "consequence": "Hyperkalaemia risk.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Addison's disease hyperkalaemia"
+        },
+        {
+          "s": "emc-100453",
+          "q": "- Addison's disease"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:condition:acute-renal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "condition": "acute-renal-insufficiency-anuria",
+      "concern": "Acute renal insufficiency, significant renal compromise or anuria",
+      "consequence": "Hyperkalaemia and renal harm.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "acute renal insufficiency, significant renal compromise, anuria"
+        },
+        {
+          "s": "emc-100453",
+          "q": "Acute renal insufficiency, severe renal impairment (GFR < 30 ml/min), anuria"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:condition:severe-renal-impairment-sps",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal impairment (SPS, heart failure; no number given)",
+      "consequence": "Hyperkalaemia and renal deterioration.",
+      "action": "SPS: contraindicated in severe renal impairment or acute renal insufficiency.",
+      "sourceWording": "contraindicated in severe renal impairment",
+      "src": [
+        {
+          "s": "sps-spironolactone-monitoring",
+          "q": "Before starting Heart failure Baseline"
+        },
+        {
+          "s": "sps-spironolactone-monitoring",
+          "q": "contraindicated in severe renal impairment or acute renal insufficiency"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:condition:sugar-intolerance-susp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "spironolactone",
+      "formulations": [
+        "spironolactone-susp"
+      ],
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency (sucrose in suspension)",
+      "consequence": "Suspension contains 400 mg sucrose per ml.",
+      "action": "Should not take the suspension.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-100453",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:condition:no-contraception-susp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "spironolactone",
+      "formulations": [
+        "spironolactone-susp"
+      ],
+      "condition": "childbearing-potential-no-contraception",
+      "concern": "Woman of childbearing potential not using contraception (suspension SmPC)",
+      "consequence": "Anti-androgenic reproductive toxicity in animals; limited human data.",
+      "action": "Not recommended.",
+      "sourceWording": "not recommended ... in women of childbearing potential not using contraception",
+      "src": [
+        {
+          "s": "emc-100453",
+          "q": "Qaialdo is not recommended during pregnancy and in women of childbearing potential not using contraception."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:renal:gfr-under-30-susp",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "formulations": [
+        "spironolactone-susp"
+      ],
+      "renal": {
+        "measure": "GFR",
+        "max": 30
+      },
+      "concern": "Severe renal impairment (GFR < 30 ml/min) - suspension SmPC",
+      "consequence": "Hyperkalaemia risk.",
+      "action": "Do not use (adults).",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-100453",
+          "q": "Spironolactone is contraindicated in adult patients with severe (GFR < 30 ml/min) renal impairment"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:renal:gfr-60-90-susp",
+      "kind": "renal",
+      "level": "dose",
+      "med": "spironolactone",
+      "formulations": [
+        "spironolactone-susp"
+      ],
+      "renal": {
+        "measure": "GFR",
+        "min": 60,
+        "max": 90,
+        "maxInclusive": true
+      },
+      "concern": "Mild renal impairment (GFR 60-90 ml/min) - suspension SmPC",
+      "consequence": "Higher hyperkalaemia risk.",
+      "action": "Start at the lowest dose; monitor potassium and renal function closely.",
+      "sourceWording": "should be started on the lowest dose",
+      "src": [
+        {
+          "s": "emc-100453",
+          "q": "Patients with mild renal impairment (glomerular filtration rate (GFR) 60 - 90 ml/min) should be started on the lowest dose. Serum potassium levels and renal function should be monitored closely."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:renal:child-gfr-under-60-susp",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "formulations": [
+        "spironolactone-susp"
+      ],
+      "renal": {
+        "measure": "GFR",
+        "max": 60
+      },
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Child with moderate to severe renal impairment (GFR < 60 ml/min) - suspension SmPC",
+      "consequence": "Hyperkalaemia risk.",
+      "action": "Do not use in paediatric patients with GFR 30 to < 60 ml/min (moderate) or < 30 ml/min (severe).",
+      "sourceWording": "contraindicated in paediatric patients with moderate ... to severe ... renal impairment",
+      "src": [
+        {
+          "s": "emc-100453",
+          "q": "Spironolactone is contraindicated in paediatric patients with moderate (GFR 30 - < 60 ml/min) to severe (GFR < 30 ml/min) renal impairment"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:condition:child-renal-impairment-tab",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "formulations": [
+        "spironolactone-tab"
+      ],
+      "condition": "renal-impairment",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Child with moderate to severe renal impairment (tablets SmPC gives no number)",
+      "consequence": "Hyperkalaemia risk.",
+      "action": "Do not use in paediatric patients with moderate to severe renal impairment.",
+      "sourceWording": "contraindicated in paediatric patients with moderate to severe renal impairment",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Spironolactone is contraindicated in paediatric patients with moderate to severe renal impairment."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:renal:egfr-under-20-sps",
+      "kind": "renal",
+      "level": "avoid",
+      "med": "spironolactone",
+      "renal": {
+        "measure": "eGFR",
+        "max": 20
+      },
+      "concern": "eGFR < 20 mL/min/1.73 m² (SPS, heart failure)",
+      "consequence": "Hyperkalaemia and renal deterioration.",
+      "action": "Stop and seek specialist advice.",
+      "sourceWording": "Stop and seek specialist advice",
+      "src": [
+        {
+          "s": "sps-spironolactone-monitoring",
+          "q": "Stop and seek specialist advice if any of the following occur:"
+        },
+        {
+          "s": "sps-spironolactone-monitoring",
+          "q": "eGFR is less than 20mL/min/1.73m2"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:renal:egfr-20-30-sps",
+      "kind": "renal",
+      "level": "dose",
+      "med": "spironolactone",
+      "renal": {
+        "measure": "eGFR",
+        "min": 20,
+        "max": 30
+      },
+      "concern": "eGFR 20-30 mL/min/1.73 m² (SPS, heart failure)",
+      "consequence": "Hyperkalaemia and renal deterioration.",
+      "action": "Reduce the dose and monitor blood biochemistry.",
+      "sourceWording": "Reduce the dose and monitor blood biochemistry",
+      "src": [
+        {
+          "s": "sps-spironolactone-monitoring",
+          "q": "Reduce the dose and monitor blood biochemistry if any of the following occur:"
+        },
+        {
+          "s": "sps-spironolactone-monitoring",
+          "q": "eGFR is less than 20 to 30mL/min/1.73m2"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:hepatic:severe-tab",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "spironolactone",
+      "formulations": [
+        "spironolactone-tab"
+      ],
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe hepatic impairment",
+      "consequence": "May alter metabolism and excretion; electrolyte disturbance.",
+      "action": "Take care; monitor fluid and electrolytes regularly.",
+      "sourceWording": "Care should be taken",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Care should be taken with severe hepatic and renal impairment which may alter drug metabolism and excretion."
+        },
+        {
+          "s": "emc-1619",
+          "q": "Fluid and electrolyte status should be regularly monitored particularly in the elderly, in those with significant renal and hepatic impairment."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:hepatic:any-susp",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "spironolactone",
+      "formulations": [
+        "spironolactone-susp"
+      ],
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Hepatic impairment (suspension SmPC)",
+      "consequence": "Reduced elimination of spironolactone and metabolites.",
+      "action": "Start at the lowest dose, titrate slowly, watch for dose-related adverse reactions.",
+      "sourceWording": "should be started on the lowest dose and titrated slowly",
+      "src": [
+        {
+          "s": "emc-100453",
+          "q": "patients with impaired hepatic function should be started on the lowest dose and titrated slowly."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:age:paediatric-specialist",
+      "kind": "age",
+      "level": "caution",
+      "med": "spironolactone",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Child or adolescent",
+      "consequence": "Limited paediatric data.",
+      "action": "Treat only under guidance of a paediatric specialist. Contraindicated with moderate to severe renal impairment in children.",
+      "sourceWording": "should only be treated under guidance of a paediatric specialist",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Children should only be treated under guidance of a paediatric specialist."
+        },
+        {
+          "s": "emc-1619",
+          "q": "Spironolactone is contraindicated in paediatric patients with moderate to severe renal impairment."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:pregnancy",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "spironolactone",
+      "concern": "Pregnancy",
+      "consequence": "Anti-androgenic effects in animals (possible effect on male genital development); diuretics may reduce placental perfusion.",
+      "action": "Tablets: should not be used unless benefit justifies risk. Suspension: not recommended.",
+      "sourceWording": "should not be used during pregnancy, unless",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Spironolactone should not be used during pregnancy, unless the potential benefit justifies the potential risk."
+        },
+        {
+          "s": "emc-100453",
+          "q": "Qaialdo is not recommended during pregnancy"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "spironolactone",
+      "concern": "Breastfeeding",
+      "consequence": "Active metabolite canrenone passes into milk; insufficient information on infants.",
+      "action": "Should not be used; decide whether to stop breastfeeding or stop/abstain from spironolactone.",
+      "sourceWording": "should not be used during breast-feeding",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Spironolactone should not be used during breast-feeding."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:interaction:potassium-sparing",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "spironolactone",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Eplerenone or other potassium-sparing diuretics",
+      "consequence": "Severe hyperkalaemia.",
+      "action": "Do not combine.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "concomitant use of eplerenone or other potassium sparing diuretics."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:interaction:potassium-supplement",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "spironolactone",
+      "other": "group:potassium-supplement",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium supplements",
+      "consequence": "Hyperkalaemia may be induced.",
+      "action": "Do not give potassium supplements routinely; in severe heart failure avoid oral potassium if serum potassium > 3.5 mEq/L.",
+      "sourceWording": "should not be given routinely",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "potassium supplements should not be given routinely with Aldactone as hyperkalaemia may be induced."
+        },
+        {
+          "s": "emc-1619",
+          "q": "Avoid using oral potassium supplements in patients with serum potassium >3.5 mEq/L."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:interaction:ace-inhibitor-smpc",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "spironolactone",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "ACE inhibitors (SmPC)",
+      "consequence": "Severe hyperkalaemia, particularly in marked renal impairment.",
+      "action": "Should not routinely be used together.",
+      "sourceWording": "should not routinely be used with",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Since ACE inhibitors decrease aldosterone production they should not routinely be used with Aldactone, particularly in patients with marked renal impairment."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:interaction:ace-inhibitor-mhra",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "spironolactone",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "ACE inhibitors in heart failure (MHRA)",
+      "consequence": "Increased risk of severe, potentially fatal hyperkalaemia, particularly in marked renal impairment.",
+      "action": "Use with caution: lowest effective doses if combination is essential; monitor potassium and renal function regularly; interrupt or stop if hyperkalaemia.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "mhra-dsu-spironolactone-ras-hyperkalaemia",
+          "q": "concomitant use of spironolactone with ACEi or ARB increases the risk of severe hyperkalaemia, particularly in patients with marked renal impairment, and should be used with caution"
+        },
+        {
+          "s": "mhra-dsu-spironolactone-ras-clarification",
+          "q": "We now clarify that concomitant use of spironolactone with ACEi or ARB increases the risk of severe hyperkalaemia, particularly in patients with marked renal impairment, and should be used with caution."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:interaction:nsaid",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "spironolactone",
+      "other": "group:nsaid",
+      "effect": "hyperkalaemia",
+      "concern": "NSAIDs (including over-the-counter use)",
+      "consequence": "Severe hyperkalaemia possible (SmPC); NSAIDs also reduce the diuretic effect.",
+      "action": "SPS patient advice: avoid NSAIDs unless prescribed. If an NSAID is prescribed, be aware of the hyperkalaemia risk stated in the SmPC.",
+      "sourceWording": "Avoid NSAIDs unless prescribed",
+      "src": [
+        {
+          "s": "sps-spironolactone-monitoring",
+          "q": "Avoid NSAIDs unless prescribed"
+        },
+        {
+          "s": "emc-1619",
+          "q": "nonsteroidal anti-inflammatory drugs, angiotensin II antagonists, aldosterone blockers, heparin, low molecular weight heparin or other drugs or conditions known to cause hyperkalaemia"
+        },
+        {
+          "s": "emc-1619",
+          "q": "may lead to severe hyperkalaemia."
+        },
+        {
+          "s": "emc-1619",
+          "q": "have been shown to attenuate the diuretic effect of spironolactone."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:interaction:co-trimoxazole",
+      "kind": "interaction",
+      "level": "info",
+      "med": "spironolactone",
+      "other": "co-trimoxazole",
+      "effect": "hyperkalaemia",
+      "concern": "Co-trimoxazole",
+      "consequence": "Clinically relevant hyperkalaemia.",
+      "action": "No specific action stated in the SmPC; be aware of hyperkalaemia risk.",
+      "sourceWording": "may result in clinically relevant hyperkalaemia",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "concomitant use of trimethoprim/sulfamethoxazole (co-trimoxazole) with spironolactone may result in clinically relevant hyperkalaemia."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "spironolactone",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Other antihypertensives",
+      "consequence": "Potentiated blood pressure lowering.",
+      "action": "Their dose may need reducing (suspension SmPC: by about 50%) when spironolactone is added, then adjust.",
+      "sourceWording": "their dosage may need to be reduced",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Potentiation of the effect of antihypertensive drugs occurs and their dosage may need to be reduced when Aldactone is added to the treatment regime and then adjusted as necessary."
+        }
+      ]
+    }
+  ]
+}

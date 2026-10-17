@@ -1,0 +1,1808 @@
+{
+  "id": "ibuprofen",
+  "name": "Ibuprofen",
+  "ingredients": [
+    "ibuprofen"
+  ],
+  "className": "NSAID (propionic acid derivative)",
+  "groups": [
+    "nsaid"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "ibuprofen-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "400 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Each Brufen tablet contains 400 mg Ibuprofen."
+        }
+      ],
+      "sourceIds": [
+        "emc-6713"
+      ]
+    },
+    {
+      "id": "ibuprofen-susp",
+      "label": "Oral suspension 100 mg/5 ml",
+      "route": "oral",
+      "strengths": "100 mg/5 ml",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-4560",
+          "q": "Ibuprofen 100mg/5ml Oral Suspension"
+        }
+      ],
+      "sourceIds": [
+        "emc-4560"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Rheumatoid arthritis (including juvenile), ankylosing spondylitis, osteoarthritis and other arthropathies; soft-tissue and periarticular conditions (e.g. frozen shoulder, bursitis, tendonitis, low back pain, sprains); mild to moderate pain such as dysmenorrhoea, dental and post-operative pain, headache and migraine.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Brufen is indicated for its analgesic and anti-inflammatory effects in the treatment of rheumatoid arthritis (including juvenile rheumatoid arthritis or Still's disease), ankylosing spondylitis, osteoarthritis"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Brufen is also indicated for its analgesic effect in the relief of mild to moderate pain such as dysmenorrhoea, dental and post-operative pain and for the symptomatic relief of headache including migraine headache."
+            }
+          ]
+        },
+        {
+          "t": "Suspension: mild to moderate pain, post-immunisation pyrexia, fever and cold/flu symptoms; on prescription also rheumatic and inflammatory conditions including juvenile rheumatoid arthritis.",
+          "formulations": [
+            "ibuprofen-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-4560",
+              "q": "is used as an analgesic for relief of mild to moderate muscular pain, post-immunisation pyrexia"
+            },
+            {
+              "s": "emc-4560",
+              "q": "rheumatoid arthritis (including juvenile rheumatoid arthritis or Still's disease)"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the SmPCs or the MHRA pages accessed (suspension SmPC splits indications into OTC and prescription-only)."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults and children over 12 (tablets): 1200-1800 mg daily in divided doses; some patients can be maintained on 600-1200 mg daily. In severe or acute conditions may increase, but total must not exceed 2400 mg/day in divided doses. Use the lowest effective dose for the shortest time.",
+          "tag": "Adults: rheumatic and pain",
+          "formulations": [
+            "ibuprofen-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "The recommended dosage of Brufen is 1200-1800 mg daily in divided doses. Some patients can be maintained on 600-1200 mg daily."
+            },
+            {
+              "s": "emc-6713",
+              "q": "provided that the total daily dose does not exceed 2400 mg in divided doses"
+            }
+          ]
+        },
+        {
+          "t": "Suspension, adults and children over 12: 200-400 mg (10-20 ml) up to three times a day; at least 4 hours apart; maximum 1200 mg (60 ml) in 24 hours. See a doctor if needed for more than 10 days.",
+          "tag": "Adults: suspension",
+          "formulations": [
+            "ibuprofen-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-4560",
+              "q": "The recommended dose is 200 mg-400 mg (10-20 ml), up to three times a day as required. Leave at least four hours between doses and do not take more than 1200 mg (60 ml) in any 24 hour period."
+            },
+            {
+              "s": "emc-4560",
+              "q": "or if the product is required for more than 10 days"
+            }
+          ]
+        },
+        {
+          "t": "Elderly: higher risk of serious adverse effects; lowest effective dose for the shortest time; monitor regularly for GI bleeding.",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "The elderly are at increased risk of serious consequences of adverse reactions."
+            },
+            {
+              "s": "emc-6713",
+              "q": "The patient should be monitored regularly for GI bleeding during NSAID therapy."
+            }
+          ]
+        },
+        {
+          "t": "MHRA: avoid high-dose ibuprofen (2400 mg/day or more) in established ischaemic heart disease, peripheral arterial disease, cerebrovascular disease, congestive heart failure (NYHA II-III) or uncontrolled hypertension. No increased cardiovascular risk seen up to 1200 mg/day.",
+          "tag": "High dose",
+          "src": [
+            {
+              "s": "mhra-dsu-high-dose-ibuprofen-2015",
+              "q": "avoid use of high-dose ibuprofen (≥2400 mg per day) in patients with established: ischaemic heart disease peripheral arterial disease cerebrovascular disease congestive heart failure"
+            },
+            {
+              "s": "mhra-dsu-high-dose-ibuprofen-2015",
+              "q": "consider that no increase in cardiovascular risk is seen with ibuprofen at doses up to 1200 mg per day"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Tablets, children: 20 mg/kg/day in divided doses; juvenile rheumatoid arthritis up to 40 mg/kg/day in divided doses. Not recommended under 7 kg; more suitable formulations exist for young children.",
+          "formulations": [
+            "ibuprofen-tab"
+          ],
+          "calc": {
+            "mgPerKg": 20,
+            "per": "day",
+            "of": "ibuprofen"
+          },
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Children: The daily dosage of Brufen is 20 mg/kg of body weight in divided doses. For young children, more suitable formulations are available."
+            },
+            {
+              "s": "emc-6713",
+              "q": "In Juvenile Rheumatoid Arthritis, up to 40 mg/kg of body weight daily in divided doses may be taken. Not recommended for children weighing less than 7 kg."
+            }
+          ]
+        },
+        {
+          "t": "Suspension, pain and fever: 20 mg/kg/day in divided doses. By age: 3-6 months (over 5 kg) 2.5 ml up to 3 times in 24 hours, no longer than 24 hours; 6 months-1 year 2.5 ml 3-4 times a day; 1-4 years 5 ml three times a day; 4-7 years 7.5 ml three times a day; 7-12 years 10 ml three times a day.",
+          "formulations": [
+            "ibuprofen-susp"
+          ],
+          "calc": {
+            "mgPerKg": 20,
+            "per": "day",
+            "ageMinYears": 0.25,
+            "ageMaxYears": 12,
+            "of": "ibuprofen"
+          },
+          "src": [
+            {
+              "s": "emc-4560",
+              "q": "For pain and fever - 20 mg/kg/day in divided doses (including OTC use)."
+            },
+            {
+              "s": "emc-4560",
+              "q": "Infants 3-6 months weighing more than 5 kg: One 2.5 ml dose may be taken 3 times in 24 hours. Do not use for more than 24 hours"
+            },
+            {
+              "s": "emc-4560",
+              "q": "Infants 6 months-1 year: 2.5 ml three to four times a day. Children 1-4 years: 5 ml three times a day. Children 4-7 years: 7.5 ml three times a day. Children 7-12 years: 10 ml three times a day."
+            }
+          ]
+        },
+        {
+          "t": "Post-immunisation fever: 2.5 ml (50 mg), then one more 2.5 ml six hours later if needed; no more than 2 doses in 24 hours.",
+          "formulations": [
+            "ibuprofen-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-4560",
+              "q": "Post-immunisation fever: 2.5 ml (50 mg) followed by one further dose of 2.5 ml (50 mg) six hours later if necessary. No more than 2 doses in 24 hours."
+            }
+          ]
+        },
+        {
+          "t": "Juvenile rheumatoid arthritis (prescription only, suspension): up to 30-40 mg/kg/day in 3 or 4 divided doses.",
+          "formulations": [
+            "ibuprofen-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-4560",
+              "q": "For Juvenile Rheumatoid Arthritis (prescription only use): Doses up to 30-40mg/kg/day may be taken in three or four divided doses."
+            }
+          ]
+        },
+        {
+          "t": "Do not give under 3 months. Infants 3-5 months: seek advice if symptoms worsen or persist beyond 24 hours; from 6 months seek advice if needed for more than 3 days.",
+          "formulations": [
+            "ibuprofen-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-4560",
+              "q": "Do not give to children under 3 months of age."
+            },
+            {
+              "s": "emc-4560",
+              "q": "If in children aged from 6 months and in adolescents this medicinal product is required for more than 3 days, or if symptoms worsen a doctor should be consulted."
+            }
+          ]
+        },
+        {
+          "t": "Risk of renal impairment in dehydrated children and adolescents.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "There is a risk of renal impairment in dehydrated children and adolescents."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to ibuprofen; previous hypersensitivity (asthma, urticaria, angioedema, rhinitis) to ibuprofen, aspirin or other NSAIDs.",
+          "src": [
+            {
+              "s": "emc-4560",
+              "q": "Patients who have previously shown hypersensitivity reactions (e.g. asthma, rhinitis, angioedema or urticaria) after taking ibuprofen, aspirin or other non-steroidal anti-inflammatory drugs (NSAIDs)."
+            }
+          ]
+        },
+        {
+          "t": "History of GI bleeding or perforation related to previous NSAIDs; active or history of recurrent peptic ulcer/haemorrhage; conditions with increased bleeding tendency.",
+          "src": [
+            {
+              "s": "emc-4560",
+              "q": "History of gastrointestinal bleeding or perforation, related to previous NSAID therapy. Active or history of recurrent peptic ulcer/gastrointestinal haemorrhage (two or more distinct episodes of proven ulceration or bleeding). Patients with conditions involving an increased tendency to bleeding."
+            }
+          ]
+        },
+        {
+          "t": "Severe heart failure (NYHA IV), hepatic failure, renal failure; last trimester of pregnancy.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Brufen is contraindicated in patients with severe heart failure (NYHA Class IV), hepatic failure and renal failure"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Brufen is contraindicated during the last trimester of pregnancy"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "GI bleeding, ulceration or perforation can occur at any time and can be fatal; risk rises with dose, ulcer history and age. Start at the lowest dose; consider misoprostol or a PPI in these patients and with low-dose aspirin or other drugs raising GI risk. Stop if GI bleeding or ulceration occurs.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Combination therapy with protective agents (e.g. misoprostol or proton pump inhibitors) should be considered for these patients"
+            },
+            {
+              "s": "emc-6713",
+              "q": "When GI bleeding or ulceration occurs in patients receiving Brufen, the treatment should be withdrawn."
+            }
+          ]
+        },
+        {
+          "t": "Cardiovascular: high dose (2400 mg/day) may slightly increase arterial thrombotic risk; low dose (1200 mg/day or less) not shown to. Uncontrolled hypertension, heart failure NYHA II-III, ischaemic heart disease, peripheral arterial disease or cerebrovascular disease: only after careful consideration and avoid 2400 mg/day.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Patients with uncontrolled hypertension, congestive heart failure (NYHA II-III), established ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease should only be treated with ibuprofen after careful consideration and high doses (2400mg/day) should be avoided."
+            }
+          ]
+        },
+        {
+          "t": "Renal: may precipitate renal failure; highest risk with renal, cardiac or liver impairment, diuretics, ACE inhibitors and in the elderly. Use lowest dose, shortest time and monitor renal function. Caution in significant dehydration.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "For these patients, use the lowest effective dose, for the shortest possible duration and monitor renal function especially in long-term treated patients"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Caution should be used when initiating treatment with ibuprofen in patients with considerable dehydration."
+            }
+          ]
+        },
+        {
+          "t": "Asthma, chronic rhinitis or allergic disease: caution (bronchospasm, urticaria, angioedema).",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Caution is required if Brufen is administered to patients suffering from, or with a previous history of, bronchial asthma, chronic rhinitis or allergic diseases"
+            }
+          ]
+        },
+        {
+          "t": "Ulcerative colitis or Crohn's disease: give with care (may be exacerbated). SLE / mixed connective tissue disease: increased risk of aseptic meningitis.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "NSAIDs should be given with care to patients with a history of ulcerative colitis or Crohn's disease as these conditions may be exacerbated"
+            },
+            {
+              "s": "emc-6713",
+              "q": "In patients with systemic lupus erythematosus (SLE) and mixed connective tissue disorders there may be an increased risk of aseptic meningitis"
+            }
+          ]
+        },
+        {
+          "t": "Severe skin reactions (SJS, TEN, DRESS, AGEP): stop immediately at first signs. Avoid in chickenpox. May mask signs of infection.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "If signs and symptoms suggestive of these reactions appear ibuprofen should be withdrawn immediately"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Thus, it is advisable to avoid use of Ibuprofen in case of varicella."
+            }
+          ]
+        },
+        {
+          "t": "Avoid with other NSAIDs including COX-2 inhibitors.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "The use of Brufen with concomitant NSAIDs, including cyclooxygenase-2 selective inhibitors, should be avoided due to the increased risk of ulceration or bleeding"
+            }
+          ]
+        },
+        {
+          "t": "Renal tubular acidosis and hypokalaemia with long-term high doses (usually over 4 weeks) or overdose.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Renal tubular acidosis and hypokalaemia may occur following acute overdose and in patients taking ibuprofen products over long periods at high doses (typically greater than 4 weeks)"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Anticoagulants (e.g. warfarin): NSAIDs may enhance their effect. Antiplatelets and SSRIs: increased GI bleeding risk. Corticosteroids: increased GI ulceration or bleeding.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Anticoagulants: NSAIDs may enhance the effects of anticoagulants, such as warfarin"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Anti-platelet agents and selective serotonin reuptake inhibitors (SSRIs): Increased risk of gastrointestinal bleeding with NSAIDs"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Corticosteroids: Increased risk of gastrointestinal ulceration or bleeding with NSAIDs"
+            }
+          ]
+        },
+        {
+          "t": "ACE inhibitors, angiotensin-II receptor antagonists, beta-blockers, diuretics: reduced antihypertensive effect; diuretics increase nephrotoxicity risk.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "NSAIDs may reduce the effect of anti-hypertensives, such as ACE inhibitors, angiotensin-II receptor antagonists, beta-blockers and diuretics. Diuretics can also increase the risk of nephrotoxicity of NSAIDs."
+            }
+          ]
+        },
+        {
+          "t": "Methotrexate: NSAIDs may reduce methotrexate clearance. Tablets SmPC: take care. Suspension SmPC lists methotrexate under combinations to avoid.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Methotrexate: NSAIDs may inhibit the tubular secretion of methotrexate and reduce clearance of methotrexate."
+            },
+            {
+              "s": "emc-4560",
+              "q": "Ibuprofen should be avoided in combination with:"
+            }
+          ]
+        },
+        {
+          "t": "Quinolone antibiotics: possible increased risk of convulsions.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Patients taking NSAIDs and quinolones may have an increased risk of developing convulsions."
+            }
+          ]
+        },
+        {
+          "t": "Aspirin: not generally recommended together; regular ibuprofen may reduce the cardioprotective effect of low-dose aspirin. Other NSAIDs: avoid.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "the possibility that regular, long-term use of ibuprofen may reduce the cardioprotective effect of low-dose acetylsalicylic acid cannot be excluded"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Avoid concomitant use of two or more NSAIDs, including Cox-2 inhibitors"
+            }
+          ]
+        },
+        {
+          "t": "Others: lithium (reduced elimination), ciclosporin and tacrolimus (nephrotoxicity), sulfonylureas (hypoglycaemia, rare), CYP2C9 inhibitors such as fluconazole/voriconazole (consider ibuprofen dose reduction), zidovudine, cardiac glycosides.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Lithium: Decreased elimination of lithium."
+            },
+            {
+              "s": "emc-6713",
+              "q": "Reduction of the ibuprofen dose should be considered when potent CYP2C9 inhibitors are administered concomitantly"
+            }
+          ]
+        },
+        {
+          "t": "Warfarin (warfarin SmPC): NSAIDs should be avoided if possible, or given with caution and increased clinical and laboratory monitoring.",
+          "src": [
+            {
+              "s": "emc-2803",
+              "q": "The following examples should be avoided, or administered with caution with increased clinical and laboratory monitoring"
+            }
+          ]
+        },
+        {
+          "t": "Spironolactone (spironolactone SmPC): use with NSAIDs may lead to severe hyperkalaemia. ACE inhibitors (lisinopril SmPC): worsening renal function and raised serum potassium; caution, keep hydrated, monitor renal function.",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "may lead to severe hyperkalaemia"
+            },
+            {
+              "s": "emc-7611",
+              "q": "The combination should be administered with caution, especially in the elderly."
+            }
+          ]
+        },
+        {
+          "t": "Metformin (metformin SmPC): close monitoring of renal function is necessary when an NSAID is started or used with metformin.",
+          "src": [
+            {
+              "s": "emc-987",
+              "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary."
+            }
+          ]
+        },
+        {
+          "t": "Methotrexate (SPS, methotrexate SmPC): increased risk of methotrexate toxicity; use with caution on specialist advice; not recommended if renal impairment (even mild) is present.",
+          "src": [
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Use NSAIDs in combination with methotrexate with caution on the advice of the specialist (for example, rheumatologist)."
+            },
+            {
+              "s": "emc-10988",
+              "q": "If risk factors such as renal function disorders, including mild renal impairment, are present, combined administration with NSAIDs is not recommended."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Renal failure / severe renal insufficiency: contraindicated (no numeric threshold given).",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "patients with severe renal insufficiency (see section 4.3 - Contraindications)"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Brufen is contraindicated in patients with severe heart failure (NYHA Class IV), hepatic failure and renal failure"
+            }
+          ]
+        },
+        {
+          "t": "Mild to moderate renal impairment: lowest effective dose, shortest duration, monitor renal function; dose assessed individually.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "If renal or hepatic function is impaired, dosage should be assessed individually."
+            },
+            {
+              "s": "emc-6713",
+              "q": "use the lowest effective dose, for the shortest possible duration and monitor renal function"
+            }
+          ]
+        },
+        {
+          "t": "MHRA: patients at risk of renal impairment or failure (particularly elderly) should avoid NSAIDs if possible; if essential, lowest dose for shortest time with careful renal monitoring.",
+          "src": [
+            {
+              "s": "mhra-dsu-nsaids-renal-2009",
+              "q": "patients at risk of renal impairment or renal failure (particularly elderly people) should avoid NSAIDs if possible"
+            },
+            {
+              "s": "mhra-dsu-nsaids-renal-2009",
+              "q": "the renal function of such patients should be carefully monitored during NSAID treatment"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Hepatic failure / severe hepatic dysfunction: contraindicated. Mild to moderate impairment: caution; dose assessed individually.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "For patients with mild to moderate hepatic impairment (see section 4.4 Special warnings and precautions for use) and patients with severe hepatic dysfunction (see section 4.3-Contraindications)."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Third trimester: contraindicated (ductus arteriosus closure, fetal renal dysfunction, prolonged bleeding, delayed labour).",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Consequently, Brufen is contraindicated during the third trimester of pregnancy."
+            }
+          ]
+        },
+        {
+          "t": "First and second trimesters: do not give unless clearly necessary; lowest dose and shortest time. From week 20: oligohydramnios and ductus arteriosus constriction reported; consider antenatal monitoring after several days of use; stop if found.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Therefore, during the first and second trimester of pregnancy, Brufen should not be given unless clearly necessary."
+            },
+            {
+              "s": "emc-6713",
+              "q": "Antenatal monitoring for oligohydramnios and ductus arteriosus constriction should be considered after exposure to ibuprofen for several days from gestational week 20 onward."
+            }
+          ]
+        },
+        {
+          "t": "MHRA: avoid systemic NSAIDs from week 20 unless clinically required; contraindicated after 28 weeks. Patients should not swap paracetamol for ibuprofen in pregnancy.",
+          "src": [
+            {
+              "s": "mhra-dsu-nsaids-pregnancy-2023",
+              "q": "avoid prescribing systemic NSAIDs from week 20 of pregnancy unless clinically required and prescribe the lowest dose for the shortest time in these circumstances"
+            },
+            {
+              "s": "mhra-dsu-paracetamol-pregnancy-2025",
+              "q": "patients should not swap to alternatives such as ibuprofen"
+            }
+          ]
+        },
+        {
+          "t": "SPS: ibuprofen is the preferred NSAID in pregnancy; may be used if needed in the first trimester; usually no longer than 3 days from week 20. BUMPS: not advised unless prescribed by a doctor, especially from 20 weeks.",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-pain-pregnancy",
+              "q": "Ibuprofen is the preferred NSAID in pregnancy."
+            },
+            {
+              "s": "bumps-ibuprofen",
+              "q": "Use of ibuprofen during pregnancy is not advised unless prescribed by a doctor, especially if you are 20 or more weeks pregnant."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPCs: NSAIDs appear in milk in very low concentrations; avoid if possible when breastfeeding.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "NSAIDs should, if possible, be avoided when breastfeeding."
+            }
+          ]
+        },
+        {
+          "t": "SPS (less restrictive): ibuprofen is the NSAID of choice in breastfeeding; negligible amounts in milk; monitor infant for vomiting and diarrhoea.",
+          "src": [
+            {
+              "s": "sps-bf-nsaids",
+              "q": "Ibuprofen is the NSAID of choice for treating mild to moderate pain during breastfeeding."
+            },
+            {
+              "s": "sps-bf-nsaids",
+              "q": "As a precaution, monitor infants for vomiting and diarrhoea."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "May impair female fertility; not recommended in women attempting to conceive; consider stopping in women with difficulty conceiving or under investigation.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "The use of Brufen may impair female fertility and is not recommended in women attempting to conceive."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: headache, dizziness, dyspepsia, diarrhoea, nausea, vomiting, abdominal pain, flatulence, constipation, melaena, haematemesis, GI haemorrhage, rash, fatigue.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Nervous system disorders Common Headache, dizziness"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Gastrointestinal disorders Common Dyspepsia, diarrhoea, nausea, vomiting, abdominal pain, flatulence, constipation, melaena, haematemesis, gastrointestinal haemorrhage"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Skin and subcutaneous tissue disorders Common Rash"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Peptic ulcer, perforation or GI bleeding (sometimes fatal, especially elderly): stop treatment.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Peptic ulcers, perforation or GI bleeding, sometimes fatal, particularly in the elderly, may occur"
+            }
+          ]
+        },
+        {
+          "t": "Severe skin reactions (SJS/TEN very rare; DRESS, AGEP not known): withdraw immediately.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Very rare Severe cutaneous adverse reactions (SCARs) (including Erythema multiforme, exfoliative dermatitis, Stevens-Johnson syndrome, and toxic epidermal necrolysis)"
+            }
+          ]
+        },
+        {
+          "t": "Anaphylaxis (rare), bronchospasm/asthma (uncommon), angioedema (uncommon).",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Rare Anaphylactic reaction"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Uncommon Asthma, bronchospasm, dyspnoea"
+            }
+          ]
+        },
+        {
+          "t": "Nephrotoxicity including renal failure (uncommon); cardiac failure and myocardial infarction (very rare); hepatic failure (very rare); aseptic meningitis and blood dyscrasias (rare).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Uncommon Nephrotoxity in various forms e.g.Tubulointerstitial nephritis, nephrotic syndrome and renal failure"
+            },
+            {
+              "s": "emc-6713",
+              "q": "Cardiac disorders Very rare Cardiac failure, myocardial infarction"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS baseline: blood pressure, eGFR, full blood count, serum creatinine; LFTs if hepatic impairment.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "sps-nsaids-monitoring",
+              "q": "Estimated glomerular filtration rate Full blood count Serum creatinine Liver function tests"
+            },
+            {
+              "s": "sps-nsaids-monitoring",
+              "q": "Before starting Consider Baseline Blood pressure"
+            }
+          ]
+        },
+        {
+          "t": "SPS after starting or dose change: eGFR or serum creatinine and FBC within 2 weeks; blood pressure within 4 weeks; haemoglobin within 4 weeks if high GI risk.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "sps-nsaids-monitoring",
+              "q": "After started or dose changed Consider Within 2 weeks Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Full blood count"
+            },
+            {
+              "s": "sps-nsaids-monitoring",
+              "q": "Within 4 weeks Haemoglobin"
+            }
+          ]
+        },
+        {
+          "t": "SmPC: monitor renal function in at-risk and long-term patients; monitor elderly regularly for GI bleeding; monitoring and advice in hypertension or heart failure (fluid retention).",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "Appropriate monitoring and advice are required for patients with a history of hypertension and/or mild to moderate congestive heart failure as fluid retention and oedema have been reported in association with NSAID therapy."
+            }
+          ]
+        },
+        {
+          "t": "Stop if GI bleeding or ulceration, or at first signs of severe skin reaction.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "When GI bleeding or ulceration occurs in patients receiving Brufen, the treatment should be withdrawn."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Tablets: preferably with or after food with plenty of fluid; swallow whole, do not chew, break, crush or suck.",
+          "formulations": [
+            "ibuprofen-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "To be taken preferably with or after food, with plenty of fluid. Brufen tablets should be swallowed whole and not chewed, broken, crushed or sucked on"
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report any unusual abdominal symptoms, especially bleeding (black stools, vomiting blood), particularly early in treatment.",
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "should report any unusual abdominal symptoms (especially gastrointestinal bleeding) particularly in the initial stages of treatment"
+            }
+          ]
+        },
+        {
+          "t": "Pregnant patients: avoid non-prescription NSAIDs from week 20 unless advised by a healthcare professional (MHRA).",
+          "src": [
+            {
+              "s": "mhra-dsu-nsaids-pregnancy-2023",
+              "q": "please advise patients who are pregnant to avoid use of NSAIDs available without prescription from week 20 of pregnancy onwards unless advised by their healthcare professional"
+            }
+          ]
+        },
+        {
+          "t": "May cause dizziness, drowsiness, fatigue or visual disturbance; do not drive if affected.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6713",
+              "q": "If affected, patients should not drive or operate machinery."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "ibuprofen:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "allergen": [
+        "ibuprofen"
+      ],
+      "concern": "Ibuprofen hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in patients with hypersensitivity",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Brufen is contraindicated in patients with hypersensitivity to the active substance or to any of the excipients."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:allergy:nsaid-susp",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "formulations": [
+        "ibuprofen-susp"
+      ],
+      "allergen": [
+        "group:nsaid"
+      ],
+      "concern": "Previous hypersensitivity (asthma, rhinitis, angioedema, urticaria) to aspirin or another NSAID",
+      "consequence": "Cross-reactive hypersensitivity, including bronchospasm.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-4560",
+          "q": "Patients who have previously shown hypersensitivity reactions (e.g. asthma, rhinitis, angioedema or urticaria) after taking ibuprofen, aspirin or other non-steroidal anti-inflammatory drugs (NSAIDs)."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:allergy:nsaid-tab",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "formulations": [
+        "ibuprofen-tab"
+      ],
+      "allergen": [
+        "group:nsaid"
+      ],
+      "concern": "Previous hypersensitivity (asthma, urticaria, angioedema, rhinitis) to aspirin or another NSAID",
+      "consequence": "Cross-reactive hypersensitivity.",
+      "action": "Do not use (listed in the 400 mg tablet SmPC section 4.3, worded 'should not be used').",
+      "sourceWording": "4.3 Contraindications: should not be used",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Brufen should not be used in patients who have previously shown hypersensitivity reactions (e.g. asthma, urticaria, angioedema or rhinitis) after taking ibuprofen, aspirin or other NSAIDs."
+        },
+        {
+          "s": "emc-6713",
+          "q": "4.3 Contraindications Brufen is contraindicated in patients with hypersensitivity"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:nsaid-asthma-susp",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "formulations": [
+        "ibuprofen-susp"
+      ],
+      "condition": "nsaid-hypersensitivity-asthma",
+      "concern": "Asthma, rhinitis, angioedema or urticaria triggered by aspirin/NSAIDs",
+      "consequence": "Severe bronchospasm or hypersensitivity.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-4560",
+          "q": "Patients who have previously shown hypersensitivity reactions (e.g. asthma, rhinitis, angioedema or urticaria) after taking ibuprofen, aspirin or other non-steroidal anti-inflammatory drugs (NSAIDs)."
+        },
+        {
+          "s": "sps-nsaids-asthma",
+          "q": "History of NERD Do not use oral or topical NSAIDs."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:nsaid-asthma-tab",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "formulations": [
+        "ibuprofen-tab"
+      ],
+      "condition": "nsaid-hypersensitivity-asthma",
+      "concern": "Asthma, urticaria, angioedema or rhinitis triggered by aspirin/NSAIDs",
+      "consequence": "Severe bronchospasm or hypersensitivity.",
+      "action": "Do not use (listed in the 400 mg tablet SmPC section 4.3, worded 'should not be used'); SPS: do not use oral or topical NSAIDs with a history of NERD.",
+      "sourceWording": "4.3 Contraindications: should not be used",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Brufen should not be used in patients who have previously shown hypersensitivity reactions (e.g. asthma, urticaria, angioedema or rhinitis) after taking ibuprofen, aspirin or other NSAIDs."
+        },
+        {
+          "s": "sps-nsaids-asthma",
+          "q": "History of NERD Do not use oral or topical NSAIDs."
+        },
+        {
+          "s": "emc-6713",
+          "q": "4.3 Contraindications Brufen is contraindicated in patients with hypersensitivity"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:asthma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ibuprofen",
+      "condition": "asthma",
+      "concern": "Asthma (current or past), chronic rhinitis or allergic disease",
+      "consequence": "NSAIDs may precipitate bronchospasm, urticaria or angioedema.",
+      "action": "Caution; monitor for worsening asthma (SPS).",
+      "sourceWording": "Caution is required",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Caution is required if Brufen is administered to patients suffering from, or with a previous history of, bronchial asthma, chronic rhinitis or allergic diseases"
+        },
+        {
+          "s": "sps-nsaids-asthma",
+          "q": "Use oral or topical NSAIDs with caution and monitor for symptoms such as exacerbation of asthma."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:gi-ulcer-bleed",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "condition": "peptic-ulcer-gi-bleeding",
+      "effect": "bleeding",
+      "concern": "NSAID-related GI bleeding/perforation history, or active/recurrent peptic ulcer or haemorrhage",
+      "consequence": "GI bleeding, ulceration or perforation, which can be fatal.",
+      "action": "Do not use (tablet SmPC wording for active/recurrent peptic ulcer: should not be used).",
+      "sourceWording": "contraindicated in patients with a history of gastrointestinal bleeding or perforation, related to previous NSAID therapy",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Brufen is also contraindicated in patients with a history of gastrointestinal bleeding or perforation, related to previous NSAID therapy."
+        },
+        {
+          "s": "emc-6713",
+          "q": "Brufen should not be used in patients with active, or history of, recurrent peptic ulcer or gastrointestinal haemorrhage"
+        },
+        {
+          "s": "emc-4560",
+          "q": "Active or history of recurrent peptic ulcer/gastrointestinal haemorrhage (two or more distinct episodes of proven ulceration or bleeding)."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:bleeding-susp",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "formulations": [
+        "ibuprofen-susp"
+      ],
+      "condition": "bleeding-disorder",
+      "effect": "bleeding",
+      "concern": "Conditions with increased bleeding tendency",
+      "consequence": "Ibuprofen inhibits platelet aggregation and prolongs bleeding time.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-4560",
+          "q": "Patients with conditions involving an increased tendency to bleeding."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:bleeding-tab",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "formulations": [
+        "ibuprofen-tab"
+      ],
+      "condition": "bleeding-disorder",
+      "effect": "bleeding",
+      "concern": "Conditions with increased bleeding tendency",
+      "consequence": "Ibuprofen inhibits platelet aggregation and prolongs bleeding time.",
+      "action": "Do not use (listed in the 400 mg tablet SmPC section 4.3, worded 'should not be given').",
+      "sourceWording": "4.3 Contraindications: should not be given",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Brufen should not be given to patients with conditions involving an increased tendency to bleeding."
+        },
+        {
+          "s": "emc-6713",
+          "q": "Brufen should not be given to patients with conditions involving an increased tendency to bleeding. Brufen is contraindicated in patients with severe heart failure"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:severe-hf",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "condition": "severe-heart-failure",
+      "concern": "Severe heart failure (NYHA IV)",
+      "consequence": "Fluid retention; cardiac failure.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Brufen is contraindicated in patients with severe heart failure (NYHA Class IV)"
+        },
+        {
+          "s": "mhra-dsu-high-dose-ibuprofen-2015",
+          "q": "we remind you that ibuprofen is contraindicated in patients with severe heart failure"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:hf",
+      "kind": "condition",
+      "level": "dose",
+      "med": "ibuprofen",
+      "condition": "heart-failure",
+      "concern": "Congestive heart failure (NYHA II-III)",
+      "consequence": "Fluid retention, oedema; higher thrombotic risk at high dose.",
+      "action": "Only after careful consideration; avoid 2400 mg/day; monitor and advise.",
+      "sourceWording": "should only be treated with ibuprofen after careful consideration and high doses (2400mg/day) should be avoided",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Patients with uncontrolled hypertension, congestive heart failure (NYHA II-III), established ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease should only be treated with ibuprofen after careful consideration and high doses (2400mg/day) should be avoided."
+        },
+        {
+          "s": "mhra-dsu-high-dose-ibuprofen-2015",
+          "q": "avoid use of high-dose ibuprofen (≥2400 mg per day) in patients with established"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:ihd",
+      "kind": "condition",
+      "level": "dose",
+      "med": "ibuprofen",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Established ischaemic heart disease",
+      "consequence": "Small increase in arterial thrombotic risk with high dose.",
+      "action": "Only after careful consideration; avoid 2400 mg/day or more.",
+      "sourceWording": "high doses (2400mg/day) should be avoided",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "established ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease should only be treated with ibuprofen after careful consideration and high doses (2400mg/day) should be avoided"
+        },
+        {
+          "s": "mhra-dsu-high-dose-ibuprofen-2015",
+          "q": "avoid use of high-dose ibuprofen (≥2400 mg per day) in patients with established"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:pad",
+      "kind": "condition",
+      "level": "dose",
+      "med": "ibuprofen",
+      "condition": "peripheral-arterial-disease",
+      "concern": "Peripheral arterial disease",
+      "consequence": "Small increase in arterial thrombotic risk with high dose.",
+      "action": "Only after careful consideration; avoid 2400 mg/day or more.",
+      "sourceWording": "high doses (2400mg/day) should be avoided",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "established ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease should only be treated with ibuprofen after careful consideration and high doses (2400mg/day) should be avoided"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:cvd",
+      "kind": "condition",
+      "level": "dose",
+      "med": "ibuprofen",
+      "condition": "cerebrovascular-disease",
+      "concern": "Cerebrovascular disease",
+      "consequence": "Small increase in arterial thrombotic risk (stroke) with high dose.",
+      "action": "Only after careful consideration; avoid 2400 mg/day or more.",
+      "sourceWording": "high doses (2400mg/day) should be avoided",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "established ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease should only be treated with ibuprofen after careful consideration and high doses (2400mg/day) should be avoided"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:hypertension",
+      "kind": "condition",
+      "level": "dose",
+      "med": "ibuprofen",
+      "condition": "hypertension",
+      "concern": "Hypertension (especially uncontrolled)",
+      "consequence": "Fluid retention, oedema, raised blood pressure.",
+      "action": "Monitoring and advice; uncontrolled hypertension: only after careful consideration and avoid 2400 mg/day.",
+      "sourceWording": "Appropriate monitoring and advice are required; high doses (2400mg/day) should be avoided",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Appropriate monitoring and advice are required for patients with a history of hypertension"
+        },
+        {
+          "s": "emc-6713",
+          "q": "Patients with uncontrolled hypertension, congestive heart failure (NYHA II-III)"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:severe-renal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "condition": "severe-renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "Renal failure / severe renal insufficiency",
+      "consequence": "May precipitate or worsen renal failure.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in patients with ... renal failure",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Brufen is contraindicated in patients with severe heart failure (NYHA Class IV), hepatic failure and renal failure"
+        },
+        {
+          "s": "emc-4560",
+          "q": "Severe hepatic failure, renal failure and heart failure (NYHA Class IV)"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:renal-smpc",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "ibuprofen",
+      "condition": "renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "Renal impairment (mild to moderate)",
+      "consequence": "Dose-dependent fall in prostaglandins may precipitate renal failure.",
+      "action": "Lowest effective dose, shortest duration; monitor renal function.",
+      "sourceWording": "monitor renal function",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "use the lowest effective dose, for the shortest possible duration and monitor renal function especially in long-term treated patients"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:renal-mhra",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "ibuprofen",
+      "condition": "renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "At risk of renal impairment or renal failure (MHRA)",
+      "consequence": "NSAIDs may precipitate acute renal failure.",
+      "action": "Avoid NSAIDs if possible; if essential, lowest dose for shortest time with careful renal monitoring.",
+      "sourceWording": "should avoid NSAIDs if possible",
+      "src": [
+        {
+          "s": "mhra-dsu-nsaids-renal-2009",
+          "q": "patients at risk of renal impairment or renal failure (particularly elderly people) should avoid NSAIDs if possible"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:dehydration",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ibuprofen",
+      "condition": "dehydration-hypovolaemia",
+      "effect": "nephrotoxicity",
+      "concern": "Considerable dehydration",
+      "consequence": "Risk of renal impairment, especially in children, adolescents and elderly.",
+      "action": "Caution when starting.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Caution should be used when initiating treatment with ibuprofen in patients with considerable dehydration."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Hepatic failure / severe hepatic dysfunction",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in patients with ... hepatic failure",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Brufen is contraindicated in patients with severe heart failure (NYHA Class IV), hepatic failure and renal failure"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:hepatic:mild-moderate",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "ibuprofen",
+      "hepatic": [
+        "mild",
+        "moderate"
+      ],
+      "concern": "Mild to moderate hepatic impairment",
+      "consequence": "Higher risk of renal adverse effects with liver dysfunction.",
+      "action": "Caution; assess dose individually.",
+      "sourceWording": "dosage should be assessed individually",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "If renal or hepatic function is impaired, dosage should be assessed individually."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:ibd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ibuprofen",
+      "condition": "inflammatory-bowel-disease",
+      "concern": "Ulcerative colitis or Crohn's disease",
+      "consequence": "May be exacerbated.",
+      "action": "Give with care.",
+      "sourceWording": "should be given with care",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "NSAIDs should be given with care to patients with a history of ulcerative colitis or Crohn's disease as these conditions may be exacerbated"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:lupus",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ibuprofen",
+      "condition": "lupus",
+      "concern": "SLE or mixed connective tissue disease",
+      "consequence": "Increased risk of aseptic meningitis.",
+      "action": "Be aware of aseptic meningitis risk.",
+      "sourceWording": "there may be an increased risk of aseptic meningitis",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "In patients with systemic lupus erythematosus (SLE) and mixed connective tissue disorders there may be an increased risk of aseptic meningitis"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:varicella",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "ibuprofen",
+      "condition": "varicella",
+      "concern": "Chickenpox (varicella)",
+      "consequence": "Serious skin and soft-tissue infectious complications.",
+      "action": "Advisable to avoid.",
+      "sourceWording": "it is advisable to avoid use of Ibuprofen in case of varicella",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Thus, it is advisable to avoid use of Ibuprofen in case of varicella."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:condition:conceive",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "ibuprofen",
+      "condition": "attempting-to-conceive",
+      "concern": "Woman attempting to conceive",
+      "consequence": "May impair female fertility.",
+      "action": "Not recommended; consider stopping if difficulty conceiving.",
+      "sourceWording": "is not recommended in women attempting to conceive",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "The use of Brufen may impair female fertility and is not recommended in women attempting to conceive."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:age:susp-under-3m",
+      "kind": "age",
+      "level": "avoid",
+      "med": "ibuprofen",
+      "formulations": [
+        "ibuprofen-susp"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 0.25
+      },
+      "concern": "Infant under 3 months",
+      "consequence": "Not for this age.",
+      "action": "Do not give.",
+      "sourceWording": "Do not give to children under 3 months of age",
+      "src": [
+        {
+          "s": "emc-4560",
+          "q": "Do not give to children under 3 months of age."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:pregnancy:t3",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "ibuprofen",
+      "trimesters": [
+        3
+      ],
+      "concern": "Third trimester (from 28 weeks)",
+      "consequence": "Premature closure of ductus arteriosus, fetal renal dysfunction, prolonged bleeding, delayed labour.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated during the third trimester of pregnancy",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Consequently, Brufen is contraindicated during the third trimester of pregnancy."
+        },
+        {
+          "s": "mhra-dsu-nsaids-pregnancy-2023",
+          "q": "systemic (oral and injectable) NSAIDs are contraindicated during the last trimester (after 28 weeks) of pregnancy"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:pregnancy:t1-t2",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "ibuprofen",
+      "trimesters": [
+        1,
+        2
+      ],
+      "concern": "First and second trimesters (especially from week 20)",
+      "consequence": "Miscarriage/malformation signal early; oligohydramnios and ductus arteriosus constriction from week 20.",
+      "action": "Do not give unless clearly necessary; lowest dose, shortest time; from week 20 consider antenatal monitoring after several days' use.",
+      "sourceWording": "should not be given unless clearly necessary",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Therefore, during the first and second trimester of pregnancy, Brufen should not be given unless clearly necessary."
+        },
+        {
+          "s": "mhra-dsu-nsaids-pregnancy-2023",
+          "q": "avoid prescribing systemic NSAIDs from week 20 of pregnancy unless clinically required"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "ibuprofen",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Very low concentrations in milk.",
+      "action": "Avoid if possible (SPS is less restrictive: NSAID of choice).",
+      "sourceWording": "should, if possible, be avoided when breastfeeding",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "NSAIDs should, if possible, be avoided when breastfeeding."
+        },
+        {
+          "s": "emc-4560",
+          "q": "NSAIDs should, if possible, be avoided when breastfeeding."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "ibuprofen",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Negligible amounts in milk; no infant side effects reported.",
+      "action": "NSAID of choice; monitor infant for vomiting and diarrhoea.",
+      "sourceWording": "Ibuprofen is the NSAID of choice",
+      "src": [
+        {
+          "s": "sps-bf-nsaids",
+          "q": "Ibuprofen is the NSAID of choice for treating mild to moderate pain during breastfeeding."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:nsaid",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "ibuprofen",
+      "other": "group:nsaid",
+      "effect": "bleeding",
+      "concern": "Another NSAID (including COX-2 inhibitors)",
+      "consequence": "Increased risk of ulceration, bleeding and other adverse effects.",
+      "action": "Avoid concomitant use.",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "The use of Brufen with concomitant NSAIDs, including cyclooxygenase-2 selective inhibitors, should be avoided due to the increased risk of ulceration or bleeding"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:warfarin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin",
+      "consequence": "NSAIDs may enhance the anticoagulant effect; increased GI bleeding risk.",
+      "action": "Use with caution.",
+      "sourceWording": "Ibuprofen should be used with caution in combination with: Anticoagulants",
+      "src": [
+        {
+          "s": "emc-4560",
+          "q": "Ibuprofen should be used with caution in combination with: Anticoagulants: NSAIDs may enhance the effects of anticoagulants, such as warfarin"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:anticoagulant",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "group:anticoagulant",
+      "effect": "bleeding",
+      "concern": "Anticoagulants",
+      "consequence": "NSAIDs may enhance anticoagulant effects; increased risk of ulceration or bleeding.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be advised",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Caution should be advised in patients receiving concomitant medications which could increase the risk of ulceration or bleeding, such as oral corticosteroids, anticoagulants such as warfarin, selective serotonin-reuptake inhibitors or anti-platelet agents such as aspirin"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:antiplatelet",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "group:antiplatelet",
+      "effect": "bleeding",
+      "concern": "Antiplatelet agents",
+      "consequence": "Increased risk of GI bleeding.",
+      "action": "Use with caution; consider gastroprotection.",
+      "sourceWording": "Caution should be advised",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Anti-platelet agents and selective serotonin reuptake inhibitors (SSRIs): Increased risk of gastrointestinal bleeding with NSAIDs"
+        },
+        {
+          "s": "emc-6713",
+          "q": "Caution should be advised in patients receiving concomitant medications which could increase the risk of ulceration or bleeding"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:ssri",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "group:ssri",
+      "effect": "bleeding",
+      "concern": "SSRIs",
+      "consequence": "Increased risk of GI bleeding.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be advised",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Anti-platelet agents and selective serotonin reuptake inhibitors (SSRIs): Increased risk of gastrointestinal bleeding with NSAIDs"
+        },
+        {
+          "s": "emc-6713",
+          "q": "Caution should be advised in patients receiving concomitant medications which could increase the risk of ulceration or bleeding"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "group:corticosteroid",
+      "effect": "bleeding",
+      "concern": "Oral corticosteroids",
+      "consequence": "Increased risk of GI ulceration or bleeding.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be advised",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Corticosteroids: Increased risk of gastrointestinal ulceration or bleeding with NSAIDs"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "ibuprofen",
+      "other": "group:ace-inhibitor",
+      "effect": "nephrotoxicity",
+      "concern": "ACE inhibitors",
+      "consequence": "Reduced antihypertensive effect; higher risk of NSAID-induced renal failure.",
+      "action": "Use with caution; lowest dose, shortest time and monitor renal function.",
+      "sourceWording": "monitor renal function",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "NSAIDs may reduce the effect of anti-hypertensives, such as ACE inhibitors"
+        },
+        {
+          "s": "emc-6713",
+          "q": "Patients at greatest risk of this reaction are those with impaired renal function, heart failure, liver dysfunction, those taking diuretics and ACE inhibitors and the elderly."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:diuretic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "ibuprofen",
+      "other": "group:diuretic",
+      "effect": "nephrotoxicity",
+      "concern": "Diuretics",
+      "consequence": "Reduced diuretic/antihypertensive effect; increased nephrotoxicity risk.",
+      "action": "Use with caution; monitor renal function.",
+      "sourceWording": "Diuretics can also increase the risk of nephrotoxicity of NSAIDs",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Diuretics can also increase the risk of nephrotoxicity of NSAIDs."
+        },
+        {
+          "s": "emc-6713",
+          "q": "For these patients, use the lowest effective dose, for the shortest possible duration and monitor renal function"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "ibuprofen",
+      "other": "group:antihypertensive",
+      "concern": "Antihypertensives",
+      "consequence": "NSAIDs may reduce the antihypertensive effect.",
+      "action": "No specific action stated beyond caution.",
+      "sourceWording": "NSAIDs may reduce the effect of anti-hypertensives",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "NSAIDs may reduce the effect of anti-hypertensives"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:methotrexate-tab",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "formulations": [
+        "ibuprofen-tab"
+      ],
+      "other": "methotrexate",
+      "concern": "Methotrexate (tablet SmPC)",
+      "consequence": "Reduced methotrexate clearance.",
+      "action": "Care should be taken.",
+      "sourceWording": "Care should be taken",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Care should be taken in patients treated with any of the following drugs as interactions have been reported in some patients."
+        },
+        {
+          "s": "emc-6713",
+          "q": "Methotrexate: NSAIDs may inhibit the tubular secretion of methotrexate and reduce clearance of methotrexate."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:methotrexate-susp",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "ibuprofen",
+      "formulations": [
+        "ibuprofen-susp"
+      ],
+      "other": "methotrexate",
+      "concern": "Methotrexate (suspension SmPC)",
+      "consequence": "Reduced methotrexate clearance.",
+      "action": "Avoid the combination (suspension SmPC lists it under 'should be avoided').",
+      "sourceWording": "Ibuprofen should be avoided in combination with",
+      "src": [
+        {
+          "s": "emc-4560",
+          "q": "Ibuprofen should be avoided in combination with:"
+        },
+        {
+          "s": "emc-4560",
+          "q": "Methotrexate: NSAIDs may inhibit the tubular secretion of methotrexate and reduce clearance of methotrexate."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:fluoroquinolone",
+      "kind": "interaction",
+      "level": "info",
+      "med": "ibuprofen",
+      "other": "group:fluoroquinolone",
+      "effect": "seizure-threshold",
+      "concern": "Quinolone antibiotics",
+      "consequence": "Possible increased risk of convulsions.",
+      "action": "No specific action stated.",
+      "sourceWording": "may have an increased risk of developing convulsions",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Patients taking NSAIDs and quinolones may have an increased risk of developing convulsions."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:warfarin-smpc",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "ibuprofen",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (warfarin SmPC)",
+      "consequence": "Increased bleeding risk.",
+      "action": "Avoid if possible, or give with caution and increased clinical and laboratory monitoring (warfarin SmPC).",
+      "sourceWording": "should be avoided, or administered with caution with increased clinical and laboratory monitoring",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "The following examples should be avoided, or administered with caution with increased clinical and laboratory monitoring"
+        },
+        {
+          "s": "emc-2803",
+          "q": "NSAIDs (including aspirin and cox-2 specific NSAIDS)"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:spironolactone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "spironolactone",
+      "effect": "hyperkalaemia",
+      "concern": "Spironolactone (hyperkalaemia)",
+      "consequence": "Spironolactone SmPC: use with NSAIDs may lead to severe hyperkalaemia.",
+      "action": "Caution; spironolactone SmPC advises regular monitoring of fluid and electrolyte status.",
+      "sourceWording": "may lead to severe hyperkalaemia",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Concomitant use of Aldactone with other potassium-sparing diuretics, angiotensin-converting enzyme (ACE) inhibitors, nonsteroidal anti-inflammatory drugs"
+        },
+        {
+          "s": "emc-1619",
+          "q": "may lead to severe hyperkalaemia"
+        },
+        {
+          "s": "emc-1619",
+          "q": "Fluid and electrolyte status should be regularly monitored"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:ace-inhibitor-potassium",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "ACE inhibitors (renal function and potassium)",
+      "consequence": "Lisinopril SmPC: worsening renal function, including possible acute renal failure, and a rise in serum potassium, especially with poor renal function.",
+      "action": "Caution, especially in the elderly; keep hydrated; consider monitoring renal function after starting and periodically (lisinopril SmPC).",
+      "sourceWording": "The combination should be administered with caution",
+      "src": [
+        {
+          "s": "emc-7611",
+          "q": "Concomitant use of ACE inhibitors and NSAIDs may lead to an increased risk of worsening of renal function, including possible acute renal failure, and an increase in serum potassium"
+        },
+        {
+          "s": "emc-7611",
+          "q": "The combination should be administered with caution, especially in the elderly."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:metformin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "ibuprofen",
+      "other": "metformin",
+      "effect": "nephrotoxicity",
+      "concern": "Metformin (renal function, lactic acidosis)",
+      "consequence": "Metformin SmPC: NSAIDs can impair renal function, which may increase the risk of lactic acidosis.",
+      "action": "Close monitoring of renal function when starting or using the combination (metformin SmPC).",
+      "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        {
+          "s": "emc-987",
+          "q": "NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors"
+        },
+        {
+          "s": "emc-987",
+          "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "methotrexate",
+      "effect": "nephrotoxicity",
+      "concern": "Methotrexate (SPS / methotrexate SmPC)",
+      "consequence": "Increased risk of methotrexate toxicity and renal toxicity (reduced renal elimination).",
+      "action": "Use with caution on specialist advice (SPS); methotrexate SmPC: not recommended if any renal impairment, including mild.",
+      "sourceWording": "Use NSAIDs in combination with methotrexate with caution on the advice of the specialist",
+      "src": [
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Taking methotrexate and NSAIDs can increase the risk of methotrexate toxicity."
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Use NSAIDs in combination with methotrexate with caution on the advice of the specialist (for example, rheumatologist)."
+        },
+        {
+          "s": "emc-10988",
+          "q": "If risk factors such as renal function disorders, including mild renal impairment, are present, combined administration with NSAIDs is not recommended."
+        }
+      ]
+    }
+  ]
+}

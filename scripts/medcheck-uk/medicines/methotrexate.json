@@ -1,0 +1,2019 @@
+{
+  "id": "methotrexate",
+  "name": "Methotrexate",
+  "ingredients": [
+    "methotrexate"
+  ],
+  "className": "Folic acid antagonist (antimetabolite); immunosuppressant",
+  "groups": [
+    "folate-antagonist"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "methotrexate-tab",
+      "label": "Tablets 2.5 mg (ONCE WEEKLY for autoimmune disease)",
+      "route": "oral",
+      "strengths": "2.5 mg",
+      "release": "immediate",
+      "note": "For rheumatoid arthritis, psoriasis and psoriatic arthritis the tablets are taken ONCE A WEEK only. Dosing errors can be fatal.",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "In the treatment of rheumatic diseases, psoriasis or severe psoriatic arthritis, Methotrexate Orion (methotrexate) must only be taken once a week. Dosage errors in the use of Methotrexate Orion (methotrexate) can result in serious adverse reactions, including death."
+        }
+      ],
+      "sourceIds": [
+        "emc-10988",
+        "emc-511"
+      ]
+    },
+    {
+      "id": "methotrexate-pen",
+      "label": "Pre-filled pen for subcutaneous injection (ONCE WEEKLY)",
+      "route": "subcutaneous",
+      "strengths": "7.5 mg, 10 mg, 12.5 mg, 15 mg, 17.5 mg, 20 mg, 22.5 mg, 25 mg, 27.5 mg, 30 mg",
+      "release": "n/a",
+      "note": "Injected ONCE A WEEK only, subcutaneous route only, single use.",
+      "src": [
+        {
+          "s": "emc-5443",
+          "q": "Metoject PEN is injected once weekly ."
+        },
+        {
+          "s": "emc-5443",
+          "q": "Metoject PEN solution for injection in pre-filled pen can only be given by subcutaneous route."
+        }
+      ],
+      "sourceIds": [
+        "emc-5443"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Tablets (one UK SmPC): active rheumatoid arthritis in adults; severe recalcitrant disabling psoriasis and severe psoriatic arthritis in adults; maintenance treatment of acute lymphoblastic leukaemia (ALL) from 3 years.",
+          "formulations": [
+            "methotrexate-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Antirheumatic: Active rheumatoid arthritis in adult patients"
+            },
+            {
+              "s": "emc-10988",
+              "q": "Maintenance treatment of acute lymphoblastic leukaemia (ALL) in adults, adolescents and children aged 3 years and over."
+            }
+          ]
+        },
+        {
+          "t": "Pre-filled pen: active RA in adults; polyarthritic severe active JIA (after inadequate NSAID response); moderate to severe psoriasis; severe psoriatic arthritis; mild to moderate Crohn's disease refractory/intolerant to thiopurines.",
+          "formulations": [
+            "methotrexate-pen"
+          ],
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "Metoject PEN is indicated for the treatment of active rheumatoid arthritis in adult patients, polyarthritic forms of severe, active juvenile idiopathic arthritis, when the response to nonsteroidal anti-inflammatory drugs (NSAIDs) has been inadequate"
+            },
+            {
+              "s": "emc-5443",
+              "q": "mild to moderate Crohn's disease either alone or in combination with corticosteroids in adult patients refractory or intolerant to thiopurines."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "ONCE-WEEKLY medicine for autoimmune disease. Prescriber must write the DAY OF THE WEEK in full on the prescription and make sure the patient can follow once-weekly dosing. Inadvertent DAILY dosing has caused fatal overdose (MHRA).",
+          "tag": "MHRA once-weekly safety",
+          "src": [
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "decide with the patient which day of the week they will take their methotrexate and note this day down in full on the prescription"
+            },
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "before prescribing methotrexate, make sure that the patient is able to understand and comply with once-weekly dosing"
+            }
+          ]
+        },
+        {
+          "t": "Dispensers: remind the patient it is once weekly, write the day of the week on the pack, and show the patient card.",
+          "tag": "MHRA dispensing",
+          "src": [
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "remind the patient of the once-weekly dosing and risks of potentially fatal overdose if they take more than has been directed"
+            },
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "write the day of the week for intake in full in the space provided on the outer package"
+            }
+          ]
+        },
+        {
+          "t": "Only prescribers with expertise in methotrexate and its risks should prescribe. SPS: prescribed by specialists (e.g. rheumatologists) with regular monitoring.",
+          "tag": "Specialist",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Methotrexate should only be prescribed by physicians with expertise in the use of methotrexate and a full understanding of the risks of methotrexate therapy."
+            },
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Methotrexate is only prescribed by specialists, for example, rheumatologists."
+            }
+          ]
+        },
+        {
+          "t": "Pen: first injection under direct medical supervision; patients must be trained in injection technique.",
+          "tag": "Pen",
+          "formulations": [
+            "methotrexate-pen"
+          ],
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "The first injection of Metoject PEN should be performed under direct medical supervision."
+            }
+          ]
+        },
+        {
+          "t": "Oncology regimens may use different (sometimes daily) schedules - these are specialist protocols, not autoimmune dosing.",
+          "tag": "Cancer vs autoimmune",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "For the treatment of cancer in which regimens vary and can require daily administration of methotrexate"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "MAXIMUM WEEKLY DOSE - SOURCES DIFFER: one tablet SmPC (RA, psoriasis) and the pen SmPC: in general not more than 25 mg per WEEK (pen: exceptionally up to 30 mg per WEEK). Another tablet SmPC (RA): not more than 20 mg per WEEK. All three SmPCs say doses above 20 mg per WEEK markedly increase toxicity, especially bone marrow suppression. The dose is ONCE WEEKLY, never daily.",
+          "tag": "Maximum weekly dose (sources differ)",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "should not exceed a total weekly dose of 25 mg"
+            },
+            {
+              "s": "emc-5443",
+              "q": "A weekly dose of 25 mg should in general not be exceeded."
+            },
+            {
+              "s": "emc-511",
+              "q": "should not exceed a total weekly dose of 20 mg"
+            },
+            {
+              "s": "emc-511",
+              "q": "Doses exceeding 20 mg week can be associated with a substantial increase in toxicity"
+            },
+            {
+              "s": "emc-5443",
+              "q": "Doses exceeding 20 mg/week are associated with significant increase in toxicity, especially bone marrow suppression"
+            },
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "specifically, that it should not be taken daily"
+            }
+          ]
+        },
+        {
+          "t": "Rheumatoid arthritis, tablets: usual 7.5-15 mg ONCE WEEKLY (never daily). Adjust gradually; total weekly dose not more than 25 mg. Over 20 mg/week markedly increases toxicity. Then reduce to lowest effective dose (usually within 6 weeks).",
+          "tag": "RA - tablets (SmPC: max 25 mg/week)",
+          "formulations": [
+            "methotrexate-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Rheumatoid arthritis The usual dose is 7.5 - 15 mg once weekly. The dose may be adjusted gradually to achieve an optimal response but should not exceed a total weekly dose of 25 mg."
+            },
+            {
+              "s": "emc-10988",
+              "q": "Doses exceeding 20 mg per week can be associated with significant increase in toxicity, especially bone marrow suppression."
+            }
+          ]
+        },
+        {
+          "t": "Rheumatoid arthritis, tablets (another tablet SmPC - differs from the one above): test dose 5-10 mg one week before; start 7.5 mg ONCE WEEKLY; total weekly dose should NOT exceed 20 mg per WEEK.",
+          "tag": "RA - tablets (SmPC: max 20 mg/week)",
+          "formulations": [
+            "methotrexate-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-511",
+              "q": "It is recommended that a test dose of 5-10 mg should be administered, one week prior to therapy to detect idiosyncratic adverse reactions."
+            },
+            {
+              "s": "emc-511",
+              "q": "the recommended initial dose is 7.5 mg methotrexate once weekly. The schedule may be adjusted gradually to achieve an optimal response but should not exceed a total weekly dose of 20 mg."
+            }
+          ]
+        },
+        {
+          "t": "Psoriasis / psoriatic arthritis, tablets. One tablet SmPC: test dose 2.5-5 mg, check labs one week later; then usual 7.5-15 mg ONCE WEEKLY, up to 25 mg per WEEK if needed; then reduce to the lowest effective dose. Another tablet SmPC (psoriasis): test dose 5-10 mg one week before; 10-25 mg ONCE A WEEK, adjusted to response.",
+          "tag": "Psoriasis - tablets",
+          "formulations": [
+            "methotrexate-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Before starting treatment it is advisable to give the patient a test dose of 2.5-5.0 mg to exclude unexpected toxic effects."
+            },
+            {
+              "s": "emc-10988",
+              "q": "The usual dose is 7.5-15 mg taken once weekly. As necessary, the total weekly dose can be increased up to 25 mg."
+            },
+            {
+              "s": "emc-511",
+              "q": "It is recommended that a test dose of 5-10 mg should be administered, one week prior to therapy to detect idiosyncratic adverse reactions."
+            },
+            {
+              "s": "emc-511",
+              "q": "10-25 mg orally once a week and adjusted by the patient's response is recommended"
+            }
+          ]
+        },
+        {
+          "t": "Rheumatoid arthritis, pen: start 7.5 mg ONCE WEEKLY subcutaneously; increase by 2.5 mg per week as needed; generally not more than 25 mg per WEEK. Response in about 4-8 weeks; then reduce to lowest effective maintenance dose.",
+          "tag": "RA - pen",
+          "formulations": [
+            "methotrexate-pen"
+          ],
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "The recommended initial dose is 7.5 mg of methotrexate once weekly , administered subcutaneously."
+            },
+            {
+              "s": "emc-5443",
+              "q": "A weekly dose of 25 mg should in general not be exceeded."
+            }
+          ]
+        },
+        {
+          "t": "Psoriasis / psoriatic arthritis, pen: test dose 5-10 mg one week before; start 7.5 mg ONCE WEEKLY; generally not more than 25 mg per WEEK. Exceptionally up to 30 mg per WEEK (toxicity rises markedly).",
+          "tag": "Psoriasis - pen",
+          "formulations": [
+            "methotrexate-pen"
+          ],
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "It is recommended that a test dose of 5-10 mg should be administered parenterally, one week prior to therapy to detect idiosyncratic adverse reactions."
+            },
+            {
+              "s": "emc-5443",
+              "q": "In a few exceptional cases a higher dose might be clinically justified, but should not exceed a maximum weekly dose of 30 mg of methotrexate as toxicity will markedly increase."
+            }
+          ]
+        },
+        {
+          "t": "Crohn's disease, pen: induction 25 mg per WEEK subcutaneously (response in 8-12 weeks); maintenance 15 mg per WEEK.",
+          "tag": "Crohn's - pen",
+          "formulations": [
+            "methotrexate-pen"
+          ],
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "Induction treatment: 25 mg/week administered subcutaneously. Response to treatment can be expected after approximately 8 to 12 weeks. Maintenance treatment: 15 mg/week administered subcutaneously."
+            }
+          ]
+        },
+        {
+          "t": "Switching oral to injection: a dose reduction may be needed (variable oral bioavailability).",
+          "tag": "Switching",
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "If changing the oral application to parenteral administration a reduction of the dose may be required due to the variable bioavailability of methotrexate after oral administration."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: use with extreme caution; consider dose reduction (reduced liver/kidney function and folate stores).",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Methotrexate should be used with extreme caution in elderly patients, a dose reduction should be considered due to reduced liver and kidney function as well as lower folate reserves which occur with increased age."
+            }
+          ]
+        },
+        {
+          "t": "Folic acid (SPS, RA): 5 mg ONCE WEEKLY on a DIFFERENT day from methotrexate; can increase to 10 mg weekly if side effects; continue for as long as methotrexate. Off-label use.",
+          "tag": "Folic acid",
+          "src": [
+            {
+              "s": "sps-folic-mtx",
+              "q": "Folic acid 5mg weekly, on a different day to the methotrexate dose, is the most commonly recommended regimen from clinical studies and national guidance."
+            },
+            {
+              "s": "sps-folic-mtx",
+              "q": "The dose can be increased to 10mg if the person experiences any adverse effects to the methotrexate."
+            },
+            {
+              "s": "sps-folic-mtx",
+              "q": "Use of folic acid to reduce adverse effects is off-label."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Under 3 years: not recommended (insufficient data).",
+          "tag": "Age limit",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "The use in children below 3 years of age is not recommended as insufficient data on efficacy and safety are available for this population (see section 4.4)."
+            },
+            {
+              "s": "emc-5443",
+              "q": "Use in children <3 years of age is not recommended as insufficient data on efficacy and safety is available for this population (see section 4.4)."
+            }
+          ]
+        },
+        {
+          "t": "JIA (pen, under 16 years): 10-15 mg/m2 body surface area ONCE WEEKLY; up to 20 mg/m2 ONCE WEEKLY in refractory cases (monitor more often). Subcutaneous only; refer to a paediatric rheumatology specialist.",
+          "tag": "JIA - pen",
+          "formulations": [
+            "methotrexate-pen"
+          ],
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "The recommended dose is 10-15 mg/m² body surface area (BSA)/ once weekly ."
+            },
+            {
+              "s": "emc-5443",
+              "q": "Patients with JIA should always be referred to a rheumatology specialist in the treatment of children/adolescents."
+            }
+          ]
+        },
+        {
+          "t": "ALL maintenance (tablets, 3 years and over): within specialist protocols; usually 20-40 mg/m2 ONCE WEEKLY.",
+          "tag": "ALL - tablets",
+          "formulations": [
+            "methotrexate-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Common accepted single doses lie in the range of 20-40 mg/m² body surface area and are usually given once weekly."
+            }
+          ]
+        },
+        {
+          "t": "Crohn's disease: not enough paediatric experience to recommend the pen.",
+          "tag": "Crohn's",
+          "formulations": [
+            "methotrexate-pen"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "There is not sufficient experience in the paediatric population to recommend Metoject PEN for the treatment of Crohn's disease in this population."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to methotrexate or excipients.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Hypersensitivity to methotrexate or to any of the excipients listed in section 6.1"
+            }
+          ]
+        },
+        {
+          "t": "Significantly impaired hepatic function (pen: severe liver impairment; bilirubin over 5 mg/dl (85.5 µmol/l)).",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Significantly impaired hepatic function"
+            },
+            {
+              "s": "emc-5443",
+              "q": "If bilirubin is >5 mg/dl (85.5 µmol/l), methotrexate is contraindicated."
+            }
+          ]
+        },
+        {
+          "t": "Significantly impaired renal function: CrCl under 30 ml/min.",
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "severe renal impairment (creatinine clearance less than 30 ml/min., see section 4.2 and section 4.4)"
+            }
+          ]
+        },
+        {
+          "t": "Alcoholism / alcohol abuse.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Alcoholism"
+            },
+            {
+              "s": "emc-5443",
+              "q": "alcohol abuse"
+            }
+          ]
+        },
+        {
+          "t": "Pre-existing blood dyscrasias (bone marrow hypoplasia, leukopenia, thrombocytopenia, significant anaemia).",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Pre-existing blood dyscrasias, such as bone marrow hypoplasia, leukopenia, thrombocytopenia, or significant anaemia"
+            }
+          ]
+        },
+        {
+          "t": "Severe acute or chronic infections; immunodeficiency syndromes.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Severe acute or chronic infections and immunodeficiency syndromes"
+            }
+          ]
+        },
+        {
+          "t": "Stomatitis, oral ulcers, known active GI ulcer disease.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Stomatitis, ulcers of the oral cavity and known active gastrointestinal ulcer disease"
+            }
+          ]
+        },
+        {
+          "t": "Pregnancy (one tablet SmPC and the pen SmPC: non-oncological use; another tablet SmPC: any use) and breastfeeding.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Additionally for non-oncological indications - Pregnancy (see section 4.6)."
+            },
+            {
+              "s": "emc-10988",
+              "q": "Breast-feeding (see section 4.6)"
+            },
+            {
+              "s": "emc-511",
+              "q": "Methotrexate is teratogenic and should not be given during pregnancy or to mothers who are breast-feeding"
+            }
+          ]
+        },
+        {
+          "t": "Live vaccines must not be given during treatment.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "During methotrexate therapy concurrent vaccination with live vaccines must not be carried out."
+            }
+          ]
+        },
+        {
+          "t": "One tablet SmPC 4.3 also lists: liver disease including fibrosis, cirrhosis, recent or active hepatitis; active infectious disease.",
+          "tag": "One tablet SmPC",
+          "src": [
+            {
+              "s": "emc-511",
+              "q": "Liver disease including fibrosis, cirrhosis, recent or active hepatitis"
+            },
+            {
+              "s": "emc-511",
+              "q": "Active infectious disease"
+            }
+          ]
+        },
+        {
+          "t": "One tablet SmPC 4.3: methotrexate tablets should not be used with drugs with antifolate properties (e.g. co-trimoxazole; trimethoprim is also a folate antagonist).",
+          "tag": "One tablet SmPC",
+          "formulations": [
+            "methotrexate-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-511",
+              "q": "Methotrexate tablets should not be used concomitantly with drugs with antifolate properties (e.g. co-trimoxazole)"
+            }
+          ]
+        },
+        {
+          "t": "One tablet SmPC 4.3: after use by a man or a woman, conception must be avoided with effective contraception for at least 6 months (see reproductive).",
+          "tag": "One tablet SmPC",
+          "formulations": [
+            "methotrexate-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-511",
+              "q": "Following administration to a man or woman conception should be avoided by using an effective contraceptive method for at least 6 months after using Methotrexate 2.5 mg tablets"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Bone marrow suppression can occur suddenly even at apparently safe doses; stop immediately for a serious fall in white cells or platelets.",
+          "tag": "Haematological",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Methotrexate-induced haematopoietic suppression may occur abruptly and with apparently safe dosages. Any serious decrease in leucocyte or platelet counts indicates the immediate discontinuation of treatment"
+            }
+          ]
+        },
+        {
+          "t": "Liver toxicity: avoid alcohol; avoid other hepatotoxic medicines unless clearly needed. Fibrosis/cirrhosis may occur with normal LFTs.",
+          "tag": "Hepatotoxicity",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Additional hepatotoxic medicinal products should not be given during treatment with methotrexate unless clearly necessary. Alcohol consumption should be avoided"
+            },
+            {
+              "s": "emc-10988",
+              "q": "Histological changes, fibrosis and more rarely liver cirrhosis may not be preceded by abnormal liver function tests."
+            }
+          ]
+        },
+        {
+          "t": "Lung toxicity (pneumonitis) at any dose, even 7.5 mg/week: stop if dry cough, dyspnoea or fever; exclude infection; do not restart if methotrexate lung disease.",
+          "tag": "Pulmonary",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Methotrexate-induced lung diseases such as pneumonitis can occur acutely and at any time during treatment, are not always completely reversible and have already been observed at all doses (including low doses of 7.5 mg/week)."
+            },
+            {
+              "s": "emc-10988",
+              "q": "If methotrexate-induced lung disease is suspected, treatment with corticosteroids should be initiated and treatment with methotrexate should not be restarted."
+            }
+          ]
+        },
+        {
+          "t": "Dehydration (vomiting, diarrhoea, stomatitis) raises toxicity: stop methotrexate until resolved. Diarrhoea/ulcerative stomatitis need stopping (risk of fatal perforation).",
+          "tag": "Dehydration / GI",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "In this case, treatment with methotrexate must be discontinued until the symptoms have disappeared."
+            },
+            {
+              "s": "emc-10988",
+              "q": "Diarrhoea and ulcerative stomatitis may be signs of toxic effects and require the discontinuation of treatment"
+            }
+          ]
+        },
+        {
+          "t": "Renal impairment and NSAIDs: with any renal impairment (including mild), combining with NSAIDs is not recommended; monitor more often.",
+          "tag": "Renal",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "If risk factors such as renal function disorders, including mild renal impairment, are present, combined administration with NSAIDs is not recommended."
+            }
+          ]
+        },
+        {
+          "t": "Pleural effusion / ascites (third space): slower elimination; drain before starting; dose reduction or stopping may be needed.",
+          "tag": "Third space",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Pleural effusions and ascites should be drained prior to initiation of methotrexate treatment (see section 4.2)."
+            }
+          ]
+        },
+        {
+          "t": "Insulin-dependent diabetes: increased caution (cirrhosis without raised transaminases reported).",
+          "tag": "Diabetes",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Increased caution should be exercised in patients with insulin-dependent diabetes mellitus"
+            }
+          ]
+        },
+        {
+          "t": "Impaired pulmonary function and inactive chronic infections (zoster, TB, hepatitis B/C): particular caution (reactivation).",
+          "tag": "Infections",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Particular caution is required in patients with impaired pulmonary function."
+            }
+          ]
+        },
+        {
+          "t": "Photosensitivity: avoid intense sun/UV; use sun protection.",
+          "tag": "Skin",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Patients should use adequate sun-protection to protect themselves from intense sunlight."
+            }
+          ]
+        },
+        {
+          "t": "Folate-containing vitamin products may reduce effectiveness. Check vitamin B12 before folic acid, especially over 50 years.",
+          "tag": "Folate / B12",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "It is recommended to check levels of vitamin B12 prior to initiating folic acid supplementation, particularly in adults aged over 50 years, as folic acid intake may mask a vitamin B12 deficiency."
+            }
+          ]
+        },
+        {
+          "t": "Folate deficiency may increase methotrexate toxicity: particular care if folic acid deficiency is present.",
+          "tag": "Folate deficiency",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Particular care is therefore advisable in the presence of existing folic acid deficiency."
+            },
+            {
+              "s": "emc-511",
+              "q": "Folate deficiency may increase methotrexate toxicity"
+            }
+          ]
+        },
+        {
+          "t": "One tablet SmPC: extreme caution in peptic ulcer or ulcerative colitis, debility, very young or old age, and psychiatric disorders.",
+          "tag": "Extreme caution (one tablet SmPC)",
+          "src": [
+            {
+              "s": "emc-511",
+              "q": "Extreme caution should be exercised if there is peptic ulcer or ulcerative colitis."
+            },
+            {
+              "s": "emc-511",
+              "q": "Methotrexate should be used with extreme caution in - debility - extreme youth (see section 4.2) - old age (see section 4.2) - psychiatric disorders"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Trimethoprim and co-trimoxazole: risk of severe bone marrow suppression (may be delayed). SPS: avoid; if unavoidable, counsel, frequent FBC and extra FBC monitoring for at least 2 months. One tablet SmPC lists use with antifolate drugs (e.g. co-trimoxazole) under 4.3 Contraindications (\"should not be used concomitantly\").",
+          "tag": "Trimethoprim / co-trimoxazole",
+          "src": [
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Avoid prescribing co-trimoxazole or trimethoprim with methotrexate, due to the risk of severe bone marrow suppression."
+            },
+            {
+              "s": "sps-mtx-interactions",
+              "q": "consider the additional FBC monitoring, above routine monitoring (SPS page) , for at least 2 months"
+            },
+            {
+              "s": "emc-511",
+              "q": "Methotrexate tablets should not be used concomitantly with drugs with antifolate properties (e.g. co-trimoxazole)"
+            }
+          ]
+        },
+        {
+          "t": "NSAIDs (e.g. ibuprofen, naproxen): increased methotrexate and renal toxicity. SPS: use with caution on specialist advice; avoid OTC NSAIDs without advice. One tablet SmPC: not recommended if any renal impairment (including mild). Another tablet SmPC: monitor methotrexate dosage when an NSAID is started (fatal toxicity reported).",
+          "tag": "NSAIDs",
+          "src": [
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Use NSAIDs in combination with methotrexate with caution on the advice of the specialist (for example, rheumatologist)."
+            },
+            {
+              "s": "emc-10988",
+              "q": "There is also a possibility of increased toxicity when low dose methotrexate and non-steroidal anti-inflammatory medicinal products or salicylates are combined."
+            },
+            {
+              "s": "emc-511",
+              "q": "Methotrexate dosage should be monitored if concomitant treatment with aspirin, ibuprofen or indometacin (NSAIDs) is commenced, as concomitant use of NSAID's has been associated with fatal methotrexate toxicity."
+            }
+          ]
+        },
+        {
+          "t": "Penicillins (e.g. amoxicillin): reduced renal clearance of methotrexate. SPS: short courses (up to 10 days) with caution; watch for toxicity.",
+          "tag": "Penicillins",
+          "src": [
+            {
+              "s": "sps-mtx-interactions",
+              "q": "If the duration of penicillin is short (up to 10 days), consider using with caution and advise to monitor for signs of toxicity."
+            }
+          ]
+        },
+        {
+          "t": "PPIs (e.g. omeprazole): delayed methotrexate elimination reported. SPS (low-dose methotrexate): evidence limited; no additional action; H2-receptor antagonist if an alternative is needed. One tablet SmPC: avoid PPIs with HIGH-dose methotrexate, especially in renal impairment.",
+          "tag": "PPIs",
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "Concomitant administration of methotrexate and omeprazole has led to delayed renal elimination of methotrexate."
+            },
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Evidence to support a clinically significant interaction is limited."
+            },
+            {
+              "s": "emc-511",
+              "q": "Concomitant use of proton pump inhibitors (PPIs) and high dose methotrexate should be avoided, especially in patients with renal impairment."
+            }
+          ]
+        },
+        {
+          "t": "Ciprofloxacin: reduced renal clearance of methotrexate (raised levels, toxicity). Ciprofloxacin SmPC: concomitant use not recommended.",
+          "tag": "Ciprofloxacin",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Penicillins (e.g. amoxicillin), glycopeptides, sulfonamides, ciprofloxacin and cefalotin can, in individual cases, reduce the renal clearance of methotrexate"
+            },
+            {
+              "s": "emc-4346",
+              "q": "The concomitant use of ciprofloxacin with methotrexate is not recommended"
+            }
+          ]
+        },
+        {
+          "t": "Statins (atorvastatin, simvastatin): liver toxicity possible; SPS: no additional action beyond routine monitoring.",
+          "tag": "Statins",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Taking methotrexate and statins (for example, atorvastatin or simvastatin) can increase the risk of liver toxicity."
+            }
+          ]
+        },
+        {
+          "t": "Hydroxychloroquine: no increase in methotrexate toxicity generally expected (pen SmPC).",
+          "tag": "Other DMARDs",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "An increase in the toxic effects of methotrexate is, in general, not to be expected when Metoject PEN is administered simultaneously with other antirheumatic medicinal products (e.g. gold compounds, penicillamine, hydroxychloroquine, sulfasalazine, azathioprine)."
+            }
+          ]
+        },
+        {
+          "t": "Others (not in master list): live vaccines (must not), nitrous oxide (avoid), leflunomide, metamizole (avoid), levetiracetam, ciclosporin, retinoids, probenecid, caffeine/theophylline.",
+          "tag": "Others",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Concurrent administration of metamizole and methotrexate can increase the haematotoxic effect of methotrexate, especially in elderly patients. Therefore, coadministration should be avoided."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Dose by creatinine clearance (CrCl): 60 ml/min or more = 100% dose; 30-59 ml/min = 50% dose; under 30 ml/min = must NOT be used.",
+          "tag": "Dose by CrCl",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Creatinine clearance (ml/min) Dose ≥ 60 100 % 30-59 50 % < 30 Methotrexate must not be used"
+            },
+            {
+              "s": "emc-5443",
+              "q": "Creatinine clearance (ml/min) ≥60 30-59 <30 Dose 100% 50% Metoject PEN must not be used"
+            }
+          ]
+        },
+        {
+          "t": "If serum creatinine rises, reduce the dose; monitor renal function and urinalysis. Monitor more often if renal function may be compromised (e.g. elderly) or with NSAIDs.",
+          "tag": "Monitoring",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Renal function should be monitored by renal function tests and urinalyses. If serum creatinine levels are increased, the dose should be reduced."
+            }
+          ]
+        },
+        {
+          "t": "SPS action level: creatinine rise over 30% above baseline in 12 months, or calculated GFR under 60 ml/min/1.73m2 - repeat in 1 week; if still more than 30% from baseline, withhold and discuss with specialist.",
+          "tag": "SPS thresholds",
+          "src": [
+            {
+              "s": "sps-mtx-monitoring",
+              "q": "Creatinine increase greater than 30% above baseline over 12 months Calculated GFR less than 60ml/min/1.73m2 (repeat in 1 week, if still more than 30% from baseline, withhold and discuss with specialist team)"
+            }
+          ]
+        },
+        {
+          "t": "One tablet SmPC (oncology-wide): contraindicated if CrCl under 30 ml/min for doses under 100 mg/m2, and under 60 ml/min for doses over 100 mg/m2.",
+          "tag": "One tablet SmPC",
+          "detail": true,
+          "formulations": [
+            "methotrexate-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-511",
+              "q": "Severe/significantly impaired renal function (creatinine clearance less than 30 ml/min) for methotrexate doses <100 mg/m2, and moderate renal impairment (creatinine clearance less than 60 ml/min) for methotrexate doses >100 mg/m2"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Contraindicated in significantly impaired hepatic function. Otherwise use with great caution, if at all, in significant current or previous liver disease (especially alcohol-related).",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Methotrexate should be administered with great caution, if at all, to patients with significant current or previous liver disease, especially if due to alcohol."
+            }
+          ]
+        },
+        {
+          "t": "One tablet SmPC 4.3: contraindicated in liver disease including fibrosis, cirrhosis, recent or active hepatitis (stricter than the other tablet SmPC and the pen SmPC, which say \"great caution, if at all\" for significant liver disease and contraindicate significant/severe hepatic impairment).",
+          "tag": "One tablet SmPC",
+          "src": [
+            {
+              "s": "emc-511",
+              "q": "Methotrexate is contra-indicated in the presence of:"
+            },
+            {
+              "s": "emc-511",
+              "q": "Liver disease including fibrosis, cirrhosis, recent or active hepatitis"
+            }
+          ]
+        },
+        {
+          "t": "Pen SmPC: bilirubin over 5 mg/dl (85.5 µmol/l) = contraindicated.",
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "If bilirubin is >5 mg/dl (85.5 µmol/l), methotrexate is contraindicated."
+            }
+          ]
+        },
+        {
+          "t": "Persistent liver enzyme rise: consider dose reduction or stopping. SPS: consider stopping and contact specialist if AST and/or ALT over 100 units/L.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "In the event of a persistent increase in liver enzymes, consideration should be given to reducing the dose or discontinuing therapy."
+            },
+            {
+              "s": "sps-mtx-monitoring",
+              "q": "AST and/or ALT greater than 100units/L"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Contraindicated in pregnancy for non-cancer indications (powerful teratogen; miscarriage 42.5% vs 22.5% at low doses). Exclude pregnancy before starting.",
+          "tag": "Contraindicated",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Methotrexate is contraindicated during pregnancy in non-oncological indications (see section 4.3)."
+            },
+            {
+              "s": "emc-10988",
+              "q": "In non-oncologic indications, the absence of pregnancy must be confirmed before methotrexate is used."
+            }
+          ]
+        },
+        {
+          "t": "If pregnancy occurs during treatment or within 6 months after: give advice on risk and offer ultrasound checks.",
+          "tag": "Exposure",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "If pregnancy occurs during treatment with methotrexate and up to six months thereafter, medical advice should be given regarding the risk of harmful effects on the child associated with treatment and ultrasonography examinations should be performed to confirm normal foetal development."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: should not be used in pregnancy for autoimmune disease; usually advised to wait at least 3 months after stopping before trying to conceive (differs from the SmPC 6-month contraception period for women).",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-methotrexate",
+              "q": "Methotrexate should not be used in pregnancy to treat autoimmune diseases."
+            },
+            {
+              "s": "bumps-methotrexate",
+              "q": "You will usually be advised by your specialist to wait at least three months before trying to conceive."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Contraindicated; stop breastfeeding before treatment.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "As methotrexate passes into breast milk and may cause toxicity in nursing infants, treatment is contraindicated during the lactation period (see section 4.3). Breast-feeding is therefore to be stopped prior to treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "WOMEN: effective contraception during treatment and for at least 6 MONTHS after stopping (all three SmPCs). Confirm absence of pregnancy before starting (non-oncological use); repeat pregnancy tests as clinically required.",
+          "tag": "Women",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Women must not get pregnant during methotrexate therapy and effective contraception must be used during treatment with methotrexate and at least 6 months thereafter (see section 4.4)."
+            },
+            {
+              "s": "emc-10988",
+              "q": "In non-oncologic indications, the absence of pregnancy must be confirmed before methotrexate is used."
+            }
+          ]
+        },
+        {
+          "t": "MEN: patient or female partner should use reliable contraception during treatment and for at least 3 MONTHS after stopping; no semen donation during and for 3 months after (SmPC).",
+          "tag": "Men",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "As precautionary measures, sexually active male patients or their female partners are recommended to use reliable contraception during treatment of the male patient and for at least 3 months after cessation of methotrexate."
+            },
+            {
+              "s": "emc-10988",
+              "q": "Men should not donate semen during therapy or for 3 months following discontinuation of methotrexate."
+            }
+          ]
+        },
+        {
+          "t": "SOURCES DIFFER for men: one tablet SmPC (sections 4.3 and 4.4) says avoid conception for at least 6 MONTHS after stopping, for BOTH men and women; its own section 4.6, and the other tablet SmPC and the pen SmPC, say 3 MONTHS for men. BUMPS: specialists usually advise waiting at least 3 months before trying to conceive.",
+          "tag": "Conflict",
+          "formulations": [
+            "methotrexate-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-511",
+              "q": "Following administration to a man or woman conception should be avoided by using an effective contraceptive method for at least 6 months after using Methotrexate 2.5 mg tablets"
+            },
+            {
+              "s": "emc-511",
+              "q": "Following administration to man or woman conception should be avoided by using an effective contraceptive method for at least 6 months after stopping methotrexate."
+            },
+            {
+              "s": "emc-511",
+              "q": "As precautionary measures, sexually active male patients or their female partners are recommended to use reliable contraception during treatment of the male patient and for at least 3 months after cessation of methotrexate."
+            },
+            {
+              "s": "bumps-methotrexate",
+              "q": "You will usually be advised by your specialist to wait at least three months before trying to conceive."
+            }
+          ]
+        },
+        {
+          "t": "Fertility: oligospermia, menstrual dysfunction, amenorrhoea; usually reversible after stopping.",
+          "tag": "Fertility",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "These effects appear to be reversible after discontinuation of therapy in most cases."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common: stomatitis, dyspepsia, abdominal pain, nausea, loss of appetite; raised liver enzymes/bilirubin. Common: leukopenia, anaemia, thrombocytopenia, headache, tiredness, drowsiness, pneumonia, pneumonitis, oral ulcers, diarrhoea, rash, pruritus.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Most frequently observed (very common) adverse reactions of methotrexate include gastrointestinal disorders (e.g. stomatitis, dyspepsia, abdominal pain, nausea, loss of appetite) and abnormal liver function tests"
+            },
+            {
+              "s": "emc-10988",
+              "q": "Other frequently occurring (common) adverse reactions are leukopenia, anaemia, thrombocytopenia, headache, tiredness, drowsiness, pneumonia, interstitial alveolitis/pneumonitis often associated with eosinophilia, oral ulcers, diarrhoea, exanthema, erythema and pruritus."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Most serious: bone marrow suppression, lung toxicity, liver toxicity, kidney toxicity, neurotoxicity, thromboembolism, anaphylaxis, Stevens-Johnson syndrome.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Most serious adverse reactions of methotrexate include bone marrow suppression, pulmonary toxicity, hepatotoxicity, renal toxicity, neurotoxicity, thromboembolic events, anaphylactic shock and Stevens-Johnson syndrome."
+            }
+          ]
+        },
+        {
+          "t": "Overdose (e.g. daily instead of weekly): blood disorders and GI ulceration/bleeding; some fatal (sepsis, renal failure, aplastic anaemia). Patients must seek urgent help if they think they took too much.",
+          "src": [
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "Overdose of methotrexate can lead to serious adverse effects such as haematopoietic disorders (leukopenia, thrombocytopenia, anaemia, and pancytopenia) and gastrointestinal reactions"
+            },
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "Patients should be advised to seek urgent medical attention if they think they have taken too much methotrexate."
+            }
+          ]
+        },
+        {
+          "t": "Ulcerative stomatitis and diarrhoea: stop methotrexate (risk of fatal perforation).",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Ulcerative stomatitis and diarrhoea require discontinuation of methotrexate therapy because of the risk of ulcerative enteritis and fatal intestinal perforation."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SmPC baseline: FBC with differential and platelets, liver enzymes, bilirubin, serum albumin, chest X-ray, renal function. Exclude TB and hepatitis B and C if indicated.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Complete blood count with differential blood count and platelets, liver enzymes, bilirubin, serum albumin, chest X-ray and renal function tests."
+            }
+          ]
+        },
+        {
+          "t": "SPS baseline also lists blood pressure, weight, height, HIV, hepatitis B and C; TB screening and VZV immunity to consider. (SPS page is being updated to the Nov 2025 BSR guideline.)",
+          "tag": "baseline",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-mtx-monitoring",
+              "q": "The British Society for Rheumatology (BSR) guideline for the prescription and monitoring of conventional synthetic disease-modifying anti-rheumatic drugs was published in November 2025."
+            }
+          ]
+        },
+        {
+          "t": "One tablet SmPC, ongoing: FBC, LFTs, renal tests and mouth/throat check WEEKLY for the first 2 weeks, then every 2 weeks for a month, then at least monthly for 6 months, then at least every 3 months. More often after dose increases and in elderly. Another tablet SmPC: FBC, liver and renal tests (with urinalysis) every week until stable, then every 2 to 3 months.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "The tests below must be conducted weekly in the first two weeks, then every two weeks for a month; thereafter, depending on the leucocyte count and the stability of the patient, at least once a month during the next six months and then at least every three months."
+            },
+            {
+              "s": "emc-511",
+              "q": "Full blood count (including haematocrit), hepatic and renal function tests (including urinalysis) should be carried out every week until treatment is stabilized, thereafter every 2 to 3 months throughout treatment."
+            }
+          ]
+        },
+        {
+          "t": "SPS (rheumatology): FBC, LFT, creatinine/eGFR and albumin every 2 weeks for at least 6 weeks, then monthly for 3-12 months; once stable at least every 12 weeks.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "sps-mtx-monitoring",
+              "q": "Rheumatology patients Every 2 weeks for at least 6 weeks; then every month for 3-12 months"
+            },
+            {
+              "s": "sps-mtx-monitoring",
+              "q": "Rheumatology patients At least every 12 weeks"
+            }
+          ]
+        },
+        {
+          "t": "SPS stop/contact specialist: WCC under 3.5 x 10^9/L; neutrophils under 1.6 x 10^9/L; unexplained eosinophilia over 0.5 x 10^9/L; platelets under 140 x 10^9/L; unexplained albumin under 30 g/L; MCV over 105 fL; AST/ALT over 100 units/L. Also watch falling trends.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "sps-mtx-monitoring",
+              "q": "WCC less than 3.5 x 10 9/L Neutrophils less than 1.6 x 109/L Unexplained eosinophilia more than 0.5x 10 9/L Platelets less than 140 x 109/L Unexplained fall in serum albumin less than 30g/L"
+            },
+            {
+              "s": "sps-mtx-monitoring",
+              "q": "A downward trend of FBC and neutrophil count or an upward trend in liver transaminases could be a sign of toxicity, even if the absolute levels are normal."
+            }
+          ]
+        },
+        {
+          "t": "Stop for: serious fall in WBC or platelets; suspected pneumonitis; ulcerative stomatitis or diarrhoea; GI bleeding.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Following the occurrence of haematemesis, black-coloured stools or blood in the stools, treatment must be discontinued."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "ONCE A WEEK on the SAME, agreed day of the week - never daily. Do not divide the weekly dose (MHRA removed advice on dividing the dose).",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "It must be explicitly pointed out to the patient that for the therapy of rheumatic diseases, psoriasis or severe psoriatic arthritis methotrexate is administered only once a week."
+            },
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "Advice on dividing the once-weekly dose is being removed from the product information since this was identified as a source of confusion that could lead to medication error."
+            }
+          ]
+        },
+        {
+          "t": "Pen: subcutaneous only, single use, use all contents. Sites: upper thighs or abdomen (not around the navel). Fixed day each week.",
+          "formulations": [
+            "methotrexate-pen"
+          ],
+          "src": [
+            {
+              "s": "emc-5443",
+              "q": "It is advisable to determine an appropriate fixed day of the week for the injection."
+            },
+            {
+              "s": "emc-5443",
+              "q": "The medicinal product is for single use only."
+            }
+          ]
+        },
+        {
+          "t": "Folic acid on a different day from methotrexate (SPS).",
+          "src": [
+            {
+              "s": "sps-folic-mtx",
+              "q": "Folic acid supplements are usually avoided on the day of oral or subcutaneous methotrexate."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Take methotrexate ONCE A WEEK only, on your set day. NEVER take it daily - this can be fatal. Seek urgent help if you think you took too much.",
+          "src": [
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "inform the patient and their caregivers of the potentially fatal risk of accidental overdose if methotrexate is taken more frequently than once a week; specifically, that it should not be taken daily"
+            }
+          ]
+        },
+        {
+          "t": "Carry the patient card; write your weekly day on it; show it to any health professional (e.g. hospital admission).",
+          "src": [
+            {
+              "s": "mhra-dsu-mtx-weekly",
+              "q": "carry it with them to alert any healthcare professionals they consult who are not familiar with their methotrexate treatment about their dosing schedule"
+            }
+          ]
+        },
+        {
+          "t": "Report sore throat, mouth ulcers, fever, bruising or bleeding, shortness of breath or persistent cough at once.",
+          "src": [
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Counsel the person to report signs of methotrexate toxicity, for example sore throat, mouth ulcers, unexplained bruising or bleeding."
+            },
+            {
+              "s": "emc-10988",
+              "q": "Patients should be informed of the risks of pneumonia and advised to contact their doctor immediately if they develop a persistent cough or persistent dyspnoea."
+            }
+          ]
+        },
+        {
+          "t": "Do not buy NSAIDs (e.g. ibuprofen) over the counter without asking the doctor or pharmacist. Ask before any new medicine.",
+          "src": [
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Ensure you counsel people taking methotrexate to avoid buying NSAIDs over-the-counter (e.g. oral ibuprofen or analgesic doses of aspirin) without discussing with their doctor or pharmacist first."
+            }
+          ]
+        },
+        {
+          "t": "Avoid alcohol; use sun protection; avoid excess caffeine drinks.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Consumption of alcohol should be avoided or minimised (see section 4.4)."
+            }
+          ]
+        },
+        {
+          "t": "Effective contraception: women during treatment and for at least 6 months after; men (or their female partner) during treatment and for at least 3 months after. One tablet SmPC says 6 months for men too.",
+          "src": [
+            {
+              "s": "emc-10988",
+              "q": "Female patients of reproductive potential must be counselled regarding pregnancy prevention and planning."
+            },
+            {
+              "s": "emc-10988",
+              "q": "If women of a sexually mature age are treated, effective contraception must be used during treatment and for at least six months after."
+            },
+            {
+              "s": "emc-511",
+              "q": "Following administration to a man or woman conception should be avoided by using an effective contraceptive method for at least 6 months after using Methotrexate 2.5 mg tablets"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "methotrexate:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "allergen": [
+        "methotrexate"
+      ],
+      "concern": "Methotrexate hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications - Hypersensitivity to methotrexate",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Hypersensitivity to methotrexate or to any of the excipients listed in section 6.1"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:renal:crcl-30-59",
+      "kind": "renal",
+      "level": "dose",
+      "med": "methotrexate",
+      "renal": {
+        "measure": "CrCl",
+        "min": 30,
+        "max": 60
+      },
+      "concern": "CrCl 30-59 ml/min",
+      "consequence": "Delayed excretion; risk of serious toxicity.",
+      "action": "Give 50% of the dose (still ONCE WEEKLY); use with caution; monitor more often. Not recommended with NSAIDs if any renal impairment.",
+      "sourceWording": "30-59 50 %",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Creatinine clearance (ml/min) Dose ≥ 60 100 % 30-59 50 % < 30 Methotrexate must not be used"
+        },
+        {
+          "s": "emc-5443",
+          "q": "Creatinine clearance (ml/min) ≥60 30-59 <30 Dose 100% 50% Metoject PEN must not be used"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:renal:crcl-under-30",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "renal": {
+        "measure": "CrCl",
+        "max": 30
+      },
+      "concern": "CrCl under 30 ml/min",
+      "consequence": "Accumulation and severe toxicity.",
+      "action": "Must not be used.",
+      "sourceWording": "Methotrexate must not be used",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "If creatinine clearance is less than 30 ml/min, treatment with methotrexate should not be given (see sections 4.2 and 4.3)."
+        },
+        {
+          "s": "emc-5443",
+          "q": "severe renal impairment (creatinine clearance less than 30 ml/min., see section 4.2 and section 4.4)"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:renal:egfr-under-60-sps",
+      "kind": "renal",
+      "level": "monitor",
+      "med": "methotrexate",
+      "renal": {
+        "measure": "eGFR",
+        "max": 60
+      },
+      "concern": "Calculated GFR under 60 ml/min/1.73m2 during treatment (SPS)",
+      "consequence": "Possible renal decline and toxicity.",
+      "action": "Repeat in 1 week; if still more than 30% from baseline, withhold and discuss with the specialist team (SPS).",
+      "sourceWording": "repeat in 1 week, if still more than 30% from baseline, withhold and discuss with specialist team",
+      "src": [
+        {
+          "s": "sps-mtx-monitoring",
+          "q": "Calculated GFR less than 60ml/min/1.73m2 (repeat in 1 week, if still more than 30% from baseline, withhold and discuss with specialist team)"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Significant / severe hepatic impairment",
+      "consequence": "Hepatotoxicity.",
+      "action": "Do not use (pen SmPC: also contraindicated if bilirubin over 5 mg/dl (85.5 µmol/l)).",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Methotrexate is contraindicated in patients with significantly impaired hepatic function, see sections 4.3 and 4.4."
+        },
+        {
+          "s": "emc-5443",
+          "q": "If bilirubin is >5 mg/dl (85.5 µmol/l), methotrexate is contraindicated."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "methotrexate",
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Current or previous liver disease",
+      "consequence": "Hepatotoxicity risk, especially alcohol-related disease.",
+      "action": "Great caution, if at all.",
+      "sourceWording": "with great caution, if at all",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Methotrexate should be administered with great caution, if at all, to patients with significant current or previous liver disease, especially if due to alcohol."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:alcohol",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "condition": "alcohol-dependence",
+      "effect": "hepatotoxicity",
+      "concern": "Alcoholism / alcohol abuse",
+      "consequence": "Hepatotoxicity.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated ... alcohol abuse",
+      "src": [
+        {
+          "s": "emc-5443",
+          "q": "alcohol abuse"
+        },
+        {
+          "s": "emc-10988",
+          "q": "Alcoholism"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:blood-dyscrasia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "condition": "blood-dyscrasia",
+      "effect": "bone-marrow-suppression",
+      "concern": "Pre-existing blood dyscrasia",
+      "consequence": "Bone marrow suppression.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications - Pre-existing blood dyscrasias",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Pre-existing blood dyscrasias, such as bone marrow hypoplasia, leukopenia, thrombocytopenia, or significant anaemia"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:immunodeficiency",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "condition": "immunodeficiency",
+      "concern": "Immunodeficiency syndrome",
+      "consequence": "Immunosuppression; serious infection.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications - immunodeficiency syndromes",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Severe acute or chronic infections and immunodeficiency syndromes"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:serious-infection",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "condition": "serious-infection",
+      "concern": "Severe acute or chronic infection (e.g. TB, HIV); one tablet SmPC also lists active infectious disease",
+      "consequence": "Immunosuppression.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated ... serious, acute or chronic infections",
+      "src": [
+        {
+          "s": "emc-5443",
+          "q": "serious, acute or chronic infections such as tuberculosis, HIV or other immunodeficiency syndromes"
+        },
+        {
+          "s": "emc-511",
+          "q": "Active infectious disease"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:oral-gi-ulcer",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "condition": "oral-ulcers-active-gi-ulcer",
+      "concern": "Stomatitis, mouth ulcers or active GI ulcer disease",
+      "consequence": "Risk of haemorrhagic enteritis and perforation.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications - Stomatitis, ulcers of the oral cavity and known active gastrointestinal ulcer disease",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Stomatitis, ulcers of the oral cavity and known active gastrointestinal ulcer disease"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:dehydration",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "methotrexate",
+      "condition": "dehydration-hypovolaemia",
+      "concern": "Dehydration (vomiting, diarrhoea, stomatitis)",
+      "consequence": "Raised methotrexate levels and toxicity.",
+      "action": "Stop methotrexate until the symptoms have gone.",
+      "sourceWording": "must be discontinued until the symptoms have disappeared",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Conditions that cause dehydration such as vomiting, diarrhoea or stomatitis can increase toxicity as a result of raised active substance levels."
+        },
+        {
+          "s": "emc-10988",
+          "q": "In this case, treatment with methotrexate must be discontinued until the symptoms have disappeared."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:third-space",
+      "kind": "condition",
+      "level": "dose",
+      "med": "methotrexate",
+      "condition": "pleural-effusion-ascites",
+      "concern": "Pleural effusion or ascites",
+      "consequence": "Half-life up to 4 times longer.",
+      "action": "Drain before starting; careful toxicity monitoring; dose reduction or stopping may be required.",
+      "sourceWording": "require dose reduction or, in some cases, discontinuation",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Such patients require especially careful monitoring for toxicity, and require dose reduction or, in some cases, discontinuation of methotrexate administration"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "methotrexate",
+      "condition": "diabetes",
+      "effect": "hepatotoxicity",
+      "concern": "Insulin-dependent diabetes",
+      "consequence": "Liver cirrhosis reported without raised transaminases.",
+      "action": "Increased caution.",
+      "sourceWording": "Increased caution should be exercised",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Increased caution should be exercised in patients with insulin-dependent diabetes mellitus"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:pulmonary",
+      "kind": "condition",
+      "level": "caution",
+      "med": "methotrexate",
+      "condition": "pulmonary-disease",
+      "concern": "Impaired pulmonary function",
+      "consequence": "Methotrexate lung toxicity.",
+      "action": "Particular caution.",
+      "sourceWording": "Particular caution is required",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Particular caution is required in patients with impaired pulmonary function."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:pregnancy",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "concern": "Pregnancy",
+      "consequence": "Powerful teratogen: miscarriage, growth restriction, malformations.",
+      "action": "Do not use (contraindicated for non-cancer use; one tablet SmPC: should not be given in pregnancy). Exclude pregnancy before starting.",
+      "sourceWording": "contraindicated during pregnancy in non-oncological indications",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Methotrexate is contraindicated during pregnancy in non-oncological indications (see section 4.3)."
+        },
+        {
+          "s": "emc-511",
+          "q": "Methotrexate is teratogenic and should not be given during pregnancy or to mothers who are breast-feeding"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "concern": "Breastfeeding",
+      "consequence": "Passes into milk; may cause toxicity in the infant.",
+      "action": "Contraindicated; stop breastfeeding before treatment.",
+      "sourceWording": "treatment is contraindicated during the lactation period",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "As methotrexate passes into breast milk and may cause toxicity in nursing infants, treatment is contraindicated during the lactation period (see section 4.3)."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:age:under-3",
+      "kind": "age",
+      "level": "avoid",
+      "med": "methotrexate",
+      "age": {
+        "minYears": 0,
+        "maxYears": 3
+      },
+      "concern": "Child under 3 years",
+      "consequence": "Insufficient efficacy and safety data.",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "The use in children below 3 years of age is not recommended as insufficient data on efficacy and safety are available for this population (see section 4.4)."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:trimethoprim",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "methotrexate",
+      "other": "trimethoprim",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate with trimethoprim",
+      "consequence": "Additive antifolate effect; risk of severe bone marrow suppression.",
+      "action": "Avoid (SPS; trimethoprim SmPC). If unavoidable: counsel on myelosuppression signs, frequent FBC, consider extra FBC monitoring for at least 2 months. One tablet SmPC lists antifolate drugs under 4.3 Contraindications (see the tablet rule).",
+      "sourceWording": "Avoid prescribing co-trimoxazole or trimethoprim with methotrexate",
+      "src": [
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Avoid prescribing co-trimoxazole or trimethoprim with methotrexate, due to the risk of severe bone marrow suppression."
+        },
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Trimethoprim increases the antifolate effect of methotrexate therefore use should be avoided."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:co-trimoxazole",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "methotrexate",
+      "other": "co-trimoxazole",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate with co-trimoxazole",
+      "consequence": "Acute megaloblastic pancytopenia reported; raised free methotrexate; effect may be delayed after stopping.",
+      "action": "Avoid (SPS); one tablet SmPC: should not be used together. If unavoidable: frequent FBC, extra FBC monitoring for at least 2 months. One tablet SmPC lists antifolate drugs under 4.3 Contraindications (see the tablet rule).",
+      "sourceWording": "should not be used concomitantly",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Methotrexate tablets should not be used concomitantly with drugs with antifolate properties (e.g. co-trimoxazole)"
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "The interaction may be delayed and has occurred in people who have taken co-trimoxazole after recently stopping methotrexate."
+        },
+        {
+          "s": "emc-5443",
+          "q": "Concomitant administration of folate antagonists such as trimethoprim/sulphamethoxazole has been reported to cause an acute megaloblastic pancytopenia in rare instances."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:nsaid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "methotrexate",
+      "other": "group:nsaid",
+      "effect": "nephrotoxicity",
+      "concern": "Methotrexate with NSAIDs",
+      "consequence": "Reduced methotrexate elimination; increased methotrexate and renal toxicity.",
+      "action": "Use with caution on specialist advice (SPS). One tablet SmPC: not recommended if any renal impairment, including mild. Another tablet SmPC: monitor methotrexate dosage when an NSAID is started (fatal toxicity reported). Aspirin antiplatelet doses can continue (SPS).",
+      "sourceWording": "Use NSAIDs in combination with methotrexate with caution",
+      "src": [
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Use NSAIDs in combination with methotrexate with caution on the advice of the specialist (for example, rheumatologist)."
+        },
+        {
+          "s": "emc-10988",
+          "q": "If risk factors such as renal function disorders, including mild renal impairment, are present, combined administration with NSAIDs is not recommended."
+        },
+        {
+          "s": "emc-511",
+          "q": "Methotrexate dosage should be monitored if concomitant treatment with aspirin, ibuprofen or indometacin (NSAIDs) is commenced, as concomitant use of NSAID's has been associated with fatal methotrexate toxicity."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:penicillin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "methotrexate",
+      "other": "group:penicillin",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate with penicillins (e.g. amoxicillin)",
+      "consequence": "Reduced renal clearance of methotrexate; haematological and GI toxicity.",
+      "action": "Short courses (up to 10 days): use with caution and watch for toxicity (SPS).",
+      "sourceWording": "consider using with caution",
+      "src": [
+        {
+          "s": "sps-mtx-interactions",
+          "q": "If the duration of penicillin is short (up to 10 days), consider using with caution and advise to monitor for signs of toxicity."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:ppi",
+      "kind": "interaction",
+      "level": "info",
+      "med": "methotrexate",
+      "other": "group:ppi",
+      "concern": "Low-dose methotrexate with proton pump inhibitors",
+      "consequence": "Delayed renal elimination of methotrexate reported; evidence limited; risk higher with high doses or renal impairment.",
+      "action": "Low-dose methotrexate (SPS): no additional action; routine monitoring; H2-receptor antagonist if an alternative is needed. (High-dose: see the separate avoid rule.)",
+      "sourceWording": "No additional action is required",
+      "src": [
+        {
+          "s": "emc-5443",
+          "q": "Concomitant administration of methotrexate and omeprazole has led to delayed renal elimination of methotrexate."
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Consider use of H2-receptor antagonists as an alternative if required."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:ppi-high-dose",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "methotrexate",
+      "other": "group:ppi",
+      "concern": "HIGH-dose methotrexate with proton pump inhibitors (one tablet SmPC) - does not apply to low-dose weekly use",
+      "consequence": "Delayed renal elimination of methotrexate (raised levels, toxicity), especially in renal impairment.",
+      "action": "One tablet SmPC: avoid PPIs with HIGH-dose methotrexate, especially in renal impairment. The tool cannot check the methotrexate dose; for low-dose once-weekly use see the SPS statement (no additional action).",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Concomitant use of proton pump inhibitors (PPIs) and high dose methotrexate should be avoided, especially in patients with renal impairment."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:ciprofloxacin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "methotrexate",
+      "other": "ciprofloxacin",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate with ciprofloxacin",
+      "consequence": "Inhibited renal tubular transport of methotrexate: raised levels with haematological and GI toxicity.",
+      "action": "Concomitant use not recommended (ciprofloxacin SmPC).",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "The concomitant use of ciprofloxacin with methotrexate is not recommended"
+        },
+        {
+          "s": "emc-4346",
+          "q": "Renal tubular transport of methotrexate may be inhibited by concomitant administration of ciprofloxacin"
+        },
+        {
+          "s": "emc-10988",
+          "q": "Penicillins (e.g. amoxicillin), glycopeptides, sulfonamides, ciprofloxacin and cefalotin can, in individual cases, reduce the renal clearance of methotrexate"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:statin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "methotrexate",
+      "other": "group:statin",
+      "effect": "hepatotoxicity",
+      "concern": "Methotrexate with statins",
+      "consequence": "Possible increased liver toxicity.",
+      "action": "SPS: no additional action; routine monitoring.",
+      "sourceWording": "No additional action is required",
+      "src": [
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Taking methotrexate and statins (for example, atorvastatin or simvastatin) can increase the risk of liver toxicity."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:antifolate-tab",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "formulations": [
+        "methotrexate-tab"
+      ],
+      "other": "group:folate-antagonist",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate tablets with antifolate medicines (e.g. co-trimoxazole, trimethoprim)",
+      "consequence": "Additive antifolate effect: acute megaloblastic pancytopenia and haematological toxicity reported.",
+      "action": "One tablet SmPC 4.3: should not be used concomitantly. SPS: avoid; if unavoidable, frequent FBC and extra FBC monitoring for at least 2 months.",
+      "sourceWording": "Methotrexate tablets should not be used concomitantly with drugs with antifolate properties",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Methotrexate is contra-indicated in the presence of:"
+        },
+        {
+          "s": "emc-511",
+          "q": "Methotrexate tablets should not be used concomitantly with drugs with antifolate properties (e.g. co-trimoxazole)"
+        },
+        {
+          "s": "emc-511",
+          "q": "Sulfamethoxazole and folate antagonists such as trimethoprim (as co-trimoxazole) - increased risk of haematological toxicity. Considerable caution required"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:hepatic:liver-disease-mercury",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Liver disease, including fibrosis, cirrhosis, recent or active hepatitis (one tablet SmPC)",
+      "consequence": "Hepatotoxicity.",
+      "action": "One tablet SmPC: contraindicated. (The other tablet SmPC and the pen SmPC: great caution, if at all, in significant liver disease; contraindicated in significant/severe hepatic impairment.)",
+      "sourceWording": "contra-indicated in the presence of: ... Liver disease",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Methotrexate is contra-indicated in the presence of:"
+        },
+        {
+          "s": "emc-511",
+          "q": "Liver disease including fibrosis, cirrhosis, recent or active hepatitis"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:active-liver-disease",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "condition": "active-liver-disease",
+      "effect": "hepatotoxicity",
+      "concern": "Liver disease, including fibrosis, cirrhosis, recent or active hepatitis (one tablet SmPC)",
+      "consequence": "Hepatotoxicity.",
+      "action": "One tablet SmPC: contraindicated. The other tablet SmPC: great caution, if at all, in significant current or previous liver disease.",
+      "sourceWording": "contra-indicated in the presence of: ... Liver disease",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Liver disease including fibrosis, cirrhosis, recent or active hepatitis"
+        },
+        {
+          "s": "emc-10988",
+          "q": "Methotrexate should be administered with great caution, if at all, to patients with significant current or previous liver disease, especially if due to alcohol."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:no-contraception",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "condition": "childbearing-potential-no-contraception",
+      "concern": "Woman of child-bearing potential not using effective contraception",
+      "consequence": "Powerful teratogen (miscarriage, malformations).",
+      "action": "Effective contraception must be used during treatment and for at least 6 months after stopping; confirm absence of pregnancy before starting (non-oncological use).",
+      "sourceWording": "effective contraception must be used during treatment with methotrexate and at least 6 months thereafter",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Women must not get pregnant during methotrexate therapy and effective contraception must be used during treatment with methotrexate and at least 6 months thereafter (see section 4.4)."
+        },
+        {
+          "s": "emc-511",
+          "q": "Following administration to a man or woman conception should be avoided by using an effective contraceptive method for at least 6 months after using Methotrexate 2.5 mg tablets"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:attempting-to-conceive",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methotrexate",
+      "condition": "attempting-to-conceive",
+      "concern": "Woman attempting to conceive",
+      "consequence": "Pregnancy is contraindicated (non-oncological use); methotrexate can remain after stopping.",
+      "action": "Do not use. SmPCs: avoid conception for at least 6 months after stopping (women). BUMPS: specialists usually advise waiting at least 3 months before trying to conceive.",
+      "sourceWording": "contraindicated during pregnancy in non-oncological indications",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Methotrexate is contraindicated during pregnancy in non-oncological indications (see section 4.3)."
+        },
+        {
+          "s": "emc-10988",
+          "q": "Women must not get pregnant during methotrexate therapy and effective contraception must be used during treatment with methotrexate and at least 6 months thereafter (see section 4.4)."
+        },
+        {
+          "s": "bumps-methotrexate",
+          "q": "You will usually be advised by your specialist to wait at least three months before trying to conceive."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:folate-deficiency",
+      "kind": "condition",
+      "level": "caution",
+      "med": "methotrexate",
+      "condition": "folate-deficiency",
+      "effect": "bone-marrow-suppression",
+      "concern": "Folate deficiency",
+      "consequence": "Folate deficiency may increase methotrexate toxicity.",
+      "action": "Particular care.",
+      "sourceWording": "Particular care is therefore advisable",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Particular care is therefore advisable in the presence of existing folic acid deficiency."
+        },
+        {
+          "s": "emc-511",
+          "q": "Folate deficiency may increase methotrexate toxicity"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:peptic-ulcer",
+      "kind": "condition",
+      "level": "caution",
+      "med": "methotrexate",
+      "condition": "peptic-ulcer-gi-bleeding",
+      "concern": "Peptic ulcer (one tablet SmPC)",
+      "consequence": "GI toxicity (haemorrhagic enteritis, perforation).",
+      "action": "Extreme caution. ACTIVE GI ulcer disease is a contraindication.",
+      "sourceWording": "Extreme caution should be exercised",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Extreme caution should be exercised if there is peptic ulcer or ulcerative colitis."
+        },
+        {
+          "s": "emc-10988",
+          "q": "Stomatitis, ulcers of the oral cavity and known active gastrointestinal ulcer disease"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:ulcerative-colitis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "methotrexate",
+      "condition": "inflammatory-bowel-disease",
+      "concern": "Ulcerative colitis (one tablet SmPC)",
+      "consequence": "GI toxicity.",
+      "action": "Extreme caution (one tablet SmPC names ulcerative colitis; the pen is licensed for Crohn's disease).",
+      "sourceWording": "Extreme caution should be exercised",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Extreme caution should be exercised if there is peptic ulcer or ulcerative colitis."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:psychiatric-depression",
+      "kind": "condition",
+      "level": "caution",
+      "med": "methotrexate",
+      "condition": "depression-suicidality",
+      "concern": "Psychiatric disorder (one tablet SmPC)",
+      "consequence": "SmPC precaution.",
+      "action": "Extreme caution.",
+      "sourceWording": "should be used with extreme caution in ... psychiatric disorders",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Methotrexate should be used with extreme caution in - debility - extreme youth (see section 4.2) - old age (see section 4.2) - psychiatric disorders"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:condition:psychiatric-bipolar",
+      "kind": "condition",
+      "level": "caution",
+      "med": "methotrexate",
+      "condition": "bipolar-mania",
+      "concern": "Psychiatric disorder (one tablet SmPC)",
+      "consequence": "SmPC precaution.",
+      "action": "Extreme caution.",
+      "sourceWording": "should be used with extreme caution in ... psychiatric disorders",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Methotrexate should be used with extreme caution in - debility - extreme youth (see section 4.2) - old age (see section 4.2) - psychiatric disorders"
+        }
+      ]
+    }
+  ]
+}

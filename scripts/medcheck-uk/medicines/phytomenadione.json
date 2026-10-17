@@ -1,0 +1,807 @@
+{
+  "id": "phytomenadione",
+  "name": "Phytomenadione (vitamin K1)",
+  "ingredients": [
+    "phytomenadione"
+  ],
+  "className": "Vitamin K (antihaemorrhagic)",
+  "groups": [],
+  "searchTerms": [
+    "vitamin K1",
+    "vitamin K",
+    "phylloquinone",
+    "phytonadione"
+  ],
+  "formulations": [
+    {
+      "id": "phytomenadione-inj-10mg",
+      "label": "Solution for injection 10 mg/1 ml (mixed micelles)",
+      "route": "intravenous",
+      "strengths": "10 mg/1 ml",
+      "release": "n/a",
+      "note": "For intravenous use only; must not be given intramuscularly.",
+      "src": [
+        {
+          "s": "emc-9755",
+          "q": "Each ampoule contains 10 mg vitamin K1 (phytomenadione) in 1 ml."
+        },
+        {
+          "s": "emc-9755",
+          "q": "is for intravenous injection"
+        },
+        {
+          "s": "emc-9755",
+          "q": "This medicine should not be administered intramuscularly"
+        }
+      ],
+      "sourceIds": [
+        "emc-9755"
+      ]
+    },
+    {
+      "id": "phytomenadione-inj-paed",
+      "label": "Paediatric solution for injection 2 mg/0.2 ml (mixed micelles)",
+      "route": "intramuscular, intravenous or oral",
+      "strengths": "2 mg/0.2 ml",
+      "release": "n/a",
+      "note": "Can be given by IM or IV injection or by mouth depending on indication; oral dispensers are supplied.",
+      "src": [
+        {
+          "s": "emc-9754",
+          "q": "Each ampoule contains 2 mg phytomenadione in 0.2 ml."
+        },
+        {
+          "s": "emc-9754",
+          "q": "This medicine can be administered by intramuscular or intravenous injection or by oral administration depending on the indication."
+        }
+      ],
+      "sourceIds": [
+        "emc-9754"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Antidote to coumarin anticoagulants (e.g. warfarin) in haemorrhage or threatened haemorrhage with low prothrombin or factor VII.",
+          "tag": "10 mg/1 ml",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "is indicated as an antidote to anticoagulant drugs of the coumarin type in the treatment of haemorrhage or threatened haemorrhage, associated with a low blood level of prothrombin or factor VII."
+            }
+          ]
+        },
+        {
+          "t": "Prophylaxis and treatment of vitamin K deficiency bleeding (VKDB) in neonates and infants; antidote to coumarin anticoagulants in infants and children on haematologist advice.",
+          "tag": "Paediatric 2 mg/0.2 ml",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "is indicated for the prophylaxis and treatment of vitamin K deficiency bleeding (VKDB) in neonates and infants."
+            },
+            {
+              "s": "emc-9754",
+              "q": "can be used, following specialist advice from a haematologist, as an antidote to anticoagulant drugs of the coumarin type in infants and children."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Children: consult a haematologist before using phytomenadione in any child (both products).",
+          "tag": "Specialist advice",
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "It is advisable that a haematologist is consulted about appropriate investigation and treatment in any child"
+            },
+            {
+              "s": "emc-9754",
+              "q": "It is advisable that a haematologist is consulted about appropriate investigation and treatment in any infant or child"
+            }
+          ]
+        },
+        {
+          "t": "Adolescents and adults needing coumarin reversal: use the 10 mg/ml product, not the paediatric product.",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "For use as an antidote to anticoagulant drugs of the coumarin type in adolescents and adults, refer to Konakion MM Ampoules 10 mg/ml"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Severe or life-threatening haemorrhage on a coumarin: stop the anticoagulant; give 5-10 mg by slow IV injection (over at least 30 seconds) with prothrombin complex concentrate (FFP if PCC unavailable). Check INR after 3 hours; repeat if response inadequate. Maximum 40 mg IV in 24 hours.",
+          "tag": "Adults: major/life-threatening bleeding",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "The coumarin anticoagulant should be withdrawn and an intravenous injection of Konakion MM/Phytomenadione 10 mg/1 ml given slowly (over at least 30 seconds) at a dose of 5-10 mg together with prothrombin complex concentrate (PCC)."
+            },
+            {
+              "s": "emc-9755",
+              "q": "The patient's INR should be estimated three hours later"
+            },
+            {
+              "s": "emc-9755",
+              "q": "Not more than 40 mg of Konakion MM/Phytomenadione 10 mg/1 ml should be given intravenously in 24 hours."
+            }
+          ]
+        },
+        {
+          "t": "Warfarin, major bleeding: 5.0 mg IV plus PCC; life-threatening bleeding: 5.0 to 10.0 mg IV plus PCC.",
+          "tag": "Adults: warfarin bleeding",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "Warfarin Major bleeding 5.0 mg PCC1 Life-threatening bleeding 5.0 to 10.0 mg PCC1"
+            }
+          ]
+        },
+        {
+          "t": "Warfarin, asymptomatic high INR with or without mild bleeding: INR 5-9 give 0.5 to 1.0 mg IV; INR >9 give 1.0 mg IV (guidance only).",
+          "tag": "Adults: high INR",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "Warfarin 5-9 0.5 to 1.0 mg >9 1.0 mg"
+            }
+          ]
+        },
+        {
+          "t": "Reversal before surgery that can wait 6-12 hours: 5 mg IV; if surgery cannot wait, add PCC and check INR before surgery.",
+          "tag": "Adults: pre-operative reversal",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "Patients who require emergency surgery that can be delayed for 6-12 hours can be given 5 mg intravenous vitamin K1 to reverse the anticoagulant effect."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: more sensitive to reversal; use the lower end of dose ranges.",
+          "tag": "Elderly",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "The dosage for this patient group should therefore be at the lower end of the ranges recommended."
+            }
+          ]
+        },
+        {
+          "t": "Warfarin SmPC (oral option): INR >8.0 with no or minor bleeding - 0.5-1 mg slow IV or 5 mg by mouth (smaller oral doses 0.5-2.5 mg using the IV preparation for partial reversal); repeat if INR still too high after 24 hours. SPS notes oral use of the IV formulation is off-label.",
+          "tag": "Oral reversal (warfarin SmPC / SPS)",
+          "src": [
+            {
+              "s": "emc-2803",
+              "q": "give phytomenadione (vitamin K1) 0·5-1 mg for adults, 0·015-0·030 mg/kg (15-30 micrograms/kg) for children by slow intravenous injection or 5 mg by mouth"
+            },
+            {
+              "s": "sps-warfarin-monitoring",
+              "q": "either orally (off-label use of intravenous formulation) or intravenously depending on presence of bleeding"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "VKDB prophylaxis, healthy neonates 36 weeks gestation and older: either 1 mg IM at or soon after birth, or 2 mg orally at or soon after birth, then 2 mg at 4-7 days and 2 mg at 1 month (third oral dose can be omitted if exclusively formula fed).",
+          "tag": "Neonates ≥36 weeks",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "Healthy neonates of 36 weeks gestation and older: Either: - 1 mg administered by intramuscular injection at birth or soon after birth or - 2 mg orally at birth or soon after birth."
+            },
+            {
+              "s": "emc-9754",
+              "q": "The oral dose should be followed by a further dose of 2 mg at 4-7 days of age. A further 2 mg oral dose should be given at 1 month after birth."
+            }
+          ]
+        },
+        {
+          "t": "Preterm under 36 weeks weighing 2.5 kg or more, and term neonates at special risk: 1 mg IM or IV at or soon after birth; further doses by coagulation status.",
+          "tag": "Preterm ≥2.5 kg / at-risk",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "1 mg IM or IV at birth or soon after birth. The amount and frequency of further doses should be based on coagulation status."
+            }
+          ]
+        },
+        {
+          "t": "Preterm under 36 weeks weighing less than 2.5 kg: 0.4 mg/kg (0.04 ml/kg) IM or IV at or soon after birth; do not exceed this parenteral dose. Take care: 10-fold dosing errors are common.",
+          "tag": "Preterm <2.5 kg",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "0.4 mg/kg (equivalent to 0.04 ml/kg) IM or IV at birth or soon after birth. This parenteral dose should not be exceeded."
+            },
+            {
+              "s": "emc-9754",
+              "q": "care is required when calculating and measuring the dose in relation to the baby's weight (10 times dosing errors are common)"
+            }
+          ],
+          "calc": {
+            "mgPerKg": 0.4,
+            "per": "dose",
+            "weightMaxKg": 2.5,
+            "of": "phytomenadione"
+          }
+        },
+        {
+          "t": "Treatment of VKDB: initially 1 mg IV, further doses by clinical picture and coagulation status.",
+          "tag": "VKDB treatment",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "Initially 1 mg IV and further doses as required, depending on clinical picture and coagulation status."
+            }
+          ]
+        },
+        {
+          "t": "Warfarin reversal in infants/children (IV only, haematologist advice): partial reversal 30 micrograms/kg IV (the paediatric product suits this dose only in children over 13 kg); complete reversal of overdose 250-300 micrograms/kg IV (only in children over 1.6 kg). Check prothrombin time 2-6 hours later; repeat if needed.",
+          "tag": "Children: warfarin reversal",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "the suggested dose for the partial reversal of anticoagulation is 30 micrograms/kg administered by IV injection"
+            },
+            {
+              "s": "emc-9754",
+              "q": "The suggested dose of vitamin K for patients requiring a complete reversal of a warfarin overdose is 250-300 micrograms/kg administered by IV injection."
+            },
+            {
+              "s": "emc-9754",
+              "q": "is only suitable for the administration of doses of 30 micrograms/kg in children weighing over 13 kg"
+            },
+            {
+              "s": "emc-9754",
+              "q": "is only suitable for the administration of doses of 250-300 micrograms/kg in children weighing over 1.6 kg"
+            }
+          ],
+          "calc": {
+            "mgPerKg": 0.03,
+            "per": "dose",
+            "of": "phytomenadione"
+          }
+        },
+        {
+          "t": "Children 1-18 years (10 mg/ml product): major/life-threatening bleeding 5 mg IV (with PCC or FFP); asymptomatic high INR (>8) 30 micrograms/kg IV, recheck INR 2-6 hours later.",
+          "tag": "Children 1-18 years",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "A dose of 5 mg vitamin K1 IV is suggested"
+            },
+            {
+              "s": "emc-9755",
+              "q": "Intravenous vitamin K1 at doses of 30 micrograms/kg have been reported to be effective in reversing asymptomatic high (>8) INR in clinically well children."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to any constituent.",
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "Use in patients with a known hypersensitivity to any of the constituents."
+            },
+            {
+              "s": "emc-9754",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "10 mg/1 ml product must not be given intramuscularly (depot effect makes re-anticoagulation difficult; haematoma risk in anticoagulated patients).",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "This medicine should not be administered intramuscularly because the IM route exhibits depot characteristics"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Severe liver impairment: each 1 ml ampoule contains 54.6 mg glycocholic acid (possible bilirubin displacement); monitor INR carefully.",
+          "tag": "Liver",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "Careful monitoring of the INR is necessary after administration of this medicine in patients with severely impaired liver function."
+            }
+          ]
+        },
+        {
+          "t": "Mechanical heart valves: vitamin K1 is generally to be avoided unless there is major bleeding. Use fresh frozen plasma for transfusion in prosthetic valve patients.",
+          "tag": "Mechanical heart valve",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "The use of vitamin K1 in patients with mechanical heart valves is generally to be avoided, unless there is major bleeding."
+            }
+          ]
+        },
+        {
+          "t": "Avoid large doses if anticoagulation is to continue (no experience above 40 mg per day). Vitamin K1 does not reverse heparin.",
+          "tag": "Re-anticoagulation",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "Large doses of Konakion MM/Phytomenadione 10 mg/1 ml (not more than 40 mg per day) should be avoided if it is intended to continue with anticoagulant therapy"
+            },
+            {
+              "s": "emc-9755",
+              "q": "Vitamin K1 is not an antidote to heparin."
+            }
+          ]
+        },
+        {
+          "t": "Vitamin K may interfere with warfarin anticoagulation for 2-3 weeks; earliest effect at 4-6 hours, so severe bleeding may need clotting factor replacement.",
+          "tag": "Onset / duration",
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "vitamin K administration is likely to interfere with anticoagulation with warfarin for 2-3 weeks"
+            },
+            {
+              "s": "emc-9754",
+              "q": "the earliest effect seen with vitamin K treatment is at 4 to 6 hours"
+            }
+          ]
+        },
+        {
+          "t": "Premature babies under 2.5 kg: parenteral use may increase the risk of kernicterus.",
+          "tag": "Preterm",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "Parenteral administration to premature babies weighing less than 2.5 kg may increase the risk for the development of kernicterus (bilirubin encephalopathy)."
+            }
+          ]
+        },
+        {
+          "t": "Infants with cholestatic disease must receive it IM or IV (oral absorption impaired). Coumarin reversal in children must be IV (IM may cause significant bleeding).",
+          "tag": "Route",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "Infants with cholestatic disease must receive Konakion MM Paediatric/ Phytomenadione 2 mg/0.2 ml by intramuscular or intravenous injection since oral absorption is impaired in these patients."
+            },
+            {
+              "s": "emc-9754",
+              "q": "must be administered by intravenous injection when used as an antidote to anticoagulant drugs of the coumarin type"
+            }
+          ]
+        },
+        {
+          "t": "Do not use if ampoule contents are turbid or separated.",
+          "tag": "Storage",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "In this case the ampoule must no longer be used."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Antagonises coumarin anticoagulants (e.g. warfarin); no other significant interactions known.",
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "No significant interactions are known other than antagonism of coumarin anticoagulants."
+            },
+            {
+              "s": "emc-9754",
+              "q": "No significant interactions are known other than antagonism of coumarin anticoagulants."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "status": "not-stated",
+      "note": "No renal impairment advice in the phytomenadione SmPCs."
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Severe liver impairment: careful INR monitoring needed (glycocholic acid content).",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "Careful monitoring of the INR is necessary after administration of this medicine in patients with severely impaired liver function."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Use in pregnancy only if benefits outweigh risks. Not recommended in pregnant women as prophylaxis of vitamin K deficiency bleeding in the newborn.",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "the administration during pregnancy should only occur if the benefits outweigh the risks"
+            },
+            {
+              "s": "emc-9755",
+              "q": "This medicine is not recommended for pregnant women as prophylaxis of vitamin K deficiency bleeding in the newborn."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Paediatric 2 mg/0.2 ml SmPC: vitamin K1 is poorly excreted in breast milk. No specific breastfeeding advice in the 10 mg/ml SmPC.",
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "is poorly excreted in breast milk"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "No fertility or contraception advice in the phytomenadione SmPCs."
+    },
+    "adverseCommon": {
+      "status": "not-stated",
+      "note": "No common or very common adverse effects are listed in the phytomenadione SmPCs."
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Anaphylactoid reactions after intravenous injection.",
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "There have been reports of anaphylactoid reactions after intravenous injections of this medicine."
+            }
+          ]
+        },
+        {
+          "t": "Very rarely venous irritation or phlebitis (IV). Paediatric product: rare severe injection site reactions (inflammation, atrophy, necrosis).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "Very rarely, venous irritation or phlebitis has been reported"
+            },
+            {
+              "s": "emc-9754",
+              "q": "Rarely, injection site reactions may occur which may be severe, including inflammation, atrophy and necrosis."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Adults (major bleeding): INR 3 hours after dose; daily coagulation profiles until acceptable (more often in severe cases).",
+          "tag": "ongoing",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "Coagulation profiles must be monitored on a daily basis until these have returned to acceptable levels"
+            }
+          ]
+        },
+        {
+          "t": "Children: measure INR/prothrombin time 2 to 6 hours after the dose; frequent monitoring of vitamin K dependent clotting factors.",
+          "tag": "ongoing",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "Prothrombin time should be measured 2 to 6 hours later"
+            },
+            {
+              "s": "emc-9754",
+              "q": "Frequent monitoring of vitamin K dependent clotting factors is essential in these patients."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "10 mg/1 ml: IV only, slowly (over at least 30 seconds). For infusion in adults, dilute in 55 ml of 5% glucose, freshly prepared and protected from light; do not mix with other injectables (may inject into lower part of an infusion set).",
+          "formulations": [
+            "phytomenadione-inj-10mg"
+          ],
+          "src": [
+            {
+              "s": "emc-9755",
+              "q": "should be diluted with 55 ml of 5% glucose before slowly infusing the product"
+            },
+            {
+              "s": "emc-9755",
+              "q": "should not be diluted or mixed with other injectables, but may be injected into the lower part of an infusion apparatus"
+            }
+          ]
+        },
+        {
+          "t": "Paediatric 2 mg/0.2 ml: IM, IV or oral. Use 0.5 ml syringes with 0.01 ml graduations for 0.04-0.1 ml doses. IV infusion not recommended (inject into lower part of a running infusion set). For oral use, draw 0.2 ml (2 mg) into the supplied dispenser and drop into the baby's mouth.",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "0.5 ml syringes with 0.01 ml graduations are recommended"
+            },
+            {
+              "s": "emc-9754",
+              "q": "Administration of Konakion MM Paediatric/Phytomenadione 2 mg/0.2 ml by IV infusion is not recommended"
+            },
+            {
+              "s": "emc-9754",
+              "q": "Drop the contents of the dispenser directly into the baby's mouth by pressing the plunger."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Parents giving oral neonatal prophylaxis: complete the course of oral doses (birth, 4-7 days, 1 month unless exclusively formula fed).",
+          "formulations": [
+            "phytomenadione-inj-paed"
+          ],
+          "src": [
+            {
+              "s": "emc-9754",
+              "q": "In exclusively formula fed infants the third oral dose can be omitted."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "phytomenadione:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "phytomenadione",
+      "allergen": [
+        "phytomenadione"
+      ],
+      "concern": "Hypersensitivity to phytomenadione or excipients",
+      "consequence": "Anaphylactoid reactions reported after IV injection.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-9755",
+          "q": "Use in patients with a known hypersensitivity to any of the constituents."
+        },
+        {
+          "s": "emc-9754",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "phytomenadione:hepatic:severe",
+      "kind": "hepatic",
+      "level": "monitor",
+      "med": "phytomenadione",
+      "hepatic": [
+        "severe"
+      ],
+      "formulations": [
+        "phytomenadione-inj-10mg"
+      ],
+      "concern": "Severe liver impairment (10 mg/1 ml product)",
+      "consequence": "Glycocholic acid may displace bilirubin.",
+      "action": "Monitor INR carefully after the dose.",
+      "sourceWording": "Careful monitoring of the INR is necessary",
+      "src": [
+        {
+          "s": "emc-9755",
+          "q": "Careful monitoring of the INR is necessary after administration of this medicine in patients with severely impaired liver function."
+        }
+      ]
+    },
+    {
+      "id": "phytomenadione:condition:mechanical-valve",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "phytomenadione",
+      "condition": "mechanical-heart-valve",
+      "formulations": [
+        "phytomenadione-inj-10mg"
+      ],
+      "concern": "Mechanical heart valve",
+      "consequence": "Reversal can interfere with needed anticoagulation.",
+      "action": "Generally avoid unless there is major bleeding; use FFP for transfusion.",
+      "sourceWording": "is generally to be avoided",
+      "src": [
+        {
+          "s": "emc-9755",
+          "q": "The use of vitamin K1 in patients with mechanical heart valves is generally to be avoided, unless there is major bleeding."
+        }
+      ]
+    },
+    {
+      "id": "phytomenadione:pregnancy",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "phytomenadione",
+      "formulations": [
+        "phytomenadione-inj-10mg"
+      ],
+      "concern": "Pregnancy",
+      "consequence": "No specific safety evidence.",
+      "action": "Use only if benefits outweigh risks; not recommended as prophylaxis of newborn VKDB.",
+      "sourceWording": "should only occur if the benefits outweigh the risks",
+      "src": [
+        {
+          "s": "emc-9755",
+          "q": "the administration during pregnancy should only occur if the benefits outweigh the risks"
+        },
+        {
+          "s": "emc-9755",
+          "q": "This medicine is not recommended for pregnant women as prophylaxis of vitamin K deficiency bleeding in the newborn."
+        }
+      ]
+    },
+    {
+      "id": "phytomenadione:age:child-10mg",
+      "kind": "age",
+      "level": "caution",
+      "med": "phytomenadione",
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "formulations": [
+        "phytomenadione-inj-10mg"
+      ],
+      "concern": "Child 1 to 18 years (10 mg/1 ml product)",
+      "consequence": "Few data; no dose-ranging studies.",
+      "action": "Consult a haematologist; neonates and babies should get the paediatric product.",
+      "sourceWording": "It is advisable that a haematologist is consulted",
+      "src": [
+        {
+          "s": "emc-9755",
+          "q": "It is advisable that a haematologist is consulted about appropriate investigation and treatment in any child"
+        },
+        {
+          "s": "emc-9755",
+          "q": "should be used in these patients (see separate prescribing information)"
+        }
+      ]
+    },
+    {
+      "id": "phytomenadione:interaction:vka",
+      "kind": "interaction",
+      "level": "info",
+      "med": "phytomenadione",
+      "other": "group:vitamin-k-antagonist",
+      "concern": "Coumarin anticoagulants (warfarin)",
+      "consequence": "Phytomenadione antagonises coumarins (reverses warfarin); may interfere with warfarin anticoagulation for 2-3 weeks.",
+      "action": "Use deliberately for reversal; avoid large doses if anticoagulation is to continue.",
+      "sourceWording": "antagonism of coumarin anticoagulants",
+      "src": [
+        {
+          "s": "emc-9755",
+          "q": "No significant interactions are known other than antagonism of coumarin anticoagulants."
+        },
+        {
+          "s": "emc-9754",
+          "q": "vitamin K administration is likely to interfere with anticoagulation with warfarin for 2-3 weeks"
+        }
+      ]
+    }
+  ]
+}

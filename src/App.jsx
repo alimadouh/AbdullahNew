@@ -719,7 +719,7 @@ export default function App() {
         {/* A chosen tool opens as its own page (never a popup), so the phone keyboard can't cover it */}
         {activeSection === 'tools' && toolPage && (
           <div className="mb-4 flex flex-col gap-3">
-            <div className={`mx-auto w-full ${toolPage === 'medcheck' ? 'max-w-6xl' : 'max-w-xl'}`}>
+            <div className={`mx-auto w-full ${toolPage === 'medcheck' ? 'max-w-[1400px]' : 'max-w-xl'}`}>
               <Button variant="outline" size="sm" onClick={closeTool} className="gap-1.5">
                 <ArrowLeft className="h-4 w-4" />
                 All Tools
@@ -737,7 +737,7 @@ export default function App() {
               {toolPage === 'ckd' && <CKDTool theme={theme} />}
               {toolPage === 'osteo' && <OsteoTool theme={theme} />}
               {toolPage === 'cvd' && <CVDTool theme={theme} />}
-              {toolPage === 'medcheck' && <MedCheckTool dark={dark} />}
+              {toolPage === 'medcheck' && <MedCheckTool />}
             </DialogPageProvider>
           </div>
         )}

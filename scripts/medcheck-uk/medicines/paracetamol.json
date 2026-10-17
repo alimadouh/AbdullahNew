@@ -1,0 +1,1080 @@
+{
+  "id": "paracetamol",
+  "name": "Paracetamol",
+  "ingredients": [
+    "paracetamol"
+  ],
+  "className": "Analgesic and antipyretic",
+  "groups": [],
+  "searchTerms": [
+    "acetaminophen"
+  ],
+  "formulations": [
+    {
+      "id": "paracetamol-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "500 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "Each tablet contains 500 mg of paracetamol."
+        }
+      ],
+      "sourceIds": [
+        "emc-9128"
+      ]
+    },
+    {
+      "id": "paracetamol-susp-120",
+      "label": "Oral suspension 120 mg/5 ml (infant)",
+      "route": "oral",
+      "strengths": "120 mg/5 ml",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-6634",
+          "q": "CALPOL Infant Original 120mg/5ml Oral Suspension"
+        }
+      ],
+      "sourceIds": [
+        "emc-6634"
+      ]
+    },
+    {
+      "id": "paracetamol-susp-250",
+      "label": "Oral suspension 250 mg/5 mL (6 years and over)",
+      "route": "oral",
+      "strengths": "250 mg/5 mL",
+      "release": "n/a",
+      "note": "Different age bands and doses from the 120 mg/5 ml suspension; not for children under 6 years.",
+      "src": [
+        {
+          "s": "emc-6694",
+          "q": "Do not give to children under the age of 6 years."
+        }
+      ],
+      "sourceIds": [
+        "emc-6694"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Mild to moderate pain and fever (e.g. headache, migraine, toothache, neuralgia, colds and influenza, sore throat, backache, rheumatic pain, dysmenorrhoea).",
+          "formulations": [
+            "paracetamol-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Paracetamol is a mild analgesic and antipyretic, and is recommended for the treatment of most painful and febrile conditions"
+            }
+          ]
+        },
+        {
+          "t": "Infant suspension: mild to moderate pain and fever, including teething and post-immunisation fever.",
+          "formulations": [
+            "paracetamol-susp-120"
+          ],
+          "src": [
+            {
+              "s": "emc-6634",
+              "q": "is indicated for the treatment of mild to moderate pain and as an antipyretic"
+            },
+            {
+              "s": "emc-6634",
+              "q": "teething, sore throat, colds & influenza, aches and pains and post-immunisation fever"
+            }
+          ]
+        },
+        {
+          "t": "250 mg/5 mL suspension: mild to moderate pain and fever; adjunct for symptoms of cold and flu.",
+          "formulations": [
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6694",
+              "q": "For the treatment of mild to moderate pain"
+            },
+            {
+              "s": "emc-6694",
+              "q": "For the reduction of fever and to be used as an adjunctive treatment to relieve symptoms of cold and flu."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the SmPCs or MHRA pages accessed."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults (including elderly) and children over 16 years: 1 g (two 500 mg tablets) every 4 hours as required. Maximum 8 tablets (4 g) in 24 hours; no more than 4 doses in 24 hours. Do not take for more than 3 days without consulting a doctor.",
+          "tag": "Adults: pain/fever",
+          "formulations": [
+            "paracetamol-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Adults, Elderly and Children over 16 years: Two tablets every four hours as required. Not more than eight tablets in 24 hours"
+            },
+            {
+              "s": "emc-9128",
+              "q": "nor should more than four doses be given in any 24 hour period"
+            },
+            {
+              "s": "emc-9128",
+              "q": "Do not take for more than 3 days without consulting your doctor."
+            }
+          ]
+        },
+        {
+          "t": "250 mg/5 mL suspension, adults and children over 16 years: 10-20 mL (500 mg-1 g) up to 4 times a day.",
+          "tag": "Adults: suspension",
+          "formulations": [
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6694",
+              "q": "Adults and children over 16 years: Two - four 5mL spoonfuls (large end) up to 4 times a day."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: absorption is normal but half-life is longer and clearance lower than in young adults (no specific dose change stated).",
+          "tag": "Elderly",
+          "detail": true,
+          "formulations": [
+            "paracetamol-susp-120",
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6694",
+              "q": "In the elderly, the rate and extent of paracetamol absorption is normal but plasma half-life is longer and paracetamol clearance is lower than in young adults."
+            }
+          ]
+        },
+        {
+          "t": "Low body weight or hepatic risk factors: no reduced maximum daily dose is stated in the oral SmPCs used (BNF not accessed); this is a gap in these sources, not evidence that no reduction is needed. Overdose thresholds stated: liver damage is possible after 10 g or more in adults (500 mg tablet SmPC) or 7.5 g or more in adults and adolescents aged 12 years and over (suspension SmPCs), and after 5 g or more with risk factors (long-term liver enzyme inducers, regular excess alcohol, glutathione depletion e.g. eating disorders, cystic fibrosis, HIV, starvation, cachexia).",
+          "tag": "Risk factors / overdose thresholds",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Liver damage is possible in adults who have taken 10g or more of paracetamol. Ingestion of 5g or more of paracetamol may lead to liver damage if the patient has risk factors"
+            },
+            {
+              "s": "emc-6634",
+              "q": "Liver damage is possible in adults and adolescents (≥12 years of age) who have taken 7.5g or more of paracetamol."
+            },
+            {
+              "s": "emc-9128",
+              "q": "is likely to be glutathione deplete e.g. eating disorders, cystic fibrosis, HIV infection, starvation, cachexia"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Tablets: not recommended under 10 years. Children 10-15 years: one 500 mg tablet every 4-6 hours when necessary, maximum 4 doses in 24 hours; no more than 3 days without a doctor.",
+          "tag": "Tablets",
+          "formulations": [
+            "paracetamol-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Children under 10 years: Not recommended for children under 10 years of age."
+            },
+            {
+              "s": "emc-9128",
+              "q": "Children aged 10 to 15 years: One tablet every four to six hours when necessary to a maximum of four doses in 24 hours."
+            }
+          ]
+        },
+        {
+          "t": "120 mg/5 ml, fever after vaccination at 2, 3 and 4 months: 2.5 ml, up to 4 times a day starting at the time of vaccination, at least 4 hours apart; see a doctor or pharmacist if still needed 2 days after the vaccine.",
+          "tag": "Post-vaccination fever (current SmPC)",
+          "formulations": [
+            "paracetamol-susp-120"
+          ],
+          "src": [
+            {
+              "s": "emc-6634",
+              "q": "For the relief of fever after vaccinations at 2, 3 and 4 months 2.5ml. This dose may be given up to 4 times a day starting at the time of vaccination."
+            },
+            {
+              "s": "emc-6634",
+              "q": "If your baby still needs this medicine two days after receiving the vaccine talk to your doctor or pharmacist."
+            }
+          ]
+        },
+        {
+          "t": "MHRA 2011 table (older): post-vaccination fever at 2-3 months 2.5 mL, then a second 2.5 mL after 4-6 hours if necessary; no more than 2 doses. This differs from the current 120 mg/5 ml suspension SmPC (up to 4 doses a day).",
+          "tag": "Post-vaccination fever (MHRA 2011)",
+          "detail": true,
+          "formulations": [
+            "paracetamol-susp-120"
+          ],
+          "src": [
+            {
+              "s": "mhra-dsu-paracetamol-child-dosing-2011",
+              "q": "Post-vaccination fever 2.5 mL If necessary, after 4-6 hours, give a second 2.5 mL dose"
+            },
+            {
+              "s": "mhra-dsu-paracetamol-child-dosing-2011",
+              "q": "Do not give more than 2 doses."
+            }
+          ]
+        },
+        {
+          "t": "120 mg/5 ml, age 2-3 months, pain and other causes of fever (only if over 4 kg and born after 37 weeks): 2.5 ml, a second 2.5 ml after 4-6 hours if necessary; no more than 2 doses. Do not give under 2 months.",
+          "tag": "2-3 months",
+          "formulations": [
+            "paracetamol-susp-120"
+          ],
+          "src": [
+            {
+              "s": "emc-6634",
+              "q": "Pain and other causes of fever - if your baby weighs over 4 kg and was born after 37 weeks 2.5 ml If necessary, after 4-6 hours, give a second 2.5 ml dose"
+            },
+            {
+              "s": "emc-6634",
+              "q": "Do not give to babies less than 2 months of age. Leave at least 4 hours between doses. Do not give more than 2 doses."
+            }
+          ]
+        },
+        {
+          "t": "120 mg/5 ml, 3 months-6 years, each dose up to 4 times in 24 hours: 3-6 months 2.5 ml; 6-24 months 5 ml; 2-4 years 7.5 ml; 4-6 years 10 ml. At least 4 hours between doses; no more than 3 days without advice.",
+          "tag": "3 months-6 years",
+          "formulations": [
+            "paracetamol-susp-120"
+          ],
+          "src": [
+            {
+              "s": "emc-6634",
+              "q": "3 - 6 months 2.5 ml 4 times 6 - 24 months 5 ml 4 times 2 - 4 years 7.5 ml (5ml + 2.5 ml) 4 times 4 - 6 years 10 ml (5ml + 5 ml) 4 times"
+            },
+            {
+              "s": "emc-6634",
+              "q": "Do not give more than 4 doses in any 24 hour period Leave at least 4 hours between doses"
+            }
+          ]
+        },
+        {
+          "t": "250 mg/5 mL, each dose up to 4 times in 24 hours: 6-8 years 5 mL; 8-10 years 7.5 mL; 10-12 years 10 mL; 12-16 years 10-15 mL. At least 4 hours between doses; no more than 3 days without advice. Not under 6 years.",
+          "tag": "6-16 years",
+          "formulations": [
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6694",
+              "q": "6 - 8 years One 5 mL spoonful (large end) 4 times 8 - 10 years One 5.0 mL spoonful (large end) and one 2.5 mL spoonful (small end) 4 times 10 - 12 years Two 5 mL spoonfuls (large end) 4 times"
+            },
+            {
+              "s": "emc-6694",
+              "q": "Children aged 12-16 years: Two - three 5mL spoonfuls (large end) up to 4 times a day."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to paracetamol or any excipient.",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1"
+            }
+          ]
+        },
+        {
+          "t": "The 250 mg/5 mL suspension SmPC also lists severe hepatic dysfunction as a contraindication; the tablet and 120 mg/5 ml SmPCs only advise care in severe hepatic impairment.",
+          "formulations": [
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6694",
+              "q": "Patients with severe hepatic dysfunction."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Care in severe renal or severe hepatic impairment. Overdose risk is greater in non-cirrhotic alcoholic liver disease.",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Care is advised in the administration of paracetamol to patients with severe renal or severe hepatic impairment. The hazard of overdose is greater in those with non-cirrhotic alcoholic liver disease."
+            }
+          ]
+        },
+        {
+          "t": "Do not exceed the dose and do not take with other paracetamol-containing products.",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Do not exceed the recommended dose."
+            },
+            {
+              "s": "emc-9128",
+              "q": "Do not take with any other paracetamol-containing products."
+            }
+          ]
+        },
+        {
+          "t": "High anion gap metabolic acidosis (pyroglutamic acidosis) reported with prolonged therapeutic use in severe illness (e.g. severe renal impairment, sepsis), malnutrition or chronic alcoholism, or with flucloxacillin. If suspected, stop paracetamol promptly and monitor closely.",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Cases of high anion gap metabolic acidosis (HAGMA) due to pyroglutamic acidosis have been reported in patients with severe illness such as severe renal impairment and sepsis"
+            },
+            {
+              "s": "emc-9128",
+              "q": "If HAGMA due to pyroglutamic acidosis is suspected, prompt discontinuation of paracetamol and close monitoring is recommended."
+            }
+          ]
+        },
+        {
+          "t": "Suspensions: chronic alcohol users should consult a doctor before use.",
+          "detail": true,
+          "formulations": [
+            "paracetamol-susp-120",
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6634",
+              "q": "Chronic alcohol users should consult a doctor before use."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Warfarin and other coumarins: prolonged regular daily use of paracetamol may enhance the anticoagulant effect and increase bleeding risk; occasional doses have no significant effect.",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "The anticoagulant effect of warfarin and other coumarins may be enhanced by prolonged regular daily use of paracetamol with increased risk of bleeding; occasional doses have no significant effect."
+            }
+          ]
+        },
+        {
+          "t": "Long-term St John's Wort or other liver enzyme inducers are listed as overdose risk factors (liver damage possible from 5 g or more).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "rifampicin, St. John's Wort or other drugs that induce liver enzymes"
+            }
+          ]
+        },
+        {
+          "t": "Absorption may be speeded by metoclopramide or domperidone and reduced by colestyramine.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "The speed of absorption of paracetamol may be increased by metoclopramide or domperidone and absorption reduced by cholestyramine."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Severe renal impairment: care advised (no numeric threshold or dose change stated).",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Care is advised in the administration of paracetamol to patients with severe renal or severe hepatic impairment."
+            }
+          ]
+        },
+        {
+          "t": "250 mg/5 mL suspension (contains propylene glycol): medical monitoring is required in impaired renal function.",
+          "formulations": [
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6694",
+              "q": "Medical monitoring is required in patients with impaired renal or hepatic functions because various adverse events attributed to propylene glycol have been reported"
+            },
+            {
+              "s": "emc-6694",
+              "q": "such as renal dysfunction (acute tubular necrosis), acute renal failure and liver dysfunction"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Severe hepatic impairment: care advised (tablets, 120 mg/5 ml suspension).",
+          "formulations": [
+            "paracetamol-tab",
+            "paracetamol-susp-120"
+          ],
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Care is advised in the administration of paracetamol to patients with severe renal or severe hepatic impairment."
+            }
+          ]
+        },
+        {
+          "t": "Severe hepatic dysfunction: contraindicated (250 mg/5 mL suspension SmPC).",
+          "formulations": [
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6694",
+              "q": "Patients with severe hepatic dysfunction."
+            }
+          ]
+        },
+        {
+          "t": "250 mg/5 mL suspension (contains propylene glycol): medical monitoring is required in impaired hepatic function.",
+          "formulations": [
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6694",
+              "q": "Medical monitoring is required in patients with impaired renal or hepatic functions because various adverse events attributed to propylene glycol have been reported"
+            },
+            {
+              "s": "emc-6694",
+              "q": "such as renal dysfunction (acute tubular necrosis), acute renal failure and liver dysfunction"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Can be used in pregnancy if clinically needed, at the lowest effective dose for the shortest time and lowest frequency. Large amount of data shows no malformative or feto/neonatal toxicity.",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "A large amount of data on pregnant women indicate neither malformative, nor feto/neonatal toxicity."
+            },
+            {
+              "s": "emc-9128",
+              "q": "it should be used at the lowest effective dose for the shortest possible time and at the lowest possible frequency"
+            }
+          ]
+        },
+        {
+          "t": "MHRA (2025): paracetamol is the first-choice pain reliever in pregnancy; no evidence it causes autism. Patients should not swap to ibuprofen (NSAIDs generally not recommended in pregnancy).",
+          "src": [
+            {
+              "s": "mhra-dsu-paracetamol-pregnancy-2025",
+              "q": "paracetamol is recommended as the first-choice pain reliever for pregnant women, used at the lowest dose and for the shortest duration"
+            },
+            {
+              "s": "mhra-dsu-paracetamol-pregnancy-2025",
+              "q": "there is no evidence that taking paracetamol during pregnancy causes autism in children"
+            },
+            {
+              "s": "mhra-dsu-paracetamol-pregnancy-2025",
+              "q": "patients should not swap to alternatives such as ibuprofen"
+            },
+            {
+              "s": "mhra-dsu-paracetamol-pregnancy-2025",
+              "q": "Non-steroidal anti-inflammatory drugs (NSAIDs), such as ibuprofen, are generally not recommended during pregnancy"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: can be used throughout pregnancy for pain and fever; no extra monitoring needed.",
+          "detail": true,
+          "src": [
+            {
+              "s": "bumps-paracetamol",
+              "q": "Paracetamol can be used throughout pregnancy to treat pain and high temperature (fever)."
+            },
+            {
+              "s": "bumps-paracetamol",
+              "q": "No extra monitoring for birth defects is required following paracetamol use in pregnancy."
+            }
+          ]
+        },
+        {
+          "t": "SPS: analgesic of choice for mild to moderate pain in pregnancy.",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-pain-pregnancy",
+              "q": "Paracetamol is the analgesia of choice for mild to moderate pain in pregnancy."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Compatible: excreted in breast milk but not in clinically significant amounts.",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Paracetamol is excreted in breast milk but not in a clinically significant amount. Available published data do not contraindicate breast feeding."
+            }
+          ]
+        },
+        {
+          "t": "SPS: analgesic of choice for mild to moderate pain during breastfeeding; as a precaution monitor the infant for diarrhoea and vomiting.",
+          "src": [
+            {
+              "s": "sps-bf-paracetamol",
+              "q": "Paracetamol is the analgesic of choice for treating mild to moderate pain during breastfeeding."
+            },
+            {
+              "s": "sps-bf-paracetamol",
+              "q": "As a precaution, monitor infants for diarrhoea and vomiting."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "Suspension SmPCs state there is no information on fertility; no fertility or contraception advice in the sources accessed."
+    },
+    "adverseCommon": {
+      "status": "not-stated",
+      "note": "The paracetamol SmPCs accessed list no common or very common adverse reactions; listed reactions are 'not known' or very rare."
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Hypersensitivity: anaphylactic shock and angioedema (frequency not known). Stop at the first sign of skin rash or other hypersensitivity; very rare serious skin reactions.",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Not known: anaphylactic shock; angioedema"
+            },
+            {
+              "s": "emc-6634",
+              "q": "use of the drug should be discontinued at the first appearance of skin rash or any other sign of hypersensitivity"
+            }
+          ]
+        },
+        {
+          "t": "Blood dyscrasias including thrombocytopenia and agranulocytosis (frequency not known).",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Not known: blood dyscrasias including thrombocytopenia and agranulocytosis"
+            }
+          ]
+        },
+        {
+          "t": "Overdose: risk of delayed, serious liver damage even if the patient feels well; refer to hospital urgently.",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Immediate medical advice should be sought in the event of an overdose, even if you feel well, because of the risk of delayed, serious liver damage."
+            },
+            {
+              "s": "emc-9128",
+              "q": "patients should be referred to hospital urgently for immediate medical attention"
+            }
+          ]
+        },
+        {
+          "t": "High anion gap metabolic acidosis (frequency not known) in patients with risk factors.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "Not known: high anion gap metabolic acidosis."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "If HAGMA (pyroglutamic acidosis) is suspected: stop paracetamol and monitor closely; urinary 5-oxoproline may help confirm.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "The measurement of urinary 5-oxoproline may be useful to identify pyroglutamic acidosis"
+            },
+            {
+              "s": "emc-9128",
+              "q": "prompt discontinuation of paracetamol and close monitoring is recommended"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Leave at least 4 hours between doses.",
+          "src": [
+            {
+              "s": "emc-9128",
+              "q": "These doses should not be repeated more frequently than every four hours"
+            }
+          ]
+        },
+        {
+          "t": "Suspensions: shake the bottle for at least 10 seconds before use; use the syringe or spoon supplied.",
+          "formulations": [
+            "paracetamol-susp-120",
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6634",
+              "q": "It is important to shake the bottle for at least 10 seconds before use."
+            },
+            {
+              "s": "emc-6634",
+              "q": "Always use the syringe supplied with the pack."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Do not take anything else containing paracetamol at the same time.",
+          "src": [
+            {
+              "s": "emc-6634",
+              "q": "Do not give anything else containing paracetamol while giving this medicine."
+            }
+          ]
+        },
+        {
+          "t": "Get medical help at once after taking too much, even if feeling well.",
+          "src": [
+            {
+              "s": "emc-6634",
+              "q": "Talk to a doctor at once if your child takes too much of this medicine, even if they seem well."
+            }
+          ]
+        },
+        {
+          "t": "Children: do not give for more than 3 days without speaking to a doctor or pharmacist.",
+          "formulations": [
+            "paracetamol-susp-120",
+            "paracetamol-susp-250"
+          ],
+          "src": [
+            {
+              "s": "emc-6634",
+              "q": "Do not give this medicine to your child for more than 3 days without speaking to your doctor or pharmacist"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "paracetamol:allergy:paracetamol",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "paracetamol",
+      "allergen": [
+        "paracetamol"
+      ],
+      "concern": "Paracetamol hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1"
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:hepatic:severe-care",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "paracetamol",
+      "formulations": [
+        "paracetamol-tab",
+        "paracetamol-susp-120"
+      ],
+      "hepatic": [
+        "severe"
+      ],
+      "effect": "hepatotoxicity",
+      "concern": "Severe hepatic impairment",
+      "consequence": "Increased risk.",
+      "action": "Care advised.",
+      "sourceWording": "Care is advised",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "Care is advised in the administration of paracetamol to patients with severe renal or severe hepatic impairment."
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:hepatic:severe-ci-susp250",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "paracetamol",
+      "formulations": [
+        "paracetamol-susp-250"
+      ],
+      "hepatic": [
+        "severe"
+      ],
+      "effect": "hepatotoxicity",
+      "concern": "Severe hepatic dysfunction (250 mg/5 mL suspension SmPC)",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use this product.",
+      "sourceWording": "4.3 Contraindications: Patients with severe hepatic dysfunction",
+      "src": [
+        {
+          "s": "emc-6694",
+          "q": "Patients with severe hepatic dysfunction."
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:condition:severe-renal",
+      "kind": "condition",
+      "level": "caution",
+      "med": "paracetamol",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal impairment",
+      "consequence": "Increased risk; also a risk factor for pyroglutamic acidosis.",
+      "action": "Care advised.",
+      "sourceWording": "Care is advised",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "Care is advised in the administration of paracetamol to patients with severe renal or severe hepatic impairment."
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:condition:alcohol",
+      "kind": "condition",
+      "level": "caution",
+      "med": "paracetamol",
+      "condition": "alcohol-dependence",
+      "effect": "hepatotoxicity",
+      "concern": "Alcoholic liver disease / regular excess alcohol",
+      "consequence": "Overdose hazard is greater; regular excess alcohol is an overdose risk factor.",
+      "action": "Do not exceed the dose; chronic alcohol users should consult a doctor before use.",
+      "sourceWording": "The hazard of overdose is greater",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "The hazard of overdose is greater in those with non-cirrhotic alcoholic liver disease."
+        },
+        {
+          "s": "emc-6634",
+          "q": "Chronic alcohol users should consult a doctor before use."
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:condition:glutathione",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "paracetamol",
+      "condition": "glutathione-depletion-risk",
+      "concern": "Sepsis, severe illness, malnutrition or chronic alcoholism",
+      "consequence": "High anion gap metabolic acidosis (pyroglutamic acidosis) with prolonged therapeutic use.",
+      "action": "If suspected, stop paracetamol promptly and monitor closely.",
+      "sourceWording": "prompt discontinuation of paracetamol and close monitoring is recommended",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "or in patients with malnutrition or other sources of glutathione deficiency (e.g. chronic alcoholism) who were treated with paracetamol at therapeutic dose for a prolonged period"
+        },
+        {
+          "s": "emc-9128",
+          "q": "prompt discontinuation of paracetamol and close monitoring is recommended"
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:interaction:warfarin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "paracetamol",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Regular paracetamol with warfarin",
+      "consequence": "Prolonged regular daily use may enhance the anticoagulant effect, with increased bleeding risk; occasional doses have no significant effect.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may be enhanced by prolonged regular daily use",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "The anticoagulant effect of warfarin and other coumarins may be enhanced by prolonged regular daily use of paracetamol with increased risk of bleeding"
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:interaction:vka",
+      "kind": "interaction",
+      "level": "info",
+      "med": "paracetamol",
+      "other": "group:vitamin-k-antagonist",
+      "effect": "bleeding",
+      "concern": "Regular paracetamol with coumarin anticoagulants",
+      "consequence": "Prolonged regular daily use may enhance the anticoagulant effect, with increased bleeding risk.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may be enhanced by prolonged regular daily use",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "The anticoagulant effect of warfarin and other coumarins may be enhanced by prolonged regular daily use of paracetamol with increased risk of bleeding"
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:interaction:st-johns-wort",
+      "kind": "interaction",
+      "level": "info",
+      "med": "paracetamol",
+      "other": "st-johns-wort",
+      "effect": "hepatotoxicity",
+      "concern": "Long-term St John's Wort (liver enzyme inducer)",
+      "consequence": "Listed as an overdose risk factor: liver damage possible after 5 g or more.",
+      "action": "No dose change stated; relevant in overdose assessment.",
+      "sourceWording": "Risk factors",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "Ingestion of 5g or more of paracetamol may lead to liver damage if the patient has risk factors"
+        },
+        {
+          "s": "emc-9128",
+          "q": "rifampicin, St. John's Wort or other drugs that induce liver enzymes"
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:duplication:co-codamol",
+      "kind": "duplication",
+      "level": "avoid",
+      "med": "paracetamol",
+      "other": "co-codamol",
+      "effect": "hepatotoxicity",
+      "concern": "Two paracetamol-containing products",
+      "consequence": "Risk of paracetamol overdose and liver damage.",
+      "action": "Do not take with any other paracetamol-containing product.",
+      "sourceWording": "should therefore be avoided",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "Do not take with any other paracetamol-containing products."
+        },
+        {
+          "s": "emc-6634",
+          "q": "Taking this product with other paracetamol-containing medicines could lead to overdose and should therefore be avoided."
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:age:tab-under-10",
+      "kind": "age",
+      "level": "avoid",
+      "med": "paracetamol",
+      "formulations": [
+        "paracetamol-tab"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 10
+      },
+      "concern": "500 mg tablets in a child under 10 years",
+      "consequence": "Not recommended at this age.",
+      "action": "Use an age-appropriate liquid formulation.",
+      "sourceWording": "Not recommended for children under 10 years of age",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "Not recommended for children under the age of 10 years."
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:age:susp120-under-2m",
+      "kind": "age",
+      "level": "avoid",
+      "med": "paracetamol",
+      "formulations": [
+        "paracetamol-susp-120"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 0.1667
+      },
+      "concern": "Infant under 2 months",
+      "consequence": "Not licensed below 2 months.",
+      "action": "Do not give.",
+      "sourceWording": "Do not give to babies less than 2 months of age",
+      "src": [
+        {
+          "s": "emc-6634",
+          "q": "Do not give to babies less than 2 months of age."
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:age:susp250-under-6",
+      "kind": "age",
+      "level": "avoid",
+      "med": "paracetamol",
+      "formulations": [
+        "paracetamol-susp-250"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 6
+      },
+      "concern": "250 mg/5 mL suspension in a child under 6 years",
+      "consequence": "Not for this age group.",
+      "action": "Do not give; use the 120 mg/5 ml product.",
+      "sourceWording": "Do not give to children under the age of 6 years",
+      "src": [
+        {
+          "s": "emc-6694",
+          "q": "Do not give to children under the age of 6 years."
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:breastfeeding:compatible",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "paracetamol",
+      "concern": "Breastfeeding",
+      "consequence": "Small amounts in milk, not clinically significant.",
+      "action": "Analgesic of choice; as a precaution monitor the infant for diarrhoea and vomiting (SPS).",
+      "sourceWording": "Available published data do not contraindicate breast feeding",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "Available published data do not contraindicate breast feeding."
+        },
+        {
+          "s": "sps-bf-paracetamol",
+          "q": "Paracetamol is the analgesic of choice for treating mild to moderate pain during breastfeeding."
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:pregnancy:lowest-dose",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "paracetamol",
+      "concern": "Pregnancy",
+      "consequence": "First-choice pain reliever in pregnancy (MHRA).",
+      "action": "Use if clinically needed at the lowest effective dose for the shortest time.",
+      "sourceWording": "can be used during pregnancy if clinically needed",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "it should be used at the lowest effective dose for the shortest possible time and at the lowest possible frequency"
+        },
+        {
+          "s": "mhra-dsu-paracetamol-pregnancy-2025",
+          "q": "paracetamol is recommended as the first-choice pain reliever for pregnant women"
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:condition:renal-pg-susp250",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "paracetamol",
+      "formulations": [
+        "paracetamol-susp-250"
+      ],
+      "condition": "renal-impairment",
+      "concern": "Impaired renal function (250 mg/5 mL suspension: propylene glycol)",
+      "consequence": "Adverse events attributed to propylene glycol reported, such as renal dysfunction, acute renal failure and liver dysfunction.",
+      "action": "Medical monitoring is required.",
+      "sourceWording": "Medical monitoring is required in patients with impaired renal or hepatic functions",
+      "src": [
+        {
+          "s": "emc-6694",
+          "q": "Medical monitoring is required in patients with impaired renal or hepatic functions because various adverse events attributed to propylene glycol have been reported"
+        },
+        {
+          "s": "emc-6694",
+          "q": "such as renal dysfunction (acute tubular necrosis), acute renal failure and liver dysfunction"
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:hepatic:pg-susp250",
+      "kind": "hepatic",
+      "level": "monitor",
+      "med": "paracetamol",
+      "formulations": [
+        "paracetamol-susp-250"
+      ],
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Impaired hepatic function (250 mg/5 mL suspension: propylene glycol)",
+      "consequence": "Adverse events attributed to propylene glycol reported, such as renal dysfunction, acute renal failure and liver dysfunction.",
+      "action": "Medical monitoring is required (severe hepatic dysfunction is a contraindication for this product).",
+      "sourceWording": "Medical monitoring is required in patients with impaired renal or hepatic functions",
+      "src": [
+        {
+          "s": "emc-6694",
+          "q": "Medical monitoring is required in patients with impaired renal or hepatic functions because various adverse events attributed to propylene glycol have been reported"
+        },
+        {
+          "s": "emc-6694",
+          "q": "such as renal dysfunction (acute tubular necrosis), acute renal failure and liver dysfunction"
+        }
+      ]
+    }
+  ]
+}

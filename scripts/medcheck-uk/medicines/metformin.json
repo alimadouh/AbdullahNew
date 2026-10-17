@@ -1,0 +1,428 @@
+{
+  "id": "metformin",
+  "name": "Metformin hydrochloride",
+  "ingredients": ["metformin"],
+  "className": "Biguanide (blood glucose lowering drug)",
+  "groups": ["oral-antidiabetic"],
+  "searchTerms": ["metformin", "metformin hcl"],
+  "formulations": [
+    {
+      "id": "metformin-ir-tab",
+      "label": "Film-coated tablets (immediate release)",
+      "route": "oral",
+      "strengths": "500 mg, 850 mg",
+      "release": "immediate",
+      "src": [{ "s": "emc-987", "q": "GLUCOPHAGE 500 mg film-coated tablets GLUCOPHAGE 850 mg film-coated tablets" }],
+      "sourceIds": ["emc-987"]
+    },
+    {
+      "id": "metformin-mr-tab",
+      "label": "Prolonged-release tablets",
+      "route": "oral",
+      "strengths": "500 mg, 750 mg, 1000 mg",
+      "release": "modified",
+      "note": "Dosing differs from immediate-release tablets: prolonged-release is given once daily with the evening meal, maximum 2000 mg once daily (1000 mg twice daily may be considered).",
+      "src": [
+        { "s": "emc-6298", "q": "Glucophage SR 500 mg prolonged release tablets Glucophage SR 750 mg prolonged release tablets Glucophage SR 1000 mg prolonged release tablets" },
+        { "s": "emc-6298", "q": "Dosage increases should be made in increments of 500mg every 10-15 days, up to a maximum of 2000mg once daily with the evening meal." }
+      ],
+      "sourceIds": ["emc-6298"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Type 2 diabetes mellitus, particularly in overweight patients, when diet and exercise alone do not give adequate glycaemic control. Adults: monotherapy, with other oral antidiabetics or with insulin. Children from 10 years: monotherapy or with insulin.", "formulations": ["metformin-ir-tab"],
+        "src": [
+          { "s": "emc-987", "q": "Treatment of type 2 diabetes mellitus, particularly in overweight patients, when dietary management and exercise alone does not result in adequate glycaemic control." },
+          { "s": "emc-987", "q": "In children from 10 years of age and adolescents, Glucophage may be used as monotherapy or in combination with insulin." }
+        ] },
+      { "t": "Type 2 diabetes mellitus in adults (monotherapy, with other oral antidiabetics, or with insulin).", "formulations": ["metformin-mr-tab"],
+        "src": [{ "s": "emc-6298", "q": "Glucophage SR may be used as monotherapy or in combination with other oral antidiabetic agents, or with insulin." }] },
+      { "t": "Reduction in risk or delay of onset of type 2 diabetes in overweight adults with IGT and/or IFG and/or raised HbA1c at high risk, still progressing despite 3 to 6 months of intensive lifestyle change.", "formulations": ["metformin-mr-tab"],
+        "src": [{ "s": "emc-6298", "q": "Reduction in the risk or delay of the onset of type 2 diabetes mellitus in adult, overweight patients with IGT* and/or IFG*, and/or increased HbA1C" }] },
+      { "t": "Polycystic ovary syndrome (PCOS): ovulation stimulation to support conception.", "formulations": ["metformin-mr-tab"],
+        "src": [{ "s": "emc-6298", "q": "Ovulation stimulation to support conception in women with PCOS." }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Prediabetes indication: consider only where 3 to 6 months of intensive lifestyle change has not given adequate glycaemic control; treatment must be based on a risk score including evidence of high cardiovascular risk.", "formulations": ["metformin-mr-tab"],
+        "src": [
+          { "s": "emc-6298", "q": "Metformin should only be considered where intensive lifestyle modifications for 3 to 6 months have not resulted in adequate glycaemic control." },
+          { "s": "emc-6298", "q": "Treatment with Glucophage SR must be based on a risk score incorporating appropriate measures of glycaemic control and including evidence of high cardiovascular risk" }
+        ] },
+      { "t": "Switching from immediate-release metformin above 2000 mg daily to prolonged-release is not recommended.", "formulations": ["metformin-mr-tab"],
+        "src": [{ "s": "emc-6298", "q": "In patients treated with metformin at a dose above 2000 mg daily, switching to Glucophage SR is not recommended." }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Start 500 mg or 850 mg two or three times daily during or after meals. Adjust after 10 to 15 days by blood glucose; slow increase helps GI tolerance. Maximum 3 g daily in 3 divided doses (normal renal function, GFR ≥ 90 mL/min).", "tag": "Type 2 diabetes, adults: monotherapy or with other oral antidiabetics", "formulations": ["metformin-ir-tab"],
+        "src": [
+          { "s": "emc-987", "q": "The usual starting dose is 500 mg or 850 mg metformin hydrochloride 2 or 3 times daily given during or after meals. After 10 to 15 days the dose should be adjusted on the basis of blood glucose measurements." },
+          { "s": "emc-987", "q": "A slow increase of dose may improve gastrointestinal tolerability." },
+          { "s": "emc-987", "q": "The maximum recommended dose of metformin hydrochloride is 3 g daily, taken as 3 divided doses." }
+        ] },
+      { "t": "With insulin: usual starting dose 500 mg or 850 mg two or three times daily; insulin dose adjusted by blood glucose.", "tag": "Type 2 diabetes, adults: with insulin", "formulations": ["metformin-ir-tab"],
+        "src": [{ "s": "emc-987", "q": "Metformin hydrochloride is given at the usual starting dose of 500 mg or 850 mg 2 or 3 times daily, while insulin dosage is adjusted on the basis of blood glucose measurements." }] },
+      { "t": "Start 500 mg once daily (with the evening meal). Increase by 500 mg every 10 to 15 days to a maximum of 2000 mg once daily with the evening meal. If not controlled, consider 1000 mg twice daily with food; if still not controlled, switch to standard tablets up to 3000 mg daily. Patients already on metformin: start at the equivalent daily dose.", "tag": "Type 2 diabetes, adults: monotherapy or with other oral antidiabetics", "formulations": ["metformin-mr-tab"],
+        "src": [
+          { "s": "emc-6298", "q": "The usual starting dose is one tablet of Glucophage SR 500 mg once daily." },
+          { "s": "emc-6298", "q": "Dosage increases should be made in increments of 500mg every 10-15 days, up to a maximum of 2000mg once daily with the evening meal." },
+          { "s": "emc-6298", "q": "If glycaemic control is not achieved on Glucophage SR 2000mg once daily, Glucophage SR 1000mg twice daily should be considered, with both doses being given with food." },
+          { "s": "emc-6298", "q": "In patients already treated with metformin tablets, the starting dose of Glucophage SR should be equivalent to the daily dose of metformin immediate release tablets." }
+        ] },
+      { "t": "With insulin: usual start 500 mg once daily; insulin dose adjusted by blood glucose.", "tag": "Type 2 diabetes, adults: with insulin", "formulations": ["metformin-mr-tab"],
+        "src": [{ "s": "emc-6298", "q": "The usual starting dose of Glucophage SR is one 500 mg tablet once daily, while insulin dosage is adjusted on the basis of blood glucose measurements." }] },
+      { "t": "Start 500 mg once daily with the evening meal; adjust after 10 to 15 days. Maximum 2000 mg once daily with the evening meal. Review glycaemic status and risk factors every 3 to 6 months.", "tag": "Reduction in risk/delay of type 2 diabetes, adults", "formulations": ["metformin-mr-tab"],
+        "src": [
+          { "s": "emc-6298", "q": "The therapy should be initiated with one tablet Glucophage SR 500 mg once daily with the evening meal." },
+          { "s": "emc-6298", "q": "The maximum recommended dose is 4 tablets (2000 mg) once daily with the evening meal." },
+          { "s": "emc-6298", "q": "It is recommended to regularly monitor (every 3-6 months) the glycaemic status" }
+        ] },
+      { "t": "Usual dose 1500 to 2000 mg once daily; maximum 2000 mg once daily with the evening meal. Consider for at least 6 months.", "tag": "PCOS: ovulation stimulation", "formulations": ["metformin-mr-tab"],
+        "src": [
+          { "s": "emc-6298", "q": "The usual dose is 1,500-2000 mg once daily." },
+          { "s": "emc-6298", "q": "The maximum recommended dose is 2000 mg once daily with the evening meal. Glucophage SR should be considered for at least 6 months." }
+        ] },
+      { "t": "Elderly: adjust dose to renal function; assess renal function regularly.", "tag": "Elderly",
+        "src": [{ "s": "emc-987", "q": "Due to the potential for decreased renal function in elderly subjects, the metformin dosage should be adjusted based on renal function." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Children from 10 years and adolescents (type 2 diabetes): start 500 mg or 850 mg once daily during or after meals; adjust after 10 to 15 days. Maximum 2 g daily in 2 or 3 divided doses.", "formulations": ["metformin-ir-tab"],
+        "src": [
+          { "s": "emc-987", "q": "The usual starting dose is 500 mg or 850 mg metformin hydrochloride once daily, given during or after meals." },
+          { "s": "emc-987", "q": "The maximum recommended dose of metformin hydrochloride is 2 g daily, taken as 2 or 3 divided doses." }
+        ] },
+      { "t": "Not licensed below 10 years (the SmPC licenses use from 10 years). Particular caution aged 10 to 12 years (few studied). Follow growth and puberty, especially before puberty. Confirm the diagnosis of type 2 diabetes before starting.", "formulations": ["metformin-ir-tab"],
+        "src": [
+          { "s": "emc-987", "q": "Glucophage can be used in children from 10 years of age and adolescents." },
+          { "s": "emc-987", "q": "particular caution is recommended when prescribing to children aged between 10 and 12 years" },
+          { "s": "emc-987", "q": "a careful follow-up of the effect of metformin on these parameters in metformin-treated children, especially prepubescent children, is recommended" },
+          { "s": "emc-987", "q": "The diagnosis of type 2 diabetes mellitus should be confirmed before treatment with metformin is initiated." }
+        ] },
+      { "t": "Prolonged-release tablets should not be used in children (no data).", "formulations": ["metformin-mr-tab"],
+        "src": [{ "s": "emc-6298", "q": "In the absence of available data, Glucophage SR should not be used in children." }] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to metformin or any excipient.", "src": [{ "s": "emc-987", "q": "Hypersensitivity to metformin or to any of the excipients listed in section 6.1." }] },
+      { "t": "Any acute metabolic acidosis (e.g. lactic acidosis, diabetic ketoacidosis); diabetic pre-coma.", "src": [{ "s": "emc-987", "q": "Any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis). Diabetic pre-coma." }] },
+      { "t": "Severe renal failure (GFR < 30 mL/min).", "src": [{ "s": "emc-987", "q": "Severe renal failure (GFR < 30 mL/min)." }] },
+      { "t": "Acute conditions that may alter renal function: dehydration, severe infection, shock.", "src": [{ "s": "emc-987", "q": "Acute conditions with the potential to alter renal function such as: dehydration, severe infection, shock." }] },
+      { "t": "Disease that may cause tissue hypoxia: decompensated heart failure, respiratory failure, recent myocardial infarction, shock.", "src": [{ "s": "emc-987", "q": "Disease which may cause tissue hypoxia (especially acute disease, or worsening of chronic disease) such as: decompensated heart failure, respiratory failure, recent myocardial infarction, shock." }] },
+      { "t": "Hepatic insufficiency, acute alcohol intoxication, alcoholism.", "src": [{ "s": "emc-987", "q": "Hepatic insufficiency, acute alcohol intoxication, alcoholism." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Lactic acidosis (very rare, serious): risk rises with acute worsening of renal function, cardiorespiratory illness or sepsis. Temporarily stop metformin in dehydration (severe diarrhoea or vomiting, fever, reduced fluid intake). Other risk factors: excess alcohol, hepatic insufficiency, poorly controlled diabetes, ketosis, prolonged fasting, hypoxia.",
+        "src": [
+          { "s": "emc-987", "q": "Lactic acidosis, a very rare, but serious metabolic complication, most often occurs at acute worsening of renal function or cardiorespiratory illness or sepsis." },
+          { "s": "emc-987", "q": "In case of dehydration (severe diarrhoea or vomiting, fever or reduced fluid intake), metformin should be temporarily discontinued and contact with a health care professional is recommended." },
+          { "s": "emc-987", "q": "Other risk factors for lactic acidosis are excessive alcohol intake, hepatic insufficiency, inadequately controlled diabetes, ketosis, prolonged fasting and any conditions associated with hypoxia" }
+        ] },
+      { "t": "Iodinated contrast (intravascular): stop metformin before or at the time of imaging; do not restart until at least 48 hours after, and only when renal function has been re-checked and is stable.",
+        "src": [{ "s": "emc-987", "q": "Metformin should be discontinued prior to or at the time of the imaging procedure and not restarted until at least 48 hours after, provided that renal function has been re-evaluated and found to be stable" }] },
+      { "t": "Surgery under general, spinal or epidural anaesthesia: stop metformin at the time of surgery; restart no earlier than 48 hours after surgery or resumption of oral nutrition, once renal function is re-checked and stable.",
+        "src": [
+          { "s": "emc-987", "q": "Metformin must be discontinued at the time of surgery under general, spinal or epidural anaesthesia." },
+          { "s": "emc-987", "q": "Therapy may be restarted no earlier than 48 hours following surgery or resumption of oral nutrition and provided that renal function has been re-evaluated and found to be stable." }
+        ] },
+      { "t": "Heart failure: stable chronic heart failure - may be used with regular monitoring of cardiac and renal function. Acute and unstable heart failure - contraindicated.",
+        "src": [
+          { "s": "emc-987", "q": "In patients with stable chronic heart failure, metformin may be used with a regular monitoring of cardiac and renal function." },
+          { "s": "emc-987", "q": "For patients with acute and unstable heart failure, metformin is contraindicated" }
+        ] },
+      { "t": "Mitochondrial disease (MELAS, MIDD): metformin is not recommended; withdraw immediately if suggestive signs appear.",
+        "src": [{ "s": "emc-987", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease" }] },
+      { "t": "Medicines that can acutely impair renal function (antihypertensives, diuretics, NSAIDs) should be started with caution.",
+        "src": [{ "s": "emc-987", "q": "Medicinal products that can acutely impair renal function (such as antihypertensives, diuretics and NSAIDs) should be initiated with caution in metformin-treated patients." }] },
+      { "t": "Metformin alone does not cause hypoglycaemia; caution when combined with insulin or other oral antidiabetics (e.g. sulfonylureas, meglitinides).", "detail": true,
+        "src": [{ "s": "emc-987", "q": "Metformin alone does not cause hypoglycaemia, but caution is advised when it is used in combination with insulin or other oral antidiabetics (e.g. sulfonylureas or meglitinides)." }] },
+      { "t": "Prediabetes indication: initiation not recommended at 75 years and older (benefit not established).", "formulations": ["metformin-mr-tab"],
+        "src": [{ "s": "emc-6298", "q": "Due to the limited therapeutic efficacy data in the reduction of risk or delay of type 2 diabetes in patients 75 years and older, metformin initiation is not recommended in these patients." }] },
+      { "t": "Prolonged-release: tablet shells may appear in the faeces; this is normal.", "formulations": ["metformin-mr-tab"], "detail": true,
+        "src": [{ "s": "emc-6298", "q": "The tablet shells may be present in the faeces. Patients should be advised that this is normal." }] },
+      { "t": "Prolonged-release in PCOS/premenopausal women: may cause ovulation in anovulatory women, which may lead to unintended pregnancy.", "formulations": ["metformin-mr-tab"], "detail": true,
+        "src": [{ "s": "emc-6298", "q": "In premenopausal women, treatment with Glucophage SR may result in ovulation in anovulatory women, which may lead to unintended pregnancy." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Iodinated contrast agents: concomitant use not recommended - stop metformin before/at imaging, restart at least 48 hours after once renal function is stable.",
+        "src": [{ "s": "emc-987", "q": "Iodinated contrast agents Metformin must be discontinued prior to or at the time of the imaging procedure" }] },
+      { "t": "Alcohol: not recommended - alcohol intoxication increases lactic acidosis risk, especially with fasting, malnutrition or hepatic impairment.",
+        "src": [{ "s": "emc-987", "q": "Alcohol intoxication is associated with an increased risk of lactic acidosis, particularly in case of fasting, malnutrition or hepatic impairment." }] },
+      { "t": "NSAIDs (including COX-2 inhibitors), ACE inhibitors, angiotensin II receptor antagonists and diuretics (especially loop diuretics): may impair renal function and raise lactic acidosis risk - close monitoring of renal function is necessary.",
+        "src": [
+          { "s": "emc-987", "q": "Some medicinal products can adversely affect renal function which may increase the risk of lactic acidosis, e.g. NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors, ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics." },
+          { "s": "emc-987", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+        ] },
+      { "t": "Glucocorticoids (systemic and local) and sympathomimetics: more frequent blood glucose monitoring may be needed; adjust metformin dose if necessary.",
+        "src": [
+          { "s": "emc-987", "q": "Medicinal products with intrinsic hyperglycaemic activity (e.g. glucocorticoids (systemic and local routes) and sympathomimetics)" },
+          { "s": "emc-987", "q": "More frequent blood glucose monitoring may be required, especially at the beginning of treatment." }
+        ] },
+      { "t": "OCT2 inhibitors (e.g. trimethoprim, cimetidine, dolutegravir, ranolazine): may raise metformin levels - caution, especially in renal impairment; consider dose adjustment.",
+        "src": [
+          { "s": "emc-6298", "q": "Inhibitors of OCT2 (such as cimetidine, dolutegravir, ranolazine, trimethoprim, vandetanib, isavuconazole) may decrease the renal elimination of metformin" },
+          { "s": "emc-987", "q": "Caution is therefore advised, especially in patients with renal impairment, when these drugs are co-administered with metformin, as metformin plasma concentration may increase." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Assess GFR before starting and at least annually; every 3 to 6 months in the elderly and those at risk of progression. The SmPC table uses GFR in mL/min.",
+        "src": [
+          { "s": "emc-987", "q": "A GFR should be assessed before initiation of treatment with metformin containing products and at least annually thereafter." },
+          { "s": "emc-987", "q": "renal function should be assessed more frequently, e.g. every 3-6 months" }
+        ] },
+      { "t": "GFR 60-89 mL/min: maximum 3000 mg/day (in 2-3 doses); dose reduction may be considered as renal function declines.", "formulations": ["metformin-ir-tab"],
+        "src": [{ "s": "emc-987", "q": "60-89 3000 mg Dose reduction may be considered in relation to declining renal function." }] },
+      { "t": "GFR 60-89 mL/min: maximum 2000 mg/day; dose reduction may be considered as renal function declines.", "formulations": ["metformin-mr-tab"],
+        "src": [{ "s": "emc-6298", "q": "60-89 2000 mg Dose reduction may be considered in relation to declining renal function." }] },
+      { "t": "GFR 45-59 mL/min: maximum 2000 mg/day. Review lactic acidosis risk factors before starting; starting dose at most half the maximum.",
+        "src": [{ "s": "emc-987", "q": "45-59 2000 mg Factors that may increase the risk of lactic acidosis (see section 4.4) should be reviewed before considering initiation of metformin. The starting dose is at most half of the maximum dose." }] },
+      { "t": "GFR 30-44 mL/min: maximum 1000 mg/day (same lactic acidosis review and half starting dose apply).",
+        "src": [{ "s": "emc-987", "q": "30-44 1000 mg <30 - Metformin is contraindicated." }] },
+      { "t": "GFR < 30 mL/min: contraindicated.",
+        "src": [{ "s": "emc-987", "q": "Metformin is contraindicated in patients with GFR<30 mL/min" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Hepatic insufficiency: contraindicated (lactic acidosis risk).",
+        "src": [{ "s": "emc-987", "q": "Hepatic insufficiency, acute alcohol intoxication, alcoholism." }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "If clinically needed, metformin can be considered in pregnancy and around conception, in addition to or instead of insulin. Large data (>1000 outcomes) show no increased risk of congenital abnormalities or feto/neonatal toxicity.",
+        "src": [
+          { "s": "emc-987", "q": "If clinically needed, the use of metformin can be considered during pregnancy and in the periconceptional phase as an addition or an alternative to insulin." },
+          { "s": "emc-987", "q": "indicates no increased risk of congenital abnormalities nor feto/neonatal toxicity after exposure to metformin in the periconceptional phase and/or during pregnancy" }
+        ] },
+      { "t": "MHRA (2022): product information updated to permit use in pregnancy and the periconceptional phase if clinically needed.",
+        "src": [{ "s": "mhra-dsu-metformin-pregnancy", "q": "the product information for metformin is being updated to permit the use of metformin during pregnancy and the periconceptional phase as an addition or an alternative to insulin, if clinically needed" }] },
+      { "t": "BUMPS: metformin can be used in pregnancy to treat diabetes; no known risks to the baby. Use near delivery can cause short-lived low blood sugar in the newborn, so the baby's blood sugar is checked.",
+        "src": [
+          { "s": "bumps-metformin", "q": "Metformin can be used in pregnancy to treat diabetes." },
+          { "s": "bumps-metformin", "q": "Metformin use around the time of delivery can lead to your baby having low blood sugar for a short period after birth." }
+        ] },
+      { "t": "PCOS (prolonged-release): whether to continue after conception and in pregnancy is a case-by-case clinical decision weighing risks and benefits.", "formulations": ["metformin-mr-tab"], "detail": true,
+        "src": [{ "s": "emc-6298", "q": "The decision to maintain therapy after conception and during pregnancy should be made clinically on a case-by-case basis" }] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: metformin passes into breast milk; no adverse effects seen in breastfed infants, but data are limited so breastfeeding is not recommended during treatment. Decide whether to stop breastfeeding by weighing its benefit against the possible risk to the child.",
+        "src": [
+          { "s": "emc-987", "q": "However, as only limited data are available, breast-feeding is not recommended during metformin treatment." },
+          { "s": "emc-987", "q": "A decision on whether to discontinue breast-feeding should be made, taking into account the benefit of breast-feeding and the potential risk to adverse effects on the child." }
+        ] },
+      { "t": "SPS (differs from SmPC): metformin is a preferred choice and can be used in breastfeeding (negligible amounts in milk). As a precaution monitor the infant for vomiting, diarrhoea and signs of hypoglycaemia.",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "Metformin can be used during breastfeeding due to negligible amounts in breast milk." },
+          { "s": "sps-antidiabetic-bf", "q": "As a precaution, monitor the infant for vomiting, diarrhoea and signs of hypoglycaemia" }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: no effect in rats at high doses.", "detail": true,
+        "src": [{ "s": "emc-987", "q": "Fertility of male or female rats was unaffected by metformin" }] },
+      { "t": "Prolonged-release may restore ovulation in anovulatory premenopausal women (risk of unintended pregnancy).", "formulations": ["metformin-mr-tab"],
+        "src": [{ "s": "emc-6298", "q": "In premenopausal women, treatment with Glucophage SR may result in ovulation in anovulatory women, which may lead to unintended pregnancy." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Very common: nausea, vomiting, diarrhoea, abdominal pain, loss of appetite - mostly at the start and usually settle.",
+        "src": [{ "s": "emc-987", "q": "Very common Gastrointestinal disorders such as nausea, vomiting, diarrhoea, abdominal pain and loss of appetite." }] },
+      { "t": "Common: vitamin B12 decrease/deficiency; taste disturbance.",
+        "src": [
+          { "s": "emc-987", "q": "Common: Vitamin B12 decrease/deficiency" },
+          { "s": "emc-987", "q": "Common Taste disturbance" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Lactic acidosis (very rare): acidotic breathlessness, abdominal pain, muscle cramps, weakness, low temperature, then coma. Patient must stop metformin and get immediate medical help; it is a medical emergency treated in hospital.",
+        "src": [
+          { "s": "emc-987", "q": "Lactic acidosis is characterised by acidotic dyspnoea, abdominal pain, muscle cramps, asthenia and hypothermia followed by coma." },
+          { "s": "emc-987", "q": "In case of suspected symptoms, the patient should stop taking metformin and seek immediate medical attention." },
+          { "s": "emc-987", "q": "Lactic acidosis is a medical emergency and must be treated in hospital." }
+        ] },
+      { "t": "Very rare: abnormal liver tests or hepatitis (resolve on stopping).", "detail": true,
+        "src": [{ "s": "emc-987", "q": "Isolated reports of liver function tests abnormalities or hepatitis resolving upon metformin discontinuation." }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "GFR before starting.", "tag": "baseline",
+        "src": [{ "s": "emc-987", "q": "GFR should be assessed before treatment initiation and regularly thereafter" }] },
+      { "t": "GFR at least annually; every 3 to 6 months in the elderly or if renal impairment may progress.", "tag": "ongoing",
+        "src": [{ "s": "emc-987", "q": "In patients at an increased risk of further progression of renal impairment and in the elderly, renal function should be assessed more frequently, e.g. every 3-6 months." }] },
+      { "t": "Vitamin B12: test if deficiency is suspected (e.g. megaloblastic anaemia, new neuropathy); consider periodic monitoring if risk factors. Treat deficiency and continue metformin while tolerated and not contraindicated (MHRA 2022).", "tag": "ongoing",
+        "src": [
+          { "s": "mhra-dsu-metformin-b12", "q": "test vitamin B12 serum levels if deficiency is suspected (for example, in patients presenting with megaloblastic anaemia or new-onset neuropathy)" },
+          { "s": "mhra-dsu-metformin-b12", "q": "consider periodic vitamin B12 monitoring in patients with risk factors for vitamin B12 deficiency" },
+          { "s": "mhra-dsu-metformin-b12", "q": "continue metformin therapy for as long as it is tolerated and not contraindicated" }
+        ] },
+      { "t": "Usual diabetes laboratory tests regularly.", "tag": "ongoing", "detail": true,
+        "src": [{ "s": "emc-987", "q": "The usual laboratory tests for diabetes monitoring should be performed regularly." }] },
+      { "t": "Stop and seek urgent help if lactic acidosis is suspected; withhold temporarily in dehydration; withdraw immediately if signs suggest MELAS/MIDD.", "tag": "stop",
+        "src": [
+          { "s": "emc-987", "q": "In case of suspected symptoms, the patient should stop taking metformin and seek immediate medical attention." },
+          { "s": "emc-987", "q": "treatment with metformin should be withdrawn immediately and prompt diagnostic evaluation should be performed" }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Immediate-release: take in 2 or 3 daily doses during or after meals.", "formulations": ["metformin-ir-tab"],
+        "src": [{ "s": "emc-987", "q": "it is recommended that metformin be taken in 2 or 3 daily doses during or after meals" }] },
+      { "t": "Prolonged-release: once daily with the evening meal (if 1000 mg twice daily, both doses with food).", "formulations": ["metformin-mr-tab"],
+        "src": [
+          { "s": "emc-6298", "q": "up to a maximum of 2000mg once daily with the evening meal" },
+          { "s": "emc-6298", "q": "with both doses being given with food" }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Know the signs of lactic acidosis; stop metformin and seek immediate help if they occur.",
+        "src": [{ "s": "emc-987", "q": "Patients and/or care-givers should be informed of the risk of lactic acidosis." }] },
+      { "t": "If you have severe vomiting, diarrhoea, fever or cannot drink, stop metformin for a while and contact a healthcare professional.",
+        "src": [{ "s": "emc-987", "q": "metformin should be temporarily discontinued and contact with a health care professional is recommended" }] },
+      { "t": "Seek advice for new or worsening extreme tiredness, sore red tongue, pins and needles, or pale/yellow skin (possible low vitamin B12). Do not stop metformin without talking to your doctor.",
+        "src": [
+          { "s": "mhra-dsu-metformin-b12", "q": "seek medical advice if you develop new or worsening symptoms of extreme tiredness, a sore and red tongue, pins and needles, or pale or yellow skin" },
+          { "s": "mhra-dsu-metformin-b12", "q": "do not stop your treatment without first discussing this with your doctor" }
+        ] },
+      { "t": "Avoid alcohol intoxication.",
+        "src": [{ "s": "emc-987", "q": "Alcohol intoxication is associated with an increased risk of lactic acidosis" }] },
+      { "t": "Keep to your diet with carbohydrate spread through the day.", "detail": true,
+        "src": [{ "s": "emc-987", "q": "All patients should continue their diet with a regular distribution of carbohydrate intake during the day." }] },
+      { "t": "Prolonged-release: tablet shells in the stool are normal.", "formulations": ["metformin-mr-tab"], "detail": true,
+        "src": [{ "s": "emc-6298", "q": "The tablet shells may be present in the faeces. Patients should be advised that this is normal." }] }
+    ] }
+  },
+  "rules": [
+    { "id": "metformin:allergy:metformin", "kind": "allergy", "level": "contraindicated", "med": "metformin", "allergen": ["metformin"],
+      "concern": "Hypersensitivity to metformin", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity to metformin",
+      "src": [{ "s": "emc-987", "q": "Hypersensitivity to metformin or to any of the excipients listed in section 6.1." }] },
+    { "id": "metformin:condition:diabetic-ketoacidosis", "kind": "condition", "level": "contraindicated", "med": "metformin", "condition": "diabetic-ketoacidosis",
+      "concern": "Acute metabolic acidosis / diabetic ketoacidosis / diabetic pre-coma", "consequence": "Risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "Contraindications",
+      "src": [{ "s": "emc-987", "q": "Any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis). Diabetic pre-coma." }] },
+    { "id": "metformin:condition:dehydration", "kind": "condition", "level": "contraindicated", "med": "metformin", "condition": "dehydration-hypovolaemia",
+      "concern": "Dehydration (acute condition that may alter renal function)", "consequence": "Metformin accumulation and lactic acidosis.", "action": "Do not use; temporarily stop metformin during dehydration (severe diarrhoea/vomiting, fever, reduced intake).", "sourceWording": "Contraindications ... dehydration",
+      "src": [
+        { "s": "emc-987", "q": "Acute conditions with the potential to alter renal function such as: dehydration, severe infection, shock." },
+        { "s": "emc-987", "q": "metformin should be temporarily discontinued and contact with a health care professional is recommended" }
+      ] },
+    { "id": "metformin:condition:severe-infection-shock", "kind": "condition", "level": "contraindicated", "med": "metformin", "condition": "severe-infection-shock",
+      "concern": "Severe infection or shock", "consequence": "Acute change in renal function / hypoxia; lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Contraindications ... severe infection, shock",
+      "src": [{ "s": "emc-987", "q": "Acute conditions with the potential to alter renal function such as: dehydration, severe infection, shock." }] },
+    { "id": "metformin:condition:acute-decompensated-heart-failure", "kind": "condition", "level": "contraindicated", "med": "metformin", "condition": "acute-decompensated-heart-failure",
+      "concern": "Decompensated, acute or unstable heart failure", "consequence": "Tissue hypoxia; lactic acidosis risk.", "action": "Do not use.", "sourceWording": "metformin is contraindicated",
+      "src": [
+        { "s": "emc-987", "q": "Disease which may cause tissue hypoxia (especially acute disease, or worsening of chronic disease) such as: decompensated heart failure, respiratory failure, recent myocardial infarction, shock." },
+        { "s": "emc-987", "q": "For patients with acute and unstable heart failure, metformin is contraindicated" }
+      ] },
+    { "id": "metformin:condition:heart-failure", "kind": "condition", "level": "monitor", "med": "metformin", "condition": "heart-failure",
+      "concern": "Stable chronic heart failure", "consequence": "Higher risk of hypoxia and renal insufficiency.", "action": "May be used with regular monitoring of cardiac and renal function.", "sourceWording": "may be used with a regular monitoring",
+      "src": [
+        { "s": "emc-987", "q": "Patients with heart failure are more at risk of hypoxia and renal insufficiency." },
+        { "s": "emc-987", "q": "In patients with stable chronic heart failure, metformin may be used with a regular monitoring of cardiac and renal function." }
+      ] },
+    { "id": "metformin:condition:respiratory-failure", "kind": "condition", "level": "contraindicated", "med": "metformin", "condition": "respiratory-failure",
+      "concern": "Respiratory failure (tissue hypoxia)", "consequence": "Lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Contraindications ... respiratory failure",
+      "src": [{ "s": "emc-987", "q": "Disease which may cause tissue hypoxia (especially acute disease, or worsening of chronic disease) such as: decompensated heart failure, respiratory failure, recent myocardial infarction, shock." }] },
+    { "id": "metformin:condition:recent-mi", "kind": "condition", "level": "contraindicated", "med": "metformin", "condition": "recent-myocardial-infarction",
+      "concern": "Recent myocardial infarction (tissue hypoxia)", "consequence": "Lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Contraindications ... recent myocardial infarction",
+      "src": [{ "s": "emc-987", "q": "Disease which may cause tissue hypoxia (especially acute disease, or worsening of chronic disease) such as: decompensated heart failure, respiratory failure, recent myocardial infarction, shock." }] },
+    { "id": "metformin:condition:alcohol", "kind": "condition", "level": "contraindicated", "med": "metformin", "condition": "alcohol-dependence",
+      "concern": "Alcoholism or acute alcohol intoxication", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "Contraindications ... acute alcohol intoxication, alcoholism",
+      "src": [{ "s": "emc-987", "q": "Hepatic insufficiency, acute alcohol intoxication, alcoholism." }] },
+    { "id": "metformin:condition:mitochondrial-disease", "kind": "condition", "level": "avoid", "med": "metformin", "condition": "mitochondrial-disease",
+      "concern": "Mitochondrial disease (MELAS, MIDD)", "consequence": "Lactic acidosis exacerbation and neurological complications.", "action": "Not recommended; withdraw immediately if signs suggest MELAS/MIDD.", "sourceWording": "metformin is not recommended",
+      "src": [{ "s": "emc-987", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease" }] },
+    { "id": "metformin:condition:iodinated-contrast", "kind": "condition", "level": "avoid", "med": "metformin", "condition": "iodinated-contrast-planned",
+      "concern": "Intravascular iodinated contrast", "consequence": "Contrast-induced nephropathy, metformin accumulation and lactic acidosis.", "action": "Concomitant use not recommended: stop before or at the time of imaging; restart no sooner than 48 hours after, once renal function is re-checked and stable.", "sourceWording": "Concomitant use not recommended",
+      "src": [
+        { "s": "emc-987", "q": "Intravascular administration of iodinated contrast agents may lead to contrast induced nephropathy, resulting in metformin accumulation and an increased risk of lactic acidosis." },
+        { "s": "emc-987", "q": "Metformin should be discontinued prior to or at the time of the imaging procedure and not restarted until at least 48 hours after, provided that renal function has been re-evaluated and found to be stable" }
+      ] },
+    { "id": "metformin:condition:surgery", "kind": "condition", "level": "avoid", "med": "metformin", "condition": "surgery-planned",
+      "concern": "Surgery under general, spinal or epidural anaesthesia (not other procedures)", "consequence": "Lactic acidosis risk.", "action": "Must be stopped at the time of surgery under general, spinal or epidural anaesthesia; restart no earlier than 48 hours after surgery or return to oral nutrition, and only once renal function has been re-checked and is stable. This is a temporary stop, not a contraindication to metformin.", "sourceWording": "must be discontinued at the time of surgery",
+      "src": [
+        { "s": "emc-987", "q": "Metformin must be discontinued at the time of surgery under general, spinal or epidural anaesthesia." },
+        { "s": "emc-987", "q": "Therapy may be restarted no earlier than 48 hours following surgery or resumption of oral nutrition and provided that renal function has been re-evaluated and found to be stable." }
+      ] },
+    { "id": "metformin:renal:lt30", "kind": "renal", "level": "contraindicated", "med": "metformin", "renal": { "measure": "GFR", "max": 30 },
+      "concern": "GFR < 30 mL/min", "consequence": "Metformin accumulation; lactic acidosis.", "action": "Do not use.", "sourceWording": "Metformin is contraindicated",
+      "src": [{ "s": "emc-987", "q": "Severe renal failure (GFR < 30 mL/min)." }] },
+    { "id": "metformin:renal:30-44", "kind": "renal", "level": "dose", "med": "metformin", "renal": { "measure": "GFR", "min": 30, "max": 45 },
+      "concern": "GFR 30-44 mL/min", "consequence": "Reduced metformin clearance; lactic acidosis risk.", "action": "Maximum 1000 mg/day. Review lactic acidosis risk factors before starting; starting dose at most half the maximum.", "sourceWording": "Total maximum daily dose",
+      "src": [
+        { "s": "emc-987", "q": "30-44 1000 mg <30 - Metformin is contraindicated." },
+        { "s": "emc-6298", "q": "30-44 1000 mg <30 - Metformin is contraindicated." },
+        { "s": "emc-987", "q": "The starting dose is at most half of the maximum dose." }
+      ] },
+    { "id": "metformin:renal:45-59", "kind": "renal", "level": "dose", "med": "metformin", "renal": { "measure": "GFR", "min": 45, "max": 60 },
+      "concern": "GFR 45-59 mL/min", "consequence": "Reduced metformin clearance; lactic acidosis risk.", "action": "Maximum 2000 mg/day. Review lactic acidosis risk factors before starting; starting dose at most half the maximum.", "sourceWording": "Total maximum daily dose",
+      "src": [
+        { "s": "emc-987", "q": "45-59 2000 mg Factors that may increase the risk of lactic acidosis (see section 4.4) should be reviewed before considering initiation of metformin. The starting dose is at most half of the maximum dose." },
+        { "s": "emc-6298", "q": "45-59 2000 mg Factors that may increase the risk of lactic acidosis" }
+      ] },
+    { "id": "metformin:renal:60-89:ir", "kind": "renal", "level": "info", "med": "metformin", "formulations": ["metformin-ir-tab"], "renal": { "measure": "GFR", "min": 60, "max": 90 },
+      "concern": "GFR 60-89 mL/min", "consequence": "Declining renal function.", "action": "Maximum 3000 mg/day; dose reduction may be considered. Check GFR at least annually.", "sourceWording": "Dose reduction may be considered",
+      "src": [{ "s": "emc-987", "q": "60-89 3000 mg Dose reduction may be considered in relation to declining renal function." }] },
+    { "id": "metformin:renal:60-89:mr", "kind": "renal", "level": "info", "med": "metformin", "formulations": ["metformin-mr-tab"], "renal": { "measure": "GFR", "min": 60, "max": 90 },
+      "concern": "GFR 60-89 mL/min", "consequence": "Declining renal function.", "action": "Maximum 2000 mg/day; dose reduction may be considered. Check GFR at least annually.", "sourceWording": "Dose reduction may be considered",
+      "src": [{ "s": "emc-6298", "q": "60-89 2000 mg Dose reduction may be considered in relation to declining renal function." }] },
+    { "id": "metformin:hepatic:any", "kind": "hepatic", "level": "contraindicated", "med": "metformin", "hepatic": ["any"],
+      "concern": "Hepatic insufficiency", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "Contraindications ... Hepatic insufficiency",
+      "src": [{ "s": "emc-987", "q": "Hepatic insufficiency, acute alcohol intoxication, alcoholism." }] },
+    { "id": "metformin:age:lt10:ir", "kind": "age", "level": "info", "med": "metformin", "formulations": ["metformin-ir-tab"], "age": { "minYears": 0, "maxYears": 10 },
+      "concern": "Child under 10 years", "consequence": "Not licensed below 10 years.", "action": "SmPC licenses use from 10 years of age only.", "sourceWording": "can be used in children from 10 years of age",
+      "src": [{ "s": "emc-987", "q": "Glucophage can be used in children from 10 years of age and adolescents." }] },
+    { "id": "metformin:age:10-12:ir", "kind": "age", "level": "caution", "med": "metformin", "formulations": ["metformin-ir-tab"], "age": { "minYears": 10, "maxYears": 13 },
+      "concern": "Child aged 10 to 12 years", "consequence": "Very limited trial data in this age group.", "action": "Particular caution; follow growth and puberty.", "sourceWording": "particular caution is recommended",
+      "src": [{ "s": "emc-987", "q": "particular caution is recommended when prescribing to children aged between 10 and 12 years" }] },
+    { "id": "metformin:age:lt18:mr", "kind": "age", "level": "avoid", "med": "metformin", "formulations": ["metformin-mr-tab"], "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Child or adolescent (prolonged-release)", "consequence": "No data.", "action": "Prolonged-release tablets should not be used in children.", "sourceWording": "should not be used in children",
+      "src": [{ "s": "emc-6298", "q": "In the absence of available data, Glucophage SR should not be used in children." }] },
+    { "id": "metformin:age:ge75:mr-prediabetes", "kind": "age", "level": "avoid", "med": "metformin", "formulations": ["metformin-mr-tab"], "age": { "minYears": 75 },
+      "concern": "Age 75 or over - ONLY for the prediabetes (risk reduction) indication", "consequence": "Benefit in reducing/delaying type 2 diabetes not established at this age.", "action": "Initiation for prediabetes not recommended at 75 years and older (does not apply to treatment of type 2 diabetes).", "sourceWording": "metformin initiation is not recommended",
+      "src": [{ "s": "emc-6298", "q": "Due to the limited therapeutic efficacy data in the reduction of risk or delay of type 2 diabetes in patients 75 years and older, metformin initiation is not recommended in these patients." }] },
+    { "id": "metformin:breastfeeding:smpc", "kind": "breastfeeding", "level": "avoid", "med": "metformin",
+      "concern": "Breastfeeding (SmPC)", "consequence": "Excreted in milk; limited data.", "action": "SmPC: breastfeeding not recommended; decide weighing benefit of breastfeeding against risk. Note SPS advice differs.", "sourceWording": "breast-feeding is not recommended",
+      "src": [
+        { "s": "emc-987", "q": "However, as only limited data are available, breast-feeding is not recommended during metformin treatment." },
+        { "s": "emc-987", "q": "A decision on whether to discontinue breast-feeding should be made, taking into account the benefit of breast-feeding and the potential risk to adverse effects on the child." }
+      ] },
+    { "id": "metformin:breastfeeding:sps", "kind": "breastfeeding", "level": "info", "med": "metformin",
+      "concern": "Breastfeeding (SPS)", "consequence": "Negligible amounts in breast milk.", "action": "SPS: can be used (preferred choice); monitor infant for vomiting, diarrhoea and hypoglycaemia.", "sourceWording": "can be used during breastfeeding",
+      "src": [
+        { "s": "sps-antidiabetic-bf", "q": "Metformin can be used during breastfeeding due to negligible amounts in breast milk." },
+        { "s": "sps-antidiabetic-bf", "q": "As a precaution, monitor the infant for vomiting, diarrhoea and signs of hypoglycaemia" }
+      ] },
+    { "id": "metformin:pregnancy:info", "kind": "pregnancy", "level": "info", "med": "metformin",
+      "concern": "Pregnancy", "consequence": "No increased risk of congenital abnormalities in large data sets.", "action": "Can be considered if clinically needed, with or instead of insulin; check newborn blood glucose if used near delivery (BUMPS).", "sourceWording": "can be considered during pregnancy",
+      "src": [
+        { "s": "emc-987", "q": "If clinically needed, the use of metformin can be considered during pregnancy and in the periconceptional phase as an addition or an alternative to insulin." },
+        { "s": "bumps-metformin", "q": "Your newborn baby's blood sugar will be checked, and treatment will be given if necessary." }
+      ] },
+    { "id": "metformin:interaction:nsaid", "kind": "interaction", "level": "monitor", "med": "metformin", "other": "group:nsaid", "effect": "nephrotoxicity",
+      "concern": "Metformin + NSAID (including COX-2 inhibitors)", "consequence": "NSAIDs can impair renal function and increase the risk of lactic acidosis.", "action": "Close monitoring of renal function is necessary; start NSAID with caution.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-987", "q": "Some medicinal products can adversely affect renal function which may increase the risk of lactic acidosis, e.g. NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors" },
+        { "s": "emc-987", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "metformin:interaction:ace-inhibitor", "kind": "interaction", "level": "monitor", "med": "metformin", "other": "group:ace-inhibitor", "effect": "nephrotoxicity",
+      "concern": "Metformin + ACE inhibitor", "consequence": "May adversely affect renal function and increase the risk of lactic acidosis.", "action": "Close monitoring of renal function is necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-987", "q": "ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+        { "s": "emc-987", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "metformin:interaction:diuretic", "kind": "interaction", "level": "monitor", "med": "metformin", "other": "group:diuretic", "effect": "nephrotoxicity",
+      "concern": "Metformin + diuretic (especially loop diuretics)", "consequence": "May adversely affect renal function and increase the risk of lactic acidosis.", "action": "Close monitoring of renal function is necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-987", "q": "ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+        { "s": "emc-987", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "metformin:interaction:antihypertensive", "kind": "interaction", "level": "caution", "med": "metformin", "other": "group:antihypertensive",
+      "concern": "Metformin + antihypertensive", "consequence": "Medicines that can acutely impair renal function raise lactic acidosis risk.", "action": "Initiate with caution in metformin-treated patients.", "sourceWording": "should be initiated with caution",
+      "src": [{ "s": "emc-987", "q": "Medicinal products that can acutely impair renal function (such as antihypertensives, diuretics and NSAIDs) should be initiated with caution in metformin-treated patients." }] },
+    { "id": "metformin:interaction:corticosteroid", "kind": "interaction", "level": "monitor", "med": "metformin", "other": "group:corticosteroid",
+      "concern": "Metformin + glucocorticoid (systemic or local)", "consequence": "Intrinsic hyperglycaemic activity.", "action": "More frequent blood glucose monitoring may be needed, especially at the start; adjust metformin dose during and after the steroid if necessary.", "sourceWording": "More frequent blood glucose monitoring may be required",
+      "src": [
+        { "s": "emc-987", "q": "Medicinal products with intrinsic hyperglycaemic activity (e.g. glucocorticoids (systemic and local routes) and sympathomimetics)" },
+        { "s": "emc-987", "q": "More frequent blood glucose monitoring may be required, especially at the beginning of treatment." }
+      ] },
+    { "id": "metformin:interaction:trimethoprim", "kind": "interaction", "level": "caution", "med": "metformin", "other": "trimethoprim",
+      "concern": "Metformin + trimethoprim (OCT2 inhibitor)", "consequence": "Reduced renal elimination of metformin; higher metformin levels.", "action": "Caution, especially in renal impairment; consider metformin dose adjustment if needed.", "sourceWording": "Caution is therefore advised",
+      "src": [
+        { "s": "emc-6298", "q": "Inhibitors of OCT2 (such as cimetidine, dolutegravir, ranolazine, trimethoprim, vandetanib, isavuconazole) may decrease the renal elimination of metformin and thus lead to an increase in metformin plasma concentration." },
+        { "s": "emc-987", "q": "Caution is therefore advised, especially in patients with renal impairment, when these drugs are co-administered with metformin, as metformin plasma concentration may increase." }
+      ] }
+  ]
+}

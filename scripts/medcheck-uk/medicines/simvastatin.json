@@ -1,0 +1,1208 @@
+{
+  "id": "simvastatin",
+  "name": "Simvastatin",
+  "ingredients": [
+    "simvastatin"
+  ],
+  "className": "HMG-CoA reductase inhibitor (statin)",
+  "groups": [
+    "statin"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "simvastatin-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "10 mg, 20 mg, 40 mg (one UK SmPC); 80 mg (another UK SmPC)",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "Each tablet contains 10 mg of simvastatin. Each tablet contains 20 mg of simvastatin. Each tablet contains 40 mg of simvastatin."
+        },
+        {
+          "s": "emc-10668",
+          "q": "Simvastatin 80 mg film-coated tablets"
+        }
+      ],
+      "sourceIds": [
+        "emc-7789",
+        "emc-10668"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Primary hypercholesterolaemia or mixed dyslipidaemia, as an adjunct to diet when diet and other non-drug measures are not enough.",
+          "tag": "Hypercholesterolaemia",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Treatment of primary hypercholesterolaemia or mixed dyslipidaemia, as an adjunct to diet"
+            }
+          ]
+        },
+        {
+          "t": "Homozygous familial hypercholesterolaemia, as an adjunct to diet and other lipid-lowering treatment (e.g. LDL apheresis).",
+          "tag": "Homozygous FH",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Treatment of homozygous familial hypercholesterolaemia (HoFH) as an adjunct to diet and other lipid-lowering treatments"
+            }
+          ]
+        },
+        {
+          "t": "Reduction of cardiovascular mortality and morbidity in manifest atherosclerotic cardiovascular disease or diabetes mellitus, with normal or raised cholesterol.",
+          "tag": "CV prevention",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Reduction of cardiovascular mortality and morbidity in patients with manifest atherosclerotic cardiovascular disease or diabetes mellitus"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "80 mg dose only for severe hypercholesterolaemia at high cardiovascular risk not at goal on lower doses, when benefits are expected to outweigh risks (higher myopathy risk).",
+          "tag": "80 mg dose",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "The 80-mg dose is only recommended in patients with severe hypercholesterolaemia and at high risk for cardiovascular complications who have not achieved their treatment goals on lower doses"
+            },
+            {
+              "s": "mhra-dsu-simvastatin-80mg-2010",
+              "q": "Simvastatin 80 mg should be considered only in patients with severe hypercholesterolaemia and high risk of cardiovascular complications"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Dose range 5-80 mg/day as a single evening dose; adjust at intervals of not less than 4 weeks; maximum 80 mg/day.",
+          "tag": "All adult indications",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "The dosage range is 5-80 mg/day of simvastatin given orally as a single dose in the evening."
+            },
+            {
+              "s": "emc-7789",
+              "q": "to a maximum of 80 mg/day given as a single dose in the evening"
+            }
+          ]
+        },
+        {
+          "t": "Hypercholesterolaemia: usual starting dose 10-20 mg/day in the evening; if LDL-C needs to fall by more than 45%, may start at 20-40 mg/day.",
+          "tag": "Hypercholesterolaemia",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "The usual starting dose is 10-20 mg/day given as a single dose in the evening."
+            },
+            {
+              "s": "emc-7789",
+              "q": "Patients who require a large reduction in LDL-C (more than 45 %) may be started at 20-40 mg/day"
+            }
+          ]
+        },
+        {
+          "t": "Homozygous familial hypercholesterolaemia: recommended starting dose 40 mg/day in the evening. With lomitapide, do not exceed 40 mg/day.",
+          "tag": "Homozygous FH",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "the recommended starting dosage is Zocor 40 mg/day in the evening"
+            },
+            {
+              "s": "emc-7789",
+              "q": "In patients taking lomitapide concomitantly with Zocor, the dose of Zocor must not exceed 40 mg/day"
+            }
+          ]
+        },
+        {
+          "t": "Cardiovascular prevention: usual dose 20 to 40 mg/day as a single evening dose.",
+          "tag": "CV prevention",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "The usual dose of Zocor is 20 to 40 mg/day given as a single dose in the evening in patients at high risk of coronary heart disease"
+            }
+          ]
+        },
+        {
+          "t": "Dose caps with other medicines: maximum 20 mg/day with amiodarone, amlodipine, verapamil, diltiazem, or elbasvir/grazoprevir; maximum 10 mg/day with fibrates other than gemfibrozil or fenofibrate.",
+          "tag": "Dose caps with interacting medicines",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "In patients taking amiodarone, amlodipine, verapamil, diltiazem, or products containing elbasvir or grazoprevir concomitantly with Zocor, the dose of Zocor should not exceed 20 mg/day"
+            },
+            {
+              "s": "emc-7789",
+              "q": "the dose of Zocor should not exceed 10 mg/day"
+            }
+          ]
+        },
+        {
+          "t": "Bile acid sequestrants: give simvastatin more than 2 hours before or more than 4 hours after the sequestrant.",
+          "tag": "Bile acid sequestrants",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Dosing should occur either > 2 hours before or > 4 hours after administration of a bile acid sequestrant."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Heterozygous familial hypercholesterolaemia, 10-17 years (boys Tanner Stage II and above; girls at least one year post-menarche): start 10 mg once daily in the evening; range 10-40 mg/day; maximum 40 mg/day; adjust at intervals of 4 weeks or more.",
+          "tag": "10-17 years",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "the recommended usual starting dose is 10 mg once a day in the evening"
+            },
+            {
+              "s": "emc-7789",
+              "q": "The recommended dosing range is 10-40 mg/day; the maximum recommended dose is 40 mg/day."
+            }
+          ]
+        },
+        {
+          "t": "Not studied in children younger than 10 years, pre-pubertal children or pre-menarchal girls.",
+          "tag": "Under 10 years",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Simvastatin has not been studied in patients younger than 10 years of age, nor in pre-pubertal children and pre-menarchal girls."
+            }
+          ]
+        },
+        {
+          "t": "Adolescent girls should be counselled on contraception.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Adolescent females should be counselled on appropriate contraceptive methods while on simvastatin therapy"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to simvastatin or any excipient.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1. Active liver disease"
+            }
+          ]
+        },
+        {
+          "t": "Active liver disease or unexplained persistent raised serum transaminases.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Active liver disease or unexplained persistent elevations of serum transaminases."
+            }
+          ]
+        },
+        {
+          "t": "Pregnancy and breastfeeding.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Pregnancy and lactation (see section 4.6)."
+            }
+          ]
+        },
+        {
+          "t": "Potent CYP3A4 inhibitors, e.g. itraconazole, ketoconazole, posaconazole, voriconazole, HIV protease inhibitors, boceprevir, telaprevir, erythromycin, clarithromycin, telithromycin, nefazodone, cobicistat-containing products.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Concomitant administration of potent CYP3A4 inhibitors (agents that increase AUC approximately 5 fold or greater)"
+            }
+          ]
+        },
+        {
+          "t": "Gemfibrozil, ciclosporin or danazol.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Concomitant administration of gemfibrozil, ciclosporin, or danazol"
+            }
+          ]
+        },
+        {
+          "t": "HoFH: lomitapide with simvastatin doses above 40 mg.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "In patients with HoFH, concomitant administration of lomitapide with doses > 40 mg"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Myopathy/rhabdomyolysis risk is dose related and higher at 80 mg. Caution with pre-disposing factors; measure CK before starting if: aged 65 or over, female, renal impairment, uncontrolled hypothyroidism, personal/family history of hereditary muscle disorders, previous statin/fibrate muscle toxicity, alcohol abuse.",
+          "tag": "Myopathy",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "As with other HMG-CoA reductase inhibitors, the risk of myopathy/rhabdomyolysis is dose related."
+            },
+            {
+              "s": "emc-7789",
+              "q": "Elderly (age ≥ 65 years). Female gender. Renal impairment. Uncontrolled hypothyroidism."
+            }
+          ]
+        },
+        {
+          "t": "Asian patients: caution; use the lowest dose necessary (higher myopathy incidence seen in Chinese patients).",
+          "tag": "Asian patients",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "caution should be used when prescribing simvastatin to Asian patients and the lowest dose necessary should be employed"
+            }
+          ]
+        },
+        {
+          "t": "SLCO1B1 c.521T>C (CC genotype): higher myopathy risk with 80 mg; where available consider genotyping before 80 mg and avoid high doses in CC carriers.",
+          "tag": "Pharmacogenetics",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "high doses avoided in those found to carry the CC genotype"
+            }
+          ]
+        },
+        {
+          "t": "Stop temporarily a few days before elective major surgery and when any major medical or surgical condition supervenes.",
+          "tag": "Surgery",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Therapy with simvastatin should be temporarily stopped a few days prior to elective major surgery and when any major medical or surgical condition supervenes."
+            }
+          ]
+        },
+        {
+          "t": "Use with caution in people who drink substantial quantities of alcohol.",
+          "tag": "Alcohol",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "The product should be used with caution in patients who consume substantial quantities of alcohol."
+            }
+          ]
+        },
+        {
+          "t": "Systemic fusidic acid: must not be given with simvastatin or within 7 days of stopping it.",
+          "tag": "Fusidic acid",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Simvastatin must not be co-administered with systemic formulations of fusidic acid or within 7 days of stopping fusidic acid treatment."
+            }
+          ]
+        },
+        {
+          "t": "Statins can raise blood glucose; monitor people at risk of diabetes (fasting glucose 5.6 to 6.9 mmol/L, BMI > 30 kg/m2, raised triglycerides, hypertension). Not a reason to stop.",
+          "tag": "Diabetes risk",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Patients at risk (fasting glucose 5.6 to 6.9 mmol/L, BMI > 30 kg/m2, raised triglycerides, hypertension) should be monitored both clinically and biochemically according to national guidelines."
+            }
+          ]
+        },
+        {
+          "t": "Myasthenia gravis: may be induced or aggravated; stop if symptoms worsen.",
+          "tag": "Myasthenia gravis",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Zocor should be discontinued in case of aggravation of symptoms."
+            },
+            {
+              "s": "mhra-dsu-statins-myasthenia-2023",
+              "q": "advise patients with pre-existing myasthenia gravis to be alert to aggravation of symptoms while taking a statin"
+            }
+          ]
+        },
+        {
+          "t": "Interstitial lung disease: stop if suspected.",
+          "tag": "Lung",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "If it is suspected a patient has developed interstitial lung disease, statin therapy should be discontinued."
+            }
+          ]
+        },
+        {
+          "t": "Contains lactose: not for rare hereditary galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption.",
+          "tag": "Excipient",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "This product contains lactose."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Clarithromycin and other potent CYP3A4 inhibitors: contraindicated. If treatment with a potent CYP3A4 inhibitor is unavoidable, suspend simvastatin for the course (consider an alternative statin). SPS: simvastatin must be stopped while taking clarithromycin.",
+          "tag": "Clarithromycin",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "If treatment with potent CYP3A4 inhibitors (agents that increase AUC approximately 5 fold or greater) is unavoidable, therapy with simvastatin must be suspended"
+            },
+            {
+              "s": "sps-macrolides-statins",
+              "q": "Clarithromycin is contraindicated with simvastatin."
+            },
+            {
+              "s": "mhra-dsu-simvastatin-interactions-2012",
+              "q": "Contraindicated with simvastatin"
+            }
+          ]
+        },
+        {
+          "t": "Amlodipine: do not exceed 20 mg simvastatin daily (increased myopathy risk). MHRA: maximum recommended simvastatin dose with amlodipine is 20 mg/day.",
+          "tag": "Amlodipine",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "the dose of simvastatin should not exceed 20 mg daily in patients receiving concomitant medication with amlodipine"
+            },
+            {
+              "s": "mhra-dsu-simvastatin-amlodipine-2012",
+              "q": "The maximum recommended dose for simvastatin in conjunction with amlodipine and diltiazem is now 20 mg/day."
+            }
+          ]
+        },
+        {
+          "t": "Also maximum 20 mg daily with amiodarone, verapamil, diltiazem; caution with less potent CYP3A4 inhibitors (fluconazole, verapamil, diltiazem).",
+          "tag": "Other calcium-channel blockers / amiodarone",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "The combined use of simvastatin at doses higher than 20 mg daily with amiodarone, amlodipine, verapamil, or diltiazem should be avoided."
+            }
+          ]
+        },
+        {
+          "t": "Coumarin anticoagulants (warfarin): simvastatin modestly raises INR; check prothrombin time before starting and often enough in early therapy; repeat if the simvastatin dose changes or stops.",
+          "tag": "Warfarin",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "simvastatin 20-40 mg/day modestly potentiated the effect of coumarin anticoagulants"
+            },
+            {
+              "s": "emc-7789",
+              "q": "In patients taking coumarin anticoagulants, prothrombin time should be determined before starting simvastatin"
+            }
+          ]
+        },
+        {
+          "t": "MHRA: CYP3A4 inducers (e.g. St John's wort) may reduce simvastatin levels.",
+          "tag": "St John's wort",
+          "src": [
+            {
+              "s": "mhra-dsu-statins-interactions-2008",
+              "q": "Inducers of CYP3A4 (eg, efavirenz, rifampicin, St John's wort) may reduce plasma concentrations of simvastatin and atorvastatin."
+            }
+          ]
+        },
+        {
+          "t": "Avoid grapefruit juice.",
+          "tag": "Grapefruit juice",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Intake of grapefruit juice during treatment with simvastatin should therefore be avoided."
+            }
+          ]
+        },
+        {
+          "t": "Ticagrelor: simvastatin doses greater than 40 mg are not recommended.",
+          "tag": "Ticagrelor",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "The concomitant use of ticagrelor with doses of simvastatin greater than 40 mg is not recommended."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Moderate renal impairment: no dose change expected. Severe renal impairment (CrCl < 30 ml/min): doses above 10 mg/day should be carefully considered and, if needed, given cautiously.",
+          "tag": "SmPC (CrCl)",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "No modification of dosage should be necessary in patients with moderate renal impairment."
+            },
+            {
+              "s": "emc-7789",
+              "q": "In patients with severe renal impairment (creatinine clearance < 30 ml/min), dosages above 10 mg/day should be carefully considered and, if deemed necessary, implemented cautiously."
+            }
+          ]
+        },
+        {
+          "t": "SPS (all statins): if eGFR is less than 30 mL/min/1.73m2, check the dose with a renal specialist.",
+          "tag": "SPS (eGFR)",
+          "src": [
+            {
+              "s": "sps-statins-monitoring",
+              "q": "If eGFR less than 30mL/min/1.73m2 check dose with renal specialist."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Contraindicated in active liver disease or unexplained persistent raised transaminases. Stop if transaminases rise to 3 x ULN and persist; interrupt promptly for serious liver injury.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Active liver disease or unexplained persistent elevations of serum transaminases."
+            },
+            {
+              "s": "emc-7789",
+              "q": "particularly if they rise to 3 x ULN and are persistent, simvastatin should be discontinued"
+            }
+          ]
+        },
+        {
+          "t": "SPS: statins are not recommended in unexplained active liver disease or ALT/AST above 3 x ULN; in stable/chronic liver disease they can be used with caution after weighing risks and benefits.",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-statins-liver",
+              "q": "available data suggest that statins can be used with caution after assessing individual risks and benefits"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Contraindicated; must not be used in women who are pregnant, trying to become pregnant or suspect pregnancy. Suspend for the duration of pregnancy.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Zocor is contraindicated during pregnancy"
+            },
+            {
+              "s": "emc-7789",
+              "q": "Zocor must not be used in women who are pregnant, trying to become pregnant or suspect they are pregnant."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: statins are usually avoided in pregnancy; most women are advised to stop three months before trying to conceive and during pregnancy.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-statins",
+              "q": "Statins are usually avoided in pregnancy if possible as there is not enough information to say they are safe for the baby."
+            },
+            {
+              "s": "bumps-statins",
+              "q": "As a precaution, most women are advised to stop taking statins for three months before trying to conceive, and during pregnancy."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: contraindicated; women taking simvastatin must not breastfeed.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "women taking Zocor must not breast-feed their infants"
+            }
+          ]
+        },
+        {
+          "t": "SPS (differs from SmPC): simvastatin can be used with caution and infant monitoring, but other statins (rosuvastatin, pravastatin, atorvastatin) are preferred. No published data on milk transfer.",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-lipid-breastfeeding",
+              "q": "Simvastatin can be used with caution and infant monitoring during breastfeeding, but other statins are preferred."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No human fertility data; no effect on fertility in rats. Adolescent girls should be counselled on contraception.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "No clinical trial data are available on the effects of simvastatin on human fertility."
+            },
+            {
+              "s": "emc-7789",
+              "q": "Adolescent females should be counselled on appropriate contraceptive methods while on simvastatin therapy"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "status": "not-stated",
+      "note": "The simvastatin SmPC (section 4.8) lists no common or very common adverse effects (most listed effects are rare); myopathy occurred commonly only at 80 mg/day in one trial. Source checked: the simvastatin SmPC."
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Myopathy/rhabdomyolysis: stop if CK above 5 x ULN (without strenuous exercise) or if myopathy is suspected. Myopathy occurred commonly at 80 mg/day in a trial.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "If these levels are found, in the absence of strenuous exercise, to be significantly elevated (> 5 x ULN), treatment should be stopped."
+            },
+            {
+              "s": "emc-7789",
+              "q": "If myopathy is suspected for any other reason, treatment should be discontinued."
+            }
+          ]
+        },
+        {
+          "t": "Immune-mediated necrotising myopathy (very rare).",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "There have been very rare reports of an immune-mediated necrotising myopathy (IMNM)"
+            }
+          ]
+        },
+        {
+          "t": "Hepatic failure (very rare, fatal and non-fatal): interrupt promptly if serious liver injury, hyperbilirubinaemia or jaundice; do not restart if no other cause.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "If serious liver injury with clinical symptoms and/or hyperbilirubinaemia or jaundice occurs during treatment with Zocor, promptly interrupt therapy."
+            }
+          ]
+        },
+        {
+          "t": "Anaphylaxis (very rare) and a rare hypersensitivity syndrome (angioedema, lupus-like syndrome, vasculitis and others).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Very rare : anaphylaxis"
+            },
+            {
+              "s": "emc-7789",
+              "q": "An apparent hypersensitivity syndrome has been reported rarely"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "LFTs before starting and then when clinically indicated; for 80 mg: extra test before titration, at 3 months, and periodically (e.g. 6-monthly) in the first year.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "It is recommended that liver function tests be performed before treatment begins and thereafter when clinically indicated."
+            },
+            {
+              "s": "emc-7789",
+              "q": "Patients titrated to the 80-mg dose should receive an additional test prior to titration, 3 months after titration to the 80-mg dose"
+            }
+          ]
+        },
+        {
+          "t": "SPS before starting: ALT or AST, blood pressure, BMI, lipids (non-fasting), serum creatinine or eGFR, HbA1c.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "sps-statins-monitoring",
+              "q": "Before starting Required Baseline ALT or AST Blood pressure Body mass index"
+            }
+          ]
+        },
+        {
+          "t": "SPS: ALT or AST and lipids between months 2 and 3; consider annual review.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "sps-statins-monitoring",
+              "q": "Required Between months 2 and 3 ALT or AST"
+            }
+          ]
+        },
+        {
+          "t": "Measure CK if muscle pain, weakness or cramps occur; periodic CK may help detect subclinical myopathy at 80 mg.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "If muscle pain, weakness or cramps occur whilst a patient is receiving treatment with a statin, their CK levels should be measured."
+            }
+          ]
+        },
+        {
+          "t": "SPS: stop or do not start if ALT/AST greater than 3 x ULN or CK greater than 5 x ULN.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "sps-statins-monitoring",
+              "q": "Stop existing statin or do not initiate new statin if ALT or AST are greater than 3 times upper limit of normal (ULN)."
+            },
+            {
+              "s": "sps-statins-monitoring",
+              "q": "Stop existing statin or do not initiate statin if creatine kinase (CK) greater than 5 times ULN."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral, once daily in the evening.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Zocor is for oral administration. Zocor can be administered as a single dose in the evening."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report any unexplained muscle pain, tenderness or weakness promptly.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "told to report promptly any unexplained muscle pain, tenderness or weakness"
+            }
+          ]
+        },
+        {
+          "t": "Avoid grapefruit juice.",
+          "src": [
+            {
+              "s": "emc-7789",
+              "q": "Intake of grapefruit juice during treatment with simvastatin should therefore be avoided."
+            }
+          ]
+        },
+        {
+          "t": "People already on 80 mg should not stop on their own but should contact their doctor at once if they get unexplained muscle symptoms (MHRA).",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-dsu-simvastatin-80mg-2010",
+              "q": "Patients who are currently taking simvastatin 80 mg should not stop taking their medicine."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "simvastatin:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "simvastatin",
+      "allergen": [
+        "simvastatin"
+      ],
+      "concern": "Hypersensitivity to simvastatin",
+      "consequence": "Risk of hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1. Active liver disease"
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:condition:active-liver-disease",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "simvastatin",
+      "condition": "active-liver-disease",
+      "concern": "Active liver disease or unexplained persistent raised transaminases",
+      "consequence": "Risk of liver injury.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "Active liver disease or unexplained persistent elevations of serum transaminases."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "simvastatin",
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Stable or chronic liver disease / hepatic impairment (SPS)",
+      "consequence": "Risk of hepatotoxicity to be weighed against cardiovascular benefit.",
+      "action": "SPS: use with caution after assessing individual risks and benefits. Contraindicated in active liver disease or unexplained persistent raised transaminases (SmPC).",
+      "sourceWording": "can be used with caution",
+      "src": [
+        {
+          "s": "sps-statins-liver",
+          "q": "The use of statins is cautioned in patients with a history of liver disease"
+        },
+        {
+          "s": "sps-statins-liver",
+          "q": "available data suggest that statins can be used with caution after assessing individual risks and benefits"
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "simvastatin",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Possible reduction of fetal mevalonate; rare congenital anomaly reports with statins.",
+      "action": "Must not be used; suspend for the duration of pregnancy.",
+      "sourceWording": "contraindicated during pregnancy",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "Zocor is contraindicated during pregnancy"
+        },
+        {
+          "s": "emc-7789",
+          "q": "Zocor must not be used in women who are pregnant, trying to become pregnant or suspect they are pregnant."
+        },
+        {
+          "s": "emc-7789",
+          "q": "Rare reports of congenital anomalies following intrauterine exposure to HMG-CoA reductase inhibitors have been received."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "simvastatin",
+      "concern": "Pregnancy (BUMPS)",
+      "consequence": "Not enough information to say statins are safe for the baby.",
+      "action": "BUMPS: statins are usually avoided in pregnancy; most women are advised to stop three months before trying to conceive and during pregnancy.",
+      "sourceWording": "usually avoided in pregnancy",
+      "src": [
+        {
+          "s": "bumps-statins",
+          "q": "Statins are usually avoided in pregnancy if possible as there is not enough information to say they are safe for the baby."
+        },
+        {
+          "s": "bumps-statins",
+          "q": "As a precaution, most women are advised to stop taking statins for three months before trying to conceive, and during pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "simvastatin",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Potential for serious adverse reactions in the infant (SmPC).",
+      "action": "SmPC: must not breastfeed while taking simvastatin.",
+      "sourceWording": "must not breast-feed",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "women taking Zocor must not breast-feed their infants"
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "simvastatin",
+      "concern": "Breastfeeding (SPS view, differs from SmPC)",
+      "consequence": "No published data; low milk levels expected.",
+      "action": "SPS: can be used with caution and infant monitoring; other statins preferred.",
+      "sourceWording": "can be used with caution",
+      "src": [
+        {
+          "s": "sps-lipid-breastfeeding",
+          "q": "Simvastatin can be used with caution and infant monitoring during breastfeeding, but other statins are preferred."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:age:under-10",
+      "kind": "age",
+      "level": "caution",
+      "med": "simvastatin",
+      "age": {
+        "minYears": 0,
+        "maxYears": 10
+      },
+      "concern": "Child under 10 years / pre-pubertal",
+      "consequence": "Not studied in this group.",
+      "action": "Not licensed under 10 years; specialist use only.",
+      "sourceWording": "has not been studied",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "Simvastatin has not been studied in patients younger than 10 years of age, nor in pre-pubertal children and pre-menarchal girls."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:age:10-17",
+      "kind": "age",
+      "level": "dose",
+      "med": "simvastatin",
+      "age": {
+        "minYears": 10,
+        "maxYears": 18
+      },
+      "concern": "Age 10 to 17 years (heterozygous FH)",
+      "consequence": "Doses above 40 mg have not been studied in this age group.",
+      "action": "Licensed for heterozygous FH (boys Tanner Stage II and above, girls at least one year post-menarche): start 10 mg in the evening; range 10-40 mg/day; maximum 40 mg/day.",
+      "sourceWording": "the maximum recommended dose is 40 mg/day",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "boys Tanner Stage II and above and girls who are at least one year post-menarche, 10-17 years of age"
+        },
+        {
+          "s": "emc-7789",
+          "q": "The recommended dosing range is 10-40 mg/day; the maximum recommended dose is 40 mg/day."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:renal:crcl-30",
+      "kind": "renal",
+      "level": "dose",
+      "med": "simvastatin",
+      "renal": {
+        "measure": "CrCl",
+        "max": 30
+      },
+      "concern": "Severe renal impairment (CrCl < 30 ml/min)",
+      "consequence": "Higher risk of adverse effects at higher doses.",
+      "action": "Doses above 10 mg/day should be carefully considered and, if needed, given cautiously.",
+      "sourceWording": "should be carefully considered",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "In patients with severe renal impairment (creatinine clearance < 30 ml/min), dosages above 10 mg/day should be carefully considered and, if deemed necessary, implemented cautiously."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:renal:egfr-30",
+      "kind": "renal",
+      "level": "caution",
+      "med": "simvastatin",
+      "renal": {
+        "measure": "eGFR",
+        "max": 30
+      },
+      "concern": "eGFR less than 30 mL/min/1.73 m2 (SPS)",
+      "consequence": "Severe renal impairment.",
+      "action": "Check the dose with a renal specialist (SPS statins monitoring).",
+      "sourceWording": "check dose with renal specialist",
+      "src": [
+        {
+          "s": "sps-statins-monitoring",
+          "q": "If eGFR less than 30mL/min/1.73m2 check dose with renal specialist."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:condition:renal-impairment",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "simvastatin",
+      "condition": "renal-impairment",
+      "effect": "myopathy",
+      "concern": "Renal impairment",
+      "consequence": "Pre-disposing factor for rhabdomyolysis.",
+      "action": "Measure CK before starting; clinical monitoring.",
+      "sourceWording": "a CK level should be measured",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "a CK level should be measured before starting a treatment in the following situations"
+        },
+        {
+          "s": "emc-7789",
+          "q": "Elderly (age ≥ 65 years). Female gender. Renal impairment. Uncontrolled hypothyroidism."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "simvastatin",
+      "condition": "hypothyroidism",
+      "effect": "myopathy",
+      "concern": "Uncontrolled hypothyroidism",
+      "consequence": "Pre-disposing factor for rhabdomyolysis.",
+      "action": "Measure CK before starting; clinical monitoring. SPS: manage hypothyroidism adequately before starting a statin.",
+      "sourceWording": "a CK level should be measured",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "a CK level should be measured before starting a treatment in the following situations"
+        },
+        {
+          "s": "emc-7789",
+          "q": "Elderly (age ≥ 65 years). Female gender. Renal impairment. Uncontrolled hypothyroidism."
+        },
+        {
+          "s": "sps-statins-monitoring",
+          "q": "Manage hypothyroidism adequately before starting a statin."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:age:65-plus",
+      "kind": "age",
+      "level": "monitor",
+      "med": "simvastatin",
+      "age": {
+        "minYears": 65
+      },
+      "effect": "myopathy",
+      "concern": "Age 65 years or over",
+      "consequence": "Pre-disposing factor for myopathy/rhabdomyolysis.",
+      "action": "Measure baseline CK before starting; weigh risk and benefit.",
+      "sourceWording": "a CK level should be measured",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "a CK level should be measured before starting a treatment in the following situations"
+        },
+        {
+          "s": "emc-7789",
+          "q": "Elderly (age ≥ 65 years)."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:condition:alcohol",
+      "kind": "condition",
+      "level": "caution",
+      "med": "simvastatin",
+      "condition": "alcohol-dependence",
+      "concern": "Alcohol abuse / substantial alcohol intake",
+      "consequence": "Liver and muscle risk.",
+      "action": "Use with caution; measure CK before starting.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "The product should be used with caution in patients who consume substantial quantities of alcohol."
+        },
+        {
+          "s": "emc-7789",
+          "q": "Previous history of muscular toxicity with a statin or fibrate. Alcohol abuse."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:condition:surgery",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "simvastatin",
+      "condition": "surgery-planned",
+      "concern": "Elective major surgery",
+      "consequence": "Risk of myopathy when a major medical or surgical condition supervenes.",
+      "action": "Stop simvastatin temporarily a few days before elective major surgery.",
+      "sourceWording": "should be temporarily stopped",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "Therapy with simvastatin should be temporarily stopped a few days prior to elective major surgery"
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:condition:myasthenia-gravis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "simvastatin",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "Statins may induce or aggravate myasthenia gravis.",
+      "action": "Advise patient to watch for worsening; stop if symptoms worsen.",
+      "sourceWording": "should be discontinued in case of aggravation",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "Zocor should be discontinued in case of aggravation of symptoms."
+        },
+        {
+          "s": "mhra-dsu-statins-myasthenia-2023",
+          "q": "advise patients with pre-existing myasthenia gravis to be alert to aggravation of symptoms while taking a statin"
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:interaction:clarithromycin",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "simvastatin",
+      "other": "clarithromycin",
+      "effect": "myopathy",
+      "concern": "Clarithromycin (potent CYP3A4 inhibitor)",
+      "consequence": "Large rise in simvastatin acid levels; high risk of myopathy/rhabdomyolysis.",
+      "action": "Do not combine. If clarithromycin is essential, stop simvastatin for the course (consider an alternative statin).",
+      "sourceWording": "is contraindicated",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "Combination with itraconazole, ketoconazole, posaconazole, voriconazole, HIV protease inhibitors (e.g. nelfinavir), boceprevir, telaprevir, erythromycin, clarithromycin, telithromycin, nefazodone and medicinal products containing cobicistat is contraindicated"
+        },
+        {
+          "s": "sps-macrolides-statins",
+          "q": "Clarithromycin is contraindicated with simvastatin."
+        },
+        {
+          "s": "sps-macrolides-statins",
+          "q": "simvastatin must be stopped whilst the patient is taking the course of clarithromycin"
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:interaction:amlodipine",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "simvastatin",
+      "other": "amlodipine",
+      "effect": "myopathy",
+      "concern": "Amlodipine",
+      "consequence": "About 1.6-fold rise in simvastatin acid exposure; increased myopathy risk.",
+      "action": "Do not exceed simvastatin 20 mg daily.",
+      "sourceWording": "should not exceed 20 mg daily",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "the dose of simvastatin should not exceed 20 mg daily in patients receiving concomitant medication with amlodipine"
+        },
+        {
+          "s": "mhra-dsu-simvastatin-amlodipine-2012",
+          "q": "The maximum recommended dose for simvastatin in conjunction with amlodipine and diltiazem is now 20 mg/day."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "simvastatin",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (coumarin anticoagulant)",
+      "consequence": "Simvastatin modestly raises INR; very rare cases of elevated INR.",
+      "action": "Check prothrombin time/INR before starting, often in early therapy, and after any dose change or stop.",
+      "sourceWording": "should be determined before starting",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "In patients taking coumarin anticoagulants, prothrombin time should be determined before starting simvastatin"
+        },
+        {
+          "s": "emc-7789",
+          "q": "Very rare cases of elevated INR have been reported."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:interaction:st-johns-wort",
+      "kind": "interaction",
+      "level": "info",
+      "med": "simvastatin",
+      "other": "st-johns-wort",
+      "concern": "St John's wort (CYP3A4 inducer)",
+      "consequence": "May reduce simvastatin levels (MHRA).",
+      "action": "Be aware of possible reduced lipid-lowering effect.",
+      "sourceWording": "may reduce plasma concentrations",
+      "src": [
+        {
+          "s": "mhra-dsu-statins-interactions-2008",
+          "q": "Inducers of CYP3A4 (eg, efavirenz, rifampicin, St John's wort) may reduce plasma concentrations of simvastatin and atorvastatin."
+        }
+      ]
+    }
+  ]
+}

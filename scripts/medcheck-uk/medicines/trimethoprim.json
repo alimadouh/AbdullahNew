@@ -1,0 +1,1406 @@
+{
+  "id": "trimethoprim",
+  "name": "Trimethoprim",
+  "ingredients": [
+    "trimethoprim"
+  ],
+  "className": "Antibacterial (dihydrofolate reductase inhibitor)",
+  "groups": [
+    "antibacterial",
+    "folate-antagonist"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "trimethoprim-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "200 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Each tablet contains 200 mg of trimethoprim."
+        }
+      ],
+      "sourceIds": [
+        "mhra-tmp-tab-teva"
+      ]
+    },
+    {
+      "id": "trimethoprim-susp",
+      "label": "Oral suspension",
+      "route": "oral",
+      "strengths": "50 mg/5 ml",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Each 5 ml contains 50 mg of Trimethoprim"
+        }
+      ],
+      "sourceIds": [
+        "emc-4566"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Treatment of infections caused by trimethoprim-sensitive organisms, including urinary and respiratory tract infections.",
+          "formulations": [
+            "trimethoprim-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim is indicated for the treatment of susceptible infections caused by trimethoprim - sensitive organisms including urinary tract and respiratory tract infections."
+            }
+          ]
+        },
+        {
+          "t": "Prevention of recurrent urinary tract infections.",
+          "formulations": [
+            "trimethoprim-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim is also indicated for the prevention of recurrent urinary tract infections."
+            }
+          ]
+        },
+        {
+          "t": "Prevention and treatment of UTI, and treatment of other susceptible infections, in adults and children.",
+          "formulations": [
+            "trimethoprim-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim is indicated for the prevention and treatment of urinary tract infections in adults and children"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No specialist-only, shared-care or brand restrictions found in the tablet SmPC, the suspension SmPC, SPS or MHRA pages checked. Dialysis use is specialist-supervised (see renal)."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults and children over 12 years: 200 mg TWICE DAILY. Duration 3 days (e.g. uncomplicated cystitis in women) up to 2 weeks, by type and severity of infection. The first dose can be doubled.",
+          "tag": "Acute infections",
+          "formulations": [
+            "trimethoprim-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Adults and children over 12 years of age: 200 mg twice daily"
+            },
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Treatment should continue for a period of between 3 days (e.g. uncomplicated bacterial cystitis in women) to 2 weeks depending on the nature and severity of the infection. The first dose can be doubled."
+            }
+          ]
+        },
+        {
+          "t": "Adults and children over 12 years: 100 mg ONCE daily AT NIGHT.",
+          "tag": "Long-term treatment / prophylaxis",
+          "formulations": [
+            "trimethoprim-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Long-term treatment and prophylactic therapy: Adults and children over 12 years: 100 mg at night"
+            }
+          ]
+        },
+        {
+          "t": "Adults and children over 12 years: 200 mg (20 ml) TWICE DAILY.",
+          "tag": "UTI and other susceptible infections",
+          "formulations": [
+            "trimethoprim-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Treatment of urinary tract infections and all other susceptible infections: 200 mg (20 ml) twice daily."
+            }
+          ]
+        },
+        {
+          "t": "Adults and children over 12 years: 100 mg (10 ml) at night.",
+          "tag": "Long-term prevention of recurrent UTI",
+          "formulations": [
+            "trimethoprim-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Long-term prevention of recurrent urinary tract infections: 100 mg (10 ml) at night."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: dose depends on kidney function (see renal).",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Elderly Depending on kidney function, see special dosage schedule."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Tablets, children 6 to 12 years: 100 mg twice daily for acute infections; 50 mg at night for long-term/prophylaxis.",
+          "tag": "6-12 years",
+          "formulations": [
+            "trimethoprim-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Children 6 years to 12 years: 100 mg twice daily"
+            },
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Children 6 years to 12 years of age: 50 mg at night."
+            }
+          ]
+        },
+        {
+          "t": "Tablets are not suitable under 6 years; use a suspension. The same SmPC's prophylaxis section also says the tablet is not suitable under 12 years (internal inconsistency in the source).",
+          "tag": "Formulation choice",
+          "formulations": [
+            "trimethoprim-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "This dosage form is not suitable for use in children younger than 6 years; a more suitable dosage form (such as a suspension) should be used in this age group."
+            },
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "This dosage form is not suitable for use in children younger than 12 years; a more suitable dosage form (such as a suspension) should be used in this age group."
+            }
+          ]
+        },
+        {
+          "t": "Suspension, children 6 weeks to 12 years, UTI treatment: 8 mg/kg daily in two equal doses. Suggested: 6 weeks-5 months 25 mg (2.5 ml) twice daily; 6 months-5 years 50 mg (5 ml) twice daily; 6-12 years 100 mg (10 ml) twice daily.",
+          "tag": "Treatment, 6 weeks-12 years",
+          "formulations": [
+            "trimethoprim-susp"
+          ],
+          "calc": {
+            "mgPerKg": 8,
+            "per": "day",
+            "dividedInto": 2,
+            "ageMinYears": 0.115,
+            "ageMaxYears": 12,
+            "of": "trimethoprim"
+          },
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Children 6 weeks to 12 years of age Treatment of urinary tract infections is based on a dosage of 8 mg/kg body weight daily, subdivided into two equal doses."
+            },
+            {
+              "s": "emc-4566",
+              "q": "25 mg (2.5 ml) twice daily 50 mg (5 ml) twice daily 100 mg (10 ml) twice daily"
+            }
+          ]
+        },
+        {
+          "t": "Suspension, long-term prevention of recurrent UTI: 2 mg/kg daily as a single dose at night. Suggested: 6 months-5 years 25 mg (2.5 ml); 6-12 years 50 mg (5 ml) at night.",
+          "tag": "Prophylaxis",
+          "formulations": [
+            "trimethoprim-susp"
+          ],
+          "calc": {
+            "mgPerKg": 2,
+            "per": "day",
+            "dividedInto": 1,
+            "ageMinYears": 0.5,
+            "ageMaxYears": 12,
+            "of": "trimethoprim"
+          },
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Long-term prevention of recurrent urinary tract infection is based on 2 mg/kg body weight daily given as a single dose at night."
+            },
+            {
+              "s": "emc-4566",
+              "q": "25 mg (2.5 ml) at night 50 mg (5 ml) at night"
+            }
+          ]
+        },
+        {
+          "t": "Lower age limit differs by SmPC: tablet SmPC says do not give to premature infants or children under 4 months; suspension SmPC says do not give to premature infants and neonates under 6 weeks.",
+          "tag": "Age limit",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim should not be administered to pregnant women, premature infants or children under 4 months of age"
+            },
+            {
+              "s": "emc-4566",
+              "q": "premature infants and neonates under 6 weeks"
+            }
+          ]
+        },
+        {
+          "t": "Take particular care with blood monitoring in children on long-term therapy.",
+          "tag": "Monitoring",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Particular care should be exercised in the haematological monitoring of children on long term therapy."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to trimethoprim or any excipient.",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Severe hepatic insufficiency.",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim is contra-indicated in severe hepatic insufficiency."
+            }
+          ]
+        },
+        {
+          "t": "Megaloblastic anaemia and other blood dyscrasias.",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim is contra-indicated in megaloblastic anaemia and other blood dyscrasias."
+            }
+          ]
+        },
+        {
+          "t": "First trimester of pregnancy (the tablet SmPC 4.3 also says it should not be given to pregnant women, without naming a trimester).",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim is contra-indicated in first trimester of pregnancy"
+            },
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim should not be administered to pregnant women, premature infants or children under 4 months of age"
+            }
+          ]
+        },
+        {
+          "t": "Premature infants and young infants - SmPCs differ: tablet SmPC 4.3 says under 4 months; suspension SmPC 4.3 says neonates under 6 weeks.",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim should not be administered to pregnant women, premature infants or children under 4 months of age"
+            },
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim should not be administered to pregnant women (first trimester of pregnancy (see section 4.6)), premature infants and neonates under 6 weeks."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Hyperkalaemia: closely monitor electrolytes in patients at risk (renal insufficiency, poorly controlled diabetes, potassium-sparing diuretics, potassium supplements or salt substitutes, ACE inhibitors/ARBs, heparin).",
+          "tag": "Hyperkalaemia",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Close monitoring of serum electrolytes is advised in patients at risk for hyperkalaemia (see section 4.8)."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Patients at risk for the development of hyperkalaemia include those with renal insufficiency, poorly controlled diabetes mellitus"
+            }
+          ]
+        },
+        {
+          "t": "Folate deficiency (actual or potential, e.g. elderly): use with caution; consider a folate supplement. Trimethoprim may depress haemopoiesis.",
+          "tag": "Folate",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Caution should be exercised in the administration of trimethoprim to patients with actual or potential folate deficiency (e.g. the elderly). Administration of a folate supplement should be considered."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim may cause depression of haemopoiesis."
+            }
+          ]
+        },
+        {
+          "t": "Marked renal impairment: avoid accumulation and haematological toxicity; dialysis patients only under specialist (infection + renal) supervision.",
+          "tag": "Renal",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "In patients with marked impairment of renal function, care should be taken to avoid accumulation and resulting adverse haematological effects."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim should only be initiated and used in dialysis patients under close supervision from specialists in both infectious disease and renal medicine."
+            }
+          ]
+        },
+        {
+          "t": "Severe cutaneous reactions (SJS, TEN, DRESS): stop immediately if signs appear; never restart after SJS/TEN/DRESS.",
+          "tag": "SCARs",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "If signs and symptoms suggestive of these reactions appear, trimethoprim should be withdrawn immediately"
+            },
+            {
+              "s": "emc-4566",
+              "q": "If the patient has developed a serious reaction such as SJS, TEN or DRESS with the use of trimethoprim, the treatment must not be restarted in this patient at any time."
+            }
+          ]
+        },
+        {
+          "t": "Acute porphyria: tablet SmPC says use with caution; suspension SmPC says avoid if known or suspected risk.",
+          "tag": "Porphyria",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Caution should be used in patients with acute porphyria."
+            },
+            {
+              "s": "emc-4566",
+              "q": "If a patient has a known or suspected risk of acute prophyria, treatment with trimethoprim should be avoided."
+            }
+          ]
+        },
+        {
+          "t": "Neonates: use only under careful medical supervision (tablet SmPC).",
+          "tag": "Neonates",
+          "detail": true,
+          "formulations": [
+            "trimethoprim-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim should be used under careful medical supervision in neonates."
+            }
+          ]
+        },
+        {
+          "t": "Tablets contain lactose; suspension: patients with hereditary fructose intolerance should not take it.",
+          "tag": "Excipients",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Each tablet contains 50 mg lactose"
+            },
+            {
+              "s": "emc-4566",
+              "q": "Patients with rare hereditary problems of fructose intolerance should not take this medicine."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Methotrexate: tablet SmPC says avoid (increased antifolate effect); suspension SmPC says risk of haematological toxicity. SPS: avoid; if unavoidable, frequent FBC.",
+          "tag": "Methotrexate",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim increases the antifolate effect of methotrexate therefore use should be avoided."
+            },
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Avoid prescribing co-trimoxazole or trimethoprim with methotrexate, due to the risk of severe bone marrow suppression."
+            }
+          ]
+        },
+        {
+          "t": "Potassium-raising medicines (potassium-sparing diuretics, potassium supplements, ACE inhibitors/ARBs, heparin): risk of significant hyperkalaemia; monitor potassium.",
+          "tag": "Hyperkalaemia",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Concomitant use of drugs that may increase serum potassium levels may lead to a significant increase in serum potassium."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Monitoring of potassium should be undertaken as appropriate (see section 4.4)."
+            }
+          ]
+        },
+        {
+          "t": "Warfarin and other coumarins: trimethoprim may increase the anticoagulant effect.",
+          "tag": "Warfarin",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim may potentiate the anticoagulant effect of warfarin and other coumarins."
+            }
+          ]
+        },
+        {
+          "t": "Dapsone: plasma levels of both drugs may rise.",
+          "tag": "Dapsone",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Dapsone: Plasma concentrations of trimethoprim and dapsone may increase when taken together."
+            }
+          ]
+        },
+        {
+          "t": "Other folate antagonists: may cause folate deficiency in predisposed patients.",
+          "tag": "Folate antagonists",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim may induce folate deficiency in patients predisposed to folate deficiency such as those receiving concomitant folate antagonists or anticonvulsants."
+            }
+          ]
+        },
+        {
+          "t": "Diuretics (mainly thiazides) in elderly: more thrombocytopenia with purpura.",
+          "tag": "Diuretics",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "In elderly patients concurrently taking diuretics, primarily thiazides, there is an increased incidence of thrombocytopenia with purpura."
+            }
+          ]
+        },
+        {
+          "t": "Digoxin, phenytoin (careful monitoring), procainamide, ciclosporin (nephrotoxicity), repaglinide (hypoglycaemia; monitor glucose), rifampicin, pyrimethamine.",
+          "tag": "Others (not in master list)",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Careful monitoring of patients treated with digoxin or phenytoin is advised"
+            },
+            {
+              "s": "emc-4566",
+              "q": "Monitoring of blood glucose is advised if co-administered with repaglinide (see section 4.5)."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "eGFR over 30: normal dose. eGFR 15 to 30: normal dose for 3 days, then half dose. eGFR under 15: half the normal dose. Measure: both the tablet and suspension SmPCs name the measure eGFR, but print the unit as \"ml/min\" (not ml/min/1.73 m2); the thresholds are kept as eGFR because that is the measure the sources name. If only CrCl is known, treat the bands as approximate.",
+          "tag": "Dose by eGFR",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Dosage advised where there is reduced kidney function: eGFR (ml/min) Dosage advised Over 30 Normal 15- 30 Normal for 3 days then half dose Under 15 Half the normal dose"
+            },
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Dosage advised eGFR (ml/min)"
+            }
+          ]
+        },
+        {
+          "t": "Consider monitoring renal function and electrolytes, especially with longer use. Dialysis: start and use only under close specialist supervision (infection + renal); trimethoprim is removed by dialysis.",
+          "tag": "Monitoring / dialysis",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Monitoring of renal function and serum electrolytes should be considered particularly with longer term use, in patients with impaired renal function."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim is removed by dialysis."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Contraindicated in severe hepatic insufficiency. Fatal haematological effects have been reported especially in elderly or those with renal or hepatic impairment.",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim is contra-indicated in severe hepatic insufficiency."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Fatalities have been reported (especially in the elderly, or those with impairment of renal or hepatic function in whom careful monitoring is advised"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "First trimester: contraindicated (increased risk of miscarriage and malformations, including neural tube defects, oral clefts and heart defects; folate interference).",
+          "tag": "Trimester 1",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim is contraindicated during the first trimester of pregnancy (see section 4.3)."
+            },
+            {
+              "s": "emc-4566",
+              "q": "in particular neural tube defects, oral clefts and cardiovascular defects"
+            }
+          ]
+        },
+        {
+          "t": "Second and third trimesters: avoid unless clinically necessary. Note: both SmPCs also contain a broader line in 4.6 (\"contra-indicated in pregnant women\"), and the tablet SmPC 4.3 says it should not be given to pregnant women without naming a trimester; the trimester-specific advice is shown here.",
+          "tag": "Trimesters 2-3",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "In the second and third trimesters, use should be avoided, unless clinically necessary."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim is contra-indicated in pregnant women, premature infants or infants during the first few weeks of life."
+            },
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim should not be administered to pregnant women, premature infants or children under 4 months of age"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS patient leaflet): usually avoided in early pregnancy because it can lower folate; if needed in early pregnancy it is usually given with high-dose folic acid. Other antibiotics are usually used first for UTI.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-trimethoprim",
+              "q": "Trimethoprim is usually avoided in early pregnancy because it can lower folate levels in your body."
+            },
+            {
+              "s": "bumps-trimethoprim",
+              "q": "If trimethoprim is needed in early pregnancy, it is usually prescribed with a high-dose folic acid supplement to help maintain folate levels."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Tablet SmPC: excreted in breast milk but not contraindicated for short-term use.",
+          "tag": "Tablet SmPC",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Trimethoprim is excreted in breast milk but is not contra-indicated for short term use in lactating mothers."
+            }
+          ]
+        },
+        {
+          "t": "Suspension SmPC: effects on the suckling child are likely; contraindicated if the breastfed infant is under 4 months. (The two SmPCs differ; both statements concern trimethoprim in milk, so both are shown whatever the formulation.)",
+          "tag": "Suspension SmPC",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Effects on the suckling child are likely if therapeutic doses are administered to breast-feeding mothers."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Trimethoprim is contraindicated if the breast fed infant is less than 4 months of age."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Usual caution when prescribing for women of child-bearing age.",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "The usual caution in prescribing any drug for women of child bearing age should be exercised with trimethoprim."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: no evidence that use by the father around conception affects the baby.",
+          "detail": true,
+          "src": [
+            {
+              "s": "bumps-trimethoprim",
+              "q": "There is no evidence that trimethoprim taken by the father before or around the time of conception affects the baby."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common: hyperkalaemia. Common: headache, nausea, diarrhoea, vomiting, rash, urticaria, candida (monilial) overgrowth.",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Very common: Hyperkalaemia"
+            },
+            {
+              "s": "emc-4566",
+              "q": "Common: Nausea, diarrhoea, vomiting."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Common: Skin rashes, urticaria"
+            },
+            {
+              "s": "emc-4566",
+              "q": "Common: Monilial overgrowth"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Blood disorders (very rare: neutropenia, agranulocytosis, aplastic anaemia, pancytopenia; megaloblastic anaemia; methaemoglobinaemia). Tell patients to seek immediate help for fever, sore throat, rash, mouth ulcers, purpura, bruising or bleeding.",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Very rare: Leucopenia, neutropenia, thrombocytopenia, pancytopaenia, bone marrow depression, agranulocytosis, aplastic anaemia"
+            },
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "advised to seek immediate medical attention if symptoms such as fever, sore throat, rash, mouth ulcers, purpura, bruising or bleeding develop."
+            }
+          ]
+        },
+        {
+          "t": "SJS, TEN, DRESS: stop at once; never restart.",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "the treatment must not be restarted in this patient at any time."
+            }
+          ]
+        },
+        {
+          "t": "Cholestatic jaundice and hepatic necrosis (very rare, may be fatal); aseptic meningitis (recurs on re-exposure); anaphylaxis, angioedema.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Cholestatic jaundice and hepatic necrosis may be fatal."
+            },
+            {
+              "s": "emc-4566",
+              "q": "Very rare: Hypersensitivity, anaphylaxis, angioedema"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Long-term treatment or folate-deficiency risk (e.g. elderly): regular blood counts for pancytopenia.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Regular haematological tests should be undertaken in patients receiving long term treatment and those predisposed to folate deficiency, (e.g. the elderly), to check for possible pancytopaenia."
+            }
+          ]
+        },
+        {
+          "t": "Serum potassium if at risk of hyperkalaemia or taking potassium-raising medicines.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "If concomitant use of the above-mentioned agents is deemed appropriate, monitoring of serum potassium is recommended (see section 4.5)."
+            }
+          ]
+        },
+        {
+          "t": "Folic acid deficiency: give calcium folinate, check response; stopping trimethoprim may be needed.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "If there is evidence of folic acid deficiency, calcium folinate should be administered and response checked by haematologic monitoring. It may be necessary to discontinue trimethoprim."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral. Where a single daily dose is used, taking it at bedtime may maximise urinary concentrations.",
+          "formulations": [
+            "trimethoprim-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Where a single dose is required, dosage at bedtime may maximise urinary concentrations."
+            }
+          ]
+        },
+        {
+          "t": "Tablet breakline is for ease of swallowing only, not for dividing into equal doses.",
+          "formulations": [
+            "trimethoprim-tab"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "The breakline is only to facilitate breaking for ease of swallowing and not to divide into equal doses."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Seek immediate medical help for fever, sore throat, rash, mouth ulcers, purpura, bruising or bleeding.",
+          "src": [
+            {
+              "s": "mhra-tmp-tab-teva",
+              "q": "Patients and their carers should be told how to recognise signs of blood disorders"
+            }
+          ]
+        },
+        {
+          "t": "Know the signs of severe skin reactions and report them.",
+          "src": [
+            {
+              "s": "emc-4566",
+              "q": "Patients should be advised of the signs and symptoms and monitored closely for skin reactions."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "trimethoprim:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "trimethoprim",
+      "allergen": [
+        "trimethoprim"
+      ],
+      "concern": "Trimethoprim hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "contra-indicated",
+      "src": [
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "hypersensitivity to trimethoprim or to any of the excipients listed in section 6.1"
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:allergy:co-trimoxazole-severe",
+      "kind": "allergy",
+      "level": "avoid",
+      "med": "trimethoprim",
+      "allergen": [
+        "co-trimoxazole"
+      ],
+      "reactions": [
+        "immediate-severe",
+        "severe-cutaneous"
+      ],
+      "concern": "Severe hypersensitivity to co-trimoxazole",
+      "consequence": "Co-trimoxazole contains trimethoprim; hypersensitivity to trimethoprim is rare but occurs.",
+      "action": "Avoid trimethoprim unless the person is known to tolerate it (SPS).",
+      "sourceWording": "should also avoid trimethoprim unless they are known to be tolerant to it",
+      "src": [
+        {
+          "s": "sps-sulfonamide",
+          "q": "If a person has a severe hypersensitivity reaction to co-trimoxazole, they should also avoid trimethoprim unless they are known to be tolerant to it."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:pregnancy:t1",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "trimethoprim",
+      "trimesters": [
+        1
+      ],
+      "concern": "First trimester of pregnancy",
+      "consequence": "Increased risk of miscarriage and congenital malformations (neural tube defects, oral clefts, cardiovascular defects); folate interference.",
+      "action": "Do not use in the first trimester.",
+      "sourceWording": "contraindicated during the first trimester",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Trimethoprim is contraindicated during the first trimester of pregnancy (see section 4.3)."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:pregnancy:t2-3",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "trimethoprim",
+      "trimesters": [
+        2,
+        3
+      ],
+      "concern": "Second or third trimester",
+      "consequence": "Folate antagonist.",
+      "action": "Avoid unless clinically necessary. (Both SmPCs also carry a broader 4.6 line, 'contra-indicated in pregnant women', and the tablet SmPC 4.3 says 'should not be administered to pregnant women' without a trimester; the trimester-specific wording is used for this rule.)",
+      "sourceWording": "use should be avoided, unless clinically necessary",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "In the second and third trimesters, use should be avoided, unless clinically necessary."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:breastfeeding:susp-infant-under-4m",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "trimethoprim",
+      "concern": "Breastfeeding an infant under 4 months (suspension SmPC)",
+      "consequence": "Effects on the suckling child are likely at therapeutic doses.",
+      "action": "Suspension SmPC: contraindicated if the breastfed infant is under 4 months (applies only to infants under 4 months; the tool cannot check infant age). The tablet SmPC instead says not contraindicated for short-term use.",
+      "sourceWording": "contraindicated if the breast fed infant is less than 4 months of age",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Trimethoprim is contraindicated if the breast fed infant is less than 4 months of age."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:breastfeeding:tab-short-term",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "trimethoprim",
+      "concern": "Breastfeeding (tablet SmPC)",
+      "consequence": "Excreted in breast milk.",
+      "action": "Tablet SmPC: not contraindicated for short-term use; keep in mind when prescribing.",
+      "sourceWording": "is not contra-indicated for short term use",
+      "src": [
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Trimethoprim is excreted in breast milk but is not contra-indicated for short term use in lactating mothers."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:renal:egfr-15-30",
+      "kind": "renal",
+      "level": "dose",
+      "med": "trimethoprim",
+      "renal": {
+        "measure": "eGFR",
+        "min": 15,
+        "max": 30,
+        "maxInclusive": true
+      },
+      "concern": "eGFR 15 to 30",
+      "consequence": "Risk of accumulation and haematological toxicity.",
+      "action": "Normal dose for 3 days, then half dose. Consider monitoring renal function and electrolytes. (The SmPCs name eGFR but print the unit as ml/min.)",
+      "sourceWording": "Normal for 3 days then half dose",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "15- 30 Normal for 3 days then half dose"
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:renal:egfr-under-15",
+      "kind": "renal",
+      "level": "dose",
+      "med": "trimethoprim",
+      "renal": {
+        "measure": "eGFR",
+        "max": 15
+      },
+      "concern": "eGFR under 15",
+      "consequence": "Risk of accumulation and haematological toxicity.",
+      "action": "Half the normal dose. Dialysis: only under close specialist (infection + renal) supervision. (The SmPCs name eGFR but print the unit as ml/min.)",
+      "sourceWording": "Half the normal dose",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Under 15 Half the normal dose"
+        },
+        {
+          "s": "emc-4566",
+          "q": "Trimethoprim should only be initiated and used in dialysis patients under close supervision from specialists in both infectious disease and renal medicine."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "trimethoprim",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe hepatic insufficiency",
+      "consequence": "Contraindicated by the SmPC.",
+      "action": "Do not use.",
+      "sourceWording": "contra-indicated in severe hepatic insufficiency",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Trimethoprim is contra-indicated in severe hepatic insufficiency."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:condition:blood-dyscrasia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "trimethoprim",
+      "condition": "blood-dyscrasia",
+      "concern": "Blood dyscrasia",
+      "consequence": "Trimethoprim may depress haemopoiesis.",
+      "action": "Do not use.",
+      "sourceWording": "contra-indicated in megaloblastic anaemia and other blood dyscrasias",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Trimethoprim is contra-indicated in megaloblastic anaemia and other blood dyscrasias."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:condition:megaloblastic-anaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "trimethoprim",
+      "condition": "megaloblastic-anaemia",
+      "concern": "Megaloblastic anaemia",
+      "consequence": "Antifolate effect.",
+      "action": "Do not use.",
+      "sourceWording": "contra-indicated in megaloblastic anaemia",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Trimethoprim is contra-indicated in megaloblastic anaemia and other blood dyscrasias."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:condition:folate-deficiency",
+      "kind": "condition",
+      "level": "caution",
+      "med": "trimethoprim",
+      "condition": "folate-deficiency",
+      "concern": "Actual or potential folate deficiency (e.g. elderly)",
+      "consequence": "May induce folate deficiency and depress haemopoiesis.",
+      "action": "Use with caution; consider a folate supplement; regular blood counts on long-term use.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Caution should be exercised in the administration of trimethoprim to patients with actual or potential folate deficiency (e.g. the elderly). Administration of a folate supplement should be considered."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:condition:hyperkalaemia",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "trimethoprim",
+      "condition": "hyperkalaemia",
+      "effect": "hyperkalaemia",
+      "concern": "Risk of hyperkalaemia",
+      "consequence": "Trimethoprim can raise serum potassium (very common adverse effect).",
+      "action": "Monitor serum electrolytes closely.",
+      "sourceWording": "Close monitoring of serum electrolytes is advised",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Close monitoring of serum electrolytes is advised in patients at risk for hyperkalaemia (see section 4.8)."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "trimethoprim",
+      "condition": "diabetes",
+      "effect": "hyperkalaemia",
+      "concern": "Poorly controlled diabetes mellitus",
+      "consequence": "Listed risk factor for hyperkalaemia.",
+      "action": "Monitor serum electrolytes closely.",
+      "sourceWording": "Close monitoring of serum electrolytes is advised",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Patients at risk for the development of hyperkalaemia include those with renal insufficiency, poorly controlled diabetes mellitus"
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:condition:porphyria:tab",
+      "kind": "condition",
+      "level": "caution",
+      "med": "trimethoprim",
+      "condition": "porphyria",
+      "concern": "Acute porphyria (tablet SmPC)",
+      "consequence": "Tablet SmPC advises caution.",
+      "action": "Use with caution. Note: the suspension SmPC says avoid.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Caution should be used in patients with acute porphyria."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:condition:porphyria:susp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "trimethoprim",
+      "condition": "porphyria",
+      "concern": "Known or suspected risk of acute porphyria (suspension SmPC)",
+      "consequence": "Suspension SmPC advises avoiding (the tablet SmPC says caution).",
+      "action": "Avoid.",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "If a patient has a known or suspected risk of acute prophyria, treatment with trimethoprim should be avoided."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:age:tab-under-4-months",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "trimethoprim",
+      "formulations": [
+        "trimethoprim-tab"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 0.333
+      },
+      "concern": "Premature infants and children under 4 months (tablet SmPC 4.3)",
+      "consequence": "Listed in SmPC 4.3 (Contra-indications); 4.6 also says contra-indicated in premature infants and infants in the first few weeks of life.",
+      "action": "Do not give.",
+      "sourceWording": "should not be administered (section 4.3 Contra-indications)",
+      "src": [
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Trimethoprim should not be administered to pregnant women, premature infants or children under 4 months of age"
+        },
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Trimethoprim is contra-indicated in pregnant women, premature infants or infants during the first few weeks of life."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:age:tab-under-6",
+      "kind": "age",
+      "level": "avoid",
+      "med": "trimethoprim",
+      "formulations": [
+        "trimethoprim-tab"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 6
+      },
+      "concern": "Child under 6 years given tablets",
+      "consequence": "Tablet form not suitable at this age.",
+      "action": "Use a suspension instead.",
+      "sourceWording": "not suitable for use in children younger than 6 years",
+      "src": [
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "This dosage form is not suitable for use in children younger than 6 years; a more suitable dosage form (such as a suspension) should be used in this age group."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:age:susp-under-6-weeks",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "trimethoprim",
+      "formulations": [
+        "trimethoprim-susp"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 0.115
+      },
+      "concern": "Premature infants and neonates under 6 weeks (suspension SmPC 4.3)",
+      "consequence": "Listed in SmPC 4.3 (Contraindications); 4.6 also says contra-indicated in premature infants and infants in the first few weeks of life.",
+      "action": "Do not give. (The tablet SmPC sets the lower limit at 4 months.)",
+      "sourceWording": "should not be administered (section 4.3 Contraindications)",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Trimethoprim should not be administered to pregnant women (first trimester of pregnancy (see section 4.6)), premature infants and neonates under 6 weeks."
+        },
+        {
+          "s": "emc-4566",
+          "q": "Trimethoprim is contra-indicated in pregnant women, premature infants or infants during the first few weeks of life."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "trimethoprim",
+      "condition": "renal-impairment",
+      "concern": "Impaired renal function",
+      "consequence": "Accumulation and adverse haematological effects; higher hyperkalaemia risk.",
+      "action": "Care needed; avoid accumulation; dose by eGFR (see renal rules); consider monitoring renal function and electrolytes.",
+      "sourceWording": "Care is necessary",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Care is necessary in administration to patients with impaired renal function."
+        },
+        {
+          "s": "emc-4566",
+          "q": "In patients with renal impairment, care should be taken to avoid accumulation."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:condition:fructose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "trimethoprim",
+      "formulations": [
+        "trimethoprim-susp"
+      ],
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance (oral suspension)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take this suspension.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Patients with rare hereditary problems of fructose intolerance should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "trimethoprim",
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Trimethoprim with methotrexate",
+      "consequence": "Increased antifolate effect; risk of severe bone marrow suppression.",
+      "action": "Avoid. If unavoidable (SPS): counsel on signs of myelosuppression and monitor FBC frequently, consider extra FBC monitoring for at least 2 months.",
+      "sourceWording": "use should be avoided",
+      "src": [
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Trimethoprim increases the antifolate effect of methotrexate therefore use should be avoided."
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Avoid prescribing co-trimoxazole or trimethoprim with methotrexate, due to the risk of severe bone marrow suppression."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:interaction:potassium-sparing-diuretic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "trimethoprim",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Trimethoprim with potassium-sparing diuretics",
+      "consequence": "May lead to a significant increase in serum potassium.",
+      "action": "Monitor serum potassium.",
+      "sourceWording": "monitoring of serum potassium is recommended",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Concomitant use of drugs that may increase serum potassium levels may lead to a significant increase in serum potassium. Potassium-sparing diuretics, potassium supplements"
+        },
+        {
+          "s": "emc-4566",
+          "q": "Monitoring of potassium should be undertaken as appropriate (see section 4.4)."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:interaction:potassium-supplement",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "trimethoprim",
+      "other": "group:potassium-supplement",
+      "effect": "hyperkalaemia",
+      "concern": "Trimethoprim with potassium supplements",
+      "consequence": "May lead to a significant increase in serum potassium.",
+      "action": "Monitor serum potassium.",
+      "sourceWording": "monitoring of serum potassium is recommended",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Concomitant use of drugs that may increase serum potassium levels may lead to a significant increase in serum potassium. Potassium-sparing diuretics, potassium supplements"
+        },
+        {
+          "s": "emc-4566",
+          "q": "Monitoring of potassium should be undertaken as appropriate (see section 4.4)."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "trimethoprim",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "Trimethoprim with ACE inhibitors",
+      "consequence": "May lead to a significant increase in serum potassium.",
+      "action": "Monitor serum potassium.",
+      "sourceWording": "monitoring of serum potassium is recommended",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "renin-angiotensin system inhibitors (eg: ACE inhibitors or renin angiotensin receptor blockers) and other potassium increasing substances (eg: heparin)"
+        },
+        {
+          "s": "emc-4566",
+          "q": "Monitoring of potassium should be undertaken as appropriate (see section 4.4)."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:interaction:warfarin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "trimethoprim",
+      "other": "group:vitamin-k-antagonist",
+      "effect": "bleeding",
+      "concern": "Trimethoprim with warfarin or other coumarins",
+      "consequence": "May potentiate the anticoagulant effect.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may potentiate the anticoagulant effect",
+      "src": [
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Trimethoprim may potentiate the anticoagulant effect of warfarin and other coumarins."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:interaction:dapsone",
+      "kind": "interaction",
+      "level": "info",
+      "med": "trimethoprim",
+      "other": "dapsone",
+      "concern": "Trimethoprim with dapsone",
+      "consequence": "Plasma concentrations of both may increase.",
+      "action": "No specific action stated.",
+      "sourceWording": "may increase when taken together",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Dapsone: Plasma concentrations of trimethoprim and dapsone may increase when taken together."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:interaction:folate-antagonist",
+      "kind": "interaction",
+      "level": "info",
+      "med": "trimethoprim",
+      "other": "group:folate-antagonist",
+      "concern": "Trimethoprim with other folate antagonists",
+      "consequence": "May induce folate deficiency in predisposed patients.",
+      "action": "No specific action stated; see folate cautions.",
+      "sourceWording": "may induce folate deficiency",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Trimethoprim may induce folate deficiency in patients predisposed to folate deficiency such as those receiving concomitant folate antagonists or anticonvulsants."
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:interaction:diuretic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "trimethoprim",
+      "other": "group:diuretic",
+      "concern": "Trimethoprim with diuretics (mainly thiazides) in elderly",
+      "consequence": "Increased incidence of thrombocytopenia with purpura.",
+      "action": "No specific action stated.",
+      "sourceWording": "increased incidence of thrombocytopenia with purpura",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "In elderly patients concurrently taking diuretics, primarily thiazides, there is an increased incidence of thrombocytopenia with purpura."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1219 @@
+{
+ "id": "atorvastatin",
+ "name": "Atorvastatin",
+ "ingredients": [
+  "atorvastatin"
+ ],
+ "className": "HMG-CoA reductase inhibitor (statin)",
+ "groups": [
+  "statin"
+ ],
+ "searchTerms": [
+  "atorvastatin calcium",
+  "atorvastatin calcium trihydrate"
+ ],
+ "formulations": [
+  {
+   "id": "atorvastatin-tab",
+   "label": "Film-coated tablets",
+   "route": "oral",
+   "strengths": "10 mg (the strength covered by the 10 mg film-coated tablet SmPC used here)",
+   "release": "immediate",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "Each film-coated tablet contains 10 mg atorvastatin (as atorvastatin calcium trihydrate)."
+    }
+   ],
+   "sourceIds": [
+    "emc-1059"
+   ]
+  },
+  {
+   "id": "atorvastatin-chew",
+   "label": "Chewable tablets",
+   "route": "oral",
+   "strengths": "10 mg (the strength covered by the 10 mg chewable tablet SmPC used here)",
+   "release": "immediate",
+   "note": "Same indications, doses and warnings as the film-coated tablets; can be chewed or swallowed whole. Contains aspartame (phenylalanine).",
+   "src": [
+    {
+     "s": "emc-5240",
+     "q": "Each chewable tablet contains 10 mg atorvastatin (as atorvastatin calcium trihydrate)."
+    },
+    {
+     "s": "emc-5240",
+     "q": "Lipitor chewable tablets can be chewed or swallowed whole with a drink of water"
+    },
+    {
+     "s": "emc-5240",
+     "q": "Lipitor chewable tablet contains aspartame which is a source of phenylalanine. May be harmful for people with phenylketonuria."
+    }
+   ],
+   "sourceIds": [
+    "emc-5240"
+   ]
+  }
+ ],
+ "brandPrescribing": null,
+ "bnf": {
+  "status": "not-accessed",
+  "note": "BNF/BNFC is only available in the UK; not accessed."
+ },
+ "sections": {
+  "indications": {
+   "items": [
+    {
+     "t": "Adjunct to diet to lower total-C, LDL-C, apolipoprotein B and triglycerides in primary hypercholesterolaemia (including heterozygous familial) or mixed hyperlipidaemia, in adults and children aged 10 years or older, when diet and other measures are not enough.",
+     "tag": "Hypercholesterolaemia",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "in adults, adolescents and children aged 10 years or older with primary hypercholesterolaemia including familial hypercholesterolaemia (heterozygous variant) or combined (mixed) hyperlipidaemia"
+      }
+     ]
+    },
+    {
+     "t": "Adults with homozygous familial hypercholesterolaemia, as an adjunct to other lipid-lowering treatment (e.g. LDL apheresis) or if such treatment is unavailable.",
+     "tag": "Homozygous FH",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Lipitor is also indicated to reduce total-C and LDL-C in adults with homozygous familial hypercholesterolaemia"
+      }
+     ]
+    },
+    {
+     "t": "Prevention of cardiovascular events in adults estimated to be at high risk of a first cardiovascular event, alongside correction of other risk factors.",
+     "tag": "CV prevention",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Prevention of cardiovascular events in adult patients estimated to have a high risk for a first cardiovascular event"
+      }
+     ]
+    }
+   ]
+  },
+  "restrictions": {
+   "items": [
+    {
+     "t": "Children: use only by physicians experienced in treating paediatric hyperlipidaemia, with regular re-evaluation.",
+     "tag": "Paediatric",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Paediatric use should only be carried out by physicians experienced in the treatment of paediatric hyperlipidaemia"
+      }
+     ]
+    }
+   ]
+  },
+  "dosing": {
+   "items": [
+    {
+     "t": "General: usual starting dose 10 mg once a day; adjust at intervals of 4 weeks or more; maximum 80 mg once a day. Patient should follow a cholesterol-lowering diet.",
+     "tag": "All adult indications",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "The usual starting dose is 10 mg once a day. Adjustment of dose should be made at intervals of 4 weeks or more. The maximum dose is 80 mg once a day."
+      }
+     ]
+    },
+    {
+     "t": "Primary hypercholesterolaemia and mixed hyperlipidaemia: most patients are controlled on 10 mg once a day; maximum response usually within 4 weeks.",
+     "tag": "Primary / mixed hyperlipidaemia",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "The majority of patients are controlled with Lipitor 10 mg once a day."
+      }
+     ]
+    },
+    {
+     "t": "Heterozygous familial hypercholesterolaemia (adults): start 10 mg daily, adjust every 4 weeks to 40 mg daily; then either increase to a maximum of 80 mg daily or combine 40 mg once daily with a bile acid sequestrant.",
+     "tag": "Heterozygous FH",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Patients should be started with Lipitor 10 mg daily. Doses should be individualised and adjusted every 4 weeks to 40 mg daily."
+      },
+      {
+       "s": "emc-1059",
+       "q": "either the dose may be increased to a maximum of 80 mg daily or a bile acid sequestrant may be combined with 40 mg atorvastatin once daily"
+      }
+     ]
+    },
+    {
+     "t": "Homozygous familial hypercholesterolaemia: 10 to 80 mg daily (limited data), as an adjunct to other lipid-lowering treatment.",
+     "tag": "Homozygous FH",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "The dose of atorvastatin in patients with homozygous familial hypercholesterolemia is 10 to 80 mg daily"
+      }
+     ]
+    },
+    {
+     "t": "Prevention of cardiovascular disease: 10 mg/day was used in primary prevention trials; higher doses may be needed to reach guideline cholesterol levels.",
+     "tag": "CV prevention",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "In the primary prevention trials the dose was 10 mg/day. Higher doses may be necessary in order to attain (LDL-) cholesterol levels according to current guidelines."
+      }
+     ]
+    },
+    {
+     "t": "Maximum 20 mg/day with elbasvir/grazoprevir or letermovir; not recommended with letermovir plus ciclosporin.",
+     "tag": "Dose caps with interacting medicines",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "the dose of atorvastatin should not exceed 20 mg/day"
+      },
+      {
+       "s": "emc-1059",
+       "q": "Use of atorvastatin is not recommended in patients taking letermovir co-administered with ciclosporin"
+      }
+     ]
+    }
+   ]
+  },
+  "paediatric": {
+   "items": [
+    {
+     "t": "Heterozygous familial hypercholesterolaemia, 10 years and above: start 10 mg per day; may increase to 80 mg daily by response and tolerability, adjusting at intervals of 4 weeks or more.",
+     "tag": "10 years and over",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "For patients with Heterozygous Familial Hypercholesterolemia aged 10 years and above, the recommended starting dose of atorvastatin is 10 mg per day"
+      },
+      {
+       "s": "emc-1059",
+       "q": "The dose may be increased to 80 mg daily, according to the response and tolerability."
+      }
+     ]
+    },
+    {
+     "t": "Not indicated below 10 years of age; no dose recommendation can be made (only limited data in ages 6 to 10).",
+     "tag": "Under 10 years",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Atorvastatin is not indicated in the treatment of patients below the age of 10 years."
+      }
+     ]
+    }
+   ]
+  },
+  "contraindications": {
+   "items": [
+    {
+     "t": "Hypersensitivity to atorvastatin or any excipient.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "with hypersensitivity to the active substance or to any of the excipients listed in section 6.1"
+      }
+     ]
+    },
+    {
+     "t": "Active liver disease or unexplained persistent serum transaminases above 3 times the upper limit of normal.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "with active liver disease or unexplained persistent elevations of serum transaminases exceeding 3 times the upper limit of normal"
+      }
+     ]
+    },
+    {
+     "t": "Pregnancy, breastfeeding, and women of child-bearing potential not using appropriate contraception.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "during pregnancy, while breast-feeding and in women of child-bearing potential not using appropriate contraceptive measures"
+      }
+     ]
+    },
+    {
+     "t": "With the hepatitis C antivirals glecaprevir/pibrentasvir.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "treated with the hepatitis C antivirals glecaprevir/pibrentasvir"
+      }
+     ]
+    }
+   ]
+  },
+  "cautions": {
+   "items": [
+    {
+     "t": "Muscle effects: can cause myalgia, myositis and myopathy that may progress to rhabdomyolysis. Prescribe with caution if there are pre-disposing factors for rhabdomyolysis.",
+     "tag": "Myopathy",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "may in rare occasions affect the skeletal muscle and cause myalgia, myositis, and myopathy that may progress to rhabdomyolysis"
+      },
+      {
+       "s": "emc-1059",
+       "q": "Atorvastatin should be prescribed with caution in patients with pre-disposing factors for rhabdomyolysis."
+      }
+     ]
+    },
+    {
+     "t": "Measure CK before starting in: renal impairment, hypothyroidism, personal/family history of hereditary muscle disorders, previous muscle toxicity with a statin or fibrate, previous liver disease and/or substantial alcohol use; consider in people over 70. Do not start if baseline CK is above 5 times ULN.",
+     "tag": "Myopathy risk factors",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "A CK level should be measured before starting statin treatment in the following situations: - Renal impairment - Hypothyroidism"
+      },
+      {
+       "s": "emc-1059",
+       "q": "If CK levels are significantly elevated (> 5 times ULN) at baseline, treatment should not be started."
+      }
+     ]
+    },
+    {
+     "t": "Use with caution in people who drink substantial quantities of alcohol and/or have a history of liver disease.",
+     "tag": "Liver / alcohol",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Lipitor should be used with caution in patients who consume substantial quantities of alcohol and/or have a history of liver disease."
+      }
+     ]
+    },
+    {
+     "t": "After recent stroke or TIA, 80 mg was linked to more haemorrhagic stroke; in people with prior haemorrhagic stroke or lacunar infarct, the benefit-risk of 80 mg is uncertain and haemorrhagic stroke risk should be carefully considered.",
+     "tag": "Haemorrhagic stroke",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "For patients with prior haemorrhagic stroke or lacunar infarct, the balance of risks and benefits of atorvastatin 80 mg is uncertain"
+      }
+     ]
+    },
+    {
+     "t": "Systemic fusidic acid: atorvastatin must not be given with it or within 7 days of stopping it; stop the statin during fusidic acid treatment.",
+     "tag": "Fusidic acid",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Atorvastatin must not be co-administered with systemic formulations of fusidic acid or within 7 days of stopping fusidic acid treatment."
+      }
+     ]
+    },
+    {
+     "t": "Statins can raise blood glucose; people at risk of diabetes (fasting glucose 5.6 to 6.9 mmol/L, BMI>30kg/m2, raised triglycerides, hypertension) should be monitored. This is not a reason to stop the statin.",
+     "tag": "Diabetes risk",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Patients at risk (fasting glucose 5.6 to 6.9 mmol/L, BMI>30kg/m2, raised triglycerides, hypertension) should be monitored both clinically and biochemically according to national guidelines."
+      }
+     ]
+    },
+    {
+     "t": "Myasthenia gravis: statins may cause or worsen myasthenia gravis or ocular myasthenia; stop if symptoms get worse. MHRA: advise patients with myasthenia gravis to watch for worsening symptoms.",
+     "tag": "Myasthenia gravis",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Lipitor should be discontinued in case of aggravation of symptoms."
+      },
+      {
+       "s": "mhra-dsu-statins-myasthenia-2023",
+       "q": "advise patients with pre-existing myasthenia gravis to be alert to aggravation of symptoms while taking a statin"
+      }
+     ]
+    },
+    {
+     "t": "Interstitial lung disease has been reported; stop the statin if it is suspected.",
+     "tag": "Lung",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "If it is suspected a patient has developed interstitial lung disease, statin therapy should be discontinued."
+      }
+     ]
+    },
+    {
+     "t": "Contains lactose: people with rare hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it.",
+     "tag": "Excipient",
+     "formulations": [
+      "atorvastatin-tab"
+     ],
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Lipitor contains lactose."
+      }
+     ]
+    },
+    {
+     "t": "Chewable tablets contain aspartame, a source of phenylalanine: may be harmful for people with phenylketonuria.",
+     "tag": "Excipient",
+     "formulations": [
+      "atorvastatin-chew"
+     ],
+     "src": [
+      {
+       "s": "emc-5240",
+       "q": "Lipitor chewable tablet contains aspartame which is a source of phenylalanine. May be harmful for people with phenylketonuria."
+      }
+     ]
+    }
+   ]
+  },
+  "interactions": {
+   "items": [
+    {
+     "t": "Potent CYP3A4 inhibitors (e.g. clarithromycin): avoid if possible. If unavoidable, consider lower starting and maximum atorvastatin doses with clinical monitoring.",
+     "tag": "Clarithromycin / potent CYP3A4 inhibitors",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "should be avoided if possible. In cases where co-administration of these medicinal products with atorvastatin cannot be avoided lower starting and maximum doses of atorvastatin should be considered"
+      }
+     ]
+    },
+    {
+     "t": "Clarithromycin: SPS advises avoiding it with atorvastatin; consider pausing atorvastatin for the course; if both must be used, maximum atorvastatin 20 mg daily. MHRA (2008 article) also says do not exceed 20 mg atorvastatin daily with clarithromycin.",
+     "tag": "Clarithromycin",
+     "src": [
+      {
+       "s": "sps-macrolides-statins",
+       "q": "Avoid the use of clarithromycin with atorvastatin and use a non-interacting antibiotic if possible."
+      },
+      {
+       "s": "sps-macrolides-statins",
+       "q": "Use a lower dose of atorvastatin (maximum 20mg daily) if concurrent administration is unavoidable."
+      },
+      {
+       "s": "mhra-dsu-statins-interactions-2008",
+       "q": "Clarithromycin: do not exceed 20 mg atorvastatin daily"
+      }
+     ]
+    },
+    {
+     "t": "Warfarin / coumarin anticoagulants: check prothrombin time before starting atorvastatin and often enough early on; repeat if the atorvastatin dose is changed or stopped. MHRA: monitor INR before starting and regularly, especially with dose changes.",
+     "tag": "Warfarin",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "prothrombin time should be determined before starting atorvastatin in patients taking coumarin anticoagulants"
+      },
+      {
+       "s": "mhra-dsu-statins-interactions-2008",
+       "q": "Monitor INR before starting treatment and regularly during treatment, especially with dose changes"
+      }
+     ]
+    },
+    {
+     "t": "CYP3A4 inducers such as St John's Wort can reduce atorvastatin levels.",
+     "tag": "St John's wort",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "inducers of cytochrome P450 3A (e.g. efavirenz, rifampin, St. John's Wort) can lead to variable reductions in plasma concentrations of atorvastatin"
+      }
+     ]
+    },
+    {
+     "t": "Moderate CYP3A4 inhibitors (e.g. erythromycin, diltiazem, verapamil, fluconazole): consider a lower maximum dose and monitor.",
+     "tag": "Moderate CYP3A4 inhibitors",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "a lower maximum dose of atorvastatin should be considered and appropriate clinical monitoring of the patient is recommended when concomitantly used with moderate CYP3A4 inhibitors"
+      }
+     ]
+    },
+    {
+     "t": "Amlodipine and magnesium/aluminium hydroxide antacid: small changes in atorvastatin exposure; no specific recommendation in the SmPC.",
+     "tag": "Amlodipine / antacid",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Amlodipine 10 mg, single dose 80 mg, SD 1.18 No specific recommendation."
+      }
+     ]
+    },
+    {
+     "t": "Avoid large quantities of grapefruit juice.",
+     "tag": "Grapefruit juice",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Concomitant intake of large quantities of grapefruit juice and atorvastatin is not recommended."
+      }
+     ]
+    }
+   ]
+  },
+  "renal": {
+   "items": [
+    {
+     "t": "No dose adjustment needed in renal impairment. Renal impairment is a reason to measure CK before starting.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Renal impairment No adjustment of dose is required"
+      },
+      {
+       "s": "emc-1059",
+       "q": "A CK level should be measured before starting statin treatment in the following situations: - Renal impairment"
+      }
+     ]
+    },
+    {
+     "t": "SPS (all statins): if eGFR is less than 30 mL/min/1.73m2, check the dose with a renal specialist.",
+     "tag": "SPS",
+     "src": [
+      {
+       "s": "sps-statins-monitoring",
+       "q": "If eGFR less than 30mL/min/1.73m2 check dose with renal specialist."
+      }
+     ]
+    }
+   ]
+  },
+  "hepatic": {
+   "items": [
+    {
+     "t": "Use with caution in hepatic impairment; contraindicated in active liver disease.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Lipitor should be used with caution in patients with hepatic impairment"
+      },
+      {
+       "s": "emc-1059",
+       "q": "Lipitor is contraindicated in patients with active liver disease"
+      }
+     ]
+    },
+    {
+     "t": "SPS: statins are not recommended in unexplained active liver disease or unexplained ALT/AST above 3 x ULN. In stable/chronic liver disease they can be used with caution; consider a lower starting dose such as atorvastatin 20 mg daily with gradual increase.",
+     "tag": "SPS",
+     "src": [
+      {
+       "s": "sps-statins-liver",
+       "q": "Statins are not recommended in patients with: unexplained active liver disease or, unexplained elevations of alanine aminotransferase (ALT) or aspartate aminotransferase (AST) that are greater than 3 x the upper limit of normal (ULN)."
+      },
+      {
+       "s": "sps-statins-liver",
+       "q": "consider a lower dose of a high-intensity statin, such as atorvastatin 20 mg daily or rosuvastatin 10 mg daily, with gradual dose escalation"
+      }
+     ]
+    }
+   ]
+  },
+  "pregnancy": {
+   "items": [
+    {
+     "t": "Contraindicated in pregnancy; do not use in women who are pregnant, trying to become pregnant or who suspect pregnancy. Suspend for the duration of pregnancy.",
+     "tag": "SmPC",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Lipitor is contraindicated during pregnancy"
+      },
+      {
+       "s": "emc-1059",
+       "q": "Treatment with Lipitor should be suspended for the duration of pregnancy"
+      }
+     ]
+    },
+    {
+     "t": "BUMPS: statins are usually avoided in pregnancy; as a precaution most women are advised to stop statins three months before trying to conceive and during pregnancy.",
+     "tag": "BUMPS",
+     "src": [
+      {
+       "s": "bumps-statins",
+       "q": "Statins are usually avoided in pregnancy if possible as there is not enough information to say they are safe for the baby."
+      },
+      {
+       "s": "bumps-statins",
+       "q": "As a precaution, most women are advised to stop taking statins for three months before trying to conceive, and during pregnancy."
+      }
+     ]
+    }
+   ]
+  },
+  "breastfeeding": {
+   "items": [
+    {
+     "t": "SmPC: contraindicated during breastfeeding; women taking atorvastatin should not breastfeed.",
+     "tag": "SmPC",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Atorvastatin is contraindicated during breast-feeding"
+      }
+     ]
+    },
+    {
+     "t": "SPS (differs from SmPC): atorvastatin is a preferred statin and can be used with caution while breastfeeding, with infant monitoring (feeding, growth, weight gain; diarrhoea, constipation, irritability). Postponing therapy until after exclusive breastfeeding is preferred if possible.",
+     "tag": "SPS",
+     "src": [
+      {
+       "s": "sps-lipid-breastfeeding",
+       "q": "Atorvastatin can be used with caution while breastfeeding, but infant monitoring is still required."
+      },
+      {
+       "s": "sps-lipid-breastfeeding",
+       "q": "if possible, the preferred option would be to postpone lipid-lowering therapy until after the exclusive breastfeeding period"
+      }
+     ]
+    }
+   ]
+  },
+  "reproductive": {
+   "items": [
+    {
+     "t": "Women of child-bearing potential should use appropriate contraception during treatment.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Women of child-bearing potential should use appropriate contraceptive measures during treatment"
+      }
+     ]
+    },
+    {
+     "t": "No effect on male or female fertility in animal studies.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "In animal studies atorvastatin had no effect on male or female fertility"
+      }
+     ]
+    }
+   ]
+  },
+  "adverseCommon": {
+   "items": [
+    {
+     "t": "Common: nasopharyngitis, allergic reactions, hyperglycaemia, headache, pharyngolaryngeal pain, epistaxis, constipation, flatulence, dyspepsia, nausea, diarrhoea, myalgia, arthralgia, pain in extremity, muscle spasms, joint swelling, back pain, abnormal liver function tests, raised CK.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Common: nasopharyngitis."
+      },
+      {
+       "s": "emc-1059",
+       "q": "Common: constipation, flatulence, dyspepsia, nausea, diarrhoea."
+      },
+      {
+       "s": "emc-1059",
+       "q": "Common: myalgia, arthralgia, pain in extremity, muscle spasms, joint swelling, back pain."
+      },
+      {
+       "s": "emc-1059",
+       "q": "Common: liver function test abnormal, blood creatine kinase increased."
+      }
+     ]
+    }
+   ]
+  },
+  "adverseSerious": {
+   "items": [
+    {
+     "t": "Rhabdomyolysis / myopathy: stop if CK is above 10 x ULN or rhabdomyolysis is diagnosed or suspected; stop if CK above 5 x ULN with muscle symptoms.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Atorvastatin must be discontinued if clinically significant elevation of CK levels (> 10 x ULN) occur, or if rhabdomyolysis is diagnosed or suspected."
+      },
+      {
+       "s": "emc-1059",
+       "q": "If these levels are found to be significantly elevated (> 5 times ULN), treatment should be stopped."
+      }
+     ]
+    },
+    {
+     "t": "Immune-mediated necrotising myopathy (very rare): persistent proximal weakness and raised CK despite stopping the statin.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "There have been very rare reports of an immune mediated necrotizing myopathy (IMNM) during or after treatment with some statins."
+      }
+     ]
+    },
+    {
+     "t": "Liver injury: hepatitis (uncommon), cholestasis (rare), hepatic failure (very rare). If transaminases above 3 x ULN persist, reduce dose or stop.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Uncommon: hepatitis. Rare: cholestasis. Very rare: hepatic failure."
+      },
+      {
+       "s": "emc-1059",
+       "q": "Should an increase in transaminases of greater than 3 times the upper limit of normal (ULN) persist, reduction of dose or withdrawal of Lipitor is recommended"
+      }
+     ]
+    },
+    {
+     "t": "Rare severe skin reactions and angioedema (angioneurotic oedema, bullous dermatitis including erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis); anaphylaxis very rare.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Rare: angioneurotic oedema, dermatitis bullous including erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis"
+      }
+     ]
+    },
+    {
+     "t": "Interstitial lung disease: stop the statin if suspected.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "If it is suspected a patient has developed interstitial lung disease, statin therapy should be discontinued."
+      }
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "items": [
+    {
+     "t": "Liver function tests before starting and periodically thereafter.",
+     "tag": "baseline",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Liver function tests should be performed before the initiation of treatment and periodically thereafter."
+      }
+     ]
+    },
+    {
+     "t": "SPS before starting: ALT or AST, blood pressure, BMI, lipid profile (non-fasting), serum creatinine or eGFR, HbA1c. Consider CK if persistent muscle symptoms and TSH if thyroid symptoms.",
+     "tag": "baseline",
+     "src": [
+      {
+       "s": "sps-statins-monitoring",
+       "q": "Before starting Required Baseline ALT or AST Blood pressure Body mass index"
+      }
+     ]
+    },
+    {
+     "t": "SPS: ALT or AST and lipids between months 2 and 3; then consider annually (ALT/AST after the first year only if indicated).",
+     "tag": "ongoing",
+     "src": [
+      {
+       "s": "sps-statins-monitoring",
+       "q": "Required Between months 2 and 3 ALT or AST"
+      },
+      {
+       "s": "sps-statins-monitoring",
+       "q": "Annually ALT or AST · repeat after first year only if indicated"
+      }
+     ]
+    },
+    {
+     "t": "Measure CK if muscle pain, cramps or weakness occur; do not measure after strenuous exercise.",
+     "tag": "ongoing",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "If such symptoms occur whilst a patient is receiving treatment with atorvastatin, their CK levels should be measured."
+      }
+     ]
+    },
+    {
+     "t": "SPS: stop or do not start a statin if ALT or AST are greater than 3 times ULN, or if CK is greater than 5 times ULN.",
+     "tag": "stop",
+     "src": [
+      {
+       "s": "sps-statins-monitoring",
+       "q": "Stop existing statin or do not initiate new statin if ALT or AST are greater than 3 times upper limit of normal (ULN)."
+      },
+      {
+       "s": "sps-statins-monitoring",
+       "q": "Stop existing statin or do not initiate statin if creatine kinase (CK) greater than 5 times ULN."
+      }
+     ]
+    }
+   ]
+  },
+  "administration": {
+   "items": [
+    {
+     "t": "Oral, once daily at any time of day, with or without food.",
+     "formulations": [
+      "atorvastatin-tab"
+     ],
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Each daily dose of atorvastatin is given all at once and may be given at any time of day with or without food."
+      }
+     ]
+    },
+    {
+     "t": "Chewable tablets can be chewed or swallowed whole with water, at any time of day, with or without food.",
+     "formulations": [
+      "atorvastatin-chew"
+     ],
+     "src": [
+      {
+       "s": "emc-5240",
+       "q": "Lipitor chewable tablets can be chewed or swallowed whole with a drink of water, and can be taken at any time of day, with or without food."
+      }
+     ]
+    }
+   ]
+  },
+  "counselling": {
+   "items": [
+    {
+     "t": "Report muscle pain, cramps or weakness promptly, especially with malaise or fever.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Patients must be asked to promptly report muscle pain, cramps, or weakness especially if accompanied by malaise or fever."
+      }
+     ]
+    },
+    {
+     "t": "Avoid large quantities of grapefruit juice.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Concomitant intake of large quantities of grapefruit juice and atorvastatin is not recommended."
+      }
+     ]
+    },
+    {
+     "t": "Women who could become pregnant should use contraception; stop and seek advice if pregnancy is planned or occurs.",
+     "src": [
+      {
+       "s": "emc-1059",
+       "q": "Women of child-bearing potential should use appropriate contraceptive measures during treatment"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "rules": [
+  {
+   "id": "atorvastatin:allergy:self",
+   "kind": "allergy",
+   "level": "contraindicated",
+   "med": "atorvastatin",
+   "allergen": [
+    "atorvastatin"
+   ],
+   "concern": "Hypersensitivity to atorvastatin",
+   "consequence": "Risk of hypersensitivity reaction.",
+   "action": "Do not use.",
+   "sourceWording": "contraindicated",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "with hypersensitivity to the active substance or to any of the excipients listed in section 6.1"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:condition:active-liver-disease",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "atorvastatin",
+   "condition": "active-liver-disease",
+   "concern": "Active liver disease or unexplained persistent transaminases >3 x ULN",
+   "consequence": "Risk of liver injury.",
+   "action": "Do not use.",
+   "sourceWording": "contraindicated",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "with active liver disease or unexplained persistent elevations of serum transaminases exceeding 3 times the upper limit of normal"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:hepatic:any",
+   "kind": "hepatic",
+   "level": "caution",
+   "med": "atorvastatin",
+   "hepatic": [
+    "any"
+   ],
+   "concern": "Hepatic impairment",
+   "consequence": "Statin exposure and liver risk may increase.",
+   "action": "Use with caution; SPS suggests a lower starting dose (e.g. 20 mg daily) with gradual increase in stable liver disease.",
+   "sourceWording": "should be used with caution",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "Lipitor should be used with caution in patients with hepatic impairment"
+    },
+    {
+     "s": "sps-statins-liver",
+     "q": "consider a lower dose of a high-intensity statin, such as atorvastatin 20 mg daily or rosuvastatin 10 mg daily, with gradual dose escalation"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:pregnancy:smpc",
+   "kind": "pregnancy",
+   "level": "contraindicated",
+   "med": "atorvastatin",
+   "concern": "Pregnancy (SmPC)",
+   "consequence": "Rare reports of congenital anomalies with statins; possible reduction of fetal mevalonate.",
+   "action": "Do not use; suspend for the duration of pregnancy.",
+   "sourceWording": "contraindicated during pregnancy",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "Lipitor is contraindicated during pregnancy"
+    },
+    {
+     "s": "emc-1059",
+     "q": "Rare reports of congenital anomalies following intrauterine exposure to HMG-CoA reductase inhibitors have been received."
+    },
+    {
+     "s": "emc-1059",
+     "q": "Treatment with Lipitor should be suspended for the duration of pregnancy"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:pregnancy:bumps",
+   "kind": "pregnancy",
+   "level": "avoid",
+   "med": "atorvastatin",
+   "concern": "Pregnancy (BUMPS)",
+   "consequence": "Not enough information to say statins are safe for the baby.",
+   "action": "BUMPS: statins are usually avoided in pregnancy; most women are advised to stop three months before trying to conceive and during pregnancy.",
+   "sourceWording": "usually avoided in pregnancy",
+   "src": [
+    {
+     "s": "bumps-statins",
+     "q": "Statins are usually avoided in pregnancy if possible as there is not enough information to say they are safe for the baby."
+    },
+    {
+     "s": "bumps-statins",
+     "q": "As a precaution, most women are advised to stop taking statins for three months before trying to conceive, and during pregnancy."
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:condition:no-contraception",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "atorvastatin",
+   "condition": "childbearing-potential-no-contraception",
+   "concern": "Woman of child-bearing potential not using contraception",
+   "consequence": "Risk of exposure in pregnancy.",
+   "action": "Do not use unless appropriate contraception is used.",
+   "sourceWording": "contraindicated",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "in women of child-bearing potential not using appropriate contraceptive measures"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:breastfeeding:smpc",
+   "kind": "breastfeeding",
+   "level": "contraindicated",
+   "med": "atorvastatin",
+   "concern": "Breastfeeding (SmPC)",
+   "consequence": "Potential for serious adverse reactions in the infant (SmPC).",
+   "action": "SmPC: do not breastfeed while taking atorvastatin.",
+   "sourceWording": "contraindicated during breast-feeding",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "Atorvastatin is contraindicated during breast-feeding"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:breastfeeding:sps",
+   "kind": "breastfeeding",
+   "level": "caution",
+   "med": "atorvastatin",
+   "concern": "Breastfeeding (SPS view, differs from SmPC)",
+   "consequence": "Negligible milk levels reported; infant effects not expected.",
+   "action": "SPS: preferred statin; use with caution and monitor infant feeding, growth and weight gain.",
+   "sourceWording": "can be used with caution",
+   "src": [
+    {
+     "s": "sps-lipid-breastfeeding",
+     "q": "Atorvastatin can be used with caution while breastfeeding, but infant monitoring is still required."
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:age:under-10",
+   "kind": "age",
+   "level": "caution",
+   "med": "atorvastatin",
+   "age": {
+    "minYears": 0,
+    "maxYears": 10
+   },
+   "concern": "Child under 10 years",
+   "consequence": "Not indicated below 10 years; no dose recommendation can be made.",
+   "action": "Not licensed under 10 years; specialist use only.",
+   "sourceWording": "is not indicated",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "Atorvastatin is not indicated in the treatment of patients below the age of 10 years."
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:age:over-70",
+   "kind": "age",
+   "level": "monitor",
+   "med": "atorvastatin",
+   "age": {
+    "minYears": 70
+   },
+   "effect": "myopathy",
+   "concern": "Age over 70 years",
+   "consequence": "Possible pre-disposing factor for rhabdomyolysis.",
+   "action": "Consider measuring CK before starting, depending on other pre-disposing factors for rhabdomyolysis.",
+   "sourceWording": "the necessity of such measurement should be considered",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "In elderly (age > 70 years), the necessity of such measurement should be considered"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:interaction:clarithromycin",
+   "kind": "interaction",
+   "level": "avoid",
+   "med": "atorvastatin",
+   "other": "clarithromycin",
+   "effect": "myopathy",
+   "concern": "Clarithromycin (potent CYP3A4 inhibitor)",
+   "consequence": "Markedly higher atorvastatin levels; increased risk of myopathy/rhabdomyolysis.",
+   "action": "Avoid if possible (use a non-interacting antibiotic or pause atorvastatin). If unavoidable: maximum atorvastatin 20 mg daily (SPS, MHRA) with clinical monitoring.",
+   "sourceWording": "should be avoided if possible",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "Co-administration of potent CYP3A4 inhibitors (e.g. ciclosporin, telithromycin, clarithromycin"
+    },
+    {
+     "s": "emc-1059",
+     "q": "should be avoided if possible."
+    },
+    {
+     "s": "sps-macrolides-statins",
+     "q": "Use a lower dose of atorvastatin (maximum 20mg daily) if concurrent administration is unavoidable."
+    },
+    {
+     "s": "mhra-dsu-statins-interactions-2008",
+     "q": "Clarithromycin: do not exceed 20 mg atorvastatin daily"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:interaction:warfarin",
+   "kind": "interaction",
+   "level": "monitor",
+   "med": "atorvastatin",
+   "other": "warfarin",
+   "effect": "bleeding",
+   "concern": "Warfarin (coumarin anticoagulant)",
+   "consequence": "Prothrombin time can change; very rare clinically significant interactions.",
+   "action": "Check prothrombin time/INR before starting, often during early therapy, and again after any atorvastatin dose change or stop.",
+   "sourceWording": "should be determined before starting",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "prothrombin time should be determined before starting atorvastatin in patients taking coumarin anticoagulants"
+    },
+    {
+     "s": "mhra-dsu-statins-interactions-2008",
+     "q": "Monitor INR before starting treatment and regularly during treatment, especially with dose changes"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:interaction:st-johns-wort",
+   "kind": "interaction",
+   "level": "info",
+   "med": "atorvastatin",
+   "other": "st-johns-wort",
+   "concern": "St John's wort (CYP3A4 inducer)",
+   "consequence": "Variable reductions in atorvastatin levels; may reduce effect.",
+   "action": "Be aware of possible reduced lipid-lowering effect.",
+   "sourceWording": "can lead to variable reductions",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "inducers of cytochrome P450 3A (e.g. efavirenz, rifampin, St. John's Wort) can lead to variable reductions in plasma concentrations of atorvastatin"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:condition:hypothyroidism",
+   "kind": "condition",
+   "level": "monitor",
+   "med": "atorvastatin",
+   "condition": "hypothyroidism",
+   "effect": "myopathy",
+   "concern": "Hypothyroidism",
+   "consequence": "Pre-disposing factor for rhabdomyolysis.",
+   "action": "Measure CK before starting; weigh risk against benefit and monitor clinically. SPS: manage hypothyroidism adequately before starting a statin.",
+   "sourceWording": "A CK level should be measured",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "A CK level should be measured before starting statin treatment in the following situations: - Renal impairment - Hypothyroidism"
+    },
+    {
+     "s": "sps-statins-monitoring",
+     "q": "Manage hypothyroidism adequately before starting a statin."
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:condition:renal-impairment",
+   "kind": "condition",
+   "level": "monitor",
+   "med": "atorvastatin",
+   "condition": "renal-impairment",
+   "effect": "myopathy",
+   "concern": "Renal impairment",
+   "consequence": "Pre-disposing factor for rhabdomyolysis (no dose change needed).",
+   "action": "Measure CK before starting; monitor clinically.",
+   "sourceWording": "A CK level should be measured",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "A CK level should be measured before starting statin treatment in the following situations: - Renal impairment"
+    },
+    {
+     "s": "emc-1059",
+     "q": "Renal impairment No adjustment of dose is required"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:renal:egfr-30",
+   "kind": "renal",
+   "level": "caution",
+   "med": "atorvastatin",
+   "renal": {
+    "measure": "eGFR",
+    "max": 30
+   },
+   "concern": "eGFR less than 30 mL/min/1.73 m2 (SPS)",
+   "consequence": "Severe renal impairment.",
+   "action": "Check the dose with a renal specialist (SPS statins monitoring).",
+   "sourceWording": "check dose with renal specialist",
+   "src": [
+    {
+     "s": "sps-statins-monitoring",
+     "q": "If eGFR less than 30mL/min/1.73m2 check dose with renal specialist."
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:condition:alcohol",
+   "kind": "condition",
+   "level": "caution",
+   "med": "atorvastatin",
+   "condition": "alcohol-dependence",
+   "concern": "Substantial alcohol intake / history of liver disease",
+   "consequence": "Increased risk of liver injury and rhabdomyolysis.",
+   "action": "Use with caution; measure CK before starting.",
+   "sourceWording": "should be used with caution",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "Lipitor should be used with caution in patients who consume substantial quantities of alcohol and/or have a history of liver disease."
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:condition:haemorrhagic-stroke",
+   "kind": "condition",
+   "level": "caution",
+   "med": "atorvastatin",
+   "condition": "haemorrhagic-stroke",
+   "concern": "Prior haemorrhagic stroke or lacunar infarct (80 mg dose)",
+   "consequence": "Higher incidence of haemorrhagic stroke with 80 mg after recent stroke/TIA.",
+   "action": "Carefully consider haemorrhagic stroke risk before starting 80 mg.",
+   "sourceWording": "should be carefully considered",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "For patients with prior haemorrhagic stroke or lacunar infarct, the balance of risks and benefits of atorvastatin 80 mg is uncertain"
+    },
+    {
+     "s": "emc-1059",
+     "q": "the potential risk of haemorrhagic stroke should be carefully considered before initiating treatment"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:condition:myasthenia-gravis",
+   "kind": "condition",
+   "level": "caution",
+   "med": "atorvastatin",
+   "condition": "myasthenia-gravis",
+   "concern": "Myasthenia gravis",
+   "consequence": "Statins may induce or aggravate myasthenia gravis or ocular myasthenia.",
+   "action": "Advise patient to watch for worsening; stop atorvastatin if symptoms get worse.",
+   "sourceWording": "should be discontinued in case of aggravation",
+   "src": [
+    {
+     "s": "emc-1059",
+     "q": "Lipitor should be discontinued in case of aggravation of symptoms."
+    },
+    {
+     "s": "mhra-dsu-statins-myasthenia-2023",
+     "q": "advise patients with pre-existing myasthenia gravis to be alert to aggravation of symptoms while taking a statin"
+    }
+   ]
+  },
+  {
+   "id": "atorvastatin:condition:phenylketonuria",
+   "kind": "condition",
+   "level": "caution",
+   "med": "atorvastatin",
+   "formulations": [
+    "atorvastatin-chew"
+   ],
+   "condition": "phenylketonuria",
+   "concern": "Phenylketonuria (chewable tablets contain aspartame)",
+   "consequence": "Aspartame is a source of phenylalanine.",
+   "action": "May be harmful in phenylketonuria; consider the film-coated tablets.",
+   "sourceWording": "May be harmful for people with phenylketonuria",
+   "src": [
+    {
+     "s": "emc-5240",
+     "q": "Lipitor chewable tablet contains aspartame which is a source of phenylalanine. May be harmful for people with phenylketonuria."
+    }
+   ]
+  }
+ ]
+}

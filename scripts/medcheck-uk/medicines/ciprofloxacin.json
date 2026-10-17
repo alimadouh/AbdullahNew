@@ -1,0 +1,1976 @@
+{
+  "id": "ciprofloxacin",
+  "name": "Ciprofloxacin",
+  "ingredients": [
+    "ciprofloxacin"
+  ],
+  "className": "Fluoroquinolone antibacterial",
+  "groups": [
+    "fluoroquinolone",
+    "antibacterial",
+    "qt-prolonging"
+  ],
+  "searchTerms": [
+    "ciprofloxacin hydrochloride"
+  ],
+  "formulations": [
+    {
+      "id": "ciprofloxacin-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "500 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Each film-coated tablet contains Ciprofloxacin hydrochloride equivalent to Ciprofloxacin 500 mg."
+        }
+      ],
+      "sourceIds": [
+        "emc-4346"
+      ]
+    },
+    {
+      "id": "ciprofloxacin-susp",
+      "label": "Oral suspension (granules and solvent)",
+      "route": "oral",
+      "strengths": "250 mg/5 mL",
+      "release": "n/a",
+      "note": "Contains benzyl alcohol and sucrose (approx. 1.4 g per 5 mL). Use the graduated measuring spoon.",
+      "src": [
+        {
+          "s": "emc-885",
+          "q": "5 mL suspension after reconstitution (1 measuring spoon) contains 250 mg ciprofloxacin."
+        },
+        {
+          "s": "emc-885",
+          "q": "Excipients with known effect: benzyl alcohol, sucrose."
+        },
+        {
+          "s": "emc-885",
+          "q": "Always use the graduated measuring spoon to obtain the dose for administering the suspension."
+        }
+      ],
+      "sourceIds": [
+        "emc-885"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Adults: lower respiratory tract infections due to Gram-negative bacteria (COPD exacerbations, cystic fibrosis/bronchiectasis infections, pneumonia), chronic suppurative otitis media, acute exacerbation of chronic sinusitis, uncomplicated acute cystitis, acute pyelonephritis, complicated UTI, bacterial prostatitis, gonococcal urethritis/cervicitis, epididymo-orchitis, PID, GI infections (e.g. travellers' diarrhoea), intra-abdominal infections, Gram-negative skin and soft tissue infections, malignant external otitis, bone and joint infections, meningococcal prophylaxis, inhalation anthrax; may be used in febrile neutropenia.",
+          "tag": "Adults",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Lower respiratory tract infections due to Gram-negative bacteria o exacerbations of chronic obstructive pulmonary disease."
+            },
+            {
+              "s": "emc-4346",
+              "q": "Acute pyelonephritis Complicated urinary tract infections Bacterial prostatitis Genital tract infections"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Intra-abdominal infections Infections of the skin and soft tissue caused by Gram-negative bacteria Malignant external otitis Infections of the bones and joints Prophylaxis of invasive infections due to Neisseria meningitidis Inhalation anthrax"
+            }
+          ]
+        },
+        {
+          "t": "Children and adolescents: Pseudomonas broncho-pulmonary infection in cystic fibrosis, complicated UTI and acute pyelonephritis, inhalation anthrax; other severe infections when considered necessary.",
+          "tag": "Children and adolescents",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Children and adolescents Broncho-pulmonary infections due to Pseudomonas aeruginosa in patients with cystic fibrosis Complicated urinary tract infections and acute pyelonephritis Inhalation anthrax"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Only prescribe when other antibiotics commonly recommended for the infection are inappropriate (resistance, contraindication, side effects requiring stopping, or treatment failure). This applies to all indications (MHRA, January 2024).",
+          "tag": "MHRA restriction",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "this product must only be prescribed when other antibiotics that are commonly recommended for the infection are inappropriate. This applies to all indications listed below."
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "the UK indications for systemic fluoroquinolones have been updated so they must only be used in situations when other antibiotics, that are commonly recommended for the infection, are inappropriate"
+            }
+          ]
+        },
+        {
+          "t": "Do not prescribe for non-severe or self-limiting infections or non-bacterial conditions (e.g. non-bacterial chronic prostatitis).",
+          "tag": "MHRA restriction",
+          "src": [
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "fluoroquinolones should not be prescribed for non-severe or self-limiting infections, or non-bacterial conditions, for example non-bacterial (chronic) prostatitis"
+            }
+          ]
+        },
+        {
+          "t": "Children and adolescents: treatment should be initiated only by physicians experienced in cystic fibrosis and/or severe infections in children and adolescents.",
+          "tag": "Paediatric specialist initiation",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Treatment should be initiated only by physicians who are experienced in the treatment of cystic fibrosis and/or severe infections in children and adolescents"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Lower respiratory tract infections: 500 mg to 750 mg twice daily for 7 to 14 days.",
+          "tag": "Adults",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Infections of the lower respiratory tract 500 mg twice daily to 750 mg twice daily 7 to 14 days"
+            }
+          ]
+        },
+        {
+          "t": "Acute exacerbation of chronic sinusitis; chronic suppurative otitis media: 500 mg to 750 mg twice daily for 7 to 14 days. Malignant external otitis: 750 mg twice daily for 28 days up to 3 months.",
+          "tag": "Adults",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Chronic suppurative otitis media 500 mg twice daily to 750 mg twice daily 7 to 14 days"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Malignant external otitis 750 mg twice daily 28 days up to 3 months"
+            }
+          ]
+        },
+        {
+          "t": "Uncomplicated cystitis: 250 mg to 500 mg twice daily for 3 days (pre-menopausal women: 500 mg single dose may be used). Complicated cystitis / uncomplicated pyelonephritis: 500 mg twice daily for 7 days. Complicated pyelonephritis: 500 mg to 750 mg twice daily for at least 10 days.",
+          "tag": "Adults - urinary tract",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Uncomplicated cystitis 250 mg twice daily to 500 mg twice daily 3 days In pre-menopausal women, 500 mg single dose may be used"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Complicated cystitis, Uncomplicated pyelonephritis 500 mg twice daily 7 days Complicated pyelonephritis 500 mg twice daily to 750 mg twice daily at least 10 days"
+            }
+          ]
+        },
+        {
+          "t": "Prostatitis: 500 mg to 750 mg twice daily for 2 to 4 weeks (acute) or 4 to 6 weeks (chronic).",
+          "tag": "Adults",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Prostatitis 500 mg twice daily to 750 mg twice daily 2 to 4 weeks (acute) to 4 to 6 weeks (chronic)"
+            }
+          ]
+        },
+        {
+          "t": "Gonococcal urethritis/cervicitis: 500 mg single dose. Epididymo-orchitis and PID: 500 mg to 750 mg twice daily for at least 14 days.",
+          "tag": "Adults - genital tract",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Gonococcal uretritis and cervicitis 500 mg as a single dose 1 day (single dose)"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Epididymo-orchitis and pelvic inflammatory diseases 500 mg twice daily to 750 mg twice daily at least 14 days"
+            }
+          ]
+        },
+        {
+          "t": "Bacterial diarrhoea (Shigella other than S. dysenteriae type 1, severe travellers' diarrhoea): 500 mg twice daily for 1 day; S. dysenteriae type 1: 5 days; Vibrio cholerae: 3 days; typhoid fever: 500 mg twice daily for 7 days. Intra-abdominal (Gram-negative): 500-750 mg twice daily for 5 to 14 days.",
+          "tag": "Adults - GI / intra-abdominal",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "empirical treatment of severe travellers' diarrhoea 500 mg twice daily 1 day"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Diarrhoea caused by Shigella dysenteriae type 1 500 mg twice daily 5 days Diarrhoea caused by Vibrio cholerae 500 mg twice daily 3 days Typhoid fever 500 mg twice daily 7 days"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Intra-abdominal infections due to Gram-negative bacteria 500 mg twice daily to 750 mg twice daily 5 to 14 days"
+            }
+          ]
+        },
+        {
+          "t": "Skin and soft tissue infections: 500-750 mg twice daily for 7 to 14 days. Bone and joint infections: 500-750 mg twice daily, maximum 3 months.",
+          "tag": "Adults",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Infections of the skin and soft tissue 500 mg twice daily to 750 mg twice daily 7 to 14 days Bone and joint infections 500 mg twice daily to 750 mg twice daily max. of 3 months"
+            }
+          ]
+        },
+        {
+          "t": "Meningococcal prophylaxis: 500 mg single dose. Inhalation anthrax (post-exposure prophylaxis and treatment, oral): 500 mg twice daily for 60 days from confirmed exposure. Febrile neutropenia: 500-750 mg twice daily with other antibacterials for the whole period of neutropenia.",
+          "tag": "Adults - other",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "meningitidis 500 mg as a single dose 1 day (single dose)"
+            },
+            {
+              "s": "emc-4346",
+              "q": "500 mg twice daily 60 days from the confirmation of Bacillus anthracis exposure"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Therapy should be continued over the entire period of neutropenia"
+            }
+          ]
+        },
+        {
+          "t": "Elderly: dose according to infection severity and creatinine clearance.",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Elderly patients should receive a dose selected according to the severity of the infection and the patient's creatinine clearance."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Cystic fibrosis: 20 mg/kg twice daily (maximum 750 mg per dose) for 10 to 14 days. Other severe infections: 20 mg/kg twice daily (maximum 750 mg per dose).",
+          "tag": "Children and adolescents",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Cystic fibrosis 20 mg/kg body weight twice daily with a maximum of 750 mg per dose. 10 to 14 days"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Other severe infections 20 mg/kg body weight twice daily with a maximum of 750 mg per dose."
+            }
+          ],
+          "calc": {
+            "mgPerKg": 20,
+            "per": "dose",
+            "maxMg": 750,
+            "maxPer": "dose",
+            "of": "ciprofloxacin"
+          }
+        },
+        {
+          "t": "Complicated UTI and pyelonephritis: 10 mg/kg to 20 mg/kg twice daily (maximum 750 mg per dose) for 10 to 21 days; consider only when other treatments cannot be used.",
+          "tag": "Children and adolescents",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Complicated urinary tract infections and pyelonephritis 10 mg/kg body weight twice daily to 20 mg/kg body weight twice daily with a maximum of 750 mg per dose. 10 to 21 days"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Ciprofloxacin treatment of urinary tract infections should be considered when other treatments cannot be used"
+            }
+          ]
+        },
+        {
+          "t": "Inhalation anthrax: 10 mg/kg to 15 mg/kg twice daily (maximum 500 mg per dose) for 60 days from confirmed exposure.",
+          "tag": "Children and adolescents",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "10 mg/kg body weight twice daily to 15 mg/kg body weight twice daily with a maximum of 500 mg per dose. 60 days from the confirmation of Bacillus anthracis exposure"
+            }
+          ]
+        },
+        {
+          "t": "Arthropathy risk: start only after careful benefit/risk evaluation; arthropathy occurs commonly in children. CF trials included ages 5-17 (limited data 1-5 years). Dosing with renal/hepatic impairment not studied in children.",
+          "tag": "Safety",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Treatment should be initiated only after a careful benefit/risk evaluation, due to possible adverse events related to joints and/or surrounding tissue"
+            },
+            {
+              "s": "emc-4346",
+              "q": "In children, arthropathy is reported to occur commonly"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Dosing in children with impaired renal and/or hepatic function has not been studied."
+            }
+          ]
+        },
+        {
+          "t": "Suspension contains benzyl alcohol: in children under 3 years do not use for longer than one week (gasping syndrome risk in young children and neonates).",
+          "tag": "Under 3 years",
+          "formulations": [
+            "ciprofloxacin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-885",
+              "q": "In young children (less than 3 years old), Ciproxin oral suspension should therefore not be used for longer than one week."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to ciprofloxacin, other quinolones or any excipient.",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Hypersensitivity to the active substance, to other quinolones or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Concomitant tizanidine.",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Concomitant administration of ciprofloxacin and tizanidine"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Prolonged, disabling and potentially irreversible serious reactions (musculoskeletal, nervous, psychiatric, senses) can occur regardless of age or risk factors. Stop at the first sign of any serious adverse reaction; patient should contact the prescriber.",
+          "tag": "Disabling long-lasting reactions",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Ciprofloxacin should be discontinued immediately at the first signs or symptoms of any serious adverse reaction and patients should be advised to contact their prescriber for advice"
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "fluoroquinolones can cause long-lasting (up to months or years), disabling and potentially irreversible side effects, sometimes affecting multiple body systems and senses"
+            }
+          ]
+        },
+        {
+          "t": "Avoid in patients who had serious adverse reactions to a quinolone or fluoroquinolone before; only start if no alternative and after careful benefit/risk assessment.",
+          "tag": "Previous quinolone reaction",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "The use of ciprofloxacin should be avoided in patients who have experienced serious adverse reactions in the past when using quinolone or fluoroquinolone containing products"
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "avoid fluoroquinolone use in patients who have previously had serious adverse reactions with a quinolone antibiotic"
+            }
+          ]
+        },
+        {
+          "t": "Tendinitis/tendon rupture (often Achilles, can be bilateral) from 48 hours up to months after stopping. Higher risk: older patients (MHRA: over 60), renal impairment, solid organ transplant, corticosteroid use. Generally do not use with a history of quinolone-related tendon disease. Stop at first sign of tendinitis.",
+          "tag": "Tendons",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Ciprofloxacin should generally not be used in patients with a history of tendon disease/disorder related to quinolone treatment."
+            },
+            {
+              "s": "emc-4346",
+              "q": "The risk of tendinitis and tendon rupture is increased in older patients, patients with renal impairment, patients with solid organ transplants, and those treated concurrently with corticosteroids."
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "prescribe fluoroquinolones with special caution for people older than 60 years and for those with renal impairment or solid-organ transplants, because they are at a higher risk of tendon injury"
+            }
+          ]
+        },
+        {
+          "t": "Aortic aneurysm/dissection and heart valve regurgitation: use only after careful benefit-risk assessment and considering alternatives if family history of aneurysm, congenital or existing valve disease, existing aneurysm/dissection, or predisposing conditions (Marfan, Ehlers-Danlos, Turner, Behcet's, hypertension, rheumatoid arthritis, Takayasu/giant cell arteritis, known atherosclerosis, Sjögren's, infective endocarditis). Seek emergency care for sudden abdominal, chest or back pain.",
+          "tag": "Aorta / heart valves",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in patients with positive family history of aneurysm disease or congenital heart valve disease"
+            },
+            {
+              "s": "emc-4346",
+              "q": "connective tissue disorders such as Marfan syndrome or Ehlers-Danlos syndrome, Turner syndrome, Behcet's disease, hypertension, rheumatoid arthritis"
+            },
+            {
+              "s": "mhra-dsu-2018-11-fq-aortic",
+              "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in patients at risk for aortic aneurysm and dissection"
+            },
+            {
+              "s": "mhra-dsu-2020-12-fq-valve",
+              "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in the following patients at risk"
+            }
+          ]
+        },
+        {
+          "t": "QT prolongation: caution with congenital long QT, other QT-prolonging drugs, uncorrected hypokalaemia/hypomagnesaemia, cardiac disease (heart failure, MI, bradycardia); elderly and women may be more sensitive.",
+          "tag": "QT",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Caution should be taken when using fluoroquinolones, including ciprofloxacin, in patients with known risk factors for prolongation of the QT interval"
+            },
+            {
+              "s": "emc-4346",
+              "q": "uncorrected electrolyte imbalance (e.g. hypokalaemia, hypomagnesaemia) - cardiac disease (e.g. heart failure, myocardial infarction, bradycardia)"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Elderly patients and women may be more sensitive to QTc-prolonging medications."
+            }
+          ]
+        },
+        {
+          "t": "Seizures: can trigger seizures or lower seizure threshold; caution in CNS disorders predisposing to seizures; stop if seizures occur.",
+          "tag": "Seizures",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Ciprofloxacin should be used with caution in patients with CNS disorders which may be predisposed to seizure."
+            },
+            {
+              "s": "emc-4346",
+              "q": "If seizures occur ciprofloxacin should be discontinued"
+            }
+          ]
+        },
+        {
+          "t": "Psychiatric reactions (including depression/psychosis progressing to suicidal thoughts) can occur after the first dose; stop if they occur. MHRA: can exacerbate existing psychiatric symptoms.",
+          "tag": "Psychiatric",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "In rare cases, depression or psychosis can progress to suicidal ideations/thoughts culminating in attempted suicide or completed suicide."
+            },
+            {
+              "s": "mhra-dsu-2023-09-fq-suicidal",
+              "q": "note that fluoroquinolones can exacerbate existing psychiatric symptoms"
+            }
+          ]
+        },
+        {
+          "t": "Dysglycaemia (hypo- and hyperglycaemia, hypoglycaemic coma), usually in diabetics on oral hypoglycaemics or insulin: monitor blood glucose carefully.",
+          "tag": "Diabetes",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Cases of hypoglycaemic coma have been reported. In diabetic patients, careful monitoring of blood glucose is recommended."
+            }
+          ]
+        },
+        {
+          "t": "Myasthenia gravis: use with caution (symptoms can worsen).",
+          "tag": "Myasthenia gravis",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Ciprofloxacin should be used with caution in patients with myasthenia gravis, because symptoms can be exacerbated"
+            }
+          ]
+        },
+        {
+          "t": "G6PD deficiency: haemolysis reported; avoid unless benefit outweighs risk, then monitor for haemolysis.",
+          "tag": "G6PD deficiency",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Ciprofloxacin should be avoided in these patients unless the potential benefit is considered to outweigh the possible risk."
+            }
+          ]
+        },
+        {
+          "t": "Peripheral neuropathy: patients should report pain, burning, tingling, numbness or weakness before continuing.",
+          "tag": "Neuropathy",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Patients under treatment with ciprofloxacin should be advised to inform their doctor prior to continuing treatment if symptoms of neuropathy such as pain, burning, tingling, numbness, or weakness develop"
+            }
+          ]
+        },
+        {
+          "t": "Hepatic necrosis and life-threatening hepatic failure reported; stop if signs of liver disease.",
+          "tag": "Liver",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Cases of hepatic necrosis and life-threatening hepatic failure have been reported with ciprofloxacin"
+            }
+          ]
+        },
+        {
+          "t": "Photosensitivity: avoid extensive sunlight/UV. Crystalluria: keep well hydrated, avoid excessive urine alkalinity. Vision problems: see an eye specialist immediately.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Patients taking ciprofloxacin should be advised to avoid direct exposure to either extensive sunlight or UV irradiation during treatment"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Patients receiving ciprofloxacin should be well hydrated and excessive alkalinity of the urine should be avoided."
+            }
+          ]
+        },
+        {
+          "t": "Not recommended for streptococcal infections (inadequate efficacy); not suitable as monotherapy for severe or Gram-positive/anaerobic infections.",
+          "tag": "Spectrum",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Ciprofloxacin is not recommended for the treatment of streptococcal infections due to inadequate efficacy"
+            }
+          ]
+        },
+        {
+          "t": "Suspension: contains sucrose - hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase deficiency should not take it. Benzyl alcohol: large amounts only with caution, especially in liver or kidney impairment.",
+          "tag": "Excipients",
+          "formulations": [
+            "ciprofloxacin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-885",
+              "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or saccharose-isomaltase deficiency, should not take Ciproxin 250 mg/5 mL."
+            },
+            {
+              "s": "emc-885",
+              "q": "large amounts of benzyl alcohol should only be administered with caution and if absolutely necessary, especially in subjects with liver or kidney impairment"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Iron, calcium, magnesium, aluminium (including mineral supplements), antacids, sucralfate, polymeric phosphate binders: reduced ciprofloxacin absorption. Give ciprofloxacin 1-2 hours before or at least 4 hours after them (does not apply to H2-blockers).",
+          "tag": "Polyvalent cations / antacids",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "multivalent cation-containing drugs and mineral supplements (e.g. calcium, magnesium, aluminium, iron), polymeric phosphate binders (e.g. sevelamer or lanthanum carbonate), sucralfate or antacids"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Consequently, ciprofloxacin should be administered either 1-2 hours before or at least 4 hours after these preparations."
+            }
+          ]
+        },
+        {
+          "t": "Corticosteroids: avoid concomitant use (increased tendinitis/tendon rupture risk); also may increase aortic aneurysm risk.",
+          "tag": "Corticosteroids",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Therefore, concomitant use of corticosteroids should be avoided."
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "avoid coadministration of a corticosteroid with a fluoroquinolone since this could exacerbate fluoroquinolone-induced tendinitis and tendon rupture"
+            }
+          ]
+        },
+        {
+          "t": "Methotrexate: increased methotrexate levels and toxicity; concomitant use not recommended.",
+          "tag": "Methotrexate",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "The concomitant use of ciprofloxacin with methotrexate is not recommended"
+            }
+          ]
+        },
+        {
+          "t": "Warfarin and other vitamin K antagonists: anticoagulant effect may increase; monitor INR frequently during and shortly after co-administration.",
+          "tag": "Warfarin",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "It is recommended that the INR should be monitored frequently during and shortly after co-administration of ciprofloxacin with a vitamin K antagonist"
+            }
+          ]
+        },
+        {
+          "t": "QT-prolonging drugs (class IA/III antiarrhythmics, tricyclics, macrolides, antipsychotics): use with caution.",
+          "tag": "QT-prolonging drugs",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Ciprofloxacin, like other fluoroquinolones, should be used with caution in patients receiving drugs known to prolong the QT interval (e.g. Class IA and III anti-arrhythmics, tricyclic antidepressants, macrolides, antipsychotics)"
+            }
+          ]
+        },
+        {
+          "t": "Oral hypoglycaemic agents (e.g. glibenclamide) or insulin: dysglycaemia; monitor blood glucose.",
+          "tag": "Antidiabetic medicines",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "usually in diabetic patients receiving concomitant treatment with an oral hypoglycaemic agent (e.g., glibenclamide) or with insulin"
+            }
+          ]
+        },
+        {
+          "t": "Sildenafil: exposure roughly doubles; use with caution weighing risks and benefits.",
+          "tag": "Sildenafil",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "caution should be used prescribing ciprofloxacin concomitantly with sildenafil taking into consideration the risks and the benefits"
+            }
+          ]
+        },
+        {
+          "t": "Tizanidine: must not be given together (contraindicated). Theophylline: check levels and reduce dose. Clozapine, ropinirole, duloxetine, agomelatine, phenytoin, ciclosporin, zolpidem: monitor/adjust (CYP1A2 inhibition and others).",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Tizanidine must not be administered together with ciprofloxacin"
+            },
+            {
+              "s": "emc-4346",
+              "q": "During the combination, serum theophylline concentrations should be checked and the theophylline dose reduced as necessary"
+            }
+          ]
+        },
+        {
+          "t": "Omeprazole: slight reduction in ciprofloxacin Cmax and AUC (no action stated).",
+          "tag": "Omeprazole",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Concomitant administration of ciprofloxacin and omeprazole containing medicinal products results in a slight reduction of Cmax and AUC of ciprofloxacin."
+            }
+          ]
+        },
+        {
+          "t": "Dairy products or mineral-fortified drinks taken alone (e.g. milk, yoghurt, calcium-fortified juice) reduce absorption; avoid taking at the same time. Dietary calcium as part of a meal does not significantly affect absorption.",
+          "tag": "Food",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Dietary calcium as part of a meal does not significantly affect absorption."
+            },
+            {
+              "s": "emc-4346",
+              "q": "with ciprofloxacin should be avoided because absorption of ciprofloxacin may be reduced"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Creatinine clearance (ml/min/1.73 m2) > 60: usual dose.",
+          "tag": "CrCl > 60",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "> 60 < 124 See Usual Dosage."
+            }
+          ]
+        },
+        {
+          "t": "Creatinine clearance 30-60 ml/min/1.73 m2 (serum creatinine 124-168 µmol/L): 250-500 mg every 12 h.",
+          "tag": "CrCl 30-60",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "60 124 - 168 250-500 mg every 12 h"
+            },
+            {
+              "s": "emc-885",
+              "q": "30-60 124 to 168 250-500 mg every 12 h"
+            }
+          ]
+        },
+        {
+          "t": "Tablet SmPC: creatinine clearance ≤ 30 ml/min/1.73 m2 (serum creatinine ≥ 169 µmol/L): 250-500 mg every 24 h. Suspension SmPC: < 30 ml/min/1.73 m2: 250-500 mg every 24 h (so in the suspension SmPC a value of exactly 30 falls in the 30-60 band). Haemodialysis: 250-500 mg every 24 h after dialysis. Peritoneal dialysis: 250-500 mg every 24 h.",
+          "tag": "CrCl ≤ 30 (tablets) / < 30 (suspension) / dialysis",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "≤30 ≥169 250-500 mg every 24 h Patients on haemodialysis > 169 250-500 mg every 24 h (after dialysis) Patients on peritoneal dialysis > 169 250-500 mg every 24 h"
+            },
+            {
+              "s": "emc-885",
+              "q": "< 30 > 169 250-500 mg every 24 h"
+            }
+          ]
+        },
+        {
+          "t": "Renal impairment also raises tendon-injury risk (MHRA: prescribe with special caution).",
+          "tag": "Tendon risk",
+          "src": [
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "prescribe fluoroquinolones with special caution for people older than 60 years and for those with renal impairment or solid-organ transplants"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No dose adjustment required in impaired liver function. Hepatic necrosis/failure has been reported: stop if signs of liver disease (anorexia, jaundice, dark urine, pruritus, tender abdomen).",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "In patients with impaired liver function no dose adjustment is required."
+            },
+            {
+              "s": "emc-4346",
+              "q": "In the event of any signs and symptoms of hepatic disease (such as anorexia, jaundice, dark urine, pruritus, or tender abdomen), treatment should be discontinued."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Tablet SmPC: data show no malformative or fetal/neonatal toxicity, but cartilage damage cannot be excluded (animal data); as a precaution it is preferable to avoid use in pregnancy.",
+          "tag": "SmPC (tablets)",
+          "formulations": [
+            "ciprofloxacin-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "The data that are available on administration of ciprofloxacin to pregnant women indicates no malformative or foeto/neonatal toxicity of ciprofloxacin."
+            },
+            {
+              "s": "emc-4346",
+              "q": "As a precautionary measure, it is preferable to avoid the use of ciprofloxacin during pregnancy."
+            }
+          ]
+        },
+        {
+          "t": "Suspension SmPC: not recommended in pregnancy (cartilage concern plus benzyl alcohol, which may accumulate and cause fetal toxicity).",
+          "tag": "SmPC (suspension)",
+          "formulations": [
+            "ciprofloxacin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-885",
+              "q": "Therefore, it is not recommended to use Ciproxin oral suspension during pregnancy."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS): quinolones can be used in pregnancy if recommended by a doctor; no good evidence of harm to the baby; a different antibiotic will usually be tried first. (Differs in emphasis from the SmPCs.)",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-ciprofloxacin",
+              "q": "Quinolone antibiotics can be used in pregnancy if recommended by your doctor."
+            },
+            {
+              "s": "bumps-ciprofloxacin",
+              "q": "There is no good evidence that use of a quinolone antibiotic in pregnancy will harm your baby."
+            },
+            {
+              "s": "bumps-ciprofloxacin",
+              "q": "Yes, a different antibiotic will usually be tried first."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Tablet SmPC: excreted in breast milk; should not be used during breastfeeding (risk of articular damage).",
+          "tag": "SmPC (tablets)",
+          "formulations": [
+            "ciprofloxacin-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Due to the potential risk of articular damage, ciprofloxacin should not be used during breast-feeding."
+            }
+          ]
+        },
+        {
+          "t": "Suspension SmPC: not recommended during breastfeeding (articular damage risk and benzyl alcohol).",
+          "tag": "SmPC (suspension)",
+          "formulations": [
+            "ciprofloxacin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-885",
+              "q": "Ciproxin oral suspension is not recommended for use during breast-feeding."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "No human fertility, contraception or reproductive-potential statements found in section 4.6 of the ciprofloxacin SmPCs accessed. BUMPS states no evidence that quinolones used by the father harm the baby via sperm."
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Most commonly reported: nausea and diarrhoea. In children, arthropathy is common.",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "The most commonly reported adverse drug reactions (ADRs) are nausea and diarrhoea."
+            },
+            {
+              "s": "emc-4346",
+              "q": "In children, arthropathy is reported to occur commonly"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Tendinitis/tendon rupture, muscle or joint pain/swelling, peripheral neuropathy, CNS or psychiatric effects (including suicidal thoughts): stop immediately and contact the doctor.",
+          "src": [
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "patients should be advised to stop fluoroquinolone treatment at the first signs of a serious adverse reaction, such as tendinitis or tendon rupture, muscle pain, muscle weakness, joint pain, joint swelling, peripheral neuropathy and central nervous system effects"
+            }
+          ]
+        },
+        {
+          "t": "Aortic aneurysm/dissection: sudden severe abdominal, chest or back pain needs emergency assessment. Valve regurgitation: acute breathlessness, new palpitations, abdominal or leg oedema need immediate medical attention.",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "In case of sudden abdominal, chest or back pain, patients should be advised to immediately consult a physician in an emergency department."
+            },
+            {
+              "s": "emc-4346",
+              "q": "Patients should be advised to seek immediate medical attention in case of acute dyspnoea, new onset of heart palpitations, or development of oedema of the abdomen or lower extremities."
+            }
+          ]
+        },
+        {
+          "t": "Anaphylaxis (can follow a single dose): stop and treat. Severe/persistent diarrhoea (possible C. difficile colitis): stop immediately.",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Hypersensitivity and allergic reactions, including anaphylaxis and anaphylactoid reactions, may occur following a single dose"
+            },
+            {
+              "s": "emc-4346",
+              "q": "In such cases, ciprofloxacin should immediately be discontinued, and an appropriate therapy initiated."
+            }
+          ]
+        },
+        {
+          "t": "Seizures (including status epilepticus), QT prolongation/torsades de pointes, hepatic necrosis/failure, SJS/TEN, hypoglycaemic coma, bone marrow depression, renal failure.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Seizures (including status epilepticus)"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Ventricular arrhythmia and torsades de pointes (reported predominantly in patients with risk factors for QT prolongation)"
+            },
+            {
+              "s": "emc-4346",
+              "q": "Liver necrosis (very rarely progressing to life-threatening hepatic failure)"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before prescribing: confirm other commonly recommended antibiotics are inappropriate; check for previous serious quinolone reactions, tendon history, aneurysm/valve risk factors, QT risk factors, age > 60, renal impairment, transplant, corticosteroid use.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "the UK indications for systemic fluoroquinolones have been updated so they must only be used in situations when other antibiotics, that are commonly recommended for the infection, are inappropriate"
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "avoid fluoroquinolone use in patients who have previously had serious adverse reactions with a quinolone antibiotic"
+            }
+          ]
+        },
+        {
+          "t": "SPS: no ECG monitoring needed if used alone without risk factors; monitor ECG, magnesium and potassium before and during treatment if non-modifiable patient/medicine risk factors.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "sps-qt-commonly-used",
+              "q": "Monitor ECG, magnesium and potassium before and during treatment in people with non modifiable patient and medicine risk factors."
+            }
+          ]
+        },
+        {
+          "t": "Diabetes: careful blood glucose monitoring. Warfarin: frequent INR monitoring during and shortly after the course.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "In diabetic patients, careful monitoring of blood glucose is recommended."
+            },
+            {
+              "s": "emc-4346",
+              "q": "It is recommended that the INR should be monitored frequently during and shortly after co-administration of ciprofloxacin with a vitamin K antagonist"
+            }
+          ]
+        },
+        {
+          "t": "Stop at the first signs of a serious adverse reaction (tendon, muscle, joint, nerve, psychiatric), seizures, liver disease signs or severe diarrhoea.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Ciprofloxacin should be discontinued immediately at the first signs or symptoms of any serious adverse reaction"
+            },
+            {
+              "s": "emc-4346",
+              "q": "At the first sign of tendinitis (e.g. painful swelling, inflammation) the treatment with ciprofloxacin should be discontinued"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Tablets: swallow unchewed with fluid, with or without food. Do not take with dairy products (milk, yoghurt) or mineral-fortified juice.",
+          "formulations": [
+            "ciprofloxacin-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Tablets are to be swallowed unchewed with fluid. They can be taken independent of mealtimes."
+            },
+            {
+              "s": "emc-4346",
+              "q": "Ciprofloxacin tablets should not be taken with dairy products (e.g. milk, yoghurt) or mineral-fortified fruit-juice (e.g. calcium-fortified orange juice)"
+            }
+          ]
+        },
+        {
+          "t": "Suspension: can be taken with meals (including dairy as part of a meal) but not with dairy or mineral-fortified drinks taken alone; otherwise give 1-2 hours before or at least 4 hours after them. Use the measuring spoon; no additions to the mixed suspension. Missed dose: take unless less than 6 hours to the next dose; do not double. Reconstituted suspension lasts 14 days.",
+          "formulations": [
+            "ciprofloxacin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-885",
+              "q": "Ciprofloxacin oral suspension can be taken during meals containing dairy products or mineral-fortified drinks."
+            },
+            {
+              "s": "emc-885",
+              "q": "If less than 6 hours remain before the next dose, the missed dose should not be taken and treatment should be continued as prescribed with the next scheduled dose."
+            },
+            {
+              "s": "emc-885",
+              "q": "Shelf life of the reconstituted oral suspension 14 days"
+            }
+          ]
+        },
+        {
+          "t": "Separate from iron, calcium, magnesium, aluminium products and antacids: ciprofloxacin 1-2 hours before or at least 4 hours after.",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Consequently, ciprofloxacin should be administered either 1-2 hours before or at least 4 hours after these preparations."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Stop and contact your doctor immediately if tendon pain/swelling, joint pain or swelling, abnormal sensations (pins and needles, numbness, burning), weakness, severe tiredness, low mood, anxiety, memory or sleep problems, or changes in vision, taste, smell or hearing occur. Rest a painful tendon.",
+          "src": [
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "tendon pain or swelling - if this happens, rest the painful area until you can see your doctor"
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "severe tiredness, depressed mood, anxiety, problems with your memory or severe problems sleeping changes in your vision, taste, smell or hearing"
+            }
+          ]
+        },
+        {
+          "t": "Tell friends/family you are taking it; if thoughts of suicide or self-harm occur, take no more doses and get help immediately.",
+          "src": [
+            {
+              "s": "mhra-dsu-2023-09-fq-suicidal",
+              "q": "if you develop thoughts of suicide or have attempted suicide, do not take any further doses of your fluoroquinolone, and talk to your doctor or another healthcare professional immediately"
+            }
+          ]
+        },
+        {
+          "t": "Seek emergency help for sudden severe abdominal, chest or back pain; urgent help for sudden breathlessness (especially lying flat), ankle/leg/abdominal swelling or new palpitations.",
+          "src": [
+            {
+              "s": "mhra-dsu-2018-11-fq-aortic",
+              "q": "the importance of seeking immediate medical attention in case of sudden-onset severe abdominal, chest or back pain"
+            },
+            {
+              "s": "mhra-dsu-2020-12-fq-valve",
+              "q": "a rapid onset of shortness of breath, especially when lying down flat in bed swelling of the ankles, feet, or abdomen new-onset heart palpitations"
+            }
+          ]
+        },
+        {
+          "t": "Avoid strong sunlight/UV; drink plenty of fluids; may impair driving (neurological effects). Tell future prescribers about any serious reaction so fluoroquinolones are avoided.",
+          "src": [
+            {
+              "s": "emc-4346",
+              "q": "Due to its neurological effects, ciprofloxacin may affect reaction time. Thus, the ability to drive or to operate machinery may be impaired."
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "Tell your doctor if you have had any of the above effects at any point while taking a fluoroquinolone - this means you should avoid them in the future"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "ciprofloxacin:allergy:quinolone",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "ciprofloxacin",
+      "allergen": [
+        "ciprofloxacin",
+        "group:fluoroquinolone"
+      ],
+      "concern": "Hypersensitivity to ciprofloxacin or other quinolones",
+      "consequence": "Hypersensitivity, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Hypersensitivity to the active substance, to other quinolones",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Hypersensitivity to the active substance, to other quinolones or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:previous-serious-quinolone-reaction",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "ciprofloxacin",
+      "condition": "quinolone-serious-adr-history",
+      "concern": "Previous serious adverse reaction to a quinolone/fluoroquinolone",
+      "consequence": "Risk of further serious, possibly long-lasting reactions.",
+      "action": "Avoid; only start if no alternative and after careful benefit/risk assessment.",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "The use of ciprofloxacin should be avoided in patients who have experienced serious adverse reactions in the past when using quinolone or fluoroquinolone containing products"
+        },
+        {
+          "s": "mhra-dsu-2024-01-fluoroquinolones",
+          "q": "avoid fluoroquinolone use in patients who have previously had serious adverse reactions with a quinolone antibiotic"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:tendon-disorder",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "ciprofloxacin",
+      "condition": "tendon-disorder",
+      "concern": "History of quinolone-related tendon disease",
+      "consequence": "Tendinitis / tendon rupture.",
+      "action": "Generally do not use; only in very rare cases after microbiological documentation and risk/benefit evaluation.",
+      "sourceWording": "should generally not be used",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Ciprofloxacin should generally not be used in patients with a history of tendon disease/disorder related to quinolone treatment."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:aortic-aneurysm",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "aortic-aneurysm",
+      "concern": "Aortic aneurysm/dissection (existing, family history or predisposing condition)",
+      "consequence": "Increased risk of aortic aneurysm and dissection, sometimes fatal rupture.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "or in patients diagnosed with pre-existing aortic aneurysm and/or dissection or heart valve disease"
+        },
+        {
+          "s": "mhra-dsu-2018-11-fq-aortic",
+          "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in patients at risk for aortic aneurysm and dissection"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:heart-valve-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "heart-valve-disease",
+      "concern": "Congenital or existing heart valve disease / infective endocarditis",
+      "consequence": "Risk of heart valve regurgitation.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "mhra-dsu-2020-12-fq-valve",
+          "q": "patients with congenital heart valve disease or pre-existing heart valve disease"
+        },
+        {
+          "s": "mhra-dsu-2020-12-fq-valve",
+          "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in the following patients at risk"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:infective-endocarditis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "bacterial-endocarditis",
+      "concern": "Infective endocarditis (predisposes to heart valve regurgitation)",
+      "consequence": "Risk of heart valve regurgitation/incompetence.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "or additionally - for heart valve regurgitation/incompetence (e.g. infective endocarditis)"
+        },
+        {
+          "s": "mhra-dsu-2020-12-fq-valve",
+          "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in the following patients at risk"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:connective-tissue-disorder",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "connective-tissue-disorder",
+      "concern": "Connective tissue disorder (e.g. Marfan, Ehlers-Danlos)",
+      "consequence": "Predisposes to aortic aneurysm/dissection and valve regurgitation.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "connective tissue disorders such as Marfan syndrome or Ehlers-Danlos syndrome, Turner syndrome, Behcet's disease, hypertension, rheumatoid arthritis"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:hypertension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "hypertension",
+      "concern": "Hypertension (listed risk factor for aortic aneurysm/dissection and valve regurgitation)",
+      "consequence": "Higher risk of aortic and valve events.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "connective tissue disorders such as Marfan syndrome or Ehlers-Danlos syndrome, Turner syndrome, Behcet's disease, hypertension, rheumatoid arthritis"
+        },
+        {
+          "s": "mhra-dsu-2018-11-fq-aortic",
+          "q": "Marfan syndrome, vascular Ehlers-Danlos syndrome, Takayasu arteritis, giant cell arteritis, Behcet's disease, hypertension, and known atherosclerosis"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:rheumatoid-arthritis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "rheumatoid-arthritis",
+      "concern": "Rheumatoid arthritis (listed risk factor for aortic aneurysm/dissection and valve regurgitation)",
+      "consequence": "Higher risk of aortic and valve events.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "connective tissue disorders such as Marfan syndrome or Ehlers-Danlos syndrome, Turner syndrome, Behcet's disease, hypertension, rheumatoid arthritis"
+        },
+        {
+          "s": "emc-4346",
+          "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:myasthenia-gravis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "Symptoms can be exacerbated.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Ciprofloxacin should be used with caution in patients with myasthenia gravis, because symptoms can be exacerbated"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:epilepsy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "epilepsy",
+      "effect": "seizure-threshold",
+      "concern": "Epilepsy / CNS disorder predisposing to seizures",
+      "consequence": "Seizures, lowered seizure threshold, non-convulsive status epilepticus.",
+      "action": "Use with caution; stop if seizures occur.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Ciprofloxacin should be used with caution in patients with CNS disorders which may be predisposed to seizure."
+        },
+        {
+          "s": "emc-4346",
+          "q": "If seizures occur ciprofloxacin should be discontinued"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:qt-prolongation",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "Congenital long QT syndrome / QT prolongation",
+      "consequence": "Ventricular arrhythmia, torsades de pointes.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Caution should be taken when using fluoroquinolones, including ciprofloxacin, in patients with known risk factors for prolongation of the QT interval such as, for example: - congenital long QT syndrome"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "hypokalaemia",
+      "effect": "qt-prolongation",
+      "concern": "Uncorrected hypokalaemia",
+      "consequence": "QT prolongation risk.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "uncorrected electrolyte imbalance (e.g. hypokalaemia, hypomagnesaemia)"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:hypomagnesaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "hypomagnesaemia",
+      "effect": "qt-prolongation",
+      "concern": "Uncorrected hypomagnesaemia",
+      "consequence": "QT prolongation risk.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "uncorrected electrolyte imbalance (e.g. hypokalaemia, hypomagnesaemia)"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "heart-failure",
+      "effect": "qt-prolongation",
+      "concern": "Heart failure",
+      "consequence": "QT prolongation risk factor.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "cardiac disease (e.g. heart failure, myocardial infarction, bradycardia)"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:bradycardia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "bradycardia",
+      "effect": "qt-prolongation",
+      "concern": "Bradycardia",
+      "consequence": "QT prolongation risk factor.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "cardiac disease (e.g. heart failure, myocardial infarction, bradycardia)"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:recent-mi",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "recent-myocardial-infarction",
+      "effect": "qt-prolongation",
+      "concern": "Myocardial infarction",
+      "consequence": "QT prolongation risk factor.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "cardiac disease (e.g. heart failure, myocardial infarction, bradycardia)"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "ciprofloxacin",
+      "condition": "diabetes",
+      "effect": "hypoglycaemia",
+      "concern": "Diabetes",
+      "consequence": "Hypo- or hyperglycaemia, hypoglycaemic coma (mainly with oral hypoglycaemics or insulin).",
+      "action": "Careful blood glucose monitoring.",
+      "sourceWording": "careful monitoring of blood glucose is recommended",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Cases of hypoglycaemic coma have been reported. In diabetic patients, careful monitoring of blood glucose is recommended."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:g6pd-deficiency",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "ciprofloxacin",
+      "condition": "g6pd-deficiency",
+      "concern": "G6PD deficiency",
+      "consequence": "Haemolytic reactions.",
+      "action": "Avoid unless benefit outweighs risk; if used, monitor for haemolysis.",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Ciprofloxacin should be avoided in these patients unless the potential benefit is considered to outweigh the possible risk."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:depression",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "depression-suicidality",
+      "concern": "Depression, psychosis or suicidal thoughts",
+      "consequence": "Fluoroquinolones can worsen psychiatric symptoms; rare suicidal ideation/suicide.",
+      "action": "Be alert to mood changes; advise patient and family; stop if new or worsening depression or psychosis.",
+      "sourceWording": "can exacerbate existing psychiatric symptoms",
+      "src": [
+        {
+          "s": "mhra-dsu-2023-09-fq-suicidal",
+          "q": "note that fluoroquinolones can exacerbate existing psychiatric symptoms"
+        },
+        {
+          "s": "mhra-dsu-2023-09-fq-suicidal",
+          "q": "fluoroquinolones should be discontinued at the first signs of a serious adverse reaction, including new or worsening depression or psychosis"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:solid-organ-transplant",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "solid-organ-transplant",
+      "concern": "Solid organ transplant",
+      "consequence": "Higher risk of tendon injury.",
+      "action": "Prescribe with special caution.",
+      "sourceWording": "prescribe fluoroquinolones with special caution",
+      "src": [
+        {
+          "s": "mhra-dsu-2024-01-fluoroquinolones",
+          "q": "prescribe fluoroquinolones with special caution for people older than 60 years and for those with renal impairment or solid-organ transplants, because they are at a higher risk of tendon injury"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment (tendon injury risk)",
+      "consequence": "Higher risk of tendinitis and tendon rupture; ciprofloxacin also accumulates (see renal dose rules).",
+      "action": "Prescribe with special caution; adjust the dose to creatinine clearance.",
+      "sourceWording": "prescribe fluoroquinolones with special caution",
+      "src": [
+        {
+          "s": "mhra-dsu-2024-01-fluoroquinolones",
+          "q": "prescribe fluoroquinolones with special caution for people older than 60 years and for those with renal impairment or solid-organ transplants, because they are at a higher risk of tendon injury"
+        },
+        {
+          "s": "emc-4346",
+          "q": "The risk of tendinitis and tendon rupture is increased in older patients, patients with renal impairment, patients with solid organ transplants, and those treated concurrently with corticosteroids."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:fructose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "ciprofloxacin",
+      "formulations": [
+        "ciprofloxacin-susp"
+      ],
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance / sugar malabsorption (suspension contains sucrose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the suspension.",
+      "sourceWording": "should not take",
+      "src": [
+        {
+          "s": "emc-885",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or saccharose-isomaltase deficiency, should not take Ciproxin 250 mg/5 mL."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:condition:sugar-intolerance-susp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "ciprofloxacin",
+      "formulations": [
+        "ciprofloxacin-susp"
+      ],
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase deficiency (suspension contains sucrose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the suspension.",
+      "sourceWording": "should not take",
+      "src": [
+        {
+          "s": "emc-885",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or saccharose-isomaltase deficiency, should not take Ciproxin 250 mg/5 mL."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:renal:crcl-30-60",
+      "kind": "renal",
+      "level": "dose",
+      "med": "ciprofloxacin",
+      "renal": {
+        "measure": "CrCl",
+        "min": 30,
+        "max": 60,
+        "maxInclusive": true
+      },
+      "concern": "Creatinine clearance 30-60 ml/min/1.73 m2",
+      "consequence": "Accumulation (renally excreted).",
+      "action": "250-500 mg every 12 h. Renal impairment also increases tendon-injury risk.",
+      "sourceWording": "250-500 mg every 12 h",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "30 - 60 124 - 168 250-500 mg every 12 h"
+        },
+        {
+          "s": "emc-885",
+          "q": "30-60 124 to 168 250-500 mg every 12 h"
+        },
+        {
+          "s": "emc-4346",
+          "q": "> 60 < 124 See Usual Dosage."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:renal:tab-crcl-30-or-less",
+      "kind": "renal",
+      "level": "dose",
+      "med": "ciprofloxacin",
+      "renal": {
+        "measure": "CrCl",
+        "max": 30,
+        "maxInclusive": true
+      },
+      "concern": "Creatinine clearance ≤ 30 ml/min/1.73 m2 (tablets), including dialysis",
+      "consequence": "Accumulation.",
+      "action": "250-500 mg every 24 h (after dialysis on haemodialysis days). Renal impairment also increases tendon-injury risk.",
+      "sourceWording": "≤30 ≥169 250-500 mg every 24 h",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "≤30 ≥169 250-500 mg every 24 h Patients on haemodialysis > 169 250-500 mg every 24 h (after dialysis) Patients on peritoneal dialysis > 169 250-500 mg every 24 h"
+        }
+      ],
+      "formulations": [
+        "ciprofloxacin-tab"
+      ]
+    },
+    {
+      "id": "ciprofloxacin:renal:susp-crcl-under-30",
+      "kind": "renal",
+      "level": "dose",
+      "med": "ciprofloxacin",
+      "renal": {
+        "measure": "CrCl",
+        "max": 30
+      },
+      "concern": "Creatinine clearance < 30 ml/min/1.73 m2 (suspension), including dialysis",
+      "consequence": "Accumulation.",
+      "action": "250-500 mg every 24 h (after dialysis on haemodialysis days). Renal impairment also increases tendon-injury risk.",
+      "sourceWording": "< 30 > 169 250-500 mg every 24 h",
+      "src": [
+        {
+          "s": "emc-885",
+          "q": "< 30 > 169 250-500 mg every 24 h"
+        }
+      ],
+      "formulations": [
+        "ciprofloxacin-susp"
+      ]
+    },
+    {
+      "id": "ciprofloxacin:age:over-60",
+      "kind": "age",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "age": {
+        "minYears": 60
+      },
+      "concern": "Age over 60 years",
+      "consequence": "Higher risk of tendon injury; elderly more sensitive to QTc prolongation; aortic aneurysm risk higher in older patients.",
+      "action": "Prescribe with special caution.",
+      "sourceWording": "prescribe fluoroquinolones with special caution for people older than 60 years",
+      "src": [
+        {
+          "s": "mhra-dsu-2024-01-fluoroquinolones",
+          "q": "prescribe fluoroquinolones with special caution for people older than 60 years and for those with renal impairment or solid-organ transplants, because they are at a higher risk of tendon injury"
+        },
+        {
+          "s": "emc-4346",
+          "q": "Elderly patients and women may be more sensitive to QTc-prolonging medications."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:age:children",
+      "kind": "age",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Children and adolescents",
+      "consequence": "Arthropathy (common in children); limited licensed indications.",
+      "action": "Start only after careful benefit/risk evaluation, by physicians experienced in cystic fibrosis and/or severe paediatric infections.",
+      "sourceWording": "Treatment should be initiated only after a careful benefit/risk evaluation",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Treatment should be initiated only after a careful benefit/risk evaluation, due to possible adverse events related to joints and/or surrounding tissue"
+        },
+        {
+          "s": "emc-4346",
+          "q": "Ciprofloxacin treatment should be initiated only by physicians who are experienced in the treatment of cystic fibrosis and/or severe infections in children and adolescents."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:age:susp-under-3",
+      "kind": "age",
+      "level": "dose",
+      "med": "ciprofloxacin",
+      "formulations": [
+        "ciprofloxacin-susp"
+      ],
+      "age": {
+        "maxYears": 3
+      },
+      "concern": "Child under 3 years taking the suspension (benzyl alcohol)",
+      "consequence": "Benzyl alcohol linked to severe effects ('gasping syndrome') in young children and neonates.",
+      "action": "Do not use the suspension for longer than one week.",
+      "sourceWording": "should therefore not be used for longer than one week",
+      "src": [
+        {
+          "s": "emc-885",
+          "q": "In young children (less than 3 years old), Ciproxin oral suspension should therefore not be used for longer than one week."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "ciprofloxacin",
+      "concern": "Pregnancy (SmPCs)",
+      "consequence": "Possible damage to articular cartilage cannot be excluded; suspension also contains benzyl alcohol.",
+      "action": "Tablet SmPC: preferable to avoid as a precaution. Suspension SmPC: not recommended.",
+      "sourceWording": "preferable to avoid / not recommended",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "As a precautionary measure, it is preferable to avoid the use of ciprofloxacin during pregnancy."
+        },
+        {
+          "s": "emc-885",
+          "q": "Therefore, it is not recommended to use Ciproxin oral suspension during pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "ciprofloxacin",
+      "concern": "Pregnancy (BUMPS/UKTIS)",
+      "consequence": "No good evidence of harm to the baby.",
+      "action": "BUMPS: can be used if recommended by a doctor; a different antibiotic is usually tried first.",
+      "sourceWording": "can be used in pregnancy if recommended by your doctor",
+      "src": [
+        {
+          "s": "bumps-ciprofloxacin",
+          "q": "Quinolone antibiotics can be used in pregnancy if recommended by your doctor."
+        },
+        {
+          "s": "bumps-ciprofloxacin",
+          "q": "Yes, a different antibiotic will usually be tried first."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "ciprofloxacin",
+      "concern": "Breastfeeding",
+      "consequence": "Excreted in breast milk; potential risk of articular damage.",
+      "action": "Tablet SmPC: should not be used. Suspension SmPC: not recommended. (No SPS quinolone breastfeeding page found.)",
+      "sourceWording": "should not be used during breast-feeding",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Due to the potential risk of articular damage, ciprofloxacin should not be used during breast-feeding."
+        },
+        {
+          "s": "emc-885",
+          "q": "Ciproxin oral suspension is not recommended for use during breast-feeding."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:corticosteroids",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "ciprofloxacin",
+      "other": "group:corticosteroid",
+      "concern": "Corticosteroids",
+      "consequence": "Increased risk of tendinitis and tendon rupture; systemic corticosteroids may also raise aortic aneurysm risk.",
+      "action": "Avoid concomitant use.",
+      "sourceWording": "concomitant use of corticosteroids should be avoided",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Therefore, concomitant use of corticosteroids should be avoided."
+        },
+        {
+          "s": "mhra-dsu-2024-01-fluoroquinolones",
+          "q": "avoid coadministration of a corticosteroid with a fluoroquinolone since this could exacerbate fluoroquinolone-induced tendinitis and tendon rupture"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "ciprofloxacin",
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate",
+      "consequence": "Inhibited renal tubular transport: raised methotrexate levels and toxicity.",
+      "action": "Concomitant use not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Renal tubular transport of methotrexate may be inhibited by concomitant administration of ciprofloxacin, potentially leading to increased plasma levels of methotrexate and increased risk of methotrexate-associated toxic reactions."
+        },
+        {
+          "s": "emc-4346",
+          "q": "The concomitant use of ciprofloxacin with methotrexate is not recommended"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "ciprofloxacin",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (vitamin K antagonist)",
+      "consequence": "Anticoagulant effect may be increased.",
+      "action": "Monitor INR frequently during and shortly after co-administration.",
+      "sourceWording": "the INR should be monitored frequently",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Simultaneous administration of ciprofloxacin with vitamin K antagonists may augment its anti-coagulant effects."
+        },
+        {
+          "s": "emc-4346",
+          "q": "It is recommended that the INR should be monitored frequently during and shortly after co-administration of ciprofloxacin with a vitamin K antagonist"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:qt-prolonging",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Other QT-prolonging medicines (e.g. macrolides, tricyclics, antipsychotics, class IA/III antiarrhythmics)",
+      "consequence": "Additive QT prolongation.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Ciprofloxacin, like other fluoroquinolones, should be used with caution in patients receiving drugs known to prolong the QT interval (e.g. Class IA and III anti-arrhythmics, tricyclic antidepressants, macrolides, antipsychotics)"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "ciprofloxacin",
+      "other": "group:oral-antidiabetic",
+      "effect": "hypoglycaemia",
+      "concern": "Oral hypoglycaemic agents (e.g. glibenclamide) or insulin",
+      "consequence": "Dysglycaemia including hypoglycaemic coma.",
+      "action": "Careful blood glucose monitoring.",
+      "sourceWording": "careful monitoring of blood glucose is recommended",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "usually in diabetic patients receiving concomitant treatment with an oral hypoglycaemic agent (e.g., glibenclamide) or with insulin"
+        },
+        {
+          "s": "emc-4346",
+          "q": "In diabetic patients, careful monitoring of blood glucose is recommended."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:sildenafil",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "other": "sildenafil",
+      "effect": "hypotension",
+      "concern": "Sildenafil",
+      "consequence": "Sildenafil Cmax and AUC roughly doubled.",
+      "action": "Use with caution, weighing risks and benefits.",
+      "sourceWording": "caution should be used",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "caution should be used prescribing ciprofloxacin concomitantly with sildenafil taking into consideration the risks and the benefits"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:iron",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "other": "group:iron-preparation",
+      "effect": "reduced-absorption",
+      "concern": "Iron preparations",
+      "consequence": "Chelation reduces ciprofloxacin absorption.",
+      "action": "Give ciprofloxacin 1-2 hours before or at least 4 hours after the iron preparation.",
+      "sourceWording": "should be administered either 1-2 hours before or at least 4 hours after",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "multivalent cation-containing drugs and mineral supplements (e.g. calcium, magnesium, aluminium, iron)"
+        },
+        {
+          "s": "emc-4346",
+          "q": "Consequently, ciprofloxacin should be administered either 1-2 hours before or at least 4 hours after these preparations."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:calcium",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "other": "group:calcium-preparation",
+      "effect": "reduced-absorption",
+      "concern": "Calcium preparations / supplements",
+      "consequence": "Chelation reduces ciprofloxacin absorption.",
+      "action": "Give ciprofloxacin 1-2 hours before or at least 4 hours after the calcium preparation.",
+      "sourceWording": "should be administered either 1-2 hours before or at least 4 hours after",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "multivalent cation-containing drugs and mineral supplements (e.g. calcium, magnesium, aluminium, iron)"
+        },
+        {
+          "s": "emc-4346",
+          "q": "Consequently, ciprofloxacin should be administered either 1-2 hours before or at least 4 hours after these preparations."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:magnesium",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "other": "group:magnesium-preparation",
+      "effect": "reduced-absorption",
+      "concern": "Magnesium preparations / supplements",
+      "consequence": "Chelation reduces ciprofloxacin absorption.",
+      "action": "Give ciprofloxacin 1-2 hours before or at least 4 hours after the magnesium preparation.",
+      "sourceWording": "should be administered either 1-2 hours before or at least 4 hours after",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "multivalent cation-containing drugs and mineral supplements (e.g. calcium, magnesium, aluminium, iron)"
+        },
+        {
+          "s": "emc-4346",
+          "q": "Consequently, ciprofloxacin should be administered either 1-2 hours before or at least 4 hours after these preparations."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:antacids",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ciprofloxacin",
+      "other": "group:antacid",
+      "effect": "reduced-absorption",
+      "concern": "Antacids (magnesium/aluminium/calcium-containing)",
+      "consequence": "Reduced ciprofloxacin absorption.",
+      "action": "Give ciprofloxacin 1-2 hours before or at least 4 hours after; does not apply to H2-receptor blockers.",
+      "sourceWording": "should be administered either 1-2 hours before or at least 4 hours after",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "sucralfate or antacids, and highly buffered drugs (e.g. didanosine tablets) containing magnesium, aluminium, or calcium reduces the absorption of ciprofloxacin"
+        },
+        {
+          "s": "emc-4346",
+          "q": "The restriction does not apply to antacids belonging to the class of H2 receptor blockers."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:omeprazole",
+      "kind": "interaction",
+      "level": "info",
+      "med": "ciprofloxacin",
+      "other": "omeprazole",
+      "concern": "Omeprazole",
+      "consequence": "Slight reduction in ciprofloxacin Cmax and AUC.",
+      "action": "No action stated.",
+      "sourceWording": "results in a slight reduction",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Concomitant administration of ciprofloxacin and omeprazole containing medicinal products results in a slight reduction of Cmax and AUC of ciprofloxacin."
+        }
+      ]
+    }
+  ]
+}

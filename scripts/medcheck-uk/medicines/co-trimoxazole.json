@@ -1,0 +1,1466 @@
+{
+  "id": "co-trimoxazole",
+  "name": "Co-trimoxazole",
+  "ingredients": [
+    "sulfamethoxazole",
+    "trimethoprim"
+  ],
+  "className": "Sulfonamide and trimethoprim combination antibacterial",
+  "groups": [
+    "antibacterial",
+    "sulfonamide",
+    "folate-antagonist"
+  ],
+  "searchTerms": [
+    "sulfamethoxazole trimethoprim",
+    "trimethoprim sulfamethoxazole",
+    "sulphamethoxazole trimethoprim",
+    "trimethoprim/sulfamethoxazole"
+  ],
+  "formulations": [
+    {
+      "id": "co-trimoxazole-tab",
+      "label": "Tablets 480 mg",
+      "route": "oral",
+      "strengths": "80 mg trimethoprim / 400 mg sulfamethoxazole",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Co-Trimoxazole 80 mg/400 mg Tablets."
+        }
+      ],
+      "sourceIds": [
+        "emc-6999"
+      ]
+    },
+    {
+      "id": "co-trimoxazole-forte-tab",
+      "label": "Forte tablets 960 mg",
+      "route": "oral",
+      "strengths": "160 mg trimethoprim / 800 mg sulfamethoxazole",
+      "release": "immediate",
+      "note": "Dosing in the Forte SmPC is in Forte tablets (1 Forte tablet = 2 standard tablets).",
+      "src": [
+        {
+          "s": "emc-6997",
+          "q": "Where dosage is expressed as \"tablets\" this refers to the adult Forte tablet, i.e 160 mg Trimethoprim BP and 800 mg Sulfamethoxazole BP."
+        }
+      ],
+      "sourceIds": [
+        "emc-6997"
+      ]
+    },
+    {
+      "id": "co-trimoxazole-paed-susp",
+      "label": "Paediatric oral suspension",
+      "route": "oral",
+      "strengths": "40 mg trimethoprim / 200 mg sulfamethoxazole per 5 ml",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-6994",
+          "q": "Co-Trimoxazole 40 mg/200 mg per 5 ml Paediatric Suspension"
+        }
+      ],
+      "sourceIds": [
+        "emc-6994"
+      ]
+    },
+    {
+      "id": "co-trimoxazole-adult-susp",
+      "label": "Adult oral suspension",
+      "route": "oral",
+      "strengths": "80 mg trimethoprim / 400 mg sulfamethoxazole per 5 ml",
+      "release": "n/a",
+      "note": "Twice the strength of the paediatric suspension: check which suspension is prescribed.",
+      "src": [
+        {
+          "s": "emc-6996",
+          "q": "Co-Trimoxazole 80 mg/400 mg per 5 ml Adult Suspension"
+        }
+      ],
+      "sourceIds": [
+        "emc-6996"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Pneumocystis jirovecii pneumonitis (PJP): treatment and prevention. Toxoplasmosis: treatment and prophylaxis. Nocardiosis: treatment.",
+          "tag": "Licensed first-line uses",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Treatment and prevention of Pneumocystis jirovecii pneumonitis or \"PJP\". Treatment and prophylaxis of toxoplasmosis. Treatment of nocardiosis."
+            }
+          ]
+        },
+        {
+          "t": "Acute uncomplicated UTI, acute otitis media and acute exacerbation of chronic bronchitis ONLY when there is bacterial evidence of sensitivity and good reason to prefer the combination over a single antibiotic.",
+          "tag": "Restricted uses",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "The following infections may be treated with Co-Trimoxazole where there is bacterial evidence of sensitivity to Co-Trimoxazole and good reason to prefer the combination of antibiotics in Co-Trimoxazole to a single antibiotic"
+            },
+            {
+              "s": "emc-6999",
+              "q": "Acute uncomplicated urinary tract infection. Acute otitis media. Acute exacerbation of chronic bronchitis."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "UK licence limits UTI, otitis media and bronchitis use to proven sensitivity plus good reason to prefer the combination. Use only where benefits outweigh risks; consider a single effective antibacterial.",
+          "tag": "Licensing limit",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "The combination of antibiotics in Co-Trimoxazole should only be used where, in the judgement of the physician, the benefits of treatment outweigh any possible risks; consideration should be given to the use of a single effective antibacterial agent."
+            }
+          ]
+        },
+        {
+          "t": "Do not use for streptococcal pharyngitis due to Group A beta-haemolytic streptococci.",
+          "tag": "Not for strep throat",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Co-Trimoxazole should not be used in the treatment of streptococcal pharyngitis due to Group A beta-haemolytic streptococci"
+            }
+          ]
+        },
+        {
+          "t": "Tablets and the adult suspension are licensed for adults and children over 12; the paediatric suspension for children 12 years and under (6 weeks or older).",
+          "tag": "Formulation by age",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Co-Trimoxazole tablets are indicated in adults and children over 12 years"
+            },
+            {
+              "s": "emc-6994",
+              "q": "Co-Trimoxazole Paediatric Suspension is indicated in children aged 12 years and under (≥6 weeks)"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults and children over 12: 2 tablets (480 mg) every 12 hours = 1 Forte tablet (960 mg) every 12 hours = 10 ml adult suspension every 12 hours. Continue until symptom-free for 2 days (most need at least 5 days); reassess if no improvement after 7 days.",
+          "tag": "Acute infections (standard dose)",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Adults and children over 12 years : STANDARD DOSAGE: 2 tablets every 12 hours"
+            },
+            {
+              "s": "emc-6997",
+              "q": "Adults and children over 12 years: STANDARD DOSAGE: 1 tablet every 12 hours"
+            },
+            {
+              "s": "emc-6996",
+              "q": ">18 years old 10 ml every 12 hours"
+            },
+            {
+              "s": "emc-6999",
+              "q": "Treatment should be continued until the patient has been symptom free for two days; the majority will require treatment for at least 5 days. If clinical improvement is not evident after 7 days therapy, the patient should be reassessed."
+            }
+          ]
+        },
+        {
+          "t": "Acute uncomplicated lower UTI: short-term therapy of 1 to 3 days is an alternative to the standard course.",
+          "tag": "Lower UTI",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "As an alternative to Standard Dosage for acute uncomplicated lower urinary tract infections, short-term therapy of 1 to 3 days duration has been shown to be effective."
+            }
+          ]
+        },
+        {
+          "t": "PJP treatment (adults and children over 12): trimethoprim 20 mg/kg + sulfamethoxazole 100 mg/kg per day in two or more divided doses for 2 weeks.",
+          "tag": "PJP treatment",
+          "calc": {
+            "mgPerKg": 20,
+            "per": "day",
+            "ageMinYears": 12,
+            "of": "trimethoprim"
+          },
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "A higher dosage is recommended, using 20 mg trimethoprim and 100 mg sulfamethoxazole per kg of body weight per day in two or more divided doses for two weeks."
+            }
+          ]
+        },
+        {
+          "t": "PJP prevention (adults and children over 12), choose one: 160 mg/800 mg DAILY 7 days a week; OR 160 mg/800 mg three times a WEEK on alternate days; OR 320 mg/1600 mg per day in two divided doses three times a WEEK on alternate days. Total daily dose must not exceed 320 mg trimethoprim / 1600 mg sulfamethoxazole.",
+          "tag": "PJP prevention",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "160 mg trimethoprim/800 mg sulfamethoxazole daily 7 days per week. 160 mg trimethoprim/800 mg sulfamethoxazole three times per week on alternate days. 320 mg trimethoprim/1600 mg sulfamethoxazole per day in two divided doses three times per week on alternate days."
+            },
+            {
+              "s": "emc-6999",
+              "q": "The total daily dose should not exceed 320 mg trimethoprim and 1600 mg sulfamethoxazole."
+            }
+          ]
+        },
+        {
+          "t": "Nocardiosis (adults over 18): no consensus; 6 to 8 tablets (480 mg) daily for up to 3 months have been used. Toxoplasmosis: no consensus; PJP prevention doses may suit prophylaxis.",
+          "tag": "Nocardiosis / toxoplasmosis",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Adult doses of 6 to 8 tablets daily for up to 3 months have been used."
+            },
+            {
+              "s": "emc-6999",
+              "q": "For prophylaxis, however, the dosages suggested for prevention of Pneumocystis jirovecii pneumonitis may be appropriate."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: standard dose unless otherwise specified; take particular care (more susceptible to serious adverse effects).",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Unless otherwise specified standard dosage applies."
+            },
+            {
+              "s": "emc-6999",
+              "q": "Particular care is always advisable when treating elderly patients"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Must not be given in the first 6 weeks of life (listed in SmPC 4.3 of all four co-trimoxazole SmPCs). Separately, the breastfeeding paragraph of 4.6 says co-trimoxazole should be avoided in infants younger than 8 weeks (predisposition to hyperbilirubinaemia). It sits in the breastfeeding text, so this tool applies it to breastfeeding; the paediatric suspension is still licensed from 6 weeks.",
+          "tag": "Age limit",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Co-trimoxazole should not be given to infants during the first 6 weeks of life."
+            },
+            {
+              "s": "emc-6994",
+              "q": "Co-Trimoxazole Paediatric Suspension is indicated in children aged 12 years and under (≥6 weeks)"
+            },
+            {
+              "s": "emc-6999",
+              "q": "Additionally, administration of Co-Trimoxazole should be avoided in infants younger than eight weeks in view of the predisposition of young infants to hyperbilirubinaemia."
+            }
+          ]
+        },
+        {
+          "t": "Children 12 years and under (paediatric suspension): about trimethoprim 6 mg/kg + sulfamethoxazole 30 mg/kg per day in two equal doses. By age: 6-12 years 10 ml every 12 hours; 6 months-5 years 5 ml every 12 hours; 6 weeks-5 months 2.5 ml every 12 hours.",
+          "tag": "Acute infections",
+          "formulations": [
+            "co-trimoxazole-paed-susp"
+          ],
+          "calc": {
+            "mgPerKg": 6,
+            "per": "day",
+            "dividedInto": 2,
+            "ageMinYears": 0.115,
+            "ageMaxYears": 13,
+            "of": "trimethoprim"
+          },
+          "src": [
+            {
+              "s": "emc-6994",
+              "q": "The standard dosage for children is equivalent to approximately 6 mg trimethoprim and 30 mg sulfamethoxazole per kg body weight per day, given in two equally divided doses."
+            },
+            {
+              "s": "emc-6994",
+              "q": "6 to 12 years 10 ml every 12 hours 6 months to 5 years 5 ml every 12 hours 6 weeks to 5 months 2.5 ml every 12 hours"
+            }
+          ]
+        },
+        {
+          "t": "PJP treatment, children 12 and under: trimethoprim 20 mg/kg + sulfamethoxazole 100 mg/kg per day in two or more divided doses for 2 weeks.",
+          "tag": "PJP treatment",
+          "formulations": [
+            "co-trimoxazole-paed-susp"
+          ],
+          "calc": {
+            "mgPerKg": 20,
+            "per": "day",
+            "ageMinYears": 0.115,
+            "ageMaxYears": 13,
+            "of": "trimethoprim"
+          },
+          "src": [
+            {
+              "s": "emc-6994",
+              "q": "Treatment - Children aged 12 years and under: A higher dosage is recommended, using 20 mg trimethoprim and 100 mg sulfamethoxazole per kg of body weight per day in two or more divided doses for two weeks."
+            }
+          ]
+        },
+        {
+          "t": "PJP prevention, children 12 and under: about 6 mg/kg trimethoprim per day, as the age-banded volume every 12 hours either 7 days a WEEK or 3 days a WEEK (alternate or consecutive days), or as double the volume ONCE a day on 3 consecutive days a WEEK (e.g. 6-12 years: 10 ml every 12 hours, or 20 ml once a day). Total daily dose must not exceed 320 mg trimethoprim / 1600 mg sulfamethoxazole.",
+          "tag": "PJP prevention",
+          "formulations": [
+            "co-trimoxazole-paed-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-6994",
+              "q": "6 to 12 years 10 ml every 12 hours, seven days per week"
+            },
+            {
+              "s": "emc-6994",
+              "q": "6 to 12 years 20 ml once a day, three times per week on consecutive days"
+            },
+            {
+              "s": "emc-6994",
+              "q": "The total daily dose should not exceed 320 mg trimethoprim and 1600 mg sulfamethoxazole."
+            }
+          ]
+        },
+        {
+          "t": "Children over 12 to under 18 (adult suspension): 10 ml every 12 hours.",
+          "tag": "12-18 years",
+          "formulations": [
+            "co-trimoxazole-adult-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-6996",
+              "q": ">12 to <18 years old 10 ml every 12 hours"
+            }
+          ]
+        },
+        {
+          "t": "No information on renal failure dosing in children aged 12 and under.",
+          "tag": "Renal",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "No information is available for children aged 12 years and under with renal failure."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to sulfonamides, trimethoprim, co-trimoxazole or any excipient.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Hypersensitivity to the active substance(s) sulphonamides, trimethoprim, co-trimoxazole or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Severe liver impairment (Forte tablet and adult suspension SmPCs: contra-indicated; 480 mg tablet SmPC: should not be given; all in section 4.3).",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Co-Trimoxazole should not be given to patients with severe impairment of liver function."
+            },
+            {
+              "s": "emc-6997",
+              "q": "Contra-indicated in patients with severe impairment of liver function."
+            }
+          ]
+        },
+        {
+          "t": "Severe renal insufficiency where repeated plasma concentration measurements cannot be done.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Contra-indicated in severe renal insufficiency where repeated measurements of the plasma concentration cannot be performed."
+            }
+          ]
+        },
+        {
+          "t": "Infants in the first 6 weeks of life.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Co-trimoxazole should not be given to infants during the first 6 weeks of life."
+            }
+          ]
+        },
+        {
+          "t": "History of drug-induced immune thrombocytopenia with trimethoprim and/or sulfonamides.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Co-Trimoxazole should not be given to patients with a history of drug-induced immune thrombocytopenia with use of trimethoprim and/or sulphonamides."
+            }
+          ]
+        },
+        {
+          "t": "Acute porphyria.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Co-Trimoxazole should not be given to patients with acute porphyria."
+            }
+          ]
+        },
+        {
+          "t": "First trimester of pregnancy.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "First trimester of pregnancy (see section 4.6)."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Fatal reactions (very rare): SJS, TEN, fulminant hepatic necrosis, agranulocytosis, aplastic anaemia, other blood dyscrasias, respiratory hypersensitivity.",
+          "tag": "Life-threatening reactions",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Fatalities, although very rare, have occurred due to severe reactions including Stevens-Johnson syndrome, toxic epidermal necrolysis, fulminant hepatic necrosis, agranulocytosis, aplastic anaemia, other blood dyscrasias and hypersensitivity of the respiratory tract."
+            }
+          ]
+        },
+        {
+          "t": "SJS/TEN/DRESS: highest risk in the first weeks; stop if signs appear and never restart. AGEP at start of treatment: stop and do not re-administer.",
+          "tag": "SCARs",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "The highest risk for occurrence of SJS or TEN is within the first weeks of treatment."
+            },
+            {
+              "s": "emc-6999",
+              "q": "If the patient has developed SJS, TEN and DRESS with the use of Co-Trimoxazole, the treatment must not be re-started in this patient at any time."
+            }
+          ]
+        },
+        {
+          "t": "G6PD deficiency: haemolysis may occur.",
+          "tag": "G6PD",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "In glucose-6-phosphate dehydrogenase (G-6-PD) deficient patients haemolysis may occur."
+            }
+          ]
+        },
+        {
+          "t": "Folate: monthly blood counts advisable for long courses, folate-deficient patients or the elderly. Folinic acid may be considered but can reduce antimicrobial efficacy.",
+          "tag": "Folate / blood counts",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Regular monthly blood counts are advisable when Co-Trimoxazole is given for long periods, or to folate deficient patients or to the elderly"
+            },
+            {
+              "s": "emc-6999",
+              "q": "Supplementation with folinic acid may be considered during treatment but this should be initiated with caution due to possible interference with antimicrobial efficacy"
+            }
+          ]
+        },
+        {
+          "t": "Serious haematological disorders: do not give except under careful supervision.",
+          "tag": "Blood disorders",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Except under careful supervision Co-Trimoxazole should not be given to patients with serious haematological disorders"
+            }
+          ]
+        },
+        {
+          "t": "Hyperkalaemia and hyponatraemia: close potassium monitoring in at-risk patients. Metabolic acidosis reported.",
+          "tag": "Electrolytes",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Close monitoring of serum potassium is warranted in patients at risk of hyperkalaemia and hyponatraemia."
+            },
+            {
+              "s": "emc-6999",
+              "q": "Co-Trimoxazole has been associated with metabolic acidosis"
+            }
+          ]
+        },
+        {
+          "t": "Severe atopy or bronchial asthma: give with caution.",
+          "tag": "Asthma/atopy",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Co-Trimoxazole should be given with caution to patients with severe atopy or bronchial asthma."
+            }
+          ]
+        },
+        {
+          "t": "Porphyria (known or suspected risk): avoid.",
+          "tag": "Porphyria",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "The administration of Co-Trimoxazole to patients known or suspected to be at risk of porphyria should be avoided."
+            }
+          ]
+        },
+        {
+          "t": "Keep adequate urine output (crystalluria risk, higher in malnutrition).",
+          "tag": "Hydration",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "An adequate urinary output should be maintained at all times."
+            }
+          ]
+        },
+        {
+          "t": "Respiratory toxicity (possible ARDS) and haemophagocytic lymphohistiocytosis (HLH): stop if these develop.",
+          "tag": "ARDS / HLH",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "In such circumstances, co-trimoxazole should be discontinued and appropriate treatment given."
+            },
+            {
+              "s": "emc-6999",
+              "q": "If diagnosis of HLH is established, co-trimoxazole treatment should be discontinued."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Methotrexate: co-trimoxazole may raise free methotrexate levels; the co-trimoxazole SmPC says consider a folate supplement. SPS: avoid the combination (risk of severe bone marrow suppression, possibly delayed). One methotrexate tablet SmPC lists this combination under 4.3 Contraindications (should not be used concomitantly).",
+          "tag": "Methotrexate",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Methotrexate: co-trimoxazole may increase the free plasma levels of methotrexate."
+            },
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Avoid prescribing co-trimoxazole or trimethoprim with methotrexate, due to the risk of severe bone marrow suppression."
+            },
+            {
+              "s": "emc-511",
+              "q": "Methotrexate tablets should not be used concomitantly with drugs with antifolate properties (e.g. co-trimoxazole)"
+            }
+          ]
+        },
+        {
+          "t": "Warfarin: anticoagulant effect potentiated; careful control of anticoagulation advised.",
+          "tag": "Warfarin",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Careful control of the anticoagulant therapy during treatment with Co-Trimoxazole is advisable."
+            }
+          ]
+        },
+        {
+          "t": "ACE inhibitors, ARBs, potassium-sparing diuretics (e.g. spironolactone): caution, clinically relevant hyperkalaemia possible.",
+          "tag": "Hyperkalaemia",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Hyperkalaemia: caution should be exercised in patients taking any other drugs that can cause hyperkalaemia, for example ACE inhibitors, angiotensin receptor blockers and potassium-sparing diuretics such as spironolactone."
+            }
+          ]
+        },
+        {
+          "t": "Thiazide diuretics in elderly: increased thrombocytopenia risk.",
+          "tag": "Diuretics",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Diuretics (thiazides): in elderly patients concurrently receiving diuretics, mainly thiazides, there appears to be an increased risk of thrombocytopenia with or without purpura."
+            }
+          ]
+        },
+        {
+          "t": "Others not in master list: phenytoin (monitor levels), digoxin (raised levels in elderly), ciclosporin (renal deterioration), zidovudine, pyrimethamine, repaglinide (hypoglycaemia), sulfonylureas, lamivudine, azathioprine, oral contraceptives (antibiotic advice).",
+          "tag": "Others",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Close monitoring of the patient's condition and serum phenytoin levels are advisable."
+            },
+            {
+              "s": "emc-6999",
+              "q": "Repaglinide: trimethoprim may increase the exposure of repaglinide which may result in hypoglycaemia."
+            }
+          ]
+        },
+        {
+          "t": "Lab tests: trimethoprim may cause ~10% overestimation of serum creatinine (alkaline picrate method) and interferes with some methotrexate assays.",
+          "tag": "Lab interference",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "This may result in overestimation of serum/plasma creatinine of the order of 10%."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Adults and children over 12, by creatinine clearance (CrCl): over 30 ml/min standard dose; 15 to 30 ml/min half dose (480 mg tablets: 1 tablet every 12 hours; Forte 960 mg tablets: 1 tablet per DAY; adult suspension: 5 ml every 12 hours); under 15 ml/min not recommended. No information for children 12 and under with renal failure.",
+          "tag": "Dose by CrCl",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Creatinine Clearance (ml/min) Recommended Dosage >30 2 tablets every 12 hours 15 to 30 1 tablet every 12 hours <15 Not recommended"
+            },
+            {
+              "s": "emc-6997",
+              "q": "> 30 1 tablet every 12 hours 15 to 30 1 tablet per day <15 Not recommended"
+            },
+            {
+              "s": "emc-6996",
+              "q": "Creatinine Clearance (ml/min) Recommended Dosage >30 10 ml every 12 hours 15 to 30 5 ml every 12 hours <15 Not recommended"
+            },
+            {
+              "s": "emc-6999",
+              "q": "No information is available for children aged 12 years and under with renal failure."
+            }
+          ]
+        },
+        {
+          "t": "Measure plasma sulfamethoxazole every 2 to 3 days (12 hours post-dose); interrupt if total sulfamethoxazole exceeds 150 microgram/ml until below 120 microgram/ml.",
+          "tag": "Plasma levels",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "If the concentration of total sulfamethoxazole exceeds 150 microgram/ml then treatment should be interrupted until the value falls below 120 microgram/ml."
+            }
+          ]
+        },
+        {
+          "t": "Contraindicated in severe renal insufficiency where repeated plasma measurements cannot be done.",
+          "tag": "Severe",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Contra-indicated in severe renal insufficiency where repeated measurements of the plasma concentration cannot be performed."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Severe liver impairment: should not be given. No dosing data for hepatic impairment.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Co-Trimoxazole should not be given to patients with severe impairment of liver function."
+            },
+            {
+              "s": "emc-6999",
+              "q": "Impaired hepatic function: No data are available relating to dosage in patients with impaired hepatic function."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "First trimester: contraindicated (trimethoprim; miscarriage and malformations including neural tube defects, oral clefts, heart defects).",
+          "tag": "Trimester 1",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Trimethoprim is contraindicated during the first trimester of pregnancy (see section 4.3)."
+            }
+          ]
+        },
+        {
+          "t": "Second and third trimesters: avoid unless clinically necessary. Consider folate supplementation if used.",
+          "tag": "Trimesters 2-3",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "In the second and third trimesters, use should be avoided, unless clinically necessary."
+            },
+            {
+              "s": "emc-6999",
+              "q": "Folate supplementation should be considered if Co-Trimoxazole is used in pregnancy."
+            }
+          ]
+        },
+        {
+          "t": "Near delivery: risk of neonatal hyperbilirubinaemia and theoretical kernicterus. Avoid in late pregnancy where mother or infant has or is at particular risk of hyperbilirubinaemia.",
+          "tag": "Late pregnancy",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "there may be a risk of precipitating or exacerbating neonatal hyperbilirubinaemia, with an associated theoretical risk of kernicterus, when Co-Trimoxazole is administered to the mother near the time of delivery."
+            },
+            {
+              "s": "emc-6999",
+              "q": "Administration of Co-Trimoxazole should be avoided in late pregnancy and in lactating mothers where the mother or infant has, or is at particular risk of developing, hyperbilirubinaemia."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Both components pass into breast milk. Avoid where mother or infant has, or is at particular risk of, hyperbilirubinaemia. SmPC also says avoid in infants younger than 8 weeks (young infants prone to hyperbilirubinaemia).",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "The components of Co-Trimoxazole (trimethoprim and sulfamethoxazole) are excreted in breast milk."
+            },
+            {
+              "s": "emc-6999",
+              "q": "administration of Co-Trimoxazole should be avoided in infants younger than eight weeks in view of the predisposition of young infants to hyperbilirubinaemia."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "No fertility or contraception requirement in the co-trimoxazole SmPCs (4.5 only notes antibiotic/oral contraceptive advice). No BUMPS co-trimoxazole leaflet found (URL variants returned 404)."
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common: hyperkalaemia. Common: headache, nausea, diarrhoea, rash, fungal overgrowth.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Very common Hyperkalaemia."
+            },
+            {
+              "s": "emc-6999",
+              "q": "Common Nausea, diarrhoea."
+            },
+            {
+              "s": "emc-6999",
+              "q": "Common Overgrowth fungal."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "SJS/TEN/DRESS/AGEP: stop immediately; never restart after SJS/TEN/DRESS.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Co-Trimoxazole treatment should be discontinued (see section 4.8) and an alternative treatment considered (as appropriate)."
+            }
+          ]
+        },
+        {
+          "t": "Blood dyscrasias (agranulocytosis, aplastic anaemia, megaloblastic anaemia, thrombocytopenia), haemolysis in G6PD deficiency.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Very rare Leukopenia, neutropenia, thrombocytopenia, agranulocytosis, anaemia megaloblastic, aplastic anaemia"
+            }
+          ]
+        },
+        {
+          "t": "Respiratory hypersensitivity (cough, dyspnoea, lung infiltrates) can be fatal; hepatic necrosis; aseptic meningitis; circulatory shock (mainly immunocompromised).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Cough, dyspnoea and lung infiltration may be early indicators of respiratory hypersensitivity which, while very rare, has been fatal"
+            },
+            {
+              "s": "emc-6999",
+              "q": "Jaundice cholestatic and hepatic necrosis may be fatal."
+            }
+          ]
+        },
+        {
+          "t": "High PJP doses: severe hypersensitivity reactions may require stopping; rhabdomyolysis reported in HIV patients.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "At the high dosages used for PJP management severe hypersensitivity reactions have been reported, necessitating cessation of therapy."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Long courses, folate-deficient or elderly patients: monthly blood counts.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Regular monthly blood counts are advisable when Co-Trimoxazole is given for long periods, or to folate deficient patients or to the elderly"
+            }
+          ]
+        },
+        {
+          "t": "Potassium in patients at risk of hyperkalaemia/hyponatraemia.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Close monitoring of serum potassium is warranted in patients at risk of hyperkalaemia and hyponatraemia."
+            }
+          ]
+        },
+        {
+          "t": "Renal impairment: plasma sulfamethoxazole every 2-3 days; interrupt above 150 microgram/ml.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Measurements of plasma concentration of sulfamethoxazole at intervals of 2 to 3 days are recommended in samples obtained 12 hours after administration of Co-Trimoxazole."
+            }
+          ]
+        },
+        {
+          "t": "Stop for skin reactions suggesting SJS/TEN/DRESS/AGEP, HLH, or pulmonary signs suggesting ARDS.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "If symptoms or signs of SJS, TEN (e.g. progressive skin rash often with blisters or mucosal lesions) or DRESS (e.g. fever, eosinophilia) are present"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral. May be better taken with some food or drink to reduce GI upset.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "It may be preferable to take Co-Trimoxazole with some food or drink to minimise the possibility of gastrointestinal disturbances."
+            }
+          ]
+        },
+        {
+          "t": "Drink enough fluid to keep a good urine output.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "An adequate urinary output should be maintained at all times."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report any rash, blisters, mouth sores or fever at once, especially in the first weeks.",
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Patients should be advised of the signs and symptoms and monitored closely for skin reactions."
+            }
+          ]
+        },
+        {
+          "t": "Women using oral contraceptives: SmPC advises temporarily adding a barrier method while on antibiotics.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6999",
+              "q": "Women on treatment with antibiotics should temporarily use a barrier method in addition to the oral contraceptive, or choose another method of contraception."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "co-trimoxazole:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "co-trimoxazole",
+      "allergen": [
+        "sulfamethoxazole",
+        "trimethoprim",
+        "co-trimoxazole",
+        "group:sulfonamide"
+      ],
+      "concern": "Hypersensitivity to sulfonamides, trimethoprim or co-trimoxazole",
+      "consequence": "Hypersensitivity reaction, including severe reactions.",
+      "action": "Do not use.",
+      "sourceWording": "Hypersensitivity to the active substance(s) sulphonamides, trimethoprim, co-trimoxazole",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Hypersensitivity to the active substance(s) sulphonamides, trimethoprim, co-trimoxazole or to any of the excipients listed in section 6.1."
+        },
+        {
+          "s": "sps-sulfonamide",
+          "q": "People hypersensitive to a sulfonamide antibiotic should avoid other sulfonamide antibiotics."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:allergy:dapsone-note",
+      "kind": "allergy",
+      "level": "info",
+      "med": "co-trimoxazole",
+      "allergen": [
+        "dapsone"
+      ],
+      "concern": "Previous reaction to dapsone",
+      "consequence": "SPS: up to 20% of people sensitive to sulfonamide antibiotics also react to dapsone (dapsone has an arylamine group).",
+      "action": "No specific action stated for this direction; assess individually.",
+      "sourceWording": "Up to 20% of people sensitive to sulfonamide antibiotics also react to dapsone",
+      "src": [
+        {
+          "s": "sps-sulfonamide",
+          "q": "Up to 20% of people sensitive to sulfonamide antibiotics also react to dapsone, but most tolerate it without issues."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:pregnancy:t1",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "co-trimoxazole",
+      "trimesters": [
+        1
+      ],
+      "concern": "First trimester of pregnancy",
+      "consequence": "Trimethoprim component: increased risk of miscarriage and congenital malformations.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated during the first trimester",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Trimethoprim is contraindicated during the first trimester of pregnancy (see section 4.3)."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:pregnancy:t2-3",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "co-trimoxazole",
+      "trimesters": [
+        2,
+        3
+      ],
+      "concern": "Second or third trimester",
+      "consequence": "Folate antagonist; near delivery, risk of neonatal hyperbilirubinaemia/kernicterus.",
+      "action": "Avoid unless clinically necessary; consider folate supplementation; avoid in late pregnancy if hyperbilirubinaemia risk.",
+      "sourceWording": "use should be avoided, unless clinically necessary",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "In the second and third trimesters, use should be avoided, unless clinically necessary."
+        },
+        {
+          "s": "emc-6999",
+          "q": "Folate supplementation should be considered if Co-Trimoxazole is used in pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:breastfeeding:hyperbilirubinaemia",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "co-trimoxazole",
+      "concern": "Breastfeeding where mother or infant has or is at risk of hyperbilirubinaemia, or infant under 8 weeks",
+      "consequence": "Both components pass into milk; risk of infant hyperbilirubinaemia.",
+      "action": "Avoid in these situations.",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Administration of Co-Trimoxazole should be avoided in late pregnancy and in lactating mothers where the mother or infant has, or is at particular risk of developing, hyperbilirubinaemia."
+        },
+        {
+          "s": "emc-6999",
+          "q": "administration of Co-Trimoxazole should be avoided in infants younger than eight weeks in view of the predisposition of young infants to hyperbilirubinaemia."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:renal:crcl-15-30",
+      "kind": "renal",
+      "level": "dose",
+      "med": "co-trimoxazole",
+      "renal": {
+        "measure": "CrCl",
+        "min": 15,
+        "max": 30,
+        "maxInclusive": true
+      },
+      "age": {
+        "minYears": 12
+      },
+      "concern": "CrCl 15 to 30 ml/min (adults and children over 12)",
+      "consequence": "Accumulation.",
+      "action": "Halve the dose (480 mg tablets: 1 every 12 hours instead of 2; Forte: 1 tablet per day; adult suspension: 5 ml every 12 hours); measure plasma sulfamethoxazole every 2 to 3 days. No dosing information for children 12 and under with renal failure.",
+      "sourceWording": "15 to 30 1 tablet every 12 hours",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Impaired renal function: Dosage recommendation : Adults and children over 12 years: Creatinine Clearance (ml/min)"
+        },
+        {
+          "s": "emc-6999",
+          "q": "Creatinine Clearance (ml/min) Recommended Dosage >30 2 tablets every 12 hours 15 to 30 1 tablet every 12 hours <15 Not recommended"
+        },
+        {
+          "s": "emc-6997",
+          "q": "> 30 1 tablet every 12 hours 15 to 30 1 tablet per day <15 Not recommended"
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:renal:crcl-under-15",
+      "kind": "renal",
+      "level": "avoid",
+      "med": "co-trimoxazole",
+      "renal": {
+        "measure": "CrCl",
+        "max": 15
+      },
+      "age": {
+        "minYears": 12
+      },
+      "concern": "CrCl under 15 ml/min (adults and children over 12)",
+      "consequence": "Accumulation.",
+      "action": "Not recommended. Contraindicated in severe renal insufficiency if repeated plasma concentration measurements cannot be done.",
+      "sourceWording": "Not recommended",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "<15 Not recommended"
+        },
+        {
+          "s": "emc-6999",
+          "q": "Contra-indicated in severe renal insufficiency where repeated measurements of the plasma concentration cannot be performed."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "co-trimoxazole",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe liver impairment",
+      "consequence": "Listed in SmPC 4.3.",
+      "action": "Do not give.",
+      "sourceWording": "Contra-indicated in patients with severe impairment of liver function",
+      "src": [
+        {
+          "s": "emc-6997",
+          "q": "Contra-indicated in patients with severe impairment of liver function."
+        },
+        {
+          "s": "emc-6999",
+          "q": "Co-Trimoxazole should not be given to patients with severe impairment of liver function."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:age:under-6-weeks",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "co-trimoxazole",
+      "age": {
+        "minYears": 0,
+        "maxYears": 0.115
+      },
+      "concern": "Infant in first 6 weeks of life",
+      "consequence": "Listed in SmPC 4.3 (Contraindications).",
+      "action": "Do not give.",
+      "sourceWording": "should not be given (section 4.3 Contraindications)",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Co-trimoxazole should not be given to infants during the first 6 weeks of life."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:age:tab-under-12",
+      "kind": "age",
+      "level": "info",
+      "med": "co-trimoxazole",
+      "formulations": [
+        "co-trimoxazole-tab",
+        "co-trimoxazole-forte-tab",
+        "co-trimoxazole-adult-susp"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 12
+      },
+      "concern": "Child 12 or under given tablets or adult suspension",
+      "consequence": "These formulations are licensed for over 12 years.",
+      "action": "Use the paediatric suspension for children 12 and under.",
+      "sourceWording": "indicated in adults and children over 12 years",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Co-Trimoxazole tablets are indicated in adults and children over 12 years"
+        },
+        {
+          "s": "emc-6994",
+          "q": "Co-Trimoxazole Paediatric Suspension is indicated in children aged 12 years and under (≥6 weeks)"
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:condition:porphyria",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "co-trimoxazole",
+      "condition": "porphyria",
+      "concern": "Acute porphyria",
+      "consequence": "Trimethoprim and sulfonamides have been linked to exacerbation of porphyria.",
+      "action": "Do not give (acute porphyria is listed in 4.3). Avoid also if known or suspected to be at risk of porphyria (4.4).",
+      "sourceWording": "should not be given (section 4.3 Contraindications)",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Co-Trimoxazole should not be given to patients with acute porphyria."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:condition:immune-thrombocytopenia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "co-trimoxazole",
+      "condition": "drug-induced-immune-thrombocytopenia",
+      "concern": "History of drug-induced immune thrombocytopenia with trimethoprim and/or sulfonamides",
+      "consequence": "Listed in SmPC 4.3 (Contraindications).",
+      "action": "Do not give.",
+      "sourceWording": "should not be given (section 4.3 Contraindications)",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Co-Trimoxazole should not be given to patients with a history of drug-induced immune thrombocytopenia with use of trimethoprim and/or sulphonamides."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:condition:severe-renal-impairment",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "co-trimoxazole",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal insufficiency WHERE repeated plasma concentration measurements cannot be performed",
+      "consequence": "Accumulation of sulfamethoxazole and trimethoprim.",
+      "action": "Contraindicated if plasma sulfamethoxazole cannot be measured repeatedly (every 2 to 3 days, 12 hours post-dose; interrupt above 150 microgram/ml). The SmPC gives no CrCl number for severe; see the CrCl rules.",
+      "sourceWording": "Contra-indicated in severe renal insufficiency where repeated measurements of the plasma concentration cannot be performed",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Contra-indicated in severe renal insufficiency where repeated measurements of the plasma concentration cannot be performed."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-trimoxazole",
+      "condition": "renal-impairment",
+      "concern": "Known renal impairment",
+      "consequence": "Accumulation; elderly with impaired kidney function are more likely to have serious effects.",
+      "action": "Special measures: dose by CrCl and plasma sulfamethoxazole monitoring (section 4.2). No dosing information for children 12 and under with renal failure.",
+      "sourceWording": "special measures should be adopted",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "For patients with known renal impairment special measures should be adopted (see section 4.2)."
+        },
+        {
+          "s": "emc-6999",
+          "q": "No information is available for children aged 12 years and under with renal failure."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:condition:blood-dyscrasia",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "co-trimoxazole",
+      "condition": "blood-dyscrasia",
+      "concern": "Serious haematological disorder",
+      "consequence": "Risk of blood dyscrasias.",
+      "action": "Do not give except under careful supervision.",
+      "sourceWording": "Except under careful supervision Co-Trimoxazole should not be given",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Except under careful supervision Co-Trimoxazole should not be given to patients with serious haematological disorders"
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:condition:g6pd",
+      "kind": "condition",
+      "level": "info",
+      "med": "co-trimoxazole",
+      "condition": "g6pd-deficiency",
+      "concern": "G6PD deficiency",
+      "consequence": "Haemolysis may occur.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "haemolysis may occur",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "In glucose-6-phosphate dehydrogenase (G-6-PD) deficient patients haemolysis may occur."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:condition:asthma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-trimoxazole",
+      "condition": "asthma",
+      "concern": "Severe atopy or bronchial asthma",
+      "consequence": "SmPC precaution.",
+      "action": "Give with caution.",
+      "sourceWording": "should be given with caution",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Co-Trimoxazole should be given with caution to patients with severe atopy or bronchial asthma."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:condition:hyperkalaemia",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "co-trimoxazole",
+      "condition": "hyperkalaemia",
+      "effect": "hyperkalaemia",
+      "concern": "Risk of hyperkalaemia",
+      "consequence": "Hyperkalaemia is very common with co-trimoxazole.",
+      "action": "Monitor serum potassium closely.",
+      "sourceWording": "Close monitoring of serum potassium is warranted",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Close monitoring of serum potassium is warranted in patients at risk of hyperkalaemia and hyponatraemia."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "co-trimoxazole",
+      "condition": "hyponatraemia",
+      "effect": "hyponatraemia",
+      "concern": "Risk of hyponatraemia",
+      "consequence": "Hyponatraemia reported.",
+      "action": "Monitor closely.",
+      "sourceWording": "Close monitoring of serum potassium is warranted",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Close monitoring of serum potassium is warranted in patients at risk of hyperkalaemia and hyponatraemia."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:condition:folate-deficiency",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "co-trimoxazole",
+      "condition": "folate-deficiency",
+      "concern": "Folate deficiency",
+      "consequence": "Possible haematological changes due to lack of folate.",
+      "action": "Monthly blood counts advisable.",
+      "sourceWording": "Regular monthly blood counts are advisable",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Regular monthly blood counts are advisable when Co-Trimoxazole is given for long periods, or to folate deficient patients or to the elderly"
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "co-trimoxazole",
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Co-trimoxazole with methotrexate",
+      "consequence": "Raised free methotrexate and additive antifolate effect; risk of severe (possibly delayed) bone marrow suppression.",
+      "action": "SPS: avoid; if unavoidable, counsel, monitor FBC frequently, consider extra FBC monitoring for at least 2 months. Co-trimoxazole SmPC: consider a folate supplement if used. One methotrexate tablet SmPC lists the combination under 4.3 Contraindications.",
+      "sourceWording": "Avoid prescribing co-trimoxazole or trimethoprim with methotrexate",
+      "src": [
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Avoid prescribing co-trimoxazole or trimethoprim with methotrexate, due to the risk of severe bone marrow suppression."
+        },
+        {
+          "s": "emc-511",
+          "q": "Methotrexate tablets should not be used concomitantly with drugs with antifolate properties (e.g. co-trimoxazole)"
+        },
+        {
+          "s": "emc-6999",
+          "q": "Methotrexate: co-trimoxazole may increase the free plasma levels of methotrexate."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "co-trimoxazole",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Co-trimoxazole with warfarin",
+      "consequence": "Potentiated anticoagulant effect (inhibited metabolism, protein-binding displacement).",
+      "action": "Careful control of anticoagulation (INR) during treatment.",
+      "sourceWording": "Careful control of the anticoagulant therapy",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Warfarin: co-trimoxazole has been shown to potentiate the anticoagulant activity of warfarin via stereo-selective inhibition of its metabolism."
+        },
+        {
+          "s": "emc-6999",
+          "q": "Careful control of the anticoagulant therapy during treatment with Co-Trimoxazole is advisable."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "co-trimoxazole",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "Co-trimoxazole with ACE inhibitors",
+      "consequence": "Clinically relevant hyperkalaemia.",
+      "action": "Use with caution; monitor potassium.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Hyperkalaemia: caution should be exercised in patients taking any other drugs that can cause hyperkalaemia, for example ACE inhibitors"
+        },
+        {
+          "s": "emc-6999",
+          "q": "Concomitant use of trimethoprim-sulfamethoxazole (co-trimoxazole) may result in clinically relevant hyperkalaemia."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:interaction:potassium-sparing-diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "co-trimoxazole",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Co-trimoxazole with potassium-sparing diuretics (e.g. spironolactone)",
+      "consequence": "Clinically relevant hyperkalaemia.",
+      "action": "Use with caution; monitor potassium.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "potassium-sparing diuretics such as spironolactone"
+        },
+        {
+          "s": "emc-6999",
+          "q": "Concomitant use of trimethoprim-sulfamethoxazole (co-trimoxazole) may result in clinically relevant hyperkalaemia."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:interaction:diuretic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-trimoxazole",
+      "other": "group:diuretic",
+      "concern": "Co-trimoxazole with diuretics (mainly thiazides) in elderly",
+      "consequence": "Increased risk of thrombocytopenia with or without purpura.",
+      "action": "No specific action stated.",
+      "sourceWording": "there appears to be an increased risk of thrombocytopenia",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Diuretics (thiazides): in elderly patients concurrently receiving diuretics, mainly thiazides, there appears to be an increased risk of thrombocytopenia with or without purpura."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:duplication:trimethoprim",
+      "kind": "duplication",
+      "level": "info",
+      "med": "co-trimoxazole",
+      "other": "trimethoprim",
+      "concern": "Co-trimoxazole with trimethoprim",
+      "consequence": "Co-trimoxazole already contains trimethoprim (duplicate ingredient).",
+      "action": "Duplicate ingredient: check the combination is intended (no action stated in source).",
+      "sourceWording": "co-trimoxazole contains both sulfamethoxazole and trimethoprim",
+      "src": [
+        {
+          "s": "sps-sulfonamide",
+          "q": "Trimethoprim is not a sulfonamide, but co-trimoxazole contains both sulfamethoxazole and trimethoprim."
+        }
+      ]
+    }
+  ]
+}

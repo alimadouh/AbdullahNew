@@ -1,0 +1,1080 @@
+{
+  "id": "clopidogrel",
+  "name": "Clopidogrel",
+  "ingredients": [
+    "clopidogrel"
+  ],
+  "className": "Platelet aggregation inhibitor (thienopyridine, P2Y12 inhibitor)",
+  "groups": [
+    "antiplatelet"
+  ],
+  "searchTerms": [
+    "clopidogrel hydrogen sulfate",
+    "clopidogrel bisulfate"
+  ],
+  "formulations": [
+    {
+      "id": "clopidogrel-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "75 mg (300 mg tablets also exist for loading)",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "Each film-coated tablet contains 75 mg of clopidogrel (as hydrogen sulphate)."
+        }
+      ],
+      "sourceIds": [
+        "emc-5935"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Secondary prevention of atherothrombotic events in adults with recent myocardial infarction (a few days to under 35 days), ischaemic stroke (7 days to under 6 months) or established peripheral arterial disease.",
+          "tag": "Secondary prevention",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Adult patients suffering from myocardial infarction (from a few days until less than 35 days), ischemic stroke (from 7 days until less than 6 months) or established peripheral arterial disease."
+            }
+          ]
+        },
+        {
+          "t": "Acute coronary syndrome (with aspirin): NSTE-ACS including stenting after PCI; STEMI with PCI or in medically treated patients eligible for thrombolysis.",
+          "tag": "ACS",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Non-ST segment elevation acute coronary syndrome (unstable angina or non-Q-wave myocardial infarction), including patients undergoing a stent placement following percutaneous coronary intervention, in combination with acetylsalicylic acid (ASA)."
+            }
+          ]
+        },
+        {
+          "t": "With aspirin in adults with moderate to high-risk TIA (ABCD2 score ≥4) or minor ischaemic stroke (NIHSS ≤3) within 24 hours of the event.",
+          "tag": "TIA / minor stroke",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Adult patients with moderate to high-risk TIA (ABCD21 score ≥4) or minor IS (NIHSS2 ≤3) within 24 hours of either the TIA or IS event."
+            }
+          ]
+        },
+        {
+          "t": "With aspirin in adults with atrial fibrillation, at least one vascular risk factor, unsuitable for vitamin K antagonists and with low bleeding risk.",
+          "tag": "Atrial fibrillation",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "are not suitable for treatment with Vitamin K antagonists (VKA) and who have a low bleeding risk"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No specialist-only or brand restriction found in the clopidogrel SmPC, MHRA or SPS pages checked."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Secondary prevention (MI, stroke, PAD) and atrial fibrillation: 75 mg once daily (with aspirin 75-100 mg daily in AF).",
+          "tag": "Standard",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Clopidogrel should be given as a single daily dose of 75 mg."
+            },
+            {
+              "s": "emc-5935",
+              "q": "In patients with atrial fibrillation, clopidogrel should be given as a single daily dose of 75 mg."
+            }
+          ]
+        },
+        {
+          "t": "NSTE-ACS: loading dose 300 mg or 600 mg (600 mg may be considered under 75 years when PCI is intended), then 75 mg once daily with aspirin (aspirin not above 100 mg recommended). Trial data support up to 12 months.",
+          "tag": "NSTE-ACS",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "clopidogrel treatment should be initiated with a single 300 mg or 600mg loading dose."
+            },
+            {
+              "s": "emc-5935",
+              "q": "Clopidogrel treatment should be continued at 75 mg once a day"
+            },
+            {
+              "s": "emc-5935",
+              "q": "Clinical trial data support use up to 12 months"
+            }
+          ]
+        },
+        {
+          "t": "STEMI, medically treated and eligible for thrombolysis: 300 mg loading dose then 75 mg once daily with aspirin, for at least four weeks; over 75 years start without a loading dose.",
+          "tag": "STEMI (medical)",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "clopidogrel should be given as a single daily dose of 75 mg initiated with a 300 mg loading dose"
+            },
+            {
+              "s": "emc-5935",
+              "q": "For medically treated patients over 75 years of age clopidogrel should be initiated without a loading dose."
+            }
+          ]
+        },
+        {
+          "t": "STEMI with PCI: 600 mg loading dose for primary PCI or PCI more than 24 hours after fibrinolysis (caution if 75 years or older); 300 mg if PCI within 24 hours of fibrinolysis; then 75 mg daily with aspirin 75-100 mg, up to 12 months.",
+          "tag": "STEMI (PCI)",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Clopidogrel should be initiated at a loading dose of 600 mg in patients undergoing primary PCI"
+            },
+            {
+              "s": "emc-5935",
+              "q": "Clopidogrel 300 mg loading dose should be given in patients undergoing PCI within 24 hours of receiving fibrinolytic therapy."
+            }
+          ]
+        },
+        {
+          "t": "Moderate to high-risk TIA or minor ischaemic stroke: 300 mg loading dose then 75 mg once daily with aspirin 75-100 mg; start within 24 hours and continue 21 days, then single antiplatelet therapy.",
+          "tag": "TIA / minor stroke",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "should be given a loading dose of clopidogrel 300 mg followed by clopidogrel 75 mg once daily and ASA (75 mg -100 mg once daily)"
+            },
+            {
+              "s": "emc-5935",
+              "q": "be continued for 21 days followed by single antiplatelet therapy"
+            }
+          ]
+        },
+        {
+          "t": "Missed dose: within 12 hours, take it at once; after more than 12 hours, take the next dose at the usual time and do not double.",
+          "tag": "Missed dose",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Within less than 12 hours after regular scheduled time: patients should take the dose immediately"
+            },
+            {
+              "s": "emc-5935",
+              "q": "should not double the dose"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Should not be used in children because of efficacy concerns.",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Clopidogrel should not be used in children because of efficacy concerns"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to clopidogrel or any excipient.",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 2 or section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Severe hepatic impairment.",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Severe hepatic impairment."
+            }
+          ]
+        },
+        {
+          "t": "Active pathological bleeding such as peptic ulcer or intracranial haemorrhage.",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Active pathological bleeding such as peptic ulcer or intracranial hemorrhage."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Bleeding risk: use with caution with trauma, surgery or other conditions with increased bleeding risk, and with aspirin, heparin, GP IIb/IIIa inhibitors, NSAIDs, SSRIs or other medicines that increase bleeding risk. Watch for signs of bleeding, especially in the first weeks.",
+          "tag": "Bleeding",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "clopidogrel should be used with caution in patients who may be at risk of increased bleeding from trauma, surgery or other pathological conditions"
+            },
+            {
+              "s": "emc-5935",
+              "q": "Patients should be followed carefully for any signs of bleeding including occult bleeding"
+            }
+          ]
+        },
+        {
+          "t": "Lesions with a tendency to bleed (particularly gastrointestinal and intraocular): use with caution.",
+          "tag": "GI / intraocular lesions",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "should be used with caution in patients who have lesions with a propensity to bleed (particularly gastrointestinal and intraocular)"
+            }
+          ]
+        },
+        {
+          "t": "Elective surgery: if antiplatelet effect is not wanted, stop clopidogrel 7 days before.",
+          "tag": "Surgery",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "clopidogrel should be discontinued 7 days prior to surgery"
+            }
+          ]
+        },
+        {
+          "t": "Age 75 or over: 600 mg loading dose not recommended in NSTE-ACS; in STEMI-PCI use only after individual bleeding-risk assessment.",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "The use of clopidogrel 600 mg loading dose is not recommended in patients with non-ST segment elevation acute coronary syndrome and ≥75 years of age due to increased bleeding risk"
+            }
+          ]
+        },
+        {
+          "t": "CYP2C19 poor metabolisers form less active metabolite and have a smaller antiplatelet effect; genotype tests are available.",
+          "tag": "CYP2C19 pharmacogenetics",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "In patients who are poor CYP2C19 metabolisers, clopidogrel at recommended doses forms less of the active metabolite of clopidogrel and has a smaller effect on platelet function."
+            }
+          ]
+        },
+        {
+          "t": "Cross-reactivity with other thienopyridines (ticlopidine, prasugrel) has been reported; check history of thienopyridine allergy.",
+          "tag": "Thienopyridine allergy",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Patients should be evaluated for history of hypersensitivity to thienopyridines (such as clopidogrel, ticlopidine, prasugrel) since cross-reactivity among thienopyridines has been reported"
+            }
+          ]
+        },
+        {
+          "t": "Renal impairment and moderate hepatic disease: limited experience; use with caution.",
+          "tag": "Renal / hepatic",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Therefore clopidogrel should be used with caution in these patients"
+            },
+            {
+              "s": "emc-5935",
+              "q": "Clopidogrel should therefore be used with caution in this population"
+            }
+          ]
+        },
+        {
+          "t": "Non-minor ischaemic stroke (NIHSS >4) and patients planned for endarterectomy, thrombectomy, thrombolysis or anticoagulation: dual antiplatelet therapy not recommended.",
+          "tag": "Stroke",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "In view of the lack of data, use of dual antiplatelet therapy is not recommended"
+            }
+          ]
+        },
+        {
+          "t": "Contains lactose and hydrogenated castor oil.",
+          "tag": "Excipients",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Plavix contains lactose."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Omeprazole (and esomeprazole): reduces active metabolite exposure and antiplatelet effect; concomitant use should be discouraged. SPS: avoid; use lansoprazole, pantoprazole or rabeprazole instead. Pantoprazole can be given with clopidogrel.",
+          "tag": "Omeprazole / PPIs",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "As a precaution, concomitant use of omeprazole or esomeprazole should be discouraged"
+            },
+            {
+              "s": "sps-clopidogrel-ppi",
+              "q": "For patients taking clopidogrel who require PPI therapy, avoid omeprazole and esomeprazole. Use lansoprazole, pantoprazole or rabeprazole in preference."
+            },
+            {
+              "s": "emc-5935",
+              "q": "These results indicate that clopidogrel can be administered with pantoprazole."
+            }
+          ]
+        },
+        {
+          "t": "MHRA: doctors should check whether patients on clopidogrel are buying omeprazole over the counter; pharmacists should check whether omeprazole buyers take clopidogrel.",
+          "tag": "Omeprazole (OTC)",
+          "src": [
+            {
+              "s": "mhra-dsu-clopidogrel-ppi-2010",
+              "q": "Doctors should check whether patients who are taking clopidogrel are also buying over-the-counter omeprazole"
+            }
+          ]
+        },
+        {
+          "t": "Other CYP2C19 inhibitors: discourage concomitant use. MHRA lists ciprofloxacin among CYP2C19 inhibitors.",
+          "tag": "CYP2C19 inhibitors (e.g. ciprofloxacin)",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "As a precaution concomitant use of strong or moderate CYP2C19 inhibitors should be discouraged"
+            },
+            {
+              "s": "mhra-dsu-clopidogrel-ppi-2010",
+              "q": "Discourage concomitant use of other known CYP2C19-inhibiting medicines with clopidogrel"
+            }
+          ]
+        },
+        {
+          "t": "Oral anticoagulants (warfarin): not recommended; increases bleeding intensity through independent effects on haemostasis.",
+          "tag": "Warfarin",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "the concomitant administration of clopidogrel with oral anticoagulants is not recommended since it may increase the intensity of bleedings"
+            }
+          ]
+        },
+        {
+          "t": "NSAIDs (including COX-2 inhibitors): co-administer with caution; naproxen increased occult GI blood loss.",
+          "tag": "NSAIDs",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "NSAIDs including Cox-2 inhibitors and clopidogrel should be co-administered with caution"
+            }
+          ]
+        },
+        {
+          "t": "SSRIs: increase bleeding risk; use together with caution.",
+          "tag": "SSRIs",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "the concomitant administration of SSRIs with clopidogrel should be undertaken with caution"
+            }
+          ]
+        },
+        {
+          "t": "Opioid agonists (e.g. morphine) may delay and reduce clopidogrel absorption; in ACS needing morphine or other opioids, consider a parenteral antiplatelet.",
+          "tag": "Opioids",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "co-administration of opioid agonists has the potential to delay and reduce the absorption of clopidogrel"
+            }
+          ]
+        },
+        {
+          "t": "Aspirin and heparin: possible increased bleeding; use with caution (combination with aspirin is standard in ACS for up to one year).",
+          "tag": "Aspirin / heparin",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "A pharmacodynamic interaction between clopidogrel and acetylsalicylic acid is possible, leading to increased risk of bleeding."
+            }
+          ]
+        },
+        {
+          "t": "CYP2C8 substrates (e.g. repaglinide, paclitaxel): caution, clopidogrel raises their levels.",
+          "tag": "CYP2C8 substrates",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "concomitant administration of clopidogrel and drugs primarily cleared by CYP2C8 metabolism (e.g., repaglinide, paclitaxel) should be undertaken with caution"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Limited experience in renal impairment; use with caution. No eGFR/CrCl threshold or dose change is given.",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Therapeutic experience with clopidogrel is limited in patients with renal impairment. Therefore clopidogrel should be used with caution in these patients"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Severe hepatic impairment: contraindicated. Moderate hepatic disease (may have bleeding diatheses): limited experience; use with caution.",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Severe hepatic impairment."
+            },
+            {
+              "s": "emc-5935",
+              "q": "Experience is limited in patients with moderate hepatic disease who may have bleeding diatheses. Clopidogrel should therefore be used with caution in this population"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: no clinical data; as a precaution it is preferable not to use clopidogrel in pregnancy.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "it is preferable not to use clopidogrel during pregnancy as a precautionary measure"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: can be used in pregnancy if prescribed by a doctor when benefits outweigh risks; limited data do not suggest harm; use at the end of pregnancy may increase postpartum haemorrhage risk; switching to low-molecular-weight heparin may be possible.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-clopidogrel",
+              "q": "Clopidogrel can be used in pregnancy if prescribed by a doctor."
+            },
+            {
+              "s": "bumps-clopidogrel",
+              "q": "Taking clopidogrel at the end of pregnancy may increase the chance of heavy bleeding during childbirth (postpartum haemorrhage)."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: as a precaution, breastfeeding should not be continued during treatment.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "As a precautionary measure, breast-feeding should not be continued during treatment with Plavix."
+            }
+          ]
+        },
+        {
+          "t": "SPS (differs from SmPC): can be used with caution during breastfeeding with infant monitoring (diarrhoea, constipation, skin reactions, bruising or bleeding).",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-antiplatelet-breastfeeding",
+              "q": "It can be used with caution during breastfeeding but monitoring is required. Monitoring As a precaution, monitor the infant for diarrhoea, constipation or skin reactions"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No effect on fertility in animal studies.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Clopidogrel was not shown to alter fertility in animal studies."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Bleeding is the most common reaction (mostly in the first month). Common: haematoma, epistaxis, gastrointestinal haemorrhage, diarrhoea, abdominal pain, dyspepsia, bruising, bleeding at puncture site.",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Bleeding is the most common reaction reported both in clinical studies as well as in post-marketing experience where it was mostly reported during the first month of treatment."
+            },
+            {
+              "s": "emc-5935",
+              "q": "Gastrointestinal hemorrhage, diarrhoea, abdominal pain, dyspepsia"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Serious bleeding including intracranial and gastrointestinal haemorrhage (some fatal): check blood count and other tests promptly if bleeding symptoms occur. Platelet transfusion may reverse the effect; there is no antidote.",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "blood cell count determination and/or other appropriate testing should be promptly considered whenever clinical symptoms suggestive of bleeding arise"
+            },
+            {
+              "s": "emc-5935",
+              "q": "platelet transfusion may reverse the effects of clopidogrel"
+            }
+          ]
+        },
+        {
+          "t": "Thrombotic thrombocytopenic purpura (very rare, sometimes after short exposure): potentially fatal; needs prompt treatment including plasmapheresis.",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "TTP is a potentially fatal condition requiring prompt treatment including plasmapheresis."
+            }
+          ]
+        },
+        {
+          "t": "Acquired haemophilia: consider if isolated prolonged aPTT, with or without bleeding; refer to specialists and stop clopidogrel (MHRA: avoid invasive procedures).",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Patients with a confirmed diagnosis of acquired haemophilia should be managed and treated by specialists, and clopidogrel should be discontinued."
+            },
+            {
+              "s": "mhra-dsu-clopidogrel-acquired-haemophilia-2013",
+              "q": "Acquired haemophilia should be considered in the event of isolated prolonged activated partial thromboplastin time (aPTT)"
+            }
+          ]
+        },
+        {
+          "t": "Very rare/not known: aplastic anaemia, agranulocytosis, severe neutropenia, angioedema, SJS/TEN, DRESS, anaphylactoid reactions, Kounis syndrome, acute liver failure.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Bullous dermatitis (toxic epidermal necrolysis, Stevens Johnson Syndrome, erythema multiforme, acute generalised exanthematous pustulosis (AGEP)), angioedema"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "No routine laboratory monitoring is stated. Promptly check blood count/other tests if symptoms suggest bleeding.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "blood cell count determination and/or other appropriate testing should be promptly considered whenever clinical symptoms suggestive of bleeding arise"
+            }
+          ]
+        },
+        {
+          "t": "Watch carefully for bleeding, including occult bleeding, especially in the first weeks and after invasive procedures or surgery.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "especially during the first weeks of treatment and/or after invasive cardiac procedures or surgery"
+            }
+          ]
+        },
+        {
+          "t": "Stop if acquired haemophilia is confirmed.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Patients with a confirmed diagnosis of acquired haemophilia should be managed and treated by specialists, and clopidogrel should be discontinued."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral, with or without food.",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "It may be given with or without food."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Bleeding may take longer to stop; report any unusual bleeding (site or duration).",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Patients should be told that it might take longer than usual to stop bleeding when they take clopidogrel"
+            }
+          ]
+        },
+        {
+          "t": "Tell doctors and dentists about clopidogrel before any surgery and before starting any new medicine (including over-the-counter omeprazole).",
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "Patients should inform physicians and dentists that they are taking clopidogrel before any surgery is scheduled and before any new medicinal product is taken."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "clopidogrel:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "clopidogrel",
+      "allergen": [
+        "clopidogrel"
+      ],
+      "concern": "Hypersensitivity to clopidogrel",
+      "consequence": "Risk of hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 2 or section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:condition:active-bleeding",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "clopidogrel",
+      "condition": "active-bleeding",
+      "effect": "bleeding",
+      "concern": "Active pathological bleeding (e.g. peptic ulcer, intracranial haemorrhage)",
+      "consequence": "Increased bleeding.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "Active pathological bleeding such as peptic ulcer or intracranial hemorrhage."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:condition:gi-lesions",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clopidogrel",
+      "condition": "peptic-ulcer-gi-bleeding",
+      "effect": "bleeding",
+      "concern": "Lesions prone to bleed (particularly GI, e.g. peptic ulcer history)",
+      "consequence": "Clopidogrel prolongs bleeding time.",
+      "action": "Use with caution. Contraindicated if there is active pathological bleeding (e.g. a bleeding peptic ulcer).",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "should be used with caution in patients who have lesions with a propensity to bleed (particularly gastrointestinal and intraocular)"
+        },
+        {
+          "s": "emc-5935",
+          "q": "Active pathological bleeding such as peptic ulcer or intracranial hemorrhage."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:condition:bleeding-disorder",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clopidogrel",
+      "condition": "bleeding-disorder",
+      "effect": "bleeding",
+      "concern": "Increased bleeding risk from trauma, surgery or other conditions",
+      "consequence": "Increased bleeding.",
+      "action": "Use with caution; watch for bleeding.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "clopidogrel should be used with caution in patients who may be at risk of increased bleeding from trauma, surgery or other pathological conditions"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:condition:surgery",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clopidogrel",
+      "condition": "surgery-planned",
+      "concern": "Planned elective surgery",
+      "consequence": "Bleeding risk.",
+      "action": "If antiplatelet effect is not wanted, stop clopidogrel 7 days before surgery.",
+      "sourceWording": "should be discontinued 7 days prior to surgery",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "If a patient is to undergo elective surgery and antiplatelet effect is temporarily not desirable, clopidogrel should be discontinued 7 days prior to surgery."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "clopidogrel",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe hepatic impairment",
+      "consequence": "Bleeding risk / limited data.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "Severe hepatic impairment."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:hepatic:moderate",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "clopidogrel",
+      "hepatic": [
+        "moderate"
+      ],
+      "concern": "Moderate hepatic disease",
+      "consequence": "May have bleeding diatheses; limited experience.",
+      "action": "Use with caution.",
+      "sourceWording": "should therefore be used with caution",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "Experience is limited in patients with moderate hepatic disease who may have bleeding diatheses. Clopidogrel should therefore be used with caution in this population"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clopidogrel",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment",
+      "consequence": "Limited experience.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "Therapeutic experience with clopidogrel is limited in patients with renal impairment. Therefore clopidogrel should be used with caution in these patients"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:age:child",
+      "kind": "age",
+      "level": "avoid",
+      "med": "clopidogrel",
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "concern": "Child (under 18 years)",
+      "consequence": "Efficacy concerns.",
+      "action": "Should not be used in children.",
+      "sourceWording": "should not be used in children",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "Clopidogrel should not be used in children because of efficacy concerns"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:age:75-plus",
+      "kind": "age",
+      "level": "caution",
+      "med": "clopidogrel",
+      "age": {
+        "minYears": 75
+      },
+      "effect": "bleeding",
+      "concern": "Age 75 years or over (loading dose)",
+      "consequence": "Increased bleeding risk with 600 mg loading dose.",
+      "action": "600 mg loading dose not recommended in NSTE-ACS; in STEMI-PCI only after individual bleeding-risk assessment; medically treated STEMI over 75: no loading dose.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "The use of clopidogrel 600 mg loading dose is not recommended in patients with non-ST segment elevation acute coronary syndrome and ≥75 years of age due to increased bleeding risk"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:condition:cyp2c19-poor",
+      "kind": "condition",
+      "level": "info",
+      "med": "clopidogrel",
+      "condition": "cyp2c19-poor-metaboliser",
+      "concern": "CYP2C19 poor metaboliser",
+      "consequence": "Less active metabolite and smaller antiplatelet effect.",
+      "action": "Be aware of reduced effect; genotype tests are available.",
+      "sourceWording": "has a smaller effect on platelet function",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "In patients who are poor CYP2C19 metabolisers, clopidogrel at recommended doses forms less of the active metabolite of clopidogrel and has a smaller effect on platelet function."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "clopidogrel",
+      "effect": "bleeding",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "No clinical data on exposure in pregnancy.",
+      "action": "SmPC: as a precaution it is preferable not to use clopidogrel during pregnancy.",
+      "sourceWording": "it is preferable not to use",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "As no clinical data on exposure to clopidogrel during pregnancy are available"
+        },
+        {
+          "s": "emc-5935",
+          "q": "it is preferable not to use clopidogrel during pregnancy as a precautionary measure"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "clopidogrel",
+      "effect": "bleeding",
+      "concern": "Pregnancy (BUMPS view, differs from SmPC)",
+      "consequence": "Limited data do not suggest harm to the baby; use at the end of pregnancy may increase the chance of postpartum haemorrhage.",
+      "action": "BUMPS: only recommended if the benefits outweigh possible risks; switching to low-molecular-weight heparin may be possible. Do not stop without medical advice.",
+      "sourceWording": "will only be recommended in pregnancy if the benefits",
+      "src": [
+        {
+          "s": "bumps-clopidogrel",
+          "q": "Clopidogrel will only be recommended in pregnancy if the benefits of treating a potentially serious condition outweigh any possible risks of using the medication."
+        },
+        {
+          "s": "bumps-clopidogrel",
+          "q": "Taking clopidogrel at the end of pregnancy may increase the chance of heavy bleeding during childbirth (postpartum haemorrhage)."
+        },
+        {
+          "s": "bumps-clopidogrel",
+          "q": "Many women who take clopidogrel can be switched to a different medicine (low-molecular-weight heparin)"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "clopidogrel",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Excreted in animal milk; unknown in humans.",
+      "action": "SmPC: breastfeeding should not be continued during treatment.",
+      "sourceWording": "should not be continued",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "As a precautionary measure, breast-feeding should not be continued during treatment with Plavix."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "clopidogrel",
+      "concern": "Breastfeeding (SPS view, differs from SmPC)",
+      "consequence": "Low milk levels likely; irreversible platelet effect if absorbed.",
+      "action": "SPS: use with caution; monitor infant for diarrhoea, constipation, skin reactions, bruising or bleeding.",
+      "sourceWording": "can be used with caution",
+      "src": [
+        {
+          "s": "sps-antiplatelet-breastfeeding",
+          "q": "It can be used with caution during breastfeeding but monitoring is required. Monitoring As a precaution, monitor the infant for diarrhoea, constipation or skin reactions"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:omeprazole",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "clopidogrel",
+      "other": "omeprazole",
+      "concern": "Omeprazole (CYP2C19 inhibitor)",
+      "consequence": "Reduced active metabolite (about 40-45%) and reduced antiplatelet effect.",
+      "action": "Discourage/avoid the combination; use lansoprazole, pantoprazole or rabeprazole instead (SPS).",
+      "sourceWording": "should be discouraged",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "As a precaution, concomitant use of omeprazole or esomeprazole should be discouraged"
+        },
+        {
+          "s": "mhra-dsu-clopidogrel-ppi-2010",
+          "q": "Concomitant use of clopidogrel and omeprazole or esomeprazole is to be discouraged unless considered essential."
+        },
+        {
+          "s": "sps-clopidogrel-ppi",
+          "q": "For patients taking clopidogrel who require PPI therapy, avoid omeprazole and esomeprazole."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:ciprofloxacin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "clopidogrel",
+      "other": "ciprofloxacin",
+      "concern": "Ciprofloxacin (CYP2C19 inhibitor, per MHRA)",
+      "consequence": "Expected to reduce clopidogrel activation, like omeprazole (MHRA).",
+      "action": "Discourage concomitant use (MHRA 2010). Not listed in the current UK SmPC used here.",
+      "sourceWording": "Discourage concomitant use",
+      "src": [
+        {
+          "s": "mhra-dsu-clopidogrel-ppi-2010",
+          "q": "Discourage concomitant use of other known CYP2C19-inhibiting medicines with clopidogrel"
+        },
+        {
+          "s": "mhra-dsu-clopidogrel-ppi-2010",
+          "q": "CYP2C19 inhibitors include fluvoxamine, fluoxetine, moclobemide, voriconazole, fluconazole, ticlopidine, ciprofloxacin"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:warfarin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "clopidogrel",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (oral anticoagulant)",
+      "consequence": "Increased bleeding through independent effects on haemostasis.",
+      "action": "Not recommended together.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "the concomitant administration of clopidogrel with oral anticoagulants is not recommended since it may increase the intensity of bleedings"
+        },
+        {
+          "s": "emc-5935",
+          "q": "coadministration of clopidogrel with warfarin increases the risk of bleeding"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:nsaid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "clopidogrel",
+      "other": "group:nsaid",
+      "effect": "bleeding",
+      "concern": "NSAIDs",
+      "consequence": "Increased GI blood loss/bleeding risk.",
+      "action": "Co-administer with caution.",
+      "sourceWording": "should be co-administered with caution",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "NSAIDs including Cox-2 inhibitors and clopidogrel should be co-administered with caution"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:ssri",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "clopidogrel",
+      "other": "group:ssri",
+      "effect": "bleeding",
+      "concern": "SSRIs",
+      "consequence": "SSRIs affect platelet activation and increase bleeding risk.",
+      "action": "Use together with caution.",
+      "sourceWording": "should be undertaken with caution",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "the concomitant administration of SSRIs with clopidogrel should be undertaken with caution"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:opioid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "clopidogrel",
+      "other": "group:opioid",
+      "concern": "Opioid agonists",
+      "consequence": "May delay and reduce clopidogrel absorption (slowed gastric emptying); clinical relevance unknown.",
+      "action": "In ACS needing morphine or other opioids, consider a parenteral antiplatelet.",
+      "sourceWording": "Consider the use of a parenteral antiplatelet agent",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "co-administration of opioid agonists has the potential to delay and reduce the absorption of clopidogrel"
+        },
+        {
+          "s": "emc-5935",
+          "q": "Consider the use of a parenteral antiplatelet agent in acute coronary syndrome patients requiring co-administration of morphine or other opioid agonists."
+        }
+      ]
+    }
+  ]
+}

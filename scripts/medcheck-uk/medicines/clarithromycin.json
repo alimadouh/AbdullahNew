@@ -1,0 +1,1858 @@
+{
+  "id": "clarithromycin",
+  "name": "Clarithromycin",
+  "ingredients": [
+    "clarithromycin"
+  ],
+  "className": "Macrolide antibacterial",
+  "groups": [
+    "macrolide",
+    "antibacterial",
+    "strong-cyp3a4-inhibitor",
+    "cyp3a4-inhibitor",
+    "qt-prolonging"
+  ],
+  "searchTerms": [
+    "clarithromycin citrate"
+  ],
+  "formulations": [
+    {
+      "id": "clarithromycin-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "500 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Each film-coated tablet contains 500 mg of clarithromycin"
+        },
+        {
+          "s": "emc-7072",
+          "q": "The usual dose is 250 mg twice daily although this may be increased to 500mg twice daily in severe infections."
+        }
+      ],
+      "sourceIds": [
+        "emc-7072"
+      ]
+    },
+    {
+      "id": "clarithromycin-susp",
+      "label": "Oral suspension (granules)",
+      "route": "oral",
+      "strengths": "125 mg/5 ml",
+      "release": "n/a",
+      "note": "Contains sucrose, aspartame and sodium benzoate.",
+      "src": [
+        {
+          "s": "emc-12806",
+          "q": "Each 5 ml of the reconstituted suspension contains 125 mg clarithromycin."
+        },
+        {
+          "s": "emc-12806",
+          "q": "Each 5 ml reconstituted suspension contains 3194 mg of sucrose, and 1 mg of aspartame."
+        }
+      ],
+      "sourceIds": [
+        "emc-12806"
+      ]
+    },
+    {
+      "id": "clarithromycin-mr",
+      "label": "Prolonged-release tablets",
+      "route": "oral",
+      "strengths": "500 mg",
+      "release": "modified",
+      "note": "Contraindicated if creatinine clearance < 30 mL/min (dose cannot be reduced).",
+      "src": [
+        {
+          "s": "emc-101806",
+          "q": "Each film-coated prolonged release tablet contains; Clarithromycin citrate equivalent to clarithromycin 500mg."
+        },
+        {
+          "s": "emc-101806",
+          "q": "Xetinin 500 mg Tablets are contraindicated in patients with creatinine clearance less than 30 mL/min."
+        }
+      ],
+      "sourceIds": [
+        "emc-101806"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Lower respiratory tract infections (acute and chronic bronchitis, pneumonia), upper respiratory tract infections (sinusitis, pharyngitis), skin and soft tissue infections of mild to moderate severity. Tablets: also H. pylori eradication in duodenal ulcer (with omeprazole or lansoprazole). Tablets are for adults and children 12 years and older.",
+          "formulations": [
+            "clarithromycin-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Clarithromycin film-coated tablets are indicated in adults and children 12 years and older."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Lower respiratory tract infections for example, acute and chronic bronchitis, and pneumonia"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Upper respiratory tract infections for example, sinusitis and pharyngitis."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Clarithromycin is also indicated in skin and soft tissue infections of mild to moderate severity"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Clarithromycin in the presence of acid suppression effected by omeprazole or lansoprazole is also indicated for the eradication of H. pylori in patients with duodenal ulcers."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release 500 mg tablets: adults and children 12 years and older with lower and upper respiratory tract infections and mild to moderate skin and soft tissue infections.",
+          "formulations": [
+            "clarithromycin-mr"
+          ],
+          "src": [
+            {
+              "s": "emc-101806",
+              "q": "Xetinin XL 500 mg Tablets are indicated in adults and children 12 years and older."
+            },
+            {
+              "s": "emc-101806",
+              "q": "Xetinin XL 500 mg Tablets are also indicated in skin and soft tissue infections of mild to moderate severity"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No specialist-only, shared-care or brand-specific prescribing restrictions found in the clarithromycin SmPCs accessed. SmPCs advise considering official guidance on appropriate antibacterial use."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Respiratory tract / skin and soft tissue infections: usually 250 mg twice daily, increased to 500 mg twice daily in severe infections; usual duration 6 to 14 days.",
+          "tag": "Adults and children > 12 years (immediate-release)",
+          "formulations": [
+            "clarithromycin-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Adults: The usual dose is 250 mg twice daily although this may be increased to 500mg twice daily in severe infections. The usual duration of treatment is 6 to 14 days."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Children older than 12 years: As for adults."
+            }
+          ]
+        },
+        {
+          "t": "H. pylori eradication (duodenal ulcer), triple therapy for 6 to 14 days: clarithromycin 500 mg twice daily with lansoprazole 30 mg twice daily plus amoxicillin 1000 mg twice daily or metronidazole 400 mg twice daily; or with omeprazole 40 mg daily plus amoxicillin 1000 mg twice daily or metronidazole 400 mg twice daily; or with omeprazole 20 mg daily plus amoxicillin 1000 mg twice daily.",
+          "tag": "H. pylori (adults)",
+          "formulations": [
+            "clarithromycin-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Eradication of H. pylori in patients with duodenal ulcers (Adults) The usual duration of treatment is 6 to 14 days."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Triple Therapy Clarithromycin (500mg) twice daily and lansoprazole 30mg twice daily should be given with amoxicillin 1000mg twice daily."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Triple Therapy Clarithromycin (500mg) twice daily and omeprazole 40mg daily should be given with amoxycillin 1000mg twice daily or metronidazole 400mg twice daily."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Triple Therapy Clarithromycin (500mg) twice daily and omeprazole 20mg daily should be given with amoxycillin 1000mg twice daily."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release: one 500 mg tablet once daily with food; severe infections two 500 mg tablets once daily; usual duration 6 to 14 days.",
+          "tag": "Adults and children > 12 years (prolonged-release)",
+          "formulations": [
+            "clarithromycin-mr"
+          ],
+          "src": [
+            {
+              "s": "emc-101806",
+              "q": "The usual recommended dosage of Xetinin XL Tablets in adults is one 500mg modified-release tablet daily to be taken with food. In more severe infections, the dosage can be increased to two 500mg modified-release tablets daily. The usual duration of treatment is 6 to 14 days."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: as for adults.",
+          "tag": "Elderly",
+          "detail": true,
+          "formulations": [
+            "clarithromycin-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Elderly: As for adults."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children under 12 years should use the paediatric suspension; tablets (immediate- and prolonged-release) are not recommended under 12 years.",
+          "tag": "Under 12 years",
+          "formulations": [
+            "clarithromycin-tab",
+            "clarithromycin-mr"
+          ],
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Use of Clarithromycin film-coated tablets are not recommended for children younger than 12 years."
+            },
+            {
+              "s": "emc-101806",
+              "q": "Use of Xetinin XL Tablets is not recommended for children younger than 12 years."
+            }
+          ]
+        },
+        {
+          "t": "Suspension, children (studied 6 months to 12 years): 7.5 mg/kg twice daily, maximum 500 mg twice daily, doses 12 hours apart, usually for 5 to 10 days. Weight bands: 8-11 kg 2.5 ml; 12-19 kg 5 ml; 20-29 kg 7.5 ml; 30-40 kg 10 ml, each twice daily. Under 8 kg: 0.3 ml/kg twice daily.",
+          "tag": "Children (suspension 125 mg/5 ml)",
+          "formulations": [
+            "clarithromycin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-12806",
+              "q": "is based on a 7.5 mg/ kg twice a day (b.i.d.) dosing regime up to a maximum dose of 500 mg b.i.d."
+            },
+            {
+              "s": "emc-12806",
+              "q": "Weight* (kg) Approx Age (years) Dosage (ml) b.i.d. 8 - 11 1 - 2 2.50 12 - 19 3 - 6 5.00 20 - 29 7 - 9 7.50 30 - 40 10 - 12 10.00"
+            },
+            {
+              "s": "emc-12806",
+              "q": "*Children < 8 kg should be dosed on a per kg basis: 0.3ml/kg twice a day (approx. 7.5 mg/kg twice a day)"
+            },
+            {
+              "s": "emc-12806",
+              "q": "The usual duration of treatment is for 5 to 10 days depending on the pathogen involved and the severity of the condition."
+            }
+          ],
+          "calc": {
+            "mgPerKg": 7.5,
+            "per": "dose",
+            "maxMg": 500,
+            "maxPer": "dose",
+            "ageMaxYears": 12,
+            "of": "clarithromycin"
+          }
+        },
+        {
+          "t": "Clinical trials of the paediatric suspension were in children 6 months to 12 years.",
+          "tag": "Under 6 months",
+          "detail": true,
+          "formulations": [
+            "clarithromycin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-12806",
+              "q": "Clinical trials have been conducted using clarithromycin paediatric suspension in children 6 months to 12 years of age."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to clarithromycin, other macrolides or any excipient.",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Clarithromycin is contraindicated in patients with known hypersensitivity to the active substance clarithromycin, to other macrolide antibiotic drugs or to any of the excipients"
+            }
+          ]
+        },
+        {
+          "t": "With ergot alkaloids (ergotamine, dihydroergotamine), oral midazolam, lomitapide, ticagrelor, ivabradine, ranolazine, colchicine, and with astemizole, cisapride, domperidone, pimozide or terfenadine (QT prolongation/arrhythmias).",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Concomitant administration of clarithromycin and any of the following drugs is contraindicated: astemizole, cisapride, domperidone, pimozide and terfenadine"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Concomitant administration with ticagrelor, ivabradine or ranolazine is contraindicated."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Concomitant administration of clarithromycin and colchicine is contraindicated"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Concomitant administration of clarithromycin and oral midazolam is contraindicated"
+            }
+          ]
+        },
+        {
+          "t": "With simvastatin or lovastatin (myopathy/rhabdomyolysis); suspend these statins during the course if clarithromycin cannot be avoided.",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Concomitant use of clarithromycin with lovastatin or simvastatin is contraindicated"
+            },
+            {
+              "s": "emc-7072",
+              "q": "If treatment with clarithromycin cannot be avoided, therapy with lovastatin or simvastatin must be suspended during the course of treatment."
+            }
+          ]
+        },
+        {
+          "t": "History of QT prolongation (congenital or documented acquired) or ventricular arrhythmia including torsades de pointes; electrolyte disturbance (hypokalaemia or hypomagnesaemia).",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Clarithromycin should not be given to patients with history of QT prolongation (congenital or documented acquired QT prolongation) or ventricular cardiac arrhythmia, including torsades de pointes"
+            },
+            {
+              "s": "emc-7072",
+              "q": "the use of clarithromycin is contraindicated in patients taking any of astemizole, cisapride, domperidone, pimozide and terfenadine; in patients who have electrolyte disturbances such as hypomagnesaemia or hypokalaemia"
+            }
+          ]
+        },
+        {
+          "t": "Severe hepatic failure combined with renal impairment.",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Clarithromycin should not be used in patients who suffer from severe hepatic failure in combination with renal impairment."
+            },
+            {
+              "s": "emc-101806",
+              "q": "Clarithromycin is contraindicated in patients who suffer from severe hepatic failure in combination with renal impairment."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release tablets: creatinine clearance < 30 mL/min.",
+          "formulations": [
+            "clarithromycin-mr"
+          ],
+          "src": [
+            {
+              "s": "emc-101806",
+              "q": "Xetinin 500 mg Tablets are contraindicated in patients with creatinine clearance less than 30 mL/min."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Use with caution in coronary artery disease, severe cardiac insufficiency, conduction disturbances, clinically relevant bradycardia, and with other QT-prolonging medicines (other than those contraindicated).",
+          "tag": "QT / cardiac",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Patients with coronary artery disease, severe cardiac insufficiency, conduction disturbances or clinically relevant bradycardia; Patients concomitantly taking other medicinal products associated with QT prolongation other than those which are contraindicated"
+            }
+          ]
+        },
+        {
+          "t": "Observational studies: rare short-term risk of arrhythmia, myocardial infarction and cardiovascular mortality with macrolides; balance against benefit.",
+          "tag": "Cardiovascular",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Some observational studies have identified a rare short-term risk of arrhythmia, myocardial infarction and cardiovascular mortality associated with macrolides including clarithromycin."
+            }
+          ]
+        },
+        {
+          "t": "Hepatic dysfunction (raised enzymes, hepatocellular/cholestatic hepatitis, fatal hepatic failure) reported. Caution in impaired hepatic function. Patients should stop and contact their doctor if anorexia, jaundice, dark urine, pruritus or tender abdomen develop.",
+          "tag": "Liver",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "caution should be exercised in administering this antibiotic to patients with impaired hepatic function"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Patients should be advised to stop treatment and contact their doctor if signs and symptoms of hepatic disease develop, such as anorexia, jaundice, dark urine, pruritus, or tender abdomen."
+            }
+          ]
+        },
+        {
+          "t": "Caution in moderate to severe renal impairment.",
+          "tag": "Renal",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Caution should also be exercised when administering clarithromycin to patients with moderate to severe renal impairment"
+            }
+          ]
+        },
+        {
+          "t": "Severe acute hypersensitivity (anaphylaxis, SCAR such as AGEP, SJS, TEN, DRESS): stop immediately and treat urgently.",
+          "tag": "Hypersensitivity",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "clarithromycin therapy should be discontinued immediately and appropriate treatment should be urgently initiated"
+            }
+          ]
+        },
+        {
+          "t": "C. difficile-associated diarrhoea can occur up to 2 months after treatment; consider stopping clarithromycin, test and treat; avoid anti-peristaltic drugs.",
+          "tag": "CDAD",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "CDAD has been reported to occur over two months after the administration of antibacterial agents"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Drugs inhibiting peristalsis should be avoided."
+            }
+          ]
+        },
+        {
+          "t": "Pneumonia: sensitivity testing important (macrolide-resistant S. pneumoniae); in hospital-acquired pneumonia combine with other antibiotics. Skin infections: test sensitivity.",
+          "tag": "Resistance",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "it is important that sensitivity testing be performed when prescribing clarithromycin for community-acquired pneumonia"
+            },
+            {
+              "s": "emc-7072",
+              "q": "In hospital-acquired pneumonia, clarithromycin should be used in combination with additional appropriate antibiotics."
+            }
+          ]
+        },
+        {
+          "t": "Suspension excipients: 3194 mg sucrose per 5 ml (take into account in diabetes); hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take it; aspartame may be harmful in phenylketonuria.",
+          "tag": "Excipients",
+          "formulations": [
+            "clarithromycin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-12806",
+              "q": "This should be taken into account in patients with diabetes mellitus."
+            },
+            {
+              "s": "emc-12806",
+              "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicinal product."
+            },
+            {
+              "s": "emc-12806",
+              "q": "This may be harmful for people with phenylketonuria."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release tablets contain lactose: patients with galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take them.",
+          "tag": "Excipients",
+          "formulations": [
+            "clarithromycin-mr"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-101806",
+              "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Simvastatin (and lovastatin): contraindicated (myopathy, rhabdomyolysis). If clarithromycin is essential, stop simvastatin for the course.",
+          "tag": "Simvastatin",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Concomitant use of clarithromycin with lovastatin or simvastatin is contraindicated"
+            },
+            {
+              "s": "sps-macrolides-statins",
+              "q": "If clarithromycin is essential to use, simvastatin must be stopped whilst the patient is taking the course of clarithromycin."
+            }
+          ]
+        },
+        {
+          "t": "Atorvastatin: SmPC advises caution with other statins (lowest dose, monitor for myopathy). SPS: avoid and use a non-interacting antibiotic if possible; consider pausing atorvastatin for the course; if unavoidable use a maximum of 20 mg daily. MHRA: do not exceed 20 mg atorvastatin daily with clarithromycin.",
+          "tag": "Atorvastatin / other statins",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Caution should be exercised when prescribing clarithromycin with statins."
+            },
+            {
+              "s": "sps-macrolides-statins",
+              "q": "Avoid the use of clarithromycin with atorvastatin and use a non-interacting antibiotic if possible."
+            },
+            {
+              "s": "sps-macrolides-statins",
+              "q": "Use a lower dose of atorvastatin (maximum 20mg daily) if concurrent administration is unavoidable."
+            },
+            {
+              "s": "mhra-dsu-statins-interactions-atorvastatin",
+              "q": "Clarithromycin: do not exceed 20 mg atorvastatin daily"
+            }
+          ]
+        },
+        {
+          "t": "Warfarin: risk of serious haemorrhage and marked INR rise; monitor INR and prothrombin time frequently. Caution with DOACs (dabigatran, rivaroxaban, apixaban, edoxaban), especially if high bleeding risk.",
+          "tag": "Anticoagulants",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "There is a risk of serious haemorrhage and significant elevations in International Normalized Ratio (INR) and prothrombin time when clarithromycin is co-administered with warfarin"
+            },
+            {
+              "s": "emc-7072",
+              "q": "INR and prothrombin times should be frequently monitored while patients are receiving clarithromycin and oral anticoagulants concurrently."
+            }
+          ]
+        },
+        {
+          "t": "Oral hypoglycaemic agents (e.g. sulfonylureas) and/or insulin: significant hypoglycaemia possible; monitor glucose carefully.",
+          "tag": "Antidiabetic medicines",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "The concomitant use of clarithromycin and oral hypoglycaemic agents (such as sulfonylurias) and/or insulin can result in significant hypoglycaemia. Careful monitoring of glucose is recommended"
+            }
+          ]
+        },
+        {
+          "t": "Calcium-channel blockers metabolised by CYP3A4 (e.g. amlodipine, verapamil, diltiazem): caution, risk of hypotension; levels of both may rise.",
+          "tag": "Calcium-channel blockers",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Caution is advised regarding the concomitant administration of clarithromycin and calcium channel blockers metabolized by CYP3A4 (e.g., verapamil, amlodipine, diltiazem) due to the risk of hypotension."
+            }
+          ]
+        },
+        {
+          "t": "Sildenafil (and tadalafil, vardenafil): increased exposure; consider dose reduction.",
+          "tag": "PDE5 inhibitors",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Reduction of sildenafil, tadalafil and vardenafil dosages should be considered when these drugs are co-administered with clarithromycin."
+            }
+          ]
+        },
+        {
+          "t": "Hydroxychloroquine or chloroquine: carefully weigh benefits and risks (increased cardiovascular events and mortality seen with azithromycin + hydroxychloroquine); use with caution, especially with cardiac risk factors.",
+          "tag": "Hydroxychloroquine",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "careful consideration should be given to the balance of benefits and risks before prescribing clarithromycin for any patients taking hydroxychloroquine or chloroquine"
+            },
+            {
+              "s": "mhra-dsu-2022-02-hcq-macrolides",
+              "q": "if there is a clinical need to prescribe systemic macrolide antibiotics with hydroxychloroquine or chloroquine, use caution in patients with risk factors for cardiac events"
+            }
+          ]
+        },
+        {
+          "t": "Corticosteroids metabolised by CYP3A (systemic and inhaled): caution; monitor for systemic corticosteroid effects.",
+          "tag": "Corticosteroids",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Caution should be exercised in concomitant use of clarithromycin with systemic and inhaled corticosteroids that are primarily metabolised by CYP3A"
+            }
+          ]
+        },
+        {
+          "t": "CYP3A inducers (e.g. rifampicin, phenytoin, carbamazepine, phenobarbital, St John's wort) may lower clarithromycin levels; use with caution.",
+          "tag": "CYP3A inducers",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Drugs that are inducers of CYP3A (e.g. rifampicin, phenytoin, carbamazepine, phenobarbital, St. John's wort) may induce the metabolism of clarithromycin."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Clarithromycin should be used with caution when administered concurrently with medications that induce the cytochrome CYP3A4 enzyme"
+            }
+          ]
+        },
+        {
+          "t": "Omeprazole: omeprazole levels increase with clarithromycin (no action stated; combination used for H. pylori).",
+          "tag": "Omeprazole",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "The steady-state plasma concentrations of omeprazole were increased"
+            }
+          ]
+        },
+        {
+          "t": "Digoxin: monitor serum digoxin carefully. Theophylline/carbamazepine: dose reduction may be needed. Other CYP3A substrates with narrow margins: caution.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Serum digoxin concentrations should be carefully monitored while patients are receiving digoxin and clarithromycin simultaneously."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Dose reduction may need to be considered."
+            }
+          ]
+        },
+        {
+          "t": "Oral contraceptives: warn that diarrhoea, vomiting or breakthrough bleeding may mean contraceptive failure.",
+          "tag": "Oral contraceptives",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Patients taking oral contraceptives should be warned that if diarrhoea, vomiting or breakthrough bleeding occur there is a possibility of contraceptive failure."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Immediate-release tablets: CrCl < 30 mL/min - halve the dose (250 mg once daily, or 250 mg twice daily in more severe infections); do not continue beyond 14 days.",
+          "tag": "CrCl < 30 mL/min",
+          "formulations": [
+            "clarithromycin-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "In patients with renal impairment with creatinine clearance less than 30 mL/min, the dosage of clarithromycin should be reduced by one-half, i.e. 250 mg once daily, or 250 mg twice daily in more severe infections. Treatment should not be continued beyond 14 days in these patients."
+            }
+          ]
+        },
+        {
+          "t": "Suspension (children): creatinine clearance < 30 ml/min/1.73 m2 - halve to 7.5 mg/kg per day; not beyond 14 days.",
+          "tag": "CrCl < 30 ml/min/1.73 m2",
+          "formulations": [
+            "clarithromycin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-12806",
+              "q": "In children with creatinine clearance less than 30 ml/min/1.73 m2, the dosage of clarithromycin should be reduced by half to 7.5 mg/kg per day. Dosage should not be continued beyond 14 days in these patients."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release: contraindicated if CrCl < 30 mL/min (use immediate-release); CrCl 30 to 60 mL/min - 50% dose reduction, maximum one 500 mg tablet per day.",
+          "tag": "Prolonged-release",
+          "formulations": [
+            "clarithromycin-mr"
+          ],
+          "src": [
+            {
+              "s": "emc-101806",
+              "q": "Xetinin 500 mg Tablets are contraindicated in patients with creatinine clearance less than 30 mL/min."
+            },
+            {
+              "s": "emc-101806",
+              "q": "For patients with moderate renal function (creatinine clearance 30 to 60 ml/min), a 50% dosage reduction should be implemented resulting in a maximum dose of one Xetinin 500 mg Tablets per day."
+            }
+          ]
+        },
+        {
+          "t": "With ritonavir or other boosted HIV protease inhibitors: reduce clarithromycin by 50% if CrCl 30-60 mL/min and by 75% if CrCl < 30 mL/min.",
+          "tag": "With protease inhibitors",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "For patients with CLCR 30 to 60 mL/min the dose of clarithromycin should be reduced by 50%. For patients with CLCR <30 mL/min the dose of clarithromycin should be decreased by 75%."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Contraindicated in severe hepatic failure combined with renal impairment (SmPC section 4.3). Otherwise use with caution in impaired hepatic function (mainly hepatically metabolised).",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Clarithromycin should not be used in patients who suffer from severe hepatic failure in combination with renal impairment."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Clarithromycin is principally metabolised by the liver. Therefore, caution should be exercised in administering this antibiotic to patients with impaired hepatic function."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: safety not established; some studies show increased miscarriage risk after first/second-trimester exposure; malformation data conflicting. Use not advised without carefully weighing benefits against risks.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Some observational studies evaluating exposure to clarithromycin during the first and second trimester have reported an increased risk of miscarriage"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Therefore, use during pregnancy is not advised without carefully weighing the benefits against risks"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS): clarithromycin can be used in pregnancy if recommended by a doctor; available data do not show effects on the baby's development; the higher miscarriage rate is likely partly due to underlying infection.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-clarithromycin",
+              "q": "Clarithromycin can be used in pregnancy if recommended by a doctor."
+            },
+            {
+              "s": "bumps-clarithromycin",
+              "q": "it is likely that the underlying infections in these women may have played a part"
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: safety in breastfeeding not established; small amounts in milk (about 1.7% of the maternal weight-adjusted dose).",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "The safety of clarithromycin for use during breast feeding of infants has not been established."
+            },
+            {
+              "s": "emc-7072",
+              "q": "It has been estimated that an exclusively breastfed infant would receive about 1.7% of the maternal weight-adjusted dose of clarithromycin."
+            }
+          ]
+        },
+        {
+          "t": "SPS: use with caution; all formulations can be used during breastfeeding with precautionary infant monitoring (GI upset, oral thrush, rash, sleep disturbance, irritability, sweating, poor feeding).",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-macrolides-breastfeeding",
+              "q": "Use with caution All formulations of clarithromycin"
+            },
+            {
+              "s": "sps-macrolides-breastfeeding",
+              "q": "All formulations of clarithromycin, including intravenous therapy can be used during breastfeeding with precautionary infant monitoring."
+            },
+            {
+              "s": "sps-macrolides-breastfeeding",
+              "q": "monitor for gastro-intestinal disturbances such as diarrhoea and vomiting, oral candida infection, rashes, sleep disturbances, irritability, sweating, and loss of appetite"
+            }
+          ]
+        },
+        {
+          "t": "SPS: data conflict on whether macrolide exposure via breast milk raises the risk of infantile hypertrophic pyloric stenosis; some studies found a higher risk in the first 90 days of life, especially the first 2 weeks.",
+          "tag": "SPS",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-macrolides-breastfeeding",
+              "q": "There is conflicting data regarding whether there is an increased risk of infantile hypertrophic pyloric stenosis from exposure to macrolides via breast milk."
+            },
+            {
+              "s": "sps-macrolides-breastfeeding",
+              "q": "Some studies have noted an increased risk during the first 90 days of life, and especially in the first 2 weeks after birth."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Rat fertility studies showed no harmful effects. Oral contraceptive users: diarrhoea, vomiting or breakthrough bleeding may mean contraceptive failure.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "In the rat, fertility studies have not shown any evidence of harmful effects"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Patients taking oral contraceptives should be warned that if diarrhoea, vomiting or breakthrough bleeding occur there is a possibility of contraceptive failure."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Most frequent: abdominal pain, diarrhoea, nausea, vomiting, taste disturbance (usually mild). Also common: insomnia, headache, dyspepsia, rash, hyperhidrosis, abnormal liver function tests.",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "The most frequent and common adverse reactions related to clarithromycin therapy for both adult and paediatric populations are abdominal pain, diarrhoea, nausea, vomiting and taste perversion."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Psychiatric disorders Insomnia"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Nervous system disorders Dysgeusia, headache"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Skin and subcutaneous tissue disorders Rash, hyperhidrosis"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "QT prolongation, torsades de pointes, ventricular tachycardia/fibrillation.",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Torsades de pointes, ventricular tachycardia ventricular fibrillation"
+            }
+          ]
+        },
+        {
+          "t": "Hepatic failure, hepatocellular jaundice: stop and contact doctor if signs of liver disease.",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Hepatic failure, jaundice hepatocellular"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Patients should be advised to stop treatment and contact their doctor if signs and symptoms of hepatic disease develop"
+            }
+          ]
+        },
+        {
+          "t": "Anaphylaxis, angioedema, severe cutaneous reactions (AGEP, SJS, TEN, DRESS): stop immediately and treat urgently.",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Anaphylactic reaction, angioedema"
+            },
+            {
+              "s": "emc-7072",
+              "q": "clarithromycin therapy should be discontinued immediately and appropriate treatment should be urgently initiated"
+            }
+          ]
+        },
+        {
+          "t": "Pseudomembranous colitis / C. difficile diarrhoea; rhabdomyolysis (often with statins, fibrates, colchicine or allopurinol); agranulocytosis, thrombocytopenia; convulsions; deafness; acute pancreatitis; renal failure.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "In some of the reports of rhabdomyolysis, clarithromycin was administered concomitantly with statins, fibrates, colchicine or allopurinol"
+            },
+            {
+              "s": "emc-7072",
+              "q": "Agranulocytosis, thrombocytopenia"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before starting: check for QT prolongation history, ventricular arrhythmia, hypokalaemia/hypomagnesaemia, and interacting medicines (statins, anticoagulants, QT-prolonging drugs).",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "the use of clarithromycin is contraindicated in patients taking any of astemizole, cisapride, domperidone, pimozide and terfenadine; in patients who have electrolyte disturbances such as hypomagnesaemia or hypokalaemia"
+            }
+          ]
+        },
+        {
+          "t": "SPS: no ECG monitoring needed when used alone without risk factors; monitor ECG, magnesium and potassium before and during treatment if non-modifiable patient or medicine risk factors.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "sps-qt-commonly-used",
+              "q": "No ECG monitoring is required when used alone and in the absence of risk factors."
+            },
+            {
+              "s": "sps-qt-commonly-used",
+              "q": "Monitor ECG, magnesium and potassium before and during treatment in people with non-modifiable patient and medicine risk factors."
+            }
+          ]
+        },
+        {
+          "t": "On warfarin: monitor INR/prothrombin time frequently. On antidiabetic medicines: monitor glucose. With statins: monitor for myopathy symptoms.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "INR and prothrombin times should be frequently monitored while patients are receiving clarithromycin and oral anticoagulants concurrently."
+            },
+            {
+              "s": "emc-7072",
+              "q": "Patients should be monitored for signs and symptoms of myopathy."
+            }
+          ]
+        },
+        {
+          "t": "Stop if signs of hepatic disease, severe hypersensitivity/SCAR; consider stopping if C. difficile diarrhoea.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Patients should be advised to stop treatment and contact their doctor if signs and symptoms of hepatic disease develop"
+            },
+            {
+              "s": "emc-7072",
+              "q": "discontinuation of clarithromycin therapy should be considered regardless of the indication"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Immediate-release tablets and suspension can be taken with or without food.",
+          "formulations": [
+            "clarithromycin-tab",
+            "clarithromycin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Clarithromycin may be given without regard to meals as food does not affect the extent of bioavailability."
+            },
+            {
+              "s": "emc-12806",
+              "q": "Clarithromycin may be given without regard to meals, as food does not affect the extent of bioavailability."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release tablets: take once daily with food; do not crush or chew.",
+          "formulations": [
+            "clarithromycin-mr"
+          ],
+          "src": [
+            {
+              "s": "emc-101806",
+              "q": "one 500mg modified-release tablet daily to be taken with food"
+            },
+            {
+              "s": "emc-101806",
+              "q": "Do not crush or chew Xetinin XL 500 mg Tablets."
+            }
+          ]
+        },
+        {
+          "t": "Suspension: reconstitute with water, shake well before each dose, give with an oral syringe at 12-hour intervals. Reconstituted suspension: shelf life 14 days; store below 30 °C; do not refrigerate or freeze.",
+          "formulations": [
+            "clarithromycin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-12806",
+              "q": "The suspension should be shaken well before each use."
+            },
+            {
+              "s": "emc-12806",
+              "q": "The doses should be given at 12-hour intervals."
+            },
+            {
+              "s": "emc-12806",
+              "q": "Reconstituted suspension: 14 days"
+            },
+            {
+              "s": "emc-12806",
+              "q": "Store below 30°C. Do not refrigerate or freeze the reconstituted suspension."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Tell the prescriber/pharmacist about all other medicines (many serious interactions, e.g. simvastatin, colchicine, warfarin).",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "The use of clarithromycin is also contraindicated with ergot alkaloids, oral midazolam, HMG-CoA reductase inhibitors mainly metabolised by CYP3A4 (e.g. lovastatin and simvastatin), colchicine, ticagrelor, ivabradine and ranolazine"
+            }
+          ]
+        },
+        {
+          "t": "Stop and seek advice if yellow skin/eyes, dark urine, itching, tender abdomen or loss of appetite; report palpitations or fainting.",
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "Patients should be advised to stop treatment and contact their doctor if signs and symptoms of hepatic disease develop, such as anorexia, jaundice, dark urine, pruritus, or tender abdomen."
+            }
+          ]
+        },
+        {
+          "t": "May cause dizziness, vertigo, confusion or disorientation; consider before driving.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7072",
+              "q": "The potential for dizziness, vertigo, confusion and disorientation, which may occur with the medication, should be taken into account before patients drive or use machines."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "clarithromycin:allergy:macrolide",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "clarithromycin",
+      "allergen": [
+        "clarithromycin",
+        "group:macrolide"
+      ],
+      "concern": "Hypersensitivity to clarithromycin or another macrolide",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "is contraindicated in patients with known hypersensitivity",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Clarithromycin is contraindicated in patients with known hypersensitivity to the active substance clarithromycin, to other macrolide antibiotic drugs or to any of the excipients"
+        },
+        {
+          "s": "emc-12806",
+          "q": "Hypersensitivity to the active substance, other macrolide antibiotics or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:simvastatin",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "clarithromycin",
+      "other": "simvastatin",
+      "effect": "myopathy",
+      "concern": "Simvastatin",
+      "consequence": "Raised simvastatin levels: myopathy including rhabdomyolysis.",
+      "action": "Contraindicated. If clarithromycin cannot be avoided, suspend simvastatin for the course.",
+      "sourceWording": "is contraindicated",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Concomitant use of clarithromycin with lovastatin or simvastatin is contraindicated"
+        },
+        {
+          "s": "emc-7072",
+          "q": "If treatment with clarithromycin cannot be avoided, therapy with lovastatin or simvastatin must be suspended during the course of treatment."
+        },
+        {
+          "s": "sps-macrolides-statins",
+          "q": "Clarithromycin is contraindicated with simvastatin."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:atorvastatin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "clarithromycin",
+      "other": "atorvastatin",
+      "effect": "myopathy",
+      "concern": "Atorvastatin",
+      "consequence": "Raised atorvastatin levels: myopathy/rhabdomyolysis risk.",
+      "action": "SPS: avoid; use a non-interacting antibiotic if possible or pause atorvastatin for the course; if unavoidable, maximum atorvastatin 20 mg daily (MHRA: do not exceed 20 mg daily). Monitor for myopathy.",
+      "sourceWording": "Avoid the use of clarithromycin with atorvastatin",
+      "src": [
+        {
+          "s": "sps-macrolides-statins",
+          "q": "Avoid the use of clarithromycin with atorvastatin and use a non-interacting antibiotic if possible."
+        },
+        {
+          "s": "sps-macrolides-statins",
+          "q": "Use a lower dose of atorvastatin (maximum 20mg daily) if concurrent administration is unavoidable."
+        },
+        {
+          "s": "mhra-dsu-statins-interactions-atorvastatin",
+          "q": "Clarithromycin: do not exceed 20 mg atorvastatin daily"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:statins",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "clarithromycin",
+      "other": "group:statin",
+      "effect": "myopathy",
+      "concern": "Statins (other than those contraindicated)",
+      "consequence": "Rhabdomyolysis reported with clarithromycin and statins.",
+      "action": "Use with caution; prescribe the lowest registered statin dose if unavoidable, consider a statin not dependent on CYP3A (e.g. fluvastatin), monitor for myopathy.",
+      "sourceWording": "Caution should be exercised when prescribing clarithromycin with other statins",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Caution should be exercised when prescribing clarithromycin with other statins."
+        },
+        {
+          "s": "emc-7072",
+          "q": "In situations where the concomitant use of clarithromycin with statins cannot be avoided, it is recommended to prescribe the lowest registered dose of the statin."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "clarithromycin",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin",
+      "consequence": "Risk of serious haemorrhage and significant INR rise.",
+      "action": "Monitor INR and prothrombin time frequently during concurrent use.",
+      "sourceWording": "should be frequently monitored",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "There is a risk of serious haemorrhage and significant elevations in International Normalized Ratio (INR) and prothrombin time when clarithromycin is co-administered with warfarin"
+        },
+        {
+          "s": "emc-7072",
+          "q": "INR and prothrombin times should be frequently monitored while patients are receiving clarithromycin and oral anticoagulants concurrently."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "clarithromycin",
+      "other": "group:oral-antidiabetic",
+      "effect": "hypoglycaemia",
+      "concern": "Oral hypoglycaemic agents (e.g. sulfonylureas) and/or insulin",
+      "consequence": "Significant hypoglycaemia.",
+      "action": "Careful glucose monitoring.",
+      "sourceWording": "Careful monitoring of glucose is recommended",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "The concomitant use of clarithromycin and oral hypoglycaemic agents (such as sulfonylurias) and/or insulin can result in significant hypoglycaemia. Careful monitoring of glucose is recommended"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:amlodipine",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "clarithromycin",
+      "other": "amlodipine",
+      "effect": "hypotension",
+      "concern": "Amlodipine (calcium-channel blocker metabolised by CYP3A4)",
+      "consequence": "Hypotension; levels of both may increase.",
+      "action": "Caution advised.",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Caution is advised regarding the concomitant administration of clarithromycin and calcium channel blockers metabolized by CYP3A4 (e.g., verapamil, amlodipine, diltiazem) due to the risk of hypotension."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:sildenafil",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "clarithromycin",
+      "other": "sildenafil",
+      "effect": "hypotension",
+      "concern": "Sildenafil",
+      "consequence": "Increased sildenafil exposure (CYP3A inhibition).",
+      "action": "Consider reducing the sildenafil dose.",
+      "sourceWording": "Reduction of sildenafil ... dosages should be considered",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Co-administration of clarithromycin with sildenafil, tadalafil or vardenafil would likely result in increased phosphodiesterase inhibitor exposure."
+        },
+        {
+          "s": "emc-7072",
+          "q": "Reduction of sildenafil, tadalafil and vardenafil dosages should be considered when these drugs are co-administered with clarithromycin."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:hydroxychloroquine",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "clarithromycin",
+      "other": "hydroxychloroquine",
+      "effect": "qt-prolongation",
+      "concern": "Hydroxychloroquine (or chloroquine)",
+      "consequence": "Possible increased risk of cardiovascular events and cardiovascular mortality; QT prolongation.",
+      "action": "Carefully weigh benefits and risks; if needed, use with caution, especially with cardiac risk factors.",
+      "sourceWording": "careful consideration should be given to the balance of benefits and risks",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "careful consideration should be given to the balance of benefits and risks before prescribing clarithromycin for any patients taking hydroxychloroquine or chloroquine"
+        },
+        {
+          "s": "mhra-dsu-2022-02-hcq-macrolides",
+          "q": "carefully consider the benefits and risks before prescribing systemic azithromycin or other systemic macrolide antibiotics (erythromycin or clarithromycin) to patients being treated with hydroxychloroquine or chloroquine"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:qt-prolonging",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "clarithromycin",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Other QT-prolonging medicines",
+      "consequence": "Additive QT prolongation / ventricular arrhythmia.",
+      "action": "Use with caution (some, e.g. domperidone, are contraindicated). SPS: monitor ECG, magnesium and potassium if risk factors.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Patients concomitantly taking other medicinal products associated with QT prolongation other than those which are contraindicated"
+        },
+        {
+          "s": "sps-qt-commonly-used",
+          "q": "This is particularly important when co-prescribed with medicines known to prolong QT interval that are also CYP3A4 or P-gp substrates."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:corticosteroids",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "clarithromycin",
+      "other": "group:corticosteroid",
+      "concern": "Corticosteroids metabolised by CYP3A (systemic or inhaled)",
+      "consequence": "Increased systemic corticosteroid exposure.",
+      "action": "Use with caution; monitor closely for systemic corticosteroid adverse effects.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Caution should be exercised in concomitant use of clarithromycin with systemic and inhaled corticosteroids that are primarily metabolised by CYP3A"
+        },
+        {
+          "s": "emc-7072",
+          "q": "If concomitant use occurs, patients should be closely monitored for systemic corticosteroid undesirable effects."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:st-johns-wort",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "clarithromycin",
+      "other": "st-johns-wort",
+      "concern": "St John's wort (CYP3A inducer)",
+      "consequence": "Sub-therapeutic clarithromycin levels and reduced efficacy.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Drugs that are inducers of CYP3A (e.g. rifampicin, phenytoin, carbamazepine, phenobarbital, St. John's wort) may induce the metabolism of clarithromycin."
+        },
+        {
+          "s": "emc-7072",
+          "q": "Clarithromycin should be used with caution when administered concurrently with medications that induce the cytochrome CYP3A4 enzyme"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:omeprazole",
+      "kind": "interaction",
+      "level": "info",
+      "med": "clarithromycin",
+      "other": "omeprazole",
+      "concern": "Omeprazole",
+      "consequence": "Omeprazole plasma levels increase (Cmax +30%, AUC +89%).",
+      "action": "No action stated; the combination is used in H. pylori regimens.",
+      "sourceWording": "were increased",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "The steady-state plasma concentrations of omeprazole were increased"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:qt-prolongation",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "clarithromycin",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "History of QT prolongation or ventricular arrhythmia",
+      "consequence": "Torsades de pointes, ventricular arrhythmia.",
+      "action": "Do not use.",
+      "sourceWording": "the use of clarithromycin is contraindicated",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Clarithromycin should not be given to patients with history of QT prolongation (congenital or documented acquired QT prolongation) or ventricular cardiac arrhythmia, including torsades de pointes"
+        },
+        {
+          "s": "emc-7072",
+          "q": "and in patients with a history of QT prolongation or ventricular cardiac arrhythmia"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "clarithromycin",
+      "condition": "hypokalaemia",
+      "effect": "qt-prolongation",
+      "concern": "Hypokalaemia",
+      "consequence": "QT prolongation risk.",
+      "action": "Do not use (correct electrolyte disturbance).",
+      "sourceWording": "is contraindicated ... in patients who have electrolyte disturbances",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "in patients who have electrolyte disturbances such as hypomagnesaemia or hypokalaemia"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:hypomagnesaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "clarithromycin",
+      "condition": "hypomagnesaemia",
+      "effect": "qt-prolongation",
+      "concern": "Hypomagnesaemia",
+      "consequence": "QT prolongation risk.",
+      "action": "Do not use (correct electrolyte disturbance).",
+      "sourceWording": "is contraindicated ... in patients who have electrolyte disturbances",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Clarithromycin should not be given to patients with electrolyte disturbances (hypokalaemia or hypomagnesaemia, due to the risk of prolongation of the QT interval)."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clarithromycin",
+      "condition": "ischaemic-heart-disease",
+      "effect": "qt-prolongation",
+      "concern": "Coronary artery disease",
+      "consequence": "QT prolongation / arrhythmia risk; rare short-term cardiovascular events with macrolides.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Patients with coronary artery disease, severe cardiac insufficiency, conduction disturbances or clinically relevant bradycardia"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clarithromycin",
+      "condition": "severe-heart-failure",
+      "effect": "qt-prolongation",
+      "concern": "Severe cardiac insufficiency",
+      "consequence": "QT prolongation / arrhythmia risk.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Patients with coronary artery disease, severe cardiac insufficiency, conduction disturbances or clinically relevant bradycardia"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:bradycardia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clarithromycin",
+      "condition": "bradycardia",
+      "effect": "qt-prolongation",
+      "concern": "Clinically relevant bradycardia",
+      "consequence": "QT prolongation / arrhythmia risk.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Patients with coronary artery disease, severe cardiac insufficiency, conduction disturbances or clinically relevant bradycardia"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:conduction-disturbance",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clarithromycin",
+      "condition": "cardiac-conduction-disturbance",
+      "effect": "qt-prolongation",
+      "concern": "Cardiac conduction disturbances",
+      "consequence": "QT prolongation / arrhythmia risk.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Patients with coronary artery disease, severe cardiac insufficiency, conduction disturbances or clinically relevant bradycardia"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:fructose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-susp"
+      ],
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance / sucrase-isomaltase insufficiency (suspension contains sucrose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the suspension.",
+      "sourceWording": "should not take this medicinal product",
+      "src": [
+        {
+          "s": "emc-12806",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicinal product."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:sugar-intolerance-susp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-susp"
+      ],
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency (suspension contains sucrose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the suspension.",
+      "sourceWording": "should not take this medicinal product",
+      "src": [
+        {
+          "s": "emc-12806",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicinal product."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:lactose-mr",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-mr"
+      ],
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Galactose intolerance, total lactase deficiency or glucose-galactose malabsorption (prolonged-release tablets contain lactose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the prolonged-release tablets.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-101806",
+          "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:phenylketonuria",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-susp"
+      ],
+      "condition": "phenylketonuria",
+      "concern": "Phenylketonuria (suspension contains aspartame)",
+      "consequence": "Phenylalanine source.",
+      "action": "May be harmful; take into account.",
+      "sourceWording": "may be harmful for people with phenylketonuria",
+      "src": [
+        {
+          "s": "emc-12806",
+          "q": "This may be harmful for people with phenylketonuria."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:diabetes-sucrose",
+      "kind": "condition",
+      "level": "info",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-susp"
+      ],
+      "condition": "diabetes",
+      "concern": "Diabetes (suspension contains 3194 mg sucrose per 5 ml)",
+      "consequence": "Sugar load.",
+      "action": "Take into account in diabetes.",
+      "sourceWording": "should be taken into account in patients with diabetes mellitus",
+      "src": [
+        {
+          "s": "emc-12806",
+          "q": "This should be taken into account in patients with diabetes mellitus."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:hepatic:severe-with-renal",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "clarithromycin",
+      "hepatic": [
+        "severe"
+      ],
+      "effect": "hepatotoxicity",
+      "concern": "Severe hepatic failure in combination with renal impairment",
+      "consequence": "Listed in SmPC section 4.3 (prolonged-release tablet SmPC: \"is contraindicated\"). The contraindication applies only when severe hepatic failure and renal impairment occur together; this tool cannot combine the two inputs, so it shows for any severe hepatic impairment.",
+      "action": "Do not use if renal impairment is also present: check renal function. With impaired hepatic function alone, the SmPC advises caution.",
+      "sourceWording": "should not be used / is contraindicated",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Clarithromycin should not be used in patients who suffer from severe hepatic failure in combination with renal impairment."
+        },
+        {
+          "s": "emc-101806",
+          "q": "Clarithromycin is contraindicated in patients who suffer from severe hepatic failure in combination with renal impairment."
+        },
+        {
+          "s": "emc-12806",
+          "q": "Clarithromycin should not be used in patients who suffer from severe hepatic failure in combination with renal impairment."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "clarithromycin",
+      "hepatic": [
+        "any"
+      ],
+      "effect": "hepatotoxicity",
+      "concern": "Impaired hepatic function",
+      "consequence": "Mainly hepatically metabolised; hepatic dysfunction reported.",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "caution should be exercised in administering this antibiotic to patients with impaired hepatic function"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:renal:ir-crcl-under-30",
+      "kind": "renal",
+      "level": "dose",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-tab"
+      ],
+      "renal": {
+        "measure": "CrCl",
+        "max": 30
+      },
+      "concern": "CrCl < 30 mL/min (immediate-release)",
+      "consequence": "Accumulation.",
+      "action": "Halve the dose: 250 mg once daily (or 250 mg twice daily in more severe infections); do not continue beyond 14 days.",
+      "sourceWording": "should be reduced by one-half",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "In patients with renal impairment with creatinine clearance less than 30 mL/min, the dosage of clarithromycin should be reduced by one-half, i.e. 250 mg once daily, or 250 mg twice daily in more severe infections."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:renal:susp-crcl-under-30",
+      "kind": "renal",
+      "level": "dose",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-susp"
+      ],
+      "renal": {
+        "measure": "CrCl",
+        "max": 30
+      },
+      "concern": "Child with creatinine clearance < 30 ml/min/1.73 m2",
+      "consequence": "Accumulation.",
+      "action": "Halve to 7.5 mg/kg per day; not beyond 14 days.",
+      "sourceWording": "should be reduced by half",
+      "src": [
+        {
+          "s": "emc-12806",
+          "q": "In children with creatinine clearance less than 30 ml/min/1.73 m2, the dosage of clarithromycin should be reduced by half to 7.5 mg/kg per day."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:renal:mr-crcl-under-30",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-mr"
+      ],
+      "renal": {
+        "measure": "CrCl",
+        "max": 30
+      },
+      "concern": "CrCl < 30 mL/min (prolonged-release)",
+      "consequence": "Dose cannot be reduced below 500 mg daily.",
+      "action": "Do not use prolonged-release tablets; immediate-release formulations may be used with dose reduction.",
+      "sourceWording": "are contraindicated",
+      "src": [
+        {
+          "s": "emc-101806",
+          "q": "Xetinin 500 mg Tablets are contraindicated in patients with creatinine clearance less than 30 mL/min."
+        },
+        {
+          "s": "emc-101806",
+          "q": "All other formulations may be used in this patient population."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:renal:mr-crcl-30-60",
+      "kind": "renal",
+      "level": "dose",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-mr"
+      ],
+      "renal": {
+        "measure": "CrCl",
+        "min": 30,
+        "max": 60,
+        "maxInclusive": true
+      },
+      "concern": "CrCl 30-60 mL/min (prolonged-release)",
+      "consequence": "Reduced clearance.",
+      "action": "50% dose reduction: maximum one 500 mg prolonged-release tablet per day.",
+      "sourceWording": "a 50% dosage reduction should be implemented",
+      "src": [
+        {
+          "s": "emc-101806",
+          "q": "For patients with moderate renal function (creatinine clearance 30 to 60 ml/min), a 50% dosage reduction should be implemented resulting in a maximum dose of one Xetinin 500 mg Tablets per day."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clarithromycin",
+      "condition": "renal-impairment",
+      "concern": "Moderate to severe renal impairment",
+      "consequence": "Dose reduction is needed below creatinine clearance 30 mL/min (and at 30 to 60 mL/min for prolonged-release tablets).",
+      "action": "Use with caution; see the renal dose rules for the formulation.",
+      "sourceWording": "Caution should also be exercised",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Caution should also be exercised when administering clarithromycin to patients with moderate to severe renal impairment"
+        },
+        {
+          "s": "emc-12806",
+          "q": "Caution should also be exercised when administering clarithromycin to patients with moderate to severe renal impairment"
+        },
+        {
+          "s": "emc-101806",
+          "q": "Caution should also be exercised when administering clarithromycin to patients with moderate to severe renal impairment"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:age:tablets-under-12",
+      "kind": "age",
+      "level": "avoid",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-tab",
+        "clarithromycin-mr"
+      ],
+      "age": {
+        "maxYears": 12
+      },
+      "concern": "Child under 12 years prescribed tablets",
+      "consequence": "Tablets not studied/recommended in this age group.",
+      "action": "Not recommended; use the paediatric suspension.",
+      "sourceWording": "are not recommended for children younger than 12 years",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Use of Clarithromycin film-coated tablets are not recommended for children younger than 12 years."
+        },
+        {
+          "s": "emc-101806",
+          "q": "Use of Xetinin XL Tablets is not recommended for children younger than 12 years."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:age:susp-under-6-months",
+      "kind": "age",
+      "level": "info",
+      "med": "clarithromycin",
+      "formulations": [
+        "clarithromycin-susp"
+      ],
+      "age": {
+        "maxYears": 0.5
+      },
+      "concern": "Infant under 6 months",
+      "consequence": "Paediatric clinical trials covered 6 months to 12 years.",
+      "action": "Outside the studied age range (no specific action stated).",
+      "sourceWording": "Clinical trials have been conducted ... in children 6 months to 12 years of age",
+      "src": [
+        {
+          "s": "emc-12806",
+          "q": "Clinical trials have been conducted using clarithromycin paediatric suspension in children 6 months to 12 years of age."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "clarithromycin",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Possible increased miscarriage risk (first/second trimester); conflicting malformation data.",
+      "action": "Not advised without carefully weighing benefits against risks.",
+      "sourceWording": "use during pregnancy is not advised without carefully weighing the benefits against risks",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Therefore, use during pregnancy is not advised without carefully weighing the benefits against risks"
+        },
+        {
+          "s": "emc-7072",
+          "q": "The physician should not prescribe clarithromycin to pregnant women without carefully weighing the benefits against risk, particularly during the first three months of pregnancy"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "clarithromycin",
+      "concern": "Pregnancy (BUMPS/UKTIS)",
+      "consequence": "Available information does not show effects on the baby's development.",
+      "action": "BUMPS: can be used in pregnancy if recommended by a doctor.",
+      "sourceWording": "can be used in pregnancy if recommended by a doctor",
+      "src": [
+        {
+          "s": "bumps-clarithromycin",
+          "q": "Clarithromycin can be used in pregnancy if recommended by a doctor."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "clarithromycin",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Small amounts in milk (about 1.7% of maternal weight-adjusted dose); safety not established.",
+      "action": "No specific action stated in SmPC.",
+      "sourceWording": "has not been established",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "The safety of clarithromycin for use during breast feeding of infants has not been established."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "clarithromycin",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Very small amounts in milk; infant dose < 1% of paediatric dose.",
+      "action": "SPS: use with caution; can be used with precautionary infant monitoring (GI upset, oral thrush, rash, sleep disturbance, irritability, sweating, poor feeding).",
+      "sourceWording": "Use with caution",
+      "src": [
+        {
+          "s": "sps-macrolides-breastfeeding",
+          "q": "Use with caution All formulations of clarithromycin"
+        },
+        {
+          "s": "sps-macrolides-breastfeeding",
+          "q": "All formulations of clarithromycin, including intravenous therapy can be used during breastfeeding with precautionary infant monitoring."
+        }
+      ]
+    }
+  ]
+}

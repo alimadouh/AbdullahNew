@@ -1,0 +1,1281 @@
+{
+  "id": "amoxicillin",
+  "name": "Amoxicillin",
+  "ingredients": [
+    "amoxicillin"
+  ],
+  "className": "Penicillin with extended spectrum (beta-lactam antibiotic)",
+  "groups": [
+    "penicillin",
+    "beta-lactam",
+    "antibacterial"
+  ],
+  "searchTerms": [
+    "amoxycillin",
+    "amoxicillin trihydrate"
+  ],
+  "formulations": [
+    {
+      "id": "amoxicillin-cap",
+      "label": "Capsules",
+      "route": "oral",
+      "strengths": "500 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Amoxicillin trihydrate equivalent to 500mg Amoxycillin per capsule."
+        }
+      ],
+      "sourceIds": [
+        "emc-526"
+      ]
+    },
+    {
+      "id": "amoxicillin-susp",
+      "label": "Oral suspension (sugar free)",
+      "route": "oral",
+      "strengths": "125 mg/5 ml",
+      "release": "n/a",
+      "note": "Contains sorbitol and sodium benzoate.",
+      "src": [
+        {
+          "s": "emc-14146",
+          "q": "contains Amoxicillin Trihydrate BP equivalent to Amoxicillin BP 125mg"
+        },
+        {
+          "s": "emc-14146",
+          "q": "Contains sodium benzoate Contains sorbitol"
+        }
+      ],
+      "sourceIds": [
+        "emc-14146"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Adults and children: acute bacterial sinusitis, acute streptococcal tonsillitis/pharyngitis, acute exacerbations of chronic bronchitis/COPD, community-acquired pneumonia, acute otitis media, acute cystitis, acute pyelonephritis, asymptomatic bacteriuria in pregnancy, typhoid/paratyphoid fever, dental abscess with spreading cellulitis, prosthetic joint infections, H. pylori eradication, Lyme disease.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Amoxicillin is indicated for the treatment of the following infections in adults and children"
+            },
+            {
+              "s": "emc-526",
+              "q": "Acute bacterial sinusitis Acute streptococcal tonsillitis and pharyngitis Acute exacerbations of chronic bronchitis (AECB)/acute exacerbation of chronic obstructive pulmonary disease (AECOPD) Community acquired pneumonia Acute otitis media Acute cystitis Acute pyelonephritis"
+            },
+            {
+              "s": "emc-526",
+              "q": "Asymptomatic bacteriuria in pregnancy Typhoid and paratyphoid fevers Dental abscess with spreading cellulitis Prosthetic joint infections Helicobacter pylori eradication Lyme disease"
+            }
+          ]
+        },
+        {
+          "t": "Prophylaxis of endocarditis.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Amoxicillin is also indicated for the prophylaxis of endocarditis."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No specialist-only, shared-care or brand-specific prescribing restriction found in the amoxicillin SmPCs accessed. SmPCs advise considering official guidance on appropriate antibacterial use."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Acute bacterial sinusitis, asymptomatic bacteriuria in pregnancy, acute pyelonephritis, dental abscess with spreading cellulitis, acute cystitis: 250 mg to 500 mg every 8 hours, or 750 mg to 1 g every 12 hours; severe infections 750 mg to 1 g every 8 hours. Acute cystitis may be treated with 3 g twice daily for one day.",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "250 mg to 500 mg every 8 hours or 750 mg to 1 g every 12 hours For severe infections 750 mg to 1 g every 8 hours Acute cystitis may be treated with 3g twice daily for one day"
+            },
+            {
+              "s": "emc-526",
+              "q": "Asymptomatic bacteriuria in pregnancy Acute pyelonephritis Dental abscess with spreading cellulitis Acute cystitis"
+            }
+          ]
+        },
+        {
+          "t": "Acute otitis media, acute streptococcal tonsillitis/pharyngitis, acute exacerbations of chronic bronchitis: 500 mg every 8 hours or 750 mg to 1 g every 12 hours; severe infections 750 mg to 1 g every 8 hours for 10 days.",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            {
+              "s": "emc-14146",
+              "q": "Acute otitis media 500 mg every 8 hours, 750 mg to 1 g every 12 hours Acute streptococcal tonsillitis and pharyngitis Acute exacerbations of chronic bronchitis For severe infections 750 mg to 1 g every 8 hours for 10 days"
+            }
+          ]
+        },
+        {
+          "t": "Community-acquired pneumonia: 500 mg to 1 g every 8 hours.",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Community acquired pneumonia 500 mg to 1 g every 8 hours"
+            }
+          ]
+        },
+        {
+          "t": "Typhoid and paratyphoid fever: 500 mg to 2 g every 8 hours.",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Typhoid and paratyphoid fever 500 mg to 2 g every 8 hours"
+            }
+          ]
+        },
+        {
+          "t": "Prosthetic joint infections: 500 mg to 1 g every 8 hours.",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Prosthetic joint infections 500 mg to 1 g every 8 hours"
+            }
+          ]
+        },
+        {
+          "t": "Prophylaxis of endocarditis: 2 g orally as a single dose 30 to 60 minutes before the procedure.",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Prophylaxis of endocarditis 2 g orally, single dose 30 to 60 minutes before procedure"
+            }
+          ]
+        },
+        {
+          "t": "H. pylori eradication: 750 mg to 1 g twice daily with a proton pump inhibitor and another antibiotic (e.g. clarithromycin or metronidazole) for 7 days.",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "750 mg to 1 g twice daily in combination with a proton pump inhibitor (e.g. omeprazole, lansoprazole) and another antibiotic (e.g. clarithromycin, metronidazole) for 7 days"
+            }
+          ]
+        },
+        {
+          "t": "Lyme disease, early stage: 500 mg to 1 g every 8 hours (maximum 4 g/day in divided doses) for 14 days (10 to 21 days).",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Early stage: 500 mg to 1 g every 8 hours up to a maximum of 4 g/day in divided doses for 14 days (10 to 21 days)"
+            }
+          ]
+        },
+        {
+          "t": "Lyme disease, late stage (systemic involvement): 500 mg to 2 g every 8 hours (maximum 6 g/day in divided doses) for 10 to 30 days.",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Late stage (systemic involvement): 500 mg to 2 g every 8 hours up to a maximum of 6 g/day in divided doses for 10 to 30 days"
+            }
+          ]
+        },
+        {
+          "t": "Elderly: no dose adjustment considered necessary. Duration should generally be as short as possible and set by infection type and response.",
+          "tag": "Elderly / duration",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Elderly No dose adjustment is considered necessary."
+            },
+            {
+              "s": "emc-526",
+              "q": "should generally be as short as possible"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children < 40 kg, acute bacterial sinusitis, acute otitis media, community-acquired pneumonia, acute cystitis, acute pyelonephritis, dental abscess: 20 to 90 mg/kg/day in divided doses.",
+          "tag": "Children < 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Acute bacterial sinusitis 20 to 90 mg/kg/day in divided doses* Acute otitis media Community acquired pneumonia Acute cystitis Acute pyelonephritis Dental abscess with spreading cellulitis"
+            }
+          ]
+        },
+        {
+          "t": "Children < 40 kg, acute streptococcal tonsillitis and pharyngitis: 40 to 90 mg/kg/day in divided doses. Twice-daily regimens only when the dose is in the upper range.",
+          "tag": "Children < 40 kg",
+          "src": [
+            {
+              "s": "emc-14146",
+              "q": "Acute streptococcal tonsillitis and pharyngitis 40 to 90 mg/kg/day in divided doses*"
+            },
+            {
+              "s": "emc-14146",
+              "q": "Twice daily dosing regimens should only be considered when the dose is in the upper range."
+            }
+          ]
+        },
+        {
+          "t": "Children < 40 kg, typhoid and paratyphoid fever: 100 mg/kg/day in three divided doses.",
+          "tag": "Children < 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "paratyphoid fever 100 mg/kg/day in three divided doses"
+            }
+          ],
+          "calc": {
+            "mgPerKg": 100,
+            "per": "day",
+            "dividedInto": 3,
+            "weightMaxKg": 40,
+            "of": "amoxicillin"
+          }
+        },
+        {
+          "t": "Children < 40 kg, prophylaxis of endocarditis: 50 mg/kg orally as a single dose 30 to 60 minutes before the procedure.",
+          "tag": "Children < 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Prophylaxis of endocarditis 50 mg/kg orally, single dose 30 to 60 minutes before procedure"
+            }
+          ],
+          "calc": {
+            "mgPerKg": 50,
+            "per": "dose",
+            "weightMaxKg": 40,
+            "of": "amoxicillin"
+          }
+        },
+        {
+          "t": "Children < 40 kg, Lyme disease: early stage 25 to 50 mg/kg/day in three divided doses for 10 to 21 days; late stage (systemic involvement) 100 mg/kg/day in three divided doses for 10 to 30 days.",
+          "tag": "Children < 40 kg",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Early stage: 25 to 50 mg/kg/day in three divided doses for 10 to 21 days"
+            },
+            {
+              "s": "emc-526",
+              "q": "Late stage (systemic involvement): 100 mg/kg/day in three divided doses for 10 to 30 days"
+            }
+          ]
+        },
+        {
+          "t": "Children weighing 40 kg or more take the adult dose.",
+          "tag": "Children ≥ 40 kg",
+          "src": [
+            {
+              "s": "emc-14146",
+              "q": "Children weighing 40 kg or more should be prescribed the adult dosage."
+            }
+          ]
+        },
+        {
+          "t": "Paediatric suspension is recommended for children under six months of age.",
+          "tag": "Under 6 months",
+          "formulations": [
+            "amoxicillin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-14146",
+              "q": "Amoxicillin Paediatric Suspension is recommended for children under six months of age."
+            }
+          ]
+        },
+        {
+          "t": "Very young children (including preterm newborns) in the first week of life: dosing interval should not be more frequent than twice daily (immature renal elimination).",
+          "tag": "Neonates",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "For very young children (including preterm newborns) in the first week of life the interval of administration should not exceed twice daily administration"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to amoxicillin, to any penicillin or to any excipient.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Hypersensitivity to the active substance, to any of the penicillins or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "History of a severe immediate hypersensitivity reaction (e.g. anaphylaxis) to another beta-lactam (e.g. a cephalosporin, carbapenem or monobactam).",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "History of a severe immediate hypersensitivity reaction (e.g. anaphylaxis) to another beta-lactam agent (e.g. a cephalosporin, carbapenem or monobactam)."
+            }
+          ]
+        },
+        {
+          "t": "Acute generalised exanthematous pustulosis (AGEP) on amoxicillin requires stopping it and contraindicates any later use.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "This reaction requires amoxicillin discontinuation and contra-indicates any subsequent administration."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Ask carefully about previous hypersensitivity reactions to penicillins, cephalosporins or other beta-lactams before starting. Serious, occasionally fatal reactions are more likely with a history of penicillin hypersensitivity and in atopic people. Stop if an allergic reaction occurs.",
+          "tag": "Hypersensitivity",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "careful enquiry should be made concerning previous hypersensitivity reactions to penicillins, cephalosporins or other beta-lactam agents"
+            },
+            {
+              "s": "emc-526",
+              "q": "These reactions are more likely to occur in individuals with a history of penicillin hypersensitivity and in atopic individuals."
+            },
+            {
+              "s": "emc-526",
+              "q": "If an allergic reaction occurs, amoxicillin therapy must be discontinued and appropriate alternative therapy instituted."
+            }
+          ]
+        },
+        {
+          "t": "Avoid if infectious mononucleosis (glandular fever) is suspected: morbilliform rash.",
+          "tag": "Infectious mononucleosis",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Amoxicillin should be avoided if infectious mononucleosis is suspected since the occurrence of a morbilliform rash has been associated with this condition following the use of amoxicillin."
+            }
+          ]
+        },
+        {
+          "t": "Convulsions may occur with impaired renal function, high doses or predisposing factors (history of seizures, treated epilepsy, meningeal disorders).",
+          "tag": "Seizures",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Convulsions may occur in patients with impaired renal function or in those receiving high doses or in patients with predisposing factors (e.g. history of seizures, treated epilepsy or meningeal disorders"
+            }
+          ]
+        },
+        {
+          "t": "Drug-induced enterocolitis syndrome (DIES), mainly in children: protracted vomiting 1-4 hours after a dose without skin or respiratory allergy signs; severe cases can progress to shock.",
+          "tag": "DIES",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Drug-induced enterocolitis syndrome (DIES) has been reported mainly in children receiving amoxicillin"
+            },
+            {
+              "s": "emc-526",
+              "q": "There have been severe cases including progression to shock."
+            }
+          ]
+        },
+        {
+          "t": "Hypersensitivity can progress to Kounis syndrome (allergic reaction that can cause myocardial infarction); chest pain with an allergic reaction may be a presenting symptom.",
+          "tag": "Kounis syndrome",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Hypersensitivity reactions can also progress to Kounis syndrome, a serious allergic reaction that can result in myocardial infarction"
+            }
+          ]
+        },
+        {
+          "t": "Consider antibiotic-associated colitis in anyone with diarrhoea during or after treatment; if it occurs stop amoxicillin. Anti-peristaltic medicines are contraindicated in this situation.",
+          "tag": "Colitis",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Should antibiotic-associated colitis occur, amoxicillin should immediately be discontinued, a physician consulted and an appropriate therapy initiated."
+            },
+            {
+              "s": "emc-526",
+              "q": "Anti-peristaltic medicinal products are contra-indicated in this situation."
+            }
+          ]
+        },
+        {
+          "t": "Renal impairment: adjust dose to degree of impairment (see Renal).",
+          "tag": "Renal impairment",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "In patients with renal impairment, the dose should be adjusted according to the degree of impairment"
+            }
+          ]
+        },
+        {
+          "t": "High doses: keep adequate fluid intake and urine output to reduce the risk of crystalluria; check patency of bladder catheters.",
+          "tag": "Crystalluria",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "During the administration of high doses of amoxicillin, it is advisable to maintain adequate fluid intake and urinary output in order to reduce the possibility of amoxicillin crystalluria."
+            }
+          ]
+        },
+        {
+          "t": "Jarisch-Herxheimer reaction can follow treatment of Lyme disease; it is common and usually self-limiting.",
+          "tag": "Lyme disease",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Patients should be reassured that this is a common and usually self-limiting consequence of antibiotic treatment of Lyme disease."
+            }
+          ]
+        },
+        {
+          "t": "Not suitable for some infections unless the pathogen is known or very likely to be susceptible, particularly UTIs and severe ear, nose and throat infections.",
+          "tag": "Susceptibility",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "This particularly applies when considering the treatment of patients with urinary tract infections and severe infections of the ear, nose and throat."
+            }
+          ]
+        },
+        {
+          "t": "Urine glucose: use enzymatic glucose oxidase methods (false positives with chemical methods). May distort oestriol assays in pregnancy.",
+          "tag": "Lab tests",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "It is recommended that when testing for the presence of glucose in urine during amoxicillin treatment, enzymatic glucose oxidase methods should be used."
+            },
+            {
+              "s": "emc-526",
+              "q": "The presence of amoxicillin may distort assay results for oestriol in pregnant women."
+            }
+          ]
+        },
+        {
+          "t": "Suspension contains sorbitol: patients with rare hereditary fructose intolerance should not take it. Contains sodium benzoate, which may increase the risk of jaundice in newborn babies.",
+          "tag": "Excipients",
+          "formulations": [
+            "amoxicillin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-14146",
+              "q": "This medicinal product contains sorbitol. Patients with rare hereditary problems of fructose intolerance should not take this medicine."
+            },
+            {
+              "s": "emc-14146",
+              "q": "May increase the risk of jaundice in newborn babies."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Warfarin / acenocoumarol (oral anticoagulants): raised INR reported. If used together, carefully monitor prothrombin time/INR when amoxicillin is added or stopped; anticoagulant dose may need adjusting.",
+          "tag": "Warfarin",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "in the literature there are cases of increased international normalised ratio in patients maintained on acenocoumarol or warfarin and prescribed a course of amoxicillin"
+            },
+            {
+              "s": "emc-526",
+              "q": "If co-administration is necessary, the prothrombin time or international normalised ratio should be carefully monitored with the addition or withdrawal of amoxicillin."
+            }
+          ]
+        },
+        {
+          "t": "Methotrexate: penicillins may reduce methotrexate excretion and increase toxicity. SPS: for short penicillin courses (up to 10 days) consider using with caution and monitor for toxicity (sore throat, bruising, bleeding).",
+          "tag": "Methotrexate",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Penicillins may reduce the excretion of methotrexate causing a potential increase in toxicity."
+            },
+            {
+              "s": "sps-methotrexate-interactions",
+              "q": "If the duration of penicillin is short (up to 10 days), consider using with caution and advise to monitor for signs of toxicity."
+            }
+          ]
+        },
+        {
+          "t": "Probenecid: concomitant use not recommended (raises and prolongs amoxicillin levels).",
+          "tag": "Probenecid",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Probenecid Concomitant use of probenecid is not recommended."
+            }
+          ]
+        },
+        {
+          "t": "Allopurinol: increased likelihood of allergic skin reactions.",
+          "tag": "Allopurinol",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Concurrent administration of allopurinol during treatment with amoxicillin can increase the likelihood of allergic skin reactions."
+            }
+          ]
+        },
+        {
+          "t": "Tetracyclines and other bacteriostatic drugs may interfere with amoxicillin's bactericidal effect.",
+          "tag": "Tetracyclines",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Tetracyclines and other bacteriostatic drugs may interfere with the bactericidal effects of amoxicillin."
+            }
+          ]
+        },
+        {
+          "t": "Oral typhoid vaccine is inactivated by antibacterials.",
+          "tag": "Oral typhoid vaccine",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-14146",
+              "q": "The oral typhoid vaccine is inactivated by antibacterials."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "GFR > 30 ml/min: no adjustment.",
+          "tag": "GFR > 30 ml/min",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "greater than 30 No adjustment necessary No adjustment necessary"
+            }
+          ]
+        },
+        {
+          "t": "GFR 10 to 30 ml/min: adults and children ≥ 40 kg maximum 500 mg twice daily; children < 40 kg 15 mg/kg twice daily (maximum 500 mg twice daily).",
+          "tag": "GFR 10-30 ml/min",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "10 to 30 Maximum 500 mg twice daily 15 mg/kg given twice daily (maximum 500 mg twice daily)"
+            }
+          ]
+        },
+        {
+          "t": "GFR < 10 ml/min: adults and children ≥ 40 kg maximum 500 mg/day; children < 40 kg 15 mg/kg as a single dose (maximum 500 mg). For children < 40 kg parenteral therapy is preferred in most cases.",
+          "tag": "GFR < 10 ml/min",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "less than 10 Maximum 500 mg/day 15 mg/kg given as a single dose (maximum 500 mg)"
+            },
+            {
+              "s": "emc-526",
+              "q": "In the majority of cases, parenteral therapy is preferred."
+            }
+          ]
+        },
+        {
+          "t": "Haemodialysis: adults/children > 40 kg 500 mg every 24 h, plus one extra 500 mg dose before and another 500 mg dose after dialysis. Children < 40 kg 15 mg/kg/day once daily (maximum 500 mg), plus 15 mg/kg before and after dialysis. Peritoneal dialysis: maximum 500 mg/day.",
+          "tag": "Dialysis",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Haemodialysis Adults and children over 40 kg 500 mg every 24 h Prior to haemodialysis one additional dose of 500 mg should be administered."
+            },
+            {
+              "s": "emc-526",
+              "q": "Children under 40 kg 15 mg/kg/day given as a single daily dose (maximum 500 mg)."
+            },
+            {
+              "s": "emc-526",
+              "q": "In patients receiving peritoneal dialysis Amoxicillin maximum 500 mg/day."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Hepatic impairment: dose with caution and monitor hepatic function at regular intervals.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Hepatic impairment Dose with caution and monitor hepatic function at regular intervals"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: limited human data do not indicate an increased risk of congenital malformations; may be used when potential benefits outweigh potential risks.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Limited data on the use of amoxicillin during pregnancy in humans do not indicate an increased risk of congenital malformations."
+            },
+            {
+              "s": "emc-526",
+              "q": "Amoxicillin may be used in pregnancy when the potential benefits outweigh the potential risks associated with treatment."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS): amoxicillin can be taken in pregnancy if recommended by a doctor; no concerns that penicillin use will harm the baby; no extra monitoring for major birth defects needed.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-penicillins",
+              "q": "Amoxicillin, co-amoxiclav, and penicillin V can be taken in pregnancy if recommended by a doctor."
+            },
+            {
+              "s": "bumps-penicillins",
+              "q": "There are no concerns that use of a penicillin antibiotic in pregnancy will harm your baby."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: excreted in breast milk in small amounts (possible sensitisation, diarrhoea and mucosal fungal infection in the infant); use only after benefit/risk assessment.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Amoxicillin is excreted into breast milk in small quantities with the possible risk of sensitisation."
+            },
+            {
+              "s": "emc-526",
+              "q": "Amoxicillin should only be used during breast-feeding after benefit/risk assessment by the physician in charge."
+            }
+          ]
+        },
+        {
+          "t": "SPS: all penicillins can be used during breastfeeding with precautionary infant monitoring; amoxicillin is a preferred choice. Monitor the infant for GI disturbance, oral candida, hypersensitivity (rash, breathing problems), nausea, irritability and drowsiness.",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-penicillins-breastfeeding",
+              "q": "All penicillin antibiotics can be used during breastfeeding with precautionary infant monitoring."
+            },
+            {
+              "s": "sps-penicillins-breastfeeding",
+              "q": "the broad-spectrum penicillins, such as amoxicillin and ampicillin, are the preferred choices"
+            },
+            {
+              "s": "sps-penicillins-breastfeeding",
+              "q": "As a precaution, monitor for gastro-intestinal disturbances, oral candida infection, hypersensitivity reactions (including rashes or breathing problems), nausea, irritability, and drowsiness."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No human fertility data; animal reproductive studies showed no effect on fertility.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "There are no data on the effects of amoxicillin on fertility in humans. Reproductive studies in animals have shown no effects on fertility."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: diarrhoea, nausea, skin rash. Uncommon: vomiting, urticaria, pruritus.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "The most commonly reported adverse drug reactions (ADRs) are diarrhoea, nausea and skin rash."
+            },
+            {
+              "s": "emc-526",
+              "q": "*Common Diarrhoea and nausea *Uncommon Vomiting"
+            },
+            {
+              "s": "emc-526",
+              "q": "*Common Skin rash *Uncommon Urticaria and pruritus"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Severe allergic reactions (angioedema, anaphylaxis, serum sickness, hypersensitivity vasculitis): stop amoxicillin and start appropriate alternative therapy.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Severe allergic reactions, including angioneurotic oedema, anaphylaxis, serum sickness and hypersensitivity vasculitis"
+            },
+            {
+              "s": "emc-526",
+              "q": "If an allergic reaction occurs, amoxicillin therapy must be discontinued and appropriate alternative therapy instituted."
+            }
+          ]
+        },
+        {
+          "t": "Severe skin reactions (erythema multiforme, SJS, TEN, bullous/exfoliative dermatitis, AGEP, DRESS). AGEP requires stopping and contraindicates future use.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Skin reactions such as erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis, bullous and exfoliative dermatitis, acute generalised exanthematous pustulosis (AGEP)"
+            },
+            {
+              "s": "emc-526",
+              "q": "This reaction requires amoxicillin discontinuation and contra-indicates any subsequent administration."
+            }
+          ]
+        },
+        {
+          "t": "Antibiotic-associated colitis (including pseudomembranous colitis): stop immediately and seek medical review.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Should antibiotic-associated colitis occur, amoxicillin should immediately be discontinued, a physician consulted and an appropriate therapy initiated."
+            }
+          ]
+        },
+        {
+          "t": "Very rare: hepatitis and cholestatic jaundice; reversible leucopenia (including severe neutropenia/agranulocytosis), thrombocytopenia, haemolytic anaemia; convulsions; interstitial nephritis; crystalluria (including acute renal injury).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Very rare Hepatitis and cholestatic jaundice."
+            },
+            {
+              "s": "emc-526",
+              "q": "Reversible leucopenia (including severe neutropenia or agranulocytosis), reversible thrombocytopenia and haemolytic anaemia."
+            },
+            {
+              "s": "emc-526",
+              "q": "Very rare Interstitial nephritis Not known Crystalluria (including acute renal injury)"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Prolonged therapy: periodic assessment of renal, hepatic and haematopoietic function is advisable.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Periodic assessment of organ system functions; including renal, hepatic and haematopoietic function is advisable during prolonged therapy."
+            }
+          ]
+        },
+        {
+          "t": "With oral anticoagulants: monitor prothrombin time/INR when amoxicillin is started or stopped.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Appropriate monitoring should be undertaken when anticoagulants are prescribed concomitantly."
+            }
+          ]
+        },
+        {
+          "t": "Hepatic impairment: monitor hepatic function at regular intervals.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Hepatically impaired patients should be dosed with caution and hepatic function monitored at regular intervals."
+            }
+          ]
+        },
+        {
+          "t": "Stop if an allergic reaction, AGEP or antibiotic-associated colitis occurs.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "If an allergic reaction occurs, amoxicillin therapy must be discontinued"
+            },
+            {
+              "s": "emc-526",
+              "q": "This reaction requires amoxicillin discontinuation"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral. Absorption is not affected by food.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Absorption of amoxicillin is unimpaired by food."
+            }
+          ]
+        },
+        {
+          "t": "Capsules: swallow with water without opening. Not suitable for patients who cannot swallow capsules; other oral forms are available.",
+          "formulations": [
+            "amoxicillin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Swallow with water without opening capsule."
+            },
+            {
+              "s": "emc-526",
+              "q": "Capsules are not suitable for the treatment of patients who cannot swallow capsules"
+            }
+          ]
+        },
+        {
+          "t": "Suspension: reconstitute before use (84 ml water for 100 ml); after reconstitution store at 2-8 °C in a refrigerator for up to 7 days.",
+          "formulations": [
+            "amoxicillin-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-14146",
+              "q": "84ml to reconstitute 100ml of 125/5ml Amoxicillin Sugar Free Suspension"
+            },
+            {
+              "s": "emc-14146",
+              "q": "Reconstituted Suspension: Store up to 7 days at 2°C - 8°C in a refrigerator."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report any rash, swelling, breathing difficulty or chest pain with allergy symptoms straight away; treatment must be stopped.",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "Presenting symptoms of such reactions can include chest pain occurring in association with an allergic reaction to amoxicillin"
+            }
+          ]
+        },
+        {
+          "t": "Report diarrhoea during or after the course (possible antibiotic-associated colitis).",
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "it is important to consider this diagnosis in patients who present with diarrhoea during, or subsequent to, the administration of any antibiotics"
+            }
+          ]
+        },
+        {
+          "t": "Side effects such as dizziness, allergic reactions or convulsions may affect driving or using machines.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-526",
+              "q": "undesirable effects may occur (e.g. allergic reactions, dizziness, convulsions), which may influence the ability to drive and use machines"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "amoxicillin:allergy:penicillin",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "amoxicillin",
+      "allergen": [
+        "amoxicillin",
+        "group:penicillin"
+      ],
+      "concern": "Penicillin / amoxicillin hypersensitivity",
+      "consequence": "Risk of serious, occasionally fatal hypersensitivity reactions.",
+      "action": "Do not use.",
+      "sourceWording": "Hypersensitivity to the active substance, to any of the penicillins",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Hypersensitivity to the active substance, to any of the penicillins or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:allergy:beta-lactam-severe-immediate",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "amoxicillin",
+      "allergen": [
+        "group:beta-lactam",
+        "group:cephalosporin",
+        "group:carbapenem",
+        "group:monobactam"
+      ],
+      "reactions": [
+        "immediate-severe"
+      ],
+      "concern": "Severe immediate reaction (e.g. anaphylaxis) to another beta-lactam",
+      "consequence": "Cross-reactivity risk.",
+      "action": "Do not use (contraindicated with a history of severe immediate hypersensitivity to another beta-lactam, e.g. cephalosporin, carbapenem or monobactam).",
+      "sourceWording": "History of a severe immediate hypersensitivity reaction (e.g. anaphylaxis) to another beta-lactam agent",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "History of a severe immediate hypersensitivity reaction (e.g. anaphylaxis) to another beta-lactam agent (e.g. a cephalosporin, carbapenem or monobactam)."
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:allergy:beta-lactam-enquiry",
+      "kind": "allergy",
+      "level": "caution",
+      "med": "amoxicillin",
+      "allergen": [
+        "group:cephalosporin",
+        "group:carbapenem",
+        "group:monobactam",
+        "group:beta-lactam"
+      ],
+      "concern": "Previous reaction to a cephalosporin or other beta-lactam",
+      "consequence": "Serious hypersensitivity reactions are reported with beta-lactams.",
+      "action": "Make careful enquiry about the previous reaction before starting; stop if an allergic reaction occurs.",
+      "sourceWording": "careful enquiry should be made",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "careful enquiry should be made concerning previous hypersensitivity reactions to penicillins, cephalosporins or other beta-lactam agents"
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:condition:infectious-mononucleosis",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-cap",
+        "amoxicillin-susp"
+      ],
+      "condition": "infectious-mononucleosis",
+      "concern": "Suspected infectious mononucleosis",
+      "consequence": "Morbilliform rash.",
+      "action": "Avoid amoxicillin if infectious mononucleosis is suspected.",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Amoxicillin should be avoided if infectious mononucleosis is suspected"
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:condition:epilepsy",
+      "kind": "condition",
+      "level": "info",
+      "med": "amoxicillin",
+      "condition": "epilepsy",
+      "effect": "seizure-threshold",
+      "concern": "History of seizures / treated epilepsy",
+      "consequence": "Convulsions may occur, especially with high doses or renal impairment.",
+      "action": "Be aware of convulsion risk (no specific action stated).",
+      "sourceWording": "Convulsions may occur",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Convulsions may occur in patients with impaired renal function or in those receiving high doses or in patients with predisposing factors (e.g. history of seizures, treated epilepsy or meningeal disorders"
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:condition:fructose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-susp"
+      ],
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance (suspension contains sorbitol)",
+      "consequence": "Excipient intolerance.",
+      "action": "Patients with hereditary fructose intolerance should not take this suspension.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-14146",
+          "q": "Patients with rare hereditary problems of fructose intolerance should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:renal:gfr-10-30",
+      "kind": "renal",
+      "level": "dose",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-cap",
+        "amoxicillin-susp"
+      ],
+      "renal": {
+        "measure": "GFR",
+        "min": 10,
+        "max": 30,
+        "maxInclusive": true
+      },
+      "concern": "GFR 10 to 30 ml/min",
+      "consequence": "Reduced amoxicillin clearance.",
+      "action": "Adults/children ≥ 40 kg: maximum 500 mg twice daily. Children < 40 kg: 15 mg/kg twice daily (maximum 500 mg twice daily).",
+      "sourceWording": "Maximum 500 mg twice daily",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "10 to 30 Maximum 500 mg twice daily 15 mg/kg given twice daily (maximum 500 mg twice daily)"
+        },
+        {
+          "s": "emc-526",
+          "q": "greater than 30 No adjustment necessary"
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:renal:gfr-under-10",
+      "kind": "renal",
+      "level": "dose",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-cap",
+        "amoxicillin-susp"
+      ],
+      "renal": {
+        "measure": "GFR",
+        "max": 10
+      },
+      "concern": "GFR < 10 ml/min",
+      "consequence": "Reduced amoxicillin clearance.",
+      "action": "Adults/children ≥ 40 kg: maximum 500 mg/day. Children < 40 kg: 15 mg/kg as a single dose (maximum 500 mg).",
+      "sourceWording": "Maximum 500 mg/day",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "less than 10 Maximum 500 mg/day 15 mg/kg given as a single dose (maximum 500 mg)"
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-cap",
+        "amoxicillin-susp"
+      ],
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Hepatic impairment",
+      "consequence": "Hepatitis and cholestatic jaundice reported (very rare).",
+      "action": "Dose with caution and monitor hepatic function at regular intervals.",
+      "sourceWording": "Dose with caution and monitor hepatic function",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Hepatic impairment Dose with caution and monitor hepatic function at regular intervals"
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-cap",
+        "amoxicillin-susp"
+      ],
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Limited human data do not indicate an increased risk of congenital malformations.",
+      "action": "Use when the potential benefits outweigh the potential risks.",
+      "sourceWording": "may be used in pregnancy when the potential benefits outweigh the potential risks",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Amoxicillin may be used in pregnancy when the potential benefits outweigh the potential risks associated with treatment."
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-cap",
+        "amoxicillin-susp"
+      ],
+      "concern": "Pregnancy (BUMPS/UKTIS)",
+      "consequence": "No concerns that penicillin use in pregnancy harms the baby.",
+      "action": "BUMPS: can be taken in pregnancy if recommended by a doctor.",
+      "sourceWording": "can be taken in pregnancy if recommended by a doctor",
+      "src": [
+        {
+          "s": "bumps-penicillins",
+          "q": "Amoxicillin, co-amoxiclav, and penicillin V can be taken in pregnancy if recommended by a doctor."
+        },
+        {
+          "s": "bumps-penicillins",
+          "q": "There are no concerns that use of a penicillin antibiotic in pregnancy will harm your baby."
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-cap",
+        "amoxicillin-susp"
+      ],
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Small amounts in milk: possible infant sensitisation, diarrhoea, oral thrush.",
+      "action": "Use only after benefit/risk assessment.",
+      "sourceWording": "should only be used during breast-feeding after benefit/risk assessment",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Amoxicillin should only be used during breast-feeding after benefit/risk assessment by the physician in charge."
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "monitor",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-cap",
+        "amoxicillin-susp"
+      ],
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Negligible milk levels; amoxicillin is a preferred penicillin.",
+      "action": "Can be used with precautionary infant monitoring (GI upset, oral thrush, rash/breathing problems, irritability, drowsiness).",
+      "sourceWording": "can be used during breastfeeding with precautionary infant monitoring",
+      "src": [
+        {
+          "s": "sps-penicillins-breastfeeding",
+          "q": "All penicillin antibiotics can be used during breastfeeding with precautionary infant monitoring."
+        },
+        {
+          "s": "sps-penicillins-breastfeeding",
+          "q": "the broad-spectrum penicillins, such as amoxicillin and ampicillin, are the preferred choices"
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-cap",
+        "amoxicillin-susp"
+      ],
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (oral anticoagulant)",
+      "consequence": "Increased INR reported.",
+      "action": "Carefully monitor prothrombin time/INR when amoxicillin is added or withdrawn; anticoagulant dose may need adjustment.",
+      "sourceWording": "should be carefully monitored",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "in the literature there are cases of increased international normalised ratio in patients maintained on acenocoumarol or warfarin and prescribed a course of amoxicillin"
+        },
+        {
+          "s": "emc-526",
+          "q": "If co-administration is necessary, the prothrombin time or international normalised ratio should be carefully monitored with the addition or withdrawal of amoxicillin."
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amoxicillin",
+      "formulations": [
+        "amoxicillin-cap",
+        "amoxicillin-susp"
+      ],
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate",
+      "consequence": "Penicillins may reduce methotrexate excretion, increasing toxicity.",
+      "action": "SPS: for short courses (up to 10 days) consider using with caution and monitor for methotrexate toxicity (sore throat, bruising, bleeding).",
+      "sourceWording": "consider using with caution and advise to monitor for signs of toxicity",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Penicillins may reduce the excretion of methotrexate causing a potential increase in toxicity."
+        },
+        {
+          "s": "sps-methotrexate-interactions",
+          "q": "If the duration of penicillin is short (up to 10 days), consider using with caution and advise to monitor for signs of toxicity."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1333 @@
+{
+  "id": "co-codamol",
+  "name": "Co-codamol",
+  "ingredients": [
+    "codeine",
+    "paracetamol"
+  ],
+  "className": "Opioid (codeine) and paracetamol combination analgesic",
+  "groups": [
+    "opioid"
+  ],
+  "searchTerms": [
+    "codeine phosphate and paracetamol",
+    "paracetamol and codeine",
+    "codeine/paracetamol"
+  ],
+  "formulations": [
+    {
+      "id": "co-codamol-8-500-tab",
+      "label": "Tablets 8 mg/500 mg",
+      "route": "oral",
+      "strengths": "8 mg codeine phosphate / 500 mg paracetamol",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-5958",
+          "q": "Each tablet contains 500mg paracetamol and 8mg codeine phosphate."
+        }
+      ],
+      "sourceIds": [
+        "emc-5958"
+      ]
+    },
+    {
+      "id": "co-codamol-30-500-tab",
+      "label": "Tablets 30 mg/500 mg",
+      "route": "oral",
+      "strengths": "30 mg codeine phosphate hemihydrate / 500 mg paracetamol",
+      "release": "immediate",
+      "note": "The 30/500 SmPC lists extra contraindications (e.g. acute asthma, respiratory depression, head injury) not listed in the 8/500 SmPC.",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Each tablet contains 500mg paracetamol and 30mg codeine phosphate hemihydrate."
+        }
+      ],
+      "sourceIds": [
+        "emc-4457"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "30/500: severe pain. Codeine component: acute moderate pain not relieved by paracetamol or ibuprofen alone, in patients over 12 years.",
+          "formulations": [
+            "co-codamol-30-500-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "For the relief of severe pain."
+            },
+            {
+              "s": "emc-4457",
+              "q": "Codeine is indicated in patients older than 12 years of age for the treatment of acute moderate pain which is not considered to be relieved by other analgesics such as paracetamol or ibuprofen (alone)."
+            }
+          ]
+        },
+        {
+          "t": "8/500: painful and febrile conditions (e.g. headache, migraine, neuralgia, toothache, dysmenorrhoea, rheumatic pain); codeine for acute moderate pain not relieved by paracetamol or ibuprofen alone, over 12 years.",
+          "formulations": [
+            "co-codamol-8-500-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-5958",
+              "q": "This product is recommended for the relief of most painful and febrile conditions"
+            },
+            {
+              "s": "emc-5958",
+              "q": "Codeine is indicated in patients older than 12 years of age for the treatment of acute moderate pain"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA: codeine-containing medicines only for acute moderate pain in children over 12 years and only if paracetamol or ibuprofen alone do not work.",
+          "src": [
+            {
+              "s": "mhra-dsu-codeine-children-2013",
+              "q": "Codeine should only be used to relieve acute moderate pain in children older than 12 years and only if it cannot be relieved by other painkillers such as paracetamol or ibuprofen"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults: 2 tablets not more often than every 4-6 hours; maximum 8 tablets in 24 hours. Elderly: as adults, but a reduced dose may be needed.",
+          "tag": "Adults",
+          "formulations": [
+            "co-codamol-30-500-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Adults : Two tablets not more frequently than every 4 to 6 hours, up to a maximum of 8 tablets in any 24 hour period."
+            },
+            {
+              "s": "emc-4457",
+              "q": "Elderly : As for adults, however a reduced dose may be required."
+            }
+          ]
+        },
+        {
+          "t": "Adults: 2 tablets with a glass of water, not more often than every 4-6 hours; maximum 8 tablets in 24 hours.",
+          "tag": "Adults",
+          "formulations": [
+            "co-codamol-8-500-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-5958",
+              "q": "Adults: Two tablets, to be taken with a glass of water, not more frequently than every 4 to six hours, up to a maximum of 8 tablets in any 24 hour period."
+            }
+          ]
+        },
+        {
+          "t": "Keep treatment as short as possible; agree a treatment plan and end-of-treatment plan before starting; taper gradually when stopping.",
+          "tag": "Duration",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "The duration of treatment should be as short as possible"
+            },
+            {
+              "s": "emc-4457",
+              "q": "When a patient no longer requires therapy with codeine, it may be advisable to taper the dose gradually to prevent symptoms of withdrawal."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Under 12 years: should not be used (risk of opioid toxicity from variable codeine-to-morphine metabolism).",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Codeine should not be used in children below the age of 12 years because of the risk of opioid toxicity due to the variable and unpredictable metabolism of codeine to morphine"
+            }
+          ]
+        },
+        {
+          "t": "12-15 years: 1 tablet every 6 hours when necessary, maximum 4 tablets in 24 hours. 16-18 years: 1-2 tablets every 6 hours when necessary, maximum 8 tablets in 24 hours. 30/500: no more than 3 days without consulting a doctor.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Children aged 12 to 15 years: One tablet every 6 hours when necessary to a maximum of 4 tablets in 24 hours."
+            },
+            {
+              "s": "emc-5958",
+              "q": "Children aged 16 to 18 years : One to two tablets every 6 hours when necessary up to a maximum of 8 tablets in 24 hours."
+            },
+            {
+              "s": "emc-4457",
+              "q": "Do not take for more than 3 days without consulting your doctor."
+            }
+          ]
+        },
+        {
+          "t": "MHRA: in 12-18 years codeine maximum 240 mg/day, intervals of no less than 6 hours, treatment limited to 3 days.",
+          "src": [
+            {
+              "s": "mhra-dsu-codeine-children-2013",
+              "q": "In children age 12-18 years, the maximum daily dose should not exceed 240 mg."
+            },
+            {
+              "s": "mhra-dsu-codeine-children-2013",
+              "q": "Duration of treatment should be limited to 3 days"
+            },
+            {
+              "s": "mhra-dsu-codeine-children-2013",
+              "q": "up to four times a day at intervals of no less than 6 hours"
+            }
+          ]
+        },
+        {
+          "t": "Contraindicated in all under-18s having tonsillectomy and/or adenoidectomy for obstructive sleep apnoea. Not recommended in children whose breathing may be compromised.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "In all paediatric patients (0-18 years of age) who undergo tonsillectomy and/or adenoidectomy for obstructive sleep apnoea syndrome"
+            },
+            {
+              "s": "emc-4457",
+              "q": "Codeine is not recommended for use in children in whom respiratory function might be compromised"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to paracetamol, codeine or excipients.",
+          "src": [
+            {
+              "s": "emc-5958",
+              "q": "Hypersensitivity to paracetamol, codeine phosphate or any of the other constituents."
+            }
+          ]
+        },
+        {
+          "t": "Breastfeeding; known CYP2D6 ultra-rapid metabolisers; under-18s after tonsillectomy/adenoidectomy for obstructive sleep apnoea.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "In women during breastfeeding (see section 4.6) In patients for whom it is known they are CYP2D6 ultra-rapid metabolisers"
+            },
+            {
+              "s": "emc-4457",
+              "q": "In all paediatric patients (0-18 years of age) who undergo tonsillectomy and/or adenoidectomy for obstructive sleep apnoea syndrome"
+            }
+          ]
+        },
+        {
+          "t": "30/500 also: conditions where opioids are contraindicated (acute asthma, respiratory depression, acute alcoholism, head injury, raised intracranial pressure, after biliary tract surgery) and MAOI therapy now or within 14 days.",
+          "formulations": [
+            "co-codamol-30-500-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Conditions where morphine and opioids are contraindicated e.g., acute asthma, respiratory depression, acute alcoholism, head injuries, raised intra-cranial pressure and following biliary tract surgery"
+            },
+            {
+              "s": "emc-4457",
+              "q": "monoamine oxidase inhibitor therapy, concurrent or within 14 days"
+            }
+          ]
+        },
+        {
+          "t": "8/500 also: under 12 years for symptomatic treatment of colds.",
+          "formulations": [
+            "co-codamol-8-500-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-5958",
+              "q": "In children below the age of 12 years for the symptomatic treatment of colds"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Tolerance, dependence and opioid use disorder can develop with repeated use, even at therapeutic doses; risk higher with personal/family history of substance use disorder, tobacco use or mental health disorders. Agree goals and a stop plan; watch for drug-seeking behaviour.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Repeated use of Co-codamol can lead to OUD."
+            },
+            {
+              "s": "emc-4457",
+              "q": "Patients will require monitoring for signs of drug-seeking behaviour (e.g. too early requests for refills)."
+            }
+          ]
+        },
+        {
+          "t": "Care in conditions that opioids may worsen: elderly, other CNS depressants, prostatic hypertrophy, hypothyroidism, inflammatory or obstructive bowel disorders, Addison's disease, myasthenia gravis.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "those on concurrent CNS depressant drugs, those with prostatic hypertrophy, hypothyroidism and those with inflammatory or obstructive bowel disorders, Addison's disease or myasthenia gravis"
+            }
+          ]
+        },
+        {
+          "t": "CYP2D6 ultra-rapid or extensive metabolisers have a higher risk of opioid toxicity (confusion, somnolence, shallow breathing, small pupils), which can be life-threatening.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "if the patient is an extensive or ultra-rapid metaboliser there is an increased risk of developing side effects of opioid toxicity even at commonly prescribed doses"
+            }
+          ]
+        },
+        {
+          "t": "Use with caution in convulsive disorders, pancreatitis and biliary tract disease (sphincter of Oddi spasm).",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Use with caution in patients with convulsive disorders."
+            },
+            {
+              "s": "emc-4457",
+              "q": "codeine/paracetamol has to be administered with caution in patients with pancreatitis and diseases of the biliary tract"
+            }
+          ]
+        },
+        {
+          "t": "Paracetamol component: care in severe renal or severe hepatic impairment; do not take other paracetamol-containing products; high anion gap metabolic acidosis risk in severe illness, malnutrition or chronic alcoholism.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Care is advised in the administration of paracetamol to patients with severe renal or severe hepatic impairment."
+            },
+            {
+              "s": "emc-4457",
+              "q": "not take other paracetamol containing products concurrently"
+            }
+          ]
+        },
+        {
+          "t": "Sleep-related breathing disorders (central sleep apnoea): consider reducing the opioid dose.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "In patients who present with CSA, consider decreasing the total opioid dosage."
+            }
+          ]
+        },
+        {
+          "t": "Alcohol: concomitant use not recommended (sedation, respiratory depression, coma, death).",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Concomitant use with alcohol is not recommended"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Benzodiazepines and other sedatives: risk of sedation, respiratory depression, coma and death; co-prescribe only if no alternative, lowest dose, shortest time, monitor closely.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "concomitant prescribing with these sedative medicines should be reserved for patients for whom alternative treatment options are not possible"
+            },
+            {
+              "s": "mhra-dsu-benzodiazepines-opioids-2020",
+              "q": "only prescribe benzodiazepines (or benzodiazepine-like drugs) and opioids together if there is no alternative"
+            }
+          ]
+        },
+        {
+          "t": "Other opioid (narcotic) analgesics, antihypertensives, antihistamines, antipsychotics and other CNS depressants: additive CNS depression.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Patients receiving other narcotic analgesics, antitussive, antihypertensives, antihistamines, antipsychotics, antianxiety agents or other CNS depressants (including alcohol) concomitantly with this codeine containing drug may exhibit additive CNS depression."
+            }
+          ]
+        },
+        {
+          "t": "Warfarin and other coumarins: prolonged regular paracetamol may enhance the anticoagulant effect (bleeding risk); occasional doses have no significant effect.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "The anticoagulant effect of warfarin and other coumarins may be enhanced by prolonged regular use of paracetamol with increased risk of bleeding"
+            }
+          ]
+        },
+        {
+          "t": "MAOIs: do not use within two weeks of stopping an MAOI.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Co-codamol should not be used within two weeks after the discontinuation of MAOI treatment."
+            }
+          ]
+        },
+        {
+          "t": "Gabapentin or pregabalin: respiratory depression, hypotension, profound sedation, coma or death.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Concomitant use of Co-codamol with gabapentinoids (gabapentin and pregabalin) may result in respiratory depression, hypotension, profound sedation, coma or death."
+            }
+          ]
+        },
+        {
+          "t": "Sertraline (sertraline SmPC): serotonin syndrome / NMS risk is increased with opioids; caution and monitor for symptoms.",
+          "src": [
+            {
+              "s": "emc-1070",
+              "q": "and with opioids. Patients should be monitored for the emergence of signs and symptoms of SS or NMS syndrome"
+            },
+            {
+              "s": "emc-1070",
+              "q": "Caution is also advised with opioids"
+            }
+          ]
+        },
+        {
+          "t": "Clopidogrel (clopidogrel SmPC): opioid agonists may delay and reduce clopidogrel absorption (clinical relevance unknown); in acute coronary syndrome consider a parenteral antiplatelet agent.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5935",
+              "q": "co-administration of opioid agonists has the potential to delay and reduce the absorption of clopidogrel presumably because of slowed gastric emptying. The clinical relevance is unknown."
+            },
+            {
+              "s": "emc-5935",
+              "q": "Consider the use of a parenteral antiplatelet agent in acute coronary syndrome patients requiring co-administration of morphine or other opioid agonists."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Severe renal insufficiency: use only on medical advice; paracetamol care advised (no numeric threshold or dose stated).",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Co-codamol 30/500 Tablets should be used upon medical advice in patients with: Mild-to-moderate hepatocellular insufficiency Severe renal insufficiency"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Mild-to-moderate hepatocellular insufficiency: use only on medical advice. Severe hepatic impairment: care advised (paracetamol).",
+          "src": [
+            {
+              "s": "emc-5958",
+              "q": "Co-codamol 8/500 Tablets should be used upon medical advice in patients with: Mild-to-moderate hepatocellular insufficiency"
+            },
+            {
+              "s": "emc-5958",
+              "q": "Care is advised in the administration of paracetamol to patients with severe renal or severe hepatic impairment."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Inadequate evidence for codeine safety; give careful consideration before prescribing. Regular use may cause dependence in the fetus and neonatal withdrawal; use in labour may depress neonatal breathing.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Nonetheless careful consideration should be given before prescribing the products for pregnant patients."
+            },
+            {
+              "s": "emc-4457",
+              "q": "Regular use during pregnancy may cause drug dependence in the foetus, leading to withdrawal symptoms in the neonate."
+            },
+            {
+              "s": "emc-4457",
+              "q": "Administration during labour may depress respiration in the neonate"
+            }
+          ]
+        },
+        {
+          "t": "MHRA: opioids cross the placenta; neonates may develop neonatal abstinence syndrome.",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-dsu-opioids-dependence-2020",
+              "q": "Opioids readily cross the placenta, therefore if used during pregnancy neonates may become dependent and experience neonatal abstinence syndrome at birth."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Contraindicated during breastfeeding (codeine may cause respiratory depression in the infant).",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Co-codamol 30/500 Tablets are contraindicated during breast-feeding (see section 4.3), as codeine may be secreted in breast milk and may cause respiratory depression in the infant."
+            }
+          ]
+        },
+        {
+          "t": "SPS: codeine is contra-indicated in breastfeeding, so codeine combination products should be avoided.",
+          "src": [
+            {
+              "s": "sps-bf-paracetamol",
+              "q": "Codeine is contra-indicated during breastfeeding and therefore combination products containing codeine should be avoided."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "No fertility or contraception statements in the SmPCs checked."
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Typical opioid effects: constipation, nausea, vomiting, dizziness, light-headedness, confusion, drowsiness, urinary retention (frequency not given).",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Codeine can produce typical opioid effects including constipation, nausea, vomiting, dizziness, light-headedness, confusion, drowsiness and urinary retention."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Opioid toxicity / respiratory depression (especially CYP2D6 ultra-rapid metabolisers): confusion, somnolence, shallow breathing, small pupils; may be life-threatening.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "General symptoms of opioid toxicity include confusion, somnolence, shallow breathing, small pupils, nausea, vomiting, constipation and lack of appetite."
+            }
+          ]
+        },
+        {
+          "t": "Addiction, tolerance and drug withdrawal syndrome; taper to stop.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Regular prolonged use of codeine is known to lead to addiction and tolerance."
+            }
+          ]
+        },
+        {
+          "t": "Anaphylactic shock, angioedema, agranulocytosis, thrombocytopenia, serious skin reactions, pancreatitis (rare/not known).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Not known: anaphylactic shock, angioedema"
+            },
+            {
+              "s": "emc-4457",
+              "q": "Not known: agranulocytosis, thrombocytopenia"
+            }
+          ]
+        },
+        {
+          "t": "Paracetamol overdose: delayed serious liver damage; seek medical help at once even if well.",
+          "src": [
+            {
+              "s": "emc-5958",
+              "q": "The patient should be advised to see immediate medical advice in the event of an overdose, even if they feel well, because of the risk of delayed, serious liver damage."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "After prolonged use: blood count, liver function and renal function.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Monitoring after prolonged use should include blood count, liver function and renal function."
+            }
+          ]
+        },
+        {
+          "t": "Review benefit-risk regularly; frequent contact to assess need to continue; monitor for signs of opioid use disorder.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "The risk-benefit of continued use should be assessed regularly by the prescriber."
+            }
+          ]
+        },
+        {
+          "t": "MHRA: before starting, agree a treatment strategy and end-of-treatment plan; taper slowly at the end of treatment.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "mhra-dsu-opioids-dependence-2020",
+              "q": "before starting treatment with opioids, agree with the patient a treatment strategy and plan for end of treatment"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral. 8/500 tablets: take with a glass of water.",
+          "src": [
+            {
+              "s": "emc-5958",
+              "q": "Two tablets, to be taken with a glass of water"
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Do not take anything else containing paracetamol.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Do not take anything else containing paracetamol while taking this medicine."
+            }
+          ]
+        },
+        {
+          "t": "Can cause addiction with regular long-term use; do not take for longer than directed.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Do not take for longer than directed by your prescriber as taking codeine regularly for a long time can lead to addiction."
+            }
+          ]
+        },
+        {
+          "t": "May affect driving; do not drive until you know how it affects you.",
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Do not drive until you know how the medicine affects you"
+            }
+          ]
+        },
+        {
+          "t": "Using painkillers for headaches too often or too long can make them worse.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4457",
+              "q": "Taking a painkiller for headaches too often or for too long can make them worse."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "co-codamol:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "allergen": [
+        "paracetamol",
+        "codeine"
+      ],
+      "concern": "Hypersensitivity to paracetamol or codeine",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity",
+      "src": [
+        {
+          "s": "emc-5958",
+          "q": "Hypersensitivity to paracetamol, codeine phosphate or any of the other constituents."
+        },
+        {
+          "s": "emc-4457",
+          "q": "Hypersensitivity to the active substances or any of the other excipients"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:breastfeeding:ci",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "concern": "Breastfeeding",
+      "consequence": "Codeine passes into milk and may cause infant respiratory depression; serious infant harm reported.",
+      "action": "Do not use; choose a non-codeine analgesic.",
+      "sourceWording": "contraindicated during breast-feeding",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Co-codamol 30/500 Tablets are contraindicated during breast-feeding"
+        },
+        {
+          "s": "emc-5958",
+          "q": "Co-codamol 8/500 tablets are contraindicated during breastfeeding"
+        },
+        {
+          "s": "mhra-dsu-codeine-children-2013",
+          "q": "Codeine should not be used by breastfeeding mothers because it can pass to the baby through breast milk and potentially cause harm"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:cyp2d6-urm",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "condition": "cyp2d6-ultra-rapid-metaboliser",
+      "effect": "cns-respiratory-depression",
+      "concern": "Known CYP2D6 ultra-rapid metaboliser",
+      "consequence": "Rapid conversion to morphine; life-threatening opioid toxicity.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "In patients for whom it is known they are CYP2D6 ultra-rapid metabolisers"
+        },
+        {
+          "s": "mhra-dsu-codeine-children-2013",
+          "q": "Codeine is contraindicated in all patients of any age known to be CYP2D6 ultra-rapid metabolisers"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:ta-osa",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "condition": "tonsillectomy-adenoidectomy-osa",
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "effect": "cns-respiratory-depression",
+      "concern": "Under 18 after tonsillectomy/adenoidectomy for obstructive sleep apnoea",
+      "consequence": "Serious and life-threatening adverse reactions, including death.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "In all paediatric patients (0-18 years of age) who undergo tonsillectomy and/or adenoidectomy for obstructive sleep apnoea syndrome due to an increased risk of developing serious and life-threatening adverse reactions"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:age:under-12",
+      "kind": "age",
+      "level": "avoid",
+      "med": "co-codamol",
+      "age": {
+        "minYears": 0,
+        "maxYears": 12
+      },
+      "concern": "Child under 12 years",
+      "consequence": "Risk of opioid toxicity from variable, unpredictable metabolism of codeine to morphine.",
+      "action": "Should not be used.",
+      "sourceWording": "should not be used in children below the age of 12 years",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Codeine should not be used in children below the age of 12 years because of the risk of opioid toxicity"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:age:under-12-colds",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "formulations": [
+        "co-codamol-8-500-tab"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 12
+      },
+      "concern": "Child under 12 years with a cold",
+      "consequence": "Serious and life-threatening adverse reactions.",
+      "action": "Do not use for colds.",
+      "sourceWording": "Co-codamol is contraindicated in children below the age of 12 years for the symptomatic treatment of cold",
+      "src": [
+        {
+          "s": "emc-5958",
+          "q": "Co-codamol is contraindicated in children below the age of 12 years for the symptomatic treatment of cold"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:paed-resp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "co-codamol",
+      "condition": "paediatric-compromised-respiratory-function",
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "concern": "Child with possibly compromised breathing",
+      "consequence": "Symptoms of morphine toxicity may be worse.",
+      "action": "Not recommended.",
+      "sourceWording": "not recommended",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Codeine is not recommended for use in children in whom respiratory function might be compromised including neuromuscular disorders, severe cardiac or respiratory conditions, upper respiratory or lung infections, multiple trauma or extensive surgical procedures."
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:acute-asthma",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "formulations": [
+        "co-codamol-30-500-tab"
+      ],
+      "condition": "acute-asthma-attack",
+      "concern": "Acute asthma",
+      "consequence": "Opioid contraindication (30/500 SmPC).",
+      "action": "Do not use.",
+      "sourceWording": "Conditions where morphine and opioids are contraindicated e.g., acute asthma",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Conditions where morphine and opioids are contraindicated e.g., acute asthma, respiratory depression"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:resp-depression",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "formulations": [
+        "co-codamol-30-500-tab"
+      ],
+      "condition": "copd-respiratory-depression",
+      "effect": "cns-respiratory-depression",
+      "concern": "Respiratory depression",
+      "consequence": "Opioid contraindication (30/500 SmPC).",
+      "action": "Do not use.",
+      "sourceWording": "Conditions where morphine and opioids are contraindicated e.g., ... respiratory depression",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Conditions where morphine and opioids are contraindicated e.g., acute asthma, respiratory depression"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:head-injury",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "formulations": [
+        "co-codamol-30-500-tab"
+      ],
+      "condition": "head-injury-raised-icp",
+      "concern": "Head injury or raised intracranial pressure",
+      "consequence": "Opioid contraindication (30/500 SmPC).",
+      "action": "Do not use.",
+      "sourceWording": "head injuries, raised intra-cranial pressure",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "acute alcoholism, head injuries, raised intra-cranial pressure and following biliary tract surgery"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:acute-alcoholism",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "formulations": [
+        "co-codamol-30-500-tab"
+      ],
+      "condition": "acute-alcoholism",
+      "concern": "Acute alcoholism",
+      "consequence": "Opioid contraindication (30/500 SmPC).",
+      "action": "Do not use.",
+      "sourceWording": "acute alcoholism",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "acute alcoholism, head injuries, raised intra-cranial pressure and following biliary tract surgery"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:substance-use",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-codamol",
+      "condition": "substance-use-disorder",
+      "concern": "History of substance use disorder (including alcohol)",
+      "consequence": "Higher risk of opioid use disorder.",
+      "action": "Agree goals and stop plan; monitor for drug-seeking behaviour; consider addiction specialist if signs of OUD.",
+      "sourceWording": "The risk of developing OUD is increased",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "The risk of developing OUD is increased in patients with a personal or a family history (parents or siblings) of substance use disorders (including alcohol use disorder)"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:epilepsy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-codamol",
+      "condition": "epilepsy",
+      "concern": "Convulsive disorder",
+      "consequence": "Not stated in source.",
+      "action": "Use with caution.",
+      "sourceWording": "Use with caution",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Use with caution in patients with convulsive disorders."
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:biliary",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-codamol",
+      "condition": "biliary-tract-disease-pancreatitis",
+      "concern": "Pancreatitis or biliary tract disease",
+      "consequence": "Sphincter of Oddi spasm; biliary symptoms and pancreatitis.",
+      "action": "Use with caution.",
+      "sourceWording": "has to be administered with caution",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "codeine/paracetamol has to be administered with caution in patients with pancreatitis and diseases of the biliary tract"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:prostate",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-codamol",
+      "condition": "prostatic-hypertrophy",
+      "concern": "Prostatic hypertrophy",
+      "consequence": "May be worsened by opioids.",
+      "action": "Care.",
+      "sourceWording": "Care should be observed",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "those with prostatic hypertrophy"
+        },
+        {
+          "s": "emc-4457",
+          "q": "Care should be observed in administering the product to any patient whose condition may be exacerbated by opioids"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-codamol",
+      "condition": "hypothyroidism",
+      "concern": "Hypothyroidism",
+      "consequence": "May be worsened by opioids.",
+      "action": "Care.",
+      "sourceWording": "Care should be observed",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "those with prostatic hypertrophy, hypothyroidism"
+        },
+        {
+          "s": "emc-4457",
+          "q": "Care should be observed in administering the product to any patient whose condition may be exacerbated by opioids"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:ibd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-codamol",
+      "condition": "inflammatory-bowel-disease",
+      "concern": "Inflammatory or obstructive bowel disorder",
+      "consequence": "May be worsened by opioids.",
+      "action": "Care.",
+      "sourceWording": "Care should be observed",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "those with inflammatory or obstructive bowel disorders"
+        },
+        {
+          "s": "emc-4457",
+          "q": "Care should be observed in administering the product to any patient whose condition may be exacerbated by opioids"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:addisons",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-codamol",
+      "condition": "addisons-disease",
+      "concern": "Addison's disease",
+      "consequence": "May be worsened by opioids.",
+      "action": "Care.",
+      "sourceWording": "Care should be observed",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Addison's disease or myasthenia gravis"
+        },
+        {
+          "s": "emc-4457",
+          "q": "Care should be observed in administering the product to any patient whose condition may be exacerbated by opioids"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:myasthenia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-codamol",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "May be worsened by opioids.",
+      "action": "Care.",
+      "sourceWording": "Care should be observed",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Addison's disease or myasthenia gravis"
+        },
+        {
+          "s": "emc-4457",
+          "q": "Care should be observed in administering the product to any patient whose condition may be exacerbated by opioids"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:severe-renal",
+      "kind": "condition",
+      "level": "caution",
+      "med": "co-codamol",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal insufficiency",
+      "consequence": "Not stated in source.",
+      "action": "Use only upon medical advice; care with paracetamol.",
+      "sourceWording": "should be used upon medical advice",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Co-codamol 30/500 Tablets should be used upon medical advice in patients with: Mild-to-moderate hepatocellular insufficiency Severe renal insufficiency"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:hepatic:mild-moderate",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "co-codamol",
+      "hepatic": [
+        "mild",
+        "moderate"
+      ],
+      "concern": "Mild-to-moderate hepatocellular insufficiency",
+      "consequence": "Not stated in source.",
+      "action": "Use only upon medical advice.",
+      "sourceWording": "should be used upon medical advice",
+      "src": [
+        {
+          "s": "emc-5958",
+          "q": "Co-codamol 8/500 Tablets should be used upon medical advice in patients with: Mild-to-moderate hepatocellular insufficiency"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:hepatic:severe",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "co-codamol",
+      "hepatic": [
+        "severe"
+      ],
+      "effect": "hepatotoxicity",
+      "concern": "Severe hepatic impairment",
+      "consequence": "Paracetamol risk.",
+      "action": "Care advised.",
+      "sourceWording": "Care is advised",
+      "src": [
+        {
+          "s": "emc-5958",
+          "q": "Care is advised in the administration of paracetamol to patients with severe renal or severe hepatic impairment."
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:glutathione",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "co-codamol",
+      "condition": "glutathione-depletion-risk",
+      "concern": "Sepsis, severe illness, malnutrition or chronic alcoholism",
+      "consequence": "High anion gap metabolic acidosis (pyroglutamic acidosis) with prolonged paracetamol.",
+      "action": "If suspected, stop paracetamol promptly and monitor closely.",
+      "sourceWording": "prompt discontinuation of paracetamol and close monitoring is recommended",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "If HAGMA due to pyroglutamic acidosis is suspected, prompt discontinuation of paracetamol and close monitoring is recommended."
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:pregnancy:caution",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "co-codamol",
+      "concern": "Pregnancy",
+      "consequence": "Regular use may cause neonatal withdrawal; use in labour may depress neonatal breathing.",
+      "action": "Careful consideration before prescribing; if prolonged use, warn about neonatal opioid withdrawal syndrome.",
+      "sourceWording": "careful consideration should be given before prescribing",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Nonetheless careful consideration should be given before prescribing the products for pregnant patients."
+        },
+        {
+          "s": "emc-4457",
+          "q": "If opioid use is required for a prolonged period in a pregnant woman, advise the patient of the risk of neonatal opioid withdrawal syndrome"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:duplication:paracetamol",
+      "kind": "duplication",
+      "level": "avoid",
+      "med": "co-codamol",
+      "other": "paracetamol",
+      "effect": "hepatotoxicity",
+      "concern": "Co-codamol with another paracetamol product",
+      "consequence": "Paracetamol overdose and liver damage.",
+      "action": "Do not take with any other paracetamol-containing product.",
+      "sourceWording": "should not be taken with any other paracetamol-containing products",
+      "src": [
+        {
+          "s": "emc-5958",
+          "q": "This medicine should not be taken with any other paracetamol-containing products."
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:opioid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-codamol",
+      "other": "group:opioid",
+      "effect": "cns-respiratory-depression",
+      "concern": "Other opioid (narcotic) analgesics",
+      "consequence": "Additive CNS depression.",
+      "action": "No specific action stated; see opioid dependence and sedation advice.",
+      "sourceWording": "may exhibit additive CNS depression",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Patients receiving other narcotic analgesics, antitussive, antihypertensives, antihistamines, antipsychotics, antianxiety agents or other CNS depressants (including alcohol) concomitantly with this codeine containing drug may exhibit additive CNS depression."
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:cns-depressant",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "co-codamol",
+      "other": "group:cns-depressant",
+      "effect": "cns-respiratory-depression",
+      "concern": "Sedatives (e.g. benzodiazepines) and other CNS depressants",
+      "consequence": "Sedation, respiratory depression, coma and death.",
+      "action": "Only if no alternative; lowest dose, shortest duration; monitor for respiratory depression and sedation.",
+      "sourceWording": "should be reserved for patients for whom alternative treatment options are not possible",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Concomitant use of co-codamol and sedative medicines such as benzodiazepines or related drugs may result in sedation, respiratory depression, coma and death."
+        },
+        {
+          "s": "emc-4457",
+          "q": "concomitant prescribing with these sedative medicines should be reserved for patients for whom alternative treatment options are not possible"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-codamol",
+      "other": "group:antihypertensive",
+      "effect": "cns-respiratory-depression",
+      "concern": "Antihypertensives",
+      "consequence": "Additive CNS depression may occur.",
+      "action": "No specific action stated.",
+      "sourceWording": "may exhibit additive CNS depression",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Patients receiving other narcotic analgesics, antitussive, antihypertensives, antihistamines, antipsychotics, antianxiety agents or other CNS depressants (including alcohol) concomitantly with this codeine containing drug may exhibit additive CNS depression."
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:warfarin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-codamol",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Regular co-codamol (paracetamol) with warfarin",
+      "consequence": "Prolonged regular use may enhance the anticoagulant effect, with increased bleeding risk; occasional doses have no significant effect.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may be enhanced by prolonged regular use",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "The anticoagulant effect of warfarin and other coumarins may be enhanced by prolonged regular use of paracetamol with increased risk of bleeding"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:vka",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-codamol",
+      "other": "group:vitamin-k-antagonist",
+      "effect": "bleeding",
+      "concern": "Regular co-codamol (paracetamol) with coumarins",
+      "consequence": "Prolonged regular use may enhance the anticoagulant effect, with increased bleeding risk.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may be enhanced by prolonged regular use",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "The anticoagulant effect of warfarin and other coumarins may be enhanced by prolonged regular use of paracetamol with increased risk of bleeding"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:condition:biliary-surgery",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "formulations": [
+        "co-codamol-30-500-tab"
+      ],
+      "condition": "biliary-tract-surgery",
+      "concern": "After biliary tract surgery",
+      "consequence": "Opioid contraindication (30/500 SmPC).",
+      "action": "Do not use.",
+      "sourceWording": "Conditions where morphine and opioids are contraindicated e.g. ... following biliary tract surgery",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Conditions where morphine and opioids are contraindicated e.g., acute asthma, respiratory depression"
+        },
+        {
+          "s": "emc-4457",
+          "q": "and following biliary tract surgery"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:sertraline",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "co-codamol",
+      "other": "sertraline",
+      "effect": "serotonin-syndrome",
+      "concern": "Sertraline (serotonin syndrome)",
+      "consequence": "Sertraline SmPC: risk of serotonin syndrome or neuroleptic malignant syndrome with SSRIs is increased with opioids.",
+      "action": "Caution; monitor for signs and symptoms of serotonin syndrome or NMS.",
+      "sourceWording": "Caution is also advised with opioids",
+      "src": [
+        {
+          "s": "emc-1070",
+          "q": "and with opioids. Patients should be monitored for the emergence of signs and symptoms of SS or NMS syndrome"
+        },
+        {
+          "s": "emc-1070",
+          "q": "Caution is also advised with opioids"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:clopidogrel",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-codamol",
+      "other": "clopidogrel",
+      "concern": "Clopidogrel (absorption delayed by opioids)",
+      "consequence": "Clopidogrel SmPC: opioid agonists may delay and reduce clopidogrel absorption; clinical relevance unknown.",
+      "action": "Clopidogrel SmPC: in acute coronary syndrome needing an opioid, consider a parenteral antiplatelet agent.",
+      "sourceWording": "The clinical relevance is unknown",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "co-administration of opioid agonists has the potential to delay and reduce the absorption of clopidogrel presumably because of slowed gastric emptying. The clinical relevance is unknown."
+        },
+        {
+          "s": "emc-5935",
+          "q": "Consider the use of a parenteral antiplatelet agent in acute coronary syndrome patients requiring co-administration of morphine or other opioid agonists."
+        }
+      ]
+    }
+  ]
+}

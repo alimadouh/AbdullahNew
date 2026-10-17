@@ -1,0 +1,1695 @@
+{
+  "id": "naproxen",
+  "name": "Naproxen",
+  "ingredients": [
+    "naproxen"
+  ],
+  "className": "NSAID (non-steroidal anti-inflammatory analgesic)",
+  "groups": [
+    "nsaid"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "naproxen-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "500 mg (250 mg also available)",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Naprosyn 500mg Tablets: Each tablet contains 500mg naproxen"
+        }
+      ],
+      "sourceIds": [
+        "emc-13238"
+      ]
+    },
+    {
+      "id": "naproxen-ec-tab",
+      "label": "Gastro-resistant tablets",
+      "route": "oral",
+      "strengths": "500 mg (250 mg, 375 mg also available)",
+      "release": "gastro-resistant",
+      "note": "Swallow whole; do not break or crush. Licensed in adults only (not recommended under 16).",
+      "src": [
+        {
+          "s": "emc-13241",
+          "q": "Naproxen Gastro-Resistant tablets should be swallowed whole and not broken or crushed."
+        }
+      ],
+      "sourceIds": [
+        "emc-13241"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Adults: rheumatoid arthritis, osteoarthrosis, ankylosing spondylitis, acute gout, acute musculoskeletal disorders, dysmenorrhoea. Children: juvenile rheumatoid arthritis.",
+          "formulations": [
+            "naproxen-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Adults: Treatment of rheumatoid arthritis, osteoarthrosis (degenerative arthritis), ankylosing spondylitis, acute gout, acute musculoskeletal disorders and dysmenorrhoea. Children: Juvenile rheumatoid arthritis"
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant (adults): rheumatoid arthritis, osteoarthrosis, ankylosing spondylitis, acute musculoskeletal disorders, dysmenorrhoea (acute gout not listed).",
+          "formulations": [
+            "naproxen-ec-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-13241",
+              "q": "Naproxen is indicated in adults for the treatment of rheumatoid arthritis, osteoarthrosis (degenerative arthritis), ankylosing spondylitis, acute musculoskeletal disorders"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the SmPCs or the MHRA pages accessed."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Rheumatoid arthritis, osteoarthritis, ankylosing spondylitis: 500 mg-1 g daily in 2 doses 12 hours apart (or once daily). Loading dose of 750 mg or 1 g/day in the acute phase for severe night pain/morning stiffness, switching from high-dose anti-rheumatic, or pain-predominant osteoarthrosis.",
+          "tag": "Rheumatic disease",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Rheumatoid arthritis, osteoarthritis and ankylosing spondylitis 500mg to 1g taken in 2 doses at 12-hour intervals or alternatively, as a single administration."
+            },
+            {
+              "s": "emc-13238",
+              "q": "a loading dose of 750mg or 1g per day for the acute phase is recommended"
+            }
+          ]
+        },
+        {
+          "t": "Acute gout (tablets): 750 mg at once, then 250 mg every 8 hours until the attack has passed.",
+          "tag": "Acute gout",
+          "formulations": [
+            "naproxen-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Acute gout 750mg at once then 250mg every 8 hours until the attack has passed."
+            }
+          ]
+        },
+        {
+          "t": "Acute musculoskeletal disorders and dysmenorrhoea: 500 mg initially, then 250 mg every 6-8 hours as needed; maximum 1250 mg/day after the first day.",
+          "tag": "Musculoskeletal / dysmenorrhoea",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Acute musculoskeletal disorders and dysmenorrhoea 500mg initially followed by 250mg at 6 - 8 hour intervals as needed, with a maximum daily dose after the first day of 1250mg."
+            }
+          ]
+        },
+        {
+          "t": "Older people: lowest effective dose for the shortest time; monitor regularly for GI bleeding. Gastro-resistant: start at the lowest recommended dose, especially in older people.",
+          "tag": "Older people",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "The patient should be monitored regularly for GI bleeding during NSAID therapy."
+            },
+            {
+              "s": "emc-13241",
+              "q": "Therapy should be started at the lowest recommended dose, especially in older people."
+            }
+          ]
+        },
+        {
+          "t": "Review treatment at regular intervals; stop if no benefit or intolerance.",
+          "tag": "Review",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Treatment should be reviewed at regular intervals and discontinued if no benefit is seen or intolerance occurs."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Tablets, juvenile rheumatoid arthritis (over 5 years): 10 mg/kg/day in 2 doses 12 hours apart. Not recommended for any other indication under 16 years.",
+          "formulations": [
+            "naproxen-tab"
+          ],
+          "calc": {
+            "mgPerKg": 10,
+            "per": "day",
+            "dividedInto": 2,
+            "ageMinYears": 5,
+            "ageMaxYears": 16,
+            "of": "naproxen"
+          },
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Paediatric population (over 5 years) For juvenile rheumatoid arthritis: 10mg/kg/day taken in 2 doses at 12-hour intervals. Naprosyn is not recommended for use in any other indication in children under 16 years of age."
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant tablets: not recommended under 16 years.",
+          "formulations": [
+            "naproxen-ec-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-13241",
+              "q": "Naproxen is not recommended for use in children under 16 years of age."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Active or history of peptic ulceration or active GI bleeding; history of GI bleeding or perforation related to previous NSAIDs.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Active or history of peptic ulceration or active gastrointestinal bleeding (two or more distinct episodes of proven ulceration or bleeding). History of gastrointestinal bleeding or perforation, related to previous NSAIDs therapy."
+            }
+          ]
+        },
+        {
+          "t": "Hypersensitivity to naproxen or naproxen sodium. Should not be given if aspirin or other NSAIDs induce asthma, rhinitis, nasal polyps or urticaria (potentially fatal).",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Hypersensitivity to naproxen, naproxen sodium, or any of the excipients."
+            },
+            {
+              "s": "emc-13238",
+              "q": "Naprosyn should not be given to patients in whom aspirin or other non-steroidal anti-inflammatory/analgesic drugs induce the syndrome of asthma, rhinitis, nasal polyps or urticaria."
+            }
+          ]
+        },
+        {
+          "t": "Severe renal, hepatic or heart failure; baseline creatinine clearance less than 30 ml/minute; last trimester of pregnancy.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Severe renal, hepatic or heart failure"
+            },
+            {
+              "s": "emc-13238",
+              "q": "Naprosyn is contraindicated in patients with baseline creatinine clearance less than 30 ml/minute"
+            },
+            {
+              "s": "emc-13238",
+              "q": "Naproxen is contraindicated during the last trimester of pregnancy"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "GI bleeding, ulceration or perforation can occur at any time and can be fatal; risk rises with dose, ulcer history and age. Start at the lowest dose; consider misoprostol or a PPI in at-risk patients and with low-dose aspirin. Withdraw if GI bleeding or ulceration occurs.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Combination therapy with protective agents (e.g. misoprostol or proton pump inhibitors) should be considered for these patients"
+            },
+            {
+              "s": "emc-13238",
+              "q": "When GI bleeding or ulceration occurs in patients receiving Naprosyn, the treatment should be withdrawn."
+            }
+          ]
+        },
+        {
+          "t": "Cardiovascular: naproxen 1000 mg daily may carry a lower thrombotic risk but some risk cannot be excluded. Uncontrolled hypertension, congestive heart failure, ischaemic heart disease, peripheral arterial disease or cerebrovascular disease: only after careful consideration.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Although data suggest that the use of naproxen (1000mg daily) may be associated with a lower risk, some risk cannot be excluded."
+            },
+            {
+              "s": "emc-13238",
+              "q": "Patients with uncontrolled hypertension, congestive heart failure, established ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease should only be treated with naproxen after careful consideration."
+            }
+          ]
+        },
+        {
+          "t": "Renal: use with great caution in impaired renal function; monitor serum creatinine and/or creatinine clearance and keep hydrated. Assess renal function before and during treatment when renal blood flow is compromised (volume depletion, cirrhosis, sodium restriction, heart failure, renal disease, diuretics, older people).",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "it should be used with great caution in patients with impaired renal function and the monitoring of serum creatinine and/or creatinine clearance is advised and patients should be adequately hydrated"
+            },
+            {
+              "s": "emc-13238",
+              "q": "should have renal function assessed before and during Naprosyn therapy"
+            }
+          ]
+        },
+        {
+          "t": "Coagulation disorders or drugs affecting haemostasis: observe carefully; naproxen prolongs bleeding time.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Patients who have coagulation disorders or are receiving drug therapy that interferes with haemostasis should be carefully observed if naproxen- containing products are administered."
+            }
+          ]
+        },
+        {
+          "t": "Asthma or allergic disease: bronchospasm may be precipitated. Ulcerative colitis or Crohn's disease: give with care. SLE / mixed connective tissue disease: aseptic meningitis risk.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Bronchospasm may be precipitated in patients suffering from, or with a history of, bronchial asthma or allergic disease."
+            },
+            {
+              "s": "emc-13238",
+              "q": "NSAIDs should be given with care to patients with a history of gastrointestinal disease (ulcerative colitis, Crohn's disease)"
+            }
+          ]
+        },
+        {
+          "t": "Liver: LFT elevations and severe hepatic reactions (including fatal hepatitis) reported. Visual disturbance: ophthalmological examination.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Severe hepatic reactions, including jaundice and hepatitis (some cases of hepatitis have been fatal) have been reported"
+            },
+            {
+              "s": "emc-13238",
+              "q": "patients who develop visual disturbances during treatment with naproxen-containing products should have an ophthalmological examination"
+            }
+          ]
+        },
+        {
+          "t": "Serious skin reactions (SJS, TEN, DRESS): stop at the first rash, mucosal lesion or sign of hypersensitivity; never restart after SJS/TEN/DRESS.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Naprosyn should be discontinued at the first appearance of skin rash, mucosal lesions, or any other sign of hypersensitivity."
+            },
+            {
+              "s": "emc-13238",
+              "q": "treatment with Naprosyn must not be restarted and should be permanently discontinued"
+            }
+          ]
+        },
+        {
+          "t": "Long-term use: regular medical supervision; prolonged use in older or debilitated patients is not recommended.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Patients treated with NSAIDs long-term should undergo regular medical supervision to monitor for adverse events."
+            },
+            {
+              "s": "emc-13238",
+              "q": "Prolonged use of NSAIDs in these patients is not recommended."
+            }
+          ]
+        },
+        {
+          "t": "If steroids are reduced or stopped during therapy, taper slowly and watch for adrenal insufficiency.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "If steroid dosage is reduced or eliminated during therapy, the steroid dosage should be reduced slowly"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Anticoagulants (e.g. warfarin, heparin): considered unsafe unless under direct medical supervision (NSAIDs may enhance anticoagulant effects).",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "It is considered unsafe to take NSAIDs in combination with anti-coagulants such as warfarin or heparin unless under direct medical supervision"
+            }
+          ]
+        },
+        {
+          "t": "Other NSAIDs including aspirin and COX-2 inhibitors: avoid. Regular naproxen for more than one day may inhibit the antiplatelet effect of low-dose aspirin.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Avoid concomitant use of two or more NSAIDs (including aspirin) as this may increase the risk of adverse effects"
+            },
+            {
+              "s": "emc-13238",
+              "q": "concomitant naproxen usage for more than one day consecutively may inhibit the effect of low-dose acetylsalicylic acid on platelet activity"
+            }
+          ]
+        },
+        {
+          "t": "Antiplatelets and SSRIs: increased GI bleeding risk. Corticosteroids: increased GI ulceration or bleeding (caution).",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "There is an increased risk of gastrointestinal bleeding (see Section 4.4) when anti-platelet agents and selective serotonin reuptake inhibitors (SSRIs) are combined with NSAIDs."
+            },
+            {
+              "s": "emc-13238",
+              "q": "caution should be taken when co-administering with cortico-steroids because of the increased risk of gastrointestinal ulceration or bleeding"
+            }
+          ]
+        },
+        {
+          "t": "Diuretics: decreased diuretic effect and higher nephrotoxicity risk (caution). Antihypertensives: reduced effect. ACE inhibitors / ARBs: increased risk of renal impairment, especially with poor renal function.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Caution is advised when Naprosyn is co-administered with diuretics as there can be a decreased diuretic effect."
+            },
+            {
+              "s": "emc-13238",
+              "q": "Concomitant use of NSAIDs with ACE inhibitors or angiotensin-II receptor antagonists may increase the risk of renal impairment, especially in patients with pre-existing poor renal function"
+            }
+          ]
+        },
+        {
+          "t": "Methotrexate: caution (possible enhanced toxicity from reduced tubular secretion).",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Caution is advised where methotrexate is given concurrently because of possible enhancement of its toxicity"
+            }
+          ]
+        },
+        {
+          "t": "Highly protein-bound drugs (hydantoins, sulfonamides, sulfonylureas, anticoagulants): observe for overdosage; adjust dose if needed. Quinolones: possible increased convulsion risk. Lithium, ciclosporin, tacrolimus, cardiac glycosides, probenecid, mifepristone, zidovudine also interact.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Patients simultaneously receiving Naprosyn and a hydantoin, sulfonamide or sulfonylurea should be observed for adjustment of dose if required."
+            },
+            {
+              "s": "emc-13238",
+              "q": "Patients taking quinolones may have an increased risk of developing convulsions."
+            }
+          ]
+        },
+        {
+          "t": "Antacids or colestyramine may delay (not reduce) absorption.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Concomitant administration of antacid or colestyramine can delay the absorption of naproxen but does not affect its extent."
+            }
+          ]
+        },
+        {
+          "t": "Warfarin (warfarin SmPC): NSAIDs should be avoided if possible, or given with caution and increased clinical and laboratory monitoring.",
+          "src": [
+            {
+              "s": "emc-2803",
+              "q": "The following examples should be avoided, or administered with caution with increased clinical and laboratory monitoring"
+            }
+          ]
+        },
+        {
+          "t": "Spironolactone (spironolactone SmPC): use with NSAIDs may lead to severe hyperkalaemia. ACE inhibitors (lisinopril SmPC): worsening renal function and raised serum potassium; caution, keep hydrated, monitor renal function.",
+          "src": [
+            {
+              "s": "emc-1619",
+              "q": "may lead to severe hyperkalaemia"
+            },
+            {
+              "s": "emc-7611",
+              "q": "The combination should be administered with caution, especially in the elderly."
+            }
+          ]
+        },
+        {
+          "t": "Metformin (metformin SmPC): close monitoring of renal function is necessary when an NSAID is started or used with metformin.",
+          "src": [
+            {
+              "s": "emc-987",
+              "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary."
+            }
+          ]
+        },
+        {
+          "t": "Methotrexate (SPS, methotrexate SmPC): increased risk of methotrexate toxicity; use with caution on specialist advice; not recommended if renal impairment (even mild) is present.",
+          "src": [
+            {
+              "s": "sps-mtx-interactions",
+              "q": "Use NSAIDs in combination with methotrexate with caution on the advice of the specialist (for example, rheumatologist)."
+            },
+            {
+              "s": "emc-10988",
+              "q": "If risk factors such as renal function disorders, including mild renal impairment, are present, combined administration with NSAIDs is not recommended."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Contraindicated if baseline creatinine clearance (CrCl) is less than 30 ml/minute (metabolites accumulate; haemodialysis does not lower naproxen levels).",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Naprosyn is contraindicated in patients with baseline creatinine clearance less than 30 ml/minute because accumulation of naproxen metabolites has been seen in patients with severe renal failure or those on dialysis"
+            },
+            {
+              "s": "emc-13238",
+              "q": "Haemodialysis does not decrease the plasma concentration of naproxen because of the high degree of protein binding."
+            }
+          ]
+        },
+        {
+          "t": "Renal impairment (CrCl 30 ml/minute or more): consider a lower dose; use with great caution; monitor serum creatinine and/or creatinine clearance.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "A lower dose should be considered in patients with renal or hepatic impairment."
+            },
+            {
+              "s": "emc-13238",
+              "q": "it should be used with great caution in patients with impaired renal function"
+            }
+          ]
+        },
+        {
+          "t": "MHRA: patients at risk of renal impairment or failure (particularly elderly) should avoid NSAIDs if possible.",
+          "src": [
+            {
+              "s": "mhra-dsu-nsaids-renal-2009",
+              "q": "patients at risk of renal impairment or renal failure (particularly elderly people) should avoid NSAIDs if possible"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Severe hepatic failure: contraindicated. Other hepatic impairment or cirrhosis: consider a lower dose; use the lowest effective dose (unbound naproxen increased).",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Severe renal, hepatic or heart failure"
+            },
+            {
+              "s": "emc-13238",
+              "q": "The implication of this finding for Naprosyn dosing is unknown but it is prudent to use the lowest effective dose."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Last trimester: contraindicated (SmPC 4.3).",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Naproxen is contraindicated during the last trimester of pregnancy"
+            },
+            {
+              "s": "emc-13241",
+              "q": "Use of Naproxen in the last trimester of pregnancy is contraindicated"
+            }
+          ]
+        },
+        {
+          "t": "First and second trimesters: do not give unless clearly necessary; lowest dose, shortest time. From week 20: oligohydramnios and ductus arteriosus constriction reported; consider antenatal monitoring after several days of use; stop if found.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Therefore, during the first and second trimester of pregnancy, naproxen should not be given unless clearly necessary."
+            },
+            {
+              "s": "emc-13238",
+              "q": "Antenatal monitoring for oligohydramnios and ductus arteriosus constriction should be considered after exposure to naproxen for several days from gestational week 20 onward."
+            }
+          ]
+        },
+        {
+          "t": "Note: the 500 mg tablet SmPC section 4.6 ends with 'contraindicated during pregnancy' (whole pregnancy), which conflicts with its own section 4.3 (last trimester only) and with the gastro-resistant SmPC (third trimester).",
+          "formulations": [
+            "naproxen-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Consequently, Naproxen is contraindicated during pregnancy."
+            },
+            {
+              "s": "emc-13241",
+              "q": "Consequently, Naproxen is contraindicated during the third trimester of pregnancy"
+            }
+          ]
+        },
+        {
+          "t": "MHRA: avoid systemic NSAIDs from week 20 unless clinically required; contraindicated after 28 weeks. BUMPS: not advised unless prescribed by a doctor, especially from 20 weeks; paracetamol usually recommended instead.",
+          "src": [
+            {
+              "s": "mhra-dsu-nsaids-pregnancy-2023",
+              "q": "avoid prescribing systemic NSAIDs from week 20 of pregnancy unless clinically required and prescribe the lowest dose for the shortest time in these circumstances"
+            },
+            {
+              "s": "bumps-naproxen",
+              "q": "Use of naproxen during pregnancy is not advised unless prescribed by a doctor, especially if you are 20 or more weeks pregnant."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: found in breast milk; avoid in breastfeeding.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Naproxen has been found in the milk of lactating women. The use of Naprosyn should be avoided in patients who are breast-feeding."
+            }
+          ]
+        },
+        {
+          "t": "SPS: short-term use only, with caution, because its long half-life risks accumulation; monitor infant for vomiting, diarrhoea, drowsiness, bruising or bleeding. Ibuprofen or diclofenac are preferred.",
+          "src": [
+            {
+              "s": "sps-bf-nsaids",
+              "q": "Naproxen can be used during breastfeeding for short-term use only, due to the risk of accumulation in breastfed infants. Infant monitoring is required."
+            },
+            {
+              "s": "sps-bf-nsaids",
+              "q": "Monitor infants for vomiting and diarrhoea, drowsiness, or signs of bruising or bleeding."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "May impair fertility; not recommended in women attempting to conceive; consider stopping if difficulty conceiving or under investigation.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "may impair fertility and is not recommended in women attempting to conceive"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Most common are gastrointestinal: heartburn, nausea, vomiting, constipation, diarrhoea, flatulence, dyspepsia, abdominal discomfort (SmPC gives no frequency table).",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "The most commonly observed adverse events are gastrointestinal in nature. Heartburn, nausea, vomiting, constipation, diarrhoea, flatulence, dyspepsia, abdominal discomfort and epigastric distress."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "GI bleeding (sometimes fatal, especially older people), ulceration, perforation: stop treatment.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "More serious reactions which may occur are gastro-intestinal bleeding, which is sometimes fatal, particularly in older people"
+            }
+          ]
+        },
+        {
+          "t": "Anaphylactic/anaphylactoid reactions (may be fatal); serious skin reactions including SJS, TEN, DRESS.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "Anaphylactoid reactions, like anaphylaxis, may have a fatal outcome."
+            }
+          ]
+        },
+        {
+          "t": "Renal failure, interstitial nephritis, nephrotic syndrome; hyperkalaemia; heart failure; fatal hepatitis; blood dyscrasias (agranulocytosis, aplastic and haemolytic anaemia); aseptic meningitis.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "glomerular nephritis, interstitial nephritis, nephrotic syndrome, haematuria, raised serum creatinine, renal papillary necrosis and renal failure"
+            },
+            {
+              "s": "emc-13238",
+              "q": "Metabolic and nutrition disorders: hyperkalaemia."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS baseline: blood pressure, eGFR, full blood count, serum creatinine; LFTs if hepatic impairment. SmPC: assess renal function before treatment if renal blood flow compromised.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "sps-nsaids-monitoring",
+              "q": "Estimated glomerular filtration rate Full blood count Serum creatinine Liver function tests"
+            },
+            {
+              "s": "emc-13238",
+              "q": "should have renal function assessed before and during Naprosyn therapy"
+            }
+          ]
+        },
+        {
+          "t": "SPS after starting or dose change: eGFR or serum creatinine and FBC within 2 weeks; blood pressure within 4 weeks; then periodically.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "sps-nsaids-monitoring",
+              "q": "After started or dose changed Consider Within 2 weeks Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Full blood count"
+            }
+          ]
+        },
+        {
+          "t": "SmPC: monitor serum creatinine and/or creatinine clearance in renal impairment; regular supervision for long-term use; monitor older people for GI bleeding.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "the monitoring of serum creatinine and/or creatinine clearance is advised"
+            }
+          ]
+        },
+        {
+          "t": "Stop if GI bleeding or ulceration, at the first skin rash or sign of hypersensitivity, or if no benefit.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "When GI bleeding or ulceration occurs in patients receiving Naprosyn, the treatment should be withdrawn."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Take preferably with or after food.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "To be taken preferably with or after food."
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant tablets: swallow whole; do not break or crush.",
+          "formulations": [
+            "naproxen-ec-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-13241",
+              "q": "Naproxen Gastro-Resistant tablets should be swallowed whole and not broken or crushed."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report any unusual abdominal symptoms, especially bleeding, particularly early in treatment.",
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "should report any unusual abdominal symptoms (especially GI bleeding) particularly in the initial stages of treatment"
+            }
+          ]
+        },
+        {
+          "t": "May cause drowsiness, dizziness, vertigo, visual disturbance; do not drive if affected.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-13238",
+              "q": "If patients experience these or similar undesirable effects, they should not drive or operate machinery."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "naproxen:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "naproxen",
+      "allergen": [
+        "naproxen"
+      ],
+      "concern": "Naproxen hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Hypersensitivity to naproxen, naproxen sodium, or any of the excipients."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:allergy:nsaid",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "naproxen",
+      "allergen": [
+        "group:nsaid"
+      ],
+      "concern": "Aspirin/NSAID-induced asthma, rhinitis, nasal polyps or urticaria",
+      "consequence": "Cross-sensitivity; severe anaphylactic-like reactions, potentially fatal.",
+      "action": "Do not use (listed in SmPC section 4.3, worded 'should not be given').",
+      "sourceWording": "4.3 Contraindications: should not be given",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Since the potential exists for cross-sensitivity reactions, Naprosyn should not be given to patients in whom aspirin or other non-steroidal anti-inflammatory/analgesic drugs induce the syndrome of asthma, rhinitis, nasal polyps or urticaria."
+        },
+        {
+          "s": "emc-13241",
+          "q": "Naproxen should not be given to patients in whom aspirin or other non-steroidal anti-inflammatory/analgesic drugs induce asthma, rhinitis, nasal polyps or urticaria."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:nsaid-asthma",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "naproxen",
+      "condition": "nsaid-hypersensitivity-asthma",
+      "concern": "Asthma, rhinitis, nasal polyps or urticaria induced by aspirin/NSAIDs",
+      "consequence": "Potentially fatal reactions.",
+      "action": "Do not use (listed in SmPC section 4.3, worded 'should not be given'). SPS: do not use oral or topical NSAIDs with a history of NERD.",
+      "sourceWording": "4.3 Contraindications: should not be given",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "These reactions have the potential of being fatal."
+        },
+        {
+          "s": "emc-13238",
+          "q": "Naprosyn should not be given to patients in whom aspirin or other non-steroidal anti-inflammatory/analgesic drugs induce the syndrome of asthma, rhinitis, nasal polyps or urticaria."
+        },
+        {
+          "s": "sps-nsaids-asthma",
+          "q": "History of NERD Do not use oral or topical NSAIDs."
+        },
+        {
+          "s": "emc-13241",
+          "q": "Naproxen should not be given to patients in whom aspirin or other non-steroidal anti-inflammatory/analgesic drugs induce asthma, rhinitis, nasal polyps or urticaria."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:asthma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "naproxen",
+      "condition": "asthma",
+      "concern": "Asthma or allergic disease",
+      "consequence": "Bronchospasm may be precipitated.",
+      "action": "Caution; monitor for worsening asthma (SPS).",
+      "sourceWording": "Bronchospasm may be precipitated",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Bronchospasm may be precipitated in patients suffering from, or with a history of, bronchial asthma or allergic disease."
+        },
+        {
+          "s": "sps-nsaids-asthma",
+          "q": "Use oral or topical NSAIDs with caution and monitor for symptoms such as exacerbation of asthma."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:gi-ulcer-bleed",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "naproxen",
+      "condition": "peptic-ulcer-gi-bleeding",
+      "effect": "bleeding",
+      "concern": "Active or past peptic ulceration, active GI bleeding, or NSAID-related GI bleeding/perforation",
+      "consequence": "GI bleeding, ulceration or perforation, which can be fatal.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Active or history of peptic ulceration or active gastrointestinal bleeding (two or more distinct episodes of proven ulceration or bleeding). History of gastrointestinal bleeding or perforation, related to previous NSAIDs therapy."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:bleeding-disorder",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "naproxen",
+      "condition": "bleeding-disorder",
+      "effect": "bleeding",
+      "concern": "Coagulation disorder",
+      "consequence": "Naproxen decreases platelet aggregation and prolongs bleeding time.",
+      "action": "Observe carefully.",
+      "sourceWording": "should be carefully observed",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Patients who have coagulation disorders or are receiving drug therapy that interferes with haemostasis should be carefully observed if naproxen- containing products are administered."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:severe-hf",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "naproxen",
+      "condition": "severe-heart-failure",
+      "concern": "Severe heart failure",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list: Severe renal, hepatic or heart failure",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Severe renal, hepatic or heart failure"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:hf",
+      "kind": "condition",
+      "level": "caution",
+      "med": "naproxen",
+      "condition": "heart-failure",
+      "concern": "Congestive heart failure",
+      "consequence": "Fluid retention and oedema; possible thrombotic risk.",
+      "action": "Only after careful consideration; monitoring and advice.",
+      "sourceWording": "should only be treated with naproxen after careful consideration",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Patients with uncontrolled hypertension, congestive heart failure, established ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease should only be treated with naproxen after careful consideration."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:ihd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "naproxen",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Established ischaemic heart disease",
+      "consequence": "Some arterial thrombotic risk cannot be excluded.",
+      "action": "Only after careful consideration.",
+      "sourceWording": "should only be treated with naproxen after careful consideration",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Patients with uncontrolled hypertension, congestive heart failure, established ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease should only be treated with naproxen after careful consideration."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:pad",
+      "kind": "condition",
+      "level": "caution",
+      "med": "naproxen",
+      "condition": "peripheral-arterial-disease",
+      "concern": "Peripheral arterial disease",
+      "consequence": "Some arterial thrombotic risk cannot be excluded.",
+      "action": "Only after careful consideration.",
+      "sourceWording": "should only be treated with naproxen after careful consideration",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Patients with uncontrolled hypertension, congestive heart failure, established ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease should only be treated with naproxen after careful consideration."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:cvd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "naproxen",
+      "condition": "cerebrovascular-disease",
+      "concern": "Cerebrovascular disease",
+      "consequence": "Some arterial thrombotic risk cannot be excluded.",
+      "action": "Only after careful consideration.",
+      "sourceWording": "should only be treated with naproxen after careful consideration",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Patients with uncontrolled hypertension, congestive heart failure, established ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease should only be treated with naproxen after careful consideration."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:hypertension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "naproxen",
+      "condition": "hypertension",
+      "concern": "Hypertension (especially uncontrolled)",
+      "consequence": "Fluid retention and oedema.",
+      "action": "Monitoring and advice; uncontrolled hypertension only after careful consideration.",
+      "sourceWording": "Appropriate monitoring and advice are required",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Appropriate monitoring and advice are required for patients with a history of hypertension and/or mild to moderate congestive heart failure as fluid retention and oedema have been reported in association with NSAID therapy."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:renal:crcl-under-30",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "naproxen",
+      "renal": {
+        "measure": "CrCl",
+        "max": 30
+      },
+      "effect": "nephrotoxicity",
+      "concern": "Baseline CrCl below 30 ml/minute",
+      "consequence": "Accumulation of naproxen metabolites.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in patients with baseline creatinine clearance less than 30 ml/minute",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Naprosyn is contraindicated in patients with baseline creatinine clearance less than 30 ml/minute"
+        },
+        {
+          "s": "emc-13241",
+          "q": "Naproxen is contraindicated in patients with baseline creatinine clearance less than 30 ml/minute"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:renal-impairment-dose",
+      "kind": "condition",
+      "level": "dose",
+      "med": "naproxen",
+      "condition": "renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "Renal impairment (contraindicated if baseline CrCl below 30 ml/minute)",
+      "consequence": "Naproxen is about 95% renally eliminated; metabolites may accumulate; risk of renal failure.",
+      "action": "Consider a lower dose; use with great caution; monitor serum creatinine and/or CrCl; keep hydrated.",
+      "sourceWording": "A lower dose should be considered",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "A lower dose should be considered in patients with renal or hepatic impairment."
+        },
+        {
+          "s": "emc-13238",
+          "q": "it should be used with great caution in patients with impaired renal function and the monitoring of serum creatinine and/or creatinine clearance is advised"
+        },
+        {
+          "s": "emc-13238",
+          "q": "A reduction in daily dosage should be considered to avoid the possibility of excessive accumulation of naproxen metabolites in these patients."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:severe-renal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "naproxen",
+      "condition": "severe-renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "Severe renal failure",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list: Severe renal, hepatic or heart failure",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Severe renal, hepatic or heart failure"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:renal-mhra",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "naproxen",
+      "condition": "renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "At risk of renal impairment or renal failure (MHRA)",
+      "consequence": "NSAIDs may precipitate acute renal failure.",
+      "action": "Avoid NSAIDs if possible; if essential, lowest dose for shortest time with careful renal monitoring.",
+      "sourceWording": "should avoid NSAIDs if possible",
+      "src": [
+        {
+          "s": "mhra-dsu-nsaids-renal-2009",
+          "q": "patients at risk of renal impairment or renal failure (particularly elderly people) should avoid NSAIDs if possible"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:dehydration",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "naproxen",
+      "condition": "dehydration-hypovolaemia",
+      "effect": "nephrotoxicity",
+      "concern": "Extracellular volume depletion",
+      "consequence": "Compromised renal blood flow; renal failure risk.",
+      "action": "Assess renal function before and during treatment; consider a lower daily dose.",
+      "sourceWording": "should have renal function assessed before and during",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Certain patients, specifically those whose renal blood flow is compromised, such as in extracellular volume depletion"
+        },
+        {
+          "s": "emc-13238",
+          "q": "should have renal function assessed before and during Naprosyn therapy"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "naproxen",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe hepatic failure",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list: Severe renal, hepatic or heart failure",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Severe renal, hepatic or heart failure"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:hepatic:any",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "naproxen",
+      "hepatic": [
+        "mild",
+        "moderate"
+      ],
+      "concern": "Hepatic impairment or cirrhosis",
+      "consequence": "Unbound naproxen increased.",
+      "action": "Consider a lower dose; use the lowest effective dose.",
+      "sourceWording": "A lower dose should be considered",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "A lower dose should be considered in patients with renal or hepatic impairment."
+        },
+        {
+          "s": "emc-13238",
+          "q": "The implication of this finding for Naprosyn dosing is unknown but it is prudent to use the lowest effective dose."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:ibd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "naproxen",
+      "condition": "inflammatory-bowel-disease",
+      "concern": "Ulcerative colitis or Crohn's disease",
+      "consequence": "May be exacerbated.",
+      "action": "Give with care.",
+      "sourceWording": "should be given with care",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "NSAIDs should be given with care to patients with a history of gastrointestinal disease (ulcerative colitis, Crohn's disease) as these conditions may be exacerbated"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:lupus",
+      "kind": "condition",
+      "level": "caution",
+      "med": "naproxen",
+      "condition": "lupus",
+      "concern": "SLE or mixed connective tissue disease",
+      "consequence": "Increased risk of aseptic meningitis.",
+      "action": "Be aware of aseptic meningitis risk.",
+      "sourceWording": "there may be an increased risk of aseptic meningitis",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "In patients with systemic lupus erythematosus (SLE) and mixed connective tissue disorders there may be an increased risk of aseptic meningitis"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:condition:conceive",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "naproxen",
+      "condition": "attempting-to-conceive",
+      "concern": "Woman attempting to conceive",
+      "consequence": "May impair fertility.",
+      "action": "Not recommended; consider stopping if difficulty conceiving.",
+      "sourceWording": "is not recommended in women attempting to conceive",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "may impair fertility and is not recommended in women attempting to conceive"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:age:tab-under-16",
+      "kind": "age",
+      "level": "avoid",
+      "med": "naproxen",
+      "formulations": [
+        "naproxen-tab"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 16
+      },
+      "concern": "Under 16 years (tablets)",
+      "consequence": "Licensed only for juvenile rheumatoid arthritis (over 5 years) in children.",
+      "action": "Not recommended for other indications under 16; JRA over 5 years: 10 mg/kg/day in 2 doses.",
+      "sourceWording": "not recommended for use in any other indication in children under 16 years of age",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Naprosyn is not recommended for use in any other indication in children under 16 years of age."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:age:ec-under-16",
+      "kind": "age",
+      "level": "avoid",
+      "med": "naproxen",
+      "formulations": [
+        "naproxen-ec-tab"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 16
+      },
+      "concern": "Under 16 years (gastro-resistant)",
+      "consequence": "Not recommended.",
+      "action": "Do not use.",
+      "sourceWording": "not recommended for use in children under 16 years of age",
+      "src": [
+        {
+          "s": "emc-13241",
+          "q": "Naproxen is not recommended for use in children under 16 years of age."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:pregnancy:t3",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "naproxen",
+      "trimesters": [
+        3
+      ],
+      "concern": "Third trimester (from 28 weeks)",
+      "consequence": "Premature closure of ductus arteriosus, fetal renal dysfunction, prolonged bleeding, delayed labour.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated during the last trimester of pregnancy",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Naproxen is contraindicated during the last trimester of pregnancy"
+        },
+        {
+          "s": "mhra-dsu-nsaids-pregnancy-2023",
+          "q": "systemic (oral and injectable) NSAIDs are contraindicated during the last trimester (after 28 weeks) of pregnancy"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:pregnancy:t1-t2",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "naproxen",
+      "trimesters": [
+        1,
+        2
+      ],
+      "concern": "First and second trimesters (especially from week 20)",
+      "consequence": "Miscarriage/malformation signal early; oligohydramnios and ductus arteriosus constriction from week 20.",
+      "action": "Do not give unless clearly necessary; lowest dose, shortest time; from week 20 consider antenatal monitoring after several days' use. Note: tablet SmPC 4.6 also says 'contraindicated during pregnancy'.",
+      "sourceWording": "should not be given unless clearly necessary",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Therefore, during the first and second trimester of pregnancy, naproxen should not be given unless clearly necessary."
+        },
+        {
+          "s": "mhra-dsu-nsaids-pregnancy-2023",
+          "q": "avoid prescribing systemic NSAIDs from week 20 of pregnancy unless clinically required"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "naproxen",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Naproxen is found in breast milk.",
+      "action": "Avoid (SPS: short-term use only with caution and infant monitoring).",
+      "sourceWording": "should be avoided in patients who are breast-feeding",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "The use of Naprosyn should be avoided in patients who are breast-feeding."
+        },
+        {
+          "s": "emc-13241",
+          "q": "The use of Naproxen should therefore be avoided in patients who are breast-feeding."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "naproxen",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Long half-life; risk of accumulation; case reports of bleeding, thrombocytopenia, anaemia, drowsiness.",
+      "action": "Short-term use only; monitor infant (vomiting, diarrhoea, drowsiness, bruising or bleeding); ibuprofen or diclofenac preferred.",
+      "sourceWording": "Use with caution",
+      "src": [
+        {
+          "s": "sps-bf-nsaids",
+          "q": "Naproxen can be used during breastfeeding for short-term use only, due to the risk of accumulation in breastfed infants. Infant monitoring is required."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:warfarin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "naproxen",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin",
+      "consequence": "NSAIDs may enhance anticoagulant effects; increased bleeding risk.",
+      "action": "Considered unsafe unless under direct medical supervision.",
+      "sourceWording": "It is considered unsafe ... unless under direct medical supervision",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "It is considered unsafe to take NSAIDs in combination with anti-coagulants such as warfarin or heparin unless under direct medical supervision, as NSAIDs may enhance the effects of anti-coagulants"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:anticoagulant",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "naproxen",
+      "other": "group:anticoagulant",
+      "effect": "bleeding",
+      "concern": "Anticoagulants",
+      "consequence": "NSAIDs may enhance anticoagulant effects; increased bleeding risk.",
+      "action": "Considered unsafe unless under direct medical supervision.",
+      "sourceWording": "It is considered unsafe ... unless under direct medical supervision",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "It is considered unsafe to take NSAIDs in combination with anti-coagulants such as warfarin or heparin unless under direct medical supervision"
+        },
+        {
+          "s": "emc-13238",
+          "q": "Patients at high risk of bleeding or those on full anti-coagulation therapy (e.g. dicoumarol derivatives) may be at increased risk of bleeding if given naproxen-containing products concurrently."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:nsaid",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "naproxen",
+      "other": "group:nsaid",
+      "effect": "bleeding",
+      "concern": "Another NSAID (including aspirin, COX-2 inhibitors)",
+      "consequence": "Cumulative risk of serious NSAID adverse events.",
+      "action": "Avoid concomitant use.",
+      "sourceWording": "Avoid concomitant use of two or more NSAIDs",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Avoid concomitant use of two or more NSAIDs (including aspirin) as this may increase the risk of adverse effects"
+        },
+        {
+          "s": "emc-13238",
+          "q": "The combination of naproxen-containing products and other NSAIDs, including cyclooxygenase-2 selective inhibitors, is not recommended"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:antiplatelet",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "naproxen",
+      "other": "group:antiplatelet",
+      "effect": "bleeding",
+      "concern": "Antiplatelet agents",
+      "consequence": "Increased risk of GI bleeding.",
+      "action": "Caution; consider gastroprotection.",
+      "sourceWording": "Caution should be advised",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "There is an increased risk of gastrointestinal bleeding (see Section 4.4) when anti-platelet agents and selective serotonin reuptake inhibitors (SSRIs) are combined with NSAIDs."
+        },
+        {
+          "s": "emc-13238",
+          "q": "Caution should be advised in patients receiving concomitant medications which could increase the risk of ulceration or bleeding"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:ssri",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "naproxen",
+      "other": "group:ssri",
+      "effect": "bleeding",
+      "concern": "SSRIs",
+      "consequence": "Increased risk of GI bleeding.",
+      "action": "Caution.",
+      "sourceWording": "Caution should be advised",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "There is an increased risk of gastrointestinal bleeding (see Section 4.4) when anti-platelet agents and selective serotonin reuptake inhibitors (SSRIs) are combined with NSAIDs."
+        },
+        {
+          "s": "emc-13238",
+          "q": "Caution should be advised in patients receiving concomitant medications which could increase the risk of ulceration or bleeding"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "naproxen",
+      "other": "group:corticosteroid",
+      "effect": "bleeding",
+      "concern": "Corticosteroids",
+      "consequence": "Increased risk of GI ulceration or bleeding.",
+      "action": "Caution.",
+      "sourceWording": "caution should be taken",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "caution should be taken when co-administering with cortico-steroids because of the increased risk of gastrointestinal ulceration or bleeding"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "naproxen",
+      "other": "methotrexate",
+      "concern": "Methotrexate",
+      "consequence": "Possible enhancement of methotrexate toxicity (reduced tubular secretion).",
+      "action": "Caution (naproxen SmPC); use with caution on specialist advice (SPS); methotrexate SmPC: not recommended if any renal impairment, including mild.",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Caution is advised where methotrexate is given concurrently because of possible enhancement of its toxicity"
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Taking methotrexate and NSAIDs can increase the risk of methotrexate toxicity."
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Use NSAIDs in combination with methotrexate with caution on the advice of the specialist (for example, rheumatologist)."
+        },
+        {
+          "s": "emc-10988",
+          "q": "If risk factors such as renal function disorders, including mild renal impairment, are present, combined administration with NSAIDs is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "naproxen",
+      "other": "group:diuretic",
+      "effect": "nephrotoxicity",
+      "concern": "Diuretics",
+      "consequence": "Decreased diuretic effect; increased nephrotoxicity risk.",
+      "action": "Caution; renal function should be monitored.",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Caution is advised when Naprosyn is co-administered with diuretics as there can be a decreased diuretic effect."
+        },
+        {
+          "s": "emc-13238",
+          "q": "Diuretics can increase the risk of nephrotoxicity of NSAIDs."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "naproxen",
+      "other": "group:ace-inhibitor",
+      "effect": "nephrotoxicity",
+      "concern": "ACE inhibitors",
+      "consequence": "Increased risk of renal impairment, especially with poor renal function; reduced antihypertensive effect.",
+      "action": "Monitor renal function.",
+      "sourceWording": "Renal function should be monitored in these patients",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Concomitant use of NSAIDs with ACE inhibitors or angiotensin-II receptor antagonists may increase the risk of renal impairment, especially in patients with pre-existing poor renal function"
+        },
+        {
+          "s": "emc-13238",
+          "q": "Renal function should be monitored in these patients"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "naproxen",
+      "other": "group:antihypertensive",
+      "concern": "Antihypertensives",
+      "consequence": "NSAIDs can reduce the antihypertensive effect.",
+      "action": "No specific action stated.",
+      "sourceWording": "can reduce the anti- hypertensive effect",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Naproxen and other non-steroidal anti-inflammatory drugs can reduce the anti- hypertensive effect of anti-hypertensives."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:sulfonamide",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "naproxen",
+      "other": "group:sulfonamide",
+      "concern": "Highly protein-bound sulfonamides",
+      "consequence": "Protein-binding displacement; possible overdosage of the sulfonamide.",
+      "action": "Observe for signs of overdosage; adjust dose if required.",
+      "sourceWording": "should be observed for signs of overdosage",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "patients simultaneously receiving hydantoins, anticoagulants, other NSAIDs, aspirin or a highly protein-bound sulfonamide should be observed for signs of overdosage of these drugs"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:fluoroquinolone",
+      "kind": "interaction",
+      "level": "info",
+      "med": "naproxen",
+      "other": "group:fluoroquinolone",
+      "effect": "seizure-threshold",
+      "concern": "Quinolone antibiotics",
+      "consequence": "Possible increased risk of convulsions.",
+      "action": "No specific action stated.",
+      "sourceWording": "may have an increased risk of developing convulsions",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Patients taking quinolones may have an increased risk of developing convulsions."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:antacid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "naproxen",
+      "other": "group:antacid",
+      "concern": "Antacids",
+      "consequence": "Absorption delayed but not reduced.",
+      "action": "No action needed.",
+      "sourceWording": "can delay the absorption of naproxen but does not affect its extent",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Concomitant administration of antacid or colestyramine can delay the absorption of naproxen but does not affect its extent."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:warfarin-smpc",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "naproxen",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (warfarin SmPC)",
+      "consequence": "Increased bleeding risk.",
+      "action": "Avoid if possible, or give with caution and increased clinical and laboratory monitoring (warfarin SmPC).",
+      "sourceWording": "should be avoided, or administered with caution with increased clinical and laboratory monitoring",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "The following examples should be avoided, or administered with caution with increased clinical and laboratory monitoring"
+        },
+        {
+          "s": "emc-2803",
+          "q": "NSAIDs (including aspirin and cox-2 specific NSAIDS)"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:spironolactone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "naproxen",
+      "other": "spironolactone",
+      "effect": "hyperkalaemia",
+      "concern": "Spironolactone (hyperkalaemia)",
+      "consequence": "Spironolactone SmPC: use with NSAIDs may lead to severe hyperkalaemia.",
+      "action": "Caution; spironolactone SmPC advises regular monitoring of fluid and electrolyte status.",
+      "sourceWording": "may lead to severe hyperkalaemia",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Concomitant use of Aldactone with other potassium-sparing diuretics, angiotensin-converting enzyme (ACE) inhibitors, nonsteroidal anti-inflammatory drugs"
+        },
+        {
+          "s": "emc-1619",
+          "q": "may lead to severe hyperkalaemia"
+        },
+        {
+          "s": "emc-1619",
+          "q": "Fluid and electrolyte status should be regularly monitored"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:ace-inhibitor-potassium",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "naproxen",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "ACE inhibitors (renal function and potassium)",
+      "consequence": "Lisinopril SmPC: worsening renal function, including possible acute renal failure, and a rise in serum potassium, especially with poor renal function.",
+      "action": "Caution, especially in the elderly; keep hydrated; consider monitoring renal function after starting and periodically (lisinopril SmPC).",
+      "sourceWording": "The combination should be administered with caution",
+      "src": [
+        {
+          "s": "emc-7611",
+          "q": "Concomitant use of ACE inhibitors and NSAIDs may lead to an increased risk of worsening of renal function, including possible acute renal failure, and an increase in serum potassium"
+        },
+        {
+          "s": "emc-7611",
+          "q": "The combination should be administered with caution, especially in the elderly."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:metformin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "naproxen",
+      "other": "metformin",
+      "effect": "nephrotoxicity",
+      "concern": "Metformin (renal function, lactic acidosis)",
+      "consequence": "Metformin SmPC: NSAIDs can impair renal function, which may increase the risk of lactic acidosis.",
+      "action": "Close monitoring of renal function when starting or using the combination (metformin SmPC).",
+      "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        {
+          "s": "emc-987",
+          "q": "NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors"
+        },
+        {
+          "s": "emc-987",
+          "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary."
+        }
+      ]
+    }
+  ]
+}

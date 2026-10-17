@@ -1,0 +1,180 @@
+{
+  "note": "Sources for logic the tool itself applies (not medicine rules). Verified by verify.mjs like every other quote.",
+  "sources": [
+    {
+      "id": "nice-ng203",
+      "type": "nice",
+      "publisher": "NICE",
+      "title": "Chronic kidney disease: assessment and management (NG203) - Recommendations",
+      "url": "https://www.nice.org.uk/guidance/ng203/chapter/Recommendations",
+      "accessed": "2026-10-17"
+    },
+    {
+      "id": "mhra-dsu-renal-2019",
+      "type": "mhra",
+      "publisher": "MHRA Drug Safety Update",
+      "title": "Prescribing medicines in renal impairment: using the appropriate estimate of renal function",
+      "url": "https://www.gov.uk/drug-safety-update/prescribing-medicines-in-renal-impairment-using-the-appropriate-estimate-of-renal-function-to-avoid-the-risk-of-adverse-drug-reactions",
+      "accessed": "2026-10-17"
+    },
+    {
+      "id": "sps-calculating-kidney-function",
+      "type": "sps",
+      "publisher": "NHS Specialist Pharmacy Service",
+      "title": "Calculating kidney function",
+      "url": "https://www.sps.nhs.uk/articles/calculating-kidney-function/",
+      "accessed": "2026-10-17"
+    }
+  ],
+  "quotes": {
+    "ckd": {
+      "s": "nice-ng203",
+      "q": "GFR category G4: severe reduction (15 to 29 ml/min/1.73 m2)"
+    },
+    "ckdDefinition": {
+      "s": "nice-ng203",
+      "q": "those with a glomerular filtration rate (GFR) of less than 60 ml/min/1.73 m2 on at least 2 occasions separated by a period of at least 90 days"
+    },
+    "crclWhen": {
+      "s": "mhra-dsu-renal-2019",
+      "q": "creatinine clearance (CrCl) should be calculated using the Cockcroft-Gault formula (see below) to determine dosage adjustments for:"
+    },
+    "cgExample": {
+      "s": "sps-calculating-kidney-function",
+      "q": "using the Cockcroft and Gault formula for a 80-year-old man weighing 60kg with a plasma creatinine of 120micromol/L will give a calculated creatinine clearance of 37mL/min"
+    },
+    "cgWeight": {
+      "s": "sps-calculating-kidney-function",
+      "q": "Controversy exists over which weight to use in the CG formula as the calculation becomes less accurate at extremes of weight."
+    }
+  },
+  "conditionImpliesNote": "Strict 'is a kind of' relations only (child -> broader conditions). Choosing the child also triggers rules written for the broader condition. Tool logic, not a clinical source.",
+  "conditionImplies": {
+    "hereditary-fructose-intolerance": [
+      "hereditary-sugar-intolerance"
+    ],
+    "severe-g6pd-deficiency": [
+      "g6pd-deficiency"
+    ],
+    "severe-heart-failure": [
+      "heart-failure"
+    ],
+    "acute-decompensated-heart-failure": [
+      "heart-failure"
+    ],
+    "unstable-heart-failure-post-mi": [
+      "heart-failure",
+      "recent-myocardial-infarction"
+    ],
+    "heart-failure": [
+      "cardiac-disease"
+    ],
+    "ischaemic-heart-disease": [
+      "cardiac-disease"
+    ],
+    "recent-myocardial-infarction": [
+      "ischaemic-heart-disease"
+    ],
+    "unstable-angina": [
+      "ischaemic-heart-disease"
+    ],
+    "aortic-stenosis": [
+      "cardiac-disease"
+    ],
+    "mitral-stenosis": [
+      "cardiac-disease",
+      "heart-valve-disease"
+    ],
+    "mechanical-heart-valve": [
+      "heart-valve-disease"
+    ],
+    "heart-valve-disease": [
+      "cardiac-disease"
+    ],
+    "cardiogenic-shock": [
+      "cardiac-disease",
+      "hypotension"
+    ],
+    "constrictive-pericarditis-tamponade": [
+      "cardiac-disease"
+    ],
+    "qt-prolongation": [
+      "cardiac-disease"
+    ],
+    "cardiac-conduction-disturbance": [
+      "cardiac-disease"
+    ],
+    "severe-anaemia": [
+      "anaemia"
+    ],
+    "haemolytic-anaemia": [
+      "anaemia"
+    ],
+    "megaloblastic-anaemia": [
+      "anaemia"
+    ],
+    "severe-renal-impairment": [
+      "renal-impairment"
+    ],
+    "severe-renal-impairment-oliguria": [
+      "severe-renal-impairment"
+    ],
+    "severe-renal-failure-no-dialysis": [
+      "severe-renal-impairment"
+    ],
+    "acute-renal-insufficiency-anuria": [
+      "renal-impairment"
+    ],
+    "uncontrolled-epilepsy": [
+      "epilepsy"
+    ],
+    "acute-asthma-attack": [
+      "asthma"
+    ],
+    "nsaid-hypersensitivity-asthma": [
+      "asthma"
+    ],
+    "asthma": [
+      "pulmonary-disease"
+    ],
+    "copd-respiratory-depression": [
+      "pulmonary-disease"
+    ],
+    "respiratory-failure": [
+      "copd-respiratory-depression"
+    ],
+    "toxic-pulmonary-oedema": [
+      "pulmonary-disease"
+    ],
+    "hypercalciuria": [
+      "hypercalcaemia"
+    ],
+    "recent-ischaemic-stroke": [
+      "recent-stroke",
+      "cerebrovascular-disease"
+    ],
+    "opioid-dependence": [
+      "substance-use-disorder"
+    ],
+    "alcohol-dependence": [
+      "substance-use-disorder",
+      "glutathione-depletion-risk"
+    ],
+    "acute-alcoholism": [
+      "acute-intoxication-cns-depressants"
+    ],
+    "severe-infection-shock": [
+      "serious-infection",
+      "glutathione-depletion-risk"
+    ],
+    "peptic-ulcer-gi-bleeding": [
+      "oral-ulcers-active-gi-ulcer"
+    ],
+    "diabetic-ketoacidosis": [
+      "diabetes"
+    ],
+    "hereditary-angioedema": [
+      "angioedema-history-other"
+    ]
+  }
+}

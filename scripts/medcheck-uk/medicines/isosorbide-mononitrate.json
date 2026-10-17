@@ -1,0 +1,1510 @@
+{
+  "id": "isosorbide-mononitrate",
+  "name": "Isosorbide mononitrate",
+  "ingredients": [
+    "isosorbide-mononitrate"
+  ],
+  "className": "Organic nitrate (vasodilator)",
+  "groups": [
+    "nitrate"
+  ],
+  "searchTerms": [
+    "ISMN",
+    "isosorbide 5-mononitrate"
+  ],
+  "formulations": [
+    {
+      "id": "ismn-ir-tab",
+      "label": "Tablets (immediate release)",
+      "route": "oral",
+      "strengths": "20 mg (SmPC used; 10 mg and 40 mg have their own SmPCs)",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "Each tablet contains Isosorbide Mononitrate, 20 mg."
+        }
+      ],
+      "sourceIds": [
+        "emc-2698"
+      ]
+    },
+    {
+      "id": "ismn-mr-tab",
+      "label": "Modified-release tablets (once daily)",
+      "route": "oral",
+      "strengths": "60 mg",
+      "release": "modified",
+      "note": "Once-daily morning dosing differs from immediate-release tablets. Dose and wording are from the 60 mg MR tablet SmPC; other MR tablet products have their own SmPCs.",
+      "src": [
+        {
+          "s": "emc-875",
+          "q": "Extended release film coated tablet (Durules®)"
+        }
+      ],
+      "sourceIds": [
+        "emc-875"
+      ]
+    },
+    {
+      "id": "ismn-mr-cap",
+      "label": "Modified-release capsules (once daily)",
+      "route": "oral",
+      "strengths": "25 mg (SmPC used; 50 mg has its own SmPC)",
+      "release": "modified",
+      "note": "One or two capsules once daily in the morning (MR capsule SmPC). Other MR capsule products have their own SmPCs.",
+      "src": [
+        {
+          "s": "emc-9214",
+          "q": "Each prolonged release capsule contains 25 mg isosorbide mononitrate."
+        }
+      ],
+      "sourceIds": [
+        "emc-9214"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Prophylaxis of angina pectoris. Not for relief of an acute angina attack (use sublingual GTN).",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "Isosorbide Mononitrate Tablets is indicated for the prophylaxis of angina pectoris."
+            },
+            {
+              "s": "emc-875",
+              "q": "Imdur is not indicated for relief of acute angina attacks"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction or brand-specific prescribing statement found in the SmPCs used; no MHRA or SPS brand-prescribing advice found."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Immediate-release: one tablet two or three times a day, taken asymmetrically to allow a nitrate-low period. Nitrate-naive: start 20 mg twice daily. Usual maintenance 20-120 mg daily; use the lowest effective dose.",
+          "tag": "Angina prophylaxis (immediate-release)",
+          "formulations": [
+            "ismn-ir-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "One tablet to be taken asymmetrically (to allow a nitrate low period) two or three times a day."
+            },
+            {
+              "s": "emc-2698",
+              "q": "it is recommended that the initial dose be one tablet of Isosorbide Mononitrate Tablets 20 mg twice a day."
+            },
+            {
+              "s": "emc-2698",
+              "q": "The maintenance dose in individual patients is usually between 20- 120 mg daily."
+            }
+          ]
+        },
+        {
+          "t": "MR tablets: 60 mg once daily in the morning; may increase to 120 mg (two tablets) once daily in the morning. To reduce headache, may start with 30 mg (half a tablet) for the first 2-4 days.",
+          "tag": "Angina prophylaxis (MR tablets)",
+          "formulations": [
+            "ismn-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-875",
+              "q": "Imdur 60mg (one tablet) once daily given in the morning. The dose may be increased to 120mg (two tablets) daily, both to be taken once daily in the morning."
+            },
+            {
+              "s": "emc-875",
+              "q": "The dose can be titrated to minimise the possibility of headache, by initiating treatment with 30mg (half a tablet) for the first 2-4 days."
+            }
+          ]
+        },
+        {
+          "t": "MR capsules: one or two capsules daily in the morning; use the lowest effective dose. If effect wanes on prolonged-release treatment, intermittent therapy may be more suitable.",
+          "tag": "Angina prophylaxis (MR capsules)",
+          "formulations": [
+            "ismn-mr-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-9214",
+              "q": "One capsule to be taken daily, or two capsules daily, in the morning."
+            },
+            {
+              "s": "emc-9214",
+              "q": "Attenuation of effect has occurred in some patients being treated with prolonged release preparations. In such patients intermittent therapy may be more appropriate"
+            }
+          ]
+        },
+        {
+          "t": "Do not stop suddenly; taper dose and frequency gradually.",
+          "tag": "Stopping",
+          "formulations": [
+            "ismn-ir-tab",
+            "ismn-mr-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "Treatment with Isosorbide Mononitrate Tablets, as with any other nitrates, should not be stopped suddenly. Both the dosage and frequency should be tapered gradually"
+            },
+            {
+              "s": "emc-9214",
+              "q": "Treatment with Elantan LA, as with any other nitrate, should not be stopped suddenly."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: no routine adjustment, but special care if prone to hypotension or with marked hepatic or renal insufficiency.",
+          "tag": "Elderly",
+          "formulations": [
+            "ismn-ir-tab",
+            "ismn-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-875",
+              "q": "No evidence of a need for routine dosage adjustment in older people has been found, but special care may be needed in those with increased susceptibility to hypotension or marked hepatic or renal insufficiency."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Safety and efficacy in children not established (all three SmPCs).",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "The safety and efficacy of Isosorbide Mononitrate Tablets 20 mg has yet to be established in children."
+            },
+            {
+              "s": "emc-875",
+              "q": "The safety and efficacy of Imdur in children has not yet been established."
+            },
+            {
+              "s": "emc-9214",
+              "q": "The safety and efficacy of Elantan LA has yet to be established in children."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "With PDE5 inhibitors (e.g. sildenafil, tadalafil, vardenafil) - all formulations.",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "their co-administration with nitrates or nitric oxide donors is therefore contraindicated"
+            },
+            {
+              "s": "emc-875",
+              "q": "Patients treated with Imdur must not be given Phosphodiesterase Type 5 Inhibitors (e.g. sildenafil)."
+            }
+          ]
+        },
+        {
+          "t": "Hypersensitivity to isosorbide mononitrate (immediate-release tablets and MR capsules: also other nitrates; immediate-release tablets: also isosorbide dinitrate).",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "This product should not be given to patients with a known hypersensitivity to isosorbide dinitrate or mononitrate, to other nitrates or to any of the excipients."
+            },
+            {
+              "s": "emc-9214",
+              "q": "Hypersensitivity to the active substance, other nitrates or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Immediate-release tablets and MR capsules: acute MI with low filling pressures; acute circulatory failure (shock, vascular collapse); very low blood pressure; HOCM; constrictive pericarditis; cardiac tamponade; low filling pressures; aortic/mitral stenosis; raised intracranial pressure (e.g. head trauma, cerebral haemorrhage); severe anaemia; closed-angle glaucoma; severe hypotension; hypovolaemia; toxic pulmonary oedema (immediate-release); riociguat.",
+          "formulations": [
+            "ismn-ir-tab",
+            "ismn-mr-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "4.3 Contraindications Isosorbide Mononitrate Tablets 20 mg should not be used in cases of acute myocardial infarction with low filling pressures, acute circulatory failure (shock, vascular collapse), or very low blood pressure"
+            },
+            {
+              "s": "emc-2698",
+              "q": "aortic/mitral valve stenosis and diseases associated with a raised intra-cranial pressure e.g. following a head trauma and including cerebral haemorrhage."
+            },
+            {
+              "s": "emc-9214",
+              "q": "Elantan LA should not be used in patients with severe anaemia, closed angle glaucoma, severe hypotension or severe hypovolaemia."
+            },
+            {
+              "s": "emc-2698",
+              "q": "should not be used in patients with marked anaemia, sever hypotension, closed angle glaucoma, toxic pulmonary oedema or hypovolaemia."
+            }
+          ]
+        },
+        {
+          "t": "MR tablets: constrictive cardiomyopathy and pericarditis, aortic stenosis, cardiac tamponade, mitral stenosis, severe anaemia.",
+          "formulations": [
+            "ismn-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-875",
+              "q": "Constrictive cardiomyopathy and pericarditis, aortic stenosis, cardiac tamponade, mitral stenosis and severe anaemia."
+            }
+          ]
+        },
+        {
+          "t": "Relative contraindications (immediate-release tablets and MR tablets): severe cerebrovascular insufficiency or hypotension.",
+          "formulations": [
+            "ismn-ir-tab",
+            "ismn-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-875",
+              "q": "Severe cerebrovascular insufficiency or hypotension are relative contraindications to the use of Imdur."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Use with caution after recent myocardial infarction, and in hypothyroidism, hypothermia, malnutrition, severe liver or renal disease (immediate-release tablets and MR capsules). MR capsules: avoid lowering systolic BP below 90 mmHg.",
+          "formulations": [
+            "ismn-ir-tab",
+            "ismn-mr-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "should be used with caution in patients who have a recent history of myocardial infarction, or who are suffering from closed-angle glaucoma, hypothyroidism, hypothermia, malnutrition and sever liver or renal disease."
+            },
+            {
+              "s": "emc-9214",
+              "q": "Reducing systolic blood-pressure below 90 mmHg must be avoided."
+            }
+          ]
+        },
+        {
+          "t": "Postural hypotension and syncope can occur; circulatory collapse may follow the first dose with labile circulation (immediate-release: also in patients already on ACE inhibitors). Nitrate hypotension may come with paradoxical bradycardia and worse angina.",
+          "formulations": [
+            "ismn-ir-tab",
+            "ismn-mr-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "Symptoms of circulatory collapse may arise after first dose in patients with labile circulation and in patients already taking ACE inhibitors."
+            },
+            {
+              "s": "emc-2698",
+              "q": "Hypotension induced by nitrates may be accompanied by paradoxical bradycardia and increased angina."
+            }
+          ]
+        },
+        {
+          "t": "Tolerance and cross-tolerance to other nitrates can develop if not taken as directed (immediate-release: keep the asymmetric nitrate-low period). Avoid continuously high doses (MR capsules).",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "If the tablets are not taken as indicated (see section 4.2) tolerance to the medication and cross-tolerance to other nitrates may occur."
+            },
+            {
+              "s": "emc-9214",
+              "q": "Continuously high dosages should be avoided."
+            }
+          ]
+        },
+        {
+          "t": "MR capsules: caution in hypoxaemia and ventilation/perfusion imbalance (lung disease, ischaemic heart failure). Fast gastrointestinal transit may reduce release from MR formulations.",
+          "formulations": [
+            "ismn-mr-cap"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-9214",
+              "q": "Caution should be exercised in patients with hypoxaemia and ventilation/perfusion imbalance due to lung disease or ischaemic heart failure."
+            },
+            {
+              "s": "emc-9214",
+              "q": "In patients with decreased gastrointestinal transit time, and using prolonged-release formulation of isosorbide mononitrate, a decrease in release of the active ingredient may occur."
+            }
+          ]
+        },
+        {
+          "t": "MR capsules: do not interrupt nitrate therapy in order to take a PDE5 inhibitor (risk of angina attack).",
+          "formulations": [
+            "ismn-mr-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-9214",
+              "q": "Elantan therapy should not be interrupted to take phosphodiesterase inhibitor-containing products (e.g. sildenafil, tadalafil, vardenafil), because the risk of inducing an attack of angina pectoris could increase by doing so"
+            }
+          ]
+        },
+        {
+          "t": "Immediate-release tablets and MR capsules contain lactose and sucrose: patients with rare hereditary galactose or fructose intolerance, total lactase deficiency, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take them.",
+          "formulations": [
+            "ismn-ir-tab",
+            "ismn-mr-cap"
+          ],
+          "detail": false,
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "patients with rare hereditary problems of galactose or fructose intolerance, total lactase deficiency, sucrase-isomaltase insufficiency glucose-galactose malabsorption should not take this medicine."
+            },
+            {
+              "s": "emc-9214",
+              "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+            },
+            {
+              "s": "emc-9214",
+              "q": "Due to the presence of sucrose, patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "PDE5 inhibitors (sildenafil, tadalafil, vardenafil): potentiate hypotension; possible syncope, MI or life-threatening cardiovascular complications. Must not be used together.",
+          "tag": "PDE5 inhibitors (sildenafil)",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "Patients who are on Isosorbide Mononitrate Tablets therapy therefore must not use phosphodiesterase type-5 inhibitors."
+            },
+            {
+              "s": "emc-875",
+              "q": "Imdur and Phosphodiesterase Type 5 Inhibitors (e.g. sildenafil) must not be given concomitantly."
+            }
+          ]
+        },
+        {
+          "t": "Blood-pressure-lowering medicines (beta-blockers, calcium-channel blockers, vasodilators, ARBs, ACE inhibitors), neuroleptics, tricyclic antidepressants and alcohol may increase the hypotensive effect. MR capsules: if the BP fall with ACE inhibitors or arterial vasodilators is excessive, consider reducing one or both doses.",
+          "tag": "Antihypertensives, ACE inhibitors, calcium-channel blockers",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "Concurrent administration of drugs with blood pressure lowering properties, e.g, beta-blockers, calcium channel blockers, vasodilators, alprostadil, aldesleukin, angiotensin II receptor antagonist, ACE inhibitors etc. may potentiate the hypotensive effect"
+            },
+            {
+              "s": "emc-9214",
+              "q": "The concurrent intake of ISMN with ACE-inhibitors or arterial vasodilators could be a desirable interaction unless the antihypertensive effects are excessive in which case consider reducing the dose of one or both drugs."
+            }
+          ]
+        },
+        {
+          "t": "Riociguat: contraindicated (immediate-release tablets and MR capsules). Dihydroergotamine: levels and hypertensive effect may rise.",
+          "tag": "Riociguat, dihydroergotamine",
+          "formulations": [
+            "ismn-ir-tab",
+            "ismn-mr-cap"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "The use of isosorbide mononitrate with riociguat, a stimulator of soluble guanylate cyclase, is contra-indicated"
+            },
+            {
+              "s": "emc-2698",
+              "q": "may increase the blood level of dihydroergotamine and its hypertensive effect."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Immediate-release SmPC: reduce the dose in renal impairment (no threshold given); use with caution in severe renal disease.",
+          "formulations": [
+            "ismn-ir-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "Dosage should be reduced in patients with renal or hepatic impairment."
+            }
+          ]
+        },
+        {
+          "t": "MR capsules: use with caution in severe renal disease. MR tablets: special care in older people with marked renal insufficiency. No numeric renal thresholds in any SmPC used.",
+          "formulations": [
+            "ismn-mr-cap",
+            "ismn-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-9214",
+              "q": "Also in patients who are suffering from hypothyroidism, hypothermia, malnutrition, severe liver or severe renal disease."
+            },
+            {
+              "s": "emc-875",
+              "q": "special care may be needed in those with increased susceptibility to hypotension or marked hepatic or renal insufficiency"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Immediate-release SmPC: reduce the dose in hepatic impairment; caution in severe liver disease.",
+          "formulations": [
+            "ismn-ir-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "Dosage should be reduced in patients with renal or hepatic impairment."
+            }
+          ]
+        },
+        {
+          "t": "MR capsules: caution in severe liver disease. MR tablets: special care in older people with marked hepatic insufficiency.",
+          "formulations": [
+            "ismn-mr-cap",
+            "ismn-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-9214",
+              "q": "severe liver or severe renal disease"
+            },
+            {
+              "s": "emc-875",
+              "q": "marked hepatic or renal insufficiency"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Immediate-release tablets and MR tablets: safety and efficacy in pregnancy not established.",
+          "formulations": [
+            "ismn-ir-tab",
+            "ismn-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "The safety and efficacy of Isosorbide Mononitrate Tablets during pregnancy or lactation has not been established."
+            },
+            {
+              "s": "emc-875",
+              "q": "The safety and efficacy of Imdur during pregnancy or lactation has not been established."
+            }
+          ]
+        },
+        {
+          "t": "MR capsules: no data suggesting harm, but safety not established; use only if the physician judges benefit outweighs possible hazard.",
+          "formulations": [
+            "ismn-mr-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-9214",
+              "q": "Isosorbide mononitrate should only be used in pregnancy and during lactation if, in the opinion of the physician, the possible benefits outweigh the possible hazards."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Immediate-release tablets and MR tablets: safety in lactation not established.",
+          "formulations": [
+            "ismn-ir-tab",
+            "ismn-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "The safety and efficacy of Isosorbide Mononitrate Tablets during pregnancy or lactation has not been established."
+            }
+          ]
+        },
+        {
+          "t": "MR capsules: unknown whether nitrates pass into milk; use caution. No SPS breastfeeding page for nitrates was found.",
+          "formulations": [
+            "ismn-mr-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-9214",
+              "q": "It is not known whether nitrates are excreted in human milk and therefore caution should be exercised when administered to nursing women."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Fertility: no human data (MR capsules).",
+          "formulations": [
+            "ismn-mr-cap"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-9214",
+              "q": "There is no data available on the effect of isosorbide mononitrate on fertility in humans."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common: throbbing headache (usually fades after 1-3 weeks). Common: hypotension or light-headedness on standing (especially at start or after a dose increase), dizziness, tachycardia, nausea (MR tablets), somnolence and asthenia (MR capsules).",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "A very common (>10% of patients) adverse reaction to Isosorbide Mononitrate Tablets is throbbing headache."
+            },
+            {
+              "s": "emc-2698",
+              "q": "At the start of therapy or when the dosage is increased, hypotension and/or light headedness in the upright position are commonly observed"
+            },
+            {
+              "s": "emc-875",
+              "q": "Nervous system disorders Common Headache, dizziness"
+            },
+            {
+              "s": "emc-875",
+              "q": "Cardiac and vascular disorders Common Hypotension, tachycardia Gastrointestinal disorders Common Nausea"
+            },
+            {
+              "s": "emc-9214",
+              "q": "very common: headache, common: dizziness (including dizziness postural), somnolence."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Uncommon: collapse (sometimes with bradyarrhythmia and syncope); severe hypotension that may worsen angina.",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "Uncommonly collapse may occur (sometimes accompanied by bradyarrhythmia and syncope). Uncommonly severe hypotension may lead to enhanced angina symptoms."
+            }
+          ]
+        },
+        {
+          "t": "Rare/single cases: exfoliative dermatitis; angioedema (MR capsules, frequency not known). Nitrate-induced pituitary apoplexy reported in undiagnosed pituitary tumours.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "In single cases exfoliative dermatitis may occur."
+            },
+            {
+              "s": "emc-9214",
+              "q": "Immune system disorders: not known: angioedema"
+            },
+            {
+              "s": "emc-2698",
+              "q": "Nitrate-induced pituitary apoplexy has been reported in patients with undiagnosed pituitary tumours."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "status": "not-stated",
+      "note": "No laboratory or routine monitoring stated in the SmPCs used; no SPS monitoring page found for nitrates."
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Immediate-release: swallow whole with a drink of water; asymmetric dosing to leave a nitrate-low period.",
+          "formulations": [
+            "ismn-ir-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "It is recommended that the tablets should be swallowed whole with a drink of water."
+            }
+          ]
+        },
+        {
+          "t": "MR tablets: do not chew or crush; swallow whole with half a glass of water, in the morning. The empty tablet matrix may be seen in the stool.",
+          "formulations": [
+            "ismn-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-875",
+              "q": "Imdur Tablets must not be chewed or crushed. They should be swallowed whole with half a glass of water."
+            },
+            {
+              "s": "emc-875",
+              "q": "Very occasionally the matrix may pass through the gastrointestinal tract without disintegrating and be found visible in the stool"
+            }
+          ]
+        },
+        {
+          "t": "MR capsules: take in the morning.",
+          "formulations": [
+            "ismn-mr-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-9214",
+              "q": "One capsule to be taken daily, or two capsules daily, in the morning."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Never take sildenafil, tadalafil or vardenafil (erectile dysfunction medicines) with this medicine.",
+          "src": [
+            {
+              "s": "emc-9214",
+              "q": "Patients who undergo a maintenance treatment with Elantan should be informed that they must not use phosphodiesterase inhibitor-containing products (e.g. sildenafil, tadalafil, vardenafil)."
+            }
+          ]
+        },
+        {
+          "t": "Use a GTN spray or sublingual tablet for an acute angina attack; this medicine does not treat attacks.",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "In the event of an acute angina attack, sublingual treatment such as a GTN spray or tablet should be used instead of isosorbide mononitrate tablets."
+            }
+          ]
+        },
+        {
+          "t": "Avoid alcohol (severe postural hypotension). Dizziness, tiredness or blurred vision at the start may affect driving.",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "Severe postural hypotension with light headedness and dizziness is frequently observed after the consumption of alcohol, therefore alcohol should be avoided during treatment."
+            },
+            {
+              "s": "emc-2698",
+              "q": "Dizziness, tiredness or blurred vision might occur at the start of treatment."
+            }
+          ]
+        },
+        {
+          "t": "Headache is common at first and usually settles within 1-3 weeks. Do not stop suddenly.",
+          "src": [
+            {
+              "s": "emc-2698",
+              "q": "The incidence of headache diminishes gradually or disappears after 1-3 weeks"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "isosorbide-mononitrate:allergy:nitrates",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "allergen": [
+        "isosorbide-mononitrate",
+        "group:nitrate"
+      ],
+      "concern": "Hypersensitivity to isosorbide mononitrate or other nitrates",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use (listed in SmPC section 4.3).",
+      "sourceWording": "Contraindications ... should not be given",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "This product should not be given to patients with a known hypersensitivity to isosorbide dinitrate or mononitrate, to other nitrates or to any of the excipients."
+        },
+        {
+          "s": "emc-9214",
+          "q": "4.3 Contraindications Hypersensitivity to the active substance, other nitrates or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:allergy:self-imdur",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-mr-tab"
+      ],
+      "allergen": [
+        "isosorbide-mononitrate"
+      ],
+      "concern": "Hypersensitivity to isosorbide mononitrate",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-875",
+          "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:interaction:pde5",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "other": "group:pde5-inhibitor",
+      "effect": "hypotension",
+      "concern": "PDE5 inhibitors (e.g. sildenafil)",
+      "consequence": "Potentiated hypotension; risk of syncope, MI or life-threatening cardiovascular complications.",
+      "action": "Do not use together.",
+      "sourceWording": "contraindicated / must not be given concomitantly",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "their co-administration with nitrates or nitric oxide donors is therefore contraindicated"
+        },
+        {
+          "s": "emc-875",
+          "q": "Imdur and Phosphodiesterase Type 5 Inhibitors (e.g. sildenafil) must not be given concomitantly."
+        },
+        {
+          "s": "emc-9214",
+          "q": "Patients who are on Elantan LA therapy therefore must not use phosphodiesterase type-5 inhibitors"
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "isosorbide-mononitrate",
+      "other": "group:ace-inhibitor",
+      "effect": "hypotension",
+      "concern": "ACE inhibitors",
+      "consequence": "Increased hypotensive effect; circulatory collapse possible after the first ISMN dose (immediate-release SmPC).",
+      "action": "Be aware of additive effect; MR capsules: if excessive, consider reducing the dose of one or both.",
+      "sourceWording": "may potentiate the hypotensive effect",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "Symptoms of circulatory collapse may arise after first dose in patients with labile circulation and in patients already taking ACE inhibitors."
+        },
+        {
+          "s": "emc-9214",
+          "q": "consider reducing the dose of one or both drugs."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:interaction:ccb",
+      "kind": "interaction",
+      "level": "info",
+      "med": "isosorbide-mononitrate",
+      "other": "group:calcium-channel-blocker",
+      "effect": "hypotension",
+      "concern": "Calcium-channel blockers",
+      "consequence": "May increase the hypotensive effect.",
+      "action": "Be aware of additive effect.",
+      "sourceWording": "may potentiate the hypotensive effect",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "Concurrent administration of drugs with blood pressure lowering properties, e.g, beta-blockers, calcium channel blockers"
+        },
+        {
+          "s": "emc-2698",
+          "q": "may potentiate the hypotensive effect of Isosorbide Mononitrate Tablets."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "isosorbide-mononitrate",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Blood-pressure-lowering medicines",
+      "consequence": "May increase the hypotensive effect.",
+      "action": "Be aware of additive effect.",
+      "sourceWording": "may potentiate the hypotensive effect",
+      "src": [
+        {
+          "s": "emc-9214",
+          "q": "Concurrent administration of drugs with blood pressure lowering properties"
+        },
+        {
+          "s": "emc-9214",
+          "q": "may potentiate the hypotensive effect of Elantan LA."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:hypotension",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "hypotension",
+      "concern": "Very low blood pressure / severe hypotension",
+      "consequence": "Further fall in blood pressure; collapse.",
+      "action": "Do not use (SmPC 4.3). MR tablet SmPC: hypotension is a relative contraindication.",
+      "sourceWording": "Contraindications ... should not be used",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "4.3 Contraindications Isosorbide Mononitrate Tablets 20 mg should not be used in cases of acute myocardial infarction with low filling pressures, acute circulatory failure (shock, vascular collapse), or very low blood pressure"
+        },
+        {
+          "s": "emc-9214",
+          "q": "Elantan LA should not be used in patients with severe anaemia, closed angle glaucoma, severe hypotension or severe hypovolaemia."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:hypotension-imdur",
+      "kind": "condition",
+      "level": "caution",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-mr-tab"
+      ],
+      "condition": "hypotension",
+      "concern": "Hypotension (MR tablets)",
+      "consequence": "Further fall in blood pressure.",
+      "action": "Relative contraindication: weigh risk carefully.",
+      "sourceWording": "relative contraindications",
+      "src": [
+        {
+          "s": "emc-875",
+          "q": "Severe cerebrovascular insufficiency or hypotension are relative contraindications to the use of Imdur."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:shock",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "cardiogenic-shock",
+      "concern": "Acute circulatory failure, shock or vascular collapse",
+      "consequence": "Further haemodynamic deterioration.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... should not be used",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "acute circulatory failure (shock, vascular collapse)"
+        },
+        {
+          "s": "emc-9214",
+          "q": "acute circulatory failure, shock, vascular collapse, or very low blood pressure"
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:acute-mi-low-filling",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "low-cardiac-filling-pressure",
+      "concern": "Low cardiac filling pressure, including acute MI with low filling pressure",
+      "consequence": "Haemodynamic deterioration.",
+      "action": "Do not use (SmPC section 4.3).",
+      "sourceWording": "Contraindications ... should not be used",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "should not be used in cases of acute myocardial infarction with low filling pressures"
+        },
+        {
+          "s": "emc-2698",
+          "q": "hypertrophic obstructive cardiomyopathy (HOCM), constrictive pericarditis, cardiac tamponade, low cardiac filling pressures, aortic/mitral valve stenosis"
+        },
+        {
+          "s": "emc-9214",
+          "q": "The capsules should not be used in cases of acute myocardial infarction with low filling pressure"
+        },
+        {
+          "s": "emc-9214",
+          "q": "constrictive pericarditis, cardiac tamponade, low cardiac filling pressures, aortic/mitral valve stenosis"
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:recent-mi",
+      "kind": "condition",
+      "level": "caution",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "recent-myocardial-infarction",
+      "concern": "Recent myocardial infarction",
+      "consequence": "Hypotension may worsen ischaemia (acute MI with low filling pressure is a contraindication).",
+      "action": "Use with caution; MR capsules: avoid lowering systolic BP below 90 mmHg.",
+      "sourceWording": "should be used with caution in patients who have a recent history of myocardial infarction",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "should be used with caution in patients who have a recent history of myocardial infarction, or who are suffering from closed-angle glaucoma, hypothyroidism, hypothermia, malnutrition and sever liver or renal disease."
+        },
+        {
+          "s": "emc-9214",
+          "q": "The capsules should be used with caution in patients who have a recent history of myocardial infarction"
+        },
+        {
+          "s": "emc-9214",
+          "q": "Reducing systolic blood-pressure below 90 mmHg must be avoided."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:aortic-stenosis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "condition": "aortic-stenosis",
+      "concern": "Aortic stenosis or HOCM",
+      "consequence": "Vasodilatation with fixed outflow obstruction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "hypertrophic obstructive cardiomyopathy (HOCM), constrictive pericarditis, cardiac tamponade, low cardiac filling pressures, aortic/mitral valve stenosis"
+        },
+        {
+          "s": "emc-875",
+          "q": "Constrictive cardiomyopathy and pericarditis, aortic stenosis, cardiac tamponade, mitral stenosis and severe anaemia."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:mitral-stenosis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "condition": "mitral-stenosis",
+      "concern": "Mitral stenosis",
+      "consequence": "Haemodynamic deterioration.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "aortic/mitral valve stenosis"
+        },
+        {
+          "s": "emc-875",
+          "q": "cardiac tamponade, mitral stenosis and severe anaemia"
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:pericarditis-tamponade",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "condition": "constrictive-pericarditis-tamponade",
+      "concern": "Constrictive pericarditis or cardiac tamponade",
+      "consequence": "Haemodynamic deterioration.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "constrictive pericarditis, cardiac tamponade"
+        },
+        {
+          "s": "emc-875",
+          "q": "Constrictive cardiomyopathy and pericarditis, aortic stenosis, cardiac tamponade"
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:raised-icp",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "head-injury-raised-icp",
+      "concern": "Raised intracranial pressure (head trauma, cerebral haemorrhage)",
+      "consequence": "Vasodilatation may worsen intracranial pressure.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... should not be used",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "diseases associated with a raised intra-cranial pressure e.g. following a head trauma and including cerebral haemorrhage."
+        },
+        {
+          "s": "emc-9214",
+          "q": "diseases associated with a raised intra-cranial pressure e.g. following a head trauma, and including a cerebral haemorrhage."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:anaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "condition": "anaemia",
+      "concern": "Severe (marked) anaemia",
+      "consequence": "Reduced oxygen delivery with vasodilatation.",
+      "action": "Do not use in severe anaemia.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "should not be used in patients with marked anaemia"
+        },
+        {
+          "s": "emc-875",
+          "q": "mitral stenosis and severe anaemia."
+        },
+        {
+          "s": "emc-9214",
+          "q": "Elantan LA should not be used in patients with severe anaemia"
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:angle-closure-glaucoma",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "angle-closure-glaucoma",
+      "concern": "Closed-angle glaucoma",
+      "consequence": "May raise intraocular pressure.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... should not be used",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "should not be used in patients with marked anaemia, sever hypotension, closed angle glaucoma, toxic pulmonary oedema or hypovolaemia."
+        },
+        {
+          "s": "emc-9214",
+          "q": "Elantan LA should not be used in patients with severe anaemia, closed angle glaucoma"
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:hypovolaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "dehydration-hypovolaemia",
+      "concern": "Hypovolaemia (MR capsules: severe hypovolaemia)",
+      "consequence": "Profound hypotension.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... should not be used",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "toxic pulmonary oedema or hypovolaemia."
+        },
+        {
+          "s": "emc-9214",
+          "q": "severe hypotension or severe hypovolaemia."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:toxic-pulmonary-oedema",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab"
+      ],
+      "condition": "toxic-pulmonary-oedema",
+      "concern": "Toxic pulmonary oedema (immediate-release SmPC)",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use (SmPC section 4.3).",
+      "sourceWording": "Contraindications ... should not be used",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "should not be used in patients with marked anaemia, sever hypotension, closed angle glaucoma, toxic pulmonary oedema or hypovolaemia."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:cerebrovascular",
+      "kind": "condition",
+      "level": "caution",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-tab"
+      ],
+      "condition": "cerebrovascular-disease",
+      "concern": "Severe cerebrovascular insufficiency",
+      "consequence": "Hypotension may worsen cerebral perfusion.",
+      "action": "Relative contraindication: weigh risk carefully.",
+      "sourceWording": "relative contraindications",
+      "src": [
+        {
+          "s": "emc-875",
+          "q": "Severe cerebrovascular insufficiency or hypotension are relative contraindications to the use of Imdur."
+        },
+        {
+          "s": "emc-2698",
+          "q": "Severe cerebrovascular insufficiency or hypotension are relative contraindications to the use of Isosorbide Mononitrate Tablets 20 mg."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "caution",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "hypothyroidism",
+      "concern": "Hypothyroidism",
+      "consequence": "Listed among conditions needing caution.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "should be used with caution in patients who have a recent history of myocardial infarction, or who are suffering from closed-angle glaucoma, hypothyroidism"
+        },
+        {
+          "s": "emc-9214",
+          "q": "Also in patients who are suffering from hypothyroidism, hypothermia, malnutrition, severe liver or severe renal disease."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:pulmonary-disease-cap",
+      "kind": "condition",
+      "level": "caution",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-mr-cap"
+      ],
+      "condition": "pulmonary-disease",
+      "concern": "Hypoxaemia or ventilation/perfusion imbalance from lung disease (MR capsules)",
+      "consequence": "Vasodilatation may worsen ventilation/perfusion imbalance and lower arterial oxygen.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "emc-9214",
+          "q": "Caution should be exercised in patients with hypoxaemia and ventilation/perfusion imbalance due to lung disease or ischaemic heart failure."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:renal-impairment-ir",
+      "kind": "condition",
+      "level": "dose",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab"
+      ],
+      "condition": "renal-impairment",
+      "concern": "Renal impairment (immediate-release; no threshold given)",
+      "consequence": "Not stated.",
+      "action": "Reduce the dose (no amount stated).",
+      "sourceWording": "Dosage should be reduced",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "Dosage should be reduced in patients with renal or hepatic impairment."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:severe-renal",
+      "kind": "condition",
+      "level": "caution",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal disease",
+      "consequence": "Not stated.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "should be used with caution in patients who have a recent history of myocardial infarction, or who are suffering from closed-angle glaucoma, hypothyroidism, hypothermia, malnutrition and sever liver or renal disease."
+        },
+        {
+          "s": "emc-9214",
+          "q": "Also in patients who are suffering from hypothyroidism, hypothermia, malnutrition, severe liver or severe renal disease."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:sugar-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency (sucrose)",
+      "consequence": "Immediate-release tablets and MR capsules contain sucrose.",
+      "action": "Should not take this product.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "patients with rare hereditary problems of galactose or fructose intolerance, total lactase deficiency, sucrase-isomaltase insufficiency glucose-galactose malabsorption should not take this medicine."
+        },
+        {
+          "s": "emc-9214",
+          "q": "Due to the presence of sucrose, patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-cap"
+      ],
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption (lactose)",
+      "consequence": "Immediate-release tablets and MR capsules contain lactose.",
+      "action": "Should not take this product.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "patients with rare hereditary problems of galactose or fructose intolerance, total lactase deficiency, sucrase-isomaltase insufficiency glucose-galactose malabsorption should not take this medicine."
+        },
+        {
+          "s": "emc-9214",
+          "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:hepatic:ir",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab"
+      ],
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Hepatic impairment (immediate-release)",
+      "consequence": "Not stated.",
+      "action": "Reduce the dose (no amount stated); caution in severe liver disease.",
+      "sourceWording": "Dosage should be reduced",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "Dosage should be reduced in patients with renal or hepatic impairment."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:hepatic:severe-cap",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-mr-cap"
+      ],
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe liver disease (MR capsules)",
+      "consequence": "Not stated.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-9214",
+          "q": "The capsules should be used with caution in patients who have a recent history"
+        },
+        {
+          "s": "emc-9214",
+          "q": "Also in patients who are suffering from hypothyroidism, hypothermia, malnutrition, severe liver or severe renal disease."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:age:children",
+      "kind": "age",
+      "level": "info",
+      "med": "isosorbide-mononitrate",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Child",
+      "consequence": "Safety and efficacy in children not established.",
+      "action": "No paediatric dose in the SmPCs used.",
+      "sourceWording": "has yet to be established in children",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "The safety and efficacy of Isosorbide Mononitrate Tablets 20 mg has yet to be established in children."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:pregnancy:cap",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-mr-cap"
+      ],
+      "concern": "Pregnancy (MR capsules)",
+      "consequence": "Safety not established; no data suggesting harm.",
+      "action": "Use only if the physician judges benefit outweighs possible hazard.",
+      "sourceWording": "should only be used ... if ... the possible benefits outweigh the possible hazards",
+      "src": [
+        {
+          "s": "emc-9214",
+          "q": "Isosorbide mononitrate should only be used in pregnancy and during lactation if, in the opinion of the physician, the possible benefits outweigh the possible hazards."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:pregnancy:ir-imdur",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-tab"
+      ],
+      "concern": "Pregnancy",
+      "consequence": "Safety and efficacy in pregnancy not established.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "has not been established",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "The safety and efficacy of Isosorbide Mononitrate Tablets during pregnancy or lactation has not been established."
+        },
+        {
+          "s": "emc-875",
+          "q": "The safety and efficacy of Imdur during pregnancy or lactation has not been established."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:breastfeeding:cap",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-mr-cap"
+      ],
+      "concern": "Breastfeeding (MR capsules)",
+      "consequence": "Not known whether nitrates pass into milk.",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-9214",
+          "q": "It is not known whether nitrates are excreted in human milk and therefore caution should be exercised when administered to nursing women."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:breastfeeding:ir-imdur",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "isosorbide-mononitrate",
+      "formulations": [
+        "ismn-ir-tab",
+        "ismn-mr-tab"
+      ],
+      "concern": "Breastfeeding",
+      "consequence": "Safety and efficacy in lactation not established.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "has not been established",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "The safety and efficacy of Isosorbide Mononitrate Tablets during pregnancy or lactation has not been established."
+        }
+      ]
+    }
+  ]
+}
