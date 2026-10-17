@@ -477,3 +477,31 @@ export function calcDose(calc, weightKg, ageYears) {
   if (calc.per === 'day' && calc.dividedInto) { perDose = total / calc.dividedInto; steps.push(`÷ ${calc.dividedInto} doses = ${fmt(perDose)} mg per dose`) }
   return { total, perDose, capped, steps, notes, of: calc.of }
 }
+
+// Patient-independent summary: for each selected medicine, the situations in which the sources say it must not be given
+// (level contraindicated) and, separately, those to avoid. Used for the at-a-glance panel when no patient details are entered.
+const CI_KINDS = ['condition', 'pregnancy', 'breastfeeding', 'renal', 'hepatic', 'age', 'allergy']
+export function contraindications(kb, selection) {
+  const ix = indexKb(kb)
+  const ownerMatch = (x, m) => (x.startsWith('group:') ? covers(ix, x, m) : x === m.id)
+  return selection.map((s) => {
+    const m = ix.med.get(s.medId)
+    if (!m) return { key: s.key, label: s.medId, contraindicated: [], avoid: [] }
+    const f = m.formulations.find((x) => x.id === s.formId) ?? m.formulations[0]
+    const item = { formId: f.id }
+    const out = { contraindicated: new Map(), avoid: new Map() }
+    for (const r of kb.rules) {
+      if (!CI_KINDS.includes(r.kind) || !['contraindicated', 'avoid'].includes(r.level) || !ownerMatch(r.med, m) || !applies(r, item)) continue
+      let scope = ruleScope(kb, r)
+      if (r.age && r.kind !== 'age') scope += ` (${ageText(r.age).toLowerCase()})`
+      const bucket = out[r.level]
+      if (!bucket.has(scope)) bucket.set(scope, { scope, kind: r.kind, sources: [], ruleIds: [] })
+      const e = bucket.get(scope)
+      e.ruleIds.push(r.id)
+      for (const src of sourcesOf(ix, r)) if (!e.sources.some((x) => x.id === src.id)) e.sources.push(src)
+    }
+    for (const sc of out.contraindicated.keys()) out.avoid.delete(sc) // listed once, at the stronger level
+    const order = (a, b) => CI_KINDS.indexOf(a.kind) - CI_KINDS.indexOf(b.kind) || a.scope.localeCompare(b.scope)
+    return { key: s.key, label: m.formulations.length > 1 ? `${m.name} (${f.label.toLowerCase()})` : m.name, contraindicated: [...out.contraindicated.values()].sort(order), avoid: [...out.avoid.values()].sort(order) }
+  })
+}

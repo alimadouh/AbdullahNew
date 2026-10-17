@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { ShieldPlus, LoaderCircle, Eraser, ArrowUp } from 'lucide-react'
-import { assess, LEVELS, cockcroftGault } from '../lib/medcheck/engine.js'
+import { ShieldPlus, LoaderCircle, Eraser, ArrowUp, UserRound, ChevronUp } from 'lucide-react'
+import { assess, LEVELS, cockcroftGault, contraindications } from '../lib/medcheck/engine.js'
 import { MedicinePicker, PatientPanel } from './medcheck/Inputs.jsx'
 import SafetyPanel from './medcheck/SafetyPanel.jsx'
+import QuickPanel from './medcheck/QuickPanel.jsx'
 import MedicineCard from './medcheck/MedicineCard.jsx'
 import { LEVEL_META } from './medcheck/common.jsx'
 
@@ -31,6 +32,7 @@ export default function MedCheckTool() {
   const [patient, setPatient] = useState(EMPTY_PATIENT)
   const [panelVisible, setPanelVisible] = useState(true)
   const [resetN, setResetN] = useState(0)
+  const [showPatient, setShowPatient] = useState(false) // patient details are optional and folded away by default
   const panelRef = useRef(null)
 
   useEffect(() => {
@@ -39,7 +41,9 @@ export default function MedCheckTool() {
     return () => { live = false }
   }, [])
 
-  const result = useMemo(() => (kb ? assess(kb, selection, { ...patient, medsComplete }) : null), [kb, selection, patient, medsComplete])
+  const result = useMemo(() => (kb ? assess(kb, selection, showPatient ? { ...patient, medsComplete } : { medsComplete }) : null), [kb, selection, patient, medsComplete, showPatient])
+  const contra = useMemo(() => (kb ? contraindications(kb, selection) : []), [kb, selection])
+  const patientRef = useRef(null)
 
   // keep a compact summary on screen when the safety panel scrolls out of view
   useEffect(() => {
@@ -85,21 +89,34 @@ export default function MedCheckTool() {
         {(selection.length > 0 || patient !== EMPTY_PATIENT) && <button type="button" onClick={reset} className="inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-semibold hover:bg-muted"><Eraser className="h-3.5 w-3.5" />Clear all</button>}
       </div>
 
-      <div className="mb-4 grid gap-4 rounded-2xl border bg-card p-4 shadow-sm sm:p-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-8">
-        <MedicinePicker kb={kb} selection={selection} setSelection={setSelection} medsComplete={medsComplete} setMedsComplete={setMedsComplete} />
-        <div className="border-t pt-4 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0"><PatientPanel key={resetN} kb={kb} patient={patient} set={set} needed={new Set(result.missing.map((m) => m.field))} /></div>
+      <div className={`mb-4 grid gap-4 rounded-2xl border bg-card p-4 shadow-sm sm:p-5 ${showPatient ? 'lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-8' : ''}`}>
+        <div>
+          <MedicinePicker kb={kb} selection={selection} setSelection={setSelection} medsComplete={medsComplete} setMedsComplete={setMedsComplete} showComplete={showPatient} />
+          {!showPatient && (
+            <button type="button" id="mc-show-patient" onClick={() => setShowPatient(true)} className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-dashed px-3 py-1.5 text-xs font-semibold text-muted-foreground hover:bg-muted hover:text-foreground">
+              <UserRound className="h-3.5 w-3.5" />Check against a patient (optional)
+            </button>
+          )}
+        </div>
+        {showPatient && (
+          <div className="relative border-t pt-4 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+            <button type="button" onClick={() => setShowPatient(false)} className="absolute right-0 top-4 inline-flex items-center gap-1 text-xs font-semibold text-muted-foreground hover:text-foreground lg:top-0"><ChevronUp className="h-3.5 w-3.5" />Hide</button>
+            <PatientPanel key={resetN} kb={kb} patient={patient} set={set} needed={new Set(result.missing.map((m) => m.field))} />
+          </div>
+        )}
       </div>
 
       {selection.length > 0 ? (
         <>
-          <SafetyPanel kb={kb} result={result} selection={selection} panelRef={panelRef} onFocusField={focusField} ctx={{ medLabels, patientLine: patientLine(kb, patient) }} />
+          <QuickPanel result={result} contra={contra} nDistinct={new Set(selection.map((s) => s.medId)).size} nCovered={kb.medicines.length} panelRef={panelRef} />
+          {showPatient && <div className="mt-4"><SafetyPanel kb={kb} result={result} selection={selection} panelRef={patientRef} onFocusField={focusField} ctx={{ medLabels, patientLine: patientLine(kb, patient) }} /></div>}
           <h3 className="mb-2 mt-6 text-sm font-semibold text-muted-foreground">Medicine details ({selection.length})</h3>
           <div className={`grid gap-4 ${selection.length > 1 ? 'lg:grid-cols-2 2xl:grid-cols-3' : 'max-w-3xl'}`}>
             {selection.map((s) => <MedicineCard key={s.key} kb={kb} entry={s} findings={result.findings} patient={patient} onRemove={() => setSelection((all) => all.filter((x) => x.key !== s.key))} />)}
           </div>
         </>
       ) : (
-        <p className="rounded-2xl border border-dashed p-6 text-center text-sm text-muted-foreground">Add one or more medicines to see the combined safety assessment and a full table for each medicine.</p>
+        <p className="rounded-2xl border border-dashed p-6 text-center text-sm text-muted-foreground">Add medicines to see how they interact and when each one must not be given.</p>
       )}
 
       {selection.length > 0 && !panelVisible && (

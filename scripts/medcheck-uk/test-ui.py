@@ -47,7 +47,17 @@ with sync_playwright() as p:
         check(f'{tag}: kb loads with medicines', len(names) >= 30, len(names))
         check(f'{tag}: no country selector', pg.locator('#mc-country').count() == 0 and 'Kuwait' not in pg.inner_text('main') if pg.locator('main').count() else True)
         # empty state
-        check(f'{tag}: empty state asks for medicines', 'Add one or more medicines' in pg.content())
+        check(f'{tag}: empty state asks for medicines', 'Add medicines to see' in pg.content())
+        # default view: medicines only, patient form folded away; interactions + when-not-to-give at the top
+        check(f'{tag}: patient form hidden by default', pg.locator('#mc-age').count() == 0 and pg.locator('#mc-show-patient').count() == 1)
+        add_med(pg, 'warfarin'); add_med(pg, 'ibuprofen')
+        q = pg.inner_text('#mc-quick')
+        check(f'{tag}: quick panel shows the interaction', 'Warfarin sodium + Ibuprofen' in q, q[:300])
+        check(f'{tag}: quick panel lists when not to give', 'When not to give' in q and 'Haemorrhagic stroke' in q and 'Pregnancy' in q)
+        y_quick = pg.locator('#mc-quick').bounding_box()['y']; y_card = pg.locator('article').first.bounding_box()['y']
+        check(f'{tag}: quick panel above the medicine tables', y_quick < y_card)
+        pg.click('text=Clear all'); pg.wait_for_timeout(100)
+        pg.click('#mc-show-patient'); pg.wait_for_selector('#mc-age')
 
         if tag == 'desktop':
             # warfarin + ibuprofen -> interaction, both cards, panel above cards

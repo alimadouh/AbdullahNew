@@ -7,7 +7,7 @@ const normq = (s) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').r
 const fieldCls = 'h-9 w-full rounded-lg border bg-background px-2.5 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20'
 
 // ---------- medicine search ----------
-export function MedicinePicker({ kb, selection, setSelection, medsComplete, setMedsComplete }) {
+export function MedicinePicker({ kb, selection, setSelection, medsComplete, setMedsComplete, showComplete = true }) {
   const [q, setQ] = useState('')
   const [open, setOpen] = useState(false)
   const [hi, setHi] = useState(0)
@@ -84,10 +84,10 @@ export function MedicinePicker({ kb, selection, setSelection, medsComplete, setM
         </ul>
       ) : <p className="mt-2.5 text-sm text-muted-foreground">Add the medicines to check, including any OTC or herbal products.</p>}
 
-      <label className="mt-3 flex cursor-pointer items-start gap-2 text-xs">
+      {showComplete && <label className="mt-3 flex cursor-pointer items-start gap-2 text-xs">
         <input id="mc-meds-complete" type="checkbox" checked={medsComplete} onChange={(e) => setMedsComplete(e.target.checked)} className="mt-0.5 h-4 w-4 accent-blue-600" />
         <span>This is the patient's <b>full</b> medicine list, including OTC and herbal products</span>
-      </label>
+      </label>}
     </section>
   )
 }

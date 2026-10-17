@@ -130,7 +130,7 @@ export default function SafetyPanel({ kb, result, selection, ctx, onFocusField, 
     <section ref={panelRef} id="mc-safety" aria-labelledby="mc-safety-h" className="scroll-mt-20 rounded-2xl border-2 border-slate-300 bg-card shadow-sm dark:border-slate-600">
       <header className="flex flex-wrap items-center justify-between gap-2 border-b px-4 py-3 sm:px-5">
         <div>
-          <h3 id="mc-safety-h" className="text-base font-bold">Combined safety assessment</h3>
+          <h3 id="mc-safety-h" className="text-base font-bold">Patient-specific check</h3>
           <p className="text-xs text-muted-foreground">{nMeds} medicine{nMeds === 1 ? '' : 's'} checked together against the patient details entered</p>
         </div>
         <button type="button" onClick={copy} disabled={!nMeds} className="inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-semibold hover:bg-muted disabled:opacity-40">
