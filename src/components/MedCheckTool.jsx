@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { ShieldPlus, LoaderCircle, Eraser, ArrowUp, UserRound, ChevronUp } from 'lucide-react'
+import { ShieldPlus, LoaderCircle, Eraser, ArrowUp, UserRound, ChevronUp, ChevronDown } from 'lucide-react'
 import { assess, LEVELS, cockcroftGault, contraindications } from '../lib/medcheck/engine.js'
 import { MedicinePicker, PatientPanel } from './medcheck/Inputs.jsx'
 import SafetyPanel from './medcheck/SafetyPanel.jsx'
@@ -32,6 +32,7 @@ export default function MedCheckTool() {
   const [patient, setPatient] = useState(EMPTY_PATIENT)
   const [panelVisible, setPanelVisible] = useState(true)
   const [resetN, setResetN] = useState(0)
+  const [showDetails, setShowDetails] = useState(false)
   const [showPatient, setShowPatient] = useState(false) // patient details are optional and folded away by default
   const panelRef = useRef(null)
 
@@ -110,10 +111,15 @@ export default function MedCheckTool() {
         <>
           <QuickPanel result={result} contra={contra} nDistinct={new Set(selection.map((s) => s.medId)).size} nCovered={kb.medicines.length} panelRef={panelRef} />
           {showPatient && <div className="mt-4"><SafetyPanel kb={kb} result={result} selection={selection} panelRef={patientRef} onFocusField={focusField} ctx={{ medLabels, patientLine: patientLine(kb, patient) }} /></div>}
-          <h3 className="mb-2 mt-6 text-sm font-semibold text-muted-foreground">Medicine details ({selection.length})</h3>
-          <div className={`grid gap-4 ${selection.length > 1 ? 'lg:grid-cols-2 2xl:grid-cols-3' : 'max-w-3xl'}`}>
-            {selection.map((s) => <MedicineCard key={s.key} kb={kb} entry={s} findings={result.findings} patient={patient} onRemove={() => setSelection((all) => all.filter((x) => x.key !== s.key))} />)}
-          </div>
+          <button type="button" id="mc-show-details" onClick={() => setShowDetails((x) => !x)} aria-expanded={showDetails}
+            className="mt-4 inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-xs font-semibold text-muted-foreground hover:bg-muted hover:text-foreground">
+            <ChevronDown className={`h-3.5 w-3.5 transition-transform ${showDetails ? 'rotate-180' : ''}`} />{showDetails ? 'Hide' : 'Show'} full medicine details (dose, cautions, monitoring)
+          </button>
+          {showDetails && (
+            <div className={`mt-3 grid gap-4 ${selection.length > 1 ? 'lg:grid-cols-2 2xl:grid-cols-3' : 'max-w-3xl'}`}>
+              {selection.map((s) => <MedicineCard key={s.key} kb={kb} entry={s} findings={result.findings} patient={patient} onRemove={() => setSelection((all) => all.filter((x) => x.key !== s.key))} />)}
+            </div>
+          )}
         </>
       ) : (
         <p className="rounded-2xl border border-dashed p-6 text-center text-sm text-muted-foreground">Add medicines to see how they interact and when each one must not be given.</p>

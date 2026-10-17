@@ -1,11 +1,10 @@
-import { useState } from 'react'
-import { ChevronDown, OctagonX, ArrowLeftRight } from 'lucide-react'
+import { OctagonX, TriangleAlert, CircleCheck } from 'lucide-react'
 import { LevelBadge, sourceShort } from './common.jsx'
 
-// At-a-glance panel shown by default (no patient details needed):
-// 1) interactions / duplicates between the medicines entered, 2) for each medicine, when it must not be given.
-const KIND_LABEL = { condition: 'Condition', pregnancy: 'Pregnancy', breastfeeding: 'Breastfeeding', renal: 'Kidney', hepatic: 'Liver', age: 'Age', allergy: 'Allergy' }
-const clean = (s) => s.replace(/\s*\(source gives no numeric threshold\)/i, '').replace(/\s*\(any severity; source gives no numeric threshold\)/i, '')
+// One box, shown by default (no patient details needed):
+//  title  = which medicines interact + the conditions in which a medicine must not be given
+//  below  = each interacting pair with what the interaction is and the action, in one line each.
+const clean = (s) => s.replace(/\s*\((any severity; )?source gives no numeric threshold\)/i, '')
 
 function Refs({ sources }) {
   return (
@@ -18,78 +17,67 @@ function Refs({ sources }) {
   )
 }
 
-function CiList({ items }) {
-  return (
-    <ul className="space-y-1">
-      {items.map((c) => (
-        <li key={c.scope} className="flex gap-2 text-[13px] leading-snug">
-          <span className="w-24 shrink-0 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">{KIND_LABEL[c.kind]}</span>
-          <span className="min-w-0">{clean(c.scope)}<Refs sources={c.sources} /></span>
-        </li>
-      ))}
-    </ul>
-  )
-}
-
-function MedBlock({ m }) {
-  const [more, setMore] = useState(false)
-  return (
-    <div className="rounded-xl border p-3">
-      <p className="mb-1.5 text-sm font-bold">{m.label}</p>
-      {m.contraindicated.length ? (
-        <>
-          <p className="mb-1 flex items-center gap-1 text-[11px] font-bold uppercase tracking-wide text-red-700 dark:text-red-300"><OctagonX className="h-3.5 w-3.5" aria-hidden="true" />Do not give (contraindicated)</p>
-          <CiList items={m.contraindicated} />
-        </>
-      ) : <p className="text-[13px] text-muted-foreground">No contraindication listed in the UK sources used.</p>}
-      {m.avoid.length > 0 && (
-        <div className="mt-2">
-          <button type="button" onClick={() => setMore((x) => !x)} aria-expanded={more} className="inline-flex items-center gap-1 text-xs font-semibold text-orange-800 dark:text-orange-300">
-            <ChevronDown className={`h-3.5 w-3.5 transition-transform ${more ? 'rotate-180' : ''}`} />Avoid / not recommended ({m.avoid.length})
-          </button>
-          {more && <div className="mt-1.5"><CiList items={m.avoid} /></div>}
-        </div>
-      )}
-    </div>
-  )
+// short label for a contraindication; allergy to the medicine itself is left out (obvious)
+function ciText(c, medName) {
+  if (c.kind === 'allergy' && c.scope.replace('Allergy to ', '').toLowerCase().startsWith(medName.toLowerCase().split(' ')[0])) return null
+  let s = clean(c.scope)
+  if (/^[A-Z][a-z]/.test(s)) s = s[0].toLowerCase() + s.slice(1) // "Active bleeding" -> "active bleeding" (keeps G6PD, QT)
+  return c.kind === 'pregnancy' ? s.replace('pregnancy, trimester', 'pregnancy (trimester').replace(/(\d)$/, '$1)') : s
 }
 
 export default function QuickPanel({ result, contra, nDistinct, nCovered, panelRef }) {
   const pairs = result.findings.filter((f) => f.kind === 'interaction' || f.kind === 'duplication')
-  return (
-    <section ref={panelRef} id="mc-quick" aria-labelledby="mc-quick-h" className="scroll-mt-20 rounded-2xl border-2 border-slate-300 bg-card shadow-sm dark:border-slate-600">
-      <div className="space-y-5 px-4 py-4 sm:px-5">
-        <div>
-          <h3 id="mc-quick-h" className="mb-2 flex items-center gap-1.5 text-base font-bold"><ArrowLeftRight className="h-4 w-4" aria-hidden="true" />Interactions</h3>
-          {nDistinct < 2 ? <p className="text-sm text-muted-foreground">Add another medicine to check interactions.</p>
-            : pairs.length === 0 ? <p className="text-sm text-muted-foreground">No interaction found between these medicines in the UK sources used.</p>
-            : (
-              <ul className="divide-y rounded-xl border">
-                {pairs.map((f) => {
-                  const s = f.statements[0]
-                  const sources = f.statements.flatMap((x) => x.sources).filter((x, i, a) => x.url && a.findIndex((y) => y.id === x.id) === i)
-                  return (
-                    <li key={f.key} className="flex flex-col gap-1 px-3 py-2.5 sm:flex-row sm:items-start sm:gap-3">
-                      <LevelBadge level={f.level} className="self-start" />
-                      <div className="min-w-0 flex-1 text-[13px] leading-snug">
-                        <p><b>{f.meds.join(' + ')}</b><span className="text-muted-foreground"> · {f.kind === 'duplication' ? f.concern : f.concern.replace(/^Interaction:\s*/, '')}</span></p>
-                        <p className="mt-0.5">{s.action}<Refs sources={sources} /></p>
-                      </div>
-                    </li>
-                  )
-                })}
-              </ul>
-            )}
-        </div>
+  const serious = pairs.filter((f) => ['contraindicated', 'avoid'].includes(f.level))
+  const ci = contra.map((m) => ({ ...m, lines: m.contraindicated.map((c) => ({ ...c, text: ciText(c, m.label) })).filter((c) => c.text) })).filter((m) => m.lines.length)
 
-        <div>
-          <h3 className="mb-2 flex items-center gap-1.5 text-base font-bold"><OctagonX className="h-4 w-4 text-red-600" aria-hidden="true" />When not to give</h3>
-          <div className="grid gap-3 md:grid-cols-2">
-            {contra.map((m) => <MedBlock key={m.key} m={m} />)}
+  return (
+    <section ref={panelRef} id="mc-quick" aria-labelledby="mc-quick-h" className="scroll-mt-20 overflow-hidden rounded-2xl border-2 border-slate-300 bg-card shadow-sm dark:border-slate-600">
+      {/* title: the answer in one look */}
+      <header className={`border-b px-4 py-3 sm:px-5 ${pairs.length ? (serious.length ? 'bg-red-50 dark:bg-red-950/30' : 'bg-amber-50 dark:bg-amber-950/20') : 'bg-muted/40'}`}>
+        <h3 id="mc-quick-h" className="sr-only">Safety check</h3>
+        {nDistinct < 2 ? (
+          <p className="text-sm font-semibold text-muted-foreground">Add another medicine to check interactions.</p>
+        ) : pairs.length ? (
+          <ul className="space-y-1">
+            {pairs.map((f) => (
+              <li key={f.key} className="flex flex-wrap items-center gap-2 text-[15px] font-bold leading-snug">
+                <TriangleAlert className="h-4 w-4 shrink-0 text-red-700 dark:text-red-300" aria-hidden="true" />
+                <span>{f.meds.join(' + ')}</span>
+                <LevelBadge level={f.level} size="xs" />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="flex items-center gap-2 text-[15px] font-bold"><CircleCheck className="h-4 w-4 text-emerald-600" aria-hidden="true" />No interaction found between these medicines</p>
+        )}
+        {ci.length > 0 && (
+          <div className="mt-2 space-y-1">
+            {ci.map((m) => (
+              <p key={m.key} className="flex gap-2 text-[13px] leading-snug">
+                <OctagonX className="mt-0.5 h-4 w-4 shrink-0 text-red-600" aria-hidden="true" />
+                <span><b>{m.label}</b>: do not give in {m.lines.map((c, i) => <span key={c.scope}>{i ? ', ' : ''}{c.text}<Refs sources={c.sources.slice(0, 1)} /></span>)}</span>
+              </p>
+            ))}
           </div>
-        </div>
-        <p className="text-[11px] text-muted-foreground">UK sources only (SmPC, MHRA, NICE, SPS, BUMPS). BNF not accessed. Only the {nCovered} medicines in this list are covered. Hover or tap [n] for the source.</p>
-      </div>
+        )}
+      </header>
+
+      {/* below: what each interaction is, one line each */}
+      {pairs.length > 0 && (
+        <ul className="divide-y">
+          {pairs.map((f) => {
+            const s = f.statements[0]
+            const what = f.kind === 'duplication' ? f.concern : f.concern.replace(/^Interaction:\s*/, '')
+            const sources = f.statements.flatMap((x) => x.sources).filter((x, i, a) => x.url && a.findIndex((y) => y.id === x.id) === i).slice(0, 3)
+            return (
+              <li key={f.key} className="px-4 py-2.5 text-[13px] leading-snug sm:px-5">
+                <b>{f.meds.join(' + ')}</b>: <span className="font-medium">{what}</span>. {s.action}<Refs sources={sources} />
+              </li>
+            )
+          })}
+        </ul>
+      )}
+      <p className="border-t px-4 py-2 text-[11px] text-muted-foreground sm:px-5">UK sources only (SmPC, MHRA, NICE, SPS, BUMPS); BNF not accessed. Covers the {nCovered} medicines in this list. Tap [n] for the source.</p>
     </section>
   )
 }

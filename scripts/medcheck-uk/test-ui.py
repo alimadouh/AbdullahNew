@@ -53,7 +53,9 @@ with sync_playwright() as p:
         add_med(pg, 'warfarin'); add_med(pg, 'ibuprofen')
         q = pg.inner_text('#mc-quick')
         check(f'{tag}: quick panel shows the interaction', 'Warfarin sodium + Ibuprofen' in q, q[:300])
-        check(f'{tag}: quick panel lists when not to give', 'When not to give' in q and 'Haemorrhagic stroke' in q and 'Pregnancy' in q)
+        check(f'{tag}: one box: title names the interacting pair and the do-not-give conditions', 'do not give in' in q and 'haemorrhagic stroke' in q.lower() and 'pregnancy' in q.lower())
+        check(f'{tag}: medicine tables folded away by default', pg.locator('article').count() == 0)
+        pg.click('#mc-show-details'); pg.wait_for_timeout(150)
         y_quick = pg.locator('#mc-quick').bounding_box()['y']; y_card = pg.locator('article').first.bounding_box()['y']
         check(f'{tag}: quick panel above the medicine tables', y_quick < y_card)
         pg.click('text=Clear all'); pg.wait_for_timeout(100)
