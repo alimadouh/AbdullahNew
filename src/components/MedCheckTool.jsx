@@ -70,11 +70,6 @@ export default function MedCheckTool({ dark }) {
               <div id="mc-profile"></div>
             </section>
           </div>
-
-          <footer className="foot mt-4">
-            <p><strong>Clinical decision support only.</strong> This tool doesn't replace professional judgement. It doesn't recommend substitutions, and nobody should stop or change a prescribed medicine because of it without speaking to the prescriber. "No documented interaction" means none was found in the checked sources. It doesn't guarantee that a combination is safe.</p>
-            <p id="mc-kb-info" className="meta"></p>
-          </footer>
         </div>
       )}
     </div>

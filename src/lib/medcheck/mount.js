@@ -19,7 +19,7 @@ export function mountMedCheck(root, kb) {
 
   // ---------- setup ----------
   // Demo-build banner removed (owner request)
-  $('kb-info').textContent = `Knowledge base ${kb.version} (${kb.mode}) · ${kb.rules.length} rules from ${Object.keys(kb.docs).length} source documents · built ${new Date(kb.builtAt).toLocaleDateString('en-CA')}`;
+  // Footer (disclaimer + knowledge-base line) removed (owner request)
   // Brands are also found by their verified ingredient names (searching "simvastatin" lists Zocor).
   const products = kb.products.map((p) => ({
     ...p,
