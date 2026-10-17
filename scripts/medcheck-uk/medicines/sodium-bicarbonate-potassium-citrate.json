@@ -1,0 +1,705 @@
+{
+  "id": "sodium-bicarbonate-potassium-citrate",
+  "name": "Sodium bicarbonate/potassium citrate/citric acid (urinary alkaliniser)",
+  "ingredients": [
+    "sodium-bicarbonate",
+    "potassium",
+    "citrate"
+  ],
+  "className": "Urinary alkalinising agent",
+  "groups": [
+    "potassium-supplement"
+  ],
+  "searchTerms": [
+    "potassium citrate",
+    "urinary alkaliniser",
+    "cystitis granules",
+    "sodium bicarbonate potassium citrate citric acid"
+  ],
+  "formulations": [
+    {
+      "id": "sbpc-granules",
+      "label": "Granules (sachet)",
+      "route": "oral",
+      "strengths": "UK comparator products: potassium citrate 3 g per sachet (granules); potassium citrate 1.5 g per 5 ml (oral solution)",
+      "release": "n/a",
+      "note": "The clinic product is listed as sodium bicarbonate with potassium citrate and citric acid. No UK product with this combination was found. This entry uses UK SmPCs for potassium citrate-only granules and oral solution, so it covers only the potassium citrate content (potassium load and the urine-alkalinising effect of citrate). It does NOT cover the sodium bicarbonate (sodium load) or citric acid content, and the UK products' doses, excipients and sodium statements do not apply to the clinic product. Use the clinic product label for dose and check its exact ingredients.",
+      "src": [
+        {
+          "s": "emc-13698",
+          "q": "Potassium Citrate 3.0 g"
+        },
+        {
+          "s": "emc-4922",
+          "q": "Potassium Citrate 1.5g/5ml."
+        }
+      ],
+      "sourceIds": [
+        "emc-13698",
+        "emc-4922"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Symptomatic relief of mild urinary tract infection (cystitis), including dysuria.",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "For the symptomatic relief of mild urinary tract infections (cystitis)."
+            },
+            {
+              "s": "emc-4922",
+              "q": "For the symptomatic relief of dysuria associated with mild urinary tract infections, especially cystitis."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restrictions in the two UK potassium citrate SmPCs checked."
+    },
+    "dosing": {
+      "status": "not-stated",
+      "note": "No UK SmPC for the clinic combination product. The UK potassium citrate-only products have different contents, so their doses are not given here. Use the clinic product label."
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "UK potassium citrate granules: not recommended for children under 6 years. (Applies to the UK potassium citrate-only product; no UK data for the clinic combination.)",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "Not recommended for children under six years of age."
+            }
+          ]
+        },
+        {
+          "t": "UK potassium citrate oral solution (differs): gives a dose for children from 1 year. Doses of the UK products do not apply to the clinic product.",
+          "src": [
+            {
+              "s": "emc-4922",
+              "q": "Children 1 - 6 years: 5ml."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Oral solution SmPC: hyperkalaemia, renal dysfunction, ventricular arrhythmias and Addison's disease.",
+          "src": [
+            {
+              "s": "emc-4922",
+              "q": "Contraindicated in hyperkalaemia, renal dysfunction, ventricular arrhythmics and Addison's Disease."
+            }
+          ]
+        },
+        {
+          "t": "Granules SmPC (differs): no specific contraindications, but use with caution in impaired renal function or cardiac disease.",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "There are no specific contraindications but use with caution in patients with impaired renal function or cardiac disease."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Potassium load: hyperkalaemia may occur with prolonged high dosage (UK potassium citrate granules; each UK 3 g sachet contains 27.8 mmol K+). Check the potassium content of the clinic product.",
+          "tag": "Potassium content",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "(Each Cystopurin sachet contains 27.8 mmol K+)"
+            },
+            {
+              "s": "emc-13698",
+              "q": "Hyperkalaemia may occur on prolonged high dosage."
+            }
+          ]
+        },
+        {
+          "t": "Renal or cardiac dysfunction and the elderly: use with caution.",
+          "src": [
+            {
+              "s": "emc-4922",
+              "q": "It should be used with caution when renal or cardiac dysfunction is present."
+            },
+            {
+              "s": "emc-4922",
+              "q": "Use with caution in the elderly"
+            }
+          ]
+        },
+        {
+          "t": "Symptomatic relief only, not antibacterial: co-prescribe effective antibacterial therapy (oral solution SmPC). Short-term use; see a doctor if symptoms persist after 48 hours (granules SmPC).",
+          "src": [
+            {
+              "s": "emc-4922",
+              "q": "Potassium Citrate Mixture provides symptomatic relief only and is not anti-bacterial."
+            },
+            {
+              "s": "emc-4922",
+              "q": "Effective anti-bacterial therapy should be co-prescribed."
+            },
+            {
+              "s": "emc-13698",
+              "q": "Patients should seek doctor's advice if symptoms persist after 48 hours treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Hyperkalaemia risk with potassium-sparing diuretics, ACE inhibitors, angiotensin-II receptor antagonists, other potassium-containing medicines, aliskiren, ciclosporin and tacrolimus.",
+          "tag": "Hyperkalaemia",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "Concurrent administration of the following drugs may lead to hyperkalaemia: potassium sparing diuretics, ACE inhibitors, aliskiren, angiotensin-II receptor antagonists, ciclosporin and tacrolimus."
+            },
+            {
+              "s": "emc-4922",
+              "q": "Concurrent administration of potassium-containing drugs, potassium sparing diuretics or other drugs that increase potassium levels (e.g. ACE inhibitors, ciclosporin, aliskiren) may lead to hyperkalaemia."
+            }
+          ]
+        },
+        {
+          "t": "Methenamine: avoid concomitant use (granules SmPC). Urine alkalinisation reduces the antibacterial activity of nitrofurantoin and methenamine (oral solution SmPC).",
+          "tag": "Urinary antibacterials",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "Avoid concomitant use with methenamine."
+            },
+            {
+              "s": "emc-4922",
+              "q": "Particularly noteworthy is the diminished anti-bacterial activity of nitrofurantoin and methenamine."
+            }
+          ]
+        },
+        {
+          "t": "Urine alkalinisation may increase renal clearance of acidic drugs (salicylates, tetracyclines, barbiturates) and prolong the half-life of basic drugs (sympathomimetics, stimulants).",
+          "tag": "Urine alkalinisation",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4922",
+              "q": "Citrates alkalinise the urine and thus may alter the urinary excretion of a number of drugs."
+            },
+            {
+              "s": "emc-4922",
+              "q": "This may lead to increased renal clearance of acidic drugs, such as salicylates, tetracylines and barbiturates"
+            },
+            {
+              "s": "emc-4922",
+              "q": "prolongation of the half-life of basic drugs, such as sympathomimetics and stimulants"
+            }
+          ]
+        },
+        {
+          "t": "Cardiac glycosides: possible interaction (activity depends partly on serum potassium); caution advised.",
+          "tag": "Cardiac glycosides",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "Therefore, there is a possible interaction and caution is advised."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Oral solution SmPC: contraindicated in renal dysfunction. Granules SmPC: use with caution in impaired renal function. No eGFR/CrCl threshold given.",
+          "src": [
+            {
+              "s": "emc-4922",
+              "q": "Contraindicated in hyperkalaemia, renal dysfunction, ventricular arrhythmics and Addison's Disease."
+            },
+            {
+              "s": "emc-13698",
+              "q": "There are no specific contraindications but use with caution in patients with impaired renal function or cardiac disease."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "status": "not-stated",
+      "note": "No hepatic impairment statements in the two UK potassium citrate SmPCs checked."
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Granules SmPC: no adequate evidence of safety but long use without apparent harm; use only if there is no safer alternative. Pregnant women should seek medical advice rather than self-treat cystitis.",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "If drug therapy is needed in pregnancy, this drug can be used if there is no safer alternative."
+            },
+            {
+              "s": "emc-13698",
+              "q": "pregnant women should be advised to seek medical advice on the treatment of cystitis rather than using OTC medicines"
+            }
+          ]
+        },
+        {
+          "t": "Oral solution SmPC: no adverse effects expected at recommended doses for initial symptomatic relief.",
+          "src": [
+            {
+              "s": "emc-4922",
+              "q": "No adverse effects are anticipated at recommended doses when used for initial symptomatic relief only."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Oral solution SmPC (fertility, pregnancy and lactation section): no adverse effects expected at recommended doses for initial symptomatic relief. No separate breastfeeding statement in the granules SmPC.",
+          "src": [
+            {
+              "s": "emc-4922",
+              "q": "No adverse effects are anticipated at recommended doses when used for initial symptomatic relief only."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "No fertility or contraception statements in the two UK potassium citrate SmPCs checked."
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Frequency not stated: mild diuresis; gastric irritation with mild nausea and occasional vomiting (reduce by diluting well and taking with or after meals).",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "Some patients may experience mild diuresis."
+            },
+            {
+              "s": "emc-13698",
+              "q": "Potassium salts may give rise to gastric irritation"
+            },
+            {
+              "s": "emc-4922",
+              "q": "Mild nausea and occasionally vomiting may occur due to gastric irritation."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Hyperkalaemia (prolonged high dosage or overdose). Moderate to severe hyperkalaemia is a medical emergency needing prompt correction.",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "Hyperkalaemia may occur on prolonged high dosage."
+            },
+            {
+              "s": "emc-4922",
+              "q": "Moderate to severe hyperkalaemia is a medical emergency requiring prompt correction."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Symptoms persisting after 48 hours: seek a doctor's advice.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "Patients should seek doctor's advice if symptoms persist after 48 hours treatment."
+            }
+          ]
+        },
+        {
+          "t": "Overdose: closely monitor fluid and electrolyte balance and ECG.",
+          "tag": "ongoing",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4922",
+              "q": "Fluid and electrolyte balance together with ECG should be closely monitored."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "UK potassium citrate products: take well diluted with water; taking with or after meals reduces gastric irritation.",
+          "src": [
+            {
+              "s": "emc-4922",
+              "q": "It should be taken well diluted with water, after meals."
+            },
+            {
+              "s": "emc-13698",
+              "q": "Doses may also be given with or after meals."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Short-term symptomatic treatment: see a doctor if symptoms persist after 48 hours.",
+          "src": [
+            {
+              "s": "emc-13698",
+              "q": "Intended for short term treatment."
+            },
+            {
+              "s": "emc-13698",
+              "q": "Patients should seek doctor's advice if symptoms persist after 48 hours treatment."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:condition:hyperkalaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "condition": "hyperkalaemia",
+      "concern": "Hyperkalaemia",
+      "consequence": "Potassium load worsens hyperkalaemia.",
+      "action": "Do not use (UK potassium citrate oral solution SmPC 4.3; covers the potassium citrate content).",
+      "sourceWording": "Contraindicated in hyperkalaemia",
+      "src": [
+        {
+          "s": "emc-4922",
+          "q": "Contraindicated in hyperkalaemia, renal dysfunction, ventricular arrhythmics and Addison's Disease."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:condition:renal-dysfunction",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "condition": "renal-impairment",
+      "concern": "Renal dysfunction (oral solution SmPC)",
+      "consequence": "Potassium accumulation and hyperkalaemia risk.",
+      "action": "Do not use (oral solution SmPC 4.3). The granules SmPC says use with caution instead. No eGFR/CrCl threshold given.",
+      "sourceWording": "Contraindicated in ... renal dysfunction",
+      "src": [
+        {
+          "s": "emc-4922",
+          "q": "Contraindicated in hyperkalaemia, renal dysfunction, ventricular arrhythmics and Addison's Disease."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:condition:renal-caution-granules",
+      "kind": "condition",
+      "level": "caution",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "condition": "renal-impairment",
+      "concern": "Impaired renal function (granules SmPC)",
+      "consequence": "Potassium load.",
+      "action": "Use with caution (granules SmPC). The oral solution SmPC contraindicates use in renal dysfunction.",
+      "sourceWording": "use with caution in patients with impaired renal function",
+      "src": [
+        {
+          "s": "emc-13698",
+          "q": "There are no specific contraindications but use with caution in patients with impaired renal function or cardiac disease."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:condition:ventricular-arrhythmia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "condition": "ventricular-arrhythmia",
+      "concern": "Ventricular arrhythmia",
+      "consequence": "Not stated.",
+      "action": "Do not use (UK potassium citrate oral solution SmPC 4.3; covers the potassium citrate content).",
+      "sourceWording": "Contraindicated in ... ventricular arrhythmics",
+      "src": [
+        {
+          "s": "emc-4922",
+          "q": "Contraindicated in hyperkalaemia, renal dysfunction, ventricular arrhythmics and Addison's Disease."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:condition:addisons",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "condition": "addisons-disease",
+      "concern": "Addison's disease",
+      "consequence": "Not stated.",
+      "action": "Do not use (UK potassium citrate oral solution SmPC 4.3; covers the potassium citrate content).",
+      "sourceWording": "Contraindicated in ... Addison's Disease",
+      "src": [
+        {
+          "s": "emc-4922",
+          "q": "Contraindicated in hyperkalaemia, renal dysfunction, ventricular arrhythmics and Addison's Disease."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:condition:cardiac-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "condition": "cardiac-disease",
+      "concern": "Cardiac disease or dysfunction",
+      "consequence": "Not stated.",
+      "action": "Use with caution.",
+      "sourceWording": "use with caution",
+      "src": [
+        {
+          "s": "emc-13698",
+          "q": "There are no specific contraindications but use with caution in patients with impaired renal function or cardiac disease."
+        },
+        {
+          "s": "emc-4922",
+          "q": "It should be used with caution when renal or cardiac dysfunction is present."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:age:under-6",
+      "kind": "age",
+      "level": "avoid",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "age": {
+        "maxYears": 6
+      },
+      "concern": "Child under 6 years (UK potassium citrate granules)",
+      "consequence": "Not stated.",
+      "action": "UK potassium citrate granules SmPC: not recommended under 6 years. The UK potassium citrate oral solution SmPC gives a dose for children 1-6 years. No UK data for the clinic combination product.",
+      "sourceWording": "Not recommended for children under six years of age",
+      "src": [
+        {
+          "s": "emc-13698",
+          "q": "Not recommended for children under six years of age."
+        },
+        {
+          "s": "emc-4922",
+          "q": "Children 1 - 6 years: 5ml."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:pregnancy:any",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "concern": "Pregnancy",
+      "consequence": "No adequate evidence of safety in human pregnancy.",
+      "action": "Use only if there is no safer alternative; pregnant women should get medical advice for cystitis rather than self-treat.",
+      "sourceWording": "can be used if there is no safer alternative",
+      "src": [
+        {
+          "s": "emc-13698",
+          "q": "If drug therapy is needed in pregnancy, this drug can be used if there is no safer alternative."
+        },
+        {
+          "s": "emc-13698",
+          "q": "pregnant women should be advised to seek medical advice on the treatment of cystitis rather than using OTC medicines"
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:interaction:potassium-sparing-diuretic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics: hyperkalaemia",
+      "consequence": "Concurrent use may lead to hyperkalaemia.",
+      "action": "No specific action stated; be aware of the hyperkalaemia risk.",
+      "sourceWording": "may lead to hyperkalaemia",
+      "src": [
+        {
+          "s": "emc-13698",
+          "q": "Concurrent administration of the following drugs may lead to hyperkalaemia: potassium sparing diuretics, ACE inhibitors, aliskiren, angiotensin-II receptor antagonists, ciclosporin and tacrolimus."
+        },
+        {
+          "s": "emc-4922",
+          "q": "Concurrent administration of potassium-containing drugs, potassium sparing diuretics or other drugs that increase potassium levels (e.g. ACE inhibitors, ciclosporin, aliskiren) may lead to hyperkalaemia."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "ACE inhibitors: hyperkalaemia",
+      "consequence": "Concurrent use may lead to hyperkalaemia.",
+      "action": "No specific action stated; be aware of the hyperkalaemia risk.",
+      "sourceWording": "may lead to hyperkalaemia",
+      "src": [
+        {
+          "s": "emc-13698",
+          "q": "Concurrent administration of the following drugs may lead to hyperkalaemia: potassium sparing diuretics, ACE inhibitors, aliskiren, angiotensin-II receptor antagonists, ciclosporin and tacrolimus."
+        },
+        {
+          "s": "emc-4922",
+          "q": "Concurrent administration of potassium-containing drugs, potassium sparing diuretics or other drugs that increase potassium levels (e.g. ACE inhibitors, ciclosporin, aliskiren) may lead to hyperkalaemia."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:interaction:arb",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "other": "group:arb",
+      "effect": "hyperkalaemia",
+      "concern": "Angiotensin-II receptor antagonists: hyperkalaemia",
+      "consequence": "Concurrent use may lead to hyperkalaemia.",
+      "action": "No specific action stated; be aware of the hyperkalaemia risk.",
+      "sourceWording": "may lead to hyperkalaemia",
+      "src": [
+        {
+          "s": "emc-13698",
+          "q": "Concurrent administration of the following drugs may lead to hyperkalaemia: potassium sparing diuretics, ACE inhibitors, aliskiren, angiotensin-II receptor antagonists, ciclosporin and tacrolimus."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:interaction:potassium",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "other": "group:potassium-supplement",
+      "effect": "hyperkalaemia",
+      "concern": "Other potassium-containing medicines: hyperkalaemia",
+      "consequence": "Concurrent use may lead to hyperkalaemia.",
+      "action": "No specific action stated; be aware of the hyperkalaemia risk.",
+      "sourceWording": "may lead to hyperkalaemia",
+      "src": [
+        {
+          "s": "emc-4922",
+          "q": "Concurrent administration of potassium-containing drugs, potassium sparing diuretics or other drugs that increase potassium levels (e.g. ACE inhibitors, ciclosporin, aliskiren) may lead to hyperkalaemia."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:interaction:nitrofurantoin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "other": "nitrofurantoin",
+      "concern": "Nitrofurantoin: reduced antibacterial activity",
+      "consequence": "Citrates alkalinise the urine, reducing the antibacterial activity of nitrofurantoin.",
+      "action": "No specific action stated (oral solution SmPC calls it particularly noteworthy).",
+      "sourceWording": "Particularly noteworthy is the diminished anti-bacterial activity of nitrofurantoin",
+      "src": [
+        {
+          "s": "emc-4922",
+          "q": "Citrates alkalinise the urine and thus may alter the urinary excretion of a number of drugs."
+        },
+        {
+          "s": "emc-4922",
+          "q": "Particularly noteworthy is the diminished anti-bacterial activity of nitrofurantoin and methenamine."
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:interaction:salicylate",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "other": "group:salicylate",
+      "concern": "Salicylates: increased renal clearance",
+      "consequence": "Urine alkalinisation may increase renal clearance of salicylates.",
+      "action": "No specific action stated.",
+      "sourceWording": "may lead to increased renal clearance of acidic drugs, such as salicylates",
+      "src": [
+        {
+          "s": "emc-4922",
+          "q": "Citrates alkalinise the urine and thus may alter the urinary excretion of a number of drugs."
+        },
+        {
+          "s": "emc-4922",
+          "q": "This may lead to increased renal clearance of acidic drugs, such as salicylates, tetracylines and barbiturates"
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:interaction:tetracycline",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "other": "group:tetracycline",
+      "concern": "Tetracyclines: increased renal clearance",
+      "consequence": "Urine alkalinisation may increase renal clearance of tetracyclines.",
+      "action": "No specific action stated.",
+      "sourceWording": "may lead to increased renal clearance of acidic drugs, such as ... tetracylines",
+      "src": [
+        {
+          "s": "emc-4922",
+          "q": "Citrates alkalinise the urine and thus may alter the urinary excretion of a number of drugs."
+        },
+        {
+          "s": "emc-4922",
+          "q": "This may lead to increased renal clearance of acidic drugs, such as salicylates, tetracylines and barbiturates"
+        }
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate-potassium-citrate:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sodium-bicarbonate-potassium-citrate",
+      "other": "group:sympathomimetic",
+      "concern": "Sympathomimetics: prolonged half-life",
+      "consequence": "Urine alkalinisation may prolong the half-life of basic drugs such as sympathomimetics.",
+      "action": "No specific action stated.",
+      "sourceWording": "prolongation of the half-life of basic drugs, such as sympathomimetics",
+      "src": [
+        {
+          "s": "emc-4922",
+          "q": "Citrates alkalinise the urine and thus may alter the urinary excretion of a number of drugs."
+        },
+        {
+          "s": "emc-4922",
+          "q": "prolongation of the half-life of basic drugs, such as sympathomimetics and stimulants"
+        }
+      ]
+    }
+  ]
+}

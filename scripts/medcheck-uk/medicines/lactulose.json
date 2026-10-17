@@ -1,0 +1,214 @@
+{
+  "id": "lactulose",
+  "name": "Lactulose",
+  "ingredients": ["lactulose"],
+  "className": "Osmotic laxative",
+  "groups": ["laxative"],
+  "searchTerms": ["lactulose oral solution", "lactulose syrup"],
+  "formulations": [
+    {
+      "id": "lactulose-oral-soln",
+      "label": "Oral solution",
+      "route": "oral",
+      "strengths": "3.335 g/5 ml (about 667 g/L)",
+      "release": "n/a",
+      "note": "Contains lactose, galactose and fructose, and sulphite, from the route of production.",
+      "src": [
+        { "s": "emc-5525", "q": "Lactulose 3.335g/5ml oral solution (as Lactulose, liquid 667 g/L)" },
+        { "s": "emc-5525", "q": "This product contains lactose, galactose and fructose from the route of production." },
+        { "s": "emc-5525", "q": "This product contains sulphite from the route of production." }
+      ],
+      "sourceIds": ["emc-5525"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        { "t": "Constipation.", "src": [{ "s": "emc-5525", "q": "1. For the treatment of constipation." }] },
+        { "t": "Hepatic encephalopathy (HE); hepatic coma.", "src": [{ "s": "emc-5525", "q": "2. For the treatment of hepatic encephalopathy (HE); hepatic coma." }] }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions stated in the UK SmPC. BNF not accessed." },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults and adolescents: start 15-45 ml daily, maintenance 15-30 ml daily, as a single dose or two divided doses. Adjust after a few days to response; effect may take 2-3 days.",
+          "tag": "Constipation",
+          "src": [
+            { "s": "emc-5525", "q": "Adults and adolescents 15-45 ml, corresponding to 1-3 sachets 15-30 ml, corresponding to 1-2 sachets" },
+            { "s": "emc-5525", "q": "Lactulose may be given as a single daily dose or in two divided doses." },
+            { "s": "emc-5525", "q": "Several days (2-3 days) of treatment may be needed before treatment effect occurs." }
+          ]
+        },
+        {
+          "t": "Adults: start 30-45 ml three to four times daily; adjust to a maintenance dose giving two or three soft stools each day.",
+          "tag": "Hepatic encephalopathy",
+          "src": [
+            { "s": "emc-5525", "q": "Starting dose : 3 to 4 times daily 30-45 ml (6-9 x 5 ml spoonfuls) or 2-3 sachets." },
+            { "s": "emc-5525", "q": "This dose may be adjusted to the maintenance dose to achieve two or three soft stools each day." }
+          ]
+        },
+        {
+          "t": "Elderly, renal or hepatic impairment: no special dose recommendations (negligible systemic exposure).",
+          "tag": "Special populations",
+          "detail": true,
+          "src": [{ "s": "emc-5525", "q": "Elderly patients and patients with renal or hepatic insufficiency No special dosage recommendations exist, since systemic exposure to lactulose is negligible." }]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Constipation: children 7-14 years start 15 ml daily, maintenance 10-15 ml daily; 1-6 years 5-10 ml daily; infants under 1 year up to 5 ml daily.",
+          "tag": "Constipation",
+          "src": [
+            { "s": "emc-5525", "q": "Children (7-14 years) 15 ml, corresponding to 1 sachet 10-15 ml, corresponding to 1 sachet*" },
+            { "s": "emc-5525", "q": "Children (1-6 years) 5-10 ml 5-10 ml Infants under 1 year up to 5 ml up to 5 ml" }
+          ]
+        },
+        {
+          "t": "Laxatives in children should be exceptional and under medical supervision.",
+          "src": [{ "s": "emc-5525", "q": "Use of laxatives in children should be exceptional and under medical supervision." }]
+        },
+        {
+          "t": "Hepatic encephalopathy: safety and efficacy not established in children (newborn to 18 years).",
+          "tag": "Hepatic encephalopathy",
+          "detail": true,
+          "src": [{ "s": "emc-5525", "q": "The safety and efficacy in children (newborn to 18 years of age) with HE have not been established." }]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        { "t": "Hypersensitivity to lactulose or any excipient.", "src": [{ "s": "emc-5525", "q": "4.3 Contraindications Hypersensitivity to the active substance or any of the excipients listed in section 6.1." }] },
+        { "t": "Galactosaemia.", "src": [{ "s": "emc-5525", "q": "Galactosaemia." }] },
+        { "t": "Gastrointestinal obstruction, perforation or risk of perforation.", "src": [{ "s": "emc-5525", "q": "Gastro-intestinal obstruction, -perforation or risk of perforation." }] }
+      ]
+    },
+    "cautions": {
+      "items": [
+        { "t": "Evaluate painful abdominal symptoms of unknown cause before starting, to exclude perforation or obstruction.", "src": [{ "s": "emc-5525", "q": "Painful abdominal symptoms of undetermined cause should be evaluated to exclude undiagnosed perforation or obstruction" }] },
+        { "t": "Chronic use of unadjusted doses and misuse can cause diarrhoea and electrolyte disturbance.", "src": [{ "s": "emc-5525", "q": "Chronic use of unadjusted doses and misuse can lead to diarrhoea and disturbance of the electrolyte balance." }] },
+        { "t": "Diabetes: constipation doses should not be a problem; the higher HE doses may need to be taken into account.", "src": [{ "s": "emc-5525", "q": "The dose normally used in constipation should not pose a problem for diabetics." }, { "s": "emc-5525", "q": "The dose used in the treatment of HE is usually much higher and may need to be taken into consideration for diabetics." }] },
+        { "t": "Rare hereditary galactose or fructose intolerance, total lactase deficiency or glucose-galactose malabsorption: should not take. Lactose intolerance: give with care.", "src": [{ "s": "emc-5525", "q": "patients with rare hereditary problems of galactose or fructose intolerance, the total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }, { "s": "emc-5525", "q": "Lactulose should be administered with care to patients who are intolerant to lactose." }] },
+        { "t": "If not effective after several days, reconsider the dose and/or other measures.", "detail": true, "src": [{ "s": "emc-5525", "q": "In case of insufficient therapeutic effect after several days the dose and/or additional measures should be re-considered." }] }
+      ]
+    },
+    "interactions": { "status": "not-stated", "note": "UK SmPC 4.5: no interaction studies have been performed; no interactions listed." },
+    "renal": {
+      "items": [{ "t": "No dose adjustment; systemic exposure is negligible.", "src": [{ "s": "emc-5525", "q": "Elderly patients and patients with renal or hepatic insufficiency No special dosage recommendations exist, since systemic exposure to lactulose is negligible." }] }]
+    },
+    "hepatic": {
+      "items": [{ "t": "No dose adjustment; systemic exposure is negligible. Used to treat hepatic encephalopathy.", "src": [{ "s": "emc-5525", "q": "Elderly patients and patients with renal or hepatic insufficiency No special dosage recommendations exist, since systemic exposure to lactulose is negligible." }] }]
+    },
+    "pregnancy": {
+      "items": [
+        { "t": "Can be used in pregnancy (negligible systemic exposure).", "tag": "SmPC", "src": [{ "s": "emc-5525", "q": "Duphalac can be used during pregnancy." }] },
+        { "t": "BUMPS: if diet and lifestyle changes fail, a laxative can be used in pregnancy; osmotic laxatives such as lactulose are not absorbed and will not reach the baby.", "tag": "BUMPS", "src": [{ "s": "bumps-constipation", "q": "If changes to lifestyle and diet have not worked to treat constipation, a laxative can be taken in pregnancy if recommended by a pharmacist, midwife, or doctor." }, { "s": "bumps-constipation", "q": "They are not absorbed into the body and therefore will not reach the baby." }] }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        { "t": "Can be used during breastfeeding.", "tag": "SmPC", "src": [{ "s": "emc-5525", "q": "Duphalac can be used during breast-feeding." }] },
+        { "t": "SPS: can be used during breastfeeding; as a precaution monitor the infant for diarrhoea, vomiting or irritability.", "tag": "SPS", "src": [{ "s": "sps-laxatives-breastfeeding", "q": "Lactulose can be used during breastfeeding." }, { "s": "sps-laxatives-breastfeeding", "q": "As a precaution monitor the infant for diarrhoea, vomiting or irritability." }] }
+      ]
+    },
+    "reproductive": {
+      "items": [{ "t": "No effects on fertility expected (negligible systemic exposure).", "src": [{ "s": "emc-5525", "q": "Fertility No effects are to be expected, since systemic exposure to lactulose is negligible." }] }]
+    },
+    "adverseCommon": {
+      "items": [
+        { "t": "Very common: diarrhoea. Common: flatulence, abdominal pain, nausea, vomiting.", "src": [{ "s": "emc-5525", "q": "Gastrointestinal disorders Diarrhoea Flatulence, abdominal pain, nausea, vomiting" }] },
+        { "t": "Flatulence in the first few days usually settles after a couple of days.", "detail": true, "src": [{ "s": "emc-5525", "q": "Flatulence may occur during the first few days of treatment. As a rule it disappears after a couple of days." }] }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        { "t": "Abdominal pain and diarrhoea at higher than instructed doses: reduce the dose.", "src": [{ "s": "emc-5525", "q": "When dosages higher than instructed are used, abdominal pain and diarrhoea may occur. In such a case the dosage should be decreased." }] },
+        { "t": "Long-term high doses (usually in HE) can cause electrolyte imbalance from diarrhoea: adjust dose to two or three formed stools per day.", "src": [{ "s": "emc-5525", "q": "If high doses (normally only associated with hepatic encephalopathy, HE) are used for an extended period of time, the patient may experience an electrolyte imbalance due to diarrhoea." }, { "s": "emc-5525", "q": "Dosage should then be adjusted to obtain two or three formed stools per day." }] },
+        { "t": "Hypersensitivity reactions (rash, pruritus, urticaria) reported (frequency not known).", "detail": true, "src": [{ "s": "emc-5525", "q": "Immune system disorders Hypersensitvity reactions" }] }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        { "t": "Long-term high-dose use: watch for diarrhoea and electrolyte imbalance; adjust dose to two or three formed stools per day.", "tag": "ongoing", "src": [{ "s": "emc-5525", "q": "Dosage should then be adjusted to obtain two or three formed stools per day." }] }
+      ]
+    },
+    "administration": {
+      "items": [
+        { "t": "Can be taken diluted or undiluted, with water or fruit juice. Swallow each dose at once; do not keep it in the mouth.", "src": [{ "s": "emc-5525", "q": "Each dose may if necessary be taken with water or fruit juices, etc." }, { "s": "emc-5525", "q": "Each dose of lactulose should be swallowed in one and should not be kept in the mouth for an extended period of time." }] },
+        { "t": "Single daily dose: take at the same time each day, e.g. at breakfast.", "src": [{ "s": "emc-5525", "q": "In case of single daily dose, this should be taken at the same time, e.g. during breakfast." }] }
+      ]
+    },
+    "counselling": {
+      "items": [
+        { "t": "Drink enough fluid (1.5-2 litres a day) while taking laxatives.", "src": [{ "s": "emc-5525", "q": "During the therapy with laxatives it is recommended to drink sufficient amounts of fluids (1.5-2 litres, equal to 6-8 glasses) during the day." }] },
+        { "t": "It can take 2-3 days to work.", "src": [{ "s": "emc-5525", "q": "Several days (2-3 days) of treatment may be needed before treatment effect occurs." }] }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "lactulose:allergy:own", "kind": "allergy", "level": "contraindicated", "med": "lactulose", "allergen": ["lactulose"],
+      "concern": "Lactulose hypersensitivity", "consequence": "Hypersensitivity reaction.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-5525", "q": "4.3 Contraindications Hypersensitivity to the active substance or any of the excipients listed in section 6.1." }]
+    },
+    {
+      "id": "lactulose:condition:galactosaemia", "kind": "condition", "level": "contraindicated", "med": "lactulose", "condition": "galactosaemia",
+      "concern": "Galactosaemia", "consequence": "Listed as a contraindication (product contains galactose).", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications ... Galactosaemia",
+      "src": [{ "s": "emc-5525", "q": "Galactosaemia." }, { "s": "emc-5525", "q": "This product contains lactose, galactose and fructose from the route of production." }]
+    },
+    {
+      "id": "lactulose:condition:gi-obstruction", "kind": "condition", "level": "contraindicated", "med": "lactulose", "condition": "paralytic-ileus-gi-obstruction",
+      "concern": "Gastrointestinal obstruction", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications ... Gastro-intestinal obstruction",
+      "src": [{ "s": "emc-5525", "q": "Gastro-intestinal obstruction, -perforation or risk of perforation." }]
+    },
+    {
+      "id": "lactulose:condition:gi-perforation", "kind": "condition", "level": "contraindicated", "med": "lactulose", "condition": "gi-perforation-risk",
+      "concern": "GI perforation or risk of perforation", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications ... -perforation or risk of perforation",
+      "src": [{ "s": "emc-5525", "q": "Gastro-intestinal obstruction, -perforation or risk of perforation." }]
+    },
+    {
+      "id": "lactulose:condition:galactose-intolerance", "kind": "condition", "level": "avoid", "med": "lactulose", "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption", "consequence": "Product contains lactose and galactose.", "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-5525", "q": "patients with rare hereditary problems of galactose or fructose intolerance, the total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }]
+    },
+    {
+      "id": "lactulose:condition:fructose-intolerance", "kind": "condition", "level": "avoid", "med": "lactulose", "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance", "consequence": "Product contains fructose.", "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-5525", "q": "patients with rare hereditary problems of galactose or fructose intolerance, the total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }]
+    },
+    {
+      "id": "lactulose:condition:diabetes", "kind": "condition", "level": "info", "med": "lactulose", "condition": "diabetes",
+      "concern": "Diabetes (high doses for hepatic encephalopathy)", "consequence": "Constipation doses should not pose a problem; the much higher HE doses may need to be taken into account.", "action": "Take HE dosing into consideration in diabetes.",
+      "sourceWording": "may need to be taken into consideration for diabetics",
+      "src": [{ "s": "emc-5525", "q": "The dose used in the treatment of HE is usually much higher and may need to be taken into consideration for diabetics." }]
+    },
+    {
+      "id": "lactulose:age:children", "kind": "age", "level": "caution", "med": "lactulose", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Laxative use in a child", "consequence": "Laxatives in children should be exceptional.", "action": "Use only exceptionally and under medical supervision.",
+      "sourceWording": "should be exceptional and under medical supervision",
+      "src": [{ "s": "emc-5525", "q": "Use of laxatives in children should be exceptional and under medical supervision." }]
+    },
+    {
+      "id": "lactulose:pregnancy", "kind": "pregnancy", "level": "info", "med": "lactulose",
+      "concern": "Pregnancy", "consequence": "No effects anticipated (negligible systemic exposure).", "action": "Can be used during pregnancy.",
+      "sourceWording": "can be used during pregnancy",
+      "src": [{ "s": "emc-5525", "q": "Duphalac can be used during pregnancy." }]
+    },
+    {
+      "id": "lactulose:breastfeeding", "kind": "breastfeeding", "level": "info", "med": "lactulose",
+      "concern": "Breastfeeding", "consequence": "No effects on the breastfed infant anticipated.", "action": "Can be used during breastfeeding (SPS: as a precaution monitor the infant for diarrhoea, vomiting or irritability).",
+      "sourceWording": "can be used during breast-feeding",
+      "src": [{ "s": "emc-5525", "q": "Duphalac can be used during breast-feeding." }, { "s": "sps-laxatives-breastfeeding", "q": "Lactulose can be used during breastfeeding." }]
+    }
+  ]
+}

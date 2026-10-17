@@ -1,0 +1,451 @@
+{
+  "id": "fluoxetine",
+  "name": "Fluoxetine",
+  "ingredients": ["fluoxetine"],
+  "className": "Selective serotonin reuptake inhibitor (SSRI)",
+  "groups": ["ssri", "serotonergic", "cyp2d6-inhibitor", "cyp2c19-inhibitor"],
+  "searchTerms": ["fluoxetine", "fluoxetine hydrochloride"],
+  "formulations": [
+    {
+      "id": "fluoxetine-cap",
+      "label": "Hard capsules",
+      "route": "oral",
+      "strengths": "20 mg (only this SmPC used)",
+      "release": "immediate",
+      "note": "Capsules are for adults only; the paediatric starting dose uses the oral liquid. Capsule and oral solution are bioequivalent.",
+      "src": [
+        { "s": "emc-11909", "q": "Each capsule contains fluoxetine hydrochloride equivalent to 20mg fluoxetine." },
+        { "s": "emc-11909", "q": "Fluoxetine capsules are meant for oral administration in adults only." },
+        { "s": "emc-11909", "q": "The capsule and oral solution forms are bioequivalent." }
+      ],
+      "sourceIds": ["emc-11909"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Adults: major depressive episodes; obsessive-compulsive disorder; bulimia nervosa (with psychotherapy). Children and adolescents 8 years and over: moderate to severe major depressive episode not responding to 4 to 6 sessions of psychological therapy (given with psychological therapy).",
+        "src": [
+          { "s": "emc-11909", "q": "Adults: Major depressive disorders/episodes. Obsessive-compulsive disorder. Bulimia nervosa" },
+          { "s": "emc-11909", "q": "Moderate to severe major depressive episode, if depression is unresponsive to psychological therapy after 4-6 sessions." }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Children 8 to 18 years: depression only, started and monitored under specialist supervision, with concurrent psychological therapy.",
+        "src": [
+          { "s": "emc-11909", "q": "Treatment should be initiated and monitored under specialist supervision." },
+          { "s": "emc-11909", "q": "should only be used in children and adolescents aged 8 to 18 years for the treatment of moderate to severe major depressive episodes and it should not be used in other indications" }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "20 mg daily; review within 3 to 4 weeks. If response is insufficient, increase gradually up to 60 mg daily. Treat at least 6 months.", "tag": "Depression, adults and elderly",
+        "src": [
+          { "s": "emc-11909", "q": "A dose of 20 mg/day is recommended. Dosage should be reviewed and adjusted if necessary, within 3 to 4 weeks of initiation of therapy" },
+          { "s": "emc-11909", "q": "the dose may be increased gradually up to a maximum of 60mg" },
+          { "s": "emc-11909", "q": "Patients with depression should be treated for a sufficient period of at least 6 months to ensure that they are free from symptoms." }
+        ] },
+      { "t": "20 mg daily; if response is insufficient after 2 weeks, increase gradually up to 60 mg. Reconsider if no improvement within 10 weeks.", "tag": "OCD, adults and elderly",
+        "src": [
+          { "s": "emc-11909", "q": "Obsessive-compulsive disorder Adults and the elderly: The recommended dose is 20mg daily." },
+          { "s": "emc-11909", "q": "If no improvement is observed within 10 weeks, treatment with fluoxetine should be reconsidered." }
+        ] },
+      { "t": "60 mg daily.", "tag": "Bulimia nervosa, adults and elderly",
+        "src": [{ "s": "emc-11909", "q": "Bulimia nervosa Adults and the elderly: A dose of 60 mg/day is recommended." }] },
+      { "t": "Elderly: caution when increasing; usually not more than 40 mg daily (maximum 60 mg daily).", "tag": "Elderly",
+        "src": [{ "s": "emc-11909", "q": "Caution is recommended when increasing the dose, and the daily dose should generally not exceed 40mg. Maximum recommended dose is 60mg/day." }] },
+      { "t": "Hepatic impairment or interacting medicines: consider a lower or less frequent dose (e.g. 20 mg every second day).", "tag": "Hepatic impairment / interactions",
+        "src": [{ "s": "emc-11909", "q": "A lower or less frequent dose (eg, 20mg every second day) should be considered in patients with hepatic impairment" }] },
+      { "t": "Stopping: avoid abrupt withdrawal; reduce gradually over at least 1 to 2 weeks. The drug persists in the body for weeks after stopping.", "tag": "Stopping",
+        "src": [
+          { "s": "emc-11909", "q": "When stopping treatment with FLUOXETINE the dose should be gradually reduced over a period of at least one to two weeks in order to reduce the risk of withdrawal reactions" },
+          { "s": "emc-11909", "q": "When dosing is stopped, active drug substances will persist in the body for weeks." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "8 years and over (moderate to severe depression): start 10 mg/day as 2.5 ml of the liquid; after 1 to 2 weeks may increase to 20 mg/day. Lower-weight children may need lower doses. Review need after 6 months; reconsider if no benefit within 9 weeks.",
+        "src": [
+          { "s": "emc-11909", "q": "The starting dose is 10mg/day given as 2.5ml of the FLUOXETINE liquid formulation." },
+          { "s": "emc-11909", "q": "After one to two weeks, the dose may be increased to 20mg/day." },
+          { "s": "emc-11909", "q": "If no clinical benefit is achieved within 9 weeks, treatment should be reconsidered." }
+        ] },
+      { "t": "Monitor growth and puberty (height, weight, Tanner stage) during and after treatment; monitor for mania/hypomania and suicidal symptoms.",
+        "src": [
+          { "s": "emc-11909", "q": "Growth and pubertal development (height, weight, and TANNER staging) should therefore be monitored during and after treatment with fluoxetine." },
+          { "s": "emc-11909", "q": "regular monitoring for the occurrence of mania/hypomania is recommended" }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to fluoxetine or any excipient.", "src": [{ "s": "emc-11909", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+      { "t": "Irreversible non-selective MAOIs (e.g. iproniazid): start fluoxetine 2 weeks after stopping one; wait at least 5 weeks after fluoxetine before starting one.",
+        "src": [
+          { "s": "emc-11909", "q": "Fluoxetine is contra-indicated in combination with irreversible, non-selective monoamine oxidase inhibitors (e.g. iproniazid)" },
+          { "s": "emc-11909", "q": "at least 5 weeks should elapse after discontinuing fluoxetine treatment before starting an irreversible, non-selective MAOI" }
+        ] },
+      { "t": "Metoprolol used in heart failure (excess bradycardia).",
+        "src": [{ "s": "emc-11909", "q": "Fluoxetine is contra-indicated in combination with metoprolol used in cardiac failure" }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Seizures: introduce cautiously if history of seizures; avoid in unstable epilepsy; monitor controlled epilepsy carefully; stop if seizures develop or increase.",
+        "src": [
+          { "s": "emc-11909", "q": "fluoxetine should be introduced cautiously in patients who have a history of seizures" },
+          { "s": "emc-11909", "q": "Fluoxetine should be avoided in patients with unstable seizure disorders/epilepsy and patients with controlled epilepsy should be carefully monitored" }
+        ] },
+      { "t": "QT prolongation and torsade de pointes reported: use with caution in congenital long QT, family history, hypokalaemia, hypomagnesaemia, bradycardia, acute MI, uncompensated heart failure, hepatic impairment or with QT-prolonging drugs. Stable cardiac disease: consider ECG review before starting.",
+        "src": [
+          { "s": "emc-11909", "q": "Fluoxetine should be used with caution in patients with conditions such as congenital long QT syndrome, a family history of QT prolongation or other clinical conditions that predispose to arrhythmias" },
+          { "s": "emc-11909", "q": "If patients with stable cardiac disease are treated, an ECG review should be considered before treatment is started." }
+        ] },
+      { "t": "Bleeding: caution with oral anticoagulants, antiplatelets (aspirin), NSAIDs and in bleeding disorders. SSRIs may increase postpartum haemorrhage.",
+        "src": [
+          { "s": "emc-11909", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with oral anticoagulants, drugs known to affect platelet function" },
+          { "s": "emc-11909", "q": "SSRIs/SNRIs may increase the risk of postpartum haemorrhage" }
+        ] },
+      { "t": "Rash or allergic reactions with no other cause: stop fluoxetine (serious systemic reactions reported).",
+        "src": [{ "s": "emc-11909", "q": "Upon the appearance of rash or of other allergic phenomena for which an alternative aetiology cannot be identified, fluoxetine should be discontinued." }] },
+      { "t": "Suicidal thoughts/behaviour: close supervision early and after dose changes, especially under 25 years.",
+        "src": [{ "s": "emc-11909", "q": "Close supervision of patients and in particular those at high risk should accompany drug therapy especially in early treatment and following dose changes." }] },
+      { "t": "Mania history: use with caution; stop if manic. Diabetes: hypoglycaemia on treatment, hyperglycaemia after stopping; adjust antidiabetic doses.",
+        "src": [
+          { "s": "emc-11909", "q": "Antidepressants should be used with caution in patients with a history of mania/hypomania." },
+          { "s": "emc-11909", "q": "Hypoglycaemia has been reported during therapy with fluoxetine and hyperglycaemia has developed following discontinuation." }
+        ] },
+      { "t": "Serotonin syndrome or NMS-like events (with other serotonergic or neuroleptic drugs): stop fluoxetine and give supportive care.",
+        "src": [{ "s": "emc-11909", "q": "treatment with fluoxetine should be discontinued if such events" }] },
+      { "t": "Raised intraocular pressure or risk of narrow-angle glaucoma: caution (mydriasis). Acute cardiac disease: caution.",
+        "src": [
+          { "s": "emc-11909", "q": "caution should be used when prescribing fluoxetine in patients with raised intraocular pressure or those at risk of acute narrow-angle glaucoma" },
+          { "s": "emc-11909", "q": "Clinical experience in acute cardiac disease is limited, therefore caution is advisable." }
+        ] },
+      { "t": "Akathisia in first weeks; withdrawal symptoms (common); ECT may prolong seizures; sexual dysfunction that may persist after stopping; weight loss.", "detail": true,
+        "src": [
+          { "s": "emc-11909", "q": "There have been rare reports of prolonged seizures in patients on fluoxetine receiving ECT treatment; therefore, caution is advisable." },
+          { "s": "emc-11909", "q": "There have been reports of long-lasting sexual dysfunction where the symptoms have continued despite discontinuation of SSRIs/SNRI." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Long half-lives of fluoxetine and norfluoxetine: interactions may occur for weeks after stopping (e.g. when switching antidepressants).",
+        "src": [{ "s": "emc-11909", "q": "The long elimination half-lives of both fluoxetine and norfluoxetine should be borne in mind" }] },
+      { "t": "Contraindicated: irreversible non-selective MAOIs; metoprolol in heart failure. Not recommended: tamoxifen (avoid whenever possible), alcohol, linezolid or methylene blue (if unavoidable, close monitoring and low starting doses), mequitazine.",
+        "src": [
+          { "s": "emc-11909", "q": "co-administration with potent CYP2D6 inhibitors (including fluoxetine) should whenever possible be avoided" },
+          { "s": "emc-11909", "q": "close clinical monitoring should be undertaken and the concomitant agents should be initiated at the lower recommended doses" }
+        ] },
+      { "t": "Serotonergic drugs (lithium, tramadol, triptans, tryptophan, selegiline, St John's wort): caution with closer, more frequent monitoring. The St John's wort herbal SPC says do not take it with SSRIs.",
+        "src": [
+          { "s": "emc-11909", "q": "the concomitant use of fluoxetine with these drugs should be undertaken with caution, with closer and more frequent clinical monitoring" },
+          { "s": "mhra-thr-13668-0014", "q": "SSRIs e.g. Citalopram Escitalopram Fluoxetine Fluvoxamine Paroxetine Sertraline" }
+        ] },
+      { "t": "QT-prolonging drugs (class IA/III antiarrhythmics, antipsychotics, TCAs, some antimicrobials such as moxifloxacin): use with caution.",
+        "src": [{ "s": "emc-11909", "q": "anti-malaria treatment particularly halofantrine, certain antihistamines (astemizole, mizolastine), should be used with caution" }] },
+      { "t": "Oral anticoagulants, antiplatelets including aspirin, NSAIDs: increased bleeding; clinical monitoring and more frequent INR checks with oral anticoagulants.",
+        "src": [{ "s": "emc-11909", "q": "Clinical monitoring, and more frequent monitoring of INR with oral anticoagulants, should be made." }] },
+      { "t": "CYP2D6 substrates with narrow therapeutic index or titrated (flecainide, propafenone, nebivolol, atomoxetine, carbamazepine, TCAs, risperidone): start at or adjust to the low end of the dose range (also if fluoxetine taken in the last 5 weeks).",
+        "src": [
+          { "s": "emc-11909", "q": "They should be initiated at or adjusted to the low end of their dose range. This may also apply if fluoxetine has been taken in the previous 5 weeks." }
+        ] },
+      { "t": "Phenytoin: level changes, sometimes toxicity; titrate conservatively and monitor. Drugs causing hyponatraemia (diuretics, desmopressin, carbamazepine) and drugs lowering the seizure threshold (TCAs, other SSRIs, tramadol, bupropion) increase risk.", "detail": true,
+        "src": [
+          { "s": "emc-11909", "q": "Use in combination with other agents associated with hyponatremia (e.g. diuretics, desmopressin, carbamazepine and oxcarbazepine) may lead to an increased risk" },
+          { "s": "emc-11909", "q": "Use in combination with other agents which may lower the seizure threshold (for example, TCAs, other SSRIs, phenothiazines, butyrophenones, mefloquine, chloroquine, bupropion, tramadol) may lead to an increased risk." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Severe renal failure on dialysis (GFR <10 ml/min): no difference in plasma levels at 20 mg/day for 2 months. Steady-state levels may rise with repeated dosing.",
+        "src": [
+          { "s": "emc-11909", "q": "patients with severe renal failure (GFR <10ml/min) requiring dialysis showed no difference in plasma levels of fluoxetine or norfluoxetine compared to controls with normal renal function" },
+          { "s": "emc-11909", "q": "However, after repeated administration, an increase in steady-state plateau of plasma concentrations may be observed." }
+        ] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Hepatic impairment: consider a lower or less frequent dose (e.g. 20 mg every second day). Half-lives longer in cirrhosis (7 and 12 days).",
+        "src": [
+          { "s": "emc-11909", "q": "A lower dose, e.g., alternate day dosing, is recommended in patients with significant hepatic dysfunction" },
+          { "s": "emc-11909", "q": "fluoxetine and norfluoxetine half-lives are increased to 7 and 12 days, respectively" }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: should not be used unless the woman's condition requires it and justifies the risk to the fetus. Avoid abrupt stopping in pregnancy.",
+        "src": [
+          { "s": "emc-11909", "q": "Fluoxetine should not be used during pregnancy unless the clinical condition of the woman requires treatment with fluoxetine and justifies the potential risk to the foetus." },
+          { "s": "emc-11909", "q": "Abrupt discontinuation of therapy should be avoided during pregnancy" }
+        ] },
+      { "t": "First trimester: possible small increased risk of cardiovascular defects (about 2/100 vs 1/100). MHRA: weigh this against the benefits of treating depression.", "tag": "First trimester",
+        "src": [
+          { "s": "emc-11909", "q": "the risk of having an infant with a cardiovascular defect following maternal fluoxetine exposure is in the region of 2/100 compared with an expected rate for such defects of approximately 1/100" },
+          { "s": "mhra-dsu-fluoxetine-cardiac-defects", "q": "The potential increased risk should be considered in the context of the benefits of treating depression in pregnancy." }
+        ] },
+      { "t": "Late pregnancy: caution; neonatal irritability, tremor, hypotonia, crying, sucking or sleeping problems; PPHN about 5 per 1000; postpartum haemorrhage risk under 2-fold after use in the month before birth.", "tag": "Third trimester",
+        "src": [
+          { "s": "emc-11909", "q": "caution should be exercised, especially during late pregnancy or just prior to the onset of labour" },
+          { "s": "emc-11909", "q": "The observed risk was approximately 5 cases per 1000 pregnancies." },
+          { "s": "emc-11909", "q": "Observational data indicate an increased risk (less than 2-fold) of postpartum haemorrhage following SSRI/SNRI exposure within the month prior to birth" }
+        ] },
+      { "t": "BUMPS: SSRIs are commonly taken in pregnancy without problems; most babies have normal hearts; if well controlled it may be best to stay on fluoxetine. Do not stop without advice. Hospital delivery usually advised.",
+        "src": [
+          { "s": "bumps-fluoxetine", "q": "SSRIs are commonly taken during pregnancy without any problem." },
+          { "s": "bumps-fluoxetine", "q": "If a woman's condition is well-controlled with fluoxetine, it may be best to stay on it rather than try something new and risk a relapse." },
+          { "s": "bumps-fluoxetine", "q": "Women taking an SSRI in pregnancy will usually be advised to have a hospital delivery." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: fluoxetine and norfluoxetine pass into milk; infant adverse events reported. If treatment is needed, consider stopping breastfeeding; if breastfeeding continues, use the lowest effective dose.",
+        "src": [
+          { "s": "emc-11909", "q": "Adverse events have been reported in breast-feeding infants." },
+          { "s": "emc-11909", "q": "If treatment with fluoxetine is considered necessary, discontinuation of breast-feeding should be considered; however, if breast-feeding is continued, the lowest effective dose of fluoxetine should be prescribed." }
+        ] },
+      { "t": "SPS: can be used with caution (long experience), but sertraline or paroxetine are preferred. Monitor the infant for irritability, restlessness, drowsiness, colic, GI upset, poor feeding and weight gain.",
+        "src": [
+          { "s": "sps-ssri-bf", "q": "Fluoxetine can be used with caution. It has been used during breastfeeding for many years, but sertraline or paroxetine are preferred." },
+          { "s": "sps-ssri-bf", "q": "As a precaution, monitor for irritability, restlessness, drowsiness, colic, gastro-intestinal disturbances, poor feeding, and adequate weight-gain." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Animal data: may affect sperm quality; human SSRI reports show it is reversible. Sexual dysfunction may continue after stopping (MHRA 2026 lists fluoxetine).",
+        "src": [
+          { "s": "emc-11909", "q": "Human case reports with some SSRIs have shown that an effect on sperm quality is reversible." },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "Citalopram, escitalopram, duloxetine, fluvoxamine, fluoxetine, paroxetine, sertraline, venlafaxine, amitriptyline, nortriptyline" }
+        ] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Most common: headache, nausea, insomnia, fatigue, diarrhoea; often lessen with continued treatment.",
+        "src": [
+          { "s": "emc-11909", "q": "The most commonly reported adverse reactions in patients treated with fluoxetine were headache, nausea, insomnia, fatigue and diarrhoea." },
+          { "s": "emc-11909", "q": "Undesirable effects may decrease in intensity and frequency with continued treatment and do not generally lead to cessation of therapy." }
+        ] },
+      { "t": "Withdrawal symptoms on stopping are common (dizziness, sensory disturbance, sleep problems, agitation, nausea, tremor, headache).",
+        "src": [{ "s": "emc-11909", "q": "Discontinuation of fluoxetine commonly leads to withdrawal symptoms." }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Serotonin syndrome or NMS-like events (hyperthermia, rigidity, myoclonus, confusion): potentially life-threatening; stop and treat.",
+        "src": [{ "s": "emc-11909", "q": "As these syndromes may result in potentially life-threatening conditions, treatment with fluoxetine should be discontinued" }] },
+      { "t": "Rash or allergic reaction (including anaphylactoid and serious systemic events): stop if no other cause.",
+        "src": [{ "s": "emc-11909", "q": "Rash, anaphylactoid events and progressive systemic events, sometimes serious (involving skin, kidney, liver or lung) have been reported." }] },
+      { "t": "Signs of cardiac arrhythmia: stop and perform an ECG.",
+        "src": [{ "s": "emc-11909", "q": "If signs of cardiac arrhythmia occur during treatment with fluoxetine, the treatment should be withdrawn and an ECG should be performed." }] },
+      { "t": "New or worse suicidal thoughts: seek urgent medical attention (MHRA 2026). Abnormal bleeding including GI bleeding.",
+        "src": [
+          { "s": "mhra-dsu-antidepressants-2026", "q": "if you have new or worsening suicidal thoughts, particularly when starting or changing dose of antidepressants, seek urgent medical attention" },
+          { "s": "emc-11909", "q": "gynaecological haemorrhages, gastro-intestinal bleedings and other cutaneous or mucous bleedings" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Stable cardiac disease: consider ECG review before starting. When starting or changing dose: discuss suicide risk and sexual dysfunction (MHRA 2026).", "tag": "baseline",
+        "src": [
+          { "s": "emc-11909", "q": "If patients with stable cardiac disease are treated, an ECG review should be considered before treatment is started." },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "discuss with patients when starting or changing the dose of an antidepressant or at their next review, the risk of suicidal thoughts and behaviours" }
+        ] },
+      { "t": "Monitor for suicidality early and after dose changes; INR more often with oral anticoagulants; children: growth and puberty, mania.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-11909", "q": "patients should be closely monitored until such improvement occurs" },
+          { "s": "emc-11909", "q": "Clinical monitoring, and more frequent monitoring of INR with oral anticoagulants, should be made." },
+          { "s": "emc-11909", "q": "Growth and pubertal development (height, weight, and TANNER staging) should therefore be monitored during and after treatment with fluoxetine." }
+        ] },
+      { "t": "Stop if: seizures (or more frequent), manic phase, unexplained rash/allergy, serotonin syndrome, signs of arrhythmia.", "tag": "stop",
+        "src": [
+          { "s": "emc-11909", "q": "Treatment should be discontinued in any patient who develops seizures or where there is an increase in seizure frequency." },
+          { "s": "emc-11909", "q": "fluoxetine should be discontinued in any patient entering a manic phase" }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Single or divided dose, with or between meals.",
+        "src": [{ "s": "emc-11909", "q": "Fluoxetine may be administered as a single or divided dose, during or between meals." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Do not drive or use machines until sure performance is not affected. Avoid alcohol.",
+        "src": [
+          { "s": "emc-11909", "q": "Patients should be advised to avoid driving a car or operating hazardous machinery until they are reasonably certain that their performance is not affected." },
+          { "s": "emc-11909", "q": "the combination of SSRI treatment and alcohol is not advisable" }
+        ] },
+      { "t": "Seek urgent help for new or worse suicidal thoughts (NHS 111, crisis team, Samaritans 116 123). Sexual problems may continue after stopping. Do not stop without advice.",
+        "src": [
+          { "s": "mhra-dsu-antidepressants-2026", "q": "You can call NHS 111, or your local mental health crisis team, Samaritans on 116 123" },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "do not stop taking your medicine without first speaking to your healthcare professional" }
+        ] }
+    ] }
+  },
+  "rules": [
+    { "id": "fluoxetine:allergy:fluoxetine", "kind": "allergy", "level": "contraindicated", "med": "fluoxetine", "allergen": ["fluoxetine"],
+      "concern": "Hypersensitivity to fluoxetine", "consequence": "Hypersensitivity reaction (rash, anaphylactoid and serious systemic events reported).", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-11909", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+    { "id": "fluoxetine:interaction:maoi", "kind": "interaction", "level": "contraindicated", "med": "fluoxetine", "other": "group:maoi", "effect": "serotonin-syndrome",
+      "concern": "Fluoxetine + irreversible non-selective MAOI", "consequence": "Serious, sometimes fatal serotonin-syndrome-like reactions.", "action": "Do not combine. Start fluoxetine 2 weeks after stopping the MAOI; wait at least 5 weeks after fluoxetine before an MAOI. Linezolid/methylene blue (MAO-A): not recommended; if unavoidable, close monitoring and low starting doses.", "sourceWording": "is contra-indicated",
+      "src": [
+        { "s": "emc-11909", "q": "Fluoxetine is contra-indicated in combination with irreversible, non-selective monoamine oxidase inhibitors (e.g. iproniazid)" },
+        { "s": "emc-11909", "q": "at least 5 weeks should elapse after discontinuing fluoxetine treatment before starting an irreversible, non-selective MAOI" }
+      ] },
+    { "id": "fluoxetine:age:lt8", "kind": "age", "level": "avoid", "med": "fluoxetine", "age": { "minYears": 0, "maxYears": 8 },
+      "concern": "Child under 8 years", "consequence": "Licensed in children only from 8 years (depression).", "action": "Should only be used from 8 years of age.", "sourceWording": "should only be used in children and adolescents aged 8 to 18 years",
+      "src": [{ "s": "emc-11909", "q": "should only be used in children and adolescents aged 8 to 18 years for the treatment of moderate to severe major depressive episodes and it should not be used in other indications" }] },
+    { "id": "fluoxetine:age:8-18", "kind": "age", "level": "caution", "med": "fluoxetine", "age": { "minYears": 8, "maxYears": 18 },
+      "concern": "Child or adolescent 8 to 17 years", "consequence": "More suicidal behaviour and hostility with antidepressants; slower growth; mania commonly reported.", "action": "Only for moderate to severe depression under specialist supervision with psychological therapy; start 10 mg (liquid); monitor suicidality, growth, puberty and mania.", "sourceWording": "should not be used in other indications",
+      "src": [
+        { "s": "emc-11909", "q": "should only be used in children and adolescents aged 8 to 18 years for the treatment of moderate to severe major depressive episodes and it should not be used in other indications" },
+        { "s": "emc-11909", "q": "Treatment should be initiated and monitored under specialist supervision." },
+        { "s": "emc-11909", "q": "Growth and pubertal development (height, weight, and TANNER staging) should therefore be monitored during and after treatment with fluoxetine." }
+      ] },
+    { "id": "fluoxetine:age:elderly", "kind": "age", "level": "dose", "med": "fluoxetine", "age": { "minYears": 65 },
+      "concern": "Elderly (the SmPC says \"elderly\"; 65 years used as the trigger)", "consequence": "Higher doses need care in older people.", "action": "Caution when increasing the dose; the daily dose should generally not exceed 40 mg (maximum 60 mg/day).", "sourceWording": "the daily dose should generally not exceed 40mg",
+      "src": [{ "s": "emc-11909", "q": "Caution is recommended when increasing the dose, and the daily dose should generally not exceed 40mg. Maximum recommended dose is 60mg/day." }] },
+    { "id": "fluoxetine:hepatic:any", "kind": "hepatic", "level": "dose", "med": "fluoxetine", "hepatic": ["mild", "moderate", "severe"],
+      "concern": "Hepatic impairment", "consequence": "Longer half-lives (cirrhosis: 7 and 12 days); higher exposure.", "action": "Consider a lower or less frequent dose (e.g. 20 mg every second day).", "sourceWording": "A lower or less frequent dose ... should be considered",
+      "src": [
+        { "s": "emc-11909", "q": "A lower or less frequent dose (eg, 20mg every second day) should be considered in patients with hepatic impairment" },
+        { "s": "emc-11909", "q": "A lower dose, e.g., alternate day dosing, is recommended in patients with significant hepatic dysfunction" }
+      ] },
+    { "id": "fluoxetine:condition:unstable-epilepsy", "kind": "condition", "level": "avoid", "med": "fluoxetine", "condition": "uncontrolled-epilepsy", "effect": "seizure-threshold",
+      "concern": "Unstable seizure disorder / epilepsy", "consequence": "Seizures are a potential risk with antidepressants.", "action": "Avoid.", "sourceWording": "Fluoxetine should be avoided in patients with unstable seizure disorders/epilepsy",
+      "src": [{ "s": "emc-11909", "q": "Fluoxetine should be avoided in patients with unstable seizure disorders/epilepsy and patients with controlled epilepsy should be carefully monitored" }] },
+    { "id": "fluoxetine:condition:epilepsy", "kind": "condition", "level": "monitor", "med": "fluoxetine", "condition": "epilepsy", "effect": "seizure-threshold",
+      "concern": "History of seizures / controlled epilepsy", "consequence": "Seizures are a potential risk.", "action": "Introduce cautiously and monitor carefully; stop if seizures develop or increase.", "sourceWording": "should be carefully monitored",
+      "src": [
+        { "s": "emc-11909", "q": "fluoxetine should be introduced cautiously in patients who have a history of seizures" },
+        { "s": "emc-11909", "q": "Fluoxetine should be avoided in patients with unstable seizure disorders/epilepsy and patients with controlled epilepsy should be carefully monitored" }
+      ] },
+    { "id": "fluoxetine:condition:bipolar", "kind": "condition", "level": "caution", "med": "fluoxetine", "condition": "bipolar-mania",
+      "concern": "History of mania/hypomania", "consequence": "Mania may emerge.", "action": "Use with caution; stop if a manic phase starts.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-11909", "q": "Antidepressants should be used with caution in patients with a history of mania/hypomania." },
+        { "s": "emc-11909", "q": "fluoxetine should be discontinued in any patient entering a manic phase" }
+      ] },
+    { "id": "fluoxetine:condition:suicidality", "kind": "condition", "level": "monitor", "med": "fluoxetine", "condition": "depression-suicidality",
+      "concern": "History of suicide-related events or significant suicidal ideation", "consequence": "Greater risk of suicidal thoughts or attempts (also higher under 25 years).", "action": "Careful monitoring, especially early in treatment and after dose changes.", "sourceWording": "should receive careful monitoring during treatment",
+      "src": [{ "s": "emc-11909", "q": "are known to be at greater risk of suicidal thoughts or suicide attempts, and should receive careful monitoring during treatment" }] },
+    { "id": "fluoxetine:condition:diabetes", "kind": "condition", "level": "info", "med": "fluoxetine", "condition": "diabetes", "effect": "hypoglycaemia",
+      "concern": "Diabetes", "consequence": "Hypoglycaemia during treatment; hyperglycaemia after stopping.", "action": "Insulin/oral hypoglycaemic dose may need adjustment.", "sourceWording": "may need to be adjusted",
+      "src": [
+        { "s": "emc-11909", "q": "Hypoglycaemia has been reported during therapy with fluoxetine and hyperglycaemia has developed following discontinuation." },
+        { "s": "emc-11909", "q": "In such situations, the dosage of insulin and/or oral hypoglycaemic agents may need to be adjusted." }
+      ] },
+    { "id": "fluoxetine:condition:long-qt", "kind": "condition", "level": "caution", "med": "fluoxetine", "condition": "qt-prolongation", "effect": "qt-prolongation",
+      "concern": "Congenital long QT syndrome or family history of QT prolongation", "consequence": "QT prolongation and ventricular arrhythmia (torsade de pointes) reported.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-11909", "q": "Fluoxetine should be used with caution in patients with conditions such as congenital long QT syndrome, a family history of QT prolongation or other clinical conditions that predispose to arrhythmias" }] },
+    { "id": "fluoxetine:condition:bradycardia", "kind": "condition", "level": "caution", "med": "fluoxetine", "condition": "bradycardia", "effect": "qt-prolongation",
+      "concern": "Bradycardia", "consequence": "Predisposes to arrhythmia.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-11909", "q": "hypokalaemia, hypomagnesemia, bradycardia, acute myocardial infarction or uncompensated heart failure" }] },
+    { "id": "fluoxetine:condition:hypokalaemia", "kind": "condition", "level": "caution", "med": "fluoxetine", "condition": "hypokalaemia", "effect": "qt-prolongation",
+      "concern": "Hypokalaemia", "consequence": "Predisposes to arrhythmia.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-11909", "q": "hypokalaemia, hypomagnesemia, bradycardia, acute myocardial infarction or uncompensated heart failure" }] },
+    { "id": "fluoxetine:condition:hypomagnesaemia", "kind": "condition", "level": "caution", "med": "fluoxetine", "condition": "hypomagnesaemia", "effect": "qt-prolongation",
+      "concern": "Hypomagnesaemia", "consequence": "Predisposes to arrhythmia.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-11909", "q": "hypokalaemia, hypomagnesemia, bradycardia, acute myocardial infarction or uncompensated heart failure" }] },
+    { "id": "fluoxetine:condition:recent-mi", "kind": "condition", "level": "caution", "med": "fluoxetine", "condition": "recent-myocardial-infarction", "effect": "qt-prolongation",
+      "concern": "Acute myocardial infarction", "consequence": "Predisposes to arrhythmia; limited experience in acute cardiac disease.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-11909", "q": "hypokalaemia, hypomagnesemia, bradycardia, acute myocardial infarction or uncompensated heart failure" },
+        { "s": "emc-11909", "q": "Clinical experience in acute cardiac disease is limited, therefore caution is advisable." }
+      ] },
+    { "id": "fluoxetine:condition:heart-failure", "kind": "condition", "level": "caution", "med": "fluoxetine", "condition": "uncontrolled-heart-failure", "effect": "qt-prolongation",
+      "concern": "Uncompensated heart failure", "consequence": "Predisposes to arrhythmia.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-11909", "q": "hypokalaemia, hypomagnesemia, bradycardia, acute myocardial infarction or uncompensated heart failure" }] },
+    { "id": "fluoxetine:condition:cardiac-disease", "kind": "condition", "level": "monitor", "med": "fluoxetine", "condition": "cardiac-disease",
+      "concern": "Stable cardiac disease", "consequence": "QT/arrhythmia risk.", "action": "Consider an ECG review before starting.", "sourceWording": "an ECG review should be considered",
+      "src": [{ "s": "emc-11909", "q": "If patients with stable cardiac disease are treated, an ECG review should be considered before treatment is started." }] },
+    { "id": "fluoxetine:condition:bleeding", "kind": "condition", "level": "caution", "med": "fluoxetine", "condition": "bleeding-disorder", "effect": "bleeding",
+      "concern": "History of bleeding disorders", "consequence": "SSRIs can cause bleeding abnormalities.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [{ "s": "emc-11909", "q": "or other drugs that may increase risk of bleeding, as well as in patients with a history of bleeding disorders" }] },
+    { "id": "fluoxetine:condition:glaucoma", "kind": "condition", "level": "caution", "med": "fluoxetine", "condition": "angle-closure-glaucoma",
+      "concern": "Raised intraocular pressure or risk of acute narrow-angle glaucoma", "consequence": "Mydriasis reported.", "action": "Caution.", "sourceWording": "caution should be used",
+      "src": [{ "s": "emc-11909", "q": "caution should be used when prescribing fluoxetine in patients with raised intraocular pressure or those at risk of acute narrow-angle glaucoma" }] },
+    { "id": "fluoxetine:pregnancy:smpc", "kind": "pregnancy", "level": "avoid", "med": "fluoxetine",
+      "concern": "Pregnancy (SmPC)", "consequence": "Possible small increase in cardiovascular defects (first trimester); neonatal effects and PPHN with late use.", "action": "SmPC: should not be used unless the woman's condition requires it and justifies the risk; avoid abrupt stopping. BUMPS advice differs (see separate statement).", "sourceWording": "should not be used during pregnancy unless",
+      "src": [
+        { "s": "emc-11909", "q": "Fluoxetine should not be used during pregnancy unless the clinical condition of the woman requires treatment with fluoxetine and justifies the potential risk to the foetus." },
+        { "s": "emc-11909", "q": "Abrupt discontinuation of therapy should be avoided during pregnancy" }
+      ] },
+    { "id": "fluoxetine:pregnancy:t1", "kind": "pregnancy", "level": "info", "med": "fluoxetine", "trimesters": [1],
+      "concern": "First trimester", "consequence": "Possible small increased risk of congenital cardiac defects (about 2/100 vs 1/100 background).", "action": "MHRA: consider the potential risk against the benefits of treating depression.", "sourceWording": "may be a small increased risk of congenital cardiac defects",
+      "src": [
+        { "s": "mhra-dsu-fluoxetine-cardiac-defects", "q": "prescribers should be aware that there may be a small increased risk of congenital cardiac defects in infants exposed in early pregnancy" },
+        { "s": "mhra-dsu-fluoxetine-cardiac-defects", "q": "The potential increased risk should be considered in the context of the benefits of treating depression in pregnancy." }
+      ] },
+    { "id": "fluoxetine:pregnancy:late", "kind": "pregnancy", "level": "caution", "med": "fluoxetine", "trimesters": [3], "effect": "bleeding",
+      "concern": "Late pregnancy / before labour", "consequence": "Neonatal serotonergic or withdrawal symptoms; PPHN (about 5 per 1000); postpartum haemorrhage risk (less than 2-fold).", "action": "Caution, especially in late pregnancy; MHRA: consider individual bleeding/thrombotic risk factors.", "sourceWording": "caution should be exercised, especially during late pregnancy",
+      "src": [
+        { "s": "emc-11909", "q": "caution should be exercised, especially during late pregnancy or just prior to the onset of labour" },
+        { "s": "emc-11909", "q": "Observational data indicate an increased risk (less than 2-fold) of postpartum haemorrhage following SSRI/SNRI exposure within the month prior to birth" },
+        { "s": "mhra-dsu-ssri-pph", "q": "consider the findings of the review in the context of individual patient risk factors for bleeding or thrombotic events" }
+      ] },
+    { "id": "fluoxetine:pregnancy:bumps", "kind": "pregnancy", "level": "info", "med": "fluoxetine",
+      "concern": "Pregnancy (BUMPS)", "consequence": "SSRIs are commonly taken in pregnancy without problems; stopping risks relapse and withdrawal.", "action": "BUMPS: if well controlled it may be best to stay on fluoxetine; do not stop without speaking to the midwife, GP or specialist.", "sourceWording": "SSRIs are commonly taken during pregnancy without any problem",
+      "src": [
+        { "s": "bumps-fluoxetine", "q": "SSRIs are commonly taken during pregnancy without any problem." },
+        { "s": "bumps-fluoxetine", "q": "Women should not stop taking fluoxetine without first speaking to their midwife, GP or specialist." }
+      ] },
+    { "id": "fluoxetine:breastfeeding:smpc", "kind": "breastfeeding", "level": "caution", "med": "fluoxetine",
+      "concern": "Breastfeeding (SmPC)", "consequence": "Excreted in milk; infant adverse events reported.", "action": "Consider stopping breastfeeding; if it continues, use the lowest effective dose.", "sourceWording": "discontinuation of breast-feeding should be considered",
+      "src": [
+        { "s": "emc-11909", "q": "Adverse events have been reported in breast-feeding infants." },
+        { "s": "emc-11909", "q": "If treatment with fluoxetine is considered necessary, discontinuation of breast-feeding should be considered; however, if breast-feeding is continued, the lowest effective dose of fluoxetine should be prescribed." }
+      ] },
+    { "id": "fluoxetine:breastfeeding:sps", "kind": "breastfeeding", "level": "caution", "med": "fluoxetine",
+      "concern": "Breastfeeding (SPS)", "consequence": "Variable amounts in milk; long half-life.", "action": "SPS: use with caution (sertraline or paroxetine preferred); monitor infant for irritability, restlessness, drowsiness, colic, GI upset, feeding and weight gain.", "sourceWording": "Fluoxetine can be used with caution",
+      "src": [
+        { "s": "sps-ssri-bf", "q": "Fluoxetine can be used with caution. It has been used during breastfeeding for many years, but sertraline or paroxetine are preferred." },
+        { "s": "sps-ssri-bf", "q": "As a precaution, monitor for irritability, restlessness, drowsiness, colic, gastro-intestinal disturbances, poor feeding, and adequate weight-gain." }
+      ] },
+    { "id": "fluoxetine:interaction:serotonergic", "kind": "interaction", "level": "caution", "med": "fluoxetine", "other": "group:serotonergic", "effect": "serotonin-syndrome",
+      "concern": "Fluoxetine + other serotonergic medicine (e.g. tramadol, triptans, other antidepressants)", "consequence": "Serotonin syndrome (potentially life-threatening); tramadol and TCAs also lower the seizure threshold.", "action": "Use with caution with closer and more frequent clinical monitoring.", "sourceWording": "should be undertaken with caution, with closer and more frequent clinical monitoring",
+      "src": [
+        { "s": "emc-11909", "q": "Serotoninergic drugs (lithium, tramadol, triptans, tryptophan, selegiline (MAOI-B), St. John's Wort (Hypericum perforatum))" },
+        { "s": "emc-11909", "q": "the concomitant use of fluoxetine with these drugs should be undertaken with caution, with closer and more frequent clinical monitoring" }
+      ] },
+    { "id": "fluoxetine:interaction:st-johns-wort", "kind": "interaction", "level": "avoid", "med": "fluoxetine", "other": "st-johns-wort", "effect": "serotonin-syndrome",
+      "concern": "Fluoxetine + St John's wort", "consequence": "Increased serotonergic effects such as serotonin syndrome.", "action": "St John's wort SPC: do not take together (fluoxetine SmPC: caution with closer monitoring).", "sourceWording": "Do not take with this product",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "SSRIs e.g. Citalopram Escitalopram Fluoxetine Fluvoxamine Paroxetine Sertraline" },
+        { "s": "mhra-thr-13668-0014", "q": "Increased serotonergic effects Do not take with this product." },
+        { "s": "emc-11909", "q": "An increase in serotonergic effects, such as serotonin syndrome, may occur when selective serotonin reuptake inhibitors and herbal preparations containing St John's Wort" }
+      ] },
+    { "id": "fluoxetine:interaction:qt", "kind": "interaction", "level": "caution", "med": "fluoxetine", "other": "group:qt-prolonging", "effect": "qt-prolongation",
+      "concern": "Fluoxetine + QT-prolonging medicine", "consequence": "Additive QT effect cannot be excluded.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-11909", "q": "An additive effect of fluoxetine and these medicinal products cannot be excluded." },
+        { "s": "emc-11909", "q": "anti-malaria treatment particularly halofantrine, certain antihistamines (astemizole, mizolastine), should be used with caution" }
+      ] },
+    { "id": "fluoxetine:interaction:anticoagulant", "kind": "interaction", "level": "caution", "med": "fluoxetine", "other": "group:anticoagulant", "effect": "bleeding",
+      "concern": "Fluoxetine + oral anticoagulant (e.g. warfarin)", "consequence": "Increased bleeding risk; INR may change.", "action": "Caution; clinical monitoring and more frequent INR checks; dose adjustment may be needed during and after fluoxetine.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-11909", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with oral anticoagulants" },
+        { "s": "emc-11909", "q": "Clinical monitoring, and more frequent monitoring of INR with oral anticoagulants, should be made." },
+        { "s": "emc-11909", "q": "A dose adjustment during the fluoxetine treatment and after its discontinuation may be suitable" }
+      ] },
+    { "id": "fluoxetine:interaction:antiplatelet", "kind": "interaction", "level": "caution", "med": "fluoxetine", "other": "group:antiplatelet", "effect": "bleeding",
+      "concern": "Fluoxetine + antiplatelet", "consequence": "Increased bleeding risk.", "action": "Caution; clinical monitoring.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-11909", "q": "Drugs affecting haemostasis (oral anticoagulants, whatever their mechanism, platelets antiaggregants including aspirin and NSAIDs) : risk of increased bleeding." },
+        { "s": "emc-11909", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with oral anticoagulants, drugs known to affect platelet function" }
+      ] },
+    { "id": "fluoxetine:interaction:aspirin", "kind": "interaction", "level": "caution", "med": "fluoxetine", "other": "aspirin", "effect": "bleeding",
+      "concern": "Fluoxetine + aspirin", "consequence": "Increased bleeding risk.", "action": "Caution; clinical monitoring.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-11909", "q": "Drugs affecting haemostasis (oral anticoagulants, whatever their mechanism, platelets antiaggregants including aspirin and NSAIDs) : risk of increased bleeding." },
+        { "s": "emc-11909", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with oral anticoagulants, drugs known to affect platelet function" }
+      ] },
+    { "id": "fluoxetine:interaction:nsaid", "kind": "interaction", "level": "caution", "med": "fluoxetine", "other": "group:nsaid", "effect": "bleeding",
+      "concern": "Fluoxetine + NSAID", "consequence": "Increased bleeding risk.", "action": "Caution; clinical monitoring.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-11909", "q": "Drugs affecting haemostasis (oral anticoagulants, whatever their mechanism, platelets antiaggregants including aspirin and NSAIDs) : risk of increased bleeding." },
+        { "s": "emc-11909", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with oral anticoagulants, drugs known to affect platelet function" }
+      ] },
+    { "id": "fluoxetine:interaction:tca", "kind": "interaction", "level": "dose", "med": "fluoxetine", "other": "group:tricyclic-antidepressant",
+      "concern": "Fluoxetine + tricyclic antidepressant (CYP2D6 substrate)", "consequence": "Raised TCA levels (strong CYP2D6 inhibition); additive serotonergic, seizure and QT effects.", "action": "Start the TCA at, or adjust it to, the low end of its dose range (also if fluoxetine was taken in the last 5 weeks).", "sourceWording": "should be initiated at or adjusted to the low end of their dose range",
+      "src": [
+        { "s": "emc-11909", "q": "but also with atomoxetine, carbamazepine, tricyclic antidepressants and risperidone" },
+        { "s": "emc-11909", "q": "They should be initiated at or adjusted to the low end of their dose range. This may also apply if fluoxetine has been taken in the previous 5 weeks." }
+      ] },
+    { "id": "fluoxetine:interaction:carbamazepine", "kind": "interaction", "level": "dose", "med": "fluoxetine", "other": "carbamazepine", "effect": "hyponatraemia",
+      "concern": "Fluoxetine + carbamazepine", "consequence": "Raised carbamazepine levels (CYP2D6 inhibition); higher hyponatraemia risk.", "action": "Start carbamazepine at, or adjust it to, the low end of its dose range.", "sourceWording": "should be initiated at or adjusted to the low end of their dose range",
+      "src": [
+        { "s": "emc-11909", "q": "but also with atomoxetine, carbamazepine, tricyclic antidepressants and risperidone" },
+        { "s": "emc-11909", "q": "They should be initiated at or adjusted to the low end of their dose range." },
+        { "s": "emc-11909", "q": "Use in combination with other agents associated with hyponatremia (e.g. diuretics, desmopressin, carbamazepine and oxcarbazepine) may lead to an increased risk" }
+      ] },
+    { "id": "fluoxetine:interaction:diuretic", "kind": "interaction", "level": "info", "med": "fluoxetine", "other": "group:diuretic", "effect": "hyponatraemia",
+      "concern": "Fluoxetine + diuretic", "consequence": "Increased risk of hyponatraemia.", "action": "No specific action stated; be alert to hyponatraemia.", "sourceWording": "may lead to an increased risk",
+      "src": [{ "s": "emc-11909", "q": "Use in combination with other agents associated with hyponatremia (e.g. diuretics, desmopressin, carbamazepine and oxcarbazepine) may lead to an increased risk" }] },
+    { "id": "fluoxetine:interaction:desmopressin", "kind": "interaction", "level": "info", "med": "fluoxetine", "other": "desmopressin", "effect": "hyponatraemia",
+      "concern": "Fluoxetine + desmopressin", "consequence": "Increased risk of hyponatraemia.", "action": "No specific action stated; be alert to hyponatraemia.", "sourceWording": "may lead to an increased risk",
+      "src": [{ "s": "emc-11909", "q": "Use in combination with other agents associated with hyponatremia (e.g. diuretics, desmopressin, carbamazepine and oxcarbazepine) may lead to an increased risk" }] }
+  ]
+}

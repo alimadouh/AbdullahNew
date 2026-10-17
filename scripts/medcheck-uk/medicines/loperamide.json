@@ -1,0 +1,306 @@
+{
+  "id": "loperamide",
+  "name": "Loperamide hydrochloride",
+  "ingredients": ["loperamide"],
+  "className": "Antipropulsive antidiarrhoeal (peripherally acting opioid)",
+  "groups": ["antipropulsive"],
+  "searchTerms": ["loperamide", "loperamide HCl"],
+  "formulations": [
+    {
+      "id": "loperamide-cap",
+      "label": "Capsules 2 mg (pharmacy/general sale licence)",
+      "route": "oral",
+      "strengths": "2 mg",
+      "release": "immediate",
+      "note": "This UK SmPC: 12 years and over, maximum 12 mg a day. Contains lactose.",
+      "src": [
+        { "s": "emc-558", "q": "Each capsule contains 2 mg Loperamide hydrochloride." },
+        { "s": "emc-558", "q": "The maximum daily dose should not exceed 6 capsules (12 mg)." }
+      ],
+      "sourceIds": ["emc-558"]
+    },
+    {
+      "id": "loperamide-cap-pom",
+      "label": "Capsules 2 mg (prescription-only licence)",
+      "route": "oral",
+      "strengths": "2 mg",
+      "release": "immediate",
+      "note": "This UK SmPC: also chronic diarrhoea in adults and acute diarrhoea from 9 years; maximum 16 mg a day. Contains lactose (109 mg per capsule).",
+      "src": [
+        { "s": "emc-13499", "q": "Each capsule contains 2mg loperamide hydrochloride." },
+        { "s": "emc-13499", "q": "The total daily dose should not exceed 8 capsules (16 mg)." },
+        { "s": "emc-13499", "q": "Each capsule contains 109.00 mg lactose monohydrate." }
+      ],
+      "sourceIds": ["emc-13499"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        { "t": "Symptomatic treatment of acute diarrhoea (12 years and over); acute episodes of diarrhoea with irritable bowel syndrome in adults 18 and over after initial diagnosis by a doctor.", "formulations": ["loperamide-cap"], "src": [{ "s": "emc-558", "q": "For the symptomatic treatment of acute diarrhoea in adults and children aged 12 years and over." }, { "s": "emc-558", "q": "For the symptomatic treatment of acute episodes of diarrhoea associated with Irritable Bowel Syndrome in adults aged 18 years and over following initial diagnosis by a doctor." }] },
+        { "t": "Symptomatic treatment of acute diarrhoea (including acute exacerbations of chronic diarrhoea) for up to 5 days in adults and children over 9 years; chronic diarrhoea in adults.", "formulations": ["loperamide-cap-pom"], "src": [{ "s": "emc-13499", "q": "For the symptomatic treatment of acute diarrhoea of any aetiology including acute exacerbations of chronic diarrhoea for periods of up to 5 days in adults and children over 9 years." }, { "s": "emc-13499", "q": "For the symptomatic treatment of chronic diarrhoea in adults." }] }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        { "t": "MHRA: on general sale the maximum daily dose is 12 mg; from pharmacists 16 mg.", "src": [{ "s": "mhra-dsu-loperamide-cardiac-2017", "q": "is available on general sale (maximum daily dose 12 mg) and from pharmacists (maximum daily dose 16 mg)." }] },
+        { "t": "IBS use: only after IBS has been diagnosed by a doctor.", "formulations": ["loperamide-cap"], "src": [{ "s": "emc-558", "q": "Only take this medicine to treat acute episodes of diarrhoea associated with Irritable Bowel Syndrome if your doctor has previously diagnosed IBS." }] }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults and children over 12: 4 mg initially, then 2 mg after each loose stool. Maximum 12 mg (6 capsules) a day.",
+          "tag": "Acute diarrhoea",
+          "formulations": ["loperamide-cap"],
+          "src": [
+            { "s": "emc-558", "q": "Adults and children over 12: 2 capsules (4 mg) initially followed by 1 capsule (2 mg) after every loose stool." },
+            { "s": "emc-558", "q": "The maximum daily dose should not exceed 6 capsules (12 mg)." }
+          ]
+        },
+        {
+          "t": "Adults 18 and over: 4 mg initially, then 2 mg after each loose stool. Maximum 12 mg a day.",
+          "tag": "Acute diarrhoea with diagnosed IBS",
+          "formulations": ["loperamide-cap"],
+          "src": [{ "s": "emc-558", "q": "Two capsules (4 mg) to be taken initially, followed by 1 capsule (2 mg) after every loose stool, or as previously advised by your doctor." }]
+        },
+        {
+          "t": "Adults and children over 12: 4 mg initially, then 2 mg after each loose stool; usual 6-8 mg a day. Maximum 16 mg (8 capsules) a day.",
+          "tag": "Acute diarrhoea",
+          "formulations": ["loperamide-cap-pom"],
+          "src": [
+            { "s": "emc-13499", "q": "Adults and children over 12 years: Two capsules (4 mg) initially, followed by one capsule (2 mg) after each loose stool." },
+            { "s": "emc-13499", "q": "The usual dose is 3-4 capsules (6 mg - 8 mg) a day. The total daily dose should not exceed 8 capsules (16 mg)." }
+          ]
+        },
+        {
+          "t": "Adults: start 4-8 mg a day in divided doses; adjust up to a maximum of 16 mg (8 capsules) a day. Maintenance can be given twice daily.",
+          "tag": "Chronic diarrhoea",
+          "formulations": ["loperamide-cap-pom"],
+          "src": [
+            { "s": "emc-13499", "q": "The starting dose should be between two and four capsules per day in divided doses, depending on severity." },
+            { "s": "emc-13499", "q": "If required, this dose can be adjusted according to result up to a maximum of eight capsules daily." }
+          ]
+        },
+        {
+          "t": "Elderly and renal impairment: no dose adjustment.",
+          "detail": true,
+          "src": [{ "s": "emc-558", "q": "Elderly No dose adjustment is required for the elderly. Renal impairment No dose adjustment is required for patients with renal impairment." }]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        { "t": "Pharmacy/general sale capsule: contraindicated under 12 years.", "formulations": ["loperamide-cap"], "src": [{ "s": "emc-558", "q": "Imodium is contraindicated in children less than 12 years of age." }] },
+        { "t": "Prescription-only capsule: contraindicated under 9 years. Children 9-12 years: 2 mg four times daily until diarrhoea is controlled (up to 5 days); do not exceed. Investigate if no improvement within 2 days.", "formulations": ["loperamide-cap-pom"], "src": [{ "s": "emc-13499", "q": "in children less than 9 years of age." }, { "s": "emc-13499", "q": "Children 9 to 12 years One capsule (2 mg) four times daily until diarrhoea is controlled (up to 5 days). This dose should not be exceeded." }, { "s": "emc-13499", "q": "Further investigation into the cause of the diarrhoea should be considered if there is no improvement within two days of starting treatment with loperamide." }] },
+        { "t": "Children are more sensitive to CNS effects in overdose. Fluid and electrolyte replacement is the priority in young children.", "src": [{ "s": "emc-558", "q": "Children, and patients with hepatic dysfunction, may be more sensitive to CNS effects." }, { "s": "emc-558", "q": "This is particularly important in young children and in frail and elderly patients with acute diarrhoea." }] }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        { "t": "Hypersensitivity to loperamide or any excipient.", "src": [{ "s": "emc-558", "q": "hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+        { "t": "Children under 12 (pharmacy/general sale capsule) or under 9 (prescription-only capsule).", "src": [{ "s": "emc-558", "q": "in children less than 12 years of age." }, { "s": "emc-13499", "q": "in children less than 9 years of age." }] },
+        { "t": "Acute dysentery (blood in stools and high fever). The prescription-only capsule SmPC words it as: should not be used alone.", "src": [{ "s": "emc-558", "q": "in patients with acute dysentery, which is characterised by blood in stools and high fever." }, { "s": "emc-13499", "q": "Loperamide hydrochloride should not be used alone in acute dysentery" }] },
+        { "t": "Acute ulcerative colitis; bacterial enterocolitis from invasive organisms (Salmonella, Shigella, Campylobacter); pseudomembranous colitis with broad-spectrum antibiotics.", "src": [{ "s": "emc-558", "q": "in patients with acute ulcerative colitis. in patients with bacterial enterocolitis caused by invasive organisms including Salmonella, Shigella and Campylobacter." }, { "s": "emc-558", "q": "in patients with pseudomembranous colitis associated with the use of broad-spectrum antibiotics." }] },
+        { "t": "When inhibition of peristalsis must be avoided (risk of ileus, megacolon, toxic megacolon). Stop promptly if ileus, constipation or abdominal distension develop.", "src": [{ "s": "emc-558", "q": "Imodium must not be used when inhibition of peristalsis is to be avoided due to the possible risk of significant sequelae including ileus, megacolon and toxic megacolon." }, { "s": "emc-558", "q": "Imodium must be discontinued promptly when ileus, constipation or abdominal distension develop." }] }
+      ]
+    },
+    "cautions": {
+      "items": [
+        { "t": "Overdose: cardiac events including QT and QRS prolongation and torsades de pointes, some fatal; overdose can unmask Brugada syndrome. Do not exceed the recommended dose or duration.", "src": [{ "s": "emc-558", "q": "Cardiac events including QT interval and QRS complex prolongation and torsades de pointes have been reported in association with overdose. Some cases had a fatal outcome" }, { "s": "emc-558", "q": "Overdose can unmask existing Brugada syndrome." }, { "s": "emc-558", "q": "Patients should not exceed the recommended dose and/or the recommended duration of treatment." }] },
+        { "t": "MHRA: serious cardiac events (QT prolongation, torsades de pointes, cardiac arrest), including deaths, with high doses taken as a drug of abuse or to self-treat opioid withdrawal.", "src": [{ "s": "mhra-dsu-loperamide-cardiac-2017", "q": "There have been reports of cardiac events including QT prolongation, torsades de pointes, and cardiac arrest in patients who have taken high or very high doses of loperamide as a drug of abuse or for self-treatment of opioid withdrawal." }] },
+        { "t": "History of drug abuse: caution. Loperamide is an opioid; abuse and misuse are described.", "src": [{ "s": "emc-558", "q": "Caution is needed in patients with a history of drug abuse. Abuse and misuse of loperamide, has been described" }, { "s": "emc-558", "q": "Loperamide is an opioid with low bioavailability and limited potential to penetrate the blood brain barrier at therapeutic doses." }] },
+        { "t": "Hepatic impairment: use with caution (reduced first-pass metabolism; relative overdose may cause CNS toxicity).", "src": [{ "s": "emc-558", "q": "this medicine should be used with caution in such patients because of reduced first pass metabolism, as it may result in a relative overdose leading to CNS toxicity." }] },
+        { "t": "Acute diarrhoea: no improvement within 48 hours - stop and see a doctor. Persistent diarrhoea needs investigation; replace fluid and electrolytes.", "src": [{ "s": "emc-558", "q": "In acute diarrhoea, if clinical improvement is not observed within 48 hours, the administration of Imodium should be discontinued and patients should be advised to consult their doctor." }, { "s": "emc-558", "q": "Use of this medicine does not preclude the administration of appropriate fluid and electrolyte replacement therapy." }] },
+        { "t": "AIDS: stop at the earliest signs of abdominal distension (toxic megacolon reported with infectious colitis).", "src": [{ "s": "emc-558", "q": "Patients with AIDS treated with this medicine for diarrhoea should have therapy stopped at the earliest signs of abdominal distension." }] },
+        { "t": "Galactose intolerance, lactase deficiency or glucose-galactose malabsorption: should not take (contains lactose).", "detail": true, "src": [{ "s": "emc-558", "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine because it contains lactose." }] }
+      ]
+    },
+    "interactions": {
+      "items": [
+        { "t": "P-glycoprotein inhibitors (quinidine, ritonavir): 2-3-fold higher loperamide levels; clinical relevance at usual doses unknown.", "src": [{ "s": "emc-558", "q": "Concomitant administration of loperamide (16 mg single dose) with quinidine, or ritonavir, which are both P-glycoprotein inhibitors, resulted in a 2 to 3-fold increase in loperamide plasma levels." }] },
+        { "t": "Itraconazole (3-4-fold), ketoconazole (5-fold) and gemfibrozil (about 2-fold) raise loperamide levels; itraconazole plus gemfibrozil gave a 13-fold rise in exposure. No CNS effects were seen in these studies.", "src": [{ "s": "emc-558", "q": "resulted in a 3 to 4-fold increase in loperamide plasma concentrations" }, { "s": "emc-558", "q": "The combination of itraconazole and gemfibrozil resulted in a 4-fold increase in peak plasma levels of loperamide and a 13-fold increase in total plasma exposure." }] },
+        { "t": "Oral desmopressin: plasma levels rose 3-fold (slower gut motility).", "src": [{ "s": "emc-558", "q": "Concomitant treatment with oral desmopressin resulted in a 3-fold increase of desmopressin plasma concentrations, presumably due to slower gastrointestinal motility." }] },
+        { "t": "Drugs with similar pharmacology may potentiate loperamide; drugs that speed GI transit may reduce its effect.", "src": [{ "s": "emc-558", "q": "It is expected that drugs with similar pharmacological properties may potentiate loperamide's effect and that drugs that accelerate gastrointestinal transit may decrease its effect." }] }
+      ]
+    },
+    "renal": {
+      "items": [{ "t": "No dose adjustment required.", "src": [{ "s": "emc-558", "q": "Renal impairment No dose adjustment is required for patients with renal impairment." }] }]
+    },
+    "hepatic": {
+      "items": [{ "t": "No pharmacokinetic data. Use with caution: reduced first-pass metabolism may cause relative overdose and CNS toxicity (one UK SmPC gives severe hepatic disturbance as an example).", "src": [{ "s": "emc-558", "q": "Although no pharmacokinetic data are available in patients with hepatic impairment, this medicine should be used with caution in such patients because of reduced first pass metabolism" }, { "s": "emc-13499", "q": "(eg in cases of severe hepatic disturbance)" }] }]
+    },
+    "pregnancy": {
+      "items": [
+        { "t": "SmPC: safety not established (no teratogenicity in animals); not advisable in pregnancy, especially the first trimester.", "tag": "SmPC", "src": [{ "s": "emc-558", "q": "As with other drugs, it is not advisable to administer this medicine in pregnancy, especially during the first trimester." }] },
+        { "t": "BUMPS: only recommended in pregnancy if there is no suitable alternative; it is unclear whether there is any risk.", "tag": "BUMPS", "src": [{ "s": "bumps-loperamide", "q": "loperamide is only recommended during pregnancy if there is no suitable alternative, as there is not enough information to say it is safe for the baby." }, { "s": "bumps-loperamide", "q": "It is unclear if there is any risk." }] }
+      ]
+    },
+    "breastfeeding": {
+      "items": [{ "t": "Small amounts may pass into breast milk: not recommended during breastfeeding.", "src": [{ "s": "emc-558", "q": "Small amounts of loperamide may appear in human breast milk. Therefore, this medicine is not recommended during breast-feeding." }] }]
+    },
+    "reproductive": { "status": "not-stated", "note": "UK SmPCs: effect on human fertility not evaluated." },
+    "adverseCommon": {
+      "items": [{ "t": "Most common (1% or more): constipation, flatulence, headache, nausea.", "src": [{ "s": "emc-558", "q": "constipation (2.7%), flatulence (1.7%), headache (1.2%) and nausea (1.1%)" }] }]
+    },
+    "adverseSerious": {
+      "items": [
+        { "t": "Ileus (including paralytic), megacolon including toxic megacolon: stop promptly if constipation, distension or ileus develop.", "src": [{ "s": "emc-558", "q": "Ileusa (including paralytic ileus) Megacolona (including toxic megacolonb)" }, { "s": "emc-558", "q": "Imodium must be discontinued promptly when ileus, constipation or abdominal distension develop." }] },
+        { "t": "Anaphylaxis, angioedema, bullous eruptions (including SJS, TEN, erythema multiforme).", "src": [{ "s": "emc-558", "q": "Bullous eruptiona (including Stevens-Johnson syndrome, Toxic epidermal necrolysis and Erythema multiforme)" }] },
+        { "t": "Overdose: CNS depression (including respiratory depression), urinary retention, ileus; QT/QRS prolongation, ventricular arrhythmias, cardiac arrest, deaths. Start ECG monitoring; naloxone is the antidote and may need repeating; observe at least 48 hours.", "src": [{ "s": "emc-558", "q": "In cases of overdose, ECG monitoring for QT interval prolongation should be initiated." }, { "s": "emc-558", "q": "If CNS symptoms of overdose occur, naloxone can be given as an antidote." }, { "s": "emc-558", "q": "the patient should be monitored closely for at least 48 hours in order to detect possible CNS depression." }] }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        { "t": "Acute diarrhoea: stop if no improvement within 48 hours.", "tag": "stop", "src": [{ "s": "emc-558", "q": "if clinical improvement is not observed within 48 hours, the administration of Imodium should be discontinued" }] },
+        { "t": "Overdose: ECG monitoring for QT prolongation; observe for CNS depression for at least 48 hours.", "tag": "stop", "src": [{ "s": "mhra-dsu-loperamide-cardiac-2017", "q": "patients should be monitored closely for at least 48 hours to detect possible CNS depression" }, { "s": "emc-558", "q": "In cases of overdose, ECG monitoring for QT interval prolongation should be initiated." }] }
+      ]
+    },
+    "administration": {
+      "items": [{ "t": "Oral; take capsules with liquid.", "src": [{ "s": "emc-558", "q": "The capsules should be taken with liquid." }] }]
+    },
+    "counselling": {
+      "items": [
+        { "t": "Never take more than the recommended dose on the label.", "src": [{ "s": "mhra-dsu-loperamide-cardiac-2017", "q": "pharmacists should remind patients not to take more than the recommended dose on the label" }] },
+        { "t": "May cause tiredness, dizziness or drowsiness: take care driving or using machines.", "src": [{ "s": "emc-558", "q": "Loss of consciousness, depressed level of consciousness, tiredness, dizziness, or drowsiness may occur when diarrhoea is treated with this medicine." }] },
+        { "t": "Keep up fluid and electrolyte replacement; see a doctor if no better in 48 hours.", "src": [{ "s": "emc-558", "q": "The priority in acute diarrhoea is the prevention or reversal of fluid and electrolyte depletion." }] }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "loperamide:allergy:own", "kind": "allergy", "level": "contraindicated", "med": "loperamide", "allergen": ["loperamide"],
+      "concern": "Loperamide hypersensitivity", "consequence": "Hypersensitivity, including anaphylaxis.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "This medicine is contraindicated: hypersensitivity",
+      "src": [{ "s": "emc-558", "q": "hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }, { "s": "emc-13499", "q": "in patients with a known hypersensitivity to loperamide hydrochloride" }]
+    },
+    {
+      "id": "loperamide:age:under-12-cap", "kind": "age", "level": "contraindicated", "med": "loperamide", "formulations": ["loperamide-cap"], "age": { "minYears": 0, "maxYears": 12 },
+      "concern": "Child under 12 years (pharmacy/general sale capsule)", "consequence": "Listed as a contraindication in this SmPC.", "action": "Do not use (SmPC 4.3). The prescription-only capsule SmPC allows 9-12 years at a fixed dose.",
+      "sourceWording": "is contraindicated in children less than 12 years of age",
+      "src": [{ "s": "emc-558", "q": "Imodium is contraindicated in children less than 12 years of age." }]
+    },
+    {
+      "id": "loperamide:age:under-9-pom", "kind": "age", "level": "contraindicated", "med": "loperamide", "formulations": ["loperamide-cap-pom"], "age": { "minYears": 0, "maxYears": 9 },
+      "concern": "Child under 9 years", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "contraindicated ... in children less than 9 years of age",
+      "src": [{ "s": "emc-13499", "q": "in children less than 9 years of age." }]
+    },
+    {
+      "id": "loperamide:age:9-12-pom", "kind": "age", "level": "dose", "med": "loperamide", "formulations": ["loperamide-cap-pom"], "age": { "minYears": 9, "maxYears": 12 },
+      "concern": "Child 9 to 12 years", "consequence": "Fixed child dose.", "action": "2 mg four times daily until controlled, up to 5 days; do not exceed.",
+      "sourceWording": "This dose should not be exceeded",
+      "src": [{ "s": "emc-13499", "q": "Children 9 to 12 years One capsule (2 mg) four times daily until diarrhoea is controlled (up to 5 days). This dose should not be exceeded." }]
+    },
+    {
+      "id": "loperamide:condition:dysentery", "kind": "condition", "level": "contraindicated", "med": "loperamide", "formulations": ["loperamide-cap"], "condition": "acute-dysentery",
+      "concern": "Acute dysentery (blood in stools and high fever) - pharmacy/general sale capsule", "consequence": "Listed as a contraindication in this SmPC.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "is contraindicated ... in patients with acute dysentery",
+      "src": [{ "s": "emc-558", "q": "This medicine is contraindicated:" }, { "s": "emc-558", "q": "in patients with acute dysentery, which is characterised by blood in stools and high fever." }]
+    },
+    {
+      "id": "loperamide:condition:dysentery-pom", "kind": "condition", "level": "contraindicated", "med": "loperamide", "formulations": ["loperamide-cap-pom"], "condition": "acute-dysentery",
+      "concern": "Acute dysentery (blood in stools and raised temperature): not to be used alone - prescription-only capsule", "consequence": "Listed in section 4.3 of this SmPC, worded as not to be used alone.", "action": "Do not use alone in acute dysentery (SmPC 4.3).",
+      "sourceWording": "should not be used alone in acute dysentery",
+      "src": [{ "s": "emc-13499", "q": "Loperamide hydrochloride should not be used alone in acute dysentery, which is characterised by blood in stools and elevated body temperatures." }]
+    },
+    {
+      "id": "loperamide:condition:acute-colitis", "kind": "condition", "level": "contraindicated", "med": "loperamide", "condition": "acute-colitis-diarrhoea",
+      "concern": "Acute ulcerative colitis or antibiotic-associated (pseudomembranous) colitis", "consequence": "Listed as a contraindication (risk of toxic megacolon).", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "is contraindicated",
+      "src": [{ "s": "emc-558", "q": "in patients with acute ulcerative colitis." }, { "s": "emc-558", "q": "in patients with pseudomembranous colitis associated with the use of broad-spectrum antibiotics." }]
+    },
+    {
+      "id": "loperamide:condition:ibd", "kind": "condition", "level": "contraindicated", "med": "loperamide", "condition": "inflammatory-bowel-disease",
+      "concern": "Acute ulcerative colitis (IBD flare)", "consequence": "Listed as a contraindication in acute ulcerative colitis.", "action": "Do not use in acute ulcerative colitis (SmPC 4.3).",
+      "sourceWording": "is contraindicated ... in patients with acute ulcerative colitis",
+      "src": [{ "s": "emc-558", "q": "in patients with acute ulcerative colitis." }]
+    },
+    {
+      "id": "loperamide:condition:invasive-enterocolitis", "kind": "condition", "level": "contraindicated", "med": "loperamide", "condition": "invasive-bacterial-enterocolitis",
+      "concern": "Bacterial enterocolitis from invasive organisms (Salmonella, Shigella, Campylobacter)", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "is contraindicated",
+      "src": [{ "s": "emc-558", "q": "in patients with bacterial enterocolitis caused by invasive organisms including Salmonella, Shigella and Campylobacter." }]
+    },
+    {
+      "id": "loperamide:condition:ileus", "kind": "condition", "level": "contraindicated", "med": "loperamide", "condition": "paralytic-ileus-gi-obstruction",
+      "concern": "Ileus, or when inhibition of peristalsis must be avoided", "consequence": "Risk of ileus, megacolon and toxic megacolon.", "action": "Must not be used; stop promptly if ileus, constipation or abdominal distension develop.",
+      "sourceWording": "must not be used when inhibition of peristalsis is to be avoided",
+      "src": [{ "s": "emc-558", "q": "Imodium must not be used when inhibition of peristalsis is to be avoided due to the possible risk of significant sequelae including ileus, megacolon and toxic megacolon." }, { "s": "emc-558", "q": "Imodium must be discontinued promptly when ileus, constipation or abdominal distension develop." }]
+    },
+    {
+      "id": "loperamide:condition:megacolon", "kind": "condition", "level": "contraindicated", "med": "loperamide", "condition": "toxic-megacolon",
+      "concern": "Megacolon or toxic megacolon", "consequence": "Inhibiting peristalsis risks significant sequelae.", "action": "Must not be used (SmPC 4.3).",
+      "sourceWording": "must not be used",
+      "src": [{ "s": "emc-558", "q": "Imodium must not be used when inhibition of peristalsis is to be avoided due to the possible risk of significant sequelae including ileus, megacolon and toxic megacolon." }]
+    },
+    {
+      "id": "loperamide:hepatic", "kind": "hepatic", "level": "caution", "med": "loperamide", "hepatic": ["any"],
+      "concern": "Hepatic impairment", "consequence": "Reduced first-pass metabolism may cause relative overdose and CNS toxicity.", "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-558", "q": "this medicine should be used with caution in such patients because of reduced first pass metabolism, as it may result in a relative overdose leading to CNS toxicity." }]
+    },
+    {
+      "id": "loperamide:condition:drug-abuse", "kind": "condition", "level": "caution", "med": "loperamide", "condition": "substance-use-disorder",
+      "concern": "History of drug abuse", "consequence": "Loperamide abuse and misuse described; high doses linked to serious cardiac events (MHRA).", "action": "Caution; do not exceed the recommended dose.",
+      "sourceWording": "Caution is needed in patients with a history of drug abuse",
+      "src": [{ "s": "emc-558", "q": "Caution is needed in patients with a history of drug abuse. Abuse and misuse of loperamide, has been described" }, { "s": "mhra-dsu-loperamide-cardiac-2017", "q": "as a drug of abuse or for self-treatment of opioid withdrawal" }]
+    },
+    {
+      "id": "loperamide:condition:opioid-dependence", "kind": "condition", "level": "caution", "med": "loperamide", "condition": "opioid-dependence",
+      "concern": "Opioid dependence (risk of high-dose self-treatment of withdrawal)", "consequence": "MHRA: QT prolongation, torsades de pointes and cardiac arrest with high doses used for opioid withdrawal.", "action": "Caution (history of drug abuse); remind not to exceed the recommended dose.",
+      "sourceWording": "Caution is needed in patients with a history of drug abuse",
+      "src": [{ "s": "mhra-dsu-loperamide-cardiac-2017", "q": "There have been reports of cardiac events including QT prolongation, torsades de pointes, and cardiac arrest in patients who have taken high or very high doses of loperamide as a drug of abuse or for self-treatment of opioid withdrawal." }, { "s": "emc-558", "q": "Caution is needed in patients with a history of drug abuse." }]
+    },
+    {
+      "id": "loperamide:condition:aids", "kind": "condition", "level": "monitor", "med": "loperamide", "condition": "hiv-aids",
+      "concern": "AIDS with infectious colitis", "consequence": "Toxic megacolon reported.", "action": "Stop at the earliest signs of abdominal distension.",
+      "sourceWording": "should have therapy stopped at the earliest signs of abdominal distension",
+      "src": [{ "s": "emc-558", "q": "Patients with AIDS treated with this medicine for diarrhoea should have therapy stopped at the earliest signs of abdominal distension." }]
+    },
+    {
+      "id": "loperamide:condition:brugada", "kind": "condition", "level": "info", "med": "loperamide", "condition": "brugada-syndrome",
+      "concern": "Brugada syndrome", "consequence": "Overdose can unmask existing Brugada syndrome.", "action": "Do not exceed the recommended dose or duration.",
+      "sourceWording": "Overdose can unmask existing Brugada syndrome",
+      "src": [{ "s": "emc-558", "q": "Overdose can unmask existing Brugada syndrome." }, { "s": "emc-558", "q": "Patients should not exceed the recommended dose and/or the recommended duration of treatment." }]
+    },
+    {
+      "id": "loperamide:condition:galactose-intolerance", "kind": "condition", "level": "avoid", "med": "loperamide", "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, lactase deficiency or glucose-galactose malabsorption", "consequence": "Capsules contain lactose.", "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-558", "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine because it contains lactose." }]
+    },
+    {
+      "id": "loperamide:interaction:desmopressin", "kind": "interaction", "level": "info", "med": "loperamide", "other": "desmopressin",
+      "concern": "Oral desmopressin", "consequence": "Desmopressin plasma levels rose 3-fold (slower GI motility).", "action": "Be aware of raised desmopressin exposure.",
+      "sourceWording": "resulted in a 3-fold increase of desmopressin plasma concentrations",
+      "src": [{ "s": "emc-558", "q": "Concomitant treatment with oral desmopressin resulted in a 3-fold increase of desmopressin plasma concentrations, presumably due to slower gastrointestinal motility." }]
+    },
+    {
+      "id": "loperamide:interaction:opioids", "kind": "interaction", "level": "info", "med": "loperamide", "other": "group:opioid",
+      "concern": "Opioids (similar pharmacology)", "consequence": "Expected to potentiate loperamide's effect.", "action": "Be aware of additive effect (e.g. constipation).",
+      "sourceWording": "may potentiate loperamide's effect",
+      "src": [{ "s": "emc-558", "q": "It is expected that drugs with similar pharmacological properties may potentiate loperamide's effect" }, { "s": "emc-558", "q": "Loperamide is an opioid with low bioavailability" }]
+    },
+    {
+      "id": "loperamide:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "loperamide",
+      "concern": "Pregnancy (SmPC; especially first trimester)", "consequence": "Safety in human pregnancy not established.", "action": "Not advisable in pregnancy, especially the first trimester.",
+      "sourceWording": "it is not advisable to administer this medicine in pregnancy",
+      "src": [{ "s": "emc-558", "q": "Safety in human pregnancy has not been established" }, { "s": "emc-558", "q": "As with other drugs, it is not advisable to administer this medicine in pregnancy, especially during the first trimester." }]
+    },
+    {
+      "id": "loperamide:pregnancy:bumps", "kind": "pregnancy", "level": "caution", "med": "loperamide",
+      "concern": "Pregnancy (BUMPS)", "consequence": "Not enough information to say it is safe for the baby; it is unclear if there is any risk.", "action": "Only recommended in pregnancy if there is no suitable alternative.",
+      "sourceWording": "only recommended during pregnancy if there is no suitable alternative",
+      "src": [{ "s": "bumps-loperamide", "q": "loperamide is only recommended during pregnancy if there is no suitable alternative, as there is not enough information to say it is safe for the baby." }, { "s": "bumps-loperamide", "q": "It is unclear if there is any risk." }]
+    },
+    {
+      "id": "loperamide:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "loperamide",
+      "concern": "Breastfeeding", "consequence": "Small amounts may appear in breast milk.", "action": "Not recommended during breastfeeding.",
+      "sourceWording": "is not recommended during breast-feeding",
+      "src": [{ "s": "emc-558", "q": "Small amounts of loperamide may appear in human breast milk. Therefore, this medicine is not recommended during breast-feeding." }]
+    }
+  ]
+}

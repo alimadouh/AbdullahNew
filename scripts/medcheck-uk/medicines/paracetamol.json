@@ -896,6 +896,84 @@
       ]
     },
     {
+      "id": "paracetamol:interaction:metoclopramide",
+      "kind": "interaction",
+      "level": "info",
+      "med": "paracetamol",
+      "other": "metoclopramide",
+      "concern": "Metoclopramide",
+      "consequence": "May increase the speed of paracetamol absorption.",
+      "action": "No action stated in the SmPC.",
+      "sourceWording": "may be increased by metoclopramide or domperidone",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "The speed of absorption of paracetamol may be increased by metoclopramide or domperidone"
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:interaction:domperidone",
+      "kind": "interaction",
+      "level": "info",
+      "med": "paracetamol",
+      "other": "domperidone",
+      "concern": "Domperidone",
+      "consequence": "May increase the speed of paracetamol absorption.",
+      "action": "No action stated in the SmPC.",
+      "sourceWording": "may be increased by metoclopramide or domperidone",
+      "src": [
+        {
+          "s": "emc-9128",
+          "q": "The speed of absorption of paracetamol may be increased by metoclopramide or domperidone"
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "paracetamol",
+      "other": "carbamazepine",
+      "effect": "hepatotoxicity",
+      "concern": "Carbamazepine (liver enzyme inducer)",
+      "consequence": "May increase paracetamol liver toxicity, mainly after overdose; metabolism possibly faster (isolated reports of liver toxicity). Long-term use is an overdose risk factor (liver damage possible after 5 g or more).",
+      "action": "No dose change stated; relevant in overdose assessment.",
+      "sourceWording": "may be increased by drugs which induce liver microsomal enzymes such as carbamazepine",
+      "src": [
+        {
+          "s": "emc-6694",
+          "q": "The hepatotoxicity of Paracetamol, particularly after overdosage, may be increased by drugs which induce liver microsomal enzymes such as carbamazepine"
+        },
+        {
+          "s": "emc-6634",
+          "q": "Metabolism of paracetamol possibly accelerated by carbamazepine, fosphenytoin, phenytoin, phenobarbital, primidone (also isolated reports of hepatotoxicity)"
+        },
+        {
+          "s": "emc-9128",
+          "q": "is on long term treatment with carbamazepine, phenobarbitone, phenytoin, primidone, rifampicin, St. John's Wort or other drugs that induce liver enzymes"
+        }
+      ]
+    },
+    {
+      "id": "paracetamol:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "paracetamol",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hepatotoxicity",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "Rosemont 250 mg/5 ml SmPC: may increase paracetamol liver toxicity, particularly after overdose.",
+      "action": "No action stated in the SmPC.",
+      "sourceWording": "may be increased by drugs which induce liver microsomal enzymes",
+      "src": [
+        {
+          "s": "emc-6694",
+          "q": "may be increased by drugs which induce liver microsomal enzymes such as carbamazepine, barbiturates (e.g. phenobarbital), fosphenytoin, primidone, tricyclic antidepressants and alcohol"
+        }
+      ]
+    },
+    {
       "id": "paracetamol:duplication:co-codamol",
       "kind": "duplication",
       "level": "avoid",

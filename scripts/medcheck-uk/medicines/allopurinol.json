@@ -1,0 +1,680 @@
+{
+  "id": "allopurinol",
+  "name": "Allopurinol",
+  "ingredients": ["allopurinol"],
+  "className": "Xanthine oxidase inhibitor (urate-lowering)",
+  "groups": ["xanthine-oxidase-inhibitor"],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "allopurinol-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "100 mg, 300 mg",
+      "release": "immediate",
+      "src": [
+        { "s": "emc-1312", "q": "Allopurinol 100 mg (Zyloric Tablets) Allopurinol 300 mg (Zyloric-300 Tablets)" }
+      ],
+      "sourceIds": ["emc-1312"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Reducing urate/uric acid formation where deposition has occurred (gouty arthritis, tophi, nephrolithiasis) or is a predictable risk (e.g. malignancy treatment with risk of acute uric acid nephropathy); certain enzyme disorders; 2,8-DHA stones; recurrent mixed calcium oxalate stones with hyperuricosuria.",
+          "src": [
+            { "s": "emc-1312", "q": "indicated for reducing urate/uric acid formation in conditions where urate/uric acid deposition has already occurred (e.g. gouty arthritis, skin tophi, nephrolithiasis) or is a predictable clinical risk" },
+            { "s": "emc-1312", "q": "indicated for the management of recurrent mixed calcium oxalate renal stones in the presence of hyperuricosuria" }
+          ]
+        },
+        {
+          "t": "Asymptomatic hyperuricaemia alone is generally not an indication.",
+          "src": [
+            { "s": "emc-1312", "q": "Asymptomatic hyperuricaemia per se is generally not considered an indication for use of Zyloric." }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "NICE NG219: offer allopurinol or febuxostat first line for treat-to-target urate-lowering therapy; offer allopurinol first line in people with major cardiovascular disease (e.g. previous MI or stroke, unstable angina).",
+          "src": [
+            { "s": "nice-ng219", "q": "Offer either allopurinol or febuxostat as first-line treatment when starting treat-to-target ULT, taking into account the person's comorbidities and preferences." },
+            { "s": "nice-ng219", "q": "Offer allopurinol as first-line treatment to people with gout who have major cardiovascular disease (for example, previous myocardial infarction or stroke, or unstable angina)." }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults: start low (e.g. 100 mg/day) and increase only if serum urate response is unsatisfactory. Suggested: 100-200 mg daily (mild), 300-600 mg daily (moderately severe), 700-900 mg daily (severe); or 2-10 mg/kg/day.",
+          "tag": "Adults",
+          "src": [
+            { "s": "emc-1312", "q": "Allopurinol should be introduced at low dosage e.g. 100 mg/day to reduce the risk of adverse reactions and increased only if the serum urate response is unsatisfactory." },
+            { "s": "emc-1312", "q": "100 to 200 mg daily in mild conditions, 300 to 600 mg daily in moderately severe conditions, 700 to 900 mg daily in severe conditions." }
+          ]
+        },
+        {
+          "t": "NICE gout treat-to-target: start ULT at least 2-4 weeks after a flare settles (or during a flare if flares are frequent); start low and use monthly serum urate to guide increases; target below 360 micromol/litre (consider below 300 micromol/litre with tophi or ongoing flares).",
+          "tag": "Gout (NICE)",
+          "src": [
+            { "s": "nice-ng219", "q": "Start ULT at least 2 to 4 weeks after a gout flare has settled. If flares are more frequent, ULT can be started during a flare" },
+            { "s": "nice-ng219", "q": "Start with a low dose of ULT and use monthly serum urate levels to guide dose increases, as tolerated, until the target serum urate level is reached." },
+            { "s": "nice-ng219", "q": "Aim for a target serum urate level below 360 micromol/litre (6 mg/dl)." }
+          ]
+        },
+        {
+          "t": "Flare prophylaxis when starting: SmPC advises an anti-inflammatory or colchicine for at least one month. NICE offers colchicine while reaching target (low-dose NSAID or corticosteroid if colchicine unsuitable).",
+          "tag": "Flare prophylaxis",
+          "src": [
+            { "s": "emc-1312", "q": "it is advisable to give prophylaxis with a suitable anti-inflammatory agent or colchicine for at least one month" },
+            { "s": "nice-ng219", "q": "offer colchicine while the target serum urate level is being reached" }
+          ]
+        },
+        {
+          "t": "Elderly: lowest dose that gives satisfactory urate reduction.",
+          "tag": "Elderly",
+          "src": [
+            { "s": "emc-1312", "q": "In the absence of specific data, the lowest dosage which produces satisfactory urate reduction should be used." }
+          ]
+        },
+        {
+          "t": "High urate turnover (e.g. before cytotoxic therapy): correct hyperuricaemia first, keep well hydrated, use the lower end of the dose range.",
+          "tag": "Malignancy",
+          "detail": true,
+          "src": [
+            { "s": "emc-1312", "q": "It is advisable to correct existing hyperuricaemia and/or hyperuricosuria with Zyloric before starting cytotoxic therapy." },
+            { "s": "emc-1312", "q": "Dosage of Zyloric should be at the lower end of the recommended dosage schedule." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children under 15 years: 10-20 mg/kg/day, maximum 400 mg daily. Rarely indicated except in malignancy (especially leukaemia) and enzyme disorders such as Lesch-Nyhan syndrome.",
+          "src": [
+            { "s": "emc-1312", "q": "Children under 15 years: 10 to 20 mg/kg bodyweight/day up to a maximum of 400 mg daily." },
+            { "s": "emc-1312", "q": "Use in children is rarely indicated, except in malignant conditions (especially leukaemia) and certain enzyme disorders such as Lesch-Nyhan syndrome." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to allopurinol or any excipient.",
+          "src": [
+            { "s": "emc-1312", "q": "Zyloric should not be administered to individuals known to be hypersensitive to allopurinol or to any of the components of the formulation" }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Hypersensitivity (rash, DRESS, SJS/TEN) can occur at any time: stop immediately and do not rechallenge after hypersensitivity syndrome or SJS/TEN. Highest risk in the first weeks.",
+          "src": [
+            { "s": "emc-1312", "q": "If such reactions occur at any time during treatment, allopurinol should be withdrawn immediately. Rechallenge should not be undertaken in patients with hypersensitivity syndrome and SJS/TEN." },
+            { "s": "emc-1312", "q": "The highest risk for SJS and TEN, or other serious hypersensitivity reactions, is within the first weeks of treatment." }
+          ]
+        },
+        {
+          "t": "HLA-B*5801: linked to hypersensitivity syndrome and SJS/TEN (up to 20% of Han Chinese, 8-15% Thai, about 12% Korean). Consider screening in high-prevalence groups; CKD adds risk. Known carriers: do not start unless no reasonable alternative and benefit outweighs risk. Negative result does not exclude SJS/TEN.",
+          "src": [
+            { "s": "emc-1312", "q": "Screening for HLA-B*5801 should be considered before starting treatment with allopurinol in patient subgroups where the prevalence of this allele is known to be high." },
+            { "s": "emc-1312", "q": "allopurinol should not be started unless there are no other reasonable therapeutic options and the benefits are thought to exceed risks" },
+            { "s": "emc-1312", "q": "SJS/TEN can still occur in patients who are found to be negative for HLA-B*5801 irrespective of their ethnic origin." }
+          ]
+        },
+        {
+          "t": "Chronic renal impairment with diuretics (especially thiazides): higher risk of hypersensitivity including SJS/TEN; extra vigilance.",
+          "src": [
+            { "s": "emc-1312", "q": "Patients with chronic renal impairment and concomitant diuretic use, in particular thiazides, may be at increased risk of developing hypersensitivity reactions including SJS/TEN associated with allopurinol." }
+          ]
+        },
+        {
+          "t": "Use reduced doses in hepatic or renal impairment. Care in patients treated for hypertension or heart failure (e.g. diuretics, ACE inhibitors), who may have reduced renal function.",
+          "src": [
+            { "s": "emc-1312", "q": "Reduced doses should be used in patients with hepatic or renal impairment" },
+            { "s": "emc-1312", "q": "may have some concomitant impairment of renal function and allopurinol should be used with care in this group" }
+          ]
+        },
+        {
+          "t": "Do not start until an acute gout attack has completely settled; flares can occur early in treatment. If a flare occurs on treatment, continue the same dose and treat the flare.",
+          "src": [
+            { "s": "emc-1312", "q": "Allopurinol treatment should not be started until an acute attack of gout has completely subsided, as further attacks may be precipitated." },
+            { "s": "emc-1312", "q": "If acute attacks develop in patients receiving allopurinol, treatment should continue at the same dosage" }
+          ]
+        },
+        {
+          "t": "Azathioprine or mercaptopurine: avoid the combination (fatal cases).",
+          "src": [
+            { "s": "emc-1312", "q": "Concomitant use of allopurinol with 6-mercaptopurine or azathioprine should be avoided as there have been reports of fatal cases" }
+          ]
+        },
+        {
+          "t": "Thyroid: raised TSH in long-term use; caution with altered thyroid function. Xanthine deposition possible with very high urate turnover (keep well hydrated). Contains lactose.",
+          "detail": true,
+          "src": [
+            { "s": "emc-1312", "q": "Caution is required when allopurinol is used in patients with alteration of thyroid function." },
+            { "s": "emc-1312", "q": "This risk may be minimised by adequate hydration to achieve optimal urine dilution." },
+            { "s": "emc-1312", "q": "Zyloric tablets contain lactose and therefore should not be administered to patients with rare hereditary problems of galactose intolerance" }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Azathioprine and mercaptopurine (not in this list): levels may reach toxic levels causing life-threatening pancytopenia. Avoid; if essential, give one quarter (25%) of the usual azathioprine/mercaptopurine dose with frequent blood counts.",
+          "src": [
+            { "s": "emc-1312", "q": "Therefore, concomitant use of allopurinol with 6-mercaptopurine or azathioprine should be avoided." },
+            { "s": "emc-1312", "q": "dosing should be reduced to one quarter (25%) of the usual dose of 6-mercaptopurine or azathioprine and frequent haematologic monitoring should be ensured" }
+          ]
+        },
+        {
+          "t": "Warfarin and other coumarins: rare reports of increased effect; monitor carefully.",
+          "src": [
+            { "s": "emc-1312", "q": "There have been rare reports of increased effect of warfarin and other coumarin anticoagulants when co-administered with allopurinol, therefore, all patients receiving anticoagulants must be carefully monitored." }
+          ]
+        },
+        {
+          "t": "Ampicillin or amoxicillin: more skin rash; use an alternative where available.",
+          "src": [
+            { "s": "emc-1312", "q": "it is recommended that in patients receiving allopurinol an alternative to ampicillin or amoxicillin is used where available" }
+          ]
+        },
+        {
+          "t": "Diuretics (especially thiazides) and ACE inhibitors: increased risk of hypersensitivity, especially in renal impairment. Furosemide may raise serum urate and oxipurinol.",
+          "src": [
+            { "s": "emc-1312", "q": "An increased risk of hypersensitivity has been reported when allopurinol is given with diuretics, in particular thiazides, especially in renal impairment." },
+            { "s": "emc-1312", "q": "An increased risk of hypersensitivity has been reported when allopurinol is given with ACE inhibitors especially in renal impairment." }
+          ]
+        },
+        {
+          "t": "Aluminium hydroxide: may reduce allopurinol effect; separate by at least 3 hours.",
+          "src": [
+            { "s": "emc-1312", "q": "If aluminium hydroxide is taken concomitantly, allopurinol may have an attenuated effect. There should be an interval of at least 3 hours between taking both medicines." }
+          ]
+        },
+        {
+          "t": "Others: large-dose salicylates and uricosurics may reduce effect; chlorpropamide in renal impairment (prolonged hypoglycaemia); theophylline (monitor levels); ciclosporin (toxicity); didanosine (not recommended); cytostatics (blood dyscrasias, monitor counts); vidarabine; phenytoin.",
+          "detail": true,
+          "src": [
+            { "s": "emc-1312", "q": "drugs with uricosuric activity such as probenecid or large doses of salicylate may accelerate the excretion of oxipurinol" },
+            { "s": "emc-1312", "q": "Theophylline levels should be monitored in patients starting or increasing allopurinol therapy." },
+            { "s": "emc-1312", "q": "Co-administration of these 2 drugs is generally not recommended." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Allopurinol and metabolites accumulate in renal impairment; reduced doses required. Severe renal insufficiency: consider less than 100 mg per day or 100 mg at intervals longer than one day. The SmPC gives no CrCl/eGFR cut-offs. If available, keep plasma oxipurinol below 100 micromol/litre.",
+          "src": [
+            { "s": "emc-1312", "q": "In severe renal insufficiency, it may be advisable to use less than 100 mg per day or to use single doses of 100 mg at longer intervals than one day." },
+            { "s": "emc-1312", "q": "the dose should be adjusted to maintain plasma oxipurinol levels below 100 micromol/litre (15.2 mg/litre)" },
+            { "s": "emc-1312", "q": "A reduction in the dose of Zyloric is therefore required in patients with renal impairment." }
+          ]
+        },
+        {
+          "t": "Dialysis two to three times a week: consider 300-400 mg immediately after each dialysis, none in between.",
+          "src": [
+            { "s": "emc-1312", "q": "If dialysis is required two to three times a week consideration should be given to an alternative dosage schedule of 300-400 mg Zyloric immediately after each dialysis with none in the interim." }
+          ]
+        },
+        {
+          "t": "NICE: offer urate-lowering therapy (treat-to-target) in CKD stages 3 to 5; consider rheumatology referral for CKD stages 3b to 5.",
+          "detail": true,
+          "src": [
+            { "s": "nice-ng219", "q": "CKD stages 3 to 5 (glomerular filtration rate [GFR] categories G3 to G5)" },
+            { "s": "nice-ng219", "q": "they have CKD stages 3b to 5 (GFR categories G3b to G5)" }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Use reduced doses in hepatic impairment; periodic liver function tests in early treatment.",
+          "src": [
+            { "s": "emc-1312", "q": "Reduced doses should be used in patients with hepatic impairment. Periodic liver function tests are recommended during the early stages of therapy." }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: inadequate evidence of safety; use only when there is no safer alternative and the disease itself carries risk.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-1312", "q": "Use in pregnancy only when there is no safer alternative and when the disease itself carries risks for the mother or unborn child." }
+          ]
+        },
+        {
+          "t": "BUMPS: can be used in pregnancy if recommended by a specialist; limited data, two babies with similar unusual birth defects reported.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-allopurinol", "q": "Allopurinol can be used in pregnancy if recommended by a specialist." },
+            { "s": "bumps-allopurinol", "q": "two babies exposed in the womb to allopurinol were born with similar unusual birth defects" }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Allopurinol and oxipurinol pass into breast milk; effects on the baby unknown. Not recommended during breastfeeding (SmPC). No SPS breastfeeding page found.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-1312", "q": "Allopurinol and its metabolite oxipurinol is excreted in the human breast milk." },
+            { "s": "emc-1312", "q": "Allopurinol during breastfeeding is not recommended." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Male infertility and erectile dysfunction reported very rarely. BUMPS: no evidence that use by the father harms the baby.",
+          "src": [
+            { "s": "emc-1312", "q": "Reproductive system and breast disorders Very rare Infertility male Erectile dysfunction" },
+            { "s": "bumps-allopurinol", "q": "There is no evidence that allopurinol used by the father can harm the baby through effects on the sperm." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: rash; raised TSH. Uncommon: nausea, vomiting, diarrhoea, abnormal liver tests, hypersensitivity.",
+          "src": [
+            { "s": "emc-1312", "q": "Skin and subcutaneous tissue disorders Common Rash" },
+            { "s": "emc-1312", "q": "Investigations Common Blood thyroid stimulating hormone increased" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Severe skin and hypersensitivity reactions (SJS/TEN, DRESS with fever, rash, eosinophilia, liver or kidney involvement): stop immediately and permanently; do not re-introduce.",
+          "src": [
+            { "s": "emc-1312", "q": "If such reactions occur at any time during treatment, allopurinol should be withdrawn immediately and permanently." },
+            { "s": "emc-1312", "q": "If SJS/TEN, or other serious hypersensitivity reactions cannot be ruled out, DO NOT re-introduce allopurinol due to the potential for a severe or even fatal reaction." }
+          ]
+        },
+        {
+          "t": "After a mild rash only, may re-introduce at a small dose (e.g. 50 mg/day); stop permanently if rash recurs.",
+          "detail": true,
+          "src": [
+            { "s": "emc-1312", "q": "After recovery from mild reactions, Zyloric may, if desired, be re-introduced at a small dose (e.g. 50 mg/day) and gradually increased." }
+          ]
+        },
+        {
+          "t": "Very rare: agranulocytosis, aplastic anaemia, thrombocytopenia (especially with renal or hepatic impairment); hepatitis (rare).",
+          "detail": true,
+          "src": [
+            { "s": "emc-1312", "q": "Very rare reports have been received of thrombocytopenia, agranulocytosis and aplastic anaemia, particularly in individuals with impaired renal and/or hepatic function" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Consider HLA-B*5801 screening before starting in high-prevalence groups (Han Chinese, Thai, Korean).",
+          "tag": "baseline",
+          "src": [
+            { "s": "emc-1312", "q": "Screening for HLA-B*5801 should be considered before starting treatment with allopurinol in patient subgroups where the prevalence of this allele is known to be high." }
+          ]
+        },
+        {
+          "t": "Adjust dose by serum urate and urinary urate at intervals (NICE: monthly during titration; consider annual check once at target). Periodic LFTs early in treatment if hepatic impairment.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-1312", "q": "The dosage should be adjusted by monitoring serum urate concentrations and urinary urate/uric acid levels at appropriate intervals." },
+            { "s": "nice-ng219", "q": "Consider annual monitoring of serum urate level in people with gout who are continuing ULT after reaching their target serum urate level." }
+          ]
+        },
+        {
+          "t": "Stop immediately at any sign of hypersensitivity or severe skin reaction.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-1312", "q": "Zyloric should be withdrawn immediately should such reactions occur." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Once daily after a meal. If the dose is above 300 mg/day and there is GI upset, divide the dose.",
+          "src": [
+            { "s": "emc-1312", "q": "Zyloric may be taken orally once a day after a meal." },
+            { "s": "emc-1312", "q": "Should the daily dosage exceed 300 mg and gastrointestinal intolerance be manifested, a divided doses regimen may be appropriate." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Stop and seek help at once if a rash, fever, blistering, mouth sores or swollen glands appear.",
+          "src": [
+            { "s": "emc-1312", "q": "the patient should be informed of the need to stop treatment immediately at the first appearance of symptoms" }
+          ]
+        },
+        {
+          "t": "Usually lifelong once target urate is reached (NICE). Keep taking it during a gout flare.",
+          "src": [
+            { "s": "nice-ng219", "q": "Ensure people understand that ULT is usually continued after the target serum urate level is reached, and is typically a lifelong treatment." }
+          ]
+        },
+        {
+          "t": "May cause drowsiness, vertigo or unsteadiness: take care driving until you know how it affects you.",
+          "detail": true,
+          "src": [
+            { "s": "emc-1312", "q": "Since adverse reactions such as somnolence, vertigo and ataxia have been reported in patients receiving allopurinol" }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "allopurinol:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "allopurinol",
+      "allergen": ["allopurinol"],
+      "concern": "Allopurinol hypersensitivity",
+      "consequence": "Severe hypersensitivity (DRESS, SJS/TEN) possible; rechallenge can be fatal.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: should not be administered to individuals known to be hypersensitive to allopurinol",
+      "src": [
+        { "s": "emc-1312", "q": "Zyloric should not be administered to individuals known to be hypersensitive to allopurinol or to any of the components of the formulation" }
+      ]
+    },
+    {
+      "id": "allopurinol:condition:hla-b5801-positive",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "allopurinol",
+      "condition": "hla-b5801-positive",
+      "concern": "Known HLA-B*5801 carrier",
+      "consequence": "Higher risk of hypersensitivity syndrome and SJS/TEN.",
+      "action": "Do not start unless there is no other reasonable option and benefit exceeds risk; extra vigilance for hypersensitivity.",
+      "sourceWording": "allopurinol should not be started unless there are no other reasonable therapeutic options",
+      "src": [
+        { "s": "emc-1312", "q": "If the patient is a known carrier of HLA-B*5801 (especially in those who are from Han Chinese, Thai or Korean descent), allopurinol should not be started unless there are no other reasonable therapeutic options and the benefits are thought to exceed risks." }
+      ]
+    },
+    {
+      "id": "allopurinol:condition:hla-b5801-ancestry",
+      "kind": "condition",
+      "level": "caution",
+      "med": "allopurinol",
+      "condition": "hla-b5801-risk-ancestry",
+      "concern": "Han Chinese, Thai or Korean ancestry (high HLA-B*5801 prevalence)",
+      "consequence": "Higher risk of hypersensitivity syndrome and SJS/TEN; CKD adds risk.",
+      "action": "Consider HLA-B*5801 screening before starting; if not available, assess benefits thoroughly first.",
+      "sourceWording": "Screening for HLA-B*5801 should be considered",
+      "src": [
+        { "s": "emc-1312", "q": "Screening for HLA-B*5801 should be considered before starting treatment with allopurinol in patient subgroups where the prevalence of this allele is known to be high." },
+        { "s": "emc-1312", "q": "In case that no HLA-B*5801 genotyping is available for patients with Han Chinese, Thai or Korean descent the benefits should be thoroughly assessed" }
+      ]
+    },
+    {
+      "id": "allopurinol:condition:renal-impairment",
+      "kind": "condition",
+      "level": "dose",
+      "med": "allopurinol",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment (no numeric threshold in the SmPC)",
+      "consequence": "Drug and oxipurinol accumulate; higher risk of hypersensitivity and blood dyscrasias.",
+      "action": "Use reduced doses; extra caution.",
+      "sourceWording": "Reduced doses should be used in patients with hepatic or renal impairment",
+      "src": [
+        { "s": "emc-1312", "q": "Reduced doses should be used in patients with hepatic or renal impairment" },
+        { "s": "emc-1312", "q": "Extra caution should be exercised if renal function is poor" }
+      ]
+    },
+    {
+      "id": "allopurinol:condition:severe-renal-impairment",
+      "kind": "condition",
+      "level": "dose",
+      "med": "allopurinol",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal insufficiency (no numeric threshold in the SmPC)",
+      "consequence": "Prolonged half-lives of allopurinol and metabolites.",
+      "action": "Consider less than 100 mg per day, or 100 mg at intervals longer than one day; keep plasma oxipurinol below 100 micromol/litre if measurable.",
+      "sourceWording": "it may be advisable to use less than 100 mg per day",
+      "src": [
+        { "s": "emc-1312", "q": "In severe renal insufficiency, it may be advisable to use less than 100 mg per day or to use single doses of 100 mg at longer intervals than one day." }
+      ]
+    },
+    {
+      "id": "allopurinol:condition:dialysis",
+      "kind": "condition",
+      "level": "dose",
+      "med": "allopurinol",
+      "condition": "end-stage-renal-disease",
+      "concern": "Dialysis two to three times a week",
+      "consequence": "Allopurinol and metabolites are removed by dialysis.",
+      "action": "Consider 300-400 mg immediately after each dialysis, none in between.",
+      "sourceWording": "consideration should be given to an alternative dosage schedule",
+      "src": [
+        { "s": "emc-1312", "q": "If dialysis is required two to three times a week consideration should be given to an alternative dosage schedule of 300-400 mg Zyloric immediately after each dialysis with none in the interim." }
+      ]
+    },
+    {
+      "id": "allopurinol:hepatic:any",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "allopurinol",
+      "hepatic": ["any"],
+      "concern": "Hepatic impairment",
+      "consequence": "Higher incidence of adverse reactions.",
+      "action": "Use reduced doses; periodic LFTs early in treatment.",
+      "sourceWording": "Reduced doses should be used in patients with hepatic impairment",
+      "src": [
+        { "s": "emc-1312", "q": "Reduced doses should be used in patients with hepatic impairment. Periodic liver function tests are recommended during the early stages of therapy." }
+      ]
+    },
+    {
+      "id": "allopurinol:condition:acute-gout",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "allopurinol",
+      "condition": "acute-gout-flare",
+      "concern": "Acute gout attack not yet settled",
+      "consequence": "Starting may precipitate further attacks.",
+      "action": "Do not start until the attack has completely settled (continue if already taking it).",
+      "sourceWording": "should not be started until an acute attack of gout has completely subsided",
+      "src": [
+        { "s": "emc-1312", "q": "Allopurinol treatment should not be started until an acute attack of gout has completely subsided, as further attacks may be precipitated." }
+      ]
+    },
+    {
+      "id": "allopurinol:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "caution",
+      "med": "allopurinol",
+      "condition": "hypothyroidism",
+      "concern": "Altered thyroid function",
+      "consequence": "Raised TSH seen in long-term treatment.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution is required",
+      "src": [
+        { "s": "emc-1312", "q": "Caution is required when allopurinol is used in patients with alteration of thyroid function." }
+      ]
+    },
+    {
+      "id": "allopurinol:condition:thyrotoxicosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "allopurinol",
+      "condition": "thyrotoxicosis",
+      "concern": "Altered thyroid function",
+      "consequence": "Raised TSH seen in long-term treatment.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution is required",
+      "src": [
+        { "s": "emc-1312", "q": "Caution is required when allopurinol is used in patients with alteration of thyroid function." }
+      ]
+    },
+    {
+      "id": "allopurinol:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "allopurinol",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Tablets contain lactose.",
+      "action": "Should not be given.",
+      "sourceWording": "should not be administered",
+      "src": [
+        { "s": "emc-1312", "q": "Zyloric tablets contain lactose and therefore should not be administered to patients with rare hereditary problems of galactose intolerance" }
+      ]
+    },
+    {
+      "id": "allopurinol:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "allopurinol",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (coumarin anticoagulant)",
+      "consequence": "Rare reports of increased anticoagulant effect.",
+      "action": "Monitor carefully (INR).",
+      "sourceWording": "must be carefully monitored",
+      "src": [
+        { "s": "emc-1312", "q": "There have been rare reports of increased effect of warfarin and other coumarin anticoagulants when co-administered with allopurinol, therefore, all patients receiving anticoagulants must be carefully monitored." }
+      ]
+    },
+    {
+      "id": "allopurinol:interaction:amoxicillin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "allopurinol",
+      "other": "amoxicillin",
+      "concern": "Amoxicillin",
+      "consequence": "More frequent skin rash with the combination.",
+      "action": "Use an alternative to amoxicillin where available.",
+      "sourceWording": "it is recommended that ... an alternative to ampicillin or amoxicillin is used where available",
+      "src": [
+        { "s": "emc-1312", "q": "An increase in frequency of skin rash has been reported among patients receiving ampicillin or amoxicillin concurrently with allopurinol" },
+        { "s": "emc-1312", "q": "it is recommended that in patients receiving allopurinol an alternative to ampicillin or amoxicillin is used where available" }
+      ]
+    },
+    {
+      "id": "allopurinol:interaction:co-amoxiclav",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "allopurinol",
+      "other": "co-amoxiclav",
+      "concern": "Co-amoxiclav (contains amoxicillin)",
+      "consequence": "More frequent skin rash with amoxicillin plus allopurinol.",
+      "action": "Use an alternative to amoxicillin where available.",
+      "sourceWording": "it is recommended that ... an alternative to ampicillin or amoxicillin is used where available",
+      "src": [
+        { "s": "emc-1312", "q": "it is recommended that in patients receiving allopurinol an alternative to ampicillin or amoxicillin is used where available" }
+      ]
+    },
+    {
+      "id": "allopurinol:interaction:diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "allopurinol",
+      "other": "group:diuretic",
+      "concern": "Diuretic (especially thiazide)",
+      "consequence": "Increased risk of hypersensitivity including SJS/TEN, especially in renal impairment. Furosemide may raise serum urate and oxipurinol.",
+      "action": "Extra vigilance for hypersensitivity; stop at the first sign.",
+      "sourceWording": "An increased risk of hypersensitivity has been reported",
+      "src": [
+        { "s": "emc-1312", "q": "An increased risk of hypersensitivity has been reported when allopurinol is given with diuretics, in particular thiazides, especially in renal impairment." },
+        { "s": "emc-1312", "q": "Extra vigilance for the signs of hypersensitivity syndrome or SJS/TEN is required" }
+      ]
+    },
+    {
+      "id": "allopurinol:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "allopurinol",
+      "other": "group:ace-inhibitor",
+      "concern": "ACE inhibitor",
+      "consequence": "Increased risk of hypersensitivity, especially in renal impairment.",
+      "action": "Use with care; watch for hypersensitivity.",
+      "sourceWording": "An increased risk of hypersensitivity has been reported",
+      "src": [
+        { "s": "emc-1312", "q": "An increased risk of hypersensitivity has been reported when allopurinol is given with ACE inhibitors especially in renal impairment." }
+      ]
+    },
+    {
+      "id": "allopurinol:interaction:aluminium-hydroxide",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "allopurinol",
+      "other": "aluminium-magnesium-hydroxide",
+      "effect": "reduced-absorption",
+      "concern": "Aluminium hydroxide antacid",
+      "consequence": "Allopurinol effect may be reduced.",
+      "action": "Separate doses by at least 3 hours.",
+      "sourceWording": "There should be an interval of at least 3 hours",
+      "src": [
+        { "s": "emc-1312", "q": "If aluminium hydroxide is taken concomitantly, allopurinol may have an attenuated effect. There should be an interval of at least 3 hours between taking both medicines." }
+      ]
+    },
+    {
+      "id": "allopurinol:interaction:aspirin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "allopurinol",
+      "other": "aspirin",
+      "otherFormulations": ["aspirin-analgesic"],
+      "concern": "Large doses of salicylate",
+      "consequence": "May speed oxipurinol excretion and reduce allopurinol effect; significance assessed case by case.",
+      "action": "Be aware with large salicylate doses.",
+      "sourceWording": "the significance needs to be assessed in each case",
+      "src": [
+        { "s": "emc-1312", "q": "drugs with uricosuric activity such as probenecid or large doses of salicylate may accelerate the excretion of oxipurinol. This may decrease the therapeutic activity of Zyloric, but the significance needs to be assessed in each case." }
+      ]
+    },
+    {
+      "id": "allopurinol:pregnancy:caution",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "allopurinol",
+      "concern": "Pregnancy",
+      "consequence": "Inadequate safety evidence (SmPC); BUMPS says it can be used if recommended by a specialist.",
+      "action": "Use only when no safer alternative and the disease carries risk (SmPC); specialist advice (BUMPS).",
+      "sourceWording": "Use in pregnancy only when there is no safer alternative",
+      "src": [
+        { "s": "emc-1312", "q": "Use in pregnancy only when there is no safer alternative and when the disease itself carries risks for the mother or unborn child." },
+        { "s": "bumps-allopurinol", "q": "Allopurinol can be used in pregnancy if recommended by a specialist." }
+      ]
+    },
+    {
+      "id": "allopurinol:breastfeeding:avoid",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "allopurinol",
+      "concern": "Breastfeeding",
+      "consequence": "Allopurinol and oxipurinol are excreted in milk; infant effects unknown.",
+      "action": "Not recommended.",
+      "sourceWording": "Allopurinol during breastfeeding is not recommended",
+      "src": [
+        { "s": "emc-1312", "q": "Allopurinol during breastfeeding is not recommended." }
+      ]
+    }
+  ]
+}

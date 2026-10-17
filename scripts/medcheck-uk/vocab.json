@@ -1,148 +1,1993 @@
 {
-  "medicines": [
-    {"id":"paracetamol","name":"Paracetamol","batch":"A"},
-    {"id":"co-codamol","name":"Co-codamol (codeine phosphate/paracetamol)","batch":"A"},
-    {"id":"codeine","name":"Codeine phosphate","batch":"A"},
-    {"id":"tramadol","name":"Tramadol hydrochloride","batch":"A"},
-    {"id":"ibuprofen","name":"Ibuprofen","batch":"A"},
-    {"id":"naproxen","name":"Naproxen","batch":"A"},
-    {"id":"amlodipine","name":"Amlodipine","batch":"B"},
-    {"id":"lisinopril","name":"Lisinopril","batch":"B"},
-    {"id":"spironolactone","name":"Spironolactone","batch":"B"},
-    {"id":"isosorbide-mononitrate","name":"Isosorbide mononitrate","batch":"B"},
-    {"id":"sildenafil","name":"Sildenafil","batch":"B"},
-    {"id":"atorvastatin","name":"Atorvastatin","batch":"C"},
-    {"id":"simvastatin","name":"Simvastatin","batch":"C"},
-    {"id":"clopidogrel","name":"Clopidogrel","batch":"C"},
-    {"id":"warfarin","name":"Warfarin sodium","batch":"C"},
-    {"id":"phytomenadione","name":"Phytomenadione (vitamin K1)","batch":"C"},
-    {"id":"metformin","name":"Metformin hydrochloride","batch":"D"},
-    {"id":"levothyroxine","name":"Levothyroxine sodium","batch":"D"},
-    {"id":"omeprazole","name":"Omeprazole","batch":"D"},
-    {"id":"sertraline","name":"Sertraline","batch":"D"},
-    {"id":"st-johns-wort","name":"St John's wort (Hypericum perforatum)","batch":"D"},
-    {"id":"amoxicillin","name":"Amoxicillin","batch":"E"},
-    {"id":"co-amoxiclav","name":"Co-amoxiclav (amoxicillin/clavulanic acid)","batch":"E"},
-    {"id":"clarithromycin","name":"Clarithromycin","batch":"E"},
-    {"id":"ciprofloxacin","name":"Ciprofloxacin","batch":"E"},
-    {"id":"trimethoprim","name":"Trimethoprim","batch":"F"},
-    {"id":"co-trimoxazole","name":"Co-trimoxazole (sulfamethoxazole/trimethoprim)","batch":"F"},
-    {"id":"dapsone","name":"Dapsone","batch":"F"},
-    {"id":"hydroxychloroquine","name":"Hydroxychloroquine sulfate","batch":"F"},
-    {"id":"methotrexate","name":"Methotrexate","batch":"F"},
-    {"id":"ferrous-sulfate","name":"Ferrous sulfate","batch":"G"},
-    {"id":"calcium-carbonate","name":"Calcium carbonate","batch":"G"},
-    {"id":"magnesium-glycerophosphate","name":"Magnesium glycerophosphate","batch":"G"},
-    {"id":"potassium-chloride","name":"Potassium chloride","batch":"G"}
-  ],
-  "ingredients": ["paracetamol","codeine","tramadol","ibuprofen","naproxen","amlodipine","lisinopril","spironolactone","isosorbide-mononitrate","sildenafil","atorvastatin","simvastatin","clopidogrel","warfarin","phytomenadione","metformin","levothyroxine","omeprazole","sertraline","hypericum","amoxicillin","clavulanic-acid","clarithromycin","ciprofloxacin","trimethoprim","sulfamethoxazole","dapsone","hydroxychloroquine","methotrexate","iron","calcium","magnesium","potassium"],
-  "groups": [
-    {"id":"nsaid","name":"NSAIDs"},
-    {"id":"opioid","name":"Opioids"},
-    {"id":"ace-inhibitor","name":"ACE inhibitors"},
-    {"id":"potassium-sparing-diuretic","name":"Potassium-sparing diuretics / aldosterone antagonists"},
-    {"id":"potassium-supplement","name":"Potassium supplements"},
-    {"id":"nitrate","name":"Nitrates / nitric oxide donors"},
-    {"id":"pde5-inhibitor","name":"Phosphodiesterase type-5 inhibitors"},
-    {"id":"calcium-channel-blocker","name":"Calcium-channel blockers"},
-    {"id":"statin","name":"Statins (HMG-CoA reductase inhibitors)"},
-    {"id":"anticoagulant","name":"Anticoagulants"},
-    {"id":"antiplatelet","name":"Antiplatelet medicines"},
-    {"id":"ssri","name":"SSRIs"},
-    {"id":"serotonergic","name":"Serotonergic medicines"},
-    {"id":"strong-cyp3a4-inhibitor","name":"Strong CYP3A4 inhibitors"},
-    {"id":"cyp3a4-inhibitor","name":"CYP3A4 inhibitors"},
-    {"id":"cyp3a4-inducer","name":"CYP3A4 inducers"},
-    {"id":"cyp2c19-inhibitor","name":"CYP2C19 inhibitors"},
-    {"id":"ppi","name":"Proton pump inhibitors"},
-    {"id":"penicillin","name":"Penicillins"},
-    {"id":"beta-lactam","name":"Beta-lactam antibacterials"},
-    {"id":"cephalosporin","name":"Cephalosporins"},
-    {"id":"macrolide","name":"Macrolides"},
-    {"id":"fluoroquinolone","name":"Fluoroquinolones (quinolones)"},
-    {"id":"sulfonamide","name":"Sulfonamides"},
-    {"id":"folate-antagonist","name":"Folate antagonists"},
-    {"id":"antimalarial","name":"Antimalarials"},
-    {"id":"qt-prolonging","name":"Medicines that prolong the QT interval"},
-    {"id":"polyvalent-cation","name":"Iron, calcium, magnesium, zinc, aluminium preparations (polyvalent cations)"},
-    {"id":"iron-preparation","name":"Iron preparations"},
-    {"id":"calcium-preparation","name":"Calcium preparations"},
-    {"id":"magnesium-preparation","name":"Magnesium preparations"},
-    {"id":"antacid","name":"Antacids"},
-    {"id":"thyroid-hormone","name":"Thyroid hormones"},
-    {"id":"oral-antidiabetic","name":"Antidiabetic medicines"},
-    {"id":"antibacterial","name":"Antibacterials"},
-    {"id":"corticosteroid","name":"Corticosteroids"},
-    {"id":"vitamin-k-antagonist","name":"Vitamin K antagonists (coumarins)"},
-    {"id":"diuretic","name":"Diuretics"},
-    {"id":"antihypertensive","name":"Antihypertensives"},
-    {"id":"nephrotoxic","name":"Nephrotoxic medicines"},
-    {"id":"cns-depressant","name":"CNS depressants"}
-  ],
-  "effects": ["bleeding","hyperkalaemia","serotonin-syndrome","qt-prolongation","cns-respiratory-depression","hypotension","myopathy","nephrotoxicity","hypoglycaemia","seizure-threshold","hepatotoxicity","bone-marrow-suppression","hyponatraemia","reduced-absorption"],
-  "conditions": [
-    {"id":"active-bleeding","name":"Active bleeding"},
-    {"id":"peptic-ulcer-gi-bleeding","name":"Peptic ulcer or GI bleeding (active or history)"},
-    {"id":"bleeding-disorder","name":"Bleeding disorder / haemorrhagic tendency"},
-    {"id":"haemorrhagic-stroke","name":"Haemorrhagic stroke"},
-    {"id":"heart-failure","name":"Heart failure"},
-    {"id":"severe-heart-failure","name":"Severe heart failure"},
-    {"id":"ischaemic-heart-disease","name":"Ischaemic heart disease"},
-    {"id":"cerebrovascular-disease","name":"Cerebrovascular disease"},
-    {"id":"peripheral-arterial-disease","name":"Peripheral arterial disease"},
-    {"id":"hypertension","name":"Hypertension"},
-    {"id":"hypotension","name":"Hypotension"},
-    {"id":"aortic-stenosis","name":"Aortic stenosis / LV outflow obstruction"},
-    {"id":"cardiogenic-shock","name":"Cardiogenic shock"},
-    {"id":"recent-myocardial-infarction","name":"Recent myocardial infarction"},
-    {"id":"unstable-angina","name":"Unstable angina"},
-    {"id":"qt-prolongation","name":"QT prolongation (congenital or acquired)"},
-    {"id":"bradycardia","name":"Bradycardia"},
-    {"id":"asthma","name":"Asthma"},
-    {"id":"nsaid-hypersensitivity-asthma","name":"Asthma/urticaria/rhinitis triggered by aspirin or NSAIDs"},
-    {"id":"copd-respiratory-depression","name":"Respiratory depression / severe respiratory disease"},
-    {"id":"inflammatory-bowel-disease","name":"Inflammatory bowel disease (Crohn's, ulcerative colitis)"},
-    {"id":"diabetes","name":"Diabetes mellitus"},
-    {"id":"diabetic-ketoacidosis","name":"Diabetic ketoacidosis / pre-coma"},
-    {"id":"hypothyroidism","name":"Hypothyroidism"},
-    {"id":"thyrotoxicosis","name":"Thyrotoxicosis"},
-    {"id":"adrenal-insufficiency","name":"Adrenal insufficiency"},
-    {"id":"hyperkalaemia","name":"Hyperkalaemia"},
-    {"id":"hypokalaemia","name":"Hypokalaemia"},
-    {"id":"hyponatraemia","name":"Hyponatraemia"},
-    {"id":"addisons-disease","name":"Addison's disease"},
-    {"id":"epilepsy","name":"Epilepsy / seizure disorder"},
-    {"id":"myasthenia-gravis","name":"Myasthenia gravis"},
-    {"id":"g6pd-deficiency","name":"G6PD deficiency"},
-    {"id":"porphyria","name":"Acute porphyria"},
-    {"id":"infectious-mononucleosis","name":"Infectious mononucleosis (glandular fever)"},
-    {"id":"lupus","name":"Systemic lupus erythematosus"},
-    {"id":"psoriasis","name":"Psoriasis"},
-    {"id":"retinopathy-maculopathy","name":"Retinopathy / maculopathy"},
-    {"id":"depression-suicidality","name":"Depression / suicidal thoughts"},
-    {"id":"bipolar-mania","name":"Bipolar disorder / mania"},
-    {"id":"angle-closure-glaucoma","name":"Angle-closure glaucoma"},
-    {"id":"alcohol-dependence","name":"Alcohol dependence / excess alcohol"},
-    {"id":"tendon-disorder","name":"Tendon disorder related to quinolone use"},
-    {"id":"aortic-aneurysm","name":"Aortic aneurysm / dissection"},
-    {"id":"immunodeficiency","name":"Immunodeficiency"},
-    {"id":"blood-dyscrasia","name":"Blood dyscrasia / bone marrow depression"},
-    {"id":"anaemia","name":"Anaemia"},
-    {"id":"haemochromatosis-iron-overload","name":"Haemochromatosis / iron overload"},
-    {"id":"hypercalcaemia","name":"Hypercalcaemia / hypercalciuria"},
-    {"id":"renal-calculi","name":"Kidney stones"},
-    {"id":"head-injury-raised-icp","name":"Head injury / raised intracranial pressure"},
-    {"id":"paralytic-ileus-gi-obstruction","name":"Paralytic ileus / GI obstruction"},
-    {"id":"cyp2d6-ultra-rapid-metaboliser","name":"CYP2D6 ultra-rapid metaboliser"},
-    {"id":"tonsillectomy-adenoidectomy-osa","name":"Children after tonsillectomy/adenoidectomy for obstructive sleep apnoea"},
-    {"id":"hereditary-angioedema","name":"Hereditary or idiopathic angioedema"},
-    {"id":"renal-artery-stenosis","name":"Renal artery stenosis"},
-    {"id":"dehydration-hypovolaemia","name":"Dehydration / hypovolaemia"},
-    {"id":"surgery-planned","name":"Planned surgery or procedure"},
-    {"id":"retinitis-pigmentosa","name":"Retinitis pigmentosa"},
-    {"id":"naion","name":"Non-arteritic anterior ischaemic optic neuropathy (history)"},
-    {"id":"priapism-risk","name":"Conditions predisposing to priapism"},
-    {"id":"sexual-activity-inadvisable","name":"Sexual activity inadvisable (cardiovascular)"},
-    {"id":"gi-obstruction-stricture","name":"GI stricture / obstruction"}
-  ]
+ "medicines": [
+  {
+   "id": "paracetamol",
+   "name": "Paracetamol",
+   "batch": "A"
+  },
+  {
+   "id": "co-codamol",
+   "name": "Co-codamol (codeine phosphate/paracetamol)",
+   "batch": "A"
+  },
+  {
+   "id": "codeine",
+   "name": "Codeine phosphate",
+   "batch": "A"
+  },
+  {
+   "id": "tramadol",
+   "name": "Tramadol hydrochloride",
+   "batch": "A"
+  },
+  {
+   "id": "ibuprofen",
+   "name": "Ibuprofen",
+   "batch": "A"
+  },
+  {
+   "id": "naproxen",
+   "name": "Naproxen",
+   "batch": "A"
+  },
+  {
+   "id": "amlodipine",
+   "name": "Amlodipine",
+   "batch": "B"
+  },
+  {
+   "id": "lisinopril",
+   "name": "Lisinopril",
+   "batch": "B"
+  },
+  {
+   "id": "spironolactone",
+   "name": "Spironolactone",
+   "batch": "B"
+  },
+  {
+   "id": "isosorbide-mononitrate",
+   "name": "Isosorbide mononitrate",
+   "batch": "B"
+  },
+  {
+   "id": "sildenafil",
+   "name": "Sildenafil",
+   "batch": "B"
+  },
+  {
+   "id": "atorvastatin",
+   "name": "Atorvastatin",
+   "batch": "C"
+  },
+  {
+   "id": "simvastatin",
+   "name": "Simvastatin",
+   "batch": "C"
+  },
+  {
+   "id": "clopidogrel",
+   "name": "Clopidogrel",
+   "batch": "C"
+  },
+  {
+   "id": "warfarin",
+   "name": "Warfarin sodium",
+   "batch": "C"
+  },
+  {
+   "id": "phytomenadione",
+   "name": "Phytomenadione (vitamin K1)",
+   "batch": "C"
+  },
+  {
+   "id": "metformin",
+   "name": "Metformin hydrochloride",
+   "batch": "D"
+  },
+  {
+   "id": "levothyroxine",
+   "name": "Levothyroxine sodium",
+   "batch": "D"
+  },
+  {
+   "id": "omeprazole",
+   "name": "Omeprazole",
+   "batch": "D"
+  },
+  {
+   "id": "sertraline",
+   "name": "Sertraline",
+   "batch": "D"
+  },
+  {
+   "id": "st-johns-wort",
+   "name": "St John's wort (Hypericum perforatum)",
+   "batch": "D"
+  },
+  {
+   "id": "amoxicillin",
+   "name": "Amoxicillin",
+   "batch": "E"
+  },
+  {
+   "id": "co-amoxiclav",
+   "name": "Co-amoxiclav (amoxicillin/clavulanic acid)",
+   "batch": "E"
+  },
+  {
+   "id": "clarithromycin",
+   "name": "Clarithromycin",
+   "batch": "E"
+  },
+  {
+   "id": "ciprofloxacin",
+   "name": "Ciprofloxacin",
+   "batch": "E"
+  },
+  {
+   "id": "trimethoprim",
+   "name": "Trimethoprim",
+   "batch": "F"
+  },
+  {
+   "id": "co-trimoxazole",
+   "name": "Co-trimoxazole (sulfamethoxazole/trimethoprim)",
+   "batch": "F"
+  },
+  {
+   "id": "dapsone",
+   "name": "Dapsone",
+   "batch": "F"
+  },
+  {
+   "id": "hydroxychloroquine",
+   "name": "Hydroxychloroquine sulfate",
+   "batch": "F"
+  },
+  {
+   "id": "methotrexate",
+   "name": "Methotrexate",
+   "batch": "F"
+  },
+  {
+   "id": "ferrous-sulfate",
+   "name": "Ferrous sulfate",
+   "batch": "G"
+  },
+  {
+   "id": "calcium-carbonate",
+   "name": "Calcium carbonate",
+   "batch": "G"
+  },
+  {
+   "id": "magnesium-glycerophosphate",
+   "name": "Magnesium glycerophosphate",
+   "batch": "G"
+  },
+  {
+   "id": "potassium-chloride",
+   "name": "Potassium chloride",
+   "batch": "G"
+  },
+  {
+   "id": "dapagliflozin",
+   "name": "Dapagliflozin",
+   "batch": "H"
+  },
+  {
+   "id": "empagliflozin",
+   "name": "Empagliflozin",
+   "batch": "H"
+  },
+  {
+   "id": "dapagliflozin-metformin",
+   "name": "Dapagliflozin/metformin",
+   "batch": "H"
+  },
+  {
+   "id": "empagliflozin-metformin",
+   "name": "Empagliflozin/metformin",
+   "batch": "H"
+  },
+  {
+   "id": "gliclazide",
+   "name": "Gliclazide",
+   "batch": "H"
+  },
+  {
+   "id": "glimepiride",
+   "name": "Glimepiride",
+   "batch": "H"
+  },
+  {
+   "id": "repaglinide",
+   "name": "Repaglinide",
+   "batch": "H"
+  },
+  {
+   "id": "linagliptin",
+   "name": "Linagliptin",
+   "batch": "I"
+  },
+  {
+   "id": "sitagliptin",
+   "name": "Sitagliptin",
+   "batch": "I"
+  },
+  {
+   "id": "sitagliptin-metformin",
+   "name": "Sitagliptin/metformin",
+   "batch": "I"
+  },
+  {
+   "id": "vildagliptin",
+   "name": "Vildagliptin",
+   "batch": "I"
+  },
+  {
+   "id": "vildagliptin-metformin",
+   "name": "Vildagliptin/metformin",
+   "batch": "I"
+  },
+  {
+   "id": "liraglutide",
+   "name": "Liraglutide",
+   "batch": "I"
+  },
+  {
+   "id": "dulaglutide",
+   "name": "Dulaglutide",
+   "batch": "I"
+  },
+  {
+   "id": "insulin-lispro",
+   "name": "Insulin lispro (incl. biphasic lispro)",
+   "batch": "J"
+  },
+  {
+   "id": "insulin-aspart",
+   "name": "Insulin aspart (incl. biphasic aspart)",
+   "batch": "J"
+  },
+  {
+   "id": "insulin-glargine",
+   "name": "Insulin glargine",
+   "batch": "J"
+  },
+  {
+   "id": "insulin-degludec",
+   "name": "Insulin degludec",
+   "batch": "J"
+  },
+  {
+   "id": "insulin-glargine-lixisenatide",
+   "name": "Insulin glargine/lixisenatide",
+   "batch": "J"
+  },
+  {
+   "id": "human-insulin",
+   "name": "Human insulin (soluble, isophane, biphasic 30/70)",
+   "batch": "J"
+  },
+  {
+   "id": "candesartan",
+   "name": "Candesartan cilexetil",
+   "batch": "K"
+  },
+  {
+   "id": "valsartan",
+   "name": "Valsartan",
+   "batch": "K"
+  },
+  {
+   "id": "valsartan-hydrochlorothiazide",
+   "name": "Valsartan/hydrochlorothiazide",
+   "batch": "K"
+  },
+  {
+   "id": "telmisartan",
+   "name": "Telmisartan",
+   "batch": "K"
+  },
+  {
+   "id": "telmisartan-amlodipine",
+   "name": "Telmisartan/amlodipine",
+   "batch": "K"
+  },
+  {
+   "id": "telmisartan-hydrochlorothiazide",
+   "name": "Telmisartan/hydrochlorothiazide",
+   "batch": "K"
+  },
+  {
+   "id": "amlodipine-valsartan",
+   "name": "Amlodipine/valsartan",
+   "batch": "L"
+  },
+  {
+   "id": "amlodipine-valsartan-hydrochlorothiazide",
+   "name": "Amlodipine/valsartan/hydrochlorothiazide",
+   "batch": "L"
+  },
+  {
+   "id": "perindopril",
+   "name": "Perindopril arginine",
+   "batch": "L"
+  },
+  {
+   "id": "perindopril-amlodipine",
+   "name": "Perindopril arginine/amlodipine",
+   "batch": "L"
+  },
+  {
+   "id": "lisinopril-hydrochlorothiazide",
+   "name": "Lisinopril/hydrochlorothiazide",
+   "batch": "L"
+  },
+  {
+   "id": "captopril",
+   "name": "Captopril",
+   "batch": "L"
+  },
+  {
+   "id": "indapamide",
+   "name": "Indapamide",
+   "batch": "M"
+  },
+  {
+   "id": "hydrochlorothiazide",
+   "name": "Hydrochlorothiazide",
+   "batch": "M"
+  },
+  {
+   "id": "furosemide",
+   "name": "Furosemide",
+   "batch": "M"
+  },
+  {
+   "id": "co-amilozide",
+   "name": "Co-amilozide (amiloride/hydrochlorothiazide)",
+   "batch": "M"
+  },
+  {
+   "id": "atenolol-chlortalidone",
+   "name": "Atenolol/chlortalidone (co-tenidone)",
+   "batch": "M"
+  },
+  {
+   "id": "methyldopa",
+   "name": "Methyldopa",
+   "batch": "M"
+  },
+  {
+   "id": "moxonidine",
+   "name": "Moxonidine",
+   "batch": "M"
+  },
+  {
+   "id": "atenolol",
+   "name": "Atenolol",
+   "batch": "N"
+  },
+  {
+   "id": "bisoprolol",
+   "name": "Bisoprolol fumarate",
+   "batch": "N"
+  },
+  {
+   "id": "propranolol",
+   "name": "Propranolol hydrochloride",
+   "batch": "N"
+  },
+  {
+   "id": "verapamil",
+   "name": "Verapamil hydrochloride",
+   "batch": "N"
+  },
+  {
+   "id": "diltiazem",
+   "name": "Diltiazem hydrochloride",
+   "batch": "N"
+  },
+  {
+   "id": "nifedipine",
+   "name": "Nifedipine",
+   "batch": "N"
+  },
+  {
+   "id": "lercanidipine",
+   "name": "Lercanidipine hydrochloride",
+   "batch": "N"
+  },
+  {
+   "id": "isosorbide-dinitrate",
+   "name": "Isosorbide dinitrate",
+   "batch": "O"
+  },
+  {
+   "id": "glyceryl-trinitrate",
+   "name": "Glyceryl trinitrate",
+   "batch": "O"
+  },
+  {
+   "id": "rosuvastatin",
+   "name": "Rosuvastatin",
+   "batch": "O"
+  },
+  {
+   "id": "ezetimibe",
+   "name": "Ezetimibe",
+   "batch": "O"
+  },
+  {
+   "id": "fenofibrate",
+   "name": "Fenofibrate",
+   "batch": "O"
+  },
+  {
+   "id": "omega-3-acid-ethyl-esters",
+   "name": "Omega-3-acid ethyl esters",
+   "batch": "O"
+  },
+  {
+   "id": "amitriptyline",
+   "name": "Amitriptyline hydrochloride",
+   "batch": "P"
+  },
+  {
+   "id": "mirtazapine",
+   "name": "Mirtazapine",
+   "batch": "P"
+  },
+  {
+   "id": "fluoxetine",
+   "name": "Fluoxetine",
+   "batch": "P"
+  },
+  {
+   "id": "escitalopram",
+   "name": "Escitalopram",
+   "batch": "P"
+  },
+  {
+   "id": "venlafaxine",
+   "name": "Venlafaxine",
+   "batch": "Q"
+  },
+  {
+   "id": "desvenlafaxine",
+   "name": "Desvenlafaxine",
+   "batch": "Q"
+  },
+  {
+   "id": "duloxetine",
+   "name": "Duloxetine",
+   "batch": "Q"
+  },
+  {
+   "id": "carbamazepine",
+   "name": "Carbamazepine",
+   "batch": "Q"
+  },
+  {
+   "id": "betahistine",
+   "name": "Betahistine dihydrochloride",
+   "batch": "Q"
+  },
+  {
+   "id": "cinnarizine",
+   "name": "Cinnarizine",
+   "batch": "Q"
+  },
+  {
+   "id": "diclofenac",
+   "name": "Diclofenac (oral, topical, rectal)",
+   "batch": "R"
+  },
+  {
+   "id": "etoricoxib",
+   "name": "Etoricoxib",
+   "batch": "R"
+  },
+  {
+   "id": "celecoxib",
+   "name": "Celecoxib",
+   "batch": "R"
+  },
+  {
+   "id": "mefenamic-acid",
+   "name": "Mefenamic acid",
+   "batch": "R"
+  },
+  {
+   "id": "aspirin",
+   "name": "Aspirin (acetylsalicylic acid)",
+   "batch": "R"
+  },
+  {
+   "id": "paracetamol-chlorzoxazone",
+   "name": "Paracetamol/chlorzoxazone",
+   "batch": "R"
+  },
+  {
+   "id": "orphenadrine-paracetamol",
+   "name": "Orphenadrine/paracetamol",
+   "batch": "R"
+  },
+  {
+   "id": "cetirizine",
+   "name": "Cetirizine hydrochloride",
+   "batch": "S"
+  },
+  {
+   "id": "levocetirizine",
+   "name": "Levocetirizine",
+   "batch": "S"
+  },
+  {
+   "id": "loratadine",
+   "name": "Loratadine",
+   "batch": "S"
+  },
+  {
+   "id": "desloratadine",
+   "name": "Desloratadine",
+   "batch": "S"
+  },
+  {
+   "id": "loratadine-pseudoephedrine",
+   "name": "Loratadine/pseudoephedrine",
+   "batch": "S"
+  },
+  {
+   "id": "cetirizine-pseudoephedrine",
+   "name": "Cetirizine/pseudoephedrine",
+   "batch": "S"
+  },
+  {
+   "id": "paracetamol-pseudoephedrine-chlorphenamine",
+   "name": "Paracetamol/pseudoephedrine/chlorphenamine",
+   "batch": "T"
+  },
+  {
+   "id": "paracetamol-pseudoephedrine-chlorphenamine-caffeine",
+   "name": "Paracetamol/pseudoephedrine/chlorphenamine/caffeine",
+   "batch": "T"
+  },
+  {
+   "id": "dextromethorphan-guaifenesin",
+   "name": "Dextromethorphan/guaifenesin",
+   "batch": "T"
+  },
+  {
+   "id": "bromhexine",
+   "name": "Bromhexine hydrochloride",
+   "batch": "T"
+  },
+  {
+   "id": "xylometazoline",
+   "name": "Xylometazoline hydrochloride (nasal)",
+   "batch": "T"
+  },
+  {
+   "id": "sodium-chloride-nasal",
+   "name": "Sodium chloride 0.9% (nasal)",
+   "batch": "T"
+  },
+  {
+   "id": "budesonide-formoterol",
+   "name": "Budesonide/formoterol (inhaler)",
+   "batch": "U"
+  },
+  {
+   "id": "fluticasone-propionate-salmeterol",
+   "name": "Fluticasone propionate/salmeterol (inhaler)",
+   "batch": "U"
+  },
+  {
+   "id": "fluticasone-propionate-formoterol",
+   "name": "Fluticasone propionate/formoterol (inhaler)",
+   "batch": "U"
+  },
+  {
+   "id": "tiotropium",
+   "name": "Tiotropium (inhaler)",
+   "batch": "U"
+  },
+  {
+   "id": "fluticasone-furoate-umeclidinium-vilanterol",
+   "name": "Fluticasone furoate/umeclidinium/vilanterol (inhaler)",
+   "batch": "U"
+  },
+  {
+   "id": "salbutamol",
+   "name": "Salbutamol (inhaler)",
+   "batch": "U"
+  },
+  {
+   "id": "salbutamol-budesonide",
+   "name": "Salbutamol/budesonide (inhaler)",
+   "batch": "U"
+  },
+  {
+   "id": "budesonide-nebuliser",
+   "name": "Budesonide (nebuliser suspension)",
+   "batch": "V"
+  },
+  {
+   "id": "ipratropium",
+   "name": "Ipratropium bromide (nebuliser)",
+   "batch": "V"
+  },
+  {
+   "id": "montelukast",
+   "name": "Montelukast",
+   "batch": "V"
+  },
+  {
+   "id": "mometasone-nasal",
+   "name": "Mometasone furoate (nasal spray)",
+   "batch": "V"
+  },
+  {
+   "id": "fluticasone-furoate-nasal",
+   "name": "Fluticasone furoate (nasal spray)",
+   "batch": "V"
+  },
+  {
+   "id": "beclometasone-nasal",
+   "name": "Beclometasone dipropionate (nasal spray)",
+   "batch": "V"
+  },
+  {
+   "id": "pantoprazole",
+   "name": "Pantoprazole",
+   "batch": "W"
+  },
+  {
+   "id": "dexlansoprazole",
+   "name": "Dexlansoprazole",
+   "batch": "W"
+  },
+  {
+   "id": "domperidone",
+   "name": "Domperidone",
+   "batch": "W"
+  },
+  {
+   "id": "metoclopramide",
+   "name": "Metoclopramide",
+   "batch": "W"
+  },
+  {
+   "id": "ondansetron",
+   "name": "Ondansetron",
+   "batch": "W"
+  },
+  {
+   "id": "itopride",
+   "name": "Itopride hydrochloride",
+   "batch": "W"
+  },
+  {
+   "id": "hyoscine-butylbromide",
+   "name": "Hyoscine butylbromide",
+   "batch": "X"
+  },
+  {
+   "id": "dicycloverine",
+   "name": "Dicycloverine hydrochloride",
+   "batch": "X"
+  },
+  {
+   "id": "mebeverine",
+   "name": "Mebeverine hydrochloride",
+   "batch": "X"
+  },
+  {
+   "id": "otilonium",
+   "name": "Otilonium bromide",
+   "batch": "X"
+  },
+  {
+   "id": "pinaverium",
+   "name": "Pinaverium bromide",
+   "batch": "X"
+  },
+  {
+   "id": "chlordiazepoxide-clidinium",
+   "name": "Chlordiazepoxide/clidinium",
+   "batch": "X"
+  },
+  {
+   "id": "simeticone",
+   "name": "Simeticone",
+   "batch": "X"
+  },
+  {
+   "id": "lactulose",
+   "name": "Lactulose",
+   "batch": "Y"
+  },
+  {
+   "id": "macrogol",
+   "name": "Macrogol 3350 (with electrolytes)",
+   "batch": "Y"
+  },
+  {
+   "id": "senna",
+   "name": "Senna (sennosides)",
+   "batch": "Y"
+  },
+  {
+   "id": "bisacodyl",
+   "name": "Bisacodyl",
+   "batch": "Y"
+  },
+  {
+   "id": "ispaghula-senna",
+   "name": "Ispaghula husk/senna",
+   "batch": "Y"
+  },
+  {
+   "id": "loperamide",
+   "name": "Loperamide hydrochloride",
+   "batch": "Y"
+  },
+  {
+   "id": "racecadotril",
+   "name": "Racecadotril",
+   "batch": "Y"
+  },
+  {
+   "id": "aluminium-magnesium-hydroxide",
+   "name": "Aluminium hydroxide/magnesium hydroxide (antacid)",
+   "batch": "Z"
+  },
+  {
+   "id": "alginate-antacid",
+   "name": "Sodium alginate/sodium bicarbonate/calcium carbonate",
+   "batch": "Z"
+  },
+  {
+   "id": "oral-rehydration-salts",
+   "name": "Oral rehydration salts",
+   "batch": "Z"
+  },
+  {
+   "id": "carminative",
+   "name": "Carminative mixture (paediatric)",
+   "batch": "Z"
+  },
+  {
+   "id": "sodium-bicarbonate-potassium-citrate",
+   "name": "Sodium bicarbonate/potassium citrate/citric acid (urinary alkaliniser)",
+   "batch": "Z"
+  },
+  {
+   "id": "potassium-sodium-hydrogen-citrate",
+   "name": "Potassium sodium hydrogen citrate",
+   "batch": "Z"
+  },
+  {
+   "id": "cefixime",
+   "name": "Cefixime",
+   "batch": "AA"
+  },
+  {
+   "id": "cefalexin",
+   "name": "Cefalexin",
+   "batch": "AA"
+  },
+  {
+   "id": "cefuroxime",
+   "name": "Cefuroxime (oral)",
+   "batch": "AA"
+  },
+  {
+   "id": "azithromycin",
+   "name": "Azithromycin",
+   "batch": "AA"
+  },
+  {
+   "id": "doxycycline",
+   "name": "Doxycycline",
+   "batch": "AA"
+  },
+  {
+   "id": "nitrofurantoin",
+   "name": "Nitrofurantoin",
+   "batch": "AA"
+  },
+  {
+   "id": "metronidazole",
+   "name": "Metronidazole",
+   "batch": "AB"
+  },
+  {
+   "id": "tinidazole",
+   "name": "Tinidazole",
+   "batch": "AB"
+  },
+  {
+   "id": "clindamycin",
+   "name": "Clindamycin (oral, vaginal)",
+   "batch": "AB"
+  },
+  {
+   "id": "moxifloxacin",
+   "name": "Moxifloxacin",
+   "batch": "AB"
+  },
+  {
+   "id": "levofloxacin",
+   "name": "Levofloxacin",
+   "batch": "AB"
+  },
+  {
+   "id": "mebendazole",
+   "name": "Mebendazole",
+   "batch": "AB"
+  },
+  {
+   "id": "fluconazole",
+   "name": "Fluconazole",
+   "batch": "AC"
+  },
+  {
+   "id": "miconazole",
+   "name": "Miconazole (oral gel, vaginal)",
+   "batch": "AC"
+  },
+  {
+   "id": "aciclovir",
+   "name": "Aciclovir (cream)",
+   "batch": "AC"
+  },
+  {
+   "id": "oseltamivir",
+   "name": "Oseltamivir",
+   "batch": "AC"
+  },
+  {
+   "id": "fenticonazole",
+   "name": "Fenticonazole (vaginal)",
+   "batch": "AC"
+  },
+  {
+   "id": "nystatin",
+   "name": "Nystatin (topical)",
+   "batch": "AC"
+  },
+  {
+   "id": "desmopressin",
+   "name": "Desmopressin",
+   "batch": "AD"
+  },
+  {
+   "id": "cabergoline",
+   "name": "Cabergoline",
+   "batch": "AD"
+  },
+  {
+   "id": "tamsulosin",
+   "name": "Tamsulosin hydrochloride",
+   "batch": "AD"
+  },
+  {
+   "id": "denosumab",
+   "name": "Denosumab",
+   "batch": "AD"
+  },
+  {
+   "id": "allopurinol",
+   "name": "Allopurinol",
+   "batch": "AD"
+  },
+  {
+   "id": "febuxostat",
+   "name": "Febuxostat",
+   "batch": "AD"
+  },
+  {
+   "id": "progesterone",
+   "name": "Progesterone (vaginal)",
+   "batch": "AE"
+  },
+  {
+   "id": "norethisterone",
+   "name": "Norethisterone",
+   "batch": "AE"
+  },
+  {
+   "id": "dydrogesterone",
+   "name": "Dydrogesterone",
+   "batch": "AE"
+  },
+  {
+   "id": "estriol-lactobacillus",
+   "name": "Estriol/Lactobacillus acidophilus (vaginal)",
+   "batch": "AE"
+  },
+  {
+   "id": "prednisolone",
+   "name": "Prednisolone (oral)",
+   "batch": "AE"
+  },
+  {
+   "id": "dexamethasone",
+   "name": "Dexamethasone (oral)",
+   "batch": "AE"
+  },
+  {
+   "id": "colecalciferol",
+   "name": "Colecalciferol (vitamin D3)",
+   "batch": "AF"
+  },
+  {
+   "id": "calcium-carbonate-colecalciferol",
+   "name": "Calcium carbonate/colecalciferol",
+   "batch": "AF"
+  },
+  {
+   "id": "ferrous-sulfate-folic-acid",
+   "name": "Ferrous sulfate/folic acid",
+   "batch": "AF"
+  },
+  {
+   "id": "folic-acid",
+   "name": "Folic acid",
+   "batch": "AF"
+  },
+  {
+   "id": "ascorbic-acid",
+   "name": "Ascorbic acid (vitamin C)",
+   "batch": "AF"
+  },
+  {
+   "id": "vitamin-b-complex",
+   "name": "Vitamin B complex",
+   "batch": "AF"
+  },
+  {
+   "id": "iron-polymaltose-b-complex",
+   "name": "Iron polymaltose/vitamin B complex",
+   "batch": "AF"
+  },
+  {
+   "id": "calcium-glubionate",
+   "name": "Calcium glubionate/calcium lactobionate",
+   "batch": "AF"
+  },
+  {
+   "id": "hydrocortisone-topical",
+   "name": "Hydrocortisone (topical)",
+   "batch": "AG"
+  },
+  {
+   "id": "fusidic-acid",
+   "name": "Fusidic acid (topical)",
+   "batch": "AG"
+  },
+  {
+   "id": "fusidic-acid-hydrocortisone",
+   "name": "Fusidic acid/hydrocortisone (topical)",
+   "batch": "AG"
+  },
+  {
+   "id": "fusidic-acid-betamethasone",
+   "name": "Fusidic acid/betamethasone (topical)",
+   "batch": "AG"
+  },
+  {
+   "id": "miconazole-hydrocortisone",
+   "name": "Miconazole/hydrocortisone (topical)",
+   "batch": "AG"
+  },
+  {
+   "id": "mometasone-miconazole",
+   "name": "Mometasone/miconazole (topical)",
+   "batch": "AG"
+  },
+  {
+   "id": "isoconazole-diflucortolone",
+   "name": "Isoconazole/diflucortolone (topical)",
+   "batch": "AG"
+  },
+  {
+   "id": "betamethasone-miconazole-gentamicin",
+   "name": "Betamethasone/miconazole/gentamicin (topical)",
+   "batch": "AH"
+  },
+  {
+   "id": "triamcinolone-nystatin-neomycin",
+   "name": "Triamcinolone/nystatin/neomycin (topical)",
+   "batch": "AH"
+  },
+  {
+   "id": "clotrimazole",
+   "name": "Clotrimazole (topical)",
+   "batch": "AH"
+  },
+  {
+   "id": "mupirocin",
+   "name": "Mupirocin (topical)",
+   "batch": "AH"
+  },
+  {
+   "id": "silver-sulfadiazine",
+   "name": "Silver sulfadiazine (topical)",
+   "batch": "AH"
+  },
+  {
+   "id": "povidone-iodine",
+   "name": "Povidone-iodine (topical)",
+   "batch": "AH"
+  },
+  {
+   "id": "calamine-zinc-oxide",
+   "name": "Calamine/zinc oxide (topical)",
+   "batch": "AH"
+  },
+  {
+   "id": "lidocaine-topical",
+   "name": "Lidocaine (topical gel)",
+   "batch": "AI"
+  },
+  {
+   "id": "capsaicin",
+   "name": "Capsaicin (topical)",
+   "batch": "AI"
+  },
+  {
+   "id": "menthol-methyl-salicylate-camphor",
+   "name": "Menthol/methyl salicylate/camphor (topical)",
+   "batch": "AI"
+  },
+  {
+   "id": "aescin-diethylamine-salicylate",
+   "name": "Aescin/diethylamine salicylate (topical gel)",
+   "batch": "AI"
+  },
+  {
+   "id": "aescin",
+   "name": "Aescin (oral)",
+   "batch": "AI"
+  },
+  {
+   "id": "diosmin-hesperidin",
+   "name": "Diosmin/hesperidin",
+   "batch": "AI"
+  },
+  {
+   "id": "white-soft-paraffin",
+   "name": "White soft paraffin",
+   "batch": "AI"
+  },
+  {
+   "id": "ichthammol",
+   "name": "Ichthammol (ammonium bituminosulfonate)",
+   "batch": "AJ"
+  },
+  {
+   "id": "permethrin",
+   "name": "Permethrin (topical)",
+   "batch": "AJ"
+  },
+  {
+   "id": "dimeticone-lice",
+   "name": "Dimeticone (head lice)",
+   "batch": "AJ"
+  },
+  {
+   "id": "dexpanthenol",
+   "name": "Dexpanthenol (topical)",
+   "batch": "AJ"
+  },
+  {
+   "id": "dexpanthenol-chlorhexidine",
+   "name": "Dexpanthenol/chlorhexidine (topical)",
+   "batch": "AJ"
+  },
+  {
+   "id": "beta-sitosterol-beeswax",
+   "name": "Beta-sitosterol/beeswax ointment",
+   "batch": "AJ"
+  },
+  {
+   "id": "anti-haemorrhoid",
+   "name": "Anti-haemorrhoid ointment (clinic product)",
+   "batch": "AJ"
+  },
+  {
+   "id": "gentamicin-drops",
+   "name": "Gentamicin (eye/ear drops)",
+   "batch": "AK"
+  },
+  {
+   "id": "chloramphenicol-eye",
+   "name": "Chloramphenicol (eye ointment)",
+   "batch": "AK"
+  },
+  {
+   "id": "neomycin-polymyxin-dexamethasone-eye",
+   "name": "Neomycin/polymyxin B/dexamethasone (eye)",
+   "batch": "AK"
+  },
+  {
+   "id": "neomycin-polymyxin-prednisolone-ear",
+   "name": "Neomycin/polymyxin B/prednisolone (ear)",
+   "batch": "AK"
+  },
+  {
+   "id": "gentamicin-dexamethasone-ear",
+   "name": "Gentamicin/dexamethasone (ear)",
+   "batch": "AK"
+  },
+  {
+   "id": "ciprofloxacin-hydrocortisone-ear",
+   "name": "Ciprofloxacin/hydrocortisone (ear)",
+   "batch": "AK"
+  },
+  {
+   "id": "phenol-glycerol-ear",
+   "name": "Phenol/glycerol (ear drops)",
+   "batch": "AK"
+  },
+  {
+   "id": "naphazoline-pheniramine",
+   "name": "Naphazoline/pheniramine (eye drops)",
+   "batch": "AL"
+  },
+  {
+   "id": "polyvinyl-alcohol-povidone",
+   "name": "Polyvinyl alcohol/povidone (eye drops)",
+   "batch": "AL"
+  },
+  {
+   "id": "chlorhexidine-mouthwash",
+   "name": "Chlorhexidine gluconate (mouthwash)",
+   "batch": "AL"
+  },
+  {
+   "id": "benzydamine",
+   "name": "Benzydamine hydrochloride (mouthwash)",
+   "batch": "AL"
+  },
+  {
+   "id": "choline-salicylate-cetalkonium",
+   "name": "Choline salicylate/cetalkonium (oral gel)",
+   "batch": "AL"
+  },
+  {
+   "id": "krameria",
+   "name": "Krameria (rhatany) mouthwash",
+   "batch": "AL"
+  },
+  {
+   "id": "rowatinex",
+   "name": "Rowatinex (terpene combination)",
+   "batch": "P"
+  },
+  {
+   "id": "cystone",
+   "name": "Cystone (herbal combination)",
+   "batch": "P"
+  }
+ ],
+ "ingredients": [
+  "paracetamol",
+  "codeine",
+  "tramadol",
+  "ibuprofen",
+  "naproxen",
+  "amlodipine",
+  "lisinopril",
+  "spironolactone",
+  "isosorbide-mononitrate",
+  "sildenafil",
+  "atorvastatin",
+  "simvastatin",
+  "clopidogrel",
+  "warfarin",
+  "phytomenadione",
+  "metformin",
+  "levothyroxine",
+  "omeprazole",
+  "sertraline",
+  "hypericum",
+  "amoxicillin",
+  "clavulanic-acid",
+  "clarithromycin",
+  "ciprofloxacin",
+  "trimethoprim",
+  "sulfamethoxazole",
+  "dapsone",
+  "hydroxychloroquine",
+  "methotrexate",
+  "iron",
+  "calcium",
+  "magnesium",
+  "potassium",
+  "dapagliflozin",
+  "empagliflozin",
+  "gliclazide",
+  "glimepiride",
+  "repaglinide",
+  "linagliptin",
+  "sitagliptin",
+  "vildagliptin",
+  "liraglutide",
+  "dulaglutide",
+  "insulin-lispro",
+  "insulin-aspart",
+  "insulin-glargine",
+  "insulin-degludec",
+  "lixisenatide",
+  "human-insulin",
+  "candesartan",
+  "valsartan",
+  "hydrochlorothiazide",
+  "telmisartan",
+  "perindopril",
+  "captopril",
+  "indapamide",
+  "furosemide",
+  "amiloride",
+  "atenolol",
+  "bendroflumethiazide",
+  "methyldopa",
+  "moxonidine",
+  "bisoprolol",
+  "propranolol",
+  "verapamil",
+  "diltiazem",
+  "nifedipine",
+  "lercanidipine",
+  "isosorbide-dinitrate",
+  "glyceryl-trinitrate",
+  "rosuvastatin",
+  "ezetimibe",
+  "fenofibrate",
+  "omega-3-acid-ethyl-esters",
+  "amitriptyline",
+  "mirtazapine",
+  "fluoxetine",
+  "escitalopram",
+  "venlafaxine",
+  "desvenlafaxine",
+  "duloxetine",
+  "carbamazepine",
+  "betahistine",
+  "cinnarizine",
+  "diclofenac",
+  "etoricoxib",
+  "celecoxib",
+  "mefenamic-acid",
+  "aspirin",
+  "chlorzoxazone",
+  "orphenadrine",
+  "cetirizine",
+  "levocetirizine",
+  "loratadine",
+  "desloratadine",
+  "pseudoephedrine",
+  "chlorphenamine",
+  "caffeine",
+  "dextromethorphan",
+  "guaifenesin",
+  "bromhexine",
+  "xylometazoline",
+  "sodium-chloride",
+  "budesonide",
+  "formoterol",
+  "fluticasone-propionate",
+  "salmeterol",
+  "tiotropium",
+  "fluticasone-furoate",
+  "umeclidinium",
+  "vilanterol",
+  "salbutamol",
+  "ipratropium",
+  "montelukast",
+  "mometasone",
+  "beclometasone",
+  "pantoprazole",
+  "dexlansoprazole",
+  "domperidone",
+  "metoclopramide",
+  "ondansetron",
+  "itopride",
+  "hyoscine-butylbromide",
+  "dicycloverine",
+  "mebeverine",
+  "otilonium",
+  "pinaverium",
+  "chlordiazepoxide",
+  "clidinium",
+  "simeticone",
+  "lactulose",
+  "macrogol",
+  "senna",
+  "bisacodyl",
+  "ispaghula",
+  "loperamide",
+  "racecadotril",
+  "aluminium",
+  "alginate",
+  "sodium-bicarbonate",
+  "glucose",
+  "citrate",
+  "carminative",
+  "cefixime",
+  "cefalexin",
+  "cefuroxime",
+  "azithromycin",
+  "doxycycline",
+  "nitrofurantoin",
+  "metronidazole",
+  "tinidazole",
+  "clindamycin",
+  "moxifloxacin",
+  "levofloxacin",
+  "mebendazole",
+  "fluconazole",
+  "miconazole",
+  "aciclovir",
+  "oseltamivir",
+  "fenticonazole",
+  "nystatin",
+  "desmopressin",
+  "cabergoline",
+  "tamsulosin",
+  "denosumab",
+  "allopurinol",
+  "febuxostat",
+  "progesterone",
+  "norethisterone",
+  "dydrogesterone",
+  "estriol",
+  "lactobacillus",
+  "prednisolone",
+  "dexamethasone",
+  "colecalciferol",
+  "folic-acid",
+  "ascorbic-acid",
+  "vitamin-b-complex",
+  "hydrocortisone",
+  "fusidic-acid",
+  "betamethasone",
+  "isoconazole",
+  "diflucortolone",
+  "gentamicin",
+  "triamcinolone",
+  "neomycin",
+  "clotrimazole",
+  "mupirocin",
+  "silver-sulfadiazine",
+  "povidone-iodine",
+  "calamine",
+  "zinc-oxide",
+  "lidocaine",
+  "capsaicin",
+  "menthol",
+  "methyl-salicylate",
+  "camphor",
+  "aescin",
+  "diethylamine-salicylate",
+  "diosmin",
+  "hesperidin",
+  "white-soft-paraffin",
+  "ichthammol",
+  "permethrin",
+  "dimeticone",
+  "dexpanthenol",
+  "chlorhexidine",
+  "beta-sitosterol",
+  "anti-haemorrhoid",
+  "chloramphenicol",
+  "polymyxin-b",
+  "phenol",
+  "glycerol",
+  "naphazoline",
+  "pheniramine",
+  "polyvinyl-alcohol",
+  "povidone",
+  "benzydamine",
+  "choline-salicylate",
+  "cetalkonium",
+  "krameria",
+  "rowatinex",
+  "cystone",
+  "chlortalidone"
+ ],
+ "groups": [
+  {
+   "id": "nsaid",
+   "name": "NSAIDs"
+  },
+  {
+   "id": "opioid",
+   "name": "Opioids"
+  },
+  {
+   "id": "ace-inhibitor",
+   "name": "ACE inhibitors"
+  },
+  {
+   "id": "potassium-sparing-diuretic",
+   "name": "Potassium-sparing diuretics / aldosterone antagonists"
+  },
+  {
+   "id": "potassium-supplement",
+   "name": "Potassium supplements"
+  },
+  {
+   "id": "nitrate",
+   "name": "Nitrates / nitric oxide donors"
+  },
+  {
+   "id": "pde5-inhibitor",
+   "name": "Phosphodiesterase type-5 inhibitors"
+  },
+  {
+   "id": "calcium-channel-blocker",
+   "name": "Calcium-channel blockers"
+  },
+  {
+   "id": "statin",
+   "name": "Statins (HMG-CoA reductase inhibitors)"
+  },
+  {
+   "id": "anticoagulant",
+   "name": "Anticoagulants"
+  },
+  {
+   "id": "antiplatelet",
+   "name": "Antiplatelet medicines"
+  },
+  {
+   "id": "ssri",
+   "name": "SSRIs"
+  },
+  {
+   "id": "serotonergic",
+   "name": "Serotonergic medicines"
+  },
+  {
+   "id": "strong-cyp3a4-inhibitor",
+   "name": "Strong CYP3A4 inhibitors"
+  },
+  {
+   "id": "cyp3a4-inhibitor",
+   "name": "CYP3A4 inhibitors"
+  },
+  {
+   "id": "cyp3a4-inducer",
+   "name": "CYP3A4 inducers"
+  },
+  {
+   "id": "cyp2c19-inhibitor",
+   "name": "CYP2C19 inhibitors"
+  },
+  {
+   "id": "ppi",
+   "name": "Proton pump inhibitors"
+  },
+  {
+   "id": "penicillin",
+   "name": "Penicillins"
+  },
+  {
+   "id": "beta-lactam",
+   "name": "Beta-lactam antibacterials"
+  },
+  {
+   "id": "cephalosporin",
+   "name": "Cephalosporins"
+  },
+  {
+   "id": "macrolide",
+   "name": "Macrolides"
+  },
+  {
+   "id": "fluoroquinolone",
+   "name": "Fluoroquinolones (quinolones)"
+  },
+  {
+   "id": "sulfonamide",
+   "name": "Sulfonamides"
+  },
+  {
+   "id": "folate-antagonist",
+   "name": "Folate antagonists"
+  },
+  {
+   "id": "antimalarial",
+   "name": "Antimalarials"
+  },
+  {
+   "id": "qt-prolonging",
+   "name": "Medicines that prolong the QT interval"
+  },
+  {
+   "id": "polyvalent-cation",
+   "name": "Iron, calcium, magnesium, zinc, aluminium preparations (polyvalent cations)"
+  },
+  {
+   "id": "iron-preparation",
+   "name": "Iron preparations"
+  },
+  {
+   "id": "calcium-preparation",
+   "name": "Calcium preparations"
+  },
+  {
+   "id": "magnesium-preparation",
+   "name": "Magnesium preparations"
+  },
+  {
+   "id": "antacid",
+   "name": "Antacids"
+  },
+  {
+   "id": "thyroid-hormone",
+   "name": "Thyroid hormones"
+  },
+  {
+   "id": "oral-antidiabetic",
+   "name": "Antidiabetic medicines"
+  },
+  {
+   "id": "antibacterial",
+   "name": "Antibacterials"
+  },
+  {
+   "id": "corticosteroid",
+   "name": "Corticosteroids"
+  },
+  {
+   "id": "vitamin-k-antagonist",
+   "name": "Vitamin K antagonists (coumarins)"
+  },
+  {
+   "id": "diuretic",
+   "name": "Diuretics"
+  },
+  {
+   "id": "antihypertensive",
+   "name": "Antihypertensives"
+  },
+  {
+   "id": "nephrotoxic",
+   "name": "Nephrotoxic medicines"
+  },
+  {
+   "id": "cns-depressant",
+   "name": "CNS depressants"
+  },
+  {
+   "id": "beta-blocker",
+   "name": "Beta-blockers"
+  },
+  {
+   "id": "thiazide",
+   "name": "Thiazide and thiazide-like diuretics"
+  },
+  {
+   "id": "loop-diuretic",
+   "name": "Loop diuretics"
+  },
+  {
+   "id": "arb",
+   "name": "Angiotensin II receptor blockers (ARBs)"
+  },
+  {
+   "id": "sulfonylurea",
+   "name": "Sulfonylureas"
+  },
+  {
+   "id": "insulin",
+   "name": "Insulins"
+  },
+  {
+   "id": "sglt2-inhibitor",
+   "name": "SGLT2 inhibitors"
+  },
+  {
+   "id": "dpp4-inhibitor",
+   "name": "DPP-4 inhibitors"
+  },
+  {
+   "id": "glp1-agonist",
+   "name": "GLP-1 receptor agonists"
+  },
+  {
+   "id": "antidiabetic",
+   "name": "Antidiabetic medicines (all, incl. insulin)"
+  },
+  {
+   "id": "tricyclic-antidepressant",
+   "name": "Tricyclic antidepressants"
+  },
+  {
+   "id": "snri",
+   "name": "SNRIs"
+  },
+  {
+   "id": "maoi",
+   "name": "MAO inhibitors"
+  },
+  {
+   "id": "sedating-antihistamine",
+   "name": "Sedating antihistamines"
+  },
+  {
+   "id": "antihistamine",
+   "name": "Antihistamines"
+  },
+  {
+   "id": "anticholinergic",
+   "name": "Anticholinergic (antimuscarinic) medicines, systemic"
+  },
+  {
+   "id": "azole-antifungal",
+   "name": "Azole antifungals"
+  },
+  {
+   "id": "tetracycline",
+   "name": "Tetracyclines"
+  },
+  {
+   "id": "aminoglycoside",
+   "name": "Aminoglycosides"
+  },
+  {
+   "id": "dopamine-antagonist",
+   "name": "Dopamine antagonists"
+  },
+  {
+   "id": "5ht3-antagonist",
+   "name": "5-HT3 antagonists"
+  },
+  {
+   "id": "sympathomimetic",
+   "name": "Sympathomimetics (including decongestants and beta-2 agonists)"
+  },
+  {
+   "id": "beta2-agonist",
+   "name": "Beta-2 agonists"
+  },
+  {
+   "id": "inhaled-corticosteroid",
+   "name": "Inhaled corticosteroids"
+  },
+  {
+   "id": "benzodiazepine",
+   "name": "Benzodiazepines"
+  },
+  {
+   "id": "xanthine-oxidase-inhibitor",
+   "name": "Xanthine oxidase inhibitors"
+  },
+  {
+   "id": "cyp3a4-strong-inducer",
+   "name": "Strong CYP3A4 inducers"
+  },
+  {
+   "id": "cyp2d6-inhibitor",
+   "name": "CYP2D6 inhibitors"
+  },
+  {
+   "id": "cyp2c9-inhibitor",
+   "name": "CYP2C9 inhibitors"
+  },
+  {
+   "id": "nitroimidazole",
+   "name": "Nitroimidazoles"
+  },
+  {
+   "id": "fibrate",
+   "name": "Fibrates"
+  },
+  {
+   "id": "alpha-blocker",
+   "name": "Alpha-blockers"
+  },
+  {
+   "id": "progestogen",
+   "name": "Progestogens"
+  },
+  {
+   "id": "salicylate",
+   "name": "Salicylates"
+  },
+  {
+   "id": "laxative",
+   "name": "Laxatives"
+  },
+  {
+   "id": "hepatotoxic",
+   "name": "Hepatotoxic medicines"
+  },
+  {
+   "id": "ototoxic",
+   "name": "Ototoxic medicines"
+  },
+  {
+   "id": "antiepileptic",
+   "name": "Antiepileptics"
+  }
+ ],
+ "effects": [
+  "bleeding",
+  "hyperkalaemia",
+  "serotonin-syndrome",
+  "qt-prolongation",
+  "cns-respiratory-depression",
+  "hypotension",
+  "myopathy",
+  "nephrotoxicity",
+  "hypoglycaemia",
+  "seizure-threshold",
+  "hepatotoxicity",
+  "bone-marrow-suppression",
+  "hyponatraemia",
+  "reduced-absorption"
+ ],
+ "conditions": [
+  {
+   "id": "active-bleeding",
+   "name": "Active bleeding"
+  },
+  {
+   "id": "peptic-ulcer-gi-bleeding",
+   "name": "Peptic ulcer or GI bleeding (active or history)"
+  },
+  {
+   "id": "bleeding-disorder",
+   "name": "Bleeding disorder / haemorrhagic tendency"
+  },
+  {
+   "id": "haemorrhagic-stroke",
+   "name": "Haemorrhagic stroke"
+  },
+  {
+   "id": "heart-failure",
+   "name": "Heart failure"
+  },
+  {
+   "id": "severe-heart-failure",
+   "name": "Severe heart failure"
+  },
+  {
+   "id": "ischaemic-heart-disease",
+   "name": "Ischaemic heart disease"
+  },
+  {
+   "id": "cerebrovascular-disease",
+   "name": "Cerebrovascular disease"
+  },
+  {
+   "id": "peripheral-arterial-disease",
+   "name": "Peripheral arterial disease"
+  },
+  {
+   "id": "hypertension",
+   "name": "Hypertension"
+  },
+  {
+   "id": "hypotension",
+   "name": "Hypotension"
+  },
+  {
+   "id": "aortic-stenosis",
+   "name": "Aortic stenosis / LV outflow obstruction"
+  },
+  {
+   "id": "cardiogenic-shock",
+   "name": "Cardiogenic shock"
+  },
+  {
+   "id": "recent-myocardial-infarction",
+   "name": "Recent myocardial infarction"
+  },
+  {
+   "id": "unstable-angina",
+   "name": "Unstable angina"
+  },
+  {
+   "id": "qt-prolongation",
+   "name": "QT prolongation (congenital or acquired)"
+  },
+  {
+   "id": "bradycardia",
+   "name": "Bradycardia"
+  },
+  {
+   "id": "asthma",
+   "name": "Asthma"
+  },
+  {
+   "id": "nsaid-hypersensitivity-asthma",
+   "name": "Asthma/urticaria/rhinitis triggered by aspirin or NSAIDs"
+  },
+  {
+   "id": "copd-respiratory-depression",
+   "name": "Respiratory depression / severe respiratory disease"
+  },
+  {
+   "id": "inflammatory-bowel-disease",
+   "name": "Inflammatory bowel disease (Crohn's, ulcerative colitis)"
+  },
+  {
+   "id": "diabetes",
+   "name": "Diabetes mellitus"
+  },
+  {
+   "id": "diabetic-ketoacidosis",
+   "name": "Diabetic ketoacidosis / pre-coma"
+  },
+  {
+   "id": "hypothyroidism",
+   "name": "Hypothyroidism"
+  },
+  {
+   "id": "thyrotoxicosis",
+   "name": "Thyrotoxicosis"
+  },
+  {
+   "id": "adrenal-insufficiency",
+   "name": "Adrenal insufficiency"
+  },
+  {
+   "id": "hyperkalaemia",
+   "name": "Hyperkalaemia"
+  },
+  {
+   "id": "hypokalaemia",
+   "name": "Hypokalaemia"
+  },
+  {
+   "id": "hyponatraemia",
+   "name": "Hyponatraemia"
+  },
+  {
+   "id": "addisons-disease",
+   "name": "Addison's disease"
+  },
+  {
+   "id": "epilepsy",
+   "name": "Epilepsy / seizure disorder"
+  },
+  {
+   "id": "myasthenia-gravis",
+   "name": "Myasthenia gravis"
+  },
+  {
+   "id": "g6pd-deficiency",
+   "name": "G6PD deficiency"
+  },
+  {
+   "id": "porphyria",
+   "name": "Acute porphyria"
+  },
+  {
+   "id": "infectious-mononucleosis",
+   "name": "Infectious mononucleosis (glandular fever)"
+  },
+  {
+   "id": "lupus",
+   "name": "Systemic lupus erythematosus"
+  },
+  {
+   "id": "psoriasis",
+   "name": "Psoriasis"
+  },
+  {
+   "id": "retinopathy-maculopathy",
+   "name": "Retinopathy / maculopathy"
+  },
+  {
+   "id": "depression-suicidality",
+   "name": "Depression / suicidal thoughts"
+  },
+  {
+   "id": "bipolar-mania",
+   "name": "Bipolar disorder / mania"
+  },
+  {
+   "id": "angle-closure-glaucoma",
+   "name": "Angle-closure glaucoma"
+  },
+  {
+   "id": "alcohol-dependence",
+   "name": "Alcohol dependence / excess alcohol"
+  },
+  {
+   "id": "tendon-disorder",
+   "name": "Tendon disorder related to quinolone use"
+  },
+  {
+   "id": "aortic-aneurysm",
+   "name": "Aortic aneurysm / dissection"
+  },
+  {
+   "id": "immunodeficiency",
+   "name": "Immunodeficiency"
+  },
+  {
+   "id": "blood-dyscrasia",
+   "name": "Blood dyscrasia / bone marrow depression"
+  },
+  {
+   "id": "anaemia",
+   "name": "Anaemia"
+  },
+  {
+   "id": "haemochromatosis-iron-overload",
+   "name": "Haemochromatosis / iron overload"
+  },
+  {
+   "id": "hypercalcaemia",
+   "name": "Hypercalcaemia / hypercalciuria"
+  },
+  {
+   "id": "renal-calculi",
+   "name": "Kidney stones"
+  },
+  {
+   "id": "head-injury-raised-icp",
+   "name": "Head injury / raised intracranial pressure"
+  },
+  {
+   "id": "paralytic-ileus-gi-obstruction",
+   "name": "Paralytic ileus / GI obstruction"
+  },
+  {
+   "id": "cyp2d6-ultra-rapid-metaboliser",
+   "name": "CYP2D6 ultra-rapid metaboliser"
+  },
+  {
+   "id": "tonsillectomy-adenoidectomy-osa",
+   "name": "Children after tonsillectomy/adenoidectomy for obstructive sleep apnoea"
+  },
+  {
+   "id": "hereditary-angioedema",
+   "name": "Hereditary or idiopathic angioedema"
+  },
+  {
+   "id": "renal-artery-stenosis",
+   "name": "Renal artery stenosis"
+  },
+  {
+   "id": "dehydration-hypovolaemia",
+   "name": "Dehydration / hypovolaemia"
+  },
+  {
+   "id": "surgery-planned",
+   "name": "Planned surgery or procedure"
+  },
+  {
+   "id": "retinitis-pigmentosa",
+   "name": "Retinitis pigmentosa"
+  },
+  {
+   "id": "naion",
+   "name": "Non-arteritic anterior ischaemic optic neuropathy (history)"
+  },
+  {
+   "id": "priapism-risk",
+   "name": "Conditions predisposing to priapism"
+  },
+  {
+   "id": "sexual-activity-inadvisable",
+   "name": "Sexual activity inadvisable (cardiovascular)"
+  },
+  {
+   "id": "gi-obstruction-stricture",
+   "name": "GI stricture / obstruction"
+  }
+ ]
 }

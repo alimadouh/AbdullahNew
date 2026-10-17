@@ -796,7 +796,8 @@
       "level": "contraindicated",
       "med": "naproxen",
       "allergen": [
-        "group:nsaid"
+        "group:nsaid",
+        "aspirin"
       ],
       "concern": "Aspirin/NSAID-induced asthma, rhinitis, nasal polyps or urticaria",
       "consequence": "Cross-sensitivity; severe anaphylactic-like reactions, potentially fatal.",
@@ -1688,6 +1689,103 @@
         {
           "s": "emc-987",
           "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary."
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:aspirin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "naproxen",
+      "other": "aspirin",
+      "otherFormulations": [
+        "aspirin-analgesic"
+      ],
+      "effect": "bleeding",
+      "concern": "Aspirin at analgesic dose (two NSAIDs together)",
+      "consequence": "Using two or more NSAIDs, including aspirin, may increase the risk of adverse effects.",
+      "action": "Avoid using naproxen with another NSAID, including aspirin.",
+      "sourceWording": "Avoid concomitant use of two or more NSAIDs (including aspirin)",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Other analgesics including cyclooxygenase-2 selective inhibitors: Avoid concomitant use of two or more NSAIDs (including aspirin)"
+        },
+        {
+          "s": "emc-13238",
+          "q": "Avoid concomitant use of two or more NSAIDs (including aspirin) as this may increase the risk of adverse effects"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:aspirin-low-dose",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "naproxen",
+      "other": "aspirin",
+      "otherFormulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ],
+      "concern": "Low-dose aspirin",
+      "consequence": "Naproxen taken for more than one day in a row may block the antiplatelet effect of low-dose aspirin, possibly for several days after stopping naproxen; clinical relevance not known. Naproxen is highly protein bound.",
+      "action": "Observe for signs of aspirin overdosage. Bleeding risk with antiplatelets: see the antiplatelet rule.",
+      "sourceWording": "should be observed for signs of overdosage",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "concomitant naproxen usage for more than one day consecutively may inhibit the effect of low-dose acetylsalicylic acid on platelet activity and this inhibition may persist for up to several days after stopping naproxen therapy"
+        },
+        {
+          "s": "emc-13238",
+          "q": "The clinical relevance of this interaction is not known"
+        },
+        {
+          "s": "emc-13238",
+          "q": "patients simultaneously receiving hydantoins, anticoagulants, other NSAIDs, aspirin or a highly protein-bound sulfonamide should be observed for signs of overdosage of these drugs"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:arb",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "naproxen",
+      "other": "group:arb",
+      "effect": "nephrotoxicity",
+      "concern": "Angiotensin II receptor blockers",
+      "consequence": "Higher risk of renal impairment, especially with poor kidney function; reduced blood-pressure-lowering effect.",
+      "action": "Monitor renal function.",
+      "sourceWording": "Renal function should be monitored in these patients",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Concomitant use of NSAIDs with ACE inhibitors or angiotensin-II receptor antagonists may increase the risk of renal impairment, especially in patients with pre-existing poor renal function"
+        },
+        {
+          "s": "emc-13238",
+          "q": "those taking diuretics, angiotensin converting enzyme inhibitors, angiotensin-II receptor antagonists and older people. Renal function should be monitored in these patients"
+        }
+      ]
+    },
+    {
+      "id": "naproxen:interaction:sulfonylurea",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "naproxen",
+      "other": "group:sulfonylurea",
+      "concern": "Sulfonylureas",
+      "consequence": "Naproxen is highly protein bound; interaction seen with other NSAIDs.",
+      "action": "Caution; observe and adjust the dose if needed.",
+      "sourceWording": "should be observed for adjustment of dose if required",
+      "src": [
+        {
+          "s": "emc-13238",
+          "q": "Patients simultaneously receiving Naprosyn and a hydantoin, sulfonamide or sulfonylurea should be observed for adjustment of dose if required."
+        },
+        {
+          "s": "emc-13238",
+          "q": "No interactions have been observed in clinical studies with naproxen and anticoagulants or sulfonylureas, but caution is nevertheless advised"
         }
       ]
     }

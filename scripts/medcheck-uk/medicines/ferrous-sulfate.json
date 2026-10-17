@@ -1268,6 +1268,115 @@
           "q": "(administration should be separated by 4-5 hours)"
         }
       ]
+    },
+    {
+      "id": "ferrous-sulfate:interaction:tetracycline",
+      "kind": "interaction",
+      "med": "ferrous-sulfate",
+      "level": "caution",
+      "other": "group:tetracycline",
+      "effect": "reduced-absorption",
+      "concern": "Iron with tetracyclines (e.g. doxycycline)",
+      "consequence": "Iron and tetracyclines reduce each other's absorption.",
+      "action": "Separate doses by 2 to 3 hours.",
+      "sourceWording": "should be separated by 2 to 3 hours",
+      "src": [
+        {
+          "s": "emc-3130",
+          "q": "Iron and tetracyclines reduce the absorption of each other when administered concomitantly."
+        },
+        {
+          "s": "emc-3130",
+          "q": "Administration of iron preparations and tetracyclines should be separated by 2 to 3 hours."
+        }
+      ]
+    },
+    {
+      "id": "ferrous-sulfate:interaction:levofloxacin",
+      "kind": "interaction",
+      "med": "ferrous-sulfate",
+      "level": "caution",
+      "other": "levofloxacin",
+      "effect": "reduced-absorption",
+      "concern": "Iron reduces levofloxacin absorption (iron SmPCs)",
+      "consequence": "Reduced levofloxacin absorption.",
+      "action": "Iron SmPCs: separate iron and quinolones by at least 2 hours.",
+      "sourceWording": "should be separated by at least 2 hours",
+      "src": [
+        {
+          "s": "emc-2623",
+          "q": "The absorption of ciprofloxacin, levofloxacin, norfloxacin and ofloxacin may be reduced by oral iron."
+        },
+        {
+          "s": "emc-3130",
+          "q": "Administration of iron preparations and quinolones should be separated by at least 2 hours."
+        }
+      ]
+    },
+    {
+      "id": "ferrous-sulfate:interaction:moxifloxacin",
+      "kind": "interaction",
+      "med": "ferrous-sulfate",
+      "level": "caution",
+      "other": "moxifloxacin",
+      "effect": "reduced-absorption",
+      "concern": "Iron reduces quinolone (moxifloxacin) absorption (iron SmPCs)",
+      "consequence": "Iron may reduce the absorption of quinolones.",
+      "action": "Iron SmPCs: separate iron and quinolones by at least 2 hours.",
+      "sourceWording": "should be separated by at least 2 hours",
+      "src": [
+        {
+          "s": "emc-3130",
+          "q": "Iron may reduce the absorption of quinolones."
+        },
+        {
+          "s": "emc-3130",
+          "q": "Administration of iron preparations and quinolones should be separated by at least 2 hours."
+        }
+      ]
+    },
+    {
+      "id": "ferrous-sulfate:interaction:methyldopa",
+      "kind": "interaction",
+      "med": "ferrous-sulfate",
+      "level": "info",
+      "other": "methyldopa",
+      "concern": "Iron with methyldopa",
+      "consequence": "Oral iron may reduce methyldopa bioavailability and antagonise its antihypertensive effect.",
+      "action": "Be aware (no specific action stated).",
+      "sourceWording": "may antagonise the antihypertensive effect of methyldopa",
+      "src": [
+        {
+          "s": "emc-3130",
+          "q": "Oral iron preparations may antagonise the antihypertensive effect of methyldopa."
+        },
+        {
+          "s": "emc-4231",
+          "q": "Iron salts may reduce the bioavailability of methyldopa."
+        }
+      ]
+    },
+    {
+      "id": "ferrous-sulfate:interaction:sodium-bicarbonate-potassium-citrate",
+      "kind": "interaction",
+      "med": "ferrous-sulfate",
+      "level": "caution",
+      "other": "sodium-bicarbonate-potassium-citrate",
+      "effect": "reduced-absorption",
+      "concern": "Bicarbonate-containing products reduce iron absorption",
+      "consequence": "Bicarbonates may impair iron absorption.",
+      "action": "Separate by at least 2 hours.",
+      "sourceWording": "should be separated by at least 2 hours",
+      "src": [
+        {
+          "s": "emc-3130",
+          "q": "Compounds containing calcium, magnesium (including antacids and mineral supplements), bicarbonates, carbonates, oxalates or phosphates may impair the absorption of iron."
+        },
+        {
+          "s": "emc-3130",
+          "q": "Administration of iron preparations with such compounds should be separated by at least 2 hours."
+        }
+      ]
     }
   ]
 }

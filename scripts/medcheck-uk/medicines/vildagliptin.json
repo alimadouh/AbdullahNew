@@ -1,0 +1,299 @@
+{
+  "id": "vildagliptin",
+  "name": "Vildagliptin",
+  "ingredients": ["vildagliptin"],
+  "className": "Dipeptidyl peptidase 4 (DPP-4) inhibitor",
+  "groups": ["dpp4-inhibitor", "oral-antidiabetic", "antidiabetic"],
+  "searchTerms": ["gliptin", "DPP-4 inhibitor"],
+  "formulations": [
+    {
+      "id": "vildagliptin-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "50 mg",
+      "release": "immediate",
+      "note": "Contains lactose.",
+      "src": [
+        { "s": "emc-6225", "q": "Each tablet contains 50 mg of vildagliptin." },
+        { "s": "emc-6225", "q": "Each tablet contains 47.82 mg lactose (anhydrous)." }
+      ],
+      "sourceIds": ["emc-6225"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Adults with type 2 diabetes, with diet and exercise: monotherapy when metformin is inappropriate (contraindicated or not tolerated); or with other diabetes medicines, including insulin, when these do not give adequate control.",
+        "src": [
+          { "s": "emc-6225", "q": "as monotherapy in patients in whom metformin is inappropriate due to contraindications or intolerance" },
+          { "s": "emc-6225", "q": "in combination with other medicinal products for the treatment of diabetes, including insulin, when these do not provide adequate glycaemic control" }
+        ] }
+    ] },
+    "restrictions": { "status": "not-stated", "note": "No specialist-only, shared-care or brand-prescribing restriction found in the UK SmPC, MHRA or SPS pages checked." },
+    "dosing": { "items": [
+      { "t": "100 mg daily as 50 mg in the morning and 50 mg in the evening (monotherapy; with metformin; with a thiazolidinedione; with metformin plus a sulphonylurea; or with insulin with or without metformin). Doses above 100 mg are not recommended.", "tag": "Type 2 diabetes, adults",
+        "src": [
+          { "s": "emc-6225", "q": "the recommended daily dose of vildagliptin is 100 mg, administered as one dose of 50 mg in the morning and one dose of 50 mg in the evening" },
+          { "s": "emc-6225", "q": "Doses higher than 100 mg are not recommended." }
+        ] },
+      { "t": "Dual therapy with a sulphonylurea: 50 mg once daily in the morning (100 mg was no more effective). A lower sulphonylurea dose may be considered.", "tag": "Dual therapy with a sulphonylurea",
+        "src": [
+          { "s": "emc-6225", "q": "When used in dual combination with a sulphonylurea, the recommended dose of vildagliptin is 50 mg once daily administered in the morning." },
+          { "s": "emc-6225", "q": "When used in combination with a sulphonylurea, a lower dose of the sulphonylurea may be considered to reduce the risk of hypoglycaemia." }
+        ] },
+      { "t": "Moderate or severe renal impairment, or end-stage renal disease: 50 mg once daily (see Renal).", "tag": "Renal impairment",
+        "src": [{ "s": "emc-6225", "q": "In patients with moderate or severe renal impairment or with end-stage renal disease (ESRD), the recommended dose of Galvus is 50 mg once daily" }] },
+      { "t": "Elderly (65 years and over): no dose adjustment.", "tag": "Elderly", "detail": true,
+        "src": [{ "s": "emc-6225", "q": "No dose adjustments are necessary in elderly patients" }] },
+      { "t": "Missed dose: take as soon as remembered; do not take a double dose on the same day.", "tag": "Missed dose", "detail": true,
+        "src": [{ "s": "emc-6225", "q": "If a dose of Galvus is missed, it should be taken as soon as the patient remembers. A double dose should not be taken on the same day." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Not recommended under 18 years; safety and efficacy not established and no data.",
+        "src": [{ "s": "emc-6225", "q": "Galvus is not recommended for use in children and adolescents (< 18 years)." }] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to vildagliptin or any excipient.",
+        "src": [{ "s": "emc-6225", "q": "Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Not a substitute for insulin in insulin-requiring patients. Should not be used in type 1 diabetes or to treat diabetic ketoacidosis.",
+        "src": [
+          { "s": "emc-6225", "q": "Galvus is not a substitute for insulin in insulin-requiring patients." },
+          { "s": "emc-6225", "q": "Galvus should not be used in patients with type 1 diabetes or for the treatment of diabetic ketoacidosis." }
+        ] },
+      { "t": "Hepatic impairment (including pre-treatment ALT or AST > 3 x ULN): should not be used. Rare hepatic dysfunction (including hepatitis) reported; check liver function before and during treatment (see Monitoring).",
+        "src": [
+          { "s": "emc-6225", "q": "Galvus should not be used in patients with hepatic impairment, including patients with pre-treatment ALT or AST > 3x ULN" },
+          { "s": "emc-6225", "q": "Rare cases of hepatic dysfunction (including hepatitis) have been reported." }
+        ] },
+      { "t": "Heart failure: no experience in NYHA class IV, so use is not recommended; experience in class III is limited.",
+        "src": [
+          { "s": "emc-6225", "q": "There is no experience of vildagliptin use in clinical trials in patients with NYHA functional class IV and therefore use is not recommended in these patients." },
+          { "s": "emc-6225", "q": "Clinical experience in patients with NYHA functional class III treated with vildagliptin is still limited and results are inconclusive" }
+        ] },
+      { "t": "End-stage renal disease on haemodialysis: limited experience; use with caution.",
+        "src": [{ "s": "emc-6225", "q": "There is limited experience in patients with ESRD on haemodialysis. Therefore Galvus should be used with caution in these patients" }] },
+      { "t": "Acute pancreatitis: inform patients of the symptoms. If suspected, stop vildagliptin; do not restart if confirmed. Caution with a history of acute pancreatitis.",
+        "src": [
+          { "s": "emc-6225", "q": "If pancreatitis is suspected, vildagliptin should be discontinued; if acute pancreatitis is confirmed, vildagliptin should not be restarted." },
+          { "s": "emc-6225", "q": "Caution should be exercised in patients with a history of acute pancreatitis." }
+        ] },
+      { "t": "Skin: blistering and exfoliative skin lesions reported after marketing; monitor for skin disorders such as blistering or ulceration.",
+        "src": [{ "s": "emc-6225", "q": "monitoring for skin disorders, such as blistering or ulceration, is recommended" }] },
+      { "t": "Hypoglycaemia with a sulphonylurea: a lower sulphonylurea dose may be considered.",
+        "src": [{ "s": "emc-6225", "q": "Patients receiving vildagliptin in combination with a sulphonylurea may be at risk for hypoglycaemia." }] },
+      { "t": "Contains lactose: patients with rare hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it.", "detail": true,
+        "src": [{ "s": "emc-6225", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Low interaction potential: not a CYP450 substrate, inhibitor or inducer.", "detail": true,
+        "src": [{ "s": "emc-6225", "q": "Vildagliptin has a low potential for interactions with co-administered medicinal products." }] },
+      { "t": "Sulphonylureas: hypoglycaemia risk; a lower sulphonylurea dose may be considered (vildagliptin 50 mg once daily in dual therapy).",
+        "src": [{ "s": "emc-6225", "q": "Therefore, a lower dose of sulphonylurea may be considered to reduce the risk of hypoglycaemia." }] },
+      { "t": "ACE inhibitors: there may be an increased risk of angioedema (cases were mostly mild and resolved on continued vildagliptin).",
+        "src": [
+          { "s": "emc-6225", "q": "There may be an increased risk of angioedema in patients concomitantly taking ACE-inhibitors." },
+          { "s": "emc-6225", "q": "The majority of events were mild in severity and resolved with ongoing vildagliptin treatment." }
+        ] },
+      { "t": "Thiazides, corticosteroids, thyroid products and sympathomimetics may reduce the glucose-lowering effect.",
+        "src": [{ "s": "emc-6225", "q": "the hypoglycaemic effect of vildagliptin may be reduced by certain active substances, including thiazides, corticosteroids, thyroid products and sympathomimetics" }] },
+      { "t": "No clinically relevant pharmacokinetic interaction with metformin, pioglitazone, glibenclamide, digoxin, warfarin, amlodipine, ramipril, valsartan or simvastatin.", "detail": true,
+        "src": [
+          { "s": "emc-6225", "q": "Combination with pioglitazone, metformin and glyburide Results from studies conducted with these oral antidiabetics have shown no clinically relevant pharmacokinetic interactions." },
+          { "s": "emc-6225", "q": "Digoxin (Pgp substrate), warfarin (CYP2C9 substrate) Clinical studies performed with healthy subjects have shown no clinically relevant pharmacokinetic interactions." },
+          { "s": "emc-6225", "q": "In these studies, no clinically relevant pharmacokinetic interactions were observed after co-administration with vildagliptin." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Mild renal impairment (CrCl ≥ 50 mL/min): no dose adjustment.",
+        "src": [{ "s": "emc-6225", "q": "No dose adjustment is required in patients with mild renal impairment (creatinine clearance ≥ 50 ml/min)." }] },
+      { "t": "Moderate or severe renal impairment or end-stage renal disease (the SmPC defines mild as CrCl ≥ 50 mL/min, so this means CrCl < 50 mL/min): 50 mg once daily.",
+        "src": [{ "s": "emc-6225", "q": "In patients with moderate or severe renal impairment or with end-stage renal disease (ESRD), the recommended dose of Galvus is 50 mg once daily" }] },
+      { "t": "End-stage renal disease on haemodialysis: limited experience; use with caution.",
+        "src": [{ "s": "emc-6225", "q": "Therefore Galvus should be used with caution in these patients" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Should not be used in hepatic impairment, including pre-treatment ALT or AST > 3 x ULN.",
+        "src": [{ "s": "emc-6225", "q": "Galvus should not be used in patients with hepatic impairment, including patients with pre-treatment alanine aminotransferase (ALT) or aspartate aminotransferase (AST) > 3x the upper limit of normal (ULN)" }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: no adequate human data; animal reproductive toxicity at high doses. Should not be used in pregnancy.",
+        "src": [
+          { "s": "emc-6225", "q": "There are no adequate data from the use of vildagliptin in pregnant women." },
+          { "s": "emc-6225", "q": "Due to lack of human data, Galvus should not be used during pregnancy." }
+        ] },
+      { "t": "BUMPS: type 2 diabetes in pregnancy should be treated with metformin, with insulin if needed; other antidiabetic medicines (including DPP-4 inhibitors) are avoided as a precaution. In an unplanned pregnancy, continue current treatment until reviewed promptly.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "you should carry on with the drug you are taking until your appointment, as uncontrolled diabetes is risky for you and your baby" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: unknown if excreted in human milk (excreted in animal milk). Should not be used during breastfeeding.",
+        "src": [
+          { "s": "emc-6225", "q": "It is unknown whether vildagliptin is excreted in human milk." },
+          { "s": "emc-6225", "q": "Galvus should not be used during breast-feeding." }
+        ] },
+      { "t": "SPS: insulin or metformin are the preferred choices; there is limited or no published information on other antidiabetic medicines in breastfeeding.",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding" }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: no human studies.", "detail": true,
+        "src": [{ "s": "emc-6225", "q": "No studies on the effect on human fertility have been conducted for Galvus" }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Very common: nasopharyngitis. Common: upper respiratory tract infection, dizziness, headache, tremor, blurred vision, nausea, vomiting, diarrhoea, constipation, abdominal pain, gastro-oesophageal reflux, sweating, rash, itching, dermatitis, joint and muscle pain, weakness, peripheral oedema.",
+        "src": [
+          { "s": "emc-6225", "q": "Nasopharyngitis Very common" },
+          { "s": "emc-6225", "q": "Upper respiratory tract infection Common" },
+          { "s": "emc-6225", "q": "Dizziness Common Headache Common Tremor Common Eye disorders Vision blurred Common" },
+          { "s": "emc-6225", "q": "Constipation Common Nausea Common Gastro-oesophageal reflux disease Common Diarrhoea Common Abdominal pain, including upper Common Vomiting Common" },
+          { "s": "emc-6225", "q": "Hyperhidrosis Common Rash Common Pruritis Common Dermatitis Common" },
+          { "s": "emc-6225", "q": "Arthralgia Common Myalgia Common" },
+          { "s": "emc-6225", "q": "Asthenia Common Oedema peripheral Common" }
+        ] },
+      { "t": "Uncommon: hypoglycaemia (more with a sulphonylurea plus metformin, or with insulin), abnormal liver function tests.", "detail": true,
+        "src": [
+          { "s": "emc-6225", "q": "Hypoglycaemia Uncommon" },
+          { "s": "emc-6225", "q": "Abnormal liver function tests Uncommon" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Hepatic dysfunction including hepatitis (rare): stop if jaundice or signs of liver dysfunction; do not restart after liver tests return to normal.",
+        "src": [
+          { "s": "emc-6225", "q": "Patients who develop jaundice or other signs suggestive of liver dysfunction should discontinue Galvus." },
+          { "s": "emc-6225", "q": "Following withdrawal of treatment with Galvus and LFT normalisation, treatment with Galvus should not be reinitiated." }
+        ] },
+      { "t": "Acute pancreatitis (rare): stop if suspected; do not restart if confirmed.",
+        "src": [
+          { "s": "emc-6225", "q": "Pancreatitis Rare" },
+          { "s": "mhra-dsu-dpp4-pancreatitis", "q": "if pancreatitis is suspected, the DPP-4 inhibitor and other potentially suspect medicines should be discontinued" }
+        ] },
+      { "t": "Exfoliative and bullous skin lesions including bullous pemphigoid; cutaneous vasculitis; angioedema (rare, more often with ACE inhibitors).", "detail": true,
+        "src": [
+          { "s": "emc-6225", "q": "Exfoliative and bullous skin lesions, including bullous pemphigoid Not known*" },
+          { "s": "emc-6225", "q": "Rare cases of angioedema have been reported on vildagliptin at a similar rate to controls." }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Liver function tests before starting.", "tag": "baseline",
+        "src": [{ "s": "emc-6225", "q": "Liver function tests should be performed prior to the initiation of treatment with Galvus in order to know the patient's baseline value." }] },
+      { "t": "Liver function every 3 months in the first year, then periodically. If transaminases rise, repeat to confirm and follow frequently until normal.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-6225", "q": "Liver function should be monitored during treatment with Galvus at three-month intervals during the first year and periodically thereafter." },
+          { "s": "emc-6225", "q": "Patients who develop increased transaminase levels should be monitored with a second liver function evaluation to confirm the finding" }
+        ] },
+      { "t": "Skin: monitor for blistering or ulceration.", "tag": "ongoing", "detail": true,
+        "src": [{ "s": "emc-6225", "q": "monitoring for skin disorders, such as blistering or ulceration, is recommended" }] },
+      { "t": "Withdrawal recommended if AST or ALT ≥ 3 x ULN persists; stop if jaundice or liver dysfunction (do not restart); stop if pancreatitis is suspected.", "tag": "stop",
+        "src": [
+          { "s": "emc-6225", "q": "Should an increase in AST or ALT of 3x ULN or greater persist, withdrawal of Galvus therapy is recommended." },
+          { "s": "emc-6225", "q": "Patients who develop jaundice or other signs suggestive of liver dysfunction should discontinue Galvus." }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Oral; with or without a meal.",
+        "src": [{ "s": "emc-6225", "q": "Galvus can be administered with or without a meal" }] },
+      { "t": "Swallowing difficulty (SPS, off-label): can be crushed and mixed with water or given with soft food.", "detail": true,
+        "src": [{ "s": "sps-gliptin-swallowing", "q": "Vildagliptin tablets Can be crushed and mixed with water or given with soft food." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Seek medical help for persistent, severe abdominal pain (possible pancreatitis), or for yellow skin or eyes (possible liver problem).",
+        "src": [
+          { "s": "mhra-dsu-dpp4-pancreatitis", "q": "persistent, severe abdominal pain (sometimes radiating to the back)" },
+          { "s": "emc-6225", "q": "Patients who develop jaundice or other signs suggestive of liver dysfunction should discontinue Galvus." }
+        ] },
+      { "t": "If dizzy, avoid driving or using machines.",
+        "src": [{ "s": "emc-6225", "q": "Patients who experience dizziness as an adverse reaction should avoid driving vehicles or using machines." }] },
+      { "t": "Attend liver blood tests as arranged.", "detail": true,
+        "src": [{ "s": "emc-6225", "q": "Liver function should be monitored during treatment with Galvus at three-month intervals during the first year and periodically thereafter." }] }
+    ] }
+  },
+  "rules": [
+    { "id": "vildagliptin:allergy:vildagliptin", "kind": "allergy", "level": "contraindicated", "med": "vildagliptin", "allergen": ["vildagliptin"],
+      "concern": "Hypersensitivity to vildagliptin", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity to the active substance",
+      "src": [{ "s": "emc-6225", "q": "Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+    { "id": "vildagliptin:condition:type-1-diabetes", "kind": "condition", "level": "avoid", "med": "vildagliptin", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Not a substitute for insulin.", "action": "Should not be used in type 1 diabetes.", "sourceWording": "should not be used in patients with type 1 diabetes",
+      "src": [{ "s": "emc-6225", "q": "Galvus should not be used in patients with type 1 diabetes or for the treatment of diabetic ketoacidosis." }] },
+    { "id": "vildagliptin:condition:diabetic-ketoacidosis", "kind": "condition", "level": "avoid", "med": "vildagliptin", "condition": "diabetic-ketoacidosis",
+      "concern": "Diabetic ketoacidosis", "consequence": "Not an appropriate treatment.", "action": "Should not be used to treat diabetic ketoacidosis.", "sourceWording": "should not be used ... for the treatment of diabetic ketoacidosis",
+      "src": [{ "s": "emc-6225", "q": "Galvus should not be used in patients with type 1 diabetes or for the treatment of diabetic ketoacidosis." }] },
+    { "id": "vildagliptin:condition:severe-heart-failure", "kind": "condition", "level": "avoid", "med": "vildagliptin", "condition": "severe-heart-failure",
+      "concern": "Heart failure NYHA class IV", "consequence": "No clinical trial experience.", "action": "Use is not recommended (experience in NYHA class III is limited).", "sourceWording": "use is not recommended in these patients",
+      "src": [{ "s": "emc-6225", "q": "There is no experience of vildagliptin use in clinical trials in patients with NYHA functional class IV and therefore use is not recommended in these patients." }] },
+    { "id": "vildagliptin:condition:pancreatitis-history", "kind": "condition", "level": "caution", "med": "vildagliptin", "condition": "pancreatitis-history",
+      "concern": "History of acute pancreatitis", "consequence": "Vildagliptin is associated with acute pancreatitis.", "action": "Use with caution; stop if pancreatitis is suspected and do not restart if confirmed.", "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-6225", "q": "Caution should be exercised in patients with a history of acute pancreatitis." },
+        { "s": "emc-6225", "q": "Use of vildagliptin has been associated with a risk of developing acute pancreatitis." }
+      ] },
+    { "id": "vildagliptin:condition:pancreatitis-current", "kind": "condition", "level": "avoid", "med": "vildagliptin", "condition": "pancreatitis",
+      "concern": "Acute pancreatitis, current or suspected (for past or chronic pancreatitis see the history rule: use with caution)", "consequence": "DPP-4 inhibitors are associated with acute pancreatitis.", "action": "Stop if pancreatitis is suspected; do not restart if acute pancreatitis is confirmed.", "sourceWording": "should be discontinued … should not be restarted",
+      "src": [{ "s": "emc-6225", "q": "If pancreatitis is suspected, vildagliptin should be discontinued; if acute pancreatitis is confirmed, vildagliptin should not be restarted." }] },
+    { "id": "vildagliptin:condition:galactose-intolerance", "kind": "condition", "level": "avoid", "med": "vildagliptin", "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption", "consequence": "Tablets contain lactose.", "action": "Should not take this medicine.", "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-6225", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }] },
+    { "id": "vildagliptin:renal:lt50", "kind": "renal", "level": "dose", "med": "vildagliptin", "renal": { "measure": "CrCl", "max": 50 },
+      "concern": "Moderate or severe renal impairment or end-stage renal disease (CrCl < 50 mL/min)", "consequence": "Higher vildagliptin exposure.", "action": "50 mg once daily. End-stage renal disease on haemodialysis: limited experience, use with caution.", "sourceWording": "is 50 mg once daily",
+      "src": [
+        { "s": "emc-6225", "q": "No dose adjustment is required in patients with mild renal impairment (creatinine clearance ≥ 50 ml/min)." },
+        { "s": "emc-6225", "q": "In patients with moderate or severe renal impairment or with end-stage renal disease (ESRD), the recommended dose of Galvus is 50 mg once daily" },
+        { "s": "emc-6225", "q": "Therefore Galvus should be used with caution in these patients" }
+      ] },
+    { "id": "vildagliptin:hepatic:any", "kind": "hepatic", "level": "avoid", "med": "vildagliptin", "hepatic": ["any"],
+      "concern": "Hepatic impairment (including pre-treatment ALT or AST > 3 x ULN)", "consequence": "Rare hepatic dysfunction, including hepatitis, reported.", "action": "Should not be used.", "sourceWording": "should not be used in patients with hepatic impairment",
+      "src": [{ "s": "emc-6225", "q": "Galvus should not be used in patients with hepatic impairment, including patients with pre-treatment ALT or AST > 3x ULN" }] },
+    { "id": "vildagliptin:age:lt18", "kind": "age", "level": "avoid", "med": "vildagliptin", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Child or adolescent under 18 years", "consequence": "Safety and efficacy not established; no data.", "action": "Not recommended.", "sourceWording": "is not recommended for use in children and adolescents",
+      "src": [{ "s": "emc-6225", "q": "Galvus is not recommended for use in children and adolescents (< 18 years)." }] },
+    { "id": "vildagliptin:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "vildagliptin",
+      "concern": "Pregnancy", "consequence": "No adequate human data; animal reproductive toxicity at high doses.", "action": "Should not be used in pregnancy. BUMPS: metformin with or without insulin is the recommended treatment; in an unplanned pregnancy keep taking current treatment until reviewed promptly.", "sourceWording": "should not be used during pregnancy",
+      "src": [
+        { "s": "emc-6225", "q": "Due to lack of human data, Galvus should not be used during pregnancy." },
+        { "s": "bumps-antidiabetic-drugs", "q": "As a precaution, they are avoided in pregnancy." }
+      ] },
+    { "id": "vildagliptin:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "vildagliptin",
+      "concern": "Breastfeeding", "consequence": "Excreted in animal milk; human data lacking.", "action": "Should not be used during breastfeeding. SPS: insulin or metformin are preferred.", "sourceWording": "should not be used during breast-feeding",
+      "src": [
+        { "s": "emc-6225", "q": "Galvus should not be used during breast-feeding." },
+        { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." }
+      ] },
+    { "id": "vildagliptin:interaction:sulfonylurea", "kind": "interaction", "level": "dose", "med": "vildagliptin", "other": "group:sulfonylurea", "effect": "hypoglycaemia",
+      "concern": "Vildagliptin + sulphonylurea", "consequence": "Hypoglycaemia.", "action": "In dual therapy with a sulphonylurea, vildagliptin dose is 50 mg once daily in the morning; a lower sulphonylurea dose may be considered.", "sourceWording": "the recommended dose of vildagliptin is 50 mg once daily",
+      "src": [
+        { "s": "emc-6225", "q": "When used in dual combination with a sulphonylurea, the recommended dose of vildagliptin is 50 mg once daily administered in the morning." },
+        { "s": "emc-6225", "q": "Patients receiving vildagliptin in combination with a sulphonylurea may be at risk for hypoglycaemia." },
+        { "s": "emc-6225", "q": "Therefore, a lower dose of sulphonylurea may be considered to reduce the risk of hypoglycaemia." }
+      ] },
+    { "id": "vildagliptin:interaction:insulin", "kind": "interaction", "level": "info", "med": "vildagliptin", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Vildagliptin + insulin", "consequence": "Hypoglycaemia reported (14% with vildagliptin vs 16% with placebo in combination with insulin).", "action": "No specific action stated in the SmPC.", "sourceWording": "Hypoglycaemia has been reported",
+      "src": [
+        { "s": "emc-6225", "q": "Hypoglycaemia has been reported in patients receiving vildagliptin concomitantly with sulphonylurea and insulin." },
+        { "s": "emc-6225", "q": "In patients taking vildagliptin in combination with insulin, the incidence of hypoglycaemia was 14% for vildagliptin and 16% for placebo." }
+      ] },
+    { "id": "vildagliptin:interaction:ace-inhibitor", "kind": "interaction", "level": "info", "med": "vildagliptin", "other": "group:ace-inhibitor",
+      "concern": "Vildagliptin + ACE inhibitor", "consequence": "There may be an increased risk of angioedema (cases mostly mild, resolved on continued vildagliptin).", "action": "No specific action stated; be aware of angioedema.", "sourceWording": "There may be an increased risk of angioedema",
+      "src": [
+        { "s": "emc-6225", "q": "There may be an increased risk of angioedema in patients concomitantly taking ACE-inhibitors." },
+        { "s": "emc-6225", "q": "A greater proportion of cases were reported when vildagliptin was administered in combination with an angiotensin converting enzyme inhibitor (ACE-Inhibitor)." }
+      ] },
+    { "id": "vildagliptin:interaction:thiazide", "kind": "interaction", "level": "info", "med": "vildagliptin", "other": "group:thiazide",
+      "concern": "Vildagliptin + thiazide", "consequence": "Glucose-lowering effect may be reduced.", "action": "No specific action stated.", "sourceWording": "may be reduced",
+      "src": [{ "s": "emc-6225", "q": "the hypoglycaemic effect of vildagliptin may be reduced by certain active substances, including thiazides, corticosteroids, thyroid products and sympathomimetics" }] },
+    { "id": "vildagliptin:interaction:corticosteroid", "kind": "interaction", "level": "info", "med": "vildagliptin", "other": "group:corticosteroid",
+      "concern": "Vildagliptin + corticosteroid", "consequence": "Glucose-lowering effect may be reduced.", "action": "No specific action stated.", "sourceWording": "may be reduced",
+      "src": [{ "s": "emc-6225", "q": "the hypoglycaemic effect of vildagliptin may be reduced by certain active substances, including thiazides, corticosteroids, thyroid products and sympathomimetics" }] },
+    { "id": "vildagliptin:interaction:thyroid-hormone", "kind": "interaction", "level": "info", "med": "vildagliptin", "other": "group:thyroid-hormone",
+      "concern": "Vildagliptin + thyroid products", "consequence": "Glucose-lowering effect may be reduced.", "action": "No specific action stated.", "sourceWording": "may be reduced",
+      "src": [{ "s": "emc-6225", "q": "the hypoglycaemic effect of vildagliptin may be reduced by certain active substances, including thiazides, corticosteroids, thyroid products and sympathomimetics" }] },
+    { "id": "vildagliptin:interaction:sympathomimetic", "kind": "interaction", "level": "info", "med": "vildagliptin", "other": "group:sympathomimetic",
+      "concern": "Vildagliptin + sympathomimetic", "consequence": "Glucose-lowering effect may be reduced.", "action": "No specific action stated.", "sourceWording": "may be reduced",
+      "src": [{ "s": "emc-6225", "q": "the hypoglycaemic effect of vildagliptin may be reduced by certain active substances, including thiazides, corticosteroids, thyroid products and sympathomimetics" }] }
+  ]
+}

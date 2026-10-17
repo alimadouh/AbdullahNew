@@ -1,0 +1,666 @@
+{
+  "id": "oral-rehydration-salts",
+  "name": "Oral rehydration salts",
+  "ingredients": [
+    "glucose",
+    "sodium-chloride",
+    "potassium",
+    "citrate"
+  ],
+  "className": "Oral rehydration therapy (glucose and electrolytes)",
+  "groups": [],
+  "searchTerms": [
+    "ORS",
+    "oral rehydration solution",
+    "oral rehydration therapy",
+    "glucose electrolyte"
+  ],
+  "formulations": [
+    {
+      "id": "ors-sachet",
+      "label": "Powder for oral solution (sachet)",
+      "route": "oral",
+      "strengths": "UK product, per sachet: glucose 3.56 g, sodium chloride 0.47 g, potassium chloride 0.30 g, disodium hydrogen citrate 0.53 g; dissolve in 200 ml water",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Glucose Sodium chloride Potassium chloride Disodium hydrogen citrate 3.56g 0.47g 0.30g 0.53g"
+        },
+        {
+          "s": "emc-2771",
+          "q": "Powder for reconstitution with 200ml water."
+        }
+      ],
+      "sourceIds": [
+        "emc-2771"
+      ],
+      "note": "The clinic product lists trisodium citrate; the UK sachet uses disodium hydrogen citrate, so the exact electrolyte content may differ. Check the clinic product label for the amount of water per sachet."
+    },
+    {
+      "id": "ors-solution",
+      "label": "Ready-to-drink oral solution",
+      "route": "oral",
+      "strengths": "As on the product label",
+      "release": "n/a",
+      "note": "No UK SmPC was found for a ready-made oral rehydration solution. Content here comes from the UK sachet SmPC; the glucose and electrolyte content of a ready-made solution may differ, and the sachet reconstitution steps do not apply. Check the product label.",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Glucose Sodium chloride Potassium chloride Disodium hydrogen citrate 3.56g 0.47g 0.30g 0.53g"
+        }
+      ],
+      "sourceIds": [
+        "emc-2771"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Oral correction of fluid and electrolyte loss in infants, children and adults; watery diarrhoea of any cause, including gastroenteritis, in all age groups.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Oral correction of fluid and electrolyte loss in infants, children and adults."
+            },
+            {
+              "s": "emc-2771",
+              "q": "Treatment of watery diarrhoea of various aetiologies including gastro-enteritis, in all age groups."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restrictions in the UK sachet SmPC (self-treatment limits are listed under cautions)."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "1-2 sachets (each in 200 ml water) after every loose motion; more may be needed at first for full volume repletion.",
+          "tag": "Adults (including elderly)",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Adults (including the elderly): One or two sachets after every loose motion."
+            },
+            {
+              "s": "emc-2771",
+              "q": "More may be required initially to ensure early and full volume repletion."
+            }
+          ],
+          "formulations": [
+            "ors-sachet"
+          ]
+        },
+        {
+          "t": "Daily intake may be based on 20-40 ml/kg for adults and children (150 ml/kg for infants up to 2 years), adapted to age, weight, stage and severity.",
+          "tag": "Volume guide",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Daily intake may be based on a volume of 150ml/kg body weight for infants up to the age of 2 and 20-40ml/kg body weight for adults and children."
+            }
+          ]
+        },
+        {
+          "t": "Severe dehydration may first need parenteral fluids, then oral maintenance.",
+          "tag": "Severe dehydration",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Severe dehydration may need to be corrected by parenteral fluids initially, followed by oral maintenance if indicated."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Infants under 2 years: use only under medical supervision and see a doctor as soon as possible; volume about 1 to 1.5 times the usual 24-hour feed volume (150 ml/kg/day).",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Dioralyte shall not be used for treatment in infants below the age of 24 months without medical supervision."
+            },
+            {
+              "s": "emc-2771",
+              "q": "Infants under the age of 2 years with diarrhoea should be seen by a physician as soon as possible."
+            },
+            {
+              "s": "emc-2771",
+              "q": "Infants up to the age of 2: One to one and a half times the usual 24 hour feed volume."
+            }
+          ]
+        },
+        {
+          "t": "Children: one sachet in 200 ml water after every loose motion.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Children: One sachet dissolved in 200ml of water after every loose motion."
+            }
+          ],
+          "formulations": [
+            "ors-sachet"
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to the active substances or any excipient. No other known contraindications, but treatment may be inappropriate, e.g. intestinal obstruction needing surgery.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Hypersensitivity to the active substances or to any of the excipients listed in section 6.1."
+            },
+            {
+              "s": "emc-2771",
+              "q": "There are no known contraindications to Dioralyte."
+            },
+            {
+              "s": "emc-2771",
+              "q": "intestinal obstruction requiring surgical intervention"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Not for self-treatment (physician supervision needed) in chronic or persistent diarrhoea, liver or kidney disease, diabetes, low-potassium or low-sodium diets, or intestinal obstruction.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Dioralyte should not be used for self-treatment by patients: with chronic or persistent diarrhea. with liver or kidney disease. with diabetes. on low potassium or sodium diets. with an intestinal obstruction."
+            },
+            {
+              "s": "emc-2771",
+              "q": "The use of Dioralyte in patients with these conditions should be supervised by a physician."
+            }
+          ]
+        },
+        {
+          "t": "Reconstitute only with water, one sachet in 200 ml: a weaker solution is not optimal; a stronger one may cause electrolyte imbalance.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Dioralyte should not be reconstituted in diluents other than water."
+            },
+            {
+              "s": "emc-2771",
+              "q": "a stronger solution than recommended may give rise to electrolyte imbalance"
+            }
+          ],
+          "formulations": [
+            "ors-sachet"
+          ]
+        },
+        {
+          "t": "Diarrhoea lasting more than 24-48 hours: patient should see a doctor.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "If diarrhoea persists for longer than 24-48 hours the patient should be seen by a physician."
+            }
+          ]
+        },
+        {
+          "t": "Sodium: about 300 mg per sachet (15% of the WHO adult maximum daily intake of 2 g).",
+          "tag": "Sodium content",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "This medicinal product contains approximately 300 mg sodium per sachet, equivalent to 15% of the WHO recommended maximum daily intake of 2 g sodium for an adult."
+            }
+          ],
+          "formulations": [
+            "ors-sachet"
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "status": "not-stated",
+      "note": "The UK sachet SmPC section 4.5 says 'None stated'. The aluminium hydroxide/magnesium hydroxide SmPC states that aluminium hydroxide with citrates may raise aluminium levels (recorded under that medicine)."
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Kidney disease: not for self-treatment; use under physician supervision. After significant overdose, checking electrolytes is particularly important in severe renal failure.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Dioralyte should not be used for self-treatment by patients: with chronic or persistent diarrhea. with liver or kidney disease. with diabetes. on low potassium or sodium diets. with an intestinal obstruction."
+            },
+            {
+              "s": "emc-2771",
+              "q": "The use of Dioralyte in patients with these conditions should be supervised by a physician."
+            },
+            {
+              "s": "emc-2771",
+              "q": "This is particularly important in the very young and in cases of severe hepatic of renal failure."
+            }
+          ]
+        },
+        {
+          "t": "With normal kidney function it is difficult to over-hydrate by mouth.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Where the kidneys are functioning normally, it is difficult to over-hydrate by mouth"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Liver disease: not for self-treatment; use under physician supervision.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Dioralyte should not be used for self-treatment by patients: with chronic or persistent diarrhea. with liver or kidney disease. with diabetes. on low potassium or sodium diets. with an intestinal obstruction."
+            },
+            {
+              "s": "emc-2771",
+              "q": "The use of Dioralyte in patients with these conditions should be supervised by a physician."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Not contraindicated in pregnancy; medical supervision is recommended.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Dioralyte is not contra-indicated in pregnancy or lactation."
+            },
+            {
+              "s": "emc-2771",
+              "q": "Medical supervision is recommended for use during pregnancy and lactation."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Not contraindicated during breastfeeding; medical supervision is recommended.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "Dioralyte is not contra-indicated in pregnancy or lactation."
+            },
+            {
+              "s": "emc-2771",
+              "q": "Medical supervision is recommended for use during pregnancy and lactation."
+            }
+          ]
+        },
+        {
+          "t": "For a breastfed infant with diarrhoea, breast milk need not be withheld.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "However breast milk need not be withheld."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "No fertility or contraception statements in the UK sachet SmPC."
+    },
+    "adverseCommon": {
+      "status": "not-stated",
+      "note": "The UK sachet SmPC section 4.8 says 'None stated'."
+    },
+    "adverseSerious": {
+      "status": "not-stated",
+      "note": "The UK sachet SmPC lists no adverse effects ('None stated'); a too-strong solution may cause electrolyte imbalance (see cautions)."
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "No improvement within 24-48 hours: the patient should be seen by a doctor.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "If no improvement is seen within 24-48 hours it is recommended that the patient be seen by a physician."
+            }
+          ]
+        },
+        {
+          "t": "Significant overdose: check serum electrolytes as soon as possible and monitor until normal.",
+          "tag": "ongoing",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "In the event of significant overdose, serum electrolytes should be evaluated as soon as possible"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Dissolve one sachet in 200 ml drinking water (freshly boiled and cooled for infants). Make up just before use; keep up to 24 hours in a fridge, otherwise discard after 1 hour. Do not boil the solution.",
+          "formulations": [
+            "ors-sachet"
+          ],
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "The contents of each sachet should be dissolved in 200ml (approx. 7fl oz) of drinking water."
+            },
+            {
+              "s": "emc-2771",
+              "q": "For infants, and where drinking water is unavailable, the water should be freshly boiled and cooled."
+            },
+            {
+              "s": "emc-2771",
+              "q": "may be stored for up 24 hours in a refrigerator, otherwise any solution remaining an hour after reconstitution should be discarded"
+            },
+            {
+              "s": "emc-2771",
+              "q": "The solution itself must not be boiled."
+            }
+          ]
+        },
+        {
+          "t": "With vomiting, give small amounts frequently, but give the whole required volume.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "When vomiting is present with the diarrhoea it is advisable that small amounts of Dioralyte be taken frequently."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "At first stop all foods including cow's or formula milk (breast milk can continue); restart the normal diet gradually after 24-48 hours when symptoms settle.",
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "In the initial stages of treatment of diarrhoea all foods, including cow's or artificial milk, should be stopped."
+            },
+            {
+              "s": "emc-2771",
+              "q": "After 24 - 48 hours, when symptoms have subsided, the normal diet should be resumed but this should be gradual to avoid exacerbation of the condition."
+            }
+          ]
+        },
+        {
+          "t": "If unsure of the amount, give more rather than less (when kidneys work normally).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2771",
+              "q": "where there is doubt about the dosage, more rather than less should be taken"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "oral-rehydration-salts:allergy:own-ingredients",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "oral-rehydration-salts",
+      "allergen": [
+        "glucose",
+        "sodium-chloride",
+        "potassium",
+        "citrate"
+      ],
+      "concern": "Hypersensitivity to the active substances or excipients",
+      "consequence": "Allergic reaction.",
+      "action": "Do not use (listed in SmPC 4.3).",
+      "sourceWording": "Hypersensitivity to the active substances",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Hypersensitivity to the active substances or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "oral-rehydration-salts:condition:intestinal-obstruction",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "oral-rehydration-salts",
+      "condition": "paralytic-ileus-gi-obstruction",
+      "concern": "Intestinal obstruction needing surgery",
+      "consequence": "Oral rehydration treatment is inappropriate.",
+      "action": "Do not use. SmPC 4.3 names intestinal obstruction needing surgery as a condition where treatment is inappropriate (it otherwise lists no known contraindications).",
+      "sourceWording": "treatment with Dioralyte will be inappropriate",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "However, there may be a number of conditions where treatment with Dioralyte will be inappropriate e.g. intestinal obstruction requiring surgical intervention."
+        }
+      ]
+    },
+    {
+      "id": "oral-rehydration-salts:condition:chronic-diarrhoea",
+      "kind": "condition",
+      "level": "caution",
+      "med": "oral-rehydration-salts",
+      "condition": "chronic-persistent-diarrhoea",
+      "concern": "Chronic or persistent diarrhoea",
+      "consequence": "Not for self-treatment in this condition.",
+      "action": "Use only under physician supervision.",
+      "sourceWording": "should be supervised by a physician",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Dioralyte should not be used for self-treatment by patients: with chronic or persistent diarrhea. with liver or kidney disease. with diabetes. on low potassium or sodium diets. with an intestinal obstruction."
+        },
+        {
+          "s": "emc-2771",
+          "q": "The use of Dioralyte in patients with these conditions should be supervised by a physician."
+        }
+      ]
+    },
+    {
+      "id": "oral-rehydration-salts:hepatic:liver-disease",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "oral-rehydration-salts",
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Liver disease",
+      "consequence": "Not for self-treatment in this condition.",
+      "action": "Use only under physician supervision.",
+      "sourceWording": "should be supervised by a physician",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Dioralyte should not be used for self-treatment by patients: with chronic or persistent diarrhea. with liver or kidney disease. with diabetes. on low potassium or sodium diets. with an intestinal obstruction."
+        },
+        {
+          "s": "emc-2771",
+          "q": "The use of Dioralyte in patients with these conditions should be supervised by a physician."
+        }
+      ]
+    },
+    {
+      "id": "oral-rehydration-salts:condition:kidney-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "oral-rehydration-salts",
+      "condition": "renal-impairment",
+      "concern": "Kidney disease",
+      "consequence": "Not for self-treatment in this condition.",
+      "action": "Use only under physician supervision.",
+      "sourceWording": "should be supervised by a physician",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Dioralyte should not be used for self-treatment by patients: with chronic or persistent diarrhea. with liver or kidney disease. with diabetes. on low potassium or sodium diets. with an intestinal obstruction."
+        },
+        {
+          "s": "emc-2771",
+          "q": "The use of Dioralyte in patients with these conditions should be supervised by a physician."
+        }
+      ]
+    },
+    {
+      "id": "oral-rehydration-salts:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "oral-rehydration-salts",
+      "condition": "diabetes",
+      "concern": "Diabetes (contains glucose)",
+      "consequence": "Not for self-treatment in this condition.",
+      "action": "Use only under physician supervision.",
+      "sourceWording": "should be supervised by a physician",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Dioralyte should not be used for self-treatment by patients: with chronic or persistent diarrhea. with liver or kidney disease. with diabetes. on low potassium or sodium diets. with an intestinal obstruction."
+        },
+        {
+          "s": "emc-2771",
+          "q": "The use of Dioralyte in patients with these conditions should be supervised by a physician."
+        }
+      ]
+    },
+    {
+      "id": "oral-rehydration-salts:condition:low-sodium-diet",
+      "kind": "condition",
+      "level": "caution",
+      "med": "oral-rehydration-salts",
+      "condition": "low-sodium-diet",
+      "concern": "Low-sodium diet",
+      "consequence": "Not for self-treatment in this condition.",
+      "action": "Use only under physician supervision.",
+      "sourceWording": "should be supervised by a physician",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Dioralyte should not be used for self-treatment by patients: with chronic or persistent diarrhea. with liver or kidney disease. with diabetes. on low potassium or sodium diets. with an intestinal obstruction."
+        },
+        {
+          "s": "emc-2771",
+          "q": "The use of Dioralyte in patients with these conditions should be supervised by a physician."
+        }
+      ]
+    },
+    {
+      "id": "oral-rehydration-salts:condition:low-potassium-diet",
+      "kind": "condition",
+      "level": "caution",
+      "med": "oral-rehydration-salts",
+      "condition": "low-potassium-diet",
+      "concern": "Low-potassium diet",
+      "consequence": "Not for self-treatment in this condition.",
+      "action": "Use only under physician supervision.",
+      "sourceWording": "should be supervised by a physician",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Dioralyte should not be used for self-treatment by patients: with chronic or persistent diarrhea. with liver or kidney disease. with diabetes. on low potassium or sodium diets. with an intestinal obstruction."
+        },
+        {
+          "s": "emc-2771",
+          "q": "The use of Dioralyte in patients with these conditions should be supervised by a physician."
+        }
+      ]
+    },
+    {
+      "id": "oral-rehydration-salts:age:under-2",
+      "kind": "age",
+      "level": "caution",
+      "med": "oral-rehydration-salts",
+      "age": {
+        "maxYears": 2
+      },
+      "concern": "Infant under 2 years",
+      "consequence": "Infants with diarrhoea need medical assessment.",
+      "action": "Use only under medical supervision; infant should see a doctor as soon as possible.",
+      "sourceWording": "shall not be used ... without medical supervision",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Dioralyte shall not be used for treatment in infants below the age of 24 months without medical supervision."
+        },
+        {
+          "s": "emc-2771",
+          "q": "Infants under the age of 2 years with diarrhoea should be seen by a physician as soon as possible."
+        }
+      ]
+    },
+    {
+      "id": "oral-rehydration-salts:pregnancy:any",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "oral-rehydration-salts",
+      "concern": "Pregnancy",
+      "consequence": "Not contraindicated.",
+      "action": "Medical supervision is recommended.",
+      "sourceWording": "Medical supervision is recommended",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Dioralyte is not contra-indicated in pregnancy or lactation."
+        },
+        {
+          "s": "emc-2771",
+          "q": "Medical supervision is recommended for use during pregnancy and lactation."
+        }
+      ]
+    },
+    {
+      "id": "oral-rehydration-salts:breastfeeding:any",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "oral-rehydration-salts",
+      "concern": "Breastfeeding",
+      "consequence": "Not contraindicated.",
+      "action": "Medical supervision is recommended.",
+      "sourceWording": "Medical supervision is recommended",
+      "src": [
+        {
+          "s": "emc-2771",
+          "q": "Dioralyte is not contra-indicated in pregnancy or lactation."
+        },
+        {
+          "s": "emc-2771",
+          "q": "Medical supervision is recommended for use during pregnancy and lactation."
+        }
+      ]
+    }
+  ]
+}

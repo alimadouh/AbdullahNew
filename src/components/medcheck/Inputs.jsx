@@ -53,7 +53,7 @@ export function MedicinePicker({ kb, selection, setSelection }) {
               <li key={r.key} role="option" aria-selected={i === hi} onMouseDown={(e) => { e.preventDefault(); add(r) }} onMouseEnter={() => setHi(i)}
                 className={`flex cursor-pointer items-baseline justify-between gap-3 rounded-md px-3 py-2 text-sm ${i === hi ? 'bg-blue-50 dark:bg-blue-950/50' : ''}`}>
                 <span className="font-medium">{r.m.name}</span>
-                <span className="text-right text-xs text-muted-foreground">{r.f.label}{r.f.route ? ` · ${r.f.route}` : ''}</span>
+                <span className="text-right text-xs text-muted-foreground">{r.f.label}{r.f.route ? ` · ${r.f.route}` : ''}{(r.m.availability?.status === 'no-uk-product' || r.f.availability === 'no-uk-product') && <span className="ml-1.5 rounded bg-slate-200 px-1 py-px text-[10px] font-semibold text-slate-700 dark:bg-slate-700 dark:text-slate-200">no UK product</span>}</span>
               </li>
             ))}
           </ul>

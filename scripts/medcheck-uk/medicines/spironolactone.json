@@ -1520,6 +1520,97 @@
           "q": "Potentiation of the effect of antihypertensive drugs occurs and their dosage may need to be reduced when Aldactone is added to the treatment regime and then adjusted as necessary."
         }
       ]
+    },
+    {
+      "id": "spironolactone:interaction:arb",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "spironolactone",
+      "other": "group:arb",
+      "effect": "hyperkalaemia",
+      "concern": "Angiotensin II receptor blockers",
+      "consequence": "Severe, potentially fatal hyperkalaemia, particularly in marked renal impairment.",
+      "action": "Use with caution; monitor potassium and renal function (MHRA).",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "nonsteroidal anti-inflammatory drugs, angiotensin II antagonists, aldosterone blockers, heparin, low molecular weight heparin or other drugs or conditions known to cause hyperkalaemia"
+        },
+        {
+          "s": "emc-1619",
+          "q": "may lead to severe hyperkalaemia."
+        },
+        {
+          "s": "emc-100453",
+          "q": "Concomitant use of medicinal products known to cause hyperkalaemia (such as lisinopril, valsartan, indometacin) with spironolactone may result in severe hyperkalaemia."
+        },
+        {
+          "s": "mhra-dsu-spironolactone-ras-hyperkalaemia",
+          "q": "concomitant use of spironolactone with ACEi or ARB increases the risk of severe hyperkalaemia, particularly in patients with marked renal impairment, and should be used with caution"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:interaction:diuretic",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "spironolactone",
+      "other": "group:diuretic",
+      "effect": "hypotension",
+      "concern": "Other diuretics",
+      "consequence": "Their effect is potentiated.",
+      "action": "Their dose may need reducing by about 50% when spironolactone is added, then adjust (suspension SmPC).",
+      "sourceWording": "their dose may need to be reduced by about 50%",
+      "src": [
+        {
+          "s": "emc-100453",
+          "q": "Potentiation of the effect of other diuretics and antihypertensive medicinal products occurs and their dose may need to be reduced by about 50% when spironolactone is added to the treatment regime, and then adjusted as necessary."
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:interaction:diuretic-hyponatraemia",
+      "kind": "interaction",
+      "level": "info",
+      "med": "spironolactone",
+      "other": "group:diuretic",
+      "effect": "hyponatraemia",
+      "concern": "Other diuretics (low sodium)",
+      "consequence": "Dilution hyponatraemia may occur.",
+      "action": "Suspension SmPC recommends periodic checks of serum electrolytes.",
+      "sourceWording": "Dilution hyponatraemia may occur in combination with other diuretics",
+      "src": [
+        {
+          "s": "emc-100453",
+          "q": "Dilution hyponatraemia may occur in combination with other diuretics"
+        },
+        {
+          "s": "emc-100453",
+          "q": "Periodic estimation of serum electrolytes is recommended due to the possibility of hyperkalaemia, hyponatremia"
+        }
+      ]
+    },
+    {
+      "id": "spironolactone:interaction:aspirin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "spironolactone",
+      "other": "aspirin",
+      "concern": "Aspirin",
+      "consequence": "May reduce the natriuretic (diuretic) effect of spironolactone.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may attenuate the natriuretic efficacy of diuretics",
+      "src": [
+        {
+          "s": "emc-1619",
+          "q": "Non-steroidal anti-inflammatory drugs such as aspirin, indomethacin, and mefenamic acid may attenuate the natriuretic efficacy of diuretics"
+        },
+        {
+          "s": "emc-1619",
+          "q": "have been shown to attenuate the diuretic effect of spironolactone."
+        }
+      ]
     }
   ]
 }

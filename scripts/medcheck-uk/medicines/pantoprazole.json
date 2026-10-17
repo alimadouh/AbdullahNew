@@ -1,0 +1,292 @@
+{
+  "id": "pantoprazole",
+  "name": "Pantoprazole",
+  "ingredients": ["pantoprazole"],
+  "className": "Proton pump inhibitor",
+  "groups": ["ppi"],
+  "searchTerms": ["pantoprazole", "pantoprazole sodium", "pantoprazole sodium sesquihydrate"],
+  "formulations": [
+    {
+      "id": "pantoprazole-gr-tab",
+      "label": "Gastro-resistant tablets",
+      "route": "oral",
+      "strengths": "40 mg (only this SmPC used)",
+      "release": "gastro-resistant",
+      "note": "Contains lactose.",
+      "src": [
+        { "s": "emc-14644", "q": "Pantoprazole 40 mg gastro-resistant tablets" },
+        { "s": "emc-14644", "q": "Each tablet contains 102 mg of lactose monohydrate." }
+      ],
+      "sourceIds": ["emc-14644"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Adults and adolescents 12 years and over: reflux oesophagitis. Adults only: H. pylori eradication (with antibiotics) in H. pylori-associated ulcers; gastric and duodenal ulcer; Zollinger-Ellison syndrome and other hypersecretory conditions.",
+        "src": [
+          { "s": "emc-14644", "q": "Pantoprazole is indicated for use in adults and adolescents 12 years of age and above for: - Reflux oesophagitis." },
+          { "s": "emc-14644", "q": "Gastric and duodenal ulcer. - Zollinger-Ellison Syndrome and other pathological hypersecretory conditions." }
+        ] }
+    ] },
+    "restrictions": { "status": "not-stated", "note": "No specialist-only, shared-care or brand restriction stated in the UK SmPC (40 mg gastro-resistant tablets), MHRA Drug Safety Updates on PPIs or SPS pages checked." },
+    "dosing": { "items": [
+      { "t": "40 mg once daily, usually for 4 weeks (a further 4 weeks if not healed). May be doubled to 80 mg daily in individual cases, especially if no response to other treatment.", "tag": "Reflux oesophagitis (adults and adolescents ≥ 12 years)",
+        "src": [
+          { "s": "emc-14644", "q": "In individual cases the dose may be doubled (increase to 2 tablets Pantoprazole daily) especially when there has been no response to other treatment." },
+          { "s": "emc-14644", "q": "A 4-week period is usually required for the treatment of reflux oesophagitis. If this is not sufficient, healing will usually be achieved within a further 4 weeks." }
+        ] },
+      { "t": "40 mg twice daily with two antibiotics (e.g. amoxicillin 1000 mg + clarithromycin 500 mg, each twice daily), usually for 7 days (up to 14 days). Take the second dose 1 hour before the evening meal.", "tag": "H. pylori eradication (adults)",
+        "src": [
+          { "s": "emc-14644", "q": "Twice daily one tablet Pantoprazole + twice daily 1000 mg amoxicillin + twice daily 500 mg clarithromycin" },
+          { "s": "emc-14644", "q": "The combination therapy is implemented for 7 days in general and can be prolonged for a further 7 days to a total duration of up to two weeks." },
+          { "s": "emc-14644", "q": "the second Pantoprazole tablet should be taken 1 hour before the evening meal" }
+        ] },
+      { "t": "Gastric ulcer: 40 mg once daily for 4 weeks (a further 4 weeks if needed). Duodenal ulcer: 40 mg once daily, usually heals in 2 weeks (a further 2 weeks if needed). Dose may be doubled in individual cases.", "tag": "Gastric / duodenal ulcer (adults)",
+        "src": [
+          { "s": "emc-14644", "q": "A 4-week period is usually required for the treatment of gastric ulcers." },
+          { "s": "emc-14644", "q": "A duodenal ulcer generally heals within 2 weeks. If a 2-week period of treatment is not sufficient, healing will be achieved in almost all cases within a further 2 weeks." }
+        ] },
+      { "t": "Start 80 mg daily, then titrate by gastric acid measurements. Doses above 80 mg daily: divide and give twice daily. A temporary increase above 160 mg is possible but only as long as needed.", "tag": "Zollinger-Ellison syndrome (adults)", "detail": true,
+        "src": [
+          { "s": "emc-14644", "q": "patients should start their treatment with a daily dose of 80 mg (2 tablets of Pantoprazole 40 mg)" },
+          { "s": "emc-14644", "q": "With doses above 80 mg daily, the dose should be divided and given twice daily." }
+        ] },
+      { "t": "Elderly and renal impairment: no dose adjustment.", "tag": "Elderly", "detail": true,
+        "src": [{ "s": "emc-14644", "q": "Elderly No dose adjustment is necessary in the elderly" }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Not recommended under 12 years (limited safety and efficacy data). From 12 years: reflux oesophagitis only, at the adult dose.",
+        "src": [{ "s": "emc-14644", "q": "Pantoprazole is not recommended for use in children below 12 years of age because of limited data on safety and efficacy in this age group" }] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to pantoprazole, substituted benzimidazoles or any excipient.",
+        "src": [{ "s": "emc-14644", "q": "Hypersensitivity to the active substance, substituted benzimidazoles, any of the other excipients listed in section 6.1." }] },
+      { "t": "Must not be used in H. pylori combination therapy in moderate to severe hepatic dysfunction or in impaired renal function (no data).",
+        "src": [
+          { "s": "emc-14644", "q": "Pantoprazole must not be used in combination treatment for eradication of H. pylori in patients with moderate to severe hepatic dysfunction" },
+          { "s": "emc-14644", "q": "Pantoprazole must not be used in combination treatment for eradication of H. pylori in patients with impaired renal function" }
+        ] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Alarm symptoms (weight loss, recurrent vomiting, dysphagia, haematemesis, anaemia, melaena) or suspected gastric ulcer: exclude malignancy first - treatment may mask symptoms.",
+        "src": [{ "s": "emc-14644", "q": "In the presence of any alarm symptom (e.g. significant unintentional weight loss, recurrent vomiting, dysphagia, haematemesis, anaemia or melaena) and when gastric ulcer is suspected or present, malignancy should be excluded." }] },
+      { "t": "Severe hepatic impairment: monitor liver enzymes regularly (especially long term); stop if enzymes rise.",
+        "src": [{ "s": "emc-14644", "q": "In patients with severe liver impairment, the liver enzymes should be monitored regularly during treatment with pantoprazole, particularly on long-term use. In the case of a rise of the liver enzymes, the treatment should be discontinued" }] },
+      { "t": "Hypomagnesaemia (rare, severe; usually after ≥ 3 months, mostly after 1 year). Consider magnesium before and during prolonged treatment, especially with digoxin or diuretics.",
+        "src": [
+          { "s": "emc-14644", "q": "Severe hypomagnesaemia has been rarely reported in patients treated with proton pump inhibitors (PPIs) like pantoprazole for at least three months, and in most cases for a year." },
+          { "s": "mhra-dsu-ppi-hypomagnesaemia", "q": "consider measurement of magnesium levels before starting PPI treatment and periodically during prolonged treatment, especially in those who will take a PPI concomitantly with digoxin or drugs that may cause hypomagnesaemia (eg, diuretics)" }
+        ] },
+      { "t": "Fractures: high doses and long use (> 1 year) may modestly increase hip, wrist and spine fracture risk, mainly in the elderly. Patients at risk of osteoporosis need guideline care with adequate vitamin D and calcium.",
+        "src": [
+          { "s": "emc-14644", "q": "Proton pump inhibitors, especially if used in high doses and over long durations (>1year), may modestly increase the risk of hip, wrist and spine fracture" },
+          { "s": "emc-14644", "q": "Patients at risk of osteoporosis should receive care according to current clinical guidelines and they should have an adequate intake of vitamin D and calcium." }
+        ] },
+      { "t": "Severe skin reactions (erythema multiforme, SJS, TEN, DRESS) can be life-threatening: warn patients of the signs; stop pantoprazole immediately if they appear.",
+        "src": [{ "s": "emc-14644", "q": "If signs and symptoms suggestive of these reactions appear, pantoprazole should be withdrawn immediately and an alternative treatment considered." }] },
+      { "t": "Subacute cutaneous lupus erythematosus (SCLE): if lesions (especially sun-exposed) with arthralgia, seek help promptly and consider stopping. SCLE with one PPI may raise risk with others.",
+        "src": [
+          { "s": "emc-14644", "q": "the patient should seek medical help promptly and the healthcare professional should consider stopping pantoprazole" },
+          { "s": "emc-14644", "q": "SCLE after previous treatment with a proton pump inhibitor may increase the risk of SCLE with other proton pump inhibitors." }
+        ] },
+      { "t": "GI infections: slightly increased risk of Salmonella, Campylobacter or C. difficile.", "detail": true,
+        "src": [{ "s": "emc-14644", "q": "Treatment with Pantoprazole may lead to a slightly increased risk of gastrointestinal infections caused by bacteria such as Salmonella and Campylobacter or C. difficile ." }] },
+      { "t": "Vitamin B12 absorption may fall on long-term therapy: consider in those with low stores or risk factors. Long-term use (> 1 year): keep under regular surveillance.", "detail": true,
+        "src": [
+          { "s": "emc-14644", "q": "This should be considered in patients with reduced body stores or risk factors for reduced vitamin B12 absorption on long-term therapy" },
+          { "s": "emc-14644", "q": "In long-term treatment, especially when exceeding a treatment period of 1 year, patients should be kept under regular surveillance." }
+        ] },
+      { "t": "Chromogranin A tests: stop pantoprazole at least 5 days before CgA measurement. False-positive urine THC screens reported - confirm by another method.", "detail": true,
+        "src": [
+          { "s": "emc-14644", "q": "Pantoprazole treatment should be stopped for at least 5 days before CgA measurements" },
+          { "s": "emc-14644", "q": "There have been reports of false-positive results in some urine screening tests for tetrahydrocannabinol (THC) in patients receiving pantoprazole." }
+        ] },
+      { "t": "Contains lactose: patients with hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it.", "detail": true,
+        "src": [{ "s": "emc-14644", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Warfarin (coumarins): no pharmacokinetic effect in studies, but raised INR/prothrombin time reported with PPIs, which may cause abnormal bleeding or death. Monitor INR and prothrombin time.",
+        "src": [
+          { "s": "emc-14644", "q": "there have been reports of increased INR and prothrombin time in patients receiving PPIs and warfarin or phenprocoumon concomitantly" },
+          { "s": "emc-14644", "q": "Patients treated with pantoprazole and warfarin or phenprocoumon may need to be monitored for increase in INR and prothrombin time." }
+        ] },
+      { "t": "Methotrexate (high dose, e.g. 300 mg): levels may rise; consider temporarily stopping pantoprazole.",
+        "src": [{ "s": "emc-14644", "q": "in settings where high-dose methotrexate is used, for example cancer and psoriasis, a temporary withdrawal of pantoprazole may need to be considered" }] },
+      { "t": "HIV protease inhibitors that need acid pH (e.g. atazanavir): not recommended. If unavoidable, monitor closely (e.g. viral load) and do not exceed pantoprazole 20 mg daily.", "detail": true,
+        "src": [
+          { "s": "emc-14644", "q": "Co-administration of pantoprazole is not recommended with HIV protease inhibitors for which absorption is dependent on acidic intragastric pH such as atazanavir" },
+          { "s": "emc-14644", "q": "A pantoprazole dose of 20 mg per day should not be exceeded." }
+        ] },
+      { "t": "Drugs needing gastric acid for absorption (e.g. ketoconazole, itraconazole, posaconazole, erlotinib): absorption may be reduced.", "detail": true,
+        "src": [{ "s": "emc-14644", "q": "e.g. some azole antifungals such as ketoconazole, itraconazole, posaconazole and other medicines such as erlotinib" }] },
+      { "t": "Enzyme inducers (rifampicin, St John's wort) may lower pantoprazole levels; CYP2C19 inhibitors (e.g. fluvoxamine) may raise them.", "detail": true,
+        "src": [
+          { "s": "emc-14644", "q": "Enzyme inducers affecting CYP2C19 and CYP3A4 such as rifampicin and St John's wort ( Hypericum perforatum ) may reduce the plasma concentrations of PPIs" },
+          { "s": "emc-14644", "q": "Inhibitors of CYP2C19 such as fluvoxamine could increase the systemic exposure of pantoprazole." }
+        ] },
+      { "t": "Diuretics (and digoxin): consider magnesium checks before and during prolonged PPI treatment.",
+        "src": [{ "s": "emc-14644", "q": "For patients expected to be on prolonged treatment or who take PPIs with digoxin or medicinal products that may cause hypomagnesaemia (e.g. diuretics), health care professionals should consider measuring magnesium levels before starting PPI treatment and periodically during treatment." }] },
+      { "t": "Clopidogrel: SPS advises avoiding clopidogrel only with omeprazole or esomeprazole; other PPIs are considered safe with clopidogrel. No clinically relevant interaction found with clarithromycin, metronidazole, amoxicillin, diclofenac, naproxen, nifedipine or antacids.", "detail": true,
+        "src": [
+          { "s": "sps-clopidogrel-ppi", "q": "Other PPIs are considered safe with clopidogrel." },
+          { "s": "emc-14644", "q": "Interaction studies have also been performed by concomitantly administering pantoprazole with the respective antibiotics (clarithromycin, metronidazole, amoxicillin). No clinically relevant interactions were found." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "No dose adjustment needed (including dialysis). Must not be used in H. pylori combination therapy in impaired renal function. Tubulointerstitial nephritis reported (frequency not known).",
+        "src": [
+          { "s": "emc-14644", "q": "Patients with renal impairment No dose adjustment is necessary in patients with impaired renal function." },
+          { "s": "emc-14644", "q": "Pantoprazole must not be used in combination treatment for eradication of H. pylori in patients with impaired renal function" },
+          { "s": "emc-14644", "q": "Tubulointerstitial nephritis (TIN) (with possible progression to renal failure)" }
+        ] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Severe hepatic impairment: do not exceed 20 mg daily; monitor liver enzymes regularly and stop if they rise.",
+        "src": [
+          { "s": "emc-14644", "q": "A daily dose of 20 mg Pantoprazole (1 tablet of 20 mg Pantoprazole) should not be exceeded in patients with severe liver impairment." },
+          { "s": "emc-14644", "q": "In the case of a rise of the liver enzymes, the treatment should be discontinued" }
+        ] },
+      { "t": "Moderate to severe hepatic dysfunction: must not be used in H. pylori combination therapy.",
+        "src": [{ "s": "emc-14644", "q": "Pantoprazole must not be used in combination treatment for eradication of H. pylori in patients with moderate to severe hepatic dysfunction" }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: 300-1000 pregnancy outcomes show no malformative or feto/neonatal toxicity, but as a precaution it is preferable to avoid pantoprazole in pregnancy.",
+        "src": [
+          { "s": "emc-14644", "q": "A moderate amount of data on pregnant women (between 300-1000 pregnancy outcomes) indicate no malformative or feto/ neonatal toxicity of pantoprazole." },
+          { "s": "emc-14644", "q": "As a precautionary measure, it is preferable to avoid the use of pantoprazole during pregnancy." }
+        ] },
+      { "t": "BUMPS: omeprazole is the preferred PPI in pregnancy, but other PPIs can be used if advised by a doctor; no good evidence linking PPIs to miscarriage, birth defects, stillbirth, preterm delivery or low birth weight.",
+        "src": [
+          { "s": "bumps-ppi", "q": "However, other PPIs can also be used if advised by a doctor." },
+          { "s": "bumps-ppi", "q": "There is no good evidence that omeprazole or other PPIs are linked to miscarriage, birth defects, stillbirth, preterm delivery, or low infant birth weight." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: excretion into human milk reported; risk to the infant cannot be excluded - decide whether to stop breastfeeding or pantoprazole.",
+        "src": [
+          { "s": "emc-14644", "q": "There is insufficient information on the excretion of pantoprazole in human milk but excretion into human milk has been reported. A risk to the newborns/infants cannot be excluded." }
+        ] },
+      { "t": "SPS: any PPI can be used in breastfeeding; omeprazole and pantoprazole are the PPIs of choice.",
+        "src": [{ "s": "sps-heartburn-breastfeeding", "q": "Any PPI can be used during breastfeeding, however omeprazole and pantoprazole are the PPIs of choice" }] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: no impairment in animal studies.", "detail": true,
+        "src": [{ "s": "emc-14644", "q": "There was no evidence of impaired fertility following the administration of pantoprazole in animal studies" }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "About 5% of patients have adverse reactions. Common: benign fundic gland polyps. Uncommon: headache, dizziness, diarrhoea, nausea/vomiting, bloating, constipation, dry mouth, abdominal pain, raised liver enzymes, rash, pruritus, sleep disorders, fracture, asthenia.",
+        "src": [
+          { "s": "emc-14644", "q": "Approximately 5 % of patients can be expected to experience adverse drug reactions (ADRs)." },
+          { "s": "emc-14644", "q": "Fundic gland polyps (benign) Diarrhoea; Nausea / vomiting; Abdominal distension and bloating; Constipation; Dry mouth; Abdominal pain and discomfort" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Severe skin reactions (SJS, TEN, erythema multiforme, DRESS): stop immediately.",
+        "src": [{ "s": "emc-14644", "q": "Stevens-Johnson syndrome; Lyell syndrome (TEN); Erythema multiforme" }] },
+      { "t": "Hypersensitivity including anaphylactic reactions and shock (rare).",
+        "src": [{ "s": "emc-14644", "q": "Hypersensitivity (including anaphylactic reactions and anaphylactic shock)" }] },
+      { "t": "Hepatocellular injury, jaundice, hepatocellular failure (frequency not known).",
+        "src": [{ "s": "emc-14644", "q": "Hepatocellular injury; Jaundice; Hepatocellular failure" }] },
+      { "t": "Tubulointerstitial nephritis (may progress to renal failure); hypomagnesaemia (may cause hypocalcaemia, hypokalaemia); hyponatraemia.",
+        "src": [
+          { "s": "emc-14644", "q": "Tubulointerstitial nephritis (TIN) (with possible progression to renal failure)" },
+          { "s": "emc-14644", "q": "Hyponatraemia; Hypomagnesaemia (see section 4.4)" }
+        ] },
+      { "t": "Blood disorders: agranulocytosis (rare); thrombocytopenia, leucopenia, pancytopenia (very rare).", "detail": true,
+        "src": [{ "s": "emc-14644", "q": "Agranulocytosis Thrombocytopenia; Leukopenia; Pancytopenia" }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Consider serum magnesium before starting if prolonged treatment is expected or with digoxin/diuretics.", "tag": "baseline",
+        "src": [{ "s": "mhra-dsu-ppi-hypomagnesaemia", "q": "consider measurement of magnesium levels before starting PPI treatment and periodically during prolonged treatment" }] },
+      { "t": "Periodic magnesium on prolonged treatment; liver enzymes regularly in severe hepatic impairment; regular surveillance beyond 1 year.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-14644", "q": "health care professionals should consider measuring magnesium levels before starting PPI treatment and periodically during treatment" },
+          { "s": "emc-14644", "q": "In patients with severe liver impairment, the liver enzymes should be monitored regularly during treatment with pantoprazole, particularly on long-term use." }
+        ] },
+      { "t": "Stop if liver enzymes rise (severe hepatic impairment) or if severe skin reaction signs appear; consider stopping if SCLE develops.", "tag": "stop",
+        "src": [
+          { "s": "emc-14644", "q": "In the case of a rise of the liver enzymes, the treatment should be discontinued" },
+          { "s": "mhra-dsu-ppi-scle", "q": "consider stopping use of the PPI unless it is imperative for a serious acid-related condition" }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Swallow whole with some water 1 hour before a meal; do not chew or crush.",
+        "src": [{ "s": "emc-14644", "q": "The tablets should not be chewed or crushed, and should be swallowed whole 1 hour before a meal with some water." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Report rash, blistering or peeling skin promptly; report rash on sun-exposed skin with joint pain (possible SCLE).",
+        "src": [
+          { "s": "emc-14644", "q": "At the time of prescription, patients should be advised of the signs and symptoms and monitored closely for skin reactions." },
+          { "s": "mhra-dsu-ppi-scle", "q": "advise them to avoid exposing the skin to sunlight" }
+        ] },
+      { "t": "Dizziness or visual disturbance may occur - do not drive or operate machines if affected.", "detail": true,
+        "src": [{ "s": "emc-14644", "q": "If affected, patients should not drive or operate machines." }] },
+      { "t": "On long-term use, make sure you get enough vitamin D and calcium.", "detail": true,
+        "src": [{ "s": "mhra-dsu-ppi-fracture", "q": "consult your doctor to make sure you are taking enough vitamin D and calcium" }] }
+    ] }
+  },
+  "rules": [
+    { "id": "pantoprazole:allergy:pantoprazole", "kind": "allergy", "level": "contraindicated", "med": "pantoprazole", "allergen": ["pantoprazole"],
+      "concern": "Hypersensitivity to pantoprazole or substituted benzimidazoles", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-14644", "q": "Hypersensitivity to the active substance, substituted benzimidazoles, any of the other excipients listed in section 6.1." }] },
+    { "id": "pantoprazole:allergy:ppi-scle", "kind": "allergy", "level": "caution", "med": "pantoprazole", "allergen": ["group:ppi"],
+      "concern": "Previous subacute cutaneous lupus erythematosus (SCLE) with a PPI", "consequence": "SCLE after a previous PPI may increase the risk of SCLE with another PPI.", "action": "Be aware of cross-reaction risk; consider stopping if lesions occur.", "sourceWording": "may increase the risk of SCLE with other proton pump inhibitors",
+      "src": [{ "s": "emc-14644", "q": "SCLE after previous treatment with a proton pump inhibitor may increase the risk of SCLE with other proton pump inhibitors." }] },
+    { "id": "pantoprazole:hepatic:severe-dose", "kind": "hepatic", "level": "dose", "med": "pantoprazole", "hepatic": ["severe"],
+      "concern": "Severe hepatic impairment", "consequence": "Reduced clearance; risk of liver enzyme rise.", "action": "Do not exceed 20 mg daily; monitor liver enzymes regularly and stop if they rise.", "sourceWording": "should not be exceeded in patients with severe liver impairment",
+      "src": [
+        { "s": "emc-14644", "q": "A daily dose of 20 mg Pantoprazole (1 tablet of 20 mg Pantoprazole) should not be exceeded in patients with severe liver impairment." },
+        { "s": "emc-14644", "q": "In the case of a rise of the liver enzymes, the treatment should be discontinued" }
+      ] },
+    { "id": "pantoprazole:hepatic:hpylori-combination", "kind": "hepatic", "level": "contraindicated", "med": "pantoprazole", "hepatic": ["moderate", "severe"],
+      "concern": "H. pylori eradication combination therapy in moderate to severe hepatic impairment", "consequence": "No efficacy or safety data for the combination in these patients.", "action": "Do not use pantoprazole in H. pylori combination therapy (single-agent use is not covered by this rule).", "sourceWording": "must not be used in combination treatment for eradication of H. pylori",
+      "src": [{ "s": "emc-14644", "q": "Pantoprazole must not be used in combination treatment for eradication of H. pylori in patients with moderate to severe hepatic dysfunction" }] },
+    { "id": "pantoprazole:condition:renal-hpylori-combination", "kind": "condition", "level": "contraindicated", "med": "pantoprazole", "condition": "renal-impairment",
+      "concern": "H. pylori eradication combination therapy in impaired renal function", "consequence": "No efficacy or safety data for the combination in these patients (pantoprazole alone needs no dose change).", "action": "Do not use pantoprazole in H. pylori combination therapy.", "sourceWording": "must not be used in combination treatment for eradication of H. pylori",
+      "src": [{ "s": "emc-14644", "q": "Pantoprazole must not be used in combination treatment for eradication of H. pylori in patients with impaired renal function" }] },
+    { "id": "pantoprazole:condition:osteoporosis", "kind": "condition", "level": "caution", "med": "pantoprazole", "condition": "osteoporosis-risk",
+      "concern": "Risk of osteoporosis / fracture", "consequence": "High-dose, long-term (> 1 year) PPI use may modestly increase hip, wrist and spine fracture risk.", "action": "Care per current guidelines; ensure adequate vitamin D and calcium.", "sourceWording": "should receive care according to current clinical guidelines",
+      "src": [{ "s": "emc-14644", "q": "Patients at risk of osteoporosis should receive care according to current clinical guidelines and they should have an adequate intake of vitamin D and calcium." }] },
+    { "id": "pantoprazole:condition:galactose-intolerance", "kind": "condition", "level": "avoid", "med": "pantoprazole", "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, lactase deficiency or glucose-galactose malabsorption", "consequence": "Tablets contain lactose.", "action": "Should not take this product.", "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-14644", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }] },
+    { "id": "pantoprazole:age:lt12", "kind": "age", "level": "avoid", "med": "pantoprazole", "age": { "minYears": 0, "maxYears": 12 },
+      "concern": "Child under 12 years", "consequence": "Limited safety and efficacy data.", "action": "Not recommended below 12 years.", "sourceWording": "is not recommended for use in children below 12 years of age",
+      "src": [{ "s": "emc-14644", "q": "Pantoprazole is not recommended for use in children below 12 years of age because of limited data on safety and efficacy in this age group" }] },
+    { "id": "pantoprazole:pregnancy:avoid", "kind": "pregnancy", "level": "avoid", "med": "pantoprazole",
+      "concern": "Pregnancy", "consequence": "Human data (300-1000 outcomes) show no malformative or feto/neonatal toxicity, but animal studies show reproductive toxicity.", "action": "SmPC: preferable to avoid as a precaution. BUMPS: omeprazole is the preferred PPI; other PPIs can be used if advised by a doctor.", "sourceWording": "it is preferable to avoid the use of pantoprazole during pregnancy",
+      "src": [
+        { "s": "emc-14644", "q": "As a precautionary measure, it is preferable to avoid the use of pantoprazole during pregnancy." },
+        { "s": "bumps-ppi", "q": "Omeprazole is the PPI that is preferred for use in pregnancy as there is more information about its safety." }
+      ] },
+    { "id": "pantoprazole:breastfeeding:caution", "kind": "breastfeeding", "level": "caution", "med": "pantoprazole",
+      "concern": "Breastfeeding", "consequence": "Excretion into human milk reported; infant risk cannot be excluded (SmPC).", "action": "SmPC: weigh benefit of breastfeeding against benefit of therapy. SPS: pantoprazole is a PPI of choice in breastfeeding.", "sourceWording": "A risk to the newborns/infants cannot be excluded",
+      "src": [
+        { "s": "emc-14644", "q": "A risk to the newborns/infants cannot be excluded." },
+        { "s": "sps-heartburn-breastfeeding", "q": "Any PPI can be used during breastfeeding, however omeprazole and pantoprazole are the PPIs of choice" }
+      ] },
+    { "id": "pantoprazole:interaction:warfarin", "kind": "interaction", "level": "monitor", "med": "pantoprazole", "other": "warfarin", "effect": "bleeding",
+      "concern": "Pantoprazole + warfarin", "consequence": "Raised INR and prothrombin time reported with PPIs; may lead to abnormal bleeding and even death.", "action": "Monitor INR and prothrombin time.", "sourceWording": "may need to be monitored for increase in INR and prothrombin time",
+      "src": [
+        { "s": "emc-14644", "q": "Increases in INR and prothrombin time may lead to abnormal bleeding, and even death." },
+        { "s": "emc-14644", "q": "Patients treated with pantoprazole and warfarin or phenprocoumon may need to be monitored for increase in INR and prothrombin time." }
+      ] },
+    { "id": "pantoprazole:interaction:methotrexate", "kind": "interaction", "level": "caution", "med": "pantoprazole", "other": "methotrexate",
+      "concern": "Pantoprazole + methotrexate (mainly high-dose)", "consequence": "Methotrexate levels may increase.", "action": "With high-dose methotrexate, consider temporarily stopping pantoprazole.", "sourceWording": "a temporary withdrawal of pantoprazole may need to be considered",
+      "src": [{ "s": "emc-14644", "q": "in settings where high-dose methotrexate is used, for example cancer and psoriasis, a temporary withdrawal of pantoprazole may need to be considered" }] },
+    { "id": "pantoprazole:interaction:st-johns-wort", "kind": "interaction", "level": "info", "med": "pantoprazole", "other": "st-johns-wort",
+      "concern": "Pantoprazole + St John's wort", "consequence": "May reduce pantoprazole plasma levels (enzyme induction).", "action": "No specific action stated in the SmPC; be aware of possible reduced effect.", "sourceWording": "may reduce the plasma concentrations of PPIs",
+      "src": [{ "s": "emc-14644", "q": "Enzyme inducers affecting CYP2C19 and CYP3A4 such as rifampicin and St John's wort ( Hypericum perforatum ) may reduce the plasma concentrations of PPIs" }] },
+    { "id": "pantoprazole:interaction:cyp2c19-inhibitor", "kind": "interaction", "level": "caution", "med": "pantoprazole", "other": "group:cyp2c19-inhibitor",
+      "concern": "Pantoprazole + CYP2C19 inhibitor", "consequence": "May increase pantoprazole exposure.", "action": "Consider a pantoprazole dose reduction in long-term high-dose use or in hepatic impairment.", "sourceWording": "A dose reduction may be considered",
+      "src": [
+        { "s": "emc-14644", "q": "Inhibitors of CYP2C19 such as fluvoxamine could increase the systemic exposure of pantoprazole." },
+        { "s": "emc-14644", "q": "A dose reduction may be considered for patients treated long-term with high doses of pantoprazole, or those with hepatic impairment." }
+      ] },
+    { "id": "pantoprazole:interaction:diuretic", "kind": "interaction", "level": "monitor", "med": "pantoprazole", "other": "group:diuretic",
+      "concern": "Pantoprazole (prolonged) + diuretic", "consequence": "Additive risk of hypomagnesaemia.", "action": "Consider measuring magnesium before starting and periodically during treatment.", "sourceWording": "should consider measuring magnesium levels",
+      "src": [{ "s": "emc-14644", "q": "For patients expected to be on prolonged treatment or who take PPIs with digoxin or medicinal products that may cause hypomagnesaemia (e.g. diuretics), health care professionals should consider measuring magnesium levels before starting PPI treatment and periodically during treatment." }] }
+  ]
+}

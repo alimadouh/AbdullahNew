@@ -1261,6 +1261,197 @@
         },
         { "s": "emc-2948", "q": "In elderly people over 75 years elimination may be prolonged." }
       ]
+    },
+    {
+      "id": "tramadol:interaction:maoi",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "tramadol",
+      "other": "group:maoi",
+      "effect": "serotonin-syndrome",
+      "concern": "MAO inhibitors (now or within 14 days)",
+      "consequence": "Life-threatening CNS, respiratory and cardiovascular interactions cannot be ruled out; serotonin syndrome.",
+      "action": "Do not use with an MAOI or within 14 days of stopping one.",
+      "sourceWording": "must not be combined",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "in patients who are receiving MAO inhibitors or who have taken them within the last 14 days"
+        },
+        {
+          "s": "emc-2948",
+          "q": "Tramadol hydrochloride must not be combined with monoamine oxidase (MAO) inhibitors"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:snri-seizure",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tramadol",
+      "other": "group:snri",
+      "effect": "seizure-threshold",
+      "concern": "SNRIs (seizure threshold)",
+      "consequence": "Increased risk of convulsions.",
+      "action": "Be aware of seizure risk with seizure-threshold-lowering medicines.",
+      "sourceWording": "tramadol may increase the seizure risk",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "serotonin-norepinephrine reuptake inhibitors (SNRIs), tricyclic anti-depressants, anti-psychotics and other seizure threshold lowering medicinal products"
+        },
+        {
+          "s": "emc-7123",
+          "q": "tramadol may increase the seizure risk in patients taking other medicinal products that lowers the seizure threshold"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:tricyclic-seizure",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tramadol",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "seizure-threshold",
+      "concern": "Tricyclic antidepressants (seizure threshold)",
+      "consequence": "Increased risk of convulsions.",
+      "action": "Be aware of seizure risk with seizure-threshold-lowering medicines.",
+      "sourceWording": "tramadol may increase the seizure risk",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "serotonin-norepinephrine reuptake inhibitors (SNRIs), tricyclic anti-depressants, anti-psychotics and other seizure threshold lowering medicinal products"
+        },
+        {
+          "s": "emc-7123",
+          "q": "tramadol may increase the seizure risk in patients taking other medicinal products that lowers the seizure threshold"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:mirtazapine-seizure",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tramadol",
+      "other": "mirtazapine",
+      "effect": "seizure-threshold",
+      "concern": "Mirtazapine (seizure threshold)",
+      "consequence": "Increased risk of convulsions.",
+      "action": "Be aware of seizure risk with seizure-threshold-lowering medicines.",
+      "sourceWording": "tramadol may increase the seizure risk",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "other seizure threshold lowering medicinal products (such as bupropion, mirtazapine, tetrahydrocannabinol) to cause convulsions"
+        },
+        {
+          "s": "emc-7123",
+          "q": "tramadol may increase the seizure risk in patients taking other medicinal products that lowers the seizure threshold"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "tramadol",
+      "other": "carbamazepine",
+      "concern": "Carbamazepine (enzyme inducer)",
+      "consequence": "May reduce the pain-relieving effect and shorten the duration of action of tramadol.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may reduce the analgesic effect and shorten the duration of action",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Simultaneous or previous administration of carbamazepine (enzyme inducer) may reduce the analgesic effect and shorten the duration of action."
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:benzodiazepine",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tramadol",
+      "other": "group:benzodiazepine",
+      "effect": "cns-respiratory-depression",
+      "concern": "Benzodiazepines and related sedatives",
+      "consequence": "Sedation, respiratory depression, coma and death (additive CNS depression).",
+      "action": "Only if no alternative; limit dose and duration.",
+      "sourceWording": "The dose and duration of concomitant use should be limited",
+      "src": [
+        {
+          "s": "emc-2948",
+          "q": "The concomitant use of opioids with sedative medicinal products such as benzodiazepines or related medicinal products increases the risk of sedation, respiratory depression, coma and death because of additive CNS depressant effect"
+        },
+        {
+          "s": "emc-2948",
+          "q": "The dose and duration of concomitant use should be limited"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:antihistamine",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tramadol",
+      "other": "group:antihistamine",
+      "effect": "cns-respiratory-depression",
+      "concern": "H1-antihistamines",
+      "consequence": "Sedation, respiratory depression, coma and death (additive CNS depression); increased anticholinergic side effects.",
+      "action": "Lowest effective tramadol dose and shortest duration of the combination.",
+      "sourceWording": "the lowest effective dose of tramadol should be used",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "other respiratory or CNS depressants (e.g. other opioids, antitussives or substitution treatments, barbiturates, antipsychotics, H1-antihistamines, alcohol increases the risk of sedation, respiratory depression, coma and death"
+        },
+        {
+          "s": "emc-7123",
+          "q": "the lowest effective dose of tramadol should be used, and the duration of the concomitant treatment should be as short as possible"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:anticholinergic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "tramadol",
+      "other": "group:anticholinergic",
+      "concern": "Anticholinergic medicines",
+      "consequence": "Increased anticholinergic side effects.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may result in increased anticholinergic adverse effects",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "Concomitant administration of tramadol with anticholinergics or medications with anticholinergic activity"
+        },
+        {
+          "s": "emc-7123",
+          "q": "may result in increased anticholinergic adverse effects"
+        }
+      ]
+    },
+    {
+      "id": "tramadol:interaction:5ht3-antagonist",
+      "kind": "interaction",
+      "level": "info",
+      "med": "tramadol",
+      "other": "group:5ht3-antagonist",
+      "concern": "Ondansetron and other 5-HT3 antagonists",
+      "consequence": "Ondansetron around surgery increased the tramadol requirement for post-operative pain.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "increased the requirement of tramadol",
+      "src": [
+        {
+          "s": "emc-7123",
+          "q": "the pre- or postoperative application of the antiemetic 5-HT3 antagonist ondansetron increased the requirement of tramadol in patients with postoperative pain"
+        },
+        {
+          "s": "emc-2948",
+          "q": "other 5-HT3-receptor antagonists would be expected to interact similarly with tramadol hydrochloride"
+        }
+      ]
     }
   ]
 }

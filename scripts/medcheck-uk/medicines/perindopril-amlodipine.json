@@ -1,0 +1,1563 @@
+{
+  "id": "perindopril-amlodipine",
+  "name": "Perindopril arginine/amlodipine",
+  "ingredients": ["perindopril", "amlodipine"],
+  "className": "ACE inhibitor with dihydropyridine calcium channel blocker (fixed-dose combination)",
+  "groups": ["ace-inhibitor", "calcium-channel-blocker", "dihydropyridine", "antihypertensive"],
+  "searchTerms": ["perindopril amlodipine", "perindopril/amlodipine", "perindopril tert-butylamine amlodipine", "perindopril erbumine amlodipine", "amlodipine perindopril"],
+  "formulations": [
+    {
+      "id": "perindopril-amlodipine-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "UK SmPC: perindopril tert-butylamine/amlodipine 4 mg/5 mg, 4 mg/10 mg, 8 mg/5 mg, 8 mg/10 mg. Clinic product: perindopril arginine/amlodipine 5 mg/5 mg, 5 mg/10 mg, 10 mg/5 mg, 10 mg/10 mg.",
+      "release": "immediate",
+      "note": "No UK product information exists for a perindopril arginine/amlodipine tablet (emc and MHRA products searched). This entry uses the UK perindopril tert-butylamine/amlodipine tablet SmPCs. The active medicine is the same (both salts deliver perindopril, which is converted to perindoprilat); only the salt, and so the mg number on the pack, differs. Perindopril content: 4 mg tert-butylamine = 3.34 mg and 8 mg = 6.68 mg; 5 mg arginine = 3.395 mg and 10 mg = 6.790 mg. The SmPC states that 8 mg tert-butylamine is equivalent to 10 mg arginine. So the clinic 5 mg/5 mg, 5 mg/10 mg, 10 mg/5 mg and 10 mg/10 mg tablets match the UK 4 mg/5 mg, 4 mg/10 mg, 8 mg/5 mg and 8 mg/10 mg tablets. Do not swap salts mg for mg. Clinical advice in this entry is not salt-specific.",
+      "src": [
+        { "s": "emc-15441", "q": "Each tablet contains 4 mg perindopril tert-butylamine (equivalent to 3.34 mg perindopril) and 5 mg amlodipine (as besilate)." },
+        { "s": "emc-15443", "q": "Each tablet contains 4 mg perindopril tert-butylamine (equivalent to 3.34 mg perindopril) and 10 mg amlodipine (as besilate)." },
+        { "s": "emc-15444", "q": "Each tablet contains 8 mg perindopril tert-butylamine (equivalent to 6.68 mg perindopril) and 5 mg amlodipine (as besilate)." },
+        { "s": "emc-15445", "q": "Each tablet contains 8 mg perindopril tert-butylamine (equivalent to 6.68 mg perindopril) and 10 mg amlodipine (as besilate)." },
+        { "s": "emc-10545", "q": "One film-coated tablet contains 3.395 mg perindopril corresponding to 5 mg perindopril arginine." },
+        { "s": "emc-10545", "q": "One film-coated tablet contains 6.790 mg perindopril corresponding to 10 mg perindopril arginine." },
+        { "s": "emc-15441", "q": "8 mg perindopril tert-butylamine (equivalent to 10 mg perindopril arginine)" }
+      ],
+      "sourceIds": ["emc-15441", "emc-15443", "emc-15444", "emc-15445"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Substitution therapy for essential hypertension and/or stable coronary artery disease in patients already controlled on perindopril and amlodipine given together at the same doses.",
+          "src": [
+            { "s": "emc-15441", "q": "Perindopril/Amlodipine is indicated as substitution therapy for treatment of essential hypertension and/or stable coronary artery disease, in patients already controlled with perindopril and amlodipine given concurrently at the same dose level." }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Licensed only as substitution therapy; the fixed-dose combination is not suitable for starting treatment. Dose changes are made by titrating the separate components.",
+          "src": [
+            { "s": "emc-15441", "q": "The fixed dose combination is not suitable for initial therapy." },
+            { "s": "emc-15441", "q": "If the change of the dosage is needed, it should be carried out by individual titration of the free combination's ingredients." }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "One tablet once daily, at the strength matching the separate perindopril and amlodipine doses that already control the patient. Not for initial therapy; titrate with the separate components if a dose change is needed. Perindopril strengths depend on the salt: 5 mg and 10 mg arginine (clinic product) match 4 mg and 8 mg tert-butylamine (UK SmPC).",
+          "tag": "Hypertension and/or stable coronary artery disease",
+          "src": [
+            { "s": "emc-15441", "q": "One tablet per day as a single dose, preferably to be taken in the morning and before a meal." },
+            { "s": "emc-15441", "q": "in patients already controlled with perindopril and amlodipine given concurrently at the same dose level." },
+            { "s": "emc-15441", "q": "The fixed dose combination is not suitable for initial therapy." },
+            { "s": "emc-15441", "q": "8 mg perindopril tert-butylamine (equivalent to 10 mg perindopril arginine)" },
+            { "s": "emc-15441", "q": "Each tablet contains 4 mg perindopril tert-butylamine (equivalent to 3.34 mg perindopril)" },
+            { "s": "emc-10545", "q": "One film-coated tablet contains 3.395 mg perindopril corresponding to 5 mg perindopril arginine." }
+          ]
+        },
+        {
+          "t": "Elderly: elimination of perindoprilat is reduced; follow-up includes frequent monitoring of creatinine and potassium. Increase the dose with care.",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "Elimination of perindoprilat is decreased in the elderly and in patients with renal failure. Therefore, the usual medical follow-up will include frequent monitoring of creatinine and potassium." },
+            { "s": "emc-15441", "q": "In the elderly increase of the dosage should take place with care" }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Should not be used in children and adolescents: efficacy and tolerability not established.",
+          "tag": "Under 18 years",
+          "src": [
+            { "s": "emc-15441", "q": "Perindopril/Amlodipine should not be used in children and adolescents as the efficacy and tolerability of perindopril alone or in combination with amlodipine, have not been established in children and adolescents." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to perindopril or any other ACE inhibitor; history of angioedema with previous ACE inhibitor therapy; hereditary or idiopathic angioedema.",
+          "src": [
+            { "s": "emc-15441", "q": "Hypersensitivity to perindopril or to any other ACE inhibitor." },
+            { "s": "emc-15441", "q": "History of angioedema associated with previous ACE inhibitor therapy." },
+            { "s": "emc-15441", "q": "Hereditary or idiopathic angioedema." }
+          ]
+        },
+        {
+          "t": "Hypersensitivity to amlodipine or any other dihydropyridine, or to any excipient.",
+          "src": [
+            { "s": "emc-15441", "q": "Hypersensitivity to amlodipine or to any other dihydropyridines" },
+            { "s": "emc-15441", "q": "Hypersensitivity to any of the excipients listed in section 6.1." }
+          ]
+        },
+        {
+          "t": "Second and third trimesters of pregnancy.",
+          "src": [
+            { "s": "emc-15441", "q": "Second and third trimesters of pregnancy (see sections 4.4 and 4.6)." }
+          ]
+        },
+        {
+          "t": "With sacubitril/valsartan; do not start within 36 hours of the last sacubitril/valsartan dose. With aliskiren-containing products in diabetes or renal impairment (GFR below 60 mL/min/1.73 m²).",
+          "src": [
+            { "s": "emc-15441", "q": "Concomitant use with sacubitril/valsartan therapy." },
+            { "s": "emc-15441", "q": "must not be initiated earlier than 36 hours after the last dose of sacubitril/valsartan" },
+            { "s": "emc-15441", "q": "The concomitant use of Perindopril/Amlodipine with aliskiren-containing products is contraindicated in patients with diabetes mellitus or renal impairment (GFR < 60 ml/min/1.73 m2)" }
+          ]
+        },
+        {
+          "t": "Extracorporeal treatments bringing blood into contact with negatively charged surfaces (e.g. some high-flux dialysis membranes, LDL apheresis with dextran sulphate).",
+          "src": [
+            { "s": "emc-15441", "q": "Extracorporeal treatments leading to contact of blood with negatively charged surfaces (see section 4.5)." }
+          ]
+        },
+        {
+          "t": "Significant bilateral renal artery stenosis or stenosis of the artery to a single functioning kidney.",
+          "src": [
+            { "s": "emc-15441", "q": "Significant bilateral renal artery stenosis or stenosis of the artery to a single functioning kidney (see section 4.4)." }
+          ]
+        },
+        {
+          "t": "Severe hypotension; shock, including cardiogenic shock; left ventricular outflow obstruction (e.g. high-grade aortic stenosis); haemodynamically unstable heart failure after acute myocardial infarction.",
+          "src": [
+            { "s": "emc-15441", "q": "Severe hypotension, - Hypersensitivity to amlodipine" },
+            { "s": "emc-15441", "q": "Shock, including cardiogenic shock, - Obstruction of the outflow-tract of the left ventricle (e.g. high grade aortic stenosis), - Haemodynamically unstable heart failure after acute myocardial infarction." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Angioedema (face, lips, tongue, glottis, larynx; also intestinal) can occur at any time. Stop promptly and monitor until full resolution; airway involvement needs emergency treatment. Higher rate in black patients.",
+          "tag": "Angioedema",
+          "src": [
+            { "s": "emc-15441", "q": "This may occur at any time during therapy" },
+            { "s": "emc-15441", "q": "Perindopril/Amlodipine should promptly be discontinued and appropriate monitoring should be initiated and continued until complete resolution of symptoms has occurred." },
+            { "s": "emc-15441", "q": "Where there is involvement of the tongue, glottis or larynx, likely to cause airway obstruction, emergency therapy should be administered promptly." },
+            { "s": "emc-15441", "q": "ACE inhibitors cause a higher rate of angioedema in black patients than in non-black patients." }
+          ]
+        },
+        {
+          "t": "History of angioedema not caused by an ACE inhibitor: may be at higher risk on an ACE inhibitor.",
+          "tag": "Angioedema history",
+          "src": [
+            { "s": "emc-15441", "q": "Patients with a history of angioedema unrelated to ACE inhibitor therapy may be at increased risk of angioedema while receiving an ACE inhibitor" }
+          ]
+        },
+        {
+          "t": "Symptomatic hypotension more likely with volume depletion (diuretics, salt restriction, dialysis, diarrhoea, vomiting) or severe renin-dependent hypertension; monitor BP, renal function and potassium closely in those at risk, including ischaemic heart or cerebrovascular disease.",
+          "tag": "Hypotension",
+          "src": [
+            { "s": "emc-15441", "q": "is more likely to occur in patients who have been volume-depleted e.g. by diuretic therapy, dietary salt restriction, dialysis, diarrhoea or vomiting, or who have severe renin-dependent hypertension" },
+            { "s": "emc-15441", "q": "In patients at high risk of symptomatic hypotension, blood pressure, renal function and serum potassium should be monitored closely during treatment with Perindopril/Amlodipine." },
+            { "s": "emc-15441", "q": "Similar considerations apply to patients with ischaemic heart or cerebrovascular disease in whom an excessive fall in blood pressure could result in a myocardial infarction or cerebrovascular accident." }
+          ]
+        },
+        {
+          "t": "Mitral stenosis, aortic stenosis or hypertrophic cardiomyopathy: give with caution.",
+          "tag": "Valve disease",
+          "src": [
+            { "s": "emc-15441", "q": "perindopril should be given with caution to patients with mitral valve stenosis and obstruction in the outflow of the left ventricle such as aortic stenosis or hypertrophic cardiomyopathy." }
+          ]
+        },
+        {
+          "t": "Heart failure: treat with caution; calcium channel blockers may increase the risk of future cardiovascular events and mortality in congestive heart failure.",
+          "tag": "Heart failure",
+          "src": [
+            { "s": "emc-15441", "q": "Patients with heart failure should be treated with caution." },
+            { "s": "emc-15441", "q": "Calcium channel blockers, including amlodipine, should be used with caution in patients with congestive heart failure, as they may increase the risk of future cardiovascular events and mortality." }
+          ]
+        },
+        {
+          "t": "Hyperkalaemia risk with renal impairment, age over 70, diabetes, dehydration, acute cardiac decompensation, metabolic acidosis, potassium supplements or salt substitutes, potassium-sparing diuretics, heparin, trimethoprim/co-trimoxazole, aldosterone antagonists or ARBs. Use potassium-sparing diuretics and ARBs with caution and monitor potassium and renal function.",
+          "tag": "Hyperkalaemia",
+          "src": [
+            { "s": "emc-15441", "q": "Hyperkalaemia can cause serious, sometimes fatal arrhythmias." },
+            { "s": "emc-15441", "q": "Potassium-sparing diuretics and angiotensin-receptor blockers should be used with caution in patients receiving ACE inhibitors, and serum potassium and renal function should be monitored" }
+          ]
+        },
+        {
+          "t": "Dual RAAS blockade (ACE inhibitor with ARB or aliskiren) not recommended; if absolutely necessary, only under specialist supervision with frequent monitoring. Do not combine an ACE inhibitor and ARB in diabetic nephropathy.",
+          "tag": "Dual RAAS blockade",
+          "src": [
+            { "s": "emc-15441", "q": "Dual blockade of RAAS through the combined use of ACEinhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended" },
+            { "s": "emc-15441", "q": "If dual blockade therapy is considered absolutely necessary, this should only occur under specialist supervision and subject to frequent close monitoring of renal function, electrolytes and blood pressure." },
+            { "s": "emc-15441", "q": "ACE-inhibitors and angiotensin II receptor blockers should not be used concomitantly in patients with diabetic nephropathy." }
+          ]
+        },
+        {
+          "t": "Neutropenia/agranulocytosis: extreme caution in collagen vascular disease, immunosuppressant therapy, allopurinol or procainamide, especially with renal impairment; check white cell counts periodically.",
+          "tag": "Blood disorders",
+          "src": [
+            { "s": "emc-15441", "q": "Perindopril should be used with extreme caution in patients with collagen vascular disease, immunosuppressant therapy, treatment with allopurinol or procainamide" },
+            { "s": "emc-15441", "q": "periodic monitoring of white blood cell counts is advised and patients should be instructed to report any sign of infection (e.g. sore throat, fever)." }
+          ]
+        },
+        {
+          "t": "Diabetes on insulin or oral antidiabetics: monitor glycaemic control closely in the first month.",
+          "tag": "Diabetes",
+          "src": [
+            { "s": "emc-15441", "q": "In diabetic patients treated with oral antidiabetic agents or insulin, glycaemic control should be closely monitored during the first month of treatment with an ACE inhibitor" }
+          ]
+        },
+        {
+          "t": "Hepatic impairment: amlodipine half-life and exposure rise; no dose recommendation, so use with caution. Hepatic failure linked to ACE inhibitors (rare): stop if jaundice or marked liver enzyme rise.",
+          "tag": "Liver",
+          "src": [
+            { "s": "emc-15441", "q": "The half life of amlodipine is prolonged and AUC values are higher in patients with impaired liver function; dosage recommendations have not been established." },
+            { "s": "emc-15441", "q": "Patients receiving ACE inhibitors who develop jaundice or marked elevations of hepatic enzymes should discontinue the ACE inhibitor and receive appropriate medical follow-up" }
+          ]
+        },
+        {
+          "t": "Primary hyperaldosteronism: generally no response; use not recommended.",
+          "tag": "Primary aldosteronism",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "Patients with primary hyperaldosteronism generally will not respond to anti-hypertensive drugs acting through inhibition of the renin-angiotensin system. Therefore, the use of this product is not recommended." }
+          ]
+        },
+        {
+          "t": "Major surgery or anaesthesia: stop treatment one day before surgery; correct any hypotension with volume expansion.",
+          "tag": "Surgery",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "The treatment should be discontinued one day prior to the surgery." },
+            { "s": "emc-15441", "q": "If hypotension occurs and is considered to be due to this mechanism, it can be corrected by volume expansion." }
+          ]
+        },
+        {
+          "t": "Anaphylactoid reactions during LDL apheresis with dextran sulphate or desensitisation (e.g. hymenoptera venom); avoided by temporarily withholding the ACE inhibitor.",
+          "tag": "Anaphylactoid reactions",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "These reactions were avoided by temporarily withholding ACE inhibitor therapy prior to each apheresis." },
+            { "s": "emc-15441", "q": "Patients receiving ACE inhibitors during desensitisation treatment (e.g. hymenoptera venom) have experienced anaphylactoid reactions." }
+          ]
+        },
+        {
+          "t": "Persistent dry cough can occur and resolves after stopping.",
+          "tag": "Cough",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "Characteristically, the cough is nonproductive, persistent and resolves after discontinuation of therapy." }
+          ]
+        },
+        {
+          "t": "Safety and efficacy of amlodipine in hypertensive crisis not established.",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "The safety and efficacy of amlodipine in hypertensive crisis has not been established." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Potassium-sparing diuretics (e.g. spironolactone, amiloride), potassium supplements, potassium salt substitutes, trimethoprim and co-trimoxazole: risk of significant (potentially lethal) hyperkalaemia. Combination not recommended; if needed, use with caution and monitor potassium frequently.",
+          "tag": "Potassium-raising medicines",
+          "src": [
+            { "s": "emc-15441", "q": "Potassium sparing diuretics (e.g. spironolactone, triamterene, or amiloride), potassium supplements, or potassium-containing salt substitutes may lead to significant increases in serum potassium." },
+            { "s": "emc-15441", "q": "Therefore, the combination of perindopril with the above-mentioned drugs is not recommended. If concomitant use is indicated, they should be used with caution and with frequent monitoring of serum potassium." }
+          ]
+        },
+        {
+          "t": "Spironolactone (12.5-50 mg/day) in heart failure with low-dose ACE inhibitor: potentially lethal hyperkalaemia. Check no hyperkalaemia or renal impairment first; monitor potassium and creatinine weekly in the first month, then monthly.",
+          "tag": "Spironolactone in heart failure",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "Before initiating the combination, check the absence of hyperkalaemia and renal impairment." },
+            { "s": "emc-15441", "q": "A close monitoring of the kalaemia and creatinemia is recommended in the first month of the treatment once a week at the beginning and, monthly thereafter." }
+          ]
+        },
+        {
+          "t": "ARBs or aliskiren (dual RAAS blockade): more hypotension, hyperkalaemia and renal failure. Not recommended; aliskiren contraindicated in diabetes or renal impairment.",
+          "tag": "ARBs, aliskiren",
+          "src": [
+            { "s": "emc-15441", "q": "Dual blockade of RAAS through the combined use of ACEinhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended" },
+            { "s": "mhra-dsu-ras-combination", "q": "Combination use of medicines from two classes of RAS blocking agents (ACE-inhibitors, ARBs, or aliskiren) is not recommended." }
+          ]
+        },
+        {
+          "t": "NSAIDs (including COX-2 inhibitors and aspirin at anti-inflammatory doses of 3 g/day or more): reduced antihypertensive effect; risk of worsening renal function including acute renal failure, and raised potassium. Use with caution (especially elderly), keep hydrated, consider monitoring renal function.",
+          "tag": "NSAIDs",
+          "src": [
+            { "s": "emc-15441", "q": "Concomitant use of ACE-inhibitors and NSAIDs may lead to an increased risk of worsening of renal function, including possible acute renal failure, and an increase in serum potassium" },
+            { "s": "emc-15441", "q": "The combination should be administered with caution, especially in the elderly." }
+          ]
+        },
+        {
+          "t": "Strong or moderate CYP3A4 inhibitors (protease inhibitors, azole antifungals, erythromycin, clarithromycin, verapamil, diltiazem): amlodipine exposure may rise significantly, with hypotension risk (more so in the elderly); clinical monitoring and dose adjustment may be needed. CYP3A4 inducers (e.g. rifampicin, St John's wort): monitor blood pressure and consider dose adjustment during and after use.",
+          "tag": "CYP3A4 inhibitors and inducers",
+          "src": [
+            { "s": "emc-15441", "q": "Concomitant use of amlodipine with strong or moderate CYP3A4 inhibitors (protease inhibitors, azole antifungals, macrolides like erythromycin or clarithromycin, verapamil or diltiazem) may give rise to significant increase in amlodipine exposure resulting in an increased risk of hypotension." },
+            { "s": "emc-15441", "q": "The clinical translation of these PK variations may be more pronounced in the elderly." },
+            { "s": "emc-15441", "q": "Clinical monitoring and dose adjustment may thus be required." },
+            { "s": "emc-15441", "q": "blood pressure should be monitored and dose regulation considered both during and after concomitant medication particularly with strong CYP3A4 inducers (e.g. rifampicin, hypericum perforatum)." }
+          ]
+        },
+        {
+          "t": "Simvastatin: limit simvastatin to 20 mg daily with amlodipine.",
+          "tag": "Simvastatin",
+          "src": [
+            { "s": "emc-15441", "q": "Limit the dose of simvastatin in patients on amlodipine to 20 mg daily." }
+          ]
+        },
+        {
+          "t": "Antidiabetic medicines (insulin, oral agents): greater glucose lowering with risk of hypoglycaemia, mostly in the first weeks and in renal impairment.",
+          "tag": "Antidiabetics",
+          "src": [
+            { "s": "emc-15441", "q": "may cause an increased blood-glucose lowering effect with risk of hypoglycaemia" }
+          ]
+        },
+        {
+          "t": "Racecadotril and gliptins (linagliptin, sitagliptin, vildagliptin): higher angioedema risk; take care when starting them in a patient on an ACE inhibitor. Sacubitril/valsartan: contraindicated.",
+          "tag": "Angioedema risk",
+          "src": [
+            { "s": "emc-15441", "q": "This risk may be elevated when used concomitantly with racecadotril" },
+            { "s": "emc-15441", "q": "Increased risk of angio-oedema, due to dipeptidyl peptidase IV (DPP-IV) decreased activity by the gliptine, in patients co-treated with an ACE inhibitor." }
+          ]
+        },
+        {
+          "t": "Diuretics: excessive BP fall when starting, especially if volume/salt depleted; stop the diuretic first or start low, and monitor creatinine in the first weeks. Nitrates, other antihypertensives, alpha-blockers, tricyclic antidepressants: additive hypotension; corticosteroids and sympathomimetics: reduced antihypertensive effect.",
+          "tag": "Diuretics, other BP-lowering medicines",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "In all cases, renal function (creatinine levels) must be monitored during the first few weeks of ACE inhibitor therapy." },
+            { "s": "emc-15441", "q": "Concomitant use with nitroglycerine and other nitrates or other vasodilators, may further reduce blood pressure and therefore should be considered with caution." },
+            { "s": "emc-15441", "q": "Sympathomimetics may reduce the antihypertensive effects of ACE inhibitors." }
+          ]
+        },
+        {
+          "t": "Lithium: not recommended; if needed, monitor lithium levels. Ciclosporin, heparin: monitor potassium. Tacrolimus: monitor levels. Dantrolene infusion: avoid. Grapefruit juice: not recommended.",
+          "tag": "Others",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "The combination of perindopril with lithium is not recommended." },
+            { "s": "emc-15441", "q": "Administration of amlodipine with grapefruit or grapefruit juice is not recommended" }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Can be used if CrCl is 60 mL/min or more; not suitable if CrCl is below 60 mL/min (titrate the separate components instead). Monitor creatinine and potassium frequently.",
+          "tag": "SmPC (CrCl)",
+          "src": [
+            { "s": "emc-15441", "q": "Perindopril/Amlodipine can be administered in patients with Clcr ≥ 60 ml/min, and is not suitable for patients with Clcr < 60 ml/min. In these patients, an individual dose titration with the monocomponents is recommended." },
+            { "s": "emc-15441", "q": "Therefore, the usual medical follow-up will include frequent monitoring of creatinine and potassium." }
+          ]
+        },
+        {
+          "t": "Amlodipine plasma levels are not related to the degree of renal impairment; amlodipine is not dialysable.",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "Changes in amlodipine plasma concentrations are not correlated with degree of renal impairment." },
+            { "s": "emc-15441", "q": "Amlodipine is not dialysable." }
+          ]
+        },
+        {
+          "t": "SPS (ACE inhibitors): seek specialist advice before starting if eGFR is below 30 mL/min/1.73 m². Some creatinine rise is expected; if eGFR falls over 25% or creatinine rises over 30% in CKD with no other cause, stop or reduce to the previously tolerated dose.",
+          "tag": "SPS (eGFR)",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2" },
+            { "s": "sps-acei-arb-monitoring", "q": "Some increase in serum creatinine and potassium levels is expected after starting or increasing the dose of an ACEI or ARB." },
+            { "s": "sps-acei-arb-monitoring", "q": "eGFR decrease more than 25%; creatinine increase more than 30%" },
+            { "s": "sps-acei-arb-monitoring", "q": "If no alternative cause is identified: Stop ACEI/ARB or reduce to previously tolerated dose" }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No dose regimen established; use with caution. Find the dose by titrating the separate perindopril and amlodipine components. Severe hepatic impairment: start amlodipine at the lowest dose and titrate slowly.",
+          "src": [
+            { "s": "emc-15441", "q": "A dosage regimen for patients with hepatic impairment has not been established. Therefore, Perindopril/Amlodipine should be administered with caution." },
+            { "s": "emc-15441", "q": "the patients should be individually titrated using the free combination of amlodipine and perindopril." },
+            { "s": "emc-15441", "q": "Amlodipine should be initiated at the lowest dose and titrated slowly in patients with severe hepatic impairment." }
+          ]
+        },
+        {
+          "t": "Cirrhosis: hepatic clearance of perindopril halves but perindoprilat formation is not reduced (no perindopril adjustment needed). Amlodipine exposure rises about 40-60%.",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "However, the quantity of perindoprilat formed is not reduced and therefore no dosage adjustment is required" },
+            { "s": "emc-15441", "q": "Patients with hepatic insufficiency have decreased clearance of amlodipine resulting in a longer half-life and an increase in AUC of approximately 40-60%." }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: not recommended in the first trimester; contraindicated in the second and third trimesters. Stop as soon as pregnancy is diagnosed and switch if appropriate. If exposed from the second trimester, ultrasound check of fetal renal function and skull; watch the newborn for hypotension.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-15441", "q": "Perindopril/Amlodipine is not recommended during the first trimester of pregnancy. Perindopril/Amlodipine is contraindicated during the second and third trimesters of pregnancy." },
+            { "s": "emc-15441", "q": "When pregnancy is diagnosed, treatment with ACE inhibitors should be stopped immediately, and, if appropriate, alternative therapy should be started." },
+            { "s": "emc-15441", "q": "Should exposure to ACE inhibitor have occurred from the second trimester of pregnancy, ultrasound check of renal function and skull is recommended." }
+          ]
+        },
+        {
+          "t": "MHRA: ACE inhibitors should not be used at any stage of pregnancy unless absolutely necessary; on diagnosis of pregnancy, stop as soon as possible.",
+          "tag": "MHRA",
+          "src": [
+            { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "ACE inhibitors and angiotensin II receptor antagonists should not be used at any stage of pregnancy unless absolutely necessary" },
+            { "s": "mhra-dsu-acei-arb-pregnancy", "q": "On diagnosis of pregnancy, treatment with an ACE inhibitor or angiotensin II receptor antagonist should be stopped as soon as possible" }
+          ]
+        },
+        {
+          "t": "BUMPS (ACE inhibitors): early-pregnancy use is unlikely to harm the baby; use after about 20 weeks can cause several problems in the baby, and continued use needs extra monitoring of amniotic fluid and growth.",
+          "tag": "BUMPS (ACE inhibitors)",
+          "src": [
+            { "s": "bumps-ace-inhibitors", "q": "Taking an ACE-I in early pregnancy is unlikely to harm your baby." },
+            { "s": "bumps-ace-inhibitors", "q": "Taking an ACE-I after around 20 weeks of pregnancy can cause a number of problems in your baby" },
+            { "s": "bumps-ace-inhibitors", "q": "If you continue to take an ACE-I after around 20 weeks you will require additional monitoring to assess amniotic fluid levels and your baby's growth and wellbeing." }
+          ]
+        },
+        {
+          "t": "Amlodipine component: safety in pregnancy not established; possible prolonged delivery. BUMPS: no clear risks from calcium channel blockers in pregnancy.",
+          "tag": "Amlodipine",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "The safety of amlodipine in human pregnancy has not been established." },
+            { "s": "emc-15441", "q": "However, there may be a risk of prolonged delivery." },
+            { "s": "bumps-calcium-channel-blockers", "q": "There are no clear risks of taking a calcium channel blocker in pregnancy." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: not recommended during breastfeeding; decide whether to stop breastfeeding or stop treatment. Alternatives with better established safety are preferable, especially with a newborn or preterm infant. Amlodipine passes into milk (infant dose estimated 3-7%, maximum 15%).",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-15441", "q": "Perindopril/Amlodipine is not recommended during lactation." },
+            { "s": "emc-15441", "q": "alternative treatments with better established safety profiles during breast-feeding are preferable, especially while nursing a newborn or preterm infant." },
+            { "s": "emc-15441", "q": "The proportion of the maternal dose received by the infant has been estimated with an interquartile range of 3-7%, with a maximum of 15%." }
+          ]
+        },
+        {
+          "t": "MHRA (2009): perindopril not recommended in breastfeeding. Clarification: not absolutely contraindicated; may be prescribed if essential for the mother.",
+          "tag": "MHRA",
+          "src": [
+            { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "ramipril, lisinopril, fosinopril, trandolapril, moexipril, or perindopril: use in breastfeeding is not recommended" },
+            { "s": "mhra-dsu-acei-arb-breastfeeding-clarification", "q": "they are not absolutely contraindicated. Healthcare professionals may prescribe these medicines during breastfeeding if they consider that this treatment is essential for the lactating mother." }
+          ]
+        },
+        {
+          "t": "SPS: perindopril and amlodipine can each be used with caution (enalapril is the preferred ACE inhibitor; nifedipine the preferred dihydropyridine). Watch the infant for hypotension (drowsiness, lethargy, pallor, poor feeding, poor weight gain). Advice applies to full-term healthy infants.",
+          "tag": "SPS",
+          "src": [
+            { "s": "sps-acei-breastfeeding", "q": "Perindopril can be used with caution during breastfeeding, but enalapril is preferred." },
+            { "s": "sps-ccb-breastfeeding", "q": "Amlodipine is excreted into breast milk usually in very small amounts. It can be used with caution during breastfeeding, but nifedipine is the preferred dihydropyridine calcium-channel blocker." },
+            { "s": "sps-ccb-breastfeeding", "q": "As a precaution, monitor the infant for hypotension which may manifest as drowsiness, lethargy, looking pale , poor feeding and inadequate weight gain." },
+            { "s": "sps-acei-breastfeeding", "q": "Recommendations apply to full term and healthy infants only." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Planning pregnancy: switch to an antihypertensive with an established pregnancy safety profile unless continued ACE inhibitor treatment is essential.",
+          "src": [
+            { "s": "emc-15441", "q": "Unless continued ACE inhibitor therapy is considered essential, patients planning pregnancy should be changed to alternative antihypertensive treatments which have an established safety profile for use in pregnancy." }
+          ]
+        },
+        {
+          "t": "Calcium channel blockers have caused reversible biochemical changes in sperm heads; clinical data on amlodipine and fertility are insufficient. No effect of perindopril on fertility.",
+          "detail": true,
+          "src": [
+            { "s": "emc-15441", "q": "Reversible biochemical changes in the head of spermatozoa have been reported in some patients treated by calcium channel blockers." },
+            { "s": "emc-15441", "q": "There was no effect on reproductive performance or fertility." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common: oedema (amlodipine). Common: somnolence, dizziness, headache, dysgeusia, paraesthesia, visual impairment, tinnitus, vertigo, palpitations, flushing, hypotension, dyspnoea, cough, abdominal pain, nausea, vomiting, dyspepsia, diarrhoea, constipation, pruritus, rash, ankle swelling, muscle cramps, fatigue, asthenia.",
+          "src": [
+            { "s": "emc-15441", "q": "Oedema Very common" },
+            { "s": "emc-15441", "q": "The most commonly reported adverse reactions with perindopril and amlodipine given separately are: oedema, somnolence, dizziness, headache (especially at the beginning of the treatment), dysgeusia, paraesthesia, visual impairment (including diplopia), tinnitus, vertigo, palpitations, flushing" },
+            { "s": "emc-15441", "q": "hypotension (and effects related to hypotension), dyspnoea, cough, abdominal pain, nausea, vomiting, dyspepsia, change of bowel habit, diarrheoa, constipation, prurit, rash, exanthema, joint swelling (ankle swelling), muscle spasms, fatigue, asthenia." }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Angioedema (face, lips, tongue, glottis, larynx; also intestinal): can occur at any time. Stop the ACE inhibitor at once and do not restart. Bradykinin-mediated angioedema may not respond to adrenaline. Airway involvement needs emergency treatment.",
+          "src": [
+            { "s": "mhra-dsu-acei-angioedema-2026", "q": "if angioedema is suspected in a patient taking an ACE inhibitor, discontinue the ACE inhibitor immediately and do not restart" },
+            { "s": "mhra-dsu-acei-angioedema-2026", "q": "bradykinin-mediated angioedema is unlikely to respond to standard anaphylaxis treatments including adrenaline (epinephrine)" },
+            { "s": "emc-15441", "q": "Angioedema associated with laryngeal oedema may be fatal." }
+          ]
+        },
+        {
+          "t": "Hyperkalaemia and hyponatraemia (uncommon); acute renal failure (rare); SIADH (rare).",
+          "src": [
+            { "s": "emc-15441", "q": "Hyperkalaemia, reversible on discontinuation (see section 4.4) - Uncommon*" },
+            { "s": "emc-15441", "q": "Renal failure acute - Rare" }
+          ]
+        },
+        {
+          "t": "Very rare: agranulocytosis/pancytopenia, neutropenia, thrombocytopenia; myocardial infarction or stroke possibly from excessive hypotension; pancreatitis; hepatitis; Stevens-Johnson syndrome; toxic epidermal necrolysis (not known).",
+          "src": [
+            { "s": "emc-15441", "q": "Agranulocytosis or pancytopenia (see section 4.4) - Very rare" },
+            { "s": "emc-15441", "q": "Pancreatitis Very rare Very rare" },
+            { "s": "emc-15441", "q": "Stevens-Johnson Syndrome Very rare" },
+            { "s": "emc-15441", "q": "Toxic epidermal necrolysis Not known" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SmPC: frequent monitoring of creatinine and potassium (perindoprilat elimination is reduced in the elderly and in renal failure). In those at high risk of hypotension, monitor blood pressure, renal function and potassium closely.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-15441", "q": "Therefore, the usual medical follow-up will include frequent monitoring of creatinine and potassium." },
+            { "s": "emc-15441", "q": "In patients at high risk of symptomatic hypotension, blood pressure, renal function and serum potassium should be monitored closely during treatment with Perindopril/Amlodipine." }
+          ]
+        },
+        {
+          "t": "SPS baseline: blood pressure, eGFR or serum creatinine, serum potassium, serum sodium. Starting is not normally appropriate if potassium is above 5.0 mmol/L.",
+          "tag": "baseline",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Baseline Blood pressure Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Serum potassium Serum sodium" },
+            { "s": "sps-acei-arb-monitoring", "q": "Initiation not normally appropriate if pre-treatment potassium greater than 5.0mmol/L" }
+          ]
+        },
+        {
+          "t": "SPS: seek specialist advice before starting in severe or unstable heart failure, renovascular disease, eGFR below 30, sodium below 130 mmol/L, hypovolaemia or systolic BP below 90 mmHg.",
+          "tag": "baseline",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2 hyponatraemia (sodium less than 130mmol/L) hypovolaemia hypotension (systolic blood pressure less than 90mmHg)" }
+          ]
+        },
+        {
+          "t": "SPS after starting or dose change (hypertension): renal function, sodium and potassium within 1-2 weeks, BP within 1 month; once stable, annually (heart failure every 3-6 months). Repeat at any time if acutely unwell.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Hypertension Within 1 - 2 weeks Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Serum sodium Serum potassium Within 1 month Blood pressure" },
+            { "s": "sps-acei-arb-monitoring", "q": "Ongoing once stable Heart failure Every 3 - 6 months" },
+            { "s": "sps-acei-arb-monitoring", "q": "Repeat monitoring at any time patient acutely unwell or their renal function may be compromised." }
+          ]
+        },
+        {
+          "t": "SPS abnormal results: potassium 6.0 mmol/L or above in CKD - stop the ACE inhibitor (after stopping other potassium-raising drugs) and seek specialist advice; sodium below 132 mmol/L - specialist advice.",
+          "tag": "stop",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Value 6.0 mmol/L or above in people with CKD Stop ACEI/ARB after stopping other drugs that may increase potassium and seek specialist advice." },
+            { "s": "sps-acei-arb-monitoring", "q": "Sodium Value is below 132mmol/L Obtain specialist advice" }
+          ]
+        },
+        {
+          "t": "Stop if angioedema, jaundice or marked liver enzyme rise.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-15441", "q": "Patients receiving ACE inhibitors who develop jaundice or marked elevations of hepatic enzymes should discontinue the ACE inhibitor" }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral, one tablet once daily, preferably in the morning before a meal (food reduces conversion of perindopril to perindoprilat).",
+          "src": [
+            { "s": "emc-15441", "q": "One tablet per day as a single dose, preferably to be taken in the morning and before a meal." },
+            { "s": "emc-15441", "q": "As ingestion of food decreases conversion to perindoprilat, hence bioavailability, perindopril should be administered orally in a single daily dose in the morning before a meal." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Seek urgent help for swelling of the face, lips, tongue or throat, or trouble breathing or swallowing, even after long use; do not take further doses.",
+          "src": [
+            { "s": "mhra-dsu-acei-angioedema-2026", "q": "seek urgent medical attention if you develop swelling of the face, lips, tongue, or throat, or experience difficulty breathing or swallowing whilst taking ACE inhibitors" },
+            { "s": "mhra-dsu-acei-angioedema-2026", "q": "do not take further doses of your ACE inhibitor if angioedema is suspected and inform a healthcare professional immediately" }
+          ]
+        },
+        {
+          "t": "Planning pregnancy or pregnant: contact the doctor to switch medicine.",
+          "src": [
+            { "s": "bumps-ace-inhibitors", "q": "If you find out that you are pregnant whilst taking an ACE-I, you should contact your doctor as soon as possible so that you can be switched to another medicine." }
+          ]
+        },
+        {
+          "t": "Report signs of infection such as sore throat or fever.",
+          "src": [
+            { "s": "emc-15441", "q": "patients should be instructed to report any sign of infection (e.g. sore throat, fever)." }
+          ]
+        },
+        {
+          "t": "Dizziness or tiredness can affect driving. Avoid grapefruit juice. Avoid potassium salt substitutes unless advised.",
+          "src": [
+            { "s": "emc-15441", "q": "When driving vehicles or operating machines it should be taken into account that occasionally dizziness or weariness may occur." },
+            { "s": "emc-15441", "q": "Administration of amlodipine with grapefruit or grapefruit juice is not recommended" }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "perindopril-amlodipine:allergy:ace-inhibitor",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "perindopril-amlodipine",
+      "allergen": ["perindopril", "group:ace-inhibitor"],
+      "concern": "Hypersensitivity to perindopril or any other ACE inhibitor (including previous ACE inhibitor angioedema)",
+      "consequence": "Hypersensitivity reaction / angioedema.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-15441", "q": "Hypersensitivity to perindopril or to any other ACE inhibitor." },
+        { "s": "emc-15441", "q": "History of angioedema associated with previous ACE inhibitor therapy." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:allergy:dihydropyridine",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "perindopril-amlodipine",
+      "allergen": ["amlodipine", "group:dihydropyridine"],
+      "concern": "Hypersensitivity to amlodipine or any other dihydropyridine",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-15441", "q": "Hypersensitivity to amlodipine or to any other dihydropyridines" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:hereditary-angioedema",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "perindopril-amlodipine",
+      "condition": "hereditary-angioedema",
+      "concern": "Hereditary or idiopathic angioedema",
+      "consequence": "Risk of angioedema.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-15441", "q": "Hereditary or idiopathic angioedema." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:angioedema-history-other",
+      "kind": "condition",
+      "level": "info",
+      "med": "perindopril-amlodipine",
+      "condition": "angioedema-history-other",
+      "concern": "History of angioedema not caused by an ACE inhibitor",
+      "consequence": "May be at increased risk of angioedema while taking an ACE inhibitor.",
+      "action": "Be aware of the increased angioedema risk (hereditary or idiopathic angioedema, or angioedema with a previous ACE inhibitor, are contraindications).",
+      "sourceWording": "may be at increased risk of angioedema",
+      "src": [
+        { "s": "emc-15441", "q": "Patients with a history of angioedema unrelated to ACE inhibitor therapy may be at increased risk of angioedema while receiving an ACE inhibitor" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:renal-artery-stenosis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "perindopril-amlodipine",
+      "condition": "renal-artery-stenosis",
+      "concern": "Significant bilateral renal artery stenosis or stenosis to a single functioning kidney",
+      "consequence": "Increased risk of hypotension and renal insufficiency.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-15441", "q": "Significant bilateral renal artery stenosis or stenosis of the artery to a single functioning kidney (see section 4.4)." },
+        { "s": "emc-15441", "q": "There is an increased risk of hypotension and renal insufficiency when patient with bilateral renal artery stenosis or stenosis of the artery to a single functioning kidney are treated with ACE inhibitors" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:extracorporeal-blood-treatment",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "perindopril-amlodipine",
+      "condition": "extracorporeal-blood-treatment",
+      "concern": "Dialysis/haemofiltration with certain high-flux membranes or LDL apheresis with dextran sulphate",
+      "consequence": "Increased risk of severe anaphylactoid reactions.",
+      "action": "Do not use; consider a different dialysis membrane or a different class of antihypertensive.",
+      "sourceWording": "Concomitant use contra-indicated",
+      "src": [
+        { "s": "emc-15441", "q": "Extracorporeal treatments leading to contact of blood with negatively charged surfaces (see section 4.5)." },
+        { "s": "emc-15441", "q": "If such treatment is required, consideration should be given to using a different type of dialysis membrane or a different class of antihypertensive agent." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:hypotension",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "perindopril-amlodipine",
+      "condition": "hypotension",
+      "concern": "Severe hypotension",
+      "consequence": "Further fall in blood pressure.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-15441", "q": "Severe hypotension, - Hypersensitivity to amlodipine" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:cardiogenic-shock",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "perindopril-amlodipine",
+      "condition": "cardiogenic-shock",
+      "concern": "Shock, including cardiogenic shock",
+      "consequence": "Haemodynamic deterioration.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-15441", "q": "Shock, including cardiogenic shock" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:aortic-stenosis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "perindopril-amlodipine",
+      "condition": "aortic-stenosis",
+      "concern": "Left ventricular outflow obstruction (e.g. high-grade aortic stenosis)",
+      "consequence": "Vasodilatation with fixed outflow obstruction.",
+      "action": "Do not use (high-grade obstruction). Lesser aortic stenosis or hypertrophic cardiomyopathy: give with caution.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-15441", "q": "Obstruction of the outflow-tract of the left ventricle (e.g. high grade aortic stenosis)" },
+        { "s": "emc-15441", "q": "perindopril should be given with caution to patients with mitral valve stenosis and obstruction in the outflow of the left ventricle such as aortic stenosis or hypertrophic cardiomyopathy." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:unstable-heart-failure-post-mi",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "perindopril-amlodipine",
+      "condition": "unstable-heart-failure-post-mi",
+      "concern": "Haemodynamically unstable heart failure after acute myocardial infarction",
+      "consequence": "Haemodynamic deterioration.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-15441", "q": "Haemodynamically unstable heart failure after acute myocardial infarction." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:mitral-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "condition": "mitral-stenosis",
+      "concern": "Mitral valve stenosis",
+      "consequence": "Vasodilatation with fixed valve obstruction.",
+      "action": "Give with caution.",
+      "sourceWording": "should be given with caution",
+      "src": [
+        { "s": "emc-15441", "q": "perindopril should be given with caution to patients with mitral valve stenosis" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "condition": "heart-failure",
+      "concern": "Heart failure",
+      "consequence": "Calcium channel blockers may increase the risk of future cardiovascular events and mortality; more pulmonary oedema seen with amlodipine in severe heart failure.",
+      "action": "Treat with caution.",
+      "sourceWording": "should be treated with caution",
+      "src": [
+        { "s": "emc-15441", "q": "Patients with heart failure should be treated with caution." },
+        { "s": "emc-15441", "q": "Calcium channel blockers, including amlodipine, should be used with caution in patients with congestive heart failure, as they may increase the risk of future cardiovascular events and mortality." },
+        { "s": "emc-15441", "q": "the reported incidence of pulmonary oedema was higher in the amlodipine treated group than in the placebo group" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "condition": "severe-heart-failure",
+      "concern": "Severe or unstable heart failure",
+      "consequence": "Higher risk of hypotension and renal impairment with ACE inhibitors.",
+      "action": "SPS: seek specialist advice before starting an ACE inhibitor.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Ischaemic heart disease",
+      "consequence": "An excessive fall in blood pressure could cause a myocardial infarction.",
+      "action": "Monitor blood pressure, renal function and potassium closely.",
+      "sourceWording": "should be monitored closely",
+      "src": [
+        { "s": "emc-15441", "q": "In patients at high risk of symptomatic hypotension, blood pressure, renal function and serum potassium should be monitored closely during treatment with Perindopril/Amlodipine." },
+        { "s": "emc-15441", "q": "Similar considerations apply to patients with ischaemic heart or cerebrovascular disease in whom an excessive fall in blood pressure could result in a myocardial infarction or cerebrovascular accident." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:cerebrovascular-disease",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "condition": "cerebrovascular-disease",
+      "concern": "Cerebrovascular disease",
+      "consequence": "An excessive fall in blood pressure could cause a cerebrovascular accident.",
+      "action": "Monitor blood pressure, renal function and potassium closely.",
+      "sourceWording": "should be monitored closely",
+      "src": [
+        { "s": "emc-15441", "q": "In patients at high risk of symptomatic hypotension, blood pressure, renal function and serum potassium should be monitored closely during treatment with Perindopril/Amlodipine." },
+        { "s": "emc-15441", "q": "Similar considerations apply to patients with ischaemic heart or cerebrovascular disease in whom an excessive fall in blood pressure could result in a myocardial infarction or cerebrovascular accident." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:dehydration",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "condition": "dehydration-hypovolaemia",
+      "concern": "Volume depletion (diuretics, salt restriction, dialysis, diarrhoea, vomiting)",
+      "consequence": "Symptomatic hypotension more likely; dehydration also raises hyperkalaemia risk.",
+      "action": "Monitor blood pressure, renal function and potassium closely. SPS: specialist advice before starting in hypovolaemia.",
+      "sourceWording": "should be monitored closely",
+      "src": [
+        { "s": "emc-15441", "q": "is more likely to occur in patients who have been volume-depleted e.g. by diuretic therapy, dietary salt restriction, dialysis, diarrhoea or vomiting" },
+        { "s": "emc-15441", "q": "In patients at high risk of symptomatic hypotension, blood pressure, renal function and serum potassium should be monitored closely during treatment with Perindopril/Amlodipine." },
+        { "s": "emc-15441", "q": "intercurrent events in particular dehydration" },
+        { "s": "sps-acei-arb-monitoring", "q": "hyponatraemia (sodium less than 130mmol/L) hypovolaemia hypotension (systolic blood pressure less than 90mmHg)" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus (on insulin or oral antidiabetics)",
+      "consequence": "Risk of hypoglycaemia with insulin or oral antidiabetics (mostly first weeks); diabetes is also listed as a risk factor for hyperkalaemia with ACE inhibitors.",
+      "action": "If on insulin or oral antidiabetics, monitor glycaemic control closely during the first month.",
+      "sourceWording": "glycaemic control should be closely monitored during the first month",
+      "src": [
+        { "s": "emc-15441", "q": "In diabetic patients treated with oral antidiabetic agents or insulin, glycaemic control should be closely monitored during the first month of treatment with an ACE inhibitor" },
+        { "s": "emc-15441", "q": "in patients with impaired renal function, age > 70 years, diabetes mellitus" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:hyperkalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "condition": "hyperkalaemia",
+      "concern": "Raised potassium before starting",
+      "consequence": "ACE inhibitors raise serum potassium; hyperkalaemia can cause serious, sometimes fatal arrhythmias.",
+      "action": "SPS: starting not normally appropriate if potassium is above 5.0 mmol/L.",
+      "sourceWording": "Initiation not normally appropriate",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "Initiation not normally appropriate if pre-treatment potassium greater than 5.0mmol/L" },
+        { "s": "emc-15441", "q": "Hyperkalaemia can cause serious, sometimes fatal arrhythmias." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "condition": "hyponatraemia",
+      "concern": "Hyponatraemia (sodium below 130 mmol/L)",
+      "consequence": "Higher risk with ACE inhibitor start.",
+      "action": "SPS: seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "hyponatraemia (sodium less than 130mmol/L)" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:lupus",
+      "kind": "condition",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "condition": "lupus",
+      "concern": "Collagen vascular disease (e.g. SLE)",
+      "consequence": "Neutropenia/agranulocytosis and serious infection, especially with renal impairment.",
+      "action": "Use with extreme caution; monitor white cell counts periodically; report signs of infection.",
+      "sourceWording": "should be used with extreme caution",
+      "src": [
+        { "s": "emc-15441", "q": "Perindopril should be used with extreme caution in patients with collagen vascular disease" },
+        { "s": "emc-15441", "q": "periodic monitoring of white blood cell counts is advised and patients should be instructed to report any sign of infection (e.g. sore throat, fever)." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:primary-hyperaldosteronism",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "condition": "primary-hyperaldosteronism",
+      "concern": "Primary hyperaldosteronism",
+      "consequence": "Generally no response to RAS-inhibiting antihypertensives.",
+      "action": "Not recommended.",
+      "sourceWording": "the use of this product is not recommended",
+      "src": [
+        { "s": "emc-15441", "q": "Patients with primary hyperaldosteronism generally will not respond to anti-hypertensive drugs acting through inhibition of the renin-angiotensin system. Therefore, the use of this product is not recommended." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:malignant-hyperthermia",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "condition": "malignant-hyperthermia-susceptibility",
+      "concern": "Susceptibility to malignant hyperthermia",
+      "consequence": "Risk of hyperkalaemia with calcium channel blockers and dantrolene.",
+      "action": "Avoid calcium channel blockers such as amlodipine in susceptible patients and in managing malignant hyperthermia.",
+      "sourceWording": "be avoided",
+      "src": [
+        { "s": "emc-15441", "q": "it is recommended that the co-administration of calcium channel blockers such as amlodipine be avoided in patients susceptible to malignant hyperthermia and in the management of malignant hyperthermia" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:condition:surgery-planned",
+      "kind": "condition",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "condition": "surgery-planned",
+      "concern": "Major surgery or anaesthesia",
+      "consequence": "Hypotension with anaesthetic agents that lower blood pressure.",
+      "action": "Stop treatment one day before surgery; correct hypotension with volume expansion.",
+      "sourceWording": "should be discontinued one day prior to the surgery",
+      "src": [
+        { "s": "emc-15441", "q": "The treatment should be discontinued one day prior to the surgery." },
+        { "s": "emc-15441", "q": "If hypotension occurs and is considered to be due to this mechanism, it can be corrected by volume expansion." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:pregnancy:t2-t3",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "perindopril-amlodipine",
+      "trimesters": [2, 3],
+      "concern": "Second or third trimester",
+      "consequence": "Fetotoxicity (reduced renal function, oligohydramnios, skull ossification retardation) and neonatal toxicity (renal failure, hypotension, hyperkalaemia).",
+      "action": "Do not use; stop and switch to an alternative.",
+      "sourceWording": "contraindicated during the second and third trimesters",
+      "src": [
+        { "s": "emc-15441", "q": "Perindopril/Amlodipine is contraindicated during the second and third trimesters of pregnancy." },
+        { "s": "emc-15441", "q": "Exposure to ACE inhibitor therapy during the second and third trimesters is known to induce human fetotoxicity" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:pregnancy:t1",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "trimesters": [1],
+      "concern": "First trimester",
+      "consequence": "A small increase in teratogenic risk cannot be excluded.",
+      "action": "Not recommended; stop when pregnancy is diagnosed and start an alternative if appropriate.",
+      "sourceWording": "not recommended during the first trimester",
+      "src": [
+        { "s": "emc-15441", "q": "Perindopril/Amlodipine is not recommended during the first trimester of pregnancy." },
+        { "s": "emc-15441", "q": "however a small increase in risk cannot be excluded." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:pregnancy:mhra",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "concern": "Pregnancy (MHRA advice, any stage)",
+      "consequence": "Fetal and neonatal harm from ACE inhibitors, especially later in pregnancy.",
+      "action": "Do not use at any stage unless absolutely necessary; stop as soon as possible on diagnosis.",
+      "sourceWording": "should not be used at any stage of pregnancy unless absolutely necessary",
+      "src": [
+        { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "ACE inhibitors and angiotensin II receptor antagonists should not be used at any stage of pregnancy unless absolutely necessary" },
+        { "s": "mhra-dsu-acei-arb-pregnancy", "q": "On diagnosis of pregnancy, treatment with an ACE inhibitor or angiotensin II receptor antagonist should be stopped as soon as possible" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:breastfeeding:smpc-mhra",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "concern": "Breastfeeding (SmPC and MHRA)",
+      "consequence": "No information for perindopril; amlodipine passes into milk.",
+      "action": "Not recommended; decide whether to stop breastfeeding or stop treatment; prefer alternatives, especially with a newborn or preterm infant. MHRA: not absolutely contraindicated if essential for the mother.",
+      "sourceWording": "not recommended during lactation",
+      "src": [
+        { "s": "emc-15441", "q": "Perindopril/Amlodipine is not recommended during lactation." },
+        { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "ramipril, lisinopril, fosinopril, trandolapril, moexipril, or perindopril: use in breastfeeding is not recommended" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Small amounts in milk; risk of infant hypotension.",
+      "action": "Each component can be used with caution (enalapril and nifedipine are preferred); monitor the infant for hypotension.",
+      "sourceWording": "can be used with caution during breastfeeding",
+      "src": [
+        { "s": "sps-acei-breastfeeding", "q": "Perindopril can be used with caution during breastfeeding, but enalapril is preferred." },
+        { "s": "sps-ccb-breastfeeding", "q": "Amlodipine is excreted into breast milk usually in very small amounts. It can be used with caution during breastfeeding, but nifedipine is the preferred dihydropyridine calcium-channel blocker." },
+        { "s": "sps-ccb-breastfeeding", "q": "As a precaution, monitor the infant for hypotension" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:renal:crcl-under-60",
+      "kind": "renal",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "renal": { "measure": "CrCl", "max": 60 },
+      "concern": "CrCl below 60 mL/min",
+      "consequence": "Perindoprilat elimination is reduced in renal failure.",
+      "action": "Fixed combination not suitable; titrate perindopril and amlodipine separately. Monitor creatinine and potassium.",
+      "sourceWording": "is not suitable for patients with Clcr < 60 ml/min",
+      "src": [
+        { "s": "emc-15441", "q": "Perindopril/Amlodipine can be administered in patients with Clcr ≥ 60 ml/min, and is not suitable for patients with Clcr < 60 ml/min. In these patients, an individual dose titration with the monocomponents is recommended." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:renal:egfr-under-30-sps",
+      "kind": "renal",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "renal": { "measure": "eGFR", "max": 30 },
+      "concern": "eGFR below 30 mL/min/1.73 m² (SPS)",
+      "consequence": "Higher risk of renal deterioration and hyperkalaemia with ACE inhibitors.",
+      "action": "Seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "hepatic": ["any"],
+      "concern": "Hepatic impairment",
+      "consequence": "Amlodipine half-life and exposure increase; no dose regimen established for the combination.",
+      "action": "Use with caution; titrate the separate components to find the dose. Severe impairment: start amlodipine at the lowest dose and titrate slowly.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        { "s": "emc-15441", "q": "A dosage regimen for patients with hepatic impairment has not been established. Therefore, Perindopril/Amlodipine should be administered with caution." },
+        { "s": "emc-15441", "q": "Amlodipine should be initiated at the lowest dose and titrated slowly in patients with severe hepatic impairment." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:age:under-18",
+      "kind": "age",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "age": { "maxYears": 18 },
+      "concern": "Child or adolescent (under 18 years)",
+      "consequence": "Efficacy and tolerability not established.",
+      "action": "Should not be used.",
+      "sourceWording": "should not be used in children and adolescents",
+      "src": [
+        { "s": "emc-15441", "q": "Perindopril/Amlodipine should not be used in children and adolescents as the efficacy and tolerability of perindopril alone or in combination with amlodipine, have not been established in children and adolescents." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:potassium-sparing-diuretic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics (e.g. spironolactone, amiloride)",
+      "consequence": "Significant (potentially lethal) rise in serum potassium, especially with renal impairment.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently. Spironolactone in heart failure: check potassium and renal function first, then weekly in month 1 and monthly after.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-15441", "q": "Potassium sparing diuretics (e.g. spironolactone, triamterene, or amiloride), potassium supplements, or potassium-containing salt substitutes may lead to significant increases in serum potassium." },
+        { "s": "emc-15441", "q": "Therefore, the combination of perindopril with the above-mentioned drugs is not recommended. If concomitant use is indicated, they should be used with caution and with frequent monitoring of serum potassium." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:potassium-supplement",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "other": "group:potassium-supplement",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium supplements or potassium salt substitutes",
+      "consequence": "Significant rise in serum potassium.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-15441", "q": "The concomitant use of Perindopril/Amlodipine with lithium, potassium-sparing diuretics or potassium supplements is not recommended" },
+        { "s": "emc-15441", "q": "If concomitant use is indicated, they should be used with caution and with frequent monitoring of serum potassium." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:trimethoprim",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "other": "trimethoprim",
+      "effect": "hyperkalaemia",
+      "concern": "Trimethoprim",
+      "consequence": "Trimethoprim acts like the potassium-sparing diuretic amiloride; risk of hyperkalaemia.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-15441", "q": "Care should also be taken when perindopril is co-administered with other agents that increase serum potassium, such as trimethoprim and cotrimoxazole" },
+        { "s": "emc-15441", "q": "Therefore, the combination of perindopril with the above-mentioned drugs is not recommended." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:co-trimoxazole",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "other": "co-trimoxazole",
+      "effect": "hyperkalaemia",
+      "concern": "Co-trimoxazole",
+      "consequence": "Trimethoprim component acts like amiloride; increased risk of hyperkalaemia.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-15441", "q": "Patients taking concomitant co-trimoxazole (trimethoprim/sulfamethoxazole) may be at increased risk for hyperkalaemia" },
+        { "s": "emc-15441", "q": "Therefore, the combination of perindopril with the above-mentioned drugs is not recommended." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:arb",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "perindopril-amlodipine",
+      "other": "group:arb",
+      "effect": "hyperkalaemia",
+      "concern": "Angiotensin II receptor blockers (dual RAAS blockade)",
+      "consequence": "More hypotension, syncope, hyperkalaemia and worsening renal function (including acute renal failure).",
+      "action": "Not recommended; if absolutely necessary, only under specialist supervision with frequent monitoring of renal function, electrolytes and blood pressure. Do not combine in diabetic nephropathy.",
+      "sourceWording": "is therefore not recommended",
+      "src": [
+        { "s": "emc-15441", "q": "Dual blockade of RAAS through the combined use of ACEinhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended" },
+        { "s": "emc-15441", "q": "ACE-inhibitors and angiotensin II receptor blockers should not be used concomitantly in patients with diabetic nephropathy." },
+        { "s": "mhra-dsu-ras-combination", "q": "Combination use of medicines from two classes of RAS blocking agents (ACE-inhibitors, ARBs, or aliskiren) is not recommended." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "info",
+      "med": "perindopril-amlodipine",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "Another ACE inhibitor",
+      "consequence": "ACE inhibitors are listed among drugs that raise potassium; combining them increases the risk of hyperkalaemia.",
+      "action": "Be aware of the added hyperkalaemia risk; check that two ACE inhibitors are intended.",
+      "sourceWording": "The combination of these drugs increases the risk of hyperkalaemia.",
+      "src": [
+        { "s": "emc-15441", "q": "Some drugs or therapeutic classes may increase the occurrence of hyperkalaemia: aliskiren, potassium salts, potassium-sparing diuretics, ACE inhibitors, angiotensin-II receptors antagonists, NSAIDs" },
+        { "s": "emc-15441", "q": "The combination of these drugs increases the risk of hyperkalaemia." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:nsaid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "other": "group:nsaid",
+      "effect": "nephrotoxicity",
+      "concern": "NSAIDs (including COX-2 inhibitors)",
+      "consequence": "Reduced antihypertensive effect; worsening renal function (possible acute renal failure) and raised potassium, especially with poor renal function.",
+      "action": "Use with caution, especially in the elderly; keep hydrated; consider monitoring renal function at start and periodically.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        { "s": "emc-15441", "q": "Concomitant use of ACE-inhibitors and NSAIDs may lead to an increased risk of worsening of renal function, including possible acute renal failure, and an increase in serum potassium" },
+        { "s": "emc-15441", "q": "The combination should be administered with caution, especially in the elderly." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:oral-antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "group:oral-antidiabetic",
+      "effect": "hypoglycaemia",
+      "concern": "Oral antidiabetic medicines",
+      "consequence": "Increased glucose lowering with risk of hypoglycaemia, mainly in the first weeks and in renal impairment.",
+      "action": "Monitor glycaemic control closely during the first month.",
+      "sourceWording": "should be closely monitored during the first month",
+      "src": [
+        { "s": "emc-15441", "q": "Antidiabetic agents (insulins, oral hypoglycaemic agents)" },
+        { "s": "emc-15441", "q": "may cause an increased blood-glucose lowering effect with risk of hypoglycaemia" },
+        { "s": "emc-15441", "q": "glycaemic control should be closely monitored during the first month of treatment with an ACE inhibitor" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:insulin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "group:insulin",
+      "effect": "hypoglycaemia",
+      "concern": "Insulins",
+      "consequence": "Increased glucose lowering with risk of hypoglycaemia, mainly in the first weeks and in renal impairment.",
+      "action": "Monitor glycaemic control closely during the first month.",
+      "sourceWording": "should be closely monitored during the first month",
+      "src": [
+        { "s": "emc-15441", "q": "Antidiabetic agents (insulins, oral hypoglycaemic agents)" },
+        { "s": "emc-15441", "q": "may cause an increased blood-glucose lowering effect with risk of hypoglycaemia" },
+        { "s": "emc-15441", "q": "glycaemic control should be closely monitored during the first month of treatment with an ACE inhibitor" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:dpp4-inhibitor",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "other": "group:dpp4-inhibitor",
+      "concern": "Gliptins (e.g. linagliptin, sitagliptin, vildagliptin)",
+      "consequence": "Increased risk of angioedema.",
+      "action": "Take care when starting a gliptin in a patient on an ACE inhibitor; watch for angioedema.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        { "s": "emc-15441", "q": "Increased risk of angio-oedema, due to dipeptidyl peptidase IV (DPP-IV) decreased activity by the gliptine, in patients co-treated with an ACE inhibitor." },
+        { "s": "emc-15441", "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:racecadotril",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "other": "racecadotril",
+      "concern": "Racecadotril",
+      "consequence": "Increased risk of angioedema.",
+      "action": "Use caution when starting racecadotril in a patient on an ACE inhibitor; watch for angioedema.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        { "s": "emc-15441", "q": "This risk may be elevated when used concomitantly with racecadotril" },
+        { "s": "emc-15441", "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:allopurinol",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "other": "allopurinol",
+      "effect": "bone-marrow-suppression",
+      "concern": "Allopurinol",
+      "consequence": "Neutropenia/agranulocytosis and serious infection reported with ACE inhibitors, especially with impaired renal function.",
+      "action": "Use with extreme caution; monitor white cell counts periodically; report any sign of infection.",
+      "sourceWording": "should be used with extreme caution",
+      "src": [
+        { "s": "emc-15441", "q": "Perindopril should be used with extreme caution in patients with collagen vascular disease, immunosuppressant therapy, treatment with allopurinol or procainamide" },
+        { "s": "emc-15441", "q": "periodic monitoring of white blood cell counts is advised" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate (immunosuppressant therapy)",
+      "consequence": "Neutropenia/agranulocytosis and serious infection reported with ACE inhibitors in patients on immunosuppressant therapy, especially with impaired renal function.",
+      "action": "Use with extreme caution; monitor white cell counts periodically; tell the patient to report any sign of infection.",
+      "sourceWording": "should be used with extreme caution",
+      "src": [
+        { "s": "emc-15441", "q": "Perindopril should be used with extreme caution in patients with collagen vascular disease, immunosuppressant therapy, treatment with allopurinol or procainamide" },
+        { "s": "emc-15441", "q": "periodic monitoring of white blood cell counts is advised" },
+        { "s": "emc-511", "q": "The immunosuppressive effect of methotrexate should be taken into account" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:thiazide",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "group:thiazide",
+      "effect": "hypotension",
+      "concern": "Thiazide (non-potassium-sparing) diuretics",
+      "consequence": "Excessive fall in blood pressure when the ACE inhibitor is started, especially if volume or salt depleted.",
+      "action": "Stop the diuretic before starting or start the ACE inhibitor low; monitor renal function (creatinine) in the first few weeks.",
+      "sourceWording": "renal function (creatinine levels) must be monitored",
+      "src": [
+        { "s": "emc-15441", "q": "Non-potassium-sparing diuretics: Patients on diuretics, and especially those who are volume and/or salt depleted, may experience excessive reduction in blood pressure after initiation of therapy with an ACE inhibitor." },
+        { "s": "emc-15441", "q": "In all cases, renal function (creatinine levels) must be monitored during the first few weeks of ACE inhibitor therapy." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:loop-diuretic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "group:loop-diuretic",
+      "effect": "hypotension",
+      "concern": "Loop (non-potassium-sparing) diuretics",
+      "consequence": "Excessive fall in blood pressure when the ACE inhibitor is started, especially if volume or salt depleted.",
+      "action": "Stop or reduce the diuretic before starting, or start the ACE inhibitor at a very low dose; monitor renal function (creatinine) in the first few weeks.",
+      "sourceWording": "renal function (creatinine levels) must be monitored",
+      "src": [
+        { "s": "emc-15441", "q": "Non-potassium-sparing diuretics: Patients on diuretics, and especially those who are volume and/or salt depleted, may experience excessive reduction in blood pressure after initiation of therapy with an ACE inhibitor." },
+        { "s": "emc-15441", "q": "In all cases, renal function (creatinine levels) must be monitored during the first few weeks of ACE inhibitor therapy." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:clarithromycin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "clarithromycin",
+      "effect": "hypotension",
+      "concern": "Clarithromycin",
+      "consequence": "CYP3A4 inhibition raises amlodipine exposure; increased risk of hypotension.",
+      "action": "Close observation recommended; dose adjustment may be needed.",
+      "sourceWording": "Close observation of patients is recommended",
+      "src": [
+        { "s": "emc-15441", "q": "There is an increased risk of hypotension in patients receiving clarithromycin with amlodipine. Close observation of patients is recommended when amlodipine is co administered with clarithromycin." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "group:cyp3a4-inhibitor",
+      "effect": "hypotension",
+      "concern": "Strong or moderate CYP3A4 inhibitors",
+      "consequence": "Significant increase in amlodipine exposure with increased risk of hypotension (more pronounced in the elderly).",
+      "action": "Clinical monitoring; dose adjustment may be needed.",
+      "sourceWording": "Clinical monitoring and dose adjustment may thus be required",
+      "src": [
+        { "s": "emc-15441", "q": "may give rise to significant increase in amlodipine exposure resulting in an increased risk of hypotension." },
+        { "s": "emc-15441", "q": "Clinical monitoring and dose adjustment may thus be required." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:azole-antifungal",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "group:azole-antifungal",
+      "effect": "hypotension",
+      "concern": "Azole antifungals",
+      "consequence": "Significant increase in amlodipine exposure with increased risk of hypotension.",
+      "action": "Clinical monitoring; dose adjustment may be needed.",
+      "sourceWording": "Clinical monitoring and dose adjustment may thus be required",
+      "src": [
+        { "s": "emc-15441", "q": "Concomitant use of amlodipine with strong or moderate CYP3A4 inhibitors (protease inhibitors, azole antifungals" },
+        { "s": "emc-15441", "q": "Clinical monitoring and dose adjustment may thus be required." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:diltiazem",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "diltiazem",
+      "effect": "hypotension",
+      "concern": "Diltiazem",
+      "consequence": "CYP3A4 inhibition raises amlodipine exposure; increased risk of hypotension.",
+      "action": "Clinical monitoring; dose adjustment may be needed.",
+      "sourceWording": "Clinical monitoring and dose adjustment may thus be required",
+      "src": [
+        { "s": "emc-15441", "q": "macrolides like erythromycin or clarithromycin, verapamil or diltiazem) may give rise to significant increase in amlodipine exposure resulting in an increased risk of hypotension." },
+        { "s": "emc-15441", "q": "Clinical monitoring and dose adjustment may thus be required." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:verapamil",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "verapamil",
+      "effect": "hypotension",
+      "concern": "Verapamil",
+      "consequence": "CYP3A4 inhibition raises amlodipine exposure; increased risk of hypotension.",
+      "action": "Clinical monitoring; dose adjustment may be needed.",
+      "sourceWording": "Clinical monitoring and dose adjustment may thus be required",
+      "src": [
+        { "s": "emc-15441", "q": "macrolides like erythromycin or clarithromycin, verapamil or diltiazem) may give rise to significant increase in amlodipine exposure resulting in an increased risk of hypotension." },
+        { "s": "emc-15441", "q": "Clinical monitoring and dose adjustment may thus be required." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:cyp3a4-inducer",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "group:cyp3a4-inducer",
+      "concern": "CYP3A4 inducers",
+      "consequence": "Amlodipine plasma levels may vary (reduced effect).",
+      "action": "Monitor blood pressure and consider dose regulation during and after the inducer.",
+      "sourceWording": "blood pressure should be monitored",
+      "src": [
+        { "s": "emc-15441", "q": "Upon co-administration of known inducers of the CYP3A4, the plasma concentration of amlodipine may vary." },
+        { "s": "emc-15441", "q": "blood pressure should be monitored and dose regulation considered both during and after concomitant medication" }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:st-johns-wort",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "perindopril-amlodipine",
+      "other": "st-johns-wort",
+      "concern": "St John's wort (strong CYP3A4 inducer)",
+      "consequence": "Amlodipine plasma levels may vary (reduced effect).",
+      "action": "Monitor blood pressure and consider dose regulation during and after use.",
+      "sourceWording": "blood pressure should be monitored",
+      "src": [
+        { "s": "emc-15441", "q": "blood pressure should be monitored and dose regulation considered both during and after concomitant medication particularly with strong CYP3A4 inducers (e.g. rifampicin, hypericum perforatum)." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:simvastatin",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "perindopril-amlodipine",
+      "other": "simvastatin",
+      "effect": "myopathy",
+      "concern": "Simvastatin",
+      "consequence": "Amlodipine 10 mg increased simvastatin 80 mg exposure by 77%.",
+      "action": "Limit simvastatin to 20 mg daily.",
+      "sourceWording": "Limit the dose of simvastatin in patients on amlodipine to 20 mg daily",
+      "src": [
+        { "s": "emc-15441", "q": "Limit the dose of simvastatin in patients on amlodipine to 20 mg daily." },
+        { "s": "mhra-dsu-simvastatin-amlodipine-diltiazem", "q": "The maximum recommended dose of simvastatin co-administered with amlodipine or diltiazem is now 20 mg per day." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:nitrate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "perindopril-amlodipine",
+      "other": "group:nitrate",
+      "effect": "hypotension",
+      "concern": "Nitrates",
+      "consequence": "May further reduce blood pressure.",
+      "action": "Consider with caution.",
+      "sourceWording": "should be considered with caution",
+      "src": [
+        { "s": "emc-15441", "q": "Concomitant use with nitroglycerine and other nitrates or other vasodilators, may further reduce blood pressure and therefore should be considered with caution." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "perindopril-amlodipine",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Other antihypertensives (e.g. beta-blockers) and vasodilators",
+      "consequence": "Increased hypotensive effect.",
+      "action": "Be aware of the additive effect.",
+      "sourceWording": "may increase the hypotensive effects",
+      "src": [
+        { "s": "emc-15441", "q": "Concomitant use of these agents may increase the hypotensive effects of perindopril and amlodipine." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:alpha-blocker",
+      "kind": "interaction",
+      "level": "info",
+      "med": "perindopril-amlodipine",
+      "other": "group:alpha-blocker",
+      "effect": "hypotension",
+      "concern": "Alpha-blockers (e.g. doxazosin, tamsulosin)",
+      "consequence": "Increased antihypertensive effect and risk of orthostatic hypotension.",
+      "action": "Be aware of the additive effect.",
+      "sourceWording": "increased risk of orthostatic hypotension",
+      "src": [
+        { "s": "emc-15441", "q": "Alpha-blockers (prazosin, alfuzosin, doxazosin, tamsulosin, terazosin): increased antihypertensive effect and increased risk of orthostatic hypotension." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:tricyclic-antidepressant",
+      "kind": "interaction",
+      "level": "info",
+      "med": "perindopril-amlodipine",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hypotension",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "Increased antihypertensive effect and risk of orthostatic hypotension.",
+      "action": "Be aware of the additive effect.",
+      "sourceWording": "increased risk of orthostatic hypotension",
+      "src": [
+        { "s": "emc-15441", "q": "Tricyclic antidepressants/antipsychotics/anaesthetics: increased antihypertensive effect and increased risk of orthostatic hypotension." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:prednisolone",
+      "kind": "interaction",
+      "level": "info",
+      "med": "perindopril-amlodipine",
+      "other": "prednisolone",
+      "concern": "Prednisolone (systemic corticosteroid)",
+      "consequence": "Reduced antihypertensive effect (salt and water retention).",
+      "action": "Be aware of the reduced blood-pressure-lowering effect.",
+      "sourceWording": "reduction in antihypertensive effect",
+      "src": [
+        { "s": "emc-15441", "q": "Corticosteroids, tetracosactide: reduction in antihypertensive effect (salt and water retention due to corticosteroids)." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:dexamethasone",
+      "kind": "interaction",
+      "level": "info",
+      "med": "perindopril-amlodipine",
+      "other": "dexamethasone",
+      "concern": "Dexamethasone (systemic corticosteroid)",
+      "consequence": "Reduced antihypertensive effect (salt and water retention).",
+      "action": "Be aware of the reduced blood-pressure-lowering effect.",
+      "sourceWording": "reduction in antihypertensive effect",
+      "src": [
+        { "s": "emc-15441", "q": "Corticosteroids, tetracosactide: reduction in antihypertensive effect (salt and water retention due to corticosteroids)." }
+      ]
+    },
+    {
+      "id": "perindopril-amlodipine:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "perindopril-amlodipine",
+      "other": "group:sympathomimetic",
+      "concern": "Sympathomimetics",
+      "consequence": "May reduce the antihypertensive effect of ACE inhibitors.",
+      "action": "Be aware of the reduced blood-pressure-lowering effect.",
+      "sourceWording": "may reduce the antihypertensive effects",
+      "src": [
+        { "s": "emc-15441", "q": "Sympathomimetics may reduce the antihypertensive effects of ACE inhibitors." }
+      ]
+    }
+  ]
+}

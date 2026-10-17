@@ -8,6 +8,8 @@ import { fileURLToPath } from 'url'
 import { assess, rank } from '../../src/lib/medcheck/engine.js'
 
 const kb = JSON.parse(fs.readFileSync(path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../public/medcheck/kb.json'), 'utf8'))
+const details = JSON.parse(fs.readFileSync(path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../public/medcheck/kb-details.json'), 'utf8'))
+for (const m of kb.medicines) m.sections = details.sections[m.id]
 const showQuotes = process.argv.includes('--quotes')
 const med = (id) => kb.medicines.find((m) => m.id === id)
 const sel = (...xs) => xs.map((x, i) => { const [medId, formHint] = x.split(':'); const m = med(medId); if (!m) throw new Error(`no medicine ${medId}`); const f = formHint ? m.formulations.find((f) => f.id.includes(formHint) || f.label.toLowerCase().includes(formHint)) : m.formulations[0]; if (!f) throw new Error(`no formulation ${formHint} for ${medId}`); return { key: `k${i}`, medId, formId: f.id } })
@@ -119,6 +121,24 @@ expectFinding('dapsone + sulfonamide group allergy: contraindicated', sel('dapso
   }
   expectTrue('every allergy rule fires when its named allergen is picked', !misses.length, misses.join('; '))
 }
+// --- clinic expansion
+expectFinding('clarithromycin + domperidone: contraindicated', sel('clarithromycin', 'domperidone'), {}, { kind: 'interaction', meds: ['clarithromycin', 'domperidone'], level: 'contraindicated' })
+expectFinding('glyceryl trinitrate + sildenafil: contraindicated', sel('glyceryl-trinitrate', 'sildenafil'), {}, { kind: 'interaction', meds: ['glyceryl', 'sildenafil'], level: 'contraindicated' })
+expectFinding('warfarin + metronidazole: flagged', sel('warfarin', 'metronidazole'), {}, { kind: 'interaction', meds: ['warfarin', 'metronidazole'], level: 'monitor' })
+expectFinding('warfarin + miconazole oral gel: contraindicated (one UK SmPC)', sel('warfarin', 'miconazole:gel'), {}, { kind: 'interaction', meds: ['warfarin', 'miconazole'], level: 'contraindicated' })
+expectFinding('fluoxetine + tramadol: serotonin syndrome', sel('fluoxetine', 'tramadol'), {}, { kind: 'interaction', meds: ['fluoxetine', 'tramadol'], text: 'serotonin' })
+expectFinding('simvastatin + diltiazem: dose limit', sel('simvastatin', 'diltiazem'), {}, { kind: 'interaction', meds: ['simvastatin', 'diltiazem'], level: 'dose' })
+expectFinding('ciprofloxacin + aluminium/magnesium antacid: separate doses', sel('ciprofloxacin', 'aluminium-magnesium-hydroxide'), {}, { kind: 'interaction', meds: ['ciprofloxacin', 'aluminium'] })
+expectFinding('perindopril + spironolactone: hyperkalaemia', sel('perindopril', 'spironolactone'), {}, { kind: 'interaction', meds: ['perindopril', 'spironolactone'], text: 'potassium' })
+expectNo('fluconazole + diclofenac GEL: no systemic interaction', sel('fluconazole', 'diclofenac:gel'), {}, (f) => f.kind === 'interaction')
+expectNo('dexamethasone eye drops + dexamethasone tablets: not a duplicate', sel('neomycin-polymyxin-dexamethasone-eye', 'dexamethasone'), {}, (f) => f.kind === 'duplication')
+{
+  const r = assess(kb, sel('itopride', 'warfarin'), {})
+  expectTrue('no-UK product is reported as not checked', r.unchecked.some((u) => /itopride/i.test(u)), JSON.stringify(r.unchecked))
+  const r2 = assess(kb, sel('telmisartan-amlodipine', 'potassium-chloride'), {})
+  expectTrue('no-UK combination is checked through its UK ingredients (telmisartan + potassium)', r2.findings.some((f) => f.kind === 'interaction') && r2.unchecked.some((u) => /checked using the UK information/.test(u)), JSON.stringify(r2.unchecked))
+}
+expectTrue('every clinic medicine is in the data', JSON.parse(fs.readFileSync(path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'clinic-map.json'), 'utf8')).every((r) => r.excluded || kb.medicines.some((m) => m.id === r.medicine)))
 // --- integrity of the built data
 expectTrue('every rule is verified (quote found)', kb.rules.every((r) => r.v), kb.rules.filter((r) => !r.v).map((r) => r.id).join(','))
 expectTrue('no non-UK source URLs', Object.values(kb.sources).every((s) => /(medicines\.org\.uk|mhra\.gov\.uk|gov\.uk|nice\.org\.uk|sps\.nhs\.uk|medicinesinpregnancy\.org|uktis\.org|rcophth\.ac\.uk|blob\.core\.windows\.net)/.test(s.url)), Object.values(kb.sources).filter((s) => !/(medicines\.org\.uk|gov\.uk|nice\.org\.uk|sps\.nhs\.uk|medicinesinpregnancy\.org|uktis\.org|rcophth\.ac\.uk|blob\.core\.windows\.net)/.test(s.url)).map((s) => s.url).join(' '))

@@ -1,0 +1,432 @@
+{
+  "id": "tamsulosin",
+  "name": "Tamsulosin hydrochloride",
+  "ingredients": ["tamsulosin"],
+  "className": "Alpha1-adrenoceptor antagonist (alpha-blocker)",
+  "groups": ["alpha-blocker"],
+  "searchTerms": ["tamsulosin"],
+  "formulations": [
+    {
+      "id": "tamsulosin-pr-tab",
+      "label": "Prolonged-release tablets",
+      "route": "oral",
+      "strengths": "400 micrograms (0.4 mg) tamsulosin hydrochloride",
+      "release": "modified",
+      "src": [
+        { "s": "emc-97", "q": "Each tablet contains as active ingredient tamsulosin hydrochloride 400 micrograms, equivalent to 367 micrograms tamsulosin." }
+      ],
+      "sourceIds": ["emc-97"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Adults: functional symptoms of benign prostatic hyperplasia (BPH).",
+          "src": [
+            { "s": "emc-97", "q": "indicated in adults for the treatment of functional symptoms of benign prostatic hyperplasia (BPH)." }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the UK SmPC or the MHRA page accessed."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "One 400 microgram tablet once daily, with or without food.",
+          "tag": "Benign prostatic hyperplasia",
+          "src": [
+            { "s": "emc-97", "q": "One tablet daily, to be taken with or without food." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Safety and efficacy under 18 years not established; a study in children with neuropathic bladder showed no benefit.",
+          "src": [
+            { "s": "emc-97", "q": "The safety and efficacy of tamsulosin in children <18 years have not been established." },
+            { "s": "emc-97", "q": "No statistically significant difference was found between the placebo group and any of the 3 tamsulosin dose groups" }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "History of orthostatic hypotension; severe hepatic insufficiency; hypersensitivity to tamsulosin or excipients.",
+          "src": [
+            { "s": "emc-97", "q": "A history of orthostatic hypotension; severe hepatic insufficiency. Hypersensitivity to the active substance, or to any of the excipients listed in section 6.1." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Blood pressure may fall, rarely causing syncope. At the first signs of orthostatic hypotension (dizziness, weakness), sit or lie down until symptoms go.",
+          "src": [
+            { "s": "emc-97", "q": "At the first signs of orthostatic hypotension (dizziness, weakness), the patient should sit or lie down until the symptoms have disappeared." }
+          ]
+        },
+        {
+          "t": "Intraoperative floppy iris syndrome (IFIS) in cataract and glaucoma surgery, even after stopping. Starting tamsulosin when such surgery is planned is not recommended; surgical teams should ask about current or past use.",
+          "src": [
+            { "s": "emc-97", "q": "The initiation of therapy with tamsulosin hydrochloride in patients for whom cataract or glaucoma surgery is scheduled is not recommended." },
+            { "s": "mhra-dsu-alpha-blockers-ifis-2007", "q": "Cataract surgeons should check past or current use of α-1 adrenoreceptor antagonists for prostatic hypertrophy before surgery." }
+          ]
+        },
+        {
+          "t": "Exclude other causes of BPH-like symptoms before starting; digital rectal examination and, when needed, PSA before treatment and at regular intervals.",
+          "src": [
+            { "s": "emc-97", "q": "Digital rectal examination and, when necessary, determination of prostate specific antigen (PSA) should be performed before treatment and at regular intervals afterwards." }
+          ]
+        },
+        {
+          "t": "Severe renal impairment (CrCl less than 10 ml/min): approach with caution (not studied).",
+          "src": [
+            { "s": "emc-97", "q": "The treatment of severely renally impaired patients (creatinine clearance of less than 10 ml/min) should be approached with caution as these patients have not been studied." }
+          ]
+        },
+        {
+          "t": "CYP3A4 inhibitors: should not be given with strong CYP3A4 inhibitors in CYP2D6 poor metabolisers; use with caution with strong or moderate CYP3A4 inhibitors.",
+          "src": [
+            { "s": "emc-97", "q": "Tamsulosin hydrochloride should not be given in combination with strong inhibitors of CYP3A4 (e.g. ketoconazole) in patients with poor metaboliser CYP2D6 phenotype." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Strong CYP3A4 inhibitors (e.g. ketoconazole raised AUC 2.8-fold): use with caution; do not combine in CYP2D6 poor metabolisers. Moderate CYP3A4 inhibitors (e.g. erythromycin): use with caution.",
+          "src": [
+            { "s": "emc-97", "q": "Concomitant administration with ketoconazole (a known strong CYP3A4 inhibitor) resulted in an increase in AUC and Cmax of tamsulosin hydrochloride by a factor of 2.8 and 2.2, respectively." },
+            { "s": "emc-97", "q": "Tamsulosin hydrochloride should be used with caution in combination with strong (e.g. ketoconazole) and moderate inhibitors (e.g. erythromycin) of CYP3A4." }
+          ]
+        },
+        {
+          "t": "Other alpha1-blockers, anaesthetic agents and other blood-pressure-lowering medicines: theoretical risk of enhanced hypotension.",
+          "src": [
+            { "s": "emc-97", "q": "There is a theoretical risk of enhanced hypotensive effect when given concurrently with drugs which may reduce blood pressure, including anaesthetic agents and other α1-adrenoceptor antagonists." }
+          ]
+        },
+        {
+          "t": "No dose change needed with cimetidine or furosemide; paroxetine rise not clinically relevant; diclofenac and warfarin may increase tamsulosin elimination.",
+          "detail": true,
+          "src": [
+            { "s": "emc-97", "q": "Concomitant cimetidine brings about a rise in plasma levels of tamsulosin, and furosemide a fall, but as levels remain within the normal range, posology need not be changed." },
+            { "s": "emc-97", "q": "Diclofenac and warfarin, however, may increase the elimination rate of tamsulosin." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "CrCl less than 10 ml/min: approach with caution (not studied). No other renal adjustment stated.",
+          "src": [
+            { "s": "emc-97", "q": "The treatment of severely renally impaired patients (creatinine clearance of less than 10 ml/min) should be approached with caution as these patients have not been studied." }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Contraindicated in severe hepatic insufficiency.",
+          "src": [
+            { "s": "emc-97", "q": "A history of orthostatic hypotension; severe hepatic insufficiency." }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Not indicated for use in women (SmPC). BUMPS: generally avoided in pregnancy; fewer than 100 pregnancies studied, so safety cannot be confirmed.",
+          "src": [
+            { "s": "emc-97", "q": "Flomaxtra XL is not indicated for use in women." },
+            { "s": "bumps-tamsulosin", "q": "tamsulosin is generally avoided in pregnancy as there is not enough information to know whether it can affect a baby's development before birth" }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Not indicated for use in women; no breastfeeding data in the SmPC. No SPS breastfeeding page found.",
+          "src": [
+            { "s": "emc-97", "q": "Flomaxtra XL is not indicated for use in women." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Ejaculation disorders, including retrograde ejaculation and ejaculation failure. BUMPS: no evidence that use by the father harms the baby.",
+          "src": [
+            { "s": "emc-97", "q": "Events of ejaculation disorder, retrograde ejaculation and ejaculation failure have been reported in the post authorisation phase." },
+            { "s": "bumps-tamsulosin", "q": "There is no evidence that tamsulosin used by the father can harm your baby through effects on sperm." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: dizziness, ejaculation disorders (including retrograde ejaculation and ejaculation failure).",
+          "src": [
+            { "s": "emc-97", "q": "Nervous system disorders dizziness (1.3%)" },
+            { "s": "emc-97", "q": "ejaculation disorders including retrograde ejaculation and ejaculation failure" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Syncope and orthostatic hypotension; angioedema; Stevens-Johnson syndrome; priapism.",
+          "src": [
+            { "s": "emc-97", "q": "rash, pruritis, urticaria angioedema Stevens-Johnson syndrome" },
+            { "s": "emc-97", "q": "a reduction in blood pressure can occur in individual cases during treatment with Flomaxtra XL, as a result of which, rarely, syncope can occur" }
+          ]
+        },
+        {
+          "t": "Atrial fibrillation, arrhythmia, tachycardia and dyspnoea reported after marketing (causal role uncertain).",
+          "detail": true,
+          "src": [
+            { "s": "emc-97", "q": "atrial fibrillation, arrhythmia, tachycardia and dyspnoea have been reported in association with tamsulosin use" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before starting: exclude other conditions causing similar symptoms; digital rectal examination and PSA when necessary.",
+          "tag": "baseline",
+          "src": [
+            { "s": "emc-97", "q": "Before therapy with Flomaxtra XL is initiated, the patient should be examined in order to exclude the presence of other conditions which can cause the same symptoms as benign prostatic hyperplasia." }
+          ]
+        },
+        {
+          "t": "Repeat digital rectal examination and PSA at regular intervals.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-97", "q": "Digital rectal examination and, when necessary, determination of prostate specific antigen (PSA) should be performed before treatment and at regular intervals afterwards." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Swallow whole; do not crush or chew (prolonged release). With or without food.",
+          "src": [
+            { "s": "emc-97", "q": "The tablet should be swallowed whole and should not be crunched or chewed as this will interfere with the prolonged release of the active ingredient." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "If dizzy or weak, sit or lie down until it passes. Drowsiness, blurred vision, dizziness and fainting can affect driving.",
+          "src": [
+            { "s": "emc-97", "q": "patients should be aware of the fact that drowsiness, blurred vision, dizziness and syncope can occur" }
+          ]
+        },
+        {
+          "t": "Tell the eye surgeon about current or past tamsulosin use before cataract or glaucoma surgery.",
+          "src": [
+            { "s": "mhra-dsu-alpha-blockers-ifis-2007", "q": "advising patients to inform their cataract surgeon about past or current use of these medicines before surgery" }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "tamsulosin:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "tamsulosin",
+      "allergen": ["tamsulosin"],
+      "concern": "Tamsulosin hypersensitivity",
+      "consequence": "Hypersensitivity reaction (angioedema reported).",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity to the active substance",
+      "src": [
+        { "s": "emc-97", "q": "Hypersensitivity to the active substance, or to any of the excipients listed in section 6.1." }
+      ]
+    },
+    {
+      "id": "tamsulosin:condition:orthostatic-hypotension",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "tamsulosin",
+      "condition": "orthostatic-hypotension-history",
+      "concern": "History of orthostatic hypotension",
+      "consequence": "Further blood pressure fall and syncope.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: A history of orthostatic hypotension",
+      "src": [
+        { "s": "emc-97", "q": "A history of orthostatic hypotension; severe hepatic insufficiency." }
+      ]
+    },
+    {
+      "id": "tamsulosin:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "tamsulosin",
+      "hepatic": ["severe"],
+      "concern": "Severe hepatic insufficiency",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: severe hepatic insufficiency",
+      "src": [
+        { "s": "emc-97", "q": "A history of orthostatic hypotension; severe hepatic insufficiency." }
+      ]
+    },
+    {
+      "id": "tamsulosin:renal:crcl-10",
+      "kind": "renal",
+      "level": "caution",
+      "med": "tamsulosin",
+      "renal": { "measure": "CrCl", "max": 10 },
+      "concern": "Severe renal impairment (CrCl less than 10 ml/min)",
+      "consequence": "Not studied.",
+      "action": "Approach with caution.",
+      "sourceWording": "should be approached with caution",
+      "src": [
+        { "s": "emc-97", "q": "The treatment of severely renally impaired patients (creatinine clearance of less than 10 ml/min) should be approached with caution as these patients have not been studied." }
+      ]
+    },
+    {
+      "id": "tamsulosin:condition:cataract-surgery",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "tamsulosin",
+      "condition": "cataract-glaucoma-surgery-planned",
+      "concern": "Cataract or glaucoma surgery scheduled",
+      "consequence": "Intraoperative floppy iris syndrome (IFIS) may raise the risk of eye complications.",
+      "action": "Do not start tamsulosin; tell the surgical team about current or past use.",
+      "sourceWording": "The initiation of therapy ... is not recommended",
+      "src": [
+        { "s": "emc-97", "q": "The initiation of therapy with tamsulosin hydrochloride in patients for whom cataract or glaucoma surgery is scheduled is not recommended." },
+        { "s": "emc-97", "q": "IFIS may increase the risk of eye complications during and after the operation." }
+      ]
+    },
+    {
+      "id": "tamsulosin:interaction:strong-cyp3a4",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tamsulosin",
+      "other": "group:strong-cyp3a4-inhibitor",
+      "effect": "hypotension",
+      "concern": "Strong CYP3A4 inhibitor",
+      "consequence": "Increased tamsulosin exposure (ketoconazole: AUC 2.8-fold).",
+      "action": "Use with caution; do not combine in CYP2D6 poor metabolisers.",
+      "sourceWording": "should be used with caution ... should not be given in combination ... in patients with poor metaboliser CYP2D6 phenotype",
+      "src": [
+        { "s": "emc-97", "q": "Tamsulosin hydrochloride should be used with caution in combination with strong (e.g. ketoconazole) and moderate inhibitors (e.g. erythromycin) of CYP3A4." },
+        { "s": "emc-97", "q": "Tamsulosin hydrochloride should not be given in combination with strong inhibitors of CYP3A4 (e.g. ketoconazole) in patients with poor metaboliser CYP2D6 phenotype." }
+      ]
+    },
+    {
+      "id": "tamsulosin:interaction:cyp3a4",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "tamsulosin",
+      "other": "group:cyp3a4-inhibitor",
+      "otherExcept": ["clarithromycin"],
+      "effect": "hypotension",
+      "concern": "Moderate CYP3A4 inhibitor (e.g. erythromycin)",
+      "consequence": "May increase tamsulosin exposure.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-97", "q": "Tamsulosin hydrochloride should be used with caution in combination with strong (e.g. ketoconazole) and moderate inhibitors (e.g. erythromycin) of CYP3A4." }
+      ]
+    },
+    {
+      "id": "tamsulosin:interaction:alpha-blocker",
+      "kind": "interaction",
+      "level": "info",
+      "med": "tamsulosin",
+      "other": "group:alpha-blocker",
+      "effect": "hypotension",
+      "concern": "Another alpha1-blocker",
+      "consequence": "Theoretical risk of enhanced hypotensive effect.",
+      "action": "Be aware of additive hypotension.",
+      "sourceWording": "There is a theoretical risk of enhanced hypotensive effect",
+      "src": [
+        { "s": "emc-97", "q": "There is a theoretical risk of enhanced hypotensive effect when given concurrently with drugs which may reduce blood pressure, including anaesthetic agents and other α1-adrenoceptor antagonists." }
+      ]
+    },
+    {
+      "id": "tamsulosin:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "tamsulosin",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Blood-pressure-lowering medicine",
+      "consequence": "Theoretical risk of enhanced hypotensive effect.",
+      "action": "Be aware of additive hypotension.",
+      "sourceWording": "There is a theoretical risk of enhanced hypotensive effect",
+      "src": [
+        { "s": "emc-97", "q": "There is a theoretical risk of enhanced hypotensive effect when given concurrently with drugs which may reduce blood pressure" }
+      ]
+    },
+    {
+      "id": "tamsulosin:pregnancy:avoid",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "tamsulosin",
+      "concern": "Pregnancy",
+      "consequence": "Not indicated in women; too little information to confirm safety.",
+      "action": "Generally avoid in pregnancy (BUMPS); not indicated for women (SmPC).",
+      "sourceWording": "generally avoided in pregnancy",
+      "src": [
+        { "s": "bumps-tamsulosin", "q": "tamsulosin is generally avoided in pregnancy as there is not enough information to know whether it can affect a baby's development before birth" },
+        { "s": "emc-97", "q": "Flomaxtra XL is not indicated for use in women." }
+      ]
+    },
+    {
+      "id": "tamsulosin:breastfeeding:info",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "tamsulosin",
+      "concern": "Breastfeeding",
+      "consequence": "Not indicated for use in women; no breastfeeding data.",
+      "action": "Not licensed for women.",
+      "sourceWording": "not indicated for use in women",
+      "src": [
+        { "s": "emc-97", "q": "Flomaxtra XL is not indicated for use in women." }
+      ]
+    },
+    {
+      "id": "tamsulosin:age:under-18",
+      "kind": "age",
+      "level": "info",
+      "med": "tamsulosin",
+      "age": { "maxYears": 18 },
+      "concern": "Under 18 years",
+      "consequence": "Safety and efficacy not established.",
+      "action": "Licensed for adults only.",
+      "sourceWording": "have not been established",
+      "src": [
+        { "s": "emc-97", "q": "The safety and efficacy of tamsulosin in children <18 years have not been established." }
+      ]
+    }
+  ]
+}

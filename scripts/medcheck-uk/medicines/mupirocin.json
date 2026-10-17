@@ -1,0 +1,633 @@
+{
+  "id": "mupirocin",
+  "name": "Mupirocin (topical/nasal)",
+  "ingredients": [
+    "mupirocin"
+  ],
+  "className": "Topical antibacterial (antibiotic for dermatological use)",
+  "groups": [],
+  "searchTerms": [
+    "mupirocin ointment",
+    "mupirocin nasal ointment",
+    "mupirocin calcium"
+  ],
+  "availability": {
+    "status": "uk"
+  },
+  "formulations": [
+    {
+      "id": "mupirocin-oint-2",
+      "label": "Ointment 2%",
+      "route": "topical",
+      "strengths": "2% w/w (20 mg/g)",
+      "release": "n/a",
+      "note": "Polyethylene glycol (macrogol) base.",
+      "src": [
+        {
+          "s": "emc-1156",
+          "q": "Each gram of ointment contains 20 mg mupirocin (2% w/w mupirocin free acid)."
+        },
+        {
+          "s": "emc-1156",
+          "q": "Ointment in a white, translucent, water-soluble, polyethylene glycol base."
+        }
+      ],
+      "sourceIds": [
+        "emc-1156"
+      ]
+    },
+    {
+      "id": "mupirocin-nasal-2",
+      "label": "Nasal ointment 2%",
+      "route": "nasal",
+      "strengths": "2% w/w (as mupirocin calcium)",
+      "release": "n/a",
+      "note": "White soft paraffin base; a different product from the skin ointment.",
+      "src": [
+        {
+          "s": "emc-1155",
+          "q": "mupirocin calcium equivalent to 20 mg mupirocin (2% w/w mupirocin free acid)"
+        },
+        {
+          "s": "emc-1155",
+          "q": "White soft paraffin based nasal ointment containing a glycerin ester."
+        }
+      ],
+      "sourceIds": [
+        "emc-1155"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Bacterial skin infections such as impetigo, folliculitis and furunculosis (active against Staphylococcus aureus including MRSA, and streptococci).",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Bactroban Ointment is used for skin infections, e.g. impetigo, folliculitis, furunculosis."
+            },
+            {
+              "s": "emc-1156",
+              "q": "including methicillin-resistant strains, other staphylococci, streptococci"
+            }
+          ]
+        },
+        {
+          "t": "Clearing nasal carriage of staphylococci, including MRSA.",
+          "formulations": [
+            "mupirocin-nasal-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1155",
+              "q": "The elimination of nasal carriage of staphylococci, including methicillin resistant"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the two UK mupirocin SmPCs (ointment, nasal ointment) or the SPS breastfeeding page accessed."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults (including elderly and hepatic impairment) and children: apply 2 to 3 times a day for up to 10 days, depending on response. Discard any product left at the end of treatment.",
+          "tag": "Skin infections",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Two to three times a day for up to ten days, depending on the response."
+            },
+            {
+              "s": "emc-1156",
+              "q": "Any product remaining at the end of treatment should be discarded."
+            }
+          ]
+        },
+        {
+          "t": "Adults and children: apply to the inside of each nostril 2 to 3 times a day. Nasal carriage normally clears within 5 to 7 days.",
+          "tag": "Nasal staphylococcal carriage",
+          "formulations": [
+            "mupirocin-nasal-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1155",
+              "q": "should be applied to the anterior nares two to three times a day"
+            },
+            {
+              "s": "emc-1155",
+              "q": "Nasal carriage should normally clear within 5-7 days of commencing treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children use the adult dose; no lower age limit is stated. For infants, the nasal ointment may be applied with a cotton bud.",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Adults (including elderly/hepatically impaired) and children"
+            },
+            {
+              "s": "emc-1155",
+              "q": "A cotton bud may be used instead of the little finger for the application in particular to infants or patients who are very ill."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to mupirocin or to any excipient.",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+            },
+            {
+              "s": "emc-1155",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Skin ointment: not suitable for use in the eye or the nose.",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "This Bactroban Ointment formulation is not suitable for ophthalmic or intranasal use."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Skin ointment: polyethylene glycol can be absorbed from open wounds and damaged skin. Do not use where large amounts may be absorbed, especially in moderate or severe renal impairment.",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Polyethylene glycol can be absorbed from open wounds and damaged skin and is excreted by the kidneys."
+            },
+            {
+              "s": "emc-1156",
+              "q": "mupirocin ointment should not be used in conditions where absorption of large quantities of polyethylene glycol is possible, especially if there is evidence of moderate or severe renal impairment"
+            }
+          ]
+        },
+        {
+          "t": "Skin ointment: not for use with cannulae or at a central venous cannulation site.",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "use in conjunction with cannulae and"
+            },
+            {
+              "s": "emc-1156",
+              "q": "at the site of central venous cannulation"
+            }
+          ]
+        },
+        {
+          "t": "Stop if a sensitisation reaction or severe local irritation occurs; remove the product and give appropriate treatment.",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Should a possible sensitisation reaction or severe local irritation occur with the use of Bactroban Ointment, treatment should be discontinued"
+            },
+            {
+              "s": "emc-1155",
+              "q": "Should a possible sensitisation reaction or severe local irritation occur with the use of Bactroban Nasal Ointment, treatment should be discontinued"
+            }
+          ]
+        },
+        {
+          "t": "Prolonged use may lead to overgrowth of non-susceptible organisms. Pseudomembranous colitis is possible (less likely with topical use): stop at once if prolonged or significant diarrhoea or abdominal cramps occur.",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "prolonged use may result in overgrowth of non-susceptible organisms"
+            },
+            {
+              "s": "emc-1156",
+              "q": "if prolonged or significant diarrhoea occurs or the patient experiences abdominal cramps, treatment should be discontinued immediately and the patient investigated further"
+            }
+          ]
+        },
+        {
+          "t": "Nasal ointment: not for use in the eye.",
+          "formulations": [
+            "mupirocin-nasal-2"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1155",
+              "q": "This mupirocin nasal ointment formulation is not suitable for ophthalmic use."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "No drug interactions have been identified.",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "No drug interactions have been identified."
+            },
+            {
+              "s": "emc-1155",
+              "q": "No drug interactions have been identified"
+            }
+          ]
+        },
+        {
+          "t": "Skin ointment: do not mix with other preparations (dilution reduces antibacterial activity and stability).",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Do not mix with other preparations as there is a risk of dilution, resulting in a reduction of the antibacterial activity"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Skin ointment: do not use where large amounts of polyethylene glycol may be absorbed (open wounds, damaged skin), especially in moderate or severe renal impairment. No numeric threshold is given.",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "mupirocin ointment should not be used in conditions where absorption of large quantities of polyethylene glycol is possible, especially if there is evidence of moderate or severe renal impairment"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Skin ointment: the usual adult dose applies in hepatic impairment.",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Adults (including elderly/hepatically impaired) and children"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "No clinical experience in pregnancy; animal studies showed no harm to the fetus. Use only when the potential benefit outweighs the possible risk.",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Reproduction studies on Bactroban in animals have revealed no evidence of harm to the foetus"
+            },
+            {
+              "s": "emc-1156",
+              "q": "Bactroban should only be used in pregnancy when the potential benefits outweigh the possible risks of treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SPS: mupirocin can be used during breastfeeding; as a precaution, monitor the infant for rash. Avoid direct contact between the infant and the treated area.",
+          "src": [
+            {
+              "s": "sps-impetigo-topical-breastfeeding",
+              "q": "Mupirocin can be used during breastfeeding."
+            },
+            {
+              "s": "sps-impetigo-topical-breastfeeding",
+              "q": "As a precaution, monitor the infant for rash."
+            },
+            {
+              "s": "sps-impetigo-topical-breastfeeding",
+              "q": "Care should be taken to avoid direct contact between the infant and impetigo lesion(s) and treated area."
+            }
+          ]
+        },
+        {
+          "t": "SmPC: no information on excretion in milk. If a cracked nipple is treated, wash it thoroughly before breastfeeding.",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "There is no information on the excretion of Bactroban in milk."
+            },
+            {
+              "s": "emc-1156",
+              "q": "If a cracked nipple is to be treated, it should be thoroughly washed prior to breast feeding."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No human fertility data; rat studies showed no effect on fertility.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "There are no data on the effects of mupirocin on human fertility."
+            },
+            {
+              "s": "emc-1156",
+              "q": "Studies in rats showed no effects on fertility"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Skin ointment: common burning at the application site; uncommon itching, redness, stinging and dryness, and skin sensitisation.",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Common: Burning localised to the area of application."
+            },
+            {
+              "s": "emc-1156",
+              "q": "Uncommon: Itching, erythema, stinging and dryness localised to the area of application."
+            }
+          ]
+        },
+        {
+          "t": "Nasal ointment: uncommon nasal mucosa reactions.",
+          "formulations": [
+            "mupirocin-nasal-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1155",
+              "q": "Uncommon: Nasal mucosa reactions."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Very rare systemic allergic reactions including anaphylaxis, generalised rash, urticaria and angioedema.",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Systemic allergic reactions including anaphylaxis, generalised rash, urticaria and angioedema"
+            },
+            {
+              "s": "emc-1155",
+              "q": "Systemic allergic reactions including anaphylaxis, generalised rash, urticaria and angioedema"
+            }
+          ]
+        },
+        {
+          "t": "Pseudomembranous colitis (less likely with topical use): stop at once and investigate if prolonged or significant diarrhoea or abdominal cramps occur.",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "if prolonged or significant diarrhoea occurs or the patient experiences abdominal cramps, treatment should be discontinued immediately and the patient investigated further"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Stop if sensitisation or severe local irritation develops.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Should a possible sensitisation reaction or severe local irritation occur with the use of Bactroban Ointment, treatment should be discontinued"
+            }
+          ]
+        },
+        {
+          "t": "Skin ointment: course up to 10 days; review response.",
+          "tag": "ongoing",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Two to three times a day for up to ten days, depending on the response."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Skin ointment: apply a small amount to cover the affected area; it may be covered with a dressing. Do not mix with other preparations.",
+          "formulations": [
+            "mupirocin-oint-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "A small quantity of Bactroban ointment should be applied to cover the affected area."
+            },
+            {
+              "s": "emc-1156",
+              "q": "The treated area may be covered by a dressing."
+            }
+          ]
+        },
+        {
+          "t": "Nasal ointment: put a match-head amount on the little finger, apply inside each nostril, then press the sides of the nose together to spread it.",
+          "formulations": [
+            "mupirocin-nasal-2"
+          ],
+          "src": [
+            {
+              "s": "emc-1155",
+              "q": "A small amount of the ointment about the size of a match head is placed on the little finger and applied to the inside of each nostril."
+            },
+            {
+              "s": "emc-1155",
+              "q": "The nostrils are closed by pressing the sides of the nose together"
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Avoid contact with the eyes; if it gets into the eyes, rinse well with water.",
+          "src": [
+            {
+              "s": "emc-1156",
+              "q": "Avoid contact with the eyes."
+            },
+            {
+              "s": "emc-1156",
+              "q": "If contaminated, the eyes should be thoroughly irrigated with water until the ointment residues have been removed."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "mupirocin:allergy:mupirocin",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "mupirocin",
+      "allergen": [
+        "mupirocin"
+      ],
+      "concern": "Mupirocin hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity to the active substance",
+      "src": [
+        {
+          "s": "emc-1156",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+        },
+        {
+          "s": "emc-1155",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "mupirocin:condition:moderate-severe-renal-peg",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "mupirocin",
+      "formulations": [
+        "mupirocin-oint-2"
+      ],
+      "condition": "moderate-severe-renal-impairment",
+      "concern": "Moderate or severe renal impairment, where large amounts of the ointment base could be absorbed (open wounds, damaged skin)",
+      "consequence": "Polyethylene glycol in the skin ointment is absorbed from open wounds and damaged skin and excreted by the kidneys.",
+      "action": "Should not be used where large amounts of polyethylene glycol may be absorbed.",
+      "sourceWording": "should not be used in conditions where absorption of large quantities of polyethylene glycol is possible",
+      "src": [
+        {
+          "s": "emc-1156",
+          "q": "Polyethylene glycol can be absorbed from open wounds and damaged skin and is excreted by the kidneys."
+        },
+        {
+          "s": "emc-1156",
+          "q": "mupirocin ointment should not be used in conditions where absorption of large quantities of polyethylene glycol is possible, especially if there is evidence of moderate or severe renal impairment"
+        }
+      ]
+    },
+    {
+      "id": "mupirocin:pregnancy",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "mupirocin",
+      "concern": "Pregnancy",
+      "consequence": "No clinical experience in pregnancy; no harm in animal studies.",
+      "action": "Use only when the potential benefit outweighs the possible risk.",
+      "sourceWording": "should only be used in pregnancy when the potential benefits outweigh the possible risks",
+      "src": [
+        {
+          "s": "emc-1156",
+          "q": "Bactroban should only be used in pregnancy when the potential benefits outweigh the possible risks of treatment."
+        },
+        {
+          "s": "emc-1155",
+          "q": "Bactroban should only be used in pregnancy when the potential benefits outweigh the possible risks of treatment."
+        }
+      ]
+    },
+    {
+      "id": "mupirocin:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "monitor",
+      "med": "mupirocin",
+      "concern": "Breastfeeding",
+      "consequence": "SPS: can be used during breastfeeding. The SmPC has no information on excretion in milk.",
+      "action": "As a precaution, monitor the infant for rash; avoid infant contact with the treated area; wash a treated cracked nipple before feeding.",
+      "sourceWording": "can be used during breastfeeding ... As a precaution, monitor the infant for rash",
+      "src": [
+        {
+          "s": "sps-impetigo-topical-breastfeeding",
+          "q": "Mupirocin can be used during breastfeeding."
+        },
+        {
+          "s": "sps-impetigo-topical-breastfeeding",
+          "q": "As a precaution, monitor the infant for rash."
+        },
+        {
+          "s": "emc-1156",
+          "q": "If a cracked nipple is to be treated, it should be thoroughly washed prior to breast feeding."
+        },
+        {
+          "s": "emc-1156",
+          "q": "There is no information on the excretion of Bactroban in milk."
+        },
+        {
+          "s": "sps-impetigo-topical-breastfeeding",
+          "q": "Care should be taken to avoid direct contact between the infant and impetigo lesion(s) and treated area."
+        }
+      ]
+    }
+  ]
+}

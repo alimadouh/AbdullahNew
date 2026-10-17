@@ -1,0 +1,918 @@
+{
+  "id": "methyldopa",
+  "name": "Methyldopa",
+  "ingredients": [
+    "methyldopa"
+  ],
+  "className": "Centrally acting antihypertensive (antiadrenergic agent)",
+  "groups": [
+    "antihypertensive"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "methyldopa-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "250 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "equivalent to methyldopa anhydrous 250mg"
+        }
+      ],
+      "sourceIds": [
+        "emc-100084"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Moderate to severe hypertension.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Treatment of moderate to severe hypertension."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restrictions stated in the UK SmPC."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "250 mg two or three times daily for 2 days, then adjust every 2 days to response. Usual 500 mg-2 g daily; maximum 3 g daily. Increase the evening dose first (sedation).",
+          "tag": "Hypertension (adults)",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "250mg 2-3 times daily for 2 days, adjusted at intervals of 2 days until adequate response is obtained. Maximum dose 3g daily (increase evening dose first). Usual effective dose 500mg to 2g daily."
+            }
+          ]
+        },
+        {
+          "t": "Switching from other antihypertensives: withdraw those gradually; start methyldopa at no more than 500 mg daily, increasing at intervals of at least 2 days.",
+          "tag": "Patients on other antihypertensives",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "methyldopa should be limited to an initial dose of not more than 500 mg daily and increased as required at intervals of not less than two days."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: start no higher than 250 mg daily (e.g. 125 mg twice daily); increase slowly; maximum 2 g daily.",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Initial dose should be kept as low as possible not exceeding 250mg daily. An appropriate starting dose would be 125mg twice daily, increased slowly as required but not exceeding a maximum daily dosage of 2g."
+            }
+          ]
+        },
+        {
+          "t": "Stopping: hypertension usually returns within 48 hours (usually without overshoot).",
+          "tag": "Withdrawal",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Withdrawal of methyldopa is followed by return of hypertension, usually within 48 hours."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children: 10 mg/kg daily in 2-4 divided doses, adjusted to response; maximum 65 mg/kg daily or 3 g daily, whichever is less.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "10mg/kg bodyweight daily in 2-4 divided doses. The dosage is increased or decreased until adequate response is achieved. Maximum recommended daily dose is 65mg/kg bodyweight or 3g whichever is less."
+            }
+          ],
+          "calc": {
+            "mgPerKg": 10,
+            "per": "day",
+            "maxMg": 3000,
+            "maxPer": "day",
+            "of": "methyldopa"
+          }
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity (including liver disorders with previous methyldopa); history of depression; active hepatic disease (e.g. acute hepatitis, active cirrhosis); MAOI therapy; porphyria. Not recommended for (and in 4.4 contraindicated in) catecholamine-secreting tumours such as phaeochromocytoma.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Hypersensitivity to methyldopa or to any of the excipients listed in section 6.1 (including hepatic disorders associated with previous methyldopa therapy)"
+            },
+            {
+              "s": "emc-100084",
+              "q": "A history of depression Active hepatic disease such as acute hepatitis and active cirrhosis On therapy with monoamine oxidase inhibitors (MAOIs) Porphyria"
+            },
+            {
+              "s": "emc-100084",
+              "q": "Methyldopa is contraindicated for the treatment of patients with a catecholamine-secreting tumour such as phaeochromocytoma or paraganglioma."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Haemolytic anaemia (rare, deaths reported): check haemoglobin/haematocrit if anaemia is suspected and test for haemolysis; stop if haemolytic anaemia. Positive Coombs test in 10-20% (matters for blood cross-matching).",
+          "tag": "Blood",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "If haemolytic anaemia is present, Methyldopa tablets should be discontinued."
+            },
+            {
+              "s": "emc-100084",
+              "q": "From the reports of different investigators, the incidence averages between 10% and 20%."
+            }
+          ]
+        },
+        {
+          "t": "Liver: fever, abnormal liver tests or jaundice (usually in the first 2-3 months; rare fatal hepatic necrosis) - withdraw and do not use again. Use with caution if there is a history of liver disease.",
+          "tag": "Liver",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Should fever, abnormality in liver function, or jaundice occur, therapy should be withdrawn."
+            },
+            {
+              "s": "emc-100084",
+              "q": "Methyldopa should not be used again in these patients."
+            },
+            {
+              "s": "emc-100084",
+              "q": "Methyldopa should be used with caution in patients with a history of previous liver disease or dysfunction."
+            }
+          ]
+        },
+        {
+          "t": "Severe bilateral cerebrovascular disease: involuntary choreoathetotic movements - stop if they occur. Hepatic porphyria in the patient or near relatives: extreme caution.",
+          "tag": "Neurological / porphyria",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Should these movements occur, therapy should be discontinued."
+            },
+            {
+              "s": "emc-100084",
+              "q": "Methyldopa Tablets should be used with extreme caution in patients, or in near relatives of patients, with hepatic porphyria."
+            }
+          ]
+        },
+        {
+          "t": "Anaesthesia: reduced anaesthetic doses may be needed. Dialysis removes methyldopa (hypertension may recur).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Patients may require reduced doses of anaesthetics when on methyldopa."
+            },
+            {
+              "s": "emc-100084",
+              "q": "Dialysis removes methyldopa; therefore, hypertension may recur after this procedure."
+            }
+          ]
+        },
+        {
+          "t": "Lab interference: urinary uric acid, serum creatinine (alkaline picrate) and AST (colorimetric); false-high urinary catecholamines. Urine may darken on standing.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Methyldopa may interfere with the measurement of urinary uric acid by the phosphotungstate method, serum creatinine by the alkaline picrate method, and AST (SGOT) by colorimetric method."
+            }
+          ]
+        },
+        {
+          "t": "Lactose: patients with galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "MAOIs: contraindicated; stop MAOIs before starting methyldopa.",
+          "tag": "MAOIs",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "On therapy with monoamine oxidase inhibitors (MAOIs)"
+            },
+            {
+              "s": "emc-100084",
+              "q": "Monoamine oxidase inhibitors should be discontinued before treatment with methyldopa."
+            }
+          ]
+        },
+        {
+          "t": "Other antihypertensives (and thiazide diuretics, general anaesthetics, levodopa): enhanced effect - follow progress carefully. Verapamil: may intensify sinus bradycardia.",
+          "tag": "Antihypertensives",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "When methyldopa is used with other antihypertensive drugs, potentiation of antihypertensive action may occur. The progress of patients should be carefully followed"
+            },
+            {
+              "s": "emc-100084",
+              "q": "Concurrent use of verapamil and methyldopa can intensify sinus bradycardia."
+            }
+          ]
+        },
+        {
+          "t": "Iron (ferrous sulphate or gluconate): reduced methyldopa bioavailability; may worsen blood pressure control.",
+          "tag": "Iron",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Several studies demonstrate a decrease in the bioavailability of methyldopa when it is ingested with ferrous sulphate or ferrous gluconate."
+            }
+          ]
+        },
+        {
+          "t": "Sympathomimetics, tricyclic antidepressants, phenothiazines and MAOIs may reduce the antihypertensive effect. Lithium: monitor for lithium toxicity. Haloperidol toxicity may increase.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "The antihypertensive effect of methyldopa may be diminished by sympathomimetics, tricyclic antidepressants, phenothiazine derivatives and monoamine oxidase inhibitors (MAOIs)"
+            },
+            {
+              "s": "emc-100084",
+              "q": "When methyldopa and lithium are given concomitantly the patient should be monitored carefully for symptoms of lithium toxicity."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Largely excreted by the kidney; patients with impaired renal function may respond to smaller doses (no threshold given). Removed by dialysis.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Methyldopa is largely excreted by the kidney, and patients with impaired renal function may respond to smaller doses."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Contraindicated in active hepatic disease (acute hepatitis, active cirrhosis). Caution with a history of liver disease or dysfunction. Check liver function before and during the first 6-12 weeks.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Active hepatic disease such as acute hepatitis and active cirrhosis"
+            },
+            {
+              "s": "emc-100084",
+              "q": "Methyldopa should be used with caution in patients with a history of previous liver disease or dysfunction."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: used under close supervision for hypertension in pregnancy; no evidence of fetal abnormalities or neonatal effects, fetal harm appears remote, but cannot be excluded - weigh benefits against risks.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Methyldopa has been used under close medical supervision for the treatment of hypertension during pregnancy."
+            },
+            {
+              "s": "emc-100084",
+              "q": "the use of the drug in women who are, or may become pregnant requires that anticipated benefits be weighed against possible risks."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: can be used in pregnancy if recommended by a doctor; no concern that it harms the baby. Switch to a different medicine within a few days of delivery (risk of low mood/depression after birth).",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-methyldopa",
+              "q": "Methyldopa can be used in pregnancy if recommended by a doctor."
+            },
+            {
+              "s": "bumps-methyldopa",
+              "q": "If you take methyldopa at the end of pregnancy, your doctor will advise that you switch to a different medicine within a few days of delivery."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Appears in breast milk; weigh anticipated benefits against possible risks.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Methyldopa appears in breast milk. The use of the drug in breast-feeding mothers requires that anticipated benefits be weighed against possible risks."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: after birth methyldopa can increase the chance of low mood and depression; a switch is usually advised within a few days of delivery.",
+          "detail": true,
+          "src": [
+            {
+              "s": "bumps-methyldopa",
+              "q": "This is because taking methyldopa after the baby's birth can increase your chance of low mood and depression."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "BUMPS: no increased risk to the baby is expected if the father takes methyldopa. The SmPC gives no fertility or contraception information.",
+          "detail": true,
+          "src": [
+            {
+              "s": "bumps-methyldopa",
+              "q": "We do not expect any increased risk to your baby if the father takes methyldopa."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Frequencies not known. Sedation (usually transient, at start or after dose increases), headache, weakness, dizziness, light-headedness, dry mouth, nasal congestion, orthostatic hypotension (reduce dose), oedema/weight gain.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Many patients experience sedation for two or three days when therapy with methyldopa is started or when the dose is increased."
+            },
+            {
+              "s": "emc-100084",
+              "q": "Orthostatic hypotension (decrease daily dosage)"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Haemolytic anaemia, bone-marrow failure, leucopenia, thrombocytopenia; hepatitis/jaundice (stop; do not re-use); myocarditis, pericarditis, AV block, bradycardia; depression, psychosis; toxic epidermal necrolysis, angioedema; pancreatitis; lupus-like syndrome.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Haemolytic anaemia, bone-marrow failure, leucopenia, granulocytopenia, thrombocytopenia, eosinophilia"
+            },
+            {
+              "s": "emc-100084",
+              "q": "Rare cases of fatal hepatic necrosis have been reported."
+            }
+          ]
+        },
+        {
+          "t": "Stop if oedema progresses or signs of heart failure appear.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "(Discontinue methyldopa if oedema progresses or signs of heart failure appear.)"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Liver function tests and total and differential white cell count before therapy.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Liver-function tests and a total and differential white bloodcell count are advisable before therapy and at intervals during the first six weeks to twelve weeks of therapy, or whenever an unexplained fever occurs."
+            }
+          ]
+        },
+        {
+          "t": "Repeat liver tests and white cell count at intervals in the first 6-12 weeks and whenever unexplained fever occurs; haemoglobin/haematocrit if anaemia is suspected.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "at intervals during the first six weeks to twelve weeks of therapy, or whenever an unexplained fever occurs."
+            },
+            {
+              "s": "emc-100084",
+              "q": "should symptoms suggest anaemia, haemoglobin and/or haematocrit determinations should be made."
+            }
+          ]
+        },
+        {
+          "t": "Stop if haemolytic anaemia, fever, abnormal liver function, jaundice or choreoathetotic movements occur.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Should fever, abnormality in liver function, or jaundice occur, therapy should be withdrawn."
+            },
+            {
+              "s": "emc-100084",
+              "q": "If haemolytic anaemia is present, Methyldopa tablets should be discontinued."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral. When increasing the dose, increase the evening dose first to limit daytime sedation.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "When increasing the dosage, therefore, it may be desirable to increase the evening dose first."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Drowsiness, dizziness and light-headedness can occur, especially at the start or after a dose increase; do not drive or operate machinery if affected.",
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "If affected, patients should not attempt to drive, or operate machinery."
+            }
+          ]
+        },
+        {
+          "t": "Report unexplained fever, yellow skin/eyes or symptoms of anaemia promptly. Urine may darken on standing (harmless).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-100084",
+              "q": "Rarely, when urine is exposed to air after voiding, it may darken because of breakdown of methyldopa or its metabolites."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "methyldopa:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "methyldopa",
+      "allergen": [
+        "methyldopa"
+      ],
+      "concern": "Hypersensitivity to methyldopa (including liver disorders with previous methyldopa therapy)",
+      "consequence": "Hypersensitivity reaction, including drug-induced liver injury.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Hypersensitivity to methyldopa or to any of the excipients listed in section 6.1 (including hepatic disorders associated with previous methyldopa therapy)"
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:condition:previous-liver-reaction",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methyldopa",
+      "condition": "methyldopa-liver-disorder-history",
+      "concern": "Previous liver disorder, fever or jaundice with methyldopa",
+      "consequence": "Recurrence of drug-induced liver injury.",
+      "action": "Do not use again.",
+      "sourceWording": "should not be used again",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "(including hepatic disorders associated with previous methyldopa therapy)"
+        },
+        {
+          "s": "emc-100084",
+          "q": "Methyldopa should not be used again in these patients."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:condition:depression",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methyldopa",
+      "condition": "depression-suicidality",
+      "concern": "History of depression",
+      "consequence": "Methyldopa can cause depression and psychic disturbances.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "A history of depression Active hepatic disease"
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:condition:active-liver-disease",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methyldopa",
+      "condition": "active-liver-disease",
+      "concern": "Active hepatic disease (acute hepatitis, active cirrhosis)",
+      "consequence": "Risk of hepatotoxicity.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Active hepatic disease such as acute hepatitis and active cirrhosis"
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "methyldopa",
+      "hepatic": [
+        "any"
+      ],
+      "concern": "History of liver disease or dysfunction",
+      "consequence": "Methyldopa can cause hepatitis, jaundice and rarely fatal hepatic necrosis.",
+      "action": "Use with caution; contraindicated if liver disease is active. Check liver tests before and during the first 6-12 weeks.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Methyldopa should be used with caution in patients with a history of previous liver disease or dysfunction."
+        },
+        {
+          "s": "emc-100084",
+          "q": "Active hepatic disease such as acute hepatitis and active cirrhosis"
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:condition:porphyria",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methyldopa",
+      "condition": "porphyria",
+      "concern": "Porphyria",
+      "consequence": "Listed contraindication.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "On therapy with monoamine oxidase inhibitors (MAOIs) Porphyria"
+        },
+        {
+          "s": "emc-100084",
+          "q": "Methyldopa Tablets should be used with extreme caution in patients, or in near relatives of patients, with hepatic porphyria."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:condition:phaeochromocytoma",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "methyldopa",
+      "condition": "phaeochromocytoma",
+      "concern": "Phaeochromocytoma or paraganglioma",
+      "consequence": "Not suitable treatment; methyldopa also interferes with urinary catecholamine tests.",
+      "action": "Do not use (section 4.3: not recommended; section 4.4: contraindicated).",
+      "sourceWording": "contraindicated for the treatment of patients with a catecholamine-secreting tumour",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Methyldopa Tablets are not recommended for the treatment of catecholamine-secreating tumour such as phaeochromocytoma or paraganglioma"
+        },
+        {
+          "s": "emc-100084",
+          "q": "Methyldopa is contraindicated for the treatment of patients with a catecholamine-secreting tumour such as phaeochromocytoma or paraganglioma."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:condition:cerebrovascular",
+      "kind": "condition",
+      "level": "caution",
+      "med": "methyldopa",
+      "condition": "cerebrovascular-disease",
+      "concern": "Severe bilateral cerebrovascular disease",
+      "consequence": "Involuntary choreoathetotic movements reported.",
+      "action": "Stop if these movements occur.",
+      "sourceWording": "therapy should be discontinued",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Rarely, involuntary choreoathetotic movements have been observed during therapy with methyldopa in patients with severe bilateral cerebrovascular disease."
+        },
+        {
+          "s": "emc-100084",
+          "q": "Should these movements occur, therapy should be discontinued."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:condition:renal-impairment",
+      "kind": "condition",
+      "level": "dose",
+      "med": "methyldopa",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment",
+      "consequence": "Largely renally excreted.",
+      "action": "May respond to smaller doses (no threshold given).",
+      "sourceWording": "may respond to smaller doses",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Methyldopa is largely excreted by the kidney, and patients with impaired renal function may respond to smaller doses."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:condition:surgery",
+      "kind": "condition",
+      "level": "info",
+      "med": "methyldopa",
+      "condition": "surgery-planned",
+      "concern": "Surgery / anaesthesia",
+      "consequence": "Reduced anaesthetic doses may be needed; hypotension can usually be controlled with vasopressors.",
+      "action": "Reduced anaesthetic doses may be needed; if hypotension occurs during anaesthesia it can usually be controlled by vasopressors.",
+      "sourceWording": "may require reduced doses of anaesthetics",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Patients may require reduced doses of anaesthetics when on methyldopa."
+        },
+        {
+          "s": "emc-100084",
+          "q": "If hypotension does occur during anaesthesia, it can usually be controlled by vasopressors."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:condition:galactose",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "methyldopa",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, total lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Tablets contain lactose.",
+      "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:pregnancy",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "methyldopa",
+      "concern": "Pregnancy",
+      "consequence": "Crosses the placenta; no evidence of fetal harm (SmPC), no concern of harm (BUMPS).",
+      "action": "Weigh benefits against risks (SmPC). BUMPS: can be used if recommended by a doctor; switch within a few days after delivery.",
+      "sourceWording": "requires that anticipated benefits be weighed against possible risks",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "the use of the drug in women who are, or may become pregnant requires that anticipated benefits be weighed against possible risks."
+        },
+        {
+          "s": "bumps-methyldopa",
+          "q": "Methyldopa can be used in pregnancy if recommended by a doctor."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "methyldopa",
+      "concern": "Breastfeeding",
+      "consequence": "Appears in breast milk; postnatal use linked to low mood/depression in the mother (BUMPS).",
+      "action": "Weigh benefits against possible risks.",
+      "sourceWording": "requires that anticipated benefits be weighed against possible risks",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Methyldopa appears in breast milk. The use of the drug in breast-feeding mothers requires that anticipated benefits be weighed against possible risks."
+        },
+        {
+          "s": "bumps-methyldopa",
+          "q": "This is because taking methyldopa after the baby's birth can increase your chance of low mood and depression."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:interaction:maoi",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "methyldopa",
+      "other": "group:maoi",
+      "concern": "Monoamine oxidase inhibitors",
+      "consequence": "Listed contraindication; MAOIs also diminish the antihypertensive effect.",
+      "action": "Do not combine; stop MAOIs before starting methyldopa.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "On therapy with monoamine oxidase inhibitors (MAOIs)"
+        },
+        {
+          "s": "emc-100084",
+          "q": "Monoamine oxidase inhibitors should be discontinued before treatment with methyldopa."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "methyldopa",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Other antihypertensives",
+      "consequence": "Potentiation of antihypertensive action.",
+      "action": "Follow progress carefully; the doses of the other agents may need adjusting; after previous antihypertensive therapy start methyldopa at no more than 500 mg daily.",
+      "sourceWording": "The progress of patients should be carefully followed",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "When methyldopa is used with other antihypertensive drugs, potentiation of antihypertensive action may occur. The progress of patients should be carefully followed"
+        },
+        {
+          "s": "emc-100084",
+          "q": "When methyldopa is given to patients on other antihypertensives the dose of these agents may need to be adjusted to effect a smooth transition."
+        },
+        {
+          "s": "emc-100084",
+          "q": "methyldopa should be limited to an initial dose of not more than 500 mg daily"
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:interaction:thiazide",
+      "kind": "interaction",
+      "level": "info",
+      "med": "methyldopa",
+      "other": "group:thiazide",
+      "effect": "hypotension",
+      "concern": "Thiazide diuretics",
+      "consequence": "Enhanced antihypertensive effect.",
+      "action": "Be aware; follow progress as for other antihypertensives.",
+      "sourceWording": "enhances the antihypertensive effect",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Concomitant administration of methyldopa with thiazide diuretics and other antihypertensive agents, general anaesthetics and levodopa enhances the antihypertensive effect."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:interaction:verapamil",
+      "kind": "interaction",
+      "level": "info",
+      "med": "methyldopa",
+      "other": "verapamil",
+      "concern": "Verapamil",
+      "consequence": "Can intensify sinus bradycardia.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "can intensify sinus bradycardia",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Concurrent use of verapamil and methyldopa can intensify sinus bradycardia."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:interaction:iron",
+      "kind": "interaction",
+      "level": "info",
+      "med": "methyldopa",
+      "other": "ferrous-sulfate",
+      "effect": "reduced-absorption",
+      "concern": "Ferrous sulfate",
+      "consequence": "Reduced methyldopa bioavailability; may worsen blood pressure control.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "may adversely affect blood pressure control",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Several studies demonstrate a decrease in the bioavailability of methyldopa when it is ingested with ferrous sulphate or ferrous gluconate."
+        },
+        {
+          "s": "emc-100084",
+          "q": "This may adversely affect blood pressure control in patients treated with methyldopa."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:interaction:iron-folic-acid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "methyldopa",
+      "other": "ferrous-sulfate-folic-acid",
+      "effect": "reduced-absorption",
+      "concern": "Ferrous sulfate (with folic acid)",
+      "consequence": "Reduced methyldopa bioavailability; may worsen blood pressure control.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "may adversely affect blood pressure control",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "Several studies demonstrate a decrease in the bioavailability of methyldopa when it is ingested with ferrous sulphate or ferrous gluconate."
+        },
+        {
+          "s": "emc-100084",
+          "q": "This may adversely affect blood pressure control in patients treated with methyldopa."
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "methyldopa",
+      "other": "group:tricyclic-antidepressant",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "Antihypertensive effect may be diminished.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "may be diminished",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "The antihypertensive effect of methyldopa may be diminished by sympathomimetics, tricyclic antidepressants, phenothiazine derivatives and monoamine oxidase inhibitors (MAOIs)"
+        }
+      ]
+    },
+    {
+      "id": "methyldopa:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "methyldopa",
+      "other": "group:sympathomimetic",
+      "concern": "Sympathomimetics",
+      "consequence": "Antihypertensive effect may be diminished.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "may be diminished",
+      "src": [
+        {
+          "s": "emc-100084",
+          "q": "The antihypertensive effect of methyldopa may be diminished by sympathomimetics, tricyclic antidepressants, phenothiazine derivatives and monoamine oxidase inhibitors (MAOIs)"
+        }
+      ]
+    }
+  ]
+}

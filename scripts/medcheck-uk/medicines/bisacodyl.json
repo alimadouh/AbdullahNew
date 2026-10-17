@@ -1,0 +1,297 @@
+{
+  "id": "bisacodyl",
+  "name": "Bisacodyl",
+  "ingredients": ["bisacodyl"],
+  "className": "Stimulant (contact) laxative, diphenylmethane derivative",
+  "groups": ["laxative"],
+  "searchTerms": ["bisacodyl tablets", "bisacodyl suppositories"],
+  "formulations": [
+    {
+      "id": "bisacodyl-tab",
+      "label": "Gastro-resistant tablets 5 mg (12 years and over)",
+      "route": "oral",
+      "strengths": "5 mg",
+      "release": "gastro-resistant",
+      "note": "Enteric-coated: swallow whole; do not take with milk, antacids or proton pump inhibitors.",
+      "src": [
+        { "s": "emc-11689", "q": "Each tablet contains Bisacodyl 5mg." },
+        { "s": "emc-11689", "q": "They should be swallowed whole with an adequate amount of fluid." }
+      ],
+      "sourceIds": ["emc-11689"]
+    },
+    {
+      "id": "bisacodyl-tab-adult-pack",
+      "label": "Gastro-resistant tablets 5 mg (adult-labelled pack)",
+      "route": "oral",
+      "strengths": "5 mg",
+      "release": "gastro-resistant",
+      "note": "Same tablet; this UK SmPC (adult pack) says not for use under 18 years. Contains lactose and sucrose.",
+      "src": [
+        { "s": "emc-361", "q": "Each tablet contains Bisacodyl 5mg." },
+        { "s": "emc-361", "q": "Should not be used in children or adolescents under the age of 18 years." },
+        { "s": "emc-361", "q": "DULCOLAX Tablets contain a small amount of lactose (33.2 mg) and sucrose (23.4 mg) in each tablet." }
+      ],
+      "sourceIds": ["emc-361"]
+    },
+    {
+      "id": "bisacodyl-supp",
+      "label": "Suppositories 10 mg",
+      "route": "rectal",
+      "strengths": "10 mg",
+      "release": "n/a",
+      "src": [{ "s": "emc-11240", "q": "Smooth white torpedo shaped suppositories, each containing 10 mg of bisacodyl." }],
+      "sourceIds": ["emc-11240"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [{ "t": "Short-term relief of occasional constipation.", "src": [{ "s": "emc-11689", "q": "For the short-term relief of occasional constipation." }, { "s": "emc-11240", "q": "For the short-term relief of occasional constipation." }] }]
+    },
+    "restrictions": {
+      "items": [
+        { "t": "MHRA: use stimulant laxatives only if bulk-forming and osmotic laxatives are ineffective. Children under 12 should not use them without advice from a prescriber.", "src": [{ "s": "mhra-dsu-stimulant-laxatives-otc-2020", "q": "stimulant laxatives should only be used if other laxatives (bulk-forming and osmotic) are ineffective" }, { "s": "mhra-dsu-stimulant-laxatives-otc-2020", "q": "children younger than 12 years should not use stimulant laxatives without advice from a prescriber and clinical guidance should be followed" }] },
+        { "t": "Do not use daily for more than 5 days without investigating the cause of constipation.", "src": [{ "s": "emc-11689", "q": "As with all laxatives, bisacodyl should not be taken on a continuous daily basis for more than five days without investigating the cause of constipation." }] }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Tablets: adults (and children over 12 with the 12-plus product) 5-10 mg (1-2 tablets) daily before bedtime. Start with the lowest dose; do not exceed the maximum daily dose.",
+          "tag": "Constipation: tablets",
+          "formulations": ["bisacodyl-tab", "bisacodyl-tab-adult-pack"],
+          "src": [
+            { "s": "emc-11689", "q": "Adults and children over 12 years: 1 to 2 coated tablets (5 - 10 mg) daily before bedtime." },
+            { "s": "emc-361", "q": "Adults: 1 to 2 coated tablets (5-10 mg) daily before bedtime." },
+            { "s": "emc-11689", "q": "It is recommended to start with the lowest dose." }
+          ]
+        },
+        {
+          "t": "Suppository: adults and children over 12, one 10 mg suppository daily. Usually works in about 20 minutes (10-30 minutes).",
+          "tag": "Constipation: suppository",
+          "formulations": ["bisacodyl-supp"],
+          "src": [
+            { "s": "emc-11240", "q": "Adults and children over 12 years: one 10 mg suppository daily for immediate effect." },
+            { "s": "emc-11240", "q": "Suppositories are usually effective in about 20 minutes (usual range 10 to 30 minutes)." }
+          ]
+        },
+        {
+          "t": "Once regularity returns, reduce the dose; it can usually be stopped.",
+          "detail": true,
+          "src": [{ "s": "emc-11689", "q": "In the management of constipation, once regularity has been restarted dosage should be reduced and can usually be stopped." }]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        { "t": "12-plus tablets and suppositories: should not be used under 12 years.", "formulations": ["bisacodyl-tab", "bisacodyl-supp"], "src": [{ "s": "emc-11689", "q": "Should not be used in children and adolescents under the age of 12 years." }, { "s": "emc-11240", "q": "Should not be used in children and adolescents under the age of 12 years." }] },
+        { "t": "Adult-labelled tablet pack: should not be used under 18 years.", "formulations": ["bisacodyl-tab-adult-pack"], "src": [{ "s": "emc-361", "q": "Should not be used in children or adolescents under the age of 18 years." }] },
+        { "t": "MHRA: children under 12 should not use stimulant laxatives unless told to by their prescriber.", "src": [{ "s": "mhra-dsu-stimulant-laxatives-otc-2020", "q": "children younger than 12 years should not use stimulant laxatives unless told to do so by their prescriber" }] }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        { "t": "Ileus, intestinal obstruction, acute abdominal conditions including appendicitis, acute inflammatory bowel disease, severe abdominal pain with nausea and vomiting.", "src": [{ "s": "emc-11689", "q": "DULCOLAX is contraindicated in patients with ileus, intestinal obstruction, acute abdominal conditions including appendicitis, acute inflammatory bowel diseases, and severe abdominal pain associated with nausea and vomiting" }] },
+        { "t": "Severe dehydration; hypersensitivity to bisacodyl or any component.", "src": [{ "s": "emc-11689", "q": "DULCOLAX is also contraindicated in severe dehydration and in patients with known hypersensitivity to bisacodyl or any other component of the product." }] },
+        { "t": "Tablets: rare hereditary conditions incompatible with an excipient (contain lactose and sucrose).", "formulations": ["bisacodyl-tab", "bisacodyl-tab-adult-pack"], "src": [{ "s": "emc-11689", "q": "In case of rare hereditary conditions that may be incompatible with an excipient of the product" }] },
+        { "t": "Suppositories: should not be used with anal fissures or ulcerative proctitis with mucosal damage.", "formulations": ["bisacodyl-supp"], "src": [{ "s": "emc-11240", "q": "DULCOLAX Suppositories should not be used when anal fissures or ulcerative proctitis with mucosal damage are present." }] }
+      ]
+    },
+    "cautions": {
+      "items": [
+        { "t": "Avoid long-term everyday use; prolonged excessive use can cause fluid/electrolyte imbalance and hypokalaemia.", "src": [{ "s": "emc-11689", "q": "Long-term everyday use of stimulant laxatives may harm the intestinal function and should be avoided." }, { "s": "emc-11689", "q": "Prolonged excessive use may lead to fluid and electrolyte imbalance and hypokalaemia." }] },
+        { "t": "Where dehydration may be harmful (e.g. renal insufficiency, elderly) and fluid is lost: stop and restart only under medical supervision.", "src": [{ "s": "emc-11689", "q": "In patients suffering from fluid loss where dehydration may be harmful (e.g. renal insufficiency, elderly patients) bisacodyl should be discontinued and only be restarted under medical supervision." }] },
+        { "t": "Dizziness or syncope may occur (likely vasovagal or defaecation syncope).", "src": [{ "s": "emc-11240", "q": "Dizziness and / or syncope have been reported in patients who have taken bisacodyl." }] },
+        { "t": "Isolated reports of abdominal pain and bloody diarrhoea, some with colonic mucosal ischaemia. Mild self-limiting blood in stool may occur.", "src": [{ "s": "emc-11689", "q": "There have been isolated reports of abdominal pain and bloody diarrhoea occurring after taking bisacodyl. Some cases have been shown to be associated with colonic mucosal ischaemia." }, { "s": "emc-11689", "q": "Patients may experience haematochezia (blood in stool) that is generally mild and self-limiting." }] },
+        { "t": "Tablets: fructose or galactose intolerance, lactase deficiency, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take.", "formulations": ["bisacodyl-tab-adult-pack"], "src": [{ "s": "emc-361", "q": "Patients with rare hereditary problems of fructose intolerance, galactose intolerance, total lactase deficiency, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine." }] },
+        { "t": "Suppositories may cause pain and local irritation, especially with anal fissures or ulcerative proctitis.", "formulations": ["bisacodyl-supp"], "detail": true, "src": [{ "s": "emc-11240", "q": "The use of suppositories may lead to painful sensations and local irritation, especially in patients with anal fissures and ulcerative proctitis." }] }
+      ]
+    },
+    "interactions": {
+      "items": [
+        { "t": "Tablets: do not take with milk, antacids or proton pump inhibitors (enteric coating may dissolve early, causing dyspepsia and gastric irritation).", "formulations": ["bisacodyl-tab", "bisacodyl-tab-adult-pack"], "src": [{ "s": "emc-11689", "q": "The coated tablets should not be taken together with products which reduce the acidity of the upper gastrointestinal tract, such as milk, antacids or proton pump inhibitors" }, { "s": "emc-11689", "q": "The concomitant use of antacids and milk products may reduce the resistance of the coating of the tablets and result in dyspepsia and gastric irritation." }] },
+        { "t": "Diuretics or corticosteroids: increased risk of electrolyte imbalance if excessive bisacodyl doses are taken; electrolyte imbalance may increase sensitivity to cardiac glycosides.", "src": [{ "s": "emc-11689", "q": "The concomitant use of diuretics or adreno-corticosteroids may increase the risk of electrolyte imbalance if excessive doses of DULCOLAX are taken." }, { "s": "emc-11689", "q": "Electrolyte imbalance may lead to increased sensitivity to cardiac glycosides." }] },
+        { "t": "Other laxatives may enhance GI side effects.", "src": [{ "s": "emc-11689", "q": "The concomitant use of other laxatives may enhance the gastrointestinal side effects of DULCOLAX." }] }
+      ]
+    },
+    "renal": {
+      "items": [{ "t": "No dose advice. In renal insufficiency with fluid loss, stop and restart only under medical supervision.", "src": [{ "s": "emc-11689", "q": "(e.g. renal insufficiency, elderly patients) bisacodyl should be discontinued and only be restarted under medical supervision." }] }]
+    },
+    "hepatic": { "status": "not-stated", "note": "No hepatic impairment advice in the UK SmPCs (tablets and suppositories)." },
+    "pregnancy": {
+      "items": [
+        { "t": "SmPC: no evidence of harm from long experience, but should not be taken in pregnancy (especially first trimester) unless expected benefit outweighs risk, and only on medical advice.", "tag": "SmPC", "src": [{ "s": "emc-11689", "q": "Long experience has shown no evidence of undesirable or damaging effects during pregnancy." }, { "s": "emc-11689", "q": "DULCOLAX should not be taken in pregnancy, especially the first trimester, and during breast feeding unless the expected benefit is thought to outweigh any possible risk and only on medical advice." }] },
+        { "t": "BUMPS: stimulant laxatives such as bisacodyl are tried only when other laxatives have not helped; concern about womb contractions has not been seen in pregnant women.", "tag": "BUMPS", "src": [{ "s": "bumps-constipation", "q": "Stimulant laxatives only tend to be tried when those above have not helped." }, { "s": "bumps-constipation", "q": "However, this has not been observed in pregnant women." }] }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        { "t": "SmPC: active moiety not found in milk, but should not be taken while breastfeeding unless expected benefit outweighs risk, and only on medical advice.", "tag": "SmPC", "src": [{ "s": "emc-11689", "q": "Clinical data show that neither the active moiety of bisacodyl" }, { "s": "emc-11689", "q": "DULCOLAX should not be taken in pregnancy, especially the first trimester, and during breast feeding unless the expected benefit is thought to outweigh any possible risk and only on medical advice." }] },
+        { "t": "SPS: can be used during breastfeeding; as a precaution monitor the infant for diarrhoea or irritability.", "tag": "SPS", "src": [{ "s": "sps-laxatives-breastfeeding", "q": "Bisacodyl can be used during breastfeeding." }, { "s": "sps-laxatives-breastfeeding", "q": "As a precaution monitor the infant for diarrhoea or irritability." }] }
+      ]
+    },
+    "reproductive": { "status": "not-stated", "note": "UK SmPCs: no studies on human fertility." },
+    "adverseCommon": {
+      "items": [
+        { "t": "Common: abdominal cramps, abdominal pain, diarrhoea, nausea.", "src": [{ "s": "emc-11689", "q": "Common: abdominal cramps, abdominal pain, diarrhoea and nausea." }] },
+        { "t": "Uncommon: dizziness, blood in stool, vomiting, abdominal or anorectal discomfort.", "detail": true, "src": [{ "s": "emc-11689", "q": "Uncommon: haematochezia (blood in stool), vomiting, abdominal discomfort, anorectal discomfort." }, { "s": "emc-11689", "q": "Nervous system disorders Uncommon: dizziness." }] }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        { "t": "Rare: anaphylactic reactions, angioedema, hypersensitivity.", "src": [{ "s": "emc-11689", "q": "Rare: anaphylactic reactions, angioedema, hypersensitivity." }] },
+        { "t": "Rare: colitis including ischaemic colitis; syncope; dehydration.", "src": [{ "s": "emc-11689", "q": "Rare: colitis including ischaemic colitis." }, { "s": "emc-11689", "q": "Rare: Syncope." }, { "s": "emc-11689", "q": "Rare: dehydration." }] }
+      ]
+    },
+    "monitoring": {
+      "items": [{ "t": "Needed every day or for more than 5 days: investigate the cause of constipation.", "tag": "stop", "src": [{ "s": "emc-11689", "q": "If laxatives are needed every day the cause of the constipation should be investigated." }] }]
+    },
+    "administration": {
+      "items": [
+        { "t": "Tablets: take at night for a bowel movement next morning; swallow whole with fluid.", "formulations": ["bisacodyl-tab", "bisacodyl-tab-adult-pack"], "src": [{ "s": "emc-11689", "q": "It is recommended to take the coated tablets at night to have a bowel movement the following morning." }] },
+        { "t": "Suppositories: unwrap and insert into the rectum pointed end first.", "formulations": ["bisacodyl-supp"], "src": [{ "s": "emc-11240", "q": "They should be unwrapped and inserted into the rectum pointed end first." }] }
+      ]
+    },
+    "counselling": {
+      "items": [
+        { "t": "Dizziness or fainting can occur with abdominal cramps: avoid driving or machinery if cramps occur.", "src": [{ "s": "emc-11689", "q": "If patients experience abdominal spasm they should avoid potentially hazardous tasks such as driving or operating machinery." }] },
+        { "t": "Does not help with weight loss; overuse can be harmful.", "src": [{ "s": "emc-11689", "q": "Stimulant laxatives (including bisacodyl) do not help with weight loss" }] }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "bisacodyl:allergy:own", "kind": "allergy", "level": "contraindicated", "med": "bisacodyl", "allergen": ["bisacodyl"],
+      "concern": "Bisacodyl hypersensitivity", "consequence": "Hypersensitivity, including rare anaphylaxis.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "contraindicated ... in patients with known hypersensitivity to bisacodyl",
+      "src": [{ "s": "emc-11689", "q": "DULCOLAX is also contraindicated in severe dehydration and in patients with known hypersensitivity to bisacodyl or any other component of the product." }]
+    },
+    {
+      "id": "bisacodyl:condition:gi-obstruction", "kind": "condition", "level": "contraindicated", "med": "bisacodyl", "condition": "paralytic-ileus-gi-obstruction",
+      "concern": "Ileus or intestinal obstruction", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "is contraindicated in patients with ileus, intestinal obstruction",
+      "src": [{ "s": "emc-11689", "q": "DULCOLAX is contraindicated in patients with ileus, intestinal obstruction" }]
+    },
+    {
+      "id": "bisacodyl:condition:acute-abdomen", "kind": "condition", "level": "contraindicated", "med": "bisacodyl", "condition": "acute-abdomen",
+      "concern": "Acute abdominal condition (e.g. appendicitis) or severe abdominal pain with nausea and vomiting", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "is contraindicated",
+      "src": [{ "s": "emc-11689", "q": "acute abdominal conditions including appendicitis, acute inflammatory bowel diseases, and severe abdominal pain associated with nausea and vomiting" }]
+    },
+    {
+      "id": "bisacodyl:condition:ibd", "kind": "condition", "level": "contraindicated", "med": "bisacodyl", "condition": "inflammatory-bowel-disease",
+      "concern": "Acute inflammatory bowel disease", "consequence": "Listed as a contraindication when acute.", "action": "Do not use in acute inflammatory bowel disease (SmPC 4.3).",
+      "sourceWording": "is contraindicated",
+      "src": [{ "s": "emc-11689", "q": "acute abdominal conditions including appendicitis, acute inflammatory bowel diseases" }]
+    },
+    {
+      "id": "bisacodyl:condition:dehydration", "kind": "condition", "level": "contraindicated", "med": "bisacodyl", "condition": "dehydration-hypovolaemia",
+      "concern": "Severe dehydration", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "is also contraindicated in severe dehydration",
+      "src": [{ "s": "emc-11689", "q": "DULCOLAX is also contraindicated in severe dehydration" }]
+    },
+    {
+      "id": "bisacodyl:condition:anal-fissure", "kind": "condition", "level": "contraindicated", "med": "bisacodyl", "formulations": ["bisacodyl-supp"], "condition": "anal-fissure-ulcerative-proctitis",
+      "concern": "Anal fissure or ulcerative proctitis with mucosal damage (suppository)", "consequence": "Pain and local irritation.", "action": "Do not use suppositories (SmPC 4.3, worded 'should not be used').",
+      "sourceWording": "4.3: should not be used",
+      "src": [{ "s": "emc-11240", "q": "DULCOLAX Suppositories should not be used when anal fissures or ulcerative proctitis with mucosal damage are present." }]
+    },
+    {
+      "id": "bisacodyl:condition:proctitis", "kind": "condition", "level": "contraindicated", "med": "bisacodyl", "formulations": ["bisacodyl-supp"], "condition": "proctitis",
+      "concern": "Ulcerative proctitis with mucosal damage (suppository)", "consequence": "Pain and local irritation.", "action": "Do not use suppositories (SmPC 4.3, worded 'should not be used').",
+      "sourceWording": "4.3: should not be used",
+      "src": [{ "s": "emc-11240", "q": "DULCOLAX Suppositories should not be used when anal fissures or ulcerative proctitis with mucosal damage are present." }]
+    },
+    {
+      "id": "bisacodyl:condition:sugar-intolerance", "kind": "condition", "level": "contraindicated", "med": "bisacodyl", "formulations": ["bisacodyl-tab", "bisacodyl-tab-adult-pack"], "condition": "hereditary-sugar-intolerance",
+      "concern": "Hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency (tablets)", "consequence": "Tablets contain lactose and sucrose.", "action": "Do not use the tablets (SmPC 4.3: excipient-incompatible hereditary conditions).",
+      "sourceWording": "the use of the product is contraindicated",
+      "src": [{ "s": "emc-11689", "q": "In case of rare hereditary conditions that may be incompatible with an excipient of the product" }, { "s": "emc-361", "q": "Patients with rare hereditary problems of fructose intolerance, galactose intolerance, total lactase deficiency, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine." }]
+    },
+    {
+      "id": "bisacodyl:condition:galactose-intolerance", "kind": "condition", "level": "contraindicated", "med": "bisacodyl", "formulations": ["bisacodyl-tab", "bisacodyl-tab-adult-pack"], "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance or total lactase deficiency (tablets)", "consequence": "Tablets contain lactose.", "action": "Do not use the tablets (SmPC 4.3: excipient-incompatible hereditary conditions).",
+      "sourceWording": "the use of the product is contraindicated",
+      "src": [{ "s": "emc-11689", "q": "In case of rare hereditary conditions that may be incompatible with an excipient of the product" }, { "s": "emc-361", "q": "Patients with rare hereditary problems of fructose intolerance, galactose intolerance, total lactase deficiency, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine." }]
+    },
+    {
+      "id": "bisacodyl:condition:hfi", "kind": "condition", "level": "contraindicated", "med": "bisacodyl", "formulations": ["bisacodyl-tab", "bisacodyl-tab-adult-pack"], "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance (tablets)", "consequence": "Tablets contain sucrose.", "action": "Do not use the tablets (SmPC 4.3: excipient-incompatible hereditary conditions).",
+      "sourceWording": "the use of the product is contraindicated",
+      "src": [{ "s": "emc-11689", "q": "In case of rare hereditary conditions that may be incompatible with an excipient of the product" }, { "s": "emc-361", "q": "Patients with rare hereditary problems of fructose intolerance, galactose intolerance, total lactase deficiency, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine." }]
+    },
+    {
+      "id": "bisacodyl:condition:renal", "kind": "condition", "level": "caution", "med": "bisacodyl", "condition": "renal-impairment",
+      "concern": "Renal insufficiency (fluid loss/dehydration risk)", "consequence": "Dehydration may be harmful.", "action": "If fluid loss occurs, stop and restart only under medical supervision.",
+      "sourceWording": "should be discontinued and only be restarted under medical supervision",
+      "src": [{ "s": "emc-11689", "q": "In patients suffering from fluid loss where dehydration may be harmful (e.g. renal insufficiency, elderly patients) bisacodyl should be discontinued and only be restarted under medical supervision." }]
+    },
+    {
+      "id": "bisacodyl:interaction:antacids", "kind": "interaction", "level": "avoid", "med": "bisacodyl", "formulations": ["bisacodyl-tab", "bisacodyl-tab-adult-pack"], "other": "group:antacid",
+      "concern": "Antacids with bisacodyl tablets", "consequence": "Enteric coating may dissolve early: dyspepsia and gastric irritation.", "action": "Do not take the tablets together with antacids.",
+      "sourceWording": "should not be taken together with",
+      "src": [{ "s": "emc-11689", "q": "The coated tablets should not be taken together with products which reduce the acidity of the upper gastrointestinal tract, such as milk, antacids or proton pump inhibitors" }, { "s": "emc-11689", "q": "The concomitant use of antacids and milk products may reduce the resistance of the coating of the tablets and result in dyspepsia and gastric irritation." }]
+    },
+    {
+      "id": "bisacodyl:interaction:ppi", "kind": "interaction", "level": "avoid", "med": "bisacodyl", "formulations": ["bisacodyl-tab", "bisacodyl-tab-adult-pack"], "other": "group:ppi",
+      "concern": "Proton pump inhibitors with bisacodyl tablets", "consequence": "Reduced gastric acidity may dissolve the enteric coating prematurely.", "action": "Do not take the tablets together with proton pump inhibitors.",
+      "sourceWording": "should not be taken together with",
+      "src": [{ "s": "emc-11689", "q": "The coated tablets should not be taken together with products which reduce the acidity of the upper gastrointestinal tract, such as milk, antacids or proton pump inhibitors" }]
+    },
+    {
+      "id": "bisacodyl:interaction:diuretics", "kind": "interaction", "level": "info", "med": "bisacodyl", "other": "group:diuretic",
+      "concern": "Diuretics with bisacodyl", "consequence": "May increase the risk of electrolyte imbalance if excessive bisacodyl doses are taken.", "action": "No specific action stated in the SmPC; the risk applies when excessive bisacodyl doses are taken.",
+      "sourceWording": "may increase the risk of electrolyte imbalance if excessive doses",
+      "src": [{ "s": "emc-11689", "q": "The concomitant use of diuretics or adreno-corticosteroids may increase the risk of electrolyte imbalance if excessive doses of DULCOLAX are taken." }]
+    },
+    {
+      "id": "bisacodyl:interaction:prednisolone", "kind": "interaction", "level": "info", "med": "bisacodyl", "other": "prednisolone",
+      "concern": "Prednisolone (systemic corticosteroid) with bisacodyl", "consequence": "May increase the risk of electrolyte imbalance if excessive bisacodyl doses are taken.", "action": "No specific action stated in the SmPC; the risk applies when excessive bisacodyl doses are taken.",
+      "sourceWording": "may increase the risk of electrolyte imbalance if excessive doses",
+      "src": [{ "s": "emc-11689", "q": "The concomitant use of diuretics or adreno-corticosteroids may increase the risk of electrolyte imbalance if excessive doses of DULCOLAX are taken." }]
+    },
+    {
+      "id": "bisacodyl:interaction:dexamethasone", "kind": "interaction", "level": "info", "med": "bisacodyl", "other": "dexamethasone",
+      "concern": "Dexamethasone (systemic corticosteroid) with bisacodyl", "consequence": "May increase the risk of electrolyte imbalance if excessive bisacodyl doses are taken.", "action": "No specific action stated in the SmPC; the risk applies when excessive bisacodyl doses are taken.",
+      "sourceWording": "may increase the risk of electrolyte imbalance if excessive doses",
+      "src": [{ "s": "emc-11689", "q": "The concomitant use of diuretics or adreno-corticosteroids may increase the risk of electrolyte imbalance if excessive doses of DULCOLAX are taken." }]
+    },
+    {
+      "id": "bisacodyl:interaction:laxatives", "kind": "interaction", "level": "info", "med": "bisacodyl", "other": "group:laxative",
+      "concern": "Other laxatives with bisacodyl", "consequence": "May enhance gastrointestinal side effects.", "action": "Be aware of additive GI effects.",
+      "sourceWording": "may enhance the gastrointestinal side effects",
+      "src": [{ "s": "emc-11689", "q": "The concomitant use of other laxatives may enhance the gastrointestinal side effects of DULCOLAX." }]
+    },
+    {
+      "id": "bisacodyl:age:under-12", "kind": "age", "level": "avoid", "med": "bisacodyl", "formulations": ["bisacodyl-tab", "bisacodyl-supp"], "age": { "minYears": 0, "maxYears": 12 },
+      "concern": "Child under 12 years", "consequence": "Not licensed for this age.", "action": "Should not be used under 12 (MHRA: not without advice from a prescriber).",
+      "sourceWording": "Should not be used in children and adolescents under the age of 12 years",
+      "src": [{ "s": "emc-11689", "q": "Should not be used in children and adolescents under the age of 12 years." }, { "s": "emc-11240", "q": "Should not be used in children and adolescents under the age of 12 years." }, { "s": "mhra-dsu-stimulant-laxatives-otc-2020", "q": "children younger than 12 years should not use stimulant laxatives without advice from a prescriber" }]
+    },
+    {
+      "id": "bisacodyl:age:adult-pack-under-18", "kind": "age", "level": "avoid", "med": "bisacodyl", "formulations": ["bisacodyl-tab-adult-pack"], "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years (adult-labelled tablet pack)", "consequence": "This pack's SmPC is for adults only; the 12-plus tablet SmPC allows 12 years and over.", "action": "Should not be used under 18 with this pack.",
+      "sourceWording": "Should not be used in children or adolescents under the age of 18 years",
+      "src": [{ "s": "emc-361", "q": "Should not be used in children or adolescents under the age of 18 years." }]
+    },
+    {
+      "id": "bisacodyl:pregnancy", "kind": "pregnancy", "level": "caution", "med": "bisacodyl",
+      "concern": "Pregnancy (especially first trimester)", "consequence": "No adequate studies; long experience shows no evidence of harm.", "action": "Use only if expected benefit outweighs risk, and only on medical advice.",
+      "sourceWording": "should not be taken in pregnancy ... unless the expected benefit is thought to outweigh any possible risk",
+      "src": [{ "s": "emc-11689", "q": "Long experience has shown no evidence of undesirable or damaging effects during pregnancy." }, { "s": "emc-11689", "q": "DULCOLAX should not be taken in pregnancy, especially the first trimester, and during breast feeding unless the expected benefit is thought to outweigh any possible risk and only on medical advice." }]
+    },
+    {
+      "id": "bisacodyl:breastfeeding", "kind": "breastfeeding", "level": "caution", "med": "bisacodyl",
+      "concern": "Breastfeeding (SmPC)", "consequence": "Active moiety not detected in milk.", "action": "SmPC: use only if expected benefit outweighs risk, and only on medical advice.",
+      "sourceWording": "should not be taken ... during breast feeding unless the expected benefit is thought to outweigh any possible risk",
+      "src": [{ "s": "emc-11689", "q": "Clinical data show that neither the active moiety of bisacodyl" }, { "s": "emc-11689", "q": "DULCOLAX should not be taken in pregnancy, especially the first trimester, and during breast feeding unless the expected benefit is thought to outweigh any possible risk and only on medical advice." }]
+    },
+    {
+      "id": "bisacodyl:breastfeeding:sps", "kind": "breastfeeding", "level": "info", "med": "bisacodyl",
+      "concern": "Breastfeeding (SPS)", "consequence": "SPS: poorly absorbed from oral or rectal forms.", "action": "SPS: can be used during breastfeeding; as a precaution monitor the infant for diarrhoea or irritability.",
+      "sourceWording": "can be used during breastfeeding",
+      "src": [{ "s": "sps-laxatives-breastfeeding", "q": "Bisacodyl can be used during breastfeeding." }, { "s": "sps-laxatives-breastfeeding", "q": "Bisacodyl is poorly absorbed from both oral or rectal formulations" }, { "s": "sps-laxatives-breastfeeding", "q": "As a precaution monitor the infant for diarrhoea or irritability." }]
+    }
+  ]
+}

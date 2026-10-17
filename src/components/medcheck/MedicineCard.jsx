@@ -86,8 +86,8 @@ function Row({ k, label, section, formId, num, findings, weightKg, ageYears }) {
             ))}
           </ul>
         )}
-        {section?.status === 'not-stated' || !items.length ? (
-          <p className="italic text-muted-foreground">{section?.status === 'not-stated' ? `Not stated in the UK sources checked.${section.note ? ' ' + section.note : ''}` : 'Nothing stated for this formulation.'}</p>
+        {section?.status === 'not-stated' || section?.status === 'not-available' || !items.length ? (
+          <p className="italic text-muted-foreground">{section?.status === 'not-stated' ? `Not stated in the UK sources checked.${section.note ? ' ' + section.note : ''}` : section?.status === 'not-available' ? 'No UK product information found.' : 'Nothing stated for this formulation.'}</p>
         ) : (
           <ul className="space-y-1">{shown.map((it, i) => <Item key={i} it={it} num={num} weightKg={weightKg} ageYears={ageYears} />)}</ul>
         )}
@@ -144,7 +144,9 @@ export default function MedicineCard({ kb, entry, findings, onRemove, patient })
             {m.brandPrescribing && <p className="mt-1 rounded-md border border-violet-300 bg-violet-50 px-2 py-1 text-xs font-medium text-violet-900 dark:bg-violet-950/40 dark:text-violet-200">Brand prescribing: {m.brandPrescribing.t}<Refs src={m.brandPrescribing.src} num={num} /></p>}
           </div>
         </div>
-        {ROWS.map(([k, label]) => <Row key={k} k={k} label={label} section={m.sections[k]} formId={f.id} num={num} findings={byRow(k)} weightKg={patient.weightKg} ageYears={patient.ageYears} />)}
+        {f.availability === 'no-uk-product' || m.availability?.status === 'no-uk-product'
+          ? <p className="border-t px-3 py-3 text-[13px] italic text-muted-foreground">No UK product information was found for this {f.availability === 'no-uk-product' ? 'form' : 'product'}, so it is not checked.{(f.note || m.availability?.note) ? ` ${f.availability === 'no-uk-product' ? f.note : m.availability.note}` : ''}</p>
+          : ROWS.map(([k, label]) => <Row key={k} k={k} label={label} section={m.sections[k]} formId={f.id} num={num} findings={byRow(k)} weightKg={patient.weightKg} ageYears={patient.ageYears} />)}
       </div>
 
       <footer className="border-t bg-muted/30 px-3 py-2.5 text-[11px]">

@@ -1,0 +1,1098 @@
+{
+  "id": "prednisolone",
+  "name": "Prednisolone (oral)",
+  "ingredients": ["prednisolone"],
+  "className": "Systemic corticosteroid (glucocorticoid)",
+  "groups": ["corticosteroid"],
+  "searchTerms": ["prednisolone sodium phosphate"],
+  "formulations": [
+    {
+      "id": "prednisolone-tab5",
+      "label": "Tablets 5 mg",
+      "route": "oral",
+      "strengths": "5 mg",
+      "release": "immediate",
+      "src": [
+        { "s": "emc-14313", "q": "Each tablet contains prednisolone 5 mg" }
+      ],
+      "sourceIds": ["emc-14313"]
+    },
+    {
+      "id": "prednisolone-tab20",
+      "label": "Tablets 20 mg",
+      "route": "oral",
+      "strengths": "20 mg",
+      "release": "immediate",
+      "note": "UK SPC found on MHRA Products (not on emc).",
+      "src": [
+        { "s": "mhra-pl00142-0844-spc", "q": "Each tablet contains 20 mg prednisolone." }
+      ],
+      "sourceIds": ["mhra-pl00142-0844-spc"]
+    },
+    {
+      "id": "prednisolone-oral-sol",
+      "label": "Oral solution / syrup",
+      "route": "oral",
+      "strengths": "10 mg/mL (UK SmPC); clinic syrup 15 mg/5 mL",
+      "release": "n/a",
+      "note": "The clinic syrup is 15 mg/5 mL (3 mg/mL). No UK SmPC at that strength was found (emc or MHRA Products); this entry uses the UK 10 mg/mL oral solution SmPC. Doses below are in mg. The mL volumes in the UK SmPC do not apply to the clinic syrup: 10 mg is 1 mL of the UK solution but about 3.3 mL of the clinic 15 mg/5 mL syrup. Excipient warnings of the UK solution may not apply to the clinic syrup.",
+      "src": [
+        { "s": "emc-101838", "q": "Each 1ml of solution contains 10mg of prednisolone (as prednisolone sodium phosphate)." }
+      ],
+      "sourceIds": ["emc-101838"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Conditions likely to benefit from short- or long-term glucocorticoid therapy, e.g. severe allergy and asthma, collagen and rheumatic disorders, severe skin disease, inflammatory bowel disease, sarcoidosis, blood disorders, leukaemia/lymphoma, nephrotic syndrome.",
+          "src": [
+            { "s": "emc-14313", "q": "Prednisolone is indicated in the management of all conditions deemed likely to benefit from short- or long-term glucocorticoid therapy." },
+            { "s": "emc-101838", "q": "Some of the principal indications are: bronchial asthma, severe hypersensitivity reactions, anaphylaxis; rheumatoid arthritis, systemic lupus erythematosus" }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the UK SmPCs (5 mg tablets, 20 mg tablets, 10 mg/mL oral solution) or SPS pages accessed."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults: lowest effective dose for the shortest time. Initial dose 5-60 mg daily depending on the condition (divided doses usually used); reduce gradually to the lowest maintenance dose.",
+          "tag": "General",
+          "src": [
+            { "s": "emc-14313", "q": "The lowest effective dose should be used for the minimum period in order to minimise side effects." },
+            { "s": "emc-14313", "q": "The initial dosage of Prednisolone Tablets may vary from 5mg to 60mg or more depending on the disorder being treated." }
+          ]
+        },
+        {
+          "t": "Guide doses: allergic and skin disorders 5-15 mg daily; collagenosis 20-30 mg daily; rheumatoid arthritis 10-15 mg daily initially (oral solution SmPC: 7.5-10 mg daily); blood disorders and lymphoma 15-60 mg daily.",
+          "tag": "By condition",
+          "src": [
+            { "s": "emc-14313", "q": "Allergic and skin disorders : Initial doses of 5-15 mg daily are commonly adequate. Collagenosis : Initial doses of 20-30 mg daily are frequently effective." },
+            { "s": "emc-14313", "q": "Rheumatoid arthritis : The usual initial dose is 10-15 mg daily." },
+            { "s": "emc-14313", "q": "Blood disorders and lymphoma : An initial daily dose of 15-60 mg is often necessary" },
+            { "s": "emc-101838", "q": "Rheumatoid arthritis: 7.5mg (0.75ml) to 10mg (1ml) daily." }
+          ]
+        },
+        {
+          "t": "Oral solution SmPC, short-term treatment: 20-30 mg daily for the first few days, then reduce by 2.5-5 mg every 2-5 days. Most other conditions: 10-100 mg daily for 1-3 weeks, then reduce to the minimum effective dose.",
+          "tag": "Short courses",
+          "src": [
+            { "s": "emc-101838", "q": "Short-term treatment: 20mg (2ml) to 30mg (3ml) daily for the first few days, subsequently reducing the daily dosage by 2.5mg (0.25ml) or 5mg (0.5ml) every two to five days" },
+            { "s": "emc-101838", "q": "Most other conditions: 10mg (1ml) to 100mg (10ml) daily for one to three weeks, then reducing to the minimum effective dosage." }
+          ]
+        },
+        {
+          "t": "Withdrawal: after more than about 7.5 mg daily for over 3 weeks, do not stop abruptly. Courses of up to 40 mg daily for up to 3 weeks can usually be stopped abruptly if relapse is unlikely, except in at-risk groups (repeated courses, recent long-term therapy, other causes of adrenal insufficiency, more than 40 mg daily, evening doses).",
+          "tag": "Stopping",
+          "src": [
+            { "s": "emc-14313", "q": "In patients who have received more than physiological dose for systemic corticosteroids (approximately 7.5mg prednisolone or equivalent) for greater than 3 weeks, withdrawal should not be abrupt." },
+            { "s": "emc-14313", "q": "Abrupt withdrawal of doses of up to 40mg daily of prednisolone, or equivalent for 3 weeks is unlikely to lead to clinically relevant HPA-axis suppression, in the majority of patients." }
+          ]
+        },
+        {
+          "t": "During prolonged therapy, intercurrent illness, trauma or surgery need a temporary dose increase.",
+          "tag": "Stress dosing",
+          "detail": true,
+          "src": [
+            { "s": "emc-14313", "q": "During prolonged therapy any intercurrent illness, trauma or surgical procedure will require a temporary increase in dosage" }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Use only when specifically indicated, at the minimum dose for the shortest time; alternate-day dosing preferred. Fractions of the adult dose may be used (e.g. 75% at 12 years, 50% at 7 years, 25% at 1 year).",
+          "src": [
+            { "s": "emc-14313", "q": "Prednisolone should be used only when specifically indicated, in a minimum dosage and for the shortest possible time." },
+            { "s": "emc-101838", "q": "Fractions of the adult dosage may be used (e.g. 75% at 12 years, 50% at 7 years and 25% at 1 year)" }
+          ]
+        },
+        {
+          "t": "Acute asthma (oral solution SmPC): over 5 years 30-40 mg; 2-5 years 20 mg; under 2 years (hospital) 10 mg, for up to 3 days; no taper needed.",
+          "tag": "Acute asthma",
+          "src": [
+            { "s": "emc-101838", "q": "For children over 5 years use a dose of 30-40mg (3-4ml) prednisolone. For children aged 2-5 years use a dose of 20mg (2ml) prednisolone." },
+            { "s": "emc-101838", "q": "at a dose of 10mg (1ml) for up to three days" },
+            { "s": "emc-101838", "q": "There is no need to taper the dose at the end of treatment." }
+          ]
+        },
+        {
+          "t": "Acute asthma in children already on maintenance steroid tablets: 2 mg/kg, maximum 60 mg.",
+          "tag": "Acute asthma, on maintenance steroids",
+          "calc": { "mgPerKg": 2, "per": "dose", "maxMg": 60, "maxPer": "dose", "of": "prednisolone" },
+          "src": [
+            { "s": "emc-101838", "q": "Those already receiving maintenance steroid tablets should receive 2mg/kg prednisolone up to a maximum dose of 60mg (6ml)." }
+          ]
+        },
+        {
+          "t": "Steroids cause growth retardation, which may be irreversible: avoid long-term pharmacological doses; monitor growth.",
+          "src": [
+            { "s": "emc-14313", "q": "Corticosteroids cause growth retardation in infancy, childhood and adolescence, which may be irreversible and therefore long-term administration of pharmacological doses should be avoided." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "All UK SmPCs: hypersensitivity to prednisolone or any excipient.",
+          "src": [
+            { "s": "emc-14313", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1. Systemic infections unless specific anti-infective therapy is employed." }
+          ]
+        },
+        {
+          "t": "5 mg tablet and oral solution SmPCs: systemic infection unless specific anti-infective treatment is given. 5 mg tablet SmPC: ocular herpes simplex (risk of perforation).",
+          "formulations": ["prednisolone-tab5", "prednisolone-oral-sol"],
+          "src": [
+            { "s": "emc-14313", "q": "Patients with ocular herpes simplex due to the possibility of perforation." },
+            { "s": "emc-101838", "q": "Systemic infections, unless specific anti-infective therapy is employed. Live virus immunisation." }
+          ]
+        },
+        {
+          "t": "Oral solution SmPC: live virus immunisation. 20 mg tablet SPC: systemic fungal infection; live vaccines in patients on immunosuppressive doses. The 20 mg SPC adds that in life-saving situations the contraindications generally do not apply.",
+          "formulations": ["prednisolone-oral-sol", "prednisolone-tab20"],
+          "src": [
+            { "s": "mhra-pl00142-0844-spc", "q": "Systemic fungal infection. Administration of live vaccines is contraindicated in patients receiving corticosteroids in immunosuppressive doses." },
+            { "s": "mhra-pl00142-0844-spc", "q": "In those conditions when treatment with prednisolone can save lives, none of the contraindications generally apply." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Caution and frequent monitoring in: diabetes (or family history), glaucoma (or family history), hypertension or heart failure, liver failure, epilepsy, osteoporosis, severe affective disorder or previous steroid psychosis, peptic ulcer, previous steroid myopathy, thromboembolic disorders, renal insufficiency, tuberculosis history, recent myocardial infarction.",
+          "src": [
+            { "s": "emc-14313", "q": "Caution is necessary when corticosteroids, including prednisolone, are prescribed to patients with the following conditions and frequent patient monitoring is necessary: Diabetes mellitus or in those with a family history of diabetes." },
+            { "s": "emc-14313", "q": "Peptic ulceration. Previous steroid myopathy." },
+            { "s": "emc-14313", "q": "Renal insufficiency. Tuberculosis: Those with a history of, or X-ray changes characteristic of tuberculosis." }
+          ]
+        },
+        {
+          "t": "Psychiatric reactions (mood change, depression, suicidal thoughts, psychosis) are common and usually start within days or weeks; patients/carers should seek advice if worrying symptoms occur. Particular care with a personal or first-degree family history of severe affective disorder.",
+          "src": [
+            { "s": "emc-14313", "q": "Patients/carers should be encouraged to seek medical advice if worrying psychological symptoms develop, especially if depressed mood or suicidal ideation is suspected." },
+            { "s": "emc-14313", "q": "Particular care is required when considering the use of systemic corticosteroids in patients with existing or previous history of severe affective disorders in themselves or in their first degree relatives." }
+          ]
+        },
+        {
+          "t": "Infections may be masked. Chickenpox and measles can be severe or fatal: non-immune exposed patients need urgent advice (VZIG within 10 days for chickenpox exposure). Do not stop steroids if chickenpox develops.",
+          "src": [
+            { "s": "emc-14313", "q": "Chickenpox is of particular concern since this normally minor illness may be fatal in immunosuppressed patients." },
+            { "s": "emc-14313", "q": "this should be given within 10 days of exposure to chickenpox" },
+            { "s": "emc-14313", "q": "Corticosteroids should not be stopped and the dose may need to be increased." }
+          ]
+        },
+        {
+          "t": "Systemic sclerosis: increased risk of scleroderma renal crisis at 15 mg/day or more; check blood pressure and serum creatinine routinely.",
+          "src": [
+            { "s": "emc-14313", "q": "Caution is required in patients with systemic sclerosis because of an increased incidence of (possibly fatal) scleroderma renal crisis with hypertension and decreased urinary output observed with a daily dose of 15 mg or more prednisolone." }
+          ]
+        },
+        {
+          "t": "Myasthenia gravis on anticholinesterases: use cautiously. Hypothyroidism or chronic liver disease: effect may be enhanced. Phaeochromocytoma (20 mg SPC): only after risk/benefit evaluation.",
+          "detail": true,
+          "src": [
+            { "s": "emc-14313", "q": "Glucocorticoids should be used cautiously in patients with myasthenia gravis receiving anticholinesterase therapy." },
+            { "s": "emc-14313", "q": "The effect of corticosteroids may be enhanced in patients with hypothyroidism in those with chronic liver disease with impaired hepatic function." },
+            { "s": "mhra-pl00142-0844-spc", "q": "Corticosteroids should only be administered to patients with suspected or identified pheochromocytoma following consideration of individual risk/benefit." }
+          ]
+        },
+        {
+          "t": "Blurred vision or visual disturbance: consider ophthalmology referral (cataract, glaucoma, central serous chorioretinopathy). Elderly: closer supervision.",
+          "detail": true,
+          "src": [
+            { "s": "emc-14313", "q": "If a patient presents with symptoms such as blurred vision or other visual disturbances, the patient should be considered for referral to an ophthalmologist" },
+            { "s": "emc-14313", "q": "Close clinical supervision is required to avoid life threatening reactions." }
+          ]
+        },
+        {
+          "t": "Tablets contain lactose: not for galactose intolerance, total lactase deficiency or glucose-galactose malabsorption.",
+          "formulations": ["prednisolone-tab5", "prednisolone-tab20"],
+          "detail": true,
+          "src": [
+            { "s": "emc-14313", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "CYP3A inhibitors (including cobicistat): avoid unless benefit outweighs the increased risk of systemic steroid effects; if used, monitor.",
+          "src": [
+            { "s": "emc-14313", "q": "The combination should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid side-effects, in which case patients should be monitored for systemic corticosteroid side-effects." }
+          ]
+        },
+        {
+          "t": "Enzyme inducers (carbamazepine, phenytoin, phenobarbital, primidone, rifampicin, rifabutin) reduce prednisolone effect; dose may need increasing.",
+          "src": [
+            { "s": "emc-14313", "q": "Lack of expected response may be observed and dosage of prednisolone tablets may need to be increased." }
+          ]
+        },
+        {
+          "t": "NSAIDs and aspirin: higher risk of GI ulceration and bleeding. Use salicylates with caution; steroid withdrawal may cause salicylate toxicity.",
+          "src": [
+            { "s": "emc-101838", "q": "Concomitant use of aspirin and Non-Steroidal Anti-Inflammatory Drugs (NSAIDs) with corticosteroids increases the risk of gastro-intestinal bleeding and ulceration." },
+            { "s": "emc-14313", "q": "Salicylates and corticosteroids should be used concurrently with caution." }
+          ]
+        },
+        {
+          "t": "Anticoagulants (warfarin): effect may be reduced or enhanced; monitor INR closely.",
+          "src": [
+            { "s": "emc-14313", "q": "Response to anticoagulants may be reduced or less often, enhanced by corticosteroids. Close monitoring of the INR or prothrombin time is required to avoid spontaneous bleeding." }
+          ]
+        },
+        {
+          "t": "Antidiabetic medicines (including insulin): steroids raise blood glucose; antidiabetic dose may need adjusting.",
+          "src": [
+            { "s": "emc-14313", "q": "Patients with diabetes mellitus receiving concurrent insulin and/or oral hypoglycemic agents may require dosage adjustments of such therapy." }
+          ]
+        },
+        {
+          "t": "Potassium-lowering drugs (thiazides, loop diuretics, beta2-agonists at high doses, theophylline, amphotericin): more hypokalaemia; 20 mg SPC: monitor serum potassium closely.",
+          "src": [
+            { "s": "mhra-pl00142-0844-spc", "q": "Serum potassium should be closely monitored in patients receiving glucocorticoids and potassium reducing agents." },
+            { "s": "emc-14313", "q": "Increased risk of hypokalaemia if high doses of corticosteroids given with high doses of bambuterol, fenoteral, formoteral, ritodrine, salbutamol, salmeterol and terbutaline." }
+          ]
+        },
+        {
+          "t": "Antihypertensives and diuretics: their effects are antagonised. Methotrexate: increased risk of haematological toxicity. Ciclosporin raises prednisolone levels. Live vaccines: see contraindications.",
+          "detail": true,
+          "src": [
+            { "s": "emc-14313", "q": "The desired effects of hypoglycaemic agents (including insulin), antihypertensives and diuretics are antagonised by corticosteroids" },
+            { "s": "emc-14313", "q": "Cytotoxics: Increased risk of haematological toxicity with methotrexate." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No dose adjustment stated. Use with caution in renal insufficiency (fluid retention); monitor frequently.",
+          "src": [
+            { "s": "emc-101838", "q": "Because of the possibility of fluid retention, care must be taken when corticosteroids are administered to patients with renal insufficiency or hypertension or congestive heart failure." },
+            { "s": "mhra-pl00142-0844-spc", "q": "Corticosteroids should be used with caution in patients with renal insufficiency." }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Liver failure: blood levels may rise; caution and frequent monitoring. Chronic liver disease or cirrhosis: effect enhanced.",
+          "src": [
+            { "s": "emc-101838", "q": "In patients with liver failure, blood levels of corticosteroid may be increased, as with other drugs which are metabolised in the liver. Frequent patient monitoring is therefore necessary." },
+            { "s": "mhra-pl00142-0844-spc", "q": "Patients with hypothyroidism or liver cirrhosis will have an enhanced effect of corticosteroids." }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: prescribe only when benefits outweigh risks; 88% of prednisolone is inactivated crossing the placenta. Prolonged or repeated use may increase the risk of intra-uterine growth restriction. Monitor pre-eclampsia or fluid retention closely.",
+          "src": [
+            { "s": "emc-14313", "q": "As with all drugs, corticosteroids should only be prescribed when the benefits to the mother and child outweigh the risks." },
+            { "s": "emc-14313", "q": "88% of prednisolone is inactivated as it crosses the placenta" },
+            { "s": "emc-14313", "q": "Patients with pre-eclampsia or fluid retention require close monitoring." }
+          ]
+        },
+        {
+          "t": "BUMPS: systemic corticosteroids can be used in pregnancy if recommended by a doctor; usually among the safest options for rheumatic and autoimmune disease. Some studies link early use with cleft lip/palate.",
+          "src": [
+            { "s": "bumps-prednisolone", "q": "Systemic corticosteroids can be used in pregnancy if recommended by a doctor." },
+            { "s": "bumps-prednisolone", "q": "Corticosteroid use in early pregnancy has been linked in some (but not all) studies to a higher chance of having a baby with a cleft lip and/or palate." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: up to 40 mg daily unlikely to affect the infant; at 40 mg or more monitor the infant for adrenal suppression. SPS: prednisolone is a preferred corticosteroid in breastfeeding; use lowest dose and duration.",
+          "src": [
+            { "s": "emc-14313", "q": "Infants of mothers receiving 40mg or more daily should be monitored for signs of adrenal suppression" },
+            { "s": "sps-oral-corticosteroids-breastfeeding", "q": "Prednisolone is a preferred choice during breastfeeding due to experience of use and small amounts being present in breast milk." },
+            { "s": "sps-oral-corticosteroids-breastfeeding", "q": "Corticosteroids can be used during breastfeeding. Use the lowest dose and duration possible." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "May cause irregular menstruation or amenorrhoea.",
+          "src": [
+            { "s": "emc-101838", "q": "Corticosteroids may cause irregular menstruation or amenorrhoea." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Psychiatric reactions are common (adults and children): mood changes, depression, suicidal thoughts, psychosis, sleep disturbance, confusion. Other effects (frequency not known): infections, Cushingoid features, raised glucose, fluid retention, hypokalaemia, dyspepsia, osteoporosis, myopathy, skin thinning, weight gain.",
+          "src": [
+            { "s": "emc-14313", "q": "Reactions are common and may occur in both adults and children." },
+            { "s": "emc-101838", "q": "Sodium and fluid retention, hypokalaemia, hypokalaemic alkalosis, increased appetite, negative protein and calcium balance." }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Adrenal crisis: too rapid a reduction after prolonged treatment can cause acute adrenal insufficiency, hypotension and death.",
+          "src": [
+            { "s": "emc-14313", "q": "Too rapid a reduction of corticosteroid dosage following prolonged treatment can lead to acute adrenal insufficiency, hypotension and death" }
+          ]
+        },
+        {
+          "t": "Peptic ulcer with perforation and haemorrhage; serious or masked infections; severe psychiatric reactions (estimated 5-6% in adults).",
+          "src": [
+            { "s": "emc-14313", "q": "peptic ulcer with perforation and haemorrhage" },
+            { "s": "emc-14313", "q": "In adults, the frequency of severe reactions has been estimated to be 5-6%." }
+          ]
+        },
+        {
+          "t": "Scleroderma renal crisis in systemic sclerosis; anaphylaxis; visual disturbance (refer).",
+          "detail": true,
+          "src": [
+            { "s": "emc-14313", "q": "Hypersensitivity including anaphylaxis" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS baseline: blood pressure, weight, BMI, HbA1c, serum potassium, triglycerides, eye examination, risk factor assessment; bone mineral density if 5 mg/day or more for over 3 months; height in children.",
+          "tag": "baseline",
+          "src": [
+            { "s": "sps-corticosteroids-monitoring", "q": "Before starting Required Baseline Blood pressure Weight Body mass index Bone mineral density" },
+            { "s": "sps-corticosteroids-monitoring", "q": "in adults expected to be on prednisolone at a dose equal or greater than 5mg a day, or equivalent, for over 3 months HbA1c" },
+            { "s": "sps-corticosteroids-monitoring", "q": "Serum potassium Triglycerides Risk factor assessment" }
+          ]
+        },
+        {
+          "t": "SPS ongoing: HbA1c every 3 months; eye examination, potassium and triglycerides every 6-12 months; BMD at 12 months then every 1-3 years; blood pressure, weight, falls risk and signs of adrenal suppression periodically. Children: height every 6 months.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "sps-corticosteroids-monitoring", "q": "Every 3 months HbA1c" },
+            { "s": "sps-corticosteroids-monitoring", "q": "Every 6 - 12 months Eye examination" },
+            { "s": "sps-corticosteroids-monitoring", "q": "Children and adolescents Every 6 months Height" }
+          ]
+        },
+        {
+          "t": "Systemic sclerosis: check blood pressure and serum creatinine routinely.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-14313", "q": "Blood pressure and renal function (s-creatinine) should therefore be routinely checked." }
+          ]
+        },
+        {
+          "t": "Do not stop abruptly after more than about 7.5 mg daily for over 3 weeks; taper.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-14313", "q": "withdrawal should not be abrupt" }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Take the daily dose in the morning after breakfast (5 mg tablet SmPC); 20 mg SPC: after a meal to reduce gastric irritation. Single morning dose or alternate-day dosing reduces adrenal suppression.",
+          "src": [
+            { "s": "emc-14313", "q": "The daily dose should be taken in the morning after breakfast." },
+            { "s": "mhra-pl00142-0844-spc", "q": "Prednisolone tablets should be taken following a meal to reduce the risk of gastric irritation." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Carry a steroid treatment card. Do not stop suddenly after longer courses.",
+          "src": [
+            { "s": "emc-14313", "q": "Patients should carry \"steroid treatment\" cards" }
+          ]
+        },
+        {
+          "t": "Avoid close contact with chickenpox, shingles or measles if not immune; seek urgent advice if exposed.",
+          "src": [
+            { "s": "emc-14313", "q": "Patients (or parents of children) without a definite history of chickenpox should be advised to avoid close personal contact with chickenpox or herpes zoster and if exposed they should seek urgent medical attention." }
+          ]
+        },
+        {
+          "t": "Seek advice for worrying mood changes, especially low mood or suicidal thoughts, during treatment or when reducing the dose.",
+          "src": [
+            { "s": "emc-14313", "q": "Patients/carers should be encouraged to seek medical advice if worrying psychological symptoms develop, especially if depressed mood or suicidal ideation is suspected." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "prednisolone:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "prednisolone",
+      "allergen": ["prednisolone"],
+      "concern": "Prednisolone hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity to the active substance",
+      "src": [
+        { "s": "emc-14313", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1. Systemic infections unless specific anti-infective therapy is employed." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:systemic-infection",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "prednisolone",
+      "formulations": ["prednisolone-tab5", "prednisolone-oral-sol"],
+      "condition": "systemic-infection-untreated",
+      "concern": "Systemic infection without specific anti-infective treatment",
+      "consequence": "Immunosuppression may worsen or mask infection.",
+      "action": "Do not use unless specific anti-infective therapy is given.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        { "s": "emc-14313", "q": "Systemic infections unless specific anti-infective therapy is employed." },
+        { "s": "emc-101838", "q": "Systemic infections, unless specific anti-infective therapy is employed." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:systemic-infection-tab20",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "prednisolone",
+      "formulations": ["prednisolone-tab20"],
+      "condition": "systemic-infection-untreated",
+      "concern": "Infection without causal treatment",
+      "consequence": "Infections may be activated, worsened or masked.",
+      "action": "Should not be given during infections without concomitant causal treatment.",
+      "sourceWording": "should not be given during infections without concomitant causal treatment",
+      "src": [
+        { "s": "mhra-pl00142-0844-spc", "q": "Glucocorticoids should not be given during infections without concomitant causal treatment." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:ocular-herpes",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "prednisolone",
+      "formulations": ["prednisolone-tab5"],
+      "condition": "ocular-herpes-simplex",
+      "concern": "Ocular herpes simplex",
+      "consequence": "Possible corneal perforation.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        { "s": "emc-14313", "q": "Patients with ocular herpes simplex due to the possibility of perforation." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:systemic-fungal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "prednisolone",
+      "formulations": ["prednisolone-tab20"],
+      "condition": "systemic-fungal-infection",
+      "concern": "Systemic fungal infection",
+      "consequence": "Listed contraindication (20 mg tablet SPC).",
+      "action": "Do not use (the SPC notes contraindications generally do not apply when treatment is life-saving).",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        { "s": "mhra-pl00142-0844-spc", "q": "Systemic fungal infection." },
+        { "s": "mhra-pl00142-0844-spc", "q": "In those conditions when treatment with prednisolone can save lives, none of the contraindications generally apply." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:live-vaccine",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "prednisolone",
+      "formulations": ["prednisolone-oral-sol", "prednisolone-tab20"],
+      "condition": "live-vaccine",
+      "concern": "Live vaccine (oral solution SmPC: live virus immunisation; 20 mg SPC: at immunosuppressive steroid doses)",
+      "consequence": "Impaired immune response; risk from live vaccine.",
+      "action": "Do not give live vaccines.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        { "s": "emc-101838", "q": "Live virus immunisation." },
+        { "s": "mhra-pl00142-0844-spc", "q": "Administration of live vaccines is contraindicated in patients receiving corticosteroids in immunosuppressive doses." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:live-vaccine-tab5",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "prednisolone",
+      "formulations": ["prednisolone-tab5"],
+      "condition": "live-vaccine",
+      "concern": "Live vaccine in a patient with impaired immune responsiveness",
+      "consequence": "Antibody response to other vaccines may also be reduced.",
+      "action": "Live vaccines should not be given.",
+      "sourceWording": "should not be given",
+      "src": [
+        { "s": "emc-14313", "q": "Live vaccines should not be given to individuals with impaired immune responsiveness." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:galactose",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "prednisolone",
+      "formulations": ["prednisolone-tab5", "prednisolone-tab20"],
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, total lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Tablets contain lactose.",
+      "action": "Should not take the tablets.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        { "s": "emc-14313", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus (or family history)",
+      "consequence": "Steroids raise blood glucose and may worsen diabetes.",
+      "action": "Caution and frequent monitoring.",
+      "sourceWording": "Caution is necessary ... and frequent patient monitoring is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Caution is necessary when corticosteroids, including prednisolone, are prescribed to patients with the following conditions and frequent patient monitoring is necessary: Diabetes mellitus or in those with a family history of diabetes." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:glaucoma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "glaucoma",
+      "concern": "Glaucoma (or family history)",
+      "consequence": "Steroids may raise intra-ocular pressure.",
+      "action": "Caution and frequent monitoring.",
+      "sourceWording": "Caution is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Glaucoma or in those with a family history of glaucoma." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:hypertension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "hypertension",
+      "concern": "Hypertension",
+      "consequence": "Fluid retention; blood pressure may rise.",
+      "action": "Caution and frequent monitoring.",
+      "sourceWording": "Caution is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Hypertension or congestive heart failure." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "heart-failure",
+      "concern": "Congestive heart failure",
+      "consequence": "Fluid retention.",
+      "action": "Caution and frequent monitoring.",
+      "sourceWording": "Caution is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Hypertension or congestive heart failure." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:epilepsy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "epilepsy",
+      "concern": "Epilepsy",
+      "consequence": "Steroids may worsen epilepsy.",
+      "action": "Caution and frequent monitoring.",
+      "sourceWording": "Caution is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Liver failure. Epilepsy" }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:osteoporosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "osteoporosis-risk",
+      "concern": "Osteoporosis (especially post-menopausal women)",
+      "consequence": "Steroids cause bone loss and fractures.",
+      "action": "Caution and frequent monitoring.",
+      "sourceWording": "Caution is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Osteoporosis: This is of special importance in post-menopausal females who are at particular risk." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:depression",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "depression-suicidality",
+      "concern": "Severe depressive illness or previous steroid psychosis (self or first-degree relative)",
+      "consequence": "Risk of severe psychiatric reactions.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-14313", "q": "Particular care is required when considering the use of systemic corticosteroids in patients with existing or previous history of severe affective disorders in themselves or in their first degree relatives." },
+        { "s": "emc-14313", "q": "These would include depressive or manic-depressive illness and previous steroid psychosis." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:bipolar",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "bipolar-mania",
+      "concern": "Manic-depressive illness (self or first-degree relative)",
+      "consequence": "Risk of severe psychiatric reactions.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-14313", "q": "These would include depressive or manic-depressive illness and previous steroid psychosis." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:peptic-ulcer",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "peptic-ulcer-gi-bleeding",
+      "concern": "Peptic ulceration",
+      "consequence": "Risk of ulcer complications.",
+      "action": "Caution and frequent monitoring.",
+      "sourceWording": "Caution is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Peptic ulceration. Previous steroid myopathy." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:myopathy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "myopathy",
+      "concern": "Previous steroid myopathy",
+      "consequence": "Myopathy may recur.",
+      "action": "Caution and frequent monitoring.",
+      "sourceWording": "Caution is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Peptic ulceration. Previous steroid myopathy." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:myasthenia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis on anticholinesterase therapy",
+      "consequence": "Interaction with anticholinesterases; acute myopathy reported at high doses.",
+      "action": "Use cautiously.",
+      "sourceWording": "should be used cautiously",
+      "src": [
+        { "s": "emc-14313", "q": "Glucocorticoids should be used cautiously in patients with myasthenia gravis receiving anticholinesterase therapy." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:vte",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "venous-thromboembolism",
+      "concern": "Thromboembolic disorders",
+      "consequence": "Steroids may rarely increase blood coagulability and thrombosis.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-14313", "q": "corticosteroids should be used with caution in patients with thromboembolic disorders" }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:renal",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "renal-impairment",
+      "concern": "Renal insufficiency",
+      "consequence": "Fluid retention.",
+      "action": "Caution and frequent monitoring.",
+      "sourceWording": "Caution is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Renal insufficiency. Tuberculosis" },
+        { "s": "emc-101838", "q": "Because of the possibility of fluid retention, care must be taken when corticosteroids are administered to patients with renal insufficiency or hypertension or congestive heart failure." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:tuberculosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "pulmonary-tuberculosis",
+      "concern": "History of tuberculosis or X-ray changes of TB",
+      "consequence": "Reactivation of tuberculosis.",
+      "action": "Caution; frequent monitoring; antituberculous prophylaxis can prevent active TB.",
+      "sourceWording": "Caution is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Tuberculosis: Those with a history of, or X-ray changes characteristic of tuberculosis." },
+        { "s": "emc-14313", "q": "The emergence of active tuberculosis can, however, be prevented by the prophylactic use of antituberculous therapy." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:recent-mi",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "recent-myocardial-infarction",
+      "concern": "Recent myocardial infarction",
+      "consequence": "Risk of myocardial rupture.",
+      "action": "Caution and frequent monitoring.",
+      "sourceWording": "Caution is necessary",
+      "src": [
+        { "s": "emc-14313", "q": "Recent myocardial infarction (rupture)." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "hypothyroidism",
+      "concern": "Hypothyroidism",
+      "consequence": "Steroid effect may be enhanced.",
+      "action": "Care and frequent monitoring (oral solution SmPC).",
+      "sourceWording": "Care is required and frequent patient monitoring necessary",
+      "src": [
+        { "s": "emc-101838", "q": "Care is required and frequent patient monitoring necessary where there is a history of severe affective disorders (especially a previous history of steroid psychosis), previous steroid myopathy, peptic ulceration, hypothyroidism" }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:varicella",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "varicella",
+      "concern": "Chickenpox exposure or infection (non-immune patient)",
+      "consequence": "Chickenpox may be fatal in immunosuppressed patients.",
+      "action": "Exposed non-immune patients need VZIG within 10 days; if chickenpox develops, urgent treatment and do not stop the steroid.",
+      "sourceWording": "Chickenpox is of particular concern",
+      "src": [
+        { "s": "emc-14313", "q": "Chickenpox is of particular concern since this normally minor illness may be fatal in immunosuppressed patients." },
+        { "s": "emc-14313", "q": "this should be given within 10 days of exposure to chickenpox" },
+        { "s": "emc-14313", "q": "Corticosteroids should not be stopped and the dose may need to be increased." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:systemic-sclerosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "systemic-sclerosis",
+      "concern": "Systemic sclerosis",
+      "consequence": "Scleroderma renal crisis (possibly fatal) at 15 mg/day or more.",
+      "action": "Caution; routinely check blood pressure and serum creatinine.",
+      "sourceWording": "Caution is required",
+      "src": [
+        { "s": "emc-14313", "q": "Caution is required in patients with systemic sclerosis because of an increased incidence of (possibly fatal) scleroderma renal crisis" },
+        { "s": "emc-14313", "q": "Blood pressure and renal function (s-creatinine) should therefore be routinely checked." }
+      ]
+    },
+    {
+      "id": "prednisolone:condition:phaeochromocytoma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "prednisolone",
+      "condition": "phaeochromocytoma",
+      "concern": "Suspected or known phaeochromocytoma",
+      "consequence": "Phaeochromocytoma crisis, which may be fatal.",
+      "action": "Use only after individual risk/benefit assessment (20 mg tablet SPC).",
+      "sourceWording": "should only be administered ... following consideration of individual risk/benefit",
+      "src": [
+        { "s": "mhra-pl00142-0844-spc", "q": "Corticosteroids should only be administered to patients with suspected or identified pheochromocytoma following consideration of individual risk/benefit." }
+      ]
+    },
+    {
+      "id": "prednisolone:hepatic:severe",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "prednisolone",
+      "hepatic": ["severe"],
+      "concern": "Liver failure",
+      "consequence": "Corticosteroid blood levels may be increased.",
+      "action": "Caution; frequent monitoring.",
+      "sourceWording": "Frequent patient monitoring is therefore necessary",
+      "src": [
+        { "s": "emc-101838", "q": "In patients with liver failure, blood levels of corticosteroid may be increased, as with other drugs which are metabolised in the liver. Frequent patient monitoring is therefore necessary." },
+        { "s": "emc-14313", "q": "Liver failure. Epilepsy" }
+      ]
+    },
+    {
+      "id": "prednisolone:hepatic:chronic",
+      "kind": "hepatic",
+      "level": "info",
+      "med": "prednisolone",
+      "hepatic": ["mild", "moderate"],
+      "concern": "Chronic liver disease / cirrhosis",
+      "consequence": "Steroid effect may be enhanced.",
+      "action": "No specific action stated.",
+      "sourceWording": "may be enhanced",
+      "src": [
+        { "s": "emc-14313", "q": "The effect of corticosteroids may be enhanced in patients with hypothyroidism in those with chronic liver disease with impaired hepatic function." }
+      ]
+    },
+    {
+      "id": "prednisolone:pregnancy",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "prednisolone",
+      "concern": "Pregnancy",
+      "consequence": "Prolonged or repeated use may increase risk of intra-uterine growth restriction; possible neonatal hypoadrenalism.",
+      "action": "Prescribe only when benefits outweigh risks (SmPC). BUMPS: can be used if recommended by a doctor. Monitor pre-eclampsia or fluid retention closely.",
+      "sourceWording": "should only be prescribed when the benefits to the mother and child outweigh the risks",
+      "src": [
+        { "s": "emc-14313", "q": "As with all drugs, corticosteroids should only be prescribed when the benefits to the mother and child outweigh the risks." },
+        { "s": "bumps-prednisolone", "q": "Systemic corticosteroids can be used in pregnancy if recommended by a doctor." }
+      ]
+    },
+    {
+      "id": "prednisolone:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "monitor",
+      "med": "prednisolone",
+      "concern": "Breastfeeding (especially 40 mg daily or more)",
+      "consequence": "Small amounts in milk; high doses may suppress the infant's adrenal function.",
+      "action": "Compatible; SPS preferred choice. At 40 mg or more daily monitor the infant for adrenal suppression.",
+      "sourceWording": "should be monitored for signs of adrenal suppression",
+      "src": [
+        { "s": "emc-14313", "q": "Infants of mothers receiving 40mg or more daily should be monitored for signs of adrenal suppression" },
+        { "s": "sps-oral-corticosteroids-breastfeeding", "q": "Prednisolone is a preferred choice during breastfeeding due to experience of use and small amounts being present in breast milk." }
+      ]
+    },
+    {
+      "id": "prednisolone:age:paediatric",
+      "kind": "age",
+      "level": "caution",
+      "med": "prednisolone",
+      "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Infants, children and adolescents",
+      "consequence": "Growth retardation, which may be irreversible.",
+      "action": "Avoid long-term pharmacological doses; use minimum dose for the shortest time; monitor growth.",
+      "sourceWording": "long-term administration of pharmacological doses should be avoided",
+      "src": [
+        { "s": "emc-14313", "q": "Corticosteroids cause growth retardation in infancy, childhood and adolescence, which may be irreversible and therefore long-term administration of pharmacological doses should be avoided." },
+        { "s": "emc-14313", "q": "The growth and development of infants and children should be closely monitored." }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "prednisolone",
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "CYP3A inhibitors (e.g. clarithromycin)",
+      "consequence": "Increased risk of systemic corticosteroid side-effects.",
+      "action": "Avoid unless benefit outweighs risk; if used, monitor for systemic steroid side-effects (5 mg tablet SmPC: glucocorticoid dose may need lowering).",
+      "sourceWording": "The combination should be avoided unless the benefit outweighs the increased risk",
+      "src": [
+        { "s": "emc-14313", "q": "Co-treatment with CYP3A inhibitors, including cobicistat-containing products, is expected to increase the risk of systemic side-effects." },
+        { "s": "emc-14313", "q": "The combination should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid side-effects, in which case patients should be monitored for systemic corticosteroid side-effects." },
+        { "s": "emc-14313", "q": "Dosages of glucocorticoids given in combination with such drugs may need to be decreased to avoid potential adverse effects." }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:cyp3a4-inducer",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "prednisolone",
+      "other": "group:cyp3a4-inducer",
+      "concern": "CYP3A4 enzyme inducers (e.g. carbamazepine)",
+      "consequence": "Faster prednisolone metabolism; reduced effect.",
+      "action": "Prednisolone dose may need to be increased.",
+      "sourceWording": "dosage of prednisolone tablets may need to be increased",
+      "src": [
+        { "s": "emc-14313", "q": "Drugs that induce hepatic enzyme cytochrome P-450 (CYP) isoenzyme 3A4 such as phenobarbital, phenytoin, rifampicin, rifabutin, carbamazepine, primidone and aminoglutethimide may reduce the therapeutic efficacy of corticosteroids" },
+        { "s": "emc-14313", "q": "Lack of expected response may be observed and dosage of prednisolone tablets may need to be increased." }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "prednisolone",
+      "other": "group:antidiabetic",
+      "concern": "Antidiabetic medicines, including insulin",
+      "consequence": "Glucocorticoids raise blood glucose and antagonise antidiabetic effect.",
+      "action": "Antidiabetic dose may need adjusting; monitor glucose.",
+      "sourceWording": "may require dosage adjustments of such therapy",
+      "src": [
+        { "s": "emc-14313", "q": "Antidiabetic agents: Glucocorticoids may increase blood glucose levels. Patients with diabetes mellitus receiving concurrent insulin and/or oral hypoglycemic agents may require dosage adjustments of such therapy." }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:nsaid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "prednisolone",
+      "other": "group:nsaid",
+      "effect": "bleeding",
+      "concern": "NSAIDs",
+      "consequence": "Increased risk of GI bleeding and ulceration.",
+      "action": "No specific action stated; be aware of GI risk.",
+      "sourceWording": "increases the risk of gastro-intestinal bleeding and ulceration",
+      "src": [
+        { "s": "emc-101838", "q": "Concomitant use of aspirin and Non-Steroidal Anti-Inflammatory Drugs (NSAIDs) with corticosteroids increases the risk of gastro-intestinal bleeding and ulceration." },
+        { "s": "mhra-pl00142-0844-spc", "q": "The incidence of gastrointestinal bleeding and ulceration may increase if corticosteroids are given with NSAIDs." }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:salicylate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "prednisolone",
+      "other": "group:salicylate",
+      "effect": "bleeding",
+      "concern": "Aspirin / salicylates",
+      "consequence": "GI bleeding and ulceration risk; steroids lower salicylate levels and withdrawal may cause salicylate toxicity.",
+      "action": "Use concurrently with caution and observe closely for adverse effects of either drug; caution with aspirin in hypoprothrombinaemia.",
+      "sourceWording": "should be used concurrently with caution",
+      "src": [
+        { "s": "emc-14313", "q": "Salicylates and corticosteroids should be used concurrently with caution. Patients receiving both drugs should be observed closely for adverse effects of either drug." },
+        { "s": "emc-14313", "q": "The renal clearance of salicylates is increased by corticosteroids and steroid withdrawal may result in salicylate intoxication." }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:anticoagulant",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "prednisolone",
+      "other": "group:anticoagulant",
+      "effect": "bleeding",
+      "concern": "Oral anticoagulants (e.g. warfarin)",
+      "consequence": "Anticoagulant effect may be reduced or enhanced; bleeding risk.",
+      "action": "Close monitoring of INR or prothrombin time, especially after starting or changing the prednisolone dose.",
+      "sourceWording": "Close monitoring of the INR or prothrombin time is required",
+      "src": [
+        { "s": "emc-14313", "q": "Response to anticoagulants may be reduced or less often, enhanced by corticosteroids. Close monitoring of the INR or prothrombin time is required to avoid spontaneous bleeding." },
+        { "s": "mhra-pl00142-0844-spc", "q": "For patients treated with vitamin K antagonists, more frequent monitoring of prothrombin time (INR) is recommended, especially after initiation of treatment or dose adjustments of prednisolone" }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "info",
+      "med": "prednisolone",
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate",
+      "consequence": "Increased risk of haematological toxicity.",
+      "action": "No specific action stated.",
+      "sourceWording": "Increased risk of haematological toxicity",
+      "src": [
+        { "s": "emc-14313", "q": "Cytotoxics: Increased risk of haematological toxicity with methotrexate." },
+        { "s": "emc-101838", "q": "Concomitant use with methotrexate may increase the risk of haematological toxicity." }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:thiazide",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "prednisolone",
+      "other": "group:thiazide",
+      "concern": "Thiazide diuretics",
+      "consequence": "Enhanced potassium loss (hypokalaemia); diuretic effect antagonised.",
+      "action": "Monitor serum potassium closely (20 mg tablet SPC).",
+      "sourceWording": "Serum potassium should be closely monitored",
+      "src": [
+        { "s": "mhra-pl00142-0844-spc", "q": "Potassium-reducing diuretics (e.g., thiazides, furosemide, ethacrynic acid)" },
+        { "s": "mhra-pl00142-0844-spc", "q": "Serum potassium should be closely monitored in patients receiving glucocorticoids and potassium reducing agents." },
+        { "s": "emc-14313", "q": "the hypokalaemic effect of acetazolamide, loop diuretics, thiazide diuretics, carbenoxolone and theophylline are enhanced" }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:loop-diuretic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "prednisolone",
+      "other": "group:loop-diuretic",
+      "concern": "Loop diuretics (e.g. furosemide)",
+      "consequence": "Enhanced potassium loss (hypokalaemia); diuretic effect antagonised.",
+      "action": "Monitor serum potassium closely (20 mg tablet SPC).",
+      "sourceWording": "Serum potassium should be closely monitored",
+      "src": [
+        { "s": "mhra-pl00142-0844-spc", "q": "Potassium-reducing diuretics (e.g., thiazides, furosemide, ethacrynic acid)" },
+        { "s": "mhra-pl00142-0844-spc", "q": "Serum potassium should be closely monitored in patients receiving glucocorticoids and potassium reducing agents." },
+        { "s": "emc-14313", "q": "the hypokalaemic effect of acetazolamide, loop diuretics, thiazide diuretics, carbenoxolone and theophylline are enhanced" }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:beta2-agonist",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "prednisolone",
+      "other": "group:beta2-agonist",
+      "concern": "Beta2-agonists (e.g. salbutamol, formoterol, salmeterol), especially at high doses",
+      "consequence": "Increased risk of hypokalaemia.",
+      "action": "Monitor serum potassium closely (20 mg tablet SPC).",
+      "sourceWording": "Serum potassium should be closely monitored",
+      "src": [
+        { "s": "emc-14313", "q": "Increased risk of hypokalaemia if high doses of corticosteroids given with high doses of bambuterol, fenoteral, formoteral, ritodrine, salbutamol, salmeterol and terbutaline." },
+        { "s": "mhra-pl00142-0844-spc", "q": "other drugs that reduce the amount of potassium such as amphotericin B, xanthines and beta2-agonists, may potentiate the potassium-lowering effect of glucocorticoids" },
+        { "s": "mhra-pl00142-0844-spc", "q": "Serum potassium should be closely monitored in patients receiving glucocorticoids and potassium reducing agents." }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "prednisolone",
+      "other": "group:antihypertensive",
+      "concern": "Antihypertensives",
+      "consequence": "Antihypertensive effect antagonised by corticosteroids.",
+      "action": "No specific action stated.",
+      "sourceWording": "are antagonised by corticosteroids",
+      "src": [
+        { "s": "emc-14313", "q": "The desired effects of hypoglycaemic agents (including insulin), antihypertensives and diuretics are antagonised by corticosteroids" }
+      ]
+    },
+    {
+      "id": "prednisolone:interaction:diuretic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "prednisolone",
+      "other": "group:diuretic",
+      "concern": "Diuretics",
+      "consequence": "Diuretic effect antagonised by corticosteroids.",
+      "action": "No specific action stated.",
+      "sourceWording": "are antagonised by corticosteroids",
+      "src": [
+        { "s": "emc-14313", "q": "The desired effects of hypoglycaemic agents (including insulin), antihypertensives and diuretics are antagonised by corticosteroids" }
+      ]
+    }
+  ]
+}

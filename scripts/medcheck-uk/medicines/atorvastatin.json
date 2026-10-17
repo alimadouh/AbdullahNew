@@ -1214,6 +1214,145 @@
      "q": "Lipitor chewable tablet contains aspartame which is a source of phenylalanine. May be harmful for people with phenylketonuria."
     }
    ]
-  }
- ]
+  },
+    {
+      "id": "atorvastatin:interaction:diltiazem",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "atorvastatin",
+      "other": "diltiazem",
+      "effect": "myopathy",
+      "concern": "Atorvastatin + diltiazem (moderate CYP3A4 inhibitor)",
+      "consequence": "Higher atorvastatin levels; increased risk of myopathy.",
+      "action": "Consider a lower maximum atorvastatin dose and monitor clinically, including after the other medicine is started or its dose changed.",
+      "sourceWording": "a lower maximum dose of atorvastatin should be considered",
+      "src": [
+        {
+          "s": "emc-1059",
+          "q": "Moderate CYP3A4 inhibitors (e.g. erythromycin, diltiazem, verapamil and fluconazole) may increase plasma concentrations of atorvastatin"
+        },
+        {
+          "s": "emc-1059",
+          "q": "a lower maximum dose of atorvastatin should be considered and appropriate clinical monitoring of the patient is recommended when concomitantly used with moderate CYP3A4 inhibitors"
+        },
+        {
+          "s": "emc-1059",
+          "q": "After initiation or following dose adjustments of diltiazem, appropriate clinical monitoring of these patients is recommended."
+        }
+      ]
+    },
+    {
+      "id": "atorvastatin:interaction:verapamil",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "atorvastatin",
+      "other": "verapamil",
+      "effect": "myopathy",
+      "concern": "Atorvastatin + verapamil (moderate CYP3A4 inhibitor)",
+      "consequence": "Higher atorvastatin levels; increased risk of myopathy.",
+      "action": "Consider a lower maximum atorvastatin dose and monitor clinically, including after the other medicine is started or its dose changed.",
+      "sourceWording": "a lower maximum dose of atorvastatin should be considered",
+      "src": [
+        {
+          "s": "emc-1059",
+          "q": "Moderate CYP3A4 inhibitors (e.g. erythromycin, diltiazem, verapamil and fluconazole) may increase plasma concentrations of atorvastatin"
+        },
+        {
+          "s": "emc-1059",
+          "q": "a lower maximum dose of atorvastatin should be considered and appropriate clinical monitoring of the patient is recommended when concomitantly used with moderate CYP3A4 inhibitors"
+        },
+        {
+          "s": "emc-1059",
+          "q": "Both amiodarone and verapamil are known to inhibit CYP3A4 activity and co- administration with atorvastatin may result in increased exposure to atorvastatin."
+        }
+      ]
+    },
+    {
+      "id": "atorvastatin:interaction:fluconazole",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "atorvastatin",
+      "other": "fluconazole",
+      "effect": "myopathy",
+      "concern": "Atorvastatin + fluconazole (moderate CYP3A4 inhibitor)",
+      "consequence": "Higher atorvastatin levels; increased risk of myopathy.",
+      "action": "Consider a lower maximum atorvastatin dose and monitor clinically, including after the other medicine is started or its dose changed.",
+      "sourceWording": "a lower maximum dose of atorvastatin should be considered",
+      "src": [
+        {
+          "s": "emc-1059",
+          "q": "Moderate CYP3A4 inhibitors (e.g. erythromycin, diltiazem, verapamil and fluconazole) may increase plasma concentrations of atorvastatin"
+        },
+        {
+          "s": "emc-1059",
+          "q": "a lower maximum dose of atorvastatin should be considered and appropriate clinical monitoring of the patient is recommended when concomitantly used with moderate CYP3A4 inhibitors"
+        }
+      ]
+    },
+    {
+      "id": "atorvastatin:interaction:fibrate",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "atorvastatin",
+      "other": "group:fibrate",
+      "effect": "myopathy",
+      "concern": "Atorvastatin + fibrate (e.g. fenofibrate)",
+      "consequence": "Increased risk of muscle events, including rhabdomyolysis.",
+      "action": "If the combination cannot be avoided, use the lowest atorvastatin dose that meets the target (fenofibrate: lower starting dose) and monitor. If possible consider non-interacting alternatives.",
+      "sourceWording": "the lowest dose of atorvastatin to achieve the therapeutic objective should be used",
+      "src": [
+        {
+          "s": "emc-1059",
+          "q": "If concomitant administration cannot be avoided, the lowest dose of atorvastatin to achieve the therapeutic objective should be used and the patients should be appropriately monitored"
+        },
+        {
+          "s": "emc-1059",
+          "q": "Fenofibrate 160 mg OD, 7 days 40 mg SD 1.03 Lower starting dose and clinical monitoring of these patients is recommended."
+        },
+        {
+          "s": "emc-1059",
+          "q": "If possible, alternative (non- interacting) therapies should be considered instead of these medicinal products."
+        }
+      ]
+    },
+    {
+      "id": "atorvastatin:interaction:ezetimibe",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "atorvastatin",
+      "other": "ezetimibe",
+      "effect": "myopathy",
+      "concern": "Atorvastatin + ezetimibe",
+      "consequence": "Increased risk of muscle events, including rhabdomyolysis.",
+      "action": "If possible consider non-interacting alternatives; if used together, monitor clinically.",
+      "sourceWording": "alternative (non- interacting) therapies should be considered",
+      "src": [
+        {
+          "s": "emc-1059",
+          "q": "The risk of these events may therefore be increased with concomitant use of ezetimibe and atorvastatin. Appropriate clinical monitoring of these patients is recommended."
+        },
+        {
+          "s": "emc-1059",
+          "q": "erythromycin, niacin or ezetimibe. If possible, alternative (non- interacting) therapies should be considered instead of these medicinal products."
+        }
+      ]
+    },
+    {
+      "id": "atorvastatin:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "atorvastatin",
+      "other": "carbamazepine",
+      "concern": "Atorvastatin + CYP3A4 inducer (carbamazepine)",
+      "consequence": "CYP3A inducers can give variable reductions in atorvastatin levels.",
+      "action": "No specific action stated; be aware of possible reduced effect.",
+      "sourceWording": "can lead to variable reductions in plasma concentrations",
+      "src": [
+        {
+          "s": "emc-1059",
+          "q": "Concomitant administration of atorvastatin with inducers of cytochrome P450 3A (e.g. efavirenz, rifampin, St. John's Wort) can lead to variable reductions in plasma concentrations of atorvastatin."
+        }
+      ]
+    }
+  ]
 }

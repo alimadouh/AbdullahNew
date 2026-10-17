@@ -1,0 +1,368 @@
+{
+  "id": "dapagliflozin",
+  "name": "Dapagliflozin",
+  "ingredients": ["dapagliflozin"],
+  "className": "SGLT2 inhibitor (drug used in diabetes)",
+  "groups": ["sglt2-inhibitor", "antidiabetic", "oral-antidiabetic"],
+  "searchTerms": ["dapagliflozin propanediol", "SGLT2 inhibitor", "gliflozin"],
+  "formulations": [
+    {
+      "id": "dapagliflozin-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "5 mg, 10 mg",
+      "release": "immediate",
+      "note": "The 5 mg strength is the stated starting dose in severe hepatic impairment.",
+      "src": [
+        { "s": "emc-7607", "q": "Each tablet contains dapagliflozin propanediol monohydrate equivalent to 10 mg dapagliflozin." },
+        { "s": "emc-2865", "q": "Each tablet contains dapagliflozin propanediol monohydrate equivalent to 5 mg dapagliflozin." },
+        { "s": "emc-7607", "q": "In patients with severe hepatic impairment, a starting dose of 5 mg is recommended." }
+      ],
+      "sourceIds": ["emc-7607", "emc-2865"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "availability": { "status": "uk" },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Type 2 diabetes not controlled by diet and exercise, in adults and children aged 10 years and over: alone when metformin is not tolerated, or added to other diabetes medicines.",
+        "src": [
+          { "s": "emc-7607", "q": "Forxiga is indicated in adults and children aged 10 years and above for the treatment of insufficiently controlled type 2 diabetes mellitus as an adjunct to diet and exercise" },
+          { "s": "emc-7607", "q": "as monotherapy when metformin is considered inappropriate due to intolerance." },
+          { "s": "emc-7607", "q": "in addition to other medicinal products for the treatment of type 2 diabetes." }
+        ] },
+      { "t": "Symptomatic chronic heart failure (adults).",
+        "src": [{ "s": "emc-7607", "q": "Forxiga is indicated in adults for the treatment of symptomatic chronic heart failure." }] },
+      { "t": "Chronic kidney disease (adults).",
+        "src": [{ "s": "emc-7607", "q": "Forxiga is indicated in adults for the treatment of chronic kidney disease." }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Not for type 1 diabetes. MHRA (2021): dapagliflozin is no longer authorised for type 1 diabetes; patients with type 1 diabetes should have it reviewed and stopped by, or with, a diabetes specialist.",
+        "src": [
+          { "s": "emc-7607", "q": "Dapagliflozin should not be used for treatment of patients with type 1 diabetes." },
+          { "s": "mhra-dsu-dapagliflozin-t1dm-2021", "q": "dapagliflozin 5 mg is no longer authorised for the treatment of patients with type 1 diabetes mellitus" },
+          { "s": "mhra-dsu-dapagliflozin-t1dm-2021", "q": "dapagliflozin should be reviewed and discontinued in patients with type 1 diabetes by or in consultation with a physician specialised in diabetes care as soon as clinically practical" }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "10 mg once daily.", "tag": "Type 2 diabetes, adults",
+        "src": [{ "s": "emc-7607", "q": "Type 2 diabetes mellitus The recommended dose is 10 mg dapagliflozin once daily." }] },
+      { "t": "With insulin or an insulin secretagogue (e.g. a sulfonylurea): consider a lower dose of the insulin or secretagogue to reduce hypoglycaemia risk.", "tag": "Type 2 diabetes, add-on to insulin or sulfonylurea",
+        "src": [{ "s": "emc-7607", "q": "When dapagliflozin is used in combination with insulin or an insulin secretagogue, such as a sulphonylurea, a lower dose of insulin or insulin secretagogue may be considered to reduce the risk of hypoglycaemia" }] },
+      { "t": "10 mg once daily.", "tag": "Heart failure, adults",
+        "src": [{ "s": "emc-7607", "q": "Heart failure The recommended dose is 10 mg dapagliflozin once daily." }] },
+      { "t": "10 mg once daily.", "tag": "Chronic kidney disease, adults",
+        "src": [{ "s": "emc-7607", "q": "Chronic kidney disease The recommended dose is 10 mg dapagliflozin once daily." }] },
+      { "t": "Elderly (65 years and over): no dose adjustment based on age.", "tag": "Elderly", "detail": true,
+        "src": [{ "s": "emc-7607", "q": "Elderly (≥ 65 years) No dose adjustment is recommended based on age." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Type 2 diabetes, children aged 10 years and over: no dose adjustment (10 mg once daily). No data below 10 years.",
+        "src": [
+          { "s": "emc-7607", "q": "No dose adjustment is required for the treatment of type 2 diabetes mellitus in children aged 10 years and above" },
+          { "s": "emc-7607", "q": "No data are available for children below 10 years of age." }
+        ] },
+      { "t": "Heart failure and chronic kidney disease: safety and efficacy not established under 18 years; no data.",
+        "src": [{ "s": "emc-7607", "q": "The safety and efficacy of dapagliflozin for the treatment of heart failure or for the treatment of chronic kidney disease in children < 18 years have not yet been established." }] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to dapagliflozin or any excipient.",
+        "src": [{ "s": "emc-7607", "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Diabetic ketoacidosis (rare, can be fatal; may occur with blood glucose below 14 mmol/L). Assess for ketoacidosis at once if nausea, vomiting, anorexia, abdominal pain, excessive thirst, difficulty breathing, confusion, unusual fatigue or sleepiness, whatever the glucose. Stop immediately if DKA is suspected or diagnosed.",
+        "src": [
+          { "s": "emc-7607", "q": "Rare cases of diabetic ketoacidosis (DKA), including life-threatening and fatal cases, have been reported in patients treated with sodium-glucose co-transporter 2 (SGLT2) inhibitors, including dapagliflozin." },
+          { "s": "emc-7607", "q": "Patients should be assessed for ketoacidosis immediately if these symptoms occur, regardless of blood glucose level." },
+          { "s": "emc-7607", "q": "In patients where DKA is suspected or diagnosed, dapagliflozin treatment should be stopped immediately." }
+        ] },
+      { "t": "Interrupt treatment if hospitalised for major surgery or acute serious illness; monitor ketones (blood preferred to urine). Restart when ketones are normal and the patient is stable.",
+        "src": [
+          { "s": "emc-7607", "q": "Treatment should be interrupted in patients who are hospitalised for major surgical procedures or acute serious medical illnesses. Monitoring of ketones is recommended in these patients. Measurement of blood ketone levels is preferred to urine." },
+          { "s": "emc-7607", "q": "Treatment with dapagliflozin may be restarted when the ketone values are normal and the patient's condition has stabilised." }
+        ] },
+      { "t": "Higher DKA risk (use with caution): low beta-cell reserve (e.g. low C-peptide, LADA, history of pancreatitis), restricted food intake or severe dehydration, reduced insulin doses, raised insulin needs from acute illness, surgery or alcohol abuse. Restarting after DKA on an SGLT2 inhibitor is not recommended unless another clear cause was found and resolved.",
+        "src": [
+          { "s": "emc-7607", "q": "Patients who may be at higher risk of DKA include patients with a low beta-cell function reserve" },
+          { "s": "emc-7607", "q": "SGLT2 inhibitors should be used with caution in these patients." },
+          { "s": "emc-7607", "q": "Restarting SGLT2 inhibitor treatment in patients experiencing a DKA while on SGLT2 inhibitor treatment is not recommended, unless another clear precipitating factor is identified and resolved." }
+        ] },
+      { "t": "Volume depletion and hypotension: caution where a fall in blood pressure could be a risk (e.g. on antihypertensives with a history of hypotension, elderly). In illness causing volume loss (e.g. gastrointestinal illness) monitor volume status; interrupt treatment until volume depletion is corrected.",
+        "src": [
+          { "s": "emc-7607", "q": "Caution should be exercised in patients for whom a dapagliflozin-induced drop in blood pressure could pose a risk, such as patients on anti-hypertensive therapy with a history of hypotension or elderly patients." },
+          { "s": "emc-7607", "q": "Temporary interruption of treatment with dapagliflozin is recommended for patients who develop volume depletion until the depletion is corrected" }
+        ] },
+      { "t": "Fournier's gangrene (necrotising fasciitis of the perineum): rare but life-threatening. If suspected, stop and start urgent treatment (antibiotics, surgical debridement).",
+        "src": [
+          { "s": "emc-7607", "q": "This is a rare but serious and potentially life-threatening event that requires urgent surgical intervention and antibiotic treatment." },
+          { "s": "emc-7607", "q": "If Fournier's gangrene is suspected, Forxiga should be discontinued and prompt treatment (including antibiotics and surgical debridement) should be instituted." }
+        ] },
+      { "t": "Urinary tract infection: consider temporary interruption when treating pyelonephritis or urosepsis.",
+        "src": [{ "s": "emc-7607", "q": "temporary interruption of dapagliflozin should be considered when treating pyelonephritis or urosepsis." }] },
+      { "t": "Lower limb amputation (mainly toes) increased with SGLT2 inhibitors in long-term studies; counsel on routine preventive foot care.", "detail": true,
+        "src": [
+          { "s": "emc-7607", "q": "An increase in cases of lower limb amputation (primarily of the toe) has been observed in long-term, clinical studies in type 2 diabetes mellitus with SGLT2 inhibitors." },
+          { "s": "emc-7607", "q": "It is important to counsel patients with diabetes on routine preventative foot care." }
+        ] },
+      { "t": "Raised haematocrit: monitor and investigate pronounced rises.", "detail": true,
+        "src": [{ "s": "emc-7607", "q": "Patients with pronounced elevations in haematocrit should be monitored and investigated for underlying haematological disease." }] },
+      { "t": "Contains lactose: patients with hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it.", "detail": true,
+        "src": [{ "s": "emc-7607", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicinal product." }] },
+      { "t": "Urine glucose tests will be positive; 1,5-AG assay is unreliable for glycaemic control.", "detail": true,
+        "src": [
+          { "s": "emc-7607", "q": "patients taking Forxiga will test positive for glucose in their urine." },
+          { "s": "emc-7607", "q": "Monitoring glycaemic control with 1,5-AG assay is not recommended" }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Thiazide and loop diuretics: dapagliflozin may add to the diuretic effect and increase the risk of dehydration and hypotension.",
+        "src": [{ "s": "emc-7607", "q": "Dapagliflozin may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and hypotension" }] },
+      { "t": "Insulin and insulin secretagogues (e.g. sulfonylureas): a lower dose of insulin or secretagogue may be needed to reduce hypoglycaemia risk.",
+        "src": [{ "s": "emc-7607", "q": "a lower dose of insulin or an insulin secretagogue may be required to reduce the risk of hypoglycaemia when used in combination with dapagliflozin" }] },
+      { "t": "Lithium (not in this tool's list): dapagliflozin may lower lithium levels; monitor lithium more often after starting or changing dose.", "detail": true,
+        "src": [
+          { "s": "emc-7607", "q": "Dapagliflozin may increase renal lithium excretion and the blood lithium levels may be decreased." },
+          { "s": "emc-7607", "q": "Serum concentration of lithium should be monitored more frequently after dapagliflozin initiation and dose changes." }
+        ] },
+      { "t": "No clinically relevant effect with metformin, glimepiride, sitagliptin, hydrochlorothiazide, valsartan, simvastatin, mefenamic acid or rifampicin; dapagliflozin did not change warfarin's effect on INR.", "detail": true,
+        "src": [
+          { "s": "emc-7607", "q": "the pharmacokinetics of dapagliflozin are not altered by metformin, pioglitazone, sitagliptin, glimepiride, voglibose, hydrochlorothiazide, bumetanide, valsartan, or simvastatin." },
+          { "s": "emc-7607", "q": "or the anticoagulatory effects of warfarin as measured by INR." },
+          { "s": "emc-7607", "q": "a 55% increase in dapagliflozin systemic exposure was seen, but with no clinically meaningful effect on 24-hour urinary glucose excretion. No dose adjustment is recommended." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "No dose adjustment based on renal function.",
+        "src": [{ "s": "emc-7607", "q": "No dose adjustment is required based on renal function." }] },
+      { "t": "eGFR < 15 mL/min/1.73 m²: starting treatment is not recommended (no experience; limited experience below 25).",
+        "src": [{ "s": "emc-7607", "q": "It is not recommended to initiate treatment with dapagliflozin in patients with an estimated glomerular filtration rate (eGFR) < 15 mL/min/1.73m2." }] },
+      { "t": "Type 2 diabetes: glucose-lowering effect is reduced when eGFR < 45 mL/min/1.73 m² and likely absent in severe renal impairment; if eGFR falls below 45, consider additional glucose-lowering treatment.",
+        "src": [
+          { "s": "emc-7607", "q": "In patients with type 2 diabetes mellitus, the glucose lowering efficacy of dapagliflozin is reduced when eGFR is < 45 mL/min/1.73m2, and is likely absent in patients with severe renal impairment." },
+          { "s": "emc-7607", "q": "if eGFR falls below 45 mL/min/1.73m2, additional glucose lowering treatment should be considered in patients with type 2 diabetes mellitus" }
+        ] },
+      { "t": "eGFR < 60 mL/min/1.73 m²: more reports of raised parathyroid hormone and hypotension than with placebo.", "detail": true,
+        "src": [{ "s": "emc-7607", "q": "In patients with moderate renal impairment (eGFR < 60 mL/min/1.73m2), a higher proportion of patients treated with dapagliflozin had adverse reactions of increase in parathyroid hormone (PTH) and hypotension, compared with placebo." }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Mild or moderate hepatic impairment: no dose adjustment.",
+        "src": [{ "s": "emc-7607", "q": "No dose adjustment is necessary for patients with mild or moderate hepatic impairment." }] },
+      { "t": "Severe hepatic impairment: start at 5 mg; increase to 10 mg if well tolerated (exposure is increased).",
+        "src": [
+          { "s": "emc-7607", "q": "In patients with severe hepatic impairment, a starting dose of 5 mg is recommended. If well tolerated, the dose may be increased to 10 mg" },
+          { "s": "emc-7607", "q": "Dapagliflozin exposure is increased in patients with severe hepatic impairment" }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: no human data. Rat studies showed toxicity to the developing kidney in the period matching the 2nd and 3rd trimesters, so use is not recommended in the 2nd and 3rd trimesters. Stop dapagliflozin when pregnancy is detected.",
+        "src": [
+          { "s": "emc-7607", "q": "Therefore, the use of dapagliflozin is not recommended during the second and third trimesters of pregnancy." },
+          { "s": "emc-7607", "q": "When pregnancy is detected, treatment with dapagliflozin should be discontinued." }
+        ] },
+      { "t": "BUMPS: type 2 diabetes in pregnancy should be treated with metformin, plus insulin if needed; SGLT2 inhibitors are avoided as a precaution (very little information). With an unplanned pregnancy, keep taking the medicine until reviewed at the earliest opportunity, as uncontrolled diabetes is risky.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "As a precaution, they are avoided in pregnancy." },
+          { "s": "bumps-antidiabetic-drugs", "q": "you should carry on with the drug you are taking until your appointment, as uncontrolled diabetes is risky for you and your baby" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: should not be used while breastfeeding (excreted in animal milk with effects in nursing offspring; risk to the infant cannot be excluded).",
+        "src": [
+          { "s": "emc-7607", "q": "A risk to the newborns/infants cannot be excluded. Dapagliflozin should not be used while breast-feeding." }
+        ] },
+      { "t": "SPS: insulin or metformin are the preferred choices in breastfeeding; there is limited or no published information on other antidiabetic medicines.",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Human fertility effect not studied; no effect on fertility in rats.", "detail": true,
+        "src": [{ "s": "emc-7607", "q": "The effect of dapagliflozin on fertility in humans has not been studied. In male and female rats, dapagliflozin showed no effects on fertility at any dose tested." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Genital infections (vulvovaginitis, balanitis) are the most frequently reported reactions: 5.5% vs 0.6% with placebo, more often in women and in those with a past history.",
+        "src": [
+          { "s": "emc-7607", "q": "The most frequently reported adverse reactions across the clinical studies were genital infections." },
+          { "s": "emc-7607", "q": "vulvovaginitis, balanitis and related genital infections were reported in 5.5% and 0.6% of subjects who received dapagliflozin 10 mg and placebo, respectively." }
+        ] },
+      { "t": "Hypoglycaemia when used with a sulfonylurea or insulin (higher rates in those add-on studies).",
+        "src": [
+          { "s": "emc-7607", "q": "Hypoglycaemia (when used with SU or insulin)b" },
+          { "s": "emc-7607", "q": "Studies with add-on sulphonylurea and add-on insulin therapies had higher rates of hypoglycaemia" }
+        ] },
+      { "t": "Also listed in the SmPC table: urinary tract infection, volume depletion (dehydration, hypotension), increased urination, back pain, dizziness, rash, dysuria, raised haematocrit.", "detail": true,
+        "src": [
+          { "s": "emc-7607", "q": "Urinary tract infection*,b,d" },
+          { "s": "emc-7607", "q": "Volume depletionb,e" },
+          { "s": "emc-7607", "q": "Back pain*" },
+          { "s": "emc-7607", "q": "Polyuria*,f" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Diabetic ketoacidosis (may occur with near-normal glucose): stop immediately and assess; treat urgently.",
+        "src": [
+          { "s": "emc-7607", "q": "In patients where DKA is suspected or diagnosed, dapagliflozin treatment should be stopped immediately." }
+        ] },
+      { "t": "Fournier's gangrene: seek urgent care for pain, tenderness, redness or swelling of the genital or perineal area with fever or malaise; stop dapagliflozin and treat promptly.",
+        "src": [
+          { "s": "emc-7607", "q": "Patients should be advised to seek medical attention if they experience a combination of symptoms of pain, tenderness, erythema, or swelling in the genital or perineal area, with fever or malaise." }
+        ] },
+      { "t": "Volume depletion (dehydration, hypotension): interrupt until corrected.", "detail": true,
+        "src": [{ "s": "emc-7607", "q": "Temporary interruption of treatment with dapagliflozin is recommended for patients who develop volume depletion until the depletion is corrected" }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Before starting: check eGFR (do not start if eGFR < 15) and consider factors that predispose to ketoacidosis.", "tag": "baseline",
+        "src": [
+          { "s": "emc-7607", "q": "it is not recommended to initiate treatment with dapagliflozin in patients with eGFR < 15 mL/min/1.73m2" },
+          { "s": "emc-7607", "q": "Before initiating dapagliflozin, factors in the patient history that may predispose to ketoacidosis should be considered." }
+        ] },
+      { "t": "In illness with volume loss: volume status (examination, blood pressure, haematocrit and electrolytes).", "tag": "ongoing",
+        "src": [{ "s": "emc-7607", "q": "careful monitoring of volume status (e.g. physical examination, blood pressure measurements, laboratory tests including haematocrit and electrolytes) is recommended" }] },
+      { "t": "When hospitalised for major surgery or acute serious illness: interrupt and monitor blood ketones.", "tag": "ongoing",
+        "src": [
+          { "s": "mhra-dsu-sglt2-ketones-2020", "q": "interrupt sodium-glucose co-transporter 2 (SGLT2) inhibitor treatment in patients who are hospitalised for major surgical procedures or acute serious medical illnesses" },
+          { "s": "mhra-dsu-sglt2-ketones-2020", "q": "monitor ketones during this period - measurement of blood ketone levels is preferred to urine" }
+        ] },
+      { "t": "Stop immediately if DKA is suspected or diagnosed; do not restart any SGLT2 inhibitor after DKA on treatment unless another cause was found and resolved. Stop if Fournier's gangrene is suspected.", "tag": "stop",
+        "src": [
+          { "s": "mhra-dsu-sglt2-dka-2016", "q": "discontinue treatment with the SGLT2 inhibitor immediately if DKA is suspected or diagnosed" },
+          { "s": "mhra-dsu-sglt2-dka-2016", "q": "do not restart treatment with any SGLT2 inhibitor in patients who experienced DKA during use, unless another cause for DKA was identified and resolved" },
+          { "s": "mhra-dsu-sglt2-fournier-2019", "q": "if Fournier's gangrene is suspected, stop the SGLT2 inhibitor and urgently start treatment" }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Once daily at any time of day, with or without food. Swallow tablets whole.",
+        "src": [{ "s": "emc-7607", "q": "Forxiga can be taken orally once daily at any time of day with or without food. Tablets are to be swallowed whole." }] },
+      { "t": "SPS (off-label, swallowing difficulties in adults): the film-coated tablets can be crushed and mixed with water or given with soft food.", "detail": true,
+        "src": [{ "s": "sps-flozin-swallowing", "q": "Dapagliflozin tablets Film-coated but can be crushed and mixed with water or given with soft food." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Know the signs of ketoacidosis (e.g. rapid weight loss, feeling or being sick, stomach pain, fast deep breathing, sleepiness, sweet-smelling breath, sweet or metallic taste) and seek medical advice at once if they occur.",
+        "src": [
+          { "s": "mhra-dsu-sglt2-dka-2016", "q": "inform them of the signs and symptoms of diabetic ketoacidosis ( DKA ) - see below - and advise them to seek immediate medical advice if they develop any of these" },
+          { "s": "mhra-dsu-sglt2-dka-2016", "q": "rapid weight loss, feeling sick or being sick, stomach pain, fast and deep breathing, sleepiness, a sweet smell to the breath, a sweet or metallic taste in the mouth, or a different odour to urine or sweat" }
+        ] },
+      { "t": "Seek urgent medical attention for severe pain, tenderness, redness or swelling of the genitals or the area between the genitals and anus, with fever or feeling unwell.",
+        "src": [{ "s": "mhra-dsu-sglt2-fournier-2019", "q": "advise patients to seek urgent medical attention if they experience severe pain, tenderness, erythema, or swelling in the genital or perineal area, accompanied by fever or malaise" }] },
+      { "t": "Look after your feet (routine preventive foot care) and keep well hydrated.",
+        "src": [{ "s": "mhra-dsu-sglt2-amputation-2017", "q": "advise patients receiving any sodium-glucose co-transporter 2 (SGLT2) inhibitor about the importance of routine preventive foot care and adequate hydration" }] },
+      { "t": "With a sulfonylurea or insulin, be alert to low blood sugar, including when driving.", "detail": true,
+        "src": [{ "s": "emc-7607", "q": "Patients should be alerted to the risk of hypoglycaemia when dapagliflozin is used in combination with a sulphonylurea or insulin." }] },
+      { "t": "Urine glucose tests will show glucose; this is expected.", "detail": true,
+        "src": [{ "s": "emc-7607", "q": "patients taking Forxiga will test positive for glucose in their urine." }] }
+    ] }
+  },
+  "rules": [
+    { "id": "dapagliflozin:allergy:dapagliflozin", "kind": "allergy", "level": "contraindicated", "med": "dapagliflozin", "allergen": ["dapagliflozin"],
+      "concern": "Hypersensitivity to dapagliflozin", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity to the active substance",
+      "src": [{ "s": "emc-7607", "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+    { "id": "dapagliflozin:condition:type-1-diabetes", "kind": "condition", "level": "avoid", "med": "dapagliflozin", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Diabetic ketoacidosis was common in type 1 diabetes studies.", "action": "Should not be used for type 1 diabetes (no longer authorised for it); review and stop with a diabetes specialist.", "sourceWording": "should not be used for treatment of patients with type 1 diabetes",
+      "src": [
+        { "s": "emc-7607", "q": "In type 1 diabetes mellitus studies with dapagliflozin, DKA was reported with common frequency. Dapagliflozin should not be used for treatment of patients with type 1 diabetes." },
+        { "s": "mhra-dsu-dapagliflozin-t1dm-2021", "q": "dapagliflozin 5 mg is no longer authorised for the treatment of patients with type 1 diabetes mellitus" }
+      ] },
+    { "id": "dapagliflozin:condition:dka", "kind": "condition", "level": "avoid", "med": "dapagliflozin", "condition": "diabetic-ketoacidosis",
+      "concern": "Diabetic ketoacidosis (suspected or diagnosed)", "consequence": "SGLT2 inhibitors can cause or prolong ketoacidosis.", "action": "Stop dapagliflozin immediately.", "sourceWording": "should be stopped immediately",
+      "src": [{ "s": "emc-7607", "q": "In patients where DKA is suspected or diagnosed, dapagliflozin treatment should be stopped immediately." }] },
+    { "id": "dapagliflozin:condition:sglt2-dka-history", "kind": "condition", "level": "avoid", "med": "dapagliflozin", "condition": "sglt2-dka-history",
+      "concern": "Previous DKA while on an SGLT2 inhibitor", "consequence": "Risk of recurrent ketoacidosis.", "action": "Restarting is not recommended unless another clear precipitating factor was identified and resolved.", "sourceWording": "is not recommended",
+      "src": [{ "s": "emc-7607", "q": "Restarting SGLT2 inhibitor treatment in patients experiencing a DKA while on SGLT2 inhibitor treatment is not recommended, unless another clear precipitating factor is identified and resolved." }] },
+    { "id": "dapagliflozin:condition:pancreatitis", "kind": "condition", "level": "caution", "med": "dapagliflozin", "condition": "pancreatitis-history",
+      "concern": "History of pancreatitis (low beta-cell reserve)", "consequence": "Higher risk of diabetic ketoacidosis.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-7607", "q": "Patients who may be at higher risk of DKA include patients with a low beta-cell function reserve (e.g. type 2 diabetes patients with low C-peptide or latent autoimmune diabetes in adults (LADA) or patients with a history of pancreatitis)" },
+        { "s": "emc-7607", "q": "SGLT2 inhibitors should be used with caution in these patients." }
+      ] },
+    { "id": "dapagliflozin:condition:pancreatitis-current", "kind": "condition", "level": "caution", "med": "dapagliflozin", "condition": "pancreatitis",
+      "concern": "Pancreatitis recorded (acute or chronic): a history of pancreatitis means low beta-cell reserve", "consequence": "Higher risk of ketoacidosis.", "action": "Use with caution (the SmPC names a history of pancreatitis as a ketoacidosis risk factor).", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-7607", "q": "Patients who may be at higher risk of DKA include patients with a low beta-cell function reserve (e.g. type 2 diabetes patients with low C-peptide or latent autoimmune diabetes in adults (LADA) or patients with a history of pancreatitis)" },
+        { "s": "emc-7607", "q": "SGLT2 inhibitors should be used with caution in these patients." }
+      ] },
+    { "id": "dapagliflozin:condition:restricted-food-intake", "kind": "condition", "level": "caution", "med": "dapagliflozin", "condition": "malnutrition",
+      "concern": "Conditions that restrict food intake (e.g. undernourished or malnourished)", "consequence": "Higher risk of ketoacidosis.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-7607", "q": "patients with conditions that lead to restricted food intake or severe dehydration" },
+        { "s": "emc-7607", "q": "SGLT2 inhibitors should be used with caution in these patients." }
+      ] },
+    { "id": "dapagliflozin:condition:alcohol", "kind": "condition", "level": "caution", "med": "dapagliflozin", "condition": "alcohol-dependence",
+      "concern": "Alcohol abuse", "consequence": "Increased insulin needs; higher risk of diabetic ketoacidosis.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-7607", "q": "patients with increased insulin requirements due to acute medical illness, surgery or alcohol abuse. SGLT2 inhibitors should be used with caution in these patients." }
+      ] },
+    { "id": "dapagliflozin:condition:surgery", "kind": "condition", "level": "avoid", "med": "dapagliflozin", "condition": "surgery-planned",
+      "concern": "Hospital admission for major surgery or acute serious illness", "consequence": "Risk of diabetic ketoacidosis.", "action": "Interrupt treatment and monitor blood ketones; restart when ketones are normal and the patient is stable. Temporary stop only.", "sourceWording": "Treatment should be interrupted",
+      "src": [
+        { "s": "emc-7607", "q": "Treatment should be interrupted in patients who are hospitalised for major surgical procedures or acute serious medical illnesses. Monitoring of ketones is recommended in these patients." },
+        { "s": "emc-7607", "q": "Treatment with dapagliflozin may be restarted when the ketone values are normal and the patient's condition has stabilised." }
+      ] },
+    { "id": "dapagliflozin:condition:volume-depletion", "kind": "condition", "level": "avoid", "med": "dapagliflozin", "condition": "dehydration-hypovolaemia",
+      "concern": "Volume depletion / dehydration", "consequence": "Increased diuresis can worsen dehydration and hypotension.", "action": "Interrupt treatment until volume depletion is corrected; monitor volume status in illness causing fluid loss.", "sourceWording": "Temporary interruption of treatment ... is recommended",
+      "src": [{ "s": "emc-7607", "q": "Temporary interruption of treatment with dapagliflozin is recommended for patients who develop volume depletion until the depletion is corrected" }] },
+    { "id": "dapagliflozin:condition:hypotension", "kind": "condition", "level": "caution", "med": "dapagliflozin", "condition": "hypotension",
+      "concern": "History of hypotension (especially on antihypertensives)", "consequence": "Dapagliflozin lowers blood pressure modestly.", "action": "Use with caution.", "sourceWording": "Caution should be exercised",
+      "src": [{ "s": "emc-7607", "q": "Caution should be exercised in patients for whom a dapagliflozin-induced drop in blood pressure could pose a risk, such as patients on anti-hypertensive therapy with a history of hypotension or elderly patients." }] },
+    { "id": "dapagliflozin:condition:complicated-uti", "kind": "condition", "level": "caution", "med": "dapagliflozin", "condition": "complicated-uti",
+      "concern": "Pyelonephritis or urosepsis", "consequence": "Glucose in urine may increase urinary infection risk.", "action": "Consider temporary interruption while treating.", "sourceWording": "temporary interruption ... should be considered",
+      "src": [{ "s": "emc-7607", "q": "temporary interruption of dapagliflozin should be considered when treating pyelonephritis or urosepsis." }] },
+    { "id": "dapagliflozin:condition:galactose", "kind": "condition", "level": "avoid", "med": "dapagliflozin", "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption", "consequence": "Tablets contain lactose.", "action": "Should not take this medicine.", "sourceWording": "should not take this medicinal product",
+      "src": [{ "s": "emc-7607", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicinal product." }] },
+    { "id": "dapagliflozin:renal:lt15", "kind": "renal", "level": "avoid", "med": "dapagliflozin", "renal": { "measure": "eGFR", "max": 15 },
+      "concern": "eGFR < 15 mL/min/1.73 m²", "consequence": "No experience starting treatment at this level.", "action": "Do not start dapagliflozin (initiation not recommended).", "sourceWording": "It is not recommended to initiate treatment",
+      "src": [{ "s": "emc-7607", "q": "It is not recommended to initiate treatment with dapagliflozin in patients with an estimated glomerular filtration rate (eGFR) < 15 mL/min/1.73m2." }] },
+    { "id": "dapagliflozin:renal:lt45", "kind": "renal", "level": "info", "med": "dapagliflozin", "renal": { "measure": "eGFR", "min": 15, "max": 45 },
+      "concern": "eGFR < 45 mL/min/1.73 m² (type 2 diabetes)", "consequence": "Glucose-lowering effect reduced, likely absent in severe renal impairment.", "action": "For type 2 diabetes, consider additional glucose-lowering treatment. No dose change needed.", "sourceWording": "additional glucose lowering treatment should be considered",
+      "src": [{ "s": "emc-7607", "q": "if eGFR falls below 45 mL/min/1.73m2, additional glucose lowering treatment should be considered in patients with type 2 diabetes mellitus" }] },
+    { "id": "dapagliflozin:hepatic:severe", "kind": "hepatic", "level": "dose", "med": "dapagliflozin", "hepatic": ["severe"],
+      "concern": "Severe hepatic impairment", "consequence": "Increased dapagliflozin exposure.", "action": "Start at 5 mg; increase to 10 mg if well tolerated.", "sourceWording": "a starting dose of 5 mg is recommended",
+      "src": [{ "s": "emc-7607", "q": "In patients with severe hepatic impairment, a starting dose of 5 mg is recommended. If well tolerated, the dose may be increased to 10 mg" }] },
+    { "id": "dapagliflozin:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "dapagliflozin",
+      "concern": "Pregnancy", "consequence": "Animal studies: toxicity to the developing kidney (period matching 2nd and 3rd trimesters).", "action": "Not recommended in the 2nd and 3rd trimesters; stop when pregnancy is detected. BUMPS: use metformin, with insulin if needed.", "sourceWording": "not recommended during the second and third trimesters",
+      "src": [
+        { "s": "emc-7607", "q": "Therefore, the use of dapagliflozin is not recommended during the second and third trimesters of pregnancy." },
+        { "s": "emc-7607", "q": "When pregnancy is detected, treatment with dapagliflozin should be discontinued." },
+        { "s": "bumps-antidiabetic-drugs", "q": "As a precaution, they are avoided in pregnancy." }
+      ] },
+    { "id": "dapagliflozin:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "dapagliflozin",
+      "concern": "Breastfeeding", "consequence": "Excreted in animal milk with effects in offspring; infant risk cannot be excluded.", "action": "Should not be used while breastfeeding. SPS: insulin or metformin are preferred.", "sourceWording": "should not be used while breast-feeding",
+      "src": [
+        { "s": "emc-7607", "q": "A risk to the newborns/infants cannot be excluded. Dapagliflozin should not be used while breast-feeding." },
+        { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." }
+      ] },
+    { "id": "dapagliflozin:age:lt10", "kind": "age", "level": "info", "med": "dapagliflozin", "age": { "minYears": 0, "maxYears": 10 },
+      "concern": "Child under 10 years", "consequence": "No data; licensed for type 2 diabetes from 10 years only.", "action": "Not licensed below 10 years.", "sourceWording": "No data are available for children below 10 years of age",
+      "src": [
+        { "s": "emc-7607", "q": "No data are available for children below 10 years of age." },
+        { "s": "emc-7607", "q": "Forxiga is indicated in adults and children aged 10 years and above for the treatment of insufficiently controlled type 2 diabetes mellitus" }
+      ] },
+    { "id": "dapagliflozin:age:10-17", "kind": "age", "level": "info", "med": "dapagliflozin", "age": { "minYears": 10, "maxYears": 18 },
+      "concern": "Age 10 to 17 years", "consequence": "Heart failure and chronic kidney disease use not established under 18.", "action": "Licensed only for type 2 diabetes in this age group (10 mg once daily).", "sourceWording": "have not yet been established",
+      "src": [{ "s": "emc-7607", "q": "The safety and efficacy of dapagliflozin for the treatment of heart failure or for the treatment of chronic kidney disease in children < 18 years have not yet been established." }] },
+    { "id": "dapagliflozin:age:ge65", "kind": "age", "level": "caution", "med": "dapagliflozin", "age": { "minYears": 65 },
+      "concern": "Elderly (65 years and over)", "consequence": "Greater risk of volume depletion and hypotension; more often on diuretics.", "action": "Use with caution where a fall in blood pressure could be a risk. No dose change for age.", "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-7607", "q": "Caution should be exercised in patients for whom a dapagliflozin-induced drop in blood pressure could pose a risk, such as patients on anti-hypertensive therapy with a history of hypotension or elderly patients." },
+        { "s": "emc-7607", "q": "Elderly patients may be at a greater risk for volume depletion and are more likely to be treated with diuretics." }
+      ] },
+    { "id": "dapagliflozin:interaction:thiazide", "kind": "interaction", "level": "info", "med": "dapagliflozin", "other": "group:thiazide", "effect": "hypotension",
+      "concern": "Dapagliflozin + thiazide diuretic", "consequence": "Added diuretic effect; risk of dehydration and hypotension.", "action": "Be aware of volume depletion risk (see cautions).", "sourceWording": "may increase the risk of dehydration and hypotension",
+      "src": [{ "s": "emc-7607", "q": "Dapagliflozin may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and hypotension" }] },
+    { "id": "dapagliflozin:interaction:loop-diuretic", "kind": "interaction", "level": "info", "med": "dapagliflozin", "other": "group:loop-diuretic", "effect": "hypotension",
+      "concern": "Dapagliflozin + loop diuretic", "consequence": "Added diuretic effect; risk of dehydration and hypotension.", "action": "Be aware of volume depletion risk (see cautions).", "sourceWording": "may increase the risk of dehydration and hypotension",
+      "src": [{ "s": "emc-7607", "q": "Dapagliflozin may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and hypotension" }] },
+    { "id": "dapagliflozin:interaction:insulin", "kind": "interaction", "level": "dose", "med": "dapagliflozin", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Dapagliflozin + insulin", "consequence": "Higher risk of hypoglycaemia.", "action": "A lower insulin dose may be required.", "sourceWording": "a lower dose of insulin ... may be required",
+      "src": [{ "s": "emc-7607", "q": "a lower dose of insulin or an insulin secretagogue may be required to reduce the risk of hypoglycaemia when used in combination with dapagliflozin" }] },
+    { "id": "dapagliflozin:interaction:insulin-secretagogue", "kind": "interaction", "level": "dose", "med": "dapagliflozin", "other": "group:insulin-secretagogue", "effect": "hypoglycaemia",
+      "concern": "Dapagliflozin + insulin secretagogue (e.g. sulfonylurea)", "consequence": "Higher risk of hypoglycaemia.", "action": "A lower dose of the secretagogue may be required.", "sourceWording": "a lower dose of ... an insulin secretagogue may be required",
+      "src": [
+        { "s": "emc-7607", "q": "Insulin and insulin secretagogues, such as sulphonylureas, cause hypoglycaemia." },
+        { "s": "emc-7607", "q": "a lower dose of insulin or an insulin secretagogue may be required to reduce the risk of hypoglycaemia when used in combination with dapagliflozin" }
+      ] }
+  ]
+}

@@ -1,7 +1,7 @@
 // Logic tests for src/lib/medcheck/engine.js using a small SYNTHETIC knowledge base (not clinical data).
 //   node scripts/medcheck-uk/test-engine.mjs
 import assert from 'node:assert/strict'
-import { assess, cockcroftGault, calcDose } from '../../src/lib/medcheck/engine.js'
+import { assess, cockcroftGault, calcDose, isLocal } from '../../src/lib/medcheck/engine.js'
 
 const S = [{ s: 'x', q: 'q' }]
 const kb = {
@@ -232,5 +232,28 @@ t('values are shown as entered, not rounded across a threshold', () => {
 })
 t('same medicine twice: interactions "needs 2 or more medicines", not "none found"', () => {
   assert.equal(assess(kb, sel('warf', 'warf'), {}).checks.interactions.status, 'na')
+})
+t('systemic interaction matched by ingredient/group does not fire for a skin product; a rule naming it still does', () => {
+  const k2 = { ...kb, medicines: [...kb.medicines, { id: 'ibu-gel', name: 'Ibuprofen gel', ingredients: ['ibu'], groups: ['nsaid'], formulations: [{ id: 'g', label: 'Gel', route: 'topical' }], sections: {} }],
+    rules: [...kb.rules, { id: 'w-gel', kind: 'interaction', level: 'caution', med: 'warf', other: 'ibu-gel', concern: 'Gel named', consequence: 'c', action: 'x', src: S }] }
+  const r = assess(k2, sel('warf', 'ibu-gel'), {})
+  assert.ok(!r.findings.some((f) => f.ruleIds.includes('w-nsaid')))
+  assert.ok(r.findings.some((f) => f.ruleIds.includes('w-gel')))
+})
+t('no-UK combination uses its UK components\' rules, labelled, and lists missing ingredients', () => {
+  const k2 = { ...kb, medicines: [...kb.medicines, { id: 'warf-x', name: 'Warfarin/X', ingredients: ['warf', 'x'], groups: [], availability: { status: 'no-uk-product' }, components: { use: ['warf'], missing: ['X'] }, formulations: [{ id: 'wx', label: 'Tablets', route: 'oral' }], sections: {} }] }
+  const r = assess(k2, sel('warf-x', 'ibu'), {})
+  const f = r.findings.find((x) => x.kind === 'interaction')
+  assert.ok(f && /no UK combination product/.test(f.provisional))
+  assert.ok(r.unchecked[0].includes('not checked: X'))
+})
+t('route check: subcutaneous/intradermal injections are systemic; skin, eye, ear, nose, vaginal products are local', () => {
+  for (const r of ['subcutaneous', 'subcutaneous injection', 'intradermal', 'oral', 'inhalation', 'rectal']) assert.equal(isLocal({ route: r }), false, r)
+  for (const r of ['topical', 'cutaneous', 'eye drops', 'ear', 'nasal spray', 'vaginal', 'oromucosal']) assert.equal(isLocal({ route: r }), true, r)
+})
+t('duplicate ingredient only within the same kind of use (eye drops vs tablets are not duplicates)', () => {
+  const k2 = { ...kb, medicines: [...kb.medicines, { id: 'para-eye', name: 'Para eye', ingredients: ['para'], groups: [], formulations: [{ id: 'pe', label: 'Eye drops', route: 'eye' }], sections: {} }] }
+  assert.equal(assess(k2, sel('para', 'para-eye'), {}).findings.filter((f) => f.kind === 'duplication').length, 0)
+  assert.equal(assess(k2, sel('para', 'cocod'), {}).findings.filter((f) => f.kind === 'duplication').length, 1)
 })
 console.log(`\n${n} engine tests passed`)

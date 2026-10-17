@@ -1,0 +1,1317 @@
+{
+  "id": "metronidazole",
+  "name": "Metronidazole",
+  "ingredients": [
+    "metronidazole"
+  ],
+  "availability": {
+    "status": "uk"
+  },
+  "className": "Nitroimidazole antibacterial and antiprotozoal",
+  "groups": [
+    "nitroimidazole",
+    "antibacterial"
+  ],
+  "searchTerms": [
+    "metronidazole benzoate"
+  ],
+  "formulations": [
+    {
+      "id": "metronidazole-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "200 mg",
+      "release": "immediate",
+      "note": "Main sources: two UK SmPCs for 200 mg tablets. A third UK SmPC (500 mg film-coated tablets) is quoted only where its wording is stricter (pregnancy, breastfeeding, Cockayne syndrome, epilepsy).",
+      "src": [
+        {
+          "s": "emc-12348",
+          "q": "Each tablet contains Metronidazole 200mg."
+        },
+        {
+          "s": "emc-13016",
+          "q": "Each film-coated tablet contains 500 mg metronidazole."
+        }
+      ],
+      "sourceIds": [
+        "emc-12348",
+        "emc-13521",
+        "emc-13016"
+      ]
+    },
+    {
+      "id": "metronidazole-susp",
+      "label": "Oral suspension",
+      "route": "oral",
+      "strengths": "200 mg/5 ml",
+      "release": "n/a",
+      "note": "Contains sucrose (2500 mg/5 ml), sorbitol, propylene glycol and methyl parahydroxybenzoate.",
+      "src": [
+        {
+          "s": "emc-101002",
+          "q": "Each 5 ml of suspension contains metronidazole benzoate equivalent to metronidazole 200 mg."
+        },
+        {
+          "s": "emc-101002",
+          "q": "Sucrose: 2500 mg/5 ml"
+        },
+        {
+          "s": "emc-101002",
+          "q": "Propylene glycol (E1520): 61.75 mg/5 ml"
+        }
+      ],
+      "sourceIds": [
+        "emc-101002"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Prophylaxis and treatment of infections where anaerobic bacteria are identified or suspected: prevention of post-operative anaerobic infection; septicaemia, bacteraemia, peritonitis, brain abscess, necrotising pneumonia, osteomyelitis, puerperal sepsis, pelvic abscess or cellulitis and post-operative wound infections with anaerobes.",
+          "tag": "Anaerobic infections",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Metronidazole is indicated in the prophylaxis and treatment of infections in which anaerobic bacteria have been identified or are suspected to be the cause."
+            },
+            {
+              "s": "emc-12348",
+              "q": "The treatment of septicaemia, bacteraemia, peritonitis, brain abscess, necrotising pneumonia, osteomyelitis, puerperal sepsis, pelvic abscess, pelvic cellulitis, and post-operative wound infections from which pathogenic anaerobes have been isolated."
+            }
+          ]
+        },
+        {
+          "t": "Urogenital trichomoniasis (women and men), bacterial vaginosis, all forms of amoebiasis, giardiasis, acute ulcerative gingivitis, anaerobically infected leg ulcers and pressure sores, acute dental infections.",
+          "tag": "Protozoal and other infections",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Urogenital trichomoniasis in the female"
+            },
+            {
+              "s": "emc-12348",
+              "q": "All forms of amoebiasis (intestinal and extra-intestinal disease and that of symptomless cyst passers). 6. Giardiasis. 7. Acute ulcerative gingivitis. 8. Anaerobically-infected leg ulcers and pressure sores. 9. Acute dental infections"
+            }
+          ]
+        },
+        {
+          "t": "Suspension SmPC: bacterial vaginosis, acute dental infections and leg ulcers/pressure sores are licensed only for adults and children over 10 years; Helicobacter pylori eradication is listed for children.",
+          "tag": "Oral suspension",
+          "formulations": [
+            "metronidazole-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-101002",
+              "q": "Adults and children over 10 years only for: Bacterial vaginosis"
+            },
+            {
+              "s": "emc-101002",
+              "q": "Children for Eradication of Helicobacter pylori"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction (specialist-only, shared care or brand prescribing) in the four UK SmPCs checked (two 200 mg tablet SmPCs, one 500 mg tablet SmPC, one oral suspension SmPC); they only say to consider official guidance on antibacterial use."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Surgical prophylaxis (mainly colorectal and gynaecological surgery): 400 mg every 8 hours during the 24 hours before the operation, then intravenous or rectal metronidazole until tablets can be taken.",
+          "tag": "Adults - prophylaxis",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "400 mg 8 hourly during 24 hours immediately preceding operation followed by post-operative intravenous or rectal administration until the patient is able to take tablets."
+            }
+          ]
+        },
+        {
+          "t": "Established anaerobic infection: 800 mg, then 400 mg every 8 hours. A course is usually about 7 days, depending on clinical and bacteriological assessment.",
+          "tag": "Adults - anaerobic infection",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Adults : 800 mg followed by 400 mg 8 hourly."
+            },
+            {
+              "s": "emc-12348",
+              "q": "The duration of a course of metronidazole treatment is about 7 days"
+            }
+          ]
+        },
+        {
+          "t": "Urogenital trichomoniasis: 2000 mg as a single dose, or 200 mg three times daily for 7 days, or 400 mg twice daily for 5 to 7 days. Where re-infection is likely, treat the partner at the same time.",
+          "tag": "Adults and children over 10 years",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "2000 mg as a single dose Or 200 mg three times daily or 400 mg twice daily"
+            },
+            {
+              "s": "emc-12348",
+              "q": "in adults the consort should receive a similar course of treatment concurrently"
+            }
+          ]
+        },
+        {
+          "t": "Bacterial vaginosis: 400 mg twice daily for 5 to 7 days, or 2000 mg as a single dose.",
+          "tag": "Adults and children over 10 years",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Bacterial vaginosis 5 - 7 Or 1 400 mg twice daily Or 2000 mg as a single dose"
+            }
+          ]
+        },
+        {
+          "t": "Amoebiasis: invasive intestinal disease 800 mg three times daily for 5 days; less susceptible intestinal disease or chronic amoebic hepatitis 400 mg three times daily for 5 to 10 days; symptomless cyst passers 400 to 800 mg three times daily for 5 to 10 days. Alternatively 35 to 50 mg/kg daily in 3 divided doses for 5 to 10 days, not more than 2400 mg/day.",
+          "tag": "Adults and children over 10 years",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Invasive intestinal disease in susceptible subjects 5 800 mg three times daily"
+            },
+            {
+              "s": "emc-12348",
+              "q": "Intestinal disease in less susceptible subjects and chronic amoebic hepatitis 5 - 10 400 mg three times daily"
+            },
+            {
+              "s": "emc-12348",
+              "q": "35 to 50 mg/kg daily in 3 divided doses for 5 to 10 days, not to exceed 2400 mg/day"
+            }
+          ]
+        },
+        {
+          "t": "Giardiasis: 2000 mg once daily for 3 days, or 400 mg three times daily for 5 days, or 500 mg twice daily for 7 to 10 days.",
+          "tag": "Adults and children over 10 years",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Giardiasis 3 Or 5 Or 7 - 10 2000 mg once daily Or 400 mg three times daily Or 500 mg twice daily"
+            }
+          ]
+        },
+        {
+          "t": "Acute ulcerative gingivitis: 200 mg three times daily for 3 days. Acute dental infections: 200 mg three times daily for 3 to 7 days. Leg ulcers and pressure sores: 400 mg three times daily for 7 days.",
+          "tag": "Adults and children over 10 years",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Acute ulcerative gingivitis 3 200 mg three times daily"
+            },
+            {
+              "s": "emc-12348",
+              "q": "Acute dental infections 3 - 7 200 mg three times daily"
+            },
+            {
+              "s": "emc-12348",
+              "q": "Leg ulcers and pressure sores 7 400 mg three times daily"
+            }
+          ]
+        },
+        {
+          "t": "Elderly: well tolerated, but use high-dose regimens with caution.",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "a pharmacokinetic study suggests cautious use of high dosage regimens in this age group"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Surgical prophylaxis: children under 12 years 20 to 30 mg/kg as a single dose 1 to 2 hours before surgery; newborns with gestation age under 40 weeks 10 mg/kg as a single dose before the operation.",
+          "tag": "Prophylaxis",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Children < 12 years : 20-30mg/kg as a single dose given 1-2 hours before surgery"
+            },
+            {
+              "s": "emc-12348",
+              "q": "Newborns with a gestation age < 40 weeks: 10 mg/kg body weight as a single dose before operation."
+            }
+          ]
+        },
+        {
+          "t": "Anaerobic infection, over 8 weeks to 12 years: 20 to 30 mg/kg/day as a single dose or 7.5 mg/kg every 8 hours; may be increased to 40 mg/kg/day; usually 7 days. Under 8 weeks: 15 mg/kg once daily or 7.5 mg/kg every 12 hours. Newborns under 40 weeks gestation can accumulate metronidazole in the first week; monitor serum levels after a few days.",
+          "tag": "Anaerobic infection",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "The usual daily dose is 20-30 mg/kg/day as a single dose or divided into 7.5 mg/kg every 8 hours. The daily dose may be increased to 40 mg/kg, depending on the severity of the infection."
+            },
+            {
+              "s": "emc-12348",
+              "q": "Children < 8 weeks of age : 15 mg/kg as a single dose daily or divided into 7.5 mg/kg every 12 hours."
+            },
+            {
+              "s": "emc-12348",
+              "q": "accumulation of metronidazole can occur during the first week of life"
+            }
+          ],
+          "calc": {
+            "mgPerKg": 7.5,
+            "per": "dose",
+            "ageMinYears": 0.16,
+            "ageMaxYears": 12,
+            "of": "metronidazole"
+          }
+        },
+        {
+          "t": "Trichomoniasis (children): 40 mg/kg as a single dose, or 15 to 30 mg/kg/day in 2 to 3 divided doses, not more than 2000 mg per dose (suspension SmPC; the tablet SmPC table prints this limit as \"2000 mg/kg dose\"). Giardiasis for 3 days: 7 to 10 years 1000 mg once daily, 3 to 7 years 600 to 800 mg once daily, 1 to 3 years 500 mg once daily (or 15 to 40 mg/kg/day in 2 to 3 doses). Amoebiasis and gingivitis doses are banded by age in the SmPC table.",
+          "tag": "Protozoal infections",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "40 mg/kg orally as a single dose Or 15 - 30 mg/kg/day divided in 2 - 3 doses"
+            },
+            {
+              "s": "emc-12348",
+              "q": "1000 mg once daily 600 - 800 mg once daily 500 mg once daily"
+            },
+            {
+              "s": "emc-12348",
+              "q": "15 - 40 mg/kg/day divided in 2 - 3 doses"
+            },
+            {
+              "s": "emc-101002",
+              "q": "15 - 30mg/kg/day divided in 2 - 3 doses not to exceed 2000mg/dose"
+            }
+          ]
+        },
+        {
+          "t": "Helicobacter pylori eradication (part of combination therapy): 20 mg/kg/day, not more than 500 mg twice daily, for 7 to 14 days; consult official guidelines first.",
+          "tag": "H. pylori",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "20 mg/kg/day not to exceed 500 mg twice daily for 7 - 14 days"
+            }
+          ]
+        },
+        {
+          "t": "Children and infants under 10 kg: give proportionally smaller doses.",
+          "tag": "Under 10 kg",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Children and infants weighing less than 10 kg should receive proportionally smaller dosages."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Known hypersensitivity to nitroimidazoles, metronidazole or any excipient. The suspension also lists hydroxybenzoates (parabens).",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Known hypersensitivity to nitroimidazoles, metronidazole or any of the excipients listed in section 6.1."
+            },
+            {
+              "s": "emc-101002",
+              "q": "Known hypersensitivity to metronidazole, nitroimidazoles and/or hydroxybenzoates or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Tablets: one UK SmPC (500 mg tablets) also lists in section 4.3: first trimester of pregnancy when treating trichomoniasis or bacterial vaginosis; breastfeeding must stop for 12 to 24 hours after single high-dose (e.g. 2 g) therapy; Cockayne syndrome. The two 200 mg tablet SmPCs and the suspension SmPC do not list these in 4.3.",
+          "tag": "One UK SmPC only",
+          "src": [
+            {
+              "s": "emc-13016",
+              "q": "Pregnancy - metronidazole should not be used in the first trimester in patients with trichomoniasis or bacterial vaginosis"
+            },
+            {
+              "s": "emc-13016",
+              "q": "Breast feeding should be discontinued for 12-24 hours when single high dose (e.g. 2g) therapy is used"
+            },
+            {
+              "s": "emc-13016",
+              "q": "Patients with Cockayne syndrome (see section 4.8)"
+            }
+          ],
+          "formulations": [
+            "metronidazole-tab"
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Cockayne syndrome: severe and fatal hepatotoxicity with very rapid onset reported. Do not use unless benefit outweighs risk and there is no alternative. Check liver function just before, during and after treatment; stop if tests become markedly raised. (The suspension SmPC words this as use only after careful benefit-risk assessment and if no alternative.)",
+          "tag": "Cockayne syndrome",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "In this population, metronidazole should not be used unless the benefit is considered to outweigh the risk and if no alternative treatment is available."
+            },
+            {
+              "s": "emc-12348",
+              "q": "Liver function tests must be performed just prior to the start of therapy, throughout and after end of treatment"
+            },
+            {
+              "s": "emc-101002",
+              "q": "metronidazole should therefore be used after careful benefit-risk assessment and only if no alternative treatment is available"
+            }
+          ]
+        },
+        {
+          "t": "Treatment for more than 10 days: regular clinical and laboratory monitoring (especially leucocyte count) and watch for peripheral or central neuropathy (paraesthesia, ataxia, dizziness, vertigo, seizures). Longer courses than usual should be carefully considered (mutagenicity data inadequate).",
+          "tag": "Prolonged treatment",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Regular clinical and laboratory monitoring (especially leucocyte count) are advised if administration of metronidazole for more than 10 days is considered to be necessary"
+            },
+            {
+              "s": "emc-12348",
+              "q": "the use of metronidazole for longer treatment than usually required should be carefully considered"
+            }
+          ]
+        },
+        {
+          "t": "Active or chronic severe peripheral or central nervous system disease: use with caution (risk of neurological worsening).",
+          "tag": "Neurological disease",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Metronidazole should be used with caution in patients with active or chronic severe peripheral and central nervous system disease due to the risk of neurological aggravation."
+            }
+          ]
+        },
+        {
+          "t": "One UK SmPC (500 mg tablets): caution in epilepsy or previous seizures, as high doses can induce seizures.",
+          "tag": "Epilepsy (one UK SmPC)",
+          "src": [
+            {
+              "s": "emc-13016",
+              "q": "Caution in patients with epilepsy or those who have had seizures as high doses of Metronidazole can induce seizures."
+            }
+          ],
+          "formulations": [
+            "metronidazole-tab"
+          ]
+        },
+        {
+          "t": "Hepatic encephalopathy: use with caution; metronidazole can accumulate and worsen encephalopathy. Reduce the daily dose to one third, which may be given once daily (see hepatic).",
+          "tag": "Hepatic encephalopathy",
+          "src": [
+            {
+              "s": "emc-13521",
+              "q": "Metronidazole Tablets should therefore, be administered with caution to patients with hepatic encephalopathy. The daily dosage should be reduced to one third and may be administered once daily."
+            }
+          ]
+        },
+        {
+          "t": "Severe bullous skin reactions (SJS, TEN, AGEP): stop metronidazole immediately if signs appear.",
+          "tag": "Skin",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "If symptoms or signs of SJS, TEN or AGEP are present, metronidazole treatment must be immediately discontinued."
+            }
+          ]
+        },
+        {
+          "t": "Gonococcal infection may persist after Trichomonas is cleared. Metronidazole may give falsely low results for ALT, AST, LDH, triglycerides and glucose in some assays.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "There is a possibility that after Trichomonas vaginalis has been eliminated a gonococcal infection might persist."
+            },
+            {
+              "s": "emc-12348",
+              "q": "which may lead to false negative or an abnormally low result"
+            }
+          ]
+        },
+        {
+          "t": "Suspension excipients: hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take it (sorbitol, sucrose). Contains propylene glycol (medical monitoring in renal or hepatic impairment) and methyl parahydroxybenzoate (possible delayed allergy).",
+          "tag": "Suspension excipients",
+          "formulations": [
+            "metronidazole-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-101002",
+              "q": "Patients with hereditary fructose intolerance (HFI) should not take/be given this medicinal product."
+            },
+            {
+              "s": "emc-101002",
+              "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+            },
+            {
+              "s": "emc-101002",
+              "q": "Medical monitoring is required in patients with impaired renal or hepatic functions"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Alcohol: advise no alcohol during treatment and for at least 48 hours afterwards (disulfiram-like reaction).",
+          "tag": "Alcohol",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Patients should be advised not to take alcohol during metronidazole therapy and for at least 48 hours afterwards because of the possibility of a disulfiram-like (antabuse effect) reaction."
+            }
+          ]
+        },
+        {
+          "t": "Warfarin-type oral anticoagulants: anticoagulant effect may be increased; the anticoagulant dose may need reducing; monitor prothrombin time. No interaction with heparin.",
+          "tag": "Warfarin",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Some potentiation of anti-coagulant therapy has been reported when metronidazole has been used with the warfarin type oral anticoagulants. Dosage of the latter may require reducing. Prothrombin times should be monitored."
+            }
+          ]
+        },
+        {
+          "t": "Carbamazepine (suspension SmPC): raised carbamazepine levels and toxicity reported.",
+          "tag": "Carbamazepine",
+          "src": [
+            {
+              "s": "emc-101002",
+              "q": "Increased serum carbamazepine levels and toxicity have been seen in patients given concomitant metronidazole."
+            }
+          ]
+        },
+        {
+          "t": "QT-prolonging drugs (tablet SmPCs): QT prolongation has been reported, mainly when metronidazole was given with drugs that can prolong the QT interval.",
+          "tag": "QT-prolonging drugs",
+          "formulations": [
+            "metronidazole-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "QT prolongation has been reported, particularly when metronidazole was administered with drugs with the potential for prolonging the QT interval."
+            }
+          ]
+        },
+        {
+          "t": "Mebendazole: the mebendazole SmPC says avoid the combination (possible link with Stevens-Johnson syndrome/TEN).",
+          "tag": "Mebendazole",
+          "src": [
+            {
+              "s": "emc-975",
+              "q": "concomitant use of mebendazole and metronidazole should be avoided"
+            }
+          ]
+        },
+        {
+          "t": "Lithium: taper or stop lithium before metronidazole; if both are used, monitor lithium, creatinine and electrolytes. Disulfiram: psychotic reactions. Ciclosporin (and tacrolimus, suspension SmPC): monitor levels and creatinine closely. Also raises 5-fluorouracil and busulfan toxicity. Phenytoin and phenobarbital speed up metronidazole metabolism.",
+          "tag": "Other medicines (not in the checker list)",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Lithium treatment should be tapered or withdrawn before administering metronidazole."
+            },
+            {
+              "s": "emc-12348",
+              "q": "Psychotic reactions have been reported in patients who were using metronidazole and disulfiram concurrently."
+            },
+            {
+              "s": "emc-101002",
+              "q": "Serum ciclosporin / tacrolimus and serum creatinine should be closely monitored when coadministration is necessary."
+            },
+            {
+              "s": "emc-12348",
+              "q": "Plasma levels of busulfan may be increased by metronidazole which may lead to severe busulfan toxicity."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Renal failure: half-life unchanged, so no dose reduction is needed (metabolites are retained; significance unknown).",
+          "tag": "Renal failure",
+          "src": [
+            {
+              "s": "emc-13521",
+              "q": "The elimination half-life of metronidazole remains unchanged in the presence of renal failure. The dosage of metronidazole therefore needs no reduction."
+            }
+          ]
+        },
+        {
+          "t": "Haemodialysis removes metronidazole: give the dose again immediately after haemodialysis. No routine adjustment on intermittent peritoneal dialysis or CAPD.",
+          "tag": "Dialysis",
+          "src": [
+            {
+              "s": "emc-13521",
+              "q": "Metronidazole should therefore be re-administered immediately after haemodialysis."
+            },
+            {
+              "s": "emc-101002",
+              "q": "No routine adjustment in the dosage of Metronidazole need be made in patients with renal failure undergoing intermittent peritoneal dialysis (IPD) or continuous ambulatory peritoneal dialysis (CAPD)."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Mainly metabolised by the liver; clearance may be substantially reduced in advanced hepatic insufficiency. In hepatic encephalopathy use with caution and reduce the daily dose to one third, which may be given once daily (one tablet SmPC says 'should', the suspension SmPC says 'may').",
+          "tag": "Advanced hepatic insufficiency",
+          "src": [
+            {
+              "s": "emc-13521",
+              "q": "Substantial impairment of metronidazole clearance may occur in the presence of advanced hepatic insufficiency."
+            },
+            {
+              "s": "emc-13521",
+              "q": "The daily dosage should be reduced to one third and may be administered once daily."
+            },
+            {
+              "s": "emc-101002",
+              "q": "The daily dosage may be reduced to one third and may be administered once daily."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPCs: safety evidence in pregnancy is inadequate (though widely used without apparent harm). Do not give in pregnancy unless the physician considers it essential; if used, short high-dose regimens are not recommended.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "should not be given during pregnancy or during lactation unless the physician considers it essential; in these circumstances the short, high-dosage regimens are not recommended"
+            }
+          ]
+        },
+        {
+          "t": "One UK SmPC (500 mg tablets): contraindicated in the first trimester when treating trichomoniasis or bacterial vaginosis; use with caution in the second and third trimesters for these; for other indications use only if benefit outweighs risk or no alternative, especially in the first trimester.",
+          "tag": "One UK SmPC",
+          "src": [
+            {
+              "s": "emc-13016",
+              "q": "Metronidazole is contraindicated in the first trimester (see section 4.3) and should be used with caution in the second and third trimester when used to treat trichomoniasis or bacterial vaginosis"
+            },
+            {
+              "s": "emc-13016",
+              "q": "For all other indications Metronidazole should only be used if the benefits outweigh the risks or no other alternative is available especially in the first trimester."
+            }
+          ],
+          "formulations": [
+            "metronidazole-tab"
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS): metronidazole is well studied in pregnancy and not known to cause birth defects, stillbirth, low birth weight or preterm delivery; it may be recommended where benefits outweigh possible risks. Some studies suggest more miscarriage with early use, but the infection itself may be the cause.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-metronidazole",
+              "q": "Metronidazole use in pregnancy has been well studied and is not known to cause birth defects, stillbirth, low birth weight, or preterm delivery."
+            },
+            {
+              "s": "bumps-metronidazole",
+              "q": "Metronidazole may be recommended for some types of infection where the benefits of treatment are thought to outweigh the possible risks."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPCs: do not give during breastfeeding unless the physician considers it essential. Suspension SmPC: a significant amount passes into milk; avoid breastfeeding after a large dose (milk may taste bitter).",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "should not be given during pregnancy or during lactation unless the physician considers it essential"
+            },
+            {
+              "s": "emc-101002",
+              "q": "A significant amount of metronidazole is found in breast milk and breast feeding should be avoided after a large dose."
+            }
+          ]
+        },
+        {
+          "t": "One UK SmPC (500 mg tablets): stop breastfeeding for 12 to 24 hours after single high-dose (e.g. 2 g) therapy (section 4.3), and it is advisable to stop until 12 to 24 hours after treatment ends.",
+          "tag": "One UK SmPC",
+          "src": [
+            {
+              "s": "emc-13016",
+              "q": "Breast feeding should be discontinued for 12-24 hours when single high dose (e.g. 2g) therapy is used"
+            },
+            {
+              "s": "emc-13016",
+              "q": "It is advisable to stop breast feeding until 12 - 24 hours after Metronidazole therapy has been discontinued"
+            }
+          ],
+          "formulations": [
+            "metronidazole-tab"
+          ]
+        },
+        {
+          "t": "SPS: short courses of oral metronidazole are compatible with breastfeeding with infant monitoring; no interruption is needed, even after 2 g doses (single or daily for 3 days). Monitor the infant for poor feeding, weight gain, vomiting/diarrhoea, oral thrush, irritability and rash. Seek specialist advice for use longer than a few weeks.",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-bf-metronidazole",
+              "q": "Short courses of oral, intravenous or rectal metronidazole are considered to be compatible with breastfeeding, but infant monitoring is recommended."
+            },
+            {
+              "s": "sps-bf-metronidazole",
+              "q": "No interruption of breastfeeding is required, even after 2g oral doses (as a single dose, or daily for a three-day course)."
+            },
+            {
+              "s": "sps-bf-metronidazole",
+              "q": "If use is required for longer than a few weeks, contact our specialist service for further advice."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "The UK SmPCs checked give no fertility or contraception advice. BUMPS: no evidence that use by the father harms the baby through effects on sperm.",
+          "src": [
+            {
+              "s": "bumps-metronidazole",
+              "q": "There is no evidence that metronidazole used by the father can harm the baby through effects on the sperm."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "The SmPCs list no adverse effect as common. Gastrointestinal effects (taste disturbance, oral mucositis, furred tongue, nausea, vomiting, epigastric pain, diarrhoea) and darkening of urine are listed (frequency not known or very rare).",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Not known: taste disorders, oral mucositis, furred tongue, nausea, vomiting, gastro-intestinal disturbances such as epigastric pain and diarrhoea"
+            },
+            {
+              "s": "emc-12348",
+              "q": "Very rare: darkening of urine (due to metronidazole metabolite)."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Peripheral sensory neuropathy or epileptiform seizures (mainly intensive or prolonged treatment), encephalopathy and cerebellar syndrome: usually resolve when stopped or dose reduced. Weigh benefit against neuropathy risk before long-term use.",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "during intensive and/or prolonged metronidazole therapy, peripheral sensory neuropathy or transient epileptiform seizures have been reported"
+            },
+            {
+              "s": "emc-12348",
+              "q": "consider the possible therapeutic benefit against the risk of peripheral neuropathy"
+            }
+          ]
+        },
+        {
+          "t": "Stevens-Johnson syndrome, TEN, AGEP: stop immediately.",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "If symptoms or signs of SJS, TEN or AGEP are present, metronidazole treatment must be immediately discontinued."
+            }
+          ]
+        },
+        {
+          "t": "Hepatitis, jaundice and pancreatitis (reversible on withdrawal); liver failure needing transplant reported with metronidazole plus other antibiotics; fatal acute liver failure in Cockayne syndrome.",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "cholestatic or mixed hepatitis and hepatocellular liver injury, jaundice and pancreatitis which is reversible on drug withdrawal"
+            },
+            {
+              "s": "emc-12348",
+              "q": "cases of liver failure requiring liver transplant have been reported in patients treated with metronidazole in combination with other antibiotic drugs"
+            }
+          ]
+        },
+        {
+          "t": "Agranulocytosis, neutropenia, thrombocytopenia, pancytopenia (very rare); anaphylaxis (rare); optic neuropathy, hearing loss and aseptic meningitis (frequency not known).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Very rare: agranulocytosis, neutropenia, thrombocytopenia, pancytopenia"
+            },
+            {
+              "s": "emc-12348",
+              "q": "Rare: anaphylaxis"
+            },
+            {
+              "s": "emc-12348",
+              "q": "Not known: optic neuropathy/neuritis"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Cockayne syndrome: liver function tests just before starting, during and after treatment until normal or back to baseline; stop if markedly raised.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Liver function tests must be performed just prior to the start of therapy, throughout and after end of treatment until liver function is within normal ranges, or until the baseline values are reached."
+            }
+          ]
+        },
+        {
+          "t": "Treatment longer than 10 days: regular clinical and laboratory monitoring, especially leucocyte count, and watch for neuropathy.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Regular clinical and laboratory monitoring (especially leucocyte count) are advised if administration of metronidazole for more than 10 days is considered to be necessary"
+            }
+          ]
+        },
+        {
+          "t": "On warfarin: monitor prothrombin time. On lithium: monitor lithium, creatinine and electrolytes.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Prothrombin times should be monitored."
+            },
+            {
+              "s": "emc-12348",
+              "q": "Plasma concentrations of lithium, creatinine and electrolytes should be monitored in patients under treatment with lithium while they receive metronidazole."
+            }
+          ]
+        },
+        {
+          "t": "Stop if SJS/TEN/AGEP signs appear, or (Cockayne syndrome) if liver tests become markedly raised.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "If the liver function tests become markedly elevated during treatment, the drug should be discontinued."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Tablets: swallow with water, do not chew; take during or after a meal.",
+          "formulations": [
+            "metronidazole-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Metronidazole tablets should be swallowed with water (not chewed). It is recommended that the tablets be taken during or after a meal."
+            }
+          ]
+        },
+        {
+          "t": "Suspension: shake the bottle well; use an oral dosing device for doses under 5 ml. Discard 14 days after opening.",
+          "formulations": [
+            "metronidazole-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-101002",
+              "q": "Shake the bottle well before use. If a dose of under 5ml is required, the suspension should be administered using an oral dosing device."
+            },
+            {
+              "s": "emc-101002",
+              "q": "After opening discard any unused suspension after 14 days."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Do not drink alcohol during the course and for at least 48 hours after the last dose.",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Patients should be advised not to take alcohol during metronidazole therapy and for at least 48 hours afterwards"
+            }
+          ]
+        },
+        {
+          "t": "Urine may turn dark.",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Patients should be warned that metronidazole may darken urine."
+            }
+          ]
+        },
+        {
+          "t": "Do not drive or use machines if drowsiness, dizziness, vertigo, confusion, hallucinations, fits or visual problems occur.",
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "advised not to drive or operate machinery if these symptoms occur"
+            }
+          ]
+        },
+        {
+          "t": "Cockayne syndrome: stop taking it and report any sign of liver injury to the doctor at once.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-12348",
+              "q": "Patients with Cockayne Syndrome should be advised to immediately report any symptoms of potential liver injury to their physician and stop taking metronidazole"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "metronidazole:allergy:nitroimidazole",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "metronidazole",
+      "allergen": [
+        "metronidazole",
+        "group:nitroimidazole"
+      ],
+      "concern": "Hypersensitivity to metronidazole or other nitroimidazoles (suspension: also hydroxybenzoates)",
+      "consequence": "Hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Known hypersensitivity to nitroimidazoles, metronidazole",
+      "src": [
+        {
+          "s": "emc-12348",
+          "q": "Known hypersensitivity to nitroimidazoles, metronidazole or any of the excipients listed in section 6.1."
+        },
+        {
+          "s": "emc-101002",
+          "q": "Known hypersensitivity to metronidazole, nitroimidazoles and/or hydroxybenzoates or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:condition:cockayne-500mg-smpc",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "metronidazole",
+      "formulations": [
+        "metronidazole-tab"
+      ],
+      "condition": "cockayne-syndrome",
+      "concern": "Cockayne syndrome (tablets: one UK SmPC, 500 mg tablets, section 4.3)",
+      "consequence": "Severe, sometimes fatal, rapid-onset hepatotoxicity.",
+      "action": "Contraindicated in this SmPC. The other UK SmPCs allow use only if benefit outweighs risk and no alternative exists, with liver tests before, during and after treatment.",
+      "sourceWording": "Patients with Cockayne syndrome",
+      "src": [
+        {
+          "s": "emc-13016",
+          "q": "Patients with Cockayne syndrome (see section 4.8)"
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:condition:cockayne-tab",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "metronidazole",
+      "formulations": [
+        "metronidazole-tab"
+      ],
+      "condition": "cockayne-syndrome",
+      "concern": "Cockayne syndrome (200 mg tablet SmPCs)",
+      "consequence": "Severe hepatotoxicity/acute liver failure, including fatal cases with very rapid onset.",
+      "action": "Do not use unless benefit outweighs risk and there is no alternative; check liver function before, during and after treatment; stop if markedly raised.",
+      "sourceWording": "should not be used unless the benefit is considered to outweigh the risk",
+      "src": [
+        {
+          "s": "emc-12348",
+          "q": "In this population, metronidazole should not be used unless the benefit is considered to outweigh the risk and if no alternative treatment is available."
+        },
+        {
+          "s": "emc-13521",
+          "q": "Liver function tests must be performed just prior to the start of therapy, throughout and after end of treatment"
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:condition:cockayne-susp",
+      "kind": "condition",
+      "level": "caution",
+      "med": "metronidazole",
+      "formulations": [
+        "metronidazole-susp"
+      ],
+      "condition": "cockayne-syndrome",
+      "concern": "Cockayne syndrome (suspension SmPC)",
+      "consequence": "Severe hepatotoxicity/acute liver failure, including fatal cases with very rapid onset.",
+      "action": "Use only after careful benefit-risk assessment and if no alternative; check liver function before, during and after treatment.",
+      "sourceWording": "should therefore be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-101002",
+          "q": "metronidazole should therefore be used after careful benefit-risk assessment and only if no alternative treatment is available"
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:condition:neurological-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "metronidazole",
+      "condition": "severe-cns-pns-disease",
+      "concern": "Active or chronic severe peripheral or central nervous system disease",
+      "consequence": "Risk of neurological worsening.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-12348",
+          "q": "Metronidazole should be used with caution in patients with active or chronic severe peripheral and central nervous system disease due to the risk of neurological aggravation."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:condition:epilepsy-500mg-smpc",
+      "kind": "condition",
+      "level": "caution",
+      "med": "metronidazole",
+      "formulations": [
+        "metronidazole-tab"
+      ],
+      "condition": "epilepsy",
+      "effect": "seizure-threshold",
+      "concern": "Epilepsy or previous seizures (tablets: one UK SmPC, 500 mg tablets)",
+      "consequence": "High doses can induce seizures.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution in patients with epilepsy",
+      "src": [
+        {
+          "s": "emc-13016",
+          "q": "Caution in patients with epilepsy or those who have had seizures as high doses of Metronidazole can induce seizures."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:condition:hepatic-encephalopathy",
+      "kind": "condition",
+      "level": "dose",
+      "med": "metronidazole",
+      "condition": "hepatic-encephalopathy-coma",
+      "concern": "Hepatic encephalopathy",
+      "consequence": "Metronidazole accumulates and high levels may add to encephalopathy symptoms.",
+      "action": "Use with caution; reduce the daily dose to one third, which may be given once daily.",
+      "sourceWording": "The daily dosage should be reduced to one third",
+      "src": [
+        {
+          "s": "emc-13521",
+          "q": "Metronidazole Tablets should therefore, be administered with caution to patients with hepatic encephalopathy. The daily dosage should be reduced to one third and may be administered once daily."
+        },
+        {
+          "s": "emc-101002",
+          "q": "Significant cumulation may occur in patients with hepatic encephalopathy"
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:hepatic:severe",
+      "kind": "hepatic",
+      "level": "info",
+      "med": "metronidazole",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Advanced (severe) hepatic insufficiency",
+      "consequence": "Clearance may be substantially reduced; accumulation.",
+      "action": "No dose advice is given for advanced hepatic insufficiency alone. In hepatic encephalopathy: use with caution and reduce the daily dose to one third, which may be given once daily (separate rule).",
+      "sourceWording": "Substantial impairment of metronidazole clearance may occur",
+      "src": [
+        {
+          "s": "emc-13521",
+          "q": "Substantial impairment of metronidazole clearance may occur in the presence of advanced hepatic insufficiency."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:condition:alcohol",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "metronidazole",
+      "condition": "alcohol-dependence",
+      "concern": "Alcohol use (including alcohol dependence)",
+      "consequence": "Disulfiram-like (antabuse) reaction.",
+      "action": "Advise no alcohol during treatment and for at least 48 hours afterwards.",
+      "sourceWording": "advised not to take alcohol during metronidazole therapy",
+      "src": [
+        {
+          "s": "emc-12348",
+          "q": "Patients should be advised not to take alcohol during metronidazole therapy and for at least 48 hours afterwards because of the possibility of a disulfiram-like (antabuse effect) reaction."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:condition:fructose-intolerance-susp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "metronidazole",
+      "formulations": [
+        "metronidazole-susp"
+      ],
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance (suspension contains sorbitol and sucrose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not be given the suspension.",
+      "sourceWording": "should not take/be given this medicinal product",
+      "src": [
+        {
+          "s": "emc-101002",
+          "q": "Patients with hereditary fructose intolerance (HFI) should not take/be given this medicinal product."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:condition:sugar-intolerance-susp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "metronidazole",
+      "formulations": [
+        "metronidazole-susp"
+      ],
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Glucose-galactose malabsorption or sucrase-isomaltase insufficiency (suspension contains sucrose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the suspension.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-101002",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "metronidazole",
+      "concern": "Pregnancy (SmPCs)",
+      "consequence": "Safety evidence in pregnancy is inadequate.",
+      "action": "Do not give unless the physician considers it essential; if used, short high-dose regimens are not recommended.",
+      "sourceWording": "should not be given during pregnancy",
+      "src": [
+        {
+          "s": "emc-12348",
+          "q": "should not be given during pregnancy or during lactation unless the physician considers it essential; in these circumstances the short, high-dosage regimens are not recommended"
+        },
+        {
+          "s": "emc-101002",
+          "q": "There is inadequate evidence of the safety of metronidazole in pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:pregnancy:first-trimester-500mg-smpc",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "metronidazole",
+      "formulations": [
+        "metronidazole-tab"
+      ],
+      "trimesters": [
+        1
+      ],
+      "concern": "First trimester, only when treating trichomoniasis or bacterial vaginosis (tablets: one UK SmPC, 500 mg tablets, section 4.3)",
+      "consequence": "Listed in section 4.3 of this SmPC; the 200 mg tablet and suspension SmPCs do not contraindicate it.",
+      "action": "This SmPC: do not use in the first trimester for trichomoniasis or bacterial vaginosis; for other indications only if benefit outweighs risk or no alternative.",
+      "sourceWording": "should not be used in the first trimester in patients with trichomoniasis or bacterial vaginosis",
+      "src": [
+        {
+          "s": "emc-13016",
+          "q": "Pregnancy - metronidazole should not be used in the first trimester in patients with trichomoniasis or bacterial vaginosis"
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "metronidazole",
+      "concern": "Pregnancy (BUMPS)",
+      "consequence": "Well studied; not known to cause birth defects, stillbirth, low birth weight or preterm delivery.",
+      "action": "May be recommended where the benefits of treating the infection outweigh possible risks.",
+      "sourceWording": "may be recommended for some types of infection",
+      "src": [
+        {
+          "s": "bumps-metronidazole",
+          "q": "Metronidazole use in pregnancy has been well studied and is not known to cause birth defects, stillbirth, low birth weight, or preterm delivery."
+        },
+        {
+          "s": "bumps-metronidazole",
+          "q": "Metronidazole may be recommended for some types of infection where the benefits of treatment are thought to outweigh the possible risks."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "metronidazole",
+      "concern": "Breastfeeding (SmPCs)",
+      "consequence": "Passes into breast milk; suspension SmPC: a significant amount, and milk may taste bitter.",
+      "action": "Do not give unless the physician considers it essential; suspension SmPC: avoid breastfeeding after a large dose.",
+      "sourceWording": "should not be given during pregnancy or during lactation unless the physician considers it essential",
+      "src": [
+        {
+          "s": "emc-12348",
+          "q": "should not be given during pregnancy or during lactation unless the physician considers it essential"
+        },
+        {
+          "s": "emc-101002",
+          "q": "A significant amount of metronidazole is found in breast milk and breast feeding should be avoided after a large dose."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:breastfeeding:high-dose-500mg-smpc",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "metronidazole",
+      "formulations": [
+        "metronidazole-tab"
+      ],
+      "concern": "Breastfeeding, only after single high-dose (e.g. 2 g) therapy (tablets: one UK SmPC, 500 mg tablets, section 4.3)",
+      "consequence": "High milk exposure.",
+      "action": "This SmPC: stop breastfeeding for 12 to 24 hours after a single high dose. SPS disagrees (no interruption needed).",
+      "sourceWording": "Breast feeding should be discontinued for 12-24 hours",
+      "src": [
+        {
+          "s": "emc-13016",
+          "q": "Breast feeding should be discontinued for 12-24 hours when single high dose (e.g. 2g) therapy is used"
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "metronidazole",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Short courses are compatible with breastfeeding; infant side effects unlikely.",
+      "action": "Can be used with infant monitoring (feeding, weight gain, vomiting/diarrhoea, oral thrush, irritability, rash); no interruption needed even after 2 g doses; seek specialist advice for use longer than a few weeks.",
+      "sourceWording": "Use with caution",
+      "src": [
+        {
+          "s": "sps-bf-metronidazole",
+          "q": "Short courses of oral, intravenous or rectal metronidazole are considered to be compatible with breastfeeding, but infant monitoring is recommended."
+        },
+        {
+          "s": "sps-bf-metronidazole",
+          "q": "No interruption of breastfeeding is required, even after 2g oral doses (as a single dose, or daily for a three-day course)."
+        },
+        {
+          "s": "sps-bf-metronidazole",
+          "q": "Use with caution Short courses of oral metronidazole, can be used during breastfeeding, but infant monitoring is required."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:interaction:warfarin",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "metronidazole",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin-type oral anticoagulants",
+      "consequence": "Anticoagulant effect increased.",
+      "action": "Anticoagulant dose may need reducing; monitor prothrombin time.",
+      "sourceWording": "Dosage of the latter may require reducing. Prothrombin times should be monitored.",
+      "src": [
+        {
+          "s": "emc-12348",
+          "q": "Some potentiation of anti-coagulant therapy has been reported when metronidazole has been used with the warfarin type oral anticoagulants. Dosage of the latter may require reducing. Prothrombin times should be monitored."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "metronidazole",
+      "other": "carbamazepine",
+      "concern": "Carbamazepine (suspension SmPC)",
+      "consequence": "Raised carbamazepine levels and toxicity reported.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "Increased serum carbamazepine levels and toxicity have been seen",
+      "src": [
+        {
+          "s": "emc-101002",
+          "q": "Increased serum carbamazepine levels and toxicity have been seen in patients given concomitant metronidazole."
+        }
+      ]
+    },
+    {
+      "id": "metronidazole:interaction:qt-prolonging",
+      "kind": "interaction",
+      "level": "info",
+      "med": "metronidazole",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Drugs that prolong the QT interval (tablet SmPCs)",
+      "consequence": "QT prolongation reported, mainly in combination with QT-prolonging drugs.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "QT prolongation has been reported",
+      "src": [
+        {
+          "s": "emc-12348",
+          "q": "QT prolongation has been reported, particularly when metronidazole was administered with drugs with the potential for prolonging the QT interval."
+        },
+        {
+          "s": "emc-13016",
+          "q": "QT prolongation has been reported, particularly when metronidazole was administered with drugs with the potential for prolonging the QT interval."
+        }
+      ]
+    }
+  ]
+}

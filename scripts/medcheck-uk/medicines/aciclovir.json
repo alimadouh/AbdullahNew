@@ -1,0 +1,586 @@
+{
+  "id": "aciclovir",
+  "name": "Aciclovir",
+  "ingredients": ["aciclovir"],
+  "className": "Antiviral (nucleoside analogue)",
+  "groups": ["antiviral"],
+  "searchTerms": ["acyclovir"],
+  "formulations": [
+    {
+      "id": "aciclovir-cream",
+      "label": "Cream",
+      "route": "cutaneous",
+      "strengths": "5% w/w",
+      "release": "n/a",
+      "src": [{ "s": "emc-5468", "q": "Aciclovir BP 5.0% w/w" }],
+      "sourceIds": ["emc-5468"]
+    },
+    {
+      "id": "aciclovir-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "200 mg (dispersible); 400 mg",
+      "release": "immediate",
+      "src": [
+        { "s": "emc-1634", "q": "Dispersible film-coated tablet." },
+        { "s": "emc-2352", "q": "Aciclovir PhEur 400mg" }
+      ],
+      "sourceIds": ["emc-1634", "emc-2352"]
+    },
+    {
+      "id": "aciclovir-susp",
+      "label": "Oral suspension",
+      "route": "oral",
+      "strengths": "200 mg/5 mL",
+      "release": "immediate",
+      "src": [{ "s": "emc-5470", "q": "Aciclovir 200mg/5ml" }],
+      "sourceIds": ["emc-5470"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "availability": { "status": "uk" },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Cream: herpes simplex infections of the skin, including initial and recurrent genital herpes and cold sores (herpes labialis).",
+          "formulations": ["aciclovir-cream"],
+          "src": [{ "s": "emc-5468", "q": "Zovirax Cream is indicated for the treatment of Herpes Simplex virus infections of the skin including initial and recurrent genital herpes and herpes labialis." }]
+        },
+        {
+          "t": "Oral: herpes simplex of skin and mucous membranes (including genital herpes; not neonatal HSV or severe HSV in immunocompromised children); suppression of recurrent HSV in immunocompetent patients; HSV prophylaxis in immunocompromised patients; chickenpox and shingles.",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "Zovirax Tablets are indicated for the treatment of herpes simplex virus infections of the skin and mucous membranes including initial and recurrent genital herpes" },
+            { "s": "emc-1634", "q": "Zovirax Tablets are indicated for the treatment of varicella (chickenpox) and herpes zoster (shingles) infections." }
+          ]
+        }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restriction found in the UK SmPCs, BUMPS or SPS pages checked." },
+    "dosing": {
+      "items": [
+        {
+          "t": "Cream: apply 5 times daily (about every 4 hours, not at night) as early as possible; at least 4 days for cold sores and 5 days for genital herpes; may continue up to 5 more days if not healed.",
+          "tag": "Cream",
+          "formulations": ["aciclovir-cream"],
+          "src": [
+            { "s": "emc-5468", "q": "Zovirax Cream should be applied five times daily at approximately four hourly intervals, omitting the night time application." },
+            { "s": "emc-5468", "q": "Treatment should be continued for at least 4 days for herpes labialis and for 5 days for genital herpes." }
+          ]
+        },
+        {
+          "t": "HSV treatment: 200 mg five times daily (about 4-hourly, omitting the night dose) for 5 days; may be extended in severe initial infection; 400 mg in severe immunocompromise or poor absorption.",
+          "tag": "Herpes simplex treatment",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "200 mg Zovirax should be taken five times daily at approximately four hourly intervals omitting the night time dose. Treatment should continue for 5 days" }
+          ]
+        },
+        {
+          "t": "HSV suppression (immunocompetent): 200 mg four times daily, or 400 mg twice daily; may titrate down to 200 mg two or three times daily. Interrupt every 6 to 12 months to reassess.",
+          "tag": "Herpes simplex suppression",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "Many patients may be conveniently managed on a regimen of 400 mg Zovirax twice daily at approximately twelve-hourly intervals." },
+            { "s": "emc-1634", "q": "Therapy should be interrupted periodically at intervals of six to twelve months" }
+          ]
+        },
+        {
+          "t": "HSV prophylaxis (immunocompromised): 200 mg four times daily (400 mg if severely immunocompromised or poor absorption).",
+          "tag": "Herpes simplex prophylaxis",
+          "detail": true,
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [{ "s": "emc-1634", "q": "Prophylaxis of herpes simplex infections in immunocompromised patients: 200 mg Zovirax should be taken four times daily at approximately six-hourly intervals." }]
+        },
+        {
+          "t": "Chickenpox and shingles: 800 mg five times daily (about 4-hourly, omitting the night dose) for 7 days; start as early as possible (chickenpox within 24 hours of rash).",
+          "tag": "Varicella / herpes zoster",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "800 mg Zovirax should be taken five times daily at approximately four-hourly intervals, omitting the night time dose. Treatment should continue for seven days." },
+            { "s": "emc-1634", "q": "Treatment of chickenpox in immunocompetent patients should begin within 24 hours after onset of the rash." }
+          ]
+        },
+        {
+          "t": "Elderly: consider reduced renal function and adjust the dose; keep well hydrated on high oral doses.",
+          "tag": "Elderly",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [{ "s": "emc-1634", "q": "The possibility of renal impairment in the elderly must be considered and the dosage should be adjusted accordingly" }]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Cream: same dose for adults and children.",
+          "formulations": ["aciclovir-cream"],
+          "src": [{ "s": "emc-5468", "q": "Adults and Children: Zovirax Cream should be applied five times daily" }]
+        },
+        {
+          "t": "Oral HSV treatment/prophylaxis: 2 years and over adult dose; under 2 years half the adult dose. Neonatal herpes: intravenous aciclovir recommended.",
+          "tag": "Herpes simplex",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "Children aged two years and over should be given adult dosages and children below the age of two years should be given half the adult dose." },
+            { "s": "emc-1634", "q": "For treatment on neonatal herpes virus infections, intravenous aciclovir is recommended." }
+          ]
+        },
+        {
+          "t": "Chickenpox: 20 mg/kg (max 800 mg) four times daily for 5 days; or by age: 6 years and over 800 mg, 2 to 5 years 400 mg, under 2 years 200 mg, each four times daily.",
+          "tag": "Varicella",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "Dosing may be more accurately calculated as 20 mg/kg bodyweight (not to exceed 800 mg) Zovirax four times daily." },
+            { "s": "emc-1634", "q": "6 years and over: 800 mg Zovirax four times daily. 2 - 5 years: 400mg Zovirax four times daily. Under 2 years: 200mg Zovirax four times daily." }
+          ],
+          "calc": { "mgPerKg": 20, "per": "dose", "maxMg": 800, "maxPer": "dose", "of": "aciclovir" }
+        },
+        {
+          "t": "No data on HSV suppression or shingles treatment in immunocompetent children.",
+          "detail": true,
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [{ "s": "emc-1634", "q": "No specific data are available on the suppression of herpes simplex infections or the treatment of herpes zoster infections in immunocompetent children." }]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to aciclovir, valaciclovir or any excipient (cream: also propylene glycol).",
+          "src": [
+            { "s": "emc-1634", "q": "Hypersensitivity to aciclovir or valaciclovir, or to any of the excipients listed in section 6.1." },
+            { "s": "emc-5468", "q": "Zovirax Cream is contraindicated in patients known to be hypersensitive to aciclovir, valaciclovir, propylene glycol" }
+          ]
+        },
+        {
+          "t": "Oral: never re-treat a patient who had a severe cutaneous adverse reaction (SJS, TEN, DRESS, AGEP, EM) to aciclovir or valaciclovir.",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [{ "s": "emc-1634", "q": "Patients who have developed SCARs with the use of aciclovir or valaciclovir must not receive aciclovir" }]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Renal impairment and elderly: adjust the dose; higher risk of neurological side effects, monitor closely.",
+          "tag": "Kidney / elderly",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "Aciclovir is eliminated by renal clearance, therefore the dose must be adjusted in patients with renal impairment" },
+            { "s": "emc-1634", "q": "Both elderly patients and patients with renal impairment are at increased risk of developing neurological side effects and should be closely monitored for evidence of these effects." }
+          ]
+        },
+        {
+          "t": "Keep patients on high oral doses well hydrated; other nephrotoxic medicines increase the risk of renal impairment.",
+          "tag": "Hydration",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "Care should be taken to maintain adequate hydration in patients receiving high oral doses of aciclovir." },
+            { "s": "emc-1634", "q": "The risk of renal impairment is increased by use with other nephrotoxic drugs." }
+          ]
+        },
+        {
+          "t": "Severe cutaneous reactions: stop immediately at the first signs and use another treatment.",
+          "tag": "SCARs",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [{ "s": "emc-1634", "q": "if signs and symptoms suggestive of SCARs appear, treatment with aciclovir must be discontinued immediately, and alternative treatment should be given." }]
+        },
+        {
+          "t": "One 400 mg tablet SmPC: caution with neurological abnormalities, severe hepatic or electrolyte abnormalities, or significant hypoxia; lactose content (not for galactose intolerance).",
+          "tag": "Other (one SmPC)",
+          "detail": true,
+          "formulations": ["aciclovir-tab"],
+          "src": [{ "s": "emc-2352", "q": "Aciclovir should also be used with caution in patients with underlying neurological abnormalities, severe hepatic or electrolyte abnormalities or significant hypoxia." }]
+        },
+        {
+          "t": "Cream: not recommended on mucous membranes (mouth, eye, vagina) as it may irritate; avoid the eyes. In severe immunocompromise consider oral treatment.",
+          "tag": "Cream",
+          "formulations": ["aciclovir-cream"],
+          "src": [
+            { "s": "emc-5468", "q": "Zovirax Cream is not recommended for application to mucous membranes such as in the mouth, eye or vagina, as it may be irritant." },
+            { "s": "emc-5468", "q": "In severely immunocompromised patients (eg AIDS patients or bone marrow transplant recipients) oral Zovirax dosing should be considered." }
+          ]
+        },
+        {
+          "t": "Cream contains propylene glycol (400 mg per gram): do not use in neonates with open wounds or large areas of broken or damaged skin (such as burns).",
+          "tag": "Cream: neonates",
+          "formulations": ["aciclovir-cream"],
+          "src": [
+            { "s": "emc-5468", "q": "This medicine contains 400 mg of propylene glycol per gram of product." },
+            { "s": "emc-5468", "q": "Do not use this medicine in neonates with open wounds or large areas of broken or damaged skin (such as burns)." }
+          ]
+        },
+        {
+          "t": "Suspension contains sorbitol (1575 mg per 5 mL): people with hereditary fructose intolerance should not take it.",
+          "tag": "Excipient",
+          "detail": true,
+          "formulations": ["aciclovir-susp"],
+          "src": [{ "s": "emc-5470", "q": "Hence Patients with rare hereditary problems of fructose intolerance should not take this medicine" }]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Other nephrotoxic medicines increase the risk of renal impairment.",
+          "tag": "Nephrotoxic medicines",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [{ "s": "emc-2352", "q": "The risk of renal impairment is increased by the concomitant use of other nephrotoxic drugs." }]
+        },
+        {
+          "t": "Probenecid, cimetidine and mycophenolate mofetil raise aciclovir levels; no dose change needed. Aciclovir raises theophylline levels (measure theophylline levels).",
+          "tag": "Others",
+          "detail": true,
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "However, no dosage adjustment is necessary because of the wide therapeutic index of aciclovir." },
+            { "s": "emc-1634", "q": "It is recommended to measure plasma concentrations during concomitant therapy with aciclovir." }
+          ]
+        },
+        {
+          "t": "Cream: no clinically significant interactions identified.",
+          "formulations": ["aciclovir-cream"],
+          "src": [{ "s": "emc-5468", "q": "No clinically significant interactions have been identified." }]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Oral, CrCl <10 mL/min: HSV 200 mg twice daily (about 12-hourly); zoster 800 mg twice daily. CrCl 10 to 25 mL/min: zoster 800 mg three times daily (about 8-hourly). Use with caution and keep hydrated.",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "for patients with severe renal impairment (creatinine clearance less than 10 ml/minute) an adjustment of dosage to 200 mg aciclovir twice daily at approximately twelve-hourly intervals is recommended." },
+            { "s": "emc-1634", "q": "to 800 mg aciclovir three times daily at intervals of approximately eight hours for patients with moderate renal impairment (creatinine clearance in the range 10 - 25 ml/minute)." }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "One 400 mg tablet SmPC: use with caution in severe hepatic abnormalities. No hepatic dosing in the other SmPCs.",
+          "formulations": ["aciclovir-tab"],
+          "src": [{ "s": "emc-2352", "q": "Aciclovir should also be used with caution in patients with underlying neurological abnormalities, severe hepatic or electrolyte abnormalities or significant hypoxia." }]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC (oral): use only when the benefit outweighs the unknown risk; pregnancy registry shows no increase in birth defects.",
+          "tag": "SmPC",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "The use of aciclovir should be considered only when the potential benefits outweigh the possibility of unknown risks." },
+            { "s": "emc-1634", "q": "The registry findings have not shown an increase in the number of birth defects amongst Zovirax exposed subjects compared with the general population" }
+          ]
+        },
+        {
+          "t": "SmPC (cream): use only when benefit outweighs unknown risks, although systemic exposure is very low.",
+          "tag": "SmPC",
+          "formulations": ["aciclovir-cream"],
+          "src": [{ "s": "emc-5468", "q": "The use of Zovirax Cream should be considered only when the potential benefits outweigh the possibility of unknown risks however the systemic exposure to aciclovir from topical application of Zovirax Cream is very low." }]
+        },
+        {
+          "t": "BUMPS: can be used in pregnancy and is the first-choice treatment for cold sores, genital herpes and, occasionally, chickenpox; no known risks.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-aciclovir", "q": "Aciclovir can be used in pregnancy and is the first-choice treatment for cold sores, genital herpes and, occasionally, chickenpox." },
+            { "s": "bumps-aciclovir", "q": "There are no known risks of using aciclovir in pregnancy." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC (oral): found in milk at 0.6 to 4.1 times plasma levels (infant dose up to 0.3 mg/kg/day); caution advised.",
+          "tag": "SmPC",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "These levels would potentially expose nursing infants to aciclovir dosages of up to 0.3 mg/kg/day." },
+            { "s": "emc-1634", "q": "Caution is therefore advised if aciclovir is to be administered to a nursing woman." }
+          ]
+        },
+        {
+          "t": "SPS: oral aciclovir is the preferred antiviral and can be used; monitor the infant for drowsiness, irritability, rashes, vomiting and diarrhoea.",
+          "tag": "SPS",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "sps-herpes-breastfeeding", "q": "Aciclovir can be used during breastfeeding, but infant monitoring is required." },
+            { "s": "sps-herpes-breastfeeding", "q": "As a precaution, monitor for drowsiness, irritability, skin rashes, vomiting and diarrhoea." }
+          ]
+        },
+        {
+          "t": "Cream: infant dose would be insignificant (SmPC); SPS: topical aciclovir can be used, no specific infant monitoring; wash hands after applying.",
+          "formulations": ["aciclovir-cream"],
+          "src": [
+            { "s": "emc-5468", "q": "the dosage received by a nursing infant following maternal use of Zovirax Cream would be insignificant." },
+            { "s": "sps-herpes-breastfeeding", "q": "Topical or ophthalmic aciclovir can be used during breastfeeding." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No information on female fertility. Oral aciclovir up to 1 g/day for 6 months had no clinically significant effect on sperm.",
+          "src": [{ "s": "emc-1634", "q": "oral aciclovir administered at doses of up to 1 g per day for up to six months has been shown to have no clinically significant effect on sperm count, motility or morphology." }]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Oral, common: headache, dizziness, nausea, vomiting, diarrhoea, abdominal pain, itching, rash (including photosensitivity), fatigue, fever.",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "Common: Headache, dizziness." },
+            { "s": "emc-1634", "q": "Common: Nausea, vomiting, diarrhoea, abdominal pains." },
+            { "s": "emc-1634", "q": "Common: Pruritus, rashes (including photosensitivity)." }
+          ]
+        },
+        {
+          "t": "Cream, uncommon: transient burning or stinging, mild drying or flaking, itching.",
+          "formulations": ["aciclovir-cream"],
+          "src": [{ "s": "emc-5468", "q": "Uncommon Transient burning or stinging following application of Zovirax Cream Mild drying or flaking of the skin Itching" }]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Severe cutaneous reactions (TEN, SJS, AGEP, DRESS, EM): stop at once and do not re-treat with aciclovir.",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [{ "s": "emc-1634", "q": "if signs and symptoms suggestive of SCARs appear, treatment with aciclovir must be discontinued immediately, and alternative treatment should be given." }]
+        },
+        {
+          "t": "Neurological effects (confusion, hallucinations, convulsions, encephalopathy), mostly in renal impairment; acute renal failure (very rare); anaphylaxis (rare).",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "The above events are generally reversible and usually reported in patients with renal impairment or with other predisposing factors" },
+            { "s": "emc-1634", "q": "Very rare: Acute renal failure, renal pain." }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Elderly and renal impairment: monitor closely for neurological side effects.",
+          "tag": "ongoing",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [{ "s": "emc-1634", "q": "Both elderly patients and patients with renal impairment are at increased risk of developing neurological side effects and should be closely monitored for evidence of these effects." }]
+        },
+        {
+          "t": "Stop at the first signs of a severe skin reaction.",
+          "tag": "stop",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [{ "s": "emc-1634", "q": "treatment with aciclovir must be discontinued immediately" }]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Dispersible tablets: disperse in at least 50 mL water or swallow whole with a little water. Do not dilute the suspension.",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [
+            { "s": "emc-1634", "q": "Zovirax tablets may be dispersed in a minimum of 50 ml of water or swallowed whole with a little water." },
+            { "s": "emc-5470", "q": "Do not dilute the oral suspension formulation." }
+          ]
+        },
+        {
+          "t": "Cream: start at the first sign (tingling/redness) if possible; do not dilute or mix with other products.",
+          "formulations": ["aciclovir-cream"],
+          "src": [
+            { "s": "emc-5468", "q": "Zovirax Cream should be applied to the lesions or impending lesions as soon as possible, preferably during the early stages (prodrome or erythema)." },
+            { "s": "emc-5468", "q": "should not be diluted or used as a base for the incorporation of other medicaments." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Start as soon as symptoms begin; drink plenty of fluids on high oral doses.",
+          "formulations": ["aciclovir-tab", "aciclovir-susp"],
+          "src": [{ "s": "emc-1634", "q": "Ensure that patients on high doses of aciclovir are adequately hydrated." }]
+        },
+        {
+          "t": "Cream: keep away from the eyes and inside the mouth or vagina.",
+          "formulations": ["aciclovir-cream"],
+          "src": [{ "s": "emc-5468", "q": "Particular care should be taken to avoid accidental introduction into the eye." }]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "aciclovir:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "aciclovir",
+      "allergen": ["aciclovir"],
+      "concern": "Hypersensitivity to aciclovir (or valaciclovir)",
+      "consequence": "Risk of hypersensitivity reaction; never re-treat after a severe cutaneous reaction to aciclovir or valaciclovir.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-1634", "q": "Hypersensitivity to aciclovir or valaciclovir, or to any of the excipients listed in section 6.1." },
+        { "s": "emc-5468", "q": "Zovirax Cream is contraindicated in patients known to be hypersensitive to aciclovir, valaciclovir, propylene glycol" },
+        { "s": "emc-1634", "q": "Patients who have developed SCARs with the use of aciclovir or valaciclovir must not receive aciclovir" }
+      ]
+    },
+    {
+      "id": "aciclovir:renal:crcl-lt10",
+      "kind": "renal",
+      "level": "dose",
+      "med": "aciclovir",
+      "formulations": ["aciclovir-tab", "aciclovir-susp"],
+      "renal": { "measure": "CrCl", "max": 10 },
+      "concern": "Severe renal impairment (CrCl <10 mL/min)",
+      "consequence": "Aciclovir is renally cleared; risk of accumulation and neurological effects.",
+      "action": "HSV: 200 mg twice daily (about 12-hourly). Varicella/zoster: 800 mg twice daily (about 12-hourly). Keep hydrated; monitor for neurological effects.",
+      "sourceWording": "an adjustment of dosage ... is recommended",
+      "src": [
+        { "s": "emc-1634", "q": "for patients with severe renal impairment (creatinine clearance less than 10 ml/minute) an adjustment of dosage to 200 mg aciclovir twice daily at approximately twelve-hourly intervals is recommended." },
+        { "s": "emc-1634", "q": "In the treatment of herpes zoster infections it is recommended to adjust the dosage to 800 mg aciclovir twice daily at approximately twelve - hourly intervals for patients with severe renal impairment" }
+      ]
+    },
+    {
+      "id": "aciclovir:renal:crcl-10-25",
+      "kind": "renal",
+      "level": "dose",
+      "med": "aciclovir",
+      "formulations": ["aciclovir-tab", "aciclovir-susp"],
+      "renal": { "measure": "CrCl", "min": 10, "max": 25, "maxInclusive": true },
+      "concern": "Moderate renal impairment (CrCl 10 to 25 mL/min)",
+      "consequence": "Aciclovir is renally cleared.",
+      "action": "Varicella/zoster: 800 mg three times daily (about 8-hourly). HSV doses: no specific change stated; caution and hydration.",
+      "sourceWording": "it is recommended to adjust the dosage",
+      "src": [{ "s": "emc-1634", "q": "to 800 mg aciclovir three times daily at intervals of approximately eight hours for patients with moderate renal impairment (creatinine clearance in the range 10 - 25 ml/minute)." }]
+    },
+    {
+      "id": "aciclovir:interaction:nephrotoxic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "aciclovir",
+      "formulations": ["aciclovir-tab", "aciclovir-susp"],
+      "other": "group:nephrotoxic",
+      "effect": "nephrotoxicity",
+      "concern": "Other nephrotoxic medicines",
+      "consequence": "Increased risk of renal impairment.",
+      "action": "Be aware; keep the patient well hydrated (no specific action stated).",
+      "sourceWording": "The risk of renal impairment is increased",
+      "src": [
+        { "s": "emc-2352", "q": "The risk of renal impairment is increased by the concomitant use of other nephrotoxic drugs." },
+        { "s": "emc-1634", "q": "The risk of renal impairment is increased by use with other nephrotoxic drugs." }
+      ]
+    },
+    {
+      "id": "aciclovir:age:neonate-cream",
+      "kind": "age",
+      "level": "avoid",
+      "med": "aciclovir",
+      "formulations": ["aciclovir-cream"],
+      "age": { "maxYears": 0.0767 },
+      "concern": "Neonate (up to 4 weeks) with open wounds or large areas of broken or damaged skin (cream)",
+      "consequence": "The cream contains propylene glycol (400 mg per gram).",
+      "action": "Do not use the cream on open wounds or large areas of broken or damaged skin (such as burns) in neonates.",
+      "sourceWording": "Do not use this medicine in neonates with open wounds or large areas of broken or damaged skin",
+      "src": [
+        { "s": "emc-5468", "q": "This medicine contains 400 mg of propylene glycol per gram of product." },
+        { "s": "emc-5468", "q": "Do not use this medicine in neonates with open wounds or large areas of broken or damaged skin (such as burns)." }
+      ]
+    },
+    {
+      "id": "aciclovir:condition:fructose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "aciclovir",
+      "formulations": ["aciclovir-susp"],
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance (oral suspension)",
+      "consequence": "The suspension contains sorbitol.",
+      "action": "Should not take the suspension; use tablets.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        { "s": "emc-5470", "q": "Zovirax Suspension contains 1575 mg sorbitol per 5 mL" },
+        { "s": "emc-5470", "q": "Hence Patients with rare hereditary problems of fructose intolerance should not take this medicine" }
+      ]
+    },
+    {
+      "id": "aciclovir:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "aciclovir",
+      "formulations": ["aciclovir-tab"],
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption (one 400 mg tablet SmPC)",
+      "consequence": "Excipient intolerance (stated in one UK 400 mg tablet SmPC).",
+      "action": "Should not take that product; check the excipients of the tablet supplied.",
+      "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-2352", "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine." }]
+    },
+    {
+      "id": "aciclovir:hepatic:severe",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "aciclovir",
+      "formulations": ["aciclovir-tab"],
+      "hepatic": ["severe"],
+      "concern": "Severe hepatic abnormalities (one 400 mg tablet SmPC)",
+      "consequence": "Stated as a caution in one UK tablet SmPC.",
+      "action": "Use with caution.",
+      "sourceWording": "should also be used with caution",
+      "src": [{ "s": "emc-2352", "q": "Aciclovir should also be used with caution in patients with underlying neurological abnormalities, severe hepatic or electrolyte abnormalities or significant hypoxia." }]
+    },
+    {
+      "id": "aciclovir:condition:hypoxia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aciclovir",
+      "formulations": ["aciclovir-tab"],
+      "condition": "respiratory-failure",
+      "concern": "Significant hypoxia (one 400 mg tablet SmPC)",
+      "consequence": "Stated as a caution in one UK tablet SmPC.",
+      "action": "Use with caution.",
+      "sourceWording": "should also be used with caution",
+      "src": [{ "s": "emc-2352", "q": "Aciclovir should also be used with caution in patients with underlying neurological abnormalities, severe hepatic or electrolyte abnormalities or significant hypoxia." }]
+    },
+    {
+      "id": "aciclovir:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "aciclovir",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Registry data show no increase in birth defects.",
+      "action": "SmPC: use only when the potential benefit outweighs unknown risks (cream: systemic exposure very low). BUMPS: can be used; first-choice antiviral in pregnancy.",
+      "sourceWording": "should be considered only when the potential benefits outweigh the possibility of unknown risks",
+      "src": [
+        { "s": "emc-1634", "q": "The use of aciclovir should be considered only when the potential benefits outweigh the possibility of unknown risks." },
+        { "s": "emc-5468", "q": "The use of Zovirax Cream should be considered only when the potential benefits outweigh the possibility of unknown risks however the systemic exposure to aciclovir from topical application of Zovirax Cream is very low." },
+        { "s": "bumps-aciclovir", "q": "Aciclovir can be used in pregnancy and is the first-choice treatment for cold sores, genital herpes and, occasionally, chickenpox." }
+      ]
+    },
+    {
+      "id": "aciclovir:breastfeeding:oral",
+      "kind": "breastfeeding",
+      "level": "monitor",
+      "med": "aciclovir",
+      "formulations": ["aciclovir-tab", "aciclovir-susp"],
+      "concern": "Breastfeeding (oral)",
+      "consequence": "Small amounts in milk.",
+      "action": "SPS: can be used (preferred antiviral); monitor the infant for drowsiness, irritability, rashes, vomiting and diarrhoea. SmPC: caution advised.",
+      "sourceWording": "can be used during breastfeeding, but infant monitoring is required",
+      "src": [
+        { "s": "sps-herpes-breastfeeding", "q": "Aciclovir can be used during breastfeeding, but infant monitoring is required." },
+        { "s": "emc-1634", "q": "Caution is therefore advised if aciclovir is to be administered to a nursing woman." }
+      ]
+    }
+  ]
+}

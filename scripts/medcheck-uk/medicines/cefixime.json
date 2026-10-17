@@ -1,0 +1,485 @@
+{
+  "id": "cefixime",
+  "name": "Cefixime",
+  "ingredients": ["cefixime"],
+  "className": "Third generation cephalosporin (beta-lactam antibiotic)",
+  "groups": ["cephalosporin", "beta-lactam", "antibacterial"],
+  "searchTerms": ["cefixime anhydrous", "cefixime trihydrate"],
+  "formulations": [
+    {
+      "id": "cefixime-susp",
+      "label": "Oral suspension",
+      "route": "oral",
+      "strengths": "100 mg/5 mL (clinic product)",
+      "release": "n/a",
+      "note": "No UK SmPC exists for cefixime oral suspension. The only UK cefixime product found is a 200 mg film-coated tablet; its SmPC is used here for content that applies to cefixime in general. The tablet SmPC gives no child dose under 10 years, so it does not support paediatric suspension dosing.",
+      "src": [
+        { "s": "emc-15047", "q": "Each tablet contains 200 mg cefixime (anhydrous)." }
+      ],
+      "sourceIds": ["emc-15047"]
+    },
+    {
+      "id": "cefixime-cap",
+      "label": "Capsules",
+      "route": "oral",
+      "strengths": "400 mg (clinic product)",
+      "release": "immediate",
+      "note": "No UK SmPC exists for cefixime capsules. Content comes from the UK cefixime 200 mg film-coated tablet SmPC (adult dose 200 to 400 mg daily).",
+      "src": [
+        { "s": "emc-15047", "q": "Each tablet contains 200 mg cefixime (anhydrous)." }
+      ],
+      "sourceIds": ["emc-15047"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Acute infections caused by susceptible organisms: upper respiratory tract infections (e.g. otitis media, and other URTI where the organism is known or suspected to be resistant to other common antibiotics, or where treatment failure carries significant risk); lower respiratory tract infections (e.g. bronchitis); urinary tract infections (e.g. cystitis, cystourethritis, uncomplicated pyelonephritis).",
+          "src": [
+            { "s": "emc-15047", "q": "It is indicated for the treatment of the following acute infections when caused by susceptible micro-organisms" },
+            { "s": "emc-15047", "q": "Upper Respiratory Tract Infections (URTI): e.g. otitis media; and other URTI where the causative organism is known or suspected to be resistant to other commonly used antibiotics, or where treatment failure may carry significant risk." },
+            { "s": "emc-15047", "q": "Lower Respiratory Tract Infection: e.g. bronchitis. Urinary Tract Infections: e.g. cystitis, cystourethritis, uncomplicated pyelonephritis." }
+          ]
+        }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No specialist-only, shared-care or brand-specific prescribing restriction found in the UK cefixime tablet SmPC. No UK SmPC was found for the clinic's suspension or 400 mg capsule (the electronic medicines compendium and MHRA Products were searched)." },
+    "dosing": {
+      "items": [
+        {
+          "t": "UK tablet SmPC (applied to cefixime in general): adults and children over 10 years or over 50 kg: 200 to 400 mg daily by severity, as a single dose or in two divided doses. Usual course 7 days, up to 14 days if required.",
+          "tag": "Adults and children over 10 years / over 50 kg",
+          "src": [
+            { "s": "emc-15047", "q": "Adults and Children over 10 years or weighing more than 50 kg: The recommended dose is 200 - 400 mg daily according to the severity of infection, given either as a single dose or in two divided doses." },
+            { "s": "emc-15047", "q": "The usual course of treatment is 7 days. This may be continued for up to 14 days if required." }
+          ]
+        },
+        {
+          "t": "Elderly: same dose as adults; assess renal function and adjust the dose in severe renal impairment.",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            { "s": "emc-15047", "q": "Elderly patients may be given the same dose as recommended for adults. Renal function should be assessed, and dosage should be adjusted in severe renal impairment." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "The UK SmPC covers 200 mg tablets only: tablets are not recommended under 10 years. It gives no dose for younger children, and no UK suspension SmPC was found.",
+          "tag": "Under 10 years",
+          "src": [
+            { "s": "emc-15047", "q": "Suprax Tablets 200 mg are not recommended for use in children under 10 years old." }
+          ]
+        },
+        {
+          "t": "Safety and efficacy not established in children under 6 months; safety in premature or newborn infants not established.",
+          "tag": "Under 6 months",
+          "src": [
+            { "s": "emc-15047", "q": "The safety and efficacy of cefixime has not been established in children less than 6 months." },
+            { "s": "emc-15047", "q": "Safety of cefixime in premature or newborn infant has not been established" }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to cephalosporin antibiotics or to any excipient.",
+          "src": [
+            { "s": "emc-15047", "q": "Hypersensitivity to cephalosporin antibiotics or to any of the excipients listed in section 6.1." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Penicillin hypersensitivity: give with caution (partial cross-allergenicity; severe reactions including anaphylaxis to both classes). Also caution with hypersensitivity to other drugs. Stop if an allergic reaction occurs.",
+          "tag": "Penicillin allergy",
+          "src": [
+            { "s": "emc-15047", "q": "cefixime should be given with caution to patients with a history of hypersensitivity to penicillin, as there is some evidence of partial cross-allergenicity between the penicillins and cephalosporins" },
+            { "s": "emc-15047", "q": "Suprax should be given with caution to patients who have shown hypersensitivity to other drugs." },
+            { "s": "emc-15047", "q": "If an allergic effect occurs with Suprax, the drug should be discontinued" }
+          ]
+        },
+        {
+          "t": "Encephalopathy (convulsions, confusion, decreased consciousness, movement disorders), particularly in the elderly, severe renal impairment, CNS disorders or overdose. Consider stopping if suspected.",
+          "tag": "Encephalopathy",
+          "src": [
+            { "s": "emc-15047", "q": "Beta-lactams, including cefixime, have been associated with encephalopathy risk (which may include convulsions, confusion, decreased consciousness, movement disorders), particularly in elderly patients, in patients with severe renal impairment or central nervous system disorders" },
+            { "s": "emc-15047", "q": "If cefixime-associated encephalopathy is suspected discontinuation should be considered." }
+          ]
+        },
+        {
+          "t": "Severe cutaneous adverse reactions (TEN, SJS, DRESS, AGEP): inform patients of the signs, monitor closely, and stop at the first rash, mucosal lesion or other sign of skin hypersensitivity.",
+          "tag": "SCARs",
+          "src": [
+            { "s": "emc-15047", "q": "Treatment should be discontinued at the first appearance of skin rash, mucosal lesions, or any other sign of skin hypersensitivity." }
+          ]
+        },
+        {
+          "t": "Drug-induced haemolytic anaemia (including fatal cases) reported with cephalosporins; recurrence after re-exposure in patients with previous cephalosporin-associated haemolytic anaemia.",
+          "tag": "Haemolytic anaemia",
+          "src": [
+            { "s": "emc-15047", "q": "Drug-induced haemolytic anaemia, including severe cases with a fatal outcome, has been described for cephalosporins (as a class)." }
+          ]
+        },
+        {
+          "t": "Acute renal failure including tubulointerstitial nephritis: stop cefixime if it occurs. Use with caution in markedly impaired renal function.",
+          "tag": "Renal",
+          "src": [
+            { "s": "emc-15047", "q": "When acute renal failure occurs, cefixime should be discontinued" },
+            { "s": "emc-15047", "q": "Suprax should be administered with caution in patients with markedly impaired renal function" }
+          ]
+        },
+        {
+          "t": "Consider pseudomembranous colitis in anyone with diarrhoea during or after antibiotics. Stop if marked diarrhoea occurs.",
+          "tag": "Colitis",
+          "src": [
+            { "s": "emc-15047", "q": "it is therefore important to consider its diagnosis in patients who develop diarrhoea in association with the use of antibiotics" },
+            { "s": "emc-15047", "q": "Suprax should be discontinued if marked diarrhoea occurs." }
+          ]
+        },
+        {
+          "t": "Lab tests: false positive urine glucose with copper-reduction tests (not glucose oxidase tests); false positive direct Coombs test.",
+          "tag": "Lab tests",
+          "detail": true,
+          "src": [
+            { "s": "emc-15047", "q": "A false positive reaction for glucose in the urine may occur with Benedict's or Fehling's solutions or with copper sulphate test tablets" },
+            { "s": "emc-15047", "q": "A false positive direct Coombs test has been reported during treatment with cephalosporin antibiotics" }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Coumarin anticoagulants (e.g. warfarin): cefixime may enhance their effect; prolonged prothrombin time with or without bleeding. Give with caution.",
+          "tag": "Warfarin",
+          "src": [
+            { "s": "emc-15047", "q": "Cefixime should be administered with caution to patients receiving coumarin-type anticoagulants, e.g. warfarin potassium." },
+            { "s": "emc-15047", "q": "Since cefixime may enhance effects of the anticoagulants, prolonged prothrombin time with or without bleeding may occur." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "CrCl 20 ml/min or more: normal dose.",
+          "tag": "CrCl ≥ 20 ml/min",
+          "src": [
+            { "s": "emc-15047", "q": "Normal dose and schedule may be given in patients with creatinine clearances of 20 ml/min or greater." }
+          ]
+        },
+        {
+          "t": "CrCl less than 20 ml/min, and patients on CAPD or haemodialysis: do not exceed 200 mg once daily.",
+          "tag": "CrCl < 20 ml/min / dialysis",
+          "src": [
+            { "s": "emc-15047", "q": "In patients whose creatinine clearance is less than 20 ml/min, it is recommended that a dose of 200 mg once daily should not be exceeded." },
+            { "s": "emc-15047", "q": "The dose and regimen for patients who are maintained on chronic ambulatory peritoneal dialysis or haemodialysis should follow the same recommendation" }
+          ]
+        }
+      ]
+    },
+    "hepatic": { "status": "not-stated", "note": "The UK cefixime tablet SmPC gives no hepatic impairment advice (jaundice and raised liver enzymes are listed as adverse reactions only)." },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: no adequate studies in pregnant women; should not be used in pregnancy unless considered essential by the physician.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-15047", "q": "Suprax should therefore not be used in pregnancy or in nursing mothers unless considered essential by the physician." }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS, cephalosporins incl. cefixime): most studies have not shown harm to the baby; no extra monitoring for major birth defects needed.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-cephalosporins", "q": "Most studies of pregnant women taking a cephalosporin have not shown that it harms the baby." },
+            { "s": "bumps-cephalosporins", "q": "No extra monitoring for major birth defects is required following use of a cephalosporin." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: should not be used in nursing mothers unless considered essential. No data on cefixime in human breast milk.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-15047", "q": "Suprax should therefore not be used in pregnancy or in nursing mothers unless considered essential by the physician." },
+            { "s": "emc-15047", "q": "No data are available on secretion of cefixime in human breast milk." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Animal studies at high doses showed no impaired fertility.",
+          "detail": true,
+          "src": [
+            { "s": "emc-15047", "q": "revealed no evidence of impaired fertility or harm to the fetus due to cefixime" }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Generally well tolerated; most reactions mild and self-limiting. Listed: diarrhoea (more common at higher doses), abdominal pain, dyspepsia, nausea, vomiting, flatulence, headache, dizziness, rash, pruritus. The SmPC gives no frequencies.",
+          "src": [
+            { "s": "emc-15047", "q": "The majority of adverse reactions observed in clinical trials were mild and self-limiting in nature." },
+            { "s": "emc-15047", "q": "Abdominal pain Diarrhoea* Dyspepsia Nausea Vomiting Flatulence" },
+            { "s": "emc-15047", "q": "*Diarrhoea has been more commonly associated with higher doses." }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Anaphylaxis, angio-oedema, serum sickness-like reaction: stop and treat.",
+          "src": [
+            { "s": "emc-15047", "q": "Anaphylactic reaction Angio-oedema Serum sickness-like reaction" },
+            { "s": "emc-15047", "q": "If an allergic effect occurs with Suprax, the drug should be discontinued and the patient treated with appropriate agents if necessary." }
+          ]
+        },
+        {
+          "t": "Severe skin reactions (SJS, TEN, DRESS, AGEP): stop at the first sign.",
+          "src": [
+            { "s": "emc-15047", "q": "Severe cutaneous adverse reactions (SCARS) including toxic epidermal necrolysis (TEN), Stevens-Johnson syndrome (SJS) drug rash with eosinophilia and systemic symptoms (DRESS), and acute generalised exanthematous pustulosis (AGEP)" }
+          ]
+        },
+        {
+          "t": "Pseudomembranous colitis, acute renal failure with tubulointerstitial nephritis, haemolytic anaemia, agranulocytosis, convulsions/encephalopathy.",
+          "src": [
+            { "s": "emc-15047", "q": "Acute renal failure with tubulointerstitial nephritis" },
+            { "s": "emc-15047", "q": "Cases of convulsions have been reported with cephalosporins including cefixime" },
+            { "s": "emc-15047", "q": "Agranulocytosis Leucopenia Neutropenia Granulocytopenia Haemolytic anaemia Thrombocytopenia" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Elderly: assess renal function before dosing.",
+          "tag": "baseline",
+          "src": [
+            { "s": "emc-15047", "q": "Renal function should be assessed, and dosage should be adjusted in severe renal impairment." }
+          ]
+        },
+        {
+          "t": "Monitor closely for skin reactions; on anticoagulants, watch prothrombin time/bleeding.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-15047", "q": "Patients should be informed about the signs and symptoms of serious skin manifestations and monitored closely." },
+            { "s": "emc-15047", "q": "Care should therefore be taken in patients receiving anticoagulation therapy." }
+          ]
+        },
+        {
+          "t": "Stop if allergic reaction, skin rash/mucosal lesions, acute renal failure or marked diarrhoea occurs; consider stopping if encephalopathy is suspected.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-15047", "q": "When acute renal failure occurs, cefixime should be discontinued" },
+            { "s": "emc-15047", "q": "Suprax should be discontinued if marked diarrhoea occurs." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral. May be taken with or without food.",
+          "src": [
+            { "s": "emc-15047", "q": "Absorption of Suprax is not significantly modified by the presence of food." },
+            { "s": "emc-15047", "q": "Cefixime may therefore be given without regard to meals." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report any rash, blistering, mouth sores or allergy symptoms straight away.",
+          "src": [
+            { "s": "emc-15047", "q": "Patients should be informed about the signs and symptoms of serious skin manifestations and monitored closely." }
+          ]
+        },
+        {
+          "t": "Do not drive or use machines if confusion, convulsions or other signs of encephalopathy occur.",
+          "detail": true,
+          "src": [
+            { "s": "emc-15047", "q": "the patient should not operate machines or drive a vehicle" }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "cefixime:allergy:cephalosporin",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "cefixime",
+      "allergen": ["cefixime", "group:cephalosporin"],
+      "concern": "Cephalosporin / cefixime hypersensitivity",
+      "consequence": "Risk of hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Hypersensitivity to cephalosporin antibiotics",
+      "src": [
+        { "s": "emc-15047", "q": "Hypersensitivity to cephalosporin antibiotics or to any of the excipients listed in section 6.1." }
+      ]
+    },
+    {
+      "id": "cefixime:allergy:penicillin",
+      "kind": "allergy",
+      "level": "caution",
+      "med": "cefixime",
+      "allergen": ["group:penicillin"],
+      "concern": "Penicillin hypersensitivity",
+      "consequence": "Partial cross-allergenicity between penicillins and cephalosporins; severe reactions (including anaphylaxis) to both classes reported.",
+      "action": "Give with caution; stop if an allergic reaction occurs. The SmPC does not distinguish reaction types.",
+      "sourceWording": "should be given with caution",
+      "src": [
+        { "s": "emc-15047", "q": "cefixime should be given with caution to patients with a history of hypersensitivity to penicillin, as there is some evidence of partial cross-allergenicity between the penicillins and cephalosporins" },
+        { "s": "emc-15047", "q": "Patients have had severe reactions (including anaphylaxis) to both classes of drugs." }
+      ]
+    },
+    {
+      "id": "cefixime:renal:crcl-under-20",
+      "kind": "renal",
+      "level": "dose",
+      "med": "cefixime",
+      "renal": { "measure": "CrCl", "max": 20 },
+      "concern": "CrCl less than 20 ml/min (also CAPD or haemodialysis)",
+      "consequence": "Cefixime is mainly excreted unchanged in urine.",
+      "action": "Do not exceed 200 mg once daily. The clinic 400 mg capsule cannot give a dose at or under this limit.",
+      "sourceWording": "a dose of 200 mg once daily should not be exceeded",
+      "src": [
+        { "s": "emc-15047", "q": "In patients whose creatinine clearance is less than 20 ml/min, it is recommended that a dose of 200 mg once daily should not be exceeded." }
+      ]
+    },
+    {
+      "id": "cefixime:condition:severe-renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "cefixime",
+      "condition": "severe-renal-impairment",
+      "concern": "Markedly impaired renal function",
+      "consequence": "Higher risk of encephalopathy; dose limit applies below CrCl 20 ml/min.",
+      "action": "Use with caution; check CrCl and limit the dose if below 20 ml/min.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        { "s": "emc-15047", "q": "Suprax should be administered with caution in patients with markedly impaired renal function" }
+      ]
+    },
+    {
+      "id": "cefixime:age:under-6-months",
+      "kind": "age",
+      "level": "info",
+      "med": "cefixime",
+      "age": { "maxYears": 0.5 },
+      "concern": "Infants under 6 months",
+      "consequence": "Safety and efficacy not established.",
+      "action": "No UK dosing for this age.",
+      "sourceWording": "has not been established in children less than 6 months",
+      "src": [
+        { "s": "emc-15047", "q": "The safety and efficacy of cefixime has not been established in children less than 6 months." }
+      ]
+    },
+    {
+      "id": "cefixime:age:cap-under-10",
+      "kind": "age",
+      "level": "avoid",
+      "med": "cefixime",
+      "formulations": ["cefixime-cap"],
+      "age": { "maxYears": 10 },
+      "concern": "Children under 10 years (solid oral form)",
+      "consequence": "The UK SmPC (200 mg tablets) does not recommend the solid form under 10 years; no UK SmPC exists for the 400 mg capsule.",
+      "action": "Not recommended under 10 years (UK tablet SmPC).",
+      "sourceWording": "not recommended for use in children under 10 years old",
+      "src": [
+        { "s": "emc-15047", "q": "Suprax Tablets 200 mg are not recommended for use in children under 10 years old." }
+      ]
+    },
+    {
+      "id": "cefixime:age:susp-under-10",
+      "kind": "age",
+      "level": "info",
+      "med": "cefixime",
+      "formulations": ["cefixime-susp"],
+      "age": { "minYears": 0.5, "maxYears": 10 },
+      "concern": "Children under 10 years (oral suspension): no UK dose",
+      "consequence": "The only UK cefixime SmPC (200 mg tablets) does not recommend the tablets under 10 years and gives no dose for this age; no UK SmPC exists for the suspension.",
+      "action": "No UK source gives a suspension dose for this age, so the dose cannot be checked here.",
+      "sourceWording": "not recommended for use in children under 10 years old",
+      "src": [
+        { "s": "emc-15047", "q": "Suprax Tablets 200 mg are not recommended for use in children under 10 years old." }
+      ]
+    },
+    {
+      "id": "cefixime:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "cefixime",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "No adequate and well-controlled studies in pregnant women.",
+      "action": "Should not be used unless considered essential by the physician.",
+      "sourceWording": "should therefore not be used in pregnancy",
+      "src": [
+        { "s": "emc-15047", "q": "There are no adequate and well-controlled studies in pregnant women." },
+        { "s": "emc-15047", "q": "Suprax should therefore not be used in pregnancy or in nursing mothers unless considered essential by the physician." }
+      ]
+    },
+    {
+      "id": "cefixime:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "cefixime",
+      "concern": "Pregnancy (BUMPS/UKTIS, cephalosporins)",
+      "consequence": "Most studies have not shown harm to the baby.",
+      "action": "BUMPS: no extra monitoring for major birth defects is required; weigh risks against benefit of treating the infection.",
+      "sourceWording": "have not shown that it harms the baby",
+      "src": [
+        { "s": "bumps-cephalosporins", "q": "Most studies of pregnant women taking a cephalosporin have not shown that it harms the baby." }
+      ]
+    },
+    {
+      "id": "cefixime:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "cefixime",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "No data on secretion into human breast milk.",
+      "action": "Should not be used in nursing mothers unless considered essential by the physician.",
+      "sourceWording": "should therefore not be used in pregnancy or in nursing mothers unless considered essential",
+      "src": [
+        { "s": "emc-15047", "q": "Suprax should therefore not be used in pregnancy or in nursing mothers unless considered essential by the physician." }
+      ]
+    },
+    {
+      "id": "cefixime:interaction:warfarin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "cefixime",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (coumarin anticoagulant)",
+      "consequence": "Cefixime may enhance the anticoagulant effect: prolonged prothrombin time with or without bleeding.",
+      "action": "Give with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        { "s": "emc-15047", "q": "Cefixime should be administered with caution to patients receiving coumarin-type anticoagulants, e.g. warfarin potassium." },
+        { "s": "emc-15047", "q": "Since cefixime may enhance effects of the anticoagulants, prolonged prothrombin time with or without bleeding may occur." }
+      ]
+    }
+  ]
+}

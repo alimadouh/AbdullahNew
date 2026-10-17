@@ -99,6 +99,11 @@ function sourcesOf(ix, rule) {
   }
   return out
 }
+// Skin, eye, ear, nose, mouth and vaginal products: a systemic interaction written for another medicine (matched only by a
+// shared ingredient or a group) is not applied to them. A rule that names the medicine itself still applies.
+// whole words only: "subcutaneous" and "intradermal" injections are systemic, not local
+const LOCAL_ROUTE = /\b(topical|cutaneous|skin|dermal|eye|eyes|ocular|ophthalmic|ear|ears|otic|aural|auricular|nasal|nose|vaginal|oromucosal|buccal|mouth|dental|gingival|scalp|shampoo)\b/i
+export const isLocal = (f) => !!f && !f.systemic && LOCAL_ROUTE.test(`${f.route ?? ''}`) // systemic: true = given locally for a whole-body effect (e.g. progesterone pessary)
 const applies = (rule, item) => !rule.formulations?.length || rule.formulations.includes(item.formId)
 const fmt = (n) => (Number.isInteger(n) ? String(n) : String(Math.trunc(n * 100) / 100))
 
@@ -139,6 +144,8 @@ export function nameOfRef(kb, x) {
 }
 
 function finding(ix, rule, items, factor, extra = {}) {
+  const viaComponent = items.find((i) => i.m && i.m.id !== rule.med && (i.m.components?.use ?? []).includes(rule.med))
+  if (viaComponent) extra = { ...extra, provisional: [extra.provisional, `${viaComponent.m.name} has no UK combination product; this comes from the UK information for ${ix.med.get(rule.med)?.name ?? rule.med}.`].filter(Boolean).join(' ') }
   return {
     key: `${rule.id}|${items.map((i) => i.key).sort().join('+')}`,
     ruleIds: [rule.id],
@@ -159,9 +166,11 @@ function finding(ix, rule, items, factor, extra = {}) {
 function mergeRows(list) {
   const rows = new Map()
   for (const f of list) {
-    const k = `${f.kind}|${f.items.slice().sort().join('+')}|${f.factor ?? ''}|${f.kind === 'interaction' ? f.effect ?? f.concern : f.concern}`
+    // one row per medicine pair for interactions (all sourced statements together); other kinds per concern
+    const k = `${f.kind}|${f.items.slice().sort().join('+')}|${f.factor ?? ''}|${f.kind === 'interaction' ? '' : f.concern}`
     const r = rows.get(k)
-    if (!r) { rows.set(k, { ...f, key: k, statements: [...f.statements], ruleIds: [...f.ruleIds] }); continue }
+    if (!r) { rows.set(k, { ...f, key: k, statements: [...f.statements], ruleIds: [...f.ruleIds], effects: f.effect ? [f.effect] : [] }); continue }
+    if (f.effect && !r.effects.includes(f.effect)) r.effects.push(f.effect)
     for (const s of f.statements) if (!r.statements.some((x) => x.ruleId === s.ruleId)) r.statements.push(s)
     r.ruleIds.push(...f.ruleIds.filter((id) => !r.ruleIds.includes(id)))
     r.level = top([r.level, f.level])
@@ -170,7 +179,10 @@ function mergeRows(list) {
   }
   for (const r of rows.values()) {
     r.statements.sort((a, b) => rank(a.level) - rank(b.level))
-    if (r.kind === 'interaction') r.concern = r.effect ? `Interaction: ${(EFFECT_LABEL[r.effect] ?? r.effect).toLowerCase()}` : `Interaction: ${r.statements[0].title ?? ''}`
+    if (r.kind === 'interaction') {
+      const effects = [...new Set(r.effects ?? [r.effect].filter(Boolean))]
+      r.concern = effects.length ? `Interaction: ${effects.map((e) => EFFECT_LABEL[e] ?? e).join(' · ')}` : `Interaction: ${r.statements[0].title ?? ''}`
+    }
   }
   return [...rows.values()]
 }
@@ -187,7 +199,7 @@ export function assess(kb, selection, patient = {}) {
   const items = selection.map((s) => {
     const m = ix.med.get(s.medId)
     const f = m?.formulations.find((x) => x.id === s.formId) ?? m?.formulations[0]
-    return m ? { ...s, m, f, formId: f?.id, label: f && m.formulations.length > 1 ? `${m.name} (${f.label.toLowerCase()})` : m?.name } : { ...s, m: null, label: s.medId }
+    return m ? { ...s, m, f, formId: f?.id, label: f && m.formulations.length > 1 ? `${m.name} ${f.label.toLowerCase()}` : m?.name } : { ...s, m: null, label: s.medId }
   })
   const unknown = items.filter((i) => !i.m)
   const valid = items.filter((i) => i.m)
@@ -204,8 +216,9 @@ export function assess(kb, selection, patient = {}) {
 
   // a rule's own medicine (`med`) matches only that medicine or a group it belongs to, never by shared ingredient
   // (amoxicillin's rules must not fire for co-amoxiclav); `other` and allergens do match by ingredient.
-  const ownerMatch = (x, m) => (x.startsWith('group:') ? covers(ix, x, m) : x === m.id)
-  const rulesFor = (item, kind) => kb.rules.filter((r) => r.kind === kind && ownerMatch(r.med, item.m) && applies(r, item))
+  const ownerMatch = (x, m) => (x.startsWith('group:') ? covers(ix, x, m) : x === m.id || (m.components?.use ?? []).includes(x))
+  // a form with no UK product has no rules of its own (shown as not checked)
+  const rulesFor = (item, kind) => (item.f?.availability === 'no-uk-product' ? [] : kb.rules.filter((r) => r.kind === kind && ownerMatch(r.med, item.m) && applies(r, item)))
   const impactOf = (item, r) => ({ ruleId: r.id, med: item.label, level: r.level, scope: ruleScope(kb, r), concern: r.kind === 'interaction' ? r.concern : '' })
   // Secondary age limit on a non-age rule: 'skip' when the patient is outside it, a note when age is unknown.
   const ageGate = (it, r) => {
@@ -218,9 +231,13 @@ export function assess(kb, selection, patient = {}) {
   // 1. Same active ingredient selected more than once (tool-detected) + sourced duplication rules.
   run('duplication', () => {
     const byIng = new Map()
-    for (const it of valid) for (const ing of it.m.ingredients) { if (!byIng.has(ing)) byIng.set(ing, []); byIng.get(ing).push(it) }
+    // same ingredient counts as a duplicate only within the same kind of use: systemic with systemic,
+    // or the same local route (eye drops with dexamethasone are not a duplicate of dexamethasone tablets)
+    const useOf = (it) => (isLocal(it.f) ? `local:${String(it.f?.route ?? '').toLowerCase()}` : 'systemic')
+    for (const it of valid) for (const ing of it.m.ingredients) { const k = `${ing}|${useOf(it)}`; if (!byIng.has(k)) byIng.set(k, []); byIng.get(k).push(it) }
     let n = 0
-    for (const [ing, its] of byIng) {
+    for (const [key, its] of byIng) {
+      const ing = key.split('|')[0]
       if (its.length < 2) continue
       n++
       const about = (r, it) => (r.other ? r.other === ing || ix.med.get(r.other)?.ingredients?.includes(ing) || r.other.startsWith('group:') : it.m.ingredients.length === 1)
@@ -229,7 +246,7 @@ export function assess(kb, selection, patient = {}) {
       if (srcRules.length) {
         for (const r of srcRules) raw.push(finding(ix, r, its, `Same ingredient: ${name}`))
       } else {
-        raw.push({ key: `dup|${ing}`, ruleIds: [], kind: 'duplication', level: 'caution', concern: `Same active ingredient (${name}) in ${its.length} entries`, items: its.map((i) => i.key), meds: its.map((i) => i.label), factor: null, effect: null, toolCheck: true, verified: true,
+        raw.push({ key: `dup|${key}`, ruleIds: [], kind: 'duplication', level: 'caution', concern: `Same active ingredient (${name}) in ${its.length} entries`, items: its.map((i) => i.key), meds: its.map((i) => i.label), factor: null, effect: null, toolCheck: true, verified: true,
           statements: [{ ruleId: null, level: 'caution', about: 'Tool check', consequence: `${name} is counted more than once.`, action: `Check this is intended and add up the total ${name} dose against its maximum.`, sourceWording: null, sources: [], verified: true }] })
       }
     }
@@ -243,7 +260,7 @@ export function assess(kb, selection, patient = {}) {
       if (a === b) continue
       const A = valid[a], B = valid[b]
       if (A.medId === B.medId) continue // same medicine twice: handled by duplication
-      for (const r of rulesFor(A, 'interaction')) if (covers(ix, r.other, B.m)) {
+      for (const r of rulesFor(A, 'interaction')) if (covers(ix, r.other, B.m) && (!r.otherFormulations?.length || r.otherFormulations.includes(B.formId)) && !(r.otherExcept ?? []).includes(B.m.id) && !(r.other !== B.m.id && isLocal(B.f))) {
         const gate = ageGate(A, r)
         if (gate === 'skip') continue
         raw.push(finding(ix, r, [A, B], null, { provisional: gate })); n++
@@ -453,13 +470,19 @@ export function assess(kb, selection, patient = {}) {
 
   // cumulative effects: 2+ distinct medicines in findings sharing an effect tag
   const byEffect = new Map()
-  for (const f of findings) if (f.effect) { if (!byEffect.has(f.effect)) byEffect.set(f.effect, { effect: f.effect, label: EFFECT_LABEL[f.effect] ?? f.effect, meds: new Set(), level: f.level, count: 0 }); const e = byEffect.get(f.effect); f.meds.forEach((m) => e.meds.add(m)); e.level = top([e.level, f.level]); e.count++ }
+  for (const f of findings) for (const eff of f.effects?.length ? f.effects : [f.effect].filter(Boolean)) { if (!byEffect.has(eff)) byEffect.set(eff, { effect: eff, label: EFFECT_LABEL[eff] ?? eff, meds: new Set(), level: f.level, count: 0 }); const e = byEffect.get(eff); f.meds.forEach((m) => e.meds.add(m)); e.level = top([e.level, f.level]); e.count++ }
   const cumulative = [...byEffect.values()].filter((e) => e.meds.size >= 3 || e.count >= 2).map((e) => ({ ...e, meds: [...e.meds] })).sort((a, b) => rank(a.level) - rank(b.level))
 
   const missingList = [...missing.values()].map((m) => ({ ...m, impacts: m.impacts.sort((a, b) => rank(a.level) - rank(b.level)), topLevel: m.impacts.length ? top(m.impacts.map((x) => x.level)) : 'info' })).sort((a, b) => rank(a.topLevel) - rank(b.topLevel))
 
   const counts = Object.fromEntries(LEVELS.map((l) => [l, findings.filter((f) => f.level === l).length]))
-  return { findings, cumulative, missing: missingList, checks, counts, unknown: unknown.map((u) => u.medId), errors, unverifiedRules: kb.rules.filter((r) => r.v === false).length }
+  const unchecked = valid.filter((i) => i.m.availability?.status === 'no-uk-product' || i.f?.availability === 'no-uk-product').map((i) => {
+    const c = i.m.components
+    if (!c?.use?.length) return i.label
+    const names = c.use.map((x) => ix.med.get(x)?.name ?? x).join(', ')
+    return `${i.label} (checked using the UK information for ${names}${c.missing?.length ? `; not checked: ${c.missing.join(', ')}` : ''})`
+  })
+  return { findings, cumulative, missing: missingList, checks, counts, unknown: unknown.map((u) => u.medId), unchecked, errors, unverifiedRules: kb.rules.filter((r) => r.v === false).length }
 }
 
 // Weight-based dose (explicit arithmetic). Returns null if not computable.
@@ -483,16 +506,18 @@ export function calcDose(calc, weightKg, ageYears) {
 const CI_KINDS = ['condition', 'pregnancy', 'breastfeeding', 'renal', 'hepatic', 'age', 'allergy']
 export function contraindications(kb, selection) {
   const ix = indexKb(kb)
-  const ownerMatch = (x, m) => (x.startsWith('group:') ? covers(ix, x, m) : x === m.id)
+  const ownerMatch = (x, m) => (x.startsWith('group:') ? covers(ix, x, m) : x === m.id || (m.components?.use ?? []).includes(x))
   return selection.map((s) => {
     const m = ix.med.get(s.medId)
     if (!m) return { key: s.key, label: s.medId, contraindicated: [], avoid: [] }
     const f = m.formulations.find((x) => x.id === s.formId) ?? m.formulations[0]
     const item = { formId: f.id }
+    if (f.availability === 'no-uk-product') return { key: s.key, noUk: true, label: `${m.name} ${f.label.toLowerCase()}`, contraindicated: [], avoid: [] }
     const out = { contraindicated: new Map(), avoid: new Map() }
     for (const r of kb.rules) {
       if (!CI_KINDS.includes(r.kind) || !['contraindicated', 'avoid'].includes(r.level) || !ownerMatch(r.med, m) || !applies(r, item)) continue
-      let scope = ruleScope(kb, r)
+      // conditions use the rule's own wording (keeps qualifiers such as "active", "for enuresis"); others the computed scope
+      let scope = r.kind === 'condition' && r.concern ? r.concern : ruleScope(kb, r)
       if (r.age && r.kind !== 'age') scope += ` (${ageText(r.age).toLowerCase()})`
       const bucket = out[r.level]
       if (!bucket.has(scope)) bucket.set(scope, { scope, kind: r.kind, sources: [], ruleIds: [] })
@@ -502,6 +527,6 @@ export function contraindications(kb, selection) {
     }
     for (const sc of out.contraindicated.keys()) out.avoid.delete(sc) // listed once, at the stronger level
     const order = (a, b) => CI_KINDS.indexOf(a.kind) - CI_KINDS.indexOf(b.kind) || a.scope.localeCompare(b.scope)
-    return { key: s.key, label: m.formulations.length > 1 ? `${m.name} (${f.label.toLowerCase()})` : m.name, contraindicated: [...out.contraindicated.values()].sort(order), avoid: [...out.avoid.values()].sort(order) }
+    return { key: s.key, noUk: m.availability?.status === 'no-uk-product', label: m.formulations.length > 1 ? `${m.name} ${f.label.toLowerCase()}` : m.name, contraindicated: [...out.contraindicated.values()].sort(order), avoid: [...out.avoid.values()].sort(order) }
   })
 }

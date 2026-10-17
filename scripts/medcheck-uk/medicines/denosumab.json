@@ -1,0 +1,501 @@
+{
+  "id": "denosumab",
+  "name": "Denosumab",
+  "ingredients": ["denosumab"],
+  "className": "Monoclonal antibody (RANKL inhibitor) for bone disease",
+  "groups": [],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "denosumab-60-pfs",
+      "label": "Solution for injection in pre-filled syringe (60 mg)",
+      "route": "subcutaneous",
+      "strengths": "60 mg in 1 mL",
+      "release": "n/a",
+      "note": "This is the 60 mg (osteoporosis) product. A separate 120 mg denosumab product for cancer indications has different contraindications and is not covered here.",
+      "src": [
+        { "s": "emc-568", "q": "Each pre-filled syringe contains 60 mg of denosumab in 1 mL of solution (60 mg/mL)." },
+        { "s": "mhra-dsu-denosumab-hypocalcaemia-2012", "q": "The contraindications vary between the 2 doses, because their indications are different." }
+      ],
+      "sourceIds": ["emc-568"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Osteoporosis in postmenopausal women and in men at increased risk of fracture; bone loss with hormone ablation in men with prostate cancer at increased fracture risk; bone loss with long-term systemic glucocorticoid therapy in adults at increased fracture risk.",
+          "src": [
+            { "s": "emc-568", "q": "Treatment of osteoporosis in postmenopausal women and in men at increased risk of fractures." },
+            { "s": "emc-568", "q": "Treatment of bone loss associated with hormone ablation in men with prostate cancer at increased risk of fractures" },
+            { "s": "emc-568", "q": "Treatment of bone loss associated with long-term systemic glucocorticoid therapy in adult patients at increased risk of fracture" }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA: patients should not stop denosumab without specialist review (risk of multiple vertebral fractures after stopping or delaying).",
+          "src": [
+            { "s": "mhra-dsu-denosumab-stopping-2020", "q": "patients should not stop denosumab without specialist review" }
+          ]
+        },
+        {
+          "t": "Biological medicine: record the product name and batch number.",
+          "detail": true,
+          "src": [
+            { "s": "emc-568", "q": "In order to improve the traceability of biological medicinal products, the name and the batch number of the administered product should be clearly recorded." }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "60 mg by subcutaneous injection once every 6 months (thigh, abdomen or upper arm). Patients must have adequate calcium and vitamin D.",
+          "tag": "All indications",
+          "src": [
+            { "s": "emc-568", "q": "The recommended dose is 60 mg denosumab administered as a single subcutaneous injection once every 6 months into the thigh, abdomen or upper arm." },
+            { "s": "emc-568", "q": "Patients must be adequately supplemented with calcium and vitamin D" }
+          ]
+        },
+        {
+          "t": "Optimal treatment length not established; re-evaluate periodically, especially after 5 or more years.",
+          "tag": "Duration",
+          "src": [
+            { "s": "emc-568", "q": "The need for continued treatment should be re-evaluated periodically based on the benefits and potential risks of denosumab on an individual patient basis, particularly after 5 or more years of use" }
+          ]
+        },
+        {
+          "t": "MHRA: if a dose is missed, give it as soon as possible, then schedule the next injection 6 months from that date.",
+          "tag": "Missed dose",
+          "src": [
+            { "s": "mhra-dsu-denosumab-stopping-2020", "q": "if you miss a prescribed dose of denosumab, the missed injection should be administered as soon as possible. After this, your next injection will be scheduled 6 months from the date of your last injection" }
+          ]
+        },
+        {
+          "t": "Elderly: no dose adjustment.",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            { "s": "emc-568", "q": "No dose adjustment is required in elderly patients." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Should not be used under 18 years: serious hypercalcaemia (some with acute kidney injury), possible inhibition of bone growth and tooth eruption. MHRA confirms: adults (18 and over) only.",
+          "src": [
+            { "s": "emc-568", "q": "Prolia should not be used in children aged < 18 years because of safety concerns of serious hypercalcaemia, and potential inhibition of bone growth and lack of tooth eruption" },
+            { "s": "mhra-dsu-denosumab-under-18-2022", "q": "denosumab 60mg (Prolia) should not be used in children and adolescents younger than 18 years" }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to denosumab or excipients; hypocalcaemia.",
+          "src": [
+            { "s": "emc-568", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1. Hypocalcaemia" }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Hypocalcaemia: correct before starting. Severe symptomatic (including fatal) cases reported, mostly in the first weeks but also later. Concomitant glucocorticoids add to the risk.",
+          "src": [
+            { "s": "emc-568", "q": "Hypocalcaemia must be corrected by adequate intake of calcium and vitamin D before initiating therapy." },
+            { "s": "emc-568", "q": "severe symptomatic hypocalcaemia (resulting in hospitalisation, life-threatening events, and fatal cases) has been reported" },
+            { "s": "emc-568", "q": "Concomitant glucocorticoid treatment is an additional risk factor for hypocalcaemia." }
+          ]
+        },
+        {
+          "t": "Severe renal impairment (CrCl below 30 mL/min) or dialysis: greater risk of hypocalcaemia and PTH rise; severe and fatal cases. Calcium, vitamin D and regular calcium monitoring are especially important.",
+          "src": [
+            { "s": "emc-568", "q": "Patients with severe renal impairment (creatinine clearance < 30 mL/min) or receiving dialysis are at greater risk of developing hypocalcaemia." },
+            { "s": "emc-568", "q": "Adequate intake of calcium, vitamin D and regular monitoring of calcium is especially important in these patients" }
+          ]
+        },
+        {
+          "t": "Stopping treatment: bone density falls and fracture risk rises. MHRA: multiple vertebral fractures within 18 months of stopping or delaying; highest risk with previous vertebral fracture. Monitor BMD and consider alternative treatment.",
+          "src": [
+            { "s": "emc-568", "q": "Following denosumab discontinuation, decrease in bone mineral density (BMD) is expected (see section 5.1), leading to an increased risk for fractures." },
+            { "s": "mhra-dsu-denosumab-stopping-2020", "q": "an increased risk of multiple vertebral fractures has been reported in patients within 18 months of stopping or delaying ongoing denosumab 60mg treatment for osteoporosis" },
+            { "s": "mhra-dsu-denosumab-stopping-2020", "q": "patients with a previous vertebral fracture may be at highest risk" }
+          ]
+        },
+        {
+          "t": "Osteonecrosis of the jaw: delay starting with unhealed open mouth lesions; dental check and preventive dentistry if risk factors. Avoid invasive dental procedures close to a dose.",
+          "src": [
+            { "s": "emc-568", "q": "The start of treatment/new treatment course should be delayed in patients with unhealed open soft tissue lesions in the mouth." },
+            { "s": "emc-568", "q": "invasive dental procedures should be performed only after careful consideration and be avoided in close proximity to denosumab administration" }
+          ]
+        },
+        {
+          "t": "Atypical femoral fractures: ask about new thigh, hip or groin pain; examine the other femur after a femoral shaft fracture. Osteonecrosis of the external auditory canal also reported.",
+          "src": [
+            { "s": "emc-568", "q": "During denosumab treatment, patients should be advised to report new or unusual thigh, hip, or groin pain." },
+            { "s": "emc-568", "q": "Osteonecrosis of the external auditory canal has been reported with denosumab." }
+          ]
+        },
+        {
+          "t": "Skin infections (mainly cellulitis) leading to hospital admission: seek prompt care.",
+          "detail": true,
+          "src": [
+            { "s": "emc-568", "q": "Patients should be advised to seek prompt medical attention if they develop signs or symptoms of cellulitis." }
+          ]
+        },
+        {
+          "t": "Do not use with other denosumab-containing products. Contains sorbitol (47 mg/mL).",
+          "detail": true,
+          "src": [
+            { "s": "emc-568", "q": "Patients being treated with denosumab should not be treated concomitantly with other denosumab-containing medicinal products" },
+            { "s": "emc-568", "q": "This medicine contains 47 mg sorbitol in each mL of solution." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "No clinically relevant pharmacokinetic interactions expected (no effect on CYP3A4 substrate midazolam). Previous alendronate did not alter denosumab.",
+          "src": [
+            { "s": "emc-568", "q": "This indicates that denosumab should not alter the pharmacokinetics of medicinal products metabolised by CYP3A4." },
+            { "s": "emc-568", "q": "the pharmacokinetics and pharmacodynamics of denosumab were not altered by previous alendronate therapy" }
+          ]
+        },
+        {
+          "t": "Glucocorticoids: additional risk factor for hypocalcaemia (section 4.4).",
+          "src": [
+            { "s": "emc-568", "q": "Concomitant glucocorticoid treatment is an additional risk factor for hypocalcaemia." }
+          ]
+        },
+        {
+          "t": "Other denosumab-containing products: do not combine.",
+          "src": [
+            { "s": "emc-568", "q": "Patients being treated with denosumab should not be treated concomitantly with other denosumab-containing medicinal products" }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No dose adjustment in renal impairment. Severe renal impairment (CrCl below 30 mL/min) or dialysis: higher risk of hypocalcaemia; monitor calcium. MHRA (2014): check calcium within two weeks after the first dose in patients with risk factors such as CrCl below 30 ml/min.",
+          "src": [
+            { "s": "emc-568", "q": "No dose adjustment is required in patients with renal impairment" },
+            { "s": "emc-568", "q": "Patients with severe renal impairment (creatinine clearance < 30 mL/min) or receiving dialysis are at greater risk of developing hypocalcaemia." },
+            { "s": "mhra-dsu-denosumab-onj-calcium-2014", "q": "within two weeks after the initial dose in patients with risk factors for hypocalcaemia (eg, severe renal impairment, creatinine clearance <30 ml/min)" }
+          ]
+        },
+        {
+          "t": "No data in patients on long-term systemic glucocorticoids with severe renal impairment (GFR below 30 mL/min).",
+          "detail": true,
+          "src": [
+            { "s": "emc-568", "q": "No data is available in patients with long-term systemic glucocorticoid therapy and severe renal impairment (Glomerular filtration rate, GFR < 30 mL/min)." }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Not studied in hepatic impairment; pharmacokinetics not expected to be affected.",
+          "src": [
+            { "s": "emc-568", "q": "The safety and efficacy of denosumab have not been studied in patients with hepatic impairment" },
+            { "s": "emc-568", "q": "The pharmacokinetics of denosumab is not expected to be affected by hepatic impairment." }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Not recommended in pregnancy or in women of child-bearing potential not using contraception. Avoid pregnancy during and for at least 5 months after treatment. Effects likely greater in the second and third trimesters.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-568", "q": "Prolia is not recommended for use in pregnant women and women of child-bearing potential not using contraception." },
+            { "s": "emc-568", "q": "Women should be advised not to become pregnant during and for at least 5 months after treatment with Prolia." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Unknown if excreted in milk; animal data suggest impaired lactation. Decide whether to stop breastfeeding or stop treatment, weighing benefits.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-568", "q": "It is unknown whether denosumab is excreted in human milk." },
+            { "s": "emc-568", "q": "A decision on whether to abstain from breast-feeding or to abstain from therapy with Prolia should be made" }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Women should avoid pregnancy during and for at least 5 months after treatment. No human fertility data; animal studies show no fertility harm.",
+          "src": [
+            { "s": "emc-568", "q": "Women should be advised not to become pregnant during and for at least 5 months after treatment with Prolia." },
+            { "s": "emc-568", "q": "No data are available on the effect of denosumab on human fertility." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common: pain in extremity, musculoskeletal pain. Common: urinary tract and upper respiratory tract infection, sciatica, constipation, abdominal discomfort, rash, eczema, alopecia.",
+          "src": [
+            { "s": "emc-568", "q": "The most common side effects with denosumab (seen in more than one patient in ten) are musculoskeletal pain and pain in the extremity." },
+            { "s": "emc-568", "q": "Common Common Uncommon Uncommon Uncommon Urinary tract infection Upper respiratory tract infection" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Severe symptomatic hypocalcaemia (QT prolongation, tetany, seizures, altered mental state): measure calcium if symptoms occur.",
+          "src": [
+            { "s": "emc-568", "q": "Examples of the clinical manifestations of severe symptomatic hypocalcaemia have included QT interval prolongation, tetany, seizures and altered mental status" },
+            { "s": "emc-568", "q": "If any patient presents with suspected symptoms of hypocalcaemia during treatment (see section 4.8 for symptoms) calcium levels should be measured." }
+          ]
+        },
+        {
+          "t": "Osteonecrosis of the jaw and atypical femoral fractures (rare); cellulitis (uncommon); anaphylaxis (rare). Consider stopping pending evaluation if an atypical femoral fracture is suspected.",
+          "src": [
+            { "s": "emc-568", "q": "Uncommon cases of cellulitis, rare cases of hypocalcaemia, hypersensitivity, osteonecrosis of the jaw and atypical femoral fractures" },
+            { "s": "emc-568", "q": "Discontinuation of denosumab therapy in patients suspected to have an atypical femur fracture should be considered pending evaluation of the patient based on an individual benefit-risk assessment." }
+          ]
+        },
+        {
+          "t": "Multiple vertebral fractures after stopping or delaying treatment (MHRA).",
+          "src": [
+            { "s": "mhra-dsu-denosumab-stopping-2020", "q": "an increased risk of multiple vertebral fractures has been reported in patients within 18 months of stopping or delaying ongoing denosumab 60mg treatment for osteoporosis" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before starting: identify hypocalcaemia risk and correct hypocalcaemia; check ONJ risk factors and arrange dental examination if present.",
+          "tag": "baseline",
+          "src": [
+            { "s": "emc-568", "q": "It is important to identify patients at risk for hypocalcaemia." },
+            { "s": "emc-568", "q": "A dental examination with preventive dentistry and an individual benefit-risk assessment is recommended prior to treatment with denosumab in patients with concomitant risk factors." }
+          ]
+        },
+        {
+          "t": "Calcium before each dose; in patients predisposed to hypocalcaemia (e.g. CrCl below 30 mL/min), also within two weeks after the first dose; and whenever symptoms suggest hypocalcaemia.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-568", "q": "Clinical monitoring of calcium levels is recommended before each dose and, in patients predisposed to hypocalcaemia within two weeks, after the initial dose." },
+            { "s": "mhra-dsu-denosumab-onj-calcium-2014", "q": "Check calcium levels: before each dose within two weeks after the initial dose in patients with risk factors for hypocalcaemia" }
+          ]
+        },
+        {
+          "t": "After stopping: monitor BMD and consider alternative treatment. Do not stop without specialist review (MHRA).",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-568", "q": "Thus, monitoring of BMD is recommended, and alternative treatment should be considered according to clinical guidelines." },
+            { "s": "mhra-dsu-denosumab-stopping-2020", "q": "patients should not stop denosumab without specialist review" }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Subcutaneous injection by a trained person. Let the syringe reach room temperature, do not shake, inject slowly and give the whole contents. Store refrigerated (2-8°C); may be kept at room temperature (up to 25°C) for up to 30 days.",
+          "src": [
+            { "s": "emc-568", "q": "Administration should be performed by an individual who has been adequately trained in injection techniques." },
+            { "s": "emc-568", "q": "To avoid discomfort at the site of injection, allow the pre-filled syringe to reach room temperature (up to 25°C) before injecting and inject slowly." },
+            { "s": "emc-568", "q": "Once removed from the refrigerator, Prolia may be stored at room temperature (up to 25°C) for up to 30 days in the original carton." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Do not stop or delay injections without talking to the doctor; if a dose is missed, have it as soon as possible.",
+          "src": [
+            { "s": "mhra-dsu-denosumab-stopping-2020", "q": "do not stop denosumab treatment without talking to your doctor to discuss your individual risk factors" }
+          ]
+        },
+        {
+          "t": "Take calcium and vitamin D as advised. Report muscle spasms, twitching, cramps or tingling (low calcium).",
+          "src": [
+            { "s": "mhra-dsu-denosumab-onj-calcium-2014", "q": "Tell all patients to report symptoms of hypocalcaemia to their doctor (eg, muscle spasms, twitches, or cramps; numbness or tingling in the fingers, toes, or around the mouth)." }
+          ]
+        },
+        {
+          "t": "Keep good oral hygiene, have routine dental check-ups, and report loose teeth, mouth pain, swelling or non-healing sores. Report new thigh, hip or groin pain, ear symptoms, or signs of skin infection. Carry the patient reminder card.",
+          "src": [
+            { "s": "emc-568", "q": "All patients should be encouraged to maintain good oral hygiene, receive routine dental check-ups, and immediately report any oral symptoms" },
+            { "s": "emc-568", "q": "Patients treated with Prolia should be given the package leaflet and the patient reminder card." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "denosumab:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "denosumab",
+      "allergen": ["denosumab"],
+      "concern": "Denosumab hypersensitivity",
+      "consequence": "Hypersensitivity, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity to the active substance",
+      "src": [
+        { "s": "emc-568", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1. Hypocalcaemia" }
+      ]
+    },
+    {
+      "id": "denosumab:condition:hypocalcaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "denosumab",
+      "condition": "hypocalcaemia",
+      "concern": "Hypocalcaemia",
+      "consequence": "Severe symptomatic hypocalcaemia, including fatal cases.",
+      "action": "Do not use until corrected with calcium and vitamin D.",
+      "sourceWording": "4.3 Contraindications: Hypocalcaemia",
+      "src": [
+        { "s": "emc-568", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1. Hypocalcaemia" },
+        { "s": "emc-568", "q": "Hypocalcaemia must be corrected by adequate intake of calcium and vitamin D before initiating therapy." },
+        { "s": "mhra-dsu-denosumab-hypocalcaemia-2012", "q": "Denosumab 60 mg (for osteoporosis indications) should not be used in patients with hypocalcaemia, regardless of severity" }
+      ]
+    },
+    {
+      "id": "denosumab:renal:crcl-30",
+      "kind": "renal",
+      "level": "monitor",
+      "med": "denosumab",
+      "renal": { "measure": "CrCl", "max": 30 },
+      "concern": "Severe renal impairment (CrCl below 30 mL/min)",
+      "consequence": "Greater risk of hypocalcaemia and PTH rise; severe and fatal cases reported.",
+      "action": "No dose change. Ensure calcium and vitamin D; check calcium before each dose and within two weeks after the first dose, and regularly.",
+      "sourceWording": "regular monitoring of calcium is especially important",
+      "src": [
+        { "s": "emc-568", "q": "Patients with severe renal impairment (creatinine clearance < 30 mL/min) or receiving dialysis are at greater risk of developing hypocalcaemia." },
+        { "s": "emc-568", "q": "Adequate intake of calcium, vitamin D and regular monitoring of calcium is especially important in these patients" },
+        { "s": "mhra-dsu-denosumab-onj-calcium-2014", "q": "within two weeks after the initial dose in patients with risk factors for hypocalcaemia (eg, severe renal impairment, creatinine clearance <30 ml/min)" }
+      ]
+    },
+    {
+      "id": "denosumab:condition:dialysis",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "denosumab",
+      "condition": "end-stage-renal-disease",
+      "concern": "Receiving dialysis",
+      "consequence": "Greater risk of hypocalcaemia.",
+      "action": "Ensure calcium and vitamin D; monitor calcium regularly.",
+      "sourceWording": "regular monitoring of calcium is especially important",
+      "src": [
+        { "s": "emc-568", "q": "Patients with severe renal impairment (creatinine clearance < 30 mL/min) or receiving dialysis are at greater risk of developing hypocalcaemia." },
+        { "s": "emc-568", "q": "Adequate intake of calcium, vitamin D and regular monitoring of calcium is especially important in these patients" }
+      ]
+    },
+    {
+      "id": "denosumab:age:under-18",
+      "kind": "age",
+      "level": "avoid",
+      "med": "denosumab",
+      "age": { "maxYears": 18 },
+      "concern": "Under 18 years",
+      "consequence": "Serious, life-threatening hypercalcaemia (some with acute kidney injury); possible inhibition of bone growth and tooth eruption.",
+      "action": "Should not be used.",
+      "sourceWording": "should not be used in children aged < 18 years",
+      "src": [
+        { "s": "emc-568", "q": "Prolia should not be used in children aged < 18 years because of safety concerns of serious hypercalcaemia, and potential inhibition of bone growth and lack of tooth eruption" },
+        { "s": "mhra-dsu-denosumab-under-18-2022", "q": "denosumab 60mg (Prolia) should not be used in children and adolescents younger than 18 years" }
+      ]
+    },
+    {
+      "id": "denosumab:condition:unhealed-oral-lesions",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "denosumab",
+      "condition": "unhealed-oral-lesions",
+      "concern": "Unhealed open soft-tissue lesions in the mouth",
+      "consequence": "Osteonecrosis of the jaw risk.",
+      "action": "Delay starting treatment until healed.",
+      "sourceWording": "should be delayed",
+      "src": [
+        { "s": "emc-568", "q": "The start of treatment/new treatment course should be delayed in patients with unhealed open soft tissue lesions in the mouth." }
+      ]
+    },
+    {
+      "id": "denosumab:pregnancy:avoid",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "denosumab",
+      "concern": "Pregnancy",
+      "consequence": "Reproductive toxicity in animals; effects likely greater in later pregnancy.",
+      "action": "Not recommended.",
+      "sourceWording": "not recommended for use in pregnant women",
+      "src": [
+        { "s": "emc-568", "q": "Prolia is not recommended for use in pregnant women and women of child-bearing potential not using contraception." }
+      ]
+    },
+    {
+      "id": "denosumab:condition:no-contraception",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "denosumab",
+      "condition": "childbearing-potential-no-contraception",
+      "concern": "Woman of child-bearing potential not using contraception",
+      "consequence": "Risk of fetal exposure.",
+      "action": "Not recommended; avoid pregnancy during and for at least 5 months after treatment.",
+      "sourceWording": "not recommended for use in ... women of child-bearing potential not using contraception",
+      "src": [
+        { "s": "emc-568", "q": "Prolia is not recommended for use in pregnant women and women of child-bearing potential not using contraception." },
+        { "s": "emc-568", "q": "Women should be advised not to become pregnant during and for at least 5 months after treatment with Prolia." }
+      ]
+    },
+    {
+      "id": "denosumab:breastfeeding:caution",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "denosumab",
+      "concern": "Breastfeeding",
+      "consequence": "Excretion unknown; animal data suggest impaired lactation.",
+      "action": "Decide whether to stop breastfeeding or stop denosumab, weighing benefits.",
+      "sourceWording": "A decision on whether to abstain from breast-feeding or to abstain from therapy",
+      "src": [
+        { "s": "emc-568", "q": "A decision on whether to abstain from breast-feeding or to abstain from therapy with Prolia should be made" }
+      ]
+    },
+    {
+      "id": "denosumab:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "denosumab",
+      "other": "group:corticosteroid",
+      "concern": "Systemic glucocorticoid (e.g. oral prednisolone or dexamethasone)",
+      "consequence": "Concomitant glucocorticoid treatment is an additional risk factor for hypocalcaemia.",
+      "action": "Identify the hypocalcaemia risk; check calcium before each dose and, in patients predisposed to hypocalcaemia, within two weeks after the first dose.",
+      "sourceWording": "Concomitant glucocorticoid treatment is an additional risk factor for hypocalcaemia",
+      "src": [
+        { "s": "emc-568", "q": "Concomitant glucocorticoid treatment is an additional risk factor for hypocalcaemia." },
+        { "s": "emc-568", "q": "Clinical monitoring of calcium levels is recommended before each dose and, in patients predisposed to hypocalcaemia within two weeks, after the initial dose." }
+      ]
+    }
+  ]
+}

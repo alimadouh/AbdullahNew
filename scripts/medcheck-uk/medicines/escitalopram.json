@@ -1,0 +1,469 @@
+{
+  "id": "escitalopram",
+  "name": "Escitalopram",
+  "ingredients": ["escitalopram"],
+  "className": "Selective serotonin reuptake inhibitor (SSRI)",
+  "groups": ["ssri", "serotonergic", "qt-prolonging", "cyp2d6-inhibitor"],
+  "searchTerms": ["escitalopram", "escitalopram oxalate"],
+  "formulations": [
+    {
+      "id": "escitalopram-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "5 mg, 10 mg, 20 mg (as oxalate)",
+      "release": "immediate",
+      "note": "10 mg and 20 mg tablets are scored and can be divided into equal doses.",
+      "src": [
+        { "s": "emc-7718", "q": "Each tablet contains 10 mg escitalopram (as oxalate)" },
+        { "s": "emc-7718", "q": "The 10 mg and 20 mg tablets can be divided into equal doses." }
+      ],
+      "sourceIds": ["emc-7718"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Major depressive episodes; panic disorder with or without agoraphobia; social anxiety disorder; generalised anxiety disorder; obsessive-compulsive disorder.",
+        "src": [{ "s": "emc-7718", "q": "Treatment of major depressive episodes. Treatment of panic disorder with or without agoraphobia. Treatment of social anxiety disorder (social phobia). Treatment of generalised anxiety disorder. Treatment of obsessive-compulsive disorder." }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Not for children and adolescents under 18. Safety of doses above 20 mg daily not shown.",
+        "src": [
+          { "s": "emc-7718", "q": "should not be used in the treatment of children and adolescents under the age of 18 years" },
+          { "s": "emc-7718", "q": "Safety of daily doses above 20 mg has not been demonstrated." }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "10 mg once daily; may increase to a maximum of 20 mg daily. Response usually after 2 to 4 weeks; continue at least 6 months after symptoms resolve.", "tag": "Major depressive episodes",
+        "src": [
+          { "s": "emc-7718", "q": "Major depressive episodes Usual dosage is 10 mg once daily. Depending on individual patient response, the dose may be increased to a maximum of 20 mg daily." },
+          { "s": "emc-7718", "q": "After the symptoms resolve, treatment for at least 6 months is required for consolidation of the response." }
+        ] },
+      { "t": "5 mg daily for the first week, then 10 mg daily; may increase to a maximum of 20 mg daily. Maximum effect after about 3 months.", "tag": "Panic disorder",
+        "src": [
+          { "s": "emc-7718", "q": "An initial dose of 5 mg is recommended for the first week before increasing the dose to 10 mg daily." },
+          { "s": "emc-7718", "q": "Maximum effectiveness is reached after about 3 months." }
+        ] },
+      { "t": "10 mg once daily; may be lowered to 5 mg or raised to a maximum of 20 mg daily. Treat 12 weeks to consolidate response.", "tag": "Social anxiety disorder",
+        "src": [
+          { "s": "emc-7718", "q": "The dose may subsequently, depending on individual patient response, be decreased to 5 mg or increased to a maximum of 20 mg daily." },
+          { "s": "emc-7718", "q": "treatment for 12 weeks is recommended to consolidate response" }
+        ] },
+      { "t": "Initially 10 mg once daily; may increase to a maximum of 20 mg daily. Re-evaluate benefit and dose regularly.", "tag": "Generalised anxiety disorder and OCD",
+        "src": [
+          { "s": "emc-7718", "q": "Generalised anxiety disorder Initial dosage is 10 mg once daily. Depending on the individual patient response, the dose may be increased to a maximum of 20 mg daily." },
+          { "s": "emc-7718", "q": "Obsessive-compulsive disorder Initial dosage is 10 mg once daily." }
+        ] },
+      { "t": "Over 65 years: initially 5 mg once daily, may increase to 10 mg daily. MHRA: maximum 10 mg daily over 65 years and in hepatic impairment.", "tag": "Elderly (over 65 years)",
+        "src": [
+          { "s": "emc-7718", "q": "Elderly patients (> 65 years of age) Initial dosage is 5 mg once daily. Depending on individual patient response the dose may be increased to 10 mg daily" },
+          { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "The maximum dose of both medicines has therefore been restricted in patients older than 65 years." }
+        ] },
+      { "t": "Known CYP2C19 poor metabolisers: 5 mg daily for the first 2 weeks, then up to 10 mg daily.", "tag": "CYP2C19 poor metabolisers",
+        "src": [{ "s": "emc-7718", "q": "For patients who are known to be poor metabolisers with respect to CYP2C19, an initial dose of 5 mg daily during the first two weeks of treatment is recommended." }] },
+      { "t": "Stopping: avoid abrupt withdrawal; reduce gradually over at least 1 to 2 weeks (4.2), or over several weeks or months as needed (4.4).", "tag": "Stopping",
+        "src": [
+          { "s": "emc-7718", "q": "When stopping treatment with escitalopram the dose should be gradually reduced over a period of at least one to two weeks in order to reduce the risk of discontinuation symptoms" },
+          { "s": "emc-7718", "q": "escitalopram should be gradually tapered when discontinuing treatment over a period of several weeks or months, according to the patient's needs" }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Should not be used under 18 years (more suicidal behaviour and hostility with antidepressants in trials; long-term safety data lacking). If used on clinical need, monitor carefully for suicidal symptoms.",
+        "src": [
+          { "s": "emc-7718", "q": "should not be used in the treatment of children and adolescents under the age of 18 years" },
+          { "s": "emc-7718", "q": "If, based on clinical need, a decision to treat is nevertheless taken, the patient should be carefully monitored for the appearance of suicidal symptoms." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to escitalopram or any excipient.", "src": [{ "s": "emc-7718", "q": "Hypersensitivity to the active substance or to any of the excipients, listed in section 6.1." }] },
+      { "t": "Non-selective irreversible MAOIs; reversible MAO-A inhibitors (e.g. moclobemide); linezolid (serotonin syndrome).",
+        "src": [
+          { "s": "emc-7718", "q": "Concomitant treatment with non-selective, irreversible monoamine oxidase inhibitors (MAO-inhibitors) is contraindicated due to the risk of serotonin syndrome" },
+          { "s": "emc-7718", "q": "The combination of escitalopram with reversible MAO-A inhibitors (e.g. moclobemide) or the reversible non-selective MAO-inhibitor linezolid is contraindicated" }
+        ] },
+      { "t": "Known QT interval prolongation or congenital long QT syndrome.",
+        "src": [{ "s": "emc-7718", "q": "Escitalopram is contraindicated in patients with known QT interval prolongation or congenital long QT syndrome." }] },
+      { "t": "Medicines known to prolong the QT interval (class IA/III antiarrhythmics, antipsychotics, tricyclic antidepressants, some antimicrobials such as moxifloxacin or IV erythromycin, some antihistamines).",
+        "src": [{ "s": "emc-7718", "q": "Escitalopram is contraindicated together with medicinal products that are known to prolong the QT interval" }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "QT prolongation (dose-dependent): torsade de pointes reported mainly in women, hypokalaemia, pre-existing QT prolongation or heart disease. Caution in significant bradycardia, recent acute MI or uncompensated heart failure. Correct hypokalaemia and hypomagnesaemia before starting. Stable cardiac disease: consider ECG review first.",
+        "src": [
+          { "s": "emc-7718", "q": "Caution is advised in patients with significant bradycardia; or in patients with recent acute myocardial infarction or uncompensated heart failure." },
+          { "s": "emc-7718", "q": "Electrolyte disturbances such as hypokalaemia and hypomagnesaemia increase the risk for malignant arrhythmias and should be corrected before treatment with escitalopram is started." },
+          { "s": "emc-7718", "q": "If patients with stable cardiac disease are treated, an ECG review should be considered before treatment is started." }
+        ] },
+      { "t": "Seizures: stop if first seizure or more frequent seizures; avoid in unstable epilepsy; monitor controlled epilepsy closely.",
+        "src": [{ "s": "emc-7718", "q": "SSRIs should be avoided in patients with unstable epilepsy, and patients with controlled epilepsy should be closely monitored." }] },
+      { "t": "Mania history: caution; stop if manic. Diabetes: glycaemic control may change; adjust antidiabetic doses.",
+        "src": [
+          { "s": "emc-7718", "q": "SSRIs should be used with caution in patients with a history of mania/hypomania." },
+          { "s": "emc-7718", "q": "In patients with diabetes, treatment with an SSRI may alter glycaemic control (hypoglycaemia or hyperglycaemia)." }
+        ] },
+      { "t": "Hyponatraemia (SIADH), rare: caution in elderly, cirrhosis, or with other drugs that cause hyponatraemia.",
+        "src": [{ "s": "emc-7718", "q": "Caution should be exercised in patients at risk, such as the elderly, or patients with cirrhosis, or if used in combination with other medications which may cause hyponatraemia." }] },
+      { "t": "Bleeding: caution with oral anticoagulants, antiplatelet drugs, aspirin, NSAIDs and in bleeding tendency. SSRIs may increase postpartum haemorrhage.",
+        "src": [
+          { "s": "emc-7718", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with oral anticoagulants, with medicinal products known to affect platelet function" },
+          { "s": "emc-7718", "q": "SSRIs/SNRIs may increase the risk of postpartum haemorrhage" }
+        ] },
+      { "t": "Suicidal thoughts/behaviour: close supervision early and after dose changes, especially under 25 years.",
+        "src": [{ "s": "emc-7718", "q": "Close supervision of patients and in particular those at high risk should accompany drug therapy especially in early treatment and following dose changes." }] },
+      { "t": "Coronary heart disease: caution (limited experience). Angle-closure glaucoma or history of glaucoma: use with caution (mydriasis).",
+        "src": [
+          { "s": "emc-7718", "q": "Due to limited clinical experience, caution is advised in patients with coronary heart disease" },
+          { "s": "emc-7718", "q": "Escitalopram should therefore be used with caution in patients with angle-closure glaucoma or history of glaucoma." }
+        ] },
+      { "t": "Paradoxical anxiety early in panic disorder (use a low starting dose). Akathisia. ECT: caution. Sexual dysfunction that may persist after stopping. Discontinuation symptoms common.", "detail": true,
+        "src": [
+          { "s": "emc-7718", "q": "A low starting dose is advised to reduce the likelihood of an anxiogenic effect" },
+          { "s": "emc-7718", "q": "There have been reports of long-lasting sexual dysfunction where the symptoms have continued despite discontinuation of SSRIs/SNRI." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Contraindicated: non-selective irreversible MAOIs (start escitalopram 14 days after; stop escitalopram 7 days before), moclobemide, linezolid; all medicines known to prolong QT.",
+        "src": [
+          { "s": "emc-7718", "q": "Escitalopram may be started 14 days after discontinuing treatment with an irreversible MAOI. At least 7 days should elapse after discontinuing escitalopram treatment, before starting a non-selective, irreversible MAOI." },
+          { "s": "emc-7718", "q": "certain antihistamines (e.g. astemizole, hydroxyzine, mizolastine), is contraindicated" }
+        ] },
+      { "t": "Serotonergic drugs (opioids including tramadol, triptans): serotonin syndrome; caution. Selegiline: caution. Lithium, tryptophan: caution. St John's wort: more adverse reactions (the St John's wort herbal SPC says do not take with SSRIs).",
+        "src": [
+          { "s": "emc-7718", "q": "Co-administration with serotonergic medicinal products (e.g. opioids (including tramadol), and triptans (including sumatriptan) may lead to serotonin syndrome" },
+          { "s": "mhra-thr-13668-0014", "q": "SSRIs e.g. Citalopram Escitalopram Fluoxetine Fluvoxamine Paroxetine Sertraline" }
+        ] },
+      { "t": "Oral anticoagulants: careful coagulation monitoring when escitalopram is started or stopped. NSAIDs and antiplatelets: more bleeding.",
+        "src": [
+          { "s": "emc-7718", "q": "Patients receiving oral anticoagulant therapy should receive careful coagulation monitoring when escitalopram is started or stopped" },
+          { "s": "emc-7718", "q": "Concomitant use of non-steriodal anti-inflammatory drugs (NSAIDs) may increase bleeding-tendency" }
+        ] },
+      { "t": "CYP2C19 inhibitors (omeprazole about 50% rise, esomeprazole, lansoprazole, fluconazole, fluvoxamine, ticlopidine) and cimetidine (about 70% rise): caution; dose reduction may be needed. SPS: watch for QT symptoms when these are started.",
+        "src": [
+          { "s": "emc-7718", "q": "caution should be exercised when used concomitantly with CYP2C19 inhibitors (e.g. omeprazole, esomeprazole, fluconazole, fluvoxamine, lansoprazole, ticlopidine) or cimetidine" },
+          { "s": "emc-7718", "q": "A reduction in the dose of escitalopram may be necessary based on monitoring of side-effects during concomitant treatment" },
+          { "s": "sps-qt-commonly-used", "q": "Monitor for symptoms of QT interval prolongation in people taking citalopram or escitalopram, who are started on CYP2C19 inhibitors" }
+        ] },
+      { "t": "Drugs causing hypokalaemia or hypomagnesaemia: caution (arrhythmia). MHRA: monitor magnesium, especially in elderly on diuretics or PPIs. Seizure-threshold-lowering drugs (TCAs, SSRIs, neuroleptics, tramadol, bupropion): caution.",
+        "src": [
+          { "s": "emc-7718", "q": "Caution is warranted for concomitant use of hypokalaemia/hypomagnesaemia inducing medicinal products as these conditions increase the risk of malignant arrhythmias" },
+          { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "Monitoring of serum magnesium is advised, particularly in elderly patients, who may be taking diuretics or proton pump inhibitors" }
+        ] },
+      { "t": "CYP2D6 substrates with narrow therapeutic index (flecainide, propafenone, metoprolol in heart failure, some antidepressants and antipsychotics): caution, dose adjustment may be needed. Alcohol: combination not advisable.", "detail": true,
+        "src": [
+          { "s": "emc-7718", "q": "Caution is recommended when escitalopram is co-administered with medicinal products that are mainly metabolised by this enzyme, and that have a narrow therapeutic index" },
+          { "s": "emc-7718", "q": "as with other psychotropic medicinal products, the combination with alcohol is not advisable" }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Mild or moderate impairment: no adjustment. Severely reduced renal function (CLCR less than 30 ml/min): caution.",
+        "src": [{ "s": "emc-7718", "q": "Dosage adjustment is not necessary in patients with mild or moderate renal impairment. Caution is advised in patients with severely reduced renal function (CLCR less than 30 ml/min.)" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Mild or moderate impairment (Child-Pugh A and B): 5 mg daily for the first 2 weeks, then up to 10 mg daily (MHRA maximum 10 mg). Severe impairment: caution and extra careful dose titration.",
+        "src": [
+          { "s": "emc-7718", "q": "An initial dose of 5 mg daily for the first two weeks of treatment is recommended in patients with mild or moderate hepatic impairment. Depending on individual patient response, the dose may be increased to 10 mg daily." },
+          { "s": "emc-7718", "q": "Caution and extra careful dose titration is advised in patients with severely reduced hepatic function" },
+          { "s": "emc-7718", "q": "In patients with mild or moderate hepatic impairment (Child-Pugh Criteria A and B), the half-life of escitalopram was about twice as long" }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: should not be used unless clearly necessary and after careful risk-benefit assessment. Avoid abrupt stopping.",
+        "src": [
+          { "s": "emc-7718", "q": "should not be used during pregnancy unless clearly necessary and only after careful consideration of the risk/benefit" },
+          { "s": "emc-7718", "q": "Abrupt discontinuation should be avoided during pregnancy." }
+        ] },
+      { "t": "Later pregnancy: observe the neonate (respiratory distress, feeding difficulty, seizures, jitteriness, usually within 24 hours); PPHN about 5 per 1000; postpartum haemorrhage risk under 2-fold after use in the month before birth.", "tag": "Third trimester",
+        "src": [
+          { "s": "emc-7718", "q": "Neonates should be observed if maternal use of Cipralex continues into the later stages of pregnancy, particularly in the third trimester." },
+          { "s": "emc-7718", "q": "The observed risk was approximately 5 cases per 1000 pregnancies." },
+          { "s": "emc-7718", "q": "Observational data indicate an increased risk (less than 2-fold) of postpartum haemorrhage following SSRI/SNRI exposure within the month prior to birth" }
+        ] },
+      { "t": "BUMPS: SSRIs are commonly taken in pregnancy without problems; any heart-defect effect is uncertain and small. If well controlled it may be best to stay on escitalopram; do not stop without advice. Hospital delivery usually advised.",
+        "src": [
+          { "s": "bumps-escitalopram", "q": "SSRIs are commonly taken during pregnancy without any problem." },
+          { "s": "bumps-escitalopram", "q": "If a woman's condition is well-controlled with escitalopram, it may be best to stay on it rather than try something new and risk a relapse." },
+          { "s": "bumps-escitalopram", "q": "Women should not stop taking escitalopram without first speaking to their midwife, GP or specialist." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: expected to pass into milk; breastfeeding is not recommended during treatment.",
+        "src": [{ "s": "emc-7718", "q": "It is expected that escitalopram will be excreted into human milk. Consequently, breast-feeding is not recommended during treatment." }] },
+      { "t": "SPS (differs from SmPC): can be used with caution, but sertraline or paroxetine are preferred. Monitor the infant for irritability, restlessness, drowsiness, vomiting, poor feeding and weight gain.",
+        "src": [
+          { "s": "sps-ssri-bf", "q": "Escitalopram can be used with caution during breastfeeding, but sertraline or paroxetine are preferred." },
+          { "s": "sps-ssri-bf", "q": "As a precaution, monitor for irritability, restlessness, drowsiness, vomiting, poor feeding and adequate weight-gain." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Animal data with citalopram: sperm quality may be affected; human SSRI reports show it is reversible. Sexual dysfunction may persist after stopping (MHRA 2026 lists escitalopram).",
+        "src": [
+          { "s": "emc-7718", "q": "Human case reports with some SSRIs have shown that an effect on sperm quality is reversible." },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "Citalopram, escitalopram, duloxetine, fluvoxamine, fluoxetine, paroxetine, sertraline, venlafaxine, amitriptyline, nortriptyline" }
+        ] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Very common: headache, nausea. Most frequent in the first 1 to 2 weeks, then usually lessen.",
+        "src": [
+          { "s": "emc-7718", "q": "Nervous system disorders Very common Headache" },
+          { "s": "emc-7718", "q": "Gastrointestinal disorders Very common Nausea" },
+          { "s": "emc-7718", "q": "Adverse reactions are most frequent during the first or second week of treatment and usually decrease in intensity and frequency with continued treatment." }
+        ] },
+      { "t": "Common: appetite and weight change; anxiety, restlessness, abnormal dreams, reduced libido; insomnia, somnolence, dizziness, paraesthesia, tremor; diarrhoea, constipation, vomiting, dry mouth; sweating; joint and muscle pain; ejaculation disorder, impotence; fatigue, fever; sinusitis, yawning.",
+        "src": [
+          { "s": "emc-7718", "q": "Common Insomnia, somnolence, dizziness, paraesthesia, tremor" },
+          { "s": "emc-7718", "q": "Common Diarrhoea, constipation, vomiting, dry mouth" },
+          { "s": "emc-7718", "q": "Common Male: ejaculation disorder, impotence" }
+        ] },
+      { "t": "Discontinuation symptoms are common (dizziness, sensory disturbance including electric-shock sensations, sleep problems, agitation, nausea).",
+        "src": [{ "s": "emc-7718", "q": "Discontinuation of SSRIs/SNRIs (particularly when abrupt) commonly leads to discontinuation symptoms." }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "QT prolongation / ventricular arrhythmia including torsade de pointes: if arrhythmia signs (palpitations, syncope, seizures) occur, stop and do an ECG. MHRA: QTc >500 ms withdraw gradually; 480 to 500 ms reconsider or reduce dose.",
+        "src": [
+          { "s": "emc-7718", "q": "If signs of cardiac arrhythmia occur during treatment with escitalopram, the treatment should be withdrawn and an ECG should be performed." },
+          { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "if QTc interval is >500 milliseconds, treatment should be withdrawn gradually" }
+        ] },
+      { "t": "Serotonin syndrome (agitation, tremor, myoclonus, hyperthermia): stop the SSRI and serotonergic drug immediately and treat.",
+        "src": [{ "s": "emc-7718", "q": "If this occurs treatment with the SSRI and the serotonergic medicinal product should be discontinued immediately and symptomatic treatment initiated." }] },
+      { "t": "New or worse suicidal thoughts: seek urgent medical attention (MHRA 2026). GI bleeding (uncommon); hyponatraemia.",
+        "src": [
+          { "s": "mhra-dsu-antidepressants-2026", "q": "if you have new or worsening suicidal thoughts, particularly when starting or changing dose of antidepressants, seek urgent medical attention" },
+          { "s": "emc-7718", "q": "Uncommon Gastrointestinal haemorrhages (including rectal haemorrhage)" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Before starting: correct hypokalaemia/hypomagnesaemia; ECG review in cardiac disease. SPS: ECG, magnesium and potassium before and during treatment if QT risk factors. Discuss suicide risk and sexual dysfunction (MHRA 2026).", "tag": "baseline",
+        "src": [
+          { "s": "emc-7718", "q": "should be corrected before treatment with escitalopram is started" },
+          { "s": "sps-qt-commonly-used", "q": "Monitor ECG, magnesium and potassium, before and during treatment with citalopram or escitalopram in people with risk factors." },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "discuss with patients when starting or changing the dose of an antidepressant or at their next review, the risk of suicidal thoughts and behaviours" }
+        ] },
+      { "t": "Ongoing: magnesium in elderly on diuretics or PPIs (MHRA); coagulation when starting/stopping with oral anticoagulants; QT symptoms if CYP2C19 inhibitor added; suicidality early and after dose changes.", "tag": "ongoing",
+        "src": [
+          { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "Monitoring of serum magnesium is advised, particularly in elderly patients, who may be taking diuretics or proton pump inhibitors" },
+          { "s": "emc-7718", "q": "Patients receiving oral anticoagulant therapy should receive careful coagulation monitoring when escitalopram is started or stopped" }
+        ] },
+      { "t": "Stop if: signs of arrhythmia (do ECG), first seizure or more seizures, manic phase, serotonin syndrome. MHRA: QTc >500 ms withdraw gradually.", "tag": "stop",
+        "src": [
+          { "s": "emc-7718", "q": "Escitalopram should be discontinued if a patient develops seizures for the first time, or if there is an increase in seizure frequency" },
+          { "s": "emc-7718", "q": "SSRIs should be discontinued in any patient entering a manic phase." },
+          { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "if QTc interval is >500 milliseconds, treatment should be withdrawn gradually" }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Single daily dose, with or without food.",
+        "src": [{ "s": "emc-7718", "q": "is administered as a single daily dose and may be taken with or without food" }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Response usually takes 2 to 4 weeks. Do not stop suddenly. Avoid alcohol. Take care with driving until you know how you react.",
+        "src": [
+          { "s": "emc-7718", "q": "Usually 2-4 weeks are necessary to obtain antidepressant response." },
+          { "s": "emc-7718", "q": "Patients should be cautioned about the potential risk of an influence on their ability to drive a car and operate machinery." }
+        ] },
+      { "t": "Report palpitations, fainting or fits promptly. Seek urgent help for new or worse suicidal thoughts (NHS 111, crisis team, Samaritans 116 123).",
+        "src": [
+          { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "if cardiovascular symptoms, such as palpitations, vertigo, syncope, or seizures develop during treatment, cardiac evaluation including an ECG should be undertaken" },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "You can call NHS 111, or your local mental health crisis team, Samaritans on 116 123" }
+        ] }
+    ] }
+  },
+  "rules": [
+    { "id": "escitalopram:allergy:escitalopram", "kind": "allergy", "level": "contraindicated", "med": "escitalopram", "allergen": ["escitalopram"],
+      "concern": "Hypersensitivity to escitalopram", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-7718", "q": "Hypersensitivity to the active substance or to any of the excipients, listed in section 6.1." }] },
+    { "id": "escitalopram:interaction:maoi", "kind": "interaction", "level": "contraindicated", "med": "escitalopram", "other": "group:maoi", "effect": "serotonin-syndrome",
+      "concern": "Escitalopram + MAO inhibitor (irreversible non-selective, moclobemide or linezolid)", "consequence": "Serotonin syndrome.", "action": "Do not use together. Start escitalopram 14 days after an irreversible MAOI; stop escitalopram at least 7 days before one. Selegiline: caution.", "sourceWording": "is contraindicated",
+      "src": [
+        { "s": "emc-7718", "q": "Concomitant treatment with non-selective, irreversible monoamine oxidase inhibitors (MAO-inhibitors) is contraindicated due to the risk of serotonin syndrome" },
+        { "s": "emc-7718", "q": "The combination of escitalopram with reversible MAO-A inhibitors (e.g. moclobemide) or the reversible non-selective MAO-inhibitor linezolid is contraindicated" }
+      ] },
+    { "id": "escitalopram:condition:long-qt", "kind": "condition", "level": "contraindicated", "med": "escitalopram", "condition": "qt-prolongation", "effect": "qt-prolongation",
+      "concern": "Known QT prolongation or congenital long QT syndrome", "consequence": "Dose-dependent QT prolongation; torsade de pointes.", "action": "Do not use.", "sourceWording": "Escitalopram is contraindicated in patients with known QT interval prolongation",
+      "src": [
+        { "s": "emc-7718", "q": "Escitalopram is contraindicated in patients with known QT interval prolongation or congenital long QT syndrome." },
+        { "s": "sps-qt-commonly-used", "q": "Do not prescribe citalopram or escitalopram in people with congenital long QT syndrome, known QT interval prolongation" }
+      ] },
+    { "id": "escitalopram:interaction:qt", "kind": "interaction", "level": "contraindicated", "med": "escitalopram", "other": "group:qt-prolonging", "effect": "qt-prolongation",
+      "concern": "Escitalopram + QT-prolonging medicine (e.g. antiarrhythmics, antipsychotics, tricyclic antidepressants, moxifloxacin)", "consequence": "Additive QT prolongation; risk of torsade de pointes.", "action": "Do not use together.", "sourceWording": "is contraindicated",
+      "src": [
+        { "s": "emc-7718", "q": "Escitalopram is contraindicated together with medicinal products that are known to prolong the QT interval" },
+        { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "Coadministration of citalopram and escitalopram with medicines that prolong the QT interval is therefore contraindicated." }
+      ] },
+    { "id": "escitalopram:interaction:tca", "kind": "interaction", "level": "contraindicated", "med": "escitalopram", "other": "group:tricyclic-antidepressant", "effect": "qt-prolongation",
+      "concern": "Escitalopram + tricyclic antidepressant", "consequence": "Additive QT prolongation (TCAs are named as QT-prolonging); also serotonergic and seizure-threshold effects.", "action": "Do not use together.", "sourceWording": "is contraindicated",
+      "src": [
+        { "s": "emc-7718", "q": "antipsychotics (e.g. phenothiazine derivatives, pimozide, haloperidol), tricyclic antidepressants, certain antimicrobial agents" },
+        { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "Coadministration of citalopram and escitalopram with medicines that prolong the QT interval is therefore contraindicated." }
+      ] },
+    { "id": "escitalopram:interaction:moxifloxacin", "kind": "interaction", "level": "contraindicated", "med": "escitalopram", "other": "moxifloxacin", "effect": "qt-prolongation",
+      "concern": "Escitalopram + moxifloxacin", "consequence": "Additive QT prolongation.", "action": "Do not use together.", "sourceWording": "is contraindicated",
+      "src": [{ "s": "emc-7718", "q": "certain antimicrobial agents (e.g. sparfloxacin, moxifloxacin, erythromycin IV, pentamidine, anti-malarial treatment particularly halofantrine)" }] },
+    { "id": "escitalopram:age:lt18", "kind": "age", "level": "avoid", "med": "escitalopram", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years", "consequence": "More suicidal behaviour and hostility with antidepressants in trials; long-term safety data lacking.", "action": "Should not be used; if used on clinical need, monitor carefully for suicidal symptoms.", "sourceWording": "should not be used in the treatment of children and adolescents under the age of 18 years",
+      "src": [
+        { "s": "emc-7718", "q": "should not be used in the treatment of children and adolescents under the age of 18 years" },
+        { "s": "emc-7718", "q": "If, based on clinical need, a decision to treat is nevertheless taken, the patient should be carefully monitored for the appearance of suicidal symptoms." }
+      ] },
+    { "id": "escitalopram:age:elderly", "kind": "age", "level": "dose", "med": "escitalopram", "age": { "minYears": 65 }, "effect": "qt-prolongation",
+      "concern": "Over 65 years", "consequence": "About 50% higher exposure; dose-dependent QT effect.", "action": "Start 5 mg once daily; maximum 10 mg daily.", "sourceWording": "Initial dosage is 5 mg once daily",
+      "src": [
+        { "s": "emc-7718", "q": "Elderly patients (> 65 years of age) Initial dosage is 5 mg once daily. Depending on individual patient response the dose may be increased to 10 mg daily" },
+        { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "The maximum dose of both medicines has therefore been restricted in patients older than 65 years." }
+      ] },
+    { "id": "escitalopram:renal:lt30", "kind": "renal", "level": "caution", "med": "escitalopram", "renal": { "measure": "CrCl", "max": 30, "maxInclusive": false },
+      "concern": "Severely reduced renal function (CLCR less than 30 ml/min)", "consequence": "Longer half-life and higher exposure possible.", "action": "Caution advised (no adjustment needed in mild or moderate impairment).", "sourceWording": "Caution is advised",
+      "src": [{ "s": "emc-7718", "q": "Caution is advised in patients with severely reduced renal function (CLCR less than 30 ml/min.)" }] },
+    { "id": "escitalopram:hepatic:mild-moderate", "kind": "hepatic", "level": "dose", "med": "escitalopram", "hepatic": ["mild", "moderate"],
+      "concern": "Mild or moderate hepatic impairment (Child-Pugh A or B)", "consequence": "Half-life about doubled; exposure about 60% higher.", "action": "5 mg daily for the first 2 weeks, then up to 10 mg daily (MHRA maximum 10 mg).", "sourceWording": "An initial dose of 5 mg daily for the first two weeks of treatment is recommended",
+      "src": [
+        { "s": "emc-7718", "q": "An initial dose of 5 mg daily for the first two weeks of treatment is recommended in patients with mild or moderate hepatic impairment. Depending on individual patient response, the dose may be increased to 10 mg daily." },
+        { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "Escitalopram 20 mg 10 mg* 10 mg" }
+      ] },
+    { "id": "escitalopram:hepatic:severe", "kind": "hepatic", "level": "caution", "med": "escitalopram", "hepatic": ["severe"],
+      "concern": "Severe hepatic impairment", "consequence": "Higher exposure expected.", "action": "Caution and extra careful dose titration.", "sourceWording": "Caution and extra careful dose titration is advised",
+      "src": [{ "s": "emc-7718", "q": "Caution and extra careful dose titration is advised in patients with severely reduced hepatic function" }] },
+    { "id": "escitalopram:condition:cyp2c19-pm", "kind": "condition", "level": "dose", "med": "escitalopram", "condition": "cyp2c19-poor-metaboliser",
+      "concern": "CYP2C19 poor metaboliser", "consequence": "About twice the plasma concentration.", "action": "5 mg daily for the first 2 weeks, then up to 10 mg daily.", "sourceWording": "an initial dose of 5 mg daily during the first two weeks of treatment is recommended",
+      "src": [
+        { "s": "emc-7718", "q": "For patients who are known to be poor metabolisers with respect to CYP2C19, an initial dose of 5 mg daily during the first two weeks of treatment is recommended." },
+        { "s": "emc-7718", "q": "It has been observed that poor metabolisers with respect to CYP2C19 have twice as high a plasma concentration of escitalopram as extensive metabolisers." }
+      ] },
+    { "id": "escitalopram:condition:unstable-epilepsy", "kind": "condition", "level": "avoid", "med": "escitalopram", "condition": "uncontrolled-epilepsy", "effect": "seizure-threshold",
+      "concern": "Unstable epilepsy", "consequence": "SSRIs can lower the seizure threshold.", "action": "Avoid.", "sourceWording": "SSRIs should be avoided in patients with unstable epilepsy",
+      "src": [{ "s": "emc-7718", "q": "SSRIs should be avoided in patients with unstable epilepsy, and patients with controlled epilepsy should be closely monitored." }] },
+    { "id": "escitalopram:condition:epilepsy", "kind": "condition", "level": "monitor", "med": "escitalopram", "condition": "epilepsy", "effect": "seizure-threshold",
+      "concern": "Controlled epilepsy", "consequence": "Seizures may occur.", "action": "Monitor closely; stop if first seizure or more frequent seizures.", "sourceWording": "should be closely monitored",
+      "src": [
+        { "s": "emc-7718", "q": "SSRIs should be avoided in patients with unstable epilepsy, and patients with controlled epilepsy should be closely monitored." },
+        { "s": "emc-7718", "q": "Escitalopram should be discontinued if a patient develops seizures for the first time, or if there is an increase in seizure frequency" }
+      ] },
+    { "id": "escitalopram:condition:bipolar", "kind": "condition", "level": "caution", "med": "escitalopram", "condition": "bipolar-mania",
+      "concern": "History of mania/hypomania", "consequence": "Mania may emerge.", "action": "Use with caution; stop if a manic phase starts.", "sourceWording": "SSRIs should be used with caution",
+      "src": [{ "s": "emc-7718", "q": "SSRIs should be used with caution in patients with a history of mania/hypomania. SSRIs should be discontinued in any patient entering a manic phase." }] },
+    { "id": "escitalopram:condition:diabetes", "kind": "condition", "level": "info", "med": "escitalopram", "condition": "diabetes", "effect": "hypoglycaemia",
+      "concern": "Diabetes", "consequence": "Glycaemic control may change (hypo- or hyperglycaemia).", "action": "Insulin/oral hypoglycaemic dose may need adjustment.", "sourceWording": "may need to be adjusted",
+      "src": [{ "s": "emc-7718", "q": "In patients with diabetes, treatment with an SSRI may alter glycaemic control (hypoglycaemia or hyperglycaemia). Insulin and/or oral hypoglycaemic dosage may need to be adjusted." }] },
+    { "id": "escitalopram:condition:suicidality", "kind": "condition", "level": "monitor", "med": "escitalopram", "condition": "depression-suicidality",
+      "concern": "History of suicide-related events or significant suicidal ideation", "consequence": "Greater risk of suicidal thoughts or attempts (also higher under 25 years).", "action": "Careful monitoring, especially early in treatment and after dose changes.", "sourceWording": "should receive careful monitoring during treatment",
+      "src": [
+        { "s": "emc-7718", "q": "are known to be at greater risk of suicidal thoughts or suicide attempts, and" },
+        { "s": "emc-7718", "q": "should receive careful monitoring during treatment" }
+      ] },
+    { "id": "escitalopram:condition:hyponatraemia", "kind": "condition", "level": "caution", "med": "escitalopram", "condition": "hyponatraemia", "effect": "hyponatraemia",
+      "concern": "At risk of hyponatraemia (e.g. elderly, cirrhosis)", "consequence": "SIADH/hyponatraemia reported rarely.", "action": "Caution in patients at risk.", "sourceWording": "Caution should be exercised in patients at risk",
+      "src": [{ "s": "emc-7718", "q": "Caution should be exercised in patients at risk, such as the elderly, or patients with cirrhosis, or if used in combination with other medications which may cause hyponatraemia." }] },
+    { "id": "escitalopram:condition:bleeding", "kind": "condition", "level": "caution", "med": "escitalopram", "condition": "bleeding-disorder", "effect": "bleeding",
+      "concern": "Known bleeding tendency", "consequence": "SSRIs can cause bleeding abnormalities.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [{ "s": "emc-7718", "q": "ticlopidine and dipyridamole) and in patients with known bleeding tendencies" }] },
+    { "id": "escitalopram:condition:ihd", "kind": "condition", "level": "caution", "med": "escitalopram", "condition": "ischaemic-heart-disease",
+      "concern": "Coronary heart disease", "consequence": "Limited clinical experience.", "action": "Caution advised.", "sourceWording": "caution is advised",
+      "src": [{ "s": "emc-7718", "q": "Due to limited clinical experience, caution is advised in patients with coronary heart disease" }] },
+    { "id": "escitalopram:condition:bradycardia", "kind": "condition", "level": "caution", "med": "escitalopram", "condition": "bradycardia", "effect": "qt-prolongation",
+      "concern": "Significant bradycardia", "consequence": "Higher risk of QT prolongation / arrhythmia.", "action": "Caution advised; MHRA: weigh benefits and risks carefully, particularly at higher doses.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-7718", "q": "Caution is advised in patients with significant bradycardia; or in patients with recent acute myocardial infarction or uncompensated heart failure." },
+        { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "including patients with significant bradycardia; recent acute myocardial infarction; or decompensated heart failure" }
+      ] },
+    { "id": "escitalopram:condition:recent-mi", "kind": "condition", "level": "caution", "med": "escitalopram", "condition": "recent-myocardial-infarction", "effect": "qt-prolongation",
+      "concern": "Recent acute myocardial infarction", "consequence": "Higher risk of QT prolongation / arrhythmia.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [{ "s": "emc-7718", "q": "Caution is advised in patients with significant bradycardia; or in patients with recent acute myocardial infarction or uncompensated heart failure." }] },
+    { "id": "escitalopram:condition:heart-failure", "kind": "condition", "level": "caution", "med": "escitalopram", "condition": "uncontrolled-heart-failure", "effect": "qt-prolongation",
+      "concern": "Uncompensated heart failure", "consequence": "Higher risk of QT prolongation / arrhythmia.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [{ "s": "emc-7718", "q": "Caution is advised in patients with significant bradycardia; or in patients with recent acute myocardial infarction or uncompensated heart failure." }] },
+    { "id": "escitalopram:condition:hypokalaemia", "kind": "condition", "level": "caution", "med": "escitalopram", "condition": "hypokalaemia", "effect": "qt-prolongation",
+      "concern": "Hypokalaemia", "consequence": "Raises the risk of malignant arrhythmias.", "action": "Correct before starting escitalopram.", "sourceWording": "should be corrected before treatment with escitalopram is started",
+      "src": [{ "s": "emc-7718", "q": "Electrolyte disturbances such as hypokalaemia and hypomagnesaemia increase the risk for malignant arrhythmias and should be corrected before treatment with escitalopram is started." }] },
+    { "id": "escitalopram:condition:hypomagnesaemia", "kind": "condition", "level": "caution", "med": "escitalopram", "condition": "hypomagnesaemia", "effect": "qt-prolongation",
+      "concern": "Hypomagnesaemia", "consequence": "Raises the risk of malignant arrhythmias.", "action": "Correct before starting escitalopram.", "sourceWording": "should be corrected before treatment with escitalopram is started",
+      "src": [{ "s": "emc-7718", "q": "Electrolyte disturbances such as hypokalaemia and hypomagnesaemia increase the risk for malignant arrhythmias and should be corrected before treatment with escitalopram is started." }] },
+    { "id": "escitalopram:condition:cardiac-disease", "kind": "condition", "level": "monitor", "med": "escitalopram", "condition": "cardiac-disease", "effect": "qt-prolongation",
+      "concern": "Stable cardiac disease", "consequence": "QT prolongation risk.", "action": "Consider an ECG review before starting.", "sourceWording": "an ECG review should be considered",
+      "src": [{ "s": "emc-7718", "q": "If patients with stable cardiac disease are treated, an ECG review should be considered before treatment is started." }] },
+    { "id": "escitalopram:condition:glaucoma", "kind": "condition", "level": "caution", "med": "escitalopram", "condition": "angle-closure-glaucoma",
+      "concern": "Angle-closure glaucoma or history of glaucoma", "consequence": "Mydriasis may raise intraocular pressure.", "action": "Use with caution.", "sourceWording": "should therefore be used with caution",
+      "src": [{ "s": "emc-7718", "q": "Escitalopram should therefore be used with caution in patients with angle-closure glaucoma or history of glaucoma." }] },
+    { "id": "escitalopram:pregnancy:smpc", "kind": "pregnancy", "level": "avoid", "med": "escitalopram",
+      "concern": "Pregnancy (SmPC)", "consequence": "Limited data; animal reproductive toxicity; neonatal symptoms and PPHN with late use.", "action": "SmPC: should not be used unless clearly necessary, after careful risk-benefit assessment; avoid abrupt stopping. BUMPS advice differs (see separate statement).", "sourceWording": "should not be used during pregnancy unless clearly necessary",
+      "src": [
+        { "s": "emc-7718", "q": "should not be used during pregnancy unless clearly necessary and only after careful consideration of the risk/benefit" },
+        { "s": "emc-7718", "q": "Abrupt discontinuation should be avoided during pregnancy." }
+      ] },
+    { "id": "escitalopram:pregnancy:bumps", "kind": "pregnancy", "level": "info", "med": "escitalopram",
+      "concern": "Pregnancy (BUMPS)", "consequence": "SSRIs are commonly taken in pregnancy without problems; stopping risks relapse and withdrawal.", "action": "BUMPS: if well controlled it may be best to stay on escitalopram; do not stop without speaking to the midwife, GP or specialist.", "sourceWording": "SSRIs are commonly taken during pregnancy without any problem",
+      "src": [
+        { "s": "bumps-escitalopram", "q": "SSRIs are commonly taken during pregnancy without any problem." },
+        { "s": "bumps-escitalopram", "q": "Women should not stop taking escitalopram without first speaking to their midwife, GP or specialist." }
+      ] },
+    { "id": "escitalopram:pregnancy:late", "kind": "pregnancy", "level": "monitor", "med": "escitalopram", "trimesters": [3], "effect": "bleeding",
+      "concern": "Later pregnancy / month before delivery", "consequence": "Neonatal symptoms (usually within 24 hours); PPHN (about 5 per 1000); postpartum haemorrhage risk (less than 2-fold).", "action": "Observe the neonate; consider individual bleeding/thrombotic risk factors (MHRA).", "sourceWording": "Neonates should be observed",
+      "src": [
+        { "s": "emc-7718", "q": "Neonates should be observed if maternal use of Cipralex continues into the later stages of pregnancy, particularly in the third trimester." },
+        { "s": "mhra-dsu-ssri-pph", "q": "consider the findings of the review in the context of individual patient risk factors for bleeding or thrombotic events" }
+      ] },
+    { "id": "escitalopram:breastfeeding:smpc", "kind": "breastfeeding", "level": "avoid", "med": "escitalopram",
+      "concern": "Breastfeeding (SmPC)", "consequence": "Expected to pass into milk.", "action": "SmPC: breastfeeding not recommended during treatment. SPS advice differs (see separate statement).", "sourceWording": "breast-feeding is not recommended during treatment",
+      "src": [{ "s": "emc-7718", "q": "It is expected that escitalopram will be excreted into human milk. Consequently, breast-feeding is not recommended during treatment." }] },
+    { "id": "escitalopram:breastfeeding:sps", "kind": "breastfeeding", "level": "caution", "med": "escitalopram",
+      "concern": "Breastfeeding (SPS)", "consequence": "Small amounts in milk (2.6% to 7.7% of the weight-adjusted maternal dose).", "action": "SPS: use with caution (sertraline or paroxetine preferred); monitor infant for irritability, restlessness, drowsiness, vomiting, feeding and weight gain.", "sourceWording": "can be used with caution during breastfeeding",
+      "src": [
+        { "s": "sps-ssri-bf", "q": "Escitalopram can be used with caution during breastfeeding, but sertraline or paroxetine are preferred." },
+        { "s": "sps-ssri-bf", "q": "As a precaution, monitor for irritability, restlessness, drowsiness, vomiting, poor feeding and adequate weight-gain." }
+      ] },
+    { "id": "escitalopram:interaction:serotonergic", "kind": "interaction", "level": "caution", "med": "escitalopram", "other": "group:serotonergic", "effect": "serotonin-syndrome",
+      "concern": "Escitalopram + serotonergic medicine (e.g. tramadol, triptans, other antidepressants)", "consequence": "Serotonin syndrome.", "action": "Caution; stop both and treat if serotonin syndrome develops.", "sourceWording": "Caution is advisable",
+      "src": [
+        { "s": "emc-7718", "q": "Caution is advisable if escitalopram is used concomitantly with medicinal products with serotonergic effects such as triptans (including sumatriptan), opioids (including tramadol), and tryptophan." },
+        { "s": "emc-7718", "q": "If this occurs treatment with the SSRI and the serotonergic medicinal product should be discontinued immediately and symptomatic treatment initiated." }
+      ] },
+    { "id": "escitalopram:interaction:opioid", "kind": "interaction", "level": "caution", "med": "escitalopram", "other": "group:opioid", "effect": "serotonin-syndrome",
+      "concern": "Escitalopram + opioid (including tramadol)", "consequence": "May lead to serotonin syndrome; tramadol also lowers the seizure threshold.", "action": "Caution.", "sourceWording": "Caution is advisable",
+      "src": [
+        { "s": "emc-7718", "q": "Co-administration with serotonergic medicinal products (e.g. opioids (including tramadol), and triptans (including sumatriptan) may lead to serotonin syndrome" },
+        { "s": "emc-7718", "q": "Caution is advisable if escitalopram is used concomitantly with medicinal products with serotonergic effects such as triptans (including sumatriptan), opioids (including tramadol), and tryptophan." }
+      ] },
+    { "id": "escitalopram:interaction:st-johns-wort", "kind": "interaction", "level": "avoid", "med": "escitalopram", "other": "st-johns-wort", "effect": "serotonin-syndrome",
+      "concern": "Escitalopram + St John's wort", "consequence": "More adverse reactions; increased serotonergic effects.", "action": "St John's wort SPC: do not take together (escitalopram SmPC: may increase adverse reactions).", "sourceWording": "Do not take with this product",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "SSRIs e.g. Citalopram Escitalopram Fluoxetine Fluvoxamine Paroxetine Sertraline" },
+        { "s": "mhra-thr-13668-0014", "q": "Increased serotonergic effects Do not take with this product." },
+        { "s": "emc-7718", "q": "Concomitant use of SSRIs and herbal remedies containing St. John's wort ( Hypericum perforatum ) may result in an increased incidence of adverse reactions" }
+      ] },
+    { "id": "escitalopram:interaction:anticoagulant", "kind": "interaction", "level": "monitor", "med": "escitalopram", "other": "group:anticoagulant", "effect": "bleeding",
+      "concern": "Escitalopram + oral anticoagulant (e.g. warfarin)", "consequence": "Altered anticoagulant effect; bleeding risk.", "action": "Careful coagulation monitoring when escitalopram is started or stopped.", "sourceWording": "should receive careful coagulation monitoring",
+      "src": [
+        { "s": "emc-7718", "q": "Altered anti-coagulant effects may occur when escitalopram is combined with oral anticoagulants." },
+        { "s": "emc-7718", "q": "Patients receiving oral anticoagulant therapy should receive careful coagulation monitoring when escitalopram is started or stopped" }
+      ] },
+    { "id": "escitalopram:interaction:nsaid", "kind": "interaction", "level": "caution", "med": "escitalopram", "other": "group:nsaid", "effect": "bleeding",
+      "concern": "Escitalopram + NSAID", "consequence": "Increased bleeding tendency.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-7718", "q": "Concomitant use of non-steriodal anti-inflammatory drugs (NSAIDs) may increase bleeding-tendency" },
+        { "s": "emc-7718", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with oral anticoagulants, with medicinal products known to affect platelet function" }
+      ] },
+    { "id": "escitalopram:interaction:aspirin", "kind": "interaction", "level": "caution", "med": "escitalopram", "other": "aspirin", "effect": "bleeding",
+      "concern": "Escitalopram + aspirin", "consequence": "Increased bleeding risk.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-7718", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with oral anticoagulants, with medicinal products known to affect platelet function" },
+        { "s": "emc-7718", "q": "most tricyclic antidepressants, acetylsalicylic acid and non-steroidal anti-inflammatory medicinal products (NSAIDs), ticlopidine and dipyridamole" }
+      ] },
+    { "id": "escitalopram:interaction:antiplatelet", "kind": "interaction", "level": "caution", "med": "escitalopram", "other": "group:antiplatelet", "effect": "bleeding",
+      "concern": "Escitalopram + antiplatelet", "consequence": "Increased bleeding risk.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [{ "s": "emc-7718", "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with oral anticoagulants, with medicinal products known to affect platelet function" }] },
+    { "id": "escitalopram:interaction:cyp2c19", "kind": "interaction", "level": "dose", "med": "escitalopram", "other": "group:cyp2c19-inhibitor", "effect": "qt-prolongation",
+      "concern": "Escitalopram + CYP2C19 inhibitor (e.g. omeprazole, fluconazole)", "consequence": "Higher escitalopram levels (omeprazole about 50%); dose-dependent QT effect.", "action": "Caution; dose reduction may be needed. SPS: monitor for QT symptoms; consider dose reduction if QT prolongation.", "sourceWording": "A reduction in the dose of escitalopram may be necessary",
+      "src": [
+        { "s": "emc-7718", "q": "caution should be exercised when used concomitantly with CYP2C19 inhibitors (e.g. omeprazole, esomeprazole, fluconazole, fluvoxamine, lansoprazole, ticlopidine) or cimetidine" },
+        { "s": "emc-7718", "q": "A reduction in the dose of escitalopram may be necessary based on monitoring of side-effects during concomitant treatment" },
+        { "s": "sps-qt-commonly-used", "q": "Monitor for symptoms of QT interval prolongation in people taking citalopram or escitalopram, who are started on CYP2C19 inhibitors" }
+      ] },
+    { "id": "escitalopram:interaction:diuretic", "kind": "interaction", "level": "caution", "med": "escitalopram", "other": "group:diuretic", "effect": "qt-prolongation",
+      "concern": "Escitalopram + diuretic", "consequence": "Hypokalaemia/hypomagnesaemia increase the risk of malignant arrhythmias; hyponatraemia risk.", "action": "Caution; MHRA: monitor serum magnesium, particularly in the elderly.", "sourceWording": "Caution is warranted",
+      "src": [
+        { "s": "emc-7718", "q": "Caution is warranted for concomitant use of hypokalaemia/hypomagnesaemia inducing medicinal products as these conditions increase the risk of malignant arrhythmias" },
+        { "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "Monitoring of serum magnesium is advised, particularly in elderly patients, who may be taking diuretics or proton pump inhibitors" }
+      ] },
+    { "id": "escitalopram:interaction:ppi", "kind": "interaction", "level": "monitor", "med": "escitalopram", "other": "group:ppi", "effect": "qt-prolongation",
+      "concern": "Escitalopram + proton pump inhibitor", "consequence": "Hypomagnesaemia raises arrhythmia risk; omeprazole, esomeprazole and lansoprazole also raise escitalopram levels (CYP2C19).", "action": "MHRA: monitor serum magnesium, particularly in the elderly.", "sourceWording": "Monitoring of serum magnesium is advised",
+      "src": [{ "s": "mhra-dsu-citalopram-escitalopram-qt", "q": "Monitoring of serum magnesium is advised, particularly in elderly patients, who may be taking diuretics or proton pump inhibitors" }] }
+  ]
+}

@@ -1,0 +1,583 @@
+{
+  "id": "ascorbic-acid",
+  "name": "Ascorbic acid (vitamin C)",
+  "ingredients": [
+    "ascorbic-acid"
+  ],
+  "className": "Vitamins (ascorbic acid, plain)",
+  "groups": [],
+  "searchTerms": [
+    "vitamin C",
+    "ascorbate"
+  ],
+  "formulations": [
+    {
+      "id": "ascorbic-acid-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "UK SmPC used: 500 mg tablet",
+      "release": "immediate",
+      "note": "No UK SmPC was found for a 1000 mg tablet; the UK 500 mg tablet SmPC is used. A 1000 mg tablet equals the stated maximum daily dose for adults and children over 12 years.",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Each tablet contains 500mg of Ascorbic Acid"
+        },
+        {
+          "s": "emc-101277",
+          "q": "Maximum daily doses: Adults and children over 12 years, 1000 mg."
+        }
+      ],
+      "sourceIds": [
+        "emc-101277"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Treatment of vitamin C deficiency, including treatment and prevention of scurvy.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "For the treatment of Vitamin C deficiency including the treatment and prevention of scurvy."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restrictions in the UK ascorbic acid 500 mg tablet SmPC."
+    },
+    "dosing": {
+      "items": [
+        {
+          "tag": "Vitamin C deficiency",
+          "t": "Adults and elderly: not less than 250 mg daily in divided doses; maximum 1000 mg a day.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Treatment: Not less than 250 mg daily in divided doses."
+            },
+            {
+              "s": "emc-101277",
+              "q": "Maximum daily doses: Adults and children over 12 years, 1000 mg."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children over 4 years: not less than 250 mg daily in divided doses. Maximum: 500 mg a day at 4-11 years; 1000 mg a day over 12 years. No dose given under 4 years.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Adults and children over 4 years: Treatment: Not less than 250 mg daily in divided doses."
+            },
+            {
+              "s": "emc-101277",
+              "q": "Children 4 - 11 years, 500 mg."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to ascorbic acid or any excipient.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Hypersensitivity to ascorbic acid or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Hyperoxaluria.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Ascorbic acid should not be given to patients with hyperoxaluria."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Long-term high intake raises renal clearance of vitamin C; stopping suddenly may cause deficiency.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Increased intake of ascorbic acid over a prolonged period may result in an increased renal clearance of ascorbic acid, and deficiency may result if the intake is reduced or withdrawn rapidly"
+            }
+          ]
+        },
+        {
+          "t": "G6PD deficiency: ascorbic acid has been implicated in haemolytic anaemia.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Ascorbic acid has been implicated in precipitating haemolytic anaemia in certain individuals with a deficiency of glucose-6-phosphate dehydrogenase."
+            }
+          ]
+        },
+        {
+          "t": "Interferes with laboratory tests: urine and blood glucose, uric acid, creatinine; high doses can give false-negative faecal occult blood tests.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Ascorbic acid may interfere with tests and assays for urinary glucose"
+            },
+            {
+              "s": "emc-101277",
+              "q": "High doses of ascorbic acid may give false negative readings in faecal occult blood tests."
+            }
+          ]
+        },
+        {
+          "t": "Contains lactose: not for people with hereditary fructose or galactose intolerance, total lactase deficiency, glucose-galactose malabsorption or sucrase-isomaltase insufficiency.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Patients with rare hereditary problems of fructose or galactose intolerance, total lactase deficiency, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine as it contains lactose."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "tag": "Antacids",
+          "t": "Taking antacids with ascorbic acid is not recommended, especially in renal insufficiency. Aluminium-containing antacids: urinary aluminium elimination may increase.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Concurrent administration of antacids and ascorbic acid is not recommended, especially in patients with renal insufficiency."
+            },
+            {
+              "s": "emc-101277",
+              "q": "Concomitant administration of aluminium-containing antacids may increase urinary aluminium elimination."
+            }
+          ]
+        },
+        {
+          "tag": "Iron",
+          "t": "Ascorbic acid may increase oral iron absorption.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Ascorbic acid may increase the oral absorption of iron."
+            }
+          ]
+        },
+        {
+          "tag": "Desferrioxamine",
+          "t": "With desferrioxamine: increased urinary iron excretion and risk of cardiovascular adverse effects; use with caution and monitor cardiac function.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Ascorbic acid should be used with caution in patients receiving desferrioxamine and cardiac function should be monitored."
+            }
+          ]
+        },
+        {
+          "tag": "Aspirin",
+          "t": "Aspirin may reduce ascorbic acid absorption; aspirin's effect is not reduced.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Concomitant administration of aspirin and ascorbic acid may interfere with absorption of ascorbic acid."
+            },
+            {
+              "s": "emc-101277",
+              "q": "Renal excretion of salicylate is not affected and does not lead to reduced anti-inflammatory effects of aspirin."
+            }
+          ]
+        },
+        {
+          "tag": "Other",
+          "t": "May reduce amphetamine absorption. With amygdalin (a complementary medicine) can cause cyanide toxicity.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Ascorbic acid may reduce the absorption of amphetamines."
+            },
+            {
+              "s": "emc-101277",
+              "q": "Co-administration with amygdalin (a complementary medicine) can cause cyanide toxicity."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No renal dose advice given. Avoid antacids with ascorbic acid, especially in renal insufficiency. Massive overdose can cause renal failure; large doses can cause renal oxalate stones.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Concurrent administration of antacids and ascorbic acid is not recommended, especially in patients with renal insufficiency."
+            },
+            {
+              "s": "emc-101277",
+              "q": "Large doses of ascorbic acid may cause diarrhoea and the formation of renal oxalate calculi."
+            },
+            {
+              "s": "emc-101277",
+              "q": "Renal failure can occur with massive ascorbic acid overdosage."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "status": "not-stated",
+      "note": "No hepatic impairment advice in the UK ascorbic acid 500 mg tablet SmPC."
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "No clinical data in pregnancy; animal studies show no harm. Pregnant women should exercise caution.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "For ascorbic acid no clinical data on exposed pregnancies are available."
+            },
+            {
+              "s": "emc-101277",
+              "q": "Pregnant women should exercise caution."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Excreted in breast milk; caution, but no evidence of harm to the infant.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Ascorbic acid is excreted in breast milk. Though again caution should be exercised, no evidence exists suggesting such excretion is hazardous to the infant."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No fertility data.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Fertility No data available."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "tag": "Frequency not stated",
+          "t": "Large doses may cause diarrhoea; doses over 600 mg have a diuretic effect.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Large doses of ascorbic acid may cause diarrhoea."
+            },
+            {
+              "s": "emc-101277",
+              "q": "Doses of more than 600mg have a diuretic effect."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Haemolytic anaemia in some people with G6PD deficiency.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Ascorbic acid has been implicated in precipitating haemolytic anaemia in certain individuals with a deficiency of glucose-6-phosphate dehydrogenase."
+            }
+          ]
+        },
+        {
+          "t": "People at risk of hyperoxaluria should not take more than 1 gram a day (increased urinary oxalate).",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Patients known to be at risk of hyperoxaluria should not ingest ascorbic acid in doses exceeding 1 gram daily, as there may be increased urinary oxalate excretion."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "status": "not-stated",
+      "note": "No routine monitoring stated in the UK ascorbic acid 500 mg tablet SmPC (only cardiac monitoring with desferrioxamine; see interactions)."
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral; give the daily dose in divided doses.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Treatment: Not less than 250 mg daily in divided doses."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Do not take more than the maximum daily dose; large doses can cause diarrhoea and kidney stones.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Large doses of ascorbic acid may cause diarrhoea and the formation of renal oxalate calculi."
+            }
+          ]
+        },
+        {
+          "t": "Tell the laboratory you take vitamin C: it can affect blood and urine sugar tests and stool blood tests.",
+          "src": [
+            {
+              "s": "emc-101277",
+              "q": "Ascorbic acid may interfere with biochemical determinations of creatinine, uric acid and glucose in samples of blood and urine."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "ascorbic-acid:allergy:ascorbic-acid",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "ascorbic-acid",
+      "allergen": [
+        "ascorbic-acid"
+      ],
+      "concern": "Hypersensitivity to ascorbic acid",
+      "consequence": "Allergic reaction.",
+      "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "Hypersensitivity to ascorbic acid",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Hypersensitivity to ascorbic acid or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "ascorbic-acid:condition:hyperoxaluria",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "ascorbic-acid",
+      "condition": "hyperoxaluria",
+      "concern": "Hyperoxaluria",
+      "consequence": "Increased urinary oxalate; oxalate kidney stones.",
+      "action": "Do not give (SmPC 4.3). Patients at risk of hyperoxaluria: not more than 1 gram daily.",
+      "sourceWording": "should not be given to patients with hyperoxaluria",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Ascorbic acid should not be given to patients with hyperoxaluria."
+        },
+        {
+          "s": "emc-101277",
+          "q": "Patients known to be at risk of hyperoxaluria should not ingest ascorbic acid in doses exceeding 1 gram daily, as there may be increased urinary oxalate excretion."
+        }
+      ]
+    },
+    {
+      "id": "ascorbic-acid:condition:g6pd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ascorbic-acid",
+      "condition": "g6pd-deficiency",
+      "concern": "G6PD deficiency",
+      "consequence": "Haemolytic anaemia (and acidosis in overdose).",
+      "action": "Be aware of the risk of haemolysis (no specific action stated).",
+      "sourceWording": "has been implicated in precipitating haemolytic anaemia",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Ascorbic acid has been implicated in precipitating haemolytic anaemia in certain individuals with a deficiency of glucose-6-phosphate dehydrogenase."
+        },
+        {
+          "s": "emc-101277",
+          "q": "Ascorbic acid may cause acidosis or haemolytic anaemia in certain individuals with a deficiency of glucose 6-phosphate dehydrogenase."
+        }
+      ]
+    },
+    {
+      "id": "ascorbic-acid:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "ascorbic-acid",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Excipient (lactose) intolerance. This applies to the UK 500 mg tablet; the clinic 1000 mg tablet's excipients are not known.",
+      "action": "The UK 500 mg tablet should not be taken; check the excipients of the product supplied.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Patients with rare hereditary problems of fructose or galactose intolerance, total lactase deficiency, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine as it contains lactose."
+        }
+      ]
+    },
+    {
+      "id": "ascorbic-acid:condition:sugar-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "ascorbic-acid",
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency",
+      "consequence": "Excipient (lactose) intolerance. This applies to the UK 500 mg tablet; the clinic 1000 mg tablet's excipients are not known.",
+      "action": "The UK 500 mg tablet should not be taken; check the excipients of the product supplied.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Patients with rare hereditary problems of fructose or galactose intolerance, total lactase deficiency, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine as it contains lactose."
+        }
+      ]
+    },
+    {
+      "id": "ascorbic-acid:age:4-11-max",
+      "kind": "age",
+      "level": "dose",
+      "med": "ascorbic-acid",
+      "age": {
+        "minYears": 4,
+        "maxYears": 12
+      },
+      "concern": "Children 4-11 years: maximum daily dose",
+      "consequence": "Lower maximum dose in this age group.",
+      "action": "Maximum 500 mg a day (a 1000 mg tablet exceeds this).",
+      "sourceWording": "Maximum daily doses: ... Children 4 - 11 years, 500 mg",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Children 4 - 11 years, 500 mg."
+        }
+      ]
+    },
+    {
+      "id": "ascorbic-acid:pregnancy",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "ascorbic-acid",
+      "concern": "Pregnancy",
+      "consequence": "No clinical data; animal studies show no harm.",
+      "action": "Use with caution.",
+      "sourceWording": "Pregnant women should exercise caution.",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Pregnant women should exercise caution."
+        }
+      ]
+    },
+    {
+      "id": "ascorbic-acid:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "ascorbic-acid",
+      "concern": "Breastfeeding",
+      "consequence": "Excreted in breast milk; no evidence of harm.",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Ascorbic acid is excreted in breast milk. Though again caution should be exercised, no evidence exists suggesting such excretion is hazardous to the infant."
+        }
+      ]
+    },
+    {
+      "id": "ascorbic-acid:interaction:antacid",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "ascorbic-acid",
+      "other": "group:antacid",
+      "concern": "Antacids",
+      "consequence": "Aluminium-containing antacids: increased urinary aluminium elimination.",
+      "action": "Concurrent use is not recommended, especially in renal insufficiency.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Concurrent administration of antacids and ascorbic acid is not recommended, especially in patients with renal insufficiency."
+        },
+        {
+          "s": "emc-101277",
+          "q": "Concomitant administration of aluminium-containing antacids may increase urinary aluminium elimination."
+        }
+      ]
+    },
+    {
+      "id": "ascorbic-acid:interaction:iron",
+      "kind": "interaction",
+      "level": "info",
+      "med": "ascorbic-acid",
+      "other": "group:iron-preparation",
+      "concern": "Oral iron",
+      "consequence": "Ascorbic acid may increase oral iron absorption.",
+      "action": "No action stated.",
+      "sourceWording": "may increase the oral absorption of iron",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Ascorbic acid may increase the oral absorption of iron."
+        }
+      ]
+    },
+    {
+      "id": "ascorbic-acid:interaction:aspirin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "ascorbic-acid",
+      "other": "aspirin",
+      "concern": "Aspirin",
+      "consequence": "Aspirin may reduce ascorbic acid absorption; aspirin's effect is not reduced.",
+      "action": "No action stated.",
+      "sourceWording": "may interfere with absorption of ascorbic acid",
+      "src": [
+        {
+          "s": "emc-101277",
+          "q": "Concomitant administration of aspirin and ascorbic acid may interfere with absorption of ascorbic acid."
+        }
+      ]
+    }
+  ]
+}

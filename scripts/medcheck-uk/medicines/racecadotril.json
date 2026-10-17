@@ -1,0 +1,825 @@
+{
+  "id": "racecadotril",
+  "name": "Racecadotril",
+  "ingredients": [
+    "racecadotril"
+  ],
+  "className": "Intestinal antisecretory antidiarrhoeal (enkephalinase inhibitor)",
+  "groups": [],
+  "searchTerms": [
+    "racecadotril granules"
+  ],
+  "formulations": [
+    {
+      "id": "racecadotril-10mg-granules",
+      "label": "Granules for oral suspension 10 mg sachet (infants under 13 kg)",
+      "route": "oral",
+      "strengths": "10 mg per sachet",
+      "release": "n/a",
+      "note": "For children under 13 kg. Contains sucrose (966.5 mg per sachet).",
+      "src": [
+        {
+          "s": "mhra-racecadotril-10mg-pl39418-0001",
+          "q": "Each sachet contains 10 mg of racecadotril."
+        },
+        {
+          "s": "mhra-racecadotril-10mg-pl39418-0001",
+          "q": "Hidrasec Infants is intended for children <13 kg"
+        },
+        {
+          "s": "mhra-racecadotril-10mg-pl39418-0001",
+          "q": "Each sachet contains 966.5 mg of sucrose."
+        }
+      ],
+      "sourceIds": [
+        "mhra-racecadotril-10mg-pl39418-0001"
+      ]
+    },
+    {
+      "id": "racecadotril-30mg-granules",
+      "label": "Granules for oral suspension 30 mg sachet (children 13 kg and over)",
+      "route": "oral",
+      "strengths": "30 mg per sachet",
+      "release": "n/a",
+      "note": "For children 13 kg and over. Contains sucrose (2.9 g per sachet).",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Each sachet contains 30 mg of racecadotril."
+        },
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Hidrasec 30 mg is intended for children ≥13 kg."
+        },
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Each sachet contains 2.9 g of sucrose."
+        }
+      ],
+      "sourceIds": [
+        "mhra-racecadotril-30mg-pl39418-0002"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Add-on symptomatic treatment of acute diarrhoea in infants over 3 months and children, together with oral rehydration.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Complementary symptomatic treatment of acute diarrhoea in infants (older than 3 months) and children together with oral rehydration (ORS)."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Must be given with oral rehydration; it does not change usual rehydration regimens.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Hidrasec is administered via the oral route, together with oral rehydration (see section 4.4)."
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "does not modify the usual rehydration regimens."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "status": "not-stated",
+      "note": "The clinic products (10 mg and 30 mg granules) are licensed for infants over 3 months and children only; see the paediatric section. Adult dosing not covered."
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "1.5 mg/kg per dose three times daily at regular intervals. Under 9 kg: one 10 mg sachet three times daily; 9-13 kg: two 10 mg sachets three times daily.",
+          "tag": "10 mg sachet (under 13 kg)",
+          "formulations": [
+            "racecadotril-10mg-granules"
+          ],
+          "calc": {
+            "mgPerKg": 1.5,
+            "per": "dose",
+            "ageMinYears": 0.25,
+            "weightMaxKg": 13,
+            "of": "racecadotril"
+          },
+          "src": [
+            {
+              "s": "mhra-racecadotril-10mg-pl39418-0001",
+              "q": "1.5 mg/kg per dose (corresponding to 1 to 2 sachets), three times daily at regular intervals."
+            },
+            {
+              "s": "mhra-racecadotril-10mg-pl39418-0001",
+              "q": "In infant less than 9 kg : one 10 mg sachet 3 times daily. In infant from 9 kg to 13 kg : two 10 mg sachets 3 times daily."
+            }
+          ]
+        },
+        {
+          "t": "1.5 mg/kg per dose three times daily. 13-27 kg: one 30 mg sachet three times daily; over 27 kg: two 30 mg sachets three times daily.",
+          "tag": "30 mg sachet (13 kg and over)",
+          "formulations": [
+            "racecadotril-30mg-granules"
+          ],
+          "calc": {
+            "mgPerKg": 1.5,
+            "per": "dose",
+            "ageMinYears": 0.25,
+            "of": "racecadotril"
+          },
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "1.5 mg/kg per dose (corresponding to 1 to 2 sachets), three times daily at regular intervals."
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "In children from 13 kg to 27 kg : one 30 mg sachet 3 times daily. In children of more than 27 kg : two 30 mg sachets 3 times daily."
+            }
+          ]
+        },
+        {
+          "t": "Continue until two normal stools; do not exceed 7 days.",
+          "tag": "Duration",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Treatment should be continued until two normal stools are recorded. Treatment should not exceed 7 days."
+            }
+          ]
+        },
+        {
+          "t": "Must not be given to infants under 3 months (no clinical trials).",
+          "tag": "Under 3 months",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "The product must not be administered to infants less than 3 months old, as there are no clinical trials in this population."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to racecadotril or any excipient.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Contains sucrose: hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase deficiency should not take (listed in 4.3).",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption syndrome or saccharase- isomaltase deficiency should not take this medicine."
+            }
+          ]
+        },
+        {
+          "t": "Section 4.4 'must not' statements: infants under 3 months; children with renal or liver impairment of any degree; prolonged or uncontrolled vomiting; restarting after DRESS.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "The product must not be administered to children with renal or liver impairment, whatever the degree of severity, due to a lack of information on these patient populations."
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "the product must not be administered in cases of prolonged or uncontrolled vomiting."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Bloody or purulent stools with fever (invasive bacteria or other severe disease) or antibiotic-associated diarrhoea: should not be given.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "The presence of bloody or purulent stools and fever may indicate the presence of invasive bacteria as a reason for diarrhoea, or the presence of other severe disease."
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Therefore, racecadotril should not be administered under these conditions."
+            }
+          ]
+        },
+        {
+          "t": "Angioedema can occur at any time; airway involvement needs emergency treatment. Stop and supervise closely. Past angioedema not caused by racecadotril may raise the risk.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Where there is angioedema associated with upper airway obstruction, such as tongue, glottis and/or larynx, emergency therapy should be administered promptly."
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Patients with a history of angioedema unrelated to racecadotril therapy may be at increased risk of angioedema."
+            }
+          ]
+        },
+        {
+          "t": "Severe skin reactions including DRESS (can be fatal): stop immediately; never restart after DRESS.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "If signs and symptoms suggestive of DRESS appear, racecadotril should be withdrawn immediately and an alternative treatment considered."
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "treatment with racecadotril must not be restarted in these patients at any time."
+            }
+          ]
+        },
+        {
+          "t": "Severe or prolonged diarrhoea with marked vomiting or poor appetite: consider IV rehydration.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "In the event of serious or prolonged diarrhoea with important vomiting or a lack of appetite, intravenous rehydration should be considered."
+            }
+          ]
+        },
+        {
+          "t": "Diabetes: count the sucrose content if the daily dose provides more than 5 g sucrose. Chronic diarrhoea not sufficiently studied.",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "In patients with diabetes, it should be taken into account that each sachet contains 2.899 g of sucrose."
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Chronic diarrhoea has not been sufficiently studied with this product."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Other medicines that cause bradykinin-mediated angioedema (ACE inhibitors; to a lesser extent angiotensin II antagonists, gliptins, mTOR inhibitors, sacubitril, alteplase, estramustine): combined use may raise angioedema risk and is not recommended.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "The most frequently implicated drugs are ACE inhibitors, and to a lesser extent: angiotensin II antagonists"
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Concomitant use of racecadotril and other drugs known to cause bradykinin-mediated angioedema may increase the risk of angioedema and are not recommended"
+            }
+          ]
+        },
+        {
+          "t": "No clinically relevant inhibition or induction of major CYP enzymes in vitro.",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "do not inhibit the major CYP enzymes isoforms 3A4, 2D6, 2C9, 1A2 and 2C19 to an extent that would be clinically relevant."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Must not be given to children with renal impairment of any degree (no data). No eGFR or CrCl threshold given.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "The product must not be administered to children with renal or liver impairment, whatever the degree of severity, due to a lack of information on these patient populations."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Must not be given to children with liver impairment of any degree (no data).",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "The product must not be administered to children with renal or liver impairment, whatever the degree of severity, due to a lack of information on these patient populations."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "No adequate human data; should not be given to pregnant women.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "However, since no specific clinical studies are available, Hidrasec should not be administered to pregnant women."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "No data on excretion in milk: should not be given to breastfeeding women.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "this medicinal product should not be administered to breastfeeding women."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Rat studies show no effect on fertility.",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Fertility studies conducted with racecadotril on Rats demonstrate no impact on fertility."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "No common adverse effects listed. Uncommon: tonsillitis, rash, erythema.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Uncommon: tonsillitis."
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Uncommon: rash, erythema."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Angioedema (face, lips, tongue, larynx) and anaphylactic shock: emergency treatment if airway involved; stop racecadotril.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Racecadotril should be discontinued and the patient should be under close medical supervision"
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Unknown: anaphylactic shock."
+            }
+          ]
+        },
+        {
+          "t": "Severe cutaneous reactions including DRESS (life-threatening or fatal): stop immediately and never restart.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Severe cutaneous adverse reactions (SCARs) including drug reaction with eosinophilia and systemic symptoms (DRESS), which can be life-threatening or fatal, have been reported in association with racecadotril treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Monitor closely for skin reactions; stop at signs of severe skin reaction or DRESS.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Patients should be advised of the signs and symptoms and monitored closely for skin reactions."
+            },
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "When experiencing severe skin reactions, the treatment has to be stopped immediately."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Add the granules to food, or disperse in a glass of water or the feeding bottle; mix well and give immediately.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "The granules can be added to food, dispersed in a glass of water or in the feeding-bottle, mixing well and followed by immediate administration."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Keep giving oral rehydration solution; racecadotril does not replace it.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Rehydration is highly important in the management of acute diarrhoea in infants."
+            }
+          ]
+        },
+        {
+          "t": "Seek urgent help for swelling of the face, lips or tongue, or a severe rash.",
+          "src": [
+            {
+              "s": "mhra-racecadotril-30mg-pl39418-0002",
+              "q": "Angioedema of the face, extremities, lips, mucous membranes may occur."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "racecadotril:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "racecadotril",
+      "allergen": [
+        "racecadotril"
+      ],
+      "concern": "Racecadotril hypersensitivity",
+      "consequence": "Hypersensitivity, angioedema, anaphylaxis.",
+      "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications Hypersensitivity",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:allergy:dress",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "racecadotril",
+      "allergen": [
+        "racecadotril"
+      ],
+      "reactions": [
+        "severe-cutaneous"
+      ],
+      "concern": "Previous DRESS with racecadotril",
+      "consequence": "DRESS can be life-threatening or fatal.",
+      "action": "Must not be restarted at any time.",
+      "sourceWording": "must not be restarted in these patients at any time",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "If the patient has developed DRESS with the use of racecadotril, treatment with racecadotril must not be restarted in these patients at any time."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:age:under-3-months",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "racecadotril",
+      "age": {
+        "minYears": 0,
+        "maxYears": 0.25
+      },
+      "concern": "Infant under 3 months",
+      "consequence": "No clinical trials in this age group.",
+      "action": "Must not be given.",
+      "sourceWording": "must not be administered to infants less than 3 months old",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "The product must not be administered to infants less than 3 months old, as there are no clinical trials in this population."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:condition:renal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "racecadotril",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment (any degree)",
+      "consequence": "No data in children with renal impairment.",
+      "action": "Must not be given, whatever the severity.",
+      "sourceWording": "must not be administered to children with renal or liver impairment, whatever the degree of severity",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "The product must not be administered to children with renal or liver impairment, whatever the degree of severity, due to a lack of information on these patient populations."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:hepatic",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "racecadotril",
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Liver impairment (any degree)",
+      "consequence": "No data in children with liver impairment.",
+      "action": "Must not be given, whatever the severity.",
+      "sourceWording": "must not be administered to children with renal or liver impairment, whatever the degree of severity",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "The product must not be administered to children with renal or liver impairment, whatever the degree of severity, due to a lack of information on these patient populations."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:condition:vomiting",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "racecadotril",
+      "condition": "prolonged-vomiting",
+      "concern": "Prolonged or uncontrolled vomiting",
+      "consequence": "Possible reduced bioavailability.",
+      "action": "Must not be given.",
+      "sourceWording": "must not be administered in cases of prolonged or uncontrolled vomiting",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Because of possible reduced bioavailability, the product must not be administered in cases of prolonged or uncontrolled vomiting."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:condition:sugar-intolerance",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "racecadotril",
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase deficiency",
+      "consequence": "Contains sucrose (listed in SmPC 4.3).",
+      "action": "Should not take this medicine (SmPC 4.3).",
+      "sourceWording": "4.3: should not take this medicine",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption syndrome or saccharase- isomaltase deficiency should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:condition:hfi",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "racecadotril",
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance",
+      "consequence": "Contains sucrose (listed in SmPC 4.3).",
+      "action": "Should not take this medicine (SmPC 4.3).",
+      "sourceWording": "4.3: should not take this medicine",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption syndrome or saccharase- isomaltase deficiency should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:condition:dysentery",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "racecadotril",
+      "condition": "acute-dysentery",
+      "concern": "Bloody or purulent stools with fever",
+      "consequence": "May indicate invasive bacteria or other severe disease.",
+      "action": "Should not be given.",
+      "sourceWording": "racecadotril should not be administered under these conditions",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "The presence of bloody or purulent stools and fever may indicate the presence of invasive bacteria as a reason for diarrhoea, or the presence of other severe disease."
+        },
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Therefore, racecadotril should not be administered under these conditions."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:condition:invasive-enterocolitis",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "racecadotril",
+      "condition": "invasive-bacterial-enterocolitis",
+      "concern": "Diarrhoea from invasive bacteria",
+      "consequence": "Not appropriate when invasive bacteria may be the cause.",
+      "action": "Should not be given.",
+      "sourceWording": "racecadotril should not be administered under these conditions",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "may indicate the presence of invasive bacteria as a reason for diarrhoea"
+        },
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Therefore, racecadotril should not be administered under these conditions."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:condition:antibiotic-diarrhoea",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "racecadotril",
+      "condition": "acute-colitis-diarrhoea",
+      "concern": "Antibiotic-associated diarrhoea",
+      "consequence": "Not tested in antibiotic-associated diarrhoea.",
+      "action": "Should not be given.",
+      "sourceWording": "racecadotril should not be administered under these conditions",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Also, racecadotril has not been tested in antibiotic-associated diarrhoea. Therefore, racecadotril should not be administered under these conditions."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:condition:angioedema-history",
+      "kind": "condition",
+      "level": "caution",
+      "med": "racecadotril",
+      "condition": "angioedema-history-other",
+      "concern": "History of angioedema not caused by racecadotril",
+      "consequence": "May be at increased risk of angioedema.",
+      "action": "Use with care; watch for angioedema.",
+      "sourceWording": "may be at increased risk of angioedema",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Patients with a history of angioedema unrelated to racecadotril therapy may be at increased risk of angioedema."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:condition:hereditary-angioedema",
+      "kind": "condition",
+      "level": "caution",
+      "med": "racecadotril",
+      "condition": "hereditary-angioedema",
+      "concern": "History of angioedema (hereditary or idiopathic)",
+      "consequence": "May be at increased risk of angioedema.",
+      "action": "Use with care; watch for angioedema.",
+      "sourceWording": "may be at increased risk of angioedema",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Patients with a history of angioedema unrelated to racecadotril therapy may be at increased risk of angioedema."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:condition:diabetes",
+      "kind": "condition",
+      "level": "info",
+      "med": "racecadotril",
+      "condition": "diabetes",
+      "concern": "Diabetes (sucrose content)",
+      "consequence": "Each sachet contains sucrose.",
+      "action": "Count sucrose in the daily sugar ration if the daily dose exceeds 5 g sucrose.",
+      "sourceWording": "should be taken into account",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "In patients with diabetes, it should be taken into account that each sachet contains 2.899 g of sucrose."
+        },
+        {
+          "s": "mhra-racecadotril-10mg-pl39418-0001",
+          "q": "In patients with diabetes, it should be taken into account that each sachet contains 0.966 g of sucrose."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:interaction:ace-inhibitors",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "racecadotril",
+      "other": "group:ace-inhibitor",
+      "concern": "ACE inhibitors",
+      "consequence": "Increased risk of bradykinin-mediated angioedema.",
+      "action": "Not recommended; if considered, careful benefit-risk assessment first.",
+      "sourceWording": "may increase the risk of angioedema and are not recommended",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Concomitant use of racecadotril and ACE inhibitors may increase the risk of angioedema (see section 4.5)."
+        },
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Concomitant use of racecadotril and other drugs known to cause bradykinin-mediated angioedema may increase the risk of angioedema and are not recommended"
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:interaction:arbs",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "racecadotril",
+      "other": "group:arb",
+      "concern": "Angiotensin II receptor antagonists",
+      "consequence": "Increased risk of bradykinin-mediated angioedema.",
+      "action": "Not recommended.",
+      "sourceWording": "may increase the risk of angioedema and are not recommended",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "The most frequently implicated drugs are ACE inhibitors, and to a lesser extent: angiotensin II antagonists"
+        },
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Concomitant use of racecadotril and other drugs known to cause bradykinin-mediated angioedema may increase the risk of angioedema and are not recommended"
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:interaction:gliptins",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "racecadotril",
+      "other": "group:dpp4-inhibitor",
+      "concern": "Gliptins (DPP-4 inhibitors)",
+      "consequence": "Increased risk of bradykinin-mediated angioedema.",
+      "action": "Not recommended.",
+      "sourceWording": "may increase the risk of angioedema and are not recommended",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "antidiabetic drugs of the gliptin class"
+        },
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "Concomitant use of racecadotril and other drugs known to cause bradykinin-mediated angioedema may increase the risk of angioedema and are not recommended"
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:pregnancy",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "racecadotril",
+      "concern": "Pregnancy",
+      "consequence": "No adequate human data.",
+      "action": "Should not be given to pregnant women.",
+      "sourceWording": "should not be administered to pregnant women",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "However, since no specific clinical studies are available, Hidrasec should not be administered to pregnant women."
+        }
+      ]
+    },
+    {
+      "id": "racecadotril:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "racecadotril",
+      "concern": "Breastfeeding",
+      "consequence": "No information on excretion in milk.",
+      "action": "Should not be given to breastfeeding women.",
+      "sourceWording": "should not be administered to breastfeeding women",
+      "src": [
+        {
+          "s": "mhra-racecadotril-30mg-pl39418-0002",
+          "q": "this medicinal product should not be administered to breastfeeding women."
+        }
+      ]
+    }
+  ]
+}

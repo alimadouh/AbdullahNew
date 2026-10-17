@@ -1,0 +1,959 @@
+{
+  "id": "hyoscine-butylbromide",
+  "name": "Hyoscine butylbromide",
+  "ingredients": [
+    "hyoscine-butylbromide"
+  ],
+  "className": "Antimuscarinic antispasmodic (quaternary ammonium compound)",
+  "groups": [
+    "anticholinergic"
+  ],
+  "searchTerms": [
+    "butylscopolamine",
+    "scopolamine butylbromide"
+  ],
+  "formulations": [
+    {
+      "id": "hyoscine-butylbromide-tab",
+      "label": "Coated tablets",
+      "route": "oral",
+      "strengths": "10 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "Each tablet contains hyoscine butylbromide 10 mg."
+        }
+      ],
+      "sourceIds": [
+        "emc-1775",
+        "emc-3884",
+        "emc-891"
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide-syrup",
+      "label": "Syrup (clinic product)",
+      "route": "oral",
+      "strengths": "5 mg/5 mL (clinic product)",
+      "release": "immediate",
+      "note": "No UK oral liquid of hyoscine butylbromide is licensed: the MHRA refused marketing authorisations for a 5 mg/5 ml oral solution in 2025 (bioequivalence not demonstrated). The contraindications, cautions, interactions, pregnancy and breastfeeding advice come from the UK 10 mg tablet SmPCs (same active ingredient and route). The tablet doses do not apply to the syrup.",
+      "sourceIds": [],
+      "src": [
+        {
+          "s": "mhra-par-hyoscine-oral-solution-2025",
+          "q": "the MHRA have refused to grant marketing authorisations for Hyoscine Butylbromide 5mg/5ml Oral Solution"
+        },
+        {
+          "s": "mhra-par-hyoscine-oral-solution-2025",
+          "q": "Bioequivalence of the proposed medicinal products to their reference medicinal products was not demonstrated."
+        },
+        {
+          "s": "mhra-par-hyoscine-oral-solution-2025",
+          "q": "The procedure was finalised on 06 June 2025."
+        }
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Relief of spasm of the genito-urinary or gastro-intestinal tract, and symptomatic relief of irritable bowel syndrome (IBS).",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "indicated for the relief of spasm of the genito- urinary tract or gastro- intestinal tract and for the symptomatic relief of Irritable Bowel Syndrome"
+            }
+          ]
+        },
+        {
+          "t": "One UK SmPC (IBS-only tablet) is licensed only for gastro-intestinal spasm in medically confirmed IBS.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3884",
+              "q": "indicated for the relief of gastro-intestinal tract spasm associated with medically confirmed Irritable Bowel Syndrome"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "IBS-only tablet: to be taken only for IBS diagnosed by a doctor; see a doctor first if red-flag features are present (age 40 or over with a change in symptoms, rectal bleeding, severe constipation, nausea or vomiting, weight loss, difficulty or pain passing urine, fever, recent travel abroad).",
+          "formulations": [
+            "hyoscine-butylbromide-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-3884",
+              "q": "Only take Buscopan IBS Relief 10 mg Coated Tablets if your doctor has diagnosed Irritable Bowel Syndrome."
+            },
+            {
+              "s": "emc-3884",
+              "q": "if you are 40 years or over and it is some time since your last attack of IBS or the symptoms are different this time if you have recently passed blood from the bowel if you suffer from severe constipation"
+            },
+            {
+              "s": "emc-3884",
+              "q": "if you are feeling sick or vomiting if you have lost your appetite or lost weight if you have difficulty or pain passing urine if you have a fever if you have recently travelled abroad"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults: 20 mg (2 x 10 mg tablets) four times daily.",
+          "tag": "Genito-urinary or GI spasm",
+          "formulations": [
+            "hyoscine-butylbromide-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "Adults: 2 tablets four times daily."
+            }
+          ]
+        },
+        {
+          "t": "IBS: start 10 mg (1 tablet) three times daily; may increase to 20 mg (2 tablets) four times daily if necessary.",
+          "tag": "Irritable bowel syndrome",
+          "formulations": [
+            "hyoscine-butylbromide-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "the recommended starting dose is 1 tablet three times daily, this can be increased up to 2 tablets four times daily if necessary"
+            }
+          ]
+        },
+        {
+          "t": "Do not take continuously every day or for long periods without investigating the cause of the abdominal pain.",
+          "tag": "Duration",
+          "formulations": [
+            "hyoscine-butylbromide-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "should not be taken on a continuous daily basis or for extended periods without investigating the cause of abdominal pain"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children 6-12 years: 10 mg (1 tablet) three times daily (general 10 mg tablet SmPCs).",
+          "formulations": [
+            "hyoscine-butylbromide-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "Children 6 - 12 years: 1 tablet three times daily."
+            }
+          ]
+        },
+        {
+          "t": "The IBS-only tablet SmPC: 12 years and over same as adults; under 12 years not recommended.",
+          "formulations": [
+            "hyoscine-butylbromide-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-3884",
+              "q": "Adults and Children 12 years or over: The recommended starting dose is 1 tablet three times daily"
+            },
+            {
+              "s": "emc-3884",
+              "q": "Children under 12 years: Not recommended."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to hyoscine butylbromide or any other component.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "patients who have demonstrated prior hypersensitivity to hyoscine butylbromide or any other component of the product"
+            }
+          ]
+        },
+        {
+          "t": "Myasthenia gravis.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "contraindicated in: - patients who have demonstrated prior hypersensitivity to hyoscine butylbromide or any other component of the product - myasthenia gravis - mechanical stenosis in the gastrointestinal tract"
+            }
+          ]
+        },
+        {
+          "t": "Mechanical stenosis of the gastrointestinal tract; paralytic or obstructive ileus; megacolon.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "contraindicated in: - patients who have demonstrated prior hypersensitivity to hyoscine butylbromide or any other component of the product - myasthenia gravis - mechanical stenosis in the gastrointestinal tract"
+            },
+            {
+              "s": "emc-1775",
+              "q": "paralytical or obstructive ileus - megacolon - narrow angle glaucoma"
+            }
+          ]
+        },
+        {
+          "t": "Narrow-angle glaucoma.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "paralytical or obstructive ileus - megacolon - narrow angle glaucoma"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Severe unexplained abdominal pain that persists or worsens, or comes with fever, nausea, vomiting, change in bowel habit, tenderness, low blood pressure, fainting or blood in stool: seek medical advice immediately.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "In case severe, unexplained abdominal pain persists or worsens, or occurs together with symptoms like fever, nausea, vomiting, changes in bowel movements, abdominal tenderness, decreased blood pressure, fainting, or blood in stool, medical advice should immediately be sought."
+            }
+          ]
+        },
+        {
+          "t": "Conditions with tachycardia (thyrotoxicosis, cardiac insufficiency or failure) and cardiac surgery: use with caution; it may further increase heart rate.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "should be used with caution in conditions characterised by tachycardia such as thyrotoxicosis, cardiac insufficiency or failure and in cardiac surgery where it may further accelerate the heart rate"
+            }
+          ]
+        },
+        {
+          "t": "Patients susceptible to intestinal or urinary outlet obstruction: use with caution (anticholinergic complications).",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "Due to the risk of anticholinergic complications, caution should be used in patients susceptible to intestinal or urinary outlet obstructions."
+            }
+          ]
+        },
+        {
+          "t": "Pyrexia: give with caution (may reduce sweating).",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "Because of the possibility that anticholinergics may reduce sweating, Buscopan should be administered with caution to patients with pyrexia."
+            }
+          ]
+        },
+        {
+          "t": "Undiagnosed narrow-angle glaucoma: intraocular pressure may rise. A painful red eye with loss of vision needs urgent eye assessment.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "patients should seek urgent ophthalmological advice in case they should develop a painful, red eye with loss of vision whilst or after taking Buscopan"
+            }
+          ]
+        },
+        {
+          "t": "Tablet coating contains sucrose: patients with hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take the tablets.",
+          "detail": true,
+          "formulations": [
+            "hyoscine-butylbromide-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-891",
+              "q": "patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take Buscopan Cramps"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Anticholinergic effect of tri- and tetracyclic antidepressants, antihistamines, quinidine, amantadine, antipsychotics, disopyramide and other anticholinergics (e.g. tiotropium, ipratropium) may be intensified.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "The anticholinergic effect of drugs such as tri- and tetracyclic antidepressants, antihistamines, quinidine, amantadine, antipsychotics (e.g. butyrophenones, phenothiazines), disopyramide and other anticholinergics (e.g. tiotropium, ipratropium, atropine-like compounds) may be intensified"
+            }
+          ]
+        },
+        {
+          "t": "Dopamine antagonists such as metoclopramide: the effects of both drugs on the gastrointestinal tract may be reduced.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "Concomitant treatment with dopamine antagonists such as metoclopramide may result in diminution of the effects of both drugs on the gastrointestinal tract."
+            }
+          ]
+        },
+        {
+          "t": "Beta-adrenergic agents: tachycardic effects may be enhanced.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "The tachycardic effects of beta-adrenergic agents may be enhanced by Buscopan."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "status": "not-stated",
+      "note": "No renal impairment advice in the UK SmPCs accessed (three UK 10 mg tablet SmPCs)."
+    },
+    "hepatic": {
+      "status": "not-stated",
+      "note": "No hepatic impairment advice in the UK SmPCs accessed (three UK 10 mg tablet SmPCs)."
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: limited human data; as a precaution not recommended in pregnancy.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "There are limited data from the use of hyoscine butylbromide in pregnant women."
+            },
+            {
+              "s": "emc-1775",
+              "q": "As a precautionary measure Buscopan is not recommended during pregnancy."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: only recommended in pregnancy if there is no alternative treatment; available information does not suggest harm, but data are very limited.",
+          "src": [
+            {
+              "s": "bumps-hyoscine",
+              "q": "hyoscine is only recommended in pregnancy if there are no alternative treatments as there is very little information about how it might affect the unborn baby"
+            },
+            {
+              "s": "bumps-hyoscine",
+              "q": "Although the available information does not suggest it harms the baby in the womb"
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: risk to the breastfed child cannot be excluded; use is not recommended.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "A risk to the breastfeeding child cannot be excluded. Use of Buscopan during breastfeeding is not recommended."
+            }
+          ]
+        },
+        {
+          "t": "SPS: a preferred antispasmodic in breastfeeding; low levels in milk expected. As a precaution monitor the infant for drowsiness, poor feeding, weight gain, irritability, constipation and urinary retention.",
+          "src": [
+            {
+              "s": "sps-bf-gi-antispasmodics",
+              "q": "Hyoscine butylbromide can be used during breastfeeding."
+            },
+            {
+              "s": "sps-bf-gi-antispasmodics",
+              "q": "monitor infants for drowsiness, not waking to feed or poor feeding, adequate weight gain, irritability, constipation and urinary retention (decrease in wet nappies)"
+            }
+          ]
+        },
+        {
+          "t": "SPS: theoretical risk of reduced milk supply with antimuscarinics; monitor feeding and weight gain, especially with long-term use.",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-bf-gi-antispasmodics",
+              "q": "There is a theoretical risk that suppression of breast milk production could occur with antimuscarinic drugs (atropine, hyoscine butylbromide, propantheline)."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No human fertility studies.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "No studies on the effects on human fertility have been conducted."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "No common or very common effects listed. Uncommon: tachycardia, dry mouth, skin reactions (urticaria, pruritus), abnormal sweating.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "Uncommon: tachycardia"
+            },
+            {
+              "s": "emc-1775",
+              "q": "Uncommon: dry mouth"
+            },
+            {
+              "s": "emc-1775",
+              "q": "Uncommon: skin reactions (e.g. urticaria, pruritus), abnormal sweating"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Anaphylactic shock and anaphylactic or other hypersensitivity reactions, including dyspnoea (frequency not known).",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "anaphylactic shock, anaphylactic reactions, dyspnoea, other hypersensitivity"
+            }
+          ]
+        },
+        {
+          "t": "Urinary retention (rare).",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "Rare: urinary retention"
+            }
+          ]
+        },
+        {
+          "t": "Painful red eye with loss of vision (possible raised intraocular pressure): urgent eye assessment.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "patients should seek urgent ophthalmological advice in case they should develop a painful, red eye with loss of vision whilst or after taking Buscopan"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "status": "not-stated",
+      "note": "No monitoring requirements stated in the UK SmPCs accessed (three UK 10 mg tablet SmPCs); no SPS monitoring page found."
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Swallow tablets whole with enough water.",
+          "formulations": [
+            "hyoscine-butylbromide-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "should be swallowed whole with adequate water"
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "May blur vision (accommodation): do not drive or use machines if affected.",
+          "src": [
+            {
+              "s": "emc-1775",
+              "q": "Because of possible visual accommodation disturbances patients should not drive or operate machinery if affected."
+            }
+          ]
+        },
+        {
+          "t": "IBS: see a doctor if new symptoms appear, symptoms worsen, or there is no improvement after two weeks.",
+          "src": [
+            {
+              "s": "emc-3884",
+              "q": "Consult your doctor if you develop new symptoms, or if your symptoms worsen or have not improved over two weeks."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "hyoscine-butylbromide:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "hyoscine-butylbromide",
+      "allergen": [
+        "hyoscine-butylbromide"
+      ],
+      "concern": "Hyoscine butylbromide hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in: - patients who have demonstrated prior hypersensitivity",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "contraindicated in: - patients who have demonstrated prior hypersensitivity to hyoscine butylbromide or any other component of the product - myasthenia gravis - mechanical stenosis in the gastrointestinal tract"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:myasthenia-gravis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hyoscine-butylbromide",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "Listed in SmPC 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in: ... myasthenia gravis",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "contraindicated in: - patients who have demonstrated prior hypersensitivity to hyoscine butylbromide or any other component of the product - myasthenia gravis - mechanical stenosis in the gastrointestinal tract"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:gi-obstruction-stricture",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hyoscine-butylbromide",
+      "condition": "gi-obstruction-stricture",
+      "concern": "Mechanical stenosis of the gastrointestinal tract",
+      "consequence": "Listed in SmPC 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in: ... mechanical stenosis in the gastrointestinal tract",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "contraindicated in: - patients who have demonstrated prior hypersensitivity to hyoscine butylbromide or any other component of the product - myasthenia gravis - mechanical stenosis in the gastrointestinal tract"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:paralytic-ileus-gi-obstruction",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hyoscine-butylbromide",
+      "condition": "paralytic-ileus-gi-obstruction",
+      "concern": "Paralytic or obstructive ileus",
+      "consequence": "Listed in SmPC 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in: ... paralytical or obstructive ileus",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "contraindicated in: - patients who have demonstrated prior hypersensitivity to hyoscine butylbromide or any other component of the product - myasthenia gravis - mechanical stenosis in the gastrointestinal tract"
+        },
+        {
+          "s": "emc-1775",
+          "q": "paralytical or obstructive ileus - megacolon - narrow angle glaucoma"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:megacolon",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hyoscine-butylbromide",
+      "condition": "megacolon",
+      "concern": "Megacolon",
+      "consequence": "Listed in SmPC 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in: ... megacolon",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "contraindicated in: - patients who have demonstrated prior hypersensitivity to hyoscine butylbromide or any other component of the product - myasthenia gravis - mechanical stenosis in the gastrointestinal tract"
+        },
+        {
+          "s": "emc-1775",
+          "q": "paralytical or obstructive ileus - megacolon - narrow angle glaucoma"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:angle-closure-glaucoma",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hyoscine-butylbromide",
+      "condition": "angle-closure-glaucoma",
+      "concern": "Narrow-angle glaucoma",
+      "consequence": "Listed in SmPC 4.3; anticholinergics can raise intraocular pressure.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in: ... narrow angle glaucoma",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "contraindicated in: - patients who have demonstrated prior hypersensitivity to hyoscine butylbromide or any other component of the product - myasthenia gravis - mechanical stenosis in the gastrointestinal tract"
+        },
+        {
+          "s": "emc-1775",
+          "q": "paralytical or obstructive ileus - megacolon - narrow angle glaucoma"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:tachyarrhythmia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hyoscine-butylbromide",
+      "condition": "tachyarrhythmia",
+      "concern": "Conditions with tachycardia",
+      "consequence": "May further accelerate the heart rate.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "should be used with caution in conditions characterised by tachycardia such as thyrotoxicosis, cardiac insufficiency or failure and in cardiac surgery where it may further accelerate the heart rate"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:thyrotoxicosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hyoscine-butylbromide",
+      "condition": "thyrotoxicosis",
+      "concern": "Thyrotoxicosis (tachycardia)",
+      "consequence": "May further accelerate the heart rate.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "should be used with caution in conditions characterised by tachycardia such as thyrotoxicosis, cardiac insufficiency or failure and in cardiac surgery where it may further accelerate the heart rate"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hyoscine-butylbromide",
+      "condition": "heart-failure",
+      "concern": "Cardiac insufficiency or failure (tachycardia)",
+      "consequence": "May further accelerate the heart rate.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "should be used with caution in conditions characterised by tachycardia such as thyrotoxicosis, cardiac insufficiency or failure and in cardiac surgery where it may further accelerate the heart rate"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hyoscine-butylbromide",
+      "condition": "severe-heart-failure",
+      "concern": "Cardiac insufficiency or failure (tachycardia)",
+      "consequence": "May further accelerate the heart rate.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "should be used with caution in conditions characterised by tachycardia such as thyrotoxicosis, cardiac insufficiency or failure and in cardiac surgery where it may further accelerate the heart rate"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:prostatic-hypertrophy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hyoscine-butylbromide",
+      "condition": "prostatic-hypertrophy",
+      "concern": "Susceptibility to urinary outlet obstruction",
+      "consequence": "Risk of anticholinergic complications (urinary retention).",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be used",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "Due to the risk of anticholinergic complications, caution should be used in patients susceptible to intestinal or urinary outlet obstructions."
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:urinary-retention",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hyoscine-butylbromide",
+      "condition": "urinary-retention",
+      "concern": "Susceptibility to urinary outlet obstruction",
+      "consequence": "Risk of anticholinergic complications.",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be used",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "Due to the risk of anticholinergic complications, caution should be used in patients susceptible to intestinal or urinary outlet obstructions."
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:pyrexia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hyoscine-butylbromide",
+      "condition": "pyrexia",
+      "concern": "Pyrexia",
+      "consequence": "Anticholinergics may reduce sweating.",
+      "action": "Give with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "Because of the possibility that anticholinergics may reduce sweating, Buscopan should be administered with caution to patients with pyrexia."
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:condition:hereditary-sugar-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "hyoscine-butylbromide",
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency (tablet coating contains sucrose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the tablets.",
+      "sourceWording": "should not take",
+      "src": [
+        {
+          "s": "emc-891",
+          "q": "patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take Buscopan Cramps"
+        }
+      ],
+      "formulations": [
+        "hyoscine-butylbromide-tab"
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:age:under-12-ibs",
+      "kind": "age",
+      "level": "avoid",
+      "med": "hyoscine-butylbromide",
+      "formulations": [
+        "hyoscine-butylbromide-tab"
+      ],
+      "age": {
+        "maxYears": 12
+      },
+      "concern": "Child under 12 years (IBS-only tablet SmPC)",
+      "consequence": "The IBS-only tablet SmPC does not recommend use under 12 years. Another UK 10 mg tablet SmPC gives a dose for children 6-12 years for GI or genito-urinary spasm.",
+      "action": "IBS-only tablet: not recommended under 12 years.",
+      "sourceWording": "Not recommended",
+      "src": [
+        {
+          "s": "emc-3884",
+          "q": "Children under 12 years: Not recommended."
+        },
+        {
+          "s": "emc-1775",
+          "q": "Children 6 - 12 years: 1 tablet three times daily."
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "hyoscine-butylbromide",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Limited human data.",
+      "action": "Not recommended in pregnancy (precaution).",
+      "sourceWording": "is not recommended during pregnancy",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "As a precautionary measure Buscopan is not recommended during pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "hyoscine-butylbromide",
+      "concern": "Pregnancy (BUMPS)",
+      "consequence": "Very little information on effects on the unborn baby; available data do not suggest harm.",
+      "action": "Only if there is no alternative treatment.",
+      "sourceWording": "only recommended in pregnancy if there are no alternative treatments",
+      "src": [
+        {
+          "s": "bumps-hyoscine",
+          "q": "hyoscine is only recommended in pregnancy if there are no alternative treatments as there is very little information about how it might affect the unborn baby"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "hyoscine-butylbromide",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Risk to the breastfed child cannot be excluded.",
+      "action": "Not recommended during breastfeeding.",
+      "sourceWording": "during breastfeeding is not recommended",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "A risk to the breastfeeding child cannot be excluded. Use of Buscopan during breastfeeding is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "monitor",
+      "med": "hyoscine-butylbromide",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "SPS lists it as a preferred antispasmodic; low milk levels expected.",
+      "action": "Can be used; as a precaution monitor the infant for drowsiness, poor feeding, weight gain, irritability, constipation and urinary retention.",
+      "sourceWording": "can be used during breastfeeding",
+      "src": [
+        {
+          "s": "sps-bf-gi-antispasmodics",
+          "q": "Hyoscine butylbromide can be used during breastfeeding."
+        },
+        {
+          "s": "sps-bf-gi-antispasmodics",
+          "q": "monitor infants for drowsiness, not waking to feed or poor feeding, adequate weight gain, irritability, constipation and urinary retention (decrease in wet nappies)"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hyoscine-butylbromide",
+      "other": "group:tricyclic-antidepressant",
+      "concern": "Tri- and tetracyclic antidepressants",
+      "consequence": "Anticholinergic effect may be intensified.",
+      "action": "No specific action stated in the SmPC; be aware of the combined effect.",
+      "sourceWording": "may be intensified",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "The anticholinergic effect of drugs such as tri- and tetracyclic antidepressants, antihistamines, quinidine, amantadine, antipsychotics (e.g. butyrophenones, phenothiazines), disopyramide and other anticholinergics (e.g. tiotropium, ipratropium, atropine-like compounds) may be intensified"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:interaction:antihistamine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hyoscine-butylbromide",
+      "other": "group:antihistamine",
+      "concern": "Antihistamines",
+      "consequence": "Anticholinergic effect may be intensified.",
+      "action": "No specific action stated in the SmPC; be aware of the combined effect.",
+      "sourceWording": "may be intensified",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "The anticholinergic effect of drugs such as tri- and tetracyclic antidepressants, antihistamines, quinidine, amantadine, antipsychotics (e.g. butyrophenones, phenothiazines), disopyramide and other anticholinergics (e.g. tiotropium, ipratropium, atropine-like compounds) may be intensified"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:interaction:anticholinergic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hyoscine-butylbromide",
+      "other": "group:anticholinergic",
+      "concern": "Other anticholinergics (e.g. tricyclic antidepressants, dicycloverine)",
+      "consequence": "Anticholinergic effect may be intensified.",
+      "action": "No specific action stated in the SmPC; be aware of the combined effect.",
+      "sourceWording": "may be intensified",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "The anticholinergic effect of drugs such as tri- and tetracyclic antidepressants, antihistamines, quinidine, amantadine, antipsychotics (e.g. butyrophenones, phenothiazines), disopyramide and other anticholinergics (e.g. tiotropium, ipratropium, atropine-like compounds) may be intensified"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:interaction:inhaled-antimuscarinic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hyoscine-butylbromide",
+      "other": "group:inhaled-antimuscarinic",
+      "concern": "Inhaled anticholinergics (e.g. tiotropium, ipratropium)",
+      "consequence": "Anticholinergic effect may be intensified.",
+      "action": "No specific action stated in the SmPC; be aware of the combined effect.",
+      "sourceWording": "may be intensified",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "The anticholinergic effect of drugs such as tri- and tetracyclic antidepressants, antihistamines, quinidine, amantadine, antipsychotics (e.g. butyrophenones, phenothiazines), disopyramide and other anticholinergics (e.g. tiotropium, ipratropium, atropine-like compounds) may be intensified"
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:interaction:dopamine-antagonist",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hyoscine-butylbromide",
+      "other": "group:dopamine-antagonist",
+      "concern": "Dopamine antagonists (e.g. metoclopramide)",
+      "consequence": "Effects of both drugs on the gastrointestinal tract may be reduced.",
+      "action": "No specific action stated in the SmPC; be aware of the combined effect.",
+      "sourceWording": "may result in diminution of the effects of both drugs",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "Concomitant treatment with dopamine antagonists such as metoclopramide may result in diminution of the effects of both drugs on the gastrointestinal tract."
+        }
+      ]
+    },
+    {
+      "id": "hyoscine-butylbromide:interaction:beta-adrenergic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hyoscine-butylbromide",
+      "other": "group:beta2-agonist",
+      "concern": "Beta-adrenergic agents",
+      "consequence": "Tachycardic effects may be enhanced.",
+      "action": "No specific action stated in the SmPC; be aware of the combined effect.",
+      "sourceWording": "may be enhanced",
+      "src": [
+        {
+          "s": "emc-1775",
+          "q": "The tachycardic effects of beta-adrenergic agents may be enhanced by Buscopan."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1776 @@
+{
+  "id": "lisinopril-hydrochlorothiazide",
+  "name": "Lisinopril/hydrochlorothiazide",
+  "ingredients": ["lisinopril", "hydrochlorothiazide"],
+  "className": "ACE inhibitor and thiazide diuretic (fixed-dose combination)",
+  "groups": ["ace-inhibitor", "thiazide", "diuretic", "antihypertensive", "non-antibiotic-sulfonamide"],
+  "searchTerms": ["lisinopril and hydrochlorothiazide", "lisinopril hydrochlorothiazide", "lisinopril/HCTZ", "lisinopril + hydrochlorothiazide"],
+  "formulations": [
+    {
+      "id": "lisinopril-hydrochlorothiazide-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "10 mg/12.5 mg, 20 mg/12.5 mg (lisinopril/hydrochlorothiazide)",
+      "release": "immediate",
+      "note": "The score line is not for breaking the tablet.",
+      "src": [
+        { "s": "emc-5502", "q": "Each tablet contains lisinopril dihydrate (equivalent to 20 mg anhydrous lisinopril) and hydrochlorothiazide 12.5 mg." },
+        { "s": "emc-5501", "q": "Each tablet contains lisinopril dihydrate (equivalent to 10 mg anhydrous lisinopril) and hydrochlorothiazide 12.5 mg." },
+        { "s": "emc-5502", "q": "The score line is not intended for breaking the tablet." }
+      ],
+      "sourceIds": ["emc-5502", "emc-5501"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Mild to moderate hypertension in patients already stabilised on the individual components given in the same proportions.",
+          "src": [
+            { "s": "emc-5502", "q": "indicated in the management of mild to moderate hypertension in patients who have been stabilised on the individual components given in the same proportions." }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Licensed only for patients already stabilised on lisinopril and hydrochlorothiazide in the same proportions; not for use as initial therapy in renal insufficiency.",
+          "src": [
+            { "s": "emc-5502", "q": "in patients who have been stabilised on the individual components given in the same proportions." },
+            { "s": "emc-5502", "q": "is not to be used as initial therapy in any patient with renal insufficiency." }
+          ]
+        },
+        {
+          "t": "Dual RAAS blockade (with an ARB or aliskiren) is not recommended; if absolutely necessary, only under specialist supervision with frequent close monitoring.",
+          "detail": true,
+          "src": [
+            { "s": "emc-5502", "q": "If dual blockade therapy is considered absolutely necessary, this should only occur under specialist supervision and subject to frequent close monitoring of renal function, electrolytes and blood pressure." }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "One tablet once daily at about the same time each day. If the effect is not enough after 2-4 weeks, the dose can be increased to two tablets once daily.",
+          "tag": "Hypertension",
+          "src": [
+            { "s": "emc-5502", "q": "The usual dosage is one tablet, administered once daily." },
+            { "s": "emc-5502", "q": "if the desired therapeutic effect cannot be achieved in a period of 2 to 4 weeks at this dose level, the dose can be increased to two tablets administered once daily." }
+          ]
+        },
+        {
+          "t": "On prior diuretic therapy: stop the diuretic 2-3 days before starting. If this is not possible, start with lisinopril alone at 5 mg.",
+          "tag": "Prior diuretic therapy",
+          "src": [
+            { "s": "emc-5502", "q": "The diuretic therapy should be discontinued for 2-3 days prior to initiation of therapy with Zestoretic. If this is not possible, treatment should be started with lisinopril alone, in a 5 mg dose." }
+          ]
+        },
+        {
+          "t": "Elderly: no dose adjustment required.",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            { "s": "emc-5502", "q": "No adjustment of dosage is required in the elderly." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Safety and efficacy in children have not been established; no paediatric dose is given.",
+          "src": [
+            { "s": "emc-5502", "q": "Paediatric population The safety and efficacy in children have not been established." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to lisinopril, hydrochlorothiazide, any excipient or any other ACE inhibitor.",
+          "src": [
+            { "s": "emc-5502", "q": "Hypersensitivity to the active substances or to any of the excipients listed in section 6.1." },
+            { "s": "emc-5502", "q": "Hypersensitivity to any other angiotensin converting enzyme (ACE) inhibitor." }
+          ]
+        },
+        {
+          "t": "Hypersensitivity to any sulphonamide-derived drug.",
+          "src": [
+            { "s": "emc-5502", "q": "Hypersensitivity to any sulphonamide-derived drugs." }
+          ]
+        },
+        {
+          "t": "History of angioedema with previous ACE inhibitor therapy; hereditary or idiopathic angioedema.",
+          "src": [
+            { "s": "emc-5502", "q": "History of angioedema associated with previous ACE inhibitor therapy." },
+            { "s": "emc-5502", "q": "Hereditary or idiopathic angioedema." }
+          ]
+        },
+        {
+          "t": "With sacubitril/valsartan; do not start within 36 hours of the last sacubitril/valsartan dose.",
+          "src": [
+            { "s": "emc-5502", "q": "Concomitant use of Zestoretic with sacubitril/valsartan therapy." },
+            { "s": "emc-5502", "q": "Zestoretic must not be initiated earlier than 36 hours after the last dose of sacubitril/valsartan" }
+          ]
+        },
+        {
+          "t": "Second and third trimesters of pregnancy.",
+          "src": [
+            { "s": "emc-5502", "q": "Second and third trimesters of pregnancy (see sections 4.4 and 4.6)." }
+          ]
+        },
+        {
+          "t": "Severe renal impairment (CrCl below 30 mL/min); anuria; severe hepatic impairment.",
+          "src": [
+            { "s": "emc-5502", "q": "Severe renal impairment (creatinine clearance < 30 ml/min). Anuria. Severe hepatic impairment." }
+          ]
+        },
+        {
+          "t": "With aliskiren-containing products in patients with diabetes or renal impairment (GFR below 60 mL/min/1.73 m²).",
+          "src": [
+            { "s": "emc-5502", "q": "The concomitant use of Zestoretic with aliskiren-containing products is contraindicated in patients with diabetes mellitus or renal impairment (GFR < 60 ml/min/1.73 m2)" }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Non-melanoma skin cancer (basal and squamous cell): risk rises with cumulative hydrochlorothiazide dose. Inform patients, advise regular skin checks and sun protection, examine suspicious lesions, and reconsider use after previous skin cancer.",
+          "tag": "Skin cancer",
+          "src": [
+            { "s": "emc-5502", "q": "Patients taking HCTZ should be informed of the risk of NMSC and advised to regularly check their skin for any new lesions and promptly report any suspicious skin lesions." },
+            { "s": "emc-5502", "q": "The use of HCTZ may also need to be reconsidered in patients who have experienced previous NMSC" },
+            { "s": "mhra-dsu-hctz-nmsc-2018", "q": "reconsider the use of hydrochlorothiazide in patients who have had previous skin cancer" }
+          ]
+        },
+        {
+          "t": "Symptomatic hypotension: more likely with volume depletion (diuretics, salt restriction, dialysis, diarrhoea, vomiting) or severe renin-dependent hypertension. Check electrolytes regularly; start and change doses under close supervision in those at risk, including ischaemic heart or cerebrovascular disease.",
+          "tag": "Hypotension",
+          "src": [
+            { "s": "emc-5502", "q": "is more likely to occur if the patient has been volume-depleted, e.g. by diuretic therapy, dietary salt restriction, dialysis, diarrhoea or vomiting, or has severe renin-dependant hypertension" },
+            { "s": "emc-5502", "q": "In patients at increased risk of symptomatic hypotension, initiation of therapy and dose adjustment should be monitored under close medical supervision." },
+            { "s": "emc-5502", "q": "Particular consideration applies to patients with ischaemic heart or cerebrovascular disease, because an excessive fall in blood pressure could result in a myocardial infarction or cerebrovascular accident." },
+            { "s": "emc-5502", "q": "Regular determination of serum electrolytes should be performed at appropriate intervals in such patients." }
+          ]
+        },
+        {
+          "t": "Mitral stenosis, aortic stenosis or hypertrophic cardiomyopathy: give lisinopril with caution.",
+          "tag": "Valve disease",
+          "src": [
+            { "s": "emc-5502", "q": "lisinopril should be given with caution to patients with mitral valve stenosis and obstruction in the outflow of the left ventricle such as aortic stenosis or hypertrophic cardiomyopathy." }
+          ]
+        },
+        {
+          "t": "Renal impairment: thiazides are ineffective at CrCl 30 mL/min or below. With CrCl 80 mL/min or below, do not give the combination until titration of the separate components shows these doses are needed. Renal artery stenosis: start under close supervision with low doses; monitor renal function in the first few weeks.",
+          "tag": "Renal",
+          "src": [
+            { "s": "emc-5502", "q": "are ineffective at creatinine clearance values of 30 ml/min or below (corresponds to moderate or severe renal insufficiency)." },
+            { "s": "emc-5502", "q": "Lisinopril/hydrochlorothiazide should not be administered to patients with renal insufficiency (creatinine clearance less than or equal to 80 ml/min) until titration of the individual components has shown the need for the doses present in the combination tablet." },
+            { "s": "emc-5502", "q": "renal function should be monitored during the first few weeks of lisinopril/hydrochlorothiazide therapy." }
+          ]
+        },
+        {
+          "t": "Hepatic: use thiazides with caution in impaired liver function or progressive liver disease (small fluid/electrolyte changes may precipitate hepatic coma). Stop if jaundice or marked liver enzyme rise.",
+          "tag": "Liver",
+          "src": [
+            { "s": "emc-5502", "q": "Thiazides should be used with caution in patients with impaired hepatic function or progressive liver disease, since minor alterations of fluid and electrolyte balance may precipitate hepatic coma" },
+            { "s": "emc-5502", "q": "Patients receiving lisinopril/hydrochlorothiazide who develop jaundice or marked elevations of hepatic enzymes should discontinue lisinopril/hydrochlorothiazide" }
+          ]
+        },
+        {
+          "t": "Electrolytes: thiazides can cause hypokalaemia, hyponatraemia, hypochloraemic alkalosis and hypomagnesaemia, and can raise serum calcium; ACE inhibitors can cause hyperkalaemia (renal impairment, diabetes, potassium supplements, potassium-sparing diuretics, trimethoprim, ARBs). Check serum electrolytes periodically.",
+          "tag": "Electrolytes",
+          "src": [
+            { "s": "emc-5502", "q": "periodic determination of serum electrolytes should be performed at appropriate intervals." },
+            { "s": "emc-5502", "q": "can cause fluid or electrolyte imbalance (hypokalaemia, hyponatraemia, and hypochloremic alkalosis)." },
+            { "s": "emc-5502", "q": "Thiazides have been shown to increase the urinary excretions of magnesium, which may result in hypomagnesaemia." },
+            { "s": "emc-5502", "q": "Thiazides may decrease urinary calcium excretion and may cause intermittent and slight elevation of serum calcium." },
+            { "s": "emc-5502", "q": "other drugs associated with increase in serum potassium (e.g. heparin, trimethoprim or co-trimoxazole also known as trimethoprim/sulfamethoxazole)" },
+            { "s": "emc-5502", "q": "Potassium-sparing diuretics and angiotensin-receptor blockers should be used with caution in patients receiving ACE inhibitors, serum potassium and renal function should be monitored" }
+          ]
+        },
+        {
+          "t": "Metabolic: may impair glucose tolerance; antidiabetic (including insulin) doses may need adjustment; monitor glycaemia closely in the first month. Thiazides may unmask latent diabetes, raise lipids and precipitate hyperuricaemia or gout.",
+          "tag": "Metabolic",
+          "src": [
+            { "s": "emc-5502", "q": "ACE inhibitor and thiazide therapy may impair glucose tolerance. Dosage adjustment of antidiabetic agents, including insulin, may be required." },
+            { "s": "emc-5502", "q": "In diabetic patients treated with oral antidiabetic agents or insulin, glycaemia levels should be closely monitored during the first month of treatment with an ACE inhibitor." },
+            { "s": "emc-5502", "q": "Latent diabetes mellitus may become manifest during thiazide therapy." },
+            { "s": "emc-5502", "q": "Increases in cholesterol and triglyceride levels may be associated with thiazide diuretic therapy." },
+            { "s": "emc-5502", "q": "Thiazide therapy may precipitate hyperuricaemia and/or gout in certain patients." }
+          ]
+        },
+        {
+          "t": "Angioedema can occur at any time; stop promptly. Airway involvement needs emergency treatment. Higher rate in black patients. History of angioedema not caused by an ACE inhibitor may raise risk. Caution when starting racecadotril, mTOR inhibitors or vildagliptin.",
+          "tag": "Angioedema",
+          "src": [
+            { "s": "emc-5502", "q": "This may occur at any time during therapy. In such cases, lisinopril should be discontinued promptly" },
+            { "s": "emc-5502", "q": "In such cases emergency therapy should be administered promptly." },
+            { "s": "emc-5502", "q": "ACE inhibitors cause a higher rate of angioedema in black patients than in non-black patients." },
+            { "s": "emc-5502", "q": "Patients with a history of angioedema unrelated to ACE inhibitor therapy may be at increased risk of angioedema while receiving an ACE inhibitor" },
+            { "s": "emc-5502", "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor." }
+          ]
+        },
+        {
+          "t": "Dual RAAS blockade (ACE inhibitor with ARB or aliskiren) not recommended; do not combine an ACE inhibitor and ARB in diabetic nephropathy.",
+          "tag": "Dual RAAS blockade",
+          "src": [
+            { "s": "emc-5502", "q": "Dual blockade of RAAS through the combined use of ACE-inhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended" },
+            { "s": "emc-5502", "q": "ACE-inhibitors and angiotensin II receptor blockers should not be used concomitantly in patients with diabetic nephropathy." }
+          ]
+        },
+        {
+          "t": "Neutropenia/agranulocytosis: extreme caution in collagen vascular disease, immunosuppressant therapy, allopurinol or procainamide, especially with renal impairment; check white cell counts periodically. Thiazides can exacerbate or activate SLE.",
+          "tag": "Blood disorders, lupus",
+          "src": [
+            { "s": "emc-5502", "q": "Lisinopril should be used with extreme caution in patients with collagen vascular disease, immunosuppressant therapy, treatment with allopurinol or procainamide" },
+            { "s": "emc-5502", "q": "periodic monitoring of white blood cell counts is advised and patients should be instructed to report any sign of infection." },
+            { "s": "emc-5502", "q": "Exacerbation or activation of systemic lupus erythematosus has been reported with the use of thiazides." }
+          ]
+        },
+        {
+          "t": "Choroidal effusion, acute myopia and secondary angle-closure glaucoma (sulfonamide reaction), usually within hours to weeks: stop as rapidly as possible. Sulfonamide or penicillin allergy may be a risk factor.",
+          "tag": "Eyes",
+          "src": [
+            { "s": "emc-5502", "q": "Sulfonamide or sulfonamide derivative drugs can cause an idiosyncratic reaction resulting in choroidal effusion with visual field defect, transient myopia and acute angle-closure glaucoma." },
+            { "s": "emc-5502", "q": "The primary treatment is to discontinue drug intake as rapidly as possible." },
+            { "s": "emc-5502", "q": "Risk factors for developing acute angle-closure glaucoma may include a history of sulfonamide or penicillin allergy." }
+          ]
+        },
+        {
+          "t": "Acute respiratory toxicity (ARDS) very rarely, within minutes to hours of a dose: withdraw. Do not give hydrochlorothiazide to anyone who previously had ARDS after it.",
+          "tag": "ARDS",
+          "src": [
+            { "s": "emc-5502", "q": "If diagnosis of ARDS is suspected, Zestoretic should be withdrawn and appropriate treatment given." },
+            { "s": "emc-5502", "q": "Hydrochlorothiazide should not be administered to patients who previously experienced ARDS following hydrochlorothiazide intake." }
+          ]
+        },
+        {
+          "t": "Recent kidney transplant: should not be used. Not indicated in patients needing dialysis for renal failure. Anaphylactoid reactions with high-flux membranes and LDL apheresis with dextran sulphate: consider a different membrane or antihypertensive class; for apheresis, withholding the ACE inhibitor before each session avoided reactions. Anaphylactoid reactions also reported during desensitisation (e.g. hymenoptera venom).",
+          "src": [
+            { "s": "emc-5502", "q": "Should not be used, since there is no experience with patients recently transplanted with a kidney." },
+            { "s": "emc-5502", "q": "The use of lisinopril/hydrochlorothiazide is not indicated in patients requiring dialysis for renal failure." },
+            { "s": "emc-5502", "q": "Anaphylactoid reactions have been reported in patients, undergoing certain haemodialysis procedures (e.g. with the high-flux membranes AN 69 and during low-density lipoproteins (LDL) apheresis with dextran sulphate) and treated concomitantly with an ACE inhibitor." },
+            { "s": "emc-5502", "q": "In these patients consideration should be given to using a different type of dialysis membrane or a different class of antihypertensive agent." },
+            { "s": "emc-5502", "q": "These symptoms could be avoided by temporary discontinuation of the treatment with ACE inhibitors before each apheresis." },
+            { "s": "emc-5502", "q": "Patients receiving ACE inhibitors during desensitisation treatment (e.g. hymenoptera venom) have sustained anaphylactoid reactions." }
+          ]
+        },
+        {
+          "t": "Persistent dry cough can occur and resolves after stopping. Lisinopril may be less effective in black patients. Major surgery/anaesthesia: hypotension can be corrected by volume expansion. Hydrochlorothiazide may give a positive anti-doping test. Stop thiazides before parathyroid function tests.",
+          "detail": true,
+          "src": [
+            { "s": "emc-5502", "q": "Characteristically, the cough is non-productive, persistent and resolves after discontinuation of therapy." },
+            { "s": "emc-5502", "q": "lisinopril may be less effective in lowering blood pressure in black patients than in non-black patients" },
+            { "s": "emc-5502", "q": "If hypotension occurs and is considered to be due to this mechanism, it can be corrected by volume expansion." },
+            { "s": "emc-5502", "q": "The hydrochlorothiazide contained in this medication could produce a positive analytic result in an anti-doping test." },
+            { "s": "emc-5502", "q": "Thiazides should be discontinued before carrying out tests for parathyroid function." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Potassium-sparing diuretics (e.g. spironolactone, amiloride), potassium supplements, potassium salt substitutes, trimethoprim and co-trimoxazole: significant rise in potassium, especially with renal impairment or diabetes. Combination not recommended; if needed, use with caution and monitor potassium frequently.",
+          "tag": "Potassium-raising medicines",
+          "src": [
+            { "s": "emc-5502", "q": "Use of potassium sparing diuretics (e.g. spironolactone, triamterene or amiloride), potassium supplements or potassium-containing salt substitutes, particularly in patients with impaired renal function or diabetes mellitus, may lead to a significant increase in serum potassium." },
+            { "s": "emc-5502", "q": "such as trimethoprim and co-trimoxazole" },
+            { "s": "emc-5502", "q": "Therefore, the combination of Zestoretic with the above-mentioned drugs is not recommended." },
+            { "s": "emc-5502", "q": "they should be used with caution and with frequent monitoring of serum potassium" }
+          ]
+        },
+        {
+          "t": "ARBs or aliskiren (dual RAAS blockade): more hypotension, hyperkalaemia and reduced renal function; not recommended. Aliskiren should be avoided (contraindicated with diabetes or GFR below 60).",
+          "tag": "Dual RAAS blockade",
+          "src": [
+            { "s": "emc-5502", "q": "is associated with a higher frequency of adverse events such as hypotension, hyperkalaemia and decreased renal function (including acute renal failure)" },
+            { "s": "emc-5502", "q": "The combination of lisinopril with aliskiren-containing medicines should be avoided" },
+            { "s": "mhra-dsu-ras-combination", "q": "Combination use of medicines from two classes of RAS blocking agents (ACE-inhibitors, ARBs, or aliskiren) is not recommended." }
+          ]
+        },
+        {
+          "t": "NSAIDs (including COX-2 inhibitors and aspirin above 3 g/day): reduced antihypertensive and diuretic effect; additive rise in potassium and worsening renal function, rarely acute renal failure (especially elderly or dehydrated).",
+          "tag": "NSAIDs",
+          "src": [
+            { "s": "emc-5502", "q": "Chronic administration of NSAID (selective cyclooxygenase-2 inhibitors, acetylsalicylic acid >3 g/day and non-selective NSAIDs) may reduce the antihypertensive and diuretic effect of ACE inhibitors and thiazide diuretics." },
+            { "s": "emc-5502", "q": "NSAID and ACE inhibitors may exert an additive effect on the increase in serum potassium and may result in a deterioration of renal function." },
+            { "s": "emc-5502", "q": "Rarely, acute renal failure may occur, especially in patients with compromised renal function such as the elderly or dehydrated." }
+          ]
+        },
+        {
+          "t": "Torsades de pointes-inducing medicines (some antiarrhythmics, antipsychotics, others): use with caution because of hydrochlorothiazide-induced hypokalaemia.",
+          "tag": "QT / torsades",
+          "src": [
+            { "s": "emc-5502", "q": "Because of the risk of hypokalaemia the concomitant administration of hydrochlorothiazide and medicinal products that induce torsades de pointes" },
+            { "s": "emc-5502", "q": "other drugs known to induce torsades de pointes, should be used with caution." }
+          ]
+        },
+        {
+          "t": "Potassium-losing medicines (corticosteroids, ACTH, stimulant laxatives, other kaliuretic diuretics such as loop diuretics, salicylic acid derivatives, amphotericin): greater potassium loss.",
+          "tag": "Hypokalaemia",
+          "src": [
+            { "s": "emc-5502", "q": "The potassium depleting effect of hydrochlorothiazide could be expected to be potentiated by drugs associated with potassium loss and hypokalaemia (e.g. other kaliuretic diuretics, laxatives, amphotericin, carbenoxolone, salicylic acid derivatives)." },
+            { "s": "emc-5502", "q": "Hypokalemia may develop during concomitant use of steroids or adrenocorticotropic hormone (ACTH)." }
+          ]
+        },
+        {
+          "t": "Antidiabetics including insulin: glucose tolerance may be impaired, mostly in the first weeks and in renal impairment; requirements may change. Monitor glycaemia closely in the first month.",
+          "tag": "Antidiabetics",
+          "src": [
+            { "s": "emc-5502", "q": "Treatment with a thiazide diuretic may impair glucose tolerance." },
+            { "s": "emc-5502", "q": "Other antidiabetic drugs including insulin requirements in diabetic patients may be increased, decreased, or unchanged." },
+            { "s": "emc-5502", "q": "glycaemia levels should be closely monitored during the first month of treatment with an ACE inhibitor." }
+          ]
+        },
+        {
+          "t": "Other antihypertensives, nitrates and vasodilators: additive fall in blood pressure. Tricyclic antidepressants, antipsychotics and some anaesthetics: further BP lowering. Alcohol, barbiturates or anaesthetics: worse postural hypotension. Diuretics: stop 2-3 days before starting if possible.",
+          "tag": "Blood pressure lowering",
+          "src": [
+            { "s": "emc-5502", "q": "When combined with other antihypertensive agents, additive falls in blood pressure may occur." },
+            { "s": "emc-5502", "q": "Concomitant use of certain anaesthetic medicinal products, tricyclic antidepressants and antipsychotics with ACE inhibitors may result in further lowering of blood pressure" },
+            { "s": "emc-5502", "q": "Postural hypotension may become aggravated by simultaneous intake of alcohol, barbiturates or anaesthetics." },
+            { "s": "emc-5502", "q": "The diuretic therapy should be discontinued for 2-3 days prior to initiation of therapy with Zestoretic." }
+          ]
+        },
+        {
+          "t": "Calcium salts or vitamin D: thiazides can raise serum calcium; monitor calcium and adjust the dose.",
+          "tag": "Calcium, vitamin D",
+          "src": [
+            { "s": "emc-5502", "q": "Thiazide diuretics may increase serum calcium levels due to decreased excretion." },
+            { "s": "emc-5502", "q": "If calcium supplements or Vitamin D must be prescribed, serum calcium levels should be monitored and the dose adjusted accordingly." }
+          ]
+        },
+        {
+          "t": "Allopurinol: higher risk of renal damage and leucopenia. Methotrexate and other cytotoxics: thiazides may reduce their renal excretion and increase myelosuppression.",
+          "tag": "Allopurinol, cytotoxics",
+          "src": [
+            { "s": "emc-5502", "q": "Concomitant administration of ACE inhibitors and allopurinol increases the risk of renal damage and can lead to an increased risk of leucopoenia." },
+            { "s": "emc-5502", "q": "Thiazides may reduce the renal excretion of cytotoxic medicinal products (e.g. cyclophosphamide, methotrexate) and potentiate their myelosuppressive effects" }
+          ]
+        },
+        {
+          "t": "Sacubitril/valsartan: contraindicated. Racecadotril, vildagliptin, mTOR inhibitors and tissue plasminogen activator: higher angioedema risk.",
+          "tag": "Angioedema risk",
+          "src": [
+            { "s": "emc-5502", "q": "Concomitant use of ACE inhibitors with sacubitril/valsartan is contraindicated as this increases the risk of angioedema" },
+            { "s": "emc-5502", "q": "Concomitant use of ACE inhibitors with racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus,) and vildagliptin may lead to an increase in the risk of angioedema" },
+            { "s": "emc-5502", "q": "Concomitant treatment with tissue plasminogen activators may increase the risk of angioedema." }
+          ]
+        },
+        {
+          "t": "Sympathomimetics can reduce the antihypertensive effect.",
+          "tag": "Sympathomimetics",
+          "detail": true,
+          "src": [
+            { "s": "emc-5502", "q": "Sympathomimetics can reduce the antihypertensive effect of ACE inhibitors." }
+          ]
+        },
+        {
+          "t": "Lithium: high risk of lithium toxicity; not recommended; if necessary, monitor lithium levels carefully. Colestyramine/colestipol: take the thiazide at least 1 hour before or 4-6 hours after. Digoxin: hypokalaemia increases toxicity. Sotalol: hypokalaemia increases arrhythmia risk. Ciclosporin, heparin: monitor potassium. Lovastatin: higher hyperkalaemia risk. Injectable gold: nitritoid reactions. Amantadine: more adverse effects. Diazoxide: hyperglycaemic effect enhanced. Non-depolarising muscle relaxants: response may increase.",
+          "tag": "Other (not in medicine list)",
+          "detail": true,
+          "src": [
+            { "s": "emc-5502", "q": "The combination of lisinopril and hydrochlorothiazide with lithium is therefore not recommended and careful monitoring of serum lithium levels should be performed if the combination proves necessary" },
+            { "s": "emc-5502", "q": "Therefore sulphonamide diuretics should be taken at least 1 hour before or 4-6 hours after intake of these agents." },
+            { "s": "emc-5502", "q": "Hypokalemia can sensitise or exaggerate the response of the heart to the toxic effects of digitalis" },
+            { "s": "emc-5502", "q": "Thiazide induced hypokalaemia can increase the risk of sotalol induced arrhythmia." },
+            { "s": "emc-5502", "q": "Concomitant administration of ACE inhibitors and ciclosporin increases the risk of renal damage and hyperkalaemia. Monitoring of serum potassium is recommended." },
+            { "s": "emc-5502", "q": "Hyperkalaemia may occur during concomitant use of ACE inhibitors with heparin. Monitoring of serum potassium is recommended." },
+            { "s": "emc-5502", "q": "Concomitant administration of ACE inhibitors and lovastatin increases the risk of hyperkalaemia." },
+            { "s": "emc-5502", "q": "Nitritoid reactions (symptoms of vasodilatation including flushing, nausea, dizziness and hypotension, which can be very severe) following injectable gold" },
+            { "s": "emc-5502", "q": "Thiazides may increase the risk of adverse effects caused by amantadine." },
+            { "s": "emc-5502", "q": "The hyperglycaemic effect of diazoxide may be enhanced by thiazides." },
+            { "s": "emc-5502", "q": "Thiazides may increase the responsiveness to non-depolarising skeletal muscle relaxants" }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "CrCl below 30 mL/min: contraindicated. Thiazides are ineffective at CrCl 30 mL/min or below.",
+          "tag": "SmPC (CrCl)",
+          "src": [
+            { "s": "emc-5502", "q": "Severe renal impairment (creatinine clearance < 30 ml/min)." },
+            { "s": "emc-5502", "q": "are ineffective at creatinine clearance values of 30 ml/min or below (i.e. moderate or severe renal insufficiency)." }
+          ]
+        },
+        {
+          "t": "CrCl above 30 and below 80 mL/min: may be used, but only after titration of the separate components; never as initial therapy. Lisinopril alone in mild renal insufficiency: 5-10 mg.",
+          "tag": "SmPC (CrCl)",
+          "src": [
+            { "s": "emc-5502", "q": "In patients with creatinine clearance of >30 and <80 ml/min, Zestoretic may be used, but only after titration of the individual components." },
+            { "s": "emc-5502", "q": "Zestoretic is not to be used as initial therapy in any patient with renal insufficiency." },
+            { "s": "emc-5502", "q": "The recommended dose of lisinopril, when used alone, in mild renal insufficiency, is 5 to 10 mg." }
+          ]
+        },
+        {
+          "t": "SPS: seek specialist advice before starting an ACE inhibitor if eGFR is below 30 mL/min/1.73 m². A creatinine rise under 50% (if below 266 micromol/L) or eGFR fall under 10% (if eGFR over 25) can be acceptable.",
+          "tag": "SPS (eGFR)",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2" },
+            { "s": "sps-acei-arb-monitoring", "q": "An increase in serum creatinine of less than 50% above baseline, as long as it is less than 266 micromol/L, or a decrease in eGFR of less than 10% from baseline, as long as eGFR is over 25 mL/min/1.73 m2, can be considered as acceptable." }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Severe hepatic impairment: contraindicated.",
+          "src": [
+            { "s": "emc-5502", "q": "Anuria. Severe hepatic impairment." }
+          ]
+        },
+        {
+          "t": "Impaired liver function or progressive liver disease: use thiazides with caution (risk of hepatic coma). Stop if jaundice or marked liver enzyme rise.",
+          "src": [
+            { "s": "emc-5502", "q": "Thiazides should be used with caution in patients with impaired hepatic function or progressive liver disease" },
+            { "s": "emc-5502", "q": "Patients receiving lisinopril/hydrochlorothiazide who develop jaundice or marked elevations of hepatic enzymes should discontinue lisinopril/hydrochlorothiazide" }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC (ACE inhibitor): not recommended in the first trimester; contraindicated in the second and third trimesters. Stop as soon as pregnancy is diagnosed and switch if appropriate. If exposed from the second trimester, ultrasound check of fetal kidneys and skull; observe the newborn for hypotension.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-5502", "q": "The use of ACE inhibitors is not recommended during the first trimester of pregnancy" },
+            { "s": "emc-5502", "q": "The use of ACE inhibitors is contra-indicated during the second and third trimester of pregnancy" },
+            { "s": "emc-5502", "q": "When pregnancy is diagnosed, treatment with ACE inhibitors should be stopped immediately, and, if appropriate, alternative therapy should be started." },
+            { "s": "emc-5502", "q": "Should exposure to ACE inhibitors have occurred from the second trimester of pregnancy, ultrasound check of renal function and skull is recommended." },
+            { "s": "emc-5502", "q": "Infants whose mothers have taken ACE inhibitors should be closely observed for hypotension" }
+          ]
+        },
+        {
+          "t": "SmPC (hydrochlorothiazide): may reduce placental perfusion and cause fetal/neonatal jaundice, electrolyte disturbance and thrombocytopenia. Should not be used for gestational oedema, gestational hypertension or pre-eclampsia, nor for primary hypertension in pregnancy except in rare situations with no alternative.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-5502", "q": "may compromise foeto-placental perfusion and may cause foetal and neonatal effects like icterus, disturbance of electrolyte balance and thrombocytopenia." },
+            { "s": "emc-5502", "q": "Hydrochlorothiazide should not be used for gestational oedema, gestational hypertension or preeclampsia" },
+            { "s": "emc-5502", "q": "Hydrochlorothiazide should not be used for primary hypertension in pregnant women except in rare situations where no other treatment could be used." }
+          ]
+        },
+        {
+          "t": "MHRA: ACE inhibitors should not be used at any stage of pregnancy unless absolutely necessary; stop as soon as possible on diagnosis.",
+          "tag": "MHRA",
+          "src": [
+            { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "ACE inhibitors and angiotensin II receptor antagonists should not be used at any stage of pregnancy unless absolutely necessary" },
+            { "s": "mhra-dsu-acei-arb-pregnancy", "q": "On diagnosis of pregnancy, treatment with an ACE inhibitor or angiotensin II receptor antagonist should be stopped as soon as possible" }
+          ]
+        },
+        {
+          "t": "BUMPS: ACE inhibitor use in early pregnancy is unlikely to harm the baby, but use after about 20 weeks can cause problems in the baby and needs extra monitoring. Diuretics can be used in pregnancy if prescribed, but may reduce placental blood flow; for high blood pressure a different medicine is usually offered.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-ace-inhibitors", "q": "Taking an ACE-I in early pregnancy is unlikely to harm your baby." },
+            { "s": "bumps-ace-inhibitors", "q": "Taking an ACE-I after around 20 weeks of pregnancy can cause a number of problems in your baby" },
+            { "s": "bumps-ace-inhibitors", "q": "as your baby will need extra monitoring" },
+            { "s": "bumps-diuretics", "q": "Diuretics may reduce blood flow to the placenta." },
+            { "s": "bumps-diuretics", "q": "If you take a diuretic to treat high blood pressure, you will usually be offered a different medicine that is known to be safe during pregnancy." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: not recommended. No information for the combination; hydrochlorothiazide passes into milk in small amounts and high thiazide doses can suppress milk production. If used, keep doses as low as possible; alternatives preferred, especially with a newborn or preterm infant.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-5502", "q": "The use of lisinopril/hydrochlorothiazide during breast feeding is not recommended. If lisinopril/hydrochlorothiazide is used during breast feeding, doses should be kept as low as possible." },
+            { "s": "emc-5502", "q": "alternative treatments with better established safety profiles during breast-feeding are preferable, especially while nursing a newborn or preterm infant." },
+            { "s": "emc-5502", "q": "Hydrochlorothiazide is excreted in human milk in small amounts." },
+            { "s": "emc-5502", "q": "Thiazides in high doses causing intense diuresis can inhibit the milk production." }
+          ]
+        },
+        {
+          "t": "MHRA (2009): lisinopril not recommended in breastfeeding; clarification: not absolutely contraindicated and may be prescribed if essential for the mother.",
+          "tag": "MHRA",
+          "src": [
+            { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "ramipril, lisinopril, fosinopril, trandolapril, moexipril, or perindopril: use in breastfeeding is not recommended" },
+            { "s": "mhra-dsu-acei-arb-breastfeeding-clarification", "q": "they are not absolutely contraindicated. Healthcare professionals may prescribe these medicines during breastfeeding if they consider that this treatment is essential for the lactating mother." }
+          ]
+        },
+        {
+          "t": "SPS (lisinopril component only): can be used with caution, enalapril preferred; monitor the infant for hypotension and, in younger infants, wet nappies. The SPS page does not cover hydrochlorothiazide.",
+          "tag": "SPS",
+          "src": [
+            { "s": "sps-acei-breastfeeding", "q": "Lisinopril can be used with caution during breastfeeding, but enalapril is preferred." },
+            { "s": "sps-acei-breastfeeding", "q": "As a precaution, monitor the infant for hypotension which may manifest as drowsiness, lethargy, pallor, poor feeding and inadequate weight gain." },
+            { "s": "sps-acei-breastfeeding", "q": "In younger infants, monitor for normal urine production (wet nappies)." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Planning pregnancy: switch to an antihypertensive with an established pregnancy safety profile unless continued ACE inhibitor treatment is essential.",
+          "src": [
+            { "s": "emc-5502", "q": "Unless continued ACE inhibitor therapy is considered essential, patients planning pregnancy should be changed to alternative anti-hypertensive treatments which have an established safety profile for use in pregnancy." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Most common: cough, dizziness, hypotension and headache (1-10%). Common with lisinopril: dizziness, headache, syncope, orthostatic hypotension, cough, diarrhoea, vomiting, renal dysfunction. Hydrochlorothiazide (frequency not known): electrolyte imbalance, hyperglycaemia, hyperuricaemia/gout, raised lipids, photosensitivity.",
+          "src": [
+            { "s": "emc-5502", "q": "The most commonly reported ADRs are cough, dizziness, hypotension, and headache which may occur in 1 to 10% of treated patients." },
+            { "s": "emc-5502", "q": "Common Dizziness, headache, syncope." },
+            { "s": "emc-5502", "q": "Common Orthostatic effects (including orthostatic hypotension)." },
+            { "s": "emc-5502", "q": "Common Diarrhoea, vomiting." },
+            { "s": "emc-5502", "q": "Common Renal dysfunction." },
+            { "s": "emc-5502", "q": "Anorexia, hyperglycaemia, glycosuria, hyperuricaemia" },
+            { "s": "emc-5502", "q": "electrolyte imbalance (including hyponatraemia, hypokalaemia, hypochloremic alkalosis and hypomagnesaemia), increases in cholesterol and triglycerides, gout." },
+            { "s": "emc-5502", "q": "Photosensitivity reactions, rash, systemic lupus erythematosus" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Angioedema (face, lips, tongue, glottis, larynx; also intestinal): can occur at any time. Stop the ACE inhibitor at once and do not restart. Bradykinin-mediated angioedema may not respond to adrenaline. Airway involvement needs emergency treatment.",
+          "src": [
+            { "s": "mhra-dsu-acei-angioedema-2026", "q": "if angioedema is suspected in a patient taking an ACE inhibitor, discontinue the ACE inhibitor immediately and do not restart" },
+            { "s": "mhra-dsu-acei-angioedema-2026", "q": "bradykinin-mediated angioedema is unlikely to respond to standard anaphylaxis treatments including adrenaline (epinephrine)" },
+            { "s": "emc-5502", "q": "This may occur at any time during therapy." },
+            { "s": "emc-5502", "q": "Very rare Pancreatitis, intestinal angioedema." },
+            { "s": "emc-5502", "q": "Patients with involvement of the tongue, glottis or larynx, are likely to experience airway obstruction" },
+            { "s": "emc-5502", "q": "In such cases emergency therapy should be administered promptly." }
+          ]
+        },
+        {
+          "t": "Sudden reduced vision or eye pain (choroidal effusion, acute myopia, acute angle-closure glaucoma): stop as rapidly as possible; untreated it can cause permanent vision loss.",
+          "src": [
+            { "s": "emc-5502", "q": "Symptoms include acute onset of decreased visual acuity or ocular pain and typically occur within hours to weeks of drug initiation." },
+            { "s": "emc-5502", "q": "The primary treatment is to discontinue drug intake as rapidly as possible." },
+            { "s": "emc-5502", "q": "Untreated acute angle-closure glaucoma can lead to permanent vision loss." }
+          ]
+        },
+        {
+          "t": "Acute respiratory distress syndrome (very rare): dyspnoea, fever, pulmonary deterioration and hypotension within minutes to hours; withdraw and treat.",
+          "src": [
+            { "s": "emc-5502", "q": "At the onset, symptoms include dyspnoea, fever, pulmonary deterioration and hypotension." },
+            { "s": "emc-5502", "q": "If diagnosis of ARDS is suspected, Zestoretic should be withdrawn and appropriate treatment given." }
+          ]
+        },
+        {
+          "t": "Hyperkalaemia (uncommon); acute renal failure (rare); hyponatraemia (rare); SIADH (rare).",
+          "src": [
+            { "s": "emc-5502", "q": "Uncommon Increases in blood urea, increases in serum creatinine, hyperkalaemia. Rare Hyponatraemia." },
+            { "s": "emc-5502", "q": "Rare Uraemia, acute renal failure." },
+            { "s": "emc-5502", "q": "Rare Syndrome of inappropriate antidiuretic hormone secretion (SIADH)." }
+          ]
+        },
+        {
+          "t": "Very rare: bone marrow depression, agranulocytosis; pancreatitis; hepatitis, jaundice, hepatic failure (stop if jaundice or marked enzyme rise); Stevens-Johnson syndrome, toxic epidermal necrolysis. Non-melanoma skin cancer with hydrochlorothiazide.",
+          "src": [
+            { "s": "emc-5502", "q": "Very rare Bone marrow depression, anaemia, thrombocytopenia, leucopenia, neutropenia, agranulocytosis" },
+            { "s": "emc-5502", "q": "Very rare Pancreatitis, intestinal angioedema." },
+            { "s": "emc-5502", "q": "Very rare Hepatitis - either hepatocellular or cholestatic, jaundice and hepatic failure" },
+            { "s": "emc-5502", "q": "Patients receiving lisinopril/hydrochlorothiazide who develop jaundice or marked elevations of hepatic enzymes should discontinue lisinopril/hydrochlorothiazide" },
+            { "s": "emc-5502", "q": "toxic epidermal necrolysis, Stevens-Johnson Syndrome" },
+            { "s": "emc-5502", "q": "Not Known Non-melanoma skin cancer (Basal cell carcinoma and Squamous cell carcinoma)." }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS baseline (ACE inhibitor): blood pressure, eGFR or serum creatinine, serum potassium, serum sodium. Starting is not normally appropriate if potassium is above 5.0 mmol/L.",
+          "tag": "baseline",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Baseline Blood pressure Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Serum potassium Serum sodium" },
+            { "s": "sps-acei-arb-monitoring", "q": "Initiation not normally appropriate if pre-treatment potassium greater than 5.0mmol/L" }
+          ]
+        },
+        {
+          "t": "SmPC: check serum electrolytes periodically; monitor renal function during the first few weeks; monitor glycaemia closely in the first month in diabetes; periodic white cell counts in collagen vascular disease or immunosuppression.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-5502", "q": "periodic determination of serum electrolytes should be performed at appropriate intervals." },
+            { "s": "emc-5502", "q": "renal function should be monitored during the first few weeks of lisinopril/hydrochlorothiazide therapy." },
+            { "s": "emc-5502", "q": "In diabetic patients treated with oral antidiabetic agents or insulin, glycaemia levels should be closely monitored during the first month of treatment with an ACE inhibitor." },
+            { "s": "emc-5502", "q": "If lisinopril is used in such patients, periodic monitoring of white blood cell counts is advised" }
+          ]
+        },
+        {
+          "t": "SPS (hypertension): renal function, sodium and potassium within 1-2 weeks of starting or a dose change (7 days with risk factors), BP within 1 month; once stable, annually. Repeat any time the patient is acutely unwell.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Hypertension Within 1 - 2 weeks Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Serum sodium Serum potassium Within 1 month Blood pressure" },
+            { "s": "sps-acei-arb-monitoring", "q": "Hypertension Annually Serum sodium Serum potassium" },
+            { "s": "sps-acei-arb-monitoring", "q": "Repeat monitoring at any time patient acutely unwell or their renal function may be compromised." }
+          ]
+        },
+        {
+          "t": "Skin: advise regular checks for new or changed lesions; examine suspicious lesions (biopsy if needed).",
+          "tag": "ongoing",
+          "src": [
+            { "s": "mhra-dsu-hctz-nmsc-2018", "q": "advise them to regularly check for and report any new or changed skin lesions or moles" },
+            { "s": "mhra-dsu-hctz-nmsc-2018", "q": "examine all suspicious moles or skin lesions (potentially including histological examination of biopsies)" }
+          ]
+        },
+        {
+          "t": "SPS abnormal results: potassium 6.0 mmol/L or above in CKD - stop the ACE inhibitor (after other potassium-raising drugs) and seek specialist advice; sodium below 132 mmol/L - specialist advice. Stop if angioedema, jaundice/marked liver enzyme rise, ARDS or acute eye symptoms.",
+          "tag": "stop",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Value 6.0 mmol/L or above in people with CKD Stop ACEI/ARB after stopping other drugs that may increase potassium and seek specialist advice." },
+            { "s": "sps-acei-arb-monitoring", "q": "Sodium Value is below 132mmol/L Obtain specialist advice" },
+            { "s": "mhra-dsu-acei-angioedema-2026", "q": "if angioedema is suspected in a patient taking an ACE inhibitor, discontinue the ACE inhibitor immediately and do not restart" },
+            { "s": "emc-5502", "q": "Patients receiving lisinopril/hydrochlorothiazide who develop jaundice or marked elevations of hepatic enzymes should discontinue lisinopril/hydrochlorothiazide" },
+            { "s": "emc-5502", "q": "If diagnosis of ARDS is suspected, Zestoretic should be withdrawn and appropriate treatment given." },
+            { "s": "emc-5502", "q": "The primary treatment is to discontinue drug intake as rapidly as possible." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Once daily at about the same time each day. Lisinopril absorption is not affected by food.",
+          "src": [
+            { "s": "emc-5502", "q": "should be taken at approximately the same time each day." },
+            { "s": "emc-5502", "q": "absorption is not affected by the presence of food." }
+          ]
+        },
+        {
+          "t": "If taking colestyramine or colestipol: take this medicine at least 1 hour before or 4-6 hours after.",
+          "src": [
+            { "s": "emc-5502", "q": "sulphonamide diuretics should be taken at least 1 hour before or 4-6 hours after intake of these agents." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Seek urgent help for swelling of the face, lips, tongue or throat, or trouble breathing or swallowing, even after long use; do not take further doses.",
+          "src": [
+            { "s": "mhra-dsu-acei-angioedema-2026", "q": "even if you have been taking it for a long period without problems" },
+            { "s": "mhra-dsu-acei-angioedema-2026", "q": "seek urgent medical attention if you develop swelling of the face, lips, tongue, or throat, or experience difficulty breathing or swallowing whilst taking ACE inhibitors" },
+            { "s": "mhra-dsu-acei-angioedema-2026", "q": "do not take further doses of your ACE inhibitor if angioedema is suspected and inform a healthcare professional immediately" }
+          ]
+        },
+        {
+          "t": "Skin cancer risk with long-term use: check skin regularly and report new or changed lesions or moles; limit sun and UV exposure and use sun protection.",
+          "src": [
+            { "s": "mhra-dsu-hctz-nmsc-2018", "q": "advise them to regularly check for and report any new or changed skin lesions or moles" },
+            { "s": "mhra-dsu-hctz-nmsc-2018", "q": "advise patients to limit their exposure to sunlight and UV rays and use adequate protection when exposed to sunlight and UV rays to minimise the risk of skin cancer" }
+          ]
+        },
+        {
+          "t": "Report sudden blurred vision or eye pain at once.",
+          "src": [
+            { "s": "emc-5502", "q": "Symptoms include acute onset of decreased visual acuity or ocular pain" }
+          ]
+        },
+        {
+          "t": "Planning pregnancy or pregnant: contact the doctor to switch medicine.",
+          "src": [
+            { "s": "bumps-ace-inhibitors", "q": "If you are taking an ACE-I and planning a pregnancy you should speak to your GP or specialist to discuss switching to a different medicine before trying to conceive." },
+            { "s": "bumps-ace-inhibitors", "q": "If you find out that you are pregnant whilst taking an ACE-I, you should contact your doctor as soon as possible so that you can be switched to another medicine." }
+          ]
+        },
+        {
+          "t": "Dizziness or tiredness can affect driving, especially at the start, after dose changes and with alcohol. Potassium-containing salt substitutes are not recommended with this medicine.",
+          "src": [
+            { "s": "emc-5502", "q": "When driving vehicles or operating machines it should be taken into account that occasionally dizziness or tiredness may occur." },
+            { "s": "emc-5502", "q": "Especially at the start of the treatment or when the dose is modified, and also when used in combination with alcohol" },
+            { "s": "emc-5502", "q": "potassium-containing salt substitutes" },
+            { "s": "emc-5502", "q": "Therefore, the combination of Zestoretic with the above-mentioned drugs is not recommended." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "lisinopril-hydrochlorothiazide:allergy:own-and-ace-inhibitor",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "lisinopril-hydrochlorothiazide",
+      "allergen": ["lisinopril", "hydrochlorothiazide", "group:ace-inhibitor"],
+      "concern": "Hypersensitivity to lisinopril, hydrochlorothiazide or any other ACE inhibitor (including previous ACE inhibitor angioedema)",
+      "consequence": "Hypersensitivity reaction / angioedema.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-5502", "q": "Hypersensitivity to the active substances or to any of the excipients listed in section 6.1." },
+        { "s": "emc-5502", "q": "Hypersensitivity to any other angiotensin converting enzyme (ACE) inhibitor." },
+        { "s": "emc-5502", "q": "History of angioedema associated with previous ACE inhibitor therapy." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:allergy:sulfonamide",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "lisinopril-hydrochlorothiazide",
+      "allergen": ["group:sulfonamide", "group:non-antibiotic-sulfonamide", "sulfamethoxazole", "co-trimoxazole", "group:loop-diuretic", "group:sulfonylurea", "celecoxib", "rosuvastatin", "tamsulosin"],
+      "concern": "Hypersensitivity to any sulphonamide-derived drug",
+      "consequence": "SmPC: hypersensitivity to any sulphonamide-derived drug is a contraindication (hydrochlorothiazide is a sulfonamide). SPS lists sulfamethoxazole (co-trimoxazole), loop diuretics, sulfonylureas, thiazides, celecoxib, rosuvastatin and tamsulosin as UK drugs with a sulfonamide group.",
+      "action": "SmPC: do not use. See the separate SPS advice on cross-reactivity.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-5502", "q": "Hypersensitivity to any sulphonamide-derived drugs." },
+        { "s": "sps-sulfonamide", "q": "These include: sulfamethoxazole (in co-trimoxazole) sulfadiazine sulfapyridine (in sulfasalazine)" },
+        { "s": "sps-sulfonamide", "q": "Classes where all members have a sulfonamide group include: carbonic anhydrase inhibitors loop diuretics sulfonylureas thiazides and thiazide-like diuretics" },
+        { "s": "sps-sulfonamide", "q": "COX-2 inhibitors: celecoxib and parecoxib rosuvastatin sotalol sulfasalazine (contains the sulfonamide antibiotic sulfapyridine) tamsulosin topiramate" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:allergy:sulfonamide-antibiotic-serious-sps",
+      "kind": "allergy",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "allergen": ["group:sulfonamide", "sulfamethoxazole", "co-trimoxazole"],
+      "reactions": ["immediate-severe", "severe-cutaneous"],
+      "concern": "Hypersensitivity to any sulphonamide-derived drug",
+      "consequence": "SPS: cross-reactivity between sulfonamide antibiotics and non-antibiotic sulfonamides (such as hydrochlorothiazide) is not expected, even after a life-threatening reaction, but the consequences of a reaction could be serious.",
+      "action": "SPS (serious reaction to a sulfonamide antibiotic: anaphylaxis, SJS/TEN, DRESS): consider a non-sulfonamide alternative if clinically appropriate; if all first-line choices are sulfonamides, consider a specialist opinion.",
+      "sourceWording": "consider a non-sulfonamide alternative if one is clinically appropriate",
+      "src": [
+        { "s": "sps-sulfonamide", "q": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected, including in people who had a life-threatening reaction to a sulfonamide." },
+        { "s": "sps-sulfonamide", "q": "People who had a serious hypersensitivity reaction to a sulfonamide antibiotic These include anaphylaxis, SJS/TEN, DRESS, organ involvement, and reactions requiring significant hospital stay" },
+        { "s": "sps-sulfonamide", "q": "consider a non-sulfonamide alternative if one is clinically appropriate if all first-line choices are sulfonamides, consider obtaining a specialist opinion" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:allergy:sulfonamide-antibiotic-minor-sps",
+      "kind": "allergy",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "allergen": ["group:sulfonamide", "sulfamethoxazole", "co-trimoxazole"],
+      "reactions": ["delayed"],
+      "concern": "Hypersensitivity to any sulphonamide-derived drug",
+      "consequence": "SPS: cross-reactivity between sulfonamide antibiotics and non-antibiotic sulfonamides (such as hydrochlorothiazide) is not expected.",
+      "action": "SPS (minor reaction to a sulfonamide antibiotic, e.g. delayed maculopapular rash): a non-sulfonamide alternative may be preferable; if the non-antibiotic sulfonamide is the only first-line option, prescribe it and document the reasoning.",
+      "sourceWording": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected",
+      "src": [
+        { "s": "sps-sulfonamide", "q": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected, including in people who had a life-threatening reaction to a sulfonamide." },
+        { "s": "sps-sulfonamide", "q": "It may be preferable to use a suitable non-sulfonamide alternative if one is appropriate." },
+        { "s": "sps-sulfonamide", "q": "People who had a minor hypersensitivity reaction to a sulfonamide antibiotic These include delayed maculopapular rash, or pruritus without systemic features" },
+        { "s": "sps-sulfonamide", "q": "If a non-antibiotic sulfonamide is the only first-line option: prescribe the non-antibiotic sulfonamide and document reasoning" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:allergy:non-antibiotic-sulfonamide-other-class-sps",
+      "kind": "allergy",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "allergen": ["group:loop-diuretic", "group:sulfonylurea", "celecoxib", "rosuvastatin", "tamsulosin"],
+      "concern": "Hypersensitivity to any sulphonamide-derived drug",
+      "consequence": "SPS: no evidence of cross-reactivity between different classes of non-antibiotic sulfonamides (thiazides are a different class from loop diuretics, sulfonylureas and the other listed drugs).",
+      "action": "SPS: no reason to avoid a sulfonamide from a different class after hypersensitivity to one non-antibiotic sulfonamide.",
+      "sourceWording": "There is no reason to avoid antibiotic or non-antibiotic sulfonamides from a different class",
+      "src": [
+        { "s": "sps-sulfonamide", "q": "There is no evidence of cross-reactivity between different classes of non-antibiotic sulfonamides." },
+        { "s": "sps-sulfonamide", "q": "There is no reason to avoid antibiotic or non-antibiotic sulfonamides from a different class if a person has experienced a hypersensitivity to one non-antibiotic sulfonamide." },
+        { "s": "sps-sulfonamide", "q": "Classes where all members have a sulfonamide group include: carbonic anhydrase inhibitors loop diuretics sulfonylureas thiazides and thiazide-like diuretics" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:allergy:penicillin-glaucoma",
+      "kind": "allergy",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "allergen": ["group:penicillin"],
+      "concern": "Penicillin allergy (possible risk factor for acute angle-closure glaucoma)",
+      "consequence": "History of sulfonamide or penicillin allergy may be a risk factor for hydrochlorothiazide-related acute angle-closure glaucoma.",
+      "action": "Be aware; stop at once if acute eye pain or reduced vision.",
+      "sourceWording": "Risk factors for developing acute angle-closure glaucoma may include",
+      "src": [
+        { "s": "emc-5502", "q": "Risk factors for developing acute angle-closure glaucoma may include a history of sulfonamide or penicillin allergy." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:hereditary-angioedema",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "hereditary-angioedema",
+      "concern": "Hereditary or idiopathic angioedema",
+      "consequence": "Risk of angioedema.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-5502", "q": "Hereditary or idiopathic angioedema." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:angioedema-history-other",
+      "kind": "condition",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "angioedema-history-other",
+      "concern": "History of angioedema not caused by an ACE inhibitor",
+      "consequence": "May be at increased risk of angioedema while taking an ACE inhibitor.",
+      "action": "Be aware of the increased angioedema risk.",
+      "sourceWording": "may be at increased risk of angioedema",
+      "src": [
+        { "s": "emc-5502", "q": "Patients with a history of angioedema unrelated to ACE inhibitor therapy may be at increased risk of angioedema while receiving an ACE inhibitor" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:pregnancy:t2-t3",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "lisinopril-hydrochlorothiazide",
+      "trimesters": [2, 3],
+      "concern": "Second or third trimester",
+      "consequence": "Fetotoxicity (reduced renal function, oligohydramnios, skull ossification retardation) and neonatal toxicity (renal failure, hypotension, hyperkalaemia).",
+      "action": "Do not use; stop and switch to an alternative.",
+      "sourceWording": "contra-indicated during the second and third trimester",
+      "src": [
+        { "s": "emc-5502", "q": "The use of ACE inhibitors is contra-indicated during the second and third trimester of pregnancy" },
+        { "s": "emc-5502", "q": "ACE inhibitor therapy exposure during the second and third trimesters is known to induce human foetotoxicity" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:pregnancy:t1",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "trimesters": [1],
+      "concern": "First trimester",
+      "consequence": "A small increase in teratogenic risk cannot be excluded.",
+      "action": "Not recommended; stop when pregnancy is diagnosed and start an alternative if appropriate.",
+      "sourceWording": "not recommended during the first trimester",
+      "src": [
+        { "s": "emc-5502", "q": "The use of ACE inhibitors is not recommended during the first trimester of pregnancy" },
+        { "s": "emc-5502", "q": "however a small increase in risk cannot be excluded." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:pregnancy:hydrochlorothiazide",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "concern": "Pregnancy (hydrochlorothiazide component)",
+      "consequence": "May reduce placental perfusion; fetal/neonatal jaundice, electrolyte disturbance and thrombocytopenia.",
+      "action": "Should not be used for gestational oedema, gestational hypertension or pre-eclampsia, nor for primary hypertension in pregnancy except in rare situations with no alternative.",
+      "sourceWording": "should not be used",
+      "src": [
+        { "s": "emc-5502", "q": "Hydrochlorothiazide should not be used for gestational oedema, gestational hypertension or preeclampsia" },
+        { "s": "emc-5502", "q": "Hydrochlorothiazide should not be used for primary hypertension in pregnant women except in rare situations where no other treatment could be used." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:pregnancy:mhra",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "concern": "Pregnancy (MHRA advice on ACE inhibitors, any stage)",
+      "consequence": "Late-pregnancy fetal renal damage, oligohydramnios and skull defects; possible first-trimester risk.",
+      "action": "Do not use at any stage unless absolutely necessary; stop as soon as possible on diagnosis.",
+      "sourceWording": "should not be used at any stage of pregnancy unless absolutely necessary",
+      "src": [
+        { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "ACE inhibitors and angiotensin II receptor antagonists should not be used at any stage of pregnancy unless absolutely necessary" },
+        { "s": "mhra-dsu-acei-arb-pregnancy", "q": "On diagnosis of pregnancy, treatment with an ACE inhibitor or angiotensin II receptor antagonist should be stopped as soon as possible" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:breastfeeding:smpc-mhra",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "concern": "Breastfeeding (SmPC and MHRA)",
+      "consequence": "No data for the combination; hydrochlorothiazide enters milk and high thiazide doses can suppress lactation.",
+      "action": "Not recommended; if used, keep doses as low as possible. MHRA: lisinopril not absolutely contraindicated if essential for the mother.",
+      "sourceWording": "not recommended",
+      "src": [
+        { "s": "emc-5502", "q": "The use of lisinopril/hydrochlorothiazide during breast feeding is not recommended." },
+        { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "ramipril, lisinopril, fosinopril, trandolapril, moexipril, or perindopril: use in breastfeeding is not recommended" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "concern": "Breastfeeding (SPS, lisinopril component only)",
+      "consequence": "Neonates and infants under 2 months at most risk of hypotension from ACE inhibitors.",
+      "action": "SPS: lisinopril can be used with caution; enalapril preferred. Monitor infant for hypotension and wet nappies. SPS does not cover the hydrochlorothiazide component.",
+      "sourceWording": "can be used with caution during breastfeeding",
+      "src": [
+        { "s": "sps-acei-breastfeeding", "q": "Lisinopril can be used with caution during breastfeeding, but enalapril is preferred." },
+        { "s": "sps-acei-breastfeeding", "q": "Neonates and infants less than 2 months are at the most risk from the side-effects of ACE inhibitors, particularly hypotension" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:renal:crcl-under-30",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "lisinopril-hydrochlorothiazide",
+      "renal": { "measure": "CrCl", "max": 30 },
+      "concern": "Severe renal impairment (CrCl below 30 mL/min)",
+      "consequence": "Thiazides are ineffective at CrCl 30 mL/min or below.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-5502", "q": "Severe renal impairment (creatinine clearance < 30 ml/min)." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:renal:crcl-30-80",
+      "kind": "renal",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "renal": { "measure": "CrCl", "min": 30, "max": 80, "maxInclusive": true },
+      "concern": "Renal impairment (CrCl 80 mL/min or below)",
+      "consequence": "Thiazides may be inappropriate and are ineffective at CrCl 30 mL/min or below.",
+      "action": "Not for initial therapy; use only after titration of the separate components shows these doses are needed. Lisinopril alone in mild renal insufficiency: 5-10 mg.",
+      "sourceWording": "should not be administered ... until titration of the individual components",
+      "src": [
+        { "s": "emc-5502", "q": "Lisinopril/hydrochlorothiazide should not be administered to patients with renal insufficiency (creatinine clearance less than or equal to 80 ml/min) until titration of the individual components has shown the need for the doses present in the combination tablet." },
+        { "s": "emc-5502", "q": "is not to be used as initial therapy in any patient with renal insufficiency." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:renal:egfr-under-30-sps",
+      "kind": "renal",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "renal": { "measure": "eGFR", "max": 30 },
+      "concern": "eGFR below 30 mL/min/1.73 m² (SPS)",
+      "consequence": "Higher risk of renal deterioration and hyperkalaemia with ACE inhibitors.",
+      "action": "Seek specialist advice before starting (the SmPC contraindicates CrCl below 30 mL/min).",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:anuria",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "acute-renal-insufficiency-anuria",
+      "concern": "Anuria",
+      "consequence": "Diuretic cannot act; risk of further renal harm.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-5502", "q": "Severe renal impairment (creatinine clearance < 30 ml/min). Anuria." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:severe-renal-impairment",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal impairment (CrCl below 30 mL/min)",
+      "consequence": "Thiazides are ineffective at CrCl 30 mL/min or below.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-5502", "q": "Severe renal impairment (creatinine clearance < 30 ml/min)." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "lisinopril-hydrochlorothiazide",
+      "hepatic": ["severe"],
+      "concern": "Severe hepatic impairment",
+      "consequence": "Small fluid/electrolyte changes may precipitate hepatic coma.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-5502", "q": "Anuria. Severe hepatic impairment." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:hepatic:mild-moderate",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "hepatic": ["mild", "moderate"],
+      "concern": "Impaired hepatic function or progressive liver disease",
+      "consequence": "Minor fluid and electrolyte changes may precipitate hepatic coma.",
+      "action": "Use with caution; stop if jaundice or marked liver enzyme rise.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-5502", "q": "Thiazides should be used with caution in patients with impaired hepatic function or progressive liver disease, since minor alterations of fluid and electrolyte balance may precipitate hepatic coma" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:age:under-18",
+      "kind": "age",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "age": { "maxYears": 18 },
+      "concern": "Child or adolescent",
+      "consequence": "Safety and efficacy in children have not been established.",
+      "action": "No paediatric dose is given in the SmPC.",
+      "sourceWording": "have not been established",
+      "src": [
+        { "s": "emc-5502", "q": "Paediatric population The safety and efficacy in children have not been established." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:skin-cancer-history",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "skin-cancer-history",
+      "concern": "Previous non-melanoma skin cancer",
+      "consequence": "Cumulative dose-dependent increased risk of basal and squamous cell carcinoma with hydrochlorothiazide.",
+      "action": "Reconsider the use of hydrochlorothiazide; advise skin checks and sun protection.",
+      "sourceWording": "may also need to be reconsidered",
+      "src": [
+        { "s": "emc-5502", "q": "The use of HCTZ may also need to be reconsidered in patients who have experienced previous NMSC" },
+        { "s": "mhra-dsu-hctz-nmsc-2018", "q": "reconsider the use of hydrochlorothiazide in patients who have had previous skin cancer" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:ards-history",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "hydrochlorothiazide-ards-history",
+      "concern": "Previous ARDS after hydrochlorothiazide",
+      "consequence": "Risk of recurrent acute respiratory toxicity.",
+      "action": "Should not be given.",
+      "sourceWording": "should not be administered",
+      "src": [
+        { "s": "emc-5502", "q": "Hydrochlorothiazide should not be administered to patients who previously experienced ARDS following hydrochlorothiazide intake." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:recent-kidney-transplant",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "recent-kidney-transplant",
+      "concern": "Recent kidney transplant",
+      "consequence": "No experience in recent kidney transplantation.",
+      "action": "Should not be used.",
+      "sourceWording": "Should not be used",
+      "src": [
+        { "s": "emc-5502", "q": "Should not be used, since there is no experience with patients recently transplanted with a kidney." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:renal-artery-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "renal-artery-stenosis",
+      "concern": "Bilateral renal artery stenosis or stenosis to a single kidney",
+      "consequence": "Rise in urea and creatinine; risk of severe hypotension and renal insufficiency.",
+      "action": "Start under close medical supervision with low doses and careful titration; monitor renal function in the first weeks. SPS: seek specialist advice before starting an ACE inhibitor in renovascular disease.",
+      "sourceWording": "should be started under close medical supervision with low doses",
+      "src": [
+        { "s": "emc-5502", "q": "In some patients with bilateral renal artery stenosis or stenosis of the artery to a solitary kidney, who have been treated with ACE inhibitors, increases in blood urea and serum creatinine" },
+        { "s": "emc-5502", "q": "If renovascular hypertension is also present there is an increased risk of severe hypotension and renal insufficiency." },
+        { "s": "emc-5502", "q": "In these patients, treatment should be started under close medical supervision with low doses and careful dose titration." },
+        { "s": "emc-5502", "q": "renal function should be monitored during the first few weeks of lisinopril/hydrochlorothiazide therapy." },
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:aortic-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "aortic-stenosis",
+      "concern": "Aortic stenosis / hypertrophic cardiomyopathy",
+      "consequence": "Vasodilatation with outflow obstruction.",
+      "action": "Give with caution. SPS: seek specialist advice before starting an ACE inhibitor in haemodynamically significant valve disease.",
+      "sourceWording": "should be given with caution",
+      "src": [
+        { "s": "emc-5502", "q": "lisinopril should be given with caution to patients with mitral valve stenosis and obstruction in the outflow of the left ventricle such as aortic stenosis or hypertrophic cardiomyopathy." },
+        { "s": "sps-acei-arb-monitoring", "q": "haemodynamically significant valve disease" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:mitral-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "mitral-stenosis",
+      "concern": "Mitral valve stenosis",
+      "consequence": "Vasodilatation with fixed valve obstruction.",
+      "action": "Give with caution. SPS: seek specialist advice before starting an ACE inhibitor in haemodynamically significant valve disease.",
+      "sourceWording": "should be given with caution",
+      "src": [
+        { "s": "emc-5502", "q": "lisinopril should be given with caution to patients with mitral valve stenosis" },
+        { "s": "sps-acei-arb-monitoring", "q": "haemodynamically significant valve disease" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Ischaemic heart disease",
+      "consequence": "An excessive fall in blood pressure could cause a myocardial infarction.",
+      "action": "Start and adjust dose under close medical supervision.",
+      "sourceWording": "should be monitored under close medical supervision",
+      "src": [
+        { "s": "emc-5502", "q": "In patients at increased risk of symptomatic hypotension, initiation of therapy and dose adjustment should be monitored under close medical supervision." },
+        { "s": "emc-5502", "q": "Particular consideration applies to patients with ischaemic heart or cerebrovascular disease, because an excessive fall in blood pressure could result in a myocardial infarction or cerebrovascular accident." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:cerebrovascular-disease",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "cerebrovascular-disease",
+      "concern": "Cerebrovascular disease",
+      "consequence": "An excessive fall in blood pressure could cause a cerebrovascular accident.",
+      "action": "Start and adjust dose under close medical supervision.",
+      "sourceWording": "should be monitored under close medical supervision",
+      "src": [
+        { "s": "emc-5502", "q": "In patients at increased risk of symptomatic hypotension, initiation of therapy and dose adjustment should be monitored under close medical supervision." },
+        { "s": "emc-5502", "q": "Particular consideration applies to patients with ischaemic heart or cerebrovascular disease, because an excessive fall in blood pressure could result in a myocardial infarction or cerebrovascular accident." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:dehydration",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "dehydration-hypovolaemia",
+      "concern": "Volume or salt depletion (diuretics, diarrhoea, vomiting, dialysis, salt restriction)",
+      "consequence": "Symptomatic hypotension more likely.",
+      "action": "Check electrolytes regularly; start and adjust dose under close supervision; stop prior diuretic 2-3 days before if possible. SPS: seek specialist advice before starting an ACE inhibitor in hypovolaemia.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "emc-5502", "q": "is more likely to occur if the patient has been volume-depleted, e.g. by diuretic therapy, dietary salt restriction, dialysis, diarrhoea or vomiting" },
+        { "s": "emc-5502", "q": "Regular determination of serum electrolytes should be performed at appropriate intervals in such patients." },
+        { "s": "emc-5502", "q": "In patients at increased risk of symptomatic hypotension, initiation of therapy and dose adjustment should be monitored under close medical supervision." },
+        { "s": "emc-5502", "q": "The diuretic therapy should be discontinued for 2-3 days prior to initiation of therapy with Zestoretic." },
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is:" },
+        { "s": "sps-acei-arb-monitoring", "q": "hypovolaemia hypotension (systolic blood pressure less than 90mmHg)" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:hypotension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "hypotension",
+      "concern": "Hypotension (systolic BP below 90 mmHg)",
+      "consequence": "Further fall in blood pressure.",
+      "action": "SPS: seek specialist advice before starting an ACE inhibitor.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "hypotension (systolic blood pressure less than 90mmHg)" },
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is:" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "severe-heart-failure",
+      "concern": "Severe or unstable heart failure",
+      "consequence": "Hypotension and further renal impairment (acute renal failure reported) after starting an ACE inhibitor.",
+      "action": "SPS: seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure" },
+        { "s": "emc-5502", "q": "In patients with heart failure, hypotension following the initiation of therapy with ACE inhibitors may lead to some further impairment in renal function." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:hyperkalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "hyperkalaemia",
+      "concern": "Raised potassium before starting",
+      "consequence": "ACE inhibitors raise serum potassium.",
+      "action": "SPS: starting not normally appropriate if potassium is above 5.0 mmol/L.",
+      "sourceWording": "Initiation not normally appropriate",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "Initiation not normally appropriate if pre-treatment potassium greater than 5.0mmol/L" },
+        { "s": "emc-5502", "q": "ACE inhibitors can cause hyperkalemia because they inhibit the release of aldosterone." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "hypokalaemia",
+      "concern": "Hypokalaemia",
+      "consequence": "Thiazides can cause hypokalaemia (usually offset by lisinopril).",
+      "action": "Check serum electrolytes periodically.",
+      "sourceWording": "periodic determination of serum electrolytes should be performed",
+      "src": [
+        { "s": "emc-5502", "q": "can cause fluid or electrolyte imbalance (hypokalaemia, hyponatraemia, and hypochloremic alkalosis)." },
+        { "s": "emc-5502", "q": "periodic determination of serum electrolytes should be performed at appropriate intervals." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "hyponatraemia",
+      "concern": "Hyponatraemia (sodium below 130 mmol/L)",
+      "consequence": "Thiazides can cause hyponatraemia; higher risk of symptomatic hypotension.",
+      "action": "SPS: seek specialist advice before starting an ACE inhibitor; check electrolytes periodically.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "hyponatraemia (sodium less than 130mmol/L)" },
+        { "s": "emc-5502", "q": "can cause fluid or electrolyte imbalance (hypokalaemia, hyponatraemia, and hypochloremic alkalosis)." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:hypomagnesaemia",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "hypomagnesaemia",
+      "concern": "Hypomagnesaemia",
+      "consequence": "Thiazides increase urinary magnesium loss.",
+      "action": "Check serum electrolytes periodically.",
+      "sourceWording": "periodic determination of serum electrolytes should be performed",
+      "src": [
+        { "s": "emc-5502", "q": "Thiazides have been shown to increase the urinary excretions of magnesium, which may result in hypomagnesaemia." },
+        { "s": "emc-5502", "q": "periodic determination of serum electrolytes should be performed at appropriate intervals." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:hypercalcaemia",
+      "kind": "condition",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "hypercalcaemia",
+      "concern": "Hypercalcaemia",
+      "consequence": "Thiazides reduce urinary calcium excretion and can raise serum calcium; marked hypercalcaemia may indicate hidden hyperparathyroidism.",
+      "action": "Stop thiazides before parathyroid function tests.",
+      "sourceWording": "may cause intermittent and slight elevation of serum calcium",
+      "src": [
+        { "s": "emc-5502", "q": "Thiazides may decrease urinary calcium excretion and may cause intermittent and slight elevation of serum calcium." },
+        { "s": "emc-5502", "q": "Marked hypercalcaemia may be evidence of hidden hyperparathyroidism. Thiazides should be discontinued before carrying out tests for parathyroid function." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:gout",
+      "kind": "condition",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "gout-hyperuricaemia",
+      "concern": "Gout / hyperuricaemia",
+      "consequence": "Thiazides may precipitate hyperuricaemia or gout (lisinopril may partly offset this).",
+      "action": "Be aware.",
+      "sourceWording": "may precipitate hyperuricaemia and/or gout",
+      "src": [
+        { "s": "emc-5502", "q": "Thiazide therapy may precipitate hyperuricaemia and/or gout in certain patients." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus",
+      "consequence": "Glucose tolerance may be impaired; antidiabetic doses may need adjustment; diabetes also raises hyperkalaemia risk.",
+      "action": "Monitor glycaemia closely during the first month; adjust antidiabetic dose if needed.",
+      "sourceWording": "glycaemia levels should be closely monitored during the first month",
+      "src": [
+        { "s": "emc-5502", "q": "ACE inhibitor and thiazide therapy may impair glucose tolerance. Dosage adjustment of antidiabetic agents, including insulin, may be required." },
+        { "s": "emc-5502", "q": "In diabetic patients treated with oral antidiabetic agents or insulin, glycaemia levels should be closely monitored during the first month of treatment with an ACE inhibitor." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:lupus",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "lupus",
+      "concern": "Collagen vascular disease / systemic lupus erythematosus",
+      "consequence": "Neutropenia/agranulocytosis and serious infection with lisinopril; thiazides can exacerbate or activate SLE.",
+      "action": "Use with extreme caution; monitor white cell counts periodically; report signs of infection.",
+      "sourceWording": "should be used with extreme caution",
+      "src": [
+        { "s": "emc-5502", "q": "Lisinopril should be used with extreme caution in patients with collagen vascular disease" },
+        { "s": "emc-5502", "q": "Exacerbation or activation of systemic lupus erythematosus has been reported with the use of thiazides." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:surgery-planned",
+      "kind": "condition",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "surgery-planned",
+      "concern": "Major surgery or anaesthesia",
+      "consequence": "Hypotension can occur with anaesthetic agents that lower blood pressure.",
+      "action": "If hypotension occurs from this mechanism, correct it with volume expansion.",
+      "sourceWording": "it can be corrected by volume expansion",
+      "src": [
+        { "s": "emc-5502", "q": "If hypotension occurs and is considered to be due to this mechanism, it can be corrected by volume expansion." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:condition:extracorporeal-blood-treatment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "condition": "extracorporeal-blood-treatment",
+      "concern": "High-flux dialysis membranes or LDL apheresis with dextran sulphate",
+      "consequence": "Anaphylactoid reactions reported in patients on ACE inhibitors (life-threatening with LDL apheresis on rare occasions). The combination is not indicated in patients requiring dialysis for renal failure.",
+      "action": "Consider a different dialysis membrane or a different class of antihypertensive; for LDL apheresis, reactions were avoided by withholding the ACE inhibitor before each apheresis.",
+      "sourceWording": "consideration should be given to using a different type of dialysis membrane or a different class of antihypertensive agent",
+      "src": [
+        { "s": "emc-5502", "q": "Anaphylactoid reactions have been reported in patients, undergoing certain haemodialysis procedures (e.g. with the high-flux membranes AN 69 and during low-density lipoproteins (LDL) apheresis with dextran sulphate) and treated concomitantly with an ACE inhibitor." },
+        { "s": "emc-5502", "q": "In these patients consideration should be given to using a different type of dialysis membrane or a different class of antihypertensive agent." },
+        { "s": "emc-5502", "q": "patients treated with ACE inhibitors during low-density lipoprotein (LDL) apheresis with dextran sulfate have shown life threatening anaphylactic reactions" },
+        { "s": "emc-5502", "q": "These symptoms could be avoided by temporary discontinuation of the treatment with ACE inhibitors before each apheresis." },
+        { "s": "emc-5502", "q": "The use of lisinopril/hydrochlorothiazide is not indicated in patients requiring dialysis for renal failure." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:potassium-sparing-diuretic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics (e.g. spironolactone, amiloride)",
+      "consequence": "Significant rise in serum potassium, especially with renal impairment or diabetes.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-5502", "q": "Use of potassium sparing diuretics (e.g. spironolactone, triamterene or amiloride)" },
+        { "s": "emc-5502", "q": "Therefore, the combination of Zestoretic with the above-mentioned drugs is not recommended." },
+        { "s": "emc-5502", "q": "they should be used with caution and with frequent monitoring of serum potassium" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:potassium-supplement",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:potassium-supplement",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium supplements or potassium salt substitutes",
+      "consequence": "Significant rise in serum potassium, especially with renal impairment or diabetes.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-5502", "q": "potassium supplements or potassium-containing salt substitutes, particularly in patients with impaired renal function or diabetes mellitus, may lead to a significant increase in serum potassium." },
+        { "s": "emc-5502", "q": "Therefore, the combination of Zestoretic with the above-mentioned drugs is not recommended." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:trimethoprim",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "trimethoprim",
+      "effect": "hyperkalaemia",
+      "concern": "Trimethoprim",
+      "consequence": "Trimethoprim acts like the potassium-sparing diuretic amiloride; risk of hyperkalaemia.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-5502", "q": "Care should also be taken when lisinopril is co-administered with other agents that increase serum potassium, such as trimethoprim and co-trimoxazole" },
+        { "s": "emc-5502", "q": "Concomitant administration of ACE inhibitors and thiazides with trimethoprim increases the risk of hyperkalaemia." },
+        { "s": "emc-5502", "q": "Therefore, the combination of Zestoretic with the above-mentioned drugs is not recommended." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:co-trimoxazole",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "co-trimoxazole",
+      "effect": "hyperkalaemia",
+      "concern": "Co-trimoxazole",
+      "consequence": "The trimethoprim component acts like amiloride; risk of hyperkalaemia.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-5502", "q": "Care should also be taken when lisinopril is co-administered with other agents that increase serum potassium, such as trimethoprim and co-trimoxazole" },
+        { "s": "emc-5502", "q": "Therefore, the combination of Zestoretic with the above-mentioned drugs is not recommended." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:arb",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:arb",
+      "effect": "hyperkalaemia",
+      "concern": "Angiotensin II receptor blockers (dual RAAS blockade)",
+      "consequence": "More hypotension, hyperkalaemia and reduced renal function (including acute renal failure).",
+      "action": "Not recommended; if absolutely necessary, only under specialist supervision with frequent monitoring of renal function, electrolytes and BP. Do not combine in diabetic nephropathy.",
+      "sourceWording": "is therefore not recommended",
+      "src": [
+        { "s": "emc-5502", "q": "Dual blockade of RAAS through the combined use of ACE-inhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended" },
+        { "s": "emc-5502", "q": "If dual blockade therapy is considered absolutely necessary, this should only occur under specialist supervision and subject to frequent close monitoring of renal function, electrolytes and blood pressure." },
+        { "s": "emc-5502", "q": "ACE-inhibitors and angiotensin II receptor blockers should not be used concomitantly in patients with diabetic nephropathy." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:nsaid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:nsaid",
+      "effect": "nephrotoxicity",
+      "concern": "NSAIDs (chronic use, including COX-2 inhibitors)",
+      "consequence": "Reduced antihypertensive and diuretic effect; additive rise in potassium and worsening renal function, rarely acute renal failure (especially elderly or dehydrated).",
+      "action": "Be aware of reduced effect and renal/potassium risk; no specific action stated in the SmPC.",
+      "sourceWording": "may result in a deterioration of renal function",
+      "src": [
+        { "s": "emc-5502", "q": "Chronic administration of NSAID (selective cyclooxygenase-2 inhibitors, acetylsalicylic acid >3 g/day and non-selective NSAIDs) may reduce the antihypertensive and diuretic effect of ACE inhibitors and thiazide diuretics." },
+        { "s": "emc-5502", "q": "NSAID and ACE inhibitors may exert an additive effect on the increase in serum potassium and may result in a deterioration of renal function." },
+        { "s": "emc-5502", "q": "Rarely, acute renal failure may occur, especially in patients with compromised renal function such as the elderly or dehydrated." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:aspirin-anti-inflammatory",
+      "kind": "interaction",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "aspirin",
+      "otherFormulations": ["aspirin-analgesic"],
+      "effect": "nephrotoxicity",
+      "concern": "Aspirin above 3 g/day (chronic, anti-inflammatory doses) only; not low-dose aspirin",
+      "consequence": "Reduced antihypertensive and diuretic effect; additive rise in potassium and worsening renal function, rarely acute renal failure (especially elderly or dehydrated).",
+      "action": "Be aware of reduced effect and renal/potassium risk; no specific action stated in the SmPC. Applies only to aspirin above 3 g/day, so it is limited to the analgesic-dose aspirin entry.",
+      "sourceWording": "may result in a deterioration of renal function",
+      "src": [
+        { "s": "emc-5502", "q": "Chronic administration of NSAID (selective cyclooxygenase-2 inhibitors, acetylsalicylic acid >3 g/day and non-selective NSAIDs) may reduce the antihypertensive and diuretic effect of ACE inhibitors and thiazide diuretics." },
+        { "s": "emc-5502", "q": "NSAID and ACE inhibitors may exert an additive effect on the increase in serum potassium and may result in a deterioration of renal function." },
+        { "s": "emc-5502", "q": "Rarely, acute renal failure may occur, especially in patients with compromised renal function such as the elderly or dehydrated." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:qt-prolonging",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Medicines that can cause torsades de pointes",
+      "consequence": "Hydrochlorothiazide-induced hypokalaemia increases the risk of torsades de pointes.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-5502", "q": "Because of the risk of hypokalaemia the concomitant administration of hydrochlorothiazide and medicinal products that induce torsades de pointes" },
+        { "s": "emc-5502", "q": "other drugs known to induce torsades de pointes, should be used with caution." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:corticosteroid",
+      "concern": "Corticosteroids or ACTH",
+      "consequence": "Hypokalaemia may develop.",
+      "action": "Check serum electrolytes periodically.",
+      "sourceWording": "Hypokalemia may develop",
+      "src": [
+        { "s": "emc-5502", "q": "Hypokalemia may develop during concomitant use of steroids or adrenocorticotropic hormone (ACTH)." },
+        { "s": "emc-5502", "q": "periodic determination of serum electrolytes should be performed at appropriate intervals." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:loop-diuretic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:loop-diuretic",
+      "effect": "hypotension",
+      "concern": "Loop diuretics (other kaliuretic diuretics)",
+      "consequence": "Greater potassium loss; excessive fall in blood pressure when starting on prior diuretic therapy.",
+      "action": "Check electrolytes periodically; stop the diuretic 2-3 days before starting if possible.",
+      "sourceWording": "could be expected to be potentiated",
+      "src": [
+        { "s": "emc-5502", "q": "The potassium depleting effect of hydrochlorothiazide could be expected to be potentiated by drugs associated with potassium loss and hypokalaemia (e.g. other kaliuretic diuretics, laxatives, amphotericin, carbenoxolone, salicylic acid derivatives)." },
+        { "s": "emc-5502", "q": "The diuretic therapy should be discontinued for 2-3 days prior to initiation with lisinopril/hydrochlorothiazide." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:diuretic",
+      "effect": "hypotension",
+      "concern": "Prior diuretic therapy",
+      "consequence": "Symptomatic hypotension after the first dose in volume- or salt-depleted patients.",
+      "action": "Stop the diuretic 2-3 days before starting; if not possible, start with lisinopril alone at 5 mg. SPS: seek specialist advice before starting an ACE inhibitor with multiple or high-dose diuretics (equivalent to furosemide 80 mg daily or more).",
+      "sourceWording": "should be discontinued for 2-3 days prior",
+      "src": [
+        { "s": "emc-5502", "q": "this is more likely in patients who are volume and/or salt depleted as a result of prior diuretic therapy." },
+        { "s": "emc-5502", "q": "The diuretic therapy should be discontinued for 2-3 days prior to initiation of therapy with Zestoretic. If this is not possible, treatment should be started with lisinopril alone, in a 5 mg dose." },
+        { "s": "sps-acei-arb-monitoring", "q": "concomitant multiple or high-dose diuretics (equivalent to 80mg furosemide daily or more)" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:senna",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "senna",
+      "concern": "Stimulant laxatives (senna)",
+      "consequence": "Greater potassium loss and hypokalaemia.",
+      "action": "Check serum electrolytes periodically.",
+      "sourceWording": "could be expected to be potentiated",
+      "src": [
+        { "s": "emc-5502", "q": "Amphotericin B (parenteral), carbenoxolone, corticosteroids, corticotropin (ACTH) or stimulant laxatives" },
+        { "s": "emc-5502", "q": "The potassium depleting effect of hydrochlorothiazide could be expected to be potentiated by drugs associated with potassium loss and hypokalaemia" },
+        { "s": "emc-5502", "q": "periodic determination of serum electrolytes should be performed at appropriate intervals." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:ispaghula-senna",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "ispaghula-senna",
+      "concern": "Stimulant laxatives (senna-containing)",
+      "consequence": "Greater potassium loss and hypokalaemia.",
+      "action": "Check serum electrolytes periodically.",
+      "sourceWording": "could be expected to be potentiated",
+      "src": [
+        { "s": "emc-5502", "q": "Amphotericin B (parenteral), carbenoxolone, corticosteroids, corticotropin (ACTH) or stimulant laxatives" },
+        { "s": "emc-5502", "q": "The potassium depleting effect of hydrochlorothiazide could be expected to be potentiated by drugs associated with potassium loss and hypokalaemia" },
+        { "s": "emc-5502", "q": "periodic determination of serum electrolytes should be performed at appropriate intervals." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:bisacodyl",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "bisacodyl",
+      "concern": "Stimulant laxatives (bisacodyl)",
+      "consequence": "Greater potassium loss and hypokalaemia.",
+      "action": "Check serum electrolytes periodically.",
+      "sourceWording": "could be expected to be potentiated",
+      "src": [
+        { "s": "emc-5502", "q": "Amphotericin B (parenteral), carbenoxolone, corticosteroids, corticotropin (ACTH) or stimulant laxatives" },
+        { "s": "emc-5502", "q": "The potassium depleting effect of hydrochlorothiazide could be expected to be potentiated by drugs associated with potassium loss and hypokalaemia" },
+        { "s": "emc-5502", "q": "periodic determination of serum electrolytes should be performed at appropriate intervals." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:antidiabetic",
+      "concern": "Antidiabetic medicines, including insulin",
+      "consequence": "Glucose tolerance may be impaired; requirements may rise, fall or stay the same, mostly in the first weeks and with renal impairment.",
+      "action": "Monitor glycaemia closely during the first month; antidiabetic dose adjustment may be required.",
+      "sourceWording": "should be closely monitored during the first month",
+      "src": [
+        { "s": "emc-5502", "q": "Other antidiabetic drugs including insulin requirements in diabetic patients may be increased, decreased, or unchanged." },
+        { "s": "emc-5502", "q": "Dosage adjustment of antidiabetic agents, including insulin, may be required." },
+        { "s": "emc-5502", "q": "glycaemia levels should be closely monitored during the first month of treatment with an ACE inhibitor." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:calcium-preparation",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:calcium-preparation",
+      "concern": "Calcium supplements",
+      "consequence": "Thiazides reduce calcium excretion; serum calcium may rise.",
+      "action": "Monitor serum calcium and adjust the dose.",
+      "sourceWording": "serum calcium levels should be monitored",
+      "src": [
+        { "s": "emc-5502", "q": "Thiazide diuretics may increase serum calcium levels due to decreased excretion." },
+        { "s": "emc-5502", "q": "If calcium supplements or Vitamin D must be prescribed, serum calcium levels should be monitored and the dose adjusted accordingly." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:colecalciferol",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "colecalciferol",
+      "concern": "Vitamin D",
+      "consequence": "Thiazides reduce calcium excretion; serum calcium may rise.",
+      "action": "Monitor serum calcium and adjust the dose.",
+      "sourceWording": "serum calcium levels should be monitored",
+      "src": [
+        { "s": "emc-5502", "q": "If calcium supplements or Vitamin D must be prescribed, serum calcium levels should be monitored and the dose adjusted accordingly." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:calcium-carbonate-colecalciferol",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "calcium-carbonate-colecalciferol",
+      "concern": "Calcium with vitamin D",
+      "consequence": "Thiazides reduce calcium excretion; serum calcium may rise.",
+      "action": "Monitor serum calcium and adjust the dose.",
+      "sourceWording": "serum calcium levels should be monitored",
+      "src": [
+        { "s": "emc-5502", "q": "If calcium supplements or Vitamin D must be prescribed, serum calcium levels should be monitored and the dose adjusted accordingly." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:allopurinol",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "allopurinol",
+      "effect": "bone-marrow-suppression",
+      "concern": "Allopurinol",
+      "consequence": "Higher risk of renal damage and leucopenia; neutropenia/agranulocytosis reported with ACE inhibitors.",
+      "action": "Use with extreme caution, especially with renal impairment; monitor white cell counts periodically.",
+      "sourceWording": "should be used with extreme caution",
+      "src": [
+        { "s": "emc-5502", "q": "Concomitant administration of ACE inhibitors and allopurinol increases the risk of renal damage and can lead to an increased risk of leucopoenia." },
+        { "s": "emc-5502", "q": "Lisinopril should be used with extreme caution in patients with collagen vascular disease, immunosuppressant therapy, treatment with allopurinol or procainamide" },
+        { "s": "emc-5502", "q": "periodic monitoring of white blood cell counts is advised" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate",
+      "consequence": "Thiazides may reduce methotrexate renal excretion and increase myelosuppression; neutropenia risk with ACE inhibitors in immunosuppressant therapy (methotrexate is classed as an immunosuppressive agent in its SmPC).",
+      "action": "Use with extreme caution; monitor white cell counts periodically.",
+      "sourceWording": "should be used with extreme caution",
+      "src": [
+        { "s": "emc-5502", "q": "Thiazides may reduce the renal excretion of cytotoxic medicinal products (e.g. cyclophosphamide, methotrexate) and potentiate their myelosuppressive effects" },
+        { "s": "emc-5502", "q": "Lisinopril should be used with extreme caution in patients with collagen vascular disease, immunosuppressant therapy, treatment with allopurinol or procainamide" },
+        { "s": "emc-5502", "q": "If lisinopril is used in such patients, periodic monitoring of white blood cell counts is advised" },
+        { "s": "emc-511", "q": "Pharmacotherapeutic group: Other immunosuppressive agents" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:racecadotril",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "racecadotril",
+      "concern": "Racecadotril",
+      "consequence": "Increased risk of angioedema.",
+      "action": "Use caution when starting racecadotril in a patient taking an ACE inhibitor.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        { "s": "emc-5502", "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:vildagliptin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "vildagliptin",
+      "concern": "Vildagliptin",
+      "consequence": "Increased risk of angioedema.",
+      "action": "Use caution when starting vildagliptin in a patient taking an ACE inhibitor.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        { "s": "emc-5502", "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:vildagliptin-metformin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "vildagliptin-metformin",
+      "concern": "Vildagliptin (with metformin)",
+      "consequence": "Increased risk of angioedema.",
+      "action": "Use caution when starting vildagliptin in a patient taking an ACE inhibitor.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        { "s": "emc-5502", "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hypotension",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "Further lowering of blood pressure.",
+      "action": "Be aware of additive effect.",
+      "sourceWording": "may result in further lowering of blood pressure",
+      "src": [
+        { "s": "emc-5502", "q": "Concomitant use of certain anaesthetic medicinal products, tricyclic antidepressants and antipsychotics with ACE inhibitors may result in further lowering of blood pressure" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:sympathomimetic",
+      "concern": "Sympathomimetics",
+      "consequence": "Reduced antihypertensive effect.",
+      "action": "Be aware; review blood pressure control.",
+      "sourceWording": "can reduce the antihypertensive effect",
+      "src": [
+        { "s": "emc-5502", "q": "Sympathomimetics can reduce the antihypertensive effect of ACE inhibitors." }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:nitrate",
+      "kind": "interaction",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:nitrate",
+      "effect": "hypotension",
+      "concern": "Nitrates and other vasodilators",
+      "consequence": "Further fall in blood pressure.",
+      "action": "Be aware of additive effect. SPS: seek specialist advice before starting an ACE inhibitor with a concomitant high-dose vasodilator.",
+      "sourceWording": "may further reduce the blood pressure",
+      "src": [
+        { "s": "emc-5502", "q": "Concomitant use of glyceryl trinitrate and other nitrates or other vasodilators may further reduce the blood pressure." },
+        { "s": "sps-acei-arb-monitoring", "q": "concomitant high-dose vasodilator" }
+      ]
+    },
+    {
+      "id": "lisinopril-hydrochlorothiazide:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "lisinopril-hydrochlorothiazide",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Other antihypertensives",
+      "consequence": "Additive fall in blood pressure.",
+      "action": "Be aware of additive effect.",
+      "sourceWording": "additive falls in blood pressure may occur",
+      "src": [
+        { "s": "emc-5502", "q": "When combined with other antihypertensive agents, additive falls in blood pressure may occur." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2739 @@
+{
+  "id": "aspirin",
+  "name": "Aspirin",
+  "ingredients": [
+    "aspirin"
+  ],
+  "className": "Antiplatelet (platelet aggregation inhibitor); salicylate",
+  "groups": [
+    "antiplatelet",
+    "salicylate"
+  ],
+  "searchTerms": [
+    "acetylsalicylic acid",
+    "ASA",
+    "low-dose aspirin"
+  ],
+  "availability": {
+    "status": "uk"
+  },
+  "formulations": [
+    {
+      "id": "aspirin-75-tab",
+      "label": "Tablets 75 mg (nearest UK strength to the clinic 100 mg tablet)",
+      "route": "oral",
+      "strengths": "75 mg",
+      "release": "immediate",
+      "note": "The clinic product is a 100 mg tablet. 100 mg is not a UK strength: the nearest UK low-dose products are 75 mg tablets, and the content here comes from UK 75 mg SmPCs. Both 75 mg SmPCs say the product is not suitable as an anti-inflammatory, analgesic or antipyretic.",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Each tablet contains 75 mg acetylsalicylic acid."
+        },
+        {
+          "s": "emc-102206",
+          "q": "Aspirin is not suitable for use as an anti-inflammatory, analgesic or antipyretic."
+        }
+      ],
+      "sourceIds": [
+        "emc-102206"
+      ]
+    },
+    {
+      "id": "aspirin-75-gr",
+      "label": "Gastro-resistant tablets 75 mg (nearest UK strength to the clinic 100 mg tablet)",
+      "route": "oral",
+      "strengths": "75 mg",
+      "release": "gastro-resistant",
+      "note": "The clinic product is a 100 mg tablet. 100 mg is not a UK strength: the nearest UK low-dose products are 75 mg tablets, and the content here comes from UK 75 mg SmPCs.",
+      "src": [
+        {
+          "s": "emc-2614",
+          "q": "Each tablet contains aspirin 75 mg."
+        },
+        {
+          "s": "emc-2614",
+          "q": "Gastro-resistant tablet."
+        }
+      ],
+      "sourceIds": [
+        "emc-2614"
+      ]
+    },
+    {
+      "id": "aspirin-analgesic",
+      "label": "Tablets 300 mg (analgesic dose; not a clinic product)",
+      "route": "oral",
+      "strengths": "300 mg",
+      "release": "immediate",
+      "note": "Not a clinic product. Added so that aspirin taken at analgesic doses (300-600 mg up to 4 times a day, for example bought over the counter) is checked separately from low-dose aspirin. Its UK SmPC lists stricter contraindications than the low-dose 75 mg SmPCs.",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Each tablet contains 300 mg of Aspirin"
+        },
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Adults and children over 16 years: one to two tablets. (300 - 600mg) This dose may be taken if necessary up to 4 times a day at intervals of not less than 4 hours."
+        }
+      ],
+      "sourceIds": [
+        "mhra-spc-aspirin-300-pl20395-0100"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Secondary prevention of myocardial infarction; stable angina; history of unstable angina (not in the acute phase); prevention of graft occlusion after CABG; coronary angioplasty (not in the acute phase); secondary prevention of TIA and ischaemic stroke once intracerebral haemorrhage is ruled out; acute myocardial infarction.",
+          "formulations": [
+            "aspirin-75-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Secondary prevention of myocardial infarction."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Prevention of graft occlusion after Coronary Artery Bypass Grafting (CABG)."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Secondary prevention of transient ischaemic attacks (TIA) and ischaemic cerebrovascular accidents (CVA), provided intracerebral haemorrhages have been ruled out."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Acute myocardial infarction."
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant 75 mg: secondary prevention of thrombotic cerebrovascular or cardiovascular disease and after bypass surgery.",
+          "formulations": [
+            "aspirin-75-gr"
+          ],
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "For the secondary prevention of thrombotic cerebrovascular or cardiovascular disease and following by-pass surgery."
+            }
+          ]
+        },
+        {
+          "t": "Low-dose (75 mg) products are not for use as an anti-inflammatory, analgesic or antipyretic.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Aspirin is not suitable for use as an anti-inflammatory, analgesic or antipyretic."
+            },
+            {
+              "s": "emc-2614",
+              "q": "is not suitable for use as an anti-inflammatory/ analgesic/ antipyretic."
+            }
+          ]
+        },
+        {
+          "t": "300 mg tablets (analgesic dose, not a clinic product): mild to moderate pain (headache, migraine, neuralgia, toothache, sore throat, period pain), musculoskeletal and rheumatic pain, fever and feverish colds.",
+          "formulations": [
+            "aspirin-analgesic"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "For the treatment of mild to moderate pain including headache, migraine, neuralgia, toothache, sore throat, period pains and aches and pains."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA: aspirin is not licensed for primary prevention of vascular events (licensed only for secondary prevention in people who already have vascular disease). If used for primary prevention, weigh benefits and risks for each person, including vascular risk factors and GI bleeding risk.",
+          "src": [
+            {
+              "s": "mhra-dsu-aspirin-primary-prevention-2009",
+              "q": "Aspirin is not licensed for the primary prevention of vascular events."
+            },
+            {
+              "s": "mhra-dsu-aspirin-primary-prevention-2009",
+              "q": "If aspirin is used in primary prevention, the balance of benefits and risks should be considered for each individual"
+            }
+          ]
+        },
+        {
+          "t": "The gastro-resistant 75 mg SmPC: a doctor's advice should be sought before starting therapy for the first time.",
+          "formulations": [
+            "aspirin-75-gr"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "The advice of a doctor should be sought before commencing therapy for the first time."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Secondary prevention of MI, stable angina, history of unstable angina, after CABG, coronary angioplasty: 75-160 mg once daily.",
+          "tag": "Cardiovascular secondary prevention",
+          "formulations": [
+            "aspirin-75-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Secondary prevention of myocardial infarction: The recommended dose is 75-160 mg once daily."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Coronary angioplasty, except during the acute phase: The recommended dose is 75-160 mg once daily."
+            }
+          ]
+        },
+        {
+          "t": "Secondary prevention of TIA and ischaemic stroke: 75-300 mg once daily.",
+          "tag": "TIA / ischaemic stroke",
+          "formulations": [
+            "aspirin-75-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "provided intracerebral haemorrhages have been ruled out: The recommended dose is 75-300 mg once daily."
+            }
+          ]
+        },
+        {
+          "t": "Acute myocardial infarction: loading dose 150-300 mg, then 75-160 mg daily. Do not use higher doses unless advised by a doctor; do not exceed 300 mg a day.",
+          "tag": "Acute MI",
+          "formulations": [
+            "aspirin-75-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Acute myocardial infarction: The recommended loading dose is 150-300 mg followed by a lower dose (75-160 mg) daily thereafter."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Aspirin should not be used at higher doses unless advised by a doctor, and the dose should not exceed 300 mg a day."
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant 75 mg: usually 75-150 mg once daily long term; up to 300 mg a day may be used on a doctor's advice, especially short term.",
+          "tag": "Cardiovascular / cerebrovascular disease",
+          "formulations": [
+            "aspirin-75-gr"
+          ],
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "The usual dosage, for long term use, is 75mg-150mg once daily."
+            },
+            {
+              "s": "emc-2614",
+              "q": "up to 300mg a day may be used on the advice of a doctor."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: use with caution (more prone to adverse events); usual adult dose if no severe renal or hepatic insufficiency; review treatment regularly.",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "acetylsalicylic acids should be used with caution in elderly patients who are more prone to adverse events."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Treatment should be reviewed at regular intervals."
+            }
+          ]
+        },
+        {
+          "t": "300 mg tablets (analgesic dose), adults and children over 16: 300-600 mg up to 4 times a day, at least 4 hours apart; maximum 3600 mg a day. Elderly: lower dose. See a doctor if symptoms last more than 3 days.",
+          "tag": "Analgesic dose (300 mg tablets)",
+          "formulations": [
+            "aspirin-analgesic"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Adults and children over 16 years: one to two tablets. (300 - 600mg) This dose may be taken if necessary up to 4 times a day at intervals of not less than 4 hours."
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Maximum daily dose 3600mg in divided doses."
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Elderly: A lower dose is recommended."
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "If symptoms persist for more than 3 days consult your doctor."
+            }
+          ]
+        },
+        {
+          "t": "Analgesic dose is outside the clinic product: one UK 300 mg gastro-resistant SmPC (not a clinic product) gives 300-900 mg three to four times daily for analgesic, antipyretic and anti-inflammatory use, and says that gastro-resistant product is unsuitable for short-term pain relief. The low-dose 75 mg SmPCs do not cover analgesic use.",
+          "tag": "Analgesic dose (300 mg SmPC only)",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8627",
+              "q": "The usual dose of aspirin is 300-900mg repeated three to four times daily according to clinical needs."
+            },
+            {
+              "s": "emc-8627",
+              "q": "is unsuitable for the short-term relief of pain."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Under 16 years: should not be given except on medical advice where the benefit outweighs the risk (Reye's syndrome). The gastro-resistant 75 mg product is not indicated under 16 years.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Acetylsalicylic acid should not be administered to children and adolescents younger than 16 years, except on medical advice where the benefit outweighs the risk"
+            },
+            {
+              "s": "emc-2614",
+              "q": "is not indicated for use in children and young people less than 16 years of age"
+            }
+          ],
+          "formulations": [
+            "aspirin-75-tab",
+            "aspirin-75-gr"
+          ]
+        },
+        {
+          "t": "Aspirin may contribute to Reye's syndrome in some children. A UK 300 mg SmPC: Reye's syndrome is very rare, affects brain and liver and can be fatal; do not give under 16 years unless specifically indicated (e.g. Kawasaki disease).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Acetylsalicylic acid may be a contributory factor in the causation of Reye's Syndrome in some children."
+            },
+            {
+              "s": "emc-8627",
+              "q": "Reye's syndrome is a very rare disease, which affects the brain and liver, and can be fatal."
+            },
+            {
+              "s": "emc-8627",
+              "q": "aspirin should not be given to children aged under 16 years unless specifically indicated (e.g. for Kawasaki's disease)."
+            }
+          ]
+        },
+        {
+          "t": "300 mg analgesic tablets: contraindicated under 16 years unless specifically indicated (e.g. Kawasaki's disease) (Reye's syndrome).",
+          "formulations": [
+            "aspirin-analgesic"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Children under 16 years and"
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Do not give to children under 16 years, unless specifically indicated (e.g. Kawasaki's disease)."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Previous hypersensitivity (asthma, rhinitis, angioedema, urticaria) to salicylates/aspirin or NSAIDs; history of asthma caused by salicylates or NSAIDs.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Patients who have previously shown hypersensitivity reactions (e.g. asthma, rhinitis, angioedema, or urticaria) in response to salicylates/aspirin or other substances with a similar mechanism of action, especially non-steroidal anti-inflammatory drugs (NSAIDs)"
+            },
+            {
+              "s": "emc-102206",
+              "q": "A history of asthma caused by salicylates or substances with a similar mechanism of action, especially NSAIDs"
+            },
+            {
+              "s": "emc-2614",
+              "q": "Hypersensitivity to salicylic acid compounds or prostaglandin synthetase inhibitors"
+            }
+          ]
+        },
+        {
+          "t": "Acute GI ulcers; history of GI bleeding or perforation caused by previous NSAIDs; active or history of recurrent peptic ulcer or haemorrhage, or other bleeding such as cerebrovascular haemorrhage.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Acute gastrointestinal ulcers;"
+            },
+            {
+              "s": "emc-102206",
+              "q": "A history of gastrointestinal bleeding or perforation (gastric or intestinal failure) caused by previous NSAID therapy;"
+            },
+            {
+              "s": "emc-102206",
+              "q": "or other kinds of bleeding such as cerebrovascular haemorrhages;"
+            },
+            {
+              "s": "emc-2614",
+              "q": "Active, or history of recurrent peptic ulcer and/or gastric/intestinal haemorrhage, or other kinds of bleeding such as cerebrovascular haemorrhages."
+            }
+          ]
+        },
+        {
+          "t": "Haemorrhagic diathesis; coagulation disorders such as haemophilia and thrombocytopenia.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Haemorrhagic diathesis; coagulation disorders such as haemophilia and thrombocytopenia;"
+            },
+            {
+              "s": "emc-2614",
+              "q": "Haemorrhagic diathesis; coagulation disorders such as haemophilia and thrombocytopenia."
+            }
+          ]
+        },
+        {
+          "t": "Severe hepatic impairment; severe renal impairment.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Severe hepatic impairment;"
+            },
+            {
+              "s": "emc-102206",
+              "q": "Severe renal impairment;"
+            },
+            {
+              "s": "emc-2614",
+              "q": "Severe hepatic impairment. Severe renal impairment."
+            }
+          ]
+        },
+        {
+          "t": "Third trimester of pregnancy at doses above 100 mg/day; methotrexate at doses above 15 mg/week.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Doses >100 mg/day during the third trimester of pregnancy"
+            },
+            {
+              "s": "emc-102206",
+              "q": "Methotrexate used at doses >15 mg/week"
+            },
+            {
+              "s": "emc-2614",
+              "q": "Methotrexate used at doses >15mg/week"
+            }
+          ]
+        },
+        {
+          "t": "Plain 75 mg tablet SmPC also lists severe cardiac insufficiency. Gastro-resistant 75 mg SmPC also lists gout.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Severe cardiac insufficiency;"
+            },
+            {
+              "s": "emc-2614",
+              "q": "Patients who are suffering from gout."
+            }
+          ]
+        },
+        {
+          "t": "300 mg analgesic tablets (section 4.3) also list: any peptic ulcer, current or past; concurrent anticoagulant therapy and clotting disorders; renal failure (GFR below 15 mL/min/1.73 m²); hepatic failure; gout or a history of gout; children under 16; breastfeeding.",
+          "formulations": [
+            "aspirin-analgesic"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Peptic ulceration and those with a history of peptic ulceration;"
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "A history of haemophilia, concurrent anti-coagulant therapy, hypothrombinaemia or other clotting disorders."
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Renal failure (GFR< 15mL/ min/ 1.73m2)"
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Hepatic failure"
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Gout or a history of gout"
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "When breast feeding because of possible risk of Reyes Syndrome."
+            }
+          ]
+        },
+        {
+          "t": "A UK 300 mg SmPC (higher-dose product, not the clinic strength) lists the whole third trimester and breastfeeding as contraindications.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8627",
+              "q": "Third trimester of pregnancy (see section 4.6). In women who are breastfeeding"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Bleeding: increased risk of haemorrhage during or after surgery, even minor procedures such as tooth extraction; use with caution before surgery and temporary stopping may be needed. Not recommended in menorrhagia.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Use with caution before surgery, including tooth extraction. Temporary discontinuation of treatment may be necessary."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Aspirin is not recommended during menorrhagia where it may increase menstrual bleeding."
+            }
+          ]
+        },
+        {
+          "t": "Use with caution in hypertension (plain tablet SmPC: uncontrolled hypertension), past gastric or duodenal ulcer or haemorrhage, and with anticoagulants. Withdraw if GI bleeding or ulceration occurs.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Aspirin is to be used with caution in cases of uncontrolled hypertension"
+            },
+            {
+              "s": "emc-102206",
+              "q": "If gastrointestinal bleeding or ulceration occurs the treatment should be withdrawn."
+            },
+            {
+              "s": "emc-2614",
+              "q": "is to be used with caution in cases of hypertension"
+            }
+          ]
+        },
+        {
+          "t": "Moderate renal or hepatic impairment or dehydration: use with caution (contraindicated if severe); LFTs regularly in mild or moderate hepatic insufficiency.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Acetylsalicylic acid should be used with caution in patients with moderately impaired renal or hepatic function (contraindicated if severe), or in patients who are dehydrated"
+            },
+            {
+              "s": "emc-102206",
+              "q": "Liver function tests should be performed regularly in patients presenting slight or moderate hepatic insufficiency."
+            }
+          ]
+        },
+        {
+          "t": "May cause bronchospasm or asthma attacks; risk factors are asthma, hay fever, nasal polyps and chronic respiratory disease. SPS: people with asthma may react even to 75 mg aspirin; with a history of NSAID-exacerbated respiratory disease, do not use oral NSAIDs.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Acetylsalicylic acid may promote bronchospasm and asthma attacks or other hypersensitivity reactions. Risk factors are existing asthma, hay fever, nasal polyps or chronic respiratory diseases."
+            },
+            {
+              "s": "sps-nsaids-asthma",
+              "q": "develop worsening of their asthma even with low oral doses of NSAIDs such as an aspirin dose of 75mg"
+            },
+            {
+              "s": "sps-nsaids-asthma",
+              "q": "History of NERD Do not use oral or topical NSAIDs."
+            }
+          ]
+        },
+        {
+          "t": "Low doses reduce uric acid excretion and may trigger gout in predisposed patients. G6PD deficiency: use with caution (plain tablet SmPC).",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Acetylsalicylic acid in low doses reduces uric acid excretion."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Aspirin should be used with caution in patients with Glucose-6-phosphate dehydrogenase deficiency."
+            }
+          ]
+        },
+        {
+          "t": "Elderly are especially prone to GI bleeding and perforation, which may be fatal; review regularly on prolonged therapy.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Elderly patients are particularly susceptible to the adverse effects of NSAIDs and acetylsalicylic acid especially gastrointestinal bleeding and perforation which may be fatal"
+            }
+          ]
+        },
+        {
+          "t": "Stop at the first sign of skin rash, mucosal lesions or other hypersensitivity (Stevens-Johnson syndrome reported rarely). Kounis syndrome (allergic acute coronary syndrome): stop immediately if confirmed.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "The treatment with Aspirin should be discontinued at the first appearance of skin rash, mucosal lesions, or any other sign of hypersensitivity."
+            },
+            {
+              "s": "emc-102206",
+              "q": "In the event of confirmed Kounis syndrome due to acetylsalicylic acid, Aspirin should be discontinued immediately."
+            }
+          ]
+        },
+        {
+          "t": "Contains lactose: patients with galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+            }
+          ],
+          "formulations": [
+            "aspirin-75-tab",
+            "aspirin-75-gr"
+          ]
+        },
+        {
+          "t": "A UK 300 mg SmPC also advises caution in inflammatory bowel disease; high doses may cause acute haemolytic anaemia in G6PD deficiency.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8627",
+              "q": "Salicylates should be used with caution in patients with inflammatory bowel disease or coagulation abnormalities"
+            },
+            {
+              "s": "emc-8627",
+              "q": "High doses of aspirin may precipitate acute haemolytic anaemia in patients with glucose 6-phosphate dehydrogenase (G6PD) deficiency."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Methotrexate above 15 mg/week: contraindicated (increased haematological toxicity, reduced methotrexate clearance). Below 15 mg/week: weekly blood counts in the first weeks; closer monitoring with even mild renal impairment and in the elderly.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "the concomitant use of methotrexate (at doses >15 mg/week) with Aspirin is contraindicated"
+            },
+            {
+              "s": "emc-102206",
+              "q": "Weekly blood count checks should be done during the first weeks of the combination."
+            }
+          ]
+        },
+        {
+          "t": "Drugs that alter haemostasis (anticoagulants such as warfarin, thrombolytics, antiplatelets such as clopidogrel, NSAIDs, SSRIs): not recommended unless strictly indicated; if unavoidable, watch closely for bleeding.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "is not recommended, unless strictly indicated, because they may enhance the risk of haemorrhage"
+            },
+            {
+              "s": "emc-102206",
+              "q": "If the combination cannot be avoided, close observation for signs of bleeding is recommended."
+            },
+            {
+              "s": "emc-2614",
+              "q": "anticoagulants such as warfarin, thrombolytic and antiplatelet agents, anti-inflammatory drugs and selective serotonin reuptake inhibitors"
+            }
+          ]
+        },
+        {
+          "t": "300 mg analgesic tablets: concurrent anticoagulant therapy is contraindicated; avoid other systemic NSAIDs including COX-2 inhibitors; methotrexate: monitor renal function.",
+          "formulations": [
+            "aspirin-analgesic"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "A history of haemophilia, concurrent anti-coagulant therapy, hypothrombinaemia or other clotting disorders."
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "The concomitant use of acetylsalicylic acid with other systemic NSAIDs, including cyclooxygenase-2 selective inhibitors, should be avoided"
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Methotrexate: Delayed excretion and increased toxicity of methotrexate. In case of concomitant use with acetylsalicylic acid, renal function should be monitored."
+            }
+          ]
+        },
+        {
+          "t": "Oral corticosteroids: increased risk of GI ulceration and bleeding; caution.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Caution should be advised in patients receiving concomitant medications which could increase the risk of ulceration, such as oral corticosteroids"
+            }
+          ]
+        },
+        {
+          "t": "Ibuprofen may block the antiplatelet effect of low-dose aspirin when taken together; no firm conclusion for regular ibuprofen, no clinically relevant effect likely with occasional use.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "ibuprofen may inhibit the effect of low dose acetylsalicylic acid on platelet aggregation when they are dosed concomitantly"
+            },
+            {
+              "s": "emc-102206",
+              "q": "no clinically relevant effect is considered to be likely for occasional ibuprofen use"
+            }
+          ]
+        },
+        {
+          "t": "Antidiabetics (sulfonylureas, insulin): hypoglycaemic effect may increase with large salicylate doses; consider lowering the antidiabetic dose and check blood glucose more often.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Salicylates may increase the hypoglycaemic effect of antidiabetics."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Increased blood glucose controls are recommended."
+            }
+          ]
+        },
+        {
+          "t": "Diuretics and antihypertensives: reduced antihypertensive effect, monitor blood pressure. ACE inhibitors, ARBs, calcium-channel blockers: risk of acute renal insufficiency with high-dose aspirin. Diuretics/loop diuretics: risk of acute renal failure; hydrate and monitor renal function at the start.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Blood pressure should be well monitored."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Concomitant administration with ACE-inhibitors, angiotensin II receptor antagonists and calcium-channel blocker increases the risk of acute renal insufficiency in combination with high-dose ASA"
+            },
+            {
+              "s": "emc-102206",
+              "q": "Hydrating the patient and monitoring renal function at the start of the treatment is recommended."
+            }
+          ]
+        },
+        {
+          "t": "Verapamil: monitor carefully for bleeding (plain tablet SmPC).",
+          "formulations": [
+            "aspirin-75-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Patients concomitantly treated with verapamil and acetylsalicylic acid should be carefully monitored for signs of bleeding."
+            }
+          ]
+        },
+        {
+          "t": "Antacids reduce the effect of aspirin; with gastro-resistant aspirin, do not take antacids at the same time (premature release).",
+          "formulations": [
+            "aspirin-75-gr"
+          ],
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "Antacids will reduce the effect of aspirin."
+            },
+            {
+              "s": "emc-8627",
+              "q": "Patients using gastro-resistant aspirin should be advised against ingesting antacids simultaneously to avoid premature drug release."
+            }
+          ]
+        },
+        {
+          "t": "Others (not in this tool's list): uricosurics (probenecid, sulfinpyrazone) avoid; digoxin and lithium levels rise, monitor; acetazolamide (severe acidosis); ciclosporin/tacrolimus (monitor renal function); valproate and phenytoin (protein binding); metamizole (reduces antiplatelet effect, caution); alcohol (GI bleeding).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Salicylates reverse the effect of probenecid and sulfinpyrazone. The combination should be avoided."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Monitoring of plasma concentrations of digoxin and lithium is recommended when initiating and terminating treatment with acetylsalicylic acid."
+            },
+            {
+              "s": "emc-102206",
+              "q": "this combination should be used with caution in patients taking low dose aspirin for cardioprotection"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Severe renal impairment: contraindicated (no numeric threshold given).",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Severe renal impairment;"
+            },
+            {
+              "s": "emc-2614",
+              "q": "Severe renal impairment."
+            }
+          ]
+        },
+        {
+          "t": "Moderate renal impairment or dehydration: use with caution; NSAIDs may worsen renal function.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "since the use of NSAIDs may result in deterioration of renal function"
+            }
+          ]
+        },
+        {
+          "t": "300 mg analgesic tablets: contraindicated in renal failure (GFR below 15 mL/min/1.73 m²); caution in renal impairment, avoid if severe.",
+          "formulations": [
+            "aspirin-analgesic"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Renal failure (GFR< 15mL/ min/ 1.73m2)"
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Caution should be exercised in patients with uncontrolled hypertension (in whom target blood pressure has not been achieved), impairment of hepatic or renal function (avoid if severe), dehydration or diabetes mellitus."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Severe hepatic impairment: contraindicated. Moderate: use with caution. Mild or moderate: liver function tests regularly.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Severe hepatic impairment;"
+            },
+            {
+              "s": "emc-102206",
+              "q": "Liver function tests should be performed regularly in patients presenting slight or moderate hepatic insufficiency."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Third trimester: doses above 100 mg/day contraindicated (ductus arteriosus closure, fetal renal dysfunction, prolonged bleeding, delayed labour). Gastro-resistant 75 mg SmPC: up to and including 100 mg/day only under strict obstetric monitoring. The plain 75 mg SmPC is inconsistent: 4.3 says doses above 100 mg/day, 4.6 says 100 mg/day and higher.",
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "acetylsalicylic acid at doses higher than 100 mg/day is contraindicated during the third trimester of pregnancy"
+            },
+            {
+              "s": "emc-2614",
+              "q": "Doses up to and including 100 mg/day may only be used under strict obstetric monitoring."
+            },
+            {
+              "s": "emc-102206",
+              "q": "acetylsalicylic acid at doses of 100 mg/day and higher is contraindicated during the third trimester of pregnancy"
+            }
+          ],
+          "formulations": [
+            "aspirin-75-tab",
+            "aspirin-75-gr"
+          ]
+        },
+        {
+          "t": "Up to 100 mg/day for restricted obstetric use with specialised monitoring appears safe. Above 100 mg/day: in the first and second trimesters do not give unless clearly necessary; lowest dose, shortest time. From week 20, consider antenatal monitoring for oligohydramnios and ductus arteriosus constriction after several days' use.",
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "doses up to 100 mg/day for restricted obstetrical use, which require specialised monitoring, appear safe"
+            },
+            {
+              "s": "emc-2614",
+              "q": "during the first and second trimester of pregnancy, acetylsalicylic acid should not be given unless clearly necessary"
+            },
+            {
+              "s": "emc-2614",
+              "q": "Antenatal monitoring for oligohydramnios and ductus arteriosus constriction should be considered after exposure to acetylsalicylic acid for several days from gestational week 20 onward."
+            }
+          ],
+          "formulations": [
+            "aspirin-75-tab",
+            "aspirin-75-gr"
+          ]
+        },
+        {
+          "t": "BUMPS: low-dose aspirin (75 to 150 mg a day) can be used in pregnancy if recommended by a midwife, GP or specialist; no concern that it harms the baby.",
+          "src": [
+            {
+              "s": "bumps-aspirin",
+              "q": "Low dose aspirin can be used in pregnancy if recommended by your midwife, GP, or specialist."
+            },
+            {
+              "s": "bumps-aspirin",
+              "q": "There is no concern that taking low dose aspirin in pregnancy can harm your baby."
+            }
+          ],
+          "formulations": [
+            "aspirin-75-tab",
+            "aspirin-75-gr"
+          ]
+        },
+        {
+          "t": "300 mg analgesic tablets: contraindicated in the third trimester; avoid in the first two trimesters unless the benefit to the mother outweighs the risk to the fetus.",
+          "formulations": [
+            "aspirin-analgesic"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Acetylsalicylic acid is contraindicated during the third trimester of pregnancy"
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Acetylsalicylic acid should be avoided in the first two trimesters of pregnancy unless the potential benefit to the mother outweighs the risk to the fetus in the view of the treating physician."
+            }
+          ]
+        },
+        {
+          "t": "A UK 300 mg SmPC (higher-dose product) lists the third trimester as a contraindication without a dose limit.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8627",
+              "q": "Third trimester of pregnancy (see section 4.6)."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPCs (75 mg): small amounts pass into milk; short-term use at the recommended dose does not require stopping breastfeeding; with long-term use and/or higher doses, breastfeeding should be discontinued. The gastro-resistant SmPC also says to avoid generally during breastfeeding.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "short-term use of the recommended dose does not require suspending lactation"
+            },
+            {
+              "s": "emc-102206",
+              "q": "In cases of long-term use and/or administration of higher doses, breastfeeding should be discontinued."
+            },
+            {
+              "s": "emc-2614",
+              "q": "Aspirin should be avoided in late pregnancy and generally during breast feeding"
+            }
+          ],
+          "formulations": [
+            "aspirin-75-tab",
+            "aspirin-75-gr"
+          ]
+        },
+        {
+          "t": "SPS (less restrictive): low-dose aspirin (75 mg to 150 mg daily) passes into milk in negligible amounts and can be used with caution; avoid if the infant has a viral infection or fever (Reye's syndrome); monitor the infant for poor feeding, irritability, skin reactions, bruising or bleeding.",
+          "src": [
+            {
+              "s": "sps-antiplatelet-breastfeeding",
+              "q": "It can be used with caution during breastfeeding but monitoring is required.. Avoid if the infant has symptoms of a viral infection or fever."
+            },
+            {
+              "s": "sps-antiplatelet-breastfeeding",
+              "q": "As a precaution, monitor the infant for poor feeding, irritability or skin reactions, and for signs of bruising or bleeding, which may be prolonged."
+            }
+          ],
+          "formulations": [
+            "aspirin-75-tab",
+            "aspirin-75-gr"
+          ]
+        },
+        {
+          "t": "300 mg analgesic tablets: contraindicated when breastfeeding (Reye's syndrome and neonatal bleeding risk).",
+          "formulations": [
+            "aspirin-analgesic"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "When breast feeding because of possible risk of Reyes Syndrome."
+            },
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Not recommended while breast feeding due to possible risk of Reye's Syndrome as well as neonatal bleeding due to hypoprothrombinaemia."
+            }
+          ]
+        },
+        {
+          "t": "A UK 300 mg SmPC (higher-dose product) says it should not be taken when breastfeeding (risk of Reye's syndrome in the infant).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8627",
+              "q": "should not be taken by patients who are breast-feeding, as there is a risk of Reye's syndrome in the infant"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "At 500 mg/day or more, COX inhibitors may affect female fertility via ovulation; reversible on stopping. If used when attempting to conceive (doses above 100 mg/day), keep the dose low and the duration short.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "drugs that inhibit cyclooxygenase/prostaglandin synthesis may affect female fertility via an effect on ovulation. This effect is reversible after discontinuation of treatment."
+            },
+            {
+              "s": "emc-102206",
+              "q": "If acetylsalicylic acid is used by a woman attempting to conceive, or during the first and second trimester of pregnancy, the dose should be kept as low and duration of treatment as short as possible."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: increased bleeding tendency, dyspepsia. Uncommon: rhinitis, dyspnoea, urticaria.",
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "Common : Increased bleeding tendencies."
+            },
+            {
+              "s": "emc-2614",
+              "q": "Common : Dyspepsia."
+            },
+            {
+              "s": "emc-2614",
+              "q": "Uncommon : Rhinitis, dyspnoea."
+            },
+            {
+              "s": "emc-2614",
+              "q": "Uncommon : Urticaria."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "GI bleeding, ulceration or perforation (severe GI haemorrhage rare): withdraw treatment. Occult GI bleeding can cause iron-deficiency anaemia.",
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "Rare : Severe gastrointestinal haemorrhage"
+            },
+            {
+              "s": "emc-102206",
+              "q": "If gastrointestinal bleeding or ulceration occurs the treatment should be withdrawn."
+            },
+            {
+              "s": "emc-102206",
+              "q": "which may lead to iron deficiency anaemia"
+            }
+          ]
+        },
+        {
+          "t": "Intracranial haemorrhage (rare). Bleeding with prolonged bleeding time may persist 4-8 days after stopping.",
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "Rare : Intracranial haemorrhage."
+            },
+            {
+              "s": "emc-2614",
+              "q": "Symptoms may persist for a period of 4-8 days after acetylsalicylic acid discontinuation."
+            }
+          ]
+        },
+        {
+          "t": "Hypersensitivity: anaphylaxis including shock, angioedema (rare); bronchospasm and asthma attacks (rare); Stevens-Johnson syndrome and Lyell syndrome (rare): stop at the first sign.",
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "Rare : Hypersensitivity reactions, angio-oedema, allergic oedema, anaphylactic reactions including shock."
+            },
+            {
+              "s": "emc-2614",
+              "q": "Rare : Bronchospasm, asthma attacks."
+            },
+            {
+              "s": "emc-2614",
+              "q": "Rare : Steven-Johnsons syndrome, Lyells syndrome"
+            }
+          ]
+        },
+        {
+          "t": "Kounis syndrome (acute myocardial ischaemia as part of an allergic reaction): stop immediately if confirmed.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "In the event of confirmed Kounis syndrome due to acetylsalicylic acid, Aspirin should be discontinued immediately."
+            }
+          ]
+        },
+        {
+          "t": "Others: thrombocytopenia, agranulocytosis, aplastic anaemia (rare); impaired renal function, acute renal failure; hepatic insufficiency; Reye's syndrome; tinnitus and reduced hearing.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Thrombocytopenia, agranulocytosis, aplastic anaemia"
+            },
+            {
+              "s": "emc-102206",
+              "q": "Impaired renal function, acute renal failure"
+            },
+            {
+              "s": "emc-102206",
+              "q": "Reduced hearing ability; tinnitus"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Review treatment at regular intervals; review elderly patients on prolonged therapy regularly.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Treatment should be reviewed at regular intervals."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Where prolonged therapy is required, these patients should be reviewed regularly."
+            }
+          ]
+        },
+        {
+          "t": "Liver function tests regularly in mild or moderate hepatic insufficiency.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Liver function tests should be performed regularly in patients presenting slight or moderate hepatic insufficiency."
+            }
+          ]
+        },
+        {
+          "t": "With methotrexate (below 15 mg/week): weekly blood counts in the first weeks. With diuretics: renal function at the start. With anticoagulants/antithrombotics: monitor for bleeding.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Weekly blood count checks should be done during the first weeks of the combination."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Hydrating the patient and monitoring renal function at the start of the treatment is recommended."
+            },
+            {
+              "s": "emc-102206",
+              "q": "should be carefully monitored for signs of bleeding"
+            }
+          ]
+        },
+        {
+          "t": "Stop if GI bleeding or ulceration, at the first sign of skin rash, mucosal lesions or other hypersensitivity, or confirmed Kounis syndrome.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "If gastrointestinal bleeding or ulceration occurs the treatment should be withdrawn."
+            },
+            {
+              "s": "emc-102206",
+              "q": "The treatment with Aspirin should be discontinued at the first appearance of skin rash, mucosal lesions, or any other sign of hypersensitivity."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Plain tablets: swallow with sufficient fluid (half a glass of water). Long-term treatment at the lowest possible dose.",
+          "formulations": [
+            "aspirin-75-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "The tablets should be swallowed with sufficient fluid (1/2 glass of water)."
+            },
+            {
+              "s": "emc-102206",
+              "q": "Long-term treatment with the lowest possible dose."
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant tablets: take with water; swallow whole, do not cut, chew or crush. Adults only.",
+          "formulations": [
+            "aspirin-75-gr"
+          ],
+          "src": [
+            {
+              "s": "emc-2614",
+              "q": "Take the tablet with water, do not cut, chew or crush the tablet. Swallow whole."
+            }
+          ]
+        },
+        {
+          "t": "300 mg analgesic tablets: take with food to help avoid stomach problems.",
+          "formulations": [
+            "aspirin-analgesic"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-aspirin-300-pl20395-0100",
+              "q": "Aspirin should be taken with food to help avoid gastrointestinal problems."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report any unusual bleeding.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Patients should report any unusual bleeding symptoms to their physician."
+            }
+          ]
+        },
+        {
+          "t": "Tell the dentist or surgeon before procedures, including tooth extraction; aspirin may need to be stopped temporarily.",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "Use with caution before surgery, including tooth extraction. Temporary discontinuation of treatment may be necessary."
+            }
+          ]
+        },
+        {
+          "t": "Do not give to children or young people under 16 unless a doctor advises (Reye's syndrome).",
+          "src": [
+            {
+              "s": "emc-102206",
+              "q": "This medicinal product is not recommended for use in adolescents/children under 16 years unless the expected benefits outweigh the risks."
+            }
+          ]
+        },
+        {
+          "t": "Breastfeeding mothers: if the baby has a fever or a viral infection, ask about pausing aspirin (SPS).",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-antiplatelet-breastfeeding",
+              "q": "if the infant has symptoms of a viral infection or fever, consider temporarily discontinuing the aspirin if clinically justified, or temporarily withholding breast milk"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "aspirin:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "allergen": [
+        "aspirin",
+        "group:salicylate"
+      ],
+      "concern": "Aspirin or salicylate hypersensitivity",
+      "consequence": "Hypersensitivity reaction (asthma, rhinitis, angioedema, urticaria).",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "in response to salicylates/aspirin"
+        },
+        {
+          "s": "emc-2614",
+          "q": "Hypersensitivity to salicylic acid compounds"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:allergy:nsaid",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "allergen": [
+        "group:nsaid"
+      ],
+      "concern": "Previous hypersensitivity (asthma, rhinitis, angioedema, urticaria) to NSAIDs",
+      "consequence": "Cross-reactive hypersensitivity, including bronchospasm.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "or other substances with a similar mechanism of action, especially non-steroidal anti-inflammatory drugs (NSAIDs)"
+        },
+        {
+          "s": "emc-2614",
+          "q": "or prostaglandin synthetase inhibitors (e.g. certain asthma patients who may suffer an attack or faint"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:nsaid-asthma",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "condition": "nsaid-hypersensitivity-asthma",
+      "concern": "Asthma or other hypersensitivity caused by salicylates or NSAIDs",
+      "consequence": "Severe bronchospasm or hypersensitivity.",
+      "action": "Do not use (SPS: do not use oral NSAIDs with a history of NERD).",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "A history of asthma caused by salicylates or substances with a similar mechanism of action, especially NSAIDs"
+        },
+        {
+          "s": "sps-nsaids-asthma",
+          "q": "History of NERD Do not use oral or topical NSAIDs."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:asthma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "condition": "asthma",
+      "concern": "Asthma, hay fever, nasal polyps or chronic respiratory disease",
+      "consequence": "Aspirin may promote bronchospasm and asthma attacks; some people react even to 75 mg.",
+      "action": "Use with caution and monitor for worsening asthma (SPS).",
+      "sourceWording": "Use oral or topical NSAIDs with caution",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Risk factors are existing asthma, hay fever, nasal polyps or chronic respiratory diseases."
+        },
+        {
+          "s": "sps-nsaids-asthma",
+          "q": "Use oral or topical NSAIDs with caution and monitor for symptoms such as exacerbation of asthma."
+        },
+        {
+          "s": "sps-nsaids-asthma",
+          "q": "such as an aspirin dose of 75mg"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:gi-ulcer-bleed",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "condition": "peptic-ulcer-gi-bleeding",
+      "effect": "bleeding",
+      "concern": "Acute GI ulcer, NSAID-related GI bleeding/perforation history, or active/recurrent peptic ulcer or haemorrhage",
+      "consequence": "GI bleeding, ulceration or perforation.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Acute gastrointestinal ulcers;"
+        },
+        {
+          "s": "emc-102206",
+          "q": "A history of gastrointestinal bleeding or perforation (gastric or intestinal failure) caused by previous NSAID therapy;"
+        },
+        {
+          "s": "emc-2614",
+          "q": "Active, or history of recurrent peptic ulcer and/or gastric/intestinal haemorrhage"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:active-bleeding",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "condition": "active-bleeding",
+      "effect": "bleeding",
+      "concern": "Active bleeding (including cerebrovascular haemorrhage)",
+      "consequence": "Aspirin inhibits platelet function and prolongs bleeding.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-2614",
+          "q": "or other kinds of bleeding such as cerebrovascular haemorrhages."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:haemorrhagic-stroke",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "condition": "haemorrhagic-stroke",
+      "effect": "bleeding",
+      "concern": "Cerebrovascular haemorrhage",
+      "consequence": "Further bleeding.",
+      "action": "Do not use (TIA/stroke use requires intracerebral haemorrhage to be ruled out).",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "or other kinds of bleeding such as cerebrovascular haemorrhages;"
+        },
+        {
+          "s": "emc-102206",
+          "q": "provided intracerebral haemorrhages have been ruled out"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:bleeding-disorder",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "condition": "bleeding-disorder",
+      "effect": "bleeding",
+      "concern": "Haemorrhagic diathesis or coagulation disorder (e.g. haemophilia, thrombocytopenia)",
+      "consequence": "Increased bleeding risk.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Haemorrhagic diathesis; coagulation disorders such as haemophilia and thrombocytopenia;"
+        },
+        {
+          "s": "emc-2614",
+          "q": "Haemorrhagic diathesis; coagulation disorders such as haemophilia and thrombocytopenia."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:severe-renal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "condition": "severe-renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "Severe renal impairment",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Severe renal impairment;"
+        },
+        {
+          "s": "emc-2614",
+          "q": "Severe renal impairment."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:renal",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "condition": "renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "Moderate renal impairment",
+      "consequence": "Renal function may deteriorate.",
+      "action": "Use with caution (contraindicated if severe).",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Acetylsalicylic acid should be used with caution in patients with moderately impaired renal or hepatic function (contraindicated if severe)"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:dehydration",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "condition": "dehydration-hypovolaemia",
+      "effect": "nephrotoxicity",
+      "concern": "Dehydration",
+      "consequence": "NSAID use may worsen renal function.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "or in patients who are dehydrated since the use of NSAIDs may result in deterioration of renal function"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe hepatic impairment (300 mg analgesic SmPC: hepatic failure)",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Severe hepatic impairment;"
+        },
+        {
+          "s": "emc-2614",
+          "q": "Severe hepatic impairment."
+        },
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Hepatic failure"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:hepatic:moderate",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "aspirin",
+      "hepatic": [
+        "moderate"
+      ],
+      "concern": "Moderate hepatic impairment",
+      "consequence": "Hepatic adverse effects; contraindicated if severe.",
+      "action": "Use with caution; liver function tests regularly.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Acetylsalicylic acid should be used with caution in patients with moderately impaired renal or hepatic function"
+        },
+        {
+          "s": "emc-102206",
+          "q": "Liver function tests should be performed regularly in patients presenting slight or moderate hepatic insufficiency."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:severe-hf",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "condition": "severe-heart-failure",
+      "formulations": [
+        "aspirin-75-tab"
+      ],
+      "concern": "Severe cardiac insufficiency (plain 75 mg tablet SmPC)",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Severe cardiac insufficiency;"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:gout-gr",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "condition": "gout-hyperuricaemia",
+      "formulations": [
+        "aspirin-75-gr",
+        "aspirin-analgesic"
+      ],
+      "concern": "Gout (gastro-resistant 75 mg SmPC; 300 mg analgesic SmPC: gout or a history of gout)",
+      "consequence": "Low-dose aspirin reduces uric acid excretion.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications list",
+      "src": [
+        {
+          "s": "emc-2614",
+          "q": "Patients who are suffering from gout."
+        },
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Gout or a history of gout"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:gout-tab",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "condition": "gout-hyperuricaemia",
+      "formulations": [
+        "aspirin-75-tab"
+      ],
+      "concern": "Reduced uric acid excretion / gout (plain 75 mg tablet SmPC)",
+      "consequence": "Low-dose aspirin reduces uric acid excretion and may trigger gout attacks.",
+      "action": "Be aware of the risk of gout attacks (no action stated; gastro-resistant SmPC contraindicates gout).",
+      "sourceWording": "patients who tend to have reduced uric acid excretion may experience gout attacks",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Acetylsalicylic acid in low doses reduces uric acid excretion. Due to this fact, patients who tend to have reduced uric acid excretion may experience gout attacks"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:hypertension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "condition": "hypertension",
+      "concern": "Hypertension (plain tablet SmPC: uncontrolled hypertension)",
+      "consequence": "Bleeding risk (SmPC caution).",
+      "action": "Use with caution.",
+      "sourceWording": "is to be used with caution",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Aspirin is to be used with caution in cases of uncontrolled hypertension"
+        },
+        {
+          "s": "emc-2614",
+          "q": "is to be used with caution in cases of hypertension"
+        },
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Caution should be exercised in patients with uncontrolled hypertension (in whom target blood pressure has not been achieved), impairment of hepatic or renal function (avoid if severe), dehydration or diabetes mellitus."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:surgery",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "condition": "surgery-planned",
+      "effect": "bleeding",
+      "concern": "Planned surgery or dental extraction",
+      "consequence": "Increased haemorrhage risk and prolonged bleeding time, even with minor procedures.",
+      "action": "Use with caution; temporary discontinuation may be necessary.",
+      "sourceWording": "Use with caution before surgery",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Use with caution before surgery, including tooth extraction. Temporary discontinuation of treatment may be necessary."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:menorrhagia",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "aspirin",
+      "condition": "menorrhagia",
+      "effect": "bleeding",
+      "concern": "Menorrhagia (heavy menstrual bleeding)",
+      "consequence": "May increase menstrual bleeding.",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended during menorrhagia",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Aspirin is not recommended during menorrhagia where it may increase menstrual bleeding."
+        },
+        {
+          "s": "emc-2614",
+          "q": "Aspirin is not recommended during menorrhagia"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:g6pd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "condition": "g6pd-deficiency",
+      "formulations": [
+        "aspirin-75-tab"
+      ],
+      "concern": "G6PD deficiency",
+      "consequence": "Risk of haemolysis (a UK 300 mg SmPC: high doses may cause acute haemolytic anaemia).",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Aspirin should be used with caution in patients with Glucose-6-phosphate dehydrogenase deficiency."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:lactose",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "aspirin",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, total lactase deficiency or glucose-galactose malabsorption (75 mg tablets contain lactose)",
+      "consequence": "Lactose excipient.",
+      "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+        },
+        {
+          "s": "emc-2614",
+          "q": "glucose-galactose malabsorption should not take this medicine."
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:condition:conceive",
+      "kind": "condition",
+      "level": "dose",
+      "med": "aspirin",
+      "condition": "attempting-to-conceive",
+      "concern": "Woman attempting to conceive (SmPC wording applies to doses above 100 mg/day)",
+      "consequence": "COX inhibitors may affect female fertility (at 500 mg/day or more; reversible).",
+      "action": "Keep the dose as low and the duration as short as possible.",
+      "sourceWording": "the dose should be kept as low and duration of treatment as short as possible",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "If acetylsalicylic acid is used by a woman attempting to conceive, or during the first and second trimester of pregnancy, the dose should be kept as low and duration of treatment as short as possible."
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:age:under-16",
+      "kind": "age",
+      "level": "avoid",
+      "med": "aspirin",
+      "age": {
+        "minYears": 0,
+        "maxYears": 16
+      },
+      "concern": "Child or adolescent under 16 years (75 mg products; Reye's syndrome)",
+      "consequence": "Aspirin may contribute to Reye's syndrome in some children.",
+      "action": "Do not give under 16 except on medical advice where benefit outweighs risk; the gastro-resistant 75 mg product is not indicated under 16.",
+      "sourceWording": "should not be administered to children and adolescents younger than 16 years",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Acetylsalicylic acid should not be administered to children and adolescents younger than 16 years, except on medical advice where the benefit outweighs the risk"
+        },
+        {
+          "s": "emc-102206",
+          "q": "Acetylsalicylic acid may be a contributory factor in the causation of Reye's Syndrome in some children."
+        },
+        {
+          "s": "emc-2614",
+          "q": "is not indicated for use in children and young people less than 16 years of age"
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:pregnancy:t3-high-dose",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "trimesters": [
+        3
+      ],
+      "concern": "Third trimester at doses above 100 mg/day (plain 75 mg SmPC 4.6: 100 mg/day and higher)",
+      "consequence": "Premature closure of ductus arteriosus, pulmonary hypertension, fetal renal dysfunction, prolonged bleeding, delayed labour.",
+      "action": "Do not use above 100 mg/day. Doses up to and including 100 mg/day only under strict obstetric monitoring (gastro-resistant SmPC).",
+      "sourceWording": "is contraindicated during the third trimester of pregnancy",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Doses >100 mg/day during the third trimester of pregnancy"
+        },
+        {
+          "s": "emc-102206",
+          "q": "acetylsalicylic acid at doses of 100 mg/day and higher is contraindicated during the third trimester of pregnancy"
+        },
+        {
+          "s": "emc-2614",
+          "q": "acetylsalicylic acid at doses higher than 100 mg/day is contraindicated during the third trimester of pregnancy"
+        },
+        {
+          "s": "emc-2614",
+          "q": "Doses up to and including 100 mg/day may only be used under strict obstetric monitoring."
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:pregnancy:t1-t2-high-dose",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "aspirin",
+      "trimesters": [
+        1,
+        2
+      ],
+      "concern": "First and second trimesters at doses above 100 mg/day",
+      "consequence": "Miscarriage and malformation signal with prostaglandin synthesis inhibitors in early pregnancy; oligohydramnios and ductus arteriosus constriction from week 20.",
+      "action": "Above 100 mg/day: do not give unless clearly necessary; lowest dose, shortest time; consider antenatal monitoring from week 20. Up to 100 mg/day for restricted obstetric use with specialised monitoring appears safe.",
+      "sourceWording": "should not be given unless clearly necessary",
+      "src": [
+        {
+          "s": "emc-2614",
+          "q": "During the first and second trimester of pregnancy, acetylsalicylic acid should not be given unless clearly necessary."
+        },
+        {
+          "s": "emc-2614",
+          "q": "Doses of above 100 mg/day and up to 500 mg/day"
+        },
+        {
+          "s": "emc-2614",
+          "q": "doses up to 100 mg/day for restricted obstetrical use, which require specialised monitoring, appear safe"
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:pregnancy:bumps-low-dose",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "aspirin",
+      "concern": "Low-dose aspirin in pregnancy (BUMPS)",
+      "consequence": "BUMPS: no concern that low-dose aspirin (75 to 150 mg a day) harms the baby.",
+      "action": "Can be used if recommended by a midwife, GP or specialist.",
+      "sourceWording": "Low dose aspirin can be used in pregnancy if recommended",
+      "src": [
+        {
+          "s": "bumps-aspirin",
+          "q": "Low dose aspirin can be used in pregnancy if recommended by your midwife, GP, or specialist."
+        },
+        {
+          "s": "bumps-aspirin",
+          "q": "There is no concern that taking low dose aspirin in pregnancy can harm your baby."
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "aspirin",
+      "concern": "Breastfeeding (SmPC): long-term use and/or higher doses",
+      "consequence": "Salicylates pass into breast milk in low quantities.",
+      "action": "Short-term use at the recommended dose does not require stopping breastfeeding; with long-term use or higher doses, breastfeeding should be discontinued (SPS is less restrictive).",
+      "sourceWording": "breastfeeding should be discontinued",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "In cases of long-term use and/or administration of higher doses, breastfeeding should be discontinued."
+        },
+        {
+          "s": "emc-2614",
+          "q": "Aspirin should be avoided in late pregnancy and generally during breast feeding"
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "aspirin",
+      "concern": "Breastfeeding (SPS, low dose 75 mg to 150 mg daily)",
+      "consequence": "Negligible amounts in milk; possible prolonged antiplatelet effect in the infant; Reye's syndrome concern if the infant has a fever.",
+      "action": "Use with caution; avoid if the infant has a viral infection or fever; monitor the infant for poor feeding, irritability, skin reactions, bruising or bleeding.",
+      "sourceWording": "Use with caution",
+      "src": [
+        {
+          "s": "sps-antiplatelet-breastfeeding",
+          "q": "Low dose aspirin (75mg to 150mg daily) passes into breast milk in negligible amounts."
+        },
+        {
+          "s": "sps-antiplatelet-breastfeeding",
+          "q": "It can be used with caution during breastfeeding but monitoring is required.. Avoid if the infant has symptoms of a viral infection or fever."
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:interaction:methotrexate-high",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate at doses above 15 mg/week",
+      "consequence": "Increased haematological toxicity of methotrexate (reduced renal clearance).",
+      "action": "Do not use together.",
+      "sourceWording": "is contraindicated",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "the concomitant use of methotrexate (at doses >15 mg/week) with Aspirin is contraindicated"
+        },
+        {
+          "s": "emc-2614",
+          "q": "Methotrexate used at doses >15mg/week"
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:interaction:methotrexate-low",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "aspirin",
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate at doses below 15 mg/week",
+      "consequence": "May increase haematological toxicity of methotrexate.",
+      "action": "Weekly blood counts during the first weeks; closer monitoring with even mild renal impairment and in the elderly.",
+      "sourceWording": "Weekly blood count checks should be done",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Weekly blood count checks should be done during the first weeks of the combination."
+        },
+        {
+          "s": "emc-102206",
+          "q": "Enhanced monitoring should take place in the presence of even mildly impaired renal function, as well, as in elderly."
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:interaction:anticoagulant",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "aspirin",
+      "other": "group:anticoagulant",
+      "effect": "bleeding",
+      "concern": "Anticoagulants (low-dose aspirin)",
+      "consequence": "Increased bleeding risk (platelet inhibition, duodenal mucosal injury, displacement of oral anticoagulants from protein binding).",
+      "action": "Not recommended unless strictly indicated; if unavoidable, monitor closely for bleeding.",
+      "sourceWording": "is not recommended, unless strictly indicated",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "is not recommended, unless strictly indicated, because they may enhance the risk of haemorrhage"
+        },
+        {
+          "s": "emc-102206",
+          "q": "If the combination cannot be avoided, close observation for signs of bleeding is recommended."
+        },
+        {
+          "s": "emc-102206",
+          "q": "Increased risk of bleeding due to inhibited thrombocyte function, injury of the duodenal mucosa and displacement of oral anticoagulants from their plasma protein binding sites."
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:interaction:warfarin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "aspirin",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (low-dose aspirin)",
+      "consequence": "Increased bleeding risk.",
+      "action": "Not recommended unless strictly indicated; if unavoidable, monitor closely for bleeding (gastro-resistant SmPC: monitor bleeding time).",
+      "sourceWording": "is not recommended, unless strictly indicated",
+      "src": [
+        {
+          "s": "emc-2614",
+          "q": "anticoagulants such as warfarin"
+        },
+        {
+          "s": "emc-2614",
+          "q": "Anticoagulants e.g. coumarin, heparin, warfarin and phenindione"
+        },
+        {
+          "s": "emc-2614",
+          "q": "The bleeding time should be monitored"
+        },
+        {
+          "s": "emc-102206",
+          "q": "is not recommended, unless strictly indicated, because they may enhance the risk of haemorrhage"
+        },
+        {
+          "s": "emc-102206",
+          "q": "If the combination cannot be avoided, close observation for signs of bleeding is recommended."
+        }
+      ],
+      "formulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ]
+    },
+    {
+      "id": "aspirin:interaction:antiplatelet",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "aspirin",
+      "other": "group:antiplatelet",
+      "effect": "bleeding",
+      "concern": "Other antiplatelet agents",
+      "consequence": "Increased risk of haemorrhage, including GI bleeding.",
+      "action": "Not recommended unless strictly indicated; if unavoidable, monitor closely for bleeding.",
+      "sourceWording": "is not recommended, unless strictly indicated",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "is not recommended, unless strictly indicated, because they may enhance the risk of haemorrhage"
+        },
+        {
+          "s": "emc-102206",
+          "q": "If the combination cannot be avoided, close observation for signs of bleeding is recommended."
+        },
+        {
+          "s": "emc-102206",
+          "q": "Anti-platelet agents (e.g clopidogrel,ticlopidine, cilostazol and dipyridamole)"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:clopidogrel",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "aspirin",
+      "other": "clopidogrel",
+      "effect": "bleeding",
+      "concern": "Clopidogrel",
+      "consequence": "Increased risk of haemorrhage, including GI bleeding.",
+      "action": "Not recommended unless strictly indicated; if unavoidable, monitor closely for bleeding.",
+      "sourceWording": "is not recommended, unless strictly indicated",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "is not recommended, unless strictly indicated, because they may enhance the risk of haemorrhage"
+        },
+        {
+          "s": "emc-102206",
+          "q": "If the combination cannot be avoided, close observation for signs of bleeding is recommended."
+        },
+        {
+          "s": "emc-2614",
+          "q": "Anti-platelet agents (e.g. clopidogrel and dipyridamole)"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:ssri",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "aspirin",
+      "other": "group:ssri",
+      "effect": "bleeding",
+      "concern": "SSRIs",
+      "consequence": "Increased risk of haemorrhage and GI bleeding.",
+      "action": "Not recommended unless strictly indicated; if unavoidable, monitor closely for bleeding.",
+      "sourceWording": "is not recommended, unless strictly indicated",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "is not recommended, unless strictly indicated, because they may enhance the risk of haemorrhage"
+        },
+        {
+          "s": "emc-102206",
+          "q": "If the combination cannot be avoided, close observation for signs of bleeding is recommended."
+        },
+        {
+          "s": "emc-102206",
+          "q": "selective serotonin reuptake inhibitors (SSRIs; such as sertraline or paroxetine) Increased risk of gastrointestinal bleeding"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:sertraline",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "aspirin",
+      "other": "sertraline",
+      "effect": "bleeding",
+      "concern": "SSRIs",
+      "consequence": "Increased risk of haemorrhage and GI bleeding.",
+      "action": "Not recommended unless strictly indicated; if unavoidable, monitor closely for bleeding.",
+      "sourceWording": "is not recommended, unless strictly indicated",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "is not recommended, unless strictly indicated, because they may enhance the risk of haemorrhage"
+        },
+        {
+          "s": "emc-102206",
+          "q": "If the combination cannot be avoided, close observation for signs of bleeding is recommended."
+        },
+        {
+          "s": "emc-102206",
+          "q": "selective serotonin reuptake inhibitors (SSRIs; such as sertraline or paroxetine) Increased risk of gastrointestinal bleeding"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:nsaid",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "aspirin",
+      "other": "group:nsaid",
+      "effect": "bleeding",
+      "concern": "NSAIDs (anti-inflammatory drugs)",
+      "consequence": "Increased risk of haemorrhage, ulceration and GI bleeding (synergistic effects).",
+      "action": "Not recommended unless strictly indicated; if unavoidable, monitor closely for bleeding.",
+      "sourceWording": "is not recommended, unless strictly indicated",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "is not recommended, unless strictly indicated, because they may enhance the risk of haemorrhage"
+        },
+        {
+          "s": "emc-102206",
+          "q": "If the combination cannot be avoided, close observation for signs of bleeding is recommended."
+        },
+        {
+          "s": "emc-102206",
+          "q": "NSAIDs Increased risk of ulcerations and gastrointestinal bleeding due to synergistic effects."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:ibuprofen",
+      "kind": "interaction",
+      "level": "info",
+      "med": "aspirin",
+      "other": "ibuprofen",
+      "concern": "Ibuprofen and low-dose aspirin antiplatelet effect",
+      "consequence": "Ibuprofen may inhibit the antiplatelet effect of low-dose aspirin when dosed together; no firm conclusion for regular ibuprofen; not likely clinically relevant with occasional use.",
+      "action": "No specific action stated in the aspirin SmPCs.",
+      "sourceWording": "no firm conclusions can be made for regular ibuprofen use",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "ibuprofen may inhibit the effect of low dose acetylsalicylic acid on platelet aggregation when they are dosed concomitantly"
+        },
+        {
+          "s": "emc-102206",
+          "q": "no firm conclusions can be made for regular ibuprofen use, and no clinically relevant effect is considered to be likely for occasional ibuprofen use"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:prednisolone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "aspirin",
+      "other": "prednisolone",
+      "effect": "bleeding",
+      "concern": "Systemic (oral) corticosteroids (prednisolone)",
+      "consequence": "Increased risk of GI ulceration and bleeding.",
+      "action": "Caution.",
+      "sourceWording": "Caution should be advised",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Caution should be advised in patients receiving concomitant medications which could increase the risk of ulceration, such as oral corticosteroids"
+        },
+        {
+          "s": "emc-102206",
+          "q": "The risk of gastrointestinal ulceration and bleeding may be increased when acetylsalicylic acid and corticosteroids are co-administered"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:dexamethasone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "aspirin",
+      "other": "dexamethasone",
+      "effect": "bleeding",
+      "concern": "Systemic (oral) corticosteroids (dexamethasone)",
+      "consequence": "Increased risk of GI ulceration and bleeding.",
+      "action": "Caution.",
+      "sourceWording": "Caution should be advised",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Caution should be advised in patients receiving concomitant medications which could increase the risk of ulceration, such as oral corticosteroids"
+        },
+        {
+          "s": "emc-102206",
+          "q": "The risk of gastrointestinal ulceration and bleeding may be increased when acetylsalicylic acid and corticosteroids are co-administered"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "aspirin",
+      "other": "group:antidiabetic",
+      "effect": "hypoglycaemia",
+      "concern": "Antidiabetics (e.g. sulfonylureas, insulin)",
+      "consequence": "Salicylates may increase the hypoglycaemic effect, mainly with large salicylate doses or overdose.",
+      "action": "Monitor blood glucose more closely; a lower antidiabetic dose may be appropriate if large salicylate doses are used.",
+      "sourceWording": "Increased blood glucose controls are recommended",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Salicylates may increase the hypoglycaemic effect of antidiabetics."
+        },
+        {
+          "s": "emc-102206",
+          "q": "some downward re-adjustment of the dosage of the antidiabetic may be appropriate if large doses of salicylates are used"
+        },
+        {
+          "s": "emc-102206",
+          "q": "Increased blood glucose controls are recommended."
+        },
+        {
+          "s": "emc-2614",
+          "q": "Salicylics may increase the hypoglycaemic effect of sulphonylureas."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "aspirin",
+      "other": "group:antihypertensive",
+      "concern": "Diuretics and other antihypertensives",
+      "consequence": "NSAIDs may reduce the antihypertensive effect.",
+      "action": "Monitor blood pressure.",
+      "sourceWording": "Blood pressure should be well monitored",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "NSAIDs may decrease the antihypertensive effects of diuretics and other antihypertensive agents. Blood pressure should be well monitored."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:diuretic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "aspirin",
+      "other": "group:diuretic",
+      "effect": "nephrotoxicity",
+      "concern": "Diuretics (plain tablet SmPC: loop diuretics)",
+      "consequence": "Risk of acute renal failure (reduced renal prostaglandin synthesis).",
+      "action": "Hydrate the patient and monitor renal function at the start.",
+      "sourceWording": "monitoring renal function at the start of the treatment is recommended",
+      "src": [
+        {
+          "s": "emc-2614",
+          "q": "Diuretics: Risk of acute renal failure due to the decreased glomerular filtration via decreased renal prostaglandin synthesis."
+        },
+        {
+          "s": "emc-2614",
+          "q": "Hydrating the patient and monitoring renal function at the start of the treatment is recommended."
+        },
+        {
+          "s": "emc-102206",
+          "q": "Loop diuretics Risk of acute renal failure"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "info",
+      "med": "aspirin",
+      "other": "group:ace-inhibitor",
+      "effect": "nephrotoxicity",
+      "formulations": [
+        "aspirin-75-gr"
+      ],
+      "concern": "ACE inhibitors (gastro-resistant 75 mg SmPC)",
+      "consequence": "Increased risk of acute renal insufficiency (stated as for other NSAIDs).",
+      "action": "No specific action stated beyond blood pressure monitoring.",
+      "sourceWording": "increases the risk of acute renal insufficiency",
+      "src": [
+        {
+          "s": "emc-2614",
+          "q": "As for other NSAIDs concomitant administration with ACE-inhibitors increases the risk of acute renal insufficiency."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:ace-inhibitor-high-dose",
+      "kind": "interaction",
+      "level": "info",
+      "med": "aspirin",
+      "other": "group:ace-inhibitor",
+      "effect": "nephrotoxicity",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "concern": "ACE inhibitors (with high-dose aspirin)",
+      "consequence": "Increased risk of acute renal insufficiency with high-dose aspirin. The 75 mg tablet SmPC limits this to high-dose aspirin, so it is shown only for the analgesic-dose (300 mg) entry.",
+      "action": "No specific action stated beyond blood pressure monitoring.",
+      "sourceWording": "increases the risk of acute renal insufficiency in combination with high-dose ASA",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Concomitant administration with ACE-inhibitors, angiotensin II receptor antagonists and calcium-channel blocker increases the risk of acute renal insufficiency in combination with high-dose ASA"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:arb",
+      "kind": "interaction",
+      "level": "info",
+      "med": "aspirin",
+      "other": "group:arb",
+      "effect": "nephrotoxicity",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "concern": "Angiotensin II receptor blockers (with high-dose aspirin)",
+      "consequence": "Increased risk of acute renal insufficiency with high-dose aspirin. The 75 mg tablet SmPC limits this to high-dose aspirin, so it is shown only for the analgesic-dose (300 mg) entry.",
+      "action": "No specific action stated beyond blood pressure monitoring.",
+      "sourceWording": "increases the risk of acute renal insufficiency in combination with high-dose ASA",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Concomitant administration with ACE-inhibitors, angiotensin II receptor antagonists and calcium-channel blocker increases the risk of acute renal insufficiency in combination with high-dose ASA"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:ccb",
+      "kind": "interaction",
+      "level": "info",
+      "med": "aspirin",
+      "other": "group:calcium-channel-blocker",
+      "effect": "nephrotoxicity",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "concern": "Calcium-channel blockers (with high-dose aspirin)",
+      "consequence": "Increased risk of acute renal insufficiency with high-dose aspirin. The 75 mg tablet SmPC limits this to high-dose aspirin, so it is shown only for the analgesic-dose (300 mg) entry.",
+      "action": "No specific action stated beyond blood pressure monitoring.",
+      "sourceWording": "increases the risk of acute renal insufficiency in combination with high-dose ASA",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Concomitant administration with ACE-inhibitors, angiotensin II receptor antagonists and calcium-channel blocker increases the risk of acute renal insufficiency in combination with high-dose ASA"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:verapamil",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "aspirin",
+      "other": "verapamil",
+      "effect": "bleeding",
+      "formulations": [
+        "aspirin-75-tab"
+      ],
+      "concern": "Verapamil",
+      "consequence": "Bleeding risk.",
+      "action": "Monitor carefully for signs of bleeding.",
+      "sourceWording": "should be carefully monitored for signs of bleeding",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Patients concomitantly treated with verapamil and acetylsalicylic acid should be carefully monitored for signs of bleeding."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:antacid-gr",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "aspirin",
+      "other": "group:antacid",
+      "effect": "reduced-absorption",
+      "formulations": [
+        "aspirin-75-gr"
+      ],
+      "concern": "Antacids with gastro-resistant aspirin",
+      "consequence": "Antacids reduce the effect of aspirin and may cause premature release from gastro-resistant tablets.",
+      "action": "Do not take antacids at the same time.",
+      "sourceWording": "should be advised against ingesting antacids simultaneously",
+      "src": [
+        {
+          "s": "emc-2614",
+          "q": "Antacids will reduce the effect of aspirin."
+        },
+        {
+          "s": "emc-8627",
+          "q": "Patients using gastro-resistant aspirin should be advised against ingesting antacids simultaneously to avoid premature drug release."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:hepatic:mild",
+      "kind": "hepatic",
+      "level": "monitor",
+      "med": "aspirin",
+      "hepatic": [
+        "mild"
+      ],
+      "concern": "Mild hepatic impairment",
+      "consequence": "Hepatic adverse effects.",
+      "action": "Liver function tests regularly.",
+      "sourceWording": "Liver function tests should be performed regularly",
+      "src": [
+        {
+          "s": "emc-102206",
+          "q": "Liver function tests should be performed regularly in patients presenting slight or moderate hepatic insufficiency."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:peptic-ulcer-analgesic",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "condition": "peptic-ulcer-gi-bleeding",
+      "effect": "bleeding",
+      "concern": "Peptic ulcer, current or past (300 mg analgesic SmPC)",
+      "consequence": "GI ulceration and bleeding.",
+      "action": "Do not use analgesic-dose aspirin.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Peptic ulceration and those with a history of peptic ulceration;"
+        },
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "History of upper gastrointestinal bleeding or perforation, related to previous NSAID therapy."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:anticoagulant-analgesic",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "other": "group:anticoagulant",
+      "effect": "bleeding",
+      "concern": "Anticoagulants with analgesic-dose aspirin (300 mg SmPC)",
+      "consequence": "Increased risk of bleeding due to the antiplatelet effect.",
+      "action": "Do not use (listed in section 4.3 of the 300 mg analgesic SmPC).",
+      "sourceWording": "4.3 Contraindications: concurrent anti-coagulant therapy",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "A history of haemophilia, concurrent anti-coagulant therapy, hypothrombinaemia or other clotting disorders."
+        },
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Anticoagulants: Increased risk of bleeding due to antiplatelet effect."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:renal:gfr-under-15-analgesic",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "renal": {
+        "measure": "GFR",
+        "max": 15
+      },
+      "effect": "nephrotoxicity",
+      "concern": "Renal failure, GFR below 15 mL/min/1.73 m² (300 mg analgesic SmPC)",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use analgesic-dose aspirin.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Renal failure (GFR< 15mL/ min/ 1.73m2)"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:renal-analgesic",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "condition": "renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "Renal impairment (300 mg analgesic SmPC)",
+      "consequence": "Sodium and water retention may worsen renal impairment.",
+      "action": "Caution; avoid if severe.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Caution should be exercised in patients with uncontrolled hypertension (in whom target blood pressure has not been achieved), impairment of hepatic or renal function (avoid if severe), dehydration or diabetes mellitus."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:diabetes-analgesic",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus (300 mg analgesic SmPC)",
+      "consequence": "Listed as a precaution.",
+      "action": "Caution.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Caution should be exercised in patients with uncontrolled hypertension (in whom target blood pressure has not been achieved), impairment of hepatic or renal function (avoid if severe), dehydration or diabetes mellitus."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:g6pd-analgesic",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "condition": "g6pd-deficiency",
+      "concern": "G6PD deficiency (doses above 1 g a day)",
+      "consequence": "Doses above 1 g a day may precipitate acute haemolytic anaemia.",
+      "action": "Be aware of the haemolysis risk at doses above 1 g a day (no specific action stated).",
+      "sourceWording": "may precipitate acute haemolytic anaemia",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Doses more than 1 g acetylsalicylic acid daily may precipitate acute haemolytic anaemia in patients with G6PDH deficiency."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:condition:conceive-analgesic",
+      "kind": "condition",
+      "level": "caution",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "condition": "attempting-to-conceive",
+      "concern": "Woman planning a pregnancy (300 mg analgesic SmPC)",
+      "consequence": "COX inhibitors may impair female fertility (reversible).",
+      "action": "Caution.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Caution should be exercised when used by women who are planning on becoming pregnant."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:age:under-16-analgesic",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 16
+      },
+      "concern": "Child under 16 years (300 mg analgesic SmPC; Reye's syndrome)",
+      "consequence": "Possible association with Reye's syndrome, especially during or after a viral illness.",
+      "action": "Do not give, unless specifically indicated (e.g. Kawasaki's disease).",
+      "sourceWording": "4.3 Contraindications: Children under 16 years",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Children under 16 years and"
+        },
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Do not give to children under 16 years, unless specifically indicated (e.g. Kawasaki's disease)."
+        },
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "There is a possible association between aspirin and Reye's syndrome when given to children, especially during or immediately after a viral illness."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:pregnancy:t3-analgesic",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "trimesters": [
+        3
+      ],
+      "concern": "Third trimester (300 mg analgesic SmPC, any dose)",
+      "consequence": "Premature closure of the ductus arteriosus, fetal renal impairment, delayed labour and bleeding.",
+      "action": "Do not use.",
+      "sourceWording": "is contraindicated during the third trimester of pregnancy",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Acetylsalicylic acid is contraindicated during the third trimester of pregnancy"
+        }
+      ]
+    },
+    {
+      "id": "aspirin:pregnancy:t1-t2-analgesic",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "trimesters": [
+        1,
+        2
+      ],
+      "concern": "First and second trimesters (300 mg analgesic SmPC)",
+      "consequence": "Prostaglandin synthesis inhibition may harm the pregnancy.",
+      "action": "Avoid unless the benefit to the mother outweighs the risk to the fetus; lowest dose, shortest time.",
+      "sourceWording": "should be avoided in the first two trimesters",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Acetylsalicylic acid should be avoided in the first two trimesters of pregnancy unless the potential benefit to the mother outweighs the risk to the fetus in the view of the treating physician."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:breastfeeding:analgesic",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "concern": "Breastfeeding (300 mg analgesic SmPC)",
+      "consequence": "Possible Reye's syndrome and neonatal bleeding in the infant.",
+      "action": "Do not use while breastfeeding.",
+      "sourceWording": "4.3 Contraindications: When breast feeding",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "When breast feeding because of possible risk of Reyes Syndrome."
+        },
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Not recommended while breast feeding due to possible risk of Reye's Syndrome as well as neonatal bleeding due to hypoprothrombinaemia."
+        }
+      ]
+    },
+    {
+      "id": "aspirin:interaction:methotrexate-analgesic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "aspirin",
+      "formulations": [
+        "aspirin-analgesic"
+      ],
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate (300 mg analgesic SmPC)",
+      "consequence": "Delayed excretion and increased toxicity of methotrexate.",
+      "action": "Monitor renal function.",
+      "sourceWording": "renal function should be monitored",
+      "src": [
+        {
+          "s": "mhra-spc-aspirin-300-pl20395-0100",
+          "q": "Methotrexate: Delayed excretion and increased toxicity of methotrexate. In case of concomitant use with acetylsalicylic acid, renal function should be monitored."
+        }
+      ]
+    }
+  ]
+}

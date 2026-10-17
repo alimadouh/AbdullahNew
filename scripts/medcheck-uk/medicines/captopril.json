@@ -1,0 +1,2240 @@
+{
+  "id": "captopril",
+  "name": "Captopril",
+  "ingredients": [
+    "captopril"
+  ],
+  "className": "Angiotensin-converting enzyme (ACE) inhibitor",
+  "groups": [
+    "ace-inhibitor",
+    "antihypertensive"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "captopril-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "25 mg, 50 mg",
+      "release": "immediate",
+      "note": "Contains lactose.",
+      "src": [
+        {
+          "s": "mhra-captopril-25-spc",
+          "q": "Each tablet contains 25 mg captopril"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Each tablet contains 50 mg captopril"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Each tablet contains 100 mg lactose (as lactose monohydrate)"
+        }
+      ],
+      "sourceIds": [
+        "mhra-captopril-25-spc",
+        "mhra-captopril-50-spc"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Mild to moderate hypertension (in severe hypertension only where standard therapy is ineffective or inappropriate); congestive heart failure (with diuretics and, when appropriate, digitalis and beta-blockers); myocardial infarction (short-term treatment within 24 hours, and long-term prevention of symptomatic heart failure in stable patients with left ventricular dysfunction, ejection fraction < 40%); macroproteinuric diabetic nephropathy in insulin-dependent (type 1) diabetes.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Hypertension: The management of mild to moderate hypertension. In severe hypertension it should be used where standard therapy is ineffective or inappropriate."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Captopril is indicated for the treatment of congestive heart failure."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Captopril is indicated in any clinically stable patient within the first 24 hours of an infarction."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Captopril is indicated in insulin dependent diabetics for the treatment of macroproteinuric diabetic nephropathy"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The drug should be used together with diuretics and, when appropriate, digitalis and beta-blockers."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Captopril is indicated in clinically stable patients with asymptomatic and symptomatic left ventricular dysfunction (ejection fraction < 40%)"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Heart failure: use under specialist supervision if the dose is over 100 mg daily (with or without a diuretic), in severe renal impairment, or in severe congestive heart failure.",
+          "tag": "Specialist supervision",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "In patients on doses of over 100 mg daily plus or minus a diuretic, in those with severe renal impairment or those with severe congestive heart failure use of captopril should be under specialist supervision."
+            }
+          ]
+        },
+        {
+          "t": "Dual RAAS blockade (ACE inhibitor with an angiotensin II receptor blocker or aliskiren) only if absolutely necessary, under specialist supervision with frequent close monitoring.",
+          "tag": "Dual RAAS blockade",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "If dual blockade therapy is considered absolutely necessary, this should only occur under specialist supervision and subject to frequent close monitoring of renal function, electrolytes and blood pressure."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Start 25-50 mg daily in two divided doses; increase at intervals of at least 2 weeks to 100-150 mg/day in two divided doses as needed. Recommended maximum 150 mg daily. Once daily may suit when a thiazide diuretic is added.",
+          "tag": "Hypertension",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The recommended starting dose is 25-50mg daily in two divided doses."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The dose may be increased incrementally, with intervals of at least 2 weeks, to 100-150 mg/day in two divided doses as needed to reach target blood pressure."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The recommended maximum daily dose is 150mg."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "A once-daily dosing regimen may be appropriate when concomitant antihypertensive medication such as thiazide diuretics is added."
+            }
+          ]
+        },
+        {
+          "t": "Strongly active renin-angiotensin system (hypovolaemia, renovascular hypertension, cardiac decompensation): start with a single 6.25 mg or 12.5 mg dose, preferably under close medical supervision; then give these doses twice a day, increasing gradually to 50 mg per day and, if needed, 100 mg per day (in one or two doses).",
+          "tag": "Hypertension, high-risk start",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "it is preferable to commence with a single dose of 6.25 mg or 12.5 mg."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The inauguration of this treatment should preferably take place under close medical supervision."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "These doses will then be administered at a rate of two per day."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The dosage can be gradually increased to 50mg per day in one or two doses and if necessary to 100mg per day in one or two doses."
+            }
+          ]
+        },
+        {
+          "t": "Start under close medical supervision at 6.25-12.5 mg two or three times daily; titrate at intervals of at least 2 weeks to a maintenance dose of 75-150 mg per day, maximum 150 mg per day in divided doses.",
+          "tag": "Congestive heart failure",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Treatment with captopril for congestive heart failure should be initiated under close medical supervision."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The usual starting dose is 6.25mg - 12.5mg BID or TID."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "up to a maximum of 150mg per day in divided doses."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Titration to the maintenance dose (75-150mg per day)"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The dose should be increased incrementally, with intervals of at least 2 weeks to evaluate patient's response."
+            }
+          ]
+        },
+        {
+          "t": "Short-term (start in hospital, stable haemodynamics): 6.25 mg test dose, 12.5 mg 2 hours later, 25 mg 12 hours later; then 100 mg/day in two doses for 4 weeks. Chronic (start day 3-16, in hospital): 6.25 mg, then 12.5 mg three times daily for 2 days, then 25 mg three times daily; long-term 75-150 mg daily in two or three doses.",
+          "tag": "Myocardial infarction",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "A 6.25mg test dose should be administered, with a 12.5mg dose being administered 2 hours afterwards and a 25mg dose 12 hours later."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "captopril should be administered in a 100mg/day dose, in two daily administrations, for 4 weeks"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Treatment should be initiated with a dose of 6.25mg followed by 12.5mg 3 times daily for 2 days and then 25mg 3 times daily"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The recommended dose for effective cardioprotection during long-term treatment is 75 to 150mg daily in two or three doses."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Captopril treatment should begin in hospital as soon as possible following the appearance of the signs and/or symptoms in patients with stable haemodynamics."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "it is suggested that treatment be instigated between the 3rd and 16th day post-infarction"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Treatment should be started in hospital under strict surveillance (particularly of blood pressure) until the 75mg dose is reached."
+            }
+          ]
+        },
+        {
+          "t": "75-100 mg daily in divided doses.",
+          "tag": "Type 1 diabetic nephropathy",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "the recommended daily dose is 75-100mg in divided doses."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: consider a lower starting dose (6.25 mg twice daily); titrate to blood pressure and keep the dose as low as possible.",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "consideration should be given to initiating therapy with a lower starting dose (6.25 mg BID) in elderly patients"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Dosage should be titrated against the blood pressure response and kept as low as possible to achieve adequate control."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Efficacy and safety not fully established. Start under close medical supervision. Initial dose about 0.3 mg/kg; 0.15 mg/kg in children with renal dysfunction, premature infants, newborns and infants. Usually given 3 times a day, adjusted to response.",
+          "tag": "Children and adolescents",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The efficacy and safety of captopril have not been fully established. The use of captopril in children and adolescents should be initiated under close medical supervision."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The initial dose of captopril is about 0.3mg/kg body weight."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "the starting dose should be only 0.15 mg captopril/kg weight."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Generally, captopril is administered to children 3 times a day"
+            }
+          ]
+        },
+        {
+          "t": "Infants, especially newborns, may be more susceptible to haemodynamic effects: excessive, prolonged and unpredictable falls in blood pressure with oliguria and seizures have been reported.",
+          "tag": "Infants",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Infants, especially new-borns, may be more susceptible to the adverse haemodynamic effects of captopril."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Excessive, prolonged and unpredictable decreases in blood pressure and associated complications, including oliguria and seizures have been reported."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to captopril, any other ACE inhibitor or any excipient.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Hypersensitivity to captopril, any other ACE inhibitor or to any of the excipients listed in section 6.1"
+            }
+          ]
+        },
+        {
+          "t": "History of angioedema with previous ACE inhibitor therapy; hereditary or idiopathic angioedema.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "History of angioedema associated with previous ACE inhibitor therapy"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Hereditary / idiopathic angioneurotic oedema"
+            }
+          ]
+        },
+        {
+          "t": "Second and third trimesters of pregnancy.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Second and third trimester of pregnancy (see section 4.4 and 4.6)"
+            }
+          ]
+        },
+        {
+          "t": "With aliskiren-containing products in patients with diabetes or renal impairment (GFR < 60 mL/min/1.73 m²).",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "with aliskiren-containing products is contraindicated in patients with diabetes mellitus or renal impairment"
+            }
+          ]
+        },
+        {
+          "t": "Lactation (listed in section 4.3; section 4.6 of the same SmPC allows use with an older infant, see breastfeeding).",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Lactation (see section 4.6)"
+            }
+          ]
+        },
+        {
+          "t": "With sacubitril/valsartan; do not start captopril within 36 hours of the last sacubitril/valsartan dose.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Concomitant use with sacubitril/valsartan therapy. Captopril must not be initiated earlier than 36 hours after the last dose of sacubitril/valsartan"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Symptomatic hypotension: more likely with volume or sodium depletion (vigorous diuretics, salt restriction, diarrhoea, vomiting, haemodialysis) and in heart failure. Correct depletion first and consider a lower starting dose. Excessive falls in ischaemic heart or cerebrovascular disease may cause MI or stroke.",
+          "tag": "Hypotension",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Volume and/or sodium depletion should be corrected before the administration of an ACE inhibitor and a lower starting dose should be considered."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Patients with heart failure are at higher risk of hypotension and a lower starting dose is recommended when initiating therapy with an ACE inhibitor."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "excessive blood pressure lowering in patients with ischaemic cardiovascular or cerebrovascular disease may increase the risk of myocardial infarction or stroke."
+            }
+          ]
+        },
+        {
+          "t": "Bilateral renal artery stenosis or stenosis to a single kidney: higher risk of hypotension and renal insufficiency; start under close supervision with low doses, careful titration and renal monitoring.",
+          "tag": "Renovascular hypertension",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "In these patients, therapy should be initiated under close medical supervision with low doses, careful titration and monitoring of renal function."
+            }
+          ]
+        },
+        {
+          "t": "Renal impairment (CrCl 40 mL/min or less): adjust starting dose to creatinine clearance; monitor potassium and creatinine. The SmPC also states that patients with renal impairment should not normally be treated with captopril.",
+          "tag": "Renal impairment",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "In cases of renal impairment (creatinine clearance ≤40ml/min), the initial dosage of captopril must be adjusted according to the patient's creatinine clearance"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Patients with renal impairment should not normally be treated with captopril."
+            }
+          ]
+        },
+        {
+          "t": "Angioedema can occur at any time, including after months or years; stop promptly. Tongue, glottis or larynx involvement may be fatal and needs emergency treatment. Higher incidence in black patients. Intestinal angioedema can present as abdominal pain.",
+          "tag": "Angioedema",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Angioedema involving the tongue, glottis or larynx may be fatal."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Black patients receiving ACE inhibitors have been reported to have a higher incidence of angioedema compared to non-blacks."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Intestinal angioedema should be included in the differential diagnosis of patients on ACE inhibitors presenting with abdominal pain"
+            }
+          ]
+        },
+        {
+          "t": "Neutropenia/agranulocytosis: use with extreme caution with pre-existing renal impairment, collagen vascular disease, immunosuppressant therapy, allopurinol or procainamide. Check white cell and differential counts before treatment, every 2 weeks for the first 3 months, then periodically. Stop if neutrophils below 1000/mm3.",
+          "tag": "Blood disorders",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Captopril should be used with extreme caution in patients with pre-existing impaired renal function, collagen vascular disease, immunosuppressant therapy, treatment with allopurinol or procainamide"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "every 2 weeks during the first 3 months of captopril therapy, and periodically thereafter."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "should be withdrawn if neutropenia (neutrophils less than 1000/mm3) is detected or suspected."
+            }
+          ]
+        },
+        {
+          "t": "Hyperkalaemia risk with renal insufficiency, diabetes, hypoaldosteronism, potassium-sparing diuretics, potassium supplements or salt substitutes, heparin, trimethoprim or co-trimoxazole, aldosterone antagonists or ARBs: monitor potassium regularly.",
+          "tag": "Hyperkalaemia",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Patients at risk for the development of hyperkalaemia include those with renal insufficiency, diabetes mellitus, hypoaldosteronism"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Potassium sparing diuretics and angiotensin receptor blockers should be used with caution in patients receiving ACE inhibitors, and serum potassium and renal function should be monitored"
+            }
+          ]
+        },
+        {
+          "t": "Insulin autoimmune syndrome (including severe hypoglycaemia) has been reported; stop captopril if suspected.",
+          "tag": "Insulin autoimmune syndrome",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Cases of Insulin Autoimmune Syndrome (IAS), including severe hypoglycaemic events have been reported during the treatment with captopril"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "If IAS is suspected, captopril should be discontinued"
+            }
+          ]
+        },
+        {
+          "t": "Aortic or mitral stenosis, obstructive hypertrophic cardiomyopathy: use with caution. Avoid in cardiogenic shock and haemodynamically significant obstruction.",
+          "tag": "Valve disease",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "ACE inhibitors should be used with caution in patients with left ventricular valvular and outflow tract obstruction."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "the use of captopril should be avoided in cases of cardiogenic shock and haemodynamically significant obstruction."
+            }
+          ]
+        },
+        {
+          "t": "Dual RAAS blockade (with an ARB or aliskiren) not recommended; ACE inhibitors and ARBs should not be combined in diabetic nephropathy.",
+          "tag": "Dual RAAS blockade",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Dual blockade of RAAS through the combined use of ACE-inhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "ACE-inhibitors and angiotensin II receptor blockers should not be used concomitantly in patients with diabetic nephropathy."
+            }
+          ]
+        },
+        {
+          "t": "Diabetes on oral antidiabetics or insulin: monitor blood glucose closely, especially in the first month.",
+          "tag": "Diabetes",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "namely during the first month of treatment with an ACE inhibitor."
+            }
+          ]
+        },
+        {
+          "t": "Hepatic failure (rare): stop if jaundice or marked liver enzyme rise.",
+          "tag": "Liver",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Patients receiving ACE inhibitors who develop jaundice or marked elevations of hepatic enzymes should discontinue the ACE inhibitor and receive appropriate medical follow-up."
+            }
+          ]
+        },
+        {
+          "t": "Proteinuria, mainly with existing renal disease or doses above 150 mg/day; check urine protein (dipstick, first morning urine) before and periodically in patients with prior renal disease.",
+          "tag": "Proteinuria",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Patients with evidence of prior renal disease should have urinary protein estimations (dip-stick on first morning urine) prior to treatment, and periodically thereafter."
+            }
+          ]
+        },
+        {
+          "t": "Anaphylactoid reactions with high-flux dialysis membranes or LDL apheresis with dextran sulfate (avoid this combination), and during venom desensitisation (caution).",
+          "tag": "Anaphylactoid reactions",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Therefore, this combination should be avoided."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "caution should be used in patients treated with ACE inhibitors undergoing such desensitisation procedures."
+            }
+          ]
+        },
+        {
+          "t": "Combined with a thiazide, hypokalaemia can still occur: monitor potassium regularly. Lithium: not recommended. Persistent dry cough can occur. Less effective in black patients. Hypotension during major surgery or anaesthesia can be corrected by volume expansion.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The combination of an ACE inhibitor with a thiazide diuretic does not rule out the occurrence of hypokalaemia."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Captopril is not recommended in association with lithium due to the potentiation of lithium toxicity"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "If hypotension occurs, it may be corrected by volume expansion."
+            }
+          ]
+        },
+        {
+          "t": "Contains lactose: patients with galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it.",
+          "tag": "Excipient",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Potassium-sparing diuretics (e.g. spironolactone, amiloride), potassium supplements, potassium salt substitutes, trimethoprim and co-trimoxazole: significant rise in potassium. Combination not recommended; if needed, use with caution and monitor potassium frequently.",
+          "tag": "Potassium-raising medicines",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "potassium supplements, or potassium-containing salt substitutes may lead to significant increase in serum potassium."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Therefore, the combination of captopril with the above-mentioned drugs is not recommended. If concomitant use is indicated, they should be used with caution and with frequent monitoring of serum potassium."
+            }
+          ]
+        },
+        {
+          "t": "Dual RAAS blockade with angiotensin II receptor blockers (or aliskiren): more hypotension, hyperkalaemia and reduced renal function, including acute renal failure. Not recommended.",
+          "tag": "ARBs",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "is associated with a higher frequency of adverse events such as hypotension, hyperkalaemia and decreased renal function (including acute renal failure)"
+            }
+          ]
+        },
+        {
+          "t": "NSAIDs (e.g. ibuprofen): additive rise in potassium and possible fall in renal function; rarely acute renal failure, especially in the elderly or dehydrated. Long-term NSAIDs may reduce the antihypertensive effect.",
+          "tag": "NSAIDs",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Rarely, acute renal failure may occur, particularly in patients with compromised renal function such as the elderly or dehydrated."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Chronic administration of NSAIDs may reduce the antihypertensive effect of an ACE inhibitor."
+            }
+          ]
+        },
+        {
+          "t": "Insulin and oral antidiabetics (e.g. sulfonylureas): increased glucose lowering; the antidiabetic dose may need reducing. Monitor glucose closely in the first month.",
+          "tag": "Antidiabetics",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "can potentiate the blood glucose-reducing effects of insulin and oral antidiabetics such as sulfonylurea in diabetics."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "it may be necessary to reduce the dose of the antidiabetics during simultaneous treatment with ACE inhibitors."
+            }
+          ]
+        },
+        {
+          "t": "Thiazide or loop diuretics: prior high-dose diuretics can cause volume depletion and hypotension when captopril is started; reduce by stopping the diuretic, increasing volume or salt intake, or starting at a low captopril dose.",
+          "tag": "Diuretics",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The hypotensive effects can be reduced by discontinuation of the diuretic, by increasing volume or salt intake or by initiating therapy with a low dose of captopril."
+            }
+          ]
+        },
+        {
+          "t": "Alpha-blockers: greater antihypertensive effect and orthostatic hypotension. Other antihypertensives: increased hypotensive effect. Nitrates and other vasodilators: use with caution. Tricyclic antidepressants: enhanced hypotensive effect, postural hypotension. Sympathomimetics: may reduce the antihypertensive effect; monitor carefully.",
+          "tag": "Blood pressure effects",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Treatment with nitroglycerine and other nitrates, or other vasodilators (such as minoxidil), should be used with caution."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "May reduce the anti-hypertensive effects of ACE inhibitors: patients should be carefully monitored."
+            }
+          ]
+        },
+        {
+          "t": "Allopurinol, procainamide, cytostatic or immunosuppressive agents: increased risk of leucopenia.",
+          "tag": "Leucopenia risk",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Concomitant administration with ACE inhibitors may lead to an increased risk for leucopenia especially when the latter are used at higher than currently recommended doses."
+            }
+          ]
+        },
+        {
+          "t": "Racecadotril, mTOR inhibitors and vildagliptin: higher angioedema risk; take care when starting them in a patient on an ACE inhibitor. Sacubitril/valsartan: contraindicated.",
+          "tag": "Angioedema risk",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor."
+            }
+          ]
+        },
+        {
+          "t": "Lithium: not recommended; if necessary, monitor lithium levels carefully. Ciclosporin or heparin: monitor potassium. Probenecid reduces captopril renal clearance. Clonidine switch may delay effect. May be used with aspirin (cardiac doses), thrombolytics, beta-blockers and nitrates after MI.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Use of captopril with lithium is not recommended, but if the combination proves necessary, careful monitoring of serum lithium levels should be performed"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The renal clearance of captopril is reduced in the presence of probenecid."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Daily dose by creatinine clearance (SmPC table, units given as mL/min/1.73 m²; section 4.4 gives the 40 threshold in mL/min): above 40, start 25-50 mg, maximum 150 mg; 21-40, start 25 mg, maximum 100 mg; 10-20, start 12.5 mg, maximum 75 mg; below 10, start 6.25 mg, maximum 37.5 mg. Reduce dose or extend interval in renal impairment.",
+          "tag": "SmPC (CrCl)",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "dosage should be reduced or the dosage interval should be increased in patients with impaired renal function."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": ">40 25-50 150 21-40 25 100 10-20 12.5 75 6.25 37.5 <10"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Creatinine clearance Daily starting dose Daily maximum dose (ml/min/1.73m2)"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "In cases of renal impairment (creatinine clearance ≤40ml/min), the initial dosage of captopril must be adjusted according to the patient's creatinine clearance"
+            }
+          ]
+        },
+        {
+          "t": "If a diuretic is needed in severe renal impairment, a loop diuretic is preferred to a thiazide.",
+          "tag": "SmPC",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "When concomitant diuretic therapy is required, a loop diuretic (e.g. Furosemide), rather than a thiazide diuretic, is preferred in patients with severe renal impairment."
+            }
+          ]
+        },
+        {
+          "t": "The SmPC also says patients with renal impairment should not normally be treated with captopril; assess renal function (potassium, creatinine) before and during treatment.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Patients with renal impairment should not normally be treated with captopril."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Evaluation of the patient should include assessment of renal function (monitoring of potassium and creatinine) prior to initiation of therapy and at appropriate intervals thereafter."
+            }
+          ]
+        },
+        {
+          "t": "SPS: seek specialist advice before starting if eGFR is below 30 mL/min/1.73 m².",
+          "tag": "SPS (eGFR)",
+          "src": [
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2"
+            }
+          ]
+        },
+        {
+          "t": "Removed by haemodialysis in adults; not adequately cleared by peritoneal dialysis.",
+          "tag": "Dialysis",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Captopril is not adequately cleared by peritoneal dialysis."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No hepatic dose adjustment stated. Rarely, ACE inhibitors cause cholestatic jaundice progressing to fulminant hepatic necrosis; stop if jaundice or marked liver enzyme rise.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Rarely, ACE inhibitors have been associated with a syndrome that starts with cholestatic jaundice and progresses to fulminant hepatic necrosis and (sometimes) death."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Patients receiving ACE inhibitors who develop jaundice or marked elevations of hepatic enzymes should discontinue the ACE inhibitor"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: do not start in pregnancy; not recommended in the first trimester; contraindicated in the second and third trimesters. Stop as soon as pregnancy is diagnosed and switch if appropriate. If exposed from the second trimester, ultrasound check of fetal renal function and skull; observe the newborn for hypotension.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "ACE inhibitors should not be initiated during pregnancy."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The use of ACE inhibitors is not recommended during the first trimester of pregnancy"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The use of ACE inhibitors is contraindicated during the second and third trimesters of pregnancy"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Should exposure to ACE inhibitors have occurred from the second trimester of pregnancy, ultrasound check of renal function and skull is recommended."
+            }
+          ]
+        },
+        {
+          "t": "MHRA: ACE inhibitors should not be used at any stage of pregnancy unless absolutely necessary; on diagnosis of pregnancy, stop as soon as possible.",
+          "tag": "MHRA",
+          "src": [
+            {
+              "s": "mhra-dsu-acei-arb-breastfeeding",
+              "q": "ACE inhibitors and angiotensin II receptor antagonists should not be used at any stage of pregnancy unless absolutely necessary"
+            },
+            {
+              "s": "mhra-dsu-acei-arb-pregnancy",
+              "q": "On diagnosis of pregnancy, treatment with an ACE inhibitor or angiotensin II receptor antagonist should be stopped as soon as possible"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (ACE inhibitors, captopril named): early-pregnancy use is unlikely to harm the baby; use after about 20 weeks can cause problems in the baby and needs extra monitoring of amniotic fluid and fetal growth if continued.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-ace-inhibitors",
+              "q": "Taking an ACE-I in early pregnancy is unlikely to harm your baby."
+            },
+            {
+              "s": "bumps-ace-inhibitors",
+              "q": "Taking an ACE-I after around 20 weeks of pregnancy can cause a number of problems in your baby"
+            },
+            {
+              "s": "bumps-ace-inhibitors",
+              "q": "If you continue to take an ACE-I after around 20 weeks you will require additional monitoring to assess amniotic fluid levels and your baby's growth and wellbeing."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC section 4.3 lists lactation as a contraindication. Section 4.6 of the same SmPC: very low milk levels; not recommended for preterm infants or in the first few weeks after delivery; with an older infant, may be considered if necessary for the mother, observing the infant for adverse effects.",
+          "tag": "SmPC (internally inconsistent)",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Lactation (see section 4.6)"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "the use of captopril in breastfeeding is not recommended for pre- term infants and for the first few weeks after delivery"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "In the case of an older infant, the use of captopril in a breast-feeding mother may be considered if this treatment is necessary for the mother and the child is observed for any adverse effect"
+            }
+          ]
+        },
+        {
+          "t": "MHRA (2009): captopril not recommended in the first few weeks after delivery (risk of profound neonatal hypotension; preterm babies at particular risk); may be considered when the infant is older if an ACE inhibitor is needed, with careful infant follow-up for hypotension. MHRA clarification (2009): ACE inhibitors are not absolutely contraindicated in breastfeeding and may be prescribed if essential for the mother.",
+          "tag": "MHRA",
+          "src": [
+            {
+              "s": "mhra-dsu-acei-arb-breastfeeding",
+              "q": "captopril, enalapril, or quinapril: use in breastfeeding is not recommended in the first few weeks after delivery because of the possibility of profound neonatal hypotension"
+            },
+            {
+              "s": "mhra-dsu-acei-arb-breastfeeding",
+              "q": "use may be considered when the infant is older if an ACE inhibitor is necessary for the mother; careful follow-up of the infant for possible signs of hypotension is recommended"
+            },
+            {
+              "s": "mhra-dsu-acei-arb-breastfeeding-clarification",
+              "q": "they are not absolutely contraindicated. Healthcare professionals may prescribe these medicines during breastfeeding if they consider that this treatment is essential for the lactating mother."
+            }
+          ]
+        },
+        {
+          "t": "SPS (2023, no captopril-specific entry): enalapril is the preferred ACE inhibitor in breastfeeding; most ACE inhibitors can be used if clinically appropriate.",
+          "tag": "SPS",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-acei-breastfeeding",
+              "q": "Enalapril is the preferred angiotensin converting enzyme (ACE) inhibitor during breastfeeding"
+            },
+            {
+              "s": "sps-acei-breastfeeding",
+              "q": "most ACE inhibitors can be used during breastfeeding if clinically appropriate."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Planning pregnancy: switch to an antihypertensive with an established pregnancy safety profile unless continued ACE inhibitor treatment is essential.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Unless continued ACE inhibitor therapy is considered essential, patients planning pregnancy should be changed to alternative antihypertensive treatments which have an established safety profile for use in pregnancy."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: insomnia; taste disturbance and dizziness; dry cough and dyspnoea; nausea, vomiting, epigastric discomfort, dyspepsia, abdominal pain, diarrhoea, constipation, dry mouth; pruritus with or without rash, alopecia.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Common: insomnia"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Common: dysgeusia, reversible and self-limiting taste impairment and dizziness"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Common: dry, irritating (non-productive) cough (see section 4.4) and dyspnoea"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Common: nausea, vomiting, epigastric discomfort, peptic ulcer, dyspepsia"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Common: pruritus with or without a rash, and alopecia"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Angioedema (uncommon; face, lips, tongue, glottis, larynx; also intestinal): stop the ACE inhibitor at once and do not restart. Bradykinin-mediated angioedema may not respond to adrenaline. Airway involvement needs emergency treatment and observation for at least 12-24 hours.",
+          "src": [
+            {
+              "s": "mhra-dsu-acei-angioedema-2026",
+              "q": "if angioedema is suspected in a patient taking an ACE inhibitor, discontinue the ACE inhibitor immediately and do not restart"
+            },
+            {
+              "s": "mhra-dsu-acei-angioedema-2026",
+              "q": "bradykinin-mediated angioedema is unlikely to respond to standard anaphylaxis treatments including adrenaline (epinephrine)"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Uncommon: angioedema (see section 4.4)"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The patient should be hospitalised and observed for at least 12 to 24 hours"
+            }
+          ]
+        },
+        {
+          "t": "Very rare: neutropenia/agranulocytosis, pancytopenia, aplastic or haemolytic anaemia, thrombocytopenia. Report sore throat or fever; stop if neutropenia.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Very rare: neutropenia/agranulocytosis (see section 4.4), pancytopenia particularly in patients with renal dysfunction"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "During treatment all patients should be instructed to report any sign of infection (e.g. sore throat, fever)"
+            }
+          ]
+        },
+        {
+          "t": "Insulin autoimmune syndrome (frequency not known) with severe hypoglycaemia; very rare hyperkalaemia, hyponatraemia, hypoglycaemia.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Not known: insulin autoimmune syndrome"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Very rare: hyperkalaemia, hyponatremia, hypoglycaemia"
+            }
+          ]
+        },
+        {
+          "t": "Rare renal impairment or failure; very rare nephrotic syndrome, pancreatitis, hepatitis/cholestasis, Stevens-Johnson syndrome, erythema multiforme.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Rare: renal impairment, renal failure, polyuria, oliguria, pollakiuria Very rare: nephrotic syndrome"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Very rare: glossitis, pancreatitis"
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Steven Johnson syndrome, erythema multiforme"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SmPC: renal function (potassium and creatinine) before starting and at intervals; in high-risk patients (renal impairment, collagen vascular disease, immunosuppressants, allopurinol, procainamide) white cell and differential counts before, every 2 weeks for 3 months, then periodically; urine protein in prior renal disease.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Evaluation of the patient should include assessment of renal function (monitoring of potassium and creatinine) prior to initiation of therapy and at appropriate intervals thereafter."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "it is advised that white blood cell count and differential counts should be performed prior to therapy, every 2 weeks during the first 3 months of captopril therapy, and periodically thereafter."
+            }
+          ]
+        },
+        {
+          "t": "SPS baseline: blood pressure, eGFR or serum creatinine, serum potassium, serum sodium. Starting is not normally appropriate if potassium is above 5.0 mmol/L.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Baseline Blood pressure Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Serum potassium Serum sodium"
+            },
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Initiation not normally appropriate if pre-treatment potassium greater than 5.0mmol/L"
+            }
+          ]
+        },
+        {
+          "t": "SPS: after starting or a dose change, check renal function, sodium and potassium within 1-2 weeks (sooner with risk factors); once stable, every 3-6 months in heart failure and annually in hypertension. Repeat at any time if acutely unwell.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Hypertension Within 1 - 2 weeks Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Serum sodium Serum potassium Within 1 month Blood pressure"
+            },
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Ongoing once stable Heart failure Every 3 - 6 months"
+            },
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Repeat monitoring at any time patient acutely unwell or their renal function may be compromised."
+            },
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Hypertension Annually Serum sodium Serum potassium"
+            }
+          ]
+        },
+        {
+          "t": "Stop: neutrophils below 1000/mm3; angioedema; jaundice or marked liver enzyme rise; suspected insulin autoimmune syndrome. SPS: potassium 6.0 mmol/L or above in CKD - stop (after stopping other potassium-raising drugs) and seek specialist advice; sodium below 132 mmol/L - specialist advice.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "should be withdrawn if neutropenia (neutrophils less than 1000/mm3) is detected or suspected."
+            },
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Value 6.0 mmol/L or above in people with CKD Stop ACEI/ARB after stopping other drugs that may increase potassium and seek specialist advice."
+            },
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Sodium Value is below 132mmol/L Obtain specialist advice"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral; may be taken before, during or after meals. The score line is for ease of swallowing only, not for dividing into equal doses (one UK SmPC).",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "Captopril tablets may be taken before, during and after meals."
+            },
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The score line is only to facilitate breaking for the ease of swallowing and not to divide into equal doses"
+            }
+          ]
+        },
+        {
+          "t": "Food reduces absorption by about 30-40%.",
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "The presence of food in the gastrointestinal tract reduces absorption by about 30-40%."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Seek urgent help for swelling of the face, lips, tongue or throat, or trouble breathing or swallowing, even after long use; do not take further doses.",
+          "src": [
+            {
+              "s": "mhra-dsu-acei-angioedema-2026",
+              "q": "seek urgent medical attention if you develop swelling of the face, lips, tongue, or throat, or experience difficulty breathing or swallowing whilst taking ACE inhibitors"
+            },
+            {
+              "s": "mhra-dsu-acei-angioedema-2026",
+              "q": "do not take further doses of your ACE inhibitor if angioedema is suspected and inform a healthcare professional immediately"
+            }
+          ]
+        },
+        {
+          "t": "Report any sign of infection such as sore throat or fever.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "During treatment all patients should be instructed to report any sign of infection (e.g. sore throat, fever)"
+            }
+          ]
+        },
+        {
+          "t": "Planning pregnancy or pregnant: contact the doctor to switch medicine.",
+          "src": [
+            {
+              "s": "bumps-ace-inhibitors",
+              "q": "If you find out that you are pregnant whilst taking an ACE-I, you should contact your doctor as soon as possible so that you can be switched to another medicine."
+            }
+          ]
+        },
+        {
+          "t": "Driving may be affected, especially at the start, after dose changes, or with alcohol.",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "the ability to drive and use machines may be reduced, namely at the start of the treatment, or when posology is modified, and also when used in combination with alcohol"
+            }
+          ]
+        },
+        {
+          "t": "Avoid potassium salt substitutes unless advised (risk of high potassium).",
+          "src": [
+            {
+              "s": "mhra-captopril-50-spc",
+              "q": "potassium supplements, or potassium-containing salt substitutes may lead to significant increase in serum potassium."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "captopril:allergy:ace-inhibitor",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "captopril",
+      "allergen": [
+        "captopril",
+        "group:ace-inhibitor"
+      ],
+      "concern": "Hypersensitivity to captopril or any other ACE inhibitor (including previous ACE inhibitor angioedema)",
+      "consequence": "Hypersensitivity reaction / angioedema.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Hypersensitivity to captopril, any other ACE inhibitor or to any of the excipients listed in section 6.1"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "History of angioedema associated with previous ACE inhibitor therapy"
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:hereditary-angioedema",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "captopril",
+      "condition": "hereditary-angioedema",
+      "concern": "Hereditary or idiopathic angioedema",
+      "consequence": "Risk of angioedema.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Hereditary / idiopathic angioneurotic oedema"
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:angioedema-history-other",
+      "kind": "condition",
+      "level": "info",
+      "med": "captopril",
+      "condition": "angioedema-history-other",
+      "concern": "History of angioedema not caused by an ACE inhibitor",
+      "consequence": "May be at increased risk of angioedema while taking an ACE inhibitor.",
+      "action": "Be aware of the increased angioedema risk (hereditary or idiopathic angioedema, or angioedema with a previous ACE inhibitor, are contraindications).",
+      "sourceWording": "may be at increased risk of angioedema",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Patients with a history of angioedema unrelated to ACE inhibitor therapy may be at increased risk of angioedema while receiving an ACE inhibitor"
+        }
+      ]
+    },
+    {
+      "id": "captopril:pregnancy:t2-t3",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "captopril",
+      "trimesters": [
+        2,
+        3
+      ],
+      "concern": "Second or third trimester",
+      "consequence": "Fetotoxicity (reduced renal function, oligohydramnios, skull ossification retardation) and neonatal toxicity (renal failure, hypotension, hyperkalaemia).",
+      "action": "Do not use; stop and switch to an alternative.",
+      "sourceWording": "contraindicated during the second and third trimesters",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "The use of ACE inhibitors is contraindicated during the second and third trimesters of pregnancy"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Exposure to ACE inhibitor therapy during the second and third trimesters is known to induce human foetotoxicity"
+        }
+      ]
+    },
+    {
+      "id": "captopril:pregnancy:t1",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "captopril",
+      "trimesters": [
+        1
+      ],
+      "concern": "First trimester",
+      "consequence": "A small increase in teratogenic risk cannot be excluded.",
+      "action": "Do not start in pregnancy; not recommended; stop when pregnancy is diagnosed and start an alternative if appropriate.",
+      "sourceWording": "not recommended during the first trimester",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "The use of ACE inhibitors is not recommended during the first trimester of pregnancy"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "ACE inhibitors should not be initiated during pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "captopril:pregnancy:mhra",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "captopril",
+      "concern": "Pregnancy (MHRA advice, any stage)",
+      "consequence": "Late-pregnancy fetal renal dysfunction, oligohydramnios and skull ossification defects; possible first-trimester risk.",
+      "action": "Do not use at any stage unless absolutely necessary; stop as soon as possible on diagnosis.",
+      "sourceWording": "should not be used at any stage of pregnancy unless absolutely necessary",
+      "src": [
+        {
+          "s": "mhra-dsu-acei-arb-breastfeeding",
+          "q": "ACE inhibitors and angiotensin II receptor antagonists should not be used at any stage of pregnancy unless absolutely necessary"
+        },
+        {
+          "s": "mhra-dsu-acei-arb-pregnancy",
+          "q": "On diagnosis of pregnancy, treatment with an ACE inhibitor or angiotensin II receptor antagonist should be stopped as soon as possible"
+        }
+      ]
+    },
+    {
+      "id": "captopril:breastfeeding:smpc-4-3",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "captopril",
+      "concern": "Breastfeeding (SmPC section 4.3)",
+      "consequence": "Hypothetical cardiovascular and renal effects in the infant; limited clinical experience.",
+      "action": "Section 4.3 lists lactation as a contraindication. Note: section 4.6 of the same SmPC and MHRA allow use with an older infant if necessary for the mother, with infant observation.",
+      "sourceWording": "Contraindications: Lactation",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Lactation (see section 4.6)"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "because of the hypothetical risk of cardiovascular and renal effects and because there is not enough clinical experience."
+        }
+      ]
+    },
+    {
+      "id": "captopril:breastfeeding:early-weeks-mhra",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "captopril",
+      "concern": "Breastfeeding a preterm or newborn infant (first few weeks; SmPC 4.6 and MHRA)",
+      "consequence": "Possible profound neonatal hypotension; preterm babies at particular risk.",
+      "action": "Not recommended in the first few weeks after delivery or for preterm infants. With an older infant, may be considered if needed for the mother, with careful infant follow-up for hypotension.",
+      "sourceWording": "not recommended in the first few weeks after delivery",
+      "src": [
+        {
+          "s": "mhra-dsu-acei-arb-breastfeeding",
+          "q": "captopril, enalapril, or quinapril: use in breastfeeding is not recommended in the first few weeks after delivery because of the possibility of profound neonatal hypotension"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "the use of captopril in breastfeeding is not recommended for pre- term infants and for the first few weeks after delivery"
+        }
+      ]
+    },
+    {
+      "id": "captopril:renal:crcl-21-40",
+      "kind": "renal",
+      "level": "dose",
+      "med": "captopril",
+      "renal": {
+        "measure": "CrCl",
+        "min": 21,
+        "max": 40,
+        "maxInclusive": true
+      },
+      "concern": "Creatinine clearance 21-40 (SmPC table unit: mL/min/1.73 m²)",
+      "consequence": "Captopril is mainly renally excreted; risk of accumulation.",
+      "action": "Daily starting dose 25 mg; daily maximum 100 mg.",
+      "sourceWording": "the initial dosage of captopril must be adjusted",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "In cases of renal impairment (creatinine clearance ≤40ml/min), the initial dosage of captopril must be adjusted according to the patient's creatinine clearance"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "21-40 25 100"
+        }
+      ]
+    },
+    {
+      "id": "captopril:renal:crcl-10-20",
+      "kind": "renal",
+      "level": "dose",
+      "med": "captopril",
+      "renal": {
+        "measure": "CrCl",
+        "min": 10,
+        "max": 21
+      },
+      "concern": "Creatinine clearance 10-20 (SmPC table unit: mL/min/1.73 m²)",
+      "consequence": "Captopril is mainly renally excreted; risk of accumulation.",
+      "action": "Daily starting dose 12.5 mg; daily maximum 75 mg.",
+      "sourceWording": "the initial dosage of captopril must be adjusted",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "In cases of renal impairment (creatinine clearance ≤40ml/min), the initial dosage of captopril must be adjusted according to the patient's creatinine clearance"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "10-20 12.5 75"
+        }
+      ]
+    },
+    {
+      "id": "captopril:renal:crcl-under-10",
+      "kind": "renal",
+      "level": "dose",
+      "med": "captopril",
+      "renal": {
+        "measure": "CrCl",
+        "max": 10
+      },
+      "concern": "Creatinine clearance below 10 (SmPC table unit: mL/min/1.73 m²)",
+      "consequence": "Captopril is mainly renally excreted; risk of accumulation.",
+      "action": "Daily starting dose 6.25 mg; daily maximum 37.5 mg.",
+      "sourceWording": "the initial dosage of captopril must be adjusted",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "In cases of renal impairment (creatinine clearance ≤40ml/min), the initial dosage of captopril must be adjusted according to the patient's creatinine clearance"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "6.25 37.5 <10"
+        }
+      ]
+    },
+    {
+      "id": "captopril:renal:egfr-under-30-sps",
+      "kind": "renal",
+      "level": "caution",
+      "med": "captopril",
+      "renal": {
+        "measure": "eGFR",
+        "max": 30
+      },
+      "concern": "eGFR below 30 mL/min/1.73 m² (SPS)",
+      "consequence": "Higher risk of renal deterioration and hyperkalaemia.",
+      "action": "Seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2"
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:renal-impairment",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "captopril",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment (SmPC: should not normally be treated with captopril)",
+      "consequence": "Adverse reactions to captopril are mainly linked to renal function; neutropenia, proteinuria and hyperkalaemia are more likely.",
+      "action": "SmPC: patients with renal impairment should not normally be treated with captopril. If it is used, adjust the starting and maximum dose to creatinine clearance (section 4.2 table) and monitor potassium and creatinine.",
+      "sourceWording": "should not normally be treated with captopril",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Patients with renal impairment should not normally be treated with captopril."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "The incidence of adverse reactions to captopril is principally associated with renal function since the drug is excreted primarily by the kidney."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "In cases of renal impairment (creatinine clearance ≤40ml/min), the initial dosage of captopril must be adjusted according to the patient's creatinine clearance"
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:severe-renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "captopril",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal impairment",
+      "consequence": "Accumulation and adverse effects more likely.",
+      "action": "In heart failure use under specialist supervision; if a diuretic is needed, a loop diuretic is preferred to a thiazide.",
+      "sourceWording": "should be under specialist supervision",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "In patients on doses of over 100 mg daily plus or minus a diuretic, in those with severe renal impairment or those with severe congestive heart failure use of captopril should be under specialist supervision."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "a loop diuretic (e.g. Furosemide), rather than a thiazide diuretic, is preferred in patients with severe renal impairment."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:hyperkalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "captopril",
+      "condition": "hyperkalaemia",
+      "concern": "Raised potassium before starting",
+      "consequence": "ACE inhibitors raise serum potassium.",
+      "action": "SPS: starting not normally appropriate if potassium is above 5.0 mmol/L.",
+      "sourceWording": "Initiation not normally appropriate",
+      "src": [
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "Initiation not normally appropriate if pre-treatment potassium greater than 5.0mmol/L"
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "captopril",
+      "condition": "hyponatraemia",
+      "concern": "Hyponatraemia (sodium below 130 mmol/L)",
+      "consequence": "Sodium depletion makes symptomatic hypotension more likely.",
+      "action": "SPS: seek specialist advice before starting. SmPC: correct sodium depletion first and consider a lower starting dose.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "hyponatraemia (sodium less than 130mmol/L)"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Volume and/or sodium depletion should be corrected before the administration of an ACE inhibitor and a lower starting dose should be considered."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:dehydration",
+      "kind": "condition",
+      "level": "caution",
+      "med": "captopril",
+      "condition": "dehydration-hypovolaemia",
+      "concern": "Volume or sodium depletion (diuretics, diarrhoea, vomiting, haemodialysis, salt restriction)",
+      "consequence": "Symptomatic hypotension more likely.",
+      "action": "Correct before starting and consider a lower starting dose. SPS: specialist advice before starting in hypovolaemia.",
+      "sourceWording": "should be corrected before the administration",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Symptomatic hypotension is more likely to occur in hypertensive patients who are volume and/or sodium depleted by vigorous diuretic therapy, dietary salt restriction, diarrhoea, vomiting or haemodialysis."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Volume and/or sodium depletion should be corrected before the administration of an ACE inhibitor and a lower starting dose should be considered."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:heart-failure",
+      "kind": "condition",
+      "level": "dose",
+      "med": "captopril",
+      "condition": "heart-failure",
+      "concern": "Heart failure",
+      "consequence": "Higher risk of hypotension.",
+      "action": "Use a lower starting dose under close medical supervision; take care whenever the captopril or diuretic dose is increased.",
+      "sourceWording": "a lower starting dose is recommended",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Patients with heart failure are at higher risk of hypotension and a lower starting dose is recommended when initiating therapy with an ACE inhibitor."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Caution should be used whenever the dose of captopril or diuretic is increased in patients with heart failure."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "captopril",
+      "condition": "severe-heart-failure",
+      "concern": "Severe or unstable heart failure",
+      "consequence": "Symptomatic hypotension and renal impairment more likely.",
+      "action": "SmPC: use under specialist supervision. SPS: seek specialist advice before starting.",
+      "sourceWording": "should be under specialist supervision",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "In patients on doses of over 100 mg daily plus or minus a diuretic, in those with severe renal impairment or those with severe congestive heart failure use of captopril should be under specialist supervision."
+        },
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure"
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:hypotension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "captopril",
+      "condition": "hypotension",
+      "concern": "Hypotension (systolic BP below 90 mmHg)",
+      "consequence": "Further fall in blood pressure.",
+      "action": "SPS: seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "hypotension (systolic blood pressure less than 90mmHg)"
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "info",
+      "med": "captopril",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Ischaemic heart disease",
+      "consequence": "Excessive blood pressure lowering may increase the risk of myocardial infarction.",
+      "action": "Be aware; avoid excessive falls in blood pressure.",
+      "sourceWording": "may increase the risk of myocardial infarction or stroke",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "excessive blood pressure lowering in patients with ischaemic cardiovascular or cerebrovascular disease may increase the risk of myocardial infarction or stroke."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:cerebrovascular-disease",
+      "kind": "condition",
+      "level": "info",
+      "med": "captopril",
+      "condition": "cerebrovascular-disease",
+      "concern": "Cerebrovascular disease",
+      "consequence": "Excessive blood pressure lowering may increase the risk of stroke.",
+      "action": "Be aware; avoid excessive falls in blood pressure.",
+      "sourceWording": "may increase the risk of myocardial infarction or stroke",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "excessive blood pressure lowering in patients with ischaemic cardiovascular or cerebrovascular disease may increase the risk of myocardial infarction or stroke."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:renal-artery-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "captopril",
+      "condition": "renal-artery-stenosis",
+      "concern": "Bilateral renal artery stenosis or stenosis to a single functioning kidney",
+      "consequence": "Increased risk of hypotension and renal insufficiency; renal function may be lost with only mild creatinine changes.",
+      "action": "Start under close medical supervision with low doses, careful titration and renal function monitoring.",
+      "sourceWording": "should be initiated under close medical supervision with low doses",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Loss of renal function may occur with only mild changes in serum creatinine."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "In these patients, therapy should be initiated under close medical supervision with low doses, careful titration and monitoring of renal function."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:aortic-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "captopril",
+      "condition": "aortic-stenosis",
+      "concern": "Aortic stenosis / obstructive hypertrophic cardiomyopathy",
+      "consequence": "Vasodilatation with left ventricular outflow obstruction.",
+      "action": "Use with caution; avoid in haemodynamically significant obstruction.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "ACE inhibitors should be used with caution in patients with left ventricular valvular and outflow tract obstruction."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "the use of captopril should be avoided in cases of cardiogenic shock and haemodynamically significant obstruction."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:mitral-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "captopril",
+      "condition": "mitral-stenosis",
+      "concern": "Mitral valve stenosis",
+      "consequence": "Vasodilatation with fixed valve obstruction.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Aortic and mitral valve stenosis / obstructive hypertrophic cardiomyopathy: ACE inhibitors should be used with caution in patients with left ventricular valvular and outflow tract obstruction."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:cardiogenic-shock",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "captopril",
+      "condition": "cardiogenic-shock",
+      "concern": "Cardiogenic shock",
+      "consequence": "Limited experience; risk of further haemodynamic deterioration.",
+      "action": "Avoid.",
+      "sourceWording": "should be avoided in cases of cardiogenic shock",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "the use of captopril should be avoided in cases of cardiogenic shock and haemodynamically significant obstruction."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:lupus",
+      "kind": "condition",
+      "level": "caution",
+      "med": "captopril",
+      "condition": "lupus",
+      "concern": "Collagen vascular disease (e.g. SLE)",
+      "consequence": "Neutropenia/agranulocytosis and serious infection.",
+      "action": "Use with extreme caution; white cell and differential counts before, every 2 weeks for 3 months, then periodically.",
+      "sourceWording": "should be used with extreme caution",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Captopril should be used with extreme caution in patients with pre-existing impaired renal function, collagen vascular disease"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "every 2 weeks during the first 3 months of captopril therapy, and periodically thereafter."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "captopril",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus",
+      "consequence": "Greater glucose lowering with insulin or oral antidiabetics; diabetes also raises hyperkalaemia risk.",
+      "action": "Monitor blood glucose closely, especially in the first month; monitor potassium.",
+      "sourceWording": "the glycaemia levels should be closely monitored",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "namely during the first month of treatment with an ACE inhibitor."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Patients at risk for the development of hyperkalaemia include those with renal insufficiency, diabetes mellitus, hypoaldosteronism"
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "captopril",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, total lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Tablets contain lactose.",
+      "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:extracorporeal-blood-treatment",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "captopril",
+      "condition": "extracorporeal-blood-treatment",
+      "concern": "High-flux dialysis membranes or LDL apheresis with dextran sulfate",
+      "consequence": "High incidence of anaphylactoid-like reactions.",
+      "action": "Avoid this combination; consider a different dialysis type, membrane or class of medicine.",
+      "sourceWording": "this combination should be avoided",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "high incidence of anaphylactoid- like reactions during haemodialysis with high flux dialysis membranes"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "undergoing low-density lipoprotein apheresis with dextran sulfate absorption in patients receiving ACE inhibitors"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Therefore, this combination should be avoided."
+        }
+      ]
+    },
+    {
+      "id": "captopril:condition:surgery-planned",
+      "kind": "condition",
+      "level": "info",
+      "med": "captopril",
+      "condition": "surgery-planned",
+      "concern": "Major surgery or anaesthesia",
+      "consequence": "Hypotension can occur with anaesthetic agents that lower blood pressure.",
+      "action": "If hypotension occurs, correct with volume expansion.",
+      "sourceWording": "it may be corrected by volume expansion",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Hypotension may occur in patients undergoing major surgery, or during treatment with anaesthetic agents that are known to lower blood pressure."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "If hypotension occurs, it may be corrected by volume expansion."
+        }
+      ]
+    },
+    {
+      "id": "captopril:age:under-18",
+      "kind": "age",
+      "level": "caution",
+      "med": "captopril",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Child or adolescent",
+      "consequence": "Efficacy and safety not fully established; infants and newborns are more susceptible to excessive, prolonged falls in blood pressure.",
+      "action": "Start under close medical supervision; initial dose about 0.3 mg/kg (0.15 mg/kg in renal dysfunction, premature infants, newborns and infants).",
+      "sourceWording": "should be initiated under close medical supervision",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "The efficacy and safety of captopril have not been fully established. The use of captopril in children and adolescents should be initiated under close medical supervision."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Infants, especially new-borns, may be more susceptible to the adverse haemodynamic effects of captopril."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:potassium-sparing-diuretic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "captopril",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics (e.g. spironolactone, amiloride)",
+      "consequence": "Significant rise in serum potassium.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "spironolactone, triamterene or amiloride), potassium supplements, or potassium-containing salt substitutes may lead to significant increase in serum potassium."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Therefore, the combination of captopril with the above-mentioned drugs is not recommended. If concomitant use is indicated, they should be used with caution and with frequent monitoring of serum potassium."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:potassium-supplement",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "captopril",
+      "other": "group:potassium-supplement",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium supplements or potassium salt substitutes",
+      "consequence": "Significant rise in serum potassium.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "potassium supplements, or potassium-containing salt substitutes may lead to significant increase in serum potassium."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Therefore, the combination of captopril with the above-mentioned drugs is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:trimethoprim",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "captopril",
+      "other": "trimethoprim",
+      "effect": "hyperkalaemia",
+      "concern": "Trimethoprim",
+      "consequence": "Trimethoprim acts like the potassium-sparing diuretic amiloride; risk of hyperkalaemia.",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "as trimethoprim is known to act as a potassium sparing diuretic like amiloride."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Therefore, the combination of captopril with the above-mentioned drugs is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:co-trimoxazole",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "captopril",
+      "other": "co-trimoxazole",
+      "effect": "hyperkalaemia",
+      "concern": "Co-trimoxazole",
+      "consequence": "Increased risk of hyperkalaemia (trimethoprim component).",
+      "action": "Combination not recommended; if indicated, use with caution and monitor potassium frequently.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Patients taking concomitant co-trimoxazole (trimethoprim/sulfamethoxazole) may be at increased risk for hyperkalaemia"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Therefore, the combination of captopril with the above-mentioned drugs is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:arb",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "captopril",
+      "other": "group:arb",
+      "effect": "hyperkalaemia",
+      "concern": "Angiotensin II receptor blockers (dual RAAS blockade)",
+      "consequence": "More hypotension, hyperkalaemia and reduced renal function, including acute renal failure.",
+      "action": "Not recommended; if absolutely necessary only under specialist supervision with close monitoring. Do not combine in diabetic nephropathy.",
+      "sourceWording": "is therefore not recommended",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Dual blockade of RAAS through the combined use of ACE-inhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "ACE-inhibitors and angiotensin II receptor blockers should not be used concomitantly in patients with diabetic nephropathy."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:nsaid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "captopril",
+      "other": "group:nsaid",
+      "effect": "nephrotoxicity",
+      "concern": "NSAIDs",
+      "consequence": "Additive rise in potassium and possible fall in renal function; rarely acute renal failure (elderly, dehydrated); long-term NSAIDs may reduce the antihypertensive effect.",
+      "action": "No specific action stated in the SmPC; be aware, especially in the elderly or dehydrated.",
+      "sourceWording": "Rarely, acute renal failure may occur",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Rarely, acute renal failure may occur, particularly in patients with compromised renal function such as the elderly or dehydrated."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Chronic administration of NSAIDs may reduce the antihypertensive effect of an ACE inhibitor."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:insulin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "captopril",
+      "other": "group:insulin",
+      "effect": "hypoglycaemia",
+      "concern": "Insulin",
+      "consequence": "Enhanced glucose lowering; hypoglycaemia possible.",
+      "action": "Monitor blood glucose closely in the first month; the insulin dose may need reducing.",
+      "sourceWording": "should be closely monitored",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "can potentiate the blood glucose-reducing effects of insulin and oral antidiabetics such as sulfonylurea in diabetics."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "it may be necessary to reduce the dose of the antidiabetics during simultaneous treatment with ACE inhibitors."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:oral-antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "captopril",
+      "other": "group:oral-antidiabetic",
+      "effect": "hypoglycaemia",
+      "concern": "Oral antidiabetics (e.g. sulfonylureas)",
+      "consequence": "Enhanced glucose lowering; hypoglycaemia possible.",
+      "action": "Monitor blood glucose closely in the first month; the antidiabetic dose may need reducing.",
+      "sourceWording": "should be closely monitored",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "can potentiate the blood glucose-reducing effects of insulin and oral antidiabetics such as sulfonylurea in diabetics."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "namely during the first month of treatment with an ACE inhibitor."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:thiazide-hypotension",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "captopril",
+      "other": "group:thiazide",
+      "effect": "hypotension",
+      "concern": "Thiazide diuretics (especially high-dose)",
+      "consequence": "Volume depletion and hypotension when captopril is started.",
+      "action": "Reduce risk by stopping the diuretic, increasing volume or salt intake, or starting captopril at a low dose; in heart failure take care when increasing either dose.",
+      "sourceWording": "Caution should be used whenever the dose of captopril or diuretic is increased",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Diuretics (thiazide or loop diuretics): Prior treatment with high dose diuretics may result in volume depletion and a risk of hypotension when initiating therapy with captopril"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "The hypotensive effects can be reduced by discontinuation of the diuretic, by increasing volume or salt intake or by initiating therapy with a low dose of captopril."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Caution should be used whenever the dose of captopril or diuretic is increased in patients with heart failure."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:loop-diuretic-hypotension",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "captopril",
+      "other": "group:loop-diuretic",
+      "effect": "hypotension",
+      "concern": "Loop diuretics (especially high-dose)",
+      "consequence": "Volume depletion and hypotension when captopril is started.",
+      "action": "Reduce risk by stopping the diuretic, increasing volume or salt intake, or starting captopril at a low dose; in heart failure take care when increasing either dose.",
+      "sourceWording": "Caution should be used whenever the dose of captopril or diuretic is increased",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Diuretics (thiazide or loop diuretics): Prior treatment with high dose diuretics may result in volume depletion and a risk of hypotension when initiating therapy with captopril"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "The hypotensive effects can be reduced by discontinuation of the diuretic, by increasing volume or salt intake or by initiating therapy with a low dose of captopril."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Caution should be used whenever the dose of captopril or diuretic is increased in patients with heart failure."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:thiazide-hypokalaemia",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "captopril",
+      "other": "group:thiazide",
+      "concern": "Thiazide diuretics (potassium)",
+      "consequence": "Hypokalaemia can still occur with an ACE inhibitor plus thiazide.",
+      "action": "Monitor potassium regularly.",
+      "sourceWording": "Regular monitoring of kalaemia should be performed",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "The combination of an ACE inhibitor with a thiazide diuretic does not rule out the occurrence of hypokalaemia."
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Regular monitoring of kalaemia should be performed."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:nitrate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "captopril",
+      "other": "group:nitrate",
+      "effect": "hypotension",
+      "concern": "Nitrates and other vasodilators",
+      "consequence": "Additive hypotension.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Treatment with nitroglycerine and other nitrates, or other vasodilators (such as minoxidil), should be used with caution."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:alpha-blocker",
+      "kind": "interaction",
+      "level": "info",
+      "med": "captopril",
+      "other": "group:alpha-blocker",
+      "effect": "hypotension",
+      "concern": "Alpha-blockers",
+      "consequence": "Greater antihypertensive effect and higher risk of orthostatic hypotension.",
+      "action": "Be aware of additive effect.",
+      "sourceWording": "may increase the antihypertensive effects of captopril",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Concomitant use of alpha blocking agents may increase the antihypertensive effects of captopril and increase the risk of orthostatic hypotension."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "captopril",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Other antihypertensives",
+      "consequence": "Increased hypotensive effect.",
+      "action": "Be aware of additive effect.",
+      "sourceWording": "may increase the hypotensive effects of captopril",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Concomitant use of these agents may increase the hypotensive effects of captopril."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:tricyclic-antidepressant",
+      "kind": "interaction",
+      "level": "info",
+      "med": "captopril",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hypotension",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "Enhanced hypotensive effect; postural hypotension may occur.",
+      "action": "Be aware of additive effect.",
+      "sourceWording": "Postural hypotension may occur",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "ACE inhibitors may enhance the hypotensive effects of certain tricyclic antidepressants and antipsychotics"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Postural hypotension may occur."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "captopril",
+      "other": "group:sympathomimetic",
+      "concern": "Sympathomimetics",
+      "consequence": "May reduce the antihypertensive effect.",
+      "action": "Monitor the patient carefully.",
+      "sourceWording": "patients should be carefully monitored",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "May reduce the anti-hypertensive effects of ACE inhibitors: patients should be carefully monitored."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:allopurinol",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "captopril",
+      "other": "allopurinol",
+      "effect": "bone-marrow-suppression",
+      "concern": "Allopurinol",
+      "consequence": "Increased risk of leucopenia/neutropenia, especially with renal impairment.",
+      "action": "Use with extreme caution; white cell and differential counts before, every 2 weeks for 3 months, then periodically.",
+      "sourceWording": "should be used with extreme caution",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Captopril should be used with extreme caution in patients with pre-existing impaired renal function, collagen vascular disease, immunosuppressant therapy, treatment with allopurinol or procainamide"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Concomitant administration with ACE inhibitors may lead to an increased risk for leucopenia"
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "captopril",
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate (cytostatic/immunosuppressive agent)",
+      "consequence": "Increased risk of leucopenia; serious infections reported with ACE inhibitors in patients on immunosuppressant therapy.",
+      "action": "Use with extreme caution; monitor white cell and differential counts.",
+      "sourceWording": "should be used with extreme caution",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Allopurinol, procainamide cytostatic or immunosuppressive agents: Concomitant administration with ACE inhibitors may lead to an increased risk for leucopenia"
+        },
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Captopril should be used with extreme caution in patients with pre-existing impaired renal function, collagen vascular disease, immunosuppressant therapy"
+        },
+        {
+          "s": "emc-511",
+          "q": "The immunosuppressive effect of methotrexate should be taken into account"
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:vildagliptin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "captopril",
+      "other": "vildagliptin",
+      "concern": "Vildagliptin",
+      "consequence": "Increased risk of angioedema.",
+      "action": "Use caution when starting vildagliptin in a patient already taking an ACE inhibitor.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:vildagliptin-metformin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "captopril",
+      "other": "vildagliptin-metformin",
+      "concern": "Vildagliptin/metformin",
+      "consequence": "Increased risk of angioedema (vildagliptin component).",
+      "action": "Use caution when starting vildagliptin in a patient already taking an ACE inhibitor.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor."
+        }
+      ]
+    },
+    {
+      "id": "captopril:interaction:racecadotril",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "captopril",
+      "other": "racecadotril",
+      "concern": "Racecadotril",
+      "consequence": "Increased risk of angioedema.",
+      "action": "Use caution when starting racecadotril in a patient already taking an ACE inhibitor.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        {
+          "s": "mhra-captopril-50-spc",
+          "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor."
+        }
+      ]
+    }
+  ]
+}

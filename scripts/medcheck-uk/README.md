@@ -19,7 +19,8 @@ The tool lives at Tools → Pharmacology → Medication Safety Checker (`src/com
 **Not used:** non-UK sources, pharmacy websites, and AI summaries. The full policy is in `SCHEMA.md`.
 
 ## Files
-- **`vocab.json`:** master list of the 34 medicines, plus groups, effects and the starting condition list.
+- **`vocab.json`:** master list of the 235 medicines (the original 34 plus every medicine in the site's Clinic list), plus groups, effects and the starting condition list.
+- **`clinic-map.json`:** each Clinic row → its checker medicine (or why it is excluded, e.g. devices).
 - **`medicines/<id>.json`:**
   - one file per medicine, holding its table sections and its engine rules;
   - every statement has verbatim quotes, as `src: [{ s: sourceId, q: quote }]`.
@@ -27,7 +28,8 @@ The tool lives at Tools → Pharmacology → Medication Safety Checker (`src/com
 - **`tool.json`:** sources for logic the tool applies itself, plus the condition "is a kind of" map:
   - NICE NG203 GFR categories for the kidney link;
   - MHRA and SPS guidance on when to use Cockcroft-Gault CrCl.
-- **`audit/A.md`–`G.md`:** independent second-check logs. Each lists every correction, with its quote.
+- **`audit/*.md`:** independent second-check logs (one per batch or pair of batches, plus `backfill-A-G.md` and `groups-cross-batch.md`). Each lists every correction, with its quote.
+- **Output:** `public/medcheck/kb.json` (rules, loaded first) and `public/medcheck/kb-details.json` (the medicine tables, loaded when opened).
 
 ## Commands (run from the repo root)
 ```
@@ -45,4 +47,5 @@ Every quote was found word for word on the source page when `verify.mjs` was las
 
 It does **not** mean:
 - that a pharmacist or doctor has clinically validated the rules;
-- that interaction coverage is complete. Coverage is only what these UK SmPCs say about the 34 medicines in this list.
+- that interaction coverage is complete. Coverage is only what these UK sources say about the 235 medicines in this list.
+- that every Clinic product is covered: products with no UK product information are shown as "not checked" (combinations are checked through any UK-licensed ingredients, clearly labelled).

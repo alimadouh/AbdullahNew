@@ -1,0 +1,1367 @@
+{
+  "id": "colecalciferol",
+  "name": "Colecalciferol (vitamin D3)",
+  "ingredients": [
+    "colecalciferol"
+  ],
+  "className": "Vitamin D and analogues",
+  "groups": [
+    "vitamin-d"
+  ],
+  "searchTerms": [
+    "vitamin D3",
+    "vitamin D",
+    "cholecalciferol"
+  ],
+  "formulations": [
+    {
+      "id": "colecalciferol-drops",
+      "label": "Oral drops / oral solution",
+      "route": "oral",
+      "strengths": "UK products used: 2740 IU/ml drops (3 drops = 200 IU); 10 000 I.U./ml drops (1 drop = 200 I.U.); 3000 IU/ml oral solution (measuring syringe)",
+      "release": "n/a",
+      "note": "No UK SmPC was found for a 2000 IU/ml drop. Three UK liquid products with other strengths are used here. IU per drop and per ml differ between products, so the dose must be worked out from the product actually supplied.",
+      "src": [
+        {
+          "s": "emc-6861",
+          "q": "1 ml oral solution contains: 2740 IU Colecalciferol"
+        },
+        {
+          "s": "emc-6861",
+          "q": "3 drops contains 200 IU Colecalciferol (vitamin D3)"
+        },
+        {
+          "s": "emc-7044",
+          "q": "1 drop contains 200 I.U. colecalciferol (vitamin D3), equivalent to 0.005 mg."
+        },
+        {
+          "s": "emc-8091",
+          "q": "Each ml contains 3000IU colecalciferol."
+        }
+      ],
+      "sourceIds": [
+        "emc-6861",
+        "emc-7044",
+        "emc-8091"
+      ]
+    },
+    {
+      "id": "colecalciferol-cap-50000",
+      "label": "Capsules, soft 50,000 IU",
+      "route": "oral",
+      "strengths": "50,000 IU colecalciferol (1250 micrograms vitamin D3) per capsule",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "50,000IU Colecalciferol (equivalent to 1250 mcg vitamin D3)"
+        }
+      ],
+      "sourceIds": [
+        "mhra-pl20416-0805-spc"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Prevention and treatment of vitamin D deficiency; adjunct to specific osteoporosis therapy in patients with, or at risk of, vitamin D deficiency.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "The prevention and treatment of vitamin D deficiency."
+            },
+            {
+              "s": "emc-6861",
+              "q": "As an adjunct to specific therapy for osteoporosis in patients with vitamin D deficiency or at risk of vitamin D insufficiency."
+            }
+          ]
+        },
+        {
+          "t": "50,000 IU capsules: treatment of vitamin D deficiency in adults only.",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Treatment of Vitamin D deficiency. Target populations: Adults"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "50,000 IU capsules: patients with sarcoidosis or pseudohypoparathyroidism, or taking thiazide diuretics or cardiac glycosides, must be referred to their doctor and not supplied it as a pharmacy medicine.",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Patients with sarcoidosis, Pseudohypoparathyroidism and patients taking thiazide diuretics or cardiac glycosides must be referred to their doctor and not supplied this as a Pharmacy medicine."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "tag": "Treatment of deficiency (adults, 2740 IU/ml drops SmPC)",
+          "t": "Adults and elderly: 800-4,000 IU daily for up to 12 weeks, then maintenance 800-1,600 IU daily.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Treatment vitamin D deficiency should be for up to 12 weeks dependent upon the severity of the disease"
+            },
+            {
+              "s": "emc-6861",
+              "q": "Adults and the elderly Treatment of vitamin D deficiency 12  60 drops (800  4,000 IU) daily."
+            },
+            {
+              "s": "emc-6861",
+              "q": "Prevention of vitamin D deficiency 12  24 drops (800  1,600 IU) daily."
+            }
+          ]
+        },
+        {
+          "tag": "Treatment of deficiency (adults, 3000 IU/ml solution SmPC)",
+          "t": "One UK oral solution SmPC: 4000 IU daily for 10 weeks (280,000 IU in total), then maintenance 800-2000 IU daily (occasionally up to 4000 IU daily).",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8091",
+              "q": "Treatment dose: 4000 IU daily (1.33ml) for 10 weeks (280,000 IU in total)."
+            },
+            {
+              "s": "emc-8091",
+              "q": "Maintenance dose: 800-2000 IU daily (0.27ml-0.67ml) (occasionally up to 4000 IU daily may be required)."
+            }
+          ]
+        },
+        {
+          "tag": "Prevention / osteoporosis adjunct (adults)",
+          "t": "Prevention or maintenance: 800-1,600 IU daily. Adjunct to osteoporosis therapy: 800 IU daily.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "As an adjunct to specific therapy for osteoporosis 12 drops (800 IU) daily."
+            }
+          ]
+        },
+        {
+          "tag": "Maximum daily dose (10 000 I.U./ml drops SmPC)",
+          "t": "One UK drops SmPC: adult daily dose should not exceed 4 000 I.U.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-7044",
+              "q": "The daily dose should not exceed 4 000 I.U. (20 drops per day)."
+            }
+          ]
+        },
+        {
+          "tag": "Treatment of deficiency (50,000 IU capsules)",
+          "t": "Adults: 50,000 IU (1 capsule) once a week for 6-8 weeks, then maintenance (1400-2000 IU/day may be needed, e.g. 1 capsule per month). Re-check 25(OH)D about 3-4 months after starting maintenance.",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "50,000 IU/week (1 capsule) for 6-8 weeks, followed by maintenance therapy (1400-2000 IU/day may be required, such as 1 capsule per month;"
+            },
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "follow up 25(OH)D measurements should be made approximately three to four months after initiating maintenance therapy"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "tag": "2740 IU/ml drops SmPC",
+          "t": "Licensed from birth. Treatment of deficiency: 0-2 years 400-1,000 IU/day; 2-11 years 400-2,000 IU/day; 12-18 years 400-4,000 IU/day. Prevention/maintenance: 0-2 years 200-1,000 IU/day; 2-11 years 400-1,000 IU/day; 12-18 years 400-1,600 IU/day.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Infants aged 0 up to 2 years Treatment of vitamin D deficiency"
+            },
+            {
+              "s": "emc-6861",
+              "q": "400  1,000 IU/day 400  2,000 IU/day 400  4,000 IU/day"
+            },
+            {
+              "s": "emc-6861",
+              "q": "200  1,000 IU/day 400  1,000 IU/day 400  1,600 IU/day"
+            }
+          ]
+        },
+        {
+          "tag": "10 000 I.U./ml drops SmPC: maximum daily doses",
+          "t": "Treatment in children should not exceed 1 000 I.U./day under 1 year, 2 000 I.U./day at 1-10 years and 4 000 I.U./day over 11 years.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-7044",
+              "q": "The daily dose should not exceed 1 000 I.U. per day for infants <1 year, 2 000 I.U. per day for children 1-10 years and 4 000 I.U. per day for adolescents >11 years."
+            }
+          ]
+        },
+        {
+          "tag": "Do not mix into a bottle",
+          "t": "Drops must not be mixed into a bottle of milk or a container of soft food, in case the child does not take the whole dose.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "must not be mixed into a bottle of milk or container of soft foods in case the child does not consume the whole portion"
+            }
+          ]
+        },
+        {
+          "tag": "3000 IU/ml solution SmPC",
+          "t": "One UK oral solution is licensed only over 12 years: no data under 12 years.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8091",
+              "q": "Children < 12 years No data are available."
+            }
+          ]
+        },
+        {
+          "tag": "50,000 IU capsules",
+          "t": "Not recommended in children (lack of clinical data).",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Paediatric - Due to lack of clinical data, Colecalciferol Capsule is not recommended."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to vitamin D or to any excipient.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Hypersensitivity to vitamin D or any of the excipients in the product"
+            }
+          ]
+        },
+        {
+          "t": "Hypercalcaemia and/or hypercalciuria (diseases or conditions causing them).",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Diseases or conditions resulting in hypercalcaemia and/or hypercalciuria"
+            },
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Hypercalcaemia and/or hypercalciuria."
+            }
+          ]
+        },
+        {
+          "t": "Hypervitaminosis D.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Hypervitaminosis D"
+            }
+          ]
+        },
+        {
+          "t": "Nephrolithiasis (kidney stones); nephrocalcinosis (oral solution and 50,000 IU capsule SmPCs). One drops SmPC limits the kidney-stone contraindication to patients with current chronic hypercalcaemia.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Nephrolithiasis"
+            },
+            {
+              "s": "emc-8091",
+              "q": "Nephrolithiasis Nephrocalcinosis"
+            },
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Nephrolithiasis and/or nephrocalcinosis"
+            },
+            {
+              "s": "emc-7044",
+              "q": "Kidney stones (nephrolithiasis, nephrocalcinosis) in patients with current chronic hypercalcaemia"
+            }
+          ]
+        },
+        {
+          "t": "Severe renal impairment (one SmPC defines this as eGFR <30 ml/min/1.73m2).",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Severe renal impairment"
+            },
+            {
+              "s": "emc-8091",
+              "q": "typically defined as a patient with eGFR of <30 ml/min/1.73m2"
+            }
+          ]
+        },
+        {
+          "t": "50,000 IU capsules: also pseudohypoparathyroidism.",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Pseudohypoparathyroidism as the vitamin D requirement may be reduced due to phases of normal vitamin D sensitivity, involving the risk of prolonged overdose."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Renal impairment: use with caution and monitor the effect on calcium and phosphate; consider the risk of soft tissue calcification.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Vitamin D should be used with caution in patients with impairment of renal function and the effect on calcium and phosphate levels should be monitored."
+            }
+          ]
+        },
+        {
+          "t": "Sarcoidosis: prescribe with caution (increased conversion to the active form); monitor serum and urine calcium.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "should be prescribed with caution to patients suffering from sarcoidosis because of the risk of increased metabolism of vitamin D to its active form."
+            },
+            {
+              "s": "emc-6861",
+              "q": "These patients should be monitored with regard to the calcium content in serum and urine."
+            }
+          ]
+        },
+        {
+          "t": "Cardiovascular disease treated with cardiac glycosides (digitalis): caution.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Caution is required in patients receiving treatment for cardiovascular disease"
+            }
+          ]
+        },
+        {
+          "t": "Allow for vitamin D from other sources. Extra calcium only under close medical supervision. Medical supervision is needed to prevent hypercalcaemia.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Allowances should be made for vitamin D supplements from other sources."
+            },
+            {
+              "s": "emc-6861",
+              "q": "Calcium supplements should be given under close medical supervision."
+            },
+            {
+              "s": "emc-6861",
+              "q": "Medical supervision is required whilst on treatment to prevent hypercalcaemia."
+            }
+          ]
+        },
+        {
+          "t": "One oral solution SmPC: caution in immobilised patients with osteoporosis and in others at increased risk of hypercalcaemia (e.g. malignancy). Patients with primary hyperparathyroidism and vitamin deficiency should have serum calcium measured.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8091",
+              "q": "Colecalciferol should be used with caution in immobilised patients with osteoporosis due to increased risk of hypercalcaemia."
+            },
+            {
+              "s": "emc-8091",
+              "q": "Patients with primary hyperparathyroidism and vitamin deficiency should have their serum calcium measured."
+            }
+          ]
+        },
+        {
+          "t": "One oral solution SmPC: raised PTH or rickets - give calcium with vitamin D, because correcting vitamin D can cause hypocalcaemia ('hungry bone' syndrome).",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8091",
+              "q": "For patients with elevated levels of parathyroid hormone (PTH) or clinical evidence of rickets, calcium should be supplemented along with vitamin D."
+            }
+          ]
+        },
+        {
+          "t": "One oral solution SmPC contains almond oil: not suitable for someone with a nut allergy.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8091",
+              "q": "Almond oil (nut oil): Not suitable for someone with nut allergy."
+            }
+          ]
+        },
+        {
+          "t": "50,000 IU capsules: high-dose vitamin D3 (500,000 IU single annual bolus) was linked to more fractures in elderly people, mostly in the first 3 months.",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Oral administration of high-dose Vitamin D3 (500,000 IU by single annual bolus) was reported to result in an increased risk of fractures in elderly subjects"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "tag": "Thiazide diuretics",
+          "t": "Thiazides reduce urinary calcium excretion: monitor serum calcium regularly (risk of hypercalcaemia).",
+          "src": [
+            {
+              "s": "emc-8091",
+              "q": "Due to the increased risk of hypercalcaemia, serum calcium should be regularly monitored during concomitant use of thiazide diuretics."
+            },
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "In cases of treatment with thiazide diuretics, which decrease urinary elimination of calcium, monitoring of serum calcium concentration is recommended."
+            }
+          ]
+        },
+        {
+          "tag": "Cardiac glycosides (digitalis)",
+          "t": "Vitamin D may increase the risk of digitalis toxicity (arrhythmia). Strict medical supervision, with serum calcium and ECG monitoring if needed.",
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "the administration of Vitamin D3 may increase the risk of digitalis toxicity (arrhythmia)."
+            },
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Strict medical supervision is needed, together with serum calcium concentration and electrocardiographic monitoring if necessary."
+            }
+          ]
+        },
+        {
+          "tag": "Glucocorticoids",
+          "t": "Glucocorticoids can decrease the effect of vitamin D; one SmPC says the colecalciferol dose may need to be increased.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Concomitant use of glucocorticoids can decrease the effect of vitamin D."
+            },
+            {
+              "s": "emc-8091",
+              "q": "During concomitant use, it may be necessary to increase the dose of colecalciferol."
+            }
+          ]
+        },
+        {
+          "tag": "Anticonvulsants / enzyme inducers",
+          "t": "Anticonvulsants (such as phenytoin), barbiturates and possibly other enzyme-inducing drugs may reduce the effect of vitamin D.",
+          "src": [
+            {
+              "s": "emc-7044",
+              "q": "Concomitant use of anticonvulsants (such as phenytoin) or barbiturates (and possibly other drugs that induce hepatic enzymes) may reduce the effect of vitamin D3 by metabolic inactivation."
+            }
+          ]
+        },
+        {
+          "tag": "Reduced absorption",
+          "t": "Ion exchange resins (e.g. colestyramine), orlistat and paraffin oil may reduce vitamin D absorption.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7044",
+              "q": "Simultaneous treatment with ion exchange resin such as cholestyramine, colestipol hydrochloride, orlistat or laxative such as paraffin oil, may reduce the gastrointestinal absorption of vitamin D3."
+            }
+          ]
+        },
+        {
+          "tag": "Imidazole antifungals, actinomycin",
+          "t": "Actinomycin and imidazole antifungals interfere with vitamin D activation in the kidney.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "The cytotoxic agent actinomycin and imidazole antifungal agents interfere with vitamin D activity"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Contraindicated in severe renal impairment. One UK SmPC defines severe as eGFR <30 ml/min/1.73m2. Colecalciferol is not metabolised normally in severe renal insufficiency: other forms of vitamin D should be used.",
+          "src": [
+            {
+              "s": "emc-8091",
+              "q": "Colecalciferol should not be used in patients with severe renal impairment (typically defined as a patient with eGFR of <30 ml/min/1.73m2"
+            },
+            {
+              "s": "emc-6861",
+              "q": "In patients with severe renal insufficiency, vitamin D in the form of colecalciferol is not metabolised normally and other forms of vitamin D should be used"
+            }
+          ]
+        },
+        {
+          "t": "Mild or moderate renal impairment: no specific dose adjustment, but use with caution and monitor calcium and phosphate.",
+          "src": [
+            {
+              "s": "emc-7044",
+              "q": "Patients with mild or moderate renal impairment: no specific adjustment is required"
+            },
+            {
+              "s": "emc-8091",
+              "q": "Patients with mild to moderate impairment of renal function should be supervised carefully and the effect on calcium and phosphate levels should be monitored."
+            }
+          ]
+        },
+        {
+          "t": "50,000 IU capsules: should not be used together with calcium in severe renal impairment.",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Colecalciferol Capsule should not be used in combination with calcium in patients with severe renal impairment."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No dose adjustment required in hepatic impairment.",
+          "src": [
+            {
+              "s": "emc-8091",
+              "q": "Dose in hepatic impairment: No dose adjustment is required."
+            },
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "No posology adjustment is required in patients with hepatic impairment"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "tag": "Drops / oral solution SmPCs",
+          "t": "Recommended intake in pregnancy is 400 IU daily; deficient women may need more. The UK drops SmPCs differ on the upper treatment dose: one says up to 2 000 I.U./day, another gives 400-4,000 IU daily for treatment in pregnancy and breastfeeding. Avoid overdose: prolonged hypercalcaemia can harm the child.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "The recommended daily intake for pregnant women is 400 IU, however, in women who are considered to be vitamin D deficient a higher dose may be required."
+            },
+            {
+              "s": "emc-7044",
+              "q": "(up to 2 000 I.U. /day - 10 drops)"
+            },
+            {
+              "s": "emc-6861",
+              "q": "During pregnancy and breast-feeding Treatment of vitamin D deficiency 6  60 drops (400  4,000 IU) daily."
+            },
+            {
+              "s": "emc-7044",
+              "q": "Overdoses of vitamin D must be avoided during pregnancy, as prolonged hypercalcaemia may lead to retardation of physical and mental development, supravalvular aortic stenosis and retinopathy in the child."
+            }
+          ]
+        },
+        {
+          "tag": "50,000 IU capsules",
+          "t": "High-strength capsule not recommended in pregnancy: use a low-strength product.",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "In pregnancy and lactation the high strength formulation is not recommended and a low strength formulation should be used."
+            }
+          ]
+        },
+        {
+          "tag": "SPS",
+          "t": "SPS: to treat deficiency in pregnancy consider 1000-2000 units daily (up to 4000 units daily in some severe symptomatic cases). Do not use vitamin D injections. Check adjusted calcium 1 month after starting.",
+          "src": [
+            {
+              "s": "sps-vitamin-d-pregnancy",
+              "q": "Consider a daily dose between 1000 units to 2000 units to manage vitamin D deficiency during pregnancy."
+            },
+            {
+              "s": "sps-vitamin-d-pregnancy",
+              "q": "It may be appropriate to consider a daily dose of up to 4000 units in some cases of severe vitamin D deficiency that is symptomatic."
+            },
+            {
+              "s": "sps-vitamin-d-pregnancy",
+              "q": "Do not prescribe vitamin D injections in pregnancy."
+            },
+            {
+              "s": "sps-vitamin-d-pregnancy",
+              "q": "Check adjusted plasma calcium levels 1 month after starting vitamin D in case primary hyperparathyroidism has been unmasked."
+            }
+          ]
+        },
+        {
+          "tag": "BUMPS",
+          "t": "BUMPS: vitamin D is safe in pregnancy; NHS advice is a daily supplement for all pregnant women from September to March.",
+          "detail": true,
+          "src": [
+            {
+              "s": "bumps-vitamin-d",
+              "q": "Vitamin D is safe during pregnancy and is needed for your health and your baby's development."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "tag": "SPS",
+          "t": "SPS: can be used. Maintenance doses up to 4000 units daily need no infant monitoring. Loading doses up to 300,000 units over 6-10 weeks can be used, but the infant must be monitored.",
+          "src": [
+            {
+              "s": "sps-vitamin-d-breastfeeding",
+              "q": "Vitamin D loading doses of up to 300,000 units given over 6-10 weeks can be used during breastfeeding for rapid treatment. Infant monitoring is required."
+            },
+            {
+              "s": "sps-vitamin-d-breastfeeding",
+              "q": "Long term maintenance doses up to 4000 units daily can also be used during breastfeeding but do not require any infant monitoring."
+            }
+          ]
+        },
+        {
+          "tag": "Drops SmPCs",
+          "t": "Vitamin D passes into breast milk. When giving extra vitamin D to a breastfed infant, consider the mother's dose.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "when prescribing additional vitamin D to a breast-fed child the practitioner should consider the dose of any additional vitamin D given to the mother."
+            }
+          ]
+        },
+        {
+          "tag": "50,000 IU capsules",
+          "t": "The 50,000 IU capsule SmPC says the high strength is not recommended during lactation (use a low strength), although vitamin D3 can be prescribed while breastfeeding if necessary. This is stricter than SPS.",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "In pregnancy and lactation the high strength formulation is not recommended and a low strength formulation should be used."
+            },
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Vitamin D3 can be prescribed while the patient is breast-feeding if necessary."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No data on fertility; normal vitamin D levels are not expected to affect fertility.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7044",
+              "q": "However, normal endogenous levels of vitamin D are not expected to have any adverse effects on fertility."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "tag": "Uncommon / rare",
+          "t": "No common effects listed. Uncommon: hypercalcaemia, hypercalciuria. Rare: pruritus, rash, urticaria.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Uncommon: Hypercalcaemia and hypercalciuria."
+            },
+            {
+              "s": "emc-6861",
+              "q": "Rare: Pruritus, rash and urticaria."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Overdose causes hypercalcaemia (nausea, vomiting, polyuria, anorexia, weakness, thirst, constipation); chronic overdose can cause vascular and organ calcification. Stop all vitamin D and rehydrate.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "The most serious consequence of acute or chronic overdose is hypercalcaemia due to vitamin D toxicity."
+            },
+            {
+              "s": "emc-6861",
+              "q": "Treatment should consist of stopping all intake of vitamin D and rehydration."
+            }
+          ]
+        },
+        {
+          "t": "50,000 IU capsules: hypersensitivity reactions such as angio-oedema or laryngeal oedema (frequency not known).",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Hypersensitivity reactions such as angio-oedema or laryngeal oedema."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "tag": "ongoing",
+          "t": "Long-term daily doses above 1,000 IU: monitor serum calcium.",
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "During long-term treatment with a daily dose exceeding 1,000 IU vitamin D the serum calcium values must be monitored."
+            }
+          ]
+        },
+        {
+          "tag": "ongoing",
+          "t": "One oral solution SmPC: long-term treatment - follow serum and urine calcium and serum creatinine; repeat 25(OH)D about 3-4 months after starting treatment for deficiency.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-8091",
+              "q": "During long-term treatment, serum and urinary calcium levels should be followed and renal function should be monitored through measurements of serum creatinine."
+            },
+            {
+              "s": "emc-8091",
+              "q": "Patients being treated specifically for vitamin D deficiency require a repeat 25(OH)D measurement approximately three to four months after initiating therapy as necessary."
+            }
+          ]
+        },
+        {
+          "tag": "stop",
+          "t": "Stop when serum calcium exceeds 2.65 mmol/l (10.6 mg/dl) or urine calcium exceeds 300 mg/24 hours in adults (4-6 mg/kg/day in children). One SmPC: reduce or stop if hypercalcaemia or signs of impaired renal function.",
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "Discontinue Colecalciferol Capsule when calcaemia exceeds 10.6 mg/dl (2.65 mmol/l) or if the calciuria exceeds 300 mg/24 hours in adults or 4-6 mg/kg/day in children."
+            },
+            {
+              "s": "emc-8091",
+              "q": "In case of hypercalcaemia or signs of impaired renal function the dose should be reduced or the treatment discontinued."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Drops: put onto a spoon, or mix with a small amount of cold or lukewarm food just before use; make sure the whole dose is taken. One SmPC advises taking with a meal.",
+          "formulations": [
+            "colecalciferol-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "can be dispensed onto a spoon and taken as is or to facilitate the intake it can also be mixed with a small amount of cold or lukewarm food immediately prior to use."
+            },
+            {
+              "s": "emc-7044",
+              "q": "Patients should be advised to take THORENS preferably with a meal"
+            }
+          ]
+        },
+        {
+          "t": "Capsules: swallow whole (not chewed) with water, preferably with a meal.",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "The capsules should be swallowed whole (not chewed) with water. In order to enhance absorption, it is recommended to take Colecalciferol capsule with a meal."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Tell the prescriber about any other vitamin D or calcium supplements and fortified foods.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Allowances should be made for vitamin D supplements from other sources."
+            }
+          ]
+        },
+        {
+          "t": "Report signs of too much calcium: nausea, vomiting, thirst, passing a lot of urine, constipation, weakness.",
+          "src": [
+            {
+              "s": "emc-6861",
+              "q": "Symptoms may include nausea, vomiting, polyuria, anorexia, weakness, apathy, thirst and constipation."
+            }
+          ]
+        },
+        {
+          "t": "50,000 IU capsule is a weekly (not daily) dose during treatment.",
+          "formulations": [
+            "colecalciferol-cap-50000"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl20416-0805-spc",
+              "q": "50,000 IU/week (1 capsule) for 6-8 weeks"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "colecalciferol:allergy:colecalciferol",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "colecalciferol",
+      "allergen": [
+        "colecalciferol"
+      ],
+      "concern": "Hypersensitivity to vitamin D or excipients",
+      "consequence": "Allergic reaction.",
+      "action": "Do not use (listed in SmPC 4.3).",
+      "sourceWording": "Hypersensitivity to vitamin D",
+      "src": [
+        {
+          "s": "emc-6861",
+          "q": "Hypersensitivity to vitamin D or any of the excipients in the product"
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:hypercalcaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "colecalciferol",
+      "condition": "hypercalcaemia",
+      "concern": "Hypercalcaemia (or conditions causing it)",
+      "consequence": "Worsening hypercalcaemia.",
+      "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "Diseases or conditions resulting in hypercalcaemia and/or hypercalciuria",
+      "src": [
+        {
+          "s": "emc-6861",
+          "q": "Diseases or conditions resulting in hypercalcaemia and/or hypercalciuria"
+        },
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "Hypercalcaemia and/or hypercalciuria."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:hypercalciuria",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "colecalciferol",
+      "condition": "hypercalciuria",
+      "concern": "Hypercalciuria",
+      "consequence": "Further rise in urinary calcium; stone risk.",
+      "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "Diseases or conditions resulting in hypercalcaemia and/or hypercalciuria",
+      "src": [
+        {
+          "s": "emc-6861",
+          "q": "Diseases or conditions resulting in hypercalcaemia and/or hypercalciuria"
+        },
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "Hypercalcaemia and/or hypercalciuria."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:vitamin-d-overdose",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "colecalciferol",
+      "condition": "vitamin-d-overdose",
+      "concern": "Hypervitaminosis D",
+      "consequence": "Vitamin D toxicity and hypercalcaemia.",
+      "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "Hypervitaminosis D",
+      "src": [
+        {
+          "s": "emc-6861",
+          "q": "Hypervitaminosis D"
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:renal-calculi",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "colecalciferol",
+      "condition": "renal-calculi",
+      "concern": "Kidney stones (nephrolithiasis)",
+      "consequence": "Stone formation may worsen.",
+      "action": "Do not use (SmPC 4.3). One drops SmPC limits this to patients with current chronic hypercalcaemia.",
+      "sourceWording": "Nephrolithiasis",
+      "src": [
+        {
+          "s": "emc-6861",
+          "q": "Nephrolithiasis"
+        },
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "Nephrolithiasis and/or nephrocalcinosis"
+        },
+        {
+          "s": "emc-7044",
+          "q": "Kidney stones (nephrolithiasis, nephrocalcinosis) in patients with current chronic hypercalcaemia"
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:nephrocalcinosis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "colecalciferol",
+      "condition": "nephrocalcinosis",
+      "concern": "Nephrocalcinosis",
+      "consequence": "Further renal calcium deposition.",
+      "action": "Do not use (SmPC 4.3 of the oral solution and 50,000 IU capsule).",
+      "sourceWording": "Nephrocalcinosis",
+      "src": [
+        {
+          "s": "emc-8091",
+          "q": "Nephrolithiasis Nephrocalcinosis"
+        },
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "Nephrolithiasis and/or nephrocalcinosis"
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:renal:egfr30",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "colecalciferol",
+      "renal": {
+        "measure": "eGFR",
+        "max": 30,
+        "maxInclusive": false
+      },
+      "concern": "Severe renal impairment (eGFR <30 ml/min/1.73m2)",
+      "consequence": "Colecalciferol is not activated normally; risk of calcium and phosphate problems.",
+      "action": "Do not use; use another form of vitamin D. Threshold from one UK SmPC; others say only 'severe renal impairment'.",
+      "sourceWording": "should not be used in patients with severe renal impairment",
+      "src": [
+        {
+          "s": "emc-8091",
+          "q": "Colecalciferol should not be used in patients with severe renal impairment (typically defined as a patient with eGFR of <30 ml/min/1.73m2"
+        },
+        {
+          "s": "emc-8091",
+          "q": "Severe renal impairment"
+        },
+        {
+          "s": "emc-6861",
+          "q": "In patients with severe renal insufficiency, vitamin D in the form of colecalciferol is not metabolised normally and other forms of vitamin D should be used"
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:severe-renal-impairment",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "colecalciferol",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal impairment",
+      "consequence": "Colecalciferol is not activated normally.",
+      "action": "Do not use (SmPC 4.3); use another form of vitamin D.",
+      "sourceWording": "Severe renal impairment",
+      "src": [
+        {
+          "s": "emc-6861",
+          "q": "Severe renal impairment"
+        },
+        {
+          "s": "emc-6861",
+          "q": "In patients with severe renal insufficiency, vitamin D in the form of colecalciferol is not metabolised normally and other forms of vitamin D should be used"
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "colecalciferol",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment (mild to moderate)",
+      "consequence": "Risk of disturbed calcium and phosphate; soft tissue calcification.",
+      "action": "Use with caution; monitor calcium and phosphate. No specific dose adjustment.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-6861",
+          "q": "Vitamin D should be used with caution in patients with impairment of renal function and the effect on calcium and phosphate levels should be monitored."
+        },
+        {
+          "s": "emc-7044",
+          "q": "Patients with mild or moderate renal impairment: no specific adjustment is required"
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:sarcoidosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "colecalciferol",
+      "condition": "sarcoidosis",
+      "concern": "Sarcoidosis",
+      "consequence": "Increased conversion of vitamin D to its active form; hypercalcaemia risk.",
+      "action": "Prescribe with caution; monitor serum and urine calcium. 50,000 IU capsules: refer to doctor, not for pharmacy supply.",
+      "sourceWording": "should be prescribed with caution",
+      "src": [
+        {
+          "s": "emc-6861",
+          "q": "should be prescribed with caution to patients suffering from sarcoidosis because of the risk of increased metabolism of vitamin D to its active form."
+        },
+        {
+          "s": "emc-6861",
+          "q": "These patients should be monitored with regard to the calcium content in serum and urine."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:pseudohypoparathyroidism",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "colecalciferol",
+      "formulations": [
+        "colecalciferol-cap-50000"
+      ],
+      "condition": "pseudohypoparathyroidism",
+      "concern": "Pseudohypoparathyroidism (50,000 IU capsules)",
+      "consequence": "Vitamin D need may fall; risk of prolonged overdose.",
+      "action": "Do not use the 50,000 IU capsule (SmPC 4.3).",
+      "sourceWording": "Pseudohypoparathyroidism",
+      "src": [
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "Pseudohypoparathyroidism as the vitamin D requirement may be reduced due to phases of normal vitamin D sensitivity, involving the risk of prolonged overdose."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:primary-hyperparathyroidism",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "colecalciferol",
+      "formulations": [
+        "colecalciferol-drops"
+      ],
+      "condition": "primary-hyperparathyroidism",
+      "concern": "Primary hyperparathyroidism with vitamin D deficiency",
+      "consequence": "Hypercalcaemia risk.",
+      "action": "Measure serum calcium (oral solution SmPC).",
+      "sourceWording": "should have their serum calcium measured",
+      "src": [
+        {
+          "s": "emc-8091",
+          "q": "Patients with primary hyperparathyroidism and vitamin deficiency should have their serum calcium measured."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:condition:immobilisation-osteoporosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "colecalciferol",
+      "formulations": [
+        "colecalciferol-drops"
+      ],
+      "condition": "immobilisation-osteoporosis",
+      "concern": "Immobilised patients with osteoporosis",
+      "consequence": "Increased risk of hypercalcaemia.",
+      "action": "Use with caution (oral solution SmPC).",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-8091",
+          "q": "Colecalciferol should be used with caution in immobilised patients with osteoporosis due to increased risk of hypercalcaemia."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:age:cap-under-18",
+      "kind": "age",
+      "level": "avoid",
+      "med": "colecalciferol",
+      "formulations": [
+        "colecalciferol-cap-50000"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "concern": "Children (50,000 IU capsules)",
+      "consequence": "No clinical data in children.",
+      "action": "Not recommended; the capsule is for adults only. Drops are licensed in children.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "Paediatric - Due to lack of clinical data, Colecalciferol Capsule is not recommended."
+        },
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "Target populations: Adults"
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:pregnancy:cap",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "colecalciferol",
+      "formulations": [
+        "colecalciferol-cap-50000"
+      ],
+      "concern": "Pregnancy (50,000 IU capsules)",
+      "consequence": "No clinical data for the high strength.",
+      "action": "Not recommended; use a low-strength product. SPS: consider 1000-2000 units daily for deficiency in pregnancy.",
+      "sourceWording": "the high strength formulation is not recommended",
+      "src": [
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "In pregnancy and lactation the high strength formulation is not recommended and a low strength formulation should be used."
+        },
+        {
+          "s": "sps-vitamin-d-pregnancy",
+          "q": "Consider a daily dose between 1000 units to 2000 units to manage vitamin D deficiency during pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:pregnancy:drops",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "colecalciferol",
+      "formulations": [
+        "colecalciferol-drops"
+      ],
+      "concern": "Pregnancy: avoid vitamin D overdose",
+      "consequence": "Prolonged hypercalcaemia may harm the child (development, supravalvular aortic stenosis, retinopathy).",
+      "action": "Use usual doses (400 IU daily; more if deficient, per medical advice). Avoid overdose. BUMPS: vitamin D is safe in pregnancy.",
+      "sourceWording": "Overdoses of vitamin D must be avoided during pregnancy",
+      "src": [
+        {
+          "s": "emc-7044",
+          "q": "Overdoses of vitamin D must be avoided during pregnancy, as prolonged hypercalcaemia may lead to retardation of physical and mental development, supravalvular aortic stenosis and retinopathy in the child."
+        },
+        {
+          "s": "bumps-vitamin-d",
+          "q": "Vitamin D is safe during pregnancy and is needed for your health and your baby's development."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:breastfeeding:cap",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "colecalciferol",
+      "formulations": [
+        "colecalciferol-cap-50000"
+      ],
+      "concern": "Breastfeeding (50,000 IU capsule SmPC)",
+      "consequence": "Vitamin D passes into breast milk.",
+      "action": "Capsule SmPC: high strength not recommended in lactation; use a low strength. SPS differs: loading doses up to 300,000 units over 6-10 weeks can be used with infant monitoring.",
+      "sourceWording": "the high strength formulation is not recommended",
+      "src": [
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "In pregnancy and lactation the high strength formulation is not recommended and a low strength formulation should be used."
+        },
+        {
+          "s": "sps-vitamin-d-breastfeeding",
+          "q": "Vitamin D loading doses of up to 300,000 units given over 6-10 weeks can be used during breastfeeding for rapid treatment. Infant monitoring is required."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "monitor",
+      "med": "colecalciferol",
+      "concern": "Breastfeeding: loading doses (SPS)",
+      "consequence": "Risk of infant hypercalcaemia rises with higher maternal doses.",
+      "action": "SPS: maintenance up to 4000 units daily needs no infant monitoring; loading doses (up to 300,000 units over 6-10 weeks) need infant monitoring.",
+      "sourceWording": "Infant monitoring is required.",
+      "src": [
+        {
+          "s": "sps-vitamin-d-breastfeeding",
+          "q": "Vitamin D loading doses of up to 300,000 units given over 6-10 weeks can be used during breastfeeding for rapid treatment. Infant monitoring is required."
+        },
+        {
+          "s": "sps-vitamin-d-breastfeeding",
+          "q": "Long term maintenance doses up to 4000 units daily can also be used during breastfeeding but do not require any infant monitoring."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:interaction:thiazide",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "colecalciferol",
+      "other": "group:thiazide",
+      "concern": "Thiazide diuretics",
+      "consequence": "Reduced urinary calcium excretion; risk of hypercalcaemia.",
+      "action": "Monitor serum calcium regularly. 50,000 IU capsules: refer to doctor, not for pharmacy supply.",
+      "sourceWording": "serum calcium should be regularly monitored",
+      "src": [
+        {
+          "s": "emc-8091",
+          "q": "Thiazide diuretics reduce the urinary excretion of calcium."
+        },
+        {
+          "s": "emc-8091",
+          "q": "Due to the increased risk of hypercalcaemia, serum calcium should be regularly monitored during concomitant use of thiazide diuretics."
+        },
+        {
+          "s": "mhra-pl20416-0805-spc",
+          "q": "In cases of treatment with thiazide diuretics, which decrease urinary elimination of calcium, monitoring of serum calcium concentration is recommended."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "colecalciferol",
+      "other": "group:corticosteroid",
+      "concern": "Glucocorticoids",
+      "consequence": "Decreased effect of vitamin D (increased metabolism and elimination).",
+      "action": "One oral solution SmPC: the colecalciferol dose may need to be increased.",
+      "sourceWording": "can decrease the effect of vitamin D",
+      "src": [
+        {
+          "s": "emc-6861",
+          "q": "Concomitant use of glucocorticoids can decrease the effect of vitamin D."
+        },
+        {
+          "s": "emc-8091",
+          "q": "Glucocorticoid steroids may increase vitamin D metabolism and elimination. During concomitant use, it may be necessary to increase the dose of colecalciferol."
+        }
+      ]
+    },
+    {
+      "id": "colecalciferol:interaction:antiepileptic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "colecalciferol",
+      "other": "group:antiepileptic",
+      "concern": "Anticonvulsants (e.g. phenytoin) and other enzyme inducers",
+      "consequence": "Reduced effect of vitamin D (metabolic inactivation).",
+      "action": "No specific action stated; one SmPC notes higher doses may be needed in patients on medicines affecting vitamin D metabolism.",
+      "sourceWording": "may reduce the effect of vitamin D3",
+      "src": [
+        {
+          "s": "emc-7044",
+          "q": "Concomitant use of anticonvulsants (such as phenytoin) or barbiturates (and possibly other drugs that induce hepatic enzymes) may reduce the effect of vitamin D3 by metabolic inactivation."
+        },
+        {
+          "s": "emc-7044",
+          "q": "patients on medications affecting vitamin D3 metabolism, higher doses are required for the treatment and prevention of vitamin D3 deficiency."
+        }
+      ]
+    }
+  ]
+}

@@ -852,7 +852,8 @@
         "ibuprofen-susp"
       ],
       "allergen": [
-        "group:nsaid"
+        "group:nsaid",
+        "aspirin"
       ],
       "concern": "Previous hypersensitivity (asthma, rhinitis, angioedema, urticaria) to aspirin or another NSAID",
       "consequence": "Cross-reactive hypersensitivity, including bronchospasm.",
@@ -874,7 +875,8 @@
         "ibuprofen-tab"
       ],
       "allergen": [
-        "group:nsaid"
+        "group:nsaid",
+        "aspirin"
       ],
       "concern": "Previous hypersensitivity (asthma, urticaria, angioedema, rhinitis) to aspirin or another NSAID",
       "consequence": "Cross-reactive hypersensitivity.",
@@ -1801,6 +1803,162 @@
         {
           "s": "emc-10988",
           "q": "If risk factors such as renal function disorders, including mild renal impairment, are present, combined administration with NSAIDs is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:aspirin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "ibuprofen",
+      "other": "aspirin",
+      "effect": "bleeding",
+      "concern": "Aspirin",
+      "consequence": "More adverse effects (aspirin also adds GI bleeding risk); regular long-term ibuprofen may reduce the heart-protective effect of low-dose aspirin. Occasional use is unlikely to matter.",
+      "action": "Not generally recommended (suspension SmPC lists it under \"should be avoided\").",
+      "sourceWording": "is not generally recommended",
+      "src": [
+        {
+          "s": "emc-4560",
+          "q": "Ibuprofen should be avoided in combination with:"
+        },
+        {
+          "s": "emc-4560",
+          "q": "concomitant administration of ibuprofen and acetylsalicylic acid is not generally recommended because of the potential of increased adverse effects"
+        },
+        {
+          "s": "emc-6713",
+          "q": "the possibility that regular, long-term use of ibuprofen may reduce the cardioprotective effect of low-dose acetylsalicylic acid cannot be excluded"
+        },
+        {
+          "s": "emc-6713",
+          "q": "anti-platelet agents such as aspirin"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:arb",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "group:arb",
+      "concern": "Angiotensin II receptor blockers",
+      "consequence": "NSAIDs may reduce the blood-pressure-lowering effect.",
+      "action": "Use with caution.",
+      "sourceWording": "Ibuprofen should be used with caution in combination with",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "NSAIDs may reduce the effect of anti-hypertensives, such as ACE inhibitors, angiotensin-II receptor antagonists, beta-blockers and diuretics"
+        },
+        {
+          "s": "emc-4560",
+          "q": "Ibuprofen should be used with caution in combination with:"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:beta-blocker",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "group:beta-blocker",
+      "concern": "Beta-blockers",
+      "consequence": "NSAIDs may reduce the blood-pressure-lowering effect.",
+      "action": "Use with caution.",
+      "sourceWording": "Ibuprofen should be used with caution in combination with",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "NSAIDs may reduce the effect of anti-hypertensives, such as ACE inhibitors, angiotensin-II receptor antagonists, beta-blockers and diuretics"
+        },
+        {
+          "s": "emc-4560",
+          "q": "Ibuprofen should be used with caution in combination with:"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:sulfonylurea",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "group:sulfonylurea",
+      "effect": "hypoglycaemia",
+      "concern": "Sulfonylureas",
+      "consequence": "NSAIDs may potentiate sulfonylureas; rare reports of hypoglycaemia with ibuprofen.",
+      "action": "Use with caution.",
+      "sourceWording": "Care should be taken",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Sulfonylureas: NSAIDs may potentiate the effects of sulfonylurea medications. There have been rare reports of hypoglycaemia in patients on sulfonylurea medications receiving ibuprofen."
+        },
+        {
+          "s": "emc-6713",
+          "q": "Care should be taken in patients treated with any of the following drugs as interactions have been reported in some patients."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:fluconazole",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "ibuprofen",
+      "other": "fluconazole",
+      "concern": "Fluconazole (potent CYP2C9 inhibitor)",
+      "consequence": "Ibuprofen exposure raised by about 80 to 100%.",
+      "action": "Consider a lower ibuprofen dose, particularly with high-dose ibuprofen.",
+      "sourceWording": "Reduction of the ibuprofen dose should be considered",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "In a study with voriconazole and fluconazole (CYP2C9 inhibitors), an increased S(+)-ibuprofen exposure by approximately 80 to 100% has been shown."
+        },
+        {
+          "s": "emc-6713",
+          "q": "Reduction of the ibuprofen dose should be considered when potent CYP2C9 inhibitors are administered concomitantly, particularly when high-dose ibuprofen is administered with either voriconazole or fluconazole."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:cyp2c9-inhibitor",
+      "kind": "interaction",
+      "level": "info",
+      "med": "ibuprofen",
+      "other": "group:cyp2c9-inhibitor",
+      "otherExcept": [
+        "fluconazole"
+      ],
+      "concern": "CYP2C9 inhibitors",
+      "consequence": "May increase ibuprofen exposure.",
+      "action": "A dose reduction is advised only for potent CYP2C9 inhibitors (see fluconazole).",
+      "sourceWording": "may increase the exposure to ibuprofen",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Concomitant administration of ibuprofen with CYP2C9 inhibitors may increase the exposure to ibuprofen (CYP2C9 substrate)."
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen:interaction:aminoglycoside",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ibuprofen",
+      "other": "group:aminoglycoside",
+      "concern": "Aminoglycosides",
+      "consequence": "NSAIDs may decrease aminoglycoside excretion.",
+      "action": "Use with caution.",
+      "sourceWording": "Ibuprofen should be used with caution in combination with",
+      "src": [
+        {
+          "s": "emc-6713",
+          "q": "Aminoglycosides: NSAIDs may decrease the excretion of aminoglycosides."
+        },
+        {
+          "s": "emc-4560",
+          "q": "Ibuprofen should be used with caution in combination with:"
         }
       ]
     }

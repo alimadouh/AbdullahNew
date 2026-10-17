@@ -1,0 +1,461 @@
+{
+  "id": "hydrocortisone-topical",
+  "name": "Hydrocortisone (topical)",
+  "ingredients": ["hydrocortisone"],
+  "className": "Topical corticosteroid, mild (weak, group I)",
+  "groups": ["topical-corticosteroid"],
+  "searchTerms": ["hydrocortisone cream", "hydrocortisone 1% cream", "hydrocortisone acetate cream", "topical hydrocortisone"],
+  "formulations": [
+    {
+      "id": "hydrocortisone-topical-cream-pom",
+      "label": "Cream 1% (prescription-only labelling)",
+      "route": "topical",
+      "strengths": "Hydrocortisone 1% w/w (10 mg/g)",
+      "release": "n/a",
+      "note": "Contains chlorocresol and cetostearyl alcohol (may cause allergic or local skin reactions).",
+      "src": [
+        { "s": "emc-12908", "q": "Each gram of cream contains 10 mg hydrocortisone (1 % w/w)." },
+        { "s": "emc-12908", "q": "Chlorocresol may cause allergic reactions. Cetostearyl alcohol may cause local skin reactions (e.g. contact dermatitis)." }
+      ],
+      "sourceIds": ["emc-12908"]
+    },
+    {
+      "id": "hydrocortisone-topical-cream-p",
+      "label": "Cream 1% hydrocortisone acetate (pharmacy-sale labelling)",
+      "route": "topical",
+      "strengths": "Hydrocortisone acetate 1% w/w",
+      "release": "n/a",
+      "note": "Pharmacy-sale licence: narrower indications, maximum 7 days, not under 10 years without medical advice, and not for the face, eyes or ano-genital area.",
+      "src": [
+        { "s": "emc-102471", "q": "Hydrocortisone Acetate EP 1% w/w" },
+        { "s": "emc-102471", "q": "once or twice a day for a maximum of 7 days" },
+        { "s": "emc-102471", "q": "The product should not be used in children under 10 years of age without medical advice." },
+        { "s": "emc-102471", "q": "The product should not be used on the eyes or face (for example, in rosacea or perioral dermatoses), the ano-genital area" }
+      ],
+      "sourceIds": ["emc-102471"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Eczema (atopic, infantile, discoid, stasis), prurigo nodularis, neurodermatoses, seborrhoeic dermatitis, intertrigo and contact sensitivity reactions; also insect bites and otitis externa.",
+        "formulations": ["hydrocortisone-topical-cream-pom"],
+        "src": [
+          { "s": "emc-12908", "q": "eczema, including atopic, infantile, discoid and stasis eczemas; prurigo nodularis, neurodermatoses, seborrhoeic dermatitis, intertrigo and contact sensitivity reactions" },
+          { "s": "emc-12908", "q": "Hydrocortisone preparations can also be used in the management of insect bites and otitis externa." }
+        ] },
+      { "t": "Irritant or allergic contact dermatitis, mild to moderate eczema and insect bite reactions.",
+        "formulations": ["hydrocortisone-topical-cream-p"],
+        "src": [{ "s": "emc-102471", "q": "indicated for the treatment of irritant contact dermatitis, allergic contact dermatitis, mild to moderate eczema and insect bite reactions" }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Pharmacy-sale pack: use for a maximum of 7 days, and not in children under 10 years without medical advice.",
+        "formulations": ["hydrocortisone-topical-cream-p"],
+        "src": [
+          { "s": "emc-102471", "q": "once or twice a day for a maximum of 7 days" },
+          { "s": "emc-102471", "q": "The product should not be used in children under 10 years of age without medical advice." }
+        ] },
+      { "t": "Labelled as a mild steroid (MHRA potency labelling for topical steroids).",
+        "detail": true,
+        "src": [
+          { "s": "emc-12908", "q": "The label will state mild steroid." },
+          { "s": "mhra-dsu-topical-steroids-labelling-2024", "q": "These will be labelled 'mild steroid', 'moderate steroid', 'strong steroid', and 'very strong steroid'." }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Apply a small quantity to the affected area 2 or 3 times daily.",
+        "tag": "Adults, children and elderly (prescription cream)",
+        "formulations": ["hydrocortisone-topical-cream-pom"],
+        "src": [{ "s": "emc-12908", "q": "A small quantity should be applied to the affected area two or three times daily." }] },
+      { "t": "Apply sparingly once or twice a day for a maximum of 7 days, to a small area.",
+        "tag": "Adults and children 10 years and over (pharmacy-sale cream)",
+        "formulations": ["hydrocortisone-topical-cream-p"],
+        "src": [
+          { "s": "emc-102471", "q": "To be applied sparingly to the affected skin once or twice a day for a maximum of 7 days" },
+          { "s": "emc-102471", "q": "Apply accurately and sparingly to a small area." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Prescription cream: same dose for children. Avoid long-term continuous use in infants and children where possible (adrenal suppression can occur even without occlusion). In infants the napkin acts as an occlusive dressing, so limit treatment to a maximum of 7 days if possible.",
+        "formulations": ["hydrocortisone-topical-cream-pom"],
+        "src": [
+          { "s": "emc-12908", "q": "In infants and children, long-term continuous topical therapy should be avoided where possible, as adrenal suppression can occur even without occlusion." },
+          { "s": "emc-12908", "q": "In infants, the napkin may act as an occlusive dressing, and increase absorption. Treatment should therefore be limited, if possible, to a maximum of 7 days." }
+        ] },
+      { "t": "Pharmacy-sale cream: adult dose from 10 years; should not be used under 10 years without medical advice.",
+        "formulations": ["hydrocortisone-topical-cream-p"],
+        "src": [
+          { "s": "emc-102471", "q": "Dosage recommendations as above for children over 10 years of age." },
+          { "s": "emc-102471", "q": "The product should not be used in children under 10 years of age without medical advice." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to hydrocortisone (or hydrocortisone acetate) or any excipient.",
+        "src": [
+          { "s": "emc-12908", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." },
+          { "s": "emc-102471", "q": "Hypersensitivity to hydrocortisone acetate or to any other excipients listed in section 6.1" }
+        ] },
+      { "t": "Skin lesions caused by viral (for example herpes simplex, chickenpox), fungal (for example candidiasis, tinea) or bacterial (for example impetigo) infection.",
+        "formulations": ["hydrocortisone-topical-cream-pom"],
+        "src": [{ "s": "emc-12908", "q": "Skin lesions caused by infection with viruses (e.g. herpes simplex, chicken pox), fungi (e.g. candidiasis, tinea) or bacteria (e.g. impetigo)." }] },
+      { "t": "Pharmacy-sale cream: untreated bacterial, viral, tuberculous or fungal infection; eyes or face (for example rosacea, perioral dermatitis); ano-genital area; broken or infected skin (impetigo, cold sores, acne, athlete's foot, infected bites and stings); under occlusive dressings or on large areas.",
+        "formulations": ["hydrocortisone-topical-cream-p"],
+        "src": [
+          { "s": "emc-102471", "q": "In the presence of untreated infections of bacterial, viral, tuberculous or fungal origin." },
+          { "s": "emc-102471", "q": "The product should not be used on the eyes or face (for example, in rosacea or perioral dermatoses), the ano-genital area or on broken or infected skin including impetigo, cold sores, acne athlete's foot, or infected bites and stings." },
+          { "s": "emc-102471", "q": "Not for use with an occlusive dressing or on large areas of the body." }
+        ] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Topical steroid withdrawal: long-term or inappropriate use can cause rebound flares after stopping (intense redness, stinging and burning that can spread beyond the treated area), more likely on the face and flexures. If the condition recurs within days to weeks after successful treatment, suspect withdrawal; re-apply only with caution, with specialist advice, or consider other treatments.",
+        "src": [
+          { "s": "emc-12908", "q": "Long term continuous or inappropriate use of topical steroids can result in the development of rebound flares after stopping treatment (topical steroid withdrawal syndrome)." },
+          { "s": "emc-12908", "q": "Reapplication should be with caution and specialist advise is recommended in these cases or other treatment options should be considered." },
+          { "s": "mhra-dsu-topical-steroid-withdrawal-2021", "q": "when prescribing a topical corticosteroid, consider the lowest potency needed" }
+        ] },
+      { "t": "Infected lesions: use appropriate antimicrobial therapy; if infection spreads, stop the topical corticosteroid and give systemic antimicrobials.",
+        "formulations": ["hydrocortisone-topical-cream-pom"],
+        "src": [
+          { "s": "emc-12908", "q": "Appropriate antimicrobial therapy should be used whenever treating inflammatory lesions which have become infected." },
+          { "s": "emc-12908", "q": "Any spread of infection requires withdrawal of topical corticosteroid therapy, and systemic administration of antimicrobial agents." }
+        ] },
+      { "t": "Prescription SmPC: prolonged application to the face is undesirable. Pharmacy-sale SmPC: prolonged use is not recommended, because continuous application may cause skin atrophy, striae and superficial vascular dilatation.",
+        "src": [
+          { "s": "emc-12908", "q": "As with all corticosteroids, prolonged application to the face is undesirable." },
+          { "s": "emc-102471", "q": "continuous uninterrupted application may cause local atrophy of the skin, striae and superficial vascular dilatation" }
+        ] },
+      { "t": "Blurred vision or other visual disturbance: consider referral to an ophthalmologist (cataract, glaucoma, central serous chorioretinopathy).",
+        "src": [{ "s": "emc-12908", "q": "the patient should be considered for referral to an ophthalmologist for evaluation of possible causes" }] },
+      { "t": "Fire hazard: fabric in contact with the cream burns more easily; patients must not smoke or go near naked flames.",
+        "detail": true,
+        "src": [{ "s": "emc-12908", "q": "Instruct patients not to smoke or go near naked flames - risk of severe burns." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "No interactions known (pharmacy-sale SmPC); no interaction studies performed (prescription SmPC).",
+        "src": [
+          { "s": "emc-102471", "q": "No known interactions." },
+          { "s": "emc-12908", "q": "No interaction studies have been performed." }
+        ] }
+    ] },
+    "renal": { "status": "not-stated", "note": "Neither UK SmPC (prescription or pharmacy-sale cream) gives renal advice for the cream." },
+    "hepatic": { "status": "not-stated", "note": "Neither UK SmPC (prescription or pharmacy-sale cream) gives hepatic advice for the cream." },
+    "pregnancy": { "items": [
+      { "t": "Prescription SmPC: inadequate evidence of safety in human pregnancy; animal studies showed cleft palate and growth restriction, so a very small risk to the fetus is possible.",
+        "formulations": ["hydrocortisone-topical-cream-pom"],
+        "src": [
+          { "s": "emc-12908", "q": "There is inadequate evidence of safety in human pregnancy." },
+          { "s": "emc-12908", "q": "There may therefore be a very small risk of such effects in the human fetus." }
+        ] },
+      { "t": "Pharmacy-sale SmPC: should not be used in pregnancy without medical advice.",
+        "formulations": ["hydrocortisone-topical-cream-p"],
+        "src": [{ "s": "emc-102471", "q": "This product should not be used in pregnancy without medical advice." }] },
+      { "t": "BUMPS: topical corticosteroids (hydrocortisone is named) can be used in pregnancy; no known risks.",
+        "src": [
+          { "s": "bumps-corticosteroids-topical", "q": "Topical corticosteroids can be used in pregnancy." },
+          { "s": "bumps-corticosteroids-topical", "q": "There are no known risks." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Pharmacy-sale SmPC: should not be used while breastfeeding unless recommended by a healthcare professional; a risk to the infant cannot be excluded.",
+        "formulations": ["hydrocortisone-topical-cream-p"],
+        "src": [
+          { "s": "emc-102471", "q": "This product should not be used whilst breast-feeding unless recommended by a health care professional." },
+          { "s": "emc-102471", "q": "A risk to new-borns/infants cannot be excluded." }
+        ] },
+      { "t": "SPS: hydrocortisone applied to the skin can be used during breastfeeding (low potency). Avoid infant contact with treated skin; if applied to the breast, wipe off with warm water before feeds. Large areas for long periods may need infant monitoring of feeding, growth and weight.",
+        "src": [
+          { "s": "sps-topical-corticosteroids-breastfeeding", "q": "When applied to the skin, used rectally or for use in the ear, hydrocortisone can be used during breastfeeding." },
+          { "s": "sps-topical-corticosteroids-breastfeeding", "q": "This should be removed with warm water before breastfeeding, and be reapplied after feeding." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: no known effects (pharmacy-sale SmPC).",
+        "detail": true,
+        "src": [{ "s": "emc-102471", "q": "Fertility No known effects." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "No common or very common effects are listed. Reported effects (frequency not known) include skin atrophy, telangiectasia, striae, acne, rosacea, pigmentation changes and hypertrichosis. Blurred vision is uncommon in the pharmacy-sale SmPC (frequency not known in the prescription SmPC).",
+        "tag": "Frequency not known",
+        "src": [
+          { "s": "emc-102471", "q": "Skin atrophy, telangiectasia, skin striae, acne, rosacea, pigmentation disorder, hypertrichosis" },
+          { "s": "emc-102471", "q": "Eye Disorders Uncommon Vision, blurred" },
+          { "s": "emc-12908", "q": "Eye disorders Not known (cannot be estimated from the available data): Vision, blurred" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Hypersensitivity (including allergic contact dermatitis) or worsening of the condition: stop treatment immediately.",
+        "src": [{ "s": "emc-102471", "q": "If any signs of hypersensitivity, including allergic contact dermatitis or worsening of the original condition appear, treatment should be immediately discontinued." }] },
+      { "t": "Topical steroid withdrawal reactions after stopping: redness spreading beyond the treated area, burning or stinging, itch, peeling, oozing pustules.",
+        "src": [{ "s": "emc-12908", "q": "Withdrawal reactions - redness of the skin which may extend to areas beyond the initial affected area, burning or stinging sensation, itch, skin peeling, oozing pustules." }] },
+      { "t": "Systemic absorption from skin folds or the nappy area can cause hypercorticism and HPA-axis suppression with prolonged use, more likely in infants and children and under occlusion. MHRA: adrenal suppression (low blood pressure, dizziness, fainting) is life-threatening and needs urgent treatment; stopping suddenly is dangerous.",
+        "src": [
+          { "s": "emc-12908", "q": "Sufficient systemic absorption may also occur in such sites to produce the features of hypercorticism and suppression of the HPA axis after prolonged treatment." },
+          { "s": "mhra-dsu-topical-steroids-labelling-2024", "q": "This is a serious, life-threatening condition that needs urgent treatment." },
+          { "s": "mhra-dsu-topical-steroids-labelling-2024", "q": "Stopping the topical steroid suddenly is dangerous if there is adrenal suppression" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "If the condition does not improve, the patient should see a doctor.",
+        "tag": "ongoing",
+        "formulations": ["hydrocortisone-topical-cream-p"],
+        "src": [{ "s": "emc-102471", "q": "If the condition does not improve consult your doctor." }] },
+      { "t": "Be vigilant for topical steroid withdrawal reactions; for long-term users consider reducing potency or frequency (or both).",
+        "tag": "ongoing",
+        "src": [
+          { "s": "mhra-dsu-topical-steroid-withdrawal-2021", "q": "for patients currently on long-term topical corticosteroid treatment, consider reducing potency or frequency of application (or both)" },
+          { "s": "mhra-dsu-topical-steroid-withdrawal-2021", "q": "be vigilant for the signs and symptoms of topical steroid withdrawal reactions" }
+        ] },
+      { "t": "Stop if hypersensitivity or worsening occurs; withdraw the steroid if infection spreads.",
+        "tag": "stop",
+        "src": [
+          { "s": "emc-102471", "q": "treatment should be immediately discontinued" },
+          { "s": "emc-12908", "q": "Any spread of infection requires withdrawal of topical corticosteroid therapy" }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "For use on the skin only. Apply sparingly to the affected area and massage in gently, after gently cleansing the area.",
+        "src": [
+          { "s": "emc-102471", "q": "Massage gently into the skin." },
+          { "s": "emc-102471", "q": "after gently cleansing the area" }
+        ] },
+      { "t": "The cream often suits moist or weeping skin; an ointment often suits dry, lichenified or scaly lesions.",
+        "detail": true,
+        "formulations": ["hydrocortisone-topical-cream-pom"],
+        "src": [{ "s": "emc-12908", "q": "Hydrocortisone cream is often appropriate for moist or weeping surfaces, and Hydrocortisone ointment for dry-lichenified or scaly lesions" }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Explain how much to apply, how often, where, and when to stop; get advice before using on a new body area.",
+        "src": [
+          { "s": "mhra-dsu-topical-steroids-labelling-2024", "q": "when prescribing or dispensing topical steroids, advise on the amount of product to apply, how often, where to apply it and when to stop treatment" },
+          { "s": "mhra-dsu-topical-steroid-withdrawal-2021", "q": "seek medical advice before using a topical corticosteroid on a new body area" }
+        ] },
+      { "t": "If the skin worsens within 2 weeks of stopping, do not restart without consulting the doctor (unless already advised).",
+        "src": [{ "s": "mhra-dsu-topical-steroid-withdrawal-2021", "q": "if your skin worsens within 2 weeks of stopping a topical corticosteroid, do not start treatment again without consulting your doctor" }] },
+      { "t": "Do not smoke or go near naked flames: clothing, bedding and dressings with cream on them burn more easily; washing reduces but does not remove build-up.",
+        "src": [
+          { "s": "emc-12908", "q": "Instruct patients not to smoke or go near naked flames - risk of severe burns." },
+          { "s": "emc-12908", "q": "Washing clothing and bedding may reduce product build-up but not totally remove it." }
+        ] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "hydrocortisone-topical:allergy:hydrocortisone",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "hydrocortisone-topical",
+      "allergen": ["hydrocortisone"],
+      "concern": "Hypersensitivity to hydrocortisone",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity",
+      "src": [
+        { "s": "emc-12908", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." },
+        { "s": "emc-102471", "q": "Hypersensitivity to hydrocortisone acetate or to any other excipients listed in section 6.1" }
+      ]
+    },
+    {
+      "id": "hydrocortisone-topical:condition:skin-infection-untreated",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydrocortisone-topical",
+      "condition": "skin-infection-untreated",
+      "concern": "Skin infection (bacterial, fungal or viral) at the treatment site",
+      "consequence": "Listed in section 4.3 of both UK SmPCs: prescription cream, skin lesions caused by viral, fungal or bacterial infection; pharmacy-sale cream, untreated bacterial, viral, tuberculous or fungal infection.",
+      "action": "Do not use on infected lesions. Prescription SmPC: use appropriate antimicrobial therapy for infected inflammatory lesions; if infection spreads, stop the corticosteroid and give systemic antimicrobials.",
+      "sourceWording": "Contraindications ... Skin lesions caused by infection",
+      "src": [
+        { "s": "emc-12908", "q": "Skin lesions caused by infection with viruses (e.g. herpes simplex, chicken pox), fungi (e.g. candidiasis, tinea) or bacteria (e.g. impetigo)." },
+        { "s": "emc-102471", "q": "In the presence of untreated infections of bacterial, viral, tuberculous or fungal origin." },
+        { "s": "emc-12908", "q": "Any spread of infection requires withdrawal of topical corticosteroid therapy, and systemic administration of antimicrobial agents." }
+      ]
+    },
+    {
+      "id": "hydrocortisone-topical:condition:viral-skin-infection",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydrocortisone-topical",
+      "condition": "viral-skin-infection",
+      "concern": "Viral skin infection (for example herpes simplex, cold sores)",
+      "consequence": "Listed in section 4.3 of both UK SmPCs (prescription cream: lesions caused by viruses such as herpes simplex; pharmacy-sale cream: cold sores, untreated viral infection).",
+      "action": "Do not use on these lesions.",
+      "sourceWording": "Contraindications ... infection with viruses (e.g. herpes simplex, chicken pox)",
+      "src": [
+        { "s": "emc-12908", "q": "Skin lesions caused by infection with viruses (e.g. herpes simplex, chicken pox)" },
+        { "s": "emc-102471", "q": "broken or infected skin including impetigo, cold sores" }
+      ]
+    },
+    {
+      "id": "hydrocortisone-topical:condition:varicella",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-pom"],
+      "condition": "varicella",
+      "concern": "Chickenpox lesions",
+      "consequence": "Listed in section 4.3 of the prescription SmPC (skin lesions caused by viruses, for example chickenpox).",
+      "action": "Do not use on chickenpox lesions.",
+      "sourceWording": "Contraindications ... chicken pox",
+      "src": [{ "s": "emc-12908", "q": "Skin lesions caused by infection with viruses (e.g. herpes simplex, chicken pox)" }]
+    },
+    {
+      "id": "hydrocortisone-topical:condition:cutaneous-tuberculosis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-p"],
+      "condition": "cutaneous-tuberculosis",
+      "concern": "Untreated tuberculous skin infection (pharmacy-sale cream)",
+      "consequence": "Listed in section 4.3 of the pharmacy-sale SmPC (untreated infections of tuberculous origin).",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... untreated infections of bacterial, viral, tuberculous or fungal origin",
+      "src": [{ "s": "emc-102471", "q": "In the presence of untreated infections of bacterial, viral, tuberculous or fungal origin." }]
+    },
+    {
+      "id": "hydrocortisone-topical:condition:rosacea",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-p"],
+      "condition": "rosacea",
+      "concern": "Rosacea (pharmacy-sale cream)",
+      "consequence": "Listed in section 4.3: not for use on the eyes or face, for example in rosacea.",
+      "action": "Do not use (pharmacy-sale labelling).",
+      "sourceWording": "should not be used on the eyes or face (for example, in rosacea or perioral dermatoses)",
+      "src": [{ "s": "emc-102471", "q": "The product should not be used on the eyes or face (for example, in rosacea or perioral dermatoses)" }]
+    },
+    {
+      "id": "hydrocortisone-topical:condition:perioral-dermatitis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-p"],
+      "condition": "perioral-dermatitis",
+      "concern": "Perioral dermatitis (pharmacy-sale cream)",
+      "consequence": "Listed in section 4.3: not for use on the face, for example in perioral dermatoses.",
+      "action": "Do not use (pharmacy-sale labelling).",
+      "sourceWording": "should not be used on the eyes or face (for example, in rosacea or perioral dermatoses)",
+      "src": [{ "s": "emc-102471", "q": "The product should not be used on the eyes or face (for example, in rosacea or perioral dermatoses)" }]
+    },
+    {
+      "id": "hydrocortisone-topical:condition:acne-vulgaris",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-p"],
+      "condition": "acne-vulgaris",
+      "concern": "Acne (pharmacy-sale cream)",
+      "consequence": "Listed in section 4.3: not for use on skin with acne.",
+      "action": "Do not use on acne (pharmacy-sale labelling).",
+      "sourceWording": "should not be used ... on broken or infected skin including impetigo, cold sores, acne",
+      "src": [{ "s": "emc-102471", "q": "broken or infected skin including impetigo, cold sores, acne" }]
+    },
+    {
+      "id": "hydrocortisone-topical:condition:broken-ulcerated-skin",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-p"],
+      "condition": "broken-ulcerated-skin",
+      "concern": "Broken skin (pharmacy-sale cream)",
+      "consequence": "Listed in section 4.3: not for use on broken or infected skin.",
+      "action": "Do not apply to broken skin (pharmacy-sale labelling).",
+      "sourceWording": "should not be used ... on broken or infected skin",
+      "src": [{ "s": "emc-102471", "q": "the ano-genital area or on broken or infected skin" }]
+    },
+    {
+      "id": "hydrocortisone-topical:age:lt10-p",
+      "kind": "age",
+      "level": "avoid",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-p"],
+      "age": { "minYears": 0, "maxYears": 10 },
+      "concern": "Child under 10 years (pharmacy-sale cream)",
+      "consequence": "The pharmacy-sale licence covers children from 10 years only.",
+      "action": "Should not be used under 10 years without medical advice; the prescription-only cream SmPC gives a dose for children.",
+      "sourceWording": "should not be used in children under 10 years of age without medical advice",
+      "src": [{ "s": "emc-102471", "q": "The product should not be used in children under 10 years of age without medical advice." }]
+    },
+    {
+      "id": "hydrocortisone-topical:age:children-duration",
+      "kind": "age",
+      "level": "dose",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-pom"],
+      "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Infants and children: limit duration",
+      "consequence": "Adrenal suppression can occur even without occlusion; a napkin acts as an occlusive dressing and increases absorption. The SmPC does not define the age range (18 years used here).",
+      "action": "Avoid long-term continuous use where possible; in infants limit treatment to a maximum of 7 days if possible.",
+      "sourceWording": "long-term continuous topical therapy should be avoided where possible ... limited, if possible, to a maximum of 7 days",
+      "src": [
+        { "s": "emc-12908", "q": "In infants and children, long-term continuous topical therapy should be avoided where possible, as adrenal suppression can occur even without occlusion." },
+        { "s": "emc-12908", "q": "Treatment should therefore be limited, if possible, to a maximum of 7 days." }
+      ]
+    },
+    {
+      "id": "hydrocortisone-topical:pregnancy:pom",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-pom"],
+      "concern": "Pregnancy (prescription cream)",
+      "consequence": "Inadequate human safety evidence; animal data show cleft palate and growth restriction, so a very small fetal risk is possible.",
+      "action": "No specific action stated in the SmPC. BUMPS: topical corticosteroids can be used in pregnancy.",
+      "sourceWording": "There may therefore be a very small risk of such effects in the human fetus",
+      "src": [
+        { "s": "emc-12908", "q": "There may therefore be a very small risk of such effects in the human fetus." },
+        { "s": "bumps-corticosteroids-topical", "q": "Topical corticosteroids can be used in pregnancy." }
+      ]
+    },
+    {
+      "id": "hydrocortisone-topical:pregnancy:p",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-p"],
+      "concern": "Pregnancy (pharmacy-sale cream)",
+      "consequence": "Limited data; animal studies showed reproductive toxicity.",
+      "action": "Pharmacy-sale SmPC: not without medical advice. BUMPS: topical corticosteroids can be used in pregnancy.",
+      "sourceWording": "should not be used in pregnancy without medical advice",
+      "src": [
+        { "s": "emc-102471", "q": "This product should not be used in pregnancy without medical advice." },
+        { "s": "emc-102471", "q": "There are no or limited amount of data from the use of topical corticosteroids in pregnant women. Studies in animals have shown reproductive toxicity" },
+        { "s": "bumps-corticosteroids-topical", "q": "Topical corticosteroids can be used in pregnancy." }
+      ]
+    },
+    {
+      "id": "hydrocortisone-topical:breastfeeding:p",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-p"],
+      "concern": "Breastfeeding (pharmacy-sale cream)",
+      "consequence": "Corticosteroids pass into breast milk; a risk to the infant cannot be excluded (SmPC).",
+      "action": "Pharmacy-sale SmPC: not unless recommended by a healthcare professional. SPS: hydrocortisone on the skin can be used during breastfeeding; avoid infant contact with treated skin.",
+      "sourceWording": "should not be used whilst breast-feeding unless recommended by a health care professional",
+      "src": [
+        { "s": "emc-102471", "q": "This product should not be used whilst breast-feeding unless recommended by a health care professional." },
+        { "s": "emc-102471", "q": "Corticosteroids are excreted in human milk." },
+        { "s": "emc-102471", "q": "A risk to new-borns/infants cannot be excluded." },
+        { "s": "sps-topical-corticosteroids-breastfeeding", "q": "When applied to the skin, used rectally or for use in the ear, hydrocortisone can be used during breastfeeding." }
+      ]
+    },
+    {
+      "id": "hydrocortisone-topical:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "hydrocortisone-topical",
+      "formulations": ["hydrocortisone-topical-cream-pom"],
+      "concern": "Breastfeeding (prescription cream)",
+      "consequence": "SPS: negligible amounts expected in milk; no significant risk to the breastfed infant.",
+      "action": "Can be used. Avoid infant contact with treated skin; if applied to the breast, remove with warm water before feeds.",
+      "sourceWording": "hydrocortisone can be used during breastfeeding",
+      "src": [
+        { "s": "sps-topical-corticosteroids-breastfeeding", "q": "When applied to the skin, used rectally or for use in the ear, hydrocortisone can be used during breastfeeding." },
+        { "s": "sps-topical-corticosteroids-breastfeeding", "q": "negligible concentrations in the breast milk, and therefore pose no significant risk to the breastfed infant" },
+        { "s": "sps-topical-corticosteroids-breastfeeding", "q": "This should be removed with warm water before breastfeeding, and be reapplied after feeding." }
+      ]
+    }
+  ]
+}

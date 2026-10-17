@@ -1,0 +1,839 @@
+{
+  "id": "tiotropium",
+  "name": "Tiotropium (inhaler)",
+  "ingredients": [
+    "tiotropium"
+  ],
+  "className": "Long-acting muscarinic antagonist (LAMA), anticholinergic bronchodilator",
+  "groups": [
+    "inhaled-antimuscarinic",
+    "long-acting-muscarinic-antagonist"
+  ],
+  "searchTerms": [
+    "tiotropium bromide"
+  ],
+  "availability": {
+    "status": "uk"
+  },
+  "formulations": [
+    {
+      "id": "tiotropium-respimat-2-5",
+      "label": "Inhalation solution (soft-mist inhaler) 2.5 micrograms per puff",
+      "route": "inhalation",
+      "strengths": "2.5 micrograms tiotropium per puff (2 puffs = one 5 microgram dose)",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "The delivered dose is 2.5 microgram tiotropium per puff (2 puffs comprise one medicinal dose)"
+        }
+      ],
+      "sourceIds": [
+        "emc-407"
+      ]
+    }
+  ],
+  "brandPrescribing": {
+    "t": "SPS: tiotropium capsules, cartridges and administration devices should be prescribed by brand name, so patients receive an inhaler they have been trained to use.",
+    "src": [
+      {
+        "s": "sps-brand-examples",
+        "q": "To ensure patients receive an inhaler they have been trained to use, tiotropium capsules, cartridges and administration devices should be prescribed by brand name."
+      }
+    ]
+  },
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "COPD: maintenance bronchodilator to relieve symptoms.",
+          "tag": "COPD",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "is indicated as a maintenance bronchodilator treatment to relieve symptoms of patients with chronic obstructive pulmonary disease (COPD)."
+            }
+          ]
+        },
+        {
+          "t": "Asthma (6 years and over): add-on maintenance bronchodilator in severe asthma with one or more severe exacerbations in the preceding year.",
+          "tag": "Asthma",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "is indicated as add-on maintenance bronchodilator treatment in patients aged 6 years and older with severe asthma who experienced one or more severe asthma exacerbations in the preceding year"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "SPS: prescribe tiotropium devices and cartridges by brand name so patients get an inhaler they were trained to use.",
+          "tag": "Brand prescribing",
+          "src": [
+            {
+              "s": "sps-brand-examples",
+              "q": "To ensure patients receive an inhaler they have been trained to use, tiotropium capsules, cartridges and administration devices should be prescribed by brand name."
+            }
+          ]
+        },
+        {
+          "t": "Asthma, adults: add to inhaled corticosteroids (at least 800 micrograms budesonide/day or equivalent) and at least one controller. Not a monotherapy for asthma.",
+          "tag": "Asthma add-on",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "In adult patients with severe asthma, tiotropium should be used in addition to inhaled corticosteroids (≥ 800 μg budesonide/day or equivalent) and at least one controller."
+            },
+            {
+              "s": "emc-407",
+              "q": "Spiriva Respimat should not be used as monotherapy for asthma."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults (COPD and asthma): 5 micrograms (two puffs) once daily at the same time each day. Do not exceed; do not use more than once daily.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "The recommended dose for adults is 5 microgram tiotropium given as two puffs from the Respimat inhaler once daily, at the same time of the day. The recommended dose should not be exceeded."
+            },
+            {
+              "s": "emc-407",
+              "q": "Tiotropium bromide should not be used more frequently than once daily"
+            }
+          ]
+        },
+        {
+          "t": "Elderly, renal and hepatic impairment: recommended dose can be used (renal CrCl ≤ 50 ml/min: see renal).",
+          "tag": "Special groups",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Geriatric patients can use tiotropium bromide at the recommended dose. Renally impaired patients can use tiotropium bromide at the recommended dose."
+            },
+            {
+              "s": "emc-407",
+              "q": "Hepatically impaired patients can use tiotropium bromide at the recommended dose"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Asthma 6-17 years: 5 micrograms (two puffs) once daily, as add-on to ICS plus controller(s) in severe asthma. Not established in moderate asthma or under 6 years. COPD: no relevant use under 18. Children should use it with an adult's help.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "The recommended dose for patients 6 to 17 years of age is 5 microgram tiotropium given as two puffs from the Respimat inhaler once daily, at the same time of the day."
+            },
+            {
+              "s": "emc-407",
+              "q": "The safety and efficacy of Spiriva Respimat in children below 6 years of age has not been established."
+            },
+            {
+              "s": "emc-407",
+              "q": "There is no relevant use of Spiriva Respimat in children and adolescents below 18 years."
+            },
+            {
+              "s": "emc-407",
+              "q": "Children should use Spiriva Respimat with an adult's assistance."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to tiotropium, any excipient, or atropine and its derivatives (e.g. ipratropium, oxitropium).",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Hypersensitivity to tiotropium bromide or to any of the excipients listed in section 6.1 or to atropine or its derivatives, e.g. ipratropium or oxitropium."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Not for acute bronchospasm or symptom relief (use a rapid-acting beta-2 agonist). Not a monotherapy for asthma: keep the inhaled corticosteroid unchanged.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "should not be used for the initial treatment of acute episodes of bronchospasm, or for the relief of acute symptoms. In the event of an acute attack a rapid-acting beta-2-agonist should be used."
+            },
+            {
+              "s": "emc-407",
+              "q": "Spiriva Respimat should not be used as monotherapy for asthma."
+            }
+          ]
+        },
+        {
+          "t": "Anticholinergic: caution in narrow-angle glaucoma, prostatic hyperplasia or bladder-neck obstruction. Keep spray out of the eyes; if eye pain, blurred vision, halos or red eyes, stop and see a specialist at once.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "tiotropium bromide should be used with caution in patients with narrow-angle glaucoma, prostatic hyperplasia or bladder-neck obstruction."
+            },
+            {
+              "s": "emc-407",
+              "q": "Should any combination of these eye symptoms develop, patients should stop using tiotropium bromide and consult a specialist immediately."
+            }
+          ]
+        },
+        {
+          "t": "Cardiac: caution after MI in the last 6 months, unstable or life-threatening arrhythmia or arrhythmia needing intervention or drug change in the past year, or heart failure admission (NYHA III-IV) in the past year. MHRA: take cardiovascular risk into account and ask these patients to report worsening cardiac symptoms.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Tiotropium should be used with caution in patients with recent myocardial infarction < 6 months; any unstable or life threatening cardiac arrhythmia or cardiac arrhythmia requiring intervention or a change in drug therapy in the past year"
+            },
+            {
+              "s": "emc-407",
+              "q": "hospitalisation of heart failure (NYHA Class III or IV) within the past year."
+            },
+            {
+              "s": "mhra-dsu-tiotropium-tiospir-2015",
+              "q": "take the risk of cardiovascular side effects into account for patients with conditions that may be affected by the anticholinergic action of tiotropium"
+            },
+            {
+              "s": "mhra-dsu-tiotropium-tiospir-2015",
+              "q": "tell these patients to report any worsening of cardiac symptoms after starting tiotropium"
+            }
+          ]
+        },
+        {
+          "t": "Renal: CrCl ≤ 50 ml/min, use only if benefit outweighs risk.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "As plasma concentration increases with decreased renal function in patients with moderate to severe renal impairment (creatinine clearance ≤ 50 ml/min) tiotropium bromide should be used only if the expected benefit outweighs the potential risk."
+            }
+          ]
+        },
+        {
+          "t": "Not recommended in cystic fibrosis. Contains benzalkonium chloride, which may cause wheeze (higher risk in asthma). Long-term dry mouth may cause dental caries.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Spiriva Respimat is not recommended in cystic fibrosis (CF)."
+            },
+            {
+              "s": "emc-407",
+              "q": "Benzalkonium chloride may cause wheezing and breathing difficulties. Patients with asthma are at an increased risk for these adverse events."
+            },
+            {
+              "s": "emc-407",
+              "q": "Dry mouth, which has been observed with anti-cholinergic treatment, may in the long term be associated with dental caries."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Other anticholinergic medicines: not studied, not recommended.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "The co-administration of tiotropium bromide with other anticholinergic containing drugs has not been studied and therefore is not recommended."
+            }
+          ]
+        },
+        {
+          "t": "Used with other common COPD and asthma medicines (sympathomimetic bronchodilators, methylxanthines, oral and inhaled steroids, antihistamines, leukotriene modifiers) without clinical evidence of interactions.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "tiotropium bromide has been used concomitantly with other drugs commonly used in the treatment of COPD and asthma, including sympathomimetic bronchodilators, methylxanthines, oral and inhaled steroids, antihistamines, mucolytics, leukotriene modifiers"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "CrCl ≤ 50 ml/min: plasma levels rise; use only if expected benefit outweighs the risk. No long-term experience in severe renal impairment. No dose change stated.",
+          "tag": "CrCl ≤ 50 ml/min",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "As plasma concentration increases with decreased renal function in patients with moderate to severe renal impairment (creatinine clearance ≤ 50 ml/min) tiotropium bromide should be used only if the expected benefit outweighs the potential risk."
+            },
+            {
+              "s": "emc-407",
+              "q": "There is no long term experience in patients with severe renal impairment"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Hepatic impairment: recommended dose can be used.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Hepatically impaired patients can use tiotropium bromide at the recommended dose"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: very limited data; as a precaution, preferably avoid in pregnancy.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "There is a very limited amount of data from the use of tiotropium in pregnant women."
+            },
+            {
+              "s": "emc-407",
+              "q": "As a precautionary measure, it is preferable to avoid the use of Spiriva Respimat during pregnancy."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (asthma): LAMAs such as tiotropium are among asthma medicines; some are less well studied, but benefits of asthma medicines usually outweigh possible risks.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-asthma",
+              "q": "Long-acting muscarinic antagonists (LAMAs), such as tiotropium"
+            },
+            {
+              "s": "bumps-asthma",
+              "q": "Some asthma medications have not been as well-studied in pregnancy."
+            },
+            {
+              "s": "bumps-asthma",
+              "q": "For this reason, the benefits of using any asthma medicines during pregnancy will usually outweigh any possible risks."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Not recommended during breastfeeding (unknown if excreted in human milk; long-acting). Decide whether to continue breastfeeding or therapy.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "use of Spiriva Respimat is not recommended during breast-feeding."
+            },
+            {
+              "s": "emc-407",
+              "q": "Tiotropium bromide is a long-acting compound."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No clinical fertility data; no effect in a non-clinical study.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Clinical data on fertility are not available for tiotropium."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common (COPD): dry mouth (uncommon in asthma). Other effects are uncommon or rarer: dizziness, headache, cough, pharyngitis, dysphonia, constipation, oral candidiasis, rash, pruritus; in COPD also urinary retention and dysuria.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Gastrointestinal disorders Dry Mouth Common Uncommon"
+            },
+            {
+              "s": "emc-407",
+              "q": "Nervous system disorders Dizziness Uncommon Uncommon Headache Uncommon Uncommon"
+            },
+            {
+              "s": "emc-407",
+              "q": "Renal and urinary disorders Urinary retention Uncommon Not known Dysuria Uncommon Not known"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Serious anticholinergic effects: glaucoma, constipation, intestinal obstruction including paralytic ileus, urinary retention.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Serious undesirable effects consistent with anticholinergic effects include glaucoma, constipation, intestinal obstruction including ileus paralytic and urinary retention."
+            }
+          ]
+        },
+        {
+          "t": "Immediate hypersensitivity (angioedema, anaphylaxis) and inhalation-induced bronchospasm can occur.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Immediate hypersensitivity reactions may occur after administration of tiotropium bromide inhalation solution."
+            },
+            {
+              "s": "emc-407",
+              "q": "Inhaled medicines may cause inhalation-induced bronchospasm."
+            }
+          ]
+        },
+        {
+          "t": "Eye symptoms (pain, blurred vision, halos, red eye): stop and see a specialist immediately.",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Should any combination of these eye symptoms develop, patients should stop using tiotropium bromide and consult a specialist immediately."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "MHRA: review that tiotropium remains appropriate; regularly review patients at high cardiovascular risk.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "mhra-dsu-tiotropium-tiospir-2015",
+              "q": "regularly review treatment of patients at high risk of cardiovascular events"
+            }
+          ]
+        },
+        {
+          "t": "Stop and refer urgently if acute glaucoma symptoms.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Should any combination of these eye symptoms develop, patients should stop using tiotropium bromide and consult a specialist immediately."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Once a day, two puffs each time. Insert the cartridge and prime until a cloud appears, then 3 more puffs. If unused for more than 7 days, release one puff to the ground; if more than 21 days, prime again. Use the reusable inhaler for no more than one year (up to 6 cartridges).",
+          "src": [
+            {
+              "s": "emc-407",
+              "q": "Each time used take TWO PUFFS."
+            },
+            {
+              "s": "emc-407",
+              "q": "If Spiriva Respimat has not been used for more than 7 days release one puff towards the ground."
+            },
+            {
+              "s": "emc-407",
+              "q": "Do not use the Respimat re-usable inhaler for more than one year, after having inserted the first cartridge."
+            },
+            {
+              "s": "emc-407",
+              "q": "The Respimat re-usable inhaler allows for replacement of the cartridge, and can be used with up to 6 cartridges."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "This is a daily maintenance inhaler, not a reliever. Do not exceed once daily. Keep the spray out of the eyes. Report any worsening heart symptoms (MHRA).",
+          "src": [
+            {
+              "s": "mhra-dsu-tiotropium-tiospir-2015",
+              "q": "remind patients not to exceed the recommended once daily dose"
+            },
+            {
+              "s": "mhra-dsu-tiotropium-tiospir-2015",
+              "q": "tell these patients to report any worsening of cardiac symptoms after starting tiotropium"
+            },
+            {
+              "s": "emc-407",
+              "q": "Patients should be cautioned to avoid getting the spray into their eyes."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "tiotropium:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "tiotropium",
+      "allergen": [
+        "tiotropium"
+      ],
+      "concern": "Hypersensitivity to tiotropium",
+      "consequence": "Risk of hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "Hypersensitivity to tiotropium bromide or to any of the excipients listed in section 6.1 or to atropine or its derivatives, e.g. ipratropium or oxitropium."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:allergy:atropine-derivatives",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "tiotropium",
+      "allergen": [
+        "ipratropium"
+      ],
+      "concern": "Hypersensitivity to atropine or its derivatives (e.g. ipratropium)",
+      "consequence": "Cross-sensitivity with atropine derivatives.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "Hypersensitivity to tiotropium bromide or to any of the excipients listed in section 6.1 or to atropine or its derivatives, e.g. ipratropium or oxitropium."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:condition:angle-closure-glaucoma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tiotropium",
+      "condition": "angle-closure-glaucoma",
+      "concern": "Narrow-angle glaucoma",
+      "consequence": "Anticholinergic effect may precipitate or worsen narrow-angle glaucoma (also if spray gets in the eyes).",
+      "action": "Use with caution; keep spray out of the eyes; stop and see a specialist at once if eye pain, blurred vision, halos or red eyes.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "tiotropium bromide should be used with caution in patients with narrow-angle glaucoma, prostatic hyperplasia or bladder-neck obstruction."
+        },
+        {
+          "s": "emc-407",
+          "q": "Should any combination of these eye symptoms develop, patients should stop using tiotropium bromide and consult a specialist immediately."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:condition:prostatic-hypertrophy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tiotropium",
+      "condition": "prostatic-hypertrophy",
+      "concern": "Prostatic hyperplasia",
+      "consequence": "Anticholinergic effect: risk of urinary retention.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "tiotropium bromide should be used with caution in patients with narrow-angle glaucoma, prostatic hyperplasia or bladder-neck obstruction."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:condition:urinary-retention",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tiotropium",
+      "condition": "urinary-retention",
+      "concern": "Bladder-neck obstruction",
+      "consequence": "Anticholinergic effect: risk of urinary retention.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "tiotropium bromide should be used with caution in patients with narrow-angle glaucoma, prostatic hyperplasia or bladder-neck obstruction."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:condition:recent-myocardial-infarction",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tiotropium",
+      "condition": "recent-myocardial-infarction",
+      "concern": "Myocardial infarction in the last 6 months",
+      "consequence": "Excluded from trials; may be affected by the anticholinergic action.",
+      "action": "Use with caution; take cardiovascular risk into account and ask the patient to report worsening cardiac symptoms (MHRA).",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "Tiotropium should be used with caution in patients with recent myocardial infarction < 6 months; any unstable or life threatening cardiac arrhythmia or cardiac arrhythmia requiring intervention or a change in drug therapy in the past year"
+        },
+        {
+          "s": "mhra-dsu-tiotropium-tiospir-2015",
+          "q": "take the risk of cardiovascular side effects into account for patients with conditions that may be affected by the anticholinergic action of tiotropium"
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:condition:cardiac-arrhythmia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tiotropium",
+      "condition": "cardiac-arrhythmia",
+      "concern": "Unstable/life-threatening arrhythmia, or arrhythmia needing intervention or a drug change in the past year",
+      "consequence": "Excluded from trials; may be affected by the anticholinergic action.",
+      "action": "Use with caution; take cardiovascular risk into account and ask the patient to report worsening cardiac symptoms (MHRA).",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "Tiotropium should be used with caution in patients with recent myocardial infarction < 6 months; any unstable or life threatening cardiac arrhythmia or cardiac arrhythmia requiring intervention or a change in drug therapy in the past year"
+        },
+        {
+          "s": "mhra-dsu-tiotropium-tiospir-2015",
+          "q": "take the risk of cardiovascular side effects into account for patients with conditions that may be affected by the anticholinergic action of tiotropium"
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "tiotropium",
+      "condition": "severe-heart-failure",
+      "concern": "Hospitalisation for heart failure (NYHA III or IV) in the past year",
+      "consequence": "Excluded from trials; may be affected by the anticholinergic action.",
+      "action": "Use with caution; take cardiovascular risk into account (MHRA).",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "hospitalisation of heart failure (NYHA Class III or IV) within the past year."
+        },
+        {
+          "s": "mhra-dsu-tiotropium-tiospir-2015",
+          "q": "take the risk of cardiovascular side effects into account for patients with conditions that may be affected by the anticholinergic action of tiotropium"
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:condition:asthma-monotherapy",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "tiotropium",
+      "condition": "asthma",
+      "concern": "Asthma: applies only if tiotropium is used without an inhaled corticosteroid (monotherapy)",
+      "consequence": "Not a monotherapy for asthma; inhaled corticosteroid must continue unchanged.",
+      "action": "Do not use as monotherapy for asthma; continue the inhaled corticosteroid. (Add-on use with ICS in severe asthma is licensed.)",
+      "sourceWording": "should not be used as monotherapy for asthma",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "Spiriva Respimat should not be used as monotherapy for asthma."
+        },
+        {
+          "s": "emc-407",
+          "q": "Asthma patients must be advised to continue taking anti-inflammatory therapy, i.e. inhaled corticosteroids, unchanged after the introduction of Spiriva Respimat, even when their symptoms improve."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:condition:acute-asthma-attack",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "tiotropium",
+      "condition": "acute-asthma-attack",
+      "concern": "Acute bronchospasm",
+      "consequence": "Once-daily maintenance bronchodilator; not for acute episodes.",
+      "action": "Do not use for acute episodes or relief of acute symptoms; use a rapid-acting beta-2 agonist.",
+      "sourceWording": "should not be used for the initial treatment of acute episodes",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "should not be used for the initial treatment of acute episodes of bronchospasm, or for the relief of acute symptoms. In the event of an acute attack a rapid-acting beta-2-agonist should be used."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:condition:cystic-fibrosis",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "tiotropium",
+      "condition": "cystic-fibrosis",
+      "concern": "Cystic fibrosis",
+      "consequence": "May increase CF signs and symptoms (serious adverse events, pulmonary exacerbations, respiratory infections).",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "Spiriva Respimat is not recommended in cystic fibrosis (CF)."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:renal:crcl-50",
+      "kind": "renal",
+      "level": "caution",
+      "med": "tiotropium",
+      "renal": {
+        "measure": "CrCl",
+        "max": 50,
+        "maxInclusive": true
+      },
+      "concern": "Moderate to severe renal impairment (CrCl ≤ 50 ml/min)",
+      "consequence": "Plasma concentration increases as renal function falls; no long-term experience in severe renal impairment.",
+      "action": "Use only if the expected benefit outweighs the potential risk (no dose change stated).",
+      "sourceWording": "should be used only if the expected benefit outweighs the potential risk",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "As plasma concentration increases with decreased renal function in patients with moderate to severe renal impairment (creatinine clearance ≤ 50 ml/min) tiotropium bromide should be used only if the expected benefit outweighs the potential risk."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:interaction:anticholinergic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "tiotropium",
+      "other": "group:anticholinergic",
+      "concern": "Other anticholinergic medicines",
+      "consequence": "Not studied; additive anticholinergic effects.",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "The co-administration of tiotropium bromide with other anticholinergic containing drugs has not been studied and therefore is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:interaction:inhaled-antimuscarinic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "tiotropium",
+      "other": "group:inhaled-antimuscarinic",
+      "concern": "Another inhaled anticholinergic (e.g. ipratropium, umeclidinium)",
+      "consequence": "Not studied; additive anticholinergic effects.",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "The co-administration of tiotropium bromide with other anticholinergic containing drugs has not been studied and therefore is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "tiotropium",
+      "concern": "Pregnancy",
+      "consequence": "Very limited human data; animal studies show no harm at clinical doses.",
+      "action": "As a precaution, preferably avoid.",
+      "sourceWording": "it is preferable to avoid",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "As a precautionary measure, it is preferable to avoid the use of Spiriva Respimat during pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:pregnancy:bumps-asthma",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "tiotropium",
+      "concern": "Pregnancy (BUMPS asthma leaflet)",
+      "consequence": "BUMPS lists LAMAs such as tiotropium among asthma medicines; some are less well studied, but benefits of asthma medicines usually outweigh possible risks. This differs in strength from the SmPC.",
+      "action": "Do not stop asthma treatment because of pregnancy unless advised.",
+      "sourceWording": "will usually outweigh any possible risks",
+      "src": [
+        {
+          "s": "bumps-asthma",
+          "q": "Long-acting muscarinic antagonists (LAMAs), such as tiotropium"
+        },
+        {
+          "s": "bumps-asthma",
+          "q": "For this reason, the benefits of using any asthma medicines during pregnancy will usually outweigh any possible risks."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "tiotropium",
+      "concern": "Breastfeeding",
+      "consequence": "Unknown if excreted in human milk; long-acting compound.",
+      "action": "Not recommended; decide whether to continue breastfeeding or therapy.",
+      "sourceWording": "is not recommended during breast-feeding",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "use of Spiriva Respimat is not recommended during breast-feeding."
+        }
+      ]
+    },
+    {
+      "id": "tiotropium:age:under-6",
+      "kind": "age",
+      "level": "info",
+      "med": "tiotropium",
+      "age": {
+        "minYears": 0,
+        "maxYears": 6
+      },
+      "concern": "Child under 6 years",
+      "consequence": "Safety and efficacy not established; no dose recommendation.",
+      "action": "No posology recommendation can be made.",
+      "sourceWording": "has not been established",
+      "src": [
+        {
+          "s": "emc-407",
+          "q": "The safety and efficacy of Spiriva Respimat in children below 6 years of age has not been established."
+        }
+      ]
+    }
+  ]
+}

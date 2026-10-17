@@ -1,0 +1,820 @@
+{
+  "id": "nitrofurantoin",
+  "name": "Nitrofurantoin",
+  "ingredients": ["nitrofurantoin"],
+  "className": "Nitrofuran antibacterial (urinary tract)",
+  "groups": ["nitrofuran", "antibacterial", "hepatotoxic"],
+  "searchTerms": ["nitrofurantoin macrocrystals", "macrocrystalline nitrofurantoin"],
+  "formulations": [
+    {
+      "id": "nitrofurantoin-cap",
+      "label": "Capsules (macrocrystalline)",
+      "route": "oral",
+      "strengths": "100 mg",
+      "release": "immediate",
+      "note": "Two UK SmPCs for 100 mg macrocrystalline capsules were used; they differ in dosing wording and in some warnings (each item says which). The clinic product's crystal form is not stated. Capsules contain lactose.",
+      "src": [
+        { "s": "emc-13236", "q": "Each 100 mg capsule contains 100 mg of nitrofurantoin (in macrocrystalline form)." },
+        { "s": "emc-428", "q": "Each capsule contains 100 mg Nitrofurantoin Ph. Eur. in macrocrystalline form." }
+      ],
+      "sourceIds": ["emc-13236", "emc-428"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "One UK SmPC: treatment of and prophylaxis against acute or recurrent uncomplicated lower UTI or pyelitis, spontaneous or after surgery; adults, children and infants over 3 months.",
+          "src": [
+            { "s": "emc-428", "q": "For the treatment of and prophylaxis against acute or recurrent, uncomplicated lower urinary tract infections or pyelitis either spontaneous or following surgical procedures. It is indicated in adults, children and infants over 3 months old." }
+          ]
+        },
+        {
+          "t": "Another UK SmPC: acute uncomplicated lower UTI; short-term prophylaxis after urological procedures and catheterisation; long-term treatment of UTI up to 6 months (longer only if benefits clearly outweigh risks, and only if no suitable alternative).",
+          "src": [
+            { "s": "emc-13236", "q": "In acute uncomplicated lower urinary tract infections; For short-term prophylaxis after surgical procedures, transurethral interventions, catheterization, cystoscopy and indwelling catheter" },
+            { "s": "emc-13236", "q": "For long-term treatment of urinary tract infections up to 6 months; longer than 6 months only if the benefits clearly outweigh the potential risks." },
+            { "s": "emc-13236", "q": "In view of the side effects, long-term therapy should only be used if no suitable alternative is available" }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA: do not use to treat sepsis secondary to UTI or suspected upper UTI. Consult official guidance on antibiotic use.",
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "Nitrofurantoin should not be used to treat sepsis syndrome secondary to urinary tract infection or suspected upper urinary tract infections" }
+          ]
+        },
+        {
+          "t": "One UK SmPC: prolonged use is not recommended; long-term therapy only if no suitable alternative.",
+          "src": [
+            { "s": "emc-13236", "q": "Prolonged use of Nitrofurantoin is not recommended." }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Acute uncomplicated UTI: 50 mg four times daily for 7 days (one UK SmPC); 50 mg four times a day for 5 to 7 days or at least 3 days after the urine is clear (another UK SmPC, adults and children from 12 years).",
+          "tag": "Acute uncomplicated UTI",
+          "src": [
+            { "s": "emc-428", "q": "Acute Uncomplicated Urinary Tract Infections (UTIs): 50 mg four times daily for seven days." },
+            { "s": "emc-13236", "q": "Adults and children aged from 12 years: one 50 mg capsule 4 times a day. General use: 5 to 7 days or at least 3 days after no infection is detectable in the urine." }
+          ]
+        },
+        {
+          "t": "Severe chronic recurrence: 100 mg four times daily for 7 days (one UK SmPC).",
+          "tag": "Severe chronic recurrence",
+          "src": [
+            { "s": "emc-428", "q": "Severe chronic recurrence (UTIs): 100 mg four times daily for seven days." }
+          ]
+        },
+        {
+          "t": "Long-term suppression / long-term treatment: 50 to 100 mg once a day (usually in the evening).",
+          "tag": "Long-term",
+          "src": [
+            { "s": "emc-428", "q": "Long term suppression: 50-100 mg once a day." },
+            { "s": "emc-13236", "q": "Adults and children from 12 years: 50 to 100 mg once a day, usually in the evening before sleep." }
+          ]
+        },
+        {
+          "t": "Surgical prophylaxis: 50 mg four times daily for the procedure (or day of surgery) and 3 days after.",
+          "tag": "Prophylaxis",
+          "src": [
+            { "s": "emc-428", "q": "Prophylaxis: 50 mg four times daily for the duration of procedure and for three days thereafter." }
+          ]
+        },
+        {
+          "t": "MHRA: treatment courses for infections last 3 to 7 days.",
+          "tag": "Duration (MHRA)",
+          "detail": true,
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "Treatment courses for infections are indicated to last between 3 and 7 days." }
+          ]
+        },
+        {
+          "t": "Elderly: normal adult dose provided there is no significant renal impairment (where it is contraindicated).",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            { "s": "emc-428", "q": "Provided there is no significant renal impairment, in which Nitrofurantoin is contraindicated, the dosage should be that for any normal adult." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "One UK SmPC (children and infants over 3 months): acute UTI 3 mg/kg/day in four divided doses for 7 days; suppressive 1 mg/kg once a day. Under 25 kg, consider the suspension.",
+          "tag": "Over 3 months",
+          "src": [
+            { "s": "emc-428", "q": "Acute Urinary Tract Infections: 3mg/kg day in four divided doses for seven days. Suppressive - 1mg/kg, once a day." },
+            { "s": "emc-428", "q": "For children under 25 kg body weight consideration should be given to the use of Nitrofurantoin Suspension." }
+          ],
+          "calc": { "mgPerKg": 3, "per": "day", "dividedInto": 4, "ageMinYears": 0.25, "of": "nitrofurantoin" }
+        },
+        {
+          "t": "Another UK SmPC: girls aged 5 to 12 years usually 3 to 6 mg/kg/day in 4 divided doses for 7 days (or 3 days after urine clear); capsules may not be suitable at this age. From 12 years: adult dose.",
+          "tag": "Girls 5 to 12 years",
+          "src": [
+            { "s": "emc-13236", "q": "In girls aged 5 to 12 years: the usual dose is 3 to 6 mg/kg body weight per day divided into 4 doses" },
+            { "s": "emc-13236", "q": "This pharmaceutical form (capsules) may not be suitable for use in children in this age group." }
+          ]
+        },
+        {
+          "t": "Contraindicated in infants under 3 months (risk of haemolytic anaemia).",
+          "tag": "Under 3 months",
+          "src": [
+            { "s": "emc-428", "q": "In infants under three months of age as well as pregnant patients at term (during labour and delivery)" }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to nitrofurantoin, other nitrofurans or any excipient.",
+          "src": [
+            { "s": "emc-428", "q": "Hypersensitivity to the active substance, other nitrofurans or to any of the excipients listed in section 6.1." }
+          ]
+        },
+        {
+          "t": "Renal impairment with eGFR below 45 (both UK SmPCs print the unit as ml/min; MHRA gives ml/min/1.73 m²). One UK SmPC also lists increased serum creatinine. MHRA: a short course may be used with caution in certain patients with eGFR 30 to 44 (see Renal).",
+          "src": [
+            { "s": "emc-428", "q": "Patients suffering from renal dysfunction with an eGFR below 45 ml/minute." },
+            { "s": "emc-13236", "q": "for patients with renal impairment (eGFR below 45 ml/min) or with an increased serum creatinine" },
+            { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "Nitrofurantoin is contraindicated in patients with an estimated glomerular filtration rate (eGFR) of less than 45 ml/min/1.73m2." }
+          ]
+        },
+        {
+          "t": "G6PD deficiency; acute porphyria.",
+          "src": [
+            { "s": "emc-428", "q": "G6PD deficiency (see also Section 4.6) Acute porphyria." }
+          ]
+        },
+        {
+          "t": "Infants under 3 months and pregnant women at term (labour and delivery): theoretical haemolytic anaemia in the fetus or newborn.",
+          "src": [
+            { "s": "emc-428", "q": "In infants under three months of age as well as pregnant patients at term (during labour and delivery) because of the theoretical possibility of haemolytic anaemia in the foetus or in the newborn infant" }
+          ]
+        },
+        {
+          "t": "One UK SmPC: previous lung or liver reaction (other than peripheral neuropathy) to nitrofurantoin or other nitrofurans.",
+          "src": [
+            { "s": "emc-13236", "q": "for patients who have previously had a lung or liver reaction other than a peripheral neuropathy after use of nitrofurantoin or other nitrofurans" }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Pulmonary reactions (acute, subacute, chronic; fibrosis, interstitial pneumonitis) can occur with short- or long-term use. Be especially vigilant in the first week; monitor closely on long-term therapy, especially in the elderly. Stop immediately if they occur.",
+          "tag": "Lungs",
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "pulmonary reactions may occur with short- or long-term use of nitrofurantoin, and increased vigilance for acute pulmonary reactions is required in the first week of treatment" },
+            { "s": "emc-428", "q": "Close monitoring of the lung disease of patients receiving long-term therapy is indicated (especially in the elderly)." },
+            { "s": "emc-428", "q": "If these reactions occur, nitrofurantoin should be discontinued immediately." }
+          ]
+        },
+        {
+          "t": "Hepatotoxicity (hepatitis, autoimmune hepatitis, cholestatic jaundice, chronic active hepatitis, hepatic necrosis; some fatal): monitor periodically; withdraw immediately if hepatitis occurs.",
+          "tag": "Liver",
+          "src": [
+            { "s": "emc-428", "q": "patients should be monitored periodically for changes in biochemical tests that would indicate liver injury. If hepatitis occurs, the drug should be withdrawn immediately" }
+          ]
+        },
+        {
+          "t": "Use with caution in pulmonary disease, hepatic dysfunction, neurological disorders and allergic diathesis (these can mask adverse reactions).",
+          "tag": "Pre-existing disease",
+          "src": [
+            { "s": "emc-428", "q": "Nitrofurantoin should be used with caution in patients with pulmonary disease, hepatic dysfunction, neurological disorders, and allergic diathesis." }
+          ]
+        },
+        {
+          "t": "Peripheral neuropathy (may be severe or irreversible): stop at the first signs (paraesthesia). Use with caution with anaemia, diabetes, electrolyte imbalance, debilitating conditions or vitamin B (especially folate) deficiency; one SmPC also names renal insufficiency and alcoholism as risk factors.",
+          "tag": "Neuropathy",
+          "src": [
+            { "s": "emc-428", "q": "Therefore, treatment should be stopped at the first signs of neural involvement (paraesthesia)." },
+            { "s": "emc-428", "q": "Nitrofurantoin should be used in caution with patients with anaemia, diabetes mellitus, electrolyte imbalance, debilitating conditions and vitamin B (particularly folate) deficiency." },
+            { "s": "emc-13236", "q": "Conditions such as renal insufficiency, anaemia, diabetes mellitus, alcoholism, electrolyte disorder, vitamin B deficiency (especially folate deficiency) and exhaustive conditions increase the risk of developing peripheral neuropathy." }
+          ]
+        },
+        {
+          "t": "Stop at any sign of haemolysis in suspected G6PD deficiency.",
+          "tag": "Haemolysis",
+          "src": [
+            { "s": "emc-428", "q": "Nitrofurantoin should be discontinued at any sign of haemolysis in those with suspected glucose-6-phosphate dehydrogenase deficiency." }
+          ]
+        },
+        {
+          "t": "Stop if otherwise unexplained pulmonary, hepatic, haematological or neurological syndromes occur.",
+          "tag": "Stop",
+          "src": [
+            { "s": "emc-428", "q": "Discontinue treatment with Nitrofurantoin if otherwise unexplained pulmonary, hepatic, haematological or neurological syndromes occur." }
+          ]
+        },
+        {
+          "t": "Not effective for parenchymal infection of a unilaterally non-functioning kidney; exclude a surgical cause in recurrent or severe cases.",
+          "tag": "Efficacy",
+          "detail": true,
+          "src": [
+            { "s": "emc-428", "q": "Nitrofurantoin is not effective for the treatment of parenchymal infections of unilaterally non-functioning kidney. A surgical cause for infection should be excluded in recurrent or severe cases." }
+          ]
+        },
+        {
+          "t": "Capsules contain lactose: patients with hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take them. Urine may turn yellow or brown; false positive urine glucose with reducing-substance tests.",
+          "tag": "Excipients / lab tests",
+          "detail": true,
+          "src": [
+            { "s": "emc-428", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." },
+            { "s": "emc-428", "q": "Urine may be coloured yellow or brown after taking Nitrofurantoin." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Quinolones (e.g. ciprofloxacin): antibacterial antagonism; one UK SmPC says simultaneous use is not recommended.",
+          "tag": "Quinolones",
+          "src": [
+            { "s": "emc-13236", "q": "There may be an antagonism between quinolones and nitrofurantoin: simultaneous application is not recommended." },
+            { "s": "emc-428", "q": "Anti-bacterial antagonism by quinolone anti-infectives." }
+          ]
+        },
+        {
+          "t": "Urinary alkalinisers (e.g. potassium citrate) and carbonic anhydrase inhibitors: reduce the antibacterial activity of nitrofurantoin.",
+          "tag": "Urinary alkalinisers",
+          "src": [
+            { "s": "emc-13236", "q": "Carbonic anhydrase inhibitors and alkalising agents can reduce the antibacterial activity of nitrofurantoin." },
+            { "s": "emc-428", "q": "Decreased anti-bacterial activity by carbonic anhydrase inhibitors and urine alkalisation." }
+          ]
+        },
+        {
+          "t": "Magnesium trisilicate reduces absorption. Probenecid and sulfinpyrazone reduce renal excretion. Food and medicines that delay gastric emptying increase absorption. Oral typhoid vaccine is inactivated by antibacterials.",
+          "tag": "Other (not in this database)",
+          "detail": true,
+          "src": [
+            { "s": "emc-428", "q": "Decreased absorption with magnesium trisilicate." },
+            { "s": "emc-428", "q": "Decreased renal excretion of Nitrofurantoin by probenecid and sulfinpyrazone." },
+            { "s": "emc-428", "q": "Antibacterials inactivate oral typhoid vaccine." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "eGFR below 45: contraindicated. Both UK SmPCs print the unit as ml/min (ml/minute); MHRA gives eGFR less than 45 ml/min/1.73 m². One SmPC also contraindicates use with raised serum creatinine, and another says it is contraindicated in renal dysfunction.",
+          "tag": "eGFR < 45",
+          "src": [
+            { "s": "emc-428", "q": "Nitrofurantoin is contraindicated in patients with renal dysfunction and in patients with an eGFR of less than 45 ml/minute" },
+            { "s": "emc-13236", "q": "for patients with renal impairment (eGFR below 45 ml/min) or with an increased serum creatinine" },
+            { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "Nitrofurantoin is contraindicated in patients with an estimated glomerular filtration rate (eGFR) of less than 45 ml/min/1.73m2." }
+          ]
+        },
+        {
+          "t": "eGFR 30 to 44: MHRA and one UK SmPC allow a short course (3 to 7 days, MHRA) with caution, only for uncomplicated lower UTI with suspected or proven multidrug-resistant pathogens when benefits outweigh risks.",
+          "tag": "eGFR 30-44 (exception)",
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "A short course (3 to 7 days) may be used with caution in certain patients with an eGFR of 30 to 44 ml/min/1.73m2." },
+            { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "Only prescribe to such patients to treat lower urinary tract infection with suspected or proven multidrug resistant pathogens when the benefits of nitrofurantoin are considered to outweigh the risks of side effects." },
+            { "s": "emc-428", "q": "Nitrofurantoin may be used with caution as short-course therapy only for the treatment of uncomplicated lower urinary tract infection in individual cases with an eGFR between 30-44 ml/min to treat resistant pathogens" }
+          ]
+        },
+        {
+          "t": "MHRA: reduced renal secretion lowers efficacy and raises side-effect risk. Consider checking renal function before treating, especially in the elderly.",
+          "tag": "Check renal function",
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "Consider checking renal function when choosing to treat with nitrofurantoin, especially in the elderly." }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Use with caution in hepatic dysfunction (may mask adverse reactions); hepatic reactions can be fatal. MHRA: use caution in hepatic dysfunction.",
+          "src": [
+            { "s": "emc-428", "q": "Nitrofurantoin should be used with caution in patients with pulmonary disease, hepatic dysfunction, neurological disorders, and allergic diathesis." },
+            { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "use caution when prescribing nitrofurantoin in patients with pulmonary disease or hepatic dysfunction, which may mask the signs and symptoms of adverse reactions" }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "One UK SmPC: contraindicated at term (labour and delivery). Otherwise use the lowest appropriate dose only after careful assessment.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-428", "q": "Nitrofurantoin is however contraindicated in infants under three months of age and in pregnant women during labour and delivery" },
+            { "s": "emc-428", "q": "The drug should be used at the lowest dose as appropriate for a specific indication, only after careful assessment." }
+          ]
+        },
+        {
+          "t": "Another UK SmPC: can be used in pregnancy if prescribed by a doctor (large data set shows no teratogenicity), but best not given just before and during delivery.",
+          "tag": "SmPC (second)",
+          "src": [
+            { "s": "emc-13236", "q": "If prescribed by a doctor, nitrofurantoin can be used during pregnancy." },
+            { "s": "emc-13236", "q": "it is best not to be administered just before and during the delivery" }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS): commonly used in the first and second trimesters and not known to affect the baby; tends to be avoided in the third trimester (small chance of lowering the baby's red cells) unless tests show it is the best antibiotic.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-nitrofurantoin", "q": "Nitrofurantoin is commonly used during the first and second trimesters and is not known to affect the baby." },
+            { "s": "bumps-nitrofurantoin", "q": "Nitrofurantoin tends to be avoided during the third trimester as there is a small possibility that it could lower the baby's red blood cell levels." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "One UK SmPC: temporarily avoid breastfeeding an infant known or suspected to have an erythrocyte enzyme deficiency (including G6PD deficiency); trace amounts in milk.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-428", "q": "Breast feeding an infant known or suspected to have an erythrocyte enzyme deficiency (including G6PD deficiency), must be temporarily avoided" }
+          ]
+        },
+        {
+          "t": "Another UK SmPC: can be used during breastfeeding (amounts in milk very small).",
+          "tag": "SmPC (second)",
+          "src": [
+            { "s": "emc-13236", "q": "Nitrofurantoin can be used during breastfeeding." }
+          ]
+        },
+        {
+          "t": "SPS: can be used with caution, including long-term prophylaxis; monitor the infant for GI upset and oral thrush. Avoid if the infant has known G6PD deficiency, hyperbilirubinaemia or jaundice.",
+          "tag": "SPS",
+          "src": [
+            { "s": "sps-nitrofurantoin-breastfeeding", "q": "Nitrofurantoin can be used with caution during breastfeeding. This includes modified release preparations and when used for longer term prophylaxis." },
+            { "s": "sps-nitrofurantoin-breastfeeding", "q": "Avoid using nitrofurantoin if the infant has known glucose-6-phosphate dehydrogenase (G6PD) deficiency, hyperbilirubinaemia, or jaundice due to the risk of haemolytic anaemia and kernicterus." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "One UK SmPC: temporary stop in sperm production and reduced sperm counts at supratherapeutic doses; clinical doses are not linked to male infertility.",
+          "detail": true,
+          "src": [
+            { "s": "emc-13236", "q": "Clinical doses are not associated with male infertility." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "The UK SmPCs give no reliable frequencies for common effects (one lists nearly all effects as frequency not known). Reported: nausea, vomiting, anorexia, abdominal pain, diarrhoea, headache, dizziness, drowsiness, rash, pruritus, transient alopecia, and yellow or brown urine.",
+          "src": [
+            { "s": "emc-428", "q": "Sialadenitis, pancreatitis, , anorexia, emesis, abdominal pain, diarrhoea and nausea." },
+            { "s": "emc-428", "q": "nystagmus, vertigo, dizziness, headache and drowsiness" },
+            { "s": "emc-428", "q": "urticaria, rash, pruritus and transient alopecia" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Acute pulmonary reactions (fever, chills, cough, chest pain, breathlessness, infiltrates/effusion, eosinophilia), usually in the first week; chronic reactions (pulmonary fibrosis) with 6 months or more of therapy, more in the elderly. Stop immediately.",
+          "src": [
+            { "s": "emc-428", "q": "Acute pulmonary reactions are commonly manifested by fever, chills, cough, chest pain, dyspnoea, pulmonary infiltration with consolidation or pleural effusion on chest x-ray, and eosinophilia." },
+            { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "immediately discontinue nitrofurantoin if new or worsening symptoms of pulmonary damage occur" }
+          ]
+        },
+        {
+          "t": "Hepatic reactions (chronic active hepatitis with fatalities, hepatic necrosis, autoimmune hepatitis, cholestatic jaundice): withdraw immediately.",
+          "src": [
+            { "s": "emc-428", "q": "Chronic active hepatitis (fatalities have been reported), hepatic necrosis, autoimmune hepatitis, cholestatic jaundice" }
+          ]
+        },
+        {
+          "t": "Peripheral neuropathy including optic neuritis; benign intracranial hypertension; haemolytic anaemia, agranulocytosis, aplastic anaemia; anaphylaxis, DRESS, SJS.",
+          "src": [
+            { "s": "emc-428", "q": "Benign intracranial hypertension, peripheral neuropathy including optic neuritis (sensory as well as motor involvement)" },
+            { "s": "emc-428", "q": "Drug Rash With Eosinophilia And Systemic Symptoms (DRESS syndrome)" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "MHRA: consider checking renal function (eGFR) before treating, especially in the elderly.",
+          "tag": "baseline",
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "Consider checking renal function when choosing to treat with nitrofurantoin, especially in the elderly." }
+          ]
+        },
+        {
+          "t": "MHRA: monitor periodically for signs of hepatitis and liver test changes (any duration, especially long-term). Long-term therapy: closely monitor for new or worsening respiratory symptoms, especially in the elderly.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "monitor patients periodically for signs of hepatitis and for changes in biochemical tests that would indicate hepatitis or liver injury" },
+            { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "patients receiving long-term therapy, for example for recurrent urinary tract infections, should be closely monitored for new or worsening respiratory symptoms, especially if elderly" }
+          ]
+        },
+        {
+          "t": "MHRA: closely monitor for pulmonary, hepatic, neurological, haematological and GI side effects during treatment.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "Closely monitor for signs of pulmonary, hepatic, neurological, haematological, and gastrointestinal side effects during treatment" }
+          ]
+        },
+        {
+          "t": "Stop immediately for pulmonary symptoms, hepatitis, first signs of neuropathy (paraesthesia), or haemolysis in suspected G6PD deficiency.",
+          "tag": "stop",
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "immediately discontinue nitrofurantoin if new or worsening symptoms of pulmonary damage occur" },
+            { "s": "emc-428", "q": "Therefore, treatment should be stopped at the first signs of neural involvement (paraesthesia)." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Always take with food or milk: this improves absorption and is important for efficacy.",
+          "src": [
+            { "s": "emc-428", "q": "This medicine should always be taken with food or milk." },
+            { "s": "emc-13236", "q": "Taking Nitrofurantoin with a meal improves absorption and is important for optimal efficacy." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Seek medical advice for breathing trouble, shortness of breath, lingering cough, coughing up blood or mucus, or painful breathing.",
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "seek medical advice if you experience trouble breathing, shortness of breath, a lingering cough, coughing up blood or mucus, or pain or discomfort when breathing" }
+          ]
+        },
+        {
+          "t": "Seek advice promptly for yellow skin or eyes, upper right abdominal pain, dark urine, pale stools, itching or joint pain and swelling.",
+          "src": [
+            { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "talk to your doctor or another healthcare professional promptly if you develop yellowing of the skin or eyes, upper right abdominal pain, dark urine and pale or grey-coloured stools, itching or joint pain and swelling" }
+          ]
+        },
+        {
+          "t": "Urine may turn yellow or brown. May cause dizziness or drowsiness: do not drive if affected.",
+          "src": [
+            { "s": "emc-428", "q": "Urine may be coloured yellow or brown after taking Nitrofurantoin." },
+            { "s": "emc-428", "q": "Nitrofurantoin may cause dizziness and drowsiness and the patient should not drive or operate machinery if affected this way." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "nitrofurantoin:allergy:nitrofuran",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "nitrofurantoin",
+      "allergen": ["nitrofurantoin", "group:nitrofuran"],
+      "concern": "Hypersensitivity to nitrofurantoin or other nitrofurans",
+      "consequence": "Risk of hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Hypersensitivity to the active substance, other nitrofurans",
+      "src": [
+        { "s": "emc-428", "q": "Hypersensitivity to the active substance, other nitrofurans or to any of the excipients listed in section 6.1." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:condition:previous-lung-liver-reaction",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "nitrofurantoin",
+      "condition": "nitrofuran-lung-liver-reaction-history",
+      "concern": "Previous lung or liver reaction to nitrofurantoin or another nitrofuran",
+      "consequence": "Risk of recurrent, potentially life-threatening lung or liver reaction.",
+      "action": "Do not use (one UK SmPC 4.3).",
+      "sourceWording": "Nitrofurantoin is contraindicated",
+      "src": [
+        { "s": "emc-13236", "q": "for patients who have previously had a lung or liver reaction other than a peripheral neuropathy after use of nitrofurantoin or other nitrofurans" }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:renal:egfr-under-45",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "nitrofurantoin",
+      "renal": { "measure": "eGFR", "max": 45 },
+      "concern": "eGFR less than 45 mL/min/1.73 m² (MHRA; both SmPCs print the unit as ml/min)",
+      "consequence": "Reduced renal secretion: lower efficacy and more side effects.",
+      "action": "Contraindicated. Exception (MHRA and one SmPC): eGFR 30 to 44 only, a short course (3 to 7 days) with caution for lower UTI with suspected or proven multidrug-resistant pathogens when benefits outweigh risks.",
+      "sourceWording": "contraindicated in patients with an estimated glomerular filtration rate (eGFR) of less than 45 ml/min/1.73m2",
+      "src": [
+        { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "Nitrofurantoin is contraindicated in patients with an estimated glomerular filtration rate (eGFR) of less than 45 ml/min/1.73m2." },
+        { "s": "emc-428", "q": "Patients suffering from renal dysfunction with an eGFR below 45 ml/minute." },
+        { "s": "emc-13236", "q": "for patients with renal impairment (eGFR below 45 ml/min) or with an increased serum creatinine" }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:renal:egfr-30-44-exception",
+      "kind": "renal",
+      "level": "caution",
+      "med": "nitrofurantoin",
+      "renal": { "measure": "eGFR", "min": 30, "max": 45 },
+      "concern": "eGFR 30 to 44 mL/min/1.73 m²: possible short-course exception",
+      "consequence": "MHRA and one UK SmPC allow limited use in this band only.",
+      "action": "Only a short course (3 to 7 days, MHRA), with caution, for uncomplicated lower UTI with suspected or proven multidrug-resistant pathogens when benefits outweigh risks. Not below eGFR 30.",
+      "sourceWording": "A short course (3 to 7 days) may be used with caution in certain patients with an eGFR of 30 to 44",
+      "src": [
+        { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "A short course (3 to 7 days) may be used with caution in certain patients with an eGFR of 30 to 44 ml/min/1.73m2." },
+        { "s": "mhra-dsu-nitrofurantoin-egfr-2014", "q": "Only prescribe to such patients to treat lower urinary tract infection with suspected or proven multidrug resistant pathogens when the benefits of nitrofurantoin are considered to outweigh the risks of side effects." },
+        { "s": "emc-428", "q": "Nitrofurantoin may be used with caution as short-course therapy only for the treatment of uncomplicated lower urinary tract infection in individual cases with an eGFR between 30-44 ml/min to treat resistant pathogens" }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:condition:raised-serum-creatinine",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "nitrofurantoin",
+      "condition": "raised-serum-creatinine",
+      "concern": "Increased serum creatinine (one UK SmPC)",
+      "consequence": "One UK SmPC lists increased serum creatinine as a contraindication, next to eGFR below 45.",
+      "action": "Do not use (one UK SmPC 4.3). Check eGFR: both UK SmPCs and MHRA contraindicate use below 45 (MHRA: short course with caution possible at 30 to 44 for resistant lower UTI).",
+      "sourceWording": "Nitrofurantoin is contraindicated",
+      "src": [
+        { "s": "emc-13236", "q": "Nitrofurantoin is contraindicated" },
+        { "s": "emc-13236", "q": "for patients with renal impairment (eGFR below 45 ml/min) or with an increased serum creatinine" }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:condition:g6pd-deficiency",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "nitrofurantoin",
+      "condition": "g6pd-deficiency",
+      "concern": "G6PD deficiency",
+      "consequence": "Risk of haemolysis.",
+      "action": "Do not use.",
+      "sourceWording": "for patients with G6PD deficiency",
+      "src": [
+        { "s": "emc-428", "q": "G6PD deficiency (see also Section 4.6) Acute porphyria." },
+        { "s": "emc-13236", "q": "for patients with G6PD deficiency for patients with acute porphyria" }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:condition:porphyria",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "nitrofurantoin",
+      "condition": "porphyria",
+      "concern": "Acute porphyria",
+      "consequence": "Listed contraindication.",
+      "action": "Do not use.",
+      "sourceWording": "for patients with acute porphyria",
+      "src": [
+        { "s": "emc-428", "q": "G6PD deficiency (see also Section 4.6) Acute porphyria." },
+        { "s": "emc-13236", "q": "for patients with G6PD deficiency for patients with acute porphyria" }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:condition:pulmonary-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "nitrofurantoin",
+      "condition": "pulmonary-disease",
+      "concern": "Pulmonary disease",
+      "consequence": "Pre-existing lung disease may mask pulmonary adverse reactions.",
+      "action": "Use with caution; be vigilant for new or worsening respiratory symptoms.",
+      "sourceWording": "should be used with caution in patients with pulmonary disease",
+      "src": [
+        { "s": "emc-428", "q": "Nitrofurantoin should be used with caution in patients with pulmonary disease, hepatic dysfunction, neurological disorders, and allergic diathesis." },
+        { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "use caution when prescribing nitrofurantoin in patients with pulmonary disease or hepatic dysfunction, which may mask the signs and symptoms of adverse reactions" }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "nitrofurantoin",
+      "hepatic": ["any"],
+      "effect": "hepatotoxicity",
+      "concern": "Hepatic dysfunction",
+      "consequence": "May mask hepatic adverse reactions; hepatitis and hepatic necrosis (some fatal) reported.",
+      "action": "Use with caution; monitor periodically for liver injury.",
+      "sourceWording": "should be used with caution in patients with pulmonary disease, hepatic dysfunction",
+      "src": [
+        { "s": "emc-428", "q": "Nitrofurantoin should be used with caution in patients with pulmonary disease, hepatic dysfunction, neurological disorders, and allergic diathesis." },
+        { "s": "mhra-dsu-nitrofurantoin-lung-liver-2023", "q": "use caution when prescribing nitrofurantoin in patients with pulmonary disease or hepatic dysfunction, which may mask the signs and symptoms of adverse reactions" }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:condition:anaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "nitrofurantoin",
+      "condition": "anaemia",
+      "concern": "Anaemia",
+      "consequence": "Higher risk of peripheral neuropathy.",
+      "action": "Use with caution; stop at the first signs of neuropathy.",
+      "sourceWording": "should be used in caution with patients with anaemia",
+      "src": [
+        { "s": "emc-428", "q": "Nitrofurantoin should be used in caution with patients with anaemia, diabetes mellitus, electrolyte imbalance, debilitating conditions and vitamin B (particularly folate) deficiency." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "nitrofurantoin",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus",
+      "consequence": "Higher risk of peripheral neuropathy.",
+      "action": "Use with caution; stop at the first signs of neuropathy.",
+      "sourceWording": "should be used in caution with patients with anaemia, diabetes mellitus",
+      "src": [
+        { "s": "emc-428", "q": "Nitrofurantoin should be used in caution with patients with anaemia, diabetes mellitus, electrolyte imbalance, debilitating conditions and vitamin B (particularly folate) deficiency." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:condition:folate-deficiency",
+      "kind": "condition",
+      "level": "caution",
+      "med": "nitrofurantoin",
+      "condition": "folate-deficiency",
+      "concern": "Vitamin B (particularly folate) deficiency",
+      "consequence": "Higher risk of peripheral neuropathy.",
+      "action": "Use with caution; stop at the first signs of neuropathy.",
+      "sourceWording": "vitamin B (particularly folate) deficiency",
+      "src": [
+        { "s": "emc-428", "q": "Nitrofurantoin should be used in caution with patients with anaemia, diabetes mellitus, electrolyte imbalance, debilitating conditions and vitamin B (particularly folate) deficiency." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:condition:alcohol-dependence",
+      "kind": "condition",
+      "level": "info",
+      "med": "nitrofurantoin",
+      "condition": "alcohol-dependence",
+      "concern": "Alcoholism",
+      "consequence": "One UK SmPC lists alcoholism as increasing the risk of peripheral neuropathy.",
+      "action": "Be aware of neuropathy risk; stop at the first signs.",
+      "sourceWording": "increase the risk of developing peripheral neuropathy",
+      "src": [
+        { "s": "emc-13236", "q": "Conditions such as renal insufficiency, anaemia, diabetes mellitus, alcoholism, electrolyte disorder, vitamin B deficiency (especially folate deficiency) and exhaustive conditions increase the risk of developing peripheral neuropathy." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "nitrofurantoin",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption (capsules contain lactose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take these capsules.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        { "s": "emc-428", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:age:under-3-months",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "nitrofurantoin",
+      "age": { "maxYears": 0.25 },
+      "concern": "Infants under 3 months",
+      "consequence": "Theoretical haemolytic anaemia (immature red cell enzyme systems).",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in infants under three months of age",
+      "src": [
+        { "s": "emc-428", "q": "In infants under three months of age as well as pregnant patients at term (during labour and delivery) because of the theoretical possibility of haemolytic anaemia in the foetus or in the newborn infant" },
+        { "s": "emc-13236", "q": "for infants younger than three months because of the theoretical possibility of haemolytic anaemia" }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:pregnancy:term-smpc",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "nitrofurantoin",
+      "trimesters": [3],
+      "concern": "Pregnancy at term (labour and delivery)",
+      "consequence": "Possible haemolysis of the newborn's immature red cells.",
+      "action": "Contraindicated during labour and delivery (one UK SmPC 4.3); another UK SmPC says best not given just before and during delivery.",
+      "sourceWording": "contraindicated in infants under three months of age and in pregnant women during labour and delivery",
+      "src": [
+        { "s": "emc-428", "q": "In infants under three months of age as well as pregnant patients at term (during labour and delivery) because of the theoretical possibility of haemolytic anaemia in the foetus or in the newborn infant" },
+        { "s": "emc-13236", "q": "it is best not to be administered just before and during the delivery" }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:pregnancy:smpc-general",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "nitrofurantoin",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Long clinical use; one SmPC says suitability is well documented, another that large data show no teratogenicity.",
+      "action": "Use the lowest appropriate dose only after careful assessment (one UK SmPC); another UK SmPC says it can be used if prescribed by a doctor.",
+      "sourceWording": "only after careful assessment",
+      "src": [
+        { "s": "emc-428", "q": "The drug should be used at the lowest dose as appropriate for a specific indication, only after careful assessment." },
+        { "s": "emc-13236", "q": "If prescribed by a doctor, nitrofurantoin can be used during pregnancy." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:pregnancy:bumps-t1-t2",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "nitrofurantoin",
+      "trimesters": [1, 2],
+      "concern": "First and second trimesters (BUMPS/UKTIS)",
+      "consequence": "Commonly used and not known to affect the baby.",
+      "action": "BUMPS: often first-choice for UTI diagnosed before 28 weeks.",
+      "sourceWording": "commonly used during the first and second trimesters",
+      "src": [
+        { "s": "bumps-nitrofurantoin", "q": "Nitrofurantoin is commonly used during the first and second trimesters and is not known to affect the baby." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:pregnancy:bumps-t3",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "nitrofurantoin",
+      "trimesters": [3],
+      "concern": "Third trimester (BUMPS/UKTIS)",
+      "consequence": "Small possibility of lowering the baby's red blood cell levels.",
+      "action": "BUMPS: tends to be avoided; may still be offered if tests show it is the best antibiotic.",
+      "sourceWording": "tends to be avoided during the third trimester",
+      "src": [
+        { "s": "bumps-nitrofurantoin", "q": "Nitrofurantoin tends to be avoided during the third trimester as there is a small possibility that it could lower the baby's red blood cell levels." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:breastfeeding:g6pd-infant",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "nitrofurantoin",
+      "concern": "Breastfeeding an infant with (suspected) G6PD or other red cell enzyme deficiency, hyperbilirubinaemia or jaundice",
+      "consequence": "Risk of haemolytic anaemia (and kernicterus, SPS) in the infant.",
+      "action": "Applies only to these infants (the tool cannot check infant status): temporarily avoid breastfeeding such an infant (one UK SmPC); SPS: avoid nitrofurantoin if the infant has G6PD deficiency, hyperbilirubinaemia or jaundice. Otherwise see the SPS rule (use with caution).",
+      "sourceWording": "must be temporarily avoided",
+      "src": [
+        { "s": "emc-428", "q": "Breast feeding an infant known or suspected to have an erythrocyte enzyme deficiency (including G6PD deficiency), must be temporarily avoided" },
+        { "s": "sps-nitrofurantoin-breastfeeding", "q": "Avoid using nitrofurantoin if the infant has known glucose-6-phosphate dehydrogenase (G6PD) deficiency, hyperbilirubinaemia, or jaundice due to the risk of haemolytic anaemia and kernicterus." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "nitrofurantoin",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Small, variable amounts in milk.",
+      "action": "SPS: can be used with caution, including long-term prophylaxis; monitor the infant for GI upset and oral thrush. Another UK SmPC says it can be used during breastfeeding.",
+      "sourceWording": "can be used with caution during breastfeeding",
+      "src": [
+        { "s": "sps-nitrofurantoin-breastfeeding", "q": "Nitrofurantoin can be used with caution during breastfeeding. This includes modified release preparations and when used for longer term prophylaxis." },
+        { "s": "emc-13236", "q": "Nitrofurantoin can be used during breastfeeding." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:interaction:fluoroquinolone",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "nitrofurantoin",
+      "other": "group:fluoroquinolone",
+      "concern": "Quinolones (e.g. ciprofloxacin)",
+      "consequence": "Antibacterial antagonism.",
+      "action": "Simultaneous use not recommended (one UK SmPC); the other UK SmPC states the antagonism without an action.",
+      "sourceWording": "simultaneous application is not recommended",
+      "src": [
+        { "s": "emc-13236", "q": "There may be an antagonism between quinolones and nitrofurantoin: simultaneous application is not recommended." },
+        { "s": "emc-428", "q": "Anti-bacterial antagonism by quinolone anti-infectives." }
+      ]
+    },
+    {
+      "id": "nitrofurantoin:interaction:urinary-alkaliniser",
+      "kind": "interaction",
+      "level": "info",
+      "med": "nitrofurantoin",
+      "other": "sodium-bicarbonate-potassium-citrate",
+      "concern": "Urinary alkaliniser (citrate)",
+      "consequence": "Urine alkalisation reduces the antibacterial activity of nitrofurantoin.",
+      "action": "Be aware of reduced efficacy (no specific action stated).",
+      "sourceWording": "can reduce the antibacterial activity of nitrofurantoin",
+      "src": [
+        { "s": "emc-13236", "q": "Carbonic anhydrase inhibitors and alkalising agents can reduce the antibacterial activity of nitrofurantoin." },
+        { "s": "emc-428", "q": "Decreased anti-bacterial activity by carbonic anhydrase inhibitors and urine alkalisation." },
+        { "s": "emc-4922", "q": "Citrate and citric acid solutions are systematic and urinary alkalinizers" }
+      ]
+    }
+  ]
+}

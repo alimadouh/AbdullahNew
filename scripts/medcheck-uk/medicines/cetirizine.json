@@ -1,0 +1,1006 @@
+{
+  "id": "cetirizine",
+  "name": "Cetirizine",
+  "ingredients": [
+    "cetirizine"
+  ],
+  "className": "Antihistamine (H1 antagonist, piperazine derivative)",
+  "groups": [
+    "antihistamine",
+    "piperazine-antihistamine"
+  ],
+  "searchTerms": [
+    "cetirizine hydrochloride",
+    "cetirizine dihydrochloride"
+  ],
+  "formulations": [
+    {
+      "id": "cetirizine-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "10 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "Each film-coated tablet contains 10 mg cetirizine dihydrochloride."
+        }
+      ],
+      "sourceIds": [
+        "emc-6751"
+      ]
+    },
+    {
+      "id": "cetirizine-oral-solution",
+      "label": "Oral solution 1 mg/ml (5 mg/5 ml)",
+      "route": "oral",
+      "strengths": "1 mg/ml (5 mg/5 ml)",
+      "release": "n/a",
+      "note": "The clinic syrup is 5 mg/5 ml; the UK oral solutions used here are the same strength. Two UK oral solution SmPCs differ on renal thresholds and the youngest licensed age (see renal and paediatric).",
+      "src": [
+        {
+          "s": "emc-6752",
+          "q": "Each ml of solution contains 1 mg cetirizine dihydrochloride."
+        },
+        {
+          "s": "emc-4568",
+          "q": "Cetirizine Hydrochloride 5 mg/5 ml Oral Solution"
+        }
+      ],
+      "sourceIds": [
+        "emc-6752",
+        "emc-4568"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Seasonal and perennial allergic rhinitis (nose and eye symptoms) and chronic idiopathic urticaria, in adults and children: tablets from 6 years, the 1 mg/ml oral solution from 2 years.",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "indicated in adults and paediatric patients 6 years and above"
+            },
+            {
+              "s": "emc-6751",
+              "q": "for the relief of nasal and ocular symptoms of seasonal and perennial allergic rhinitis"
+            },
+            {
+              "s": "emc-6751",
+              "q": "for the relief of symptoms of chronic idiopathic urticaria"
+            },
+            {
+              "s": "emc-6752",
+              "q": "is indicated in adults and children aged 2 years and above"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the UK SmPCs accessed (tablets and two oral solutions)."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults and adolescents over 12 years: 10 mg once daily (1 tablet or 10 ml oral solution).",
+          "tag": "Allergic rhinitis, urticaria",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Posology 10 mg once daily (1 tablet)."
+            },
+            {
+              "s": "emc-6752",
+              "q": "Posology 10 mg once daily (10 ml oral solution (2 full spoons))."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: no dose reduction needed if renal function is normal.",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Data do not suggest that the dose needs to be reduced in elderly subjects provided that the renal function is normal."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Tablets: children 6-12 years 5 mg twice daily (half a tablet twice daily); over 12 years 10 mg once daily. Do not use the tablets under 6 years (dose cannot be adjusted).",
+          "formulations": [
+            "cetirizine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Children aged 6 to 12 years: 5 mg twice daily (a half tablet twice daily)."
+            },
+            {
+              "s": "emc-6751",
+              "q": "The tablet formulation should not be used in children under 6 years of age as it does not allow the necessary dose adjustments"
+            }
+          ]
+        },
+        {
+          "t": "Oral solution 1 mg/ml: 2-6 years 2.5 mg (2.5 ml) twice daily; 6-12 years 5 mg (5 ml) twice daily; over 12 years 10 mg once daily. Not recommended under 2 years (excipient content).",
+          "formulations": [
+            "cetirizine-oral-solution"
+          ],
+          "src": [
+            {
+              "s": "emc-6752",
+              "q": "Children aged from 2 to 6 years: 2.5 mg twice daily"
+            },
+            {
+              "s": "emc-6752",
+              "q": "Children aged from 6 to 12 years: 5 mg twice daily"
+            },
+            {
+              "s": "emc-6752",
+              "q": "the use of the product is not recommended in children aged less than 2 years"
+            }
+          ]
+        },
+        {
+          "t": "Another UK 5 mg/5 ml oral solution SmPC: 2-5 years 5 mg daily (5 ml once daily or 2.5 ml twice daily); 6-11 years 5 ml twice daily or 10 ml once daily.",
+          "formulations": [
+            "cetirizine-oral-solution"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4568",
+              "q": "Children aged between 2-5 years: 5 mg daily. Either 5 ml once daily or 2.5 ml twice daily."
+            },
+            {
+              "s": "emc-4568",
+              "q": "Children aged between 6 to 11 years: Either 5 ml twice daily or 10 ml once daily."
+            }
+          ]
+        },
+        {
+          "t": "Children with renal impairment: adjust the dose individually by renal clearance, age and body weight.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "In paediatric patients suffering from renal impairment, the dose will have to be adjusted on an individual basis"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to cetirizine, any excipient, hydroxyzine or any piperazine derivative.",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Hypersensitivity to the active substance, to any of the excipients listed in section 6.1, to hydroxyzine or to any piperazine derivatives."
+            }
+          ]
+        },
+        {
+          "t": "End-stage renal disease with eGFR below 15 ml/min.",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Patients with end-stage renal disease with an eGFR (estimated Glomerular Filtration Rate) below 15 ml/min."
+            }
+          ]
+        },
+        {
+          "t": "One UK 5 mg/5 ml oral solution SmPC: contraindicated with creatinine clearance (CrCl) below 10 ml/min.",
+          "formulations": [
+            "cetirizine-oral-solution"
+          ],
+          "src": [
+            {
+              "s": "emc-4568",
+              "q": "Cetirizine is also contraindicated in patients with severe renal impairment at less than 10 ml/min creatinine clearance."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Caution if predisposed to urinary retention (e.g. spinal cord lesion, prostatic hyperplasia): cetirizine may increase the risk.",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Caution should be taken in patients with predisposition factors of urinary retention (e.g. spinal cord lesion, prostatic hyperplasia) as cetirizine may increase the risk of urinary retention."
+            }
+          ]
+        },
+        {
+          "t": "Caution in epilepsy and in patients at risk of convulsions.",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Caution is recommended in epileptic patients and patients at risk of convulsions."
+            }
+          ]
+        },
+        {
+          "t": "Tablets contain lactose: patients with galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take them.",
+          "formulations": [
+            "cetirizine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose- galactose malabsorption should not take this medicine."
+            }
+          ]
+        },
+        {
+          "t": "Oral solution contains sorbitol: patients with hereditary fructose intolerance should not take it. Parabens may cause (possibly delayed) allergic reactions.",
+          "formulations": [
+            "cetirizine-oral-solution"
+          ],
+          "src": [
+            {
+              "s": "emc-6752",
+              "q": "Patients with hereditary fructose intolerance (HFI) should not take / be given this medicinal product."
+            },
+            {
+              "s": "emc-6752",
+              "q": "which may cause allergic reactions (possibly delayed)"
+            }
+          ]
+        },
+        {
+          "t": "Alcohol: no clinically significant interaction shown, but precaution is recommended.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Nevertheless, precaution is recommended if alcohol is taken concomitantly."
+            }
+          ]
+        },
+        {
+          "t": "Itching and/or urticaria may occur after stopping, sometimes intense enough to need restarting treatment.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Pruritus and/or urticaria may occur when cetirizine is stopped"
+            },
+            {
+              "s": "emc-6751",
+              "q": "In some cases, the symptoms may be intense and may require treatment to be restarted."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Alcohol or other CNS depressants: may further reduce alertness and performance in sensitive patients.",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "In sensitive patients, the concurrent use of alcohol or other CNS depressants may cause additional reductions in alertness and impairment of performance"
+            }
+          ]
+        },
+        {
+          "t": "No interactions are expected; studies found no relevant interaction with pseudoephedrine or theophylline.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "no interactions are expected with this antihistamine"
+            },
+            {
+              "s": "emc-6751",
+              "q": "notably with pseudoephedrine or theophylline (400 mg/day)"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "eGFR-based (tablets and one oral solution SmPC): eGFR 60 ml/min or more: 10 mg once daily; 30 to under 60: 5 mg once daily; 15 to under 30 (not on dialysis): 5 mg every 2 days; under 15 (on dialysis): contraindicated. Use only if no alternative.",
+          "formulations": [
+            "cetirizine-tab",
+            "cetirizine-oral-solution"
+          ],
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Moderately decreased renal function 30 - < 60 5 mg once daily"
+            },
+            {
+              "s": "emc-6751",
+              "q": "Severely decreased renal function 15 - <30 not requiring dialysis treatment 5 mg once every 2 days"
+            },
+            {
+              "s": "emc-6751",
+              "q": "End-stage renal disease <15 requiring dialysis treatment Contraindicated"
+            },
+            {
+              "s": "emc-6751",
+              "q": "in cases no alternative treatment can be used, the dosing intervals must be individualized according to renal function"
+            }
+          ]
+        },
+        {
+          "t": "Another UK 5 mg/5 ml oral solution SmPC uses creatinine clearance (CrCl): 50-79 ml/min 10 mg once daily; 30-49: 5 mg once daily; under 30: 5 mg every 2 days; under 10 (dialysis): contraindicated.",
+          "formulations": [
+            "cetirizine-oral-solution"
+          ],
+          "src": [
+            {
+              "s": "emc-4568",
+              "q": "Moderate 30-49 5 mg once daily Severe < 30 5 mg once every 2 days"
+            },
+            {
+              "s": "emc-4568",
+              "q": "End-stage renal disease -Patients undergoing dialysis < 10 contraindicated"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Hepatic impairment alone: no dose change. Hepatic plus renal impairment: adjust the dose as for renal impairment.",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "No dose adjustment is needed in patients with solely hepatic impairment."
+            },
+            {
+              "s": "emc-6751",
+              "q": "In patients with hepatic impairment and renal impairment, adjustment of the dose is recommended"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: pregnancy data do not suggest harm above background rates; use with caution in pregnancy.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "do not suggest potential for maternal or foetal/embryonic toxicity above background rates"
+            },
+            {
+              "s": "emc-6751",
+              "q": "Caution should be exercised when prescribing to pregnant women."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: cetirizine can be used in pregnancy. SPS: if topical treatment fails, oral antihistamines may be considered; loratadine and cetirizine are preferred.",
+          "tag": "BUMPS / SPS",
+          "src": [
+            {
+              "s": "bumps-cetirizine",
+              "q": "Cetirizine can be used during pregnancy."
+            },
+            {
+              "s": "sps-hayfever-pregnancy",
+              "q": "If local topical therapy fails to control symptoms, oral antihistamines may be considered."
+            },
+            {
+              "s": "sps-hayfever-pregnancy",
+              "q": "Loratadine and cetirizine are the preferred antihistamines for pregnant women."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: passes into breast milk; infant side effects cannot be excluded; use with caution.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Cetirizine passes into breast milk. A risk of side effects in breastfed infants cannot be excluded."
+            },
+            {
+              "s": "emc-6751",
+              "q": "caution should be exercised when prescribing cetirizine to lactating women"
+            }
+          ]
+        },
+        {
+          "t": "SPS: a preferred antihistamine in breastfeeding; use with caution and monitor the infant for drowsiness, irritability, dry mouth, poor feeding and poor weight gain. Occasional reduced milk supply reported.",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-antihistamines-breastfeeding",
+              "q": "Cetirizine is a preferred choice during breastfeeding, but infant monitoring is still required."
+            },
+            {
+              "s": "sps-antihistamines-breastfeeding",
+              "q": "monitor the infant for potential side effects including drowsiness, irritability, dry mouth, poor feeding and inadequate weight gain"
+            },
+            {
+              "s": "sps-antihistamines-breastfeeding",
+              "q": "Occasional cases of reduced milk supply have been reported with loratadine and cetirizine."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Fertility: limited human data; no safety concern identified.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Limited data is available on human fertility but no safety concern has been identified."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Trials (10 mg, rates of 1% or more): somnolence (about 10% vs 5% placebo), fatigue, dizziness, headache, dry mouth, nausea, abdominal pain, pharyngitis. Children: diarrhoea, somnolence, rhinitis, fatigue.",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "the following adverse reactions were reported for cetirizine 10 mg in the placebo-controlled trials at rates of 1.0 % or greater"
+            },
+            {
+              "s": "emc-6751",
+              "q": "Somnolence 9.63 % 5.00 %"
+            },
+            {
+              "s": "emc-6751",
+              "q": "minor undesirable effects on the CNS, including somnolence, fatigue, dizziness and headache"
+            },
+            {
+              "s": "emc-6751",
+              "q": "Gastro-intestinal disorders Abdominal pain Dry mouth Nausea"
+            },
+            {
+              "s": "emc-6751",
+              "q": "Diarrhoea 1.0 % 0.6 %"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Hypersensitivity (rare) and anaphylactic shock (very rare).",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Rare: hypersensitivity Very rare: anaphylactic shock"
+            }
+          ]
+        },
+        {
+          "t": "Convulsions (rare).",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Rare: convulsions"
+            }
+          ]
+        },
+        {
+          "t": "Abnormal liver function with raised enzymes and bilirubin (rare), mostly resolving on stopping; hepatitis (frequency not known).",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Mostly this resolves upon discontinuation of the treatment with cetirizine dihydrochloride."
+            },
+            {
+              "s": "emc-6751",
+              "q": "Not known: hepatitis"
+            }
+          ]
+        },
+        {
+          "t": "Acute generalised exanthematous pustulosis and urinary retention (frequency not known); thrombocytopenia (very rare).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "Not known: acute generalized exanthematous pustulosis"
+            },
+            {
+              "s": "emc-6751",
+              "q": "Not known: urinary retention"
+            },
+            {
+              "s": "emc-6751",
+              "q": "Very rare: thrombocytopenia"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "status": "not-stated",
+      "note": "No monitoring requirements stated in the UK SmPCs accessed; no SPS monitoring page for cetirizine found."
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Tablets: swallow with a glass of liquid; the tablet can be divided into 2 equal doses.",
+          "formulations": [
+            "cetirizine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "The tablets need to be swallowed with a glass of liquid."
+            },
+            {
+              "s": "emc-6751",
+              "q": "The tablet can be divided into 2 equal doses."
+            }
+          ]
+        },
+        {
+          "t": "Oral solution: can be swallowed as it is.",
+          "formulations": [
+            "cetirizine-oral-solution"
+          ],
+          "src": [
+            {
+              "s": "emc-6752",
+              "q": "The solution can be swallowed as such."
+            }
+          ]
+        },
+        {
+          "t": "Food slows but does not reduce absorption.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "The extent of absorption of cetirizine is not reduced with food, although the rate of absorption is decreased."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "If drowsy, do not drive, do hazardous tasks or use machines; do not exceed the recommended dose.",
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "patients who experience somnolence should refrain from driving, engaging in potentially hazardous activities or operating machinery"
+            },
+            {
+              "s": "emc-6751",
+              "q": "They should not exceed the recommended dose"
+            }
+          ]
+        },
+        {
+          "t": "Stop 3 days before allergy skin tests.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6751",
+              "q": "a wash-out period (of 3 days) is required before performing them"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "cetirizine:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "cetirizine",
+      "allergen": [
+        "cetirizine"
+      ],
+      "concern": "Cetirizine hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity to the active substance",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "Hypersensitivity to the active substance, to any of the excipients listed in section 6.1, to hydroxyzine or to any piperazine derivatives."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:allergy:piperazine",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "cetirizine",
+      "allergen": [
+        "group:piperazine-antihistamine"
+      ],
+      "concern": "Hypersensitivity to hydroxyzine or another piperazine derivative (e.g. levocetirizine)",
+      "consequence": "Cross-hypersensitivity.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: to hydroxyzine or to any piperazine derivatives",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "Hypersensitivity to the active substance, to any of the excipients listed in section 6.1, to hydroxyzine or to any piperazine derivatives."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:renal:egfr-under-15",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "cetirizine",
+      "formulations": [
+        "cetirizine-tab",
+        "cetirizine-oral-solution"
+      ],
+      "renal": {
+        "measure": "eGFR",
+        "max": 15
+      },
+      "concern": "End-stage renal disease (eGFR below 15 ml/min)",
+      "consequence": "Cetirizine is mainly excreted by the kidneys.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "Patients with end-stage renal disease with an eGFR (estimated Glomerular Filtration Rate) below 15 ml/min."
+        },
+        {
+          "s": "emc-6752",
+          "q": "End-stage renal disease <15 requiring dialysis treatment Contraindicated"
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:renal:egfr-15-30",
+      "kind": "renal",
+      "level": "dose",
+      "med": "cetirizine",
+      "formulations": [
+        "cetirizine-tab",
+        "cetirizine-oral-solution"
+      ],
+      "renal": {
+        "measure": "eGFR",
+        "min": 15,
+        "max": 30
+      },
+      "concern": "Severely decreased renal function (eGFR 15 to under 30 ml/min)",
+      "consequence": "Reduced cetirizine clearance.",
+      "action": "Adults: 5 mg once every 2 days; use only if no alternative treatment.",
+      "sourceWording": "adjust the dose as indicated",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "Severely decreased renal function 15 - <30 not requiring dialysis treatment 5 mg once every 2 days"
+        },
+        {
+          "s": "emc-6752",
+          "q": "Severely decreased renal function 15 - <30 not requiring dialysis 5 mg once every 2 days"
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:renal:egfr-30-60",
+      "kind": "renal",
+      "level": "dose",
+      "med": "cetirizine",
+      "formulations": [
+        "cetirizine-tab",
+        "cetirizine-oral-solution"
+      ],
+      "renal": {
+        "measure": "eGFR",
+        "min": 30,
+        "max": 60
+      },
+      "concern": "Moderately decreased renal function (eGFR 30 to under 60 ml/min)",
+      "consequence": "Reduced cetirizine clearance.",
+      "action": "Adults: 5 mg once daily; use only if no alternative treatment.",
+      "sourceWording": "adjust the dose as indicated",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "Moderately decreased renal function 30 - < 60 5 mg once daily"
+        },
+        {
+          "s": "emc-6752",
+          "q": "Moderately decreased renal function 30 - < 60 5 mg once daily"
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:renal:crcl-under-10-sol",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "cetirizine",
+      "formulations": [
+        "cetirizine-oral-solution"
+      ],
+      "renal": {
+        "measure": "CrCl",
+        "max": 10
+      },
+      "concern": "Creatinine clearance below 10 ml/min (one UK oral solution SmPC)",
+      "consequence": "Accumulation in severe renal impairment.",
+      "action": "Do not use (this SmPC uses CrCl; the other UK SmPCs use eGFR below 15).",
+      "sourceWording": "contraindicated in patients with severe renal impairment at less than 10 ml/min creatinine clearance",
+      "src": [
+        {
+          "s": "emc-4568",
+          "q": "Cetirizine is also contraindicated in patients with severe renal impairment at less than 10 ml/min creatinine clearance."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:renal:crcl-10-30-sol",
+      "kind": "renal",
+      "level": "dose",
+      "med": "cetirizine",
+      "formulations": [
+        "cetirizine-oral-solution"
+      ],
+      "renal": {
+        "measure": "CrCl",
+        "min": 10,
+        "max": 30
+      },
+      "concern": "Severe renal impairment, CrCl under 30 ml/min (one UK oral solution SmPC)",
+      "consequence": "Reduced cetirizine clearance.",
+      "action": "Adults: 5 mg once every 2 days.",
+      "sourceWording": "adjust the dose as indicated",
+      "src": [
+        {
+          "s": "emc-4568",
+          "q": "Moderate 30-49 5 mg once daily Severe < 30 5 mg once every 2 days"
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:renal:crcl-30-50-sol",
+      "kind": "renal",
+      "level": "dose",
+      "med": "cetirizine",
+      "formulations": [
+        "cetirizine-oral-solution"
+      ],
+      "renal": {
+        "measure": "CrCl",
+        "min": 30,
+        "max": 50
+      },
+      "concern": "Moderate renal impairment, CrCl 30-49 ml/min (one UK oral solution SmPC)",
+      "consequence": "Reduced cetirizine clearance.",
+      "action": "Adults: 5 mg once daily.",
+      "sourceWording": "adjust the dose as indicated",
+      "src": [
+        {
+          "s": "emc-4568",
+          "q": "Moderate 30-49 5 mg once daily Severe < 30 5 mg once every 2 days"
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:condition:urinary-retention",
+      "kind": "condition",
+      "level": "caution",
+      "med": "cetirizine",
+      "condition": "prostatic-hypertrophy",
+      "concern": "Predisposition to urinary retention (e.g. prostatic hyperplasia, spinal cord lesion)",
+      "consequence": "Cetirizine may increase the risk of urinary retention.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "Caution should be taken in patients with predisposition factors of urinary retention (e.g. spinal cord lesion, prostatic hyperplasia) as cetirizine may increase the risk of urinary retention."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:condition:epilepsy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "cetirizine",
+      "condition": "epilepsy",
+      "concern": "Epilepsy or risk of convulsions",
+      "consequence": "Convulsions are a rare adverse effect.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "Caution is recommended in epileptic patients and patients at risk of convulsions."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:condition:galactose-tab",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "cetirizine",
+      "formulations": [
+        "cetirizine-tab"
+      ],
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, total lactase deficiency or glucose-galactose malabsorption (tablets contain lactose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the tablets.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose- galactose malabsorption should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:condition:fructose-sol",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "cetirizine",
+      "formulations": [
+        "cetirizine-oral-solution"
+      ],
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance (oral solution contains sorbitol)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take / be given the oral solution.",
+      "sourceWording": "should not take / be given this medicinal product",
+      "src": [
+        {
+          "s": "emc-6752",
+          "q": "Patients with hereditary fructose intolerance (HFI) should not take / be given this medicinal product."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:age:tab-under-6",
+      "kind": "age",
+      "level": "avoid",
+      "med": "cetirizine",
+      "formulations": [
+        "cetirizine-tab"
+      ],
+      "age": {
+        "maxYears": 6
+      },
+      "concern": "Child under 6 years (tablets)",
+      "consequence": "Tablets do not allow the dose adjustment needed.",
+      "action": "Do not use the tablets; use a paediatric (liquid) formulation.",
+      "sourceWording": "should not be used in children under 6 years of age",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "The tablet formulation should not be used in children under 6 years of age as it does not allow the necessary dose adjustments"
+        },
+        {
+          "s": "emc-6751",
+          "q": "It is recommended to use a paediatric formulation of cetirizine."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:age:sol-under-2",
+      "kind": "age",
+      "level": "avoid",
+      "med": "cetirizine",
+      "formulations": [
+        "cetirizine-oral-solution"
+      ],
+      "age": {
+        "maxYears": 2
+      },
+      "concern": "Child under 2 years (oral solution)",
+      "consequence": "Excipient content.",
+      "action": "Not recommended.",
+      "sourceWording": "not recommended in children aged less than 2 years",
+      "src": [
+        {
+          "s": "emc-6752",
+          "q": "Due to the amount of some excipients in the formulation, the use of the product is not recommended in children aged less than 2 years."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "cetirizine",
+      "concern": "Pregnancy",
+      "consequence": "Pregnancy data do not suggest harm above background rates.",
+      "action": "Use with caution (SmPC). BUMPS: can be used; SPS: a preferred antihistamine if topical treatment fails.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "Caution should be exercised when prescribing to pregnant women."
+        },
+        {
+          "s": "bumps-cetirizine",
+          "q": "Cetirizine can be used during pregnancy."
+        },
+        {
+          "s": "sps-hayfever-pregnancy",
+          "q": "Loratadine and cetirizine are the preferred antihistamines for pregnant women."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "cetirizine",
+      "concern": "Breastfeeding",
+      "consequence": "Passes into breast milk; infant side effects cannot be excluded.",
+      "action": "Use with caution (SmPC); SPS: preferred antihistamine, monitor the infant for drowsiness, irritability, dry mouth, poor feeding and weight gain.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "caution should be exercised when prescribing cetirizine to lactating women"
+        },
+        {
+          "s": "sps-antihistamines-breastfeeding",
+          "q": "Cetirizine is a preferred choice during breastfeeding, but infant monitoring is still required."
+        }
+      ]
+    },
+    {
+      "id": "cetirizine:interaction:cns-depressant",
+      "kind": "interaction",
+      "level": "info",
+      "med": "cetirizine",
+      "other": "group:cns-depressant",
+      "concern": "Other CNS depressants",
+      "consequence": "May further reduce alertness and performance in sensitive patients.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "may cause additional reductions in alertness",
+      "src": [
+        {
+          "s": "emc-6751",
+          "q": "In sensitive patients, the concurrent use of alcohol or other CNS depressants may cause additional reductions in alertness and impairment of performance"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,835 @@
+{
+  "id": "fluconazole",
+  "name": "Fluconazole",
+  "ingredients": ["fluconazole"],
+  "className": "Triazole antifungal (antimycotic for systemic use)",
+  "groups": ["azole-antifungal", "antifungal", "cyp3a4-inhibitor", "cyp2c9-inhibitor", "cyp2c19-inhibitor", "qt-prolonging"],
+  "searchTerms": ["fluconazole"],
+  "formulations": [
+    {
+      "id": "fluconazole-cap",
+      "label": "Capsules",
+      "route": "oral",
+      "strengths": "150 mg",
+      "release": "immediate",
+      "src": [{ "s": "emc-1065", "q": "Each hard capsule contains fluconazole 150 mg" }],
+      "sourceIds": ["emc-1065"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "availability": { "status": "uk" },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Adults: cryptococcal meningitis, coccidioidomycosis, invasive candidiasis, mucosal candidiasis (oropharyngeal, oesophageal, candiduria, chronic mucocutaneous), chronic oral atrophic candidiasis, vaginal candidiasis (acute or recurrent) and candidal balanitis when local therapy is not appropriate, dermatomycosis when systemic therapy is indicated, and onychomycosis when other agents are not appropriate.",
+          "tag": "Treatment (adults)",
+          "src": [
+            { "s": "emc-1065", "q": "Cryptococcal meningitis (see section 4.4). Coccidioidomycosis (see section 4.4). Invasive candidiasis." },
+            { "s": "emc-1065", "q": "Vaginal candidiasis, acute or recurrent; when local therapy is not appropriate. Candidal balanitis when local therapy is not appropriate." }
+          ]
+        },
+        {
+          "t": "Adults: prophylaxis of relapse of cryptococcal meningitis, of oropharyngeal/oesophageal candidiasis in HIV, of recurrent vaginal candidiasis (4 or more episodes a year), and of candidal infections in prolonged neutropenia.",
+          "tag": "Prophylaxis (adults)",
+          "detail": true,
+          "src": [
+            { "s": "emc-1065", "q": "To reduce the incidence of recurrent vaginal candidiasis (4 or more episodes a year)." },
+            { "s": "emc-1065", "q": "Prophylaxis of candidal infections in patients with prolonged neutropenia" }
+          ]
+        },
+        {
+          "t": "Children 0 to 17 years: mucosal candidiasis (oropharyngeal, oesophageal), invasive candidiasis, cryptococcal meningitis, prophylaxis in immunocompromised patients, and maintenance to prevent relapse of cryptococcal meningitis.",
+          "tag": "Children",
+          "src": [
+            { "s": "emc-1065", "q": "Diflucan is used for the treatment of mucosal candidiasis (oropharyngeal, oesophageal), invasive candidiasis, cryptococcal meningitis and the prophylaxis of candidal infections in immunocompromised patients." }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Should not be used for tinea capitis (not superior to griseofulvin; success rate below 20%).",
+          "tag": "Tinea capitis",
+          "src": [{ "s": "emc-1065", "q": "Therefore, Diflucan should not be used for tinea capitis." }]
+        },
+        {
+          "t": "Consider the prevalence of resistant Candida species (e.g. C. krusei, C. auris, reduced susceptibility of C. glabrata); these may need another antifungal.",
+          "tag": "Resistance",
+          "detail": true,
+          "src": [{ "s": "emc-1065", "q": "prescribers are advised to take into account the prevalence of resistance in various Candida species to fluconazole." }]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Acute vaginal candidiasis or candidal balanitis: 150 mg as a single dose.",
+          "tag": "Genital candidiasis",
+          "src": [{ "s": "emc-1065", "q": "Acute vaginal candidiasis - Candidal balanitis 150 mg Single dose" }]
+        },
+        {
+          "t": "Recurrent vaginal candidiasis (4 or more episodes a year): 150 mg every third day for 3 doses (days 1, 4 and 7), then 150 mg once weekly for 6 months.",
+          "tag": "Recurrent vaginal candidiasis",
+          "src": [{ "s": "emc-1065", "q": "150 mg every third day for a total of 3 doses (day 1, 4, and 7) followed by 150 mg once weekly maintenance dose Maintenance dose: 6 months." }]
+        },
+        {
+          "t": "Oropharyngeal candidiasis: loading dose 200 to 400 mg on day 1, then 100 to 200 mg once daily for 7 to 21 days (until remission).",
+          "tag": "Oropharyngeal candidiasis",
+          "src": [{ "s": "emc-1065", "q": "Oropharyngeal candidiasis Loading dose: 200 mg to 400 mg on Day 1 Subsequent dose: 100 mg to 200 mg once daily 7 to 21 days" }]
+        },
+        {
+          "t": "Tinea pedis, corporis, cruris and dermal candida infections: 150 mg once weekly or 50 mg once daily for 2 to 4 weeks (tinea pedis up to 6 weeks).",
+          "tag": "Dermatomycosis",
+          "src": [{ "s": "emc-1065", "q": "150 mg once weekly or 50 mg once daily 2 to 4 weeks, tinea pedis may require treatment for up to 6 weeks" }]
+        },
+        {
+          "t": "Onychomycosis: 150 mg once weekly until the infected nail is replaced by uninfected nail.",
+          "tag": "Tinea unguium",
+          "detail": true,
+          "src": [{ "s": "emc-1065", "q": "tinea unguium ( onychomycosis ) 150 mg once weekly Treatment should be continued until infected nail is replaced (uninfected nail grows in)." }]
+        },
+        {
+          "t": "Invasive candidiasis: loading dose 800 mg on day 1, then 400 mg once daily. Cryptococcal meningitis: 400 mg on day 1, then 200 to 400 mg once daily, usually for at least 6 to 8 weeks.",
+          "tag": "Systemic infections",
+          "detail": true,
+          "src": [
+            { "s": "emc-1065", "q": "Invasive candidiasis Loading dose: 800 mg on Day 1 Subsequent dose: 400 mg once daily" },
+            { "s": "emc-1065", "q": "Loading dose: 400 mg on Day 1 Subsequent dose: 200 mg to 400 mg once daily Usually at least 6 to 8 weeks." }
+          ]
+        },
+        {
+          "t": "Elderly: adjust the dose to renal function.",
+          "tag": "Elderly",
+          "src": [{ "s": "emc-1065", "q": "Dosage should be adjusted based on the renal function" }]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "28 days to 11 years, mucosal candidiasis: 6 mg/kg on day 1, then 3 mg/kg once daily. Do not exceed 400 mg daily in children.",
+          "tag": "Mucosal candidiasis",
+          "src": [
+            { "s": "emc-1065", "q": "Mucosal candidiasis Initial dose: 6 mg/kg Subsequent dose: 3 mg/kg once daily" },
+            { "s": "emc-1065", "q": "A maximum dose of 400 mg daily should not be exceeded in paediatric population." }
+          ],
+          "calc": { "mgPerKg": 3, "per": "day", "dividedInto": 1, "maxMg": 400, "maxPer": "day", "ageMinYears": 0.0767, "ageMaxYears": 12, "of": "fluconazole" }
+        },
+        {
+          "t": "28 days to 11 years: invasive candidiasis or cryptococcal meningitis 6 to 12 mg/kg once daily; prophylaxis in immunocompromised 3 to 12 mg/kg once daily.",
+          "tag": "Other indications",
+          "detail": true,
+          "src": [
+            { "s": "emc-1065", "q": "Dose: 6 to 12 mg/kg once daily Depending on the severity of the disease" },
+            { "s": "emc-1065", "q": "Dose: 3 to 12 mg/kg once daily" }
+          ]
+        },
+        {
+          "t": "Term newborns: same mg/kg dose every 72 hours (0 to 14 days) or every 48 hours (15 to 27 days); maximum 12 mg/kg per dose.",
+          "tag": "Term newborns",
+          "detail": true,
+          "src": [
+            { "s": "emc-1065", "q": "A maximum dose of 12 mg/kg every 72 hours should not be exceeded" },
+            { "s": "emc-1065", "q": "A maximum dose of 12 mg/kg every 48 hours should not be exceeded" }
+          ]
+        },
+        {
+          "t": "Adolescents 12 to 17 years: choose adult or child dosing by weight and pubertal development. Genital candidiasis is not established in children; if essential in adolescents, use the adult dose.",
+          "tag": "Adolescents",
+          "src": [
+            { "s": "emc-1065", "q": "Safety and efficacy for genital candidiasis indication in paediatric population has not been established." },
+            { "s": "emc-1065", "q": "If treatment for genital candidiasis is imperative in adolescents (from 12 to 17 years old), the posology should be the same as adults posology." }
+          ]
+        },
+        {
+          "t": "The capsules are not suited to infants and small children; oral liquid forms are more suitable.",
+          "tag": "Formulation",
+          "src": [{ "s": "emc-1065", "q": "The capsule formulation is not adapted for use in infants and small children." }]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to fluconazole, related azoles or any excipient.",
+          "src": [{ "s": "emc-1065", "q": "Hypersensitivity to the active substance, to related azole substances, or to any of the excipients listed in section 6.1." }]
+        },
+        {
+          "t": "Other medicines that prolong the QT interval and are metabolised by CYP3A4 (e.g. cisapride, astemizole, pimozide, quinidine, erythromycin).",
+          "src": [{ "s": "emc-1065", "q": "Coadministration of other medicinal products known to prolong the QT interval and which are metabolised via the cytochrome P450 (CYP) 3A4 such as cisapride, astemizole, pimozide, quinidine, and erythromycin are contraindicated" }]
+        },
+        {
+          "t": "Terfenadine with multiple fluconazole doses of 400 mg per day or more.",
+          "detail": true,
+          "src": [{ "s": "emc-1065", "q": "Coadministration of terfenadine is contraindicated in patients receiving Diflucan at multiple doses of 400 mg per day or higher" }]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "QT prolongation and torsades de pointes (very rare). Use with caution in potentially proarrhythmic conditions; hypokalaemia and advanced heart failure increase the risk of life-threatening ventricular arrhythmias.",
+          "tag": "QT interval",
+          "src": [
+            { "s": "emc-1065", "q": "Diflucan should be administered with caution to patients with potentially proarrhythmic conditions." },
+            { "s": "emc-1065", "q": "Patients with hypokalemia and advanced cardiac failure are at an increased risk for the occurrence of life threatening ventricular arrhythmias and torsades de pointes ." }
+          ]
+        },
+        {
+          "t": "Liver: use with caution in liver dysfunction. Rare serious, sometimes fatal, hepatotoxicity. Monitor closely if LFTs become abnormal; stop at once if symptoms of serious liver injury appear.",
+          "tag": "Liver",
+          "src": [
+            { "s": "emc-1065", "q": "Diflucan has been associated with rare cases of serious hepatic toxicity including fatalities" },
+            { "s": "emc-1065", "q": "Patients who develop abnormal liver function tests during fluconazole therapy must be monitored closely for the development of more serious hepatic injury." },
+            { "s": "emc-1065", "q": "Treatment of fluconazole should be immediately discontinued and the patient should consult a physician." }
+          ]
+        },
+        {
+          "t": "Kidney: use with caution in renal dysfunction (see dose table).",
+          "tag": "Kidney",
+          "src": [{ "s": "emc-1065", "q": "Diflucan should be administered with caution to patients with renal dysfunction (see section 4.2)." }]
+        },
+        {
+          "t": "Severe skin reactions (SJS, TEN, DRESS) reported. Stop if a rash due to fluconazole appears during treatment of a superficial infection; in invasive infections stop if bullous lesions or erythema multiforme develop.",
+          "tag": "Skin reactions",
+          "src": [
+            { "s": "emc-1065", "q": "If a rash, which is considered attributable to fluconazole, develops in a patient treated for a superficial fungal infection, further therapy with this medicinal product should be discontinued." },
+            { "s": "emc-1065", "q": "fluconazole discontinued if bullous lesions or erythema multiforme develop" }
+          ]
+        },
+        {
+          "t": "Adrenal insufficiency has been seen with ketoconazole and could rarely apply to fluconazole.",
+          "tag": "Adrenal",
+          "detail": true,
+          "src": [{ "s": "emc-1065", "q": "Ketoconazole is known to cause adrenal insufficiency, and this could also although rarely seen be applicable to fluconazole." }]
+        },
+        {
+          "t": "Capsules contain lactose: people with hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take them.",
+          "tag": "Excipient",
+          "detail": true,
+          "src": [{ "s": "emc-1065", "q": "Patients with rare hereditary problems of galactose intolerance, the total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Fluconazole is a moderate CYP2C9 and CYP3A4 inhibitor and a strong CYP2C19 inhibitor. Monitor patients on narrow-therapeutic-window medicines metabolised by these enzymes. The effect lasts 4 to 5 days after stopping fluconazole.",
+          "tag": "General",
+          "src": [
+            { "s": "emc-1065", "q": "Fluconazole is a moderate CYP2C9 and CYP3A4 inhibitor. Fluconazole is also a strong inhibitor of CYP2C19." },
+            { "s": "emc-1065", "q": "The enzyme inhibiting effect of fluconazole persists 4-5 days after discontinuation of fluconazole treatment" }
+          ]
+        },
+        {
+          "t": "Contraindicated with QT-prolonging medicines metabolised by CYP3A4 (examples named: cisapride, astemizole, pimozide, quinidine, erythromycin). SPS: do not co-prescribe triazole antifungals with other QT-prolonging medicines; short courses or single doses only as an exception when there is no alternative.",
+          "tag": "QT-prolonging medicines",
+          "src": [
+            { "s": "emc-1065", "q": "Coadministration of fluconazole and erythromycin is contraindicated (see section 4.3)." },
+            { "s": "sps-qt-commonly-used", "q": "Do not co-prescribe with other QT-prolonging medicines, particularly those that are also CYP3A4 or P-glycoprotein (P-gp) substrates." },
+            { "s": "sps-qt-commonly-used", "q": "Short courses, including single doses, may be considered as an exception. Only do so when no alternative treatment is available." }
+          ]
+        },
+        {
+          "t": "Warfarin: prothrombin time prolonged up to 2-fold with bleeding events; monitor prothrombin time carefully, warfarin dose adjustment may be needed.",
+          "tag": "Warfarin",
+          "src": [
+            { "s": "emc-1065", "q": "During concomitant treatment with fluconazole and warfarin the prothrombin time was prolonged up to 2-fold" },
+            { "s": "emc-1065", "q": "In patients receiving coumarin-type or indanedione anticoagulants concurrently with fluconazole the prothrombin time should be carefully monitored." }
+          ]
+        },
+        {
+          "t": "Statins metabolised by CYP3A4 (atorvastatin, simvastatin): dose-dependent rise in myopathy/rhabdomyolysis risk. If needed together, watch for muscle symptoms and monitor creatine kinase; stop the statin if CK rises markedly or myopathy is suspected.",
+          "tag": "Statins",
+          "src": [
+            { "s": "emc-1065", "q": "The risk of myopathy and rhabdomyolysis increases (dose-dependent) when fluconazole is coadministered with HMG-CoA reductase inhibitors metabolised through CYP3A4, such as atorvastatin and simvastatin" },
+            { "s": "emc-1065", "q": "the patient should be observed for symptoms of myopathy and rhabdomyolysis and creatine kinase should be monitored." }
+          ]
+        },
+        {
+          "t": "Sulfonylureas: longer half-life; monitor blood glucose often and reduce the sulfonylurea dose as appropriate.",
+          "tag": "Sulfonylureas",
+          "src": [{ "s": "emc-1065", "q": "Frequent monitoring of blood glucose and appropriate reduction of sulfonylurea dose is recommended during coadministration." }]
+        },
+        {
+          "t": "Celecoxib: half the celecoxib dose may be needed. Other NSAIDs metabolised by CYP2C9 (ibuprofen, naproxen, diclofenac): monitor for NSAID toxicity; dose adjustment may be needed.",
+          "tag": "NSAIDs",
+          "src": [
+            { "s": "emc-1065", "q": "Half of the celecoxib dose may be necessary when combined with fluconazole." },
+            { "s": "emc-1065", "q": "Frequent monitoring for adverse events and toxicity related to NSAIDs is recommended. Adjustment of dose of NSAIDs may be needed." }
+          ]
+        },
+        {
+          "t": "Calcium-channel blockers metabolised by CYP3A4 (nifedipine, amlodipine, verapamil): exposure may rise; monitor frequently for adverse events.",
+          "tag": "Calcium-channel blockers",
+          "detail": true,
+          "src": [
+            { "s": "emc-1065", "q": "Certain calcium channel antagonists (nifedipine, isradipine, amlodipine, verapamil and felodipine) are metabolised by CYP3A4." },
+            { "s": "emc-1065", "q": "Frequent monitoring for adverse events is recommended." }
+          ]
+        },
+        {
+          "t": "Amitriptyline: effect increased; drug levels may be measured at the start and after one week, adjust the dose if needed. Carbamazepine: levels rise by about 30% with toxicity risk; adjust by levels/effect.",
+          "tag": "Amitriptyline / carbamazepine",
+          "detail": true,
+          "src": [
+            { "s": "emc-1065", "q": "Fluconazole increases the effect of amitriptyline and nortriptyline." },
+            { "s": "emc-1065", "q": "There is a risk of developing carbamazepine toxicity. Dose adjustment of carbamazepine may be necessary depending on concentration measurements/effect." }
+          ]
+        },
+        {
+          "t": "Hydrochlorothiazide raised fluconazole plasma levels by 40%; the SmPC says this should not need a change in the fluconazole dose.",
+          "tag": "Hydrochlorothiazide",
+          "detail": true,
+          "src": [
+            { "s": "emc-1065", "q": "coadministration of multiple-dose hydrochlorothiazide to healthy volunteers receiving fluconazole increased plasma concentration of fluconazole by 40%" },
+            { "s": "emc-1065", "q": "An effect of this magnitude should not necessitate a change in the fluconazole dose regimen in subjects receiving concomitant diuretics." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Single-dose treatment: no adjustment. Multiple doses: give a normal first dose (50 to 400 mg), then CrCl >50 mL/min 100% of the usual daily dose; CrCl ≤50 mL/min (no haemodialysis) 50%; haemodialysis: 100% after each session.",
+          "src": [
+            { "s": "emc-1065", "q": "No adjustments in single dose therapy are necessary." },
+            { "s": "emc-1065", "q": "Creatinine clearance (ml/min) Percent of recommended dose >50 100% ≤50 (no haemodialysis) 50% Haemodialysis 100% after each haemodialysis" }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Limited data: use with caution in hepatic impairment.",
+          "src": [{ "s": "emc-1065", "q": "Limited data are available in patients with hepatic impairment, therefore fluconazole should be administered with caution to patients with liver dysfunction" }]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: increased risk of miscarriage (1st/2nd trimester) and possible small increase in musculoskeletal and cardiac malformations with first-trimester use. Standard short courses should not be used in pregnancy unless clearly necessary; high-dose or prolonged regimens only for potentially life-threatening infections.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-1065", "q": "Fluconazole in standard doses and short-term treatments should not be used in pregnancy unless clearly necessary." },
+            { "s": "emc-1065", "q": "Fluconazole in high dose and/or in prolonged regimens should not be used during pregnancy except for potentially life-threatening infections." }
+          ]
+        },
+        {
+          "t": "BUMPS: rarely used in pregnancy because creams and pessaries (e.g. clotrimazole) usually work; fluconazole is generally given only when these fail.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-fluconazole-thrush", "q": "Fluconazole is not often used in pregnancy, as thrush can usually be treated with creams and pessaries instead." },
+            { "s": "bumps-fluconazole-thrush", "q": "Women are generally only prescribed fluconazole in pregnancy when these treatments have not worked." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Passes into milk at levels similar to plasma. Breastfeeding may continue after a single 150 mg dose; not recommended after repeated or high doses.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-1065", "q": "Breast-feeding may be maintained after a single dose of 150 mg fluconazole." },
+            { "s": "emc-1065", "q": "Breast-feeding is not recommended after repeated use or after high dose fluconazole." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Tell women of childbearing potential about the fetal risk. After a single dose, wait 1 week before trying to conceive; for longer courses consider contraception during treatment and for 1 week after the last dose.",
+          "src": [
+            { "s": "emc-1065", "q": "After single dose treatment, a washout period of 1 week (corresponding to 5-6 half-lives) is recommended before becoming pregnant" },
+            { "s": "emc-1065", "q": "contraception may be considered, as appropriate, in women of childbearing potential throughout the treatment period and for 1 week after the final dose." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: headache, abdominal pain, diarrhoea, nausea, vomiting, raised ALT/AST/alkaline phosphatase, rash.",
+          "src": [{ "s": "emc-1065", "q": "The most frequently (≥1/100 to <1/10) reported adverse reactions are headache, abdominal pain, diarrhoea, nausea, vomiting, alanine aminotransferase increased, aspartate aminotransferase increased, blood alkaline phosphatase increased and rash." }]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Serious liver injury (hepatitis, hepatic failure): stop fluconazole immediately if asthenia, anorexia, persistent nausea, vomiting or jaundice appear.",
+          "tag": "Liver",
+          "src": [{ "s": "emc-1065", "q": "The patient should be informed of suggestive symptoms of serious hepatic effect (important asthenia, anorexia, persistent nausea, vomiting and jaundice)." }]
+        },
+        {
+          "t": "QT prolongation and torsades de pointes.",
+          "tag": "Heart rhythm",
+          "src": [{ "s": "emc-1065", "q": "there have been very rare cases of QT prolongation and torsades de pointes in patients taking Diflucan." }]
+        },
+        {
+          "t": "SJS, TEN, DRESS, anaphylaxis: stop treatment (see cautions).",
+          "tag": "Skin / allergy",
+          "src": [
+            { "s": "emc-1065", "q": "Patients have rarely developed exfoliative cutaneous reactions, such as Stevens-Johnson syndrome and toxic epidermal necrolysis, during treatment with fluconazole." },
+            { "s": "emc-1065", "q": "In rare cases anaphylaxis has been reported" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "If liver function tests become abnormal, monitor closely for more serious liver injury.",
+          "tag": "ongoing",
+          "src": [{ "s": "emc-1065", "q": "Patients who develop abnormal liver function tests during fluconazole therapy must be monitored closely for the development of more serious hepatic injury." }]
+        },
+        {
+          "t": "SPS (triazole antifungals): no ECG needed when used alone without other risk factors; check ECG and electrolytes before and during long courses in people with non-modifiable risk factors.",
+          "tag": "baseline",
+          "src": [
+            { "s": "sps-qt-commonly-used", "q": "No ECG monitoring is required when used alone, and in the absence of additional patient or medicine risk factors." },
+            { "s": "sps-qt-commonly-used", "q": "Monitor ECG and electrolytes before and during long course treatment in people with non-modifiable patient and medicine risk factors." }
+          ]
+        },
+        {
+          "t": "Stop if a fluconazole-related rash appears during treatment of a superficial infection, or if signs of serious liver injury appear.",
+          "tag": "stop",
+          "src": [{ "s": "emc-1065", "q": "If a rash, which is considered attributable to fluconazole, develops in a patient treated for a superficial fungal infection, further therapy with this medicinal product should be discontinued." }]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Swallow capsules whole, with or without food. Given as a single daily dose.",
+          "src": [
+            { "s": "emc-1065", "q": "The capsules should be swallowed whole and independent of food intake." },
+            { "s": "emc-1065", "q": "Diflucan is administered as a single daily dose." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "May cause dizziness or seizures: do not drive or use machines if these occur.",
+          "src": [{ "s": "emc-1065", "q": "should be advised not to drive or operate machines if any of these symptoms occur." }]
+        },
+        {
+          "t": "Report weakness, loss of appetite, persistent nausea, vomiting or yellow skin/eyes straight away.",
+          "src": [{ "s": "emc-1065", "q": "The patient should be informed of suggestive symptoms of serious hepatic effect (important asthenia, anorexia, persistent nausea, vomiting and jaundice)." }]
+        },
+        {
+          "t": "Interactions can persist for 4 to 5 days after the last dose: tell prescribers and pharmacists about recent fluconazole use.",
+          "src": [{ "s": "emc-1065", "q": "The enzyme inhibiting effect of fluconazole persists 4-5 days after discontinuation of fluconazole treatment" }]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "fluconazole:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "fluconazole",
+      "allergen": ["fluconazole", "group:azole-antifungal"],
+      "concern": "Hypersensitivity to fluconazole or related azoles",
+      "consequence": "Risk of hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [{ "s": "emc-1065", "q": "Hypersensitivity to the active substance, to related azole substances, or to any of the excipients listed in section 6.1." }]
+    },
+    {
+      "id": "fluconazole:interaction:qt-cyp3a4-substrate",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "fluconazole",
+      "other": "group:qt-cyp3a4-substrate",
+      "effect": "qt-prolongation",
+      "concern": "QT-prolonging medicine that is metabolised by CYP3A4",
+      "consequence": "Fluconazole inhibits CYP3A4, raising levels of the other medicine: risk of QT prolongation and torsades de pointes.",
+      "action": "Do not use together (SmPC section 4.3). The interaction can last 4 to 5 days after fluconazole is stopped.",
+      "sourceWording": "are contraindicated",
+      "src": [
+        { "s": "emc-1065", "q": "Coadministration of other medicinal products known to prolong the QT interval and which are metabolised via the cytochrome P450 (CYP) 3A4 such as cisapride, astemizole, pimozide, quinidine, and erythromycin are contraindicated" },
+        { "s": "emc-1065", "q": "The enzyme inhibiting effect of fluconazole persists 4-5 days after discontinuation of fluconazole treatment" }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:qt-prolonging",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "fluconazole",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Other QT-prolonging medicine",
+      "consequence": "Additive QT prolongation; fluconazole can also raise levels of medicines metabolised by CYP3A4.",
+      "action": "SPS: do not co-prescribe; a short course or single dose may be considered only when no alternative exists. Contraindicated (SmPC) if the other medicine is also metabolised by CYP3A4. SmPC: caution with amiodarone.",
+      "sourceWording": "Do not co-prescribe",
+      "src": [
+        { "s": "sps-qt-commonly-used", "q": "Do not co-prescribe with other QT-prolonging medicines, particularly those that are also CYP3A4 or P-glycoprotein (P-gp) substrates." },
+        { "s": "sps-qt-commonly-used", "q": "Short courses, including single doses, may be considered as an exception. Only do so when no alternative treatment is available." },
+        { "s": "emc-1065", "q": "The QT prolongation caused by other medicinal products (such as amiodarone) may be amplified via the inhibition of cytochrome P450 (CYP) 3A4." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin",
+      "consequence": "Prothrombin time prolonged up to 2-fold (CYP2C9 inhibition); bleeding events reported.",
+      "action": "Monitor prothrombin time/INR carefully; the warfarin dose may need adjusting.",
+      "sourceWording": "should be carefully monitored",
+      "src": [
+        { "s": "emc-1065", "q": "During concomitant treatment with fluconazole and warfarin the prothrombin time was prolonged up to 2-fold" },
+        { "s": "emc-1065", "q": "In patients receiving coumarin-type or indanedione anticoagulants concurrently with fluconazole the prothrombin time should be carefully monitored." },
+        { "s": "emc-1065", "q": "Dose adjustment of the anticoagulant may be necessary." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:simvastatin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "simvastatin",
+      "effect": "myopathy",
+      "concern": "Simvastatin (metabolised by CYP3A4)",
+      "consequence": "Dose-dependent increase in risk of myopathy and rhabdomyolysis.",
+      "action": "If the combination is necessary, watch for muscle symptoms and monitor creatine kinase; stop the statin if CK rises markedly or myopathy is suspected. A lower statin dose may be needed.",
+      "sourceWording": "creatine kinase should be monitored",
+      "src": [
+        { "s": "emc-1065", "q": "The risk of myopathy and rhabdomyolysis increases (dose-dependent) when fluconazole is coadministered with HMG-CoA reductase inhibitors metabolised through CYP3A4, such as atorvastatin and simvastatin" },
+        { "s": "emc-1065", "q": "the patient should be observed for symptoms of myopathy and rhabdomyolysis and creatine kinase should be monitored." },
+        { "s": "emc-1065", "q": "HMG-CoA reductase inhibitors should be discontinued if a marked increase in creatine kinase is observed or myopathy/rhabdomyolysis is diagnosed or suspected." },
+        { "s": "emc-1065", "q": "Lower doses of HMG-CoA reductase inhibitors may be necessary as instructed in the statins prescribing information." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:atorvastatin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "atorvastatin",
+      "effect": "myopathy",
+      "concern": "Atorvastatin (metabolised by CYP3A4)",
+      "consequence": "Dose-dependent increase in risk of myopathy and rhabdomyolysis.",
+      "action": "If the combination is necessary, watch for muscle symptoms and monitor creatine kinase; stop the statin if CK rises markedly or myopathy is suspected. A lower statin dose may be needed.",
+      "sourceWording": "creatine kinase should be monitored",
+      "src": [
+        { "s": "emc-1065", "q": "The risk of myopathy and rhabdomyolysis increases (dose-dependent) when fluconazole is coadministered with HMG-CoA reductase inhibitors metabolised through CYP3A4, such as atorvastatin and simvastatin" },
+        { "s": "emc-1065", "q": "the patient should be observed for symptoms of myopathy and rhabdomyolysis and creatine kinase should be monitored." },
+        { "s": "emc-1065", "q": "HMG-CoA reductase inhibitors should be discontinued if a marked increase in creatine kinase is observed or myopathy/rhabdomyolysis is diagnosed or suspected." },
+        { "s": "emc-1065", "q": "Lower doses of HMG-CoA reductase inhibitors may be necessary as instructed in the statins prescribing information." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:sulfonylurea",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "fluconazole",
+      "other": "group:sulfonylurea",
+      "effect": "hypoglycaemia",
+      "concern": "Sulfonylureas",
+      "consequence": "Longer sulfonylurea half-life: risk of hypoglycaemia.",
+      "action": "Monitor blood glucose frequently and reduce the sulfonylurea dose as appropriate.",
+      "sourceWording": "appropriate reduction of sulfonylurea dose is recommended",
+      "src": [
+        { "s": "emc-1065", "q": "Fluconazole has been shown to prolong the serum half-life of concomitantly administered oral sulfonylureas" },
+        { "s": "emc-1065", "q": "Frequent monitoring of blood glucose and appropriate reduction of sulfonylurea dose is recommended during coadministration." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:celecoxib",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "fluconazole",
+      "other": "celecoxib",
+      "concern": "Celecoxib",
+      "consequence": "Celecoxib Cmax and AUC increased by 68% and 134%.",
+      "action": "Half the celecoxib dose may be needed.",
+      "sourceWording": "Half of the celecoxib dose may be necessary",
+      "src": [
+        { "s": "emc-1065", "q": "the celecoxib Cmax and AUC increased by 68% and 134%, respectively." },
+        { "s": "emc-1065", "q": "Half of the celecoxib dose may be necessary when combined with fluconazole." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:ibuprofen",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "ibuprofen",
+      "concern": "Ibuprofen",
+      "consequence": "Exposure to active S-(+)-ibuprofen increased (AUC +82%).",
+      "action": "Monitor often for NSAID adverse effects and toxicity; the NSAID dose may need adjusting.",
+      "sourceWording": "Frequent monitoring for adverse events and toxicity related to NSAIDs is recommended",
+      "src": [
+        { "s": "emc-1065", "q": "the Cmax and AUC of the pharmacologically active isomer [S-(+)-ibuprofen] was increased by 15% and 82%, respectively" },
+        { "s": "emc-1065", "q": "Frequent monitoring for adverse events and toxicity related to NSAIDs is recommended. Adjustment of dose of NSAIDs may be needed." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:naproxen",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "naproxen",
+      "concern": "Naproxen (metabolised by CYP2C9)",
+      "consequence": "Possible increase in naproxen exposure (not specifically studied).",
+      "action": "Monitor often for NSAID adverse effects and toxicity; the NSAID dose may need adjusting.",
+      "sourceWording": "Frequent monitoring for adverse events and toxicity related to NSAIDs is recommended",
+      "src": [
+        { "s": "emc-1065", "q": "fluconazole has the potential to increase the systemic exposure of other NSAIDs that are metabolised by CYP2C9 (e.g. naproxen, lornoxicam, meloxicam, diclofenac)." },
+        { "s": "emc-1065", "q": "Frequent monitoring for adverse events and toxicity related to NSAIDs is recommended. Adjustment of dose of NSAIDs may be needed." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:diclofenac",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "diclofenac",
+      "otherFormulations": ["diclofenac-k-tab", "diclofenac-gr-tab", "diclofenac-mr-tab", "diclofenac-supp"],
+      "concern": "Diclofenac (metabolised by CYP2C9)",
+      "consequence": "Possible increase in diclofenac exposure (not specifically studied).",
+      "action": "Monitor often for NSAID adverse effects and toxicity; the NSAID dose may need adjusting.",
+      "sourceWording": "Frequent monitoring for adverse events and toxicity related to NSAIDs is recommended",
+      "src": [
+        { "s": "emc-1065", "q": "fluconazole has the potential to increase the systemic exposure of other NSAIDs that are metabolised by CYP2C9 (e.g. naproxen, lornoxicam, meloxicam, diclofenac)." },
+        { "s": "emc-1065", "q": "Frequent monitoring for adverse events and toxicity related to NSAIDs is recommended. Adjustment of dose of NSAIDs may be needed." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:amlodipine",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "amlodipine",
+      "concern": "Amlodipine (metabolised by CYP3A4)",
+      "consequence": "Fluconazole may increase amlodipine exposure.",
+      "action": "Monitor frequently for adverse events.",
+      "sourceWording": "Frequent monitoring for adverse events is recommended",
+      "src": [
+        { "s": "emc-1065", "q": "Certain calcium channel antagonists (nifedipine, isradipine, amlodipine, verapamil and felodipine) are metabolised by CYP3A4." },
+        { "s": "emc-1065", "q": "Fluconazole has the potential to increase the systemic exposure of the calcium channel antagonists. Frequent monitoring for adverse events is recommended." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:nifedipine",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "nifedipine",
+      "concern": "Nifedipine (metabolised by CYP3A4)",
+      "consequence": "Fluconazole may increase nifedipine exposure.",
+      "action": "Monitor frequently for adverse events.",
+      "sourceWording": "Frequent monitoring for adverse events is recommended",
+      "src": [
+        { "s": "emc-1065", "q": "Certain calcium channel antagonists (nifedipine, isradipine, amlodipine, verapamil and felodipine) are metabolised by CYP3A4." },
+        { "s": "emc-1065", "q": "Fluconazole has the potential to increase the systemic exposure of the calcium channel antagonists. Frequent monitoring for adverse events is recommended." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:verapamil",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "verapamil",
+      "concern": "Verapamil (metabolised by CYP3A4)",
+      "consequence": "Fluconazole may increase verapamil exposure.",
+      "action": "Monitor frequently for adverse events.",
+      "sourceWording": "Frequent monitoring for adverse events is recommended",
+      "src": [
+        { "s": "emc-1065", "q": "Certain calcium channel antagonists (nifedipine, isradipine, amlodipine, verapamil and felodipine) are metabolised by CYP3A4." },
+        { "s": "emc-1065", "q": "Fluconazole has the potential to increase the systemic exposure of the calcium channel antagonists. Frequent monitoring for adverse events is recommended." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:amitriptyline",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "amitriptyline",
+      "effect": "qt-prolongation",
+      "concern": "Amitriptyline",
+      "consequence": "Fluconazole increases the effect of amitriptyline.",
+      "action": "Amitriptyline levels may be measured at the start and after one week; adjust the amitriptyline dose if necessary. (The amitriptyline SmPC lists this combination as not recommended; see its entry.)",
+      "sourceWording": "Dose of amitriptyline/nortriptyline should be adjusted, if necessary",
+      "src": [
+        { "s": "emc-1065", "q": "Fluconazole increases the effect of amitriptyline and nortriptyline." },
+        { "s": "emc-1065", "q": "Dose of amitriptyline/nortriptyline should be adjusted, if necessary" }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "fluconazole",
+      "other": "carbamazepine",
+      "concern": "Carbamazepine",
+      "consequence": "Serum carbamazepine rises by about 30%: risk of carbamazepine toxicity.",
+      "action": "Adjust the carbamazepine dose if needed, guided by levels/effect.",
+      "sourceWording": "Dose adjustment of carbamazepine may be necessary depending on concentration measurements/effect",
+      "src": [
+        { "s": "emc-1065", "q": "Fluconazole inhibits the metabolism of carbamazepine and an increase in serum carbamazepine of 30% has been observed." },
+        { "s": "emc-1065", "q": "There is a risk of developing carbamazepine toxicity. Dose adjustment of carbamazepine may be necessary depending on concentration measurements/effect." }
+      ]
+    },
+    {
+      "id": "fluconazole:interaction:hydrochlorothiazide",
+      "kind": "interaction",
+      "level": "info",
+      "med": "fluconazole",
+      "other": "hydrochlorothiazide",
+      "concern": "Hydrochlorothiazide",
+      "consequence": "Fluconazole plasma concentration increased by 40%.",
+      "action": "No change in the fluconazole dose should be needed.",
+      "sourceWording": "should not necessitate a change in the fluconazole dose regimen",
+      "src": [
+        { "s": "emc-1065", "q": "coadministration of multiple-dose hydrochlorothiazide to healthy volunteers receiving fluconazole increased plasma concentration of fluconazole by 40%" },
+        { "s": "emc-1065", "q": "An effect of this magnitude should not necessitate a change in the fluconazole dose regimen in subjects receiving concomitant diuretics." }
+      ]
+    },
+    {
+      "id": "fluconazole:condition:qt-prolongation",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluconazole",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "QT prolongation or other proarrhythmic condition",
+      "consequence": "Risk of QT prolongation and torsades de pointes.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [{ "s": "emc-1065", "q": "Diflucan should be administered with caution to patients with potentially proarrhythmic conditions." }]
+    },
+    {
+      "id": "fluconazole:condition:cardiac-arrhythmia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluconazole",
+      "condition": "cardiac-arrhythmia",
+      "effect": "qt-prolongation",
+      "concern": "Cardiac rhythm disorder (proarrhythmic condition)",
+      "consequence": "Risk of QT prolongation and torsades de pointes.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [{ "s": "emc-1065", "q": "Diflucan should be administered with caution to patients with potentially proarrhythmic conditions." }]
+    },
+    {
+      "id": "fluconazole:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluconazole",
+      "condition": "hypokalaemia",
+      "effect": "qt-prolongation",
+      "concern": "Hypokalaemia",
+      "consequence": "Increased risk of life-threatening ventricular arrhythmias and torsades de pointes.",
+      "action": "Use with caution.",
+      "sourceWording": "at an increased risk",
+      "src": [
+        { "s": "emc-1065", "q": "Patients with hypokalemia and advanced cardiac failure are at an increased risk for the occurrence of life threatening ventricular arrhythmias and torsades de pointes ." },
+        { "s": "emc-1065", "q": "Diflucan should be administered with caution to patients with potentially proarrhythmic conditions." }
+      ]
+    },
+    {
+      "id": "fluconazole:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluconazole",
+      "condition": "severe-heart-failure",
+      "effect": "qt-prolongation",
+      "concern": "Advanced heart failure",
+      "consequence": "Increased risk of life-threatening ventricular arrhythmias and torsades de pointes.",
+      "action": "Use with caution.",
+      "sourceWording": "at an increased risk",
+      "src": [
+        { "s": "emc-1065", "q": "Patients with hypokalemia and advanced cardiac failure are at an increased risk for the occurrence of life threatening ventricular arrhythmias and torsades de pointes ." },
+        { "s": "emc-1065", "q": "Diflucan should be administered with caution to patients with potentially proarrhythmic conditions." }
+      ]
+    },
+    {
+      "id": "fluconazole:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "fluconazole",
+      "formulations": ["fluconazole-cap"],
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Capsules contain lactose.",
+      "action": "Should not take the capsules.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        { "s": "emc-1065", "q": "Capsules contain lactose monohydrate." },
+        { "s": "emc-1065", "q": "Patients with rare hereditary problems of galactose intolerance, the total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }
+      ]
+    },
+    {
+      "id": "fluconazole:renal:crcl-le50",
+      "kind": "renal",
+      "level": "dose",
+      "med": "fluconazole",
+      "renal": { "measure": "CrCl", "max": 50, "maxInclusive": true },
+      "concern": "Renal impairment (CrCl ≤50 mL/min), multiple doses",
+      "consequence": "Fluconazole is mainly excreted unchanged in urine.",
+      "action": "Single-dose treatment (e.g. 150 mg for thrush): no adjustment. Multiple doses: usual first dose, then 50% of the recommended daily dose (no haemodialysis). Haemodialysis: 100% of the dose after each session. Use with caution.",
+      "sourceWording": "Percent of recommended dose",
+      "src": [
+        { "s": "emc-1065", "q": "No adjustments in single dose therapy are necessary." },
+        { "s": "emc-1065", "q": "Creatinine clearance (ml/min) Percent of recommended dose >50 100% ≤50 (no haemodialysis) 50% Haemodialysis 100% after each haemodialysis" }
+      ]
+    },
+    {
+      "id": "fluconazole:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "fluconazole",
+      "hepatic": ["any"],
+      "effect": "hepatotoxicity",
+      "concern": "Hepatic impairment",
+      "consequence": "Limited data; rare serious hepatotoxicity reported.",
+      "action": "Use with caution; monitor closely if liver tests become abnormal.",
+      "sourceWording": "should be administered with caution",
+      "src": [{ "s": "emc-1065", "q": "Limited data are available in patients with hepatic impairment, therefore fluconazole should be administered with caution to patients with liver dysfunction" }]
+    },
+    {
+      "id": "fluconazole:pregnancy",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "fluconazole",
+      "concern": "Pregnancy",
+      "consequence": "Increased risk of miscarriage (1st/2nd trimester exposure) and possible small increase in musculoskeletal and cardiac malformations (1st trimester).",
+      "action": "Standard doses/short courses: do not use unless clearly necessary. High-dose or prolonged regimens: only for potentially life-threatening infections. BUMPS: topical azoles (creams/pessaries) are usually used first.",
+      "sourceWording": "should not be used in pregnancy unless clearly necessary",
+      "src": [
+        { "s": "emc-1065", "q": "Fluconazole in standard doses and short-term treatments should not be used in pregnancy unless clearly necessary." },
+        { "s": "emc-1065", "q": "Fluconazole in high dose and/or in prolonged regimens should not be used during pregnancy except for potentially life-threatening infections." },
+        { "s": "bumps-fluconazole-thrush", "q": "Fluconazole is not often used in pregnancy, as thrush can usually be treated with creams and pessaries instead." }
+      ]
+    },
+    {
+      "id": "fluconazole:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "fluconazole",
+      "concern": "Breastfeeding after repeated or high doses (a single 150 mg dose is compatible)",
+      "consequence": "Fluconazole reaches milk levels similar to plasma.",
+      "action": "Single 150 mg dose: breastfeeding may continue. Repeated or high doses: breastfeeding not recommended.",
+      "sourceWording": "is not recommended after repeated use or after high dose",
+      "src": [
+        { "s": "emc-1065", "q": "Breast-feeding may be maintained after a single dose of 150 mg fluconazole." },
+        { "s": "emc-1065", "q": "Breast-feeding is not recommended after repeated use or after high dose fluconazole." }
+      ]
+    }
+  ]
+}

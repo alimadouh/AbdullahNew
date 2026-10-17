@@ -1,0 +1,281 @@
+{
+  "id": "permethrin",
+  "name": "Permethrin (topical)",
+  "ingredients": ["permethrin"],
+  "className": "Pyrethroid ectoparasiticide (head lice treatment)",
+  "groups": ["pyrethroid"],
+  "searchTerms": ["permethrin 1%", "permethrin shampoo", "permethrin head lice", "permethrin creme rinse", "permethrin cutaneous emulsion"],
+  "formulations": [
+    {
+      "id": "permethrin-shampoo",
+      "label": "Head lice shampoo 1%",
+      "route": "topical",
+      "strengths": "Permethrin 1% (clinic product). UK products used: permethrin 1% w/w creme rinse and 1% w/w cutaneous emulsion",
+      "release": "n/a",
+      "note": "No UK SPC for a permethrin shampoo was found. The information below comes from two UK permethrin 1% head lice SPCs (a creme rinse and a cutaneous emulsion), each applied to washed, towel-dried hair for 10 minutes. The UK 5% cream is for scabies and is not covered here. Follow the clinic product's own directions for use.",
+      "src": [
+        { "s": "mhra-spc-pl-02855-0013", "q": "LYCLEAR Creme Rinse contains 1 % w/w permethrin." },
+        { "s": "mhra-spc-pl-04149-0003", "q": "Permethrin 1% w/w" }
+      ],
+      "sourceIds": ["mhra-spc-pl-02855-0013", "mhra-spc-pl-04149-0003"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Head lice (Pediculus humanus capitis) infestation.",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "is indicated for the treatment of infections with the head louse pediculus humanus capitis" },
+          { "s": "mhra-spc-pl-04149-0003", "q": "is intended for the treatment of head lice (pediculus humanus capitis) infestations" }
+        ] }
+    ] },
+    "restrictions": { "status": "not-stated", "note": "The UK permethrin 1% SPCs state no prescribing restrictions; both refer to official guidance on head lice treatments. No NICE guidance on head lice was found (CKS is geo-blocked and not used)." },
+    "dosing": { "items": [
+      { "t": "Wash hair with a mild shampoo and towel dry. Shake the bottle and apply enough to saturate the hair and scalp, especially behind the ears and at the nape of the neck. Leave for 10 minutes, then rinse thoroughly with water. One bottle usually treats shoulder-length hair; more than two bottles per treatment is unlikely to be needed.",
+        "tag": "Head lice (UK 1% products)",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "should be used after the hair has been washed with a mild proprietary shampoo and towelled dried" },
+          { "s": "mhra-spc-pl-02855-0013", "q": "Particular attention should be given to the areas behind the ears and at the nape of the neck." },
+          { "s": "mhra-spc-pl-02855-0013", "q": "should be left on the hair for ten minutes before rinsing the hair thoroughly with water" },
+          { "s": "mhra-spc-pl-04149-0003", "q": "It is very unlikely that more than two bottles will be required per application." }
+        ] },
+      { "t": "If living lice are found 7 to 10 days after treatment, repeat the permethrin treatment. If infestation is still active after 14 to 20 days, consider a different product.",
+        "tag": "Repeat treatment",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "If after 7-10 days of treatment with permethrin living lice are found, treatment with permethrin should be repeated." },
+          { "s": "mhra-spc-pl-02855-0013", "q": "If after 14-20 days infestation is still active treatment with an alternative product should be considered." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Creme rinse SPC: adults and children 6 months and over. Not suitable under 6 months except on a doctor's advice. Experience from 6 months to 3 years is limited, so treat this age group only under close specialist supervision.",
+        "tag": "UK creme rinse SPC",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "Adults and children 6 months and over: Topical." },
+          { "s": "mhra-spc-pl-02855-0013", "q": "is not suitable for application to children under six months of age, except on the advice of a physician" },
+          { "s": "mhra-spc-pl-02855-0013", "q": "Only limited experience is available with Lyclear Creme Rinse in children aged over 6 months up to 3 years. Therefore, treatment must be performed only under close specialist supervision in this age group." }
+        ] },
+      { "t": "Cutaneous emulsion SPC: adults and children over 3 years. Not recommended under 3 years except on a doctor's advice.",
+        "tag": "UK cutaneous emulsion SPC",
+        "src": [
+          { "s": "mhra-spc-pl-04149-0003", "q": "Adults and children over 3 years:" },
+          { "s": "mhra-spc-pl-04149-0003", "q": "Children: Not recommended for children under 3 years except on advice of a doctor." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Known hypersensitivity to permethrin, any ingredient, or other pyrethroids or pyrethrins.",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "is contra-indicated in individuals with known hypersensitivity to the product, it's components and other pyrethroids or pyrethrins" },
+          { "s": "mhra-spc-pl-04149-0003", "q": "in patients with a known sensitivity to the product, its components and other pyrethroids or pyrethrins" }
+        ] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Allergy to chrysanthemums or other Compositae plants: treat only if strictly indicated; otherwise switch to a chemically different agent.",
+        "src": [{ "s": "mhra-spc-pl-02855-0013", "q": "In the case of hypersensitivity to chrysanthemums or other compositae, treatment should only be given if strictly indicated. In such cases treatment should be switched to a chemically different agent." }] },
+      { "t": "Resistance to permethrin has been detected. Check the result after one week; if living lice remain, repeat with the same product; if infestation is clearly still active after 14 days, switch to another active product.",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "Furthermore, resistance to permethrin has been detected." },
+          { "s": "mhra-spc-pl-02855-0013", "q": "After one week the result of the treatment should be checked. If living lice are still found, the treatment can be repeated with the same product." },
+          { "s": "mhra-spc-pl-02855-0013", "q": "If, after 14 days, it is certain that the infestation is still active, it is best to switch to another active product." }
+        ] },
+      { "t": "External use only. If it gets into the eyes, rinse at once with plenty of water.",
+        "src": [{ "s": "mhra-spc-pl-04149-0003", "q": "if the product comes into contact with the eyes, rinse immediately with plenty of water" }] },
+      { "t": "Excipients in the UK products (for example parabens, cetyl or cetostearyl alcohol, fragrance allergens, benzyl alcohol, propylene glycol) can cause allergic or local skin reactions.",
+        "detail": true,
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "Methyl parahydroxybenzoate (E218) and propyl parahydroxybenzoate (E216) which may cause allergic reactions (possibly delayed)." },
+          { "s": "mhra-spc-pl-04149-0003", "q": "Cetostearyl alcohol which may cause local skin reactions (e.g. contact dermatitis)" }
+        ] },
+      { "t": "Can be used as normal in asthma, but the patient should speak to a doctor or pharmacist first if they have particular concerns.",
+        "detail": true,
+        "src": [{ "s": "mhra-spc-pl-02855-0013", "q": "may be used as normal in asthmatics, however contact your doctor or pharmacist before commencing treatment if you have any particular concerns" }] },
+      { "t": "Effect on hair dyes and perms not known: test on a small section of hair first.",
+        "detail": true,
+        "src": [{ "s": "mhra-spc-pl-02855-0013", "q": "it is good practice to apply to a small section of hair first, before treating the entire scalp" }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "No interactions known (creme rinse SPC); no adverse interaction effects reported (cutaneous emulsion SPC). Very low or undetectable systemic levels after use on the hair.",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "4.5 Interactions with other medicinal products and other forms of interaction None known." },
+          { "s": "mhra-spc-pl-04149-0003", "q": "4.5 Interaction with other medicinal products and other forms of interaction No adverse effects reported." },
+          { "s": "mhra-spc-pl-02855-0013", "q": "resulted in extremely low or undetectable level of permethrin metabolites in plasma and urine samples" }
+        ] }
+    ] },
+    "renal": { "status": "not-stated", "note": "The UK permethrin 1% SPCs give no renal advice." },
+    "hepatic": { "status": "not-stated", "note": "The UK permethrin 1% SPCs give no hepatic advice." },
+    "pregnancy": { "items": [
+      { "t": "Both UK SPCs: as a precaution avoid in pregnancy unless physically acting treatments have failed and/or permethrin is needed for the woman's condition. Human data are very limited; use only if clearly needed.",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "For precautionary reasons, the use of Lyclear Crème Rinse during pregnancy should be avoided unless physically acting treatment alternatives were ineffective and/or treatment with permethrin is required due to the woman's clinical condition." },
+          { "s": "mhra-spc-pl-04149-0003", "q": "treatment should be considered during pregnancy only if clearly needed" }
+        ] },
+      { "t": "BUMPS (head lice in pregnancy): wet combing is the first option; if it fails or is not preferred, insecticides can be used, and physical insecticides (such as dimeticone) do not enter the bloodstream in harmful amounts.",
+        "detail": true,
+        "src": [
+          { "s": "bumps-head-lice", "q": "Current UK guidelines recommend that pregnant women who need to treat their own or their child's head lice can use 'wet combing'." },
+          { "s": "bumps-head-lice", "q": "Physical insecticides are harmless to humans and also do not enter the bloodstream in amounts that could cause problems for the baby." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Both UK SPCs: not known whether permethrin passes into human milk; risk to the infant is unlikely, but consider withholding treatment while breastfeeding or stopping breastfeeding for a time.",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "it is not known whether permethrin is excreted in human milk" },
+          { "s": "mhra-spc-pl-02855-0013", "q": "consideration should be given to withholding treatment during nursing or temporarily discontinuing nursing" }
+        ] },
+      { "t": "SPS: permethrin can be used during breastfeeding for pubic lice (no infant monitoring needed; very little is absorbed). For head lice, SPS prefers wet combing or dimeticone.",
+        "src": [
+          { "s": "sps-bf-lice", "q": "Permethrin can be used during breastfeeding for treating pubic lice." },
+          { "s": "sps-bf-lice", "q": "only very small amounts of permethrin are absorbed in to systemic circulation through topical treatment" },
+          { "s": "sps-bf-lice", "q": "Wet combing or dimeticone are the preferred choices to treat head lice in breastfeeding." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Animal studies showed no impaired fertility or harm to the foetus.",
+        "detail": true,
+        "src": [{ "s": "mhra-spc-pl-02855-0013", "q": "have revealed no evidence of impaired fertility or harm to the foetus due to permethrin" }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Generally well tolerated. Occasional skin irritation, redness or rash of the scalp (hard to separate from the lice infestation itself). Frequency not known: tingling, pricking or burning skin sensations (paraesthesia); hair loss (cutaneous emulsion SPC).",
+        "tag": "Frequency not stated / not known",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "In a few individuals erythema, rash and/or irritation of the scalp have been reported following the application of the creme rinse" },
+          { "s": "mhra-spc-pl-04149-0003", "q": "Occasionally, skin irritation, redness or rash may occur." },
+          { "s": "mhra-spc-pl-04149-0003", "q": "Sensations on the skin (paraesthesia) such as tingling, pricking, skin burning sensation Alopecia" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Severe or prolonged scalp irritation or skin discomfort: refer to a doctor or pharmacist.",
+        "src": [{ "s": "mhra-spc-pl-04149-0003", "q": "If severe or prolonged signs and symptoms of scalp irritation, skin discomfort, or other undesirable effects occur" }] },
+      { "t": "Accidental swallowing of a bottle by a child: consult a doctor immediately (nausea, vomiting, dizziness and convulsions have been reported after ingestion).",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "In the event of accidental ingestion of the contents of a bottle by a child a doctor should be consulted immediately." },
+          { "s": "mhra-spc-pl-02855-0013", "q": "Some symptoms that have been reported are nausea, vomiting, dizziness and convulsions." }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Check the hair one week after treatment. If living lice remain, repeat with the same product.",
+        "tag": "ongoing",
+        "src": [{ "s": "mhra-spc-pl-02855-0013", "q": "After one week the result of the treatment should be checked. If living lice are still found, the treatment can be repeated with the same product." }] },
+      { "t": "If infestation is clearly still active after 14 days, switch to another active product.",
+        "tag": "stop",
+        "src": [{ "s": "mhra-spc-pl-02855-0013", "q": "If, after 14 days, it is certain that the infestation is still active, it is best to switch to another active product." }] }
+    ] },
+    "administration": { "items": [
+      { "t": "For external use on the hair and scalp. Shake well. Apply to washed, towel-dried hair; leave 10 minutes; rinse well; comb with a fine-toothed comb to remove dead lice and eggs; dry as usual.",
+        "src": [
+          { "s": "mhra-spc-pl-04149-0003", "q": "is applied topically and is for external use only" },
+          { "s": "mhra-spc-pl-04149-0003", "q": "The lotion should be left on for 10 minutes." },
+          { "s": "mhra-spc-pl-04149-0003", "q": "combed with a fine toothed comb (provided with the pack) to remove dead lice and eggs, and dried in the usual way" }
+        ] },
+      { "t": "Staff who apply it often should wear gloves to avoid hand irritation.",
+        "detail": true,
+        "src": [{ "s": "mhra-spc-pl-04149-0003", "q": "Nursing or care staff who routinely use the product should wear gloves in order to avoid potential irritation to the hands." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Check the hair after one week and repeat if live lice are seen. Treatment can fail if household members are not treated at the same time or if lice are caught again.",
+        "src": [
+          { "s": "mhra-spc-pl-02855-0013", "q": "After one week the result of the treatment should be checked." },
+          { "s": "mhra-spc-pl-02855-0013", "q": "Factors associated with treatment failure include incorrect dosing or administration errors, lack of concurrent treatment of household members, and re-infestation from community contacts." }
+        ] },
+      { "t": "Swimming is fine after treatment: pool chlorine does not affect permethrin.",
+        "detail": true,
+        "src": [{ "s": "mhra-spc-pl-02855-0013", "q": "Permethrin is not affected by chlorine in swimming baths, so normal swimming activities may continue after use." }] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "permethrin:allergy:pyrethroid",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "permethrin",
+      "allergen": ["permethrin", "group:pyrethroid"],
+      "concern": "Hypersensitivity to permethrin, other pyrethroids or pyrethrins",
+      "consequence": "Hypersensitivity reaction (cross-sensitivity within pyrethroids/pyrethrins).",
+      "action": "Do not use.",
+      "sourceWording": "is contra-indicated in individuals with known hypersensitivity",
+      "src": [
+        { "s": "mhra-spc-pl-02855-0013", "q": "is contra-indicated in individuals with known hypersensitivity to the product, it's components and other pyrethroids or pyrethrins" },
+        { "s": "mhra-spc-pl-04149-0003", "q": "in patients with a known sensitivity to the product, its components and other pyrethroids or pyrethrins" }
+      ]
+    },
+    {
+      "id": "permethrin:condition:compositae-allergy",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "permethrin",
+      "condition": "compositae-allergy",
+      "concern": "Allergy to chrysanthemums or other Compositae",
+      "consequence": "Possible hypersensitivity to permethrin.",
+      "action": "Treat only if strictly indicated; otherwise switch to a chemically different agent.",
+      "sourceWording": "treatment should only be given if strictly indicated. In such cases treatment should be switched to a chemically different agent",
+      "src": [
+        { "s": "mhra-spc-pl-02855-0013", "q": "In the case of hypersensitivity to chrysanthemums or other compositae, treatment should only be given if strictly indicated. In such cases treatment should be switched to a chemically different agent." },
+        { "s": "mhra-spc-pl-04149-0003", "q": "In the case of hypersensitivity to chrysanthemums or other compositae, treatment should only be given if strictly indicated." }
+      ]
+    },
+    {
+      "id": "permethrin:pregnancy",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "permethrin",
+      "concern": "Pregnancy",
+      "consequence": "Very limited human data.",
+      "action": "Avoid unless physically acting treatments have failed and/or permethrin is needed; use only if clearly needed.",
+      "sourceWording": "during pregnancy should be avoided unless physically acting treatment alternatives were ineffective",
+      "src": [
+        { "s": "mhra-spc-pl-02855-0013", "q": "For precautionary reasons, the use of Lyclear Crème Rinse during pregnancy should be avoided unless physically acting treatment alternatives were ineffective and/or treatment with permethrin is required due to the woman's clinical condition." },
+        { "s": "mhra-spc-pl-04149-0003", "q": "There are however, only very limited data on the use of permethrin in pregnant women." }
+      ]
+    },
+    {
+      "id": "permethrin:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "permethrin",
+      "concern": "Breastfeeding",
+      "consequence": "Not known whether permethrin passes into human milk; risk to the infant is unlikely.",
+      "action": "Consider withholding treatment while breastfeeding or stopping breastfeeding for a time. SPS prefers wet combing or dimeticone for head lice.",
+      "sourceWording": "consideration should be given to withholding treatment during nursing or temporarily discontinuing nursing",
+      "src": [
+        { "s": "mhra-spc-pl-02855-0013", "q": "consideration should be given to withholding treatment during nursing or temporarily discontinuing nursing" },
+        { "s": "sps-bf-lice", "q": "Wet combing or dimeticone are the preferred choices to treat head lice in breastfeeding." }
+      ]
+    },
+    {
+      "id": "permethrin:age:under-6-months",
+      "kind": "age",
+      "level": "avoid",
+      "med": "permethrin",
+      "age": { "maxYears": 0.5 },
+      "concern": "Infant under 6 months (creme rinse SPC)",
+      "consequence": "Not suitable at this age.",
+      "action": "Do not use except on a doctor's advice.",
+      "sourceWording": "is not suitable for application to children under six months of age, except on the advice of a physician",
+      "src": [{ "s": "mhra-spc-pl-02855-0013", "q": "is not suitable for application to children under six months of age, except on the advice of a physician" }]
+    },
+    {
+      "id": "permethrin:age:6-months-to-3-years",
+      "kind": "age",
+      "level": "caution",
+      "med": "permethrin",
+      "age": { "minYears": 0.5, "maxYears": 3 },
+      "concern": "Child aged 6 months to 3 years (creme rinse SPC)",
+      "consequence": "Only limited experience in this age group.",
+      "action": "Treat only under close specialist supervision.",
+      "sourceWording": "treatment must be performed only under close specialist supervision in this age group",
+      "src": [{ "s": "mhra-spc-pl-02855-0013", "q": "Only limited experience is available with Lyclear Creme Rinse in children aged over 6 months up to 3 years. Therefore, treatment must be performed only under close specialist supervision in this age group." }]
+    },
+    {
+      "id": "permethrin:age:under-3-years-emulsion",
+      "kind": "age",
+      "level": "avoid",
+      "med": "permethrin",
+      "age": { "maxYears": 3 },
+      "concern": "Child under 3 years (cutaneous emulsion SPC)",
+      "consequence": "Not recommended under 3 years.",
+      "action": "Do not use except on a doctor's advice.",
+      "sourceWording": "Not recommended for children under 3 years except on advice of a doctor",
+      "src": [{ "s": "mhra-spc-pl-04149-0003", "q": "Children: Not recommended for children under 3 years except on advice of a doctor." }]
+    }
+  ]
+}

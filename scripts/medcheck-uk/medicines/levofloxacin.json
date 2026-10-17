@@ -1,0 +1,1555 @@
+{
+  "id": "levofloxacin",
+  "name": "Levofloxacin",
+  "ingredients": [
+    "levofloxacin"
+  ],
+  "availability": {
+    "status": "uk"
+  },
+  "className": "Fluoroquinolone antibacterial",
+  "groups": [
+    "fluoroquinolone",
+    "antibacterial",
+    "qt-prolonging"
+  ],
+  "searchTerms": [
+    "levofloxacin hemihydrate"
+  ],
+  "formulations": [
+    {
+      "id": "levofloxacin-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "500 mg",
+      "release": "immediate",
+      "note": "The score line is only to help swallowing; it does not divide the tablet into equal doses.",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Each film-coated tablet contains Levofloxacin hemihydrate equivalent to Levofloxacin 500mg."
+        },
+        {
+          "s": "emc-12153",
+          "q": "The scoreline is only to facilitate breaking for ease of swallowing and not to divide into equal doses."
+        }
+      ],
+      "sourceIds": [
+        "emc-12153"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Adults, only when other commonly recommended antibiotics are inappropriate: acute bacterial sinusitis; community-acquired pneumonia; complicated skin and soft tissue infections; acute pyelonephritis and complicated urinary tract infections; chronic bacterial prostatitis; uncomplicated cystitis; inhalation anthrax (post-exposure prophylaxis and treatment); acute exacerbation of COPD including bronchitis. May complete a course started with intravenous levofloxacin.",
+          "tag": "Adults",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Acute bacterial sinusitis Community-acquired pneumonia Complicated skin and soft tissue infections"
+            },
+            {
+              "s": "emc-12153",
+              "q": "Acute pyelonephritis and complicated urinary tract infections (see section 4.4) Chronic bacterial prostatitis Uncomplicated cystitis"
+            },
+            {
+              "s": "emc-12153",
+              "q": "Inhalation Anthrax: postexposure prophylaxis and curative treatment"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Only prescribe when other antibiotics commonly recommended for the infection are inappropriate (resistance, contraindication, side effects needing treatment to stop, or treatment failure). Applies to all indications (MHRA, January 2024).",
+          "tag": "MHRA restriction",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "this product must only be prescribed when other antibiotics that are commonly recommended for the infection are inappropriate. This applies to all indications listed below."
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "the UK indications for systemic fluoroquinolones have been updated so they must only be used in situations when other antibiotics, that are commonly recommended for the infection, are inappropriate"
+            }
+          ]
+        },
+        {
+          "t": "Do not prescribe for non-severe or self-limiting infections or non-bacterial conditions (e.g. non-bacterial chronic prostatitis).",
+          "tag": "MHRA restriction",
+          "src": [
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "fluoroquinolones should not be prescribed for non-severe or self-limiting infections, or non-bacterial conditions, for example non-bacterial (chronic) prostatitis"
+            }
+          ]
+        },
+        {
+          "t": "Not recommended for known or suspected MRSA infection unless susceptibility is confirmed and usual MRSA treatments are inappropriate.",
+          "tag": "MRSA",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "levofloxacin is not recommended for the treatment of known or suspected MRSA infections unless laboratory results have confirmed susceptibility of the organism to levofloxacin"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Normal renal function (CrCl over 50 mL/min): acute bacterial sinusitis 500 mg once daily for 10 to 14 days; acute exacerbation of chronic bronchitis 500 mg once daily for 7 to 10 days; community-acquired pneumonia 500 mg once or twice daily for 7 to 14 days.",
+          "tag": "Adults - respiratory",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Acute bacterial sinusitis 500 mg once daily 10 -14 days Acute bacterial exacerbations of chronic bronchitis 500 mg once daily 7 - 10 days Community-acquired pneumonia 500 mg once or twice daily 7 - 14 days"
+            }
+          ]
+        },
+        {
+          "t": "Pyelonephritis 500 mg once daily for 7 to 10 days; uncomplicated cystitis 250 mg once daily for 3 days; complicated UTI 500 mg once daily for 7 to 14 days; chronic bacterial prostatitis 500 mg once daily for 28 days.",
+          "tag": "Adults - urinary / prostate",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Pyelonephritis 500 mg once daily 7-10 days Uncomplicated cystitis 250 mg once daily 3 days Complicated urinary tract infections 500 mg once daily 7 - 14 days Chronic bacterial prostatitis 500 mg once daily 28 days"
+            }
+          ]
+        },
+        {
+          "t": "Complicated skin and soft tissue infections 500 mg once or twice daily for 7 to 14 days; inhalation anthrax 500 mg once daily for 8 weeks.",
+          "tag": "Adults - other",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Complicated Skin and soft tissue infections 500mg once or twice daily 7 - 14 days Inhalation Anthrax 500 mg once daily 8 weeks"
+            }
+          ]
+        },
+        {
+          "t": "Elderly: no adjustment other than for renal function (note QT warnings). Liver impairment: no adjustment.",
+          "tag": "Elderly / liver",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "No adjustment of dosage is required in the elderly, other than that imposed by consideration of renal function."
+            },
+            {
+              "s": "emc-12153",
+              "q": "No adjustment of dosage is required since levofloxacin is not metabolised to any relevant extent by the liver and is mainly excreted by the kidneys."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Contraindicated in children and growing adolescents (under 18 years).",
+          "tag": "Under 18 years",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Levofloxacin is contraindicated in children and growing adolescents (less than 18 years of age)"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to levofloxacin, other quinolones or any excipient; epilepsy; history of fluoroquinolone-related tendon disorders; children or growing adolescents; pregnancy; breastfeeding.",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "in patients hypersensitive to levofloxacin or other quinolones or to any of the excipients listed in section 6.1 in patients with epilepsy,"
+            },
+            {
+              "s": "emc-12153",
+              "q": "in patients with history of tendon disorders related to fluoroquinolone administration, in children or growing adolescents, during pregnancy, in breast-feeding women"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Prolonged, disabling and potentially irreversible serious reactions (musculoskeletal, nervous, psychiatric, senses) can occur regardless of age or risk factors. Stop at the first sign of any serious adverse reaction; the patient should contact the prescriber.",
+          "tag": "Disabling long-lasting reactions",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Levofloxacin Tablet should be discontinued immediately at the first signs or symptoms of any serious adverse reaction and patients should be advised to contact their prescriber for advice"
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "fluoroquinolones can cause long-lasting (up to months or years), disabling and potentially irreversible side effects, sometimes affecting multiple body systems and senses"
+            }
+          ]
+        },
+        {
+          "t": "Avoid in patients who had serious adverse reactions to a quinolone or fluoroquinolone before; start only if there is no alternative, after careful benefit/risk assessment.",
+          "tag": "Previous quinolone reaction",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "The use of Levofloxacin Tablets should be avoided in patients who have experienced serious adverse reactions in the past when using quinolone or fluoroquinolone containing products"
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "avoid fluoroquinolone use in patients who have previously had serious adverse reactions with a quinolone antibiotic"
+            }
+          ]
+        },
+        {
+          "t": "Tendinitis and tendon rupture (often Achilles, can be bilateral) from 48 hours to months after stopping. Higher risk: older patients (MHRA: over 60), renal impairment, solid organ transplant, daily doses of 1000 mg, corticosteroid use. Stop at the first sign of tendinitis.",
+          "tag": "Tendons",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "in patients receiving daily doses of 1000 mg levofloxacin and those treated concurrently with corticosteroids"
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "prescribe fluoroquinolones with special caution for people older than 60 years and for those with renal impairment or solid-organ transplants, because they are at a higher risk of tendon injury"
+            }
+          ]
+        },
+        {
+          "t": "Seizures: contraindicated in epilepsy; use with extreme caution in people predisposed to seizures or taking drugs that lower the seizure threshold (e.g. theophylline). Stop if seizures occur. Myoclonus: higher risk in older patients and with renal impairment if the dose is not adjusted; stop at once.",
+          "tag": "Seizures / myoclonus",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "should be used with extreme caution in patients predisposed to, or concomitant treatment with drugs which lower the cerebral seizure threshold, such as theophylline"
+            },
+            {
+              "s": "emc-12153",
+              "q": "Levofloxacin should be discontinued immediately at the first occurrence of myoclonus and appropriate treatment should be initiated."
+            }
+          ]
+        },
+        {
+          "t": "QT prolongation: caution with congenital long QT, QT-prolonging drugs, uncorrected hypokalaemia/hypomagnesaemia, cardiac disease (heart failure, MI, bradycardia); elderly and women may be more sensitive.",
+          "tag": "QT",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Caution should be taken when using fluoroquinolones, including levofloxacin, in patients with known risk factors for prolongation of the QT interval"
+            },
+            {
+              "s": "emc-12153",
+              "q": "cardiac disease (e.g. heart failure, myocardial infarction, bradycardia)"
+            }
+          ]
+        },
+        {
+          "t": "Aortic aneurysm/dissection and heart valve regurgitation: use only after careful benefit-risk assessment and considering other options if there is a family history of aneurysm, congenital or existing valve disease, existing aneurysm/dissection, or predisposing conditions (Marfan, vascular Ehlers-Danlos, Turner, Behcet's, hypertension, rheumatoid arthritis, Takayasu or giant cell arteritis, atherosclerosis, Sjögren's, infective endocarditis).",
+          "tag": "Aorta / heart valves",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in patients with positive family history of aneurysm disease, or congenital heart valve disease"
+            },
+            {
+              "s": "mhra-dsu-2018-11-fq-aortic",
+              "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in patients at risk for aortic aneurysm and dissection"
+            },
+            {
+              "s": "mhra-dsu-2020-12-fq-valve",
+              "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in the following patients at risk"
+            }
+          ]
+        },
+        {
+          "t": "Myasthenia gravis: not recommended (deaths and need for respiratory support reported).",
+          "tag": "Myasthenia gravis",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Levofloxacin is not recommended in patients with a known history of myasthenia gravis."
+            }
+          ]
+        },
+        {
+          "t": "Psychotic reactions, rarely with suicidal thoughts (sometimes after one dose): stop if they occur; caution in psychotic patients or a history of psychiatric disease.",
+          "tag": "Psychiatric",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Caution is recommended if levofloxacin is to be used in psychotic patients or in patients with history of psychiatric disease."
+            },
+            {
+              "s": "mhra-dsu-2023-09-fq-suicidal",
+              "q": "note that fluoroquinolones can exacerbate existing psychiatric symptoms"
+            }
+          ]
+        },
+        {
+          "t": "Dysglycaemia (usually diabetics on oral hypoglycaemics or insulin): monitor blood glucose carefully. G6PD deficiency: use with caution and monitor for haemolysis.",
+          "tag": "Diabetes / G6PD",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "In these diabetic patients, careful monitoring of blood glucose is recommended."
+            },
+            {
+              "s": "emc-12153",
+              "q": "if levofloxacin has to be used in these patients, potential occurrence of haemolysis should be monitored"
+            }
+          ]
+        },
+        {
+          "t": "Hepatic necrosis up to fatal liver failure (mainly with severe underlying disease such as sepsis): stop and contact the doctor if anorexia, jaundice, dark urine, itching or tender abdomen occur. Acute pancreatitis: stop if suspected, do not restart if confirmed; caution with a history of pancreatitis.",
+          "tag": "Liver / pancreas",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Patients should be advised to stop treatment and contact their doctor if signs and symptoms of hepatic disease develop such as anorexia, jaundice, dark urine, pruritus or tender abdomen."
+            },
+            {
+              "s": "emc-12153",
+              "q": "Caution should be exercised in patients with a history of pancreatitis"
+            }
+          ]
+        },
+        {
+          "t": "Severe skin reactions (SJS, TEN, DRESS): stop at once and never restart. Peripheral neuropathy: patients should report pain, burning, tingling, numbness or weakness before continuing. Blood disorders (bone marrow failure): check blood counts if suspected.",
+          "tag": "Skin / nerves / blood",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "treatment with levofloxacin must not be restarted in this patient at any time"
+            },
+            {
+              "s": "emc-12153",
+              "q": "If any of these blood disorders is suspected, blood counts should be monitored."
+            }
+          ]
+        },
+        {
+          "t": "Avoid strong sunlight and UV lamps during treatment and for 48 hours after. Vision problems: see an eye specialist at once. C. difficile disease: stop immediately; drugs that slow peristalsis are contraindicated. May give false-positive urine opiate screens and false-negative TB culture.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "during treatment and for 48 hours following treatment discontinuation in order to prevent photosensitisation"
+            },
+            {
+              "s": "emc-12153",
+              "q": "In patients treated with levofloxacin, determination of opiates in urine may give false-positive results."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Iron salts, zinc salts, magnesium- or aluminium-containing antacids (and zinc-containing multivitamins): absorption much reduced; do not take them within 2 hours before or after levofloxacin. Sucralfate: give sucralfate 2 hours after levofloxacin. Calcium salts have minimal effect.",
+          "tag": "Cations / antacids",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "should not be taken 2 hours before or after Levofloxacin tablet administration"
+            },
+            {
+              "s": "emc-12153",
+              "q": "it is best to administer sucralfate 2 hours after the Levofloxacin tablet administration"
+            },
+            {
+              "s": "emc-12153",
+              "q": "Calcium salts have a minimal effect on the oral absorption of levofloxacin."
+            }
+          ]
+        },
+        {
+          "t": "Corticosteroids: avoid concomitant use (tendinitis/tendon rupture); systemic corticosteroids may also raise aortic aneurysm risk.",
+          "tag": "Corticosteroids",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Therefore, concomitant use of corticosteroids should be avoided."
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "avoid coadministration of a corticosteroid with a fluoroquinolone since this could exacerbate fluoroquinolone-induced tendinitis and tendon rupture"
+            }
+          ]
+        },
+        {
+          "t": "Vitamin K antagonists (e.g. warfarin): raised PT/INR and bleeding, which may be severe; monitor coagulation tests.",
+          "tag": "Warfarin",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Increased coagulation tests (PT/INR) and / or bleeding, which may be severe, have been reported in patients treated with levofloxacin in combination with a vitamin K antagonist (e.g. warfarin)."
+            }
+          ]
+        },
+        {
+          "t": "QT-prolonging drugs (class IA and III antiarrhythmics, tricyclic antidepressants, macrolides, antipsychotics): use with caution.",
+          "tag": "QT-prolonging drugs",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Levofloxacin, like other fluoroquinolones, should be used with caution in patients receiving drugs known to prolong the QT interval (e.g. Class IA and III antiarrhythmics, tricyclic antidepressants, macrolides, antipsychotics)."
+            }
+          ]
+        },
+        {
+          "t": "NSAIDs, theophylline and other drugs that lower the seizure threshold: marked lowering of the seizure threshold may occur; use with extreme caution.",
+          "tag": "NSAIDs / theophylline",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "However a pronounced lowering of the cerebral seizure threshold may occur when quinolones are given concurrently with theophylline, non-steroidal anti-inflammatory drugs, or other agents which lower the seizure threshold."
+            }
+          ]
+        },
+        {
+          "t": "Oral hypoglycaemic agents (e.g. glibenclamide) or insulin: dysglycaemia; monitor blood glucose.",
+          "tag": "Antidiabetic medicines",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "usually in diabetic patients receiving concomitant treatment with an oral hypoglycemic agent (e.g., glibenclamide) or with insulin"
+            }
+          ]
+        },
+        {
+          "t": "Probenecid and cimetidine reduce levofloxacin renal clearance: caution, especially in renal impairment. Ciclosporin half-life increased by 33%. No clinically relevant effect with calcium carbonate, digoxin, glibenclamide, ranitidine or food.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Caution should be exercised when levofloxacin is coadministered with drugs that effect the tubular renal secretion such as probenecid and cimetidine, especially in renally impaired patients."
+            },
+            {
+              "s": "emc-12153",
+              "q": "calcium carbonate, digoxin, glibenclamide, ranitidine"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "CrCl 50 to 20 mL/min: 250 mg/24 h regimen - first dose 250 mg then 125 mg every 24 h; 500 mg/24 h regimen - 500 mg then 250 mg every 24 h; 500 mg/12 h regimen - 500 mg then 250 mg every 12 h.",
+          "tag": "CrCl 20-50",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "first dose: 250 mg first dose : 500 mg first dose : 500 mg 50-20 ml / min then : 125 mg / 24 h then : 250 mg / 24 h then : 250 mg / 12 h"
+            }
+          ]
+        },
+        {
+          "t": "CrCl 19 to 10 mL/min: after the same first dose - 125 mg every 48 h (250 mg/24 h regimen), 125 mg every 24 h (500 mg/24 h regimen), 125 mg every 12 h (500 mg/12 h regimen).",
+          "tag": "CrCl 10-19",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "19 - 10 ml / min then : 125 mg / 48 h then : 125 mg / 24 h then : 125 mg / 12 h"
+            }
+          ]
+        },
+        {
+          "t": "CrCl under 10 mL/min (including haemodialysis and CAPD): after the same first dose - 125 mg every 48 h (250 mg/24 h regimen) or 125 mg every 24 h (500 mg regimens). No extra doses after haemodialysis or CAPD.",
+          "tag": "CrCl < 10",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "< 10 ml / min (including haemodialysis and 1 CAPD then : 125 mg / 48 h then : 125 mg / 24 h then : 125 mg / 24 h"
+            },
+            {
+              "s": "emc-12153",
+              "q": "No additional doses are required after haemodialysis or continuous ambulatory peritoneal dialysis (CAPD)."
+            }
+          ]
+        },
+        {
+          "t": "Mainly excreted by the kidneys: adjust the dose in renal impairment. Renal impairment also raises tendon-injury and myoclonus risk (MHRA: special caution).",
+          "tag": "General",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Since levofloxacin is excreted mainly by the kidneys, the dose of Levofloxacin tablets should be adjusted in patients with renal impairment"
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "prescribe fluoroquinolones with special caution for people older than 60 years and for those with renal impairment or solid-organ transplants"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No dose adjustment needed (not metabolised to any relevant extent by the liver). Severe liver injury has been reported, mainly with severe underlying disease.",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "No adjustment of dosage is required since levofloxacin is not metabolised to any relevant extent by the liver and is mainly excreted by the kidneys."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: contraindicated in pregnancy (cartilage damage risk from experimental data; limited human data).",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Levofloxacin tablets must not be used in pregnant women (see sections 4.3 and 5.3)"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS): no good evidence that quinolones harm the baby; a different antibiotic will usually be tried first, but a quinolone can be used if recommended by the doctor.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-levofloxacin",
+              "q": "There is no good evidence that use of a quinolone antibiotic in pregnancy will harm your baby."
+            },
+            {
+              "s": "bumps-levofloxacin",
+              "q": "Quinolone antibiotics can be used in pregnancy if recommended by your doctor."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Contraindicated in breastfeeding women (insufficient data; other fluoroquinolones pass into milk; cartilage risk).",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Levofloxacin is contraindicated in breast-feeding women."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No impairment of fertility in rats.",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Levofloxacin caused no impairment of fertility or reproductive performance in rats."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: insomnia, headache, dizziness, diarrhoea, vomiting, nausea, raised liver enzymes (ALT/AST, alkaline phosphatase, GGT).",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Diarrhoea Vomiting Nausea"
+            },
+            {
+              "s": "emc-12153",
+              "q": "Hepatic enzyme increased (ALT/AST, alkaline phosphatase, GGT)"
+            },
+            {
+              "s": "emc-12153",
+              "q": "Psychiatric Disorders* Insomnia"
+            },
+            {
+              "s": "emc-12153",
+              "q": "Nervous system Disorders* Headache Dizziness"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Tendinitis/tendon rupture, muscle or joint pain/swelling, peripheral neuropathy, CNS or psychiatric effects (including suicidal thoughts): stop immediately and contact the doctor.",
+          "src": [
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "patients should be advised to stop fluoroquinolone treatment at the first signs of a serious adverse reaction, such as tendinitis or tendon rupture, muscle pain, muscle weakness, joint pain, joint swelling, peripheral neuropathy and central nervous system effects"
+            }
+          ]
+        },
+        {
+          "t": "Aortic aneurysm/dissection: sudden severe abdominal, chest or back pain needs emergency care. Valve regurgitation: sudden breathlessness, new palpitations, or swelling of abdomen or legs needs urgent review.",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "In case of sudden abdominal, chest or back pain, patients should be advised to immediately consult a physician in an emergency department."
+            }
+          ]
+        },
+        {
+          "t": "Serious hypersensitivity (angioedema to anaphylactic shock, sometimes after the first dose): stop and seek emergency care. Also: ventricular arrhythmia/torsade de pointes, severe liver injury, pancreatitis, SJS/TEN/DRESS, C. difficile colitis, seizures, hypoglycaemic coma, bone marrow failure.",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Patients should discontinue treatment immediately and contact their physician or an emergency physician, who will initiate appropriate emergency measures."
+            },
+            {
+              "s": "emc-12153",
+              "q": "Ventricular arrhythmia and torsade de pointes"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before prescribing: confirm commonly recommended antibiotics are inappropriate; check for epilepsy, previous serious quinolone reactions, tendon history, myasthenia gravis, QT risk factors, aneurysm/valve risk factors, age over 60, renal function (CrCl for dosing), transplant, corticosteroid use, pregnancy or breastfeeding.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "the UK indications for systemic fluoroquinolones have been updated so they must only be used in situations when other antibiotics, that are commonly recommended for the infection, are inappropriate"
+            },
+            {
+              "s": "emc-12153",
+              "q": "Dosage in patients with normal renal function (creatinine clearance > 50ml / min)"
+            }
+          ]
+        },
+        {
+          "t": "Diabetes: monitor blood glucose. Warfarin: monitor coagulation tests. G6PD deficiency: watch for haemolysis. Suspected blood disorder: blood counts.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "coagulation tests should be monitored when these drugs are given concomitantly"
+            },
+            {
+              "s": "emc-12153",
+              "q": "In these diabetic patients, careful monitoring of blood glucose is recommended."
+            }
+          ]
+        },
+        {
+          "t": "Stop at the first sign of tendinitis, myoclonus, neuropathy, serious psychiatric reaction, severe skin reaction, seizures, liver disease symptoms, suspected pancreatitis or C. difficile disease.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "At the first sign of tendinitis (e.g. painful swelling, inflammation) treatment with Levofloxacin tablet should be discontinued"
+            },
+            {
+              "s": "emc-12153",
+              "q": "If acute pancreatitis is suspected, levofloxacin should be discontinued; if confirmed, levofloxacin should not be restarted."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Swallow without crushing with enough liquid, with or between meals. Take at least 2 hours before or after iron or zinc salts, magnesium/aluminium antacids or sucralfate.",
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "Levofloxacin tablets should be swallowed without crushing and with sufficient amount of liquid. The tablets may be taken during meals or between meals."
+            },
+            {
+              "s": "emc-12153",
+              "q": "Levofloxacin tablets should be taken at least two hours before or after iron salts, zinc salts, magnesium-or aluminium containing antacids"
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Stop and contact your doctor straight away if tendon pain or swelling, joint or muscle pain, pins and needles, numbness or burning, weakness, severe tiredness, low mood, anxiety, memory or sleep problems, or changes in vision, taste, smell or hearing occur. Rest a painful tendon.",
+          "src": [
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "tendon pain or swelling - if this happens, rest the painful area until you can see your doctor"
+            },
+            {
+              "s": "mhra-dsu-2024-01-fluoroquinolones",
+              "q": "severe tiredness, depressed mood, anxiety, problems with your memory or severe problems sleeping changes in your vision, taste, smell or hearing"
+            }
+          ]
+        },
+        {
+          "t": "Thoughts of suicide: take no more doses and talk to a doctor immediately.",
+          "src": [
+            {
+              "s": "mhra-dsu-2023-09-fq-suicidal",
+              "q": "if you develop thoughts of suicide or have attempted suicide, do not take any further doses of your fluoroquinolone, and talk to your doctor or another healthcare professional immediately"
+            }
+          ]
+        },
+        {
+          "t": "Get emergency help for sudden severe abdominal, chest or back pain; seek urgent help for sudden breathlessness (especially lying flat), swollen ankles, feet or abdomen, or new palpitations.",
+          "src": [
+            {
+              "s": "mhra-dsu-2018-11-fq-aortic",
+              "q": "the importance of seeking immediate medical attention in case of sudden-onset severe abdominal, chest or back pain"
+            },
+            {
+              "s": "mhra-dsu-2020-12-fq-valve",
+              "q": "a rapid onset of shortness of breath, especially when lying down flat in bed swelling of the ankles, feet, or abdomen new-onset heart palpitations"
+            }
+          ]
+        },
+        {
+          "t": "Avoid strong sunlight, sunbeds and UV lamps during treatment and for 48 hours after. Dizziness, drowsiness or vision problems can affect driving.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-12153",
+              "q": "it is recommended that patients should not expose themselves unnecessarily to strong sunlight or to artificial UV rays (e.g. sunray lamp, solarium)"
+            },
+            {
+              "s": "emc-12153",
+              "q": "Some undesirable effects (e.g. dizziness / vertigo, drowsiness, visual disturbances) may impair the patient's ability to concentrate and react"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "levofloxacin:allergy:quinolone",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "levofloxacin",
+      "allergen": [
+        "levofloxacin",
+        "group:fluoroquinolone"
+      ],
+      "concern": "Hypersensitivity to levofloxacin or other quinolones",
+      "consequence": "Serious, potentially fatal hypersensitivity (angioedema to anaphylactic shock).",
+      "action": "Do not use.",
+      "sourceWording": "must not be used: in patients hypersensitive to levofloxacin or other quinolones",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "in patients hypersensitive to levofloxacin or other quinolones or to any of the excipients listed in section 6.1"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:epilepsy",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "levofloxacin",
+      "condition": "epilepsy",
+      "effect": "seizure-threshold",
+      "concern": "Epilepsy",
+      "consequence": "Quinolones may lower the seizure threshold and trigger seizures.",
+      "action": "Do not use.",
+      "sourceWording": "must not be used ... in patients with epilepsy",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Levofloxacin tablets are contraindicated in patients with a history of epilepsy"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:tendon-disorder",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "levofloxacin",
+      "condition": "tendon-disorder",
+      "concern": "History of fluoroquinolone-related tendon disorders",
+      "consequence": "Tendinitis and tendon rupture.",
+      "action": "Do not use.",
+      "sourceWording": "must not be used ... in patients with history of tendon disorders related to fluoroquinolone administration",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "in patients with history of tendon disorders related to fluoroquinolone administration"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:age:under-18",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "levofloxacin",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Children and growing adolescents (under 18 years)",
+      "consequence": "Risk of cartilage damage in the growing organism.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in children and growing adolescents",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Levofloxacin is contraindicated in children and growing adolescents (less than 18 years of age)"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:age:over-60",
+      "kind": "age",
+      "level": "caution",
+      "med": "levofloxacin",
+      "age": {
+        "minYears": 60
+      },
+      "concern": "Age over 60 years",
+      "consequence": "Higher risk of tendon injury and myoclonus; elderly may be more sensitive to QT effects.",
+      "action": "Prescribe with special caution; dose by renal function.",
+      "sourceWording": "prescribe fluoroquinolones with special caution for people older than 60 years",
+      "src": [
+        {
+          "s": "mhra-dsu-2024-01-fluoroquinolones",
+          "q": "prescribe fluoroquinolones with special caution for people older than 60 years and for those with renal impairment or solid-organ transplants, because they are at a higher risk of tendon injury"
+        },
+        {
+          "s": "emc-12153",
+          "q": "The risk of myoclonus is increased in older patients"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "levofloxacin",
+      "concern": "Pregnancy (SmPC section 4.3)",
+      "consequence": "Experimental risk of cartilage damage in the growing organism; limited human data.",
+      "action": "Do not use in pregnancy.",
+      "sourceWording": "must not be used in pregnant women",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Levofloxacin tablets must not be used in pregnant women (see sections 4.3 and 5.3)"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "levofloxacin",
+      "concern": "Pregnancy (BUMPS)",
+      "consequence": "No good evidence that quinolones harm the baby.",
+      "action": "BUMPS: a different antibiotic will usually be tried first; a quinolone can be used if recommended by the doctor. The SmPC contraindication still applies to the licence.",
+      "sourceWording": "can be used in pregnancy if recommended by your doctor",
+      "src": [
+        {
+          "s": "bumps-levofloxacin",
+          "q": "Quinolone antibiotics can be used in pregnancy if recommended by your doctor."
+        },
+        {
+          "s": "bumps-levofloxacin",
+          "q": "Yes, a different antibiotic will usually be tried first."
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "levofloxacin",
+      "concern": "Breastfeeding",
+      "consequence": "Insufficient data; other fluoroquinolones pass into milk; cartilage risk.",
+      "action": "Do not use in breastfeeding women.",
+      "sourceWording": "contraindicated in breast-feeding women",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Levofloxacin is contraindicated in breast-feeding women."
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:renal:crcl-20-50",
+      "kind": "renal",
+      "level": "dose",
+      "med": "levofloxacin",
+      "renal": {
+        "measure": "CrCl",
+        "min": 20,
+        "max": 50,
+        "maxInclusive": true
+      },
+      "concern": "Creatinine clearance 50 to 20 mL/min",
+      "consequence": "Accumulation (mainly renally excreted).",
+      "action": "Usual first dose, then halve: 125 mg/24 h (250 mg daily regimen), 250 mg/24 h (500 mg daily) or 250 mg/12 h (500 mg twice daily).",
+      "sourceWording": "Impaired renal function (creatinine clearance ≤50 ml / min)",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Impaired renal function (creatinine clearance ≤50 ml / min)."
+        },
+        {
+          "s": "emc-12153",
+          "q": "first dose: 250 mg first dose : 500 mg first dose : 500 mg 50-20 ml / min then : 125 mg / 24 h then : 250 mg / 24 h then : 250 mg / 12 h"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:renal:crcl-10-19",
+      "kind": "renal",
+      "level": "dose",
+      "med": "levofloxacin",
+      "renal": {
+        "measure": "CrCl",
+        "min": 10,
+        "max": 20
+      },
+      "concern": "Creatinine clearance 19 to 10 mL/min",
+      "consequence": "Accumulation (mainly renally excreted).",
+      "action": "Usual first dose, then 125 mg/48 h (250 mg daily regimen), 125 mg/24 h (500 mg daily) or 125 mg/12 h (500 mg twice daily).",
+      "sourceWording": "19 - 10 ml / min then : 125 mg / 48 h",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "19 - 10 ml / min then : 125 mg / 48 h then : 125 mg / 24 h then : 125 mg / 12 h"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:renal:crcl-under-10",
+      "kind": "renal",
+      "level": "dose",
+      "med": "levofloxacin",
+      "renal": {
+        "measure": "CrCl",
+        "max": 10
+      },
+      "concern": "Creatinine clearance under 10 mL/min (including haemodialysis and CAPD)",
+      "consequence": "Accumulation (mainly renally excreted).",
+      "action": "Usual first dose, then 125 mg/48 h (250 mg daily regimen) or 125 mg/24 h (500 mg regimens). No extra doses after dialysis.",
+      "sourceWording": "< 10 ml / min (including haemodialysis and 1 CAPD",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "< 10 ml / min (including haemodialysis and 1 CAPD then : 125 mg / 48 h then : 125 mg / 24 h then : 125 mg / 24 h"
+        },
+        {
+          "s": "emc-12153",
+          "q": "No additional doses are required after haemodialysis or continuous ambulatory peritoneal dialysis (CAPD)."
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:previous-serious-quinolone-reaction",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "levofloxacin",
+      "condition": "quinolone-serious-adr-history",
+      "concern": "Previous serious adverse reaction to a quinolone or fluoroquinolone",
+      "consequence": "Risk of further disabling, possibly irreversible reactions.",
+      "action": "Avoid; start only if there is no alternative, after careful benefit/risk assessment.",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "The use of Levofloxacin Tablets should be avoided in patients who have experienced serious adverse reactions in the past when using quinolone or fluoroquinolone containing products"
+        },
+        {
+          "s": "mhra-dsu-2024-01-fluoroquinolones",
+          "q": "avoid fluoroquinolone use in patients who have previously had serious adverse reactions with a quinolone antibiotic"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:myasthenia-gravis",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "levofloxacin",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "Worsening muscle weakness; deaths and need for respiratory support reported with fluoroquinolones.",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Levofloxacin is not recommended in patients with a known history of myasthenia gravis."
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:g6pd-deficiency",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "g6pd-deficiency",
+      "concern": "G6PD deficiency",
+      "consequence": "Haemolytic reactions.",
+      "action": "Use with caution and monitor for haemolysis.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "if levofloxacin has to be used in these patients, potential occurrence of haemolysis should be monitored"
+        },
+        {
+          "s": "emc-12153",
+          "q": "may be prone to haemolytic reactions when treated with quinolone antibacterial agents, and so levofloxacin should be used with caution"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "levofloxacin",
+      "condition": "diabetes",
+      "effect": "hypoglycaemia",
+      "concern": "Diabetes",
+      "consequence": "Hypo- or hyperglycaemia, including hypoglycaemic coma.",
+      "action": "Monitor blood glucose carefully.",
+      "sourceWording": "careful monitoring of blood glucose is recommended",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "In these diabetic patients, careful monitoring of blood glucose is recommended."
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:qt-prolongation",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "Congenital long QT syndrome",
+      "consequence": "QT prolongation and ventricular arrhythmia.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Caution should be taken when using fluoroquinolones, including levofloxacin, in patients with known risk factors for prolongation of the QT interval"
+        },
+        {
+          "s": "emc-12153",
+          "q": "congenital long QT syndrome"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "hypokalaemia",
+      "effect": "qt-prolongation",
+      "concern": "Uncorrected hypokalaemia",
+      "consequence": "QT prolongation and ventricular arrhythmia.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "uncorrected electrolyte imbalance (e.g. hypokalemia, hypomagnesemia)"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:hypomagnesaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "hypomagnesaemia",
+      "effect": "qt-prolongation",
+      "concern": "Uncorrected hypomagnesaemia",
+      "consequence": "QT prolongation and ventricular arrhythmia.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "uncorrected electrolyte imbalance (e.g. hypokalemia, hypomagnesemia)"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "heart-failure",
+      "effect": "qt-prolongation",
+      "concern": "Heart failure",
+      "consequence": "QT prolongation risk factor.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "cardiac disease (e.g. heart failure, myocardial infarction, bradycardia)"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:recent-mi",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "recent-myocardial-infarction",
+      "effect": "qt-prolongation",
+      "concern": "Myocardial infarction",
+      "consequence": "QT prolongation risk factor.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "cardiac disease (e.g. heart failure, myocardial infarction, bradycardia)"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:bradycardia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "bradycardia",
+      "effect": "qt-prolongation",
+      "concern": "Bradycardia",
+      "consequence": "QT prolongation risk factor.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be taken",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "cardiac disease (e.g. heart failure, myocardial infarction, bradycardia)"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:aortic-aneurysm",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "aortic-aneurysm",
+      "concern": "Aortic aneurysm/dissection (existing, family history or predisposing condition)",
+      "consequence": "Increased risk of aortic aneurysm and dissection, sometimes with fatal rupture.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "or in patients diagnosed with pre-existing aortic aneurysm and/or aortic dissection, or heart valve disease"
+        },
+        {
+          "s": "mhra-dsu-2018-11-fq-aortic",
+          "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in patients at risk for aortic aneurysm and dissection"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:heart-valve-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "heart-valve-disease",
+      "concern": "Congenital or existing heart valve disease",
+      "consequence": "Risk of heart valve regurgitation/incompetence.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "fluoroquinolones should only be used after careful benefit-risk assessment and after consideration of other therapeutic options in patients with positive family history of aneurysm disease, or congenital heart valve disease"
+        },
+        {
+          "s": "mhra-dsu-2020-12-fq-valve",
+          "q": "patients with congenital heart valve disease or pre-existing heart valve disease"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:connective-tissue-disorder",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "connective-tissue-disorder",
+      "concern": "Connective tissue or vascular disorders (Marfan, vascular Ehlers-Danlos, Turner, Behcet's, Takayasu or giant cell arteritis, Sjögren's)",
+      "consequence": "Predisposition to aortic aneurysm/dissection and valve regurgitation.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "connective tissue disorders such as Marfan syndrome or vascular Ehlers-Danlos syndrome, Turner syndrome, Behcet's disease, hypertension, rheumatoid arthritis"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:hypertension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "hypertension",
+      "concern": "Hypertension (aortic aneurysm/valve risk factor)",
+      "consequence": "Predisposition to aortic aneurysm/dissection and valve regurgitation.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "connective tissue disorders such as Marfan syndrome or vascular Ehlers-Danlos syndrome, Turner syndrome, Behcet's disease, hypertension, rheumatoid arthritis"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:rheumatoid-arthritis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "rheumatoid-arthritis",
+      "concern": "Rheumatoid arthritis (aortic aneurysm/valve risk factor)",
+      "consequence": "Predisposition to aortic aneurysm/dissection and valve regurgitation.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "connective tissue disorders such as Marfan syndrome or vascular Ehlers-Danlos syndrome, Turner syndrome, Behcet's disease, hypertension, rheumatoid arthritis"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:infective-endocarditis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "bacterial-endocarditis",
+      "concern": "Infective endocarditis (valve regurgitation risk factor)",
+      "consequence": "Predisposition to heart valve regurgitation.",
+      "action": "Use only after careful benefit-risk assessment and consideration of other options.",
+      "sourceWording": "should only be used after careful benefit-risk assessment",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "for heart valve regurgitation/incompetence (e.g. infective endocarditis)"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:psychosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "psychosis-schizophrenia",
+      "concern": "Psychotic illness",
+      "consequence": "Psychotic reactions, rarely progressing to suicidal behaviour.",
+      "action": "Use with caution; stop if psychotic reactions develop.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Caution is recommended if levofloxacin is to be used in psychotic patients or in patients with history of psychiatric disease."
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:depression",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "depression-suicidality",
+      "concern": "History of psychiatric disease (including depression)",
+      "consequence": "Psychiatric reactions may progress to suicidal thoughts; fluoroquinolones can worsen existing psychiatric symptoms.",
+      "action": "Use with caution; stop if new or worsening depression or psychosis.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Caution is recommended if levofloxacin is to be used in psychotic patients or in patients with history of psychiatric disease."
+        },
+        {
+          "s": "mhra-dsu-2023-09-fq-suicidal",
+          "q": "note that fluoroquinolones can exacerbate existing psychiatric symptoms"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:pancreatitis-history",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "pancreatitis-history",
+      "concern": "History of pancreatitis",
+      "consequence": "Acute pancreatitis may occur.",
+      "action": "Use with caution; stop if pancreatitis is suspected and do not restart if confirmed.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Caution should be exercised in patients with a history of pancreatitis"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:solid-organ-transplant",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "solid-organ-transplant",
+      "concern": "Solid organ transplant",
+      "consequence": "Higher risk of tendinitis and tendon rupture.",
+      "action": "Prescribe with special caution.",
+      "sourceWording": "prescribe fluoroquinolones with special caution",
+      "src": [
+        {
+          "s": "mhra-dsu-2024-01-fluoroquinolones",
+          "q": "prescribe fluoroquinolones with special caution for people older than 60 years and for those with renal impairment or solid-organ transplants, because they are at a higher risk of tendon injury"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "levofloxacin",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment (tendon and myoclonus risk)",
+      "consequence": "Higher risk of tendon injury; myoclonus if the dose is not adjusted.",
+      "action": "Prescribe with special caution; adjust the dose to creatinine clearance.",
+      "sourceWording": "prescribe fluoroquinolones with special caution",
+      "src": [
+        {
+          "s": "mhra-dsu-2024-01-fluoroquinolones",
+          "q": "prescribe fluoroquinolones with special caution for people older than 60 years and for those with renal impairment or solid-organ transplants"
+        },
+        {
+          "s": "emc-12153",
+          "q": "in patients with renal impairment if the dose of levofloxacin is not adjusted as per the creatinine clearance"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:interaction:corticosteroids",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "levofloxacin",
+      "other": "group:corticosteroid",
+      "concern": "Corticosteroids",
+      "consequence": "Increased risk of tendinitis and tendon rupture; systemic corticosteroids may also raise aortic aneurysm risk.",
+      "action": "Avoid the combination.",
+      "sourceWording": "concomitant use of corticosteroids should be avoided",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Therefore, concomitant use of corticosteroids should be avoided."
+        },
+        {
+          "s": "mhra-dsu-2024-01-fluoroquinolones",
+          "q": "avoid coadministration of a corticosteroid with a fluoroquinolone since this could exacerbate fluoroquinolone-induced tendinitis and tendon rupture"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "levofloxacin",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Vitamin K antagonists (e.g. warfarin)",
+      "consequence": "Raised PT/INR and/or bleeding, which may be severe.",
+      "action": "Monitor coagulation tests.",
+      "sourceWording": "Coagulation tests, therefore, should be monitored",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Increased coagulation tests (PT/INR) and / or bleeding, which may be severe, have been reported in patients treated with levofloxacin in combination with a vitamin K antagonist (e.g. warfarin)."
+        },
+        {
+          "s": "emc-12153",
+          "q": "Coagulation tests, therefore, should be monitored in patients treated with vitamin K antagonists"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:interaction:qt-prolonging",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "levofloxacin",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Drugs that prolong the QT interval",
+      "consequence": "Additive QT prolongation; ventricular arrhythmia.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Levofloxacin, like other fluoroquinolones, should be used with caution in patients receiving drugs known to prolong the QT interval (e.g. Class IA and III antiarrhythmics, tricyclic antidepressants, macrolides, antipsychotics)."
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:interaction:nsaid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "levofloxacin",
+      "other": "group:nsaid",
+      "effect": "seizure-threshold",
+      "concern": "NSAIDs (and other drugs that lower the seizure threshold)",
+      "consequence": "Marked lowering of the seizure threshold may occur.",
+      "action": "Use with extreme caution.",
+      "sourceWording": "should be used with extreme caution",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "However a pronounced lowering of the cerebral seizure threshold may occur when quinolones are given concurrently with theophylline, non-steroidal anti-inflammatory drugs, or other agents which lower the seizure threshold."
+        },
+        {
+          "s": "emc-12153",
+          "q": "should be used with extreme caution in patients predisposed to, or concomitant treatment with drugs which lower the cerebral seizure threshold, such as theophylline"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:interaction:oral-antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "levofloxacin",
+      "other": "group:oral-antidiabetic",
+      "effect": "hypoglycaemia",
+      "concern": "Oral hypoglycaemic agents (e.g. glibenclamide)",
+      "consequence": "Hypo- or hyperglycaemia.",
+      "action": "Monitor blood glucose carefully.",
+      "sourceWording": "careful monitoring of blood glucose is recommended",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "usually in diabetic patients receiving concomitant treatment with an oral hypoglycemic agent (e.g., glibenclamide) or with insulin"
+        },
+        {
+          "s": "emc-12153",
+          "q": "In these diabetic patients, careful monitoring of blood glucose is recommended."
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:interaction:insulin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "levofloxacin",
+      "other": "group:insulin",
+      "effect": "hypoglycaemia",
+      "concern": "Insulin",
+      "consequence": "Hypo- or hyperglycaemia.",
+      "action": "Monitor blood glucose carefully.",
+      "sourceWording": "careful monitoring of blood glucose is recommended",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "usually in diabetic patients receiving concomitant treatment with an oral hypoglycemic agent (e.g., glibenclamide) or with insulin"
+        },
+        {
+          "s": "emc-12153",
+          "q": "In these diabetic patients, careful monitoring of blood glucose is recommended."
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:interaction:iron",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "levofloxacin",
+      "other": "iron",
+      "effect": "reduced-absorption",
+      "concern": "Iron-containing preparations (divalent or trivalent cations)",
+      "consequence": "Levofloxacin absorption significantly reduced.",
+      "action": "Do not take within 2 hours before or after levofloxacin.",
+      "sourceWording": "should not be taken 2 hours before or after",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "It is recommended that preparations containing divalent or trivalent cations such as iron salts, zinc salts or magnesium-or aluminium-containing antacids"
+        },
+        {
+          "s": "emc-12153",
+          "q": "should not be taken 2 hours before or after Levofloxacin tablet administration"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:interaction:magnesium",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "levofloxacin",
+      "other": "group:magnesium-preparation",
+      "effect": "reduced-absorption",
+      "concern": "Magnesium-containing preparations (divalent cation)",
+      "consequence": "Levofloxacin absorption reduced.",
+      "action": "Do not take within 2 hours before or after levofloxacin.",
+      "sourceWording": "should not be taken 2 hours before or after",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "It is recommended that preparations containing divalent or trivalent cations such as iron salts, zinc salts or magnesium-or aluminium-containing antacids"
+        },
+        {
+          "s": "emc-12153",
+          "q": "should not be taken 2 hours before or after Levofloxacin tablet administration"
+        }
+      ]
+    },
+    {
+      "id": "levofloxacin:interaction:al-mg-antacid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "levofloxacin",
+      "other": "aluminium-magnesium-hydroxide",
+      "effect": "reduced-absorption",
+      "concern": "Magnesium- or aluminium-containing antacids",
+      "consequence": "Levofloxacin absorption significantly reduced.",
+      "action": "Do not take within 2 hours before or after levofloxacin.",
+      "sourceWording": "should not be taken 2 hours before or after",
+      "src": [
+        {
+          "s": "emc-12153",
+          "q": "Levofloxacin absorption is significantly reduced when iron salts, or magnesium-or aluminium- containing antacids"
+        },
+        {
+          "s": "emc-12153",
+          "q": "should not be taken 2 hours before or after Levofloxacin tablet administration"
+        }
+      ]
+    }
+  ]
+}

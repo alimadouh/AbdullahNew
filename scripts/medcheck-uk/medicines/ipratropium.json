@@ -1,0 +1,326 @@
+{
+  "id": "ipratropium",
+  "name": "Ipratropium bromide (nebuliser)",
+  "ingredients": ["ipratropium"],
+  "className": "Antimuscarinic (anticholinergic) bronchodilator",
+  "groups": ["inhaled-antimuscarinic"],
+  "searchTerms": ["ipratropium", "ipratropium bromide", "ipratropium nebuliser solution"],
+  "formulations": [
+    {
+      "id": "ipratropium-neb",
+      "label": "Nebuliser solution (single-dose vials)",
+      "route": "inhalation (nebulised)",
+      "strengths": "250 micrograms in 1 mL, 500 micrograms in 2 mL (0.025%)",
+      "release": "n/a",
+      "note": "For inhalation with a nebuliser only; must not be taken by mouth or injected.",
+      "src": [
+        { "s": "emc-3818", "q": "Each single dose unit contains 0.025 % w/v ipratropium bromide i.e. 250 micrograms in 1 ml and 500 micrograms in 2 ml." },
+        { "s": "emc-3818", "q": "must not be taken orally or administered parenterally" }
+      ],
+      "sourceIds": ["emc-3818", "emc-8028"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Reversible bronchospasm in COPD; with an inhaled beta2-agonist, reversible airways obstruction in acute and chronic asthma.",
+        "src": [
+          { "s": "emc-3818", "q": "indicated for treatment of reversible bronchospasm associated with chronic obstructive pulmonary disease" },
+          { "s": "emc-3818", "q": "when used concomitantly with inhaled beta2-agonists, for treatment of reversible airways obstruction as in acute and chronic asthma" }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Children and adolescents with asthma: home nebuliser rescue treatment should be started and managed only by respiratory specialists; buying a nebuliser privately for this is not recommended.",
+        "src": [
+          { "s": "emc-3818", "q": "Only specialists in respiratory medicine should initiate and clinically manage use of nebulisers and associated nebulised medicines at home for acute treatment of asthma in children and adolescents." },
+          { "s": "mhra-dsu-nebuliser-children-asthma-2022", "q": "only specialists in asthma should initiate and clinically manage use of nebulisers and associated nebulised medicines at home for acute treatment of asthma in children and adolescents" }
+        ] },
+      { "t": "First doses should be given under close medical supervision.",
+        "src": [{ "s": "emc-3818", "q": "Use of the nebuliser solution should be subject to close medical supervision during initial dosing." }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "250-500 micrograms 3 to 4 times daily. Acute bronchospasm: 500 micrograms, repeated until stable. More than 2 mg a day only under medical supervision.",
+        "tag": "Adults (including elderly) and adolescents over 12 years",
+        "src": [
+          { "s": "emc-3818", "q": "250 - 500 micrograms (i.e. one vial of 250 micrograms in 1 ml or 1 vial of 500 micrograms in 2 ml) 3 to 4 times daily." },
+          { "s": "emc-3818", "q": "For treatment of acute bronchospasm, 500 micrograms. Repeated doses can be administered until the patient is stable." },
+          { "s": "emc-3818", "q": "Daily doses exceeding 2 mg in adults and adolescents > 12 years of age should only be given under medical supervision." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Children 12 years and under: use only the 250 micrograms in 1 mL vial.",
+        "src": [{ "s": "emc-3818", "q": "In children aged 12 years and under, only ATROVENT 250 UDVs, 1 ml should be used." }] },
+      { "t": "6-12 years: 250 micrograms per dose, up to 1 mg a day.",
+        "src": [{ "s": "emc-3818", "q": "Children 6 - 12 years of age: 250 micrograms (i.e. one vial of 250 micrograms in 1ml) up to a total daily dose of 1mg (4 vials)." }] },
+      { "t": "0-5 years (acute asthma only): 125-250 micrograms per dose, up to 1 mg a day, no more often than every 6 hours.",
+        "src": [
+          { "s": "emc-3818", "q": "Children 0 - 5 years of age (for treatment of acute asthma only): 125 - 250 micrograms (i.e. half to one vial of 250 micrograms in 1 ml) up to a total daily dose of 1 mg (4 vials)." },
+          { "s": "emc-3818", "q": "Ipratropium bromide should be administered no more frequently than 6 hourly in children under 5 years of age." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to atropine or its derivatives (including ipratropium) or any other component.",
+        "src": [{ "s": "emc-3818", "q": "contraindicated in patients with known hypersensitivity to atropine or its derivatives (such as the active substance ipratropium bromide) or to any other component of the product" }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Narrow-angle glaucoma or predisposition: use with caution; keep mist out of the eyes (mouthpiece preferred, or a well-fitting mask). Eye pain, blurred vision, haloes and red eye may signal acute glaucoma: start miotic drops and get specialist advice at once.",
+        "src": [
+          { "s": "emc-3818", "q": "Caution is advocated in the use of anticholinergic agents in patients predisposed to or with narrow-angle glaucoma." },
+          { "s": "emc-3818", "q": "treatment with miotic drops should be initiated and specialist advice sought immediately" },
+          { "s": "emc-3818", "q": "It is recommended that the nebulised solution is administered via a mouthpiece." }
+        ] },
+      { "t": "Use with caution in urinary outflow obstruction (for example prostatic hyperplasia or bladder-outflow obstruction).",
+        "src": [{ "s": "emc-3818", "q": "should be used with caution in patients with pre-existing urinary outflow tract obstruction (e.g. prostatic hyperplasia or bladder-outflow obstruction)" }] },
+      { "t": "Use with caution in cystic fibrosis (gut motility problems).",
+        "detail": true,
+        "src": [{ "s": "emc-3818", "q": "As patients with cystic fibrosis may be prone to gastro-intestinal motility disturbances, ATROVENT, as with other anticholinergics, should be used with caution in these patients." }] },
+      { "t": "Paradoxical bronchospasm can occur: treat with a fast-acting bronchodilator, stop ipratropium at once and assess.",
+        "src": [{ "s": "emc-3818", "q": "This should be treated straight away with a fast acting inhaled bronchodilator. ATROVENT UDVs should be discontinued immediately" }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Long-term use with other anticholinergic medicines has not been studied and is not recommended.",
+        "src": [{ "s": "emc-3818", "q": "Therefore, the chronic co-administration of ATROVENT with other anticholinergic drugs is not recommended." }] },
+      { "t": "Beta-adrenergic drugs and xanthines may add to the bronchodilator effect. Nebulising with a beta2-agonist at the same time may raise the risk of acute glaucoma in patients with a history of narrow-angle glaucoma.",
+        "src": [
+          { "s": "emc-3818", "q": "There is evidence that the administration of ATROVENT with beta-adrenergic drugs and xanthine preparations may produce an additive bronchodilatory effect." },
+          { "s": "emc-3818", "q": "may be increased when nebulised ipratropium bromide and beta2-agonists are administered simultaneously" }
+        ] },
+      { "t": "Do not mix in the same nebuliser with sodium cromoglicate solutions that contain benzalkonium chloride (precipitation).",
+        "detail": true,
+        "src": [{ "s": "emc-3818", "q": "should not be administered simultaneously in the same nebuliser as precipitation may occur" }] }
+    ] },
+    "renal": { "status": "not-stated", "note": "No renal dose advice in the UK nebuliser solution SmPC checked." },
+    "hepatic": { "status": "not-stated", "note": "No hepatic dose advice in the UK nebuliser solution SmPC checked." },
+    "pregnancy": { "items": [
+      { "t": "Safety in human pregnancy not established; weigh benefit against possible harm to the unborn child. Animal studies showed no embryotoxic or teratogenic effects.",
+        "src": [
+          { "s": "emc-3818", "q": "The safety of ATROVENT during human pregnancy has not been established." },
+          { "s": "emc-3818", "q": "The benefits of using ATROVENT during a confirmed or suspected pregnancy must be weighed against the possible hazards to the unborn child." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Not known if it enters breast milk; unlikely to reach the infant in important amounts, but use with caution.",
+        "src": [{ "s": "emc-3818", "q": "It is unlikely that ipratropium bromide would reach the infant to an important extent, however caution should be exercised when ATROVENT is administered to nursing mothers." }] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "No human fertility data; animal studies showed no effect on fertility.",
+        "src": [{ "s": "emc-3818", "q": "Clinical data on fertility are not available for ipratropium bromide." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Headache, dizziness, throat irritation, cough, dry mouth, nausea, gut motility changes (diarrhoea, constipation, vomiting).",
+        "src": [{ "s": "emc-3818", "q": "The most frequent side effects reported in clinical trials were headache, throat irritation, cough, dry mouth, gastro-intestinal motility disorders (including constipation, diarrhoea and vomiting), nausea, and dizziness" }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Immediate hypersensitivity (urticaria, angioedema, bronchospasm, oropharyngeal oedema, anaphylaxis).",
+        "src": [{ "s": "emc-3818", "q": "Immediate hypersensitivity reactions following the use of ATROVENT have been demonstrated by cases of urticaria, angioedema, rash, bronchospasm, oropharyngeal oedema and anaphylaxis." }] },
+      { "t": "Acute narrow-angle glaucoma (eye pain, blurred vision, haloes, red eye) if mist enters the eyes: miotic drops and urgent specialist advice.",
+        "src": [{ "s": "emc-3818", "q": "Eye pain or discomfort, blurred vision, visual halos or coloured images in association with red eyes from conjunctival congestion and corneal oedema may be signs of acute narrow-angle glaucoma." }] },
+      { "t": "Paradoxical bronchospasm; urinary retention (higher risk with outflow obstruction); supraventricular tachycardia or atrial fibrillation (uncommon/rare).",
+        "detail": true,
+        "src": [
+          { "s": "emc-3818", "q": "Paradoxical bronchospasm(2) Uncommon" },
+          { "s": "emc-3818", "q": "Supraventricular tachycardia Uncommon Atrial fibrillation Rare" },
+          { "s": "emc-3818", "q": "the risk of urinary retention may be increased in patients with pre-existing urinary outflow tract obstruction" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Close medical supervision during the first doses.",
+        "tag": "baseline",
+        "src": [{ "s": "emc-3818", "q": "Use of the nebuliser solution should be subject to close medical supervision during initial dosing." }] },
+      { "t": "Stop at once if paradoxical bronchospasm occurs.",
+        "tag": "stop",
+        "src": [{ "s": "emc-3818", "q": "ATROVENT UDVs should be discontinued immediately, the patient assessed and, if necessary, alternative treatment instituted." }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Use with a suitable nebuliser; dilute only with sterile sodium chloride 0.9% if needed (usual final volume 2-4 mL). Can be mixed with a short-acting beta2-agonist in the same chamber; use as soon as possible after mixing.",
+        "src": [
+          { "s": "emc-3818", "q": "if dilution is necessary use only sterile sodium chloride 0.9% solution" },
+          { "s": "emc-3818", "q": "ATROVENT UDVs may be combined with a short-acting beta2-agonist in the same nebuliser chamber" }
+        ] },
+      { "t": "Prefer a mouthpiece; if a mask is used it must fit well. Keep the solution and mist out of the eyes.",
+        "src": [
+          { "s": "emc-3818", "q": "Care must be taken not to allow the solution or mist to enter the eyes." },
+          { "s": "emc-3818", "q": "If this is not available and a nebuliser mask is used, it must fit properly." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Get medical help at once if breathlessness is sudden or rapidly worsening. For children, seek urgent help if asthma is not relieved by rescue medicines, even after short-term improvement.",
+        "src": [
+          { "s": "emc-3818", "q": "The patient should be instructed that in the case of acute or rapidly worsening dyspnoea a physician should be consulted immediately." },
+          { "s": "emc-3818", "q": "Urgent medical assistance should be sought if worsening asthma symptoms are not relieved by rescue medicines" }
+        ] },
+      { "t": "May cause dizziness, blurred vision or focusing problems; if so, avoid driving or operating machinery.",
+        "src": [{ "s": "emc-3818", "q": "If patients experience the above mentioned side effects they should avoid potentially hazardous tasks such as driving or operating machinery." }] },
+      { "t": "Patients prone to glaucoma should protect their eyes.",
+        "src": [{ "s": "emc-3818", "q": "Patients who may be predisposed to glaucoma should be warned specifically to protect their eyes." }] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "ipratropium:allergy:ipratropium",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "ipratropium",
+      "allergen": ["ipratropium"],
+      "concern": "Hypersensitivity to ipratropium, atropine or atropine derivatives",
+      "consequence": "Hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "are contraindicated in patients with known hypersensitivity to atropine or its derivatives",
+      "src": [{ "s": "emc-3818", "q": "contraindicated in patients with known hypersensitivity to atropine or its derivatives (such as the active substance ipratropium bromide) or to any other component of the product" }]
+    },
+    {
+      "id": "ipratropium:condition:angle-closure-glaucoma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ipratropium",
+      "condition": "angle-closure-glaucoma",
+      "concern": "Narrow-angle glaucoma or predisposition",
+      "consequence": "Nebulised mist in the eyes can cause mydriasis, raised intraocular pressure and acute narrow-angle glaucoma.",
+      "action": "Use with caution; give via a mouthpiece or well-fitting mask and protect the eyes.",
+      "sourceWording": "Caution is advocated",
+      "src": [
+        { "s": "emc-3818", "q": "Caution is advocated in the use of anticholinergic agents in patients predisposed to or with narrow-angle glaucoma." },
+        { "s": "emc-3818", "q": "Patients who may be predisposed to glaucoma should be warned specifically to protect their eyes." }
+      ]
+    },
+    {
+      "id": "ipratropium:condition:prostatic-hypertrophy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ipratropium",
+      "condition": "prostatic-hypertrophy",
+      "concern": "Prostatic hyperplasia (urinary outflow obstruction)",
+      "consequence": "Increased risk of urinary retention.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-3818", "q": "should be used with caution in patients with pre-existing urinary outflow tract obstruction (e.g. prostatic hyperplasia or bladder-outflow obstruction)" },
+        { "s": "emc-3818", "q": "the risk of urinary retention may be increased in patients with pre-existing urinary outflow tract obstruction" }
+      ]
+    },
+    {
+      "id": "ipratropium:condition:urinary-retention",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ipratropium",
+      "condition": "urinary-retention",
+      "concern": "Bladder-outflow obstruction or urinary retention",
+      "consequence": "Increased risk of urinary retention.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-3818", "q": "should be used with caution in patients with pre-existing urinary outflow tract obstruction (e.g. prostatic hyperplasia or bladder-outflow obstruction)" }]
+    },
+    {
+      "id": "ipratropium:condition:cystic-fibrosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "ipratropium",
+      "condition": "cystic-fibrosis",
+      "concern": "Cystic fibrosis",
+      "consequence": "Patients may be prone to gastrointestinal motility disturbances.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution in these patients",
+      "src": [{ "s": "emc-3818", "q": "As patients with cystic fibrosis may be prone to gastro-intestinal motility disturbances, ATROVENT, as with other anticholinergics, should be used with caution in these patients." }]
+    },
+    {
+      "id": "ipratropium:age:le12",
+      "kind": "age",
+      "level": "dose",
+      "med": "ipratropium",
+      "age": { "minYears": 0, "maxYears": 13 },
+      "concern": "Children 12 years and under",
+      "consequence": "Lower doses and a daily maximum apply.",
+      "action": "Use only the 250 micrograms in 1 mL vial; maximum 1 mg a day. Under 5 years: acute asthma only, 125-250 micrograms, no more often than every 6 hours.",
+      "sourceWording": "only ATROVENT 250 UDVs, 1 ml should be used",
+      "src": [
+        { "s": "emc-3818", "q": "In children aged 12 years and under, only ATROVENT 250 UDVs, 1 ml should be used." },
+        { "s": "emc-3818", "q": "Children 6 - 12 years of age: 250 micrograms (i.e. one vial of 250 micrograms in 1ml) up to a total daily dose of 1mg (4 vials)." },
+        { "s": "emc-3818", "q": "Ipratropium bromide should be administered no more frequently than 6 hourly in children under 5 years of age." }
+      ]
+    },
+    {
+      "id": "ipratropium:age:lt18-home-nebuliser",
+      "kind": "age",
+      "level": "caution",
+      "med": "ipratropium",
+      "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years: home nebuliser for acute asthma",
+      "consequence": "Unsupervised home nebuliser use can mask worsening asthma and delay care; fatal cases have occurred.",
+      "action": "Home nebulised rescue treatment should be started and managed only by an asthma specialist; seek urgent help if not relieved.",
+      "sourceWording": "Only specialists in respiratory medicine should initiate and clinically manage",
+      "src": [
+        { "s": "emc-3818", "q": "Only specialists in respiratory medicine should initiate and clinically manage use of nebulisers and associated nebulised medicines at home for acute treatment of asthma in children and adolescents." },
+        { "s": "mhra-dsu-nebuliser-children-asthma-2022", "q": "If home use of a nebuliser for the acute treatment of asthma in children under 18 years of age is considered necessary, this should be initiated and managed by an appropriate specialist." }
+      ]
+    },
+    {
+      "id": "ipratropium:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "ipratropium",
+      "concern": "Pregnancy",
+      "consequence": "Safety in human pregnancy not established.",
+      "action": "Weigh benefits against possible hazards to the unborn child.",
+      "sourceWording": "must be weighed against the possible hazards to the unborn child",
+      "src": [{ "s": "emc-3818", "q": "The benefits of using ATROVENT during a confirmed or suspected pregnancy must be weighed against the possible hazards to the unborn child." }]
+    },
+    {
+      "id": "ipratropium:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "ipratropium",
+      "concern": "Breastfeeding",
+      "consequence": "Excretion in milk unknown; unlikely to reach the infant in important amounts.",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [{ "s": "emc-3818", "q": "It is unlikely that ipratropium bromide would reach the infant to an important extent, however caution should be exercised when ATROVENT is administered to nursing mothers." }]
+    },
+    {
+      "id": "ipratropium:interaction:anticholinergics",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "ipratropium",
+      "other": "group:anticholinergic",
+      "concern": "Other anticholinergic (antimuscarinic) medicines, long-term",
+      "consequence": "Chronic combined use has not been studied (additive anticholinergic effects).",
+      "action": "Long-term co-administration is not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-3818", "q": "The chronic co-administration of ATROVENT inhalation with other anticholinergic drugs has not been studied." },
+        { "s": "emc-3818", "q": "Therefore, the chronic co-administration of ATROVENT with other anticholinergic drugs is not recommended." }
+      ]
+    },
+    {
+      "id": "ipratropium:interaction:inhaled-antimuscarinic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "ipratropium",
+      "other": "group:inhaled-antimuscarinic",
+      "concern": "Another inhaled anticholinergic (antimuscarinic), long-term (e.g. tiotropium)",
+      "consequence": "Chronic combined use has not been studied (additive anticholinergic effects).",
+      "action": "Long-term co-administration is not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-3818", "q": "The chronic co-administration of ATROVENT inhalation with other anticholinergic drugs has not been studied." },
+        { "s": "emc-3818", "q": "Therefore, the chronic co-administration of ATROVENT with other anticholinergic drugs is not recommended." }
+      ]
+    },
+    {
+      "id": "ipratropium:interaction:beta2-agonists-glaucoma",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "ipratropium",
+      "other": "salbutamol",
+      "otherFormulations": ["salbutamol-neb-5mg-ml"],
+      "concern": "Nebulised beta2-agonist (salbutamol nebuliser solution) given at the same time (only matters with a history of narrow-angle glaucoma)",
+      "consequence": "Risk of acute glaucoma may be increased in patients with a history of narrow-angle glaucoma; otherwise an additive bronchodilator effect.",
+      "action": "In patients with narrow-angle glaucoma history, take care to keep the mist out of the eyes (mouthpiece).",
+      "sourceWording": "may be increased when nebulised ipratropium bromide and beta2-agonists are administered simultaneously",
+      "src": [
+        { "s": "emc-3818", "q": "The risk of acute glaucoma in patients with a history of narrow-angle glaucoma (see section Special warnings and precautions for use) may be increased when nebulised ipratropium bromide and beta2-agonists are administered simultaneously." },
+        { "s": "emc-3818", "q": "Care must be taken not to allow the solution or mist to enter the eyes." }
+      ]
+    }
+  ]
+}

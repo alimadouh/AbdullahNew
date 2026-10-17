@@ -1203,6 +1203,116 @@
           "q": "Inducers of CYP3A4 (eg, efavirenz, rifampicin, St John's wort) may reduce plasma concentrations of simvastatin and atorvastatin."
         }
       ]
+    },
+    {
+      "id": "simvastatin:interaction:verapamil",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "simvastatin",
+      "other": "verapamil",
+      "effect": "myopathy",
+      "concern": "Simvastatin + verapamil",
+      "consequence": "Higher simvastatin acid levels; increased risk of myopathy and rhabdomyolysis.",
+      "action": "Do not exceed simvastatin 20 mg daily.",
+      "sourceWording": "should not exceed 20 mg daily",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "the dose of simvastatin should not exceed 20 mg daily in patients receiving concomitant medication with verapamil"
+        },
+        {
+          "s": "emc-7789",
+          "q": "The combined use of simvastatin at doses higher than 20 mg daily with amiodarone, amlodipine, verapamil, or diltiazem should be avoided."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:interaction:diltiazem",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "simvastatin",
+      "other": "diltiazem",
+      "effect": "myopathy",
+      "concern": "Simvastatin + diltiazem",
+      "consequence": "Higher simvastatin acid levels; increased risk of myopathy and rhabdomyolysis.",
+      "action": "Do not exceed simvastatin 20 mg daily.",
+      "sourceWording": "should not exceed 20 mg daily",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "the dose of simvastatin should not exceed 20 mg daily in patients receiving concomitant medication with diltiazem"
+        },
+        {
+          "s": "emc-7789",
+          "q": "The combined use of simvastatin at doses higher than 20 mg daily with amiodarone, amlodipine, verapamil, or diltiazem should be avoided."
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:interaction:fluconazole",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "simvastatin",
+      "other": "fluconazole",
+      "effect": "myopathy",
+      "concern": "Simvastatin + fluconazole (less potent CYP3A4 inhibitor)",
+      "consequence": "Rare cases of rhabdomyolysis reported.",
+      "action": "Use with caution (10 mg to 40 mg SmPC).",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "Caution should be exercised when combining simvastatin with certain other less potent CYP3A4 inhibitors: fluconazole, verapamil, or diltiazem"
+        },
+        {
+          "s": "emc-7789",
+          "q": "Rare cases of rhabdomyolysis associated with concomitant administration of simvastatin and fluconazole have been reported"
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:interaction:fluconazole:emc-10668",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "simvastatin",
+      "other": "fluconazole",
+      "effect": "myopathy",
+      "concern": "Simvastatin + fluconazole (one 80 mg SmPC; conflicts with caution in other SmPC text)",
+      "consequence": "Increased risk of myopathy and rhabdomyolysis.",
+      "action": "Sources conflict. One UK simvastatin 80 mg SmPC (sections 4.4 and 4.5) lists fluconazole among potent CYP3A4 inhibitors whose combination is contraindicated; its section 4.3 list does not name fluconazole, and the same SmPC also lists it under caution. The 10 mg to 40 mg SmPC lists it under caution only.",
+      "sourceWording": "is contraindicated",
+      "src": [
+        {
+          "s": "emc-10668",
+          "q": "Therefore, combination with itraconazole, ketoconazole, fluconazole, posaconazole, voriconazole, HIV protease inhibitors (eg nelfinavir), boceprevir, telaprevir, erythromycin, clarithromycin, telithromycin nefazodone and medicinal products containing cobicistat is contraindicated"
+        },
+        {
+          "s": "emc-10668",
+          "q": "Caution should be exercised when combining simvastatin with certain other less potent CYP3A4 inhibitors: fluconazole, verapamil, diltiazem"
+        }
+      ]
+    },
+    {
+      "id": "simvastatin:interaction:fenofibrate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "simvastatin",
+      "other": "fenofibrate",
+      "effect": "myopathy",
+      "concern": "Simvastatin + fenofibrate",
+      "consequence": "Either medicine can cause myopathy alone.",
+      "action": "Use with caution. (The 10 mg daily simvastatin limit applies to other fibrates, not fenofibrate.)",
+      "sourceWording": "Caution should be used",
+      "src": [
+        {
+          "s": "emc-7789",
+          "q": "Caution should be used when prescribing fenofibrate with simvastatin, as either agent can cause myopathy when given alone."
+        },
+        {
+          "s": "emc-7789",
+          "q": "the dose of simvastatin should not exceed 10 mg daily in patients taking simvastatin with other fibrates, except fenofibrate"
+        }
+      ]
     }
   ]
 }

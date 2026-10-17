@@ -1,0 +1,682 @@
+{
+  "id": "budesonide-nebuliser",
+  "name": "Budesonide (nebuliser suspension or nasal spray)",
+  "ingredients": ["budesonide"],
+  "className": "Corticosteroid (glucocorticoid), inhaled or intranasal",
+  "groups": ["inhaled-corticosteroid"],
+  "searchTerms": ["budesonide", "budesonide nebuliser", "budesonide nebules", "budesonide nasal spray"],
+  "formulations": [
+    {
+      "id": "budesonide-neb",
+      "label": "Nebuliser suspension",
+      "route": "inhalation (nebulised)",
+      "strengths": "0.25 mg/mL (0.5 mg in 2 mL), 0.5 mg/mL (1 mg in 2 mL)",
+      "release": "n/a",
+      "note": "Single-dose units for a jet nebuliser; ultrasonic nebulisers are not suitable.",
+      "src": [
+        { "s": "emc-880", "q": "Budesonide, 0.25 mg/ml. Each 2 ml Respule contains 0.5 mg of budesonide." },
+        { "s": "emc-881", "q": "Budesonide 0.5 mg/ml. Each 2 ml Respule contains 1 mg budesonide." },
+        { "s": "emc-880", "q": "Ultrasonic nebulisers are not suitable for the administration of Pulmicort Respules" }
+      ],
+      "sourceIds": ["emc-880", "emc-881"]
+    },
+    {
+      "id": "budesonide-nasal-pom",
+      "label": "Nasal spray 64 micrograms per spray (prescription-only SmPC)",
+      "route": "nasal",
+      "strengths": "64 micrograms per actuation",
+      "release": "n/a",
+      "note": "Prescription-only nasal spray SmPC: rhinitis from 6 years, nasal polyps in adults. It has extra contraindications (bleeding disorders, nosebleeds, herpes infection) that the pharmacy nasal spray SmPC does not list.",
+      "src": [
+        { "s": "emc-445", "q": "The delivered (metered) dose of 0.05 ml nasal spray, suspension contains 64 micrograms of budesonide." },
+        { "s": "emc-445", "q": "Disorders of haemostasis, or epistaxis. Oro-nasal and ophthalmic herpes virus infection." }
+      ],
+      "sourceIds": ["emc-445"]
+    },
+    {
+      "id": "budesonide-nasal-p",
+      "label": "Nasal spray 64 micrograms per spray (pharmacy hay-fever SmPC)",
+      "route": "nasal",
+      "strengths": "64 micrograms per actuation",
+      "release": "n/a",
+      "note": "Pharmacy hay-fever nasal spray SmPC: adults only, seasonal allergic rhinitis, not for more than 3 months continuously.",
+      "src": [
+        { "s": "emc-10205", "q": "Each actuation contains: Budesonide 64 micrograms (1.28 mg/ml)." },
+        { "s": "emc-10205", "q": "This medicine should not be used continuously for longer than 3 months." }
+      ],
+      "sourceIds": ["emc-10205"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Nebuliser: bronchial asthma where a pressurised or dry powder inhaler is unsatisfactory or inappropriate; croup in infants and children when hospital admission is indicated.",
+        "formulations": ["budesonide-neb"],
+        "src": [
+          { "s": "emc-880", "q": "for use in bronchial asthma, in patients where use of a pressurised inhaler or dry powder formulation is unsatisfactory or inappropriate" },
+          { "s": "emc-880", "q": "Pulmicort Respules are also recommended for use in infants and children with croup" },
+          { "s": "emc-880", "q": "in which hospitalisation is indicated" }
+        ] },
+      { "t": "Prescription nasal spray: seasonal and perennial allergic rhinitis in adults and children over 6 years; nasal polyps in adults.",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [{ "s": "emc-445", "q": "Treatment and prevention of signs and symptoms of seasonal and perennial allergic rhinitis in adults and children over 6 years of age. Treatment of signs and symptoms of nasal polyps in adults." }] },
+      { "t": "Pharmacy nasal spray: prevention and treatment of seasonal allergic rhinitis (hay fever).",
+        "formulations": ["budesonide-nasal-p"],
+        "src": [{ "s": "emc-10205", "q": "Prevention and treatment of seasonal allergic rhinitis (hay fever)." }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Pharmacy nasal spray: do not use continuously for more than 3 months; get medical advice if symptoms are not controlled or last longer than 2 weeks.",
+        "formulations": ["budesonide-nasal-p"],
+        "src": [
+          { "s": "emc-10205", "q": "This medicine should not be used continuously for longer than 3 months." },
+          { "s": "emc-10205", "q": "If symptoms are not controlled, or persist for longer than 2 weeks of treatment, medical advice must be sought." }
+        ] },
+      { "t": "Prescription nasal spray in children: a doctor's advice is needed for treatment longer than 2 months in a year.",
+        "formulations": ["budesonide-nasal-pom"],
+        "detail": true,
+        "src": [{ "s": "emc-445", "q": "The advice of a doctor is required for any treatment in children for more than 2 months over one year." }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Starting dose, severe periods or while reducing oral steroids: usually 1-2 mg twice daily (can be increased further in very severe cases). Maintenance: 0.5-1 mg twice daily, the lowest dose that keeps the patient symptom-free.",
+        "tag": "Asthma, adults and children 12 years and over",
+        "formulations": ["budesonide-neb"],
+        "src": [
+          { "s": "emc-880", "q": "Adults (including the elderly) : Usually 1 - 2 mg twice daily. In very severe cases the dosage may be further increased." },
+          { "s": "emc-880", "q": "Adults (including the elderly and children 12 years and older) : 0.5 - 1 mg twice daily." }
+        ] },
+      { "t": "Moving from oral steroids: give a high nebulised dose with the usual oral steroid dose for about 10 days, then reduce the oral steroid slowly (for example by 2.5 mg prednisolone or equivalent each month).",
+        "tag": "Patients on oral corticosteroids",
+        "formulations": ["budesonide-neb"],
+        "detail": true,
+        "src": [
+          { "s": "emc-880", "q": "A high dose of Pulmicort Respules is then given in combination with the previously used oral steroid dose for about 10 days." },
+          { "s": "emc-880", "q": "the oral steroid dose should be gradually reduced (by for example 2.5 milligrams prednisolone or the equivalent each month)" }
+        ] },
+      { "t": "Rhinitis: 256 micrograms a day, as 2 sprays in each nostril in the morning or 1 spray in each nostril morning and evening; then the lowest dose that controls symptoms. Doses above 256 micrograms give no extra benefit. Nasal polyps (adults): same dose.",
+        "tag": "Nasal spray (prescription SmPC)",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [
+          { "s": "emc-445", "q": "The recommended initial dose of 256 micrograms may be administered once daily in the morning or divided into two administrations, in the morning and in the evening." },
+          { "s": "emc-445", "q": "No better efficacy is to be expected with a dose greater than 256 micrograms." },
+          { "s": "emc-445", "q": "The recommended dose for the treatment of nasal polyps is 256 micrograms." }
+        ] },
+      { "t": "Adults: 256 micrograms a day (2 sprays in each nostril each morning, or 1 spray in each nostril morning and evening); if well controlled, 1 spray in each nostril each morning.",
+        "tag": "Nasal spray (pharmacy SmPC)",
+        "formulations": ["budesonide-nasal-p"],
+        "src": [
+          { "s": "emc-10205", "q": "256 micrograms per day Two applications of 64 micrograms into each nostril each morning One application of 64 micrograms into each nostril morning and evening" },
+          { "s": "emc-10205", "q": "If good effect is achieved, one application of 64 micrograms into each nostril each morning." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Asthma, children 3 months to 12 years: starting 0.5-1 mg twice daily; maintenance 0.25-0.5 mg twice daily. The highest dose (2 mg a day) under 12 years only for severe asthma and for limited periods.",
+        "formulations": ["budesonide-neb"],
+        "src": [
+          { "s": "emc-880", "q": "Children 3 months to 12 years : 0.5 - 1 mg twice daily." },
+          { "s": "emc-880", "q": "Children 3 months to 12 years : 0.25 - 0.5 mg twice daily." },
+          { "s": "emc-880", "q": "The highest dose (2 mg per day) for children under 12 years should only be considered in children with severe asthma and during limited periods." }
+        ] },
+      { "t": "Croup: usually 2 mg nebulised, as a single dose or two 1 mg doses 30 minutes apart; may be repeated every 12 hours for up to 36 hours or until improvement.",
+        "formulations": ["budesonide-neb"],
+        "src": [
+          { "s": "emc-880", "q": "In infants and children with croup, the usual dose is 2 mg of nebulised budesonide." },
+          { "s": "emc-880", "q": "Dosing can be repeated every 12 hour for a maximum of 36 hours or until clinical improvement." }
+        ] },
+      { "t": "Prescription nasal spray: rhinitis from 6 years (same dose as adults), under adult guidance; nasal polyps adults only.",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [
+          { "s": "emc-445", "q": "Adults, adolescents and children from 6 years of age:" },
+          { "s": "emc-445", "q": "Children should be treated under guidance of an adult." }
+        ] },
+      { "t": "Pharmacy nasal spray: should not be used under 18 years.",
+        "formulations": ["budesonide-nasal-p"],
+        "src": [{ "s": "emc-10205", "q": "This spray should not be used in children and adolescents under 18 years of age." }] },
+      { "t": "Monitor height regularly in children on long-term treatment; if growth slows, reduce to the lowest effective dose and consider referral to a paediatric specialist.",
+        "src": [
+          { "s": "emc-880", "q": "It is recommended that the height of children receiving prolonged treatment with inhaled corticosteroids is regularly monitored." },
+          { "s": "emc-445", "q": "It is recommended that the height of children receiving prolonged treatment with nasal corticosteroids is regularly monitored." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to budesonide or any excipient (all forms).",
+        "src": [
+          { "s": "emc-880", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." },
+          { "s": "emc-10205", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }
+        ] },
+      { "t": "Prescription nasal spray SmPC only: bleeding (haemostasis) disorders or nosebleeds; herpes virus infection of the mouth/nose or eye.",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [{ "s": "emc-445", "q": "Disorders of haemostasis, or epistaxis. Oro-nasal and ophthalmic herpes virus infection." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Special caution in active or quiescent pulmonary tuberculosis and in fungal or viral airway infections.",
+        "src": [
+          { "s": "emc-880", "q": "Special caution is necessary in patients with active or quiescent pulmonary tuberculosis and in patients with fungal or viral infections in" },
+          { "s": "emc-445", "q": "Special caution is necessary in patients with active or quiescent pulmonary tuberculosis, and in patients with fungal or viral infections of the airways." }
+        ] },
+      { "t": "Systemic steroid effects (adrenal suppression, Cushing's features, growth slowing in children, reduced bone density, cataract, glaucoma, mood or behaviour changes) are possible, mainly at high doses for long periods. Use the lowest effective dose. Consider extra systemic steroid cover during stress or elective surgery in those at risk of adrenal suppression.",
+        "src": [
+          { "s": "emc-880", "q": "Systemic effects may occur with any inhaled corticosteroids, particularly at high doses prescribed for long periods." },
+          { "s": "emc-880", "q": "Additional systemic corticosteroid treatment should be considered during periods of stress or elective surgery." }
+        ] },
+      { "t": "Not for relief of acute asthma attacks; a short-acting bronchodilator is needed. Paradoxical bronchospasm: stop at once and use another treatment.",
+        "formulations": ["budesonide-neb"],
+        "src": [
+          { "s": "emc-880", "q": "Pulmicort Respules is not intended for rapid relief of acute episodes of asthma where an inhaled short-acting bronchodilator is required." },
+          { "s": "emc-880", "q": "treatment with inhaled budesonide should be discontinued immediately, the patient assessed and alternative therapy instituted if necessary." }
+        ] },
+      { "t": "COPD: inhaled corticosteroids increase the risk of pneumonia; watch for it.",
+        "formulations": ["budesonide-neb"],
+        "detail": true,
+        "src": [{ "s": "emc-880", "q": "Physicians should remain vigilant for the possible development of pneumonia in patients with COPD" }] },
+      { "t": "Prescription nasal spray: not recommended with nasal ulcers, or after recent nasal surgery or injury until healed. Use only with antibacterial or antifungal treatment if the nose is infected with bacteria or fungi. Take raised blood glucose into account in diabetes. Monitor closely in glaucoma or a family history of glaucoma.",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [
+          { "s": "emc-445", "q": "Budesonide nasal spray is not recommended in patients with nasal ulcerations, in cases of recent surgery or nasal trauma until it is fully recovered." },
+          { "s": "emc-445", "q": "should be used only if concomitant antibacterial or antifungal treatment is carried out" },
+          { "s": "emc-445", "q": "Glucocorticoids may increase blood glucose levels. This must be taken into account when prescribing to diabetic patients." },
+          { "s": "emc-445", "q": "Patients with glaucoma or a family history of glaucoma should therefore be closely monitored while taking this drug." }
+        ] },
+      { "t": "Pharmacy nasal spray: patient should see a doctor first if using another corticosteroid, exposed to tuberculosis, chickenpox or measles, has severe or frequent nosebleeds, recent nose ulcers, surgery or injury, glaucoma or cataract, an eye infection or diabetes.",
+        "formulations": ["budesonide-nasal-p"],
+        "detail": true,
+        "src": [
+          { "s": "emc-10205", "q": "They are using a corticosteroid for conditions such as asthma, allergies or skin rash." },
+          { "s": "emc-10205", "q": "They currently have or have been exposed to someone who has tuberculosis, chicken pox or measles." },
+          { "s": "emc-10205", "q": "They have severe or frequent nose bleeds, or have had recent nose ulcers or nose surgery or a nose injury that has not healed." },
+          { "s": "emc-10205", "q": "They have ever been diagnosed with glaucoma or cataracts. They have an eye infection or diabetes." }
+        ] },
+      { "t": "Blurred vision or other visual disturbance: consider referral to an ophthalmologist (cataract, glaucoma, central serous chorioretinopathy).",
+        "detail": true,
+        "src": [{ "s": "emc-880", "q": "the patient should be considered for referral to an ophthalmologist for evaluation of possible causes" }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "CYP3A inhibitors (for example itraconazole, ketoconazole, HIV protease inhibitors, cobicistat; the nasal spray SmPCs also name clarithromycin) raise budesonide levels and the risk of systemic steroid effects. Avoid unless the benefit outweighs the risk; if used, monitor for systemic steroid effects and consider a lower budesonide dose. Short courses (1-2 weeks) matter less.",
+        "src": [
+          { "s": "emc-880", "q": "Therefore, the combination should be avoided unless the benefit outweighs this increased risk, in which case patients should be monitored for systemic corticosteroid side effects." },
+          { "s": "emc-445", "q": "Since there is no data to support a dosage recommendation, the combination should be avoided." },
+          { "s": "emc-10205", "q": "itraconazole, ketoconazole, clarithromycin, HIV protease inhibitors" }
+        ] },
+      { "t": "Prescription nasal spray SmPC lists: aspirin at analgesic or antipyretic doses (500 mg or more per dose; not low-dose aspirin) and heparins (more bleeding), NSAIDs (more GI ulcer and bleeding), fluoroquinolones (tendon damage, mainly with long-term steroids), oral anticoagulants (stronger monitoring), enzyme inducers (lower steroid effect; monitor and adjust dose), antacids (take more than 2 hours apart).",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [
+          { "s": "emc-445", "q": "Association to be taken into account with analgesic or antipyretic doses (>=500 mg per dose and/or <3 g per day)." },
+          { "s": "emc-445", "q": "+ Nonsteroidal anti-inflammatory drugs Increased risk of ulceration and gastrointestinal bleeding." },
+          { "s": "emc-445", "q": "+ Fluoroquinolones Possible increased risk of tendinopathy or even tendon rupture (exceptional)" },
+          { "s": "emc-445", "q": "As a precautionary measure, these topical agents or antacids should be taken at a distance from any other medication (more than 2 hours, if possible)" }
+        ] },
+      { "t": "MHRA: a corticosteroid metabolised by CYP3A (including inhaled and intranasal) with ritonavir or cobicistat is not recommended unless benefit outweighs risk; consider beclometasone where possible.",
+        "detail": true,
+        "src": [
+          { "s": "mhra-dsu-cobicistat-ritonavir-steroids-2016", "q": "there is potential for this interaction to occur even with non-systemically administered steroid formulations, including intranasal, inhaled, and intra-articular routes" },
+          { "s": "mhra-dsu-cobicistat-ritonavir-steroids-2016", "q": "use of beclomethasone should be considered where possible-particularly for long-term use" }
+        ] }
+    ] },
+    "renal": { "status": "not-stated", "note": "No renal dose advice in the UK SmPCs checked (nebuliser suspension and both nasal spray SmPCs)." },
+    "hepatic": { "items": [
+      { "t": "Reduced liver function lowers corticosteroid elimination and raises systemic exposure; be aware of possible systemic side effects.",
+        "formulations": ["budesonide-neb", "budesonide-nasal-p"],
+        "src": [
+          { "s": "emc-880", "q": "Reduced liver function affects the elimination of corticosteroids, causing lower elimination rate and higher systemic exposure. Be aware of possible systemic sides effects." },
+          { "s": "emc-10205", "q": "Reduced liver function affects the elimination of corticosteroids, causing lower elimination rate and higher systemic exposure." }
+        ] },
+      { "t": "Prescription nasal spray: in severe hepatic impairment consider possible systemic effects, although this is of limited relevance for the nasal route.",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [
+          { "s": "emc-445", "q": "Consideration of potential systemic effects may be needed in severe impairment of hepatic function." },
+          { "s": "emc-445", "q": "this is of limited clinical relevance for budesonide nasal spray" }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPCs: studies have not shown increased risk with inhaled or intranasal budesonide in early pregnancy; weigh benefit to the mother against risk to the fetus and use the lowest effective dose (nasal SmPC: as short as possible). Keeping asthma treated in pregnancy matters for mother and fetus.",
+        "src": [
+          { "s": "emc-880", "q": "the benefit of the administration of budesonide for the mother should be weighed against the risks to the foetus." },
+          { "s": "emc-880", "q": "It is important for both foetus and mother to maintain an adequate asthma treatment during pregnancy." },
+          { "s": "emc-445", "q": "The use of budesonide should be as short as possible." }
+        ] },
+      { "t": "BUMPS: inhaled corticosteroids should be continued in pregnancy; no evidence they harm the baby.",
+        "formulations": ["budesonide-neb"],
+        "src": [
+          { "s": "bumps-corticosteroids-inhaled", "q": "Inhaled corticosteroids should be continued throughout pregnancy to ensure that breathing problems do not occur." },
+          { "s": "bumps-corticosteroids-inhaled", "q": "There is no evidence that use of inhaled corticosteroids in pregnancy harms the baby." }
+        ] },
+      { "t": "SPS (hay fever in pregnancy): intranasal corticosteroids can be considered if non-drug measures are not enough.",
+        "formulations": ["budesonide-nasal-pom", "budesonide-nasal-p"],
+        "src": [{ "s": "sps-hayfever-pregnancy", "q": "intranasal corticosteroids (for example, fluticasone) can be considered if non-pharmacological management is insufficient" }] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Nebuliser SmPC: excreted in breast milk but no effect on the infant expected at therapeutic doses; can be used.",
+        "formulations": ["budesonide-neb"],
+        "src": [{ "s": "emc-880", "q": "Pulmicort Respules can be used during breast-feeding." }] },
+      { "t": "Prescription nasal spray SmPC: breastfeeding possible for brief treatment; avoid breastfeeding during chronic treatment as a precaution.",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [{ "s": "emc-445", "q": "Therefore, breast-feeding is possible in case of brief treatment. In case of chronic treatment, breast-feeding should be avoided as a precautionary measure." }] },
+      { "t": "Pharmacy nasal spray SmPC: may be considered during breastfeeding.",
+        "formulations": ["budesonide-nasal-p"],
+        "src": [{ "s": "emc-10205", "q": "This medicine may therefore be considered for use during breast feeding." }] },
+      { "t": "SPS: rectal, inhaled or intranasal budesonide can be used during breastfeeding; no specific infant monitoring usually needed.",
+        "src": [
+          { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "Rectal, inhaled or intranasal budesonide can be used during breastfeeding." },
+          { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "No specific infant monitoring is usually required." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Prescription nasal spray SmPC: no evidence that intranasal budesonide affects fertility.",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [{ "s": "emc-445", "q": "There is no evidence that intranasal budesonide affects fertility." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Nebuliser: oral thrush, pneumonia (in COPD), cough, hoarseness, throat irritation.",
+        "formulations": ["budesonide-neb"],
+        "src": [
+          { "s": "emc-880", "q": "Common Oropharyngeal candidiasis Pneumonia" },
+          { "s": "emc-880", "q": "Common Cough Hoarseness Throat irritation" }
+        ] },
+      { "t": "Nasal spray: nasal irritation, nosebleed or blood-stained discharge, dry nose, sore throat.",
+        "formulations": ["budesonide-nasal-pom", "budesonide-nasal-p"],
+        "src": [
+          { "s": "emc-445", "q": "Common local symptoms like nasal mucosa irritation, slight haemorrhagic secretion, epistaxis (immediately after application), dryness of the nasal mucosa, oropharyngeal pain" },
+          { "s": "emc-10205", "q": "Common Epistaxis Haemorrhagic secretion Nasal discomfort" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Paradoxical bronchospasm (wheeze straight after a dose): stop the nebulised budesonide at once, assess, and use another treatment.",
+        "formulations": ["budesonide-neb"],
+        "src": [{ "s": "emc-880", "q": "As with other inhalation therapy, paradoxical bronchospasm may occur, with an immediate increase in wheezing after dosing." }] },
+      { "t": "Hypersensitivity including angioedema and anaphylaxis (rare).",
+        "src": [
+          { "s": "emc-880", "q": "Immediate and delayed hypersensitivity reactions* including rash, contact dermatitis, urticaria, angioedema and anaphylactic reaction" },
+          { "s": "emc-445", "q": "Rare anaphylactic reaction" }
+        ] },
+      { "t": "Adrenal suppression (tiredness, headache, nausea, vomiting, especially when moving off oral steroids or under stress): a temporary rise in oral steroid dose is sometimes needed.",
+        "detail": true,
+        "src": [
+          { "s": "emc-880", "q": "symptoms such as tiredness, headache, nausea and vomiting should occur. In these cases a temporary increase in the dose of oral glucocorticosteroids is sometimes necessary." }
+        ] },
+      { "t": "Nasal spray: nasal ulcer or nasal septum perforation (rare).",
+        "formulations": ["budesonide-nasal-pom", "budesonide-nasal-p"],
+        "detail": true,
+        "src": [{ "s": "emc-445", "q": "Rare nasal ulcer, nasal septum perforation, dysphonia" }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Height in children on long-term treatment.",
+        "tag": "ongoing",
+        "src": [{ "s": "emc-880", "q": "It is recommended that the height of children receiving prolonged treatment with inhaled corticosteroids is regularly monitored." }] },
+      { "t": "Prescription nasal spray, long-term use: inspect the nasal lining regularly (for example every 6 months); reduce the dose if atrophy is seen.",
+        "tag": "ongoing",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [{ "s": "emc-445", "q": "In continuous long-term treatment, the nasal mucosa should be inspected regularly e.g. every 6 months. If mucosal atrophy is observed, the doses of local corticosteroids should be reduced." }] },
+      { "t": "If on a CYP3A inhibitor: monitor for systemic corticosteroid side effects.",
+        "tag": "ongoing",
+        "src": [{ "s": "emc-880", "q": "in which case patients should be monitored for systemic corticosteroid side effects" }] },
+      { "t": "Stop at once if paradoxical bronchospasm occurs.",
+        "tag": "stop",
+        "formulations": ["budesonide-neb"],
+        "src": [{ "s": "emc-880", "q": "treatment with inhaled budesonide should be discontinued immediately" }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Use a jet nebuliser with mouthpiece or face mask, air flow 6-8 L/min, fill volume 2-4 mL. Ultrasonic nebulisers are not suitable. Can be mixed with 0.9% saline, salbutamol, terbutaline, ipratropium and some other nebuliser solutions; use the mix within 30 minutes.",
+        "formulations": ["budesonide-neb"],
+        "src": [
+          { "s": "emc-880", "q": "The nebuliser should be connected to an air compressor with an adequate air flow (6-8 L/min), and the fill volume should be 2-4ml." },
+          { "s": "emc-880", "q": "The admixture should be used within 30 minutes." },
+          { "s": "emc-880", "q": "Pulmicort Respules can be mixed with 0.9% saline and with solutions for nebulisation of terbutaline, salbutamol, fenoterol, acetylcysteine, sodium cromoglycate or ipratropium bromide." }
+        ] },
+      { "t": "Nasal spray: blow the nose, shake, prime the pump before first use (5-10 sprays), spray into each nostril. Re-prime if not used for about 24 hours.",
+        "formulations": ["budesonide-nasal-pom"],
+        "src": [
+          { "s": "emc-445", "q": "Pump the nozzle up and down several times (5-10 times), spraying into the air until an even mist is seen." },
+          { "s": "emc-445", "q": "The priming effect remains for approximately 24 hours." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Nebuliser: rinse the mouth with water after each dose (reduces thrush); wash the face after using a mask; clean the nebuliser after every use.",
+        "formulations": ["budesonide-neb"],
+        "src": [
+          { "s": "emc-880", "q": "the patient should rinse their mouth out with water after inhaling" },
+          { "s": "emc-880", "q": "The nebuliser chamber should be cleaned after every administration." }
+        ] },
+      { "t": "If a short-acting reliever works less well or is needed more than usual, seek medical advice.",
+        "formulations": ["budesonide-neb"],
+        "src": [{ "s": "emc-880", "q": "If patients find short-acting bronchodilator treatment ineffective, or they need more inhalations than usual, medical attention must be sought." }] },
+      { "t": "Nasal spray: full effect takes a few days; use regularly; for seasonal rhinitis start before allergen exposure if possible.",
+        "formulations": ["budesonide-nasal-pom", "budesonide-nasal-p"],
+        "src": [
+          { "s": "emc-445", "q": "The patient should be informed that the full effect is not achieved until after a few days of treatment." },
+          { "s": "emc-445", "q": "Treatment of seasonal rhinitis should, if possible, start before exposure to the allergens." }
+        ] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "budesonide-nebuliser:allergy:budesonide",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "budesonide-nebuliser",
+      "allergen": ["budesonide"],
+      "concern": "Hypersensitivity to budesonide",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity",
+      "src": [
+        { "s": "emc-880", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." },
+        { "s": "emc-445", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:condition:bleeding-disorder",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "condition": "bleeding-disorder",
+      "effect": "bleeding",
+      "concern": "Bleeding (haemostasis) disorder - prescription nasal spray",
+      "consequence": "Listed as a contraindication in the prescription nasal spray SmPC (the pharmacy nasal spray SmPC does not list it).",
+      "action": "Do not use this nasal spray.",
+      "sourceWording": "4.3 Contraindications ... Disorders of haemostasis",
+      "src": [{ "s": "emc-445", "q": "Disorders of haemostasis, or epistaxis." }]
+    },
+    {
+      "id": "budesonide-nebuliser:condition:epistaxis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "condition": "epistaxis",
+      "concern": "Nosebleeds (epistaxis) - prescription nasal spray",
+      "consequence": "Listed as a contraindication in the prescription nasal spray SmPC; the pharmacy nasal spray SmPC says to see a doctor first if nosebleeds are severe or frequent.",
+      "action": "Do not use this nasal spray.",
+      "sourceWording": "4.3 Contraindications ... epistaxis",
+      "src": [
+        { "s": "emc-445", "q": "Disorders of haemostasis, or epistaxis." },
+        { "s": "emc-10205", "q": "They have severe or frequent nose bleeds" }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:condition:herpes-oronasal-ocular",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "condition": "herpes-oronasal-ocular",
+      "concern": "Herpes virus infection of mouth, nose or eye - prescription nasal spray",
+      "consequence": "Listed as a contraindication in the prescription nasal spray SmPC.",
+      "action": "Do not use this nasal spray.",
+      "sourceWording": "4.3 Contraindications ... Oro-nasal and ophthalmic herpes virus infection",
+      "src": [{ "s": "emc-445", "q": "Oro-nasal and ophthalmic herpes virus infection." }]
+    },
+    {
+      "id": "budesonide-nebuliser:condition:recent-nasal-surgery-trauma",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom", "budesonide-nasal-p"],
+      "condition": "recent-nasal-surgery-trauma",
+      "concern": "Nasal ulcer, recent nasal surgery or nasal injury",
+      "consequence": "Corticosteroids delay healing of the nasal lining.",
+      "action": "Prescription nasal spray SmPC: not recommended until fully healed. Pharmacy nasal spray SmPC: see a doctor before use.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-445", "q": "Budesonide nasal spray is not recommended in patients with nasal ulcerations, in cases of recent surgery or nasal trauma until it is fully recovered." },
+        { "s": "emc-10205", "q": "or have had recent nose ulcers or nose surgery or a nose injury that has not healed" }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:condition:untreated-nasal-infection",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "condition": "untreated-nasal-infection",
+      "concern": "Bacterial or fungal infection of the nose",
+      "consequence": "Corticosteroid may worsen local infection.",
+      "action": "Use only if antibacterial or antifungal treatment is given at the same time.",
+      "sourceWording": "should be used only if concomitant antibacterial or antifungal treatment is carried out",
+      "src": [{ "s": "emc-445", "q": "In case of infections of the nose caused by bacteria or fungi, Budesonide nasal spray suspension should be used only if concomitant antibacterial or antifungal treatment is carried out." }]
+    },
+    {
+      "id": "budesonide-nebuliser:condition:pulmonary-tuberculosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-nebuliser",
+      "condition": "pulmonary-tuberculosis",
+      "concern": "Active or quiescent pulmonary tuberculosis",
+      "consequence": "Corticosteroid may worsen or reactivate infection.",
+      "action": "Special caution.",
+      "sourceWording": "Special caution is necessary",
+      "src": [
+        { "s": "emc-880", "q": "Special caution is necessary in patients with active or quiescent pulmonary tuberculosis" },
+        { "s": "emc-445", "q": "Special caution is necessary in patients with active or quiescent pulmonary tuberculosis" }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:condition:glaucoma",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom", "budesonide-nasal-p"],
+      "condition": "glaucoma",
+      "concern": "Glaucoma or family history of glaucoma (nasal spray)",
+      "consequence": "Glucocorticoids may raise intraocular pressure.",
+      "action": "Prescription nasal spray SmPC: monitor closely. Pharmacy nasal spray SmPC: see a doctor before use if glaucoma or cataract has ever been diagnosed.",
+      "sourceWording": "should therefore be closely monitored",
+      "src": [
+        { "s": "emc-445", "q": "Glucocorticoids may increase intraocular pressure. Patients with glaucoma or a family history of glaucoma should therefore be closely monitored while taking this drug." },
+        { "s": "emc-10205", "q": "They have ever been diagnosed with glaucoma or cataracts." }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom", "budesonide-nasal-p"],
+      "condition": "diabetes",
+      "concern": "Diabetes (nasal spray)",
+      "consequence": "Glucocorticoids may raise blood glucose.",
+      "action": "Take into account when prescribing (pharmacy nasal spray SmPC: see a doctor before use).",
+      "sourceWording": "This must be taken into account when prescribing to diabetic patients",
+      "src": [
+        { "s": "emc-445", "q": "Glucocorticoids may increase blood glucose levels. This must be taken into account when prescribing to diabetic patients." },
+        { "s": "emc-10205", "q": "They have an eye infection or diabetes." }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:age:lt18-pharmacy-nasal",
+      "kind": "age",
+      "level": "avoid",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-p"],
+      "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years - pharmacy hay-fever nasal spray",
+      "consequence": "The pharmacy nasal spray is licensed for adults only.",
+      "action": "Should not be used under 18. (The prescription nasal spray SmPC licenses rhinitis treatment from 6 years.)",
+      "sourceWording": "should not be used in children and adolescents under 18 years of age",
+      "src": [
+        { "s": "emc-10205", "q": "This spray should not be used in children and adolescents under 18 years of age." },
+        { "s": "emc-445", "q": "Adults, adolescents and children from 6 years of age:" }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-neb", "budesonide-nasal-p"],
+      "hepatic": ["any"],
+      "concern": "Hepatic impairment",
+      "consequence": "Lower corticosteroid elimination and higher systemic exposure.",
+      "action": "Be aware of possible systemic side effects.",
+      "sourceWording": "Be aware of possible systemic sides effects",
+      "src": [
+        { "s": "emc-880", "q": "Reduced liver function affects the elimination of corticosteroids, causing lower elimination rate and higher systemic exposure. Be aware of possible systemic sides effects." },
+        { "s": "emc-10205", "q": "Reduced liver function affects the elimination of corticosteroids, causing lower elimination rate and higher systemic exposure." }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:hepatic:severe-nasal",
+      "kind": "hepatic",
+      "level": "info",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "hepatic": ["severe"],
+      "concern": "Severe hepatic impairment (prescription nasal spray)",
+      "consequence": "Higher systemic availability of swallowed budesonide; limited relevance for the nasal route.",
+      "action": "Consider possible systemic effects.",
+      "sourceWording": "Consideration of potential systemic effects may be needed",
+      "src": [
+        { "s": "emc-445", "q": "Consideration of potential systemic effects may be needed in severe impairment of hepatic function." },
+        { "s": "emc-445", "q": "this is of limited clinical relevance for budesonide nasal spray" }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "budesonide-nebuliser",
+      "concern": "Pregnancy",
+      "consequence": "No increased malformation risk seen with inhaled or intranasal budesonide; animal studies showed harm at high doses.",
+      "action": "Weigh benefit against risk; use the lowest effective dose. Keep asthma treated (BUMPS: continue inhaled corticosteroids in pregnancy).",
+      "sourceWording": "should be weighed against the risks to the foetus",
+      "src": [
+        { "s": "emc-880", "q": "the benefit of the administration of budesonide for the mother should be weighed against the risks to the foetus." },
+        { "s": "emc-445", "q": "the administration of budesonide during pregnancy requires that the benefits for the mother are weighed against the risks for the foetus" },
+        { "s": "bumps-corticosteroids-inhaled", "q": "Inhaled corticosteroids should be continued throughout pregnancy to ensure that breathing problems do not occur." }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:breastfeeding:nasal-chronic",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "concern": "Breastfeeding with long-term use (prescription nasal spray)",
+      "consequence": "Long-term maternal treatment has not been evaluated.",
+      "action": "Prescription nasal spray SmPC: breastfeeding possible for brief treatment; avoid during chronic treatment. Note: the pharmacy nasal spray SmPC and SPS say intranasal budesonide can be used in breastfeeding.",
+      "sourceWording": "breast-feeding should be avoided as a precautionary measure",
+      "src": [
+        { "s": "emc-445", "q": "In case of chronic treatment, breast-feeding should be avoided as a precautionary measure." },
+        { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "Rectal, inhaled or intranasal budesonide can be used during breastfeeding." }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:interaction:cyp3a4-inhibitors",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "budesonide-nebuliser",
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "CYP3A inhibitors (nasal spray SmPCs name clarithromycin; also azoles such as itraconazole and ketoconazole, HIV protease inhibitors, cobicistat)",
+      "consequence": "Raised budesonide levels and higher risk of systemic corticosteroid effects (Cushing's syndrome, adrenal suppression).",
+      "action": "Avoid unless the benefit outweighs the risk; if used, monitor for systemic steroid effects, keep doses as far apart as possible and consider a lower budesonide dose. Of limited importance for short (1-2 week) courses.",
+      "sourceWording": "the combination should be avoided unless the benefit outweighs this increased risk",
+      "src": [
+        { "s": "emc-880", "q": "Therefore, the combination should be avoided unless the benefit outweighs this increased risk, in which case patients should be monitored for systemic corticosteroid side effects." },
+        { "s": "emc-445", "q": "voriconazole, posaconazole, clarithromycin, telithromycin, nefazodone" },
+        { "s": "emc-445", "q": "Since there is no data to support a dosage recommendation, the combination should be avoided." },
+        { "s": "emc-10205", "q": "This is of limited clinical importance for short-term (1-2 weeks) treatment with itraconazole or ketoconazole or other potent CYP3A inhibitors" },
+        { "s": "emc-445", "q": "with risk of appearance of a Cushing's syndrome or even adrenal insufficiency" }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:interaction:corticosteroids",
+      "kind": "interaction",
+      "level": "info",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "other": "group:corticosteroid",
+      "concern": "Systemic corticosteroids given at the same time (prescription nasal spray)",
+      "consequence": "Higher risk of systemic effects, adrenal suppression and growth effects.",
+      "action": "Be aware of the added steroid load.",
+      "sourceWording": "is increased in case of concomitant administration of inhaled or systemic corticosteroid therapy",
+      "src": [{ "s": "emc-445", "q": "The risk of systemic effects, adrenal cortical slowing and impact on growth is increased in case of concomitant administration of inhaled or systemic corticosteroid therapy." }]
+    },
+    {
+      "id": "budesonide-nebuliser:interaction:inhaled-corticosteroids",
+      "kind": "interaction",
+      "level": "info",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "other": "group:inhaled-corticosteroid",
+      "concern": "Inhaled corticosteroids given at the same time (prescription nasal spray)",
+      "consequence": "Higher risk of systemic effects, adrenal suppression and growth effects.",
+      "action": "Be aware of the added steroid load.",
+      "sourceWording": "is increased in case of concomitant administration of inhaled or systemic corticosteroid therapy",
+      "src": [{ "s": "emc-445", "q": "The risk of systemic effects, adrenal cortical slowing and impact on growth is increased in case of concomitant administration of inhaled or systemic corticosteroid therapy." }]
+    },
+    {
+      "id": "budesonide-nebuliser:interaction:nsaids",
+      "kind": "interaction",
+      "level": "info",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "other": "group:nsaid",
+      "effect": "bleeding",
+      "concern": "NSAIDs (prescription nasal spray SmPC)",
+      "consequence": "Increased risk of ulceration and gastrointestinal bleeding.",
+      "action": "Combination to be taken into account.",
+      "sourceWording": "Combinations to be taken into account",
+      "src": [{ "s": "emc-445", "q": "+ Nonsteroidal anti-inflammatory drugs Increased risk of ulceration and gastrointestinal bleeding." }]
+    },
+    {
+      "id": "budesonide-nebuliser:interaction:fluoroquinolones",
+      "kind": "interaction",
+      "level": "info",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "other": "group:fluoroquinolone",
+      "concern": "Fluoroquinolones (prescription nasal spray SmPC)",
+      "consequence": "Possible increased risk of tendinopathy or (exceptionally) tendon rupture, especially with prolonged corticosteroid therapy.",
+      "action": "Combination to be taken into account.",
+      "sourceWording": "Combinations to be taken into account",
+      "src": [{ "s": "emc-445", "q": "+ Fluoroquinolones Possible increased risk of tendinopathy or even tendon rupture (exceptional), especially in patients receiving prolonged corticosteroid therapy." }]
+    },
+    {
+      "id": "budesonide-nebuliser:interaction:vka",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "other": "group:vitamin-k-antagonist",
+      "effect": "bleeding",
+      "concern": "Oral anticoagulants (vitamin K antagonists) (prescription nasal spray SmPC)",
+      "consequence": "Corticosteroids may change anticoagulant effect; bleeding risk at high doses or courses over 10 days. The SmPC wording refers to systemic and rectal glucocorticoids.",
+      "action": "If the combination is justified, reinforce monitoring (INR on day 8, then every 15 days during and after the corticosteroid).",
+      "sourceWording": "When combination is justified, reinforce monitoring",
+      "src": [
+        { "s": "emc-445", "q": "Glucocorticoids (systemic and rectal routes): possible impact of corticosteroid therapy on the metabolism of antivitamin K and coagulation factors." },
+        { "s": "emc-445", "q": "When combination is justified, reinforce monitoring: if necessary, with antivitamins K, biological control on the 8th day, then every 15 days during and after the end of corticosteroid therapy." }
+      ]
+    },
+    {
+      "id": "budesonide-nebuliser:interaction:enzyme-inducers",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "other": "group:cyp3a4-inducer",
+      "concern": "Enzyme inducers, including enzyme-inducing anticonvulsants (prescription nasal spray SmPC)",
+      "consequence": "Lower corticosteroid levels and effect.",
+      "action": "Clinical and biological monitoring; adjust the corticosteroid dose during and after the inducer.",
+      "sourceWording": "adjustment of corticosteroid dosage during and after inducer therapy",
+      "src": [{ "s": "emc-445", "q": "Clinical and biological monitoring; adjustment of corticosteroid dosage during and after inducer therapy." }]
+    },
+    {
+      "id": "budesonide-nebuliser:interaction:antacids",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "budesonide-nebuliser",
+      "formulations": ["budesonide-nasal-pom"],
+      "other": "group:antacid",
+      "effect": "reduced-absorption",
+      "concern": "Antacids and gastrointestinal adsorbents (prescription nasal spray SmPC)",
+      "consequence": "Decreased absorption of budesonide.",
+      "action": "Take antacids more than 2 hours apart from other medicines if possible.",
+      "sourceWording": "should be taken at a distance from any other medication (more than 2 hours, if possible)",
+      "src": [
+        { "s": "emc-445", "q": "+ Gastrointestinal topical agents, antacids and adsorbents Decreased absorption of budesonide." },
+        { "s": "emc-445", "q": "these topical agents or antacids should be taken at a distance from any other medication (more than 2 hours, if possible)" }
+      ]
+    }
+  ]
+}

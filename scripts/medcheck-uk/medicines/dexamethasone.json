@@ -1,0 +1,1096 @@
+{
+  "id": "dexamethasone",
+  "name": "Dexamethasone (oral)",
+  "ingredients": ["dexamethasone"],
+  "className": "Systemic corticosteroid (glucocorticoid)",
+  "groups": ["corticosteroid"],
+  "searchTerms": ["dexamethasone sodium phosphate", "dexamethasone syrup"],
+  "formulations": [
+    {
+      "id": "dexamethasone-sol-2mg5ml",
+      "label": "Oral solution / syrup 2 mg/5 mL",
+      "route": "oral",
+      "strengths": "2 mg/5 mL",
+      "release": "n/a",
+      "src": [
+        { "s": "emc-11015", "q": "Each 5 ml of oral solution contains 2 mg of dexamethasone (as dexamethasone sodium phosphate)" },
+        { "s": "emc-1344", "q": "Dexamethasone 2mg/5ml (as dexamethasone sodium phosphate)" }
+      ],
+      "sourceIds": ["emc-11015", "emc-1344"]
+    },
+    {
+      "id": "dexamethasone-sol-0.5mg5ml",
+      "label": "Oral solution / syrup 0.5 mg/5 mL",
+      "route": "oral",
+      "strengths": "0.5 mg/5 mL (clinic product)",
+      "release": "n/a",
+      "note": "No UK SmPC for a 0.5 mg/5 mL oral solution was found (emc and MHRA Products list 2 mg/5 mL, 10 mg/5 mL and 20 mg/5 mL solutions). This entry uses the UK 2 mg/5 mL oral solution SmPCs. Doses below are in mg. The mL volumes in the UK SmPCs do not apply to this strength: 2 mg is 5 mL of the UK solution but 20 mL of the 0.5 mg/5 mL syrup (four times the volume). Excipient warnings of the UK solutions (sorbitol, maltitol, propylene glycol, benzoic acid) may not apply to this syrup.",
+      "src": [
+        { "s": "emc-11015", "q": "Each 5 ml of oral solution contains 2 mg of dexamethasone (as dexamethasone sodium phosphate)" }
+      ],
+      "sourceIds": ["emc-11015", "emc-1344"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Inflammatory and autoimmune disease (rheumatic and collagen disease, severe allergy including asthma and anaphylaxis), adrenocortical insufficiency, cerebral oedema (not from head injury), lymphocytic leukaemia, anti-emetic with chemotherapy, palliative care; Cushing's suppression tests (one UK SmPC); COVID-19 needing oxygen (adults and adolescents 12 years and over, at least 40 kg).",
+          "src": [
+            { "s": "emc-11015", "q": "Dexamethasone Oral Solution is used for the treatment of various inflammatory and autoimmune diseases" },
+            { "s": "emc-11015", "q": "adjunct in the control of cerebral oedema (not in those cases where the oedema is caused by head injury)" },
+            { "s": "emc-11015", "q": "Dexamethasone is indicated in the treatment of coronavirus disease 2019 (COVID-19) in adult and adolescent patients (aged 12 years and older with body weight at least 40 kg) who require supplemental oxygen therapy." }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the UK 2 mg/5 mL oral solution SmPCs or SPS pages accessed."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults: usual dose 0.5-10 mg daily (another UK SmPC: initial 0.5-9 mg daily, higher in severe disease). Use the lowest effective dose; preferably in the morning. Chronic dosing should preferably not exceed 1.5 mg daily.",
+          "tag": "General",
+          "src": [
+            { "s": "emc-11015", "q": "The usual dose in adults is 0.5-10 mg per day." },
+            { "s": "emc-1344", "q": "The initial dosage varies from 0.5 - 9mg a day depending on the disease being treated." },
+            { "s": "emc-1344", "q": "Chronic dosage should preferably not exceed 1.5mg dexamethasone daily." }
+          ]
+        },
+        {
+          "t": "Acute self-limiting allergic disorders (one UK SmPC): after an injection on day 1, 1 mg twice daily on days 2-3, 500 micrograms twice daily on days 4-5, 500 micrograms daily on days 6-7, reassess on day 8.",
+          "tag": "Acute allergy",
+          "detail": true,
+          "src": [
+            { "s": "emc-1344", "q": "Second day: 1mg (2.5ml) Dexamethasone Oral Solution twice a day." },
+            { "s": "emc-1344", "q": "Eighth day: Re-assessment." }
+          ]
+        },
+        {
+          "t": "Recurrent or inoperable brain tumour (palliative, maintenance): 2 mg two or three times a day may be effective; use the smallest dose that controls symptoms.",
+          "tag": "Raised intracranial pressure",
+          "detail": true,
+          "src": [
+            { "s": "emc-1344", "q": "A dosage of 2mg two or three times a day may be effective." }
+          ]
+        },
+        {
+          "t": "COVID-19 needing oxygen: 6 mg once daily for up to 10 days (adults; adolescents 12 years and over).",
+          "tag": "COVID-19",
+          "src": [
+            { "s": "emc-11015", "q": "For the treatment of Covid-19 Adult patients 6 mg PO once a day for up to 10 days." }
+          ]
+        },
+        {
+          "t": "Withdrawal: after more than 3 weeks, do not stop abruptly; slow the taper once about 1 mg daily is reached. Up to about 6 mg daily for 3 weeks is unlikely to cause relevant HPA suppression, except in at-risk groups.",
+          "tag": "Stopping",
+          "src": [
+            { "s": "emc-11015", "q": "In patients who have received dexamethasone for more than 3 weeks, withdrawal should not be abrupt." },
+            { "s": "emc-11015", "q": "Once a daily dose of approx. 1 mg dexamethasone is reached, dose reduction should be slower to allow the HPA-axis to recover." },
+            { "s": "emc-11015", "q": "Abrupt withdrawal of doses up to approx. 6 mg dexamethasone for 3 weeks is unlikely to lead to clinically relevant HPA-axis suppression, in the majority of patients." }
+          ]
+        },
+        {
+          "t": "Elderly, renal or hepatic impairment: no dose adjustment needed.",
+          "tag": "Special populations",
+          "detail": true,
+          "src": [
+            { "s": "emc-11015", "q": "Elderly, renal impairment, hepatic impairment No dose adjustment is needed." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Use in children only with caution (growth retardation); dose set individually by the physician. One UK SmPC: limit to a single dose on alternate days to lessen growth retardation and adrenal suppression.",
+          "src": [
+            { "s": "emc-11015", "q": "Dexamethasone should only be administered to children with caution, since glucocorticoids can induce growth retardation. The daily dose should be determined by the physician for each child individually." },
+            { "s": "emc-1344", "q": "Dosage should be limited to a single dose on alternate days to lessen retardation of growth and minimize suppression of hypothalamo-pituitary-adrenal axis." }
+          ]
+        },
+        {
+          "t": "Childhood croup (one UK SmPC): single dose 0.15 mg/kg; a second dose may be given after 12 hours if needed; maximum 10 mg.",
+          "tag": "Croup",
+          "calc": { "mgPerKg": 0.15, "per": "dose", "maxMg": 10, "maxPer": "dose", "of": "dexamethasone" },
+          "src": [
+            { "s": "emc-1344", "q": "Childhood Croup: A single dose of 0.15mg/kg Dexamethasone Oral Solution is recommended. A second dose may be administered after 12 hours, if considered necessary by the treating physician." },
+            { "s": "emc-1344", "q": "However, a maximum dose of 10mg (25ml Dexsol Oral Solution) is recommended." }
+          ]
+        },
+        {
+          "t": "COVID-19, adolescents 12 years and over (at least 40 kg): 6 mg once daily for up to 10 days.",
+          "tag": "COVID-19",
+          "detail": true,
+          "src": [
+            { "s": "emc-1344", "q": "Paediatric patients (adolescents aged 12 years and older with body weight at least 40kg) are recommended to take 6mg orally, once a day for up to 10 days." }
+          ]
+        },
+        {
+          "t": "Excipients (both UK solutions): propylene glycol (serious effects possible under 5 years with alcohol dehydrogenase substrates such as ethanol) and benzoic acid (may increase jaundice in newborns).",
+          "detail": true,
+          "src": [
+            { "s": "emc-11015", "q": "Co-administration with any substrate of alcohol dehydrogenase such as ethanol may induce serious adverse effects in children less than 5 years old." },
+            { "s": "emc-11015", "q": "Benzoic acid may increase jaundice (yellowing of the skin and eyes) in newborn babies (up to 4 weeks old)." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Both UK SmPCs: hypersensitivity; gastric or duodenal ulcer; systemic fungal infection; parasitic/tropical worm infection.",
+          "src": [
+            { "s": "emc-1344", "q": "Systemic fungal infections. - Stomach ulcer or duodenal ulcer - Infection with tropical worms - Parasitic infection" },
+            { "s": "emc-11015", "q": "gastric and duodenal ulcer; acute infections: viral infections and systemic fungal infections" }
+          ]
+        },
+        {
+          "t": "One UK SmPC: acute viral infections; vaccination with live vaccines. Another UK SmPC: systemic infection unless specific anti-infective therapy is given; avoid live vaccines at immunosuppressive doses; contraindications generally do not apply when glucocorticoids may be life-saving.",
+          "src": [
+            { "s": "emc-11015", "q": "vaccination with live vaccines (see section 4.4. Special warnings and precautions for use)" },
+            { "s": "emc-1344", "q": "Systemic infection unless specific anti-infective therapy is employed." },
+            { "s": "emc-1344", "q": "In general no contraindications apply in conditions where the use of glucocorticoids may be life saving." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Particular care and frequent monitoring in: osteoporosis, hypertension or heart failure, diabetes (or family history), tuberculosis history, glaucoma (or family history), previous steroid myopathy, liver failure, renal insufficiency, epilepsy, peptic ulceration; one UK SmPC adds myasthenia gravis, hypothyroidism, migraine, herpes simplex, ulcerative colitis/diverticulitis/fresh anastomosis. Great caution after recent myocardial infarction.",
+          "src": [
+            { "s": "emc-11015", "q": "Particular care is required when considering the use of systemic glucocorticoids in patients with the following conditions and frequent patient monitoring is necessary" },
+            { "s": "emc-1344", "q": "myasthenia gravis - non-specific ulcerative colitis, diverticulitis or fresh intestinal anastomosis - peptic ulceration - liver failure - renal insufficiency - hypothyroidism - epilepsy - migraine" },
+            { "s": "emc-1344", "q": "corticosteroids should be used with great caution in these patients" }
+          ]
+        },
+        {
+          "t": "Severe psychiatric reactions may occur, usually within days or weeks; particular care with personal or first-degree family history of severe affective disorder or steroid psychosis.",
+          "src": [
+            { "s": "emc-11015", "q": "Patient/carers should be encouraged to seek medical advice if worrying psychological symptoms develop, especially if depressed mood or suicidal ideation is suspected." },
+            { "s": "emc-11015", "q": "These would include depressive or manic-depressive illness and previous steroid psychosis." }
+          ]
+        },
+        {
+          "t": "Infections may be masked; chickenpox and measles can be fatal in immunosuppressed patients (non-immune exposed patients need VZIG within 10 days). Rule out latent amoebiasis or strongyloidiasis in people from the tropics or with unexplained diarrhoea.",
+          "src": [
+            { "s": "emc-11015", "q": "Chickenpox is a normally minor illness but may be fatal in immunosuppressed patients" },
+            { "s": "emc-1344", "q": "It is recommended that these are ruled out before initiating corticosteroid therapy particularly in those patients who have spent time in the tropics or those with unexplained diarrhoea." }
+          ]
+        },
+        {
+          "t": "Phaeochromocytoma: crisis can be fatal; use only after risk/benefit evaluation. Tumour lysis syndrome in haematological malignancy: monitor high-risk patients.",
+          "detail": true,
+          "src": [
+            { "s": "emc-11015", "q": "Corticosteroids should only be administered to patients with suspected or identified pheochromocytoma after an appropriate risk/benefit evaluation" },
+            { "s": "emc-11015", "q": "Patients at high risk of TLS such as patients with high proliferative rate, high tumour burden, and high sensitivity to cytotoxic agents, should be monitored closely" }
+          ]
+        },
+        {
+          "t": "Blurred vision: consider ophthalmology referral. Hypokalaemia should be corrected before starting (one UK SmPC).",
+          "detail": true,
+          "src": [
+            { "s": "emc-11015", "q": "the patient should be considered for referral to an ophthalmologist for evaluation of possible causes" },
+            { "s": "emc-1344", "q": "Hypokalemia should be corrected before corticosteroid treatment initiation." }
+          ]
+        },
+        {
+          "t": "Excipients: both UK oral solutions contain sorbitol and maltitol; people with hereditary fructose intolerance should not take them.",
+          "src": [
+            { "s": "emc-11015", "q": "Patients with hereditary fructose intolerance (HFI) should not be given this medicinal product." },
+            { "s": "emc-1344", "q": "Patients with hereditary fructose intolerance (HFI) should not take/be given this medicinal product." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "CYP3A inhibitors (including cobicistat; e.g. ketoconazole, ritonavir, erythromycin, macrolides): raise dexamethasone levels; avoid unless benefit outweighs risk, and monitor.",
+          "src": [
+            { "s": "emc-11015", "q": "The combination should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid side-effects, in which case patients should be monitored for systemic corticosteroid side-effects." },
+            { "s": "emc-1344", "q": "Macrolide antibiotics have been reported to cause a significant decrease in corticosteroid clearance" }
+          ]
+        },
+        {
+          "t": "CYP3A4 inducers (carbamazepine, phenytoin, barbiturates, rifampicin, rifabutin, ephedrine): lower dexamethasone levels; dose may need increasing. Dexamethasone itself is a moderate CYP3A4 inducer and may lower levels of CYP3A4 substrates.",
+          "src": [
+            { "s": "emc-1344", "q": "may lead to decreased plasma concentrations of dexamethasone and the dose may need to be increased" },
+            { "s": "emc-11015", "q": "Dexamethasone is a moderate inducer of CYP 3A4." }
+          ]
+        },
+        {
+          "t": "NSAIDs: more peptic ulceration; monitor. Salicylates: steroids increase salicylate clearance; reduce salicylate dose as the steroid is withdrawn; caution with aspirin in hypoprothrombinaemia.",
+          "src": [
+            { "s": "emc-1344", "q": "Patients taking NSAID's should be monitored since the incidence and/or severity of gastro-ulceration may increase." },
+            { "s": "emc-1344", "q": "The renal clearance of salicylates is increased by corticosteroids and therefore, salicylate dosage should be reduced along with steroidal withdrawal." }
+          ]
+        },
+        {
+          "t": "Oral anticoagulants (coumarins): effect may change; bleeding risk at high doses or over 10 days; monitor INR closely (one UK SmPC: check on day 8 then every 2 weeks during and after treatment).",
+          "src": [
+            { "s": "emc-11015", "q": "The efficacy of coumarin anticoagulants may be altered by concurrent glucocorticoid therapy and close monitoring of the International Normalised Ratio or prothrombin time is required." },
+            { "s": "emc-1344", "q": "biological investigations on 8th day, then every 2 weeks during treatment and after treatment discontinuation" }
+          ]
+        },
+        {
+          "t": "Insulin, sulfonylureas, metformin: blood glucose rises (sometimes ketosis); reinforce glucose self-monitoring, especially at the start.",
+          "src": [
+            { "s": "emc-1344", "q": "Insulin, sulfonylureas, metformin: Increase in blood glucose, with sometimes diabetic ketosis, since corticosteroids impair carbohydrate tolerance." },
+            { "s": "emc-1344", "q": "blood and urine self-monitoring should be reinforced by the patient, in particular at the start of treatment" }
+          ]
+        },
+        {
+          "t": "Potassium-depleting diuretics (loop, thiazide): severe hypokalaemia possible; correct hypokalaemia before starting. Antacids: take at least 2 hours apart. Methotrexate: more haematological toxicity. Antihypertensive and diuretic effects antagonised.",
+          "src": [
+            { "s": "emc-11015", "q": "Concurrent use of potassium-depleting diuretics (e.g. acetazolamide, loop diuretics, thiazide diuretics or carbenoxolone) and glucocorticoids may result in severe hypokalaemia." },
+            { "s": "emc-1344", "q": "glucocorticoids should be taken separately from gastrointestinal topicals, antacids or charcoal, with an interval between treatment of at least two hours" },
+            { "s": "emc-1344", "q": "Patients taking methotrexate and dexamethasone have an increased risk of haematological toxicity." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No dose adjustment needed. Renal insufficiency: particular care and frequent monitoring (fluid retention).",
+          "src": [
+            { "s": "emc-11015", "q": "Elderly, renal impairment, hepatic impairment No dose adjustment is needed." },
+            { "s": "emc-1344", "q": "Particular care is needed when treating patients with renal impairment, hypertention and congestive heart failure." }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No dose adjustment stated for hepatic impairment. Liver failure: particular care and frequent monitoring. Cirrhosis: enhanced steroid effect.",
+          "src": [
+            { "s": "emc-11015", "q": "Elderly, renal impairment, hepatic impairment No dose adjustment is needed." },
+            { "s": "emc-1344", "q": "There is an enhanced effect of corticosteroids in patients with hypothyroidism and in those with cirrhosis." }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "UK SmPCs: dexamethasone crosses the placenta; for maternal indications it should not be used in pregnancy unless clearly necessary. Prolonged or repeated use increases intra-uterine growth restriction risk; neonatal adrenal suppression is expected. Monitor pre-eclampsia or fluid retention closely.",
+          "src": [
+            { "s": "emc-11015", "q": "Dexamethasone should, for maternal indications, not be used during pregnancy unless clearly necessary." },
+            { "s": "emc-11015", "q": "Adrenal suppression in the neonate following prenatal glucocorticoid exposure is to be expected." },
+            { "s": "emc-11015", "q": "Patients with pre-eclampsia or fluid retention require close monitoring." }
+          ]
+        },
+        {
+          "t": "BUMPS: systemic corticosteroids can be used in pregnancy if recommended by a doctor.",
+          "src": [
+            { "s": "bumps-dexamethasone", "q": "Systemic corticosteroids can be used in pregnancy if recommended by a doctor." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "One UK SmPC: no data; breastfeeding is discouraged during treatment. Another UK SmPC: decide whether to stop breastfeeding or therapy, weighing benefits.",
+          "src": [
+            { "s": "emc-11015", "q": "Because corticosteroids are in general excreted into breast milk, and given the lack of experience, breast feeding is discouraged during Dexamethasone therapy." },
+            { "s": "emc-1344", "q": "A decision on whether to continue/discontinue breast feeding or to continue/discontinue therapy with dexamethasone should be made" }
+          ]
+        },
+        {
+          "t": "SPS: can be used with caution; alternatives (e.g. prednisolone) preferred. Oral doses up to 8 mg daily unlikely to affect the infant; may reduce milk production.",
+          "src": [
+            { "s": "sps-oral-corticosteroids-breastfeeding", "q": "Dexamethasone (including local injection) can be used with caution, although there is no published evidence for use in breastfeeding. Alternatives are preferred." },
+            { "s": "sps-oral-corticosteroids-breastfeeding", "q": "Oral doses up to 8mg daily are unlikely to cause adverse effects in the infant. There have been reports of a possible decrease in prolactin release after administration which may reduce milk production." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "May cause menstrual irregularity or amenorrhoea; changes in sperm motility and number reported.",
+          "src": [
+            { "s": "emc-1344", "q": "Menstrual irregularities and amenorrhoea" },
+            { "s": "emc-1344", "q": "Increased or decreased motility and number of spermatozoa" }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Psychiatric reactions are common (mood change, depression, suicidal thoughts, psychosis, insomnia). Other effects (frequency not known): infections, raised glucose, fluid retention, hypokalaemia, dyspepsia, Cushingoid features, osteoporosis, myopathy, skin thinning, weight gain.",
+          "src": [
+            { "s": "emc-11015", "q": "Reactions are common and may occur in both adults and children." },
+            { "s": "emc-11015", "q": "Sodium retention, Fluid retention, Hypokalaemia, Alkalosis hypokalaemic" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Too rapid dose reduction after prolonged use can cause acute adrenal insufficiency, hypotension and death.",
+          "src": [
+            { "s": "emc-11015", "q": "Too rapid a reduction of dexamethasone dosage following prolonged treatment can lead to acute adrenal insufficiency, hypotension and death." }
+          ]
+        },
+        {
+          "t": "Peptic ulcer with haemorrhage or perforation; anaphylaxis/angioedema; severe infection; severe psychiatric reactions (estimated 5-6% in adults); tumour lysis syndrome (very rare).",
+          "src": [
+            { "s": "emc-11015", "q": "Gastric ulcer (haemorrhage), Duodenal ulcer (haemorrhage), dyspepsia, peptic ulcer perforation" },
+            { "s": "emc-11015", "q": "In adults, the frequency of severe reactions has been estimated to be 5-6%." }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS (corticosteroids): baseline blood pressure, weight, BMI, HbA1c, potassium, triglycerides, eye examination and risk factor assessment; height in children.",
+          "tag": "baseline",
+          "src": [
+            { "s": "sps-corticosteroids-monitoring", "q": "Before starting Required Baseline Blood pressure Weight Body mass index Bone mineral density" },
+            { "s": "sps-corticosteroids-monitoring", "q": "Serum potassium Triglycerides Risk factor assessment" }
+          ]
+        },
+        {
+          "t": "SPS ongoing (long-term): HbA1c every 3 months; eye examination, potassium and triglycerides every 6-12 months; blood pressure, weight and signs of adrenal suppression periodically; children's height every 6 months.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "sps-corticosteroids-monitoring", "q": "Every 3 months HbA1c" },
+            { "s": "sps-corticosteroids-monitoring", "q": "Children and adolescents Every 6 months Height" }
+          ]
+        },
+        {
+          "t": "Frequent review to titrate the dose; if no favourable response within a couple of days, continuing is undesirable (one UK SmPC).",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-11015", "q": "If no favourable response is noted within a couple of days, continuation of glucocorticoid therapy is undesirable." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral; preferably in the morning (evening doses cause more adrenal suppression). Use an oral syringe for small doses. One UK SmPC: may be given via NG or PEG tube.",
+          "src": [
+            { "s": "emc-11015", "q": "Systemic dexamethasone administered in the evening is more likely to cause clinically significant HPA suppression." },
+            { "s": "emc-1344", "q": "Alternatively, this product is suitable for administration via nasogastric (NG) or percutaneous endoscopic gastrostomy (PEG) tubes." }
+          ]
+        },
+        {
+          "t": "Separate from antacids by at least 2 hours.",
+          "src": [
+            { "s": "emc-1344", "q": "glucocorticoids should be taken separately from gastrointestinal topicals, antacids or charcoal, with an interval between treatment of at least two hours" }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Carry a steroid treatment card; do not stop suddenly after longer courses.",
+          "src": [
+            { "s": "emc-1344", "q": "Patients should carry 'steroid treatment' cards" }
+          ]
+        },
+        {
+          "t": "Avoid contact with chickenpox, shingles or measles if not immune; seek urgent advice if exposed. Report worrying mood changes.",
+          "src": [
+            { "s": "emc-11015", "q": "Patients (or parents of children) without a definite history of chickenpox should be advised to avoid close personal contact with chickenpox or herpes zoster, and if exposed they should seek urgent medical attention." }
+          ]
+        },
+        {
+          "t": "Mood changes or visual disturbance may affect driving.",
+          "detail": true,
+          "src": [
+            { "s": "emc-11015", "q": "If affected, caution should be exercised in driving and operating machinery." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "dexamethasone:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "dexamethasone",
+      "allergen": ["dexamethasone"],
+      "concern": "Dexamethasone hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity",
+      "src": [
+        { "s": "emc-1344", "q": "Hypersensitivity to dexamethasone or any of the excipients listed in section 6.1." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:peptic-ulcer",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "dexamethasone",
+      "condition": "peptic-ulcer-gi-bleeding",
+      "concern": "Gastric or duodenal ulcer",
+      "consequence": "Listed contraindication in both UK SmPCs (one SmPC: contraindications generally do not apply when life-saving).",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        { "s": "emc-11015", "q": "gastric and duodenal ulcer" },
+        { "s": "emc-1344", "q": "Stomach ulcer or duodenal ulcer" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:systemic-fungal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "dexamethasone",
+      "condition": "systemic-fungal-infection",
+      "concern": "Systemic fungal infection",
+      "consequence": "Steroids may exacerbate systemic fungal infection.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        { "s": "emc-11015", "q": "acute infections: viral infections and systemic fungal infections" },
+        { "s": "emc-1344", "q": "Systemic fungal infections." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:viral-infection",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "dexamethasone",
+      "condition": "acute-viral-infection",
+      "concern": "Acute viral infection",
+      "consequence": "Listed contraindication (one UK SmPC).",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        { "s": "emc-11015", "q": "acute infections: viral infections and systemic fungal infections" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:systemic-infection",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "dexamethasone",
+      "condition": "systemic-infection-untreated",
+      "concern": "Systemic infection without specific anti-infective treatment",
+      "consequence": "Listed contraindication (one UK SmPC).",
+      "action": "Do not use unless specific anti-infective therapy is given.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        { "s": "emc-1344", "q": "Systemic infection unless specific anti-infective therapy is employed." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:parasitic",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "dexamethasone",
+      "condition": "parasitic-infection",
+      "concern": "Parasitic infection, including tropical worms",
+      "consequence": "Listed contraindication.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        { "s": "emc-11015", "q": "parasitic infections" },
+        { "s": "emc-1344", "q": "Infection with tropical worms - Parasitic infection" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:live-vaccine",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "dexamethasone",
+      "condition": "live-vaccine",
+      "concern": "Vaccination with live vaccines",
+      "consequence": "Risk of fatal systemic disease from attenuated live vaccine; reduced antibody response.",
+      "action": "Do not give live vaccines (one UK SmPC lists it in 4.3; another says avoid at immunosuppressive doses).",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        { "s": "emc-11015", "q": "vaccination with live vaccines (see section 4.4. Special warnings and precautions for use)" },
+        { "s": "emc-1344", "q": "Avoid live vaccines in patients receiving immuno suppressive doses" },
+        { "s": "emc-1344", "q": "Vaccines attenuated live Risk of fatal systemic disease" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:hfi",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "dexamethasone",
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance",
+      "consequence": "Both UK oral solutions contain sorbitol and maltitol.",
+      "action": "Should not be given; check the excipients of the product supplied.",
+      "sourceWording": "should not be given this medicinal product",
+      "src": [
+        { "s": "emc-11015", "q": "Patients with hereditary fructose intolerance (HFI) should not be given this medicinal product." },
+        { "s": "emc-1344", "q": "Patients with hereditary fructose intolerance (HFI) should not take/be given this medicinal product." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus (or family history)",
+      "consequence": "Steroids raise blood glucose.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required ... and frequent patient monitoring is necessary",
+      "src": [
+        { "s": "emc-11015", "q": "Particular care is required when considering the use of systemic glucocorticoids in patients with the following conditions and frequent patient monitoring is necessary" },
+        { "s": "emc-11015", "q": "Diabetes mellitus (or a family history of diabetes)" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:osteoporosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "osteoporosis-risk",
+      "concern": "Osteoporosis (post-menopausal women at particular risk)",
+      "consequence": "Steroids cause bone loss and fractures.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "Osteoporosis (post-menopausal women are particularly at risk)" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:hypertension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "hypertension",
+      "concern": "Hypertension",
+      "consequence": "Fluid and salt retention.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "Hypertension or congestive heart failure" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "heart-failure",
+      "concern": "Congestive heart failure",
+      "consequence": "Fluid and salt retention.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "Hypertension or congestive heart failure" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:tuberculosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "pulmonary-tuberculosis",
+      "concern": "History of tuberculosis",
+      "consequence": "Reactivation of tuberculosis.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "History of tuberculosis" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:glaucoma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "glaucoma",
+      "concern": "Glaucoma (or family history)",
+      "consequence": "Raised intra-ocular pressure and optic nerve damage possible.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "Glaucoma (or a family history of glaucoma)" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:myopathy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "myopathy",
+      "concern": "Previous glucocorticoid-induced myopathy",
+      "consequence": "Myopathy may recur.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "Previous glucocorticoid-induced myopathy" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:renal",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "renal-impairment",
+      "concern": "Renal insufficiency",
+      "consequence": "Fluid retention; no dose adjustment needed.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "Renal insufficiency" },
+        { "s": "emc-11015", "q": "Elderly, renal impairment, hepatic impairment No dose adjustment is needed." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:epilepsy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "epilepsy",
+      "concern": "Epilepsy",
+      "consequence": "Epilepsy may be aggravated.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "Renal insufficiency; - Epilepsy; - Peptic ulceration." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:depression",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "depression-suicidality",
+      "concern": "Severe depressive illness or previous steroid psychosis (self or first-degree relative)",
+      "consequence": "Risk of severe psychiatric reactions.",
+      "action": "Particular care.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "Particular care is required when considering the use of systemic corticosteroids in patients with existing or previous history of severe affective disorders in themselves or in their first degree relatives." },
+        { "s": "emc-11015", "q": "These would include depressive or manic-depressive illness and previous steroid psychosis." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:bipolar",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "bipolar-mania",
+      "concern": "Manic-depressive illness (self or first-degree relative)",
+      "consequence": "Risk of severe psychiatric reactions.",
+      "action": "Particular care.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "These would include depressive or manic-depressive illness and previous steroid psychosis." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:myasthenia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "With anticholinesterases, severe weakness may occur.",
+      "action": "Particular care and frequent monitoring; if possible withdraw anticholinesterases at least 24 hours before starting (one UK SmPC).",
+      "sourceWording": "particular care is required",
+      "src": [
+        { "s": "emc-1344", "q": "previous corticosteroid-induced myopathy - myasthenia gravis" },
+        { "s": "emc-1344", "q": "Concomitant use of anticholinesterase agents and corticosteroids may produce severe weakness in patients with myasthenia gravis." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "hypothyroidism",
+      "concern": "Hypothyroidism",
+      "consequence": "Enhanced corticosteroid effect.",
+      "action": "Particular care; frequent monitoring (one UK SmPC).",
+      "sourceWording": "particular care is required",
+      "src": [
+        { "s": "emc-1344", "q": "There is an enhanced effect of corticosteroids in patients with hypothyroidism and in those with cirrhosis." },
+        { "s": "emc-1344", "q": "renal insufficiency - hypothyroidism - epilepsy - migraine" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:recent-mi",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "recent-myocardial-infarction",
+      "concern": "Recent myocardial infarction",
+      "consequence": "Possible association with left-ventricular free-wall rupture.",
+      "action": "Use with great caution (one UK SmPC).",
+      "sourceWording": "should be used with great caution",
+      "src": [
+        { "s": "emc-1344", "q": "Reports in the literature suggest an apparent association between use of corticosteroids and left-ventricular free-wall rupture after a recent myocardial infarction" },
+        { "s": "emc-1344", "q": "corticosteroids should be used with great caution in these patients" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:ocular-herpes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "ocular-herpes-simplex",
+      "concern": "Ocular herpes simplex",
+      "consequence": "Possible corneal perforation.",
+      "action": "Particular care (one UK SmPC).",
+      "sourceWording": "Particular care is needed",
+      "src": [
+        { "s": "emc-1344", "q": "Particular care is needed when treating patients with glaucoma (or family history of glaucoma) as well as when treating patients with ocular herpes simplex, because of possible corneal perforation." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:phaeochromocytoma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "phaeochromocytoma",
+      "concern": "Suspected or known phaeochromocytoma",
+      "consequence": "Phaeochromocytoma crisis, which can be fatal.",
+      "action": "Use only after risk/benefit evaluation.",
+      "sourceWording": "should only be administered ... after an appropriate risk/benefit evaluation",
+      "src": [
+        { "s": "emc-11015", "q": "Corticosteroids should only be administered to patients with suspected or identified pheochromocytoma after an appropriate risk/benefit evaluation" }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:varicella",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "varicella",
+      "concern": "Chickenpox exposure or infection (non-immune patient)",
+      "consequence": "Chickenpox may be fatal in immunosuppressed patients.",
+      "action": "Exposed non-immune patients need VZIG within 10 days; if chickenpox develops, specialist urgent care and do not stop the steroid.",
+      "sourceWording": "Chickenpox is of particular concern",
+      "src": [
+        { "s": "emc-11015", "q": "this should be given within 10 days of exposure to chickenpox" },
+        { "s": "emc-11015", "q": "Corticosteroids should not be stopped and even the dose may need to be increased." }
+      ]
+    },
+    {
+      "id": "dexamethasone:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "dexamethasone",
+      "condition": "hypokalaemia",
+      "concern": "Hypokalaemia",
+      "consequence": "Steroids increase potassium loss; hypokalaemia predisposes to arrhythmia (torsade de pointes).",
+      "action": "Correct hypokalaemia before starting (one UK SmPC).",
+      "sourceWording": "Hypokalemia should be corrected before corticosteroid treatment initiation",
+      "src": [
+        { "s": "emc-1344", "q": "Hypokalemia should be corrected before corticosteroid treatment initiation." },
+        { "s": "emc-1344", "q": "Hypokalaemia predisposes to cardiac arrhythmia especially \"torsade de pointes\" and increase the toxicity of cardiac glycosides." }
+      ]
+    },
+    {
+      "id": "dexamethasone:hepatic:severe",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "dexamethasone",
+      "hepatic": ["severe"],
+      "concern": "Liver failure",
+      "consequence": "Listed among conditions needing particular care; no dose adjustment stated.",
+      "action": "Particular care; frequent monitoring.",
+      "sourceWording": "Particular care is required",
+      "src": [
+        { "s": "emc-11015", "q": "Liver failure; - Renal insufficiency" }
+      ]
+    },
+    {
+      "id": "dexamethasone:hepatic:cirrhosis",
+      "kind": "hepatic",
+      "level": "info",
+      "med": "dexamethasone",
+      "hepatic": ["mild", "moderate"],
+      "concern": "Cirrhosis",
+      "consequence": "Enhanced corticosteroid effect.",
+      "action": "No dose adjustment needed (SmPC); be aware of enhanced effect.",
+      "sourceWording": "There is an enhanced effect",
+      "src": [
+        { "s": "emc-1344", "q": "There is an enhanced effect of corticosteroids in patients with hypothyroidism and in those with cirrhosis." }
+      ]
+    },
+    {
+      "id": "dexamethasone:pregnancy",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "dexamethasone",
+      "concern": "Pregnancy (maternal indications)",
+      "consequence": "Crosses the placenta; prolonged use increases risk of intra-uterine growth restriction; neonatal adrenal suppression expected.",
+      "action": "Should not be used for maternal indications unless clearly necessary (SmPCs). BUMPS: systemic corticosteroids can be used if recommended by a doctor.",
+      "sourceWording": "should, for maternal indications, not be used during pregnancy unless clearly necessary",
+      "src": [
+        { "s": "emc-11015", "q": "Dexamethasone should, for maternal indications, not be used during pregnancy unless clearly necessary." },
+        { "s": "emc-1344", "q": "dexamethasone should not be used during pregnancy for maternal indications, unless it is clearly necessary" },
+        { "s": "bumps-dexamethasone", "q": "Systemic corticosteroids can be used in pregnancy if recommended by a doctor." }
+      ]
+    },
+    {
+      "id": "dexamethasone:breastfeeding:smpc-discouraged",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "dexamethasone",
+      "concern": "Breastfeeding (one UK SmPC)",
+      "consequence": "No data on transfer into milk.",
+      "action": "Breastfeeding is discouraged during treatment (one UK SmPC).",
+      "sourceWording": "breast feeding is discouraged",
+      "src": [
+        { "s": "emc-11015", "q": "Because corticosteroids are in general excreted into breast milk, and given the lack of experience, breast feeding is discouraged during Dexamethasone therapy." }
+      ]
+    },
+    {
+      "id": "dexamethasone:breastfeeding:caution",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "dexamethasone",
+      "concern": "Breastfeeding (another UK SmPC and SPS)",
+      "consequence": "Small amounts in milk may suppress infant growth or adrenal function; may reduce milk production.",
+      "action": "Weigh benefit of breastfeeding against benefit of therapy (SmPC). SPS: use with caution, alternatives preferred; oral doses up to 8 mg daily unlikely to affect the infant; monitor infant feeding, growth and weight.",
+      "sourceWording": "can be used with caution",
+      "src": [
+        { "s": "emc-1344", "q": "A decision on whether to continue/discontinue breast feeding or to continue/discontinue therapy with dexamethasone should be made" },
+        { "s": "sps-oral-corticosteroids-breastfeeding", "q": "Dexamethasone (including local injection) can be used with caution, although there is no published evidence for use in breastfeeding. Alternatives are preferred." }
+      ]
+    },
+    {
+      "id": "dexamethasone:age:paediatric",
+      "kind": "age",
+      "level": "caution",
+      "med": "dexamethasone",
+      "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Children and adolescents",
+      "consequence": "Dose-related growth retardation, which may be irreversible.",
+      "action": "Use only with caution; minimum dose for the shortest period; monitor carefully on prolonged therapy.",
+      "sourceWording": "should only be used in children with caution",
+      "src": [
+        { "s": "emc-11015", "q": "Glucocorticoids can cause dose-related growth retardation in infancy, childhood and adolescence, which may be irreversible. Therefore, Dexamethasone should only be used in children with caution." }
+      ]
+    },
+    {
+      "id": "dexamethasone:age:neonate-benzoic-acid",
+      "kind": "age",
+      "level": "info",
+      "med": "dexamethasone",
+      "age": { "minYears": 0, "maxYears": 0.0767 },
+      "concern": "Newborns up to 4 weeks (benzoic acid excipient)",
+      "consequence": "Benzoic acid may increase neonatal jaundice.",
+      "action": "Be aware of the excipient.",
+      "sourceWording": "may increase jaundice",
+      "src": [
+        { "s": "emc-11015", "q": "Benzoic acid may increase jaundice (yellowing of the skin and eyes) in newborn babies (up to 4 weeks old)." }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "dexamethasone",
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "CYP3A inhibitors (e.g. clarithromycin)",
+      "consequence": "Increased dexamethasone levels and risk of systemic corticosteroid side-effects.",
+      "action": "Avoid unless benefit outweighs risk; if used, monitor for systemic steroid side-effects.",
+      "sourceWording": "The combination should be avoided unless the benefit outweighs the increased risk",
+      "src": [
+        { "s": "emc-11015", "q": "Co-treatment with CYP3A inhibitors, including cobicistat-containing products, is expected to increase the risk of systemic side-effects." },
+        { "s": "emc-11015", "q": "The combination should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid side-effects, in which case patients should be monitored for systemic corticosteroid side-effects." }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:macrolide",
+      "kind": "interaction",
+      "level": "info",
+      "med": "dexamethasone",
+      "other": "group:macrolide",
+      "concern": "Macrolide antibiotics",
+      "consequence": "Significant decrease in corticosteroid clearance reported.",
+      "action": "No specific action stated (see CYP3A inhibitor advice).",
+      "sourceWording": "have been reported to cause a significant decrease in corticosteroid clearance",
+      "src": [
+        { "s": "emc-1344", "q": "Macrolide antibiotics have been reported to cause a significant decrease in corticosteroid clearance" }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:cyp3a4-inducer",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "dexamethasone",
+      "other": "group:cyp3a4-inducer",
+      "concern": "CYP3A4 inducers (e.g. carbamazepine)",
+      "consequence": "Lower dexamethasone levels; reduced effect.",
+      "action": "Dexamethasone dose may need to be increased.",
+      "sourceWording": "the dose may need to be increased",
+      "src": [
+        { "s": "emc-1344", "q": "Concomitant administration of dexamethasone with inducers of CYP3A4, such as phenytoin, barbiturates (e.g. primidone and phenobarbital), ephedrine, rifabutin, carbamazepine and rifampicin may lead to decreased plasma concentrations of dexamethasone and the dose may need to be increased." }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "dexamethasone",
+      "other": "group:antidiabetic",
+      "concern": "Insulin, sulfonylureas, metformin and other antidiabetics",
+      "consequence": "Blood glucose rises, sometimes with ketosis; antidiabetic effect antagonised.",
+      "action": "Reinforce blood (and urine) glucose self-monitoring, especially at the start.",
+      "sourceWording": "blood and urine self-monitoring should be reinforced",
+      "src": [
+        { "s": "emc-1344", "q": "Insulin, sulfonylureas, metformin: Increase in blood glucose, with sometimes diabetic ketosis, since corticosteroids impair carbohydrate tolerance." },
+        { "s": "emc-1344", "q": "blood and urine self-monitoring should be reinforced by the patient, in particular at the start of treatment" }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:nsaid",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "dexamethasone",
+      "other": "group:nsaid",
+      "effect": "bleeding",
+      "concern": "NSAIDs",
+      "consequence": "Increased incidence and/or severity of peptic ulceration.",
+      "action": "Monitor the patient.",
+      "sourceWording": "should be monitored",
+      "src": [
+        { "s": "emc-1344", "q": "Patients taking NSAID's should be monitored since the incidence and/or severity of gastro-ulceration may increase." },
+        { "s": "emc-11015", "q": "Combination of corticosteroids with ulcer-inducing agents (e.g. NSAID's) enhances the risk of peptic ulceration." }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:salicylate",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "dexamethasone",
+      "other": "group:salicylate",
+      "effect": "bleeding",
+      "concern": "Aspirin / salicylates",
+      "consequence": "Steroids increase salicylate clearance; withdrawal may cause salicylate toxicity.",
+      "action": "Reduce salicylate dose as the steroid is withdrawn; use aspirin cautiously in hypoprothrombinaemia.",
+      "sourceWording": "salicylate dosage should be reduced along with steroidal withdrawal",
+      "src": [
+        { "s": "emc-1344", "q": "The renal clearance of salicylates is increased by corticosteroids and therefore, salicylate dosage should be reduced along with steroidal withdrawal." },
+        { "s": "emc-1344", "q": "Aspirin should also be used cautiously in conjunction with corticosteroids in hypoprothrombinaemia." }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:anticoagulant",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "dexamethasone",
+      "other": "group:anticoagulant",
+      "effect": "bleeding",
+      "concern": "Oral anticoagulants (e.g. warfarin)",
+      "consequence": "Anticoagulant effect may be altered; bleeding risk at high doses or over 10 days.",
+      "action": "Close INR monitoring (one UK SmPC: day 8, then every 2 weeks during and after treatment).",
+      "sourceWording": "close monitoring of the International Normalised Ratio or prothrombin time is required",
+      "src": [
+        { "s": "emc-11015", "q": "The efficacy of coumarin anticoagulants may be altered by concurrent glucocorticoid therapy and close monitoring of the International Normalised Ratio or prothrombin time is required." },
+        { "s": "emc-1344", "q": "At high doses or with treatment for more than 10 days, there is a risk of bleeding specific to corticosteroid therapy (gastrointestinal mucosa, vascular fragility)." }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:thiazide",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "dexamethasone",
+      "other": "group:thiazide",
+      "concern": "Thiazide diuretics",
+      "consequence": "Severe hypokalaemia possible; diuretic effect antagonised.",
+      "action": "Correct hypokalaemia before starting dexamethasone (one UK SmPC).",
+      "sourceWording": "may result in severe hypokalaemia",
+      "src": [
+        { "s": "emc-11015", "q": "Concurrent use of potassium-depleting diuretics (e.g. acetazolamide, loop diuretics, thiazide diuretics or carbenoxolone) and glucocorticoids may result in severe hypokalaemia." },
+        { "s": "emc-1344", "q": "Hypokalemia should be corrected before corticosteroid treatment initiation." }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:loop-diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "dexamethasone",
+      "other": "group:loop-diuretic",
+      "concern": "Loop diuretics (e.g. furosemide)",
+      "consequence": "Severe hypokalaemia possible; diuretic effect antagonised.",
+      "action": "Correct hypokalaemia before starting dexamethasone (one UK SmPC).",
+      "sourceWording": "may result in severe hypokalaemia",
+      "src": [
+        { "s": "emc-11015", "q": "Concurrent use of potassium-depleting diuretics (e.g. acetazolamide, loop diuretics, thiazide diuretics or carbenoxolone) and glucocorticoids may result in severe hypokalaemia." },
+        { "s": "emc-1344", "q": "Hypokalemia should be corrected before corticosteroid treatment initiation." }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "info",
+      "med": "dexamethasone",
+      "other": "methotrexate",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate",
+      "consequence": "Increased risk of haematological toxicity.",
+      "action": "No specific action stated.",
+      "sourceWording": "have an increased risk of haematological toxicity",
+      "src": [
+        { "s": "emc-1344", "q": "Patients taking methotrexate and dexamethasone have an increased risk of haematological toxicity." }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:antacid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "dexamethasone",
+      "other": "group:antacid",
+      "effect": "reduced-absorption",
+      "concern": "Antacids",
+      "consequence": "Reduced absorption of glucocorticoids.",
+      "action": "Take dexamethasone at least 2 hours apart from antacids.",
+      "sourceWording": "should be taken separately ... with an interval between treatment of at least two hours",
+      "src": [
+        { "s": "emc-1344", "q": "A decrease in digestive absorption of glucocorticoids have been reported with prednisolone and dexamethasone." },
+        { "s": "emc-1344", "q": "glucocorticoids should be taken separately from gastrointestinal topicals, antacids or charcoal, with an interval between treatment of at least two hours" }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "dexamethasone",
+      "other": "group:antihypertensive",
+      "concern": "Antihypertensives",
+      "consequence": "Antihypertensive effect antagonised by glucocorticoids.",
+      "action": "No specific action stated.",
+      "sourceWording": "are antagonised by glucocorticoids",
+      "src": [
+        { "s": "emc-11015", "q": "The desired effects of hypoglycaemic agents (including insulin), antihypertensives and diuretics are antagonised by glucocorticoids." }
+      ]
+    },
+    {
+      "id": "dexamethasone:interaction:diuretic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "dexamethasone",
+      "other": "group:diuretic",
+      "concern": "Diuretics",
+      "consequence": "Diuretic effect antagonised by glucocorticoids.",
+      "action": "No specific action stated.",
+      "sourceWording": "are antagonised by glucocorticoids",
+      "src": [
+        { "s": "emc-11015", "q": "The desired effects of hypoglycaemic agents (including insulin), antihypertensives and diuretics are antagonised by glucocorticoids." }
+      ]
+    }
+  ]
+}

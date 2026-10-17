@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { OctagonX, TriangleAlert, CircleCheck } from 'lucide-react'
 import { LevelBadge, sourceShort } from './common.jsx'
 
@@ -25,6 +26,18 @@ function ciText(c, medName) {
   return c.kind === 'pregnancy' ? s.replace('pregnancy, trimester', 'pregnancy (trimester').replace(/(\d)$/, '$1)') : s
 }
 
+// one line per medicine; long lists show the first items and a "+N more" button
+const SHOW = 6
+function CiLine({ m }) {
+  const [all, setAll] = useState(false)
+  const lines = all ? m.lines : m.lines.slice(0, SHOW)
+  return (
+    <span><b>{m.label}</b>: do not give in {lines.map((c, i) => <span key={c.scope}>{i ? ', ' : ''}{c.text}<Refs sources={c.sources.slice(0, 1)} /></span>)}
+      {m.lines.length > SHOW && <button type="button" onClick={() => setAll((x) => !x)} className="ml-1 text-xs font-semibold text-blue-700 hover:underline dark:text-blue-300">{all ? 'show less' : `+${m.lines.length - SHOW} more`}</button>}
+    </span>
+  )
+}
+
 export default function QuickPanel({ result, contra, nDistinct, nCovered, panelRef }) {
   const pairs = result.findings.filter((f) => f.kind === 'interaction' || f.kind === 'duplication')
   const serious = pairs.filter((f) => ['contraindicated', 'avoid'].includes(f.level))
@@ -50,12 +63,17 @@ export default function QuickPanel({ result, contra, nDistinct, nCovered, panelR
         ) : (
           <p className="flex items-center gap-2 text-[15px] font-bold"><CircleCheck className="h-4 w-4 text-emerald-600" aria-hidden="true" />No interaction found between these medicines</p>
         )}
+        {result.unchecked?.length > 0 && (
+          <p className="mt-2 rounded-md border border-dashed border-slate-400 px-2 py-1 text-[13px] font-semibold text-slate-700 dark:text-slate-300">
+            No UK product information for: {result.unchecked.join('; ')}
+          </p>
+        )}
         {ci.length > 0 && (
           <div className="mt-2 space-y-1">
             {ci.map((m) => (
               <p key={m.key} className="flex gap-2 text-[13px] leading-snug">
                 <OctagonX className="mt-0.5 h-4 w-4 shrink-0 text-red-600" aria-hidden="true" />
-                <span><b>{m.label}</b>: do not give in {m.lines.map((c, i) => <span key={c.scope}>{i ? ', ' : ''}{c.text}<Refs sources={c.sources.slice(0, 1)} /></span>)}</span>
+                <CiLine m={m} />
               </p>
             ))}
           </div>

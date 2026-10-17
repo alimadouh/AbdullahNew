@@ -1,10 +1,17 @@
 {
   "id": "hydroxychloroquine",
   "name": "Hydroxychloroquine sulfate",
-  "ingredients": ["hydroxychloroquine"],
+  "ingredients": [
+    "hydroxychloroquine"
+  ],
   "className": "Antimalarial (aminoquinoline) used as a DMARD",
-  "groups": ["antimalarial", "qt-prolonging"],
-  "searchTerms": ["hydroxychloroquine sulphate"],
+  "groups": [
+    "antimalarial",
+    "qt-prolonging"
+  ],
+  "searchTerms": [
+    "hydroxychloroquine sulphate"
+  ],
   "formulations": [
     {
       "id": "hydroxychloroquine-tab",
@@ -12,257 +19,1288 @@
       "route": "oral",
       "strengths": "200 mg",
       "release": "immediate",
-      "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine sulfate 200 mg film-coated Tablets" }],
-      "sourceIds": ["emc-1764"]
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Hydroxychloroquine sulfate 200 mg film-coated Tablets"
+        }
+      ],
+      "sourceIds": [
+        "emc-1764"
+      ]
     }
   ],
   "brandPrescribing": null,
-  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
   "sections": {
-    "indications": { "items": [
-      { "t": "Adults: rheumatoid arthritis, discoid and systemic lupus erythematosus, and skin conditions caused or aggravated by sunlight.", "tag": "Adults",
-        "src": [{ "s": "emc-1764", "q": "Treatment of rheumatoid arthritis, discoid and systemic lupus erythematosus, and dermatological conditions caused or aggravated by sunlight." }] },
-      { "t": "Children: juvenile idiopathic arthritis (with other therapies), discoid and systemic lupus erythematosus.", "tag": "Children",
-        "src": [{ "s": "emc-1764", "q": "Treatment of juvenile idiopathic arthritis (in combination with other therapies), discoid and systemic lupus erythematosus." }] }
-    ] },
-    "restrictions": { "items": [
-      { "t": "Prescriber is responsible for referring patients for retinal monitoring and acting on results (SPS, RCOphth).", "tag": "Prescriber responsibility",
-        "src": [{ "s": "sps-hcq-monitoring", "q": "It is the prescriber's responsibility to refer patients for monitoring." },
-                { "s": "rcophth-hcq-2020", "q": "It is the prescribing doctor's responsibility to ensure their patients are adequately monitored and to act on the results of monitoring." }] }
-    ] },
-    "dosing": { "items": [
-      { "t": "Adults (including elderly): lowest effective dose; NOT more than 6.5 mg/kg/day by IDEAL (not actual) body weight; this will be 200 mg or 400 mg per day.", "tag": "Maximum (SmPC)",
-        "src": [{ "s": "emc-1764", "q": "This dose should not exceed 6.5 mg/kg/day (calculated from ideal body weight and not actual body weight) and will be either 200 mg or 400 mg per day." }] },
-      { "t": "If 400 mg daily is suitable: start 400 mg daily in divided doses; reduce to 200 mg when no further improvement; increase maintenance back to 400 mg daily if response lessens.", "tag": "Titration",
-        "src": [{ "s": "emc-1764", "q": "In patients able to receive 400 mg daily: Initially 400 mg daily in divided doses. The dose can be reduced to 200 mg when no further improvement is evident. The maintenance dose should be increased to 400 mg daily if the response lessens." }] },
-      { "t": "Rheumatic disease: stop if no improvement by 6 months. Light-sensitive diseases: give only during periods of maximum light exposure.", "tag": "Duration",
-        "src": [{ "s": "emc-1764", "q": "For rheumatic disease treatment should be discontinued if there is no improvement by 6 months." },
-                { "s": "emc-1764", "q": "In light-sensitive diseases, treatment should only be given during periods of maximum exposure to light." }] },
-      { "t": "RCOphth retinopathy guidance (differs from SmPC): ideally keep the dose below 5 mg/kg/day (\"5 x 5 rule\"), calculated by ABSOLUTE (actual) body weight - the SmPC maximum of 6.5 mg/kg/day uses IDEAL body weight. SPS also uses actual body weight for its over 5 mg/kg/day risk factor.", "tag": "Retinal-risk dose (RCOphth)",
-        "src": [{ "s": "rcophth-hcq-2020", "q": "A useful aide memoir for these guidelines for hydroxychloroquine is the 5 x 5 rule (ideally keep dosage < 5mg/kg/day and monitor after five years of drug use)." },
-                { "s": "rcophth-hcq-2020", "q": "ensuring safe drug dosing according to absolute body weight" },
-                { "s": "rcophth-hcq-2020", "q": "Whilst patients taking >5mg/kg of absolute body weight were shown by this data to be in the highest risk group" }] }
-    ] },
-    "paediatric": { "items": [
-      { "t": "Lowest effective dose, not more than 6.5 mg/kg/day by ideal body weight. The 200 mg tablet is not suitable for children with ideal body weight under 31 kg.",
-        "src": [{ "s": "emc-1764", "q": "The minimum effective dose should be employed and should not exceed 6.5 mg/kg/day based on ideal body weight. The 200 mg tablet is therefore not suitable for use in children with an ideal body weight of less than 31 kg." }] },
-      { "t": "Small children are particularly sensitive to 4-aminoquinoline toxicity: keep tablets out of reach of children.",
-        "src": [{ "s": "emc-1764", "q": "Small children are particularly sensitive to the toxic effects of 4-aminoquinolines; therefore patients should be warned to keep hydroxychloroquine sulfate out of the reach of children." }] }
-    ] },
-    "contraindications": { "items": [
-      { "t": "Hypersensitivity to 4-aminoquinoline compounds or any excipient.",
-        "src": [{ "s": "emc-1764", "q": "Known hypersensitivity to 4-aminoquinoline compounds or to any of the excipients listed in section 6.1." }] },
-      { "t": "Pre-existing maculopathy of the eye.",
-        "src": [{ "s": "emc-1764", "q": "Pre-existing maculopathy of the eye." }] }
-    ] },
-    "cautions": { "items": [
-      { "t": "Retinopathy: risk rises above the recommended maximum dose. Stop immediately for pigmentary abnormality, visual field defect or other unexplained abnormality.", "tag": "Retinopathy",
-        "src": [{ "s": "emc-1764", "q": "The administration of doses in excess of the recommended maximum is likely to increase the risk of retinopathy, and accelerate its onset." },
-                { "s": "emc-1764", "q": "Hydroxychloroquine sulfate should be discontinued immediately in any patient who develops a pigmentary abnormality, visual field defect, or any other abnormality not explainable by difficulty in accommodation or presence of corneal opacities." }] },
-      { "t": "QT prolongation: use with caution in congenital/acquired QT prolongation or risk factors (heart failure, MI, bradycardia under 50 bpm, ventricular dysrhythmias, uncorrected hypokalaemia/hypomagnesaemia, QT-prolonging drugs). Do not exceed the recommended dose.", "tag": "QT",
-        "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine should be used with caution in patients with congenital or documented acquired QT prolongation and/or known risk factors for prolongation of the QT interval" },
-                { "s": "emc-1764", "q": "uncorrected hypokalemia and/or hypomagnesemia" }] },
-      { "t": "Hypoglycaemia: severe hypoglycaemia (including loss of consciousness) reported with or without antidiabetic medicines. Warn patients; check blood glucose and review treatment if symptoms.", "tag": "Hypoglycaemia",
-        "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine has been shown to cause severe hypoglycaemia including loss of consciousness that could be life threatening in patients treated with and without antidiabetic medications." },
-                { "s": "emc-1764", "q": "Patients presenting with clinical symptoms suggestive of hypoglycaemia during treatment with hydroxychloroquine should have their blood glucose level checked and treatment reviewed as necessary." }] },
-      { "t": "Psychiatric reactions and suicidal behaviour: typically in the first month, also in people with no psychiatric history. MHRA: be vigilant, especially in the first month.", "tag": "Psychiatric",
-        "src": [{ "s": "emc-1764", "q": "Psychiatric side effects typically occur within the first month after the start of treatment with hydroxychloroquine and have been reported also in patients with no prior history of psychiatric disorders." },
-                { "s": "mhra-dsu-hcq-macrolide", "q": "be vigilant for psychiatric reactions associated with hydroxychloroquine or chloroquine, especially in the first month of treatment" }] },
-      { "t": "Cardiomyopathy (sometimes fatal): monitor for signs; stop if it develops.", "tag": "Cardiomyopathy",
-        "src": [{ "s": "emc-1764", "q": "Clinical monitoring for signs and symptoms of cardiomyopathy is advised and hydroxychloroquine sulfate should be discontinued if cardiomyopathy develops." }] },
-      { "t": "Other cautions: G6PD deficiency, quinine sensitivity, porphyria cutanea tarda (may be exacerbated), psoriasis (more skin reactions), hepatic or renal disease, severe GI, neurological or blood disorders.", "tag": "Other conditions",
-        "src": [{ "s": "emc-1764", "q": "Caution should also be applied when it is used in the following: patients with a sensitivity to quinine, those with glucose-6-phosphate dehydrogenase deficiency, those with porphyria cutanea tarda which can be exacerbated by hydroxychloroquine and in patients with psoriasis" },
-                { "s": "emc-1764", "q": "patients with severe gastrointestinal, neurological or blood disorders." }] },
-      { "t": "Liver injury (including fulminant failure) reported; check LFTs if symptoms. Hepatitis B reactivation with other immunosuppressants.", "tag": "Liver", "detail": true,
-        "src": [{ "s": "emc-1764", "q": "Prompt clinical evaluation and measurement of liver function tests should be performed in patients who report symptoms that may indicate liver injury." }] },
-      { "t": "Severe skin reactions (DRESS, AGEP, SJS, TEN): stop at once.", "tag": "SCARs", "detail": true,
-        "src": [{ "s": "emc-1764", "q": "If signs and symptoms suggestive of severe skin reactions appear, hydroxychloroquine should be withdrawn at once and alternative therapy should be considered." }] },
-      { "t": "Contains lactose.", "tag": "Excipients", "detail": true,
-        "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine sulfate contains lactose monohydrate." }] }
-    ] },
-    "interactions": { "items": [
-      { "t": "Macrolides (azithromycin, clarithromycin, erythromycin): increased cardiovascular events and mortality seen with azithromycin; carefully weigh benefit and risk; caution in cardiac risk factors (MHRA).", "tag": "Macrolides",
-        "src": [{ "s": "emc-1764", "q": "Similar careful consideration of the balance of benefits and risks should also be undertaken before prescribing hydroxychloroquine for any patients taking other macrolide antibiotics, such as clarithromycin or erythromycin" },
-                { "s": "mhra-dsu-hcq-macrolide", "q": "if there is a clinical need to prescribe systemic macrolide antibiotics with hydroxychloroquine or chloroquine, use caution in patients with risk factors for cardiac events" }] },
-      { "t": "Other QT-prolonging medicines: use with caution (ventricular arrhythmia risk).", "tag": "QT-prolonging drugs",
-        "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine should be used with caution in patients receiving drugs known to prolong the QT interval" }] },
-      { "t": "Insulin and antidiabetic medicines: effect may be enhanced; dose reduction may be needed.", "tag": "Antidiabetics",
-        "src": [{ "s": "emc-1764", "q": "As hydroxychloroquine may enhance the effects of a hypoglycaemic treatment, a decrease in doses of insulin or anti-diabetic drugs may be required." }] },
-      { "t": "Antacids: may reduce absorption; separate doses by 4 hours.", "tag": "Antacids",
-        "src": [{ "s": "emc-1764", "q": "antacids may reduce absorption of hydroxychloroquine so it is advised that a 4 hour interval be observed between hydroxychloroquine sulfate and antacid dosing." }] },
-      { "t": "Tamoxifen (retinal toxicity): not recommended. Digoxin: monitor levels. Halofantrine: do not give together. Mefloquine/antiepileptics: convulsion threshold. Ciclosporin levels may rise.", "tag": "Others (not in master list)", "detail": true,
-        "src": [{ "s": "emc-1764", "q": "Concomitant use of drugs known to induce retinal toxicity, e.g. tamoxifen and hydroxychloroquine sulfate, is not recommended (see section 4.4)." },
-                { "s": "emc-1764", "q": "Halofantrine should not be administered with hydroxychloroquine." }] }
-    ] },
-    "renal": { "items": [
-      { "t": "SmPC: caution in renal disease; in severely compromised renal function measure plasma levels and adjust dose (no threshold given).", "tag": "SmPC",
-        "src": [{ "s": "emc-1764", "q": "Estimation of plasma hydroxychloroquine levels should be undertaken in patients with severely compromised renal or hepatic function and dosage adjusted accordingly." }] },
-      { "t": "RCOphth/SPS: eGFR under 60 ml/min/1.73m2 is a retinopathy risk factor; retinal monitoring can start after 1 year instead of 5.", "tag": "Retinal risk",
-        "src": [{ "s": "rcophth-hcq-2020", "q": "Impaired renal function (eGFR <60ml/min/1.73m2)" },
-                { "s": "sps-hcq-monitoring", "q": "renal insufficiency (eGFR less than 60ml/min/1.73m2)" }] }
-    ] },
-    "hepatic": { "items": [
-      { "t": "Caution in hepatic disease; in severely compromised hepatic function measure plasma levels and adjust dose. Serious drug-induced liver injury reported.",
-        "src": [{ "s": "emc-1764", "q": "patients with hepatic or renal disease, and in those taking drugs known to affect those organs." },
-                { "s": "emc-1764", "q": "Estimation of plasma hydroxychloroquine levels should be undertaken in patients with severely compromised renal or hepatic function and dosage adjusted accordingly." }] }
-    ] },
-    "pregnancy": { "items": [
-      { "t": "SmPC: avoid unless the physician judges benefit outweighs hazard; use the lowest effective dose. Small increase in malformation risk at 400 mg/day or more in the first trimester (RR 1.33).", "tag": "SmPC",
-        "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine sulfate should be avoided in pregnancy except when, in the judgement of the physician, the individual potential benefits outweigh the potential hazards." },
-                { "s": "emc-1764", "q": "For a daily dose of ≥ 400 mg the RR was 1.33 (95% CI, 1.08 - 1.65)." }] },
-      { "t": "BUMPS (UKTIS): can be used in pregnancy if recommended by a specialist; no concerns that it harms the baby; often the safest option to keep autoimmune disease controlled. (More permissive than the SmPC.)", "tag": "BUMPS",
-        "src": [{ "s": "bumps-hydroxychloroquine", "q": "Hydroxychloroquine can be used in pregnancy if recommended by a specialist." },
-                { "s": "bumps-hydroxychloroquine", "q": "There are no concerns that taking hydroxychloroquine in pregnancy can harm your baby." }] }
-    ] },
-    "breastfeeding": { "items": [
-      { "t": "Passes into breast milk (under 2% of maternal dose); very limited long-term infant data. Prescriber should weigh risks and benefits by indication and duration. No SPS breastfeeding page found.",
-        "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine is excreted in breast milk (less than 2% of the maternal dose after bodyweight correction)." },
-                { "s": "emc-1764", "q": "the prescriber should assess the potential risks and benefits of use during breastfeeding, according to indication and duration of treatment." }] }
-    ] },
-    "reproductive": { "items": [
-      { "t": "No human fertility data; chloroquine impaired male fertility in animals. BUMPS: no evidence that use by the father harms the baby.",
-        "src": [{ "s": "emc-1764", "q": "Animal studies showed an impairment of male fertility for chloroquine (see section 5.3). There are no data in humans." },
-                { "s": "bumps-hydroxychloroquine", "q": "There is currently no evidence that hydroxychloroquine used by the father can harm your baby through effects on the sperm." }] }
-    ] },
-    "adverseCommon": { "items": [
-      { "t": "Very common: abdominal pain, nausea. Common: diarrhoea, vomiting, anorexia, affect lability, headache, blurred vision (accommodation; dose-dependent, reversible), rash, pruritus.",
-        "src": [{ "s": "emc-1764", "q": "Very common: abdominal pain, nausea Common: diarrhoea, vomiting" },
-                { "s": "emc-1764", "q": "Common: blurring of vision due to a disturbance of accommodation which is dose dependent and reversible" },
-                { "s": "emc-1764", "q": "Common: skin rash, pruritus" }] }
-    ] },
-    "adverseSerious": { "items": [
-      { "t": "Retinopathy/maculopathy (may be irreversible): stop and refer.",
-        "src": [{ "s": "emc-1764", "q": "cases of maculopathies and macular degeneration have been reported (the onset ranging from 3 months to several years of exposure to hydroxychloroquine) and may be irreversible." }] },
-      { "t": "QT prolongation and arrhythmia (torsade de pointes); cardiomyopathy with heart failure. MHRA: tell patients to seek urgent help for palpitations, fainting, chest pain or unexplained breathlessness.",
-        "src": [{ "s": "emc-1764", "q": "QT interval prolongation in patients with specific risk factors, which may lead to arrhythmia (torsade de pointes, ventricular tachycardia)" },
-                { "s": "mhra-dsu-hcq-macrolide", "q": "seek urgent medical help if you have any signs of problems with your heart (for example, palpitations, fainting, chest pain, or unexplained breathlessness)" }] },
-      { "t": "Suicidal behaviour, psychosis, depression; severe hypoglycaemia; bone marrow depression; DILI; SCARs; myopathy/neuromyopathy (stop if weakness).",
-        "src": [{ "s": "emc-1764", "q": "Not known: suicidal behaviour, psychosis, depression, hallucinations, anxiety, agitation, confusion, delusions, mania and sleep disorders." },
-                { "s": "emc-1764", "q": "If weakness occurs, the drug should be withdrawn (see section 4.8)." }] }
-    ] },
-    "monitoring": { "items": [
-      { "t": "SPS baseline: albumin, ALT or AST, blood pressure, FBC, height, weight, serum creatinine/CrCl or calculated GFR, vaccination status. Hepatitis B/C and HIV if at risk.", "tag": "baseline",
-        "src": [{ "s": "sps-hcq-monitoring", "q": "Before starting Required Baseline Albumin ALT or AST Blood pressure Full blood count Height Serum creatinine (for creatinine clearance) or Calculated glomerular filtration rate Weight Vaccination status" }] },
-      { "t": "Eye baseline - SOURCES DIFFER: SmPC says eye examination before starting and at least every 12 months; SPS and RCOphth say baseline eye testing is no longer recommended.", "tag": "baseline",
-        "src": [{ "s": "emc-1764", "q": "All patients should have an ophthalmological examination before initiating treatment with hydroxychloroquine sulfate. Thereafter, ophthalmological examinations must be repeated at least every 12 months." },
-                { "s": "sps-hcq-monitoring", "q": "Before starting hydroxychloroquine, ophthalmological examination is not currently recommended ." },
-                { "s": "rcophth-hcq-2020", "q": "Baseline testing for new initiators of hydroxychloroquine or chloroquine is no longer recommended." }] },
-      { "t": "Retinal monitoring (RCOphth): annual from 5 years of use; annual from 1 year if risk factors (tamoxifen, eGFR under 60, dose over 5 mg/kg/day). SD-OCT plus fundus autofluorescence.", "tag": "ongoing",
-        "src": [{ "s": "rcophth-hcq-2020", "q": "All individuals who have taken hydroxychloroquine for greater than five years should receive annual monitoring for retinopathy." },
-                { "s": "rcophth-hcq-2020", "q": "Concomitant tamoxifen use - Impaired renal function (eGFR <60ml/min/1.73m2) - Dose of hydroxychloroquine greater than 5mg per kg per day - Chloroquine use Monitoring begins after 1 year of drug therapy" }] },
-      { "t": "SmPC: eye examinations should be more frequent and adapted to the patient if the daily dose exceeds 6.5 mg/kg lean body weight, renal insufficiency, visual acuity below 6/8, age above 65 years, cumulative dose more than 200 g, or tamoxifen use.", "tag": "ongoing",
-        "src": [{ "s": "emc-1764", "q": "This examination should be more frequent and adapted to the patient in the following situations" },
-                { "s": "emc-1764", "q": "visual acuity below 6/8" }, { "s": "emc-1764", "q": "age above 65 years" }, { "s": "emc-1764", "q": "cumulative dose more than 200 g" }] },
-      { "t": "SPS: risk-factor dose threshold is over 5 mg/kg/day by ACTUAL body weight (SmPC maximum uses IDEAL body weight).", "tag": "ongoing",
-        "src": [{ "s": "sps-hcq-monitoring", "q": "very high dose of drug therapy (hydroxychloroquine dose over 5mg per kg per day- based on actual body weight)" }] },
-      { "t": "Long-term: periodic FBC; periodic skeletal muscle function and tendon reflexes (SmPC). SPS: periodically albumin, ALT/AST, eGFR, weight.", "tag": "ongoing",
-        "src": [{ "s": "emc-1764", "q": "Patients on long-term therapy should have periodic full blood counts, and hydroxychloroquine should be discontinued if abnormalities develop (see section 4.8)." },
-                { "s": "emc-1764", "q": "All patients on long-term therapy should undergo periodic examination of skeletal muscle function and tendon reflexes." }] },
-      { "t": "Stop for: retinal pigmentary change or field defect; blood count abnormalities; muscle weakness; cardiomyopathy; severe skin reaction. Drivers with definite retinal toxicity: advise not to drive until reviewed; inform DVLA (SPS).", "tag": "stop",
-        "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine sulfate should be discontinued if abnormalities develop." },
-                { "s": "sps-hcq-monitoring", "q": "Patients who are drivers with definite toxicity should be advised not to drive until reviewed by an ophthalmologist." }] }
-    ] },
-    "administration": { "items": [
-      { "t": "Take each dose with a meal or a glass of milk. Effect builds up over several weeks.",
-        "src": [{ "s": "emc-1764", "q": "Each dose should be taken with a meal or glass of milk." },
-                { "s": "emc-1764", "q": "Hydroxychloroquine is cumulative in action and will require several weeks to exert its beneficial effects" }] },
-      { "t": "Separate from antacids by 4 hours.",
-        "src": [{ "s": "emc-1764", "q": "it is advised that a 4 hour interval be observed between hydroxychloroquine sulfate and antacid dosing." }] }
-    ] },
-    "counselling": { "items": [
-      { "t": "Stop and contact the prescriber for any change in vision, including colour vision.",
-        "src": [{ "s": "emc-1764", "q": "Patients should be advised to stop taking the drug immediately and seek the advice of their prescribing doctor if any disturbances of vision are noted, including abnormal colour vision." }] },
-      { "t": "Seek medical advice promptly for new or worse mental health symptoms (family/carers too).",
-        "src": [{ "s": "mhra-dsu-hcq-macrolide", "q": "speak to your doctor as soon as possible if you or your family members or caregivers notice any new or worsening mental health symptoms" }] },
-      { "t": "Know the signs of low blood sugar.",
-        "src": [{ "s": "emc-1764", "q": "Patients treated with hydroxychloroquine should be warned about the risk of hypoglycaemia and the associated clinical signs and symptoms." }] },
-      { "t": "Blurred vision early in treatment may affect driving.",
-        "src": [{ "s": "emc-1764", "q": "Impaired visual accommodation soon after the start of treatment has been reported and patients should be warned regarding driving or operating machinery." }] },
-      { "t": "Keep out of reach of children (toxic to small children).",
-        "src": [{ "s": "emc-1764", "q": "patients should be warned to keep hydroxychloroquine sulfate out of the reach of children." }] }
-    ] }
+    "indications": {
+      "items": [
+        {
+          "t": "Adults: rheumatoid arthritis, discoid and systemic lupus erythematosus, and skin conditions caused or aggravated by sunlight.",
+          "tag": "Adults",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Treatment of rheumatoid arthritis, discoid and systemic lupus erythematosus, and dermatological conditions caused or aggravated by sunlight."
+            }
+          ]
+        },
+        {
+          "t": "Children: juvenile idiopathic arthritis (with other therapies), discoid and systemic lupus erythematosus.",
+          "tag": "Children",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Treatment of juvenile idiopathic arthritis (in combination with other therapies), discoid and systemic lupus erythematosus."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Prescriber is responsible for referring patients for retinal monitoring and acting on results (SPS, RCOphth).",
+          "tag": "Prescriber responsibility",
+          "src": [
+            {
+              "s": "sps-hcq-monitoring",
+              "q": "It is the prescriber's responsibility to refer patients for monitoring."
+            },
+            {
+              "s": "rcophth-hcq-2020",
+              "q": "It is the prescribing doctor's responsibility to ensure their patients are adequately monitored and to act on the results of monitoring."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults (including elderly): lowest effective dose; NOT more than 6.5 mg/kg/day by IDEAL (not actual) body weight; this will be 200 mg or 400 mg per day.",
+          "tag": "Maximum (SmPC)",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "This dose should not exceed 6.5 mg/kg/day (calculated from ideal body weight and not actual body weight) and will be either 200 mg or 400 mg per day."
+            }
+          ]
+        },
+        {
+          "t": "If 400 mg daily is suitable: start 400 mg daily in divided doses; reduce to 200 mg when no further improvement; increase maintenance back to 400 mg daily if response lessens.",
+          "tag": "Titration",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "In patients able to receive 400 mg daily: Initially 400 mg daily in divided doses. The dose can be reduced to 200 mg when no further improvement is evident. The maintenance dose should be increased to 400 mg daily if the response lessens."
+            }
+          ]
+        },
+        {
+          "t": "Rheumatic disease: stop if no improvement by 6 months. Light-sensitive diseases: give only during periods of maximum light exposure.",
+          "tag": "Duration",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "For rheumatic disease treatment should be discontinued if there is no improvement by 6 months."
+            },
+            {
+              "s": "emc-1764",
+              "q": "In light-sensitive diseases, treatment should only be given during periods of maximum exposure to light."
+            }
+          ]
+        },
+        {
+          "t": "RCOphth retinopathy guidance (differs from SmPC): ideally keep the dose below 5 mg/kg/day (\"5 x 5 rule\"), calculated by ABSOLUTE (actual) body weight - the SmPC maximum of 6.5 mg/kg/day uses IDEAL body weight. SPS also uses actual body weight for its over 5 mg/kg/day risk factor.",
+          "tag": "Retinal-risk dose (RCOphth)",
+          "src": [
+            {
+              "s": "rcophth-hcq-2020",
+              "q": "A useful aide memoir for these guidelines for hydroxychloroquine is the 5 x 5 rule (ideally keep dosage < 5mg/kg/day and monitor after five years of drug use)."
+            },
+            {
+              "s": "rcophth-hcq-2020",
+              "q": "ensuring safe drug dosing according to absolute body weight"
+            },
+            {
+              "s": "rcophth-hcq-2020",
+              "q": "Whilst patients taking >5mg/kg of absolute body weight were shown by this data to be in the highest risk group"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Lowest effective dose, not more than 6.5 mg/kg/day by ideal body weight. The 200 mg tablet is not suitable for children with ideal body weight under 31 kg.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "The minimum effective dose should be employed and should not exceed 6.5 mg/kg/day based on ideal body weight. The 200 mg tablet is therefore not suitable for use in children with an ideal body weight of less than 31 kg."
+            }
+          ]
+        },
+        {
+          "t": "Small children are particularly sensitive to 4-aminoquinoline toxicity: keep tablets out of reach of children.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Small children are particularly sensitive to the toxic effects of 4-aminoquinolines; therefore patients should be warned to keep hydroxychloroquine sulfate out of the reach of children."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to 4-aminoquinoline compounds or any excipient.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Known hypersensitivity to 4-aminoquinoline compounds or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Pre-existing maculopathy of the eye.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Pre-existing maculopathy of the eye."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Retinopathy: risk rises above the recommended maximum dose. Stop immediately for pigmentary abnormality, visual field defect or other unexplained abnormality.",
+          "tag": "Retinopathy",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "The administration of doses in excess of the recommended maximum is likely to increase the risk of retinopathy, and accelerate its onset."
+            },
+            {
+              "s": "emc-1764",
+              "q": "Hydroxychloroquine sulfate should be discontinued immediately in any patient who develops a pigmentary abnormality, visual field defect, or any other abnormality not explainable by difficulty in accommodation or presence of corneal opacities."
+            }
+          ]
+        },
+        {
+          "t": "QT prolongation: use with caution in congenital/acquired QT prolongation or risk factors (heart failure, MI, bradycardia under 50 bpm, ventricular dysrhythmias, uncorrected hypokalaemia/hypomagnesaemia, QT-prolonging drugs). Do not exceed the recommended dose.",
+          "tag": "QT",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Hydroxychloroquine should be used with caution in patients with congenital or documented acquired QT prolongation and/or known risk factors for prolongation of the QT interval"
+            },
+            {
+              "s": "emc-1764",
+              "q": "uncorrected hypokalemia and/or hypomagnesemia"
+            }
+          ]
+        },
+        {
+          "t": "Hypoglycaemia: severe hypoglycaemia (including loss of consciousness) reported with or without antidiabetic medicines. Warn patients; check blood glucose and review treatment if symptoms.",
+          "tag": "Hypoglycaemia",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Hydroxychloroquine has been shown to cause severe hypoglycaemia including loss of consciousness that could be life threatening in patients treated with and without antidiabetic medications."
+            },
+            {
+              "s": "emc-1764",
+              "q": "Patients presenting with clinical symptoms suggestive of hypoglycaemia during treatment with hydroxychloroquine should have their blood glucose level checked and treatment reviewed as necessary."
+            }
+          ]
+        },
+        {
+          "t": "Psychiatric reactions and suicidal behaviour: typically in the first month, also in people with no psychiatric history. MHRA: be vigilant, especially in the first month.",
+          "tag": "Psychiatric",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Psychiatric side effects typically occur within the first month after the start of treatment with hydroxychloroquine and have been reported also in patients with no prior history of psychiatric disorders."
+            },
+            {
+              "s": "mhra-dsu-hcq-macrolide",
+              "q": "be vigilant for psychiatric reactions associated with hydroxychloroquine or chloroquine, especially in the first month of treatment"
+            }
+          ]
+        },
+        {
+          "t": "Cardiomyopathy (sometimes fatal): monitor for signs; stop if it develops.",
+          "tag": "Cardiomyopathy",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Clinical monitoring for signs and symptoms of cardiomyopathy is advised and hydroxychloroquine sulfate should be discontinued if cardiomyopathy develops."
+            }
+          ]
+        },
+        {
+          "t": "Other cautions: G6PD deficiency, quinine sensitivity, porphyria cutanea tarda (may be exacerbated), psoriasis (more skin reactions), hepatic or renal disease, severe GI, neurological or blood disorders.",
+          "tag": "Other conditions",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Caution should also be applied when it is used in the following: patients with a sensitivity to quinine, those with glucose-6-phosphate dehydrogenase deficiency, those with porphyria cutanea tarda which can be exacerbated by hydroxychloroquine and in patients with psoriasis"
+            },
+            {
+              "s": "emc-1764",
+              "q": "patients with severe gastrointestinal, neurological or blood disorders."
+            }
+          ]
+        },
+        {
+          "t": "Liver injury (including fulminant failure) reported; check LFTs if symptoms. Hepatitis B reactivation with other immunosuppressants.",
+          "tag": "Liver",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Prompt clinical evaluation and measurement of liver function tests should be performed in patients who report symptoms that may indicate liver injury."
+            }
+          ]
+        },
+        {
+          "t": "Severe skin reactions (DRESS, AGEP, SJS, TEN): stop at once.",
+          "tag": "SCARs",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "If signs and symptoms suggestive of severe skin reactions appear, hydroxychloroquine should be withdrawn at once and alternative therapy should be considered."
+            }
+          ]
+        },
+        {
+          "t": "Contains lactose.",
+          "tag": "Excipients",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Hydroxychloroquine sulfate contains lactose monohydrate."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Macrolides (azithromycin, clarithromycin, erythromycin): increased cardiovascular events and mortality seen with azithromycin; carefully weigh benefit and risk; caution in cardiac risk factors (MHRA).",
+          "tag": "Macrolides",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Similar careful consideration of the balance of benefits and risks should also be undertaken before prescribing hydroxychloroquine for any patients taking other macrolide antibiotics, such as clarithromycin or erythromycin"
+            },
+            {
+              "s": "mhra-dsu-hcq-macrolide",
+              "q": "if there is a clinical need to prescribe systemic macrolide antibiotics with hydroxychloroquine or chloroquine, use caution in patients with risk factors for cardiac events"
+            }
+          ]
+        },
+        {
+          "t": "Other QT-prolonging medicines: use with caution (ventricular arrhythmia risk).",
+          "tag": "QT-prolonging drugs",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Hydroxychloroquine should be used with caution in patients receiving drugs known to prolong the QT interval"
+            }
+          ]
+        },
+        {
+          "t": "Insulin and antidiabetic medicines: effect may be enhanced; dose reduction may be needed.",
+          "tag": "Antidiabetics",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "As hydroxychloroquine may enhance the effects of a hypoglycaemic treatment, a decrease in doses of insulin or anti-diabetic drugs may be required."
+            }
+          ]
+        },
+        {
+          "t": "Antacids: may reduce absorption; separate doses by 4 hours.",
+          "tag": "Antacids",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "antacids may reduce absorption of hydroxychloroquine so it is advised that a 4 hour interval be observed between hydroxychloroquine sulfate and antacid dosing."
+            }
+          ]
+        },
+        {
+          "t": "Tamoxifen (retinal toxicity): not recommended. Digoxin: monitor levels. Halofantrine: do not give together. Mefloquine/antiepileptics: convulsion threshold. Ciclosporin levels may rise.",
+          "tag": "Others (not in master list)",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Concomitant use of drugs known to induce retinal toxicity, e.g. tamoxifen and hydroxychloroquine sulfate, is not recommended (see section 4.4)."
+            },
+            {
+              "s": "emc-1764",
+              "q": "Halofantrine should not be administered with hydroxychloroquine."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "SmPC: caution in renal disease; in severely compromised renal function measure plasma levels and adjust dose (no threshold given).",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Estimation of plasma hydroxychloroquine levels should be undertaken in patients with severely compromised renal or hepatic function and dosage adjusted accordingly."
+            }
+          ]
+        },
+        {
+          "t": "RCOphth/SPS: eGFR under 60 ml/min/1.73m2 is a retinopathy risk factor; retinal monitoring can start after 1 year instead of 5.",
+          "tag": "Retinal risk",
+          "src": [
+            {
+              "s": "rcophth-hcq-2020",
+              "q": "Impaired renal function (eGFR <60ml/min/1.73m2)"
+            },
+            {
+              "s": "sps-hcq-monitoring",
+              "q": "renal insufficiency (eGFR less than 60ml/min/1.73m2)"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Caution in hepatic disease; in severely compromised hepatic function measure plasma levels and adjust dose. Serious drug-induced liver injury reported.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "patients with hepatic or renal disease, and in those taking drugs known to affect those organs."
+            },
+            {
+              "s": "emc-1764",
+              "q": "Estimation of plasma hydroxychloroquine levels should be undertaken in patients with severely compromised renal or hepatic function and dosage adjusted accordingly."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: avoid unless the physician judges benefit outweighs hazard; use the lowest effective dose. Small increase in malformation risk at 400 mg/day or more in the first trimester (RR 1.33).",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Hydroxychloroquine sulfate should be avoided in pregnancy except when, in the judgement of the physician, the individual potential benefits outweigh the potential hazards."
+            },
+            {
+              "s": "emc-1764",
+              "q": "For a daily dose of ≥ 400 mg the RR was 1.33 (95% CI, 1.08 - 1.65)."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS): can be used in pregnancy if recommended by a specialist; no concerns that it harms the baby; often the safest option to keep autoimmune disease controlled. (More permissive than the SmPC.)",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-hydroxychloroquine",
+              "q": "Hydroxychloroquine can be used in pregnancy if recommended by a specialist."
+            },
+            {
+              "s": "bumps-hydroxychloroquine",
+              "q": "There are no concerns that taking hydroxychloroquine in pregnancy can harm your baby."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Passes into breast milk (under 2% of maternal dose); very limited long-term infant data. Prescriber should weigh risks and benefits by indication and duration. No SPS breastfeeding page found.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Hydroxychloroquine is excreted in breast milk (less than 2% of the maternal dose after bodyweight correction)."
+            },
+            {
+              "s": "emc-1764",
+              "q": "the prescriber should assess the potential risks and benefits of use during breastfeeding, according to indication and duration of treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No human fertility data; chloroquine impaired male fertility in animals. BUMPS: no evidence that use by the father harms the baby.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Animal studies showed an impairment of male fertility for chloroquine (see section 5.3). There are no data in humans."
+            },
+            {
+              "s": "bumps-hydroxychloroquine",
+              "q": "There is currently no evidence that hydroxychloroquine used by the father can harm your baby through effects on the sperm."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common: abdominal pain, nausea. Common: diarrhoea, vomiting, anorexia, affect lability, headache, blurred vision (accommodation; dose-dependent, reversible), rash, pruritus.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Very common: abdominal pain, nausea Common: diarrhoea, vomiting"
+            },
+            {
+              "s": "emc-1764",
+              "q": "Common: blurring of vision due to a disturbance of accommodation which is dose dependent and reversible"
+            },
+            {
+              "s": "emc-1764",
+              "q": "Common: skin rash, pruritus"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Retinopathy/maculopathy (may be irreversible): stop and refer.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "cases of maculopathies and macular degeneration have been reported (the onset ranging from 3 months to several years of exposure to hydroxychloroquine) and may be irreversible."
+            }
+          ]
+        },
+        {
+          "t": "QT prolongation and arrhythmia (torsade de pointes); cardiomyopathy with heart failure. MHRA: tell patients to seek urgent help for palpitations, fainting, chest pain or unexplained breathlessness.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "QT interval prolongation in patients with specific risk factors, which may lead to arrhythmia (torsade de pointes, ventricular tachycardia)"
+            },
+            {
+              "s": "mhra-dsu-hcq-macrolide",
+              "q": "seek urgent medical help if you have any signs of problems with your heart (for example, palpitations, fainting, chest pain, or unexplained breathlessness)"
+            }
+          ]
+        },
+        {
+          "t": "Suicidal behaviour, psychosis, depression; severe hypoglycaemia; bone marrow depression; DILI; SCARs; myopathy/neuromyopathy (stop if weakness).",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Not known: suicidal behaviour, psychosis, depression, hallucinations, anxiety, agitation, confusion, delusions, mania and sleep disorders."
+            },
+            {
+              "s": "emc-1764",
+              "q": "If weakness occurs, the drug should be withdrawn (see section 4.8)."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS baseline: albumin, ALT or AST, blood pressure, FBC, height, weight, serum creatinine/CrCl or calculated GFR, vaccination status. Hepatitis B/C and HIV if at risk.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "sps-hcq-monitoring",
+              "q": "Before starting Required Baseline Albumin ALT or AST Blood pressure Full blood count Height Serum creatinine (for creatinine clearance) or Calculated glomerular filtration rate Weight Vaccination status"
+            }
+          ]
+        },
+        {
+          "t": "Eye baseline - SOURCES DIFFER: SmPC says eye examination before starting and at least every 12 months; SPS and RCOphth say baseline eye testing is no longer recommended.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "All patients should have an ophthalmological examination before initiating treatment with hydroxychloroquine sulfate. Thereafter, ophthalmological examinations must be repeated at least every 12 months."
+            },
+            {
+              "s": "sps-hcq-monitoring",
+              "q": "Before starting hydroxychloroquine, ophthalmological examination is not currently recommended ."
+            },
+            {
+              "s": "rcophth-hcq-2020",
+              "q": "Baseline testing for new initiators of hydroxychloroquine or chloroquine is no longer recommended."
+            }
+          ]
+        },
+        {
+          "t": "Retinal monitoring (RCOphth): annual from 5 years of use; annual from 1 year if risk factors (tamoxifen, eGFR under 60, dose over 5 mg/kg/day). SD-OCT plus fundus autofluorescence.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "rcophth-hcq-2020",
+              "q": "All individuals who have taken hydroxychloroquine for greater than five years should receive annual monitoring for retinopathy."
+            },
+            {
+              "s": "rcophth-hcq-2020",
+              "q": "Concomitant tamoxifen use - Impaired renal function (eGFR <60ml/min/1.73m2) - Dose of hydroxychloroquine greater than 5mg per kg per day - Chloroquine use Monitoring begins after 1 year of drug therapy"
+            }
+          ]
+        },
+        {
+          "t": "SmPC: eye examinations should be more frequent and adapted to the patient if the daily dose exceeds 6.5 mg/kg lean body weight, renal insufficiency, visual acuity below 6/8, age above 65 years, cumulative dose more than 200 g, or tamoxifen use.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "This examination should be more frequent and adapted to the patient in the following situations"
+            },
+            {
+              "s": "emc-1764",
+              "q": "visual acuity below 6/8"
+            },
+            {
+              "s": "emc-1764",
+              "q": "age above 65 years"
+            },
+            {
+              "s": "emc-1764",
+              "q": "cumulative dose more than 200 g"
+            }
+          ]
+        },
+        {
+          "t": "SPS: risk-factor dose threshold is over 5 mg/kg/day by ACTUAL body weight (SmPC maximum uses IDEAL body weight).",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "sps-hcq-monitoring",
+              "q": "very high dose of drug therapy (hydroxychloroquine dose over 5mg per kg per day- based on actual body weight)"
+            }
+          ]
+        },
+        {
+          "t": "Long-term: periodic FBC; periodic skeletal muscle function and tendon reflexes (SmPC). SPS: periodically albumin, ALT/AST, eGFR, weight.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Patients on long-term therapy should have periodic full blood counts, and hydroxychloroquine should be discontinued if abnormalities develop (see section 4.8)."
+            },
+            {
+              "s": "emc-1764",
+              "q": "All patients on long-term therapy should undergo periodic examination of skeletal muscle function and tendon reflexes."
+            }
+          ]
+        },
+        {
+          "t": "Stop for: retinal pigmentary change or field defect; blood count abnormalities; muscle weakness; cardiomyopathy; severe skin reaction. Drivers with definite retinal toxicity: advise not to drive until reviewed; inform DVLA (SPS).",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Hydroxychloroquine sulfate should be discontinued if abnormalities develop."
+            },
+            {
+              "s": "sps-hcq-monitoring",
+              "q": "Patients who are drivers with definite toxicity should be advised not to drive until reviewed by an ophthalmologist."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Take each dose with a meal or a glass of milk. Effect builds up over several weeks.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Each dose should be taken with a meal or glass of milk."
+            },
+            {
+              "s": "emc-1764",
+              "q": "Hydroxychloroquine is cumulative in action and will require several weeks to exert its beneficial effects"
+            }
+          ]
+        },
+        {
+          "t": "Separate from antacids by 4 hours.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "it is advised that a 4 hour interval be observed between hydroxychloroquine sulfate and antacid dosing."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Stop and contact the prescriber for any change in vision, including colour vision.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Patients should be advised to stop taking the drug immediately and seek the advice of their prescribing doctor if any disturbances of vision are noted, including abnormal colour vision."
+            }
+          ]
+        },
+        {
+          "t": "Seek medical advice promptly for new or worse mental health symptoms (family/carers too).",
+          "src": [
+            {
+              "s": "mhra-dsu-hcq-macrolide",
+              "q": "speak to your doctor as soon as possible if you or your family members or caregivers notice any new or worsening mental health symptoms"
+            }
+          ]
+        },
+        {
+          "t": "Know the signs of low blood sugar.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Patients treated with hydroxychloroquine should be warned about the risk of hypoglycaemia and the associated clinical signs and symptoms."
+            }
+          ]
+        },
+        {
+          "t": "Blurred vision early in treatment may affect driving.",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "Impaired visual accommodation soon after the start of treatment has been reported and patients should be warned regarding driving or operating machinery."
+            }
+          ]
+        },
+        {
+          "t": "Keep out of reach of children (toxic to small children).",
+          "src": [
+            {
+              "s": "emc-1764",
+              "q": "patients should be warned to keep hydroxychloroquine sulfate out of the reach of children."
+            }
+          ]
+        }
+      ]
+    }
   },
   "rules": [
-    { "id": "hydroxychloroquine:allergy:own", "kind": "allergy", "level": "contraindicated", "med": "hydroxychloroquine", "allergen": ["hydroxychloroquine"],
-      "concern": "Hypersensitivity to 4-aminoquinolines", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications ... Known hypersensitivity to 4-aminoquinoline compounds",
-      "src": [{ "s": "emc-1764", "q": "Known hypersensitivity to 4-aminoquinoline compounds or to any of the excipients listed in section 6.1." }] },
-    { "id": "hydroxychloroquine:condition:maculopathy", "kind": "condition", "level": "contraindicated", "med": "hydroxychloroquine", "condition": "retinopathy-maculopathy",
-      "concern": "Pre-existing maculopathy", "consequence": "Retinal toxicity risk.", "action": "Do not use.", "sourceWording": "Contraindications ... Pre-existing maculopathy of the eye",
-      "src": [{ "s": "emc-1764", "q": "Pre-existing maculopathy of the eye." }] },
-    { "id": "hydroxychloroquine:condition:qt", "kind": "condition", "level": "caution", "med": "hydroxychloroquine", "condition": "qt-prolongation", "effect": "qt-prolongation",
-      "concern": "QT prolongation (congenital or acquired)", "consequence": "Risk of ventricular arrhythmias.", "action": "Use with caution; do not exceed the recommended dose.", "sourceWording": "should be used with caution",
-      "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine should be used with caution in patients with congenital or documented acquired QT prolongation and/or known risk factors for prolongation of the QT interval" }] },
-    { "id": "hydroxychloroquine:condition:heart-failure", "kind": "condition", "level": "caution", "med": "hydroxychloroquine", "condition": "heart-failure", "effect": "qt-prolongation",
-      "concern": "Heart failure (QT risk factor)", "consequence": "Risk factor for QT prolongation; cardiomyopathy also reported with hydroxychloroquine.", "action": "Use with caution; monitor for cardiomyopathy.", "sourceWording": "should be used with caution",
-      "src": [{ "s": "emc-1764", "q": "cardiac disease, e.g., heart failure, myocardial infarction" }] },
-    { "id": "hydroxychloroquine:condition:bradycardia", "kind": "condition", "level": "caution", "med": "hydroxychloroquine", "condition": "bradycardia", "effect": "qt-prolongation",
-      "concern": "Bradycardia under 50 bpm", "consequence": "Proarrhythmic condition (QT risk).", "action": "Use with caution.", "sourceWording": "should be used with caution",
-      "src": [{ "s": "emc-1764", "q": "proarrhythmic conditions, e.g., bradycardia (< 50 bpm)" }] },
-    { "id": "hydroxychloroquine:condition:hypokalaemia", "kind": "condition", "level": "caution", "med": "hydroxychloroquine", "condition": "hypokalaemia", "effect": "qt-prolongation",
-      "concern": "Uncorrected hypokalaemia", "consequence": "QT risk factor.", "action": "Use with caution.", "sourceWording": "should be used with caution",
-      "src": [{ "s": "emc-1764", "q": "uncorrected hypokalemia and/or hypomagnesemia" }] },
-    { "id": "hydroxychloroquine:condition:hypomagnesaemia", "kind": "condition", "level": "caution", "med": "hydroxychloroquine", "condition": "hypomagnesaemia", "effect": "qt-prolongation",
-      "concern": "Uncorrected hypomagnesaemia", "consequence": "QT risk factor.", "action": "Use with caution.", "sourceWording": "should be used with caution",
-      "src": [{ "s": "emc-1764", "q": "uncorrected hypokalemia and/or hypomagnesemia" }] },
-    { "id": "hydroxychloroquine:condition:cardiac-disease", "kind": "condition", "level": "caution", "med": "hydroxychloroquine", "condition": "cardiac-disease", "effect": "qt-prolongation",
-      "concern": "Cardiac disease (e.g. heart failure, myocardial infarction) or history of ventricular dysrhythmias", "consequence": "Risk factors for QT prolongation and ventricular arrhythmia; cardiomyopathy also reported.", "action": "Use with caution; do not exceed the recommended dose.", "sourceWording": "should be used with caution",
-      "src": [{ "s": "emc-1764", "q": "cardiac disease, e.g., heart failure, myocardial infarction" }, { "s": "emc-1764", "q": "a history of ventricular dysrhythmias" }] },
-    { "id": "hydroxychloroquine:condition:epilepsy", "kind": "condition", "level": "info", "med": "hydroxychloroquine", "condition": "epilepsy", "effect": "seizure-threshold",
-      "concern": "Epilepsy", "consequence": "Hydroxychloroquine can lower the convulsive threshold; antiepileptic activity might be impaired.", "action": "No specific action stated in the SmPC.", "sourceWording": "can lower the convulsive threshold",
-      "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine can lower the convulsive threshold." }] },
-    { "id": "hydroxychloroquine:condition:blood-disorder", "kind": "condition", "level": "caution", "med": "hydroxychloroquine", "condition": "blood-dyscrasia",
-      "concern": "Severe blood disorder", "consequence": "Bone marrow depression reported (low risk).", "action": "Use with caution; periodic blood counts; stop if abnormalities develop.", "sourceWording": "Caution should also be applied",
-      "src": [{ "s": "emc-1764", "q": "patients with severe gastrointestinal, neurological or blood disorders." }, { "s": "emc-1764", "q": "Hydroxychloroquine sulfate should be discontinued if abnormalities develop." }] },
-    { "id": "hydroxychloroquine:age:over-65-eye", "kind": "age", "level": "monitor", "med": "hydroxychloroquine", "age": { "minYears": 65 },
-      "concern": "Age above 65 years", "consequence": "SmPC lists age above 65 as a reason for more frequent eye examinations.", "action": "SmPC: ophthalmological examinations more frequent and adapted to the patient.", "sourceWording": "This examination should be more frequent",
-      "src": [{ "s": "emc-1764", "q": "This examination should be more frequent and adapted to the patient in the following situations" }, { "s": "emc-1764", "q": "age above 65 years" }] },
-    { "id": "hydroxychloroquine:condition:diabetes", "kind": "condition", "level": "monitor", "med": "hydroxychloroquine", "condition": "diabetes", "effect": "hypoglycaemia",
-      "concern": "Diabetes (hypoglycaemia risk)", "consequence": "Severe hypoglycaemia reported, with or without antidiabetic medicines.", "action": "Warn about hypoglycaemia; check blood glucose if symptoms and review treatment.", "sourceWording": "should have their blood glucose level checked",
-      "src": [{ "s": "emc-1764", "q": "Patients presenting with clinical symptoms suggestive of hypoglycaemia during treatment with hydroxychloroquine should have their blood glucose level checked and treatment reviewed as necessary." }] },
-    { "id": "hydroxychloroquine:condition:psychiatric", "kind": "condition", "level": "monitor", "med": "hydroxychloroquine", "condition": "depression-suicidality",
-      "concern": "Depression / suicidal thoughts", "consequence": "Psychiatric reactions and suicidal behaviour reported, mostly in the first month (also without prior history).", "action": "Be vigilant, especially in the first month; advise prompt medical advice for psychiatric symptoms.", "sourceWording": "be vigilant for psychiatric reactions",
-      "src": [{ "s": "mhra-dsu-hcq-macrolide", "q": "be vigilant for psychiatric reactions associated with hydroxychloroquine or chloroquine, especially in the first month of treatment" }] },
-    { "id": "hydroxychloroquine:condition:g6pd", "kind": "condition", "level": "caution", "med": "hydroxychloroquine", "condition": "g6pd-deficiency",
-      "concern": "G6PD deficiency", "consequence": "SmPC precaution.", "action": "Use with caution.", "sourceWording": "Caution should also be applied",
-      "src": [{ "s": "emc-1764", "q": "those with glucose-6-phosphate dehydrogenase deficiency" }] },
-    { "id": "hydroxychloroquine:condition:psoriasis", "kind": "condition", "level": "caution", "med": "hydroxychloroquine", "condition": "psoriasis",
-      "concern": "Psoriasis", "consequence": "Appears to increase risk of skin reactions; may precipitate psoriasis attacks.", "action": "Use with caution.", "sourceWording": "Caution should also be applied",
-      "src": [{ "s": "emc-1764", "q": "in patients with psoriasis since it appears to increase the risk of skin reactions" }] },
-    { "id": "hydroxychloroquine:condition:porphyria-cutanea-tarda", "kind": "condition", "level": "caution", "med": "hydroxychloroquine", "condition": "porphyria-cutanea-tarda",
-      "concern": "Porphyria cutanea tarda", "consequence": "Can be exacerbated by hydroxychloroquine.", "action": "Use with caution.", "sourceWording": "Caution should also be applied",
-      "src": [{ "s": "emc-1764", "q": "those with porphyria cutanea tarda which can be exacerbated by hydroxychloroquine" }] },
-    { "id": "hydroxychloroquine:condition:porphyria", "kind": "condition", "level": "info", "med": "hydroxychloroquine", "condition": "porphyria",
-      "concern": "Porphyria", "consequence": "Hydroxychloroquine may precipitate or exacerbate porphyria.", "action": "No specific action stated beyond PCT caution.", "sourceWording": "may precipitate or exacerbate porphyria",
-      "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine may precipitate or exacerbate porphyria." }] },
-    { "id": "hydroxychloroquine:renal:egfr-under-60", "kind": "renal", "level": "monitor", "med": "hydroxychloroquine", "renal": { "measure": "eGFR", "max": 60 },
-      "concern": "eGFR under 60 ml/min/1.73m2", "consequence": "Increased retinopathy risk (RCOphth odds ratio about 2).", "action": "Retinal monitoring may start annually after 1 year (RCOphth/SPS). SmPC: caution in renal disease; more frequent eye examinations in renal insufficiency; plasma levels and dose adjustment if severely compromised.", "sourceWording": "Monitoring begins after 1 year of drug therapy",
-      "src": [{ "s": "rcophth-hcq-2020", "q": "Impaired renal function (eGFR <60ml/min/1.73m2)" },
-              { "s": "emc-1764", "q": "Estimation of plasma hydroxychloroquine levels should be undertaken in patients with severely compromised renal or hepatic function and dosage adjusted accordingly." },
-              { "s": "sps-hcq-monitoring", "q": "renal insufficiency (eGFR less than 60ml/min/1.73m2)" }] },
-    { "id": "hydroxychloroquine:hepatic:any", "kind": "hepatic", "level": "caution", "med": "hydroxychloroquine", "hepatic": ["any"],
-      "concern": "Hepatic disease", "consequence": "SmPC precaution; serious liver injury reported.", "action": "Use with caution; in severely compromised hepatic function measure plasma levels and adjust dose.", "sourceWording": "Caution should also be applied",
-      "src": [{ "s": "emc-1764", "q": "patients with hepatic or renal disease, and in those taking drugs known to affect those organs." },
-              { "s": "emc-1764", "q": "Estimation of plasma hydroxychloroquine levels should be undertaken in patients with severely compromised renal or hepatic function and dosage adjusted accordingly." }] },
-    { "id": "hydroxychloroquine:pregnancy:smpc", "kind": "pregnancy", "level": "avoid", "med": "hydroxychloroquine",
-      "concern": "Pregnancy (SmPC)", "consequence": "Small increased malformation risk at 400 mg/day or more in the first trimester.", "action": "SmPC: avoid unless benefits outweigh hazards; lowest effective dose. BUMPS: can be used if recommended by a specialist.", "sourceWording": "should be avoided in pregnancy except when",
-      "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine sulfate should be avoided in pregnancy except when, in the judgement of the physician, the individual potential benefits outweigh the potential hazards." }] },
-    { "id": "hydroxychloroquine:pregnancy:bumps", "kind": "pregnancy", "level": "info", "med": "hydroxychloroquine",
-      "concern": "Pregnancy (BUMPS)", "consequence": "BUMPS: no concerns that it harms the baby.", "action": "Can be used in pregnancy if recommended by a specialist.", "sourceWording": "can be used in pregnancy if recommended by a specialist",
-      "src": [{ "s": "bumps-hydroxychloroquine", "q": "Hydroxychloroquine can be used in pregnancy if recommended by a specialist." }] },
-    { "id": "hydroxychloroquine:breastfeeding", "kind": "breastfeeding", "level": "caution", "med": "hydroxychloroquine",
-      "concern": "Breastfeeding", "consequence": "Passes into milk (under 2% of maternal dose); limited long-term infant data.", "action": "Assess risks and benefits by indication and duration.", "sourceWording": "the prescriber should assess the potential risks and benefits",
-      "src": [{ "s": "emc-1764", "q": "the prescriber should assess the potential risks and benefits of use during breastfeeding, according to indication and duration of treatment." }] },
-    { "id": "hydroxychloroquine:interaction:macrolide", "kind": "interaction", "level": "caution", "med": "hydroxychloroquine", "other": "group:macrolide", "effect": "qt-prolongation",
-      "concern": "Hydroxychloroquine with macrolide antibiotics (e.g. clarithromycin)", "consequence": "Increased risk of cardiovascular events and cardiovascular mortality (shown with azithromycin; extrapolated to clarithromycin, erythromycin).", "action": "Carefully weigh benefits and risks; use caution in patients with cardiac risk factors.", "sourceWording": "carefully consider the benefits and risks",
-      "src": [{ "s": "mhra-dsu-hcq-macrolide", "q": "carefully consider the benefits and risks before prescribing systemic azithromycin or other systemic macrolide antibiotics (erythromycin or clarithromycin) to patients being treated with hydroxychloroquine or chloroquine" }] },
-    { "id": "hydroxychloroquine:interaction:qt-prolonging", "kind": "interaction", "level": "caution", "med": "hydroxychloroquine", "other": "group:qt-prolonging", "effect": "qt-prolongation",
-      "concern": "Hydroxychloroquine with QT-prolonging medicines", "consequence": "Increased risk of ventricular arrhythmia.", "action": "Use with caution.", "sourceWording": "should be used with caution",
-      "src": [{ "s": "emc-1764", "q": "Hydroxychloroquine should be used with caution in patients receiving drugs known to prolong the QT interval" }] },
-    { "id": "hydroxychloroquine:interaction:antidiabetic", "kind": "interaction", "level": "dose", "med": "hydroxychloroquine", "other": "group:oral-antidiabetic", "effect": "hypoglycaemia",
-      "concern": "Hydroxychloroquine with insulin or antidiabetic medicines", "consequence": "Hydroxychloroquine may enhance the effect of glucose-lowering treatment; it can itself cause severe hypoglycaemia. The SmPC names insulin and antidiabetic drugs as a class, not a specific medicine.", "action": "A dose decrease of insulin or the antidiabetic may be required.", "sourceWording": "a decrease in doses of insulin or anti-diabetic drugs may be required",
-      "src": [{ "s": "emc-1764", "q": "As hydroxychloroquine may enhance the effects of a hypoglycaemic treatment, a decrease in doses of insulin or anti-diabetic drugs may be required." }] },
-    { "id": "hydroxychloroquine:interaction:antacid", "kind": "interaction", "level": "caution", "med": "hydroxychloroquine", "other": "group:antacid", "effect": "reduced-absorption",
-      "concern": "Hydroxychloroquine with antacids", "consequence": "Antacids may reduce absorption.", "action": "Separate doses by 4 hours.", "sourceWording": "a 4 hour interval be observed",
-      "src": [{ "s": "emc-1764", "q": "antacids may reduce absorption of hydroxychloroquine so it is advised that a 4 hour interval be observed between hydroxychloroquine sulfate and antacid dosing." }] }
+    {
+      "id": "hydroxychloroquine:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "hydroxychloroquine",
+      "allergen": [
+        "hydroxychloroquine"
+      ],
+      "concern": "Hypersensitivity to 4-aminoquinolines",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... Known hypersensitivity to 4-aminoquinoline compounds",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Known hypersensitivity to 4-aminoquinoline compounds or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:maculopathy",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydroxychloroquine",
+      "condition": "retinopathy-maculopathy",
+      "concern": "Pre-existing maculopathy",
+      "consequence": "Retinal toxicity risk.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... Pre-existing maculopathy of the eye",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Pre-existing maculopathy of the eye."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:qt",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "QT prolongation (congenital or acquired)",
+      "consequence": "Risk of ventricular arrhythmias.",
+      "action": "Use with caution; do not exceed the recommended dose.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Hydroxychloroquine should be used with caution in patients with congenital or documented acquired QT prolongation and/or known risk factors for prolongation of the QT interval"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "condition": "heart-failure",
+      "effect": "qt-prolongation",
+      "concern": "Heart failure (QT risk factor)",
+      "consequence": "Risk factor for QT prolongation; cardiomyopathy also reported with hydroxychloroquine.",
+      "action": "Use with caution; monitor for cardiomyopathy.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "cardiac disease, e.g., heart failure, myocardial infarction"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:bradycardia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "condition": "bradycardia",
+      "effect": "qt-prolongation",
+      "concern": "Bradycardia under 50 bpm",
+      "consequence": "Proarrhythmic condition (QT risk).",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "proarrhythmic conditions, e.g., bradycardia (< 50 bpm)"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "condition": "hypokalaemia",
+      "effect": "qt-prolongation",
+      "concern": "Uncorrected hypokalaemia",
+      "consequence": "QT risk factor.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "uncorrected hypokalemia and/or hypomagnesemia"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:hypomagnesaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "condition": "hypomagnesaemia",
+      "effect": "qt-prolongation",
+      "concern": "Uncorrected hypomagnesaemia",
+      "consequence": "QT risk factor.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "uncorrected hypokalemia and/or hypomagnesemia"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:cardiac-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "condition": "cardiac-disease",
+      "effect": "qt-prolongation",
+      "concern": "Cardiac disease (e.g. heart failure, myocardial infarction) or history of ventricular dysrhythmias",
+      "consequence": "Risk factors for QT prolongation and ventricular arrhythmia; cardiomyopathy also reported.",
+      "action": "Use with caution; do not exceed the recommended dose.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "cardiac disease, e.g., heart failure, myocardial infarction"
+        },
+        {
+          "s": "emc-1764",
+          "q": "a history of ventricular dysrhythmias"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:epilepsy",
+      "kind": "condition",
+      "level": "info",
+      "med": "hydroxychloroquine",
+      "condition": "epilepsy",
+      "effect": "seizure-threshold",
+      "concern": "Epilepsy",
+      "consequence": "Hydroxychloroquine can lower the convulsive threshold; antiepileptic activity might be impaired.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "can lower the convulsive threshold",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Hydroxychloroquine can lower the convulsive threshold."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:blood-disorder",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "condition": "blood-dyscrasia",
+      "concern": "Severe blood disorder",
+      "consequence": "Bone marrow depression reported (low risk).",
+      "action": "Use with caution; periodic blood counts; stop if abnormalities develop.",
+      "sourceWording": "Caution should also be applied",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "patients with severe gastrointestinal, neurological or blood disorders."
+        },
+        {
+          "s": "emc-1764",
+          "q": "Hydroxychloroquine sulfate should be discontinued if abnormalities develop."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:age:over-65-eye",
+      "kind": "age",
+      "level": "monitor",
+      "med": "hydroxychloroquine",
+      "age": {
+        "minYears": 65
+      },
+      "concern": "Age above 65 years",
+      "consequence": "SmPC lists age above 65 as a reason for more frequent eye examinations.",
+      "action": "SmPC: ophthalmological examinations more frequent and adapted to the patient.",
+      "sourceWording": "This examination should be more frequent",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "This examination should be more frequent and adapted to the patient in the following situations"
+        },
+        {
+          "s": "emc-1764",
+          "q": "age above 65 years"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "hydroxychloroquine",
+      "condition": "diabetes",
+      "effect": "hypoglycaemia",
+      "concern": "Diabetes (hypoglycaemia risk)",
+      "consequence": "Severe hypoglycaemia reported, with or without antidiabetic medicines.",
+      "action": "Warn about hypoglycaemia; check blood glucose if symptoms and review treatment.",
+      "sourceWording": "should have their blood glucose level checked",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Patients presenting with clinical symptoms suggestive of hypoglycaemia during treatment with hydroxychloroquine should have their blood glucose level checked and treatment reviewed as necessary."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:psychiatric",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "hydroxychloroquine",
+      "condition": "depression-suicidality",
+      "concern": "Depression / suicidal thoughts",
+      "consequence": "Psychiatric reactions and suicidal behaviour reported, mostly in the first month (also without prior history).",
+      "action": "Be vigilant, especially in the first month; advise prompt medical advice for psychiatric symptoms.",
+      "sourceWording": "be vigilant for psychiatric reactions",
+      "src": [
+        {
+          "s": "mhra-dsu-hcq-macrolide",
+          "q": "be vigilant for psychiatric reactions associated with hydroxychloroquine or chloroquine, especially in the first month of treatment"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:g6pd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "condition": "g6pd-deficiency",
+      "concern": "G6PD deficiency",
+      "consequence": "SmPC precaution.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should also be applied",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "those with glucose-6-phosphate dehydrogenase deficiency"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:psoriasis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "condition": "psoriasis",
+      "concern": "Psoriasis",
+      "consequence": "Appears to increase risk of skin reactions; may precipitate psoriasis attacks.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should also be applied",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "in patients with psoriasis since it appears to increase the risk of skin reactions"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:porphyria-cutanea-tarda",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "condition": "porphyria-cutanea-tarda",
+      "concern": "Porphyria cutanea tarda",
+      "consequence": "Can be exacerbated by hydroxychloroquine.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should also be applied",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "those with porphyria cutanea tarda which can be exacerbated by hydroxychloroquine"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:condition:porphyria",
+      "kind": "condition",
+      "level": "info",
+      "med": "hydroxychloroquine",
+      "condition": "porphyria",
+      "concern": "Porphyria",
+      "consequence": "Hydroxychloroquine may precipitate or exacerbate porphyria.",
+      "action": "No specific action stated beyond PCT caution.",
+      "sourceWording": "may precipitate or exacerbate porphyria",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Hydroxychloroquine may precipitate or exacerbate porphyria."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:renal:egfr-under-60",
+      "kind": "renal",
+      "level": "monitor",
+      "med": "hydroxychloroquine",
+      "renal": {
+        "measure": "eGFR",
+        "max": 60
+      },
+      "concern": "eGFR under 60 ml/min/1.73m2",
+      "consequence": "Increased retinopathy risk (RCOphth odds ratio about 2).",
+      "action": "Retinal monitoring may start annually after 1 year (RCOphth/SPS). SmPC: caution in renal disease; more frequent eye examinations in renal insufficiency; plasma levels and dose adjustment if severely compromised.",
+      "sourceWording": "Monitoring begins after 1 year of drug therapy",
+      "src": [
+        {
+          "s": "rcophth-hcq-2020",
+          "q": "Impaired renal function (eGFR <60ml/min/1.73m2)"
+        },
+        {
+          "s": "emc-1764",
+          "q": "Estimation of plasma hydroxychloroquine levels should be undertaken in patients with severely compromised renal or hepatic function and dosage adjusted accordingly."
+        },
+        {
+          "s": "sps-hcq-monitoring",
+          "q": "renal insufficiency (eGFR less than 60ml/min/1.73m2)"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Hepatic disease",
+      "consequence": "SmPC precaution; serious liver injury reported.",
+      "action": "Use with caution; in severely compromised hepatic function measure plasma levels and adjust dose.",
+      "sourceWording": "Caution should also be applied",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "patients with hepatic or renal disease, and in those taking drugs known to affect those organs."
+        },
+        {
+          "s": "emc-1764",
+          "q": "Estimation of plasma hydroxychloroquine levels should be undertaken in patients with severely compromised renal or hepatic function and dosage adjusted accordingly."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "hydroxychloroquine",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Small increased malformation risk at 400 mg/day or more in the first trimester.",
+      "action": "SmPC: avoid unless benefits outweigh hazards; lowest effective dose. BUMPS: can be used if recommended by a specialist.",
+      "sourceWording": "should be avoided in pregnancy except when",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Hydroxychloroquine sulfate should be avoided in pregnancy except when, in the judgement of the physician, the individual potential benefits outweigh the potential hazards."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "hydroxychloroquine",
+      "concern": "Pregnancy (BUMPS)",
+      "consequence": "BUMPS: no concerns that it harms the baby.",
+      "action": "Can be used in pregnancy if recommended by a specialist.",
+      "sourceWording": "can be used in pregnancy if recommended by a specialist",
+      "src": [
+        {
+          "s": "bumps-hydroxychloroquine",
+          "q": "Hydroxychloroquine can be used in pregnancy if recommended by a specialist."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "concern": "Breastfeeding",
+      "consequence": "Passes into milk (under 2% of maternal dose); limited long-term infant data.",
+      "action": "Assess risks and benefits by indication and duration.",
+      "sourceWording": "the prescriber should assess the potential risks and benefits",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "the prescriber should assess the potential risks and benefits of use during breastfeeding, according to indication and duration of treatment."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:interaction:macrolide",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "other": "group:macrolide",
+      "effect": "qt-prolongation",
+      "concern": "Hydroxychloroquine with macrolide antibiotics (e.g. clarithromycin)",
+      "consequence": "Increased risk of cardiovascular events and cardiovascular mortality (shown with azithromycin; extrapolated to clarithromycin, erythromycin).",
+      "action": "Carefully weigh benefits and risks; use caution in patients with cardiac risk factors.",
+      "sourceWording": "carefully consider the benefits and risks",
+      "src": [
+        {
+          "s": "mhra-dsu-hcq-macrolide",
+          "q": "carefully consider the benefits and risks before prescribing systemic azithromycin or other systemic macrolide antibiotics (erythromycin or clarithromycin) to patients being treated with hydroxychloroquine or chloroquine"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:interaction:qt-prolonging",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Hydroxychloroquine with QT-prolonging medicines",
+      "consequence": "Increased risk of ventricular arrhythmia.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Hydroxychloroquine should be used with caution in patients receiving drugs known to prolong the QT interval"
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "hydroxychloroquine",
+      "other": "group:oral-antidiabetic",
+      "effect": "hypoglycaemia",
+      "concern": "Hydroxychloroquine with insulin or antidiabetic medicines",
+      "consequence": "Hydroxychloroquine may enhance the effect of glucose-lowering treatment; it can itself cause severe hypoglycaemia. The SmPC names insulin and antidiabetic drugs as a class, not a specific medicine.",
+      "action": "A dose decrease of insulin or the antidiabetic may be required.",
+      "sourceWording": "a decrease in doses of insulin or anti-diabetic drugs may be required",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "As hydroxychloroquine may enhance the effects of a hypoglycaemic treatment, a decrease in doses of insulin or anti-diabetic drugs may be required."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:interaction:antacid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "hydroxychloroquine",
+      "other": "group:antacid",
+      "effect": "reduced-absorption",
+      "concern": "Hydroxychloroquine with antacids",
+      "consequence": "Antacids may reduce absorption.",
+      "action": "Separate doses by 4 hours.",
+      "sourceWording": "a 4 hour interval be observed",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "antacids may reduce absorption of hydroxychloroquine so it is advised that a 4 hour interval be observed between hydroxychloroquine sulfate and antacid dosing."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:interaction:insulin",
+      "kind": "interaction",
+      "med": "hydroxychloroquine",
+      "level": "dose",
+      "other": "group:insulin",
+      "effect": "hypoglycaemia",
+      "concern": "Hydroxychloroquine with insulin",
+      "consequence": "Hydroxychloroquine may enhance the effect of glucose-lowering treatment; it can itself cause severe hypoglycaemia.",
+      "action": "A dose decrease of insulin may be required.",
+      "sourceWording": "a decrease in doses of insulin or anti-diabetic drugs may be required",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "As hydroxychloroquine may enhance the effects of a hypoglycaemic treatment, a decrease in doses of insulin or anti-diabetic drugs may be required."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:interaction:glp1-agonist",
+      "kind": "interaction",
+      "med": "hydroxychloroquine",
+      "level": "dose",
+      "other": "group:glp1-agonist",
+      "effect": "hypoglycaemia",
+      "concern": "Hydroxychloroquine with GLP-1 receptor agonists (anti-diabetic drugs)",
+      "consequence": "Hydroxychloroquine may enhance the effect of glucose-lowering treatment; it can itself cause severe hypoglycaemia. The SmPC names anti-diabetic drugs as a class.",
+      "action": "A dose decrease of the anti-diabetic drug may be required.",
+      "sourceWording": "a decrease in doses of insulin or anti-diabetic drugs may be required",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "As hydroxychloroquine may enhance the effects of a hypoglycaemic treatment, a decrease in doses of insulin or anti-diabetic drugs may be required."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:interaction:antiepileptic",
+      "kind": "interaction",
+      "med": "hydroxychloroquine",
+      "level": "info",
+      "other": "group:antiepileptic",
+      "effect": "seizure-threshold",
+      "concern": "Hydroxychloroquine with antiepileptics (e.g. carbamazepine)",
+      "consequence": "Hydroxychloroquine can lower the convulsive threshold; antiepileptic activity might be impaired.",
+      "action": "Be aware (no specific action stated).",
+      "sourceWording": "the activity of anti-epileptic drugs might be impaired",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Hydroxychloroquine can lower the convulsive threshold."
+        },
+        {
+          "s": "emc-1764",
+          "q": "Also, the activity of anti-epileptic drugs might be impaired if co-administered with hydroxychloroquine."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:interaction:hepatotoxic",
+      "kind": "interaction",
+      "med": "hydroxychloroquine",
+      "level": "caution",
+      "other": "group:hepatotoxic",
+      "effect": "hepatotoxicity",
+      "concern": "Hydroxychloroquine with hepatotoxic medicines",
+      "consequence": "Concomitant hepatotoxic medicines may be a risk factor for serious drug-induced liver injury.",
+      "action": "Use with caution; evaluate promptly and check liver function tests if symptoms of liver injury occur.",
+      "sourceWording": "Caution should also be applied",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Risk factors may include pre-existing liver disease, or predisposing conditions such as uroporphyrinogen decarboxylase deficiency or concomitant hepatotoxic medications."
+        },
+        {
+          "s": "emc-1764",
+          "q": "patients with hepatic or renal disease, and in those taking drugs known to affect those organs"
+        },
+        {
+          "s": "emc-1764",
+          "q": "Prompt clinical evaluation and measurement of liver function tests should be performed in patients who report symptoms that may indicate liver injury."
+        }
+      ]
+    },
+    {
+      "id": "hydroxychloroquine:interaction:nephrotoxic",
+      "kind": "interaction",
+      "med": "hydroxychloroquine",
+      "level": "caution",
+      "other": "group:nephrotoxic",
+      "effect": "nephrotoxicity",
+      "concern": "Hydroxychloroquine with medicines that affect the kidney",
+      "consequence": "Caution is advised in patients taking drugs known to affect the kidney.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should also be applied",
+      "src": [
+        {
+          "s": "emc-1764",
+          "q": "Caution should also be applied when it is used in the following"
+        },
+        {
+          "s": "emc-1764",
+          "q": "patients with hepatic or renal disease, and in those taking drugs known to affect those organs"
+        }
+      ]
+    }
   ]
 }

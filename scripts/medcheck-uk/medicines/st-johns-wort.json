@@ -332,6 +332,300 @@
         { "s": "mhra-thr-43546-0001", "q": "This product should not be taken concomitantly with the medicines included in section 4.5." },
         { "s": "mhra-thr-43546-0001", "q": "Users of oral contraceptives taking St. John's Wort (Hypericum perforatum) may experience intracyclic menstrual bleeding and risk of contraception failure is increased." },
         { "s": "mhra-thr-43546-0001", "q": "Hormonal implants, injections Transdermal patches, creams etc. Intra-uterine devices with hormones" }
-      ] }
+      ] },
+    {
+      "id": "st-johns-wort:interaction:tricyclic-antidepressant",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "st-johns-wort",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "serotonin-syndrome",
+      "concern": "St John's wort + tricyclic antidepressant (e.g. amitriptyline)",
+      "consequence": "Increased serotonergic effects with more adverse reactions; amitriptyline levels may also fall.",
+      "action": "Should not be taken together.",
+      "sourceWording": "should not be taken concomitantly",
+      "src": [
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below"
+        },
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Tricyclics e.g. Reduced blood levels with Do not take with this product. Amitriptyline"
+        },
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "(e.g. amitriptyline, fexofenadine, benzodiazepenes, methadone, simvastatin, digoxin, finasteride), because a reduction of plasma concentration is possible"
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:tricyclic-antidepressant:kira",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "st-johns-wort",
+      "formulations": [
+        "sjw-tab-450mg-extract"
+      ],
+      "other": "group:tricyclic-antidepressant",
+      "effect": "serotonin-syndrome",
+      "concern": "St John's wort (THR 43546/0001) + tricyclic antidepressant (e.g. amitriptyline)",
+      "consequence": "Increased serotonergic effects with more adverse reactions; amitriptyline levels may also fall.",
+      "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.",
+      "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "This product should not be taken concomitantly with the medicines included in section 4.5."
+        },
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "Tricyclics eg. effects with increased incidence of adverse Amitriptyline reactions."
+        },
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "(e.g. amitriptyline, fexofenadine, benzodiazepines, methadone, simvastatin, digoxin, finasteride), because a reduction of plasma concentration is possible"
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:snri",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "st-johns-wort",
+      "other": "group:snri",
+      "effect": "serotonin-syndrome",
+      "concern": "St John's wort + SNRI (duloxetine, venlafaxine)",
+      "consequence": "Increased serotonergic effects with more adverse reactions; reduced antidepressant levels.",
+      "action": "Should not be taken together.",
+      "sourceWording": "should not be taken concomitantly",
+      "src": [
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below"
+        },
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Others e.g. Duloxetine Venlafaxine"
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:snri:kira",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "st-johns-wort",
+      "formulations": [
+        "sjw-tab-450mg-extract"
+      ],
+      "other": "group:snri",
+      "effect": "serotonin-syndrome",
+      "concern": "St John's wort (THR 43546/0001) + SNRI (duloxetine, venlafaxine)",
+      "consequence": "Increased serotonergic effects with more adverse reactions; reduced antidepressant levels.",
+      "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.",
+      "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "This product should not be taken concomitantly with the medicines included in section 4.5."
+        },
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "Others eg. risk of therapeutic failure. product. Duloxetine Venlafaxine"
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:antiepileptic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "st-johns-wort",
+      "other": "group:antiepileptic",
+      "concern": "St John's wort + antiepileptic (e.g. carbamazepine)",
+      "consequence": "Reduced antiepileptic levels; increased seizure frequency and severity reported (MHRA).",
+      "action": "Should not be taken together.",
+      "sourceWording": "should not be taken concomitantly",
+      "src": [
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below"
+        },
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Antiepileptics All drugs in this class including: Carbamazepine Phenobarbitone Phenytoin Primidone Sodium valproate"
+        },
+        {
+          "s": "mhra-dsu-sjw-antiepileptics",
+          "q": "concomitant use of St John's wort and antiepileptic medicine is not recommended"
+        },
+        {
+          "s": "mhra-dsu-sjw-antiepileptics",
+          "q": "resulted in an increase in the frequency and severity of the patient's seizures"
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:antiepileptic:kira",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "st-johns-wort",
+      "formulations": [
+        "sjw-tab-450mg-extract"
+      ],
+      "other": "group:antiepileptic",
+      "concern": "St John's wort (THR 43546/0001) + antiepileptic (e.g. carbamazepine)",
+      "consequence": "Reduced antiepileptic levels; increased seizure frequency and severity reported (MHRA).",
+      "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.",
+      "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "This product should not be taken concomitantly with the medicines included in section 4.5."
+        },
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "Antiepileptics All drugs in this class Reduced blood levels with Do not take with this including: risk of therapeutic failure. product. Carbamazepine"
+        },
+        {
+          "s": "mhra-dsu-sjw-antiepileptics",
+          "q": "resulted in an increase in the frequency and severity of the patient's seizures"
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:nifedipine",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "st-johns-wort",
+      "other": "nifedipine",
+      "concern": "St John's wort + nifedipine (calcium-channel blocker)",
+      "consequence": "Reduced nifedipine levels with risk of therapeutic failure.",
+      "action": "Should not be taken together.",
+      "sourceWording": "should not be taken concomitantly",
+      "src": [
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below"
+        },
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Calcium channel blockers Amlodipine Reduced blood levels with risk of Nifedipine therapeutic failure."
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:nifedipine:kira",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "st-johns-wort",
+      "formulations": [
+        "sjw-tab-450mg-extract"
+      ],
+      "other": "nifedipine",
+      "concern": "St John's wort (THR 43546/0001) + nifedipine (calcium-channel blocker)",
+      "consequence": "Reduced nifedipine levels with risk of therapeutic failure.",
+      "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.",
+      "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "This product should not be taken concomitantly with the medicines included in section 4.5."
+        },
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "Calcium channel blockers Reduced blood levels and Do not take with this Amlodipine Nifedipine Verapamil Felodipine"
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:verapamil",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "st-johns-wort",
+      "other": "verapamil",
+      "concern": "St John's wort + verapamil (calcium-channel blocker)",
+      "consequence": "Reduced verapamil levels with risk of therapeutic failure.",
+      "action": "Should not be taken together.",
+      "sourceWording": "should not be taken concomitantly",
+      "src": [
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below"
+        },
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Calcium channel blockers Amlodipine Reduced blood levels with risk of Nifedipine therapeutic failure. Verapamil Felodipine"
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:verapamil:kira",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "st-johns-wort",
+      "formulations": [
+        "sjw-tab-450mg-extract"
+      ],
+      "other": "verapamil",
+      "concern": "St John's wort (THR 43546/0001) + verapamil (calcium-channel blocker)",
+      "consequence": "Reduced verapamil levels with risk of therapeutic failure.",
+      "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.",
+      "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "This product should not be taken concomitantly with the medicines included in section 4.5."
+        },
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "Calcium channel blockers Reduced blood levels and Do not take with this Amlodipine Nifedipine Verapamil Felodipine"
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:gliclazide",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "st-johns-wort",
+      "other": "gliclazide",
+      "concern": "St John's wort + gliclazide",
+      "consequence": "Reduced gliclazide levels with risk of therapeutic failure.",
+      "action": "Should not be taken together.",
+      "sourceWording": "should not be taken concomitantly",
+      "src": [
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Therefore this product should not be taken concomitantly with the medicines included in the table below"
+        },
+        {
+          "s": "mhra-thr-13668-0014",
+          "q": "Oral hypoglycaemic drugs Gliclazide Reduced blood levels with risk of therapeutic failure."
+        }
+      ]
+    },
+    {
+      "id": "st-johns-wort:interaction:gliclazide:kira",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "st-johns-wort",
+      "formulations": [
+        "sjw-tab-450mg-extract"
+      ],
+      "other": "gliclazide",
+      "concern": "St John's wort (THR 43546/0001) + gliclazide",
+      "consequence": "Reduced gliclazide levels with risk of therapeutic failure.",
+      "action": "This product's SPC lists its section 4.5 medicines under Contraindications (4.3): do not take together.",
+      "sourceWording": "should not be taken concomitantly with the medicines included in section 4.5",
+      "src": [
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "This product should not be taken concomitantly with the medicines included in section 4.5."
+        },
+        {
+          "s": "mhra-thr-43546-0001",
+          "q": "Oral hypoglycaemic drugs Reduced blood levels with Do not take with this Gliclazide risk of therapeutic failure."
+        }
+      ]
+    }
   ]
 }

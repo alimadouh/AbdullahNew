@@ -1401,6 +1401,79 @@
           "q": "In elderly patients concurrently taking diuretics, primarily thiazides, there is an increased incidence of thrombocytopenia with purpura."
         }
       ]
+    },
+    {
+      "id": "trimethoprim:interaction:arb",
+      "kind": "interaction",
+      "med": "trimethoprim",
+      "level": "monitor",
+      "other": "group:arb",
+      "effect": "hyperkalaemia",
+      "concern": "Trimethoprim with angiotensin II receptor blockers",
+      "consequence": "May lead to a significant increase in serum potassium.",
+      "action": "Monitor serum potassium.",
+      "sourceWording": "monitoring of serum potassium is recommended",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "renin-angiotensin system inhibitors (eg: ACE inhibitors or renin angiotensin receptor blockers) and other potassium increasing substances (eg: heparin)"
+        },
+        {
+          "s": "emc-4566",
+          "q": "Monitoring of potassium should be undertaken as appropriate (see section 4.4)."
+        },
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "If concomitant use of the above-mentioned agents is deemed appropriate, monitoring of serum potassium is recommended"
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:interaction:repaglinide",
+      "kind": "interaction",
+      "med": "trimethoprim",
+      "level": "monitor",
+      "other": "repaglinide",
+      "effect": "hypoglycaemia",
+      "concern": "Trimethoprim with repaglinide",
+      "consequence": "Trimethoprim may enhance the hypoglycaemic effect of repaglinide.",
+      "action": "Monitor blood glucose.",
+      "sourceWording": "Monitoring of blood glucose is advised",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Repaglinide: Trimethoprim may enhance the hypoglycaemic effects of repaglinide."
+        },
+        {
+          "s": "emc-4566",
+          "q": "Monitoring of blood glucose is advised if co-administered with repaglinide"
+        },
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Monitoring of blood glucose is advised if co-administered with repaglinide"
+        }
+      ]
+    },
+    {
+      "id": "trimethoprim:interaction:antiepileptic",
+      "kind": "interaction",
+      "med": "trimethoprim",
+      "level": "info",
+      "other": "group:antiepileptic",
+      "concern": "Trimethoprim with anticonvulsants (e.g. carbamazepine)",
+      "consequence": "Trimethoprim may induce folate deficiency in patients predisposed to it, such as those taking anticonvulsants.",
+      "action": "Be aware; the SmPC advises caution in actual or potential folate deficiency and considering a folate supplement.",
+      "sourceWording": "may induce folate deficiency",
+      "src": [
+        {
+          "s": "emc-4566",
+          "q": "Trimethoprim may induce folate deficiency in patients predisposed to folate deficiency such as those receiving concomitant folate antagonists or anticonvulsants."
+        },
+        {
+          "s": "mhra-tmp-tab-teva",
+          "q": "Caution should be exercised in the administration of trimethoprim to patients with actual or potential folate deficiency"
+        }
+      ]
     }
   ]
 }

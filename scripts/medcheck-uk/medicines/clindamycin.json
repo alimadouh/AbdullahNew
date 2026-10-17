@@ -1,0 +1,1294 @@
+{
+  "id": "clindamycin",
+  "name": "Clindamycin (oral, vaginal)",
+  "ingredients": [
+    "clindamycin"
+  ],
+  "availability": {
+    "status": "uk"
+  },
+  "className": "Lincosamide antibacterial",
+  "groups": [
+    "lincosamide",
+    "antibacterial"
+  ],
+  "searchTerms": [
+    "clindamycin hydrochloride",
+    "clindamycin phosphate"
+  ],
+  "formulations": [
+    {
+      "id": "clindamycin-cap",
+      "label": "Capsules",
+      "route": "oral",
+      "strengths": "150 mg",
+      "release": "immediate",
+      "note": "Systemic antibacterial. Contains lactose; capsule printing ink contains soya lecithin.",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "Each capsule contains clindamycin hydrochloride equivalent to 150 mg clindamycin."
+        },
+        {
+          "s": "emc-1210",
+          "q": "Lactose monohydrate Maize starch Talc Magnesium stearate"
+        }
+      ],
+      "sourceIds": [
+        "emc-1210"
+      ]
+    },
+    {
+      "id": "clindamycin-vag-cream",
+      "label": "Vaginal cream",
+      "route": "vaginal",
+      "strengths": "2% w/w (about 100 mg clindamycin per 5 g applicator)",
+      "release": "n/a",
+      "note": "For bacterial vaginosis only. About 4% of a dose is absorbed. Contains cetostearyl alcohol, propylene glycol, benzyl alcohol and polysorbate 60.",
+      "src": [
+        {
+          "s": "emc-1080",
+          "q": "Each gram of cream contains clindamycin phosphate equivalent to 20 mg or 2.0% w/w clindamycin."
+        },
+        {
+          "s": "emc-1080",
+          "q": "approximately 4% (range 0.6% to 11%) of the administered dose was absorbed systemically"
+        }
+      ],
+      "sourceIds": [
+        "emc-1080"
+      ]
+    },
+    {
+      "id": "clindamycin-vag-ovule",
+      "label": "Vaginal capsule (ovule)",
+      "route": "vaginal",
+      "strengths": "100 mg",
+      "release": "n/a",
+      "note": "No UK SmPC was found for a 100 mg vaginal capsule (ovule). Information is taken from the UK SmPC for clindamycin 100 mg pessaries (same dose and route). About 30% (6% to 70%) of a dose is absorbed, roughly 7 times more than the cream.",
+      "src": [
+        {
+          "s": "mhra-pl35533-0315-spc",
+          "q": "Each pessary contains 119 mg of clindamycin phosphate equivalent to 100 mg clindamycin."
+        },
+        {
+          "s": "mhra-pl35533-0315-spc",
+          "q": "Approximately 30% (range 6% to 70%) of the administered dose was absorbed systemically on day 3 of dosing"
+        },
+        {
+          "s": "mhra-pl35533-0315-spc",
+          "q": "systemic absorption of the suppository was approximately 7-fold greater than that following dosing of the vaginal cream"
+        }
+      ],
+      "sourceIds": [
+        "mhra-pl35533-0315-spc"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Capsules: serious infections caused by susceptible Gram-positive organisms (staphylococci, streptococci, pneumococci) and serious infections caused by susceptible anaerobes. Does not reach the CSF in effective amounts.",
+          "tag": "Oral",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Serious infections caused by susceptible gram-positive organisms, staphylococci (both penicillinase- and non-penicillinase-producing), streptococci and pneumococci."
+            },
+            {
+              "s": "emc-1210",
+              "q": "It is also indicated in serious infections caused by susceptible anaerobic pathogens."
+            },
+            {
+              "s": "emc-1210",
+              "q": "Clindamycin does not penetrate the blood/brain barrier in therapeutically effective quantities."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal cream and pessaries: bacterial vaginosis.",
+          "tag": "Vaginal",
+          "formulations": [
+            "clindamycin-vag-cream",
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "Antibiotic for the treatment of bacterial vaginosis."
+            },
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "Clindamycin 100 mg Pessaries is indicated for the treatment of bacterial vaginosis"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Capsules: use only for serious infections, weighing the type of infection against the risk of diarrhoea and colitis.",
+          "tag": "Serious infections only",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "This medicine should only be used in the treatment of serious infections."
+            }
+          ]
+        },
+        {
+          "t": "Capsules: more than 90% of MRSA are resistant; do not use while awaiting susceptibility results if MRSA is suspected.",
+          "tag": "MRSA",
+          "detail": true,
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "it should not be used while awaiting susceptibility test results if there is any suspicion of MRSA"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Capsules: moderately severe infection 150 to 300 mg every six hours; severe infection 300 to 450 mg every six hours. Beta-haemolytic streptococcal infection: continue for at least 10 days. No dose change for age alone.",
+          "tag": "Adults - oral",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Moderately severe infection, 150 - 300 mg every six hours; severe infection, 300 - 450 mg every six hours."
+            },
+            {
+              "s": "emc-1210",
+              "q": "treatment with this medicine should continue for at least 10 days"
+            },
+            {
+              "s": "emc-1210",
+              "q": "Dosage requirements in elderly patients, therefore, should not be influenced by age alone."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal cream: one applicatorful (5 g) into the vagina at bedtime for 7 consecutive nights; a 3-night course has also been shown to work.",
+          "tag": "Bacterial vaginosis - cream",
+          "formulations": [
+            "clindamycin-vag-cream"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "One applicator full intravaginally at bedtime for 7 consecutive days. In patients for whom a shorter treatment course is desirable, a 3 day regimen has been shown to be effective."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal 100 mg (pessary SmPC): one into the vagina at bedtime for three consecutive nights.",
+          "tag": "Bacterial vaginosis - 100 mg vaginal",
+          "formulations": [
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "The recommended dose is one pessary intravaginally at bedtime, for three consecutive days."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Capsules: only for children who can swallow capsules. 12 to 25 mg/kg/day in divided doses every six hours depending on severity, dosed on total body weight (whole capsules may not give exact mg/kg doses).",
+          "tag": "Oral",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Clindamycin capsules should only be used for children who are able to swallow capsules."
+            },
+            {
+              "s": "emc-1210",
+              "q": "Doses of 12-25 mg/kg/day six hourly depending on the severity of the infection."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal cream: safety and efficacy in children not established. 100 mg pessary SmPC: not established under 16 years.",
+          "tag": "Vaginal",
+          "formulations": [
+            "clindamycin-vag-cream",
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "Safety and efficacy in paediatric patients have not been established"
+            },
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "The safety and efficacy of Clindamycin 100 mg Pessaries in children under 16 years of age has not been established."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "All forms: hypersensitivity to clindamycin, lincomycin or any excipient.",
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "This medicine is contra-indicated in patients previously found to be sensitive to clindamycin, lincomycin or to any of the excipients listed in section 6.1."
+            },
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "Hypersensitivity to the active substance, to lincomycin, or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal cream: history of inflammatory bowel disease or of antibiotic-associated colitis.",
+          "tag": "Vaginal cream",
+          "formulations": [
+            "clindamycin-vag-cream"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "This medicine is also contraindicated in individuals with a history of inflammatory bowel disease or a history of antibiotic-associated colitis."
+            }
+          ]
+        },
+        {
+          "t": "100 mg vaginal (pessary SmPC): history of antibiotic-associated colitis.",
+          "tag": "Vaginal 100 mg",
+          "formulations": [
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "Clindamycin 100 mg Pessaries are also contraindicated in individuals with a history of antibiotic-associated colitis."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Clostridioides difficile diarrhoea and colitis (can be fatal, can start up to 2 months after treatment): stop the capsules at once if marked diarrhoea occurs. Vaginal forms: stop if pseudomembranous colitis occurs; drugs that slow peristalsis are contraindicated in this situation.",
+          "tag": "C. difficile / colitis",
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "The appearance of marked diarrhoea should be regarded as an indication that the product should be discontinued immediately."
+            },
+            {
+              "s": "emc-1210",
+              "q": "CDAD has been reported to occur over two months after the administration of antibacterial agents"
+            },
+            {
+              "s": "emc-1080",
+              "q": "Clindamycin treatment must be stopped if pseudomembranous diarrhoea occurs."
+            },
+            {
+              "s": "emc-1080",
+              "q": "Drugs inhibiting peristalsis are contraindicated in this situation."
+            }
+          ]
+        },
+        {
+          "t": "Capsules: caution with a history of gastrointestinal disease, especially colitis; colitis runs a more severe course in older or debilitated patients.",
+          "tag": "Gastrointestinal disease",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Caution should be used when prescribing this medicine to individuals with a history of gastro-intestinal disease, especially colitis."
+            },
+            {
+              "s": "emc-1210",
+              "q": "The disease is likely to follow a more severe course in older patients or patients who are debilitated."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal forms and inflammatory bowel disease (Crohn's disease, ulcerative colitis): the 100 mg pessary SmPC advises caution. The vaginal cream SmPC lists a history of inflammatory bowel disease as a contraindication (section 4.3), although its section 4.4 also says caution.",
+          "tag": "Inflammatory bowel disease",
+          "formulations": [
+            "clindamycin-vag-cream",
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "Caution is advised in patients when prescribing Clindamycin 100 mg Pessaries to individuals with Inflammatory Bowel Disease such as Crohn's Disease or Ulcerative Colitis."
+            },
+            {
+              "s": "emc-1080",
+              "q": "This medicine is also contraindicated in individuals with a history of inflammatory bowel disease"
+            },
+            {
+              "s": "emc-1080",
+              "q": "Caution is advised in patients when prescribing clindamycin to individuals with inflammatory bowel disease such as Crohn's disease or ulcerative colitis."
+            }
+          ]
+        },
+        {
+          "t": "Capsules: severe hypersensitivity and skin reactions (DRESS, SJS, TEN, AGEP, Kounis syndrome): stop clindamycin and treat.",
+          "tag": "Hypersensitivity / skin",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "If a hypersensitivity or severe skin reaction occurs, clindamycin should be discontinued, and appropriate therapy should be initiated"
+            }
+          ]
+        },
+        {
+          "t": "Capsules: oesophagitis and oesophageal ulcer risk; follow the administration advice.",
+          "tag": "Oesophagus",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Due to the risk of oesophagitis and oesophageal ulcer, it is important to ensure compliance with administration guidance"
+            }
+          ]
+        },
+        {
+          "t": "Capsules: acute kidney injury reported; consider renal monitoring in pre-existing renal dysfunction or with nephrotoxic drugs. Check liver and kidney function periodically in prolonged therapy (and in neonates and infants). Care in atopic individuals.",
+          "tag": "Kidney / liver / atopy",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "In patients suffering from pre-existing renal dysfunction or taking concomitant nephrotoxic drugs, monitoring of renal function should be considered"
+            },
+            {
+              "s": "emc-1210",
+              "q": "Periodic liver and kidney function tests should be carried out during prolonged therapy."
+            },
+            {
+              "s": "emc-1210",
+              "q": "Care should be observed in the use of this medicine in atopic individuals."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal forms: test for other infections (Trichomonas, Candida, Chlamydia, gonorrhoea) as needed; overgrowth of yeasts may occur. Sexual intercourse and other vaginal products (tampons, douches) are not recommended during treatment.",
+          "tag": "Vaginal use",
+          "formulations": [
+            "clindamycin-vag-cream",
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "The use of clindamycin may result in the overgrowth of non-susceptible organisms, particularly yeasts."
+            },
+            {
+              "s": "emc-1080",
+              "q": "As with all vaginal infections, sexual intercourse during treatment with clindamycin vaginal cream is not recommended."
+            },
+            {
+              "s": "emc-1080",
+              "q": "The use of other vaginal products (such as tampons and douches) during the treatment with clindamycin vaginal cream is not recommended."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal forms: latex condoms and diaphragms may be weakened; their use within 72 hours after treatment is not recommended (reduced contraceptive and STI protection).",
+          "tag": "Latex condoms / diaphragms",
+          "formulations": [
+            "clindamycin-vag-cream",
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "Latex condoms and diaphragms may be weakened if exposed to the suppository base used in clindamycin vaginal cream."
+            },
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "The use of such products within 72 hours following treatment with Clindamycin 100 mg Pessaries is not recommended"
+            }
+          ]
+        },
+        {
+          "t": "Vaginal cream excipients: cetostearyl alcohol (local skin reactions), benzyl alcohol (allergic reactions, mild irritation), polysorbate 60 (hypersensitivity).",
+          "tag": "Cream excipients",
+          "detail": true,
+          "formulations": [
+            "clindamycin-vag-cream"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "Cetostearyl alcohol may cause local skin reactions (e.g. contact dermatitis). Benzyl alcohol may cause allergic reactions and mild local irritation."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Capsules - vitamin K antagonists (e.g. warfarin): raised PT/INR and bleeding reported; monitor coagulation tests frequently.",
+          "tag": "Warfarin",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Coagulation tests, therefore, should be frequently monitored in patients treated with vitamin K antagonists."
+            }
+          ]
+        },
+        {
+          "t": "Capsules - CYP3A4/3A5 inhibitors may reduce clindamycin clearance; inducers may increase it. With strong CYP3A4 inducers (e.g. rifampicin) monitor for loss of effect.",
+          "tag": "CYP3A4 inhibitors / inducers",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "inhibitors of CYP3A4 and CYP3A5 may reduce clindamycin clearance and inducers of these isoenzymes may increase clindamycin clearance"
+            },
+            {
+              "s": "emc-1210",
+              "q": "In the presence of strong CYP3A4 inducers such as rifampicin, monitor for loss of effectiveness."
+            }
+          ]
+        },
+        {
+          "t": "Capsules - nephrotoxic drugs: consider monitoring renal function.",
+          "tag": "Nephrotoxic drugs",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "In patients suffering from pre-existing renal dysfunction or taking concomitant nephrotoxic drugs, monitoring of renal function should be considered"
+            }
+          ]
+        },
+        {
+          "t": "All forms - neuromuscular blocking agents: clindamycin can enhance their effect; use with caution. Vaginal forms: no information on use with other vaginal medicines.",
+          "tag": "Neuromuscular blockers",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "It should be used with caution, therefore, in patients receiving such agents."
+            },
+            {
+              "s": "emc-1080",
+              "q": "No information is available on the concomitant use of other vaginal medications with clindamycin."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Capsules: no dose change needed in renal impairment. Acute kidney injury has been reported; consider monitoring renal function in pre-existing renal dysfunction. Not removed by dialysis.",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Clindamycin dosage modification is not necessary in patients with renal or hepatic insufficiency."
+            },
+            {
+              "s": "emc-1210",
+              "q": "Haemodialysis and peritoneal dialysis are not effective in removing clindamycin from the serum."
+            }
+          ]
+        },
+        {
+          "t": "100 mg vaginal (pessary SmPC): not studied in renal impairment.",
+          "formulations": [
+            "clindamycin-vag-ovule"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "The use of Clindamycin 100 mg Pessaries has not been studied in patients with impaired renal function."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Capsules: no dose change needed in hepatic impairment; periodic liver function tests during prolonged therapy.",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Clindamycin dosage modification is not necessary in patients with renal or hepatic insufficiency."
+            }
+          ]
+        },
+        {
+          "t": "100 mg vaginal (pessary SmPC): not studied in hepatic impairment.",
+          "formulations": [
+            "clindamycin-vag-ovule"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "Safety and efficacy studies have not been performed with Clindamycin 100 mg Pessaries in the following populations: pregnant, lactating women, patients with impaired hepatic function, immunodeficiency or colitis."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Capsules: crosses the placenta; no increase in congenital abnormalities with systemic use in the second and third trimesters; no adequate first-trimester studies. Use only if clearly needed.",
+          "tag": "Oral",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "There are no adequate and well-controlled studies in pregnant women during the first trimester of pregnancy. Clindamycin should be used in pregnancy only if clearly needed."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal forms: not recommended in the first trimester (no adequate studies); may be used in the second and third trimesters if clearly necessary, after careful risk-benefit assessment. Pessary SmPC: insert with a finger (no applicator) in pregnancy.",
+          "tag": "Vaginal",
+          "formulations": [
+            "clindamycin-vag-cream",
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "Use of clindamycin is not recommended during the first trimester, as there are no adequate and well-controlled studies in pregnant women over this period."
+            },
+            {
+              "s": "emc-1080",
+              "q": "Clindamycin may be used to treat pregnant women if clearly necessary during the second and third trimester of pregnancy."
+            },
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "Digital application of the pessary is recommended during pregnancy."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Capsules: clindamycin passes into milk and may upset the infant's gut flora (diarrhoea, blood in stool) or cause rash. Not a reason to stop breastfeeding, but an alternative drug may be preferred.",
+          "tag": "Oral",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "If oral or intravenous clindamycin is required by a nursing mother, it is not a reason to discontinue breastfeeding, but an alternate drug may be preferred."
+            },
+            {
+              "s": "emc-1210",
+              "q": "Clindamycin has the potential to cause adverse effects on the breastfed infant's gastrointestinal flora such as diarrhoea or blood in the stool, or rash."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal cream: unknown whether it passes into milk after vaginal use; the SmPC repeats the oral advice. 100 mg vaginal (pessary SmPC): can be considered if the expected benefit to the mother outweighs the risks to the child.",
+          "tag": "Vaginal",
+          "formulations": [
+            "clindamycin-vag-cream",
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "It is not known if clindamycin is excreted in human breast milk following the use of vaginally administered clindamycin vaginal cream."
+            },
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "Use of Clindamycin 100 mg Pessaries in a breastfeeding woman can be considered if the expected benefit to the mother outweighs the risks for the child."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No effect on fertility in animal studies. Vaginal forms can weaken latex condoms and diaphragms (see cautions).",
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Fertility studies in rats treated orally with clindamycin revealed no effects on fertility or mating ability."
+            },
+            {
+              "s": "emc-1080",
+              "q": "could be associated with diminished contraceptive efficacy or protection against sexually transmitted disease"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Capsules (common): diarrhoea, abdominal pain, pseudomembranous colitis, abnormal liver function tests. Nausea and vomiting are uncommon.",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "diarrhoea, abdominal pain vomiting, nausea"
+            },
+            {
+              "s": "emc-1210",
+              "q": "Investigations liver function test abnormal"
+            }
+          ]
+        },
+        {
+          "t": "Vaginal cream: vulvovaginal candidiasis is very common. Common: fungal or candida infection, headache, dizziness, taste change, upper respiratory infection, abdominal pain, constipation, diarrhoea, nausea, vomiting, itching (not at the application site), rash, back pain, urinary tract infection, vulvovaginitis, vaginal discharge, menstrual disorder.",
+          "formulations": [
+            "clindamycin-vag-cream"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "Fungal infection, candida infection"
+            },
+            {
+              "s": "emc-1080",
+              "q": "Abdominal pain, constipation, diarrhea, nausea, vomiting"
+            },
+            {
+              "s": "emc-1080",
+              "q": "Vulvovaginal candidiasis Vulvovaginitis, vulvovaginal disorder, menstrual disorder, vulvovaginal pain, metrorrhagia, vaginal discharge"
+            }
+          ]
+        },
+        {
+          "t": "100 mg vaginal (pessary SmPC, common or uncommon; the PDF table does not allow an exact split): fungal or candida infection, headache, abdominal pain, diarrhoea, nausea, vomiting, itching, rash, vulvovaginal candidiasis and pain, vaginal discharge, application-site pain.",
+          "formulations": [
+            "clindamycin-vag-ovule"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "Common (≥ 1/100 to < 1/10); Uncommon (≥ 1/1,000 to < 1/100)."
+            },
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "Pseudomembranous colitis is a class event for antibacterials."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Pseudomembranous / C. difficile colitis (can be fatal, may start weeks after treatment): stop clindamycin; do not give drugs that slow peristalsis.",
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "If allowed to progress, it may produce peritonitis, shock and toxic megacolon. This may be fatal."
+            },
+            {
+              "s": "emc-1080",
+              "q": "Drugs inhibiting peristalsis are contraindicated in this situation."
+            }
+          ]
+        },
+        {
+          "t": "Capsules: anaphylaxis, Kounis syndrome, severe skin reactions (SJS, TEN, DRESS, AGEP): stop and treat. Oesophagitis/oesophageal ulcer, acute kidney injury, jaundice and blood disorders (agranulocytosis, neutropenia, thrombocytopenia) also reported.",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "If a hypersensitivity or severe skin reaction occurs, clindamycin should be discontinued, and appropriate therapy should be initiated"
+            },
+            {
+              "s": "emc-1210",
+              "q": "agranulocytosis*, neutropenia*, thrombocytopenia*"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Capsules, prolonged therapy: periodic liver and kidney function tests (also in neonates and infants).",
+          "tag": "ongoing",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Periodic liver and kidney function tests should be carried out during prolonged therapy. Such monitoring is also recommended in neonates and infants."
+            }
+          ]
+        },
+        {
+          "t": "Capsules with a vitamin K antagonist: monitor PT/INR frequently.",
+          "tag": "ongoing",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Coagulation tests, therefore, should be frequently monitored in patients treated with vitamin K antagonists."
+            }
+          ]
+        },
+        {
+          "t": "Stop if marked diarrhoea (capsules) or pseudomembranous colitis (vaginal forms), or a severe hypersensitivity or skin reaction.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "The appearance of marked diarrhoea should be regarded as an indication that the product should be discontinued immediately."
+            },
+            {
+              "s": "emc-1080",
+              "q": "Clindamycin treatment must be stopped if pseudomembranous diarrhoea occurs."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Capsules: swallow whole with a full glass of water, at least 30 minutes before lying down. Food does not much affect absorption.",
+          "formulations": [
+            "clindamycin-cap"
+          ],
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "Capsules should always be taken whole with a full glass of water and no less than 30 minutes before lying down to avoid the possibility of oesophageal irritation."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal cream: one applicatorful into the vagina at bedtime.",
+          "formulations": [
+            "clindamycin-vag-cream"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "One applicator full intravaginally at bedtime"
+            }
+          ]
+        },
+        {
+          "t": "100 mg vaginal (pessary SmPC): lie on your back with knees drawn up and insert as far as comfortable into the vagina with the middle finger, at bedtime.",
+          "formulations": [
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "mhra-pl35533-0315-spc",
+              "q": "Lie on your back with your knees drawn up to your chest. Insert the pessary into the vagina with the tip of your third (middle) finger as far as possible without causing discomfort."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report diarrhoea at once, even weeks after the course ends.",
+          "src": [
+            {
+              "s": "emc-1210",
+              "q": "CDAD must be considered in all patients who present with diarrhoea following antibiotic use."
+            }
+          ]
+        },
+        {
+          "t": "Vaginal forms: avoid sex, tampons and douches during treatment; do not rely on latex condoms or diaphragms during and for 72 hours after treatment.",
+          "formulations": [
+            "clindamycin-vag-cream",
+            "clindamycin-vag-ovule"
+          ],
+          "src": [
+            {
+              "s": "emc-1080",
+              "q": "The use of such products within 72 hours following treatment with clindamycin vaginal cream is not recommended"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "clindamycin:allergy:clindamycin-lincomycin",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "clindamycin",
+      "allergen": [
+        "clindamycin",
+        "group:lincosamide"
+      ],
+      "concern": "Hypersensitivity to clindamycin or lincomycin (all forms)",
+      "consequence": "Hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "contra-indicated in patients previously found to be sensitive to clindamycin, lincomycin",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "This medicine is contra-indicated in patients previously found to be sensitive to clindamycin, lincomycin or to any of the excipients listed in section 6.1."
+        },
+        {
+          "s": "emc-1080",
+          "q": "This medicine is contra-indicated in patients with a history of hypersensitivity to clindamycin, lincomycin, or to any of the excipients listed in section 6.1."
+        },
+        {
+          "s": "mhra-pl35533-0315-spc",
+          "q": "Hypersensitivity to the active substance, to lincomycin, or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:condition:ibd-cream",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-vag-cream"
+      ],
+      "condition": "inflammatory-bowel-disease",
+      "concern": "History of inflammatory bowel disease (vaginal cream)",
+      "consequence": "Risk of antibiotic-associated colitis.",
+      "action": "Do not use the vaginal cream.",
+      "sourceWording": "also contraindicated in individuals with a history of inflammatory bowel disease",
+      "src": [
+        {
+          "s": "emc-1080",
+          "q": "This medicine is also contraindicated in individuals with a history of inflammatory bowel disease or a history of antibiotic-associated colitis."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:condition:ibd-ovule",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-vag-ovule"
+      ],
+      "condition": "inflammatory-bowel-disease",
+      "concern": "Inflammatory bowel disease (100 mg vaginal, pessary SmPC)",
+      "consequence": "Risk of antibiotic-associated colitis.",
+      "action": "Caution advised.",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "mhra-pl35533-0315-spc",
+          "q": "Caution is advised in patients when prescribing Clindamycin 100 mg Pessaries to individuals with Inflammatory Bowel Disease such as Crohn's Disease or Ulcerative Colitis."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:condition:ibd-oral",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-cap"
+      ],
+      "condition": "inflammatory-bowel-disease",
+      "concern": "History of gastrointestinal disease, especially colitis (capsules)",
+      "consequence": "Risk of antibiotic-associated colitis, which may be fatal.",
+      "action": "Use with caution; stop at once if marked diarrhoea occurs.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "Caution should be used when prescribing this medicine to individuals with a history of gastro-intestinal disease, especially colitis."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:condition:aac-vaginal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-vag-cream",
+        "clindamycin-vag-ovule"
+      ],
+      "condition": "antibiotic-associated-colitis-history",
+      "concern": "History of antibiotic-associated colitis (vaginal cream and pessary SmPCs)",
+      "consequence": "Risk of recurrent colitis.",
+      "action": "Do not use the vaginal forms.",
+      "sourceWording": "also contraindicated in individuals with a history of antibiotic-associated colitis",
+      "src": [
+        {
+          "s": "emc-1080",
+          "q": "This medicine is also contraindicated in individuals with a history of inflammatory bowel disease or a history of antibiotic-associated colitis."
+        },
+        {
+          "s": "mhra-pl35533-0315-spc",
+          "q": "Clindamycin 100 mg Pessaries are also contraindicated in individuals with a history of antibiotic-associated colitis."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:condition:aac-oral",
+      "kind": "condition",
+      "level": "caution",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-cap"
+      ],
+      "condition": "antibiotic-associated-colitis-history",
+      "concern": "History of colitis (capsules)",
+      "consequence": "Risk of antibiotic-associated colitis, which may be fatal.",
+      "action": "Use with caution; stop at once if marked diarrhoea occurs.",
+      "sourceWording": "Caution should be used",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "Caution should be used when prescribing this medicine to individuals with a history of gastro-intestinal disease, especially colitis."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:condition:renal-impairment",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-cap"
+      ],
+      "condition": "renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "Pre-existing renal dysfunction (capsules)",
+      "consequence": "Acute kidney injury has been reported.",
+      "action": "Consider monitoring renal function. No dose change needed.",
+      "sourceWording": "monitoring of renal function should be considered",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "In patients suffering from pre-existing renal dysfunction or taking concomitant nephrotoxic drugs, monitoring of renal function should be considered"
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-cap"
+      ],
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Vitamin K antagonists, e.g. warfarin (capsules)",
+      "consequence": "Raised PT/INR and/or bleeding reported.",
+      "action": "Monitor coagulation tests frequently.",
+      "sourceWording": "Coagulation tests, therefore, should be frequently monitored",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "Increased coagulation tests (PT/INR) and/or bleeding, have been reported in patients treated with clindamycin in combination with a vitamin K antagonist (e.g. warfarin, acenocoumarol and fluindione)."
+        },
+        {
+          "s": "emc-1210",
+          "q": "Coagulation tests, therefore, should be frequently monitored in patients treated with vitamin K antagonists."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:interaction:strong-cyp3a4-inducer",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-cap"
+      ],
+      "other": "group:cyp3a4-strong-inducer",
+      "concern": "Strong CYP3A4 inducers (capsules)",
+      "consequence": "Clindamycin clearance may increase.",
+      "action": "Monitor for loss of effectiveness.",
+      "sourceWording": "monitor for loss of effectiveness",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "In the presence of strong CYP3A4 inducers such as rifampicin, monitor for loss of effectiveness."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "info",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-cap"
+      ],
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "CYP3A4 inhibitors (capsules)",
+      "consequence": "May reduce clindamycin clearance.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may reduce clindamycin clearance",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "inhibitors of CYP3A4 and CYP3A5 may reduce clindamycin clearance"
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:interaction:nephrotoxic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-cap"
+      ],
+      "other": "group:nephrotoxic",
+      "effect": "nephrotoxicity",
+      "concern": "Nephrotoxic drugs (capsules)",
+      "consequence": "Acute kidney injury has been reported with clindamycin.",
+      "action": "Consider monitoring renal function.",
+      "sourceWording": "monitoring of renal function should be considered",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "In patients suffering from pre-existing renal dysfunction or taking concomitant nephrotoxic drugs, monitoring of renal function should be considered"
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:pregnancy:oral",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-cap"
+      ],
+      "concern": "Pregnancy (capsules)",
+      "consequence": "Crosses the placenta; no adequate first-trimester studies; no increase in congenital abnormalities with second/third-trimester systemic use.",
+      "action": "Use only if clearly needed.",
+      "sourceWording": "should be used in pregnancy only if clearly needed",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "Clindamycin should be used in pregnancy only if clearly needed."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:pregnancy:vaginal-first-trimester",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-vag-cream",
+        "clindamycin-vag-ovule"
+      ],
+      "trimesters": [
+        1
+      ],
+      "concern": "First trimester (vaginal forms)",
+      "consequence": "No adequate and well-controlled studies in the first trimester.",
+      "action": "Not recommended in the first trimester.",
+      "sourceWording": "is not recommended during the first trimester",
+      "src": [
+        {
+          "s": "emc-1080",
+          "q": "Use of clindamycin is not recommended during the first trimester, as there are no adequate and well-controlled studies in pregnant women over this period."
+        },
+        {
+          "s": "mhra-pl35533-0315-spc",
+          "q": "Use of Clindamycin 100 mg Pessaries is not recommended during the first trimester"
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:pregnancy:vaginal-second-third",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-vag-cream",
+        "clindamycin-vag-ovule"
+      ],
+      "trimesters": [
+        2,
+        3
+      ],
+      "concern": "Second and third trimesters (vaginal forms)",
+      "consequence": "Not associated with congenital abnormalities in trials.",
+      "action": "May be used if clearly necessary, after careful risk-benefit assessment; pessary SmPC: insert with a finger in pregnancy.",
+      "sourceWording": "may be used to treat pregnant women if clearly necessary",
+      "src": [
+        {
+          "s": "emc-1080",
+          "q": "Clindamycin may be used to treat pregnant women if clearly necessary during the second and third trimester of pregnancy."
+        },
+        {
+          "s": "emc-1080",
+          "q": "a careful risk-benefit assessment should take place beforehand"
+        },
+        {
+          "s": "mhra-pl35533-0315-spc",
+          "q": "Clindamycin 100 mg Pessaries may be used to treat pregnant women if clearly necessary during the second and third trimester of pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:breastfeeding:oral",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-cap"
+      ],
+      "concern": "Breastfeeding (capsules)",
+      "consequence": "Passes into milk; may cause infant diarrhoea, blood in stool or rash.",
+      "action": "Not a reason to stop breastfeeding, but an alternative drug may be preferred; weigh benefits and risks.",
+      "sourceWording": "an alternate drug may be preferred",
+      "src": [
+        {
+          "s": "emc-1210",
+          "q": "If oral or intravenous clindamycin is required by a nursing mother, it is not a reason to discontinue breastfeeding, but an alternate drug may be preferred."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:breastfeeding:vaginal",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-vag-cream",
+        "clindamycin-vag-ovule"
+      ],
+      "concern": "Breastfeeding (vaginal forms)",
+      "consequence": "Unknown whether it passes into milk after vaginal use; systemic clindamycin can affect infant gut flora.",
+      "action": "Pessary SmPC: can be considered if the expected benefit to the mother outweighs the risks for the child.",
+      "sourceWording": "can be considered if the expected benefit to the mother outweighs the risks",
+      "src": [
+        {
+          "s": "mhra-pl35533-0315-spc",
+          "q": "Use of Clindamycin 100 mg Pessaries in a breastfeeding woman can be considered if the expected benefit to the mother outweighs the risks for the child."
+        },
+        {
+          "s": "emc-1080",
+          "q": "It is not known if clindamycin is excreted in human breast milk following the use of vaginally administered clindamycin vaginal cream."
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:age:vaginal-cream-children",
+      "kind": "age",
+      "level": "info",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-vag-cream"
+      ],
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Children (vaginal cream)",
+      "consequence": "Safety and efficacy not established.",
+      "action": "No paediatric dose is given.",
+      "sourceWording": "Safety and efficacy in paediatric patients have not been established",
+      "src": [
+        {
+          "s": "emc-1080",
+          "q": "Safety and efficacy in paediatric patients have not been established"
+        }
+      ]
+    },
+    {
+      "id": "clindamycin:age:vaginal-ovule-under-16",
+      "kind": "age",
+      "level": "info",
+      "med": "clindamycin",
+      "formulations": [
+        "clindamycin-vag-ovule"
+      ],
+      "age": {
+        "maxYears": 16
+      },
+      "concern": "Under 16 years (100 mg vaginal, pessary SmPC)",
+      "consequence": "Safety and efficacy not established.",
+      "action": "No dose is given under 16 years.",
+      "sourceWording": "has not been established",
+      "src": [
+        {
+          "s": "mhra-pl35533-0315-spc",
+          "q": "The safety and efficacy of Clindamycin 100 mg Pessaries in children under 16 years of age has not been established."
+        }
+      ]
+    }
+  ]
+}

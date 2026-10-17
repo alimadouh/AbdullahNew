@@ -73,11 +73,15 @@ export function validate(data) {
     if (!Array.isArray(m.ingredients) || !m.ingredients.length) errs.push(at('ingredients missing'))
     for (const g of m.groups ?? []) if (!groups[g]) errs.push(at(`group ${g} not defined`))
     if (!m.formulations?.length) errs.push(at('no formulations'))
+    if (m.availability && !['uk', 'no-uk-product'].includes(m.availability.status)) errs.push(at(`bad availability ${m.availability.status}`))
+    for (const f of m.formulations ?? []) if (f.availability && f.availability !== 'no-uk-product') errs.push(at(`bad formulation availability ${f.id}`))
+    if (m.availability?.status === 'no-uk-product' && (m.rules ?? []).length) errs.push(at('no-uk-product medicine must not have rules'))
     const fIds = new Set((m.formulations ?? []).map((f) => f.id))
     for (const k of SECTION_KEYS) {
       const s = m.sections?.[k]
       if (!s) { errs.push(at(`section ${k} missing`)); continue }
-      if (!s.items && s.status !== 'not-stated') errs.push(at(`section ${k} has neither items nor status not-stated`))
+      const noUk = m.availability?.status === 'no-uk-product'
+      if (!s.items && s.status !== 'not-stated' && !(noUk && s.status === 'not-available')) errs.push(at(`section ${k} has neither items nor status not-stated`))
       for (const [i, it] of (s.items ?? []).entries()) {
         if (!it.t) errs.push(at(`${k}[${i}] empty t`))
         if (!it.src?.length) errs.push(at(`${k}[${i}] has no src`))
@@ -95,6 +99,12 @@ export function validate(data) {
       if (!r.concern || !r.action) errs.push(rt('concern/action missing'))
       for (const f of r.formulations ?? []) if (!fIds.has(f)) errs.push(rt(`unknown formulation ${f}`))
       if (r.kind === 'interaction' && (!r.other || !refOk(r.other))) errs.push(rt(`bad other ${r.other}`))
+      for (const x of r.otherExcept ?? []) if (!masterIds.has(x)) errs.push(rt(`unknown otherExcept ${x}`))
+      if (r.otherFormulations?.length) {
+        const om = medicines.find((x) => x.id === r.other)
+        if (!om) errs.push(rt('otherFormulations needs `other` to be a medicine id'))
+        else for (const f of r.otherFormulations) if (!om.formulations?.some((x) => x.id === f)) errs.push(rt(`unknown otherFormulation ${f}`))
+      }
       if (r.kind === 'condition' && !conditions[r.condition]) errs.push(rt(`unknown condition ${r.condition}`))
       if (r.kind === 'allergy') {
         if (!r.allergen?.length || !r.allergen.every(refOk)) errs.push(rt(`bad allergen ${r.allergen}`))

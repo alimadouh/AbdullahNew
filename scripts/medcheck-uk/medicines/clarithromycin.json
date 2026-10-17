@@ -10,7 +10,8 @@
     "antibacterial",
     "strong-cyp3a4-inhibitor",
     "cyp3a4-inhibitor",
-    "qt-prolonging"
+    "qt-prolonging",
+    "hepatotoxic"
   ],
   "searchTerms": [
     "clarithromycin citrate"
@@ -1851,6 +1852,172 @@
         {
           "s": "sps-macrolides-breastfeeding",
           "q": "All formulations of clarithromycin, including intravenous therapy can be used during breastfeeding with precautionary infant monitoring."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:domperidone",
+      "kind": "interaction",
+      "med": "clarithromycin",
+      "level": "contraindicated",
+      "other": "domperidone",
+      "effect": "qt-prolongation",
+      "concern": "Domperidone",
+      "consequence": "QT prolongation and cardiac arrhythmias, including ventricular tachycardia, ventricular fibrillation and torsades de pointes.",
+      "action": "Contraindicated: do not give together.",
+      "sourceWording": "is contraindicated",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Concomitant administration of clarithromycin and any of the following drugs is contraindicated: astemizole, cisapride, domperidone, pimozide and terfenadine as this may result in QT prolongation and cardiac arrhythmias"
+        },
+        {
+          "s": "emc-7072",
+          "q": "The use of the following drugs is strictly contraindicated due to the potential for severe drug interaction effects: Cisapride, pimozide, domperidone, astemizole and terfenadine"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:verapamil",
+      "kind": "interaction",
+      "med": "clarithromycin",
+      "level": "caution",
+      "other": "verapamil",
+      "effect": "hypotension",
+      "concern": "Verapamil (calcium-channel blocker metabolised by CYP3A4)",
+      "consequence": "Risk of hypotension; levels of both medicines may rise. Hypotension, bradyarrhythmias and lactic acidosis have been seen with this combination.",
+      "action": "Caution advised.",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Caution is advised regarding the concomitant administration of clarithromycin and calcium channel blockers metabolized by CYP3A4 (e.g., verapamil, amlodipine, diltiazem) due to the risk of hypotension."
+        },
+        {
+          "s": "emc-7072",
+          "q": "Hypotension, bradyarrhythmias and lactic acidosis have been observed in patients taking clarithromycin and verapamil concomitantly."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:diltiazem",
+      "kind": "interaction",
+      "med": "clarithromycin",
+      "level": "caution",
+      "other": "diltiazem",
+      "effect": "hypotension",
+      "concern": "Diltiazem (calcium-channel blocker metabolised by CYP3A4)",
+      "consequence": "Risk of hypotension; levels of both medicines may rise.",
+      "action": "Caution advised.",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Caution is advised regarding the concomitant administration of clarithromycin and calcium channel blockers metabolized by CYP3A4 (e.g., verapamil, amlodipine, diltiazem) due to the risk of hypotension."
+        },
+        {
+          "s": "emc-7072",
+          "q": "Plasma concentrations of clarithromycin as well as calcium channel blockers may increase due to the interaction."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:carbamazepine",
+      "kind": "interaction",
+      "med": "clarithromycin",
+      "level": "monitor",
+      "other": "carbamazepine",
+      "concern": "Carbamazepine (narrow-margin CYP3A substrate and CYP3A inducer)",
+      "consequence": "Carbamazepine levels may rise; carbamazepine may also induce clarithromycin metabolism and reduce its efficacy.",
+      "action": "Use with caution: consider a carbamazepine dose reduction and monitor carbamazepine serum levels where possible; be aware clarithromycin may be less effective.",
+      "sourceWording": "serum concentrations of drugs primarily metabolised by CYP3A should be monitored closely",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Caution is required if clarithromycin is co-administered with other drugs known to be CYP3A enzyme substrates, especially if the CYP3A substrate has a narrow safety margin (e.g. carbamazepine)"
+        },
+        {
+          "s": "emc-7072",
+          "q": "when possible, serum concentrations of drugs primarily metabolised by CYP3A should be monitored closely in patients concurrently receiving clarithromycin"
+        },
+        {
+          "s": "emc-7072",
+          "q": "increase of circulating theophylline or carbamazepine levels when either of these drugs were administered concomitantly with clarithromycin. Dose reduction may need to be considered."
+        },
+        {
+          "s": "emc-7072",
+          "q": "This may result in sub-therapeutic levels of clarithromycin leading to a reduced efficacy."
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:insulin",
+      "kind": "interaction",
+      "med": "clarithromycin",
+      "level": "monitor",
+      "other": "group:insulin",
+      "effect": "hypoglycaemia",
+      "concern": "Insulin",
+      "consequence": "Significant hypoglycaemia.",
+      "action": "Careful glucose monitoring.",
+      "sourceWording": "Careful monitoring of glucose is recommended",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "The concomitant use of clarithromycin and oral hypoglycaemic agents (such as sulfonylurias) and/or insulin can result in significant hypoglycaemia. Careful monitoring of glucose is recommended"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:inhaled-corticosteroid",
+      "kind": "interaction",
+      "med": "clarithromycin",
+      "level": "caution",
+      "other": "group:inhaled-corticosteroid",
+      "otherExcept": [
+        "beclometasone-nasal"
+      ],
+      "concern": "Inhaled corticosteroids metabolised by CYP3A",
+      "consequence": "Increased systemic corticosteroid exposure.",
+      "action": "Use with caution; monitor closely for systemic corticosteroid adverse effects. Beclometasone is not covered here: its own SmPC says it is less dependent on CYP3A metabolism and gives separate advice for strong CYP3A inhibitors.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "Caution should be exercised in concomitant use of clarithromycin with systemic and inhaled corticosteroids that are primarily metabolised by CYP3A"
+        },
+        {
+          "s": "emc-7072",
+          "q": "If concomitant use occurs, patients should be closely monitored for systemic corticosteroid undesirable effects."
+        },
+        {
+          "s": "emc-6977",
+          "q": "Beclometasone is less dependent on CYP3A metabolism than some other corticosteroids"
+        }
+      ]
+    },
+    {
+      "id": "clarithromycin:interaction:loperamide",
+      "kind": "interaction",
+      "med": "clarithromycin",
+      "level": "caution",
+      "other": "loperamide",
+      "concern": "Loperamide (anti-peristaltic) if C. difficile-associated diarrhoea develops",
+      "consequence": "C. difficile-associated diarrhoea can occur; drugs inhibiting peristalsis should be avoided in that situation.",
+      "action": "If CDAD is suspected: consider stopping clarithromycin, test and treat, and avoid loperamide or other drugs that inhibit peristalsis.",
+      "sourceWording": "Drugs inhibiting peristalsis should be avoided",
+      "src": [
+        {
+          "s": "emc-7072",
+          "q": "CDAD must be considered in all patients who present with diarrhoea following antibiotic use."
+        },
+        {
+          "s": "emc-7072",
+          "q": "Drugs inhibiting peristalsis should be avoided."
+        },
+        {
+          "s": "emc-558",
+          "q": "Imodium must not be used when inhibition of peristalsis is to be avoided"
         }
       ]
     }

@@ -1,0 +1,191 @@
+{
+  "id": "fusidic-acid",
+  "name": "Fusidic acid (topical)",
+  "ingredients": ["fusidic-acid"],
+  "className": "Topical antibiotic (other antibiotics for topical use)",
+  "groups": [],
+  "searchTerms": ["fusidic acid cream", "fusidic acid 2% cream", "sodium fusidate", "topical fusidic acid"],
+  "formulations": [
+    {
+      "id": "fusidic-acid-cream",
+      "label": "Cream 2%",
+      "route": "topical",
+      "strengths": "Fusidic acid 20 mg/g (2%)",
+      "release": "n/a",
+      "note": "Contains butylhydroxyanisole, cetyl alcohol, potassium sorbate and polysorbate 60 (possible local skin reactions, eye irritation, allergic reactions).",
+      "src": [
+        { "s": "emc-5510", "q": "Fucidin cream contains fusidic acid Ph.Eur. 20 mg/g." },
+        { "s": "emc-5510", "q": "Fucidin cream contains butylhydroxyanisole, cetyl alcohol and potassium sorbate. These excipients may cause local skin reactions (e.g. contact dermatitis)." }
+      ],
+      "sourceIds": ["emc-5510"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Primary and secondary skin infections caused by sensitive Staphylococcus aureus, Streptococcus species and Corynebacterium minutissimum, alone or with systemic therapy: impetigo, superficial folliculitis, sycosis barbae, paronychia, erythrasma; infected eczematoid or contact dermatitis; infected cuts and abrasions.",
+        "src": [
+          { "s": "emc-5510", "q": "in the treatment of primary and secondary skin infections caused by sensitive strains of Staphylococcus aureus, Streptococcus spp and Corynebacterium minutissimum" },
+          { "s": "emc-5510", "q": "impetigo contagiosa, superficial folliculitis, sycosis barbae, paronychia and erythrasma; also such secondary skin infections as infected eczematoid dermatitis, infected contact dermatitis and infected cuts/abrasions" }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "NICE (impetigo): for localised non-bullous impetigo in people who are not systemically unwell or at high risk of complications, consider hydrogen peroxide 1% cream first. Fusidic acid 2% is the first-choice topical antibiotic if hydrogen peroxide is unsuitable (for example near the eyes) or ineffective. Do not combine topical and oral antibiotics for impetigo.",
+        "tag": "NICE NG153",
+        "src": [
+          { "s": "nice-ng153", "q": "Consider hydrogen peroxide 1% cream for people with localised non-bullous impetigo who are not systemically unwell or at high risk of complications" },
+          { "s": "nice-ng153", "q": "First-choice topical antibiotic if hydrogen peroxide is unsuitable (for example, if impetigo is around eyes) or ineffective Fusidic acid 2%" },
+          { "s": "nice-ng153", "q": "Do not offer combination treatment with a topical and oral antibiotic to treat impetigo." }
+        ] },
+      { "t": "NICE (infected eczema, not systemically unwell): do not routinely offer a topical or oral antibiotic; if a topical antibiotic is appropriate, fusidic acid 2% is first choice, for localised infection only.",
+        "tag": "NICE NG190",
+        "src": [
+          { "s": "nice-ng190", "q": "For secondary bacterial infection of eczema in people who are not systemically unwell Do not routinely offer either a topical or oral antibiotic" },
+          { "s": "nice-ng190", "q": "Fusidic acid 2%: Apply three times a day for 5 to 7 days For localised infections only." }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Uncovered lesions: apply gently 3 or 4 times daily. Covered lesions: less frequent application may be enough.",
+        "tag": "Licensed dose (adults and children)",
+        "src": [
+          { "s": "emc-5510", "q": "Uncovered lesions - apply gently three or four times daily." },
+          { "s": "emc-5510", "q": "Covered lesions - less frequent applications may be adequate." }
+        ] },
+      { "t": "Impetigo: apply 3 times a day for 5 days; may extend to 7 days depending on severity and number of lesions.",
+        "tag": "Impetigo (NICE, adults and children)",
+        "src": [
+          { "s": "nice-ng153", "q": "Fusidic acid 2% : Apply three times a day for 5 days" },
+          { "s": "nice-ng153", "q": "A 5-day course is usually appropriate but can be increased to 7 days based on clinical judgement, depending on the severity and number of lesions." }
+        ] },
+      { "t": "Secondary bacterial infection of eczema: apply 3 times a day for 5 to 7 days (localised infection only).",
+        "tag": "Infected eczema (NICE, adults and children)",
+        "src": [{ "s": "nice-ng190", "q": "Fusidic acid 2%: Apply three times a day for 5 to 7 days For localised infections only." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Same dose for adults and children; adverse effects in children are expected to be the same as in adults.",
+        "src": [
+          { "s": "emc-5510", "q": "Adults and Paediatric population Uncovered lesions - apply gently three or four times daily." },
+          { "s": "emc-5510", "q": "Frequency, type and severity of adverse reactions in children are expected to be the same as in adults." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to fusidic acid or any excipient.",
+        "src": [{ "s": "emc-5510", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Bacterial resistance in Staphylococcus aureus has been reported; extended or recurrent use increases the risk of resistance and of contact sensitisation.",
+        "src": [
+          { "s": "emc-5510", "q": "Bacterial resistance among staphylococcus aureus has been reported to occur with the use of topical Fucidin." },
+          { "s": "emc-5510", "q": "Extended or recurrent use may increase the risk of developing contact sensitisation." }
+        ] },
+      { "t": "Use with care near the eyes: excipient (butylhydroxyanisole) can irritate the eyes and mucous membranes.",
+        "src": [
+          { "s": "emc-5510", "q": "Butylhydroxyanisole may also cause irritation to the eyes and mucous membranes." },
+          { "s": "emc-5510", "q": "Fucidin cream should therefore be used with care when applied in the proximity of the eyes." }
+        ] },
+      { "t": "Contains polysorbate 60, which can cause allergic reactions.",
+        "detail": true,
+        "src": [{ "s": "emc-5510", "q": "Polysorbates can cause allergic reactions." }] },
+      { "t": "Fire hazard: fabric in contact with the cream burns more easily; patients must not smoke or go near naked flames.",
+        "detail": true,
+        "src": [{ "s": "emc-5510", "q": "Instruct patients not to smoke or go near naked flames - risk of severe burns." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "No interaction studies; interactions with systemic medicines are considered minimal because systemic absorption is negligible.",
+        "src": [{ "s": "emc-5510", "q": "Interactions with systemically administered medicinal products are considered minimal as the systemic absorption of topical Fucidin is negligible." }] }
+    ] },
+    "renal": { "status": "not-stated", "note": "The UK SmPC gives no renal advice for the cream." },
+    "hepatic": { "status": "not-stated", "note": "The UK SmPC gives no hepatic advice for the cream." },
+    "pregnancy": { "items": [
+      { "t": "Can be used in pregnancy; systemic exposure is negligible and no effects are expected.",
+        "src": [
+          { "s": "emc-5510", "q": "Topical Fucidin can be used during pregnancy." },
+          { "s": "emc-5510", "q": "No effects during pregnancy are anticipated, since systemic exposure to topically-applied fusidic acid/sodium fusidate is negligible." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Can be used during breastfeeding, but do not apply to the breast.",
+        "src": [{ "s": "emc-5510", "q": "Topical Fucidin can be used during breast-feeding but it is recommended to avoid applying topical Fucidin on the breast." }] },
+      { "t": "SPS: fusidic acid can be used during breastfeeding; no infant monitoring usually needed. Avoid infant contact with lesions and treated skin; wash hands after applying.",
+        "src": [
+          { "s": "sps-impetigo-topical-breastfeeding", "q": "Fusidic acid can be used during breastfeeding. Infant monitoring No specific infant monitoring is usually required." },
+          { "s": "sps-impetigo-topical-breastfeeding", "q": "Care should be taken to avoid direct contact between the infant and impetigo lesion(s) and treated area." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "No fertility studies; no effects expected in women of childbearing potential (negligible systemic exposure).",
+        "detail": true,
+        "src": [{ "s": "emc-5510", "q": "No effects in women of childbearing potential are anticipated, since systemic exposure following topically-applied fusidic acid/sodium fusidate is negligible." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "No common effects listed. The most frequent (each under 1% of patients) are itching, rash and application-site pain or irritation.",
+        "tag": "Uncommon",
+        "src": [{ "s": "emc-5510", "q": "The most frequently reported adverse reactions during treatment are various skin reactions such as pruritus and rash, followed by application site conditions such as pain and irritation, which all occurred in less than 1% of patients." }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Hypersensitivity reactions and angioedema (rare) have been reported.",
+        "src": [
+          { "s": "emc-5510", "q": "Hypersensitivity and angioedema have been reported." },
+          { "s": "emc-5510", "q": "Rare (≥1/10,000 and <1/1,000) Angioedema Urticaria Blister" }
+        ] }
+    ] },
+    "monitoring": { "status": "not-stated", "note": "The UK SmPC and NICE NG153/NG190 state no monitoring; NICE gives course lengths (see dosing)." },
+    "administration": { "items": [
+      { "t": "For use on the skin only (cutaneous use). Apply gently to the lesions; avoid the eyes.",
+        "src": [
+          { "s": "emc-5510", "q": "Method of administration Cutaneous use." },
+          { "s": "emc-5510", "q": "Fucidin cream should therefore be used with care when applied in the proximity of the eyes." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Use only for the course prescribed: extended or repeated use increases the risk of antibiotic resistance.",
+        "src": [{ "s": "nice-ng153", "q": "As with all antibiotics, extended or recurrent use of topical fusidic acid or mupirocin may increase the risk of developing antimicrobial resistance." }] },
+      { "t": "Do not smoke or go near naked flames: clothing, bedding and dressings with cream on them burn more easily.",
+        "src": [{ "s": "emc-5510", "q": "Fabric (clothing, bedding, dressings etc) that has been in contact with this product burns more easily and is a serious fire hazard." }] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "fusidic-acid:allergy:fusidic-acid",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "fusidic-acid",
+      "allergen": ["fusidic-acid"],
+      "concern": "Hypersensitivity to fusidic acid",
+      "consequence": "Hypersensitivity reaction, including angioedema.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-5510", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }]
+    },
+    {
+      "id": "fusidic-acid:pregnancy",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "fusidic-acid",
+      "concern": "Pregnancy",
+      "consequence": "No effects expected: systemic exposure to fusidic acid applied to the skin is negligible.",
+      "action": "Can be used during pregnancy.",
+      "sourceWording": "can be used during pregnancy",
+      "src": [
+        { "s": "emc-5510", "q": "Topical Fucidin can be used during pregnancy." },
+        { "s": "emc-5510", "q": "No effects during pregnancy are anticipated, since systemic exposure to topically-applied fusidic acid/sodium fusidate is negligible." }
+      ]
+    },
+    {
+      "id": "fusidic-acid:breastfeeding:breast",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "fusidic-acid",
+      "concern": "Breastfeeding: application to the breast",
+      "consequence": "Negligible systemic exposure; no effect on the infant expected.",
+      "action": "Can be used; avoid applying to the breast.",
+      "sourceWording": "can be used during breast-feeding but it is recommended to avoid applying topical Fucidin on the breast",
+      "src": [
+        { "s": "emc-5510", "q": "Topical Fucidin can be used during breast-feeding but it is recommended to avoid applying topical Fucidin on the breast." },
+        { "s": "emc-5510", "q": "No effects on the breast-fed new-born/infant are anticipated since the systemic exposure of topically-applied fusidic acid/sodium fusidate to the breast-feeding woman is negligible." },
+        { "s": "sps-impetigo-topical-breastfeeding", "q": "Fusidic acid can be used during breastfeeding." }
+      ]
+    }
+  ]
+}

@@ -962,6 +962,32 @@
           "q": "The blood pressure lowering effects of amlodipine adds to the blood pressure-lowering effects of other medicinal products with antihypertensive properties."
         }
       ]
+    },
+    {
+      "id": "amlodipine:interaction:azole-antifungal",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "amlodipine",
+      "other": "group:azole-antifungal",
+      "effect": "hypotension",
+      "concern": "Azole antifungals (CYP3A4 inhibitors)",
+      "consequence": "Significant rise in amlodipine exposure with increased risk of hypotension, more marked in the elderly.",
+      "action": "Clinical monitoring; dose adjustment may be needed.",
+      "sourceWording": "Clinical monitoring and dose adjustment may thus be required",
+      "src": [
+        {
+          "s": "emc-2743",
+          "q": "Concomitant use of amlodipine with strong or moderate CYP3A4 inhibitors (protease inhibitors, azole antifungals, macrolides like erythromycin or clarithromycin, verapamil or diltiazem)"
+        },
+        {
+          "s": "emc-2743",
+          "q": "may give rise to significant increase in amlodipine exposure resulting in an increased risk of hypotension"
+        },
+        {
+          "s": "emc-2743",
+          "q": "Clinical monitoring and dose adjustment may thus be required."
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,224 @@
+{
+  "sources": [
+    {
+      "id": "emc-1728",
+      "type": "smpc",
+      "publisher": "Viatris UK Healthcare Ltd (via emc)",
+      "title": "Librium 5 mg Capsules (chlordiazepoxide hydrochloride) - SmPC",
+      "url": "https://www.medicines.org.uk/emc/product/1728/smpc",
+      "accessed": "2026-10-17"
+    }
+  ],
+  "groups": [
+    {
+      "id": "decongestant",
+      "name": "Sympathomimetic decongestants (nasal or oral)",
+      "members": [
+        {
+          "med": "xylometazoline",
+          "src": [
+            { "s": "emc-3008", "q": "is a sympathomimetic agent with marked alpha-adrenergic activity, and is intended for use in the nose" },
+            { "s": "emc-3008", "q": "It constricts the nasal blood vessels, thereby decongesting the mucosa of the nose" }
+          ]
+        },
+        {
+          "med": "loratadine-pseudoephedrine",
+          "src": [
+            { "s": "emc-6199", "q": "Sudafed Decongestant Tablets is a decongestant of the mucous membranes of the upper respiratory tract" },
+            { "s": "emc-6199", "q": "Pseudoephedrine has direct and indirect sympathomimetic activity" }
+          ]
+        },
+        {
+          "med": "cetirizine-pseudoephedrine",
+          "src": [
+            { "s": "emc-6199", "q": "Sudafed Decongestant Tablets is a decongestant of the mucous membranes of the upper respiratory tract" },
+            { "s": "emc-6199", "q": "Pseudoephedrine has direct and indirect sympathomimetic activity" }
+          ]
+        },
+        {
+          "med": "paracetamol-pseudoephedrine-chlorphenamine",
+          "src": [
+            { "s": "emc-6199", "q": "Sudafed Decongestant Tablets is a decongestant of the mucous membranes of the upper respiratory tract" },
+            { "s": "emc-6199", "q": "Pseudoephedrine has direct and indirect sympathomimetic activity" }
+          ]
+        },
+        {
+          "med": "paracetamol-pseudoephedrine-chlorphenamine-caffeine",
+          "src": [
+            { "s": "emc-6199", "q": "Sudafed Decongestant Tablets is a decongestant of the mucous membranes of the upper respiratory tract" },
+            { "s": "emc-6199", "q": "Pseudoephedrine has direct and indirect sympathomimetic activity" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sympathomimetic",
+      "name": "Sympathomimetics (including decongestants and beta-2 agonists)",
+      "members": [
+        {
+          "med": "salbutamol",
+          "src": [
+            { "s": "emc-850", "q": "Cardiovascular effects may be seen with sympathomimetic drugs, including salbutamol." }
+          ]
+        },
+        {
+          "med": "fluticasone-propionate-salmeterol",
+          "src": [
+            { "s": "emc-7597", "q": "Pharmacotherapeutic Group: Adrenergics in combination with corticosteroids or other drugs, excl. Anticholinergics." },
+            { "s": "emc-100580", "q": "high doses of beta2 sympathomimetics (such as bambuterol, femoterol, salbutamol, salmeterol and terbutaline)" }
+          ]
+        },
+        {
+          "med": "budesonide-formoterol",
+          "src": [
+            { "s": "emc-1327", "q": "Pharmacotherapeutic group: Drugs for obstructive airway diseases: Adrenergics, Inhalants." },
+            { "s": "emc-1327", "q": "can impair cardiac tolerance towards β2 sympathomimetics" }
+          ]
+        },
+        {
+          "med": "fluticasone-propionate-formoterol",
+          "src": [
+            { "s": "emc-7649", "q": "Drugs for obstructive airways adrenergics in combination with corticosteroids or other drugs excl. anticholinergics" },
+            { "s": "emc-7649", "q": "the pharmacologically predictable sympathetic effects of formoterol may be potentiated" }
+          ]
+        },
+        {
+          "med": "fluticasone-furoate-umeclidinium-vilanterol",
+          "src": [
+            { "s": "emc-8666", "q": "muscarinic receptor antagonists and sympathomimetics, including umeclidinium and vilanterol, respectively" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inhaled-antimuscarinic",
+      "name": "Inhaled antimuscarinics (ipratropium, tiotropium, umeclidinium)",
+      "members": [
+        {
+          "med": "tiotropium",
+          "src": [
+            { "s": "emc-407", "q": "Other drugs for obstructive airway diseases, inhalants, anticholinergics" },
+            { "s": "emc-1775", "q": "other anticholinergics (e.g. tiotropium, ipratropium, atropine-like compounds)" }
+          ]
+        },
+        {
+          "med": "ipratropium",
+          "src": [
+            { "s": "emc-3818", "q": "Pharmacotherapeutic group: Anticholinergics ATC Code: R03BB01" },
+            { "s": "emc-1775", "q": "other anticholinergics (e.g. tiotropium, ipratropium, atropine-like compounds)" }
+          ]
+        },
+        {
+          "med": "fluticasone-furoate-umeclidinium-vilanterol",
+          "src": [
+            { "s": "emc-8666", "q": "adrenergics in combination with anticholinergics including triple combinations with corticosteroids" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hepatotoxic",
+      "name": "Hepatotoxic medicines",
+      "members": [
+        {
+          "med": "hydroxychloroquine",
+          "src": [
+            { "s": "emc-1764", "q": "fulminant hepatic failure (including fatal cases) have been reported during use of Hydroxychloroquine" }
+          ]
+        },
+        {
+          "med": "celecoxib",
+          "src": [
+            { "s": "emc-2945", "q": "hepatic failure (some with fatal outcome or requiring liver transplant), have been reported with celecoxib" }
+          ]
+        },
+        {
+          "med": "fluconazole",
+          "src": [
+            { "s": "emc-1065", "q": "Diflucan has been associated with rare cases of serious hepatic toxicity including fatalities" }
+          ]
+        },
+        {
+          "med": "moxifloxacin",
+          "src": [
+            { "s": "emc-6771", "q": "Cases of fulminant hepatitis potentially leading to liver failure (including fatal cases) have been reported with moxifloxacin" }
+          ]
+        },
+        {
+          "med": "methyldopa",
+          "src": [
+            { "s": "emc-100084", "q": "Rare cases of fatal hepatic necrosis have been reported." }
+          ]
+        },
+        {
+          "med": "naproxen",
+          "src": [
+            { "s": "emc-13238", "q": "Severe hepatic reactions, including jaundice and hepatitis (some cases of hepatitis have been fatal) have been reported with this drug" }
+          ]
+        },
+        {
+          "med": "duloxetine",
+          "src": [
+            { "s": "emc-12320", "q": "Cases of liver injury, including severe elevations of liver enzymes (>10 times upper limit of normal), hepatitis and jaundice have been reported with duloxetine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aminoglycoside",
+      "name": "Aminoglycosides",
+      "members": [
+        {
+          "med": "gentamicin-drops",
+          "src": [
+            { "s": "emc-4218", "q": "known allergy to gentamicin and other aminoglycosides" }
+          ]
+        },
+        {
+          "med": "neomycin-polymyxin-dexamethasone-eye",
+          "src": [
+            { "s": "emc-841", "q": "an aminoglycoside (neomycin)" }
+          ]
+        },
+        {
+          "med": "gentamicin-dexamethasone-ear",
+          "src": [
+            { "s": "emc-4218", "q": "known allergy to gentamicin and other aminoglycosides" }
+          ]
+        },
+        {
+          "med": "betamethasone-miconazole-gentamicin",
+          "src": [
+            { "s": "emc-4218", "q": "known allergy to gentamicin and other aminoglycosides" }
+          ]
+        },
+        {
+          "med": "neomycin-polymyxin-prednisolone-ear",
+          "src": [
+            { "s": "emc-841", "q": "an aminoglycoside (neomycin)" }
+          ]
+        },
+        {
+          "med": "triamcinolone-nystatin-neomycin",
+          "src": [
+            { "s": "emc-841", "q": "an aminoglycoside (neomycin)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "benzodiazepine",
+      "name": "Benzodiazepines",
+      "members": [
+        {
+          "med": "chlordiazepoxide-clidinium",
+          "src": [
+            { "s": "emc-1728", "q": "chlordiazepoxide is a long-acting benzodiazepine" }
+          ]
+        }
+      ]
+    }
+  ],
+  "conditions": [],
+  "notes": "CROSS-BATCH GROUP AUDIT (2026-10-17, see scripts/medcheck-uk/audit/groups-cross-batch.md). This file only holds group memberships that span batches; every member quote was checked FOUND with lib/text.mjs. (1) decongestant: new group for the nasal/oral sympathomimetic decongestants (xylometazoline and the four pseudoephedrine-containing clinic products); rules whose source names decongestants or vasoconstrictor amines target it. (2) sympathomimetic is now the broad group (decongestants via batch T/S members plus the beta-2 agonist inhalers listed here); rules whose source says 'sympathomimetics' or 'adrenergic drugs' broadly target it. (3) inhaled-antimuscarinic: new group; tiotropium, ipratropium and the triple inhaler were moved out of the systemic 'anticholinergic' group (batches U, V, X), and only the rules whose UK source covers inhaled antimuscarinics for that interaction (hyoscine butylbromide naming tiotropium/ipratropium; ipratropium and tiotropium 'other anticholinergic drugs') have companion rules for this group. (4) hepatotoxic: added medicines whose own SmPC section 4.4 warns of serious or fatal liver injury. Not added (statement only in the 4.8 table, a class statement, or only in overdose/special populations): see the audit log. (5) aminoglycoside: filled with the gentamicin and neomycin products (ingredient-level UK quotes; four are no-uk-product clinic combinations, added the same way batch T added its no-uk-product combinations) so that allergy cross-reactivity rules reach them; local products are still not matched by other medicines' systemic group interaction rules (engine local-route rule). (6) benzodiazepine: chlordiazepoxide/clidinium (no-uk-product) added from the UK chlordiazepoxide SmPC (Librium 5 mg) so that opioid/CNS-depressant benzodiazepine warnings reach it; clidinium has no UK source, so it is NOT added to anticholinergic. Groups that rules point at and that still have no master-list member: carbapenem, monobactam, maoi, ototoxic (no master-list medicine has a UK source calling it ototoxic as a class; furosemide and the aminoglycoside drops have their own explicit rules)."
+}

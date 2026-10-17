@@ -1,0 +1,725 @@
+{
+  "id": "desmopressin",
+  "name": "Desmopressin",
+  "ingredients": ["desmopressin"],
+  "className": "Vasopressin analogue (antidiuretic)",
+  "groups": [],
+  "searchTerms": ["desmopressin acetate"],
+  "formulations": [
+    {
+      "id": "desmopressin-melt",
+      "label": "Oral lyophilisate (melt) for sublingual use",
+      "route": "sublingual",
+      "strengths": "120 micrograms",
+      "release": "immediate",
+      "note": "The clinic brand is not listed on emc. Two UK SmPCs for the same form and strength are used: a 120 microgram sublingual lyophilisate licensed for diabetes insipidus, post-hypophysectomy polyuria and primary nocturnal enuresis, and a 120 microgram oral lyophilisate licensed for primary nocturnal enuresis only.",
+      "src": [
+        { "s": "emc-102061", "q": "Each sublingual lyophilisate contains 120 micrograms of desmopressin (as acetate)." },
+        { "s": "emc-14771", "q": "Each oral lyophilisate contains 120 micrograms desmopressin (as acetate)." },
+        { "s": "emc-14771", "q": "Desmopressin Melt is indicated for the treatment of primary nocturnal enuresis." }
+      ],
+      "sourceIds": ["emc-102061", "emc-14771"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Vasopressin-sensitive cranial diabetes insipidus; post-hypophysectomy polyuria/polydipsia; primary nocturnal enuresis. One UK SmPC (oral lyophilisate) is licensed for primary nocturnal enuresis only.",
+          "src": [
+            { "s": "emc-102061", "q": "Treatment of vasopressin-sensitive cranial diabetes insipidus Treatment of post-hypophysectomy polyuria/polydipsia Treatment of primary nocturnal enuresis." },
+            { "s": "emc-14771", "q": "Desmopressin Melt is indicated for the treatment of primary nocturnal enuresis." }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA: nasal desmopressin must not be used for primary nocturnal enuresis (higher hyponatraemia risk); oral forms remain licensed for it. Start oral treatment at the lowest recommended dose.",
+          "src": [
+            { "s": "mhra-dsu-desmopressin-nasal-pne", "q": "Nasal formulations of desmopressin should not be used for treatment of PNE" },
+            { "s": "mhra-dsu-desmopressin-nasal-pne", "q": "All patients with PNE should start oral desmopressin at the lowest recommended dose, which should be increased only if necessary to achieve control of symptoms" }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Diabetes insipidus: individual dosing; usual total daily sublingual dose 120-720 micrograms. Start 60 micrograms three times daily, then adjust to response; most patients need 60-120 micrograms three times daily.",
+          "tag": "Cranial diabetes insipidus",
+          "src": [
+            { "s": "emc-102061", "q": "the total daily sublingual dose normally lies in the range of 120 micrograms to 720 micrograms" },
+            { "s": "emc-102061", "q": "A suitable starting dose in adults and children is 60 micrograms three times daily, administered sublingually." },
+            { "s": "emc-102061", "q": "For the majority of patients, the maintenance dose is 60 micrograms to 120 micrograms sublingually three times daily." }
+          ]
+        },
+        {
+          "t": "Post-hypophysectomy polyuria/polydipsia: dose guided by urine osmolality.",
+          "tag": "Post-hypophysectomy",
+          "src": [
+            { "s": "emc-102061", "q": "The dose of desmopressin sublingual tablets should be controlled by measurement of urine osmolality." }
+          ]
+        },
+        {
+          "t": "Primary nocturnal enuresis (from 5 years up to 65 years, normal urine concentrating ability): 120 micrograms sublingually at bedtime; may increase to 240 micrograms. Restrict fluids. Treat for up to 3 months, then reassess after at least 1 week off treatment. Stop if no adequate effect within 4 weeks of titration.",
+          "tag": "Primary nocturnal enuresis",
+          "src": [
+            { "s": "emc-14771", "q": "The recommended initial dose for children (from 5 years of age) and adults (up to 65 years of age) with normal urine concentrating ability who have primary nocturnal enuresis, is 120 micrograms at bedtime administered sublingually." },
+            { "s": "emc-14771", "q": "If this dose is not sufficiently effective, the dose may be increased up to 240 micrograms, administered sublingually. Fluid restriction should be observed." },
+            { "s": "emc-14771", "q": "The need for continued treatment should be reassessed by means of a period of at least 1 week without Desmopressin Melt." },
+            { "s": "emc-14771", "q": "If adequate clinical effect is not achieved within 4 weeks following appropriate dose titration the medication should be discontinued." }
+          ]
+        },
+        {
+          "t": "If signs of water retention or hyponatraemia appear (headache, nausea/vomiting, weight gain, convulsions), interrupt treatment until full recovery; enforce strict fluid restriction when restarting.",
+          "tag": "Hyponatraemia",
+          "src": [
+            { "s": "emc-14771", "q": "treatment should be interrupted until the patient has fully recovered. When restarting treatment strict fluid restriction should be enforced" }
+          ]
+        },
+        {
+          "t": "Elderly: starting treatment over 65 years is not recommended.",
+          "tag": "Elderly",
+          "src": [
+            { "s": "emc-14771", "q": "The initiation of treatment in patients over 65 years of age is not recommended" }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Primary nocturnal enuresis: from 5 years of age, same dose as adults (120 micrograms at bedtime, up to 240 micrograms).",
+          "src": [
+            { "s": "emc-14771", "q": "The recommended initial dose for children (from 5 years of age)" },
+            { "s": "emc-102061", "q": "Dose recommendations are the same as in adults." }
+          ]
+        },
+        {
+          "t": "Diabetes insipidus: suitable starting dose in children, as in adults, is 60 micrograms three times daily, adjusted to response.",
+          "src": [
+            { "s": "emc-102061", "q": "A suitable starting dose in adults and children is 60 micrograms three times daily, administered sublingually." }
+          ]
+        },
+        {
+          "t": "Hyponatraemia in children often follows changes in daily routine affecting fluid intake or sweating; psychiatric effects in children (mood swings, aggression, nightmares) usually reverse on stopping.",
+          "detail": true,
+          "src": [
+            { "s": "emc-14771", "q": "in children it is often seen to occur in relation to changes in daily routines affecting fluid intake and/or perspiration" },
+            { "s": "emc-14771", "q": "In children, psychiatric disorders including affect lability, aggression, anxiety, mood swings & nightmare are generally reversed upon treatment discontinuation." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to desmopressin or excipients.",
+          "src": [
+            { "s": "emc-14771", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section" }
+          ]
+        },
+        {
+          "t": "Known or suspected cardiac insufficiency and other conditions needing diuretic treatment (all indications).",
+          "src": [
+            { "s": "emc-14771", "q": "Known or suspected cardiac insufficiency and other conditions requiring treatment with diuretic agents." },
+            { "s": "emc-102061", "q": "When treated for the above conditions desmopressin sublingual tablets are contraindicated in cases of cardiac insufficiency and other conditions requiring treatment with diuretic agents." }
+          ]
+        },
+        {
+          "t": "Habitual or psychogenic polydipsia (urine over 40 ml/kg/24 hours) and alcohol abuse must be excluded first.",
+          "src": [
+            { "s": "emc-102061", "q": "Before prescribing Desmopressin, the diagnoses of habitual or psychogenic polydipsia (resulting in a urine production exceeding 40 ml/kg/24 hours) and alcohol abuse should be excluded." }
+          ]
+        },
+        {
+          "t": "Nocturnal enuresis contraindications: blood pressure not normal; age over 65; moderate or severe renal insufficiency (CrCl below 50 ml/min); known hyponatraemia; SIADH.",
+          "src": [
+            { "s": "emc-14771", "q": "Desmopressin Melt should only be used in patients with normal blood pressure." },
+            { "s": "emc-14771", "q": "Desmopressin should not be prescribed to patients over the age of 65 Moderate and severe renal insufficiency (creatinine clearance below 50ml/min) Known hyponatremia Syndrome of inappropriate ADH secretion (SIADH)" }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Nocturnal enuresis: limit fluid intake to a minimum from 1 hour before the dose until the next morning (at least 8 hours). Without fluid restriction, water retention and hyponatraemia can occur, with or without warning signs (headache, nausea/vomiting, weight gain, convulsions).",
+          "src": [
+            { "s": "emc-14771", "q": "the fluid intake must be limited to a minimum from 1 hour before until the next morning (at least 8 hours) after administration" },
+            { "s": "emc-14771", "q": "Treatment without concomitant reduction of fluid intake may lead to water retention and/or hyponatraemia with or without accompanying warning signs and symptoms" }
+          ]
+        },
+        {
+          "t": "Elderly patients and those with serum sodium in the low-normal range have a higher risk of hyponatraemia.",
+          "src": [
+            { "s": "emc-14771", "q": "Elderly patients and patients with serum sodium levels in the lower range of normal may have an increased risk of hyponatraemia." }
+          ]
+        },
+        {
+          "t": "Interrupt treatment during acute illness with fluid or electrolyte imbalance (e.g. systemic infection, fever, gastroenteritis).",
+          "src": [
+            { "s": "emc-14771", "q": "Treatment with desmopressin should be interrupted during acute intercurrent illnesses characterised by fluid and/or electrolyte imbalance (such as systemic infections, fever, gastroenteritis)." }
+          ]
+        },
+        {
+          "t": "Care with reduced renal function, cardiovascular disease or cystic fibrosis. Use with caution in fluid/electrolyte imbalance; take precautions if at risk of raised intracranial pressure.",
+          "src": [
+            { "s": "emc-14771", "q": "Care should be taken with patients who have reduced renal function and/or cardiovascular disease or cystic fibrosis." },
+            { "s": "emc-14771", "q": "Desmopressin should be used with caution in patients with conditions characterised by fluid and/or electrolyte imbalance. Precautions must be taken in patients at risk for increased intracranial pressure." }
+          ]
+        },
+        {
+          "t": "Consider severe bladder dysfunction and outlet obstruction before starting.",
+          "detail": true,
+          "src": [
+            { "s": "emc-14771", "q": "Severe bladder dysfunction and outlet obstruction should be considered before starting treatment." }
+          ]
+        },
+        {
+          "t": "MHRA: stay alert for hyponatraemia, particularly with the melt form; follow SmPC and leaflet fluid-intake advice closely.",
+          "src": [
+            { "s": "mhra-dsu-desmomelt", "q": "Healthcare professionals should remain vigilant for signs and symptoms of hyponatraemia associated with use of desmopressin, particularly the melt formulation." },
+            { "s": "mhra-dsu-desmomelt", "q": "healthcare professionals and patients should closely follow the advice on fluid intake in the summary of product characteristics and patient information leaflet to avoid hyponatraemia" }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Medicines that induce SIADH (tricyclic antidepressants, SSRIs, chlorpromazine, carbamazepine) and some sulfonylureas, particularly chlorpropamide: additive antidiuretic effect, higher risk of water retention and hyponatraemia. Take care with fluid restriction and check serum sodium more often.",
+          "src": [
+            { "s": "emc-14771", "q": "Substances which are known to induce SIADH e.g. tricyclic antidepressants, selective serotonin reuptake inhibitors, chlorpromazine and carbamazepine, as well as some antidiabetics of the sulfonylurea group particularly chlorpropamide, may cause an additive antidiuretic effect" },
+            { "s": "emc-14771", "q": "Precautions to avoid hyponatraemia including careful attention to fluid restriction and more frequent monitoring of serum sodium must be taken in case of concomitant treatment with drugs, which are known to induce SIADH" }
+          ]
+        },
+        {
+          "t": "NSAIDs: may cause water retention and/or hyponatraemia; same precautions (fluid restriction, more frequent sodium checks).",
+          "src": [
+            { "s": "emc-14771", "q": "NSAIDs may induce water retention and/or hyponatraemia." },
+            { "s": "emc-14771", "q": "case of concomitant treatment with NSAIDs" }
+          ]
+        },
+        {
+          "t": "Loperamide: about 3-fold rise in desmopressin levels, raising the risk of water retention and hyponatraemia; other drugs that slow gut transit may do the same.",
+          "src": [
+            { "s": "emc-14771", "q": "Concomitant treatment with loperamide may result in a 3-fold increase of desmopressin plasma concentrations, which may lead to an increased risk of water retention and/or hyponatraemia." }
+          ]
+        },
+        {
+          "t": "Food may reduce the strength and duration of the antidiuretic effect at low doses.",
+          "detail": true,
+          "src": [
+            { "s": "emc-14771", "q": "Food intake may reduce the intensity and duration of the antidiuretic effect at low oral doses of desmopressin tablet." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Nocturnal enuresis: contraindicated in moderate and severe renal insufficiency (CrCl below 50 ml/min).",
+          "src": [
+            { "s": "emc-14771", "q": "Moderate and severe renal insufficiency (creatinine clearance below 50ml/min)" }
+          ]
+        },
+        {
+          "t": "Care with reduced renal function; in chronic renal disease the antidiuretic effect is weaker than normal.",
+          "src": [
+            { "s": "emc-102061", "q": "In chronic renal disease, the antidiuretic effect of desmopressin sublingual lyophilisate would be less than normal." }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No dose adjustment needed in hepatic impairment.",
+          "src": [
+            { "s": "emc-14771", "q": "No dose adjustment is needed for patients with hepatic impairment" }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Use with caution. Limited data (53 pregnancies in diabetes insipidus) show rare malformations; animal studies show no harm. Monitor blood pressure (higher pre-eclampsia risk).",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-14771", "q": "Caution should be exercised when prescribing to pregnant women." },
+            { "s": "emc-14771", "q": "Blood pressure monitoring is recommended due to the increased risk of pre- eclampsia." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Amounts passing into milk (studied at high nasal dose) are far below those that affect infant diuresis; stopping breastfeeding is not considered necessary.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-14771", "q": "the amounts of desmopressin that may be transferred to the child are considerably less than the amounts required to influence diuresis" },
+            { "s": "emc-14771", "q": "Therefore it is not considered necessary to stop breastfeeding." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "No fertility or contraception statement in the two UK SmPCs (section 5.3 notes no reproductive toxicity signal)."
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Enuresis trials in children and adolescents. Common: headache. Uncommon: abdominal pain, nausea, vomiting, diarrhoea, affect lability, aggression, bladder and urethral symptoms, peripheral oedema, fatigue.",
+          "src": [
+            { "s": "emc-14771", "q": "Common (≥ 1/100 to < 1/10) Uncommon (≥ 1/1,000 to < 1/100)" },
+            { "s": "emc-14771", "q": "Nervous system disorders Headache Somnolence Vascular disorders Hypertension Gastrointestinal disorders Abdominal pain, Nausea, Vomiting, Diarrhoea" },
+            { "s": "emc-14771", "q": "Bladder and urethral symptoms General disorders and administration site conditions Oedema peripheral, Fatigue" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Hyponatraemia is the most serious reaction: headache, nausea, vomiting, weight gain, malaise, cramps, confusion, reduced consciousness, and in severe cases convulsions and coma. Stop desmopressin, restrict fluids and treat symptoms.",
+          "src": [
+            { "s": "emc-14771", "q": "The most serious adverse reaction with desmopressin is hyponatraemia" },
+            { "s": "emc-14771", "q": "confusion, decreased consciousness and in severe cases convulsions and coma" },
+            { "s": "emc-14771", "q": "Hyponatraemia is treated by discontinuing the desmopressin treatment, fluid restriction and symptomatic treatment if needed." }
+          ]
+        },
+        {
+          "t": "Anaphylaxis and severe allergic reactions have been reported spontaneously.",
+          "detail": true,
+          "src": [
+            { "s": "emc-14771", "q": "Anaphylactic reactions, Psychomotor hyperactivity and some Psychiatric reactions" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before starting enuresis treatment: exclude psychogenic polydipsia, alcohol abuse, abnormal blood pressure, renal impairment (CrCl below 50 ml/min), hyponatraemia and SIADH.",
+          "tag": "baseline",
+          "src": [
+            { "s": "emc-102061", "q": "Before prescribing Desmopressin, the diagnoses of habitual or psychogenic polydipsia" },
+            { "s": "emc-14771", "q": "Moderate and severe renal insufficiency (creatinine clearance below 50ml/min) Known hyponatremia" }
+          ]
+        },
+        {
+          "t": "Check serum sodium more often when taken with SIADH-inducing medicines or NSAIDs.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-14771", "q": "more frequent monitoring of serum sodium must be taken in case of concomitant treatment with drugs, which are known to induce SIADH" }
+          ]
+        },
+        {
+          "t": "Post-hypophysectomy: control dose by urine osmolality.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-102061", "q": "The dose of desmopressin sublingual tablets should be controlled by measurement of urine osmolality." }
+          ]
+        },
+        {
+          "t": "Stop if no adequate effect within 4 weeks of titration (enuresis); interrupt for signs of water retention or hyponatraemia; reassess after 3 months with at least 1 week off treatment.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-14771", "q": "If adequate clinical effect is not achieved within 4 weeks following appropriate dose titration the medication should be discontinued." },
+            { "s": "emc-14771", "q": "Desmopressin Melt is intended for treatment periods of up to 3 months." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Place under the tongue; it dissolves without water. For enuresis, take at bedtime.",
+          "src": [
+            { "s": "emc-14771", "q": "Sublingual use, place the melt under the tongue where it dissolves without the need for water." },
+            { "s": "emc-14771", "q": "120 micrograms at bedtime administered sublingually" }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Enuresis: drink as little as possible from 1 hour before the dose until the next morning (at least 8 hours). Patients and carers must be carefully taught the fluid restriction.",
+          "src": [
+            { "s": "emc-14771", "q": "All patients and, when applicable, their guardians should be carefully instructed to adhere to the fluid restrictions." }
+          ]
+        },
+        {
+          "t": "Stop and seek advice if headache, nausea, vomiting or weight gain occur; pause treatment during fever, infection or gastroenteritis.",
+          "src": [
+            { "s": "emc-14771", "q": "In the event of signs or symptoms of water retention and/or hyponatraemia (headache, nausea/vomiting, weight gain, and, in severe cases, convulsions) treatment should be interrupted until the patient has fully recovered." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "desmopressin:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "allergen": ["desmopressin"],
+      "concern": "Desmopressin hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity to the active substance",
+      "src": [
+        { "s": "emc-14771", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section" }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:heart-failure",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "condition": "heart-failure",
+      "concern": "Known or suspected cardiac insufficiency",
+      "consequence": "Fluid retention risk; listed in SmPC section 4.3 for all indications.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in cases of cardiac insufficiency",
+      "src": [
+        { "s": "emc-14771", "q": "Known or suspected cardiac insufficiency and other conditions requiring treatment with diuretic agents." },
+        { "s": "emc-102061", "q": "When treated for the above conditions desmopressin sublingual tablets are contraindicated in cases of cardiac insufficiency and other conditions requiring treatment with diuretic agents." }
+      ]
+    },
+    {
+      "id": "desmopressin:interaction:diuretic-condition",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "other": "group:diuretic",
+      "concern": "Condition requiring diuretic treatment",
+      "consequence": "SmPC section 4.3 contraindicates desmopressin in conditions that need treatment with diuretic agents.",
+      "action": "Do not use while the condition needs a diuretic.",
+      "sourceWording": "contraindicated in ... conditions requiring treatment with diuretic agents",
+      "src": [
+        { "s": "emc-102061", "q": "When treated for the above conditions desmopressin sublingual tablets are contraindicated in cases of cardiac insufficiency and other conditions requiring treatment with diuretic agents." }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:psychogenic-polydipsia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "condition": "psychogenic-polydipsia",
+      "concern": "Habitual or psychogenic polydipsia",
+      "consequence": "Water intoxication / hyponatraemia; must be excluded before prescribing (section 4.3).",
+      "action": "Do not use.",
+      "sourceWording": "should be excluded",
+      "src": [
+        { "s": "emc-14771", "q": "Habitual or psychogenic polydipsia (resulting in a urine production exceeding 40 ml/kg/24 hours)" },
+        { "s": "emc-102061", "q": "Before prescribing Desmopressin, the diagnoses of habitual or psychogenic polydipsia (resulting in a urine production exceeding 40 ml/kg/24 hours) and alcohol abuse should be excluded." }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:alcohol-dependence",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "condition": "alcohol-dependence",
+      "concern": "Alcohol abuse",
+      "consequence": "Must be excluded before prescribing (section 4.3).",
+      "action": "Do not use.",
+      "sourceWording": "alcohol abuse should be excluded",
+      "src": [
+        { "s": "emc-102061", "q": "Before prescribing Desmopressin, the diagnoses of habitual or psychogenic polydipsia (resulting in a urine production exceeding 40 ml/kg/24 hours) and alcohol abuse should be excluded." }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:hypertension",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "condition": "hypertension",
+      "concern": "Abnormal blood pressure (nocturnal enuresis use)",
+      "consequence": "SmPC section 4.3: only for patients with normal blood pressure.",
+      "action": "Do not use for enuresis unless blood pressure is normal.",
+      "sourceWording": "should only be used in patients with normal blood pressure",
+      "src": [
+        { "s": "emc-14771", "q": "Desmopressin Melt should only be used in patients with normal blood pressure." }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:hypotension",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "condition": "hypotension",
+      "concern": "Abnormal blood pressure (nocturnal enuresis use)",
+      "consequence": "SmPC section 4.3: only for patients with normal blood pressure.",
+      "action": "Do not use for enuresis unless blood pressure is normal.",
+      "sourceWording": "should only be used in patients with normal blood pressure",
+      "src": [
+        { "s": "emc-14771", "q": "Desmopressin Melt should only be used in patients with normal blood pressure." }
+      ]
+    },
+    {
+      "id": "desmopressin:age:over-65",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "age": { "minYears": 65 },
+      "concern": "Age over 65 (nocturnal enuresis use)",
+      "consequence": "Higher risk of hyponatraemia; listed in section 4.3 for enuresis.",
+      "action": "Do not prescribe for enuresis over 65 years; starting treatment over 65 is not recommended.",
+      "sourceWording": "should not be prescribed to patients over the age of 65",
+      "src": [
+        { "s": "emc-14771", "q": "Desmopressin should not be prescribed to patients over the age of 65" },
+        { "s": "emc-14771", "q": "The initiation of treatment in patients over 65 years of age is not recommended" }
+      ]
+    },
+    {
+      "id": "desmopressin:age:under-5",
+      "kind": "age",
+      "level": "info",
+      "med": "desmopressin",
+      "age": { "maxYears": 5 },
+      "concern": "Child under 5 years (nocturnal enuresis)",
+      "consequence": "Enuresis dosing is stated from 5 years of age.",
+      "action": "Enuresis dose is for children from 5 years; diabetes insipidus dosing is individual.",
+      "sourceWording": "for children (from 5 years of age)",
+      "src": [
+        { "s": "emc-14771", "q": "The recommended initial dose for children (from 5 years of age)" }
+      ]
+    },
+    {
+      "id": "desmopressin:renal:crcl-50",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "renal": { "measure": "CrCl", "max": 50 },
+      "concern": "Moderate or severe renal insufficiency (CrCl below 50 ml/min)",
+      "consequence": "Higher exposure (AUC and half-life rise with renal impairment). One UK SmPC lists this in section 4.3 under nocturnal enuresis; sections 4.2 and 5.2 of both UK SmPCs state the contraindication without naming an indication.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... Moderate and severe renal insufficiency (creatinine clearance below 50ml/min)",
+      "src": [
+        { "s": "emc-14771", "q": "Moderate and severe renal insufficiency (creatinine clearance below 50ml/min)" },
+        { "s": "emc-14771", "q": "Desmopressin is contraindicated in patients with moderate and severe renal impairment (creatinine clearance below 50 ml/min)." },
+        { "s": "emc-102061", "q": "Desmopressin sublingual tablets are contraindicated in patients with moderate and severe renal insufficiency" }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "condition": "hyponatraemia",
+      "concern": "Known hyponatraemia (nocturnal enuresis use)",
+      "consequence": "Worsening hyponatraemia (convulsions, coma). Section 4.3 lists this under nocturnal enuresis; it is not in the diabetes insipidus contraindication list.",
+      "action": "Do not use for nocturnal enuresis.",
+      "sourceWording": "4.3 Contraindications: Known hyponatremia",
+      "src": [
+        { "s": "emc-102061", "q": "Contraindications related to the treatment of primary nocturnal enuresis" },
+        { "s": "emc-14771", "q": "Known hyponatremia" }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:siadh",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "desmopressin",
+      "condition": "siadh",
+      "concern": "Syndrome of inappropriate ADH secretion (SIADH) (nocturnal enuresis use)",
+      "consequence": "Additive antidiuresis and hyponatraemia. Section 4.3 lists this under nocturnal enuresis; it is not in the diabetes insipidus contraindication list.",
+      "action": "Do not use for nocturnal enuresis.",
+      "sourceWording": "4.3 Contraindications: Syndrome of inappropriate ADH secretion (SIADH)",
+      "src": [
+        { "s": "emc-102061", "q": "Contraindications related to the treatment of primary nocturnal enuresis" },
+        { "s": "emc-14771", "q": "Syndrome of inappropriate ADH secretion (SIADH)" }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:acute-fluid-electrolyte-illness",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "desmopressin",
+      "condition": "acute-fluid-electrolyte-illness",
+      "concern": "Acute illness with fluid/electrolyte imbalance (infection, fever, gastroenteritis)",
+      "consequence": "Higher risk of hyponatraemia.",
+      "action": "Interrupt treatment during the illness.",
+      "sourceWording": "should be interrupted during acute intercurrent illnesses",
+      "src": [
+        { "s": "emc-14771", "q": "Treatment with desmopressin should be interrupted during acute intercurrent illnesses characterised by fluid and/or electrolyte imbalance (such as systemic infections, fever, gastroenteritis)." }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:pyrexia",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "desmopressin",
+      "condition": "pyrexia",
+      "concern": "Fever",
+      "consequence": "Fluid/electrolyte imbalance raises hyponatraemia risk.",
+      "action": "Interrupt treatment during the illness.",
+      "sourceWording": "should be interrupted during acute intercurrent illnesses",
+      "src": [
+        { "s": "emc-14771", "q": "Treatment with desmopressin should be interrupted during acute intercurrent illnesses characterised by fluid and/or electrolyte imbalance (such as systemic infections, fever, gastroenteritis)." }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:cystic-fibrosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "desmopressin",
+      "condition": "cystic-fibrosis",
+      "concern": "Cystic fibrosis",
+      "consequence": "Listed as a special warning.",
+      "action": "Use with care.",
+      "sourceWording": "Care should be taken",
+      "src": [
+        { "s": "emc-14771", "q": "Care should be taken with patients who have reduced renal function and/or cardiovascular disease or cystic fibrosis." }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:raised-icp",
+      "kind": "condition",
+      "level": "caution",
+      "med": "desmopressin",
+      "condition": "head-injury-raised-icp",
+      "concern": "Risk of raised intracranial pressure",
+      "consequence": "Fluid overload may be harmful.",
+      "action": "Take precautions against fluid overload.",
+      "sourceWording": "Precautions must be taken",
+      "src": [
+        { "s": "emc-14771", "q": "Precautions must be taken in patients at risk for increased intracranial pressure." }
+      ]
+    },
+    {
+      "id": "desmopressin:condition:bladder-outlet-obstruction",
+      "kind": "condition",
+      "level": "caution",
+      "med": "desmopressin",
+      "condition": "bladder-outlet-obstruction",
+      "concern": "Severe bladder dysfunction or outlet obstruction",
+      "consequence": "Should be considered before starting enuresis treatment.",
+      "action": "Assess before starting.",
+      "sourceWording": "should be considered before starting treatment",
+      "src": [
+        { "s": "emc-14771", "q": "Severe bladder dysfunction and outlet obstruction should be considered before starting treatment." }
+      ]
+    },
+    {
+      "id": "desmopressin:interaction:tca",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "desmopressin",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hyponatraemia",
+      "concern": "Tricyclic antidepressant (SIADH-inducing)",
+      "consequence": "Additive antidiuretic effect: water retention and hyponatraemia.",
+      "action": "Careful fluid restriction and more frequent serum sodium checks.",
+      "sourceWording": "Precautions to avoid hyponatraemia including careful attention to fluid restriction and more frequent monitoring of serum sodium must be taken",
+      "src": [
+        { "s": "emc-14771", "q": "Substances which are known to induce SIADH e.g. tricyclic antidepressants, selective serotonin reuptake inhibitors, chlorpromazine and carbamazepine" },
+        { "s": "emc-14771", "q": "Precautions to avoid hyponatraemia including careful attention to fluid restriction and more frequent monitoring of serum sodium must be taken in case of concomitant treatment with drugs, which are known to induce SIADH" }
+      ]
+    },
+    {
+      "id": "desmopressin:interaction:ssri",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "desmopressin",
+      "other": "group:ssri",
+      "effect": "hyponatraemia",
+      "concern": "SSRI (SIADH-inducing)",
+      "consequence": "Additive antidiuretic effect: water retention and hyponatraemia.",
+      "action": "Careful fluid restriction and more frequent serum sodium checks.",
+      "sourceWording": "Precautions to avoid hyponatraemia including careful attention to fluid restriction and more frequent monitoring of serum sodium must be taken",
+      "src": [
+        { "s": "emc-14771", "q": "Substances which are known to induce SIADH e.g. tricyclic antidepressants, selective serotonin reuptake inhibitors, chlorpromazine and carbamazepine" },
+        { "s": "emc-14771", "q": "Precautions to avoid hyponatraemia including careful attention to fluid restriction and more frequent monitoring of serum sodium must be taken in case of concomitant treatment with drugs, which are known to induce SIADH" }
+      ]
+    },
+    {
+      "id": "desmopressin:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "desmopressin",
+      "other": "carbamazepine",
+      "effect": "hyponatraemia",
+      "concern": "Carbamazepine (SIADH-inducing)",
+      "consequence": "Additive antidiuretic effect: water retention and hyponatraemia.",
+      "action": "Careful fluid restriction and more frequent serum sodium checks.",
+      "sourceWording": "Precautions to avoid hyponatraemia including careful attention to fluid restriction and more frequent monitoring of serum sodium must be taken",
+      "src": [
+        { "s": "emc-14771", "q": "Substances which are known to induce SIADH e.g. tricyclic antidepressants, selective serotonin reuptake inhibitors, chlorpromazine and carbamazepine" },
+        { "s": "emc-14771", "q": "Precautions to avoid hyponatraemia including careful attention to fluid restriction and more frequent monitoring of serum sodium must be taken in case of concomitant treatment with drugs, which are known to induce SIADH" }
+      ]
+    },
+    {
+      "id": "desmopressin:interaction:nsaid",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "desmopressin",
+      "other": "group:nsaid",
+      "effect": "hyponatraemia",
+      "concern": "NSAID",
+      "consequence": "NSAIDs may cause water retention and/or hyponatraemia.",
+      "action": "Careful fluid restriction and more frequent serum sodium checks.",
+      "sourceWording": "Precautions to avoid hyponatraemia ... must be taken in ... case of concomitant treatment with NSAIDs",
+      "src": [
+        { "s": "emc-14771", "q": "NSAIDs may induce water retention and/or hyponatraemia." },
+        { "s": "emc-14771", "q": "case of concomitant treatment with NSAIDs" }
+      ]
+    },
+    {
+      "id": "desmopressin:interaction:sulfonylurea",
+      "kind": "interaction",
+      "level": "info",
+      "med": "desmopressin",
+      "other": "group:sulfonylurea",
+      "effect": "hyponatraemia",
+      "concern": "Sulfonylurea (some, particularly chlorpropamide)",
+      "consequence": "Some sulfonylureas may add to the antidiuretic effect (water retention, hyponatraemia).",
+      "action": "Be aware; the SmPC names chlorpropamide in particular.",
+      "sourceWording": "may cause an additive antidiuretic effect",
+      "src": [
+        { "s": "emc-14771", "q": "as well as some antidiabetics of the sulfonylurea group particularly chlorpropamide, may cause an additive antidiuretic effect leading to an increased risk of water retention and/or hyponatraemia" }
+      ]
+    },
+    {
+      "id": "desmopressin:interaction:loperamide",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "desmopressin",
+      "other": "loperamide",
+      "effect": "hyponatraemia",
+      "concern": "Loperamide",
+      "consequence": "About 3-fold rise in desmopressin levels: higher risk of water retention and hyponatraemia.",
+      "action": "Take care; watch for signs of hyponatraemia.",
+      "sourceWording": "may lead to an increased risk of water retention and/or hyponatraemia",
+      "src": [
+        { "s": "emc-14771", "q": "Concomitant treatment with loperamide may result in a 3-fold increase of desmopressin plasma concentrations, which may lead to an increased risk of water retention and/or hyponatraemia." }
+      ]
+    },
+    {
+      "id": "desmopressin:pregnancy:caution",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "desmopressin",
+      "concern": "Pregnancy",
+      "consequence": "Limited data; rare malformations reported; higher pre-eclampsia risk.",
+      "action": "Use with caution and monitor blood pressure.",
+      "sourceWording": "Caution should be exercised when prescribing to pregnant women",
+      "src": [
+        { "s": "emc-14771", "q": "Caution should be exercised when prescribing to pregnant women." },
+        { "s": "emc-14771", "q": "Blood pressure monitoring is recommended due to the increased risk of pre- eclampsia." }
+      ]
+    }
+  ]
+}

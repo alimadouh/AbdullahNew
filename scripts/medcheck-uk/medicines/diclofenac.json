@@ -1,0 +1,3101 @@
+{
+  "id": "diclofenac",
+  "name": "Diclofenac",
+  "ingredients": [
+    "diclofenac"
+  ],
+  "className": "NSAID (phenylacetic acid derivative)",
+  "groups": [
+    "nsaid"
+  ],
+  "searchTerms": [
+    "diclofenac potassium",
+    "diclofenac sodium",
+    "diclofenac diethylammonium"
+  ],
+  "formulations": [
+    {
+      "id": "diclofenac-k-tab",
+      "label": "Tablets (diclofenac potassium)",
+      "route": "oral",
+      "strengths": "50 mg",
+      "release": "immediate",
+      "note": "Clinic product: diclofenac potassium 50 mg tablets (immediate release). The systemic contraindications and interactions below apply.",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Each tablet contains 50mg of diclofenac potassium"
+        }
+      ],
+      "sourceIds": [
+        "emc-4333"
+      ]
+    },
+    {
+      "id": "diclofenac-gr-tab",
+      "label": "Gastro-resistant tablets (diclofenac sodium)",
+      "route": "oral",
+      "strengths": "50 mg",
+      "release": "gastro-resistant",
+      "note": "Clinic product: diclofenac sodium 50 mg tablets (gastro-resistant). Content from a UK diclofenac sodium 50 mg gastro-resistant tablet SmPC; the systemic contraindications and interactions below apply.",
+      "src": [
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Each tablet contains 50 mg of diclofenac sodium"
+        },
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Tan, round, biconvex, bevel-edged, gastro-resistant tablets"
+        }
+      ],
+      "sourceIds": [
+        "mhra-spc-diclofenac-gr-50-pl00289-0739"
+      ]
+    },
+    {
+      "id": "diclofenac-mr-tab",
+      "label": "Prolonged-release tablets (diclofenac sodium)",
+      "route": "oral",
+      "strengths": "100 mg",
+      "release": "modified",
+      "src": [
+        {
+          "s": "emc-2662",
+          "q": "Diclofenac sodium 100 mg"
+        },
+        {
+          "s": "emc-2662",
+          "q": "Prolonged-release tablet."
+        }
+      ],
+      "sourceIds": [
+        "emc-2662"
+      ]
+    },
+    {
+      "id": "diclofenac-supp",
+      "label": "Suppositories (diclofenac sodium)",
+      "route": "rectal",
+      "strengths": "12.5 mg, 25 mg, 50 mg, 100 mg (clinic product: 100 mg)",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-7859",
+          "q": "Each suppository contains 12.5mg, 25mg, 50mg and 100mg diclofenac sodium"
+        }
+      ],
+      "sourceIds": [
+        "emc-7859"
+      ]
+    },
+    {
+      "id": "diclofenac-gel-1",
+      "label": "Gel 1.16% (diclofenac diethylammonium)",
+      "route": "topical",
+      "strengths": "1.16% (equivalent to 1% diclofenac sodium)",
+      "release": "n/a",
+      "note": "The clinic lists a topical diclofenac \"ointment\"; the UK topical products found are gels (1.16% and 2.32%). Systemic absorption is low; the topical SmPCs list fewer contraindications and no known interactions.",
+      "src": [
+        {
+          "s": "emc-366",
+          "q": "1g of Voltarol Emulgel contains 11.6mg of the active substance diclofenac diethylammonium, which corresponds to 10mg diclofenac sodium"
+        },
+        {
+          "s": "emc-366",
+          "q": "Gel for topical administration"
+        }
+      ],
+      "sourceIds": [
+        "emc-366"
+      ]
+    },
+    {
+      "id": "diclofenac-gel-2",
+      "label": "Gel 2.32% (diclofenac diethylammonium)",
+      "route": "topical",
+      "strengths": "2.32% (equivalent to 2% diclofenac sodium)",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-8775",
+          "q": "100g of this medicine contains 2.32g of the active substance diclofenac diethylammonium, which corresponds to 2g diclofenac sodium"
+        }
+      ],
+      "sourceIds": [
+        "emc-8775"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Tablets 50 mg (potassium): rheumatoid arthritis, osteoarthrosis, low back pain, migraine attacks, acute musculoskeletal disorders and trauma, ankylosing spondylitis, acute gout, pain and inflammation after orthopaedic, dental and minor surgery, pyrophosphate arthropathy.",
+          "formulations": [
+            "diclofenac-k-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Rheumatoid arthritis Osteoarthrosis Low back pain Migraine attacks Acute musculo-skeletal disorders and trauma"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Ankylosing spondylitis Acute gout Control of pain and inflammation in orthopaedic, dental and other minor surgery Pyrophosphate arthropathy"
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant tablets 50 mg (sodium): pain and inflammation in rheumatoid arthritis, osteoarthritis, low back pain, acute musculoskeletal disorders and trauma, fractures, ankylosing spondylitis, acute gout, and dental, orthopaedic and other minor surgery.",
+          "formulations": [
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+              "q": "Diclofenac is indicated for the relief of pain and inflammation in conditions such rheumatoid arthritis, osteoarthritis, and low back pain"
+            },
+            {
+              "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+              "q": "The product is also indicated for the relief of pain from fractures, ankylosing spondylitis and acute gout"
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release tablets and suppositories (adults): pain and inflammation in arthritic conditions (rheumatoid arthritis, osteoarthritis, ankylosing spondylitis, acute gout), acute musculoskeletal disorders, and painful conditions after trauma or minor surgery.",
+          "formulations": [
+            "diclofenac-mr-tab",
+            "diclofenac-supp"
+          ],
+          "src": [
+            {
+              "s": "emc-2662",
+              "q": "Relief of all grades of pain and inflammation in a wide range of conditions, including: (i) arthritic conditions: rheumatoid arthritis, osteoarthritis, ankylosing spondylitis, acute gout"
+            },
+            {
+              "s": "emc-7859",
+              "q": "Relief of all grades of pain and inflammation in a wide range of conditions, including: (i) arthritic conditions: rheumatoid arthritis, osteoarthritis, ankylosing spondylitis, acute gout"
+            }
+          ]
+        },
+        {
+          "t": "Gels: local relief of pain and inflammation in tendon, ligament, muscle and joint trauma (sprains, strains, bruises) and localised soft-tissue rheumatism. The 1.16% gel is also licensed for osteoarthritis of superficial joints such as the knee; the 2.32% gel for non-serious arthritic pain.",
+          "formulations": [
+            "diclofenac-gel-1",
+            "diclofenac-gel-2"
+          ],
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "For the local symptomatic relief of pain and inflammation in: - trauma of the tendons, ligaments, muscles and joints, eg due to sprains, strains and bruises"
+            },
+            {
+              "s": "emc-366",
+              "q": "For the treatment of osteoarthritis of superficial joints such as the knee."
+            },
+            {
+              "s": "emc-8775",
+              "q": "For the relief of pain of non-serious arthritic conditions."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA: oral diclofenac is prescription-only and must not be sold without a prescription; topical forms (gel, cream) remain available over the counter.",
+          "src": [
+            {
+              "s": "mhra-dsu-oral-diclofenac-pom-2015",
+              "q": "oral diclofenac must not be sold without prescription"
+            },
+            {
+              "s": "mhra-dsu-oral-diclofenac-pom-2015",
+              "q": "topical formulations of diclofenac (eg gel and cream) remain available for sale over the counter"
+            }
+          ]
+        },
+        {
+          "t": "Tablets 50 mg (potassium): recommended only for short-term treatment.",
+          "formulations": [
+            "diclofenac-k-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Use of Voltarol Rapid tablets 50mg are recommended only for short term treatment."
+            }
+          ]
+        },
+        {
+          "t": "Gels: review treatment after 14 days for soft-tissue injury and after 4 weeks for osteoarthritis (1.16%); the 2.32% gel can be used for up to 21 days under pharmacy supervision and not longer unless a doctor recommends it.",
+          "formulations": [
+            "diclofenac-gel-1",
+            "diclofenac-gel-2"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "It is recommended that the treatment be reviewed after 14 days in these indications."
+            },
+            {
+              "s": "emc-366",
+              "q": "In the treatment of osteoarthritis, therapy should be reviewed after 4 weeks."
+            },
+            {
+              "s": "emc-8775",
+              "q": "The gel can be used for up to 21 days under pharmacy supervision."
+            },
+            {
+              "s": "emc-8775",
+              "q": "Do not use for more than 21 days unless recommended by a doctor."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Tablets 50 mg (potassium), adults: 100-150 mg daily in 2 or 3 divided doses; milder cases 75-100 mg daily in 2 or 3 divided doses.",
+          "tag": "Adults: pain and inflammation",
+          "formulations": [
+            "diclofenac-k-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "The recommended daily dose is 100-150mg in two or three divided doses. For milder cases, 75-100 mg daily in two or three divided doses is usually sufficient."
+            }
+          ]
+        },
+        {
+          "t": "Tablets 50 mg (potassium), migraine: 50 mg at the first sign of an attack; a further 50 mg after 2 hours if relief is not enough, then 50 mg every 4-6 hours if needed; no more than 200 mg in a day.",
+          "tag": "Adults: migraine",
+          "formulations": [
+            "diclofenac-k-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "In migraine an initial dose of 50 mg should be taken at the first signs of an impending attack."
+            },
+            {
+              "s": "emc-4333",
+              "q": "further doses of 50 mg may be taken at intervals of 4-6 hours, not exceeding a total dose of 200 mg per day"
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant tablets 50 mg (sodium), adults: 75-150 mg daily in 2-3 divided doses; maximum 150 mg daily.",
+          "tag": "Adults",
+          "formulations": [
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+              "q": "Adults 75 - 150 mg daily in 2 -3 divided doses."
+            },
+            {
+              "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+              "q": "The recommended maximum daily dose of diclofenac sodium is 150 mg."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release 100 mg, adults: one tablet once daily; can be raised to 150 mg daily by adding conventional 25 mg or 50 mg diclofenac sodium; maximum 150 mg daily.",
+          "tag": "Adults",
+          "formulations": [
+            "diclofenac-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-2662",
+              "q": "One 100 mg diclofenac sodium prolonged-release tablet daily."
+            },
+            {
+              "s": "emc-2662",
+              "q": "The recommended maximum daily dose of diclofenac sodium is 150mg."
+            }
+          ]
+        },
+        {
+          "t": "Suppositories, adults: 75-150 mg daily in divided doses; the 100 mg suppository may be given once daily, usually at night. Maximum 150 mg daily, including any tablets given at the same time.",
+          "tag": "Adults",
+          "formulations": [
+            "diclofenac-supp"
+          ],
+          "src": [
+            {
+              "s": "emc-7859",
+              "q": "Adults: 75-150mg daily, in divided doses (25mg, 50mg and 100mg suppositories only)."
+            },
+            {
+              "s": "emc-7859",
+              "q": "The recommended maximum daily dose of Voltarol is 150mg."
+            },
+            {
+              "s": "emc-7859",
+              "q": "100mg suppositories may also be given as a once daily treatment, usually at night."
+            }
+          ]
+        },
+        {
+          "t": "1.16% gel, adults and children 14 years and over: 2-4 g rubbed in 3-4 times a day, depending on the area.",
+          "tag": "Topical",
+          "formulations": [
+            "diclofenac-gel-1"
+          ],
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "2- 4g (a circular shaped mass approximately 2.0-2.5cm in diameter) of gel should be applied 3 - 4 times a day"
+            }
+          ]
+        },
+        {
+          "t": "2.32% gel, adults and children 14 years and over: 2-4 g twice a day (morning and evening); maximum 8 g a day.",
+          "tag": "Topical",
+          "formulations": [
+            "diclofenac-gel-2"
+          ],
+          "src": [
+            {
+              "s": "emc-8775",
+              "q": "of gel should be applied 2 times a day (preferably morning and evening). The maximum daily dose is 8g."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: use with particular caution; lowest effective dose in frail or low body-weight patients; monitor for GI bleeding.",
+          "tag": "Elderly",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "it is recommended that the lowest effective dosage be used in frail elderly patients or those with a low body weight"
+            },
+            {
+              "s": "emc-4333",
+              "q": "the patient should be monitored for GI bleeding during NSAID therapy"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Tablets 50 mg (potassium): not recommended under 14 years. Over 14 years: 75-100 mg daily in 2 or 3 divided doses. Use in migraine not established in children.",
+          "formulations": [
+            "diclofenac-k-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Voltarol Rapid tablets are not recommended for children under 14 years of age."
+            },
+            {
+              "s": "emc-4333",
+              "q": "For children over 14 years of age, the recommended daily dose is 75-100 mg in two or three divided doses."
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant tablets 50 mg (sodium): not recommended for use in children (the SmPC gives no age limit).",
+          "formulations": [
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+              "q": "Diclofenac Sodium 50 mg Gastro-resistant Tablets are not recommended for use in children."
+            }
+          ]
+        },
+        {
+          "t": "Prolonged-release 100 mg tablets: not suitable for children (the SmPC gives no age limit).",
+          "formulations": [
+            "diclofenac-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-2662",
+              "q": "This medicine is not suitable for children."
+            }
+          ]
+        },
+        {
+          "t": "Suppositories: the 50 mg and 100 mg strengths are not for children. Only the 12.5 mg and 25 mg strengths are licensed in children: juvenile chronic arthritis (1-12 years) 1-3 mg/kg per day in 2 or 3 doses; post-operative pain (6-12 years) 1-2 mg/kg per day in divided doses for up to 4 days.",
+          "formulations": [
+            "diclofenac-supp"
+          ],
+          "src": [
+            {
+              "s": "emc-7859",
+              "q": "Voltarol 50mg and 100mg suppositories are not indicated for use in children."
+            },
+            {
+              "s": "emc-7859",
+              "q": "Children (aged 1-12 years) with juvenile chronic arthritis: 1-3mg/kg per day divided into 2 or 3 doses (12.5mg and 25mg suppositories only)."
+            },
+            {
+              "s": "emc-7859",
+              "q": "Treatment of acute post-operative pain should be limited to 4 days treatment"
+            }
+          ]
+        },
+        {
+          "t": "1.16% gel: contraindicated under 14 years. 2.32% gel: insufficient data under 14 years. From 14 years, see a doctor if needed for more than 7 days or if symptoms worsen.",
+          "formulations": [
+            "diclofenac-gel-1",
+            "diclofenac-gel-2"
+          ],
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "The use in children and adolescents aged less than 14 years is contraindicated."
+            },
+            {
+              "s": "emc-8775",
+              "q": "There are insufficient data on efficacy and safety available for the children and adolescents below 14 years of age"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "All forms: hypersensitivity to diclofenac; asthma, angioedema, urticaria or acute rhinitis triggered by aspirin, ibuprofen or other NSAIDs; third trimester of pregnancy.",
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Hypersensitivity to the active substance or any of the excipients."
+            },
+            {
+              "s": "emc-4333",
+              "q": "diclofenac is also contraindicated in patients in whom attacks of asthma, angioedema, urticaria or acute rhinitis are precipitated by ibuprofen, acetylsalicylic acid or other nonsteroidal anti-inflammatory drugs"
+            },
+            {
+              "s": "emc-366",
+              "q": "Hypersensitivity to diclofenac or any of the excipients Third trimester of pregnancy."
+            }
+          ]
+        },
+        {
+          "t": "Tablets and suppositories: active gastric or intestinal ulcer, bleeding or perforation; history of GI bleeding or perforation related to previous NSAIDs; active or recurrent peptic ulcer/haemorrhage; hepatic failure; renal failure. The gastro-resistant tablet SmPC words this as severe hepatic, renal or cardiac failure.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Active, gastric or intestinal ulcer, bleeding or perforation."
+            },
+            {
+              "s": "emc-4333",
+              "q": "History of gastrointestinal bleeding or perforation, relating to previous NSAID therapy"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Active, or history of recurrent peptic ulcer/haemorrhage (two or more distinct episodes of proven ulceration or bleeding)"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Hepatic failure Renal failure"
+            },
+            {
+              "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+              "q": "Severe hepatic, renal or cardiac failure (see section 4.4)."
+            }
+          ]
+        },
+        {
+          "t": "Tablets and suppositories: established congestive heart failure (NYHA II-IV), ischaemic heart disease, peripheral arterial disease or cerebrovascular disease. MHRA: switch such patients to another treatment at their next routine appointment.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Established congestive heart failure (NYHA II-IV), ischemic heart disease, peripheral arterial disease and/or cerebrovascular disease."
+            },
+            {
+              "s": "mhra-dsu-diclofenac-cv-2013",
+              "q": "Patients with these conditions should be switched to an alternative treatment at their next routine appointment."
+            }
+          ]
+        },
+        {
+          "t": "Suppositories: also contraindicated in proctitis.",
+          "formulations": [
+            "diclofenac-supp"
+          ],
+          "src": [
+            {
+              "s": "emc-7859",
+              "q": "or other nonsteroidal anti-inflammatory drugs. Proctitis"
+            }
+          ]
+        },
+        {
+          "t": "1.16% gel: contraindicated in children under 14 years. 2.32% gel: also lists hypersensitivity to aspirin or other NSAIDs.",
+          "formulations": [
+            "diclofenac-gel-1",
+            "diclofenac-gel-2"
+          ],
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "The use in children and adolescents aged less than 14 years is contraindicated."
+            },
+            {
+              "s": "emc-8775",
+              "q": "Hypersensitivity to diclofenac, acetylsalicylic acid or other non-steroidal anti-inflammatory drugs."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "GI bleeding, ulceration or perforation can be fatal and can occur at any time; risk rises with dose, ulcer history and age. Use the lowest dose; consider a PPI or misoprostol in high-risk patients and with low-dose aspirin. Stop if GI bleeding or ulceration occurs.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "If gastrointestinal bleeding or ulceration occurs in patients receiving diclofenac, the drug should be withdrawn."
+            },
+            {
+              "s": "emc-4333",
+              "q": "Combination therapy with protective agents (e.g. misoprostol or proton pump inhibitors) should be considered for these patients"
+            }
+          ]
+        },
+        {
+          "t": "Cardiovascular: increased risk of arterial thrombotic events (MI, stroke), especially at 150 mg daily and long term. NYHA I heart failure or significant CV risk factors (hypertension, hyperlipidaemia, diabetes, smoking): use only after careful consideration; lowest dose, shortest time.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "should only be treated with diclofenac after careful consideration"
+            },
+            {
+              "s": "emc-4333",
+              "q": "particularly at high dose (150mg daily) and in long term treatment"
+            },
+            {
+              "s": "mhra-dsu-diclofenac-cv-2013",
+              "q": "Diclofenac treatment should only be initiated after careful consideration for patients with significant risk factors for cardiovascular events"
+            }
+          ]
+        },
+        {
+          "t": "Renal: fluid retention and oedema; particular caution in impaired cardiac or renal function, hypertension, the elderly, with diuretics or other drugs affecting renal function, and in volume depletion (e.g. around major surgery). Monitor renal function in these patients.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "particular caution is called for in patients with impaired cardiac or renal function, history of hypertension, the elderly"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Monitoring of renal function is recommended as a precautionary measure when using diclofenac in such cases."
+            }
+          ]
+        },
+        {
+          "t": "Hepatic: close surveillance in hepatic impairment; liver enzymes may rise and hepatitis can occur without warning. Stop if liver tests persist or worsen or liver disease develops. Hepatic porphyria: may trigger an attack.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Close medical surveillance is required when prescribing Voltarol to patients with impairment of hepatic function"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Hepatitis may occur with diclofenac without prodromal symptoms."
+            },
+            {
+              "s": "emc-4333",
+              "q": "Caution is called for when using diclofenac in patients with hepatic porphyria, since it may trigger an attack."
+            }
+          ]
+        },
+        {
+          "t": "Asthma, seasonal allergic rhinitis, nasal polyps, COPD or chronic respiratory infection: NSAID reactions are more frequent; special precaution (readiness for emergency). Diclofenac can cause bronchospasm in asthma, including from the gels. SPS: use oral or topical NSAIDs with caution in asthma and monitor.",
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "special precaution is recommended in such patients (readiness for emergency)"
+            },
+            {
+              "s": "emc-366",
+              "q": "diclofenac and other NSAIDs can precipitate bronchospasm if administered to patients suffering from or with a previous history of, bronchial asthma"
+            },
+            {
+              "s": "sps-nsaids-asthma",
+              "q": "Use oral or topical NSAIDs with caution and monitor for symptoms such as exacerbation of asthma."
+            }
+          ]
+        },
+        {
+          "t": "Severe skin reactions (SJS, TEN, exfoliative dermatitis, generalised bullous fixed drug eruption), mostly in the first month: stop at the first rash, mucosal lesion or other sign of hypersensitivity. Kounis syndrome (allergic MI) can occur.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Voltarol should be discontinued at the first appearance of skin rash, mucosal lesions or any other signs of hypersensitivity."
+            },
+            {
+              "s": "emc-4333",
+              "q": "Hypersensitivity reactions can also progress to Kounis syndrome"
+            }
+          ]
+        },
+        {
+          "t": "Ulcerative colitis or Crohn's disease: close surveillance and caution (may worsen). After GI surgery: caution (anastomotic leak). SLE or mixed connective tissue disease: increased risk of aseptic meningitis. Haemostasis defects: monitor carefully. May mask infection.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Close medical surveillance and caution should be exercised in patients with ulcerative colitis, or with Crohn's disease"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Close medical surveillance and caution are recommended when using diclofenac after gastro-intestinal surgery."
+            },
+            {
+              "s": "emc-4333",
+              "q": "Patients with defects of haemostasis, bleeding diathesis or haematological abnormalities should be carefully monitored."
+            }
+          ]
+        },
+        {
+          "t": "Avoid with other systemic NSAIDs, including COX-2 inhibitors.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "The concomitant use of Voltarol with systemic NSAIDs including cyclooxygenase-2 selective inhibitors should be avoided"
+            }
+          ]
+        },
+        {
+          "t": "Gels: systemic effects possible with large amounts over large areas or long use. Apply only to intact skin; not on wounds, eyes or mucous membranes; not with airtight occlusive dressings. Stop if a rash develops; avoid excessive sunlight. Isolated GI bleeding reports in patients with a significant history. Fire hazard: fabric in contact with the gel burns more easily.",
+          "formulations": [
+            "diclofenac-gel-1",
+            "diclofenac-gel-2"
+          ],
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "Voltarol Emulgel should be applied only to intact, non-diseased skin and not to skin wounds or open injuries."
+            },
+            {
+              "s": "emc-366",
+              "q": "Discontinue the treatment if a skin rash develops after applying the product."
+            },
+            {
+              "s": "emc-366",
+              "q": "Some possibility of gastro-intestinal bleeding in those with a significant history of this condition has been reported in isolated cases."
+            },
+            {
+              "s": "emc-8775",
+              "q": "Fabric (clothing, bedding, dressings etc) that has been in contact with this product burns more easily and is a serious fire hazard."
+            }
+          ]
+        },
+        {
+          "t": "Tablets contain sucrose: patients with hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take them.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+            },
+            {
+              "s": "emc-2662",
+              "q": "This medicine contains sucrose."
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant tablets contain lactose: patients with galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption should not take them.",
+          "formulations": [
+            "diclofenac-gr-tab"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+              "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Other NSAIDs (including COX-2 inhibitors) and corticosteroids: higher risk of GI bleeding or ulceration; avoid two or more NSAIDs together. Gels: caution with systemic NSAIDs.",
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Co-administration of diclofenac with other systemic NSAIDs or corticosteroids may increase the risk of gastrointestinal bleeding or ulceration. Avoid concomitant use of two or more NSAIDs"
+            },
+            {
+              "s": "emc-366",
+              "q": "Concomitant use of systemic NSAIDs should be cautioned"
+            }
+          ]
+        },
+        {
+          "t": "Anticoagulants (e.g. warfarin) and antiplatelets (e.g. aspirin): increased bleeding risk; caution and close monitoring. SSRIs: increased GI bleeding risk.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Caution is recommended since concomitant administration could increase the risk of bleeding"
+            },
+            {
+              "s": "emc-4333",
+              "q": "close monitoring of such patients is required"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Concomitant administration of SSRI's may increase the risk of gastrointestinal bleeding"
+            }
+          ]
+        },
+        {
+          "t": "Diuretics and antihypertensives (e.g. beta-blockers, ACE inhibitors): reduced antihypertensive effect; give with caution, monitor blood pressure, keep hydrated and consider renal monitoring, especially with diuretics and ACE inhibitors (nephrotoxicity).",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "the combination should be administered with caution and patients, especially the elderly, should have their blood pressure periodically monitored"
+            },
+            {
+              "s": "emc-4333",
+              "q": "particularly for diuretics and ACE inhibitors due to the increased risk of nephrotoxicity"
+            }
+          ]
+        },
+        {
+          "t": "Potassium-sparing diuretics, trimethoprim, ciclosporin or tacrolimus: raised serum potassium; monitor potassium frequently.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Concomitant treatment with potassium-sparing diuretics, ciclosporin, tacrolimus or trimethoprim may be associated with increased serum potassium levels, which should therefore be monitored frequently"
+            }
+          ]
+        },
+        {
+          "t": "Methotrexate: serious toxicity reported when given within 24 hours of an NSAID (reduced renal clearance); caution.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Caution is recommended when NSAIDs, including diclofenac, are administered less than 24 hours before treatment with methotrexate"
+            }
+          ]
+        },
+        {
+          "t": "Antidiabetics: isolated reports of hypo- and hyperglycaemia needing dose changes; monitor blood glucose. Quinolone antibiotics: convulsions possible; caution.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "monitoring of the blood glucose level is recommended as a precautionary measure during concomitant therapy"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Convulsions may occur due to an interaction between quinolones and NSAIDs."
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant tablets: avoid two or more NSAIDs, including aspirin; potassium-sparing drugs: monitor potassium frequently.",
+          "formulations": [
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+              "q": "Avoid concomitant use of two or more NSAIDs (including aspirin) as this may increase the risk of adverse effects"
+            },
+            {
+              "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+              "q": "Concomitant treatment with potassium-sparing drugs may be associated with increased serum potassium levels, which should therefore be monitored frequently"
+            }
+          ]
+        },
+        {
+          "t": "Fluconazole: caution. The diclofenac SmPCs advise caution with potent CYP2C9 inhibitors (example: voriconazole) because diclofenac exposure can rise significantly; a UK celecoxib SmPC describes fluconazole as a potent CYP2C9 inhibitor.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Caution is recommended when co-prescribing diclofenac with potent CYP2C9 inhibitors (such as voriconazole)"
+            },
+            {
+              "s": "emc-2945",
+              "q": "fluconazole, a potent CYP2C9 inhibitor"
+            }
+          ]
+        },
+        {
+          "t": "Not in this tool's list but in the SmPC: lithium and digoxin (monitor levels), phenytoin (monitor levels), ciclosporin (use lower diclofenac dose), tacrolimus, colestipol/colestyramine (give diclofenac 1 hour before or 4-6 hours after), mifepristone (no NSAIDs for 8-12 days after), potent CYP2C9 inhibitors such as voriconazole (caution).",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Monitoring of the serum lithium level is recommended."
+            },
+            {
+              "s": "emc-4333",
+              "q": "Monitoring of the serum digoxin level is recommended."
+            },
+            {
+              "s": "emc-4333",
+              "q": "it is recommended to administer diclofenac at least one hour before or 4 to 6 hours after administration of colestipol/ cholestyramine"
+            },
+            {
+              "s": "emc-4333",
+              "q": "NSAIDs should not be used for 8-12 days after mifepristone administration"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Caution is recommended when co-prescribing diclofenac with potent CYP2C9 inhibitors (such as voriconazole)"
+            }
+          ]
+        },
+        {
+          "t": "Gels: interactions are very unlikely because systemic absorption is very low; no known interactions.",
+          "formulations": [
+            "diclofenac-gel-1",
+            "diclofenac-gel-2"
+          ],
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "Since systemic absorption of diclofenac from a topical application is very low such interactions are very unlikely."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Tablets and suppositories: contraindicated in renal failure (no numeric threshold given). Mild to moderate renal impairment: caution; no specific dose adjustment can be recommended.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Voltarol Rapid is contraindicated in patients with renal failure"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Caution is advised when administering Voltarol Rapid to patients with mild to moderate renal impairment"
+            }
+          ]
+        },
+        {
+          "t": "MHRA: patients at risk of renal impairment or failure (particularly the elderly) should avoid NSAIDs if possible; if used, monitor renal function carefully.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-dsu-nsaids-renal-2009",
+              "q": "patients at risk of renal impairment or renal failure (particularly elderly people) should avoid NSAIDs if possible"
+            },
+            {
+              "s": "mhra-dsu-nsaids-renal-2009",
+              "q": "the renal function of such patients should be carefully monitored during NSAID treatment"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Tablets and suppositories: contraindicated in hepatic failure. Mild to moderate hepatic impairment: caution with close surveillance; no specific dose adjustment can be recommended.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Voltarol Rapid is contraindicated in patients with hepatic failure"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Caution is advised when administering Voltarol Rapid to patients with mild to moderate hepatic impairment"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "All forms, including the gels: contraindicated in the third trimester (fetal ductus arteriosus closure and renal dysfunction; prolonged bleeding and delayed labour).",
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Consequently, Voltarol is contraindicated during the third trimester of pregnancy."
+            },
+            {
+              "s": "emc-366",
+              "q": "Consequently, diclofenac is contraindicated during the third trimester of pregnancy"
+            }
+          ]
+        },
+        {
+          "t": "First and second trimesters: do not give unless clearly necessary; lowest dose, shortest time. Systemic forms from week 20: oligohydramnios and ductus constriction reported; consider antenatal monitoring after several days of use and stop if found.",
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "during the first and second trimester of pregnancy, Voltarol should not be given unless clearly necessary"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Antenatal monitoring for oligohydramnios and ductus arteriosus constriction should be considered after exposure to diclofenac for several days from gestational week 20 onward."
+            },
+            {
+              "s": "emc-366",
+              "q": "During the first and second trimester of pregnancy, diclofenac should not be given unless clearly necessary."
+            }
+          ]
+        },
+        {
+          "t": "MHRA (systemic NSAIDs): avoid from week 20 unless clinically required, at the lowest dose for the shortest time; contraindicated after 28 weeks. The MHRA review did not cover topical NSAIDs: follow the gel product information.",
+          "src": [
+            {
+              "s": "mhra-dsu-nsaids-pregnancy-2023",
+              "q": "avoid prescribing systemic NSAIDs from week 20 of pregnancy unless clinically required and prescribe the lowest dose for the shortest time in these circumstances"
+            },
+            {
+              "s": "mhra-dsu-nsaids-pregnancy-2023",
+              "q": "systemic (oral and injectable) NSAIDs are contraindicated during the last trimester (after 28 weeks) of pregnancy"
+            },
+            {
+              "s": "mhra-dsu-nsaids-pregnancy-2023",
+              "q": "The review did not examine topical NSAIDs (gels and creams containing NSAIDs)."
+            }
+          ]
+        },
+        {
+          "t": "SPS: ibuprofen is the preferred NSAID in pregnancy; systemic NSAIDs from week 20 usually for no longer than 3 days. BUMPS: diclofenac is not advised unless prescribed by a doctor, especially from 20 weeks.",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-pain-pregnancy",
+              "q": "Ibuprofen is the preferred NSAID in pregnancy."
+            },
+            {
+              "s": "sps-pain-pregnancy",
+              "q": "Use the lowest effective dose for the shortest duration, which is usually no longer than three days."
+            },
+            {
+              "s": "bumps-diclofenac",
+              "q": "Use of diclofenac during pregnancy is not advised unless prescribed by a doctor, especially if you are 20 or more weeks pregnant."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Tablets and suppositories SmPCs: passes into milk in small amounts; should not be given during breastfeeding.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "diclofenac should not be administered during breast feeding in order to avoid undesirable effects in the infant"
+            }
+          ]
+        },
+        {
+          "t": "SPS (less restrictive): diclofenac is an NSAID of choice in breastfeeding; oral, rectal and topical forms can be used if clinically appropriate; negligible amounts in milk. Monitor the infant for vomiting and diarrhoea.",
+          "src": [
+            {
+              "s": "sps-bf-nsaids",
+              "q": "Diclofenac can be used during breastfeeding if clinically appropriate."
+            },
+            {
+              "s": "sps-bf-nsaids",
+              "q": "Oral, rectal, and parenteral diclofenac preparations can be used during breastfeeding."
+            },
+            {
+              "s": "sps-bf-nsaids",
+              "q": "Topical and ophthalmic diclofenac preparations can also be used during breastfeeding."
+            },
+            {
+              "s": "sps-bf-nsaids",
+              "q": "As a precaution, monitor infants for vomiting and diarrhoea."
+            }
+          ]
+        },
+        {
+          "t": "Gels: use during breastfeeding only on healthcare professional advice; do not apply to the breasts or to large areas or for long periods.",
+          "formulations": [
+            "diclofenac-gel-1",
+            "diclofenac-gel-2"
+          ],
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "the product should only be used during lactation under advice from a healthcare professional"
+            },
+            {
+              "s": "emc-366",
+              "q": "Voltarol Emulgel should not be applied on the breasts of nursing mothers, nor elsewhere on large areas of skin or for a prolonged period of time"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Systemic forms: may impair female fertility; not recommended in women trying to conceive; consider stopping in women with difficulty conceiving or under fertility investigation. Gels: no human fertility data.",
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "the use of diclofenac may impair female fertility and is not recommended in women attempting to conceive"
+            },
+            {
+              "s": "emc-366",
+              "q": "There are no data available on the use of topical formulations of diclofenac and its effects on fertility in humans."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Tablets and suppositories, common: headache, dizziness, vertigo, nausea, vomiting, diarrhoea, dyspepsia, abdominal pain, flatulence, anorexia, raised transaminases, rash.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Common Rare Very rare Unknown Headache, dizziness."
+            },
+            {
+              "s": "emc-4333",
+              "q": "Common Rare Very rare Unknown Nausea, vomiting, diarrhoea, dyspepsia, abdominal pain, flatulence, anorexia."
+            },
+            {
+              "s": "emc-4333",
+              "q": "Common Rare Very rare Transaminases increased."
+            },
+            {
+              "s": "emc-4333",
+              "q": "Common Rare Very rare Not Known Rash."
+            }
+          ]
+        },
+        {
+          "t": "Gels, common: rash, eczema, erythema, dermatitis (including contact dermatitis), pruritus.",
+          "formulations": [
+            "diclofenac-gel-1",
+            "diclofenac-gel-2"
+          ],
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "Common: Rash, eczema, erythema, dermatitis (including dermatitis contact), pruritus"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "GI ulcer, bleeding or perforation (sometimes fatal, particularly in the elderly): stop the drug.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "gastrointestinal ulcer with or without bleeding or perforation (sometimes fatal particularly in the elderly)"
+            },
+            {
+              "s": "emc-4333",
+              "q": "If gastrointestinal bleeding or ulceration occurs in patients receiving diclofenac, the drug should be withdrawn."
+            }
+          ]
+        },
+        {
+          "t": "Arterial thrombotic events (MI, stroke): patients should see a doctor immediately if chest pain, shortness of breath, weakness or slurred speech occur.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Patients should be instructed to see a physician immediately in case of such an event."
+            },
+            {
+              "s": "emc-4333",
+              "q": "chest pain, shortness of breath, weakness, slurring of speech"
+            }
+          ]
+        },
+        {
+          "t": "Severe skin reactions (SJS, TEN, exfoliative dermatitis): very rare; stop at first rash. Anaphylaxis and angioedema (rare/very rare).",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Stevens-Johnson syndrome, toxic epidermal necrolysis (Lyell's syndrome), dermatitis exfoliative"
+            },
+            {
+              "s": "emc-4333",
+              "q": "Hypersensitivity, anaphylactic and anaphylactoid reactions (including hypotension and shock)."
+            }
+          ]
+        },
+        {
+          "t": "Hepatitis, fulminant hepatitis and hepatic failure (rare/very rare); acute renal failure and nephrotic syndrome (very rare); blood dyscrasias (very rare); aseptic meningitis.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Fulminant hepatitis, hepatic necrosis, hepatic failure."
+            },
+            {
+              "s": "emc-4333",
+              "q": "Acute renal failure, haematuria, proteinuria, nephrotic syndrome, interstitial nephritis, renal papillary necrosis."
+            },
+            {
+              "s": "emc-4333",
+              "q": "Thrombocytopenia, leucopoenia, anaemia (including haemolytic and aplastic anaemia), agranulocytosis."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS baseline (systemic NSAIDs): blood pressure, eGFR, full blood count, serum creatinine; LFTs.",
+          "tag": "baseline",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "sps-nsaids-monitoring",
+              "q": "Before starting Consider Baseline Blood pressure"
+            },
+            {
+              "s": "sps-nsaids-monitoring",
+              "q": "Estimated glomerular filtration rate Full blood count Serum creatinine Liver function tests"
+            }
+          ]
+        },
+        {
+          "t": "SPS after starting or a dose change: eGFR or serum creatinine and full blood count within 2 weeks; haemoglobin within 4 weeks.",
+          "tag": "ongoing",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "sps-nsaids-monitoring",
+              "q": "After started or dose changed Consider Within 2 weeks Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Full blood count"
+            },
+            {
+              "s": "sps-nsaids-monitoring",
+              "q": "Within 4 weeks Haemoglobin"
+            }
+          ]
+        },
+        {
+          "t": "SmPC, prolonged treatment: regular liver function tests and blood counts; renal function in at-risk patients; blood pressure with antihypertensives; blood glucose with antidiabetics.",
+          "tag": "ongoing",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "During prolonged treatment with Diclofenac, regular monitoring of hepatic function is indicated as a precautionary measure."
+            },
+            {
+              "s": "emc-4333",
+              "q": "During prolonged treatment with diclofenac, as with other NSAIDs, monitoring of the blood count is recommended."
+            }
+          ]
+        },
+        {
+          "t": "Stop if GI bleeding or ulceration, at the first sign of skin rash or hypersensitivity, or if abnormal liver tests persist or worsen.",
+          "tag": "stop",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "If abnormal liver function tests persist or worsen, clinical signs or symptoms consistent with liver disease develop or if other manifestations occur (eosinophilia, rash), Voltarol should be discontinued."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Tablets: take with fluid, preferably with or after food. Prolonged-release tablets: swallow whole.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "It is recommended that the tablets be taken with fluid, preferably with or after food."
+            },
+            {
+              "s": "emc-2662",
+              "q": "To be taken whole with liquid, preferably with or after food."
+            }
+          ]
+        },
+        {
+          "t": "Gastro-resistant tablets: swallow whole with water; do not crush or chew; preferably with or after food.",
+          "formulations": [
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+              "q": "Swallow tablets whole with some water. Do not crush or chew. To be taken preferably with or after food."
+            }
+          ]
+        },
+        {
+          "t": "Suppositories: rectal use only, not by mouth; insert well into the rectum, preferably after passing stools.",
+          "formulations": [
+            "diclofenac-supp"
+          ],
+          "src": [
+            {
+              "s": "emc-7859",
+              "q": "Not to be taken by mouth, as per rectal administration only. The suppositories should be inserted well into the rectum. It is recommended to insert the suppositories after passing stools."
+            }
+          ]
+        },
+        {
+          "t": "Gels: for skin use only; rub gently into the affected area, then wipe and wash hands (unless treating the hands); let dry before bandaging.",
+          "formulations": [
+            "diclofenac-gel-1",
+            "diclofenac-gel-2"
+          ],
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "The gel is applied to the affected parts of the body and gently rubbed into the skin."
+            },
+            {
+              "s": "emc-366",
+              "q": "Before applying a bandage, the gel should be left to dry for a few minutes on the skin."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report unusual abdominal symptoms, especially bleeding (black stools, vomiting blood).",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Patients with a history of GI toxicity, particularly when elderly, should report any unusual abdominal symptoms (especially GI bleeding)."
+            }
+          ]
+        },
+        {
+          "t": "Seek medical help at once for chest pain, breathlessness, weakness or slurred speech.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "Patients should remain alert for the signs and symptoms of serious arteriothrombotic events"
+            }
+          ]
+        },
+        {
+          "t": "Do not drive or use machines if dizziness, drowsiness, vertigo or visual disturbance occur.",
+          "formulations": [
+            "diclofenac-k-tab",
+            "diclofenac-mr-tab",
+            "diclofenac-supp",
+            "diclofenac-gr-tab"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4333",
+              "q": "should refrain from driving or operating machinery"
+            }
+          ]
+        },
+        {
+          "t": "Gels: do not smoke or go near naked flames (severe burn risk); fabric that has touched the gel burns more easily. Avoid excessive sunlight.",
+          "formulations": [
+            "diclofenac-gel-1",
+            "diclofenac-gel-2"
+          ],
+          "src": [
+            {
+              "s": "emc-366",
+              "q": "Instruct patients not to smoke or go near naked flames - risk of severe burns."
+            },
+            {
+              "s": "emc-366",
+              "q": "Patients should be warned against excessive exposure to sunlight in order to reduce the incidence of photosensitivity."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "diclofenac:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "allergen": [
+        "diclofenac"
+      ],
+      "concern": "Diclofenac hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use (any form).",
+      "sourceWording": "Hypersensitivity to the active substance",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Hypersensitivity to the active substance or any of the excipients."
+        },
+        {
+          "s": "emc-366",
+          "q": "Hypersensitivity to diclofenac or any of the excipients"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:allergy:nsaid",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "allergen": [
+        "group:nsaid",
+        "aspirin",
+        "ibuprofen"
+      ],
+      "concern": "Asthma, angioedema, urticaria or acute rhinitis triggered by aspirin, ibuprofen or another NSAID",
+      "consequence": "Cross-reactive hypersensitivity, including bronchospasm.",
+      "action": "Do not use (any form, including gels).",
+      "sourceWording": "is also contraindicated",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "diclofenac is also contraindicated in patients in whom attacks of asthma, angioedema, urticaria or acute rhinitis are precipitated by ibuprofen, acetylsalicylic acid or other nonsteroidal anti-inflammatory drugs"
+        },
+        {
+          "s": "emc-366",
+          "q": "Patients with or without chronic asthma in whom asthma, angioedema, urticaria or acute rhinitis are precipitated by acetylsalicylic acid (aspirin) or other non- steroidal anti-inflammatory drugs (NSAIDs)."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:allergy:nsaid-any-gel2",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-gel-2"
+      ],
+      "allergen": [
+        "group:nsaid",
+        "aspirin"
+      ],
+      "concern": "Any hypersensitivity to aspirin or another NSAID (2.32% gel)",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use the 2.32% gel.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        {
+          "s": "emc-8775",
+          "q": "Hypersensitivity to diclofenac, acetylsalicylic acid or other non-steroidal anti-inflammatory drugs."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:nsaid-asthma",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "condition": "nsaid-hypersensitivity-asthma",
+      "concern": "Asthma, angioedema, urticaria or rhinitis triggered by aspirin/NSAIDs",
+      "consequence": "Severe bronchospasm or hypersensitivity.",
+      "action": "Do not use (any form, including gels); SPS: do not use oral or topical NSAIDs with a history of NERD.",
+      "sourceWording": "is also contraindicated",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "diclofenac is also contraindicated in patients in whom attacks of asthma, angioedema, urticaria or acute rhinitis are precipitated by ibuprofen, acetylsalicylic acid or other nonsteroidal anti-inflammatory drugs"
+        },
+        {
+          "s": "emc-8775",
+          "q": "Patients with or without chronic asthma in whom asthma, angioedema, urticaria or acute rhinitis are precipitated by aspirin or other non-steroidal anti- inflammatory agents."
+        },
+        {
+          "s": "sps-nsaids-asthma",
+          "q": "History of NERD Do not use oral or topical NSAIDs."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:asthma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "diclofenac",
+      "condition": "asthma",
+      "concern": "Asthma (current or past), allergic rhinitis, nasal polyps or COPD",
+      "consequence": "NSAIDs can precipitate bronchospasm, asthma exacerbation, angioedema or urticaria.",
+      "action": "Special precaution (readiness for emergency); SPS: use oral or topical NSAIDs with caution and monitor.",
+      "sourceWording": "special precaution is recommended",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "special precaution is recommended in such patients (readiness for emergency)"
+        },
+        {
+          "s": "emc-366",
+          "q": "diclofenac and other NSAIDs can precipitate bronchospasm if administered to patients suffering from or with a previous history of, bronchial asthma"
+        },
+        {
+          "s": "sps-nsaids-asthma",
+          "q": "Use oral or topical NSAIDs with caution and monitor for symptoms such as exacerbation of asthma."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:gi-ulcer-bleed",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "peptic-ulcer-gi-bleeding",
+      "effect": "bleeding",
+      "concern": "Active GI ulcer, bleeding or perforation; NSAID-related GI bleed or perforation history; recurrent peptic ulcer/haemorrhage",
+      "consequence": "GI bleeding, ulceration or perforation, which can be fatal.",
+      "action": "Do not use tablets or suppositories.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Active, gastric or intestinal ulcer, bleeding or perforation."
+        },
+        {
+          "s": "emc-4333",
+          "q": "History of gastrointestinal bleeding or perforation, relating to previous NSAID therapy"
+        },
+        {
+          "s": "emc-4333",
+          "q": "Active, or history of recurrent peptic ulcer/haemorrhage (two or more distinct episodes of proven ulceration or bleeding)"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:gi-ulcer-gel2",
+      "kind": "condition",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-gel-2"
+      ],
+      "condition": "peptic-ulcer-gi-bleeding",
+      "concern": "History of or active peptic ulcer (2.32% gel)",
+      "consequence": "Isolated reports of GI bleeding in patients with a significant history.",
+      "action": "Listed as a precaution in the 2.32% gel SmPC.",
+      "sourceWording": "Patients with a history of, or active, peptic ulceration.",
+      "src": [
+        {
+          "s": "emc-8775",
+          "q": "Patients with a history of, or active, peptic ulceration."
+        },
+        {
+          "s": "emc-8775",
+          "q": "Some possibility of gastro-intestinal bleeding in those with a significant history of this condition has been reported in isolated cases."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:heart-failure",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "heart-failure",
+      "concern": "Established congestive heart failure (NYHA II-IV)",
+      "consequence": "Increased arterial thrombotic risk; fluid retention.",
+      "action": "Do not use tablets or suppositories (NYHA I: only after careful consideration). MHRA: switch to another treatment at the next routine appointment.",
+      "sourceWording": "contraindicated in patients with established congestive heart failure (NYHA II-IV)",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Diclofenac is contraindicated in patients with established congestive heart failure (NYHA II-IV)"
+        },
+        {
+          "s": "mhra-dsu-diclofenac-cv-2013",
+          "q": "Patients with these conditions should be switched to an alternative treatment at their next routine appointment."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:severe-hf",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "severe-heart-failure",
+      "concern": "Severe heart failure (within NYHA II-IV)",
+      "consequence": "Increased arterial thrombotic risk; fluid retention.",
+      "action": "Do not use tablets or suppositories.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Established congestive heart failure (NYHA II-IV), ischemic heart disease, peripheral arterial disease and/or cerebrovascular disease."
+        },
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Severe hepatic, renal or cardiac failure (see section 4.4)."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "ischaemic-heart-disease",
+      "concern": "Established ischaemic heart disease",
+      "consequence": "Arterial thrombotic risk similar to COX-2 inhibitors (MI, stroke).",
+      "action": "Do not use tablets or suppositories; MHRA: switch to another treatment at the next routine appointment.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Established congestive heart failure (NYHA II-IV), ischemic heart disease, peripheral arterial disease and/or cerebrovascular disease."
+        },
+        {
+          "s": "mhra-dsu-diclofenac-cv-2013",
+          "q": "diclofenac is now contraindicated in patients with established: ischaemic heart disease peripheral arterial disease cerebrovascular disease"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:peripheral-arterial-disease",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "peripheral-arterial-disease",
+      "concern": "Established peripheral arterial disease",
+      "consequence": "Arterial thrombotic risk similar to COX-2 inhibitors (MI, stroke).",
+      "action": "Do not use tablets or suppositories; MHRA: switch to another treatment at the next routine appointment.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Established congestive heart failure (NYHA II-IV), ischemic heart disease, peripheral arterial disease and/or cerebrovascular disease."
+        },
+        {
+          "s": "mhra-dsu-diclofenac-cv-2013",
+          "q": "diclofenac is now contraindicated in patients with established: ischaemic heart disease peripheral arterial disease cerebrovascular disease"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:cerebrovascular-disease",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "cerebrovascular-disease",
+      "concern": "Established cerebrovascular disease",
+      "consequence": "Arterial thrombotic risk similar to COX-2 inhibitors (MI, stroke).",
+      "action": "Do not use tablets or suppositories; MHRA: switch to another treatment at the next routine appointment.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Established congestive heart failure (NYHA II-IV), ischemic heart disease, peripheral arterial disease and/or cerebrovascular disease."
+        },
+        {
+          "s": "mhra-dsu-diclofenac-cv-2013",
+          "q": "diclofenac is now contraindicated in patients with established: ischaemic heart disease peripheral arterial disease cerebrovascular disease"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:hypertension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "hypertension",
+      "concern": "Hypertension (cardiovascular risk factor)",
+      "consequence": "Arterial thrombotic risk; fluid retention and oedema.",
+      "action": "Only after careful consideration; lowest dose, shortest time; monitoring and advice required.",
+      "sourceWording": "should only be treated with diclofenac after careful consideration",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Patients with congestive heart failure (NYHA-I) or patients with significant risk factors for cardiovascular events (e.g. hypertension, hyperlipidaemia, diabetes mellitus, smoking) should only be treated with diclofenac after careful consideration."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus (cardiovascular risk factor)",
+      "consequence": "Arterial thrombotic risk.",
+      "action": "Only after careful consideration; lowest dose, shortest time.",
+      "sourceWording": "should only be treated with diclofenac after careful consideration",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Patients with congestive heart failure (NYHA-I) or patients with significant risk factors for cardiovascular events (e.g. hypertension, hyperlipidaemia, diabetes mellitus, smoking) should only be treated with diclofenac after careful consideration."
+        },
+        {
+          "s": "mhra-dsu-diclofenac-cv-2013",
+          "q": "Diclofenac treatment should only be initiated after careful consideration for patients with significant risk factors for cardiovascular events"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:severe-renal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "severe-renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "Renal failure (gastro-resistant tablet SmPC: severe renal impairment)",
+      "consequence": "May precipitate or worsen renal failure.",
+      "action": "Do not use tablets or suppositories.",
+      "sourceWording": "contraindicated in patients with renal failure",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Voltarol Rapid is contraindicated in patients with renal failure"
+        },
+        {
+          "s": "emc-7859",
+          "q": "Diclofenac is contraindicated in patients with renal failure"
+        },
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Severe hepatic, renal or cardiac failure (see section 4.4)."
+        },
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Diclofenac is contraindicated in patients with severe renal impairment"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:renal-smpc",
+      "kind": "condition",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "Mild to moderate renal impairment",
+      "consequence": "Fluid retention; NSAIDs may reduce renal function.",
+      "action": "Caution; monitor renal function (no specific dose adjustment can be recommended).",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Caution is advised when administering Voltarol Rapid to patients with mild to moderate renal impairment"
+        },
+        {
+          "s": "emc-4333",
+          "q": "Monitoring of renal function is recommended as a precautionary measure when using diclofenac in such cases."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:renal-mhra",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "renal-impairment",
+      "effect": "nephrotoxicity",
+      "concern": "At risk of renal impairment or renal failure (MHRA)",
+      "consequence": "NSAIDs may precipitate acute renal failure.",
+      "action": "Avoid NSAIDs if possible; if used, monitor renal function carefully.",
+      "sourceWording": "should avoid NSAIDs if possible",
+      "src": [
+        {
+          "s": "mhra-dsu-nsaids-renal-2009",
+          "q": "patients at risk of renal impairment or renal failure (particularly elderly people) should avoid NSAIDs if possible"
+        },
+        {
+          "s": "mhra-dsu-nsaids-renal-2009",
+          "q": "the renal function of such patients should be carefully monitored during NSAID treatment"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:dehydration",
+      "kind": "condition",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "dehydration-hypovolaemia",
+      "effect": "nephrotoxicity",
+      "concern": "Substantial extracellular volume depletion (e.g. before or after major surgery)",
+      "consequence": "Renal impairment and fluid retention.",
+      "action": "Particular caution; monitor renal function.",
+      "sourceWording": "particular caution is called for",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "those patients with substantial extracellular volume depletion from any cause, e.g. before or after major surgery"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:ibd",
+      "kind": "condition",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "inflammatory-bowel-disease",
+      "concern": "Ulcerative colitis or Crohn's disease",
+      "consequence": "May be exacerbated.",
+      "action": "Close medical surveillance and caution.",
+      "sourceWording": "Close medical surveillance and caution should be exercised",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Close medical surveillance and caution should be exercised in patients with ulcerative colitis, or with Crohn's disease"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:lupus",
+      "kind": "condition",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "lupus",
+      "concern": "SLE or mixed connective tissue disease",
+      "consequence": "Increased risk of aseptic meningitis.",
+      "action": "Be aware of aseptic meningitis risk.",
+      "sourceWording": "there may be an increased risk of aseptic meningitis",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "In patients with systemic lupus erythematosus (SLE) and mixed connective tissue disorders there may be an increased risk of aseptic meningitis"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:porphyria",
+      "kind": "condition",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "porphyria",
+      "concern": "Hepatic porphyria",
+      "consequence": "May trigger an attack.",
+      "action": "Caution.",
+      "sourceWording": "Caution is called for",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Caution is called for when using diclofenac in patients with hepatic porphyria, since it may trigger an attack."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:bleeding-disorder",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "bleeding-disorder",
+      "effect": "bleeding",
+      "concern": "Defects of haemostasis, bleeding diathesis or haematological abnormalities",
+      "consequence": "Diclofenac may reversibly inhibit platelet aggregation.",
+      "action": "Monitor carefully.",
+      "sourceWording": "should be carefully monitored",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Patients with defects of haemostasis, bleeding diathesis or haematological abnormalities should be carefully monitored."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:conceive",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "condition": "attempting-to-conceive",
+      "concern": "Woman attempting to conceive",
+      "consequence": "May impair female fertility.",
+      "action": "Not recommended; consider stopping if difficulty conceiving or under fertility investigation.",
+      "sourceWording": "is not recommended in women attempting to conceive",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "The use of Voltarol may impair female fertility and is not recommended in women attempting to conceive."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:sugar-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab"
+      ],
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency (tablets contain sucrose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the tablets.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+        },
+        {
+          "s": "emc-2662",
+          "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:proctitis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-supp"
+      ],
+      "condition": "proctitis",
+      "concern": "Proctitis (suppositories)",
+      "consequence": "Listed in the suppository SmPC section 4.3.",
+      "action": "Do not use suppositories.",
+      "sourceWording": "4.3 Contraindications",
+      "src": [
+        {
+          "s": "emc-7859",
+          "q": "or other nonsteroidal anti-inflammatory drugs. Proctitis"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:hepatic:failure",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Hepatic failure (gastro-resistant tablet SmPC: severe hepatic impairment)",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use tablets or suppositories.",
+      "sourceWording": "contraindicated in patients with hepatic failure",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Voltarol Rapid is contraindicated in patients with hepatic failure"
+        },
+        {
+          "s": "emc-7859",
+          "q": "Diclofenac is contraindicated in patients with hepatic failure"
+        },
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Diclofenac is contraindicated in patients with severe hepatic impairment"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:hepatic:mild-moderate",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "hepatic": [
+        "mild",
+        "moderate"
+      ],
+      "concern": "Mild to moderate hepatic impairment",
+      "consequence": "Condition may be exacerbated; liver enzymes may rise.",
+      "action": "Caution with close medical surveillance; no specific dose adjustment can be recommended.",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Caution is advised when administering Voltarol Rapid to patients with mild to moderate hepatic impairment"
+        },
+        {
+          "s": "emc-4333",
+          "q": "Close medical surveillance is required when prescribing Voltarol to patients with impairment of hepatic function"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:age:tab-under-14",
+      "kind": "age",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 14
+      },
+      "concern": "Child under 14 years (50 mg potassium tablets)",
+      "consequence": "Not recommended at this age.",
+      "action": "Not recommended.",
+      "sourceWording": "not recommended for children under 14 years of age",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Voltarol Rapid tablets are not recommended for children under 14 years of age."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:age:mr-child",
+      "kind": "age",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-mr-tab"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "concern": "Child (prolonged-release 100 mg tablets; the SmPC gives no upper age)",
+      "consequence": "Not suitable for children.",
+      "action": "Do not use in children.",
+      "sourceWording": "not suitable for children",
+      "src": [
+        {
+          "s": "emc-2662",
+          "q": "This medicine is not suitable for children."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:age:supp-100-child",
+      "kind": "age",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-supp"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "concern": "Child (50 mg and 100 mg suppositories; the SmPC gives no upper age)",
+      "consequence": "Only the 12.5 mg and 25 mg suppositories are licensed in children (1-12 years).",
+      "action": "Do not use the 50 mg or 100 mg suppository in children.",
+      "sourceWording": "not indicated for use in children",
+      "src": [
+        {
+          "s": "emc-7859",
+          "q": "Voltarol 50mg and 100mg suppositories are not indicated for use in children."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:age:gel1-under-14",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-gel-1"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 14
+      },
+      "concern": "Child under 14 years (1.16% gel)",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "is contraindicated",
+      "src": [
+        {
+          "s": "emc-366",
+          "q": "The use in children and adolescents aged less than 14 years is contraindicated."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:age:gel2-under-14",
+      "kind": "age",
+      "level": "info",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-gel-2"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 14
+      },
+      "concern": "Child under 14 years (2.32% gel)",
+      "consequence": "Insufficient efficacy and safety data under 14 years.",
+      "action": "No specific action stated beyond the lack of data.",
+      "sourceWording": "There are insufficient data on efficacy and safety",
+      "src": [
+        {
+          "s": "emc-8775",
+          "q": "There are insufficient data on efficacy and safety available for the children and adolescents below 14 years of age"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:pregnancy:t3",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "diclofenac",
+      "trimesters": [
+        3
+      ],
+      "concern": "Third trimester (all forms, including gels)",
+      "consequence": "Premature closure of ductus arteriosus, fetal renal dysfunction, prolonged bleeding, delayed labour.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated during the third trimester of pregnancy",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Consequently, Voltarol is contraindicated during the third trimester of pregnancy."
+        },
+        {
+          "s": "emc-366",
+          "q": "Consequently, diclofenac is contraindicated during the third trimester of pregnancy"
+        },
+        {
+          "s": "mhra-dsu-nsaids-pregnancy-2023",
+          "q": "systemic (oral and injectable) NSAIDs are contraindicated during the last trimester (after 28 weeks) of pregnancy"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:pregnancy:t1-t2",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "diclofenac",
+      "trimesters": [
+        1,
+        2
+      ],
+      "concern": "First and second trimesters (especially from week 20)",
+      "consequence": "Miscarriage/malformation signal early; oligohydramnios and ductus arteriosus constriction from week 20.",
+      "action": "Do not give unless clearly necessary; lowest dose, shortest time. Systemic forms: MHRA advises avoiding from week 20 unless clinically required; consider antenatal monitoring after several days of use.",
+      "sourceWording": "should not be given unless clearly necessary",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "during the first and second trimester of pregnancy, Voltarol should not be given unless clearly necessary"
+        },
+        {
+          "s": "emc-366",
+          "q": "During the first and second trimester of pregnancy, diclofenac should not be given unless clearly necessary."
+        },
+        {
+          "s": "mhra-dsu-nsaids-pregnancy-2023",
+          "q": "avoid prescribing systemic NSAIDs from week 20 of pregnancy unless clinically required"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "concern": "Breastfeeding (tablet and suppository SmPCs)",
+      "consequence": "Passes into breast milk in small amounts.",
+      "action": "Should not be given (SPS is less restrictive: an NSAID of choice).",
+      "sourceWording": "should not be administered during breast feeding",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "diclofenac should not be administered during breast feeding in order to avoid undesirable effects in the infant"
+        },
+        {
+          "s": "emc-7859",
+          "q": "Diclofenac should not be administered during breast feeding"
+        },
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Diclofenac should not be administered during breast -feeding in order to avoid undesirable effects in the infant"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "diclofenac",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Negligible amounts in milk; no infant side effects reported.",
+      "action": "SPS: NSAID of choice; can be used if clinically appropriate (oral, rectal, topical); monitor infant for vomiting and diarrhoea.",
+      "sourceWording": "Diclofenac can be used during breastfeeding if clinically appropriate.",
+      "src": [
+        {
+          "s": "sps-bf-nsaids",
+          "q": "Diclofenac can be used during breastfeeding if clinically appropriate."
+        },
+        {
+          "s": "sps-bf-nsaids",
+          "q": "As a precaution, monitor infants for vomiting and diarrhoea."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:breastfeeding:gel",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-gel-1",
+        "diclofenac-gel-2"
+      ],
+      "concern": "Breastfeeding (gels)",
+      "consequence": "Small amounts pass into milk; no effects expected at therapeutic doses.",
+      "action": "Use only on healthcare professional advice; do not apply to the breasts or to large areas or for long periods.",
+      "sourceWording": "should only be used during lactation under advice from a healthcare professional",
+      "src": [
+        {
+          "s": "emc-366",
+          "q": "the product should only be used during lactation under advice from a healthcare professional"
+        },
+        {
+          "s": "emc-366",
+          "q": "Voltarol Emulgel should not be applied on the breasts of nursing mothers, nor elsewhere on large areas of skin or for a prolonged period of time"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:nsaid",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:nsaid",
+      "effect": "bleeding",
+      "concern": "Another systemic NSAID (including COX-2 inhibitors)",
+      "consequence": "Increased risk of GI bleeding or ulceration; no added benefit.",
+      "action": "Avoid concomitant use.",
+      "sourceWording": "Avoid concomitant use of two or more NSAIDs",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Avoid concomitant use of two or more NSAIDs"
+        },
+        {
+          "s": "emc-4333",
+          "q": "The concomitant use of Voltarol with systemic NSAIDs including cyclooxygenase-2 selective inhibitors should be avoided"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:nsaid-gel",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-gel-1",
+        "diclofenac-gel-2"
+      ],
+      "other": "group:nsaid",
+      "concern": "Systemic NSAID used with diclofenac gel",
+      "consequence": "Possible increase in untoward (systemic) effects.",
+      "action": "Caution.",
+      "sourceWording": "Concomitant use of systemic NSAIDs should be cautioned",
+      "src": [
+        {
+          "s": "emc-366",
+          "q": "Concomitant use of systemic NSAIDs should be cautioned"
+        },
+        {
+          "s": "emc-8775",
+          "q": "Concomitant use of systemic NSAIDs should be cautioned"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:prednisolone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "prednisolone",
+      "effect": "bleeding",
+      "concern": "Systemic corticosteroids (prednisolone)",
+      "consequence": "Increased risk of GI bleeding or ulceration.",
+      "action": "Caution.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Co-administration of diclofenac with other systemic NSAIDs or corticosteroids may increase the risk of gastrointestinal bleeding or ulceration."
+        },
+        {
+          "s": "emc-4333",
+          "q": "Caution is recommended in patients receiving concomitant medications which could increase the risk of ulceration or bleeding, such as systemic corticosteroids"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:dexamethasone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "dexamethasone",
+      "effect": "bleeding",
+      "concern": "Systemic corticosteroids (dexamethasone)",
+      "consequence": "Increased risk of GI bleeding or ulceration.",
+      "action": "Caution.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Co-administration of diclofenac with other systemic NSAIDs or corticosteroids may increase the risk of gastrointestinal bleeding or ulceration."
+        },
+        {
+          "s": "emc-4333",
+          "q": "Caution is recommended in patients receiving concomitant medications which could increase the risk of ulceration or bleeding, such as systemic corticosteroids"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:warfarin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin",
+      "consequence": "Reports of increased haemorrhage risk.",
+      "action": "Caution; close monitoring to confirm no change in anticoagulant dose is needed.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Caution is recommended since concomitant administration could increase the risk of bleeding"
+        },
+        {
+          "s": "emc-4333",
+          "q": "there are reports of an increased risk of haemorrhage in patients receiving diclofenac and anticoagulant concomitantly"
+        },
+        {
+          "s": "emc-4333",
+          "q": "close monitoring of such patients is required"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:anticoagulant",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:anticoagulant",
+      "effect": "bleeding",
+      "concern": "Anticoagulants",
+      "consequence": "Increased bleeding risk.",
+      "action": "Caution; close monitoring.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Caution is recommended since concomitant administration could increase the risk of bleeding"
+        },
+        {
+          "s": "emc-4333",
+          "q": "close monitoring of such patients is required"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:antiplatelet",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:antiplatelet",
+      "effect": "bleeding",
+      "concern": "Antiplatelet agents",
+      "consequence": "Increased bleeding risk.",
+      "action": "Caution; consider gastroprotection.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Caution is recommended since concomitant administration could increase the risk of bleeding"
+        },
+        {
+          "s": "emc-4333",
+          "q": "anti-platelet agents such as acetylsalicylic acid"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:aspirin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "aspirin",
+      "effect": "bleeding",
+      "concern": "Aspirin (antiplatelet, including low dose)",
+      "consequence": "Increased risk of ulceration or bleeding.",
+      "action": "Caution; consider a PPI or misoprostol with low-dose aspirin.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "anti-platelet agents such as acetylsalicylic acid"
+        },
+        {
+          "s": "emc-4333",
+          "q": "also for patients requiring concomitant use of medicinal products containing low dose acetylsalicylic acid"
+        },
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "and also for patients requiring concomitant use of medicinal products containing low-dose acetylsalicylic acid (ASA)/aspirin"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:ssri",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:ssri",
+      "effect": "bleeding",
+      "concern": "SSRIs",
+      "consequence": "Increased risk of GI bleeding.",
+      "action": "Caution.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Concomitant administration of SSRI's may increase the risk of gastrointestinal bleeding"
+        },
+        {
+          "s": "emc-4333",
+          "q": "selective serotonin-reuptake inhibitors (SSRIs)"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:diuretic",
+      "effect": "nephrotoxicity",
+      "concern": "Diuretics",
+      "consequence": "Reduced diuretic/antihypertensive effect; increased nephrotoxicity risk.",
+      "action": "Give with caution; monitor blood pressure; keep hydrated; consider monitoring renal function after starting and periodically.",
+      "sourceWording": "the combination should be administered with caution",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "the combination should be administered with caution and patients, especially the elderly, should have their blood pressure periodically monitored"
+        },
+        {
+          "s": "emc-4333",
+          "q": "particularly for diuretics and ACE inhibitors due to the increased risk of nephrotoxicity"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:ace-inhibitor",
+      "effect": "nephrotoxicity",
+      "concern": "ACE inhibitors",
+      "consequence": "Reduced antihypertensive effect; increased nephrotoxicity risk.",
+      "action": "Give with caution; monitor blood pressure; keep hydrated; consider monitoring renal function after starting and periodically.",
+      "sourceWording": "the combination should be administered with caution",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "the combination should be administered with caution and patients, especially the elderly, should have their blood pressure periodically monitored"
+        },
+        {
+          "s": "emc-4333",
+          "q": "particularly for diuretics and ACE inhibitors due to the increased risk of nephrotoxicity"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:beta-blocker",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:beta-blocker",
+      "concern": "Beta-blockers",
+      "consequence": "Reduced antihypertensive effect.",
+      "action": "Give with caution; monitor blood pressure periodically.",
+      "sourceWording": "the combination should be administered with caution",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "(e.g. beta-blockers, angiotensin converting enzyme (ACE) inhibitors may cause a decrease in their antihypertensive effect"
+        },
+        {
+          "s": "emc-4333",
+          "q": "the combination should be administered with caution and patients, especially the elderly, should have their blood pressure periodically monitored"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:antihypertensive",
+      "concern": "Antihypertensives",
+      "consequence": "Reduced antihypertensive effect.",
+      "action": "Give with caution; monitor blood pressure periodically.",
+      "sourceWording": "the combination should be administered with caution",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "may cause a decrease in their antihypertensive effect via inhibition of vasodilatory prostaglandin synthesis"
+        },
+        {
+          "s": "emc-4333",
+          "q": "the combination should be administered with caution and patients, especially the elderly, should have their blood pressure periodically monitored"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:potassium-sparing",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics",
+      "consequence": "Increased serum potassium.",
+      "action": "Monitor potassium frequently.",
+      "sourceWording": "should therefore be monitored frequently",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Concomitant treatment with potassium-sparing diuretics, ciclosporin, tacrolimus or trimethoprim may be associated with increased serum potassium levels, which should therefore be monitored frequently"
+        },
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Concomitant treatment with potassium-sparing drugs may be associated with increased serum potassium levels, which should therefore be monitored frequently"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:trimethoprim",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp"
+      ],
+      "other": "trimethoprim",
+      "effect": "hyperkalaemia",
+      "concern": "Trimethoprim",
+      "consequence": "Increased serum potassium.",
+      "action": "Monitor potassium frequently.",
+      "sourceWording": "should therefore be monitored frequently",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Concomitant treatment with potassium-sparing diuretics, ciclosporin, tacrolimus or trimethoprim may be associated with increased serum potassium levels, which should therefore be monitored frequently"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:co-trimoxazole",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp"
+      ],
+      "other": "co-trimoxazole",
+      "effect": "hyperkalaemia",
+      "concern": "Co-trimoxazole (contains trimethoprim)",
+      "consequence": "Increased serum potassium (trimethoprim).",
+      "action": "Monitor potassium frequently.",
+      "sourceWording": "should therefore be monitored frequently",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Concomitant treatment with potassium-sparing diuretics, ciclosporin, tacrolimus or trimethoprim may be associated with increased serum potassium levels, which should therefore be monitored frequently"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "methotrexate",
+      "concern": "Methotrexate",
+      "consequence": "Reduced renal clearance of methotrexate; serious toxicity reported when given within 24 hours of each other.",
+      "action": "Caution, especially within 24 hours of methotrexate.",
+      "sourceWording": "Caution is recommended",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Caution is recommended when NSAIDs, including diclofenac, are administered less than 24 hours before treatment with methotrexate"
+        },
+        {
+          "s": "emc-4333",
+          "q": "Cases of serious toxicity have been reported when methotrexate and NSAIDs, including diclofenac are given within 24 hours of each other."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:antidiabetic",
+      "concern": "Antidiabetic medicines",
+      "consequence": "Isolated reports of hypoglycaemia and hyperglycaemia needing dose changes.",
+      "action": "Monitor blood glucose as a precaution.",
+      "sourceWording": "monitoring of the blood glucose level is recommended",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "there have been isolated reports of hypoglycaemic and hyperglycaemic effects necessitating changes in the dosage of the antidiabetic agents"
+        },
+        {
+          "s": "emc-4333",
+          "q": "monitoring of the blood glucose level is recommended as a precautionary measure during concomitant therapy"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:fluoroquinolone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "group:fluoroquinolone",
+      "effect": "seizure-threshold",
+      "concern": "Quinolone antibiotics",
+      "consequence": "Convulsions, with or without a history of epilepsy.",
+      "action": "Caution when starting a quinolone in a patient on an NSAID.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Convulsions may occur due to an interaction between quinolones and NSAIDs."
+        },
+        {
+          "s": "emc-4333",
+          "q": "caution should be exercised when considering the use of a quinolone in patients who are already receiving an NSAID"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:condition:lactose-gr",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-gr-tab"
+      ],
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption (gastro-resistant tablets contain lactose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the gastro-resistant tablets.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:age:gr-child",
+      "kind": "age",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-gr-tab"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "concern": "Child (50 mg gastro-resistant tablets; the SmPC gives no upper age)",
+      "consequence": "Not recommended for use in children.",
+      "action": "Not recommended in children.",
+      "sourceWording": "are not recommended for use in children",
+      "src": [
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Diclofenac Sodium 50 mg Gastro-resistant Tablets are not recommended for use in children."
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:aspirin-gr",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-gr-tab"
+      ],
+      "other": "aspirin",
+      "otherFormulations": [
+        "aspirin-analgesic"
+      ],
+      "effect": "bleeding",
+      "concern": "Aspirin at analgesic/anti-inflammatory dose (gastro-resistant tablet SmPC: avoid two or more NSAIDs, including aspirin)",
+      "consequence": "Increased risk of adverse effects, including GI bleeding.",
+      "action": "Avoid concomitant use (gastro-resistant tablet SmPC, listed with other NSAIDs). Low-dose (antiplatelet) aspirin is covered by the separate caution rule: the same SmPC advises considering gastroprotection (misoprostol or a PPI) for patients who need low-dose aspirin.",
+      "sourceWording": "Avoid concomitant use of two or more NSAIDs (including aspirin)",
+      "src": [
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Avoid concomitant use of two or more NSAIDs (including aspirin) as this may increase the risk of adverse effects"
+        }
+      ]
+    },
+    {
+      "id": "diclofenac:interaction:fluconazole",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "diclofenac",
+      "formulations": [
+        "diclofenac-k-tab",
+        "diclofenac-mr-tab",
+        "diclofenac-supp",
+        "diclofenac-gr-tab"
+      ],
+      "other": "fluconazole",
+      "concern": "Fluconazole (potent CYP2C9 inhibitor)",
+      "consequence": "Potent CYP2C9 inhibitors can significantly raise diclofenac peak levels and exposure. The diclofenac SmPCs name voriconazole as the example; a UK celecoxib SmPC describes fluconazole as a potent CYP2C9 inhibitor.",
+      "action": "Caution when co-prescribing (diclofenac SmPCs).",
+      "sourceWording": "Caution is recommended when co-prescribing diclofenac with potent CYP2C9 inhibitors",
+      "src": [
+        {
+          "s": "emc-4333",
+          "q": "Caution is recommended when co-prescribing diclofenac with potent CYP2C9 inhibitors (such as voriconazole)"
+        },
+        {
+          "s": "mhra-spc-diclofenac-gr-50-pl00289-0739",
+          "q": "Caution is recommended when co-prescribing diclofenac with potent CYP2C9 inhibitors (such as sulfinpyrazone and voriconazole)"
+        },
+        {
+          "s": "emc-2945",
+          "q": "fluconazole, a potent CYP2C9 inhibitor"
+        }
+      ]
+    }
+  ]
+}

@@ -172,6 +172,61 @@
     { "id": "sildenafil:age:paediatric-high-dose", "kind": "age", "level": "dose", "med": "sildenafil", "formulations": ["sildenafil-pah-tab", "sildenafil-pah-susp"], "age": { "minYears": 1, "maxYears": 18 }, "concern": "Child 1-17 years with PAH", "consequence": "More deaths with doses above the recommended dose.", "action": "Do not exceed 10 mg three times a day (20 kg or less) or 20 mg three times a day (over 20 kg).", "sourceWording": "Higher than recommended doses should not be used", "src": [{ "s": "emc-181", "q": "For paediatric patients aged 1 year to 17 years old, the recommended dose in patients ≤ 20 kg is 10 mg three times a day and for patients > 20 kg is 20 mg three times a day." }, { "s": "emc-181", "q": "Higher than recommended doses should not be used in paediatric patients with PAH" }] },
     { "id": "sildenafil:pregnancy:pah", "kind": "pregnancy", "level": "avoid", "med": "sildenafil", "formulations": ["sildenafil-pah-tab", "sildenafil-pah-susp"], "concern": "Pregnancy (PAH use)", "consequence": "No human data; postnatal toxicity in animals.", "action": "Should not be used unless strictly necessary.", "sourceWording": "should not be used in pregnant women unless strictly necessary", "src": [{ "s": "emc-181", "q": "Due to lack of data, Revatio should not be used in pregnant women unless strictly necessary." }, { "s": "mhra-dsu-sildenafil-pphn", "q": "Revatio for the treatment of pulmonary arterial hypertension (PAH) is not recommended in pregnancy unless strictly necessary" }] },
     { "id": "sildenafil:pregnancy:ed", "kind": "pregnancy", "level": "info", "med": "sildenafil", "formulations": ["sildenafil-ed-tab"], "concern": "Pregnancy (ED product)", "consequence": "ED product is not authorised for use in women.", "action": "Not indicated for women.", "sourceWording": "not indicated for use by women", "src": [{ "s": "emc-7980", "q": "VIAGRA is not indicated for use by women." }, { "s": "mhra-dsu-sildenafil-pphn", "q": "Viagra is not authorised for use in women" }] },
-    { "id": "sildenafil:breastfeeding:pah", "kind": "breastfeeding", "level": "caution", "med": "sildenafil", "formulations": ["sildenafil-pah-tab", "sildenafil-pah-susp"], "concern": "Breastfeeding (PAH use)", "consequence": "Very low milk levels in one woman; no infant data.", "action": "Carefully weigh the mother's need against possible effects on the infant.", "sourceWording": "Prescribers should carefully assess", "src": [{ "s": "emc-181", "q": "Prescribers should carefully assess the mother's clinical need for sildenafil and any potential adverse effects on the breast-fed child." }] }
+    { "id": "sildenafil:breastfeeding:pah", "kind": "breastfeeding", "level": "caution", "med": "sildenafil", "formulations": ["sildenafil-pah-tab", "sildenafil-pah-susp"], "concern": "Breastfeeding (PAH use)", "consequence": "Very low milk levels in one woman; no infant data.", "action": "Carefully weigh the mother's need against possible effects on the infant.", "sourceWording": "Prescribers should carefully assess", "src": [{ "s": "emc-181", "q": "Prescribers should carefully assess the mother's clinical need for sildenafil and any potential adverse effects on the breast-fed child." }] },
+    {
+      "id": "sildenafil:interaction:alpha-blocker-ed",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "sildenafil",
+      "formulations": [
+        "sildenafil-ed-tab"
+      ],
+      "other": "group:alpha-blocker",
+      "effect": "hypotension",
+      "concern": "Alpha-blockers (e.g. tamsulosin)",
+      "consequence": "Symptomatic (postural) hypotension in a few susceptible people, most likely within 4 hours of the dose.",
+      "action": "Patient should be stable on the alpha-blocker first; consider starting sildenafil at 25 mg.",
+      "sourceWording": "initiation of sildenafil at a dose of 25 mg should be considered",
+      "src": [
+        {
+          "s": "emc-7980",
+          "q": "patients should be stabilised on alpha-blocker therapy prior to initiating sildenafil treatment. In addition, initiation of sildenafil at a dose of 25 mg should be considered"
+        },
+        {
+          "s": "emc-7980",
+          "q": "Caution is advised when sildenafil is administered to patients taking an alpha-blocker, as the co-administration may lead to symptomatic hypotension in a few susceptible individuals"
+        }
+      ]
+    },
+    {
+      "id": "sildenafil:interaction:alpha-blocker-pah",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "sildenafil",
+      "formulations": [
+        "sildenafil-pah-tab",
+        "sildenafil-pah-susp"
+      ],
+      "other": "group:alpha-blocker",
+      "effect": "hypotension",
+      "concern": "Alpha-blockers (e.g. tamsulosin)",
+      "consequence": "Symptomatic hypotension in susceptible people.",
+      "action": "Caution; patient should be haemodynamically stable on the alpha-blocker before starting sildenafil.",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "emc-181",
+          "q": "Caution is advised when sildenafil is administered to patients taking an alpha-blocker as the co-administration may lead to symptomatic hypotension in susceptible individuals"
+        },
+        {
+          "s": "emc-181",
+          "q": "patients should be haemodynamically stable on alpha-blocker therapy prior to initiating sildenafil treatment"
+        },
+        {
+          "s": "emc-2850",
+          "q": "Caution is advised when sildenafil is administered to patients taking an alpha-blocker as the co-administration may lead to symptomatic hypotension in susceptible individuals"
+        }
+      ]
+    }
   ]
 }

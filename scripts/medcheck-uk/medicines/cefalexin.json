@@ -1,0 +1,520 @@
+{
+  "id": "cefalexin",
+  "name": "Cefalexin",
+  "ingredients": ["cefalexin"],
+  "className": "First generation cephalosporin (beta-lactam antibiotic)",
+  "groups": ["cephalosporin", "beta-lactam", "antibacterial"],
+  "searchTerms": ["cephalexin", "cefalexin monohydrate"],
+  "formulations": [
+    {
+      "id": "cefalexin-cap",
+      "label": "Capsules",
+      "route": "oral",
+      "strengths": "250 mg",
+      "release": "immediate",
+      "src": [
+        { "s": "emc-9140", "q": "Each capsule contains as the active ingredient, cefalexin monohydrate equivalent to 250 mg of cefalexin base." }
+      ],
+      "sourceIds": ["emc-9140"]
+    },
+    {
+      "id": "cefalexin-susp",
+      "label": "Granules for oral suspension",
+      "route": "oral",
+      "strengths": "250 mg/5 mL",
+      "release": "n/a",
+      "note": "Contains sucrose (about 2.97 g per 5 mL) and the colour Allura Red AC (E129).",
+      "src": [
+        { "s": "emc-9145", "q": "each 5 ml of reconstituted suspension contains as the active ingredient, cefalexin monohydrate equivalent to 250 mg of cefalexin base" },
+        { "s": "emc-9145", "q": "Contains 2.972 g of Sucrose per 5 ml after reconstitution. Also contains Allura Red AC (E129)." }
+      ],
+      "sourceIds": ["emc-9145"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Infections due to susceptible organisms: respiratory tract infections, otitis media, skin and soft tissue infections, bone and joint infections, genito-urinary tract infections (including acute prostatitis), dental infections.",
+          "src": [
+            { "s": "emc-9140", "q": "Cefalexin is indicated in the treatment of the following infections due to susceptible micro-organisms" },
+            { "s": "emc-9145", "q": "Respiratory tract infections Otitis media Skin and soft tissue infections Bone and joint infections Genito-urinary tract infections, including acute prostatitis Dental infections" }
+          ]
+        }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No specialist-only, shared-care or brand-specific prescribing restriction found in the cefalexin capsule and suspension SmPCs." },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults: 1 to 4 g daily in divided doses; most infections respond to 500 mg every 8 hours. If more than 4 g daily is needed, consider parenteral cephalosporins.",
+          "tag": "Adults",
+          "src": [
+            { "s": "emc-9140", "q": "The adult dosage ranges from 1-4g daily in divided doses; most infections will respond to a dosage of 500 mg every 8 hours." },
+            { "s": "emc-9140", "q": "If daily doses of cefalexin greater than 4g are required, parenteral cephalosporins, in appropriate doses, should be considered." }
+          ]
+        },
+        {
+          "t": "Skin and soft tissue infections, streptococcal pharyngitis, mild uncomplicated UTI: usually 250 mg every 6 hours or 500 mg every 12 hours. More severe infections may need larger doses.",
+          "tag": "Adults: skin, pharyngitis, mild UTI",
+          "src": [
+            { "s": "emc-9140", "q": "For skin and soft tissue infections, streptococcal pharyngitis and mild, uncomplicated urinary tract infections, the usual dosage is 250 mg every 6 hours, or 500 mg every 12 hours." }
+          ]
+        },
+        {
+          "t": "Beta-haemolytic streptococcal infections: treat for at least 10 days.",
+          "tag": "Streptococcal infections",
+          "detail": true,
+          "src": [
+            { "s": "emc-9140", "q": "In the treatment of beta-haemolytic streptococcal infections, a therapeutic dose should be administered for at least 10 days." }
+          ]
+        },
+        {
+          "t": "Elderly and renal impairment: as for adults, but reduce the dose if renal function is markedly impaired.",
+          "tag": "Elderly / renal",
+          "detail": true,
+          "src": [
+            { "s": "emc-9140", "q": "The elderly and patients with impaired renal function As for adults. Reduce dosage if renal function is markedly impaired" }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children: usually 25 to 50 mg/kg/day in divided doses. For skin and soft tissue infections, streptococcal pharyngitis and mild uncomplicated UTI the daily dose may be divided every 12 hours.",
+          "tag": "Children",
+          "src": [
+            { "s": "emc-9140", "q": "The usual recommended daily dosage for children is 25-50 mg/kg (10-20 mg/lb) in divided doses." },
+            { "s": "emc-9140", "q": "the total daily dose may be divided and administered every 12 hours" }
+          ]
+        },
+        {
+          "t": "Suggested schedule for most infections: under 5 years 125 mg every 8 hours; 5 years and over 250 mg every 8 hours. In severe infections the dose may be doubled.",
+          "tag": "By age",
+          "src": [
+            { "s": "emc-9140", "q": "Children under 5 years: 125 mg every 8 hours. Children 5 years and over: 250 mg every 8 hours. In severe infections, the dosage may be doubled." }
+          ]
+        },
+        {
+          "t": "Otitis media: 75 to 100 mg/kg/day in 4 divided doses.",
+          "tag": "Otitis media",
+          "src": [
+            { "s": "emc-9140", "q": "In the therapy of otitis media, clinical studies have shown that a dosage of 75 to 100 mg/kg/day in 4 divided doses is required." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to cefalexin or any excipient; known allergy to the cephalosporin group.",
+          "src": [
+            { "s": "emc-9140", "q": "Cefalexin is contraindicated in patients with known allergy to the cephalosporin group of antibiotics." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Before starting, try to find out about previous hypersensitivity to cephalosporins, penicillins or other drugs. Give cautiously to penicillin-sensitive patients (partial cross-allergenicity; severe reactions including anaphylaxis to both). Stop if an allergic reaction occurs.",
+          "tag": "Penicillin allergy",
+          "src": [
+            { "s": "emc-9140", "q": "every effort should be made to determine whether the patient has had previous hypersensitivity reactions to the cephalosporins, penicillins or other drugs" },
+            { "s": "emc-9140", "q": "Cefalexin should be given cautiously to penicillin-sensitive patients." },
+            { "s": "emc-9140", "q": "If an allergic reaction to cefalexin occurs, the drug should be discontinued" }
+          ]
+        },
+        {
+          "t": "Markedly impaired renal function: use with caution; safe dose may be lower. On dialysis, the daily dose should not exceed 500 mg.",
+          "tag": "Renal impairment",
+          "src": [
+            { "s": "emc-9140", "q": "Cefalexin should be administered with caution in the presence of markedly impaired renal function." },
+            { "s": "emc-9140", "q": "If dialysis is required for renal failure, the daily dose of cefalexin should not exceed 500mg." }
+          ]
+        },
+        {
+          "t": "Neurotoxicity (encephalopathy, myoclonus, seizures): higher risk in the elderly, severe renal impairment or CNS disorders. Consider stopping if suspected.",
+          "tag": "Neurotoxicity",
+          "src": [
+            { "s": "emc-9140", "q": "Elderly patients, patients with severe renal impairment or central nervous system disorders are particularly at risk." },
+            { "s": "emc-9140", "q": "If cefalexin associated neurotoxicity is suspected, discontinuation of cefalexin should be considered." }
+          ]
+        },
+        {
+          "t": "Nephrotoxicity risk may increase with aminoglycosides, other cephalosporins, or furosemide and similar potent diuretics.",
+          "tag": "Nephrotoxicity",
+          "src": [
+            { "s": "emc-9140", "q": "Concurrent administration with certain other drug substances, such as aminoglycosides, other cephalosporins, or furosemide, (frusemide) and similar potent diuretics, may increase the risk of nephrotoxicity." }
+          ]
+        },
+        {
+          "t": "AGEP: advise patients of the signs and monitor closely; withdraw immediately if it appears (mostly in the first week).",
+          "tag": "AGEP",
+          "src": [
+            { "s": "emc-9140", "q": "If signs and symptoms suggestive of these reactions appear, cefalexin should be withdrawn immediately and an alternative treatment considered." }
+          ]
+        },
+        {
+          "t": "Consider pseudomembranous colitis in patients with diarrhoea; it can be life-threatening. Prolonged use may cause overgrowth of non-susceptible organisms.",
+          "tag": "Colitis / superinfection",
+          "src": [
+            { "s": "emc-9140", "q": "It is important, therefore, to consider its diagnosis in patients who develop diarrhoea in association with the use of antibiotics." },
+            { "s": "emc-9140", "q": "Prolonged use of cefalexin may result in the overgrowth of non-susceptible organisms." }
+          ]
+        },
+        {
+          "t": "Suspension contains sucrose: patients with hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take it. E129 may cause allergic reactions.",
+          "tag": "Excipients (suspension)",
+          "formulations": ["cefalexin-susp"],
+          "src": [
+            { "s": "emc-9145", "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine." },
+            { "s": "emc-9145", "q": "Also contains Allura Red AC (E129), which may cause allergic reactions." }
+          ]
+        },
+        {
+          "t": "Lab tests: positive direct Coombs test (including in newborns of treated mothers); false positive urine glucose with copper-reduction tests.",
+          "tag": "Lab tests",
+          "detail": true,
+          "src": [
+            { "s": "emc-9140", "q": "Positive direct Coombs' tests have been reported during treatment with the cephalosporin antibiotics." },
+            { "s": "emc-9140", "q": "A false positive reaction for glucose in the urine may occur with Benedict's or Fehling's solutions or with copper sulphate test tablets." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Furosemide and similar potent diuretics, aminoglycosides, other cephalosporins: may increase the risk of nephrotoxicity.",
+          "tag": "Loop diuretics",
+          "src": [
+            { "s": "emc-9140", "q": "Concurrent administration with certain other drug substances, such as aminoglycosides, other cephalosporins, or furosemide, (frusemide) and similar potent diuretics, may increase the risk of nephrotoxicity." }
+          ]
+        },
+        {
+          "t": "Metformin: single-dose study showed raised metformin levels (Cmax +34%, AUC +24%); clinical significance unclear and no lactic acidosis reported.",
+          "tag": "Metformin",
+          "detail": true,
+          "src": [
+            { "s": "emc-9140", "q": "plasma metformin Cmax and AUC increased by an average of 34% and 24%, respectively" },
+            { "s": "emc-9140", "q": "The clinical significance of this study is unclear" }
+          ]
+        },
+        {
+          "t": "Probenecid inhibits renal excretion of cefalexin.",
+          "tag": "Probenecid",
+          "detail": true,
+          "src": [
+            { "s": "emc-9140", "q": "As with other beta-lactam drugs, renal excretion of cephalexin is inhibited by probenecid." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Markedly impaired renal function: reduce dose and use with caution; safe dose may be lower than usual. The SmPC gives no CrCl/eGFR threshold.",
+          "src": [
+            { "s": "emc-9140", "q": "Reduce dosage if renal function is markedly impaired" },
+            { "s": "emc-9140", "q": "Careful clinical and laboratory studies should be made because safe dosage may be lower than that usually recommended." }
+          ]
+        },
+        {
+          "t": "Dialysis: daily dose should not exceed 500 mg.",
+          "tag": "Dialysis",
+          "src": [
+            { "s": "emc-9140", "q": "If dialysis is required for renal failure, the daily dose of cefalexin should not exceed 500mg." }
+          ]
+        }
+      ]
+    },
+    "hepatic": { "status": "not-stated", "note": "The cefalexin capsule and suspension SmPCs give no hepatic impairment advice (transient hepatitis and cholestatic jaundice are listed only as rare adverse effects)." },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: no evidence of teratogenicity, but exercise caution when prescribing in pregnancy.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-9140", "q": "Although laboratory and clinical studies have shown no evidence of teratogenicity, caution should be exercised when prescribing for the pregnant patient." }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS, cephalosporins incl. cefalexin): most studies have not shown harm; no extra monitoring for major birth defects needed.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-cephalosporins", "q": "Most studies of pregnant women taking a cephalosporin have not shown that it harms the baby." },
+            { "s": "bumps-cephalosporins", "q": "No extra monitoring for major birth defects is required following use of a cephalosporin." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: present in milk up to 8 hours after a dose. Use with caution: risk of candidiasis and CNS toxicity in the neonate, and theoretical later sensitisation.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-9140", "q": "Caution should be exercised when cefalexin is administered to a nursing woman, since the neonate is presented with the risk of candidiasis and CNS toxicity due to immaturity of the blood-brain barrier." }
+          ]
+        }
+      ]
+    },
+    "reproductive": { "status": "not-stated", "note": "The cefalexin capsule and suspension SmPCs give no fertility or contraception information." },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Diarrhoea is the most frequent side effect (rarely severe enough to stop). Dyspepsia and abdominal pain also occur; nausea and vomiting are rare. The SmPC gives no other frequencies.",
+          "src": [
+            { "s": "emc-9140", "q": "The most frequent side-effect has been diarrhoea. It was very rarely severe enough to warrant cessation of therapy." },
+            { "s": "emc-9140", "q": "Nausea and vomiting have been reported rarely." }
+          ]
+        },
+        {
+          "t": "Allergic rash, urticaria; genital and anal pruritus, genital candidiasis, vaginitis, dizziness, headache.",
+          "detail": true,
+          "src": [
+            { "s": "emc-9140", "q": "Allergic reactions have been observed in the form of rash, urticaria, angioedema" },
+            { "s": "emc-9140", "q": "These have included genital and anal pruritus, genital candidiasis, vaginitis and vaginal discharge, dizziness, fatigue, headache" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Anaphylaxis, angioedema, erythema multiforme, SJS, TEN: stop cefalexin and treat.",
+          "src": [
+            { "s": "emc-9140", "q": "rarely erythema multiforme, Stevens-Johnson syndrome and toxic epidermal necrolysis" },
+            { "s": "emc-9140", "q": "Anaphylaxis has also been reported." }
+          ]
+        },
+        {
+          "t": "AGEP: withdraw immediately.",
+          "src": [
+            { "s": "emc-9140", "q": "Acute generalised exanthematous pustulosis (AGEP) has been reported in association with cefalexin treatment." }
+          ]
+        },
+        {
+          "t": "Pseudomembranous colitis (mild to life-threatening), haemolytic anaemia, neutropenia, thrombocytopenia, reversible interstitial nephritis, convulsions/encephalopathy (mostly with renal impairment and excessive doses).",
+          "src": [
+            { "s": "emc-9140", "q": "Such colitis may range in severity from mild to life-threatening." },
+            { "s": "emc-9140", "q": "Eosinophilia, neutropenia, thrombocytopenia and haemolytic anaemia have been reported." },
+            { "s": "emc-9140", "q": "Most cases occurred in patients with renal impairment who received doses that exceeded the recommended dose" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before starting: ask about previous reactions to cephalosporins, penicillins or other drugs.",
+          "tag": "baseline",
+          "src": [
+            { "s": "emc-9140", "q": "every effort should be made to determine whether the patient has had previous hypersensitivity reactions to the cephalosporins, penicillins or other drugs" }
+          ]
+        },
+        {
+          "t": "Markedly impaired renal function: careful clinical and laboratory monitoring. Prolonged use: observe for superinfection. Monitor closely for skin reactions.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-9140", "q": "Careful clinical and laboratory studies should be made because safe dosage may be lower than that usually recommended." },
+            { "s": "emc-9140", "q": "Careful observation of the patient is essential." }
+          ]
+        },
+        {
+          "t": "Stop if an allergic reaction or AGEP occurs; consider stopping if neurotoxicity is suspected.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-9140", "q": "If an allergic reaction to cefalexin occurs, the drug should be discontinued" },
+            { "s": "emc-9140", "q": "If cefalexin associated neurotoxicity is suspected, discontinuation of cefalexin should be considered." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral use.",
+          "src": [
+            { "s": "emc-9140", "q": "Method of administration For oral use." }
+          ]
+        },
+        {
+          "t": "Suspension: tap the bottle to loosen the granules, add 60 mL water in two portions, shaking after each. Shake well before use. Store in a refrigerator (2 to 8 °C) after reconstitution and use within 10 days.",
+          "formulations": ["cefalexin-susp"],
+          "src": [
+            { "s": "emc-9145", "q": "add a total of 60 ml water in two portions, shaking after each addition until suspended" },
+            { "s": "emc-9145", "q": "After reconstitution: to be used within 10 days" },
+            { "s": "emc-9145", "q": "After reconstitution, the suspension should be stored in a refrigerator" }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report rash, skin pustules or allergy symptoms straight away (AGEP mostly occurs in the first week).",
+          "src": [
+            { "s": "emc-9140", "q": "At the time of prescription patients should be advised of the signs and symptoms and monitored closely for skin reactions." }
+          ]
+        },
+        {
+          "t": "Report diarrhoea during or after the course.",
+          "src": [
+            { "s": "emc-9140", "q": "Symptoms of pseudomembranous colitis may appear either during or after antibiotic treatment." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "cefalexin:allergy:cephalosporin",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "cefalexin",
+      "allergen": ["cefalexin", "group:cephalosporin"],
+      "concern": "Cephalosporin / cefalexin allergy",
+      "consequence": "Risk of hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "is contraindicated in patients with known allergy to the cephalosporin group",
+      "src": [
+        { "s": "emc-9140", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." },
+        { "s": "emc-9140", "q": "Cefalexin is contraindicated in patients with known allergy to the cephalosporin group of antibiotics." }
+      ]
+    },
+    {
+      "id": "cefalexin:allergy:penicillin",
+      "kind": "allergy",
+      "level": "caution",
+      "med": "cefalexin",
+      "allergen": ["group:penicillin"],
+      "concern": "Penicillin sensitivity",
+      "consequence": "Partial cross-allergenicity of penicillins and cephalosporins; severe reactions (including anaphylaxis) to both reported.",
+      "action": "Give cautiously; find out about the previous reaction first; stop if an allergic reaction occurs. The SmPC does not distinguish reaction types.",
+      "sourceWording": "should be given cautiously to penicillin-sensitive patients",
+      "src": [
+        { "s": "emc-9140", "q": "Cefalexin should be given cautiously to penicillin-sensitive patients." },
+        { "s": "emc-9140", "q": "There is some clinical and laboratory evidence of partial cross-allergenicity of the penicillins and cephalosporins." }
+      ]
+    },
+    {
+      "id": "cefalexin:condition:severe-renal-impairment",
+      "kind": "condition",
+      "level": "dose",
+      "med": "cefalexin",
+      "condition": "severe-renal-impairment",
+      "concern": "Markedly impaired renal function",
+      "consequence": "Safe dose may be lower than usual; higher risk of neurotoxicity.",
+      "action": "Reduce the dose and use with caution; on dialysis do not exceed 500 mg daily.",
+      "sourceWording": "Reduce dosage if renal function is markedly impaired",
+      "src": [
+        { "s": "emc-9140", "q": "Reduce dosage if renal function is markedly impaired" },
+        { "s": "emc-9140", "q": "If dialysis is required for renal failure, the daily dose of cefalexin should not exceed 500mg." }
+      ]
+    },
+    {
+      "id": "cefalexin:condition:sugar-intolerance-susp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "cefalexin",
+      "formulations": ["cefalexin-susp"],
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency (suspension contains sucrose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the suspension.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        { "s": "emc-9145", "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicine." }
+      ]
+    },
+    {
+      "id": "cefalexin:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "cefalexin",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "No evidence of teratogenicity.",
+      "action": "Exercise caution when prescribing.",
+      "sourceWording": "caution should be exercised when prescribing for the pregnant patient",
+      "src": [
+        { "s": "emc-9140", "q": "Although laboratory and clinical studies have shown no evidence of teratogenicity, caution should be exercised when prescribing for the pregnant patient." }
+      ]
+    },
+    {
+      "id": "cefalexin:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "cefalexin",
+      "concern": "Pregnancy (BUMPS/UKTIS, cephalosporins)",
+      "consequence": "Most studies have not shown harm to the baby.",
+      "action": "BUMPS: no extra monitoring for major birth defects is required.",
+      "sourceWording": "have not shown that it harms the baby",
+      "src": [
+        { "s": "bumps-cephalosporins", "q": "Most studies of pregnant women taking a cephalosporin have not shown that it harms the baby." }
+      ]
+    },
+    {
+      "id": "cefalexin:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "cefalexin",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Neonate at risk of candidiasis and CNS toxicity; theoretical later sensitisation.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be exercised when cefalexin is administered to a nursing woman",
+      "src": [
+        { "s": "emc-9140", "q": "Caution should be exercised when cefalexin is administered to a nursing woman, since the neonate is presented with the risk of candidiasis and CNS toxicity due to immaturity of the blood-brain barrier." }
+      ]
+    },
+    {
+      "id": "cefalexin:interaction:loop-diuretic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "cefalexin",
+      "other": "group:loop-diuretic",
+      "effect": "nephrotoxicity",
+      "concern": "Furosemide and similar potent diuretics",
+      "consequence": "May increase the risk of nephrotoxicity.",
+      "action": "Be aware of the nephrotoxicity risk (no specific action stated).",
+      "sourceWording": "may increase the risk of nephrotoxicity",
+      "src": [
+        { "s": "emc-9140", "q": "Concurrent administration with certain other drug substances, such as aminoglycosides, other cephalosporins, or furosemide, (frusemide) and similar potent diuretics, may increase the risk of nephrotoxicity." }
+      ]
+    },
+    {
+      "id": "cefalexin:interaction:cephalosporin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "cefalexin",
+      "other": "group:cephalosporin",
+      "effect": "nephrotoxicity",
+      "concern": "Other cephalosporins",
+      "consequence": "May increase the risk of nephrotoxicity.",
+      "action": "Be aware of the nephrotoxicity risk (no specific action stated).",
+      "sourceWording": "may increase the risk of nephrotoxicity",
+      "src": [
+        { "s": "emc-9140", "q": "Concurrent administration with certain other drug substances, such as aminoglycosides, other cephalosporins, or furosemide, (frusemide) and similar potent diuretics, may increase the risk of nephrotoxicity." }
+      ]
+    },
+    {
+      "id": "cefalexin:interaction:metformin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "cefalexin",
+      "other": "metformin",
+      "concern": "Metformin",
+      "consequence": "Single-dose study: metformin Cmax and AUC rose by 34% and 24%; clinical significance unclear, no lactic acidosis reported.",
+      "action": "No action stated by the SmPC.",
+      "sourceWording": "The clinical significance of this study is unclear",
+      "src": [
+        { "s": "emc-9140", "q": "plasma metformin Cmax and AUC increased by an average of 34% and 24%, respectively" },
+        { "s": "emc-9140", "q": "The clinical significance of this study is unclear" }
+      ]
+    }
+  ]
+}

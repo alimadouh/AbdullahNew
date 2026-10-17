@@ -1,0 +1,568 @@
+{
+  "id": "cefuroxime",
+  "name": "Cefuroxime (oral)",
+  "ingredients": ["cefuroxime"],
+  "className": "Second generation cephalosporin (beta-lactam antibiotic)",
+  "groups": ["cephalosporin", "beta-lactam", "antibacterial"],
+  "searchTerms": ["cefuroxime axetil", "cefuroxime oral"],
+  "formulations": [
+    {
+      "id": "cefuroxime-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "250 mg",
+      "release": "immediate",
+      "note": "Tablets and the granules for oral suspension are not bioequivalent and are not interchangeable mg for mg.",
+      "src": [
+        { "s": "emc-3810", "q": "Each tablet contains 250 mg cefuroxime (as cefuroxime axetil)." },
+        { "s": "emc-3810", "q": "Cefuroxime axetil tablets and cefuroxime axetil granules for oral suspension are not bioequivalent and are not substitutable on a milligram-per-milligram basis" }
+      ],
+      "sourceIds": ["emc-3810"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Adults and children from 3 months: acute streptococcal tonsillitis and pharyngitis, acute bacterial sinusitis, acute otitis media, acute exacerbations of chronic bronchitis, cystitis, pyelonephritis, uncomplicated skin and soft tissue infections, early Lyme disease.",
+          "src": [
+            { "s": "emc-3810", "q": "indicated for the treatment of the infections listed below in adults and children from the age of 3 months" },
+            { "s": "emc-3810", "q": "Acute streptococcal tonsillitis and pharyngitis. Acute bacterial sinusitis. Acute otitis media. Acute exacerbations of chronic bronchitis. Cystitis. Pyelonephritis. Uncomplicated skin and soft tissue infections. Treatment of early Lyme disease." }
+          ]
+        }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No specialist-only, shared-care or brand-specific prescribing restriction found in the cefuroxime axetil tablet SmPC; it advises considering official guidance on antibacterial use." },
+    "dosing": {
+      "items": [
+        {
+          "t": "Acute tonsillitis/pharyngitis, acute bacterial sinusitis, cystitis, pyelonephritis, uncomplicated skin and soft tissue infections: 250 mg twice daily.",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            { "s": "emc-3810", "q": "Acute tonsillitis and pharyngitis, acute bacterial sinusitis 250 mg twice daily" },
+            { "s": "emc-3810", "q": "Cystitis 250 mg twice daily Pyelonephritis 250 mg twice daily Uncomplicated skin and soft tissue infections 250 mg twice daily" }
+          ]
+        },
+        {
+          "t": "Acute otitis media and acute exacerbations of chronic bronchitis: 500 mg twice daily.",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            { "s": "emc-3810", "q": "Acute otitis media 500 mg twice daily Acute exacerbations of chronic bronchitis 500 mg twice daily" }
+          ]
+        },
+        {
+          "t": "Lyme disease: 500 mg twice daily for 14 days (range 10 to 21 days).",
+          "tag": "Adults and children ≥ 40 kg",
+          "src": [
+            { "s": "emc-3810", "q": "Lyme disease 500 mg twice daily for 14 days (range of 10 to 21 days)" }
+          ]
+        },
+        {
+          "t": "Usual course 7 days (range 5 to 10 days).",
+          "tag": "Duration",
+          "detail": true,
+          "src": [
+            { "s": "emc-3810", "q": "The usual course of therapy is seven days (may range from five to ten days)." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children < 40 kg, acute tonsillitis/pharyngitis and acute bacterial sinusitis: 10 mg/kg twice daily (maximum 125 mg twice daily).",
+          "tag": "Children < 40 kg",
+          "src": [
+            { "s": "emc-3810", "q": "Acute tonsillitis and pharyngitis, acute bacterial sinusitis 10 mg/kg twice daily to a maximum of 125 mg twice daily" }
+          ],
+          "calc": { "mgPerKg": 10, "per": "dose", "maxMg": 125, "maxPer": "dose", "ageMinYears": 0.25, "weightMaxKg": 40, "of": "cefuroxime" }
+        },
+        {
+          "t": "Children < 40 kg: otitis media (aged 2 years or older) or more severe infections, cystitis, uncomplicated skin and soft tissue infections: 15 mg/kg twice daily (maximum 250 mg twice daily). Pyelonephritis: same dose for 10 to 14 days. Lyme disease: same dose for 14 days (10 to 21 days).",
+          "tag": "Children < 40 kg",
+          "src": [
+            { "s": "emc-3810", "q": "Children aged two years or older with otitis media or, where appropriate, with more severe infections 15 mg/kg twice daily to a maximum of 250 mg twice daily" },
+            { "s": "emc-3810", "q": "Pyelonephritis 15 mg/kg twice daily to a maximum of 250 mg twice daily for 10 to 14 days" },
+            { "s": "emc-3810", "q": "Lyme disease 15 mg/kg twice daily to a maximum of 250 mg twice daily for 14 days (10 to 21 days)" }
+          ],
+          "calc": { "mgPerKg": 15, "per": "dose", "maxMg": 250, "maxPer": "dose", "ageMinYears": 0.25, "weightMaxKg": 40, "of": "cefuroxime" }
+        },
+        {
+          "t": "No experience in children under 3 months. Tablets must not be crushed; the oral suspension may be used in children.",
+          "tag": "Under 3 months / form",
+          "src": [
+            { "s": "emc-3810", "q": "There is no experience of using Zinnat in children under the age of 3 months." },
+            { "s": "emc-3810", "q": "In children Zinnat oral suspension may be used." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to cefuroxime or any excipient; known hypersensitivity to cephalosporin antibiotics.",
+          "src": [
+            { "s": "emc-3810", "q": "Hypersensitivity to cefuroxime or to any of the excipients listed in section 6.1. Patients with known hypersensitivity to cephalosporin antibiotics." }
+          ]
+        },
+        {
+          "t": "History of severe hypersensitivity (e.g. anaphylactic reaction) to any other beta-lactam (penicillins, monobactams, carbapenems).",
+          "src": [
+            { "s": "emc-3810", "q": "History of severe hypersensitivity (e.g. anaphylactic reaction) to any other type of betalactam antibacterial agent (penicillins, monobactams and carbapenems)." }
+          ]
+        },
+        {
+          "t": "After SJS, TEN or DRESS with cefuroxime, it must never be restarted.",
+          "src": [
+            { "s": "emc-3810", "q": "If the patient has developed a serious reaction such as SJS, TEN or DRESS with the use of cefuroxime, treatment with cefuroxime must not be restarted in this patient at any time." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Before starting, establish any history of severe hypersensitivity to cefuroxime, other cephalosporins or other beta-lactams. Use caution with a history of non-severe hypersensitivity to other beta-lactams. Special care after allergy to penicillins or other beta-lactams (cross-sensitivity).",
+          "tag": "Beta-lactam allergy",
+          "src": [
+            { "s": "emc-3810", "q": "Before beginning treatment, it should be established whether the patient has a history of severe hypersensitivity reactions to cefuroxime, to other cephalosporins or to any other type of beta-lactam agent." },
+            { "s": "emc-3810", "q": "Caution should be used if cefuroxime is given to patients with a history of non-severe hypersensitivity to other beta-lactam agents." },
+            { "s": "emc-3810", "q": "Special care is indicated in patients who have experienced an allergic reaction to penicillins or other beta-lactam antibiotics because there is a risk of cross-sensitivity." }
+          ]
+        },
+        {
+          "t": "Severe hypersensitivity (including progression to Kounis syndrome): stop immediately and start emergency measures.",
+          "tag": "Hypersensitivity",
+          "src": [
+            { "s": "emc-3810", "q": "In case of severe hypersensitivity reactions, treatment with cefuroxime must be discontinued immediately and adequate emergency measures must be initiated." }
+          ]
+        },
+        {
+          "t": "SCARs (SJS, TEN, DRESS): advise patients of signs, monitor closely, withdraw immediately if they appear.",
+          "tag": "SCARs",
+          "src": [
+            { "s": "emc-3810", "q": "If signs and symptoms suggestive of these reactions appear, cefuroxime should be withdrawn immediately and an alternative treatment considered." }
+          ]
+        },
+        {
+          "t": "Pseudomembranous colitis: consider in diarrhoea during or after treatment; consider stopping and specific C. difficile treatment. Do not give medicines that inhibit peristalsis. Candida and other overgrowth possible.",
+          "tag": "Colitis",
+          "src": [
+            { "s": "emc-3810", "q": "Discontinuation of therapy with cefuroxime and the administration of specific treatment for Clostridium difficile should be considered. Medicinal products that inhibit peristalsis should not be given" }
+          ]
+        },
+        {
+          "t": "Jarisch-Herxheimer reaction may follow treatment of Lyme disease; common and usually self-limiting.",
+          "tag": "Lyme disease",
+          "detail": true,
+          "src": [
+            { "s": "emc-3810", "q": "Patients should be reassured that this is a common and usually self-limiting consequence of antibiotic treatment of Lyme disease" }
+          ]
+        },
+        {
+          "t": "Lab tests: positive Coombs test may interfere with cross-matching; use glucose oxidase or hexokinase methods for blood glucose (ferricyanide test may be falsely negative).",
+          "tag": "Lab tests",
+          "detail": true,
+          "src": [
+            { "s": "emc-3810", "q": "it is recommended that either the glucose oxidase or hexokinase methods are used to determine blood/plasma glucose levels in patients receiving cefuroxime axetil" }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Medicines that reduce gastric acidity (this tool applies this to PPIs and antacids): may lower cefuroxime axetil bioavailability and cancel the extra absorption seen after food.",
+          "tag": "Acid-reducing medicines",
+          "src": [
+            { "s": "emc-3810", "q": "Drugs which reduce gastric acidity may result in a lower bioavailability of cefuroxime axetil compared with that of the fasting state and tend to cancel the effect of enhanced absorption after food." }
+          ]
+        },
+        {
+          "t": "Oral anticoagulants (e.g. warfarin): increased INR may occur.",
+          "tag": "Warfarin",
+          "src": [
+            { "s": "emc-3810", "q": "Concomitant use with oral anticoagulants may give rise to increased INR." }
+          ]
+        },
+        {
+          "t": "Combined oral contraceptives: possible reduced efficacy (lower oestrogen reabsorption).",
+          "tag": "Oral contraceptives",
+          "src": [
+            { "s": "emc-3810", "q": "Cefuroxime axetil may affect the gut flora, leading to lower oestrogen reabsorption and reduced efficacy of combined oral contraceptives." }
+          ]
+        },
+        {
+          "t": "Probenecid: concomitant use not recommended (raises cefuroxime levels).",
+          "tag": "Probenecid",
+          "detail": true,
+          "src": [
+            { "s": "emc-3810", "q": "Concomitant use of probenicid is not recommended." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "CrCl ≥ 30 ml/min/1.73 m²: no adjustment (125 mg to 500 mg twice daily).",
+          "tag": "CrCl ≥ 30",
+          "src": [
+            { "s": "emc-3810", "q": "≥30 ml/min/1.73 m2 1.4-2.4 no dose adjustment necessary (standard dose of 125 mg to 500 mg given twice daily)" }
+          ]
+        },
+        {
+          "t": "CrCl 10 to 29 ml/min/1.73 m²: standard individual dose every 24 hours.",
+          "tag": "CrCl 10-29",
+          "src": [
+            { "s": "emc-3810", "q": "10-29 ml/min/1.73 m2 4.6 standard individual dose given every 24 hours" }
+          ]
+        },
+        {
+          "t": "CrCl < 10 ml/min/1.73 m²: standard individual dose every 48 hours. Haemodialysis: one extra standard dose at the end of each dialysis.",
+          "tag": "CrCl < 10 / haemodialysis",
+          "src": [
+            { "s": "emc-3810", "q": "<10 ml/min/1.73 m2 16.8 standard individual dose given every 48 hours" },
+            { "s": "emc-3810", "q": "a single additional standard individual dose should be given at the end of each dialysis" }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No data in hepatic impairment; hepatic dysfunction is not expected to affect cefuroxime pharmacokinetics (mainly renal elimination).",
+          "src": [
+            { "s": "emc-3810", "q": "There are no data available for patients with hepatic impairment." },
+            { "s": "emc-3810", "q": "the presence of hepatic dysfunction is expected to have no effect on the pharmacokinetics of cefuroxime" }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: limited human data; animal studies show no harm. Prescribe only if the benefit outweighs the risk.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-3810", "q": "Zinnat should be prescribed to pregnant women only if the benefit outweighs the risk." }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS, cephalosporins incl. cefuroxime): most studies have not shown harm; no extra monitoring for major birth defects needed.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-cephalosporins", "q": "Most studies of pregnant women taking a cephalosporin have not shown that it harms the baby." },
+            { "s": "bumps-cephalosporins", "q": "No extra monitoring for major birth defects is required following use of a cephalosporin." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: small amounts in milk; infant diarrhoea and fungal infection possible (breastfeeding might need to stop), and sensitisation. Use only after benefit/risk assessment.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-3810", "q": "Breastfeeding might have to be discontinued due to these effects." },
+            { "s": "emc-3810", "q": "Cefuroxime should only be used during breastfeeding after benefit/risk assessment by the physician in charge." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No human fertility data; animal studies showed no effect on fertility.",
+          "detail": true,
+          "src": [
+            { "s": "emc-3810", "q": "There are no data on the effects of cefuroxime axetil on fertility in humans. Reproductive studies in animals have shown no effects on fertility." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: Candida overgrowth, eosinophilia, headache, dizziness, diarrhoea, nausea, abdominal pain, transient rise in liver enzymes.",
+          "src": [
+            { "s": "emc-3810", "q": "The most common adverse reactions are Candida overgrowth, eosinophilia, headache, dizziness, gastrointestinal disturbances and transient rise in liver enzymes." }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Anaphylaxis, Kounis syndrome, serum sickness: stop immediately and start emergency measures.",
+          "src": [
+            { "s": "emc-3810", "q": "In case of severe hypersensitivity reactions, treatment with cefuroxime must be discontinued immediately and adequate emergency measures must be initiated." }
+          ]
+        },
+        {
+          "t": "SJS, TEN, DRESS, erythema multiforme, angioedema: withdraw; never restart after SJS/TEN/DRESS.",
+          "src": [
+            { "s": "emc-3810", "q": "treatment with cefuroxime must not be restarted in this patient at any time" }
+          ]
+        },
+        {
+          "t": "Pseudomembranous colitis, haemolytic anaemia, thrombocytopenia, leukopenia, jaundice and hepatitis.",
+          "src": [
+            { "s": "emc-3810", "q": "jaundice (predominantly cholestatic), hepatitis" },
+            { "s": "emc-3810", "q": "very rarely haemolytic anaemia" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before starting: establish any history of severe hypersensitivity to cefuroxime, other cephalosporins or other beta-lactams.",
+          "tag": "baseline",
+          "src": [
+            { "s": "emc-3810", "q": "Before beginning treatment, it should be established whether the patient has a history of severe hypersensitivity reactions to cefuroxime, to other cephalosporins or to any other type of beta-lactam agent." }
+          ]
+        },
+        {
+          "t": "Monitor closely for skin reactions.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-3810", "q": "At the time of prescription patients should be advised of the signs and symptoms and monitored closely for skin reactions." }
+          ]
+        },
+        {
+          "t": "Stop immediately for severe hypersensitivity or signs of SCARs.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-3810", "q": "If signs and symptoms suggestive of these reactions appear, cefuroxime should be withdrawn immediately" }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Take after food for best absorption. Do not crush tablets; not suitable for patients who cannot swallow tablets.",
+          "src": [
+            { "s": "emc-3810", "q": "Zinnat tablets should be taken after food for optimum absorption." },
+            { "s": "emc-3810", "q": "Zinnat tablets should not be crushed and are therefore unsuitable for treatment of patients who cannot swallow tablets." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "May cause dizziness: be cautious when driving or using machines.",
+          "src": [
+            { "s": "emc-3810", "q": "as this medicine may cause dizziness, patients should be warned to be cautious when driving or operating machinery" }
+          ]
+        },
+        {
+          "t": "Report rash, blistering or allergy symptoms straight away; report diarrhoea during or after the course.",
+          "src": [
+            { "s": "emc-3810", "q": "At the time of prescription patients should be advised of the signs and symptoms and monitored closely for skin reactions." },
+            { "s": "emc-3810", "q": "This diagnosis should be considered in patients with diarrhoea during or subsequent to the administration of cefuroxime" }
+          ]
+        },
+        {
+          "t": "Combined oral contraceptives may be less effective.",
+          "detail": true,
+          "src": [
+            { "s": "emc-3810", "q": "reduced efficacy of combined oral contraceptives" }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "cefuroxime:allergy:cephalosporin",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "cefuroxime",
+      "allergen": ["cefuroxime", "group:cephalosporin"],
+      "concern": "Cephalosporin / cefuroxime hypersensitivity",
+      "consequence": "Risk of serious, occasionally fatal hypersensitivity.",
+      "action": "Do not use.",
+      "sourceWording": "Patients with known hypersensitivity to cephalosporin antibiotics",
+      "src": [
+        { "s": "emc-3810", "q": "Hypersensitivity to cefuroxime or to any of the excipients listed in section 6.1. Patients with known hypersensitivity to cephalosporin antibiotics." }
+      ]
+    },
+    {
+      "id": "cefuroxime:allergy:beta-lactam-severe",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "cefuroxime",
+      "allergen": ["group:penicillin", "group:beta-lactam", "group:carbapenem", "group:monobactam"],
+      "reactions": ["immediate-severe", "severe-cutaneous"],
+      "concern": "Severe hypersensitivity (e.g. anaphylaxis) to another beta-lactam",
+      "consequence": "Risk of cross-sensitivity.",
+      "action": "Do not use (contraindicated with a history of severe hypersensitivity to penicillins, monobactams or carbapenems). The SmPC gives anaphylaxis as its example. This tool also counts SJS, TEN and DRESS to another beta-lactam as severe hypersensitivity: that is an interpretation, not SmPC wording.",
+      "sourceWording": "History of severe hypersensitivity (e.g. anaphylactic reaction) to any other type of betalactam antibacterial agent",
+      "src": [
+        { "s": "emc-3810", "q": "History of severe hypersensitivity (e.g. anaphylactic reaction) to any other type of betalactam antibacterial agent (penicillins, monobactams and carbapenems)." }
+      ]
+    },
+    {
+      "id": "cefuroxime:allergy:beta-lactam-non-severe",
+      "kind": "allergy",
+      "level": "caution",
+      "med": "cefuroxime",
+      "allergen": ["group:penicillin", "group:beta-lactam", "group:carbapenem", "group:monobactam"],
+      "reactions": ["immediate", "delayed"],
+      "concern": "Non-severe hypersensitivity to another beta-lactam",
+      "consequence": "Risk of cross-sensitivity.",
+      "action": "Use with caution (special care).",
+      "sourceWording": "Caution should be used if cefuroxime is given to patients with a history of non-severe hypersensitivity",
+      "src": [
+        { "s": "emc-3810", "q": "Caution should be used if cefuroxime is given to patients with a history of non-severe hypersensitivity to other beta-lactam agents." },
+        { "s": "emc-3810", "q": "Special care is indicated in patients who have experienced an allergic reaction to penicillins or other beta-lactam antibiotics because there is a risk of cross-sensitivity." }
+      ]
+    },
+    {
+      "id": "cefuroxime:renal:crcl-10-30",
+      "kind": "renal",
+      "level": "dose",
+      "med": "cefuroxime",
+      "renal": { "measure": "CrCl", "min": 10, "max": 30 },
+      "concern": "CrCl 10 to 29 ml/min/1.73 m²",
+      "consequence": "Slower renal excretion (half-life about 4.6 hours).",
+      "action": "Give the standard individual dose every 24 hours.",
+      "sourceWording": "standard individual dose given every 24 hours",
+      "src": [
+        { "s": "emc-3810", "q": "10-29 ml/min/1.73 m2 4.6 standard individual dose given every 24 hours" }
+      ]
+    },
+    {
+      "id": "cefuroxime:renal:crcl-under-10",
+      "kind": "renal",
+      "level": "dose",
+      "med": "cefuroxime",
+      "renal": { "measure": "CrCl", "max": 10 },
+      "concern": "CrCl < 10 ml/min/1.73 m²",
+      "consequence": "Much slower renal excretion (half-life about 16.8 hours).",
+      "action": "Give the standard individual dose every 48 hours; during haemodialysis give one extra standard dose at the end of each dialysis.",
+      "sourceWording": "standard individual dose given every 48 hours",
+      "src": [
+        { "s": "emc-3810", "q": "<10 ml/min/1.73 m2 16.8 standard individual dose given every 48 hours" },
+        { "s": "emc-3810", "q": "a single additional standard individual dose should be given at the end of each dialysis" }
+      ]
+    },
+    {
+      "id": "cefuroxime:age:under-3-months",
+      "kind": "age",
+      "level": "info",
+      "med": "cefuroxime",
+      "age": { "maxYears": 0.25 },
+      "concern": "Infants under 3 months",
+      "consequence": "No experience in this age group; licensed from 3 months.",
+      "action": "Not licensed under 3 months.",
+      "sourceWording": "There is no experience of using",
+      "src": [
+        { "s": "emc-3810", "q": "There is no experience of using Zinnat in children under the age of 3 months." }
+      ]
+    },
+    {
+      "id": "cefuroxime:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "cefuroxime",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Limited human data; no harm in animal studies.",
+      "action": "Prescribe only if the benefit outweighs the risk.",
+      "sourceWording": "only if the benefit outweighs the risk",
+      "src": [
+        { "s": "emc-3810", "q": "Zinnat should be prescribed to pregnant women only if the benefit outweighs the risk." }
+      ]
+    },
+    {
+      "id": "cefuroxime:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "cefuroxime",
+      "concern": "Pregnancy (BUMPS/UKTIS, cephalosporins)",
+      "consequence": "Most studies have not shown harm to the baby.",
+      "action": "BUMPS: no extra monitoring for major birth defects is required.",
+      "sourceWording": "have not shown that it harms the baby",
+      "src": [
+        { "s": "bumps-cephalosporins", "q": "Most studies of pregnant women taking a cephalosporin have not shown that it harms the baby." }
+      ]
+    },
+    {
+      "id": "cefuroxime:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "cefuroxime",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Small amounts in milk; risk of infant diarrhoea, mucosal fungal infection and sensitisation.",
+      "action": "Use only after benefit/risk assessment; breastfeeding might need to stop if effects occur.",
+      "sourceWording": "should only be used during breastfeeding after benefit/risk assessment",
+      "src": [
+        { "s": "emc-3810", "q": "Cefuroxime should only be used during breastfeeding after benefit/risk assessment by the physician in charge." }
+      ]
+    },
+    {
+      "id": "cefuroxime:interaction:warfarin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "cefuroxime",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (oral anticoagulant)",
+      "consequence": "Increased INR may occur.",
+      "action": "Be aware INR may rise (no specific action stated in the SmPC).",
+      "sourceWording": "may give rise to increased INR",
+      "src": [
+        { "s": "emc-3810", "q": "Concomitant use with oral anticoagulants may give rise to increased INR." }
+      ]
+    },
+    {
+      "id": "cefuroxime:interaction:ppi",
+      "kind": "interaction",
+      "level": "info",
+      "med": "cefuroxime",
+      "other": "group:ppi",
+      "effect": "reduced-absorption",
+      "concern": "Medicines that reduce gastric acidity",
+      "consequence": "Lower bioavailability of cefuroxime axetil; cancels the extra absorption after food.",
+      "action": "Be aware of reduced absorption (no specific action stated).",
+      "sourceWording": "may result in a lower bioavailability of cefuroxime axetil",
+      "src": [
+        { "s": "emc-3810", "q": "Drugs which reduce gastric acidity may result in a lower bioavailability of cefuroxime axetil compared with that of the fasting state and tend to cancel the effect of enhanced absorption after food." }
+      ]
+    },
+    {
+      "id": "cefuroxime:interaction:antacid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "cefuroxime",
+      "other": "group:antacid",
+      "effect": "reduced-absorption",
+      "concern": "Medicines that reduce gastric acidity",
+      "consequence": "Lower bioavailability of cefuroxime axetil; cancels the extra absorption after food.",
+      "action": "Be aware of reduced absorption (no specific action stated).",
+      "sourceWording": "may result in a lower bioavailability of cefuroxime axetil",
+      "src": [
+        { "s": "emc-3810", "q": "Drugs which reduce gastric acidity may result in a lower bioavailability of cefuroxime axetil compared with that of the fasting state and tend to cancel the effect of enhanced absorption after food." }
+      ]
+    },
+    {
+      "id": "cefuroxime:condition:hormonal-contraception",
+      "kind": "condition",
+      "level": "info",
+      "med": "cefuroxime",
+      "condition": "hormonal-contraception",
+      "concern": "Combined oral contraceptive use",
+      "consequence": "Gut flora changes may lower oestrogen reabsorption and reduce contraceptive efficacy.",
+      "action": "Be aware of possible reduced contraceptive efficacy (no specific action stated).",
+      "sourceWording": "reduced efficacy of combined oral contraceptives",
+      "src": [
+        { "s": "emc-3810", "q": "Cefuroxime axetil may affect the gut flora, leading to lower oestrogen reabsorption and reduced efficacy of combined oral contraceptives." }
+      ]
+    }
+  ]
+}

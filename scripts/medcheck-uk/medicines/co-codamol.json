@@ -1328,6 +1328,170 @@
           "q": "Consider the use of a parenteral antiplatelet agent in acute coronary syndrome patients requiring co-administration of morphine or other opioid agonists."
         }
       ]
+    },
+    {
+      "id": "co-codamol:interaction:metoclopramide",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-codamol",
+      "other": "metoclopramide",
+      "concern": "Metoclopramide",
+      "consequence": "May increase the speed of paracetamol absorption.",
+      "action": "No action stated in the SmPC.",
+      "sourceWording": "may be increased by metoclopramide or domperidone",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "The speed of absorption of paracetamol may be increased by metoclopramide or domperidone"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:domperidone",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-codamol",
+      "other": "domperidone",
+      "concern": "Domperidone",
+      "consequence": "May increase the speed of paracetamol absorption.",
+      "action": "No action stated in the SmPC.",
+      "sourceWording": "may be increased by metoclopramide or domperidone",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "The speed of absorption of paracetamol may be increased by metoclopramide or domperidone"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:maoi-30-500",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "co-codamol",
+      "formulations": [
+        "co-codamol-30-500-tab"
+      ],
+      "other": "group:maoi",
+      "concern": "MAO inhibitors (now or within 14 days)",
+      "consequence": "Can potentiate CNS effects and other side effects of unpredictable severity.",
+      "action": "Do not use with an MAOI or within 14 days of stopping one (30/500 SmPC 4.3).",
+      "sourceWording": "monoamine oxidase inhibitor therapy, concurrent or within 14 days",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "monoamine oxidase inhibitor therapy, concurrent or within 14 days"
+        },
+        {
+          "s": "emc-4457",
+          "q": "Co-codamol should not be used within two weeks after the discontinuation of MAOI treatment"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:maoi-8-500",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "co-codamol",
+      "formulations": [
+        "co-codamol-8-500-tab"
+      ],
+      "other": "group:maoi",
+      "concern": "MAO inhibitors (now or within 2 weeks)",
+      "consequence": "Can potentiate CNS effects and other side effects of unpredictable severity.",
+      "action": "Do not use within two weeks after stopping an MAOI (8/500 SmPC 4.5).",
+      "sourceWording": "should not be used within two weeks after the discontinuation of MAOI treatment",
+      "src": [
+        {
+          "s": "emc-5958",
+          "q": "Concomitant administration of MAOI (e.g. tranylcypromine) can potentiate the central nervous effects and other side effects of unpredictable severity"
+        },
+        {
+          "s": "emc-5958",
+          "q": "Co-codamol should not be used within two weeks after the discontinuation of MAOI treatment"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:antihistamine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-codamol",
+      "other": "group:antihistamine",
+      "effect": "cns-respiratory-depression",
+      "concern": "Antihistamines",
+      "consequence": "Additive CNS depression; increased anticholinergic side effects.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may exhibit additive CNS depression",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Patients receiving other narcotic analgesics, antitussive, antihypertensives, antihistamines, antipsychotics, antianxiety agents or other CNS depressants (including alcohol) concomitantly with this codeine containing drug may exhibit additive CNS depression"
+        },
+        {
+          "s": "emc-5958",
+          "q": "medications with anticholinergic activity (e.g. tricyclic antidepressants, antihistamines, antipsychotics, muscle relaxants, anti-Parkinson drugs) may result in increased anticholinergic adverse effects"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:anticholinergic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-codamol",
+      "other": "group:anticholinergic",
+      "concern": "Anticholinergic medicines",
+      "consequence": "Increased anticholinergic side effects.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may result in increased anticholinergic adverse effects",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "Concomitant administration of codeine with anticholinergics or medications with anticholinergic activity"
+        },
+        {
+          "s": "emc-4457",
+          "q": "may result in increased anticholinergic adverse effects"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "co-codamol",
+      "other": "group:tricyclic-antidepressant",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "Increased anticholinergic side effects.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may result in increased anticholinergic adverse effects",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "medications with anticholinergic activity (e.g. tricyclic antidepressants, antihistamines, antipsychotics, muscle relaxants, anti-Parkinson drugs) may result in increased anticholinergic adverse effects"
+        }
+      ]
+    },
+    {
+      "id": "co-codamol:interaction:benzodiazepine",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "co-codamol",
+      "other": "group:benzodiazepine",
+      "effect": "cns-respiratory-depression",
+      "concern": "Benzodiazepines and related sedatives",
+      "consequence": "Sedation, respiratory depression, coma and death (additive CNS depression).",
+      "action": "Only if no alternative; lowest effective dose and shortest duration.",
+      "sourceWording": "should be reserved for patients for whom alternative treatment options are not possible",
+      "src": [
+        {
+          "s": "emc-4457",
+          "q": "The concomitant use of opioids with sedative medicines such as benzodiazepines or related drugs increases the risk of sedation, respiratory depression, coma and death because of additive CNS depressant effect"
+        },
+        {
+          "s": "emc-4457",
+          "q": "If a decision is made to prescribe co-codamol concomitantly with sedative medicines, the lowest effective dose should be used, and the duration of treatment should be as short as possible"
+        }
+      ]
     }
   ]
 }

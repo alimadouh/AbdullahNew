@@ -1,0 +1,981 @@
+{
+  "id": "fluticasone-furoate-umeclidinium-vilanterol",
+  "name": "Fluticasone furoate/umeclidinium/vilanterol (inhaler)",
+  "ingredients": [
+    "fluticasone-furoate",
+    "umeclidinium",
+    "vilanterol"
+  ],
+  "className": "Inhaled corticosteroid with long-acting muscarinic antagonist and long-acting beta2 agonist (ICS/LAMA/LABA)",
+  "groups": [
+    "inhaled-corticosteroid",
+    "beta2-agonist",
+    "long-acting-beta2-agonist",
+    "inhaled-antimuscarinic",
+    "long-acting-muscarinic-antagonist"
+  ],
+  "searchTerms": [
+    "fluticasone furoate umeclidinium vilanterol",
+    "FF/UMEC/VI"
+  ],
+  "availability": {
+    "status": "uk"
+  },
+  "formulations": [
+    {
+      "id": "ff-umec-vi-dpi-100-62-25",
+      "label": "Inhalation powder (dry powder inhaler) 92/55/22 delivered (100/62.5/25 pre-dispensed)",
+      "route": "inhalation",
+      "strengths": "fluticasone furoate 100 micrograms + umeclidinium 62.5 micrograms + vilanterol 25 micrograms pre-dispensed (92/55/22 micrograms delivered)",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "This corresponds to a pre-dispensed dose of 100 micrograms fluticasone furoate, 74.2 micrograms umeclidinium bromide equivalent to 62.5 micrograms umeclidinium and 25 micrograms vilanterol (as trifenatate)."
+        }
+      ],
+      "sourceIds": [
+        "emc-8666"
+      ]
+    }
+  ],
+  "brandPrescribing": {
+    "t": "SPS: prescribing by brand is necessary when devices have different instructions for use and need patient training; dry powder inhalers are named as an example. Generic prescribing of inhalers can lead to an unfamiliar device, which could affect use and adherence.",
+    "src": [
+      {
+        "s": "sps-brand-generic-principles",
+        "q": "When administration devices have different instructions for use and patients require training to use them."
+      },
+      {
+        "s": "sps-brand-generic-principles",
+        "q": "adrenaline auto-injectors, dry powder inhalers"
+      },
+      {
+        "s": "sps-brand-examples",
+        "q": "Generic prescribing of inhalers can lead to people being given an unfamiliar device which could affect usage and adherence."
+      }
+    ]
+  },
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "COPD, adults: maintenance in moderate to severe COPD not adequately treated by ICS/LABA or LABA/LAMA. Not licensed for asthma in the UK SmPC.",
+          "tag": "COPD",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "is indicated as a maintenance treatment in adult patients with moderate to severe chronic obstructive pulmonary disease (COPD)"
+            },
+            {
+              "s": "emc-8666",
+              "q": "who are not adequately treated by a combination of an inhaled corticosteroid and a long-acting β2-agonist or a combination of a long-acting β2-agonist and a long-acting muscarinic antagonist"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Should not be used in asthma (not studied).",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "This medicinal product should not be used in patients with asthma since it has not been studied in this patient population."
+            }
+          ]
+        },
+        {
+          "t": "Device and brand (SPS): prescribe by brand when devices differ in use and need training; dry powder inhalers are an example.",
+          "tag": "Brand prescribing",
+          "src": [
+            {
+              "s": "sps-brand-generic-principles",
+              "q": "When administration devices have different instructions for use and patients require training to use them."
+            },
+            {
+              "s": "sps-brand-generic-principles",
+              "q": "adrenaline auto-injectors, dry powder inhalers"
+            }
+          ]
+        },
+        {
+          "t": "Do not combine with another LAMA or LABA (not recommended).",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Co-administration of Trelegy Ellipta with other long-acting muscarinic antagonists or long-acting beta2- adrenergic agonists has not been studied and is not recommended as it may potentiate the adverse reactions"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults: one inhalation once daily at the same time each day (this is also the maximum). If a dose is missed, take the next at the usual time the next day.",
+          "tag": "COPD",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "The recommended and maximum dose is one inhalation once daily, each day at the same time."
+            },
+            {
+              "s": "emc-8666",
+              "q": "If a dose is missed the next dose should be inhaled at the usual time the next day."
+            }
+          ]
+        },
+        {
+          "t": "No dose adjustment in the elderly, renal impairment or hepatic impairment (caution in moderate to severe hepatic impairment).",
+          "tag": "Special groups",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "No dose adjustment is required in patients 65 years of age or older"
+            },
+            {
+              "s": "emc-8666",
+              "q": "No dose adjustment is required in patients with renal impairment"
+            },
+            {
+              "s": "emc-8666",
+              "q": "No dose adjustment is required in patients with mild, moderate or severe hepatic impairment."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "No relevant use under 18 years (COPD).",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "There is no relevant use of Trelegy Ellipta in the paediatric population (under 18 years of age) for the indication of COPD."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to fluticasone furoate, umeclidinium, vilanterol or any excipient (lactose, magnesium stearate).",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Hypersensitivity to the active substances or to any of the excipients listed in section 6.1."
+            },
+            {
+              "s": "emc-8666",
+              "q": "6.1 List of excipients Lactose monohydrate Magnesium stearate"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Not for acute bronchospasm or acute COPD exacerbation (no data as rescue therapy). Re-evaluate if COPD deteriorates; do not stop without medical supervision.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "There are no clinical data to support the use of Trelegy Ellipta for the treatment of acute episodes of bronchospasm, or to treat an acute COPD exacerbation (i.e. as a rescue therapy)."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Patients should not stop therapy with Trelegy Ellipta without physician supervision since symptoms may recur after discontinuation."
+            }
+          ]
+        },
+        {
+          "t": "Caution in unstable or life-threatening cardiovascular disease (arrhythmias such as AF and tachycardia can occur), convulsive disorders, thyrotoxicosis, unusual responsiveness to beta2 agonists, pulmonary tuberculosis or chronic/untreated infections.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Trelegy Ellipta should be used with caution in patients with unstable or life-threatening cardiovascular disease."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Trelegy Ellipta should be used with caution in patients with convulsive disorders or thyrotoxicosis, and in patients who are unusually responsive to beta2-adrenergic agonists."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Trelegy Ellipta should be administered with caution in patients with pulmonary tuberculosis or in patients with chronic or untreated infections."
+            }
+          ]
+        },
+        {
+          "t": "Anticholinergic: caution in narrow-angle glaucoma and in urinary retention or its risk factors (e.g. benign prostatic hypertrophy).",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Trelegy Ellipta should be used with caution in patients with narrow-angle glaucoma."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Caution should be advised when prescribing Trelegy Ellipta in patients with urinary retention or risk factors for urinary retention, e.g. benign prostatic hypertrophy."
+            }
+          ]
+        },
+        {
+          "t": "COPD pneumonia: increased incidence with inhaled corticosteroids; stay vigilant (risk factors: smoking, older age, low BMI, severe COPD).",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "An increase in the incidence of pneumonia, including pneumonia requiring hospitalisation, has been observed in patients with COPD receiving inhaled corticosteroids."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Risk factors for pneumonia in patients with COPD include current smoking, older age, low body mass index (BMI) and severe COPD."
+            }
+          ]
+        },
+        {
+          "t": "Hypokalaemia and hyperglycaemia possible; caution with other hypokalaemic medicines; monitor glucose more closely in diabetes when starting. Lactose: galactose intolerance, lactase deficiency or glucose-galactose malabsorption should not use.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Caution should be exercised when Trelegy Ellipta is used with other medicinal products that also have the potential to cause hypokalaemia"
+            },
+            {
+              "s": "emc-8666",
+              "q": "Upon initiation of treatment with Trelegy Ellipta, plasma glucose should be monitored more closely in diabetic patients."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not use this medicinal product."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Strong CYP3A4 inhibitors (e.g. ketoconazole, ritonavir, cobicistat): avoid unless benefit outweighs risk; if used, monitor for systemic corticosteroid adverse reactions.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Caution is advised when co-administering with strong CYP3A4 inhibitors (e.g. ketoconazole, ritonavir, cobicistat-containing products)"
+            },
+            {
+              "s": "emc-8666",
+              "q": "Co-administration should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid adverse reactions, in which case patients should be monitored for systemic corticosteroid adverse reactions."
+            }
+          ]
+        },
+        {
+          "t": "Other LAMAs or LABAs: not recommended (may potentiate adverse reactions).",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Co-administration of Trelegy Ellipta with other long-acting muscarinic antagonists or long-acting beta2- adrenergic agonists has not been studied and is not recommended as it may potentiate the adverse reactions"
+            }
+          ]
+        },
+        {
+          "t": "Beta-blockers: may antagonise vilanterol; prefer cardioselective, with caution for both selective and non-selective.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "If beta - blockers are required, cardioselective beta-blockers should be considered, however, caution should be exercised during concurrent use of both non-selective and selective beta-blockers."
+            }
+          ]
+        },
+        {
+          "t": "Methylxanthines, steroids and non-potassium-sparing diuretics may potentiate hypokalaemia: caution.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Concomitant hypokalaemic treatment with methylxanthine derivatives, steroids, or non-potassium-sparing diuretics may potentiate the possible hypokalaemic effect of beta2-adrenergic agonists, therefore caution should be exercised"
+            }
+          ]
+        },
+        {
+          "t": "No clinically relevant interaction expected with CYP2D6 inhibitors or P-gp inhibitors (verapamil studied).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "no clinically relevant drug interaction is expected when fluticasone furoate/umeclidinium/vilanterol is co-administered with CYP2D6 inhibitors"
+            },
+            {
+              "s": "emc-8666",
+              "q": "no clinically relevant drug interaction is expected when fluticasone furoate/umeclidinium/vilanterol is co-administered with P-gp inhibitors"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No dose adjustment in renal impairment.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "No dose adjustment is required in patients with renal impairment"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No dose adjustment, but use with caution in moderate to severe hepatic impairment and monitor for systemic corticosteroid-related adverse reactions.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Trelegy Ellipta should be used with caution in patients with moderate to severe hepatic impairment"
+            },
+            {
+              "s": "emc-8666",
+              "q": "Patients with moderate to severe hepatic impairment receiving Trelegy Ellipta should be monitored for systemic corticosteroid-related adverse reactions"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Limited data; consider only if expected benefit to the mother justifies the potential risk to the foetus.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "There are limited data from the use of fluticasone furoate/umeclidinium/vilanterol in pregnant women."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Administration of Trelegy Ellipta to pregnant women should only be considered if the expected benefit to the mother justifies the potential risk to the foetus."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: unknown whether excreted in milk; related drugs are found in milk. Decide whether to stop breastfeeding or stop therapy.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "A risk to newborns/infants cannot be excluded. A decision must be made whether to discontinue breast-feeding or to discontinue Trelegy Ellipta therapy"
+            }
+          ]
+        },
+        {
+          "t": "SPS: inhaled fluticasone can be used during breastfeeding (this SPS page covers the corticosteroid only, not umeclidinium or vilanterol).",
+          "tag": "SPS",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-ics-breastfeeding",
+              "q": "When applied to the skin, inhaled or used intranasally, fluticasone can be used during breastfeeding."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No human fertility data; no effect on fertility in animal studies.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "There are no data on the effects of fluticasone furoate/umeclidinium/vilanterol on human fertility."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Most frequent: nasopharyngitis (7%), headache (5%), upper respiratory tract infection (2%). Common: pneumonia, bronchitis, pharyngitis, rhinitis, sinusitis, influenza, oral/throat candidiasis, urinary tract infection, headache, cough, oropharyngeal pain, constipation, arthralgia, back pain.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "The most frequently reported adverse reactions are nasopharyngitis (7%), headache (5%) and upper respiratory tract infection (2%)."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Pneumonia Upper respiratory tract infection Bronchitis Pharyngitis Rhinitis Sinusitis Influenza Nasopharyngitis Candidiasis of mouth and throat Urinary tract infection Common"
+            },
+            {
+              "s": "emc-8666",
+              "q": "Cough Oropharyngeal pain Common"
+            },
+            {
+              "s": "emc-8666",
+              "q": "Constipation Common"
+            },
+            {
+              "s": "emc-8666",
+              "q": "Arthralgia Back pain Common"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Paradoxical bronchospasm can be life-threatening: stop immediately, assess and use alternative therapy.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "may produce paradoxical bronchospasm with an immediate wheezing and shortness of breath after dosing and may be life-threatening"
+            },
+            {
+              "s": "emc-8666",
+              "q": "If paradoxical bronchospasm occurs, treatment should be discontinued immediately."
+            }
+          ]
+        },
+        {
+          "t": "Pneumonia, including fatal cases, in COPD trials.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Fatal pneumonia occurred in 12 of 4 151 patients (3.5 per 1 000 patient-years) receiving Trelegy Ellipta"
+            }
+          ]
+        },
+        {
+          "t": "Acute narrow-angle glaucoma: stop and contact a doctor immediately. Acute urinary retention reported. Rare hypersensitivity including anaphylaxis.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "should be informed to stop using Trelegy Ellipta and to contact their doctor immediately should any of these signs or symptoms develop"
+            },
+            {
+              "s": "emc-8666",
+              "q": "Cases of acute urinary retention have been observed in the post-marketing setting"
+            },
+            {
+              "s": "emc-8666",
+              "q": "Hypersensitivity reactions, including anaphylaxis, angioedema, urticaria, and rash Rare"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Watch for pneumonia (overlaps with exacerbation symptoms); re-evaluate if COPD deteriorates.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Physicians should remain vigilant for the possible development of pneumonia in patients with COPD as the clinical features of such infections overlap with the symptoms of COPD exacerbations."
+            },
+            {
+              "s": "emc-8666",
+              "q": "In the event of deterioration of COPD during treatment with Trelegy Ellipta, a re-evaluation of the patient and of the COPD treatment regimen should be undertaken."
+            }
+          ]
+        },
+        {
+          "t": "Plasma glucose more closely in diabetes when starting; systemic corticosteroid effects in moderate to severe hepatic impairment.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "Upon initiation of treatment with Trelegy Ellipta, plasma glucose should be monitored more closely in diabetic patients."
+            }
+          ]
+        },
+        {
+          "t": "Stop at once if paradoxical bronchospasm.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "If paradoxical bronchospasm occurs, treatment should be discontinued immediately."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Do not shake. Slide the cover down until it clicks (counter drops by 1). Breathe out away from the inhaler, seal lips round the mouthpiece without blocking the air vents, take one long, steady, deep breath and hold it 3-4 seconds. Rinse mouth with water afterwards and do not swallow.",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "The inhaler should not be shaken."
+            },
+            {
+              "s": "emc-8666",
+              "q": "The air vents should not be blocked with fingers during use."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Inhale with one long, steady, deep breath in."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Rinse your mouth with water after you have used the inhaler, do not swallow."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Daily maintenance inhaler, not a rescue inhaler. Do not stop without medical advice. Stop and seek help at once if eye pain or blurred vision with red eyes (acute glaucoma).",
+          "src": [
+            {
+              "s": "emc-8666",
+              "q": "There are no clinical data to support the use of Trelegy Ellipta for the treatment of acute episodes of bronchospasm, or to treat an acute COPD exacerbation (i.e. as a rescue therapy)."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Patients should not stop therapy with Trelegy Ellipta without physician supervision since symptoms may recur after discontinuation."
+            },
+            {
+              "s": "emc-8666",
+              "q": "Patients should be informed about the signs and symptoms of acute narrow-angle glaucoma"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "allergen": [
+        "fluticasone-furoate",
+        "umeclidinium",
+        "vilanterol"
+      ],
+      "concern": "Hypersensitivity to fluticasone furoate, umeclidinium or vilanterol",
+      "consequence": "Risk of hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Hypersensitivity to the active substances or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:condition:asthma",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "condition": "asthma",
+      "concern": "Asthma",
+      "consequence": "Not studied in asthma (licensed for COPD only).",
+      "action": "Should not be used in asthma.",
+      "sourceWording": "should not be used in patients with asthma",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "This medicinal product should not be used in patients with asthma since it has not been studied in this patient population."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:condition:cardiac-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "condition": "cardiac-disease",
+      "concern": "Unstable or life-threatening cardiovascular disease",
+      "consequence": "Antimuscarinic and sympathomimetic effects can cause arrhythmias (e.g. AF, tachycardia).",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Trelegy Ellipta should be used with caution in patients with unstable or life-threatening cardiovascular disease."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:condition:epilepsy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "condition": "epilepsy",
+      "concern": "Convulsive disorders",
+      "consequence": "Beta2 agonist effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Trelegy Ellipta should be used with caution in patients with convulsive disorders or thyrotoxicosis, and in patients who are unusually responsive to beta2-adrenergic agonists."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:condition:thyrotoxicosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "condition": "thyrotoxicosis",
+      "concern": "Thyrotoxicosis",
+      "consequence": "Beta2 agonist effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Trelegy Ellipta should be used with caution in patients with convulsive disorders or thyrotoxicosis, and in patients who are unusually responsive to beta2-adrenergic agonists."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:condition:pulmonary-tuberculosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "condition": "pulmonary-tuberculosis",
+      "concern": "Pulmonary tuberculosis or chronic/untreated infection",
+      "consequence": "Inhaled corticosteroid may worsen infection.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Trelegy Ellipta should be administered with caution in patients with pulmonary tuberculosis or in patients with chronic or untreated infections."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:condition:angle-closure-glaucoma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "condition": "angle-closure-glaucoma",
+      "concern": "Narrow-angle glaucoma",
+      "consequence": "Anticholinergic effect may precipitate acute narrow-angle glaucoma.",
+      "action": "Use with caution; tell patients to stop and contact a doctor at once if symptoms of acute narrow-angle glaucoma.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Trelegy Ellipta should be used with caution in patients with narrow-angle glaucoma."
+        },
+        {
+          "s": "emc-8666",
+          "q": "should be informed to stop using Trelegy Ellipta and to contact their doctor immediately should any of these signs or symptoms develop"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:condition:urinary-retention",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "condition": "urinary-retention",
+      "concern": "Urinary retention or risk factors for it",
+      "consequence": "Anticholinergic effect: acute urinary retention has been reported.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be advised",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Caution should be advised when prescribing Trelegy Ellipta in patients with urinary retention or risk factors for urinary retention, e.g. benign prostatic hypertrophy."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:condition:prostatic-hypertrophy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "condition": "prostatic-hypertrophy",
+      "concern": "Benign prostatic hypertrophy",
+      "consequence": "Anticholinergic effect: acute urinary retention has been reported.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be advised",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Caution should be advised when prescribing Trelegy Ellipta in patients with urinary retention or risk factors for urinary retention, e.g. benign prostatic hypertrophy."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus",
+      "consequence": "Raised blood glucose reported in diabetic patients.",
+      "action": "Monitor plasma glucose more closely when starting treatment.",
+      "sourceWording": "should be monitored more closely",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Upon initiation of treatment with Trelegy Ellipta, plasma glucose should be monitored more closely in diabetic patients."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, total lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Contains lactose.",
+      "action": "Should not use.",
+      "sourceWording": "should not use this medicinal product",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not use this medicinal product."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:hepatic:moderate-severe",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "hepatic": [
+        "moderate",
+        "severe"
+      ],
+      "concern": "Moderate to severe hepatic impairment",
+      "consequence": "Higher risk of systemic corticosteroid adverse reactions.",
+      "action": "No dose adjustment; use with caution and monitor for systemic corticosteroid-related adverse reactions.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Trelegy Ellipta should be used with caution in patients with moderate to severe hepatic impairment"
+        },
+        {
+          "s": "emc-8666",
+          "q": "Patients with moderate to severe hepatic impairment receiving Trelegy Ellipta should be monitored for systemic corticosteroid-related adverse reactions"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:interaction:beta-blocker",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "other": "group:beta-blocker",
+      "concern": "Beta-blockers",
+      "consequence": "May weaken or antagonise the effect of vilanterol.",
+      "action": "Prefer a cardioselective beta-blocker if one is needed; use caution with both selective and non-selective beta-blockers.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Beta2-adrenergic blockers may weaken or antagonise the effect of beta2-adrenergic agonists, such as vilanterol."
+        },
+        {
+          "s": "emc-8666",
+          "q": "caution should be exercised during concurrent use of both non-selective and selective beta-blockers"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:interaction:strong-cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "other": "group:strong-cyp3a4-inhibitor",
+      "concern": "Strong CYP3A4 inhibitors (e.g. ketoconazole, ritonavir, cobicistat)",
+      "consequence": "Increased fluticasone furoate and vilanterol exposure.",
+      "action": "Avoid unless benefit outweighs the risk; if used, monitor for systemic corticosteroid adverse reactions.",
+      "sourceWording": "Co-administration should be avoided unless the benefit outweighs",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Caution is advised when co-administering with strong CYP3A4 inhibitors (e.g. ketoconazole, ritonavir, cobicistat-containing products)"
+        },
+        {
+          "s": "emc-8666",
+          "q": "Co-administration should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid adverse reactions, in which case patients should be monitored for systemic corticosteroid adverse reactions."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:interaction:lama",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "other": "group:long-acting-muscarinic-antagonist",
+      "concern": "Another long-acting muscarinic antagonist (LAMA)",
+      "consequence": "Not studied; may potentiate adverse reactions (duplicate class).",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Co-administration of Trelegy Ellipta with other long-acting muscarinic antagonists or long-acting beta2- adrenergic agonists has not been studied and is not recommended as it may potentiate the adverse reactions"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:interaction:laba",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "other": "group:long-acting-beta2-agonist",
+      "concern": "Another long-acting beta2 agonist (LABA)",
+      "consequence": "Not studied; may potentiate adverse reactions (duplicate class).",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Co-administration of Trelegy Ellipta with other long-acting muscarinic antagonists or long-acting beta2- adrenergic agonists has not been studied and is not recommended as it may potentiate the adverse reactions"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:interaction:thiazide",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "other": "group:thiazide",
+      "concern": "Thiazide diuretics (non-potassium-sparing)",
+      "consequence": "May potentiate beta2-agonist hypokalaemia.",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Concomitant hypokalaemic treatment with methylxanthine derivatives, steroids, or non-potassium-sparing diuretics may potentiate the possible hypokalaemic effect of beta2-adrenergic agonists, therefore caution should be exercised"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:interaction:loop-diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "other": "group:loop-diuretic",
+      "concern": "Loop diuretics (non-potassium-sparing)",
+      "consequence": "May potentiate beta2-agonist hypokalaemia.",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Concomitant hypokalaemic treatment with methylxanthine derivatives, steroids, or non-potassium-sparing diuretics may potentiate the possible hypokalaemic effect of beta2-adrenergic agonists, therefore caution should be exercised"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "other": "group:corticosteroid",
+      "concern": "Corticosteroids (systemic)",
+      "consequence": "May potentiate beta2-agonist hypokalaemia.",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Concomitant hypokalaemic treatment with methylxanthine derivatives, steroids, or non-potassium-sparing diuretics may potentiate the possible hypokalaemic effect of beta2-adrenergic agonists, therefore caution should be exercised"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "concern": "Pregnancy",
+      "consequence": "Limited human data; animal reproductive toxicity at non-clinically relevant exposures.",
+      "action": "Consider only if expected benefit to the mother justifies the potential risk to the foetus.",
+      "sourceWording": "should only be considered if the expected benefit",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "Administration of Trelegy Ellipta to pregnant women should only be considered if the expected benefit to the mother justifies the potential risk to the foetus."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "concern": "Breastfeeding",
+      "consequence": "Unknown if excreted in human milk; related drugs are detected in milk; risk cannot be excluded.",
+      "action": "Decide whether to stop breastfeeding or stop therapy, weighing benefits.",
+      "sourceWording": "A decision must be made",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "A risk to newborns/infants cannot be excluded. A decision must be made whether to discontinue breast-feeding or to discontinue Trelegy Ellipta therapy"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:breastfeeding:sps-fluticasone",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "concern": "Breastfeeding (SPS, fluticasone component)",
+      "consequence": "SPS: inhaled fluticasone can be used during breastfeeding (umeclidinium and vilanterol are not covered by this SPS page).",
+      "action": "No SPS advice for the other components; the SmPC advice applies.",
+      "sourceWording": "can be used during breastfeeding",
+      "src": [
+        {
+          "s": "sps-ics-breastfeeding",
+          "q": "When applied to the skin, inhaled or used intranasally, fluticasone can be used during breastfeeding."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-umeclidinium-vilanterol:age:under-18",
+      "kind": "age",
+      "level": "info",
+      "med": "fluticasone-furoate-umeclidinium-vilanterol",
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "concern": "Under 18 years",
+      "consequence": "No relevant use in children for COPD (adult-only licence).",
+      "action": "Not for use under 18 years.",
+      "sourceWording": "There is no relevant use",
+      "src": [
+        {
+          "s": "emc-8666",
+          "q": "There is no relevant use of Trelegy Ellipta in the paediatric population (under 18 years of age) for the indication of COPD."
+        }
+      ]
+    }
+  ]
+}

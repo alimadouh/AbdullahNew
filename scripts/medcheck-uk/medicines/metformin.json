@@ -321,6 +321,12 @@
     { "id": "metformin:condition:alcohol", "kind": "condition", "level": "contraindicated", "med": "metformin", "condition": "alcohol-dependence",
       "concern": "Alcoholism or acute alcohol intoxication", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "Contraindications ... acute alcohol intoxication, alcoholism",
       "src": [{ "s": "emc-987", "q": "Hepatic insufficiency, acute alcohol intoxication, alcoholism." }] },
+    { "id": "metformin:condition:acute-alcohol-intoxication", "kind": "condition", "level": "contraindicated", "med": "metformin", "condition": "acute-alcoholism",
+      "concern": "Acute alcohol intoxication", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "Contraindications ... acute alcohol intoxication",
+      "src": [{ "s": "emc-987", "q": "Hepatic insufficiency, acute alcohol intoxication, alcoholism." }, { "s": "emc-6298", "q": "Hepatic insufficiency, acute alcohol intoxication, alcoholism" }] },
+    { "id": "metformin:condition:metabolic-acidosis", "kind": "condition", "level": "contraindicated", "med": "metformin", "condition": "metabolic-acidosis",
+      "concern": "Any acute metabolic acidosis (e.g. lactic acidosis)", "consequence": "Contraindicated (SmPC 4.3); metformin raises the risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "Contraindications ... Any type of acute metabolic acidosis",
+      "src": [{ "s": "emc-987", "q": "Any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis)." }, { "s": "emc-6298", "q": "Any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis)" }] },
     { "id": "metformin:condition:mitochondrial-disease", "kind": "condition", "level": "avoid", "med": "metformin", "condition": "mitochondrial-disease",
       "concern": "Mitochondrial disease (MELAS, MIDD)", "consequence": "Lactic acidosis exacerbation and neurological complications.", "action": "Not recommended; withdraw immediately if signs suggest MELAS/MIDD.", "sourceWording": "metformin is not recommended",
       "src": [{ "s": "emc-987", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease" }] },
@@ -423,6 +429,127 @@
       "src": [
         { "s": "emc-6298", "q": "Inhibitors of OCT2 (such as cimetidine, dolutegravir, ranolazine, trimethoprim, vandetanib, isavuconazole) may decrease the renal elimination of metformin and thus lead to an increase in metformin plasma concentration." },
         { "s": "emc-987", "q": "Caution is therefore advised, especially in patients with renal impairment, when these drugs are co-administered with metformin, as metformin plasma concentration may increase." }
-      ] }
+      ] },
+    {
+      "id": "metformin:interaction:arb",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "metformin",
+      "other": "group:arb",
+      "effect": "nephrotoxicity",
+      "concern": "Metformin + angiotensin II receptor antagonist (ARB)",
+      "consequence": "May adversely affect renal function and increase the risk of lactic acidosis.",
+      "action": "Close monitoring of renal function is necessary.",
+      "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        {
+          "s": "emc-987",
+          "q": "ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics"
+        },
+        {
+          "s": "emc-987",
+          "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary."
+        }
+      ]
+    },
+    {
+      "id": "metformin:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "metformin",
+      "other": "group:sympathomimetic",
+      "concern": "Metformin + sympathomimetic",
+      "consequence": "Intrinsic hyperglycaemic activity.",
+      "action": "More frequent blood glucose monitoring may be needed, especially at the start; adjust metformin dose during and after if necessary.",
+      "sourceWording": "More frequent blood glucose monitoring may be required",
+      "src": [
+        {
+          "s": "emc-987",
+          "q": "Medicinal products with intrinsic hyperglycaemic activity (e.g. glucocorticoids (systemic and local routes) and sympathomimetics)"
+        },
+        {
+          "s": "emc-987",
+          "q": "More frequent blood glucose monitoring may be required, especially at the beginning of treatment."
+        }
+      ]
+    },
+    {
+      "id": "metformin:interaction:inhaled-corticosteroid",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "metformin",
+      "other": "group:inhaled-corticosteroid",
+      "concern": "Metformin + glucocorticoid (systemic or local)",
+      "consequence": "Intrinsic hyperglycaemic activity (the SmPC includes local routes).",
+      "action": "More frequent blood glucose monitoring may be needed, especially at the start; adjust metformin dose during and after the steroid if necessary.",
+      "sourceWording": "More frequent blood glucose monitoring may be required",
+      "src": [
+        {
+          "s": "emc-987",
+          "q": "Medicinal products with intrinsic hyperglycaemic activity (e.g. glucocorticoids (systemic and local routes) and sympathomimetics)"
+        },
+        {
+          "s": "emc-987",
+          "q": "More frequent blood glucose monitoring may be required, especially at the beginning of treatment."
+        }
+      ]
+    },
+    {
+      "id": "metformin:interaction:verapamil",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "metformin",
+      "other": "verapamil",
+      "concern": "Metformin + verapamil (OCT1 inhibitor)",
+      "consequence": "May reduce the efficacy of metformin.",
+      "action": "If needed, metformin dose adjustment may be considered.",
+      "sourceWording": "If needed, dose adjustment of metformin may be considered",
+      "src": [
+        {
+          "s": "emc-987",
+          "q": "Co-administration of metformin with Inhibitors of OCT1 (such as verapamil) may reduce efficacy of metformin."
+        },
+        {
+          "s": "emc-987",
+          "q": "If needed, dose adjustment of metformin may be considered as OCT inhibitors/inducers may alter the efficacy of metformin."
+        }
+      ]
+    },
+    {
+      "id": "metformin:interaction:insulin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "metformin",
+      "other": "group:insulin",
+      "effect": "hypoglycaemia",
+      "concern": "Metformin + insulin",
+      "consequence": "Metformin alone does not cause hypoglycaemia, but the combination can.",
+      "action": "Use with caution.",
+      "sourceWording": "caution is advised",
+      "src": [
+        {
+          "s": "emc-987",
+          "q": "Metformin alone does not cause hypoglycaemia, but caution is advised when it is used in combination with insulin or other oral antidiabetics (e.g. sulfonylureas or meglitinides)."
+        }
+      ]
+    },
+    {
+      "id": "metformin:interaction:insulin-secretagogue",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "metformin",
+      "other": "group:insulin-secretagogue",
+      "effect": "hypoglycaemia",
+      "concern": "Metformin + sulfonylurea or meglitinide",
+      "consequence": "Metformin alone does not cause hypoglycaemia, but the combination can.",
+      "action": "Use with caution.",
+      "sourceWording": "caution is advised",
+      "src": [
+        {
+          "s": "emc-987",
+          "q": "Metformin alone does not cause hypoglycaemia, but caution is advised when it is used in combination with insulin or other oral antidiabetics (e.g. sulfonylureas or meglitinides)."
+        }
+      ]
+    }
   ]
 }

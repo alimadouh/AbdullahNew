@@ -11,6 +11,9 @@ import { LEVEL_META } from './medcheck/common.jsx'
 let kbPromise = null
 const loadKb = () => (kbPromise ??= fetch('/medcheck/kb.json').then((r) => { if (!r.ok) throw new Error(r.status); return r.json() }).then((k) => { if (k.format !== 'uk-medcheck-1') throw new Error('format'); return k }).catch((e) => { kbPromise = null; throw e }))
 
+let detailsPromise = null
+const loadDetails = (builtAt) => (detailsPromise ??= fetch('/medcheck/kb-details.json').then((r) => { if (!r.ok) throw new Error(r.status); return r.json() }).then((d) => { if (d.builtAt !== builtAt) throw new Error('version'); return d.sections }).catch((e) => { detailsPromise = null; throw e }))
+
 const NO_PATIENT = {}
 
 export default function MedCheckTool() {
@@ -19,6 +22,8 @@ export default function MedCheckTool() {
   const [selection, setSelection] = useState([])
   const [panelVisible, setPanelVisible] = useState(true)
   const [showDetails, setShowDetails] = useState(false)
+  const [details, setDetails] = useState(null) // medicine tables, loaded the first time they are opened
+  const [detailsError, setDetailsError] = useState(false)
   const panelRef = useRef(null)
 
   useEffect(() => {
@@ -26,6 +31,15 @@ export default function MedCheckTool() {
     loadKb().then((k) => live && setKb(k)).catch(() => live && setError(true))
     return () => { live = false }
   }, [])
+
+  useEffect(() => {
+    if (!showDetails || details || !kb) return
+    let live = true
+    setDetailsError(false)
+    loadDetails(kb.builtAt).then((d) => live && setDetails(d)).catch(() => live && setDetailsError(true))
+    return () => { live = false }
+  }, [showDetails, details, kb])
+  const kbFull = useMemo(() => (kb && details ? { ...kb, medicines: kb.medicines.map((m) => ({ ...m, sections: details[m.id] ?? {} })) } : null), [kb, details])
 
   const result = useMemo(() => (kb ? assess(kb, selection, NO_PATIENT) : null), [kb, selection])
   const contra = useMemo(() => (kb ? contraindications(kb, selection) : []), [kb, selection])
@@ -67,11 +81,13 @@ export default function MedCheckTool() {
             className="mt-4 inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-xs font-semibold text-muted-foreground hover:bg-muted hover:text-foreground">
             <ChevronDown className={`h-3.5 w-3.5 transition-transform ${showDetails ? 'rotate-180' : ''}`} />{showDetails ? 'Hide' : 'Show'} full medicine details (dose, cautions, monitoring)
           </button>
-          {showDetails && (
+          {showDetails && (detailsError ? <p className="mt-3 rounded-lg bg-amber-500/10 p-3 text-sm text-amber-800 dark:text-amber-300">Could not load the medicine details. Check the connection and try again.</p>
+            : !kbFull ? <div className="flex justify-center py-8" role="status" aria-label="Loading details"><LoaderCircle className="h-6 w-6 animate-spin text-blue-600" /></div>
+            : (
             <div className={`mt-3 grid gap-4 ${selection.length > 1 ? 'lg:grid-cols-2 2xl:grid-cols-3' : 'max-w-3xl'}`}>
-              {selection.map((s) => <MedicineCard key={s.key} kb={kb} entry={s} findings={result.findings} patient={NO_PATIENT} onRemove={() => setSelection((all) => all.filter((x) => x.key !== s.key))} />)}
+              {selection.map((s) => <MedicineCard key={s.key} kb={kbFull} entry={s} findings={result.findings} patient={NO_PATIENT} onRemove={() => setSelection((all) => all.filter((x) => x.key !== s.key))} />)}
             </div>
-          )}
+          ))}
         </>
       ) : (
         <p className="rounded-2xl border border-dashed p-6 text-center text-sm text-muted-foreground">Add medicines to see how they interact and when each one must not be given.</p>

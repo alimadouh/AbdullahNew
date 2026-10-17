@@ -1,0 +1,266 @@
+{
+  "id": "capsaicin",
+  "name": "Capsaicin (topical)",
+  "ingredients": ["capsaicin"],
+  "className": "Topical product for joint and muscular pain (capsaicin)",
+  "groups": [],
+  "searchTerms": ["capsaicin cream", "capsaicin 0.025% cream", "capsaicin 0.075% cream", "topical capsaicin"],
+  "formulations": [
+    {
+      "id": "capsaicin-cream-0025",
+      "label": "Cream 0.025%",
+      "route": "topical",
+      "strengths": "Capsaicin 0.025% w/w",
+      "release": "n/a",
+      "note": "The clinic product is 0.03%; the UK has 0.025% and 0.075% creams only. The 0.025% cream is licensed for osteoarthritis pain. Contains benzyl alcohol and cetyl alcohol (may cause local irritation or contact dermatitis).",
+      "src": [
+        { "s": "emc-101757", "q": "Capsaicin 0.025% w/w" },
+        { "s": "emc-101757", "q": "For the symptomatic relief of pain associated with osteoarthritis." },
+        { "s": "emc-101757", "q": "Benzyl alcohol may cause mild local irritation. Cetyl alcohol May cause local skin reactions (e.g. contact dermatitis)." }
+      ],
+      "sourceIds": ["emc-101757"]
+    },
+    {
+      "id": "capsaicin-cream-0075",
+      "label": "Cream 0.075%",
+      "route": "topical",
+      "strengths": "Capsaicin 0.075% w/w",
+      "release": "n/a",
+      "note": "Higher strength, licensed for post-herpetic neuralgia and painful diabetic peripheral polyneuropathy (the latter under hospital consultant supervision).",
+      "src": [
+        { "s": "emc-101754", "q": "Capsaicin 0.075% w/w" },
+        { "s": "emc-101754", "q": "should only do so under the direct supervision of a hospital consultant who has access to specialist resources" }
+      ],
+      "sourceIds": ["emc-101754"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Symptomatic relief of osteoarthritis pain.",
+        "formulations": ["capsaicin-cream-0025"],
+        "src": [{ "s": "emc-101757", "q": "For the symptomatic relief of pain associated with osteoarthritis." }] },
+      { "t": "Post-herpetic neuralgia (after open skin lesions have healed) and painful diabetic peripheral polyneuropathy.",
+        "formulations": ["capsaicin-cream-0075"],
+        "src": [
+          { "s": "emc-101754", "q": "For the symptomatic relief of neuralgia associated with and following Herpes Zoster infections (post-herpetic neuralgia) after open skin lesions have healed." },
+          { "s": "emc-101754", "q": "For the symptomatic management of painful diabetic peripheral polyneuropathy." }
+        ] },
+      { "t": "NICE (neuropathic pain, non-specialist settings): consider capsaicin cream for localised neuropathic pain in people who wish to avoid, or cannot tolerate, oral treatments.",
+        "detail": true,
+        "src": [{ "s": "nice-cg173", "q": "Consider capsaicin cream for people with localised neuropathic pain who wish to avoid, or who cannot tolerate, oral treatments." }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Painful diabetic neuropathy: use only under the direct supervision of a hospital consultant with access to specialist resources. First course 8 weeks; then full clinical assessment before continuing, with regular re-evaluation by the consultant.",
+        "formulations": ["capsaicin-cream-0075"],
+        "src": [
+          { "s": "emc-101754", "q": "should only do so under the direct supervision of a hospital consultant who has access to specialist resources" },
+          { "s": "emc-101754", "q": "The recommended duration of use in the first instance is 8 weeks" },
+          { "s": "emc-101754", "q": "the patient's condition should be fully clinically assessed prior to continuation of treatment, and regularly re-evaluated thereafter, by the supervising consultant" }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Apply a small pea-sized amount to the affected area 4 times daily, evenly spaced through waking hours and not more often than every 4 hours. Pain relief usually starts in the first week and increases over the next 2 to 8 weeks.",
+        "tag": "Osteoarthritis, adults and elderly",
+        "formulations": ["capsaicin-cream-0025"],
+        "src": [
+          { "s": "emc-101757", "q": "Apply only a small amount of cream (pea size) to affected area 4 times daily." },
+          { "s": "emc-101757", "q": "These applications should be evenly spaced throughout the waking hours and not more often than every 4 hours." },
+          { "s": "emc-101757", "q": "Pain relief usually begins within the first week of treatment and increases with continuing regular application for the next two to eight weeks." }
+        ] },
+      { "t": "Apply a small pea-sized amount to the affected area 3 or 4 times daily, evenly spaced through waking hours and not more often than every 4 hours.",
+        "tag": "Post-herpetic neuralgia or painful diabetic neuropathy, adults and elderly",
+        "formulations": ["capsaicin-cream-0075"],
+        "src": [
+          { "s": "emc-101754", "q": "Apply only a small amount of cream (pea size) to the affected area 3 or 4 times daily." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Not suitable for use in children.",
+        "src": [
+          { "s": "emc-101757", "q": "Not suitable for use in children." },
+          { "s": "emc-101754", "q": "Not suitable for use in children." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Broken or irritated skin; hypersensitivity to capsaicin or any excipient.",
+        "src": [
+          { "s": "emc-101757", "q": "Zacin cream is contra-indicated on broken or irritated skin." },
+          { "s": "emc-101754", "q": "Axsain cream is contra-indicated for use on broken or irritated skin." },
+          { "s": "emc-101757", "q": "is contra-indicated in patients with hypersensitivity to the active substance or to any of the excipients listed in section 6.1" }
+        ] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Avoid inhaling vapours from the cream (patients and carers): irritation of eyes and airways, including worsening of asthma, has been reported.",
+        "src": [{ "s": "emc-101757", "q": "Patients and carers should avoid inhalation of vapours from the cream, as transient irritation of the mucous membranes of the eyes and respiratory tract (including exacerbation of asthma) has been reported." }] },
+      { "t": "Keep away from the eyes and mucous membranes. Do not use under tight bandages.",
+        "src": [
+          { "s": "emc-101757", "q": "Contact with eyes and mucous membranes should be avoided." },
+          { "s": "emc-101757", "q": "Tight bandages should not be applied on top of Zacin cream." },
+          { "s": "emc-101754", "q": "Not for use under tight bandages." }
+        ] },
+      { "t": "Avoid a hot bath or shower just before or after applying (increases burning). Seek medical advice if the condition worsens, or clears and then comes back.",
+        "src": [
+          { "s": "emc-101757", "q": "Patients should avoid taking a hot bath or shower just before or after applying Zacin, as it can enhance the burning sensation." },
+          { "s": "emc-101757", "q": "Medical advice should be sought if the condition worsens, or clears up then recurs." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "No interaction studies have been performed; no interactions are listed.",
+        "src": [
+          { "s": "emc-101757", "q": "No interaction studies have been performed." },
+          { "s": "emc-101754", "q": "No interaction studies have been performed." }
+        ] }
+    ] },
+    "renal": { "status": "not-stated", "note": "Neither UK SmPC (capsaicin 0.025% and 0.075% creams) gives renal advice." },
+    "hepatic": { "status": "not-stated", "note": "Neither UK SmPC (capsaicin 0.025% and 0.075% creams) gives hepatic advice." },
+    "pregnancy": { "items": [
+      { "t": "Safety in pregnancy not established; with the small amounts absorbed through the skin, adverse effects are considered unlikely.",
+        "src": [
+          { "s": "emc-101757", "q": "The safety of Zacin during pregnancy and lactation has not been established, in either humans or animals." },
+          { "s": "emc-101757", "q": "in the small amounts absorbed transdermally from Zacin Cream, it is considered unlikely that capsaicin will cause any adverse effects in humans" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Safety in breastfeeding not established; with the small amounts absorbed through the skin, adverse effects are considered unlikely.",
+        "src": [
+          { "s": "emc-101754", "q": "The safety of Axsain during pregnancy or lactation has not been established in either humans or animals." },
+          { "s": "emc-101754", "q": "in the small amounts absorbed transdermally from Axsain Cream, it is considered unlikely that capsaicin will cause any adverse effects in humans" }
+        ] }
+    ] },
+    "reproductive": { "status": "not-stated", "note": "Neither UK SmPC (capsaicin 0.025% and 0.075% creams) gives fertility or contraception advice." },
+    "adverseCommon": { "items": [
+      { "t": "Skin irritation or transient burning on application (no frequency given); burning is more frequent with more than 4 applications a day, too much cream, or a hot bath or shower around application.",
+        "tag": "Frequency not stated",
+        "src": [
+          { "s": "emc-101757", "q": "Zacin may cause skin irritation or transient burning on application." },
+          { "s": "emc-101757", "q": "The burning can be enhanced if too much cream is used and if it is applied just before or after a bath or shower." }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Rare irritation of eyes, nose and throat (coughing, sneezing, runny eyes); a few reports of breathlessness, wheezing and worsening asthma. Usually mild and self-limiting.",
+        "src": [
+          { "s": "emc-101757", "q": "resulting in symptoms such as coughing, sneezing and runny eyes. These events are usually mild and self-limiting." },
+          { "s": "emc-101757", "q": "There have been a few reports of dyspnoea, wheezing and exacerbation of asthma." }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Painful diabetic neuropathy: full clinical assessment by the supervising consultant after the first 8 weeks, then regular re-evaluation.",
+        "tag": "ongoing",
+        "formulations": ["capsaicin-cream-0075"],
+        "src": [{ "s": "emc-101754", "q": "the patient's condition should be fully clinically assessed prior to continuation of treatment, and regularly re-evaluated thereafter, by the supervising consultant" }] },
+      { "t": "Seek medical advice if the condition worsens.",
+        "tag": "stop",
+        "src": [{ "s": "emc-101754", "q": "If the condition worsens, seek medical advice." }] }
+    ] },
+    "administration": { "items": [
+      { "t": "For unbroken skin only. Rub in gently until no cream is left on the surface. Do not apply near the eyes.",
+        "src": [
+          { "s": "emc-101757", "q": "For topical administration to unbroken skin." },
+          { "s": "emc-101757", "q": "The cream should be gently rubbed in, there should be no residue left on the surface." },
+          { "s": "emc-101757", "q": "Zacin should not be applied near the eyes." }
+        ] },
+      { "t": "Wash hands straight after applying; if the hands are being treated, wash them 30 minutes after application.",
+        "src": [{ "s": "emc-101757", "q": "The hands should be washed immediately after application of the cream, unless the hands are the treated areas, in which case, they should be washed 30 minutes after application" }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "A burning feeling is common at first. Use a small amount, no more than 4 times a day, and avoid hot baths or showers just before or after. Wash hands after use and keep the cream away from the eyes. Do not breathe in vapours from the cream.",
+        "src": [
+          { "s": "emc-101757", "q": "Zacin may cause transient burning on application." },
+          { "s": "emc-101757", "q": "Hands should be washed immediately after application of Zacin unless hands and fingers are being treated." },
+          { "s": "emc-101757", "q": "Patients and carers should avoid inhalation of vapours from the cream" }
+        ] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "capsaicin:allergy:capsaicin",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "capsaicin",
+      "allergen": ["capsaicin"],
+      "concern": "Hypersensitivity to capsaicin",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "contra-indicated in patients with hypersensitivity to the active substance",
+      "src": [
+        { "s": "emc-101757", "q": "is contra-indicated in patients with hypersensitivity to the active substance or to any of the excipients listed in section 6.1" },
+        { "s": "emc-101754", "q": "is contra-indicated in patients with hypersensitivity to the active substance or to any of the excipients listed in section 6.1" }
+      ]
+    },
+    {
+      "id": "capsaicin:condition:broken-ulcerated-skin",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "capsaicin",
+      "condition": "broken-ulcerated-skin",
+      "concern": "Broken or irritated skin at the treatment site",
+      "consequence": "Listed in section 4.3.",
+      "action": "Do not apply to broken or irritated skin.",
+      "sourceWording": "contra-indicated on broken or irritated skin",
+      "src": [
+        { "s": "emc-101757", "q": "Zacin cream is contra-indicated on broken or irritated skin." },
+        { "s": "emc-101754", "q": "Axsain cream is contra-indicated for use on broken or irritated skin." }
+      ]
+    },
+    {
+      "id": "capsaicin:age:children",
+      "kind": "age",
+      "level": "avoid",
+      "med": "capsaicin",
+      "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Child",
+      "consequence": "Not suitable for use in children (the SmPCs give adult and elderly doses only; no age is defined, 18 years used here).",
+      "action": "Do not use in children.",
+      "sourceWording": "Not suitable for use in children",
+      "src": [
+        { "s": "emc-101757", "q": "Not suitable for use in children." },
+        { "s": "emc-101754", "q": "Not suitable for use in children." }
+      ]
+    },
+    {
+      "id": "capsaicin:condition:asthma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "capsaicin",
+      "condition": "asthma",
+      "concern": "Asthma",
+      "consequence": "Inhaled vapours from the cream can irritate the airways; worsening of asthma, wheezing and breathlessness have been reported.",
+      "action": "Patients and carers should avoid inhaling vapours from the cream.",
+      "sourceWording": "should avoid inhalation of vapours from the cream ... (including exacerbation of asthma)",
+      "src": [
+        { "s": "emc-101757", "q": "Patients and carers should avoid inhalation of vapours from the cream, as transient irritation of the mucous membranes of the eyes and respiratory tract (including exacerbation of asthma) has been reported." },
+        { "s": "emc-101757", "q": "There have been a few reports of dyspnoea, wheezing and exacerbation of asthma." }
+      ]
+    },
+    {
+      "id": "capsaicin:pregnancy",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "capsaicin",
+      "concern": "Pregnancy",
+      "consequence": "Safety not established; adverse effects considered unlikely with the small amounts absorbed through the skin.",
+      "action": "No specific action stated.",
+      "sourceWording": "has not been established ... considered unlikely that capsaicin will cause any adverse effects",
+      "src": [
+        { "s": "emc-101757", "q": "The safety of Zacin during pregnancy and lactation has not been established, in either humans or animals." },
+        { "s": "emc-101757", "q": "it is considered unlikely that capsaicin will cause any adverse effects in humans" }
+      ]
+    },
+    {
+      "id": "capsaicin:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "capsaicin",
+      "concern": "Breastfeeding",
+      "consequence": "Safety not established; adverse effects considered unlikely with the small amounts absorbed through the skin.",
+      "action": "No specific action stated.",
+      "sourceWording": "has not been established ... considered unlikely that capsaicin will cause any adverse effects",
+      "src": [
+        { "s": "emc-101757", "q": "The safety of Zacin during pregnancy and lactation has not been established, in either humans or animals." },
+        { "s": "emc-101757", "q": "it is considered unlikely that capsaicin will cause any adverse effects in humans" }
+      ]
+    }
+  ]
+}

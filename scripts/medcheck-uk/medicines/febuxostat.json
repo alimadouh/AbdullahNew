@@ -1,0 +1,569 @@
+{
+  "id": "febuxostat",
+  "name": "Febuxostat",
+  "ingredients": ["febuxostat"],
+  "className": "Xanthine oxidase inhibitor (non-purine, urate-lowering)",
+  "groups": ["xanthine-oxidase-inhibitor"],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "febuxostat-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "80 mg",
+      "release": "immediate",
+      "src": [
+        { "s": "emc-487", "q": "Each tablet contains 80 mg of febuxostat." }
+      ],
+      "sourceIds": ["emc-487"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Adults: chronic hyperuricaemia where urate deposition has already occurred (history or presence of tophi and/or gouty arthritis).",
+          "src": [
+            { "s": "emc-487", "q": "Treatment of chronic hyperuricaemia in conditions where urate deposition has already occurred (including a history, or presence of, tophus and/or gouty arthritis)." }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "NICE NG219: allopurinol or febuxostat first line for treat-to-target therapy, but offer allopurinol first line to people with major cardiovascular disease. MHRA (2023) points to this advice.",
+          "src": [
+            { "s": "nice-ng219", "q": "Offer allopurinol as first-line treatment to people with gout who have major cardiovascular disease (for example, previous myocardial infarction or stroke, or unstable angina)." },
+            { "s": "mhra-dsu-febuxostat-cv-2023", "q": "recommend that allopurinol should be offered as first-line treatment for people with gout who have major cardiovascular disease" }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "80 mg once daily with or without food. If serum uric acid is above 6 mg/dL (357 µmol/L) after 2-4 weeks, 120 mg once daily may be considered. Target: below 6 mg/dL (357 µmol/L).",
+          "tag": "Gout / chronic hyperuricaemia",
+          "src": [
+            { "s": "emc-487", "q": "The recommended oral dose of ADENURIC is 80 mg once daily without regard to food. If serum uric acid is > 6 mg/dL (357 µmol/L) after 2-4 weeks, ADENURIC 120 mg once daily may be considered." },
+            { "s": "emc-487", "q": "The therapeutic target is to decrease and maintain serum uric acid below 6 mg/dL (357 µmol/L)." }
+          ]
+        },
+        {
+          "t": "Gout flare prophylaxis (NSAID or colchicine) for at least 6 months from the start.",
+          "tag": "Flare prophylaxis",
+          "src": [
+            { "s": "emc-487", "q": "At treatment initiation with febuxostat flare prophylaxis for at least 6 months with an NSAID or colchicine is recommended" }
+          ]
+        },
+        {
+          "t": "Elderly: no dose adjustment. Mild hepatic impairment: 80 mg.",
+          "tag": "Special groups",
+          "src": [
+            { "s": "emc-487", "q": "No dose adjustment is required in the elderly" },
+            { "s": "emc-487", "q": "The recommended dose in patients with mild hepatic impairment is 80 mg." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Safety and efficacy below 18 years not established; no data.",
+          "src": [
+            { "s": "emc-487", "q": "The safety and the efficacy of ADENURIC in children aged below the age of 18 years have not been established." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to febuxostat or excipients.",
+          "src": [
+            { "s": "emc-487", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1 (see also section 4.8)." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Major cardiovascular disease (e.g. MI, stroke, unstable angina): more fatal CV events than allopurinol in one trial (CARES), non-inferior in another (FAST). Use cautiously and monitor regularly, particularly with high urate crystal/tophi burden or when starting urate-lowering therapy; titrate to minimise flares.",
+          "src": [
+            { "s": "emc-487", "q": "Treatment of patients with pre-existing major cardiovascular diseases should be exercised cautiously and they should be monitored regularly." },
+            { "s": "mhra-dsu-febuxostat-cv-2023", "q": "in patients with pre-existing major cardiovascular diseases, febuxostat therapy should be used cautiously, particularly in those with evidence of high urate crystal and tophi burden or those initiating urate-lowering therapy" },
+            { "s": "mhra-dsu-febuxostat-cv-2023", "q": "following initiation of febuxostat, prescribers should titrate the febuxostat dose to minimise gout flares and inflammation" }
+          ]
+        },
+        {
+          "t": "Serious hypersensitivity (SJS, TEN, DRESS, anaphylaxis), mostly in the first month; some patients had renal impairment or previous allopurinol hypersensitivity. Stop immediately; never restart after such a reaction.",
+          "src": [
+            { "s": "emc-487", "q": "Some, but not all of these patients reported renal impairment and/or previous hypersensitivity to allopurinol." },
+            { "s": "emc-487", "q": "febuxostat must not be re-started in this patient at any time" }
+          ]
+        },
+        {
+          "t": "Do not start until an acute gout attack has fully settled; do not stop for a flare during treatment.",
+          "src": [
+            { "s": "emc-487", "q": "Febuxostat treatment should not be started until an acute attack of gout has completely subsided." },
+            { "s": "emc-487", "q": "If a gout flare occurs during febuxostat treatment, it should not be discontinued." }
+          ]
+        },
+        {
+          "t": "Not recommended: with mercaptopurine/azathioprine; with greatly increased urate formation (malignancy and its treatment, Lesch-Nyhan syndrome); in organ transplant recipients.",
+          "src": [
+            { "s": "emc-487", "q": "Febuxostat use is not recommended in patients concomitantly treated with mercaptopurine/azathioprine" },
+            { "s": "emc-487", "q": "As there has been no experience with febuxostat, its use in these populations is not recommended." },
+            { "s": "emc-487", "q": "As there has been no experience in organ transplant recipients, the use of febuxostat in such patients is not recommended" }
+          ]
+        },
+        {
+          "t": "Liver: LFTs before starting and periodically. Thyroid: raised TSH in long-term use; caution with altered thyroid function. Contains lactose.",
+          "detail": true,
+          "src": [
+            { "s": "emc-487", "q": "Liver function test is recommended prior to the initiation of therapy with febuxostat and periodically thereafter based on clinical judgment" },
+            { "s": "emc-487", "q": "Caution is required when febuxostat is used in patients with alteration of thyroid function" }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Mercaptopurine/azathioprine (not in this list): not recommended (myelotoxicity). If unavoidable, reduce their dose to 20% or less of the previous dose and monitor closely.",
+          "src": [
+            { "s": "emc-487", "q": "On the basis of the mechanism of action of febuxostat on XO inhibition concomitant use is not recommended." },
+            { "s": "emc-487", "q": "the dose of mercaptopurine/azathioprine should be reduced to 20% or less of the previously prescribed dose" }
+          ]
+        },
+        {
+          "t": "Potent inducers of glucuronidation: may reduce effect; check serum uric acid 1-2 weeks after starting the inducer.",
+          "src": [
+            { "s": "emc-487", "q": "Monitoring of serum uric acid is therefore recommended 1-2 weeks after start of treatment with a potent inducer of glucuronidation." }
+          ]
+        },
+        {
+          "t": "No dose adjustment needed with naproxen or other NSAIDs, colchicine, indometacin, hydrochlorothiazide, warfarin, theophylline (80 mg dose) or CYP2D6/CYP2C8 substrates. Antacids delay absorption but febuxostat can be taken without regard to them.",
+          "detail": true,
+          "src": [
+            { "s": "emc-487", "q": "Febuxostat can be co-administered with naproxen with no dose adjustment of febuxostat or naproxen being necessary." },
+            { "s": "emc-487", "q": "No dose adjustment is necessary for warfarin when administered with febuxostat." },
+            { "s": "emc-487", "q": "Therefore, febuxostat may be taken without regard to antacid use." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No dose adjustment in mild or moderate renal impairment. Severe renal impairment (CrCl below 30 mL/min): efficacy and safety not fully evaluated.",
+          "src": [
+            { "s": "emc-487", "q": "The efficacy and safety have not been fully evaluated in patients with severe renal impairment (creatinine clearance <30 mL/min, see section 5.2). No dose adjustment is necessary in patients with mild or moderate renal impairment." }
+          ]
+        },
+        {
+          "t": "NICE: offer urate-lowering therapy (treat-to-target) in CKD stages 3 to 5; consider rheumatology referral for CKD stages 3b to 5.",
+          "detail": true,
+          "src": [
+            { "s": "nice-ng219", "q": "CKD stages 3 to 5 (glomerular filtration rate [GFR] categories G3 to G5)" },
+            { "s": "nice-ng219", "q": "they have CKD stages 3b to 5 (GFR categories G3b to G5)" }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Mild hepatic impairment: 80 mg. Moderate: limited information. Severe (Child-Pugh C): not studied.",
+          "src": [
+            { "s": "emc-487", "q": "The efficacy and safety of febuxostat has not been studied in patients with severe hepatic impairment (Child Pugh Class C). The recommended dose in patients with mild hepatic impairment is 80 mg. Limited information is available in patients with moderate hepatic impairment." }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Should not be used during pregnancy (very limited data; human risk unknown). No BUMPS leaflet found.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-487", "q": "The potential risk for human is unknown. Febuxostat should not be used during pregnancy." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Should not be used while breastfeeding (excreted in animal milk with impaired pup development; infant risk cannot be excluded). No SPS breastfeeding page found.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-487", "q": "A risk to a suckling infant cannot be excluded. Febuxostat should not be used while breastfeeding." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Effect on human fertility unknown; no fertility effects in animal studies.",
+          "src": [
+            { "s": "emc-487", "q": "The effect of ADENURIC on human fertility is unknown." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: gout flares, liver function abnormalities, diarrhoea, nausea, headache, dizziness, dyspnoea, rash, pruritus, arthralgia, myalgia, pain in extremity, oedema, fatigue.",
+          "src": [
+            { "s": "emc-487", "q": "are gout flares, liver function abnormalities, diarrhoea, nausea, headache, dizziness, dyspnoea, rash, pruritus,arthralgia, myalgia, pain in extremity, oedema and fatigue" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Serious hypersensitivity: SJS, TEN, DRESS, anaphylaxis (rare, usually in the first month). Stop immediately; never restart.",
+          "src": [
+            { "s": "mhra-dsu-febuxostat-hypersensitivity-2012", "q": "febuxostat treatment should be stopped immediately if signs or symptoms of serious hypersensitivity reactions occur - early withdrawal is associated with a better prognosis" },
+            { "s": "mhra-dsu-febuxostat-hypersensitivity-2012", "q": "if a patient has ever developed a hypersensitivity reaction with febuxostat, including Stevens-Johnson syndrome, febuxostat must not be re-started at any time" }
+          ]
+        },
+        {
+          "t": "Rare sudden cardiac death; higher cardiovascular death in patients with major CV disease in one trial. Rare hepatitis/liver injury, rhabdomyolysis, tubulointerstitial nephritis, pancytopenia.",
+          "detail": true,
+          "src": [
+            { "s": "emc-487", "q": "Rare serious hypersensitivity reactions to febuxostat, some of which were associated to systemic symptoms, and rare events of sudden cardiac death, have occurred in the post-marketing experience." }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "LFTs before starting.",
+          "tag": "baseline",
+          "src": [
+            { "s": "emc-487", "q": "Liver function test is recommended prior to the initiation of therapy with febuxostat and periodically thereafter based on clinical judgment" }
+          ]
+        },
+        {
+          "t": "Serum uric acid can be rechecked after 2 weeks; LFTs periodically; regular monitoring in pre-existing major cardiovascular disease.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-487", "q": "ADENURIC works sufficiently quickly to allow retesting of the serum uric acid after 2 weeks." },
+            { "s": "emc-487", "q": "Treatment of patients with pre-existing major cardiovascular diseases should be exercised cautiously and they should be monitored regularly." }
+          ]
+        },
+        {
+          "t": "Stop immediately for serious allergic/hypersensitivity reactions.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-487", "q": "Febuxostat treatment should be immediately stopped if serious allergic/hypersensitivity reactions, including Stevens-Johnson Syndrome, occur since early withdrawal is associated with a better prognosis." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral, once daily, with or without food.",
+          "src": [
+            { "s": "emc-487", "q": "ADENURIC should be taken by mouth and can be taken with or without food." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Stop and seek help at once if rash, blistering, mouth sores, facial swelling or fever occur.",
+          "src": [
+            { "s": "emc-487", "q": "Patients should be advised of the signs and symptoms and monitored closely for symptoms of allergic/hypersensitivity reactions" }
+          ]
+        },
+        {
+          "t": "If you have had heart failure, heart problems or stroke, talk to your doctor before taking it (MHRA). Gout flares may occur early; keep taking it.",
+          "src": [
+            { "s": "mhra-dsu-febuxostat-cv-2023", "q": "if you currently have or have previously had heart failure, heart problems or stroke, it is recommended to talk to your doctor before taking febuxostat" }
+          ]
+        },
+        {
+          "t": "May cause sleepiness, dizziness, tingling or blurred vision; take care driving.",
+          "detail": true,
+          "src": [
+            { "s": "emc-487", "q": "Somnolence, dizziness, paraesthesia and blurred vision have been reported with the use of Febuxostat." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "febuxostat:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "febuxostat",
+      "allergen": ["febuxostat"],
+      "concern": "Febuxostat hypersensitivity",
+      "consequence": "Severe hypersensitivity (SJS, TEN, anaphylaxis); must never be restarted.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity to the active substance",
+      "src": [
+        { "s": "emc-487", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1 (see also section 4.8)." },
+        { "s": "emc-487", "q": "febuxostat must not be re-started in this patient at any time" }
+      ]
+    },
+    {
+      "id": "febuxostat:allergy:allopurinol",
+      "kind": "allergy",
+      "level": "caution",
+      "med": "febuxostat",
+      "allergen": ["allopurinol"],
+      "concern": "Previous allopurinol hypersensitivity",
+      "consequence": "May indicate potential hypersensitivity to febuxostat (MHRA).",
+      "action": "Monitor closely for hypersensitivity, especially in the first month.",
+      "sourceWording": "may indicate potential hypersensitivity to febuxostat",
+      "src": [
+        { "s": "mhra-dsu-febuxostat-hypersensitivity-2012", "q": "a prior history of hypersensitivity to allopurinol and/or renal disease may indicate potential hypersensitivity to febuxostat" },
+        { "s": "emc-487", "q": "Patients should be advised of the signs and symptoms and monitored closely for symptoms of allergic/hypersensitivity reactions" }
+      ]
+    },
+    {
+      "id": "febuxostat:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "febuxostat",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Pre-existing major cardiovascular disease (e.g. previous myocardial infarction)",
+      "consequence": "More fatal cardiovascular events than allopurinol in one trial (CARES); non-inferior in FAST.",
+      "action": "Use cautiously and monitor regularly; NICE: offer allopurinol first line.",
+      "sourceWording": "should be exercised cautiously and they should be monitored regularly",
+      "src": [
+        { "s": "emc-487", "q": "Treatment of patients with pre-existing major cardiovascular diseases should be exercised cautiously and they should be monitored regularly." },
+        { "s": "mhra-dsu-febuxostat-cv-2023", "q": "in patients with pre-existing major cardiovascular diseases, febuxostat therapy should be used cautiously, particularly in those with evidence of high urate crystal and tophi burden or those initiating urate-lowering therapy" },
+        { "s": "nice-ng219", "q": "Offer allopurinol as first-line treatment to people with gout who have major cardiovascular disease (for example, previous myocardial infarction or stroke, or unstable angina)." }
+      ]
+    },
+    {
+      "id": "febuxostat:condition:cerebrovascular-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "febuxostat",
+      "condition": "cerebrovascular-disease",
+      "concern": "Pre-existing major cardiovascular disease (e.g. previous stroke)",
+      "consequence": "More fatal cardiovascular events than allopurinol in one trial (CARES); non-inferior in FAST.",
+      "action": "Use cautiously and monitor regularly; NICE: offer allopurinol first line.",
+      "sourceWording": "should be exercised cautiously and they should be monitored regularly",
+      "src": [
+        { "s": "emc-487", "q": "In patients with pre-existing major cardiovascular diseases (e.g. myocardial infarction, stroke or unstable angina)" },
+        { "s": "mhra-dsu-febuxostat-cv-2023", "q": "in patients with pre-existing major cardiovascular diseases, febuxostat therapy should be used cautiously, particularly in those with evidence of high urate crystal and tophi burden or those initiating urate-lowering therapy" },
+        { "s": "nice-ng219", "q": "Offer allopurinol as first-line treatment to people with gout who have major cardiovascular disease (for example, previous myocardial infarction or stroke, or unstable angina)." }
+      ]
+    },
+    {
+      "id": "febuxostat:condition:unstable-angina",
+      "kind": "condition",
+      "level": "caution",
+      "med": "febuxostat",
+      "condition": "unstable-angina",
+      "concern": "Pre-existing major cardiovascular disease (e.g. unstable angina)",
+      "consequence": "More fatal cardiovascular events than allopurinol in one trial (CARES); non-inferior in FAST.",
+      "action": "Use cautiously and monitor regularly; NICE: offer allopurinol first line.",
+      "sourceWording": "should be exercised cautiously and they should be monitored regularly",
+      "src": [
+        { "s": "emc-487", "q": "In patients with pre-existing major cardiovascular diseases (e.g. myocardial infarction, stroke or unstable angina)" },
+        { "s": "mhra-dsu-febuxostat-cv-2023", "q": "in patients with pre-existing major cardiovascular diseases, febuxostat therapy should be used cautiously, particularly in those with evidence of high urate crystal and tophi burden or those initiating urate-lowering therapy" }
+      ]
+    },
+    {
+      "id": "febuxostat:renal:crcl-30",
+      "kind": "renal",
+      "level": "info",
+      "med": "febuxostat",
+      "renal": { "measure": "CrCl", "max": 30 },
+      "concern": "Severe renal impairment (CrCl below 30 mL/min)",
+      "consequence": "Efficacy and safety not fully evaluated; febuxostat AUC about 1.8-fold higher.",
+      "action": "No dose recommendation given; renal impairment was reported in some serious hypersensitivity cases.",
+      "sourceWording": "have not been fully evaluated",
+      "src": [
+        { "s": "emc-487", "q": "The efficacy and safety have not been fully evaluated in patients with severe renal impairment (creatinine clearance <30 mL/min, see section 5.2)." },
+        { "s": "emc-487", "q": "Some, but not all of these patients reported renal impairment and/or previous hypersensitivity to allopurinol." }
+      ]
+    },
+    {
+      "id": "febuxostat:hepatic:mild",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "febuxostat",
+      "hepatic": ["mild"],
+      "concern": "Mild hepatic impairment",
+      "consequence": "Dose limited to 80 mg.",
+      "action": "Use 80 mg.",
+      "sourceWording": "The recommended dose in patients with mild hepatic impairment is 80 mg",
+      "src": [
+        { "s": "emc-487", "q": "The recommended dose in patients with mild hepatic impairment is 80 mg." }
+      ]
+    },
+    {
+      "id": "febuxostat:hepatic:moderate",
+      "kind": "hepatic",
+      "level": "info",
+      "med": "febuxostat",
+      "hepatic": ["moderate"],
+      "concern": "Moderate hepatic impairment",
+      "consequence": "Limited information.",
+      "action": "Limited data; LFTs before and during treatment.",
+      "sourceWording": "Limited information is available",
+      "src": [
+        { "s": "emc-487", "q": "Limited information is available in patients with moderate hepatic impairment." }
+      ]
+    },
+    {
+      "id": "febuxostat:hepatic:severe",
+      "kind": "hepatic",
+      "level": "info",
+      "med": "febuxostat",
+      "hepatic": ["severe"],
+      "concern": "Severe hepatic impairment (Child-Pugh C)",
+      "consequence": "Efficacy and safety not studied.",
+      "action": "Not studied; no dose recommendation.",
+      "sourceWording": "has not been studied",
+      "src": [
+        { "s": "emc-487", "q": "The efficacy and safety of febuxostat has not been studied in patients with severe hepatic impairment (Child Pugh Class C)." }
+      ]
+    },
+    {
+      "id": "febuxostat:condition:acute-gout",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "febuxostat",
+      "condition": "acute-gout-flare",
+      "concern": "Acute gout attack not yet settled",
+      "consequence": "Flares may be triggered at initiation.",
+      "action": "Do not start until the attack has completely settled (do not stop for a flare once on treatment).",
+      "sourceWording": "should not be started until an acute attack of gout has completely subsided",
+      "src": [
+        { "s": "emc-487", "q": "Febuxostat treatment should not be started until an acute attack of gout has completely subsided." }
+      ]
+    },
+    {
+      "id": "febuxostat:condition:high-urate-turnover",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "febuxostat",
+      "condition": "high-urate-turnover",
+      "concern": "Greatly increased urate formation (malignancy and its treatment, Lesch-Nyhan syndrome)",
+      "consequence": "Possible xanthine deposition in the urinary tract; no experience.",
+      "action": "Not recommended.",
+      "sourceWording": "its use in these populations is not recommended",
+      "src": [
+        { "s": "emc-487", "q": "In patients in whom the rate of urate formation is greatly increased (e.g. malignant disease and its treatment, Lesch-Nyhan syndrome)" },
+        { "s": "emc-487", "q": "As there has been no experience with febuxostat, its use in these populations is not recommended." }
+      ]
+    },
+    {
+      "id": "febuxostat:condition:organ-transplant",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "febuxostat",
+      "condition": "solid-organ-transplant",
+      "concern": "Organ transplant recipient",
+      "consequence": "No experience.",
+      "action": "Not recommended.",
+      "sourceWording": "the use of febuxostat in such patients is not recommended",
+      "src": [
+        { "s": "emc-487", "q": "As there has been no experience in organ transplant recipients, the use of febuxostat in such patients is not recommended" }
+      ]
+    },
+    {
+      "id": "febuxostat:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "caution",
+      "med": "febuxostat",
+      "condition": "hypothyroidism",
+      "concern": "Altered thyroid function",
+      "consequence": "Raised TSH in long-term treatment.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution is required",
+      "src": [
+        { "s": "emc-487", "q": "Caution is required when febuxostat is used in patients with alteration of thyroid function" }
+      ]
+    },
+    {
+      "id": "febuxostat:condition:thyrotoxicosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "febuxostat",
+      "condition": "thyrotoxicosis",
+      "concern": "Altered thyroid function",
+      "consequence": "Raised TSH in long-term treatment.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution is required",
+      "src": [
+        { "s": "emc-487", "q": "Caution is required when febuxostat is used in patients with alteration of thyroid function" }
+      ]
+    },
+    {
+      "id": "febuxostat:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "febuxostat",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Tablets contain lactose.",
+      "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        { "s": "emc-487", "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine." }
+      ]
+    },
+    {
+      "id": "febuxostat:pregnancy:avoid",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "febuxostat",
+      "concern": "Pregnancy",
+      "consequence": "Very limited data; human risk unknown.",
+      "action": "Should not be used.",
+      "sourceWording": "Febuxostat should not be used during pregnancy",
+      "src": [
+        { "s": "emc-487", "q": "Febuxostat should not be used during pregnancy." }
+      ]
+    },
+    {
+      "id": "febuxostat:breastfeeding:avoid",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "febuxostat",
+      "concern": "Breastfeeding",
+      "consequence": "Excreted in animal milk with impaired pup development; infant risk cannot be excluded.",
+      "action": "Should not be used.",
+      "sourceWording": "Febuxostat should not be used while breastfeeding",
+      "src": [
+        { "s": "emc-487", "q": "Febuxostat should not be used while breastfeeding." }
+      ]
+    },
+    {
+      "id": "febuxostat:age:under-18",
+      "kind": "age",
+      "level": "info",
+      "med": "febuxostat",
+      "age": { "maxYears": 18 },
+      "concern": "Under 18 years",
+      "consequence": "Safety and efficacy not established; no data.",
+      "action": "Licensed for adults only.",
+      "sourceWording": "have not been established",
+      "src": [
+        { "s": "emc-487", "q": "The safety and the efficacy of ADENURIC in children aged below the age of 18 years have not been established." }
+      ]
+    }
+  ]
+}

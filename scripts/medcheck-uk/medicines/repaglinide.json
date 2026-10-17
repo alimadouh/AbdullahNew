@@ -1,0 +1,323 @@
+{
+  "id": "repaglinide",
+  "name": "Repaglinide",
+  "ingredients": ["repaglinide"],
+  "className": "Short-acting oral insulin secretagogue (meglitinide)",
+  "groups": ["insulin-secretagogue", "antidiabetic", "oral-antidiabetic"],
+  "searchTerms": ["meglitinide", "prandial glucose regulator"],
+  "formulations": [
+    {
+      "id": "repaglinide-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "2 mg",
+      "release": "immediate",
+      "note": "Doses are taken before main meals. The usual starting dose is 0.5 mg.",
+      "src": [
+        { "s": "emc-12974", "q": "Each tablet contains 2.0 mg of repaglinide." },
+        { "s": "emc-15021", "q": "Repaglinide Krka 2 mg tablets" },
+        { "s": "emc-12974", "q": "The recommended starting dose is 0.5 mg." }
+      ],
+      "sourceIds": ["emc-12974", "emc-15021"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "availability": { "status": "uk" },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Type 2 diabetes in adults not controlled by diet, weight reduction and exercise; also with metformin when metformin alone is not enough. Used with diet and exercise to lower mealtime glucose.",
+        "src": [
+          { "s": "emc-12974", "q": "Repaglinide is indicated in adults with type 2 diabetes mellitus whose hyperglycaemia can no longer be controlled satisfactorily by diet, weight reduction and exercise." },
+          { "s": "emc-12974", "q": "Repaglinide is also indicated in combination with metformin in adults with type 2 diabetes mellitus who are not satisfactorily controlled on metformin alone." }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Prescribe only if poor glucose control and symptoms persist despite adequate diet, exercise and weight reduction.",
+        "src": [{ "s": "emc-12974", "q": "Repaglinide should only be prescribed if poor blood glucose control and symptoms of diabetes persist despite adequate attempts at dieting, exercise and weight reduction." }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Start 0.5 mg before main meals (1 mg if transferring from another oral hypoglycaemic). Titrate by blood glucose, with 1 to 2 weeks between steps. Maximum single dose 4 mg with main meals; maximum 16 mg daily.", "tag": "Type 2 diabetes, adults",
+        "src": [
+          { "s": "emc-12974", "q": "The recommended starting dose is 0.5 mg. One to two weeks should elapse between titration steps (as determined by blood glucose response). If patients are transferred from another oral hypoglycaemic medicinal product, the recommended starting dose is 1 mg." },
+          { "s": "emc-12974", "q": "The recommended maximum single dose is 4 mg taken with main meals. The total maximum daily dose should not exceed 16 mg." }
+        ] },
+      { "t": "With metformin: keep the metformin dose; start repaglinide 0.5 mg before main meals and titrate as for monotherapy.", "tag": "Add-on to metformin",
+        "src": [{ "s": "emc-12974", "q": "The starting dose of repaglinide is 0.5 mg, taken before main meals; titration is according to blood glucose response as for monotherapy." }] },
+      { "t": "Debilitated or malnourished: conservative starting and maintenance doses with careful titration.", "tag": "Debilitated or malnourished",
+        "src": [{ "s": "emc-12974", "q": "In debilitated or malnourished patients the initial and maintenance dosage should be conservative and careful dose titration is required to avoid hypoglycaemic reactions." }] },
+      { "t": "Elderly: no clinical studies over 75 years.", "tag": "Elderly", "detail": true,
+        "src": [{ "s": "emc-12974", "q": "No clinical studies have been conducted in patients >75 years of age." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Safety and efficacy below 18 years not established; no data.",
+        "src": [{ "s": "emc-12974", "q": "The safety and efficacy of repaglinide in children below 18 years have not been established. No data are available." }] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to repaglinide or any excipient.",
+        "src": [{ "s": "emc-12974", "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+      { "t": "Type 1 diabetes (C-peptide negative); diabetic ketoacidosis with or without coma.",
+        "src": [{ "s": "emc-12974", "q": "Diabetes mellitus type 1, C-peptide negative Diabetic ketoacidosis, with or without coma" }] },
+      { "t": "Severe hepatic function disorder.",
+        "src": [{ "s": "emc-12974", "q": "Severe hepatic function disorder" }] },
+      { "t": "Concomitant gemfibrozil (repaglinide exposure raised about 8-fold).",
+        "src": [
+          { "s": "emc-12974", "q": "Concomitant use of gemfibrozil (see section 4.5)." },
+          { "s": "emc-12974", "q": "increased the repaglinide AUC 8.1-fold" }
+        ] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Hypoglycaemia (like other insulin secretagogues); risk is higher in combination with metformin.",
+        "src": [
+          { "s": "emc-12974", "q": "Repaglinide like other insulin secretagogues, is capable of producing hypoglycaemia." },
+          { "s": "emc-12974", "q": "Combination treatment with metformin is associated with an increased risk of hypoglycaemia." }
+        ] },
+      { "t": "Stress (fever, trauma, infection, surgery) may cause loss of control; temporary insulin may be needed.",
+        "src": [{ "s": "emc-12974", "q": "At such times, it may be necessary to discontinue repaglinide and treat with insulin on a temporary basis." }] },
+      { "t": "Medicines that affect repaglinide metabolism: use with caution or avoid; if needed, monitor blood glucose and the patient closely.",
+        "src": [{ "s": "emc-12974", "q": "Repaglinide should be used with caution or be avoided in patients receiving medicinal products which influence repaglinide metabolism" }] },
+      { "t": "May be associated with more acute coronary syndrome (e.g. myocardial infarction).", "detail": true,
+        "src": [{ "s": "emc-12974", "q": "The use of repaglinide might be associated with an increased incidence of acute coronary syndrome (e.g. myocardial infarction)" }] },
+      { "t": "Not studied after secondary failure to other secretagogues or in combination with other secretagogues; benefit-risk with NPH insulin or thiazolidinediones not established.", "detail": true,
+        "src": [
+          { "s": "emc-12974", "q": "Trials investigating the combination with other insulin secretagogues have not been performed." },
+          { "s": "emc-12974", "q": "However, the benefit risk profile remains to be established when comparing to other combination therapies." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Gemfibrozil (not in this tool's list): contraindicated.",
+        "src": [{ "s": "emc-12974", "q": "The concomitant use of gemfibrozil and repaglinide is contraindicated" }] },
+      { "t": "Trimethoprim and clopidogrel (CYP2C8 inhibitors): raise repaglinide exposure - avoid; if needed, monitor blood glucose and the patient closely. Also avoid ciclosporin and deferasirox (not in this tool's list).",
+        "src": [
+          { "s": "emc-12974", "q": "the concomitant use of trimethoprim with repaglinide should be avoided. If concomitant use is necessary, careful monitoring of blood glucose and close clinical monitoring should be performed" },
+          { "s": "emc-12974", "q": "the concomitant use of clopidogrel and repaglinide should be avoided. If concomitant use is necessary, careful monitoring of blood glucose and close clinical monitoring should be performed" }
+        ] },
+      { "t": "May enhance or prolong hypoglycaemia: clarithromycin, itraconazole, ketoconazole, other antidiabetics, MAOIs, non-selective beta-blockers, ACE inhibitors, salicylates, NSAIDs, octreotide, alcohol, anabolic steroids.",
+        "src": [{ "s": "emc-12974", "q": "Gemfibrozil, clarithromycin, itraconazole, ketoconazole, trimethoprim, ciclosporin, deferasirox, clopidogrel, other antidiabetic substances, monoamine oxidase inhibitors (MAOI), non selective beta blocking substances" }] },
+      { "t": "Beta-blockers may mask hypoglycaemia symptoms.",
+        "src": [{ "s": "emc-12974", "q": "β-blocking medicinal products may mask the symptoms of hypoglycaemia." }] },
+      { "t": "May reduce the effect: oral contraceptives, rifampicin, barbiturates, carbamazepine, thiazides, corticosteroids, danazol, thyroid hormones, sympathomimetics. Watch glycaemic control closely when starting or stopping them. Rifampicin needs glucose-guided dose adjustment up to about 2 weeks after stopping; other inducers (phenytoin, carbamazepine, phenobarbital, St John's wort) may act similarly.",
+        "src": [
+          { "s": "emc-12974", "q": "Oral contraceptives, rifampicin, barbiturates, carbamazepine, thiazides, corticosteroids, danazol, thyroid hormones and sympathomimetics." },
+          { "s": "emc-12974", "q": "the patient should be observed closely for changes in glycaemic control." },
+          { "s": "emc-12974", "q": "It cannot be excluded that other inducers, e.g. phenytoin, carbamazepine, phenobarbital, St John's wort, may have a similar effect." }
+        ] },
+      { "t": "No relevant effect on digoxin, theophylline or warfarin; cimetidine, nifedipine, oestrogen and simvastatin did not change repaglinide levels.", "detail": true,
+        "src": [
+          { "s": "emc-12974", "q": "Repaglinide had no clinically relevant effect on the pharmacokinetic properties of digoxin, theophylline or warfarin at steady state" },
+          { "s": "emc-12974", "q": "Co-administration of cimetidine, nifedipine, oestrogen, or simvastatin with repaglinide, all CYP3A4 substrates, did not significantly alter the pharmacokinetic parameters of repaglinide." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Not affected by renal disorders (8% renally excreted), but clearance is lower and insulin sensitivity is higher in renal impairment: titrate with caution.",
+        "src": [
+          { "s": "emc-12974", "q": "Repaglinide is not affected by renal disorders" },
+          { "s": "emc-12974", "q": "As insulin sensitivity is increased in diabetic patients with renal impairment, caution is advised when titrating these patients." }
+        ] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Severe hepatic function disorder: contraindicated. No clinical studies in hepatic insufficiency.",
+        "src": [
+          { "s": "emc-12974", "q": "Severe hepatic function disorder" },
+          { "s": "emc-12974", "q": "No clinical studies have been conducted in patients with hepatic insufficiency." }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: no studies in pregnancy; should be avoided.",
+        "src": [{ "s": "emc-12974", "q": "There are no studies of repaglinide in pregnant women. Repaglinide should be avoided during pregnancy." }] },
+      { "t": "BUMPS: treat type 2 diabetes in pregnancy with metformin, plus insulin if needed; repaglinide is avoided as a precaution. With an unplanned pregnancy, keep taking it until reviewed promptly.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "you should carry on with the drug you are taking until your appointment, as uncontrolled diabetes is risky for you and your baby" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: no studies; should not be used in breastfeeding women (found in animal milk).",
+        "src": [
+          { "s": "emc-12974", "q": "There are no studies in breast-feeding women. Repaglinide should not be used in breast-feeding women." },
+          { "s": "emc-12974", "q": "Repaglinide was detected in the milk of animals." }
+        ] },
+      { "t": "SPS: insulin or metformin are the preferred choices; limited or no published information on other antidiabetic medicines.",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding." }
+        ] }
+    ] },
+    "reproductive": { "status": "not-stated", "note": "The UK repaglinide SmPC checked gives no human fertility or contraception advice; section 4.6 refers only to animal data." },
+    "adverseCommon": { "items": [
+      { "t": "Common: hypoglycaemia, abdominal pain, diarrhoea.",
+        "src": [
+          { "s": "emc-12974", "q": "Hypoglycaemia Common" },
+          { "s": "emc-12974", "q": "Abdominal pain, diarrhoea Common" }
+        ] },
+      { "t": "Transient visual (refraction) disturbances when starting, from changes in blood glucose (very rare).", "detail": true,
+        "src": [{ "s": "emc-12974", "q": "Changes in blood glucose levels have been known to result in transient visual disturbances, especially at the commencement of treatment." }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Hypoglycaemic coma or unconsciousness (frequency not known). Severe hypoglycaemia with seizure, loss of consciousness or coma needs intravenous glucose.",
+        "src": [
+          { "s": "emc-12974", "q": "Hypoglycaemic coma and hypoglycaemic unconsciousness Not known" },
+          { "s": "emc-12974", "q": "More severe hypoglycaemia with seizure, loss of consciousness or coma should be treated with intravenous glucose." }
+        ] },
+      { "t": "Generalised allergic reactions (e.g. anaphylaxis) and vasculitis (very rare); severe hepatic dysfunction (very rare); cardiovascular disease (rare).", "detail": true,
+        "src": [
+          { "s": "emc-12974", "q": "Generalised hypersensitivity reactions (e.g. anaphylactic reaction), or immunological reactions such as vasculitis." },
+          { "s": "emc-12974", "q": "In very rare cases, severe hepatic dysfunction has been reported." },
+          { "s": "emc-12974", "q": "Cardiovascular disease Rare" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Patient self-monitoring plus periodic blood glucose by the physician to find the minimum effective dose; HbA1c to check response.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-12974", "q": "the patient's blood glucose must be monitored periodically by the physician to determine the minimum effective dose for the patient." },
+          { "s": "emc-12974", "q": "Glycosylated haemoglobin levels are also of value in monitoring the patient's response to therapy." }
+        ] },
+      { "t": "Periodic review to detect primary or secondary failure.", "tag": "ongoing", "detail": true,
+        "src": [{ "s": "emc-12974", "q": "Periodic monitoring is necessary to detect inadequate lowering of blood glucose at the recommended maximum dose level (i.e. primary failure)" }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Take before main meals, usually within 15 minutes (anywhere from just before to 30 minutes before), 2 to 4 meals a day.",
+        "src": [{ "s": "emc-12974", "q": "Doses are usually taken within 15 minutes of the meal but time may vary from immediately preceding the meal to as long as 30 minutes before the meal (i.e. preprandially 2, 3, or 4 meals a day)." }] },
+      { "t": "Skip a meal, skip the dose; add a meal, add a dose.",
+        "src": [{ "s": "emc-12974", "q": "Patients who skip a meal (or add an extra meal) should be instructed to skip (or add) a dose for that meal." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "One dose per main meal: miss the meal, miss the dose.",
+        "src": [{ "s": "emc-12974", "q": "Patients who skip a meal (or add an extra meal) should be instructed to skip (or add) a dose for that meal." }] },
+      { "t": "Take care to avoid low blood sugar when driving, especially with reduced awareness of warning signs.",
+        "src": [{ "s": "emc-12974", "q": "Patients should be advised to take precautions to avoid hypoglycaemia whilst driving." }] },
+      { "t": "Treat low blood sugar symptoms (dizziness, sweating, tremor, headache) with oral carbohydrate.", "detail": true,
+        "src": [{ "s": "emc-12974", "q": "adequate action should be taken to correct the low blood glucose (oral carbohydrates)." }] }
+    ] }
+  },
+  "rules": [
+    { "id": "repaglinide:allergy:repaglinide", "kind": "allergy", "level": "contraindicated", "med": "repaglinide", "allergen": ["repaglinide"],
+      "concern": "Hypersensitivity to repaglinide", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity to the active substance",
+      "src": [{ "s": "emc-12974", "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+    { "id": "repaglinide:allergy:sulfonylurea", "kind": "allergy", "level": "info", "med": "repaglinide", "allergen": ["group:sulfonylurea"],
+      "concern": "Sulfonylurea allergy", "consequence": "SmPC: no reason to suspect cross-allergenicity (different chemical structure).", "action": "Sulfonylurea allergy is not a stated reason to avoid repaglinide.", "sourceWording": "There is no reason to suspect cross-allergenicity",
+      "src": [{ "s": "emc-12974", "q": "There is no reason to suspect cross-allergenicity with sulphonylurea due to the difference in chemical structure." }] },
+    { "id": "repaglinide:condition:type-1-diabetes", "kind": "condition", "level": "contraindicated", "med": "repaglinide", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes (C-peptide negative)", "consequence": "Needs functioning beta-cells to work.", "action": "Do not use.", "sourceWording": "Contraindications ... Diabetes mellitus type 1, C-peptide negative",
+      "src": [{ "s": "emc-12974", "q": "Diabetes mellitus type 1, C-peptide negative Diabetic ketoacidosis, with or without coma" }] },
+    { "id": "repaglinide:condition:dka", "kind": "condition", "level": "contraindicated", "med": "repaglinide", "condition": "diabetic-ketoacidosis",
+      "concern": "Diabetic ketoacidosis, with or without coma", "consequence": "Contraindicated.", "action": "Do not use.", "sourceWording": "Contraindications ... Diabetic ketoacidosis",
+      "src": [{ "s": "emc-12974", "q": "Diabetes mellitus type 1, C-peptide negative Diabetic ketoacidosis, with or without coma" }] },
+    { "id": "repaglinide:hepatic:severe", "kind": "hepatic", "level": "contraindicated", "med": "repaglinide", "hepatic": ["severe"],
+      "concern": "Severe hepatic function disorder", "consequence": "Contraindicated.", "action": "Do not use.", "sourceWording": "Contraindications ... Severe hepatic function disorder",
+      "src": [{ "s": "emc-12974", "q": "Severe hepatic function disorder" }] },
+    { "id": "repaglinide:hepatic:mild-moderate", "kind": "hepatic", "level": "info", "med": "repaglinide", "hepatic": ["mild", "moderate"],
+      "concern": "Hepatic insufficiency (not severe)", "consequence": "No clinical studies.", "action": "No specific advice in the SmPC; severe impairment is contraindicated.", "sourceWording": "No clinical studies have been conducted",
+      "src": [{ "s": "emc-12974", "q": "No clinical studies have been conducted in patients with hepatic insufficiency." }] },
+    { "id": "repaglinide:condition:renal-impairment", "kind": "condition", "level": "caution", "med": "repaglinide", "condition": "renal-impairment",
+      "concern": "Renal impairment", "consequence": "Lower clearance and higher insulin sensitivity.", "action": "Caution when titrating.", "sourceWording": "caution is advised when titrating",
+      "src": [{ "s": "emc-12974", "q": "As insulin sensitivity is increased in diabetic patients with renal impairment, caution is advised when titrating these patients." }] },
+    { "id": "repaglinide:condition:malnutrition", "kind": "condition", "level": "dose", "med": "repaglinide", "condition": "malnutrition",
+      "concern": "Debilitated or malnourished", "consequence": "Higher hypoglycaemia risk.", "action": "Conservative starting and maintenance doses; careful titration.", "sourceWording": "dosage should be conservative",
+      "src": [{ "s": "emc-12974", "q": "In debilitated or malnourished patients the initial and maintenance dosage should be conservative and careful dose titration is required to avoid hypoglycaemic reactions." }] },
+    { "id": "repaglinide:condition:alcohol", "kind": "condition", "level": "info", "med": "repaglinide", "condition": "alcohol-dependence",
+      "concern": "Alcohol use", "consequence": "Alcohol may enhance and/or prolong the hypoglycaemic effect of repaglinide.", "action": "Be alert to hypoglycaemia.", "sourceWording": "may enhance and/or prolong the hypoglycaemic effect",
+      "src": [
+        { "s": "emc-12974", "q": "The following substances may enhance and/or prolong the hypoglycaemic effect of repaglinide" },
+        { "s": "emc-12974", "q": "salicylates, NSAIDs, octreotide, alcohol, and anabolic steroids." }
+      ] },
+    { "id": "repaglinide:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "repaglinide",
+      "concern": "Pregnancy", "consequence": "No studies in pregnant women.", "action": "Should be avoided. BUMPS: use metformin, with insulin if needed.", "sourceWording": "should be avoided during pregnancy",
+      "src": [
+        { "s": "emc-12974", "q": "Repaglinide should be avoided during pregnancy." },
+        { "s": "bumps-antidiabetic-drugs", "q": "As a precaution, they are avoided in pregnancy." }
+      ] },
+    { "id": "repaglinide:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "repaglinide",
+      "concern": "Breastfeeding", "consequence": "No studies; found in animal milk.", "action": "Should not be used. SPS: insulin or metformin are preferred.", "sourceWording": "should not be used in breast-feeding women",
+      "src": [
+        { "s": "emc-12974", "q": "Repaglinide should not be used in breast-feeding women." },
+        { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." }
+      ] },
+    { "id": "repaglinide:age:lt18", "kind": "age", "level": "info", "med": "repaglinide", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years", "consequence": "Safety and efficacy not established; no data.", "action": "Not licensed under 18 years.", "sourceWording": "have not been established",
+      "src": [{ "s": "emc-12974", "q": "The safety and efficacy of repaglinide in children below 18 years have not been established. No data are available." }] },
+    { "id": "repaglinide:age:gt75", "kind": "age", "level": "info", "med": "repaglinide", "age": { "minYears": 75 },
+      "concern": "Over 75 years", "consequence": "No clinical studies over 75 years.", "action": "Be aware of the lack of data.", "sourceWording": "No clinical studies have been conducted",
+      "src": [{ "s": "emc-12974", "q": "No clinical studies have been conducted in patients >75 years of age." }] },
+    { "id": "repaglinide:interaction:trimethoprim", "kind": "interaction", "level": "avoid", "med": "repaglinide", "other": "trimethoprim", "effect": "hypoglycaemia",
+      "concern": "Repaglinide + trimethoprim", "consequence": "Trimethoprim (CYP2C8 inhibitor) raises repaglinide exposure; safety at usual doses not established.", "action": "Avoid; if necessary, careful blood glucose and close clinical monitoring.", "sourceWording": "should be avoided",
+      "src": [{ "s": "emc-12974", "q": "the concomitant use of trimethoprim with repaglinide should be avoided. If concomitant use is necessary, careful monitoring of blood glucose and close clinical monitoring should be performed" }] },
+    { "id": "repaglinide:interaction:clopidogrel", "kind": "interaction", "level": "avoid", "med": "repaglinide", "other": "clopidogrel", "effect": "hypoglycaemia",
+      "concern": "Repaglinide + clopidogrel", "consequence": "Clopidogrel (CYP2C8 inhibitor) raised repaglinide exposure about 4- to 5-fold, with lower blood glucose.", "action": "Avoid; if necessary, careful blood glucose and close clinical monitoring.", "sourceWording": "should be avoided",
+      "src": [
+        { "s": "emc-12974", "q": "continued administration (75 mg daily dose) increased repaglinide exposure (AUC0-∞) 3.9-fold" },
+        { "s": "emc-12974", "q": "the concomitant use of clopidogrel and repaglinide should be avoided. If concomitant use is necessary, careful monitoring of blood glucose and close clinical monitoring should be performed" }
+      ] },
+    { "id": "repaglinide:interaction:clarithromycin", "kind": "interaction", "level": "caution", "med": "repaglinide", "other": "clarithromycin", "effect": "hypoglycaemia",
+      "concern": "Repaglinide + clarithromycin", "consequence": "Clarithromycin (CYP3A4 inhibitor) increased repaglinide levels and insulin response; may enhance or prolong hypoglycaemia.", "action": "Use with caution or avoid; if used, monitor blood glucose and the patient closely.", "sourceWording": "should be used with caution or be avoided",
+      "src": [
+        { "s": "emc-12974", "q": "Gemfibrozil, clarithromycin, itraconazole, ketoconazole, trimethoprim" },
+        { "s": "emc-12974", "q": "Repaglinide should be used with caution or be avoided in patients receiving medicinal products which influence repaglinide metabolism" },
+        { "s": "emc-12974", "q": "If concomitant use is necessary, careful monitoring of blood glucose and close clinical monitoring should be performed." }
+      ] },
+    { "id": "repaglinide:interaction:antidiabetic", "kind": "interaction", "level": "info", "med": "repaglinide", "other": "group:antidiabetic", "effect": "hypoglycaemia",
+      "concern": "Repaglinide + other antidiabetic medicine", "consequence": "May enhance and/or prolong hypoglycaemia.", "action": "Be alert to hypoglycaemia.", "sourceWording": "may enhance and/or prolong the hypoglycaemic effect",
+      "src": [{ "s": "emc-12974", "q": "ciclosporin, deferasirox, clopidogrel, other antidiabetic substances, monoamine oxidase inhibitors (MAOI)" }] },
+    { "id": "repaglinide:interaction:biguanide", "kind": "interaction", "level": "info", "med": "repaglinide", "other": "group:biguanide", "effect": "hypoglycaemia",
+      "concern": "Repaglinide + metformin", "consequence": "Combination is associated with a higher risk of hypoglycaemia.", "action": "Keep the metformin dose; start repaglinide at 0.5 mg and titrate.", "sourceWording": "associated with an increased risk of hypoglycaemia",
+      "src": [
+        { "s": "emc-12974", "q": "Combination treatment with metformin is associated with an increased risk of hypoglycaemia." },
+        { "s": "emc-12974", "q": "The starting dose of repaglinide is 0.5 mg, taken before main meals" }
+      ] },
+    { "id": "repaglinide:interaction:beta-blocker", "kind": "interaction", "level": "info", "med": "repaglinide", "other": "group:beta-blocker", "effect": "hypoglycaemia",
+      "concern": "Repaglinide + beta-blocker", "consequence": "Non-selective beta-blockers may enhance hypoglycaemia; any beta-blocker may mask its symptoms.", "action": "Be alert to hypoglycaemia that may be masked.", "sourceWording": "may mask the symptoms of hypoglycaemia",
+      "src": [
+        { "s": "emc-12974", "q": "non selective beta blocking substances" },
+        { "s": "emc-12974", "q": "β-blocking medicinal products may mask the symptoms of hypoglycaemia." }
+      ] },
+    { "id": "repaglinide:interaction:ace-inhibitor", "kind": "interaction", "level": "info", "med": "repaglinide", "other": "group:ace-inhibitor", "effect": "hypoglycaemia",
+      "concern": "Repaglinide + ACE inhibitor", "consequence": "May enhance and/or prolong hypoglycaemia.", "action": "Be alert to hypoglycaemia.", "sourceWording": "may enhance and/or prolong the hypoglycaemic effect",
+      "src": [{ "s": "emc-12974", "q": "angiotensin converting enzyme (ACE)-inhibitors, salicylates, NSAIDs, octreotide, alcohol, and anabolic steroids." }] },
+    { "id": "repaglinide:interaction:salicylate", "kind": "interaction", "level": "info", "med": "repaglinide", "other": "group:salicylate", "effect": "hypoglycaemia",
+      "concern": "Repaglinide + salicylate", "consequence": "May enhance and/or prolong hypoglycaemia.", "action": "Be alert to hypoglycaemia.", "sourceWording": "may enhance and/or prolong the hypoglycaemic effect",
+      "src": [{ "s": "emc-12974", "q": "angiotensin converting enzyme (ACE)-inhibitors, salicylates, NSAIDs, octreotide, alcohol, and anabolic steroids." }] },
+    { "id": "repaglinide:interaction:nsaid", "kind": "interaction", "level": "info", "med": "repaglinide", "other": "group:nsaid", "effect": "hypoglycaemia",
+      "concern": "Repaglinide + NSAID", "consequence": "May enhance and/or prolong hypoglycaemia.", "action": "Be alert to hypoglycaemia.", "sourceWording": "may enhance and/or prolong the hypoglycaemic effect",
+      "src": [{ "s": "emc-12974", "q": "angiotensin converting enzyme (ACE)-inhibitors, salicylates, NSAIDs, octreotide, alcohol, and anabolic steroids." }] },
+    { "id": "repaglinide:interaction:thiazide", "kind": "interaction", "level": "monitor", "med": "repaglinide", "other": "group:thiazide",
+      "concern": "Repaglinide + thiazide", "consequence": "May reduce the glucose-lowering effect.", "action": "Observe glycaemic control closely when starting or stopping.", "sourceWording": "should be observed closely for changes in glycaemic control",
+      "src": [
+        { "s": "emc-12974", "q": "Oral contraceptives, rifampicin, barbiturates, carbamazepine, thiazides, corticosteroids, danazol, thyroid hormones and sympathomimetics." },
+        { "s": "emc-12974", "q": "the patient should be observed closely for changes in glycaemic control." }
+      ] },
+    { "id": "repaglinide:interaction:corticosteroid", "kind": "interaction", "level": "monitor", "med": "repaglinide", "other": "group:corticosteroid",
+      "concern": "Repaglinide + corticosteroid", "consequence": "May reduce the glucose-lowering effect.", "action": "Observe glycaemic control closely when starting or stopping.", "sourceWording": "should be observed closely for changes in glycaemic control",
+      "src": [
+        { "s": "emc-12974", "q": "Oral contraceptives, rifampicin, barbiturates, carbamazepine, thiazides, corticosteroids, danazol, thyroid hormones and sympathomimetics." },
+        { "s": "emc-12974", "q": "the patient should be observed closely for changes in glycaemic control." }
+      ] },
+    { "id": "repaglinide:interaction:thyroid-hormone", "kind": "interaction", "level": "monitor", "med": "repaglinide", "other": "group:thyroid-hormone",
+      "concern": "Repaglinide + thyroid hormone", "consequence": "May reduce the glucose-lowering effect.", "action": "Observe glycaemic control closely when starting or stopping.", "sourceWording": "should be observed closely for changes in glycaemic control",
+      "src": [
+        { "s": "emc-12974", "q": "Oral contraceptives, rifampicin, barbiturates, carbamazepine, thiazides, corticosteroids, danazol, thyroid hormones and sympathomimetics." },
+        { "s": "emc-12974", "q": "the patient should be observed closely for changes in glycaemic control." }
+      ] },
+    { "id": "repaglinide:interaction:sympathomimetic", "kind": "interaction", "level": "monitor", "med": "repaglinide", "other": "group:sympathomimetic",
+      "concern": "Repaglinide + sympathomimetic", "consequence": "May reduce the glucose-lowering effect.", "action": "Observe glycaemic control closely when starting or stopping.", "sourceWording": "should be observed closely for changes in glycaemic control",
+      "src": [
+        { "s": "emc-12974", "q": "Oral contraceptives, rifampicin, barbiturates, carbamazepine, thiazides, corticosteroids, danazol, thyroid hormones and sympathomimetics." },
+        { "s": "emc-12974", "q": "the patient should be observed closely for changes in glycaemic control." }
+      ] },
+    { "id": "repaglinide:interaction:carbamazepine", "kind": "interaction", "level": "caution", "med": "repaglinide", "other": "carbamazepine",
+      "concern": "Repaglinide + carbamazepine", "consequence": "Enzyme induction may reduce the glucose-lowering effect.", "action": "Use with caution or avoid (enzyme inducer influencing repaglinide metabolism); if used, monitor blood glucose closely when starting, during and after stopping; dose adjustment may be needed.", "sourceWording": "should be used with caution or be avoided",
+      "src": [
+        { "s": "emc-12974", "q": "Oral contraceptives, rifampicin, barbiturates, carbamazepine, thiazides, corticosteroids, danazol, thyroid hormones and sympathomimetics." },
+        { "s": "emc-12974", "q": "the patient should be observed closely for changes in glycaemic control." },
+        { "s": "emc-12974", "q": "Repaglinide should be used with caution or be avoided in patients receiving medicinal products which influence repaglinide metabolism" },
+        { "s": "emc-12974", "q": "If concomitant use is necessary, careful monitoring of blood glucose and close clinical monitoring should be performed." }
+      ] },
+    { "id": "repaglinide:interaction:st-johns-wort", "kind": "interaction", "level": "caution", "med": "repaglinide", "other": "st-johns-wort",
+      "concern": "Repaglinide + St John's wort", "consequence": "Enzyme inducer: may reduce repaglinide effect, as with rifampicin.", "action": "Use with caution or avoid (enzyme inducer influencing repaglinide metabolism); if used, monitor blood glucose closely when starting, during and after stopping; dose adjustment may be needed.", "sourceWording": "should be used with caution or be avoided",
+      "src": [
+        { "s": "emc-12974", "q": "It cannot be excluded that other inducers, e.g. phenytoin, carbamazepine, phenobarbital, St John's wort, may have a similar effect." },
+        { "s": "emc-12974", "q": "Concomitant use of rifampicin and repaglinide might therefore induce a need for repaglinide dose adjustment which should be based on carefully monitored blood glucose concentrations" },
+        { "s": "emc-12974", "q": "Repaglinide should be used with caution or be avoided in patients receiving medicinal products which influence repaglinide metabolism" },
+        { "s": "emc-12974", "q": "If concomitant use is necessary, careful monitoring of blood glucose and close clinical monitoring should be performed." }
+      ] }
+  ]
+}

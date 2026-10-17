@@ -1276,6 +1276,69 @@
           "q": "If the duration of penicillin is short (up to 10 days), consider using with caution and advise to monitor for signs of toxicity."
         }
       ]
+    },
+    {
+      "id": "amoxicillin:interaction:allopurinol",
+      "kind": "interaction",
+      "med": "amoxicillin",
+      "level": "info",
+      "other": "allopurinol",
+      "concern": "Allopurinol",
+      "consequence": "Allergic skin reactions are more likely.",
+      "action": "Be aware (no specific action stated).",
+      "sourceWording": "can increase the likelihood of allergic skin reactions",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Concurrent administration of allopurinol during treatment with amoxicillin can increase the likelihood of allergic skin reactions."
+        },
+        {
+          "s": "emc-14146",
+          "q": "Concurrent administration of allopurinol during treatment with amoxicillin can increase the likelihood of allergic skin reactions."
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:interaction:tetracycline",
+      "kind": "interaction",
+      "med": "amoxicillin",
+      "level": "info",
+      "other": "group:tetracycline",
+      "concern": "Tetracyclines (e.g. doxycycline)",
+      "consequence": "Bacteriostatic tetracyclines may interfere with the bactericidal effect of amoxicillin.",
+      "action": "Be aware (no specific action stated).",
+      "sourceWording": "may interfere with the bactericidal effects of amoxicillin",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Tetracyclines and other bacteriostatic drugs may interfere with the bactericidal effects of amoxicillin."
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin:interaction:loperamide",
+      "kind": "interaction",
+      "med": "amoxicillin",
+      "level": "caution",
+      "other": "loperamide",
+      "concern": "Loperamide (anti-peristaltic) if antibiotic-associated colitis develops",
+      "consequence": "Antibiotic-associated colitis can occur; anti-peristaltic medicines are contraindicated in that situation.",
+      "action": "If colitis is suspected (severe or persistent diarrhoea): stop amoxicillin, consult a physician, and do not give loperamide or other anti-peristaltic medicines.",
+      "sourceWording": "Anti-peristaltic medicinal products are contra-indicated in this situation",
+      "src": [
+        {
+          "s": "emc-526",
+          "q": "Should antibiotic-associated colitis occur, amoxicillin should immediately be discontinued, a physician consulted and an appropriate therapy initiated."
+        },
+        {
+          "s": "emc-526",
+          "q": "Anti-peristaltic medicinal products are contra-indicated in this situation."
+        },
+        {
+          "s": "emc-558",
+          "q": "Imodium must not be used when inhibition of peristalsis is to be avoided"
+        }
+      ]
     }
   ]
 }

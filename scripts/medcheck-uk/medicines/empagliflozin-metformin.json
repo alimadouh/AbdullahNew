@@ -1,0 +1,498 @@
+{
+  "id": "empagliflozin-metformin",
+  "name": "Empagliflozin/metformin",
+  "ingredients": ["empagliflozin", "metformin"],
+  "className": "Combination oral blood glucose-lowering drug (SGLT2 inhibitor + biguanide)",
+  "groups": ["sglt2-inhibitor", "biguanide", "antidiabetic", "oral-antidiabetic"],
+  "searchTerms": ["empagliflozin and metformin", "empagliflozin metformin hydrochloride"],
+  "formulations": [
+    {
+      "id": "empagliflozin-metformin-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "5 mg/850 mg, 5 mg/1000 mg, 12.5 mg/850 mg, 12.5 mg/1000 mg",
+      "release": "immediate",
+      "src": [
+        { "s": "emc-11421", "q": "Synjardy 5 mg/1 000 mg film-coated tablets Each tablet contains 5 mg empagliflozin and 1 000 mg metformin hydrochloride." },
+        { "s": "emc-11421", "q": "Synjardy 12.5 mg/1 000 mg film-coated tablets Each tablet contains 12.5 mg empagliflozin and 1 000 mg metformin hydrochloride." },
+        { "s": "emc-11421", "q": "Synjardy 5 mg/850 mg film-coated tablets Each tablet contains 5 mg empagliflozin and 850 mg metformin hydrochloride." }
+      ],
+      "sourceIds": ["emc-11421"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "availability": { "status": "uk" },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Type 2 diabetes in adults and children aged 10 years and over, with diet and exercise: not controlled on maximally tolerated metformin alone; with other diabetes medicines when not controlled on metformin plus those; or to replace separate empagliflozin and metformin tablets.",
+        "src": [
+          { "s": "emc-11421", "q": "Synjardy is indicated in adults and children aged 10 years and above for the treatment of type 2 diabetes mellitus as an adjunct to diet and exercise" },
+          { "s": "emc-11421", "q": "in patients insufficiently controlled on their maximally tolerated dose of metformin alone" },
+          { "s": "emc-11421", "q": "in patients already being treated with the combination of empagliflozin and metformin as separate tablets." }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Should not be used in type 1 diabetes.",
+        "src": [{ "s": "emc-11421", "q": "Synjardy should not be used in patients with type 1 diabetes." }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "One tablet twice daily with meals. Start with empagliflozin 5 mg twice daily (10 mg/day) plus the metformin dose already taken; if tolerated and more control is needed, increase to empagliflozin 12.5 mg twice daily (25 mg/day). Do not exceed the maximum metformin dose.", "tag": "Type 2 diabetes, adults (eGFR ≥ 90 mL/min/1.73 m²)",
+        "src": [
+          { "s": "emc-11421", "q": "The recommended dose is one tablet twice daily." },
+          { "s": "emc-11421", "q": "the recommended starting dose of Synjardy should provide empagliflozin 5 mg twice daily (10 mg daily dose) and the dose of metformin similar to the dose already being taken." },
+          { "s": "emc-11421", "q": "In patients tolerating a total daily dose of empagliflozin 10 mg and who need tighter glycaemic control, the dose can be increased to a total daily dose of empagliflozin 25 mg." }
+        ] },
+      { "t": "With a sulfonylurea and/or insulin: a lower dose of these may be needed to reduce hypoglycaemia.", "tag": "With sulfonylurea or insulin",
+        "src": [{ "s": "emc-11421", "q": "When Synjardy is used in combination with a sulphonylurea and/or insulin, a lower dose of sulphonylurea and/or insulin may be required to reduce the risk of hypoglycemia" }] },
+      { "t": "Switching from separate tablets: same daily doses of empagliflozin (10 or 25 mg) and metformin, or nearest suitable metformin dose.", "tag": "Switching from separate tablets", "detail": true,
+        "src": [{ "s": "emc-11421", "q": "Patients switching from separate tablets of empagliflozin (10 mg or 25 mg total daily dose) and metformin to Synjardy should receive the same daily dose of empagliflozin and metformin already being taken" }] },
+      { "t": "Missed dose: take when remembered, but not two doses at the same time; otherwise skip it.", "tag": "Missed dose", "detail": true,
+        "src": [{ "s": "emc-11421", "q": "If a dose is missed, it should be taken as soon as the patient remembers; however, a double dose should not be taken on the same time. In that case, the missed dose should be skipped." }] },
+      { "t": "Elderly: use with caution (renal function more often reduced); monitor renal function; at 75 and over consider volume depletion risk.", "tag": "Elderly",
+        "src": [
+          { "s": "emc-11421", "q": "Synjardy should be used with caution in these patients." },
+          { "s": "emc-11421", "q": "In patients 75 years and older, an increased risk for volume depletion should be taken into account" }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Children 10 years and over (type 2 diabetes): keep the existing metformin dose; start empagliflozin 5 mg twice daily, increase to 12.5 mg twice daily if tolerated and needed. Maximum 25 mg empagliflozin and 2000 mg metformin daily. No data under 10 years or with eGFR < 60 mL/min/1.73 m².",
+        "src": [
+          { "s": "emc-11421", "q": "The recommended empagliflozin starting dose is 5 mg twice daily (10 mg total daily doses)." },
+          { "s": "emc-11421", "q": "The maximum recommended daily dose of Synjardy is 25 mg of empagliflozin and 2 000 mg of metformin" },
+          { "s": "emc-11421", "q": "No data are available for children with eGFR < 60 mL/min/1.73 m² and children below 10 years of age." }
+        ] },
+      { "t": "Aged 10 to 12: particular caution (few studied). Follow growth and puberty, especially before puberty.",
+        "src": [
+          { "s": "emc-11421", "q": "particular caution is recommended when prescribing to children aged between 10 and 12 years." },
+          { "s": "emc-11421", "q": "a careful follow-up of the effect of metformin on these parameters in metformin-treated children, especially prepubescent children, is recommended." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to empagliflozin, metformin or any excipient.",
+        "src": [{ "s": "emc-11421", "q": "4.3 Contraindications Hypersensitivity to the active substances or to any of the excipients listed in section 6.1." }] },
+      { "t": "Any acute metabolic acidosis (e.g. lactic acidosis, diabetic ketoacidosis); diabetic pre-coma.",
+        "src": [{ "s": "emc-11421", "q": "Any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis) (see section 4.4). Diabetic pre-coma." }] },
+      { "t": "Severe renal failure (eGFR < 30 mL/min/1.73 m²).",
+        "src": [{ "s": "emc-11421", "q": "Severe renal failure (eGFR < 30 mL/min/1.73 m2)" }] },
+      { "t": "Acute conditions that may alter renal function: dehydration, severe infection, shock.",
+        "src": [{ "s": "emc-11421", "q": "Acute conditions with the potential to alter renal function such as: dehydration, severe infection, shock" }] },
+      { "t": "Disease that may cause tissue hypoxia: decompensated heart failure, respiratory failure, recent myocardial infarction, shock.",
+        "src": [{ "s": "emc-11421", "q": "decompensated heart failure, respiratory failure, recent myocardial infarction, shock" }] },
+      { "t": "Hepatic impairment; acute alcohol intoxication, alcoholism.",
+        "src": [{ "s": "emc-11421", "q": "Hepatic impairment, acute alcohol intoxication, alcoholism (see sections 4.2 and 4.5)." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Lactic acidosis (metformin; very rare, serious): risk rises with acute worsening of renal function, cardiorespiratory illness or sepsis. Stop metformin temporarily in dehydration. Start antihypertensives, diuretics and NSAIDs with caution.",
+        "src": [
+          { "s": "emc-11421", "q": "In case of dehydration (severe diarrhoea or vomiting, fever or reduced fluid intake), metformin should be temporarily discontinued and contact with a health care professional is recommended." },
+          { "s": "emc-11421", "q": "Medicinal products that can acutely impair renal function (such as antihypertensives, diuretics and NSAIDs) should be initiated with caution in metformin-treated patients." }
+        ] },
+      { "t": "Diabetic ketoacidosis (empagliflozin; rare, can be fatal, may occur with glucose below 14 mmol/L): assess at once if symptoms; stop immediately if suspected. Interrupt when hospitalised for major surgery or acute serious illness and monitor ketones. Restarting after DKA on an SGLT2 inhibitor is not recommended unless another clear cause was resolved. Caution in higher-risk patients.",
+        "src": [
+          { "s": "emc-11421", "q": "In patients where DKA is suspected or diagnosed, treatment with empagliflozin should be discontinued immediately." },
+          { "s": "emc-11421", "q": "Treatment should be interrupted in patients who are hospitalised for major surgical procedures or acute serious medical illnesses. Monitoring of ketones is recommended in these patients." },
+          { "s": "emc-11421", "q": "Restarting SGLT2 inhibitor treatment in patients with previous DKA while on SGLT2 inhibitor treatment is not recommended, unless another clear precipitating factor is identified and resolved." }
+        ] },
+      { "t": "Heart failure: stable chronic heart failure - may be used with regular monitoring of cardiac and renal function. Acute and unstable heart failure - contraindicated (metformin).",
+        "src": [
+          { "s": "emc-11421", "q": "In patients with stable chronic heart failure, Synjardy may be used with a regular monitoring of cardiac and renal function." },
+          { "s": "emc-11421", "q": "For patients with acute and unstable heart failure, Synjardy is contraindicated due to the metformin component" }
+        ] },
+      { "t": "Surgery under general, spinal or epidural anaesthesia: stop metformin at the time of surgery; restart no earlier than 48 hours after, once renal function is re-checked and stable. Iodinated contrast: stop before or at imaging; restart at least 48 hours after.",
+        "src": [
+          { "s": "emc-11421", "q": "Metformin must be discontinued at the time of surgery under general, spinal or epidural anaesthesia." },
+          { "s": "emc-11421", "q": "Metformin should be discontinued prior to or at the time of the imaging procedure and not restarted until at least 48 hours after, provided that renal function has been re-evaluated and found to be stable" }
+        ] },
+      { "t": "Volume depletion: caution in known cardiovascular disease, antihypertensive users with a history of hypotension, and age 75 and over. In illness with fluid loss monitor volume status and electrolytes; consider interrupting until corrected.",
+        "src": [
+          { "s": "emc-11421", "q": "caution should be exercised in patients for whom a empagliflozin-induced drop in blood pressure could pose a risk, such as patients with known cardiovascular disease, patients on anti-hypertensive therapy with a history of hypotension or patients aged 75 years and older" },
+          { "s": "emc-11421", "q": "Temporary interruption of treatment with Synjardy should be considered until the fluid loss is corrected." }
+        ] },
+      { "t": "Complicated urinary tract infection: consider temporary interruption. Fournier's gangrene: if suspected, stop and treat urgently.",
+        "src": [
+          { "s": "emc-11421", "q": "Temporary interruption of treatment should be considered in patients with complicated urinary tract infections." },
+          { "s": "emc-11421", "q": "If Fournier's gangrene is suspected, Synjardy should be discontinued and prompt treatment (including antibiotics and surgical debridement) should be instituted." }
+        ] },
+      { "t": "Mitochondrial disease (MELAS, MIDD): metformin not recommended; withdraw immediately if suggestive signs appear.",
+        "src": [{ "s": "emc-11421", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease." }] },
+      { "t": "Vitamin B12 may fall: check if deficiency is suspected; consider periodic checks in those at risk.",
+        "src": [
+          { "s": "emc-11421", "q": "In case of suspicion of vitamin B12 deficiency (such as anaemia or neuropathy), vitamin B12 serum levels should be monitored." },
+          { "s": "emc-11421", "q": "Periodic vitamin B12 monitoring could be necessary in patients with risk factors for vitamin B12 deficiency." }
+        ] },
+      { "t": "Lower limb amputation seen with another SGLT2 inhibitor: counsel on foot care. Hepatic injury reported (causal link not established). Raised haematocrit: investigate pronounced rises. Urine glucose tests will be positive.", "detail": true,
+        "src": [
+          { "s": "emc-11421", "q": "Like for all diabetic patients it is important to counsel patients on routine preventative foot-care." },
+          { "s": "emc-11421", "q": "Cases of hepatic injury have been reported with empagliflozin in clinical trials." },
+          { "s": "emc-11421", "q": "patients taking Synjardy will test positive for glucose in their urine." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Thiazide and loop diuretics: may add to the diuretic effect (dehydration, hypotension).",
+        "src": [{ "s": "emc-11421", "q": "Empagliflozin may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and hypotension" }] },
+      { "t": "Insulin and insulin secretagogues (e.g. sulfonylureas): a lower dose of these may be needed.",
+        "src": [{ "s": "emc-11421", "q": "a lower dose of insulin or an insulin secretagogue may be required to reduce the risk of hypoglycaemia when used in combination with empagliflozin" }] },
+      { "t": "NSAIDs (including COX-2 inhibitors), ACE inhibitors, angiotensin II receptor antagonists and diuretics (especially loop): may impair renal function and raise lactic acidosis risk - close monitoring of renal function is necessary.",
+        "src": [
+          { "s": "emc-11421", "q": "Some medicinal products can adversely affect renal function which may increase the risk of lactic acidosis, e.g. NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors, ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics." },
+          { "s": "emc-11421", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+        ] },
+      { "t": "Glucocorticoids (systemic and local), beta-2 agonists and diuretics raise glucose: inform the patient, monitor glucose more often, adjust dose during and after.",
+        "src": [
+          { "s": "emc-11421", "q": "Glucocorticoids (given by systemic and local routes), beta 2 agonists, and diuretics have intrinsic hyperglycaemic activity." },
+          { "s": "emc-11421", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+        ] },
+      { "t": "OCT inhibitors: OCT2 inhibitors (e.g. trimethoprim, cimetidine, dolutegravir, ranolazine) may raise metformin levels; OCT1 inhibitors (e.g. verapamil) may reduce metformin efficacy. Caution, especially in renal impairment; consider metformin dose adjustment.",
+        "src": [
+          { "s": "emc-11421", "q": "Co-administration of metformin with Inhibitors of OCT1 (such as verapamil) may reduce efficacy of metformin." },
+          { "s": "emc-11421", "q": "Inhibitors of OCT2 (such as cimetidine, dolutegravir, ranolazine, trimethoprim, vandetanib, isavuconazole) may decrease the renal elimination of metformin" },
+          { "s": "emc-11421", "q": "Caution is therefore advised, especially in patients with renal impairment, when these drugs are co-administered with metformin, as metformin plasma concentration may increase." }
+        ] },
+      { "t": "Age 75 and over: special attention to fluid intake with medicines that may cause volume depletion (e.g. diuretics, ACE inhibitors).",
+        "src": [{ "s": "emc-11421", "q": "special attention should be given to their volume intake in case of co-administered medicinal products which may lead to volume depletion (e.g. diuretics, ACE inhibitors)" }] },
+      { "t": "Alcohol: concomitant use not recommended (lactic acidosis). UGT inducers (e.g. rifampicin, phenytoin): co-treatment not recommended. Lithium levels may fall: monitor more often (these are not in this tool's list).", "detail": true,
+        "src": [
+          { "s": "emc-11421", "q": "Alcohol intoxication is associated with an increased risk of lactic acidosis, particularly in cases of fasting, malnutrition or hepatic impairment." },
+          { "s": "emc-11421", "q": "Co-treatment with known inducers of UGT enzymes is not recommended due to a potential risk of decreased efficacy." },
+          { "s": "emc-11421", "q": "Serum concentration of lithium should be monitored more frequently after empagliflozin initiation and dose changes." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Check eGFR before starting and at least annually; every 3 to 6 months in the elderly or if renal function may decline. The SmPC table uses eGFR (mL/min/1.73 m²) or CrCl (mL/min). If no suitable fixed-dose strength, use the single medicines.",
+        "src": [
+          { "s": "emc-11421", "q": "A eGFR should be assessed before initiation of treatment with metformin containing products and at least annually thereafter." },
+          { "s": "emc-11421", "q": "If no adequate strength of Synjardy is available, individual monocomponents should be used instead of the fixed dose combination." }
+        ] },
+      { "t": "eGFR ≥ 60: metformin max 3000 mg/day (consider reduction as function declines); empagliflozin start 10 mg, may increase to 25 mg.",
+        "src": [{ "s": "emc-11421", "q": "≥ 60 Maximum daily dose is 3 000 mg. Dose reduction may be considered in relation to declining renal function. Initiate with 10 mg." }] },
+      { "t": "eGFR 45 to < 60: metformin max 2000 mg/day, starting dose at most half the maximum; empagliflozin 10 mg (start only in type 2 diabetes with established cardiovascular disease; continue 10 mg if already taking).",
+        "src": [
+          { "s": "emc-11421", "q": "45 to < 60 Maximum daily dose is 2 000 mg. The starting dose is at most half of the maximum dose. Initiate with 10 mg.b Continue with 10 mg in patients already taking empagliflozin." },
+          { "s": "emc-11421", "q": "b patients with type 2 diabetes mellitus and established cardiovascular disease" }
+        ] },
+      { "t": "eGFR 30 to < 45: metformin max 1000 mg/day, starting dose at most half the maximum; empagliflozin 10 mg (start/continue only in type 2 diabetes with established cardiovascular disease). Glucose-lowering effect of empagliflozin is reduced.",
+        "src": [
+          { "s": "emc-11421", "q": "30 to < 45 Maximum daily dose is 1 000 mg. The starting dose is at most half of the maximum dose. Initiate with 10 mg.b Continue with 10 mg in patients already taking empagliflozin.b" },
+          { "s": "emc-11421", "q": "b patients with type 2 diabetes mellitus and established cardiovascular disease" }
+        ] },
+      { "t": "eGFR < 30 mL/min/1.73 m²: contraindicated.",
+        "src": [{ "s": "emc-11421", "q": "Empagliflozin/metformin is contraindicated in patients with eGFR< 30 mL/min/1.73 m2" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Hepatic impairment (any): must not be used.",
+        "src": [{ "s": "emc-11421", "q": "This medicinal product must not be used in patients with hepatic impairment" }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: no data with the combination or empagliflozin; animal studies showed effects on postnatal development (empagliflozin). When planning pregnancy and during pregnancy, use insulin instead of this product.",
+        "src": [
+          { "s": "emc-11421", "q": "However, animal studies have shown adverse effects on postnatal development." },
+          { "s": "emc-11421", "q": "When the patient plans to become pregnant, and during pregnancy, it is recommended that diabetes is not treated with this medicinal product, but insulin be used" }
+        ] },
+      { "t": "BUMPS: metformin (with insulin if needed) is recommended in pregnancy; SGLT2 inhibitors are avoided as a precaution. With an unplanned pregnancy, keep taking it until reviewed promptly.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "you should carry on with the drug you are taking until your appointment, as uncontrolled diabetes is risky for you and your baby" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: should not be used during breastfeeding (empagliflozin in animal milk; no human data for empagliflozin).",
+        "src": [{ "s": "emc-11421", "q": "A risk to the newborns/infants cannot be excluded. This medicinal product should not be used during breast feeding." }] },
+      { "t": "SPS: insulin or metformin are preferred in breastfeeding; limited or no information on other antidiabetics (no SPS advice for the empagliflozin component).",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "No human fertility studies; animal studies show no harmful effect on fertility.", "detail": true,
+        "src": [{ "s": "emc-11421", "q": "Animal studies with empagliflozin and metformin do not indicate direct or indirect harmful effects with respect to fertility" }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Most common in trials: hypoglycaemia with insulin and/or a sulfonylurea, and gastrointestinal symptoms (nausea, vomiting, diarrhoea, abdominal pain, loss of appetite), which mostly occur at the start and settle.",
+        "src": [
+          { "s": "emc-11421", "q": "The most commonly reported adverse reactions in clinical trials were hypoglycaemia in combination with insulin and/or sulphonylurea and gastrointestinal symptoms (nausea, vomiting, diarrhoea, abdominal pain and loss of appetite)." },
+          { "s": "emc-11421", "q": "occur most frequently during initiation of therapy and resolve spontaneously in most cases." }
+        ] },
+      { "t": "Also listed: genital infections, urinary tract infection, increased urination, volume depletion (very common in heart failure trials), thirst, vitamin B12 decrease, taste disturbance.", "detail": true,
+        "src": [
+          { "s": "emc-11421", "q": "Vaginal moniliasis, vulvovaginitis, balanitis and other genital infection1, 2 Urinary tract infection (including pyelonephritis and urosepsis)1, 2" },
+          { "s": "emc-11421", "q": "showed a higher frequency of volume depletion (\"very common\": 11.4% for empagliflozin versus 9.7% for placebo)." }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Lactic acidosis (acidotic breathlessness, abdominal pain, muscle cramps, weakness, low temperature, then coma): stop metformin and seek immediate medical attention.",
+        "src": [
+          { "s": "emc-11421", "q": "Lactic acidosis is characterised by acidotic dyspnea, abdominal pain, muscle cramps, asthenia and hypothermia followed by coma." },
+          { "s": "emc-11421", "q": "In case of suspected symptoms, the patient should stop taking metformin and seek immediate medical attention." }
+        ] },
+      { "t": "Diabetic ketoacidosis (may occur with near-normal glucose): stop empagliflozin immediately.",
+        "src": [{ "s": "emc-11421", "q": "In patients where DKA is suspected or diagnosed, treatment with empagliflozin should be discontinued immediately." }] },
+      { "t": "Fournier's gangrene: urgent care for genital or perineal pain, tenderness, redness or swelling with fever or malaise.",
+        "src": [{ "s": "emc-11421", "q": "Patients should be advised to seek medical attention if they experience a combination of symptoms of pain, tenderness, erythema, or swelling in the genital or perineal area, with fever or malaise." }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "eGFR before starting; consider ketoacidosis risk factors.", "tag": "baseline",
+        "src": [
+          { "s": "emc-11421", "q": "Prior to empagliflozin/metformin initiation and periodically during treatment, i.e. at least yearly" },
+          { "s": "emc-11421", "q": "Before initiating empagliflozin, factors in the patient history that may predispose to ketoacidosis should be considered." }
+        ] },
+      { "t": "Renal function at least yearly (every 3 to 6 months if elderly or at risk of decline) and before starting medicines that may harm the kidneys. Cardiac and renal function regularly in stable chronic heart failure. Vitamin B12 if deficiency suspected or risk factors.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-11421", "q": "renal function should be assessed more frequently, e.g. every 3-6 months." },
+          { "s": "emc-11421", "q": "Prior to initiation of any concomitant medicinal product that may have a negative impact on renal function." },
+          { "s": "emc-11421", "q": "In patients with stable chronic heart failure, Synjardy may be used with a regular monitoring of cardiac and renal function." }
+        ] },
+      { "t": "Hospital admission for major surgery or acute serious illness: interrupt and monitor blood ketones.", "tag": "ongoing",
+        "src": [{ "s": "mhra-dsu-sglt2-ketones-2020", "q": "monitor ketones during this period - measurement of blood ketone levels is preferred to urine" }] },
+      { "t": "Children: follow growth and puberty.", "tag": "ongoing", "detail": true,
+        "src": [{ "s": "emc-11421", "q": "a careful follow-up of the effect of metformin on these parameters in metformin-treated children, especially prepubescent children, is recommended." }] },
+      { "t": "Stop if DKA or lactic acidosis is suspected, or if Fournier's gangrene is suspected. Stop temporarily in dehydration, at surgery and around iodinated contrast.", "tag": "stop",
+        "src": [
+          { "s": "emc-11421", "q": "In patients where DKA is suspected or diagnosed, treatment with empagliflozin should be discontinued immediately." },
+          { "s": "emc-11421", "q": "In case of suspected symptoms, the patient should stop taking metformin and seek immediate medical attention." }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Twice daily with meals; swallow whole with water. Keep carbohydrate intake spread through the day.",
+        "src": [
+          { "s": "emc-11421", "q": "Synjardy should be taken twice daily with meals to reduce the gastrointestinal adverse reactions associated with metformin. The tablets should be swallowed whole with water." },
+          { "s": "emc-11421", "q": "All patients should continue their diet with an adequate distribution of carbohydrate intake during the day." }
+        ] },
+      { "t": "SPS (off-label, adults with swallowing difficulties): tablets can be crushed and mixed with water or given with soft food.", "detail": true,
+        "src": [{ "s": "sps-flozin-swallowing", "q": "Empagliflozin with metformin tablets Film-coated but can be crushed and mixed with water or given with soft food." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Know the signs of lactic acidosis and ketoacidosis; stop and get urgent help if they occur.",
+        "src": [
+          { "s": "emc-11421", "q": "Patients and/or care-givers should be informed of the risk of lactic acidosis." },
+          { "s": "mhra-dsu-sglt2-dka-2016", "q": "inform them of the signs and symptoms of diabetic ketoacidosis ( DKA ) - see below - and advise them to seek immediate medical advice if they develop any of these" }
+        ] },
+      { "t": "If you have severe vomiting, diarrhoea, fever or cannot drink, stop metformin for a while and contact a healthcare professional.",
+        "src": [{ "s": "emc-11421", "q": "In case of dehydration (severe diarrhoea or vomiting, fever or reduced fluid intake), metformin should be temporarily discontinued and contact with a health care professional is recommended." }] },
+      { "t": "Look after your feet and keep well hydrated. Seek urgent care for genital or perineal pain or swelling with fever.",
+        "src": [
+          { "s": "mhra-dsu-sglt2-amputation-2017", "q": "advise patients receiving any sodium-glucose co-transporter 2 (SGLT2) inhibitor about the importance of routine preventive foot care and adequate hydration" },
+          { "s": "mhra-dsu-sglt2-fournier-2019", "q": "advise patients to seek urgent medical attention if they experience severe pain, tenderness, erythema, or swelling in the genital or perineal area, accompanied by fever or malaise" }
+        ] },
+      { "t": "With a sulfonylurea or insulin, take care to avoid low blood sugar when driving.", "detail": true,
+        "src": [{ "s": "emc-11421", "q": "Patients should be advised to take precautions to avoid hypoglycaemia while driving and using machines, in particular when Synjardy is used in combination with a sulphonylurea and/or insulin." }] }
+    ] }
+  },
+  "rules": [
+    { "id": "empagliflozin-metformin:allergy:ingredients", "kind": "allergy", "level": "contraindicated", "med": "empagliflozin-metformin", "allergen": ["empagliflozin", "metformin"],
+      "concern": "Hypersensitivity to empagliflozin or metformin", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity to the active substances",
+      "src": [{ "s": "emc-11421", "q": "4.3 Contraindications Hypersensitivity to the active substances or to any of the excipients listed in section 6.1." }] },
+    { "id": "empagliflozin-metformin:condition:dka", "kind": "condition", "level": "contraindicated", "med": "empagliflozin-metformin", "condition": "diabetic-ketoacidosis",
+      "concern": "Acute metabolic acidosis / diabetic ketoacidosis / diabetic pre-coma", "consequence": "Lactic acidosis and ketoacidosis risk.", "action": "Do not use.", "sourceWording": "Contraindications",
+      "src": [{ "s": "emc-11421", "q": "Any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis) (see section 4.4). Diabetic pre-coma." }] },
+    { "id": "empagliflozin-metformin:condition:metabolic-acidosis", "kind": "condition", "level": "contraindicated", "med": "empagliflozin-metformin", "condition": "metabolic-acidosis",
+      "concern": "Any acute metabolic acidosis (e.g. lactic acidosis)", "consequence": "Contraindicated (SmPC 4.3); metformin raises the risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "contraindicated",
+      "src": [{ "s": "emc-11421", "q": "Any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis) (see section 4.4). Diabetic pre-coma." }] },
+    { "id": "empagliflozin-metformin:condition:dehydration", "kind": "condition", "level": "contraindicated", "med": "empagliflozin-metformin", "condition": "dehydration-hypovolaemia",
+      "concern": "Dehydration (acute condition that may alter renal function)", "consequence": "Metformin accumulation and lactic acidosis; volume depletion.", "action": "Do not use; stop metformin temporarily during dehydration.", "sourceWording": "Contraindications ... dehydration",
+      "src": [
+        { "s": "emc-11421", "q": "Acute conditions with the potential to alter renal function such as: dehydration, severe infection, shock" },
+        { "s": "emc-11421", "q": "metformin should be temporarily discontinued and contact with a health care professional is recommended" }
+      ] },
+    { "id": "empagliflozin-metformin:condition:severe-infection-shock", "kind": "condition", "level": "contraindicated", "med": "empagliflozin-metformin", "condition": "severe-infection-shock",
+      "concern": "Severe infection or shock", "consequence": "Acute change in renal function or hypoxia; lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Contraindications ... severe infection, shock",
+      "src": [{ "s": "emc-11421", "q": "Acute conditions with the potential to alter renal function such as: dehydration, severe infection, shock" }] },
+    { "id": "empagliflozin-metformin:condition:acute-heart-failure", "kind": "condition", "level": "contraindicated", "med": "empagliflozin-metformin", "condition": "acute-decompensated-heart-failure",
+      "concern": "Decompensated, acute or unstable heart failure", "consequence": "Tissue hypoxia; lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Synjardy is contraindicated",
+      "src": [
+        { "s": "emc-11421", "q": "decompensated heart failure, respiratory failure, recent myocardial infarction, shock" },
+        { "s": "emc-11421", "q": "For patients with acute and unstable heart failure, Synjardy is contraindicated due to the metformin component" }
+      ] },
+    { "id": "empagliflozin-metformin:condition:heart-failure", "kind": "condition", "level": "monitor", "med": "empagliflozin-metformin", "condition": "heart-failure",
+      "concern": "Stable chronic heart failure", "consequence": "Higher risk of hypoxia and renal insufficiency.", "action": "May be used with regular monitoring of cardiac and renal function.", "sourceWording": "may be used with a regular monitoring",
+      "src": [
+        { "s": "emc-11421", "q": "Patients with heart failure are more at risk of hypoxia and renal insufficiency." },
+        { "s": "emc-11421", "q": "In patients with stable chronic heart failure, Synjardy may be used with a regular monitoring of cardiac and renal function." }
+      ] },
+    { "id": "empagliflozin-metformin:condition:respiratory-failure", "kind": "condition", "level": "contraindicated", "med": "empagliflozin-metformin", "condition": "respiratory-failure",
+      "concern": "Respiratory failure (tissue hypoxia)", "consequence": "Lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Contraindications ... respiratory failure",
+      "src": [{ "s": "emc-11421", "q": "decompensated heart failure, respiratory failure, recent myocardial infarction, shock" }] },
+    { "id": "empagliflozin-metformin:condition:recent-mi", "kind": "condition", "level": "contraindicated", "med": "empagliflozin-metformin", "condition": "recent-myocardial-infarction",
+      "concern": "Recent myocardial infarction (tissue hypoxia)", "consequence": "Lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Contraindications ... recent myocardial infarction",
+      "src": [{ "s": "emc-11421", "q": "decompensated heart failure, respiratory failure, recent myocardial infarction, shock" }] },
+    { "id": "empagliflozin-metformin:condition:alcohol", "kind": "condition", "level": "contraindicated", "med": "empagliflozin-metformin", "condition": "alcohol-dependence",
+      "concern": "Alcoholism or acute alcohol intoxication", "consequence": "Increased lactic acidosis risk.", "action": "Do not use; avoid alcohol.", "sourceWording": "Contraindications ... acute alcohol intoxication, alcoholism",
+      "src": [{ "s": "emc-11421", "q": "Hepatic impairment, acute alcohol intoxication, alcoholism (see sections 4.2 and 4.5)." }] },
+    { "id": "empagliflozin-metformin:condition:acute-alcohol-intoxication", "kind": "condition", "level": "contraindicated", "med": "empagliflozin-metformin", "condition": "acute-alcoholism",
+      "concern": "Acute alcohol intoxication", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use; avoid alcohol.", "sourceWording": "contraindicated",
+      "src": [{ "s": "emc-11421", "q": "Hepatic impairment, acute alcohol intoxication, alcoholism (see sections 4.2 and 4.5)." }] },
+    { "id": "empagliflozin-metformin:condition:type-1-diabetes", "kind": "condition", "level": "avoid", "med": "empagliflozin-metformin", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Ketoacidosis was common in type 1 trials.", "action": "Should not be used.", "sourceWording": "should not be used in patients with type 1 diabetes",
+      "src": [
+        { "s": "emc-11421", "q": "Synjardy should not be used in patients with type 1 diabetes." },
+        { "s": "emc-11421", "q": "Data from a clinical trial program in patients with type 1 diabetes showed increased DKA occurrence with common frequency" }
+      ] },
+    { "id": "empagliflozin-metformin:condition:sglt2-dka-history", "kind": "condition", "level": "avoid", "med": "empagliflozin-metformin", "condition": "sglt2-dka-history",
+      "concern": "Previous DKA while on an SGLT2 inhibitor", "consequence": "Risk of recurrence.", "action": "Restarting is not recommended unless another clear precipitating factor was identified and resolved.", "sourceWording": "is not recommended",
+      "src": [{ "s": "emc-11421", "q": "Restarting SGLT2 inhibitor treatment in patients with previous DKA while on SGLT2 inhibitor treatment is not recommended, unless another clear precipitating factor is identified and resolved." }] },
+    { "id": "empagliflozin-metformin:condition:pancreatitis", "kind": "condition", "level": "caution", "med": "empagliflozin-metformin", "condition": "pancreatitis-history",
+      "concern": "History of pancreatitis (low beta-cell reserve)", "consequence": "Higher risk of DKA.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-11421", "q": "Patients who may be at higher risk of DKA include patients with a low beta-cell function reserve (e.g. type 2 diabetes patients with low C-peptide or latent autoimmune diabetes in adults (LADA) or patients with a history of pancreatitis)" },
+        { "s": "emc-11421", "q": "SGLT2 inhibitors should be used with caution in these patients." }
+      ] },
+    { "id": "empagliflozin-metformin:condition:pancreatitis-current", "kind": "condition", "level": "caution", "med": "empagliflozin-metformin", "condition": "pancreatitis",
+      "concern": "Pancreatitis recorded (acute or chronic): a history of pancreatitis means low beta-cell reserve", "consequence": "Higher risk of ketoacidosis.", "action": "Use with caution (the SmPC names a history of pancreatitis as a ketoacidosis risk factor).", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-11421", "q": "Patients who may be at higher risk of DKA include patients with a low beta-cell function reserve (e.g. type 2 diabetes patients with low C-peptide or latent autoimmune diabetes in adults (LADA) or patients with a history of pancreatitis)" },
+        { "s": "emc-11421", "q": "SGLT2 inhibitors should be used with caution in these patients." }
+      ] },
+    { "id": "empagliflozin-metformin:condition:restricted-food-intake", "kind": "condition", "level": "caution", "med": "empagliflozin-metformin", "condition": "malnutrition",
+      "concern": "Conditions that restrict food intake (e.g. undernourished or malnourished)", "consequence": "Higher risk of ketoacidosis.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-11421", "q": "patients with conditions that lead to restricted food intake or severe dehydration" },
+        { "s": "emc-11421", "q": "SGLT2 inhibitors should be used with caution in these patients." }
+      ] },
+    { "id": "empagliflozin-metformin:condition:surgery", "kind": "condition", "level": "avoid", "med": "empagliflozin-metformin", "condition": "surgery-planned",
+      "concern": "Surgery under general, spinal or epidural anaesthesia; hospital admission for major surgery or acute illness", "consequence": "Lactic acidosis and ketoacidosis risk.", "action": "Metformin must be stopped at the time of surgery; restart no earlier than 48 hours after surgery or return to eating, once renal function is re-checked and stable; interrupt empagliflozin and monitor ketones. Temporary stop only.", "sourceWording": "must be discontinued at the time of surgery",
+      "src": [
+        { "s": "emc-11421", "q": "Metformin must be discontinued at the time of surgery under general, spinal or epidural anaesthesia." },
+        { "s": "emc-11421", "q": "Treatment should be interrupted in patients who are hospitalised for major surgical procedures or acute serious medical illnesses. Monitoring of ketones is recommended in these patients." }
+      ] },
+    { "id": "empagliflozin-metformin:condition:iodinated-contrast", "kind": "condition", "level": "avoid", "med": "empagliflozin-metformin", "condition": "iodinated-contrast-planned",
+      "concern": "Intravascular iodinated contrast", "consequence": "Contrast nephropathy, metformin accumulation and lactic acidosis.", "action": "Stop before or at the time of imaging; restart no sooner than 48 hours after, once renal function is re-checked and stable.", "sourceWording": "Metformin must be discontinued prior to or at the time of the imaging procedure",
+      "src": [
+        { "s": "emc-11421", "q": "Intravascular administration of iodinated contrast agents may lead to contrast induced nephropathy, resulting in metformin accumulation and an increased risk of lactic acidosis." },
+        { "s": "emc-11421", "q": "Metformin must be discontinued prior to or at the time of the imaging procedure and not restarted until at least 48 hours after" }
+      ] },
+    { "id": "empagliflozin-metformin:condition:mitochondrial-disease", "kind": "condition", "level": "avoid", "med": "empagliflozin-metformin", "condition": "mitochondrial-disease",
+      "concern": "Mitochondrial disease (MELAS, MIDD)", "consequence": "Lactic acidosis exacerbation and neurological complications.", "action": "Metformin is not recommended; withdraw immediately if suggestive signs appear.", "sourceWording": "metformin is not recommended",
+      "src": [{ "s": "emc-11421", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease." }] },
+    { "id": "empagliflozin-metformin:condition:hypotension", "kind": "condition", "level": "caution", "med": "empagliflozin-metformin", "condition": "hypotension",
+      "concern": "History of hypotension (on antihypertensives) or known cardiovascular disease", "consequence": "Modest fall in blood pressure from osmotic diuresis.", "action": "Use with caution.", "sourceWording": "caution should be exercised",
+      "src": [{ "s": "emc-11421", "q": "caution should be exercised in patients for whom a empagliflozin-induced drop in blood pressure could pose a risk, such as patients with known cardiovascular disease, patients on anti-hypertensive therapy with a history of hypotension or patients aged 75 years and older" }] },
+    { "id": "empagliflozin-metformin:condition:complicated-uti", "kind": "condition", "level": "caution", "med": "empagliflozin-metformin", "condition": "complicated-uti",
+      "concern": "Complicated urinary tract infection", "consequence": "Pyelonephritis and urosepsis reported.", "action": "Consider temporary interruption.", "sourceWording": "Temporary interruption of treatment should be considered",
+      "src": [{ "s": "emc-11421", "q": "Temporary interruption of treatment should be considered in patients with complicated urinary tract infections." }] },
+    { "id": "empagliflozin-metformin:renal:lt30", "kind": "renal", "level": "contraindicated", "med": "empagliflozin-metformin", "renal": { "measure": "eGFR", "max": 30 },
+      "concern": "eGFR < 30 mL/min/1.73 m²", "consequence": "Metformin accumulation; lactic acidosis.", "action": "Do not use.", "sourceWording": "is contraindicated in patients with eGFR< 30",
+      "src": [
+        { "s": "emc-11421", "q": "Severe renal failure (eGFR < 30 mL/min/1.73 m2)" },
+        { "s": "emc-11421", "q": "Empagliflozin/metformin is contraindicated in patients with eGFR< 30 mL/min/1.73 m2" }
+      ] },
+    { "id": "empagliflozin-metformin:renal:30-45", "kind": "renal", "level": "dose", "med": "empagliflozin-metformin", "renal": { "measure": "eGFR", "min": 30, "max": 45 },
+      "concern": "eGFR 30 to < 45 mL/min/1.73 m² (or CrCl 30 to < 45 mL/min)", "consequence": "Metformin limit; reduced empagliflozin glucose-lowering effect.", "action": "Metformin max 1000 mg/day, start at most half the maximum. Empagliflozin 10 mg/day, started or continued only in type 2 diabetes with established cardiovascular disease. Use single medicines if no suitable strength.", "sourceWording": "Maximum daily dose is 1 000 mg",
+      "src": [
+        { "s": "emc-11421", "q": "30 to < 45 Maximum daily dose is 1 000 mg. The starting dose is at most half of the maximum dose. Initiate with 10 mg.b Continue with 10 mg in patients already taking empagliflozin.b" },
+        { "s": "emc-11421", "q": "b patients with type 2 diabetes mellitus and established cardiovascular disease" }
+      ] },
+    { "id": "empagliflozin-metformin:renal:45-60", "kind": "renal", "level": "dose", "med": "empagliflozin-metformin", "renal": { "measure": "eGFR", "min": 45, "max": 60 },
+      "concern": "eGFR 45 to < 60 mL/min/1.73 m² (or CrCl 45 to < 60 mL/min)", "consequence": "Metformin and empagliflozin dose limits.", "action": "Metformin max 2000 mg/day, start at most half the maximum; review lactic acidosis risk factors. Empagliflozin 10 mg/day (start only in type 2 diabetes with established cardiovascular disease; continue 10 mg if already taking).", "sourceWording": "Maximum daily dose is 2 000 mg",
+      "src": [
+        { "s": "emc-11421", "q": "45 to < 60 Maximum daily dose is 2 000 mg. The starting dose is at most half of the maximum dose. Initiate with 10 mg.b Continue with 10 mg in patients already taking empagliflozin." },
+        { "s": "emc-11421", "q": "b patients with type 2 diabetes mellitus and established cardiovascular disease" }
+      ] },
+    { "id": "empagliflozin-metformin:renal:60-90", "kind": "renal", "level": "info", "med": "empagliflozin-metformin", "renal": { "measure": "eGFR", "min": 60, "max": 90 },
+      "concern": "eGFR 60-89 mL/min/1.73 m²", "consequence": "Declining renal function.", "action": "Metformin max 3000 mg/day; dose reduction may be considered. Check eGFR at least annually.", "sourceWording": "Dose reduction may be considered",
+      "src": [{ "s": "emc-11421", "q": "≥ 60 Maximum daily dose is 3 000 mg. Dose reduction may be considered in relation to declining renal function." }] },
+    { "id": "empagliflozin-metformin:hepatic:any", "kind": "hepatic", "level": "contraindicated", "med": "empagliflozin-metformin", "hepatic": ["any"],
+      "concern": "Hepatic impairment", "consequence": "Lactic acidosis risk (metformin).", "action": "Must not be used.", "sourceWording": "must not be used in patients with hepatic impairment",
+      "src": [
+        { "s": "emc-11421", "q": "This medicinal product must not be used in patients with hepatic impairment" },
+        { "s": "emc-11421", "q": "Hepatic impairment, acute alcohol intoxication, alcoholism (see sections 4.2 and 4.5)." }
+      ] },
+    { "id": "empagliflozin-metformin:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "empagliflozin-metformin",
+      "concern": "Pregnancy or planning pregnancy", "consequence": "Empagliflozin: adverse effects on postnatal development in animals; no human data.", "action": "When planning and during pregnancy, use insulin instead of this product. BUMPS: metformin alone (with insulin if needed) can be used.", "sourceWording": "it is recommended that diabetes is not treated with this medicinal product",
+      "src": [
+        { "s": "emc-11421", "q": "When the patient plans to become pregnant, and during pregnancy, it is recommended that diabetes is not treated with this medicinal product, but insulin be used" },
+        { "s": "bumps-antidiabetic-drugs", "q": "As a precaution, they are avoided in pregnancy." }
+      ] },
+    { "id": "empagliflozin-metformin:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "empagliflozin-metformin",
+      "concern": "Breastfeeding", "consequence": "Infant risk cannot be excluded.", "action": "Should not be used during breastfeeding.", "sourceWording": "should not be used during breast feeding",
+      "src": [{ "s": "emc-11421", "q": "A risk to the newborns/infants cannot be excluded. This medicinal product should not be used during breast feeding." }] },
+    { "id": "empagliflozin-metformin:age:lt10", "kind": "age", "level": "info", "med": "empagliflozin-metformin", "age": { "minYears": 0, "maxYears": 10 },
+      "concern": "Child under 10 years", "consequence": "No data; licensed from 10 years.", "action": "Not licensed below 10 years.", "sourceWording": "No data are available for ... children below 10 years of age",
+      "src": [{ "s": "emc-11421", "q": "No data are available for children with eGFR < 60 mL/min/1.73 m² and children below 10 years of age." }] },
+    { "id": "empagliflozin-metformin:age:10-12", "kind": "age", "level": "caution", "med": "empagliflozin-metformin", "age": { "minYears": 10, "maxYears": 13 },
+      "concern": "Child aged 10 to 12 years", "consequence": "Very few studied (metformin).", "action": "Particular caution; follow growth and puberty.", "sourceWording": "particular caution is recommended",
+      "src": [{ "s": "emc-11421", "q": "particular caution is recommended when prescribing to children aged between 10 and 12 years." }] },
+    { "id": "empagliflozin-metformin:age:ge75", "kind": "age", "level": "caution", "med": "empagliflozin-metformin", "age": { "minYears": 75 },
+      "concern": "Age 75 years and over", "consequence": "Increased risk of volume depletion; reduced renal function more likely.", "action": "Use with caution; take volume depletion risk into account; monitor renal function.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-11421", "q": "Synjardy should be used with caution in these patients." },
+        { "s": "emc-11421", "q": "In patients 75 years and older, an increased risk for volume depletion should be taken into account" }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:thiazide", "kind": "interaction", "level": "info", "med": "empagliflozin-metformin", "other": "group:thiazide", "effect": "hypotension",
+      "concern": "Empagliflozin/metformin + thiazide diuretic", "consequence": "Added diuretic effect; dehydration and hypotension.", "action": "Be aware of volume depletion risk; diuretics also raise glucose (monitor).", "sourceWording": "may increase the risk of dehydration and hypotension",
+      "src": [{ "s": "emc-11421", "q": "Empagliflozin may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and hypotension" }] },
+    { "id": "empagliflozin-metformin:interaction:loop-diuretic", "kind": "interaction", "level": "monitor", "med": "empagliflozin-metformin", "other": "group:loop-diuretic", "effect": "nephrotoxicity",
+      "concern": "Empagliflozin/metformin + loop diuretic", "consequence": "Added diuretic effect (dehydration, hypotension); may impair renal function and raise lactic acidosis risk.", "action": "Close monitoring of renal function is necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-11421", "q": "Empagliflozin may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and hypotension" },
+        { "s": "emc-11421", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:diuretic", "kind": "interaction", "level": "monitor", "med": "empagliflozin-metformin", "other": "group:diuretic", "effect": "nephrotoxicity",
+      "concern": "Empagliflozin/metformin + diuretic", "consequence": "May impair renal function (lactic acidosis risk) and raise blood glucose; at 75+ volume depletion risk.", "action": "Close monitoring of renal function; more frequent glucose monitoring at the start; watch fluid intake in those aged 75 and over.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-11421", "q": "ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics." },
+        { "s": "emc-11421", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." },
+        { "s": "emc-11421", "q": "special attention should be given to their volume intake in case of co-administered medicinal products which may lead to volume depletion (e.g. diuretics, ACE inhibitors)" }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:nsaid", "kind": "interaction", "level": "monitor", "med": "empagliflozin-metformin", "other": "group:nsaid", "effect": "nephrotoxicity",
+      "concern": "Empagliflozin/metformin + NSAID (including COX-2 inhibitors)", "consequence": "May impair renal function and raise lactic acidosis risk.", "action": "Close monitoring of renal function is necessary; start the NSAID with caution.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-11421", "q": "Some medicinal products can adversely affect renal function which may increase the risk of lactic acidosis, e.g. NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors" },
+        { "s": "emc-11421", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:ace-inhibitor", "kind": "interaction", "level": "monitor", "med": "empagliflozin-metformin", "other": "group:ace-inhibitor", "effect": "nephrotoxicity",
+      "concern": "Empagliflozin/metformin + ACE inhibitor", "consequence": "May impair renal function and raise lactic acidosis risk; at 75+ volume depletion risk.", "action": "Close monitoring of renal function; watch fluid intake in those aged 75 and over.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-11421", "q": "ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics." },
+        { "s": "emc-11421", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:arb", "kind": "interaction", "level": "monitor", "med": "empagliflozin-metformin", "other": "group:arb", "effect": "nephrotoxicity",
+      "concern": "Empagliflozin/metformin + angiotensin II receptor blocker", "consequence": "May impair renal function and raise lactic acidosis risk.", "action": "Close monitoring of renal function is necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-11421", "q": "ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics." },
+        { "s": "emc-11421", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:antihypertensive", "kind": "interaction", "level": "caution", "med": "empagliflozin-metformin", "other": "group:antihypertensive",
+      "concern": "Empagliflozin/metformin + antihypertensive", "consequence": "Medicines that can acutely impair renal function raise lactic acidosis risk; added blood-pressure lowering.", "action": "Start with caution.", "sourceWording": "should be initiated with caution",
+      "src": [{ "s": "emc-11421", "q": "Medicinal products that can acutely impair renal function (such as antihypertensives, diuretics and NSAIDs) should be initiated with caution in metformin-treated patients." }] },
+    { "id": "empagliflozin-metformin:interaction:corticosteroid", "kind": "interaction", "level": "monitor", "med": "empagliflozin-metformin", "other": "group:corticosteroid",
+      "concern": "Empagliflozin/metformin + glucocorticoid (systemic or local)", "consequence": "Raises blood glucose.", "action": "Inform the patient; monitor glucose more often, especially at the start; adjust dose during and after.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-11421", "q": "Glucocorticoids (given by systemic and local routes), beta 2 agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-11421", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:inhaled-corticosteroid", "kind": "interaction", "level": "monitor", "med": "empagliflozin-metformin", "other": "group:inhaled-corticosteroid",
+      "concern": "Empagliflozin/metformin + inhaled corticosteroid", "consequence": "Glucocorticoids given by local routes also have intrinsic hyperglycaemic activity (SmPC).", "action": "Inform the patient; monitor blood glucose more often, especially at the start; adjust the dose during and after if needed.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-11421", "q": "Glucocorticoids (given by systemic and local routes), beta 2 agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-11421", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:beta2-agonist", "kind": "interaction", "level": "monitor", "med": "empagliflozin-metformin", "other": "group:beta2-agonist",
+      "concern": "Empagliflozin/metformin + beta-2 agonist", "consequence": "Raises blood glucose.", "action": "Inform the patient; monitor glucose more often, especially at the start; adjust dose if needed.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-11421", "q": "Glucocorticoids (given by systemic and local routes), beta 2 agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-11421", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:trimethoprim", "kind": "interaction", "level": "caution", "med": "empagliflozin-metformin", "other": "trimethoprim",
+      "concern": "Empagliflozin/metformin + trimethoprim (OCT2 inhibitor)", "consequence": "Reduced renal elimination of metformin; higher metformin levels.", "action": "Caution, especially in renal impairment; consider metformin dose adjustment.", "sourceWording": "Caution is therefore advised",
+      "src": [
+        { "s": "emc-11421", "q": "Inhibitors of OCT2 (such as cimetidine, dolutegravir, ranolazine, trimethoprim, vandetanib, isavuconazole) may decrease the renal elimination of metformin" },
+        { "s": "emc-11421", "q": "Caution is therefore advised, especially in patients with renal impairment, when these drugs are co-administered with metformin, as metformin plasma concentration may increase." }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:verapamil", "kind": "interaction", "level": "caution", "med": "empagliflozin-metformin", "other": "verapamil",
+      "concern": "Empagliflozin/metformin + verapamil (OCT1 inhibitor)", "consequence": "May reduce metformin efficacy.", "action": "Caution; consider metformin dose adjustment if needed.", "sourceWording": "Caution is therefore advised",
+      "src": [
+        { "s": "emc-11421", "q": "Co-administration of metformin with Inhibitors of OCT1 (such as verapamil) may reduce efficacy of metformin." },
+        { "s": "emc-11421", "q": "If needed, dose adjustment of metformin may be considered as OCT inhibitors/inducers may alter the efficacy of metformin" }
+      ] },
+    { "id": "empagliflozin-metformin:interaction:insulin", "kind": "interaction", "level": "dose", "med": "empagliflozin-metformin", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Empagliflozin/metformin + insulin", "consequence": "Higher risk of hypoglycaemia.", "action": "A lower insulin dose may be required.", "sourceWording": "a lower dose of insulin ... may be required",
+      "src": [{ "s": "emc-11421", "q": "a lower dose of insulin or an insulin secretagogue may be required to reduce the risk of hypoglycaemia when used in combination with empagliflozin" }] },
+    { "id": "empagliflozin-metformin:interaction:insulin-secretagogue", "kind": "interaction", "level": "dose", "med": "empagliflozin-metformin", "other": "group:insulin-secretagogue", "effect": "hypoglycaemia",
+      "concern": "Empagliflozin/metformin + insulin secretagogue (e.g. sulfonylurea)", "consequence": "Higher risk of hypoglycaemia.", "action": "A lower dose of the secretagogue may be required.", "sourceWording": "a lower dose of ... an insulin secretagogue may be required",
+      "src": [
+        { "s": "emc-11421", "q": "Insulin and insulin secretagogues, such as sulphonylureas, may increase the risk of hypoglycaemia." },
+        { "s": "emc-11421", "q": "a lower dose of insulin or an insulin secretagogue may be required to reduce the risk of hypoglycaemia when used in combination with empagliflozin" }
+      ] }
+  ]
+}

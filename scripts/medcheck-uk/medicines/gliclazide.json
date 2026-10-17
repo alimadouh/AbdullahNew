@@ -1,0 +1,431 @@
+{
+  "id": "gliclazide",
+  "name": "Gliclazide",
+  "ingredients": ["gliclazide"],
+  "className": "Sulfonylurea (oral antidiabetic)",
+  "groups": ["sulfonylurea", "insulin-secretagogue", "antidiabetic", "oral-antidiabetic"],
+  "searchTerms": ["gliclazide MR", "gliclazide modified release", "gliclazide prolonged release", "sulphonylurea"],
+  "formulations": [
+    {
+      "id": "gliclazide-mr-tab",
+      "label": "Modified-release (prolonged-release) tablets",
+      "route": "oral",
+      "strengths": "60 mg",
+      "release": "modified",
+      "note": "Once daily at breakfast, swallowed whole. Not interchangeable mg-for-mg with immediate-release gliclazide: one 80 mg immediate-release tablet is comparable to 30 mg modified-release.",
+      "src": [
+        { "s": "emc-102252", "q": "Each tablet contains gliclazide 60 mg." },
+        { "s": "emc-102252", "q": "Pharmaceutical form Prolonged-release tablet." },
+        { "s": "emc-14497", "q": "Gliclazide Krka 60 mg modified-release tablets" },
+        { "s": "emc-14497", "q": "One tablet of gliclazide (80 mg) is comparable to one modified-release tablet 30 mg." }
+      ],
+      "sourceIds": ["emc-102252", "emc-14497"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "availability": { "status": "uk" },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Type 2 diabetes in adults when diet, exercise and weight loss alone do not control blood glucose.",
+        "src": [{ "s": "emc-102252", "q": "Non insulin-dependent diabetes (type 2) in adults when dietary measures, physical exercise and weight loss alone are not sufficient to control blood glucose." }] }
+    ] },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions in the two UK 60 mg modified-release gliclazide SmPCs checked." },
+    "dosing": { "items": [
+      { "t": "30 mg to 120 mg once daily at breakfast. Start 30 mg daily; if not controlled, increase in steps to 60, 90 or 120 mg, at least 1 month apart (or after 2 weeks if glucose has not fallen). Maximum 120 mg daily.", "tag": "Type 2 diabetes, adults",
+        "src": [
+          { "s": "emc-102252", "q": "The daily dose may vary from 30 mg to 120 mg per day, taken orally in a single intake at breakfast time." },
+          { "s": "emc-102252", "q": "The recommended starting dose is 30 mg daily." },
+          { "s": "emc-102252", "q": "If blood glucose is not adequately controlled, the dose may be increased to 60, 90 or 120 mg daily, in successive steps. The interval between each dose increment should be at least 1 month except in patients whose blood glucose has not reduced after two weeks of treatment." },
+          { "s": "emc-102252", "q": "The maximum recommended daily dose is 120 mg." }
+        ] },
+      { "t": "Switching from another oral antidiabetic: start at 30 mg and titrate. From a sulfonylurea with a long half-life, a treatment-free period of a few days may be needed to avoid additive hypoglycaemia.", "tag": "Switching",
+        "src": [
+          { "s": "emc-102252", "q": "A starting dose of 30 mg should be used and this should be adjusted to suit the patient's blood glucose response" },
+          { "s": "emc-102252", "q": "When switching from a hypoglycaemic sulfonylurea with a prolonged half-life , a treatment free period of a few days may be necessary to avoid an additive effect of the two products, which might cause hypoglycaemia." }
+        ] },
+      { "t": "Can be combined with biguanides, alpha-glucosidase inhibitors or insulin; start insulin only under close medical supervision.", "tag": "Combination therapy", "detail": true,
+        "src": [
+          { "s": "emc-102252", "q": "can be given in combination with biguanides, alpha glucosidase inhibitors or insulin." },
+          { "s": "emc-102252", "q": "concomitant insulin therapy can be initiated under close medical supervision." }
+        ] },
+      { "t": "Elderly: same regimen as under 65 years.", "tag": "Elderly", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "should be prescribed using the same dosing regimen recommended for patients under 65 years of age." }] },
+      { "t": "At risk of hypoglycaemia (undernourished, severe or poorly compensated endocrine disorders such as hypopituitarism, hypothyroidism or adrenocorticotrophic insufficiency, withdrawal of long or high-dose corticosteroids, severe vascular disease): use the minimum starting dose of 30 mg.", "tag": "Patients at risk of hypoglycaemia",
+        "src": [
+          { "s": "emc-102252", "q": "Patients at risk of hypoglycaemia: - Undernourished or malnourished - Severe or poorly compensated endocrine disorders (hypopituitarism, hypothyroidism, adrenocorticotrophic insufficiency)" },
+          { "s": "emc-102252", "q": "It is recommended that the minimum daily starting dose of 30 mg is used." }
+        ] },
+      { "t": "Missed dose: do not increase the next day's dose.", "tag": "Missed dose", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "If a dose is forgotten, there must be no increase in the dose taken the next day." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Not established in children and adolescents; no data in children.",
+        "src": [{ "s": "emc-102252", "q": "The safety and efficacy of Xywin 60 mg Prolonged-Release Tablets in children and adolescents have not been established. No data are available in children." }] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to gliclazide, other sulfonylureas, sulfonamides or any excipient.",
+        "src": [{ "s": "emc-102252", "q": "Hypersensitivity to gliclazide or to any of the excipients listed in section 6.1, other sulfonylureas, sulfonamides" }] },
+      { "t": "Type 1 diabetes; diabetic pre-coma and coma; diabetic ketoacidosis.",
+        "src": [{ "s": "emc-102252", "q": "Type 1 diabetes, Diabetic pre-coma and coma, diabetic keto-acidosis" }] },
+      { "t": "Severe renal or hepatic insufficiency (insulin is recommended).",
+        "src": [{ "s": "emc-102252", "q": "Severe renal or hepatic insufficiency: in these cases the use of insulin is recommended" }] },
+      { "t": "Treatment with miconazole (systemic or oromucosal gel).",
+        "src": [
+          { "s": "emc-102252", "q": "Treatment with miconazole (see section 4.5)" },
+          { "s": "emc-102252", "q": "Miconazole (systemic route, oromucosal gel): increases the hypoglycaemic effect with possible onset of hypoglycaemic symptoms, or even coma." }
+        ] },
+      { "t": "Breastfeeding.",
+        "src": [{ "s": "emc-102252", "q": "Lactation (see section 4.6)." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Hypoglycaemia, sometimes severe and prolonged (may need hospital care and glucose for several days). Prescribe only if the patient is likely to eat regularly, including breakfast. Risk factors: irregular or skipped meals, fasting, low-calorie diet, strenuous exercise, alcohol, renal or severe hepatic insufficiency, thyroid disorders, hypopituitarism, adrenal insufficiency, other interacting medicines.",
+        "src": [
+          { "s": "emc-102252", "q": "This treatment should be prescribed only if the patient is likely to have a regular food intake (including breakfast)." },
+          { "s": "emc-102252", "q": "Some cases may be severe and prolonged. Hospitalisation may be necessary and glucose administration may need to be continued for several days." },
+          { "s": "emc-102252", "q": "Hypoglycaemia is more likely to occur during low-calorie diets, following prolonged or strenuous exercise, alcohol intake or if a combination of hypoglycaemic agents is being used." }
+        ] },
+      { "t": "Renal or hepatic insufficiency: hypoglycaemic episodes may be prolonged; manage appropriately.",
+        "src": [{ "s": "emc-102252", "q": "A hypoglycaemic episode occurring in these patients may be prolonged, so appropriate management should be initiated." }] },
+      { "t": "G6PD deficiency: sulfonylureas can cause haemolytic anaemia; use with caution and consider a non-sulfonylurea alternative.",
+        "src": [{ "s": "emc-102252", "q": "caution should be used in patients with G6PD-deficiency and a non-sulfonylurea alternative should be considered." }] },
+      { "t": "Loss of glucose control with fever, trauma, infection, surgery or St John's wort; insulin may be needed.",
+        "src": [{ "s": "emc-102252", "q": "St. John's Wort ( Hypericum perforatum) preparations (see section 4.5) , fever, trauma, infection or surgical intervention. In some cases, it may be necessary to administer insulin." }] },
+      { "t": "Fluoroquinolones: hypo- and hyperglycaemia reported, especially in the elderly; careful glucose monitoring recommended.",
+        "src": [{ "s": "emc-102252", "q": "careful monitoring of blood glucose is recommended in all patients receiving at the same time Xywin 60mg Prolonged-Release Tablets and a fluoroquinolone." }] },
+      { "t": "Acute porphyria: cases described with some other sulfonylureas in patients with porphyria.", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "Cases of acute porphyria have been described with some other sulfonylurea drugs, in patients who have porphyria." }] },
+      { "t": "Contains lactose: should not be given to patients with hereditary galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption.", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "should not be administered to patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption." }] },
+      { "t": "Secondary failure: effect may weaken over time; check dose and diet adherence first.", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "Adequate dose adjustment and dietary compliance should be considered before classifying the patient as secondary failure." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Miconazole (systemic or oromucosal gel): contraindicated - increased hypoglycaemic effect, possibly coma.",
+        "src": [{ "s": "emc-102252", "q": "Contra-indicated combination Miconazole (systemic route, oromucosal gel): increases the hypoglycaemic effect with possible onset of hypoglycaemic symptoms, or even coma." }] },
+      { "t": "Alcohol: not recommended - increases hypoglycaemia, can lead to hypoglycaemic coma. Avoid alcohol and alcohol-containing medicines. Phenylbutazone (not in this tool's list): not recommended.",
+        "src": [
+          { "s": "emc-102252", "q": "Alcohol : increases the hypoglycaemic reaction (by inhibiting compensatory reactions) that can lead to the onset of hypoglycaemic coma. Avoid alcohol or medicines containing alcohol." },
+          { "s": "emc-102252", "q": "Phenylbutazone (systemic route): increases the hypoglycaemic effect of sulfonylureas" }
+        ] },
+      { "t": "Precautions (risk of hypoglycaemia): other antidiabetics (insulin, metformin, DPP-4 inhibitors, GLP-1 receptor agonists, acarbose, thiazolidinediones), beta-blockers, fluconazole, ACE inhibitors, H2-receptor antagonists, MAOIs, sulfonamides, clarithromycin, NSAIDs.",
+        "src": [
+          { "s": "emc-102252", "q": "Other anti-diabetic agents (insulins, acarbose, metformin), thiazolidinediones, dipeptidyl peptidase-4 inhibitors, GLP-1 receptor agonists), beta-blockers, fluconazole" },
+          { "s": "emc-102252", "q": "angiotensin converting enzyme inhibitors (captopril, enalapril), H2-receptor antagonists, monoamine oxidase inhibitors (MAOIs), sulfonamides, clarithromycin and non-steroidal anti-inflammatory agents." }
+        ] },
+      { "t": "Raise blood glucose: glucocorticoids (systemic and local, including intra-articular, skin and rectal), high-dose chlorpromazine, IV salbutamol/terbutaline, danazol (not recommended). Warn the patient, monitor glucose, adjust dose during and after.",
+        "src": [
+          { "s": "emc-102252", "q": "Glucocorticoids (systemic and local route: intra-articular, cutaneous and rectal preparations) and tetracosactrin: increase blood glucose levels with possible ketosis" },
+          { "s": "emc-102252", "q": "Warn the patient and emphasise the importance of blood glucose monitoring, particularly at the start of treatment. It may be necessary to adjust the dose of the anti-diabetic active substance during and after treatment with glucocorticoids." },
+          { "s": "emc-102252", "q": "Ritodrine, salbutamol and terbutaline (I.V. ): Increased blood glucose levels due to beta-2 agonist effects." }
+        ] },
+      { "t": "St John's wort: lowers gliclazide exposure - monitor blood glucose.",
+        "src": [{ "s": "emc-102252", "q": "Gliclazide exposure is decreased by Saint John's Wort- Hypericum perforatum . Emphasise the importance of blood glucose levels monitoring." }] },
+      { "t": "Fluoroquinolones: dysglycaemia - warn the patient and monitor blood glucose.",
+        "src": [{ "s": "emc-102252", "q": "the patient should be warned of the risk of dysglycaemia, and the importance of blood glucose monitoring should be emphasised." }] },
+      { "t": "Warfarin: sulfonylureas may potentiate anticoagulation; anticoagulant dose adjustment may be needed.",
+        "src": [{ "s": "emc-102252", "q": "Sulfonylureas may lead to potentiation of anticoagulation during concurrent treatment. Adjustment of the anticoagulant may be necessary." }] }
+    ] },
+    "renal": { "items": [
+      { "t": "Mild to moderate renal insufficiency: usual dose with careful monitoring.",
+        "src": [{ "s": "emc-102252", "q": "In patients with mild to moderate renal insufficiency the same dosing regimen can be used as in patients with normal renal function with careful patient monitoring." }] },
+      { "t": "Severe renal insufficiency: contraindicated (insulin recommended). The SmPC gives no numeric threshold.",
+        "src": [{ "s": "emc-102252", "q": "Severe renal or hepatic insufficiency: in these cases the use of insulin is recommended" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Severe hepatic insufficiency: contraindicated (insulin recommended).",
+        "src": [{ "s": "emc-102252", "q": "Severe renal or hepatic insufficiency: in these cases the use of insulin is recommended" }] },
+      { "t": "Hepatic insufficiency: pharmacokinetics may be altered and hypoglycaemia may be prolonged.",
+        "src": [{ "s": "emc-102252", "q": "The pharmacokinetics and/or pharmacodynamics of gliclazide may be altered in patients with hepatic insufficiency or severe renal failure." }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: limited data; as a precaution preferably avoid. Insulin is the drug of first choice in pregnancy; change to insulin before trying to conceive or as soon as pregnancy is found.",
+        "src": [
+          { "s": "emc-102252", "q": "As a precautionary measure, it is preferable to avoid the use of Gliclazide during pregnancy." },
+          { "s": "emc-102252", "q": "insulin is the drug of first choice for treatment of diabetes during pregnancy. It is recommended that oral hypoglycaemic therapy is changed to insulin before a pregnancy is attempted, or as soon as pregnancy is discovered." }
+        ] },
+      { "t": "BUMPS: treat type 2 diabetes in pregnancy with metformin, plus insulin if needed; sulfonylureas are avoided as a precaution. With an unplanned pregnancy, keep taking it until reviewed promptly.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "you should carry on with the drug you are taking until your appointment, as uncontrolled diabetes is risky for you and your baby" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: contraindicated in breastfeeding (risk of neonatal hypoglycaemia).",
+        "src": [{ "s": "emc-102252", "q": "Given the risk of neonatal hypoglycaemia, the product is contra-indicated in breast-feeding mothers." }] },
+      { "t": "SPS: insulin or metformin are the preferred choices; limited or no published information on other antidiabetic medicines.",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "No effect on fertility in rats.", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "No effect on fertility or reproductive performance was noted in male and female rats" }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Hypoglycaemia is the most frequent adverse reaction, especially with irregular or skipped meals.",
+        "src": [
+          { "s": "emc-102252", "q": "The most frequent adverse reaction with gliclazide is hypoglycaemia." },
+          { "s": "emc-102252", "q": "if meal times are irregular and, in particular, if meals are skipped." }
+        ] },
+      { "t": "Gastrointestinal upset (abdominal pain, nausea, vomiting, dyspepsia, diarrhoea, constipation); taking it with breakfast can reduce this. The SmPC gives no frequencies.",
+        "src": [{ "s": "emc-102252", "q": "These can be avoided or minimised if gliclazide is taken with breakfast." }] },
+      { "t": "Transient visual disturbances, mainly when starting, from changes in blood glucose.", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "Transient visual disturbances may occur especially on initiation of treatment, due to changes in blood glucose levels." }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Severe or prolonged hypoglycaemia (confusion, convulsions, loss of consciousness, coma): needs immediate medical treatment or hospital admission even if sugar helps at first; it can recur.",
+        "src": [
+          { "s": "emc-102252", "q": "Experience with other sulfonylureas shows that hypoglycaemia can recur even when measures prove effective initially." },
+          { "s": "emc-102252", "q": "If a hypoglycaemic episode is severe or prolonged, and even if it is temporarily controlled by intake of sugar, immediate medical treatment or even hospitalisation are required." }
+        ] },
+      { "t": "Severe skin reactions (Stevens-Johnson syndrome, toxic epidermal necrolysis, DRESS) and angioedema reported.",
+        "src": [{ "s": "emc-102252", "q": "bullous reactions (such as Stevens-Johnson syndrome and toxic epidermal necrolysis and autoimmune bullous disorders) and exceptionally, drug rash with eosinophilia and systemic symptoms (DRESS)." }] },
+      { "t": "Cholestatic jaundice: stop treatment. Hepatitis and raised liver enzymes reported.", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "Discontinue treatment if cholestatic jaundice appears." }] },
+      { "t": "Blood disorders (anaemia, leucopenia, thrombocytopenia, granulocytopenia) are rare and usually reversible on stopping.", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "Changes in haematology are rare. They may include anaemia, leucopenia, thrombocytopenia, granulocytopenia. These are in general reversible upon discontinuation of medication." }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "HbA1c (or fasting venous plasma glucose) to assess control; blood glucose self-monitoring may help.", "tag": "ongoing",
+        "src": [{ "s": "emc-102252", "q": "Measurement of glycated haemoglobin levels (or fasting venous plasma glucose) is recommended in assessing blood glucose control. Blood glucose self-monitoring may also be useful." }] },
+      { "t": "Adjust dose to metabolic response (blood glucose, HbA1c).", "tag": "ongoing",
+        "src": [{ "s": "emc-102252", "q": "the dose should be adjusted according to the individual patient's metabolic response (blood glucose, HbAlc)." }] },
+      { "t": "Stop if cholestatic jaundice appears.", "tag": "stop",
+        "src": [{ "s": "emc-102252", "q": "Discontinue treatment if cholestatic jaundice appears." }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Once daily at breakfast; swallow tablet(s) whole.",
+        "src": [
+          { "s": "emc-102252", "q": "taken orally in a single intake at breakfast time. It is recommended that the tablet(s) be swallowed whole." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Explain hypoglycaemia (symptoms, treatment and triggers) to the patient and family; follow dietary advice, exercise regularly and monitor blood glucose.",
+        "src": [
+          { "s": "emc-102252", "q": "The risks of hypoglycaemia, together with its symptoms (see section 4.8), treatment and conditions that predispose to its development, should be explained to the patient and to family members." },
+          { "s": "emc-102252", "q": "The patient should be informed of the importance of following dietary advice, of taking regular exercise, and of regular monitoring of blood glucose levels." }
+        ] },
+      { "t": "Eat regular meals, including breakfast; low blood sugar is more likely if meals are late, small or low in carbohydrate.",
+        "src": [{ "s": "emc-102252", "q": "It is important to have a regular carbohydrate intake due to the increased risk of hypoglycaemia if a meal is taken late, if an inadequate amount of food is consumed or if the food is low in carbohydrate." }] },
+      { "t": "Avoid alcohol and alcohol-containing medicines.",
+        "src": [{ "s": "emc-102252", "q": "Avoid alcohol or medicines containing alcohol." }] },
+      { "t": "Sugar treats low blood sugar; artificial sweeteners do not.", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "Usually, symptoms disappear after intake of carbohydrates (sugar). However, artificial sweeteners have no effect." }] },
+      { "t": "Know hypoglycaemia symptoms and take care when driving or using machines, especially at the start.", "detail": true,
+        "src": [{ "s": "emc-102252", "q": "patients should be made aware of the symptoms of hypoglycaemia and should be careful if driving or operating machinery, especially at the beginning of treatment." }] }
+    ] }
+  },
+  "rules": [
+    { "id": "gliclazide:allergy:gliclazide", "kind": "allergy", "level": "contraindicated", "med": "gliclazide", "allergen": ["gliclazide"],
+      "concern": "Hypersensitivity to gliclazide", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "contra-indicated in case of: Hypersensitivity to gliclazide",
+      "src": [{ "s": "emc-102252", "q": "Hypersensitivity to gliclazide or to any of the excipients listed in section 6.1, other sulfonylureas, sulfonamides" }] },
+    { "id": "gliclazide:allergy:sulfonylurea", "kind": "allergy", "level": "contraindicated", "med": "gliclazide", "allergen": ["group:sulfonylurea"],
+      "concern": "Hypersensitivity to another sulfonylurea", "consequence": "Possible cross-sensitivity.", "action": "Do not use (SmPC contraindication).", "sourceWording": "contra-indicated in case of: Hypersensitivity to ... other sulfonylureas",
+      "src": [{ "s": "emc-102252", "q": "Hypersensitivity to gliclazide or to any of the excipients listed in section 6.1, other sulfonylureas, sulfonamides" }] },
+    { "id": "gliclazide:allergy:sulfonamide", "kind": "allergy", "level": "contraindicated", "med": "gliclazide", "allergen": ["group:sulfonamide", "group:non-antibiotic-sulfonamide"],
+      "concern": "Hypersensitivity to sulfonamides (SmPC wording; covers antibiotic and non-antibiotic sulfonamides such as thiazide or loop diuretics)", "consequence": "SmPC lists sulfonamide hypersensitivity as a contraindication.", "action": "SmPC: do not use. SPS view differs (see the separate SPS rules).", "sourceWording": "contra-indicated in case of: Hypersensitivity to ... sulfonamides",
+      "src": [{ "s": "emc-102252", "q": "Hypersensitivity to gliclazide or to any of the excipients listed in section 6.1, other sulfonylureas, sulfonamides" }] },
+    { "id": "gliclazide:allergy:sulfonamide-sps", "kind": "allergy", "level": "info", "med": "gliclazide", "allergen": ["group:sulfonamide"],
+      "concern": "Sulfonamide antibiotic allergy (SPS view)", "consequence": "SPS: cross-reactivity between antibiotic and non-antibiotic sulfonamides (such as sulfonylureas) is not expected.", "action": "SPS: a non-sulfonamide alternative may be preferable; if prescribed, document reasoning and counsel. After a serious reaction, consider an alternative or specialist opinion.", "sourceWording": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected",
+      "src": [
+        { "s": "sps-sulfonamide", "q": "Classes where all members have a sulfonamide group include: carbonic anhydrase inhibitors loop diuretics sulfonylureas" },
+        { "s": "sps-sulfonamide", "q": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected, including in people who had a life-threatening reaction to a sulfonamide." },
+        { "s": "sps-sulfonamide", "q": "It may be preferable to use a suitable non-sulfonamide alternative if one is appropriate." }
+      ] },
+    { "id": "gliclazide:allergy:non-antibiotic-sulfonamide-sps", "kind": "allergy", "level": "info", "med": "gliclazide", "allergen": ["group:thiazide", "group:loop-diuretic"],
+      "concern": "Allergy to a thiazide or loop diuretic (other non-antibiotic sulfonamide classes): SPS view", "consequence": "SPS: there is no evidence of cross-reactivity between different classes of non-antibiotic sulfonamides (sulfonylureas, loop diuretics and thiazides are separate classes).", "action": "SPS: avoiding every sulfonamide-containing drug is not advisable. The SmPC contraindication (separate rule) still applies.", "sourceWording": "There is no evidence of cross-reactivity between different classes of non-antibiotic sulfonamides",
+      "src": [
+        { "s": "sps-sulfonamide", "q": "Classes where all members have a sulfonamide group include: carbonic anhydrase inhibitors loop diuretics sulfonylureas thiazides and thiazide-like diuretics" },
+        { "s": "sps-sulfonamide", "q": "There is no evidence of cross-reactivity between different classes of non-antibiotic sulfonamides." },
+        { "s": "sps-sulfonamide", "q": "Avoiding all drugs with a sulfonamide group in people with a sulfonamide hypersensitivity is not advisable." }
+      ] },
+    { "id": "gliclazide:condition:type-1-diabetes", "kind": "condition", "level": "contraindicated", "med": "gliclazide", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Not effective; contraindicated.", "action": "Do not use.", "sourceWording": "contra-indicated in case of: ... Type 1 diabetes",
+      "src": [{ "s": "emc-102252", "q": "Type 1 diabetes, Diabetic pre-coma and coma, diabetic keto-acidosis" }] },
+    { "id": "gliclazide:condition:dka", "kind": "condition", "level": "contraindicated", "med": "gliclazide", "condition": "diabetic-ketoacidosis",
+      "concern": "Diabetic ketoacidosis, pre-coma or coma", "consequence": "Contraindicated.", "action": "Do not use.", "sourceWording": "contra-indicated in case of: ... diabetic keto-acidosis",
+      "src": [{ "s": "emc-102252", "q": "Type 1 diabetes, Diabetic pre-coma and coma, diabetic keto-acidosis" }] },
+    { "id": "gliclazide:condition:severe-renal", "kind": "condition", "level": "contraindicated", "med": "gliclazide", "condition": "severe-renal-impairment",
+      "concern": "Severe renal insufficiency (no numeric threshold given)", "consequence": "Prolonged hypoglycaemia risk.", "action": "Do not use; insulin is recommended.", "sourceWording": "contra-indicated in case of: ... Severe renal or hepatic insufficiency",
+      "src": [{ "s": "emc-102252", "q": "Severe renal or hepatic insufficiency: in these cases the use of insulin is recommended" }] },
+    { "id": "gliclazide:condition:renal-impairment", "kind": "condition", "level": "monitor", "med": "gliclazide", "condition": "renal-impairment",
+      "concern": "Mild to moderate renal insufficiency", "consequence": "Renal insufficiency increases hypoglycaemia risk.", "action": "Usual dose with careful patient monitoring.", "sourceWording": "with careful patient monitoring",
+      "src": [{ "s": "emc-102252", "q": "In patients with mild to moderate renal insufficiency the same dosing regimen can be used as in patients with normal renal function with careful patient monitoring." }] },
+    { "id": "gliclazide:hepatic:severe", "kind": "hepatic", "level": "contraindicated", "med": "gliclazide", "hepatic": ["severe"],
+      "concern": "Severe hepatic insufficiency", "consequence": "Altered handling; prolonged hypoglycaemia.", "action": "Do not use; insulin is recommended.", "sourceWording": "contra-indicated in case of: ... Severe renal or hepatic insufficiency",
+      "src": [{ "s": "emc-102252", "q": "Severe renal or hepatic insufficiency: in these cases the use of insulin is recommended" }] },
+    { "id": "gliclazide:hepatic:mild-moderate", "kind": "hepatic", "level": "caution", "med": "gliclazide", "hepatic": ["mild", "moderate"],
+      "concern": "Hepatic insufficiency", "consequence": "Pharmacokinetics may be altered; hypoglycaemia may be prolonged.", "action": "Be ready to manage prolonged hypoglycaemia.", "sourceWording": "appropriate management should be initiated",
+      "src": [
+        { "s": "emc-102252", "q": "The pharmacokinetics and/or pharmacodynamics of gliclazide may be altered in patients with hepatic insufficiency or severe renal failure." },
+        { "s": "emc-102252", "q": "A hypoglycaemic episode occurring in these patients may be prolonged, so appropriate management should be initiated." }
+      ] },
+    { "id": "gliclazide:condition:g6pd", "kind": "condition", "level": "caution", "med": "gliclazide", "condition": "g6pd-deficiency",
+      "concern": "G6PD deficiency", "consequence": "Sulfonylureas can cause haemolytic anaemia.", "action": "Use with caution; consider a non-sulfonylurea alternative.", "sourceWording": "caution should be used",
+      "src": [
+        { "s": "emc-102252", "q": "Treatment of patients with glucose-6-phosphate (G6PD) deficiency with sulfonylurea agents can lead to haemolytic anaemia." },
+        { "s": "emc-102252", "q": "caution should be used in patients with G6PD-deficiency and a non-sulfonylurea alternative should be considered." }
+      ] },
+    { "id": "gliclazide:condition:porphyria", "kind": "condition", "level": "info", "med": "gliclazide", "condition": "porphyria",
+      "concern": "Porphyria", "consequence": "Acute porphyria described with some other sulfonylureas.", "action": "Be aware.", "sourceWording": "Cases of acute porphyria have been described",
+      "src": [{ "s": "emc-102252", "q": "Cases of acute porphyria have been described with some other sulfonylurea drugs, in patients who have porphyria." }] },
+    { "id": "gliclazide:condition:galactose", "kind": "condition", "level": "avoid", "med": "gliclazide", "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption", "consequence": "Tablets contain lactose.", "action": "Should not be given.", "sourceWording": "should not be administered",
+      "src": [{ "s": "emc-102252", "q": "should not be administered to patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption." }] },
+    { "id": "gliclazide:condition:alcohol", "kind": "condition", "level": "avoid", "med": "gliclazide", "condition": "alcohol-dependence",
+      "concern": "Alcohol use", "consequence": "Alcohol increases hypoglycaemia and can lead to hypoglycaemic coma.", "action": "Combination not recommended: avoid alcohol and alcohol-containing medicines.", "sourceWording": "Combinations which are not recommended ... Avoid alcohol",
+      "src": [{ "s": "emc-102252", "q": "Alcohol : increases the hypoglycaemic reaction (by inhibiting compensatory reactions) that can lead to the onset of hypoglycaemic coma. Avoid alcohol or medicines containing alcohol." }] },
+    { "id": "gliclazide:condition:hypothyroidism", "kind": "condition", "level": "dose", "med": "gliclazide", "condition": "hypothyroidism",
+      "concern": "Hypothyroidism / hypopituitarism (severe or poorly compensated)", "consequence": "Higher risk of hypoglycaemia.", "action": "Use the minimum starting dose of 30 mg daily.", "sourceWording": "the minimum daily starting dose of 30 mg is used",
+      "src": [
+        { "s": "emc-102252", "q": "Patients at risk of hypoglycaemia: - Undernourished or malnourished - Severe or poorly compensated endocrine disorders (hypopituitarism, hypothyroidism, adrenocorticotrophic insufficiency)" },
+        { "s": "emc-102252", "q": "It is recommended that the minimum daily starting dose of 30 mg is used." }
+      ] },
+    { "id": "gliclazide:condition:adrenal-insufficiency", "kind": "condition", "level": "dose", "med": "gliclazide", "condition": "adrenal-insufficiency",
+      "concern": "Adrenal (adrenocorticotrophic) insufficiency", "consequence": "Higher risk of hypoglycaemia.", "action": "Use the minimum starting dose of 30 mg daily.", "sourceWording": "the minimum daily starting dose of 30 mg is used",
+      "src": [
+        { "s": "emc-102252", "q": "Patients at risk of hypoglycaemia: - Undernourished or malnourished - Severe or poorly compensated endocrine disorders (hypopituitarism, hypothyroidism, adrenocorticotrophic insufficiency)" },
+        { "s": "emc-102252", "q": "It is recommended that the minimum daily starting dose of 30 mg is used." }
+      ] },
+    { "id": "gliclazide:condition:malnutrition", "kind": "condition", "level": "dose", "med": "gliclazide", "condition": "malnutrition",
+      "concern": "Undernourished or malnourished", "consequence": "Higher risk of hypoglycaemia.", "action": "Use the minimum starting dose of 30 mg daily.", "sourceWording": "the minimum daily starting dose of 30 mg is used",
+      "src": [
+        { "s": "emc-102252", "q": "Patients at risk of hypoglycaemia: - Undernourished or malnourished" },
+        { "s": "emc-102252", "q": "It is recommended that the minimum daily starting dose of 30 mg is used." }
+      ] },
+    { "id": "gliclazide:condition:hypoglycaemia-prone", "kind": "condition", "level": "dose", "med": "gliclazide", "condition": "hypoglycaemia-prone",
+      "concern": "Patient at risk of hypoglycaemia (e.g. undernourished, severe endocrine disorder, withdrawal of long or high-dose corticosteroids, severe vascular disease)", "consequence": "Higher risk of hypoglycaemia.", "action": "Use the minimum starting dose of 30 mg daily.", "sourceWording": "the minimum daily starting dose of 30 mg is used",
+      "src": [
+        { "s": "emc-102252", "q": "withdrawal of prolonged and/or high dose corticosteroid therapy" },
+        { "s": "emc-102252", "q": "It is recommended that the minimum daily starting dose of 30 mg is used." }
+      ] },
+    { "id": "gliclazide:condition:severe-vascular-disease", "kind": "condition", "level": "dose", "med": "gliclazide", "condition": "ischaemic-heart-disease",
+      "concern": "Severe vascular disease (severe coronary heart disease, severe carotid disease, diffuse vascular disease)", "consequence": "Patient at risk of hypoglycaemia.", "action": "Use the minimum starting dose of 30 mg daily.", "sourceWording": "the minimum daily starting dose of 30 mg is used",
+      "src": [
+        { "s": "emc-102252", "q": "Severe vascular disease (severe coronary heart disease, severe carotid impairment; diffuse vascular disease)" },
+        { "s": "emc-102252", "q": "It is recommended that the minimum daily starting dose of 30 mg is used." }
+      ] },
+    { "id": "gliclazide:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "gliclazide",
+      "concern": "Pregnancy", "consequence": "Limited data; oral hypoglycaemic agents are not suitable in pregnancy.", "action": "Preferably avoid; change to insulin before trying to conceive or as soon as pregnancy is found. BUMPS: use metformin, with insulin if needed.", "sourceWording": "it is preferable to avoid",
+      "src": [
+        { "s": "emc-102252", "q": "As a precautionary measure, it is preferable to avoid the use of Gliclazide during pregnancy." },
+        { "s": "emc-102252", "q": "It is recommended that oral hypoglycaemic therapy is changed to insulin before a pregnancy is attempted, or as soon as pregnancy is discovered." }
+      ] },
+    { "id": "gliclazide:breastfeeding", "kind": "breastfeeding", "level": "contraindicated", "med": "gliclazide",
+      "concern": "Breastfeeding", "consequence": "Risk of neonatal hypoglycaemia.", "action": "Do not use while breastfeeding.", "sourceWording": "contra-indicated in breast-feeding mothers",
+      "src": [
+        { "s": "emc-102252", "q": "Lactation (see section 4.6)." },
+        { "s": "emc-102252", "q": "Given the risk of neonatal hypoglycaemia, the product is contra-indicated in breast-feeding mothers." }
+      ] },
+    { "id": "gliclazide:age:lt18", "kind": "age", "level": "info", "med": "gliclazide", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Child or adolescent", "consequence": "Safety and efficacy not established; no data in children.", "action": "Not licensed under 18 years.", "sourceWording": "have not been established",
+      "src": [{ "s": "emc-102252", "q": "The safety and efficacy of Xywin 60 mg Prolonged-Release Tablets in children and adolescents have not been established." }] },
+    { "id": "gliclazide:interaction:miconazole", "kind": "interaction", "level": "contraindicated", "med": "gliclazide", "other": "miconazole", "effect": "hypoglycaemia", "otherFormulations": ["miconazole-oral-gel"],
+      "concern": "Gliclazide + miconazole oral gel (or systemic miconazole)", "consequence": "Increased hypoglycaemic effect; hypoglycaemia or even coma.", "action": "Do not use together. The SmPC names systemic and oromucosal gel miconazole only, so this rule is limited to the oral gel; skin and vaginal products are not named.", "sourceWording": "Contra-indicated combination",
+      "src": [
+        { "s": "emc-102252", "q": "Treatment with miconazole (see section 4.5)" },
+        { "s": "emc-102252", "q": "Contra-indicated combination Miconazole (systemic route, oromucosal gel): increases the hypoglycaemic effect with possible onset of hypoglycaemic symptoms, or even coma." }
+      ] },
+    { "id": "gliclazide:interaction:insulin", "kind": "interaction", "level": "caution", "med": "gliclazide", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + insulin", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Combination requiring precautions; start insulin under close medical supervision.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [
+        { "s": "emc-102252", "q": "Potentiation of the blood glucose lowering effect and thus, in some instances, hypoglycaemia may occur when one of the following drugs is taken: Other anti-diabetic agents (insulins, acarbose, metformin)" },
+        { "s": "emc-102252", "q": "concomitant insulin therapy can be initiated under close medical supervision." }
+      ] },
+    { "id": "gliclazide:interaction:biguanide", "kind": "interaction", "level": "caution", "med": "gliclazide", "other": "group:biguanide", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + metformin", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Combination requiring precautions for use.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [{ "s": "emc-102252", "q": "Potentiation of the blood glucose lowering effect and thus, in some instances, hypoglycaemia may occur when one of the following drugs is taken: Other anti-diabetic agents (insulins, acarbose, metformin)" }] },
+    { "id": "gliclazide:interaction:dpp4", "kind": "interaction", "level": "caution", "med": "gliclazide", "other": "group:dpp4-inhibitor", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + DPP-4 inhibitor", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Combination requiring precautions for use.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [{ "s": "emc-102252", "q": "thiazolidinediones, dipeptidyl peptidase-4 inhibitors, GLP-1 receptor agonists), beta-blockers, fluconazole" }] },
+    { "id": "gliclazide:interaction:glp1", "kind": "interaction", "level": "caution", "med": "gliclazide", "other": "group:glp1-agonist", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + GLP-1 receptor agonist", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Combination requiring precautions for use.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [{ "s": "emc-102252", "q": "thiazolidinediones, dipeptidyl peptidase-4 inhibitors, GLP-1 receptor agonists), beta-blockers, fluconazole" }] },
+    { "id": "gliclazide:interaction:beta-blocker", "kind": "interaction", "level": "caution", "med": "gliclazide", "other": "group:beta-blocker", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + beta-blocker", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Combination requiring precautions for use.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [{ "s": "emc-102252", "q": "thiazolidinediones, dipeptidyl peptidase-4 inhibitors, GLP-1 receptor agonists), beta-blockers, fluconazole" }] },
+    { "id": "gliclazide:interaction:fluconazole", "kind": "interaction", "level": "caution", "med": "gliclazide", "other": "fluconazole", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + fluconazole", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Combination requiring precautions for use.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [{ "s": "emc-102252", "q": "thiazolidinediones, dipeptidyl peptidase-4 inhibitors, GLP-1 receptor agonists), beta-blockers, fluconazole" }] },
+    { "id": "gliclazide:interaction:ace-inhibitor", "kind": "interaction", "level": "caution", "med": "gliclazide", "other": "group:ace-inhibitor", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + ACE inhibitor", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Combination requiring precautions for use.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [{ "s": "emc-102252", "q": "angiotensin converting enzyme inhibitors (captopril, enalapril)" }] },
+    { "id": "gliclazide:interaction:sulfonamide", "kind": "interaction", "level": "caution", "med": "gliclazide", "other": "group:sulfonamide", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + sulfonamide", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Combination requiring precautions for use.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [{ "s": "emc-102252", "q": "monoamine oxidase inhibitors (MAOIs), sulfonamides, clarithromycin and non-steroidal anti-inflammatory agents." }] },
+    { "id": "gliclazide:interaction:clarithromycin", "kind": "interaction", "level": "caution", "med": "gliclazide", "other": "clarithromycin", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + clarithromycin", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Combination requiring precautions for use.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [{ "s": "emc-102252", "q": "monoamine oxidase inhibitors (MAOIs), sulfonamides, clarithromycin and non-steroidal anti-inflammatory agents." }] },
+    { "id": "gliclazide:interaction:nsaid", "kind": "interaction", "level": "caution", "med": "gliclazide", "other": "group:nsaid", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + NSAID", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Combination requiring precautions for use.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [{ "s": "emc-102252", "q": "monoamine oxidase inhibitors (MAOIs), sulfonamides, clarithromycin and non-steroidal anti-inflammatory agents." }] },
+    { "id": "gliclazide:interaction:corticosteroid", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "group:corticosteroid",
+      "concern": "Gliclazide + glucocorticoid (systemic or local: intra-articular, skin, rectal)", "consequence": "Raised blood glucose with possible ketosis.", "action": "Warn the patient and monitor blood glucose, especially at the start; adjust the antidiabetic dose during and after the steroid if needed.", "sourceWording": "emphasise the importance of blood glucose monitoring",
+      "src": [
+        { "s": "emc-102252", "q": "Glucocorticoids (systemic and local route: intra-articular, cutaneous and rectal preparations) and tetracosactrin: increase blood glucose levels with possible ketosis" },
+        { "s": "emc-102252", "q": "Warn the patient and emphasise the importance of blood glucose monitoring, particularly at the start of treatment. It may be necessary to adjust the dose of the anti-diabetic active substance during and after treatment with glucocorticoids." }
+      ] },
+    { "id": "gliclazide:interaction:cutaneous-corticosteroid:hydrocortisone-topical", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "hydrocortisone-topical",
+      "concern": "Gliclazide + corticosteroid applied to the skin (hydrocortisone cream)", "consequence": "The SmPC lists cutaneous glucocorticoids among medicines that raise blood glucose (possible ketosis).", "action": "Warn the patient and monitor blood glucose, particularly at the start; the antidiabetic dose may need adjusting during and after.", "sourceWording": "emphasise the importance of blood glucose monitoring",
+      "src": [
+        { "s": "emc-102252", "q": "Glucocorticoids (systemic and local route: intra-articular, cutaneous and rectal preparations) and tetracosactrin: increase blood glucose levels with possible ketosis" },
+        { "s": "emc-102252", "q": "Warn the patient and emphasise the importance of blood glucose monitoring, particularly at the start of treatment." }
+      ] },
+    { "id": "gliclazide:interaction:cutaneous-corticosteroid:fusidic-acid-betamethasone", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "fusidic-acid-betamethasone",
+      "concern": "Gliclazide + corticosteroid applied to the skin (fusidic acid/betamethasone cream)", "consequence": "The SmPC lists cutaneous glucocorticoids among medicines that raise blood glucose (possible ketosis).", "action": "Warn the patient and monitor blood glucose, particularly at the start; the antidiabetic dose may need adjusting during and after.", "sourceWording": "emphasise the importance of blood glucose monitoring",
+      "src": [
+        { "s": "emc-102252", "q": "Glucocorticoids (systemic and local route: intra-articular, cutaneous and rectal preparations) and tetracosactrin: increase blood glucose levels with possible ketosis" },
+        { "s": "emc-102252", "q": "Warn the patient and emphasise the importance of blood glucose monitoring, particularly at the start of treatment." }
+      ] },
+    { "id": "gliclazide:interaction:cutaneous-corticosteroid:fusidic-acid-hydrocortisone", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "fusidic-acid-hydrocortisone",
+      "concern": "Gliclazide + corticosteroid applied to the skin (fusidic acid/hydrocortisone cream)", "consequence": "The SmPC lists cutaneous glucocorticoids among medicines that raise blood glucose (possible ketosis).", "action": "Warn the patient and monitor blood glucose, particularly at the start; the antidiabetic dose may need adjusting during and after.", "sourceWording": "emphasise the importance of blood glucose monitoring",
+      "src": [
+        { "s": "emc-102252", "q": "Glucocorticoids (systemic and local route: intra-articular, cutaneous and rectal preparations) and tetracosactrin: increase blood glucose levels with possible ketosis" },
+        { "s": "emc-102252", "q": "Warn the patient and emphasise the importance of blood glucose monitoring, particularly at the start of treatment." }
+      ] },
+    { "id": "gliclazide:interaction:cutaneous-corticosteroid:miconazole-hydrocortisone", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "miconazole-hydrocortisone",
+      "concern": "Gliclazide + corticosteroid applied to the skin (miconazole/hydrocortisone cream)", "consequence": "The SmPC lists cutaneous glucocorticoids among medicines that raise blood glucose (possible ketosis).", "action": "Warn the patient and monitor blood glucose, particularly at the start; the antidiabetic dose may need adjusting during and after.", "sourceWording": "emphasise the importance of blood glucose monitoring",
+      "src": [
+        { "s": "emc-102252", "q": "Glucocorticoids (systemic and local route: intra-articular, cutaneous and rectal preparations) and tetracosactrin: increase blood glucose levels with possible ketosis" },
+        { "s": "emc-102252", "q": "Warn the patient and emphasise the importance of blood glucose monitoring, particularly at the start of treatment." }
+      ] },
+    { "id": "gliclazide:interaction:cutaneous-corticosteroid:mometasone-miconazole", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "mometasone-miconazole",
+      "concern": "Gliclazide + corticosteroid applied to the skin (mometasone/miconazole cream)", "consequence": "The SmPC lists cutaneous glucocorticoids among medicines that raise blood glucose (possible ketosis).", "action": "Warn the patient and monitor blood glucose, particularly at the start; the antidiabetic dose may need adjusting during and after.", "sourceWording": "emphasise the importance of blood glucose monitoring",
+      "src": [
+        { "s": "emc-102252", "q": "Glucocorticoids (systemic and local route: intra-articular, cutaneous and rectal preparations) and tetracosactrin: increase blood glucose levels with possible ketosis" },
+        { "s": "emc-102252", "q": "Warn the patient and emphasise the importance of blood glucose monitoring, particularly at the start of treatment." }
+      ] },
+    { "id": "gliclazide:interaction:cutaneous-corticosteroid:betamethasone-miconazole-gentamicin", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "betamethasone-miconazole-gentamicin",
+      "concern": "Gliclazide + corticosteroid applied to the skin (betamethasone/miconazole/gentamicin cream)", "consequence": "The SmPC lists cutaneous glucocorticoids among medicines that raise blood glucose (possible ketosis).", "action": "Warn the patient and monitor blood glucose, particularly at the start; the antidiabetic dose may need adjusting during and after.", "sourceWording": "emphasise the importance of blood glucose monitoring",
+      "src": [
+        { "s": "emc-102252", "q": "Glucocorticoids (systemic and local route: intra-articular, cutaneous and rectal preparations) and tetracosactrin: increase blood glucose levels with possible ketosis" },
+        { "s": "emc-102252", "q": "Warn the patient and emphasise the importance of blood glucose monitoring, particularly at the start of treatment." }
+      ] },
+    { "id": "gliclazide:interaction:cutaneous-corticosteroid:isoconazole-diflucortolone", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "isoconazole-diflucortolone",
+      "concern": "Gliclazide + corticosteroid applied to the skin (isoconazole/diflucortolone cream)", "consequence": "The SmPC lists cutaneous glucocorticoids among medicines that raise blood glucose (possible ketosis).", "action": "Warn the patient and monitor blood glucose, particularly at the start; the antidiabetic dose may need adjusting during and after.", "sourceWording": "emphasise the importance of blood glucose monitoring",
+      "src": [
+        { "s": "emc-102252", "q": "Glucocorticoids (systemic and local route: intra-articular, cutaneous and rectal preparations) and tetracosactrin: increase blood glucose levels with possible ketosis" },
+        { "s": "emc-102252", "q": "Warn the patient and emphasise the importance of blood glucose monitoring, particularly at the start of treatment." }
+      ] },
+    { "id": "gliclazide:interaction:cutaneous-corticosteroid:triamcinolone-nystatin-neomycin", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "triamcinolone-nystatin-neomycin",
+      "concern": "Gliclazide + corticosteroid applied to the skin (triamcinolone/nystatin/neomycin ointment)", "consequence": "The SmPC lists cutaneous glucocorticoids among medicines that raise blood glucose (possible ketosis).", "action": "Warn the patient and monitor blood glucose, particularly at the start; the antidiabetic dose may need adjusting during and after.", "sourceWording": "emphasise the importance of blood glucose monitoring",
+      "src": [
+        { "s": "emc-102252", "q": "Glucocorticoids (systemic and local route: intra-articular, cutaneous and rectal preparations) and tetracosactrin: increase blood glucose levels with possible ketosis" },
+        { "s": "emc-102252", "q": "Warn the patient and emphasise the importance of blood glucose monitoring, particularly at the start of treatment." }
+      ] },
+    { "id": "gliclazide:interaction:st-johns-wort", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "st-johns-wort",
+      "concern": "Gliclazide + St John's wort", "consequence": "Lower gliclazide exposure; poorer glucose control.", "action": "Monitor blood glucose.", "sourceWording": "Emphasise the importance of blood glucose levels monitoring",
+      "src": [{ "s": "emc-102252", "q": "Gliclazide exposure is decreased by Saint John's Wort- Hypericum perforatum . Emphasise the importance of blood glucose levels monitoring." }] },
+    { "id": "gliclazide:interaction:fluoroquinolone", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "group:fluoroquinolone", "effect": "hypoglycaemia",
+      "concern": "Gliclazide + fluoroquinolone", "consequence": "Dysglycaemia (hypo- and hyperglycaemia), especially in the elderly.", "action": "Warn the patient; careful blood glucose monitoring.", "sourceWording": "careful monitoring of blood glucose is recommended",
+      "src": [
+        { "s": "emc-102252", "q": "careful monitoring of blood glucose is recommended in all patients receiving at the same time Xywin 60mg Prolonged-Release Tablets and a fluoroquinolone." },
+        { "s": "emc-102252", "q": "the patient should be warned of the risk of dysglycaemia, and the importance of blood glucose monitoring should be emphasised." }
+      ] },
+    { "id": "gliclazide:interaction:warfarin", "kind": "interaction", "level": "monitor", "med": "gliclazide", "other": "warfarin", "effect": "bleeding",
+      "concern": "Gliclazide + warfarin", "consequence": "Sulfonylureas may potentiate anticoagulation.", "action": "Monitor anticoagulation; warfarin dose adjustment may be needed.", "sourceWording": "Adjustment of the anticoagulant may be necessary",
+      "src": [{ "s": "emc-102252", "q": "Sulfonylureas may lead to potentiation of anticoagulation during concurrent treatment. Adjustment of the anticoagulant may be necessary." }] }
+  ]
+}

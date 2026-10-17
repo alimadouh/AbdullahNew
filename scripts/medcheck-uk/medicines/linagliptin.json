@@ -1,0 +1,230 @@
+{
+  "id": "linagliptin",
+  "name": "Linagliptin",
+  "ingredients": ["linagliptin"],
+  "className": "Dipeptidyl peptidase 4 (DPP-4) inhibitor",
+  "groups": ["dpp4-inhibitor", "oral-antidiabetic", "antidiabetic"],
+  "searchTerms": ["gliptin", "DPP-4 inhibitor"],
+  "formulations": [
+    {
+      "id": "linagliptin-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "5 mg",
+      "release": "immediate",
+      "src": [{ "s": "emc-4762", "q": "Each tablet contains 5 mg of linagliptin." }],
+      "sourceIds": ["emc-4762"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Adults with type 2 diabetes, with diet and exercise: monotherapy when metformin is not tolerated or is contraindicated because of renal impairment; or in combination with other diabetes medicines, including insulin.",
+        "src": [
+          { "s": "emc-4762", "q": "monotherapy when metformin is inappropriate due to intolerance, or contraindicated due to renal impairment" },
+          { "s": "emc-4762", "q": "combination therapy in combination with other medicinal products for the treatment of diabetes, including insulin, when these do not provide adequate glycaemic control" }
+        ] }
+    ] },
+    "restrictions": { "status": "not-stated", "note": "No specialist-only, shared-care or brand-prescribing restriction found in the UK SmPC, MHRA or SPS pages checked." },
+    "dosing": { "items": [
+      { "t": "5 mg once daily. When added to metformin, keep the metformin dose unchanged.", "tag": "Type 2 diabetes, adults",
+        "src": [
+          { "s": "emc-4762", "q": "The dose of linagliptin is 5 mg once daily." },
+          { "s": "emc-4762", "q": "When linagliptin is added to metformin, the dose of metformin should be maintained" }
+        ] },
+      { "t": "With a sulphonylurea or insulin: a lower dose of the sulphonylurea or insulin may be considered to reduce hypoglycaemia risk.", "tag": "With sulphonylurea or insulin",
+        "src": [{ "s": "emc-4762", "q": "When linagliptin is used in combination with a sulphonylurea or with insulin, a lower dose of the sulphonylurea or insulin, may be considered to reduce the risk of hypoglycaemia" }] },
+      { "t": "Renal impairment, hepatic impairment and elderly: no dose adjustment.", "tag": "Special populations",
+        "src": [
+          { "s": "emc-4762", "q": "For patients with renal impairment, no dose adjustment for linagliptin is required." },
+          { "s": "emc-4762", "q": "Elderly No dose adjustment is necessary based on age." }
+        ] },
+      { "t": "Missed dose: take as soon as remembered; do not take a double dose on the same day.", "tag": "Missed dose", "detail": true,
+        "src": [{ "s": "emc-4762", "q": "If a dose is missed, it should be taken as soon as the patient remembers. A double dose should not be taken on the same day." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Not recommended in children and adolescents (efficacy not shown at 10 to 17 years). Not studied under 10 years.",
+        "src": [
+          { "s": "emc-4762", "q": "Therefore, treatment of children and adolescents with linagliptin is not recommended." },
+          { "s": "emc-4762", "q": "Linagliptin has not been studied in paediatric patients under 10 years of age." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to linagliptin or any excipient.",
+        "src": [{ "s": "emc-4762", "q": "Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Should not be used in type 1 diabetes or to treat diabetic ketoacidosis.",
+        "src": [{ "s": "emc-4762", "q": "Linagliptin should not be used in patients with type 1 diabetes or for the treatment of diabetic ketoacidosis." }] },
+      { "t": "Hypoglycaemia: caution with a sulphonylurea and/or insulin; a dose reduction of these may be considered.",
+        "src": [{ "s": "emc-4762", "q": "caution is advised when linagliptin is used in combination with a sulphonylurea and/or insulin. A dose reduction of the sulphonylurea or insulin may be considered" }] },
+      { "t": "Acute pancreatitis: inform patients of the symptoms. If suspected, stop linagliptin; do not restart if confirmed. Caution with a history of pancreatitis.",
+        "src": [
+          { "s": "emc-4762", "q": "If pancreatitis is suspected, linagliptin should be discontinued; if acute pancreatitis is confirmed, linagliptin should not be restarted." },
+          { "s": "emc-4762", "q": "Caution should be exercised in patients with a history of pancreatitis." }
+        ] },
+      { "t": "Bullous pemphigoid: stop linagliptin if suspected.",
+        "src": [{ "s": "emc-4762", "q": "If bullous pemphigoid is suspected, linagliptin should be discontinued." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Sulphonylureas and/or insulin: hypoglycaemia; caution, and a lower dose of the sulphonylurea or insulin may be considered.",
+        "src": [{ "s": "emc-4762", "q": "Sulphonylureas and insulin are known to cause hypoglycaemia." }] },
+      { "t": "Strong P-glycoprotein/CYP3A4 inducers: rifampicin lowered linagliptin exposure, so full efficacy may not be achieved, especially with long-term use. Other potent inducers (carbamazepine, phenobarbital, phenytoin) have not been studied.",
+        "src": [
+          { "s": "emc-4762", "q": "Thus, full efficacy of linagliptin in combination with strong P-gp inducers might not be achieved, particularly if these are administered long-term." },
+          { "s": "emc-4762", "q": "Co-administration with other potent inducers of P-glycoprotein and CYP3A4, such as carbamazepine, phenobarbital and phenytoin has not been studied." }
+        ] },
+      { "t": "No clinically relevant effect on metformin, sulphonylureas, simvastatin, warfarin, digoxin or oral contraceptives.", "detail": true,
+        "src": [{ "s": "emc-4762", "q": "linagliptin had no clinically relevant effect on the pharmacokinetics of metformin, glyburide, simvastatin, warfarin, digoxin or oral contraceptives" }] }
+    ] },
+    "renal": { "items": [
+      { "t": "No dose adjustment in renal impairment.",
+        "src": [{ "s": "emc-4762", "q": "For patients with renal impairment, no dose adjustment for linagliptin is required." }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "No dose adjustment suggested by pharmacokinetic studies, but clinical experience in hepatic impairment is lacking.",
+        "src": [{ "s": "emc-4762", "q": "Pharmacokinetic studies suggest that no dose adjustment is required for patients with hepatic impairment but clinical experience in such patients is lacking." }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: not studied in pregnant women; animal studies show no harm. As a precaution, preferably avoid in pregnancy.",
+        "src": [
+          { "s": "emc-4762", "q": "The use of linagliptin has not been studied in pregnant women." },
+          { "s": "emc-4762", "q": "As a precautionary measure, it is preferable to avoid the use of linagliptin during pregnancy." }
+        ] },
+      { "t": "BUMPS: type 2 diabetes in pregnancy should be treated with metformin, with insulin if needed; other antidiabetic medicines (including DPP-4 inhibitors) are avoided as a precaution. In an unplanned pregnancy, continue current treatment until reviewed promptly.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "you should carry on with the drug you are taking until your appointment, as uncontrolled diabetes is risky for you and your baby" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: excreted in animal milk; a risk to the breastfed child cannot be excluded. Decide whether to stop breastfeeding or stop/avoid linagliptin, weighing the benefits of each.",
+        "src": [
+          { "s": "emc-4762", "q": "A risk to the breast-fed child cannot be excluded." },
+          { "s": "emc-4762", "q": "A decision must be made whether to discontinue breast-feeding or to discontinue/abstain from linagliptin therapy" }
+        ] },
+      { "t": "SPS: insulin or metformin are the preferred choices; there is limited or no published information on other antidiabetic medicines in breastfeeding.",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding" }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: no human studies; animal studies show no harmful effects.", "detail": true,
+        "src": [{ "s": "emc-4762", "q": "No studies on the effect on human fertility have been conducted for linagliptin." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Very common: hypoglycaemia when used with metformin plus a sulphonylurea. Common: lipase increased.",
+        "src": [
+          { "s": "emc-4762", "q": "Hypoglycaemia1 very common" },
+          { "s": "emc-4762", "q": "1 Adverse reaction observed in combination with metformin plus sulphonylurea" },
+          { "s": "emc-4762", "q": "Lipase increased** common" }
+        ] },
+      { "t": "Uncommon: nasopharyngitis, hypersensitivity, cough, constipation (with insulin), rash, amylase increased.", "detail": true,
+        "src": [
+          { "s": "emc-4762", "q": "Nasopharyngitis uncommon" },
+          { "s": "emc-4762", "q": "Hypersensitivity (e.g. bronchial hyperreactivity) uncommon" },
+          { "s": "emc-4762", "q": "Cough uncommon" },
+          { "s": "emc-4762", "q": "Constipation2 uncommon" },
+          { "s": "emc-4762", "q": "2 Adverse reaction observed in combination with insulin" },
+          { "s": "emc-4762", "q": "Rash* uncommon" },
+          { "s": "emc-4762", "q": "Amylase increased uncommon" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Acute pancreatitis (rare): stop linagliptin if suspected; do not restart if confirmed.",
+        "src": [
+          { "s": "emc-4762", "q": "Pancreatitis rare#" },
+          { "s": "mhra-dsu-dpp4-pancreatitis", "q": "if pancreatitis is suspected, the DPP-4 inhibitor and other potentially suspect medicines should be discontinued" }
+        ] },
+      { "t": "Angioedema, urticaria and bullous pemphigoid (rare).",
+        "src": [
+          { "s": "emc-4762", "q": "Angioedema* rare" },
+          { "s": "emc-4762", "q": "Urticaria* rare" },
+          { "s": "emc-4762", "q": "Bullous pemphigoid rare#" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Stop if pancreatitis or bullous pemphigoid is suspected.", "tag": "stop",
+        "src": [
+          { "s": "emc-4762", "q": "If pancreatitis is suspected, linagliptin should be discontinued" },
+          { "s": "emc-4762", "q": "If bullous pemphigoid is suspected, linagliptin should be discontinued." }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Take with or without a meal, at any time of day.",
+        "src": [{ "s": "emc-4762", "q": "The tablets can be taken with or without a meal at any time of the day." }] },
+      { "t": "Swallowing difficulty (SPS, off-label): film-coated but can be crushed and mixed with water or given with soft food.", "detail": true,
+        "src": [{ "s": "sps-gliptin-swallowing", "q": "Linagliptin tablets Film-coated but can be crushed and mixed with water or given with soft food." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Seek medical help for persistent, severe abdominal pain (possible pancreatitis), sometimes going through to the back.",
+        "src": [
+          { "s": "emc-4762", "q": "Patients should be informed of the characteristic symptoms of acute pancreatitis." },
+          { "s": "mhra-dsu-dpp4-pancreatitis", "q": "persistent, severe abdominal pain (sometimes radiating to the back)" }
+        ] },
+      { "t": "If taking a sulphonylurea and/or insulin, be alert to low blood sugar, including when driving.",
+        "src": [{ "s": "emc-4762", "q": "patients should be alerted to the risk of hypoglycaemia especially when combined with sulphonylurea and/or insulin" }] }
+    ] }
+  },
+  "rules": [
+    { "id": "linagliptin:allergy:linagliptin", "kind": "allergy", "level": "contraindicated", "med": "linagliptin", "allergen": ["linagliptin"],
+      "concern": "Hypersensitivity to linagliptin", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity to the active substance",
+      "src": [{ "s": "emc-4762", "q": "Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+    { "id": "linagliptin:condition:type-1-diabetes", "kind": "condition", "level": "avoid", "med": "linagliptin", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Not an appropriate treatment.", "action": "Should not be used in type 1 diabetes.", "sourceWording": "should not be used in patients with type 1 diabetes",
+      "src": [{ "s": "emc-4762", "q": "Linagliptin should not be used in patients with type 1 diabetes or for the treatment of diabetic ketoacidosis." }] },
+    { "id": "linagliptin:condition:diabetic-ketoacidosis", "kind": "condition", "level": "avoid", "med": "linagliptin", "condition": "diabetic-ketoacidosis",
+      "concern": "Diabetic ketoacidosis", "consequence": "Not an appropriate treatment.", "action": "Should not be used to treat diabetic ketoacidosis.", "sourceWording": "should not be used ... for the treatment of diabetic ketoacidosis",
+      "src": [{ "s": "emc-4762", "q": "Linagliptin should not be used in patients with type 1 diabetes or for the treatment of diabetic ketoacidosis." }] },
+    { "id": "linagliptin:condition:pancreatitis-history", "kind": "condition", "level": "caution", "med": "linagliptin", "condition": "pancreatitis-history",
+      "concern": "History of pancreatitis", "consequence": "DPP-4 inhibitors are associated with acute pancreatitis.", "action": "Use with caution; stop if pancreatitis is suspected and do not restart if confirmed.", "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-4762", "q": "Caution should be exercised in patients with a history of pancreatitis." },
+        { "s": "emc-4762", "q": "Acute pancreatitis has been observed in patients taking linagliptin." }
+      ] },
+    { "id": "linagliptin:condition:pancreatitis-current", "kind": "condition", "level": "avoid", "med": "linagliptin", "condition": "pancreatitis",
+      "concern": "Acute pancreatitis, current or suspected (for past or chronic pancreatitis see the history rule: use with caution)", "consequence": "DPP-4 inhibitors are associated with acute pancreatitis.", "action": "Stop if pancreatitis is suspected; do not restart if acute pancreatitis is confirmed.", "sourceWording": "should be discontinued … should not be restarted",
+      "src": [{ "s": "emc-4762", "q": "If pancreatitis is suspected, linagliptin should be discontinued; if acute pancreatitis is confirmed, linagliptin should not be restarted." }] },
+    { "id": "linagliptin:age:lt18", "kind": "age", "level": "avoid", "med": "linagliptin", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Child or adolescent under 18 years", "consequence": "Efficacy not established at 10 to 17 years; not studied under 10 years.", "action": "Not recommended.", "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-4762", "q": "Therefore, treatment of children and adolescents with linagliptin is not recommended." },
+        { "s": "emc-4762", "q": "A clinical trial did not establish efficacy in paediatric patients 10 to 17 years of age" }
+      ] },
+    { "id": "linagliptin:hepatic:any", "kind": "hepatic", "level": "info", "med": "linagliptin", "hepatic": ["any"],
+      "concern": "Hepatic impairment", "consequence": "Clinical experience is lacking.", "action": "No dose adjustment suggested by pharmacokinetic studies.", "sourceWording": "clinical experience in such patients is lacking",
+      "src": [{ "s": "emc-4762", "q": "Pharmacokinetic studies suggest that no dose adjustment is required for patients with hepatic impairment but clinical experience in such patients is lacking." }] },
+    { "id": "linagliptin:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "linagliptin",
+      "concern": "Pregnancy", "consequence": "Not studied in pregnant women.", "action": "Preferably avoid as a precaution. BUMPS: metformin with or without insulin is the recommended treatment; in an unplanned pregnancy keep taking current treatment until reviewed promptly.", "sourceWording": "it is preferable to avoid the use of linagliptin during pregnancy",
+      "src": [
+        { "s": "emc-4762", "q": "As a precautionary measure, it is preferable to avoid the use of linagliptin during pregnancy." },
+        { "s": "bumps-antidiabetic-drugs", "q": "As a precaution, they are avoided in pregnancy." }
+      ] },
+    { "id": "linagliptin:breastfeeding", "kind": "breastfeeding", "level": "caution", "med": "linagliptin",
+      "concern": "Breastfeeding", "consequence": "Excreted in animal milk; risk to the breastfed child cannot be excluded.", "action": "Decide whether to stop breastfeeding or stop/avoid linagliptin. SPS: insulin or metformin are preferred.", "sourceWording": "A decision must be made whether to discontinue breast-feeding or to discontinue/abstain from linagliptin therapy",
+      "src": [
+        { "s": "emc-4762", "q": "A decision must be made whether to discontinue breast-feeding or to discontinue/abstain from linagliptin therapy" },
+        { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." }
+      ] },
+    { "id": "linagliptin:interaction:sulfonylurea", "kind": "interaction", "level": "caution", "med": "linagliptin", "other": "group:sulfonylurea", "effect": "hypoglycaemia",
+      "concern": "Linagliptin + sulphonylurea", "consequence": "Hypoglycaemia (incidence increased over placebo when added to a sulphonylurea).", "action": "Caution; a dose reduction of the sulphonylurea may be considered.", "sourceWording": "caution is advised",
+      "src": [
+        { "s": "emc-4762", "q": "When linagliptin was added to a sulphonylurea (on a background of metformin), the incidence of hypoglycaemia was increased over that of placebo" },
+        { "s": "emc-4762", "q": "caution is advised when linagliptin is used in combination with a sulphonylurea and/or insulin. A dose reduction of the sulphonylurea or insulin may be considered" }
+      ] },
+    { "id": "linagliptin:interaction:insulin", "kind": "interaction", "level": "caution", "med": "linagliptin", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Linagliptin + insulin", "consequence": "Hypoglycaemia.", "action": "Caution; a dose reduction of insulin may be considered.", "sourceWording": "caution is advised",
+      "src": [
+        { "s": "emc-4762", "q": "Sulphonylureas and insulin are known to cause hypoglycaemia." },
+        { "s": "emc-4762", "q": "caution is advised when linagliptin is used in combination with a sulphonylurea and/or insulin. A dose reduction of the sulphonylurea or insulin may be considered" }
+      ] },
+    { "id": "linagliptin:interaction:carbamazepine", "kind": "interaction", "level": "info", "med": "linagliptin", "other": "carbamazepine",
+      "concern": "Linagliptin + carbamazepine (potent P-gp/CYP3A4 inducer)", "consequence": "Not studied; with strong P-gp inducers full linagliptin efficacy might not be achieved, particularly with long-term use.", "action": "No action stated.", "sourceWording": "full efficacy of linagliptin in combination with strong P-gp inducers might not be achieved",
+      "src": [
+        { "s": "emc-4762", "q": "Thus, full efficacy of linagliptin in combination with strong P-gp inducers might not be achieved, particularly if these are administered long-term." },
+        { "s": "emc-4762", "q": "Co-administration with other potent inducers of P-glycoprotein and CYP3A4, such as carbamazepine, phenobarbital and phenytoin has not been studied." }
+      ] }
+  ]
+}

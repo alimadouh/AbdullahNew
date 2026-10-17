@@ -1668,6 +1668,39 @@
       ]
     },
     {
+      "id": "lisinopril:interaction:aspirin-anti-inflammatory",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril",
+      "other": "aspirin",
+      "otherFormulations": [
+        "aspirin-analgesic"
+      ],
+      "effect": "nephrotoxicity",
+      "concern": "Aspirin at anti-inflammatory doses (3 g/day or more)",
+      "consequence": "Reduced antihypertensive effect; worsening renal function (possible acute renal failure) and raised potassium, especially with poor renal function. Low (cardiologic) aspirin doses may be used with lisinopril.",
+      "action": "Use with caution, especially in the elderly; keep hydrated; consider monitoring renal function at start and periodically.",
+      "sourceWording": "The combination should be administered with caution",
+      "src": [
+        {
+          "s": "emc-7611",
+          "q": "Non-steroidal anti-inflammatory medicinal products (NSAIDs) including acetylsalicylic acid ≥ 3 g/day"
+        },
+        {
+          "s": "emc-7611",
+          "q": "Concomitant use of ACE inhibitors and NSAIDs may lead to an increased risk of worsening of renal function, including possible acute renal failure, and an increase in serum potassium"
+        },
+        {
+          "s": "emc-7611",
+          "q": "The combination should be administered with caution, especially in the elderly."
+        },
+        {
+          "s": "emc-7611",
+          "q": "Zestril may be used concomitantly with acetylsalicylic acid (at cardiologic doses)"
+        }
+      ]
+    },
+    {
       "id": "lisinopril:interaction:antidiabetic",
       "kind": "interaction",
       "level": "monitor",
@@ -1774,6 +1807,156 @@
         {
           "s": "emc-7611",
           "q": "additive falls in blood pressure may occur."
+        }
+      ]
+    },
+    {
+      "id": "lisinopril:interaction:arb",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "lisinopril",
+      "other": "group:arb",
+      "effect": "hyperkalaemia",
+      "concern": "Angiotensin II receptor blockers (dual RAAS blockade)",
+      "consequence": "Higher risk of hypotension, hyperkalaemia and reduced renal function (including acute renal failure).",
+      "action": "Not recommended; do not combine in diabetic nephropathy. If essential, only under specialist supervision with close monitoring of renal function, electrolytes and blood pressure.",
+      "sourceWording": "is therefore not recommended",
+      "src": [
+        {
+          "s": "emc-7611",
+          "q": "Dual blockade of RAAS through the combined use of ACE inhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended"
+        },
+        {
+          "s": "emc-7611",
+          "q": "ACE inhibitors and angiotensin II receptor blockers should not be used concomitantly in patients with diabetic nephropathy."
+        },
+        {
+          "s": "emc-7611",
+          "q": "this should only occur under specialist supervision and subject to frequent close monitoring of renal function, electrolytes and blood pressure"
+        },
+        {
+          "s": "mhra-dsu-ras-combination",
+          "q": "Combination use of medicines from two classes of RAS blocking agents (ACE-inhibitors, ARBs, or aliskiren) is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "lisinopril:interaction:vildagliptin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril",
+      "other": "vildagliptin",
+      "concern": "Vildagliptin (angioedema)",
+      "consequence": "Increased risk of angioedema (airway or tongue swelling).",
+      "action": "Use caution when starting vildagliptin in a patient taking an ACE inhibitor.",
+      "sourceWording": "Caution should be used when starting",
+      "src": [
+        {
+          "s": "emc-7611",
+          "q": "Concomitant use of ACE inhibitors with racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin may lead to an increased risk of angioedema"
+        },
+        {
+          "s": "emc-7611",
+          "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor."
+        }
+      ]
+    },
+    {
+      "id": "lisinopril:interaction:vildagliptin-metformin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril",
+      "other": "vildagliptin-metformin",
+      "concern": "Vildagliptin/metformin (angioedema)",
+      "consequence": "Increased risk of angioedema (airway or tongue swelling).",
+      "action": "Use caution when starting vildagliptin in a patient taking an ACE inhibitor.",
+      "sourceWording": "Caution should be used when starting",
+      "src": [
+        {
+          "s": "emc-7611",
+          "q": "Concomitant use of ACE inhibitors with racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin may lead to an increased risk of angioedema"
+        },
+        {
+          "s": "emc-7611",
+          "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor."
+        }
+      ]
+    },
+    {
+      "id": "lisinopril:interaction:racecadotril",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lisinopril",
+      "other": "racecadotril",
+      "concern": "Racecadotril (angioedema)",
+      "consequence": "Increased risk of angioedema (airway or tongue swelling).",
+      "action": "Use caution when starting racecadotril in a patient taking an ACE inhibitor.",
+      "sourceWording": "Caution should be used when starting",
+      "src": [
+        {
+          "s": "emc-7611",
+          "q": "Concomitant use of ACE inhibitors with racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin may lead to an increased risk of angioedema"
+        },
+        {
+          "s": "emc-7611",
+          "q": "Caution should be used when starting racecadotril, mTOR inhibitors (e.g. sirolimus, everolimus, temsirolimus) and vildagliptin in a patient already taking an ACE inhibitor."
+        }
+      ]
+    },
+    {
+      "id": "lisinopril:interaction:insulin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "lisinopril",
+      "other": "group:insulin",
+      "effect": "hypoglycaemia",
+      "concern": "Insulins",
+      "consequence": "Increased glucose lowering with risk of hypoglycaemia, mainly in the first weeks and in renal impairment.",
+      "action": "Monitor glycaemic control closely during the first month.",
+      "sourceWording": "should be closely monitored during the first month",
+      "src": [
+        {
+          "s": "emc-7611",
+          "q": "concomitant administration of ACE inhibitors and antidiabetic medicines (insulins, oral hypoglycaemic agents) may cause an increased blood glucose-lowering effect with risk of hypoglycaemia"
+        },
+        {
+          "s": "emc-7611",
+          "q": "In diabetic patients treated with oral antidiabetic agents or insulin, glycaemic control should be closely monitored during the first month of treatment with an ACE inhibitor"
+        }
+      ]
+    },
+    {
+      "id": "lisinopril:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "lisinopril",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hypotension",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "Further fall in blood pressure.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may result in further reduction of blood pressure",
+      "src": [
+        {
+          "s": "emc-7611",
+          "q": "Concomitant use of certain anaesthetic medicinal products, tricyclic antidepressants and antipsychotics with ACE inhibitors may result in further reduction of blood pressure"
+        }
+      ]
+    },
+    {
+      "id": "lisinopril:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "lisinopril",
+      "other": "group:sympathomimetic",
+      "concern": "Sympathomimetics (e.g. decongestants)",
+      "consequence": "May reduce the blood-pressure-lowering effect.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may reduce the antihypertensive effects",
+      "src": [
+        {
+          "s": "emc-7611",
+          "q": "Sympathomimetics may reduce the antihypertensive effects of ACE inhibitors."
         }
       ]
     }

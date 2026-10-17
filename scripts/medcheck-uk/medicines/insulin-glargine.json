@@ -1,0 +1,1726 @@
+{
+ "id": "insulin-glargine",
+ "name": "Insulin glargine",
+ "ingredients": [
+  "insulin-glargine"
+ ],
+ "className": "Long-acting (basal) insulin analogue",
+ "groups": [
+  "insulin",
+  "antidiabetic"
+ ],
+ "searchTerms": [
+  "insulin glargine",
+  "glargine",
+  "insulin glargine 300 units/mL",
+  "insulin glargine 100 units/mL"
+ ],
+ "formulations": [
+  {
+   "id": "insulin-glargine-100-pen",
+   "label": "Solution 100 units/mL pre-filled pen (long-acting)",
+   "route": "subcutaneous",
+   "strengths": "100 units/mL (300 units per 3 mL pen)",
+   "release": "n/a",
+   "note": "Not bioequivalent to and not directly interchangeable with 300 units/mL: reduce the dose by about 20% when switching from 300 units/mL. Pen is for subcutaneous use only; use a vial if a syringe is needed.",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "Each ml contains 100 units insulin glargine* (equivalent to 3.64 mg)."
+    },
+    {
+     "s": "emc-8098",
+     "q": "Lantus and Toujeo (insulin glargine 300 units/ml) are not bioequivalent and are not directly interchangeable."
+    },
+    {
+     "s": "emc-8098",
+     "q": "If administration by syringe is necessary, a vial should be used"
+    }
+   ],
+   "sourceIds": [
+    "emc-8098"
+   ]
+  },
+  {
+   "id": "insulin-glargine-100-vial",
+   "label": "Solution 100 units/mL vial (long-acting)",
+   "route": "subcutaneous",
+   "strengths": "100 units/mL (5 mL or 10 mL vial)",
+   "release": "n/a",
+   "note": "Subcutaneous only (not intravenous). Same insulin and dosing as the 100 units/mL pen; in-use storage differs by vial size.",
+   "src": [
+    {
+     "s": "emc-8097",
+     "q": "Each vial contains 5 ml of solution for injection, equivalent to 500 units, or 10 ml of solution for injection, equivalent to 1000 units."
+    },
+    {
+     "s": "emc-8097",
+     "q": "Lantus should not be administered intravenously."
+    }
+   ],
+   "sourceIds": [
+    "emc-8097"
+   ]
+  },
+  {
+   "id": "insulin-glargine-300-pen",
+   "label": "Solution 300 units/mL pre-filled pen (long-acting)",
+   "route": "subcutaneous",
+   "strengths": "300 units/mL",
+   "release": "n/a",
+   "note": "Not bioequivalent to and not directly interchangeable with 100 units/mL: unit-to-unit switch from 100 units/mL but about 10-18% more may be needed; reduce by about 20% when switching back. Never draw it from the pen into a syringe (severe overdose).",
+   "src": [
+    {
+     "s": "emc-6938",
+     "q": "Each ml contains 300 units insulin glargine* (equivalent to 10.91 mg)."
+    },
+    {
+     "s": "emc-6938",
+     "q": "Insulin glargine 100 units/ml and Toujeo are not bioequivalent and are not directly interchangeable."
+    },
+    {
+     "s": "emc-6938",
+     "q": "Toujeo must not be drawn from the cartridge of the Toujeo SoloStar pre-filled pen or Toujeo DoubleStar pre-filled pen into a syringe or severe overdose can result"
+    }
+   ],
+   "sourceIds": [
+    "emc-6938"
+   ]
+  }
+ ],
+ "brandPrescribing": {
+  "t": "Prescribe insulin by brand name (SPS, citing NICE guidance), and make sure the patient gets a device they have been trained to use. Where one brand comes in more than one strength or device, the brand name alone is not enough: also state the strength and device (SPS).",
+  "src": [
+   {
+    "s": "sps-brand-name-examples",
+    "q": "NICE guidance recommends insulins are prescribed by brand name."
+   },
+   {
+    "s": "sps-brand-name-examples",
+    "q": "It is important to ensure patients receive an administration device they have been trained to use."
+   },
+   {
+    "s": "sps-insulin-confusion",
+    "q": "Where a single insulin brand is available in multiple strengths or delivery devices, using only a brand name is insufficient."
+   }
+  ]
+ },
+ "bnf": {
+  "status": "not-accessed",
+  "note": "BNF/BNFC is only available in the UK; not accessed."
+ },
+ "sections": {
+  "indications": {
+   "items": [
+    {
+     "t": "Diabetes mellitus in adults, adolescents and children aged 2 years and above.",
+     "formulations": [
+      "insulin-glargine-100-pen",
+      "insulin-glargine-100-vial"
+     ],
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Treatment of diabetes mellitus in adults, adolescents and children aged 2 years and above."
+      },
+      {
+       "s": "emc-8097",
+       "q": "Treatment of diabetes mellitus in adults, adolescents and children aged 2 years and above."
+      }
+     ]
+    },
+    {
+     "t": "Diabetes mellitus in adults, adolescents and children from 6 years.",
+     "formulations": [
+      "insulin-glargine-300-pen"
+     ],
+     "src": [
+      {
+       "s": "emc-6938",
+       "q": "Treatment of diabetes mellitus in adults, adolescents and children from the age of 6 years."
+      }
+     ]
+    }
+   ]
+  },
+  "restrictions": {
+   "items": [
+    {
+     "t": "Prescribe by brand name and device; where a brand has several strengths or devices, also state strength and device (SPS). Any switch between brands or formulations should be under strict supervision; a dose change may be needed.",
+     "tag": "Brand-name prescribing",
+     "src": [
+      {
+       "s": "sps-brand-name-examples",
+       "q": "NICE guidance recommends insulins are prescribed by brand name."
+      },
+      {
+       "s": "sps-brand-name-examples",
+       "q": "It is important to ensure patients receive an administration device they have been trained to use."
+      },
+      {
+       "s": "sps-insulin-confusion",
+       "q": "Where a single insulin brand is available in multiple strengths or delivery devices, using only a brand name is insufficient."
+      },
+      {
+       "s": "sps-brand-name-examples",
+       "q": "Manufacturers advise any switch between brands or formulation of insulin should be done under strict supervision; a change in dose may be required."
+      }
+     ]
+    },
+    {
+     "t": "100 units/mL and 300 units/mL are not bioequivalent and not directly interchangeable; switching needs a dose change and strict medical supervision (MHRA: dose adjustment is needed when switching either way).",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Lantus and Toujeo (insulin glargine 300 units/ml) are not bioequivalent and are not directly interchangeable."
+      },
+      {
+       "s": "emc-6938",
+       "q": "switching may result in the need for a change in dose and should only be done under strict medical supervision"
+      },
+      {
+       "s": "mhra-dsu-insulin-high-strength",
+       "q": "dose adjustment is needed when patients are switched from Lantus or other basal insulins to Toujeo or vice versa"
+      }
+     ]
+    },
+    {
+     "t": "Units are specific to each product and not the same as IU or units of other insulin analogues.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "These units are exclusive to Lantus and are not the same as IU or the units used to express the potency of other insulin analogues"
+      },
+      {
+       "s": "emc-6938",
+       "q": "These units are exclusive to Toujeo and are not the same as IU or the units used to express the potency of other insulin analogues"
+      }
+     ]
+    }
+   ]
+  },
+  "dosing": {
+   "items": [
+    {
+     "t": "Once daily at any time, but the same time each day; dose and timing adjusted individually. In type 2 diabetes it can be given with oral antidiabetics.",
+     "tag": "Diabetes mellitus (100 units/mL)",
+     "formulations": [
+      "insulin-glargine-100-pen",
+      "insulin-glargine-100-vial"
+     ],
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Lantus should be administered once daily at any time but at the same time each day."
+      },
+      {
+       "s": "emc-8098",
+       "q": "The dose regimen (dose and timing) should be individually adjusted."
+      },
+      {
+       "s": "emc-8098",
+       "q": "In patients with type 2 diabetes mellitus, Lantus can also be given together with orally active antidiabetic medicinal products."
+      }
+     ]
+    },
+    {
+     "t": "Switching from twice-daily NPH to once-daily 100 units/mL: reduce the basal dose by 20 to 30% for the first weeks. From 300 units/mL to 100 units/mL: reduce by about 20%. Monitor closely during and after the switch.",
+     "tag": "Switching to 100 units/mL",
+     "formulations": [
+      "insulin-glargine-100-pen",
+      "insulin-glargine-100-vial"
+     ],
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "should reduce their daily dose of basal insulin by 20-30% during the first weeks of treatment"
+      },
+      {
+       "s": "emc-8098",
+       "q": "should reduce their dose by approximately 20%"
+      },
+      {
+       "s": "emc-8098",
+       "q": "Close metabolic monitoring is recommended during the switch and in the initial weeks thereafter."
+      }
+     ]
+    },
+    {
+     "t": "Once daily at any time, preferably the same time each day (may be given up to 3 hours before or after the usual time). Type 1 diabetes: always with a mealtime short/rapid-acting insulin. Type 2 diabetes: start 0.2 units/kg once daily, then adjust.",
+     "tag": "Diabetes mellitus (300 units/mL)",
+     "formulations": [
+      "insulin-glargine-300-pen"
+     ],
+     "src": [
+      {
+       "s": "emc-6938",
+       "q": "Toujeo is a basal insulin for once-daily administration at any time of the day, preferably at the same time every day."
+      },
+      {
+       "s": "emc-6938",
+       "q": "When needed, patients can administer Toujeo up to 3 hours before or after their usual time of administration"
+      },
+      {
+       "s": "emc-6938",
+       "q": "In type 1 diabetes mellitus, Toujeo must be combined with short-/rapid-acting insulin to cover mealtime insulin requirements."
+      },
+      {
+       "s": "emc-6938",
+       "q": "The recommended daily starting dose is 0.2 units/kg followed by individual dose adjustments."
+      }
+     ]
+    },
+    {
+     "t": "Switching to 300 units/mL: from 100 units/mL unit-for-unit, but about 10-18% more may be needed; from once-daily basal insulin unit-for-unit; from twice-daily basal insulin start at 80% of the total daily basal dose. Back to 100 units/mL: reduce by about 20%.",
+     "tag": "Switching to/from 300 units/mL",
+     "formulations": [
+      "insulin-glargine-300-pen"
+     ],
+     "src": [
+      {
+       "s": "emc-6938",
+       "q": "this can be done on a unit-to-unit basis, but a higher Toujeo dose (approximately 10-18%) may be needed to achieve target ranges for plasma glucose levels"
+      },
+      {
+       "s": "emc-6938",
+       "q": "Switching from twice-daily basal insulins to once-daily Toujeo, the recommended initial Toujeo dose is 80% of the total daily dose of basal insulin that is being discontinued."
+      },
+      {
+       "s": "emc-6938",
+       "q": "When switching from Toujeo to insulin glargine 100 units/ml, the dose should be reduced (approximately by 20%) to reduce the risk of hypoglycaemia."
+      }
+     ]
+    },
+    {
+     "t": "Elderly: insulin needs may fall steadily as renal function declines.",
+     "tag": "Elderly (65 years and over)",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "In the elderly, progressive deterioration of renal function may lead to a steady decrease in insulin requirements."
+      }
+     ]
+    }
+   ]
+  },
+  "paediatric": {
+   "items": [
+    {
+     "t": "100 units/mL: established from 2 years (dose individualised); not established below 2 years (no data).",
+     "formulations": [
+      "insulin-glargine-100-pen",
+      "insulin-glargine-100-vial"
+     ],
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Safety and efficacy of Lantus have been established in adolescents and children aged 2 years and older (see section 5.1)."
+      },
+      {
+       "s": "emc-8098",
+       "q": "The safety and efficacy of Lantus have not been established. No data are available."
+      }
+     ]
+    },
+    {
+     "t": "300 units/mL: from 6 years, on the same principles as adults; when switching basal insulin, consider reducing basal and bolus doses. Not established below 6 years.",
+     "formulations": [
+      "insulin-glargine-300-pen"
+     ],
+     "src": [
+      {
+       "s": "emc-6938",
+       "q": "Toujeo can be used in adolescents and children from the age of 6 years based on the same principles as for adult patients"
+      },
+      {
+       "s": "emc-6938",
+       "q": "The safety and efficacy of Toujeo in children below 6 years of age have not been established. No data are available."
+      }
+     ]
+    }
+   ]
+  },
+  "contraindications": {
+   "items": [
+    {
+     "t": "Hypersensitivity to insulin glargine or any excipient.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+      },
+      {
+       "s": "emc-6938",
+       "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+      }
+     ]
+    }
+   ]
+  },
+  "cautions": {
+   "items": [
+    {
+     "t": "Not the insulin of choice for diabetic ketoacidosis: use intravenous regular insulin instead.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Lantus is not the insulin of choice for the treatment of diabetic ketoacidosis. Instead, regular insulin administered intravenously is recommended in such cases."
+      },
+      {
+       "s": "emc-6938",
+       "q": "Toujeo is not the insulin of choice for the treatment of diabetic ketoacidosis."
+      }
+     ]
+    },
+    {
+     "t": "Do not give intravenously: the usual subcutaneous dose given IV could cause severe hypoglycaemia. Do not mix with other insulins or dilute (100 units/mL). 300 units/mL must not be used in pumps.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Intravenous administration of the usual subcutaneous dose could result in severe hypoglycaemia."
+      },
+      {
+       "s": "emc-8098",
+       "q": "Lantus must not be mixed with any other insulin or diluted."
+      },
+      {
+       "s": "emc-6938",
+       "q": "Toujeo must not be used in insulin infusion pumps."
+      }
+     ]
+    },
+    {
+     "t": "Particular caution and more blood glucose monitoring where hypoglycaemia is especially dangerous: significant coronary or cerebral artery stenosis, proliferative retinopathy (especially if not treated with photocoagulation: risk of transient blindness).",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Particular caution should be exercised, and intensified blood glucose monitoring is advisable in patients in whom hypoglycaemic episodes might be of particular clinical relevance"
+      },
+      {
+       "s": "emc-8098",
+       "q": "such as in patients with significant stenoses of the coronary arteries or of the blood vessels supplying the brain"
+      },
+      {
+       "s": "emc-8098",
+       "q": "as well as in patients with proliferative retinopathy, particularly if not treated with photocoagulation (risk of transient amaurosis following hypoglycaemia)"
+      }
+     ]
+    },
+    {
+     "t": "Warning symptoms may be reduced or absent (much improved control, gradual onset, elderly, autonomic neuropathy, long-standing diabetes, psychiatric illness, some medicines). The long action may delay recovery from hypoglycaemia. Normal or low HbA1c: consider unrecognised (especially nocturnal) hypoglycaemia.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "The warning symptoms of hypoglycaemia may be changed, be less pronounced or be absent in certain risk groups."
+      },
+      {
+       "s": "emc-8098",
+       "q": "The prolonged effect of subcutaneous insulin glargine may delay recovery from hypoglycaemia."
+      },
+      {
+       "s": "emc-8098",
+       "q": "If normal or decreased values for glycated haemoglobin are noted, the possibility of recurrent, unrecognised (especially nocturnal) episodes of hypoglycaemia must be considered."
+      }
+     ]
+    },
+    {
+     "t": "Close monitoring (and possibly dose change) with: change of injection area, better insulin sensitivity, unusual exercise, intercurrent illness (vomiting, diarrhoea), poor or missed meals, alcohol, uncompensated endocrine disorders (e.g. hypothyroidism, anterior pituitary or adrenocortical insufficiency), some medicines.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Factors increasing the susceptibility to hypoglycaemia require particularly close monitoring and may necessitate dose adjustment."
+      },
+      {
+       "s": "emc-8098",
+       "q": "certain uncompensated endocrine disorders, (e.g. in hypothyroidism and in anterior pituitary or adrenocortical insufficiency)"
+      }
+     ]
+    },
+    {
+     "t": "Intercurrent illness: intensify metabolic monitoring, often test urine ketones and adjust the dose. In type 1 diabetes keep eating some carbohydrate and never omit insulin entirely.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Intercurrent illness requires intensified metabolic monitoring. In many cases urine tests for ketones are indicated, and often it is necessary to adjust the insulin dose."
+      },
+      {
+       "s": "emc-8098",
+       "q": "they must never omit insulin entirely"
+      }
+     ]
+    },
+    {
+     "t": "Rotate injection sites (lipodystrophy, cutaneous amyloidosis); monitor blood glucose after a site change.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Patients must be instructed to perform continuous rotation of the injection site to reduce the risk of developing lipodystrophy and cutaneous amyloidosis."
+      },
+      {
+       "s": "emc-8098",
+       "q": "A sudden change in the injection site to an unaffected area has been reported to result in hypoglycaemia."
+      }
+     ]
+    },
+    {
+     "t": "Medication errors: other insulins (especially short/rapid-acting) have been given by mistake; check the label before every injection. 300 units/mL: never withdraw from the pen with a syringe; use a new needle each time.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Insulin label must always be checked before each injection to avoid medication errors between insulin glargine and other insulins."
+      },
+      {
+       "s": "emc-6938",
+       "q": "the patients must be instructed to never use a syringe to remove Toujeo (insulin glargine 300 units/ml) from the Toujeo SoloStar pre-filled pen or Toujeo DoubleStar pre-filled pen"
+      }
+     ]
+    },
+    {
+     "t": "With pioglitazone: watch for heart failure, weight gain and oedema; stop pioglitazone if cardiac symptoms worsen.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "patients should be observed for signs and symptoms of heart failure, weight gain and oedema. Pioglitazone should be discontinued if any deterioration in cardiac symptoms occurs."
+      }
+     ]
+    }
+   ]
+  },
+  "interactions": {
+   "items": [
+    {
+     "t": "May enhance glucose lowering (hypoglycaemia): oral antidiabetics (300 units/mL SmPC: any anti-hyperglycaemic medicine), ACE inhibitors, disopyramide, fibrates, fluoxetine, MAOIs, pentoxifylline, propoxyphene, salicylates, sulfonamide antibiotics. Dose adjustment of insulin glargine may be required.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+      },
+      {
+       "s": "emc-8098",
+       "q": "Substances that may enhance the blood-glucose-lowering effect and increase susceptibility to hypoglycaemia include oral antidiabetic medicinal products"
+      },
+      {
+       "s": "emc-8098",
+       "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+      },
+      {
+       "s": "emc-6938",
+       "q": "increase susceptibility to hypoglycaemia include anti-hyperglycaemic medicinal products"
+      }
+     ]
+    },
+    {
+     "t": "May reduce glucose lowering: corticosteroids, danazol, diazoxide, diuretics, glucagon, isoniazid, oestrogens and progestogens, phenothiazines, somatropin, sympathomimetics (e.g. adrenaline, salbutamol, terbutaline), thyroid hormones, atypical antipsychotics (e.g. clozapine, olanzapine), protease inhibitors.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Substances that may reduce the blood-glucose-lowering effect include corticosteroids, danazol, diazoxide, diuretics, glucagon, isoniazid, oestrogens and progestogens, phenothiazine derivatives, somatropin"
+      },
+      {
+       "s": "emc-8098",
+       "q": "sympathomimetic medicinal products (e.g. epinephrine [adrenaline], salbutamol, terbutaline), thyroid hormones, atypical antipsychotic medicinal products (e.g. clozapine and olanzapine) and protease inhibitors"
+      }
+     ]
+    },
+    {
+     "t": "Beta-blockers, clonidine, lithium or alcohol may strengthen or weaken the effect; pentamidine may cause hypoglycaemia then hyperglycaemia. Beta-blockers, clonidine, guanethidine and reserpine may reduce or abolish adrenergic warning signs of hypoglycaemia.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Beta-blockers, clonidine, lithium salts or alcohol may either potentiate or weaken the blood-glucose-lowering effect of insulin."
+      },
+      {
+       "s": "emc-8098",
+       "q": "Pentamidine may cause hypoglycaemia, which may sometimes be followed by hyperglycaemia."
+      },
+      {
+       "s": "emc-8098",
+       "q": "the signs of adrenergic counter-regulation may be reduced or absent"
+      }
+     ]
+    },
+    {
+     "t": "GLP-1 receptor agonists (MHRA): when one is added to insulin, an insulin dose reduction may be considered to lower hypoglycaemia risk, but reduce insulin stepwise with blood glucose self-monitoring; abrupt reduction or stopping of insulin has led to diabetic ketoacidosis. GLP-1 receptor agonists are not substitutes for insulin.",
+     "tag": "GLP-1 receptor agonists (MHRA)",
+     "src": [
+      {
+       "s": "mhra-dsu-glp1-dka-insulin-2019",
+       "q": "blood glucose self-monitoring is necessary when adjusting the dose of insulin, particularly when GLP-1 receptor agonist therapy is initiated and insulin is reduced"
+      },
+      {
+       "s": "mhra-dsu-glp1-dka-insulin-2019",
+       "q": "Abrupt discontinuation or reduction in insulin doses can lead to poor glycaemic control, with a risk of diabetic ketoacidosis."
+      },
+      {
+       "s": "mhra-dsu-glp1-dka-insulin-2019",
+       "q": "GLP-1 receptor agonists are not substitutes for insulin."
+      }
+     ]
+    }
+   ]
+  },
+  "renal": {
+   "items": [
+    {
+     "t": "Insulin requirement may be lower in renal impairment (reduced insulin metabolism). No eGFR/CrCl thresholds given. The 300 units/mL SmPC states it can be used in renal impairment.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "In patients with renal impairment, insulin requirements may be diminished due to reduced insulin metabolism."
+      },
+      {
+       "s": "emc-6938",
+       "q": "Toujeo can be used in elderly people, renal and hepatic impaired patients"
+      }
+     ]
+    }
+   ]
+  },
+  "hepatic": {
+   "items": [
+    {
+     "t": "Insulin requirement may be lower in hepatic impairment (less gluconeogenesis and insulin metabolism).",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "In patients with hepatic impairment, insulin requirements may be diminished due to reduced capacity for gluconeogenesis and reduced insulin metabolism."
+      },
+      {
+       "s": "emc-6938",
+       "q": "In patients with hepatic impairment, insulin requirements may be diminished due to reduced capacity for gluconeogenesis and reduced insulin metabolism."
+      }
+     ]
+    }
+   ]
+  },
+  "pregnancy": {
+   "items": [
+    {
+     "t": "May be considered in pregnancy if clinically needed: over 1,000 pregnancy outcomes with insulin glargine 100 units/mL showed no specific malformative or fetal/neonatal toxicity (no clinical experience with 300 units/mL in pregnancy). Keep good control; requirements may fall in the first trimester and rise later, and drop rapidly after delivery (hypoglycaemia risk). Monitor glucose carefully.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "The use of Lantus may be considered during pregnancy, if clinically needed."
+      },
+      {
+       "s": "emc-6938",
+       "q": "There is no clinical experience with use of Toujeo in pregnant women."
+      },
+      {
+       "s": "emc-6938",
+       "q": "The use of Toujeo may be considered during pregnancy, if clinically needed."
+      },
+      {
+       "s": "emc-8098",
+       "q": "Immediately after delivery, insulin requirements decline rapidly (increased risk of hypoglycaemia). Careful monitoring of glucose control is essential."
+      }
+     ]
+    },
+    {
+     "t": "UKTIS/BUMPS: insulin can be used in pregnancy to treat diabetes; there are no known risks to the baby. Insulin around delivery can cause short-lived low blood glucose in the newborn, which is checked after birth.",
+     "tag": "UKTIS/BUMPS",
+     "src": [
+      {
+       "s": "bumps-insulin",
+       "q": "Insulin can be used in pregnancy to treat diabetes."
+      },
+      {
+       "s": "bumps-insulin",
+       "q": "There are no known risks to your baby from using insulin in pregnancy."
+      },
+      {
+       "s": "bumps-insulin",
+       "q": "Insulin use around the time of delivery can lead to your baby having low blood sugar for a short period after birth."
+      }
+     ]
+    }
+   ]
+  },
+  "breastfeeding": {
+   "items": [
+    {
+     "t": "Not known if excreted in milk; no metabolic effect on the infant is expected (digested in the gut). Breastfeeding women may need insulin dose and diet changes.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "No metabolic effects of ingested insulin glargine on the breast-fed newborn/infant are anticipated since insulin glargine as a peptide is digested into aminoacids in the human gastrointestinal tract."
+      },
+      {
+       "s": "emc-8098",
+       "q": "Breast-feeding women may require adjustments in insulin dose and diet."
+      }
+     ]
+    },
+    {
+     "t": "SPS: any insulin can be used during breastfeeding (insulin is a preferred choice); as a precaution, monitor the infant for signs of hypoglycaemia (drowsiness, pallor, sweating or shakiness) and for adequate weight gain.",
+     "tag": "SPS",
+     "src": [
+      {
+       "s": "sps-antidiabetic-bf",
+       "q": "Any insulin can be used during breastfeeding, although monitoring is still recommended."
+      },
+      {
+       "s": "sps-antidiabetic-bf",
+       "q": "As a precaution, monitor the infant for signs of hypoglycaemia, including drowsiness, appearing pale, or being sweaty or shaky. Monitor for adequate weight gain."
+      }
+     ]
+    }
+   ]
+  },
+  "reproductive": {
+   "items": [
+    {
+     "t": "Animal studies show no direct harm to fertility.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Animal studies do not indicate direct harmful effects with respect to fertility."
+      }
+     ]
+    }
+   ]
+  },
+  "adverseCommon": {
+   "items": [
+    {
+     "t": "Hypoglycaemia: very common.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Hypoglycaemia (very common), in general the most frequent adverse reaction of insulin therapy"
+      }
+     ]
+    },
+    {
+     "t": "Injection-site reactions (redness, pain, itching, hives, swelling, inflammation) usually settle in days to weeks. 300 units/mL trials: injection-site reactions 2.5% (2.8% with 100 units/mL).",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Injection site reactions include redness, pain, itching, hives, swelling, or inflammation."
+      },
+      {
+       "s": "emc-6938",
+       "q": "the incidence of injection site reactions was similar in Toujeo-treated patients (2.5%) and insulin glargine 100 units/ml-treated patients (2.8%)"
+      }
+     ]
+    },
+    {
+     "t": "Lipohypertrophy, lipoatrophy and cutaneous amyloidosis at injection sites (delay absorption). A large change in glucose control may cause temporary visual impairment or temporary worsening of retinopathy.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Lipodystrophy and cutaneous amyloidosis may occur at the injection site and delay local insulin absorption."
+      },
+      {
+       "s": "emc-8098",
+       "q": "A marked change in glycaemic control may cause temporary visual impairment"
+      }
+     ]
+    },
+    {
+     "t": "The SmPC table also lists allergic reactions, dysgeusia, retinopathy, myalgia and oedema; their frequency categories were not legible in the fetched text.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Dysgeusia Eyes disorders Visual impairment Retinopathy"
+      }
+     ]
+    }
+   ]
+  },
+  "adverseSerious": {
+   "items": [
+    {
+     "t": "Severe or prolonged hypoglycaemia may be life-threatening; recurrent attacks may cause neurological damage. Mild: oral carbohydrate. Severe (coma, seizure, neurological impairment): glucagon or concentrated IV glucose; continue carbohydrate and observation (hypoglycaemia may recur).",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Severe hypoglycaemic attacks, especially if recurrent, may lead to neurological damage. Prolonged or severe hypoglycaemic episodes may be life-threatening."
+      },
+      {
+       "s": "emc-8098",
+       "q": "More severe episodes with coma, seizure, or neurologic impairment may be treated with glucagon or concentrated intravenous glucose."
+      },
+      {
+       "s": "emc-8098",
+       "q": "Sustained carbohydrate intake and observation may be necessary because hypoglycaemia may recur after apparent clinical recovery."
+      }
+     ]
+    },
+    {
+     "t": "Immediate-type allergic reactions are rare but may be life-threatening (generalised skin reaction, angio-oedema, bronchospasm, hypotension, shock).",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Such reactions to insulin (including insulin glargine) or the excipients may, for example, be associated with generalised skin reactions, angio-oedema, bronchospasm, hypotension and shock, and may be life-threatening."
+      }
+     ]
+    },
+    {
+     "t": "Severe hypoglycaemia in proliferative retinopathy may cause transient blindness (amaurosis).",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "In patients with proliferative retinopathy, particularly if not treated with photocoagulation, severe hypoglycaemic episodes may result in transient amaurosis."
+      }
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "items": [
+    {
+     "t": "Close metabolic monitoring during any switch and in the first weeks after.",
+     "tag": "ongoing",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Close metabolic monitoring is recommended during the switch and in the initial weeks thereafter."
+      },
+      {
+       "s": "emc-6938",
+       "q": "Close metabolic monitoring is recommended during the switch and in the initial weeks thereafter."
+      }
+     ]
+    },
+    {
+     "t": "Before changing the dose for poor control or frequent hypo/hyperglycaemia, first review adherence, injection sites and technique.",
+     "tag": "ongoing",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "the patient's adherence to the prescribed treatment regimen, injection sites and proper injection technique and all other relevant factors must be reviewed before dose adjustment is considered"
+      }
+     ]
+    },
+    {
+     "t": "Normal or low HbA1c: look for unrecognised nocturnal hypoglycaemia.",
+     "tag": "ongoing",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "the possibility of recurrent, unrecognised (especially nocturnal) episodes of hypoglycaemia must be considered"
+      }
+     ]
+    },
+    {
+     "t": "MHRA (high-strength, combination and biosimilar insulins): monitor glucose closely after starting a new insulin product and in the following weeks; doses and timing of other insulins and antidiabetic treatment may need adjusting.",
+     "tag": "ongoing",
+     "src": [
+      {
+       "s": "mhra-dsu-insulin-high-strength",
+       "q": "Monitor glucose levels closely after starting a new treatment and in the following weeks."
+      },
+      {
+       "s": "mhra-dsu-insulin-high-strength",
+       "q": "You may need to adjust doses and timing of concurrent rapid acting or short acting insulin products and other antidiabetic treatments."
+      }
+     ]
+    }
+   ]
+  },
+  "administration": {
+   "items": [
+    {
+     "t": "Subcutaneous only; abdomen, deltoid or thigh (no clinically relevant difference between these sites for 100 units/mL); rotate sites. 100 units/mL pen: subcutaneous only, use a vial if a syringe is needed.",
+     "formulations": [
+      "insulin-glargine-100-pen",
+      "insulin-glargine-100-vial"
+     ],
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "There are no clinically relevant differences in serum insulin or glucose levels after abdominal, deltoid or thigh administration of Lantus."
+      },
+      {
+       "s": "emc-8098",
+       "q": "Lantus SoloStar 100 units/ml in pre-filled pen is only suitable for subcutaneous injections."
+      }
+     ]
+    },
+    {
+     "t": "300 units/mL: subcutaneous into abdominal wall, deltoid or thigh; the pen dose window shows the units to inject (1 to 80 units per injection in 1-unit steps with the standard pen); no recalculation. New needle for each injection; never share pens.",
+     "formulations": [
+      "insulin-glargine-300-pen"
+     ],
+     "src": [
+      {
+       "s": "emc-6938",
+       "q": "Toujeo is administered subcutaneously by injection in the abdominal wall, the deltoid or the thigh."
+      },
+      {
+       "s": "emc-6938",
+       "q": "With Toujeo SoloStar pre-filled pen, a dose of 1-80 units per single injection, in steps of 1 unit, can be injected."
+      },
+      {
+       "s": "emc-6938",
+       "q": "insulin pens should never be used for more than one person, even when the needle is changed"
+      }
+     ]
+    },
+    {
+     "t": "Storage: unopened in a refrigerator (2 to 8°C), not frozen, protected from light. In use: 100 units/mL pens up to 4 weeks not above 30°C, not refrigerated; 10 mL vials up to 4 weeks not above 30°C (5 mL vials not above 25°C); 300 units/mL pens up to 6 weeks below 30°C, not refrigerated.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "The medicinal product may be stored for a maximum of 4 weeks not above 30°C and away from direct heat or direct light. The pens in use must not be stored in the refrigerator."
+      },
+      {
+       "s": "emc-8097",
+       "q": "The medicinal product may be stored for a maximum of 4 weeks not above 25°C"
+      },
+      {
+       "s": "emc-6938",
+       "q": "The medicinal product may be stored for a maximum of 6 weeks below 30°C and away from direct heat or direct light."
+      }
+     ]
+    }
+   ]
+  },
+  "counselling": {
+   "items": [
+    {
+     "t": "Check the label before every injection (mix-ups with other insulins have happened).",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Insulin label must always be checked before each injection to avoid medication errors between insulin glargine and other insulins."
+      }
+     ]
+    },
+    {
+     "t": "Never stop insulin entirely during illness (type 1 diabetes); keep some carbohydrate intake.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "they must never omit insulin entirely"
+      }
+     ]
+    },
+    {
+     "t": "300 units/mL: if a dose is forgotten, check blood glucose and go back to the usual once-daily schedule; do not double the dose.",
+     "formulations": [
+      "insulin-glargine-300-pen"
+     ],
+     "src": [
+      {
+       "s": "emc-6938",
+       "q": "Patients who forget a dose, should be advised to check their blood sugar and then resume their usual once-daily dosing schedule."
+      },
+      {
+       "s": "emc-6938",
+       "q": "Patients should be informed not to inject a double dose to make up for a forgotten dose."
+      }
+     ]
+    },
+    {
+     "t": "Take precautions to avoid hypoglycaemia when driving.",
+     "src": [
+      {
+       "s": "emc-8098",
+       "q": "Patients should be advised to take precautions to avoid hypoglycaemia whilst driving."
+      }
+     ]
+    },
+    {
+     "t": "MHRA: cutaneous amyloidosis can occur at insulin injection sites and affect glycaemic control. Remind patients to rotate sites within the same body region; consider amyloidosis when a patient has lumps at injection sites; advise patients to contact their doctor before moving away from a lumpy area (a sudden change may cause hypoglycaemia) and to monitor blood glucose after a change of site.",
+     "tag": "Injection sites (MHRA)",
+     "src": [
+      {
+       "s": "mhra-dsu-insulin-amyloidosis",
+       "q": "remind patients to rotate injection sites within the same body region to reduce or prevent the risk of cutaneous amyloidosis and other skin reactions"
+      },
+      {
+       "s": "mhra-dsu-insulin-amyloidosis",
+       "q": "consider cutaneous amyloidosis as a differential diagnosis to lipodystrophy when a patient presents with subcutaneous lumps at an insulin injection site"
+      },
+      {
+       "s": "mhra-dsu-insulin-amyloidosis",
+       "q": "before changing injection site since a sudden change may result in hypoglycaemia"
+      },
+      {
+       "s": "mhra-dsu-insulin-amyloidosis",
+       "q": "to monitor carefully blood glucose after a change in injection site"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "rules": [
+  {
+   "id": "insulin-glargine:allergy:insulin-glargine",
+   "kind": "allergy",
+   "level": "contraindicated",
+   "med": "insulin-glargine",
+   "allergen": [
+    "insulin-glargine"
+   ],
+   "concern": "Hypersensitivity to insulin glargine",
+   "consequence": "Hypersensitivity reaction.",
+   "action": "Do not use.",
+   "sourceWording": "4.3 Contraindications: Hypersensitivity",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+    },
+    {
+     "s": "emc-6938",
+     "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:condition:diabetic-ketoacidosis",
+   "kind": "condition",
+   "level": "avoid",
+   "med": "insulin-glargine",
+   "condition": "diabetic-ketoacidosis",
+   "concern": "Treatment of diabetic ketoacidosis",
+   "consequence": "Long-acting subcutaneous insulin glargine is not the insulin of choice to treat ketoacidosis.",
+   "action": "Do not rely on it to treat ketoacidosis: the SmPC recommends intravenous regular insulin for treatment. The SmPC does not address stopping or continuing basal insulin during ketoacidosis.",
+   "sourceWording": "is not the insulin of choice",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "Lantus is not the insulin of choice for the treatment of diabetic ketoacidosis. Instead, regular insulin administered intravenously is recommended in such cases."
+    },
+    {
+     "s": "emc-6938",
+     "q": "Toujeo is not the insulin of choice for the treatment of diabetic ketoacidosis."
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:condition:ischaemic-heart-disease",
+   "kind": "condition",
+   "level": "caution",
+   "med": "insulin-glargine",
+   "condition": "ischaemic-heart-disease",
+   "concern": "Significant coronary artery stenosis",
+   "consequence": "Hypoglycaemia may cause cardiac complications.",
+   "action": "Particular caution; intensified blood glucose monitoring advisable.",
+   "sourceWording": "Particular caution should be exercised",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "Particular caution should be exercised, and intensified blood glucose monitoring is advisable in patients in whom hypoglycaemic episodes might be of particular clinical relevance"
+    },
+    {
+     "s": "emc-8098",
+     "q": "such as in patients with significant stenoses of the coronary arteries"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:condition:cerebrovascular-disease",
+   "kind": "condition",
+   "level": "caution",
+   "med": "insulin-glargine",
+   "condition": "cerebrovascular-disease",
+   "concern": "Significant stenosis of arteries supplying the brain",
+   "consequence": "Hypoglycaemia may cause cerebral complications.",
+   "action": "Particular caution; intensified blood glucose monitoring advisable.",
+   "sourceWording": "Particular caution should be exercised",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "Particular caution should be exercised, and intensified blood glucose monitoring is advisable in patients in whom hypoglycaemic episodes might be of particular clinical relevance"
+    },
+    {
+     "s": "emc-8098",
+     "q": "of the blood vessels supplying the brain (risk of cardiac or cerebral complications of hypoglycaemia)"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:condition:retinopathy",
+   "kind": "condition",
+   "level": "caution",
+   "med": "insulin-glargine",
+   "condition": "retinopathy-maculopathy",
+   "concern": "Proliferative retinopathy (especially without photocoagulation)",
+   "consequence": "Severe hypoglycaemia may cause transient amaurosis.",
+   "action": "Particular caution; intensified blood glucose monitoring advisable.",
+   "sourceWording": "Particular caution should be exercised",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "Particular caution should be exercised, and intensified blood glucose monitoring is advisable in patients in whom hypoglycaemic episodes might be of particular clinical relevance"
+    },
+    {
+     "s": "emc-8098",
+     "q": "as well as in patients with proliferative retinopathy, particularly if not treated with photocoagulation (risk of transient amaurosis following hypoglycaemia)"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:condition:hypothyroidism",
+   "kind": "condition",
+   "level": "monitor",
+   "med": "insulin-glargine",
+   "condition": "hypothyroidism",
+   "concern": "Uncompensated hypothyroidism",
+   "consequence": "Increased susceptibility to hypoglycaemia.",
+   "action": "Particularly close monitoring; dose adjustment may be needed.",
+   "sourceWording": "require particularly close monitoring",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "Factors increasing the susceptibility to hypoglycaemia require particularly close monitoring and may necessitate dose adjustment."
+    },
+    {
+     "s": "emc-8098",
+     "q": "certain uncompensated endocrine disorders, (e.g. in hypothyroidism and in anterior pituitary or adrenocortical insufficiency)"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:condition:adrenal-insufficiency",
+   "kind": "condition",
+   "level": "monitor",
+   "med": "insulin-glargine",
+   "condition": "adrenal-insufficiency",
+   "concern": "Uncompensated adrenocortical or anterior pituitary insufficiency",
+   "consequence": "Increased susceptibility to hypoglycaemia.",
+   "action": "Particularly close monitoring; dose adjustment may be needed.",
+   "sourceWording": "require particularly close monitoring",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "Factors increasing the susceptibility to hypoglycaemia require particularly close monitoring and may necessitate dose adjustment."
+    },
+    {
+     "s": "emc-8098",
+     "q": "certain uncompensated endocrine disorders, (e.g. in hypothyroidism and in anterior pituitary or adrenocortical insufficiency)"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:condition:renal-impairment",
+   "kind": "condition",
+   "level": "info",
+   "med": "insulin-glargine",
+   "condition": "renal-impairment",
+   "concern": "Renal impairment",
+   "consequence": "Insulin requirement may be diminished (reduced insulin metabolism).",
+   "action": "No threshold or specific adjustment stated; adjust to blood glucose.",
+   "sourceWording": "may be diminished",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "In patients with renal impairment, insulin requirements may be diminished due to reduced insulin metabolism."
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:hepatic:any",
+   "kind": "hepatic",
+   "level": "info",
+   "med": "insulin-glargine",
+   "hepatic": [
+    "any"
+   ],
+   "concern": "Hepatic impairment",
+   "consequence": "Insulin requirement may be diminished.",
+   "action": "No specific adjustment stated; adjust to blood glucose.",
+   "sourceWording": "may be diminished",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "In patients with hepatic impairment, insulin requirements may be diminished due to reduced capacity for gluconeogenesis and reduced insulin metabolism."
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:age:lt2",
+   "kind": "age",
+   "level": "info",
+   "med": "insulin-glargine",
+   "formulations": [
+    "insulin-glargine-100-pen",
+    "insulin-glargine-100-vial"
+   ],
+   "age": {
+    "minYears": 0,
+    "maxYears": 2
+   },
+   "concern": "Child under 2 years",
+   "consequence": "Safety and efficacy not established; no data.",
+   "action": "Not licensed below 2 years.",
+   "sourceWording": "have not been established",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "The safety and efficacy of Lantus have not been established. No data are available."
+    },
+    {
+     "s": "emc-8098",
+     "q": "Treatment of diabetes mellitus in adults, adolescents and children aged 2 years and above."
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:age:lt6-300",
+   "kind": "age",
+   "level": "info",
+   "med": "insulin-glargine",
+   "formulations": [
+    "insulin-glargine-300-pen"
+   ],
+   "age": {
+    "minYears": 0,
+    "maxYears": 6
+   },
+   "concern": "Child under 6 years (300 units/mL)",
+   "consequence": "Safety and efficacy not established; no data.",
+   "action": "Not licensed below 6 years.",
+   "sourceWording": "have not been established",
+   "src": [
+    {
+     "s": "emc-6938",
+     "q": "The safety and efficacy of Toujeo in children below 6 years of age have not been established. No data are available."
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:pregnancy:monitor",
+   "kind": "pregnancy",
+   "level": "monitor",
+   "med": "insulin-glargine",
+   "concern": "Pregnancy",
+   "consequence": "Insulin requirements usually fall in the first trimester and rise in the second and third; poor control harms the pregnancy.",
+   "action": "May be considered if clinically needed. Monitor glucose control carefully, especially just after delivery.",
+   "sourceWording": "Careful monitoring of glucose control",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "The use of Lantus may be considered during pregnancy, if clinically needed."
+    },
+    {
+     "s": "emc-8098",
+     "q": "Careful monitoring of glucose control is essential."
+    },
+    {
+     "s": "emc-6938",
+     "q": "There is no clinical experience with use of Toujeo in pregnant women."
+    },
+    {
+     "s": "bumps-insulin",
+     "q": "Insulin can be used in pregnancy to treat diabetes."
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:breastfeeding:sps",
+   "kind": "breastfeeding",
+   "level": "monitor",
+   "med": "insulin-glargine",
+   "concern": "Breastfeeding",
+   "consequence": "Insulin is compatible with breastfeeding; maternal insulin dose and diet may need adjusting.",
+   "action": "Can be used (SPS: any insulin). Monitor the infant for signs of hypoglycaemia and weight gain; adjust the maternal dose as needed.",
+   "sourceWording": "monitoring is still recommended",
+   "src": [
+    {
+     "s": "sps-antidiabetic-bf",
+     "q": "Any insulin can be used during breastfeeding, although monitoring is still recommended."
+    },
+    {
+     "s": "sps-antidiabetic-bf",
+     "q": "As a precaution, monitor the infant for signs of hypoglycaemia, including drowsiness, appearing pale, or being sweaty or shaky."
+    },
+    {
+     "s": "emc-8098",
+     "q": "Breast-feeding women may require adjustments in insulin dose and diet."
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:glp1-agonist",
+   "kind": "interaction",
+   "level": "monitor",
+   "med": "insulin-glargine",
+   "other": "group:glp1-agonist",
+   "effect": "hypoglycaemia",
+   "concern": "GLP-1 receptor agonist with insulin",
+   "consequence": "Additive glucose lowering (hypoglycaemia); abrupt insulin reduction when starting a GLP-1 receptor agonist has caused diabetic ketoacidosis (MHRA).",
+   "action": "If the insulin dose is reduced, do it stepwise with blood glucose self-monitoring; do not stop or cut insulin abruptly.",
+   "sourceWording": "blood glucose self-monitoring is necessary",
+   "src": [
+    {
+     "s": "mhra-dsu-glp1-dka-insulin-2019",
+     "q": "blood glucose self-monitoring is necessary when adjusting the dose of insulin, particularly when GLP-1 receptor agonist therapy is initiated and insulin is reduced"
+    },
+    {
+     "s": "mhra-dsu-glp1-dka-insulin-2019",
+     "q": "Abrupt discontinuation or reduction in insulin doses can lead to poor glycaemic control, with a risk of diabetic ketoacidosis."
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:oral-antidiabetic",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "formulations": [
+    "insulin-glargine-100-pen",
+    "insulin-glargine-100-vial"
+   ],
+   "other": "group:oral-antidiabetic",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "Substances that may enhance the blood-glucose-lowering effect and increase susceptibility to hypoglycaemia include oral antidiabetic medicinal products"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:antidiabetic",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "formulations": [
+    "insulin-glargine-300-pen"
+   ],
+   "other": "group:antidiabetic",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "increase susceptibility to hypoglycaemia include anti-hyperglycaemic medicinal products"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:ace-inhibitor",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:ace-inhibitor",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    },
+    {
+     "s": "emc-6938",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:fibrate",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:fibrate",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    },
+    {
+     "s": "emc-6938",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:fluoxetine",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "fluoxetine",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    },
+    {
+     "s": "emc-6938",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:maoi",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:maoi",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    },
+    {
+     "s": "emc-6938",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:salicylate",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:salicylate",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    },
+    {
+     "s": "emc-6938",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:sulfonamide",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:sulfonamide",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    },
+    {
+     "s": "emc-6938",
+     "q": "angiotensin converting enzyme (ACE) inhibitors, disopyramide, fibrates, fluoxetine, monoamine oxidase (MAO) inhibitors, pentoxifylline, propoxyphene, salicylates and sulfonamide antibiotics"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:beta-blocker",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:beta-blocker",
+   "effect": "hypoglycaemia",
+   "concern": "Beta-blocker: masked hypoglycaemia warning signs and changed insulin effect",
+   "consequence": "Early warning symptoms of hypoglycaemia may be reduced or absent; insulin requirement may change.",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "Beta-blockers, clonidine, lithium salts or alcohol may either potentiate or weaken the blood-glucose-lowering effect of insulin."
+    },
+    {
+     "s": "emc-8098",
+     "q": "under the influence of sympatholytic medicinal products such as beta-blockers, clonidine, guanethidine and reserpine, the signs of adrenergic counter-regulation may be reduced or absent"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:corticosteroid",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:corticosteroid",
+   "concern": "Reduced glucose-lowering effect of insulin",
+   "consequence": "May increase the insulin requirement (higher blood glucose).",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "Substances that may reduce the blood-glucose-lowering effect include corticosteroids, danazol, diazoxide, diuretics, glucagon, isoniazid, oestrogens and progestogens, phenothiazine derivatives, somatropin"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:diuretic",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:diuretic",
+   "concern": "Reduced glucose-lowering effect of insulin",
+   "consequence": "May increase the insulin requirement (higher blood glucose).",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "Substances that may reduce the blood-glucose-lowering effect include corticosteroids, danazol, diazoxide, diuretics, glucagon, isoniazid, oestrogens and progestogens, phenothiazine derivatives, somatropin"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:progestogen",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:progestogen",
+   "concern": "Reduced glucose-lowering effect of insulin",
+   "consequence": "May increase the insulin requirement (higher blood glucose).",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "Substances that may reduce the blood-glucose-lowering effect include corticosteroids, danazol, diazoxide, diuretics, glucagon, isoniazid, oestrogens and progestogens, phenothiazine derivatives, somatropin"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:sympathomimetic",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:sympathomimetic",
+   "concern": "Reduced glucose-lowering effect of insulin",
+   "consequence": "May increase the insulin requirement (higher blood glucose).",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "sympathomimetic medicinal products (e.g. epinephrine [adrenaline], salbutamol, terbutaline), thyroid hormones"
+    },
+    {
+     "s": "emc-6938",
+     "q": "sympathomimetic medicinal products (e.g. epinephrine [adrenaline], salbutamol, terbutaline), thyroid hormones"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:salbutamol",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "salbutamol",
+   "concern": "Reduced glucose-lowering effect of insulin",
+   "consequence": "May increase the insulin requirement (higher blood glucose).",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "sympathomimetic medicinal products (e.g. epinephrine [adrenaline], salbutamol, terbutaline), thyroid hormones"
+    },
+    {
+     "s": "emc-6938",
+     "q": "sympathomimetic medicinal products (e.g. epinephrine [adrenaline], salbutamol, terbutaline), thyroid hormones"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:interaction:thyroid-hormone",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "other": "group:thyroid-hormone",
+   "concern": "Reduced glucose-lowering effect of insulin",
+   "consequence": "May increase the insulin requirement (higher blood glucose).",
+   "action": "Dose adjustment of insulin glargine may be required; adjust to blood glucose.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "sympathomimetic medicinal products (e.g. epinephrine [adrenaline], salbutamol, terbutaline), thyroid hormones"
+    },
+    {
+     "s": "emc-6938",
+     "q": "sympathomimetic medicinal products (e.g. epinephrine [adrenaline], salbutamol, terbutaline), thyroid hormones"
+    }
+   ]
+  },
+  {
+   "id": "insulin-glargine:condition:hormonal-contraception",
+   "kind": "condition",
+   "level": "dose",
+   "med": "insulin-glargine",
+   "condition": "hormonal-contraception",
+   "concern": "Oestrogen or progestogen use",
+   "consequence": "May reduce the glucose-lowering effect.",
+   "action": "Dose adjustment of insulin glargine may be required.",
+   "sourceWording": "may require dose adjustment of insulin glargine",
+   "src": [
+    {
+     "s": "emc-8098",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-6938",
+     "q": "A number of substances affect glucose metabolism and may require dose adjustment of insulin glargine."
+    },
+    {
+     "s": "emc-8098",
+     "q": "Substances that may reduce the blood-glucose-lowering effect include corticosteroids, danazol, diazoxide, diuretics, glucagon, isoniazid, oestrogens and progestogens, phenothiazine derivatives, somatropin"
+    }
+   ]
+  }
+ ]
+}

@@ -925,6 +925,62 @@
           "q": "This should be taken in to account when patients are receiving concomitant therapy."
         }
       ]
+    },
+    {
+      "id": "calcium-carbonate:interaction:thiazide",
+      "kind": "interaction",
+      "med": "calcium-carbonate",
+      "level": "caution",
+      "other": "group:thiazide",
+      "concern": "Calcium with thiazide diuretics",
+      "consequence": "Thiazides reduce urinary calcium excretion: risk of hypercalcaemia.",
+      "action": "Consider the risk of hypercalcaemia.",
+      "sourceWording": "The risk of hypercalcaemia should be considered",
+      "src": [
+        {
+          "s": "emc-1295",
+          "q": "The risk of hypercalcaemia should be considered in patients taking thiazide diuretics since these drugs can reduce urinary calcium excretion."
+        }
+      ]
+    },
+    {
+      "id": "calcium-carbonate:interaction:tetracycline",
+      "kind": "interaction",
+      "med": "calcium-carbonate",
+      "level": "caution",
+      "other": "group:tetracycline",
+      "effect": "reduced-absorption",
+      "concern": "Calcium reduces tetracycline absorption (calcium carbonate SmPC)",
+      "consequence": "Reduced antibiotic absorption.",
+      "action": "Allow at least 4 hours before taking the calcium.",
+      "sourceWording": "It is advisable to allow a minimum period of four hours",
+      "src": [
+        {
+          "s": "emc-1295",
+          "q": "Calcium salts may reduce the absorption of thyroxine, bisphosphonates, sodium fluoride, quinolone and tetracycline antibiotics or iron."
+        },
+        {
+          "s": "emc-1295",
+          "q": "It is advisable to allow a minimum period of four hours before taking the calcium."
+        }
+      ]
+    },
+    {
+      "id": "calcium-carbonate:interaction:vitamin-d",
+      "kind": "interaction",
+      "med": "calcium-carbonate",
+      "level": "info",
+      "other": "group:vitamin-d",
+      "concern": "Other vitamin D (and calcium) supplements",
+      "consequence": "Calcium and vitamin D from other sources add to the total intake.",
+      "action": "Make allowances for calcium and vitamin D supplements from other sources.",
+      "sourceWording": "Allowances should be made",
+      "src": [
+        {
+          "s": "emc-1295",
+          "q": "Allowances should be made for calcium and vitamin D supplements from other sources."
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,468 @@
+{
+  "id": "oseltamivir",
+  "name": "Oseltamivir",
+  "ingredients": ["oseltamivir"],
+  "className": "Antiviral for systemic use (neuraminidase inhibitor)",
+  "groups": ["antiviral"],
+  "searchTerms": ["oseltamivir phosphate"],
+  "formulations": [
+    {
+      "id": "oseltamivir-cap",
+      "label": "Capsules",
+      "route": "oral",
+      "strengths": "30 mg, 45 mg, 75 mg",
+      "release": "immediate",
+      "src": [
+        { "s": "emc-1194", "q": "Each hard capsule contains oseltamivir phosphate equivalent to 30 mg of oseltamivir." },
+        { "s": "emc-1194", "q": "Each hard capsule contains oseltamivir phosphate equivalent to 75 mg of oseltamivir." }
+      ],
+      "sourceIds": ["emc-1194"]
+    },
+    {
+      "id": "oseltamivir-susp",
+      "label": "Powder for oral suspension",
+      "route": "oral",
+      "strengths": "6 mg/mL (reconstituted)",
+      "release": "immediate",
+      "src": [{ "s": "emc-9108", "q": "Each ml of reconstituted suspension contains oseltamivir phosphate equivalent to 6 mg of oseltamivir." }],
+      "sourceIds": ["emc-9108"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "availability": { "status": "uk" },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Treatment of influenza in adults and children including full-term neonates with typical symptoms when influenza is circulating; efficacy shown when started within 2 days of symptom onset.",
+          "tag": "Treatment",
+          "src": [
+            { "s": "emc-1194", "q": "Tamiflu is indicated in adults and children including full term neonates who present with symptoms typical of influenza, when influenza virus is circulating in the community." },
+            { "s": "emc-1194", "q": "Efficacy has been demonstrated when treatment is initiated within two days of first onset of symptoms." }
+          ]
+        },
+        {
+          "t": "Post-exposure prevention from 1 year of age (under 1 year only during a pandemic); seasonal prevention only in exceptional situations. Not a substitute for vaccination.",
+          "tag": "Prevention",
+          "src": [
+            { "s": "emc-1194", "q": "Post-exposure prevention in individuals 1 year of age or older following contact with a clinically diagnosed influenza case when influenza virus is circulating in the community." },
+            { "s": "emc-1194", "q": "Tamiflu is not a substitute for influenza vaccination ." }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "NICE (treatment, outside a pandemic): recommended only when national surveillance shows influenza A or B circulating, the person is in an at-risk group, and treatment can start within 48 hours of symptom onset.",
+          "tag": "NICE TA168",
+          "src": [
+            { "s": "nice-ta168", "q": "Oseltamivir and zanamivir are recommended, within their marketing authorisations, for the treatment of influenza in adults and children if all the following circumstances apply" },
+            { "s": "nice-ta168", "q": "the person is in an 'at-risk' group as defined in 1.2" }
+          ]
+        },
+        {
+          "t": "NICE at-risk groups: chronic respiratory, heart, renal, liver or neurological disease, diabetes, age 65 or over, or possible immunosuppression.",
+          "tag": "NICE at-risk groups",
+          "detail": true,
+          "src": [
+            { "s": "nice-ta168", "q": "chronic heart disease chronic renal disease chronic liver disease chronic neurological conditions diabetes mellitus." },
+            { "s": "nice-ta168", "q": "People who are aged 65 years or older and people who might be immunosuppressed are also defined as 'at-risk' for the purpose of this guidance." }
+          ]
+        },
+        {
+          "t": "NICE (post-exposure prophylaxis): recommended when influenza is circulating and conditions are met, including starting within 48 hours of contact and the person not effectively protected by vaccination.",
+          "tag": "NICE TA158",
+          "src": [
+            { "s": "nice-ta158", "q": "Oseltamivir and zanamivir are recommended, within their marketing authorisations, for the post-exposure prophylaxis of influenza if all of the following circumstances apply." },
+            { "s": "nice-ta158", "q": "The person has not been effectively protected by vaccination" }
+          ]
+        },
+        {
+          "t": "SmPC: use only when reliable data show influenza is circulating, and take current susceptibility patterns into account.",
+          "tag": "SmPC",
+          "detail": true,
+          "src": [{ "s": "emc-1194", "q": "Tamiflu should be used for the treatment and prevention of influenza only when reliable epidemiological data indicate that influenza virus is circulating in the community." }]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Treatment, adults and adolescents 13 years and over: 75 mg twice daily for 5 days (10 days if immunocompromised). Start as soon as possible, within 2 days of symptom onset.",
+          "tag": "Treatment",
+          "src": [
+            { "s": "emc-1194", "q": "The recommended oral dose is 75 mg oseltamivir twice daily for 5 days for adolescents (13 to 17 years of age) and adults." },
+            { "s": "emc-1194", "q": "The recommended treatment duration in immunocompromised adults and adolescents is 10 days." }
+          ]
+        },
+        {
+          "t": "Post-exposure prevention, adults and adolescents 13 years and over: 75 mg once daily for 10 days, starting within 2 days of exposure.",
+          "tag": "Post-exposure prevention",
+          "src": [
+            { "s": "emc-1194", "q": "The recommended dose for prevention of influenza following close contact with an infected individual is 75 mg oseltamivir once daily for 10 days" },
+            { "s": "emc-1194", "q": "Therapy should begin as soon as possible within two days of exposure to an infected individual." }
+          ]
+        },
+        {
+          "t": "Prevention during a community epidemic: 75 mg once daily for up to 6 weeks (up to 12 weeks if immunocompromised).",
+          "tag": "Seasonal prevention",
+          "detail": true,
+          "src": [{ "s": "emc-1194", "q": "The recommended dose for prevention of influenza during a community outbreak is 75 mg oseltamivir once daily for up to 6 weeks" }]
+        },
+        {
+          "t": "Elderly: no adjustment unless moderate or severe renal impairment.",
+          "tag": "Elderly",
+          "src": [{ "s": "emc-1194", "q": "No dose adjustment is required, unless there is evidence of moderate or severe renal impairment." }]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "1 to 12 years, treatment (twice daily for 5 days): 10 to 15 kg 30 mg; >15 to 23 kg 45 mg; >23 to 40 kg 60 mg; >40 kg 75 mg. Post-exposure prevention: same doses once daily for 10 days.",
+          "tag": "Children 1 to 12 years",
+          "src": [
+            { "s": "emc-1194", "q": "10 kg to 15 kg 30 mg twice daily 30 mg twice daily > 15 kg to 23 kg 45 mg twice daily 45 mg twice daily > 23 kg to 40 kg 60 mg twice daily 60 mg twice daily > 40 kg 75 mg twice daily 75 mg twice daily" },
+            { "s": "emc-1194", "q": "10 kg to 15 kg 30 mg once daily 30 mg once daily > 15 kg to 23 kg 45 mg once daily 45 mg once daily" }
+          ]
+        },
+        {
+          "t": "Infants 0 to 12 months, treatment: 3 mg/kg twice daily for 5 days (10 days if immunocompromised). Pandemic post-exposure prevention: 3 mg/kg once daily for 10 days. Not for premature infants (<36 weeks post-conceptual age).",
+          "tag": "Infants under 1 year",
+          "src": [
+            { "s": "emc-1194", "q": "The recommended treatment dose for infants 0 - 12 months of age is 3 mg/kg twice daily." },
+            { "s": "emc-1194", "q": "This dosing recommendation is not intended for premature infants, i.e. those with a post-conceptual age less than 36 weeks." }
+          ],
+          "calc": { "mgPerKg": 3, "per": "dose", "ageMinYears": 0, "ageMaxYears": 1, "of": "oseltamivir" }
+        },
+        {
+          "t": "Seasonal (epidemic) prevention not studied under 12 years. No dosing advice for children 12 years and under with renal impairment.",
+          "detail": true,
+          "src": [
+            { "s": "emc-1194", "q": "Prevention during an influenza epidemic has not been studied in children below 12 years of age." },
+            { "s": "emc-1194", "q": "There is insufficient clinical data available in infants and children (12 years of age and younger) with renal impairment to be able to make any dosing recommendation." }
+          ]
+        },
+        {
+          "t": "The oral suspension is preferred for children and adults who cannot swallow capsules or need lower doses.",
+          "src": [{ "s": "emc-1194", "q": "Commercially manufactured Tamiflu powder for oral suspension (6 mg/ml) is the preferred product for paediatric and adult patients who have difficulties swallowing capsules or where lower doses are needed." }]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to oseltamivir or any excipient.",
+          "src": [{ "s": "emc-1194", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Neuropsychiatric events (especially children and adolescents): monitor closely for behavioural changes and weigh continuing treatment.",
+          "tag": "Neuropsychiatric",
+          "src": [{ "s": "emc-1194", "q": "Patients should be closely monitored for behavioural changes, and the benefits and risks of continuing treatment should be carefully evaluated for each patient" }]
+        },
+        {
+          "t": "Effective only against influenza; protection lasts only while taking it; not a substitute for vaccination.",
+          "tag": "Use",
+          "src": [
+            { "s": "emc-1194", "q": "Oseltamivir is effective only against illness caused by influenza viruses." },
+            { "s": "emc-1194", "q": "The protection against influenza lasts only as long as Tamiflu is administered." }
+          ]
+        },
+        {
+          "t": "Severe renal impairment: dose adjustment needed in adults and adolescents.",
+          "tag": "Kidney",
+          "src": [{ "s": "emc-1194", "q": "Dose adjustment is recommended for both treatment and prevention in adolescents (13 to 17 years of age) and adults with severe renal impairment." }]
+        },
+        {
+          "t": "Suspension contains sorbitol (not for hereditary fructose intolerance) and sodium benzoate (may increase jaundice in newborns).",
+          "tag": "Excipients",
+          "detail": true,
+          "formulations": ["oseltamivir-susp"],
+          "src": [
+            { "s": "emc-9108", "q": "Patients with hereditary fructose intolerance (HFI) should not take thismedicinal product." },
+            { "s": "emc-9108", "q": "Sodium benzoate (E211) may increase jaundice in newborn babies (up to 4 weeks old)." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Clinically significant interactions are unlikely (no CYP450 metabolism, low protein binding).",
+          "tag": "General",
+          "src": [{ "s": "emc-1194", "q": "suggest that clinically significant drug interactions via these mechanisms are unlikely." }]
+        },
+        {
+          "t": "Take care with co-excreted medicines with a narrow therapeutic margin (e.g. methotrexate, chlorpropamide).",
+          "tag": "Methotrexate",
+          "src": [{ "s": "emc-1194", "q": "care should be taken when prescribing oseltamivir in subjects when taking co-excreted agents with a narrow therapeutic margin (e.g. chlorpropamide, methotrexate, phenylbutazone)." }]
+        },
+        {
+          "t": "No pharmacokinetic interaction with paracetamol, aspirin, antacids, amoxicillin or warfarin (stable patients without influenza).",
+          "detail": true,
+          "src": [
+            { "s": "emc-1194", "q": "No pharmacokinetic interactions between oseltamivir or its major metabolite have been observed when co-administering oseltamivir with paracetamol, acetylsalicylic acid," },
+            { "s": "emc-1194", "q": "rimantadine or warfarin (in subjects stable on warfarin and without influenza)." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Treatment (adults and adolescents 13+): CrCl >60 mL/min 75 mg twice daily; >30 to 60 mL/min 30 mg twice daily; >10 to 30 mL/min 30 mg once daily; ≤10 mL/min not recommended; haemodialysis 30 mg after each session; peritoneal dialysis 30 mg single dose.",
+          "tag": "Treatment",
+          "src": [
+            { "s": "emc-1194", "q": "> 30 to 60 (ml/min) 30 mg (suspension or capsules) twice daily > 10 to 30 (ml/min) 30 mg (suspension or capsules) once daily ≤ 10 (ml/min) Not recommended (no data available)" },
+            { "s": "emc-1194", "q": "Haemodialysis patients 30 mg after each haemodialysis session" }
+          ]
+        },
+        {
+          "t": "Prevention: CrCl >60 mL/min 75 mg once daily; >30 to 60 mL/min 30 mg once daily; >10 to 30 mL/min 30 mg every second day; ≤10 mL/min not recommended; haemodialysis 30 mg after every second session; peritoneal dialysis 30 mg once weekly.",
+          "tag": "Prevention",
+          "src": [
+            { "s": "emc-1194", "q": "> 30 to 60 (ml/min) 30 mg (suspension or capsules) once daily > 10 to 30 (ml/min) 30 mg (suspension or capsules) every second day" },
+            { "s": "emc-1194", "q": "Haemodialysis patients 30 mg after every second haemodialysis session" }
+          ]
+        },
+        {
+          "t": "Children 12 years and under with renal impairment: insufficient data for a dose recommendation.",
+          "tag": "Children",
+          "src": [{ "s": "emc-1194", "q": "There is insufficient clinical data available in infants and children (12 years of age and younger) with renal impairment to be able to make any dosing recommendation." }]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No dose adjustment for treatment or prevention. Not studied in children with liver disease.",
+          "src": [{ "s": "emc-1194", "q": "No dose adjustment is required either for treatment or for prevention in patients with hepatic dysfunction." }]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: large data (over 1000 first-trimester outcomes) show no malformative or fetal/neonatal toxicity, although one study was not conclusive for major congenital heart defects; may be considered if necessary after weighing safety, benefit and virus pathogenicity.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-1194", "q": "indicate no malformative nor feto/neonatal toxicity by oseltamivir." },
+            { "s": "emc-1194", "q": "the results for major congenital heart defects diagnosed within 12 months of birth were not conclusive." },
+            { "s": "emc-1194", "q": "The use of Tamiflu may be considered during pregnancy if necessary and after considering the available safety and benefit information" }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: low levels in milk (subtherapeutic for the infant); may be considered where there are clear benefits.",
+          "tag": "SmPC",
+          "src": [{ "s": "emc-1194", "q": "administration of oseltamivir may be considered, where there are clear potential benefits to breastfeeding mothers." }]
+        },
+        {
+          "t": "SPS: preferred antiviral in breastfeeding; monitor the infant for vomiting, diarrhoea, irritability and changes in sleep.",
+          "tag": "SPS",
+          "src": [
+            { "s": "sps-oseltamivir-breastfeeding", "q": "Oseltamivir is the preferred choice during breastfeeding. Infant monitoring is still required." },
+            { "s": "sps-oseltamivir-breastfeeding", "q": "As a precaution, infants should be monitored for vomiting, diarrhoea, irritability, and changes in sleep." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No evidence of an effect on male or female fertility (preclinical data).",
+          "src": [{ "s": "emc-1194", "q": "Based on preclinical data, there is no evidence that Tamiflu has an effect on male or female fertility" }]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Adults: nausea and vomiting most common (usually on day 1 or 2, settle within 1 to 2 days); also headache. Children: vomiting most common.",
+          "src": [
+            { "s": "emc-1194", "q": "the most commonly reported adverse reactions (ARs) were nausea and vomiting in the treatment studies, and nausea in the prevention studies." },
+            { "s": "emc-1194", "q": "In children, the most commonly reported adverse reaction was vomiting." }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Rare: anaphylaxis, fulminant hepatitis/hepatic failure, angioedema, SJS/TEN, GI bleeding and neuropsychiatric events (convulsions, delirium, self-injury).",
+          "src": [
+            { "s": "emc-1194", "q": "Anaphylactic and anaphylactoid reactions, hepatic disorders (fulminant hepatitis, hepatic function disorder and jaundice), angioneurotic oedema, Stevens-Johnson syndrome and toxic epidermal necrolysis, gastrointestinal bleeding and neuropsychiatric disorders." }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Watch closely for behavioural changes, especially in children and adolescents.",
+          "tag": "ongoing",
+          "src": [{ "s": "emc-1194", "q": "Patients should be closely monitored for behavioural changes" }]
+        },
+        {
+          "t": "Check renal function (CrCl) to set the dose in adults and adolescents.",
+          "tag": "baseline",
+          "src": [{ "s": "emc-1194", "q": "Dose adjustment is recommended for adults and adolescents (13 to 17 years of age) with moderate or severe renal impairment." }]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral. Capsules and suspension are bioequivalent; patients who cannot swallow capsules can take the suspension. The suspension is best made up by a pharmacist; oral dispensers (3 mL and 10 mL) are supplied.",
+          "src": [
+            { "s": "emc-1194", "q": "Tamiflu hard capsules and Tamiflu suspension are bioequivalent formulations." },
+            { "s": "emc-9108", "q": "It is recommended that Tamiflu powder for oral suspension be constituted by a pharmacist prior to dispensing to the patient" }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Start as soon as possible (within 2 days of symptoms or exposure). It does not replace the flu vaccine.",
+          "src": [
+            { "s": "emc-1194", "q": "Treatment should be initiated as soon as possible within the first two days of onset of symptoms of influenza." },
+            { "s": "emc-1194", "q": "Use of Tamiflu must not affect the evaluation of individuals for annual influenza vaccination." }
+          ]
+        },
+        {
+          "t": "Report unusual behaviour, confusion or hallucinations promptly, especially in children.",
+          "src": [{ "s": "emc-1194", "q": "Neuropsychiatric events have been reported during administration of Tamiflu in patients with influenza, especially in children and adolescents." }]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "oseltamivir:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "oseltamivir",
+      "allergen": ["oseltamivir"],
+      "concern": "Hypersensitivity to oseltamivir",
+      "consequence": "Risk of hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [{ "s": "emc-1194", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }]
+    },
+    {
+      "id": "oseltamivir:renal:crcl-30-60",
+      "kind": "renal",
+      "level": "dose",
+      "med": "oseltamivir",
+      "renal": { "measure": "CrCl", "min": 30, "max": 60, "maxInclusive": true },
+      "age": { "minYears": 13 },
+      "concern": "Moderate renal impairment (CrCl >30 to 60 mL/min)",
+      "consequence": "Reduced clearance of the active metabolite.",
+      "action": "Treatment: 30 mg twice daily. Prevention: 30 mg once daily. (Source bands: >30 to 60; at exactly 30 mL/min the >10 to 30 band applies.)",
+      "sourceWording": "Dose adjustment is recommended",
+      "src": [
+        { "s": "emc-1194", "q": "Dose adjustment is recommended for adults and adolescents (13 to 17 years of age) with moderate or severe renal impairment." },
+        { "s": "emc-1194", "q": "> 30 to 60 (ml/min) 30 mg (suspension or capsules) twice daily" },
+        { "s": "emc-1194", "q": "> 30 to 60 (ml/min) 30 mg (suspension or capsules) once daily" }
+      ]
+    },
+    {
+      "id": "oseltamivir:renal:crcl-10-30",
+      "kind": "renal",
+      "level": "dose",
+      "med": "oseltamivir",
+      "renal": { "measure": "CrCl", "min": 10, "max": 30, "maxInclusive": true },
+      "age": { "minYears": 13 },
+      "concern": "Severe renal impairment (CrCl >10 to 30 mL/min)",
+      "consequence": "Reduced clearance of the active metabolite.",
+      "action": "Treatment: 30 mg once daily. Prevention: 30 mg every second day. (Source bands: >10 to 30; at exactly 10 mL/min the ≤10 band applies.)",
+      "sourceWording": "Dose adjustment is recommended",
+      "src": [
+        { "s": "emc-1194", "q": "> 10 to 30 (ml/min) 30 mg (suspension or capsules) once daily" },
+        { "s": "emc-1194", "q": "> 10 to 30 (ml/min) 30 mg (suspension or capsules) every second day" }
+      ]
+    },
+    {
+      "id": "oseltamivir:renal:crcl-le10",
+      "kind": "renal",
+      "level": "avoid",
+      "med": "oseltamivir",
+      "renal": { "measure": "CrCl", "max": 10, "maxInclusive": true },
+      "age": { "minYears": 13 },
+      "concern": "End-stage renal impairment (CrCl ≤10 mL/min), not on dialysis",
+      "consequence": "No data available.",
+      "action": "Not recommended. Haemodialysis: treatment 30 mg after each session, prevention 30 mg after every second session. Peritoneal dialysis: treatment 30 mg single dose, prevention 30 mg once weekly.",
+      "sourceWording": "Not recommended (no data available)",
+      "src": [
+        { "s": "emc-1194", "q": "≤ 10 (ml/min) Not recommended (no data available)" },
+        { "s": "emc-1194", "q": "Haemodialysis patients 30 mg after each haemodialysis session" },
+        { "s": "emc-1194", "q": "Haemodialysis patients 30 mg after every second haemodialysis session" }
+      ]
+    },
+    {
+      "id": "oseltamivir:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "oseltamivir",
+      "other": "methotrexate",
+      "concern": "Methotrexate (co-excreted, narrow therapeutic margin)",
+      "consequence": "Possible competition for renal tubular secretion.",
+      "action": "Take care when prescribing together.",
+      "sourceWording": "care should be taken",
+      "src": [{ "s": "emc-1194", "q": "care should be taken when prescribing oseltamivir in subjects when taking co-excreted agents with a narrow therapeutic margin (e.g. chlorpropamide, methotrexate, phenylbutazone)." }]
+    },
+    {
+      "id": "oseltamivir:condition:fructose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "oseltamivir",
+      "formulations": ["oseltamivir-susp"],
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance (oral suspension)",
+      "consequence": "The suspension contains sorbitol.",
+      "action": "Should not take the suspension.",
+      "sourceWording": "should not take",
+      "src": [{ "s": "emc-9108", "q": "Patients with hereditary fructose intolerance (HFI) should not take thismedicinal product." }]
+    },
+    {
+      "id": "oseltamivir:pregnancy",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "oseltamivir",
+      "concern": "Pregnancy",
+      "consequence": "Large data show no malformative or fetal toxicity (one study not conclusive for major congenital heart defects); influenza itself carries pregnancy risks.",
+      "action": "May be considered if necessary after weighing safety, benefit and the circulating strain.",
+      "sourceWording": "may be considered during pregnancy if necessary",
+      "src": [
+        { "s": "emc-1194", "q": "indicate no malformative nor feto/neonatal toxicity by oseltamivir." },
+        { "s": "emc-1194", "q": "the results for major congenital heart defects diagnosed within 12 months of birth were not conclusive." },
+        { "s": "emc-1194", "q": "Influenza is associated with adverse pregnancy and foetal outcomes" },
+        { "s": "emc-1194", "q": "The use of Tamiflu may be considered during pregnancy if necessary and after considering the available safety and benefit information" }
+      ]
+    },
+    {
+      "id": "oseltamivir:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "monitor",
+      "med": "oseltamivir",
+      "concern": "Breastfeeding",
+      "consequence": "Negligible amounts in milk.",
+      "action": "SPS: preferred antiviral; monitor the infant for vomiting, diarrhoea, irritability and sleep changes. SmPC: may be considered where there are clear benefits.",
+      "sourceWording": "Infant monitoring is still required",
+      "src": [
+        { "s": "sps-oseltamivir-breastfeeding", "q": "Oseltamivir is the preferred choice during breastfeeding. Infant monitoring is still required." },
+        { "s": "emc-1194", "q": "administration of oseltamivir may be considered, where there are clear potential benefits to breastfeeding mothers." }
+      ]
+    }
+  ]
+}

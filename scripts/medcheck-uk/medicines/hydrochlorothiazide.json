@@ -1,0 +1,1301 @@
+{
+  "id": "hydrochlorothiazide",
+  "name": "Hydrochlorothiazide",
+  "ingredients": ["hydrochlorothiazide"],
+  "className": "Thiazide diuretic (sulfonamide)",
+  "groups": ["thiazide", "diuretic", "antihypertensive", "non-antibiotic-sulfonamide"],
+  "searchTerms": ["HCTZ"],
+  "formulations": [
+    {
+      "id": "hydrochlorothiazide-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "25 mg",
+      "release": "immediate",
+      "note": "No hydrochlorothiazide-only product was found on emc; the UK SPC used is from MHRA Products. The 25 mg tablet is scored and can be divided into equal doses.",
+      "src": [
+        { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Each tablet contains 25 mg of hydrochlorothiazide" },
+        { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The tablet can be divided into equal doses." }
+      ],
+      "sourceIds": ["mhra-spc-hydrochlorothiazide-25"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        { "t": "Adults: oedema of cardiac or renal origin; oedema of hepatic origin (usually with a potassium-sparing diuretic); arterial hypertension.", "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "Oedemas of cardiac or renal origin. Oedemas of hepatic origin, usually in combination with a potassium-sparing diuretic. Arterial hypertension." }] }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions stated in the UK SPC." },
+    "dosing": {
+      "items": [
+        {
+          "t": "12.5 or 25 mg daily (single dose or two divided doses, with or without food). Full effect in 3-4 weeks. If 25 mg/day is not enough, add another antihypertensive rather than increasing the dose.",
+          "tag": "Arterial hypertension",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The doses currently recommended in arterial hypertension are 12.5 or 25 mg/day." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "If blood pressure is not sufficiently lowered with a dose of 25 mg/day, combined treatment with another antihypertensive drug is recommended." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "For a given dose, the maximum effect is achieved within 3 to 4 weeks." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The daily dose of Hydrochlorothiazide can be given as a single dose or divided over two doses, with or without food." }
+          ]
+        },
+        {
+          "t": "Start 50-100 mg/day (possibly 200 mg/day); titrate to the lowest effective dose for limited periods. Maintenance 25-50 mg daily or on alternate days.",
+          "tag": "Oedema",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The starting dose is 50 to 100 mg/day, possibly 200 mg/day." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The maintenance dose is 25 mg to 50 mg/day or every other day." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The lowest effective dose should be identified by titration and only administered for limited periods." }
+          ]
+        },
+        {
+          "t": "Correct sodium and/or volume depletion before combining with an ACE inhibitor, angiotensin II antagonist or direct renin inhibitor; otherwise start under close medical supervision. After long-term use, withdraw gradually.",
+          "tag": "Combination / stopping",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Sodium depletion and / or volume must be corrected before using hydrochlorothiazide in combination with an ACE inhibitor, an antagonist of angiotensin II or a direct renin inhibitor." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "After long-term treatment, therapy with hydrochlorothiazide should be discontinued gradually." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Otherwise, treatment should be initiated under close medical supervision." }
+          ]
+        },
+        { "t": "Elderly: take possible reduced renal function into account.", "tag": "Elderly", "detail": true, "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "In the treatment of elderly patients, attention should be paid to possible restrictions to renal function." }] }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        { "t": "No experience in children and adolescents; should not be used.", "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "There is no experience in children and adolescents. Therefore, hydrochlorothiazide should not be used in children and adolescents." }] }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        { "t": "Hypersensitivity to hydrochlorothiazide or any excipient; anuria; severe renal impairment (creatinine clearance less than 30 ml/min).", "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hypersensitivity to hydrochlorothiazide or to any of the excipients listed in section 6.1. Anuria. Severe renal impairment (creatinine clearance less than 30 ml/min)." }] }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Generally not recommended with bilateral renal artery stenosis, a single functioning kidney, or hypokalaemia.",
+          "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide is generally not recommended in patients with bilateral renal artery stenosis or a single functioning kidney or with hypokalaemia." }]
+        },
+        {
+          "t": "Non-melanoma skin cancer (basal and squamous cell): risk rises with cumulative dose. Tell patients the risk, advise regular skin checks and sun/UV protection; examine suspicious lesions; reconsider use after previous skin cancer (SPC and MHRA).",
+          "tag": "Skin cancer",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "An increased risk of non-melanoma skin cancer (NMSC) [basal cell carcinoma (BCC) and squamous cell carcinoma (SCC)] with increasing cumulative dose of hydrochlorothiazide (HCTZ) exposure has been observed" },
+            { "s": "mhra-dsu-hctz-nmsc-2018", "q": "reconsider the use of hydrochlorothiazide in patients who have had previous skin cancer" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Suspicious skin lesions should be promptly examined" }
+          ]
+        },
+        {
+          "t": "Electrolytes: hyponatraemia and hypokalaemia (major arrhythmia risk with long QT, heart disease, digitalis). Start only after correcting hypokalaemia and hypomagnesaemia, and after normalising sodium/volume depletion.",
+          "tag": "Electrolytes",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Treatment with thiazide diuretics should only be started after correction of hypokalaemia and concurrently occurring existing hypomagnesemia." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Thiazides should be only used after normalization of any existing sodium and / or volume depletion." }
+          ]
+        },
+        {
+          "t": "Hypercalcaemia: use with caution and only after correction; stop if hypercalcaemia develops. Stop before parathyroid function tests.",
+          "tag": "Calcium",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide should be used with caution in patients with hypercalcemia and should be administered only after correction of any pre- existing hypercalcemia." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide should be discontinued if hypercalcemia occurs during treatment." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Thiazides should be discontinued before carrying out parathyroid function tests." }
+          ]
+        },
+        {
+          "t": "Severe liver damage: use with caution (electrolyte imbalance, hepatic encephalopathy, hepatorenal syndrome in cirrhotic ascites).",
+          "tag": "Liver",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Thiazides, like other diuretics may induce electrolyte imbalance, hepatic encephalopathy or hepatorenal syndrome when used to treat cirrhotic ascites." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide should be used with caution particularly in patients with severe liver damage." }
+          ]
+        },
+        {
+          "t": "Uric acid may rise and trigger gout; glucose tolerance may fall and lipids rise (antidiabetic dose changes may be needed).",
+          "tag": "Metabolic",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "This can trigger attacks of gout in susceptible patients." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "In diabetic patient dosage adjustments of insulin or oral hypoglycaemic agents may be required." }
+          ]
+        },
+        {
+          "t": "Acute respiratory distress syndrome (very rare): withdraw if suspected; do not give again to anyone who had ARDS after hydrochlorothiazide.",
+          "tag": "ARDS",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "If diagnosis of ARDS is suspected, Hydrochlorothiazide should be withdrawn and appropriate treatment given." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide should not be administered to patients who previously experienced ARDS following hydrochlorothiazide intake." }
+          ]
+        },
+        {
+          "t": "Choroidal effusion, acute myopia and acute angle-closure glaucoma: stop as soon as possible. Risk factors include sulphonamide or penicillin allergy.",
+          "tag": "Eye",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The primary treatment is to discontinue hydrochlorothiazide as soon as possible." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Risk factors for developing acute angle-closure glaucoma include a history of sulphonamide or penicillin allergy." }
+          ]
+        },
+        {
+          "t": "Systemic lupus erythematosus may be exacerbated or activated. Photosensitivity: stop treatment if it occurs.",
+          "detail": true,
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "exacerbation or activation of systemic lupus erythematosus has been reported with thiazide diuretics, including hydrochlorothiazide." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "If a photosensitivity reaction occurs treatment should be discontinued." }
+          ]
+        },
+        {
+          "t": "Sulfonamide: cross-reactivity with sulfonamide antibacterials is theoretical and not clinically confirmed (SPC); SPS also states it is not expected.",
+          "tag": "Sulfonamide allergy",
+          "detail": true,
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The possibility of cross-reactivity especially with other antibacterials including sulfonamides is theoretical and not clinically confirmed." },
+            { "s": "sps-sulfonamide", "q": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected, including in people who had a life-threatening reaction to a sulfonamide." }
+          ]
+        },
+        {
+          "t": "Lactose: patients with galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine.",
+          "detail": true,
+          "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption syndrome should not take this medicine." }]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Lithium: not recommended (raised lithium, toxicity). If essential, monitor lithium closely and adjust its dose.",
+          "tag": "Lithium",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Concomitant use not recommended: Lithium: Increased serum lithium levels with signs of lithium overdose" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "If this combination proves essential, serum lithium levels should be closely monitored and the lithium dose should be adjusted." }
+          ]
+        },
+        {
+          "t": "Medicines that may cause torsades de pointes (e.g. amiodarone, sotalol, citalopram, escitalopram, domperidone, erythromycin, levofloxacin, moxifloxacin, haloperidol, methadone): correct hypokalaemia first; clinical, electrolyte and ECG monitoring.",
+          "tag": "QT / torsades de pointes",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Increased risk of ventricular arrhythmias, especially torsades de pointes. Correct any hypokalaemia before administering the medicine and perform clinical, electrolyte and electrocardiographic monitoring." }
+          ]
+        },
+        {
+          "t": "NSAIDs, and aspirin at analgesic/antipyretic doses (500 mg or more per dose) or anti-inflammatory doses (1 g or more per dose and/or 3 g or more daily): acute renal failure in at-risk (elderly/dehydrated) patients and reduced antihypertensive effect. Hydrate and monitor renal function at the start.",
+          "tag": "NSAIDs / aspirin",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Acute renal failure in at risk patients (elderly and / or dehydrated)" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "For anti-inflammatory doses of acetylsalicylic acid (≥1 g per dose and / or ≥3 g daily) or for analgesic or antipyretic doses (≥500 mg per dose and / or <3 g per day)" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrate the patient and monitor renal function at start of treatment." }
+          ]
+        },
+        {
+          "t": "Hyponatraemia risk adds up with other diuretics, desmopressin, SSRIs, carbamazepine and oxcarbazepine. Carbamazepine: monitor; if possible use another class of diuretic.",
+          "tag": "Hyponatraemia",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "These are diuretics, desmopressin, serotonin reuptake inhibiting antidepressants, carbamazepine and oxcarbazepine. The combination of these drugs increase the risk of hyponatremia." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Carbamazepine Risk of symptomatic hyponatraemia. Clinical and biological monitoring. If possible, use another class of diuretic." }
+          ]
+        },
+        {
+          "t": "ACE inhibitors / angiotensin II antagonists: sudden hypotension and/or acute renal failure if sodium-depleted. Stop the diuretic first or start at a low dose; monitor creatinine in the first weeks.",
+          "tag": "ACE inhibitors / ARBs",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Risk of sudden hypotension and / or acute renal failure when starting or increasing the dose of an ACE inhibitor or an angiotensin II antagonist when there is pre-existing sodium depletion." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "renal function (serum creatinine) should be monitored during the first weeks of treatment with ACE inhibitors or angiotensin II antagonists." }
+          ]
+        },
+        {
+          "t": "Other potassium-lowering medicines (loop diuretics, stimulant laxatives, glucocorticoids): more hypokalaemia; monitor and correct potassium. Potassium-sparing diuretics: hypo- or hyperkalaemia possible; monitor potassium.",
+          "tag": "Potassium",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "These are potassium lowering diuretics, alone or combined; stimulant laxatives; glucocorticoids" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Monitor serum potassium, possibly ECG and, if necessary, reconsider the treatment." }
+          ]
+        },
+        {
+          "t": "Other antihypertensives: reducing the dose is advised when combined, at least initially. Orthostatic hypotension: alpha-blockers (including tamsulosin), nitrates, PDE5 inhibitors, tricyclic antidepressants. Calcium: hypercalcaemia risk. Digitalis: hypokalaemia increases its toxicity (correct potassium; clinical, electrolyte and ECG monitoring). Iodinated contrast: rehydrate first. Ciclosporin: creatinine may rise. Chelating resins: separate doses by more than 2 hours if possible.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Alpha-blockers for urological problems (alfuzosin, doxazosin, prazosin, silodosin, tamsulosin, terazosin) Hypotensive effect increased." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Especially nitrates, phosphodiesterase type 5 inhibitors, alpha blockers for urological problems, of tricyclic antidepressants and phenothiazines" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Calcium Risk of hypercalcaemia due to reduced urinary calcium excretion." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "It is advised to reduce the dose when combined with other antihypertensives, at least initially." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hypokalaemia increases the toxic effects of digitalis." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Rehydration before administration of the iodinated product." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Risk of increased creatinine without changes in ciclosporin blood levels" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "with an interval of more than 2 hours, if possible" }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Contraindicated in anuria and severe renal impairment (CrCl less than 30 ml/min); not effective at CrCl < 30 ml/min. No starting-dose change in mild to moderate impairment.",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Severe renal impairment (creatinine clearance less than 30 ml/min)." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "No adjustment to the starting dose is necessary in patients with mild to moderate renal impairment" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide is not effective in patients with chronic renal impairment (creatinine clearance < 30 ml/min" }
+          ]
+        },
+        { "t": "Generally not recommended with bilateral renal artery stenosis or a single functioning kidney.", "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide is generally not recommended in patients with bilateral renal artery stenosis or a single functioning kidney" }] }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        { "t": "No starting-dose change in mild to moderate hepatic impairment; use with caution in severe hepatic impairment.", "src": [
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "No adjustment to the starting dose is necessary in patients with mild to moderate hepatic impairment" },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide should be used with caution in patients with severe hepatic impairment" }
+        ] }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SPC: insufficient data; crosses the placenta. In the 2nd and 3rd trimesters may impair fetoplacental perfusion and cause fetal/neonatal jaundice, electrolyte imbalance and thrombocytopenia. Must not be used for pregnancy oedema, hypertension or pre-eclampsia; should not be used for essential hypertension except in rare cases where no other treatment could be used.",
+          "tag": "SPC",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "its use during the second and third trimesters of pregnancy may impair foetal-placental perfusion and cause foetal and neonatal jaundice, electrolyte imbalance and thrombocytopenia." },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide must not be used in women with pregnancy oedema, hypertension or preeclampsia" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide should not be used for the treatment of essential hypertension in pregnant women except in rare cases where no other treatment could be used." }
+          ]
+        },
+        {
+          "t": "BUMPS (diuretics): can be used if prescribed by a doctor but rarely needed; may reduce placental blood flow (extra growth scans). For high blood pressure, a different medicine is usually offered.",
+          "tag": "BUMPS",
+          "detail": true,
+          "src": [
+            { "s": "bumps-diuretics", "q": "A diuretic can be used in pregnancy if prescribed by a doctor." },
+            { "s": "bumps-diuretics", "q": "If you take a diuretic to treat high blood pressure, you will usually be offered a different medicine that is known to be safe during pregnancy." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        { "t": "Not recommended: passes into milk in small amounts; high doses may inhibit milk production. If used, keep the dose as low as possible.", "src": [
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The use of hydrochlorothiazide during breast-feeding is not recommended. If hydrochlorothiazide is indicated, the doses should be as low as possible." }
+        ] }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        { "t": "No human fertility data; no effect on fertility in animal studies.", "detail": true, "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "There are no human fertility data for hydrochlorothiazide." }] }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common: hypokalaemia, raised blood lipids. Common: hyperuricaemia, hypomagnesaemia, hyponatraemia, orthostatic hypotension, diarrhoea, loss of appetite, nausea and vomiting, urticaria and other skin reactions, impotence.",
+          "src": [
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Very common hypokalaemia, increased blood lipid level Common hyperuricemia, hypomagnesaemia, hyponatraemia" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Common orthostatic hypotension" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Common diarrhoea, loss of appetite, nausea and vomiting" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Common urticaria and other skin reactions" },
+            { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Common impotence" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        { "t": "Acute respiratory distress syndrome (very rare): dyspnoea, fever, hypotension within minutes to hours - withdraw and treat.", "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "At the onset, symptoms include dyspnoea, fever, pulmonary deterioration and hypotension." }, { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Pulmonary oedema typically develops within minutes to hours after hydrochlorothiazide intake." }] },
+        { "t": "Acute angle-closure glaucoma / choroidal effusion (not known): acute reduced vision or eye pain - stop as soon as possible.", "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "Symptoms include an acute onset of decreased visual acuity or acute ocular pain" }] },
+        { "t": "Non-melanoma skin cancer (not known). Rare: thrombocytopenia. Very rare: bone marrow depression, haemolytic anaemia, agranulocytosis, necrotising vasculitis, toxic epidermal necrolysis, pancreatitis. Uncommon: acute renal impairment.", "src": [
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Not known non-melanoma skin cancer (Basal cell carcinoma and Squamous cell carcinoma)" },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Very rare bone marrow depression, haemolytic anaemia, leukopenia, agranulocytosis" },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Uncommon acute renal impairment" },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Rare thrombocytopenia (sometimes with purpura)" },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "necrotizing vasculitis, toxic epidermal necrolysis" },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Very rare pancreatitis" }
+        ] }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        { "t": "Serum sodium and potassium before treatment; correct hypokalaemia and hypomagnesaemia first.", "tag": "baseline", "src": [
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Serum sodium levels should be monitored before treatment and at regular intervals thereafter." },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "With long term treatment, serum potassium concentration should be determined at start of treatment." },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Treatment with thiazide diuretics should only be started after correction of hypokalaemia and concurrently occurring existing hypomagnesemia." }
+        ] },
+        { "t": "Potassium in the week after starting, then regularly (a check at 3-4 weeks may be considered); sodium regularly (more often in elderly, malnourished, cirrhosis); calcium regularly.", "tag": "ongoing", "src": [
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Serum potassium concentration should be determined during the week following the initiation of treatment." },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Serum calcium levels should be monitored regularly during treatment with thiazide diuretics." },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "A control at 3-4 weeks may be considered depending on risk factors." },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "needs to be more frequent in populations at risk such as the elderly, and even more in malnourished and cirrhotic patients" }
+        ] },
+        { "t": "Stop if hypercalcaemia, photosensitivity, suspected ARDS, or acute visual symptoms occur.", "tag": "stop", "src": [
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "Hydrochlorothiazide should be discontinued if hypercalcemia occurs during treatment." },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "If diagnosis of ARDS is suspected, Hydrochlorothiazide should be withdrawn and appropriate treatment given." },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "If a photosensitivity reaction occurs treatment should be discontinued." },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The primary treatment is to discontinue hydrochlorothiazide as soon as possible." }
+        ] }
+      ]
+    },
+    "administration": {
+      "items": [
+        { "t": "Take with enough liquid, with or without food; once daily or in two divided doses.", "src": [
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "The tablet(s) should be taken with a sufficient quantity of liquid." },
+          { "s": "mhra-spc-hydrochlorothiazide-25", "q": "can be given as a single dose or divided over two doses, with or without food." }
+        ] }
+      ]
+    },
+    "counselling": {
+      "items": [
+        { "t": "Check skin regularly and report new or changed lesions or moles; limit sun and UV exposure and use sun protection (MHRA).", "src": [
+          { "s": "mhra-dsu-hctz-nmsc-2018", "q": "advise them to regularly check for and report any new or changed skin lesions or moles" },
+          { "s": "mhra-dsu-hctz-nmsc-2018", "q": "advise patients to limit their exposure to sunlight and UV rays and use adequate protection when exposed to sunlight and UV rays" }
+        ] },
+        { "t": "May affect driving, especially at the start, after dose increases or with alcohol.", "detail": true, "src": [{ "s": "mhra-spc-hydrochlorothiazide-25", "q": "This has to be considered especially at the beginning of therapy or when dosage is increased, when the medication is changed or when taken in combination with alcohol." }] }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "hydrochlorothiazide:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "hydrochlorothiazide",
+      "allergen": [
+        "hydrochlorothiazide"
+      ],
+      "concern": "Hypersensitivity to hydrochlorothiazide",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Hypersensitivity to hydrochlorothiazide",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hypersensitivity to hydrochlorothiazide or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:allergy:sulfonamide-info",
+      "kind": "allergy",
+      "level": "info",
+      "med": "hydrochlorothiazide",
+      "allergen": [
+        "group:sulfonamide"
+      ],
+      "concern": "Allergy to sulfonamide antibacterials",
+      "consequence": "Hydrochlorothiazide is a sulfonamide; cross-reactivity is theoretical and not clinically confirmed (SPS: not expected). A history of sulphonamide allergy is a possible risk factor for acute angle-closure glaucoma.",
+      "action": "Not a contraindication in this SPC; assess individually.",
+      "sourceWording": "theoretical and not clinically confirmed",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "The possibility of cross-reactivity especially with other antibacterials including sulfonamides is theoretical and not clinically confirmed."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Risk factors for developing acute angle-closure glaucoma include a history of sulphonamide or penicillin allergy."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:renal:crcl-under-30",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "hydrochlorothiazide",
+      "renal": {
+        "measure": "CrCl",
+        "max": 30
+      },
+      "concern": "Severe renal impairment (CrCl less than 30 ml/min)",
+      "consequence": "Not effective; may worsen renal function.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Severe renal impairment (creatinine clearance less than 30 ml/min)."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrochlorothiazide is contraindicated in patient with anuria and with severe renal impairment."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:anuria",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydrochlorothiazide",
+      "condition": "acute-renal-insufficiency-anuria",
+      "concern": "Anuria",
+      "consequence": "Diuretic cannot work; harm possible.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated in patient with anuria",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrochlorothiazide is contraindicated in patient with anuria and with severe renal impairment."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:severe-renal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "hydrochlorothiazide",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal impairment",
+      "consequence": "Not effective; may worsen renal function.",
+      "action": "Do not use (SPC: CrCl less than 30 ml/min).",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Severe renal impairment (creatinine clearance less than 30 ml/min)."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:renal-artery-stenosis",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "hydrochlorothiazide",
+      "condition": "renal-artery-stenosis",
+      "concern": "Bilateral renal artery stenosis or single functioning kidney",
+      "consequence": "Risk to renal function.",
+      "action": "Generally not recommended.",
+      "sourceWording": "generally not recommended",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrochlorothiazide is generally not recommended in patients with bilateral renal artery stenosis or a single functioning kidney"
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "hydrochlorothiazide",
+      "condition": "hypokalaemia",
+      "concern": "Hypokalaemia",
+      "consequence": "Further potassium loss; arrhythmia (torsades de pointes) risk.",
+      "action": "Generally not recommended; start only after correcting hypokalaemia (and hypomagnesaemia).",
+      "sourceWording": "generally not recommended",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrochlorothiazide is generally not recommended in patients with bilateral renal artery stenosis or a single functioning kidney or with hypokalaemia."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Treatment with thiazide diuretics should only be started after correction of hypokalaemia and concurrently occurring existing hypomagnesemia."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:hypomagnesaemia",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "hydrochlorothiazide",
+      "condition": "hypomagnesaemia",
+      "concern": "Hypomagnesaemia",
+      "consequence": "Arrhythmia risk with thiazide-induced electrolyte loss.",
+      "action": "Do not start until hypomagnesaemia (and hypokalaemia) is corrected.",
+      "sourceWording": "should only be started after correction",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Treatment with thiazide diuretics should only be started after correction of hypokalaemia and concurrently occurring existing hypomagnesemia."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydrochlorothiazide",
+      "condition": "hyponatraemia",
+      "concern": "Hyponatraemia or volume depletion",
+      "consequence": "Thiazides may cause or worsen hyponatraemia; symptomatic hypotension possible.",
+      "action": "Use only after normalising sodium/volume depletion; otherwise start under strict medical supervision.",
+      "sourceWording": "should be only used after normalization",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Thiazide diuretics may lead to hyponatraemia or an exacerbation of pre-existing hyponatraemia."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Thiazides should be only used after normalization of any existing sodium and / or volume depletion."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:dehydration",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydrochlorothiazide",
+      "condition": "dehydration-hypovolaemia",
+      "concern": "Volume depletion",
+      "consequence": "Symptomatic hypotension; acute renal failure with NSAIDs or RAS blockers.",
+      "action": "Correct sodium/volume depletion first; otherwise start under strict medical supervision.",
+      "sourceWording": "should be only used after normalization",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Thiazides should be only used after normalization of any existing sodium and / or volume depletion. Otherwise, treatment should be initiated under strict medical supervision."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:hypercalcaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydrochlorothiazide",
+      "condition": "hypercalcaemia",
+      "concern": "Hypercalcaemia",
+      "consequence": "Thiazides reduce urinary calcium excretion.",
+      "action": "Use with caution and only after correction; stop if hypercalcaemia develops.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrochlorothiazide should be used with caution in patients with hypercalcemia and should be administered only after correction of any pre- existing hypercalcemia."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrochlorothiazide should be discontinued if hypercalcemia occurs during treatment."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:skin-cancer",
+      "kind": "condition",
+      "level": "caution",
+      "med": "hydrochlorothiazide",
+      "condition": "skin-cancer-history",
+      "concern": "Previous non-melanoma skin cancer",
+      "consequence": "Cumulative dose-dependent increase in basal and squamous cell carcinoma.",
+      "action": "Reconsider use of hydrochlorothiazide.",
+      "sourceWording": "reconsider the use of hydrochlorothiazide",
+      "src": [
+        {
+          "s": "mhra-dsu-hctz-nmsc-2018",
+          "q": "reconsider the use of hydrochlorothiazide in patients who have had previous skin cancer"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "The use of HCTZ may also need to be reconsidered in patients who have experienced previous NMSC"
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:ards-history",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "hydrochlorothiazide",
+      "condition": "hydrochlorothiazide-ards-history",
+      "concern": "Previous ARDS after hydrochlorothiazide",
+      "consequence": "Very rare severe acute respiratory toxicity.",
+      "action": "Should not be given again.",
+      "sourceWording": "should not be administered",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrochlorothiazide should not be administered to patients who previously experienced ARDS following hydrochlorothiazide intake."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:qt",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "Long QT interval",
+      "consequence": "Hypokalaemia can trigger potentially fatal torsades de pointes.",
+      "action": "Prevent hypokalaemia; monitor potassium regularly.",
+      "sourceWording": "must be prevented in certain at-risk populations",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Patients with long QT interval on an ECG are also at risk, whether the origin is congenital or due to medication."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "The risk of hypokalaemia onset (< 3.5 mmol/l) must be prevented in certain at-risk populations"
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:heart-failure",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "condition": "heart-failure",
+      "concern": "Heart failure or coronary heart disease",
+      "consequence": "At-risk group for hypokalaemia, which increases digitalis toxicity and the risk of heart rhythm problems.",
+      "action": "Prevent hypokalaemia; monitor serum potassium regularly.",
+      "sourceWording": "must be prevented in certain at-risk populations",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "The risk of hypokalaemia onset (< 3.5 mmol/l) must be prevented in certain at-risk populations"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "patients with coronary heart disease or heart failure"
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:gout",
+      "kind": "condition",
+      "level": "dose",
+      "med": "hydrochlorothiazide",
+      "condition": "gout-hyperuricaemia",
+      "concern": "Gout / hyperuricaemia",
+      "consequence": "Uric acid may rise and trigger gout attacks.",
+      "action": "Adjust the dose according to uric acid levels.",
+      "sourceWording": "The dose should be adjusted according to serum levels of uric acid",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "This can trigger attacks of gout in susceptible patients."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "The dose should be adjusted according to serum levels of uric acid."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "condition": "diabetes",
+      "concern": "Diabetes",
+      "consequence": "Glucose tolerance may fall.",
+      "action": "Insulin or oral hypoglycaemic doses may need adjusting.",
+      "sourceWording": "dosage adjustments of insulin or oral hypoglycaemic agents may be required",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "In diabetic patient dosage adjustments of insulin or oral hypoglycaemic agents may be required."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:lupus",
+      "kind": "condition",
+      "level": "info",
+      "med": "hydrochlorothiazide",
+      "condition": "lupus",
+      "concern": "Systemic lupus erythematosus",
+      "consequence": "Exacerbation or activation of SLE reported.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "exacerbation or activation of systemic lupus erythematosus has been reported",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "exacerbation or activation of systemic lupus erythematosus has been reported with thiazide diuretics, including hydrochlorothiazide."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:condition:galactose",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "hydrochlorothiazide",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Tablets contain lactose.",
+      "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption syndrome should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:hepatic:severe",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "hydrochlorothiazide",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe hepatic impairment",
+      "consequence": "Electrolyte imbalance, hepatic encephalopathy or hepatorenal syndrome (cirrhotic ascites).",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrochlorothiazide should be used with caution in patients with severe hepatic impairment"
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:age:child",
+      "kind": "age",
+      "level": "avoid",
+      "med": "hydrochlorothiazide",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Child or adolescent",
+      "consequence": "No experience in children and adolescents.",
+      "action": "Should not be used.",
+      "sourceWording": "should not be used in children and adolescents",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "There is no experience in children and adolescents. Therefore, hydrochlorothiazide should not be used in children and adolescents."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:pregnancy:oedema-gestational-hypertension",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "hydrochlorothiazide",
+      "concern": "Pregnancy: for oedema of pregnancy, pregnancy hypertension or pre-eclampsia",
+      "consequence": "Risk of reduced plasma volume and placental hypoperfusion. In the 2nd-3rd trimester, may impair fetoplacental perfusion and cause fetal/neonatal jaundice, electrolyte imbalance and thrombocytopenia.",
+      "action": "Must not be used for these conditions.",
+      "sourceWording": "must not be used in women with pregnancy oedema, hypertension or preeclampsia",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrochlorothiazide must not be used in women with pregnancy oedema, hypertension or preeclampsia because there is also a risk of reduced plasma volume and placental hypoperfusion"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "its use during the second and third trimesters of pregnancy may impair foetal-placental perfusion and cause foetal and neonatal jaundice, electrolyte imbalance and thrombocytopenia."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:pregnancy:essential-hypertension",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "hydrochlorothiazide",
+      "concern": "Pregnancy: essential hypertension",
+      "consequence": "In the 2nd-3rd trimester, may impair fetoplacental perfusion and cause fetal/neonatal jaundice, electrolyte imbalance and thrombocytopenia.",
+      "action": "Should not be used, except in rare cases where no other treatment could be used.",
+      "sourceWording": "should not be used for the treatment of essential hypertension in pregnant women",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrochlorothiazide should not be used for the treatment of essential hypertension in pregnant women except in rare cases where no other treatment could be used."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "its use during the second and third trimesters of pregnancy may impair foetal-placental perfusion and cause foetal and neonatal jaundice, electrolyte imbalance and thrombocytopenia."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "hydrochlorothiazide",
+      "concern": "Breastfeeding",
+      "consequence": "Excreted in milk in small amounts; high doses may inhibit milk production.",
+      "action": "Not recommended; if used, lowest possible dose.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "The use of hydrochlorothiazide during breast-feeding is not recommended. If hydrochlorothiazide is indicated, the doses should be as low as possible."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:qt",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Medicines that may cause torsades de pointes",
+      "consequence": "Increased risk of ventricular arrhythmias, especially torsades de pointes.",
+      "action": "Correct hypokalaemia first; clinical, electrolyte and ECG monitoring.",
+      "sourceWording": "Concomitant use requiring caution",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Increased risk of ventricular arrhythmias, especially torsades de pointes. Correct any hypokalaemia before administering the medicine and perform clinical, electrolyte and electrocardiographic monitoring."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:domperidone",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "domperidone",
+      "effect": "qt-prolongation",
+      "concern": "Domperidone",
+      "consequence": "Named torsades de pointes risk; hypokalaemia adds to it.",
+      "action": "Correct hypokalaemia first; clinical, electrolyte and ECG monitoring.",
+      "sourceWording": "Concomitant use requiring caution",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "dofetilide, dolasetron, domperidone, dronedarone"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Correct any hypokalaemia before administering the medicine and perform clinical, electrolyte and electrocardiographic monitoring."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:escitalopram",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "escitalopram",
+      "effect": "qt-prolongation",
+      "concern": "Escitalopram",
+      "consequence": "Named torsades de pointes risk; also adds to hyponatraemia risk (serotonin reuptake inhibitor).",
+      "action": "Correct hypokalaemia first; clinical, electrolyte and ECG monitoring.",
+      "sourceWording": "Concomitant use requiring caution",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "erythromycin, escitalopram, flupentixol"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Correct any hypokalaemia before administering the medicine and perform clinical, electrolyte and electrocardiographic monitoring."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:levofloxacin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "levofloxacin",
+      "effect": "qt-prolongation",
+      "concern": "Levofloxacin",
+      "consequence": "Named torsades de pointes risk; hypokalaemia adds to it.",
+      "action": "Correct hypokalaemia first; clinical, electrolyte and ECG monitoring.",
+      "sourceWording": "Concomitant use requiring caution",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "ibutilide, levofloxacin, levomepromazine"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Correct any hypokalaemia before administering the medicine and perform clinical, electrolyte and electrocardiographic monitoring."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:moxifloxacin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "moxifloxacin",
+      "effect": "qt-prolongation",
+      "concern": "Moxifloxacin",
+      "consequence": "Named torsades de pointes risk; hypokalaemia adds to it.",
+      "action": "Correct hypokalaemia first; clinical, electrolyte and ECG monitoring.",
+      "sourceWording": "Concomitant use requiring caution",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "mizolastine, moxifloxacin, pentamidine"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Correct any hypokalaemia before administering the medicine and perform clinical, electrolyte and electrocardiographic monitoring."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:nsaid",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "group:nsaid",
+      "effect": "nephrotoxicity",
+      "concern": "NSAIDs",
+      "consequence": "Acute renal failure in at-risk (elderly/dehydrated) patients; reduced antihypertensive effect.",
+      "action": "Hydrate the patient and monitor renal function at the start.",
+      "sourceWording": "Hydrate the patient and monitor renal function",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Acute renal failure in at risk patients (elderly and / or dehydrated)"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Hydrate the patient and monitor renal function at start of treatment."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "carbamazepine",
+      "effect": "hyponatraemia",
+      "concern": "Carbamazepine",
+      "consequence": "Risk of symptomatic hyponatraemia.",
+      "action": "Clinical and biochemical monitoring; if possible use another class of diuretic.",
+      "sourceWording": "Clinical and biological monitoring",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Carbamazepine Risk of symptomatic hyponatraemia. Clinical and biological monitoring. If possible, use another class of diuretic."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:ssri",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hydrochlorothiazide",
+      "other": "group:ssri",
+      "effect": "hyponatraemia",
+      "concern": "Serotonin reuptake inhibitor antidepressants",
+      "consequence": "Combination increases the risk of hyponatraemia.",
+      "action": "Be aware of additive hyponatraemia risk (no specific action stated).",
+      "sourceWording": "The combination of these drugs increase the risk of hyponatremia",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "These are diuretics, desmopressin, serotonin reuptake inhibiting antidepressants, carbamazepine and oxcarbazepine. The combination of these drugs increase the risk of hyponatremia."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:desmopressin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hydrochlorothiazide",
+      "other": "desmopressin",
+      "effect": "hyponatraemia",
+      "concern": "Desmopressin",
+      "consequence": "Combination increases the risk of hyponatraemia.",
+      "action": "Be aware of additive hyponatraemia risk (no specific action stated).",
+      "sourceWording": "The combination of these drugs increase the risk of hyponatremia",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "These are diuretics, desmopressin, serotonin reuptake inhibiting antidepressants, carbamazepine and oxcarbazepine. The combination of these drugs increase the risk of hyponatremia."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:diuretic-hyponatraemia",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hydrochlorothiazide",
+      "other": "group:diuretic",
+      "effect": "hyponatraemia",
+      "concern": "Other diuretics",
+      "consequence": "Combination increases the risk of hyponatraemia.",
+      "action": "Be aware of additive hyponatraemia risk (no specific action stated).",
+      "sourceWording": "The combination of these drugs increase the risk of hyponatremia",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "These are diuretics, desmopressin, serotonin reuptake inhibiting antidepressants, carbamazepine and oxcarbazepine. The combination of these drugs increase the risk of hyponatremia."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "group:ace-inhibitor",
+      "effect": "hypotension",
+      "concern": "ACE inhibitors",
+      "consequence": "Sudden hypotension and/or acute renal failure if sodium-depleted.",
+      "action": "Stop the diuretic first or use a low starting dose; monitor creatinine in the first weeks.",
+      "sourceWording": "renal function (serum creatinine) should be monitored",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Risk of sudden hypotension and / or acute renal failure when starting or increasing the dose of an ACE inhibitor or an angiotensin II antagonist when there is pre-existing sodium depletion."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "renal function (serum creatinine) should be monitored during the first weeks of treatment with ACE inhibitors or angiotensin II antagonists."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:arb",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "group:arb",
+      "effect": "hypotension",
+      "concern": "Angiotensin II receptor antagonists",
+      "consequence": "Sudden hypotension and/or acute renal failure if sodium-depleted.",
+      "action": "Stop the diuretic first or use a low starting dose; monitor creatinine in the first weeks.",
+      "sourceWording": "renal function (serum creatinine) should be monitored",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Risk of sudden hypotension and / or acute renal failure when starting or increasing the dose of an ACE inhibitor or an angiotensin II antagonist when there is pre-existing sodium depletion."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "renal function (serum creatinine) should be monitored during the first weeks of treatment with ACE inhibitors or angiotensin II antagonists."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:potassium-sparing",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics",
+      "consequence": "Hypokalaemia, or hyperkalaemia (especially in renal failure and diabetes), can still occur.",
+      "action": "Monitor serum potassium, possibly ECG; reconsider treatment if needed.",
+      "sourceWording": "Monitor serum potassium",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "does not rule out the occurrence of hypokalaemia or, particularly in renal failure and diabetes, of hyperkalaemia."
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Monitor serum potassium, possibly ECG and, if necessary, reconsider the treatment."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:loop-diuretic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "group:loop-diuretic",
+      "concern": "Loop (potassium-lowering) diuretics",
+      "consequence": "Increased risk of hypokalaemia.",
+      "action": "Monitor serum potassium and correct if required.",
+      "sourceWording": "Monitoring of serum potassium with correction if required",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "These are potassium lowering diuretics, alone or combined"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Other potassium-lowering medicines Increased risk of hypokalaemia. Monitoring of serum potassium with correction if required."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:prednisolone",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "prednisolone",
+      "concern": "Prednisolone (systemic corticosteroid)",
+      "consequence": "Increased risk of hypokalaemia.",
+      "action": "Monitor serum potassium and correct if required.",
+      "sourceWording": "Monitoring of serum potassium with correction if required",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "stimulant laxatives; glucocorticoids"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Other potassium-lowering medicines Increased risk of hypokalaemia. Monitoring of serum potassium with correction if required."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:dexamethasone",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "dexamethasone",
+      "concern": "Dexamethasone (systemic corticosteroid)",
+      "consequence": "Increased risk of hypokalaemia.",
+      "action": "Monitor serum potassium and correct if required.",
+      "sourceWording": "Monitoring of serum potassium with correction if required",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "stimulant laxatives; glucocorticoids"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Other potassium-lowering medicines Increased risk of hypokalaemia. Monitoring of serum potassium with correction if required."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:senna",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "senna",
+      "concern": "Stimulant laxatives (senna)",
+      "consequence": "Increased risk of hypokalaemia.",
+      "action": "Monitor serum potassium and correct if required.",
+      "sourceWording": "Monitoring of serum potassium with correction if required",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "stimulant laxatives; glucocorticoids"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Other potassium-lowering medicines Increased risk of hypokalaemia. Monitoring of serum potassium with correction if required."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:bisacodyl",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "hydrochlorothiazide",
+      "other": "bisacodyl",
+      "concern": "Stimulant laxatives (bisacodyl)",
+      "consequence": "Increased risk of hypokalaemia.",
+      "action": "Monitor serum potassium and correct if required.",
+      "sourceWording": "Monitoring of serum potassium with correction if required",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "stimulant laxatives; glucocorticoids"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Other potassium-lowering medicines Increased risk of hypokalaemia. Monitoring of serum potassium with correction if required."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "hydrochlorothiazide",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Other antihypertensives",
+      "consequence": "Additive blood-pressure lowering.",
+      "action": "Reducing the dose is advised when combined, at least initially.",
+      "sourceWording": "It is advised to reduce the dose when combined with other antihypertensives",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "It is advised to reduce the dose when combined with other antihypertensives, at least initially."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:tamsulosin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hydrochlorothiazide",
+      "other": "group:alpha-blocker",
+      "effect": "hypotension",
+      "concern": "Alpha-blockers (including tamsulosin)",
+      "consequence": "Increased hypotensive effect; greater risk of orthostatic hypotension.",
+      "action": "Combination to be taken into account (no specific action stated).",
+      "sourceWording": "Greater risk of orthostatic hypotension",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Alpha-blockers for urological problems (alfuzosin, doxazosin, prazosin, silodosin, tamsulosin, terazosin) Hypotensive effect increased. Greater risk of orthostatic hypotension."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:nitrate",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hydrochlorothiazide",
+      "other": "group:nitrate",
+      "effect": "hypotension",
+      "concern": "Nitrates",
+      "consequence": "Increased risk of hypotension, especially orthostatic.",
+      "action": "Combination to be taken into account (no specific action stated).",
+      "sourceWording": "Increased risk of hypotension",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Nitrate derivatives Increased risk of hypotension, especially orthostatic hypotension."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:pde5",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hydrochlorothiazide",
+      "other": "group:pde5-inhibitor",
+      "effect": "hypotension",
+      "concern": "Phosphodiesterase type 5 inhibitors",
+      "consequence": "Increased risk of hypotension, especially orthostatic.",
+      "action": "Combination to be taken into account (no specific action stated).",
+      "sourceWording": "Increased risk of hypotension",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Especially nitrates, phosphodiesterase type 5 inhibitors, alpha blockers for urological problems"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Increased risk of hypotension, especially orthostatic hypotension."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hydrochlorothiazide",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hypotension",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "Increased risk of hypotension, especially orthostatic.",
+      "action": "Combination to be taken into account (no specific action stated).",
+      "sourceWording": "Increased risk of hypotension",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "of tricyclic antidepressants and phenothiazines"
+        },
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Increased risk of hypotension, especially orthostatic hypotension."
+        }
+      ]
+    },
+    {
+      "id": "hydrochlorothiazide:interaction:calcium",
+      "kind": "interaction",
+      "level": "info",
+      "med": "hydrochlorothiazide",
+      "other": "group:calcium-preparation",
+      "concern": "Calcium",
+      "consequence": "Risk of hypercalcaemia (reduced urinary calcium excretion).",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "Risk of hypercalcaemia",
+      "src": [
+        {
+          "s": "mhra-spc-hydrochlorothiazide-25",
+          "q": "Calcium Risk of hypercalcaemia due to reduced urinary calcium excretion."
+        }
+      ]
+    }
+  ]
+}

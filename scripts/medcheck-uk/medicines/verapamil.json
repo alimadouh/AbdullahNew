@@ -1,0 +1,1372 @@
+{
+  "id": "verapamil",
+  "name": "Verapamil hydrochloride",
+  "ingredients": [
+    "verapamil"
+  ],
+  "className": "Rate-limiting (phenylalkylamine) calcium-channel blocker",
+  "groups": [
+    "calcium-channel-blocker",
+    "rate-limiting-ccb",
+    "cyp3a4-inhibitor",
+    "antihypertensive"
+  ],
+  "searchTerms": [
+    "verapamil",
+    "verapamil hydrochloride"
+  ],
+  "formulations": [
+    {
+      "id": "verapamil-mr",
+      "label": "Modified-release tablets",
+      "route": "oral",
+      "strengths": "240 mg",
+      "release": "modified",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Verapamil hydrochloride Ph Eur 240 mg"
+        }
+      ],
+      "sourceIds": [
+        "emc-6243"
+      ]
+    },
+    {
+      "id": "verapamil-ir",
+      "label": "Tablets (immediate release)",
+      "route": "oral",
+      "strengths": "80 mg",
+      "release": "immediate",
+      "note": "No immediate-release verapamil tablet SmPC is listed on emc; this form uses the UK verapamil 80 mg film-coated tablet SPC from MHRA products. A few general warnings below are quoted from the UK verapamil oral solution SmPC and are labelled as such.",
+      "src": [
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "Each tablet contains 80mg Verapamil Hydrochloride PhEur."
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "Yellow film-coated tablets."
+        }
+      ],
+      "sourceIds": [
+        "mhra-verapamil-80-tab"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Modified-release 240 mg: mild to moderate hypertension; treatment and prophylaxis of angina; secondary prevention of re-infarction after acute MI (no heart failure, no diuretics apart from low dose for other reasons, beta-blockers not appropriate), started at least one week after the MI.",
+          "formulations": [
+            "verapamil-mr"
+          ],
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "indicated for the treatment of mild to moderate hypertension The treatment and prophylaxis of angina pectoris."
+            },
+            {
+              "s": "emc-6243",
+              "q": "Treatment is to be started at least one week after an acute myocardial infarction"
+            }
+          ]
+        },
+        {
+          "t": "Immediate-release 80 mg tablets: mild to moderate hypertension and renal hypertension; management and prophylaxis of angina (including variant angina); paroxysmal supraventricular tachycardia and rate control in atrial fibrillation/flutter (not with Wolff-Parkinson-White syndrome).",
+          "formulations": [
+            "verapamil-ir"
+          ],
+          "src": [
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "The management of mild to moderate hypertension and renal hypertension"
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "For the management and prophylaxis of angina pectoris (including variant angina)."
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "The treatment and prophylaxis of paroxysmal supraventricular tachycardia and the reduction of the ventricular rate in atrial fibrillation/flutter."
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "Verapamil should not be used for atrial fibrillation/flutter in patients with Wolff- Parkinson-White syndrome"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the UK verapamil modified-release (emc) or immediate-release 80 mg tablet (MHRA products) SmPCs."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "MR hypertension: 240 mg once daily (consider 120 mg to start if new to verapamil); after at least one week may increase to 240 mg twice daily (about 12 hours apart).",
+          "tag": "Hypertension (MR)",
+          "formulations": [
+            "verapamil-mr"
+          ],
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "For patients new to verapamil therapy, the physician should consider halving the initial dose to 120mg"
+            },
+            {
+              "s": "emc-6243",
+              "q": "Most patients respond to 240mg daily (one tablet Securon SR) given as a single dose."
+            },
+            {
+              "s": "emc-6243",
+              "q": "the dosage may be increased to a maximum of two Securon SR tablets daily (one in the morning and one in the evening at an interval of about twelve hours)"
+            }
+          ]
+        },
+        {
+          "t": "MR angina: 240 mg twice daily; some patients respond to 240 mg once daily.",
+          "tag": "Angina (MR)",
+          "formulations": [
+            "verapamil-mr"
+          ],
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Angina pectoris : One tablet of Securon SR twice daily."
+            }
+          ]
+        },
+        {
+          "t": "MR post-MI secondary prevention: 360 mg/day in divided doses, started at least one week after the MI.",
+          "tag": "Post-MI (MR)",
+          "formulations": [
+            "verapamil-mr"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "360mg/day in divided doses"
+            }
+          ]
+        },
+        {
+          "t": "Immediate-release tablets, hypertension: 240 mg daily (consider 120 mg to start if new to verapamil); after at least one week may increase to a maximum of 480 mg daily, given as 240 mg morning and evening about 12 hours apart.",
+          "tag": "Hypertension (IR)",
+          "formulations": [
+            "verapamil-ir"
+          ],
+          "src": [
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "Hypertension: 240mg verapamil daily. For patients new to verapamil therapy, the physician should consider halving the initial dose to 120mg."
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "the dosage may be increased to a maximum of 480mg (in divided doses of 240mg in the morning and 240mg in the evening, at an interval of about twelve hours)"
+            }
+          ]
+        },
+        {
+          "t": "Immediate-release tablets, angina: 120 mg twice daily; a few patients respond to 120 mg once daily.",
+          "tag": "Angina (IR)",
+          "formulations": [
+            "verapamil-ir"
+          ],
+          "src": [
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "Angina pectoris: 120mg twice daily. A small number of patients respond to a lower dose and where indictaed, adjustment down to 120mg daily could be made."
+            }
+          ]
+        },
+        {
+          "t": "Immediate-release tablets, supraventricular tachycardias: 40-120 mg three times daily depending on severity.",
+          "tag": "SVT (IR)",
+          "formulations": [
+            "verapamil-ir"
+          ],
+          "src": [
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "Supraventricular tachycardias: 40-120mg three times daily depending on the severity of the condition."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: adult dose unless renal or hepatic function is impaired.",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "The adult dose is recommended unless renal or hepatic function is impaired"
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "The adult dose is recommended unless renal or hepatic function is impaired"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Modified-release and immediate-release verapamil tablets are not recommended for children.",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Securon SR and Half Securon SR are not recommended for children."
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "Verapamil tablets are not recommended for children."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to verapamil or any excipient.",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Hypersensitivity to the active substance or to any of the excipients."
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Cardiogenic shock; acute MI complicated by bradycardia, marked hypotension or left ventricular failure; second- or third-degree AV block or sick sinus syndrome (unless functioning pacemaker); sino-atrial block; uncompensated heart failure; bradycardia below 50 beats/minute; systolic BP below 90 mmHg.",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Cardiogenic shock; acute myocardial infarction complicated by bradycardia, marked hypotension or left ventricular failure; second or third degree atrioventricular (AV) block (except in patients with a functioning artificial pacemaker); sino-atrial block;"
+            },
+            {
+              "s": "emc-6243",
+              "q": "uncompensated heart failure; bradycardia of less than 50 beats/minute; hypotension of less than 90 mmHg systolic."
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "uncompensated heart failure; bradycardia of less than 50 beats/minute; hypotension of less than 90 mmHg systolic."
+            }
+          ]
+        },
+        {
+          "t": "Atrial flutter/fibrillation with an accessory pathway (e.g. WPW): risk of ventricular tachycardia.",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Patients with atrial flutter/fibrillation in the presence of an accessory pathway ( e.g. WPW syndrome) may develop increased conduction across the anomalous pathway and ventricular tachycardia may be precipitated."
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "Patients with atrial flutter/fibrillation in the presence of an accessory pathway (e.g. WPW syndrome) may develop increased conduction across the anomalous pathway"
+            }
+          ]
+        },
+        {
+          "t": "Combination with ivabradine.",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Combination with ivabradine (see section Interactions with other medicinal products and other forms of interaction)."
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "Combination with ivabradine"
+            }
+          ]
+        },
+        {
+          "t": "The UK verapamil oral solution SmPC (a different product, not the tablet SPCs) also lists intravenous dantrolene, porphyria and grapefruit juice as contraindications. Neither UK tablet SPC used here lists them in 4.3.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-13118",
+              "q": "Intravenous dantrolene (See section 4.5)"
+            },
+            {
+              "s": "emc-13118",
+              "q": "Porphyria"
+            },
+            {
+              "s": "emc-13118",
+              "q": "Concomitant ingestion of grapefruit juice."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Liver disease: extensive hepatic metabolism; careful dose titration needed.",
+          "tag": "Liver",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Since verapamil is extensively metabolised in the liver, careful dose titration is required in patients with liver disease."
+            }
+          ]
+        },
+        {
+          "t": "Renal impairment: pharmacokinetics unchanged, but use caution and careful monitoring. Not removed by dialysis.",
+          "tag": "Kidney",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Although the pharmacokinetics of verapamil in patients with renal impairment are not affected, caution should be exercised and careful patient monitoring is recommended. Verapamil is not removed during dialysis."
+            }
+          ]
+        },
+        {
+          "t": "AV/SA node effects: first-degree AV block, bradycardia; second/third-degree AV block or bundle branch block requires stopping. Higher risk with sick sinus syndrome (more common in older people).",
+          "tag": "Conduction",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Use with caution as development of second-or third-degree AV block (contraindication) or unifascicular, bifascicular or trifascicular bundle branch block requires discontinuation"
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "This is more likely to occur in patients with a sick sinus syndrome (SA nodal disease), which is more common in older patients."
+            }
+          ]
+        },
+        {
+          "t": "Statins (simvastatin, atorvastatin): caution; start verapamil at the lowest dose and titrate; if adding verapamil to a statin, see the statin advice.",
+          "tag": "Statins",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Caution should be exercised in treatment with HMG CoA reductase inhibitors (e.g., simvastatin, atorvastatin or lovastatin) for patients taking verapamil."
+            }
+          ]
+        },
+        {
+          "t": "Neuromuscular transmission disorders (myasthenia gravis, Lambert-Eaton, advanced Duchenne): use with caution.",
+          "tag": "Myasthenia gravis",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Use with caution in the presence of diseases in which neuromuscular transmission is affected (myasthenia gravis, Lambert-Eaton syndrome, advanced Duchenne muscular dystrophy)."
+            }
+          ]
+        },
+        {
+          "t": "UK verapamil oral solution SmPC: in incipient heart failure give verapamil only after the heart failure is controlled; monitor blood pressure regularly when treating hypertension.",
+          "tag": "Heart failure",
+          "src": [
+            {
+              "s": "emc-13118",
+              "q": "In patients with incipient cardiac failure, therefore, verapamil should be given only after such cardiac failure has been controlled with appropriate therapy"
+            },
+            {
+              "s": "emc-13118",
+              "q": "When treating hypertension with verapamil, monitoring of the patient's blood pressure at regular intervals is required."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Beta-blockers (e.g. propranolol, metoprolol): verapamil may raise their levels; additive AV block, bradycardia, hypotension and heart failure. IV beta-blockers should not be given to patients on verapamil.",
+          "tag": "Beta-blockers",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Verapamil may increase the plasma concentrations of metoprolol and propranolol which may lead to additive cardiovascular effects (e.g. AV block, bradycardia, hypotension, heart failure)."
+            },
+            {
+              "s": "emc-6243",
+              "q": "Intravenous beta-blockers should not be given to patients under treatment with verapamil."
+            }
+          ]
+        },
+        {
+          "t": "Simvastatin and atorvastatin: verapamil raises their levels. Start the statin at the lowest dose; if adding verapamil, consider reducing the statin dose. MHRA: do not exceed simvastatin 20 mg daily with verapamil.",
+          "tag": "Statins",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Verapamil may increase the plasma concentrations atorvastatin, lovastatin and simvastatin."
+            },
+            {
+              "s": "emc-6243",
+              "q": "consider a reduction in the statin dose and retitrate against serum cholesterol concentrations."
+            },
+            {
+              "s": "mhra-dsu-simvastatin-interactions-2012",
+              "q": "Amiodarone Amlodipine Verapamil Diltiazem Do not exceed 20 mg simvastatin daily"
+            }
+          ]
+        },
+        {
+          "t": "CYP3A4 inhibitors (e.g. clarithromycin, erythromycin, ritonavir) raise verapamil levels; CYP3A4 inducers (rifampicin, phenytoin, phenobarbital, St John's wort) lower them. Monitor for interactions.",
+          "tag": "CYP3A4",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Clinically significant interactions have been reported with inhibitors of CYP3A4 causing elevation of plasma levels of verapamil hydrochloride while inducers of CYP3A4 have caused a lowering of plasma levels of verapamil hydrochloride, therefore, patients should be monitored for drug interactions."
+            },
+            {
+              "s": "emc-6243",
+              "q": "Erythromycin, clarithromycin and telithromycin may increase the plasma concentrations of verapamil."
+            }
+          ]
+        },
+        {
+          "t": "Aspirin: may increase the risk of bleeding.",
+          "tag": "Aspirin",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Concomitant use of verapamil with aspirin may increase the risk of bleeding."
+            }
+          ]
+        },
+        {
+          "t": "Antihypertensives, diuretics, vasodilators and alpha-blockers: additive blood pressure lowering.",
+          "tag": "Antihypertensives",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Antihypertensives, diuretics, vasodilators Potentiation of the hypotensive effect."
+            },
+            {
+              "s": "emc-6243",
+              "q": "Verapamil may increase the plasma concentrations of prazosin and terazosin which may have an additive hypotensive effect."
+            }
+          ]
+        },
+        {
+          "t": "Carbamazepine levels may rise (diplopia, headache, ataxia, dizziness). Metformin may be less effective.",
+          "tag": "Carbamazepine, metformin",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Verapamil may increase the plasma concentrations of carbamazepine. This may produce side effects such as diplopia, headache, ataxia or dizziness."
+            },
+            {
+              "s": "emc-6243",
+              "q": "Co-administration of verapamil with metformin may reduce the efficacy of metformin."
+            }
+          ]
+        },
+        {
+          "t": "Digoxin: levels rise; check digoxin level and reduce dose if needed. Colchicine: not recommended. Dabigatran and other DOACs: more exposure and bleeding risk. Ciclosporin, tacrolimus, everolimus, sirolimus: levels rise. Lithium: neurotoxicity. Ivabradine: contraindicated.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "The digitalis level should be determined and the glycoside dose reduced, if required."
+            },
+            {
+              "s": "emc-6243",
+              "q": "Combined use is not recommended."
+            },
+            {
+              "s": "emc-6243",
+              "q": "Concomitant use with ivabradine is contraindicated"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Renal impairment does not change verapamil pharmacokinetics, but use caution with careful monitoring. Not removed by dialysis.",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Although the pharmacokinetics of verapamil in patients with renal impairment are not affected, caution should be exercised and careful patient monitoring is recommended."
+            },
+            {
+              "s": "emc-6243",
+              "q": "Verapamil is not removed during dialysis."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Hepatic impairment: effects are potentiated and prolonged; adjust the dose with special caution and start with low doses (both tablet SPCs).",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "the dosage needs to be adjusted with special caution in patients with impaired liver function and low doses should be given initially"
+            },
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "the dosage needs to be adjusted with special caution in patients with impaired liver function and low doses should be given initially"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: should not be given in the first trimester unless essential for the patient; no teratogenicity in animal studies.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "verapamil should not be given during the first trimester of pregnancy unless, in the clinician's judgement, it is essential for the welfare of the patient."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (calcium-channel blockers): no clear risks; calcium-channel blockers other than nifedipine are recommended only when benefits outweigh possible risks.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-calcium-channel-blockers",
+              "q": "There are no clear risks of taking a calcium channel blocker in pregnancy."
+            },
+            {
+              "s": "bumps-calcium-channel-blockers",
+              "q": "The other calcium channel blockers are less commonly used, and while not thought to cause problems, will only be recommended if the benefits of treating a potentially serious or lifestyle-impacting condition outweigh any possible risks."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: excreted in milk (infant dose low, 0.1-1%); because of possible serious infant reactions, use only if essential for the mother.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "verapamil should only be used during lactation if it is essential for the welfare of the mother."
+            }
+          ]
+        },
+        {
+          "t": "SPS: the rate-limiting calcium-channel blocker of choice (negligible amounts in milk); as a precaution monitor the infant for hypotension.",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-ccb-breastfeeding",
+              "q": "This is a preferred choice due to negligible amounts in breastmilk."
+            },
+            {
+              "s": "sps-ccb-breastfeeding",
+              "q": "Nifedipine and verapamil are the calcium-channel blockers of choice during breastfeeding."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "No fertility data: the oral solution SmPC states no information is available on fertility; no contraception advice stated."
+    },
+    "adverseCommon": {
+      "status": "not-stated",
+      "note": "The UK verapamil SmPCs list adverse effects without frequency categories (e.g. constipation, headache, dizziness, peripheral and ankle oedema, flushing, bradycardia); frequencies not stated."
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Bradyarrhythmias (sinus bradycardia, sinus arrest with asystole, second/third-degree AV block), development or worsening of heart failure, hypotension.",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "bradycardic arrhythmias such as sinus bradycardia, sinus arrest with asystole, 2nd and 3rd degree AV block, bradyarrhythmia in atrial fibrillation, peripheral oedema, palpitations, tachycardia, development or aggravation of heart failure and hypotension."
+            }
+          ]
+        },
+        {
+          "t": "Very rare: allergic reactions; reversible liver function impairment (probably hypersensitivity). Stevens-Johnson syndrome and erythema multiforme reported.",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "allergic reactions (e.g. erythema, pruritus, urticaria) are very rarely seen."
+            },
+            {
+              "s": "emc-6243",
+              "q": "Steven-Johnson syndrome, erythema multiforme"
+            }
+          ]
+        },
+        {
+          "t": "Overdose: severe hypotension, shock, AV block, asystole; fatalities. MR tablets can release drug for more than 48 hours. Not removed by haemodialysis; antidote is IV calcium.",
+          "tag": "Overdose",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Fatalities have occurred as a result of overdose."
+            },
+            {
+              "s": "emc-6243",
+              "q": "the release of the active drug and the absorption in the intestine may take more than 48 hours."
+            },
+            {
+              "s": "emc-6243",
+              "q": "The specific antidote is calcium"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Renal impairment: careful patient monitoring.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "careful patient monitoring is recommended."
+            }
+          ]
+        },
+        {
+          "t": "Hypertension: monitor blood pressure at regular intervals (oral solution SmPC).",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-13118",
+              "q": "When treating hypertension with verapamil, monitoring of the patient's blood pressure at regular intervals is required."
+            }
+          ]
+        },
+        {
+          "t": "With digoxin: check digoxin level.",
+          "tag": "ongoing",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "The digitalis level should be determined and the glycoside dose reduced, if required."
+            }
+          ]
+        },
+        {
+          "t": "Stop if second- or third-degree AV block or bundle branch block develops.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "requires discontinuation in subsequent doses of verapamil hydrochloride"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "MR tablets: swallow without sucking or chewing with enough liquid, preferably with or shortly after meals; may be halved at the score.",
+          "formulations": [
+            "verapamil-mr"
+          ],
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "Securon SR tablets should be taken without sucking or chewing, with sufficient liquid, preferably with or shortly after meals."
+            },
+            {
+              "s": "emc-6243",
+              "q": "Securon SR tablets are scored and may be halved without damaging the modified-release formulation."
+            }
+          ]
+        },
+        {
+          "t": "Immediate-release tablets: swallow without sucking or chewing, with enough liquid, preferably with or shortly after meals.",
+          "formulations": [
+            "verapamil-ir"
+          ],
+          "src": [
+            {
+              "s": "mhra-verapamil-80-tab",
+              "q": "Verapamil tablets should be taken without sucking or chewing, with sufficient liquid, preferably with or shortly after meals."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Avoid grapefruit juice (raises verapamil levels).",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "grapefruit juice may increase the plasma concentrations of verapamil."
+            }
+          ]
+        },
+        {
+          "t": "Alcohol effects may be stronger; driving may be affected, especially at the start, on dose change or with alcohol.",
+          "src": [
+            {
+              "s": "emc-6243",
+              "q": "verapamil has been shown to increase the blood levels of alcohol and slow its elimination. Therefore, the effects of alcohol may be exaggerated."
+            },
+            {
+              "s": "emc-6243",
+              "q": "This is particularly true in the initial stages of treatment, when changing over from another drug, when the dose is raised or when taken in conjunction with alcohol."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "verapamil:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "verapamil",
+      "allergen": [
+        "verapamil"
+      ],
+      "concern": "Hypersensitivity to verapamil",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Hypersensitivity to the active substance or to any of the excipients."
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:cardiogenic-shock",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "verapamil",
+      "condition": "cardiogenic-shock",
+      "concern": "Cardiogenic shock",
+      "consequence": "Negative inotropic effect.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Cardiogenic shock; acute myocardial infarction complicated by bradycardia"
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "Cardiogenic shock; acute myocardial infarction complicated by bradycardia"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:acute-mi-complicated",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "verapamil",
+      "condition": "acute-mi-complicated",
+      "concern": "Acute MI complicated by bradycardia, marked hypotension or left ventricular failure",
+      "consequence": "Haemodynamic deterioration.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "acute myocardial infarction complicated by bradycardia, marked hypotension or left ventricular failure"
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "acute myocardial infarction complicated by bradycardia, marked hypotension or left ventricular failure"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:av-block",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "verapamil",
+      "condition": "av-block-2nd-3rd",
+      "concern": "Second- or third-degree AV block (unless functioning pacemaker)",
+      "consequence": "Verapamil prolongs AV conduction.",
+      "action": "Do not use unless a functioning pacemaker is present.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "second or third degree atrioventricular (AV) block (except in patients with a functioning artificial pacemaker)"
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "second or third degree atrioventricular (AV) block (except in patients with a functioning artificial pacemaker)"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:sick-sinus-syndrome",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "verapamil",
+      "condition": "sick-sinus-syndrome",
+      "concern": "Sick sinus syndrome or sino-atrial block (unless functioning pacemaker)",
+      "consequence": "Risk of severe bradycardia or asystole.",
+      "action": "Do not use unless a functioning pacemaker is present.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "sino-atrial block; sick sinus syndrome (except in patients with a functioning artificial pacemaker)"
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "sino-atrial block; sick sinus syndrome (except in patients with a functioning artificial pacemaker)"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:first-degree-block",
+      "kind": "condition",
+      "level": "caution",
+      "med": "verapamil",
+      "condition": "cardiac-conduction-disturbance",
+      "concern": "First-degree AV block or bundle branch block",
+      "consequence": "Prolongs AV conduction; progression requires stopping.",
+      "action": "Use with caution; stop if second/third-degree block or bundle branch block develops.",
+      "sourceWording": "Use with caution",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Use with caution as development of second-or third-degree AV block (contraindication) or unifascicular, bifascicular or trifascicular bundle branch block requires discontinuation"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:uncontrolled-heart-failure",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "verapamil",
+      "condition": "uncontrolled-heart-failure",
+      "concern": "Uncompensated heart failure",
+      "consequence": "May precipitate or worsen heart failure.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "uncompensated heart failure; bradycardia of less than 50 beats/minute"
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "uncompensated heart failure; bradycardia of less than 50 beats/minute"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "verapamil",
+      "condition": "heart-failure",
+      "concern": "Heart failure (incipient; from the UK oral solution SmPC)",
+      "consequence": "Cardiac failure may be precipitated or aggravated.",
+      "action": "Give only after heart failure is controlled (oral solution SmPC; the tablet SPCs contraindicate uncompensated heart failure).",
+      "sourceWording": "should be given only after such cardiac failure has been controlled",
+      "src": [
+        {
+          "s": "emc-13118",
+          "q": "In patients with incipient cardiac failure, therefore, verapamil should be given only after such cardiac failure has been controlled with appropriate therapy"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:bradycardia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "verapamil",
+      "condition": "bradycardia",
+      "concern": "Bradycardia below 50 beats/minute",
+      "consequence": "Further slowing of heart rate.",
+      "action": "Do not use if heart rate is below 50 beats/minute.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "bradycardia of less than 50 beats/minute"
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "bradycardia of less than 50 beats/minute"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:hypotension",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "verapamil",
+      "condition": "hypotension",
+      "concern": "Hypotension (systolic below 90 mmHg)",
+      "consequence": "Further fall in blood pressure.",
+      "action": "Do not use if systolic BP is below 90 mmHg.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "hypotension of less than 90 mmHg systolic."
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "hypotension of less than 90 mmHg systolic."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:accessory-pathway-af",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "verapamil",
+      "condition": "accessory-pathway-af",
+      "concern": "Atrial flutter/fibrillation with accessory pathway (e.g. WPW)",
+      "consequence": "Increased conduction over the accessory pathway; ventricular tachycardia may be precipitated.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Patients with atrial flutter/fibrillation in the presence of an accessory pathway ( e.g. WPW syndrome) may develop increased conduction across the anomalous pathway and ventricular tachycardia may be precipitated."
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "Patients with atrial flutter/fibrillation in the presence of an accessory pathway (e.g. WPW syndrome) may develop increased conduction across the anomalous pathway"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:porphyria",
+      "kind": "condition",
+      "level": "info",
+      "med": "verapamil",
+      "condition": "porphyria",
+      "concern": "Porphyria (listed only in the UK verapamil oral solution SmPC)",
+      "consequence": "The oral solution SmPC lists porphyria as a contraindication; the UK verapamil tablet SPCs do not.",
+      "action": "No restriction stated for the tablets; be aware of the oral solution contraindication.",
+      "sourceWording": "Contraindications (oral solution SmPC)",
+      "src": [
+        {
+          "s": "emc-13118",
+          "q": "Porphyria"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:myasthenia-gravis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "verapamil",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis or other neuromuscular transmission disorders",
+      "consequence": "Neuromuscular transmission may be affected.",
+      "action": "Use with caution.",
+      "sourceWording": "Use with caution",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Use with caution in the presence of diseases in which neuromuscular transmission is affected (myasthenia gravis, Lambert-Eaton syndrome, advanced Duchenne muscular dystrophy)."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "verapamil",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment",
+      "consequence": "Pharmacokinetics unchanged; not removed by dialysis.",
+      "action": "Use caution with careful patient monitoring.",
+      "sourceWording": "caution should be exercised and careful patient monitoring is recommended",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Although the pharmacokinetics of verapamil in patients with renal impairment are not affected, caution should be exercised and careful patient monitoring is recommended."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:hepatic:any",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "verapamil",
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Hepatic impairment",
+      "consequence": "Delayed metabolism potentiates and prolongs effects.",
+      "action": "Start with low doses and titrate carefully.",
+      "sourceWording": "low doses should be given initially",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "the dosage needs to be adjusted with special caution in patients with impaired liver function and low doses should be given initially"
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "the dosage needs to be adjusted with special caution in patients with impaired liver function and low doses should be given initially"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:age:child",
+      "kind": "age",
+      "level": "avoid",
+      "med": "verapamil",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Child (verapamil tablets)",
+      "consequence": "Modified-release and immediate-release tablets are not recommended for children.",
+      "action": "Not recommended for children.",
+      "sourceWording": "not recommended for children",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Securon SR and Half Securon SR are not recommended for children."
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "Verapamil tablets are not recommended for children."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:pregnancy:t1",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "verapamil",
+      "trimesters": [
+        1
+      ],
+      "concern": "Pregnancy, first trimester",
+      "consequence": "No adequate human data.",
+      "action": "Do not give in the first trimester unless essential for the patient.",
+      "sourceWording": "should not be given during the first trimester",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "verapamil should not be given during the first trimester of pregnancy unless, in the clinician's judgement, it is essential for the welfare of the patient."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "verapamil",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Excreted in milk (low infant dose); possible serious reactions in nursing infants.",
+      "action": "SmPC: use only if essential for the mother.",
+      "sourceWording": "should only be used during lactation if it is essential",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "verapamil should only be used during lactation if it is essential for the welfare of the mother."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "monitor",
+      "med": "verapamil",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Negligible amounts in breast milk.",
+      "action": "SPS: preferred rate-limiting calcium-channel blocker; as a precaution monitor the infant for hypotension.",
+      "sourceWording": "This is a preferred choice",
+      "src": [
+        {
+          "s": "sps-ccb-breastfeeding",
+          "q": "This is a preferred choice due to negligible amounts in breastmilk."
+        },
+        {
+          "s": "sps-ccb-breastfeeding",
+          "q": "As a precaution, monitor the infant for hypotension which may manifest as drowsiness, lethargy, looking pale, poor feeding and inadequate weight gain."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:beta-blocker",
+      "kind": "interaction",
+      "level": "info",
+      "med": "verapamil",
+      "other": "group:beta-blocker",
+      "effect": "hypotension",
+      "concern": "Beta-blockers",
+      "consequence": "Additive AV block, bradycardia, hypotension and heart failure; verapamil raises propranolol and metoprolol levels.",
+      "action": "Be aware of additive AV block, bradycardia, hypotension and heart failure (no action stated for oral beta-blockers); intravenous beta-blockers should not be given to patients taking verapamil.",
+      "sourceWording": "may lead to additive cardiovascular effects",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Verapamil may increase the plasma concentrations of metoprolol and propranolol which may lead to additive cardiovascular effects (e.g. AV block, bradycardia, hypotension, heart failure)."
+        },
+        {
+          "s": "emc-6243",
+          "q": "Intravenous beta-blockers should not be given to patients under treatment with verapamil."
+        },
+        {
+          "s": "mhra-verapamil-80-tab",
+          "q": "Verapamil may increase the plasma concentrations of metoprolol and propranolol which may lead to additive cardiovascular effects (e.g. AV block, bradycardia, hypotension, heart failure)."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:simvastatin",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "verapamil",
+      "other": "simvastatin",
+      "effect": "myopathy",
+      "concern": "Simvastatin",
+      "consequence": "Verapamil raises simvastatin levels (myopathy risk).",
+      "action": "Do not exceed simvastatin 20 mg daily (MHRA); start the statin at the lowest dose, or reduce it when adding verapamil.",
+      "sourceWording": "Do not exceed 20 mg simvastatin daily",
+      "src": [
+        {
+          "s": "mhra-dsu-simvastatin-interactions-2012",
+          "q": "Amiodarone Amlodipine Verapamil Diltiazem Do not exceed 20 mg simvastatin daily"
+        },
+        {
+          "s": "emc-6243",
+          "q": "Verapamil may increase the plasma concentrations atorvastatin, lovastatin and simvastatin."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:atorvastatin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "verapamil",
+      "other": "atorvastatin",
+      "effect": "myopathy",
+      "concern": "Atorvastatin",
+      "consequence": "Strong potential for verapamil to raise atorvastatin exposure; atorvastatin raises verapamil levels.",
+      "action": "Use caution; start the statin at the lowest dose, or consider a statin dose reduction when adding verapamil.",
+      "sourceWording": "Consider using caution",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Consider using caution when atorvastatin and verapamil are concomitantly administered."
+        },
+        {
+          "s": "emc-6243",
+          "q": "Atorvastatin has been shown to increase verapamil levels."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:clarithromycin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "verapamil",
+      "other": "clarithromycin",
+      "effect": "hypotension",
+      "concern": "Clarithromycin",
+      "consequence": "May increase verapamil levels.",
+      "action": "Monitor for drug interaction effects.",
+      "sourceWording": "patients should be monitored for drug interactions",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Erythromycin, clarithromycin and telithromycin may increase the plasma concentrations of verapamil."
+        },
+        {
+          "s": "emc-6243",
+          "q": "therefore, patients should be monitored for drug interactions."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "verapamil",
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "CYP3A4 inhibitors",
+      "consequence": "Raised verapamil levels.",
+      "action": "Monitor for drug interaction effects.",
+      "sourceWording": "patients should be monitored for drug interactions",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Clinically significant interactions have been reported with inhibitors of CYP3A4 causing elevation of plasma levels of verapamil hydrochloride"
+        },
+        {
+          "s": "emc-6243",
+          "q": "therefore, patients should be monitored for drug interactions."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:cyp3a4-inducer",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "verapamil",
+      "other": "group:cyp3a4-inducer",
+      "concern": "CYP3A4 inducers (e.g. St John's wort)",
+      "consequence": "Lower verapamil levels.",
+      "action": "Monitor for drug interaction effects.",
+      "sourceWording": "patients should be monitored for drug interactions",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "inducers of CYP3A4 have caused a lowering of plasma levels of verapamil hydrochloride, therefore, patients should be monitored for drug interactions."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:st-johns-wort",
+      "kind": "interaction",
+      "level": "info",
+      "med": "verapamil",
+      "other": "st-johns-wort",
+      "concern": "St John's wort",
+      "consequence": "May reduce verapamil levels.",
+      "action": "Be aware of reduced effect.",
+      "sourceWording": "may reduce the plasma concentrations of verapamil",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "St. John's Wort may reduce the plasma concentrations of verapamil"
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:aspirin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "verapamil",
+      "other": "aspirin",
+      "effect": "bleeding",
+      "concern": "Aspirin",
+      "consequence": "May increase the risk of bleeding.",
+      "action": "Be aware of bleeding risk.",
+      "sourceWording": "may increase the risk of bleeding",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Concomitant use of verapamil with aspirin may increase the risk of bleeding."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "verapamil",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Antihypertensives, diuretics, vasodilators",
+      "consequence": "Potentiation of the hypotensive effect.",
+      "action": "Be aware of additive effect.",
+      "sourceWording": "Potentiation of the hypotensive effect",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Antihypertensives, diuretics, vasodilators Potentiation of the hypotensive effect."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:diuretic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "verapamil",
+      "other": "group:diuretic",
+      "effect": "hypotension",
+      "concern": "Diuretics",
+      "consequence": "Potentiation of the hypotensive effect.",
+      "action": "Be aware of additive effect.",
+      "sourceWording": "Potentiation of the hypotensive effect",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Antihypertensives, diuretics, vasodilators Potentiation of the hypotensive effect."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:alpha-blocker",
+      "kind": "interaction",
+      "level": "info",
+      "med": "verapamil",
+      "other": "group:alpha-blocker",
+      "effect": "hypotension",
+      "concern": "Alpha-blockers (e.g. prazosin, terazosin)",
+      "consequence": "Raised alpha-blocker levels; additive hypotensive effect.",
+      "action": "Be aware of additive hypotension.",
+      "sourceWording": "may have an additive hypotensive effect",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Verapamil may increase the plasma concentrations of prazosin and terazosin which may have an additive hypotensive effect."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "verapamil",
+      "other": "carbamazepine",
+      "concern": "Carbamazepine",
+      "consequence": "Carbamazepine levels may rise (diplopia, headache, ataxia, dizziness).",
+      "action": "Be aware of carbamazepine side effects.",
+      "sourceWording": "may increase the plasma concentrations of carbamazepine",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Verapamil may increase the plasma concentrations of carbamazepine. This may produce side effects such as diplopia, headache, ataxia or dizziness."
+        }
+      ]
+    },
+    {
+      "id": "verapamil:interaction:metformin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "verapamil",
+      "other": "metformin",
+      "concern": "Metformin",
+      "consequence": "May reduce the efficacy of metformin.",
+      "action": "Be aware.",
+      "sourceWording": "may reduce the efficacy of metformin",
+      "src": [
+        {
+          "s": "emc-6243",
+          "q": "Co-administration of verapamil with metformin may reduce the efficacy of metformin."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "id": "fusidic-acid-hydrocortisone",
+  "name": "Fusidic acid/hydrocortisone (topical)",
+  "ingredients": ["fusidic-acid", "hydrocortisone"],
+  "className": "Mild topical corticosteroid with antibiotic (hydrocortisone and antibiotics)",
+  "groups": ["topical-corticosteroid"],
+  "searchTerms": ["fusidic acid hydrocortisone cream", "hydrocortisone fusidic acid", "fusidic acid/hydrocortisone acetate"],
+  "formulations": [
+    {
+      "id": "fusidic-acid-hydrocortisone-cream",
+      "label": "Cream",
+      "route": "topical",
+      "strengths": "Fusidic acid 2% / hydrocortisone acetate 1%",
+      "release": "n/a",
+      "note": "Contains butyl hydroxyanisole, cetyl alcohol, potassium sorbate and polysorbate 60 (possible local skin reactions, eye irritation, allergic reactions).",
+      "src": [
+        { "s": "emc-5511", "q": "contains fusidic acid Ph.Eur.2% and hydrocortisone acetate Ph.Eur.1%" },
+        { "s": "emc-5511", "q": "These excipients may cause local skin reactions (e.g. contact dermatitis)." }
+      ],
+      "sourceIds": ["emc-5511"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Eczema and dermatitis with secondary bacterial infection (atopic eczema, primary irritant, allergic and seborrhoeic dermatitis) where the organisms are known or believed to be sensitive to fusidic acid.",
+        "src": [{ "s": "emc-5511", "q": "indicated in eczema and dermatitis with secondary bacterial infections, including atopic eczema, primary irritant dermatitis and allergic and seborrhoeic dermatitis" }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Labelled as a mild steroid (MHRA potency labelling for topical steroids).",
+        "detail": true,
+        "src": [
+          { "s": "emc-5511", "q": "The label will state mild steroid." },
+          { "s": "mhra-dsu-topical-steroids-labelling-2024", "q": "These will be labelled 'mild steroid', 'moderate steroid', 'strong steroid', and 'very strong steroid'." }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Uncovered lesions: apply a small quantity twice daily until a satisfactory response. A single course should not normally exceed 2 weeks. Covered lesions: less frequent application may be enough.",
+        "tag": "Adults and children",
+        "src": [
+          { "s": "emc-5511", "q": "a small quantity should be applied to the affected area twice daily until a satisfactory response is obtained" },
+          { "s": "emc-5511", "q": "A single treatment course should not normally exceed 2 weeks." }
+        ] },
+      { "t": "Do not continue for more than 7 days if there is no clinical improvement; limit treatment to no more than 14 days at a time.",
+        "src": [
+          { "s": "emc-5511", "q": "Steroid antibiotic combinations should not be continued for more than 7 days in the absence of any clinical improvement." },
+          { "s": "emc-5511", "q": "Limiting therapy with topical fusidic acid and hydrocortisone acetate to no more than 14 days at a time will minimise the risk of developing resistance." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Same dose for children, but use with care: children may be more susceptible to topical-corticosteroid HPA-axis suppression and Cushing's syndrome.",
+        "src": [
+          { "s": "emc-5511", "q": "Adults and Children: Uncovered lesions" },
+          { "s": "emc-5511", "q": "Fucidin H cream should be used with care in children as paediatric patients may be more susceptible to topical corticosteroid-induced HPA axis suppression and Cushing's syndrome than adult patients" }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to fusidic acid (sodium fusidate), hydrocortisone acetate or any excipient.",
+        "src": [{ "s": "emc-5511", "q": "Hypersensitivity to fusidic acid/sodium fusidate, hydrocortisone acetate or to any of the excipients listed in section 6.1." }] },
+      { "t": "Primary skin infections caused by fungi, viruses or bacteria that are untreated or not controlled by treatment; untreated or uncontrolled skin tuberculosis; perioral dermatitis; rosacea.",
+        "src": [
+          { "s": "emc-5511", "q": "Primary skin infections caused by fungi, virus or bacteria, either untreated or uncontrolled by appropriate treatment" },
+          { "s": "emc-5511", "q": "Skin manifestations in relation to tuberculosis, either untreated or uncontrolled by appropriate therapy. Perioral dermatitis and rosacea." }
+        ] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Not recommended in atrophic skin, cutaneous ulcer, acne vulgaris, fragile skin veins, or perianal and genital pruritus. Avoid contact with open wounds and mucous membranes.",
+        "src": [
+          { "s": "emc-5511", "q": "it is not recommended in the following conditions: atrophic skin, cutaneous ulcer, acne vulgaris, fragile skin veins and perianal and genital pruritus" },
+          { "s": "emc-5511", "q": "Contact with open wounds and mucous membranes should be avoided." }
+        ] },
+      { "t": "Avoid long-term continuous use and prolonged use on the face. Consider systemic absorption depending on the site; HPA-axis suppression can occur with or without occlusion.",
+        "src": [
+          { "s": "emc-5511", "q": "Long-term continuous topical therapy with Fucidin H cream should be avoided." },
+          { "s": "emc-5511", "q": "As with all corticosteroids, prolonged use on the face should be avoided." },
+          { "s": "emc-5511", "q": "Reversible hypothalamic-pituitary-adrenal (HPA) axis suppression may occur with or without occlusions following systemic absorption of topical corticosteroids." }
+        ] },
+      { "t": "Use with care near the eyes and avoid getting it into the eyes. Blurred vision or other visual disturbance: consider referral to an ophthalmologist.",
+        "src": [
+          { "s": "emc-5511", "q": "Fucidin H cream should be used with care near the eyes. Avoid getting Fucidin H cream into the eyes" },
+          { "s": "emc-5511", "q": "the patient should be considered for referral to an ophthalmologist for evaluation of possible causes" }
+        ] },
+      { "t": "Steroid may increase susceptibility to infection, worsen existing infection or activate latent infection, and may mask resistant infection. Fusidic acid resistance has been reported. Switch to systemic therapy if infection is not controlled.",
+        "src": [
+          { "s": "emc-5511", "q": "may be associated with increased susceptibility to infection, aggravation of existing infection, and activation of latent infection" },
+          { "s": "emc-5511", "q": "It is advised to switch to systemic therapy if infection cannot be controlled with topical treatment" },
+          { "s": "emc-5511", "q": "Bacterial resistance has been reported to occur with the topical use of fusidic acid." }
+        ] },
+      { "t": "Topical steroid withdrawal: long-term use can cause rebound flares after stopping (intense redness, stinging, burning spreading beyond the treated area), more likely on the face and flexures. If the condition recurs within days to weeks, suspect withdrawal; re-apply only with caution and specialist advice, or consider other treatments.",
+        "src": [
+          { "s": "emc-5511", "q": "Long term use of topical steroids can result in the development of rebound flares after stopping treatment (topical steroid withdrawal syndrome)." },
+          { "s": "emc-5511", "q": "Should there be a reoccurrence of the condition within days to weeks after successful treatment a withdrawal reaction should be suspected." }
+        ] },
+      { "t": "Fire hazard: fabric in contact with the cream burns more easily; patients must not smoke or go near naked flames.",
+        "detail": true,
+        "src": [{ "s": "emc-5511", "q": "Instruct patients not to smoke or go near naked flames - risk of severe burns." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "No interaction studies; interactions with systemic medicines are considered minimal.",
+        "src": [{ "s": "emc-5511", "q": "Interactions with systemically administered medicinal products are considered minimal." }] }
+    ] },
+    "renal": { "status": "not-stated", "note": "The UK SmPC gives no renal advice." },
+    "hepatic": { "status": "not-stated", "note": "The UK SmPC gives no hepatic advice." },
+    "pregnancy": { "items": [
+      { "t": "Can be used in pregnancy if clinically needed, with caution (general knowledge of systemic corticosteroids). Large data on corticosteroids show no malformations; fusidic acid exposure is negligible.",
+        "src": [
+          { "s": "emc-5511", "q": "Fucidin H cream can be used during pregnancy if clinically needed." },
+          { "s": "emc-5511", "q": "caution should be exercised when using Fucidin H cream during pregnancy" },
+          { "s": "emc-5511", "q": "A large amount of data on pregnant women (more than 1000 pregnancy outcomes) indicates no malformative nor feto/neonatal toxicity of corticosteroids." },
+          { "s": "emc-5511", "q": "No effects during pregnancy are anticipated, since systemic exposure to fusidic acid is negligible." }
+        ] },
+      { "t": "BUMPS: topical corticosteroids (hydrocortisone is named) can be used in pregnancy.",
+        "src": [{ "s": "bumps-corticosteroids-topical", "q": "Topical corticosteroids can be used in pregnancy." }] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Can be used during breastfeeding, but do not apply to the breast.",
+        "src": [{ "s": "emc-5511", "q": "Fucidin H cream can be used during breastfeeding but it is recommended to avoid applying Fucidin H cream on the breast." }] },
+      { "t": "SPS: topical hydrocortisone can be used during breastfeeding, with no extra risk from combination products containing antimicrobials; fusidic acid can also be used.",
+        "src": [
+          { "s": "sps-topical-corticosteroids-breastfeeding", "q": "There are no additional risks when combination topical preparations containing antimicrobials or urea are used." },
+          { "s": "sps-impetigo-topical-breastfeeding", "q": "Fusidic acid can be used during breastfeeding." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "No clinical studies on fertility.",
+        "detail": true,
+        "src": [{ "s": "emc-5511", "q": "There are no clinical studies with Fucidin H cream regarding fertility." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Application-site reactions (itching, burning, irritation).",
+        "tag": "Common",
+        "src": [{ "s": "emc-5511", "q": "Application site reaction (incl. pruritus, burning and irritation)" }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Hypersensitivity (uncommon).",
+        "src": [{ "s": "emc-5511", "q": "Immune system disorders Uncommon (≥1/1,000 and <1/100) Hypersensitivity" }] },
+      { "t": "Adrenal suppression, especially with prolonged use; raised intra-ocular pressure and glaucoma if used near the eyes. Large amounts for more than 3 weeks can cause Cushing's syndrome and adrenocortical insufficiency.",
+        "src": [
+          { "s": "emc-5511", "q": "include adrenal suppression especially during prolonged topical administration" },
+          { "s": "emc-5511", "q": "Raised intra-ocular pressure and glaucoma may also occur after topical use of corticosteroids near the eyes" },
+          { "s": "emc-5511", "q": "Cushing's syndrome and adrenocortical insufficiency may develop following topical application of corticosteroids in large amounts and for more than three weeks." }
+        ] },
+      { "t": "Topical steroid withdrawal reactions after stopping: spreading redness, burning or stinging, itch, peeling, oozing pustules.",
+        "src": [{ "s": "emc-5511", "q": "Withdrawal reactions - redness of the skin which may extend to areas beyond the initial affected area, burning or stinging sensation, itch, skin peeling, oozing pustules" }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Review if there is no clinical improvement after 7 days; switch to systemic therapy if infection is not controlled.",
+        "tag": "stop",
+        "src": [
+          { "s": "emc-5511", "q": "Steroid antibiotic combinations should not be continued for more than 7 days in the absence of any clinical improvement." },
+          { "s": "emc-5511", "q": "It is advised to switch to systemic therapy if infection cannot be controlled with topical treatment" }
+        ] },
+      { "t": "Be vigilant for topical steroid withdrawal reactions.",
+        "tag": "ongoing",
+        "src": [{ "s": "mhra-dsu-topical-steroid-withdrawal-2021", "q": "be vigilant for the signs and symptoms of topical steroid withdrawal reactions" }] }
+    ] },
+    "administration": { "items": [
+      { "t": "For use on the skin only. Apply a small quantity to the affected area; keep away from the eyes, open wounds and mucous membranes.",
+        "src": [
+          { "s": "emc-5511", "q": "Cream for topical administration" },
+          { "s": "emc-5511", "q": "Contact with open wounds and mucous membranes should be avoided." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Use only for the course prescribed (normally no more than 2 weeks); return if no better after 7 days.",
+        "src": [
+          { "s": "emc-5511", "q": "A single treatment course should not normally exceed 2 weeks." },
+          { "s": "emc-5511", "q": "Steroid antibiotic combinations should not be continued for more than 7 days in the absence of any clinical improvement." }
+        ] },
+      { "t": "If the skin worsens within 2 weeks of stopping, do not restart without consulting the doctor (unless already advised).",
+        "src": [{ "s": "mhra-dsu-topical-steroid-withdrawal-2021", "q": "if your skin worsens within 2 weeks of stopping a topical corticosteroid, do not start treatment again without consulting your doctor" }] },
+      { "t": "Do not smoke or go near naked flames: clothing, bedding and dressings with cream on them burn more easily.",
+        "src": [{ "s": "emc-5511", "q": "Fabric (clothing, bedding, dressings etc) that has been in contact with this product burns more easily and is a serious fire hazard." }] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "fusidic-acid-hydrocortisone:allergy:ingredients",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "fusidic-acid-hydrocortisone",
+      "allergen": ["fusidic-acid", "hydrocortisone"],
+      "concern": "Hypersensitivity to fusidic acid or hydrocortisone",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-5511", "q": "Hypersensitivity to fusidic acid/sodium fusidate, hydrocortisone acetate or to any of the excipients listed in section 6.1." }]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:condition:skin-infection-untreated",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "fusidic-acid-hydrocortisone",
+      "condition": "skin-infection-untreated",
+      "concern": "Untreated or uncontrolled primary skin infection (fungal, viral or bacterial)",
+      "consequence": "Contraindicated because of the corticosteroid content: it may increase susceptibility to infection, aggravate existing infection or activate latent infection.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated ... Primary skin infections caused by fungi, virus or bacteria, either untreated or uncontrolled",
+      "src": [
+        { "s": "emc-5511", "q": "Primary skin infections caused by fungi, virus or bacteria, either untreated or uncontrolled by appropriate treatment" },
+        { "s": "emc-5511", "q": "may be associated with increased susceptibility to infection, aggravation of existing infection, and activation of latent infection" }
+      ]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:condition:viral-skin-infection",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "fusidic-acid-hydrocortisone",
+      "condition": "viral-skin-infection",
+      "concern": "Viral skin infection, untreated or uncontrolled",
+      "consequence": "Contraindicated because of the corticosteroid content when the primary viral skin infection is untreated or not controlled by treatment.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated ... Primary skin infections caused by ... virus",
+      "src": [{ "s": "emc-5511", "q": "Primary skin infections caused by fungi, virus or bacteria, either untreated or uncontrolled by appropriate treatment" }]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:condition:cutaneous-tuberculosis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "fusidic-acid-hydrocortisone",
+      "condition": "cutaneous-tuberculosis",
+      "concern": "Skin tuberculosis, untreated or uncontrolled",
+      "consequence": "Contraindicated because of the corticosteroid content.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated ... Skin manifestations in relation to tuberculosis",
+      "src": [{ "s": "emc-5511", "q": "Skin manifestations in relation to tuberculosis, either untreated or uncontrolled by appropriate therapy." }]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:condition:rosacea",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "fusidic-acid-hydrocortisone",
+      "condition": "rosacea",
+      "concern": "Rosacea",
+      "consequence": "Contraindicated because of the corticosteroid content; rosacea is also listed as a class skin effect of mild corticosteroids.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated ... Perioral dermatitis and rosacea",
+      "src": [
+        { "s": "emc-5511", "q": "Perioral dermatitis and rosacea." },
+        { "s": "emc-5511", "q": "skin striae, telangiectasia, rosacea, erythema" }
+      ]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:condition:perioral-dermatitis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "fusidic-acid-hydrocortisone",
+      "condition": "perioral-dermatitis",
+      "concern": "Perioral dermatitis",
+      "consequence": "Contraindicated because of the corticosteroid content; perioral dermatitis is also listed as a class skin effect of mild corticosteroids.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated ... Perioral dermatitis and rosacea",
+      "src": [
+        { "s": "emc-5511", "q": "Perioral dermatitis and rosacea." },
+        { "s": "emc-5511", "q": "dermatitis (incl. dermatitis contact, dermatitis acneiform and perioral dermatitis)" }
+      ]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:condition:skin-atrophy",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "fusidic-acid-hydrocortisone",
+      "condition": "skin-atrophy",
+      "concern": "Atrophic skin",
+      "consequence": "Corticosteroid content.",
+      "action": "Not recommended.",
+      "sourceWording": "it is not recommended in the following conditions: atrophic skin",
+      "src": [{ "s": "emc-5511", "q": "it is not recommended in the following conditions: atrophic skin, cutaneous ulcer, acne vulgaris, fragile skin veins and perianal and genital pruritus" }]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:condition:broken-ulcerated-skin",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "fusidic-acid-hydrocortisone",
+      "condition": "broken-ulcerated-skin",
+      "concern": "Skin ulcer or open wound",
+      "consequence": "Corticosteroid content.",
+      "action": "Not recommended in cutaneous ulcer; avoid contact with open wounds.",
+      "sourceWording": "not recommended ... cutaneous ulcer; Contact with open wounds ... should be avoided",
+      "src": [
+        { "s": "emc-5511", "q": "it is not recommended in the following conditions: atrophic skin, cutaneous ulcer, acne vulgaris, fragile skin veins and perianal and genital pruritus" },
+        { "s": "emc-5511", "q": "Contact with open wounds and mucous membranes should be avoided." }
+      ]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:condition:acne-vulgaris",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "fusidic-acid-hydrocortisone",
+      "condition": "acne-vulgaris",
+      "concern": "Acne vulgaris",
+      "consequence": "Corticosteroid content.",
+      "action": "Not recommended.",
+      "sourceWording": "it is not recommended in the following conditions: ... acne vulgaris",
+      "src": [{ "s": "emc-5511", "q": "it is not recommended in the following conditions: atrophic skin, cutaneous ulcer, acne vulgaris, fragile skin veins and perianal and genital pruritus" }]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:condition:perianal-genital-pruritus",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "fusidic-acid-hydrocortisone",
+      "condition": "perianal-genital-pruritus",
+      "concern": "Perianal or genital itching",
+      "consequence": "Corticosteroid content.",
+      "action": "Not recommended.",
+      "sourceWording": "it is not recommended in the following conditions: ... perianal and genital pruritus",
+      "src": [{ "s": "emc-5511", "q": "it is not recommended in the following conditions: atrophic skin, cutaneous ulcer, acne vulgaris, fragile skin veins and perianal and genital pruritus" }]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:age:children",
+      "kind": "age",
+      "level": "caution",
+      "med": "fusidic-acid-hydrocortisone",
+      "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Children",
+      "consequence": "Children may be more susceptible to HPA-axis suppression and Cushing's syndrome from topical corticosteroids. The SmPC does not define the age range (18 years used here).",
+      "action": "Use with care.",
+      "sourceWording": "should be used with care in children",
+      "src": [{ "s": "emc-5511", "q": "Fucidin H cream should be used with care in children as paediatric patients may be more susceptible to topical corticosteroid-induced HPA axis suppression and Cushing's syndrome than adult patients" }]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:pregnancy",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "fusidic-acid-hydrocortisone",
+      "concern": "Pregnancy",
+      "consequence": "No malformative or fetal toxicity signal for corticosteroids in more than 1000 pregnancy outcomes; caution based on systemic corticosteroid knowledge.",
+      "action": "Use if clinically needed, with caution. BUMPS: topical corticosteroids can be used in pregnancy.",
+      "sourceWording": "can be used during pregnancy if clinically needed. However ... caution should be exercised",
+      "src": [
+        { "s": "emc-5511", "q": "Fucidin H cream can be used during pregnancy if clinically needed." },
+        { "s": "emc-5511", "q": "caution should be exercised when using Fucidin H cream during pregnancy" },
+        { "s": "emc-5511", "q": "A large amount of data on pregnant women (more than 1000 pregnancy outcomes) indicates no malformative nor feto/neonatal toxicity of corticosteroids." },
+        { "s": "bumps-corticosteroids-topical", "q": "Topical corticosteroids can be used in pregnancy." }
+      ]
+    },
+    {
+      "id": "fusidic-acid-hydrocortisone:breastfeeding:breast",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "fusidic-acid-hydrocortisone",
+      "concern": "Breastfeeding: application to the breast",
+      "consequence": "Negligible systemic exposure when applied to a limited area.",
+      "action": "Can be used; avoid applying to the breast.",
+      "sourceWording": "can be used during breastfeeding but it is recommended to avoid applying Fucidin H cream on the breast",
+      "src": [
+        { "s": "emc-5511", "q": "Fucidin H cream can be used during breastfeeding but it is recommended to avoid applying Fucidin H cream on the breast." },
+        { "s": "emc-5511", "q": "to a limited area of skin of the breastfeeding woman is negligible" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1005 @@
+{
+  "id": "gentamicin-drops",
+  "name": "Gentamicin (eye/ear drops)",
+  "ingredients": [
+    "gentamicin"
+  ],
+  "className": "Aminoglycoside antibiotic for the eye and ear (anti-infective, ATC S03AA06)",
+  "groups": [],
+  "searchTerms": [
+    "gentamicin eye drops",
+    "gentamicin ear drops",
+    "gentamicin eye/ear drops",
+    "gentamicin sulfate drops",
+    "gentamicin sulphate drops",
+    "gentamicin eye ointment"
+  ],
+  "formulations": [
+    {
+      "id": "gentamicin-drops-eye",
+      "label": "Eye drops (eye/ear drops 0.3%) used in the eye",
+      "route": "eye",
+      "strengths": "0.3% w/v (gentamicin sulfate equivalent to 30 mg gentamicin base in 10 mL)",
+      "release": "n/a",
+      "note": "The same eye/ear drops product is licensed for both the eye and the ear. Contains benzalkonium chloride (can be absorbed by and discolour soft contact lenses).",
+      "src": [
+        {
+          "s": "emc-4218",
+          "q": "Gentamicin sulphate equivalent to 30mg gentamicin base in 10ml of solution"
+        },
+        {
+          "s": "emc-6552",
+          "q": "Benzalkonium chloride may be absorbed by soft contact lenses and may change the colour of the contact lenses."
+        }
+      ],
+      "sourceIds": [
+        "emc-4218",
+        "emc-6552"
+      ]
+    },
+    {
+      "id": "gentamicin-drops-ear",
+      "label": "Ear drops (eye/ear drops 0.3%) used in the ear",
+      "route": "ear",
+      "strengths": "0.3% w/v (gentamicin sulfate equivalent to 30 mg gentamicin base in 10 mL)",
+      "release": "n/a",
+      "note": "The same eye/ear drops product is licensed for both the eye and the ear. Check the eardrum before prescribing for the ear.",
+      "src": [
+        {
+          "s": "emc-6552",
+          "q": "Each bottle contains gentamicin sulfate equivalent to 30 mg gentamicin base in 10 ml of solution"
+        },
+        {
+          "s": "emc-6552",
+          "q": "The condition of the ear drum must always be checked before this medicinal product is prescribed."
+        }
+      ],
+      "sourceIds": [
+        "emc-4218",
+        "emc-6552"
+      ]
+    },
+    {
+      "id": "gentamicin-eye-ointment",
+      "label": "Eye ointment 0.3% (clinic product)",
+      "route": "eye",
+      "strengths": "0.3% (clinic product)",
+      "release": "n/a",
+      "note": "No UK SmPC was found for gentamicin eye ointment (emc and MHRA Products list only the 0.3% eye/ear drops and injections). The UK eye/ear drops SmPCs are used here for content that applies to gentamicin in the eye; drop-specific dosing and the benzalkonium chloride advice do not apply to the ointment.",
+      "src": [
+        {
+          "s": "emc-4218",
+          "q": "Treatment of infections of the external structures of the eye and its adnexa caused by susceptible bacteria."
+        }
+      ],
+      "sourceIds": [
+        "emc-4218",
+        "emc-6552"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Bacterial infections of the external eye and its adnexa: conjunctivitis, keratitis, keratoconjunctivitis, corneal ulcers, blepharitis, blepharoconjunctivitis, acute meibomianitis, episcleritis and dacryocystitis.",
+          "formulations": [
+            "gentamicin-drops-eye",
+            "gentamicin-eye-ointment"
+          ],
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Treatment of infections of the external structures of the eye and its adnexa caused by susceptible bacteria."
+            },
+            {
+              "s": "emc-4218",
+              "q": "Such infections include conjunctivitis, keratitis, kerato-conjunctivitis, corneal ulcers, blepharitis and blepharo-conjunctivitis, acute meibomianitis, episcleritis and dacryocystitis."
+            }
+          ]
+        },
+        {
+          "t": "Prevention of eye infection after foreign-body removal, burns or lacerations of the conjunctiva, chemical or physical damage, and eye surgery.",
+          "formulations": [
+            "gentamicin-drops-eye",
+            "gentamicin-eye-ointment"
+          ],
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "It may be used for the prevention of ocular infection after: removal of a foreign body, burns or lacerations of the conjunctiva; damage from chemical or physical agents and after ocular surgery."
+            }
+          ]
+        },
+        {
+          "t": "Otitis externa; superficial ear infections caused by gentamicin-sensitive organisms; prevention of infection after ear trauma.",
+          "formulations": [
+            "gentamicin-drops-ear"
+          ],
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Also indicated for the treatment of otitis externa."
+            },
+            {
+              "s": "emc-6552",
+              "q": "For the treatment of superficial eye and ear infections caused by organisms sensitive to gentamicin."
+            },
+            {
+              "s": "emc-6552",
+              "q": "For prophylaxis against infection in trauma of the eye or ear."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Prescription-only medicine in the UK.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Prescription only medicine"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Eye: 1 to 2 drops into the affected eye up to six times a day, or more often if needed. Severe infection: 1 to 2 drops every 15 to 20 minutes at first, then reduce gradually as the infection is controlled.",
+          "tag": "Eye infection (adults, elderly, children)",
+          "formulations": [
+            "gentamicin-drops-eye"
+          ],
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Instill 1-2 drops into the affected eye up to six times a day, or more frequently if required."
+            },
+            {
+              "s": "emc-4218",
+              "q": "severe infections may require 1 or 2 drops every fifteen to twenty minutes initially, reducing the frequency of instillation gradually as the infection is controlled"
+            }
+          ]
+        },
+        {
+          "t": "Ear: clean the area, then 2 to 3 drops into the affected ear 3 to 4 times a day and at night, or more often if needed.",
+          "tag": "Ear infection (adults, elderly, children)",
+          "formulations": [
+            "gentamicin-drops-ear"
+          ],
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "The area should be cleansed and 2-3 drops instilled in the affected ear 3-4 times a day and at night or more frequently if required."
+            }
+          ]
+        },
+        {
+          "t": "Eye ointment: no UK SmPC dose is available for the ointment.",
+          "tag": "Eye ointment",
+          "formulations": [
+            "gentamicin-eye-ointment"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "Method of administration Auricular and ocular use."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children use the same dose as adults. Children's eyes may react more strongly to irritation, which can affect adherence.",
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "Adults, the elderly and the paediatric population"
+            },
+            {
+              "s": "emc-6552",
+              "q": "Generally, however, eyes in children show a stronger reaction for a given stimulus than the adult eye."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to gentamicin or any excipient; known allergy to gentamicin or other aminoglycosides.",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Hypersensitivity to active substance, Gentamicin or to any of the excipient listed in section 6.1."
+            },
+            {
+              "s": "emc-4218",
+              "q": "Should not be administered to patients with a known allergy to gentamicin and other aminoglycosides."
+            }
+          ]
+        },
+        {
+          "t": "Myasthenia gravis and related conditions (gentamicin may cause neuromuscular blockade).",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "gentamicin may cause neuromuscular blockade and is therefore contra-indicated in myasthenia gravis and related conditions"
+            },
+            {
+              "s": "emc-6552",
+              "q": "Myasthenia gravis"
+            }
+          ]
+        },
+        {
+          "t": "Perforated eardrum, known or suspected.",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Perforated tympanic membrane."
+            },
+            {
+              "s": "emc-6552",
+              "q": "Known or suspected perforation of the ear drum."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Ear use: always check the eardrum before prescribing; do not use if eardrum integrity cannot be guaranteed. Direct contact with the middle and inner ear can cause irreversible toxicity. Weigh this against the risk of the infection itself causing hearing loss.",
+          "formulations": [
+            "gentamicin-drops-ear"
+          ],
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "The condition of the ear drum must always be checked before this medicinal product is prescribed."
+            },
+            {
+              "s": "emc-4218",
+              "q": "The medicinal product must not be used if the integrity of the ear drum cannot be guaranteed."
+            },
+            {
+              "s": "emc-4218",
+              "q": "Irreversible toxic effects may result from direct contact of gentamicin with the middle and inner ear."
+            }
+          ]
+        },
+        {
+          "t": "Avoid prolonged use: it may cause skin sensitisation and resistant organisms. Cross-sensitivity with other aminoglycosides may occur.",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Avoid prolonged use. Prolonged use may lead to skin sensitisation and the emergence of resistant organisms."
+            },
+            {
+              "s": "emc-4218",
+              "q": "Cross-sensitivity with other aminoglycoside antibiotics may occur."
+            }
+          ]
+        },
+        {
+          "t": "Ototoxicity (vestibular damage, irreversible deafness) can occur when gentamicin is given systemically or put on open wounds or damaged skin. This is dose-related, worse with renal or hepatic impairment and more likely in the elderly.",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Gentamicin may cause ototoxicity (vestibular damage; irreversible partial or total deafness) when given systemically or when applied topically to open wounds or damaged skin."
+            },
+            {
+              "s": "emc-4218",
+              "q": "This effect is dose-related and is enhanced by renal and/or hepatic impairment and is more likely in the elderly."
+            }
+          ]
+        },
+        {
+          "t": "Mitochondrial DNA variants (especially m.1555A>G): increased risk of aminoglycoside ototoxicity, sometimes with a maternal history of deafness. MHRA: consider the need for aminoglycoside treatment versus alternatives in patients with these variants.",
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "There have been observed cases of an increased risk of ototoxicity with aminoglycosides administered to patients with mitochondrial mutations, particularly the m.1555A>G mutation"
+            },
+            {
+              "s": "mhra-dsu-aminoglycosides-mitochondrial-2021",
+              "q": "consider the need for aminoglycoside treatment versus alternative options available to minimise the risks of adverse events, including ototoxicity"
+            }
+          ]
+        },
+        {
+          "t": "Severe infections: add a suitable systemic antibiotic.",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "In severe infections, topical use of gentamicin should be supplemented with appropriate systemic antibiotic treatment."
+            }
+          ]
+        },
+        {
+          "t": "Benzalkonium chloride (drops): can irritate the eye and cause dry-eye symptoms; use with caution in dry eye or a compromised cornea, and monitor with prolonged use.",
+          "formulations": [
+            "gentamicin-drops-eye"
+          ],
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Should be used with caution in dry eye patients and in patients where the cornea may be compromised."
+            },
+            {
+              "s": "emc-4218",
+              "q": "Patients should be monitored in case of prolonged use."
+            }
+          ]
+        },
+        {
+          "t": "Contact lenses: one UK SmPC says do not use the drops while wearing soft lenses (remove before use, wait at least 15 minutes before reinserting); another says remove contact lenses during treatment of eye infections.",
+          "formulations": [
+            "gentamicin-drops-eye",
+            "gentamicin-eye-ointment"
+          ],
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Gentamicin should not be used while wearing these lenses."
+            },
+            {
+              "s": "emc-4218",
+              "q": "The lenses should be removed before instillation of the drops and not reinserted earlier than 15 minutes after use."
+            },
+            {
+              "s": "emc-6552",
+              "q": "Contact lenses should be removed during the period of treatment of ocular infections."
+            }
+          ]
+        },
+        {
+          "t": "Caution if the patient is also on systemic aminoglycosides (systemic gentamicin has caused neurotoxicity, ototoxicity and nephrotoxicity; not reported after ear use).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Although these effects have not been reported following topical otic use of gentamicin, caution is advised when used concomitantly with systemic aminoglycosides."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Potent diuretics such as furosemide may increase the risk of ototoxicity. Avoid using with other potentially ototoxic or nephrotoxic drugs unless the doctor considers it essential. This is the SmPC's general gentamicin interaction text; the systemic toxicities have not been reported after ear use of the drops.",
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "Potent diuretics such as ethacrynic acid and furosemide are believed to enhance any risk of ototoxicity"
+            },
+            {
+              "s": "emc-6552",
+              "q": "Concurrent use with other potentially nephrotoxic or ototoxic drugs should be avoided unless considered essential by the physician."
+            },
+            {
+              "s": "emc-6552",
+              "q": "Although these effects have not been reported following topical otic use of gentamicin"
+            }
+          ]
+        },
+        {
+          "t": "Amphotericin B, cisplatin, ciclosporin and cephalosporins may increase the risk of nephrotoxicity.",
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "amphotericin B, cisplatin and cyclosporine and cephalosporins are potential enhancers of nephrotoxicity"
+            }
+          ]
+        },
+        {
+          "t": "Curare-type muscle relaxants: neuromuscular blockade and respiratory paralysis have been reported with aminoglycosides.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "Neuromuscular blockade and respiratory paralysis have been reported in patients from the administration of aminoglycosides to patients who have received curare-type muscle relaxants during anaesthesia."
+            }
+          ]
+        },
+        {
+          "t": "Systemic absorption after topical use is likely too low to carry a risk comparable to systemic gentamicin (SmPC comment on nephrotoxicity).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "it is likely that systemic absorption following topical administration does not constitute a comparable risk"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No dose advice for the drops. Ototoxicity from gentamicin is enhanced by renal impairment (stated for systemic use or use on open wounds or damaged skin). One SmPC: care is needed in anuria because elimination is much slower.",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "This effect is dose-related and is enhanced by renal and/or hepatic impairment and is more likely in the elderly."
+            },
+            {
+              "s": "emc-6552",
+              "q": "*Therefore in those with anuria care must be exercised."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No dose advice for the drops. Ototoxicity from gentamicin is enhanced by hepatic impairment (stated for systemic use or use on open wounds or damaged skin).",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "This effect is dose-related and is enhanced by renal and/or hepatic impairment and is more likely in the elderly."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: safety in pregnancy not established; use only when the doctor considers it essential after weighing risks and benefits.",
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "Safety for use in pregnancy has not been established."
+            },
+            {
+              "s": "emc-6552",
+              "q": "Gentamicin should only be used in pregnancy when considered essential by the physician, after careful assessment of the potential risks and benefits."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: aminoglycoside eye or ear drops do not enter the bloodstream in amounts that could harm the baby.",
+          "src": [
+            {
+              "s": "bumps-aminoglycosides-gentamicin",
+              "q": "when used in the form of eye or ear drops, do not enter the bloodstream in amounts that could harm the baby"
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: safety in breastfeeding not established; milk intake is unlikely to give significant infant blood levels (no gut inflammation). Use only when the doctor considers it essential.",
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "In the absence of gastrointestinal inflammation the amount of gentamicin ingested from the milk is unlikely to result in significant blood levels in breast-fed infants."
+            },
+            {
+              "s": "emc-6552",
+              "q": "Gentamicin should only be used in lactation when considered essential by the physician, after careful assessment of the potential risks and benefits."
+            }
+          ]
+        },
+        {
+          "t": "SPS (chloramphenicol breastfeeding page): gentamicin (or fusidic acid) eye and ear preparations are preferred over chloramphenicol during breastfeeding, if clinically appropriate.",
+          "src": [
+            {
+              "s": "sps-chloramphenicol-breastfeeding",
+              "q": "Fusidic acid or gentamicin preparations would be preferred, if clinically appropriate."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No fertility data.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "Fertility No data available."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Frequencies are not known. Eye: local sensitivity, blurred vision, irritation, burning, stinging, itching. Skin: burning, stinging, itching, dermatitis.",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "all the undesirable effects listed are classed as \"frequency unknown\""
+            },
+            {
+              "s": "emc-4218",
+              "q": "Local sensitivity; blurred vision, eye irritation, burning sensation, stinging sensation, itching (eye pruritus)"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Ear: ototoxicity, vestibular disorder and hearing loss (frequency not known).",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Local sensitivity; ototoxicity; vestibular disorder; hearing loss"
+            }
+          ]
+        },
+        {
+          "t": "Stop treatment if irritation, sensitivity or superinfection occurs, and start suitable therapy.",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "In the event of irritation, sensitivity or super-infection, treatment should be discontinued and appropriate therapy instituted."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before ear use: check the eardrum is intact.",
+          "tag": "baseline",
+          "formulations": [
+            "gentamicin-drops-ear"
+          ],
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "The condition of the ear drum must always be checked before this medicinal product is prescribed."
+            }
+          ]
+        },
+        {
+          "t": "Monitor patients on prolonged use (benzalkonium chloride effects on the eye surface).",
+          "tag": "ongoing",
+          "formulations": [
+            "gentamicin-drops-eye"
+          ],
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "Patients should be monitored in case of prolonged use."
+            }
+          ]
+        },
+        {
+          "t": "Stop if irritation, sensitivity or superinfection develops.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-4218",
+              "q": "In the event of irritation, sensitivity or super-infection, treatment should be discontinued and appropriate therapy instituted."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Ear: clean the ear area before putting in the drops.",
+          "formulations": [
+            "gentamicin-drops-ear"
+          ],
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "The area should be cleaned and 2 - 3 drops instilled in the affected ear three to four times a day and at night"
+            }
+          ]
+        },
+        {
+          "t": "Soft contact lenses: remove before using the drops and wait 15 minutes before putting them back.",
+          "formulations": [
+            "gentamicin-drops-eye"
+          ],
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "Contact lenses should be removed before using this medicine and put back 15 minutes afterwards."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Eye use may blur vision for a short time; do not drive or use machines until vision is clear.",
+          "formulations": [
+            "gentamicin-drops-eye",
+            "gentamicin-eye-ointment"
+          ],
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "If affected, patients should not drive or operate machinery until vision has cleared."
+            }
+          ]
+        },
+        {
+          "t": "Do not wear contact lenses while treating an eye infection.",
+          "formulations": [
+            "gentamicin-drops-eye",
+            "gentamicin-eye-ointment"
+          ],
+          "src": [
+            {
+              "s": "emc-6552",
+              "q": "Contact lenses should be removed during the period of treatment of ocular infections."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "gentamicin-drops:allergy:gentamicin",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "gentamicin-drops",
+      "allergen": [
+        "gentamicin"
+      ],
+      "concern": "Hypersensitivity to gentamicin",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity to active substance",
+      "src": [
+        {
+          "s": "emc-4218",
+          "q": "Hypersensitivity to active substance, Gentamicin or to any of the excipient listed in section 6.1."
+        },
+        {
+          "s": "emc-6552",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1"
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:allergy:aminoglycosides",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "gentamicin-drops",
+      "allergen": [
+        "neomycin",
+        "group:aminoglycoside"
+      ],
+      "concern": "Allergy to other aminoglycosides (e.g. neomycin)",
+      "consequence": "Cross-sensitivity between aminoglycoside antibiotics may occur.",
+      "action": "Do not use in patients with a known allergy to gentamicin and other aminoglycosides (one UK SmPC, section 4.3).",
+      "sourceWording": "Should not be administered to patients with a known allergy to gentamicin and other aminoglycosides",
+      "src": [
+        {
+          "s": "emc-4218",
+          "q": "Should not be administered to patients with a known allergy to gentamicin and other aminoglycosides."
+        },
+        {
+          "s": "emc-4218",
+          "q": "Cross-sensitivity with other aminoglycoside antibiotics may occur."
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:condition:myasthenia-gravis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "gentamicin-drops",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis or related conditions",
+      "consequence": "Gentamicin may cause neuromuscular blockade.",
+      "action": "Do not use.",
+      "sourceWording": "contra-indicated in myasthenia gravis and related conditions",
+      "src": [
+        {
+          "s": "emc-4218",
+          "q": "gentamicin may cause neuromuscular blockade and is therefore contra-indicated in myasthenia gravis and related conditions"
+        },
+        {
+          "s": "emc-6552",
+          "q": "Myasthenia gravis"
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:condition:perforated-tympanic-membrane",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "gentamicin-drops",
+      "formulations": [
+        "gentamicin-drops-ear"
+      ],
+      "condition": "perforated-tympanic-membrane",
+      "concern": "Perforated eardrum (known or suspected), or eardrum integrity not certain",
+      "consequence": "Direct contact of gentamicin with the middle and inner ear can cause irreversible toxic effects (hearing loss).",
+      "action": "Do not use in the ear. Always check the eardrum before prescribing; do not use if its integrity cannot be guaranteed.",
+      "sourceWording": "Contraindications ... Perforated tympanic membrane",
+      "src": [
+        {
+          "s": "emc-4218",
+          "q": "Perforated tympanic membrane."
+        },
+        {
+          "s": "emc-6552",
+          "q": "Known or suspected perforation of the ear drum."
+        },
+        {
+          "s": "emc-4218",
+          "q": "The medicinal product must not be used if the integrity of the ear drum cannot be guaranteed."
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:condition:aminoglycoside-ototoxicity-mtdna-variant",
+      "kind": "condition",
+      "level": "caution",
+      "med": "gentamicin-drops",
+      "condition": "aminoglycoside-ototoxicity-mtdna-variant",
+      "concern": "Mitochondrial DNA variant (e.g. m.1555A>G) or maternal history of deafness / mitochondrial mutation",
+      "consequence": "Increased risk of aminoglycoside-related deafness, even with normal serum levels. MHRA notes a potential for this with aminoglycosides given at the site of toxicity (the ear).",
+      "action": "Consider whether an aminoglycoside is needed or an alternative is better.",
+      "sourceWording": "consider the need for aminoglycoside treatment versus alternative options",
+      "src": [
+        {
+          "s": "emc-6552",
+          "q": "There have been observed cases of an increased risk of ototoxicity with aminoglycosides administered to patients with mitochondrial mutations, particularly the m.1555A>G mutation"
+        },
+        {
+          "s": "mhra-dsu-aminoglycosides-mitochondrial-2021",
+          "q": "consider the need for aminoglycoside treatment versus alternative options available to minimise the risks of adverse events, including ototoxicity"
+        },
+        {
+          "s": "mhra-dsu-aminoglycosides-mitochondrial-2021",
+          "q": "there is the potential for a similar effect with neomycin and other aminoglycosides that are administered at the site of toxicity (the ear)"
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:condition:contact-lens-wearer",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "gentamicin-drops",
+      "formulations": [
+        "gentamicin-drops-eye",
+        "gentamicin-eye-ointment"
+      ],
+      "condition": "contact-lens-wearer",
+      "concern": "Contact lens wearer",
+      "consequence": "The drops contain benzalkonium chloride, which can be deposited in and discolour soft contact lenses.",
+      "action": "Do not use while wearing soft lenses: remove lenses before each dose and wait at least 15 minutes before reinserting. One UK SmPC: remove contact lenses for the whole treatment of an eye infection.",
+      "sourceWording": "should not be used while wearing these lenses",
+      "src": [
+        {
+          "s": "emc-4218",
+          "q": "Gentamicin should not be used while wearing these lenses."
+        },
+        {
+          "s": "emc-4218",
+          "q": "The lenses should be removed before instillation of the drops and not reinserted earlier than 15 minutes after use."
+        },
+        {
+          "s": "emc-6552",
+          "q": "Contact lenses should be removed during the period of treatment of ocular infections."
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:condition:dry-eye-compromised-cornea",
+      "kind": "condition",
+      "level": "caution",
+      "med": "gentamicin-drops",
+      "formulations": [
+        "gentamicin-drops-eye"
+      ],
+      "condition": "dry-eye-compromised-cornea",
+      "concern": "Dry eye or compromised cornea",
+      "consequence": "Benzalkonium chloride can cause eye irritation and dry-eye symptoms and may affect the tear film and corneal surface.",
+      "action": "Use with caution; monitor with prolonged use.",
+      "sourceWording": "Should be used with caution in dry eye patients",
+      "src": [
+        {
+          "s": "emc-4218",
+          "q": "Should be used with caution in dry eye patients and in patients where the cornea may be compromised."
+        },
+        {
+          "s": "emc-4218",
+          "q": "Patients should be monitored in case of prolonged use."
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:interaction:furosemide",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "gentamicin-drops",
+      "other": "furosemide",
+      "concern": "Furosemide with gentamicin eye/ear drops (SmPC general interaction text)",
+      "consequence": "Potent diuretics such as furosemide are believed to enhance any risk of gentamicin ototoxicity. Context: this is the SmPC's general gentamicin interaction text. The same SmPC says the neurotoxicity, ototoxicity and nephrotoxicity seen with systemic gentamicin have not been reported after ear use of the drops; the ototoxicity risk from the drops comes mainly from direct contact with the middle or inner ear (perforated eardrum).",
+      "action": "SmPC: avoid concurrent use unless the doctor considers it essential. Check the eardrum is intact before ear use.",
+      "sourceWording": "should be avoided unless considered essential by the physician",
+      "src": [
+        {
+          "s": "emc-6552",
+          "q": "Potent diuretics such as ethacrynic acid and furosemide are believed to enhance any risk of ototoxicity"
+        },
+        {
+          "s": "emc-6552",
+          "q": "Concurrent use with other potentially nephrotoxic or ototoxic drugs should be avoided unless considered essential by the physician."
+        },
+        {
+          "s": "emc-6552",
+          "q": "Although these effects have not been reported following topical otic use of gentamicin"
+        },
+        {
+          "s": "emc-6552",
+          "q": "Irreversible toxic effects may result from direct contact of gentamicin with the middle and inner ear."
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:interaction:cephalosporin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "gentamicin-drops",
+      "other": "group:cephalosporin",
+      "effect": "nephrotoxicity",
+      "concern": "Cephalosporins with gentamicin eye/ear drops (SmPC general interaction text)",
+      "consequence": "Cephalosporins are potential enhancers of gentamicin nephrotoxicity. Context: this is the SmPC's general gentamicin interaction text. The same SmPC says systemic absorption after topical use is unlikely to carry a nephrotoxicity risk comparable to systemic gentamicin.",
+      "action": "SmPC: avoid concurrent use unless the doctor considers it essential.",
+      "sourceWording": "should be avoided unless considered essential by the physician",
+      "src": [
+        {
+          "s": "emc-6552",
+          "q": "amphotericin B, cisplatin and cyclosporine and cephalosporins are potential enhancers of nephrotoxicity"
+        },
+        {
+          "s": "emc-6552",
+          "q": "Concurrent use with other potentially nephrotoxic or ototoxic drugs should be avoided unless considered essential by the physician."
+        },
+        {
+          "s": "emc-6552",
+          "q": "it is likely that systemic absorption following topical administration does not constitute a comparable risk"
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:interaction:nephrotoxic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "gentamicin-drops",
+      "other": "group:nephrotoxic",
+      "effect": "nephrotoxicity",
+      "concern": "Other potentially nephrotoxic drugs with gentamicin eye/ear drops (SmPC general interaction text)",
+      "consequence": "Possible added kidney toxicity. Context: this is the SmPC's general gentamicin interaction text. The same SmPC says systemic absorption after topical use is unlikely to carry a nephrotoxicity risk comparable to systemic gentamicin.",
+      "action": "SmPC: avoid concurrent use unless the doctor considers it essential.",
+      "sourceWording": "should be avoided unless considered essential by the physician",
+      "src": [
+        {
+          "s": "emc-6552",
+          "q": "Concurrent use with other potentially nephrotoxic or ototoxic drugs should be avoided unless considered essential by the physician."
+        },
+        {
+          "s": "emc-6552",
+          "q": "it is likely that systemic absorption following topical administration does not constitute a comparable risk"
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:interaction:ototoxic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "gentamicin-drops",
+      "other": "group:ototoxic",
+      "concern": "Other potentially ototoxic drugs with gentamicin eye/ear drops (SmPC general interaction text)",
+      "consequence": "Possible added ototoxicity (hearing or balance damage). Context: this is the SmPC's general gentamicin interaction text. The same SmPC says the neurotoxicity, ototoxicity and nephrotoxicity seen with systemic gentamicin have not been reported after ear use of the drops; the ototoxicity risk from the drops comes mainly from direct contact with the middle or inner ear (perforated eardrum).",
+      "action": "SmPC: avoid concurrent use unless the doctor considers it essential. Check the eardrum is intact before ear use.",
+      "sourceWording": "should be avoided unless considered essential by the physician",
+      "src": [
+        {
+          "s": "emc-6552",
+          "q": "Concurrent use with other potentially nephrotoxic or ototoxic drugs should be avoided unless considered essential by the physician."
+        },
+        {
+          "s": "emc-6552",
+          "q": "Although these effects have not been reported following topical otic use of gentamicin"
+        },
+        {
+          "s": "emc-6552",
+          "q": "Irreversible toxic effects may result from direct contact of gentamicin with the middle and inner ear."
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:interaction:aminoglycoside",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "gentamicin-drops",
+      "other": "group:aminoglycoside",
+      "concern": "Systemic aminoglycosides with gentamicin drops",
+      "consequence": "Systemic gentamicin has caused neurotoxicity, ototoxicity and nephrotoxicity; not reported after ear use of the drops.",
+      "action": "Use with caution.",
+      "sourceWording": "caution is advised when used concomitantly with systemic aminoglycosides",
+      "src": [
+        {
+          "s": "emc-4218",
+          "q": "Although these effects have not been reported following topical otic use of gentamicin, caution is advised when used concomitantly with systemic aminoglycosides."
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:pregnancy",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "gentamicin-drops",
+      "concern": "Pregnancy",
+      "consequence": "Safety in pregnancy not established (SmPC). BUMPS: aminoglycoside eye or ear drops do not reach the bloodstream in amounts that could harm the baby.",
+      "action": "Use only when the doctor considers it essential after weighing risks and benefits.",
+      "sourceWording": "should only be used in pregnancy when considered essential by the physician",
+      "src": [
+        {
+          "s": "emc-6552",
+          "q": "Gentamicin should only be used in pregnancy when considered essential by the physician, after careful assessment of the potential risks and benefits."
+        },
+        {
+          "s": "bumps-aminoglycosides-gentamicin",
+          "q": "when used in the form of eye or ear drops, do not enter the bloodstream in amounts that could harm the baby"
+        }
+      ]
+    },
+    {
+      "id": "gentamicin-drops:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "gentamicin-drops",
+      "concern": "Breastfeeding",
+      "consequence": "Safety not established; milk intake is unlikely to give significant infant blood levels. SPS prefers gentamicin (or fusidic acid) over chloramphenicol eye/ear preparations during breastfeeding.",
+      "action": "Use only when the doctor considers it essential after weighing risks and benefits.",
+      "sourceWording": "should only be used in lactation when considered essential by the physician",
+      "src": [
+        {
+          "s": "emc-6552",
+          "q": "Gentamicin should only be used in lactation when considered essential by the physician, after careful assessment of the potential risks and benefits."
+        },
+        {
+          "s": "emc-6552",
+          "q": "In the absence of gastrointestinal inflammation the amount of gentamicin ingested from the milk is unlikely to result in significant blood levels in breast-fed infants."
+        },
+        {
+          "s": "sps-chloramphenicol-breastfeeding",
+          "q": "Fusidic acid or gentamicin preparations would be preferred, if clinically appropriate."
+        }
+      ]
+    }
+  ]
+}

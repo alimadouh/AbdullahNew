@@ -1,0 +1,932 @@
+{
+  "id": "chloramphenicol-eye",
+  "name": "Chloramphenicol (eye ointment)",
+  "ingredients": [
+    "chloramphenicol"
+  ],
+  "className": "Broad-spectrum antibiotic for the eye (ophthalmological anti-infective, ATC S01AA01)",
+  "groups": [],
+  "searchTerms": [
+    "chloramphenicol eye ointment",
+    "chloramphenicol eye drops",
+    "chloramphenicol 1% eye ointment",
+    "chloramphenicol 0.5% eye drops"
+  ],
+  "formulations": [
+    {
+      "id": "chloramphenicol-eye-ointment",
+      "label": "Eye ointment",
+      "route": "eye",
+      "strengths": "1% w/w (10 mg/g)",
+      "release": "n/a",
+      "note": "The UK eye ointment SmPCs on emc are pharmacy-sale (non-prescription) packs licensed for adults and children aged 2 years and over.",
+      "src": [
+        {
+          "s": "emc-7299",
+          "q": "Each gram of ointment contains 10 mg Chloramphenicol (1% w/w)"
+        },
+        {
+          "s": "emc-9770",
+          "q": "Treatment of acute bacterial conjunctivitis in adults and children aged 2 years and over."
+        }
+      ],
+      "sourceIds": [
+        "emc-9770",
+        "emc-7299"
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye-drops",
+      "label": "Eye drops",
+      "route": "eye",
+      "strengths": "0.5% w/v (5 mg/mL)",
+      "release": "n/a",
+      "note": "One UK SmPC is a prescription-only pack licensed for adults and children; the others are pharmacy-sale packs (one licensed for adults and children, two for adults and children aged 2 years and over). Some contain borax and boric acid buffers (boron); one contains phenylmercuric nitrate.",
+      "src": [
+        {
+          "s": "emc-427",
+          "q": "Chloramphenicol Eye Drops BP 0.5% w/v contains 5mg/ml chloramphenicol."
+        },
+        {
+          "s": "emc-427",
+          "q": "Borax and Boric acid (one ml of solution contains 3.075 mg boron)"
+        },
+        {
+          "s": "emc-9662",
+          "q": "Phenylmercuric nitrate is irritant to the skin."
+        }
+      ],
+      "sourceIds": [
+        "emc-427",
+        "emc-9662",
+        "emc-13182",
+        "emc-5195"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Acute bacterial conjunctivitis in adults and children aged 2 years and over (eye ointment and pharmacy-sale drops).",
+          "src": [
+            {
+              "s": "emc-9770",
+              "q": "Treatment of acute bacterial conjunctivitis in adults and children aged 2 years and over."
+            },
+            {
+              "s": "emc-9662",
+              "q": "indicated in both adults and children aged 2 years and over for the treatment of acute bacterial conjunctivitis"
+            }
+          ]
+        },
+        {
+          "t": "Prescription-only drops: bacterial conjunctivitis caused by chloramphenicol-susceptible organisms in adults and children.",
+          "formulations": [
+            "chloramphenicol-eye-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "indicated in both adults and children for the treatment of bacterial conjunctivitis caused by chloramphenicol susceptible organisms"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Pharmacy-sale packs: do not use for more than 5 days without consulting a doctor; seek advice if no improvement after 2 days or if symptoms worsen. Prescription-only drops are also available.",
+          "src": [
+            {
+              "s": "emc-13182",
+              "q": "Do not use for more than 5 days without consulting a doctor."
+            },
+            {
+              "s": "emc-13182",
+              "q": "Medical advice should be sought if there is no improvement in the condition after 2 days or if symptoms worsen at any time."
+            },
+            {
+              "s": "emc-427",
+              "q": "Prescription only medicine"
+            }
+          ]
+        },
+        {
+          "t": "Reserve chloramphenicol for infections for which it is specifically indicated.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "Chloramphenicol should be reserved for use only in infections for which it is specifically indicated."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Eye ointment alone: about 1 cm into the affected eye(s) 3 to 4 times a day. With drops in the day: apply the ointment at night only. Course: 5 days.",
+          "tag": "Acute bacterial conjunctivitis (adults and children 2 years and over)",
+          "formulations": [
+            "chloramphenicol-eye-ointment"
+          ],
+          "src": [
+            {
+              "s": "emc-9770",
+              "q": "If using just the eye ointment, apply about 1 cm of ointment to the affected eye(s) 3 to 4 times a day."
+            },
+            {
+              "s": "emc-9770",
+              "q": "If using chloramphenicol eye drops during the day and the eye ointment at night - apply the ointment at night, before going to bed."
+            },
+            {
+              "s": "emc-9770",
+              "q": "The course of treatment is 5 days."
+            }
+          ]
+        },
+        {
+          "t": "Pharmacy-sale drops: 1 drop every 2 hours for the first 48 hours, then every 4 hours, during waking hours only. Course: 5 days.",
+          "tag": "Acute bacterial conjunctivitis (adults and children 2 years and over)",
+          "formulations": [
+            "chloramphenicol-eye-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-9662",
+              "q": "Put one drop into the affected eye(s) every 2 hours for the first 48 hours and 4 hourly thereafter."
+            },
+            {
+              "s": "emc-9662",
+              "q": "To be used during waking hours only"
+            },
+            {
+              "s": "emc-9662",
+              "q": "The course of treatment should be 5 days."
+            }
+          ]
+        },
+        {
+          "t": "Prescription-only drops: 2 drops every 3 hours during waking hours; continue for at least 48 hours after the eye appears normal.",
+          "tag": "Bacterial conjunctivitis (adults and children)",
+          "formulations": [
+            "chloramphenicol-eye-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "The recommended dosage for adults and children is two drops to be applied to the affected eye every three hours."
+            },
+            {
+              "s": "emc-427",
+              "q": "Treatment should be continued for at least 48 hours after eye appears normal."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Eye ointment and most pharmacy-sale drops are licensed only from 2 years of age.",
+          "src": [
+            {
+              "s": "emc-9770",
+              "q": "Adults (including elderly people) and children aged 2 years and over"
+            },
+            {
+              "s": "emc-9662",
+              "q": "Adults (including the elderly) and children aged 2 years and over"
+            }
+          ]
+        },
+        {
+          "t": "Prescription-only drops are licensed in children. Newborn infants may need a dose adjustment (immature metabolism, dose-related adverse effects). Maximum treatment duration in children: 10 to 14 days.",
+          "formulations": [
+            "chloramphenicol-eye-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "Dosage adjustment may be necessary in new born infants because of reduced systemic elimination due to immature metabolism and the risk of dose-related adverse effects."
+            },
+            {
+              "s": "emc-427",
+              "q": "The maximum duration of treatment is 10-14 days"
+            }
+          ]
+        },
+        {
+          "t": "MHRA (2021): chloramphenicol eye drops, including those with borax or boric acid buffers, can be safely given to children aged 0 to 2 years when antibiotic eye drops are indicated; boron exposure from a typical regimen is well below the safety limit.",
+          "formulations": [
+            "chloramphenicol-eye-drops"
+          ],
+          "src": [
+            {
+              "s": "mhra-dsu-chloramphenicol-borax-under-2-2021",
+              "q": "Chloramphenicol eye drops can be safely administered to children aged 0 to 2 years where antibiotic eye drop treatment is indicated."
+            },
+            {
+              "s": "mhra-dsu-chloramphenicol-borax-under-2-2021",
+              "q": "would result in a daily exposure well below the safety limit for children aged 0 to 2 years"
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to chloramphenicol or any excipient.",
+          "src": [
+            {
+              "s": "emc-9770",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+            }
+          ]
+        },
+        {
+          "t": "Myelosuppression during previous exposure to chloramphenicol.",
+          "src": [
+            {
+              "s": "emc-9770",
+              "q": "Patients who have experienced myelosuppression during previous exposure to chloramphenicol."
+            },
+            {
+              "s": "emc-427",
+              "q": "Myelosuppression during previous exposure to chloramphenicol."
+            }
+          ]
+        },
+        {
+          "t": "Family history of blood dyscrasias (all UK SmPCs). Personal history of blood dyscrasias including aplastic anaemia (most UK SmPCs; one ointment and one drops SmPC list family history only).",
+          "src": [
+            {
+              "s": "emc-9770",
+              "q": "Family or personal history of blood dyscrasias including aplastic anaemia."
+            },
+            {
+              "s": "emc-427",
+              "q": "Known personal or family history of blood dyscrasias including aplastic anaemia."
+            },
+            {
+              "s": "emc-7299",
+              "q": "Patients with a family history of blood dyscrasias."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Chloramphenicol is absorbed from the eye. Bone marrow hypoplasia, including aplastic anaemia and death, has been reported after topical use; rare, but weigh it against the expected benefit.",
+          "src": [
+            {
+              "s": "emc-9770",
+              "q": "Bone marrow hypoplasia, including aplastic anaemia and death, has been reported following topical use of chloramphenicol."
+            },
+            {
+              "s": "emc-9770",
+              "q": "Whilst the hazard is a rare one, it should be borne in mind when assessing the benefits expected from the use of the compound."
+            }
+          ]
+        },
+        {
+          "t": "Avoid prolonged or frequent intermittent use (sensitisation, resistance). Overgrowth of non-susceptible organisms, including fungi, can occur.",
+          "src": [
+            {
+              "s": "emc-9662",
+              "q": "Prolonged or frequent intermittent topical application of chloramphenicol should be avoided since it may increase the likelihood of sensitisation and emergence of resistant organisms."
+            },
+            {
+              "s": "emc-9662",
+              "q": "The use of topical chloramphenicol may occasionally result in overgrowth of non-susceptible organisms including fungi."
+            }
+          ]
+        },
+        {
+          "t": "Severe conjunctivitis, or infection not confined to the conjunctiva: add suitable systemic treatment. Chloramphenicol does not adequately cover Pseudomonas aeruginosa or Serratia marcescens.",
+          "src": [
+            {
+              "s": "emc-9662",
+              "q": "In severe bacterial conjunctivitis and in cases where infection is not confined to the conjunctivae, the topical use of chloramphenicol should be supplemented by appropriate systemic treatment."
+            },
+            {
+              "s": "emc-427",
+              "q": "does not provide adequate coverage against Pseudomonas aeruginosa and Serratia marcescens"
+            }
+          ]
+        },
+        {
+          "t": "Refer to a doctor (red flags): disturbed vision, severe eye pain, photophobia, eye inflammation with a rash on the scalp or face, cloudy eye, abnormal pupil, suspected foreign body.",
+          "src": [
+            {
+              "s": "emc-13182",
+              "q": "Patients should be referred to their doctor if any of the following apply: Disturbed vision Severe pain within the eye Photophobia Eye inflammation associated with a rash on the scalp or face The eye looks cloudy The pupil looks unusual Suspected foreign body in the eye"
+            }
+          ]
+        },
+        {
+          "t": "Also refer if there is recent previous conjunctivitis, glaucoma, dry eye syndrome, eye surgery or laser treatment in the last 6 months, eye injury, use of other eye drops or ointment, or contact lens use.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-13182",
+              "q": "Previous conjunctivitis in the recent past Glaucoma Dry eye syndrome Eye surgery or laser treatment in the last 6 months Eye injury Current use of other eye drops or eye ointment Contact lens use"
+            }
+          ]
+        },
+        {
+          "t": "Contact lenses: do not wear during treatment; wait 24 hours after finishing the course before wearing soft lenses again.",
+          "src": [
+            {
+              "s": "emc-9662",
+              "q": "contact lenses should not be worn during the period of treatment"
+            },
+            {
+              "s": "emc-9662",
+              "q": "Soft contact lens wearers should wait 24 hours after completing a course of treatment before starting to use their lenses again."
+            }
+          ]
+        },
+        {
+          "t": "One drops SmPC contains phenylmercuric nitrate: eye use has been linked to mercurialentis and atypical band keratopathy.",
+          "formulations": [
+            "chloramphenicol-eye-drops"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-9662",
+              "q": "Topical application to eyes has been associated with mercurialentis and atypical band keratopathy."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Avoid giving with other drugs liable to depress bone marrow function.",
+          "src": [
+            {
+              "s": "emc-13182",
+              "q": "The concomitant administration of chloramphenicol with other drugs liable to depress bone marrow function should be avoided."
+            },
+            {
+              "s": "emc-7299",
+              "q": "Bone marrow depressant drugs."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "status": "not-stated",
+      "note": "The UK eye ointment and eye drop SmPCs (emc) give no renal dose advice; section 5.2 of one SmPC gives only general pharmacokinetics of chloramphenicol."
+    },
+    "hepatic": {
+      "status": "not-stated",
+      "note": "The UK eye ointment and eye drop SmPCs (emc) give no hepatic dose advice; section 5.2 of one SmPC gives only general pharmacokinetics of chloramphenicol."
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "UK SmPCs: safety in pregnancy not established; chloramphenicol may be absorbed and cross the placenta. Most SmPCs say not recommended or should not be used in pregnancy; one ointment SmPC says use only when the doctor considers it essential.",
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "Therefore this product is not recommended for use during pregnancy and lactation."
+            },
+            {
+              "s": "emc-9770",
+              "q": "chloramphenicol eye ointment should not be used during pregnancy and breastfeeding."
+            },
+            {
+              "s": "emc-7299",
+              "q": "Therefore, use only when considered essential by the physician."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: chloramphenicol eye and ear drops can be used in pregnancy and are generally the first-choice treatment for an eye infection in pregnancy (only very small amounts reach the bloodstream).",
+          "src": [
+            {
+              "s": "bumps-chloramphenicol",
+              "q": "Chloramphenicol eye and ear drops can be used in pregnancy."
+            },
+            {
+              "s": "bumps-chloramphenicol",
+              "q": "Chloramphenicol eye drops are generally the first-choice treatment for an eye infection in pregnancy."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "UK SmPCs: chloramphenicol may appear in breast milk; use during breastfeeding should be avoided or is not recommended.",
+          "src": [
+            {
+              "s": "emc-9662",
+              "q": "use of the product during lactation should be avoided"
+            },
+            {
+              "s": "emc-427",
+              "q": "Therefore this product is not recommended for use during pregnancy and lactation."
+            }
+          ]
+        },
+        {
+          "t": "SPS: eye and ear preparations can be used with caution during breastfeeding (short courses preferred), with infant monitoring (abdominal distension, poor feeding, sedation, vomiting or diarrhoea, pallor or lethargy, rash, unusual bruising or bleeding). Do not use with a past or family history of blood dyscrasias. Gentamicin or fusidic acid preparations are preferred if clinically appropriate.",
+          "src": [
+            {
+              "s": "sps-chloramphenicol-breastfeeding",
+              "q": "Chloramphenicol eye and ear preparations can be used with caution during breastfeeding."
+            },
+            {
+              "s": "sps-chloramphenicol-breastfeeding",
+              "q": "they should not be used where there is a past or family history of blood dyscrasias"
+            },
+            {
+              "s": "sps-chloramphenicol-breastfeeding",
+              "q": "Fusidic acid or gentamicin preparations would be preferred, if clinically appropriate."
+            },
+            {
+              "s": "sps-chloramphenicol-breastfeeding",
+              "q": "monitor the infant for: abdominal distension poor feeding sedation vomiting or diarrhoea anaemia (pallor, lethargy) rash unusual bruising or bleeding"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No fertility data are available.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "Fertility No fertility data are available"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Frequencies not stated. Transient burning, stinging or irritation, and sensitivity reactions such as itching and dermatitis.",
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "Transient irritation, burning, stinging and sensitivity reactions such as itching and dermatitis."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Bone marrow depression and, rarely, aplastic anaemia (can be irreversible and fatal) after topical use.",
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "Bone marrow depression and rarely aplastic anaemia has been reported following topical use of chloramphenicol."
+            },
+            {
+              "s": "emc-13182",
+              "q": "Bone marrow depression, including irreversible and fatal aplastic anaemia has been reported following topical use of chloramphenicol."
+            }
+          ]
+        },
+        {
+          "t": "Hypersensitivity: angioedema, anaphylaxis, urticaria, fever, vesicular and maculopapular dermatitis. Stop treatment immediately.",
+          "src": [
+            {
+              "s": "emc-9662",
+              "q": "Hypersensitivity reactions including angioedema, anaphylaxis, urticaria, fever, vesicular and maculopapular dermatitis."
+            },
+            {
+              "s": "emc-9662",
+              "q": "Treatment must be discontinued immediately in such cases."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Long-term or intermittent use: a routine blood profile before therapy and at suitable intervals may be advisable to detect blood abnormalities.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "it may be advisable to perform a routine blood profile before therapy and at appropriate intervals thereafter to detect any haemopoietic abnormalities"
+            }
+          ]
+        },
+        {
+          "t": "Review if no improvement after 2 days or if symptoms worsen; do not continue beyond 5 days without a doctor (pharmacy-sale packs).",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-13182",
+              "q": "Medical advice should be sought if there is no improvement in the condition after 2 days or if symptoms worsen at any time."
+            },
+            {
+              "s": "emc-13182",
+              "q": "Do not use for more than 5 days without consulting a doctor."
+            }
+          ]
+        },
+        {
+          "t": "Stop if a new infection appears or if hypersensitivity occurs.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "If any new infection appears during the treatment, the antibiotic should be discontinued and appropriate measures taken."
+            },
+            {
+              "s": "emc-9662",
+              "q": "Treatment must be discontinued immediately in such cases."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Eye ointment: apply into the space between the lower eyelid and the eye.",
+          "formulations": [
+            "chloramphenicol-eye-ointment"
+          ],
+          "src": [
+            {
+              "s": "emc-9770",
+              "q": "The ointment is applied into the space between the lower eyelid and the eye."
+            }
+          ]
+        },
+        {
+          "t": "Eye drops: use during waking hours only; continue for the full 5 days even if symptoms improve, then discard what is left.",
+          "formulations": [
+            "chloramphenicol-eye-drops"
+          ],
+          "src": [
+            {
+              "s": "emc-13182",
+              "q": "To be used during waking hours only. Treatment should continue for 5 days, even if symptoms improve."
+            },
+            {
+              "s": "emc-13182",
+              "q": "Discard any remaining eye drops after the five day course of treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Vision may blur for a short time after use; do not drive or use machines until vision is clear.",
+          "src": [
+            {
+              "s": "emc-427",
+              "q": "Transient blurring of vision may occur immediately after use and driving or using machinery should not occur until the vision is clear."
+            }
+          ]
+        },
+        {
+          "t": "See a doctor if not better within 48 hours, or straight away if the eyes get worse.",
+          "src": [
+            {
+              "s": "emc-9770",
+              "q": "If you do not get better within 48 hours talk to a doctor."
+            },
+            {
+              "s": "emc-9770",
+              "q": "If your eyes get worse see a doctor straight away."
+            }
+          ]
+        },
+        {
+          "t": "Do not wear contact lenses during treatment; wait 24 hours after finishing before wearing soft lenses.",
+          "src": [
+            {
+              "s": "emc-9770",
+              "q": "If you wear soft contact lenses do not start wearing them for at least 24 hours after you have finished the eye ointment."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "chloramphenicol-eye:allergy:chloramphenicol",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "chloramphenicol-eye",
+      "allergen": [
+        "chloramphenicol"
+      ],
+      "concern": "Hypersensitivity to chloramphenicol",
+      "consequence": "Hypersensitivity reactions, including angioedema and anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity to the active substance",
+      "src": [
+        {
+          "s": "emc-9770",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+        },
+        {
+          "s": "emc-9662",
+          "q": "Hypersensitivity reactions including angioedema, anaphylaxis, urticaria, fever, vesicular and maculopapular dermatitis."
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:condition:chloramphenicol-myelosuppression-history",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "chloramphenicol-eye",
+      "condition": "chloramphenicol-myelosuppression-history",
+      "concern": "Previous myelosuppression with chloramphenicol",
+      "consequence": "Chloramphenicol is absorbed from the eye; bone marrow hypoplasia, including fatal aplastic anaemia, has been reported after topical use.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... Myelosuppression during previous exposure to chloramphenicol",
+      "src": [
+        {
+          "s": "emc-427",
+          "q": "Myelosuppression during previous exposure to chloramphenicol."
+        },
+        {
+          "s": "emc-9770",
+          "q": "Patients who have experienced myelosuppression during previous exposure to chloramphenicol."
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:condition:blood-dyscrasia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "chloramphenicol-eye",
+      "condition": "blood-dyscrasia",
+      "concern": "Personal history of blood dyscrasia, including aplastic anaemia",
+      "consequence": "Risk of bone marrow depression and aplastic anaemia. Most UK SmPCs contraindicate a personal history; one ointment and one drops SmPC list family history only.",
+      "action": "Do not use. SPS: do not use during breastfeeding with a past history of blood dyscrasias.",
+      "sourceWording": "Contraindications ... Family or personal history of blood dyscrasias",
+      "src": [
+        {
+          "s": "emc-9770",
+          "q": "Family or personal history of blood dyscrasias including aplastic anaemia."
+        },
+        {
+          "s": "emc-427",
+          "q": "Known personal or family history of blood dyscrasias including aplastic anaemia."
+        },
+        {
+          "s": "emc-9662",
+          "q": "Family or personal history of blood dyscrasias including aplastic anaemia."
+        },
+        {
+          "s": "sps-chloramphenicol-breastfeeding",
+          "q": "they should not be used where there is a past or family history of blood dyscrasias"
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:condition:family-history-blood-dyscrasia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "chloramphenicol-eye",
+      "condition": "family-history-blood-dyscrasia",
+      "concern": "Family history of blood dyscrasias (e.g. aplastic anaemia)",
+      "consequence": "Risk of bone marrow depression and aplastic anaemia.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... Patients with a family history of blood dyscrasias",
+      "src": [
+        {
+          "s": "emc-7299",
+          "q": "Patients with a family history of blood dyscrasias."
+        },
+        {
+          "s": "emc-5195",
+          "q": "Family history of blood dyscrasias."
+        },
+        {
+          "s": "emc-427",
+          "q": "Known personal or family history of blood dyscrasias including aplastic anaemia."
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:interaction:bone-marrow-depressant",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "chloramphenicol-eye",
+      "other": "group:bone-marrow-depressant",
+      "effect": "bone-marrow-suppression",
+      "concern": "Other drugs liable to depress bone marrow function",
+      "consequence": "Added risk of bone marrow depression (chloramphenicol is absorbed from the eye).",
+      "action": "Avoid using together.",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-13182",
+          "q": "The concomitant administration of chloramphenicol with other drugs liable to depress bone marrow function should be avoided."
+        },
+        {
+          "s": "emc-427",
+          "q": "The concomitant administration of Chloramphenicol with other drugs liable to depress bone marrow function should be avoided."
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:condition:contact-lens-wearer",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "chloramphenicol-eye",
+      "condition": "contact-lens-wearer",
+      "concern": "Contact lens wearer",
+      "consequence": "Contact lenses should not be worn in an infected eye or during treatment.",
+      "action": "Do not wear contact lenses during the course; wait 24 hours after finishing before wearing soft lenses again.",
+      "sourceWording": "contact lenses should not be worn during the period of treatment",
+      "src": [
+        {
+          "s": "emc-427",
+          "q": "Contact lenses should not be worn in an infected eye."
+        },
+        {
+          "s": "emc-9662",
+          "q": "contact lenses should not be worn during the period of treatment"
+        },
+        {
+          "s": "emc-9662",
+          "q": "Soft contact lens wearers should wait 24 hours after completing a course of treatment before starting to use their lenses again."
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:age:under-2",
+      "kind": "age",
+      "level": "caution",
+      "med": "chloramphenicol-eye",
+      "age": {
+        "maxYears": 2
+      },
+      "concern": "Child under 2 years",
+      "consequence": "The eye ointment and most pharmacy-sale drops are licensed only from 2 years. The prescription-only drops SmPC covers children. MHRA (2021): chloramphenicol eye drops, including borax/boric acid-buffered drops, can be safely given to children aged 0 to 2 years when antibiotic eye drops are indicated.",
+      "action": "Eye ointment and most pharmacy-sale drops: not licensed under 2 years. Prescription-only drops are licensed in children, and MHRA says chloramphenicol eye drops can be safely given at 0 to 2 years when antibiotic eye drops are indicated.",
+      "sourceWording": "children aged 2 years and over",
+      "src": [
+        {
+          "s": "emc-9770",
+          "q": "Treatment of acute bacterial conjunctivitis in adults and children aged 2 years and over."
+        },
+        {
+          "s": "emc-427",
+          "q": "indicated in both adults and children for the treatment of bacterial conjunctivitis caused by chloramphenicol susceptible organisms"
+        },
+        {
+          "s": "mhra-dsu-chloramphenicol-borax-under-2-2021",
+          "q": "Chloramphenicol eye drops can be safely administered to children aged 0 to 2 years where antibiotic eye drop treatment is indicated."
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:age:newborn",
+      "kind": "age",
+      "level": "dose",
+      "med": "chloramphenicol-eye",
+      "formulations": [
+        "chloramphenicol-eye-drops"
+      ],
+      "age": {
+        "maxYears": 0.08
+      },
+      "concern": "Newborn infant",
+      "consequence": "Reduced elimination (immature metabolism) and risk of dose-related adverse effects. The age bound (about 4 weeks) is ours; the SmPC says 'new born infants'.",
+      "action": "Dose adjustment may be needed.",
+      "sourceWording": "Dosage adjustment may be necessary in new born infants",
+      "src": [
+        {
+          "s": "emc-427",
+          "q": "Dosage adjustment may be necessary in new born infants because of reduced systemic elimination due to immature metabolism and the risk of dose-related adverse effects."
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:pregnancy",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "chloramphenicol-eye",
+      "concern": "Pregnancy (UK SmPCs)",
+      "consequence": "Safety in pregnancy not established; chloramphenicol may be absorbed from the eye and cross the placenta.",
+      "action": "UK SmPCs: not recommended / should not be used in pregnancy (one ointment SmPC: use only when the doctor considers it essential). BUMPS view shown separately.",
+      "sourceWording": "not recommended for use during pregnancy",
+      "src": [
+        {
+          "s": "emc-427",
+          "q": "Chloramphenicol may be absorbed systemically following the use of eye drops and may cross the placenta and appear in breast milk."
+        },
+        {
+          "s": "emc-427",
+          "q": "Therefore this product is not recommended for use during pregnancy and lactation."
+        },
+        {
+          "s": "emc-9770",
+          "q": "chloramphenicol eye ointment should not be used during pregnancy and breastfeeding."
+        },
+        {
+          "s": "emc-7299",
+          "q": "Therefore, use only when considered essential by the physician."
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "chloramphenicol-eye",
+      "concern": "Pregnancy (BUMPS, differs from the SmPCs)",
+      "consequence": "BUMPS: chloramphenicol eye and ear drops can be used in pregnancy and are generally the first-choice treatment for an eye infection in pregnancy.",
+      "action": "BUMPS: can be used. This differs from the UK SmPCs (not recommended); decide case by case.",
+      "sourceWording": "Chloramphenicol eye and ear drops can be used in pregnancy.",
+      "src": [
+        {
+          "s": "bumps-chloramphenicol",
+          "q": "Chloramphenicol eye and ear drops can be used in pregnancy."
+        },
+        {
+          "s": "bumps-chloramphenicol",
+          "q": "Chloramphenicol eye drops are generally the first-choice treatment for an eye infection in pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "chloramphenicol-eye",
+      "concern": "Breastfeeding (UK SmPCs)",
+      "consequence": "Chloramphenicol may appear in breast milk.",
+      "action": "UK SmPCs: avoid / not recommended during breastfeeding. SPS view shown separately.",
+      "sourceWording": "use of the product during lactation should be avoided",
+      "src": [
+        {
+          "s": "emc-9662",
+          "q": "use of the product during lactation should be avoided"
+        },
+        {
+          "s": "emc-427",
+          "q": "Therefore this product is not recommended for use during pregnancy and lactation."
+        }
+      ]
+    },
+    {
+      "id": "chloramphenicol-eye:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "chloramphenicol-eye",
+      "concern": "Breastfeeding (SPS, differs from the SmPCs)",
+      "consequence": "SPS: eye and ear preparations can be used with caution during breastfeeding, short courses preferred; not where there is a past or family history of blood dyscrasias. Gentamicin or fusidic acid preparations are preferred if clinically appropriate.",
+      "action": "SPS: if used, give a short course and monitor the infant (abdominal distension, poor feeding, sedation, vomiting or diarrhoea, pallor or lethargy, rash, unusual bruising or bleeding).",
+      "sourceWording": "can be used with caution during breastfeeding",
+      "src": [
+        {
+          "s": "sps-chloramphenicol-breastfeeding",
+          "q": "Chloramphenicol eye and ear preparations can be used with caution during breastfeeding."
+        },
+        {
+          "s": "sps-chloramphenicol-breastfeeding",
+          "q": "they should not be used where there is a past or family history of blood dyscrasias"
+        },
+        {
+          "s": "sps-chloramphenicol-breastfeeding",
+          "q": "Fusidic acid or gentamicin preparations would be preferred, if clinically appropriate."
+        },
+        {
+          "s": "sps-chloramphenicol-breastfeeding",
+          "q": "monitor the infant for: abdominal distension poor feeding sedation vomiting or diarrhoea anaemia (pallor, lethargy) rash unusual bruising or bleeding"
+        }
+      ]
+    }
+  ]
+}

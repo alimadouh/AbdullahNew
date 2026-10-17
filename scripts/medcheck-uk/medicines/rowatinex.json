@@ -1,0 +1,167 @@
+{
+  "id": "rowatinex",
+  "name": "Terpene combination (pinene, camphene, borneol, fenchone, anethole, cineole)",
+  "ingredients": ["rowatinex"],
+  "className": "Terpene (essential oil) combination for urinary stones",
+  "groups": [],
+  "searchTerms": ["pinene camphene borneol cineole fenchone anethole", "terpene combination", "pinene", "borneol"],
+  "formulations": [
+    {
+      "id": "rowatinex-cap",
+      "label": "Gastro-resistant soft capsules",
+      "route": "oral",
+      "strengths": "Per capsule: pinene (alpha + beta) 31 mg, camphene 15 mg, cineole 3 mg, fenchone 4 mg, borneol 10 mg, anethole 4 mg",
+      "release": "gastro-resistant",
+      "note": "Capsule shell contains hydroxybenzoates (E215, E217), sunset yellow and glycerol.",
+      "src": [
+        { "s": "mhra-rowatinex-spc", "q": "Pinene [a + β] 31.0mg Camphene 15.0 mg Cineol BPC 3.0 mg Fenchone 4.0 mg Borneol 10.0 mg Anethol USP 4.0 mg" },
+        { "s": "mhra-rowatinex-pil", "q": "The capsules are gastro-resistant." },
+        { "s": "mhra-rowatinex-pil", "q": "This medicine may cause allergic reactions (possibly delayed) as it contains sodium ethyl hydroxybenzoate (E215) and sodium propyl hydroxybenzoate (E217)." }
+      ],
+      "sourceIds": ["mhra-rowatinex-spc", "mhra-rowatinex-pil"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Urolithiasis and nephrolithiasis (helps stones break up and pass; relieves mild to moderate renal and urinary colic from stones); relief of frequency and urgency in mild urinary tract infection.",
+        "src": [
+          { "s": "mhra-rowatinex-spc", "q": "Urolithiasis, nephrolithiasis and mild urinary tract infections." },
+          { "s": "mhra-rowatinex-spc", "q": "gives symptomatic relief of mild to moderate renal and urinary colic associated with the presence of stones in the renal and urinary tracts" },
+          { "s": "mhra-rowatinex-spc", "q": "is also indicated for the relief of frequency and urgency associated with mild urinary tract infections" }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Not suitable for severe colic, anuria or severe urinary tract infection. The UK SPC text dates from 2004.",
+        "src": [
+          { "s": "mhra-rowatinex-spc", "q": "is not suitable for use in patients with severe colic, anuria or severe infection of the urinary tract" },
+          { "s": "mhra-rowatinex-spc", "q": "DATE OF (PARTIAL) REVISION OF TEXT 29/06/2004" }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "One capsule 3 or 4 times daily before meals (PIL: half an hour before meals).", "tag": "Adults",
+        "src": [
+          { "s": "mhra-rowatinex-spc", "q": "Adults: One capsule 3 or 4 times daily before meals." },
+          { "s": "mhra-rowatinex-pil", "q": "Take one capsule 3-4 times daily, half an hour before meals." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "SPC: no dose recommendation for children. PIL: under 18 years should not take it.",
+        "src": [
+          { "s": "mhra-rowatinex-spc", "q": "No dose recommendation for children." },
+          { "s": "mhra-rowatinex-pil", "q": "Children and adolescents under 18 years of age should not take Rowatinex®." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "SPC 4.3: none known. PIL: do not take if allergic to any of the ingredients.",
+        "src": [
+          { "s": "mhra-rowatinex-spc", "q": "4.3 Contraindications None known." },
+          { "s": "mhra-rowatinex-pil", "q": "DO NOT take Rowatinex® if you are allergic (hypersensitive) to any of the active substances or any of the other ingredients" }
+        ] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Not suitable in severe colic, anuria (PIL: reduced urine production) or severe urinary tract infection.",
+        "src": [
+          { "s": "mhra-rowatinex-spc", "q": "is not suitable for use in patients with severe colic, anuria or severe infection of the urinary tract" },
+          { "s": "mhra-rowatinex-pil", "q": "is not suitable in patients with severe pain (colic), decrease in urine production or severe infection of the urinary tract" }
+        ] },
+      { "t": "Hydroxybenzoates in the capsule shell may cause (possibly delayed) allergic reactions.", "detail": true,
+        "src": [{ "s": "mhra-rowatinex-pil", "q": "This medicine may cause allergic reactions (possibly delayed) as it contains sodium ethyl hydroxybenzoate (E215) and sodium propyl hydroxybenzoate (E217)." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Should not be used with oral anticoagulants (e.g. warfarin) or other liver-metabolised drugs where the dose is critical.",
+        "src": [
+          { "s": "mhra-rowatinex-spc", "q": "Should not be used in patients receiving oral anti-coagulants or other drugs metabolised by the liver where dose is critical." },
+          { "s": "mhra-rowatinex-pil", "q": "medicines to thin your blood (oral anti-coagulants e.g. Warfarin)" }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Anuria: not suitable. No other renal dose guidance in the SPC.",
+        "src": [{ "s": "mhra-rowatinex-spc", "q": "is not suitable for use in patients with severe colic, anuria or severe infection of the urinary tract" }] }
+    ] },
+    "hepatic": { "status": "not-stated", "note": "The UK SPC and PIL (MHRA products) give no hepatic impairment advice; they only warn about other liver-metabolised drugs where the dose is critical." },
+    "pregnancy": { "items": [
+      { "t": "No teratogenic effects reported, but should not be given in the first trimester.", "tag": "First trimester",
+        "src": [{ "s": "mhra-rowatinex-spc", "q": "Although no teratogenic effects have been reported, ROWATINEX should not be given in the first trimester of pregnancy." }] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Should not be given to breastfeeding women (no evidence available).",
+        "src": [{ "s": "mhra-rowatinex-spc", "q": "Although no evidence is available, ROWATINEX should not be given to lactating females." }] }
+    ] },
+    "reproductive": { "status": "not-stated", "note": "The UK SPC and PIL (MHRA products) say nothing on fertility or contraception." },
+    "adverseCommon": { "items": [
+      { "t": "A small number of patients had slight, transient stomach upset; vomiting rarely. Side effects were uncommon and minor.",
+        "src": [
+          { "s": "mhra-rowatinex-spc", "q": "An Insignificant number of patients reported slight and transient gastric disturbance. Vomiting has been rarely reported." },
+          { "s": "mhra-rowatinex-spc", "q": "side effects were uncommon and minor" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Overdose: empty the stomach if recently taken; give symptomatic treatment and monitor cardiac, respiratory, renal and hepatic function.",
+        "src": [
+          { "s": "mhra-rowatinex-spc", "q": "If medication has been recently ingested, the stomach should be emptied by gastric lavage." },
+          { "s": "mhra-rowatinex-spc", "q": "Monitoring of cardiac, respiratory, renal and hepatic functions are advised." }
+        ] }
+    ] },
+    "monitoring": { "status": "not-stated", "note": "The UK SPC and PIL (MHRA products) give no routine monitoring advice (only overdose monitoring)." },
+    "administration": { "items": [
+      { "t": "Swallow capsules whole; do not bite or chew. Take on an empty stomach half an hour before meals.",
+        "src": [
+          { "s": "mhra-rowatinex-pil", "q": "must only be taken by swallowing the whole capsule. Do not bite or chew the capsules." },
+          { "s": "mhra-rowatinex-pil", "q": "should be taken on an empty stomach half an hour before meals" }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Tell the doctor if taking blood thinners such as warfarin. Do not take in early pregnancy or while breastfeeding. Unlikely to affect driving.",
+        "src": [
+          { "s": "mhra-rowatinex-pil", "q": "You should not take Rowatinex® in early pregnancy (the first trimester) or if you are breast feeding." },
+          { "s": "mhra-rowatinex-pil", "q": "Rowatinex® is unlikely to have any effect on your driving or ability to use machines." }
+        ] }
+    ] }
+  },
+  "rules": [
+    { "id": "rowatinex:allergy:rowatinex", "kind": "allergy", "level": "contraindicated", "med": "rowatinex", "allergen": ["rowatinex"],
+      "concern": "Allergy to any of the terpene ingredients or excipients", "consequence": "Hypersensitivity reaction.", "action": "PIL: do not take. (SPC 4.3 lists no contraindications.)", "sourceWording": "DO NOT take",
+      "src": [
+        { "s": "mhra-rowatinex-pil", "q": "DO NOT take Rowatinex® if you are allergic (hypersensitive) to any of the active substances or any of the other ingredients" },
+        { "s": "mhra-rowatinex-spc", "q": "4.3 Contraindications None known." }
+      ] },
+    { "id": "rowatinex:condition:severe-colic", "kind": "condition", "level": "avoid", "med": "rowatinex", "condition": "severe-renal-colic",
+      "concern": "Severe renal or urinary colic", "consequence": "Product is not suitable.", "action": "Not suitable; do not use.", "sourceWording": "is not suitable for use in patients with severe colic",
+      "src": [{ "s": "mhra-rowatinex-spc", "q": "is not suitable for use in patients with severe colic, anuria or severe infection of the urinary tract" }] },
+    { "id": "rowatinex:condition:anuria", "kind": "condition", "level": "avoid", "med": "rowatinex", "condition": "acute-renal-insufficiency-anuria",
+      "concern": "Anuria (reduced or absent urine production)", "consequence": "Product is not suitable.", "action": "Not suitable; do not use.", "sourceWording": "is not suitable for use in patients with ... anuria",
+      "src": [
+        { "s": "mhra-rowatinex-spc", "q": "is not suitable for use in patients with severe colic, anuria or severe infection of the urinary tract" },
+        { "s": "mhra-rowatinex-pil", "q": "decrease in urine production" }
+      ] },
+    { "id": "rowatinex:condition:severe-uti", "kind": "condition", "level": "avoid", "med": "rowatinex", "condition": "severe-uti",
+      "concern": "Severe urinary tract infection", "consequence": "Product is not suitable (only for mild infection symptoms).", "action": "Not suitable; do not use.", "sourceWording": "is not suitable for use in patients with ... severe infection of the urinary tract",
+      "src": [{ "s": "mhra-rowatinex-spc", "q": "is not suitable for use in patients with severe colic, anuria or severe infection of the urinary tract" }] },
+    { "id": "rowatinex:condition:complicated-uti", "kind": "condition", "level": "avoid", "med": "rowatinex", "condition": "complicated-uti",
+      "concern": "Complicated urinary tract infection, if severe", "consequence": "The SPC says the product is not suitable in severe infection of the urinary tract (it is only for mild infection symptoms).", "action": "Not suitable; do not use.", "sourceWording": "is not suitable for use in patients with ... severe infection of the urinary tract",
+      "src": [{ "s": "mhra-rowatinex-spc", "q": "is not suitable for use in patients with severe colic, anuria or severe infection of the urinary tract" }] },
+    { "id": "rowatinex:interaction:anticoagulant", "kind": "interaction", "level": "avoid", "med": "rowatinex", "other": "group:anticoagulant", "effect": "bleeding",
+      "concern": "Terpene combination + oral anticoagulant (e.g. warfarin)", "consequence": "Interaction with oral anticoagulants (mechanism not stated).", "action": "Should not be used together.", "sourceWording": "Should not be used in patients receiving oral anti-coagulants",
+      "src": [
+        { "s": "mhra-rowatinex-spc", "q": "Should not be used in patients receiving oral anti-coagulants or other drugs metabolised by the liver where dose is critical." },
+        { "s": "mhra-rowatinex-pil", "q": "medicines to thin your blood (oral anti-coagulants e.g. Warfarin)" }
+      ] },
+    { "id": "rowatinex:age:lt18", "kind": "age", "level": "avoid", "med": "rowatinex", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years", "consequence": "No dose recommendation for children (SPC).", "action": "PIL: children and adolescents under 18 should not take it.", "sourceWording": "should not take",
+      "src": [
+        { "s": "mhra-rowatinex-pil", "q": "Children and adolescents under 18 years of age should not take Rowatinex®." },
+        { "s": "mhra-rowatinex-spc", "q": "No dose recommendation for children." }
+      ] },
+    { "id": "rowatinex:pregnancy:t1", "kind": "pregnancy", "level": "avoid", "med": "rowatinex", "trimesters": [1],
+      "concern": "First trimester of pregnancy", "consequence": "No teratogenic effects reported, but not to be given.", "action": "Should not be given in the first trimester.", "sourceWording": "should not be given in the first trimester of pregnancy",
+      "src": [{ "s": "mhra-rowatinex-spc", "q": "Although no teratogenic effects have been reported, ROWATINEX should not be given in the first trimester of pregnancy." }] },
+    { "id": "rowatinex:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "rowatinex",
+      "concern": "Breastfeeding", "consequence": "No evidence available; risk unknown.", "action": "Should not be given to breastfeeding women.", "sourceWording": "should not be given to lactating females",
+      "src": [
+        { "s": "mhra-rowatinex-spc", "q": "Although no evidence is available, ROWATINEX should not be given to lactating females." },
+        { "s": "mhra-rowatinex-pil", "q": "No harmful effects on babies have been reported, but the risk is still unknown." }
+      ] }
+  ]
+}

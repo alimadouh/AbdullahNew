@@ -1,0 +1,427 @@
+{
+  "id": "mirtazapine",
+  "name": "Mirtazapine",
+  "ingredients": ["mirtazapine"],
+  "className": "Antidepressant (presynaptic alpha-2 antagonist; noradrenergic and serotonergic)",
+  "groups": ["serotonergic", "cns-depressant"],
+  "searchTerms": ["mirtazapine"],
+  "formulations": [
+    {
+      "id": "mirtazapine-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "30 mg (only this SmPC used)",
+      "release": "immediate",
+      "note": "Scored; can be divided into equal doses. Contains lactose.",
+      "src": [
+        { "s": "emc-100724", "q": "Each Mirtazapine 30 mg film-coated tablet contains 30 mg of mirtazapine." },
+        { "s": "emc-100724", "q": "The tablet can be divided into equal doses." },
+        { "s": "emc-100724", "q": "Each Mirtazapine 30 mg film-coated tablet contains 225.750 mg lactose monohydrate." }
+      ],
+      "sourceIds": ["emc-100724"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Adults: episodes of major depression.",
+        "src": [{ "s": "emc-100724", "q": "Mirtazapine is indicated in adults for the treatment of episodes of major depression." }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Not for children and adolescents under 18 (efficacy not shown; safety concerns).",
+        "src": [{ "s": "emc-100724", "q": "Mirtazapine should not be used in children and adolescents under the age of 18 years as efficacy was not demonstrated in two short-term clinical trials" }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Start 15 mg or 30 mg daily; usual effective dose 15 mg to 45 mg daily. Effect usually after 1 to 2 weeks; response expected within 2 to 4 weeks. If response is poor, increase up to the maximum; if still no response after a further 2 to 4 weeks, stop. Treat at least 6 months.", "tag": "Major depression, adults",
+        "src": [
+          { "s": "emc-100724", "q": "The effective daily dose is usually between 15 and 45 mg; the starting dose is 15 or 30 mg." },
+          { "s": "emc-100724", "q": "Treatment with an adequate dose should result in a positive response within 2-4 weeks." },
+          { "s": "emc-100724", "q": "If there is no response within a further 2-4 weeks, then treatment should be stopped." },
+          { "s": "emc-100724", "q": "Patients with depression should be treated for a sufficient period of at least 6 months to ensure that they are free from symptoms." }
+        ] },
+      { "t": "Elderly: same dose as adults; increase only under close supervision.", "tag": "Elderly",
+        "src": [{ "s": "emc-100724", "q": "In elderly patients an increase in dosing should be done under close supervision to elicit a satisfactory and safe response." }] },
+      { "t": "Stopping: discontinue gradually to avoid withdrawal symptoms.", "tag": "Stopping",
+        "src": [{ "s": "emc-100724", "q": "It is recommended to discontinue treatment with mirtazapine gradually to avoid withdrawal symptoms" }] },
+      { "t": "With carbamazepine or other enzyme inducers the dose may need increasing (and reducing when the inducer is stopped). With potent CYP3A4 inhibitors, azole antifungals, erythromycin, HIV protease inhibitors or cimetidine the dose may need reducing.", "tag": "Interacting drugs",
+        "src": [
+          { "s": "emc-100724", "q": "When carbamazepine or any other inducer of hepatic metabolism (such as rifampicin) is added to mirtazapine therapy, the mirtazapine dose may have to be increased." },
+          { "s": "emc-100724", "q": "Caution should be exercised and the dose may have to be decreased when co-administering mirtazapine with potent CYP3A4 inhibitors, HIV protease inhibitors, azole antifungals, erythromycin, cimetidine or nefazodone." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Should not be used under 18 years. Paediatric trials did not show efficacy; suicidal behaviour and hostility were more frequent with antidepressants; marked weight gain, urticaria and raised triglycerides seen.",
+        "src": [
+          { "s": "emc-100724", "q": "Mirtazapine should not be used in the treatment of children and adolescents under the age of 18 years." },
+          { "s": "emc-100724", "q": "The following adverse events were observed commonly in clinical trials in children: weight gain, urticaria and hypertriglyceridaemia" }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to mirtazapine or any excipient.",
+        "src": [{ "s": "emc-100724", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1 ." }] },
+      { "t": "Use with MAO inhibitors (and within 2 weeks of stopping one; about 2 weeks should pass after mirtazapine before starting one).",
+        "src": [
+          { "s": "emc-100724", "q": "Concomitant use of mirtazapine with monoamine oxidase (MAO) inhibitors" },
+          { "s": "emc-100724", "q": "Mirtazapine should not be administered concomitantly with MAO inhibitors or within two weeks after discontinuation of MAO inhibitor therapy." }
+        ] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Bone marrow depression (granulocytopenia, agranulocytosis), occasionally fatal, mostly over 65 years: stop and check blood count if fever, sore throat, stomatitis or other signs of infection.",
+        "src": [
+          { "s": "emc-100724", "q": "Bone marrow depression, usually presenting as granulocytopenia or agranulocytosis, has been reported during treatment with Mirtazapine." },
+          { "s": "emc-100724", "q": "when such symptoms occur, treatment should be stopped and blood counts taken" }
+        ] },
+      { "t": "Careful dosing and regular close monitoring needed in: epilepsy or organic brain syndrome, hepatic or renal impairment, cardiac disease (conduction disturbance, angina, recent MI), low blood pressure, diabetes (close monitoring; antidiabetic dose may need adjustment).",
+        "src": [
+          { "s": "emc-100724", "q": "Careful dosing as well as regular and close monitoring is necessary in patients with:" },
+          { "s": "emc-100724", "q": "cardiac diseases like conduction disturbances, angina pectoris and recent myocardial infarction, where normal precautions should be taken and concomitant medicines carefully administered" },
+          { "s": "emc-100724", "q": "Insulin and/or oral hypoglycaemic dosage may need to be adjusted and close monitoring is recommended." }
+        ] },
+      { "t": "Epilepsy: introduce cautiously; stop if seizures develop or become more frequent.",
+        "src": [
+          { "s": "emc-100724", "q": "Mirtazapine should be introduced cautiously in patients who have a history of seizures." },
+          { "s": "emc-100724", "q": "Treatment should be discontinued in any patient who develops seizures, or where there is an increase in seizure frequency." }
+        ] },
+      { "t": "QT prolongation, torsade de pointes and sudden death reported post-marketing (mostly overdose or other risk factors): caution with cardiovascular disease, family history of QT prolongation or other QT-prolonging drugs.",
+        "src": [
+          { "s": "emc-100724", "q": "Cases of QT prolongation, Torsades de Pointes, ventricular tachycardia, and sudden death, have been reported during the post-marketing use of mirtazapine." },
+          { "s": "emc-100724", "q": "Caution should be exercised when Mirtazapine is prescribed in patients with known cardiovascular disease or family history of QT prolongation" }
+        ] },
+      { "t": "Schizophrenia/psychosis: symptoms may worsen. Bipolar: may switch to mania; monitor closely, stop if manic. Prostate hypertrophy, micturition problems, narrow-angle glaucoma or raised eye pressure: take care.",
+        "src": [
+          { "s": "emc-100724", "q": "Worsening of psychotic symptoms can occur when antidepressants are administered to patients with schizophrenia or other psychotic disturbances" },
+          { "s": "emc-100724", "q": "Patients with a history of mania/hypomania should be closely monitored. Mirtazapine should be discontinued in any patient entering a manic phase." },
+          { "s": "emc-100724", "q": "Care should be taken in patients with micturition disturbances like prostate hypertrophy and in patients with acute narrow-angle glaucoma and increased intra-ocular pressure" }
+        ] },
+      { "t": "Suicidal thoughts/behaviour: close supervision early and after dose changes; give the smallest quantity consistent with good care (overdose risk).",
+        "src": [
+          { "s": "emc-100724", "q": "Close supervision of patients and in particular those at high risk should accompany therapy with antidepressants especially in early treatment and following dose changes." },
+          { "s": "emc-100724", "q": "onlythe smallest amount of Mirtazapine film-coated tablets should be given to the patient consistent with good patient management, in order to reduce the risk of overdose" }
+        ] },
+      { "t": "Severe skin reactions (SJS, TEN, DRESS, bullous dermatitis, erythema multiforme): stop at once; never restart after such a reaction.",
+        "src": [{ "s": "emc-100724", "q": "If signs and symptoms suggestive of these reactions appear, Mirtazapine should be withdrawn immediately." }] },
+      { "t": "Hyponatraemia (SIADH), very rare: caution in elderly or with medicines that cause hyponatraemia. Serotonin syndrome with other serotonergic drugs: caution and closer monitoring; stop if it occurs.",
+        "src": [
+          { "s": "emc-100724", "q": "Caution should be exercised in patients at risk, such as elderly patients or patients concomitantly treated with medications known to cause hyponatraemia." },
+          { "s": "emc-100724", "q": "Treatment with mirtazapine should be discontinued if such events occur and supportive symptomatic treatment initiated." }
+        ] },
+      { "t": "Akathisia usually in first weeks (increasing the dose may be harmful). Withdrawal symptoms after abrupt stop. Jaundice: stop treatment. Lactose: not for hereditary galactose intolerance.", "detail": true,
+        "src": [
+          { "s": "emc-100724", "q": "In patients who develop these symptoms, increasing the dose may be detrimental." },
+          { "s": "emc-100724", "q": "Treatment should be discontinued if jaundice occurs." },
+          { "s": "emc-100724", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Contraindicated: MAO inhibitors (and within 2 weeks).",
+        "src": [{ "s": "emc-100724", "q": "Mirtazapine should not be administered concomitantly with MAO inhibitors or within two weeks after discontinuation of MAO inhibitor therapy." }] },
+      { "t": "Serotonergic drugs (L-tryptophan, triptans, tramadol, linezolid, methylene blue, SSRIs, venlafaxine, lithium, St John's wort): serotonin syndrome risk; caution and closer clinical monitoring.",
+        "src": [
+          { "s": "emc-100724", "q": "co-administration with other serotonergic active substances (L-tryptophan, triptans, tramadol, linezolid, methylene blue, SSRIs, venlafaxine, lithium and St. John's Wort - Hypericum perforatum - preparations)" },
+          { "s": "emc-100724", "q": "Caution should be advised and a closer clinical monitoring is required when these active substances are combined with mirtazapine." }
+        ] },
+      { "t": "Benzodiazepines and other sedatives (most antipsychotics, H1 antihistamines, opioids): more sedation, caution. Alcohol: avoid.",
+        "src": [
+          { "s": "emc-100724", "q": "Mirtazapine may increase the sedating properties of benzodiazepines and other sedatives (notably most antipsychotics, antihistamine H1 antagonists, opioids)." },
+          { "s": "emc-100724", "q": "Patients should therefore be advised to avoid alcoholic beverages while taking mirtazapine." }
+        ] },
+      { "t": "Warfarin: small rise in INR at 30 mg; monitor INR.",
+        "src": [{ "s": "emc-100724", "q": "it is advisable to monitor the INR in case of concomitant treatment of warfarin with mirtazapine" }] },
+      { "t": "QT-prolonging drugs (some antipsychotics and antibiotics): higher risk of QT prolongation/torsade de pointes.",
+        "src": [{ "s": "emc-100724", "q": "The risk of QT prolongation and/or ventricular arrhythmias (e.g. Torsades de Pointes) may be increased with concomitant use of medicines which prolong the QTc interval" }] },
+      { "t": "Carbamazepine, phenytoin, rifampicin (inducers): mirtazapine levels fall 45% to 60%; dose may need increasing. Ketoconazole, cimetidine and other potent CYP3A4 inhibitors raise levels; dose may need decreasing.",
+        "src": [
+          { "s": "emc-100724", "q": "Carbamazepine and phenytoin, CYP3A4 inducers, increased mirtazapine clearance about twofold" },
+          { "s": "emc-100724", "q": "Co-administration of the potent CYP3A4 inhibitor ketoconazole increased the peak plasma levels and the AUC of mirtazapine by approximately 40 % and 50 % respectively." }
+        ] },
+      { "t": "No relevant pharmacokinetic interaction with paroxetine, amitriptyline, risperidone or lithium.", "detail": true,
+        "src": [{ "s": "emc-100724", "q": "Interaction studies did not indicate any relevant pharmacokinetic effects on concurrent treatment of mirtazapine with paroxetine, amitriptyline, risperidone or lithium." }] }
+    ] },
+    "renal": { "items": [
+      { "t": "Moderate to severe renal impairment (CrCl <40 ml/min): clearance may be reduced (about 30% at CrCl <40, 50% at CrCl ≤10 ml/min); take this into account when prescribing. Mild impairment (CrCl <80 ml/min): no significant difference.",
+        "src": [
+          { "s": "emc-100724", "q": "The clearance of mirtazapine may be decreased in patients with moderate to severe renal impairment (creatinine clearance <40 ml/min). This should be taken into account when prescribing Mirtazapine to this category of patients" },
+          { "s": "emc-100724", "q": "No significant differences were found in patients with mild renal impairment (creatinine clearance <80 ml/min) as compared to the control group." }
+        ] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Clearance may be reduced (about 35% in mild to moderate impairment); take into account when prescribing, particularly in severe impairment (not studied).",
+        "src": [
+          { "s": "emc-100724", "q": "This should be taken into account when prescribing Mirtazapine to this category of patients, particularly with severe hepatic impairment, as patients with severe hepatic impairment have not been investigated" },
+          { "s": "emc-100724", "q": "the clearance of mirtazapine was approximately 35 % decreased in mild to moderate hepatically impaired patients" }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: limited data do not suggest a raised malformation risk. Possible risk of persistent pulmonary hypertension of the newborn cannot be ruled out. Use with caution; if used until or near birth, monitor the newborn.",
+        "src": [
+          { "s": "emc-100724", "q": "Limited data of the use of mirtazapine in pregnant women do not indicate an increased risk for congenital malformations." },
+          { "s": "emc-100724", "q": "Caution should be exercised when prescribing to pregnant women." },
+          { "s": "emc-100724", "q": "If Mirtazapine is used until, or shortly before birth, postnatal monitoring of the newborn is recommended to account for possible discontinuation effects." }
+        ] },
+      { "t": "BUMPS: can be used if recommended by a GP or specialist; no evidence of harm to development or of miscarriage/stillbirth. Later pregnancy use: hospital delivery usually advised (neonatal withdrawal; rarely PPHN with similar drugs).",
+        "src": [
+          { "s": "bumps-mirtazapine", "q": "Mirtazapine can be used in pregnancy if recommended by a GP or specialist." },
+          { "s": "bumps-mirtazapine", "q": "There is no evidence that mirtazapine affects the baby's development or increases the chance of miscarriage or stillbirth." },
+          { "s": "bumps-mirtazapine", "q": "If you take mirtazapine in later pregnancy, you will usually be advised to have a hospital delivery." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: very small amounts in milk; decide on breastfeeding versus therapy, weighing benefits.",
+        "src": [
+          { "s": "emc-100724", "q": "Animal studies and limited human data have shown excretion of mirtazapine in breast milk only in very small amounts." },
+          { "s": "emc-100724", "q": "A decision on whether to continue/discontinue breast-feeding or to continue/discontinue therapy with Mirtazapine should be made" }
+        ] },
+      { "t": "SPS: can be used with caution, but SSRIs or TCAs are preferred. Monitor the infant for irritability, drowsiness, GI symptoms, feeding changes and weight gain. No need to switch if used successfully in pregnancy (term, healthy infant).",
+        "src": [
+          { "s": "sps-certain-antidepressants-bf", "q": "Mirtazapine can be used with caution during breastfeeding, but SSRIs or TCAs are preferred." },
+          { "s": "sps-certain-antidepressants-bf", "q": "Monitor infants for irritability, drowsiness, gastrointestinal symptoms, changes in feeding or not waking to feed, and appropriate weight gain." },
+          { "s": "sps-certain-antidepressants-bf", "q": "there is no need to switch to a preferred choice in breastfeeding, as long as the infant has been born full term and healthy" }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: no effect in animal studies. Priapism reported (frequency not known).",
+        "src": [
+          { "s": "emc-100724", "q": "Non-clinical reproductive toxicity studies in animals did not show any effect on fertility." },
+          { "s": "emc-100724", "q": "Reproductive system and breast disorders Priapism" }
+        ] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Most common (over 5% in trials): somnolence, sedation, dry mouth, weight gain, increased appetite, dizziness, fatigue. Lowering the dose usually does not reduce sleepiness.",
+        "src": [
+          { "s": "emc-100724", "q": "are somnolence, sedation, dry mouth, weight increased, increase in appetite, dizziness and fatigue" },
+          { "s": "emc-100724", "q": "dose reduction generally does not lead to less somnolence/sedation but can jeopardize antidepressant efficacy" }
+        ] },
+      { "t": "Also reported: headache, abnormal dreams, confusion, anxiety, insomnia, tremor, orthostatic hypotension, nausea, constipation, peripheral oedema, joint and muscle pain.", "detail": true,
+        "src": [{ "s": "emc-100724", "q": "Vascular disorders Orthostatic hypotension Hypotension2 Gastrointestinal disorders Dry mouth Nausea3" }] },
+      { "t": "Withdrawal symptoms after abrupt stopping (dizziness, agitation, anxiety, headache, nausea), mostly mild.",
+        "src": [{ "s": "emc-100724", "q": "Among the various reported withdrawal symptoms, dizziness, agitation, anxiety, headache and nausea are the most frequently reported." }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Agranulocytosis/bone marrow depression (rarely fatal): if fever, sore throat, mouth ulcers or other infection signs, stop and check blood count.",
+        "src": [
+          { "s": "emc-100724", "q": "The physician should be alert for symptoms like fever, sore throat, stomatitis or other signs of infection; when such symptoms occur, treatment should be stopped and blood counts taken." }
+        ] },
+      { "t": "Severe skin reactions (SJS, TEN, DRESS): stop immediately; never restart.",
+        "src": [{ "s": "emc-100724", "q": "If the patient has developed one of these reactions with the use of Mirtazapine, treatment with Mirtazapine must not be restarted in this patient at any time." }] },
+      { "t": "Serotonin syndrome (hyperthermia, rigidity, myoclonus, confusion): stop and give supportive care. Seizures, jaundice, mania: stop.",
+        "src": [
+          { "s": "emc-100724", "q": "Treatment with mirtazapine should be discontinued if such events occur and supportive symptomatic treatment initiated." },
+          { "s": "emc-100724", "q": "Treatment should be discontinued if jaundice occurs." }
+        ] },
+      { "t": "New or worse suicidal thoughts: seek urgent medical attention (MHRA 2026).",
+        "src": [{ "s": "mhra-dsu-antidepressants-2026", "q": "if you have new or worsening suicidal thoughts, particularly when starting or changing dose of antidepressants, seek urgent medical attention" }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "When starting or changing dose: discuss suicide risk; monitor regularly after starting (MHRA 2026).", "tag": "baseline",
+        "src": [
+          { "s": "mhra-dsu-antidepressants-2026", "q": "discuss with patients when starting or changing the dose of an antidepressant or at their next review, the risk of suicidal thoughts and behaviours" },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "monitor your patients regularly after starting treatment with an antidepressant" }
+        ] },
+      { "t": "Watch for signs of infection (blood count if they occur); close monitoring in epilepsy, hepatic/renal impairment, cardiac disease, low blood pressure, diabetes; monitor INR with warfarin.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-100724", "q": "Careful dosing as well as regular and close monitoring is necessary in patients with:" },
+          { "s": "emc-100724", "q": "it is advisable to monitor the INR in case of concomitant treatment of warfarin with mirtazapine" }
+        ] },
+      { "t": "Stop if: signs of infection with blood dyscrasia, jaundice, seizures (or more frequent), manic phase, serotonin syndrome, severe skin reaction. Stop if no response after a further 2 to 4 weeks at an adequate dose.", "tag": "stop",
+        "src": [
+          { "s": "emc-100724", "q": "Treatment should be discontinued if jaundice occurs." },
+          { "s": "emc-100724", "q": "Mirtazapine should be discontinued in any patient entering a manic phase." },
+          { "s": "emc-100724", "q": "If there is no response within a further 2-4 weeks, then treatment should be stopped." }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Once daily, preferably as a single night-time dose before bed; or two divided doses with the higher dose at night. Swallow with fluid, without chewing.",
+        "src": [
+          { "s": "emc-100724", "q": "It should be taken preferably as a single night-time dose before going to bed." },
+          { "s": "emc-100724", "q": "The tablets should be taken orally, with fluid, and swallowed without chewing." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "May impair concentration and alertness, especially at first: do not drive or use machines when affected. Avoid alcohol.",
+        "src": [
+          { "s": "emc-100724", "q": "Mirtazapine may impair concentration and alertness (particularly in the initial phase of treatment)." },
+          { "s": "emc-100724", "q": "Patients should therefore be advised to avoid alcoholic beverages while taking mirtazapine." }
+        ] },
+      { "t": "Report fever, sore throat or mouth ulcers promptly. Seek urgent help for new or worse suicidal thoughts (NHS 111, crisis team, Samaritans 116 123). Do not stop suddenly.",
+        "src": [
+          { "s": "emc-100724", "q": "The physician should be alert for symptoms like fever, sore throat, stomatitis or other signs of infection" },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "You can call NHS 111, or your local mental health crisis team, Samaritans on 116 123" },
+          { "s": "emc-100724", "q": "It is recommended to discontinue treatment with mirtazapine gradually to avoid withdrawal symptoms" }
+        ] }
+    ] }
+  },
+  "rules": [
+    { "id": "mirtazapine:allergy:mirtazapine", "kind": "allergy", "level": "contraindicated", "med": "mirtazapine", "allergen": ["mirtazapine"],
+      "concern": "Hypersensitivity to mirtazapine (or previous severe skin reaction to it)", "consequence": "Hypersensitivity reaction; after SJS/TEN/DRESS it must never be restarted.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity",
+      "src": [
+        { "s": "emc-100724", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1 ." },
+        { "s": "emc-100724", "q": "treatment with Mirtazapine must not be restarted in this patient at any time" }
+      ] },
+    { "id": "mirtazapine:interaction:maoi", "kind": "interaction", "level": "contraindicated", "med": "mirtazapine", "other": "group:maoi", "effect": "serotonin-syndrome",
+      "concern": "Mirtazapine + MAO inhibitor", "consequence": "Serotonin syndrome risk.", "action": "Do not use together or within 2 weeks of stopping an MAOI; wait about 2 weeks after mirtazapine before an MAOI.", "sourceWording": "4.3 Contraindications ... Concomitant use of mirtazapine with monoamine oxidase (MAO) inhibitors",
+      "src": [
+        { "s": "emc-100724", "q": "Concomitant use of mirtazapine with monoamine oxidase (MAO) inhibitors" },
+        { "s": "emc-100724", "q": "In the opposite way about two weeks should pass before patients treated with mirtazapine should be treated with MAO inhibitors" }
+      ] },
+    { "id": "mirtazapine:age:lt18", "kind": "age", "level": "avoid", "med": "mirtazapine", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years", "consequence": "Efficacy not shown; more suicidal behaviour and hostility with antidepressants in children; marked weight gain.", "action": "Should not be used; if used on clinical need, monitor carefully for suicidal symptoms.", "sourceWording": "should not be used in children and adolescents under the age of 18 years",
+      "src": [
+        { "s": "emc-100724", "q": "Mirtazapine should not be used in children and adolescents under the age of 18 years as efficacy was not demonstrated in two short-term clinical trials" },
+        { "s": "emc-100724", "q": "If, based on clinical need, a decision to treat is nevertheless taken, the patient should be carefully monitored for the appearance of suicidal symptoms." }
+      ] },
+    { "id": "mirtazapine:age:elderly", "kind": "age", "level": "caution", "med": "mirtazapine", "age": { "minYears": 65 },
+      "concern": "Elderly (the SmPC says \"elderly\"; 65 years used as the trigger)", "consequence": "Elderly are often more sensitive to antidepressant side effects; fatal agranulocytosis cases mostly occurred above 65 years; hyponatraemia risk.", "action": "Same dose as adults, but increase the dose only under close supervision.", "sourceWording": "an increase in dosing should be done under close supervision",
+      "src": [
+        { "s": "emc-100724", "q": "In elderly patients an increase in dosing should be done under close supervision to elicit a satisfactory and safe response." },
+        { "s": "emc-100724", "q": "Fatal cases mostly concerned patients with an age above 65." }
+      ] },
+    { "id": "mirtazapine:renal:lt40", "kind": "renal", "level": "caution", "med": "mirtazapine", "renal": { "measure": "CrCl", "max": 40, "maxInclusive": false },
+      "concern": "Moderate to severe renal impairment (CrCl <40 ml/min)", "consequence": "Clearance reduced about 30% (CrCl <40) to 50% (CrCl ≤10 ml/min); plasma levels about 55% to 115% higher.", "action": "Take into account when prescribing; careful dosing and regular close monitoring.", "sourceWording": "This should be taken into account when prescribing",
+      "src": [
+        { "s": "emc-100724", "q": "The clearance of mirtazapine may be decreased in patients with moderate to severe renal impairment (creatinine clearance <40 ml/min). This should be taken into account when prescribing Mirtazapine to this category of patients" },
+        { "s": "emc-100724", "q": "Careful dosing as well as regular and close monitoring is necessary in patients with:" }
+      ] },
+    { "id": "mirtazapine:hepatic:any", "kind": "hepatic", "level": "caution", "med": "mirtazapine", "hepatic": ["mild", "moderate", "severe"],
+      "concern": "Hepatic impairment", "consequence": "Clearance about 35% lower in mild to moderate impairment (levels about 55% higher); severe impairment not studied.", "action": "Take into account when prescribing, particularly in severe impairment; careful dosing and close monitoring.", "sourceWording": "This should be taken into account when prescribing",
+      "src": [
+        { "s": "emc-100724", "q": "This should be taken into account when prescribing Mirtazapine to this category of patients, particularly with severe hepatic impairment, as patients with severe hepatic impairment have not been investigated" },
+        { "s": "emc-100724", "q": "the clearance of mirtazapine was approximately 35 % decreased in mild to moderate hepatically impaired patients" }
+      ] },
+    { "id": "mirtazapine:condition:epilepsy", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "epilepsy", "effect": "seizure-threshold",
+      "concern": "History of seizures / epilepsy", "consequence": "Seizures may occur.", "action": "Introduce cautiously with careful dosing and monitoring; stop if seizures develop or become more frequent.", "sourceWording": "should be introduced cautiously",
+      "src": [
+        { "s": "emc-100724", "q": "Mirtazapine should be introduced cautiously in patients who have a history of seizures." },
+        { "s": "emc-100724", "q": "Treatment should be discontinued in any patient who develops seizures, or where there is an increase in seizure frequency." }
+      ] },
+    { "id": "mirtazapine:condition:conduction", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "cardiac-conduction-disturbance",
+      "concern": "Cardiac conduction disturbance", "consequence": "Cardiac risk.", "action": "Careful dosing and close monitoring; normal precautions; give other medicines carefully.", "sourceWording": "Careful dosing as well as regular and close monitoring is necessary",
+      "src": [{ "s": "emc-100724", "q": "cardiac diseases like conduction disturbances, angina pectoris and recent myocardial infarction, where normal precautions should be taken and concomitant medicines carefully administered" }] },
+    { "id": "mirtazapine:condition:angina", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "ischaemic-heart-disease",
+      "concern": "Angina pectoris", "consequence": "Cardiac risk.", "action": "Careful dosing and close monitoring; normal precautions.", "sourceWording": "Careful dosing as well as regular and close monitoring is necessary",
+      "src": [{ "s": "emc-100724", "q": "cardiac diseases like conduction disturbances, angina pectoris and recent myocardial infarction, where normal precautions should be taken and concomitant medicines carefully administered" }] },
+    { "id": "mirtazapine:condition:recent-mi", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "recent-myocardial-infarction",
+      "concern": "Recent myocardial infarction", "consequence": "Cardiac risk.", "action": "Careful dosing and close monitoring; normal precautions.", "sourceWording": "Careful dosing as well as regular and close monitoring is necessary",
+      "src": [{ "s": "emc-100724", "q": "cardiac diseases like conduction disturbances, angina pectoris and recent myocardial infarction, where normal precautions should be taken and concomitant medicines carefully administered" }] },
+    { "id": "mirtazapine:condition:qt", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "qt-prolongation", "effect": "qt-prolongation",
+      "concern": "Family history of QT prolongation / known cardiovascular disease", "consequence": "QT prolongation, torsade de pointes and sudden death reported post-marketing.", "action": "Caution.", "sourceWording": "Caution should be exercised",
+      "src": [{ "s": "emc-100724", "q": "Caution should be exercised when Mirtazapine is prescribed in patients with known cardiovascular disease or family history of QT prolongation" }] },
+    { "id": "mirtazapine:condition:hypotension", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "hypotension", "effect": "hypotension",
+      "concern": "Low blood pressure", "consequence": "Orthostatic hypotension can occur.", "action": "Careful dosing and close monitoring.", "sourceWording": "Careful dosing as well as regular and close monitoring is necessary",
+      "src": [
+        { "s": "emc-100724", "q": "Careful dosing as well as regular and close monitoring is necessary in patients with:" },
+        { "s": "emc-100724", "q": "low blood pressure" }
+      ] },
+    { "id": "mirtazapine:condition:diabetes", "kind": "condition", "level": "monitor", "med": "mirtazapine", "condition": "diabetes",
+      "concern": "Diabetes", "consequence": "Antidepressants may alter glycaemic control.", "action": "Close monitoring; insulin/oral hypoglycaemic dose may need adjustment.", "sourceWording": "close monitoring is recommended",
+      "src": [{ "s": "emc-100724", "q": "In patients with diabetes, antidepressants may alter glycaemic control. Insulin and/or oral hypoglycaemic dosage may need to be adjusted and close monitoring is recommended." }] },
+    { "id": "mirtazapine:condition:psychosis", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "psychosis-schizophrenia",
+      "concern": "Schizophrenia or other psychosis", "consequence": "Psychotic symptoms may worsen; paranoid thoughts can intensify.", "action": "Take into account (use with care).", "sourceWording": "Worsening of psychotic symptoms can occur",
+      "src": [{ "s": "emc-100724", "q": "Worsening of psychotic symptoms can occur when antidepressants are administered to patients with schizophrenia or other psychotic disturbances" }] },
+    { "id": "mirtazapine:condition:bipolar", "kind": "condition", "level": "monitor", "med": "mirtazapine", "condition": "bipolar-mania",
+      "concern": "History of mania/hypomania", "consequence": "Depressive phase may switch to mania.", "action": "Monitor closely; stop if a manic phase starts.", "sourceWording": "should be closely monitored",
+      "src": [{ "s": "emc-100724", "q": "Patients with a history of mania/hypomania should be closely monitored. Mirtazapine should be discontinued in any patient entering a manic phase." }] },
+    { "id": "mirtazapine:condition:prostate", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "prostatic-hypertrophy",
+      "concern": "Prostate hypertrophy / micturition disturbance", "consequence": "Urinary retention possible (very weak anticholinergic activity).", "action": "Care should be taken.", "sourceWording": "Care should be taken",
+      "src": [{ "s": "emc-100724", "q": "Care should be taken in patients with micturition disturbances like prostate hypertrophy" }] },
+    { "id": "mirtazapine:condition:urinary-retention", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "urinary-retention",
+      "concern": "Micturition disturbance", "consequence": "Urinary retention possible.", "action": "Care should be taken.", "sourceWording": "Care should be taken",
+      "src": [{ "s": "emc-100724", "q": "Care should be taken in patients with micturition disturbances like prostate hypertrophy" }] },
+    { "id": "mirtazapine:condition:glaucoma", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "angle-closure-glaucoma",
+      "concern": "Acute narrow-angle glaucoma or raised intraocular pressure", "consequence": "Little chance of problems (very weak anticholinergic activity), but care needed.", "action": "Care should be taken.", "sourceWording": "Care should be taken",
+      "src": [{ "s": "emc-100724", "q": "in patients with acute narrow-angle glaucoma and increased intra-ocular pressure" }] },
+    { "id": "mirtazapine:condition:suicidality", "kind": "condition", "level": "monitor", "med": "mirtazapine", "condition": "depression-suicidality",
+      "concern": "History of suicide-related events or significant suicidal ideation", "consequence": "Greater risk of suicidal thoughts or attempts (also higher under 25 years); overdose risk.", "action": "Careful monitoring; supply the smallest amount consistent with good care.", "sourceWording": "should receive careful monitoring during treatment",
+      "src": [
+        { "s": "emc-100724", "q": "are known to be at greater risk of suicidal thoughts or suicide attempts, and should receive careful monitoring during treatment" },
+        { "s": "emc-100724", "q": "onlythe smallest amount of Mirtazapine film-coated tablets should be given to the patient consistent with good patient management, in order to reduce the risk of overdose" }
+      ] },
+    { "id": "mirtazapine:condition:hyponatraemia", "kind": "condition", "level": "caution", "med": "mirtazapine", "condition": "hyponatraemia", "effect": "hyponatraemia",
+      "concern": "At risk of hyponatraemia", "consequence": "Hyponatraemia (SIADH) reported very rarely.", "action": "Caution in patients at risk.", "sourceWording": "Caution should be exercised in patients at risk",
+      "src": [{ "s": "emc-100724", "q": "Caution should be exercised in patients at risk, such as elderly patients or patients concomitantly treated with medications known to cause hyponatraemia." }] },
+    { "id": "mirtazapine:condition:lactose", "kind": "condition", "level": "avoid", "med": "mirtazapine", "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, lactase deficiency or glucose-galactose malabsorption", "consequence": "Tablets contain lactose.", "action": "Should not take this medicine.", "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-100724", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }] },
+    { "id": "mirtazapine:pregnancy:smpc", "kind": "pregnancy", "level": "caution", "med": "mirtazapine",
+      "concern": "Pregnancy (SmPC)", "consequence": "Limited data show no raised malformation risk; PPHN risk cannot be ruled out.", "action": "Caution when prescribing in pregnancy.", "sourceWording": "Caution should be exercised when prescribing to pregnant women",
+      "src": [
+        { "s": "emc-100724", "q": "Caution should be exercised when prescribing to pregnant women." },
+        { "s": "emc-100724", "q": "this potential risk cannot be ruled out taking into account the related mechanism of action" }
+      ] },
+    { "id": "mirtazapine:pregnancy:bumps", "kind": "pregnancy", "level": "info", "med": "mirtazapine",
+      "concern": "Pregnancy (BUMPS)", "consequence": "No evidence of effects on development, miscarriage or stillbirth.", "action": "BUMPS: can be used if recommended by a GP or specialist.", "sourceWording": "can be used in pregnancy if recommended by a GP or specialist",
+      "src": [
+        { "s": "bumps-mirtazapine", "q": "Mirtazapine can be used in pregnancy if recommended by a GP or specialist." },
+        { "s": "bumps-mirtazapine", "q": "There is no evidence that mirtazapine affects the baby's development or increases the chance of miscarriage or stillbirth." }
+      ] },
+    { "id": "mirtazapine:pregnancy:late", "kind": "pregnancy", "level": "monitor", "med": "mirtazapine", "trimesters": [3],
+      "concern": "Use until or shortly before birth", "consequence": "Possible neonatal discontinuation effects; rarely PPHN with similar drugs.", "action": "Postnatal monitoring of the newborn; hospital delivery usually advised (BUMPS).", "sourceWording": "postnatal monitoring of the newborn is recommended",
+      "src": [
+        { "s": "emc-100724", "q": "If Mirtazapine is used until, or shortly before birth, postnatal monitoring of the newborn is recommended to account for possible discontinuation effects." },
+        { "s": "bumps-mirtazapine", "q": "If you take mirtazapine in later pregnancy, you will usually be advised to have a hospital delivery." }
+      ] },
+    { "id": "mirtazapine:breastfeeding:smpc", "kind": "breastfeeding", "level": "caution", "med": "mirtazapine",
+      "concern": "Breastfeeding (SmPC)", "consequence": "Very small amounts in milk.", "action": "Decide on breastfeeding versus therapy, weighing benefits.", "sourceWording": "A decision on whether to continue/discontinue breast-feeding or to continue/discontinue therapy",
+      "src": [{ "s": "emc-100724", "q": "A decision on whether to continue/discontinue breast-feeding or to continue/discontinue therapy with Mirtazapine should be made" }] },
+    { "id": "mirtazapine:breastfeeding:sps", "kind": "breastfeeding", "level": "caution", "med": "mirtazapine",
+      "concern": "Breastfeeding (SPS)", "consequence": "Very small amounts in milk; long half-life.", "action": "SPS: use with caution (SSRIs or TCAs preferred); monitor infant for irritability, drowsiness, GI symptoms, feeding and weight gain.", "sourceWording": "can be used with caution during breastfeeding",
+      "src": [
+        { "s": "sps-certain-antidepressants-bf", "q": "Mirtazapine can be used with caution during breastfeeding, but SSRIs or TCAs are preferred." },
+        { "s": "sps-certain-antidepressants-bf", "q": "Monitor infants for irritability, drowsiness, gastrointestinal symptoms, changes in feeding or not waking to feed, and appropriate weight gain." }
+      ] },
+    { "id": "mirtazapine:interaction:serotonergic", "kind": "interaction", "level": "caution", "med": "mirtazapine", "other": "group:serotonergic", "effect": "serotonin-syndrome",
+      "concern": "Mirtazapine + serotonergic medicine (e.g. SSRIs, venlafaxine, tramadol, triptans, St John's wort)", "consequence": "Serotonin syndrome.", "action": "Caution and closer clinical monitoring; stop mirtazapine if serotonin syndrome occurs.", "sourceWording": "Caution should be advised and a closer clinical monitoring is required",
+      "src": [
+        { "s": "emc-100724", "q": "co-administration with other serotonergic active substances (L-tryptophan, triptans, tramadol, linezolid, methylene blue, SSRIs, venlafaxine, lithium and St. John's Wort - Hypericum perforatum - preparations)" },
+        { "s": "emc-100724", "q": "Caution should be advised and a closer clinical monitoring is required when these active substances are combined with mirtazapine." }
+      ] },
+    { "id": "mirtazapine:interaction:benzodiazepine", "kind": "interaction", "level": "caution", "med": "mirtazapine", "other": "group:benzodiazepine", "effect": "cns-respiratory-depression",
+      "concern": "Mirtazapine + benzodiazepine", "consequence": "Increased sedation.", "action": "Caution.", "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-100724", "q": "Mirtazapine may increase the sedating properties of benzodiazepines and other sedatives" },
+        { "s": "emc-100724", "q": "Caution should be exercised when these medicinal products are prescribed together with mirtazapine." }
+      ] },
+    { "id": "mirtazapine:interaction:sedating-antihistamine", "kind": "interaction", "level": "caution", "med": "mirtazapine", "other": "group:sedating-antihistamine", "effect": "cns-respiratory-depression",
+      "concern": "Mirtazapine + sedating H1 antihistamine", "consequence": "Increased sedation.", "action": "Caution.", "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-100724", "q": "Mirtazapine may increase the sedating properties of benzodiazepines and other sedatives (notably most antipsychotics, antihistamine H1 antagonists, opioids)." },
+        { "s": "emc-100724", "q": "Caution should be exercised when these medicinal products are prescribed together with mirtazapine." }
+      ] },
+    { "id": "mirtazapine:interaction:opioid", "kind": "interaction", "level": "caution", "med": "mirtazapine", "other": "group:opioid", "effect": "cns-respiratory-depression",
+      "concern": "Mirtazapine + opioid", "consequence": "Increased sedation (tramadol is also serotonergic).", "action": "Caution.", "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-100724", "q": "Mirtazapine may increase the sedating properties of benzodiazepines and other sedatives (notably most antipsychotics, antihistamine H1 antagonists, opioids)." },
+        { "s": "emc-100724", "q": "Caution should be exercised when these medicinal products are prescribed together with mirtazapine." }
+      ] },
+    { "id": "mirtazapine:interaction:cns-depressant", "kind": "interaction", "level": "caution", "med": "mirtazapine", "other": "group:cns-depressant", "effect": "cns-respiratory-depression",
+      "concern": "Mirtazapine + other sedative", "consequence": "Increased sedation.", "action": "Caution.", "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-100724", "q": "Mirtazapine may increase the sedating properties of benzodiazepines and other sedatives" },
+        { "s": "emc-100724", "q": "Caution should be exercised when these medicinal products are prescribed together with mirtazapine." }
+      ] },
+    { "id": "mirtazapine:interaction:warfarin", "kind": "interaction", "level": "monitor", "med": "mirtazapine", "other": "warfarin", "effect": "bleeding",
+      "concern": "Mirtazapine + warfarin", "consequence": "Small rise in INR at 30 mg daily; larger effect possible at higher doses.", "action": "Monitor INR.", "sourceWording": "it is advisable to monitor the INR",
+      "src": [
+        { "s": "emc-100724", "q": "Mirtazapine dosed at 30 mg once daily caused a small but statistically significant increase in the international normalized ratio (INR) in subjects treated with warfarin." },
+        { "s": "emc-100724", "q": "it is advisable to monitor the INR in case of concomitant treatment of warfarin with mirtazapine" }
+      ] },
+    { "id": "mirtazapine:interaction:qt", "kind": "interaction", "level": "caution", "med": "mirtazapine", "other": "group:qt-prolonging", "effect": "qt-prolongation",
+      "concern": "Mirtazapine + QT-prolonging medicine", "consequence": "Higher risk of QT prolongation and ventricular arrhythmias (torsade de pointes).", "action": "Caution.", "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-100724", "q": "The risk of QT prolongation and/or ventricular arrhythmias (e.g. Torsades de Pointes) may be increased with concomitant use of medicines which prolong the QTc interval" },
+        { "s": "emc-100724", "q": "and in concomitant use with other medicinal products thought to prolong the QTc interval" }
+      ] },
+    { "id": "mirtazapine:interaction:carbamazepine", "kind": "interaction", "level": "dose", "med": "mirtazapine", "other": "carbamazepine",
+      "concern": "Mirtazapine + carbamazepine (CYP3A4 inducer)", "consequence": "Mirtazapine clearance about doubled; levels about 60% lower.", "action": "Mirtazapine dose may need increasing; reduce again if carbamazepine is stopped.", "sourceWording": "the mirtazapine dose may have to be increased",
+      "src": [
+        { "s": "emc-100724", "q": "Carbamazepine and phenytoin, CYP3A4 inducers, increased mirtazapine clearance about twofold" },
+        { "s": "emc-100724", "q": "When carbamazepine or any other inducer of hepatic metabolism (such as rifampicin) is added to mirtazapine therapy, the mirtazapine dose may have to be increased." }
+      ] },
+    { "id": "mirtazapine:interaction:strong-cyp3a4", "kind": "interaction", "level": "dose", "med": "mirtazapine", "other": "group:strong-cyp3a4-inhibitor",
+      "concern": "Mirtazapine + potent CYP3A4 inhibitor", "consequence": "Higher mirtazapine levels (ketoconazole: AUC up about 50%).", "action": "Caution; the mirtazapine dose may need decreasing.", "sourceWording": "Caution should be exercised and the dose may have to be decreased",
+      "src": [{ "s": "emc-100724", "q": "Caution should be exercised and the dose may have to be decreased when co-administering mirtazapine with potent CYP3A4 inhibitors, HIV protease inhibitors, azole antifungals, erythromycin, cimetidine or nefazodone." }] },
+    { "id": "mirtazapine:interaction:azole", "kind": "interaction", "level": "dose", "med": "mirtazapine", "other": "group:azole-antifungal",
+      "concern": "Mirtazapine + azole antifungal", "consequence": "Higher mirtazapine levels.", "action": "Caution; the mirtazapine dose may need decreasing.", "sourceWording": "Caution should be exercised and the dose may have to be decreased",
+      "src": [{ "s": "emc-100724", "q": "Caution should be exercised and the dose may have to be decreased when co-administering mirtazapine with potent CYP3A4 inhibitors, HIV protease inhibitors, azole antifungals, erythromycin, cimetidine or nefazodone." }] }
+  ]
+}

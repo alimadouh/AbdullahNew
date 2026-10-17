@@ -1,0 +1,1101 @@
+{
+  "id": "salbutamol",
+  "name": "Salbutamol (inhaler)",
+  "ingredients": [
+    "salbutamol"
+  ],
+  "className": "Short-acting selective beta2 agonist (SABA)",
+  "groups": [
+    "beta2-agonist"
+  ],
+  "searchTerms": [
+    "salbutamol sulfate",
+    "albuterol"
+  ],
+  "availability": {
+    "status": "uk"
+  },
+  "formulations": [
+    {
+      "id": "salbutamol-pmdi-100",
+      "label": "Pressurised metered-dose inhaler 100 micrograms per puff",
+      "route": "inhalation",
+      "strengths": "100 micrograms salbutamol per actuation (200 actuations)",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Ventolin Evohaler is a pressurised metered-dose inhaler delivering 100 micrograms of salbutamol (as Salbutamol Sulfate BP) per actuation."
+        }
+      ],
+      "sourceIds": [
+        "emc-850"
+      ]
+    },
+    {
+      "id": "salbutamol-neb-5mg-ml",
+      "label": "Nebuliser solution 5 mg/ml",
+      "route": "inhalation (nebulised)",
+      "strengths": "5 mg/ml salbutamol",
+      "release": "n/a",
+      "note": "For inhalation through a nebuliser only; must not be injected or swallowed.",
+      "src": [
+        {
+          "s": "emc-852",
+          "q": "providing 5 mg/ml of salbutamol (as Salbutamol Sulfate BP)"
+        },
+        {
+          "s": "emc-852",
+          "q": "must not be injected or swallowed"
+        }
+      ],
+      "sourceIds": [
+        "emc-852"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Inhaler: short-acting (4-6 hours) relief and prevention of bronchospasm in reversible airways obstruction (e.g. before exercise or allergen exposure); adults, adolescents and children 4-11 years (under 4: see dosing). In asthma, should not be the main or only treatment; prescribe with an inhaled corticosteroid.",
+          "tag": "Inhaler",
+          "formulations": [
+            "salbutamol-pmdi-100"
+          ],
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Ventolin Evohaler provides short-acting (4 to 6 hour) bronchodilation with fast onset (within 5 minutes) in reversible airways obstruction."
+            },
+            {
+              "s": "emc-850",
+              "q": "In asthma, short acting beta-2 agonists including Salbutamol Evohaler should not be the main or only treatment. It is recommended that short acting beta-2 agonists should be prescribed with concomitant inhaled corticosteroid (anti-inflammatory)."
+            }
+          ]
+        },
+        {
+          "t": "Nebuliser solution: chronic bronchospasm unresponsive to conventional therapy, and acute severe asthma.",
+          "tag": "Nebuliser",
+          "formulations": [
+            "salbutamol-neb-5mg-ml"
+          ],
+          "src": [
+            {
+              "s": "emc-852",
+              "q": "Ventolin Respirator Solution is indicated for use in the routine management of chronic bronchospasm unresponsive to conventional therapy, and in the treatment of acute severe asthma."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA and NICE: do not prescribe a SABA to anyone with asthma (any age) without an inhaled corticosteroid. Review if as-needed SABA is used more than twice a week; urgently review rising SABA prescriptions or uncollected preventers. For poorly controlled asthma over 12 years, AIR or MART are recommended alternatives.",
+          "tag": "SABA without ICS (MHRA/NICE)",
+          "src": [
+            {
+              "s": "mhra-dsu-saba-overuse-2025",
+              "q": "do not prescribe SABA to people of any age with asthma without a concomitant prescription of an inhaled corticosteroid"
+            },
+            {
+              "s": "nice-ng245",
+              "q": "Do not prescribe short-acting beta2 agonists to people of any age with asthma without a concomitant prescription of an ICS."
+            },
+            {
+              "s": "mhra-dsu-saba-overuse-2025",
+              "q": "review and adjust asthma treatment in patients who take more than twice weekly"
+            },
+            {
+              "s": "mhra-dsu-saba-overuse-2025",
+              "q": "anti-inflammatory reliever (AIR) therapy and maintenance and reliever therapy (MART) are recommended alternatives for people over 12 years of age with poorly controlled asthma"
+            }
+          ]
+        },
+        {
+          "t": "Nebuliser in children and adolescents: only specialists should start and manage home nebulised rescue treatment for acute asthma; buying a nebuliser privately for this is not recommended.",
+          "tag": "Home nebulisers (MHRA)",
+          "formulations": [
+            "salbutamol-neb-5mg-ml"
+          ],
+          "src": [
+            {
+              "s": "emc-852",
+              "q": "Only specialists in respiratory medicine should initiate and clinically manage use of nebulisers and associated nebulised medicines at home for acute treatment of asthma in children and adolescents."
+            },
+            {
+              "s": "mhra-dsu-nebulisers-children-2022",
+              "q": "independent purchase of nebuliser devices outside of medical advice for use at home to deliver rescue therapy for the acute treatment of asthma in children and adolescents is not recommended"
+            }
+          ]
+        },
+        {
+          "t": "SPS: generic prescribing of inhalers can lead to an unfamiliar device, which could affect use and adherence (no specific brand instruction for salbutamol). NICE: if possible use the same device type for preventer and reliever.",
+          "tag": "Device",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-brand-examples",
+              "q": "Generic prescribing of inhalers can lead to people being given an unfamiliar device which could affect usage and adherence."
+            },
+            {
+              "s": "nice-ng245",
+              "q": "If possible, prescribe the same type of device to deliver preventer and reliever treatments where more than one inhaler is needed."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Inhaler, adults: acute symptoms 100 micrograms (1 puff), up to 2 puffs; before exercise/allergen 2 puffs 10-15 minutes before; chronic therapy up to 2 puffs four times a day. On-demand use should not exceed 8 puffs in 24 hours; frequent or increasing need means poorly controlled asthma.",
+          "tag": "Inhaler: adults",
+          "formulations": [
+            "salbutamol-pmdi-100"
+          ],
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "For the relief of acute asthma symptoms including bronchospasm, one inhalation (100 micrograms) may be administered as a single minimum starting dose. This may be increased to two inhalations if necessary."
+            },
+            {
+              "s": "emc-850",
+              "q": "To prevent allergen- or exercise-induced symptoms, two inhalations should be taken 10-15 minutes before challenge."
+            },
+            {
+              "s": "emc-850",
+              "q": "For chronic therapy, two inhalations up to four times a day."
+            },
+            {
+              "s": "emc-850",
+              "q": "On-demand use of Ventolin Evohaler should not exceed 8 inhalations in any 24 hours."
+            }
+          ]
+        },
+        {
+          "t": "Nebuliser, adults (intermittent): 2.5 mg (0.5 ml) diluted to 2 ml with sterile normal saline, may increase to 5 mg (1 ml) diluted to 2.5 ml; can be used undiluted; some adults need up to 10 mg. Continuous: diluted to 50-100 micrograms/ml, usually 1-2 mg per hour.",
+          "tag": "Nebuliser: adults",
+          "formulations": [
+            "salbutamol-neb-5mg-ml"
+          ],
+          "src": [
+            {
+              "s": "emc-852",
+              "q": "Ventolin Respirator solution 0.5 ml (2.5 mg of salbutamol) should be diluted to a final volume of 2 ml with sterile normal saline. This may be increased to 1 ml (5 mg of salbutamol) diluted to a final volume of 2.5 ml."
+            },
+            {
+              "s": "emc-852",
+              "q": "Some adult patients may require higher doses of salbutamol up to 10 mg"
+            },
+            {
+              "s": "emc-852",
+              "q": "The usual rate of administration is 1-2 mg per hour."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Inhaler, under 12 years: acute 1 puff (100 micrograms), up to 2; prevention 1 puff before challenge, up to 2; chronic up to 2 puffs four times daily. 12 years and over: adult dose. A spacer can help under 5 years.",
+          "formulations": [
+            "salbutamol-pmdi-100"
+          ],
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "The usual dosage for children under the age of 12 years: one inhalation (100 micrograms). The dose may be increased to two inhalations if required."
+            },
+            {
+              "s": "emc-850",
+              "q": "The usual dosage for children under the age of 12 years: up to two inhalations 4 times daily."
+            },
+            {
+              "s": "emc-850",
+              "q": "spacer device may be used to facilitate administration to children under 5 years of age"
+            }
+          ]
+        },
+        {
+          "t": "Nebuliser, under 12 years: start 2.5 mg diluted to 2-2.5 ml with sterile normal saline; some children over 18 months need up to 5 mg; may repeat up to four times daily. Under 18 months efficacy uncertain (consider oxygen). Home nebuliser use for acute asthma in children only under specialist management.",
+          "formulations": [
+            "salbutamol-neb-5mg-ml"
+          ],
+          "src": [
+            {
+              "s": "emc-852",
+              "q": "The minimum starting dosage for children under the age of 12 years is 0.5 ml (2.5 mg of salbutamol) diluted to 2 to 2.5 ml with sterile normal saline."
+            },
+            {
+              "s": "emc-852",
+              "q": "Some children (over the age of 18 months) may, however, require higher doses of salbutamol up to 5 mg."
+            },
+            {
+              "s": "emc-852",
+              "q": "Intermittent treatment may be repeated up to four times daily."
+            },
+            {
+              "s": "emc-852",
+              "q": "In infants under 18 months the clinical efficacy of nebulised salbutamol is uncertain."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to salbutamol or an excipient. Inhaled and nebulised (non-IV) salbutamol must not be used to stop uncomplicated premature labour or threatened abortion.",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Hypersensitivity to the active substance or any of the excipients listed in section 6.1."
+            },
+            {
+              "s": "emc-850",
+              "q": "Non-i.v. formulations of salbutamol must not be used to arrest uncomplicated premature labour or threatened abortion."
+            },
+            {
+              "s": "emc-852",
+              "q": "Non-IV formulations of salbutamol must not be used to arrest uncomplicated premature labour or threatened abortion."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Bronchodilators should not be the only or main treatment in severe or unstable asthma. Overuse of SABA can mask disease progression and increases the risk of severe exacerbations and death. Re-evaluate patients using as-needed salbutamol more than twice a week.",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Bronchodilators should not be the only or main treatment in patients with severe or unstable asthma."
+            },
+            {
+              "s": "emc-850",
+              "q": "Overuse of short-acting beta-agonists may mask the progression of the underlying disease and contribute to deteriorating asthma control, leading to an increased risk of severe asthma exacerbations and mortality."
+            },
+            {
+              "s": "emc-850",
+              "q": "not counting prophylactic use prior to exercise, should be re-evaluated"
+            }
+          ]
+        },
+        {
+          "t": "Severe heart disease (ischaemic heart disease, arrhythmia, severe heart failure): warn to seek advice for chest pain or worsening heart symptoms (rare myocardial ischaemia reported). Caution in thyrotoxicosis and diabetes.",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Patients with underlying severe heart disease (e.g. ischaemic heart disease, arrhythmia or severe heart failure) who are receiving salbutamol should be warned to seek medical advice if they experience chest pain or other symptoms of worsening heart disease."
+            },
+            {
+              "s": "emc-850",
+              "q": "Salbutamol should be administered cautiously to patients with thyrotoxicosis."
+            },
+            {
+              "s": "emc-850",
+              "q": "Caution is advised when administering this product to patients with a history of diabetes mellitus or hyperglycaemia."
+            }
+          ]
+        },
+        {
+          "t": "Serious hypokalaemia can occur, mainly with nebulised or parenteral use; particular caution in acute severe asthma (hypoxia, xanthines, steroids, diuretics); monitor serum potassium.",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Potentially serious hypokalaemia may result from beta-2-agonist therapy, mainly from parenteral and nebulised administration."
+            },
+            {
+              "s": "emc-850",
+              "q": "Serum potassium levels should be monitored in such situations."
+            }
+          ]
+        },
+        {
+          "t": "Nebuliser: lactic acidosis with high-dose nebulised SABA in acute asthma (may be mistaken for treatment failure; monitor lactate); ketoacidosis in diabetes; angle-closure glaucoma with nebulised ipratropium (keep mist out of the eyes); benzalkonium chloride may cause bronchospasm.",
+          "formulations": [
+            "salbutamol-neb-5mg-ml"
+          ],
+          "src": [
+            {
+              "s": "emc-852",
+              "q": "Lactic acidosis has been reported in association with high therapeutic doses of intravenous and nebulised short-acting beta-agonist therapy"
+            },
+            {
+              "s": "emc-852",
+              "q": "It is therefore recommended that patients are monitored for the development of elevated serum lactate and consequent metabolic acidosis in this setting."
+            },
+            {
+              "s": "emc-852",
+              "q": "A combination of nebulised salbutamol with nebulised anticholinergics should therefore be used cautiously."
+            },
+            {
+              "s": "emc-852",
+              "q": "Benzalkonium chloride may cause bronchospasm, especially in patients with asthma."
+            }
+          ]
+        },
+        {
+          "t": "Inhaler holds 200 puffs; after that it may spray propellant without medicine. Keep a count of puffs used and consider a spare inhaler.",
+          "formulations": [
+            "salbutamol-pmdi-100"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "The inhaler contains enough salbutamol for a total of 200 actuations (puffs) only."
+            },
+            {
+              "s": "emc-850",
+              "q": "To avoid inadvertent use of an empty inhaler, maintaining a record of the number of actuations (puffs) administered to the patient should be considered."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Non-selective beta-blockers such as propranolol: should not usually be prescribed together.",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Salbutamol and non-selective β-blocking drugs such as propranolol, should not usually be prescribed together."
+            },
+            {
+              "s": "emc-852",
+              "q": "Should not normally be prescribed with non-selective β-blocking drugs such as propranolol."
+            }
+          ]
+        },
+        {
+          "t": "Xanthines, steroids and diuretics may potentiate hypokalaemia (acute severe asthma): monitor potassium. Nebuliser: corticosteroids can worsen hyperglycaemia/ketoacidosis in diabetes; caution with nebulised anticholinergics (ipratropium) and with large doses of other sympathomimetics.",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Particular caution is advised in acute severe asthma as this effect may be potentiated by hypoxia and by concomitant treatment with xanthine derivatives, steroids and diuretics."
+            },
+            {
+              "s": "emc-852",
+              "q": "Concurrent administration of corticosteroids can exaggerate this effect."
+            },
+            {
+              "s": "emc-852",
+              "q": "Ventolin Respirator Solution should be used with care in patients known to have received large doses of other sympathomimetic drugs."
+            }
+          ]
+        },
+        {
+          "t": "SPS (QT): beta-2 agonist inhalers alone pose a low risk of clinically significant QT prolongation and a low likelihood of significant interaction with other QT-prolonging medicines; monitor ECG and potassium with high-dose, nebulised, prolonged treatment in people with risk factors or other QT/potassium-lowering medicines.",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-qt-commonly-used",
+              "q": "When used alone and in the absence of other risk factors, beta agonist inhalers pose a low risk of clinically significant QT interval prolongation."
+            },
+            {
+              "s": "sps-qt-commonly-used",
+              "q": "The likelihood of a clinically significant interaction with other medicines known to prolong QT interval is considered low."
+            },
+            {
+              "s": "sps-qt-commonly-used",
+              "q": "Monitor ECG and potassium before and during high-dose, nebulised, prolonged regular treatment in people with non-modifiable patient risk factors or concurrent medicines known to prolong QT interval or lower potassium."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "status": "not-stated",
+      "note": "No renal dose advice in the inhaler or nebuliser SmPCs (sections 4.2 and 4.4 checked). BNF not accessed."
+    },
+    "hepatic": {
+      "status": "not-stated",
+      "note": "No hepatic dose advice in the inhaler or nebuliser SmPCs (sections 4.2 and 4.4 checked). BNF not accessed."
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Inhaler SmPC: safety not established; rare reports of congenital anomalies (mothers often on several medicines). Should not be used in pregnancy unless clearly necessary.",
+          "tag": "SmPC (inhaler)",
+          "formulations": [
+            "salbutamol-pmdi-100"
+          ],
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Ventolin Evohaler should not be used during pregnancy unless clearly necessary."
+            }
+          ]
+        },
+        {
+          "t": "Nebuliser SmPC: consider only if expected benefit to the mother outweighs any possible risk to the foetus.",
+          "tag": "SmPC (nebuliser)",
+          "formulations": [
+            "salbutamol-neb-5mg-ml"
+          ],
+          "src": [
+            {
+              "s": "emc-852",
+              "q": "Administration of drugs during pregnancy should only be considered if the expected benefit to the mother is greater than any possible risk to the foetus."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: inhaled salbutamol stays mainly in the lungs; very little reaches the baby and no harm has been shown. Continue asthma medicines in pregnancy; no extra scans needed unless asthma is severe.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-salbutamol",
+              "q": "Salbutamol from an inhaler stays mainly in the lungs. Very little salbutamol reaches the baby and it has not been shown to cause harm."
+            },
+            {
+              "s": "bumps-salbutamol",
+              "q": "Asthma medicines like salbutamol should be continued in pregnancy"
+            },
+            {
+              "s": "bumps-salbutamol",
+              "q": "Women using salbutamol in pregnancy do not need any additional scans unless their asthma is severe."
+            }
+          ]
+        },
+        {
+          "t": "Not for stopping premature labour or threatened abortion (contraindicated for non-IV forms).",
+          "tag": "Labour",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Non-i.v. formulations of salbutamol must not be used to arrest uncomplicated premature labour or threatened abortion."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Probably passes into breast milk; effect on the neonate unknown. Use only where expected benefit to the mother outweighs any potential risk to the neonate. (No SPS breastfeeding page found for salbutamol.)",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "As salbutamol is probably secreted in breast milk, its use in nursing mothers requires careful consideration."
+            },
+            {
+              "s": "emc-850",
+              "q": "its use should be restricted to situations where it is felt that the expected benefit to the mother is likely to outweigh any potential risk to the neonate"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No information on human fertility; no effect in animals.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "There is no information on the effects of salbutamol on human fertility."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: tremor, headache, tachycardia. Uncommon: palpitations, mouth and throat irritation, muscle cramps. (Both SmPCs list the same effects; frequencies are quoted from the nebuliser SmPC table because the inhaler table text is jumbled.)",
+          "tag": "Inhaler and nebuliser",
+          "src": [
+            {
+              "s": "emc-852",
+              "q": "Nervous system disorders Common: Tremor, headache."
+            },
+            {
+              "s": "emc-852",
+              "q": "Cardiac disorders Common: Tachycardia. Uncommon: Palpitations"
+            },
+            {
+              "s": "emc-852",
+              "q": "Gastrointestinal disorders Uncommon: Mouth and throat irritation."
+            },
+            {
+              "s": "emc-852",
+              "q": "Musculoskeletal and connective tissue disorders Uncommon: Muscle cramps."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Paradoxical bronchospasm (wheeze straight after a dose): treat at once with a different fast-acting bronchodilator; stop this product and assess.",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "This should be treated immediately with an alternative presentation or a different fast-acting inhaled bronchodilator."
+            },
+            {
+              "s": "emc-850",
+              "q": "Evohaler should be discontinued immediately, the patient assessed, and if necessary, a different fast-acting bronchodilator instituted for on-going use."
+            }
+          ]
+        },
+        {
+          "t": "Very rare hypersensitivity (angioedema, urticaria, bronchospasm, hypotension, collapse); myocardial ischaemia (frequency unknown): seek advice for chest pain. Nebuliser: lactic acidosis (unknown frequency).",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Very rare: Hypersensitivity reactions including angioedema, urticaria, bronchospasm, hypotension and collapse"
+            },
+            {
+              "s": "emc-850",
+              "q": "Myocardial ischaemia* (see section 4.4)"
+            },
+            {
+              "s": "emc-852",
+              "q": "Unknown: Lactic acidosis (see section 4.4)"
+            }
+          ]
+        },
+        {
+          "t": "If a previously effective dose no longer gives 3 hours of relief, seek medical advice promptly; failure to respond may need urgent treatment.",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "If a previously effective dose of inhaled salbutamol no longer provides relief for a duration of three hours following administration, the patient should be advised to promptly seek medical advice."
+            },
+            {
+              "s": "emc-850",
+              "q": "Failing to respond to treatment with salbutamol may signal a need for urgent medical advice or treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Review asthma treatment if as-needed SABA is used more than twice a week; urgently review rising SABA prescriptions or failure to collect preventer treatment (MHRA).",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "mhra-dsu-saba-overuse-2025",
+              "q": "review and adjust asthma treatment in patients who take more than twice weekly"
+            },
+            {
+              "s": "mhra-dsu-saba-overuse-2025",
+              "q": "urgently review patients where there has either been an increase in the number of prescriptions requested for SABA reliever inhalers or a failure to collect prescribed anti-inflammatory maintenance treatment"
+            }
+          ]
+        },
+        {
+          "t": "Serum potassium in acute severe asthma; serum lactate with high-dose nebulised use in acute asthma.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Serum potassium levels should be monitored in such situations."
+            },
+            {
+              "s": "emc-852",
+              "q": "It is therefore recommended that patients are monitored for the development of elevated serum lactate and consequent metabolic acidosis in this setting."
+            }
+          ]
+        },
+        {
+          "t": "Stop at once if paradoxical bronchospasm.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-852",
+              "q": "Ventolin Respirator Solution should be discontinued immediately, the patient assessed, and if necessary a different fast-acting bronchodilator instituted for on-going use."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Inhaler: check technique so the puff is synchronised with breathing in; a spacer helps those who find this hard. A different taste from a previous inhaler is possible.",
+          "formulations": [
+            "salbutamol-pmdi-100"
+          ],
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "Patients inhaler technique should be checked to make sure that aerosol actuation is synchronised with inspiration of breath for optimum delivery of drug to the lungs."
+            },
+            {
+              "s": "emc-850",
+              "q": "Ventolin Evohaler may be used with a Volumatic spacer device by patients who find it difficult to synchronise aerosol actuation with inspiration of breath."
+            }
+          ]
+        },
+        {
+          "t": "Nebuliser: breathe in through the mouth via a suitable nebuliser under medical direction; dilute with sterile normal saline as directed; never inject or swallow; keep the mist out of the eyes.",
+          "formulations": [
+            "salbutamol-neb-5mg-ml"
+          ],
+          "src": [
+            {
+              "s": "emc-852",
+              "q": "is for inhalation use only, to be breathed in through the mouth, under the direction of a physician, using a suitable nebuliser"
+            },
+            {
+              "s": "emc-852",
+              "q": "Patients should receive adequate instruction in correct administration and be warned not to let the solution or mist enter the eye."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "MHRA advice for patients: if a blue reliever is prescribed, a separate preventer will also be prescribed for daily use; keep using the preventer even when well; seek urgent help if symptoms are not relieved; ask for a review if the reliever is needed more than twice a week; if there is no dose counter, track doses and keep a spare.",
+          "src": [
+            {
+              "s": "mhra-dsu-saba-overuse-2025",
+              "q": "a separate asthma preventer therapy will always be prescribed for regular daily use as well"
+            },
+            {
+              "s": "mhra-dsu-saba-overuse-2025",
+              "q": "seek urgent medical assistance if worsening asthma symptoms (for example, chest tightness, wheezing, coughing, or difficulty breathing) are not relieved"
+            },
+            {
+              "s": "mhra-dsu-saba-overuse-2025",
+              "q": "if the blue inhaler does not have a dose counter, manually track the doses used"
+            }
+          ]
+        },
+        {
+          "t": "Increase the dose or frequency only on medical advice.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-850",
+              "q": "The dosage or frequency of administration should only be increased on medical advice."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "salbutamol:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "salbutamol",
+      "allergen": [
+        "salbutamol"
+      ],
+      "concern": "Hypersensitivity to salbutamol",
+      "consequence": "Risk of hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Hypersensitivity to the active substance or any of the excipients listed in section 6.1."
+        },
+        {
+          "s": "emc-852",
+          "q": "Hypersensitivity to the active substance or any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:pregnancy:tocolysis",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "salbutamol",
+      "concern": "Pregnancy: use to stop uncomplicated premature labour or threatened abortion (not asthma use)",
+      "consequence": "Inhaled/nebulised (non-IV) salbutamol must not be used for this purpose.",
+      "action": "Do not use to stop premature labour or threatened abortion (asthma use in pregnancy is covered separately).",
+      "sourceWording": "must not be used",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Non-i.v. formulations of salbutamol must not be used to arrest uncomplicated premature labour or threatened abortion."
+        },
+        {
+          "s": "emc-852",
+          "q": "Non-IV formulations of salbutamol must not be used to arrest uncomplicated premature labour or threatened abortion."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:pregnancy:smpc-inhaler",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "salbutamol",
+      "formulations": [
+        "salbutamol-pmdi-100"
+      ],
+      "concern": "Pregnancy (inhaler SmPC)",
+      "consequence": "Safety not established; rare reports of congenital anomalies (mothers often on several medicines).",
+      "action": "Do not use unless clearly necessary.",
+      "sourceWording": "should not be used during pregnancy unless clearly necessary",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Ventolin Evohaler should not be used during pregnancy unless clearly necessary."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:pregnancy:smpc-neb",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "salbutamol",
+      "formulations": [
+        "salbutamol-neb-5mg-ml"
+      ],
+      "concern": "Pregnancy (nebuliser SmPC)",
+      "consequence": "Little evidence of safety in early pregnancy; harmful foetal effects in animals at very high doses.",
+      "action": "Consider only if expected benefit to the mother outweighs any possible risk to the foetus.",
+      "sourceWording": "should only be considered if the expected benefit",
+      "src": [
+        {
+          "s": "emc-852",
+          "q": "Administration of drugs during pregnancy should only be considered if the expected benefit to the mother is greater than any possible risk to the foetus."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "salbutamol",
+      "concern": "Pregnancy (BUMPS)",
+      "consequence": "BUMPS: inhaled salbutamol stays mainly in the lungs, very little reaches the baby, no harm shown; continue in pregnancy. This differs in strength from the SmPCs.",
+      "action": "Continue asthma treatment in pregnancy.",
+      "sourceWording": "should be continued in pregnancy",
+      "src": [
+        {
+          "s": "bumps-salbutamol",
+          "q": "Salbutamol from an inhaler stays mainly in the lungs. Very little salbutamol reaches the baby and it has not been shown to cause harm."
+        },
+        {
+          "s": "bumps-salbutamol",
+          "q": "Asthma medicines like salbutamol should be continued in pregnancy"
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "salbutamol",
+      "concern": "Breastfeeding",
+      "consequence": "Probably excreted in breast milk; effect on the neonate unknown.",
+      "action": "Use only where expected benefit to the mother outweighs any potential risk to the neonate.",
+      "sourceWording": "requires careful consideration",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "its use should be restricted to situations where it is felt that the expected benefit to the mother is likely to outweigh any potential risk to the neonate"
+        },
+        {
+          "s": "emc-852",
+          "q": "As salbutamol is probably secreted in breast milk, its use in nursing mothers requires careful consideration."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:condition:asthma-no-ics",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "salbutamol",
+      "condition": "asthma",
+      "concern": "Asthma: applies only if no inhaled corticosteroid (ICS) is co-prescribed",
+      "consequence": "A SABA should not be the main or only asthma treatment; SABA overuse is linked to severe asthma exacerbations and death.",
+      "action": "Check that an ICS-containing preventer is also prescribed. If it is not, do not prescribe the SABA alone (MHRA, NICE). No action needed if an ICS is co-prescribed.",
+      "sourceWording": "do not prescribe SABA",
+      "src": [
+        {
+          "s": "mhra-dsu-saba-overuse-2025",
+          "q": "do not prescribe SABA to people of any age with asthma without a concomitant prescription of an inhaled corticosteroid"
+        },
+        {
+          "s": "nice-ng245",
+          "q": "Do not prescribe short-acting beta2 agonists to people of any age with asthma without a concomitant prescription of an ICS."
+        },
+        {
+          "s": "emc-850",
+          "q": "In asthma, short acting beta-2 agonists including Salbutamol Evohaler should not be the main or only treatment."
+        },
+        {
+          "s": "emc-850",
+          "q": "leading to an increased risk of severe asthma exacerbations and mortality"
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:condition:thyrotoxicosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "salbutamol",
+      "condition": "thyrotoxicosis",
+      "concern": "Thyrotoxicosis",
+      "consequence": "Beta2 agonist effects may worsen thyrotoxicosis.",
+      "action": "Give cautiously.",
+      "sourceWording": "should be administered cautiously",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Salbutamol should be administered cautiously to patients with thyrotoxicosis."
+        },
+        {
+          "s": "emc-852",
+          "q": "Salbutamol should be administered cautiously to patients suffering from thyrotoxicosis."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "salbutamol",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus",
+      "consequence": "Salbutamol can raise blood glucose; with nebulised use, ketoacidosis has been reported (worse with corticosteroids).",
+      "action": "Use with caution.",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Caution is advised when administering this product to patients with a history of diabetes mellitus or hyperglycaemia."
+        },
+        {
+          "s": "emc-852",
+          "q": "Diabetic patients may be unable to compensate for the increase in blood glucose and the development of ketoacidosis has been reported."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "salbutamol",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Ischaemic heart disease",
+      "consequence": "Rare myocardial ischaemia reported with salbutamol; sympathomimetic cardiovascular effects.",
+      "action": "Warn the patient to seek medical advice if chest pain or worsening heart symptoms.",
+      "sourceWording": "should be warned to seek medical advice",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Patients with underlying severe heart disease (e.g. ischaemic heart disease, arrhythmia or severe heart failure) who are receiving salbutamol should be warned to seek medical advice if they experience chest pain or other symptoms of worsening heart disease."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:condition:cardiac-arrhythmia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "salbutamol",
+      "condition": "cardiac-arrhythmia",
+      "concern": "Arrhythmia",
+      "consequence": "Rare myocardial ischaemia reported with salbutamol; sympathomimetic cardiovascular effects.",
+      "action": "Warn the patient to seek medical advice if chest pain or worsening heart symptoms.",
+      "sourceWording": "should be warned to seek medical advice",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Patients with underlying severe heart disease (e.g. ischaemic heart disease, arrhythmia or severe heart failure) who are receiving salbutamol should be warned to seek medical advice if they experience chest pain or other symptoms of worsening heart disease."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "salbutamol",
+      "condition": "severe-heart-failure",
+      "concern": "Severe heart failure",
+      "consequence": "Rare myocardial ischaemia reported with salbutamol; sympathomimetic cardiovascular effects.",
+      "action": "Warn the patient to seek medical advice if chest pain or worsening heart symptoms.",
+      "sourceWording": "should be warned to seek medical advice",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Patients with underlying severe heart disease (e.g. ischaemic heart disease, arrhythmia or severe heart failure) who are receiving salbutamol should be warned to seek medical advice if they experience chest pain or other symptoms of worsening heart disease."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:interaction:propranolol",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "salbutamol",
+      "other": "propranolol",
+      "concern": "Non-selective beta-blocker (propranolol)",
+      "consequence": "Opposing effects; risk of bronchospasm.",
+      "action": "Should not usually be prescribed together.",
+      "sourceWording": "should not usually be prescribed together",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Salbutamol and non-selective β-blocking drugs such as propranolol, should not usually be prescribed together."
+        },
+        {
+          "s": "emc-852",
+          "q": "Should not normally be prescribed with non-selective β-blocking drugs such as propranolol."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "salbutamol",
+      "other": "group:corticosteroid",
+      "concern": "Corticosteroids (systemic)",
+      "consequence": "May potentiate beta2-agonist hypokalaemia (mainly with nebulised or parenteral salbutamol).",
+      "action": "Particular caution in acute severe asthma; monitor serum potassium.",
+      "sourceWording": "Particular caution is advised",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Particular caution is advised in acute severe asthma as this effect may be potentiated by hypoxia and by concomitant treatment with xanthine derivatives, steroids and diuretics."
+        },
+        {
+          "s": "emc-850",
+          "q": "Serum potassium levels should be monitored in such situations."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:interaction:diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "salbutamol",
+      "other": "group:diuretic",
+      "concern": "Diuretics",
+      "consequence": "May potentiate beta2-agonist hypokalaemia (mainly with nebulised or parenteral salbutamol).",
+      "action": "Particular caution in acute severe asthma; monitor serum potassium.",
+      "sourceWording": "Particular caution is advised",
+      "src": [
+        {
+          "s": "emc-850",
+          "q": "Particular caution is advised in acute severe asthma as this effect may be potentiated by hypoxia and by concomitant treatment with xanthine derivatives, steroids and diuretics."
+        },
+        {
+          "s": "emc-850",
+          "q": "Serum potassium levels should be monitored in such situations."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:interaction:ipratropium",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "salbutamol",
+      "formulations": [
+        "salbutamol-neb-5mg-ml"
+      ],
+      "other": "ipratropium",
+      "concern": "Nebulised ipratropium (anticholinergic)",
+      "consequence": "Acute angle-closure glaucoma reported with nebulised salbutamol plus ipratropium.",
+      "action": "Use cautiously; keep the solution or mist out of the eyes.",
+      "sourceWording": "should therefore be used cautiously",
+      "src": [
+        {
+          "s": "emc-852",
+          "q": "A small number of cases of acute angle-closure glaucoma have been reported in patients treated with a combination of nebulised salbutamol and ipratropium bromide."
+        },
+        {
+          "s": "emc-852",
+          "q": "A combination of nebulised salbutamol with nebulised anticholinergics should therefore be used cautiously."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "salbutamol",
+      "formulations": [
+        "salbutamol-neb-5mg-ml"
+      ],
+      "other": "group:sympathomimetic",
+      "concern": "Large doses of other sympathomimetics",
+      "consequence": "Additive sympathomimetic effects.",
+      "action": "Use with care.",
+      "sourceWording": "should be used with care",
+      "src": [
+        {
+          "s": "emc-852",
+          "q": "Ventolin Respirator Solution should be used with care in patients known to have received large doses of other sympathomimetic drugs."
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:age:neb-home-under-18",
+      "kind": "age",
+      "level": "caution",
+      "med": "salbutamol",
+      "formulations": [
+        "salbutamol-neb-5mg-ml"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "concern": "Child or adolescent: home nebuliser for acute asthma",
+      "consequence": "Unsupervised home nebuliser use can mask deterioration; fatal cases reported.",
+      "action": "Only respiratory/asthma specialists should start and manage home nebulised rescue treatment; private purchase of nebulisers for this is not recommended.",
+      "sourceWording": "should initiate and clinically manage",
+      "src": [
+        {
+          "s": "emc-852",
+          "q": "Only specialists in respiratory medicine should initiate and clinically manage use of nebulisers and associated nebulised medicines at home for acute treatment of asthma in children and adolescents."
+        },
+        {
+          "s": "mhra-dsu-nebulisers-children-2022",
+          "q": "only specialists in asthma should initiate and clinically manage use of nebulisers and associated nebulised medicines at home for acute treatment of asthma in children and adolescents"
+        }
+      ]
+    },
+    {
+      "id": "salbutamol:age:neb-under-18-months",
+      "kind": "age",
+      "level": "info",
+      "med": "salbutamol",
+      "formulations": [
+        "salbutamol-neb-5mg-ml"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 1.5
+      },
+      "concern": "Infant under 18 months (nebulised)",
+      "consequence": "Clinical efficacy uncertain; transient hypoxaemia may occur.",
+      "action": "Consider supplemental oxygen; other forms may suit children under 4.",
+      "sourceWording": "efficacy of nebulised salbutamol is uncertain",
+      "src": [
+        {
+          "s": "emc-852",
+          "q": "In infants under 18 months the clinical efficacy of nebulised salbutamol is uncertain. As transient hypoxaemia may occur supplemental oxygen therapy should be considered."
+        }
+      ]
+    }
+  ]
+}

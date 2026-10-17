@@ -1,0 +1,588 @@
+{
+  "id": "atenolol-chlortalidone",
+  "name": "Atenolol/chlortalidone",
+  "ingredients": ["atenolol", "chlortalidone"],
+  "className": "Beta1-selective beta-blocker with thiazide-like diuretic",
+  "groups": ["beta-blocker", "thiazide", "diuretic", "antihypertensive", "non-antibiotic-sulfonamide"],
+  "searchTerms": ["atenolol chlortalidone", "atenolol/chlorthalidone", "atenolol bendroflumethiazide"],
+  "formulations": [
+    {
+      "id": "atenolol-chlortalidone-100-25",
+      "label": "Film-coated tablets 100 mg/25 mg",
+      "route": "oral",
+      "strengths": "atenolol 100 mg / chlortalidone 25 mg",
+      "release": "immediate",
+      "note": "LABEL MISMATCH: the clinic list names this product as atenolol + bendroflumethiazide, but the UK product sold under the clinic's trade name contains atenolol + chlortalidone (a thiazide-like diuretic). No UK atenolol + bendroflumethiazide combination exists (emc and MHRA Products searched; the only UK bendroflumethiazide combination is with timolol). Everything shown here is for atenolol/chlortalidone. Confirm the pack contents with the clinic; if the clinic product really contains bendroflumethiazide, this information does not apply to it.",
+      "src": [{ "s": "emc-5497", "q": "Atenolol 100 mg Chlortalidone 25 mg" }],
+      "sourceIds": ["emc-5497"]
+    },
+    {
+      "id": "atenolol-chlortalidone-50-12-5",
+      "label": "Film-coated tablets 50 mg/12.5 mg",
+      "route": "oral",
+      "strengths": "atenolol 50 mg / chlortalidone 12.5 mg",
+      "release": "immediate",
+      "note": "Lower-strength UK atenolol/chlortalidone product (same warnings); its SmPC says it is particularly suited to older patients. The clinic list names atenolol + bendroflumethiazide; no UK atenolol + bendroflumethiazide product exists - confirm the pack contents with the clinic.",
+      "src": [
+        { "s": "emc-5498", "q": "Atenolol 50 mg Chlortalidone 12.5 mg" },
+        { "s": "emc-5498", "q": "The management of hypertension, particularly suited to older patients." }
+      ],
+      "sourceIds": ["emc-5498"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        { "t": "Management of hypertension (the 50 mg/12.5 mg strength: particularly suited to older patients).", "src": [
+          { "s": "emc-5497", "q": "4.1 Therapeutic indications Management of hypertension." },
+          { "s": "emc-5498", "q": "The management of hypertension, particularly suited to older patients." }
+        ] }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions stated in the UK SmPCs." },
+    "dosing": {
+      "items": [
+        { "t": "One tablet daily. Little or no further fall in blood pressure with higher doses; add another antihypertensive (e.g. a vasodilator) if needed.", "tag": "Hypertension (100 mg/25 mg)", "formulations": ["atenolol-chlortalidone-100-25"], "src": [
+          { "s": "emc-5497", "q": "Adults One tablet daily." },
+          { "s": "emc-5497", "q": "There is little or no further fall in blood pressure with increased dosage and, where necessary, another antihypertensive drug, such as a vasodilator, can be added." }
+        ] },
+        { "t": "One tablet daily (adults and elderly). If blood pressure is not controlled, a small dose of a third agent (e.g. a vasodilator) may be added.", "tag": "Hypertension (50 mg/12.5 mg)", "formulations": ["atenolol-chlortalidone-50-12-5"], "src": [
+          { "s": "emc-5498", "q": "Adults One tablet daily. Elderly One tablet daily." },
+          { "s": "emc-5498", "q": "Where hypertensive control is not achieved, addition of a small dose of a third agent e.g. as a vasodilator, may be appropriate." }
+        ] },
+        { "t": "Elderly: dose requirements are often lower; older patients not controlled on low-dose single-agent therapy should respond to one 50 mg/12.5 mg tablet daily.", "tag": "Elderly", "src": [
+          { "s": "emc-5497", "q": "Elderly Dosage requirements are often lower in this age group." },
+          { "s": "emc-5498", "q": "The elderly with hypertension who do not respond to low dose therapy with a single agent should have a satisfactory response to a single tablet daily of Tenoret." }
+        ] }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        { "t": "Not recommended in children; safety and efficacy not established.", "src": [{ "s": "emc-5497", "q": "The use of Tenoretic is not recommended in children. The safety and efficacy of Tenoretic in children has not yet been established." }] }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        { "t": "Hypersensitivity to atenolol, chlortalidone (or sulphonamide-derived medicines) or excipients; bradycardia; cardiogenic shock; hypotension; metabolic acidosis; severe peripheral arterial circulatory disturbances; second- or third-degree heart block; sick sinus syndrome; untreated phaeochromocytoma; severe renal failure; uncontrolled heart failure; pregnancy; lactation.", "src": [
+          { "s": "emc-5497", "q": "hypersensitivity to the active substances (or to sulphonamide derived medicinal products) or to any of the excipients listed in section 6.1" },
+          { "s": "emc-5497", "q": "- bradycardia; - cardiogenic shock; - hypotension; - metabolic acidosis; - severe peripheral arterial circulatory disturbances; - second- or third-degree heart block; - sick sinus syndrome; - untreated phaeochromocytoma; - severe renal failure; - uncontrolled heart failure." },
+          { "s": "emc-5497", "q": "Tenoretic tablets must not be given during pregnancy or lactation." }
+        ] }
+      ]
+    },
+    "cautions": {
+      "items": [
+        { "t": "Heart failure: may be used once signs are controlled; caution with poor cardiac reserve. Do not stop abruptly in ischaemic heart disease. First-degree heart block: caution. Prinzmetal's angina: utmost caution.", "tag": "Cardiac", "src": [
+          { "s": "emc-5497", "q": "may be used in patients whose signs of heart failure have been controlled. Caution must be exercised in patients whose cardiac reserve is poor." },
+          { "s": "emc-5497", "q": "should not be discontinued abruptly in patients suffering from ischaemic heart disease." },
+          { "s": "emc-5497", "q": "caution must be exercised if it is given to patients with first-degree heart block." }
+        ] },
+        { "t": "Bronchospastic disease (asthma): should in general not receive beta-blockers; if used, lowest dose with utmost caution; stop if airway resistance rises.", "tag": "Asthma", "src": [
+          { "s": "emc-5497", "q": "patients with bronchospastic disease should, in general, not receive beta-blockers due to increasing in airways resistance." },
+          { "s": "emc-5497", "q": "If increased airways resistance does occur, Tenoretic tablets should be discontinued and bronchodilator therapy (e.g. salbutamol) administered if necessary." }
+        ] },
+        { "t": "May mask hypoglycaemia warning signs (tachycardia, palpitations, sweating) and thyrotoxicosis signs; impaired glucose tolerance - monitor glycaemia closely early on.", "tag": "Diabetes / thyroid", "src": [
+          { "s": "emc-5497", "q": "may modify warning signs of hypoglycaemia as tachycardia, palpitation and sweating." },
+          { "s": "emc-5497", "q": "Close monitoring of glycaemia is recommended in the initial phase of therapy" }
+        ] },
+        { "t": "Electrolytes: hypokalaemia and hyponatraemia may occur; check electrolytes periodically, especially in the elderly, those on digitalis, on low-potassium diets or with GI complaints.", "tag": "Electrolytes", "src": [
+          { "s": "emc-5497", "q": "plasma electrolyte should be periodically determined in appropriate intervals to detect possible electrolyte imbalance especially hypokalaemia and hyponatraemia." }
+        ] },
+        { "t": "Phaeochromocytoma: give only after alpha-blockade. Anaesthesia: inform the anaesthetist. History of anaphylaxis: reactions may be more severe and less responsive to adrenaline.", "detail": true, "src": [
+          { "s": "emc-5497", "q": "in patients with phaeochromocytoma must be administered only after alfa-receptor blockade." },
+          { "s": "emc-5497", "q": "Such patients may be unresponsive to the usual doses of adrenaline used to treat the allergic reactions." }
+        ] },
+        { "t": "Impaired hepatic function or progressive liver disease: minor fluid/electrolyte changes may precipitate hepatic coma. Hyperuricaemia may occur. Choroidal effusion/acute angle-closure glaucoma: stop as rapidly as possible.", "detail": true, "src": [
+          { "s": "emc-5497", "q": "in patients with impaired hepatic function or progressive liver disease, minor alterations in fluid and electrolyte balance may precipitate hepatic coma." },
+          { "s": "emc-5497", "q": "The primary treatment is to discontinue drug intake as rapidly as possible." }
+        ] }
+      ]
+    },
+    "interactions": {
+      "items": [
+        { "t": "Verapamil or diltiazem: exaggerated negative effects (severe hypotension, bradycardia, cardiac failure), especially with impaired ventricular function or conduction problems; do not give either intravenously within 48 hours of stopping the other.", "tag": "Rate-limiting calcium-channel blockers", "src": [
+          { "s": "emc-5497", "q": "This may result in severe hypotension, bradycardia and cardiac failure." },
+          { "s": "emc-5497", "q": "Neither the beta-blocker nor the calcium channel blocker should be administered intravenously within 48 hours of discontinuing the other." }
+        ] },
+        { "t": "Dihydropyridines (e.g. nifedipine): more hypotension; cardiac failure possible with latent cardiac insufficiency.", "tag": "Dihydropyridines", "src": [{ "s": "emc-5497", "q": "Concomitant therapy with dihydropyridines e.g. nifedipine, may increase the risk of hypotension, and cardiac failure may occur in patients with latent cardiac insufficiency." }] },
+        { "t": "Insulin and oral antidiabetics: blood-sugar-lowering effects may be intensified (and hypoglycaemia warning signs masked).", "tag": "Antidiabetics", "src": [{ "s": "emc-5497", "q": "Concomitant use with insulin and oral antidiabetic drugs may lead to the intensification of the blood sugar lowering effects of these drugs." }] },
+        { "t": "NSAIDs (e.g. ibuprofen) may reduce the antihypertensive effect. Sympathomimetics (e.g. adrenaline) may counteract the beta-blocker.", "tag": "Other", "src": [
+          { "s": "emc-5497", "q": "Concomitant use of prostaglandin synthetase inhibiting drugs (e.g. ibuprofen, indometacin) may decrease the hypotensive effects of beta-blockers" },
+          { "s": "emc-5497", "q": "Concomitant use of sympathomimetic agents, e.g. adrenaline (epinephrine), may counteract the effect of beta-blockers." }
+        ] },
+        { "t": "Lithium: renal clearance reduced (dose adjustment may be needed). Clonidine: withdraw the beta-blocker several days before stopping clonidine. Digitalis, class I antiarrhythmics and amiodarone: conduction effects.", "tag": "Other", "detail": true, "src": [
+          { "s": "emc-5497", "q": "The chlortalidone component may reduce the renal clearance of lithium leading to increased serum concentrations." },
+          { "s": "emc-5497", "q": "If the two drugs are co-administered, the beta-blocker should be withdrawn several days before discontinuing clonidine." }
+        ] }
+      ]
+    },
+    "renal": {
+      "items": [
+        { "t": "Contraindicated in severe renal failure (no CrCl/eGFR threshold given). Reduced efficacy in renal insufficiency because of the chlortalidone component.", "src": [
+          { "s": "emc-5497", "q": "This fixed dose combination should thus not be administrated to patients with severe renal impairment" },
+          { "s": "emc-5497", "q": "Due to the properties of the chlortalidone component, Tenoretic tablets has reduced efficacy in the presence of renal insufficiency." }
+        ] }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        { "t": "Impaired hepatic function or progressive liver disease: minor fluid and electrolyte changes may precipitate hepatic coma.", "src": [{ "s": "emc-5497", "q": "in patients with impaired hepatic function or progressive liver disease, minor alterations in fluid and electrolyte balance may precipitate hepatic coma." }] }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        { "t": "SmPC: must not be given during pregnancy (section 4.3).", "tag": "SmPC", "src": [{ "s": "emc-5497", "q": "Pregnancy: Tenoretic tablets must not be given during pregnancy." }] },
+        { "t": "BUMPS (atenolol alone, not the combination): can be used in pregnancy if recommended by a doctor; may be linked with a smaller baby. BUMPS (diuretics in general): diuretics may reduce placental blood flow, and the baby will be monitored with extra growth scans. This differs from the combination SmPC, which says must not be given.", "tag": "BUMPS", "detail": true, "src": [
+          { "s": "bumps-atenolol", "q": "Atenolol can be used in pregnancy if recommended by a doctor." },
+          { "s": "bumps-atenolol", "q": "Women taking atenolol may be more likely to have a smaller baby." },
+          { "s": "bumps-diuretics", "q": "Diuretics may reduce blood flow to the placenta." },
+          { "s": "bumps-diuretics", "q": "Your baby will be monitored with extra growth scans." }
+        ] }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        { "t": "SmPC: must not be given during lactation (section 4.3).", "tag": "SmPC", "src": [{ "s": "emc-5497", "q": "Lactation: Tenoretic tablets must not be given during lactation." }] },
+        { "t": "SPS (atenolol alone): use with caution; labetalol, metoprolol or propranolol preferred. Risk of accumulation in neonates; monitor the infant for bradycardia and hypoglycaemia (drowsiness, lethargy, poor feeding).", "tag": "SPS (atenolol)", "detail": true, "src": [
+          { "s": "sps-beta-blockers-breastfeeding", "q": "It can be used with caution during breastfeeding, but labetalol, metoprolol, or propranolol are preferred if clinically appropriate." },
+          { "s": "sps-beta-blockers-breastfeeding", "q": "Monitor infants for signs of bradycardia or hypoglycaemia including drowsiness, lethargy, and poor feeding and inadequate weight gain." }
+        ] }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        { "t": "No fertility data available.", "detail": true, "src": [{ "s": "emc-5497", "q": "Fertility: No data on fertility available." }] }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        { "t": "Common: bradycardia, cold extremities, gastrointestinal disturbance (including nausea), fatigue; and, from chlortalidone, hyperuricaemia, hyponatraemia, hypokalaemia, impaired glucose tolerance.", "src": [
+          { "s": "emc-5497", "q": "Cardiac disorders Common Bradycardia" },
+          { "s": "emc-5497", "q": "Vascular disorders Common Cold extremities" },
+          { "s": "emc-5497", "q": "Common Related to chlortalidone: Hyperuricaemia, hyponatraemia, hypokalaemia, impaired glucose tolerance" }
+        ] }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        { "t": "Rare: worsening heart failure, precipitation of heart block, bronchospasm in asthma, purpura/thrombocytopenia/leucopenia, hepatic toxicity including intrahepatic cholestasis, pancreatitis. Not known: choroidal effusion, hypersensitivity reactions including angioedema and urticaria.", "src": [
+          { "s": "emc-5497", "q": "Rare Heart failure deterioration, precipitation of heart block" },
+          { "s": "emc-5497", "q": "Rare Bronchospasm may occur in patients with bronchial asthma or a history of asthmatic complaints" },
+          { "s": "emc-5497", "q": "Rare Purpura, thrombocytopenia, leucopenia (related to chlortalidone)" },
+          { "s": "emc-5497", "q": "Rare Hepatic toxicity including intrahepatic cholestasis, pancreatitis (related to chlortalidone)" },
+          { "s": "emc-5497", "q": "Not known Hypersensitivity reactions, including angioedema and urticaria" }
+        ] },
+        { "t": "Choroidal effusion, acute myopia and acute angle-closure glaucoma (sulfonamide-type reaction): sudden reduced vision or eye pain, usually within hours to weeks of starting. Stop the medicine as rapidly as possible; untreated angle-closure glaucoma can cause permanent vision loss.", "tag": "stop", "src": [
+          { "s": "emc-5497", "q": "Symptoms include acute onset of decreased visual acuity or ocular pain and typically occur within hours to weeks of drug initiation." },
+          { "s": "emc-5497", "q": "Untreated acute angle-closure glaucoma can lead to permanent vision loss." },
+          { "s": "emc-5497", "q": "The primary treatment is to discontinue drug intake as rapidly as possible." }
+        ] }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        { "t": "Plasma electrolytes periodically (hypokalaemia, hyponatraemia); blood glucose closely at the start in diabetes and periodic glucosuria tests in prolonged therapy.", "tag": "ongoing", "src": [
+          { "s": "emc-5497", "q": "plasma electrolyte should be periodically determined in appropriate intervals to detect possible electrolyte imbalance especially hypokalaemia and hyponatraemia." },
+          { "s": "emc-5497", "q": "in prolonged therapy test for glucosuria should be carried out at regular intervals." }
+        ] },
+        { "t": "Stop if airway resistance increases. If slow heart rate causes symptoms, the dose may be reduced. Consider stopping if wellbeing is adversely affected by adverse reactions.", "tag": "stop", "src": [
+          { "s": "emc-5497", "q": "In the rare instances when a treated patient develops symptoms which may be attributable to a slow heart rate, the dose may be reduced." },
+          { "s": "emc-5497", "q": "Discontinuance of Tenoretic tablets should be considered if, according to clinical judgement, the well-being of the patient is adversely affected by any of the above reactions." }
+        ] }
+      ]
+    },
+    "administration": {
+      "items": [
+        { "t": "Oral, once daily. The score line is not for breaking the tablet.", "src": [{ "s": "emc-5497", "q": "The score line is not intended for breaking the tablet." }] }
+      ]
+    },
+    "counselling": {
+      "items": [
+        { "t": "Do not stop suddenly (especially with heart disease). If you have ever had asthma or wheezing, check with your doctor before taking.", "src": [{ "s": "emc-5497", "q": "If you have ever had asthma or wheezing, do not take this medicine without first checking with your doctor" }] },
+        { "t": "Occasional dizziness or fatigue may affect driving.", "detail": true, "src": [{ "s": "emc-5497", "q": "it should be taken into account that occasionally dizziness or fatigue may occur." }] }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "atenolol-chlortalidone:allergy:self",
+      "kind": "allergy", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "allergen": ["atenolol", "atenolol-chlortalidone", "group:sulfonamide", "group:non-antibiotic-sulfonamide"],
+      "concern": "Hypersensitivity to atenolol, chlortalidone or sulphonamide-derived medicines",
+      "consequence": "Hypersensitivity reaction. (SPS: cross-reactivity between sulfonamide antibiotics and non-antibiotic sulfonamides is not expected.)",
+      "action": "SmPC: do not use.",
+      "sourceWording": "should not be used",
+      "src": [
+        { "s": "emc-5497", "q": "hypersensitivity to the active substances (or to sulphonamide derived medicinal products) or to any of the excipients listed in section 6.1" },
+        { "s": "sps-sulfonamide", "q": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected, including in people who had a life-threatening reaction to a sulfonamide." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:bradycardia",
+      "kind": "condition", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "condition": "bradycardia",
+      "concern": "Bradycardia",
+      "consequence": "Beta-blocker further slows heart rate.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [{ "s": "emc-5497", "q": "Tenoretic tablets should not be used in the following:" }, { "s": "emc-5497", "q": "- bradycardia; - cardiogenic shock; - hypotension;" }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:cardiogenic-shock",
+      "kind": "condition", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "condition": "cardiogenic-shock",
+      "concern": "Cardiogenic shock",
+      "consequence": "Negative inotropic effect.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [{ "s": "emc-5497", "q": "- bradycardia; - cardiogenic shock; - hypotension;" }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:hypotension",
+      "kind": "condition", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "condition": "hypotension", "effect": "hypotension",
+      "concern": "Hypotension",
+      "consequence": "Further fall in blood pressure.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [{ "s": "emc-5497", "q": "- bradycardia; - cardiogenic shock; - hypotension;" }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:metabolic-acidosis",
+      "kind": "condition", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "condition": "metabolic-acidosis",
+      "concern": "Metabolic acidosis",
+      "consequence": "Listed contraindication.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [{ "s": "emc-5497", "q": "- hypotension; - metabolic acidosis;" }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:pad",
+      "kind": "condition", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "condition": "peripheral-arterial-disease",
+      "concern": "Severe peripheral arterial circulatory disturbances",
+      "consequence": "Beta-blockade worsens peripheral circulation (less severe disease may also be aggravated).",
+      "action": "Do not use in severe disease; caution in less severe disease.",
+      "sourceWording": "should not be used",
+      "src": [
+        { "s": "emc-5497", "q": "- severe peripheral arterial circulatory disturbances;" },
+        { "s": "emc-5497", "q": "may also aggravate less severe peripheral arterial circulatory disturbances." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:av-block",
+      "kind": "condition", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "condition": "av-block-2nd-3rd",
+      "concern": "Second- or third-degree heart block",
+      "consequence": "Slowed conduction.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [{ "s": "emc-5497", "q": "- second- or third-degree heart block; - sick sinus syndrome;" }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:av-block-1st",
+      "kind": "condition", "level": "caution", "med": "atenolol-chlortalidone",
+      "condition": "av-block-1st-degree",
+      "concern": "First-degree heart block",
+      "consequence": "Negative effect on conduction time.",
+      "action": "Use with caution.",
+      "sourceWording": "caution must be exercised",
+      "src": [{ "s": "emc-5497", "q": "caution must be exercised if it is given to patients with first-degree heart block." }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:sick-sinus",
+      "kind": "condition", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "condition": "sick-sinus-syndrome",
+      "concern": "Sick sinus syndrome",
+      "consequence": "Bradycardia/heart block risk.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [{ "s": "emc-5497", "q": "- second- or third-degree heart block; - sick sinus syndrome;" }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:phaeochromocytoma",
+      "kind": "condition", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "condition": "phaeochromocytoma",
+      "concern": "Untreated phaeochromocytoma",
+      "consequence": "Unopposed alpha stimulation.",
+      "action": "Do not use if untreated; give only after alpha-blockade and monitor blood pressure closely.",
+      "sourceWording": "should not be used",
+      "src": [
+        { "s": "emc-5497", "q": "- untreated phaeochromocytoma;" },
+        { "s": "emc-5497", "q": "in patients with phaeochromocytoma must be administered only after alfa-receptor blockade." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:severe-renal",
+      "kind": "condition", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal failure",
+      "consequence": "Reduced efficacy of chlortalidone; atenolol is renally cleared.",
+      "action": "Do not use (no numeric threshold given).",
+      "sourceWording": "should not be used",
+      "src": [
+        { "s": "emc-5497", "q": "- severe renal failure; - uncontrolled heart failure." },
+        { "s": "emc-5497", "q": "This fixed dose combination should thus not be administrated to patients with severe renal impairment" }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:uncontrolled-hf",
+      "kind": "condition", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "condition": "uncontrolled-heart-failure",
+      "concern": "Uncontrolled heart failure",
+      "consequence": "Negative inotropic effect.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [{ "s": "emc-5497", "q": "- severe renal failure; - uncontrolled heart failure." }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:heart-failure-controlled",
+      "kind": "condition", "level": "caution", "med": "atenolol-chlortalidone",
+      "condition": "heart-failure",
+      "concern": "Heart failure (controlled)",
+      "consequence": "May be used once signs are controlled; risk with poor cardiac reserve.",
+      "action": "Use with caution; contraindicated if heart failure is uncontrolled.",
+      "sourceWording": "Caution must be exercised",
+      "src": [{ "s": "emc-5497", "q": "may be used in patients whose signs of heart failure have been controlled. Caution must be exercised in patients whose cardiac reserve is poor." }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:asthma",
+      "kind": "condition", "level": "avoid", "med": "atenolol-chlortalidone",
+      "condition": "asthma",
+      "concern": "Asthma / bronchospastic disease",
+      "consequence": "Increased airway resistance; bronchospasm.",
+      "action": "Should in general not receive beta-blockers; if used, lowest dose with utmost caution; stop if airway resistance increases.",
+      "sourceWording": "should, in general, not receive beta-blockers",
+      "src": [
+        { "s": "emc-5497", "q": "patients with bronchospastic disease should, in general, not receive beta-blockers due to increasing in airways resistance." },
+        { "s": "emc-5497", "q": "Therefore the lowest possible dose of Tenoretic tablets should be used and utmost caution must be exercised." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:ischaemic-heart-disease",
+      "kind": "condition", "level": "caution", "med": "atenolol-chlortalidone",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Ischaemic heart disease",
+      "consequence": "Abrupt withdrawal may be harmful.",
+      "action": "Do not stop abruptly.",
+      "sourceWording": "should not be discontinued abruptly",
+      "src": [{ "s": "emc-5497", "q": "should not be discontinued abruptly in patients suffering from ischaemic heart disease." }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:prinzmetal",
+      "kind": "condition", "level": "caution", "med": "atenolol-chlortalidone",
+      "condition": "prinzmetal-angina",
+      "concern": "Prinzmetal's (variant) angina",
+      "consequence": "Angina attacks may become more frequent and longer.",
+      "action": "Utmost caution.",
+      "sourceWording": "utmost caution must be exercised",
+      "src": [
+        { "s": "emc-5497", "q": "may increase the number and duration of angina attacks in patients with Prinzmetal's angina" },
+        { "s": "emc-5497", "q": "consequently the use of Tenoretic tablets may be considered although utmost caution must be exercised." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:diabetes",
+      "kind": "condition", "level": "monitor", "med": "atenolol-chlortalidone",
+      "condition": "diabetes", "effect": "hypoglycaemia",
+      "concern": "Diabetes",
+      "consequence": "Hypoglycaemia warning signs may be masked (atenolol); glucose tolerance may be impaired and glucose may rise (chlortalidone).",
+      "action": "Monitor glycaemia closely at the start of therapy; test for glucosuria at regular intervals in prolonged therapy.",
+      "sourceWording": "Close monitoring of glycaemia is recommended",
+      "src": [
+        { "s": "emc-5497", "q": "may modify warning signs of hypoglycaemia as tachycardia, palpitation and sweating." },
+        { "s": "emc-5497", "q": "impaired glucose tolerance may occur and diabetic patients should be aware of the potential for increased glucose levels." },
+        { "s": "emc-5497", "q": "Close monitoring of glycaemia is recommended in the initial phase of therapy and in prolonged therapy test for glucosuria should be carried out at regular intervals." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:thyrotoxicosis",
+      "kind": "condition", "level": "info", "med": "atenolol-chlortalidone",
+      "condition": "thyrotoxicosis",
+      "concern": "Thyrotoxicosis",
+      "consequence": "Cardiovascular signs may be masked.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "may mask the cardiovascular signs of thyrotoxicosis",
+      "src": [{ "s": "emc-5497", "q": "may mask the cardiovascular signs of thyrotoxicosis." }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:hypokalaemia",
+      "kind": "condition", "level": "monitor", "med": "atenolol-chlortalidone",
+      "condition": "hypokalaemia",
+      "concern": "Hypokalaemia (or digitalis use, low-potassium diet)",
+      "consequence": "Chlortalidone can lower potassium; arrhythmia risk with digitalis.",
+      "action": "Measure electrolytes.",
+      "sourceWording": "Measurement of electrolytes is recommended",
+      "src": [{ "s": "emc-5497", "q": "hypokalaemia and hyponatraemia may occur. Measurement of electrolytes is recommended" }]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:hyponatraemia",
+      "kind": "condition", "level": "monitor", "med": "atenolol-chlortalidone",
+      "condition": "hyponatraemia", "effect": "hyponatraemia",
+      "concern": "Hyponatraemia",
+      "consequence": "Chlortalidone can cause hyponatraemia.",
+      "action": "Measure electrolytes (especially in older patients); check plasma electrolytes periodically.",
+      "sourceWording": "Measurement of electrolytes is recommended",
+      "src": [
+        { "s": "emc-5497", "q": "hypokalaemia and hyponatraemia may occur. Measurement of electrolytes is recommended, especially in the older patient" },
+        { "s": "emc-5497", "q": "plasma electrolyte should be periodically determined in appropriate intervals to detect possible electrolyte imbalance especially hypokalaemia and hyponatraemia." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:condition:surgery",
+      "kind": "condition", "level": "caution", "med": "atenolol-chlortalidone",
+      "condition": "surgery-planned", "effect": "hypotension",
+      "concern": "Surgery / anaesthesia",
+      "consequence": "Beta-blockade with anaesthetics may blunt reflex tachycardia and increase the risk of hypotension.",
+      "action": "Use anaesthetic agents with caution; inform the anaesthetist; choose an agent with as little negative inotropic activity as possible.",
+      "sourceWording": "caution must be exercised when using anaesthetic agents",
+      "src": [
+        { "s": "emc-5497", "q": "caution must be exercised when using anaesthetic agents with Tenoretic tablets. The anaesthetist should be informed and the choice of anaesthetic should be an agent with as little negative inotropic activity as possible." },
+        { "s": "emc-5497", "q": "Use of beta-blockers with anaesthetic drugs may result in attenuation of the reflex tachycardia and increase the risk of hypotension." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:hepatic:any",
+      "kind": "hepatic", "level": "caution", "med": "atenolol-chlortalidone",
+      "hepatic": ["any"],
+      "concern": "Impaired hepatic function or progressive liver disease",
+      "consequence": "Minor fluid/electrolyte changes may precipitate hepatic coma.",
+      "action": "Be aware that minor fluid and electrolyte changes may precipitate hepatic coma; check plasma electrolytes periodically.",
+      "sourceWording": "may precipitate hepatic coma",
+      "src": [{ "s": "emc-5497", "q": "in patients with impaired hepatic function or progressive liver disease, minor alterations in fluid and electrolyte balance may precipitate hepatic coma." }]
+    },
+    {
+      "id": "atenolol-chlortalidone:age:child",
+      "kind": "age", "level": "avoid", "med": "atenolol-chlortalidone",
+      "age": { "maxYears": 18 },
+      "concern": "Child",
+      "consequence": "Safety and efficacy not established.",
+      "action": "Not recommended in children.",
+      "sourceWording": "is not recommended in children",
+      "src": [{ "s": "emc-5497", "q": "The use of Tenoretic is not recommended in children." }]
+    },
+    {
+      "id": "atenolol-chlortalidone:pregnancy",
+      "kind": "pregnancy", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "concern": "Pregnancy",
+      "consequence": "Listed in section 4.3. (BUMPS says atenolol alone can be used if recommended by a doctor.)",
+      "action": "Must not be given (combination SmPC).",
+      "sourceWording": "must not be given during pregnancy",
+      "src": [
+        { "s": "emc-5497", "q": "Tenoretic tablets must not be given during pregnancy or lactation." },
+        { "s": "bumps-atenolol", "q": "Atenolol can be used in pregnancy if recommended by a doctor." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:breastfeeding",
+      "kind": "breastfeeding", "level": "contraindicated", "med": "atenolol-chlortalidone",
+      "concern": "Breastfeeding",
+      "consequence": "Listed in section 4.3. (SPS, atenolol alone: use with caution; risk of accumulation in neonates.)",
+      "action": "Must not be given (combination SmPC).",
+      "sourceWording": "must not be given during lactation",
+      "src": [
+        { "s": "emc-5497", "q": "Lactation: Tenoretic tablets must not be given during lactation." },
+        { "s": "sps-beta-blockers-breastfeeding", "q": "There is therefore significant risk of accumulation of atenolol in breastfed infants, particularly neonates, resulting in increased risk of adverse effects." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:interaction:verapamil",
+      "kind": "interaction", "level": "caution", "med": "atenolol-chlortalidone",
+      "other": "verapamil", "effect": "hypotension",
+      "concern": "Verapamil",
+      "consequence": "Severe hypotension, bradycardia and cardiac failure possible, especially with impaired ventricular function or conduction abnormalities.",
+      "action": "Exaggerated negative inotropic effects are possible. Neither drug should be given intravenously within 48 hours of stopping the other.",
+      "sourceWording": "may result in severe hypotension, bradycardia and cardiac failure",
+      "src": [
+        { "s": "emc-5497", "q": "Combined use of beta-blockers and calcium channel blockers with negative inotropic effects e.g. verapamil, diltiazem, can lead to an exaggeration of these effects" },
+        { "s": "emc-5497", "q": "This may result in severe hypotension, bradycardia and cardiac failure." },
+        { "s": "emc-5497", "q": "Neither the beta-blocker nor the calcium channel blocker should be administered intravenously within 48 hours of discontinuing the other." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:interaction:diltiazem",
+      "kind": "interaction", "level": "caution", "med": "atenolol-chlortalidone",
+      "other": "diltiazem", "effect": "hypotension",
+      "concern": "Diltiazem",
+      "consequence": "Severe hypotension, bradycardia and cardiac failure possible, especially with impaired ventricular function or conduction abnormalities.",
+      "action": "Exaggerated negative inotropic effects are possible. Neither drug should be given intravenously within 48 hours of stopping the other.",
+      "sourceWording": "may result in severe hypotension, bradycardia and cardiac failure",
+      "src": [
+        { "s": "emc-5497", "q": "Combined use of beta-blockers and calcium channel blockers with negative inotropic effects e.g. verapamil, diltiazem, can lead to an exaggeration of these effects" },
+        { "s": "emc-5497", "q": "This may result in severe hypotension, bradycardia and cardiac failure." },
+        { "s": "emc-5497", "q": "Neither the beta-blocker nor the calcium channel blocker should be administered intravenously within 48 hours of discontinuing the other." }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:interaction:dihydropyridine",
+      "kind": "interaction", "level": "info", "med": "atenolol-chlortalidone",
+      "other": "group:dihydropyridine", "effect": "hypotension",
+      "concern": "Dihydropyridine calcium-channel blockers",
+      "consequence": "Increased hypotension; cardiac failure possible with latent cardiac insufficiency.",
+      "action": "Be aware of added hypotension and possible cardiac failure in latent cardiac insufficiency; no specific action stated.",
+      "sourceWording": "may increase the risk of hypotension",
+      "src": [{ "s": "emc-5497", "q": "Concomitant therapy with dihydropyridines e.g. nifedipine, may increase the risk of hypotension, and cardiac failure may occur in patients with latent cardiac insufficiency." }]
+    },
+    {
+      "id": "atenolol-chlortalidone:interaction:nifedipine",
+      "kind": "interaction", "level": "info", "med": "atenolol-chlortalidone",
+      "other": "nifedipine", "effect": "hypotension",
+      "concern": "Nifedipine",
+      "consequence": "Increased hypotension; cardiac failure possible with latent cardiac insufficiency.",
+      "action": "Be aware of added hypotension and possible cardiac failure in latent cardiac insufficiency; no specific action stated.",
+      "sourceWording": "may increase the risk of hypotension",
+      "src": [{ "s": "emc-5497", "q": "Concomitant therapy with dihydropyridines e.g. nifedipine, may increase the risk of hypotension, and cardiac failure may occur in patients with latent cardiac insufficiency." }]
+    },
+    {
+      "id": "atenolol-chlortalidone:interaction:antidiabetic",
+      "kind": "interaction", "level": "monitor", "med": "atenolol-chlortalidone",
+      "other": "group:oral-antidiabetic", "effect": "hypoglycaemia",
+      "concern": "Oral antidiabetics",
+      "consequence": "Blood-sugar-lowering effect may be intensified; beta-blocker may mask hypoglycaemia warning signs.",
+      "action": "Monitor glycaemia closely, especially at the start of therapy.",
+      "sourceWording": "may lead to the intensification of the blood sugar lowering effects",
+      "src": [
+        { "s": "emc-5497", "q": "Concomitant use with insulin and oral antidiabetic drugs may lead to the intensification of the blood sugar lowering effects of these drugs." },
+        { "s": "emc-5497", "q": "may modify warning signs of hypoglycaemia as tachycardia, palpitation and sweating." },
+        { "s": "emc-5497", "q": "Close monitoring of glycaemia is recommended in the initial phase of therapy" }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:interaction:insulin",
+      "kind": "interaction", "level": "monitor", "med": "atenolol-chlortalidone",
+      "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Insulin",
+      "consequence": "Blood-sugar-lowering effect may be intensified; beta-blocker may mask hypoglycaemia warning signs.",
+      "action": "Monitor glycaemia closely, especially at the start of therapy.",
+      "sourceWording": "may lead to the intensification of the blood sugar lowering effects",
+      "src": [
+        { "s": "emc-5497", "q": "Concomitant use with insulin and oral antidiabetic drugs may lead to the intensification of the blood sugar lowering effects of these drugs." },
+        { "s": "emc-5497", "q": "may modify warning signs of hypoglycaemia as tachycardia, palpitation and sweating." },
+        { "s": "emc-5497", "q": "Close monitoring of glycaemia is recommended in the initial phase of therapy" }
+      ]
+    },
+    {
+      "id": "atenolol-chlortalidone:interaction:nsaid",
+      "kind": "interaction", "level": "info", "med": "atenolol-chlortalidone",
+      "other": "group:nsaid",
+      "concern": "NSAIDs (e.g. ibuprofen)",
+      "consequence": "May reduce the antihypertensive effect.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "may decrease the hypotensive effects",
+      "src": [{ "s": "emc-5497", "q": "Concomitant use of prostaglandin synthetase inhibiting drugs (e.g. ibuprofen, indometacin) may decrease the hypotensive effects of beta-blockers" }]
+    },
+    {
+      "id": "atenolol-chlortalidone:interaction:sympathomimetic",
+      "kind": "interaction", "level": "info", "med": "atenolol-chlortalidone",
+      "other": "group:sympathomimetic",
+      "concern": "Sympathomimetics (e.g. adrenaline)",
+      "consequence": "May counteract the beta-blocker effect.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "may counteract the effect of beta-blockers",
+      "src": [{ "s": "emc-5497", "q": "Concomitant use of sympathomimetic agents, e.g. adrenaline (epinephrine), may counteract the effect of beta-blockers." }]
+    }
+  ]
+}

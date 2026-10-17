@@ -878,6 +878,78 @@
       ]
     },
     {
+      "id": "isosorbide-mononitrate:interaction:beta-blocker",
+      "kind": "interaction",
+      "level": "info",
+      "med": "isosorbide-mononitrate",
+      "other": "group:beta-blocker",
+      "effect": "hypotension",
+      "concern": "Beta-blockers",
+      "consequence": "May potentiate the hypotensive effect.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may potentiate the hypotensive effect",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "Concurrent administration of drugs with blood pressure lowering properties, e.g, beta-blockers, calcium channel blockers, vasodilators, alprostadil, aldesleukin, angiotensin II receptor antagonist, ACE inhibitors etc. may potentiate the hypotensive effect"
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:interaction:arb",
+      "kind": "interaction",
+      "level": "info",
+      "med": "isosorbide-mononitrate",
+      "other": "group:arb",
+      "effect": "hypotension",
+      "concern": "Angiotensin II receptor blockers",
+      "consequence": "May potentiate the hypotensive effect.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may potentiate the hypotensive effect",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "Concurrent administration of drugs with blood pressure lowering properties, e.g, beta-blockers, calcium channel blockers, vasodilators, alprostadil, aldesleukin, angiotensin II receptor antagonist, ACE inhibitors etc. may potentiate the hypotensive effect"
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "isosorbide-mononitrate",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hypotension",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "May potentiate the hypotensive effect.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "This may also occur with neuroleptics and tricyclic antidepressants",
+      "src": [
+        {
+          "s": "emc-2698",
+          "q": "may potentiate the hypotensive effect of Isosorbide Mononitrate Tablets. This may also occur with neuroleptics and tricyclic antidepressants."
+        }
+      ]
+    },
+    {
+      "id": "isosorbide-mononitrate:interaction:maoi",
+      "kind": "interaction",
+      "level": "info",
+      "med": "isosorbide-mononitrate",
+      "other": "group:maoi",
+      "effect": "hypotension",
+      "concern": "MAO inhibitors",
+      "consequence": "May potentiate the hypotensive effect (Elantan LA SmPC).",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may potentiate the hypotensive effect",
+      "src": [
+        {
+          "s": "emc-9214",
+          "q": "monoamine oxidase inhibitors etc and/or alcohol may potentiate the hypotensive effect of Elantan LA"
+        }
+      ]
+    },
+    {
       "id": "isosorbide-mononitrate:condition:hypotension",
       "kind": "condition",
       "level": "contraindicated",

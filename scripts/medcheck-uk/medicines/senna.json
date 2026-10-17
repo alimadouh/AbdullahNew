@@ -1,0 +1,266 @@
+{
+  "id": "senna",
+  "name": "Senna (sennosides)",
+  "ingredients": ["senna"],
+  "className": "Stimulant (contact) laxative",
+  "groups": ["laxative"],
+  "searchTerms": ["sennosides", "senna pods", "senna fruit", "hydroxyanthracene glycosides"],
+  "formulations": [
+    {
+      "id": "senna-tab",
+      "label": "Tablets 7.5 mg (12 years and over)",
+      "route": "oral",
+      "strengths": "Senna fruit equivalent to 7.5 mg hydroxyanthracene glycosides (as sennoside B) per tablet",
+      "release": "immediate",
+      "note": "Contains lactose (15.82 mg per tablet). This UK SmPC covers adults and children over 12 years.",
+      "src": [
+        { "s": "emc-11848", "q": "equivalent to 7.5mg hydroxyanthracene glycosides, calculated as sennoside B" },
+        { "s": "emc-11848", "q": "Each tablet also contains 15.82 mg lactose monohydrate" }
+      ],
+      "sourceIds": ["emc-11848"]
+    },
+    {
+      "id": "senna-tab-adult-pack",
+      "label": "Tablets 7.5 mg (adult-labelled pack)",
+      "route": "oral",
+      "strengths": "Senna fruit equivalent to 7.5 mg hydroxyanthracene glycosides (as sennoside B) per tablet",
+      "release": "immediate",
+      "note": "Same tablet; this UK SmPC (adult-labelled pack) says not for use under 18 years.",
+      "src": [
+        { "s": "emc-11140", "q": "equivalent to 7.5mg hydroxyanthracene glycosides, calculated as sennoside B" },
+        { "s": "emc-11140", "q": "Should not be used in children or adolescents under the age of 18 years." }
+      ],
+      "sourceIds": ["emc-11140"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [{ "t": "Short-term relief of occasional constipation.", "src": [{ "s": "emc-11848", "q": "For the short-term relief of occasional constipation" }] }]
+    },
+    "restrictions": {
+      "items": [
+        { "t": "MHRA: use stimulant laxatives only if bulk-forming and osmotic laxatives are ineffective. Children under 12 should not use them without advice from a prescriber; 12-17 years can be supplied under pharmacist supervision.", "src": [{ "s": "mhra-dsu-stimulant-laxatives-otc-2020", "q": "stimulant laxatives should only be used if other laxatives (bulk-forming and osmotic) are ineffective" }, { "s": "mhra-dsu-stimulant-laxatives-otc-2020", "q": "Stimulant laxatives should no longer be used in children under 12 years without advice from a prescriber, while products for children aged 12 to 17 years can be supplied under the supervision of a pharmacist." }] },
+        { "t": "Use only if diet change or bulk-forming agents fail.", "src": [{ "s": "emc-11848", "q": "This product should only be used if a therapeutic effect cannot be achieved by a change of diet or the administration of bulk forming agents." }] }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults (and over 12 years with the 12-plus product): 1-2 tablets at night; start low and use the smallest dose that gives a soft-formed motion. The 12-plus SmPC: a higher dose may be prescribed under medical guidance, up to a maximum of 30 mg hydroxyanthracene glycosides a day.",
+          "tag": "Occasional constipation",
+          "src": [
+            { "s": "emc-11848", "q": "Adults, the elderly and children over 12 years: Swallow one to two tablets at night" },
+            { "s": "emc-11848", "q": "A higher dose may be prescribed under medical guidance." },
+            { "s": "emc-11848", "q": "The maximum daily dose of hydroxyanthracene glycosides is 30 mg." },
+            { "s": "emc-11848", "q": "The correct individual dose is the smallest required to produce a comfortable soft-formed motion." }
+          ]
+        },
+        {
+          "t": "Duration: one UK SmPC says use for more than 1-2 weeks needs medical supervision; the adult-labelled pack SmPC says not more than 1 week (usually 2-3 doses in that week).",
+          "tag": "Duration",
+          "src": [
+            { "s": "emc-11848", "q": "Use for more than 1-2 weeks requires medical supervision." },
+            { "s": "emc-11140", "q": "Not to be used for more than 1 week. Usually it is sufficient to take this medicinal product up to two to three times during that week." }
+          ]
+        },
+        {
+          "t": "If no bowel action after 3 days of increasing dose, consider medical examination.",
+          "detail": true,
+          "src": [{ "s": "emc-11848", "q": "If no bowel action has occurred after three days of progressively increased dosage, a medical examination should be considered." }]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        { "t": "12-plus product: contraindicated under 12 years.", "formulations": ["senna-tab"], "src": [{ "s": "emc-11848", "q": "Children under 12 years of age." }, { "s": "emc-11848", "q": "Should not be used in children or adolescents under the age of 12 years (see section 4.3)." }] },
+        { "t": "Adult-labelled pack: should not be used under 18 years.", "formulations": ["senna-tab-adult-pack"], "src": [{ "s": "emc-11140", "q": "Should not be used in children or adolescents under the age of 18 years." }] },
+        { "t": "MHRA: children under 12 should not use stimulant laxatives unless told to by their prescriber.", "src": [{ "s": "mhra-dsu-stimulant-laxatives-otc-2020", "q": "children younger than 12 years should not use stimulant laxatives without advice from a prescriber and clinical guidance should be followed" }] }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        { "t": "Hypersensitivity to senna or any excipient.", "src": [{ "s": "emc-11848", "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients." }] },
+        { "t": "Use at the same time as other laxatives.", "src": [{ "s": "emc-11848", "q": "Not to be used at the same time as other laxative agents." }] },
+        { "t": "Intestinal obstruction and stenosis, atony, appendicitis, inflammatory bowel disease (e.g. Crohn's, ulcerative colitis), abdominal pain of unknown origin, severe dehydration with water and electrolyte depletion.", "src": [{ "s": "emc-11848", "q": "Cases of intestinal obstructions and stenosis, atony, appendicitis, inflammatory bowel diseases (e.g Crohn's disease, ulcerative colitis), abdominal pain of unknown origin, severe dehydration state with water and electrolyte depletion" }] },
+        { "t": "Pregnancy and lactation.", "src": [{ "s": "emc-11848", "q": "Pregnancy and lactation (see section 4.6 and 5.3)." }] },
+        { "t": "Children under 12 years (12-plus product).", "formulations": ["senna-tab"], "src": [{ "s": "emc-11848", "q": "Children under 12 years of age." }] }
+      ]
+    },
+    "cautions": {
+      "items": [
+        { "t": "Patients on cardiac glycosides, antiarrhythmics, QT-prolonging medicines, diuretics, corticosteroids or liquorice root must consult a doctor before use.", "src": [{ "s": "emc-11848", "q": "Patients taking cardiac glycosides, antiarrhythmic medicinal products, medicinal products inducing QT-prolongation, diuretics, adrenocorticosteroids or liquorice root, have to consult a doctor before taking senna leaf preparations concomitantly." }] },
+        { "t": "Do not use with faecal impaction or undiagnosed acute or persistent GI complaints (pain, nausea, vomiting) unless advised by a doctor: possible ileus.", "src": [{ "s": "emc-11848", "q": "should not be taken by patients suffering from faecal impaction and undiagnosed, acute or persistent gastro-intestinal complaints, e.g. abdominal pain, nausea and vomiting, unless advised by a doctor" }] },
+        { "t": "Avoid long-term use: impaired bowel function, laxative dependence, atonic colon; prolonged excessive use can cause fluid/electrolyte imbalance and hypokalaemia.", "src": [{ "s": "emc-11848", "q": "Long-term use of stimulant laxatives should be avoided, as use for more than a brief period of treatment may lead to impaired function of the intestine and dependence on laxatives." }, { "s": "emc-11848", "q": "Prolonged excessive use may lead to fluid and electrolyte imbalance and hypokalaemia." }] },
+        { "t": "Where dehydration may be harmful (e.g. renal insufficiency, elderly) and fluid is lost: stop and restart only under medical supervision.", "src": [{ "s": "emc-11848", "q": "In patients suffering from fluid loss where dehydration may be harmful (e.g. renal insufficiency, elderly patients) Senokot should be discontinued and only be restarted under medical supervision." }] },
+        { "t": "Galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption: should not take (contains lactose).", "src": [{ "s": "emc-11848", "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine." }] },
+        { "t": "Stimulant laxatives do not help with weight loss.", "detail": true, "src": [{ "s": "emc-11848", "q": "Stimulant laxatives (including Senokot) do not help with weight loss." }] }
+      ]
+    },
+    "interactions": {
+      "items": [
+        { "t": "Other laxatives: must not be used at the same time (SmPC 4.3).", "src": [{ "s": "emc-11848", "q": "Not to be used at the same time as other laxative agents." }] },
+        { "t": "Hypokalaemia from long-term laxative abuse potentiates cardiac glycosides and interacts with antiarrhythmics and QT-prolonging medicines.", "src": [{ "s": "emc-11848", "q": "Hypokalaemia (resulting from long-term laxative abuse) potentiates the action of cardiac glycosides and interacts with antiarrhythmic medicinal products" }, { "s": "emc-11848", "q": "and with medicinal products inducing QT-prolongation." }] },
+        { "t": "Other hypokalaemia-inducing medicines (e.g. diuretics, corticosteroids, liquorice root) may enhance electrolyte imbalance.", "src": [{ "s": "emc-11848", "q": "Concomitant use with other medicinal products inducing hypokalaemia (e.g. diuretics, adrenocorticosteroids and liquorice root) may enhance electrolyte imbalance." }] }
+      ]
+    },
+    "renal": {
+      "items": [{ "t": "Kidney disorders: be aware of possible electrolyte imbalance. In renal insufficiency with fluid loss, stop and restart only under medical supervision.", "src": [{ "s": "emc-11848", "q": "Patients with kidney disorders should be aware of possible electrolyte imbalance." }, { "s": "emc-11848", "q": "(e.g. renal insufficiency, elderly patients) Senokot should be discontinued and only be restarted under medical supervision." }] }]
+    },
+    "hepatic": {
+      "items": [{ "t": "No hepatic impairment dosing advice. Chronic overdose of anthranoid-containing medicines may cause toxic hepatitis.", "detail": true, "src": [{ "s": "emc-11848", "q": "Chronic ingested overdoses of anthranoid containing medicinal products may lead to toxic hepatitis." }] }]
+    },
+    "pregnancy": {
+      "items": [
+        { "t": "SmPC: contraindicated in pregnancy (genotoxicity data for some anthranoids).", "tag": "SmPC", "src": [{ "s": "emc-11848", "q": "The use during pregnancy is contraindicated because of experimental data concerning a genotoxic risk of several anthranoids, e.g. emodin and aloe emodin." }] },
+        { "t": "BUMPS (differs from the SmPC): a laxative can be used in pregnancy if diet and lifestyle fail; stimulant laxatives such as senna are tried only when other types have not helped. Concern about womb contractions has not been seen in pregnant women.", "tag": "BUMPS", "src": [{ "s": "bumps-constipation", "q": "Stimulant laxatives only tend to be tried when those above have not helped." }, { "s": "bumps-constipation", "q": "However, this has not been observed in pregnant women." }] }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        { "t": "SmPC: contraindicated during lactation (active metabolites such as rhein pass into milk in small amounts).", "tag": "SmPC", "src": [{ "s": "emc-11848", "q": "The use during lactation is contraindicated because after administration of anthranoids, active metabolites, such as rhein, were excreted in reast milk in small amounts." }] },
+        { "t": "SPS (differs from the SmPC): standardised senna can be used during breastfeeding; as a precaution monitor the infant for diarrhoea or irritability.", "tag": "SPS", "src": [{ "s": "sps-laxatives-breastfeeding", "q": "Standardised senna preparations can be used during breastfeeding." }, { "s": "sps-laxatives-breastfeeding", "q": "As a precaution monitor the infant for diarrhoea or irritability." }] }
+      ]
+    },
+    "reproductive": { "status": "not-stated", "note": "UK SmPC: no data on fertility." },
+    "adverseCommon": {
+      "items": [
+        { "t": "Frequency not known: abdominal pain, cramps, diarrhoea (especially with irritable colon; reduce dose); harmless yellow or red-brown urine discolouration.", "src": [{ "s": "emc-11848", "q": "Abdominal pain2, abdominal spasm2, diarrhoea2" }, { "s": "emc-11848", "q": "Yellow or red-brown (pH dependent) discolouration of urine by metabolites, which is not clinically significant, may occur during the treatment." }] },
+        { "t": "Chronic use: colonic mucosal pigmentation (pseudomelanosis coli), usually reversible on stopping.", "detail": true, "src": [{ "s": "emc-11848", "q": "Chronic use may cause pigmentation of the intestinal mucosa (pseudomelanosis coli), which usually recedes when the patient stops taking the preparation." }] }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        { "t": "Hypersensitivity, urticaria, asthma.", "src": [{ "s": "emc-11848", "q": "Hypersensitivity, urticaria, asthma, hypogammaglobulinaemia" }] },
+        { "t": "Hypokalaemia from prolonged use with diarrhoea; chronic use may cause water/electrolyte disorders, albuminuria and haematuria. Overdose: severe diarrhoea with fluid and potassium loss; replace fluids and monitor potassium.", "src": [{ "s": "emc-11848", "q": "Prolonged use of laxatives resulting in diarrhoea and subsequently hypokalaemia." }, { "s": "emc-11848", "q": "Electrolytes, especially potassium, should be monitored." }] }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        { "t": "Daily laxative need or persistent abdominal pain: see a doctor and investigate the cause.", "tag": "ongoing", "src": [{ "s": "emc-11848", "q": "If laxatives are needed every day, or abdominal pain persists, a doctor should be consulted." }] },
+        { "t": "Overdose or abuse: monitor electrolytes, especially potassium (particularly in the elderly).", "tag": "stop", "src": [{ "s": "emc-11848", "q": "Electrolytes, especially potassium, should be monitored. This is especially important in the elderly." }] }
+      ]
+    },
+    "administration": {
+      "items": [{ "t": "Swallow 1-2 tablets at night. Effect usually after 8-12 hours.", "src": [{ "s": "emc-11848", "q": "Swallow one to two tablets at night" }, { "s": "emc-11848", "q": "Defaecation takes place after a delay of 8 - 12 hours" }] }]
+    },
+    "counselling": {
+      "items": [
+        { "t": "Do not exceed the stated dose. If no bowel movement after 3 days, or symptoms worsen, see a doctor or pharmacist.", "src": [{ "s": "emc-11848", "q": "Do not exceed the stated dose." }, { "s": "emc-11848", "q": "If the symptoms worsen during the use of the medicinal product or there is no bowel movement after three days, a doctor or pharmacist should be consulted." }] },
+        { "t": "Does not help with weight loss; overuse can be harmful.", "src": [{ "s": "emc-11140", "q": "Does not help with weight loss. Overuse can be harmful." }] },
+        { "t": "Urine may turn yellow or red-brown; this is harmless.", "detail": true, "src": [{ "s": "emc-11848", "q": "Yellow or red-brown (pH dependent) discolouration of urine by metabolites, which is not clinically significant" }] }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "senna:allergy:own", "kind": "allergy", "level": "contraindicated", "med": "senna", "allergen": ["senna"],
+      "concern": "Senna hypersensitivity", "consequence": "Hypersensitivity reaction.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-11848", "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients." }]
+    },
+    {
+      "id": "senna:interaction:laxatives", "kind": "interaction", "level": "contraindicated", "med": "senna", "other": "group:laxative",
+      "concern": "Another laxative at the same time", "consequence": "Listed as a contraindication.", "action": "Do not use at the same time as other laxatives (SmPC 4.3).",
+      "sourceWording": "Not to be used at the same time as other laxative agents",
+      "src": [{ "s": "emc-11848", "q": "Not to be used at the same time as other laxative agents." }]
+    },
+    {
+      "id": "senna:interaction:qt", "kind": "interaction", "level": "caution", "med": "senna", "other": "group:qt-prolonging", "effect": "qt-prolongation",
+      "concern": "QT-prolonging medicines with senna", "consequence": "Laxative-induced hypokalaemia interacts with QT-prolonging medicines.", "action": "Patient must consult a doctor before taking senna together with these medicines.",
+      "sourceWording": "have to consult a doctor before taking",
+      "src": [{ "s": "emc-11848", "q": "Patients taking cardiac glycosides, antiarrhythmic medicinal products, medicinal products inducing QT-prolongation, diuretics, adrenocorticosteroids or liquorice root, have to consult a doctor before taking senna leaf preparations concomitantly." }, { "s": "emc-11848", "q": "and with medicinal products inducing QT-prolongation." }]
+    },
+    {
+      "id": "senna:interaction:diuretics", "kind": "interaction", "level": "caution", "med": "senna", "other": "group:diuretic",
+      "concern": "Diuretics with senna", "consequence": "May enhance electrolyte imbalance (hypokalaemia).", "action": "Patient must consult a doctor before taking senna together with diuretics.",
+      "sourceWording": "have to consult a doctor before taking",
+      "src": [{ "s": "emc-11848", "q": "Concomitant use with other medicinal products inducing hypokalaemia (e.g. diuretics, adrenocorticosteroids and liquorice root) may enhance electrolyte imbalance." }, { "s": "emc-11848", "q": "Patients taking cardiac glycosides, antiarrhythmic medicinal products, medicinal products inducing QT-prolongation, diuretics, adrenocorticosteroids or liquorice root, have to consult a doctor before taking senna leaf preparations concomitantly." }]
+    },
+    {
+      "id": "senna:interaction:prednisolone", "kind": "interaction", "level": "caution", "med": "senna", "other": "prednisolone",
+      "concern": "Prednisolone (systemic corticosteroid) with senna", "consequence": "May enhance electrolyte imbalance (hypokalaemia).", "action": "Patient must consult a doctor before taking senna together with corticosteroids.",
+      "sourceWording": "have to consult a doctor before taking",
+      "src": [{ "s": "emc-11848", "q": "Concomitant use with other medicinal products inducing hypokalaemia (e.g. diuretics, adrenocorticosteroids and liquorice root) may enhance electrolyte imbalance." }, { "s": "emc-11848", "q": "Patients taking cardiac glycosides, antiarrhythmic medicinal products, medicinal products inducing QT-prolongation, diuretics, adrenocorticosteroids or liquorice root, have to consult a doctor before taking senna leaf preparations concomitantly." }]
+    },
+    {
+      "id": "senna:interaction:dexamethasone", "kind": "interaction", "level": "caution", "med": "senna", "other": "dexamethasone",
+      "concern": "Dexamethasone (systemic corticosteroid) with senna", "consequence": "May enhance electrolyte imbalance (hypokalaemia).", "action": "Patient must consult a doctor before taking senna together with corticosteroids.",
+      "sourceWording": "have to consult a doctor before taking",
+      "src": [{ "s": "emc-11848", "q": "Concomitant use with other medicinal products inducing hypokalaemia (e.g. diuretics, adrenocorticosteroids and liquorice root) may enhance electrolyte imbalance." }, { "s": "emc-11848", "q": "Patients taking cardiac glycosides, antiarrhythmic medicinal products, medicinal products inducing QT-prolongation, diuretics, adrenocorticosteroids or liquorice root, have to consult a doctor before taking senna leaf preparations concomitantly." }]
+    },
+    {
+      "id": "senna:condition:gi-obstruction", "kind": "condition", "level": "contraindicated", "med": "senna", "condition": "paralytic-ileus-gi-obstruction",
+      "concern": "Intestinal obstruction, stenosis or atony", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications",
+      "src": [{ "s": "emc-11848", "q": "Cases of intestinal obstructions and stenosis, atony, appendicitis" }]
+    },
+    {
+      "id": "senna:condition:ibd", "kind": "condition", "level": "contraindicated", "med": "senna", "condition": "inflammatory-bowel-disease",
+      "concern": "Inflammatory bowel disease (Crohn's disease, ulcerative colitis)", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications",
+      "src": [{ "s": "emc-11848", "q": "inflammatory bowel diseases (e.g Crohn's disease, ulcerative colitis)" }]
+    },
+    {
+      "id": "senna:condition:acute-abdomen", "kind": "condition", "level": "contraindicated", "med": "senna", "condition": "acute-abdomen",
+      "concern": "Appendicitis or abdominal pain of unknown origin", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications",
+      "src": [{ "s": "emc-11848", "q": "appendicitis, inflammatory bowel diseases (e.g Crohn's disease, ulcerative colitis), abdominal pain of unknown origin" }]
+    },
+    {
+      "id": "senna:condition:dehydration", "kind": "condition", "level": "contraindicated", "med": "senna", "condition": "dehydration-hypovolaemia",
+      "concern": "Severe dehydration with water and electrolyte depletion", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications",
+      "src": [{ "s": "emc-11848", "q": "severe dehydration state with water and electrolyte depletion" }]
+    },
+    {
+      "id": "senna:condition:galactose-intolerance", "kind": "condition", "level": "avoid", "med": "senna", "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption", "consequence": "Tablets contain lactose.", "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-11848", "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine." }]
+    },
+    {
+      "id": "senna:condition:renal", "kind": "condition", "level": "caution", "med": "senna", "condition": "renal-impairment",
+      "concern": "Renal insufficiency (fluid loss/dehydration risk)", "consequence": "Possible electrolyte imbalance; dehydration may be harmful.", "action": "If fluid loss occurs, stop and restart only under medical supervision.",
+      "sourceWording": "should be discontinued and only be restarted under medical supervision",
+      "src": [{ "s": "emc-11848", "q": "In patients suffering from fluid loss where dehydration may be harmful (e.g. renal insufficiency, elderly patients) Senokot should be discontinued and only be restarted under medical supervision." }]
+    },
+    {
+      "id": "senna:age:under-12", "kind": "age", "level": "contraindicated", "med": "senna", "formulations": ["senna-tab"], "age": { "minYears": 0, "maxYears": 12 },
+      "concern": "Child under 12 years", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3). MHRA: not under 12 without advice from a prescriber.",
+      "sourceWording": "4.3 Contraindications ... Children under 12 years of age",
+      "src": [{ "s": "emc-11848", "q": "Children under 12 years of age." }, { "s": "mhra-dsu-stimulant-laxatives-otc-2020", "q": "children younger than 12 years should not use stimulant laxatives without advice from a prescriber" }]
+    },
+    {
+      "id": "senna:age:adult-pack-under-18", "kind": "age", "level": "avoid", "med": "senna", "formulations": ["senna-tab-adult-pack"], "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years (adult-labelled pack)", "consequence": "This pack's SmPC is for adults only; the 12-plus SmPC allows 12 years and over.", "action": "Should not be used under 18 with this pack.",
+      "sourceWording": "Should not be used in children or adolescents under the age of 18 years",
+      "src": [{ "s": "emc-11140", "q": "Should not be used in children or adolescents under the age of 18 years." }]
+    },
+    {
+      "id": "senna:pregnancy", "kind": "pregnancy", "level": "contraindicated", "med": "senna",
+      "concern": "Pregnancy (SmPC)", "consequence": "Experimental genotoxicity data for some anthranoids.", "action": "Contraindicated in pregnancy per UK SmPC. BUMPS (differs) allows stimulant laxatives in pregnancy after other laxatives fail.",
+      "sourceWording": "The use during pregnancy is contraindicated",
+      "src": [{ "s": "emc-11848", "q": "The use during pregnancy is contraindicated because of experimental data concerning a genotoxic risk of several anthranoids, e.g. emodin and aloe emodin." }]
+    },
+    {
+      "id": "senna:pregnancy:bumps", "kind": "pregnancy", "level": "info", "med": "senna",
+      "concern": "Pregnancy (BUMPS)", "consequence": "BUMPS: theoretical concern about womb contractions not observed in pregnant women.", "action": "BUMPS: stimulant laxatives are tried only when other laxatives have not helped.",
+      "sourceWording": "only tend to be tried when those above have not helped",
+      "src": [{ "s": "bumps-constipation", "q": "Stimulant laxatives only tend to be tried when those above have not helped." }, { "s": "bumps-constipation", "q": "However, this has not been observed in pregnant women." }]
+    },
+    {
+      "id": "senna:breastfeeding", "kind": "breastfeeding", "level": "contraindicated", "med": "senna",
+      "concern": "Breastfeeding (SmPC)", "consequence": "Active metabolites (rhein) pass into breast milk in small amounts.", "action": "Contraindicated during lactation per UK SmPC. SPS (differs) says standardised senna can be used.",
+      "sourceWording": "The use during lactation is contraindicated",
+      "src": [{ "s": "emc-11848", "q": "The use during lactation is contraindicated because after administration of anthranoids, active metabolites, such as rhein, were excreted in reast milk in small amounts." }]
+    },
+    {
+      "id": "senna:breastfeeding:sps", "kind": "breastfeeding", "level": "info", "med": "senna",
+      "concern": "Breastfeeding (SPS)", "consequence": "SPS: negligible amounts in milk; no infant side effects reported.", "action": "SPS: standardised senna can be used; as a precaution monitor the infant for diarrhoea or irritability.",
+      "sourceWording": "can be used during breastfeeding",
+      "src": [{ "s": "sps-laxatives-breastfeeding", "q": "Standardised senna preparations can be used during breastfeeding." }]
+    }
+  ]
+}

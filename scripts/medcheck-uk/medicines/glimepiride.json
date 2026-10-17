@@ -1,0 +1,388 @@
+{
+  "id": "glimepiride",
+  "name": "Glimepiride",
+  "ingredients": ["glimepiride"],
+  "className": "Sulfonylurea (oral blood glucose lowering drug)",
+  "groups": ["sulfonylurea", "insulin-secretagogue", "antidiabetic", "oral-antidiabetic"],
+  "searchTerms": ["sulphonylurea"],
+  "formulations": [
+    {
+      "id": "glimepiride-tab",
+      "label": "Tablets (scored)",
+      "route": "oral",
+      "strengths": "2 mg, 3 mg",
+      "release": "immediate",
+      "note": "The UK generic tablets checked are scored and can be divided into equal halves. The usual starting dose is 1 mg daily.",
+      "src": [
+        { "s": "emc-10743", "q": "Glimepiride 2 mg tablets: 1 tablet contains Glimepiride 2 mg." },
+        { "s": "emc-10744", "q": "Glimepiride 3 mg tablets: 1 tablet contains Glimepiride 3 mg." },
+        { "s": "emc-10744", "q": "The tablet can be divided into equal halves." },
+        { "s": "emc-10744", "q": "The starting dose is 1 mg glimepiride per day." }
+      ],
+      "sourceIds": ["emc-10743", "emc-10744"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "availability": { "status": "uk" },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Type 2 diabetes when diet, exercise and weight reduction alone are not adequate.",
+        "src": [{ "s": "emc-10744", "q": "Glimepiride is indicated for the treatment of type 2 diabetes mellitus, when diet, physical exercise and weight reduction alone are not adequate." }] }
+    ] },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions in the UK glimepiride 2 mg and 3 mg SmPCs checked." },
+    "dosing": { "items": [
+      { "t": "Start 1 mg once daily. If needed, increase stepwise about every 1 to 2 weeks to 2, 3 or 4 mg daily. More than 4 mg helps only in exceptional cases. Maximum 6 mg daily.", "tag": "Type 2 diabetes, adults",
+        "src": [
+          { "s": "emc-10744", "q": "The starting dose is 1 mg glimepiride per day." },
+          { "s": "emc-10744", "q": "in a stepwise manner with an interval of about 1 to 2 weeks between each step, to 2, 3 or 4 mg glimepiride per day. A dose of more than 4 mg glimepiride per day gives better results only in exceptional cases." },
+          { "s": "emc-10744", "q": "The maximum recommended dose is 6 mg glimepiride per day." }
+        ] },
+      { "t": "Added to maximum-dose metformin, or with insulin added to maximum-dose glimepiride: start the new medicine low and titrate under close medical supervision.", "tag": "Combination with metformin or insulin",
+        "src": [
+          { "s": "emc-10744", "q": "In patients not adequately controlled with the maximum daily dose of metformin, concomitant glimepiride therapy can be initiated if necessary." },
+          { "s": "emc-10744", "q": "The combination therapy should be initiated under close medical supervision." }
+        ] },
+      { "t": "Requirements may fall as control improves: consider timely dose reduction or stopping to avoid hypoglycaemia. Hypoglycaemia on 1 mg daily suggests diet alone may be enough.", "tag": "Dose review",
+        "src": [
+          { "s": "emc-10744", "q": "To avoid hypoglycaemia timely dose reduction or cessation of therapy must therefore be considered." },
+          { "s": "emc-10744", "q": "If a patient has a hypoglycaemic reaction on 1 mg glimepiride daily, this indicates that they can be controlled by diet alone." }
+        ] },
+      { "t": "Switching from another oral hypoglycaemic: start at 1 mg; after long half-life agents a washout of a few days may be advisable.", "tag": "Switching", "detail": true,
+        "src": [{ "s": "emc-10744", "q": "In some cases, especially in antidiabetic medicines with a long half life (e.g. chlorpropamide), a wash out period of a few days is advisable" }] },
+      { "t": "Missed dose: do not correct by increasing the next dose.", "tag": "Missed dose", "detail": true,
+        "src": [{ "s": "emc-10744", "q": "If a dose is forgotten, this should not be corrected by increasing the next dose." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Not recommended in children: no data under 8 years and insufficient data at 8 to 17 years.",
+        "src": [
+          { "s": "emc-10744", "q": "There are no data available on the use of glimepiride in patients under 8 years of age." },
+          { "s": "emc-10744", "q": "The available data on safety and efficacy are insufficient in the paediatric population and therefore such use is not recommended." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to glimepiride, other sulfonylureas, sulfonamides or any excipient.",
+        "src": [{ "s": "emc-10744", "q": "hypersensitivity to glimepiride, other sulfonylureas or sulfonamides or to any of the excipients listed in section 6.1" }] },
+      { "t": "Type 1 diabetes; diabetic coma; ketoacidosis.",
+        "src": [{ "s": "emc-10744", "q": "diabetes mellitus type 1, - diabetic coma, - ketoacidosis," }] },
+      { "t": "Severe renal or hepatic function disorders (change to insulin).",
+        "src": [{ "s": "emc-10744", "q": "severe renal or hepatic function disorders. In case of severe renal or hepatic function disorders, a changeover to insulin is required." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Hypoglycaemia: take shortly before or with a meal; irregular or skipped meals can cause hypoglycaemia. Severe or prolonged episodes need immediate medical treatment and sometimes hospital care; it may recur. Severe attacks can look like a stroke.",
+        "src": [
+          { "s": "emc-10744", "q": "When meals are taken at irregular hours or skipped altogether, treatment with Glimepiride may lead to hypoglycaemia." },
+          { "s": "emc-10744", "q": "The clinical picture of a severe hypoglycaemic attack may resemble that of a stroke." },
+          { "s": "emc-10744", "q": "Severe hypoglycaemia or prolonged hypoglycaemia, only temporarily controlled by the usual amounts of sugar, require immediate medical treatment and occasionally hospitalisation." }
+        ] },
+      { "t": "Risk factors for hypoglycaemia: poor co-operation (more often elderly), poor nutrition or missed meals, diet changes, exercise without enough carbohydrate, alcohol, impaired renal function, serious liver dysfunction, some thyroid, pituitary or adrenal disorders, and interacting medicines.",
+        "src": [
+          { "s": "emc-10744", "q": "unwillingness or (more commonly in elderly patients) incapacity of the patient to cooperate" },
+          { "s": "emc-10744", "q": "consumption of alcohol, especially in combination with skipped meals, - impaired renal function, - serious liver dysfunction" }
+        ] },
+      { "t": "Stress (accidents, acute operations, febrile infections): a temporary switch to insulin may be indicated.",
+        "src": [{ "s": "emc-10744", "q": "In stress-situations (e.g. accidents, acute operations, infections with fever, etc.) a temporary switch to insulin may be indicated." }] },
+      { "t": "No experience in severe liver impairment or in dialysis patients.", "detail": true,
+        "src": [{ "s": "emc-10744", "q": "No experience has been gained concerning the use of Glimepiride in patients with severe impairment of liver function or dialysis patients." }] },
+      { "t": "G6PD deficiency: risk of haemolytic anaemia; use with caution and consider a non-sulfonylurea alternative.",
+        "src": [{ "s": "emc-10744", "q": "caution should be used in patients with G6PD-deficiency and a non-sulfonylurea alternative should be considered." }] },
+      { "t": "Contains lactose: patients with hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it.", "detail": true,
+        "src": [{ "s": "emc-10744", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Glimepiride is metabolised by CYP2C9: inducers (e.g. rifampicin) and inhibitors (e.g. fluconazole) change its effect; fluconazole roughly doubles glimepiride exposure. Other medicines should only be taken with the doctor's knowledge.",
+        "src": [
+          { "s": "emc-10744", "q": "Glimepiride is metabolized by cytochrome P450 2C9 (CYP2C9)." },
+          { "s": "emc-10744", "q": "glimepiride AUC is increased approximately 2-fold by fluconazole" },
+          { "s": "emc-10744", "q": "other medicinal products should only be taken with the knowledge (or at the prescription) of the doctor." }
+        ] },
+      { "t": "May increase glucose lowering (hypoglycaemia): insulin and other oral antidiabetics (e.g. metformin), salicylates, some long-acting sulfonamides, tetracyclines, quinolones, clarithromycin, coumarin anticoagulants, fibrates, ACE inhibitors, fluoxetine, MAOIs, allopurinol, miconazole, fluconazole, and others.",
+        "src": [
+          { "s": "emc-10744", "q": "insulin and oral antidiabetic products, such as metformin, - salicylates and p-amino-salicylic acid" },
+          { "s": "emc-10744", "q": "chloramphenicol, certain long acting sulfonamides, tetracyclines, quinolone antibiotics and clarithromycin, - coumarin anticoagulants" },
+          { "s": "emc-10744", "q": "fibrates, - ACE inhibitors, - fluoxetine, MAO-inhibitors, - allopurinol, probenecid, sulfinpyrazone" },
+          { "s": "emc-10744", "q": "miconazole, fluconazole" }
+        ] },
+      { "t": "May weaken glucose lowering (raised glucose): oestrogens and progestogens, thiazide diuretics, glucocorticoids, thyroid-stimulating agents, phenothiazines, adrenaline and sympathomimetics, long-term laxatives, phenytoin, rifampicin, acetazolamide, and others.",
+        "src": [
+          { "s": "emc-10744", "q": "oestrogens and progestogens, - saluretics, thiazide diuretics, - thyroid stimulating agents, glucocorticoids" },
+          { "s": "emc-10744", "q": "adrenaline and sympathicomimetics" },
+          { "s": "emc-10744", "q": "laxatives (long term use)" }
+        ] },
+      { "t": "Beta-blockers (and clonidine, reserpine, H2 antagonists): may increase or weaken the effect; beta-blockers may reduce or abolish the warning signs of hypoglycaemia.",
+        "src": [
+          { "s": "emc-10744", "q": "H2 antagonists, beta blockers, clonidine and reserpine may lead to either potentiation or weakening of the blood glucose lowering effect." },
+          { "s": "emc-10744", "q": "the signs of adrenergic counterregulation to hypoglycaemia may be reduced or absent." }
+        ] },
+      { "t": "Alcohol: may increase or weaken the effect unpredictably. Coumarin anticoagulants: glimepiride may increase or weaken their effect.",
+        "src": [
+          { "s": "emc-10744", "q": "Alcohol intake may potentiate or weaken the hypoglycaemic action of glimepiride in an unpredictable fashion." },
+          { "s": "emc-10744", "q": "Glimepiride may either potentiate or weaken the effects of coumarin derivatives." }
+        ] },
+      { "t": "Colesevelam (not in this tool's list): give glimepiride at least 4 hours before.", "detail": true,
+        "src": [{ "s": "emc-10744", "q": "glimepiride should be administered at least 4 hours prior to colesevelam." }] }
+    ] },
+    "renal": { "items": [
+      { "t": "Severe renal function disorders: contraindicated; change to insulin. The SmPC gives no numeric threshold. Impaired renal function increases hypoglycaemia risk.",
+        "src": [
+          { "s": "emc-10744", "q": "severe renal or hepatic function disorders. In case of severe renal or hepatic function disorders, a changeover to insulin is required." },
+          { "s": "emc-10744", "q": "impaired renal function" }
+        ] },
+      { "t": "No experience in dialysis patients.", "detail": true,
+        "src": [{ "s": "emc-10744", "q": "No experience has been gained concerning the use of Glimepiride in patients with severe impairment of liver function or dialysis patients." }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Severe hepatic function disorders: contraindicated; change to insulin. Serious liver dysfunction increases hypoglycaemia risk.",
+        "src": [
+          { "s": "emc-10744", "q": "severe renal or hepatic function disorders. In case of severe renal or hepatic function disorders, a changeover to insulin is required." },
+          { "s": "emc-10744", "q": "serious liver dysfunction" }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: should not be used at any stage of pregnancy (animal reproductive toxicity). If planning pregnancy or pregnant, switch to insulin as soon as possible.",
+        "src": [
+          { "s": "emc-10744", "q": "Consequently, glimepiride should not be used during the whole pregnancy." },
+          { "s": "emc-10744", "q": "In case of treatment by glimepiride, if the patient plans to become pregnant or if a pregnancy is discovered, the treatment should be switched as soon as possible to insulin therapy." }
+        ] },
+      { "t": "BUMPS: treat type 2 diabetes in pregnancy with metformin, plus insulin if needed; sulfonylureas are avoided as a precaution. With an unplanned pregnancy, keep taking it until reviewed promptly.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "you should carry on with the drug you are taking until your appointment, as uncontrolled diabetes is risky for you and your baby" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: breastfeeding is advised against (other sulfonylureas pass into milk; risk of hypoglycaemia in the infant).",
+        "src": [{ "s": "emc-10744", "q": "As other sulfonylureas are excreted in human milk and because there is a risk of hypoglycaemia in nursing infants, breast-feeding is advised against during treatment with glimepiride." }] },
+      { "t": "SPS: insulin or metformin are the preferred choices; limited or no published information on other antidiabetic medicines.",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "No fertility data. Patients considering pregnancy should tell their doctor.",
+        "src": [
+          { "s": "emc-10744", "q": "No data on fertility is available." },
+          { "s": "emc-10744", "q": "Patients who consider pregnancy should inform their physician." }
+        ] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "The SmPC lists no very common or common reactions. Listed as rare: hypoglycaemia (may be severe and hard to correct), taste disturbance, alopecia, weight gain, and blood count changes.",
+        "src": [
+          { "s": "emc-10744", "q": "Rare: hypoglycaemia. These hypoglycaemic reactions mostly occur immediately, may be severe and are not always easy to correct." },
+          { "s": "emc-10744", "q": "Rare: dysgeusia." },
+          { "s": "emc-10744", "q": "Rare: alopecia." },
+          { "s": "emc-10744", "q": "Rare: weight gain." }
+        ] },
+      { "t": "Transient visual disturbances, especially when starting, from changes in blood glucose (frequency not known).", "detail": true,
+        "src": [{ "s": "emc-10744", "q": "Not known: visual disturbances, transient, may occur especially on initiation of treatment, due to changes in blood glucose levels." }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Severe or prolonged hypoglycaemia: needs immediate medical treatment, sometimes in hospital; may recur.",
+        "src": [{ "s": "emc-10744", "q": "Severe hypoglycaemia or prolonged hypoglycaemia, only temporarily controlled by the usual amounts of sugar, require immediate medical treatment and occasionally hospitalisation." }] },
+      { "t": "Blood disorders (rare: thrombocytopenia, leukopenia, agranulocytosis, haemolytic anaemia, pancytopenia; not known: severe thrombocytopenia with purpura).",
+        "src": [
+          { "s": "emc-10744", "q": "Rare: thrombocytopenia, leukopenia, granulocytopenia, agranulocytosis, erythropenia, haemolytic anaemia and pancytopenia, which are in general reversible upon discontinuation of medication." },
+          { "s": "emc-10744", "q": "Not known: severe thrombocytopenia with platelet count less than 10,000/μl and thrombocytopenic purpura." }
+        ] },
+      { "t": "Very rare: hypersensitivity that may progress to breathlessness, low blood pressure and shock; hepatitis and hepatic failure; low sodium.", "detail": true,
+        "src": [
+          { "s": "emc-10744", "q": "Very rare: leukocytoclaslic vasculitis, mild hypersensitivity reactions that may develop into serious reactions with dyspnoea, fall in blood pressure and sometimes shock." },
+          { "s": "emc-10744", "q": "Very rare: hepatic function abnormal (e.g. with cholestasis and jaundice), hepatitis and hepatic failure." }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Blood and urine glucose regularly; HbA1c recommended.", "tag": "ongoing",
+        "src": [{ "s": "emc-10744", "q": "Treatment with Glimepiride requires regular monitoring of glucose levels in blood and urine. In addition determination of the proportion of glycosylated haemoglobin is recommended." }] },
+      { "t": "Liver function and blood counts (especially white cells and platelets) regularly.", "tag": "ongoing",
+        "src": [{ "s": "emc-10744", "q": "Regular hepatic and haematological monitoring (especially leucocytes and thrombocytes) are required during treatment with Glimepiride." }] },
+      { "t": "Review dose as control improves; reduce or stop if hypoglycaemia occurs.", "tag": "stop",
+        "src": [{ "s": "emc-10744", "q": "To avoid hypoglycaemia timely dose reduction or cessation of therapy must therefore be considered." }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Once daily shortly before or during a substantial breakfast (or the first main meal). Swallow with some liquid.",
+        "src": [
+          { "s": "emc-10744", "q": "It is recommended that this dose be taken shortly before or during a substantial breakfast or - if none is taken - shortly before or during the first main meal." },
+          { "s": "emc-10744", "q": "Tablets should be swallowed whole with some liquid." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Take shortly before or with a meal and do not skip meals; know the signs of low blood sugar. Sugar treats it; artificial sweeteners do not.",
+        "src": [
+          { "s": "emc-10744", "q": "Glimepiride must be taken shortly before or during a meal." },
+          { "s": "emc-10744", "q": "Symptoms can almost always be promptly controlled by immediate intake carbohydrates (sugar). Artificial sweeteners have no effect." }
+        ] },
+      { "t": "Take precautions to avoid low blood sugar when driving, especially with reduced awareness of warning signs or frequent episodes.",
+        "src": [{ "s": "emc-10744", "q": "Patients should be advised to take precautions to avoid hypoglycaemia whilst driving." }] },
+      { "t": "Take other medicines only with your doctor's knowledge.", "detail": true,
+        "src": [{ "s": "emc-10744", "q": "other medicinal products should only be taken with the knowledge (or at the prescription) of the doctor." }] }
+    ] }
+  },
+  "rules": [
+    { "id": "glimepiride:allergy:glimepiride", "kind": "allergy", "level": "contraindicated", "med": "glimepiride", "allergen": ["glimepiride"],
+      "concern": "Hypersensitivity to glimepiride", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "contraindicated in patients with ... hypersensitivity to glimepiride",
+      "src": [{ "s": "emc-10744", "q": "hypersensitivity to glimepiride, other sulfonylureas or sulfonamides or to any of the excipients listed in section 6.1" }] },
+    { "id": "glimepiride:allergy:sulfonylurea", "kind": "allergy", "level": "contraindicated", "med": "glimepiride", "allergen": ["group:sulfonylurea"],
+      "concern": "Hypersensitivity to another sulfonylurea", "consequence": "Cross-allergenicity with sulfonylureas is possible.", "action": "Do not use (SmPC contraindication).", "sourceWording": "contraindicated in patients with ... hypersensitivity to ... other sulfonylureas",
+      "src": [
+        { "s": "emc-10744", "q": "hypersensitivity to glimepiride, other sulfonylureas or sulfonamides or to any of the excipients listed in section 6.1" },
+        { "s": "emc-10744", "q": "Not known: cross-allergenicity with sulfonylureas, sulfonamides or related substances is possible." }
+      ] },
+    { "id": "glimepiride:allergy:sulfonamide", "kind": "allergy", "level": "contraindicated", "med": "glimepiride", "allergen": ["group:sulfonamide", "group:non-antibiotic-sulfonamide"],
+      "concern": "Hypersensitivity to sulfonamides (SmPC wording; covers antibiotic and non-antibiotic sulfonamides such as thiazide or loop diuretics)", "consequence": "SmPC: cross-allergenicity with sulfonamides is possible.", "action": "SmPC: do not use. SPS view differs (see the separate SPS rules).", "sourceWording": "contraindicated in patients with ... hypersensitivity to ... sulfonamides",
+      "src": [
+        { "s": "emc-10744", "q": "hypersensitivity to glimepiride, other sulfonylureas or sulfonamides or to any of the excipients listed in section 6.1" },
+        { "s": "emc-10744", "q": "Not known: cross-allergenicity with sulfonylureas, sulfonamides or related substances is possible." }
+      ] },
+    { "id": "glimepiride:allergy:sulfonamide-sps", "kind": "allergy", "level": "info", "med": "glimepiride", "allergen": ["group:sulfonamide"],
+      "concern": "Sulfonamide antibiotic allergy (SPS view)", "consequence": "SPS: cross-reactivity between antibiotic and non-antibiotic sulfonamides (such as sulfonylureas) is not expected.", "action": "SPS: a non-sulfonamide alternative may be preferable; if prescribed, document reasoning and counsel. After a serious reaction, consider an alternative or specialist opinion.", "sourceWording": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected",
+      "src": [
+        { "s": "sps-sulfonamide", "q": "Classes where all members have a sulfonamide group include: carbonic anhydrase inhibitors loop diuretics sulfonylureas" },
+        { "s": "sps-sulfonamide", "q": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected, including in people who had a life-threatening reaction to a sulfonamide." },
+        { "s": "sps-sulfonamide", "q": "It may be preferable to use a suitable non-sulfonamide alternative if one is appropriate." }
+      ] },
+    { "id": "glimepiride:allergy:non-antibiotic-sulfonamide-sps", "kind": "allergy", "level": "info", "med": "glimepiride", "allergen": ["group:thiazide", "group:loop-diuretic"],
+      "concern": "Allergy to a thiazide or loop diuretic (other non-antibiotic sulfonamide classes): SPS view", "consequence": "SPS: there is no evidence of cross-reactivity between different classes of non-antibiotic sulfonamides (sulfonylureas, loop diuretics and thiazides are separate classes).", "action": "SPS: avoiding every sulfonamide-containing drug is not advisable. The SmPC contraindication (separate rule) still applies.", "sourceWording": "There is no evidence of cross-reactivity between different classes of non-antibiotic sulfonamides",
+      "src": [
+        { "s": "sps-sulfonamide", "q": "Classes where all members have a sulfonamide group include: carbonic anhydrase inhibitors loop diuretics sulfonylureas thiazides and thiazide-like diuretics" },
+        { "s": "sps-sulfonamide", "q": "There is no evidence of cross-reactivity between different classes of non-antibiotic sulfonamides." },
+        { "s": "sps-sulfonamide", "q": "Avoiding all drugs with a sulfonamide group in people with a sulfonamide hypersensitivity is not advisable." }
+      ] },
+    { "id": "glimepiride:condition:type-1-diabetes", "kind": "condition", "level": "contraindicated", "med": "glimepiride", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Contraindicated.", "action": "Do not use.", "sourceWording": "contraindicated in patients with ... diabetes mellitus type 1",
+      "src": [{ "s": "emc-10744", "q": "diabetes mellitus type 1, - diabetic coma, - ketoacidosis," }] },
+    { "id": "glimepiride:condition:dka", "kind": "condition", "level": "contraindicated", "med": "glimepiride", "condition": "diabetic-ketoacidosis",
+      "concern": "Ketoacidosis or diabetic coma", "consequence": "Contraindicated.", "action": "Do not use.", "sourceWording": "contraindicated in patients with ... ketoacidosis",
+      "src": [{ "s": "emc-10744", "q": "diabetes mellitus type 1, - diabetic coma, - ketoacidosis," }] },
+    { "id": "glimepiride:condition:severe-renal", "kind": "condition", "level": "contraindicated", "med": "glimepiride", "condition": "severe-renal-impairment",
+      "concern": "Severe renal function disorder (no numeric threshold given)", "consequence": "Contraindicated.", "action": "Do not use; change to insulin.", "sourceWording": "contraindicated in patients with ... severe renal or hepatic function disorders",
+      "src": [{ "s": "emc-10744", "q": "severe renal or hepatic function disorders. In case of severe renal or hepatic function disorders, a changeover to insulin is required." }] },
+    { "id": "glimepiride:condition:renal-impairment", "kind": "condition", "level": "info", "med": "glimepiride", "condition": "renal-impairment",
+      "concern": "Impaired renal function", "consequence": "Favours hypoglycaemia.", "action": "Be aware of higher hypoglycaemia risk; severe impairment is contraindicated.", "sourceWording": "Factors favouring hypoglycaemia include ... impaired renal function",
+      "src": [{ "s": "emc-10744", "q": "impaired renal function" }] },
+    { "id": "glimepiride:condition:malnutrition", "kind": "condition", "level": "info", "med": "glimepiride", "condition": "malnutrition",
+      "concern": "Undernutrition, irregular or missed meals, fasting", "consequence": "Favours hypoglycaemia.", "action": "Be aware of a higher hypoglycaemia risk.", "sourceWording": "Factors favouring hypoglycaemia include",
+      "src": [
+        { "s": "emc-10744", "q": "Factors favouring hypoglycaemia include" },
+        { "s": "emc-10744", "q": "undernutrition, irregular mealtimes or missed meals or periods of fasting" }
+      ] },
+    { "id": "glimepiride:condition:alcohol", "kind": "condition", "level": "info", "med": "glimepiride", "condition": "alcohol-dependence",
+      "concern": "Alcohol use", "consequence": "Favours hypoglycaemia (especially with skipped meals); alcohol may increase or weaken the effect unpredictably.", "action": "Be aware of unpredictable glucose control.", "sourceWording": "Factors favouring hypoglycaemia include",
+      "src": [
+        { "s": "emc-10744", "q": "Factors favouring hypoglycaemia include" },
+        { "s": "emc-10744", "q": "consumption of alcohol, especially in combination with skipped meals" },
+        { "s": "emc-10744", "q": "Alcohol intake may potentiate or weaken the hypoglycaemic action of glimepiride in an unpredictable fashion." }
+      ] },
+    { "id": "glimepiride:condition:adrenal-insufficiency", "kind": "condition", "level": "info", "med": "glimepiride", "condition": "adrenal-insufficiency",
+      "concern": "Uncompensated adrenocortical or anterior pituitary insufficiency", "consequence": "Favours hypoglycaemia.", "action": "Be aware of a higher hypoglycaemia risk.", "sourceWording": "Factors favouring hypoglycaemia include",
+      "src": [
+        { "s": "emc-10744", "q": "Factors favouring hypoglycaemia include" },
+        { "s": "emc-10744", "q": "certain uncompensated disorders of the endocrine system affecting carbohydrate metabolism or counter-regulation of hypoglycaemia (as for example in certain disorders of thyroid function and in anterior pituitary or adrenocortical insufficiency)" }
+      ] },
+    { "id": "glimepiride:condition:thyroid", "kind": "condition", "level": "info", "med": "glimepiride", "condition": "thyroid-dysfunction",
+      "concern": "Uncompensated thyroid disorder", "consequence": "Favours hypoglycaemia.", "action": "Be aware of a higher hypoglycaemia risk.", "sourceWording": "Factors favouring hypoglycaemia include",
+      "src": [
+        { "s": "emc-10744", "q": "Factors favouring hypoglycaemia include" },
+        { "s": "emc-10744", "q": "certain uncompensated disorders of the endocrine system affecting carbohydrate metabolism or counter-regulation of hypoglycaemia (as for example in certain disorders of thyroid function and in anterior pituitary or adrenocortical insufficiency)" }
+      ] },
+    { "id": "glimepiride:hepatic:severe", "kind": "hepatic", "level": "contraindicated", "med": "glimepiride", "hepatic": ["severe"],
+      "concern": "Severe hepatic function disorder", "consequence": "Contraindicated.", "action": "Do not use; change to insulin.", "sourceWording": "contraindicated in patients with ... severe renal or hepatic function disorders",
+      "src": [{ "s": "emc-10744", "q": "severe renal or hepatic function disorders. In case of severe renal or hepatic function disorders, a changeover to insulin is required." }] },
+    { "id": "glimepiride:condition:g6pd", "kind": "condition", "level": "caution", "med": "glimepiride", "condition": "g6pd-deficiency",
+      "concern": "G6PD deficiency", "consequence": "Sulfonylureas can cause haemolytic anaemia.", "action": "Use with caution; consider a non-sulfonylurea alternative.", "sourceWording": "caution should be used",
+      "src": [{ "s": "emc-10744", "q": "caution should be used in patients with G6PD-deficiency and a non-sulfonylurea alternative should be considered." }] },
+    { "id": "glimepiride:condition:galactose", "kind": "condition", "level": "avoid", "med": "glimepiride", "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption", "consequence": "Tablets contain lactose.", "action": "Should not take this medicine.", "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-10744", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }] },
+    { "id": "glimepiride:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "glimepiride",
+      "concern": "Pregnancy (whole pregnancy)", "consequence": "Animal reproductive toxicity (likely from hypoglycaemia).", "action": "Should not be used; switch to insulin as soon as possible if planning pregnancy or pregnant. BUMPS: use metformin, with insulin if needed.", "sourceWording": "should not be used during the whole pregnancy",
+      "src": [
+        { "s": "emc-10744", "q": "Consequently, glimepiride should not be used during the whole pregnancy." },
+        { "s": "emc-10744", "q": "the treatment should be switched as soon as possible to insulin therapy." }
+      ] },
+    { "id": "glimepiride:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "glimepiride",
+      "concern": "Breastfeeding", "consequence": "Risk of hypoglycaemia in the nursing infant.", "action": "Breastfeeding is advised against during treatment. SPS: insulin or metformin are preferred.", "sourceWording": "breast-feeding is advised against",
+      "src": [
+        { "s": "emc-10744", "q": "breast-feeding is advised against during treatment with glimepiride." },
+        { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." }
+      ] },
+    { "id": "glimepiride:age:lt18", "kind": "age", "level": "avoid", "med": "glimepiride", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Child or adolescent", "consequence": "No data under 8 years; insufficient data at 8 to 17 years.", "action": "Use is not recommended.", "sourceWording": "such use is not recommended",
+      "src": [{ "s": "emc-10744", "q": "The available data on safety and efficacy are insufficient in the paediatric population and therefore such use is not recommended." }] },
+    { "id": "glimepiride:interaction:insulin", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + insulin", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Start insulin low and titrate under close medical supervision.", "sourceWording": "hypoglycaemia may occur",
+      "src": [
+        { "s": "emc-10744", "q": "insulin and oral antidiabetic products, such as metformin, - salicylates and p-amino-salicylic acid" },
+        { "s": "emc-10744", "q": "The combination therapy should be initiated under close medical supervision." }
+      ] },
+    { "id": "glimepiride:interaction:oral-antidiabetic", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:oral-antidiabetic", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + another oral antidiabetic (e.g. metformin)", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Start low and titrate under close medical supervision.", "sourceWording": "hypoglycaemia may occur",
+      "src": [
+        { "s": "emc-10744", "q": "insulin and oral antidiabetic products, such as metformin, - salicylates and p-amino-salicylic acid" },
+        { "s": "emc-10744", "q": "The combination therapy should be initiated under close medical supervision." }
+      ] },
+    { "id": "glimepiride:interaction:salicylate", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:salicylate", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + salicylate", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia.", "sourceWording": "hypoglycaemia may occur",
+      "src": [{ "s": "emc-10744", "q": "insulin and oral antidiabetic products, such as metformin, - salicylates and p-amino-salicylic acid" }] },
+    { "id": "glimepiride:interaction:sulfonamide", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:sulfonamide", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + long-acting sulfonamide", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia.", "sourceWording": "hypoglycaemia may occur",
+      "src": [{ "s": "emc-10744", "q": "chloramphenicol, certain long acting sulfonamides, tetracyclines, quinolone antibiotics and clarithromycin, - coumarin anticoagulants" }] },
+    { "id": "glimepiride:interaction:tetracycline", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:tetracycline", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + tetracycline", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia.", "sourceWording": "hypoglycaemia may occur",
+      "src": [{ "s": "emc-10744", "q": "chloramphenicol, certain long acting sulfonamides, tetracyclines, quinolone antibiotics and clarithromycin, - coumarin anticoagulants" }] },
+    { "id": "glimepiride:interaction:fluoroquinolone", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:fluoroquinolone", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + quinolone antibiotic", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia.", "sourceWording": "hypoglycaemia may occur",
+      "src": [{ "s": "emc-10744", "q": "chloramphenicol, certain long acting sulfonamides, tetracyclines, quinolone antibiotics and clarithromycin, - coumarin anticoagulants" }] },
+    { "id": "glimepiride:interaction:clarithromycin", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "clarithromycin", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + clarithromycin", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia.", "sourceWording": "hypoglycaemia may occur",
+      "src": [{ "s": "emc-10744", "q": "chloramphenicol, certain long acting sulfonamides, tetracyclines, quinolone antibiotics and clarithromycin, - coumarin anticoagulants" }] },
+    { "id": "glimepiride:interaction:vka", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:vitamin-k-antagonist", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + coumarin anticoagulant (e.g. warfarin)", "consequence": "Coumarins may increase glimepiride's glucose lowering; glimepiride may increase or weaken the coumarin effect.", "action": "Be alert to hypoglycaemia and to changes in anticoagulant effect.", "sourceWording": "may either potentiate or weaken the effects of coumarin derivatives",
+      "src": [
+        { "s": "emc-10744", "q": "chloramphenicol, certain long acting sulfonamides, tetracyclines, quinolone antibiotics and clarithromycin, - coumarin anticoagulants" },
+        { "s": "emc-10744", "q": "Glimepiride may either potentiate or weaken the effects of coumarin derivatives." }
+      ] },
+    { "id": "glimepiride:interaction:fibrate", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:fibrate", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + fibrate", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia.", "sourceWording": "hypoglycaemia may occur",
+      "src": [{ "s": "emc-10744", "q": "fibrates, - ACE inhibitors, - fluoxetine, MAO-inhibitors, - allopurinol, probenecid, sulfinpyrazone" }] },
+    { "id": "glimepiride:interaction:ace-inhibitor", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:ace-inhibitor", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + ACE inhibitor", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia.", "sourceWording": "hypoglycaemia may occur",
+      "src": [{ "s": "emc-10744", "q": "fibrates, - ACE inhibitors, - fluoxetine, MAO-inhibitors, - allopurinol, probenecid, sulfinpyrazone" }] },
+    { "id": "glimepiride:interaction:fluoxetine", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "fluoxetine", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + fluoxetine", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia.", "sourceWording": "hypoglycaemia may occur",
+      "src": [{ "s": "emc-10744", "q": "fibrates, - ACE inhibitors, - fluoxetine, MAO-inhibitors, - allopurinol, probenecid, sulfinpyrazone" }] },
+    { "id": "glimepiride:interaction:allopurinol", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "allopurinol", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + allopurinol", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia.", "sourceWording": "hypoglycaemia may occur",
+      "src": [{ "s": "emc-10744", "q": "fibrates, - ACE inhibitors, - fluoxetine, MAO-inhibitors, - allopurinol, probenecid, sulfinpyrazone" }] },
+    { "id": "glimepiride:interaction:miconazole", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "miconazole", "effect": "hypoglycaemia", "otherFormulations": ["miconazole-oral-gel"],
+      "concern": "Glimepiride + miconazole oral gel", "consequence": "Potentiated glucose lowering; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia. The SmPC names miconazole without a route; limited here to the oral gel (the clinic has no systemic miconazole; the vaginal product has its own rule).", "sourceWording": "hypoglycaemia may occur",
+      "src": [{ "s": "emc-10744", "q": "miconazole, fluconazole" }] },
+    { "id": "glimepiride:interaction:fluconazole", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "fluconazole", "effect": "hypoglycaemia",
+      "concern": "Glimepiride + fluconazole", "consequence": "Fluconazole (strong CYP2C9 inhibitor) about doubles glimepiride exposure; hypoglycaemia may occur.", "action": "Be alert to hypoglycaemia.", "sourceWording": "hypoglycaemia may occur",
+      "src": [
+        { "s": "emc-10744", "q": "glimepiride AUC is increased approximately 2-fold by fluconazole" },
+        { "s": "emc-10744", "q": "miconazole, fluconazole" }
+      ] },
+    { "id": "glimepiride:interaction:beta-blocker", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:beta-blocker",
+      "concern": "Glimepiride + beta-blocker", "consequence": "Glucose lowering may increase or weaken; warning signs of hypoglycaemia may be reduced or absent.", "action": "Be aware that hypoglycaemia may be masked.", "sourceWording": "may lead to either potentiation or weakening",
+      "src": [
+        { "s": "emc-10744", "q": "H2 antagonists, beta blockers, clonidine and reserpine may lead to either potentiation or weakening of the blood glucose lowering effect." },
+        { "s": "emc-10744", "q": "the signs of adrenergic counterregulation to hypoglycaemia may be reduced or absent." }
+      ] },
+    { "id": "glimepiride:interaction:progestogen", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:progestogen",
+      "concern": "Glimepiride + oestrogen or progestogen", "consequence": "Weakened glucose lowering; raised blood glucose.", "action": "Be aware of possible loss of control.", "sourceWording": "Weakening of the blood-glucose-lowering effect",
+      "src": [{ "s": "emc-10744", "q": "oestrogens and progestogens, - saluretics, thiazide diuretics, - thyroid stimulating agents, glucocorticoids" }] },
+    { "id": "glimepiride:interaction:thiazide", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:thiazide",
+      "concern": "Glimepiride + thiazide diuretic", "consequence": "Weakened glucose lowering; raised blood glucose.", "action": "Be aware of possible loss of control.", "sourceWording": "Weakening of the blood-glucose-lowering effect",
+      "src": [{ "s": "emc-10744", "q": "oestrogens and progestogens, - saluretics, thiazide diuretics, - thyroid stimulating agents, glucocorticoids" }] },
+    { "id": "glimepiride:interaction:corticosteroid", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:corticosteroid",
+      "concern": "Glimepiride + glucocorticoid", "consequence": "Weakened glucose lowering; raised blood glucose.", "action": "Be aware of possible loss of control.", "sourceWording": "Weakening of the blood-glucose-lowering effect",
+      "src": [{ "s": "emc-10744", "q": "oestrogens and progestogens, - saluretics, thiazide diuretics, - thyroid stimulating agents, glucocorticoids" }] },
+    { "id": "glimepiride:interaction:sympathomimetic", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:sympathomimetic",
+      "concern": "Glimepiride + sympathomimetic", "consequence": "Weakened glucose lowering; raised blood glucose.", "action": "Be aware of possible loss of control.", "sourceWording": "Weakening of the blood-glucose-lowering effect",
+      "src": [{ "s": "emc-10744", "q": "adrenaline and sympathicomimetics" }] },
+    { "id": "glimepiride:interaction:laxative", "kind": "interaction", "level": "info", "med": "glimepiride", "other": "group:laxative",
+      "concern": "Glimepiride + laxative (long-term use)", "consequence": "Weakened glucose lowering; raised blood glucose.", "action": "Be aware of possible loss of control with long-term laxative use.", "sourceWording": "Weakening of the blood-glucose-lowering effect",
+      "src": [{ "s": "emc-10744", "q": "laxatives (long term use)" }] }
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "id": "dapagliflozin-metformin",
+  "name": "Dapagliflozin/metformin",
+  "ingredients": ["dapagliflozin", "metformin"],
+  "className": "Combination oral blood glucose-lowering drug (SGLT2 inhibitor + biguanide)",
+  "groups": ["sglt2-inhibitor", "biguanide", "antidiabetic", "oral-antidiabetic"],
+  "searchTerms": ["dapagliflozin and metformin", "dapagliflozin metformin hydrochloride"],
+  "formulations": [
+    {
+      "id": "dapagliflozin-metformin-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "5 mg/850 mg, 5 mg/1,000 mg",
+      "release": "immediate",
+      "note": "The clinic lists a 10 mg/1000 mg tablet. No such strength was found in the UK: the UK tablets are 5 mg/850 mg and 5 mg/1,000 mg, one tablet twice daily (10 mg dapagliflozin a day). The data here come from those UK tablets.",
+      "src": [
+        { "s": "emc-5293", "q": "Each tablet contains dapagliflozin propanediol monohydrate equivalent to 5 mg dapagliflozin and 850 mg of metformin hydrochloride." },
+        { "s": "emc-7612", "q": "Each tablet contains dapagliflozin propanediol monohydrate equivalent to 5 mg dapagliflozin and 1,000 mg of metformin hydrochloride." },
+        { "s": "emc-7612", "q": "The recommended dose is one tablet twice daily." }
+      ],
+      "sourceIds": ["emc-7612", "emc-5293"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "availability": { "status": "uk" },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Type 2 diabetes in adults, with diet and exercise: when not controlled on maximally tolerated metformin alone; with other diabetes medicines when not controlled on metformin plus those medicines; or to replace separate dapagliflozin and metformin tablets.",
+        "src": [
+          { "s": "emc-7612", "q": "Xigduo is indicated in adults for the treatment of type 2 diabetes mellitus as an adjunct to diet and exercise" },
+          { "s": "emc-7612", "q": "in patients insufficiently controlled on their maximally tolerated dose of metformin alone" },
+          { "s": "emc-7612", "q": "in patients already being treated with the combination of dapagliflozin and metformin as separate tablets." }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Not for type 1 diabetes (safety and efficacy not established; ketoacidosis was common in type 1 studies).",
+        "src": [{ "s": "emc-7612", "q": "The safety and efficacy of Xigduo in patients with type 1 diabetes have not been established and Xigduo should not be used for treatment of patients with type 1 diabetes." }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "One tablet twice daily with meals. Total daily dose: dapagliflozin 10 mg plus the metformin dose already taken (or nearest suitable dose).", "tag": "Type 2 diabetes, adults (normal renal function, GFR ≥ 90 mL/min)",
+        "src": [
+          { "s": "emc-7612", "q": "The recommended dose is one tablet twice daily." },
+          { "s": "emc-7612", "q": "should receive a total daily dose of Xigduo equivalent to dapagliflozin 10 mg, plus the total daily dose of metformin, or the nearest therapeutically appropriate dose, already being taken." }
+        ] },
+      { "t": "With insulin or an insulin secretagogue (e.g. a sulfonylurea): consider a lower dose of these to reduce hypoglycaemia risk.", "tag": "With insulin or sulfonylurea",
+        "src": [{ "s": "emc-7612", "q": "When Xigduo is used in combination with insulin or an insulin secretagogue such as sulphonylurea, a lower dose of insulin or sulphonylurea may be considered to reduce the risk of hypoglycaemia" }] },
+      { "t": "Switching from separate tablets: same daily doses of dapagliflozin (10 mg) and metformin, or the nearest suitable metformin dose.", "tag": "Switching from separate tablets", "detail": true,
+        "src": [{ "s": "emc-7612", "q": "Patients switching from separate tablets of dapagliflozin (10 mg total daily dose) and metformin to Xigduo should receive the same daily dose of dapagliflozin and metformin already being taken" }] },
+      { "t": "Elderly: use with caution as age increases; monitor renal function; consider volume depletion risk.", "tag": "Elderly (65 years and over)",
+        "src": [
+          { "s": "emc-7612", "q": "this medicinal product should be used with caution as age increases" },
+          { "s": "emc-7612", "q": "Monitoring of renal function is necessary to aid in prevention of metformin-associated lactic acidosis, particularly in elderly patients" }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Not established under 18 years; no data.",
+        "src": [{ "s": "emc-7612", "q": "The safety and efficacy of Xigduo in children and adolescents aged 0 to < 18 years have not yet been established. No data are available." }] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to dapagliflozin, metformin or any excipient.",
+        "src": [{ "s": "emc-7612", "q": "hypersensitivity to the active substances or to any of the excipients listed in section 6.1" }] },
+      { "t": "Any acute metabolic acidosis (e.g. lactic acidosis, diabetic ketoacidosis); diabetic pre-coma.",
+        "src": [{ "s": "emc-7612", "q": "any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis); - diabetic pre-coma;" }] },
+      { "t": "Severe renal failure (GFR < 30 mL/min).",
+        "src": [{ "s": "emc-7612", "q": "severe renal failure (GFR < 30 mL/min)" }] },
+      { "t": "Acute conditions that may alter renal function: dehydration, severe infection, shock.",
+        "src": [{ "s": "emc-7612", "q": "acute conditions with the potential to alter renal function such as: - dehydration, - severe infection, - shock;" }] },
+      { "t": "Acute or chronic disease that may cause tissue hypoxia: cardiac or respiratory failure, recent myocardial infarction, shock.",
+        "src": [{ "s": "emc-7612", "q": "acute or chronic disease which may cause tissue hypoxia such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock;" }] },
+      { "t": "Hepatic impairment; acute alcohol intoxication, alcoholism.",
+        "src": [{ "s": "emc-7612", "q": "hepatic impairment (see sections 4.2, 4.4 and 5.2); - acute alcohol intoxication, alcoholism" }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Lactic acidosis (metformin; very rare, serious): risk rises with acute worsening of renal function, cardiorespiratory illness or sepsis. Stop temporarily in dehydration (severe diarrhoea or vomiting, fever, low fluid intake). Start antihypertensives, diuretics and NSAIDs with caution.",
+        "src": [
+          { "s": "emc-7612", "q": "Lactic acidosis, a very rare but serious metabolic complication, most often occurs at acute worsening of renal function or cardiorespiratory illness or sepsis." },
+          { "s": "emc-7612", "q": "In case of dehydration (severe diarrhoea or vomiting, fever or reduced fluid intake), Xigduo should be temporarily discontinued and contact with a healthcare professional is recommended." },
+          { "s": "emc-7612", "q": "Medicinal products that can acutely impair renal function (such as antihypertensives, diuretics and non-steroidal anti-inflammatory drugs [NSAIDs]) should be initiated with caution in metformin-treated patients." }
+        ] },
+      { "t": "Diabetic ketoacidosis (dapagliflozin; rare, can be fatal, may occur with glucose below 14 mmol/L): assess at once if symptoms, stop immediately if suspected. Interrupt when hospitalised for major surgery or acute serious illness and monitor ketones. Restarting after DKA on an SGLT2 inhibitor is not recommended unless another clear cause was resolved. Use with caution in those at higher risk (low beta-cell reserve, pancreatitis history, restricted intake, alcohol abuse).",
+        "src": [
+          { "s": "emc-7612", "q": "In patients where DKA is suspected or diagnosed, treatment with dapagliflozin should be discontinued immediately." },
+          { "s": "emc-7612", "q": "Treatment should be interrupted in patients who are hospitalised for major surgical procedures or acute serious medical illnesses. Monitoring of ketones is recommended in these patients." },
+          { "s": "emc-7612", "q": "Restarting SGLT2 inhibitor treatment in patients with previous DKA while on SGLT2 inhibitor treatment is not recommended, unless another clear precipitating factor is identified and resolved." },
+          { "s": "emc-7612", "q": "SGLT2 inhibitors should be used with caution in these patients." }
+        ] },
+      { "t": "Renal function: do not start if GFR < 60 mL/min; stop if GFR is persistently below 45 mL/min.",
+        "src": [{ "s": "emc-7612", "q": "Xigduo should not be initiated in patients with GFR < 60 mL/min and should be discontinued at GFR persistently below 45 mL/min" }] },
+      { "t": "Volume depletion and hypotension (dapagliflozin): caution where a fall in blood pressure is a risk (antihypertensives with a history of hypotension, elderly); interrupt if volume depletion develops until corrected.",
+        "src": [
+          { "s": "emc-7612", "q": "Caution should be exercised in patients for whom a dapagliflozin-induced drop in blood pressure could pose a risk, such as patients on anti-hypertensive therapy with a history of hypotension or elderly patients." },
+          { "s": "emc-7612", "q": "Temporary interruption of treatment with this medicinal product is recommended for patients who develop volume depletion until the depletion is corrected" }
+        ] },
+      { "t": "Surgery under general, spinal or epidural anaesthesia: stop at the time of surgery; restart no earlier than 48 hours after surgery or return to eating, once renal function is re-checked and stable. Iodinated contrast: stop before or at the time of imaging; restart at least 48 hours after once renal function is stable.",
+        "src": [
+          { "s": "emc-7612", "q": "Xigduo must be discontinued at the time of surgery with general, spinal or epidural anaesthesia." },
+          { "s": "emc-7612", "q": "Xigduo should be discontinued prior to, or at the time of, the imaging procedure and not restarted until at least 48 hours after, provided that renal function has been re-evaluated and found to be stable" }
+        ] },
+      { "t": "Fournier's gangrene: if suspected, stop and treat urgently. Consider interrupting for pyelonephritis or urosepsis.",
+        "src": [
+          { "s": "emc-7612", "q": "If Fournier's gangrene is suspected, Xigduo should be discontinued and prompt treatment (including antibiotics and surgical debridement) should be instituted." },
+          { "s": "emc-7612", "q": "temporary interruption of treatment should be considered when treating pyelonephritis or urosepsis." }
+        ] },
+      { "t": "Mitochondrial disease (MELAS, MIDD): metformin is not recommended; withdraw immediately if suggestive signs appear.",
+        "src": [{ "s": "emc-7612", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease." }] },
+      { "t": "Vitamin B12 may fall (higher risk with dose, duration, risk factors): check levels if deficiency suspected; consider periodic checks in those at risk; continue while tolerated and treat deficiency.",
+        "src": [
+          { "s": "emc-7612", "q": "In case of suspicion of vitamin B12 deficiency (such as anaemia or neuropathy), vitamin B12 serum levels should be monitored." },
+          { "s": "emc-7612", "q": "Periodic vitamin B12 monitoring could be necessary in patients with risk factors for vitamin B12 deficiency." }
+        ] },
+      { "t": "A previously stable patient who becomes unwell or has abnormal tests should be checked promptly for ketoacidosis or lactic acidosis; stop at once if acidosis occurs.", "detail": true,
+        "src": [
+          { "s": "emc-7612", "q": "should be evaluated promptly for evidence of ketoacidosis or lactic acidosis." },
+          { "s": "emc-7612", "q": "If acidosis of either form occurs, treatment must be stopped immediately and other appropriate corrective measures initiated." }
+        ] },
+      { "t": "Lower limb amputation seen with another SGLT2 inhibitor: counsel on foot care. Raised haematocrit: investigate pronounced rises. Urine glucose tests will be positive.", "detail": true,
+        "src": [
+          { "s": "emc-7612", "q": "Like for all diabetic patients it is important to counsel patients on routine preventative foot care." },
+          { "s": "emc-7612", "q": "Patients with pronounced elevations in haematocrit should be monitored and investigated for underlying haematological disease." },
+          { "s": "emc-7612", "q": "patients taking this medicinal product will test positive for glucose in their urine." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Thiazide and loop diuretics: may add to the diuretic effect (dehydration, hypotension).",
+        "src": [{ "s": "emc-7612", "q": "This medicinal product may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and hypotension" }] },
+      { "t": "Insulin and insulin secretagogues (e.g. sulfonylureas): a lower dose of these may be needed.",
+        "src": [{ "s": "emc-7612", "q": "a lower dose of insulin or an insulin secretagogue may be required to reduce the risk of hypoglycaemia when used in combination with dapagliflozin" }] },
+      { "t": "NSAIDs (including COX-2 inhibitors), ACE inhibitors, angiotensin II receptor antagonists and diuretics (especially loop): may impair renal function and raise lactic acidosis risk - close monitoring of renal function is necessary.",
+        "src": [
+          { "s": "emc-7612", "q": "Some medicinal products can adversely affect renal function which may increase the risk of lactic acidosis, e.g. NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors, ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics." },
+          { "s": "emc-7612", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+        ] },
+      { "t": "Glucocorticoids (systemic and local), beta-2 agonists and diuretics raise glucose: inform the patient, monitor glucose more often, adjust dose during and after.",
+        "src": [
+          { "s": "emc-7612", "q": "Glucocorticoids (given by systemic and local routes), beta-2 agonists, and diuretics have intrinsic hyperglycaemic activity." },
+          { "s": "emc-7612", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+        ] },
+      { "t": "Alcohol: avoid alcohol and alcohol-containing medicines (lactic acidosis). Iodinated contrast: stop before imaging (see cautions). Cimetidine (not in this tool's list) raises metformin exposure.",
+        "src": [
+          { "s": "emc-7612", "q": "Consumption of alcohol and medicinal products containing alcohol should be avoided." },
+          { "s": "emc-7612", "q": "cimetidine, administered as 400 mg twice daily, increased metformin systemic exposure (AUC) by 50% and Cmax by 81%." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Check GFR before starting and at least annually; every 3 to 6 months in the elderly or if renal function may decline (the 4.4 text says 2 to 4 times a year when GFR < 60 mL/min).",
+        "src": [
+          { "s": "emc-7612", "q": "A GFR should be assessed before initiation of treatment with metformin containing medicinal products and at least annually thereafter." },
+          { "s": "emc-7612", "q": "For renal function with GFR levels < 60 mL/min and in elderly patients, at least 2 to 4 times per year." }
+        ] },
+      { "t": "GFR 60-89 mL/min: metformin max 3000 mg/day (consider reduction as function declines); dapagliflozin max 10 mg/day.",
+        "src": [{ "s": "emc-7612", "q": "60-89 Maximum daily dose is 3000 mg. Dose reduction may be considered in relation to declining renal function. Maximum total daily dose is 10 mg." }] },
+      { "t": "GFR 45-59 mL/min: do not start the combination (dapagliflozin should not be initiated). Metformin max 2000 mg/day, starting dose at most half the maximum; review lactic acidosis risk factors. If no suitable fixed-dose strength, use the single medicines.",
+        "src": [
+          { "s": "emc-7612", "q": "45-59 Maximum daily dose is 2000 mg. The starting dose is at most half of the maximum dose. Dapagliflozin should not be initiated." },
+          { "s": "emc-7612", "q": "If no adequate strength of Xigduo is available, individual mono-components should be used instead of the fixed dose combination." }
+        ] },
+      { "t": "GFR 30-44 mL/min: dapagliflozin not recommended; stop if GFR persistently below 45. Metformin max 1000 mg/day.",
+        "src": [
+          { "s": "emc-7612", "q": "30-44 Maximum daily dose is 1000 mg. The starting dose is at most half of the maximum dose. Dapagliflozin is not recommended." },
+          { "s": "emc-7612", "q": "If renal function falls persistently below GFR 45 mL/min, treatment should be discontinued." }
+        ] },
+      { "t": "GFR < 30 mL/min: contraindicated.",
+        "src": [{ "s": "emc-7612", "q": "Metformin is contraindicated in patients with GFR of < 30 mL/min" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Hepatic impairment (any): must not be used.",
+        "src": [{ "s": "emc-7612", "q": "This medicinal product must not be used in patients with hepatic impairment" }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: not recommended in the 2nd and 3rd trimesters (dapagliflozin kidney toxicity in rats). When planning pregnancy and during pregnancy, do not treat diabetes with this product; use insulin.",
+        "src": [
+          { "s": "emc-7612", "q": "Therefore, the use of this medicinal product is not recommended during the second and third trimesters of pregnancy." },
+          { "s": "emc-7612", "q": "When the patient plans to become pregnant, and during pregnancy, it is recommended that diabetes is not treated with this medicinal product, but insulin be used" }
+        ] },
+      { "t": "BUMPS: metformin (with insulin if needed) is recommended in pregnancy; SGLT2 inhibitors are avoided as a precaution. With an unplanned pregnancy, keep taking it until reviewed promptly.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "you should carry on with the drug you are taking until your appointment, as uncontrolled diabetes is risky for you and your baby" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: should not be used while breastfeeding (dapagliflozin in animal milk with effects on offspring; metformin passes into human milk in small amounts).",
+        "src": [{ "s": "emc-7612", "q": "Metformin is excreted in human milk in small amounts. A risk to the newborns/infants cannot be excluded. This medicinal product should not be used while breast-feeding." }] },
+      { "t": "SPS: insulin or metformin are preferred in breastfeeding; limited or no information on other antidiabetics (no SPS advice for the dapagliflozin component).",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Human fertility not studied; no effect in rats (dapagliflozin) and no reproductive toxicity in animals (metformin).", "detail": true,
+        "src": [{ "s": "emc-7612", "q": "In male and female rats, dapagliflozin showed no effects on fertility at any dose tested." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Genital infections (vulvovaginitis, balanitis): most frequently reported (5.5% vs 0.6% placebo, dapagliflozin data).",
+        "src": [
+          { "s": "emc-7612", "q": "The most frequently reported adverse reactions across the clinical studies were genital infections." },
+          { "s": "emc-7612", "q": "vulvovaginitis, balanitis and related genital infections were reported in 5.5% and 0.6% of subjects who received dapagliflozin 10 mg and placebo, respectively." }
+        ] },
+      { "t": "Gastrointestinal symptoms (nausea, vomiting, diarrhoea, abdominal pain, loss of appetite), mostly when starting and usually settle.",
+        "src": [{ "s": "emc-7612", "q": "Gastrointestinal symptoms such as nausea, vomiting, diarrhoea, abdominal pain and loss of appetite occur most frequently during initiation of therapy and resolve spontaneously in most cases." }] },
+      { "t": "Hypoglycaemia mainly with a sulfonylurea or insulin; also listed: urinary tract infection, vitamin B12 decrease, taste disturbance, volume depletion, increased urination.", "detail": true,
+        "src": [
+          { "s": "emc-7612", "q": "Hypoglycaemia (when used with SU or insulin)b Vitamin B12 decrease/deficiencyj,§ Volume depletionb,e" },
+          { "s": "emc-7612", "q": "Taste disturbance§" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Lactic acidosis (acidotic breathlessness, abdominal pain, muscle cramps, weakness, low temperature, then coma): stop and seek immediate medical attention.",
+        "src": [
+          { "s": "emc-7612", "q": "Lactic acidosis is characterised by acidotic dyspnoea, abdominal pain, muscle cramps, asthenia and hypothermia followed by coma." },
+          { "s": "emc-7612", "q": "In case of suspected symptoms, the patient should stop taking Xigduo and seek immediate medical attention." }
+        ] },
+      { "t": "Diabetic ketoacidosis (may occur with near-normal glucose): stop dapagliflozin immediately.",
+        "src": [{ "s": "emc-7612", "q": "In patients where DKA is suspected or diagnosed, treatment with dapagliflozin should be discontinued immediately." }] },
+      { "t": "Fournier's gangrene: urgent care for genital or perineal pain, tenderness, redness or swelling with fever or malaise.",
+        "src": [{ "s": "emc-7612", "q": "Patients should be advised to seek medical attention if they experience a combination of symptoms of pain, tenderness, erythema, or swelling in the genital or perineal area, with fever or malaise." }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "GFR before starting (do not start if GFR < 60 mL/min); consider ketoacidosis risk factors.", "tag": "baseline",
+        "src": [
+          { "s": "emc-7612", "q": "A GFR should be assessed before initiation of treatment with metformin containing medicinal products and at least annually thereafter." },
+          { "s": "emc-7612", "q": "Xigduo should not be initiated in patients with GFR < 60 mL/min" }
+        ] },
+      { "t": "Renal function at least annually; 2 to 4 times a year if GFR < 60 mL/min or elderly; before and during medicines that may reduce renal function. Vitamin B12 if deficiency suspected or risk factors.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-7612", "q": "For renal function with GFR levels < 60 mL/min and in elderly patients, at least 2 to 4 times per year." },
+          { "s": "emc-7612", "q": "Prior to initiation of concomitant medicinal products that may reduce renal function and periodically thereafter." },
+          { "s": "emc-7612", "q": "Periodic vitamin B12 monitoring could be necessary in patients with risk factors for vitamin B12 deficiency." }
+        ] },
+      { "t": "Hospital admission for major surgery or acute serious illness: interrupt and monitor blood ketones.", "tag": "ongoing",
+        "src": [{ "s": "mhra-dsu-sglt2-ketones-2020", "q": "monitor ketones during this period - measurement of blood ketone levels is preferred to urine" }] },
+      { "t": "Stop if GFR persistently < 45 mL/min, if DKA or lactic acidosis is suspected, or if Fournier's gangrene is suspected. Stop temporarily in dehydration, at surgery and around iodinated contrast.", "tag": "stop",
+        "src": [
+          { "s": "emc-7612", "q": "If renal function falls persistently below GFR 45 mL/min, treatment should be discontinued." },
+          { "s": "emc-7612", "q": "If acidosis of either form occurs, treatment must be stopped immediately and other appropriate corrective measures initiated." }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Twice daily with meals (reduces metformin stomach upset).",
+        "src": [{ "s": "emc-7612", "q": "Xigduo should be given twice daily with meals to reduce the gastrointestinal adverse reactions associated with metformin." }] },
+      { "t": "SPS (off-label, adults with swallowing difficulties): tablets can be crushed and mixed with water or given with soft food.", "detail": true,
+        "src": [{ "s": "sps-flozin-swallowing", "q": "Dapagliflozin with metformin tablets Film-coated but can be crushed and mixed with water or given with soft food." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Know the signs of lactic acidosis and ketoacidosis; stop and get urgent help if they occur.",
+        "src": [
+          { "s": "emc-7612", "q": "Patients and/or caregivers should be informed on the risk of lactic acidosis." },
+          { "s": "mhra-dsu-sglt2-dka-2016", "q": "inform them of the signs and symptoms of diabetic ketoacidosis ( DKA ) - see below - and advise them to seek immediate medical advice if they develop any of these" }
+        ] },
+      { "t": "If you have severe vomiting, diarrhoea, fever or cannot drink, stop this medicine for a while and contact a healthcare professional.",
+        "src": [{ "s": "emc-7612", "q": "In case of dehydration (severe diarrhoea or vomiting, fever or reduced fluid intake), Xigduo should be temporarily discontinued and contact with a healthcare professional is recommended." }] },
+      { "t": "Avoid alcohol. Look after your feet and keep well hydrated. Seek urgent care for genital or perineal pain or swelling with fever.",
+        "src": [
+          { "s": "emc-7612", "q": "Consumption of alcohol and medicinal products containing alcohol should be avoided." },
+          { "s": "mhra-dsu-sglt2-amputation-2017", "q": "advise patients receiving any sodium-glucose co-transporter 2 (SGLT2) inhibitor about the importance of routine preventive foot care and adequate hydration" },
+          { "s": "mhra-dsu-sglt2-fournier-2019", "q": "advise patients to seek urgent medical attention if they experience severe pain, tenderness, erythema, or swelling in the genital or perineal area, accompanied by fever or malaise" }
+        ] }
+    ] }
+  },
+  "rules": [
+    { "id": "dapagliflozin-metformin:allergy:ingredients", "kind": "allergy", "level": "contraindicated", "med": "dapagliflozin-metformin", "allergen": ["dapagliflozin", "metformin"],
+      "concern": "Hypersensitivity to dapagliflozin or metformin", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "contraindicated in patients with: hypersensitivity to the active substances",
+      "src": [{ "s": "emc-7612", "q": "hypersensitivity to the active substances or to any of the excipients listed in section 6.1" }] },
+    { "id": "dapagliflozin-metformin:condition:dka", "kind": "condition", "level": "contraindicated", "med": "dapagliflozin-metformin", "condition": "diabetic-ketoacidosis",
+      "concern": "Acute metabolic acidosis / diabetic ketoacidosis / diabetic pre-coma", "consequence": "Lactic acidosis and ketoacidosis risk.", "action": "Do not use.", "sourceWording": "Xigduo is contraindicated",
+      "src": [{ "s": "emc-7612", "q": "any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis); - diabetic pre-coma;" }] },
+    { "id": "dapagliflozin-metformin:condition:metabolic-acidosis", "kind": "condition", "level": "contraindicated", "med": "dapagliflozin-metformin", "condition": "metabolic-acidosis",
+      "concern": "Any acute metabolic acidosis (e.g. lactic acidosis)", "consequence": "Contraindicated (SmPC 4.3); metformin raises the risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "contraindicated",
+      "src": [{ "s": "emc-7612", "q": "any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis); - diabetic pre-coma;" }] },
+    { "id": "dapagliflozin-metformin:condition:dehydration", "kind": "condition", "level": "contraindicated", "med": "dapagliflozin-metformin", "condition": "dehydration-hypovolaemia",
+      "concern": "Dehydration (acute condition that may alter renal function)", "consequence": "Metformin accumulation and lactic acidosis; volume depletion.", "action": "Do not use; stop temporarily during dehydration.", "sourceWording": "Xigduo is contraindicated",
+      "src": [
+        { "s": "emc-7612", "q": "acute conditions with the potential to alter renal function such as: - dehydration, - severe infection, - shock;" },
+        { "s": "emc-7612", "q": "In case of dehydration (severe diarrhoea or vomiting, fever or reduced fluid intake), Xigduo should be temporarily discontinued" }
+      ] },
+    { "id": "dapagliflozin-metformin:condition:severe-infection-shock", "kind": "condition", "level": "contraindicated", "med": "dapagliflozin-metformin", "condition": "severe-infection-shock",
+      "concern": "Severe infection or shock", "consequence": "Acute change in renal function or hypoxia; lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Xigduo is contraindicated",
+      "src": [{ "s": "emc-7612", "q": "acute conditions with the potential to alter renal function such as: - dehydration, - severe infection, - shock;" }] },
+    { "id": "dapagliflozin-metformin:condition:heart-failure", "kind": "condition", "level": "contraindicated", "med": "dapagliflozin-metformin", "condition": "heart-failure",
+      "concern": "Cardiac failure (acute or chronic disease that may cause tissue hypoxia)", "consequence": "Tissue hypoxia; lactic acidosis risk.", "action": "This SmPC contraindicates use in cardiac failure. Note: the empagliflozin/metformin and metformin SmPCs allow stable chronic heart failure with monitoring.", "sourceWording": "Xigduo is contraindicated",
+      "src": [{ "s": "emc-7612", "q": "acute or chronic disease which may cause tissue hypoxia such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock;" }] },
+    { "id": "dapagliflozin-metformin:condition:respiratory-failure", "kind": "condition", "level": "contraindicated", "med": "dapagliflozin-metformin", "condition": "respiratory-failure",
+      "concern": "Respiratory failure (tissue hypoxia)", "consequence": "Lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Xigduo is contraindicated",
+      "src": [{ "s": "emc-7612", "q": "acute or chronic disease which may cause tissue hypoxia such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock;" }] },
+    { "id": "dapagliflozin-metformin:condition:recent-mi", "kind": "condition", "level": "contraindicated", "med": "dapagliflozin-metformin", "condition": "recent-myocardial-infarction",
+      "concern": "Recent myocardial infarction (tissue hypoxia)", "consequence": "Lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Xigduo is contraindicated",
+      "src": [{ "s": "emc-7612", "q": "acute or chronic disease which may cause tissue hypoxia such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock;" }] },
+    { "id": "dapagliflozin-metformin:condition:alcohol", "kind": "condition", "level": "contraindicated", "med": "dapagliflozin-metformin", "condition": "alcohol-dependence",
+      "concern": "Alcoholism or acute alcohol intoxication", "consequence": "Increased lactic acidosis risk.", "action": "Do not use; avoid alcohol.", "sourceWording": "Xigduo is contraindicated",
+      "src": [{ "s": "emc-7612", "q": "hepatic impairment (see sections 4.2, 4.4 and 5.2); - acute alcohol intoxication, alcoholism" }] },
+    { "id": "dapagliflozin-metformin:condition:acute-alcohol-intoxication", "kind": "condition", "level": "contraindicated", "med": "dapagliflozin-metformin", "condition": "acute-alcoholism",
+      "concern": "Acute alcohol intoxication", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use; avoid alcohol.", "sourceWording": "contraindicated",
+      "src": [{ "s": "emc-7612", "q": "hepatic impairment (see sections 4.2, 4.4 and 5.2); - acute alcohol intoxication, alcoholism" }] },
+    { "id": "dapagliflozin-metformin:condition:type-1-diabetes", "kind": "condition", "level": "avoid", "med": "dapagliflozin-metformin", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Ketoacidosis was common in type 1 studies; safety not established.", "action": "Should not be used.", "sourceWording": "should not be used for treatment of patients with type 1 diabetes",
+      "src": [{ "s": "emc-7612", "q": "The safety and efficacy of Xigduo in patients with type 1 diabetes have not been established and Xigduo should not be used for treatment of patients with type 1 diabetes." }] },
+    { "id": "dapagliflozin-metformin:condition:sglt2-dka-history", "kind": "condition", "level": "avoid", "med": "dapagliflozin-metformin", "condition": "sglt2-dka-history",
+      "concern": "Previous DKA while on an SGLT2 inhibitor", "consequence": "Risk of recurrence.", "action": "Restarting is not recommended unless another clear precipitating factor was identified and resolved.", "sourceWording": "is not recommended",
+      "src": [{ "s": "emc-7612", "q": "Restarting SGLT2 inhibitor treatment in patients with previous DKA while on SGLT2 inhibitor treatment is not recommended, unless another clear precipitating factor is identified and resolved." }] },
+    { "id": "dapagliflozin-metformin:condition:pancreatitis", "kind": "condition", "level": "caution", "med": "dapagliflozin-metformin", "condition": "pancreatitis-history",
+      "concern": "History of pancreatitis (low beta-cell reserve)", "consequence": "Higher risk of DKA.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-7612", "q": "Patients who may be at higher risk of DKA include patients with a low beta-cell function reserve (e.g. type 2 diabetes patients with low C-peptide or latent autoimmune diabetes in adults (LADA) or patients with a history of pancreatitis)" },
+        { "s": "emc-7612", "q": "SGLT2 inhibitors should be used with caution in these patients." }
+      ] },
+    { "id": "dapagliflozin-metformin:condition:pancreatitis-current", "kind": "condition", "level": "caution", "med": "dapagliflozin-metformin", "condition": "pancreatitis",
+      "concern": "Pancreatitis recorded (acute or chronic): a history of pancreatitis means low beta-cell reserve", "consequence": "Higher risk of ketoacidosis.", "action": "Use with caution (the SmPC names a history of pancreatitis as a ketoacidosis risk factor).", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-7612", "q": "Patients who may be at higher risk of DKA include patients with a low beta-cell function reserve (e.g. type 2 diabetes patients with low C-peptide or latent autoimmune diabetes in adults (LADA) or patients with a history of pancreatitis)" },
+        { "s": "emc-7612", "q": "SGLT2 inhibitors should be used with caution in these patients." }
+      ] },
+    { "id": "dapagliflozin-metformin:condition:restricted-food-intake", "kind": "condition", "level": "caution", "med": "dapagliflozin-metformin", "condition": "malnutrition",
+      "concern": "Conditions that restrict food intake (e.g. undernourished or malnourished)", "consequence": "Higher risk of ketoacidosis.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-7612", "q": "patients with conditions that lead to restricted food intake or severe dehydration" },
+        { "s": "emc-7612", "q": "SGLT2 inhibitors should be used with caution in these patients." }
+      ] },
+    { "id": "dapagliflozin-metformin:condition:surgery", "kind": "condition", "level": "avoid", "med": "dapagliflozin-metformin", "condition": "surgery-planned",
+      "concern": "Surgery under general, spinal or epidural anaesthesia; hospital admission for major surgery or acute illness", "consequence": "Lactic acidosis and ketoacidosis risk.", "action": "Must be stopped at the time of surgery; restart no earlier than 48 hours after surgery or return to eating, once renal function is re-checked and stable (and ketones normal). Temporary stop only.", "sourceWording": "must be discontinued at the time of surgery",
+      "src": [
+        { "s": "emc-7612", "q": "Xigduo must be discontinued at the time of surgery with general, spinal or epidural anaesthesia." },
+        { "s": "emc-7612", "q": "Therapy may be restarted no earlier than 48 hours following surgery or resumption of oral nutrition and provided that renal function has been re-evaluated and found to be stable." }
+      ] },
+    { "id": "dapagliflozin-metformin:condition:iodinated-contrast", "kind": "condition", "level": "avoid", "med": "dapagliflozin-metformin", "condition": "iodinated-contrast-planned",
+      "concern": "Intravascular iodinated contrast", "consequence": "Contrast nephropathy, metformin accumulation and lactic acidosis.", "action": "Stop before or at the time of imaging; restart no sooner than 48 hours after, once renal function is re-checked and stable.", "sourceWording": "Xigduo must be discontinued prior to, or at the time of the imaging procedure",
+      "src": [
+        { "s": "emc-7612", "q": "Intravascular administration of iodinated contrast agents may lead to contrast induced nephropathy, resulting in metformin accumulation and increased risk of lactic acidosis." },
+        { "s": "emc-7612", "q": "Xigduo must be discontinued prior to, or at the time of the imaging procedure and not restarted until at least 48 hours after" }
+      ] },
+    { "id": "dapagliflozin-metformin:condition:mitochondrial-disease", "kind": "condition", "level": "avoid", "med": "dapagliflozin-metformin", "condition": "mitochondrial-disease",
+      "concern": "Mitochondrial disease (MELAS, MIDD)", "consequence": "Lactic acidosis exacerbation and neurological complications.", "action": "Metformin is not recommended; withdraw immediately if suggestive signs appear.", "sourceWording": "metformin is not recommended",
+      "src": [{ "s": "emc-7612", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease." }] },
+    { "id": "dapagliflozin-metformin:condition:hypotension", "kind": "condition", "level": "caution", "med": "dapagliflozin-metformin", "condition": "hypotension",
+      "concern": "History of hypotension (especially on antihypertensives)", "consequence": "Dapagliflozin lowers blood pressure modestly.", "action": "Use with caution.", "sourceWording": "Caution should be exercised",
+      "src": [{ "s": "emc-7612", "q": "Caution should be exercised in patients for whom a dapagliflozin-induced drop in blood pressure could pose a risk, such as patients on anti-hypertensive therapy with a history of hypotension or elderly patients." }] },
+    { "id": "dapagliflozin-metformin:condition:complicated-uti", "kind": "condition", "level": "caution", "med": "dapagliflozin-metformin", "condition": "complicated-uti",
+      "concern": "Pyelonephritis or urosepsis", "consequence": "Urinary glucose may increase urinary infection risk.", "action": "Consider temporary interruption while treating.", "sourceWording": "temporary interruption of treatment should be considered",
+      "src": [{ "s": "emc-7612", "q": "temporary interruption of treatment should be considered when treating pyelonephritis or urosepsis." }] },
+    { "id": "dapagliflozin-metformin:renal:lt30", "kind": "renal", "level": "contraindicated", "med": "dapagliflozin-metformin", "renal": { "measure": "GFR", "max": 30 },
+      "concern": "GFR < 30 mL/min", "consequence": "Metformin accumulation; lactic acidosis.", "action": "Do not use.", "sourceWording": "Xigduo is contraindicated",
+      "src": [{ "s": "emc-7612", "q": "severe renal failure (GFR < 30 mL/min)" }] },
+    { "id": "dapagliflozin-metformin:renal:30-45", "kind": "renal", "level": "avoid", "med": "dapagliflozin-metformin", "renal": { "measure": "GFR", "min": 30, "max": 45 },
+      "concern": "GFR 30-44 mL/min", "consequence": "Dapagliflozin not recommended; metformin limited to 1000 mg/day.", "action": "Discontinue the combination if GFR is persistently below 45 mL/min; use single medicines if needed.", "sourceWording": "should be discontinued at GFR persistently below 45 mL/min",
+      "src": [
+        { "s": "emc-7612", "q": "30-44 Maximum daily dose is 1000 mg. The starting dose is at most half of the maximum dose. Dapagliflozin is not recommended." },
+        { "s": "emc-7612", "q": "If renal function falls persistently below GFR 45 mL/min, treatment should be discontinued." }
+      ] },
+    { "id": "dapagliflozin-metformin:renal:45-60", "kind": "renal", "level": "avoid", "med": "dapagliflozin-metformin", "renal": { "measure": "GFR", "min": 45, "max": 60 },
+      "concern": "GFR 45-59 mL/min", "consequence": "Dapagliflozin should not be initiated; metformin max 2000 mg/day.", "action": "Do not start the combination. If already taking it: metformin max 2000 mg/day; review lactic acidosis risk factors.", "sourceWording": "should not be initiated in patients with GFR < 60 mL/min",
+      "src": [
+        { "s": "emc-7612", "q": "Xigduo should not be initiated in patients with GFR < 60 mL/min" },
+        { "s": "emc-7612", "q": "45-59 Maximum daily dose is 2000 mg. The starting dose is at most half of the maximum dose. Dapagliflozin should not be initiated." }
+      ] },
+    { "id": "dapagliflozin-metformin:renal:60-90", "kind": "renal", "level": "info", "med": "dapagliflozin-metformin", "renal": { "measure": "GFR", "min": 60, "max": 90 },
+      "concern": "GFR 60-89 mL/min", "consequence": "Declining renal function.", "action": "Metformin max 3000 mg/day (consider reduction); dapagliflozin max 10 mg/day. Check GFR at least annually.", "sourceWording": "Dose reduction may be considered",
+      "src": [{ "s": "emc-7612", "q": "60-89 Maximum daily dose is 3000 mg. Dose reduction may be considered in relation to declining renal function. Maximum total daily dose is 10 mg." }] },
+    { "id": "dapagliflozin-metformin:hepatic:any", "kind": "hepatic", "level": "contraindicated", "med": "dapagliflozin-metformin", "hepatic": ["any"],
+      "concern": "Hepatic impairment", "consequence": "Lactic acidosis risk (metformin).", "action": "Must not be used.", "sourceWording": "must not be used in patients with hepatic impairment",
+      "src": [
+        { "s": "emc-7612", "q": "This medicinal product must not be used in patients with hepatic impairment" },
+        { "s": "emc-7612", "q": "hepatic impairment (see sections 4.2, 4.4 and 5.2); - acute alcohol intoxication, alcoholism" }
+      ] },
+    { "id": "dapagliflozin-metformin:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "dapagliflozin-metformin",
+      "concern": "Pregnancy or planning pregnancy", "consequence": "Dapagliflozin: kidney toxicity in rats (2nd/3rd trimester period).", "action": "Not recommended in 2nd and 3rd trimesters; when planning and during pregnancy, use insulin instead of this product. BUMPS: metformin alone (with insulin if needed) can be used.", "sourceWording": "not recommended during the second and third trimesters",
+      "src": [
+        { "s": "emc-7612", "q": "Therefore, the use of this medicinal product is not recommended during the second and third trimesters of pregnancy." },
+        { "s": "emc-7612", "q": "When the patient plans to become pregnant, and during pregnancy, it is recommended that diabetes is not treated with this medicinal product, but insulin be used" }
+      ] },
+    { "id": "dapagliflozin-metformin:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "dapagliflozin-metformin",
+      "concern": "Breastfeeding", "consequence": "Infant risk cannot be excluded.", "action": "Should not be used while breastfeeding.", "sourceWording": "should not be used while breast-feeding",
+      "src": [{ "s": "emc-7612", "q": "A risk to the newborns/infants cannot be excluded. This medicinal product should not be used while breast-feeding." }] },
+    { "id": "dapagliflozin-metformin:age:lt18", "kind": "age", "level": "info", "med": "dapagliflozin-metformin", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Under 18 years", "consequence": "Safety and efficacy not established; no data.", "action": "Not licensed under 18 years.", "sourceWording": "have not yet been established",
+      "src": [{ "s": "emc-7612", "q": "The safety and efficacy of Xigduo in children and adolescents aged 0 to < 18 years have not yet been established. No data are available." }] },
+    { "id": "dapagliflozin-metformin:age:ge65", "kind": "age", "level": "caution", "med": "dapagliflozin-metformin", "age": { "minYears": 65 },
+      "concern": "Elderly (65 years and over)", "consequence": "More likely to have reduced renal function; greater volume depletion risk.", "action": "Use with caution as age increases; monitor renal function (2 to 4 times a year).", "sourceWording": "should be used with caution as age increases",
+      "src": [
+        { "s": "emc-7612", "q": "this medicinal product should be used with caution as age increases" },
+        { "s": "emc-7612", "q": "For renal function with GFR levels < 60 mL/min and in elderly patients, at least 2 to 4 times per year." }
+      ] },
+    { "id": "dapagliflozin-metformin:interaction:thiazide", "kind": "interaction", "level": "info", "med": "dapagliflozin-metformin", "other": "group:thiazide", "effect": "hypotension",
+      "concern": "Dapagliflozin/metformin + thiazide diuretic", "consequence": "Added diuretic effect; dehydration and hypotension.", "action": "Be aware of volume depletion risk; diuretics also raise glucose (monitor).", "sourceWording": "may increase the risk of dehydration and hypotension",
+      "src": [{ "s": "emc-7612", "q": "This medicinal product may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and hypotension" }] },
+    { "id": "dapagliflozin-metformin:interaction:loop-diuretic", "kind": "interaction", "level": "monitor", "med": "dapagliflozin-metformin", "other": "group:loop-diuretic", "effect": "nephrotoxicity",
+      "concern": "Dapagliflozin/metformin + loop diuretic", "consequence": "Added diuretic effect (dehydration, hypotension); loop diuretics may impair renal function and raise lactic acidosis risk.", "action": "Close monitoring of renal function is necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-7612", "q": "This medicinal product may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and hypotension" },
+        { "s": "emc-7612", "q": "ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+        { "s": "emc-7612", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "dapagliflozin-metformin:interaction:diuretic", "kind": "interaction", "level": "monitor", "med": "dapagliflozin-metformin", "other": "group:diuretic", "effect": "nephrotoxicity",
+      "concern": "Dapagliflozin/metformin + diuretic", "consequence": "May impair renal function (lactic acidosis risk) and raise blood glucose.", "action": "Close monitoring of renal function; more frequent glucose monitoring at the start.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-7612", "q": "ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+        { "s": "emc-7612", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "dapagliflozin-metformin:interaction:nsaid", "kind": "interaction", "level": "monitor", "med": "dapagliflozin-metformin", "other": "group:nsaid", "effect": "nephrotoxicity",
+      "concern": "Dapagliflozin/metformin + NSAID (including COX-2 inhibitors)", "consequence": "May impair renal function and raise lactic acidosis risk.", "action": "Close monitoring of renal function is necessary; start the NSAID with caution.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-7612", "q": "Some medicinal products can adversely affect renal function which may increase the risk of lactic acidosis, e.g. NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors" },
+        { "s": "emc-7612", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "dapagliflozin-metformin:interaction:ace-inhibitor", "kind": "interaction", "level": "monitor", "med": "dapagliflozin-metformin", "other": "group:ace-inhibitor", "effect": "nephrotoxicity",
+      "concern": "Dapagliflozin/metformin + ACE inhibitor", "consequence": "May impair renal function and raise lactic acidosis risk.", "action": "Close monitoring of renal function is necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-7612", "q": "ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+        { "s": "emc-7612", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "dapagliflozin-metformin:interaction:arb", "kind": "interaction", "level": "monitor", "med": "dapagliflozin-metformin", "other": "group:arb", "effect": "nephrotoxicity",
+      "concern": "Dapagliflozin/metformin + angiotensin II receptor blocker", "consequence": "May impair renal function and raise lactic acidosis risk.", "action": "Close monitoring of renal function is necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-7612", "q": "ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+        { "s": "emc-7612", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "dapagliflozin-metformin:interaction:antihypertensive", "kind": "interaction", "level": "caution", "med": "dapagliflozin-metformin", "other": "group:antihypertensive",
+      "concern": "Dapagliflozin/metformin + antihypertensive", "consequence": "Medicines that can acutely impair renal function raise lactic acidosis risk; added blood-pressure lowering.", "action": "Start with caution.", "sourceWording": "should be initiated with caution",
+      "src": [{ "s": "emc-7612", "q": "Medicinal products that can acutely impair renal function (such as antihypertensives, diuretics and non-steroidal anti-inflammatory drugs [NSAIDs]) should be initiated with caution in metformin-treated patients." }] },
+    { "id": "dapagliflozin-metformin:interaction:corticosteroid", "kind": "interaction", "level": "monitor", "med": "dapagliflozin-metformin", "other": "group:corticosteroid",
+      "concern": "Dapagliflozin/metformin + glucocorticoid (systemic or local)", "consequence": "Raises blood glucose.", "action": "Inform the patient; monitor glucose more often, especially at the start; adjust dose during and after.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-7612", "q": "Glucocorticoids (given by systemic and local routes), beta-2 agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-7612", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+      ] },
+    { "id": "dapagliflozin-metformin:interaction:inhaled-corticosteroid", "kind": "interaction", "level": "monitor", "med": "dapagliflozin-metformin", "other": "group:inhaled-corticosteroid",
+      "concern": "Dapagliflozin/metformin + inhaled corticosteroid", "consequence": "Glucocorticoids given by local routes also have intrinsic hyperglycaemic activity (SmPC).", "action": "Inform the patient; monitor blood glucose more often, especially at the start; adjust the dose during and after if needed.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-7612", "q": "Glucocorticoids (given by systemic and local routes), beta-2 agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-7612", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+      ] },
+    { "id": "dapagliflozin-metformin:interaction:beta2-agonist", "kind": "interaction", "level": "monitor", "med": "dapagliflozin-metformin", "other": "group:beta2-agonist",
+      "concern": "Dapagliflozin/metformin + beta-2 agonist", "consequence": "Raises blood glucose.", "action": "Inform the patient; monitor glucose more often, especially at the start; adjust dose if needed.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-7612", "q": "Glucocorticoids (given by systemic and local routes), beta-2 agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-7612", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+      ] },
+    { "id": "dapagliflozin-metformin:interaction:insulin", "kind": "interaction", "level": "dose", "med": "dapagliflozin-metformin", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Dapagliflozin/metformin + insulin", "consequence": "Higher risk of hypoglycaemia.", "action": "A lower insulin dose may be required.", "sourceWording": "a lower dose of insulin ... may be required",
+      "src": [{ "s": "emc-7612", "q": "a lower dose of insulin or an insulin secretagogue may be required to reduce the risk of hypoglycaemia when used in combination with dapagliflozin" }] },
+    { "id": "dapagliflozin-metformin:interaction:insulin-secretagogue", "kind": "interaction", "level": "dose", "med": "dapagliflozin-metformin", "other": "group:insulin-secretagogue", "effect": "hypoglycaemia",
+      "concern": "Dapagliflozin/metformin + insulin secretagogue (e.g. sulfonylurea)", "consequence": "Higher risk of hypoglycaemia.", "action": "A lower dose of the secretagogue may be required.", "sourceWording": "a lower dose of ... an insulin secretagogue may be required",
+      "src": [
+        { "s": "emc-7612", "q": "Insulin and insulin secretagogues, such as sulphonylureas, cause hypoglycaemia." },
+        { "s": "emc-7612", "q": "a lower dose of insulin or an insulin secretagogue may be required to reduce the risk of hypoglycaemia when used in combination with dapagliflozin" }
+      ] }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "id": "amitriptyline",
+  "name": "Amitriptyline",
+  "ingredients": ["amitriptyline"],
+  "className": "Tricyclic antidepressant (non-selective monoamine reuptake inhibitor)",
+  "groups": ["tricyclic-antidepressant", "serotonergic", "anticholinergic", "cns-depressant", "qt-prolonging"],
+  "searchTerms": ["amitriptyline", "amitriptyline hydrochloride"],
+  "formulations": [
+    {
+      "id": "amitriptyline-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "25 mg (only this SmPC used)",
+      "release": "immediate",
+      "note": "Contains lactose.",
+      "src": [
+        { "s": "emc-10850", "q": "Each film-coated tablet contains 25 mg of amitriptyline hydrochloride." },
+        { "s": "emc-10850", "q": "10.00 mg of lactose monohydrate in core tablet" }
+      ],
+      "sourceIds": ["emc-10850"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Adults: major depressive disorder; neuropathic pain; prophylaxis of chronic tension-type headache; prophylaxis of migraine. Children 6 years and over: nocturnal enuresis after organic causes are excluded and all other drug and non-drug treatments have failed.",
+        "src": [
+          { "s": "emc-10850", "q": "the treatment of major depressive disorder in adults the treatment of neuropathic pain in adults" },
+          { "s": "emc-10850", "q": "the prophylactic treatment of chronic tension type headache (CTTH) in adults the prophylactic treatment of migraine in adults" },
+          { "s": "emc-10850", "q": "the treatment of nocturnal enuresis in children aged 6 years and above when organic pathology, including spina bifida and related disorders, have been excluded" }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Enuresis: only to be prescribed by a healthcare professional with expertise in persistent enuresis.",
+        "src": [{ "s": "emc-10850", "q": "This medicinal product should only be prescribed by a healthcare professional with expertise in the management of persistent enuresis." }] },
+      { "t": "Not for children and adolescents under 18 for depression or pain (long-term safety and efficacy not established). Contraindicated under 6 years.",
+        "src": [
+          { "s": "emc-10850", "q": "Amitriptyline should not be used in children and adolescents aged less than 18 years, as long term safety and efficacy have not been established" },
+          { "s": "emc-10850", "q": "In children under 6 years of age." }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Start low and increase gradually. Initially 25 mg twice daily (50 mg daily); if needed increase by 25 mg every other day up to 150 mg daily in two divided doses. Maintenance: lowest effective dose. Effect usually after 2 to 4 weeks; continue usually up to 6 months after recovery.", "tag": "Major depressive disorder, adults",
+        "src": [
+          { "s": "emc-10850", "q": "Adults Initially 25 mg 2 times daily (50 mg daily). If necessary, the dose can be increased by 25 mg every other day up to 150 mg daily divided into two doses." },
+          { "s": "emc-10850", "q": "The antidepressant effect usually sets in after 2 - 4 weeks." },
+          { "s": "emc-10850", "q": "usually up to 6 months after recovery in order to prevent relapse" }
+        ] },
+      { "t": "Over 65 years or cardiovascular disease: initially 10 mg to 25 mg daily, increase up to 100 mg to 150 mg daily in two divided doses as tolerated. Doses above 100 mg: use with caution.", "tag": "Depression, elderly or cardiovascular disease",
+        "src": [
+          { "s": "emc-10850", "q": "Elderly patients over 65 years of age and patients with cardiovascular diseas e Initially 10 mg - 25 mg daily" },
+          { "s": "emc-10850", "q": "The daily dose may be increased up to 100 mg - 150 mg divided into two doses, depending on individual patient response and tolerability. Doses above 100 mg should be used with caution." }
+        ] },
+      { "t": "Start 10 mg to 25 mg in the evening; increase by 10 mg to 25 mg every 3 to 7 days as tolerated. Usual dose 25 mg to 75 mg daily in the evening (once daily or two divided doses). A single dose above 75 mg is not recommended; doses above 100 mg with caution. Effect normally after 2 to 4 weeks; reassess regularly.", "tag": "Neuropathic pain, tension-type headache or migraine prophylaxis, adults",
+        "src": [
+          { "s": "emc-10850", "q": "Recommended doses are 25 mg - 75 mg daily in the evening. Doses above 100 mg should be used with caution. The initial dose should be 10 mg - 25 mg in the evening." },
+          { "s": "emc-10850", "q": "Doses can be increased with 10 mg - 25 mg every 3 - 7 days as tolerated." },
+          { "s": "emc-10850", "q": "A single dose above 75 mg is not recommended." },
+          { "s": "emc-10850", "q": "Regular reassessment is recommended to confirm that continuation of the treatment remains appropriate for the patient." }
+        ] },
+      { "t": "Over 65 years or cardiovascular disease: start 10 mg to 25 mg in the evening; doses above 75 mg with caution.", "tag": "Pain or headache prophylaxis, elderly or cardiovascular disease",
+        "src": [
+          { "s": "emc-10850", "q": "A starting dose of 10 mg - 25 mg in the evening is recommended. Doses above 75 mg should be used with caution." }
+        ] },
+      { "t": "Strong CYP2D6 inhibitor added (e.g. fluoxetine, paroxetine, bupropion, quinidine): consider a lower amitriptyline dose. Known CYP2D6 or CYP2C19 poor metabolisers: consider halving the starting dose.", "tag": "Interacting drugs / poor metabolisers",
+        "src": [
+          { "s": "emc-10850", "q": "a lower dose of amitriptyline should be considered if a strong CYP2D6 inhibitor (e.g. bupropion, quinidine, fluoxetine, paroxetine) is added to amitriptyline treatment" },
+          { "s": "emc-10850", "q": "Consider a 50% reduction of the recommended starting dose." }
+        ] },
+      { "t": "Stopping: withdraw gradually over several weeks.", "tag": "Stopping",
+        "src": [{ "s": "emc-10850", "q": "When stopping therapy the drug should be gradually withdrawn during several weeks." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Nocturnal enuresis: 6 to 10 years 10 mg to 20 mg (suitable dose form needed); 11 years and over 25 mg to 50 mg daily. Increase gradually; give 1 to 1.5 hours before bedtime. ECG before starting to exclude long QT syndrome. Maximum course 3 months; medical review every 3 months if repeated; withdraw gradually.", "tag": "Nocturnal enuresis",
+        "src": [
+          { "s": "emc-10850", "q": "children aged 6 to 10 years: 10 mg - 20 mg. A suitable dosage form should be used for this age group children aged 11 years and above: 25 mg - 50 mg daily" },
+          { "s": "emc-10850", "q": "Dose to be administered 1-1½ hours before bedtime." },
+          { "s": "emc-10850", "q": "An ECG should be performed prior to initiating therapy with amitriptyline to exclude long QT syndrome." },
+          { "s": "emc-10850", "q": "The maximum period of treatment course should not exceed 3 months." }
+        ] },
+      { "t": "Contraindicated under 6 years. Other indications: not for under 18 years. For enuresis, do not combine with an anticholinergic, and watch for suicidal thoughts as in depression.",
+        "src": [
+          { "s": "emc-10850", "q": "In children under 6 years of age." },
+          { "s": "emc-10850", "q": "Amitriptyline for enuresis should not be combined with an anticholinergic drug." },
+          { "s": "emc-10850", "q": "the same precautions observed when treating patients with depression should therefore be followed when treating patients with enuresis" }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to amitriptyline or any excipient.", "src": [{ "s": "emc-10850", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+      { "t": "Recent myocardial infarction; any degree of heart block or cardiac rhythm disorder; coronary artery insufficiency.",
+        "src": [{ "s": "emc-10850", "q": "Recent myocardial infarction. Any degree of heart block or disorders of cardiac rhythm and coronary artery insufficiency." }] },
+      { "t": "MAO inhibitors (non-selective, MAO-A such as moclobemide, MAO-B such as selegiline): contraindicated (serotonin syndrome). Start amitriptyline 14 days after an irreversible non-selective MAOI (at least 1 day after moclobemide); start an MAOI 14 days after amitriptyline.",
+        "src": [
+          { "s": "emc-10850", "q": "Concomitant treatment with MAOIs (monoamine oxidase inhibitors) is contra-indicated" },
+          { "s": "emc-10850", "q": "Treatment with amitriptyline may be instituted 14 days after discontinuation of irreversible non- selective MAOIs and minimum one day after discontinuation of the reversible moclobemide." },
+          { "s": "emc-10850", "q": "Treatment with MAOIs may be introduced 14 days after discontinuation of amitriptyline." }
+        ] },
+      { "t": "Severe liver disease.", "src": [{ "s": "emc-10850", "q": "Severe liver disease." }] },
+      { "t": "Children under 6 years.", "src": [{ "s": "emc-10850", "q": "In children under 6 years of age." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Arrhythmias and severe hypotension are likely at high doses and can occur at normal doses in pre-existing heart disease. QT prolongation reported: caution with significant bradycardia, uncompensated heart failure or QT-prolonging drugs; hypokalaemia, hyperkalaemia and hypomagnesaemia raise the risk.",
+        "src": [
+          { "s": "emc-10850", "q": "Cardiac arrhythmias and severe hypotension are likely to occur with high dosage. They may also occur in patients with pre-existing heart disease taking normal dosage." },
+          { "s": "emc-10850", "q": "Caution is advised in patients with significant bradycardia, in patients with uncompensated heart failure, or in patients concurrently taking QT-prolonging drugs." },
+          { "s": "emc-10850", "q": "Electrolyte disturbances (hypokalaemia, hyperkalaemia, hypomagnesaemia) are known to be conditions increasing the proarrythmic risk." }
+        ] },
+      { "t": "Use with caution in: convulsive disorders, urinary retention, prostatic hypertrophy, hyperthyroidism, paranoid symptoms, advanced liver or cardiovascular disease, pyloric stenosis and paralytic ileus. Narrow anterior chamber angle: acute glaucoma may be provoked.",
+        "src": [
+          { "s": "emc-10850", "q": "This medical product should be used with caution in patients with convulsive disorders, urinary retention, prostatic hypertrophy, hyperthyroidism, paranoid symptomatology and advanced hepatic or cardiovascular disease, pylorus stenosis and paralytic ileus." },
+          { "s": "emc-10850", "q": "In patients with the rare condition of shallow anterior chamber and narrow chamber angle, attacks of acute glaucoma due to dilation of the pupil may be provoked." }
+        ] },
+      { "t": "Hyperthyroidism or thyroid medication: great care (arrhythmias). Elderly are particularly prone to orthostatic hypotension.",
+        "src": [
+          { "s": "emc-10850", "q": "Great care is necessary if amitriptyline is administered to hyperthyroid patients or to those receiving thyroid medication, since cardiac arrhythmias may develop." },
+          { "s": "emc-10850", "q": "Elderly patients are particularly susceptible to orthostatic hypotension." }
+        ] },
+      { "t": "Surgery: anaesthetics may increase arrhythmia and hypotension risk. If possible stop several days before surgery; otherwise tell the anaesthetist.",
+        "src": [{ "s": "emc-10850", "q": "If possible, discontinue this medicinal product several days before surgery; if emergency surgery is unavoidable, the anaesthetist should be informed that the patient is being so treated." }] },
+      { "t": "Suicidal thoughts/behaviour: monitor closely, especially early in treatment, after dose changes, under 25 years and with prior suicidality.",
+        "src": [{ "s": "emc-10850", "q": "Close supervision of patients and in particular those at high risk should accompany drug therapy especially in early treatment and following dose changes." }] },
+      { "t": "Bipolar illness: a switch to mania may occur; stop amitriptyline if a manic phase starts.",
+        "src": [{ "s": "emc-10850", "q": "In manic-depressives, a shift towards the manic phase may occur; should the patient enter a manic phase amitriptyline should be discontinued." }] },
+      { "t": "Serotonin syndrome with other serotonergic drugs (MAOIs, SSRIs, SNRIs, certain opioids such as tramadol or buprenorphine, other TCAs): can be life-threatening. Use with caution with SSRIs; observe carefully if combined.",
+        "src": [
+          { "s": "emc-10850", "q": "Amitriptyline should be used with caution in patients receiving SSRIs" },
+          { "s": "emc-10850", "q": "may lead to serotonin syndrome, which can be life-threatening condition" }
+        ] },
+      { "t": "Diabetes: may change insulin and glucose responses; antidiabetic therapy may need adjustment.",
+        "src": [{ "s": "emc-10850", "q": "amitriptyline may modify insulin and glucose responses calling for adjustment of the antidiabetic therapy in diabetic patients" }] },
+      { "t": "Severe skin reactions including DRESS (mostly within 2 to 6 weeks): warn the patient; stop at once if signs appear and never restart.",
+        "src": [
+          { "s": "emc-10850", "q": "At the time of prescription patients should be advised of the signs and symptoms and monitored closely for cutaneous reactions." },
+          { "s": "emc-10850", "q": "Amitriptyline should be withdrawn immediately, treatment with Amitriptyline must not be restarted in this patient at any time" }
+        ] },
+      { "t": "Hyperpyrexia reported with anticholinergic or neuroleptic drugs, especially in hot weather. Abrupt stopping after long use may cause withdrawal symptoms. Lactose: not for hereditary galactose intolerance, lactase deficiency or glucose-galactose malabsorption.", "detail": true,
+        "src": [
+          { "s": "emc-10850", "q": "Hyperpyrexia has been reported with tricyclic antidepressants when administered with anticholinergic or with neuroleptic medications, especially in hot weather." },
+          { "s": "emc-10850", "q": "abrupt cessation of therapy may produce withdrawal symptoms such as headache, malaise, insomnia and irritability" },
+          { "s": "emc-10850", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Contraindicated: MAO inhibitors (non-selective, MAO-A and MAO-B), risk of serotonin syndrome.",
+        "src": [{ "s": "emc-10850", "q": "With MAO inhibitors (non-selective as well as MAO A-selective (moclobemide) and MAO B-selective (selegiline)) - risk of \"serotonin syndrome\"" }] },
+      { "t": "Not recommended: sympathomimetics such as adrenaline, ephedrine, phenylephrine (including in anaesthetics and nasal decongestants); centrally acting antihypertensives such as clonidine and methyldopa (review all antihypertensive therapy).",
+        "src": [
+          { "s": "emc-10850", "q": "Combinations that are not recommended Sympathomimetic agents : Amitriptyline may potentiate the cardiovascular effects of adrenaline, ephedrine, isoprenaline, noradrenaline, phenylephrine, and phenylpropanolamine" },
+          { "s": "emc-10850", "q": "Tricyclic antidepressants may counteract the antihypertensive effects of centrally acting antihypertensives such as guanethidine, betanidine, reserpine, clonidine and methyldopa." }
+        ] },
+      { "t": "Anticholinergic drugs: avoid (paralytic ileus, hyperpyrexia).",
+        "src": [{ "s": "emc-10850", "q": "concomitant use of these should be avoided due to an increased risk of paralytic ileus, hyperpyrexia, etc." }] },
+      { "t": "QT-prolonging drugs (e.g. quinidine, some antipsychotics, sotalol, halofantrine): more ventricular arrhythmias. Methadone: caution. Diuretics that cause hypokalaemia (e.g. furosemide): caution.",
+        "src": [
+          { "s": "emc-10850", "q": "may increase the likelihood of ventricular arrhythmias when taken with tricyclic antidepressants" },
+          { "s": "emc-10850", "q": "Caution is also advised for co-administration of amitriptyline and diuretics inducing hypokalaemia (e.g. furosemide)" }
+        ] },
+      { "t": "Tramadol: higher risk of seizures and serotonin syndrome, and possible opioid toxicity (raised tramadol levels).",
+        "src": [{ "s": "emc-10850", "q": "Concomitant use of tramadol (a CYP2D6 substrate) and tricyclic antidepressants (TCAs), such as amitriptyline increases the risk for seizures and serotonin syndrome." }] },
+      { "t": "Fluconazole and terbinafine raise tricyclic levels; syncope and torsade de pointes have occurred.",
+        "src": [{ "s": "emc-10850", "q": "Antifungals such as fluconazole and terbinafine increase serum concentrations of tricyclics and accompanying toxicity. Syncope and torsade de pointes have occurred." }] },
+      { "t": "Strong CYP2D6 inhibitors (e.g. fluoxetine, paroxetine, bupropion): marked rise in amitriptyline levels; consider TCA levels and dose adjustment. Duloxetine (moderate CYP2D6 inhibitor): caution.",
+        "src": [
+          { "s": "emc-10850", "q": "These drugs may produce substantial decreases in TCA metabolism and marked increases in plasma concentrations." },
+          { "s": "emc-10850", "q": "Caution is advised in the case of co-administration of amitriptyline with duloxetine, a moderate CYP2D6 inhibitor." }
+        ] },
+      { "t": "Diltiazem, verapamil, cimetidine, methylphenidate may raise TCA levels; strong CYP3A4 inhibitors (ketoconazole, itraconazole, ritonavir) may interact. Fluvoxamine: avoid.", "detail": true,
+        "src": [
+          { "s": "emc-10850", "q": "Cimetidine, methylphenidate and calcium-channel blockers (e.g. diltiazem and verapamil) may increase plasma levels of tricyclic antidepressants and accompanying toxicity." },
+          { "s": "emc-10850", "q": "Clinically relevant interactions may be expected with concomitant use of amitriptyline and strong CYP3A4 inhibitors such as ketoconazole, itraconazole and ritonavir." }
+        ] },
+      { "t": "Inducers (oral contraceptives, rifampicin, phenytoin, carbamazepine, St John's wort) may lower amitriptyline levels and response. The St John's wort herbal SPC says do not take it with tricyclics.",
+        "src": [
+          { "s": "emc-10850", "q": "Oral contraceptives, rifampicin, phenytoin, barbiturates, carbamazepine and St. John's Wort (Hypericum perforatum) may increase the metabolism of tricyclic antidepressants" },
+          { "s": "mhra-thr-13668-0014", "q": "Tricyclics e.g. Reduced blood levels with Do not take with this product. Amitriptyline" }
+        ] },
+      { "t": "CNS depressants and alcohol: increased sedation. Sodium valproate raises amitriptyline levels (clinical monitoring).", "detail": true,
+        "src": [
+          { "s": "emc-10850", "q": "Amitriptyline may enhance the sedative effects of alcohol, barbiturates and other CNS depressants." },
+          { "s": "emc-10850", "q": "Amitriptyline plasma concentration can be increased by sodium valproate and valpromide. Clinical monitoring is therefore recommended." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Usual doses can be given in renal failure.",
+        "src": [{ "s": "emc-10850", "q": "This medicinal product can be given in usual doses to patients with renal failure." }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Severe liver disease: contraindicated. Other hepatic impairment: careful dosing and, if possible, serum level measurement.",
+        "src": [
+          { "s": "emc-10850", "q": "Severe liver disease." },
+          { "s": "emc-10850", "q": "Careful dosing and, if possible, a serum level determination is advisable." }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: not recommended unless clearly necessary and only after careful risk-benefit assessment. Neonatal withdrawal (irritability, hypertonia, tremor, irregular breathing, poor drinking) can follow use in the final weeks.",
+        "src": [
+          { "s": "emc-10850", "q": "Amitriptyline is not recommended during pregnancy unless clearly necessary and only after careful consideration of the risk/benefit." },
+          { "s": "emc-10850", "q": "During chronic use and after administration in the final weeks of pregnancy, neonatal withdrawal symptoms can occur." }
+        ] },
+      { "t": "BUMPS: can be used in pregnancy if recommended by a specialist; not known to harm the baby. Use near delivery may cause neonatal withdrawal; hospital delivery recommended.",
+        "src": [
+          { "s": "bumps-amitriptyline", "q": "Amitriptyline can be used in pregnancy if recommended by a specialist." },
+          { "s": "bumps-amitriptyline", "q": "Amitriptyline use in pregnancy is not known to harm the baby." },
+          { "s": "bumps-amitriptyline", "q": "A hospital delivery will be recommended so that your baby can be assessed after birth" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: passes into milk (0.6% to 1% of the maternal dose); risk to the infant cannot be excluded. Decide whether to stop breastfeeding or stop the medicine.",
+        "src": [
+          { "s": "emc-10850", "q": "A risk to the suckling child cannot be excluded." },
+          { "s": "emc-10850", "q": "A decision must be made whether to discontinue breast-feeding or to discontinue/abstain from the therapy" }
+        ] },
+      { "t": "SPS: can be used with caution, but imipramine or nortriptyline are preferred. Monitor the infant for drowsiness, poor feeding, weight gain, irritability, constipation and urinary retention. Avoid bed-sharing when sedating medicines are used (NICE, cited by SPS).",
+        "src": [
+          { "s": "sps-tca-bf", "q": "Amitriptyline can be used with caution during breastfeeding, but imipramine or nortriptyline are preferred." },
+          { "s": "sps-tca-bf", "q": "As a precaution, monitor infants for drowsiness, not waking to feed or poor feeding, adequate weight gain, irritability, constipation and urinary retention" },
+          { "s": "sps-tca-bf", "q": "advises avoiding sharing a bed with the infant when sedating medication has been used" }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: reduced pregnancy rate in rats; no human data. Erectile dysfunction is common. MHRA: amitriptyline is among antidepressants linked to sexual dysfunction that may continue after stopping.",
+        "src": [
+          { "s": "emc-10850", "q": "No data on the effects of amitriptyline on human fertility are available." },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "Citalopram, escitalopram, duloxetine, fluvoxamine, fluoxetine, paroxetine, sertraline, venlafaxine, amitriptyline, nortriptyline" },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "are associated with a risk of sexual dysfunction and that symptoms may continue after stopping treatment with certain antidepressants" }
+        ] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Very common: somnolence, tremor, dizziness, headache, dysarthria; aggression; accommodation disorder; palpitations, tachycardia; orthostatic hypotension; congested nose; dry mouth, constipation, nausea; sweating; weight gain.",
+        "src": [
+          { "s": "emc-10850", "q": "Nervous system disorders Very common Somnolence, tremor, dizziness, headache, drowsiness, speech disorder (dysarthria)." },
+          { "s": "emc-10850", "q": "Cardiac disorders Very common Palpitations, tachycardia." },
+          { "s": "emc-10850", "q": "Gastrointestinal disorders Very common Dry mouth, constipation, nausea." },
+          { "s": "emc-10850", "q": "Vascular disorders Very common Orthostatic hypotension." }
+        ] },
+      { "t": "Common: hyponatraemia; confusion, reduced libido, agitation; disturbed attention, taste change, paraesthesia, ataxia; mydriasis; AV block, bundle branch block; micturition disorders; erectile dysfunction; fatigue; ECG QT/QRS prolongation.",
+        "src": [
+          { "s": "emc-10850", "q": "Metabolism and nutrition disorders Common Hyponatremia." },
+          { "s": "emc-10850", "q": "Common Atrioventricular block, bundle branch block." },
+          { "s": "emc-10850", "q": "Common Electrocardiogram abnormal, electrocardiogram QT prolonged, electrocardiogram QRS complex prolonged." }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Serious skin reactions including DRESS (can be fatal): stop immediately and never restart.",
+        "src": [{ "s": "emc-10850", "q": "Severe cutaneous adverse reactions (SCARs) including drug reaction with eosinophilia and systemic symptoms (DRESS), which can be life-threatening or fatal" }] },
+      { "t": "Serotonin syndrome (mental-status change, autonomic instability, neuromuscular signs): consider dose reduction or stopping depending on severity.",
+        "src": [{ "s": "emc-10850", "q": "If serotonin syndrome is suspected, a dose reduction or discontinuation of therapy should be considered depending on the severity of the symptoms." }] },
+      { "t": "Suicidal thoughts or behaviour: patients and carers should seek medical advice immediately.",
+        "src": [{ "s": "emc-10850", "q": "to seek medical advice immediately if these symptoms present" }] },
+      { "t": "Rare/very rare: arrhythmia, torsade de pointes, convulsion (uncommon), bone marrow depression/agranulocytosis, paralytic ileus, jaundice, acute glaucoma.", "detail": true,
+        "src": [
+          { "s": "emc-10850", "q": "Rare Bone marrow depression, agranulocytosis, leucopenia, eosinophilia, thrombocytopenia." },
+          { "s": "emc-10850", "q": "Very rare Cardiomyopathies, torsades de pointes." }
+        ] },
+      { "t": "Overdose is dangerous (750 mg or more in an adult may cause severe toxicity); children are especially at risk.", "detail": true,
+        "src": [
+          { "s": "emc-10850", "q": "Ingestion of 750 mg or more by an adult may result in severe toxicity." },
+          { "s": "emc-10850", "q": "Overdose with amitriptyline in children could have serious consequences." }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Enuresis: ECG before starting to exclude long QT syndrome.", "tag": "baseline",
+        "src": [{ "s": "emc-10850", "q": "An ECG should be performed prior to initiating therapy with amitriptyline to exclude long QT syndrome." }] },
+      { "t": "When starting or changing dose: discuss risk of suicidal thoughts and sexual dysfunction; monitor regularly after starting (MHRA 2026).", "tag": "baseline",
+        "src": [
+          { "s": "mhra-dsu-antidepressants-2026", "q": "discuss with patients when starting or changing the dose of an antidepressant or at their next review, the risk of suicidal thoughts and behaviours" },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "monitor your patients regularly after starting treatment with an antidepressant" }
+        ] },
+      { "t": "Monitor closely for clinical worsening and suicidality; watch for skin reactions. With strong CYP2D6 inhibitors, consider TCA plasma levels. SPS: ECG, magnesium and potassium in people with non-modifiable QT risk factors.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-10850", "q": "patients should be closely monitored until such improvement occurs" },
+          { "s": "emc-10850", "q": "Consider to monitor TCA plasma levels, whenever a TCA is to be co-administered with another drug known to be a strong inhibitor of CYP2D6." },
+          { "s": "sps-qt-commonly-used", "q": "Monitor ECG, magnesium and potassium in people with non-modifiable risk factors." }
+        ] },
+      { "t": "Neuropathic pain and headache prophylaxis: reassess regularly whether to continue. Enuresis: review every 3 months for repeated courses.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-10850", "q": "Regular reassessment is recommended to confirm that continuation of the treatment remains appropriate for the patient." },
+          { "s": "emc-10850", "q": "If repeated courses of amitriptyline are needed, a medical review should be conducted every 3 months." }
+        ] },
+      { "t": "Stop if: manic phase; severe skin reaction (do not restart). Consider reducing or stopping if serotonin syndrome.", "tag": "stop",
+        "src": [
+          { "s": "emc-10850", "q": "should the patient enter a manic phase amitriptyline should be discontinued" },
+          { "s": "emc-10850", "q": "Amitriptyline should be withdrawn immediately" }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Swallow tablets with water. Pain/headache: dose in the evening (once daily or two divided doses). Depression: two divided doses.",
+        "src": [
+          { "s": "emc-10850", "q": "These tablets should be swallowed with water." },
+          { "s": "emc-10850", "q": "The dose can be taken once daily, or be divided into two doses." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Causes sedation: take care with driving or machines; alcohol makes this worse.",
+        "src": [
+          { "s": "emc-10850", "q": "should be cautioned about their ability to drive or operate machinery" },
+          { "s": "emc-10850", "q": "These adverse effects can be potentiated by the concomitant intake of alcohol." }
+        ] },
+      { "t": "Seek urgent help (NHS 111, crisis team, Samaritans 116 123) for new or worse suicidal thoughts. Do not stop without speaking to the prescriber.",
+        "src": [
+          { "s": "mhra-dsu-antidepressants-2026", "q": "You can call NHS 111, or your local mental health crisis team, Samaritans on 116 123" },
+          { "s": "mhra-dsu-antidepressants-2026", "q": "do not stop taking your medicine without first speaking to your healthcare professional" }
+        ] },
+      { "t": "Know the signs of a serious skin reaction and report them at once. Effect on mood or pain usually takes 2 to 4 weeks.",
+        "src": [
+          { "s": "emc-10850", "q": "At the time of prescription patients should be advised of the signs and symptoms and monitored closely for cutaneous reactions." },
+          { "s": "emc-10850", "q": "The analgesic effect is normally seen after 2 - 4 weeks of dosing." }
+        ] }
+    ] }
+  },
+  "rules": [
+    { "id": "amitriptyline:allergy:amitriptyline", "kind": "allergy", "level": "contraindicated", "med": "amitriptyline", "allergen": ["amitriptyline"],
+      "concern": "Hypersensitivity to amitriptyline (or previous severe skin reaction to it)", "consequence": "Hypersensitivity reaction; after DRESS/severe skin reaction it must never be restarted.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity",
+      "src": [
+        { "s": "emc-10850", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." },
+        { "s": "emc-10850", "q": "treatment with Amitriptyline must not be restarted in this patient at any time" }
+      ] },
+    { "id": "amitriptyline:condition:recent-mi", "kind": "condition", "level": "contraindicated", "med": "amitriptyline", "condition": "recent-myocardial-infarction",
+      "concern": "Recent myocardial infarction", "consequence": "Risk of arrhythmia and cardiac events.", "action": "Do not use.", "sourceWording": "4.3 Contraindications ... Recent myocardial infarction",
+      "src": [{ "s": "emc-10850", "q": "Recent myocardial infarction." }] },
+    { "id": "amitriptyline:condition:av-block", "kind": "condition", "level": "contraindicated", "med": "amitriptyline", "condition": "av-block-2nd-3rd", "effect": "qt-prolongation",
+      "concern": "Heart block (any degree)", "consequence": "Tricyclics can cause conduction block and arrhythmia.", "action": "Do not use.", "sourceWording": "Any degree of heart block",
+      "src": [{ "s": "emc-10850", "q": "Any degree of heart block or disorders of cardiac rhythm and coronary artery insufficiency." }] },
+    { "id": "amitriptyline:condition:conduction", "kind": "condition", "level": "contraindicated", "med": "amitriptyline", "condition": "cardiac-conduction-disturbance", "effect": "qt-prolongation",
+      "concern": "Cardiac conduction disturbance (any degree of heart block)", "consequence": "Tricyclics can cause conduction block and arrhythmia.", "action": "Do not use.", "sourceWording": "Any degree of heart block",
+      "src": [{ "s": "emc-10850", "q": "Any degree of heart block or disorders of cardiac rhythm and coronary artery insufficiency." }] },
+    { "id": "amitriptyline:condition:arrhythmia", "kind": "condition", "level": "contraindicated", "med": "amitriptyline", "condition": "cardiac-arrhythmia", "effect": "qt-prolongation",
+      "concern": "Cardiac rhythm disorder", "consequence": "Tricyclics can worsen arrhythmia.", "action": "Do not use.", "sourceWording": "disorders of cardiac rhythm",
+      "src": [{ "s": "emc-10850", "q": "Any degree of heart block or disorders of cardiac rhythm and coronary artery insufficiency." }] },
+    { "id": "amitriptyline:condition:ihd", "kind": "condition", "level": "contraindicated", "med": "amitriptyline", "condition": "ischaemic-heart-disease",
+      "concern": "Coronary artery insufficiency", "consequence": "Cardiac risk.", "action": "Do not use.", "sourceWording": "coronary artery insufficiency",
+      "src": [{ "s": "emc-10850", "q": "Any degree of heart block or disorders of cardiac rhythm and coronary artery insufficiency." }] },
+    { "id": "amitriptyline:hepatic:severe", "kind": "hepatic", "level": "contraindicated", "med": "amitriptyline", "hepatic": ["severe"],
+      "concern": "Severe liver disease", "consequence": "Reduced metabolism; higher levels.", "action": "Do not use.", "sourceWording": "4.3 Contraindications ... Severe liver disease",
+      "src": [{ "s": "emc-10850", "q": "Severe liver disease." }] },
+    { "id": "amitriptyline:hepatic:other", "kind": "hepatic", "level": "caution", "med": "amitriptyline", "hepatic": ["mild", "moderate"],
+      "concern": "Hepatic impairment", "consequence": "Reduced hepatic extraction may give higher plasma levels.", "action": "Careful dosing and, if possible, measure serum levels.", "sourceWording": "Careful dosing",
+      "src": [
+        { "s": "emc-10850", "q": "Careful dosing and, if possible, a serum level determination is advisable." },
+        { "s": "emc-10850", "q": "Hepatic impairment may reduce hepatic extraction resulting in higher plasma levels and caution should be exercised when dosing these patients" }
+      ] },
+    { "id": "amitriptyline:age:lt6", "kind": "age", "level": "contraindicated", "med": "amitriptyline", "age": { "minYears": 0, "maxYears": 6 },
+      "concern": "Child under 6 years", "consequence": "Contraindicated in this age group.", "action": "Do not use.", "sourceWording": "4.3 Contraindications ... In children under 6 years of age",
+      "src": [{ "s": "emc-10850", "q": "In children under 6 years of age." }] },
+    { "id": "amitriptyline:age:6-18", "kind": "age", "level": "avoid", "med": "amitriptyline", "age": { "minYears": 6, "maxYears": 18 },
+      "concern": "Child or adolescent 6 to 17 years", "consequence": "Long-term safety and efficacy not established for depression or pain; only licensed use is nocturnal enuresis.", "action": "Should not be used except for nocturnal enuresis (specialist, ECG first, maximum 3-month course).", "sourceWording": "should not be used in children and adolescents aged less than 18 years",
+      "src": [
+        { "s": "emc-10850", "q": "Amitriptyline should not be used in children and adolescents aged less than 18 years, as long term safety and efficacy have not been established" },
+        { "s": "emc-10850", "q": "the treatment of nocturnal enuresis in children aged 6 years and above" }
+      ] },
+    { "id": "amitriptyline:age:elderly", "kind": "age", "level": "dose", "med": "amitriptyline", "age": { "minYears": 65 }, "effect": "hypotension",
+      "concern": "Over 65 years", "consequence": "Particularly susceptible to orthostatic hypotension.", "action": "Start at 10 mg to 25 mg daily; doses above 100 mg (depression) or 75 mg (pain) with caution.", "sourceWording": "Elderly patients over 65 years of age ... Initially 10 mg - 25 mg daily",
+      "src": [
+        { "s": "emc-10850", "q": "Elderly patients over 65 years of age and patients with cardiovascular diseas e Initially 10 mg - 25 mg daily" },
+        { "s": "emc-10850", "q": "Elderly patients are particularly susceptible to orthostatic hypotension." }
+      ] },
+    { "id": "amitriptyline:condition:cardiac-disease", "kind": "condition", "level": "dose", "med": "amitriptyline", "condition": "cardiac-disease", "effect": "qt-prolongation",
+      "concern": "Cardiovascular disease", "consequence": "Arrhythmias and severe hypotension may occur even at normal doses.", "action": "Start at 10 mg to 25 mg daily and use with caution; higher doses with caution.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-10850", "q": "They may also occur in patients with pre-existing heart disease taking normal dosage." },
+        { "s": "emc-10850", "q": "Elderly patients over 65 years of age and patients with cardiovascular diseas e Initially 10 mg - 25 mg daily" },
+        { "s": "emc-10850", "q": "paranoid symptomatology and advanced hepatic or cardiovascular disease" }
+      ] },
+    { "id": "amitriptyline:condition:bradycardia", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "bradycardia", "effect": "qt-prolongation",
+      "concern": "Significant bradycardia", "consequence": "QT prolongation and arrhythmia.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [{ "s": "emc-10850", "q": "Caution is advised in patients with significant bradycardia, in patients with uncompensated heart failure, or in patients concurrently taking QT-prolonging drugs." }] },
+    { "id": "amitriptyline:condition:heart-failure", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "uncontrolled-heart-failure", "effect": "qt-prolongation",
+      "concern": "Uncompensated heart failure", "consequence": "QT prolongation and arrhythmia; worsening of cardiac failure reported.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-10850", "q": "Caution is advised in patients with significant bradycardia, in patients with uncompensated heart failure, or in patients concurrently taking QT-prolonging drugs." },
+        { "s": "emc-10850", "q": "Uncommon Collapse conditions, worsening of cardiac failure." }
+      ] },
+    { "id": "amitriptyline:condition:long-qt", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "qt-prolongation", "effect": "qt-prolongation",
+      "concern": "Long QT / QT prolongation", "consequence": "QT prolongation and arrhythmia reported with amitriptyline.", "action": "Use with caution; for enuresis an ECG must exclude long QT syndrome before starting.", "sourceWording": "Caution is advised",
+      "src": [
+        { "s": "emc-10850", "q": "Cases of QT interval prolongation and arrhythmia have been reported during the post-marketing period." },
+        { "s": "emc-10850", "q": "An ECG should be performed prior to initiating therapy with amitriptyline to exclude long QT syndrome." }
+      ] },
+    { "id": "amitriptyline:condition:hypokalaemia", "kind": "condition", "level": "info", "med": "amitriptyline", "condition": "hypokalaemia", "effect": "qt-prolongation",
+      "concern": "Hypokalaemia", "consequence": "Raises the risk of arrhythmia.", "action": "Be aware of added arrhythmia risk (no specific action stated).", "sourceWording": "known to be conditions increasing the proarrythmic risk",
+      "src": [{ "s": "emc-10850", "q": "Electrolyte disturbances (hypokalaemia, hyperkalaemia, hypomagnesaemia) are known to be conditions increasing the proarrythmic risk." }] },
+    { "id": "amitriptyline:condition:hypomagnesaemia", "kind": "condition", "level": "info", "med": "amitriptyline", "condition": "hypomagnesaemia", "effect": "qt-prolongation",
+      "concern": "Hypomagnesaemia", "consequence": "Raises the risk of arrhythmia.", "action": "Be aware of added arrhythmia risk (no specific action stated).", "sourceWording": "known to be conditions increasing the proarrythmic risk",
+      "src": [{ "s": "emc-10850", "q": "Electrolyte disturbances (hypokalaemia, hyperkalaemia, hypomagnesaemia) are known to be conditions increasing the proarrythmic risk." }] },
+    { "id": "amitriptyline:condition:hyperkalaemia", "kind": "condition", "level": "info", "med": "amitriptyline", "condition": "hyperkalaemia", "effect": "qt-prolongation",
+      "concern": "Hyperkalaemia", "consequence": "Raises the risk of arrhythmia.", "action": "Be aware of added arrhythmia risk (no specific action stated).", "sourceWording": "known to be conditions increasing the proarrythmic risk",
+      "src": [{ "s": "emc-10850", "q": "Electrolyte disturbances (hypokalaemia, hyperkalaemia, hypomagnesaemia) are known to be conditions increasing the proarrythmic risk." }] },
+    { "id": "amitriptyline:condition:thyrotoxicosis", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "thyrotoxicosis",
+      "concern": "Hyperthyroidism", "consequence": "Cardiac arrhythmias may develop.", "action": "Great care necessary.", "sourceWording": "Great care is necessary",
+      "src": [{ "s": "emc-10850", "q": "Great care is necessary if amitriptyline is administered to hyperthyroid patients or to those receiving thyroid medication, since cardiac arrhythmias may develop." }] },
+    { "id": "amitriptyline:condition:epilepsy", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "epilepsy", "effect": "seizure-threshold",
+      "concern": "Convulsive disorder / epilepsy", "consequence": "Convulsions are an uncommon adverse effect.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-10850", "q": "This medical product should be used with caution in patients with convulsive disorders" }] },
+    { "id": "amitriptyline:condition:urinary-retention", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "urinary-retention",
+      "concern": "Urinary retention", "consequence": "Anticholinergic effects may worsen retention.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-10850", "q": "This medical product should be used with caution in patients with convulsive disorders, urinary retention, prostatic hypertrophy" }] },
+    { "id": "amitriptyline:condition:prostate", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "prostatic-hypertrophy",
+      "concern": "Prostatic hypertrophy", "consequence": "Risk of urinary retention.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-10850", "q": "This medical product should be used with caution in patients with convulsive disorders, urinary retention, prostatic hypertrophy" }] },
+    { "id": "amitriptyline:condition:glaucoma", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "angle-closure-glaucoma",
+      "concern": "Narrow anterior chamber angle", "consequence": "Pupil dilation may provoke acute glaucoma.", "action": "Be aware of the risk of acute angle-closure glaucoma.", "sourceWording": "attacks of acute glaucoma due to dilation of the pupil may be provoked",
+      "src": [{ "s": "emc-10850", "q": "In patients with the rare condition of shallow anterior chamber and narrow chamber angle, attacks of acute glaucoma due to dilation of the pupil may be provoked." }] },
+    { "id": "amitriptyline:condition:ileus", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "paralytic-ileus-gi-obstruction",
+      "concern": "Paralytic ileus or pyloric stenosis", "consequence": "Anticholinergic effects on the bowel.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-10850", "q": "advanced hepatic or cardiovascular disease, pylorus stenosis and paralytic ileus" }] },
+    { "id": "amitriptyline:condition:psychosis", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "psychosis-schizophrenia",
+      "concern": "Paranoid symptoms", "consequence": "May worsen.", "action": "Use with caution.", "sourceWording": "should be used with caution",
+      "src": [{ "s": "emc-10850", "q": "hyperthyroidism, paranoid symptomatology and advanced hepatic or cardiovascular disease" }] },
+    { "id": "amitriptyline:condition:bipolar", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "bipolar-mania",
+      "concern": "Bipolar disorder (manic-depressive illness)", "consequence": "Shift to mania may occur.", "action": "Stop amitriptyline if a manic phase starts.", "sourceWording": "should be discontinued",
+      "src": [{ "s": "emc-10850", "q": "In manic-depressives, a shift towards the manic phase may occur; should the patient enter a manic phase amitriptyline should be discontinued." }] },
+    { "id": "amitriptyline:condition:suicidality", "kind": "condition", "level": "monitor", "med": "amitriptyline", "condition": "depression-suicidality",
+      "concern": "History of suicide-related events or significant suicidal ideation", "consequence": "Greater risk of suicidal thoughts or attempts (also higher under 25 years).", "action": "Careful monitoring, especially early in treatment and after dose changes.", "sourceWording": "should receive careful monitoring during treatment",
+      "src": [{ "s": "emc-10850", "q": "are known to be at greater risk of suicidal thoughts or suicide attempts, and should receive careful monitoring during treatment" }] },
+    { "id": "amitriptyline:condition:diabetes", "kind": "condition", "level": "info", "med": "amitriptyline", "condition": "diabetes",
+      "concern": "Diabetes", "consequence": "Insulin and glucose responses may change.", "action": "Antidiabetic therapy may need adjustment.", "sourceWording": "calling for adjustment of the antidiabetic therapy",
+      "src": [{ "s": "emc-10850", "q": "amitriptyline may modify insulin and glucose responses calling for adjustment of the antidiabetic therapy in diabetic patients" }] },
+    { "id": "amitriptyline:condition:surgery", "kind": "condition", "level": "caution", "med": "amitriptyline", "condition": "surgery-planned", "effect": "hypotension",
+      "concern": "Planned surgery / anaesthesia", "consequence": "Anaesthetics may increase the risk of arrhythmias and hypotension.", "action": "If possible stop several days before surgery; otherwise inform the anaesthetist.", "sourceWording": "If possible, discontinue this medicinal product several days before surgery",
+      "src": [
+        { "s": "emc-10850", "q": "Anaesthetics given during tri/tetracyclic antidepressant therapy may increase the risk of arrhythmias and hypotension." },
+        { "s": "emc-10850", "q": "If possible, discontinue this medicinal product several days before surgery; if emergency surgery is unavoidable, the anaesthetist should be informed that the patient is being so treated." }
+      ] },
+    { "id": "amitriptyline:condition:lactose", "kind": "condition", "level": "avoid", "med": "amitriptyline", "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, lactase deficiency or glucose-galactose malabsorption", "consequence": "Tablets contain lactose.", "action": "Should not take this medicine.", "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-10850", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }] },
+    { "id": "amitriptyline:condition:cyp2d6-pm", "kind": "condition", "level": "dose", "med": "amitriptyline", "condition": "cyp2d6-poor-metaboliser",
+      "concern": "CYP2D6 poor metaboliser", "consequence": "Higher amitriptyline and nortriptyline levels.", "action": "Consider a 50% reduction of the starting dose.", "sourceWording": "Consider a 50% reduction of the recommended starting dose",
+      "src": [
+        { "s": "emc-10850", "q": "Known poor metabolisers of CYP2D6 or CYP2C19 These patients may have higher plasma concentrations of amitriptyline and its active metabolite nortriptyline." },
+        { "s": "emc-10850", "q": "Consider a 50% reduction of the recommended starting dose." }
+      ] },
+    { "id": "amitriptyline:condition:cyp2c19-pm", "kind": "condition", "level": "dose", "med": "amitriptyline", "condition": "cyp2c19-poor-metaboliser",
+      "concern": "CYP2C19 poor metaboliser", "consequence": "Higher amitriptyline and nortriptyline levels.", "action": "Consider a 50% reduction of the starting dose.", "sourceWording": "Consider a 50% reduction of the recommended starting dose",
+      "src": [
+        { "s": "emc-10850", "q": "Known poor metabolisers of CYP2D6 or CYP2C19 These patients may have higher plasma concentrations of amitriptyline and its active metabolite nortriptyline." },
+        { "s": "emc-10850", "q": "Consider a 50% reduction of the recommended starting dose." }
+      ] },
+    { "id": "amitriptyline:pregnancy:smpc", "kind": "pregnancy", "level": "avoid", "med": "amitriptyline",
+      "concern": "Pregnancy (SmPC)", "consequence": "Limited human data; animal reproductive toxicity; neonatal withdrawal after use in the final weeks.", "action": "SmPC: not recommended unless clearly necessary and after careful risk-benefit assessment. BUMPS advice differs (see separate statement).", "sourceWording": "is not recommended during pregnancy unless clearly necessary",
+      "src": [{ "s": "emc-10850", "q": "Amitriptyline is not recommended during pregnancy unless clearly necessary and only after careful consideration of the risk/benefit." }] },
+    { "id": "amitriptyline:pregnancy:bumps", "kind": "pregnancy", "level": "info", "med": "amitriptyline",
+      "concern": "Pregnancy (BUMPS)", "consequence": "Not known to harm the baby.", "action": "BUMPS: can be used in pregnancy if recommended by a specialist.", "sourceWording": "can be used in pregnancy if recommended by a specialist",
+      "src": [
+        { "s": "bumps-amitriptyline", "q": "Amitriptyline can be used in pregnancy if recommended by a specialist." },
+        { "s": "bumps-amitriptyline", "q": "Amitriptyline use in pregnancy is not known to harm the baby." }
+      ] },
+    { "id": "amitriptyline:pregnancy:late", "kind": "pregnancy", "level": "monitor", "med": "amitriptyline", "trimesters": [3],
+      "concern": "Use near delivery", "consequence": "Neonatal withdrawal symptoms (jitteriness, feeding and sleep problems) and possible anticholinergic effects.", "action": "Hospital delivery and monitoring of the newborn for withdrawal (BUMPS).", "sourceWording": "your baby may require extra monitoring",
+      "src": [
+        { "s": "emc-10850", "q": "During chronic use and after administration in the final weeks of pregnancy, neonatal withdrawal symptoms can occur." },
+        { "s": "bumps-amitriptyline", "q": "If you have taken amitriptyline around the time of delivery your baby may require extra monitoring to check for withdrawal symptoms." }
+      ] },
+    { "id": "amitriptyline:breastfeeding:smpc", "kind": "breastfeeding", "level": "caution", "med": "amitriptyline",
+      "concern": "Breastfeeding (SmPC)", "consequence": "Excreted in milk; risk to the infant cannot be excluded.", "action": "Decide whether to stop breastfeeding or stop the medicine, weighing benefits.", "sourceWording": "A decision must be made whether to discontinue breast-feeding or to discontinue/abstain from the therapy",
+      "src": [
+        { "s": "emc-10850", "q": "A risk to the suckling child cannot be excluded." },
+        { "s": "emc-10850", "q": "A decision must be made whether to discontinue breast-feeding or to discontinue/abstain from the therapy" }
+      ] },
+    { "id": "amitriptyline:breastfeeding:sps", "kind": "breastfeeding", "level": "caution", "med": "amitriptyline",
+      "concern": "Breastfeeding (SPS)", "consequence": "Very small amounts in milk; risk of infant sedation.", "action": "SPS: use with caution (imipramine or nortriptyline preferred); monitor infant for drowsiness, feeding, weight gain, irritability, constipation and urinary retention.", "sourceWording": "can be used with caution during breastfeeding",
+      "src": [
+        { "s": "sps-tca-bf", "q": "Amitriptyline can be used with caution during breastfeeding, but imipramine or nortriptyline are preferred." },
+        { "s": "sps-tca-bf", "q": "As a precaution, monitor infants for drowsiness, not waking to feed or poor feeding, adequate weight gain, irritability, constipation and urinary retention" }
+      ] },
+    { "id": "amitriptyline:interaction:maoi", "kind": "interaction", "level": "contraindicated", "med": "amitriptyline", "other": "group:maoi", "effect": "serotonin-syndrome",
+      "concern": "Amitriptyline + MAO inhibitor (including moclobemide and selegiline)", "consequence": "Serotonin syndrome (agitation, confusion, tremor, myoclonus, hyperthermia).", "action": "Do not use together. Start amitriptyline 14 days after an irreversible MAOI (1 day after moclobemide); start an MAOI 14 days after amitriptyline.", "sourceWording": "is contra-indicated",
+      "src": [
+        { "s": "emc-10850", "q": "Concomitant treatment with MAOIs (monoamine oxidase inhibitors) is contra-indicated" },
+        { "s": "emc-10850", "q": "Treatment with MAOIs may be introduced 14 days after discontinuation of amitriptyline." }
+      ] },
+    { "id": "amitriptyline:interaction:sympathomimetic", "kind": "interaction", "level": "avoid", "med": "amitriptyline", "other": "group:decongestant",
+      "concern": "Amitriptyline + sympathomimetic decongestant (the SmPC names adrenaline, ephedrine, isoprenaline, noradrenaline, phenylephrine, phenylpropanolamine, e.g. in anaesthetics and nasal decongestants)", "consequence": "Cardiovascular effects of the sympathomimetic may be potentiated.", "action": "Combination not recommended.", "sourceWording": "Combinations that are not recommended",
+      "src": [{ "s": "emc-10850", "q": "Combinations that are not recommended Sympathomimetic agents : Amitriptyline may potentiate the cardiovascular effects of adrenaline, ephedrine, isoprenaline, noradrenaline, phenylephrine, and phenylpropanolamine" }, { "s": "emc-10850", "q": "(e.g. as contained in local and general anaesthetics and nasal decongestants)" }] },
+    { "id": "amitriptyline:interaction:methyldopa", "kind": "interaction", "level": "avoid", "med": "amitriptyline", "other": "methyldopa",
+      "concern": "Amitriptyline + methyldopa (centrally acting antihypertensive)", "consequence": "Antihypertensive effect may be counteracted.", "action": "Combination not recommended; review antihypertensive therapy.", "sourceWording": "Combinations that are not recommended",
+      "src": [
+        { "s": "emc-10850", "q": "Tricyclic antidepressants may counteract the antihypertensive effects of centrally acting antihypertensives such as guanethidine, betanidine, reserpine, clonidine and methyldopa." },
+        { "s": "emc-10850", "q": "It is advisable to review all antihypertensive therapy during treatment with tricyclic antidepressants." }
+      ] },
+    { "id": "amitriptyline:interaction:anticholinergic", "kind": "interaction", "level": "avoid", "med": "amitriptyline", "other": "group:anticholinergic",
+      "concern": "Amitriptyline + anticholinergic medicine", "consequence": "Additive effects on eye, CNS, bowel and bladder; paralytic ileus, hyperpyrexia.", "action": "Avoid concomitant use (enuresis: do not combine).", "sourceWording": "concomitant use of these should be avoided",
+      "src": [
+        { "s": "emc-10850", "q": "concomitant use of these should be avoided due to an increased risk of paralytic ileus, hyperpyrexia, etc." },
+        { "s": "emc-10850", "q": "Amitriptyline for enuresis should not be combined with an anticholinergic drug." }
+      ] },
+    { "id": "amitriptyline:interaction:qt", "kind": "interaction", "level": "avoid", "med": "amitriptyline", "other": "group:qt-prolonging", "effect": "qt-prolongation",
+      "concern": "Amitriptyline + QT-prolonging medicine", "consequence": "Increased likelihood of ventricular arrhythmias.", "action": "Combination not recommended (listed under combinations not recommended); caution per section 4.4.", "sourceWording": "Combinations that are not recommended",
+      "src": [
+        { "s": "emc-10850", "q": "Drugs which prolong the QT-interval including antiarrhythmics such as quinidine" },
+        { "s": "emc-10850", "q": "may increase the likelihood of ventricular arrhythmias when taken with tricyclic antidepressants" },
+        { "s": "emc-10850", "q": "or in patients concurrently taking QT-prolonging drugs" }
+      ] },
+    { "id": "amitriptyline:interaction:tramadol", "kind": "interaction", "level": "avoid", "med": "amitriptyline", "other": "tramadol", "effect": "serotonin-syndrome",
+      "concern": "Amitriptyline + tramadol", "consequence": "Higher risk of seizures and serotonin syndrome; raised tramadol levels may cause opioid toxicity.", "action": "Combination not recommended.", "sourceWording": "Combinations that are not recommended",
+      "src": [
+        { "s": "emc-10850", "q": "Concomitant use of tramadol (a CYP2D6 substrate) and tricyclic antidepressants (TCAs), such as amitriptyline increases the risk for seizures and serotonin syndrome." },
+        { "s": "emc-10850", "q": "thereby increasing tramadol concentrations potentially causing opioid toxicity" }
+      ] },
+    { "id": "amitriptyline:interaction:fluconazole", "kind": "interaction", "level": "avoid", "med": "amitriptyline", "other": "fluconazole", "effect": "qt-prolongation",
+      "concern": "Amitriptyline + fluconazole", "consequence": "Raised tricyclic levels and toxicity; syncope and torsade de pointes have occurred.", "action": "Combination not recommended.", "sourceWording": "Combinations that are not recommended",
+      "src": [{ "s": "emc-10850", "q": "Antifungals such as fluconazole and terbinafine increase serum concentrations of tricyclics and accompanying toxicity. Syncope and torsade de pointes have occurred." }] },
+    { "id": "amitriptyline:interaction:furosemide", "kind": "interaction", "level": "caution", "med": "amitriptyline", "other": "furosemide", "effect": "qt-prolongation",
+      "concern": "Amitriptyline + furosemide (diuretic causing hypokalaemia)", "consequence": "Hypokalaemia raises the risk of arrhythmia.", "action": "Caution advised.", "sourceWording": "Caution is also advised",
+      "src": [{ "s": "emc-10850", "q": "Caution is also advised for co-administration of amitriptyline and diuretics inducing hypokalaemia (e.g. furosemide)" }] },
+    { "id": "amitriptyline:interaction:serotonergic", "kind": "interaction", "level": "caution", "med": "amitriptyline", "other": "group:serotonergic", "effect": "serotonin-syndrome",
+      "concern": "Amitriptyline + other serotonergic medicine (e.g. SSRIs, SNRIs, certain opioids, other TCAs)", "consequence": "Serotonin syndrome, which can be life-threatening.", "action": "Use with caution with SSRIs; if combination is needed, observe carefully especially at start and dose increases.", "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-10850", "q": "Amitriptyline should be used with caution in patients receiving SSRIs" },
+        { "s": "emc-10850", "q": "may lead to serotonin syndrome, which can be life-threatening condition" },
+        { "s": "emc-10850", "q": "careful observation of the patient is advised, particularly during treatment initiation and dose increases" }
+      ] },
+    { "id": "amitriptyline:interaction:fluoxetine", "kind": "interaction", "level": "dose", "med": "amitriptyline", "other": "fluoxetine",
+      "concern": "Amitriptyline + fluoxetine (strong CYP2D6 inhibitor)", "consequence": "Marked rise in amitriptyline levels (also serotonergic).", "action": "Consider a lower amitriptyline dose and monitoring TCA plasma levels.", "sourceWording": "a lower dose of amitriptyline should be considered",
+      "src": [
+        { "s": "emc-10850", "q": "a lower dose of amitriptyline should be considered if a strong CYP2D6 inhibitor (e.g. bupropion, quinidine, fluoxetine, paroxetine) is added to amitriptyline treatment" },
+        { "s": "emc-10850", "q": "These drugs may produce substantial decreases in TCA metabolism and marked increases in plasma concentrations." }
+      ] },
+    { "id": "amitriptyline:interaction:duloxetine", "kind": "interaction", "level": "caution", "med": "amitriptyline", "other": "duloxetine",
+      "concern": "Amitriptyline + duloxetine (moderate CYP2D6 inhibitor)", "consequence": "Raised amitriptyline levels.", "action": "Caution advised.", "sourceWording": "Caution is advised",
+      "src": [{ "s": "emc-10850", "q": "Caution is advised in the case of co-administration of amitriptyline with duloxetine, a moderate CYP2D6 inhibitor." }] },
+    { "id": "amitriptyline:interaction:diltiazem", "kind": "interaction", "level": "info", "med": "amitriptyline", "other": "diltiazem",
+      "concern": "Amitriptyline + diltiazem", "consequence": "May increase tricyclic levels and toxicity.", "action": "No specific action stated.", "sourceWording": "may increase plasma levels of tricyclic antidepressants",
+      "src": [{ "s": "emc-10850", "q": "Cimetidine, methylphenidate and calcium-channel blockers (e.g. diltiazem and verapamil) may increase plasma levels of tricyclic antidepressants and accompanying toxicity." }] },
+    { "id": "amitriptyline:interaction:verapamil", "kind": "interaction", "level": "info", "med": "amitriptyline", "other": "verapamil",
+      "concern": "Amitriptyline + verapamil", "consequence": "May increase tricyclic levels and toxicity.", "action": "No specific action stated.", "sourceWording": "may increase plasma levels of tricyclic antidepressants",
+      "src": [{ "s": "emc-10850", "q": "Cimetidine, methylphenidate and calcium-channel blockers (e.g. diltiazem and verapamil) may increase plasma levels of tricyclic antidepressants and accompanying toxicity." }] },
+    { "id": "amitriptyline:interaction:strong-cyp3a4", "kind": "interaction", "level": "info", "med": "amitriptyline", "other": "group:strong-cyp3a4-inhibitor",
+      "concern": "Amitriptyline + strong CYP3A4 inhibitor (e.g. ketoconazole, itraconazole, ritonavir)", "consequence": "Clinically relevant interaction may be expected.", "action": "No specific action stated.", "sourceWording": "Clinically relevant interactions may be expected",
+      "src": [{ "s": "emc-10850", "q": "Clinically relevant interactions may be expected with concomitant use of amitriptyline and strong CYP3A4 inhibitors such as ketoconazole, itraconazole and ritonavir." }] },
+    { "id": "amitriptyline:interaction:carbamazepine", "kind": "interaction", "level": "info", "med": "amitriptyline", "other": "carbamazepine",
+      "concern": "Amitriptyline + carbamazepine", "consequence": "Lower amitriptyline levels and reduced antidepressant response.", "action": "No specific action stated.", "sourceWording": "may increase the metabolism of tricyclic antidepressants",
+      "src": [
+        { "s": "emc-10850", "q": "Oral contraceptives, rifampicin, phenytoin, barbiturates, carbamazepine and St. John's Wort (Hypericum perforatum) may increase the metabolism of tricyclic antidepressants" },
+        { "s": "emc-10850", "q": "result in lowered plasma levels of tricyclic antidepressants and reduced antidepressant response" }
+      ] },
+    { "id": "amitriptyline:interaction:st-johns-wort", "kind": "interaction", "level": "avoid", "med": "amitriptyline", "other": "st-johns-wort",
+      "concern": "Amitriptyline + St John's wort", "consequence": "Lower amitriptyline levels and reduced response; St John's wort SPC also cites more frequent and severe seizures.", "action": "St John's wort SPC: do not take together.", "sourceWording": "Do not take with this product",
+      "src": [
+        { "s": "mhra-thr-13668-0014", "q": "Tricyclics e.g. Reduced blood levels with Do not take with this product. Amitriptyline" },
+        { "s": "emc-10850", "q": "Oral contraceptives, rifampicin, phenytoin, barbiturates, carbamazepine and St. John's Wort (Hypericum perforatum) may increase the metabolism of tricyclic antidepressants" }
+      ] },
+    { "id": "amitriptyline:interaction:thyroid", "kind": "interaction", "level": "caution", "med": "amitriptyline", "other": "group:thyroid-hormone",
+      "concern": "Amitriptyline + thyroid medication", "consequence": "Cardiac arrhythmias may develop.", "action": "Great care necessary.", "sourceWording": "Great care is necessary",
+      "src": [{ "s": "emc-10850", "q": "Great care is necessary if amitriptyline is administered to hyperthyroid patients or to those receiving thyroid medication, since cardiac arrhythmias may develop." }] },
+    { "id": "amitriptyline:interaction:cns-depressant", "kind": "interaction", "level": "caution", "med": "amitriptyline", "other": "group:cns-depressant", "effect": "cns-respiratory-depression",
+      "concern": "Amitriptyline + other CNS depressant", "consequence": "Enhanced sedation.", "action": "Listed under combinations requiring precautions for use.", "sourceWording": "Combinations requiring precautions for use",
+      "src": [{ "s": "emc-10850", "q": "Combinations requiring precautions for use CNS depressants : Amitriptyline may enhance the sedative effects of alcohol, barbiturates and other CNS depressants." }] }
+  ]
+}

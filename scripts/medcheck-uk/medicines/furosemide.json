@@ -1,0 +1,1142 @@
+{
+  "id": "furosemide",
+  "name": "Furosemide",
+  "ingredients": ["furosemide"],
+  "className": "Loop diuretic",
+  "groups": ["loop-diuretic", "diuretic", "antihypertensive", "non-antibiotic-sulfonamide"],
+  "searchTerms": ["frusemide"],
+  "formulations": [
+    {
+      "id": "furosemide-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "40 mg",
+      "release": "immediate",
+      "note": "Two UK SmPCs for 40 mg tablets were used. They differ in some wording (indications, children under 12, pregnancy and breastfeeding); differences are shown per source.",
+      "src": [
+        { "s": "emc-100580", "q": "Each tablet contains 40mg Furosemide." },
+        { "s": "emc-12129", "q": "Each tablet contains 40 mg of furosemide as the active substance." }
+      ],
+      "sourceIds": ["emc-100580", "emc-12129"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Oedema with congestive heart failure, liver cirrhosis or renal disease (including nephrotic syndrome); peripheral oedema due to mild to moderate hypertension.",
+          "src": [
+            { "s": "emc-100580", "q": "The treatment of oedema associated with congestive heart failure, cirrhosis of the liver, renal disease including nephrotic syndrome." },
+            { "s": "emc-100580", "q": "The treatment of peripheral oedema due to mild to moderate hypertension" }
+          ]
+        },
+        {
+          "t": "One UK SmPC also lists oliguria due to acute or chronic renal insufficiency.",
+          "detail": true,
+          "src": [
+            { "s": "emc-100580", "q": "Management of oliguria due to acute or chronic renal insufficiency." }
+          ]
+        },
+        {
+          "t": "Another UK SmPC also lists pulmonary oedema and peripheral oedema due to mechanical obstruction or venous insufficiency.",
+          "detail": true,
+          "src": [
+            { "s": "emc-12129", "q": "renal disease including nephrotic syndrome and pulmonary oedema." },
+            { "s": "emc-12129", "q": "The treatment of peripheral oedema due to mechanical obstruction, venous insufficiency, mild to moderate hypertension." }
+          ]
+        }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions stated in the UK SmPCs." },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults and children over 12: initially 40 mg in the morning; maintenance 20 mg daily or 40 mg on alternate days; up to 80 mg daily in resistant oedema.",
+          "tag": "Oedema",
+          "src": [
+            { "s": "emc-100580", "q": "Initially 40mg daily in the morning" },
+            { "s": "emc-100580", "q": "Maintenance dose is 20mg daily or 40mg on alternate days, increased in resistant oedema to 80mg daily." }
+          ]
+        },
+        {
+          "t": "20-40 mg twice daily. If 40 mg twice daily is not enough, add another antihypertensive rather than increasing the dose.",
+          "tag": "Hypertension",
+          "src": [
+            { "s": "emc-100580", "q": "Hypertension: 20-40mg twice daily; if 40mg twice daily does not lead to a clinically satisfactory response, the addition of other antihypertensive agents, rather than an increase in the dose of furosemide should be considered." }
+          ]
+        },
+        {
+          "t": "One UK SmPC (chronic renal insufficiency): 250 mg daily initially, increased in 250 mg steps every 4-6 hours to a maximum of 1,500 mg in 24 hours (exceptionally 2,000 mg). This conflicts with the same SmPC's contraindication when creatinine clearance is below 30 mL/min per 1.73 m²; the SmPC does not resolve this.",
+          "tag": "Oliguria in chronic renal insufficiency",
+          "detail": true,
+          "src": [
+            { "s": "emc-100580", "q": "In patients with chronic renal insufficiency, an initial daily dose of 250mg is employed." },
+            { "s": "emc-100580", "q": "up to a maximum daily dose of 1,500mg in 24 hours. In exceptional cases up to 2,000mg in 24 hours may be given." },
+            { "s": "emc-100580", "q": "Anuria and impaired renal function (creatinine clearance below 30mL/min per 1.73 m2 body surface area)" }
+          ]
+        },
+        {
+          "t": "Elderly: eliminated more slowly; titrate to response. Dose changes may be needed in hypoproteinaemia or liver congestion/dysfunction.",
+          "tag": "Elderly / other",
+          "src": [
+            { "s": "emc-100580", "q": "Elderly: Generally eliminated more slowly. Dosage should be titrated until the required response is achieved." },
+            { "s": "emc-100580", "q": "Dosage adjustment may be necessary in patients with Hypoproteinaemia Liver congestion/dysfunction" }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children over 12 years: adult doses.",
+          "src": [
+            { "s": "emc-100580", "q": "Adults and children over 12 years:" }
+          ]
+        },
+        {
+          "t": "Children under 12: one UK SmPC gives 1-3 mg/kg daily, maximum 40 mg per day; another UK SmPC says a more suitable dosage form should be used.",
+          "src": [
+            { "s": "emc-100580", "q": "Children under 12 years: From 1-3mg/kg body weight daily, up to a maximum total dose of 40mg per day." },
+            { "s": "emc-12129", "q": "Children under 12 years : A more suitable dosage form should be used in this age group." }
+          ]
+        },
+        {
+          "t": "Premature infants: risk of nephrocalcinosis/nephrolithiasis (renal function must be monitored and renal ultrasound performed) and of persistent patent ductus arteriosus.",
+          "detail": true,
+          "src": [
+            { "s": "emc-100580", "q": "In premature infants there is a risk of development of nephrocalcinosis/nephrolithiasis." },
+            { "s": "emc-100580", "q": "In premature infants with respiratory distress syndrome, administration of furosemide tablets in the initial weeks after birth entails an increased risk of a persistent patent ductus arteriosus." },
+            { "s": "emc-100580", "q": "Renal function must be monitored and renal ultrasonography performed" }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to furosemide, excipients, sulphonamides, sulphonamide derivatives or amiloride; anuria; CrCl below 30 mL/min per 1.73 m²; renal failure from nephrotoxic or hepatotoxic poisoning.",
+          "src": [
+            { "s": "emc-100580", "q": "Hypersensitivity to furosemide, any of the excipients, sulphonamides, sulphonamide derivatives/amiloride" },
+            { "s": "emc-100580", "q": "Anuria and impaired renal function (creatinine clearance below 30mL/min per 1.73 m2 body surface area) and renal failure resulting from poisoning by nephrotoxic and/or hepatotoxic agents" }
+          ]
+        },
+        {
+          "t": "Severe hypokalaemia, severe hyponatraemia, hypovolaemia, dehydration and/or hypotension; concomitant potassium supplements or potassium-sparing diuretics; pre-coma/coma with cirrhosis or encephalopathy; Addison's disease; digitalis intoxication; breastfeeding.",
+          "src": [
+            { "s": "emc-100580", "q": "Electrolyte disturbances (severe hypokalaemia, severe hyponatraemia, hypovolaemia), dehydration and/or hypotension" },
+            { "s": "emc-100580", "q": "Concomitant potassium supplements or potassium-sparing diuretics (see section 4.5) Pre-coma/coma associated with hepatic cirrhosis or encephalopathy Addison's disease Digitalis intoxication (see section 4.5) Breast-feeding women" }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Correct hypotension, hypovolaemia and acid-base disturbance before starting. Symptomatic hypotension (dizziness, fainting) is more likely in the elderly and with other blood-pressure-lowering medicines.",
+          "tag": "Hypotension",
+          "src": [
+            { "s": "emc-100580", "q": "These and any acid-base disturbance should be corrected before furosemide is started." },
+            { "s": "emc-100580", "q": "Symptomatic hypotension leading to dizziness, fainting or loss of consciousness can occur in patients treated with furosemide, particularly in the elderly" }
+          ]
+        },
+        {
+          "t": "Caution in impaired hepatic or renal function, hepatorenal syndrome, diabetes (latent diabetes may appear; insulin needs may rise), the elderly, urinary outflow obstruction including prostatic hypertrophy (acute retention), gout, and those at risk from marked falls in blood pressure. Stop before a glucose tolerance test.",
+          "tag": "Cautions",
+          "src": [
+            { "s": "emc-100580", "q": "Diabetes mellitus (latent diabetes may become overt: insulin requirements in established diabetes may increase)" },
+            { "s": "emc-100580", "q": "Difficulty with micturition/potential obstruction in the urinary tract including prostatic hypertrophy (increased risk of acute retention) Gout (increased risk of hyperuricaemia)" },
+            { "s": "emc-100580", "q": "Impaired renal function and hepato-renal syndrome" },
+            { "s": "emc-100580", "q": "Impaired hepatic function (see sections 4.2 and 4.3 and below - monitoring required)" },
+            { "s": "emc-100580", "q": "Elderly patients" },
+            { "s": "emc-100580", "q": "Patients at risk of pronounced falls in blood pressure" },
+            { "s": "emc-100580", "q": "Furosemide should be discontinued before a glucose tolerance test" }
+          ]
+        },
+        {
+          "t": "Hypoproteinaemia (e.g. nephrotic syndrome): careful dose titration (reduced effect, more ototoxicity).",
+          "detail": true,
+          "src": [
+            { "s": "emc-100580", "q": "Patients with hypoproteinaemia (such as that associated with the nephrotic syndrome) require careful dose titration (reduced furosemide effect: increased risk of ototoxicity)" }
+          ]
+        },
+        {
+          "t": "Lactose: patients with galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine.",
+          "detail": true,
+          "src": [
+            { "s": "emc-100580", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }
+          ]
+        },
+        {
+          "t": "Sulfonamide allergy (SPS): loop diuretics are non-antibiotic sulfonamides; cross-reactivity with sulfonamide antibiotics is not expected, but the SmPC lists sulphonamide hypersensitivity as a contraindication.",
+          "tag": "Sulfonamide allergy",
+          "detail": true,
+          "src": [
+            { "s": "sps-sulfonamide", "q": "Classes where all members have a sulfonamide group include: carbonic anhydrase inhibitors loop diuretics" },
+            { "s": "sps-sulfonamide", "q": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected, including in people who had a life-threatening reaction to a sulfonamide." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "ACE inhibitors: marked fall in blood pressure and worse renal function. Reduce the furosemide dose for at least 3 days, or stop it, before starting or increasing an ACE inhibitor.",
+          "tag": "ACE inhibitors",
+          "src": [
+            { "s": "emc-12129", "q": "A marked fall in blood pressure and deterioration in renal function may be seen when ACE inhibitors are added to furosemide therapy." },
+            { "s": "emc-12129", "q": "The dose of furosemide should be reduced for at least three days, or the drug stopped, before initiating the ACE inhibitor or increasing the dose of an ACE inhibitor." },
+            { "s": "emc-100580", "q": "Furosemide should be stopped or the dose reduced before starting an ACE-inhibitor." }
+          ]
+        },
+        {
+          "t": "Potassium supplements and potassium-sparing diuretics: contraindicated in section 4.3 (one SmPC notes increased hyperkalaemia risk with potassium salts).",
+          "tag": "Potassium",
+          "src": [
+            { "s": "emc-100580", "q": "Concomitant potassium supplements or potassium-sparing diuretics" },
+            { "s": "emc-12129", "q": "Potassium salts: There is an increased risk of hyperkalaemia when given with potassium salts." }
+          ]
+        },
+        {
+          "t": "Aminoglycosides, polymyxins, vancomycin: more ototoxicity (may be irreversible); use only if there are compelling medical reasons. Aminoglycosides and some high-dose cephalosporins: more nephrotoxicity.",
+          "tag": "Antibacterials",
+          "src": [
+            { "s": "emc-12129", "q": "There is an increased risk of ototoxicity when loop diuretics are given with aminoglycosides, polymyxins or vancomycin. Since this may lead to irreversible damage, these drugs must only be used with furosemide if there are compelling medical reasons." },
+            { "s": "emc-12129", "q": "Impairment of renal function may develop in patients receiving concurrent treatment with furosemide and high doses of certain cephalosporins." }
+          ]
+        },
+        {
+          "t": "NSAIDs: more nephrotoxicity and reduced diuretic effect; acute renal insufficiency if dehydrated. Salicylate toxicity may be increased.",
+          "tag": "NSAIDs / salicylates",
+          "src": [
+            { "s": "emc-100580", "q": "NSAIDs - increased risk of nephrotoxicity (especially if there is hypovolaemia)." },
+            { "s": "emc-100580", "q": "In patients with dehydration or hypovolaemia, NSAIDs may cause acute renal insufficiency." },
+            { "s": "emc-12129", "q": "Salicylic toxicity may be increased by furosemide." }
+          ]
+        },
+        {
+          "t": "Lithium: reduced lithium excretion and toxicity risk; avoid unless plasma lithium levels are monitored (one SmPC); monitor lithium levels carefully and adjust the lithium dose where necessary (another SmPC).",
+          "tag": "Lithium",
+          "src": [
+            { "s": "emc-100580", "q": "Avoid concomitant administration unless plasma levels are monitored." },
+            { "s": "emc-12129", "q": "Lithium: Loop diuretics reduce the excretion of lithium" },
+            { "s": "emc-12129", "q": "it is recommended that lithium levels are carefully monitored and where necessary the lithium dosage is adjusted" }
+          ]
+        },
+        {
+          "t": "Hypokalaemia (and hypomagnesaemia) increases cardiac toxicity with QT-prolonging drugs, antiarrhythmics and cardiac glycosides; avoid with pimozide. Extra hypokalaemia with thiazides, corticosteroids and high-dose beta2 agonists (e.g. salbutamol).",
+          "tag": "Hypokalaemia / QT",
+          "src": [
+            { "s": "emc-100580", "q": "Drugs associated with QT prolongation - cardiac toxicity may be increased by furosemide-induced hypokalaemia and/or hypomagnesaemia." },
+            { "s": "emc-12129", "q": "There is an increased risk of hypokalaemia when loop diuretics are given with thiazides and related diuretics." },
+            { "s": "emc-12129", "q": "There is an increased risk of hypokalaemia when loop diuretics are given with corticosteroids." },
+            { "s": "emc-100580", "q": "Anti-arrhythmics (including amiodarone, disopyramide, flecainide and sotalol) - risk of cardiac toxicity (because of furosemide-induced hypokalaemia)." },
+            { "s": "emc-100580", "q": "Cardiac glycosides - hypokalaemia and electrolyte disturbances (including magnesium) increases the risk of cardiac toxicity." },
+            { "s": "emc-100580", "q": "Avoid concurrent use with pimozide." },
+            { "s": "emc-100580", "q": "Sympathomimetics - increased risk of hypokalaemia with high doses of beta2 sympathomimetics" }
+          ]
+        },
+        {
+          "t": "Other: enhanced hypotension with other antihypertensives, nitrates, alpha-blockers (first-dose effect), tricyclics (postural); antidiabetic effect antagonised; carbamazepine (hyponatraemia); oestrogens and progestogens antagonise the diuretic effect; laxative abuse adds to potassium loss; one SmPC says antihistamines add hypokalaemia-related cardiac toxicity; sucralfate and bile acid sequestrants reduce absorption (separate doses); methotrexate and probenecid (mutual renal-secretion effects); warfarin (albumin binding in low albumin).",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            { "s": "emc-100580", "q": "Antidiabetics - hypoglycaemic effects antagonised by furosemide." },
+            { "s": "emc-12129", "q": "Furosemide and sucralfate must not be taken within 2 hours of each other" },
+            { "s": "emc-12129", "q": "Conversely, furosemide may decrease renal elimination of these drugs." },
+            { "s": "emc-100580", "q": "Antihypertensives - enhanced hypotensive effect possible with all types." },
+            { "s": "emc-100580", "q": "Nitrates - enhanced hypotensive effect." },
+            { "s": "emc-100580", "q": "There is a risk of a first-dose effect with post-synaptic alpha blockers e.g. prazosin." },
+            { "s": "emc-100580", "q": "Increased risk of postural hypotension with TCAs (tricyclic antidepressants)." },
+            { "s": "emc-100580", "q": "Antiepileptics - increased risk of hyponatraemia with carbamazepine." },
+            { "s": "emc-100580", "q": "Oestrogens and progestogens - diuretic effect antagonized." },
+            { "s": "emc-100580", "q": "Laxative abuse - increases the risk of potassium loss." },
+            { "s": "emc-100580", "q": "Antihistamines - hypokalaemia with increased risk of cardiac toxicity." },
+            { "s": "emc-100580", "q": "Bile acid sequestrants (e.g. colestyramine: colestipol) - reduced absorption of furosemide - administer 2 to 3 hours apart." },
+            { "s": "emc-12129", "q": "Probenecid, methotrexate and other drugs which, like furosemide, undergo significant renal tubular secretion may reduce the effect of furosemide." },
+            { "s": "emc-12129", "q": "Warfarin and clofibrate compete with furosemide in the binding to serum albumin." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Contraindicated in anuria and when creatinine clearance is below 30 mL/min per 1.73 m² (both UK SmPCs), and in renal failure caused by nephrotoxic or hepatotoxic poisoning.",
+          "src": [
+            { "s": "emc-100580", "q": "Anuria and impaired renal function (creatinine clearance below 30mL/min per 1.73 m2 body surface area)" },
+            { "s": "emc-12129", "q": "Anuria and impaired renal function (creatinine clearance below 30mL/min per 1.73 m2 body surface area)" }
+          ]
+        },
+        {
+          "t": "Note: one UK SmPC also gives high doses (from 250 mg daily) for oliguria in chronic renal insufficiency, which conflicts with its own section 4.3 creatinine clearance threshold. The SmPC does not explain how to reconcile the two.",
+          "detail": true,
+          "src": [
+            { "s": "emc-100580", "q": "In patients with chronic renal insufficiency, an initial daily dose of 250mg is employed." }
+          ]
+        },
+        {
+          "t": "SPS: if creatinine rises 30-50%, exceeds 200 micromol/L, or eGFR falls below 30 mL/min/1.73 m², review volume status promptly, reduce or stop if hypovolaemic, and recheck within 1 week. If creatinine rises over 50%, exceeds 256 micromol/L or eGFR is about 20-25, stop if hypovolaemic; if any uncertainty, seek specialist advice urgently.",
+          "tag": "SPS",
+          "src": [
+            { "s": "sps-furosemide-monitoring", "q": "Serum creatinine level increase of 30 to 50%, or value greater than 200 micromol/L, or eGFR less than 30 mL/min/1.73 m2 Ensure prompt clinical review of volume status. Reduce dose or stop if patient hypovolaemic. Re-measure renal function within 1 week." },
+            { "s": "sps-furosemide-monitoring", "q": "Serum creatinine level increase of more than 50%, or value greater than 256 micromol/L, or eGFR approximately 20 to 25 mL/min/1.73 m2" },
+            { "s": "sps-furosemide-monitoring", "q": "Assess volume status and respond: if patient hypovolaemic, stop furosemide" },
+            { "s": "sps-furosemide-monitoring", "q": "If any uncertainty, seek specialist advice urgently." }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Contraindicated in pre-coma/coma with hepatic cirrhosis or encephalopathy. Caution in impaired hepatic function (monitoring required); dose adjustment may be needed in liver congestion. Hepatic encephalopathy may occur in hepatocellular insufficiency.",
+          "src": [
+            { "s": "emc-100580", "q": "Pre-coma/coma associated with hepatic cirrhosis or encephalopathy" },
+            { "s": "emc-100580", "q": "Impaired hepatic function (see sections 4.2 and 4.3 and below - monitoring required)" },
+            { "s": "emc-100580", "q": "Hepatic encephalopathy in patients with hepatocellular insufficiency may occur" },
+            { "s": "emc-100580", "q": "In moderate liver congestion dosage adjustment may be needed" }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "One UK SmPC: crosses the placenta; must not be given in pregnancy unless there are compelling medical reasons; monitor fetal growth.",
+          "tag": "SmPC (one)",
+          "src": [
+            { "s": "emc-12129", "q": "It must not be given during pregnancy unless there are compelling medical reasons. Treatment during pregnancy requires monitoring of fetal growth." },
+            { "s": "emc-12129", "q": "however, furosemide crosses the placental barrier" }
+          ]
+        },
+        {
+          "t": "Another UK SmPC: should not be used in pregnancy unless benefits outweigh the possible fetal risk (including persistent patent ductus arteriosus).",
+          "tag": "SmPC (another)",
+          "src": [
+            { "s": "emc-100580", "q": "The drug should not be used in pregnant women unless the benefits to the patient outweigh the possible risk to the foetus which includes persistence of patent ductus arteriosus" }
+          ]
+        },
+        {
+          "t": "BUMPS (diuretics): can be used in pregnancy if prescribed but rarely needed; may reduce blood flow to the placenta (extra growth scans). In heart failure a diuretic may need to continue.",
+          "tag": "BUMPS",
+          "detail": true,
+          "src": [
+            { "s": "bumps-diuretics", "q": "A diuretic can be used in pregnancy if prescribed by a doctor." },
+            { "s": "bumps-diuretics", "q": "if you are using a diuretic because you have heart failure, you may be advised to continue taking a diuretic" },
+            { "s": "bumps-diuretics", "q": "Diuretics can be used in pregnancy but are rarely needed." },
+            { "s": "bumps-diuretics", "q": "Diuretics may reduce blood flow to the placenta." },
+            { "s": "bumps-diuretics", "q": "Your baby will be monitored with extra growth scans." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Contraindicated in breastfeeding women (section 4.3 of both UK SmPCs). Passes into milk and may inhibit lactation; one SmPC says women must not breastfeed during treatment.",
+          "src": [
+            { "s": "emc-12129", "q": "Breast-feeding women (see section 4.6)" },
+            { "s": "emc-12129", "q": "Furosemide passes into breast milk and may inhibit lactation. Women must not breastfeed if they are treated with furosemide." }
+          ]
+        },
+        {
+          "t": "Conflict: section 4.6 of the other UK SmPC says use with caution in nursing mothers, while its section 4.3 lists breastfeeding as a contraindication.",
+          "detail": true,
+          "src": [
+            { "s": "emc-100580", "q": "Furosemide may pass into the breast milk or may inhibit lactation, it should therefore be used with caution in nursing mothers." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No human data on fertility.",
+          "detail": true,
+          "src": [
+            { "s": "emc-12129", "q": "No human data on the effect of furosemide on fertility are available." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "One UK SmPC lists as very common: dehydration, hyponatraemia, hypochloraemic metabolic alkalosis, hypocalcaemia, hypomagnesaemia, decreased blood pressure. Common: hypovolaemia, hypochloraemia, raised creatinine and urea.",
+          "src": [
+            { "s": "emc-12129", "q": "Very common dehydration, hyponatraemia, hypochloremic metabolic alkalosis, hypocalcaemia, hypomagnesemia" },
+            { "s": "emc-12129", "q": "Common: Hypovolaemia, hypochloraemia" },
+            { "s": "emc-12129", "q": "Common: creatinine increased, blood urea increased" },
+            { "s": "emc-12129", "q": "Very common: decreased blood pressure" }
+          ]
+        },
+        {
+          "t": "Uncommon: thrombocytopenia, arrhythmias, deafness (sometimes irreversible), visual disturbance, dry mouth, thirst, nausea, bowel disturbance, photosensitivity, fatigue, muscle cramps.",
+          "detail": true,
+          "src": [
+            { "s": "emc-100580", "q": "Uncommon : Thrombocytopenia." },
+            { "s": "emc-100580", "q": "Uncommon: Deafness (sometimes irreversible)." },
+            { "s": "emc-100580", "q": "Uncommon: Visual disturbance." },
+            { "s": "emc-100580", "q": "Uncommon: Dry mouth, thirst, nausea, bowel motility disturbances, vomiting, diarrhoea, constipation." },
+            { "s": "emc-100580", "q": "Uncommon: Photosensitivity" },
+            { "s": "emc-100580", "q": "Uncommon: Cardiac arrhythmias" },
+            { "s": "emc-100580", "q": "Uncommon: Fatigue." },
+            { "s": "emc-12129", "q": "Uncommon: muscle cramps, muscle weakness." }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Bone marrow depression (rare) requires withdrawal; stop immediately if blood dyscrasias occur. Agranulocytosis, aplastic or haemolytic anaemia (very rare).",
+          "src": [
+            { "s": "emc-100580", "q": "Rare: Leucopenia, eosinophilia, and bone marrow depression (necessitates withdrawal of treatment)." },
+            { "s": "emc-100580", "q": "Blood dyscrasias. If these occur, stop furosemide immediately" },
+            { "s": "emc-100580", "q": "Very rare: Agranulocytosis, aplastic anaemia or haemolytic anaemia." }
+          ]
+        },
+        {
+          "t": "Severe anaphylactic or anaphylactoid reactions with shock (rare); serious skin reactions (Stevens-Johnson syndrome, Lyell's syndrome, AGEP, DRESS) - one SmPC says withdraw treatment if skin reactions occur; interstitial nephritis and acute renal failure (rare); acute pancreatitis (rare).",
+          "src": [
+            { "s": "emc-100580", "q": "Rare: Severe anaphylactic or anaphylactoid reactions (e.g. with shock) occur rarely" },
+            { "s": "emc-100580", "q": "AGEP (Acute Generalised Exanthematous Pustulosis) and DRESS (Drug Rash with Eosinophilia and Systemic Symptoms)" },
+            { "s": "emc-100580", "q": "Rare: Interstitial nephritis, acute renal failure." },
+            { "s": "emc-100580", "q": "exsudative erythema multiforme (Lyell's syndrome and Stevens-Johnson syndrome)" },
+            { "s": "emc-12129", "q": "When these occur treatment should be withdrawn." },
+            { "s": "emc-100580", "q": "Rare: Acute pancreatitis." }
+          ]
+        },
+        {
+          "t": "Severe potassium depletion can cause paralytic ileus or confusion progressing to coma; severe fluid loss can cause haemoconcentration and thrombosis.",
+          "src": [
+            { "s": "emc-100580", "q": "Severe potassium depletion can result in paralytic ileus or confusion, which can result in coma." },
+            { "s": "emc-100580", "q": "Severe fluid depletion may lead to haemoconcentration with a tendency for thromboses to develop." }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS: blood pressure, electrolytes and serum creatinine (for creatinine clearance) before starting; consider liver function tests if hepatic impairment is suspected.",
+          "tag": "baseline",
+          "src": [
+            { "s": "sps-furosemide-monitoring", "q": "Before starting Required Baseline Blood pressure Electrolytes Serum creatinine (for creatinine clearance)" },
+            { "s": "sps-furosemide-monitoring", "q": "Liver function tests · if hepatic impairment suspected" }
+          ]
+        },
+        {
+          "t": "SPS: recheck blood pressure, electrolytes and creatinine 1-2 weeks after starting or a dose change (5-7 days if high risk), then electrolytes and creatinine every 6 months. SmPC: regular checks for blood dyscrasias, liver damage and idiosyncratic reactions; frequent BUN in the first months; serum electrolytes.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "sps-furosemide-monitoring", "q": "After 1-2 weeks; or after 5-7 days in high risk patients" },
+            { "s": "sps-furosemide-monitoring", "q": "Every 6 months Electrolytes Serum creatinine (for creatinine clearance)" },
+            { "s": "emc-100580", "q": "Frequent BUN in first few months of treatment, periodically thereafter Serum electrolytes with replacement as appropriate" },
+            { "s": "emc-100580", "q": "Blood dyscrasias. If these occur, stop furosemide immediately Liver damage Idiosyncratic reactions" }
+          ]
+        },
+        {
+          "t": "SPS: potassium below 3 mmol/L (4 if high arrhythmia risk) - review the dose or consider stopping; below 2.5 (3.5) - urgent specialist advice. Sodium below 135 mmol/L - if volume depleted, reduce or stop. Stop immediately if blood dyscrasias occur (SmPC).",
+          "tag": "stop",
+          "src": [
+            { "s": "sps-furosemide-monitoring", "q": "Level decreases to less than 3 mmol/L (or 4 mmol/L in people at high-risk of cardiac arrhythmias) Review the diuretic treatment dose or consider stopping it." },
+            { "s": "sps-furosemide-monitoring", "q": "Level decreases to less than 135 mmol/L If volume depleted, reduce dose or stop if possible." },
+            { "s": "sps-furosemide-monitoring", "q": "Level decreases to less than 2.5 mmol/L (or 3.5 mmol/L in people at high-risk cardiac arrhythmias) Seek specialist advice urgently." },
+            { "s": "emc-100580", "q": "Blood dyscrasias. If these occur, stop furosemide immediately" }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral; usually in the morning (diuresis lasts about 4 hours, so timing can suit the patient). Take bile acid sequestrants 2-3 hours apart and sucralfate at least 2 hours apart.",
+          "src": [
+            { "s": "emc-100580", "q": "Diuresis lasts for approximately four hours following administration and hence the time of administration can be adjusted to suit the patient's requirements." },
+            { "s": "emc-100580", "q": "Colestyramine and colestipol - administer 2 to 3 hours apart." },
+            { "s": "emc-100580", "q": "the 2 drugs should be taken at least 2 hours apart" }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "If diarrhoea and vomiting develop, keep drinking and stop furosemide for 1-2 days until recovered; have renal function checked if symptoms last beyond 2 days (SPS).",
+          "src": [
+            { "s": "sps-furosemide-monitoring", "q": "If patients develop diarrhoea and vomiting while on furosemide treatment, they should maintain their fluid intake and stop furosemide for 1 to 2 days until they recover." },
+            { "s": "sps-furosemide-monitoring", "q": "If symptoms persist beyond 2 days, renal function should be checked." }
+          ]
+        },
+        {
+          "t": "Reduced alertness (and rarely dizziness or blurred vision) may affect driving or machine use; do not drive or use machines if affected.",
+          "detail": true,
+          "src": [
+            { "s": "emc-100580", "q": "Reduced mental alertness may impair ability to drive or operate dangerous machinery." },
+            { "s": "emc-12129", "q": "Reduced mental alertness and rarely dizziness and blurred vision have been reported. Patients so affected should not drive or operate machinery" }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "furosemide:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "allergen": ["furosemide", "amiloride", "group:sulfonamide", "group:non-antibiotic-sulfonamide"],
+      "concern": "Hypersensitivity to furosemide, sulphonamides, sulphonamide derivatives or amiloride",
+      "consequence": "Hypersensitivity reaction. (SPS: cross-reactivity between sulfonamide antibiotics and non-antibiotic sulfonamides is not expected.)",
+      "action": "SmPC: do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Hypersensitivity to furosemide, any of the excipients, sulphonamides, sulphonamide derivatives/amiloride" },
+        { "s": "sps-sulfonamide", "q": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected, including in people who had a life-threatening reaction to a sulfonamide." }
+      ]
+    },
+    {
+      "id": "furosemide:renal:crcl-under-30",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "renal": { "measure": "CrCl", "max": 30 },
+      "concern": "Impaired renal function: CrCl below 30 mL/min per 1.73 m²",
+      "consequence": "Listed contraindication in both UK SmPCs.",
+      "action": "Do not use. (One SmPC nevertheless gives high-dose regimens for oliguria in chronic renal insufficiency; the SmPC does not resolve this conflict.)",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Anuria and impaired renal function (creatinine clearance below 30mL/min per 1.73 m2 body surface area)" },
+        { "s": "emc-12129", "q": "Anuria and impaired renal function (creatinine clearance below 30mL/min per 1.73 m2 body surface area)" }
+      ]
+    },
+    {
+      "id": "furosemide:renal:egfr-sps-review",
+      "kind": "renal",
+      "level": "dose",
+      "med": "furosemide",
+      "renal": { "measure": "eGFR", "max": 30 },
+      "concern": "eGFR less than 30 mL/min/1.73 m² during treatment (SPS)",
+      "consequence": "Possible volume depletion and renal deterioration.",
+      "action": "Prompt clinical review of volume status; reduce dose or stop if hypovolaemic; recheck renal function within 1 week.",
+      "sourceWording": "Reduce dose or stop if patient hypovolaemic",
+      "src": [
+        { "s": "sps-furosemide-monitoring", "q": "Serum creatinine level increase of 30 to 50%, or value greater than 200 micromol/L, or eGFR less than 30 mL/min/1.73 m2 Ensure prompt clinical review of volume status. Reduce dose or stop if patient hypovolaemic. Re-measure renal function within 1 week." }
+      ]
+    },
+    {
+      "id": "furosemide:condition:anuria",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "condition": "acute-renal-insufficiency-anuria",
+      "concern": "Anuria, or renal failure from poisoning by nephrotoxic/hepatotoxic agents",
+      "consequence": "Listed contraindication.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Anuria and impaired renal function (creatinine clearance below 30mL/min per 1.73 m2 body surface area) and renal failure resulting from poisoning by nephrotoxic and/or hepatotoxic agents" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "condition": "hypokalaemia",
+      "concern": "Severe hypokalaemia",
+      "consequence": "Further potassium loss; arrhythmia risk.",
+      "action": "Do not use while severe hypokalaemia is present.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Electrolyte disturbances (severe hypokalaemia, severe hyponatraemia, hypovolaemia), dehydration and/or hypotension" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "condition": "hyponatraemia",
+      "concern": "Severe hyponatraemia",
+      "consequence": "Further sodium loss.",
+      "action": "Do not use while severe hyponatraemia is present.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Electrolyte disturbances (severe hypokalaemia, severe hyponatraemia, hypovolaemia), dehydration and/or hypotension" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:dehydration",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "condition": "dehydration-hypovolaemia",
+      "concern": "Hypovolaemia or dehydration",
+      "consequence": "Worse volume depletion, hypotension, renal impairment.",
+      "action": "Do not use; correct before starting.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Electrolyte disturbances (severe hypokalaemia, severe hyponatraemia, hypovolaemia), dehydration and/or hypotension" },
+        { "s": "emc-100580", "q": "These and any acid-base disturbance should be corrected before furosemide is started." }
+      ]
+    },
+    {
+      "id": "furosemide:condition:hypotension",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "condition": "hypotension",
+      "effect": "hypotension",
+      "concern": "Hypotension",
+      "consequence": "Symptomatic hypotension (dizziness, fainting).",
+      "action": "Do not use; correct before starting.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Electrolyte disturbances (severe hypokalaemia, severe hyponatraemia, hypovolaemia), dehydration and/or hypotension" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:hepatic-coma",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "condition": "hepatic-encephalopathy-coma",
+      "concern": "Pre-coma/coma with hepatic cirrhosis or encephalopathy",
+      "consequence": "Electrolyte shifts may worsen hepatic encephalopathy.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Pre-coma/coma associated with hepatic cirrhosis or encephalopathy" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:addisons",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "condition": "addisons-disease",
+      "concern": "Addison's disease",
+      "consequence": "Listed contraindication.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "encephalopathy Addison's disease Digitalis intoxication" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:digitalis-intoxication",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "condition": "digitalis-intoxication",
+      "concern": "Digitalis (digoxin) intoxication",
+      "consequence": "Hypokalaemia and electrolyte loss increase cardiac toxicity.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Addison's disease Digitalis intoxication (see section 4.5)" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "furosemide",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus",
+      "consequence": "Latent diabetes may become overt; insulin requirements may increase.",
+      "action": "Use with caution; monitor glycaemic control.",
+      "sourceWording": "Caution needed",
+      "src": [
+        { "s": "emc-100580", "q": "Diabetes mellitus (latent diabetes may become overt: insulin requirements in established diabetes may increase)" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:prostate",
+      "kind": "condition",
+      "level": "caution",
+      "med": "furosemide",
+      "condition": "prostatic-hypertrophy",
+      "concern": "Urinary outflow obstruction / prostatic hypertrophy",
+      "consequence": "Increased risk of acute urinary retention.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution needed",
+      "src": [
+        { "s": "emc-100580", "q": "Difficulty with micturition/potential obstruction in the urinary tract including prostatic hypertrophy (increased risk of acute retention)" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:gout",
+      "kind": "condition",
+      "level": "caution",
+      "med": "furosemide",
+      "condition": "gout-hyperuricaemia",
+      "concern": "Gout",
+      "consequence": "Increased risk of hyperuricaemia.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution needed",
+      "src": [
+        { "s": "emc-100580", "q": "Gout (increased risk of hyperuricaemia)" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "furosemide",
+      "condition": "renal-impairment",
+      "concern": "Impaired renal function or hepatorenal syndrome",
+      "consequence": "Electrolyte and renal deterioration.",
+      "action": "Use with caution; monitoring required (contraindicated if CrCl below 30 mL/min per 1.73 m²).",
+      "sourceWording": "Caution needed",
+      "src": [
+        { "s": "emc-100580", "q": "Impaired renal function and hepato-renal syndrome (see section 4.3 and below -monitoring required)" }
+      ]
+    },
+    {
+      "id": "furosemide:condition:galactose",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "furosemide",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, total lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Tablets contain lactose.",
+      "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        { "s": "emc-100580", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }
+      ]
+    },
+    {
+      "id": "furosemide:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "furosemide",
+      "hepatic": ["any"],
+      "concern": "Impaired hepatic function",
+      "consequence": "Hepatic encephalopathy may occur in hepatocellular insufficiency; contraindicated in pre-coma/coma.",
+      "action": "Use with caution with monitoring; dose adjustment may be needed in liver congestion.",
+      "sourceWording": "Caution needed",
+      "src": [
+        { "s": "emc-100580", "q": "Impaired hepatic function (see sections 4.2 and 4.3 and below - monitoring required)" },
+        { "s": "emc-100580", "q": "In moderate liver congestion dosage adjustment may be needed" }
+      ]
+    },
+    {
+      "id": "furosemide:age:under-12",
+      "kind": "age",
+      "level": "dose",
+      "med": "furosemide",
+      "age": { "maxYears": 12 },
+      "concern": "Child under 12 years",
+      "consequence": "One UK SmPC: 1-3 mg/kg daily, maximum 40 mg/day; another UK SmPC: use a more suitable dosage form.",
+      "action": "Use weight-based dosing (max 40 mg/day) or a more suitable form.",
+      "sourceWording": "up to a maximum total dose of 40mg per day",
+      "src": [
+        { "s": "emc-100580", "q": "Children under 12 years: From 1-3mg/kg body weight daily, up to a maximum total dose of 40mg per day." },
+        { "s": "emc-12129", "q": "Children under 12 years : A more suitable dosage form should be used in this age group." }
+      ]
+    },
+    {
+      "id": "furosemide:pregnancy:smpc-12129",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "concern": "Pregnancy, unless there are compelling medical reasons (one UK SmPC)",
+      "consequence": "Crosses the placenta.",
+      "action": "Must not be given unless there are compelling medical reasons; monitor fetal growth.",
+      "sourceWording": "must not be given during pregnancy unless there are compelling medical reasons",
+      "src": [
+        { "s": "emc-12129", "q": "It must not be given during pregnancy unless there are compelling medical reasons. Treatment during pregnancy requires monitoring of fetal growth." },
+        { "s": "emc-12129", "q": "however, furosemide crosses the placental barrier" }
+      ]
+    },
+    {
+      "id": "furosemide:pregnancy:smpc-100580",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "furosemide",
+      "concern": "Pregnancy (another UK SmPC)",
+      "consequence": "Fetal risk includes persistent patent ductus arteriosus.",
+      "action": "Should not be used unless benefits outweigh the possible fetal risk.",
+      "sourceWording": "should not be used in pregnant women unless the benefits",
+      "src": [
+        { "s": "emc-100580", "q": "The drug should not be used in pregnant women unless the benefits to the patient outweigh the possible risk to the foetus which includes persistence of patent ductus arteriosus" }
+      ]
+    },
+    {
+      "id": "furosemide:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "concern": "Breastfeeding",
+      "consequence": "Passes into breast milk and may inhibit lactation.",
+      "action": "Contraindicated (section 4.3 of both UK SmPCs). Note: one SmPC's section 4.6 says use with caution.",
+      "sourceWording": "Breast-feeding women",
+      "src": [
+        { "s": "emc-12129", "q": "Women must not breastfeed if they are treated with furosemide." },
+        { "s": "emc-100580", "q": "Digitalis intoxication (see section 4.5) Breast-feeding women (see section 4.6)" }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:potassium-supplement",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "other": "group:potassium-supplement",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium supplements",
+      "consequence": "Hyperkalaemia risk (listed in section 4.3).",
+      "action": "Do not combine.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Concomitant potassium supplements or potassium-sparing diuretics" },
+        { "s": "emc-12129", "q": "Potassium salts: There is an increased risk of hyperkalaemia when given with potassium salts." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:potassium-sparing",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "furosemide",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics",
+      "consequence": "Listed in section 4.3 of both UK SmPCs.",
+      "action": "Do not combine.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-100580", "q": "Concomitant potassium supplements or potassium-sparing diuretics" },
+        { "s": "emc-12129", "q": "Concomitant potassium supplements or potassium sparing diuretics" }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "furosemide",
+      "other": "group:ace-inhibitor",
+      "effect": "hypotension",
+      "concern": "ACE inhibitors",
+      "consequence": "Marked fall in blood pressure and deterioration in renal function.",
+      "action": "Reduce furosemide for at least 3 days, or stop it, before starting or increasing an ACE inhibitor.",
+      "sourceWording": "The dose of furosemide should be reduced",
+      "src": [
+        { "s": "emc-12129", "q": "A marked fall in blood pressure and deterioration in renal function may be seen when ACE inhibitors are added to furosemide therapy." },
+        { "s": "emc-12129", "q": "The dose of furosemide should be reduced for at least three days, or the drug stopped, before initiating the ACE inhibitor or increasing the dose of an ACE inhibitor." },
+        { "s": "emc-100580", "q": "Furosemide should be stopped or the dose reduced before starting an ACE-inhibitor." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:arb",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:arb",
+      "effect": "hypotension",
+      "concern": "Angiotensin II receptor antagonists",
+      "consequence": "Enhanced hypotensive effect.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "Enhanced hypotensive effect",
+      "src": [
+        { "s": "emc-12129", "q": "Angiotensin -II Receptor Antagonists: Enhanced hypotensive effect when diuretics given with angiotensin-II receptor antagonists." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:aminoglycoside",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "furosemide",
+      "other": "group:aminoglycoside",
+      "effect": "nephrotoxicity",
+      "concern": "Aminoglycosides (systemic)",
+      "consequence": "Increased ototoxicity (may be irreversible) and nephrotoxicity.",
+      "action": "Use together only if there are compelling medical reasons.",
+      "sourceWording": "must only be used with furosemide if there are compelling medical reasons",
+      "src": [
+        { "s": "emc-12129", "q": "Since this may lead to irreversible damage, these drugs must only be used with furosemide if there are compelling medical reasons." },
+        { "s": "emc-100580", "q": "Increased risk of nephrotoxicity with aminoglycosides or cefaloridine." },
+        { "s": "emc-12129", "q": "There is an increased risk of ototoxicity when loop diuretics are given with aminoglycosides, polymyxins or vancomycin." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:cephalosporin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:cephalosporin",
+      "effect": "nephrotoxicity",
+      "concern": "Cephalosporins (high doses of certain cephalosporins)",
+      "consequence": "Renal impairment may develop with high doses of certain cephalosporins.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "Impairment of renal function may develop",
+      "src": [
+        { "s": "emc-12129", "q": "Impairment of renal function may develop in patients receiving concurrent treatment with furosemide and high doses of certain cephalosporins." },
+        { "s": "emc-100580", "q": "Increased risk of nephrotoxicity with aminoglycosides or cefaloridine." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:nsaid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:nsaid",
+      "effect": "nephrotoxicity",
+      "concern": "NSAIDs",
+      "consequence": "Increased risk of nephrotoxicity (especially with hypovolaemia); NSAIDs may cause acute renal insufficiency in dehydration or hypovolaemia; diuretic effect may be antagonised.",
+      "action": "Be aware; no specific action stated in the SmPCs.",
+      "sourceWording": "increased risk of nephrotoxicity",
+      "src": [
+        { "s": "emc-100580", "q": "NSAIDs - increased risk of nephrotoxicity (especially if there is hypovolaemia)." },
+        { "s": "emc-100580", "q": "In patients with dehydration or hypovolaemia, NSAIDs may cause acute renal insufficiency." },
+        { "s": "emc-12129", "q": "Diuretics can increase the risk of nephrotoxicity of NSAIDs, also antagonism of diuretic effect." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:salicylate",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:salicylate",
+      "concern": "Salicylates (e.g. aspirin)",
+      "consequence": "Salicylate effects/toxicity may be increased by furosemide.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "effects may be potentiated",
+      "src": [
+        { "s": "emc-100580", "q": "Salicylates - effects may be potentiated by furosemide." },
+        { "s": "emc-12129", "q": "Salicylic toxicity may be increased by furosemide." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:qt",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Medicines that prolong the QT interval",
+      "consequence": "Cardiac toxicity increased by furosemide-induced hypokalaemia and/or hypomagnesaemia.",
+      "action": "Be aware; no specific action stated (the SmPCs ask for serum electrolyte monitoring during treatment).",
+      "sourceWording": "cardiac toxicity may be increased",
+      "src": [
+        { "s": "emc-100580", "q": "Drugs associated with QT prolongation - cardiac toxicity may be increased by furosemide-induced hypokalaemia and/or hypomagnesaemia." },
+        { "s": "emc-100580", "q": "Serum electrolytes with replacement as appropriate" }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:thiazide",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:thiazide",
+      "concern": "Thiazide and related diuretics",
+      "consequence": "Increased risk of hypokalaemia.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "increased risk of hypokalaemia",
+      "src": [
+        { "s": "emc-12129", "q": "There is an increased risk of hypokalaemia when loop diuretics are given with thiazides and related diuretics." },
+        { "s": "emc-100580", "q": "Increased risk of hypokalaemia with thiazides." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:corticosteroid",
+      "concern": "Corticosteroids",
+      "consequence": "Increased risk of hypokalaemia; diuretic effect antagonised.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "increased risk of hypokalaemia",
+      "src": [
+        { "s": "emc-100580", "q": "Corticosteroids - diuretic effect antagonised (sodium retention) and increased risk of hypokalaemia." },
+        { "s": "emc-12129", "q": "There is an increased risk of hypokalaemia when loop diuretics are given with corticosteroids." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:beta2-agonist",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:beta2-agonist",
+      "concern": "Beta2 agonists at high doses (e.g. salbutamol, salmeterol)",
+      "consequence": "Increased risk of hypokalaemia.",
+      "action": "Be aware (high doses); no specific action stated.",
+      "sourceWording": "increased risk of hypokalaemia",
+      "src": [
+        { "s": "emc-100580", "q": "Sympathomimetics - increased risk of hypokalaemia with high doses of beta2 sympathomimetics (such as bambuterol, femoterol, salbutamol, salmeterol and terbutaline)." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "carbamazepine",
+      "effect": "hyponatraemia",
+      "concern": "Carbamazepine",
+      "consequence": "Increased risk of hyponatraemia.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "increased risk of hyponatraemia",
+      "src": [
+        { "s": "emc-100580", "q": "Antiepileptics - increased risk of hyponatraemia with carbamazepine." },
+        { "s": "emc-12129", "q": "There is an increased risk of hyponatraemia when diuretics are given with carbemazepine." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:antidiabetic",
+      "concern": "Antidiabetic medicines including insulin",
+      "consequence": "Hypoglycaemic effect antagonised; insulin requirements may increase.",
+      "action": "Be aware; no specific action stated in section 4.5 (section 4.4: caution in diabetes mellitus).",
+      "sourceWording": "hypoglycaemic effects antagonised",
+      "src": [
+        { "s": "emc-100580", "q": "Antidiabetics - hypoglycaemic effects antagonised by furosemide." },
+        { "s": "emc-100580", "q": "Insulin - requirements may be increased" }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:nitrate",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:nitrate",
+      "effect": "hypotension",
+      "concern": "Nitrates",
+      "consequence": "Enhanced hypotensive effect.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "enhanced hypotensive effect",
+      "src": [
+        { "s": "emc-100580", "q": "Nitrates - enhanced hypotensive effect." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:alpha-blocker",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:alpha-blocker",
+      "effect": "hypotension",
+      "concern": "Alpha-blockers",
+      "consequence": "Enhanced hypotensive effect; risk of first-dose hypotension with post-synaptic alpha-blockers (e.g. prazosin).",
+      "action": "Be aware of first-dose hypotension; no specific action stated.",
+      "sourceWording": "increased risk of first dose hypotension",
+      "src": [
+        { "s": "emc-12129", "q": "Alpha-blockers: Enhanced hypotensive effect when diuretics are given with alpha-blockers, also increased risk of first dose hypotension with post-synaptic alpha-blockers such as prazosin." },
+        { "s": "emc-100580", "q": "There is a risk of a first-dose effect with post-synaptic alpha blockers e.g. prazosin." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hypotension",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "Increased risk of postural hypotension.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "Increased risk of postural hypotension",
+      "src": [
+        { "s": "emc-100580", "q": "Increased risk of postural hypotension with TCAs (tricyclic antidepressants)." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:beta-blocker",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:beta-blocker",
+      "effect": "hypotension",
+      "concern": "Beta-blockers",
+      "consequence": "Enhanced hypotensive effect.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "enhanced hypotensive effect",
+      "src": [
+        { "s": "emc-12129", "q": "Beta-blockers: There is an enhanced hypotensive effect when diuretics are given with beta- blockers." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Other antihypertensives",
+      "consequence": "Enhanced hypotensive effect possible with all types.",
+      "action": "Be aware; adjust doses to response.",
+      "sourceWording": "enhanced hypotensive effect possible",
+      "src": [
+        { "s": "emc-100580", "q": "Antihypertensives - enhanced hypotensive effect possible with all types." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:methotrexate",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "methotrexate",
+      "concern": "Methotrexate",
+      "consequence": "Mutual reduction of renal tubular secretion: may reduce the effect of furosemide and the renal elimination of methotrexate; with high-dose treatment, raised levels and more adverse effects of either drug.",
+      "action": "Be aware, especially with high-dose treatment; no specific action stated.",
+      "sourceWording": "may lead to increased serum levels",
+      "src": [
+        { "s": "emc-12129", "q": "Probenecid, methotrexate and other drugs which, like furosemide, undergo significant renal tubular secretion may reduce the effect of furosemide." },
+        { "s": "emc-12129", "q": "Conversely, furosemide may decrease renal elimination of these drugs." },
+        { "s": "emc-12129", "q": "this may lead to increased serum levels and an increased risk of adverse effects due to furosemide or the concomitant medication" }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:warfarin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "warfarin",
+      "concern": "Warfarin",
+      "consequence": "Competes for albumin binding (relevant in low albumin, e.g. nephrotic syndrome); strong diuresis with dehydration may weaken warfarin's effect.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "may weaken the antithrombotic effect of warfarin",
+      "src": [
+        { "s": "emc-12129", "q": "Warfarin and clofibrate compete with furosemide in the binding to serum albumin." },
+        { "s": "emc-12129", "q": "a strong diuresis with associated dehydration may weaken the antithrombotic effect of warfarin." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:progestogen",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:progestogen",
+      "concern": "Oestrogens and progestogens",
+      "consequence": "Diuretic effect antagonised.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "diuretic effect antagonized",
+      "src": [
+        { "s": "emc-100580", "q": "Oestrogens and progestogens - diuretic effect antagonized." }
+      ]
+    },
+    {
+      "id": "furosemide:interaction:laxative",
+      "kind": "interaction",
+      "level": "info",
+      "med": "furosemide",
+      "other": "group:laxative",
+      "concern": "Laxatives (abuse or prolonged use)",
+      "consequence": "Increased risk of potassium loss / hypokalaemia.",
+      "action": "Be aware with laxative abuse or prolonged use; no specific action stated.",
+      "sourceWording": "increases the risk of potassium loss",
+      "src": [
+        { "s": "emc-100580", "q": "Laxative abuse - increases the risk of potassium loss." },
+        { "s": "emc-12129", "q": "Carbenoxolone, prolonged use of laxatives, liquorice: May increase the risk of developing hypokalaemia." }
+      ]
+    }
+  ]
+}

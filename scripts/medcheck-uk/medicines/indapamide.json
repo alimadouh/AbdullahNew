@@ -1,0 +1,922 @@
+{
+  "id": "indapamide",
+  "name": "Indapamide",
+  "ingredients": ["indapamide"],
+  "className": "Thiazide-related (thiazide-like) diuretic; sulfonamide derivative",
+  "groups": ["thiazide", "diuretic", "antihypertensive", "non-antibiotic-sulfonamide"],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "indapamide-pr-tab",
+      "label": "Prolonged-release tablets",
+      "route": "oral",
+      "strengths": "1.5 mg",
+      "release": "modified",
+      "src": [{ "s": "emc-1152", "q": "One prolonged-release film-coated tablet contains 1.5 mg indapamide." }],
+      "sourceIds": ["emc-1152"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        { "t": "Essential hypertension in adults.", "src": [{ "s": "emc-1152", "q": "is indicated in essential hypertension in adults." }] }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions stated in the UK SmPC." },
+    "dosing": {
+      "items": [
+        {
+          "t": "One 1.5 mg tablet every 24 hours, preferably in the morning. Higher doses do not add antihypertensive effect but increase the saluretic (diuretic) effect; do not increase the dose if treatment is ineffective.",
+          "tag": "Essential hypertension",
+          "src": [
+            { "s": "emc-1152", "q": "One tablet per 24 hours, preferably in the morning" },
+            { "s": "emc-1152", "q": "At higher doses the antihypertensive action of indapamide is not enhanced but the saluretic effect is increased." },
+            { "s": "emc-1152", "q": "The dose should not be increased if treatment is ineffective." }
+          ]
+        },
+        {
+          "t": "Elderly: can be treated when renal function is normal or only minimally impaired; interpret plasma creatinine in relation to age, weight and gender.",
+          "tag": "Elderly",
+          "src": [{ "s": "emc-1152", "q": "Elderly patients can be treated with Natrilix SR when renal function is normal or only minimally impaired." }, { "s": "emc-1152", "q": "In the elderly, the plasma creatinine must be adjusted in relation to age, weight and gender." }]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        { "t": "Safety and efficacy in children and adolescents have not been established; no data are available.", "src": [{ "s": "emc-1152", "q": "The safety and efficacy of Natrilix SR in children and adolescents have not been established. No data are available." }] }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to indapamide, to other sulfonamides or to any excipient; severe renal failure; hepatic encephalopathy or severe impairment of liver function; hypokalaemia.",
+          "src": [
+            { "s": "emc-1152", "q": "Hypersensitivity to the active substance, to other sulfonamides or to any of the excipients listed in section 6.1." },
+            { "s": "emc-1152", "q": "- Severe renal failure. - Hepatic encephalopathy or severe impairment of liver function. - Hypokalaemia." }
+          ]
+        },
+        { "t": "Severe renal failure is defined in section 4.2 as creatinine clearance below 30 ml/min.", "src": [{ "s": "emc-1152", "q": "In severe renal failure (creatinine clearance below 30 ml/min), treatment is contraindicated." }] }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Impaired liver function: thiazide-related diuretics may cause hepatic encephalopathy (especially with electrolyte imbalance), which can progress to hepatic coma. Stop immediately if this occurs.",
+          "tag": "Liver disease",
+          "src": [
+            { "s": "emc-1152", "q": "When liver function is impaired, thiazide-related diuretics may cause, particularly in case of electrolyte imbalance, hepatic encephalopathy which can progress to hepatic coma." },
+            { "s": "emc-1152", "q": "Administration of the diuretic must be stopped immediately if this occurs." }
+          ]
+        },
+        {
+          "t": "Hyponatraemia (sometimes with very serious consequences): measure sodium before starting and regularly after; more often in the elderly and in cirrhosis.",
+          "tag": "Sodium",
+          "src": [
+            { "s": "emc-1152", "q": "This must be measured before starting treatment, then at regular intervals subsequently." },
+            { "s": "emc-1152", "q": "Any diuretic treatment may cause hyponatraemia, sometimes with very serious consequences." }
+          ]
+        },
+        {
+          "t": "Hypokalaemia is the major risk: prevent potassium below 3.4 mmol/l in high-risk groups (elderly, malnourished or on many medicines, cirrhosis with oedema/ascites, coronary disease, heart failure, long QT). Hypokalaemia and bradycardia predispose to torsades de pointes.",
+          "tag": "Potassium / QT",
+          "src": [
+            { "s": "emc-1152", "q": "Potassium depletion with hypokalaemia is the major risk of thiazide and related diuretics." },
+            { "s": "emc-1152", "q": "The risk of onset of hypokalaemia (< 3.4 mmol/l) must be prevented in certain high risk populations" },
+            { "s": "emc-1152", "q": "Individuals with a long QT interval are also at risk, whether the origin is congenital or iatrogenic." }
+          ]
+        },
+        {
+          "t": "Calcium may rise slightly; marked hypercalcaemia may reveal hyperparathyroidism (stop before testing parathyroid function). Hypomagnesaemia can occur.",
+          "tag": "Calcium / magnesium",
+          "detail": true,
+          "src": [
+            { "s": "emc-1152", "q": "Frank hypercalcaemia may be due to previously unrecognised hyperparathyroidism." },
+            { "s": "emc-1152", "q": "Treatment should be withdrawn before the investigation of parathyroid function." },
+            { "s": "emc-1152", "q": "which may result in hypomagnesaemia" }
+          ]
+        },
+        {
+          "t": "Diabetes: monitoring of blood glucose is important, especially with hypokalaemia. Gout: attacks may be more likely in hyperuricaemia.",
+          "tag": "Diabetes / gout",
+          "src": [
+            { "s": "emc-1152", "q": "Monitoring of blood glucose is important in diabetics, in particular in the presence of hypokalaemia." },
+            { "s": "emc-1152", "q": "Tendency to gout attacks may be increased in hyperuricaemic patients." }
+          ]
+        },
+        {
+          "t": "Choroidal effusion, acute myopia and secondary acute angle-closure glaucoma can occur within hours to weeks; stop the drug as rapidly as possible. History of sulfonamide or penicillin allergy may be a risk factor.",
+          "tag": "Eye",
+          "src": [
+            { "s": "emc-1152", "q": "The primary treatment is to discontinue drug intake as rapidly as possible." },
+            { "s": "emc-1152", "q": "Risk factors for developing acute angle-closure glaucoma may include a history of sulfonamide or penicillin allergy." }
+          ]
+        },
+        {
+          "t": "Photosensitivity: stop treatment if it occurs; if re-treatment is needed, protect skin from sun and artificial UVA.",
+          "tag": "Skin",
+          "detail": true,
+          "src": [{ "s": "emc-1152", "q": "If photosensitivity reaction occurs during treatment, it is recommended to stop the treatment." }, { "s": "emc-1152", "q": "it is recommended to protect exposed areas to the sun or to artificial UVA" }]
+        },
+        {
+          "t": "Lactose: patients with galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine.",
+          "detail": true,
+          "src": [{ "s": "emc-1152", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }]
+        },
+        {
+          "t": "Sulfonamide allergy (SPS): cross-reactivity between sulfonamide antibiotics and non-antibiotic sulfonamides (which include thiazides and thiazide-like diuretics) is not expected, but product information often contraindicates them. This SmPC lists hypersensitivity to other sulfonamides as a contraindication.",
+          "tag": "Sulfonamide allergy",
+          "detail": true,
+          "src": [
+            { "s": "sps-sulfonamide", "q": "thiazides and thiazide-like diuretics" },
+            { "s": "sps-sulfonamide", "q": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected, including in people who had a life-threatening reaction to a sulfonamide." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Lithium: combination not recommended (raised lithium, toxicity). If a diuretic is needed, monitor plasma lithium carefully and adjust the dose.",
+          "tag": "Lithium",
+          "src": [
+            { "s": "emc-1152", "q": "Combinations that are not recommended: Lithium: Increased plasma lithium with signs of overdosage" },
+            { "s": "emc-1152", "q": "careful monitoring of plasma lithium and dose adjustment are required." }
+          ]
+        },
+        {
+          "t": "Medicines that can cause torsades de pointes (e.g. class Ia and III antiarrhythmics, some antipsychotics, moxifloxacin, methadone): higher risk of ventricular arrhythmia, as hypokalaemia is a risk factor. Correct hypokalaemia first; monitor clinically, electrolytes and ECG.",
+          "tag": "QT / torsades de pointes",
+          "src": [
+            { "s": "emc-1152", "q": "Increased risk of ventricular arrhythmias, particularly torsades de pointes (hypokalaemia is a risk factor)." },
+            { "s": "emc-1152", "q": "Monitor for hypokalaemia and correct, if required, before introducing this combination. Clinical, plasma electrolytes and ECG monitoring." }
+          ]
+        },
+        {
+          "t": "NSAIDs (systemic, including COX-2 inhibitors) and high-dose aspirin (3 g/day or more): may reduce the antihypertensive effect; risk of acute renal failure if dehydrated. Hydrate the patient and monitor renal function at the start.",
+          "tag": "NSAIDs / high-dose aspirin",
+          "src": [
+            { "s": "emc-1152", "q": "N.S.A.I.Ds. (systemic route) including COX-2 selective inhibitors, high dose acetylsalicylic acid (≥ 3 g/day)" },
+            { "s": "emc-1152", "q": "Risk of acute renal failure in dehydrated patients (decreased glomerular filtration). Hydrate the patient; monitor renal function at the start of treatment." }
+          ]
+        },
+        {
+          "t": "ACE inhibitors: risk of sudden hypotension and/or acute renal failure when started with pre-existing sodium depletion. Either stop the diuretic 3 days before, or start the ACE inhibitor at a low dose; monitor creatinine in the first weeks.",
+          "tag": "ACE inhibitors",
+          "src": [
+            { "s": "emc-1152", "q": "Risk of sudden hypotension and/or acute renal failure" },
+            { "s": "emc-1152", "q": "either to stop the diuretic 3 days before starting treatment with the A.C.E. inhibitor" },
+            { "s": "emc-1152", "q": "monitor renal function (plasma creatinine) during the first weeks of treatment" }
+          ]
+        },
+        {
+          "t": "Other potassium-lowering medicines (systemic corticosteroids, stimulant laxatives, IV amphotericin B, tetracosactide): additive hypokalaemia; monitor and correct potassium; use non-stimulant laxatives. Systemic corticosteroids also reduce the antihypertensive effect.",
+          "tag": "Hypokalaemia",
+          "src": [
+            { "s": "emc-1152", "q": "gluco- and mineralo-corticoids (systemic route), tetracosactide, stimulant laxatives: Increased risk of hypokalaemia (additive effect)." },
+            { "s": "emc-1152", "q": "Use non-stimulant laxatives." },
+            { "s": "emc-1152", "q": "Decreased antihypertensive effect (water/sodium retention due to corticosteroids)." }
+          ]
+        },
+        {
+          "t": "Potassium-sparing diuretics (amiloride, spironolactone): hypokalaemia or hyperkalaemia can still occur, especially in renal failure or diabetes; monitor potassium and ECG.",
+          "tag": "Potassium-sparing diuretics",
+          "src": [
+            { "s": "emc-1152", "q": "hypokalaemia or hyperkalaemia (particularly in patients with renal failure or diabetes) may still occur. Plasma potassium and ECG should be monitored" }
+          ]
+        },
+        {
+          "t": "Metformin: higher risk of lactic acidosis from diuretic-related renal impairment. Do not use metformin when plasma creatinine exceeds 135 µmol/l (men) or 110 µmol/l (women).",
+          "tag": "Metformin",
+          "src": [
+            { "s": "emc-1152", "q": "Increased risk of metformin induced lactic acidosis" },
+            { "s": "emc-1152", "q": "Do not use metformin when plasma creatinine exceeds 15 mg/l (135 µmol/l) in men and 12 mg/l (110 µmol/l) in women." }
+          ]
+        },
+        {
+          "t": "Allopurinol: more hypersensitivity reactions to allopurinol. Tricyclic (imipramine-like) antidepressants and neuroleptics: additive orthostatic hypotension. Calcium salts: risk of hypercalcaemia. Digitalis: hypokalaemia/hypomagnesaemia increase toxicity (monitor potassium, magnesium and ECG). Iodinated contrast: rehydrate first. Baclofen: increased antihypertensive effect. Ciclosporin, tacrolimus: plasma creatinine may rise.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            { "s": "emc-1152", "q": "Concomitant treatment with indapamide may increase the incidence of hypersensitivity reactions to allopurinol." },
+            { "s": "emc-1152", "q": "Imipramine-like antidepressants, neuroleptics: Antihypertensive effect and increased risk of orthostatic hypotension (additive effect)." },
+            { "s": "emc-1152", "q": "Calcium (salts): Risk of hypercalcaemia resulting from decreased urinary elimination of calcium." },
+            { "s": "emc-1152", "q": "Hypokalaemia and/or hypomagnesaemia predispose to the toxic effects of digitalis." },
+            { "s": "emc-1152", "q": "Rehydration before administration of the iodinated compound." },
+            { "s": "emc-1152", "q": "Baclofen: Increased antihypertensive effect." },
+            { "s": "emc-1152", "q": "Ciclosporin, tacrolimus: Risk of increased plasma creatinine" }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Contraindicated in severe renal failure (creatinine clearance below 30 ml/min). Thiazide-related diuretics are fully effective only when renal function is normal or minimally impaired (plasma creatinine below about 220 µmol/l in an adult).",
+          "src": [
+            { "s": "emc-1152", "q": "In severe renal failure (creatinine clearance below 30 ml/min), treatment is contraindicated." },
+            { "s": "emc-1152", "q": "plasma creatinine below levels of the order of 25 mg/l, i.e . 220 µmol/l in an adult" }
+          ]
+        },
+        { "t": "Early hypovolaemia can reduce glomerular filtration and worsen existing renal insufficiency.", "detail": true, "src": [{ "s": "emc-1152", "q": "This transitory functional renal insufficiency is of no consequence in individuals with normal renal function but may worsen preexisting renal insufficiency." }] }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        { "t": "Contraindicated in severe hepatic impairment or hepatic encephalopathy. In any liver impairment, risk of hepatic encephalopathy; stop immediately if it occurs.", "src": [
+          { "s": "emc-1152", "q": "In severe hepatic impairment, treatment is contraindicated." },
+          { "s": "emc-1152", "q": "Hepatic encephalopathy or severe impairment of liver function." }
+        ] }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: limited data. Prolonged third-trimester thiazide exposure can reduce maternal plasma volume and uteroplacental blood flow (fetoplacental ischaemia, growth retardation). Preferably avoid in pregnancy as a precaution.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-1152", "q": "Prolonged exposure to thiazide during the third trimester of pregnancy can reduce maternal plasma volume as well as uteroplacental blood flow" },
+            { "s": "emc-1152", "q": "As a precautionary measure, it is preferable to avoid the use of Indapamide during pregnancy." }
+          ]
+        },
+        {
+          "t": "BUMPS (diuretics): can be used in pregnancy if prescribed by a doctor but rarely needed; may reduce blood flow to the placenta, so extra growth scans are offered. For hypertension a different medicine is usually offered.",
+          "tag": "BUMPS",
+          "detail": true,
+          "src": [
+            { "s": "bumps-diuretics", "q": "A diuretic can be used in pregnancy if prescribed by a doctor." },
+            { "s": "bumps-diuretics", "q": "Diuretics may reduce blood flow to the placenta." },
+            { "s": "bumps-diuretics", "q": "If you take a diuretic to treat high blood pressure, you will usually be offered a different medicine that is known to be safe during pregnancy." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Not recommended. Insufficient information on excretion in milk; risk of sulfonamide hypersensitivity and hypokalaemia in the infant cannot be excluded; thiazides can reduce or suppress milk production.",
+          "src": [
+            { "s": "emc-1152", "q": "Indapamide is not recommended during breast-feeding." },
+            { "s": "emc-1152", "q": "A risk to the newborns/infants cannot be excluded." },
+            { "s": "emc-1152", "q": "decrease or even suppression of milk lactation" }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        { "t": "No effect on fertility in rat studies; no effects on human fertility are anticipated.", "detail": true, "src": [{ "s": "emc-1152", "q": "No effects on human fertility are anticipated." }] }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: hypokalaemia, hypersensitivity reactions (mainly skin, in people prone to allergy/asthma), maculopapular rash. At 1.5 mg, potassium below 3.4 mmol/l was seen in 10% of patients after 4-6 weeks.",
+          "src": [
+            { "s": "emc-1152", "q": "The most commonly reported adverse reactions are hypokalaemia, hypersensitivity reactions, mainly dermatological, in subjects with a predisposition to allergic and asthmatic reactions and maculopapular rashes." },
+            { "s": "emc-1152", "q": "Indapamide 1.5mg: Plasma potassium <3.4 mmol/l was seen in 10 % of patients" }
+          ]
+        },
+        { "t": "Uncommon: hyponatraemia, vomiting, purpura, erectile dysfunction.", "detail": true, "src": [
+          { "s": "emc-1152", "q": "Hyponatraemia (see section 4.4) Uncommon" },
+          { "s": "emc-1152", "q": "Erectile dysfunction Uncommon" }
+        ] }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Torsade de pointes (potentially fatal) and QT prolongation (frequency not known), linked to hypokalaemia.",
+          "src": [{ "s": "emc-1152", "q": "Torsade de pointes (potentially fatal)" }]
+        },
+        {
+          "t": "Acute angle-closure glaucoma / choroidal effusion (not known): sudden reduced vision or eye pain - stop the drug as rapidly as possible.",
+          "src": [{ "s": "emc-1152", "q": "Symptoms include acute onset of decreased visual acuity or ocular pain and typically occur within hours to weeks of drug initiation." }]
+        },
+        {
+          "t": "Very rare: agranulocytosis, aplastic or haemolytic anaemia, thrombocytopenia, angioedema, toxic epidermal necrolysis, Stevens-Johnson syndrome, pancreatitis, renal failure. Hepatic encephalopathy possible in liver failure.",
+          "src": [
+            { "s": "emc-1152", "q": "Agranulocytosis Very rare Aplastic anaemia Very rare Haemolytic anaemia Very rare" },
+            { "s": "emc-1152", "q": "Toxic epidermal necrolysis Very rare Stevens-Johnson Syndrome Very rare" },
+            { "s": "emc-1152", "q": "Thrombocytopenia Very rare" },
+            { "s": "emc-1152", "q": "Angioedema Very rare" },
+            { "s": "emc-1152", "q": "Pancreatitis Very rare" },
+            { "s": "emc-1152", "q": "Renal failure Very rare" },
+            { "s": "emc-1152", "q": "Possibility of onset of hepatic encephalopathy in case of hepatic insufficiency" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        { "t": "Plasma sodium before starting.", "tag": "baseline", "src": [{ "s": "emc-1152", "q": "This must be measured before starting treatment, then at regular intervals subsequently." }] },
+        {
+          "t": "Plasma potassium in the first week of treatment, then regularly (more often in high-risk groups); sodium at regular intervals (more often in elderly and cirrhosis); blood glucose in diabetes.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-1152", "q": "The first measurement of plasma potassium should be obtained during the first week following the start of treatment." },
+            { "s": "emc-1152", "q": "regular monitoring is therefore essential, and should be even more frequent in the elderly and cirrhotic patients" }
+          ]
+        },
+        {
+          "t": "Stop if hepatic encephalopathy, photosensitivity or acute visual symptoms (choroidal effusion/angle-closure glaucoma) occur.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-1152", "q": "Administration of the diuretic must be stopped immediately if this occurs." },
+            { "s": "emc-1152", "q": "The primary treatment is to discontinue drug intake as rapidly as possible." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        { "t": "Swallow whole with water; do not chew. Preferably in the morning.", "src": [{ "s": "emc-1152", "q": "to be swallowed whole with water and not chewed." }] }
+      ]
+    },
+    "counselling": {
+      "items": [
+        { "t": "Low blood pressure reactions may affect driving, especially at the start or when another antihypertensive is added.", "src": [{ "s": "emc-1152", "q": "As a result the ability to drive vehicles or to operate machinery may be impaired." }] },
+        { "t": "Athletes: may give a positive doping test.", "detail": true, "src": [{ "s": "emc-1152", "q": "may give a positive reaction in doping tests." }] }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "indapamide:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "indapamide",
+      "allergen": [
+        "indapamide",
+        "group:sulfonamide",
+        "group:non-antibiotic-sulfonamide"
+      ],
+      "concern": "Hypersensitivity to indapamide or other sulfonamides",
+      "consequence": "Hypersensitivity reaction. (SPS: cross-reactivity between sulfonamide antibiotics and non-antibiotic sulfonamides is not expected.)",
+      "action": "SmPC: do not use.",
+      "sourceWording": "Hypersensitivity to the active substance, to other sulfonamides",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Hypersensitivity to the active substance, to other sulfonamides or to any of the excipients listed in section 6.1."
+        },
+        {
+          "s": "sps-sulfonamide",
+          "q": "Cross-reactivity between antibiotic and non-antibiotic sulfonamides is not expected, including in people who had a life-threatening reaction to a sulfonamide."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:renal:crcl-under-30",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "indapamide",
+      "renal": {
+        "measure": "CrCl",
+        "max": 30
+      },
+      "concern": "Severe renal failure (CrCl below 30 ml/min)",
+      "consequence": "Thiazide-related diuretics are not effective and renal function may worsen.",
+      "action": "Do not use.",
+      "sourceWording": "treatment is contraindicated",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "In severe renal failure (creatinine clearance below 30 ml/min), treatment is contraindicated."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:condition:severe-renal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "indapamide",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal failure",
+      "consequence": "Thiazide-related diuretics are not effective; risk of worsening renal function.",
+      "action": "Do not use (SmPC defines this as CrCl below 30 ml/min).",
+      "sourceWording": "Severe renal failure",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "- Severe renal failure. - Hepatic encephalopathy"
+        }
+      ]
+    },
+    {
+      "id": "indapamide:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "indapamide",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe hepatic impairment",
+      "consequence": "Risk of hepatic encephalopathy progressing to coma.",
+      "action": "Do not use.",
+      "sourceWording": "treatment is contraindicated",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "In severe hepatic impairment, treatment is contraindicated."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:hepatic:any-encephalopathy-risk",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "indapamide",
+      "hepatic": [
+        "mild",
+        "moderate"
+      ],
+      "concern": "Impaired liver function",
+      "consequence": "Thiazide-related diuretics may cause hepatic encephalopathy (especially with electrolyte imbalance), which can progress to coma.",
+      "action": "Watch for encephalopathy; stop immediately if it occurs.",
+      "sourceWording": "must be stopped immediately if this occurs",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "When liver function is impaired, thiazide-related diuretics may cause, particularly in case of electrolyte imbalance, hepatic encephalopathy which can progress to hepatic coma."
+        },
+        {
+          "s": "emc-1152",
+          "q": "Administration of the diuretic must be stopped immediately if this occurs."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:condition:hepatic-encephalopathy",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "indapamide",
+      "condition": "hepatic-encephalopathy-coma",
+      "concern": "Hepatic encephalopathy",
+      "consequence": "May worsen to hepatic coma.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Hepatic encephalopathy or severe impairment of liver function."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "indapamide",
+      "condition": "hypokalaemia",
+      "concern": "Hypokalaemia",
+      "consequence": "Further potassium loss; arrhythmia (torsades de pointes) risk.",
+      "action": "Do not use until corrected.",
+      "sourceWording": "contraindicated",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "severe impairment of liver function. - Hypokalaemia."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "indapamide",
+      "condition": "hyponatraemia",
+      "concern": "Hyponatraemia",
+      "consequence": "Any diuretic may cause hyponatraemia, sometimes with very serious consequences.",
+      "action": "Measure sodium before starting and regularly after.",
+      "sourceWording": "must be measured before starting treatment",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Any diuretic treatment may cause hyponatraemia, sometimes with very serious consequences."
+        },
+        {
+          "s": "emc-1152",
+          "q": "This must be measured before starting treatment, then at regular intervals subsequently."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:condition:qt",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "indapamide",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "Long QT interval (congenital or drug-induced)",
+      "consequence": "Hypokalaemia predisposes to severe arrhythmias, including potentially fatal torsades de pointes.",
+      "action": "Monitor plasma potassium more often; prevent hypokalaemia.",
+      "sourceWording": "More frequent monitoring of plasma potassium is required",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Individuals with a long QT interval are also at risk, whether the origin is congenital or iatrogenic."
+        },
+        {
+          "s": "emc-1152",
+          "q": "More frequent monitoring of plasma potassium is required in all the situations indicated above."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:condition:heart-failure",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "indapamide",
+      "condition": "heart-failure",
+      "concern": "Heart failure or coronary artery disease",
+      "consequence": "High-risk group for hypokalaemia (increases arrhythmia risk and digitalis toxicity).",
+      "action": "Prevent hypokalaemia; monitor plasma potassium more often.",
+      "sourceWording": "must be prevented in certain high risk populations",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "The risk of onset of hypokalaemia (< 3.4 mmol/l) must be prevented in certain high risk populations"
+        },
+        {
+          "s": "emc-1152",
+          "q": "coronary artery disease and cardiac failure patients"
+        }
+      ]
+    },
+    {
+      "id": "indapamide:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "indapamide",
+      "condition": "diabetes",
+      "concern": "Diabetes",
+      "consequence": "Blood glucose may rise, particularly with hypokalaemia.",
+      "action": "Monitor blood glucose.",
+      "sourceWording": "Monitoring of blood glucose is important in diabetics",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Monitoring of blood glucose is important in diabetics, in particular in the presence of hypokalaemia."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:condition:gout",
+      "kind": "condition",
+      "level": "info",
+      "med": "indapamide",
+      "condition": "gout-hyperuricaemia",
+      "concern": "Gout / hyperuricaemia",
+      "consequence": "Gout attacks may be more likely.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "Tendency to gout attacks may be increased",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Tendency to gout attacks may be increased in hyperuricaemic patients."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:condition:galactose",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "indapamide",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, total lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Tablets contain lactose.",
+      "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:age:child",
+      "kind": "age",
+      "level": "info",
+      "med": "indapamide",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Child or adolescent",
+      "consequence": "Safety and efficacy not established; no data.",
+      "action": "No paediatric dose in the SmPC.",
+      "sourceWording": "have not been established",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "The safety and efficacy of Natrilix SR in children and adolescents have not been established. No data are available."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:pregnancy",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "indapamide",
+      "concern": "Pregnancy",
+      "consequence": "Third-trimester thiazide exposure can reduce plasma volume and uteroplacental blood flow (fetoplacental ischaemia, growth retardation).",
+      "action": "Preferably avoid (precautionary).",
+      "sourceWording": "it is preferable to avoid the use of Indapamide during pregnancy",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "As a precautionary measure, it is preferable to avoid the use of Indapamide during pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "indapamide",
+      "concern": "Breastfeeding",
+      "consequence": "Infant risk (sulfonamide hypersensitivity, hypokalaemia) cannot be excluded; may suppress lactation.",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended during breast-feeding",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Indapamide is not recommended during breast-feeding."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:qt",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "indapamide",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Medicines that can cause torsades de pointes",
+      "consequence": "Increased risk of ventricular arrhythmias, particularly torsades de pointes (hypokalaemia is a risk factor).",
+      "action": "Correct hypokalaemia before starting; clinical, electrolyte and ECG monitoring; prefer medicines without this risk.",
+      "sourceWording": "Monitor for hypokalaemia and correct",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Increased risk of ventricular arrhythmias, particularly torsades de pointes (hypokalaemia is a risk factor)."
+        },
+        {
+          "s": "emc-1152",
+          "q": "Monitor for hypokalaemia and correct, if required, before introducing this combination. Clinical, plasma electrolytes and ECG monitoring."
+        },
+        {
+          "s": "emc-1152",
+          "q": "Use substances which do not have the disadvantage of causing torsades de pointes in the presence of hypokalaemia"
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:moxifloxacin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "indapamide",
+      "other": "moxifloxacin",
+      "effect": "qt-prolongation",
+      "concern": "Moxifloxacin (named torsades de pointes-inducing drug)",
+      "consequence": "Increased risk of ventricular arrhythmias, particularly torsades de pointes.",
+      "action": "Correct hypokalaemia first; clinical, electrolyte and ECG monitoring.",
+      "sourceWording": "Combinations requiring precautions for use",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "pentamidine, sparfloxacin, moxifloxacin, vincamine IV, methadone"
+        },
+        {
+          "s": "emc-1152",
+          "q": "Monitor for hypokalaemia and correct, if required, before introducing this combination. Clinical, plasma electrolytes and ECG monitoring."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:nsaid",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "indapamide",
+      "other": "group:nsaid",
+      "effect": "nephrotoxicity",
+      "concern": "NSAIDs (systemic, including COX-2 inhibitors)",
+      "consequence": "Reduced antihypertensive effect; acute renal failure if dehydrated.",
+      "action": "Hydrate the patient; monitor renal function at the start.",
+      "sourceWording": "Hydrate the patient; monitor renal function",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "N.S.A.I.Ds. (systemic route) including COX-2 selective inhibitors"
+        },
+        {
+          "s": "emc-1152",
+          "q": "Risk of acute renal failure in dehydrated patients (decreased glomerular filtration). Hydrate the patient; monitor renal function at the start of treatment."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "indapamide",
+      "other": "group:ace-inhibitor",
+      "effect": "hypotension",
+      "concern": "ACE inhibitors (starting with sodium depletion)",
+      "consequence": "Sudden hypotension and/or acute renal failure, especially with renal artery stenosis.",
+      "action": "Stop the diuretic 3 days before starting the ACE inhibitor, or start it at a low dose; monitor creatinine in the first weeks.",
+      "sourceWording": "monitor renal function (plasma creatinine)",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Risk of sudden hypotension and/or acute renal failure"
+        },
+        {
+          "s": "emc-1152",
+          "q": "either to stop the diuretic 3 days before starting treatment with the A.C.E. inhibitor"
+        },
+        {
+          "s": "emc-1152",
+          "q": "monitor renal function (plasma creatinine) during the first weeks of treatment"
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:prednisolone",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "indapamide",
+      "other": "prednisolone",
+      "concern": "Prednisolone (systemic corticosteroid)",
+      "consequence": "Additive hypokalaemia; reduced antihypertensive effect (water/sodium retention).",
+      "action": "Monitor and correct plasma potassium.",
+      "sourceWording": "Monitoring of plasma potassium and correction if required",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "gluco- and mineralo-corticoids (systemic route), tetracosactide, stimulant laxatives: Increased risk of hypokalaemia (additive effect)."
+        },
+        {
+          "s": "emc-1152",
+          "q": "Monitoring of plasma potassium and correction if required."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:dexamethasone",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "indapamide",
+      "other": "dexamethasone",
+      "concern": "Dexamethasone (systemic corticosteroid)",
+      "consequence": "Additive hypokalaemia; reduced antihypertensive effect (water/sodium retention).",
+      "action": "Monitor and correct plasma potassium.",
+      "sourceWording": "Monitoring of plasma potassium and correction if required",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "gluco- and mineralo-corticoids (systemic route), tetracosactide, stimulant laxatives: Increased risk of hypokalaemia (additive effect)."
+        },
+        {
+          "s": "emc-1152",
+          "q": "Monitoring of plasma potassium and correction if required."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:senna",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "indapamide",
+      "other": "senna",
+      "concern": "Stimulant laxatives (senna)",
+      "consequence": "Additive hypokalaemia.",
+      "action": "Monitor and correct potassium; use non-stimulant laxatives.",
+      "sourceWording": "Use non-stimulant laxatives",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "tetracosactide, stimulant laxatives: Increased risk of hypokalaemia (additive effect)."
+        },
+        {
+          "s": "emc-1152",
+          "q": "Use non-stimulant laxatives."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:bisacodyl",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "indapamide",
+      "other": "bisacodyl",
+      "concern": "Stimulant laxatives (bisacodyl)",
+      "consequence": "Additive hypokalaemia.",
+      "action": "Monitor and correct potassium; use non-stimulant laxatives.",
+      "sourceWording": "Use non-stimulant laxatives",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "tetracosactide, stimulant laxatives: Increased risk of hypokalaemia (additive effect)."
+        },
+        {
+          "s": "emc-1152",
+          "q": "Use non-stimulant laxatives."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:potassium-sparing",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "indapamide",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics (amiloride, spironolactone)",
+      "consequence": "Hypokalaemia or hyperkalaemia may still occur, especially in renal failure or diabetes.",
+      "action": "Monitor plasma potassium and ECG; review treatment if needed.",
+      "sourceWording": "Plasma potassium and ECG should be monitored",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "hypokalaemia or hyperkalaemia (particularly in patients with renal failure or diabetes) may still occur. Plasma potassium and ECG should be monitored"
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:metformin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "indapamide",
+      "other": "metformin",
+      "concern": "Metformin",
+      "consequence": "Increased risk of lactic acidosis from diuretic-related functional renal failure.",
+      "action": "Do not use metformin when plasma creatinine exceeds 135 µmol/l (men) or 110 µmol/l (women).",
+      "sourceWording": "Do not use metformin when plasma creatinine exceeds",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Increased risk of metformin induced lactic acidosis"
+        },
+        {
+          "s": "emc-1152",
+          "q": "Do not use metformin when plasma creatinine exceeds 15 mg/l (135 µmol/l) in men and 12 mg/l (110 µmol/l) in women."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:allopurinol",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "indapamide",
+      "other": "allopurinol",
+      "concern": "Allopurinol",
+      "consequence": "Higher incidence of hypersensitivity reactions to allopurinol.",
+      "action": "Combination requiring special care.",
+      "sourceWording": "Combinations requiring special care",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Concomitant treatment with indapamide may increase the incidence of hypersensitivity reactions to allopurinol."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "indapamide",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hypotension",
+      "concern": "Tricyclic (imipramine-like) antidepressants",
+      "consequence": "Additive antihypertensive effect and orthostatic hypotension.",
+      "action": "Combination to be taken into consideration (no specific action stated).",
+      "sourceWording": "increased risk of orthostatic hypotension",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Imipramine-like antidepressants, neuroleptics: Antihypertensive effect and increased risk of orthostatic hypotension (additive effect)."
+        }
+      ]
+    },
+    {
+      "id": "indapamide:interaction:calcium",
+      "kind": "interaction",
+      "level": "info",
+      "med": "indapamide",
+      "other": "group:calcium-preparation",
+      "concern": "Calcium salts",
+      "consequence": "Risk of hypercalcaemia (reduced urinary calcium elimination).",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "Risk of hypercalcaemia",
+      "src": [
+        {
+          "s": "emc-1152",
+          "q": "Calcium (salts): Risk of hypercalcaemia resulting from decreased urinary elimination of calcium."
+        }
+      ]
+    }
+  ]
+}

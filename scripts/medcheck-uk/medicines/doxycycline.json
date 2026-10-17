@@ -1,0 +1,804 @@
+{
+  "id": "doxycycline",
+  "name": "Doxycycline",
+  "ingredients": ["doxycycline"],
+  "className": "Tetracycline antibiotic",
+  "groups": ["tetracycline", "antibacterial"],
+  "searchTerms": ["doxycycline hyclate", "doxycycline monohydrate"],
+  "formulations": [
+    {
+      "id": "doxycycline-cap",
+      "label": "Capsules",
+      "route": "oral",
+      "strengths": "100 mg",
+      "release": "immediate",
+      "src": [
+        { "s": "emc-13082", "q": "Each hard capsule contains doxycycline hyclate corresponding to 100 mg doxycycline." }
+      ],
+      "sourceIds": ["emc-13082"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Infections due to susceptible organisms: respiratory tract infections (pneumonia, Mycoplasma pneumonia, chronic bronchitis, sinusitis), urinary tract infections, sexually transmitted infections (Chlamydia, non-gonococcal urethritis; alternative for gonorrhoea and syphilis), acne vulgaris when an antibiotic is needed, ophthalmic, rickettsial and other infections (e.g. brucellosis, cholera, chloroquine-resistant falciparum malaria).",
+          "src": [
+            { "s": "emc-13082", "q": "Pneumonia and other lower respiratory tract infections due to susceptible strains" },
+            { "s": "emc-13082", "q": "Treatment of chronic bronchitis, sinusitis." },
+            { "s": "emc-13082", "q": "Infections due to Chlamydia trachomatis including uncomplicated urethral, endocervical or rectal infections." },
+            { "s": "emc-13082", "q": "Acne vulgaris , when antibiotic therapy is considered necessary." },
+            { "s": "emc-13082", "q": "chloroquine-resistant falciparum malaria" }
+          ]
+        },
+        {
+          "t": "Prophylaxis: scrub typhus, travellers' diarrhoea (enterotoxigenic E. coli), leptospirosis and malaria (follow current guidelines).",
+          "src": [
+            { "s": "emc-13082", "q": "Doxycycline capsules is indicated for prophylaxis in the following conditions: Scrub typhus, travellers' diarrhoea (enterotoxigenic Escherichia coli), leptospirosis and malaria." }
+          ]
+        }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No specialist-only, shared-care or brand-specific prescribing restriction found in the doxycycline 100 mg capsule SmPC; it advises following official guidance on antibacterial use." },
+    "dosing": {
+      "items": [
+        {
+          "t": "Acute infections: 200 mg on day 1 (single or divided doses), then 100 mg daily. More severe infections: 200 mg daily throughout.",
+          "tag": "Adults and children 12 to < 18 years",
+          "src": [
+            { "s": "emc-13082", "q": "is 200 mg on the first day (as a single dose or in divided doses) followed by a maintenance dose of 100 mg/day. In the management of more severe infections, 200 mg daily should be given throughout treatment." }
+          ]
+        },
+        {
+          "t": "Acne vulgaris: 50 mg daily with food or fluid for 6 to 12 weeks.",
+          "tag": "Acne",
+          "src": [
+            { "s": "emc-13082", "q": "Acne vulgaris 50 mg daily with food or fluid for 6 to 12 weeks." }
+          ]
+        },
+        {
+          "t": "Uncomplicated gonococcal infections (except anorectal in men), uncomplicated chlamydial urethral/endocervical/rectal infection, non-gonococcal urethritis (Ureaplasma): 100 mg twice daily for 7 days. Epididymo-orchitis (Chlamydia or gonorrhoea): 100 mg twice daily for 10 days.",
+          "tag": "Sexually transmitted infections",
+          "src": [
+            { "s": "emc-13082", "q": "100 mg twice daily for 7 days is recommended in the following infections" },
+            { "s": "emc-13082", "q": "Acute epididymo-orchitis caused by Chlamydia trachomatis or Neisseria gonorrhoea 100 mg twice daily for 10 days." }
+          ]
+        },
+        {
+          "t": "Primary/secondary syphilis (non-pregnant, penicillin-allergic): 200 mg twice daily for 2 weeks.",
+          "tag": "Syphilis",
+          "detail": true,
+          "src": [
+            { "s": "emc-13082", "q": "doxycycline 200 mg orally twice daily for two weeks, as an alternative to penicillin therapy" }
+          ]
+        },
+        {
+          "t": "Malaria prophylaxis: 100 mg daily (adults and children over 12), starting 1 to 2 days before travel, daily during travel and for 4 weeks after leaving the malarial area.",
+          "tag": "Malaria prophylaxis",
+          "src": [
+            { "s": "emc-13082", "q": "Prophylaxis of malaria 100 mg daily in adults and children over the age of 12 years. Can begin 1-2 days before travel to malarial areas." },
+            { "s": "emc-13082", "q": "It should be continued daily during travel in the malarial areas and for 4 weeks after the traveller leaves the malarial area." }
+          ]
+        },
+        {
+          "t": "Chloroquine-resistant falciparum malaria: 200 mg daily for at least 7 days, always with a rapid-acting schizonticide such as quinine.",
+          "tag": "Malaria treatment",
+          "detail": true,
+          "src": [
+            { "s": "emc-13082", "q": "Treatment of chloroquine-resistant falciparum malaria 200 mg daily for at least 7 days." },
+            { "s": "emc-13082", "q": "a rapid-acting schizonticide such as quinine should always be given in conjunction with doxycycline" }
+          ]
+        },
+        {
+          "t": "Other regimens: relapsing fevers 100 mg or 200 mg single dose; scrub typhus prevention 200 mg single dose; travellers' diarrhoea prevention 200 mg on day 1 then 100 mg daily; leptospirosis prevention 200 mg weekly and 200 mg at the end of the trip (prophylaxis data not available beyond 21 days); Rocky Mountain spotted fever 100 mg every 12 hours.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            { "s": "emc-13082", "q": "For the prevention of scrub typhus 200 mg as a single dose." },
+            { "s": "emc-13082", "q": "For the prevention of leptospirosis 200 mg once each week throughout the stay in the area and 200 mg at the completion of the trip." },
+            { "s": "emc-13082", "q": "Data on the use of the drug prophylactically are not available beyond 21 days." },
+            { "s": "emc-13082", "q": "Rocky Mountain spotted fever Adults: 100 mg every 12 hours." }
+          ]
+        },
+        {
+          "t": "Elderly: usual doses, no special precautions. Continue at least 24 to 48 hours after symptoms and fever settle; streptococcal infections 10 days.",
+          "tag": "Elderly / duration",
+          "detail": true,
+          "src": [
+            { "s": "emc-13082", "q": "Doxycycline may be prescribed in the elderly in the usual dosages with no special precautions." },
+            { "s": "emc-13082", "q": "Therapy should be continued for at least 24 to 48 hours after symptoms and fever have subsided." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Under 8 years: should not be used (risk of tooth discolouration). Use only for severe or life-threatening conditions (e.g. Rocky Mountain spotted fever) when benefits outweigh risks and there is no adequate alternative.",
+          "tag": "Birth to < 8 years",
+          "src": [
+            { "s": "emc-13082", "q": "Doxycycline should not be used in children aged younger than 8 years due to the risk of teeth discolouration." },
+            { "s": "emc-13082", "q": "Use doxycycline in paediatric patients aged younger than 8 years only when the potential benefits are expected to outweigh the risks in severe or life-threatening conditions (e.g. Rocky Mountain spotted fever), only when there are no adequate alternative therapies." }
+          ]
+        },
+        {
+          "t": "8 to < 12 years: carefully justify use (only when other drugs are unavailable, unlikely to work or contraindicated). Children 45 kg or less: 4.4 mg/kg on day 1 (single or 2 divided doses), then 2.2 mg/kg daily (single or 2 divided doses); severe infections up to 4.4 mg/kg throughout. Over 45 kg: adult dose.",
+          "tag": "8 to < 12 years",
+          "src": [
+            { "s": "emc-13082", "q": "The use of doxycycline for the treatment of acute infections in children aged 8 years to less than 12 years should be carefully justified in situations where other drugs are not available, are not likely to be effective or are contraindicated." },
+            { "s": "emc-13082", "q": "For children 45 kg or less- Initial dose: 4.4 mg/kg (in single or 2 divided doses) with maintenance dose: 2.2 mg/kg (in single or 2 divided doses)." },
+            { "s": "emc-13082", "q": "For children, over 45 kg - Dose administered for adults should be used." }
+          ]
+        },
+        {
+          "t": "12 to < 18 years: adult dose.",
+          "tag": "12 to < 18 years",
+          "src": [
+            { "s": "emc-13082", "q": "Adults and children aged 12 years to less than 18 years" }
+          ]
+        },
+        {
+          "t": "Rocky Mountain spotted fever: children under 45 kg 2.2 mg/kg twice a day; 45 kg or more, adult dose (100 mg every 12 hours). Treat for at least 3 days after the fever settles; minimum course 5 to 7 days. Under 8 years only when benefits outweigh risks and no adequate alternative exists.",
+          "tag": "Rocky Mountain spotted fever",
+          "src": [
+            { "s": "emc-13082", "q": "Children: weighing less than 45 kg: 2.2 mg/kg body weight given twice a day." },
+            { "s": "emc-13082", "q": "Children weighing 45 kg or more should receive the adult dose" },
+            { "s": "emc-13082", "q": "Minimum course of treatment is 5-7 days." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to doxycycline, other tetracyclines or any excipient.",
+          "src": [
+            { "s": "emc-13082", "q": "Hypersensitivity to the active substance or other tetracyclines, or to any of the excipients listed in section 6.1." }
+          ]
+        },
+        {
+          "t": "Pregnancy (effects on teeth and skeletal development).",
+          "src": [
+            { "s": "emc-13082", "q": "Doxycycline is contraindicated in pregnancy." }
+          ]
+        },
+        {
+          "t": "Breastfeeding (tetracyclines pass into milk).",
+          "src": [
+            { "s": "emc-13082", "q": "Tetracyclines are excreted into milk and are therefore contraindicated in nursing mothers." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Tooth development (last half of pregnancy, infancy and childhood to 8 years): permanent yellow-grey-brown discolouration and enamel hypoplasia.",
+          "tag": "Children / teeth",
+          "src": [
+            { "s": "emc-13082", "q": "The use of drugs of the tetracycline class during tooth development (last half of pregnancy; infancy and childhood to the age of 8 years) may cause permanent discolouration of the teeth (yellow-grey-brown)." }
+          ]
+        },
+        {
+          "t": "Hepatic impairment or other hepatotoxic medicines: give with caution.",
+          "tag": "Liver",
+          "src": [
+            { "s": "emc-13082", "q": "Doxycycline should be administered with caution to patients with hepatic impairment or those receiving potentially hepatotoxic drugs." }
+          ]
+        },
+        {
+          "t": "Photosensitivity (exaggerated sunburn): warn patients exposed to sunlight or UV light; stop at the first sign of skin erythema.",
+          "tag": "Photosensitivity",
+          "src": [
+            { "s": "emc-13082", "q": "treatment should be discontinued at the first evidence of skin erythema" }
+          ]
+        },
+        {
+          "t": "Benign intracranial hypertension (can cause permanent visual loss): prompt eye assessment if visual disturbance. Avoid with isotretinoin or other systemic retinoids.",
+          "tag": "Intracranial hypertension",
+          "src": [
+            { "s": "emc-13082", "q": "If visual disturbance occurs during treatment, prompt ophthalmologic evaluation is warranted." },
+            { "s": "emc-13082", "q": "Concomitant use of isotretinoin or other systemic retinoids and doxycycline should be avoided" }
+          ]
+        },
+        {
+          "t": "Oesophagitis and oesophageal ulceration, mostly when taken just before bed or with too little fluid.",
+          "tag": "Oesophagitis",
+          "src": [
+            { "s": "emc-13082", "q": "Most of these patients took medications immediately before going to bed or with inadequate amounts of fluid." }
+          ]
+        },
+        {
+          "t": "Serious skin reactions (exfoliative dermatitis, erythema multiforme, SJS, TEN, DRESS): stop immediately.",
+          "tag": "Skin",
+          "src": [
+            { "s": "emc-13082", "q": "If serious skin reactions occur, doxycycline should be discontinued immediately, and appropriate therapy should be instituted." }
+          ]
+        },
+        {
+          "t": "Myasthenia gravis: care needed (weak neuromuscular blockade). Systemic lupus erythematosus may be exacerbated. Rare porphyria reported.",
+          "tag": "Other conditions",
+          "src": [
+            { "s": "emc-13082", "q": "Due to a potential for weak neuromuscular blockade, care should be taken in administering tetracyclines to patients with myasthenia gravis." },
+            { "s": "emc-13082", "q": "Tetracyclines can cause exacerbation of SLE." },
+            { "s": "emc-13082", "q": "There have been rare reports of porphyria in patients receiving tetracyclines." }
+          ]
+        },
+        {
+          "t": "C. difficile diarrhoea (can occur over two months after treatment) and Candida overgrowth.",
+          "tag": "Colitis",
+          "detail": true,
+          "src": [
+            { "s": "emc-13082", "q": "CDAD must be considered in all patients who present with diarrhoea following antibiotic use." },
+            { "s": "emc-13082", "q": "Careful medical history is necessary since CDAD has been reported to occur over two months after the administration of antibacterial agents." }
+          ]
+        },
+        {
+          "t": "Venereal disease with suspected syphilis: dark-field examination and monthly serology for at least 4 months.",
+          "tag": "Venereal disease",
+          "detail": true,
+          "src": [
+            { "s": "emc-13082", "q": "In all such cases monthly serological tests should be made for at least four months." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Antacids containing aluminium, calcium or magnesium, other medicines containing these cations, oral zinc, iron salts and bismuth: absorption of doxycycline may be impaired. Separate the doses as much as possible (the SmPC gives no specific number of hours).",
+          "tag": "Antacids, calcium, magnesium, iron, zinc",
+          "src": [
+            { "s": "emc-13082", "q": "The absorption of doxycycline may be impaired by concurrently administered antacids containing aluminium, calcium, magnesium or other drugs containing these cations; oral zinc, iron salts or bismuth preparations. Dosages should be maximally separated." }
+          ]
+        },
+        {
+          "t": "Penicillins: bacteriostatic drugs may interfere with penicillin's bactericidal action; advisable to avoid the combination.",
+          "tag": "Penicillins",
+          "src": [
+            { "s": "emc-13082", "q": "Since bacteriostatic drugs may interfere with the bactericidal action of penicillin, it is advisable to avoid giving doxycycline in conjunction with penicillin." }
+          ]
+        },
+        {
+          "t": "Warfarin and other anticoagulants: prolonged prothrombin time reported; reduced anticoagulant doses may be needed.",
+          "tag": "Warfarin",
+          "src": [
+            { "s": "emc-13082", "q": "There have been reports of prolonged prothrombin time in patients taking warfarin and doxycycline. Tetracyclines depress plasma prothrombin activity and reduced doses of concomitant anticoagulants may be necessary." }
+          ]
+        },
+        {
+          "t": "Carbamazepine (also barbiturates, phenytoin): may shorten doxycycline half-life; consider increasing the daily doxycycline dose.",
+          "tag": "Carbamazepine",
+          "src": [
+            { "s": "emc-13082", "q": "The serum half-life of doxycycline may be shortened when patients are concurrently receiving barbiturates, carbamazepine or phenytoin. An increase in the daily dosage of doxycycline should be considered." }
+          ]
+        },
+        {
+          "t": "Oral contraceptives: a few cases of pregnancy or breakthrough bleeding attributed to concurrent tetracycline use.",
+          "tag": "Oral contraceptives",
+          "src": [
+            { "s": "emc-13082", "q": "A few cases of pregnancy or breakthrough bleeding have been attributed to the concurrent use of tetracycline antibiotics with oral contraceptives." }
+          ]
+        },
+        {
+          "t": "Hepatotoxic medicines: give doxycycline with caution.",
+          "tag": "Hepatotoxic medicines",
+          "src": [
+            { "s": "emc-13082", "q": "Doxycycline should be administered with caution to patients with hepatic impairment or those receiving potentially hepatotoxic drugs." }
+          ]
+        },
+        {
+          "t": "Isotretinoin or other systemic retinoids: avoid (benign intracranial hypertension). Ciclosporin: monitor (levels may rise). Methoxyflurane: renal failure reported. Alcohol may shorten doxycycline half-life.",
+          "tag": "Other (not in this database)",
+          "detail": true,
+          "src": [
+            { "s": "emc-13082", "q": "Doxycycline may increase the plasma concentration of ciclosporin. Co-administration should only be undertaken with appropriate monitoring." },
+            { "s": "emc-13082", "q": "The concurrent use of tetracyclines and methoxyflurane has been reported to result in renal failure." },
+            { "s": "emc-13082", "q": "Alcohol may decrease the half-life of doxycycline." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No dose adjustment in renal impairment; usual doses do not accumulate. Half-life is similar in normal and severely impaired renal function, and haemodialysis does not change it.",
+          "src": [
+            { "s": "emc-13082", "q": "No dosage adjustment is necessary in the presence of renal impairment." },
+            { "s": "emc-13082", "q": "Haemodialysis does not alter the serum half-life of doxycycline" }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Give with caution in hepatic impairment; abnormal hepatic function has been reported rarely.",
+          "src": [
+            { "s": "emc-13082", "q": "Doxycycline should be administered with caution to patients with hepatic impairment or those receiving potentially hepatotoxic drugs." },
+            { "s": "emc-13082", "q": "Abnormal hepatic function has been reported rarely" }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: contraindicated in pregnancy (effects on teeth and skeletal development).",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-13082", "q": "Doxycycline is contraindicated in pregnancy." },
+            { "s": "emc-13082", "q": "It appears that the risks associated with the use of tetracyclines during pregnancy are predominantly due to effects on teeth and skeletal development." }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS): a tetracycline can be used in pregnancy if a doctor recommends it. Early-pregnancy use is not known to harm the baby; tetracyclines tend to be avoided after about 13 weeks (milk-teeth discolouration) unless it is the only suitable antibiotic for a serious infection. Doxycycline may be used to prevent malaria.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-doxycycline", "q": "A tetracycline can be used in pregnancy if a doctor recommends it." },
+            { "s": "bumps-doxycycline", "q": "Tetracycline use in early pregnancy is not known to harm the baby. Tetracyclines tend to be avoided after about 13 weeks of pregnancy as they can affect the baby's developing milk teeth" },
+            { "s": "bumps-doxycycline", "q": "a tetracycline may occasionally be used after 13 weeks of pregnancy if it is the only suitable antibiotic to treat a serious infection" }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: contraindicated in nursing mothers.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-13082", "q": "Tetracyclines are excreted into milk and are therefore contraindicated in nursing mothers." }
+          ]
+        },
+        {
+          "t": "SPS: doxycycline can be used with caution with infant monitoring (rash, vomiting/diarrhoea, thrush/nappy rash). Short courses (under 3 weeks) acceptable; long-term use generally not recommended. Tetracycline is the preferred choice.",
+          "tag": "SPS",
+          "src": [
+            { "s": "sps-tetracyclines-breastfeeding", "q": "Doxycycline can be used with caution during breastfeeding, with infant monitoring." },
+            { "s": "sps-tetracyclines-breastfeeding", "q": "Short term use (a single course of less than 3 week's duration) is acceptable for most tetracyclines, with precautionary infant monitoring. Long term use is generally not recommended." }
+          ]
+        }
+      ]
+    },
+    "reproductive": { "status": "not-stated", "note": "The doxycycline 100 mg capsule SmPC gives no fertility information. Its interaction section notes a few cases of pregnancy or breakthrough bleeding with oral contraceptives (see Interactions)." },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Reported with tetracyclines including doxycycline: nausea/vomiting, dyspepsia, headache, photosensitivity reaction, rash, hypersensitivity, vaginal infection, Candida infection. The SmPC table columns could not be read, so frequencies are not given here.",
+          "src": [
+            { "s": "emc-13082", "q": "The following adverse reactions have been observed in patients receiving tetracyclines, including doxycycline." },
+            { "s": "emc-13082", "q": "Photosensitivity reaction, rash including maculopapular and erythematous rashes" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Anaphylaxis and serious hypersensitivity, DRESS, SJS, TEN, exfoliative dermatitis: stop immediately.",
+          "src": [
+            { "s": "emc-13082", "q": "Hypersensitivity (including anaphylactic shock, anaphylactic reaction, anaphylactoid reaction, angioedema" },
+            { "s": "emc-13082", "q": "Serious skin reactions, such as exfoliative dermatitis, erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis, and drug reaction with eosinophilia and systemic symptoms (DRESS) have been reported in patients receiving doxycycline" },
+            { "s": "emc-13082", "q": "If serious skin reactions occur, doxycycline should be discontinued immediately" }
+          ]
+        },
+        {
+          "t": "Benign intracranial hypertension (headache, vomiting, visual disturbance, possible permanent visual loss): stop if raised intracranial pressure is suspected.",
+          "src": [
+            { "s": "emc-13082", "q": "If an increase in intracranial pressure is suspected during treatment with tetracyclines, administration should be discontinued." }
+          ]
+        },
+        {
+          "t": "Oesophageal ulcer, pseudomembranous colitis, pancreatitis, hepatic failure/hepatitis.",
+          "src": [
+            { "s": "emc-13082", "q": "Pancreatitis, pseudomembranous colitis, Clostridium difficile colitis, oesophageal ulcer, oesophagitis" },
+            { "s": "emc-13082", "q": "Hepatic failure, hepatitis, hepatotoxicity, jaundice, hepatic function abnormal" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Raised intracranial pressure: prompt eye assessment if visual disturbance; monitor until stable (pressure may stay raised for weeks after stopping).",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-13082", "q": "Since intracranial pressure can remain elevated for weeks after drug cessation patients should be monitored until they stabilize." }
+          ]
+        },
+        {
+          "t": "Suspected syphilis with venereal disease: monthly serology for at least 4 months.",
+          "tag": "ongoing",
+          "detail": true,
+          "src": [
+            { "s": "emc-13082", "q": "In all such cases monthly serological tests should be made for at least four months." }
+          ]
+        },
+        {
+          "t": "Stop at the first sign of skin erythema (photosensitivity), serious skin reaction, or suspected raised intracranial pressure.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-13082", "q": "treatment should be discontinued at the first evidence of skin erythema" },
+            { "s": "emc-13082", "q": "If serious skin reactions occur, doxycycline should be discontinued immediately" }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Swallow with plenty of water, sitting or standing, well before bedtime (reduces oesophageal irritation). If stomach upset, take with food or milk; food and milk do not notably reduce absorption.",
+          "src": [
+            { "s": "emc-13082", "q": "The capsules should be swallowed with plenty of water in either the sitting or standing position and well before retiring at night to reduce the risk of oesophageal irritation and ulceration." },
+            { "s": "emc-13082", "q": "If gastric irritation occurs, it is recommended that Doxycycline capsules be given with food or milk." },
+            { "s": "emc-13082", "q": "Studies indicate that the absorption of doxycycline is not notably influenced by simultaneous ingestion of food or milk." }
+          ]
+        },
+        {
+          "t": "Keep doses as far apart as possible from antacids, calcium, magnesium, aluminium, iron, zinc or bismuth products.",
+          "src": [
+            { "s": "emc-13082", "q": "Dosages should be maximally separated." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Take with a full glass of water while upright; do not take just before lying down.",
+          "src": [
+            { "s": "emc-13082", "q": "well before retiring at night to reduce the risk of oesophageal irritation and ulceration" }
+          ]
+        },
+        {
+          "t": "Avoid strong sunlight and UV light; stop and seek advice if skin reddens.",
+          "src": [
+            { "s": "emc-13082", "q": "Patients likely to be exposed to direct sunlight or ultraviolet light should be advised that this reaction can occur with tetracycline drugs" }
+          ]
+        },
+        {
+          "t": "Report headache with blurred or double vision.",
+          "src": [
+            { "s": "emc-13082", "q": "The manifestation of clinical symptoms, including headache or visual disturbances, should suggest a possible diagnosis of intracranial hypertension." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "doxycycline:allergy:tetracycline",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "doxycycline",
+      "allergen": ["doxycycline", "group:tetracycline"],
+      "concern": "Hypersensitivity to doxycycline or other tetracyclines",
+      "consequence": "Risk of serious hypersensitivity, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Hypersensitivity to the active substance or other tetracyclines",
+      "src": [
+        { "s": "emc-13082", "q": "Hypersensitivity to the active substance or other tetracyclines, or to any of the excipients listed in section 6.1." }
+      ]
+    },
+    {
+      "id": "doxycycline:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "doxycycline",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Risks mainly due to effects on teeth and skeletal development.",
+      "action": "Contraindicated in pregnancy (SmPC). BUMPS view differs for early pregnancy: see the BUMPS rules.",
+      "sourceWording": "Doxycycline is contraindicated in pregnancy",
+      "src": [
+        { "s": "emc-13082", "q": "Doxycycline is contraindicated in pregnancy." }
+      ]
+    },
+    {
+      "id": "doxycycline:pregnancy:bumps-early",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "doxycycline",
+      "trimesters": [1],
+      "concern": "Early pregnancy (BUMPS/UKTIS)",
+      "consequence": "Tetracycline use in early pregnancy is not known to harm the baby.",
+      "action": "BUMPS: can be used in pregnancy if a doctor recommends it (the SmPC contraindicates use in pregnancy).",
+      "sourceWording": "Tetracycline use in early pregnancy is not known to harm the baby",
+      "src": [
+        { "s": "bumps-doxycycline", "q": "A tetracycline can be used in pregnancy if a doctor recommends it." },
+        { "s": "bumps-doxycycline", "q": "Tetracycline use in early pregnancy is not known to harm the baby." }
+      ]
+    },
+    {
+      "id": "doxycycline:pregnancy:bumps-after-13-weeks",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "doxycycline",
+      "trimesters": [2, 3],
+      "concern": "After about 13 weeks of pregnancy (BUMPS/UKTIS)",
+      "consequence": "Can discolour the baby's developing milk teeth.",
+      "action": "BUMPS: tend to be avoided after about 13 weeks unless it is the only suitable antibiotic for a serious infection.",
+      "sourceWording": "Tetracyclines tend to be avoided after about 13 weeks of pregnancy",
+      "src": [
+        { "s": "bumps-doxycycline", "q": "Tetracyclines tend to be avoided after about 13 weeks of pregnancy as they can affect the baby's developing milk teeth" },
+        { "s": "bumps-doxycycline", "q": "a tetracycline may occasionally be used after 13 weeks of pregnancy if it is the only suitable antibiotic to treat a serious infection" }
+      ]
+    },
+    {
+      "id": "doxycycline:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "contraindicated",
+      "med": "doxycycline",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Tetracyclines pass into breast milk.",
+      "action": "Contraindicated in nursing mothers (SmPC). SPS view differs: see the SPS rule.",
+      "sourceWording": "contraindicated in nursing mothers",
+      "src": [
+        { "s": "emc-13082", "q": "Tetracyclines are excreted into milk and are therefore contraindicated in nursing mothers." }
+      ]
+    },
+    {
+      "id": "doxycycline:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "doxycycline",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Small to moderate amounts pass into milk; less calcium binding than other tetracyclines.",
+      "action": "SPS: can be used with caution with infant monitoring; short courses (under 3 weeks) acceptable, long-term use generally not recommended; tetracycline is the preferred tetracycline.",
+      "sourceWording": "Doxycycline can be used with caution during breastfeeding, with infant monitoring",
+      "src": [
+        { "s": "sps-tetracyclines-breastfeeding", "q": "Doxycycline can be used with caution during breastfeeding, with infant monitoring." },
+        { "s": "sps-tetracyclines-breastfeeding", "q": "Short term use (a single course of less than 3 week's duration) is acceptable for most tetracyclines, with precautionary infant monitoring. Long term use is generally not recommended." }
+      ]
+    },
+    {
+      "id": "doxycycline:age:under-8",
+      "kind": "age",
+      "level": "avoid",
+      "med": "doxycycline",
+      "age": { "maxYears": 8 },
+      "concern": "Children under 8 years",
+      "consequence": "Permanent tooth discolouration and enamel hypoplasia.",
+      "action": "Should not be used; only for severe or life-threatening conditions (e.g. Rocky Mountain spotted fever) when benefits outweigh risks and no adequate alternative exists.",
+      "sourceWording": "Doxycycline should not be used in children aged younger than 8 years",
+      "src": [
+        { "s": "emc-13082", "q": "Doxycycline should not be used in children aged younger than 8 years due to the risk of teeth discolouration." },
+        { "s": "emc-13082", "q": "Use doxycycline in paediatric patients aged younger than 8 years only when the potential benefits are expected to outweigh the risks in severe or life-threatening conditions (e.g. Rocky Mountain spotted fever), only when there are no adequate alternative therapies." }
+      ]
+    },
+    {
+      "id": "doxycycline:age:8-to-12",
+      "kind": "age",
+      "level": "caution",
+      "med": "doxycycline",
+      "age": { "minYears": 8, "maxYears": 12 },
+      "concern": "Children 8 to under 12 years",
+      "consequence": "Risk of permanent tooth staining is rare at this age.",
+      "action": "Carefully justify use: only when other drugs are not available, not likely to work or contraindicated.",
+      "sourceWording": "should be carefully justified",
+      "src": [
+        { "s": "emc-13082", "q": "Although the risk of permanent teeth staining is rare in children aged 8 years to less than 12 years, the use of doxycycline should be carefully justified in situations where other drugs are not available, are not likely to be effective or are contraindicated." }
+      ]
+    },
+    {
+      "id": "doxycycline:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "doxycycline",
+      "hepatic": ["any"],
+      "effect": "hepatotoxicity",
+      "concern": "Hepatic impairment",
+      "consequence": "Abnormal hepatic function reported rarely with tetracyclines.",
+      "action": "Give with caution.",
+      "sourceWording": "should be administered with caution to patients with hepatic impairment",
+      "src": [
+        { "s": "emc-13082", "q": "Doxycycline should be administered with caution to patients with hepatic impairment or those receiving potentially hepatotoxic drugs." }
+      ]
+    },
+    {
+      "id": "doxycycline:condition:myasthenia-gravis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "doxycycline",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "Potential for weak neuromuscular blockade.",
+      "action": "Take care when giving.",
+      "sourceWording": "care should be taken",
+      "src": [
+        { "s": "emc-13082", "q": "Due to a potential for weak neuromuscular blockade, care should be taken in administering tetracyclines to patients with myasthenia gravis." }
+      ]
+    },
+    {
+      "id": "doxycycline:condition:lupus",
+      "kind": "condition",
+      "level": "info",
+      "med": "doxycycline",
+      "condition": "lupus",
+      "concern": "Systemic lupus erythematosus",
+      "consequence": "Tetracyclines can exacerbate SLE.",
+      "action": "Be aware of possible exacerbation (no specific action stated).",
+      "sourceWording": "Tetracyclines can cause exacerbation of SLE",
+      "src": [
+        { "s": "emc-13082", "q": "Tetracyclines can cause exacerbation of SLE." }
+      ]
+    },
+    {
+      "id": "doxycycline:condition:porphyria",
+      "kind": "condition",
+      "level": "info",
+      "med": "doxycycline",
+      "condition": "porphyria",
+      "concern": "Porphyria",
+      "consequence": "Rare reports of porphyria with tetracyclines.",
+      "action": "Be aware (no specific action stated).",
+      "sourceWording": "There have been rare reports of porphyria",
+      "src": [
+        { "s": "emc-13082", "q": "There have been rare reports of porphyria in patients receiving tetracyclines." }
+      ]
+    },
+    {
+      "id": "doxycycline:condition:photosensitivity",
+      "kind": "condition",
+      "level": "caution",
+      "med": "doxycycline",
+      "condition": "photosensitivity-phototherapy",
+      "concern": "Photosensitivity or likely sunlight / UV exposure",
+      "consequence": "Exaggerated sunburn reaction; photo-onycholysis.",
+      "action": "Advise the patient; stop at the first evidence of skin erythema.",
+      "sourceWording": "treatment should be discontinued at the first evidence of skin erythema",
+      "src": [
+        { "s": "emc-13082", "q": "Patients likely to be exposed to direct sunlight or ultraviolet light should be advised that this reaction can occur with tetracycline drugs and treatment should be discontinued at the first evidence of skin erythema." }
+      ]
+    },
+    {
+      "id": "doxycycline:condition:hormonal-contraception",
+      "kind": "condition",
+      "level": "info",
+      "med": "doxycycline",
+      "condition": "hormonal-contraception",
+      "concern": "Oral contraceptive use",
+      "consequence": "A few cases of pregnancy or breakthrough bleeding attributed to concurrent tetracycline use.",
+      "action": "Be aware of possible reduced contraceptive effect (no specific action stated).",
+      "sourceWording": "A few cases of pregnancy or breakthrough bleeding have been attributed",
+      "src": [
+        { "s": "emc-13082", "q": "A few cases of pregnancy or breakthrough bleeding have been attributed to the concurrent use of tetracycline antibiotics with oral contraceptives." }
+      ]
+    },
+    {
+      "id": "doxycycline:interaction:antacid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "doxycycline",
+      "other": "group:antacid",
+      "effect": "reduced-absorption",
+      "concern": "Antacids or products containing aluminium, calcium, magnesium, iron or zinc",
+      "consequence": "Doxycycline absorption may be impaired.",
+      "action": "Separate the doses as much as possible (no interval in hours is given by the SmPC).",
+      "sourceWording": "Dosages should be maximally separated",
+      "src": [
+        { "s": "emc-13082", "q": "The absorption of doxycycline may be impaired by concurrently administered antacids containing aluminium, calcium, magnesium or other drugs containing these cations; oral zinc, iron salts or bismuth preparations. Dosages should be maximally separated." }
+      ]
+    },
+    {
+      "id": "doxycycline:interaction:polyvalent-cation",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "doxycycline",
+      "other": "group:polyvalent-cation",
+      "effect": "reduced-absorption",
+      "concern": "Antacids or products containing aluminium, calcium, magnesium, iron or zinc",
+      "consequence": "Doxycycline absorption may be impaired.",
+      "action": "Separate the doses as much as possible (no interval in hours is given by the SmPC).",
+      "sourceWording": "Dosages should be maximally separated",
+      "src": [
+        { "s": "emc-13082", "q": "The absorption of doxycycline may be impaired by concurrently administered antacids containing aluminium, calcium, magnesium or other drugs containing these cations; oral zinc, iron salts or bismuth preparations. Dosages should be maximally separated." }
+      ]
+    },
+    {
+      "id": "doxycycline:interaction:iron",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "doxycycline",
+      "other": "group:iron-preparation",
+      "effect": "reduced-absorption",
+      "concern": "Antacids or products containing aluminium, calcium, magnesium, iron or zinc",
+      "consequence": "Doxycycline absorption may be impaired.",
+      "action": "Separate the doses as much as possible (no interval in hours is given by the SmPC).",
+      "sourceWording": "Dosages should be maximally separated",
+      "src": [
+        { "s": "emc-13082", "q": "The absorption of doxycycline may be impaired by concurrently administered antacids containing aluminium, calcium, magnesium or other drugs containing these cations; oral zinc, iron salts or bismuth preparations. Dosages should be maximally separated." }
+      ]
+    },
+    {
+      "id": "doxycycline:interaction:calcium",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "doxycycline",
+      "other": "group:calcium-preparation",
+      "effect": "reduced-absorption",
+      "concern": "Antacids or products containing aluminium, calcium, magnesium, iron or zinc",
+      "consequence": "Doxycycline absorption may be impaired.",
+      "action": "Separate the doses as much as possible (no interval in hours is given by the SmPC).",
+      "sourceWording": "Dosages should be maximally separated",
+      "src": [
+        { "s": "emc-13082", "q": "The absorption of doxycycline may be impaired by concurrently administered antacids containing aluminium, calcium, magnesium or other drugs containing these cations; oral zinc, iron salts or bismuth preparations. Dosages should be maximally separated." }
+      ]
+    },
+    {
+      "id": "doxycycline:interaction:magnesium",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "doxycycline",
+      "other": "group:magnesium-preparation",
+      "effect": "reduced-absorption",
+      "concern": "Antacids or products containing aluminium, calcium, magnesium, iron or zinc",
+      "consequence": "Doxycycline absorption may be impaired.",
+      "action": "Separate the doses as much as possible (no interval in hours is given by the SmPC).",
+      "sourceWording": "Dosages should be maximally separated",
+      "src": [
+        { "s": "emc-13082", "q": "The absorption of doxycycline may be impaired by concurrently administered antacids containing aluminium, calcium, magnesium or other drugs containing these cations; oral zinc, iron salts or bismuth preparations. Dosages should be maximally separated." }
+      ]
+    },
+    {
+      "id": "doxycycline:interaction:penicillin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "doxycycline",
+      "other": "group:penicillin",
+      "concern": "Penicillins",
+      "consequence": "Bacteriostatic drugs may interfere with the bactericidal action of penicillin.",
+      "action": "Advisable to avoid the combination.",
+      "sourceWording": "it is advisable to avoid giving doxycycline in conjunction with penicillin",
+      "src": [
+        { "s": "emc-13082", "q": "Since bacteriostatic drugs may interfere with the bactericidal action of penicillin, it is advisable to avoid giving doxycycline in conjunction with penicillin." }
+      ]
+    },
+    {
+      "id": "doxycycline:interaction:warfarin",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "doxycycline",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (anticoagulant)",
+      "consequence": "Prolonged prothrombin time reported; tetracyclines depress plasma prothrombin activity.",
+      "action": "Reduced anticoagulant doses may be necessary.",
+      "sourceWording": "reduced doses of concomitant anticoagulants may be necessary",
+      "src": [
+        { "s": "emc-13082", "q": "There have been reports of prolonged prothrombin time in patients taking warfarin and doxycycline. Tetracyclines depress plasma prothrombin activity and reduced doses of concomitant anticoagulants may be necessary." }
+      ]
+    },
+    {
+      "id": "doxycycline:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "doxycycline",
+      "other": "carbamazepine",
+      "concern": "Carbamazepine",
+      "consequence": "Doxycycline half-life may be shortened.",
+      "action": "Consider increasing the daily doxycycline dose.",
+      "sourceWording": "An increase in the daily dosage of doxycycline should be considered",
+      "src": [
+        { "s": "emc-13082", "q": "The serum half-life of doxycycline may be shortened when patients are concurrently receiving barbiturates, carbamazepine or phenytoin. An increase in the daily dosage of doxycycline should be considered." }
+      ]
+    },
+    {
+      "id": "doxycycline:interaction:hepatotoxic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "doxycycline",
+      "other": "group:hepatotoxic",
+      "effect": "hepatotoxicity",
+      "concern": "Potentially hepatotoxic medicines",
+      "consequence": "Abnormal hepatic function reported with tetracyclines.",
+      "action": "Give doxycycline with caution.",
+      "sourceWording": "should be administered with caution to patients with hepatic impairment or those receiving potentially hepatotoxic drugs",
+      "src": [
+        { "s": "emc-13082", "q": "Doxycycline should be administered with caution to patients with hepatic impairment or those receiving potentially hepatotoxic drugs." }
+      ]
+    }
+  ]
+}

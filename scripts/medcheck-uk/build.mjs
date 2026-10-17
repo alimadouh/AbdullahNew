@@ -16,7 +16,8 @@ const checkedDate = rep.checkedAt.slice(0, 10)
 const qOk = (r) => rep.quotes[`${r.s}\u0000${r.q}`] === true && rep.sourceStatus[r.s]?.ok
 const allOk = (src) => !!src?.length && src.every(qOk)
 
-const INGREDIENT_NAMES = {
+const pretty = (id) => id.split('-').join(' ').replace(/^./, (c) => c.toUpperCase())
+const INGREDIENT_NAMES_BASE = {
   paracetamol: 'Paracetamol', codeine: 'Codeine', tramadol: 'Tramadol', ibuprofen: 'Ibuprofen', naproxen: 'Naproxen', amlodipine: 'Amlodipine', lisinopril: 'Lisinopril',
   spironolactone: 'Spironolactone', 'isosorbide-mononitrate': 'Isosorbide mononitrate', sildenafil: 'Sildenafil', atorvastatin: 'Atorvastatin', simvastatin: 'Simvastatin',
   clopidogrel: 'Clopidogrel', warfarin: 'Warfarin', phytomenadione: 'Phytomenadione (vitamin K1)', metformin: 'Metformin', levothyroxine: 'Levothyroxine', omeprazole: 'Omeprazole',
@@ -25,6 +26,7 @@ const INGREDIENT_NAMES = {
   calcium: 'Calcium', magnesium: 'Magnesium', potassium: 'Potassium', colecalciferol: 'Colecalciferol (vitamin D3)',
 }
 
+const INGREDIENT_NAMES = { ...Object.fromEntries(data.vocab.ingredients.map((i) => [i, pretty(i)])), ...INGREDIENT_NAMES_BASE, chlortalidone: 'Chlortalidone', 'omega-3-acid-ethyl-esters': 'Omega-3-acid ethyl esters', 'vitamin-b-complex': 'Vitamin B complex', 'ascorbic-acid': 'Ascorbic acid (vitamin C)', 'folic-acid': 'Folic acid', 'human-insulin': 'Human insulin' }
 // group membership = medicine's own list + sourced member entries (sourced flag kept for audit)
 const groups = {}
 for (const g of Object.values(data.groups)) groups[g.id] = { id: g.id, name: g.name, members: [] }
@@ -45,10 +47,16 @@ const medicines = data.medicines.map((m) => {
     groups: [...new Set([...(m.groups ?? []), ...memberOf])],
     formulations: m.formulations.map((f) => ({ ...f, v: !f.src?.length || allOk(f.src) })),
     brandPrescribing: m.brandPrescribing ? { ...m.brandPrescribing, v: allOk(m.brandPrescribing.src) } : null,
+    availability: m.availability ?? { status: 'uk' },
+    ...(m.availability?.status === 'no-uk-product' && data.tool.componentsOf?.[m.id] ? { components: data.tool.componentsOf[m.id] } : {}),
     sections,
     sourceIds: [...new Set([...allQuotes({ medicines: [m], groups: {} })].map((x) => x.ref.s))],
   }
 })
+// a no-UK combination checked through its UK components also belongs to their groups
+for (const m of medicines) if (m.components?.use?.length) {
+  for (const c of m.components.use) for (const g of medicines.find((x) => x.id === c)?.groups ?? []) if (!m.groups.includes(g)) { m.groups.push(g); groups[g]?.members.push(m.id) }
+}
 const rules = data.medicines.flatMap((m) => (m.rules ?? []).map((r) => ({ ...r, v: allOk(r.src) })))
 
 const usedConditions = new Set(rules.filter((r) => r.kind === 'condition').map((r) => r.condition))
@@ -91,6 +99,10 @@ const kb = {
   medicines: medicines.sort((a, b) => a.name.localeCompare(b.name)),
   rules,
 }
+// two files: kb.json (rules + medicines without their tables, loaded first) and kb-details.json (the tables, loaded on demand)
 const out = path.resolve(ROOT, '../../public/medcheck/kb.json')
+const details = Object.fromEntries(kb.medicines.map((m) => [m.id, m.sections]))
+fs.writeFileSync(path.resolve(ROOT, '../../public/medcheck/kb-details.json'), JSON.stringify({ format: kb.format, builtAt: kb.builtAt, sections: details }))
+kb.medicines = kb.medicines.map(({ sections, ...m }) => m)
 fs.writeFileSync(out, JSON.stringify(kb))
 console.log(`kb.json: ${medicines.length} medicines, ${rules.length} rules (${kb.verification.unverifiedRules} unverified), ${Object.keys(sources).length} sources, ${conditions.length} conditions, ${(fs.statSync(out).size / 1024).toFixed(0)} KB`)

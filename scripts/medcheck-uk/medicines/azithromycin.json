@@ -1,0 +1,926 @@
+{
+  "id": "azithromycin",
+  "name": "Azithromycin",
+  "ingredients": ["azithromycin"],
+  "className": "Macrolide (azalide) antibiotic",
+  "groups": ["macrolide", "antibacterial", "qt-prolonging", "hepatotoxic"],
+  "searchTerms": ["azithromycin dihydrate", "azithromycin monohydrate"],
+  "formulations": [
+    {
+      "id": "azithromycin-cap",
+      "label": "Capsules",
+      "route": "oral",
+      "strengths": "250 mg",
+      "release": "immediate",
+      "note": "Contains lactose and sulfur dioxide.",
+      "src": [
+        { "s": "emc-1073", "q": "Each capsule contains azithromycin dihydrate 262.05 mg equivalent to 250 mg azithromycin base." },
+        { "s": "emc-1073", "q": "Each capsule contains lactose anhydrous and sulfur dioxide." }
+      ],
+      "sourceIds": ["emc-1073"]
+    },
+    {
+      "id": "azithromycin-susp",
+      "label": "Powder for oral suspension",
+      "route": "oral",
+      "strengths": "200 mg/5 mL (40 mg/mL)",
+      "release": "n/a",
+      "note": "Contains sucrose (3.9 g per 5 mL), glucose and a trace of benzyl alcohol.",
+      "src": [
+        { "s": "emc-3006", "q": "containing the equivalent of 200 mg azithromycin base, on reconstitution with water" },
+        { "s": "emc-3006", "q": "Each 5 ml (200 mg) of reconstituted powder for oral suspension contains 3.9 g sucrose, 28.0 mg glucose and 0.35 μg of benzyl alcohol." }
+      ],
+      "sourceIds": ["emc-3006"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Adults and adolescents (12 to 17 years) weighing at least 45 kg: acute streptococcal tonsillitis/pharyngitis, acute bacterial sinusitis, acute bacterial otitis media, community-acquired pneumonia, acute bacterial skin and skin structure infections, urethritis/cervicitis due to Chlamydia trachomatis, and (with another antibacterial, e.g. ceftriaxone) due to Neisseria gonorrhoeae. Adults only: acute exacerbation of chronic bronchitis.",
+          "tag": "Capsules (and suspension if unable to swallow)",
+          "src": [
+            { "s": "emc-1073", "q": "Adults (18 years of age and above) and adolescents (12 - 17 years of age) weighing at least 45 kg - Acute streptococcal tonsillitis and pharyngitis - Acute bacterial sinusitis - Acute bacterial otitis media - Community-acquired pneumonia (CAP)" },
+            { "s": "emc-1073", "q": "Acute bacterial skin and skin structure infections (ABSSSI) - Urethritis and cervicitis caused by Chlamydia trachomatis" },
+            { "s": "emc-1073", "q": "Adults (18 years of age and above) only - Acute exacerbation of chronic bronchitis (AECB)" }
+          ]
+        },
+        {
+          "t": "Children from 6 months weighing under 45 kg: acute bacterial sinusitis, acute bacterial otitis media, community-acquired pneumonia, acute bacterial skin and skin structure infections. From 2 years: acute streptococcal tonsillitis and pharyngitis.",
+          "tag": "Suspension, children",
+          "formulations": ["azithromycin-susp"],
+          "src": [
+            { "s": "emc-3006", "q": "Paediatric patients aged 6 months and older and weighing less than 45 kg - Acute bacterial sinusitis - Acute bacterial otitis media - Community-acquired pneumonia (CAP) - Acute bacterial skin and skin structure infections (ABSSSI)" },
+            { "s": "emc-3006", "q": "Paediatric patients aged 2 years and older and weighing less than 45 kg - Acute streptococcal tonsillitis and pharyngitis" }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Start only after careful benefit/risk assessment considering local resistance, and when preferred regimens are not indicated (risk of resistance).",
+          "src": [
+            { "s": "emc-1073", "q": "Treatment with azithromycin should only be initiated after a careful assessment of the benefit and the risks, considering the local prevalence of resistance, and when preferred treatment regimens are not indicated." }
+          ]
+        },
+        {
+          "t": "Not recommended for uncomplicated gonorrhoea or pelvic inflammatory disease unless lab results confirm susceptibility.",
+          "src": [
+            { "s": "emc-1073", "q": "azithromycin is not recommended for the treatment of uncomplicated gonorrhoea and pelvic inflammatory disease unless laboratory results have confirmed susceptibility of the organism to azithromycin" }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Tonsillitis/pharyngitis, sinusitis, otitis media, AECB (adults only), community-acquired pneumonia, skin and skin structure infections: 500 mg/day for 3 days, or 500 mg on day 1 then 250 mg/day on days 2 to 5. Single daily dose.",
+          "tag": "Adults and adolescents ≥ 45 kg",
+          "src": [
+            { "s": "emc-1073", "q": "500 mg/day for 3 days or 500 mg on day 1, followed by 250 mg/day on days 2-5" },
+            { "s": "emc-1073", "q": "Azithromycin should be administered as a single daily dose." }
+          ]
+        },
+        {
+          "t": "Urethritis/cervicitis due to Chlamydia trachomatis: 1000 mg as a single dose.",
+          "tag": "Adults and adolescents ≥ 45 kg",
+          "src": [
+            { "s": "emc-1073", "q": "Urethritis and cervicitis caused by Chlamydia trachomatis 1000 mg as a single dose" }
+          ]
+        },
+        {
+          "t": "Urethritis/cervicitis due to Neisseria gonorrhoeae (with another antibacterial, e.g. ceftriaxone): 1000 mg, or 2000 mg in adults only, as a single dose.",
+          "tag": "Adults and adolescents ≥ 45 kg",
+          "src": [
+            { "s": "emc-1073", "q": "1000 mg or 2000 mg* as a single dose * for treatment of adults only" }
+          ]
+        },
+        {
+          "t": "Missed dose: if 12 hours or less late, take it as soon as possible; if more than 12 hours, wait for the next scheduled dose.",
+          "tag": "Missed dose",
+          "detail": true,
+          "src": [
+            { "s": "emc-1073", "q": "If 12 hours or less have passed since the missed dose, the patient should be advised to take it as soon as possible" },
+            { "s": "emc-1073", "q": "If more than 12 hours have passed since the time the dose is usually taken, the patient should be advised to wait until the next scheduled dose." }
+          ]
+        },
+        {
+          "t": "Elderly: no dose adjustment, but particular caution because of arrhythmia and torsades de pointes risk.",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            { "s": "emc-1073", "q": "Since the elderly are more likely to experience proarrhythmic conditions, particular caution is recommended due to the risk of developing cardiac arrhythmia and torsades de pointes" }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Children 6 months and older under 45 kg, sinusitis, community-acquired pneumonia, skin and skin structure infections: 10 mg/kg/day for 3 days, or 10 mg/kg on day 1 then 5 mg/kg/day on days 2 to 5. Single daily dose.",
+          "tag": "Suspension, 6 months+ and < 45 kg",
+          "formulations": ["azithromycin-susp"],
+          "src": [
+            { "s": "emc-3006", "q": "Acute bacterial sinusitis Community-acquired pneumonia Acute bacterial skin and skin structure infections 10 mg/kg/day for 3 days or 10 mg/kg on day 1, followed by 5 mg/kg/day on days 2-5" }
+          ],
+          "calc": { "mgPerKg": 10, "per": "day", "dividedInto": 1, "maxMg": 500, "maxPer": "day", "ageMinYears": 0.5, "weightMaxKg": 45, "of": "azithromycin" }
+        },
+        {
+          "t": "Acute otitis media: single dose of 30 mg/kg (maximum total 1500 mg), or 10 mg/kg/day for 3 days, or 10 mg/kg on day 1 then 5 mg/kg/day on days 2 to 5.",
+          "tag": "Suspension, otitis media",
+          "formulations": ["azithromycin-susp"],
+          "src": [
+            { "s": "emc-3006", "q": "Acute bacterial otitis media single dose of 30 mg/kg or 10 mg/kg/day for 3 days or 10 mg/kg on day 1, followed by 5 mg/kg/day on days 2-5" },
+            { "s": "emc-3006", "q": "with exception of the 1-day treatment course (single dose) for acute bacterial otitis media for which the maximum total dose of 1500 mg should not be exceeded" }
+          ],
+          "calc": { "mgPerKg": 30, "per": "dose", "maxMg": 1500, "maxPer": "dose", "ageMinYears": 0.5, "weightMaxKg": 45, "of": "azithromycin" }
+        },
+        {
+          "t": "Acute streptococcal tonsillitis/pharyngitis (2 years and older): 20 mg/kg/day for 3 days or 12 mg/kg/day for 5 days.",
+          "tag": "Suspension, 2 years+",
+          "formulations": ["azithromycin-susp"],
+          "src": [
+            { "s": "emc-3006", "q": "Acute streptococcal tonsillitis and pharyngitis* 20 mg/kg/day for 3 days or 12 mg/kg/day for 5 days" }
+          ],
+          "calc": { "mgPerKg": 20, "per": "day", "dividedInto": 1, "maxMg": 500, "maxPer": "day", "ageMinYears": 2, "weightMaxKg": 45, "of": "azithromycin" }
+        },
+        {
+          "t": "Daily dose must not exceed the adult 500 mg/day (except the single-dose otitis media course). Maximum total dose for any course under 45 kg is 1500 mg, except the 5-day tonsillitis/pharyngitis regimen.",
+          "tag": "Maximum doses",
+          "formulations": ["azithromycin-susp"],
+          "src": [
+            { "s": "emc-3006", "q": "The azithromycin daily dose should not exceed the adult daily dose of 500 mg" },
+            { "s": "emc-3006", "q": "The maximum recommended total dose for any treatment for paediatric patients weighing less than 45 kg is 1500 mg, except for the 5-day regimen for acute streptococcal tonsillitis and pharyngitis." }
+          ]
+        },
+        {
+          "t": "Safety and efficacy not established under 6 months. Infantile hypertrophic pyloric stenosis reported after use in the first 42 days of life.",
+          "tag": "Under 6 months",
+          "src": [
+            { "s": "emc-3006", "q": "The safety and efficacy of azithromycin have not been established in children under 6 months of age for any of the indications listed in section 4.1." },
+            { "s": "emc-3006", "q": "Cases of infantile hypertrophic pyloric stenosis have been reported following the administration of azithromycin for the first 42 days after birth." }
+          ]
+        },
+        {
+          "t": "Capsules: for adults and adolescents weighing at least 45 kg; other forms are more suitable for children under 45 kg or those unable to swallow capsules.",
+          "tag": "Capsules",
+          "formulations": ["azithromycin-cap"],
+          "src": [
+            { "s": "emc-1073", "q": "Other pharmaceutical forms are available that may be more appropriate to treat patients unable to swallow capsules as well as paediatric patients weighing less than 45 kg." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to azithromycin, erythromycin, any macrolide or ketolide antibiotic, or any excipient.",
+          "src": [
+            { "s": "emc-1073", "q": "Hypersensitivity to the active substance, erythromycin, any macrolide or ketolide antibiotic, or to any of the excipients listed in section 6.1." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "QT prolongation and torsades de pointes: use with caution in ongoing proarrhythmic conditions (especially women and the elderly), e.g. congenital or documented QT prolongation, other QT-prolonging medicines, electrolyte disturbance (especially hypokalaemia, hypomagnesaemia), clinically relevant bradycardia, arrhythmia or severe cardiac insufficiency.",
+          "tag": "QT prolongation (SmPC)",
+          "src": [
+            { "s": "emc-1073", "q": "azithromycin should be used with caution in patients with ongoing proarrhythmic conditions (especially women and elderly patients) such as patients: With congenital or documented QT prolongation" },
+            { "s": "emc-1073", "q": "With electrolyte disturbance, particularly in case of hypokalaemia and hypomagnesemia With clinically relevant bradycardia, cardiac arrhythmia or severe cardiac insufficiency" }
+          ]
+        },
+        {
+          "t": "SPS (macrolides): no ECG needed when used alone without risk factors. Do not prescribe with a history of QT prolongation, ventricular arrhythmia or significant electrolyte disturbance. Monitor ECG, magnesium and potassium before and during treatment if there are non-modifiable risk factors.",
+          "tag": "QT prolongation (SPS)",
+          "src": [
+            { "s": "sps-qt-commonly-used", "q": "Macrolides Management No ECG monitoring is required when used alone and in the absence of risk factors. Do not prescribe in people with a history of QT interval prolongation, ventricular arrhythmia, or significant electrolyte disturbance." },
+            { "s": "sps-qt-commonly-used", "q": "Monitor ECG, magnesium and potassium before and during treatment in people with non-modifiable patient and medicine risk factors." }
+          ]
+        },
+        {
+          "t": "Hepatotoxicity (fulminant hepatitis, hepatic failure, some fatal): caution in significant hepatic disease. Stop and check liver function if signs of liver dysfunction develop.",
+          "tag": "Liver",
+          "src": [
+            { "s": "emc-1073", "q": "the use of azithromycin should be undertaken with caution in patients with significant hepatic disease" },
+            { "s": "emc-1073", "q": "Patients should be advised to stop azithromycin administration and to contact their physician if signs and symptoms of liver dysfunction" }
+          ]
+        },
+        {
+          "t": "Severe hypersensitivity and SCARs (SJS, TEN, DRESS, AGEP): advise patients and monitor closely; stop if an allergic reaction occurs. Symptoms may recur after symptomatic treatment stops.",
+          "tag": "Hypersensitivity / skin",
+          "src": [
+            { "s": "emc-1073", "q": "If an allergic reaction occurs, azithromycin should be discontinued, and appropriate therapy should be instituted." },
+            { "s": "emc-1073", "q": "Physicians should be aware that reappearance of the allergic symptoms may occur when symptomatic therapy is discontinued." }
+          ]
+        },
+        {
+          "t": "Myasthenia gravis: exacerbations and new myasthenic syndrome reported.",
+          "tag": "Myasthenia gravis",
+          "src": [
+            { "s": "emc-1073", "q": "Exacerbations of the symptoms of myasthenia gravis and new onset of myasthenia syndrome have been reported in patients receiving azithromycin therapy" }
+          ]
+        },
+        {
+          "t": "C. difficile diarrhoea / pseudomembranous colitis: consider stopping; do not give medicines that inhibit peristalsis.",
+          "tag": "Colitis",
+          "src": [
+            { "s": "emc-1073", "q": "Medicinal products that inhibit peristalsis should not be given." }
+          ]
+        },
+        {
+          "t": "Sexually transmitted infections: exclude Mycoplasma genitalium co-infection before single-dose treatment, and exclude syphilis.",
+          "tag": "STIs",
+          "detail": true,
+          "src": [
+            { "s": "emc-1073", "q": "concomitant urogenital infection by Mycoplasma genitalium should be excluded due to the high risk of emergence of resistance in this organism" },
+            { "s": "emc-1073", "q": "a concomitant infection caused by Treponema pallidum should be excluded" }
+          ]
+        },
+        {
+          "t": "Ergot derivatives: should not be co-administered (theoretical ergotism).",
+          "tag": "Ergot derivatives",
+          "detail": true,
+          "src": [
+            { "s": "emc-1073", "q": "azithromycin and ergot derivatives should not be co-administrated" }
+          ]
+        },
+        {
+          "t": "Capsules contain lactose (patients with hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take them) and sulfur dioxide (may rarely cause severe hypersensitivity and bronchospasm).",
+          "tag": "Excipients (capsules)",
+          "formulations": ["azithromycin-cap"],
+          "src": [
+            { "s": "emc-1073", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." },
+            { "s": "emc-1073", "q": "Zithromax capsules contains sulfur dioxide which may rarely cause severe hypersensitivity reactions and bronchospasm." }
+          ]
+        },
+        {
+          "t": "Suspension contains sucrose and glucose: patients with hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take it.",
+          "tag": "Excipients (suspension)",
+          "formulations": ["azithromycin-susp"],
+          "src": [
+            { "s": "emc-3006", "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicinal product." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "QT-prolonging medicines (e.g. class IA/III antiarrhythmics, pimozide, citalopram, fluoroquinolones such as moxifloxacin and levofloxacin, chloroquine, hydroxychloroquine): use with caution.",
+          "tag": "QT-prolonging medicines",
+          "src": [
+            { "s": "emc-1073", "q": "Azithromycin should be used with caution in patients receiving medicinal products known to prolong the QT interval" },
+            { "s": "emc-1073", "q": "fluoroquinolones (e.g. moxifloxacin and levofloxacin), cisapride, chloroquine and hydroxychloroquine" }
+          ]
+        },
+        {
+          "t": "Hydroxychloroquine: MHRA says co-administration with azithromycin in rheumatoid arthritis was linked to more cardiovascular events and cardiovascular deaths; carefully weigh benefits and risks before prescribing.",
+          "tag": "Hydroxychloroquine",
+          "src": [
+            { "s": "mhra-dsu-2022-02-hcq-macrolides", "q": "Carefully consider the benefits and risks before prescribing systemic azithromycin or other systemic macrolide antibiotics (erythromycin or clarithromycin) to patients being treated with hydroxychloroquine or chloroquine." }
+          ]
+        },
+        {
+          "t": "Statins (e.g. atorvastatin): rhabdomyolysis reported after marketing; exercise caution. SPS: statins can be continued with azithromycin; counsel patients to report unexpected side effects.",
+          "tag": "Statins",
+          "src": [
+            { "s": "emc-1073", "q": "Caution should be exercised since post-marketing cases of rhabdomyolysis in patients receiving azithromycin concomitantly with statins have been reported." },
+            { "s": "sps-macrolides-statins", "q": "Azithromycin can be given concomitantly with statins. However, counsel patients to report any unexpected side effects." }
+          ]
+        },
+        {
+          "t": "Warfarin and other coumarins: potentiated anticoagulation reported; consider more frequent prothrombin time monitoring during and after treatment.",
+          "tag": "Warfarin",
+          "src": [
+            { "s": "emc-1073", "q": "post-marketing reports of potentiated anticoagulation of coumarin-type oral anticoagulants upon co-administration with azithromycin" },
+            { "s": "emc-1073", "q": "A higher frequency of prothrombin time monitoring should be considered during and after treatment with azithromycin." }
+          ]
+        },
+        {
+          "t": "No clinically relevant change in studies with antacids (aluminium/magnesium hydroxide), carbamazepine, cetirizine, fluconazole, sildenafil or trimethoprim/sulfamethoxazole.",
+          "tag": "No relevant interaction",
+          "detail": true,
+          "src": [
+            { "s": "emc-1073", "q": "No clinically relevant change in the exposure of azithromycin or the co-administered medicinal products was observed in clinical studies evaluating potential drug-drug interactions of azithromycin with oral antacids (aluminium hydroxide/magnesium hydroxide), carbamazepine, cetirizine" },
+            { "s": "emc-1073", "q": "fluconazole, methylprednisolone, midazolam, rifabutin, sildenafil, theophylline, triazolam, trimethoprim/sulfamethoxazole and zidovudine" }
+          ]
+        },
+        {
+          "t": "P-gp substrates with a narrow therapeutic index (e.g. digoxin, colchicine, dabigatran, ciclosporin): monitor and adjust as needed during and after treatment.",
+          "tag": "P-gp substrates",
+          "detail": true,
+          "src": [
+            { "s": "emc-1073", "q": "For narrow therapeutic index drugs, caution and clinical and/or therapeutic drug monitoring and dose adjustment as appropriate are advised." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "GFR ≥ 10 ml/min: no dose adjustment. GFR < 10 ml/min: use with caution.",
+          "src": [
+            { "s": "emc-1073", "q": "No dose adjustment is necessary in patients with GFR ≥ 10 ml/min. In patients with GFR < 10 ml/min azithromycin should be administered with caution" }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Mild or moderate (Child-Pugh A or B): no dose adjustment. Severe (Child-Pugh C): no data; use with caution. Caution in significant hepatic disease.",
+          "src": [
+            { "s": "emc-1073", "q": "No dose adjustment is required in patients with mild (Child-Pugh Class A) or moderate hepatic impairment (Child-Pugh Class B)" },
+            { "s": "emc-1073", "q": "No data is available in patients with severe hepatic impairment (Child-Pugh Class C). Therefore, azithromycin should be administered with caution in these patients" }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: observational data (over 7000 exposed pregnancies) mostly show no increased risk of major malformations; miscarriage evidence inconclusive. Use only if clinically needed.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-1073", "q": "Most of these studies do not suggest an increased risk of adverse foetal effects such as major congenital malformations or cardiovascular malformations." },
+            { "s": "emc-1073", "q": "Azithromycin should only be used during pregnancy if clinically needed." }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS): can be used in pregnancy if recommended by a doctor; available information does not show harm.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-azithromycin", "q": "Azithromycin can be used in pregnancy if recommended by a doctor." },
+            { "s": "bumps-azithromycin", "q": "The available information does not show that use of azithromycin in pregnancy will harm your baby." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: excreted in milk to a substantial extent; diarrhoea, fungal infection and hypersensitivity possible in the infant. Decide whether to stop breastfeeding or stop/avoid azithromycin.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-1073", "q": "Azithromycin is excreted in human milk to substantial extent." },
+            { "s": "emc-1073", "q": "A decision must be made whether to discontinue breast-feeding or to discontinue/abstain from azithromycin therapy" }
+          ]
+        },
+        {
+          "t": "SPS: use with caution; can be used during breastfeeding with precautionary infant monitoring (GI upset, oral thrush, rash, irritability, sleep disturbance, poor feeding).",
+          "tag": "SPS",
+          "src": [
+            { "s": "sps-macrolides-breastfeeding", "q": "Use with caution All formulations of azithromycin, including intravenous therapy can be used during breastfeeding, with precautionary infant monitoring." },
+            { "s": "sps-macrolides-breastfeeding", "q": "monitor for gastro-intestinal disturbances such as diarrhoea and vomiting, oral candida infection, rashes, irritability, sleep disturbances, and loss of appetite" }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Reduced pregnancy rates in rat fertility studies; relevance to humans unknown.",
+          "detail": true,
+          "src": [
+            { "s": "emc-1073", "q": "In fertility studies conducted in rat, reduced pregnancy rates were noted following administration of azithromycin. The relevance of this finding to humans is unknown." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Most commonly reported: diarrhoea, headache, vomiting, abdominal pain, nausea and abnormal laboratory values.",
+          "src": [
+            { "s": "emc-1073", "q": "The most commonly reported adverse reactions during treatment include diarrhoea, headache, vomiting, abdominal pain, nausea and abnormal laboratory test values." }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Anaphylaxis, torsades de pointes and arrhythmia (including ventricular tachycardia), pseudomembranous colitis, hepatic failure.",
+          "src": [
+            { "s": "emc-1073", "q": "Other important adverse reactions include anaphylactic reactions, torsades de pointes , arrhythmia including ventricular tachycardia, pseudomembranous colitis and hepatic failure" }
+          ]
+        },
+        {
+          "t": "SCARs (SJS, TEN, DRESS, AGEP): stop if an allergic reaction occurs.",
+          "src": [
+            { "s": "emc-1073", "q": "If an allergic reaction occurs, azithromycin should be discontinued, and appropriate therapy should be instituted." }
+          ]
+        },
+        {
+          "t": "Liver dysfunction (jaundice, dark urine, bleeding tendency, encephalopathy): stop and check liver function immediately.",
+          "src": [
+            { "s": "emc-1073", "q": "In such cases liver function tests/investigations should be performed immediately." }
+          ]
+        },
+        {
+          "t": "Infants: projectile vomiting or irritability with feeding (possible pyloric stenosis) after use in the first 42 days: contact a doctor.",
+          "formulations": ["azithromycin-susp"],
+          "src": [
+            { "s": "emc-3006", "q": "Parents and caregivers should be asked to contact their doctor if projectile vomiting or irritability with feeding occurs." }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS: check ECG, magnesium and potassium before and during treatment when non-modifiable risk factors are present; not needed when used alone without risk factors.",
+          "tag": "baseline",
+          "src": [
+            { "s": "sps-qt-commonly-used", "q": "Monitor ECG, magnesium and potassium before and during treatment in people with non-modifiable patient and medicine risk factors." }
+          ]
+        },
+        {
+          "t": "On warfarin: consider more frequent prothrombin time monitoring during and after treatment. Monitor closely for skin reactions.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-1073", "q": "A higher frequency of prothrombin time monitoring should be considered during and after treatment with azithromycin." },
+            { "s": "emc-1073", "q": "At the time of prescription, patients should be advised of the signs and symptoms and monitored closely for skin reactions." }
+          ]
+        },
+        {
+          "t": "Stop if an allergic reaction or signs of liver dysfunction occur.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-1073", "q": "Patients should be advised to stop azithromycin administration and to contact their physician if signs and symptoms of liver dysfunction" }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Capsules: swallow whole, once daily, at least 1 hour before or 2 hours after a meal.",
+          "formulations": ["azithromycin-cap"],
+          "src": [
+            { "s": "emc-1073", "q": "Capsules should be swallowed whole, as a single daily dose, either at least one hour before or two hours after a meal." }
+          ]
+        },
+        {
+          "t": "Suspension: once daily with or without a meal (taking just before a meal may improve GI tolerability). Shake before each dose. Use within 5 days of reconstitution.",
+          "formulations": ["azithromycin-susp"],
+          "src": [
+            { "s": "emc-3006", "q": "Powder for oral suspension should be taken as a single daily dose with or without a meal. Administration immediately before a meal may enhance the gastrointestinal tolerability." },
+            { "s": "emc-3006", "q": "Once reconstituted with water, Zithromax suspension has a shelf-life of 5 days." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Stop and seek advice for signs of liver problems (yellow skin/eyes, dark urine, bleeding) or allergic/skin reactions.",
+          "src": [
+            { "s": "emc-1073", "q": "rapid developing asthenia associated with jaundice, dark urine, bleeding tendency or hepatic encephalopathy develop" }
+          ]
+        },
+        {
+          "t": "May cause dizziness, drowsiness, convulsions, visual or hearing problems: consider before driving.",
+          "detail": true,
+          "src": [
+            { "s": "emc-1073", "q": "Dizziness, drowsiness and convulsions have been reported in some patients taking azithromycin and some patients experienced visual and/or auditory impairment." }
+          ]
+        },
+        {
+          "t": "Report diarrhoea during or after the course.",
+          "src": [
+            { "s": "emc-1073", "q": "CDAD and pseudomembranous colitis must be considered in patients who present with diarrhoea during or subsequent to the administration of azithromycin." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "azithromycin:allergy:macrolide",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "azithromycin",
+      "allergen": ["azithromycin", "group:macrolide"],
+      "concern": "Hypersensitivity to azithromycin, erythromycin or any macrolide/ketolide",
+      "consequence": "Risk of serious allergic reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Hypersensitivity to the active substance, erythromycin, any macrolide or ketolide antibiotic",
+      "src": [
+        { "s": "emc-1073", "q": "Hypersensitivity to the active substance, erythromycin, any macrolide or ketolide antibiotic, or to any of the excipients listed in section 6.1." }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:qt-prolongation",
+      "kind": "condition",
+      "level": "caution",
+      "med": "azithromycin",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "Congenital or documented QT prolongation (SmPC)",
+      "consequence": "Increased risk of ventricular arrhythmia including torsades de pointes, which can lead to cardiac arrest.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-1073", "q": "azithromycin should be used with caution in patients with ongoing proarrhythmic conditions (especially women and elderly patients) such as patients: With congenital or documented QT prolongation" }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:qt-prolongation-sps",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "azithromycin",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "History of QT interval prolongation (SPS)",
+      "consequence": "Macrolides can prolong the QT interval.",
+      "action": "SPS: do not prescribe (the SmPC says use with caution).",
+      "sourceWording": "Do not prescribe in people with a history of QT interval prolongation",
+      "src": [
+        { "s": "sps-qt-commonly-used", "q": "Macrolides Management No ECG monitoring is required when used alone and in the absence of risk factors. Do not prescribe in people with a history of QT interval prolongation, ventricular arrhythmia, or significant electrolyte disturbance." }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:ventricular-arrhythmia-sps",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "azithromycin",
+      "condition": "ventricular-arrhythmia",
+      "effect": "qt-prolongation",
+      "concern": "History of ventricular arrhythmia (SPS)",
+      "consequence": "Macrolides can prolong the QT interval.",
+      "action": "SPS: do not prescribe (the SmPC says use with caution in cardiac arrhythmia).",
+      "sourceWording": "Do not prescribe in people with a history of QT interval prolongation, ventricular arrhythmia, or significant electrolyte disturbance",
+      "src": [
+        { "s": "sps-qt-commonly-used", "q": "Macrolides Management No ECG monitoring is required when used alone and in the absence of risk factors. Do not prescribe in people with a history of QT interval prolongation, ventricular arrhythmia, or significant electrolyte disturbance." }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:cardiac-arrhythmia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "azithromycin",
+      "condition": "cardiac-arrhythmia",
+      "effect": "qt-prolongation",
+      "concern": "Cardiac arrhythmia (SmPC)",
+      "consequence": "Increased risk of ventricular arrhythmia including torsades de pointes.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-1073", "q": "With clinically relevant bradycardia, cardiac arrhythmia or severe cardiac insufficiency" },
+        { "s": "emc-1073", "q": "azithromycin should be used with caution in patients with ongoing proarrhythmic conditions" }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:bradycardia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "azithromycin",
+      "condition": "bradycardia",
+      "effect": "qt-prolongation",
+      "concern": "Clinically relevant bradycardia",
+      "consequence": "Increased risk of ventricular arrhythmia including torsades de pointes.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-1073", "q": "With clinically relevant bradycardia, cardiac arrhythmia or severe cardiac insufficiency" },
+        { "s": "emc-1073", "q": "azithromycin should be used with caution in patients with ongoing proarrhythmic conditions" }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "azithromycin",
+      "condition": "severe-heart-failure",
+      "effect": "qt-prolongation",
+      "concern": "Severe cardiac insufficiency",
+      "consequence": "Increased risk of ventricular arrhythmia including torsades de pointes.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-1073", "q": "With clinically relevant bradycardia, cardiac arrhythmia or severe cardiac insufficiency" },
+        { "s": "emc-1073", "q": "azithromycin should be used with caution in patients with ongoing proarrhythmic conditions" }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "azithromycin",
+      "condition": "hypokalaemia",
+      "effect": "qt-prolongation",
+      "concern": "Hypokalaemia (SmPC)",
+      "consequence": "Electrolyte disturbance increases the risk of ventricular arrhythmia.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-1073", "q": "With electrolyte disturbance, particularly in case of hypokalaemia and hypomagnesemia" },
+        { "s": "emc-1073", "q": "azithromycin should be used with caution in patients with ongoing proarrhythmic conditions" }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:hypomagnesaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "azithromycin",
+      "condition": "hypomagnesaemia",
+      "effect": "qt-prolongation",
+      "concern": "Hypomagnesaemia (SmPC)",
+      "consequence": "Electrolyte disturbance increases the risk of ventricular arrhythmia.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-1073", "q": "With electrolyte disturbance, particularly in case of hypokalaemia and hypomagnesemia" },
+        { "s": "emc-1073", "q": "azithromycin should be used with caution in patients with ongoing proarrhythmic conditions" }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:hypokalaemia-sps",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "azithromycin",
+      "condition": "hypokalaemia",
+      "effect": "qt-prolongation",
+      "concern": "Significant electrolyte disturbance: hypokalaemia (SPS)",
+      "consequence": "Macrolides can prolong the QT interval.",
+      "action": "SPS: do not prescribe with significant electrolyte disturbance (the SmPC says use with caution).",
+      "sourceWording": "Do not prescribe in people with a history of QT interval prolongation, ventricular arrhythmia, or significant electrolyte disturbance",
+      "src": [
+        { "s": "sps-qt-commonly-used", "q": "Macrolides Management No ECG monitoring is required when used alone and in the absence of risk factors. Do not prescribe in people with a history of QT interval prolongation, ventricular arrhythmia, or significant electrolyte disturbance." }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:hypomagnesaemia-sps",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "azithromycin",
+      "condition": "hypomagnesaemia",
+      "effect": "qt-prolongation",
+      "concern": "Significant electrolyte disturbance: hypomagnesaemia (SPS)",
+      "consequence": "Macrolides can prolong the QT interval.",
+      "action": "SPS: do not prescribe with significant electrolyte disturbance (the SmPC says use with caution).",
+      "sourceWording": "Do not prescribe in people with a history of QT interval prolongation, ventricular arrhythmia, or significant electrolyte disturbance",
+      "src": [
+        { "s": "sps-qt-commonly-used", "q": "Macrolides Management No ECG monitoring is required when used alone and in the absence of risk factors. Do not prescribe in people with a history of QT interval prolongation, ventricular arrhythmia, or significant electrolyte disturbance." }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:myasthenia-gravis",
+      "kind": "condition",
+      "level": "info",
+      "med": "azithromycin",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "Exacerbation of symptoms and new myasthenic syndrome reported.",
+      "action": "Be aware of possible worsening (no specific action stated).",
+      "sourceWording": "Exacerbations of the symptoms of myasthenia gravis and new onset of myasthenia syndrome have been reported",
+      "src": [
+        { "s": "emc-1073", "q": "Exacerbations of the symptoms of myasthenia gravis and new onset of myasthenia syndrome have been reported in patients receiving azithromycin therapy" }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:galactose-intolerance-cap",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "azithromycin",
+      "formulations": ["azithromycin-cap"],
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, lactase deficiency or glucose-galactose malabsorption (capsules contain lactose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the capsules.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        { "s": "emc-1073", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine." }
+      ]
+    },
+    {
+      "id": "azithromycin:condition:sugar-intolerance-susp",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "azithromycin",
+      "formulations": ["azithromycin-susp"],
+      "condition": "hereditary-sugar-intolerance",
+      "concern": "Hereditary fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency (suspension contains sucrose and glucose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the suspension.",
+      "sourceWording": "should not take this medicinal product",
+      "src": [
+        { "s": "emc-3006", "q": "Patients with rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency should not take this medicinal product." }
+      ]
+    },
+    {
+      "id": "azithromycin:renal:gfr-under-10",
+      "kind": "renal",
+      "level": "caution",
+      "med": "azithromycin",
+      "renal": { "measure": "GFR", "max": 10 },
+      "concern": "GFR < 10 ml/min",
+      "consequence": "No dose adjustment data below this level.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        { "s": "emc-1073", "q": "In patients with GFR < 10 ml/min azithromycin should be administered with caution" }
+      ]
+    },
+    {
+      "id": "azithromycin:hepatic:severe",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "azithromycin",
+      "hepatic": ["severe"],
+      "effect": "hepatotoxicity",
+      "concern": "Severe hepatic impairment (Child-Pugh C) / significant hepatic disease",
+      "consequence": "No data in severe impairment; the liver is the main route of elimination; hepatotoxicity reported.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution in these patients",
+      "src": [
+        { "s": "emc-1073", "q": "No data is available in patients with severe hepatic impairment (Child-Pugh Class C). Therefore, azithromycin should be administered with caution in these patients" },
+        { "s": "emc-1073", "q": "the use of azithromycin should be undertaken with caution in patients with significant hepatic disease" }
+      ]
+    },
+    {
+      "id": "azithromycin:age:susp-under-6-months",
+      "kind": "age",
+      "level": "info",
+      "med": "azithromycin",
+      "formulations": ["azithromycin-susp"],
+      "age": { "maxYears": 0.5 },
+      "concern": "Infants under 6 months",
+      "consequence": "Safety and efficacy not established.",
+      "action": "Not licensed under 6 months.",
+      "sourceWording": "have not been established in children under 6 months of age",
+      "src": [
+        { "s": "emc-3006", "q": "The safety and efficacy of azithromycin have not been established in children under 6 months of age for any of the indications listed in section 4.1." }
+      ]
+    },
+    {
+      "id": "azithromycin:age:neonate-ihps",
+      "kind": "age",
+      "level": "monitor",
+      "med": "azithromycin",
+      "age": { "maxYears": 0.115 },
+      "concern": "First 42 days of life",
+      "consequence": "Infantile hypertrophic pyloric stenosis reported.",
+      "action": "Ask parents/caregivers to contact a doctor if projectile vomiting or irritability with feeding occurs.",
+      "sourceWording": "Parents and caregivers should be asked to contact their doctor",
+      "src": [
+        { "s": "emc-3006", "q": "Cases of infantile hypertrophic pyloric stenosis have been reported following the administration of azithromycin for the first 42 days after birth." },
+        { "s": "emc-3006", "q": "Parents and caregivers should be asked to contact their doctor if projectile vomiting or irritability with feeding occurs." }
+      ]
+    },
+    {
+      "id": "azithromycin:age:cap-under-12",
+      "kind": "age",
+      "level": "info",
+      "med": "azithromycin",
+      "formulations": ["azithromycin-cap"],
+      "age": { "maxYears": 12 },
+      "concern": "Children under 12 years (capsules)",
+      "consequence": "Capsules are indicated for adults and adolescents 12 years and over weighing at least 45 kg.",
+      "action": "Use a more suitable form (suspension) for children under 45 kg.",
+      "sourceWording": "may be more appropriate to treat patients unable to swallow capsules as well as paediatric patients weighing less than 45 kg",
+      "src": [
+        { "s": "emc-1073", "q": "Adults (18 years of age and above) and adolescents (12 - 17 years of age) weighing at least 45 kg" },
+        { "s": "emc-1073", "q": "Other pharmaceutical forms are available that may be more appropriate to treat patients unable to swallow capsules as well as paediatric patients weighing less than 45 kg." }
+      ]
+    },
+    {
+      "id": "azithromycin:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "azithromycin",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Observational data mostly show no increased malformation risk; miscarriage evidence inconclusive.",
+      "action": "Use only if clinically needed.",
+      "sourceWording": "should only be used during pregnancy if clinically needed",
+      "src": [
+        { "s": "emc-1073", "q": "Azithromycin should only be used during pregnancy if clinically needed." }
+      ]
+    },
+    {
+      "id": "azithromycin:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "azithromycin",
+      "concern": "Pregnancy (BUMPS/UKTIS)",
+      "consequence": "Available information does not show harm to the baby.",
+      "action": "BUMPS: can be used in pregnancy if recommended by a doctor.",
+      "sourceWording": "can be used in pregnancy if recommended by a doctor",
+      "src": [
+        { "s": "bumps-azithromycin", "q": "Azithromycin can be used in pregnancy if recommended by a doctor." }
+      ]
+    },
+    {
+      "id": "azithromycin:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "azithromycin",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Substantial excretion into milk; infant diarrhoea, fungal infection or hypersensitivity possible.",
+      "action": "Decide whether to stop breastfeeding or stop/avoid azithromycin, weighing benefits to child and mother.",
+      "sourceWording": "A decision must be made whether to discontinue breast-feeding or to discontinue/abstain from azithromycin therapy",
+      "src": [
+        { "s": "emc-1073", "q": "A decision must be made whether to discontinue breast-feeding or to discontinue/abstain from azithromycin therapy" }
+      ]
+    },
+    {
+      "id": "azithromycin:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "azithromycin",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Small amounts in milk; accumulation possible (long half-life); no serious infant effects seen.",
+      "action": "SPS: use with caution; can be used with precautionary infant monitoring (GI upset, oral thrush, rash, irritability, sleep disturbance, poor appetite).",
+      "sourceWording": "Use with caution",
+      "src": [
+        { "s": "sps-macrolides-breastfeeding", "q": "Use with caution All formulations of azithromycin, including intravenous therapy can be used during breastfeeding, with precautionary infant monitoring." }
+      ]
+    },
+    {
+      "id": "azithromycin:interaction:qt-prolonging",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "azithromycin",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Other QT-prolonging medicines",
+      "consequence": "Additive risk of ventricular arrhythmia including torsades de pointes.",
+      "action": "Use with caution. SPS: monitor ECG, magnesium and potassium if there are other risk factors.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-1073", "q": "Azithromycin should be used with caution in patients receiving medicinal products known to prolong the QT interval" },
+        { "s": "sps-qt-commonly-used", "q": "Monitor ECG, magnesium and potassium before and during treatment in people with non-modifiable patient and medicine risk factors." }
+      ]
+    },
+    {
+      "id": "azithromycin:interaction:fluoroquinolone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "azithromycin",
+      "other": "group:fluoroquinolone",
+      "effect": "qt-prolongation",
+      "concern": "Fluoroquinolones (e.g. moxifloxacin, levofloxacin)",
+      "consequence": "Both prolong the QT interval: additive arrhythmia risk.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-1073", "q": "Azithromycin should be used with caution in patients receiving medicinal products known to prolong the QT interval" },
+        { "s": "emc-1073", "q": "fluoroquinolones (e.g. moxifloxacin and levofloxacin), cisapride, chloroquine and hydroxychloroquine" }
+      ]
+    },
+    {
+      "id": "azithromycin:interaction:hydroxychloroquine",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "azithromycin",
+      "other": "hydroxychloroquine",
+      "effect": "qt-prolongation",
+      "concern": "Hydroxychloroquine",
+      "consequence": "QT prolongation; MHRA: co-administration in rheumatoid arthritis linked to more cardiovascular events and cardiovascular deaths.",
+      "action": "Use with caution; carefully weigh benefits and risks before prescribing (MHRA).",
+      "sourceWording": "Carefully consider the benefits and risks before prescribing",
+      "src": [
+        { "s": "emc-1073", "q": "fluoroquinolones (e.g. moxifloxacin and levofloxacin), cisapride, chloroquine and hydroxychloroquine" },
+        { "s": "mhra-dsu-2022-02-hcq-macrolides", "q": "Carefully consider the benefits and risks before prescribing systemic azithromycin or other systemic macrolide antibiotics (erythromycin or clarithromycin) to patients being treated with hydroxychloroquine or chloroquine." }
+      ]
+    },
+    {
+      "id": "azithromycin:interaction:statin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "azithromycin",
+      "other": "group:statin",
+      "effect": "myopathy",
+      "concern": "Statins (e.g. atorvastatin)",
+      "consequence": "Post-marketing reports of rhabdomyolysis.",
+      "action": "Exercise caution. SPS: statins can be continued; counsel patients to report unexpected side effects.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-1073", "q": "Caution should be exercised since post-marketing cases of rhabdomyolysis in patients receiving azithromycin concomitantly with statins have been reported." },
+        { "s": "sps-macrolides-statins", "q": "Azithromycin can be given concomitantly with statins. However, counsel patients to report any unexpected side effects." }
+      ]
+    },
+    {
+      "id": "azithromycin:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "azithromycin",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (coumarin anticoagulant)",
+      "consequence": "Potentiated anticoagulation reported.",
+      "action": "Consider more frequent prothrombin time/INR monitoring during and after treatment.",
+      "sourceWording": "A higher frequency of prothrombin time monitoring should be considered",
+      "src": [
+        { "s": "emc-1073", "q": "post-marketing reports of potentiated anticoagulation of coumarin-type oral anticoagulants upon co-administration with azithromycin" },
+        { "s": "emc-1073", "q": "A higher frequency of prothrombin time monitoring should be considered during and after treatment with azithromycin." }
+      ]
+    }
+  ]
+}

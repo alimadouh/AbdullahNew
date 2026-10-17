@@ -1489,6 +1489,251 @@
           "q": "in these cases increased monitoring on starting and stopping therapy is advised"
         }
       ]
+    },
+    {
+      "id": "warfarin:interaction:snri",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "warfarin",
+      "other": "group:snri",
+      "effect": "bleeding",
+      "concern": "SNRI antidepressants (e.g. venlafaxine, duloxetine)",
+      "consequence": "Increased bleeding risk.",
+      "action": "Avoid if possible, or give with caution and increased clinical and laboratory monitoring.",
+      "sourceWording": "should be avoided, or administered with caution",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "should be avoided, or administered with caution with increased clinical and laboratory monitoring"
+        },
+        {
+          "s": "emc-2803",
+          "q": "SSRI and SNRI antidepressants"
+        },
+        {
+          "s": "emc-14333",
+          "q": "SSRI and SNRI antidepressants"
+        }
+      ]
+    },
+    {
+      "id": "warfarin:interaction:aspirin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "warfarin",
+      "other": "aspirin",
+      "effect": "bleeding",
+      "concern": "Aspirin",
+      "consequence": "Increased bleeding risk; with low-dose aspirin the risk of gastrointestinal bleeding is increased.",
+      "action": "Avoid if possible, or give with caution and increased clinical and laboratory monitoring. Low-dose aspirin with warfarin may have a role in some patients.",
+      "sourceWording": "should be avoided, or administered with caution",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "The following examples should be avoided, or administered with caution with increased clinical and laboratory monitoring: Clopidogrel NSAIDs (including aspirin and cox-2 specific NSAIDS)"
+        },
+        {
+          "s": "emc-2803",
+          "q": "Low-dose aspirin with warfarin may have a role in some patients but the risk of gastrointestinal bleeding is increased."
+        }
+      ]
+    },
+    {
+      "id": "warfarin:interaction:miconazole",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "warfarin",
+      "other": "miconazole",
+      "effect": "bleeding",
+      "concern": "Miconazole (CYP2C9 inhibitor)",
+      "consequence": "Increased anticoagulant effect.",
+      "action": "Use with caution: monitor the anticoagulant effect carefully and titrate; warfarin dose reduction may be needed.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "If the concomitant use of Miconazole and anticoagulants such as Warfarin is envisaged, the anticoagulant effect should be carefully monitored and titrated"
+        },
+        {
+          "s": "emc-2803",
+          "q": "Miconazole inhibits CYP2C9, caution should be exercised in patients on oral anticoagulants, such as warfarin, and the anticoagulant effect monitored (warfarin dose reduction may be needed)."
+        }
+      ]
+    },
+    {
+      "id": "warfarin:interaction:azole-antifungal",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "warfarin",
+      "other": "group:azole-antifungal",
+      "effect": "bleeding",
+      "concern": "Azole antifungals (e.g. fluconazole, miconazole)",
+      "consequence": "Potentiate warfarin: higher INR and bleeding risk.",
+      "action": "Warfarin dose may need reducing; increase INR monitoring (SPS: INR test after 3 to 5 days).",
+      "sourceWording": "warfarin dosage may need to be reduced and the level of monitoring increased",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "azole antifungals (ketoconazole, fluconazole miconazole etc)"
+        },
+        {
+          "s": "emc-14333",
+          "q": "azole antifungals (ketoconazole, fluconazole etc)"
+        },
+        {
+          "s": "emc-2803",
+          "q": "When these drugs are co-administered, warfarin dosage may need to be reduced and the level of monitoring increased."
+        },
+        {
+          "s": "sps-warfarin-monitoring",
+          "q": "Patients who are prescribed a drug that may interact with warfarin should have an INR test performed after 3 to 5 days."
+        }
+      ]
+    },
+    {
+      "id": "warfarin:interaction:allopurinol",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "warfarin",
+      "other": "allopurinol",
+      "effect": "bleeding",
+      "concern": "Allopurinol",
+      "consequence": "Potentiates warfarin: higher INR and bleeding risk.",
+      "action": "Warfarin dose may need reducing; increase INR monitoring (SPS: INR test after 3 to 5 days).",
+      "sourceWording": "warfarin dosage may need to be reduced and the level of monitoring increased",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "Examples of drugs which potentiate the effect of warfarin allopurinol"
+        },
+        {
+          "s": "emc-14333",
+          "q": "Examples of drugs which potentiate the effect of warfarin allopurinol"
+        },
+        {
+          "s": "emc-2803",
+          "q": "When these drugs are co-administered, warfarin dosage may need to be reduced and the level of monitoring increased."
+        },
+        {
+          "s": "sps-warfarin-monitoring",
+          "q": "Patients who are prescribed a drug that may interact with warfarin should have an INR test performed after 3 to 5 days."
+        }
+      ]
+    },
+    {
+      "id": "warfarin:interaction:moxifloxacin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "warfarin",
+      "other": "moxifloxacin",
+      "effect": "bleeding",
+      "concern": "Moxifloxacin",
+      "consequence": "Potentiates warfarin: higher INR and bleeding risk.",
+      "action": "Warfarin dose may need reducing; increase INR monitoring (SPS: INR test after 3 to 5 days). Listed in the 0.5 mg tablet SmPC only.",
+      "sourceWording": "warfarin dosage may need to be reduced and the level of monitoring increased",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "gefitinib, moxifloxacin omeprazole"
+        },
+        {
+          "s": "emc-2803",
+          "q": "When these drugs are co-administered, warfarin dosage may need to be reduced and the level of monitoring increased."
+        },
+        {
+          "s": "sps-warfarin-monitoring",
+          "q": "Patients who are prescribed a drug that may interact with warfarin should have an INR test performed after 3 to 5 days."
+        }
+      ]
+    },
+    {
+      "id": "warfarin:interaction:fibrate",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "warfarin",
+      "other": "group:fibrate",
+      "effect": "bleeding",
+      "concern": "Fibrates (e.g. fenofibrate)",
+      "consequence": "Potentiate warfarin: higher INR and bleeding risk.",
+      "action": "Warfarin dose may need reducing; increase INR monitoring (SPS: INR test after 3 to 5 days).",
+      "sourceWording": "warfarin dosage may need to be reduced and the level of monitoring increased",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "zafirlukast, fibrates, statins"
+        },
+        {
+          "s": "emc-14333",
+          "q": "methylphenidate zafirlukast, fibrates, statins"
+        },
+        {
+          "s": "emc-2803",
+          "q": "When these drugs are co-administered, warfarin dosage may need to be reduced and the level of monitoring increased."
+        },
+        {
+          "s": "sps-warfarin-monitoring",
+          "q": "Patients who are prescribed a drug that may interact with warfarin should have an INR test performed after 3 to 5 days."
+        }
+      ]
+    },
+    {
+      "id": "warfarin:interaction:metronidazole",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "warfarin",
+      "other": "metronidazole",
+      "effect": "bleeding",
+      "concern": "Metronidazole",
+      "consequence": "Potentiates warfarin: higher INR and bleeding risk.",
+      "action": "Warfarin dose may need reducing; increase INR monitoring (SPS: INR test after 3 to 5 days).",
+      "sourceWording": "warfarin dosage may need to be reduced and the level of monitoring increased",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "erythromycin, sulfamethoxazole, metronidazole"
+        },
+        {
+          "s": "emc-14333",
+          "q": "erythromycin, sulfamethoxazole, metronidazole"
+        },
+        {
+          "s": "emc-2803",
+          "q": "When these drugs are co-administered, warfarin dosage may need to be reduced and the level of monitoring increased."
+        },
+        {
+          "s": "sps-warfarin-monitoring",
+          "q": "Patients who are prescribed a drug that may interact with warfarin should have an INR test performed after 3 to 5 days."
+        }
+      ]
+    },
+    {
+      "id": "warfarin:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "warfarin",
+      "other": "carbamazepine",
+      "concern": "Carbamazepine (antagonises warfarin)",
+      "consequence": "Lower warfarin levels and INR; reduced anticoagulant effect.",
+      "action": "Warfarin dose may need increasing; increase INR monitoring. Take care when carbamazepine is stopped (offset effect).",
+      "sourceWording": "warfarin dosage may need to be increased and the level of monitoring increased",
+      "src": [
+        {
+          "s": "emc-2803",
+          "q": "Examples of drugs which antagonise the effect of warfarin Barbiturates, primidone, carbamazepine"
+        },
+        {
+          "s": "emc-14333",
+          "q": "Examples of drugs which antagonise the effect of warfarin Barbiturates, primidone, carbamazepine"
+        },
+        {
+          "s": "emc-2803",
+          "q": "When these drugs are coadministered, warfarin dosage may need to be increased and the level of monitoring increased."
+        },
+        {
+          "s": "emc-2803",
+          "q": "Care should also be taken when stopping or reducing the dose of a metabolic inhibitor or inducer"
+        }
+      ]
     }
   ]
 }

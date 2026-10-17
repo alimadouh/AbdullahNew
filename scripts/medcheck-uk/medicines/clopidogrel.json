@@ -1075,6 +1075,133 @@
           "q": "Consider the use of a parenteral antiplatelet agent in acute coronary syndrome patients requiring co-administration of morphine or other opioid agonists."
         }
       ]
+    },
+    {
+      "id": "clopidogrel:interaction:aspirin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "clopidogrel",
+      "other": "aspirin",
+      "effect": "bleeding",
+      "concern": "Clopidogrel + aspirin",
+      "consequence": "Possible pharmacodynamic interaction with increased bleeding risk.",
+      "action": "Use together with caution (they have been given together for up to one year).",
+      "sourceWording": "concomitant use should be undertaken with caution",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "A pharmacodynamic interaction between clopidogrel and acetylsalicylic acid is possible, leading to increased risk of bleeding. Therefore, concomitant use should be undertaken with caution"
+        },
+        {
+          "s": "emc-5935",
+          "q": "However, clopidogrel and ASA have been administered together for up to one year"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:fluoxetine",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "clopidogrel",
+      "other": "fluoxetine",
+      "concern": "Clopidogrel + fluoxetine (listed as a strong or moderate CYP2C19 inhibitor)",
+      "consequence": "Lower levels of clopidogrel active metabolite (possible reduced antiplatelet effect).",
+      "action": "As a precaution, concomitant use should be discouraged.",
+      "sourceWording": "should be discouraged",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "As a precaution concomitant use of strong or moderate CYP2C19 inhibitors should be discouraged"
+        },
+        {
+          "s": "emc-5935",
+          "q": "Medicinal products that are strong or moderate CYP2C19 inhibitors include, for example, omeprazole and esomeprazole, fluvoxamine, fluoxetine, moclobemide, voriconazole, fluconazole, ticlopidine, carbamazepine, and efavirenz."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:fluconazole",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "clopidogrel",
+      "other": "fluconazole",
+      "concern": "Clopidogrel + fluconazole (listed as a strong or moderate CYP2C19 inhibitor)",
+      "consequence": "Lower levels of clopidogrel active metabolite (possible reduced antiplatelet effect).",
+      "action": "As a precaution, concomitant use should be discouraged.",
+      "sourceWording": "should be discouraged",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "As a precaution concomitant use of strong or moderate CYP2C19 inhibitors should be discouraged"
+        },
+        {
+          "s": "emc-5935",
+          "q": "Medicinal products that are strong or moderate CYP2C19 inhibitors include, for example, omeprazole and esomeprazole, fluvoxamine, fluoxetine, moclobemide, voriconazole, fluconazole, ticlopidine, carbamazepine, and efavirenz."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "clopidogrel",
+      "other": "carbamazepine",
+      "concern": "Clopidogrel + carbamazepine (listed as a strong or moderate CYP2C19 inhibitor)",
+      "consequence": "Lower levels of clopidogrel active metabolite (possible reduced antiplatelet effect).",
+      "action": "As a precaution, concomitant use should be discouraged.",
+      "sourceWording": "should be discouraged",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "As a precaution concomitant use of strong or moderate CYP2C19 inhibitors should be discouraged"
+        },
+        {
+          "s": "emc-5935",
+          "q": "Medicinal products that are strong or moderate CYP2C19 inhibitors include, for example, omeprazole and esomeprazole, fluvoxamine, fluoxetine, moclobemide, voriconazole, fluconazole, ticlopidine, carbamazepine, and efavirenz."
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:repaglinide",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "clopidogrel",
+      "other": "repaglinide",
+      "concern": "Clopidogrel + repaglinide (CYP2C8 substrate)",
+      "consequence": "Clopidogrel increases repaglinide exposure.",
+      "action": "Use together with caution.",
+      "sourceWording": "should be undertaken with caution",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "Clopidogrel has been shown to increase repaglinide exposure in healthy volunteers."
+        },
+        {
+          "s": "emc-5935",
+          "q": "concomitant administration of clopidogrel and drugs primarily cleared by CYP2C8 metabolism (e.g., repaglinide, paclitaxel) should be undertaken with caution"
+        }
+      ]
+    },
+    {
+      "id": "clopidogrel:interaction:rosuvastatin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "clopidogrel",
+      "other": "rosuvastatin",
+      "concern": "Clopidogrel + rosuvastatin",
+      "consequence": "Clopidogrel increases rosuvastatin exposure (about 1.4-fold AUC with 75 mg doses; 2-fold after a 300 mg dose).",
+      "action": "No specific action stated in the clopidogrel SmPC.",
+      "sourceWording": "has been shown to increase rosuvastatin exposure",
+      "src": [
+        {
+          "s": "emc-5935",
+          "q": "Clopidogrel has been shown to increase rosuvastatin exposure in patients by 2-fold (AUC) and 1.3-fold (Cmax) after administration of a 300 mg clopidogrel dose"
+        },
+        {
+          "s": "emc-5935",
+          "q": "by 1.4-fold (AUC) without effect on Cmax after repeated administration of a 75 mg clopidogrel dose"
+        }
+      ]
     }
   ]
 }

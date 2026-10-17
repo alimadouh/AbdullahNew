@@ -1,0 +1,1307 @@
+{
+ "id": "metoclopramide",
+ "name": "Metoclopramide",
+ "ingredients": [
+  "metoclopramide"
+ ],
+ "className": "Dopamine antagonist antiemetic (gastrointestinal motility stimulant)",
+ "groups": [
+  "dopamine-antagonist",
+  "qt-prolonging"
+ ],
+ "searchTerms": [
+  "metoclopramide",
+  "metoclopramide hydrochloride"
+ ],
+ "formulations": [
+  {
+   "id": "metoclopramide-tab",
+   "label": "Tablets",
+   "route": "oral",
+   "strengths": "10 mg",
+   "release": "immediate",
+   "note": "Contains lactose. Tablets are not suitable for children weighing less than 61 kg.",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Each tablet contains Metoclopramide Hydrochloride BP 10mg equivalent to 10mg of the anhydrous substance."
+    },
+    {
+     "s": "emc-6213",
+     "q": "Tablets are not suitable for use in children weighing less than 61 kg."
+    }
+   ],
+   "sourceIds": [
+    "emc-6213"
+   ]
+  }
+ ],
+ "brandPrescribing": null,
+ "bnf": {
+  "status": "not-accessed",
+  "note": "BNF/BNFC is only available in the UK; not accessed."
+ },
+ "sections": {
+  "indications": {
+   "items": [
+    {
+     "t": "Adults: prevention of delayed chemotherapy-induced and radiotherapy-induced nausea and vomiting; symptomatic treatment of nausea and vomiting, including acute migraine (may also improve absorption of oral analgesics). Also diagnostic use (barium meal, duodenal intubation).",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Prevention of delayed chemotherapy induced nausea and vomiting (CINV) - Prevention of radiotherapy induced nausea and vomiting (RINV). - Symptomatic treatment of nausea and vomiting, including acute migraine induced nausea and vomiting."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide can be used in combination with oral analgesics to improve the absorption of analgesics in acute migraine."
+      }
+     ]
+    },
+    {
+     "t": "Children 1-18 years: second-line option for prevention of delayed chemotherapy-induced nausea and vomiting only.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Maxolon is indicated in children (aged 1-18 years) for: - Prevention of delayed chemotherapy induced nausea and vomiting (CINV) as a second line option"
+      }
+     ]
+    }
+   ]
+  },
+  "restrictions": {
+   "items": [
+    {
+     "t": "MHRA (2013, neurological risk): short-term use only (up to 5 days); adult maximum 30 mg (or 0.5 mg/kg) in 24 hours; in children only as a second-line option; contraindicated under 1 year.",
+     "src": [
+      {
+       "s": "mhra-dsu-metoclopramide-neuro-2013",
+       "q": "metoclopramide should only be prescribed for short-term use (up to 5 days)"
+      },
+      {
+       "s": "mhra-dsu-metoclopramide-neuro-2013",
+       "q": "for adults, the maximum dose in 24 hours is 30 mg (or 0.5 mg per kg bodyweight)"
+      },
+      {
+       "s": "mhra-dsu-metoclopramide-neuro-2013",
+       "q": "use of metoclopramide is contraindicated in children younger than 1 year"
+      }
+     ]
+    },
+    {
+     "t": "MHRA: risks of extrapyramidal disorders and tardive dyskinesia outweigh benefits in long-term or high-dose treatment; acute neurological risk is higher in children.",
+     "detail": true,
+     "src": [
+      {
+       "s": "mhra-dsu-metoclopramide-neuro-2013",
+       "q": "The conclusion of the review was that these risks outweigh the benefits in long-term or high-dose treatment."
+      },
+      {
+       "s": "mhra-dsu-metoclopramide-neuro-2013",
+       "q": "The risk of acute neurological effects is higher in children than in adults."
+      }
+     ]
+    }
+   ]
+  },
+  "dosing": {
+   "items": [
+    {
+     "t": "10 mg up to three times daily. Maximum 30 mg or 0.5 mg/kg per day. Maximum duration 5 days. Keep at least 6 hours between doses, even if a dose is vomited.",
+     "tag": "Adults (all oral indications)",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "The recommended single dose is 10 mg, repeated up to three times daily. The maximum recommended daily dose is 30 mg or 0.5mg/kg body weight. The maximum recommended treatment duration is 5 days."
+      },
+      {
+       "s": "emc-6213",
+       "q": "A minimal interval of 6 hours between two administrations is to be respected, even in case of vomiting or rejection of the dose"
+      }
+     ]
+    },
+    {
+     "t": "Elderly: consider a dose reduction based on renal and hepatic function and frailty.",
+     "tag": "Elderly",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "In elderly patients a dose reduction should be considered, based on renal and hepatic function and overall frailty."
+      }
+     ]
+    },
+    {
+     "t": "Diagnostic use: a single dose 5-10 minutes before the examination (adjust for body weight).",
+     "tag": "Diagnostic procedures",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "may be given 5-10 minutes before the examination, subject to body weight consideration"
+      }
+     ]
+    }
+   ]
+  },
+  "paediatric": {
+   "items": [
+    {
+     "t": "Delayed CINV only (1-18 years, second line): 0.1 to 0.15 mg/kg up to three times daily; maximum 0.5 mg/kg in 24 hours; maximum 5 days. Tablets only for children over 60 kg (15-18 years: 10 mg up to three times daily); use another form for lighter children.",
+     "calc": {
+      "mgPerKg": 0.15,
+      "per": "dose",
+      "ageMinYears": 1,
+      "ageMaxYears": 18,
+      "of": "metoclopramide"
+     },
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "The recommended dose is 0.1 to 0.15 mg/kg body weight, repeated up to three times daily by oral route. The maximum dose in 24 hours is 0.5mg/kg body weight."
+      },
+      {
+       "s": "emc-6213",
+       "q": "15-18 years Over 60kg 10 mg Up to 3 times daily"
+      },
+      {
+       "s": "emc-6213",
+       "q": "Tablets are not suitable for use in children weighing less than 61 kg."
+      }
+     ]
+    },
+    {
+     "t": "Contraindicated under 1 year (increased risk of extrapyramidal disorders).",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Use in children less than 1 year of age due to an increased risk of extrapyramidal disorders"
+      }
+     ]
+    }
+   ]
+  },
+  "contraindications": {
+   "items": [
+    {
+     "t": "Hypersensitivity to metoclopramide or any excipient.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1"
+      }
+     ]
+    },
+    {
+     "t": "GI haemorrhage, mechanical obstruction or perforation where stimulating motility is a risk; the first 3-4 days after pyloroplasty or gut anastomosis.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Gastrointestinal haemorrhage, mechanical obstruction or gastro-intestinal perforation for which the stimulation of gastrointestinal motility constitutes a risk"
+      },
+      {
+       "s": "emc-6213",
+       "q": "should not be used during the first three to four days following operations such as pyloroplasty or gut anastomosis"
+      }
+     ]
+    },
+    {
+     "t": "Confirmed or suspected phaeochromocytoma (risk of severe hypertension).",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Confirmed or suspected pheochromocytoma, due to the risk of severe hypertension episodes"
+      }
+     ]
+    },
+    {
+     "t": "History of neuroleptic- or metoclopramide-induced tardive dyskinesia; epilepsy; Parkinson's disease.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "History of neuroleptic or metoclopramide-induced tardive dyskinesia - Epilepsy (increased crises frequency and intensity) - Parkinson's disease"
+      }
+     ]
+    },
+    {
+     "t": "Combination with levodopa or dopaminergic agonists.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Combination with levodopa or dopaminergic agonists"
+      }
+     ]
+    },
+    {
+     "t": "History of methaemoglobinaemia with metoclopramide or NADH cytochrome-b5 deficiency.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Known history of methaemoglobinaemia with metoclopramide or of NADH cytochrome-b5 deficiency."
+      }
+     ]
+    },
+    {
+     "t": "Children under 1 year.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Use in children less than 1 year of age due to an increased risk of extrapyramidal disorders"
+      }
+     ]
+    }
+   ]
+  },
+  "cautions": {
+   "items": [
+    {
+     "t": "Extrapyramidal disorders (especially children, young adults, high doses), even after one dose: stop immediately. Respect the 6-hour minimum interval.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Extrapyramidal disorders may occur, particularly in children and young adults, and/or when high doses are used."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide should be discontinued immediately in the event of extrapyramidal symptoms."
+      }
+     ]
+    },
+    {
+     "t": "Tardive dyskinesia (possibly irreversible, especially in the elderly): treatment should not exceed 3 months; stop if signs appear.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Treatment should not exceed 3 months because of the risk of tardive dyskinesia (see section 4.8). Treatment must be discontinued if clinical signs of tardive dyskinesia appear."
+      }
+     ]
+    },
+    {
+     "t": "Neuroleptic malignant syndrome: stop immediately and treat.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide should be discontinued immediately in the event of symptoms of neuroleptic malignant syndrome and appropriate treatment should be initiated."
+      }
+     ]
+    },
+    {
+     "t": "Special care in underlying neurological conditions and with other centrally acting drugs; may worsen Parkinson's symptoms.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Special care should be exercised in patients with underlying neurological conditions and in patients being treated with other centrally-acting drugs"
+      }
+     ]
+    },
+    {
+     "t": "Methaemoglobinaemia: stop immediately and permanently and treat (e.g. methylene blue).",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "In such cases, metoclopramide should be immediately, and permanently discontinued and appropriate measures initiated (such as treatment with methylene blue)."
+      }
+     ]
+    },
+    {
+     "t": "Cardiac effects (circulatory collapse, severe bradycardia, cardiac arrest, QT prolongation), mainly with injection. Special care in the elderly, cardiac conduction disturbance (including QT prolongation), uncorrected electrolyte imbalance, bradycardia, and with other QT-prolonging drugs.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "There have been reports of serious cardiovascular undesirable effects including cases of circulatory collapse, severe bradycardia, cardiac arrest and QT prolongation following administration of metoclopramide by injection"
+      },
+      {
+       "s": "emc-6213",
+       "q": "to patients with cardiac conduction disturbances (including QT prolongation), patients with uncorrected electrolyte imbalance, bradycardia and those taking other drugs known to prolong QT interval"
+      }
+     ]
+    },
+    {
+     "t": "Care in atopy (including asthma) or porphyria. If vomiting persists, reassess for an underlying disorder.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Care should be exercised when using Maxolon in patients with a history of atopy (including asthma) or porphyria."
+      },
+      {
+       "s": "emc-6213",
+       "q": "If vomiting persists the patient should be reassessed to exclude the possibility of an underlying disorder e.g. cerebral irritation."
+      }
+     ]
+    },
+    {
+     "t": "Contains lactose: hereditary galactose intolerance, lactase deficiency or glucose-galactose malabsorption should not take it. May raise prolactin.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency of glucose-galactose malabsorption should not take this medicine."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide may cause elevation of serum prolactin levels."
+      }
+     ]
+    }
+   ]
+  },
+  "interactions": {
+   "items": [
+    {
+     "t": "Contraindicated with levodopa or dopaminergic agonists (e.g. cabergoline) - mutual antagonism.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Levodopa or dopaminergic agonists and metoclopramide have a mutual antagonism"
+      },
+      {
+       "s": "emc-101124",
+       "q": "it should not be concurrently administered with drugs which have dopamine-antagonist activity (such as phenothiazines, butyrophenones, thioxanthenes, metoclopramide)"
+      }
+     ]
+    },
+    {
+     "t": "Alcohol: avoid (increases sedation). CNS depressants (opioids, anxiolytics, sedating antihistamines, sedating antidepressants, barbiturates, clonidine): sedation potentiated.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Combination to be avoided Alcohol potentiates the sedative effect of metoclopramide."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Sedative effects of Central Nervous System depressants and metoclopramide are potentiated."
+      }
+     ]
+    },
+    {
+     "t": "Anticholinergics and opioids (morphine derivatives) may antagonise metoclopramide's effect on gut motility.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Anticholinergics and morphine derivatives may have both a mutual antagonism with metoclopramide on the digestive tract motility."
+      }
+     ]
+    },
+    {
+     "t": "Serotonergic drugs such as SSRIs: may increase the risk of serotonin syndrome.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "The use of metoclopramide with serotonergic drugs such as SSRIs may increase the risk of serotonin syndrome."
+      }
+     ]
+    },
+    {
+     "t": "Strong CYP2D6 inhibitors (fluoxetine, paroxetine) raise metoclopramide exposure - monitor for adverse reactions.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide exposure levels are increased when co-administered with strong CYP2D6 inhibitors such as fluoxetine and paroxetine. Although the clinical significance is uncertain, patients should be monitored for adverse reactions."
+      }
+     ]
+    },
+    {
+     "t": "Other: neuroleptics (additive extrapyramidal effects); digoxin (bioavailability may fall - monitor levels); ciclosporin (levels rise - monitor); atovaquone (levels may fall). Absorption of some drugs may change because of faster gastric emptying.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide may have an additive effect with other neuroleptics on the occurrence of extrapyramidal disorders."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide may decrease digoxin bioavailability. Careful monitoring of digoxin plasma concentration is required."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Due to the prokinetic effect of metoclopramide, the absorption of certain drugs may be modified."
+      }
+     ]
+    }
+   ]
+  },
+  "renal": {
+   "items": [
+    {
+     "t": "CrCl ≤ 15 mL/min (end-stage renal disease): reduce the daily dose by 75%. CrCl 15-60 mL/min (moderate to severe): reduce the dose by 50%.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "In patients with end stage renal disease (Creatinine clearance ≤ 15 ml/min), the daily dose should be reduced by 75%. In patients with moderate to severe renal impairment (Creatinine clearance 15-60 ml/min), the dose should be reduced by 50%"
+      }
+     ]
+    }
+   ]
+  },
+  "hepatic": {
+   "items": [
+    {
+     "t": "Severe hepatic impairment: reduce the dose by 50%.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "In patients with severe hepatic impairment, the dose should be reduced by 50%"
+      }
+     ]
+    }
+   ]
+  },
+  "pregnancy": {
+   "items": [
+    {
+     "t": "SmPC: > 1000 pregnancy outcomes show no malformative or feto/neonatal toxicity; can be used if clinically needed. Avoid at the end of pregnancy (risk of extrapyramidal syndrome in the newborn); if used, monitor the neonate.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide can be used during pregnancy if clinically needed."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide should be avoided at the end of pregnancy. If metoclopramide is used, neonatal monitoring should be undertaken."
+      }
+     ]
+    },
+    {
+     "t": "BUMPS: metoclopramide is an option for pregnancy sickness if an antihistamine does not help; overall these medicines are considered safe for the baby.",
+     "src": [
+      {
+       "s": "bumps-nausea-vomiting",
+       "q": "These include ondansetron (Zofran®), metoclopramide (Maxolon®), and domperidone."
+      },
+      {
+       "s": "bumps-nausea-vomiting",
+       "q": "Overall, these medicines are considered safe for your baby."
+      }
+     ]
+    }
+   ]
+  },
+  "breastfeeding": {
+   "items": [
+    {
+     "t": "SmPC: excreted in milk at low level; infant adverse reactions cannot be excluded - not recommended; consider stopping metoclopramide.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Adverse reactions in the breast-fed baby cannot be excluded. Therefore, metoclopramide is not recommended during breastfeeding."
+      }
+     ]
+    },
+    {
+     "t": "SPS (differs from SmPC): can be used with caution short term for nausea, with infant monitoring (sedation, GI upset, poor feeding, irritability, extrapyramidal symptoms). Do not exceed 30 mg daily for up to 5 days; avoid in people with a history of depression.",
+     "src": [
+      {
+       "s": "sps-nausea-breastfeeding",
+       "q": "Metoclopramide, for short-term use, can be used with caution during breastfeeding for nausea, but monitoring is required."
+      },
+      {
+       "s": "sps-nausea-breastfeeding",
+       "q": "The dose should not exceed 30mg daily for a maximum of five days. Avoid in people with a history of depression."
+      }
+     ]
+    }
+   ]
+  },
+  "reproductive": {
+   "items": [
+    {
+     "t": "Fertility: no data available. Long-term use may cause hyperprolactinaemia (amenorrhoea, galactorrhoea, gynaecomastia).",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Fertility No data available."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Endocrine disorders during prolonged treatment in relation with hyperprolactinaemia (amenorrhoea, galactorrhoea, gynaecomastia)."
+      }
+     ]
+    }
+   ]
+  },
+  "adverseCommon": {
+   "items": [
+    {
+     "t": "Very common: somnolence. Common: extrapyramidal disorders, parkinsonism, akathisia, depression, diarrhoea, asthenia, hypotension (mainly with injection).",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Nervous system disorders Very common Somnolence Common Extrapyramidal disorders"
+      },
+      {
+       "s": "emc-6213",
+       "q": "Psychiatric disorders Common Depression"
+      },
+      {
+       "s": "emc-6213",
+       "q": "Gastrointestinal disorders Common Diarrhoea General disorders and administration site conditions Common Asthenia"
+      }
+     ]
+    },
+    {
+     "t": "Uncommon: dystonia (including oculogyric crisis), dyskinesia, hallucination, amenorrhoea, hyperprolactinaemia, bradycardia, hypersensitivity.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Uncommon Dystonia (including visual disturbances and oculogyric crisis), Dyskinesia, Depressed level of consciousness"
+      }
+     ]
+    }
+   ]
+  },
+  "adverseSerious": {
+   "items": [
+    {
+     "t": "Tardive dyskinesia (may be persistent, especially in the elderly) and neuroleptic malignant syndrome: stop at once.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Tardive dyskinesia which may be persistent, during or after prolonged treatment, particularly in elderly patients (see section 4.4), Neuroleptic malignant syndrome"
+      }
+     ]
+    },
+    {
+     "t": "Acute dystonia/oculogyric crisis, even after a single dose (especially children and young adults): stop; treat symptomatically.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "These reactions occur usually at the beginning of the treatment and can occur after a single administration."
+      }
+     ]
+    },
+    {
+     "t": "Methaemoglobinaemia (especially neonates); convulsions (rare, mainly in epilepsy); QT prolongation, torsade de pointes, AV block.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Methaemoglobinaemia, which could be related to NADH cytochrome b5 reductase deficiency, particularly in neonates"
+      },
+      {
+       "s": "emc-6213",
+       "q": "Rare Convulsion especially in epileptic patients"
+      },
+      {
+       "s": "emc-6213",
+       "q": "Electrocardiogram QT prolonged; Torsade de Pointes;"
+      }
+     ]
+    },
+    {
+     "t": "Anaphylactic reaction including shock; acute hypertension in phaeochromocytoma.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Acute hypertension in patients with phaeochromocytoma"
+      }
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "items": [
+    {
+     "t": "Check for contraindications: epilepsy, Parkinson's disease, previous tardive dyskinesia, phaeochromocytoma, levodopa/dopamine agonists, GI obstruction or bleeding.",
+     "tag": "baseline",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "History of neuroleptic or metoclopramide-induced tardive dyskinesia - Epilepsy (increased crises frequency and intensity) - Parkinson's disease"
+      }
+     ]
+    },
+    {
+     "t": "Watch for extrapyramidal symptoms (SPS: monitor for them); with strong CYP2D6 inhibitors, monitor for adverse reactions.",
+     "tag": "ongoing",
+     "src": [
+      {
+       "s": "sps-prokinetic-choice",
+       "q": "Monitor the person for extrapyramidal side effects."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Although the clinical significance is uncertain, patients should be monitored for adverse reactions."
+      }
+     ]
+    },
+    {
+     "t": "Stop after 5 days (licensed maximum); stop at once for extrapyramidal symptoms, tardive dyskinesia, neuroleptic malignant syndrome or methaemoglobinaemia.",
+     "tag": "stop",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "The maximum recommended treatment duration is 5 days."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Treatment must be discontinued if clinical signs of tardive dyskinesia appear."
+      }
+     ]
+    }
+   ]
+  },
+  "administration": {
+   "items": [
+    {
+     "t": "Oral use only. Leave at least 6 hours between doses, even if vomited.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Method of administration For oral use only"
+      },
+      {
+       "s": "emc-6213",
+       "q": "A minimal interval of 6 hours between two administrations is to be respected, even in case of vomiting or rejection of the dose"
+      }
+     ]
+    }
+   ]
+  },
+  "counselling": {
+   "items": [
+    {
+     "t": "Stop and seek advice for abnormal movements (spasms of face, neck, eyes or tongue, restlessness, tremor). Do not take more than prescribed or for longer than 5 days.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide should be discontinued immediately in the event of extrapyramidal symptoms."
+      },
+      {
+       "s": "emc-6213",
+       "q": "The maximum recommended treatment duration is 5 days."
+      }
+     ]
+    },
+    {
+     "t": "May cause drowsiness, dizziness or movement disorders - do not drive or use machines if affected; avoid alcohol.",
+     "src": [
+      {
+       "s": "emc-6213",
+       "q": "Metoclopramide may cause drowsiness, dizziness, dyskinesia and dystonias which could affect the vision and also interfere with the ability to drive and operate machinery."
+      },
+      {
+       "s": "emc-6213",
+       "q": "Combination to be avoided Alcohol potentiates the sedative effect of metoclopramide."
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "rules": [
+  {
+   "id": "metoclopramide:allergy:metoclopramide",
+   "kind": "allergy",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "allergen": [
+    "metoclopramide"
+   ],
+   "concern": "Hypersensitivity to metoclopramide",
+   "consequence": "Hypersensitivity reaction, including anaphylaxis.",
+   "action": "Do not use.",
+   "sourceWording": "Contraindications - Hypersensitivity",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:gi-haemorrhage-obstruction",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "condition": "gi-haemorrhage-obstruction-perforation",
+   "concern": "GI haemorrhage, mechanical obstruction or perforation",
+   "consequence": "Stimulating GI motility is a risk.",
+   "action": "Do not use.",
+   "sourceWording": "Contraindications",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Gastrointestinal haemorrhage, mechanical obstruction or gastro-intestinal perforation for which the stimulation of gastrointestinal motility constitutes a risk"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:gi-obstruction",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "condition": "gi-obstruction-stricture",
+   "concern": "Mechanical GI obstruction",
+   "consequence": "Stimulating GI motility is a risk.",
+   "action": "Do not use.",
+   "sourceWording": "Contraindications",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Gastrointestinal haemorrhage, mechanical obstruction or gastro-intestinal perforation for which the stimulation of gastrointestinal motility constitutes a risk"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:recent-gi-surgery",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "condition": "recent-gi-anastomosis",
+   "concern": "First 3-4 days after pyloroplasty or gut anastomosis",
+   "consequence": "Vigorous contractions may harm healing.",
+   "action": "Do not use in this period.",
+   "sourceWording": "should not be used during the first three to four days following operations such as pyloroplasty or gut anastomosis",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "should not be used during the first three to four days following operations such as pyloroplasty or gut anastomosis as vigorous muscular contractions may not help healing"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:phaeochromocytoma",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "condition": "phaeochromocytoma",
+   "concern": "Confirmed or suspected phaeochromocytoma",
+   "consequence": "Risk of severe hypertension episodes.",
+   "action": "Do not use.",
+   "sourceWording": "Contraindications",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Confirmed or suspected pheochromocytoma, due to the risk of severe hypertension episodes"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:tardive-dyskinesia",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "condition": "tardive-dyskinesia-history",
+   "concern": "History of neuroleptic- or metoclopramide-induced tardive dyskinesia",
+   "consequence": "Risk of further tardive dyskinesia.",
+   "action": "Do not use.",
+   "sourceWording": "Contraindications",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "History of neuroleptic or metoclopramide-induced tardive dyskinesia"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:epilepsy",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "condition": "epilepsy",
+   "effect": "seizure-threshold",
+   "concern": "Epilepsy",
+   "consequence": "Increased frequency and intensity of seizures.",
+   "action": "Do not use.",
+   "sourceWording": "Contraindications - Epilepsy (increased crises frequency and intensity)",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Epilepsy (increased crises frequency and intensity)"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:parkinsons",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "condition": "parkinsons-disease",
+   "concern": "Parkinson's disease",
+   "consequence": "Dopamine antagonism; may worsen symptoms.",
+   "action": "Do not use.",
+   "sourceWording": "Contraindications - Parkinson's disease",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Epilepsy (increased crises frequency and intensity) - Parkinson's disease"
+    },
+    {
+     "s": "emc-6213",
+     "q": "Symptoms of Parkinson's disease may also be exacerbated by metoclopramide."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:methaemoglobinaemia",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "condition": "methaemoglobin-reductase-deficiency",
+   "concern": "NADH cytochrome-b5 reductase deficiency or previous metoclopramide methaemoglobinaemia",
+   "consequence": "Risk of methaemoglobinaemia.",
+   "action": "Do not use.",
+   "sourceWording": "Contraindications",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Known history of methaemoglobinaemia with metoclopramide or of NADH cytochrome-b5 deficiency."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:age:lt1",
+   "kind": "age",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "age": {
+    "minYears": 0,
+    "maxYears": 1
+   },
+   "concern": "Infant under 1 year",
+   "consequence": "Increased risk of extrapyramidal disorders.",
+   "action": "Do not use.",
+   "sourceWording": "contraindicated in children younger than 1 year",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Use in children less than 1 year of age due to an increased risk of extrapyramidal disorders"
+    },
+    {
+     "s": "mhra-dsu-metoclopramide-neuro-2013",
+     "q": "use of metoclopramide is contraindicated in children younger than 1 year"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:age:1to18",
+   "kind": "age",
+   "level": "caution",
+   "med": "metoclopramide",
+   "age": {
+    "minYears": 1,
+    "maxYears": 18
+   },
+   "concern": "Child or adolescent (1-18 years)",
+   "consequence": "Higher risk of acute extrapyramidal effects; only licensed as second-line for delayed CINV.",
+   "action": "Use only as a second-line option for delayed CINV, 0.1-0.15 mg/kg up to three times daily (max 0.5 mg/kg/day, 5 days). Tablets only if over 60 kg.",
+   "sourceWording": "should only be used as a second-line option",
+   "src": [
+    {
+     "s": "mhra-dsu-metoclopramide-neuro-2013",
+     "q": "in children, age 1-18 years, metoclopramide should only be used as a second-line option for prevention of delayed chemotherapy-induced nausea and vomiting"
+    },
+    {
+     "s": "emc-6213",
+     "q": "Tablets are not suitable for use in children weighing less than 61 kg."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:renal:crcl-le15",
+   "kind": "renal",
+   "level": "dose",
+   "med": "metoclopramide",
+   "renal": {
+    "measure": "CrCl",
+    "max": 15,
+    "maxInclusive": true
+   },
+   "concern": "CrCl ≤ 15 mL/min (end-stage renal disease)",
+   "consequence": "Reduced elimination.",
+   "action": "Reduce the daily dose by 75%.",
+   "sourceWording": "the daily dose should be reduced by 75%",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "In patients with end stage renal disease (Creatinine clearance ≤ 15 ml/min), the daily dose should be reduced by 75%."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:renal:crcl-15-60",
+   "kind": "renal",
+   "level": "dose",
+   "med": "metoclopramide",
+   "renal": {
+    "measure": "CrCl",
+    "min": 15,
+    "max": 60,
+    "maxInclusive": true
+   },
+   "concern": "CrCl 15-60 mL/min (moderate to severe renal impairment)",
+   "consequence": "Reduced elimination.",
+   "action": "Reduce the dose by 50%.",
+   "sourceWording": "the dose should be reduced by 50%",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "In patients with moderate to severe renal impairment (Creatinine clearance 15-60 ml/min), the dose should be reduced by 50%"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:hepatic:severe",
+   "kind": "hepatic",
+   "level": "dose",
+   "med": "metoclopramide",
+   "hepatic": [
+    "severe"
+   ],
+   "concern": "Severe hepatic impairment",
+   "consequence": "Reduced clearance.",
+   "action": "Reduce the dose by 50%.",
+   "sourceWording": "the dose should be reduced by 50%",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "In patients with severe hepatic impairment, the dose should be reduced by 50%"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:qt-prolongation",
+   "kind": "condition",
+   "level": "caution",
+   "med": "metoclopramide",
+   "condition": "qt-prolongation",
+   "effect": "qt-prolongation",
+   "concern": "Cardiac conduction disturbance including QT prolongation",
+   "consequence": "Serious cardiac effects reported, mainly with intravenous use.",
+   "action": "Special care.",
+   "sourceWording": "Special care should be taken",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "to patients with cardiac conduction disturbances (including QT prolongation), patients with uncorrected electrolyte imbalance, bradycardia and those taking other drugs known to prolong QT interval"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:conduction-disturbance",
+   "kind": "condition",
+   "level": "caution",
+   "med": "metoclopramide",
+   "condition": "cardiac-conduction-disturbance",
+   "effect": "qt-prolongation",
+   "concern": "Cardiac conduction disturbances",
+   "consequence": "Serious cardiac effects (including QT prolongation) reported, mainly with intravenous use.",
+   "action": "Special care; use with care with other drugs affecting cardiac conduction.",
+   "sourceWording": "Special care should be taken",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "to patients with cardiac conduction disturbances (including QT prolongation), patients with uncorrected electrolyte imbalance, bradycardia and those taking other drugs known to prolong QT interval"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:bradycardia",
+   "kind": "condition",
+   "level": "caution",
+   "med": "metoclopramide",
+   "condition": "bradycardia",
+   "concern": "Bradycardia",
+   "consequence": "Severe bradycardia and cardiac arrest reported, mainly with intravenous use.",
+   "action": "Special care.",
+   "sourceWording": "Special care should be taken",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "to patients with cardiac conduction disturbances (including QT prolongation), patients with uncorrected electrolyte imbalance, bradycardia and those taking other drugs known to prolong QT interval"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:asthma",
+   "kind": "condition",
+   "level": "caution",
+   "med": "metoclopramide",
+   "condition": "asthma",
+   "concern": "History of atopy, including asthma",
+   "consequence": "Hypersensitivity risk.",
+   "action": "Use with care.",
+   "sourceWording": "Care should be exercised",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Care should be exercised when using Maxolon in patients with a history of atopy (including asthma) or porphyria."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:porphyria",
+   "kind": "condition",
+   "level": "caution",
+   "med": "metoclopramide",
+   "condition": "porphyria",
+   "concern": "Porphyria",
+   "consequence": "Stated as a precaution.",
+   "action": "Use with care.",
+   "sourceWording": "Care should be exercised",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Care should be exercised when using Maxolon in patients with a history of atopy (including asthma) or porphyria."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:condition:galactose-intolerance",
+   "kind": "condition",
+   "level": "avoid",
+   "med": "metoclopramide",
+   "condition": "galactose-intolerance-lactase-deficiency",
+   "concern": "Hereditary galactose intolerance, lactase deficiency or glucose-galactose malabsorption",
+   "consequence": "Tablets contain lactose.",
+   "action": "Should not take this product.",
+   "sourceWording": "should not take this medicine",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency of glucose-galactose malabsorption should not take this medicine."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:pregnancy:end",
+   "kind": "pregnancy",
+   "level": "avoid",
+   "med": "metoclopramide",
+   "trimesters": [
+    3
+   ],
+   "concern": "End of pregnancy",
+   "consequence": "Extrapyramidal syndrome in the newborn cannot be excluded.",
+   "action": "Avoid at the end of pregnancy; if used, monitor the neonate. Earlier in pregnancy it can be used if clinically needed.",
+   "sourceWording": "should be avoided at the end of pregnancy",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "in case of metoclopramide administration at the end of pregnancy, extrapyramidal syndrome in newborn cannot be excluded"
+    },
+    {
+     "s": "emc-6213",
+     "q": "Metoclopramide should be avoided at the end of pregnancy. If metoclopramide is used, neonatal monitoring should be undertaken."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:pregnancy:info",
+   "kind": "pregnancy",
+   "level": "info",
+   "med": "metoclopramide",
+   "trimesters": [
+    1,
+    2
+   ],
+   "concern": "Pregnancy (first and second trimester)",
+   "consequence": "> 1000 outcomes show no malformative or feto/neonatal toxicity.",
+   "action": "Can be used if clinically needed (SmPC); BUMPS lists it as an option for pregnancy sickness.",
+   "sourceWording": "can be used during pregnancy if clinically needed",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Metoclopramide can be used during pregnancy if clinically needed."
+    },
+    {
+     "s": "bumps-nausea-vomiting",
+     "q": "Overall, these medicines are considered safe for your baby."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:breastfeeding:avoid",
+   "kind": "breastfeeding",
+   "level": "avoid",
+   "med": "metoclopramide",
+   "concern": "Breastfeeding",
+   "consequence": "Low levels in milk; infant adverse reactions cannot be excluded.",
+   "action": "SmPC: not recommended; consider stopping. SPS differs: short-term use with caution and infant monitoring (max 30 mg/day for 5 days; avoid with a history of depression).",
+   "sourceWording": "metoclopramide is not recommended during breastfeeding",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Therefore, metoclopramide is not recommended during breastfeeding."
+    },
+    {
+     "s": "sps-nausea-breastfeeding",
+     "q": "Metoclopramide, for short-term use, can be used with caution during breastfeeding for nausea, but monitoring is required."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:interaction:cabergoline",
+   "kind": "interaction",
+   "level": "contraindicated",
+   "med": "metoclopramide",
+   "other": "cabergoline",
+   "concern": "Metoclopramide + cabergoline (dopamine agonist)",
+   "consequence": "Mutual antagonism; reduced effect of both.",
+   "action": "Do not use together.",
+   "sourceWording": "Contraindicated combination Levodopa or dopaminergic agonists",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Contraindicated combination Levodopa or dopaminergic agonists and metoclopramide have a mutual antagonism"
+    },
+    {
+     "s": "emc-101124",
+     "q": "it should not be concurrently administered with drugs which have dopamine-antagonist activity (such as phenothiazines, butyrophenones, thioxanthenes, metoclopramide)"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:interaction:cns-depressant",
+   "kind": "interaction",
+   "level": "info",
+   "med": "metoclopramide",
+   "other": "group:cns-depressant",
+   "effect": "cns-respiratory-depression",
+   "concern": "Metoclopramide + CNS depressant",
+   "consequence": "Sedative effects potentiated.",
+   "action": "Take into account (no specific action stated).",
+   "sourceWording": "Combination to be taken into account",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Sedative effects of Central Nervous System depressants and metoclopramide are potentiated."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:interaction:opioid",
+   "kind": "interaction",
+   "level": "info",
+   "med": "metoclopramide",
+   "other": "group:opioid",
+   "effect": "cns-respiratory-depression",
+   "concern": "Metoclopramide + opioid (morphine derivative)",
+   "consequence": "Sedation potentiated; mutual antagonism on gut motility.",
+   "action": "Take into account (no specific action stated).",
+   "sourceWording": "Combination to be taken into account",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Central nervous system depressants (morphine derivatives, anxiolytics, sedative H1 antihistamines,sedative antidepressants, barbiturates, clonidine and related)"
+    },
+    {
+     "s": "emc-6213",
+     "q": "Anticholinergics and morphine derivatives may have both a mutual antagonism with metoclopramide on the digestive tract motility."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:interaction:benzodiazepine",
+   "kind": "interaction",
+   "level": "info",
+   "med": "metoclopramide",
+   "other": "group:benzodiazepine",
+   "effect": "cns-respiratory-depression",
+   "concern": "Metoclopramide + anxiolytic (benzodiazepine)",
+   "consequence": "Sedative effects potentiated.",
+   "action": "Take into account (no specific action stated).",
+   "sourceWording": "Combination to be taken into account",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Central nervous system depressants (morphine derivatives, anxiolytics, sedative H1 antihistamines,sedative antidepressants, barbiturates, clonidine and related)"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:interaction:sedating-antihistamine",
+   "kind": "interaction",
+   "level": "info",
+   "med": "metoclopramide",
+   "other": "group:sedating-antihistamine",
+   "effect": "cns-respiratory-depression",
+   "concern": "Metoclopramide + sedating antihistamine",
+   "consequence": "Sedative effects potentiated.",
+   "action": "Take into account (no specific action stated).",
+   "sourceWording": "Combination to be taken into account",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Central nervous system depressants (morphine derivatives, anxiolytics, sedative H1 antihistamines,sedative antidepressants, barbiturates, clonidine and related)"
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:interaction:anticholinergic",
+   "kind": "interaction",
+   "level": "info",
+   "med": "metoclopramide",
+   "other": "group:anticholinergic",
+   "concern": "Metoclopramide + anticholinergic",
+   "consequence": "Mutual antagonism on gut motility.",
+   "action": "Take into account (no specific action stated).",
+   "sourceWording": "Combination to be taken into account",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Anticholinergics and morphine derivatives may have both a mutual antagonism with metoclopramide on the digestive tract motility."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:interaction:serotonergic",
+   "kind": "interaction",
+   "level": "info",
+   "med": "metoclopramide",
+   "other": "group:serotonergic",
+   "effect": "serotonin-syndrome",
+   "concern": "Metoclopramide + serotonergic drug (e.g. SSRI)",
+   "consequence": "May increase the risk of serotonin syndrome.",
+   "action": "Be aware (no specific action stated).",
+   "sourceWording": "may increase the risk of serotonin syndrome",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "The use of metoclopramide with serotonergic drugs such as SSRIs may increase the risk of serotonin syndrome."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:interaction:fluoxetine",
+   "kind": "interaction",
+   "level": "monitor",
+   "med": "metoclopramide",
+   "other": "fluoxetine",
+   "concern": "Metoclopramide + fluoxetine (strong CYP2D6 inhibitor)",
+   "consequence": "Metoclopramide exposure increased.",
+   "action": "Monitor for adverse reactions.",
+   "sourceWording": "patients should be monitored for adverse reactions",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "Metoclopramide exposure levels are increased when co-administered with strong CYP2D6 inhibitors such as fluoxetine and paroxetine. Although the clinical significance is uncertain, patients should be monitored for adverse reactions."
+    }
+   ]
+  },
+  {
+   "id": "metoclopramide:interaction:qt-prolonging",
+   "kind": "interaction",
+   "level": "caution",
+   "med": "metoclopramide",
+   "other": "group:qt-prolonging",
+   "effect": "qt-prolongation",
+   "concern": "Metoclopramide + other QT-prolonging drug",
+   "consequence": "QT prolongation and serious cardiac effects reported (mainly with intravenous metoclopramide).",
+   "action": "Special care; use with care with drugs affecting cardiac conduction.",
+   "sourceWording": "Special care should be taken",
+   "src": [
+    {
+     "s": "emc-6213",
+     "q": "to patients with cardiac conduction disturbances (including QT prolongation), patients with uncorrected electrolyte imbalance, bradycardia and those taking other drugs known to prolong QT interval"
+    },
+    {
+     "s": "emc-6213",
+     "q": "Maxolon should be used with care with other drugs affecting cardiac conduction."
+    }
+   ]
+  }
+ ]
+}

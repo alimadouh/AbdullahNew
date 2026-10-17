@@ -8,7 +8,8 @@
   "groups": [
     "fluoroquinolone",
     "antibacterial",
-    "qt-prolonging"
+    "qt-prolonging",
+    "hepatotoxic"
   ],
   "searchTerms": [
     "ciprofloxacin hydrochloride"
@@ -1969,6 +1970,110 @@
         {
           "s": "emc-4346",
           "q": "Concomitant administration of ciprofloxacin and omeprazole containing medicinal products results in a slight reduction of Cmax and AUC of ciprofloxacin."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:duloxetine",
+      "kind": "interaction",
+      "med": "ciprofloxacin",
+      "level": "monitor",
+      "other": "duloxetine",
+      "concern": "Duloxetine (CYP1A2 substrate)",
+      "consequence": "Ciprofloxacin inhibits CYP1A2: duloxetine levels may rise.",
+      "action": "Monitor closely for signs of duloxetine overdose/adverse effects.",
+      "sourceWording": "should be monitored closely for clinical signs of overdose",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "Ciprofloxacin inhibits CYP1A2 and thus may cause increased serum concentration of concomitantly administered substances metabolised by this enzyme (e.g. theophylline, clozapine, olanzapine, ropinirole, tizanidine, duloxetine, agomelatine)."
+        },
+        {
+          "s": "emc-4346",
+          "q": "patients taking these substances concomitantly with ciprofloxacin should be monitored closely for clinical signs of overdose"
+        },
+        {
+          "s": "emc-4346",
+          "q": "Although no clinical data are available on a possible interaction with ciprofloxacin, similar effects can be expected upon concomitant administration"
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:insulin",
+      "kind": "interaction",
+      "med": "ciprofloxacin",
+      "level": "monitor",
+      "other": "group:insulin",
+      "effect": "hypoglycaemia",
+      "concern": "Insulin",
+      "consequence": "Dysglycaemia (hypoglycaemia or hyperglycaemia), including hypoglycaemic coma.",
+      "action": "Careful blood glucose monitoring.",
+      "sourceWording": "careful monitoring of blood glucose is recommended",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "usually in diabetic patients receiving concomitant treatment with an oral hypoglycaemic agent (e.g., glibenclamide) or with insulin"
+        },
+        {
+          "s": "emc-4346",
+          "q": "In diabetic patients, careful monitoring of blood glucose is recommended."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:tramadol",
+      "kind": "interaction",
+      "med": "ciprofloxacin",
+      "level": "avoid",
+      "other": "tramadol",
+      "effect": "seizure-threshold",
+      "concern": "Tramadol (lowers seizure threshold) - ciprofloxacin oral suspension SmPC",
+      "consequence": "Increased risk of seizures, including status epilepticus.",
+      "action": "Avoid the combination (stated in the oral suspension SmPC; the tablet SmPC used does not name tramadol).",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-885",
+          "q": "concomitant treatment of ciprofloxacin with drugs known to trigger seizures or lower the seizure threshold, such as but not limited to tramadol, selective serotonin reuptake inhibitors, should be avoided as this can increase the risk of seizures (including status epilepticus)."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:ssri",
+      "kind": "interaction",
+      "med": "ciprofloxacin",
+      "level": "avoid",
+      "other": "group:ssri",
+      "effect": "seizure-threshold",
+      "concern": "SSRIs (lower seizure threshold) - ciprofloxacin oral suspension SmPC",
+      "consequence": "Increased risk of seizures, including status epilepticus.",
+      "action": "Avoid the combination (stated in the oral suspension SmPC; the tablet SmPC used does not name SSRIs).",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-885",
+          "q": "concomitant treatment of ciprofloxacin with drugs known to trigger seizures or lower the seizure threshold, such as but not limited to tramadol, selective serotonin reuptake inhibitors, should be avoided as this can increase the risk of seizures (including status epilepticus)."
+        }
+      ]
+    },
+    {
+      "id": "ciprofloxacin:interaction:loperamide",
+      "kind": "interaction",
+      "med": "ciprofloxacin",
+      "level": "caution",
+      "other": "loperamide",
+      "concern": "Loperamide (anti-peristaltic) if antibiotic-associated colitis develops",
+      "consequence": "Antibiotic-associated colitis (possibly fatal) can occur; anti-peristaltic drugs are contraindicated in that situation.",
+      "action": "If severe or persistent diarrhoea occurs: stop ciprofloxacin, start appropriate therapy, and do not give loperamide or other anti-peristaltic drugs.",
+      "sourceWording": "Anti-peristaltic drugs are contraindicated in this situation",
+      "src": [
+        {
+          "s": "emc-4346",
+          "q": "In such cases, ciprofloxacin should immediately be discontinued, and an appropriate therapy initiated. Anti-peristaltic drugs are contraindicated in this situation."
+        },
+        {
+          "s": "emc-558",
+          "q": "Imodium must not be used when inhibition of peristalsis is to be avoided"
         }
       ]
     }

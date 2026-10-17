@@ -1,0 +1,415 @@
+{
+  "id": "vildagliptin-metformin",
+  "name": "Vildagliptin/metformin",
+  "ingredients": ["vildagliptin", "metformin"],
+  "className": "Combination of oral blood glucose lowering drugs: DPP-4 inhibitor + biguanide",
+  "groups": ["dpp4-inhibitor", "biguanide", "oral-antidiabetic", "antidiabetic"],
+  "searchTerms": ["vildagliptin metformin", "vildagliptin and metformin hydrochloride", "vildagliptin/metformin hydrochloride"],
+  "formulations": [
+    {
+      "id": "vildagliptin-metformin-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "50 mg/850 mg, 50 mg/1000 mg",
+      "release": "immediate",
+      "src": [
+        { "s": "emc-11521", "q": "Each film-coated tablet contains 50 mg of vildagliptin and 1000 mg of metformin hydrochloride (corresponding to 780 mg of metformin)." },
+        { "s": "emc-11521", "q": "Each film-coated tablet contains 50 mg of vildagliptin and 850 mg of metformin hydrochloride (corresponding to 660 mg of metformin)." }
+      ],
+      "sourceIds": ["emc-11521"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Adults with type 2 diabetes, with diet and exercise: inadequately controlled on metformin alone; already taking vildagliptin and metformin as separate tablets; or with other diabetes medicines, including insulin.",
+        "src": [
+          { "s": "emc-11521", "q": "in patients who are inadequately controlled with metformin hydrochloride alone" },
+          { "s": "emc-11521", "q": "in patients who are already being treated with the combination of vildagliptin and metformin hydrochloride, as separate tablets" },
+          { "s": "emc-11521", "q": "in combination with other medicinal products for the treatment of diabetes, including insulin, when these do not provide adequate glycaemic control" }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "If no suitable fixed-dose strength is available for the patient's renal function, use the individual medicines instead of the combination tablet.",
+        "src": [{ "s": "emc-11521", "q": "If no adequate strength of Eucreas is available, individual monocomponents should be used instead of the fixed dose combination." }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "One tablet (50 mg/850 mg or 50 mg/1000 mg) twice daily, morning and evening; maximum vildagliptin 100 mg daily. On metformin alone: vildagliptin 50 mg twice daily plus the metformin dose already taken. Switching from separate tablets: start at current doses.", "tag": "Type 2 diabetes, adults (normal renal function, GFR ≥ 90 mL/min)",
+        "src": [
+          { "s": "emc-11521", "q": "while not exceeding the maximum recommended daily dose of 100 mg vildagliptin" },
+          { "s": "emc-11521", "q": "Eucreas may be initiated at either the 50 mg/850 mg or 50 mg/1000 mg tablet strength twice daily, one tablet in the morning and the other in the evening." },
+          { "s": "emc-11521", "q": "The starting dose of Eucreas should provide vildagliptin as 50 mg twice daily (100 mg total daily dose) plus the dose of metformin already being taken." }
+        ] },
+      { "t": "With metformin plus a sulphonylurea, or with insulin: vildagliptin 50 mg twice daily and a similar metformin dose. With a sulphonylurea, a lower sulphonylurea dose may be considered.", "tag": "With sulphonylurea or insulin",
+        "src": [
+          { "s": "emc-11521", "q": "When Eucreas is used in combination with a sulphonylurea, a lower dose of the sulphonylurea may be considered to reduce the risk of hypoglycaemia." },
+          { "s": "emc-11521", "q": "The dose of Eucreas should provide vildagliptin dosed as 50 mg twice daily (100 mg total daily dose) and a dose of metformin similar to the dose already being taken." }
+        ] },
+      { "t": "Elderly (65 years and over): monitor renal function regularly.", "tag": "Elderly",
+        "src": [{ "s": "emc-11521", "q": "elderly patients taking Eucreas should have their renal function monitored regularly" }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Not recommended under 18 years; safety and efficacy not established and no data.",
+        "src": [{ "s": "emc-11521", "q": "Eucreas is not recommended for use in children and adolescents (< 18 years)." }] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to vildagliptin, metformin or any excipient.",
+        "src": [{ "s": "emc-11521", "q": "Contraindications - Hypersensitivity to the active substances or to any of the excipients listed in section 6.1" }] },
+      { "t": "Any acute metabolic acidosis (e.g. lactic acidosis, diabetic ketoacidosis); diabetic pre-coma; severe renal failure (GFR < 30 mL/min).",
+        "src": [{ "s": "emc-11521", "q": "Any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis) - Diabetic pre-coma - Severe renal failure (GFR < 30 ml/min)" }] },
+      { "t": "Acute conditions that may alter renal function: dehydration, severe infection, shock, intravascular iodinated contrast.",
+        "src": [{ "s": "emc-11521", "q": "Acute conditions with the potential to alter renal function, such as: - dehydration, - severe infection, - shock, - intravascular administration of iodinated contrast agents" }] },
+      { "t": "Acute or chronic disease that may cause tissue hypoxia: cardiac or respiratory failure, recent myocardial infarction, shock.",
+        "src": [{ "s": "emc-11521", "q": "Acute or chronic disease which may cause tissue hypoxia, such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock." }] },
+      { "t": "Hepatic impairment; acute alcohol intoxication, alcoholism; breastfeeding.",
+        "src": [{ "s": "emc-11521", "q": "Hepatic impairment (see sections 4.2, 4.4 and 4.8) - Acute alcohol intoxication, alcoholism - Breast-feeding (see section 4.6)" }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Not a substitute for insulin; should not be used in type 1 diabetes.",
+        "src": [{ "s": "emc-11521", "q": "Eucreas is not a substitute for insulin in insulin-requiring patients and should not be used in patients with type 1 diabetes." }] },
+      { "t": "Lactic acidosis (very rare, serious): risk rises with acute worsening of renal function, cardiorespiratory illness or sepsis. Stop temporarily in dehydration. Start medicines that can acutely impair renal function (antihypertensives, diuretics, NSAIDs) with caution.",
+        "src": [
+          { "s": "emc-11521", "q": "Lactic acidosis, a very rare but serious metabolic complication, most often occurs at acute worsening of renal function, or cardiorespiratory illness or sepsis." },
+          { "s": "emc-11521", "q": "In case of dehydration (severe diarrhoea or vomiting, fever or reduced fluid intake), metformin should be temporarily discontinued and contact with a health care professional is recommended." },
+          { "s": "emc-11521", "q": "Medicinal products that can acutely impair renal function (such as antihypertensives, diuretics and NSAIDs) should be initiated with caution in metformin-treated patients." }
+        ] },
+      { "t": "Iodinated contrast (intravascular): stop before or at the time of imaging; restart no sooner than 48 hours after, once renal function is re-checked and stable.",
+        "src": [{ "s": "emc-11521", "q": "Metformin should be discontinued prior to or at the time of the imaging procedure and not restarted until at least 48 hours after, provided that renal function has been re-evaluated and found to be stable" }] },
+      { "t": "Mitochondrial disease (MELAS, MIDD): metformin is not recommended; withdraw immediately if suggestive signs appear.",
+        "src": [{ "s": "emc-11521", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease" }] },
+      { "t": "Hepatic: should not be used in hepatic impairment (including pre-treatment ALT or AST > 3 x ULN). Rare hepatic dysfunction (including hepatitis) with vildagliptin; check liver function before and during treatment.",
+        "src": [
+          { "s": "emc-11521", "q": "Patients with hepatic impairment, including those with pre-treatment ALT or AST > 3x ULN, should not be treated with Eucreas" },
+          { "s": "emc-11521", "q": "Rare cases of hepatic dysfunction (including hepatitis) have been reported with vildagliptin." }
+        ] },
+      { "t": "Skin: blistering and exfoliative lesions reported; monitor for skin disorders such as blistering or ulceration.",
+        "src": [{ "s": "emc-11521", "q": "monitoring for skin disorders, such as blistering or ulceration, is recommended" }] },
+      { "t": "Acute pancreatitis: inform patients of the symptoms; stop if suspected; do not restart if confirmed. Caution with a history of acute pancreatitis.",
+        "src": [
+          { "s": "emc-11521", "q": "If pancreatitis is suspected, vildagliptin should be discontinued; if acute pancreatitis is confirmed, vildagliptin should not be restarted." },
+          { "s": "emc-11521", "q": "Caution should be exercised in patients with a history of acute pancreatitis." }
+        ] },
+      { "t": "Hypoglycaemia with a sulphonylurea: a lower sulphonylurea dose may be considered.",
+        "src": [{ "s": "emc-11521", "q": "Patients receiving vildagliptin in combination with a sulphonylurea may be at risk for hypoglycaemia." }] },
+      { "t": "Surgery under general, spinal or epidural anaesthesia: stop metformin at the time of surgery; restart no earlier than 48 hours after surgery or return to oral nutrition, once renal function is re-checked and stable.",
+        "src": [
+          { "s": "emc-11521", "q": "Metformin must be discontinued at the time of surgery under general, spinal or epidural anaesthesia." },
+          { "s": "emc-11521", "q": "Therapy may be restarted no earlier than 48 hours following surgery or resumption of oral nutrition and provided that renal function has been re-evaluated and found to be stable." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Alcohol: combination not recommended (lactic acidosis risk).",
+        "src": [{ "s": "emc-11521", "q": "Combinations not recommended Alcohol Alcohol intoxication is associated with an increased risk of lactic acidosis" }] },
+      { "t": "NSAIDs (including COX-2 inhibitors), ACE inhibitors, angiotensin II receptor antagonists and diuretics (especially loop diuretics): may impair renal function and raise lactic acidosis risk; close monitoring of renal function is necessary.",
+        "src": [
+          { "s": "emc-11521", "q": "e.g. NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors, ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+          { "s": "emc-11521", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+        ] },
+      { "t": "Glucocorticoids, beta-2 agonists and diuretics raise blood glucose: inform the patient, monitor blood glucose more often (especially at the start), adjust the dose if needed. Thiazides, corticosteroids, thyroid products and sympathomimetics may reduce the effect of vildagliptin.",
+        "src": [
+          { "s": "emc-11521", "q": "Glucocorticoids, beta-2-agonists, and diuretics have intrinsic hyperglycaemic activity." },
+          { "s": "emc-11521", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment." },
+          { "s": "emc-11521", "q": "the hypoglycaemic effect of vildagliptin may be reduced by certain active substances, including thiazides, corticosteroids, thyroid products and sympathomimetics" }
+        ] },
+      { "t": "ACE inhibitors: may lower blood glucose (adjust the antidiabetic dose if necessary); there may also be an increased risk of angioedema with vildagliptin.",
+        "src": [
+          { "s": "emc-11521", "q": "Angiotensin converting enzyme (ACE) inhibitors may decrease the blood glucose levels." },
+          { "s": "emc-11521", "q": "There may be an increased risk of angioedema in patients concomitantly taking ACE inhibitors." }
+        ] },
+      { "t": "OCT2/MATE inhibitors (e.g. ranolazine, vandetanib, dolutegravir, cimetidine) could increase metformin exposure.", "detail": true,
+        "src": [{ "s": "emc-11521", "q": "transporter-2 [OCT2] / multidrug and toxin extrusion [MATE] inhibitors such as ranolazine, vandetanib, dolutegravir and cimetidine) could increase systemic exposure to metformin" }] },
+      { "t": "Vildagliptin: low interaction potential; no clinically relevant pharmacokinetic interactions with pioglitazone, metformin, glibenclamide, digoxin, warfarin, amlodipine, ramipril, valsartan or simvastatin.", "detail": true,
+        "src": [{ "s": "emc-11521", "q": "Vildagliptin has a low potential for interactions with co-administered medicinal products." }] }
+    ] },
+    "renal": { "items": [
+      { "t": "Assess GFR before starting and at least annually; every 3 to 6 months in the elderly or if at risk of progression. Review lactic acidosis risk factors before starting if GFR < 60 mL/min.",
+        "src": [
+          { "s": "emc-11521", "q": "A GFR should be assessed before initiation of treatment with metformin-containing products and at least annually thereafter." },
+          { "s": "emc-11521", "q": "Factors that may increase the risk of lactic acidosis (see section 4.4) should be reviewed before considering initiation of metformin in patients with GFR<60 ml/min." }
+        ] },
+      { "t": "GFR 60-89 mL/min: metformin maximum 3000 mg/day (dose reduction may be considered); vildagliptin no dose adjustment.",
+        "src": [{ "s": "emc-11521", "q": "60-89 Maximum daily dose is 3000 mg. Dose reduction may be considered in relation to declining renal function. No dose adjustment." }] },
+      { "t": "GFR 45-59 mL/min: metformin maximum 2000 mg/day (start at most half the maximum); vildagliptin maximum 50 mg/day.",
+        "src": [{ "s": "emc-11521", "q": "45-59 Maximum daily dose is 2000 mg. The starting dose is at most half of the maximum dose. Maximal daily dose is 50 mg." }] },
+      { "t": "GFR 30-44 mL/min: metformin maximum 1000 mg/day (start at most half the maximum). The SmPC table text gives no separate vildagliptin figure for this row; the fixed tablet twice daily exceeds these limits, so use the individual medicines if no suitable strength.",
+        "src": [
+          { "s": "emc-11521", "q": "30-44 Maximum daily dose is 1000 mg. The starting dose is at most half of the maximum dose." },
+          { "s": "emc-11521", "q": "If no adequate strength of Eucreas is available, individual monocomponents should be used instead of the fixed dose combination." }
+        ] },
+      { "t": "GFR < 30 mL/min: contraindicated.",
+        "src": [{ "s": "emc-11521", "q": "Metformin is contraindicated in patients with GFR < 30 ml/min" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Hepatic impairment: contraindicated (SmPC 4.3); includes pre-treatment ALT or AST > 3 x ULN.",
+        "src": [
+          { "s": "emc-11521", "q": "Hepatic impairment (see sections 4.2, 4.4 and 4.8)" },
+          { "s": "emc-11521", "q": "Eucreas should not be used in patients with hepatic impairment, including those with pre-treatment alanine aminotransferase (ALT) or aspartate aminotransferase (AST) > 3 times the upper limit of normal (ULN)" }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: no adequate human data; should not be used in pregnancy.",
+        "src": [
+          { "s": "emc-11521", "q": "There are no adequate data from the use of Eucreas in pregnant women." },
+          { "s": "emc-11521", "q": "Eucreas should not be used during pregnancy." }
+        ] },
+      { "t": "BUMPS: type 2 diabetes in pregnancy should be treated with metformin, with insulin if needed; other antidiabetic medicines (including DPP-4 inhibitors) are avoided as a precaution.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "As a precaution, they are avoided in pregnancy." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: contraindicated in breastfeeding (risk of neonatal hypoglycaemia from metformin; no human data for vildagliptin).",
+        "src": [
+          { "s": "emc-11521", "q": "Due to both the potential risk of neonate hypoglycaemia related to metformin and the lack of human data with vildagliptin, Eucreas should not be used during breast-feeding" },
+          { "s": "emc-11521", "q": "Breast-feeding (see section 4.6)" }
+        ] },
+      { "t": "SPS: metformin (and insulin) are preferred choices in breastfeeding; there is limited or no published information on other antidiabetic medicines such as vildagliptin.",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding" }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: no human studies.", "detail": true,
+        "src": [{ "s": "emc-11521", "q": "No studies on the effect on human fertility have been conducted for Eucreas" }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Common: upper respiratory tract infection, nasopharyngitis, dizziness, headache, tremor, vomiting, diarrhoea, nausea, reflux, flatulence, constipation, abdominal pain, sweating, itching, rash, dermatitis, joint pain, weakness.",
+        "src": [
+          { "s": "emc-11521", "q": "Upper respiratory tract infection Common Nasopharyngitis Common" },
+          { "s": "emc-11521", "q": "Dizziness Common Headache Common Tremor Common" },
+          { "s": "emc-11521", "q": "Vomiting Common Diarrhoea Common Nausea Common Gastro-oesophageal reflux disease Common Flatulence Common Constipation Common Abdominal pain including upper Common" },
+          { "s": "emc-11521", "q": "Hyperhidrosis Common Pruritis Common Rash Common Dermatitis Common" },
+          { "s": "emc-11521", "q": "Arthalgia Common" },
+          { "s": "emc-11521", "q": "Asthenia Common" }
+        ] },
+      { "t": "Metformin stomach and bowel effects occur mostly at the start and usually settle; taking doses during or after meals helps.", "detail": true,
+        "src": [{ "s": "emc-11521", "q": "Gastrointestinal adverse reactions occur most frequently during initiation of therapy and resolve spontaneously in most cases." }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Lactic acidosis: acidotic breathlessness, abdominal pain, muscle cramps, weakness, low temperature, then coma. Stop and seek immediate medical attention.",
+        "src": [
+          { "s": "emc-11521", "q": "Lactic acidosis is characterised by acidotic dyspnoea, abdominal pain, muscle cramps, asthenia and hypothermia followed by coma." },
+          { "s": "emc-11521", "q": "In case of suspected symptoms, the patient should stop taking metformin and seek immediate medical attention." }
+        ] },
+      { "t": "Hepatitis (uncommon) or liver dysfunction: stop if jaundice or signs of liver dysfunction; do not restart.",
+        "src": [
+          { "s": "emc-11521", "q": "Hepatitis Uncommon" },
+          { "s": "emc-11521", "q": "Patients who develop jaundice or other signs suggestive of liver dysfunction should discontinue Eucreas." }
+        ] },
+      { "t": "Pancreatitis (uncommon): stop if suspected; do not restart if confirmed.",
+        "src": [
+          { "s": "emc-11521", "q": "Pancreatitis Uncommon" },
+          { "s": "mhra-dsu-dpp4-pancreatitis", "q": "if pancreatitis is suspected, the DPP-4 inhibitor and other potentially suspect medicines should be discontinued" }
+        ] },
+      { "t": "Exfoliative and bullous skin lesions including bullous pemphigoid; cutaneous vasculitis; angioedema (rare, more often with ACE inhibitors).", "detail": true,
+        "src": [
+          { "s": "emc-11521", "q": "Exfoliative and bullous skin lesions, including bullous pemphigoid Not known†" },
+          { "s": "emc-11521", "q": "A greater proportion of cases were reported when vildagliptin was administered in combination with an ACE inhibitor." }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "GFR and liver function tests before starting.", "tag": "baseline",
+        "src": [
+          { "s": "emc-11521", "q": "GFR should be assessed before treatment initiation and regularly thereafter" },
+          { "s": "emc-11521", "q": "LFTs should be performed prior to the initiation of treatment with Eucreas in order to know the patient's baseline value." }
+        ] },
+      { "t": "GFR at least annually (every 3 to 6 months in the elderly or if at risk); liver function every 3 months in the first year, then periodically.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-11521", "q": "In patients at increased risk of further progression of renal impairment and in the elderly, renal function should be assessed more frequently, e.g. every 3-6 months." },
+          { "s": "emc-11521", "q": "Liver function should be monitored during treatment with Eucreas at three-month intervals during the first year and periodically thereafter." }
+        ] },
+      { "t": "Withdrawal recommended if AST or ALT ≥ 3 x ULN persists; stop if jaundice (do not restart). Withhold temporarily in dehydration, for surgery and for intravascular iodinated contrast.", "tag": "stop",
+        "src": [
+          { "s": "emc-11521", "q": "Should an increase in AST or in ALT of 3x ULN or greater persist, withdrawal of Eucreas therapy is recommended." },
+          { "s": "emc-11521", "q": "Following withdrawal of treatment with Eucreas and LFT normalisation, treatment with Eucreas should not be re-initiated." }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Oral, twice daily (morning and evening). Taking with or just after food may reduce stomach and bowel effects.",
+        "src": [{ "s": "emc-11521", "q": "Taking Eucreas with or just after food may reduce gastrointestinal symptoms associated with metformin" }] },
+      { "t": "Swallowing difficulty (SPS, off-label): film-coated but can be crushed and mixed with water or given with soft food.", "detail": true,
+        "src": [{ "s": "sps-gliptin-swallowing", "q": "Vildagliptin with metformin tablets Film-coated but can be crushed and mixed with water or given with soft food." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Know the signs of lactic acidosis; stop and seek immediate help if they occur. If you have severe vomiting, diarrhoea, fever or cannot drink, stop for a while and contact a healthcare professional.",
+        "src": [
+          { "s": "emc-11521", "q": "Patients and/or care-givers should be informed of the risk of lactic acidosis." },
+          { "s": "emc-11521", "q": "metformin should be temporarily discontinued and contact with a health care professional is recommended" }
+        ] },
+      { "t": "Seek help for persistent, severe abdominal pain (possible pancreatitis) or yellow skin or eyes (possible liver problem).",
+        "src": [
+          { "s": "mhra-dsu-dpp4-pancreatitis", "q": "persistent, severe abdominal pain (sometimes radiating to the back)" },
+          { "s": "emc-11521", "q": "Patients who develop jaundice or other signs suggestive of liver dysfunction should discontinue Eucreas." }
+        ] },
+      { "t": "If dizzy, avoid driving or using machines.", "detail": true,
+        "src": [{ "s": "emc-11521", "q": "Patients who may experience dizziness as an adverse reaction should avoid driving vehicles or using machines." }] }
+    ] }
+  },
+  "rules": [
+    { "id": "vildagliptin-metformin:allergy:own", "kind": "allergy", "level": "contraindicated", "med": "vildagliptin-metformin", "allergen": ["vildagliptin", "metformin"],
+      "concern": "Hypersensitivity to vildagliptin or metformin", "consequence": "Hypersensitivity reaction.", "action": "Do not use.", "sourceWording": "Contraindications - Hypersensitivity to the active substances",
+      "src": [{ "s": "emc-11521", "q": "Contraindications - Hypersensitivity to the active substances or to any of the excipients listed in section 6.1" }] },
+    { "id": "vildagliptin-metformin:condition:diabetic-ketoacidosis", "kind": "condition", "level": "contraindicated", "med": "vildagliptin-metformin", "condition": "diabetic-ketoacidosis",
+      "concern": "Acute metabolic acidosis / diabetic ketoacidosis / diabetic pre-coma", "consequence": "Risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "Contraindications",
+      "src": [{ "s": "emc-11521", "q": "Any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis) - Diabetic pre-coma" }] },
+    { "id": "vildagliptin-metformin:condition:metabolic-acidosis", "kind": "condition", "level": "contraindicated", "med": "vildagliptin-metformin", "condition": "metabolic-acidosis",
+      "concern": "Any acute metabolic acidosis (e.g. lactic acidosis)", "consequence": "Contraindicated (SmPC 4.3); metformin raises the risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "contraindicated",
+      "src": [{ "s": "emc-11521", "q": "Any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis) - Diabetic pre-coma" }] },
+    { "id": "vildagliptin-metformin:condition:type-1-diabetes", "kind": "condition", "level": "avoid", "med": "vildagliptin-metformin", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Not a substitute for insulin.", "action": "Should not be used in type 1 diabetes.", "sourceWording": "should not be used in patients with type 1 diabetes",
+      "src": [{ "s": "emc-11521", "q": "Eucreas is not a substitute for insulin in insulin-requiring patients and should not be used in patients with type 1 diabetes." }] },
+    { "id": "vildagliptin-metformin:condition:dehydration", "kind": "condition", "level": "contraindicated", "med": "vildagliptin-metformin", "condition": "dehydration-hypovolaemia",
+      "concern": "Dehydration (acute condition that may alter renal function)", "consequence": "Metformin accumulation and lactic acidosis.", "action": "Do not use; stop temporarily during dehydration.", "sourceWording": "Contraindications ... dehydration",
+      "src": [
+        { "s": "emc-11521", "q": "Acute conditions with the potential to alter renal function, such as: - dehydration, - severe infection, - shock, - intravascular administration of iodinated contrast agents" },
+        { "s": "emc-11521", "q": "metformin should be temporarily discontinued and contact with a health care professional is recommended" }
+      ] },
+    { "id": "vildagliptin-metformin:condition:severe-infection-shock", "kind": "condition", "level": "contraindicated", "med": "vildagliptin-metformin", "condition": "severe-infection-shock",
+      "concern": "Severe infection or shock", "consequence": "Acute change in renal function / hypoxia; lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Contraindications ... severe infection, shock",
+      "src": [{ "s": "emc-11521", "q": "Acute conditions with the potential to alter renal function, such as: - dehydration, - severe infection, - shock, - intravascular administration of iodinated contrast agents" }] },
+    { "id": "vildagliptin-metformin:condition:iodinated-contrast", "kind": "condition", "level": "contraindicated", "med": "vildagliptin-metformin", "condition": "iodinated-contrast-planned",
+      "concern": "Intravascular iodinated contrast", "consequence": "Contrast-induced nephropathy, metformin accumulation, lactic acidosis.", "action": "Listed in 4.3: stop before or at the time of imaging; restart no sooner than 48 hours after, once renal function is re-checked and stable.", "sourceWording": "Contraindications ... intravascular administration of iodinated contrast agents",
+      "src": [
+        { "s": "emc-11521", "q": "Acute conditions with the potential to alter renal function, such as: - dehydration, - severe infection, - shock, - intravascular administration of iodinated contrast agents" },
+        { "s": "emc-11521", "q": "Metformin should be discontinued prior to or at the time of the imaging procedure and not restarted until at least 48 hours after, provided that renal function has been re-evaluated and found to be stable" }
+      ] },
+    { "id": "vildagliptin-metformin:condition:heart-failure", "kind": "condition", "level": "contraindicated", "med": "vildagliptin-metformin", "condition": "heart-failure",
+      "concern": "Cardiac failure (disease that may cause tissue hypoxia)", "consequence": "Tissue hypoxia; lactic acidosis risk.", "action": "Do not use (the combination SmPC lists acute or chronic cardiac failure in 4.3).", "sourceWording": "Contraindications ... cardiac or respiratory failure",
+      "src": [{ "s": "emc-11521", "q": "Acute or chronic disease which may cause tissue hypoxia, such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock." }] },
+    { "id": "vildagliptin-metformin:condition:respiratory-failure", "kind": "condition", "level": "contraindicated", "med": "vildagliptin-metformin", "condition": "respiratory-failure",
+      "concern": "Respiratory failure (tissue hypoxia)", "consequence": "Lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Contraindications ... cardiac or respiratory failure",
+      "src": [{ "s": "emc-11521", "q": "Acute or chronic disease which may cause tissue hypoxia, such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock." }] },
+    { "id": "vildagliptin-metformin:condition:recent-mi", "kind": "condition", "level": "contraindicated", "med": "vildagliptin-metformin", "condition": "recent-myocardial-infarction",
+      "concern": "Recent myocardial infarction (tissue hypoxia)", "consequence": "Lactic acidosis risk.", "action": "Do not use.", "sourceWording": "Contraindications ... recent myocardial infarction",
+      "src": [{ "s": "emc-11521", "q": "Acute or chronic disease which may cause tissue hypoxia, such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock." }] },
+    { "id": "vildagliptin-metformin:condition:alcohol", "kind": "condition", "level": "contraindicated", "med": "vildagliptin-metformin", "condition": "alcohol-dependence",
+      "concern": "Alcoholism or acute alcohol intoxication", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "Contraindications ... Acute alcohol intoxication, alcoholism",
+      "src": [{ "s": "emc-11521", "q": "Hepatic impairment (see sections 4.2, 4.4 and 4.8) - Acute alcohol intoxication, alcoholism - Breast-feeding (see section 4.6)" }] },
+    { "id": "vildagliptin-metformin:condition:acute-alcohol-intoxication", "kind": "condition", "level": "contraindicated", "med": "vildagliptin-metformin", "condition": "acute-alcoholism",
+      "concern": "Acute alcohol intoxication", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use; avoid alcohol.", "sourceWording": "contraindicated",
+      "src": [{ "s": "emc-11521", "q": "Hepatic impairment (see sections 4.2, 4.4 and 4.8) - Acute alcohol intoxication, alcoholism - Breast-feeding (see section 4.6)" }] },
+    { "id": "vildagliptin-metformin:condition:mitochondrial-disease", "kind": "condition", "level": "avoid", "med": "vildagliptin-metformin", "condition": "mitochondrial-disease",
+      "concern": "Mitochondrial disease (MELAS, MIDD)", "consequence": "Lactic acidosis exacerbation and neurological complications.", "action": "Metformin not recommended; withdraw immediately if suggestive signs appear.", "sourceWording": "metformin is not recommended",
+      "src": [{ "s": "emc-11521", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease" }] },
+    { "id": "vildagliptin-metformin:condition:surgery", "kind": "condition", "level": "avoid", "med": "vildagliptin-metformin", "condition": "surgery-planned",
+      "concern": "Surgery under general, spinal or epidural anaesthesia", "consequence": "Lactic acidosis risk.", "action": "Metformin must be stopped at the time of surgery; restart no earlier than 48 hours after surgery or return to oral nutrition, once renal function is re-checked and stable. Temporary stop only.", "sourceWording": "Metformin must be discontinued at the time of surgery",
+      "src": [
+        { "s": "emc-11521", "q": "Metformin must be discontinued at the time of surgery under general, spinal or epidural anaesthesia." },
+        { "s": "emc-11521", "q": "Therapy may be restarted no earlier than 48 hours following surgery or resumption of oral nutrition and provided that renal function has been re-evaluated and found to be stable." }
+      ] },
+    { "id": "vildagliptin-metformin:condition:pancreatitis-history", "kind": "condition", "level": "caution", "med": "vildagliptin-metformin", "condition": "pancreatitis-history",
+      "concern": "History of acute pancreatitis", "consequence": "Vildagliptin is associated with acute pancreatitis.", "action": "Use with caution; stop if pancreatitis is suspected and do not restart if confirmed.", "sourceWording": "Caution should be exercised",
+      "src": [{ "s": "emc-11521", "q": "Caution should be exercised in patients with a history of acute pancreatitis." }] },
+    { "id": "vildagliptin-metformin:condition:pancreatitis-current", "kind": "condition", "level": "avoid", "med": "vildagliptin-metformin", "condition": "pancreatitis",
+      "concern": "Acute pancreatitis, current or suspected (for past or chronic pancreatitis see the history rule: use with caution)", "consequence": "DPP-4 inhibitors are associated with acute pancreatitis.", "action": "Stop if pancreatitis is suspected; do not restart if acute pancreatitis is confirmed.", "sourceWording": "should be discontinued … should not be restarted",
+      "src": [{ "s": "emc-11521", "q": "If pancreatitis is suspected, vildagliptin should be discontinued; if acute pancreatitis is confirmed, vildagliptin should not be restarted." }] },
+    { "id": "vildagliptin-metformin:renal:lt30", "kind": "renal", "level": "contraindicated", "med": "vildagliptin-metformin", "renal": { "measure": "GFR", "max": 30 },
+      "concern": "GFR < 30 mL/min", "consequence": "Metformin accumulation; lactic acidosis.", "action": "Do not use.", "sourceWording": "Metformin is contraindicated in patients with GFR < 30 ml/min",
+      "src": [
+        { "s": "emc-11521", "q": "Severe renal failure (GFR < 30 ml/min)" },
+        { "s": "emc-11521", "q": "Metformin is contraindicated in patients with GFR < 30 ml/min" }
+      ] },
+    { "id": "vildagliptin-metformin:renal:30-44", "kind": "renal", "level": "dose", "med": "vildagliptin-metformin", "renal": { "measure": "GFR", "min": 30, "max": 45 },
+      "concern": "GFR 30-44 mL/min", "consequence": "Reduced metformin clearance.", "action": "Metformin maximum 1000 mg/day (start at most half the maximum). The emc table text gives no separate vildagliptin figure for this row; the vildagliptin SmPC gives 50 mg once daily in moderate or severe renal impairment. Use the individual medicines if no suitable combination strength; review lactic acidosis risk factors before starting.", "sourceWording": "Maximum daily dose is 1000 mg",
+      "src": [
+        { "s": "emc-11521", "q": "30-44 Maximum daily dose is 1000 mg. The starting dose is at most half of the maximum dose." },
+        { "s": "emc-11521", "q": "If no adequate strength of Eucreas is available, individual monocomponents should be used instead of the fixed dose combination." },
+        { "s": "emc-6225", "q": "In patients with moderate or severe renal impairment or with end-stage renal disease (ESRD), the recommended dose of Galvus is 50 mg once daily" }
+      ] },
+    { "id": "vildagliptin-metformin:renal:45-59", "kind": "renal", "level": "dose", "med": "vildagliptin-metformin", "renal": { "measure": "GFR", "min": 45, "max": 60 },
+      "concern": "GFR 45-59 mL/min", "consequence": "Reduced clearance of both components.", "action": "Metformin maximum 2000 mg/day (start at most half the maximum); vildagliptin maximum 50 mg/day. Review lactic acidosis risk factors before starting.", "sourceWording": "Maximum daily dose is 2000 mg ... Maximal daily dose is 50 mg",
+      "src": [
+        { "s": "emc-11521", "q": "45-59 Maximum daily dose is 2000 mg. The starting dose is at most half of the maximum dose. Maximal daily dose is 50 mg." },
+        { "s": "emc-11521", "q": "Factors that may increase the risk of lactic acidosis (see section 4.4) should be reviewed before considering initiation of metformin in patients with GFR<60 ml/min." }
+      ] },
+    { "id": "vildagliptin-metformin:renal:60-89", "kind": "renal", "level": "info", "med": "vildagliptin-metformin", "renal": { "measure": "GFR", "min": 60, "max": 90 },
+      "concern": "GFR 60-89 mL/min", "consequence": "Declining renal function.", "action": "Metformin maximum 3000 mg/day, dose reduction may be considered; no vildagliptin adjustment. Check GFR at least annually.", "sourceWording": "Dose reduction may be considered",
+      "src": [{ "s": "emc-11521", "q": "60-89 Maximum daily dose is 3000 mg. Dose reduction may be considered in relation to declining renal function. No dose adjustment." }] },
+    { "id": "vildagliptin-metformin:hepatic:any", "kind": "hepatic", "level": "contraindicated", "med": "vildagliptin-metformin", "hepatic": ["any"],
+      "concern": "Hepatic impairment (including pre-treatment ALT or AST > 3 x ULN)", "consequence": "Lactic acidosis risk (metformin); hepatic dysfunction reported with vildagliptin.", "action": "Do not use.", "sourceWording": "Contraindications ... Hepatic impairment",
+      "src": [
+        { "s": "emc-11521", "q": "Hepatic impairment (see sections 4.2, 4.4 and 4.8)" },
+        { "s": "emc-11521", "q": "Patients with hepatic impairment, including those with pre-treatment ALT or AST > 3x ULN, should not be treated with Eucreas" }
+      ] },
+    { "id": "vildagliptin-metformin:age:lt18", "kind": "age", "level": "avoid", "med": "vildagliptin-metformin", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Child or adolescent under 18 years", "consequence": "Safety and efficacy not established; no data.", "action": "Not recommended.", "sourceWording": "is not recommended for use in children and adolescents",
+      "src": [{ "s": "emc-11521", "q": "Eucreas is not recommended for use in children and adolescents (< 18 years)." }] },
+    { "id": "vildagliptin-metformin:age:ge65", "kind": "age", "level": "monitor", "med": "vildagliptin-metformin", "age": { "minYears": 65 },
+      "concern": "Elderly (65 years and over)", "consequence": "Tendency to reduced renal function; metformin is excreted by the kidney.", "action": "Monitor renal function regularly.", "sourceWording": "should have their renal function monitored regularly",
+      "src": [{ "s": "emc-11521", "q": "elderly patients taking Eucreas should have their renal function monitored regularly" }] },
+    { "id": "vildagliptin-metformin:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "vildagliptin-metformin",
+      "concern": "Pregnancy", "consequence": "No adequate human data; vildagliptin reproductive toxicity at high doses in animals.", "action": "Should not be used. BUMPS: metformin with or without insulin is the recommended treatment in pregnancy.", "sourceWording": "should not be used during pregnancy",
+      "src": [
+        { "s": "emc-11521", "q": "Eucreas should not be used during pregnancy." },
+        { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required." }
+      ] },
+    { "id": "vildagliptin-metformin:breastfeeding", "kind": "breastfeeding", "level": "contraindicated", "med": "vildagliptin-metformin",
+      "concern": "Breastfeeding", "consequence": "Possible neonatal hypoglycaemia from metformin; no human data for vildagliptin.", "action": "Do not use (SmPC 4.3). SPS: metformin alone or insulin are preferred choices.", "sourceWording": "Contraindications ... Breast-feeding",
+      "src": [
+        { "s": "emc-11521", "q": "Hepatic impairment (see sections 4.2, 4.4 and 4.8) - Acute alcohol intoxication, alcoholism - Breast-feeding (see section 4.6)" },
+        { "s": "emc-11521", "q": "Due to both the potential risk of neonate hypoglycaemia related to metformin and the lack of human data with vildagliptin, Eucreas should not be used during breast-feeding" },
+        { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." }
+      ] },
+    { "id": "vildagliptin-metformin:interaction:sulfonylurea", "kind": "interaction", "level": "caution", "med": "vildagliptin-metformin", "other": "group:sulfonylurea", "effect": "hypoglycaemia",
+      "concern": "Vildagliptin/metformin + sulphonylurea", "consequence": "Hypoglycaemia.", "action": "A lower sulphonylurea dose may be considered.", "sourceWording": "a lower dose of the sulphonylurea may be considered",
+      "src": [
+        { "s": "emc-11521", "q": "Patients receiving vildagliptin in combination with a sulphonylurea may be at risk for hypoglycaemia." },
+        { "s": "emc-11521", "q": "When Eucreas is used in combination with a sulphonylurea, a lower dose of the sulphonylurea may be considered to reduce the risk of hypoglycaemia." }
+      ] },
+    { "id": "vildagliptin-metformin:interaction:insulin", "kind": "interaction", "level": "info", "med": "vildagliptin-metformin", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Vildagliptin/metformin + insulin", "consequence": "Hypoglycaemia reported (14% with vildagliptin vs 16% with placebo in combination with insulin).", "action": "No specific dose action stated in the SmPC.", "sourceWording": "the incidence of hypoglycaemia was 14%",
+      "src": [{ "s": "emc-11521", "q": "In patients taking vildagliptin in combination with insulin, the incidence of hypoglycaemia was 14% for vildagliptin and 16% for placebo." }] },
+    { "id": "vildagliptin-metformin:interaction:nsaid", "kind": "interaction", "level": "monitor", "med": "vildagliptin-metformin", "other": "group:nsaid", "effect": "nephrotoxicity",
+      "concern": "Vildagliptin/metformin + NSAID (including COX-2 inhibitors)", "consequence": "May impair renal function and increase lactic acidosis risk.", "action": "Close monitoring of renal function is necessary; start the NSAID with caution.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-11521", "q": "e.g. NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors, ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+        { "s": "emc-11521", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "vildagliptin-metformin:interaction:ace-inhibitor", "kind": "interaction", "level": "monitor", "med": "vildagliptin-metformin", "other": "group:ace-inhibitor", "effect": "nephrotoxicity",
+      "concern": "Vildagliptin/metformin + ACE inhibitor", "consequence": "May impair renal function (lactic acidosis risk); may lower blood glucose; possible increased risk of angioedema with vildagliptin.", "action": "Close monitoring of renal function is necessary; adjust the antidiabetic dose if necessary; be aware of angioedema.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-11521", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." },
+        { "s": "emc-11521", "q": "Angiotensin converting enzyme (ACE) inhibitors may decrease the blood glucose levels." },
+        { "s": "emc-11521", "q": "There may be an increased risk of angioedema in patients concomitantly taking ACE inhibitors." }
+      ] },
+    { "id": "vildagliptin-metformin:interaction:arb", "kind": "interaction", "level": "monitor", "med": "vildagliptin-metformin", "other": "group:arb", "effect": "nephrotoxicity",
+      "concern": "Vildagliptin/metformin + angiotensin II receptor antagonist", "consequence": "May impair renal function and increase lactic acidosis risk.", "action": "Close monitoring of renal function is necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-11521", "q": "e.g. NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors, ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+        { "s": "emc-11521", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "vildagliptin-metformin:interaction:diuretic", "kind": "interaction", "level": "monitor", "med": "vildagliptin-metformin", "other": "group:diuretic", "effect": "nephrotoxicity",
+      "concern": "Vildagliptin/metformin + diuretic (especially loop diuretics)", "consequence": "May impair renal function (lactic acidosis risk); diuretics also raise blood glucose.", "action": "Close monitoring of renal function; more frequent blood glucose monitoring, especially at the start; adjust the dose if necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-11521", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." },
+        { "s": "emc-11521", "q": "Glucocorticoids, beta-2-agonists, and diuretics have intrinsic hyperglycaemic activity." }
+      ] },
+    { "id": "vildagliptin-metformin:interaction:antihypertensive", "kind": "interaction", "level": "caution", "med": "vildagliptin-metformin", "other": "group:antihypertensive",
+      "concern": "Vildagliptin/metformin + antihypertensive", "consequence": "Medicines that can acutely impair renal function raise lactic acidosis risk.", "action": "Initiate with caution.", "sourceWording": "should be initiated with caution",
+      "src": [{ "s": "emc-11521", "q": "Medicinal products that can acutely impair renal function (such as antihypertensives, diuretics and NSAIDs) should be initiated with caution in metformin-treated patients." }] },
+    { "id": "vildagliptin-metformin:interaction:corticosteroid", "kind": "interaction", "level": "monitor", "med": "vildagliptin-metformin", "other": "group:corticosteroid",
+      "concern": "Vildagliptin/metformin + glucocorticoid", "consequence": "Intrinsic hyperglycaemic activity; may reduce the effect of vildagliptin.", "action": "Inform the patient; more frequent blood glucose monitoring, especially at the start; adjust the dose if necessary.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-11521", "q": "Glucocorticoids, beta-2-agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-11521", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment." }
+      ] },
+    { "id": "vildagliptin-metformin:interaction:beta2-agonist", "kind": "interaction", "level": "monitor", "med": "vildagliptin-metformin", "other": "group:beta2-agonist",
+      "concern": "Vildagliptin/metformin + beta-2 agonist", "consequence": "Intrinsic hyperglycaemic activity.", "action": "Inform the patient; more frequent blood glucose monitoring, especially at the start; adjust the dose if necessary.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-11521", "q": "Glucocorticoids, beta-2-agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-11521", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment." }
+      ] },
+    { "id": "vildagliptin-metformin:interaction:thiazide", "kind": "interaction", "level": "info", "med": "vildagliptin-metformin", "other": "group:thiazide",
+      "concern": "Vildagliptin/metformin + thiazide", "consequence": "May reduce the glucose-lowering effect of vildagliptin.", "action": "No specific action stated (diuretics: see renal and glucose monitoring).", "sourceWording": "may be reduced",
+      "src": [{ "s": "emc-11521", "q": "the hypoglycaemic effect of vildagliptin may be reduced by certain active substances, including thiazides, corticosteroids, thyroid products and sympathomimetics" }] },
+    { "id": "vildagliptin-metformin:interaction:thyroid-hormone", "kind": "interaction", "level": "info", "med": "vildagliptin-metformin", "other": "group:thyroid-hormone",
+      "concern": "Vildagliptin/metformin + thyroid products", "consequence": "May reduce the glucose-lowering effect of vildagliptin.", "action": "No specific action stated.", "sourceWording": "may be reduced",
+      "src": [{ "s": "emc-11521", "q": "the hypoglycaemic effect of vildagliptin may be reduced by certain active substances, including thiazides, corticosteroids, thyroid products and sympathomimetics" }] },
+    { "id": "vildagliptin-metformin:interaction:sympathomimetic", "kind": "interaction", "level": "info", "med": "vildagliptin-metformin", "other": "group:sympathomimetic",
+      "concern": "Vildagliptin/metformin + sympathomimetic", "consequence": "May reduce the glucose-lowering effect of vildagliptin.", "action": "No specific action stated.", "sourceWording": "may be reduced",
+      "src": [{ "s": "emc-11521", "q": "the hypoglycaemic effect of vildagliptin may be reduced by certain active substances, including thiazides, corticosteroids, thyroid products and sympathomimetics" }] }
+  ]
+}

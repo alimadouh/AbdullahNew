@@ -1,0 +1,413 @@
+{
+  "id": "sitagliptin-metformin",
+  "name": "Sitagliptin/metformin",
+  "ingredients": ["sitagliptin", "metformin"],
+  "className": "Combination of oral blood glucose lowering drugs: DPP-4 inhibitor + biguanide",
+  "groups": ["dpp4-inhibitor", "biguanide", "oral-antidiabetic", "antidiabetic"],
+  "searchTerms": ["sitagliptin metformin", "sitagliptin and metformin hydrochloride", "sitagliptin/metformin hydrochloride"],
+  "formulations": [
+    {
+      "id": "sitagliptin-metformin-tab",
+      "label": "Prolonged-release tablets (clinic product; UK data from the immediate-release tablet)",
+      "route": "oral",
+      "strengths": "50 mg/1000 mg",
+      "release": "modified",
+      "note": "The clinic product is a once-daily prolonged-release 50 mg/1000 mg tablet. No UK prolonged-release sitagliptin/metformin product was found on emc, so the data come from the UK immediate-release 50 mg/1000 mg SmPC. The immediate-release tablet is taken twice daily with meals; that schedule does not apply to the prolonged-release tablet, and no UK dosing information exists for it. Daily maximums, contraindications and warnings for the two active substances are shown.",
+      "src": [
+        { "s": "emc-564", "q": "Each tablet contains sitagliptin phosphate monohydrate equivalent to 50 mg of sitagliptin and 1 000 mg of metformin hydrochloride." },
+        { "s": "emc-564", "q": "Janumet should be given twice daily with meals to reduce the gastrointestinal adverse reactions associated with metformin." }
+      ],
+      "sourceIds": ["emc-564"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Adults with type 2 diabetes, with diet and exercise: inadequately controlled on maximal tolerated metformin alone, or already taking sitagliptin and metformin; also as triple therapy with a sulphonylurea, a PPAR-gamma agonist, or insulin.",
+        "src": [
+          { "s": "emc-564", "q": "Janumet is indicated as an adjunct to diet and exercise to improve glycaemic control in patients inadequately controlled on their maximal tolerated dose of metformin alone or those already being treated with the combination of sitagliptin and metformin." },
+          { "s": "emc-564", "q": "Janumet is indicated in combination with a sulphonylurea (i.e., triple combination therapy)" },
+          { "s": "emc-564", "q": "Janumet is also indicated as add-on to insulin (i.e., triple combination therapy)" }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "If no suitable fixed-dose strength is available for the patient's renal function, use the individual medicines instead of the combination tablet.",
+        "src": [{ "s": "emc-564", "q": "If no adequate strength of Janumet is available, individual monocomponents should be used instead of the fixed-dose combination." }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Do not exceed sitagliptin 100 mg daily; individualise to the current regimen. The UK SmPC describes only the immediate-release tablet (sitagliptin 50 mg twice daily plus the metformin dose already taken). It has no dosing for the clinic's once-daily prolonged-release tablet; follow the clinic product's own instructions for timing.", "tag": "Type 2 diabetes, adults (UK immediate-release SmPC)",
+        "src": [
+          { "s": "emc-564", "q": "while not exceeding the maximum recommended daily dose of 100 mg sitagliptin" },
+          { "s": "emc-564", "q": "the usual starting dose should provide sitagliptin dosed as 50 mg twice daily (100 mg total daily dose) plus the dose of metformin already being taken" },
+          { "s": "emc-564", "q": "Janumet should be initiated at the dose of sitagliptin and metformin already being taken" }
+        ] },
+      { "t": "With a sulphonylurea or insulin: a lower dose of the sulphonylurea or insulin may be required to reduce hypoglycaemia risk.", "tag": "With sulphonylurea or insulin",
+        "src": [
+          { "s": "emc-564", "q": "When Janumet is used in combination with a sulphonylurea, a lower dose of the sulphonylurea may be required to reduce the risk of hypoglycaemia" },
+          { "s": "emc-564", "q": "When Janumet is used in combination with insulin, a lower dose of insulin may be required to reduce the risk of hypoglycaemia" }
+        ] },
+      { "t": "Elderly: use with caution as age increases (both components renally excreted); monitor renal function.", "tag": "Elderly",
+        "src": [{ "s": "emc-564", "q": "As metformin and sitagliptin are excreted by the kidney, Janumet should be used with caution as age increases." }] },
+      { "t": "Keep to the recommended diet with carbohydrate spread through the day.", "tag": "All patients", "detail": true,
+        "src": [{ "s": "emc-564", "q": "All patients should continue their recommended diet with an adequate distribution of carbohydrate intake during the day." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Should not be used in children and adolescents aged 10 to 17 years (insufficient efficacy). Not studied under 10 years.",
+        "src": [
+          { "s": "emc-564", "q": "Janumet should not be used in children and adolescents 10 to 17 years of age because of insufficient efficacy." },
+          { "s": "emc-564", "q": "Janumet has not been studied in paediatric patients under 10 years of age." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to sitagliptin, metformin or any excipient.",
+        "src": [{ "s": "emc-564", "q": "hypersensitivity to the active substances or to any of the excipients listed in section 6.1" }] },
+      { "t": "Any acute metabolic acidosis (e.g. lactic acidosis, diabetic ketoacidosis); diabetic pre-coma.",
+        "src": [{ "s": "emc-564", "q": "any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis); - diabetic pre-coma" }] },
+      { "t": "Severe renal failure (GFR < 30 mL/min).",
+        "src": [{ "s": "emc-564", "q": "severe renal failure (GFR< 30 mL/min)" }] },
+      { "t": "Acute conditions that may alter renal function: dehydration, severe infection, shock, intravascular iodinated contrast.",
+        "src": [{ "s": "emc-564", "q": "acute conditions with the potential to alter renal function such as: - dehydration, - severe infection, - shock, - intravascular administration of iodinated contrast agents" }] },
+      { "t": "Acute or chronic disease that may cause tissue hypoxia: cardiac or respiratory failure, recent myocardial infarction, shock.",
+        "src": [{ "s": "emc-564", "q": "acute or chronic disease which may cause tissue hypoxia such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock" }] },
+      { "t": "Hepatic impairment; acute alcohol intoxication, alcoholism; breastfeeding.",
+        "src": [{ "s": "emc-564", "q": "hepatic impairment; - acute alcohol intoxication, alcoholism; - breast-feeding" }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Should not be used in type 1 diabetes; must not be used to treat diabetic ketoacidosis.",
+        "src": [{ "s": "emc-564", "q": "Janumet should not be used in patients with type 1 diabetes and must not be used for the treatment of diabetic ketoacidosis." }] },
+      { "t": "Lactic acidosis (rare, serious): risk rises with acute worsening of renal function, cardiorespiratory illness or sepsis. Stop temporarily in dehydration (severe vomiting, diarrhoea, fever, reduced fluid intake). Start medicines that can acutely impair renal function (antihypertensives, diuretics, NSAIDs) with caution.",
+        "src": [
+          { "s": "emc-564", "q": "Lactic acidosis, a rare but serious metabolic complication, most often occurs at acute worsening of renal function or cardiorespiratory illness or sepsis." },
+          { "s": "emc-564", "q": "In case of dehydration (severe vomiting, diarrhoea, fever or reduced fluid intake), metformin should be temporarily discontinued and contact with a health care professional is recommended." },
+          { "s": "emc-564", "q": "Medicinal products that can acutely impair renal function (such as antihypertensives, diuretics and NSAIDs) should be initiated with caution in metformin-treated patients." }
+        ] },
+      { "t": "Acute pancreatitis: tell patients the key symptom (persistent, severe abdominal pain). If suspected, stop; do not restart if confirmed. Caution with a history of pancreatitis.",
+        "src": [
+          { "s": "emc-564", "q": "If pancreatitis is suspected, Janumet and other potentially suspect medicinal products should be discontinued; if acute pancreatitis is confirmed, Janumet should not be restarted." },
+          { "s": "emc-564", "q": "Caution should be exercised in patients with a history of pancreatitis." }
+        ] },
+      { "t": "Mitochondrial disease (MELAS, MIDD): metformin is not recommended; withdraw immediately if suggestive signs appear.",
+        "src": [{ "s": "emc-564", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease" }] },
+      { "t": "Surgery under general, spinal or epidural anaesthesia: stop at the time of surgery; restart no earlier than 48 hours after surgery or return to oral nutrition, once renal function is re-checked and stable.",
+        "src": [
+          { "s": "emc-564", "q": "Janumet must be discontinued at the time of surgery under general, spinal or epidural anaesthesia." },
+          { "s": "emc-564", "q": "Therapy may be restarted no earlier than 48 hours following surgery or resumption of oral nutrition and provided that renal function has been re-evaluated and found to be stable." }
+        ] },
+      { "t": "Iodinated contrast (intravascular): stop before or at the time of imaging; do not restart until at least 48 hours after, once renal function is re-checked and stable.",
+        "src": [{ "s": "emc-564", "q": "Janumet should be discontinued prior to or at the time of the imaging procedure and not restarted until at least 48 hours after, provided that renal function has been re-evaluated and found to be stable" }] },
+      { "t": "Hypoglycaemia with a sulphonylurea or insulin: a dose reduction of these may be necessary.",
+        "src": [{ "s": "emc-564", "q": "Patients receiving Janumet in combination with a sulphonylurea or with insulin may be at risk for hypoglycaemia. Therefore, a reduction in the dose of the sulphonylurea or insulin may be necessary." }] },
+      { "t": "Serious hypersensitivity (anaphylaxis, angioedema, exfoliative skin reactions including Stevens-Johnson syndrome) and bullous pemphigoid: stop if suspected.",
+        "src": [
+          { "s": "emc-564", "q": "These reactions include anaphylaxis, angioedema, and exfoliative skin conditions including Stevens-Johnson syndrome." },
+          { "s": "emc-564", "q": "If bullous pemphigoid is suspected, Janumet should be discontinued." }
+        ] },
+      { "t": "Previously controlled patient with new lab abnormalities or vague illness: check promptly for ketoacidosis or lactic acidosis; stop immediately if acidosis occurs.",
+        "src": [
+          { "s": "emc-564", "q": "should be evaluated promptly for evidence of ketoacidosis or lactic acidosis" },
+          { "s": "emc-564", "q": "If acidosis of either form occurs, treatment must be stopped immediately and other appropriate corrective measures initiated." }
+        ] },
+      { "t": "Vitamin B12: metformin may lower levels (risk rises with dose, duration and risk factors). Check if deficiency is suspected; consider periodic checks if at risk.", "detail": true,
+        "src": [
+          { "s": "emc-564", "q": "Metformin may reduce vitamin B12 serum levels." },
+          { "s": "emc-564", "q": "Periodic vitamin B12 monitoring could be necessary in patients with risk factors for vitamin B12 deficiency." }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Alcohol: concomitant use not recommended (lactic acidosis risk, especially with fasting, malnutrition or hepatic impairment).",
+        "src": [{ "s": "emc-564", "q": "Concomitant use not recommended Alcohol Alcohol intoxication is associated with an increased risk of lactic acidosis" }] },
+      { "t": "Iodinated contrast agents: concomitant use not recommended; stop before or at imaging and restart at least 48 hours after once renal function is stable.",
+        "src": [{ "s": "emc-564", "q": "Iodinated contrast agents Janumet must be discontinued prior to or at the time of the imaging procedure" }] },
+      { "t": "NSAIDs (including COX-2 inhibitors), ACE inhibitors, angiotensin II receptor antagonists and diuretics (especially loop diuretics): may impair renal function and raise lactic acidosis risk; close monitoring of renal function is necessary.",
+        "src": [
+          { "s": "emc-564", "q": "e.g., NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors, ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+          { "s": "emc-564", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+        ] },
+      { "t": "Glucocorticoids (systemic and local), beta-2 agonists and diuretics raise blood glucose: inform the patient, monitor blood glucose more often (especially at the start), adjust the antidiabetic dose if needed.",
+        "src": [
+          { "s": "emc-564", "q": "Glucocorticoids (given by systemic and local routes) beta-2-agonists, and diuretics have intrinsic hyperglycaemic activity." },
+          { "s": "emc-564", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+        ] },
+      { "t": "ACE inhibitors may lower blood glucose: adjust the antidiabetic dose during and after the ACE inhibitor if necessary.",
+        "src": [{ "s": "emc-564", "q": "ACE-inhibitors may decrease the blood glucose levels. If necessary, the dose of the anti-hyperglycaemic medicinal product should be adjusted during therapy with the other medicinal product and on its discontinuation." }] },
+      { "t": "OCT2/MATE inhibitors (e.g. ranolazine, vandetanib, dolutegravir, cimetidine): may raise metformin exposure and lactic acidosis risk; weigh benefits and risks, monitor glycaemic control, adjust doses.", "detail": true,
+        "src": [
+          { "s": "emc-564", "q": "could increase systemic exposure to metformin and may increase the risk for lactic acidosis. Consider the benefits and risks of concomitant use." }
+        ] },
+      { "t": "Potent CYP3A4 inhibitors (e.g. clarithromycin): could alter sitagliptin pharmacokinetics in severe renal impairment or end-stage renal disease (not assessed clinically).", "detail": true,
+        "src": [{ "s": "emc-564", "q": "it is possible that potent CYP3A4 inhibitors (i.e., ketoconazole, itraconazole, ritonavir, clarithromycin) could alter the pharmacokinetics of sitagliptin in patients with severe renal impairment or ESRD" }] }
+    ] },
+    "renal": { "items": [
+      { "t": "Assess GFR before starting and at least annually; every 3 to 6 months in the elderly or if at risk of progression. Review lactic acidosis risk factors before starting if GFR < 60 mL/min.",
+        "src": [
+          { "s": "emc-564", "q": "A GFR should be assessed before initiation of treatment with metformin-containing products and at least annually thereafter." },
+          { "s": "emc-564", "q": "Factors that may increase the risk of lactic acidosis (see section 4.4) should be reviewed before considering initiation of metformin in patients with GFR < 60 mL/min." }
+        ] },
+      { "t": "GFR 60-89 mL/min: metformin maximum 3000 mg/day (dose reduction may be considered); sitagliptin maximum 100 mg/day.",
+        "src": [{ "s": "emc-564", "q": "60-89 Maximum daily dose is 3 000 mg. Dose reduction may be considered in relation to declining renal function. Maximum daily dose is 100 mg." }] },
+      { "t": "GFR 45-59 mL/min: metformin maximum 2000 mg/day (start at most half the maximum); sitagliptin maximum 100 mg/day.",
+        "src": [{ "s": "emc-564", "q": "45-59 Maximum daily dose is 2 000 mg. The starting dose is at most half of the maximum dose. Maximum daily dose is 100 mg." }] },
+      { "t": "GFR 30-44 mL/min: metformin maximum 1000 mg/day (start at most half the maximum); sitagliptin maximum 50 mg/day. Use the individual medicines if no combination strength fits these limits.",
+        "src": [
+          { "s": "emc-564", "q": "30-44 Maximum daily dose is 1 000 mg. The starting dose is at most half of the maximum dose. Maximum daily dose is 50 mg." },
+          { "s": "emc-564", "q": "If no adequate strength of Janumet is available, individual monocomponents should be used instead of the fixed-dose combination." }
+        ] },
+      { "t": "GFR < 30 mL/min: contraindicated.",
+        "src": [{ "s": "emc-564", "q": "Janumet is contraindicated in patients with GFR < 30 mL/min" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Must not be used in hepatic impairment (contraindicated).",
+        "src": [{ "s": "emc-564", "q": "Janumet must not be used in patients with hepatic impairment" }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: should not be used in pregnancy. If pregnancy is planned or occurs, stop and switch to insulin as soon as possible.",
+        "src": [
+          { "s": "emc-564", "q": "Janumet should not be used during pregnancy." },
+          { "s": "emc-564", "q": "If a patient wishes to become pregnant or if a pregnancy occurs, treatment should be discontinued and the patient switched to insulin treatment as soon as possible." }
+        ] },
+      { "t": "BUMPS: type 2 diabetes in pregnancy should be treated with metformin, with insulin if needed; other antidiabetic medicines (including DPP-4 inhibitors) are avoided as a precaution.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "As a precaution, they are avoided in pregnancy." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: contraindicated in breastfeeding (metformin passes into human milk in small amounts; unknown for sitagliptin).",
+        "src": [
+          { "s": "emc-564", "q": "Metformin is excreted in human milk in small amounts. It is not known whether sitagliptin is excreted in human milk." },
+          { "s": "emc-564", "q": "Janumet must therefore not be used in women who are breast-feeding" }
+        ] },
+      { "t": "SPS: metformin (and insulin) are preferred choices in breastfeeding; there is limited or no published information on other antidiabetic medicines such as sitagliptin.",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding" }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "If pregnancy is planned, stop and switch to insulin.",
+        "src": [{ "s": "emc-564", "q": "If a patient wishes to become pregnant or if a pregnancy occurs, treatment should be discontinued and the patient switched to insulin treatment as soon as possible." }] },
+      { "t": "Fertility: animal data suggest no effect of sitagliptin; human data are lacking.", "detail": true,
+        "src": [{ "s": "emc-564", "q": "Animal data do not suggest an effect of treatment with sitagliptin on male and female fertility. Human data are lacking." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Common: hypoglycaemia, vitamin B12 decrease/deficiency, nausea, flatulence, vomiting. Very common with metformin: nausea, vomiting, diarrhoea, abdominal pain, loss of appetite (mostly at the start).",
+        "src": [
+          { "s": "emc-564", "q": "hypoglycaemia† Common Vitamin B12 decrease/deficiency† Common" },
+          { "s": "emc-564", "q": "nausea Common flatulence Common" },
+          { "s": "emc-564", "q": "vomiting Common" },
+          { "s": "emc-564", "q": "Gastrointestinal symptoms were reported very commonly in clinical studies and post-marketing use of metformin." }
+        ] },
+      { "t": "With a sulphonylurea or insulin, hypoglycaemia is very common.", "detail": true,
+        "src": [{ "s": "emc-564", "q": "These included hypoglycaemia (frequency very common with sulphonylurea or insulin)" }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Lactic acidosis: acidotic breathlessness, abdominal pain, muscle cramps, weakness, low temperature, then coma. Stop and seek immediate medical attention.",
+        "src": [
+          { "s": "emc-564", "q": "Lactic acidosis is characterised by acidotic dyspnoea, abdominal pain, muscle cramps, asthenia and hypothermia followed by coma." },
+          { "s": "emc-564", "q": "In case of suspected symptoms, the patient should stop taking metformin and seek immediate medical attention." }
+        ] },
+      { "t": "Acute pancreatitis, including fatal haemorrhagic or necrotising cases: stop if suspected; do not restart if confirmed.",
+        "src": [
+          { "s": "emc-564", "q": "very rare cases of necrotising or haemorrhagic pancreatitis and/or death have been reported" },
+          { "s": "mhra-dsu-dpp4-pancreatitis", "q": "if pancreatitis is suspected, the DPP-4 inhibitor and other potentially suspect medicines should be discontinued" }
+        ] },
+      { "t": "Serious hypersensitivity (anaphylaxis, angioedema, Stevens-Johnson syndrome), bullous pemphigoid, interstitial lung disease, acute renal failure (frequency not known).", "detail": true,
+        "src": [
+          { "s": "emc-564", "q": "These reactions include anaphylaxis, angioedema, and exfoliative skin conditions including Stevens-Johnson syndrome." },
+          { "s": "emc-564", "q": "bullous pemphigoid* Frequency not known" },
+          { "s": "emc-564", "q": "interstitial lung disease* Frequency not known" },
+          { "s": "emc-564", "q": "acute renal failure* Frequency not known" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "GFR before starting.", "tag": "baseline",
+        "src": [{ "s": "emc-564", "q": "GFR should be assessed before treatment initiation and regularly thereafter" }] },
+      { "t": "GFR at least annually; every 3 to 6 months in the elderly or if renal impairment may progress.", "tag": "ongoing",
+        "src": [{ "s": "emc-564", "q": "In patients at increased risk of further progression of renal impairment and in the elderly, renal function should be assessed more frequently, e.g., every 3-6 months." }] },
+      { "t": "Vitamin B12 if deficiency is suspected (anaemia, neuropathy); periodic checks if at risk.", "tag": "ongoing",
+        "src": [{ "s": "emc-564", "q": "In case of suspicion of vitamin B12 deficiency (such as anaemia or neuropathy), vitamin B12 serum levels should be monitored." }] },
+      { "t": "Stop if acidosis, pancreatitis, hypersensitivity or bullous pemphigoid; withhold temporarily in dehydration, for surgery and for intravascular iodinated contrast.", "tag": "stop",
+        "src": [
+          { "s": "emc-564", "q": "If acidosis of either form occurs, treatment must be stopped immediately" },
+          { "s": "emc-564", "q": "should be temporarily discontinued during conditions with the potential to alter renal function" }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "UK immediate-release tablet: twice daily with meals to reduce stomach and bowel side effects. This schedule is for the immediate-release tablet and does not apply to the clinic's prolonged-release tablet.",
+        "src": [{ "s": "emc-564", "q": "Janumet should be given twice daily with meals to reduce the gastrointestinal adverse reactions associated with metformin." }] },
+      { "t": "Swallowing difficulty (SPS, off-label): film-coated but can be crushed and mixed with water or given with soft food (may taste unpleasant).", "detail": true,
+        "src": [{ "s": "sps-gliptin-swallowing", "q": "Sitagliptin with metformin tablets Film-coated but can be crushed and mixed with water or given with soft food. The crushed tablets may taste unpleasant." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Know the signs of lactic acidosis; stop and seek immediate help if they occur.",
+        "src": [{ "s": "emc-564", "q": "Patients and/or care-givers should be informed of the risk of lactic acidosis." }] },
+      { "t": "If you have severe vomiting, diarrhoea, fever or cannot drink, stop for a while and contact a healthcare professional.",
+        "src": [{ "s": "emc-564", "q": "metformin should be temporarily discontinued and contact with a health care professional is recommended" }] },
+      { "t": "Seek help for persistent, severe abdominal pain (possible pancreatitis).",
+        "src": [{ "s": "emc-564", "q": "Patients should be informed of the characteristic symptom of acute pancreatitis: persistent, severe abdominal pain." }] },
+      { "t": "With a sulphonylurea or insulin, be alert to low blood sugar, including when driving.",
+        "src": [{ "s": "emc-564", "q": "patients should be alerted to the risk of hypoglycaemia when Janumet is used in combination with a sulphonylurea or with insulin" }] },
+      { "t": "Avoid alcohol intoxication.", "detail": true,
+        "src": [{ "s": "emc-564", "q": "Alcohol intoxication is associated with an increased risk of lactic acidosis" }] }
+    ] }
+  },
+  "rules": [
+    { "id": "sitagliptin-metformin:allergy:own", "kind": "allergy", "level": "contraindicated", "med": "sitagliptin-metformin", "allergen": ["sitagliptin", "metformin"],
+      "concern": "Hypersensitivity to sitagliptin or metformin", "consequence": "Hypersensitivity reaction, including anaphylaxis or angioedema.", "action": "Do not use.", "sourceWording": "contraindicated in patients with: - hypersensitivity",
+      "src": [{ "s": "emc-564", "q": "hypersensitivity to the active substances or to any of the excipients listed in section 6.1" }] },
+    { "id": "sitagliptin-metformin:condition:diabetic-ketoacidosis", "kind": "condition", "level": "contraindicated", "med": "sitagliptin-metformin", "condition": "diabetic-ketoacidosis",
+      "concern": "Acute metabolic acidosis / diabetic ketoacidosis / diabetic pre-coma", "consequence": "Risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "is contraindicated in patients with: ... any type of acute metabolic acidosis",
+      "src": [{ "s": "emc-564", "q": "any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis); - diabetic pre-coma" }] },
+    { "id": "sitagliptin-metformin:condition:metabolic-acidosis", "kind": "condition", "level": "contraindicated", "med": "sitagliptin-metformin", "condition": "metabolic-acidosis",
+      "concern": "Any acute metabolic acidosis (e.g. lactic acidosis)", "consequence": "Contraindicated (SmPC 4.3); metformin raises the risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "contraindicated",
+      "src": [{ "s": "emc-564", "q": "any type of acute metabolic acidosis (such as lactic acidosis, diabetic ketoacidosis); - diabetic pre-coma" }] },
+    { "id": "sitagliptin-metformin:condition:type-1-diabetes", "kind": "condition", "level": "avoid", "med": "sitagliptin-metformin", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Not an appropriate treatment.", "action": "Should not be used in type 1 diabetes.", "sourceWording": "should not be used in patients with type 1 diabetes",
+      "src": [{ "s": "emc-564", "q": "Janumet should not be used in patients with type 1 diabetes and must not be used for the treatment of diabetic ketoacidosis." }] },
+    { "id": "sitagliptin-metformin:condition:dehydration", "kind": "condition", "level": "contraindicated", "med": "sitagliptin-metformin", "condition": "dehydration-hypovolaemia",
+      "concern": "Dehydration (acute condition that may alter renal function)", "consequence": "Metformin accumulation and lactic acidosis.", "action": "Do not use; stop temporarily during dehydration.", "sourceWording": "contraindicated ... dehydration",
+      "src": [
+        { "s": "emc-564", "q": "acute conditions with the potential to alter renal function such as: - dehydration, - severe infection, - shock, - intravascular administration of iodinated contrast agents" },
+        { "s": "emc-564", "q": "metformin should be temporarily discontinued and contact with a health care professional is recommended" }
+      ] },
+    { "id": "sitagliptin-metformin:condition:severe-infection-shock", "kind": "condition", "level": "contraindicated", "med": "sitagliptin-metformin", "condition": "severe-infection-shock",
+      "concern": "Severe infection or shock", "consequence": "Acute change in renal function / hypoxia; lactic acidosis risk.", "action": "Do not use.", "sourceWording": "contraindicated ... severe infection, shock",
+      "src": [{ "s": "emc-564", "q": "acute conditions with the potential to alter renal function such as: - dehydration, - severe infection, - shock, - intravascular administration of iodinated contrast agents" }] },
+    { "id": "sitagliptin-metformin:condition:iodinated-contrast", "kind": "condition", "level": "contraindicated", "med": "sitagliptin-metformin", "condition": "iodinated-contrast-planned",
+      "concern": "Intravascular iodinated contrast", "consequence": "Contrast-induced nephropathy, metformin accumulation, lactic acidosis.", "action": "Listed in 4.3: stop before or at the time of imaging; restart no sooner than 48 hours after, once renal function is re-checked and stable.", "sourceWording": "contraindicated ... intravascular administration of iodinated contrast agents",
+      "src": [
+        { "s": "emc-564", "q": "acute conditions with the potential to alter renal function such as: - dehydration, - severe infection, - shock, - intravascular administration of iodinated contrast agents" },
+        { "s": "emc-564", "q": "Janumet should be discontinued prior to or at the time of the imaging procedure and not restarted until at least 48 hours after, provided that renal function has been re-evaluated and found to be stable" }
+      ] },
+    { "id": "sitagliptin-metformin:condition:heart-failure", "kind": "condition", "level": "contraindicated", "med": "sitagliptin-metformin", "condition": "heart-failure",
+      "concern": "Cardiac failure (disease that may cause tissue hypoxia)", "consequence": "Tissue hypoxia; lactic acidosis risk.", "action": "Do not use (the combination SmPC lists acute or chronic cardiac failure in 4.3).", "sourceWording": "contraindicated ... cardiac or respiratory failure",
+      "src": [{ "s": "emc-564", "q": "acute or chronic disease which may cause tissue hypoxia such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock" }] },
+    { "id": "sitagliptin-metformin:condition:respiratory-failure", "kind": "condition", "level": "contraindicated", "med": "sitagliptin-metformin", "condition": "respiratory-failure",
+      "concern": "Respiratory failure (tissue hypoxia)", "consequence": "Lactic acidosis risk.", "action": "Do not use.", "sourceWording": "contraindicated ... cardiac or respiratory failure",
+      "src": [{ "s": "emc-564", "q": "acute or chronic disease which may cause tissue hypoxia such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock" }] },
+    { "id": "sitagliptin-metformin:condition:recent-mi", "kind": "condition", "level": "contraindicated", "med": "sitagliptin-metformin", "condition": "recent-myocardial-infarction",
+      "concern": "Recent myocardial infarction (tissue hypoxia)", "consequence": "Lactic acidosis risk.", "action": "Do not use.", "sourceWording": "contraindicated ... recent myocardial infarction",
+      "src": [{ "s": "emc-564", "q": "acute or chronic disease which may cause tissue hypoxia such as: - cardiac or respiratory failure, - recent myocardial infarction, - shock" }] },
+    { "id": "sitagliptin-metformin:condition:alcohol", "kind": "condition", "level": "contraindicated", "med": "sitagliptin-metformin", "condition": "alcohol-dependence",
+      "concern": "Alcoholism or acute alcohol intoxication", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "contraindicated ... acute alcohol intoxication, alcoholism",
+      "src": [{ "s": "emc-564", "q": "hepatic impairment; - acute alcohol intoxication, alcoholism; - breast-feeding" }] },
+    { "id": "sitagliptin-metformin:condition:acute-alcohol-intoxication", "kind": "condition", "level": "contraindicated", "med": "sitagliptin-metformin", "condition": "acute-alcoholism",
+      "concern": "Acute alcohol intoxication", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use; avoid alcohol.", "sourceWording": "contraindicated",
+      "src": [{ "s": "emc-564", "q": "hepatic impairment; - acute alcohol intoxication, alcoholism; - breast-feeding" }] },
+    { "id": "sitagliptin-metformin:condition:mitochondrial-disease", "kind": "condition", "level": "avoid", "med": "sitagliptin-metformin", "condition": "mitochondrial-disease",
+      "concern": "Mitochondrial disease (MELAS, MIDD)", "consequence": "Lactic acidosis exacerbation and neurological complications.", "action": "Metformin not recommended; withdraw immediately if suggestive signs appear.", "sourceWording": "metformin is not recommended",
+      "src": [{ "s": "emc-564", "q": "metformin is not recommended due to the risk of lactic acidosis exacerbation and neurologic complications which may lead to worsening of the disease" }] },
+    { "id": "sitagliptin-metformin:condition:surgery", "kind": "condition", "level": "avoid", "med": "sitagliptin-metformin", "condition": "surgery-planned",
+      "concern": "Surgery under general, spinal or epidural anaesthesia", "consequence": "Lactic acidosis risk.", "action": "Must be stopped at the time of surgery; restart no earlier than 48 hours after surgery or return to oral nutrition, once renal function is re-checked and stable. Temporary stop only.", "sourceWording": "must be discontinued at the time of surgery",
+      "src": [
+        { "s": "emc-564", "q": "Janumet must be discontinued at the time of surgery under general, spinal or epidural anaesthesia." },
+        { "s": "emc-564", "q": "Therapy may be restarted no earlier than 48 hours following surgery or resumption of oral nutrition and provided that renal function has been re-evaluated and found to be stable." }
+      ] },
+    { "id": "sitagliptin-metformin:condition:pancreatitis-history", "kind": "condition", "level": "caution", "med": "sitagliptin-metformin", "condition": "pancreatitis-history",
+      "concern": "History of pancreatitis", "consequence": "DPP-4 inhibitors are associated with acute pancreatitis.", "action": "Use with caution; stop if pancreatitis is suspected and do not restart if confirmed.", "sourceWording": "Caution should be exercised",
+      "src": [{ "s": "emc-564", "q": "Caution should be exercised in patients with a history of pancreatitis." }] },
+    { "id": "sitagliptin-metformin:condition:pancreatitis-current", "kind": "condition", "level": "avoid", "med": "sitagliptin-metformin", "condition": "pancreatitis",
+      "concern": "Acute pancreatitis, current or suspected (for past or chronic pancreatitis see the history rule: use with caution)", "consequence": "DPP-4 inhibitors are associated with acute pancreatitis.", "action": "Stop if pancreatitis is suspected; do not restart if acute pancreatitis is confirmed.", "sourceWording": "should be discontinued … should not be restarted",
+      "src": [{ "s": "emc-564", "q": "If pancreatitis is suspected, Janumet and other potentially suspect medicinal products should be discontinued; if acute pancreatitis is confirmed, Janumet should not be restarted." }] },
+    { "id": "sitagliptin-metformin:renal:lt30", "kind": "renal", "level": "contraindicated", "med": "sitagliptin-metformin", "renal": { "measure": "GFR", "max": 30 },
+      "concern": "GFR < 30 mL/min", "consequence": "Metformin accumulation; lactic acidosis.", "action": "Do not use.", "sourceWording": "is contraindicated in patients with GFR < 30 mL/min",
+      "src": [
+        { "s": "emc-564", "q": "severe renal failure (GFR< 30 mL/min)" },
+        { "s": "emc-564", "q": "Janumet is contraindicated in patients with GFR < 30 mL/min" }
+      ] },
+    { "id": "sitagliptin-metformin:renal:30-44", "kind": "renal", "level": "dose", "med": "sitagliptin-metformin", "renal": { "measure": "GFR", "min": 30, "max": 45 },
+      "concern": "GFR 30-44 mL/min", "consequence": "Reduced clearance of both components.", "action": "Metformin maximum 1000 mg/day (start at most half the maximum); sitagliptin maximum 50 mg/day. Use the individual medicines if no suitable combination strength; review lactic acidosis risk factors before starting.", "sourceWording": "Maximum daily dose",
+      "src": [
+        { "s": "emc-564", "q": "30-44 Maximum daily dose is 1 000 mg. The starting dose is at most half of the maximum dose. Maximum daily dose is 50 mg." },
+        { "s": "emc-564", "q": "If no adequate strength of Janumet is available, individual monocomponents should be used instead of the fixed-dose combination." }
+      ] },
+    { "id": "sitagliptin-metformin:renal:45-59", "kind": "renal", "level": "dose", "med": "sitagliptin-metformin", "renal": { "measure": "GFR", "min": 45, "max": 60 },
+      "concern": "GFR 45-59 mL/min", "consequence": "Reduced metformin clearance.", "action": "Metformin maximum 2000 mg/day (start at most half the maximum); sitagliptin maximum 100 mg/day. Review lactic acidosis risk factors before starting.", "sourceWording": "Maximum daily dose is 2 000 mg",
+      "src": [
+        { "s": "emc-564", "q": "45-59 Maximum daily dose is 2 000 mg. The starting dose is at most half of the maximum dose. Maximum daily dose is 100 mg." },
+        { "s": "emc-564", "q": "Factors that may increase the risk of lactic acidosis (see section 4.4) should be reviewed before considering initiation of metformin in patients with GFR < 60 mL/min." }
+      ] },
+    { "id": "sitagliptin-metformin:renal:60-89", "kind": "renal", "level": "info", "med": "sitagliptin-metformin", "renal": { "measure": "GFR", "min": 60, "max": 90 },
+      "concern": "GFR 60-89 mL/min", "consequence": "Declining renal function.", "action": "Metformin maximum 3000 mg/day, dose reduction may be considered; sitagliptin maximum 100 mg/day. Check GFR at least annually.", "sourceWording": "Dose reduction may be considered",
+      "src": [{ "s": "emc-564", "q": "60-89 Maximum daily dose is 3 000 mg. Dose reduction may be considered in relation to declining renal function. Maximum daily dose is 100 mg." }] },
+    { "id": "sitagliptin-metformin:hepatic:any", "kind": "hepatic", "level": "contraindicated", "med": "sitagliptin-metformin", "hepatic": ["any"],
+      "concern": "Hepatic impairment", "consequence": "Increased risk of lactic acidosis.", "action": "Do not use.", "sourceWording": "must not be used in patients with hepatic impairment",
+      "src": [
+        { "s": "emc-564", "q": "hepatic impairment; - acute alcohol intoxication, alcoholism; - breast-feeding" },
+        { "s": "emc-564", "q": "Janumet must not be used in patients with hepatic impairment" }
+      ] },
+    { "id": "sitagliptin-metformin:age:10-17", "kind": "age", "level": "avoid", "med": "sitagliptin-metformin", "age": { "minYears": 10, "maxYears": 18 },
+      "concern": "Child or adolescent aged 10 to 17 years", "consequence": "Insufficient efficacy.", "action": "Should not be used.", "sourceWording": "should not be used in children and adolescents 10 to 17 years of age",
+      "src": [{ "s": "emc-564", "q": "Janumet should not be used in children and adolescents 10 to 17 years of age because of insufficient efficacy." }] },
+    { "id": "sitagliptin-metformin:age:lt10", "kind": "age", "level": "info", "med": "sitagliptin-metformin", "age": { "minYears": 0, "maxYears": 10 },
+      "concern": "Child under 10 years", "consequence": "Not studied.", "action": "No data under 10 years; not licensed in children.", "sourceWording": "has not been studied in paediatric patients under 10 years",
+      "src": [{ "s": "emc-564", "q": "Janumet has not been studied in paediatric patients under 10 years of age." }] },
+    { "id": "sitagliptin-metformin:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "sitagliptin-metformin",
+      "concern": "Pregnancy", "consequence": "No adequate data for sitagliptin in pregnancy.", "action": "Should not be used; if pregnancy is planned or occurs, stop and switch to insulin as soon as possible.", "sourceWording": "should not be used during pregnancy",
+      "src": [
+        { "s": "emc-564", "q": "Janumet should not be used during pregnancy." },
+        { "s": "emc-564", "q": "If a patient wishes to become pregnant or if a pregnancy occurs, treatment should be discontinued and the patient switched to insulin treatment as soon as possible." }
+      ] },
+    { "id": "sitagliptin-metformin:breastfeeding", "kind": "breastfeeding", "level": "contraindicated", "med": "sitagliptin-metformin",
+      "concern": "Breastfeeding", "consequence": "Metformin passes into milk; no data for sitagliptin.", "action": "Must not be used (SmPC 4.3). SPS: metformin alone or insulin are preferred choices.", "sourceWording": "must therefore not be used in women who are breast-feeding",
+      "src": [
+        { "s": "emc-564", "q": "Janumet must therefore not be used in women who are breast-feeding" },
+        { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." }
+      ] },
+    { "id": "sitagliptin-metformin:interaction:sulfonylurea", "kind": "interaction", "level": "dose", "med": "sitagliptin-metformin", "other": "group:sulfonylurea", "effect": "hypoglycaemia",
+      "concern": "Sitagliptin/metformin + sulphonylurea", "consequence": "Hypoglycaemia.", "action": "A reduction in the sulphonylurea dose may be necessary.", "sourceWording": "a reduction in the dose of the sulphonylurea or insulin may be necessary",
+      "src": [{ "s": "emc-564", "q": "Patients receiving Janumet in combination with a sulphonylurea or with insulin may be at risk for hypoglycaemia. Therefore, a reduction in the dose of the sulphonylurea or insulin may be necessary." }] },
+    { "id": "sitagliptin-metformin:interaction:insulin", "kind": "interaction", "level": "dose", "med": "sitagliptin-metformin", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Sitagliptin/metformin + insulin", "consequence": "Hypoglycaemia.", "action": "A reduction in the insulin dose may be necessary.", "sourceWording": "a reduction in the dose of the sulphonylurea or insulin may be necessary",
+      "src": [{ "s": "emc-564", "q": "Patients receiving Janumet in combination with a sulphonylurea or with insulin may be at risk for hypoglycaemia. Therefore, a reduction in the dose of the sulphonylurea or insulin may be necessary." }] },
+    { "id": "sitagliptin-metformin:interaction:nsaid", "kind": "interaction", "level": "monitor", "med": "sitagliptin-metformin", "other": "group:nsaid", "effect": "nephrotoxicity",
+      "concern": "Sitagliptin/metformin + NSAID (including COX-2 inhibitors)", "consequence": "May impair renal function and increase lactic acidosis risk.", "action": "Close monitoring of renal function is necessary; start the NSAID with caution.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-564", "q": "e.g., NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors, ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+        { "s": "emc-564", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "sitagliptin-metformin:interaction:ace-inhibitor", "kind": "interaction", "level": "monitor", "med": "sitagliptin-metformin", "other": "group:ace-inhibitor", "effect": "nephrotoxicity",
+      "concern": "Sitagliptin/metformin + ACE inhibitor", "consequence": "May impair renal function (lactic acidosis risk); ACE inhibitors may also lower blood glucose.", "action": "Close monitoring of renal function is necessary; adjust the antidiabetic dose if necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-564", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." },
+        { "s": "emc-564", "q": "ACE-inhibitors may decrease the blood glucose levels. If necessary, the dose of the anti-hyperglycaemic medicinal product should be adjusted during therapy with the other medicinal product and on its discontinuation." }
+      ] },
+    { "id": "sitagliptin-metformin:interaction:arb", "kind": "interaction", "level": "monitor", "med": "sitagliptin-metformin", "other": "group:arb", "effect": "nephrotoxicity",
+      "concern": "Sitagliptin/metformin + angiotensin II receptor antagonist", "consequence": "May impair renal function and increase lactic acidosis risk.", "action": "Close monitoring of renal function is necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-564", "q": "e.g., NSAIDs, including selective cyclo-oxygenase (COX) II inhibitors, ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics" },
+        { "s": "emc-564", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." }
+      ] },
+    { "id": "sitagliptin-metformin:interaction:diuretic", "kind": "interaction", "level": "monitor", "med": "sitagliptin-metformin", "other": "group:diuretic", "effect": "nephrotoxicity",
+      "concern": "Sitagliptin/metformin + diuretic (especially loop diuretics)", "consequence": "May impair renal function (lactic acidosis risk); diuretics also raise blood glucose.", "action": "Close monitoring of renal function; more frequent blood glucose monitoring, especially at the start; adjust the antidiabetic dose if necessary.", "sourceWording": "close monitoring of renal function is necessary",
+      "src": [
+        { "s": "emc-564", "q": "When starting or using such products in combination with metformin, close monitoring of renal function is necessary." },
+        { "s": "emc-564", "q": "Glucocorticoids (given by systemic and local routes) beta-2-agonists, and diuretics have intrinsic hyperglycaemic activity." }
+      ] },
+    { "id": "sitagliptin-metformin:interaction:antihypertensive", "kind": "interaction", "level": "caution", "med": "sitagliptin-metformin", "other": "group:antihypertensive",
+      "concern": "Sitagliptin/metformin + antihypertensive", "consequence": "Medicines that can acutely impair renal function raise lactic acidosis risk.", "action": "Initiate with caution.", "sourceWording": "should be initiated with caution",
+      "src": [{ "s": "emc-564", "q": "Medicinal products that can acutely impair renal function (such as antihypertensives, diuretics and NSAIDs) should be initiated with caution in metformin-treated patients." }] },
+    { "id": "sitagliptin-metformin:interaction:corticosteroid", "kind": "interaction", "level": "monitor", "med": "sitagliptin-metformin", "other": "group:corticosteroid",
+      "concern": "Sitagliptin/metformin + glucocorticoid (systemic or local)", "consequence": "Intrinsic hyperglycaemic activity.", "action": "Inform the patient; more frequent blood glucose monitoring, especially at the start; adjust the antidiabetic dose if necessary.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-564", "q": "Glucocorticoids (given by systemic and local routes) beta-2-agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-564", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+      ] },
+    { "id": "sitagliptin-metformin:interaction:inhaled-corticosteroid", "kind": "interaction", "level": "monitor", "med": "sitagliptin-metformin", "other": "group:inhaled-corticosteroid",
+      "concern": "Sitagliptin/metformin + inhaled corticosteroid", "consequence": "Glucocorticoids given by local routes also have intrinsic hyperglycaemic activity (SmPC).", "action": "Inform the patient; monitor blood glucose more often, especially at the start; adjust the dose during and after if needed.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-564", "q": "Glucocorticoids (given by systemic and local routes) beta-2-agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-564", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+      ] },
+    { "id": "sitagliptin-metformin:interaction:beta2-agonist", "kind": "interaction", "level": "monitor", "med": "sitagliptin-metformin", "other": "group:beta2-agonist",
+      "concern": "Sitagliptin/metformin + beta-2 agonist", "consequence": "Intrinsic hyperglycaemic activity.", "action": "Inform the patient; more frequent blood glucose monitoring, especially at the start; adjust the antidiabetic dose if necessary.", "sourceWording": "more frequent blood glucose monitoring performed",
+      "src": [
+        { "s": "emc-564", "q": "Glucocorticoids (given by systemic and local routes) beta-2-agonists, and diuretics have intrinsic hyperglycaemic activity." },
+        { "s": "emc-564", "q": "The patient should be informed and more frequent blood glucose monitoring performed, especially at the beginning of treatment with such medicinal products." }
+      ] },
+    { "id": "sitagliptin-metformin:interaction:strong-cyp3a4-inhibitor", "kind": "interaction", "level": "info", "med": "sitagliptin-metformin", "other": "group:strong-cyp3a4-inhibitor",
+      "concern": "Sitagliptin/metformin + potent CYP3A4 inhibitor (e.g. clarithromycin)", "consequence": "Could alter sitagliptin pharmacokinetics in severe renal impairment or end-stage renal disease (not assessed clinically).", "action": "No action stated.", "sourceWording": "could alter the pharmacokinetics of sitagliptin",
+      "src": [{ "s": "emc-564", "q": "it is possible that potent CYP3A4 inhibitors (i.e., ketoconazole, itraconazole, ritonavir, clarithromycin) could alter the pharmacokinetics of sitagliptin in patients with severe renal impairment or ESRD" }] }
+  ]
+}

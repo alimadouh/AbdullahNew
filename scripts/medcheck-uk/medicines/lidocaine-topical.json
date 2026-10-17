@@ -1,0 +1,535 @@
+{
+  "id": "lidocaine-topical",
+  "name": "Lidocaine (topical gel)",
+  "ingredients": ["lidocaine"],
+  "className": "Local anaesthetic, amide type (mucosal gel)",
+  "groups": ["amide-local-anaesthetic"],
+  "searchTerms": ["lidocaine gel", "lidocaine 2% gel", "lidocaine hydrochloride gel", "lignocaine gel", "lidocaine jelly", "urethral lidocaine gel"],
+  "formulations": [
+    {
+      "id": "lidocaine-topical-gel-2",
+      "label": "Gel 2% (mucosal / urethral)",
+      "route": "topical (urethral, rectal, mucosal)",
+      "strengths": "Lidocaine hydrochloride 20 mg/ml (2%)",
+      "release": "n/a",
+      "note": "The UK SmPC used is for a sterile single-ingredient lidocaine hydrochloride 2% gel in pre-filled syringes (urethral and rectal use). No other single-ingredient lidocaine 2% gel SmPC was found in the UK.",
+      "src": [
+        { "s": "mhra-pl03377-0003-spc", "q": "1 ml gel contains 20.1 mg lidocaine hydrochloride" },
+        { "s": "mhra-pl03377-0003-spc", "q": "Clear, nearly colourless, sterile gel." }
+      ],
+      "sourceIds": ["mhra-pl03377-0003-spc"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Surface anaesthesia and lubrication of the male and female urethra (cystoscopy, catheterisation, sounding and other endourethral procedures), for proctoscopy and rectoscopy, and for symptomatic treatment of pain with cystitis. Licensed in adults, adolescents and children from 2 years.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "The male and female urethra during cystoscopy, catheterisation, exploration by sound and other endourethral operations; Proctoscopy and rectoscopy; Symptomatic treatment of pain in connection with cystitis." },
+          { "s": "mhra-pl03377-0003-spc", "q": "is indicated in adults, adolescents and children from 2 years of age." }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "The dose must be individually adjusted by an experienced physician; use the lowest dose that gives effective anaesthesia.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "The dose must be individually adjusted by an experienced physician." },
+          { "s": "mhra-pl03377-0003-spc", "q": "The lowest dosage that results in effective anaesthesia should be used to avoid high plasma levels and serious undesirable effects." }
+        ] },
+      { "t": "When used with other lidocaine-containing products, count the total lidocaine dose from all of them.",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "the total dose contributed by all formulations must be taken into consideration" }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Usually 20 ml gel (about 400 mg lidocaine hydrochloride): instil about 10 ml slowly, apply a penile clamp for at least 5 minutes, then instil the rest. For sounding or cystoscopy 10-20 ml; may be repeated once with 10-20 ml. Do not exceed about 800 mg lidocaine hydrochloride. For catheterisation of the anterior urethra 5-10 ml is usually enough.",
+        "tag": "Urethral anaesthesia, adult men",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "For adequate analgesia in males, 20 ml gel (approximately 400 mg lidocaine hydrochloride) is usually required." },
+          { "s": "mhra-pl03377-0003-spc", "q": "A penile clamp is then applied for at least 5 minutes at the corona, after which the rest of the gel is instilled." },
+          { "s": "mhra-pl03377-0003-spc", "q": "The maximum dose of approximately 800 mg lidocaine hydrochloride must not be exceeded." },
+          { "s": "mhra-pl03377-0003-spc", "q": "small volumes (5-10 ml, i.e. approximately 100-200mg lidocaine hydrochloride) are usually adequate for lubrication" }
+        ] },
+      { "t": "Usually 5-10 ml gel (about 100-200 mg lidocaine hydrochloride) instilled in small portions; allow at least 5 minutes before the procedure.",
+        "tag": "Urethral anaesthesia, adult women",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "Usually, 5-10 ml of gel (approximately 100-200 mg lidocaine hydrochloride) are instilled in small portions to fill the whole urethra." },
+          { "s": "mhra-pl03377-0003-spc", "q": "at least 5 minutes should be allowed prior to performing urological procedures" }
+        ] },
+      { "t": "Usually 10-20 ml gel once a day for one week at first; then frequency and duration are set by the physician. Maximum 20 ml (about 400 mg lidocaine hydrochloride) once a day.",
+        "tag": "Pain with cystitis, adults",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "At the beginning of the treatment, the gel is usually administered once a day for one week." },
+          { "s": "mhra-pl03377-0003-spc", "q": "The maximum dose is: 20 ml (approximately 400 mg lidocaine hydrochloride) once a day." }
+        ] },
+      { "t": "Instil 10-20 ml gel and lubricate the endoscope. If combined with other lidocaine products, total lidocaine hydrochloride should not exceed 378 mg; absorption from the rectum is particularly high.",
+        "tag": "Proctoscopy and rectoscopy, adults",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "Instillation of 10 - 20 ml (approximately 200 - 400mg lidocaine hydrochloride) gel is recommended for adequate analgesia" },
+          { "s": "mhra-pl03377-0003-spc", "q": "When combined with other lidocaine products, the total dose of lidocaine hydrochloride should not exceed 378 mg." },
+          { "s": "mhra-pl03377-0003-spc", "q": "The degree of absorption is particularly high in the rectum." }
+        ] },
+      { "t": "Maximum recommended daily dose in adults: about 800 mg lidocaine hydrochloride (40 ml gel in the urethra and bladder).",
+        "tag": "Maximum dose, adults",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "The maximum recommended daily dose for adults is approximately 800 mg lidocaine hydrochloride." }] },
+      { "t": "Elderly, debilitated, acutely ill or septic patients: give reduced doses; do not exceed 2.9 mg/kg lidocaine hydrochloride.",
+        "tag": "Special populations",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "Debilitated, elderly, acutely ill patients and patients with sepsis should be given reduced doses" },
+          { "s": "mhra-pl03377-0003-spc", "q": "The maximum dose of 2.9 mg/kg lidocaine hydrochloride should not be exceeded in these special populations." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Contraindicated in children under 2 years.",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Glydo 20 mg/ml gel is contraindicated in children < 2 years of age" }] },
+      { "t": "Children 2-12 years and adolescents: effect not well demonstrated, so the physician must assess use; no specific dose. Absorption may be higher in children, so use caution. Children 2-12 years: do not exceed 2.9 mg/kg lidocaine hydrochloride.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "the effect of lidocaine hydrochloride gels is not well demonstrated and therefore, its use should be assessed by the physician" },
+          { "s": "mhra-pl03377-0003-spc", "q": "The systemic absorption of lidocaine can be increased in children and caution is accordingly required." },
+          { "s": "mhra-pl03377-0003-spc", "q": "In general, the maximum dose of 2.9 mg/kg lidocaine hydrochloride should not be exceeded in children aged 2 to 12 years" }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to lidocaine or any excipient; hypersensitivity to amide-type local anaesthetics; children under 2 years.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1. Hypersensitivity to local anaesthetics of the amide type. Children under 2 years." }
+        ] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Too much gel or short dose intervals can cause high plasma levels and serious effects (CNS and cardiovascular toxicity). Absorption is high from wounds and mucosa: use with caution with damaged mucosa or sepsis at the site, an inflamed or ulcerated urethra, or if gel enters the bladder; risk is higher in children and the elderly.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "Excessive dosage, or short intervals between doses, can result in high plasma levels and serious undesirable effects." },
+          { "s": "mhra-pl03377-0003-spc", "q": "should be used with caution in patients with traumatised mucosa and/or sepsis in the region of the proposed application" },
+          { "s": "mhra-pl03377-0003-spc", "q": "consequently to overdose with central nervous and cardiovascular undesirable effects (see also section 4.9), especially in children and elderly patients" }
+        ] },
+      { "t": "Take special care (risk of high blood levels) in elderly or frail patients, sepsis, epilepsy, bradycardia or impaired cardiovascular function, heart failure, AV block, shock, renal or hepatic impairment, respiratory dysfunction, and myasthenia gravis.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "some patients require special attention to prevent potentially dangerous side effects" },
+          { "s": "mhra-pl03377-0003-spc", "q": "Patients with bradycardia or impaired cardiovascular function" },
+          { "s": "mhra-pl03377-0003-spc", "q": "Patients with heart failure or with AV block. - Patients with shock. - Patients with impaired renal function and hepatic disease" },
+          { "s": "mhra-pl03377-0003-spc", "q": "Patients suffering from myasthenia gravis; these are particularly sensitive to local anaesthetics." }
+        ] },
+      { "t": "Methaemoglobinaemia has been reported with local anaesthetics. G6PD deficiency and hereditary or idiopathic methaemoglobinaemia increase susceptibility; in G6PD deficiency methylene blue is ineffective and cannot be given.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "Cases of methaemoglobinaemia have been reported in association with local anaesthetic use." },
+          { "s": "mhra-pl03377-0003-spc", "q": "Patients with defective glucose-6-phosphate dehydrogenase, hereditary or idiopathic methaemoglobinemia are more susceptible" },
+          { "s": "mhra-pl03377-0003-spc", "q": "methylene blue therapy cannot be given" }
+        ] },
+      { "t": "Acute porphyria: possibly porphyrinogenic; use only on strong or urgent indications with close monitoring.",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Lidocaine is possibly porphyrinogenic and should only be used in patients with acute porphyria on strong or urgent indications, while being closely monitored." }] },
+      { "t": "Patients on class III anti-arrhythmics (for example amiodarone): close surveillance and consider ECG monitoring (additive cardiac effects).",
+        "detail": true,
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "should be under close surveillance and ECG monitoring considered, since cardiac effects may be additive" }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Other lidocaine products or other amide-type local anaesthetics (or related agents): should not be used together, as toxic effects are additive. Class I anti-arrhythmics (such as mexiletine): use with caution.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "should not be used in patients receiving lidocaine or other local anaesthetics or agents structurally related to amide-type local anaesthetics since the toxic effects are additive" },
+          { "s": "mhra-pl03377-0003-spc", "q": "Class I antiarrhythmic drugs (such as mexiletine) should be used with caution" }
+        ] },
+      { "t": "Beta-blockers (for example propranolol, metoprolol) and calcium channel antagonists (for example diltiazem, verapamil): use lidocaine with caution (possible additive cardiac effects). Beta-blockers also reduce lidocaine clearance; allow for accumulation.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "lidocaine must be used with caution in patients receiving other anti-arrhythmics such as beta-blockers (e.g. propranolol, metoprolol) or calcium channel antagonists (e.g. diltiazem, verapamil)" },
+          { "s": "mhra-pl03377-0003-spc", "q": "Due account should therefore be taken of the possibility of accumulation of lidocaine." }
+        ] },
+      { "t": "Methaemoglobin-inducing medicines (for example sulphonamides, nitrofurantoin, phenytoin, phenobarbital) may make methaemoglobinaemia worse.",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Methaemoglobinaemia may be accentuated in patients already taking methaemoglobin-inducing medicinal products (e.g. sulphonamides, nitrofurantoin, phenytoin, phenobarbital)." }] },
+      { "t": "CYP3A4 and/or CYP1A2 inhibitors (for example erythromycin, fluvoxamine, amiodarone, cimetidine, ritonavir) can raise lidocaine levels, but at recommended gel doses the systemic exposure is low and these interactions are not expected to be clinically significant.",
+        "detail": true,
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "Concurrent administration of lidocaine with inhibitors of CYP 3A4 and/or CYP 1A2 may lead to accelerated plasma concentrations of lidocaine." },
+          { "s": "mhra-pl03377-0003-spc", "q": "the systemic exposure is low and therefore the above- mentioned metabolic interactions are not expected to be of clinical significance" }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Renal impairment: lidocaine doses must be reduced (to prevent metabolite accumulation). No threshold or measure is given.",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "lidocaine doses must be reduced in patients with renal or hepatic impairment to prevent potential metabolite accumulation" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Hepatic impairment: lidocaine doses must be reduced; half-life may be prolonged two-fold or more with liver dysfunction. No severity grading is given.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "lidocaine doses must be reduced in patients with renal or hepatic impairment" },
+          { "s": "mhra-pl03377-0003-spc", "q": "The half-life may be prolonged two-fold or more in patients with liver dysfunction." }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "Limited human data; lidocaine crosses the placenta. Animal studies at topical-relevant exposure show no harm. May be considered in pregnancy if clinically needed.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "There are limited amount of data from the use of lidocaine in pregnant women. Lidocaine crosses the placenta." },
+          { "s": "mhra-pl03377-0003-spc", "q": "may be considered during pregnancy, if clinically needed" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Lidocaine passes into breast milk, but at therapeutic doses of the gel no effects on the breastfed infant are anticipated.",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Lidocaine is excreted in human milk, but at therapeutic doses of Glydo 20 mg/ml gel no effects on breastfed newborns/infants are anticipated." }] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "No human fertility data; no impairment of fertility in rat studies.",
+        "detail": true,
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "There are no data on the effect of lidocaine on fertility in human." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "No common or very common effects listed. Rare: hypersensitivity, anaphylactic reaction, contact dermatitis. Very rare: application site irritation. Undesirable effects are unlikely if used as recommended.",
+        "tag": "Rare / very rare",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "Undesirable effects are unlikely to occur after the use of Glydo 20 mg/ml gel, as long as the medicinal product is used as recommended" },
+          { "s": "mhra-pl03377-0003-spc", "q": "Hypersensitivity, Immune system anaphylactic reaction, contact disorders dermatitis General administration site irritation" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Systemic toxicity from high blood levels: early signs are yawning, restlessness, dizziness, nausea, vomiting, slurred speech, ataxia, hearing and vision disturbance; then twitching, convulsions, loss of consciousness, respiratory depression, coma, hypotension, heart block and cardiac arrest. Stop administration at once; treat seizures and support the airway; start CPR if circulation stops.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "yawning, restlessness, dizziness, nausea, vomiting, dysarthria, ataxia, hearing and vision disorders" },
+          { "s": "mhra-pl03377-0003-spc", "q": "hypotension and cardiovascular collapse can be expected, followed by complete heart block and cardiac arrest" },
+          { "s": "mhra-pl03377-0003-spc", "q": "If signs of acute toxicity occur during administration of the local anaesthetic, administration of the anaesthetic should be stopped immediately." }
+        ] },
+      { "t": "Anaphylactic reaction (rare).",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Rare Hypersensitivity, Immune system anaphylactic reaction" }] },
+      { "t": "Methaemoglobinaemia (reported with local anaesthetics).",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Cases of methaemoglobinaemia have been reported in association with local anaesthetic use." }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Resuscitation equipment, oxygen and resuscitative drugs may be needed to manage serious reactions.",
+        "tag": "baseline",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "the management of serious adverse reactions may require the use of resuscitative equipment, oxygen and other resuscitative drugs" }] },
+      { "t": "Acute porphyria: monitor closely. Class III anti-arrhythmics: close surveillance, consider ECG monitoring.",
+        "tag": "ongoing",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "while being closely monitored" },
+          { "s": "mhra-pl03377-0003-spc", "q": "should be under close surveillance and ECG monitoring considered" }
+        ] },
+      { "t": "Stop immediately if signs of acute toxicity appear.",
+        "tag": "stop",
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "administration of the anaesthetic should be stopped immediately" }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Urethral use: clean and disinfect the urethral opening, instil the gel slowly and evenly, and wait for full effect (5-15 minutes). Anaesthesia lasts about 20-30 minutes.",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "Clean and disinfect the external orifice of the urethra." },
+          { "s": "mhra-pl03377-0003-spc", "q": "The gel should be instilled slowly and evenly into the urethra." },
+          { "s": "mhra-pl03377-0003-spc", "q": "Duration of anaesthesia is approximately 20 to 30 minutes." }
+        ] },
+      { "t": "Single use: discard any gel not used in one application.",
+        "detail": true,
+        "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Any gel not used in a single application must be discarded." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Keep strictly to the dose and instructions given; report any symptoms of toxicity (for example dizziness, nausea, vomiting, slurred speech, unsteadiness, hearing or vision disturbance).",
+        "src": [
+          { "s": "mhra-pl03377-0003-spc", "q": "Patients should be instructed to strictly adhere to the recommended dosage and administration guidelines" },
+          { "s": "mhra-pl03377-0003-spc", "q": "dizziness, nausea, vomiting, dysarthria, ataxia, hearing and vision disorders" }
+        ] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "lidocaine-topical:allergy:lidocaine",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "lidocaine-topical",
+      "allergen": ["lidocaine"],
+      "concern": "Hypersensitivity to lidocaine",
+      "consequence": "Hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity to the active substance",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }]
+    },
+    {
+      "id": "lidocaine-topical:allergy:amide-local-anaesthetic",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "lidocaine-topical",
+      "allergen": ["group:amide-local-anaesthetic"],
+      "concern": "Hypersensitivity to amide-type local anaesthetics",
+      "consequence": "Cross-hypersensitivity within the amide local anaesthetic class.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... Hypersensitivity to local anaesthetics of the amide type",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Hypersensitivity to local anaesthetics of the amide type." }]
+    },
+    {
+      "id": "lidocaine-topical:age:lt2",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "lidocaine-topical",
+      "age": { "minYears": 0, "maxYears": 2 },
+      "concern": "Child under 2 years",
+      "consequence": "Listed in section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications ... Children under 2 years",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Children under 2 years." }]
+    },
+    {
+      "id": "lidocaine-topical:age:2-12-max",
+      "kind": "age",
+      "level": "dose",
+      "med": "lidocaine-topical",
+      "age": { "minYears": 2, "maxYears": 12 },
+      "concern": "Child 2 to 12 years: weight-based maximum",
+      "consequence": "Systemic absorption can be higher in children; effect is not well demonstrated.",
+      "action": "Physician to assess use; do not exceed 2.9 mg/kg lidocaine hydrochloride; use caution.",
+      "sourceWording": "the maximum dose of 2.9 mg/kg lidocaine hydrochloride should not be exceeded in children aged 2 to 12 years",
+      "src": [
+        { "s": "mhra-pl03377-0003-spc", "q": "In general, the maximum dose of 2.9 mg/kg lidocaine hydrochloride should not be exceeded in children aged 2 to 12 years" },
+        { "s": "mhra-pl03377-0003-spc", "q": "The systemic absorption of lidocaine can be increased in children and caution is accordingly required." }
+      ]
+    },
+    {
+      "id": "lidocaine-topical:renal:impairment",
+      "kind": "condition",
+      "level": "dose",
+      "med": "lidocaine-topical",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment (no threshold given)",
+      "consequence": "Lidocaine metabolites are excreted by the kidney and may accumulate.",
+      "action": "Reduce the lidocaine dose.",
+      "sourceWording": "lidocaine doses must be reduced in patients with renal or hepatic impairment",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "lidocaine doses must be reduced in patients with renal or hepatic impairment to prevent potential metabolite accumulation" }]
+    },
+    {
+      "id": "lidocaine-topical:hepatic:any",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "lidocaine-topical",
+      "hepatic": ["any"],
+      "concern": "Hepatic impairment (no severity grading given)",
+      "consequence": "Extensive liver metabolism; half-life may be prolonged two-fold or more.",
+      "action": "Reduce the lidocaine dose.",
+      "sourceWording": "lidocaine doses must be reduced in patients with renal or hepatic impairment",
+      "src": [
+        { "s": "mhra-pl03377-0003-spc", "q": "lidocaine doses must be reduced in patients with renal or hepatic impairment" },
+        { "s": "mhra-pl03377-0003-spc", "q": "The half-life may be prolonged two-fold or more in patients with liver dysfunction." }
+      ]
+    },
+    {
+      "id": "lidocaine-topical:condition:traumatised-mucosa-sepsis-site",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "condition": "traumatised-mucosa-sepsis-site",
+      "concern": "Damaged mucosa or sepsis at the application site",
+      "consequence": "Greater systemic absorption, with risk of toxicity such as convulsions.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution in patients with traumatised mucosa and/or sepsis",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "should be used with caution in patients with traumatised mucosa and/or sepsis in the region of the proposed application" }]
+    },
+    {
+      "id": "lidocaine-topical:condition:severe-infection-shock",
+      "kind": "condition",
+      "level": "dose",
+      "med": "lidocaine-topical",
+      "condition": "severe-infection-shock",
+      "concern": "Sepsis, shock or acute illness",
+      "consequence": "More sensitive to systemic effects from raised lidocaine blood levels.",
+      "action": "Give reduced doses; do not exceed 2.9 mg/kg lidocaine hydrochloride.",
+      "sourceWording": "should be given reduced doses ... maximum dose of 2.9 mg/kg ... should not be exceeded",
+      "src": [
+        { "s": "mhra-pl03377-0003-spc", "q": "Debilitated, elderly, acutely ill patients and patients with sepsis should be given reduced doses" },
+        { "s": "mhra-pl03377-0003-spc", "q": "The maximum dose of 2.9 mg/kg lidocaine hydrochloride should not be exceeded in these special populations." },
+        { "s": "mhra-pl03377-0003-spc", "q": "Patients with shock." }
+      ]
+    },
+    {
+      "id": "lidocaine-topical:condition:epilepsy",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "condition": "epilepsy",
+      "concern": "Epilepsy",
+      "consequence": "High lidocaine blood levels can cause convulsions.",
+      "action": "Needs special attention if the dose or route may give high blood levels.",
+      "sourceWording": "some patients require special attention to prevent potentially dangerous side effects: ... Patients with epilepsy",
+      "src": [
+        { "s": "mhra-pl03377-0003-spc", "q": "some patients require special attention to prevent potentially dangerous side effects" },
+        { "s": "mhra-pl03377-0003-spc", "q": "Patients with epilepsy." }
+      ]
+    },
+    {
+      "id": "lidocaine-topical:condition:bradycardia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "condition": "bradycardia",
+      "concern": "Bradycardia or impaired cardiovascular function",
+      "consequence": "Less able to compensate for AV conduction prolongation caused by amide local anaesthetics.",
+      "action": "Needs special attention if high blood levels are likely.",
+      "sourceWording": "some patients require special attention ... Patients with bradycardia or impaired cardiovascular function",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Patients with bradycardia or impaired cardiovascular function since they may be less able to compensate for functional changes associated with the prolongation of AV conduction" }]
+    },
+    {
+      "id": "lidocaine-topical:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "condition": "heart-failure",
+      "concern": "Heart failure",
+      "consequence": "Risk of dangerous effects from high lidocaine levels; half-life may be prolonged in severe heart failure.",
+      "action": "Needs special attention if high blood levels are likely.",
+      "sourceWording": "some patients require special attention ... Patients with heart failure",
+      "src": [
+        { "s": "mhra-pl03377-0003-spc", "q": "Patients with heart failure or with AV block." },
+        { "s": "mhra-pl03377-0003-spc", "q": "In patients with severe heart failure, the elimination half-life may be prolonged." }
+      ]
+    },
+    {
+      "id": "lidocaine-topical:condition:cardiac-conduction-disturbance",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "condition": "cardiac-conduction-disturbance",
+      "concern": "AV block",
+      "consequence": "Amide local anaesthetics prolong AV conduction.",
+      "action": "Needs special attention if high blood levels are likely.",
+      "sourceWording": "some patients require special attention ... Patients with heart failure or with AV block",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Patients with heart failure or with AV block." }]
+    },
+    {
+      "id": "lidocaine-topical:condition:respiratory-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "condition": "respiratory-failure",
+      "concern": "Respiratory dysfunction",
+      "consequence": "Risk of dangerous effects (respiratory depression) from high lidocaine levels.",
+      "action": "Needs special attention if high blood levels are likely.",
+      "sourceWording": "some patients require special attention ... Patients with respiratory dysfunction",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Patients with respiratory dysfunction." }]
+    },
+    {
+      "id": "lidocaine-topical:condition:myasthenia-gravis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "Particularly sensitive to local anaesthetics.",
+      "action": "Needs special attention if high blood levels are likely.",
+      "sourceWording": "Patients suffering from myasthenia gravis; these are particularly sensitive to local anaesthetics",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Patients suffering from myasthenia gravis; these are particularly sensitive to local anaesthetics." }]
+    },
+    {
+      "id": "lidocaine-topical:condition:g6pd-deficiency",
+      "kind": "condition",
+      "level": "info",
+      "med": "lidocaine-topical",
+      "condition": "g6pd-deficiency",
+      "concern": "G6PD deficiency",
+      "consequence": "More susceptible to methaemoglobinaemia; methylene blue is ineffective and cannot be given.",
+      "action": "No specific action stated for use of the gel; if methaemoglobinaemia occurs, methylene blue cannot be given.",
+      "sourceWording": "more susceptible to active- substance-induced signs of methaemoglobinaemia",
+      "src": [
+        { "s": "mhra-pl03377-0003-spc", "q": "Patients with defective glucose-6-phosphate dehydrogenase, hereditary or idiopathic methaemoglobinemia are more susceptible" },
+        { "s": "mhra-pl03377-0003-spc", "q": "methylene blue therapy cannot be given" }
+      ]
+    },
+    {
+      "id": "lidocaine-topical:condition:methaemoglobinaemia",
+      "kind": "condition",
+      "level": "info",
+      "med": "lidocaine-topical",
+      "condition": "methaemoglobinaemia-hereditary-idiopathic",
+      "concern": "Hereditary or idiopathic methaemoglobinaemia",
+      "consequence": "More susceptible to lidocaine-induced methaemoglobinaemia.",
+      "action": "No specific action stated; be aware of the risk.",
+      "sourceWording": "hereditary or idiopathic methaemoglobinemia are more susceptible",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Patients with defective glucose-6-phosphate dehydrogenase, hereditary or idiopathic methaemoglobinemia are more susceptible" }]
+    },
+    {
+      "id": "lidocaine-topical:condition:porphyria",
+      "kind": "condition",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "condition": "porphyria",
+      "concern": "Acute porphyria",
+      "consequence": "Lidocaine is possibly porphyrinogenic.",
+      "action": "Use only on strong or urgent indications, with close monitoring; take precautions in all porphyric patients.",
+      "sourceWording": "should only be used in patients with acute porphyria on strong or urgent indications, while being closely monitored",
+      "src": [
+        { "s": "mhra-pl03377-0003-spc", "q": "Lidocaine is possibly porphyrinogenic and should only be used in patients with acute porphyria on strong or urgent indications, while being closely monitored." },
+        { "s": "mhra-pl03377-0003-spc", "q": "Appropriate precautions should be taken for all porphyric patients." }
+      ]
+    },
+    {
+      "id": "lidocaine-topical:interaction:beta-blocker",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "other": "group:beta-blocker",
+      "concern": "Beta-blockers",
+      "consequence": "Possible additive cardiac effects; beta-blockers also reduce lidocaine clearance, so lidocaine may accumulate.",
+      "action": "Use lidocaine with caution; allow for possible accumulation.",
+      "sourceWording": "lidocaine must be used with caution in patients receiving other anti-arrhythmics such as beta-blockers",
+      "src": [
+        { "s": "mhra-pl03377-0003-spc", "q": "lidocaine must be used with caution in patients receiving other anti-arrhythmics such as beta-blockers (e.g. propranolol, metoprolol)" },
+        { "s": "mhra-pl03377-0003-spc", "q": "reduce the plasma clearance of lidocaine, prolonging its elimination half life" }
+      ]
+    },
+    {
+      "id": "lidocaine-topical:interaction:diltiazem",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "other": "diltiazem",
+      "concern": "Diltiazem",
+      "consequence": "Possible additive effects on the heart.",
+      "action": "Use lidocaine with caution.",
+      "sourceWording": "lidocaine must be used with caution in patients receiving ... calcium channel antagonists (e.g. diltiazem, verapamil)",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Due to possible additive effects on the heart, lidocaine must be used with caution in patients receiving other anti-arrhythmics such as beta-blockers (e.g. propranolol, metoprolol) or calcium channel antagonists (e.g. diltiazem, verapamil)." }]
+    },
+    {
+      "id": "lidocaine-topical:interaction:verapamil",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "lidocaine-topical",
+      "other": "verapamil",
+      "concern": "Verapamil",
+      "consequence": "Possible additive effects on the heart.",
+      "action": "Use lidocaine with caution.",
+      "sourceWording": "lidocaine must be used with caution in patients receiving ... calcium channel antagonists (e.g. diltiazem, verapamil)",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Due to possible additive effects on the heart, lidocaine must be used with caution in patients receiving other anti-arrhythmics such as beta-blockers (e.g. propranolol, metoprolol) or calcium channel antagonists (e.g. diltiazem, verapamil)." }]
+    },
+    {
+      "id": "lidocaine-topical:interaction:sulfonamide",
+      "kind": "interaction",
+      "level": "info",
+      "med": "lidocaine-topical",
+      "other": "group:sulfonamide",
+      "concern": "Sulphonamides",
+      "consequence": "Methaemoglobinaemia may be made worse.",
+      "action": "No specific action stated; be aware of the risk.",
+      "sourceWording": "Methaemoglobinaemia may be accentuated",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Methaemoglobinaemia may be accentuated in patients already taking methaemoglobin-inducing medicinal products (e.g. sulphonamides, nitrofurantoin, phenytoin, phenobarbital)." }]
+    },
+    {
+      "id": "lidocaine-topical:interaction:nitrofurantoin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "lidocaine-topical",
+      "other": "nitrofurantoin",
+      "concern": "Nitrofurantoin",
+      "consequence": "Methaemoglobinaemia may be made worse.",
+      "action": "No specific action stated; be aware of the risk.",
+      "sourceWording": "Methaemoglobinaemia may be accentuated",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "Methaemoglobinaemia may be accentuated in patients already taking methaemoglobin-inducing medicinal products (e.g. sulphonamides, nitrofurantoin, phenytoin, phenobarbital)." }]
+    },
+    {
+      "id": "lidocaine-topical:pregnancy",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "lidocaine-topical",
+      "concern": "Pregnancy",
+      "consequence": "Limited human data; lidocaine crosses the placenta; no harm in animal studies at relevant exposure.",
+      "action": "May be considered if clinically needed.",
+      "sourceWording": "may be considered during pregnancy, if clinically needed",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "may be considered during pregnancy, if clinically needed" }]
+    },
+    {
+      "id": "lidocaine-topical:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "lidocaine-topical",
+      "concern": "Breastfeeding",
+      "consequence": "Excreted in milk; no effects on the breastfed infant anticipated at therapeutic doses.",
+      "action": "No action stated.",
+      "sourceWording": "no effects on breastfed newborns/infants are anticipated",
+      "src": [{ "s": "mhra-pl03377-0003-spc", "q": "no effects on breastfed newborns/infants are anticipated" }]
+    }
+  ]
+}

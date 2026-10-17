@@ -1,0 +1,442 @@
+{
+  "id": "moxonidine",
+  "name": "Moxonidine",
+  "ingredients": ["moxonidine"],
+  "className": "Centrally acting antihypertensive (imidazoline receptor agonist)",
+  "groups": ["antihypertensive"],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "moxonidine-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "400 micrograms",
+      "release": "immediate",
+      "note": "Two UK SmPCs for 400 microgram tablets were used. They differ on heart failure (one contraindicates all cardiac insufficiency, the other only severe heart failure), severe renal impairment (one contraindicates GFR < 30 ml/min, the other allows up to 300 micrograms daily) and the lower age limit (18 vs 16 years). Each difference is shown with its source.",
+      "src": [
+        { "s": "emc-6660", "q": "Each tablet contains 400 micrograms moxonidine." },
+        { "s": "emc-4138", "q": "Each film-coated tablet contains 0.4 mg of moxonidine." }
+      ],
+      "sourceIds": ["emc-6660", "emc-4138"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        { "t": "Essential (primary) hypertension; one UK SmPC specifies mild to moderate.", "src": [
+          { "s": "emc-6660", "q": "Mild to moderate essential or primary hypertension." },
+          { "s": "emc-4138", "q": "4.1 Therapeutic indications Essential or primary hypertension." }
+        ] }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions stated in the UK SmPCs." },
+    "dosing": {
+      "items": [
+        {
+          "t": "Start 200 micrograms in the morning. After 3 weeks may increase to 400 micrograms (once daily or divided morning and evening); after a further 3 weeks up to 600 micrograms daily in divided doses. Maximum single dose 400 micrograms; maximum daily dose 600 micrograms.",
+          "tag": "Hypertension (adults, including elderly)",
+          "src": [
+            { "s": "emc-6660", "q": "Treatment should be started with 200 micrograms of Physiotens in the morning." },
+            { "s": "emc-6660", "q": "the dosage can be increased up to a maximum of 600 micrograms in divided doses (morning and evening)" },
+            { "s": "emc-6660", "q": "A single dose of 400 micrograms of Physiotens and a daily dose of 600 micrograms in divided doses (morning and evening) should not be exceeded." }
+          ]
+        },
+        {
+          "t": "Moderate renal impairment (GFR 30-60 ml/min): single dose no more than 200 micrograms and daily dose no more than 400 micrograms.",
+          "tag": "Renal impairment",
+          "src": [{ "s": "emc-6660", "q": "In patients with moderate renal dysfunction (GFR above 30 ml/min, but below 60 ml/min), the single dose should not exceed 200 micrograms and the daily dose should not exceed 400 micrograms of moxonidine." }]
+        },
+        {
+          "t": "Elderly: may be more sensitive to blood-pressure lowering; start with the lowest dose and increase with caution. Stopping: reduce gradually over 2 weeks.",
+          "tag": "Elderly / stopping",
+          "src": [
+            { "s": "emc-6660", "q": "Therefore therapy should be started with the lowest dose and dose increments should be introduced with caution" },
+            { "s": "emc-6660", "q": "an abrupt discontinuance of the moxonidine treatment is not advisable; instead the dose should be reduced gradually over a period of two weeks." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        { "t": "One UK SmPC: not recommended and should not be used below 18 years (no safety/efficacy data). Another UK SmPC: should not be given under 16 years.", "src": [
+          { "s": "emc-6660", "q": "Due to a lack of data on safety and efficacy, Physiotens should not be used in children and adolescents below 18 years of age." },
+          { "s": "emc-4138", "q": "Moxonidine should not be given to children and adolescents under 16 years of age as insufficient therapeutic data are available for this." }
+        ] }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        { "t": "Both UK SmPCs: hypersensitivity; sick sinus syndrome; bradycardia (below 50 beats/minute at rest); second- or third-degree AV block.", "src": [
+          { "s": "emc-6660", "q": "sick sinus syndrome or sino-atrial block - 2nd or 3rd degree atrioventricular block - bradycardia (below 50 beats/minute at rest)" },
+          { "s": "emc-4138", "q": "- sick sinus syndrome - bradycardia (resting heart rate <50 beats/minute) - AV-block 2nd and 3rd degree - cardiac insufficiency" }
+        ] },
+        { "t": "One UK SmPC: severe heart failure and severe renal dysfunction (GFR < 30 ml/min, serum creatinine > 160 µmol/l). Another UK SmPC: cardiac insufficiency (any heart failure).", "src": [
+          { "s": "emc-6660", "q": "- severe heart failure (see Section 4.4) - severe renal dysfunction (GFR <30 ml/min, serum creatinine concentration >160 µmol/l)." },
+          { "s": "emc-4138", "q": "AV-block 2nd and 3rd degree - cardiac insufficiency" }
+        ] }
+      ]
+    },
+    "cautions": {
+      "items": [
+        { "t": "AV block has been reported: caution if predisposed; with first-degree AV block take special care to avoid bradycardia. Severe coronary artery disease or unstable angina: special care (limited experience).", "tag": "Cardiac", "src": [
+          { "s": "emc-6660", "q": "caution is recommended when treating patients with a possible predisposition to developing an AV block." },
+          { "s": "emc-6660", "q": "When moxonidine is used in patients with 1st degree AV block, special care should be exercised to avoid bradycardia." },
+          { "s": "emc-6660", "q": "When moxonidine is used in patients with severe coronary artery disease or unstable angina pectoris, special care should be exercised" }
+        ] },
+        { "t": "Moderate heart failure: one UK SmPC says use with caution (no data).", "tag": "Heart failure", "src": [{ "s": "emc-6660", "q": "Due to a lack of clinical data supporting the safety in patients with co-existing moderate heart failure, Physiotens must be used with caution in such patients." }] },
+        { "t": "Renal impairment: caution and careful titration (mainly renally excreted). With a beta-blocker, if both are to be stopped, stop the beta-blocker first, then moxonidine a few days later. Do not stop abruptly; taper over 2 weeks.", "tag": "Renal / withdrawal", "src": [
+          { "s": "emc-6660", "q": "Caution is advised in the administration of moxonidine to patients with renal impairment as moxonidine is excreted primarily via the kidneys." },
+          { "s": "emc-6660", "q": "the beta-blocker should be discontinued first and then Moxonidine after a few days." }
+        ] },
+        { "t": "Lactose: patients with galactose intolerance, lactase deficiency or glucose-galactose malabsorption should not take this medicine.", "detail": true, "src": [{ "s": "emc-4138", "q": "Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicinal product." }] }
+      ]
+    },
+    "interactions": {
+      "items": [
+        { "t": "Tricyclic antidepressants: not recommended (may reduce the antihypertensive effect; sedation potentiated - avoid co-prescribing).", "tag": "Tricyclics", "src": [
+          { "s": "emc-6660", "q": "it is not recommended that tricyclic antidepressants be co- administered with moxonidine." },
+          { "s": "emc-6660", "q": "Moxonidine can potentiate the sedative effect of tricyclic anti-depressants (avoid co-prescribing), tranquillisers, alcohol, sedatives and hypnotics." }
+        ] },
+        { "t": "Benzodiazepines, tranquillisers, sedatives, hypnotics and alcohol: sedation may be enhanced (cognitive impairment with lorazepam).", "tag": "Sedatives", "src": [
+          { "s": "emc-6660", "q": "Moxonidine may enhance the sedative effect of benzodiazepines when administered concomitantly." },
+          { "s": "emc-6660", "q": "Moxonidine moderately augmented the impaired performance in cognitive functions in subjects receiving lorazepam." }
+        ] },
+        { "t": "Other antihypertensives: additive hypotensive effect. Beta-blockers: when stopping both, stop the beta-blocker first.", "tag": "Antihypertensives", "src": [
+          { "s": "emc-6660", "q": "Concurrent administration of other antihypertensive agents enhances the hypotensive effect of Physiotens" },
+          { "s": "emc-4138", "q": "the β-blocker should be discontinued first, and then moxonidine after a few days." }
+        ] },
+        { "t": "Other drugs cleared by renal tubular secretion: an interaction cannot be excluded.", "detail": true, "src": [{ "s": "emc-6660", "q": "Interaction with other agents that are excreted through tubular excretion cannot be excluded." }] }
+      ]
+    },
+    "renal": {
+      "items": [
+        { "t": "GFR 30-60 ml/min: maximum single dose 200 micrograms and maximum daily dose 400 micrograms (both SmPCs).", "src": [
+          { "s": "emc-6660", "q": "In patients with moderate renal dysfunction (GFR above 30 ml/min, but below 60 ml/min), the single dose should not exceed 200 micrograms and the daily dose should not exceed 400 micrograms of moxonidine." },
+          { "s": "emc-4138", "q": "In patients with moderately impaired renal function (GFR > 30 ml/min but < 60 ml/min), the single dose should be not more than 0.2 mg and the daily dose not more than 0.4 mg moxonidine." }
+        ] },
+        { "t": "GFR < 30 ml/min - conflict between UK SmPCs: one contraindicates it (also serum creatinine > 160 µmol/l); the other allows careful titration up to a maximum of 300 micrograms (0.3 mg) daily.", "src": [
+          { "s": "emc-6660", "q": "severe renal dysfunction (GFR <30 ml/min, serum creatinine concentration >160 µmol/l)" },
+          { "s": "emc-4138", "q": "to a maximum of 0.3 mg daily for patients with severe renal impairment (GFR < 30 ml/min), if clinically indicated and well tolerated." }
+        ] }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        { "t": "One UK SmPC: no studies, but no major influence expected (little hepatic metabolism); same dose in mild to moderate hepatic impairment. Severe hepatic impairment: not stated.", "src": [
+          { "s": "emc-4138", "q": "dosage recommendation is the same for patients with mild to moderate hepatic impairment as for adults." }
+        ] }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        { "t": "No adequate human data; embryotoxic in animals. Should not be used in pregnancy unless clearly necessary.", "src": [
+          { "s": "emc-6660", "q": "Studies in animals have shown embryo-toxicological effects" },
+          { "s": "emc-6660", "q": "Moxonidine should not be used during pregnancy unless clearly necessary." }
+        ] }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        { "t": "Secreted in breast milk: should not be used while breastfeeding. If considered absolutely necessary, stop breastfeeding.", "src": [
+          { "s": "emc-6660", "q": "Moxonidine is secreted in breast milk and should therefore not be used during breast -feeding. If therapy with moxonidine is considered absolutely necessary, breast-feeding should be stopped." }
+        ] }
+      ]
+    },
+    "reproductive": { "status": "not-stated", "note": "No fertility or contraception information in sections 4.6 of the UK SmPCs." },
+    "adverseCommon": {
+      "items": [
+        { "t": "Very common: dry mouth. Common: headache, dizziness/vertigo, somnolence, insomnia, diarrhoea, nausea/vomiting/dyspepsia, rash/pruritus, asthenia, back pain. Usually lessen after the first few weeks.", "src": [
+          { "s": "emc-6660", "q": "Most frequent side effects reported by those taking moxonidine include dry mouth, dizziness, asthenia and somnolence. These symptoms often decrease after the first few weeks of treatment." }
+        ] }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        { "t": "Bradycardia and hypotension (including orthostatic), syncope; AV block (post-marketing); angioedema (uncommon).", "src": [
+          { "s": "emc-6660", "q": "Cases of varying degrees of AV block have been reported in the post-marketing setting in patients undergoing moxonidine treatment." },
+          { "s": "emc-6660", "q": "Skin and subcutaneous tissue disorders Rash/ Pruritus Angioedema" }
+        ] }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        { "t": "Renal impairment: titrate carefully, especially at the start. First-degree AV block: special care to avoid bradycardia.", "tag": "ongoing", "src": [
+          { "s": "emc-6660", "q": "In these patients careful titration of the dose is recommended, especially at the start of therapy." },
+          { "s": "emc-6660", "q": "When moxonidine is used in patients with 1st degree AV block, special care should be exercised to avoid bradycardia." }
+        ] }
+      ]
+    },
+    "administration": {
+      "items": [
+        { "t": "Take with enough liquid; can be taken before, during or after meals.", "src": [
+          { "s": "emc-6660", "q": "The tablets should be taken with sufficient liquid." },
+          { "s": "emc-6660", "q": "the tablets may be taken before, during or after the meal." }
+        ] }
+      ]
+    },
+    "counselling": {
+      "items": [
+        { "t": "Do not stop suddenly; the dose is reduced gradually over 2 weeks. Drowsiness and dizziness can occur - take care when driving or using machines; alcohol adds to sedation.", "src": [
+          { "s": "emc-6660", "q": "Somnolence and dizziness have been reported. This should be borne in mind when performing these tasks." },
+          { "s": "emc-6660", "q": "an abrupt discontinuance of the moxonidine treatment is not advisable" }
+        ] }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "moxonidine:allergy:self",
+      "kind": "allergy", "level": "contraindicated", "med": "moxonidine",
+      "allergen": ["moxonidine"],
+      "concern": "Hypersensitivity to moxonidine",
+      "consequence": "Hypersensitivity reaction (including angioedema).",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [{ "s": "emc-4138", "q": "Moxonidine is contraindicated in patients with: - hypersensitivity to the active substance" }]
+    },
+    {
+      "id": "moxonidine:condition:sick-sinus",
+      "kind": "condition", "level": "contraindicated", "med": "moxonidine",
+      "condition": "sick-sinus-syndrome",
+      "concern": "Sick sinus syndrome or sino-atrial block",
+      "consequence": "Bradycardia/conduction risk.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated / should not be used",
+      "src": [
+        { "s": "emc-6660", "q": "sick sinus syndrome or sino-atrial block" },
+        { "s": "emc-4138", "q": "- sick sinus syndrome - bradycardia" }
+      ]
+    },
+    {
+      "id": "moxonidine:condition:av-block",
+      "kind": "condition", "level": "contraindicated", "med": "moxonidine",
+      "condition": "av-block-2nd-3rd",
+      "concern": "Second- or third-degree AV block",
+      "consequence": "May delay AV conduction.",
+      "action": "Do not use.",
+      "sourceWording": "must not be used in higher degree AV blocks",
+      "src": [
+        { "s": "emc-6660", "q": "2nd or 3rd degree atrioventricular block" },
+        { "s": "emc-6660", "q": "Moxonidine must not be used in higher degree AV blocks" }
+      ]
+    },
+    {
+      "id": "moxonidine:condition:av-block-1st",
+      "kind": "condition", "level": "caution", "med": "moxonidine",
+      "condition": "av-block-1st-degree",
+      "concern": "First-degree AV block (or predisposition to AV block)",
+      "consequence": "AV block reported post-marketing.",
+      "action": "Special care to avoid bradycardia.",
+      "sourceWording": "special care should be exercised",
+      "src": [{ "s": "emc-6660", "q": "When moxonidine is used in patients with 1st degree AV block, special care should be exercised to avoid bradycardia." }]
+    },
+    {
+      "id": "moxonidine:condition:bradycardia",
+      "kind": "condition", "level": "contraindicated", "med": "moxonidine",
+      "condition": "bradycardia",
+      "concern": "Bradycardia (below 50 beats/minute at rest)",
+      "consequence": "Further slowing of heart rate.",
+      "action": "Do not use.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-6660", "q": "bradycardia (below 50 beats/minute at rest)" },
+        { "s": "emc-4138", "q": "bradycardia (resting heart rate <50 beats/minute)" }
+      ]
+    },
+    {
+      "id": "moxonidine:condition:heart-failure-generic",
+      "kind": "condition", "level": "contraindicated", "med": "moxonidine",
+      "condition": "heart-failure",
+      "concern": "Heart failure (cardiac insufficiency) - one UK SmPC",
+      "consequence": "One UK SmPC contraindicates all cardiac insufficiency; another contraindicates only severe heart failure and advises caution in moderate heart failure.",
+      "action": "One SmPC: do not use. Other SmPC: caution in moderate, do not use in severe.",
+      "sourceWording": "contraindicated in patients with ... cardiac insufficiency",
+      "src": [
+        { "s": "emc-4138", "q": "AV-block 2nd and 3rd degree - cardiac insufficiency" },
+        { "s": "emc-6660", "q": "Due to a lack of clinical data supporting the safety in patients with co-existing moderate heart failure, Physiotens must be used with caution in such patients." },
+        { "s": "emc-6660", "q": "- severe heart failure (see Section 4.4)" }
+      ]
+    },
+    {
+      "id": "moxonidine:condition:severe-heart-failure",
+      "kind": "condition", "level": "contraindicated", "med": "moxonidine",
+      "condition": "severe-heart-failure",
+      "concern": "Severe heart failure",
+      "consequence": "Listed contraindication.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [{ "s": "emc-6660", "q": "- severe heart failure (see Section 4.4)" }]
+    },
+    {
+      "id": "moxonidine:condition:coronary",
+      "kind": "condition", "level": "caution", "med": "moxonidine",
+      "condition": "unstable-angina",
+      "concern": "Severe coronary artery disease or unstable angina",
+      "consequence": "Limited experience.",
+      "action": "Special care.",
+      "sourceWording": "special care should be exercised",
+      "src": [{ "s": "emc-6660", "q": "When moxonidine is used in patients with severe coronary artery disease or unstable angina pectoris, special care should be exercised" }]
+    },
+    {
+      "id": "moxonidine:condition:ihd",
+      "kind": "condition", "level": "caution", "med": "moxonidine",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Severe coronary artery disease",
+      "consequence": "Limited experience.",
+      "action": "Special care.",
+      "sourceWording": "special care should be exercised",
+      "src": [{ "s": "emc-6660", "q": "When moxonidine is used in patients with severe coronary artery disease or unstable angina pectoris, special care should be exercised" }]
+    },
+    {
+      "id": "moxonidine:renal:gfr-under-30-contraindicated",
+      "kind": "renal", "level": "contraindicated", "med": "moxonidine",
+      "renal": { "measure": "GFR", "max": 30 },
+      "concern": "Severe renal dysfunction (GFR < 30 ml/min) - one UK SmPC",
+      "consequence": "Moxonidine is mainly renally excreted.",
+      "action": "One UK SmPC: do not use (also if serum creatinine > 160 µmol/l). Another UK SmPC allows up to 300 micrograms daily with careful titration.",
+      "sourceWording": "should not be used",
+      "src": [
+        { "s": "emc-6660", "q": "severe renal dysfunction (GFR <30 ml/min, serum creatinine concentration >160 µmol/l)" },
+        { "s": "emc-4138", "q": "to a maximum of 0.3 mg daily for patients with severe renal impairment (GFR < 30 ml/min), if clinically indicated and well tolerated." }
+      ]
+    },
+    {
+      "id": "moxonidine:renal:gfr-under-30-generic",
+      "kind": "renal", "level": "dose", "med": "moxonidine",
+      "renal": { "measure": "GFR", "max": 30 },
+      "concern": "Severe renal impairment (GFR < 30 ml/min) - another UK SmPC",
+      "consequence": "Mainly renally excreted.",
+      "action": "Start 200 micrograms daily; maximum 300 micrograms (0.3 mg) daily if clinically indicated and tolerated. (Contraindicated in the other UK SmPC.)",
+      "sourceWording": "can be increased ... to a maximum of 0.3 mg daily",
+      "src": [
+        { "s": "emc-4138", "q": "Dosing should be initiated with 0.2 mg daily" },
+        { "s": "emc-4138", "q": "to a maximum of 0.3 mg daily for patients with severe renal impairment (GFR < 30 ml/min), if clinically indicated and well tolerated." }
+      ]
+    },
+    {
+      "id": "moxonidine:renal:gfr-30-60",
+      "kind": "renal", "level": "dose", "med": "moxonidine",
+      "renal": { "measure": "GFR", "min": 30, "max": 60 },
+      "concern": "Moderate renal impairment (GFR 30-60 ml/min, both UK SmPCs)",
+      "consequence": "Reduced clearance (AUC increased).",
+      "action": "Single dose no more than 200 micrograms; daily dose no more than 400 micrograms; titrate carefully.",
+      "sourceWording": "should not exceed",
+      "src": [
+        { "s": "emc-6660", "q": "In patients with moderate renal dysfunction (GFR above 30 ml/min, but below 60 ml/min), the single dose should not exceed 200 micrograms and the daily dose should not exceed 400 micrograms of moxonidine." },
+        { "s": "emc-4138", "q": "the single dose should be not more than 0.2 mg and the daily dose not more than 0.4 mg moxonidine." }
+      ]
+    },
+    {
+      "id": "moxonidine:age:under-16",
+      "kind": "age", "level": "avoid", "med": "moxonidine",
+      "age": { "maxYears": 16 },
+      "concern": "Under 16 years",
+      "consequence": "Insufficient data.",
+      "action": "Should not be given (both UK SmPCs).",
+      "sourceWording": "should not be given",
+      "src": [
+        { "s": "emc-4138", "q": "Moxonidine should not be given to children and adolescents under 16 years of age as insufficient therapeutic data are available for this." },
+        { "s": "emc-6660", "q": "Due to a lack of data on safety and efficacy, Physiotens should not be used in children and adolescents below 18 years of age." }
+      ]
+    },
+    {
+      "id": "moxonidine:age:16-17",
+      "kind": "age", "level": "avoid", "med": "moxonidine",
+      "age": { "minYears": 16, "maxYears": 18 },
+      "concern": "Age 16-17 years (one UK SmPC)",
+      "consequence": "No safety and efficacy data below 18 years.",
+      "action": "One UK SmPC: should not be used below 18 years; another sets the limit at 16 years.",
+      "sourceWording": "should not be used in children and adolescents below 18 years",
+      "src": [{ "s": "emc-6660", "q": "Due to a lack of data on safety and efficacy, Physiotens should not be used in children and adolescents below 18 years of age." }]
+    },
+    {
+      "id": "moxonidine:condition:galactose",
+      "kind": "condition", "level": "avoid", "med": "moxonidine",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Tablets contain lactose.",
+      "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-6660", "q": "Patients with rare hereditary problems of galactose intolerance, the rare Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine." }]
+    },
+    {
+      "id": "moxonidine:pregnancy",
+      "kind": "pregnancy", "level": "avoid", "med": "moxonidine",
+      "concern": "Pregnancy",
+      "consequence": "No adequate human data; embryotoxic in animals.",
+      "action": "Should not be used unless clearly necessary.",
+      "sourceWording": "should not be used during pregnancy unless clearly necessary",
+      "src": [{ "s": "emc-6660", "q": "Moxonidine should not be used during pregnancy unless clearly necessary." }]
+    },
+    {
+      "id": "moxonidine:breastfeeding",
+      "kind": "breastfeeding", "level": "avoid", "med": "moxonidine",
+      "concern": "Breastfeeding",
+      "consequence": "Secreted in breast milk.",
+      "action": "Should not be used; if treatment is absolutely necessary, stop breastfeeding.",
+      "sourceWording": "should therefore not be used during breast -feeding",
+      "src": [{ "s": "emc-6660", "q": "Moxonidine is secreted in breast milk and should therefore not be used during breast -feeding." }]
+    },
+    {
+      "id": "moxonidine:interaction:tricyclic",
+      "kind": "interaction", "level": "avoid", "med": "moxonidine",
+      "other": "group:tricyclic-antidepressant",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "May reduce the antihypertensive effect; sedation potentiated.",
+      "action": "Not recommended; avoid co-prescribing.",
+      "sourceWording": "it is not recommended that tricyclic antidepressants be co- administered",
+      "src": [
+        { "s": "emc-6660", "q": "it is not recommended that tricyclic antidepressants be co- administered with moxonidine." },
+        { "s": "emc-6660", "q": "Moxonidine can potentiate the sedative effect of tricyclic anti-depressants (avoid co-prescribing)" }
+      ]
+    },
+    {
+      "id": "moxonidine:interaction:benzodiazepine",
+      "kind": "interaction", "level": "info", "med": "moxonidine",
+      "other": "group:benzodiazepine", "effect": "cns-respiratory-depression",
+      "concern": "Benzodiazepines",
+      "consequence": "Enhanced sedation; augmented cognitive impairment (lorazepam).",
+      "action": "Be aware: sedation may be enhanced; somnolence should be borne in mind for driving and machine use. No specific action stated.",
+      "sourceWording": "may enhance the sedative effect of benzodiazepines",
+      "src": [
+        { "s": "emc-6660", "q": "Moxonidine may enhance the sedative effect of benzodiazepines when administered concomitantly." },
+        { "s": "emc-6660", "q": "Moxonidine moderately augmented the impaired performance in cognitive functions in subjects receiving lorazepam." }
+      ]
+    },
+    {
+      "id": "moxonidine:interaction:cns-depressant",
+      "kind": "interaction", "level": "info", "med": "moxonidine",
+      "other": "group:cns-depressant", "effect": "cns-respiratory-depression",
+      "concern": "Tranquillisers, sedatives and hypnotics (and alcohol)",
+      "consequence": "Sedative effect may be potentiated.",
+      "action": "Be aware: sedation may be enhanced; somnolence should be borne in mind for driving and machine use. No specific action stated.",
+      "sourceWording": "can potentiate the sedative effect",
+      "src": [{ "s": "emc-6660", "q": "Moxonidine can potentiate the sedative effect of tricyclic anti-depressants (avoid co-prescribing), tranquillisers, alcohol, sedatives and hypnotics." }]
+    },
+    {
+      "id": "moxonidine:interaction:beta-blocker",
+      "kind": "interaction", "level": "caution", "med": "moxonidine",
+      "other": "group:beta-blocker", "effect": "hypotension",
+      "concern": "Beta-blockers",
+      "consequence": "Additive hypotensive effect; withdrawal sequence matters.",
+      "action": "If both are to be stopped, stop the beta-blocker first, then moxonidine a few days later.",
+      "sourceWording": "the beta-blocker should be discontinued first",
+      "src": [{ "s": "emc-6660", "q": "If Moxonidine is used in combination with a beta-blocker and both treatments have to be discontinued, the beta-blocker should be discontinued first and then Moxonidine after a few days." }]
+    },
+    {
+      "id": "moxonidine:interaction:antihypertensive",
+      "kind": "interaction", "level": "info", "med": "moxonidine",
+      "other": "group:antihypertensive", "effect": "hypotension",
+      "concern": "Other antihypertensives",
+      "consequence": "Enhanced (additive) hypotensive effect.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "enhances the hypotensive effect",
+      "src": [
+        { "s": "emc-6660", "q": "Concurrent administration of other antihypertensive agents enhances the hypotensive effect of Physiotens" },
+        { "s": "emc-4138", "q": "Concomitant administration of moxonidine and other antihypertensive medicinal products result in an additive effect." }
+      ]
+    }
+  ]
+}

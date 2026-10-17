@@ -1,0 +1,1354 @@
+{
+  "id": "amlodipine-valsartan",
+  "name": "Amlodipine/valsartan",
+  "ingredients": ["amlodipine", "valsartan"],
+  "className": "Angiotensin II receptor blocker with calcium-channel blocker",
+  "groups": ["arb", "calcium-channel-blocker", "dihydropyridine", "antihypertensive"],
+  "searchTerms": ["amlodipine and valsartan", "valsartan/amlodipine", "amlodipine besilate/valsartan", "amlodipine besylate valsartan"],
+  "availability": { "status": "uk" },
+  "formulations": [
+    {
+      "id": "amlodipine-valsartan-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "5 mg/80 mg, 5 mg/160 mg, 10 mg/160 mg (amlodipine/valsartan)",
+      "release": "immediate",
+      "note": "Strength is written as amlodipine/valsartan. The clinic's 5 mg/160 mg and 10 mg/160 mg tablets contain 160 mg valsartan, above the 80 mg valsartan maximum in mild to moderate hepatic impairment.",
+      "src": [
+        { "s": "emc-7769", "q": "Each film-coated tablet contains 5 mg of amlodipine (as amlodipine besylate) and 160 mg of valsartan." },
+        { "s": "emc-7769", "q": "Each film-coated tablet contains 10 mg of amlodipine (as amlodipine besylate) and 160 mg of valsartan." },
+        { "s": "emc-7769", "q": "In patients with mild to moderate hepatic impairment without cholestasis, the maximum recommended dose is 80 mg valsartan." }
+      ],
+      "sourceIds": ["emc-7769"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Essential hypertension in adults whose blood pressure is not adequately controlled on amlodipine or valsartan alone.",
+          "src": [
+            { "s": "emc-7769", "q": "Treatment of essential hypertension." },
+            { "s": "emc-7769", "q": "is indicated in adults whose blood pressure is not adequately controlled on amlodipine or valsartan monotherapy." }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Second-line combination only: for adults not controlled on either component alone. Not studied in any population other than hypertension.",
+          "tag": "Licensing limit",
+          "src": [
+            { "s": "emc-7769", "q": "is indicated in adults whose blood pressure is not adequately controlled on amlodipine or valsartan monotherapy." },
+            { "s": "emc-7769", "q": "has not been studied in any patient population other than hypertension." }
+          ]
+        },
+        {
+          "t": "Dual RAAS blockade, if absolutely necessary, only under specialist supervision with frequent close monitoring (see cautions).",
+          "tag": "Dual RAAS blockade",
+          "detail": true,
+          "src": [
+            { "s": "emc-7769", "q": "If dual blockade therapy is considered absolutely necessary, this should only occur under specialist supervision and subject to frequent close monitoring of renal function, electrolytes and blood pressure." }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "One tablet once daily. 5 mg/160 mg: for patients not controlled on amlodipine 5 mg or valsartan 160 mg alone. 10 mg/160 mg: for patients not controlled on amlodipine 10 mg or valsartan 160 mg alone, or on the 5 mg/160 mg combination.",
+          "tag": "Hypertension",
+          "src": [
+            { "s": "emc-7769", "q": "The recommended dose of Exforge is one tablet per day." },
+            { "s": "emc-7769", "q": "may be administered in patients whose blood pressure is not adequately controlled with amlodipine 5 mg or valsartan 160 mg alone." },
+            { "s": "emc-7769", "q": "may be administered in patients whose blood pressure is not adequately controlled with amlodipine 10 mg or valsartan 160 mg alone or with Exforge 5 mg/160 mg." }
+          ]
+        },
+        {
+          "t": "Titrate the individual components before changing to the fixed-dose combination; a direct switch from monotherapy may be considered when clinically appropriate. Patients on separate amlodipine and valsartan tablets can switch to the combination with the same component doses.",
+          "tag": "Starting / switching",
+          "src": [
+            { "s": "emc-7769", "q": "Individual dose titration with the components (i.e. amlodipine and valsartan) is recommended before changing to the fixed dose combination." },
+            { "s": "emc-7769", "q": "When clinically appropriate, direct change from monotherapy to the fixed-dose combination may be considered." },
+            { "s": "emc-7769", "q": "may be switched to Exforge containing the same component doses." }
+          ]
+        },
+        {
+          "t": "Elderly (65 years or over): caution when increasing the dose; when switching, use the lowest available amlodipine dose.",
+          "tag": "Elderly",
+          "src": [
+            { "s": "emc-7769", "q": "In elderly patients, caution is required when increasing the dosage." },
+            { "s": "emc-7769", "q": "When switching eligible elderly hypertensive patients (see section 4.1) to amlodipine or Exforge, the lowest available dose of amlodipine monotherapy or of the amlodipine component, respectively, should be used." }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Safety and efficacy below 18 years not established; no data.",
+          "tag": "Under 18 years",
+          "src": [
+            { "s": "emc-7769", "q": "The safety and efficacy of Exforge in children aged below 18 years have not been established. No data are available." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to amlodipine, valsartan, other dihydropyridines or any excipient.",
+          "src": [
+            { "s": "emc-7769", "q": "Hypersensitivity to the active substances, to dihydropyridine derivatives, or to any of the excipients listed in section 6.1." }
+          ]
+        },
+        {
+          "t": "Severe hepatic impairment, biliary cirrhosis or cholestasis.",
+          "src": [
+            { "s": "emc-7769", "q": "Severe hepatic impairment, biliary cirrhosis or cholestasis." }
+          ]
+        },
+        {
+          "t": "With aliskiren-containing products in patients with diabetes or renal impairment (GFR below 60 mL/min/1.73 m²).",
+          "src": [
+            { "s": "emc-7769", "q": "Concomitant use of Exforge with aliskiren-containing products in patients with diabetes mellitus or renal impairment (GFR <60 ml/min/1.73 m2)" }
+          ]
+        },
+        {
+          "t": "Second and third trimesters of pregnancy.",
+          "src": [
+            { "s": "emc-7769", "q": "Second and third trimesters of pregnancy (see sections 4.4 and 4.6)." }
+          ]
+        },
+        {
+          "t": "Severe hypotension; shock (including cardiogenic shock); left ventricular outflow obstruction (e.g. hypertrophic obstructive cardiomyopathy, high-grade aortic stenosis); haemodynamically unstable heart failure after acute myocardial infarction.",
+          "src": [
+            { "s": "emc-7769", "q": "Severe hypotension. Shock (including cardiogenic shock). Obstruction of the outflow tract of the left ventricle (e.g. hypertrophic obstructive cardiomyopathy and high grade aortic stenosis). Haemodynamically unstable heart failure after acute myocardial infarction." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Sodium- and/or volume-depleted patients (e.g. high-dose diuretics): symptomatic hypotension may occur. Correct first or give close medical supervision at the start. If hypotension occurs, lay the patient supine and give IV normal saline if needed; treatment can continue once BP is stable.",
+          "tag": "Hypotension",
+          "src": [
+            { "s": "emc-7769", "q": "In patients with an activated renin-angiotensin system (such as volume- and/or salt-depleted patients receiving high doses of diuretics) who are receiving angiotensin receptor blockers, symptomatic hypotension may occur." },
+            { "s": "emc-7769", "q": "Correction of this condition prior to administration of Exforge or close medical supervision at the start of treatment is recommended." },
+            { "s": "emc-7769", "q": "Treatment can be continued once blood pressure has been stabilised." }
+          ]
+        },
+        {
+          "t": "Hyperkalaemia: potassium supplements, potassium-sparing diuretics, potassium salt substitutes or other potassium-raising medicines (e.g. heparin) only with caution and frequent potassium monitoring.",
+          "tag": "Hyperkalaemia",
+          "src": [
+            { "s": "emc-7769", "q": "Concomitant use with potassium supplements, potassium-sparing diuretics, salt substitutes containing potassium, or other medicinal products that may increase potassium levels (heparin, etc.) should be undertaken with caution and with frequent monitoring of potassium levels." }
+          ]
+        },
+        {
+          "t": "Unilateral or bilateral renal artery stenosis, or stenosis to a solitary kidney: use with caution; urea and creatinine may rise.",
+          "tag": "Renal artery stenosis",
+          "src": [
+            { "s": "emc-7769", "q": "should be used with caution to treat hypertension in patients with unilateral or bilateral renal artery stenosis or stenosis to a solitary kidney since blood urea and serum creatinine may increase in such patients." }
+          ]
+        },
+        {
+          "t": "Mild to moderate hepatic impairment or biliary obstructive disorders: particular caution; maximum valsartan 80 mg (without cholestasis); amlodipine dose not established, use the lowest available amlodipine dose when switching.",
+          "tag": "Liver",
+          "src": [
+            { "s": "emc-7769", "q": "Particular caution should be exercised when administering Exforge to patients with mild to moderate hepatic impairment or biliary obstructive disorders." },
+            { "s": "emc-7769", "q": "In patients with mild to moderate hepatic impairment without cholestasis, the maximum recommended dose is 80 mg valsartan." }
+          ]
+        },
+        {
+          "t": "Primary hyperaldosteronism: should not be treated with valsartan.",
+          "tag": "Primary hyperaldosteronism",
+          "src": [
+            { "s": "emc-7769", "q": "Patients with primary hyperaldosteronism should not be treated with the angiotensin II antagonist valsartan as their renin-angiotensin system is affected by the primary disease." }
+          ]
+        },
+        {
+          "t": "Angioedema (larynx, glottis, face, lips, pharynx, tongue) reported with valsartan, some after previous angioedema with other medicines including ACE inhibitors. Stop immediately and do not give again. Intestinal angioedema (abdominal pain, nausea, vomiting, diarrhoea) also reported: stop valsartan and monitor until resolved.",
+          "tag": "Angioedema",
+          "src": [
+            { "s": "emc-7769", "q": "Some of these patients previously experienced angioedema with other medicinal products, including ACE inhibitors." },
+            { "s": "emc-7769", "q": "should be discontinued immediately in patients who develop angioedema and should not be re-administered." },
+            { "s": "emc-7769", "q": "If intestinal angioedema is diagnosed, valsartan should be discontinued and appropriate monitoring should be initiated until complete resolution of symptoms has occurred." }
+          ]
+        },
+        {
+          "t": "Heart failure or post-MI: always assess renal function (severe heart failure: oliguria, azotaemia, rarely acute renal failure). Calcium-channel blockers including amlodipine: use with caution in congestive heart failure.",
+          "tag": "Heart failure",
+          "src": [
+            { "s": "emc-7769", "q": "Evaluation of patients with heart failure or post-myocardial infarction should always include assessment of renal function." },
+            { "s": "emc-7769", "q": "Calcium channel blockers, including amlodipine, should be used with caution in patients with congestive heart failure, as they may increase the risk of future cardiovascular events and mortality." }
+          ]
+        },
+        {
+          "t": "Mitral stenosis or significant (not high-grade) aortic stenosis: special caution.",
+          "tag": "Valve disease",
+          "src": [
+            { "s": "emc-7769", "q": "special caution is indicated in patients suffering from mitral stenosis or significant aortic stenosis that is not high grade." }
+          ]
+        },
+        {
+          "t": "Dual RAAS blockade (ACE inhibitor, ARB or aliskiren) not recommended; if absolutely necessary only under specialist supervision with close monitoring. Do not combine an ACE inhibitor and ARB in diabetic nephropathy.",
+          "tag": "Dual RAAS blockade",
+          "src": [
+            { "s": "emc-7769", "q": "Dual blockade of RAAS through the combined use of ACE inhibitors, ARBs or aliskiren is therefore not recommended" },
+            { "s": "emc-7769", "q": "ACE inhibitors and ARBs should not be used concomitantly in patients with diabetic nephropathy." }
+          ]
+        },
+        {
+          "t": "Recent kidney transplant: no experience of safe use.",
+          "detail": true,
+          "src": [
+            { "s": "emc-7769", "q": "To date there is no experience of the safe use of Exforge in patients who have had a recent kidney transplantation." }
+          ]
+        },
+        {
+          "t": "Hypertensive crisis: safety and efficacy of amlodipine not established.",
+          "detail": true,
+          "src": [
+            { "s": "emc-7769", "q": "The safety and efficacy of amlodipine in hypertensive crisis have not been established." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Simvastatin: amlodipine raises simvastatin exposure (77% with 80 mg). Limit simvastatin to 20 mg daily.",
+          "tag": "Simvastatin",
+          "src": [
+            { "s": "emc-7769", "q": "It is recommended to limit the dose of simvastatin to 20 mg daily in patients on amlodipine." },
+            { "s": "mhra-dsu-simvastatin-amlodipine-diltiazem", "q": "the maximum daily dose of simvastatin should not exceed 20 mg when co-administered with amlodipine or diltiazem" }
+          ]
+        },
+        {
+          "t": "Strong or moderate CYP3A4 inhibitors (azole antifungals, macrolides such as clarithromycin, verapamil, diltiazem, protease inhibitors): may markedly raise amlodipine exposure, more so in the elderly. Clinical monitoring and dose adjustment may be needed.",
+          "tag": "CYP3A4 inhibitors",
+          "src": [
+            { "s": "emc-7769", "q": "Concomitant use of amlodipine with strong or moderate CYP3A4 inhibitors (protease inhibitors, azole antifungals, macrolides like erythromycin or clarithromycin, verapamil or diltiazem) may give rise to significant increase in amlodipine exposure." },
+            { "s": "emc-7769", "q": "Clinical monitoring and dose adjustment may thus be required." },
+        { "s": "emc-7769", "q": "Caution required with concomitant use CYP3A4 inhibitors" }
+          ]
+        },
+        {
+          "t": "CYP3A4 inducers (e.g. carbamazepine, St John's wort, rifampicin): amlodipine levels may vary. Monitor blood pressure and consider dose regulation during and after use, particularly with strong inducers.",
+          "tag": "CYP3A4 inducers",
+          "src": [
+            { "s": "emc-7769", "q": "CYP3A4 inducers (anticonvulsant agents [e.g. carbamazepine, phenobarbital, phenytoin, fosphenytoin, primidone], rifampicin, Hypericum perforatum)" },
+            { "s": "emc-7769", "q": "blood pressure should be monitored and dose regulation considered both during and after concomitant medication particularly with strong CYP3A4 inducers (e.g. rifampicin, hypericum perforatum)." }
+          ]
+        },
+        {
+          "t": "Potassium-sparing diuretics, potassium supplements, potassium salt substitutes and other potassium-raising medicines: listed under 'concomitant use not recommended'; if used, monitor potassium.",
+          "tag": "Potassium-raising medicines",
+          "src": [
+            { "s": "emc-7769", "q": "Interactions linked to valsartan Concomitant use not recommended" },
+            { "s": "emc-7769", "q": "If a medicinal product that affects potassium levels is to be prescribed in combination with valsartan, monitoring of potassium plasma levels is advised." }
+          ]
+        },
+        {
+          "t": "NSAIDs, including COX-2 inhibitors and aspirin above 3 g/day: reduced antihypertensive effect, risk of worsening renal function and raised potassium. Monitor renal function at the start and keep the patient hydrated.",
+          "tag": "NSAIDs",
+          "src": [
+            { "s": "emc-7769", "q": "Non-steroidal anti-inflammatory medicines (NSAIDs), including selective COX-2 inhibitors, acetylsalicylic acid (>3 g/day), and non-selective NSAIDs" },
+            { "s": "emc-7769", "q": "concomitant use of angiotensin II antagonists and NSAIDs may lead to an increased risk of worsening of renal function and an increase in serum potassium." },
+            { "s": "emc-7769", "q": "Therefore, monitoring of renal function at the beginning of the treatment is recommended, as well as adequate hydration of the patient." }
+          ]
+        },
+        {
+          "t": "ACE inhibitors, other ARBs or aliskiren (dual RAAS blockade): more hypotension, hyperkalaemia and reduced renal function including acute renal failure. Not recommended.",
+          "tag": "Dual RAAS blockade",
+          "src": [
+            { "s": "emc-7769", "q": "dual blockade of the RAAS through the combined use of ACE inhibitors, ARBs or aliskiren is associated with a higher frequency of adverse events such as hypotension, hyperkalaemia and decreased renal function (including acute renal failure)" },
+            { "s": "mhra-dsu-ras-combination", "q": "Combination use of medicines from two classes of RAS blocking agents (ACE-inhibitors, ARBs, or aliskiren) is not recommended." }
+          ]
+        },
+        {
+          "t": "Other antihypertensives (e.g. alpha blockers, diuretics) and medicines that lower blood pressure (e.g. tricyclic antidepressants): may increase the blood pressure-lowering effect.",
+          "tag": "Blood pressure-lowering medicines",
+          "src": [
+            { "s": "emc-7769", "q": "Commonly used antihypertensive agents (e.g. alpha blockers, diuretics) and other medicinal products which may cause hypotensive adverse effects (e.g. tricyclic antidepressants, alpha blockers for treatment of benign prostate hyperplasia) may increase the antihypertensive effect of the combination." }
+          ]
+        },
+        {
+          "t": "Grapefruit or grapefruit juice: not recommended (may raise amlodipine levels and increase blood pressure lowering).",
+          "tag": "Grapefruit",
+          "src": [
+            { "s": "emc-7769", "q": "Administration of amlodipine with grapefruit or grapefruit juice is not recommended as bioavailability may be increased in some patients, resulting in increased blood pressure lowering effects." }
+          ]
+        },
+        {
+          "t": "Lithium: not recommended (raised lithium levels and toxicity); if used, monitor lithium levels carefully. Tacrolimus: monitor tacrolimus levels. Rifampicin, ciclosporin, ritonavir may raise valsartan exposure. Dantrolene infusion/malignant hyperthermia: avoid calcium-channel blockers.",
+          "tag": "Lithium, tacrolimus, others",
+          "detail": true,
+          "src": [
+            { "s": "emc-7769", "q": "Therefore, careful monitoring of serum lithium levels is recommended during concomitant use." },
+            { "s": "emc-7769", "q": "administration of amlodipine in a patient treated with tacrolimus requires monitoring of tacrolimus blood levels and dose adjustment of tacrolimus when appropriate." },
+            { "s": "emc-7769", "q": "Co-administration of inhibitors of the uptake transporter (rifampicin, ciclosporin) or efflux transporter (ritonavir) may increase the systemic exposure to valsartan." }
+          ]
+        },
+        {
+          "t": "No clinically significant interaction found between amlodipine and atorvastatin, digoxin, warfarin or ciclosporin pharmacokinetics, or between valsartan and warfarin, furosemide, atenolol, hydrochlorothiazide or glibenclamide.",
+          "tag": "No interaction found",
+          "detail": true,
+          "src": [
+            { "s": "emc-7769", "q": "amlodipine did not affect the pharmacokinetics of atorvastatin, digoxin, warfarin or ciclosporin." },
+            { "s": "emc-7769", "q": "cimetidine, warfarin, furosemide, digoxin, atenolol, indometacin, hydrochlorothiazide, amlodipine, glibenclamide." }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Mild to moderate renal impairment (GFR above 30 mL/min/1.73 m²): no dose adjustment. Moderate impairment: monitor potassium and creatinine.",
+          "tag": "SmPC (GFR)",
+          "src": [
+            { "s": "emc-7769", "q": "No dosage adjustment of Exforge is required for patients with mild to moderate renal impairment (GFR >30 ml/min/1.73 m2)." },
+            { "s": "emc-7769", "q": "Monitoring of potassium levels and creatinine is advised in moderate renal impairment." }
+          ]
+        },
+        {
+          "t": "Severe renal impairment: no clinical data available.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-7769", "q": "There are no available clinical data in severely renally impaired patients." }
+          ]
+        },
+        {
+          "t": "With aliskiren: contraindicated if GFR below 60 mL/min/1.73 m².",
+          "tag": "SmPC (GFR)",
+          "src": [
+            { "s": "emc-7769", "q": "Concomitant use of Exforge with aliskiren-containing products in patients with diabetes mellitus or renal impairment (GFR <60 ml/min/1.73 m2)" }
+          ]
+        },
+        {
+          "t": "SPS: seek specialist advice before starting if eGFR is below 30 mL/min/1.73 m².",
+          "tag": "SPS (eGFR)",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2" }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Severe hepatic impairment, biliary cirrhosis or cholestasis: contraindicated.",
+          "src": [
+            { "s": "emc-7769", "q": "Severe hepatic impairment, biliary cirrhosis or cholestasis." }
+          ]
+        },
+        {
+          "t": "Mild to moderate impairment without cholestasis: maximum valsartan 80 mg (the 160 mg valsartan strengths exceed this). Amlodipine dose not established; when switching use the lowest available amlodipine dose. Use with caution.",
+          "src": [
+            { "s": "emc-7769", "q": "In patients with mild to moderate hepatic impairment without cholestasis, the maximum recommended dose is 80 mg valsartan. Amlodipine dosage recommendations have not been established in patients with mild to moderate hepatic impairment." },
+            { "s": "emc-7769", "q": "When switching eligible hypertensive patients (see section 4.1) with hepatic impairment to amlodipine or Exforge, the lowest available dose of amlodipine monotherapy or of the amlodipine component, respectively, should be used." }
+          ]
+        },
+        {
+          "t": "Hepatic impairment raises amlodipine AUC about 40-60%; valsartan exposure about doubles in mild to moderate chronic liver disease.",
+          "detail": true,
+          "src": [
+            { "s": "emc-7769", "q": "Patients with hepatic impairment have decreased clearance of amlodipine with resulting increase of approximately 40-60% in AUC." },
+            { "s": "emc-7769", "q": "in patients with mild to moderate chronic liver disease exposure (measured by AUC values) to valsartan is twice that found in healthy volunteers" }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC (valsartan): not recommended in the first trimester; contraindicated in the second and third trimesters. Do not start in pregnancy; stop immediately when pregnancy is diagnosed and switch if appropriate. If exposed from the second trimester, ultrasound check of fetal renal function and skull; observe the newborn for hypotension.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-7769", "q": "The use of Angiotensin II Receptor Antagonists (AIIRAs) is not recommended during the first trimester of pregnancy" },
+            { "s": "emc-7769", "q": "The use of AIIRAs is contraindicated during the second and third trimesters of pregnancy" },
+            { "s": "emc-7769", "q": "When pregnancy is diagnosed, treatment with AIIRAs should be stopped immediately, and, if appropriate, alternative therapy should be started." },
+            { "s": "emc-7769", "q": "Should exposure to AIIRAs have occurred from the second trimester of pregnancy, ultrasound check of renal function and skull is recommended." }
+          ]
+        },
+        {
+          "t": "SmPC (amlodipine): safety in pregnancy not established; use only when there is no safer alternative and the disease carries greater risk.",
+          "tag": "SmPC",
+          "detail": true,
+          "src": [
+            { "s": "emc-7769", "q": "Use in pregnancy is only recommended when there is no safer alternative and when the disease itself carries greater risk for the mother and foetus." }
+          ]
+        },
+        {
+          "t": "MHRA: ACE inhibitors and ARBs should not be used at any stage of pregnancy unless absolutely necessary, and only after discussing risks and benefits. Stop as soon as possible on diagnosis.",
+          "tag": "MHRA",
+          "src": [
+            { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "ACE inhibitors and angiotensin II receptor antagonists should not be used at any stage of pregnancy unless absolutely necessary" },
+            { "s": "mhra-dsu-acei-arb-pregnancy", "q": "On diagnosis of pregnancy, treatment with an ACE inhibitor or angiotensin II receptor antagonist should be stopped as soon as possible" }
+          ]
+        },
+        {
+          "t": "BUMPS: ARBs are used in pregnancy only very rarely; early-pregnancy use is unlikely to harm the baby, but second/third-trimester use can cause oligohydramnios, fetal kidney damage, skull under-development, growth restriction, lung under-development and joint contractures. Extra monitoring if taken after about 20 weeks. Calcium-channel blockers: no clear risks.",
+          "tag": "BUMPS",
+          "src": [
+            { "s": "bumps-arbs", "q": "ARBs are only used in pregnancy very rarely when there is no safer option to treat a serious medical condition." },
+            { "s": "bumps-arbs", "q": "Taking an ARB in early pregnancy is unlikely to harm your baby." },
+            { "s": "bumps-arbs", "q": "Taking an ARB in the second or third trimester of pregnancy can cause a number of problems in your baby" },
+            { "s": "bumps-arbs", "q": "If you take an ARB after around 20 weeks you will require additional monitoring to assess amniotic fluid levels and your baby's growth and wellbeing." },
+            { "s": "bumps-calcium-channel-blockers", "q": "There are no clear risks of taking a calcium channel blocker in pregnancy." }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: amlodipine passes into milk (infant dose 3-7%, up to 15%); no information for the combination, so not recommended; prefer alternatives, especially with a newborn or preterm infant.",
+          "tag": "SmPC",
+          "src": [
+            { "s": "emc-7769", "q": "The proportion of the maternal dose received by the infant has been estimated with an interquartile range of 3-7%, with a maximum of 15%." },
+            { "s": "emc-7769", "q": "No information is available regarding the use of Exforge during breast-feeding, therefore Exforge is not recommended" }
+          ]
+        },
+        {
+          "t": "MHRA (2009): ARBs not recommended in breastfeeding; prefer alternatives, especially with a newborn or preterm baby. Clarification: not absolutely contraindicated; may be prescribed if essential for the mother.",
+          "tag": "MHRA",
+          "src": [
+            { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "For all angiotensin II receptor antagonists, use in mothers breastfeeding is not recommended." },
+            { "s": "mhra-dsu-acei-arb-breastfeeding-clarification", "q": "they are not absolutely contraindicated. Healthcare professionals may prescribe these medicines during breastfeeding if they consider that this treatment is essential for the lactating mother." }
+          ]
+        },
+        {
+          "t": "SPS (2023): valsartan and amlodipine can each be used with caution, but medicines with more breastfeeding evidence are preferred (nifedipine is the preferred dihydropyridine). Monitor the infant for hypotension (drowsiness, lethargy, pallor, poor feeding, poor weight gain) and, in younger infants, wet nappies.",
+          "tag": "SPS",
+          "src": [
+            { "s": "sps-arb-breastfeeding", "q": "Valsartan can be used with caution during breastfeeding if it is specifically clinically indicated. However a medicine from a different therapeutic class which has more evidence in breastfeeding is preferred." },
+            { "s": "sps-ccb-breastfeeding", "q": "It can be used with caution during breastfeeding, but nifedipine is the preferred dihydropyridine calcium-channel blocker." },
+            { "s": "sps-arb-breastfeeding", "q": "In younger infants, monitor for normal urine production (wet nappies)." }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Planning pregnancy: switch to an antihypertensive with an established pregnancy safety profile unless continued ARB treatment is essential.",
+          "src": [
+            { "s": "emc-7769", "q": "Unless continued AIIRA therapy is considered essential, patients planning pregnancy should be changed to alternative antihypertensive treatments which have an established safety profile for use in pregnancy." }
+          ]
+        },
+        {
+          "t": "No fertility studies with the combination. Reversible sperm-head changes reported with calcium-channel blockers; clinical data on amlodipine and fertility insufficient.",
+          "detail": true,
+          "src": [
+            { "s": "emc-7769", "q": "There are no clinical studies on fertility with Exforge." },
+            { "s": "emc-7769", "q": "Reversible biochemical changes in the head of spermatozoa have been reported in some patients treated by calcium channel blockers." }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common with the combination: nasopharyngitis, influenza, headache, oedema (peripheral, pitting, facial), flushing/hot flush, fatigue, asthenia.",
+          "src": [
+            { "s": "emc-7769", "q": "Nasopharyngitis Common -- -- Influenza Common -- --" },
+            { "s": "emc-7769", "q": "Headache Common Common --" },
+            { "s": "emc-7769", "q": "Asthenia Common Uncommon --" },
+            { "s": "emc-7769", "q": "Facial oedema Common -- -- Flushing, hot flush Common -- --" },
+            { "s": "emc-7769", "q": "Oedema Common Common -- Oedema peripheral Common -- --" }
+          ]
+        },
+        {
+          "t": "Common with amlodipine alone: somnolence, dizziness, palpitations, abdominal pain, nausea, ankle swelling. Peripheral oedema is less frequent with the combination than with amlodipine alone (mean 5.1%).",
+          "detail": true,
+          "src": [
+            { "s": "emc-7769", "q": "Amlodipine Common Somnolence, dizziness, palpitations, abdominal pain, nausea, ankle swelling." },
+            { "s": "emc-7769", "q": "The mean incidence of peripheral oedema evenly weighted across all doses was 5.1% with the amlodipine/valsartan combination." }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Angioedema (airway obstruction; swelling of face, lips, pharynx, tongue) and intestinal angioedema: stop immediately and do not give again.",
+          "src": [
+            { "s": "emc-7769", "q": "Angioedema, including swelling of the larynx and glottis, causing airway obstruction and/or swelling of the face, lips, pharynx and/or tongue, has been reported in patients treated with valsartan." },
+            { "s": "emc-7769", "q": "should be discontinued immediately in patients who develop angioedema and should not be re-administered." }
+          ]
+        },
+        {
+          "t": "Hyperkalaemia, renal failure and impairment, raised creatinine (valsartan, frequency not known); hyponatraemia (uncommon).",
+          "src": [
+            { "s": "emc-7769", "q": "Investigations Blood potassium increased -- -- Not known" },
+            { "s": "emc-7769", "q": "Renal failure and impairment -- -- Not known" },
+            { "s": "emc-7769", "q": "Hyponatraemia Uncommon -- --" }
+          ]
+        },
+        {
+          "t": "Very rare (amlodipine): myocardial infarction, arrhythmias, pancreatitis, hepatitis, jaundice, leucopenia, thrombocytopenia, Stevens-Johnson syndrome; toxic epidermal necrolysis (not known).",
+          "detail": true,
+          "src": [
+            { "s": "emc-7769", "q": "Very rare Leukocytopenia, thrombocytopenia, allergic reactions, hyperglycaemia, hypertonia, peripheral neuropathy, myocardial infarction, arrhythmia" },
+            { "s": "emc-7769", "q": "vasculitis, pancreatitis, gastritis, gingival hyperplasia, hepatitis, jaundice, hepatic enzymes increased*, angioedema, erythema multiforme, urticaria, exfoliative dermatitis, Stevens-Johnson syndrome" },
+            { "s": "emc-7769", "q": "Not known Toxic Epidermal Necrolysis" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "SPS baseline: blood pressure, eGFR or serum creatinine, potassium, sodium. Starting not normally appropriate if potassium above 5.0 mmol/L.",
+          "tag": "baseline",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Baseline Blood pressure Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Serum potassium Serum sodium" },
+            { "s": "sps-acei-arb-monitoring", "q": "Initiation not normally appropriate if pre-treatment potassium greater than 5.0mmol/L" }
+          ]
+        },
+        {
+          "t": "SPS hypertension: renal function, sodium and potassium within 1-2 weeks of starting or a dose change; blood pressure within 1 month; then annually. SmPC: potassium and creatinine in moderate renal impairment; renal function in heart failure or post-MI.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Hypertension Within 1 - 2 weeks Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Serum sodium Serum potassium Within 1 month Blood pressure" },
+            { "s": "sps-acei-arb-monitoring", "q": "Hypertension Annually Serum sodium Serum potassium" },
+            { "s": "emc-7769", "q": "Monitoring of potassium levels and creatinine is advised in moderate renal impairment." }
+          ]
+        },
+        {
+          "t": "SPS abnormal results: potassium 6.0 mmol/L or above in CKD - stop the ARB after stopping other potassium-raising drugs and seek specialist advice; sodium below 132 mmol/L - specialist advice.",
+          "tag": "stop",
+          "src": [
+            { "s": "sps-acei-arb-monitoring", "q": "Value 6.0 mmol/L or above in people with CKD Stop ACEI/ARB after stopping other drugs that may increase potassium and seek specialist advice." },
+            { "s": "sps-acei-arb-monitoring", "q": "Sodium Value is below 132mmol/L Obtain specialist advice" }
+          ]
+        },
+        {
+          "t": "Angioedema: stop immediately and do not restart.",
+          "tag": "stop",
+          "src": [
+            { "s": "emc-7769", "q": "should be discontinued immediately in patients who develop angioedema and should not be re-administered." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral, once daily, with some water; with or without food.",
+          "src": [
+            { "s": "emc-7769", "q": "can be used with or without food." },
+            { "s": "emc-7769", "q": "It is recommended to take Exforge with some water." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Dizziness or tiredness may occur; take this into account when driving or using machines.",
+          "src": [
+            { "s": "emc-7769", "q": "should take into account that dizziness or weariness may occasionally occur." }
+          ]
+        },
+        {
+          "t": "Avoid grapefruit and grapefruit juice.",
+          "src": [
+            { "s": "emc-7769", "q": "Administration of amlodipine with grapefruit or grapefruit juice is not recommended" }
+          ]
+        },
+        {
+          "t": "Planning pregnancy or pregnant: contact the doctor to switch medicine.",
+          "src": [
+            { "s": "bumps-arbs", "q": "If you find out that you are pregnant whilst taking an ARB, you should contact your doctor as soon as possible so that you can be switched to another medicine." }
+          ]
+        },
+        {
+          "t": "Stop and seek help at once for swelling of the face, lips, tongue or throat or difficulty breathing.",
+          "src": [
+            { "s": "emc-7769", "q": "should be discontinued immediately in patients who develop angioedema and should not be re-administered." }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "amlodipine-valsartan:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "amlodipine-valsartan",
+      "allergen": ["amlodipine", "valsartan", "group:dihydropyridine"],
+      "concern": "Hypersensitivity to amlodipine, valsartan or other dihydropyridines",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-7769", "q": "Hypersensitivity to the active substances, to dihydropyridine derivatives, or to any of the excipients listed in section 6.1." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:allergy:ace-inhibitor-angioedema",
+      "kind": "allergy",
+      "level": "info",
+      "med": "amlodipine-valsartan",
+      "allergen": ["group:ace-inhibitor"],
+      "reactions": ["immediate-severe"],
+      "concern": "Previous angioedema with an ACE inhibitor or other medicine",
+      "consequence": "Some patients with valsartan angioedema had previous angioedema with other medicines, including ACE inhibitors.",
+      "action": "Be aware; stop immediately and do not re-administer if angioedema develops.",
+      "sourceWording": "should be discontinued immediately",
+      "src": [
+        { "s": "emc-7769", "q": "Some of these patients previously experienced angioedema with other medicinal products, including ACE inhibitors." },
+        { "s": "emc-7769", "q": "should be discontinued immediately in patients who develop angioedema and should not be re-administered." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:angioedema-history-other",
+      "kind": "condition",
+      "level": "info",
+      "med": "amlodipine-valsartan",
+      "condition": "angioedema-history-other",
+      "concern": "History of angioedema",
+      "consequence": "Some patients with valsartan angioedema had previous angioedema with other medicines.",
+      "action": "Be aware; stop immediately and do not re-administer if angioedema develops.",
+      "sourceWording": "should be discontinued immediately",
+      "src": [
+        { "s": "emc-7769", "q": "Some of these patients previously experienced angioedema with other medicinal products, including ACE inhibitors." },
+        { "s": "emc-7769", "q": "should be discontinued immediately in patients who develop angioedema and should not be re-administered." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "amlodipine-valsartan",
+      "hepatic": ["severe"],
+      "concern": "Severe hepatic impairment",
+      "consequence": "Valsartan is mostly eliminated in bile; amlodipine exposure rises in liver impairment.",
+      "action": "Do not use.",
+      "sourceWording": "is contraindicated in patients with severe hepatic impairment",
+      "src": [
+        { "s": "emc-7769", "q": "Severe hepatic impairment, biliary cirrhosis or cholestasis." },
+        { "s": "emc-7769", "q": "Exforge is contraindicated in patients with severe hepatic impairment (see section 4.3)." },
+        { "s": "emc-7769", "q": "Valsartan is mostly eliminated unchanged via the bile." },
+        { "s": "emc-7769", "q": "Patients with hepatic impairment have decreased clearance of amlodipine with resulting increase of approximately 40-60% in AUC." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:cholestasis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "amlodipine-valsartan",
+      "condition": "cholestasis-biliary-obstruction",
+      "concern": "Biliary cirrhosis or cholestasis",
+      "consequence": "Valsartan is mostly eliminated unchanged via the bile.",
+      "action": "Do not use. Biliary obstructive disorders without cholestasis: particular caution.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-7769", "q": "Severe hepatic impairment, biliary cirrhosis or cholestasis." },
+        { "s": "emc-7769", "q": "Valsartan is mostly eliminated unchanged via the bile." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:hepatic:mild-moderate",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "amlodipine-valsartan",
+      "hepatic": ["mild", "moderate"],
+      "concern": "Mild to moderate hepatic impairment",
+      "consequence": "Higher amlodipine and valsartan exposure; the 160 mg valsartan strengths exceed the hepatic maximum.",
+      "action": "Particular caution; maximum valsartan 80 mg (without cholestasis); use the lowest available amlodipine dose when switching.",
+      "sourceWording": "the maximum recommended dose is 80 mg valsartan",
+      "src": [
+        { "s": "emc-7769", "q": "In patients with mild to moderate hepatic impairment without cholestasis, the maximum recommended dose is 80 mg valsartan." },
+        { "s": "emc-7769", "q": "Particular caution should be exercised when administering Exforge to patients with mild to moderate hepatic impairment or biliary obstructive disorders." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:pregnancy:t2-t3",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "amlodipine-valsartan",
+      "trimesters": [2, 3],
+      "concern": "Second or third trimester",
+      "consequence": "Fetotoxicity (reduced renal function, oligohydramnios, skull ossification retardation) and neonatal toxicity (renal failure, hypotension, hyperkalaemia).",
+      "action": "Do not use; stop and switch to an alternative.",
+      "sourceWording": "contraindicated during the second and third trimesters",
+      "src": [
+        { "s": "emc-7769", "q": "The use of AIIRAs is contraindicated during the second and third trimesters of pregnancy" },
+        { "s": "emc-7769", "q": "Exposure to AIIRA therapy during the second and third trimesters is known to induce human foetotoxicity" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:pregnancy:t1",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "amlodipine-valsartan",
+      "trimesters": [1],
+      "concern": "First trimester",
+      "consequence": "A small increase in teratogenic risk cannot be excluded.",
+      "action": "Not recommended; do not start; stop when pregnancy is diagnosed and start an alternative if appropriate.",
+      "sourceWording": "not recommended during the first trimester",
+      "src": [
+        { "s": "emc-7769", "q": "The use of Angiotensin II Receptor Antagonists (AIIRAs) is not recommended during the first trimester of pregnancy" },
+        { "s": "emc-7769", "q": "Angiotensin II Receptor Antagonists (AIIRAs) should not be initiated during pregnancy." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:pregnancy:mhra",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "amlodipine-valsartan",
+      "concern": "Pregnancy (MHRA advice, any stage)",
+      "consequence": "Late-pregnancy renal dysfunction, oligohydramnios, neonatal anuria, skull ossification defects; first-trimester risk cannot be excluded.",
+      "action": "Do not use at any stage unless absolutely necessary, after discussing risks and benefits; stop as soon as possible on diagnosis.",
+      "sourceWording": "should not be used at any stage of pregnancy unless absolutely necessary",
+      "src": [
+        { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "ACE inhibitors and angiotensin II receptor antagonists should not be used at any stage of pregnancy unless absolutely necessary" },
+        { "s": "mhra-dsu-acei-arb-pregnancy", "q": "On diagnosis of pregnancy, treatment with an ACE inhibitor or angiotensin II receptor antagonist should be stopped as soon as possible" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:breastfeeding:smpc-mhra",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "amlodipine-valsartan",
+      "concern": "Breastfeeding (SmPC and MHRA)",
+      "consequence": "Amlodipine passes into milk; no information for the combination; effects on the infant unknown.",
+      "action": "Not recommended; prefer alternatives, especially with a newborn or preterm infant. MHRA: not absolutely contraindicated if essential for the mother.",
+      "sourceWording": "is not recommended",
+      "src": [
+        { "s": "emc-7769", "q": "No information is available regarding the use of Exforge during breast-feeding, therefore Exforge is not recommended" },
+        { "s": "mhra-dsu-acei-arb-breastfeeding", "q": "For all angiotensin II receptor antagonists, use in mothers breastfeeding is not recommended." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Valsartan expected in milk in low amounts; amlodipine in very small amounts but with long half-life.",
+      "action": "Each component can be used with caution; other medicines preferred (nifedipine among dihydropyridines). Monitor the infant for hypotension and wet nappies.",
+      "sourceWording": "can be used with caution during breastfeeding",
+      "src": [
+        { "s": "sps-arb-breastfeeding", "q": "Valsartan can be used with caution during breastfeeding if it is specifically clinically indicated." },
+        { "s": "sps-ccb-breastfeeding", "q": "It can be used with caution during breastfeeding, but nifedipine is the preferred dihydropyridine calcium-channel blocker." },
+        { "s": "sps-arb-breastfeeding", "q": "it would be expected to be excreted into breast milk in low amounts" },
+        { "s": "sps-ccb-breastfeeding", "q": "Amlodipine is excreted into breast milk usually in very small amounts." },
+        { "s": "sps-ccb-breastfeeding", "q": "It has a very long half life" },
+        { "s": "sps-arb-breastfeeding", "q": "monitor the infant for hypotension which may manifest as drowsiness, lethargy, looking pale, poor feeding and inadequate weight gain. In younger infants, monitor for normal urine production (wet nappies)." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:renal-impairment-moderate",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "amlodipine-valsartan",
+      "condition": "renal-impairment",
+      "concern": "Moderate renal impairment (the SmPC gives no GFR band for moderate)",
+      "consequence": "No dose adjustment is needed in mild to moderate renal impairment (GFR above 30 mL/min/1.73 m²), but potassium and creatinine should be checked in moderate impairment.",
+      "action": "No dose adjustment; monitor potassium and creatinine in moderate renal impairment.",
+      "sourceWording": "Monitoring of potassium levels and creatinine is advised",
+      "src": [
+        { "s": "emc-7769", "q": "No dosage adjustment of Exforge is required for patients with mild to moderate renal impairment (GFR >30 ml/min/1.73 m2)." },
+        { "s": "emc-7769", "q": "Monitoring of potassium levels and creatinine is advised in moderate renal impairment." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:renal:gfr-30-or-less",
+      "kind": "renal",
+      "level": "info",
+      "med": "amlodipine-valsartan",
+      "renal": { "measure": "GFR", "max": 30, "maxInclusive": true },
+      "concern": "GFR 30 mL/min/1.73 m² or below (outside the no-adjustment range; severe impairment)",
+      "consequence": "No clinical data in severe renal impairment; the no-adjustment advice covers GFR above 30 only.",
+      "action": "No dose recommendation given; see SPS rule (specialist advice if eGFR below 30).",
+      "sourceWording": "There are no available clinical data",
+      "src": [
+        { "s": "emc-7769", "q": "There are no available clinical data in severely renally impaired patients." },
+        { "s": "emc-7769", "q": "mild to moderate renal impairment (GFR >30 ml/min/1.73 m2)" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:renal:egfr-under-30-sps",
+      "kind": "renal",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "renal": { "measure": "eGFR", "max": 30 },
+      "concern": "eGFR below 30 mL/min/1.73 m² (SPS)",
+      "consequence": "SPS lists eGFR below 30 among the situations that need specialist advice before an ARB is started.",
+      "action": "Seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:age:under-18",
+      "kind": "age",
+      "level": "info",
+      "med": "amlodipine-valsartan",
+      "age": { "maxYears": 18 },
+      "concern": "Under 18 years",
+      "consequence": "Safety and efficacy not established; no data.",
+      "action": "Not established for use under 18 years.",
+      "sourceWording": "have not been established",
+      "src": [
+        { "s": "emc-7769", "q": "The safety and efficacy of Exforge in children aged below 18 years have not been established. No data are available." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:age:65-plus",
+      "kind": "age",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "age": { "minYears": 65 },
+      "concern": "Elderly (65 years or over)",
+      "consequence": "Amlodipine clearance tends to decline with age.",
+      "action": "Caution when increasing the dose; use the lowest available amlodipine dose when switching.",
+      "sourceWording": "caution is required when increasing the dosage",
+      "src": [
+        { "s": "emc-7769", "q": "In elderly patients, caution is required when increasing the dosage." },
+        { "s": "emc-7769", "q": "In elderly patients, amlodipine clearance tends to decline, causing increases in the area under the curve (AUC) and elimination half-life." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:hypotension",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "amlodipine-valsartan",
+      "condition": "hypotension",
+      "concern": "Severe hypotension",
+      "consequence": "Further fall in blood pressure.",
+      "action": "Do not use in severe hypotension. SPS: specialist advice before starting if systolic BP below 90 mmHg.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-7769", "q": "Second and third trimesters of pregnancy (see sections 4.4 and 4.6). Severe hypotension." },
+        { "s": "sps-acei-arb-monitoring", "q": "hypotension (systolic blood pressure less than 90mmHg)" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:cardiogenic-shock",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "amlodipine-valsartan",
+      "condition": "cardiogenic-shock",
+      "concern": "Shock (including cardiogenic shock)",
+      "consequence": "Further haemodynamic deterioration.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-7769", "q": "Shock (including cardiogenic shock)." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:aortic-stenosis-high-grade",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "amlodipine-valsartan",
+      "condition": "aortic-stenosis",
+      "concern": "High-grade aortic stenosis (left ventricular outflow obstruction)",
+      "consequence": "Vasodilatation with fixed outflow obstruction.",
+      "action": "Do not use in high-grade aortic stenosis.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-7769", "q": "Obstruction of the outflow tract of the left ventricle (e.g. hypertrophic obstructive cardiomyopathy and high grade aortic stenosis)." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:aortic-stenosis-not-high-grade",
+      "kind": "condition",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "condition": "aortic-stenosis",
+      "concern": "Significant aortic stenosis that is not high grade",
+      "consequence": "Vasodilator effect with valve obstruction.",
+      "action": "Special caution.",
+      "sourceWording": "special caution is indicated",
+      "src": [
+        { "s": "emc-7769", "q": "special caution is indicated in patients suffering from mitral stenosis or significant aortic stenosis that is not high grade." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:hocm",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "amlodipine-valsartan",
+      "condition": "hocm",
+      "concern": "Hypertrophic obstructive cardiomyopathy",
+      "consequence": "Left ventricular outflow obstruction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-7769", "q": "Obstruction of the outflow tract of the left ventricle (e.g. hypertrophic obstructive cardiomyopathy and high grade aortic stenosis)." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:mitral-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "condition": "mitral-stenosis",
+      "concern": "Mitral stenosis",
+      "consequence": "Vasodilator effect with fixed valve obstruction.",
+      "action": "Special caution.",
+      "sourceWording": "special caution is indicated",
+      "src": [
+        { "s": "emc-7769", "q": "special caution is indicated in patients suffering from mitral stenosis" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:unstable-heart-failure-post-mi",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "amlodipine-valsartan",
+      "condition": "unstable-heart-failure-post-mi",
+      "concern": "Haemodynamically unstable heart failure after acute myocardial infarction",
+      "consequence": "Risk of haemodynamic deterioration.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-7769", "q": "Haemodynamically unstable heart failure after acute myocardial infarction." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "condition": "heart-failure",
+      "concern": "Congestive heart failure",
+      "consequence": "Calcium-channel blockers may increase future cardiovascular events and mortality; in severe heart failure RAAS inhibition can cause oliguria, azotaemia and rarely acute renal failure.",
+      "action": "Use with caution; always assess renal function.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-7769", "q": "Calcium channel blockers, including amlodipine, should be used with caution in patients with congestive heart failure, as they may increase the risk of future cardiovascular events and mortality." },
+        { "s": "emc-7769", "q": "Evaluation of patients with heart failure or post-myocardial infarction should always include assessment of renal function." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "condition": "severe-heart-failure",
+      "concern": "Severe or unstable heart failure",
+      "consequence": "Renal function may depend on the RAAS; oliguria, progressive azotaemia, rarely acute renal failure or death reported.",
+      "action": "Assess renal function; SPS: seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "emc-7769", "q": "In patients with severe heart failure whose renal function may depend on the activity of the renin-angiotensin-aldosterone system, treatment with ACE inhibitors and angiotensin receptor antagonists has been associated with oliguria and/or progressive azotaemia" },
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:renal-artery-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "condition": "renal-artery-stenosis",
+      "concern": "Renal artery stenosis (bilateral, unilateral or solitary kidney)",
+      "consequence": "Blood urea and serum creatinine may increase.",
+      "action": "Use with caution. SPS: specialist advice before starting in renovascular disease.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-7769", "q": "should be used with caution to treat hypertension in patients with unilateral or bilateral renal artery stenosis or stenosis to a solitary kidney" },
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:recent-kidney-transplant",
+      "kind": "condition",
+      "level": "info",
+      "med": "amlodipine-valsartan",
+      "condition": "recent-kidney-transplant",
+      "concern": "Recent kidney transplant",
+      "consequence": "No experience of safe use.",
+      "action": "No experience; no specific recommendation given.",
+      "sourceWording": "there is no experience of the safe use",
+      "src": [
+        { "s": "emc-7769", "q": "To date there is no experience of the safe use of Exforge in patients who have had a recent kidney transplantation." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:primary-hyperaldosteronism",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "amlodipine-valsartan",
+      "condition": "primary-hyperaldosteronism",
+      "concern": "Primary hyperaldosteronism",
+      "consequence": "The renin-angiotensin system is affected by the primary disease.",
+      "action": "Should not be treated with valsartan.",
+      "sourceWording": "should not be treated with the angiotensin II antagonist valsartan",
+      "src": [
+        { "s": "emc-7769", "q": "Patients with primary hyperaldosteronism should not be treated with the angiotensin II antagonist valsartan as their renin-angiotensin system is affected by the primary disease." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:dehydration",
+      "kind": "condition",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "condition": "dehydration-hypovolaemia",
+      "concern": "Sodium and/or volume depletion (e.g. high-dose diuretics)",
+      "consequence": "Symptomatic hypotension may occur.",
+      "action": "Correct before starting or give close medical supervision at the start of treatment. SPS: seek specialist advice before starting in hypovolaemia.",
+      "sourceWording": "Correction of this condition prior to administration ... or close medical supervision",
+      "src": [
+        { "s": "emc-7769", "q": "In patients with an activated renin-angiotensin system (such as volume- and/or salt-depleted patients receiving high doses of diuretics) who are receiving angiotensin receptor blockers, symptomatic hypotension may occur." },
+        { "s": "emc-7769", "q": "Correction of this condition prior to administration of Exforge or close medical supervision at the start of treatment is recommended." },
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is:" },
+        { "s": "sps-acei-arb-monitoring", "q": "hyponatraemia (sodium less than 130mmol/L) hypovolaemia" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:hyperkalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "condition": "hyperkalaemia",
+      "concern": "Raised potassium before starting",
+      "consequence": "Valsartan can raise serum potassium.",
+      "action": "SPS: starting not normally appropriate if potassium is above 5.0 mmol/L.",
+      "sourceWording": "Initiation not normally appropriate",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "Initiation not normally appropriate if pre-treatment potassium greater than 5.0mmol/L" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "condition": "hyponatraemia",
+      "concern": "Hyponatraemia (sodium below 130 mmol/L)",
+      "consequence": "Higher risk of problems on starting an ARB.",
+      "action": "SPS: seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        { "s": "sps-acei-arb-monitoring", "q": "hyponatraemia (sodium less than 130mmol/L)" },
+        { "s": "sps-acei-arb-monitoring", "q": "Seek specialist advice prior to initiation for patients where there is:" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:condition:malignant-hyperthermia",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "amlodipine-valsartan",
+      "condition": "malignant-hyperthermia-susceptibility",
+      "concern": "Susceptibility to malignant hyperthermia (dantrolene infusion)",
+      "consequence": "Risk of hyperkalaemia with calcium-channel blockers and IV dantrolene.",
+      "action": "Avoid calcium-channel blockers such as amlodipine.",
+      "sourceWording": "it is recommended that the co-administration ... be avoided",
+      "src": [
+        { "s": "emc-7769", "q": "it is recommended that the co-administration of calcium channel blockers such as amlodipine be avoided in patients susceptible to malignant hyperthermia and in the management of malignant hyperthermia." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:simvastatin",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "amlodipine-valsartan",
+      "other": "simvastatin",
+      "effect": "myopathy",
+      "concern": "Simvastatin",
+      "consequence": "Amlodipine raises simvastatin exposure (77% with simvastatin 80 mg); more myopathy at higher simvastatin doses.",
+      "action": "Limit simvastatin to 20 mg daily.",
+      "sourceWording": "limit the dose of simvastatin to 20 mg daily",
+      "src": [
+        { "s": "emc-7769", "q": "Co-administration of multiple doses of 10 mg amlodipine with 80 mg simvastatin resulted in a 77% increase in exposure to simvastatin compared to simvastatin alone." },
+        { "s": "emc-7769", "q": "It is recommended to limit the dose of simvastatin to 20 mg daily in patients on amlodipine." },
+        { "s": "mhra-dsu-simvastatin-amlodipine-diltiazem", "q": "the maximum daily dose of simvastatin should not exceed 20 mg when co-administered with amlodipine or diltiazem" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "other": "group:cyp3a4-inhibitor",
+      "effect": "hypotension",
+      "concern": "Strong or moderate CYP3A4 inhibitors",
+      "consequence": "Significant increase in amlodipine exposure; more pronounced in the elderly.",
+      "action": "Caution: clinical monitoring; dose adjustment may be needed.",
+      "sourceWording": "Caution required with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "Concomitant use of amlodipine with strong or moderate CYP3A4 inhibitors (protease inhibitors, azole antifungals, macrolides like erythromycin or clarithromycin, verapamil or diltiazem) may give rise to significant increase in amlodipine exposure." },
+        { "s": "emc-7769", "q": "Clinical monitoring and dose adjustment may thus be required." },
+        { "s": "emc-7769", "q": "Caution required with concomitant use CYP3A4 inhibitors" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:clarithromycin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "other": "clarithromycin",
+      "effect": "hypotension",
+      "concern": "Clarithromycin",
+      "consequence": "Significant increase in amlodipine exposure.",
+      "action": "Caution: clinical monitoring; dose adjustment may be needed.",
+      "sourceWording": "Caution required with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "macrolides like erythromycin or clarithromycin" },
+        { "s": "emc-7769", "q": "Clinical monitoring and dose adjustment may thus be required." },
+        { "s": "emc-7769", "q": "Caution required with concomitant use CYP3A4 inhibitors" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:fluconazole",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "other": "fluconazole",
+      "effect": "hypotension",
+      "concern": "Azole antifungals (fluconazole)",
+      "consequence": "Significant increase in amlodipine exposure.",
+      "action": "Caution: clinical monitoring; dose adjustment may be needed.",
+      "sourceWording": "Caution required with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "Concomitant use of amlodipine with strong or moderate CYP3A4 inhibitors (protease inhibitors, azole antifungals" },
+        { "s": "emc-7769", "q": "Clinical monitoring and dose adjustment may thus be required." },
+        { "s": "emc-7769", "q": "Caution required with concomitant use CYP3A4 inhibitors" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:verapamil",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "other": "verapamil",
+      "effect": "hypotension",
+      "concern": "Verapamil",
+      "consequence": "Significant increase in amlodipine exposure; additive blood pressure lowering.",
+      "action": "Caution: clinical monitoring; dose adjustment may be needed.",
+      "sourceWording": "Caution required with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "verapamil or diltiazem) may give rise to significant increase in amlodipine exposure." },
+        { "s": "emc-7769", "q": "Clinical monitoring and dose adjustment may thus be required." },
+        { "s": "emc-7769", "q": "Caution required with concomitant use CYP3A4 inhibitors" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:diltiazem",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "other": "diltiazem",
+      "effect": "hypotension",
+      "concern": "Diltiazem",
+      "consequence": "Significant increase in amlodipine exposure; additive blood pressure lowering.",
+      "action": "Caution: clinical monitoring; dose adjustment may be needed.",
+      "sourceWording": "Caution required with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "verapamil or diltiazem) may give rise to significant increase in amlodipine exposure." },
+        { "s": "emc-7769", "q": "Clinical monitoring and dose adjustment may thus be required." },
+        { "s": "emc-7769", "q": "Caution required with concomitant use CYP3A4 inhibitors" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:cyp3a4-inducer",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "other": "group:cyp3a4-inducer",
+      "concern": "CYP3A4 inducers",
+      "consequence": "Amlodipine plasma levels may vary (reduced effect possible).",
+      "action": "Caution: monitor blood pressure and consider dose regulation during and after use, particularly with strong inducers.",
+      "sourceWording": "Caution required with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "Caution required with concomitant use CYP3A4 inhibitors" },
+        { "s": "emc-7769", "q": "Upon co-administration of known inducers of the CYP3A4, the plasma concentration of amlodipine may vary." },
+        { "s": "emc-7769", "q": "blood pressure should be monitored and dose regulation considered both during and after concomitant medication particularly with strong CYP3A4 inducers (e.g. rifampicin, hypericum perforatum)." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "other": "carbamazepine",
+      "concern": "Carbamazepine (CYP3A4 inducer)",
+      "consequence": "Amlodipine plasma levels may vary.",
+      "action": "Caution: monitor blood pressure and consider dose regulation during and after use.",
+      "sourceWording": "Caution required with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "Caution required with concomitant use CYP3A4 inhibitors" },
+        { "s": "emc-7769", "q": "CYP3A4 inducers (anticonvulsant agents [e.g. carbamazepine, phenobarbital, phenytoin, fosphenytoin, primidone], rifampicin, Hypericum perforatum)" },
+        { "s": "emc-7769", "q": "Therefore, blood pressure should be monitored and dose regulation considered both during and after concomitant medication" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:st-johns-wort",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "other": "st-johns-wort",
+      "concern": "St John's wort (strong CYP3A4 inducer)",
+      "consequence": "Amlodipine plasma levels may vary.",
+      "action": "Caution: monitor blood pressure and consider dose regulation during and after use.",
+      "sourceWording": "Caution required with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "Caution required with concomitant use CYP3A4 inhibitors" },
+        { "s": "emc-7769", "q": "blood pressure should be monitored and dose regulation considered both during and after concomitant medication particularly with strong CYP3A4 inducers (e.g. rifampicin, hypericum perforatum)." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:potassium-sparing-diuretic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "amlodipine-valsartan",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics (e.g. spironolactone)",
+      "consequence": "Raised serum potassium.",
+      "action": "Listed as 'concomitant use not recommended'; if used, caution with frequent potassium monitoring.",
+      "sourceWording": "Concomitant use not recommended",
+      "src": [
+        { "s": "emc-7769", "q": "Interactions linked to valsartan Concomitant use not recommended" },
+        { "s": "emc-7769", "q": "Potassium-sparing diuretics, potassium supplements, salt substitutes containing potassium and other substances that may increase potassium levels" },
+        { "s": "emc-7769", "q": "should be undertaken with caution and with frequent monitoring of potassium levels." },
+        { "s": "mhra-dsu-spironolactone-ras-hyperkalaemia", "q": "concomitant use of spironolactone with ACEi or ARB increases the risk of severe hyperkalaemia, particularly in patients with marked renal impairment, and should be used with caution" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:potassium-supplement",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "amlodipine-valsartan",
+      "other": "group:potassium-supplement",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium supplements or potassium salt substitutes",
+      "consequence": "Raised serum potassium.",
+      "action": "Listed as 'concomitant use not recommended'; if used, caution with frequent potassium monitoring.",
+      "sourceWording": "Concomitant use not recommended",
+      "src": [
+        { "s": "emc-7769", "q": "Interactions linked to valsartan Concomitant use not recommended" },
+        { "s": "emc-7769", "q": "Potassium-sparing diuretics, potassium supplements, salt substitutes containing potassium and other substances that may increase potassium levels" },
+        { "s": "emc-7769", "q": "should be undertaken with caution and with frequent monitoring of potassium levels." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:nsaid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "other": "group:nsaid",
+      "effect": "nephrotoxicity",
+      "concern": "NSAIDs (including COX-2 inhibitors)",
+      "consequence": "Reduced antihypertensive effect; worsening renal function and raised potassium.",
+      "action": "Caution; monitor renal function at the start and keep the patient adequately hydrated.",
+      "sourceWording": "Caution required with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "Caution required with concomitant use Non-steroidal anti-inflammatory medicines (NSAIDs), including selective COX-2 inhibitors" },
+        { "s": "emc-7769", "q": "concomitant use of angiotensin II antagonists and NSAIDs may lead to an increased risk of worsening of renal function and an increase in serum potassium." },
+        { "s": "emc-7769", "q": "Therefore, monitoring of renal function at the beginning of the treatment is recommended, as well as adequate hydration of the patient." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "amlodipine-valsartan",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "ACE inhibitors (dual RAAS blockade)",
+      "consequence": "More hypotension, hyperkalaemia and reduced renal function (including acute renal failure).",
+      "action": "Not recommended; if absolutely necessary only under specialist supervision with close monitoring. ACE inhibitors and ARBs should not be used together in diabetic nephropathy.",
+      "sourceWording": "is therefore not recommended",
+      "src": [
+        { "s": "emc-7769", "q": "Dual blockade of RAAS through the combined use of ACE inhibitors, ARBs or aliskiren is therefore not recommended" },
+        { "s": "emc-7769", "q": "ACE inhibitors and ARBs should not be used concomitantly in patients with diabetic nephropathy." },
+        { "s": "mhra-dsu-ras-combination", "q": "Combination use of medicines from two classes of RAS blocking agents (ACE-inhibitors, ARBs, or aliskiren) is not recommended." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:arb",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "amlodipine-valsartan",
+      "other": "group:arb",
+      "effect": "hyperkalaemia",
+      "concern": "Another angiotensin II receptor blocker",
+      "consequence": "Dual RAAS blockade: more hypotension, hyperkalaemia and reduced renal function.",
+      "action": "Not recommended.",
+      "sourceWording": "is therefore not recommended",
+      "src": [
+        { "s": "emc-7769", "q": "Dual blockade of RAAS through the combined use of ACE inhibitors, ARBs or aliskiren is therefore not recommended" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "amlodipine-valsartan",
+      "other": "group:diuretic",
+      "effect": "hypotension",
+      "concern": "Diuretics (caution applies mainly to high doses with salt or volume depletion)",
+      "consequence": "May increase the blood pressure-lowering effect; symptomatic hypotension may occur in salt- or volume-depleted patients on high-dose diuretics.",
+      "action": "With high-dose diuretics: correct volume depletion first or give close medical supervision at the start. SPS: seek specialist advice before starting with multiple or high-dose diuretics (furosemide 80 mg daily or equivalent, or more).",
+      "sourceWording": "close medical supervision at the start of treatment is recommended",
+      "src": [
+        { "s": "emc-7769", "q": "Commonly used antihypertensive agents (e.g. alpha blockers, diuretics)" },
+        { "s": "emc-7769", "q": "(such as volume- and/or salt-depleted patients receiving high doses of diuretics)" },
+        { "s": "emc-7769", "q": "Correction of this condition prior to administration of Exforge or close medical supervision at the start of treatment is recommended." },
+        { "s": "sps-acei-arb-monitoring", "q": "concomitant multiple or high-dose diuretics (equivalent to 80mg furosemide daily or more)" }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:alpha-blocker",
+      "kind": "interaction",
+      "level": "info",
+      "med": "amlodipine-valsartan",
+      "other": "group:alpha-blocker",
+      "effect": "hypotension",
+      "concern": "Alpha blockers (including for benign prostatic hyperplasia)",
+      "consequence": "May increase the blood pressure-lowering effect.",
+      "action": "Take into account when used together.",
+      "sourceWording": "To be taken into account with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "alpha blockers for treatment of benign prostate hyperplasia) may increase the antihypertensive effect of the combination." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:tricyclic-antidepressant",
+      "kind": "interaction",
+      "level": "info",
+      "med": "amlodipine-valsartan",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hypotension",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "May increase the blood pressure-lowering effect.",
+      "action": "Take into account when used together.",
+      "sourceWording": "To be taken into account with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "other medicinal products which may cause hypotensive adverse effects (e.g. tricyclic antidepressants" },
+        { "s": "emc-7769", "q": "may increase the antihypertensive effect of the combination." }
+      ]
+    },
+    {
+      "id": "amlodipine-valsartan:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "amlodipine-valsartan",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Other antihypertensives",
+      "consequence": "May increase the blood pressure-lowering effect.",
+      "action": "Take into account when used together.",
+      "sourceWording": "To be taken into account with concomitant use",
+      "src": [
+        { "s": "emc-7769", "q": "To be taken into account with concomitant use Other antihypertensive agents" },
+        { "s": "emc-7769", "q": "may increase the antihypertensive effect of the combination." }
+      ]
+    }
+  ]
+}

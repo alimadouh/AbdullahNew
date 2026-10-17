@@ -1,0 +1,322 @@
+{
+  "id": "dulaglutide",
+  "name": "Dulaglutide",
+  "ingredients": ["dulaglutide"],
+  "className": "Long-acting glucagon-like peptide-1 (GLP-1) receptor agonist",
+  "groups": ["glp1-agonist", "antidiabetic"],
+  "searchTerms": ["GLP-1 receptor agonist", "once-weekly GLP-1"],
+  "formulations": [
+    {
+      "id": "dulaglutide-pen",
+      "label": "Solution for injection in single-dose pre-filled pen (once weekly)",
+      "route": "subcutaneous",
+      "strengths": "0.75 mg, 1.5 mg, 3 mg, 4.5 mg (each in 0.5 mL)",
+      "release": "n/a",
+      "src": [
+        { "s": "emc-3634", "q": "Each pre-filled pen contains 1.5 mg of dulaglutide* in 0.5 ml solution." },
+        { "s": "emc-3634", "q": "Each pre-filled pen contains 4.5 mg of dulaglutide* in 0.5 ml solution." },
+        { "s": "emc-3634", "q": "Each pre-filled pen contains 0.75 mg of dulaglutide* in 0.5 ml solution." },
+        { "s": "emc-3634", "q": "Each pre-filled pen contains 3 mg of dulaglutide* in 0.5 ml solution." }
+      ],
+      "sourceIds": ["emc-3634"]
+    }
+  ],
+  "brandPrescribing": {
+    "t": "SPS: dulaglutide is a biological medicine and must be prescribed and dispensed by brand name. The SmPC also asks that the product name and batch number be recorded (traceability).",
+    "src": [
+      { "s": "sps-glp1-considerations", "q": "Biological medicines such as semaglutide, dulaglutide, liraglutide, and tirzepatide must be prescribed and dispensed by brand name." },
+      { "s": "emc-3634", "q": "In order to improve the traceability of biological medicinal products, the name and the batch number of the administered medicinal product should be clearly recorded." }
+    ]
+  },
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Insufficiently controlled type 2 diabetes in patients aged 10 years and above, with diet and exercise: monotherapy when metformin is inappropriate (intolerance or contraindication), or added to other diabetes medicines.",
+        "src": [
+          { "s": "emc-3634", "q": "indicated for the treatment of patients 10 years and above with insufficiently controlled type 2 diabetes mellitus as an adjunct to diet and exercise" },
+          { "s": "emc-3634", "q": "as monotherapy when metformin is considered inappropriate due to intolerance or contraindications in addition to other medicinal products for the treatment of diabetes" }
+        ] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "SPS: prescribe and dispense by brand name (biological medicine). Only prescribe for licensed indications.",
+        "src": [
+          { "s": "sps-glp1-considerations", "q": "Biological medicines such as semaglutide, dulaglutide, liraglutide, and tirzepatide must be prescribed and dispensed by brand name." },
+          { "s": "sps-glp1-considerations", "q": "Only prescribe GLP-1 RAs, or incretin mimetics, for their licensed indication and follow NHS guidance." }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Monotherapy: 0.75 mg once weekly.", "tag": "Type 2 diabetes, adults: monotherapy",
+        "src": [{ "s": "emc-3634", "q": "Monotherapy The recommended dose is 0.75 mg once weekly." }] },
+      { "t": "Add-on therapy: 1.5 mg once weekly. If needed, increase after at least 4 weeks to 3 mg, then after at least 4 more weeks to 4.5 mg. Maximum 4.5 mg once weekly.", "tag": "Type 2 diabetes, adults: add-on therapy",
+        "src": [
+          { "s": "emc-3634", "q": "Add-on therapy The recommended dose is 1.5 mg once weekly." },
+          { "s": "emc-3634", "q": "If needed, the 1.5 mg dose can be increased after at least 4 weeks to 3 mg once weekly. the 3 mg dose can be increased after at least 4 weeks to 4.5 mg once weekly. The maximum dose is 4.5 mg once weekly." }
+        ] },
+      { "t": "With metformin, pioglitazone or an SGLT2 inhibitor: continue their current dose. With a sulphonylurea or insulin: a dose reduction of these may be considered; reduce insulin stepwise with blood glucose self-monitoring.", "tag": "Combination therapy",
+        "src": [
+          { "s": "emc-3634", "q": "When it is added to existing therapy of a sulphonylurea or insulin, a reduction in the dose of sulphonylurea or insulin may be considered to reduce the risk of hypoglycaemia" },
+          { "s": "emc-3634", "q": "A stepwise approach to insulin dose reduction is recommended." }
+        ] },
+      { "t": "Missed dose: give as soon as possible if at least 3 days (72 hours) remain before the next dose; otherwise skip it and give the next dose on the usual day.", "tag": "Missed dose",
+        "src": [
+          { "s": "emc-3634", "q": "If a dose is missed, it should be administered as soon as possible if there are at least 3 days (72 hours) until the next scheduled dose." },
+          { "s": "emc-3634", "q": "If less than 3 days (72 hours) remain before the next scheduled dose, the missed dose should be skipped and the next dose should be administered on the regularly scheduled day." }
+        ] },
+      { "t": "Elderly and hepatic impairment: no dose adjustment.", "tag": "Special populations", "detail": true,
+        "src": [
+          { "s": "emc-3634", "q": "Elderly No dose adjustment is required based on age" },
+          { "s": "emc-3634", "q": "No dose adjustment is required in patients with hepatic impairment." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Children 10 years and above: start 0.75 mg once weekly; if needed increase to 1.5 mg once weekly after at least 4 weeks. Maximum 1.5 mg once weekly. Not established under 10 years (no data).",
+        "src": [
+          { "s": "emc-3634", "q": "The starting dose for paediatric patients 10 years and above is 0.75 mg once weekly. If needed, the dose can be increased to 1.5 mg once weekly after at least 4 weeks. The maximum dose is 1.5 mg once weekly." },
+          { "s": "emc-3634", "q": "The safety and efficacy of dulaglutide in children aged less than 10 years have not been established and no data are available" }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to dulaglutide or any excipient.",
+        "src": [{ "s": "emc-3634", "q": "Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Should not be used in type 1 diabetes or to treat diabetic ketoacidosis; not a substitute for insulin. Diabetic ketoacidosis reported after rapid stopping or reduction of insulin.",
+        "src": [
+          { "s": "emc-3634", "q": "Dulaglutide should not be used in patients with type 1 diabetes mellitus or for the treatment of diabetic ketoacidosis. Dulaglutide is not a substitute for insulin." },
+          { "s": "emc-3634", "q": "Diabetic ketoacidosis has been reported in insulin-dependent patients after rapid discontinuation or dose reduction of insulin" }
+        ] },
+      { "t": "Severe gastrointestinal disease, including severe gastroparesis: not studied; not recommended. Monitor and consider dose change or stopping if severe gastrointestinal symptoms develop.",
+        "src": [
+          { "s": "emc-3634", "q": "Dulaglutide has not been studied in patients with severe gastrointestinal disease, including severe gastroparesis, and is therefore not recommended in these patients." },
+          { "s": "emc-3634", "q": "Monitor and consider dose modification or discontinuation in patients who develop severe gastrointestinal symptoms while on treatment." }
+        ] },
+      { "t": "General anaesthesia or deep sedation: pulmonary aspiration reported with GLP-1 receptor agonists (delayed gastric emptying); consider before procedures.",
+        "src": [{ "s": "emc-3634", "q": "the increased risk of residual gastric content due to delayed gastric emptying (see section 4.8) should be considered prior to performing procedures with general anaesthesia or deep sedation" }] },
+      { "t": "Dehydration, sometimes causing acute renal failure or worse renal impairment, especially at the start: warn patients and advise them to avoid fluid loss.",
+        "src": [
+          { "s": "emc-3634", "q": "Dehydration, sometimes leading to acute renal failure or worsening renal impairment, has been reported in patients treated with dulaglutide, especially at the initiation of treatment." },
+          { "s": "emc-3634", "q": "take precautions to avoid fluid depletion" }
+        ] },
+      { "t": "Acute pancreatitis (including necrotising and fatal cases): caution with a history of pancreatitis (not studied). Stop if suspected; do not restart if confirmed.",
+        "src": [
+          { "s": "emc-3634", "q": "Dulaglutide has not been studied in patients with a history of pancreatitis, and should be used with caution in these patients." },
+          { "s": "emc-3634", "q": "If pancreatitis is suspected, dulaglutide should be discontinued. If the diagnosis of pancreatitis is confirmed, dulaglutide should not be restarted." }
+        ] },
+      { "t": "Hypoglycaemia with a sulphonylurea or insulin: may be lowered by reducing their dose.",
+        "src": [{ "s": "emc-3634", "q": "The risk of hypoglycaemia may be lowered by a reduction in the dose of sulphonylurea or insulin" }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Sulphonylureas or insulin: hypoglycaemia; a dose reduction may be considered. MHRA: diabetic ketoacidosis reported when insulin was rapidly reduced or stopped; reduce insulin stepwise with glucose self-monitoring.",
+        "src": [
+          { "s": "emc-3634", "q": "Patients receiving dulaglutide in combination with sulphonylurea or insulin may have an increased risk of hypoglycaemia." },
+          { "s": "mhra-dsu-glp1-dka-insulin-2019", "q": "if the insulin dose is to be reduced, a stepwise approach is recommended" }
+        ] },
+      { "t": "Sitagliptin: increases dulaglutide exposure, which may enhance its blood-glucose effect.",
+        "src": [
+          { "s": "emc-3634", "q": "Dulaglutide (1.5 mg) coadministration with sitagliptin increased dulaglutide exposure and Cmax by approximately 38 % and 27 %, respectively" },
+          { "s": "emc-3634", "q": "The increased exposure may enhance the effects of dulaglutide on blood glucose levels." }
+        ] },
+      { "t": "Oral medicines with rapid absorption or prolonged release: delayed gastric emptying may alter exposure, particularly when starting dulaglutide. Studied medicines (paracetamol, atorvastatin, digoxin, lisinopril, metoprolol, warfarin, oral contraceptives, metformin) need no dose adjustment.", "detail": true,
+        "src": [
+          { "s": "emc-3634", "q": "For patients receiving dulaglutide in combination with oral medicinal products with rapid gastrointestinal absorption or prolonged release, there is a potential for altered medicinal product exposure, particularly at the time of dulaglutide treatment initiation." },
+          { "s": "emc-3634", "q": "No dose adjustment for warfarin is necessary when given together with dulaglutide." },
+          { "s": "emc-3634", "q": "No dose adjustment of paracetamol is necessary when administered with dulaglutide." }
+        ] },
+      { "t": "SPS: use with caution with time-critical or narrow therapeutic window medicines (e.g. levodopa); extra monitoring may be needed.", "detail": true,
+        "src": [
+          { "s": "sps-glp1-considerations", "q": "Use GLP-1 RAs with caution in people who are taking medicines which are time critical, such as levodopa for Parkinson's disease." },
+          { "s": "sps-glp1-considerations", "q": "These people may require additional monitoring." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "eGFR < 90 to ≥ 15 mL/min/1.73 m²: no dose adjustment.",
+        "src": [{ "s": "emc-3634", "q": "No dose adjustment is required in patients with mild, moderate or severe renal impairment (eGFR < 90 to ≥ 15 mL/min/1.73m2)." }] },
+      { "t": "End-stage renal disease (eGFR < 15 mL/min/1.73 m²): very limited experience; cannot be recommended.",
+        "src": [{ "s": "emc-3634", "q": "There is very limited experience in patients with end stage renal disease (< 15 ml/min/1.73m2), therefore Trulicity cannot be recommended in this population" }] },
+      { "t": "Dehydration from gastrointestinal effects can cause acute renal failure or worsen renal impairment.", "detail": true,
+        "src": [{ "s": "emc-3634", "q": "Many of the reported adverse renal events occurred in patients who had experienced nausea, vomiting, diarrhoea, or dehydration." }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "No dose adjustment in hepatic impairment.",
+        "src": [{ "s": "emc-3634", "q": "No dose adjustment is required in patients with hepatic impairment." }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: no or limited human data; animal reproductive toxicity. Not recommended in pregnancy.",
+        "src": [
+          { "s": "emc-3634", "q": "There are no or limited amount of data from the use of dulaglutide in pregnant women." },
+          { "s": "emc-3634", "q": "Therefore, the use of dulaglutide is not recommended during pregnancy." }
+        ] },
+      { "t": "BUMPS: GLP-1 receptor agonists should not be used in pregnancy. If used by accident in early pregnancy, available data (about 47,000 pregnancies) are reassuring; no extra monitoring for birth defects is needed.",
+        "src": [
+          { "s": "bumps-glp1-receptor-agonists", "q": "GLP-1 receptor agonists should not be used in pregnancy." },
+          { "s": "bumps-glp1-receptor-agonists", "q": "If you accidentally used a GLP-1 receptor agonist in early pregnancy, you can be reassured that the available information suggests that it does not harm the baby." },
+          { "s": "bumps-glp1-receptor-agonists", "q": "No extra monitoring for major birth defects is required following use in early pregnancy of a GLP-1 receptor agonist." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: unknown if excreted in human milk; a risk to the infant cannot be excluded. Should not be used during breastfeeding.",
+        "src": [
+          { "s": "emc-3634", "q": "A risk to newborns/infants cannot be excluded." },
+          { "s": "emc-3634", "q": "Dulaglutide should not be used during breast-feeding." }
+        ] },
+      { "t": "SPS: MHRA advise GLP-1 receptor agonists should not be taken while breastfeeding (lack of safety data). Insulin or metformin are preferred choices.",
+        "src": [
+          { "s": "sps-glp1-considerations", "q": "The MHRA advise GLP-1 RAs should not be taken by people who are breastfeeding due to a lack of safety data ." },
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "SPS: MHRA advise contraception throughout GLP-1 receptor agonist treatment as a precaution. Dulaglutide did not affect oral contraceptive exposure (no dose change needed).",
+        "src": [
+          { "s": "sps-glp1-considerations", "q": "They advise contraceptive use throughout GLP-1 RA treatment as a cautionary measure." },
+          { "s": "emc-3634", "q": "No dose adjustment for oral contraceptives is required when given together with dulaglutide." }
+        ] },
+      { "t": "Fertility: effect in humans unknown; no direct effect in rats.", "detail": true,
+        "src": [{ "s": "emc-3634", "q": "The effect of dulaglutide on fertility in humans is unknown." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Most frequent: nausea, vomiting and diarrhoea, usually mild or moderate and short-lived; they peak in the first 2 weeks. Up to 104 weeks at 1.5 mg: nausea 21.2%, diarrhoea 13.7%, vomiting 11.5%.",
+        "src": [
+          { "s": "emc-3634", "q": "The most frequently reported adverse reactions in clinical trials were gastrointestinal, including nausea, vomiting and diarrhoea." },
+          { "s": "emc-3634", "q": "nausea (12.9 % and 21.2 % ) , diarrhoea (10.7 % and 13.7 %) and vomiting (6.9 % and 11.5 %)" },
+          { "s": "emc-3634", "q": "reported to peak during the first 2 weeks of treatment" }
+        ] },
+      { "t": "Hypoglycaemia: documented symptomatic hypoglycaemia in about 40% with a sulphonylurea plus metformin and 35.3% with insulin glargine (1.5 mg); 5.9% to 10.9% with monotherapy or metformin (with or without pioglitazone).",
+        "src": [
+          { "s": "emc-3634", "q": "the incidences of documented symptomatic hypoglycaemia were 5.9 % to 10.9 %" },
+          { "s": "emc-3634", "q": "were used in combination with a sulphonylurea and metformin were 39.0 % and 40.3 %" },
+          { "s": "emc-3634", "q": "The incidence of documented symptomatic hypoglycaemia when dulaglutide 1.5 mg was used in combination with insulin glargine was 35.3 %" }
+        ] },
+      { "t": "Small heart rate rise (2 to 4 beats per minute), sinus tachycardia, first-degree AV block; injection site reactions.", "detail": true,
+        "src": [
+          { "s": "emc-3634", "q": "Small mean increases in heart rate of 2 to 4 beats per minute (bpm)" },
+          { "s": "emc-3634", "q": "Injection site adverse events were reported in 1.9 % of patients receiving dulaglutide." }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Acute pancreatitis, including necrotising and fatal cases: persistent, severe abdominal pain. Stop if suspected; do not restart if confirmed. Patients should seek urgent medical attention.",
+        "src": [
+          { "s": "emc-3634", "q": "This includes post-marketing reports of necrotising pancreatitis and reports with a fatal outcome." },
+          { "s": "mhra-dsu-glp1-pancreatitis-2026", "q": "if pancreatitis is suspected, discontinue treatment with the GLP-1 or GLP-1/GIP receptor agonist immediately; do not restart therapy if the diagnosis of pancreatitis is confirmed" }
+        ] },
+      { "t": "Dehydration leading to acute renal failure or worsening renal impairment.",
+        "src": [{ "s": "emc-3634", "q": "Dehydration, sometimes leading to acute renal failure or worsening renal impairment, has been reported in patients treated with dulaglutide" }] },
+      { "t": "Anaphylactic reaction and angioedema (post-marketing); severe gastroparesis; non-mechanical intestinal obstruction; cholelithiasis and cholecystitis.", "detail": true,
+        "src": [
+          { "s": "emc-3634", "q": "Cases of anaphylactic reaction have been rarely reported with marketed use of dulaglutide." },
+          { "s": "emc-3634", "q": "Events related to impaired gastric emptying, including severe gastroparesis, have been reported." },
+          { "s": "emc-3634", "q": "Non-mechanical intestinal obstruction Hepatobiliary disorders Cholelithiasis, cholecystitis" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Blood glucose self-monitoring is not needed for dulaglutide itself, but is needed to adjust sulphonylurea or insulin doses, especially at the start.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-3634", "q": "The use of Trulicity does not require blood glucose self-monitoring." },
+          { "s": "emc-3634", "q": "Blood glucose self-monitoring is necessary to adjust the dose of sulphonylurea or insulin, particularly when Trulicity therapy is started and insulin is reduced." }
+        ] },
+      { "t": "Watch for severe gastrointestinal symptoms; consider dose change or stopping.", "tag": "ongoing",
+        "src": [{ "s": "emc-3634", "q": "Monitor and consider dose modification or discontinuation in patients who develop severe gastrointestinal symptoms while on treatment." }] },
+      { "t": "Stop if pancreatitis is suspected; do not restart if confirmed. Raised pancreatic enzymes alone do not predict pancreatitis.", "tag": "stop",
+        "src": [
+          { "s": "emc-3634", "q": "If pancreatitis is suspected, dulaglutide should be discontinued." },
+          { "s": "emc-3634", "q": "elevations in pancreatic enzymes alone are not predictive of acute pancreatitis" }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Subcutaneous injection once weekly into the abdomen, thigh or upper arm, at any time of day, with or without meals. Never intravenous or intramuscular.",
+        "src": [
+          { "s": "emc-3634", "q": "Trulicity is to be injected subcutaneously in the abdomen, thigh or upper arm. It should not be administered intravenously or intramuscularly." },
+          { "s": "emc-3634", "q": "The dose can be administered at any time of day, with or without meals." }
+        ] },
+      { "t": "The weekly injection day can be changed if the last dose was at least 3 days (72 hours) before.", "detail": true,
+        "src": [{ "s": "emc-3634", "q": "The day of weekly administration can be changed if necessary, as long as the last dose was administered 3 or more days (72 hours) before." }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Seek urgent medical help for severe, persistent abdominal pain that may go through to the back, with or without nausea and vomiting (possible pancreatitis).",
+        "src": [{ "s": "mhra-dsu-glp1-pancreatitis-2026", "q": "seek urgent medical attention if you experience severe, persistent abdominal pain, that may radiate to your back and may be accompanied by nausea and vomiting" }] },
+      { "t": "Drink plenty of fluids to avoid dehydration, especially if you have vomiting or diarrhoea.",
+        "src": [{ "s": "mhra-dsu-glp1-side-effects-2024", "q": "throughout treatment stay well hydrated by drinking plenty of fluids (such as water) to avoid dehydration" }] },
+      { "t": "Tell your healthcare team and anaesthetist before any surgery or sedation that you use this medicine; do not stop it without discussing with your doctor.",
+        "src": [
+          { "s": "mhra-dsu-glp1-aspiration-2025", "q": "make sure you inform your healthcare team including the anaesthetist about this prior to your surgical procedure" },
+          { "s": "mhra-dsu-glp1-aspiration-2025", "q": "take your prescribed medicine(s) as usual and do not stop your treatment without first discussing this with your doctor" }
+        ] },
+      { "t": "If you also use insulin: learn the signs of diabetic ketoacidosis and get urgent help if they occur.",
+        "src": [{ "s": "mhra-dsu-glp1-dka-insulin-2019", "q": "Inform patients of the signs and symptoms of diabetic ketoacidosis (nausea, vomiting, abdominal pain, excessive thirst, increased frequency of urination, difficulty breathing, confusion, unusual fatigue, or sleepiness)" }] },
+      { "t": "With a sulphonylurea or insulin, take precautions to avoid low blood sugar while driving.", "detail": true,
+        "src": [{ "s": "emc-3634", "q": "patients should be advised to take precautions to avoid hypoglycaemia while driving and using machines" }] }
+    ] }
+  },
+  "rules": [
+    { "id": "dulaglutide:allergy:dulaglutide", "kind": "allergy", "level": "contraindicated", "med": "dulaglutide", "allergen": ["dulaglutide"],
+      "concern": "Hypersensitivity to dulaglutide", "consequence": "Hypersensitivity reaction, including anaphylaxis.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity to the active substance",
+      "src": [{ "s": "emc-3634", "q": "Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+    { "id": "dulaglutide:condition:type-1-diabetes", "kind": "condition", "level": "avoid", "med": "dulaglutide", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Not a substitute for insulin.", "action": "Should not be used in type 1 diabetes.", "sourceWording": "should not be used in patients with type 1 diabetes mellitus",
+      "src": [{ "s": "emc-3634", "q": "Dulaglutide should not be used in patients with type 1 diabetes mellitus or for the treatment of diabetic ketoacidosis. Dulaglutide is not a substitute for insulin." }] },
+    { "id": "dulaglutide:condition:diabetic-ketoacidosis", "kind": "condition", "level": "avoid", "med": "dulaglutide", "condition": "diabetic-ketoacidosis",
+      "concern": "Diabetic ketoacidosis", "consequence": "Not an appropriate treatment.", "action": "Should not be used to treat diabetic ketoacidosis.", "sourceWording": "should not be used ... for the treatment of diabetic ketoacidosis",
+      "src": [{ "s": "emc-3634", "q": "Dulaglutide should not be used in patients with type 1 diabetes mellitus or for the treatment of diabetic ketoacidosis." }] },
+    { "id": "dulaglutide:condition:gastroparesis", "kind": "condition", "level": "avoid", "med": "dulaglutide", "condition": "gastroparesis",
+      "concern": "Severe gastrointestinal disease, including severe gastroparesis", "consequence": "Not studied; delayed gastric emptying events reported.", "action": "Not recommended.", "sourceWording": "is therefore not recommended in these patients",
+      "src": [{ "s": "emc-3634", "q": "Dulaglutide has not been studied in patients with severe gastrointestinal disease, including severe gastroparesis, and is therefore not recommended in these patients." }] },
+    { "id": "dulaglutide:condition:pancreatitis-history", "kind": "condition", "level": "caution", "med": "dulaglutide", "condition": "pancreatitis-history",
+      "concern": "History of pancreatitis", "consequence": "Not studied; acute pancreatitis (including necrotising and fatal cases) reported with GLP-1 receptor agonists.", "action": "Use with caution; stop if pancreatitis is suspected and do not restart if confirmed.", "sourceWording": "should be used with caution in these patients",
+      "src": [
+        { "s": "emc-3634", "q": "Dulaglutide has not been studied in patients with a history of pancreatitis, and should be used with caution in these patients." },
+        { "s": "mhra-dsu-glp1-pancreatitis-2026", "q": "GLP-1 and GLP-1/GIP receptor agonists should be used with caution in patients with a history of pancreatitis" }
+      ] },
+    { "id": "dulaglutide:condition:pancreatitis-current", "kind": "condition", "level": "avoid", "med": "dulaglutide", "condition": "pancreatitis",
+      "concern": "Acute pancreatitis, current or suspected (for past or chronic pancreatitis see the history rule: use with caution)", "consequence": "Acute pancreatitis, including necrotising and fatal cases, is reported with GLP-1 receptor agonists.", "action": "Stop if pancreatitis is suspected; do not restart if acute pancreatitis is confirmed.", "sourceWording": "should be discontinued … should not be restarted",
+      "src": [
+        { "s": "emc-3634", "q": "If pancreatitis is suspected, dulaglutide should be discontinued. If the diagnosis of pancreatitis is confirmed, dulaglutide should not be restarted." },
+        { "s": "mhra-dsu-glp1-pancreatitis-2026", "q": "if pancreatitis is suspected, discontinue treatment with the GLP-1 or GLP-1/GIP receptor agonist immediately; do not restart therapy if the diagnosis of pancreatitis is confirmed" }
+      ] },
+    { "id": "dulaglutide:condition:surgery", "kind": "condition", "level": "caution", "med": "dulaglutide", "condition": "surgery-planned",
+      "concern": "Procedure under general anaesthesia or deep sedation", "consequence": "Pulmonary aspiration risk from residual gastric contents (delayed gastric emptying), even after fasting.", "action": "Consider the aspiration risk before the procedure; anaesthetist to assess. Patients should not stop treatment without discussing with their doctor.", "sourceWording": "should be considered prior to performing procedures",
+      "src": [
+        { "s": "emc-3634", "q": "the increased risk of residual gastric content due to delayed gastric emptying (see section 4.8) should be considered prior to performing procedures with general anaesthesia or deep sedation" },
+        { "s": "mhra-dsu-glp1-aspiration-2025", "q": "anaesthetists should provide an individualised assessment of the aspiration risk" }
+      ] },
+    { "id": "dulaglutide:renal:lt15", "kind": "renal", "level": "avoid", "med": "dulaglutide", "renal": { "measure": "eGFR", "max": 15 },
+      "concern": "End-stage renal disease (eGFR < 15 mL/min/1.73 m²)", "consequence": "Very limited experience.", "action": "Cannot be recommended.", "sourceWording": "cannot be recommended in this population",
+      "src": [{ "s": "emc-3634", "q": "There is very limited experience in patients with end stage renal disease (< 15 ml/min/1.73m2), therefore Trulicity cannot be recommended in this population" }] },
+    { "id": "dulaglutide:age:lt10", "kind": "age", "level": "info", "med": "dulaglutide", "age": { "minYears": 0, "maxYears": 10 },
+      "concern": "Child under 10 years", "consequence": "Safety and efficacy not established; no data.", "action": "Licensed from 10 years only.", "sourceWording": "have not been established and no data are available",
+      "src": [{ "s": "emc-3634", "q": "The safety and efficacy of dulaglutide in children aged less than 10 years have not been established and no data are available" }] },
+    { "id": "dulaglutide:age:10-17", "kind": "age", "level": "dose", "med": "dulaglutide", "age": { "minYears": 10, "maxYears": 18 },
+      "concern": "Child or adolescent aged 10 to 17 years", "consequence": "Lower maximum dose than adults.", "action": "Start 0.75 mg once weekly; may increase to 1.5 mg after at least 4 weeks. Maximum 1.5 mg once weekly.", "sourceWording": "The maximum dose is 1.5 mg once weekly",
+      "src": [{ "s": "emc-3634", "q": "The starting dose for paediatric patients 10 years and above is 0.75 mg once weekly. If needed, the dose can be increased to 1.5 mg once weekly after at least 4 weeks. The maximum dose is 1.5 mg once weekly." }] },
+    { "id": "dulaglutide:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "dulaglutide",
+      "concern": "Pregnancy", "consequence": "No or limited human data; animal reproductive toxicity.", "action": "Not recommended (SmPC); BUMPS: should not be used, but accidental early exposure is reassuring.", "sourceWording": "the use of dulaglutide is not recommended during pregnancy",
+      "src": [
+        { "s": "emc-3634", "q": "Therefore, the use of dulaglutide is not recommended during pregnancy." },
+        { "s": "bumps-glp1-receptor-agonists", "q": "GLP-1 receptor agonists should not be used in pregnancy." }
+      ] },
+    { "id": "dulaglutide:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "dulaglutide",
+      "concern": "Breastfeeding", "consequence": "Unknown if excreted in milk; risk to infant cannot be excluded.", "action": "Should not be used during breastfeeding (SmPC; MHRA via SPS).", "sourceWording": "should not be used during breast-feeding",
+      "src": [
+        { "s": "emc-3634", "q": "Dulaglutide should not be used during breast-feeding." },
+        { "s": "sps-glp1-considerations", "q": "The MHRA advise GLP-1 RAs should not be taken by people who are breastfeeding due to a lack of safety data ." }
+      ] },
+    { "id": "dulaglutide:interaction:sulfonylurea", "kind": "interaction", "level": "caution", "med": "dulaglutide", "other": "group:sulfonylurea", "effect": "hypoglycaemia",
+      "concern": "Dulaglutide + sulphonylurea", "consequence": "Hypoglycaemia (documented symptomatic hypoglycaemia about 40% with a sulphonylurea plus metformin).", "action": "A reduction in the sulphonylurea dose may be considered; self-monitor blood glucose to adjust it.", "sourceWording": "a reduction in the dose of sulphonylurea or insulin may be considered",
+      "src": [
+        { "s": "emc-3634", "q": "When it is added to existing therapy of a sulphonylurea or insulin, a reduction in the dose of sulphonylurea or insulin may be considered to reduce the risk of hypoglycaemia" },
+        { "s": "emc-3634", "q": "were used in combination with a sulphonylurea and metformin were 39.0 % and 40.3 %" }
+      ] },
+    { "id": "dulaglutide:interaction:insulin", "kind": "interaction", "level": "caution", "med": "dulaglutide", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Dulaglutide + insulin", "consequence": "Hypoglycaemia; but rapid insulin reduction or withdrawal has led to diabetic ketoacidosis (MHRA).", "action": "A reduction in the insulin dose may be considered, stepwise, with blood glucose self-monitoring.", "sourceWording": "a reduction in the dose of sulphonylurea or insulin may be considered",
+      "src": [
+        { "s": "emc-3634", "q": "When it is added to existing therapy of a sulphonylurea or insulin, a reduction in the dose of sulphonylurea or insulin may be considered to reduce the risk of hypoglycaemia" },
+        { "s": "emc-3634", "q": "A stepwise approach to insulin dose reduction is recommended." },
+        { "s": "mhra-dsu-glp1-dka-insulin-2019", "q": "serious and life-threatening cases of diabetic ketoacidosis have been reported in association with exenatide, liraglutide, and dulaglutide, particularly after discontinuation or reduction of concomitant insulin" }
+      ] },
+    { "id": "dulaglutide:interaction:sitagliptin", "kind": "interaction", "level": "info", "med": "dulaglutide", "other": "sitagliptin",
+      "concern": "Dulaglutide + sitagliptin", "consequence": "Dulaglutide exposure increased by about 38%; may enhance the effect on blood glucose.", "action": "No specific action stated.", "sourceWording": "The increased exposure may enhance the effects of dulaglutide on blood glucose levels",
+      "src": [
+        { "s": "emc-3634", "q": "Dulaglutide (1.5 mg) coadministration with sitagliptin increased dulaglutide exposure and Cmax by approximately 38 % and 27 %, respectively" },
+        { "s": "emc-3634", "q": "The increased exposure may enhance the effects of dulaglutide on blood glucose levels." }
+      ] }
+  ]
+}

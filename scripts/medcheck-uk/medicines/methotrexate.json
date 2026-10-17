@@ -6,7 +6,9 @@
   ],
   "className": "Folic acid antagonist (antimetabolite); immunosuppressant",
   "groups": [
-    "folate-antagonist"
+    "folate-antagonist",
+    "hepatotoxic",
+    "nephrotoxic"
   ],
   "searchTerms": [],
   "formulations": [
@@ -2012,6 +2014,329 @@
         {
           "s": "emc-511",
           "q": "Methotrexate should be used with extreme caution in - debility - extreme youth (see section 4.2) - old age (see section 4.2) - psychiatric disorders"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:hepatotoxic",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "avoid",
+      "other": "group:hepatotoxic",
+      "otherExcept": [
+        "hydroxychloroquine",
+        "naproxen",
+        "celecoxib"
+      ],
+      "effect": "hepatotoxicity",
+      "concern": "Methotrexate with other hepatotoxic medicines",
+      "consequence": "Increased risk of liver toxicity.",
+      "action": "Should not be taken together; if unavoidable, monitor closely for liver toxicity, including closer monitoring of liver enzymes. Not applied to hydroxychloroquine (pen SmPC: no added methotrexate toxicity expected with other antirheumatic medicines, separate rule) or to naproxen and celecoxib (covered by the separate NSAID rule: SPS caution on specialist advice).",
+      "sourceWording": "should not be taken during treatment with methotrexate",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Due to its potentially toxic effect on the liver, additional hepatotoxic medicinal products should not be taken during treatment with methotrexate."
+        },
+        {
+          "s": "emc-10988",
+          "q": "If concomitant administration cannot be avoided, patients should be monitored closely for signs and symptoms of liver toxicity including closer monitoring of liver enzymes."
+        },
+        {
+          "s": "emc-5443",
+          "q": "Patients taking other hepatotoxic medicinal products concomitantly (e.g. leflunomide) should be monitored with special care."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:hydroxychloroquine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "methotrexate",
+      "other": "hydroxychloroquine",
+      "concern": "Methotrexate with hydroxychloroquine (another antirheumatic medicine)",
+      "consequence": "Pen SmPC: an increase in methotrexate toxicity is in general not expected when given with other antirheumatic medicines, including hydroxychloroquine.",
+      "action": "No specific action stated. The general hepatotoxic-medicine rule is not applied to this pair.",
+      "sourceWording": "An increase in the toxic effects of methotrexate is, in general, not to be expected",
+      "src": [
+        {
+          "s": "emc-5443",
+          "q": "An increase in the toxic effects of methotrexate is, in general, not to be expected when Metoject PEN is administered simultaneously with other antirheumatic medicinal products (e.g. gold compounds, penicillamine, hydroxychloroquine, sulfasalazine, azathioprine)."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:nephrotoxic",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "avoid",
+      "other": "group:nephrotoxic",
+      "otherExcept": [
+        "ibuprofen",
+        "naproxen"
+      ],
+      "effect": "nephrotoxicity",
+      "concern": "Methotrexate with nephrotoxic medicines",
+      "consequence": "Kidney damage reduces methotrexate elimination and raises methotrexate levels and toxicity.",
+      "action": "One tablet SmPC: avoid other potentially nephrotoxic agents. Other SmPC: frequent monitoring; if unavoidable, consider a methotrexate dose adjustment. NSAIDs (ibuprofen, naproxen) are covered by the separate NSAID rule (SPS: caution on specialist advice).",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Concurrent use of other, potentially nephro- hemato or hepatotoxic agents (e.g. sulphasalazine, leflunomide and alcohol) should be avoided."
+        },
+        {
+          "s": "emc-10988",
+          "q": "Frequent patient monitoring is necessary especially if high methotrexate doses are administered concomitantly with medicinal products, which reduce methotrexate protein binding, elimination of methotrexate or cause kidney damage."
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Any medicine that can adversely affect the renal function could cause the concentration of methotrexate in serum and in tissues to increase rapidly."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:loop-diuretic",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "caution",
+      "other": "group:loop-diuretic",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate with loop diuretics (e.g. furosemide)",
+      "consequence": "Reduced methotrexate elimination; higher levels and haematological toxicity.",
+      "action": "Caution required (one tablet SmPC); monitor the patient.",
+      "sourceWording": "Caution required",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Probenecid, weak organic acids such as loop diuretics, and pyrazoles (phenylbutazone) can reduce the elimination of methotrexate and higher serum concentrations may be assumed inducing higher haematological toxicity."
+        },
+        {
+          "s": "emc-511",
+          "q": "excretion of methotrexate reduced (increased risk of toxicity). Caution required"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:thiazide",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "info",
+      "other": "group:thiazide",
+      "concern": "Methotrexate with thiazide diuretics",
+      "consequence": "Possible reduced methotrexate excretion and protein-binding displacement, which can increase toxicity.",
+      "action": "Be aware (no specific action stated).",
+      "sourceWording": "possible reduced methotrexate excretion",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Thiazide diuretics - possible reduced methotrexate excretion."
+        },
+        {
+          "s": "emc-10988",
+          "q": "Methotrexate is plasma protein bound and certain drugs such as oral hypoglycaemics, thiazide diuretics, sulfonamides, phenytoin"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:oral-antidiabetic",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "info",
+      "other": "group:oral-antidiabetic",
+      "concern": "Methotrexate with oral hypoglycaemics",
+      "consequence": "Possible reduced methotrexate excretion and protein-binding displacement, which can increase toxicity.",
+      "action": "Be aware (no specific action stated).",
+      "sourceWording": "possible reduced methotrexate excretion",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Oral hypoglycaemics - possible reduced methotrexate excretion."
+        },
+        {
+          "s": "emc-10988",
+          "q": "Methotrexate is plasma protein bound and certain drugs such as oral hypoglycaemics, thiazide diuretics, sulfonamides, phenytoin"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:tetracycline",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "info",
+      "other": "group:tetracycline",
+      "concern": "Methotrexate with tetracyclines (e.g. doxycycline)",
+      "consequence": "Increased risk of methotrexate toxicity; oral tetracyclines can also interfere with enterohepatic circulation of methotrexate.",
+      "action": "Be aware (no specific action stated).",
+      "sourceWording": "increased risk of methotrexate toxicity",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Doxycycline, sulphonamides, tetracyclines - increased risk of methotrexate toxicity"
+        },
+        {
+          "s": "emc-10988",
+          "q": "Oral antibiotics like tetracyclines, chloramphenicol, and non-absorbable broad-spectrum antibiotics can interfere with the enterohepatic circulation"
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:aspirin",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "monitor",
+      "other": "aspirin",
+      "otherFormulations": [
+        "aspirin-75-tab",
+        "aspirin-75-gr"
+      ],
+      "concern": "Methotrexate with low-dose (antiplatelet) aspirin",
+      "consequence": "Possible altered methotrexate pharmacokinetics and increased toxicity.",
+      "action": "SPS: antiplatelet aspirin can be continued; routine methotrexate monitoring should detect toxicity. One tablet SmPC: monitor methotrexate dosage if aspirin is started.",
+      "sourceWording": "Methotrexate dosage should be monitored",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Aspirin and other salicylates - possible alteration of the pharmacokinetics of methotrexate/increased risk of toxicity."
+        },
+        {
+          "s": "emc-511",
+          "q": "Methotrexate dosage should be monitored if concomitant treatment with aspirin, ibuprofen or indometacin (NSAIDs) is commenced"
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Aspirin given as an antiplatelet can be continued in people taking methotrexate."
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Routine monitoring of methotrexate should detect any signs of methotrexate toxicity."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:aspirin-analgesic",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "caution",
+      "other": "aspirin",
+      "otherFormulations": [
+        "aspirin-analgesic"
+      ],
+      "concern": "Methotrexate with analgesic-dose aspirin",
+      "consequence": "Possible altered methotrexate pharmacokinetics and increased toxicity; fatal methotrexate toxicity has been reported with NSAIDs including aspirin.",
+      "action": "SPS: analgesic aspirin is handled like an NSAID: use with caution on specialist advice, and counsel patients not to buy analgesic aspirin over the counter without advice. One tablet SmPC: monitor methotrexate dosage if aspirin is started.",
+      "sourceWording": "Use NSAIDs in combination with methotrexate with caution",
+      "src": [
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Use NSAIDs in combination with methotrexate with caution on the advice of the specialist (for example, rheumatologist)."
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "avoid buying NSAIDs over-the-counter (e.g. oral ibuprofen or analgesic doses of aspirin)"
+        },
+        {
+          "s": "emc-511",
+          "q": "Methotrexate dosage should be monitored if concomitant treatment with aspirin, ibuprofen or indometacin (NSAIDs) is commenced, as concomitant use of NSAID's has been associated with fatal methotrexate toxicity."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:corticosteroid",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "info",
+      "other": "group:corticosteroid",
+      "effect": "bone-marrow-suppression",
+      "concern": "Methotrexate with corticosteroids",
+      "consequence": "Increased risk of haematological toxicity (one tablet SmPC).",
+      "action": "Be aware (no specific action stated).",
+      "sourceWording": "Increased risk of haematological toxicity",
+      "src": [
+        {
+          "s": "emc-511",
+          "q": "Corticosteroids Increased risk of haematological toxicity."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:carbamazepine",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "caution",
+      "other": "carbamazepine",
+      "effect": "hepatotoxicity",
+      "concern": "Methotrexate with carbamazepine (enzyme-inducing anticonvulsant)",
+      "consequence": "Methotrexate exposure and effect may fall; carbamazepine levels can be reduced; liver toxicity risk may increase (SPS).",
+      "action": "Consider a methotrexate dose adjustment; inform the methotrexate specialist and monitor seizure control (SPS).",
+      "sourceWording": "dose adjustment of methotrexate should be considered",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Concomitant use of enzyme inducing anticonvulsants (carbamazepine, phenytoin, phenobarbital, primidone) may decrease the methotrexate exposure and impair its therapeutic effect."
+        },
+        {
+          "s": "emc-10988",
+          "q": "If used concomitantly, dose adjustment of methotrexate should be considered."
+        },
+        {
+          "s": "emc-511",
+          "q": "Carbamazepine, phenytoin and valproate serum levels can be reduced by antineoplastic drugs with seizures if the antiepileptic doses are not raised appropriately."
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Taking methotrexate and antiseizure medicines together can increase the risk of liver toxicity."
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Inform the specialist looking after methotrexate therapy if antiseizure medicines are started. Monitor for any changes in seizure activity."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:fluconazole",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "info",
+      "other": "fluconazole",
+      "effect": "hepatotoxicity",
+      "concern": "Methotrexate with fluconazole",
+      "consequence": "Increased risk of liver toxicity (SPS).",
+      "action": "SPS: routine methotrexate monitoring should detect liver toxicity; with severe infection some people may miss methotrexate doses during the course.",
+      "sourceWording": "can increase the risk of liver toxicity",
+      "src": [
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Taking methotrexate and fluconazole together can increase the risk of liver toxicity."
+        },
+        {
+          "s": "sps-mtx-interactions",
+          "q": "Routine monitoring of methotrexate should detect any signs of liver toxicity."
+        }
+      ]
+    },
+    {
+      "id": "methotrexate:interaction:folic-acid",
+      "kind": "interaction",
+      "med": "methotrexate",
+      "level": "info",
+      "other": "folic-acid",
+      "concern": "Methotrexate with folic acid",
+      "consequence": "Folic acid products may decrease methotrexate effectiveness, but folic acid is routinely co-prescribed to reduce methotrexate adverse effects.",
+      "action": "SPS: folic acid 5mg once weekly on a different day to methotrexate; usually avoided on the methotrexate day.",
+      "sourceWording": "may decrease the effectiveness of methotrexate",
+      "src": [
+        {
+          "s": "emc-10988",
+          "q": "Vitamin preparations or other products containing folic acid, folinic acid or their derivatives may decrease the effectiveness of methotrexate"
+        },
+        {
+          "s": "sps-folic-mtx",
+          "q": "folic acid 5mg once weekly, taken on a different day to the methotrexate, is routinely co-prescribed with methotrexate to reduce adverse effects and toxicity."
+        },
+        {
+          "s": "sps-folic-mtx",
+          "q": "Folic acid supplements are usually avoided on the day of oral or subcutaneous methotrexate."
         }
       ]
     }

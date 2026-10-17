@@ -1,0 +1,1430 @@
+{
+  "id": "fluticasone-propionate-formoterol",
+  "name": "Fluticasone propionate/formoterol (inhaler)",
+  "ingredients": [
+    "fluticasone-propionate",
+    "formoterol"
+  ],
+  "className": "Inhaled corticosteroid with long-acting beta2 agonist (ICS/LABA)",
+  "groups": [
+    "inhaled-corticosteroid",
+    "beta2-agonist",
+    "long-acting-beta2-agonist"
+  ],
+  "searchTerms": [
+    "fluticasone formoterol",
+    "formoterol fluticasone",
+    "fluticasone propionate/formoterol fumarate dihydrate"
+  ],
+  "availability": {
+    "status": "uk"
+  },
+  "formulations": [
+    {
+      "id": "fp-formoterol-pmdi-125-5",
+      "label": "Pressurised metered-dose inhaler 125/5",
+      "route": "inhalation",
+      "strengths": "fluticasone propionate 125 micrograms + formoterol fumarate dihydrate 5 micrograms per actuation (metered)",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "125 micrograms of fluticasone propionate and 5 micrograms of formoterol fumarate dihydrate."
+        }
+      ],
+      "sourceIds": [
+        "emc-7649"
+      ]
+    },
+    {
+      "id": "fp-formoterol-pmdi-250-10",
+      "label": "Pressurised metered-dose inhaler 250/10",
+      "route": "inhalation",
+      "strengths": "fluticasone propionate 250 micrograms + formoterol fumarate dihydrate 10 micrograms per actuation (metered)",
+      "release": "n/a",
+      "note": "Adults only.",
+      "src": [
+        {
+          "s": "emc-7648",
+          "q": "250 micrograms of fluticasone propionate and 10 micrograms of formoterol fumarate dihydrate."
+        },
+        {
+          "s": "emc-7648",
+          "q": "Flutiform 250 microgram /10 microgram inhaler is indicated in adults only."
+        }
+      ],
+      "sourceIds": [
+        "emc-7648"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Asthma: regular treatment where an ICS/LABA combination is appropriate (not controlled on ICS plus as-needed SABA, or already controlled on ICS and LABA). 125/5: adults and adolescents 12 years and over. 250/10: adults only.",
+          "tag": "Asthma",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "is indicated in the regular treatment of asthma where the use of a combination product (an inhaled corticosteroid and a long-acting β2 agonist) is appropriate"
+            },
+            {
+              "s": "emc-7649",
+              "q": "Flutiform 125 microgram / 5 microgram inhaler is indicated in adults and adolescents aged 12 years and above."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Flutiform 250 microgram /10 microgram inhaler is indicated in adults only."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Not for COPD (no data; should not be used). Not for initial treatment of mild asthma. Do not add another LABA for any reason.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Flutiform inhaler should not be used in patients with COPD."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Flutiform inhaler is not intended for the initial treatment of mild asthma."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Patients using Flutiform inhaler should not use additional long-acting β2 agonists for any reason."
+            }
+          ]
+        },
+        {
+          "t": "MHRA (asthma): always prescribe a LABA with an inhaled corticosteroid, and only when ICS alone does not control symptoms; do not start a LABA in rapidly deteriorating asthma; review regularly, lowest effective dose, stop if no benefit. (This product already contains an ICS.)",
+          "tag": "LABA safety (MHRA)",
+          "src": [
+            {
+              "s": "mhra-dsu-laba-2010",
+              "q": "always prescribe LABA with concomitant ICS and only when ICS alone are not sufficient to control asthma symptoms"
+            },
+            {
+              "s": "mhra-dsu-laba-2010",
+              "q": "LABA should not be initiated in patients with rapidly deteriorating asthma"
+            },
+            {
+              "s": "mhra-dsu-laba-2010",
+              "q": "review LABA therapy regularly, prescribe the lowest effective dose, and stop if there is no benefit"
+            }
+          ]
+        },
+        {
+          "t": "SPS: generic prescribing of inhalers can lead to an unfamiliar device, which could affect use and adherence (no specific brand instruction for this pressurised inhaler).",
+          "tag": "Device",
+          "detail": true,
+          "src": [
+            {
+              "s": "sps-brand-examples",
+              "q": "Generic prescribing of inhalers can lead to people being given an unfamiliar device which could affect usage and adherence."
+            }
+          ]
+        },
+        {
+          "t": "NICE (asthma): if possible, use the same type of device for preventer and reliever when more than one inhaler is needed.",
+          "tag": "Device choice",
+          "detail": true,
+          "src": [
+            {
+              "s": "nice-ng245",
+              "q": "If possible, prescribe the same type of device to deliver preventer and reliever treatments where more than one inhaler is needed."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "125/5 (adults and adolescents 12 years and over): two puffs twice daily, morning and evening. This is also the recommended starting dose for patients on medium to high ICS doses who clearly need two maintenance therapies.",
+          "tag": "Asthma: 125/5",
+          "formulations": [
+            "fp-formoterol-pmdi-125-5"
+          ],
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Flutiform 125 microgram/5 microgram inhaler - two inhalations (puffs) twice daily normally taken in the morning and in the evening."
+            },
+            {
+              "s": "emc-7649",
+              "q": "the recommended starting dose is two inhalations twice daily of Flutiform 125 microgram /5 microgram inhaler"
+            }
+          ]
+        },
+        {
+          "t": "250/10 (adults only): two puffs twice daily, morning and evening, if asthma remains poorly controlled on lower strengths.",
+          "tag": "Asthma: 250/10",
+          "formulations": [
+            "fp-formoterol-pmdi-250-10"
+          ],
+          "src": [
+            {
+              "s": "emc-7648",
+              "q": "Flutiform 250 microgram/10 microgram inhaler - two inhalations (puffs) twice daily normally taken in the morning and in the evening."
+            }
+          ]
+        },
+        {
+          "t": "Titrate to the lowest dose that keeps control; consider stepping down to an ICS alone. Use a spacer if hand-breath coordination is difficult (re-titrate after starting a spacer). Elderly: no adjustment.",
+          "tag": "General",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Once control of asthma is achieved with the lowest strength of Flutiform inhaler administered twice daily treatment should be reviewed and consideration given as to whether patients should be stepped down to an inhaled corticosteroid alone."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Use of a spacer device with Flutiform inhaler is recommended in patients who find it difficult to synchronise aerosol actuation with inspiration of breath."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Re-titration to the lowest effective dose should always follow the introduction of a spacer device."
+            },
+            {
+              "s": "emc-7649",
+              "q": "There is no need to adjust the dose in elderly patients."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "125/5: not for children under 12 years. 250/10: not for anyone under 18. No strength is recommended under 5 years. A 50/5 strength (same SmPC) is licensed from 5 years.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Flutiform inhaler 125 microgram/5 microgram per actuation should not be used in this young age group."
+            },
+            {
+              "s": "emc-7648",
+              "q": "Flutiform inhaler 250 microgram/10 microgram per actuation should not be used in adolescents or children."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Flutiform inhaler in any strength is not recommended for use in children less than 5 years of age"
+            },
+            {
+              "s": "emc-7649",
+              "q": "Flutiform 50 microgram / 5 microgram inhaler is indicated in adults, adolescents and children aged 5 years and above."
+            }
+          ]
+        },
+        {
+          "t": "Monitor height in children on prolonged inhaled corticosteroid.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "It is recommended that the height of children receiving prolonged treatment with inhaled corticosteroids is regularly monitored."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to fluticasone propionate, formoterol or any excipient (sodium cromoglicate, ethanol, propellant).",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Hypersensitivity to the active substances or to any of the excipients listed in section 6.1."
+            },
+            {
+              "s": "emc-7649",
+              "q": "6.1 List of excipients Sodium Cromoglicate Ethanol Anhydrous Apaflurane HFA 227"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Not for acute symptoms (use a fast-acting reliever); not the first treatment for asthma; do not start during an exacerbation; do not stop abruptly (down-titrate under supervision).",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Flutiform inhaler should not be used to treat acute asthma symptoms for which a fast and short-acting bronchodilator is required."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Flutiform inhaler should not be used as the first treatment for asthma."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Treatment with Flutiform inhaler should not be stopped abruptly in patients with asthma due to risk of exacerbation."
+            }
+          ]
+        },
+        {
+          "t": "Use with caution in thyrotoxicosis, phaeochromocytoma, diabetes, uncorrected hypokalaemia, HOCM, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders (ischaemic heart disease, arrhythmias, severe heart failure), and in existing QTc prolongation.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+            },
+            {
+              "s": "emc-7649",
+              "q": "severe hypertension, aneurysm or other severe cardiovascular disorders, such as ischaemic heart disease, cardiac arrhythmias or severe heart failure"
+            },
+            {
+              "s": "emc-7649",
+              "q": "Caution must be observed when treating patients with existing prolongation of the QTc interval."
+            }
+          ]
+        },
+        {
+          "t": "Hypokalaemia: particular caution in unstable or acute severe asthma; monitor serum potassium then. Consider extra blood sugar checks in diabetes.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "It is recommended that serum potassium levels are monitored during these circumstances."
+            },
+            {
+              "s": "emc-7649",
+              "q": "As for all β2 agonists, additional blood sugar controls should be considered in diabetic patients."
+            }
+          ]
+        },
+        {
+          "t": "Adrenal suppression with prolonged high doses (rarely at 500 to under 1000 micrograms fluticasone): consider extra systemic corticosteroid in stress or elective surgery.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Prolonged treatment of patients with high doses of inhaled corticosteroids may result in adrenal suppression and acute adrenal crisis."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Additional systemic corticosteroid treatment should be considered during periods of stress or elective surgery."
+            }
+          ]
+        },
+        {
+          "t": "Caution in pulmonary or quiescent tuberculosis and fungal, viral or other airway infections. A spacer may increase systemic absorption.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "should be administered with caution in patients with pulmonary tuberculosis, quiescent tuberculosis or patients with fungal, viral or other infections of the airway"
+            },
+            {
+              "s": "emc-7649",
+              "q": "Use of a spacer device may lead to a possible increase in pulmonary deposition and a potential increase in systemic absorption and systemic adverse events."
+            }
+          ]
+        },
+        {
+          "t": "Contains sodium cromoglicate as an excipient: hypersensitivity has been reported with inhaled cromoglicate. Refer to an ophthalmologist if blurred vision.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Hypersensitivity reactions have been reported in patients using inhaled sodium cromoglicate as an active ingredient."
+            },
+            {
+              "s": "emc-7649",
+              "q": "If a patient presents with symptoms such as blurred vision or other visual disturbances, the patient should be considered for referral to an ophthalmologist"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "CYP3A inhibitors (e.g. ritonavir, cobicistat, clarithromycin, itraconazole, ketoconazole): avoid unless benefit outweighs risk; if used, monitor for systemic corticosteroid side-effects.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Co-treatment with CYP3A inhibitors (e.g. ritonavir, atazanavir, clarithromycin, indinavir, itraconazole, nelfinavir, saquinavir, ketoconazole, telithromycin, cobicistat) is expected to increase the risk of systemic side-effects."
+            },
+            {
+              "s": "emc-7649",
+              "q": "The combination should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid side-effects"
+            }
+          ]
+        },
+        {
+          "t": "Beta-blockers (including eye drops): patients with asthma should not normally receive them; if no alternative, a cardioselective beta-blocker with caution.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Therefore, patients with asthma should not normally be treated with β blockers and this includes β blockers used as eye drops for treatment of glaucoma."
+            },
+            {
+              "s": "emc-7649",
+              "q": "cardioselective β blockers could be considered, although they should be administered with caution"
+            }
+          ]
+        },
+        {
+          "t": "Loop and thiazide diuretics: caution (ECG changes/hypokalaemia can be acutely worsened). Xanthines and glucocorticoids add to hypokalaemia.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "caution is advised in the co-administration of a β agonist with non-potassium sparing diuretics"
+            },
+            {
+              "s": "emc-7649",
+              "q": "Xanthine derivates and glucocorticosteroids may add to a possible hypokalaemic effect of the β agonists."
+            }
+          ]
+        },
+        {
+          "t": "Caution with tricyclic antidepressants, MAO inhibitors (and for 2 weeks after stopping them) and other QTc-prolonging drugs (antipsychotics, quinidine, disopyramide, procainamide, antihistamines); caution with other adrenergic drugs by any route.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Formoterol fumarate, as with other β2 agonists, should be administered with caution to patients being treated with tricyclic antidepressants or monoamine oxidase inhibitors, and during the immediate two week period following their discontinuation"
+            },
+            {
+              "s": "emc-7649",
+              "q": "or other drugs known to prolong the QTc interval such as antipsychotics (including phenothiazines), quinidine, disopyramide, procainamide, and antihistamines"
+            },
+            {
+              "s": "emc-7649",
+              "q": "If additional adrenergic drugs are to be administered by any route, they should be used with caution"
+            }
+          ]
+        },
+        {
+          "t": "Levodopa, levothyroxine, oxytocin and alcohol can impair cardiac tolerance to beta2 sympathomimetics. Do not stop any cromoglicate-containing medicine (the excipient dose is not pharmacological).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "In addition L-Dopa, L-thyroxine, oxytocin and alcohol can impair cardiac tolerance towards β2 sympathomimetics."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Patients should not discontinue any cromoglicate containing medication."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No data in renal impairment; monitor regularly and titrate to the lowest effective dose.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "There are no data available for use of Flutiform inhaler in patients with hepatic or renal impairment"
+            },
+            {
+              "s": "emc-7649",
+              "q": "These patients should be regularly monitored by a physician to ensure titration to the lowest dose at which effective control of symptoms is maintained."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No data in hepatic impairment; increased exposure expected in severe hepatic impairment. Monitor regularly and titrate to the lowest effective dose.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "There are no data available for use of Flutiform inhaler in patients with hepatic or renal impairment"
+            },
+            {
+              "s": "emc-7649",
+              "q": "an increased exposure can be expected in patients with severe hepatic impairment"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: limited data; not recommended in pregnancy, consider only if benefit to the mother outweighs any risk to the fetus, at the lowest effective dose. In labour, restrict to patients in whom benefit outweighs risk.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Administration of Flutiform inhaler is not recommended during pregnancy, and should only be considered if expected benefit to the mother is greater than any possible risk to the fetus."
+            },
+            {
+              "s": "emc-7649",
+              "q": "use of Flutiform inhaler for management of asthma during labour should be restricted to those patients in whom the benefit outweighs the risks"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: inhaled corticosteroids should be continued in pregnancy; no evidence they harm the baby. ICS/LABA inhalers are standard asthma treatment; do not stop asthma treatment because of pregnancy unless advised.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-inhaled-corticosteroids",
+              "q": "Inhaled corticosteroids should be continued throughout pregnancy to ensure that breathing problems do not occur."
+            },
+            {
+              "s": "bumps-inhaled-corticosteroids",
+              "q": "There is no evidence that use of inhaled corticosteroids in pregnancy harms the baby."
+            },
+            {
+              "s": "bumps-asthma",
+              "q": "Do not stop your asthma treatment because you are pregnant unless advised by a healthcare professional."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: unknown whether excreted in milk; risk cannot be excluded. Decide whether to stop breastfeeding or stop therapy.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "A risk to the suckling child cannot be excluded. Therefore, a decision must be made whether to discontinue breastfeeding or to discontinue/abstain from Flutiform inhaler therapy"
+            }
+          ]
+        },
+        {
+          "t": "SPS: inhaled fluticasone can be used during breastfeeding (formoterol not covered on this page).",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-ics-breastfeeding",
+              "q": "When applied to the skin, inhaled or used intranasally, fluticasone can be used during breastfeeding."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No fertility data with the combination; no effect in animal studies at clinically relevant doses.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "There are no data available on effects on fertility following administration of Flutiform inhaler."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "No adverse reactions are listed as common or very common. Uncommon: headache, tremor, dizziness, palpitations, ventricular extrasystoles, asthma exacerbation, dysphonia, throat irritation, dry mouth, rash, sleep disorders.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Nervous System Disorders Headache Tremor Dizziness Uncommon"
+            },
+            {
+              "s": "emc-7649",
+              "q": "Cardiac Disorders Palpitations Ventricular extrasystoles Uncommon"
+            },
+            {
+              "s": "emc-7649",
+              "q": "Respiratory, Thoracic and Mediastinal Disorders Exacerbation of asthma Dysphonia Throat irritation Uncommon"
+            },
+            {
+              "s": "emc-7649",
+              "q": "Gastrointestinal disorders Dry mouth Uncommon"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Paradoxical bronchospasm: treat straight away with a rapid-acting bronchodilator; stop this inhaler and assess.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Paradoxical bronchospasm responds to a rapid-acting inhaled bronchodilator and should be treated straight away. Flutiform inhaler should be discontinued immediately, the patient assessed and alternative therapy instituted if necessary."
+            }
+          ]
+        },
+        {
+          "t": "Hypersensitivity (urticaria, angioedema, anaphylaxis) is possible with the components; treat as standard and stop if needed.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Hypersensitivity reactions including, urticaria, pruritus, angiooedema (mainly facial and oropharyngeal), anaphylactic reactions."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Flutiform inhaler may need to be discontinued immediately and an alternative asthma therapy may need to be initiated if necessary."
+            }
+          ]
+        },
+        {
+          "t": "Sudden, progressive loss of asthma control is potentially life-threatening: urgent medical assessment.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Sudden and progressive deterioration in control of asthma is potentially life-threatening and the patient should undergo urgent medical assessment."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Monitor response clinically and by lung function; review regularly so the strength stays optimal.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "patients' responses should be monitored clinically and by lung function tests"
+            }
+          ]
+        },
+        {
+          "t": "Serum potassium in unstable or acute severe asthma; blood sugar in diabetes; HPA axis if adrenal function may be impaired; height in children.",
+          "tag": "ongoing",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "It is recommended that serum potassium levels are monitored during these circumstances."
+            },
+            {
+              "s": "emc-7649",
+              "q": "In situations of possible impaired adrenal function hypothalamic pituitary adrenocortical (HPA) axis function should be monitored regularly."
+            }
+          ]
+        },
+        {
+          "t": "Stop at once if paradoxical bronchospasm occurs.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Flutiform inhaler should be discontinued immediately, the patient assessed and alternative therapy instituted if necessary."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Prime before first use, after 3 days or more without use, or after freezing/refrigeration: shake and fire 4 puffs away from the face. Shake immediately before each puff; breathe out, then breathe in slowly and press, keep breathing in, hold breath. Do not use after the counter reads 0.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "the inhaler must be primed before use"
+            },
+            {
+              "s": "emc-7649",
+              "q": "This step must be performed 4 times."
+            },
+            {
+              "s": "emc-7649",
+              "q": "The inhaler should always be shaken immediately before use."
+            },
+            {
+              "s": "emc-7649",
+              "q": "The inhaler must not be used after the dose indicator reads"
+            }
+          ]
+        },
+        {
+          "t": "Rinse mouth, gargle with water or brush teeth after inhaling and spit out, to reduce thrush and hoarseness. Clean the mouthpiece weekly with a dry cloth; never put the canister in water.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Patients should rinse their mouth, gargle with water or brush the teeth after inhaling and spit out the residue to minimise the risk of oral candidiasis or dysphonia."
+            },
+            {
+              "s": "emc-7649",
+              "q": "The inhaler should be cleaned once a week."
+            },
+            {
+              "s": "emc-7649",
+              "q": "Do not put the metal canister into water."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "This is a preventer: use regularly even when well. Keep a fast-acting reliever available at all times. See the doctor soon if more reliever is needed or it works less well.",
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "this fixed-dose combination inhaler is a prophylactic therapy and as such has to be used regularly even when asymptomatic for optimum benefit"
+            },
+            {
+              "s": "emc-7649",
+              "q": "Patients should be advised to have their medicine to be used for relief in an acute asthma attack available at all times."
+            },
+            {
+              "s": "emc-7649",
+              "q": "the patient should be reviewed by their doctor as soon as possible"
+            }
+          ]
+        },
+        {
+          "t": "Contains a small amount of alcohol (2 mg per 2-puff dose) with no noticeable effect.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-7649",
+              "q": "Flutiform contains 2 mg of alcohol (ethanol) in each dose (2 inhalations)"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "fluticasone-propionate-formoterol:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "fluticasone-propionate-formoterol",
+      "allergen": [
+        "fluticasone-propionate",
+        "formoterol"
+      ],
+      "concern": "Hypersensitivity to fluticasone propionate, formoterol or an excipient (sodium cromoglicate, ethanol, propellant)",
+      "consequence": "Risk of hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Hypersensitivity to the active substances or to any of the excipients listed in section 6.1."
+        },
+        {
+          "s": "emc-7649",
+          "q": "6.1 List of excipients Sodium Cromoglicate Ethanol Anhydrous Apaflurane HFA 227"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:thyrotoxicosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "thyrotoxicosis",
+      "concern": "Thyrotoxicosis",
+      "consequence": "Beta2 agonist (formoterol) effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:phaeochromocytoma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "phaeochromocytoma",
+      "concern": "Phaeochromocytoma",
+      "consequence": "Beta2 agonist (formoterol) effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "hypokalaemia",
+      "concern": "Uncorrected hypokalaemia or predisposition to low potassium",
+      "consequence": "Beta2 agonist (formoterol) effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:hocm",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "hocm",
+      "concern": "Hypertrophic obstructive cardiomyopathy / idiopathic subvalvular aortic stenosis",
+      "consequence": "Beta2 agonist (formoterol) effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus",
+      "consequence": "Beta2 agonists can raise blood sugar.",
+      "action": "Use with caution; consider extra blood sugar checks.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+        },
+        {
+          "s": "emc-7649",
+          "q": "As for all β2 agonists, additional blood sugar controls should be considered in diabetic patients."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:hypertension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "hypertension",
+      "concern": "Severe hypertension",
+      "consequence": "Severe cardiovascular disorder; beta2 agonist effects may worsen it.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+        },
+        {
+          "s": "emc-7649",
+          "q": "severe hypertension, aneurysm or other severe cardiovascular disorders, such as ischaemic heart disease, cardiac arrhythmias or severe heart failure"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:aortic-aneurysm",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "aortic-aneurysm",
+      "concern": "Aneurysm",
+      "consequence": "Severe cardiovascular disorder; beta2 agonist effects may worsen it.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+        },
+        {
+          "s": "emc-7649",
+          "q": "severe hypertension, aneurysm or other severe cardiovascular disorders, such as ischaemic heart disease, cardiac arrhythmias or severe heart failure"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Ischaemic heart disease",
+      "consequence": "Severe cardiovascular disorder; beta2 agonist effects may worsen it.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+        },
+        {
+          "s": "emc-7649",
+          "q": "severe hypertension, aneurysm or other severe cardiovascular disorders, such as ischaemic heart disease, cardiac arrhythmias or severe heart failure"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:cardiac-arrhythmia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "cardiac-arrhythmia",
+      "concern": "Cardiac arrhythmias",
+      "consequence": "Severe cardiovascular disorder; beta2 agonist effects may worsen it.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+        },
+        {
+          "s": "emc-7649",
+          "q": "severe hypertension, aneurysm or other severe cardiovascular disorders, such as ischaemic heart disease, cardiac arrhythmias or severe heart failure"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "severe-heart-failure",
+      "concern": "Severe heart failure",
+      "consequence": "Severe cardiovascular disorder; beta2 agonist effects may worsen it.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should be used with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, uncorrected hypokalaemia or patients predisposed to low levels of serum potassium, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis"
+        },
+        {
+          "s": "emc-7649",
+          "q": "severe hypertension, aneurysm or other severe cardiovascular disorders, such as ischaemic heart disease, cardiac arrhythmias or severe heart failure"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:qt-prolongation",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "Existing QTc prolongation",
+      "consequence": "Formoterol itself may prolong the QTc interval.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution must be observed",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Caution must be observed when treating patients with existing prolongation of the QTc interval. Formoterol itself may induce prolongation of the QTc interval."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:copd",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "copd",
+      "concern": "COPD",
+      "consequence": "No data in COPD.",
+      "action": "Do not use in COPD.",
+      "sourceWording": "should not be used in patients with COPD",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "There are no data available for use of Flutiform inhaler in patients with COPD. Flutiform inhaler should not be used in patients with COPD."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:acute-asthma-attack",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "acute-asthma-attack",
+      "concern": "Acute asthma symptoms, exacerbation or acutely deteriorating asthma",
+      "consequence": "Not a reliever; not suitable to start during an exacerbation.",
+      "action": "Do not use for acute symptoms (use a fast, short-acting bronchodilator); do not start during an exacerbation.",
+      "sourceWording": "should not be used to treat acute asthma symptoms",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler should not be used to treat acute asthma symptoms for which a fast and short-acting bronchodilator is required."
+        },
+        {
+          "s": "emc-7649",
+          "q": "Patients should not be initiated on Flutiform inhaler during an exacerbation, or if they have significantly worsening or acutely deteriorating asthma."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:pulmonary-tuberculosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "pulmonary-tuberculosis",
+      "concern": "Pulmonary tuberculosis or fungal/viral airway infection",
+      "consequence": "Inhaled corticosteroid may worsen airway infection.",
+      "action": "Use with caution; treat infection adequately.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "should be administered with caution in patients with pulmonary tuberculosis, quiescent tuberculosis or patients with fungal, viral or other infections of the airway"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:condition:renal-impairment",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "fluticasone-propionate-formoterol",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment",
+      "consequence": "No data in renal impairment.",
+      "action": "Monitor regularly and titrate to the lowest effective dose.",
+      "sourceWording": "should be regularly monitored",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "There are no data available for use of Flutiform inhaler in patients with hepatic or renal impairment"
+        },
+        {
+          "s": "emc-7649",
+          "q": "These patients should be regularly monitored by a physician to ensure titration to the lowest dose at which effective control of symptoms is maintained."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:hepatic:any",
+      "kind": "hepatic",
+      "level": "monitor",
+      "med": "fluticasone-propionate-formoterol",
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Hepatic impairment",
+      "consequence": "No data; increased exposure expected in severe hepatic impairment.",
+      "action": "Monitor regularly and titrate to the lowest effective dose.",
+      "sourceWording": "should be regularly monitored",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "There are no data available for use of Flutiform inhaler in patients with hepatic or renal impairment"
+        },
+        {
+          "s": "emc-7649",
+          "q": "These patients should be regularly monitored by a physician to ensure titration to the lowest dose at which effective control of symptoms is maintained."
+        },
+        {
+          "s": "emc-7649",
+          "q": "an increased exposure can be expected in patients with severe hepatic impairment"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "CYP3A inhibitors (e.g. clarithromycin, itraconazole, ketoconazole, ritonavir, cobicistat)",
+      "consequence": "Higher risk of systemic corticosteroid side-effects.",
+      "action": "Avoid unless benefit outweighs the risk; if used, monitor for systemic corticosteroid side-effects.",
+      "sourceWording": "The combination should be avoided unless the benefit outweighs",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Co-treatment with CYP3A inhibitors (e.g. ritonavir, atazanavir, clarithromycin, indinavir, itraconazole, nelfinavir, saquinavir, ketoconazole, telithromycin, cobicistat) is expected to increase the risk of systemic side-effects."
+        },
+        {
+          "s": "emc-7649",
+          "q": "The combination should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid side-effects, in which case patients should be monitored for systemic corticosteroid side-effects."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:thiazide",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "group:thiazide",
+      "concern": "Thiazide diuretics (non-potassium-sparing)",
+      "consequence": "ECG changes and/or hypokalaemia from the diuretic can be acutely worsened by beta agonists.",
+      "action": "Use with caution.",
+      "sourceWording": "caution is advised",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "The ECG changes and/or hypokalaemia that may result from the administration of non-potassium sparing diuretics (such as loop or thiazide diuretics) can be acutely worsened by β agonists"
+        },
+        {
+          "s": "emc-7649",
+          "q": "caution is advised in the co-administration of a β agonist with non-potassium sparing diuretics"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:loop-diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "group:loop-diuretic",
+      "concern": "Loop diuretics (non-potassium-sparing)",
+      "consequence": "ECG changes and/or hypokalaemia from the diuretic can be acutely worsened by beta agonists.",
+      "action": "Use with caution.",
+      "sourceWording": "caution is advised",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "The ECG changes and/or hypokalaemia that may result from the administration of non-potassium sparing diuretics (such as loop or thiazide diuretics) can be acutely worsened by β agonists"
+        },
+        {
+          "s": "emc-7649",
+          "q": "caution is advised in the co-administration of a β agonist with non-potassium sparing diuretics"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "group:corticosteroid",
+      "concern": "Corticosteroids (systemic)",
+      "consequence": "May add to beta2-agonist hypokalaemia.",
+      "action": "No specific action stated in 4.5; monitor potassium in unstable or acute severe asthma (4.4).",
+      "sourceWording": "may add to a possible hypokalaemic effect",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Xanthine derivates and glucocorticosteroids may add to a possible hypokalaemic effect of the β agonists."
+        },
+        {
+          "s": "emc-7649",
+          "q": "It is recommended that serum potassium levels are monitored during these circumstances."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "qt-prolongation",
+      "concern": "Tricyclic antidepressants (and 2 weeks after stopping)",
+      "consequence": "QTc prolongation and ventricular arrhythmia risk.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Formoterol fumarate, as with other β2 agonists, should be administered with caution to patients being treated with tricyclic antidepressants or monoamine oxidase inhibitors, and during the immediate two week period following their discontinuation"
+        },
+        {
+          "s": "emc-7649",
+          "q": "Drugs that are known to prolong the QTc interval can increase the risk of ventricular arrhythmias"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:maoi",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "group:maoi",
+      "concern": "MAO inhibitors (and 2 weeks after stopping)",
+      "consequence": "May precipitate hypertensive reactions.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Formoterol fumarate, as with other β2 agonists, should be administered with caution to patients being treated with tricyclic antidepressants or monoamine oxidase inhibitors, and during the immediate two week period following their discontinuation"
+        },
+        {
+          "s": "emc-7649",
+          "q": "Concomitant treatment with monoamine oxidase inhibitors, including agents with similar properties such as furazolidone and procarbazine, may precipitate hypertensive reactions."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:qt-prolonging",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "group:qt-prolonging",
+      "effect": "qt-prolongation",
+      "concern": "Other QTc-prolonging medicines",
+      "consequence": "Increased risk of ventricular arrhythmias.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "or other drugs known to prolong the QTc interval such as antipsychotics (including phenothiazines), quinidine, disopyramide, procainamide, and antihistamines"
+        },
+        {
+          "s": "emc-7649",
+          "q": "Drugs that are known to prolong the QTc interval can increase the risk of ventricular arrhythmias"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "group:sympathomimetic",
+      "otherExcept": ["salbutamol", "salbutamol-budesonide"],
+      "concern": "Other adrenergic (sympathomimetic) drugs by any route",
+      "consequence": "Sympathetic effects of formoterol may be potentiated.",
+      "action": "Use with caution.",
+      "sourceWording": "they should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "If additional adrenergic drugs are to be administered by any route, they should be used with caution, because the pharmacologically predictable sympathetic effects of formoterol may be potentiated."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:saba-reliever",
+      "kind": "interaction",
+      "level": "info",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "salbutamol",
+      "concern": "Short-acting beta-2 agonist (salbutamol) as reliever",
+      "consequence": "The SmPC tells patients to take an inhaled short-acting beta-2 agonist for immediate relief of asthma symptoms between doses.",
+      "action": "Expected use as a reliever between doses; the general 'other adrenergic drugs' caution is not applied to it.",
+      "sourceWording": "an inhaled, short-acting β2 agonist should be taken for immediate relief",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "If asthma symptoms arise in the period between doses, an inhaled, short-acting β2 agonist should be taken for immediate relief."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:xylometazoline",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "xylometazoline",
+      "concern": "Xylometazoline (adrenergic drug given by another route)",
+      "consequence": "The sympathetic effects of formoterol may be potentiated by additional adrenergic drugs given by any route.",
+      "action": "Use with caution.",
+      "sourceWording": "they should be used with caution",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "If additional adrenergic drugs are to be administered by any route, they should be used with caution, because the pharmacologically predictable sympathetic effects of formoterol may be potentiated."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:laba",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "group:long-acting-beta2-agonist",
+      "concern": "Another long-acting beta2 agonist (LABA)",
+      "consequence": "This inhaler already contains a LABA (formoterol).",
+      "action": "Do not use additional long-acting beta2 agonists for any reason; use a short-acting beta2 agonist for symptoms between doses.",
+      "sourceWording": "should not use additional long-acting β2 agonists for any reason",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Patients using Flutiform inhaler should not use additional long-acting β2 agonists for any reason."
+        },
+        {
+          "s": "emc-7649",
+          "q": "If asthma symptoms arise in the period between doses, an inhaled, short-acting β2 agonist should be taken for immediate relief."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:beta-blocker",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "group:beta-blocker",
+      "concern": "Beta-blockers (including eye drops)",
+      "consequence": "Mutual inhibition of effect; beta-blockers may cause severe bronchospasm in asthma.",
+      "action": "Patients with asthma should not normally be given beta-blockers; if no alternative (e.g. after MI), a cardioselective beta-blocker with caution.",
+      "sourceWording": "should not normally be treated with β blockers",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Beta blockers may also produce severe bronchospasm in asthmatic patients. Therefore, patients with asthma should not normally be treated with β blockers and this includes β blockers used as eye drops for treatment of glaucoma."
+        },
+        {
+          "s": "emc-7649",
+          "q": "cardioselective β blockers could be considered, although they should be administered with caution"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:interaction:levothyroxine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "fluticasone-propionate-formoterol",
+      "other": "levothyroxine",
+      "concern": "Levothyroxine",
+      "consequence": "Can impair cardiac tolerance to beta2 sympathomimetics.",
+      "action": "No specific action stated.",
+      "sourceWording": "can impair cardiac tolerance",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "In addition L-Dopa, L-thyroxine, oxytocin and alcohol can impair cardiac tolerance towards β2 sympathomimetics."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "fluticasone-propionate-formoterol",
+      "concern": "Pregnancy",
+      "consequence": "Limited data; animal studies showed reproductive toxicity.",
+      "action": "Not recommended; consider only if benefit to the mother outweighs any risk to the fetus, at the lowest effective dose. In labour, restrict to patients in whom benefit outweighs risk (uterine contractility).",
+      "sourceWording": "is not recommended during pregnancy",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Administration of Flutiform inhaler is not recommended during pregnancy, and should only be considered if expected benefit to the mother is greater than any possible risk to the fetus."
+        },
+        {
+          "s": "emc-7649",
+          "q": "use of Flutiform inhaler for management of asthma during labour should be restricted to those patients in whom the benefit outweighs the risks"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:pregnancy:bumps-ics",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "fluticasone-propionate-formoterol",
+      "concern": "Pregnancy (BUMPS, inhaled corticosteroids)",
+      "consequence": "BUMPS: no evidence inhaled corticosteroids harm the baby; continue them in pregnancy. This differs in strength from the SmPC.",
+      "action": "Do not stop asthma treatment because of pregnancy unless advised.",
+      "sourceWording": "should be continued throughout pregnancy",
+      "src": [
+        {
+          "s": "bumps-inhaled-corticosteroids",
+          "q": "Inhaled corticosteroids should be continued throughout pregnancy to ensure that breathing problems do not occur."
+        },
+        {
+          "s": "bumps-asthma",
+          "q": "Do not stop your asthma treatment because you are pregnant unless advised by a healthcare professional."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "fluticasone-propionate-formoterol",
+      "concern": "Breastfeeding",
+      "consequence": "Unknown if excreted in human milk; risk to the infant cannot be excluded.",
+      "action": "Decide whether to stop breastfeeding or stop therapy, weighing benefits.",
+      "sourceWording": "a decision must be made",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "A risk to the suckling child cannot be excluded. Therefore, a decision must be made whether to discontinue breastfeeding or to discontinue/abstain from Flutiform inhaler therapy"
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:breastfeeding:sps-fluticasone",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "fluticasone-propionate-formoterol",
+      "concern": "Breastfeeding (SPS, fluticasone component)",
+      "consequence": "SPS: inhaled fluticasone can be used in breastfeeding (formoterol not covered by this SPS page).",
+      "action": "No infant monitoring usually needed.",
+      "sourceWording": "can be used during breastfeeding",
+      "src": [
+        {
+          "s": "sps-ics-breastfeeding",
+          "q": "When applied to the skin, inhaled or used intranasally, fluticasone can be used during breastfeeding."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:age:under-12-125",
+      "kind": "age",
+      "level": "avoid",
+      "med": "fluticasone-propionate-formoterol",
+      "formulations": [
+        "fp-formoterol-pmdi-125-5"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 12
+      },
+      "concern": "Child under 12 years (125/5 strength)",
+      "consequence": "No data for this strength in children; experience in children is limited to the 50/5 strength (5 years and over).",
+      "action": "Do not use this strength under 12 years.",
+      "sourceWording": "should not be used in this young age group",
+      "src": [
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler in this strength (125 microgram/5 microgram) is not recommended for use in children less than 12 years of age"
+        },
+        {
+          "s": "emc-7649",
+          "q": "Flutiform inhaler 125 microgram/5 microgram per actuation should not be used in this young age group."
+        }
+      ]
+    },
+    {
+      "id": "fluticasone-propionate-formoterol:age:under-18-250",
+      "kind": "age",
+      "level": "avoid",
+      "med": "fluticasone-propionate-formoterol",
+      "formulations": [
+        "fp-formoterol-pmdi-250-10"
+      ],
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "concern": "Under 18 years (250/10 strength)",
+      "consequence": "The highest strength is for adults only.",
+      "action": "Do not use this strength in adolescents or children (lower strengths exist).",
+      "sourceWording": "should not be used in adolescents or children",
+      "src": [
+        {
+          "s": "emc-7648",
+          "q": "Flutiform inhaler 250 microgram/10 microgram per actuation should not be used in adolescents or children."
+        }
+      ]
+    }
+  ]
+}

@@ -1200,27 +1200,6 @@
       ]
     },
     {
-      "id": "levothyroxine:interaction:metformin",
-      "kind": "interaction",
-      "level": "monitor",
-      "med": "levothyroxine",
-      "other": "metformin",
-      "concern": "Levothyroxine + metformin (antidiabetic)",
-      "consequence": "Blood glucose raised; antidiabetic requirements may increase.",
-      "action": "Monitor for increased antidiabetic requirements; adjust dose if needed.",
-      "sourceWording": "should be monitored for increased requirements",
-      "src": [
-        {
-          "s": "emc-435",
-          "q": "Thyroid replacement therapy may cause an increase in dosage requirements of insulin or other anti-diabetic therapy (such as metformin)."
-        },
-        {
-          "s": "emc-1217",
-          "q": "diabetic patients should be monitored for increased requirements of insulin or oral hypoglycaemic agents"
-        }
-      ]
-    },
-    {
       "id": "levothyroxine:interaction:calcium-carbonate",
       "kind": "interaction",
       "level": "caution",
@@ -1363,6 +1342,179 @@
         {
           "s": "emc-1217",
           "q": "Effects of levothyroxine may be decreased by concomitant sertraline."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "levothyroxine",
+      "other": "group:antidiabetic",
+      "concern": "Levothyroxine + antidiabetic medicines (insulin, metformin and others)",
+      "consequence": "Blood glucose raised; antidiabetic requirements may increase.",
+      "action": "Monitor for increased insulin or other antidiabetic requirements; adjust dose if needed.",
+      "sourceWording": "should be monitored for increased requirements",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Thyroid replacement therapy may cause an increase in dosage requirements of insulin or other anti-diabetic therapy (such as metformin)."
+        },
+        {
+          "s": "emc-435",
+          "q": "Blood sugar levels are raised and dosage of anti-diabetic agents may require adjustment."
+        },
+        {
+          "s": "emc-1217",
+          "q": "diabetic patients should be monitored for increased requirements of insulin or oral hypoglycaemic agents"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:tricyclic-antidepressant",
+      "kind": "interaction",
+      "level": "info",
+      "med": "levothyroxine",
+      "other": "group:tricyclic-antidepressant",
+      "concern": "Levothyroxine + tricyclic antidepressant (e.g. amitriptyline)",
+      "consequence": "Tricyclic response may be accelerated; the combination may precipitate cardiac arrhythmias.",
+      "action": "No specific action stated; be aware of arrhythmia risk.",
+      "sourceWording": "concomitant use may precipitate cardiac arrhythmias",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Tricyclic anti-depressants (e.g. amitriptyline, imipramine, dosulepin) response may be accelerated because levothyroxine increases sensitivity to catecholamines; concomitant use may precipitate cardiac arrhythmias."
+        },
+        {
+          "s": "emc-1217",
+          "q": "The antidepressant response to imipramine, amitriptyline and possibly other tricyclic antidepressants can be accelerated"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "levothyroxine",
+      "other": "group:sympathomimetic",
+      "concern": "Levothyroxine + sympathomimetic (e.g. pseudoephedrine products)",
+      "consequence": "Effects of sympathomimetics on the heart are enhanced.",
+      "action": "Use with caution (oral solution SmPC).",
+      "sourceWording": "should therefore be used with caution",
+      "src": [
+        {
+          "s": "emc-1217",
+          "q": "Thyroid drugs increase metabolic demands and should therefore be used with caution with other drugs known to influence cardiac function, such as the sympathomimetics, as they may enhance this effect."
+        },
+        {
+          "s": "emc-435",
+          "q": "The effects of sympathomimetic agents (e.g. adrenaline or phenylephrine) are also enhanced"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:aspirin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "levothyroxine",
+      "other": "aspirin",
+      "otherFormulations": ["aspirin-analgesic"],
+      "concern": "Levothyroxine + anti-inflammatory aspirin (thyroid test interference)",
+      "consequence": "Falsely low plasma thyroid hormone concentrations have been seen.",
+      "action": "Bear in mind when interpreting thyroid function tests.",
+      "sourceWording": "False low plasma concentrations have been observed",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "False low plasma concentrations have been observed with concurrent anti-inflammatory treatment such as phenylbutazone or acetylsalicylic acid and levothyroxine therapy."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:nsaid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "levothyroxine",
+      "other": "group:nsaid",
+      "concern": "Levothyroxine + aspirin or NSAID (thyroid test interference)",
+      "consequence": "Falsely low plasma thyroid hormone concentrations have been seen.",
+      "action": "Bear in mind when interpreting thyroid function tests.",
+      "sourceWording": "False low plasma concentrations have been observed",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "NSAIDs: False low plasma concentrations have been observed with concurrent anti-inflammatory treatment such as phenylbutazone or acetylsalicylic acid and levothyroxine therapy."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:beta-blocker",
+      "kind": "interaction",
+      "level": "info",
+      "med": "levothyroxine",
+      "other": "group:beta-blocker",
+      "concern": "Levothyroxine + beta-blocker",
+      "consequence": "Levothyroxine speeds the metabolism of propranolol and atenolol; beta-blockers may reduce conversion of levothyroxine to T3.",
+      "action": "No specific action stated.",
+      "sourceWording": "accelerates metabolism of propranolol, atenolol and sotalol",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Beta Blockers: levothyroxine (thyroxine) accelerates metabolism of propranolol, atenolol and sotalol."
+        },
+        {
+          "s": "emc-435",
+          "q": "Beta blockers may decrease the peripheral conversion of levothyroxine to triiodothyronine."
+        },
+        {
+          "s": "emc-1217",
+          "q": "Levothyroxine accelerates the metabolism of propranolol."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "levothyroxine",
+      "other": "carbamazepine",
+      "concern": "Levothyroxine + carbamazepine",
+      "consequence": "Faster levothyroxine metabolism; lower thyroid hormone levels.",
+      "action": "Levothyroxine dose may need increasing; requirements may change when carbamazepine is started or stopped.",
+      "sourceWording": "may require an increase in their dose",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "Anti-convulsants, such as carbamazepine and phenytoin, enhance the metabolism of thyroid hormones and may displace them from plasma proteins."
+        },
+        {
+          "s": "emc-435",
+          "q": "Initiation or discontinuation of anti-convulsant therapy may alter levothyroxine dosage requirements."
+        },
+        {
+          "s": "emc-1217",
+          "q": "Therefore, patients on thyroid replacement therapy may require an increase in their dose of thyroid hormone if these products are given concurrently."
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "levothyroxine",
+      "other": "group:corticosteroid",
+      "concern": "Levothyroxine + corticosteroid",
+      "consequence": "Corticosteroids may lower thyroxine-binding globulin and inhibit conversion of T4 to T3.",
+      "action": "No specific action stated; bear in mind when interpreting thyroid function tests.",
+      "sourceWording": "may decrease serum concentrations of Levothyroxine-binding globulins",
+      "src": [
+        {
+          "s": "emc-435",
+          "q": "androgens and corticosteroids may decrease serum concentrations of Levothyroxine-binding globulins"
+        },
+        {
+          "s": "emc-1217",
+          "q": "Propylthiouracil, glucocorticoids, beta-sympatholytics, amiodarone and iodine containing contrast media: These substances inhibit the peripheral conversion of T4 to T3."
         }
       ]
     }

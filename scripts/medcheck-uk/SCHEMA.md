@@ -59,6 +59,7 @@ Each research batch adds its sources to `scripts/medcheck-uk/sources/<batch>.jso
       "route": "oral",
       "strengths": "250 mg/125 mg, 500 mg/125 mg",     // as on the SmPC
       "release": "immediate",                   // immediate | modified | gastro-resistant | n/a
+      "systemic": true,                         // optional: a local route (vaginal, nasal…) used for a whole-body effect, e.g. progesterone pessaries
       "note": "Strengths are not interchangeable: the clavulanic acid content differs.", // optional, needs src
       "src": [{ "s": "emc-12345", "q": "..." }],
       "sourceIds": ["emc-12345"]                // the SmPC(s) for THIS formulation
@@ -70,6 +71,22 @@ Each research batch adds its sources to `scripts/medcheck-uk/sources/<batch>.jso
   "rules": [ /* engine rules, see below */ ]
 }
 ```
+
+### Medicines with no UK product information
+
+Some clinic products are not licensed in the UK (no emc / MHRA SmPC, PIL or THR). For those:
+- set `"availability": { "status": "no-uk-product", "note": "what was searched (emc, MHRA products, NICE/SPS) and found nothing" }`;
+- write formulations from the clinic product only (label + route, no `src`);
+- set every section to `{ "status": "not-available", "note": "No UK product information found." }`;
+- write `"rules": []`.
+
+Never fill such a medicine from another country's label. The tool shows it as "not checked: no UK source".
+
+If only a *different* UK product with the same active ingredient exists (for example a different strength or route), you may use it. Say so clearly in `formulations[].note`, and include only the content that applies to the clinic's form.
+
+All other medicines use `"availability": { "status": "uk" }` (or omit it).
+
+If only ONE clinic form has no UK product (e.g. an ointment when only a cream exists), keep the medicine and mark that formulation `"availability": "no-uk-product"` with a `note`; no item or rule may be scoped to it. The tool then shows that form as "not checked".
 
 ### `sections`: fixed keys, always present
 
@@ -146,6 +163,8 @@ Each rule must be backed by verbatim quotes.
   "formulations": ["..."],                     // optional
   // kind-specific fields:
   "other": "warfarin" | "group:nsaid",         // interaction: other medicine id or group
+  "otherFormulations": ["aspirin-analgesic"],  // optional: only when the OTHER medicine is one of these formulation ids (e.g. dose-dependent interactions)
+  "otherExcept": ["azithromycin"],              // optional: group rule does NOT apply to these medicine ids (the source gives them their own, different advice in a separate rule)
   "condition": "infectious-mononucleosis",     // condition: id from vocab.json conditions (or add new in your batch file)
   "allergen": ["group:beta-lactam"],           // allergy: medicine ids, ingredient ids or groups the patient is allergic to
   "reactions": ["immediate-severe"],           // allergy: reaction groups this applies to (omit = any reaction)

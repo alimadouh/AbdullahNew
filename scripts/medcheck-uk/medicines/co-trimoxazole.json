@@ -9,7 +9,8 @@
   "groups": [
     "antibacterial",
     "sulfonamide",
-    "folate-antagonist"
+    "folate-antagonist",
+    "hepatotoxic"
   ],
   "searchTerms": [
     "sulfamethoxazole trimethoprim",
@@ -1459,6 +1460,68 @@
         {
           "s": "sps-sulfonamide",
           "q": "Trimethoprim is not a sulfonamide, but co-trimoxazole contains both sulfamethoxazole and trimethoprim."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:interaction:arb",
+      "kind": "interaction",
+      "med": "co-trimoxazole",
+      "level": "caution",
+      "other": "group:arb",
+      "effect": "hyperkalaemia",
+      "concern": "Co-trimoxazole with angiotensin II receptor blockers",
+      "consequence": "Clinically relevant hyperkalaemia.",
+      "action": "Use with caution; monitor potassium.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Hyperkalaemia: caution should be exercised in patients taking any other drugs that can cause hyperkalaemia, for example ACE inhibitors, angiotensin receptor blockers and potassium-sparing diuretics such as spironolactone."
+        },
+        {
+          "s": "emc-6999",
+          "q": "Concomitant use of trimethoprim-sulfamethoxazole (co-trimoxazole) may result in clinically relevant hyperkalaemia."
+        },
+        {
+          "s": "emc-6999",
+          "q": "Close monitoring of serum potassium is warranted in patients at risk of hyperkalaemia"
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:interaction:sulfonylurea",
+      "kind": "interaction",
+      "med": "co-trimoxazole",
+      "level": "info",
+      "other": "group:sulfonylurea",
+      "effect": "hypoglycaemia",
+      "concern": "Co-trimoxazole with sulfonylureas",
+      "consequence": "Uncommon, but potentiation of the hypoglycaemic effect has been reported.",
+      "action": "Be aware (no specific action stated).",
+      "sourceWording": "is uncommon but potentiation has been reported",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "Interaction with sulphonylurea hypoglycaemic agents is uncommon but potentiation has been reported."
+        }
+      ]
+    },
+    {
+      "id": "co-trimoxazole:interaction:repaglinide",
+      "kind": "interaction",
+      "med": "co-trimoxazole",
+      "level": "info",
+      "other": "repaglinide",
+      "effect": "hypoglycaemia",
+      "concern": "Co-trimoxazole with repaglinide",
+      "consequence": "Trimethoprim may increase repaglinide exposure, which may result in hypoglycaemia.",
+      "action": "Be aware (no specific action stated in the co-trimoxazole SmPCs).",
+      "sourceWording": "may result in hypoglycaemia",
+      "src": [
+        {
+          "s": "emc-6999",
+          "q": "trimethoprim may increase the exposure of repaglinide which may result in hypoglycaemia"
         }
       ]
     }

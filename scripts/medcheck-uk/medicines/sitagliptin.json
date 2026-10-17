@@ -1,0 +1,269 @@
+{
+  "id": "sitagliptin",
+  "name": "Sitagliptin",
+  "ingredients": ["sitagliptin"],
+  "className": "Dipeptidyl peptidase 4 (DPP-4) inhibitor",
+  "groups": ["dpp4-inhibitor", "oral-antidiabetic", "antidiabetic"],
+  "searchTerms": ["sitagliptin phosphate", "gliptin", "DPP-4 inhibitor"],
+  "formulations": [
+    {
+      "id": "sitagliptin-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "25 mg, 50 mg, 100 mg",
+      "release": "immediate",
+      "src": [
+        { "s": "emc-7887", "q": "Each tablet contains sitagliptin phosphate monohydrate, equivalent to 100 mg sitagliptin." },
+        { "s": "emc-7887", "q": "equivalent to 25 mg sitagliptin" },
+        { "s": "emc-7887", "q": "equivalent to 50 mg sitagliptin" }
+      ],
+      "sourceIds": ["emc-7887"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Adults with type 2 diabetes, to improve glycaemic control: as monotherapy when metformin is inappropriate (contraindicated or not tolerated); as dual therapy with metformin, a sulphonylurea or a PPAR-gamma agonist; as triple therapy with a sulphonylurea plus metformin or a PPAR-gamma agonist plus metformin; and as add-on to insulin (with or without metformin).",
+        "src": [
+          { "s": "emc-7887", "q": "For adult patients with type 2 diabetes mellitus, Januvia is indicated to improve glycaemic control" },
+          { "s": "emc-7887", "q": "in patients inadequately controlled by diet and exercise alone and for whom metformin is inappropriate due to contraindications or intolerance" },
+          { "s": "emc-7887", "q": "Januvia is also indicated as add-on to insulin (with or without metformin) when diet and exercise plus stable dose of insulin do not provide adequate glycaemic control." }
+        ] }
+    ] },
+    "restrictions": { "status": "not-stated", "note": "No specialist-only, shared-care or brand-prescribing restriction found in the UK SmPC, MHRA or SPS pages checked." },
+    "dosing": { "items": [
+      { "t": "100 mg once daily. When added to metformin and/or a PPAR-gamma agonist, keep their doses unchanged.", "tag": "Type 2 diabetes, adults",
+        "src": [
+          { "s": "emc-7887", "q": "The dose is 100 mg sitagliptin once daily." },
+          { "s": "emc-7887", "q": "the dose of metformin and/or PPARγ agonist should be maintained, and Januvia administered concomitantly" }
+        ] },
+      { "t": "With a sulphonylurea or insulin: a lower dose of the sulphonylurea or insulin may be considered to reduce hypoglycaemia risk.", "tag": "With sulphonylurea or insulin",
+        "src": [{ "s": "emc-7887", "q": "When Januvia is used in combination with a sulphonylurea or with insulin, a lower dose of the sulphonylurea or insulin may be considered to reduce the risk of hypoglycaemia" }] },
+      { "t": "Renal impairment: GFR 30 to < 45 mL/min, 50 mg once daily; GFR < 30 mL/min or end-stage renal disease (including dialysis), 25 mg once daily (see Renal).", "tag": "Renal impairment",
+        "src": [
+          { "s": "emc-7887", "q": "For patients with moderate renal impairment (GFR ≥ 30 to < 45 mL/min), the dose of Januvia is 50 mg once daily." },
+          { "s": "emc-7887", "q": "including those requiring haemodialysis or peritoneal dialysis, the dose of Januvia is 25 mg once daily" }
+        ] },
+      { "t": "Elderly: no dose adjustment based on age.", "tag": "Elderly", "detail": true,
+        "src": [{ "s": "emc-7887", "q": "Elderly No dose adjustment is necessary based on age." }] },
+      { "t": "Missed dose: take as soon as remembered; do not take a double dose on the same day.", "tag": "Missed dose", "detail": true,
+        "src": [{ "s": "emc-7887", "q": "If a dose of Januvia is missed, it should be taken as soon as the patient remembers. A double dose should not be taken on the same day." }] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Should not be used in children and adolescents aged 10 to 17 years (insufficient efficacy). Not studied under 10 years.",
+        "src": [
+          { "s": "emc-7887", "q": "Sitagliptin should not be used in children and adolescents 10 to 17 years of age because of insufficient efficacy." },
+          { "s": "emc-7887", "q": "Sitagliptin has not been studied in paediatric patients under 10 years of age." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to sitagliptin or any excipient.",
+        "src": [{ "s": "emc-7887", "q": "Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1" }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Should not be used in type 1 diabetes or to treat diabetic ketoacidosis.",
+        "src": [{ "s": "emc-7887", "q": "Januvia should not be used in patients with type 1 diabetes or for the treatment of diabetic ketoacidosis." }] },
+      { "t": "Acute pancreatitis: tell patients the key symptom (persistent, severe abdominal pain). If suspected, stop sitagliptin and other suspect medicines; do not restart if confirmed. Caution with a history of pancreatitis.",
+        "src": [
+          { "s": "emc-7887", "q": "Patients should be informed of the characteristic symptom of acute pancreatitis: persistent, severe abdominal pain." },
+          { "s": "emc-7887", "q": "If pancreatitis is suspected, Januvia and other potentially suspect medicinal products should be discontinued; if acute pancreatitis is confirmed, Januvia should not be restarted." },
+          { "s": "emc-7887", "q": "Caution should be exercised in patients with a history of pancreatitis." }
+        ] },
+      { "t": "Hypoglycaemia occurs with insulin or a sulphonylurea; a lower dose of these may be considered.",
+        "src": [{ "s": "emc-7887", "q": "Hypoglycaemia has been observed when sitagliptin was used in combination with insulin or a sulphonylurea." }] },
+      { "t": "Serious hypersensitivity reactions (anaphylaxis, angioedema, exfoliative skin reactions including Stevens-Johnson syndrome), usually within the first 3 months: stop sitagliptin if suspected and use another diabetes treatment.",
+        "src": [
+          { "s": "emc-7887", "q": "These reactions include anaphylaxis, angioedema, and exfoliative skin conditions including Stevens-Johnson syndrome." },
+          { "s": "emc-7887", "q": "If a hypersensitivity reaction is suspected, Januvia should be discontinued." }
+        ] },
+      { "t": "Bullous pemphigoid: stop sitagliptin if suspected.",
+        "src": [{ "s": "emc-7887", "q": "If bullous pemphigoid is suspected, Januvia should be discontinued." }] },
+      { "t": "When combining with another antidiabetic medicine, check that medicine's own conditions for use in renal impairment.", "detail": true,
+        "src": [{ "s": "emc-7887", "q": "When considering the use of sitagliptin in combination with another anti-diabetic medicinal product, its conditions for use in patients with renal impairment should be checked." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Sulphonylureas or insulin: hypoglycaemia; a lower dose of the sulphonylurea or insulin may be considered.",
+        "src": [{ "s": "emc-7887", "q": "Therefore, to reduce the risk of hypoglycaemia, a lower dose of sulphonylurea or insulin may be considered" }] },
+      { "t": "Potent CYP3A4 inhibitors (e.g. clarithromycin, itraconazole, ketoconazole, ritonavir): could alter sitagliptin pharmacokinetics in severe renal impairment or end-stage renal disease; not assessed in a clinical study.", "detail": true,
+        "src": [
+          { "s": "emc-7887", "q": "it is possible that potent CYP3A4 inhibitors (i.e. ketoconazole, itraconazole, ritonavir, clarithromycin) could alter the pharmacokinetics of sitagliptin in patients with severe renal impairment or ESRD" },
+          { "s": "emc-7887", "q": "The effect of potent CYP3A4 inhibitors in the setting of renal impairment has not been assessed in a clinical study." }
+        ] },
+      { "t": "Digoxin: small rise in digoxin levels; no digoxin dose change, but monitor patients at risk of digoxin toxicity.", "detail": true,
+        "src": [
+          { "s": "emc-7887", "q": "No dose adjustment of digoxin is recommended." },
+          { "s": "emc-7887", "q": "patients at risk of digoxin toxicity should be monitored for this when sitagliptin and digoxin are administered concomitantly" }
+        ] },
+      { "t": "No meaningful effect on metformin, simvastatin, warfarin or oral contraceptives in clinical studies.", "detail": true,
+        "src": [{ "s": "emc-7887", "q": "sitagliptin did not meaningfully alter the pharmacokinetics of metformin, glyburide, simvastatin, rosiglitazone, warfarin, or oral contraceptives" }] }
+    ] },
+    "renal": { "items": [
+      { "t": "GFR ≥ 45 mL/min (mild or moderate impairment): no dose adjustment.",
+        "src": [
+          { "s": "emc-7887", "q": "For patients with mild renal impairment (glomerular filtration rate [GFR] ≥ 60 to < 90 mL/min), no dose adjustment is required." },
+          { "s": "emc-7887", "q": "For patients with moderate renal impairment (GFR ≥ 45 to < 60 mL/min), no dosage adjustment is required." }
+        ] },
+      { "t": "GFR ≥ 30 to < 45 mL/min: 50 mg once daily.",
+        "src": [{ "s": "emc-7887", "q": "For patients with moderate renal impairment (GFR ≥ 30 to < 45 mL/min), the dose of Januvia is 50 mg once daily." }] },
+      { "t": "GFR < 30 mL/min (severe) or end-stage renal disease (GFR < 15 mL/min), including haemodialysis or peritoneal dialysis: 25 mg once daily, given without regard to dialysis timing.",
+        "src": [
+          { "s": "emc-7887", "q": "For patients with severe renal impairment (GFR ≥ 15 to <30 mL/min) or with end-stage renal disease (ESRD) (GFR < 15 mL/min), including those requiring haemodialysis or peritoneal dialysis, the dose of Januvia is 25 mg once daily." },
+          { "s": "emc-7887", "q": "Treatment may be administered without regard to the timing of dialysis." }
+        ] },
+      { "t": "Assess renal function before starting and periodically thereafter.",
+        "src": [{ "s": "emc-7887", "q": "assessment of renal function is recommended prior to initiation of Januvia and periodically thereafter" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Mild to moderate hepatic impairment: no dose adjustment.",
+        "src": [{ "s": "emc-7887", "q": "No dose adjustment is necessary for patients with mild to moderate hepatic impairment." }] },
+      { "t": "Severe hepatic impairment: not studied; care should be exercised (although mainly renally eliminated).",
+        "src": [{ "s": "emc-7887", "q": "Januvia has not been studied in patients with severe hepatic impairment and care should be exercised" }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: no adequate human data; animal reproductive toxicity at high doses. Should not be used in pregnancy.",
+        "src": [
+          { "s": "emc-7887", "q": "There are no adequate data from the use of sitagliptin in pregnant women." },
+          { "s": "emc-7887", "q": "Due to lack of human data, Januvia should not be used during pregnancy." }
+        ] },
+      { "t": "BUMPS: type 2 diabetes in pregnancy should be treated with metformin, with insulin if needed; other antidiabetic medicines (including DPP-4 inhibitors) are avoided as a precaution. In an unplanned pregnancy, continue current treatment until reviewed promptly.",
+        "src": [
+          { "s": "bumps-antidiabetic-drugs", "q": "Type 2 diabetes during pregnancy should be treated with metformin, as well as insulin if required. Other antidiabetic drugs should not be used." },
+          { "s": "bumps-antidiabetic-drugs", "q": "As a precaution, they are avoided in pregnancy." },
+          { "s": "bumps-antidiabetic-drugs", "q": "you should carry on with the drug you are taking until your appointment, as uncontrolled diabetes is risky for you and your baby" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: unknown if excreted in human milk (excreted in animal milk). Should not be used during breastfeeding.",
+        "src": [
+          { "s": "emc-7887", "q": "It is unknown whether sitagliptin is excreted in human breast milk." },
+          { "s": "emc-7887", "q": "Januvia should not be used during breast-feeding." }
+        ] },
+      { "t": "SPS: insulin or metformin are the preferred choices; there is limited or no published information on other antidiabetic medicines in breastfeeding.",
+        "src": [
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." },
+          { "s": "sps-antidiabetic-bf", "q": "limited or no published information on the use of other antidiabetic (blood-glucose lowering) medicines during breastfeeding" }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "Fertility: animal data suggest no effect; human data are lacking.", "detail": true,
+        "src": [{ "s": "emc-7887", "q": "Animal data do not suggest an effect of treatment with sitagliptin on male and female fertility. Human data are lacking." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Common: hypoglycaemia, headache.",
+        "src": [{ "s": "emc-7887", "q": "hypoglycaemia† Common Nervous system disorders headache Common" }] },
+      { "t": "In combination: hypoglycaemia very common with a sulphonylurea plus metformin; nausea and vomiting common with metformin; influenza common with insulin.", "detail": true,
+        "src": [{ "s": "emc-7887", "q": "These included hypoglycaemia (frequency very common with the combination of sulphonylurea and metformin), influenza (common with insulin (with or without metformin)), nausea and vomiting (common with metformin)" }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Acute pancreatitis, including rare fatal haemorrhagic or necrotising cases: stop sitagliptin if suspected; do not restart if confirmed.",
+        "src": [
+          { "s": "emc-7887", "q": "very rare cases of necrotising or haemorrhagic pancreatitis and/or death have been reported" },
+          { "s": "mhra-dsu-dpp4-pancreatitis", "q": "if pancreatitis is suspected, the DPP-4 inhibitor and other potentially suspect medicines should be discontinued" }
+        ] },
+      { "t": "Serious hypersensitivity: anaphylaxis, angioedema, exfoliative skin reactions including Stevens-Johnson syndrome. Stop sitagliptin.",
+        "src": [
+          { "s": "emc-7887", "q": "These reactions include anaphylaxis, angioedema, and exfoliative skin conditions including Stevens-Johnson syndrome." },
+          { "s": "emc-7887", "q": "If a hypersensitivity reaction is suspected, Januvia should be discontinued." }
+        ] },
+      { "t": "Bullous pemphigoid, interstitial lung disease, impaired renal function and acute renal failure (frequency not known).", "detail": true,
+        "src": [
+          { "s": "emc-7887", "q": "bullous pemphigoid* Frequency not known" },
+          { "s": "emc-7887", "q": "interstitial lung disease* Frequency not known" },
+          { "s": "emc-7887", "q": "impaired renal function* Frequency not known" },
+          { "s": "emc-7887", "q": "acute renal failure* Frequency not known" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Renal function before starting.", "tag": "baseline",
+        "src": [{ "s": "emc-7887", "q": "assessment of renal function is recommended prior to initiation of Januvia and periodically thereafter" }] },
+      { "t": "Renal function periodically (dose depends on GFR).", "tag": "ongoing",
+        "src": [{ "s": "emc-7887", "q": "Because there is a dosage adjustment based upon renal function" }] },
+      { "t": "Stop if pancreatitis, a hypersensitivity reaction or bullous pemphigoid is suspected.", "tag": "stop",
+        "src": [
+          { "s": "emc-7887", "q": "If a hypersensitivity reaction is suspected, Januvia should be discontinued." },
+          { "s": "emc-7887", "q": "If bullous pemphigoid is suspected, Januvia should be discontinued." }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Take with or without food.",
+        "src": [{ "s": "emc-7887", "q": "Januvia can be taken with or without food." }] },
+      { "t": "Swallowing difficulty (SPS, off-label): tablets dissolve rapidly and can be dispersed in water or crushed and mixed with water or soft food (may taste unpleasant). A licensed oral solution exists.", "detail": true,
+        "src": [
+          { "s": "sps-gliptin-swallowing", "q": "Sitagliptin tablets Film-coated but dissolve rapidly. Can be dispersed in water, or crushed and mixed with water or given with soft food." },
+          { "s": "sps-gliptin-swallowing", "q": "Sitagliptin 100mg/5ml oral solution Available as a licensed product." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Seek medical help for persistent, severe abdominal pain (possible pancreatitis), sometimes going through to the back.",
+        "src": [{ "s": "mhra-dsu-dpp4-pancreatitis", "q": "persistent, severe abdominal pain (sometimes radiating to the back)" }] },
+      { "t": "If taking a sulphonylurea or insulin, be alert to low blood sugar, including when driving. Dizziness and sleepiness have been reported.",
+        "src": [
+          { "s": "emc-7887", "q": "patients should be alerted to the risk of hypoglycaemia when Januvia is used in combination with a sulphonylurea or with insulin" },
+          { "s": "emc-7887", "q": "it should be taken into account that dizziness and somnolence have been reported" }
+        ] }
+    ] }
+  },
+  "rules": [
+    { "id": "sitagliptin:allergy:sitagliptin", "kind": "allergy", "level": "contraindicated", "med": "sitagliptin", "allergen": ["sitagliptin"],
+      "concern": "Hypersensitivity to sitagliptin", "consequence": "Hypersensitivity reaction, including anaphylaxis or angioedema.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity to the active substance",
+      "src": [{ "s": "emc-7887", "q": "Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1" }] },
+    { "id": "sitagliptin:condition:type-1-diabetes", "kind": "condition", "level": "avoid", "med": "sitagliptin", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Not an appropriate treatment.", "action": "Should not be used in type 1 diabetes.", "sourceWording": "should not be used in patients with type 1 diabetes",
+      "src": [{ "s": "emc-7887", "q": "Januvia should not be used in patients with type 1 diabetes or for the treatment of diabetic ketoacidosis." }] },
+    { "id": "sitagliptin:condition:diabetic-ketoacidosis", "kind": "condition", "level": "avoid", "med": "sitagliptin", "condition": "diabetic-ketoacidosis",
+      "concern": "Diabetic ketoacidosis", "consequence": "Not an appropriate treatment.", "action": "Should not be used to treat diabetic ketoacidosis.", "sourceWording": "should not be used ... for the treatment of diabetic ketoacidosis",
+      "src": [{ "s": "emc-7887", "q": "Januvia should not be used in patients with type 1 diabetes or for the treatment of diabetic ketoacidosis." }] },
+    { "id": "sitagliptin:condition:pancreatitis-history", "kind": "condition", "level": "caution", "med": "sitagliptin", "condition": "pancreatitis-history",
+      "concern": "History of pancreatitis", "consequence": "DPP-4 inhibitors are associated with acute pancreatitis.", "action": "Use with caution; stop if pancreatitis is suspected and do not restart if confirmed.", "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-7887", "q": "Caution should be exercised in patients with a history of pancreatitis." },
+        { "s": "emc-7887", "q": "Use of DPP-4 inhibitors has been associated with a risk of developing acute pancreatitis." }
+      ] },
+    { "id": "sitagliptin:condition:pancreatitis-current", "kind": "condition", "level": "avoid", "med": "sitagliptin", "condition": "pancreatitis",
+      "concern": "Acute pancreatitis, current or suspected (for past or chronic pancreatitis see the history rule: use with caution)", "consequence": "DPP-4 inhibitors are associated with acute pancreatitis.", "action": "Stop if pancreatitis is suspected; do not restart if acute pancreatitis is confirmed.", "sourceWording": "should be discontinued … should not be restarted",
+      "src": [{ "s": "emc-7887", "q": "If pancreatitis is suspected, Januvia and other potentially suspect medicinal products should be discontinued; if acute pancreatitis is confirmed, Januvia should not be restarted." }] },
+    { "id": "sitagliptin:renal:30-45", "kind": "renal", "level": "dose", "med": "sitagliptin", "renal": { "measure": "GFR", "min": 30, "max": 45 },
+      "concern": "GFR 30 to < 45 mL/min", "consequence": "About 2-fold higher sitagliptin exposure.", "action": "50 mg once daily.", "sourceWording": "is 50 mg once daily",
+      "src": [{ "s": "emc-7887", "q": "For patients with moderate renal impairment (GFR ≥ 30 to < 45 mL/min), the dose of Januvia is 50 mg once daily." }] },
+    { "id": "sitagliptin:renal:lt30", "kind": "renal", "level": "dose", "med": "sitagliptin", "renal": { "measure": "GFR", "max": 30 },
+      "concern": "GFR < 30 mL/min, end-stage renal disease or dialysis", "consequence": "About 4-fold higher sitagliptin exposure.", "action": "25 mg once daily (regardless of dialysis timing).", "sourceWording": "is 25 mg once daily",
+      "src": [{ "s": "emc-7887", "q": "For patients with severe renal impairment (GFR ≥ 15 to <30 mL/min) or with end-stage renal disease (ESRD) (GFR < 15 mL/min), including those requiring haemodialysis or peritoneal dialysis, the dose of Januvia is 25 mg once daily." }] },
+    { "id": "sitagliptin:hepatic:severe", "kind": "hepatic", "level": "caution", "med": "sitagliptin", "hepatic": ["severe"],
+      "concern": "Severe hepatic impairment", "consequence": "Not studied.", "action": "Care should be exercised.", "sourceWording": "care should be exercised",
+      "src": [{ "s": "emc-7887", "q": "Januvia has not been studied in patients with severe hepatic impairment and care should be exercised" }] },
+    { "id": "sitagliptin:age:10-17", "kind": "age", "level": "avoid", "med": "sitagliptin", "age": { "minYears": 10, "maxYears": 18 },
+      "concern": "Child or adolescent aged 10 to 17 years", "consequence": "Insufficient efficacy.", "action": "Should not be used.", "sourceWording": "should not be used in children and adolescents 10 to 17 years of age",
+      "src": [{ "s": "emc-7887", "q": "Sitagliptin should not be used in children and adolescents 10 to 17 years of age because of insufficient efficacy." }] },
+    { "id": "sitagliptin:age:lt10", "kind": "age", "level": "info", "med": "sitagliptin", "age": { "minYears": 0, "maxYears": 10 },
+      "concern": "Child under 10 years", "consequence": "Not studied.", "action": "No data under 10 years; not licensed in children.", "sourceWording": "has not been studied in paediatric patients under 10 years",
+      "src": [{ "s": "emc-7887", "q": "Sitagliptin has not been studied in paediatric patients under 10 years of age." }] },
+    { "id": "sitagliptin:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "sitagliptin",
+      "concern": "Pregnancy", "consequence": "No adequate human data; animal reproductive toxicity at high doses.", "action": "Should not be used in pregnancy. BUMPS: metformin with or without insulin is the recommended treatment; in an unplanned pregnancy keep taking current treatment until reviewed promptly.", "sourceWording": "should not be used during pregnancy",
+      "src": [
+        { "s": "emc-7887", "q": "Due to lack of human data, Januvia should not be used during pregnancy." },
+        { "s": "bumps-antidiabetic-drugs", "q": "As a precaution, they are avoided in pregnancy." }
+      ] },
+    { "id": "sitagliptin:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "sitagliptin",
+      "concern": "Breastfeeding", "consequence": "Excreted in animal milk; human data lacking.", "action": "Should not be used during breastfeeding. SPS: insulin or metformin are preferred.", "sourceWording": "should not be used during breast-feeding",
+      "src": [
+        { "s": "emc-7887", "q": "Januvia should not be used during breast-feeding." },
+        { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." }
+      ] },
+    { "id": "sitagliptin:interaction:sulfonylurea", "kind": "interaction", "level": "caution", "med": "sitagliptin", "other": "group:sulfonylurea", "effect": "hypoglycaemia",
+      "concern": "Sitagliptin + sulphonylurea", "consequence": "Hypoglycaemia.", "action": "A lower dose of the sulphonylurea may be considered.", "sourceWording": "a lower dose of sulphonylurea or insulin may be considered",
+      "src": [
+        { "s": "emc-7887", "q": "Hypoglycaemia has been observed when sitagliptin was used in combination with insulin or a sulphonylurea." },
+        { "s": "emc-7887", "q": "Therefore, to reduce the risk of hypoglycaemia, a lower dose of sulphonylurea or insulin may be considered" }
+      ] },
+    { "id": "sitagliptin:interaction:insulin", "kind": "interaction", "level": "caution", "med": "sitagliptin", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Sitagliptin + insulin", "consequence": "Hypoglycaemia.", "action": "A lower dose of insulin may be considered.", "sourceWording": "a lower dose of sulphonylurea or insulin may be considered",
+      "src": [
+        { "s": "emc-7887", "q": "Hypoglycaemia has been observed when sitagliptin was used in combination with insulin or a sulphonylurea." },
+        { "s": "emc-7887", "q": "Therefore, to reduce the risk of hypoglycaemia, a lower dose of sulphonylurea or insulin may be considered" }
+      ] },
+    { "id": "sitagliptin:interaction:strong-cyp3a4-inhibitor", "kind": "interaction", "level": "info", "med": "sitagliptin", "other": "group:strong-cyp3a4-inhibitor",
+      "concern": "Sitagliptin + potent CYP3A4 inhibitor (e.g. clarithromycin)", "consequence": "Could alter sitagliptin pharmacokinetics in severe renal impairment or end-stage renal disease (not assessed clinically).", "action": "No action stated; relevant mainly in severe renal impairment or end-stage renal disease.", "sourceWording": "could alter the pharmacokinetics of sitagliptin",
+      "src": [{ "s": "emc-7887", "q": "it is possible that potent CYP3A4 inhibitors (i.e. ketoconazole, itraconazole, ritonavir, clarithromycin) could alter the pharmacokinetics of sitagliptin in patients with severe renal impairment or ESRD" }] }
+  ]
+}

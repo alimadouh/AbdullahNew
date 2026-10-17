@@ -1,0 +1,841 @@
+{
+  "id": "rosuvastatin",
+  "name": "Rosuvastatin",
+  "availability": { "status": "uk" },
+  "ingredients": ["rosuvastatin"],
+  "className": "Statin (HMG-CoA reductase inhibitor)",
+  "groups": ["statin"],
+  "searchTerms": ["rosuvastatin calcium"],
+  "formulations": [
+    {
+      "id": "rosuvastatin-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "10 mg, 20 mg",
+      "release": "immediate",
+      "note": "Contains lactose. The 40 mg strength has extra restrictions (see dosing and contraindications).",
+      "src": [
+        { "s": "emc-7559", "q": "Each tablet contains 10 mg rosuvastatin (as rosuvastatin calcium)." },
+        { "s": "emc-7555", "q": "Each tablet contains 20 mg rosuvastatin (as rosuvastatin calcium)." }
+      ],
+      "sourceIds": ["emc-7559", "emc-7555"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Primary hypercholesterolaemia (type IIa, including heterozygous familial) or mixed dyslipidaemia (type IIb), and homozygous familial hypercholesterolaemia, in adults and children aged 6 years or older, as an adjunct to diet.",
+          "src": [
+            { "s": "emc-7559", "q": "Adults, adolescents and children aged 6 years or older with primary hypercholesterolaemia (type IIa including heterozygous familial hypercholesterolaemia) or mixed dyslipidaemia (type IIb) as an adjunct to diet" },
+            { "s": "emc-7559", "q": "Adults, adolescents and children aged 6 years or older with homozygous familial hypercholesterolaemia" }
+          ]
+        },
+        {
+          "t": "Prevention of major cardiovascular events in patients at high estimated risk of a first event, alongside correction of other risk factors.",
+          "src": [{ "s": "emc-7559", "q": "Prevention of major cardiovascular events in patients who are estimated to have a high risk for a first cardiovascular event" }]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "40 mg dose: only for severe hypercholesterolaemia at high cardiovascular risk not at goal on 20 mg, with routine follow-up; specialist supervision recommended when starting 40 mg.",
+          "src": [
+            { "s": "emc-7559", "q": "a final titration to the maximum dose of 40 mg should only be considered in patients with severe hypercholesterolaemia at high cardiovascular risk" },
+            { "s": "emc-7559", "q": "Specialist supervision is recommended when the 40 mg dose is initiated." }
+          ]
+        },
+        {
+          "t": "Children: use only by specialists.",
+          "src": [{ "s": "emc-7559", "q": "Paediatric use should only be carried out by specialists." }]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Start 5 mg or 10 mg once daily (statin-naive or switching). May go up one dose level after 4 weeks. Maximum 40 mg only in selected patients (see restrictions).",
+          "tag": "Hypercholesterolaemia (adults)",
+          "src": [
+            { "s": "emc-7559", "q": "The recommended start dose is 5 or 10 mg orally once daily in both statin naïve or patients switched from another HMG CoA reductase inhibitor." },
+            { "s": "emc-7559", "q": "A dose adjustment to the next dose level can be made after 4 weeks, if necessary" }
+          ]
+        },
+        {
+          "t": "20 mg daily was the dose used in the risk-reduction study.",
+          "tag": "Prevention of cardiovascular events",
+          "src": [{ "s": "emc-7559", "q": "In the cardiovascular events risk reduction study, the dose used was 20 mg daily" }]
+        },
+        {
+          "t": "Start 5 mg in: patients over 70 years; moderate renal impairment (CrCl <60 mL/min); Asian ancestry; patients with factors predisposing to myopathy. 40 mg is contraindicated in Asian patients and in moderate renal impairment.",
+          "tag": "Lower starting dose",
+          "src": [
+            { "s": "emc-7559", "q": "A start dose of 5 mg is recommended in patients >70 years" },
+            { "s": "emc-7559", "q": "The recommended start dose is 5 mg in patients with moderate renal impairment (creatinine clearance <60 ml/min)." },
+            { "s": "emc-7559", "q": "The recommended start dose is 5 mg for patients of Asian ancestry. The 40 mg dose is contraindicated in these patients." },
+            { "s": "emc-7559", "q": "The recommended start dose is 5 mg in patients with predisposing factors to myopathy" }
+          ]
+        },
+        {
+          "t": "Known SLCO1B1 c.521CC or ABCG2 c.421AA genotype: half the usual dose, maximum 20 mg once daily.",
+          "tag": "Genetic polymorphisms",
+          "detail": true,
+          "src": [{ "s": "emc-7559", "q": "For patients known to have the c.521CC or c.421AA genotype, half of the usually recommended dose and a maximum once daily dose of 20 mg of Crestor is recommended" }]
+        },
+        {
+          "t": "With medicines that raise rosuvastatin exposure about 2-fold or more: start 5 mg once daily and limit the maximum dose so exposure does not exceed that of 40 mg alone (e.g. 20 mg with gemfibrozil).",
+          "tag": "Interacting medicines",
+          "detail": true,
+          "src": [
+            { "s": "emc-7559", "q": "Start with a 5 mg once daily dose of Crestor if the expected increase in exposure (AUC) is approximately 2-fold or higher." },
+            { "s": "emc-7559", "q": "The maximum daily dose of Crestor should be adjusted so that the expected rosuvastatin exposure would not likely exceed that of a 40 mg daily dose of Crestor taken without interacting medicinal products" }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Heterozygous familial hypercholesterolaemia, 6-17 years: usual start 5 mg daily. Age 6-9: 5-10 mg once daily (doses above 10 mg not studied). Age 10-17: 5-20 mg once daily (doses above 20 mg not studied).",
+          "tag": "HeFH",
+          "src": [
+            { "s": "emc-7559", "q": "In children and adolescents with heterozygous familial hypercholesterolaemia the usual start dose is 5 mg daily." },
+            { "s": "emc-7559", "q": "In children 6 to 9 years of age with heterozygous familial hypercholesterolaemia, the usual dose range is 5-10 mg orally once daily." },
+            { "s": "emc-7559", "q": "In children 10 to 17 years of age with heterozygous familial hypercholesterolaemia, the usual dose range is 5-20 mg orally once daily." }
+          ]
+        },
+        {
+          "t": "Homozygous familial hypercholesterolaemia, 6-17 years: start 5-10 mg once daily; maximum 20 mg once daily.",
+          "tag": "HoFH",
+          "src": [
+            { "s": "emc-7559", "q": "In children 6 to 17 years of age with homozygous familial hypercholesterolaemia, the recommended maximum dose is 20 mg once daily." },
+            { "s": "emc-7559", "q": "A starting dose of 5 to 10 mg once daily depending on age, weight and prior statin use is advised." }
+          ]
+        },
+        {
+          "t": "Not recommended under 6 years. The 40 mg tablet is not suitable for children.",
+          "src": [
+            { "s": "emc-7559", "q": "Crestor is not recommended for use in children younger than 6 years." },
+            { "s": "emc-7559", "q": "The 40 mg tablet is not suitable for use in paediatric patients." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to rosuvastatin or any excipient.",
+          "src": [{ "s": "emc-7559", "q": "in patients with hypersensitivity to rosuvastatin or to any of the excipients" }]
+        },
+        {
+          "t": "Active liver disease, including unexplained persistent raised transaminases or any transaminase rise above 3 x ULN.",
+          "src": [{ "s": "emc-7559", "q": "in patients with active liver disease including unexplained, persistent elevations of serum transaminases and any serum transaminase elevation exceeding 3 times the upper limit of normal (ULN)" }]
+        },
+        {
+          "t": "Severe renal impairment (CrCl <30 mL/min), all doses.",
+          "src": [{ "s": "emc-7559", "q": "in patients with severe renal impairment (creatinine clearance <30 ml/min)" }]
+        },
+        {
+          "t": "Myopathy; concomitant ciclosporin; concomitant sofosbuvir/velpatasvir/voxilaprevir.",
+          "src": [{ "s": "emc-7559", "q": "in patients with myopathy. - in patients receiving concomitant combination of sofosbuvir/velpatasvir/voxilaprevir (see section 4.5). - in patients receiving concomitant ciclosporin." }]
+        },
+        {
+          "t": "40 mg dose only: contraindicated with factors predisposing to myopathy/rhabdomyolysis: moderate renal impairment (CrCl <60 mL/min), hypothyroidism, personal or family history of hereditary muscle disorders, previous muscle toxicity with a statin or fibrate, alcohol abuse, situations raising plasma levels, Asian patients, concomitant fibrates.",
+          "src": [
+            { "s": "emc-7559", "q": "The 40 mg dose is contraindicated in patients with pre-disposing factors for myopathy/rhabdomyolysis." },
+            { "s": "emc-7559", "q": "moderate renal impairment (creatinine clearance < 60 ml/min) - hypothyroidism - personal or family history of hereditary muscular disorders - previous history of muscular toxicity with another HMG-CoA reductase inhibitor or fibrate - alcohol abuse" },
+            { "s": "emc-7559", "q": "Asian patients - concomitant use of fibrates." }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Muscle: myalgia, myopathy and rarely rhabdomyolysis, especially above 20 mg. Prescribe with caution if predisposed (renal impairment, hypothyroidism, hereditary muscle disorder, previous statin/fibrate muscle toxicity, alcohol abuse, age >70, raised plasma levels, fibrates). Do not start if baseline CK >5 x ULN (confirmed).",
+          "src": [
+            { "s": "emc-7559", "q": "should be prescribed with caution in patients with pre-disposing factors for myopathy/rhabdomyolysis" },
+            { "s": "emc-7559", "q": "If the repeat test confirms a baseline CK >5xULN, treatment should not be started." }
+          ]
+        },
+        {
+          "t": "Do not use in an acute serious condition suggesting myopathy or predisposing to renal failure from rhabdomyolysis (e.g. sepsis, hypotension, major surgery, trauma, severe metabolic, endocrine or electrolyte disorders, uncontrolled seizures).",
+          "src": [{ "s": "emc-7559", "q": "Crestor should not be used in any patient with an acute, serious condition suggestive of myopathy or predisposing to the development of renal failure secondary to rhabdomyolysis" }]
+        },
+        {
+          "t": "Liver: caution with excessive alcohol intake or a history of liver disease. Stop or reduce the dose if transaminases exceed 3 x ULN.",
+          "src": [
+            { "s": "emc-7559", "q": "Crestor should be used with caution in patients who consume excessive quantities of alcohol and/or have a history of liver disease." },
+            { "s": "emc-7559", "q": "Crestor should be discontinued or the dose reduced if the level of serum transaminases is greater than 3 times the upper limit of normal." }
+          ]
+        },
+        {
+          "t": "Severe cutaneous reactions (SJS, DRESS) reported: stop immediately if signs appear and never restart after SJS or DRESS.",
+          "src": [
+            { "s": "emc-7559", "q": "Crestor should be discontinued immediately and an alternative treatment should be considered" },
+            { "s": "emc-7559", "q": "treatment with Crestor must not be restarted in this patient at any time" }
+          ]
+        },
+        {
+          "t": "Myasthenia gravis may start or worsen with statins; stop if symptoms worsen.",
+          "src": [{ "s": "emc-7559", "q": "Crestor should be discontinued in case of aggravation of symptoms." }]
+        },
+        {
+          "t": "Diabetes risk: statins may raise blood glucose; monitor patients at risk (fasting glucose 5.6-6.9 mmol/L, BMI >30 kg/m2, raised triglycerides, hypertension). This is not a reason to stop treatment.",
+          "detail": true,
+          "src": [{ "s": "emc-7559", "q": "Patients at risk (fasting glucose 5.6 to 6.9 mmol/l, BMI >30 kg/m2, raised triglycerides, hypertension) should be monitored both clinically and biochemically according to national guidelines." }]
+        },
+        {
+          "t": "Systemic fusidic acid: do not co-administer, or within 7 days of stopping it (rhabdomyolysis, some fatal).",
+          "detail": true,
+          "src": [{ "s": "emc-7559", "q": "Crestor must not be co-administered with systemic formulations of fusidic acid or within 7 days of stopping fusidic acid treatment." }]
+        },
+        {
+          "t": "Contains lactose: patients with hereditary galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption should not take it.",
+          "detail": true,
+          "src": [{ "s": "emc-7559", "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine." }]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Fibrates (including fenofibrate): increased risk of myopathy. 40 mg contraindicated with a fibrate; start with 5 mg. Gemfibrozil is not recommended. MHRA: with fibrates start 5 mg and do not exceed 20 mg.",
+          "tag": "Fibrates",
+          "src": [
+            { "s": "emc-7559", "q": "The 40 mg dose is contraindicated with concomitant use of a fibrate (see sections 4.3 and 4.4). These patients should also start with the 5 mg dose." },
+            { "s": "emc-7559", "q": "the combination of Crestor and gemfibrozil is not recommended" },
+            { "s": "mhra-dsu-statins-interactions-2008", "q": "For rosuvastatin, start with 5 mg and do not exceed 20 mg during use with fibrates." }
+          ]
+        },
+        {
+          "t": "Warfarin or other vitamin K antagonists: starting or increasing rosuvastatin may raise INR; stopping or reducing it may lower INR. Monitor INR.",
+          "tag": "Warfarin",
+          "src": [
+            { "s": "emc-7559", "q": "may result in an increase in International Normalised Ratio (INR)" },
+            { "s": "emc-7559", "q": "In such situations, appropriate monitoring of INR is desirable." }
+          ]
+        },
+        {
+          "t": "Ezetimibe: small rise in rosuvastatin exposure; a pharmacodynamic interaction (muscle adverse effects) cannot be ruled out. Use with caution.",
+          "tag": "Ezetimibe",
+          "src": [
+            { "s": "emc-7559", "q": "A pharmacodynamic interaction, in terms of adverse effects, between Crestor and ezetimibe cannot be ruled out" },
+            { "s": "emc-7559", "q": "caution should be exercised with their combined use" }
+          ]
+        },
+        {
+          "t": "Aluminium/magnesium hydroxide antacid: taken at the same time, rosuvastatin levels fall by about 50%; giving the antacid 2 hours after rosuvastatin lessens this.",
+          "tag": "Antacids",
+          "src": [
+            { "s": "emc-7559", "q": "The simultaneous dosing of Crestor with an antacid suspension containing aluminium and magnesium hydroxide resulted in a decrease in rosuvastatin plasma concentration of approximately 50%." },
+            { "s": "emc-7559", "q": "This effect was mitigated when the antacid was dosed 2 hours after Crestor." }
+          ]
+        },
+        {
+          "t": "Febuxostat: raises rosuvastatin exposure about 1.9-fold. Ciclosporin (7-fold; contraindicated), ticagrelor, certain HIV/hepatitis C protease inhibitors and others in SmPC Table 1 also raise levels: consider alternatives or dose adjustment.",
+          "tag": "Transporter inhibitors",
+          "src": [
+            { "s": "emc-7559", "q": "Febuxostat 120 mg OD 10 mg, single dose 1.9-fold ↑" },
+            { "s": "emc-7559", "q": "Whenever possible, alternative medications should be considered, and, if necessary, consider temporarily discontinuing Crestor therapy." }
+          ]
+        },
+        {
+          "t": "No clinically relevant interaction with fluconazole; none predicted with clopidogrel (modelling). Not metabolised to a clinically important extent by cytochrome P450.",
+          "tag": "No interaction expected",
+          "detail": true,
+          "src": [
+            { "s": "emc-7559", "q": "No clinically relevant interactions have been observed between rosuvastatin and either fluconazole" },
+            { "s": "emc-7559", "q": "predicts no clinically relevant DDI between clopidogrel and rosuvastatin" }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "SmPC: CrCl <30 mL/min contraindicated (all doses). CrCl <60 mL/min (moderate): start 5 mg; 40 mg contraindicated. Mild to moderate: no other adjustment.",
+          "src": [
+            { "s": "emc-7559", "q": "The use of Crestor in patients with severe renal impairment is contraindicated for all doses" },
+            { "s": "emc-7559", "q": "The recommended start dose is 5 mg in patients with moderate renal impairment (creatinine clearance <60 ml/min). The 40 mg dose is contraindicated in patients with moderate renal impairment." }
+          ]
+        },
+        {
+          "t": "SPS uses eGFR: rosuvastatin contraindicated if eGFR <30 mL/min/1.73 m²; 40 mg contraindicated if eGFR <60 mL/min/1.73 m².",
+          "src": [{ "s": "sps-statins-monitoring", "q": "Rosuvastatin contra-indicated if eGFR less than 30mL/min/1.73m2; 40mg dose contraindicated if eGFR less than 60ml/min/1.73m2." }]
+        },
+        {
+          "t": "40 mg: consider assessing renal function at routine follow-up (proteinuria and serious renal events reported more at 40 mg).",
+          "detail": true,
+          "src": [{ "s": "emc-7559", "q": "An assessment of renal function should be considered during routine follow-up of patients treated with a dose of 40 mg." }]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Contraindicated in active liver disease. No increased exposure at Child-Pugh 7 or below; increased exposure at Child-Pugh 8-9 (consider assessing renal function); no experience above 9.",
+          "src": [
+            { "s": "emc-7559", "q": "There was no increase in systemic exposure to rosuvastatin in subjects with Child-Pugh scores of 7 or below." },
+            { "s": "emc-7559", "q": "increased systemic exposure has been observed in subjects with Child-Pugh scores of 8 and 9" },
+            { "s": "emc-7559", "q": "There is no experience in subjects with Child-Pugh scores above 9." }
+          ]
+        },
+        {
+          "t": "SPS: in stable or chronic liver disease statins can be used with caution; consider a lower starting dose (e.g. rosuvastatin 10 mg daily) with gradual increase.",
+          "src": [
+            { "s": "sps-statins-liver", "q": "available data suggest that statins can be used with caution after assessing individual risks and benefits" },
+            { "s": "sps-statins-liver", "q": "consider a lower dose of a high-intensity statin, such as atorvastatin 20 mg daily or rosuvastatin 10 mg daily, with gradual dose escalation" }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: not recommended; stop as soon as pregnancy is recognised, though ongoing need may be considered in very high cardiovascular risk. Potential risk to the fetus.",
+          "src": [
+            { "s": "emc-7559", "q": "Crestor is not recommended for use in pregnant women. Crestor should be discontinued as soon as pregnancy is recognized." },
+            { "s": "emc-7559", "q": "the ongoing therapeutic need and the individual benefit risk in patients with very high risk of cardiovascular events should be considered" }
+          ]
+        },
+        {
+          "t": "BUMPS: statins are usually avoided in pregnancy; most women are advised to stop three months before trying to conceive and during pregnancy.",
+          "src": [
+            { "s": "bumps-statins", "q": "Statins are usually avoided in pregnancy if possible as there is not enough information to say they are safe for the baby." },
+            { "s": "bumps-statins", "q": "most women are advised to stop taking statins for three months before trying to conceive, and during pregnancy" }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: breastfeeding not recommended (present in milk; potential risk to the infant).",
+          "src": [{ "s": "emc-7559", "q": "Breastfeeding is not recommended during treatment with CRESTOR." }]
+        },
+        {
+          "t": "SPS (differs from SmPC): rosuvastatin is a preferred statin and can be used with caution; monitor the infant's feeding, growth and weight gain, and for constipation, lethargy and irritability. Postponing therapy until after exclusive breastfeeding is preferred if possible.",
+          "src": [
+            { "s": "sps-lipid-breastfeeding", "q": "Rosuvastatin can be used with caution while breastfeeding, but infant monitoring is still required." },
+            { "s": "sps-lipid-breastfeeding", "q": "Also monitor the infant for potential side effects including constipation, lethargy, and irritability." },
+            { "s": "sps-lipid-breastfeeding", "q": "if possible, the preferred option would be to postpone lipid-lowering therapy until after the exclusive breastfeeding period" }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Oral contraceptive: rosuvastatin raised ethinylestradiol and norgestrel levels; consider this when choosing the contraceptive dose.",
+          "detail": true,
+          "src": [{ "s": "emc-7559", "q": "These increased plasma levels should be considered when selecting oral contraceptive doses." }]
+        },
+        {
+          "t": "BUMPS: no increased risk to the baby expected if the father took a statin around conception.",
+          "detail": true,
+          "src": [{ "s": "bumps-statins", "q": "We would not expect any increased risk to the baby if the father took a statin before or around the time you became pregnant." }]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: headache, dizziness, constipation, nausea, abdominal pain, myalgia, asthenia, and diabetes mellitus (depends on risk factors). Adverse effects tend to be dose dependent.",
+          "src": [
+            { "s": "emc-7559", "q": "Nervous system disorders Headache Dizziness" },
+            { "s": "emc-7559", "q": "Gastro-intestinal disorders Constipation Nausea Abdominal pain" },
+            { "s": "emc-7559", "q": "Musculo-skeletal and connective tissue disorders Myalgia" },
+            { "s": "emc-7559", "q": "General disorders and administration site conditions Asthenia" },
+            { "s": "emc-7559", "q": "the incidence of adverse drug reactions tends to be dose dependent" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Rare: myopathy, rhabdomyolysis (with or without acute renal failure). Stop if CK >5 x ULN or muscle symptoms are severe. Report unexplained muscle pain, weakness or cramps at once.",
+          "src": [
+            { "s": "emc-7559", "q": "Therapy should be discontinued if CK levels are markedly elevated (>5xULN) or if muscular symptoms are severe and cause daily discomfort" },
+            { "s": "emc-7559", "q": "Patients should be asked to report inexplicable muscle pain, weakness or cramps immediately, particularly if associated with malaise or fever." }
+          ]
+        },
+        {
+          "t": "Severe skin reactions (SJS, DRESS); hepatitis and jaundice (very rare); pancreatitis (rare); immune-mediated necrotising myopathy; interstitial lung disease (stop the statin if suspected).",
+          "detail": true,
+          "src": [
+            { "s": "emc-7559", "q": "Severe cutaneous adverse reactions including Stevens-Johnson syndrome (SJS) and drug reaction with eosinophilia and systemic symptoms (DRESS), which could be life-threatening or fatal, have been reported with rosuvastatin" },
+            { "s": "emc-7559", "q": "If it is suspected a patient has developed interstitial lung disease, statin therapy should be discontinued." }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before starting (SPS): ALT or AST, lipid profile (non-fasting), serum creatinine/eGFR, HbA1c, blood pressure and BMI. CK only if persistent muscle symptoms; TSH if thyroid symptoms.",
+          "tag": "baseline",
+          "src": [{ "s": "sps-statins-monitoring", "q": "Before starting Required Baseline ALT or AST Blood pressure Body mass index HDL cholesterol (non-fasting) non-HDL cholesterol (non-fasting) Serum creatinine (for creatinine clearance) or Estimated glomerular filtration rate" }]
+        },
+        {
+          "t": "SmPC: liver function tests before and 3 months after starting. SPS: ALT/AST and lipids between months 2 and 3; then annual lipids for review.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "emc-7559", "q": "It is recommended that liver function tests be carried out prior to, and 3 months following, the initiation of treatment." },
+            { "s": "sps-statins-monitoring", "q": "Continued until stable Required Between months 2 and 3 ALT or AST" }
+          ]
+        },
+        {
+          "t": "Stop or do not start if ALT/AST >3 x ULN (repeat in 1 month) or CK >5 x ULN (re-measure after 7 days). Routine CK in symptom-free patients is not needed.",
+          "tag": "stop",
+          "src": [
+            { "s": "sps-statins-monitoring", "q": "Stop existing statin or do not initiate new statin if ALT or AST are greater than 3 times upper limit of normal (ULN)." },
+            { "s": "sps-statins-monitoring", "q": "Stop existing statin or do not initiate statin if creatine kinase (CK) greater than 5 times ULN." },
+            { "s": "emc-7559", "q": "Routine monitoring of CK levels in asymptomatic patients is not warranted." }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Once daily at any time of day, with or without food. Continue a cholesterol-lowering diet.",
+          "src": [
+            { "s": "emc-7559", "q": "Crestor may be given at any time of day, with or without food." },
+            { "s": "emc-7559", "q": "Before treatment initiation the patient should be placed on a standard cholesterol-lowering diet that should continue during treatment." }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report unexplained muscle pain, tenderness, weakness or cramps straight away, especially with fever or feeling unwell.",
+          "src": [
+            { "s": "emc-7559", "q": "Patients should be asked to report inexplicable muscle pain, weakness or cramps immediately" },
+            { "s": "sps-statins-monitoring", "q": "Advise patients to report any unexplained muscle pain." }
+          ]
+        },
+        {
+          "t": "Know the signs of severe skin reactions and seek help if they appear.",
+          "src": [{ "s": "emc-7559", "q": "patients should be advised of the signs and symptoms of severe skin reactions and be closely monitored" }]
+        },
+        {
+          "t": "If taking an aluminium/magnesium antacid, take it at least 2 hours after rosuvastatin.",
+          "src": [{ "s": "emc-7559", "q": "This effect was mitigated when the antacid was dosed 2 hours after Crestor." }]
+        },
+        {
+          "t": "Dizziness may occur; take this into account when driving.",
+          "detail": true,
+          "src": [{ "s": "emc-7559", "q": "When driving vehicles or operating machines, it should be taken into account that dizziness may occur during treatment." }]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "rosuvastatin:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "rosuvastatin",
+      "allergen": ["rosuvastatin"],
+      "concern": "Hypersensitivity to rosuvastatin",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "is contraindicated",
+      "src": [{ "s": "emc-7559", "q": "in patients with hypersensitivity to rosuvastatin or to any of the excipients" }]
+    },
+    {
+      "id": "rosuvastatin:condition:active-liver-disease",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "rosuvastatin",
+      "condition": "active-liver-disease",
+      "concern": "Active liver disease or transaminases >3 x ULN",
+      "consequence": "Risk of liver injury.",
+      "action": "Do not use.",
+      "sourceWording": "is contraindicated",
+      "src": [{ "s": "emc-7559", "q": "in patients with active liver disease including unexplained, persistent elevations of serum transaminases and any serum transaminase elevation exceeding 3 times the upper limit of normal (ULN)" }]
+    },
+    {
+      "id": "rosuvastatin:condition:myopathy",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "rosuvastatin",
+      "condition": "myopathy",
+      "effect": "myopathy",
+      "concern": "Existing myopathy",
+      "consequence": "Risk of worsening muscle damage.",
+      "action": "Do not use.",
+      "sourceWording": "is contraindicated",
+      "src": [{ "s": "emc-7559", "q": "in patients with myopathy." }]
+    },
+    {
+      "id": "rosuvastatin:renal:crcl-30",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "rosuvastatin",
+      "renal": { "measure": "CrCl", "max": 30 },
+      "concern": "Severe renal impairment (CrCl <30 mL/min)",
+      "consequence": "Higher rosuvastatin exposure and risk of myopathy.",
+      "action": "Do not use (all doses).",
+      "sourceWording": "is contraindicated for all doses",
+      "src": [
+        { "s": "emc-7559", "q": "in patients with severe renal impairment (creatinine clearance <30 ml/min)" },
+        { "s": "emc-7559", "q": "The use of Crestor in patients with severe renal impairment is contraindicated for all doses" }
+      ]
+    },
+    {
+      "id": "rosuvastatin:renal:crcl-30-60",
+      "kind": "renal",
+      "level": "dose",
+      "med": "rosuvastatin",
+      "renal": { "measure": "CrCl", "min": 30, "max": 60 },
+      "effect": "myopathy",
+      "concern": "Moderate renal impairment (CrCl <60 mL/min)",
+      "consequence": "Pre-disposing factor for myopathy.",
+      "action": "Start with 5 mg; the 40 mg dose is contraindicated.",
+      "sourceWording": "The 40 mg dose is contraindicated in patients with moderate renal impairment",
+      "src": [{ "s": "emc-7559", "q": "The recommended start dose is 5 mg in patients with moderate renal impairment (creatinine clearance <60 ml/min). The 40 mg dose is contraindicated in patients with moderate renal impairment." }]
+    },
+    {
+      "id": "rosuvastatin:renal:egfr-30-sps",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "rosuvastatin",
+      "renal": { "measure": "eGFR", "max": 30 },
+      "concern": "eGFR <30 mL/min/1.73 m² (SPS)",
+      "consequence": "Severe renal impairment.",
+      "action": "SPS: rosuvastatin contraindicated.",
+      "sourceWording": "Rosuvastatin contra-indicated if eGFR less than 30mL/min/1.73m2",
+      "src": [{ "s": "sps-statins-monitoring", "q": "Rosuvastatin contra-indicated if eGFR less than 30mL/min/1.73m2" }]
+    },
+    {
+      "id": "rosuvastatin:renal:egfr-30-60-sps",
+      "kind": "renal",
+      "level": "dose",
+      "med": "rosuvastatin",
+      "renal": { "measure": "eGFR", "min": 30, "max": 60 },
+      "concern": "eGFR <60 mL/min/1.73 m² (SPS)",
+      "consequence": "40 mg dose not allowed.",
+      "action": "SPS: 40 mg dose contraindicated.",
+      "sourceWording": "40mg dose contraindicated if eGFR less than 60ml/min/1.73m2",
+      "src": [{ "s": "sps-statins-monitoring", "q": "40mg dose contraindicated if eGFR less than 60ml/min/1.73m2." }]
+    },
+    {
+      "id": "rosuvastatin:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "dose",
+      "med": "rosuvastatin",
+      "condition": "hypothyroidism",
+      "effect": "myopathy",
+      "concern": "Hypothyroidism",
+      "consequence": "Pre-disposing factor for myopathy/rhabdomyolysis.",
+      "action": "40 mg contraindicated; start with 5 mg and prescribe with caution with clinical monitoring. Treat hypothyroidism before starting (SmPC, SPS).",
+      "sourceWording": "The 40 mg dose is contraindicated",
+      "src": [
+        { "s": "emc-7559", "q": "The 40 mg dose is contraindicated in patients with pre-disposing factors for myopathy/rhabdomyolysis." },
+        { "s": "emc-7559", "q": "the underlying disease should be treated prior to initiating therapy with Crestor" },
+        { "s": "sps-statins-monitoring", "q": "Rosuvastatin 40mg is contraindicated in hypothyroidism." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:condition:alcohol",
+      "kind": "condition",
+      "level": "dose",
+      "med": "rosuvastatin",
+      "condition": "alcohol-dependence",
+      "effect": "myopathy",
+      "concern": "Alcohol abuse / excessive alcohol intake",
+      "consequence": "Pre-disposing factor for myopathy; liver risk.",
+      "action": "40 mg contraindicated; start with 5 mg; use with caution.",
+      "sourceWording": "The 40 mg dose is contraindicated",
+      "src": [
+        { "s": "emc-7559", "q": "previous history of muscular toxicity with another HMG-CoA reductase inhibitor or fibrate - alcohol abuse" },
+        { "s": "emc-7559", "q": "Crestor should be used with caution in patients who consume excessive quantities of alcohol and/or have a history of liver disease." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:condition:asian-ancestry",
+      "kind": "condition",
+      "level": "dose",
+      "med": "rosuvastatin",
+      "condition": "asian-ancestry",
+      "effect": "myopathy",
+      "concern": "Asian ancestry",
+      "consequence": "Increased rosuvastatin exposure.",
+      "action": "Start with 5 mg; the 40 mg dose is contraindicated.",
+      "sourceWording": "The 40 mg dose is contraindicated in these patients",
+      "src": [{ "s": "emc-7559", "q": "The recommended start dose is 5 mg for patients of Asian ancestry. The 40 mg dose is contraindicated in these patients." }]
+    },
+    {
+      "id": "rosuvastatin:condition:acute-serious-illness",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "rosuvastatin",
+      "condition": "severe-infection-shock",
+      "concern": "Acute serious condition (e.g. sepsis, hypotension, major surgery, trauma)",
+      "consequence": "Risk of myopathy or renal failure from rhabdomyolysis.",
+      "action": "Should not be used.",
+      "sourceWording": "should not be used",
+      "src": [{ "s": "emc-7559", "q": "Crestor should not be used in any patient with an acute, serious condition suggestive of myopathy or predisposing to the development of renal failure secondary to rhabdomyolysis" }]
+    },
+    {
+      "id": "rosuvastatin:condition:uncontrolled-seizures",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "rosuvastatin",
+      "condition": "uncontrolled-epilepsy",
+      "concern": "Uncontrolled seizures",
+      "consequence": "Listed as an acute condition predisposing to renal failure from rhabdomyolysis.",
+      "action": "Should not be used.",
+      "sourceWording": "should not be used",
+      "src": [
+        { "s": "emc-7559", "q": "Crestor should not be used in any patient with an acute, serious condition suggestive of myopathy or predisposing to the development of renal failure secondary to rhabdomyolysis" },
+        { "s": "emc-7559", "q": "or uncontrolled seizures" }
+      ]
+    },
+    {
+      "id": "rosuvastatin:condition:myasthenia-gravis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "rosuvastatin",
+      "condition": "myasthenia-gravis",
+      "concern": "Myasthenia gravis",
+      "consequence": "Statins may induce or aggravate myasthenia gravis or ocular myasthenia.",
+      "action": "Stop rosuvastatin if symptoms worsen.",
+      "sourceWording": "should be discontinued in case of aggravation of symptoms",
+      "src": [
+        { "s": "emc-7559", "q": "statins have been reported to induce de novo or aggravate pre-existing myasthenia gravis or ocular myasthenia" },
+        { "s": "emc-7559", "q": "Crestor should be discontinued in case of aggravation of symptoms." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "rosuvastatin",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption",
+      "consequence": "Tablets contain lactose.",
+      "action": "Should not take this product.",
+      "sourceWording": "should not take this medicine",
+      "src": [{ "s": "emc-7559", "q": "Patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine." }]
+    },
+    {
+      "id": "rosuvastatin:hepatic:child-pugh-8-plus",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "rosuvastatin",
+      "hepatic": ["moderate", "severe"],
+      "concern": "Hepatic impairment, Child-Pugh 8 or above",
+      "consequence": "Increased exposure at Child-Pugh 8-9; no experience above 9.",
+      "action": "Consider assessing renal function; caution (no dose given). Contraindicated if active liver disease.",
+      "sourceWording": "an assessment of renal function should be considered",
+      "src": [
+        { "s": "emc-7559", "q": "increased systemic exposure has been observed in subjects with Child-Pugh scores of 8 and 9" },
+        { "s": "emc-7559", "q": "In these patients an assessment of renal function should be considered" },
+        { "s": "emc-7559", "q": "There is no experience in subjects with Child-Pugh scores above 9." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:hepatic:sps",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "rosuvastatin",
+      "hepatic": ["any"],
+      "concern": "Stable or chronic liver disease (SPS)",
+      "consequence": "Weigh hepatotoxicity risk against cardiovascular benefit.",
+      "action": "SPS: use with caution; consider starting at 10 mg daily with gradual increase.",
+      "sourceWording": "can be used with caution",
+      "src": [
+        { "s": "sps-statins-liver", "q": "available data suggest that statins can be used with caution after assessing individual risks and benefits" },
+        { "s": "sps-statins-liver", "q": "consider a lower dose of a high-intensity statin, such as atorvastatin 20 mg daily or rosuvastatin 10 mg daily, with gradual dose escalation" }
+      ]
+    },
+    {
+      "id": "rosuvastatin:interaction:fibrate",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "rosuvastatin",
+      "other": "group:fibrate",
+      "effect": "myopathy",
+      "concern": "Fibrates (e.g. fenofibrate)",
+      "consequence": "Increased risk of myopathy.",
+      "action": "40 mg contraindicated with a fibrate; start with 5 mg (SmPC). MHRA: do not exceed 20 mg. Weigh benefit against risk.",
+      "sourceWording": "The 40 mg dose is contraindicated with concomitant use of a fibrate",
+      "src": [
+        { "s": "emc-7559", "q": "The 40 mg dose is contraindicated with concomitant use of a fibrate (see sections 4.3 and 4.4). These patients should also start with the 5 mg dose." },
+        { "s": "mhra-dsu-statins-interactions-2008", "q": "For rosuvastatin, start with 5 mg and do not exceed 20 mg during use with fibrates." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:interaction:warfarin",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "rosuvastatin",
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin (vitamin K antagonist)",
+      "consequence": "Starting or increasing rosuvastatin may raise INR; stopping or reducing may lower INR.",
+      "action": "Monitor INR when starting, changing or stopping rosuvastatin.",
+      "sourceWording": "appropriate monitoring of INR is desirable",
+      "src": [
+        { "s": "emc-7559", "q": "may result in an increase in International Normalised Ratio (INR)" },
+        { "s": "emc-7559", "q": "In such situations, appropriate monitoring of INR is desirable." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:interaction:ezetimibe",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "rosuvastatin",
+      "other": "ezetimibe",
+      "effect": "myopathy",
+      "concern": "Ezetimibe",
+      "consequence": "Pharmacodynamic interaction (muscle adverse effects) cannot be ruled out; very rare rhabdomyolysis with the combination.",
+      "action": "Use the combination with caution.",
+      "sourceWording": "caution should be exercised with their combined use",
+      "src": [
+        { "s": "emc-7559", "q": "Very rare cases of rhabdomyolysis have been reported with the use of ezetimibe in combination with HMG-CoA reductase inhibitors." },
+        { "s": "emc-7559", "q": "caution should be exercised with their combined use" }
+      ]
+    },
+    {
+      "id": "rosuvastatin:interaction:febuxostat",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "rosuvastatin",
+      "other": "febuxostat",
+      "effect": "myopathy",
+      "concern": "Febuxostat",
+      "consequence": "Rosuvastatin exposure rises about 1.9-fold.",
+      "action": "Adjust the rosuvastatin dose: start 5 mg if the increase is about 2-fold or more, and keep exposure below that of 40 mg alone.",
+      "sourceWording": "doses of Crestor should be adjusted",
+      "src": [
+        { "s": "emc-7559", "q": "Febuxostat 120 mg OD 10 mg, single dose 1.9-fold ↑" },
+        { "s": "emc-7559", "q": "When it is necessary to co-administer Crestor with other medicinal products known to increase exposure to rosuvastatin, doses of Crestor should be adjusted." },
+        { "s": "emc-7559", "q": "Start with a 5 mg once daily dose of Crestor if the expected increase in exposure (AUC) is approximately 2-fold or higher." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:interaction:al-mg-antacid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "rosuvastatin",
+      "other": "aluminium-magnesium-hydroxide",
+      "effect": "reduced-absorption",
+      "concern": "Aluminium/magnesium hydroxide antacid",
+      "consequence": "Rosuvastatin levels fall by about 50% when taken together; clinical relevance not studied.",
+      "action": "Giving the antacid 2 hours after rosuvastatin lessens the effect.",
+      "sourceWording": "This effect was mitigated when the antacid was dosed 2 hours after",
+      "src": [
+        { "s": "emc-7559", "q": "The simultaneous dosing of Crestor with an antacid suspension containing aluminium and magnesium hydroxide resulted in a decrease in rosuvastatin plasma concentration of approximately 50%." },
+        { "s": "emc-7559", "q": "This effect was mitigated when the antacid was dosed 2 hours after Crestor." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "rosuvastatin",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Potential risk of adverse reactions in the fetus.",
+      "action": "Not recommended; stop as soon as pregnancy is recognised (consider ongoing need only at very high cardiovascular risk).",
+      "sourceWording": "is not recommended for use in pregnant women",
+      "src": [
+        { "s": "emc-7559", "q": "Crestor is not recommended for use in pregnant women. Crestor should be discontinued as soon as pregnancy is recognized." },
+        { "s": "emc-7559", "q": "due to Crestor's mechanism of action, there is a potential risk for adverse reactions in the foetus" }
+      ]
+    },
+    {
+      "id": "rosuvastatin:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "rosuvastatin",
+      "concern": "Pregnancy (BUMPS)",
+      "consequence": "Not enough information to say statins are safe for the baby.",
+      "action": "BUMPS: usually avoided; most women are advised to stop three months before trying to conceive and during pregnancy.",
+      "sourceWording": "usually avoided in pregnancy",
+      "src": [
+        { "s": "bumps-statins", "q": "Statins are usually avoided in pregnancy if possible as there is not enough information to say they are safe for the baby." },
+        { "s": "bumps-statins", "q": "most women are advised to stop taking statins for three months before trying to conceive, and during pregnancy" }
+      ]
+    },
+    {
+      "id": "rosuvastatin:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "rosuvastatin",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Present in human milk; potential risk to the infant.",
+      "action": "SmPC: breastfeeding not recommended during treatment.",
+      "sourceWording": "Breastfeeding is not recommended",
+      "src": [
+        { "s": "emc-7559", "q": "Breastfeeding is not recommended during treatment with CRESTOR." },
+        { "s": "emc-7559", "q": "Limited data from published reports indicate that CRESTOR is present in human milk." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "rosuvastatin",
+      "concern": "Breastfeeding (SPS view, differs from SmPC)",
+      "consequence": "Very small amounts in milk; minimal infant absorption expected.",
+      "action": "SPS: preferred statin; use with caution and monitor infant feeding, growth, weight gain, constipation, lethargy and irritability.",
+      "sourceWording": "can be used with caution while breastfeeding",
+      "src": [
+        { "s": "sps-lipid-breastfeeding", "q": "Rosuvastatin can be used with caution while breastfeeding, but infant monitoring is still required." },
+        { "s": "sps-lipid-breastfeeding", "q": "Also monitor the infant for potential side effects including constipation, lethargy, and irritability." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:age:under-6",
+      "kind": "age",
+      "level": "avoid",
+      "med": "rosuvastatin",
+      "age": { "minYears": 0, "maxYears": 6 },
+      "concern": "Child under 6 years",
+      "consequence": "Safety and efficacy not studied.",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended for use in children younger than 6 years",
+      "src": [{ "s": "emc-7559", "q": "Crestor is not recommended for use in children younger than 6 years." }]
+    },
+    {
+      "id": "rosuvastatin:age:6-17",
+      "kind": "age",
+      "level": "caution",
+      "med": "rosuvastatin",
+      "age": { "minYears": 6, "maxYears": 18 },
+      "concern": "Child or adolescent 6-17 years",
+      "consequence": "Paediatric doses are lower; the 40 mg tablet is not suitable.",
+      "action": "Specialist use only; follow paediatric dose limits (max 10 mg at 6-9 years in HeFH, 20 mg at 10-17 years and in HoFH).",
+      "sourceWording": "should only be carried out by specialists",
+      "src": [
+        { "s": "emc-7559", "q": "Paediatric use should only be carried out by specialists." },
+        { "s": "emc-7559", "q": "The 40 mg tablet is not suitable for use in paediatric patients." }
+      ]
+    },
+    {
+      "id": "rosuvastatin:age:over-70",
+      "kind": "age",
+      "level": "dose",
+      "med": "rosuvastatin",
+      "age": { "minYears": 70 },
+      "effect": "myopathy",
+      "concern": "Age over 70 years",
+      "consequence": "Pre-disposing factor for myopathy.",
+      "action": "Start with 5 mg; prescribe with caution and monitor clinically.",
+      "sourceWording": "A start dose of 5 mg is recommended",
+      "src": [
+        { "s": "emc-7559", "q": "A start dose of 5 mg is recommended in patients >70 years" },
+        { "s": "emc-7559", "q": "alcohol abuse age >70 years" }
+      ]
+    }
+  ]
+}

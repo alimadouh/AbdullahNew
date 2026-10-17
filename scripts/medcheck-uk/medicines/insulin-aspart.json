@@ -1,0 +1,1428 @@
+{
+ "id": "insulin-aspart",
+ "name": "Insulin aspart",
+ "ingredients": [
+  "insulin-aspart"
+ ],
+ "className": "Rapid-acting insulin analogue; also biphasic (30% soluble / 70% protamine-crystallised insulin aspart)",
+ "groups": [
+  "insulin",
+  "antidiabetic"
+ ],
+ "searchTerms": [
+  "insulin aspart",
+  "biphasic insulin aspart",
+  "aspart"
+ ],
+ "formulations": [
+  {
+   "id": "insulin-aspart-sol",
+   "label": "Solution 100 units/mL, rapid-acting (pre-filled pen)",
+   "route": "subcutaneous",
+   "strengths": "100 units/mL",
+   "release": "n/a",
+   "note": "The pre-filled pens are for subcutaneous use only; a vial is needed for syringe or intravenous use.",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "1 ml solution contains 100 units insulin aspart* (equivalent to 3.5 mg)."
+    },
+    {
+     "s": "emc-7920",
+     "q": "NovoRapid FlexPen is only suitable for subcutaneous injections. If administration by syringe or intravenous injection is necessary, a vial should be used."
+    },
+    {
+     "s": "emc-7921",
+     "q": "NovoRapid FlexTouch is only suitable for subcutaneous injections."
+    }
+   ],
+   "sourceIds": [
+    "emc-7920",
+    "emc-7921"
+   ]
+  },
+  {
+   "id": "insulin-aspart-biphasic30",
+   "label": "Biphasic suspension 30/70 (soluble insulin aspart 30% / protamine-crystallised insulin aspart 70%), 100 units/mL pre-filled pen",
+   "route": "subcutaneous",
+   "strengths": "100 units/mL",
+   "release": "n/a",
+   "note": "Premixed. Subcutaneous only: never intravenous (severe hypoglycaemia), avoid intramuscular, not for insulin pumps.",
+   "src": [
+    {
+     "s": "emc-1600",
+     "q": "1 ml of the suspension contains 100 units soluble insulin aspart*/protamine-crystallised insulin aspart* in the ratio 30/70 (equivalent to 3.5 mg)."
+    },
+    {
+     "s": "emc-1600",
+     "q": "NovoMix 30 must not be administered intravenously, as it may result in severe hypoglycaemia. Intramuscular administration should be avoided. NovoMix 30 is not to be used in insulin infusion pumps."
+    }
+   ],
+   "sourceIds": [
+    "emc-1600"
+   ]
+  }
+ ],
+ "brandPrescribing": {
+  "t": "Prescribe insulin by brand name (SPS, citing NICE guidance), and make sure the patient gets a device they have been trained to use. Where one brand comes in more than one strength or device, the brand name alone is not enough: also state the strength and device (SPS).",
+  "src": [
+   {
+    "s": "sps-brand-name-examples",
+    "q": "NICE guidance recommends insulins are prescribed by brand name."
+   },
+   {
+    "s": "sps-brand-name-examples",
+    "q": "It is important to ensure patients receive an administration device they have been trained to use."
+   },
+   {
+    "s": "sps-insulin-confusion",
+    "q": "Where a single insulin brand is available in multiple strengths or delivery devices, using only a brand name is insufficient."
+   }
+  ]
+ },
+ "bnf": {
+  "status": "not-accessed",
+  "note": "BNF/BNFC is only available in the UK; not accessed."
+ },
+ "sections": {
+  "indications": {
+   "items": [
+    {
+     "t": "Diabetes mellitus in adults, adolescents and children aged 1 year and above.",
+     "formulations": [
+      "insulin-aspart-sol"
+     ],
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "NovoRapid is indicated for treatment of diabetes mellitus in adults, adolescents and children aged 1 year and above."
+      }
+     ]
+    },
+    {
+     "t": "Diabetes mellitus in adults, adolescents and children aged 10 years and above.",
+     "formulations": [
+      "insulin-aspart-biphasic30"
+     ],
+     "src": [
+      {
+       "s": "emc-1600",
+       "q": "NovoMix 30 is indicated for treatment of diabetes mellitus in adults, adolescents and children aged 10 years and above."
+      }
+     ]
+    }
+   ]
+  },
+  "restrictions": {
+   "items": [
+    {
+     "t": "Prescribe by brand name and device; where a brand has several strengths or devices, also state strength and device (SPS). Any switch between brands or formulations should be under strict supervision; a dose change may be needed.",
+     "tag": "Brand-name prescribing",
+     "src": [
+      {
+       "s": "sps-brand-name-examples",
+       "q": "NICE guidance recommends insulins are prescribed by brand name."
+      },
+      {
+       "s": "sps-brand-name-examples",
+       "q": "It is important to ensure patients receive an administration device they have been trained to use."
+      },
+      {
+       "s": "sps-insulin-confusion",
+       "q": "Where a single insulin brand is available in multiple strengths or delivery devices, using only a brand name is insufficient."
+      },
+      {
+       "s": "sps-brand-name-examples",
+       "q": "Manufacturers advise any switch between brands or formulation of insulin should be done under strict supervision; a change in dose may be required."
+      }
+     ]
+    },
+    {
+     "t": "Transfer to another type or brand of insulin only under strict medical supervision; a dose change may be needed, from the first dose or over weeks to months.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Transferring a patient to another type or brand of insulin should be done under strict medical supervision."
+      },
+      {
+       "s": "emc-7920",
+       "q": "If an adjustment is needed, it may occur with the first dose or during the first few weeks or months."
+      }
+     ]
+    }
+   ]
+  },
+  "dosing": {
+   "items": [
+    {
+     "t": "Individual dosing, normally with an intermediate- or long-acting insulin. Usual total requirement 0.5 to 1.0 unit/kg/day; in basal-bolus regimens 50 to 70% may be given as rapid-acting insulin aspart. Give immediately before a meal (onset 10 to 20 minutes, peak 1 to 3 hours, duration 3 to 5 hours), or soon after when necessary.",
+     "tag": "Diabetes mellitus (rapid-acting, mealtime)",
+     "formulations": [
+      "insulin-aspart-sol"
+     ],
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "NovoRapid dosing is individual and determined in accordance with the needs of the patient. It should normally be used in combination with intermediate-acting or longacting insulin."
+      },
+      {
+       "s": "emc-7920",
+       "q": "The individual insulin requirement in adults and children is usually between 0.5 and 1.0 unit/kg/day."
+      },
+      {
+       "s": "emc-7920",
+       "q": "In a basal-bolus treatment regimen 50-70% of this requirement may be provided by NovoRapid"
+      },
+      {
+       "s": "emc-7920",
+       "q": "Due to the faster onset of action, NovoRapid should generally be given immediately before a meal. When necessary NovoRapid can be given soon after a meal."
+      },
+      {
+       "s": "emc-7920",
+       "q": "The duration of action is 3 to 5 hours."
+      }
+     ]
+    },
+    {
+     "t": "Type 2 diabetes: start 6 units at breakfast and 6 units at the evening meal, or 12 units once daily with the evening meal; move to twice daily (equal split) on reaching 30 units once daily. Titrate weekly from the lowest pre-meal glucose of the last 3 days (e.g. <4.4 mmol/L: -2 units; 6.2-7.8: +2; 7.9-10: +4; >10: +6); do not increase if hypoglycaemia occurred.",
+     "tag": "Type 2 diabetes (premixed)",
+     "formulations": [
+      "insulin-aspart-biphasic30"
+     ],
+     "src": [
+      {
+       "s": "emc-1600",
+       "q": "For patients with type 2 diabetes, the recommended starting dose of NovoMix 30 is 6 units at breakfast and 6 units at dinner (evening meal). NovoMix 30 can also be initiated once daily with 12 units at dinner (evening meal)."
+      },
+      {
+       "s": "emc-1600",
+       "q": "When using NovoMix 30 once daily, it is generally recommended to move to twice daily when reaching 30 units by splitting the dose into equal breakfast and dinner doses."
+      },
+      {
+       "s": "emc-1600",
+       "q": "<4.4 mmol/l <80 mg/dl -2 units 4.4-6.1 mmol/l 80-110 mg/dl 0 6.2-7.8 mmol/l 111-140 mg/dl +2 units 7.9-10 mmol/l 141-180 mg/dl +4 units >10 mmol/l >180 mg/dl +6 units"
+      },
+      {
+       "s": "emc-1600",
+       "q": "The dose should not be increased if hypoglycaemia occurred within these days. Dose adjustments can be made once a week until target HbA1c is reached."
+      }
+     ]
+    },
+    {
+     "t": "Type 1 diabetes: usual requirement 0.5 to 1.0 unit/kg/day, which the premix may fully or partly meet. Give immediately before a meal (soon after when necessary).",
+     "tag": "Type 1 diabetes (premixed)",
+     "formulations": [
+      "insulin-aspart-biphasic30"
+     ],
+     "src": [
+      {
+       "s": "emc-1600",
+       "q": "In patients with type 1 diabetes, the individual insulin requirement is usually between 0.5 and 1.0 unit/kg/day. NovoMix 30 may fully or partially meet this requirement."
+      },
+      {
+       "s": "emc-1600",
+       "q": "should generally be given immediately before a meal. When necessary, NovoMix 30 can be given soon after a meal."
+      }
+     ]
+    },
+    {
+     "t": "Switching from biphasic human insulin: start with the same dose and regimen, then titrate; monitor glucose closely during and after the switch.",
+     "tag": "Switching",
+     "formulations": [
+      "insulin-aspart-biphasic30"
+     ],
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1600",
+       "q": "When transferring a patient from biphasic human insulin to NovoMix 30, start with the same dose and regimen."
+      }
+     ]
+    },
+    {
+     "t": "Elderly: intensify glucose monitoring and adjust the dose individually.",
+     "tag": "Elderly (65 years and over)",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "In elderly patients, glucose monitoring should be intensified and the insulin aspart dose adjusted on an individual basis."
+      },
+      {
+       "s": "emc-1600",
+       "q": "there is limited experience with the use of NovoMix 30 in combination with oral antidiabetic medicinal products in patients older than 75 years"
+      }
+     ]
+    }
+   ]
+  },
+  "paediatric": {
+   "items": [
+    {
+     "t": "Children and adolescents from 1 year, in preference to soluble human insulin when a rapid onset helps (e.g. timing with meals). Not established below 1 year (no data).",
+     "formulations": [
+      "insulin-aspart-sol"
+     ],
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "NovoRapid can be used in children and adolescents aged 1 year and above in preference to soluble human insulin when a rapid onset of action might be beneficial"
+      },
+      {
+       "s": "emc-7920",
+       "q": "The safety and efficacy of NovoRapid in children below 1 year of age have not been established. No data are available."
+      }
+     ]
+    },
+    {
+     "t": "Adolescents and children from 10 years when premixed insulin is preferred. Limited experience at 6 to 9 years; no data below 6 years.",
+     "formulations": [
+      "insulin-aspart-biphasic30"
+     ],
+     "src": [
+      {
+       "s": "emc-1600",
+       "q": "NovoMix 30 can be used in adolescents and children aged 10 years and above when premixed insulin is preferred. There is limited clinical experience with NovoMix 30 in children aged 6-9 years (see section 5.1)."
+      },
+      {
+       "s": "emc-1600",
+       "q": "No data are available for NovoMix 30 in children below 6 years of age."
+      }
+     ]
+    }
+   ]
+  },
+  "contraindications": {
+   "items": [
+    {
+     "t": "Hypersensitivity to insulin aspart or any excipient.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Hypersensitivity to the active substance or to any of the excipients (see section 6.1)."
+      },
+      {
+       "s": "emc-1600",
+       "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+      }
+     ]
+    },
+    {
+     "t": "Must not be injected during hypoglycaemia or suspected hypoglycaemia (section 4.4); after stabilisation consider adjusting the dose.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "In case of hypoglycaemia or if hypoglycaemia is suspected NovoRapid must not be injected."
+      },
+      {
+       "s": "emc-1600",
+       "q": "In case of hypoglycaemia or if hypoglycaemia is suspected, NovoMix must not be injected."
+      }
+     ]
+    }
+   ]
+  },
+  "cautions": {
+   "items": [
+    {
+     "t": "Biphasic suspension: must not be given intravenously (severe hypoglycaemia); avoid intramuscular use; not for insulin pumps (SmPC section 4.4).",
+     "formulations": [
+      "insulin-aspart-biphasic30"
+     ],
+     "src": [
+      {
+       "s": "emc-1600",
+       "q": "NovoMix 30 must not be administered intravenously, as it may result in severe hypoglycaemia."
+      }
+     ]
+    },
+    {
+     "t": "Inadequate dosing or stopping treatment, especially in type 1 diabetes, can cause hyperglycaemia and potentially lethal diabetic ketoacidosis.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Inadequate dosing or discontinuation of treatment, especially in type 1 diabetes, may lead to hyperglycaemia and diabetic ketoacidosis."
+      },
+      {
+       "s": "emc-7920",
+       "q": "In type 1 diabetes, untreated hyperglycaemic events eventually lead to diabetic ketoacidosis, which is potentially lethal."
+      }
+     ]
+    },
+    {
+     "t": "Hypoglycaemia risk: missed meals or unplanned strenuous exercise. Warning symptoms may change with much improved control, long-standing diabetes or a change of insulin type. With rapid-acting aspart, hypoglycaemia may come earlier after injection than with soluble human insulin.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Omission of a meal or unplanned, strenuous physical exercise may lead to hypoglycaemia."
+      },
+      {
+       "s": "emc-7920",
+       "q": "Usual warning symptoms may disappear in patients with longstanding diabetes."
+      },
+      {
+       "s": "emc-7920",
+       "q": "if hypoglycaemia occurs, it may occur earlier after an injection when compared with soluble human insulin"
+      }
+     ]
+    },
+    {
+     "t": "Biphasic suspension may lower glucose more than biphasic human insulin for up to 6 hours after injection; adjust dose or food intake.",
+     "formulations": [
+      "insulin-aspart-biphasic30"
+     ],
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1600",
+       "q": "Compared with biphasic human insulin, NovoMix 30 may have a more pronounced glucose lowering effect up to 6 hours after injection."
+      }
+     ]
+    },
+    {
+     "t": "Illness (especially infection and fever) usually raises insulin needs; kidney, liver, adrenal, pituitary or thyroid disease can change the dose needed.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Concomitant illness, especially infections and feverish conditions, usually increases the patient's insulin requirements."
+      },
+      {
+       "s": "emc-7920",
+       "q": "Concomitant diseases in the kidney, liver or affecting the adrenal, pituitary or thyroid gland can require changes in the insulin dose."
+      }
+     ]
+    },
+    {
+     "t": "Because it is given with meals, consider the rapid onset in conditions or treatments that delay food absorption.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "the rapid onset of action should be considered in patients with concomitant diseases or treatment where a delayed absorption of food might be expected"
+      }
+     ]
+    },
+    {
+     "t": "Rotate injection sites (lipodystrophy, cutaneous amyloidosis); a sudden move to an unaffected site has caused hypoglycaemia, so monitor blood glucose after changing site.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Patients must be instructed to perform continuous rotation of the injection site to reduce the risk of developing lipodystrophy and cutaneous amyloidosis."
+      },
+      {
+       "s": "emc-7920",
+       "q": "A sudden change in the injection site to an unaffected area has been reported to result in hypoglycaemia."
+      }
+     ]
+    },
+    {
+     "t": "With pioglitazone: watch for heart failure, weight gain and oedema; stop pioglitazone if cardiac symptoms worsen.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "patients should be observed for signs and symptoms of heart failure, weight gain and oedema. Pioglitazone should be discontinued if any deterioration in cardiac symptoms occurs."
+      }
+     ]
+    },
+    {
+     "t": "Check the insulin label before every injection to avoid mix-ups. Seek advice before travel across time zones.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Patients must be instructed to always check the insulin label before each injection to avoid accidental mix-ups between NovoRapid and other insulin products."
+      },
+      {
+       "s": "emc-7920",
+       "q": "Before travelling between different time zones, the patient should seek the doctor's advice"
+      }
+     ]
+    }
+   ]
+  },
+  "interactions": {
+   "items": [
+    {
+     "t": "May lower the insulin requirement (hypoglycaemia risk): oral antidiabetics, MAOIs, beta-blockers, ACE inhibitors, salicylates, anabolic steroids, sulfonamides; the biphasic SmPC also lists GLP-1 receptor agonists.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "The following substances may reduce the patient's insulin requirements: Oral antidiabetic medicinal products, monoamine oxidase inhibitors (MAOI), betablockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulphonamides."
+      },
+      {
+       "s": "emc-1600",
+       "q": "Oral antidiabetic medicinal products, GLP-1 receptor agonists, monoamine oxidase inhibitors (MAOI), beta-blockers"
+      }
+     ]
+    },
+    {
+     "t": "May raise the insulin requirement: oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone, danazol.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+      }
+     ]
+    },
+    {
+     "t": "Beta-blockers may mask hypoglycaemia symptoms. Octreotide/lanreotide may raise or lower requirement. Alcohol may intensify or reduce the effect.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Beta-blockers may mask the symptoms of hypoglycaemia. Octreotide/lanreotide may either increase or decrease the insulin requirement. Alcohol may intensify or reduce the hypoglycaemic effect of insulin."
+      }
+     ]
+    },
+    {
+     "t": "Biphasic suspension in type 2 diabetes: when a GLP-1 receptor agonist is added, reduce the dose by 20% if HbA1c is below 8% (consider a reduction if above 8%), then adjust individually.",
+     "tag": "GLP-1 receptor agonists",
+     "formulations": [
+      "insulin-aspart-biphasic30"
+     ],
+     "src": [
+      {
+       "s": "emc-1600",
+       "q": "a dose reduction of 20% is recommended for patients with an HbA1c less than 8% when a GLP-1 receptor agonist is added to NovoMix 30, to minimise the risk of hypoglycaemia"
+      },
+      {
+       "s": "emc-1600",
+       "q": "For patients with an HbA1c higher than 8% a dose reduction should be considered."
+      }
+     ]
+    },
+    {
+     "t": "GLP-1 receptor agonists (MHRA): when one is added to insulin, an insulin dose reduction may be considered to lower hypoglycaemia risk, but reduce insulin stepwise with blood glucose self-monitoring; abrupt reduction or stopping of insulin has led to diabetic ketoacidosis. GLP-1 receptor agonists are not substitutes for insulin.",
+     "tag": "GLP-1 receptor agonists (MHRA)",
+     "src": [
+      {
+       "s": "mhra-dsu-glp1-dka-insulin-2019",
+       "q": "blood glucose self-monitoring is necessary when adjusting the dose of insulin, particularly when GLP-1 receptor agonist therapy is initiated and insulin is reduced"
+      },
+      {
+       "s": "mhra-dsu-glp1-dka-insulin-2019",
+       "q": "Abrupt discontinuation or reduction in insulin doses can lead to poor glycaemic control, with a risk of diabetic ketoacidosis."
+      },
+      {
+       "s": "mhra-dsu-glp1-dka-insulin-2019",
+       "q": "GLP-1 receptor agonists are not substitutes for insulin."
+      }
+     ]
+    }
+   ]
+  },
+  "renal": {
+   "items": [
+    {
+     "t": "Renal impairment may reduce insulin requirement: intensify glucose monitoring and adjust the dose individually. No eGFR/CrCl thresholds given.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Renal or hepatic impairment may reduce the patient's insulin requirements. In patients with renal or hepatic impairment, glucose monitoring should be intensified and the insulin aspart dose adjusted on an individual basis."
+      },
+      {
+       "s": "emc-1600",
+       "q": "Renal or hepatic impairment may reduce the patient's insulin requirements."
+      }
+     ]
+    }
+   ]
+  },
+  "hepatic": {
+   "items": [
+    {
+     "t": "Hepatic impairment may reduce insulin requirement: intensify glucose monitoring and adjust the dose individually.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "In patients with renal or hepatic impairment, glucose monitoring should be intensified and the insulin aspart dose adjusted on an individual basis."
+      }
+     ]
+    }
+   ]
+  },
+  "pregnancy": {
+   "items": [
+    {
+     "t": "Rapid-acting insulin aspart can be used in pregnancy (two randomised trials showed no adverse effect versus human insulin). Biphasic suspension: limited clinical experience in pregnancy. Intensify glucose control and monitoring before and throughout pregnancy; requirements fall in the first trimester, rise later and fall back quickly after delivery.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "NovoRapid (insulin aspart) can be used in pregnancy."
+      },
+      {
+       "s": "emc-1600",
+       "q": "There is limited clinical experience with NovoMix 30 in pregnancy."
+      },
+      {
+       "s": "emc-7920",
+       "q": "are recommended throughout pregnancy and when contemplating pregnancy"
+      },
+      {
+       "s": "emc-7920",
+       "q": "Insulin requirements usually fall in the first trimester and increase subsequently during the second and third trimester"
+      }
+     ]
+    },
+    {
+     "t": "UKTIS/BUMPS: insulin can be used in pregnancy to treat diabetes; there are no known risks to the baby. Insulin around delivery can cause short-lived low blood glucose in the newborn, which is checked after birth.",
+     "tag": "UKTIS/BUMPS",
+     "src": [
+      {
+       "s": "bumps-insulin",
+       "q": "Insulin can be used in pregnancy to treat diabetes."
+      },
+      {
+       "s": "bumps-insulin",
+       "q": "There are no known risks to your baby from using insulin in pregnancy."
+      },
+      {
+       "s": "bumps-insulin",
+       "q": "Insulin use around the time of delivery can lead to your baby having low blood sugar for a short period after birth."
+      }
+     ]
+    }
+   ]
+  },
+  "breastfeeding": {
+   "items": [
+    {
+     "t": "No restrictions during breastfeeding; insulin treatment of the mother presents no risk to the baby, but the dose may need adjusting.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "There are no restrictions on treatment with NovoRapid during breast-feeding. Insulin treatment of the nursing mother presents no risk to the baby. However, the NovoRapid dose may need to be adjusted."
+      },
+      {
+       "s": "emc-1600",
+       "q": "There are no restrictions on treatment with NovoMix 30 during breast-feeding."
+      }
+     ]
+    },
+    {
+     "t": "SPS: any insulin can be used during breastfeeding (insulin is a preferred choice); as a precaution, monitor the infant for signs of hypoglycaemia (drowsiness, pallor, sweating or shakiness) and for adequate weight gain.",
+     "tag": "SPS",
+     "src": [
+      {
+       "s": "sps-antidiabetic-bf",
+       "q": "Any insulin can be used during breastfeeding, although monitoring is still recommended."
+      },
+      {
+       "s": "sps-antidiabetic-bf",
+       "q": "As a precaution, monitor the infant for signs of hypoglycaemia, including drowsiness, appearing pale, or being sweaty or shaky. Monitor for adequate weight gain."
+      }
+     ]
+    }
+   ]
+  },
+  "reproductive": {
+   "items": [
+    {
+     "t": "Animal studies: no difference from human insulin on fertility.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Animal reproduction studies have not revealed any differences between insulin aspart and human insulin regarding fertility."
+      }
+     ]
+    }
+   ]
+  },
+  "adverseCommon": {
+   "items": [
+    {
+     "t": "Hypoglycaemia: very common.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Very common - Hypoglycaemia"
+      },
+      {
+       "s": "emc-1600",
+       "q": "Very common - Hypoglycaemia"
+      }
+     ]
+    },
+    {
+     "t": "Uncommon: urticaria/rash, refraction disorders, diabetic retinopathy, lipodystrophy, injection-site reactions, oedema. Early in treatment, refraction changes, oedema and injection-site reactions are usually transient.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Uncommon - Urticaria, rash, eruptions"
+      },
+      {
+       "s": "emc-7920",
+       "q": "Uncommon - Lipodystrophy*"
+      },
+      {
+       "s": "emc-7920",
+       "q": "Uncommon - Injection site reactions Uncommon - Oedema"
+      },
+      {
+       "s": "emc-7920",
+       "q": "These reactions are usually of transitory nature."
+      }
+     ]
+    },
+    {
+     "t": "Rapid improvement in control may cause acute painful neuropathy (usually reversible) or temporary worsening of diabetic retinopathy.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Fast improvement in blood glucose control may be associated with acute painful neuropathy, which is usually reversible."
+      },
+      {
+       "s": "emc-7920",
+       "q": "Intensification of insulin therapy with abrupt improvement in glycaemic control may be associated with temporary worsening of diabetic retinopathy"
+      }
+     ]
+    }
+   ]
+  },
+  "adverseSerious": {
+   "items": [
+    {
+     "t": "Severe hypoglycaemia can cause unconsciousness, convulsions, brain damage or death. Mild: oral glucose/sugar. Unconscious: glucagon 0.5 to 1 mg IM/SC by a trained person, or IV glucose by healthcare staff; give IV glucose if no response to glucagon within 10 to 15 minutes; then oral carbohydrate.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Severe hypoglycaemia may lead to unconsciousness and/or convulsions and may result in temporary or permanent impairment of brain function or even death."
+      },
+      {
+       "s": "emc-7920",
+       "q": "can be treated with glucagon (0.5 to 1 mg) given intramuscularly or subcutaneously by a trained person, or with glucose given intravenously by physicians or other healthcare staff"
+      },
+      {
+       "s": "emc-7920",
+       "q": "Glucose must be given intravenously, if the patient does not respond to glucagon within 10 to 15 minutes."
+      }
+     ]
+    },
+    {
+     "t": "Anaphylaxis/generalised hypersensitivity (rash, itching, sweating, GI upset, angioedema, breathing difficulty, palpitations, low blood pressure): very rare but potentially life-threatening.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "is very rare but can potentially be life threatening"
+      },
+      {
+       "s": "emc-1600",
+       "q": "is very rare but can potentially be life-threatening"
+      }
+     ]
+    },
+    {
+     "t": "Diabetic ketoacidosis with inadequate dosing or stopping treatment.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "may lead to hyperglycaemia and diabetic ketoacidosis"
+      }
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "items": [
+    {
+     "t": "Blood glucose monitoring with dose adjustment to reach good control.",
+     "tag": "ongoing",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Blood glucose monitoring and insulin dose adjustments are recommended to achieve optimal glycaemic control."
+      },
+      {
+       "s": "emc-1600",
+       "q": "Blood glucose monitoring and insulin dose adjustments are recommended to achieve optimal glycaemic control."
+      }
+     ]
+    },
+    {
+     "t": "Close glucose monitoring when switching from another insulin and for the first weeks after.",
+     "tag": "ongoing",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Close glucose monitoring is recommended during the transfer and in the initial weeks thereafter"
+      }
+     ]
+    },
+    {
+     "t": "Biphasic suspension: use pre-meal blood glucose to judge the previous dose.",
+     "tag": "ongoing",
+     "formulations": [
+      "insulin-aspart-biphasic30"
+     ],
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-1600",
+       "q": "Pre-meal blood glucose levels should be used to evaluate the adequacy of the preceding dose."
+      }
+     ]
+    },
+    {
+     "t": "MHRA (high-strength, combination and biosimilar insulins): monitor glucose closely after starting a new insulin product and in the following weeks; doses and timing of other insulins and antidiabetic treatment may need adjusting.",
+     "tag": "ongoing",
+     "src": [
+      {
+       "s": "mhra-dsu-insulin-high-strength",
+       "q": "Monitor glucose levels closely after starting a new treatment and in the following weeks."
+      },
+      {
+       "s": "mhra-dsu-insulin-high-strength",
+       "q": "You may need to adjust doses and timing of concurrent rapid acting or short acting insulin products and other antidiabetic treatments."
+      }
+     ]
+    }
+   ]
+  },
+  "administration": {
+   "items": [
+    {
+     "t": "Rapid-acting: subcutaneous injection into abdominal wall, thigh, upper arm, deltoid or gluteal region; rotate sites within a region. A vial is needed for syringe, intravenous (by healthcare staff) or pump use.",
+     "formulations": [
+      "insulin-aspart-sol"
+     ],
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "NovoRapid is administered subcutaneously by injection in the abdominal wall, the thigh, the upper arm, the deltoid region or the gluteal region."
+      },
+      {
+       "s": "emc-7920",
+       "q": "If administration by syringe or intravenous injection is necessary, a vial should be used."
+      }
+     ]
+    },
+    {
+     "t": "Biphasic: subcutaneous only, in the thigh or abdominal wall (gluteal or deltoid if convenient); give immediately before a meal. Resuspend before use; do not use if not uniformly white and cloudy.",
+     "formulations": [
+      "insulin-aspart-biphasic30"
+     ],
+     "src": [
+      {
+       "s": "emc-1600",
+       "q": "NovoMix 30 is administered subcutaneously by injection in the thigh or in the abdominal wall. If convenient, the gluteal or deltoid region may be used."
+      },
+      {
+       "s": "emc-1600",
+       "q": "Do not use this medicinal product if you notice that the resuspended liquid is not uniformly white, cloudy and aqueous."
+      }
+     ]
+    },
+    {
+     "t": "Storage: unopened in a refrigerator (2 to 8°C), do not freeze. In use or carried as a spare: up to 4 weeks below 30°C; keep the cap on to protect from light.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Before opening: Store in a refrigerator (2°C - 8°C). Do not freeze."
+      },
+      {
+       "s": "emc-7920",
+       "q": "During use or when carried as a spare: The product must be stored for a maximum of 4 weeks. Store below 30°C."
+      },
+      {
+       "s": "emc-1600",
+       "q": "During use or when carried as a spare: The product can be stored for a maximum of 4 weeks."
+      }
+     ]
+    }
+   ]
+  },
+  "counselling": {
+   "items": [
+    {
+     "t": "Carry sugar-containing products at all times.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "It is therefore recommended that the diabetic patient always carries sugar-containing products."
+      }
+     ]
+    },
+    {
+     "t": "Know hypoglycaemia symptoms: cold sweat, pale cool skin, tiredness, nervousness or tremor, anxiety, confusion, poor concentration, drowsiness, hunger, vision changes, headache, nausea, palpitations.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "They may include cold sweats, cool pale skin, fatigue, nervousness or tremor, anxiousness, unusual tiredness or weakness, confusion, difficulty in concentration, drowsiness, excessive hunger, vision changes, headache, nausea and palpitation."
+      }
+     ]
+    },
+    {
+     "t": "Take precautions to avoid hypoglycaemia while driving.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Patients should be advised to take precautions to avoid hypoglycaemia while driving."
+      }
+     ]
+    },
+    {
+     "t": "Check the label before each injection.",
+     "src": [
+      {
+       "s": "emc-7920",
+       "q": "Patients must be instructed to always check the insulin label before each injection"
+      }
+     ]
+    },
+    {
+     "t": "MHRA: cutaneous amyloidosis can occur at insulin injection sites and affect glycaemic control. Remind patients to rotate sites within the same body region; consider amyloidosis when a patient has lumps at injection sites; advise patients to contact their doctor before moving away from a lumpy area (a sudden change may cause hypoglycaemia) and to monitor blood glucose after a change of site.",
+     "tag": "Injection sites (MHRA)",
+     "src": [
+      {
+       "s": "mhra-dsu-insulin-amyloidosis",
+       "q": "remind patients to rotate injection sites within the same body region to reduce or prevent the risk of cutaneous amyloidosis and other skin reactions"
+      },
+      {
+       "s": "mhra-dsu-insulin-amyloidosis",
+       "q": "consider cutaneous amyloidosis as a differential diagnosis to lipodystrophy when a patient presents with subcutaneous lumps at an insulin injection site"
+      },
+      {
+       "s": "mhra-dsu-insulin-amyloidosis",
+       "q": "before changing injection site since a sudden change may result in hypoglycaemia"
+      },
+      {
+       "s": "mhra-dsu-insulin-amyloidosis",
+       "q": "to monitor carefully blood glucose after a change in injection site"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "rules": [
+  {
+   "id": "insulin-aspart:allergy:insulin-aspart",
+   "kind": "allergy",
+   "level": "contraindicated",
+   "med": "insulin-aspart",
+   "allergen": [
+    "insulin-aspart"
+   ],
+   "concern": "Hypersensitivity to insulin aspart",
+   "consequence": "Hypersensitivity reaction.",
+   "action": "Do not use.",
+   "sourceWording": "4.3 Contraindications: Hypersensitivity",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "Hypersensitivity to the active substance or to any of the excipients (see section 6.1)."
+    },
+    {
+     "s": "emc-1600",
+     "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:condition:hypoglycaemia",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "insulin-aspart",
+   "condition": "hypoglycaemia",
+   "concern": "Hypoglycaemia (current or suspected)",
+   "consequence": "Further lowering of blood glucose.",
+   "action": "Must not be injected; treat the hypoglycaemia, then consider adjusting the dose.",
+   "sourceWording": "must not be injected",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "In case of hypoglycaemia or if hypoglycaemia is suspected NovoRapid must not be injected."
+    },
+    {
+     "s": "emc-1600",
+     "q": "In case of hypoglycaemia or if hypoglycaemia is suspected, NovoMix must not be injected."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:condition:renal-impairment",
+   "kind": "condition",
+   "level": "monitor",
+   "med": "insulin-aspart",
+   "condition": "renal-impairment",
+   "concern": "Renal impairment",
+   "consequence": "Insulin requirement may be reduced.",
+   "action": "Intensify glucose monitoring; adjust the dose individually.",
+   "sourceWording": "glucose monitoring should be intensified",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "In patients with renal or hepatic impairment, glucose monitoring should be intensified and the insulin aspart dose adjusted on an individual basis."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:hepatic:any",
+   "kind": "hepatic",
+   "level": "monitor",
+   "med": "insulin-aspart",
+   "hepatic": [
+    "any"
+   ],
+   "concern": "Hepatic impairment",
+   "consequence": "Insulin requirement may be reduced.",
+   "action": "Intensify glucose monitoring; adjust the dose individually.",
+   "sourceWording": "glucose monitoring should be intensified",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "In patients with renal or hepatic impairment, glucose monitoring should be intensified and the insulin aspart dose adjusted on an individual basis."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:condition:hypothyroidism",
+   "kind": "condition",
+   "level": "info",
+   "med": "insulin-aspart",
+   "condition": "hypothyroidism",
+   "concern": "Thyroid disease",
+   "consequence": "May change the insulin dose needed.",
+   "action": "Adjust the dose to blood glucose.",
+   "sourceWording": "can require changes in the insulin dose",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "Concomitant diseases in the kidney, liver or affecting the adrenal, pituitary or thyroid gland can require changes in the insulin dose."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:condition:thyrotoxicosis",
+   "kind": "condition",
+   "level": "info",
+   "med": "insulin-aspart",
+   "condition": "thyrotoxicosis",
+   "concern": "Thyroid disease",
+   "consequence": "May change the insulin dose needed.",
+   "action": "Adjust the dose to blood glucose.",
+   "sourceWording": "can require changes in the insulin dose",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "Concomitant diseases in the kidney, liver or affecting the adrenal, pituitary or thyroid gland can require changes in the insulin dose."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:condition:adrenal-insufficiency",
+   "kind": "condition",
+   "level": "info",
+   "med": "insulin-aspart",
+   "condition": "adrenal-insufficiency",
+   "concern": "Adrenal disease",
+   "consequence": "May change the insulin dose needed.",
+   "action": "Adjust the dose to blood glucose.",
+   "sourceWording": "can require changes in the insulin dose",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "Concomitant diseases in the kidney, liver or affecting the adrenal, pituitary or thyroid gland can require changes in the insulin dose."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:condition:hormonal-contraception",
+   "kind": "condition",
+   "level": "info",
+   "med": "insulin-aspart",
+   "condition": "hormonal-contraception",
+   "concern": "Oral contraceptive use",
+   "consequence": "May increase the insulin requirement.",
+   "action": "No specific action stated; adjust insulin to blood glucose.",
+   "sourceWording": "may increase the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+    },
+    {
+     "s": "emc-1600",
+     "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:age:lt1",
+   "kind": "age",
+   "level": "info",
+   "med": "insulin-aspart",
+   "formulations": [
+    "insulin-aspart-sol"
+   ],
+   "age": {
+    "minYears": 0,
+    "maxYears": 1
+   },
+   "concern": "Child under 1 year",
+   "consequence": "Safety and efficacy not established; no data.",
+   "action": "Not licensed below 1 year.",
+   "sourceWording": "have not been established",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The safety and efficacy of NovoRapid in children below 1 year of age have not been established. No data are available."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:age:lt10-biphasic",
+   "kind": "age",
+   "level": "info",
+   "med": "insulin-aspart",
+   "formulations": [
+    "insulin-aspart-biphasic30"
+   ],
+   "age": {
+    "minYears": 0,
+    "maxYears": 10
+   },
+   "concern": "Child under 10 years (biphasic insulin aspart)",
+   "consequence": "Licensed from 10 years; limited experience at 6 to 9 years and no data below 6 years.",
+   "action": "Not licensed below 10 years.",
+   "sourceWording": "children aged 10 years and above",
+   "src": [
+    {
+     "s": "emc-1600",
+     "q": "NovoMix 30 is indicated for treatment of diabetes mellitus in adults, adolescents and children aged 10 years and above."
+    },
+    {
+     "s": "emc-1600",
+     "q": "No data are available for NovoMix 30 in children below 6 years of age."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:pregnancy:monitor",
+   "kind": "pregnancy",
+   "level": "monitor",
+   "med": "insulin-aspart",
+   "concern": "Pregnancy",
+   "consequence": "Insulin requirements usually fall in the first trimester and rise in the second and third; poor control harms the pregnancy.",
+   "action": "Can be used (limited experience with the biphasic suspension). Intensify glucose control and monitoring before and during pregnancy.",
+   "sourceWording": "Careful monitoring of glucose control",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "NovoRapid (insulin aspart) can be used in pregnancy."
+    },
+    {
+     "s": "emc-1600",
+     "q": "There is limited clinical experience with NovoMix 30 in pregnancy."
+    },
+    {
+     "s": "emc-7920",
+     "q": "Intensified blood glucose control and monitoring of pregnant women with diabetes"
+    },
+    {
+     "s": "bumps-insulin",
+     "q": "Insulin can be used in pregnancy to treat diabetes."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:breastfeeding:sps",
+   "kind": "breastfeeding",
+   "level": "monitor",
+   "med": "insulin-aspart",
+   "concern": "Breastfeeding",
+   "consequence": "Insulin is compatible with breastfeeding; maternal insulin dose and diet may need adjusting.",
+   "action": "Can be used (SPS: any insulin). Monitor the infant for signs of hypoglycaemia and weight gain; adjust the maternal dose as needed.",
+   "sourceWording": "monitoring is still recommended",
+   "src": [
+    {
+     "s": "sps-antidiabetic-bf",
+     "q": "Any insulin can be used during breastfeeding, although monitoring is still recommended."
+    },
+    {
+     "s": "sps-antidiabetic-bf",
+     "q": "As a precaution, monitor the infant for signs of hypoglycaemia, including drowsiness, appearing pale, or being sweaty or shaky."
+    },
+    {
+     "s": "emc-7920",
+     "q": "There are no restrictions on treatment with NovoRapid during breast-feeding."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:glp1-agonist-biphasic",
+   "kind": "interaction",
+   "level": "dose",
+   "med": "insulin-aspart",
+   "formulations": [
+    "insulin-aspart-biphasic30"
+   ],
+   "other": "group:glp1-agonist",
+   "effect": "hypoglycaemia",
+   "concern": "GLP-1 receptor agonist with insulin",
+   "consequence": "Additive glucose lowering (hypoglycaemia).",
+   "action": "Biphasic suspension, type 2 diabetes: reduce the dose by 20% if HbA1c is below 8% (consider a reduction if above 8%); reduce stepwise with blood glucose self-monitoring; do not stop insulin abruptly (MHRA).",
+   "sourceWording": "a dose reduction of 20% is recommended",
+   "src": [
+    {
+     "s": "emc-1600",
+     "q": "a dose reduction of 20% is recommended for patients with an HbA1c less than 8% when a GLP-1 receptor agonist is added to NovoMix 30, to minimise the risk of hypoglycaemia"
+    },
+    {
+     "s": "emc-1600",
+     "q": "Oral antidiabetic medicinal products, GLP-1 receptor agonists, monoamine oxidase inhibitors (MAOI), beta-blockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulfonamides."
+    },
+    {
+     "s": "mhra-dsu-glp1-dka-insulin-2019",
+     "q": "blood glucose self-monitoring is necessary when adjusting the dose of insulin, particularly when GLP-1 receptor agonist therapy is initiated and insulin is reduced"
+    },
+    {
+     "s": "mhra-dsu-glp1-dka-insulin-2019",
+     "q": "Abrupt discontinuation or reduction in insulin doses can lead to poor glycaemic control, with a risk of diabetic ketoacidosis."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:glp1-agonist",
+   "kind": "interaction",
+   "level": "monitor",
+   "med": "insulin-aspart",
+   "formulations": [
+    "insulin-aspart-sol"
+   ],
+   "other": "group:glp1-agonist",
+   "effect": "hypoglycaemia",
+   "concern": "GLP-1 receptor agonist with insulin",
+   "consequence": "Additive glucose lowering (hypoglycaemia); abrupt insulin reduction when starting a GLP-1 receptor agonist has caused diabetic ketoacidosis (MHRA).",
+   "action": "If the insulin dose is reduced, do it stepwise with blood glucose self-monitoring; do not stop or cut insulin abruptly.",
+   "sourceWording": "blood glucose self-monitoring is necessary",
+   "src": [
+    {
+     "s": "mhra-dsu-glp1-dka-insulin-2019",
+     "q": "blood glucose self-monitoring is necessary when adjusting the dose of insulin, particularly when GLP-1 receptor agonist therapy is initiated and insulin is reduced"
+    },
+    {
+     "s": "mhra-dsu-glp1-dka-insulin-2019",
+     "q": "Abrupt discontinuation or reduction in insulin doses can lead to poor glycaemic control, with a risk of diabetic ketoacidosis."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:oral-antidiabetic",
+   "kind": "interaction",
+   "level": "info",
+   "med": "insulin-aspart",
+   "other": "group:oral-antidiabetic",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "No specific action stated in the SmPC; insulin requirement may change (blood glucose monitoring and dose adjustment are recommended in general).",
+   "sourceWording": "may reduce the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may reduce the patient's insulin requirements: Oral antidiabetic medicinal products, monoamine oxidase inhibitors (MAOI), betablockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulphonamides."
+    },
+    {
+     "s": "emc-1600",
+     "q": "Oral antidiabetic medicinal products, GLP-1 receptor agonists, monoamine oxidase inhibitors (MAOI), beta-blockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulfonamides."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:maoi",
+   "kind": "interaction",
+   "level": "info",
+   "med": "insulin-aspart",
+   "other": "group:maoi",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "No specific action stated in the SmPC; insulin requirement may change (blood glucose monitoring and dose adjustment are recommended in general).",
+   "sourceWording": "may reduce the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may reduce the patient's insulin requirements: Oral antidiabetic medicinal products, monoamine oxidase inhibitors (MAOI), betablockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulphonamides."
+    },
+    {
+     "s": "emc-1600",
+     "q": "Oral antidiabetic medicinal products, GLP-1 receptor agonists, monoamine oxidase inhibitors (MAOI), beta-blockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulfonamides."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:ace-inhibitor",
+   "kind": "interaction",
+   "level": "info",
+   "med": "insulin-aspart",
+   "other": "group:ace-inhibitor",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "No specific action stated in the SmPC; insulin requirement may change (blood glucose monitoring and dose adjustment are recommended in general).",
+   "sourceWording": "may reduce the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may reduce the patient's insulin requirements: Oral antidiabetic medicinal products, monoamine oxidase inhibitors (MAOI), betablockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulphonamides."
+    },
+    {
+     "s": "emc-1600",
+     "q": "Oral antidiabetic medicinal products, GLP-1 receptor agonists, monoamine oxidase inhibitors (MAOI), beta-blockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulfonamides."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:salicylate",
+   "kind": "interaction",
+   "level": "info",
+   "med": "insulin-aspart",
+   "other": "group:salicylate",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "No specific action stated in the SmPC; insulin requirement may change (blood glucose monitoring and dose adjustment are recommended in general).",
+   "sourceWording": "may reduce the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may reduce the patient's insulin requirements: Oral antidiabetic medicinal products, monoamine oxidase inhibitors (MAOI), betablockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulphonamides."
+    },
+    {
+     "s": "emc-1600",
+     "q": "Oral antidiabetic medicinal products, GLP-1 receptor agonists, monoamine oxidase inhibitors (MAOI), beta-blockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulfonamides."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:sulfonamide",
+   "kind": "interaction",
+   "level": "info",
+   "med": "insulin-aspart",
+   "other": "group:sulfonamide",
+   "effect": "hypoglycaemia",
+   "concern": "Enhanced glucose-lowering effect (hypoglycaemia)",
+   "consequence": "May reduce the insulin requirement; risk of hypoglycaemia.",
+   "action": "No specific action stated in the SmPC; insulin requirement may change (blood glucose monitoring and dose adjustment are recommended in general).",
+   "sourceWording": "may reduce the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may reduce the patient's insulin requirements: Oral antidiabetic medicinal products, monoamine oxidase inhibitors (MAOI), betablockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulphonamides."
+    },
+    {
+     "s": "emc-1600",
+     "q": "Oral antidiabetic medicinal products, GLP-1 receptor agonists, monoamine oxidase inhibitors (MAOI), beta-blockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulfonamides."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:beta-blocker",
+   "kind": "interaction",
+   "level": "info",
+   "med": "insulin-aspart",
+   "other": "group:beta-blocker",
+   "effect": "hypoglycaemia",
+   "concern": "Beta-blocker: masked hypoglycaemia warning signs and changed insulin effect",
+   "consequence": "Early warning symptoms of hypoglycaemia may be reduced or absent; insulin requirement may change.",
+   "action": "No specific action stated in the SmPC; insulin requirement may change (blood glucose monitoring and dose adjustment are recommended in general).",
+   "sourceWording": "may reduce the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may reduce the patient's insulin requirements: Oral antidiabetic medicinal products, monoamine oxidase inhibitors (MAOI), betablockers, angiotensin converting enzyme (ACE) inhibitors, salicylates, anabolic steroids and sulphonamides."
+    },
+    {
+     "s": "emc-7920",
+     "q": "Beta-blockers may mask the symptoms of hypoglycaemia."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:thiazide",
+   "kind": "interaction",
+   "level": "info",
+   "med": "insulin-aspart",
+   "other": "group:thiazide",
+   "concern": "Reduced glucose-lowering effect of insulin",
+   "consequence": "May increase the insulin requirement (higher blood glucose).",
+   "action": "No specific action stated in the SmPC; insulin requirement may change (blood glucose monitoring and dose adjustment are recommended in general).",
+   "sourceWording": "may increase the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+    },
+    {
+     "s": "emc-1600",
+     "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:corticosteroid",
+   "kind": "interaction",
+   "level": "info",
+   "med": "insulin-aspart",
+   "other": "group:corticosteroid",
+   "concern": "Reduced glucose-lowering effect of insulin",
+   "consequence": "May increase the insulin requirement (higher blood glucose).",
+   "action": "No specific action stated in the SmPC; insulin requirement may change (blood glucose monitoring and dose adjustment are recommended in general).",
+   "sourceWording": "may increase the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+    },
+    {
+     "s": "emc-1600",
+     "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:thyroid-hormone",
+   "kind": "interaction",
+   "level": "info",
+   "med": "insulin-aspart",
+   "other": "group:thyroid-hormone",
+   "concern": "Reduced glucose-lowering effect of insulin",
+   "consequence": "May increase the insulin requirement (higher blood glucose).",
+   "action": "No specific action stated in the SmPC; insulin requirement may change (blood glucose monitoring and dose adjustment are recommended in general).",
+   "sourceWording": "may increase the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+    },
+    {
+     "s": "emc-1600",
+     "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+    }
+   ]
+  },
+  {
+   "id": "insulin-aspart:interaction:sympathomimetic",
+   "kind": "interaction",
+   "level": "info",
+   "med": "insulin-aspart",
+   "other": "group:sympathomimetic",
+   "concern": "Reduced glucose-lowering effect of insulin",
+   "consequence": "May increase the insulin requirement (higher blood glucose).",
+   "action": "No specific action stated in the SmPC; insulin requirement may change (blood glucose monitoring and dose adjustment are recommended in general).",
+   "sourceWording": "may increase the patient's insulin requirements",
+   "src": [
+    {
+     "s": "emc-7920",
+     "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+    },
+    {
+     "s": "emc-1600",
+     "q": "The following substances may increase the patient's insulin requirements: Oral contraceptives, thiazides, glucocorticoids, thyroid hormones, sympathomimetics, growth hormone and danazol."
+    }
+   ]
+  }
+ ]
+}

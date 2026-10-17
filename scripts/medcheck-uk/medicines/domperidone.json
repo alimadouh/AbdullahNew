@@ -1,0 +1,1309 @@
+{
+ "id": "domperidone",
+ "name": "Domperidone",
+ "ingredients": [
+  "domperidone"
+ ],
+ "className": "Dopamine antagonist antiemetic (propulsive)",
+ "groups": [
+  "dopamine-antagonist",
+  "qt-prolonging"
+ ],
+ "searchTerms": [
+  "domperidone",
+  "domperidone maleate"
+ ],
+ "formulations": [
+  {
+   "id": "domperidone-susp",
+   "label": "Oral suspension",
+   "route": "oral",
+   "strengths": "1 mg/mL (5 mg/5 mL)",
+   "release": "immediate",
+   "note": "Contains sorbitol (2.275 g per 5 mL) and hydroxybenzoates.",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Each 1ml of oral suspension contains 1mg domperidone."
+    },
+    {
+     "s": "emc-3188",
+     "q": "Each 5 ml contains 2.275 g of sorbitol"
+    }
+   ],
+   "sourceIds": [
+    "emc-3188"
+   ]
+  },
+  {
+   "id": "domperidone-tab",
+   "label": "Tablets",
+   "route": "oral",
+   "strengths": "10 mg",
+   "release": "immediate",
+   "note": "No UK SmPC for a standard 10 mg domperidone tablet was found on emc (the MHRA products database could not be searched: service unavailable). The UK SmPC for domperidone 10 mg orodispersible tablets is used for this form; dose, contraindications and warnings match the suspension SmPC. The orodispersible tablet contains aspartame.",
+   "src": [
+    {
+     "s": "emc-101741",
+     "q": "Each orodispersible tablet contains 10 mg Domperidone (as maleate)"
+    },
+    {
+     "s": "emc-101741",
+     "q": "Excipients: 7.5 mg of aspartame (E951)"
+    }
+   ],
+   "sourceIds": [
+    "emc-101741"
+   ]
+  }
+ ],
+ "brandPrescribing": null,
+ "bnf": {
+  "status": "not-accessed",
+  "note": "BNF/BNFC is only available in the UK; not accessed."
+ },
+ "sections": {
+  "indications": {
+   "items": [
+    {
+     "t": "Relief of the symptoms of nausea and vomiting, in adults and adolescents 12 years and over weighing 35 kg or more (MHRA: no other indication since 2014).",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Domperidone is indicated for the relief of the symptoms of nausea and vomiting."
+      },
+      {
+       "s": "mhra-dsu-domperidone-children-2019",
+       "q": "domperidone is now authorised for the relief of symptoms of nausea and vomiting only in adults and adolescents 12 years of age or older and weighing 35 kg or more"
+      }
+     ]
+    }
+   ]
+  },
+  "restrictions": {
+   "items": [
+    {
+     "t": "MHRA: indication restricted to nausea and vomiting because of cardiac risk; use the lowest effective dose for the shortest possible time; maximum 30 mg in 24 hours; maximum duration usually 1 week.",
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-cardiac-2014",
+       "q": "Domperidone is now restricted to use in the relief of nausea and vomiting It should be used at the lowest effective dose for the shortest possible time"
+      },
+      {
+       "s": "mhra-dsu-domperidone-phaeo-2026",
+       "q": "domperidone should be used at the lowest effective dose for the shortest possible duration and maximum treatment duration should not usually exceed 1 week"
+      }
+     ]
+    },
+    {
+     "t": "Prescription-only: must not be sold without prescription; a medical assessment is needed first because of cardiac risk.",
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-pom-2014",
+       "q": "Domperidone must not be sold without prescription"
+      },
+      {
+       "s": "mhra-dsu-domperidone-pom-2014",
+       "q": "people need to have a medical assessment before taking domperidone to determine if it is suitable for them"
+      }
+     ]
+    },
+    {
+     "t": "Use beyond licensed dose or duration (e.g. Parkinson's disease treatment side effects): take the cardiac risk and interactions into account. Long-term users should be reassessed.",
+     "detail": true,
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-cardiac-2014",
+       "q": "should be taken into account if there is a clinical need to use it at doses or durations greater than those authorised"
+      },
+      {
+       "s": "mhra-dsu-domperidone-cardiac-2014",
+       "q": "Patients currently receiving long-term treatment with domperidone should be reassessed at a routine appointment to advise on treatment continuation, dose change, or cessation"
+      }
+     ]
+    }
+   ]
+  },
+  "dosing": {
+   "items": [
+    {
+     "t": "10 mg (tablet, or 10 mL of 1 mg/mL suspension) up to three times daily, before meals. Maximum 30 mg (30 mL) per day. Usually no longer than 1 week. Do not double a missed dose.",
+     "tag": "Nausea and vomiting (adults and adolescents ≥ 12 years and ≥ 35 kg)",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "10 ml (of oral suspension containing domperidone 1mg per ml) up to three times per day with a maximum daily dose of 30 ml per day."
+      },
+      {
+       "s": "emc-101741",
+       "q": "One 10mg tablet up to three times per day with a maximum dose of 30 mg per day."
+      },
+      {
+       "s": "emc-3188",
+       "q": "Usually, the maximum treatment duration should not exceed one week."
+      },
+      {
+       "s": "emc-3188",
+       "q": "The dose should not be doubled to make up for a missed dose."
+      }
+     ]
+    },
+    {
+     "t": "Liquid: give only with a graduated measuring device (e.g. oral syringe or measuring cup) for dose accuracy.",
+     "formulations": [
+      "domperidone-susp"
+     ],
+     "detail": true,
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-cardiac-2014",
+       "q": "Oral liquid formulations of domperidone should only be given via appropriately designed, graduated measuring devices"
+      }
+     ]
+    }
+   ]
+  },
+  "paediatric": {
+   "items": [
+    {
+     "t": "Not licensed in children under 12 years or under 35 kg (efficacy not established; a trial in gastroenteritis showed no benefit over placebo). MHRA: consider alternative treatments in children under 12.",
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-children-2019",
+       "q": "Domperidone is no longer licensed for use in children younger than 12 years or those weighing less than 35 kg."
+      },
+      {
+       "s": "mhra-dsu-domperidone-children-2019",
+       "q": "consider alternative treatments to domperidone in children younger than 12 years of age who need relief of symptoms of nausea and vomiting"
+      },
+      {
+       "s": "emc-3188",
+       "q": "The efficacy of domperidone in adolescents 12 years of age and older and weighing less than 35 kg has not been established."
+      }
+     ]
+    },
+    {
+     "t": "If a specialist judges off-label use justified in a child under 12, fully inform the patient or carer of benefits and risks.",
+     "detail": true,
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-children-2019",
+       "q": "the patient or parent/caregiver should be fully informed of the potential benefits and risks of the different options"
+      }
+     ]
+    }
+   ]
+  },
+  "contraindications": {
+   "items": [
+    {
+     "t": "Hypersensitivity to domperidone or any excipient.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Known hypersensitivity to domperidone or any of the excipients"
+      }
+     ]
+    },
+    {
+     "t": "Prolactin-releasing pituitary tumour (prolactinoma).",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Prolactin-releasing pituitary tumour (prolactinoma)."
+      }
+     ]
+    },
+    {
+     "t": "Confirmed or suspected phaeochromocytoma (risk of severe hypertension) - new contraindication, MHRA July 2026: stop immediately and switch.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Confirmed or suspected pheochromocytoma due to the risk of severe hypertension episodes."
+      },
+      {
+       "s": "mhra-dsu-domperidone-phaeo-2026",
+       "q": "patients with confirmed or suspected phaeochromocytoma should stop taking domperidone immediately and be switched to an alternative treatment"
+      }
+     ]
+    },
+    {
+     "t": "When stimulating gastric motility could be harmful: GI haemorrhage, mechanical obstruction or perforation.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "when stimulation of the gastric motility could be harmful, e.g .,in patients with gastro-intestinal haemorrhage, mechanical obstruction or perforation."
+      }
+     ]
+    },
+    {
+     "t": "Moderate (Child-Pugh 7-9) or severe (Child-Pugh > 9) hepatic impairment.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Domperidone is contraindicated in moderate (Child-Pugh 7 to 9) or severe (Child-Pugh > 9) hepatic impairment"
+      }
+     ]
+    },
+    {
+     "t": "Known prolonged cardiac conduction intervals (particularly QTc), significant electrolyte disturbance (hypokalaemia, hyperkalaemia, hypomagnesaemia), bradycardia, or underlying cardiac disease such as congestive heart failure.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Domperidone is contraindicated in patients with known existing prolongation of cardiac conduction intervals, particularly QTc, in patients with significant electrolyte disturbances (hypokalaemia, hyperkalaemia, hypomagnesaemia), or bradycardia"
+      }
+     ]
+    },
+    {
+     "t": "With QT-prolonging drugs (except apomorphine under strict conditions) and with potent CYP3A4 inhibitors, regardless of their QT effect.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "co-administration with QT-prolonging drugs, at the exception of apomorphine"
+      },
+      {
+       "s": "emc-3188",
+       "q": "co-administration with potent CYP3A4 inhibitors (regardless of their QT prolonging effects)"
+      }
+     ]
+    }
+   ]
+  },
+  "cautions": {
+   "items": [
+    {
+     "t": "QT prolongation, torsades de pointes, serious ventricular arrhythmia and sudden cardiac death reported. Higher risk: age over 60, daily dose above 30 mg, and QT-prolonging drugs or CYP3A4 inhibitors. Use the lowest effective dose.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Epidemiological studies showed that domperidone was associated with an increased risk of serious ventricular arrhythmias or sudden cardiac death"
+      },
+      {
+       "s": "emc-3188",
+       "q": "A higher risk was observed in patients older than 60 years, patients taking daily doses greater than 30 mg, and patients concurrently taking QT-prolonging drugs or CYP3A4 inhibitors."
+      }
+     ]
+    },
+    {
+     "t": "Stop if signs or symptoms of cardiac arrhythmia occur; patients should promptly report cardiac symptoms.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Treatment with domperidone should be stopped if signs or symptoms occur that may be associated with cardiac arrhythmia, and the patients should consult their physician."
+      }
+     ]
+    },
+    {
+     "t": "May unmask phaeochromocytoma: if a patient has an episode of severe hypertension, consider investigating for it.",
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-phaeo-2026",
+       "q": "be aware that administration of domperidone can unmask phaeochromocytomas. If a patient taking domperidone has an episode of severe hypertension, consider further investigations for phaeochromocytoma"
+      }
+     ]
+    },
+    {
+     "t": "Severe renal impairment: reduce dosing frequency to once or twice daily (dose may need reducing) and review regularly.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "the dosing frequency of domperidone should be reduced to once or twice daily depending on the severity of the impairment, and the dose may need to be reduced"
+      }
+     ]
+    },
+    {
+     "t": "Levodopa: plasma levodopa may rise by 30-40% (no levodopa dose change deemed necessary).",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Although no dosage adjustment of levodopa is deemed necessary, an increase of plasma levodopa concentration (max 30-40%) has been observed"
+      }
+     ]
+    },
+    {
+     "t": "Suspension: contains sorbitol - patients with hereditary fructose intolerance should not take it; hydroxybenzoates may cause (possibly delayed) allergic reactions.",
+     "formulations": [
+      "domperidone-susp"
+     ],
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Patients with hereditary problems of fructose intolerance (HFI) should not take this medicine ."
+      },
+      {
+       "s": "emc-3188",
+       "q": "which may cause allergic reactions (possibly delayed)"
+      }
+     ]
+    }
+   ]
+  },
+  "interactions": {
+   "items": [
+    {
+     "t": "Contraindicated with QT-prolonging medicines, e.g. class IA/III antiarrhythmics (amiodarone, sotalol), some antipsychotics (haloperidol), citalopram, escitalopram, erythromycin, levofloxacin, moxifloxacin, methadone (list not exhaustive).",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "certain anti-depressants (e.g., citalopram, escitalopram) certain antibiotics (e.g. , erythromycin, levofloxacin, moxifloxacin, spiramycin)"
+      },
+      {
+       "s": "emc-3188",
+       "q": "The above list of substances is representative and not exhaustive."
+      }
+     ]
+    },
+    {
+     "t": "Contraindicated with potent CYP3A4 inhibitors: protease inhibitors, systemic azole antifungals, some macrolides (erythromycin, clarithromycin). Ketoconazole or erythromycin tripled domperidone levels and prolonged QTc by about 10 ms.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Potent CYP3A4 inhibitors ( regardless of their QT prolonging effects ), i.e.: protease inhibitors systemic azole antifungals some macrolides (erythromycin, clarithromycin, telithromycin)"
+      },
+      {
+       "s": "emc-3188",
+       "q": "Both the Cmax and AUC of domperidone at steady state were increased approximately three-fold in each of these interaction studies."
+      }
+     ]
+    },
+    {
+     "t": "Not recommended with moderate CYP3A4 inhibitors: diltiazem, verapamil and some macrolides.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Concomitant use of the following substances is not recommended Moderate CYP3A4 inhibitors i.e. diltiazem, verapamil and some macrolides."
+      }
+     ]
+    },
+    {
+     "t": "Caution with drugs causing bradycardia or hypokalaemia, and with azithromycin and roxithromycin.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Caution with bradycardia and hypokalaemia-inducing drugs, as well as with the following macrolides involved in QT-interval prolongation: azithromycin and roxithromycin"
+      }
+     ]
+    },
+    {
+     "t": "Suspension SmPC: do not take antacids or antisecretory drugs at the same time - take domperidone before meals and the antacid/antisecretory after meals (lower domperidone bioavailability).",
+     "formulations": [
+      "domperidone-susp"
+     ],
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Antacids or antisecretory agents should not be taken simultaneously with oral formulations of domperidone as they lower the oral bioavailability of domperidone."
+      },
+      {
+       "s": "emc-3188",
+       "q": "Domperidone should be taken before meals and antacids or antisecretory agents after meals."
+      }
+     ]
+    },
+    {
+     "t": "Apomorphine: contraindicated unless benefit outweighs risk and the apomorphine SmPC precautions (QT checks, ECG) are strictly followed.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "apomorphine, unless the benefit of the co-administration outweighs the risks, and only if the recommended precautions for co-administration are strictly fulfilled."
+      }
+     ]
+    }
+   ]
+  },
+  "renal": {
+   "items": [
+    {
+     "t": "Severe renal impairment (serum creatinine > 6 mg/100 mL, i.e. 0.6 mmol/L): half-life prolonged - give once or twice daily, dose may need reducing; review regularly. No eGFR/CrCl threshold is given.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Since the elimination half-life of domperidone is prolonged in severe renal impairment (serum creatinine > 6mg/100mL, i.e. 0.6 mmol/L)"
+      },
+      {
+       "s": "emc-3188",
+       "q": "Such patients with severe renal impairment should be reviewed regularly"
+      }
+     ]
+    }
+   ]
+  },
+  "hepatic": {
+   "items": [
+    {
+     "t": "Contraindicated in moderate (Child-Pugh 7-9) or severe (Child-Pugh > 9) hepatic impairment. Mild (Child-Pugh 5-6): no dose change.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Domperidone is contraindicated in moderate (Child-Pugh 7 to 9) or severe (Child-Pugh > 9) hepatic impairment"
+      },
+      {
+       "s": "emc-3188",
+       "q": "Dose modification in mild (Child-Pugh 5 to 6) hepatic impairment is however not needed"
+      }
+     ]
+    }
+   ]
+  },
+  "pregnancy": {
+   "items": [
+    {
+     "t": "SmPC: limited human data; animal reproductive toxicity at maternally toxic doses. Use only when justified by the expected benefit.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "There are limited post-marketing data on the use of domperidone in pregnant women."
+      },
+      {
+       "s": "emc-3188",
+       "q": "Domperidone should only be used during pregnancy when justified by the anticipated therapeutic benefit."
+      }
+     ]
+    },
+    {
+     "t": "BUMPS: domperidone is one of the options if an antihistamine does not help pregnancy sickness; overall these medicines are considered safe for the baby.",
+     "src": [
+      {
+       "s": "bumps-nausea-vomiting",
+       "q": "These include ondansetron (Zofran®), metoclopramide (Maxolon®), and domperidone."
+      },
+      {
+       "s": "bumps-nausea-vomiting",
+       "q": "Overall, these medicines are considered safe for your baby."
+      }
+     ]
+    }
+   ]
+  },
+  "breastfeeding": {
+   "items": [
+    {
+     "t": "SmPC: infants receive < 0.1% of the maternal weight-adjusted dose; adverse (especially cardiac) effects cannot be excluded. Decide whether to stop breastfeeding or domperidone; caution if the infant has QTc risk factors.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Domperidone is excreted in human milk and breast-fed infants receive less than 0.1 % of the maternal weight-adjusted dose."
+      },
+      {
+       "s": "emc-3188",
+       "q": "Caution should be exercised in case of QTc prolongation risk factors in breast-fed infants."
+      }
+     ]
+    },
+    {
+     "t": "SPS: negligible amounts pass into milk; no serious infant effects reported - monitor for GI disturbance or dry mouth. Avoid in the mother if the infant has cardiac disease, severe liver disease or takes interacting medicines.",
+     "src": [
+      {
+       "s": "sps-domperidone-low-milk",
+       "q": "Very limited information shows domperidone passes into breast milk in negligible amounts (less than 0.5% of the maternal weight-adjusted dose)"
+      },
+      {
+       "s": "sps-domperidone-low-milk",
+       "q": "As a precaution, monitor for gastro-intestinal disturbances, or signs of dry mouth , such as difficulty feeding."
+      },
+      {
+       "s": "sps-domperidone-low-milk",
+       "q": "If the infant has cardiac disease, severe liver disease or is receiving medicines which may be a problem, then domperidone use in the mother is best avoided."
+      }
+     ]
+    },
+    {
+     "t": "SPS (off-licence, low milk supply): only after full assessment; 10 mg three times daily for 7 days then review; do not use higher doses.",
+     "detail": true,
+     "src": [
+      {
+       "s": "sps-domperidone-low-milk",
+       "q": "Use 10mg three times daily, initially for 7 days then review."
+      },
+      {
+       "s": "sps-domperidone-low-milk",
+       "q": "Doses higher than this should not be used ."
+      }
+     ]
+    }
+   ]
+  },
+  "reproductive": {
+   "status": "not-stated",
+   "note": "No fertility or contraception statement in the UK SmPCs (1 mg/mL oral suspension, 10 mg orodispersible tablets) or the MHRA Drug Safety Updates checked."
+  },
+  "adverseCommon": {
+   "items": [
+    {
+     "t": "Common: dry mouth. Uncommon: somnolence, headache, extrapyramidal disorder, diarrhoea, anxiety, agitation, loss of libido, rash, pruritus, urticaria, galactorrhoea, breast pain/tenderness, asthenia.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Dry mouth Diarrhoea"
+      },
+      {
+       "s": "emc-3188",
+       "q": "Somnolence Headache Extrapyramidal disorder"
+      },
+      {
+       "s": "emc-3188",
+       "q": "Galactorrhoea Breast pain Breast tenderness"
+      }
+     ]
+    }
+   ]
+  },
+  "adverseSerious": {
+   "items": [
+    {
+     "t": "Ventricular arrhythmias, QTc prolongation, torsade de pointes, sudden cardiac death (frequency not known): stop and seek medical help for palpitations, fainting, chest pain or irregular heartbeat.",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Ventricular arrhythmias Sudden cardiac death QTc prolongation Torsade de Pointes"
+      },
+      {
+       "s": "mhra-dsu-domperidone-cardiac-2014",
+       "q": "Seek medical attention immediately if you experience heart-related symptoms such as irregular heartbeat or fainting while taking domperidone"
+      }
+     ]
+    },
+    {
+     "t": "Anaphylactic reaction including shock; angioedema (frequency not known).",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Anaphylactic reaction (including anaphylactic shock)"
+      }
+     ]
+    },
+    {
+     "t": "Severe hypertension in phaeochromocytoma.",
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-phaeo-2026",
+       "q": "a small number of reports have been received relating to severe episodes of hypertension in patients with phaeochromocytoma"
+      }
+     ]
+    },
+    {
+     "t": "Convulsion, oculogyric crisis, urinary retention (frequency not known).",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Convulsion Restless legs syndrome*"
+      }
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "items": [
+    {
+     "t": "Before prescribing, check for cardiac disease, QT prolongation, bradycardia, electrolyte disturbance, moderate/severe liver disease and interacting medicines (QT-prolonging drugs, CYP3A4 inhibitors).",
+     "tag": "baseline",
+     "src": [
+      {
+       "s": "sps-qt-commonly-used",
+       "q": "Do not prescribe domperidone in people with bradycardia, congenital QT prolongation, underlying cardiac diseases or receiving other medications known to prolong QT interval or potent CYP3A4 inhibitors."
+      }
+     ]
+    },
+    {
+     "t": "SPS: with non-modifiable patient and medicine risk factors, monitor ECG, magnesium and potassium before and during treatment.",
+     "tag": "ongoing",
+     "src": [
+      {
+       "s": "sps-qt-commonly-used",
+       "q": "Monitor ECG, magnesium and potassium before and during treatment in people with non-modifiable patient and medicine risk factors."
+      }
+     ]
+    },
+    {
+     "t": "Review at 1 week (maximum usual duration); reassess any long-term use.",
+     "tag": "stop",
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-phaeo-2026",
+       "q": "maximum treatment duration should not usually exceed 1 week"
+      },
+      {
+       "s": "mhra-dsu-domperidone-cardiac-2014",
+       "q": "Patients currently receiving long-term treatment with domperidone should be reassessed at a routine appointment"
+      }
+     ]
+    },
+    {
+     "t": "Stop if arrhythmia symptoms occur, or immediately if phaeochromocytoma is confirmed or suspected.",
+     "tag": "stop",
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "Treatment with domperidone should be stopped if signs or symptoms occur that may be associated with cardiac arrhythmia"
+      },
+      {
+       "s": "mhra-dsu-domperidone-phaeo-2026",
+       "q": "patients with confirmed or suspected phaeochromocytoma should stop taking domperidone immediately"
+      }
+     ]
+    }
+   ]
+  },
+  "administration": {
+   "items": [
+    {
+     "t": "Take 15-30 minutes before meals (absorption delayed if taken after meals).",
+     "formulations": [
+      "domperidone-susp"
+     ],
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "It is recommended to take oral domperidone 15-30 minutes before meals. If taken after meals, absorption of the drug is somewhat delayed."
+      }
+     ]
+    },
+    {
+     "t": "Take before meals (absorption is delayed if taken after meals). The UK SmPC used is for an orodispersible tablet; its place-on-the-tongue method does not apply to a standard tablet.",
+     "formulations": [
+      "domperidone-tab"
+     ],
+     "src": [
+      {
+       "s": "emc-101741",
+       "q": "It is recommended to take Epzit 10 mg Orodispersible Tablets before meals."
+      },
+      {
+       "s": "emc-101741",
+       "q": "If taken after meals, absorption of the drug is somewhat delayed."
+      }
+     ]
+    }
+   ]
+  },
+  "counselling": {
+   "items": [
+    {
+     "t": "Use only for short periods for nausea and vomiting. Get medical help at once for irregular heartbeat, fainting, dizziness, chest pain or palpitations.",
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-cardiac-2014",
+       "q": "Domperidone should only be used for short periods of time to treat nausea and vomiting"
+      },
+      {
+       "s": "mhra-dsu-domperidone-pom-2014",
+       "q": "Talk to a doctor straight away if you experience dizziness; fainting; chest pain; or a rapid, fluttering, or pounding heartbeat while taking domperidone."
+      }
+     ]
+    },
+    {
+     "t": "Seek urgent help for signs of very high blood pressure (persistent headache, blurred vision, breathlessness, chest pain).",
+     "src": [
+      {
+       "s": "mhra-dsu-domperidone-phaeo-2026",
+       "q": "Symptoms can include, but are not limited to: persistent headache, blurred vision, shortness of breath and chest pain."
+      }
+     ]
+    },
+    {
+     "t": "May cause drowsiness - do not drive or use machines until you know how it affects you.",
+     "detail": true,
+     "src": [
+      {
+       "s": "emc-3188",
+       "q": "patients should be advised not to drive or use machinery or engage in other activities requiring mental alertness and coordination until they have established how domperidone affects them"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "rules": [
+  {
+   "id": "domperidone:allergy:domperidone",
+   "kind": "allergy",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "allergen": [
+    "domperidone"
+   ],
+   "concern": "Hypersensitivity to domperidone",
+   "consequence": "Hypersensitivity reaction, including anaphylaxis.",
+   "action": "Do not use.",
+   "sourceWording": "Domperidone is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Known hypersensitivity to domperidone or any of the excipients"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:prolactinoma",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "prolactinoma",
+   "concern": "Prolactin-releasing pituitary tumour (prolactinoma)",
+   "consequence": "Domperidone raises prolactin.",
+   "action": "Do not use.",
+   "sourceWording": "Domperidone is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Prolactin-releasing pituitary tumour (prolactinoma)."
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:phaeochromocytoma",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "phaeochromocytoma",
+   "concern": "Confirmed or suspected phaeochromocytoma",
+   "consequence": "Risk of severe hypertension episodes.",
+   "action": "Do not use; if already taking, stop immediately and switch to an alternative (MHRA 2026).",
+   "sourceWording": "now contraindicated in patients with confirmed or suspected phaeochromocytoma",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Confirmed or suspected pheochromocytoma due to the risk of severe hypertension episodes."
+    },
+    {
+     "s": "mhra-dsu-domperidone-phaeo-2026",
+     "q": "domperidone is now contraindicated in patients with confirmed or suspected phaeochromocytoma"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:gi-haemorrhage-obstruction",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "gi-haemorrhage-obstruction-perforation",
+   "concern": "GI haemorrhage, mechanical obstruction or perforation",
+   "consequence": "Stimulating gastric motility could be harmful.",
+   "action": "Do not use.",
+   "sourceWording": "Domperidone is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "when stimulation of the gastric motility could be harmful, e.g .,in patients with gastro-intestinal haemorrhage, mechanical obstruction or perforation."
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:gi-obstruction",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "gi-obstruction-stricture",
+   "concern": "Mechanical GI obstruction",
+   "consequence": "Stimulating gastric motility could be harmful.",
+   "action": "Do not use.",
+   "sourceWording": "Domperidone is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "when stimulation of the gastric motility could be harmful, e.g .,in patients with gastro-intestinal haemorrhage, mechanical obstruction or perforation."
+    }
+   ]
+  },
+  {
+   "id": "domperidone:hepatic:moderate-severe",
+   "kind": "hepatic",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "hepatic": [
+    "moderate",
+    "severe"
+   ],
+   "concern": "Moderate (Child-Pugh 7-9) or severe (Child-Pugh > 9) hepatic impairment",
+   "consequence": "Contraindicated in moderate or severe hepatic impairment.",
+   "action": "Do not use. Mild impairment (Child-Pugh 5-6): no dose change.",
+   "sourceWording": "Domperidone is contraindicated in moderate (Child-Pugh 7 to 9) or severe (Child-Pugh > 9) hepatic impairment",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Domperidone is contraindicated in moderate (Child-Pugh 7 to 9) or severe (Child-Pugh > 9) hepatic impairment"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:qt-prolongation",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "qt-prolongation",
+   "effect": "qt-prolongation",
+   "concern": "Known prolongation of cardiac conduction intervals, particularly QTc",
+   "consequence": "Increased risk of ventricular arrhythmia.",
+   "action": "Do not use.",
+   "sourceWording": "Domperidone is contraindicated in patients with known existing prolongation of cardiac conduction intervals",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Domperidone is contraindicated in patients with known existing prolongation of cardiac conduction intervals, particularly QTc"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:conduction-disturbance",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "cardiac-conduction-disturbance",
+   "effect": "qt-prolongation",
+   "concern": "Known prolongation of cardiac conduction intervals",
+   "consequence": "Increased risk of ventricular arrhythmia.",
+   "action": "Do not use.",
+   "sourceWording": "Domperidone is contraindicated in patients with known existing prolongation of cardiac conduction intervals",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Domperidone is contraindicated in patients with known existing prolongation of cardiac conduction intervals, particularly QTc"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:heart-failure",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "heart-failure",
+   "concern": "Underlying cardiac disease such as congestive heart failure",
+   "consequence": "Increased risk of ventricular arrhythmia.",
+   "action": "Do not use.",
+   "sourceWording": "Domperidone is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "or in patients with underlying cardiac diseases such as congestive heart failure due to increased risk of ventricular arrhythmia"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:cardiac-disease",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "cardiac-disease",
+   "concern": "Underlying cardiac disease",
+   "consequence": "Increased risk of ventricular arrhythmia.",
+   "action": "Do not use.",
+   "sourceWording": "Domperidone is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "or in patients with underlying cardiac diseases such as congestive heart failure due to increased risk of ventricular arrhythmia"
+    },
+    {
+     "s": "mhra-dsu-domperidone-cardiac-2014",
+     "q": "with underlying cardiac diseases such as congestive heart failure"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:bradycardia",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "bradycardia",
+   "effect": "qt-prolongation",
+   "concern": "Bradycardia",
+   "consequence": "Increases proarrhythmic risk.",
+   "action": "Do not use.",
+   "sourceWording": "Domperidone is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Domperidone is contraindicated in patients with known existing prolongation of cardiac conduction intervals, particularly QTc, in patients with significant electrolyte disturbances (hypokalaemia, hyperkalaemia, hypomagnesaemia), or bradycardia"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:hypokalaemia",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "hypokalaemia",
+   "effect": "qt-prolongation",
+   "concern": "Significant hypokalaemia",
+   "consequence": "Increases proarrhythmic risk.",
+   "action": "Do not use while the electrolyte disturbance is significant.",
+   "sourceWording": "Domperidone is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Domperidone is contraindicated in patients with known existing prolongation of cardiac conduction intervals, particularly QTc, in patients with significant electrolyte disturbances (hypokalaemia, hyperkalaemia, hypomagnesaemia), or bradycardia"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:hyperkalaemia",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "hyperkalaemia",
+   "effect": "qt-prolongation",
+   "concern": "Significant hyperkalaemia",
+   "consequence": "Increases proarrhythmic risk.",
+   "action": "Do not use while the electrolyte disturbance is significant.",
+   "sourceWording": "Domperidone is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Domperidone is contraindicated in patients with known existing prolongation of cardiac conduction intervals, particularly QTc, in patients with significant electrolyte disturbances (hypokalaemia, hyperkalaemia, hypomagnesaemia), or bradycardia"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:hypomagnesaemia",
+   "kind": "condition",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "condition": "hypomagnesaemia",
+   "effect": "qt-prolongation",
+   "concern": "Significant hypomagnesaemia",
+   "consequence": "Increases proarrhythmic risk.",
+   "action": "Do not use while the electrolyte disturbance is significant.",
+   "sourceWording": "Domperidone is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Domperidone is contraindicated in patients with known existing prolongation of cardiac conduction intervals, particularly QTc, in patients with significant electrolyte disturbances (hypokalaemia, hyperkalaemia, hypomagnesaemia), or bradycardia"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:severe-renal",
+   "kind": "condition",
+   "level": "dose",
+   "med": "domperidone",
+   "condition": "severe-renal-impairment",
+   "concern": "Severe renal impairment (serum creatinine > 0.6 mmol/L)",
+   "consequence": "Elimination half-life prolonged.",
+   "action": "Reduce dosing to once or twice daily; dose may need reducing; review regularly.",
+   "sourceWording": "the dosing frequency of domperidone should be reduced to once or twice daily",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Since the elimination half-life of domperidone is prolonged in severe renal impairment (serum creatinine > 6mg/100mL, i.e. 0.6 mmol/L)"
+    },
+    {
+     "s": "emc-3188",
+     "q": "the dosing frequency of domperidone should be reduced to once or twice daily depending on the severity of the impairment, and the dose may need to be reduced"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:condition:fructose-intolerance",
+   "kind": "condition",
+   "level": "avoid",
+   "med": "domperidone",
+   "condition": "hereditary-fructose-intolerance",
+   "formulations": [
+    "domperidone-susp"
+   ],
+   "concern": "Hereditary fructose intolerance (suspension)",
+   "consequence": "Suspension contains sorbitol.",
+   "action": "Should not take the suspension.",
+   "sourceWording": "should not take this medicine",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Patients with hereditary problems of fructose intolerance (HFI) should not take this medicine ."
+    }
+   ]
+  },
+  {
+   "id": "domperidone:age:lt12",
+   "kind": "age",
+   "level": "caution",
+   "med": "domperidone",
+   "age": {
+    "minYears": 0,
+    "maxYears": 12
+   },
+   "concern": "Child under 12 years",
+   "consequence": "No longer licensed under 12 years or under 35 kg (no benefit over placebo in a paediatric trial).",
+   "action": "Consider alternative treatments (MHRA). Adolescents must also weigh at least 35 kg.",
+   "sourceWording": "consider alternative treatments to domperidone in children younger than 12 years",
+   "src": [
+    {
+     "s": "mhra-dsu-domperidone-children-2019",
+     "q": "Domperidone is no longer licensed for use in children younger than 12 years or those weighing less than 35 kg."
+    },
+    {
+     "s": "mhra-dsu-domperidone-children-2019",
+     "q": "consider alternative treatments to domperidone in children younger than 12 years of age who need relief of symptoms of nausea and vomiting"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:age:gt60",
+   "kind": "age",
+   "level": "caution",
+   "med": "domperidone",
+   "age": {
+    "minYears": 60
+   },
+   "effect": "qt-prolongation",
+   "concern": "Age over 60 years",
+   "consequence": "Higher risk of serious ventricular arrhythmia or sudden cardiac death.",
+   "action": "Use the lowest effective dose for the shortest time (max 30 mg/day).",
+   "sourceWording": "A higher risk was observed in patients older than 60 years",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "A higher risk was observed in patients older than 60 years, patients taking daily doses greater than 30 mg, and patients concurrently taking QT-prolonging drugs or CYP3A4 inhibitors."
+    }
+   ]
+  },
+  {
+   "id": "domperidone:pregnancy:caution",
+   "kind": "pregnancy",
+   "level": "caution",
+   "med": "domperidone",
+   "concern": "Pregnancy",
+   "consequence": "Limited human data; animal reproductive toxicity at maternally toxic doses.",
+   "action": "Use only when justified by the expected benefit (SmPC). BUMPS lists it as an option for pregnancy sickness.",
+   "sourceWording": "should only be used during pregnancy when justified by the anticipated therapeutic benefit",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Domperidone should only be used during pregnancy when justified by the anticipated therapeutic benefit."
+    },
+    {
+     "s": "bumps-nausea-vomiting",
+     "q": "These include ondansetron (Zofran®), metoclopramide (Maxolon®), and domperidone."
+    }
+   ]
+  },
+  {
+   "id": "domperidone:breastfeeding:caution",
+   "kind": "breastfeeding",
+   "level": "caution",
+   "med": "domperidone",
+   "concern": "Breastfeeding",
+   "consequence": "Small amounts in milk; infant cardiac effects cannot be excluded (SmPC). SPS: negligible amounts, no serious infant effects reported.",
+   "action": "SmPC: decide whether to stop breastfeeding or domperidone; caution if the infant has QTc risk factors. SPS: avoid if the infant has cardiac or severe liver disease or takes interacting medicines; monitor for GI upset or dry mouth.",
+   "sourceWording": "Caution should be exercised in case of QTc prolongation risk factors in breast-fed infants",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Caution should be exercised in case of QTc prolongation risk factors in breast-fed infants."
+    },
+    {
+     "s": "sps-domperidone-low-milk",
+     "q": "If the infant has cardiac disease, severe liver disease or is receiving medicines which may be a problem, then domperidone use in the mother is best avoided."
+    }
+   ]
+  },
+  {
+   "id": "domperidone:interaction:qt-prolonging",
+   "kind": "interaction",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "other": "group:qt-prolonging",
+   "otherExcept": [
+    "azithromycin"
+   ],
+   "effect": "qt-prolongation",
+   "concern": "Domperidone + QT-prolonging medicine",
+   "consequence": "Increased risk of QT prolongation and serious ventricular arrhythmia.",
+   "action": "Do not use together (apomorphine only under strict SmPC conditions). Note: the SmPC names azithromycin as 'caution' only, and diltiazem and verapamil as 'not recommended'; for those, the specific statement applies.",
+   "sourceWording": "Concomitant use of the following substances is contraindicated QTc prolonging medicinal products",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "co-administration with QT-prolonging drugs, at the exception of apomorphine"
+    },
+    {
+     "s": "emc-3188",
+     "q": "Concomitant use of the following substances is contraindicated QTc prolonging medicinal products"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:interaction:levofloxacin",
+   "kind": "interaction",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "other": "levofloxacin",
+   "effect": "qt-prolongation",
+   "concern": "Domperidone + levofloxacin",
+   "consequence": "Additive QT prolongation; risk of ventricular arrhythmia.",
+   "action": "Do not use together.",
+   "sourceWording": "Concomitant use of the following substances is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "certain antibiotics (e.g. , erythromycin, levofloxacin, moxifloxacin, spiramycin)"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:interaction:moxifloxacin",
+   "kind": "interaction",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "other": "moxifloxacin",
+   "effect": "qt-prolongation",
+   "concern": "Domperidone + moxifloxacin",
+   "consequence": "Additive QT prolongation; risk of ventricular arrhythmia.",
+   "action": "Do not use together.",
+   "sourceWording": "Concomitant use of the following substances is contraindicated",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "certain antibiotics (e.g. , erythromycin, levofloxacin, moxifloxacin, spiramycin)"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:interaction:strong-cyp3a4-inhibitor",
+   "kind": "interaction",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "other": "group:strong-cyp3a4-inhibitor",
+   "effect": "qt-prolongation",
+   "concern": "Domperidone + potent CYP3A4 inhibitor (e.g. clarithromycin)",
+   "consequence": "Domperidone levels about three-fold higher; QTc prolonged.",
+   "action": "Do not use together, regardless of the inhibitor's own QT effect.",
+   "sourceWording": "co-administration with potent CYP3A4 inhibitors (regardless of their QT prolonging effects)",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "co-administration with potent CYP3A4 inhibitors (regardless of their QT prolonging effects)"
+    },
+    {
+     "s": "emc-3188",
+     "q": "some macrolides (erythromycin, clarithromycin, telithromycin)"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:interaction:fluconazole",
+   "kind": "interaction",
+   "level": "contraindicated",
+   "med": "domperidone",
+   "other": "fluconazole",
+   "effect": "qt-prolongation",
+   "concern": "Domperidone + systemic azole antifungal (fluconazole)",
+   "consequence": "CYP3A4 inhibition raises domperidone levels; QT risk.",
+   "action": "Do not use together.",
+   "sourceWording": "Potent CYP3A4 inhibitors ... systemic azole antifungals",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Potent CYP3A4 inhibitors ( regardless of their QT prolonging effects ), i.e.: protease inhibitors systemic azole antifungals"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:interaction:diltiazem",
+   "kind": "interaction",
+   "level": "avoid",
+   "med": "domperidone",
+   "other": "diltiazem",
+   "effect": "qt-prolongation",
+   "concern": "Domperidone + diltiazem (moderate CYP3A4 inhibitor)",
+   "consequence": "Raised domperidone levels; QT risk.",
+   "action": "Not recommended.",
+   "sourceWording": "Concomitant use of the following substances is not recommended",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Concomitant use of the following substances is not recommended Moderate CYP3A4 inhibitors i.e. diltiazem, verapamil and some macrolides."
+    }
+   ]
+  },
+  {
+   "id": "domperidone:interaction:verapamil",
+   "kind": "interaction",
+   "level": "avoid",
+   "med": "domperidone",
+   "other": "verapamil",
+   "effect": "qt-prolongation",
+   "concern": "Domperidone + verapamil (moderate CYP3A4 inhibitor)",
+   "consequence": "Raised domperidone levels; QT risk.",
+   "action": "Not recommended.",
+   "sourceWording": "Concomitant use of the following substances is not recommended",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Concomitant use of the following substances is not recommended Moderate CYP3A4 inhibitors i.e. diltiazem, verapamil and some macrolides."
+    }
+   ]
+  },
+  {
+   "id": "domperidone:interaction:azithromycin",
+   "kind": "interaction",
+   "level": "caution",
+   "med": "domperidone",
+   "other": "azithromycin",
+   "effect": "qt-prolongation",
+   "concern": "Domperidone + azithromycin",
+   "consequence": "Macrolide involved in QT-interval prolongation.",
+   "action": "Use with caution.",
+   "sourceWording": "Concomitant use of the following substances requires caution in use",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Caution with bradycardia and hypokalaemia-inducing drugs, as well as with the following macrolides involved in QT-interval prolongation: azithromycin and roxithromycin"
+    }
+   ]
+  },
+  {
+   "id": "domperidone:interaction:antacid",
+   "kind": "interaction",
+   "level": "avoid",
+   "med": "domperidone",
+   "other": "group:antacid",
+   "formulations": [
+    "domperidone-susp"
+   ],
+   "effect": "reduced-absorption",
+   "concern": "Domperidone suspension taken at the same time as an antacid",
+   "consequence": "Lower oral bioavailability of domperidone.",
+   "action": "Do not take at the same time: domperidone before meals, antacid after meals.",
+   "sourceWording": "should not be taken simultaneously",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Antacids or antisecretory agents should not be taken simultaneously with oral formulations of domperidone as they lower the oral bioavailability of domperidone."
+    },
+    {
+     "s": "emc-3188",
+     "q": "Domperidone should be taken before meals and antacids or antisecretory agents after meals."
+    }
+   ]
+  },
+  {
+   "id": "domperidone:interaction:ppi",
+   "kind": "interaction",
+   "level": "avoid",
+   "med": "domperidone",
+   "other": "group:ppi",
+   "formulations": [
+    "domperidone-susp"
+   ],
+   "effect": "reduced-absorption",
+   "concern": "Domperidone suspension taken at the same time as an antisecretory (PPI)",
+   "consequence": "Lower oral bioavailability of domperidone.",
+   "action": "Do not take at the same time: domperidone before meals, antisecretory after meals.",
+   "sourceWording": "should not be taken simultaneously",
+   "src": [
+    {
+     "s": "emc-3188",
+     "q": "Antacids or antisecretory agents should not be taken simultaneously with oral formulations of domperidone as they lower the oral bioavailability of domperidone."
+    },
+    {
+     "s": "emc-3188",
+     "q": "Domperidone should be taken before meals and antacids or antisecretory agents after meals."
+    }
+   ]
+  }
+ ]
+}

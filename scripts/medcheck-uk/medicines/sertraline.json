@@ -3,7 +3,7 @@
   "name": "Sertraline",
   "ingredients": ["sertraline"],
   "className": "Selective serotonin reuptake inhibitor (SSRI)",
-  "groups": ["ssri", "serotonergic"],
+  "groups": ["ssri", "serotonergic", "cyp2d6-inhibitor"],
   "searchTerms": ["sertraline", "sertraline hydrochloride"],
   "formulations": [
     {
@@ -450,6 +450,147 @@
       ] },
     { "id": "sertraline:interaction:antidiabetic", "kind": "interaction", "level": "info", "med": "sertraline", "other": "group:oral-antidiabetic",
       "concern": "Sertraline + antidiabetic medicine", "consequence": "SSRIs may alter glycaemic control.", "action": "Oral hypoglycaemic/insulin dose may need adjustment.", "sourceWording": "may need to be adjusted",
-      "src": [{ "s": "emc-1070", "q": "In patients with diabetes, treatment with an SSRI may alter glycaemic control. Insulin and/or oral hypoglycaemic dosage may need to be adjusted." }] }
+      "src": [{ "s": "emc-1070", "q": "In patients with diabetes, treatment with an SSRI may alter glycaemic control. Insulin and/or oral hypoglycaemic dosage may need to be adjusted." }] },
+    {
+      "id": "sertraline:interaction:tricyclic-antidepressant",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "sertraline",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "bleeding",
+      "concern": "Sertraline + tricyclic antidepressant (e.g. amitriptyline)",
+      "consequence": "Increased bleeding risk; sertraline (CYP2D6 inhibitor) may also raise tricyclic levels, especially at higher sertraline doses.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution is advised",
+      "src": [
+        {
+          "s": "emc-1070",
+          "q": "Caution is advised in patients taking SSRIs, particularly in concomitant use with drugs known to affect platelet function (e.g. anticoagulants, atypical antipsychotics and phenothiazines, most tricyclic antidepressants"
+        },
+        {
+          "s": "emc-1070",
+          "q": "Clinical relevant interactions may occur with other CYP 2D6 substrates with a narrow therapeutic index like class 1C antiarrhythmics such as propafenone and flecainide, TCAs and typical antipsychotics, especially at higher sertraline dose levels."
+        }
+      ]
+    },
+    {
+      "id": "sertraline:interaction:insulin",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sertraline",
+      "other": "group:insulin",
+      "concern": "Sertraline + antidiabetic medicine",
+      "consequence": "SSRIs may alter glycaemic control.",
+      "action": "Insulin dose may need adjusting.",
+      "sourceWording": "may need to be adjusted",
+      "src": [
+        {
+          "s": "emc-1070",
+          "q": "In patients with diabetes, treatment with an SSRI may alter glycaemic control. Insulin and/or oral hypoglycaemic dosage may need to be adjusted."
+        }
+      ]
+    },
+    {
+      "id": "sertraline:interaction:fluconazole",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sertraline",
+      "other": "fluconazole",
+      "concern": "Sertraline + fluconazole (moderate CYP3A4 inhibitor)",
+      "consequence": "An increase in sertraline exposure cannot be excluded.",
+      "action": "No specific action stated for moderate inhibitors (avoid applies to potent CYP3A4 inhibitors).",
+      "sourceWording": "This also concerns moderate CYP3A4 inhibitors",
+      "src": [
+        {
+          "s": "emc-1070",
+          "q": "This also concerns moderate CYP3A4 inhibitors, e.g. aprepitant, erythromycin, fluconazole, verapamil and diltiazem."
+        }
+      ]
+    },
+    {
+      "id": "sertraline:interaction:verapamil",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sertraline",
+      "other": "verapamil",
+      "concern": "Sertraline + verapamil (moderate CYP3A4 inhibitor)",
+      "consequence": "An increase in sertraline exposure cannot be excluded.",
+      "action": "No specific action stated for moderate inhibitors (avoid applies to potent CYP3A4 inhibitors).",
+      "sourceWording": "This also concerns moderate CYP3A4 inhibitors",
+      "src": [
+        {
+          "s": "emc-1070",
+          "q": "This also concerns moderate CYP3A4 inhibitors, e.g. aprepitant, erythromycin, fluconazole, verapamil and diltiazem."
+        }
+      ]
+    },
+    {
+      "id": "sertraline:interaction:diltiazem",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sertraline",
+      "other": "diltiazem",
+      "concern": "Sertraline + diltiazem (moderate CYP3A4 inhibitor)",
+      "consequence": "An increase in sertraline exposure cannot be excluded.",
+      "action": "No specific action stated for moderate inhibitors (avoid applies to potent CYP3A4 inhibitors).",
+      "sourceWording": "This also concerns moderate CYP3A4 inhibitors",
+      "src": [
+        {
+          "s": "emc-1070",
+          "q": "This also concerns moderate CYP3A4 inhibitors, e.g. aprepitant, erythromycin, fluconazole, verapamil and diltiazem."
+        }
+      ]
+    },
+    {
+      "id": "sertraline:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sertraline",
+      "other": "carbamazepine",
+      "concern": "Sertraline + carbamazepine (CYP3A4 inducer)",
+      "consequence": "May reduce sertraline levels.",
+      "action": "No specific action stated; be aware of possible reduced effect.",
+      "sourceWording": "may cause a reduction of sertraline plasma levels",
+      "src": [
+        {
+          "s": "emc-1070",
+          "q": "It cannot be excluded that CYP3A4 inducers, e.g. phenobarbital, carbamazepine, St. John's Wort and rifampicin, may cause a reduction of sertraline plasma levels."
+        }
+      ]
+    },
+    {
+      "id": "sertraline:interaction:pantoprazole",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sertraline",
+      "other": "pantoprazole",
+      "concern": "Sertraline + pantoprazole (strong CYP2C19 inhibitor)",
+      "consequence": "An interaction (higher sertraline levels) cannot be excluded.",
+      "action": "No specific action stated.",
+      "sourceWording": "cannot be excluded",
+      "src": [
+        {
+          "s": "emc-1070",
+          "q": "Interaction with strong inhibitors of CYP2C19, e.g. omeprazole, lansoprazole, pantoprazole, rabeprazole, fluoxetine, fluvoxamine cannot be excluded."
+        }
+      ]
+    },
+    {
+      "id": "sertraline:interaction:fluoxetine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "sertraline",
+      "other": "fluoxetine",
+      "concern": "Sertraline + fluoxetine (strong CYP2C19 inhibitor)",
+      "consequence": "An interaction (higher sertraline levels) cannot be excluded.",
+      "action": "No specific action stated.",
+      "sourceWording": "cannot be excluded",
+      "src": [
+        {
+          "s": "emc-1070",
+          "q": "Interaction with strong inhibitors of CYP2C19, e.g. omeprazole, lansoprazole, pantoprazole, rabeprazole, fluoxetine, fluvoxamine cannot be excluded."
+        }
+      ]
+    }
   ]
 }

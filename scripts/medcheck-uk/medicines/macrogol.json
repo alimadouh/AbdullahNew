@@ -1,0 +1,296 @@
+{
+  "id": "macrogol",
+  "name": "Macrogol 3350 (with electrolytes)",
+  "ingredients": ["macrogol"],
+  "className": "Osmotic laxative",
+  "groups": ["laxative"],
+  "searchTerms": ["macrogol 3350", "polyethylene glycol 3350", "PEG 3350", "macrogol with electrolytes"],
+  "formulations": [
+    {
+      "id": "macrogol-13.7g-sachet",
+      "label": "Powder for oral solution 13.7 g sachet",
+      "route": "oral",
+      "strengths": "Macrogol 3350 13.125 g with sodium chloride, sodium bicarbonate and potassium chloride per sachet",
+      "release": "n/a",
+      "note": "High in sodium: 186.87 mg (8.125 mmol) per dose.",
+      "src": [
+        { "s": "emc-1025", "q": "Macrogol 3350 Sodium chloride Sodium bicarbonate Potassium chloride 13.125 g 0.3507 g 0.1785 g 0.0466 g" },
+        { "s": "emc-1025", "q": "This medicinal product contains 186.87mg (8.125 mmol) sodium per dose" }
+      ],
+      "sourceIds": ["emc-1025"]
+    },
+    {
+      "id": "macrogol-6.9g-paed-sachet",
+      "label": "Paediatric powder for oral solution 6.9 g sachet",
+      "route": "oral",
+      "strengths": "Macrogol 3350 6.563 g with sodium chloride, sodium hydrogen carbonate and potassium chloride per sachet",
+      "release": "n/a",
+      "note": "For children 1 to 11 years. Contains 93.4 mg (4.062 mmol) sodium per sachet.",
+      "src": [
+        { "s": "emc-52", "q": "Macrogol 3350 6.563 g Sodium Chloride 0.1754 g Sodium Hydrogen Carbonate 0.0893 g Potassium Chloride 0.0251 g" },
+        { "s": "emc-52", "q": "contains 93.4 mg (4.062 mmol) sodium (main component of cooking/table salt) per sachet" }
+      ],
+      "sourceIds": ["emc-52"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": {
+      "items": [
+        { "t": "Chronic constipation; faecal impaction (refractory constipation with faecal loading of rectum and/or colon).", "tag": "13.7 g sachet", "formulations": ["macrogol-13.7g-sachet"], "src": [{ "s": "emc-1025", "q": "For the treatment of chronic constipation. Movicol is also effective in resolving faecal impaction" }] },
+        { "t": "Chronic constipation in children 1 to 11 years; faecal impaction in children from 5 years.", "tag": "Paediatric 6.9 g sachet", "formulations": ["macrogol-6.9g-paed-sachet"], "src": [{ "s": "emc-52", "q": "For the treatment of chronic constipation in children 1 to 11 years of age. For the treatment of faecal impaction in children from the age of 5 years" }] }
+      ]
+    },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions stated in the UK SmPCs (adult and paediatric sachets). BNF not accessed." },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults, adolescents and older people: 1-3 sachets daily in divided doses; for extended use 1-2 sachets daily. A course does not normally exceed 2 weeks (can be repeated).",
+          "tag": "Chronic constipation",
+          "formulations": ["macrogol-13.7g-sachet"],
+          "src": [
+            { "s": "emc-1025", "q": "Adults, adolescents and older people: 1 - 3 sachets daily in divided doses, according to individual response." },
+            { "s": "emc-1025", "q": "For extended use, the dose can be adjusted down to 1 or 2 sachets daily." },
+            { "s": "emc-1025", "q": "A course of treatment for constipation with Movicol does not normally exceed 2 weeks, although this can be repeated if required." }
+          ]
+        },
+        {
+          "t": "Adults, adolescents and older people: 8 sachets daily, all taken within 6 hours; a course does not normally exceed 3 days.",
+          "tag": "Faecal impaction",
+          "formulations": ["macrogol-13.7g-sachet"],
+          "src": [
+            { "s": "emc-1025", "q": "Adults, adolescents and the older people: 8 sachets daily, all of which should be consumed within a 6 hour period." },
+            { "s": "emc-1025", "q": "A course of treatment for faecal impaction with Movicol does not normally exceed 3 days." }
+          ]
+        },
+        {
+          "t": "Impaired cardiovascular function: for faecal impaction, divide the dose so that no more than two sachets are taken in any one hour.",
+          "tag": "Faecal impaction: cardiovascular impairment",
+          "formulations": ["macrogol-13.7g-sachet"],
+          "src": [{ "s": "emc-1025", "q": "For the treatment of faecal impaction the dose should be divided so that no more than two sachets are taken in any one hour." }]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        { "t": "13.7 g sachet: not recommended under 12 years (paediatric product available).", "formulations": ["macrogol-13.7g-sachet"], "src": [{ "s": "emc-1025", "q": "Children (below 12 years old): Not recommended. Alternative products are available for children." }] },
+        {
+          "t": "Chronic constipation: start 1 sachet daily (1-6 years) or 2 sachets daily (7-11 years); adjust every second day to produce regular soft stools. Maximum 2 sachets/day under 2 years; usually not more than 4 sachets/day at 2-11 years.",
+          "tag": "Chronic constipation (6.9 g sachet)",
+          "formulations": ["macrogol-6.9g-paed-sachet"],
+          "src": [
+            { "s": "emc-52", "q": "The usual starting dose is 1 sachet daily for children aged 1 to 6 years, and 2 sachets daily for children aged 7 to 11 years." },
+            { "s": "emc-52", "q": "For children below 2 years of age, the maximum recommended dose should not exceed 2 sachets a day." },
+            { "s": "emc-52", "q": "For children aged 2 to 11 years, the maximum recommended dose needed does not normally exceed 4 sachets a day." }
+          ]
+        },
+        {
+          "t": "Faecal impaction, 5-11 years: escalating course up to 7 days (day 1: 4 sachets, day 2: 6, day 3: 8, day 4: 10, days 5-7: 12), taken in divided doses within 12 hours; stop once disimpaction occurs.",
+          "tag": "Faecal impaction (6.9 g sachet)",
+          "formulations": ["macrogol-6.9g-paed-sachet"],
+          "src": [
+            { "s": "emc-52", "q": "5 - 11 4 6 8 10 12 12 12" },
+            { "s": "emc-52", "q": "The daily number of sachets should be taken in divided doses, all consumed within a 12 hour period." },
+            { "s": "emc-52", "q": "The above dosage regimen should be stopped once disimpaction has occurred." }
+          ]
+        },
+        {
+          "t": "Not recommended under 1 year for chronic constipation, or under 5 years for faecal impaction. From 12 years use the adult 13.7 g product.",
+          "formulations": ["macrogol-6.9g-paed-sachet"],
+          "src": [
+            { "s": "emc-52", "q": "Movicol Paediatric Plain is not recommended for children below 5 years of age for the treatment of faecal impaction, or in children below 1 year of age for the treatment of chronic constipation." },
+            { "s": "emc-52", "q": "For patients of 12 years and older it is recommended to use Movicol." }
+          ]
+        },
+        {
+          "t": "Faecal impaction is not recommended in children with impaired cardiovascular or renal function (no clinical data).",
+          "formulations": ["macrogol-6.9g-paed-sachet"],
+          "src": [
+            { "s": "emc-52", "q": "Therefore Movicol Paediatric Plain is not recommended for treating faecal impaction in children with impaired cardiovascular function." },
+            { "s": "emc-52", "q": "Therefore Movicol Paediatric Plain is not recommended for treating faecal impaction in children with impaired renal function." }
+          ]
+        },
+        {
+          "t": "Chronic constipation in children needs prolonged treatment (at least 6-12 months), but safety and efficacy are proven only up to 3 months. Stop gradually; resume if constipation recurs.",
+          "formulations": ["macrogol-6.9g-paed-sachet"],
+          "detail": true,
+          "src": [
+            { "s": "emc-52", "q": "Treatment of children with chronic constipation needs to be for a prolonged period (at least 6 - 12 months)." },
+            { "s": "emc-52", "q": "However, safety and efficacy of Movicol Paediatric Plain has only been proved for a period of up to three months." },
+            { "s": "emc-52", "q": "Treatment should be stopped gradually and resumed if constipation recurs." }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        { "t": "Intestinal perforation or obstruction (structural or functional gut wall disorder), ileus.", "src": [{ "s": "emc-1025", "q": "Intestinal perforation or obstruction due to structural or functional disorder of the gut wall, ileus" }, { "s": "emc-52", "q": "Intestinal perforation or obstruction due to structural or functional disorder of the gut wall, ileus" }] },
+        { "t": "Severe inflammatory bowel conditions such as Crohn's disease, ulcerative colitis and toxic megacolon.", "src": [{ "s": "emc-1025", "q": "severe inflammatory conditions of the intestinal tract, such as Crohn's disease and ulcerative colitis and toxic megacolon." }] },
+        { "t": "Hypersensitivity to the active substances (13.7 g sachet: also any excipient).", "src": [{ "s": "emc-1025", "q": "Hypersensitivity to the active substances or to any of the excipients listed in section 6.1." }, { "s": "emc-52", "q": "Hypersensitivity to the active substances." }] }
+      ]
+    },
+    "cautions": {
+      "items": [
+        { "t": "Symptoms of fluid/electrolyte shift (oedema, shortness of breath, increasing fatigue, dehydration, cardiac failure): stop immediately, measure electrolytes and treat.", "src": [{ "s": "emc-1025", "q": "Movicol should be stopped immediately and electrolytes measured, and any abnormality should be treated appropriately." }, { "s": "emc-1025", "q": "(e.g. oedema, shortness of breath, increasing fatigue, dehydration, cardiac failure)" }] },
+        { "t": "The fluid in the reconstituted solution does not replace regular fluid intake; maintain adequate fluids.", "src": [{ "s": "emc-1025", "q": "does not replace regular fluid intake and adequate fluid intake must be maintained." }] },
+        { "t": "Confirm faecal impaction by physical or radiological examination of abdomen and rectum.", "detail": true, "src": [{ "s": "emc-1025", "q": "Diagnosis of impaction/faecal loading of the rectum should be confirmed by physical or radiological examination of the abdomen and rectum." }] },
+        { "t": "High in sodium: take into account for people on a low salt diet.", "formulations": ["macrogol-13.7g-sachet"], "src": [{ "s": "emc-1025", "q": "Movicol is considered high in sodium. This should be particularly taken into account for those on a low salt diet." }] },
+        { "t": "Paediatric high-dose impaction regimen: give with caution if impaired gag reflex, reflux oesophagitis or reduced consciousness.", "formulations": ["macrogol-6.9g-paed-sachet"], "src": [{ "s": "emc-52", "q": "When used in high doses to treat faecal impaction this medicinal product should be administered with caution to patients with impaired gag reflex, reflux oesophagitis or diminished levels of consciousness." }] },
+        { "t": "Dysphagia: avoid directly mixing macrogol with starch-based thickeners (the mixture becomes thin, raising aspiration risk).", "src": [{ "s": "mhra-dsu-peg-starch-thickeners-2021", "q": "avoid directly mixing together PEG laxatives and starch-based thickeners, especially in patients with dysphagia who are considered at risk of aspiration" }] }
+      ]
+    },
+    "interactions": {
+      "items": [
+        { "t": "Absorption of other medicines may be transiently reduced; isolated reports of reduced efficacy (e.g. antiepileptics). Do not take other oral medicines from one hour before until one hour after macrogol.", "src": [{ "s": "emc-1025", "q": "There have been isolated reports of decreased efficacy with some concomitantly administered medicinal products, e.g. anti-epileptics." }, { "s": "emc-1025", "q": "Therefore, other medicines should not be taken orally for one hour before, during and for one hour after taking Movicol." }] },
+        { "t": "Large volumes (faecal impaction): solid oral medicines taken within one hour may be flushed through and not absorbed.", "formulations": ["macrogol-6.9g-paed-sachet"], "detail": true, "src": [{ "s": "emc-52", "q": "Medicinal products in solid dose form taken within one hour of administration of large volumes of macrogol preparations (as used when treating faecal impaction) may be flushed from the gastrointestinal tract and not absorbed." }] },
+        { "t": "Starch-based food thickeners: macrogol counteracts the thickening effect.", "src": [{ "s": "emc-1025", "q": "The Macrogol ingredient counteracts the thickening effect of starch, effectively liquefying preparations that need to remain thick for people with swallowing problems." }] }
+      ]
+    },
+    "renal": {
+      "items": [
+        { "t": "Adult product: no dose change for constipation or faecal impaction.", "formulations": ["macrogol-13.7g-sachet"], "src": [{ "s": "emc-1025", "q": "Patients with renal insufficiency: No dosage change is necessary for treatment of either constipation or faecal impaction." }] },
+        { "t": "Paediatric product: not recommended for faecal impaction in children with impaired renal function (no data).", "formulations": ["macrogol-6.9g-paed-sachet"], "src": [{ "s": "emc-52", "q": "Therefore Movicol Paediatric Plain is not recommended for treating faecal impaction in children with impaired renal function." }] }
+      ]
+    },
+    "hepatic": { "status": "not-stated", "note": "No hepatic impairment advice in the UK SmPCs (adult and paediatric sachets)." },
+    "pregnancy": {
+      "items": [
+        { "t": "Can be used during pregnancy (negligible systemic exposure; limited human data).", "tag": "SmPC", "src": [{ "s": "emc-1025", "q": "Movicol can be used during pregnancy." }] },
+        { "t": "BUMPS: osmotic laxatives such as macrogols are usually tried after bulk-forming laxatives; they are not absorbed and will not reach the baby.", "tag": "BUMPS", "src": [{ "s": "bumps-constipation", "q": "increase the amount of water in poo and are normally tried next." }, { "s": "bumps-constipation", "q": "They are not absorbed into the body and therefore will not reach the baby." }] }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        { "t": "Can be used during breastfeeding.", "tag": "SmPC", "src": [{ "s": "emc-1025", "q": "Movicol can be used during breast-feeding." }] },
+        { "t": "SPS: can be used during breastfeeding; as a precaution monitor the infant for diarrhoea, vomiting or irritability.", "tag": "SPS", "src": [{ "s": "sps-laxatives-breastfeeding", "q": "Macrogol 3350 can be used during breastfeeding." }, { "s": "sps-laxatives-breastfeeding", "q": "As a precaution monitor the infant for diarrhoea, vomiting or irritability." }] }
+      ]
+    },
+    "reproductive": {
+      "items": [{ "t": "No human fertility data; no effect on fertility in rat studies.", "src": [{ "s": "emc-1025", "q": "There are no data on the effects of Movicol on fertility in humans." }] }]
+    },
+    "adverseCommon": {
+      "items": [
+        { "t": "GI effects are most common (abdominal pain, diarrhoea, vomiting, nausea, dyspepsia, distension, borborygmi, flatulence, anorectal discomfort). Mild diarrhoea usually responds to dose reduction.", "src": [{ "s": "emc-1025", "q": "Reactions related to the gastrointestinal tract occur most commonly." }, { "s": "emc-1025", "q": "Mild diarrhoea usually responds to dose reduction." }] },
+        { "t": "Children (paediatric product): very common abdominal pain, borborygmi; common diarrhoea, vomiting, nausea, anorectal discomfort.", "formulations": ["macrogol-6.9g-paed-sachet"], "src": [{ "s": "emc-52", "q": "Very common Abdominal pain, borborygmi. Common Diarrhoea, vomiting, nausea and anorectal discomfort." }] },
+        { "t": "Headache and peripheral oedema reported (frequency not known).", "detail": true, "src": [{ "s": "emc-1025", "q": "Nervous system disorders Headache." }] }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        { "t": "Allergic reactions including anaphylaxis and angioedema.", "src": [{ "s": "emc-1025", "q": "Allergic reactions, including anaphylactic reactions" }, { "s": "emc-1025", "q": "Allergic skin reactions including angioedema, urticaria, pruritus, rash, erythema." }] },
+        { "t": "Electrolyte disturbances, particularly hyperkalaemia and hypokalaemia; stop if signs of fluid/electrolyte shift and check electrolytes.", "src": [{ "s": "emc-1025", "q": "Electrolyte disturbances, particularly hyperkalaemia and hypokalaemia." }, { "s": "emc-1025", "q": "Movicol should be stopped immediately and electrolytes measured" }] }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        { "t": "If oedema, breathlessness, increasing fatigue, dehydration or cardiac failure develop: stop and measure electrolytes.", "tag": "stop", "src": [{ "s": "emc-1025", "q": "Movicol should be stopped immediately and electrolytes measured, and any abnormality should be treated appropriately." }] }
+      ]
+    },
+    "administration": {
+      "items": [
+        { "t": "Dissolve each 13.7 g sachet in 125 ml water (impaction: 8 sachets may be dissolved in 1 litre).", "formulations": ["macrogol-13.7g-sachet"], "src": [{ "s": "emc-1025", "q": "Each sachet should be dissolved in 125 ml water. For use in faecal impaction 8 sachets may be dissolved in 1 litre of water." }] },
+        { "t": "Dissolve each 6.9 g sachet in 62.5 ml (quarter of a glass) of water; may be made up in advance and kept covered in the fridge for up to 6 hours.", "formulations": ["macrogol-6.9g-paed-sachet"], "src": [{ "s": "emc-52", "q": "Each sachet should be dissolved in 62.5 ml (quarter of a glass) of water." }, { "s": "emc-52", "q": "The correct number of sachets may be reconstituted in advance and kept covered and refrigerated for up to 6 hours." }] },
+        { "t": "Separate other oral medicines by one hour before and after.", "src": [{ "s": "emc-1025", "q": "other medicines should not be taken orally for one hour before, during and for one hour after taking Movicol." }] }
+      ]
+    },
+    "counselling": {
+      "items": [
+        { "t": "Keep drinking enough fluids; the sachet water does not count toward normal intake.", "src": [{ "s": "emc-1025", "q": "does not replace regular fluid intake and adequate fluid intake must be maintained." }] },
+        { "t": "Do not mix with starch-based thickeners.", "src": [{ "s": "mhra-dsu-peg-starch-thickeners-2021", "q": "avoid directly mixing together PEG laxatives and starch-based thickeners" }] }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "macrogol:allergy:own", "kind": "allergy", "level": "contraindicated", "med": "macrogol", "allergen": ["macrogol"],
+      "concern": "Hypersensitivity to macrogol or the other active substances", "consequence": "Allergic reactions including anaphylaxis.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications ... Hypersensitivity to the active substances",
+      "src": [{ "s": "emc-1025", "q": "Hypersensitivity to the active substances or to any of the excipients listed in section 6.1." }, { "s": "emc-52", "q": "Hypersensitivity to the active substances." }]
+    },
+    {
+      "id": "macrogol:condition:gi-obstruction", "kind": "condition", "level": "contraindicated", "med": "macrogol", "condition": "paralytic-ileus-gi-obstruction",
+      "concern": "Intestinal obstruction or ileus", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications",
+      "src": [{ "s": "emc-1025", "q": "Intestinal perforation or obstruction due to structural or functional disorder of the gut wall, ileus" }]
+    },
+    {
+      "id": "macrogol:condition:gi-perforation", "kind": "condition", "level": "contraindicated", "med": "macrogol", "condition": "gi-perforation-risk",
+      "concern": "Intestinal perforation", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications",
+      "src": [{ "s": "emc-1025", "q": "Intestinal perforation or obstruction due to structural or functional disorder of the gut wall, ileus" }]
+    },
+    {
+      "id": "macrogol:condition:ibd", "kind": "condition", "level": "contraindicated", "med": "macrogol", "condition": "inflammatory-bowel-disease",
+      "concern": "Severe inflammatory bowel condition (Crohn's disease, ulcerative colitis)", "consequence": "Listed as a contraindication when severe.", "action": "Do not use in severe inflammatory conditions of the intestinal tract (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications ... severe inflammatory conditions of the intestinal tract",
+      "src": [{ "s": "emc-1025", "q": "severe inflammatory conditions of the intestinal tract, such as Crohn's disease and ulcerative colitis and toxic megacolon." }]
+    },
+    {
+      "id": "macrogol:condition:toxic-megacolon", "kind": "condition", "level": "contraindicated", "med": "macrogol", "condition": "toxic-megacolon",
+      "concern": "Toxic megacolon", "consequence": "Listed as a contraindication.", "action": "Do not use (SmPC 4.3).",
+      "sourceWording": "4.3 Contraindications",
+      "src": [{ "s": "emc-1025", "q": "severe inflammatory conditions of the intestinal tract, such as Crohn's disease and ulcerative colitis and toxic megacolon." }]
+    },
+    {
+      "id": "macrogol:condition:cardiac-impaction", "kind": "condition", "level": "dose", "med": "macrogol", "formulations": ["macrogol-13.7g-sachet"], "condition": "cardiac-disease",
+      "concern": "Impaired cardiovascular function (faecal impaction regimen)", "consequence": "High-volume dosing.", "action": "For faecal impaction, divide the dose so no more than two sachets are taken in any one hour.",
+      "sourceWording": "no more than two sachets are taken in any one hour",
+      "src": [{ "s": "emc-1025", "q": "For the treatment of faecal impaction the dose should be divided so that no more than two sachets are taken in any one hour." }]
+    },
+    {
+      "id": "macrogol:condition:cardiac-impaction-child", "kind": "condition", "level": "avoid", "med": "macrogol", "formulations": ["macrogol-6.9g-paed-sachet"], "condition": "cardiac-disease",
+      "concern": "Child with impaired cardiovascular function (faecal impaction)", "consequence": "No clinical data.", "action": "Not recommended for treating faecal impaction in these children.",
+      "sourceWording": "not recommended for treating faecal impaction",
+      "src": [{ "s": "emc-52", "q": "Therefore Movicol Paediatric Plain is not recommended for treating faecal impaction in children with impaired cardiovascular function." }]
+    },
+    {
+      "id": "macrogol:condition:renal-impaction-child", "kind": "condition", "level": "avoid", "med": "macrogol", "formulations": ["macrogol-6.9g-paed-sachet"], "condition": "renal-impairment",
+      "concern": "Child with impaired renal function (faecal impaction)", "consequence": "No clinical data.", "action": "Not recommended for treating faecal impaction in these children.",
+      "sourceWording": "not recommended for treating faecal impaction",
+      "src": [{ "s": "emc-52", "q": "Therefore Movicol Paediatric Plain is not recommended for treating faecal impaction in children with impaired renal function." }]
+    },
+    {
+      "id": "macrogol:condition:dysphagia-thickeners", "kind": "condition", "level": "avoid", "med": "macrogol", "condition": "swallowing-difficulty",
+      "concern": "Dysphagia: mixing with starch-based thickeners", "consequence": "Macrogol thins starch-thickened liquids, raising the risk of aspiration.", "action": "Avoid directly mixing macrogol with starch-based thickeners.",
+      "sourceWording": "avoid directly mixing together PEG laxatives and starch-based thickeners",
+      "src": [{ "s": "mhra-dsu-peg-starch-thickeners-2021", "q": "avoid directly mixing together PEG laxatives and starch-based thickeners, especially in patients with dysphagia who are considered at risk of aspiration" }, { "s": "emc-1025", "q": "In patients with swallowing problems, who need the addition of a thickener to solutions to enhance an appropriate intake, interactions should be considered" }]
+    },
+    {
+      "id": "macrogol:condition:dysphagia-high-dose-child", "kind": "condition", "level": "caution", "med": "macrogol", "formulations": ["macrogol-6.9g-paed-sachet"], "condition": "swallowing-difficulty",
+      "concern": "Impaired gag reflex, reflux oesophagitis or reduced consciousness (high-dose impaction regimen)", "consequence": "Large volumes in high-dose regimen.", "action": "Give with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [{ "s": "emc-52", "q": "When used in high doses to treat faecal impaction this medicinal product should be administered with caution to patients with impaired gag reflex, reflux oesophagitis or diminished levels of consciousness." }]
+    },
+    {
+      "id": "macrogol:age:adult-sachet-under-12", "kind": "age", "level": "avoid", "med": "macrogol", "formulations": ["macrogol-13.7g-sachet"], "age": { "minYears": 0, "maxYears": 12 },
+      "concern": "Child under 12 years (adult 13.7 g sachet)", "consequence": "Adult product not recommended in this age group.", "action": "Not recommended; use the paediatric product.",
+      "sourceWording": "Not recommended",
+      "src": [{ "s": "emc-1025", "q": "Children (below 12 years old): Not recommended. Alternative products are available for children." }]
+    },
+    {
+      "id": "macrogol:age:paed-under-1", "kind": "age", "level": "avoid", "med": "macrogol", "formulations": ["macrogol-6.9g-paed-sachet"], "age": { "minYears": 0, "maxYears": 1 },
+      "concern": "Infant under 1 year", "consequence": "Not recommended for chronic constipation below 1 year (and not for faecal impaction below 5 years).", "action": "Not recommended.",
+      "sourceWording": "not recommended ... in children below 1 year of age",
+      "src": [{ "s": "emc-52", "q": "Movicol Paediatric Plain is not recommended for children below 5 years of age for the treatment of faecal impaction, or in children below 1 year of age for the treatment of chronic constipation." }]
+    },
+    {
+      "id": "macrogol:interaction:antiepileptics", "kind": "interaction", "level": "caution", "med": "macrogol", "other": "group:antiepileptic", "effect": "reduced-absorption",
+      "concern": "Antiepileptics with macrogol", "consequence": "Isolated reports of decreased efficacy; absorption of other oral medicines may be transiently reduced.", "action": "Do not take other oral medicines from one hour before until one hour after macrogol.",
+      "sourceWording": "should not be taken orally for one hour before, during and for one hour after",
+      "src": [{ "s": "emc-1025", "q": "There have been isolated reports of decreased efficacy with some concomitantly administered medicinal products, e.g. anti-epileptics." }, { "s": "emc-1025", "q": "Therefore, other medicines should not be taken orally for one hour before, during and for one hour after taking Movicol." }]
+    },
+    {
+      "id": "macrogol:pregnancy", "kind": "pregnancy", "level": "info", "med": "macrogol",
+      "concern": "Pregnancy", "consequence": "No effects anticipated (negligible systemic exposure).", "action": "Can be used during pregnancy.",
+      "sourceWording": "can be used during pregnancy",
+      "src": [{ "s": "emc-1025", "q": "Movicol can be used during pregnancy." }]
+    },
+    {
+      "id": "macrogol:breastfeeding", "kind": "breastfeeding", "level": "info", "med": "macrogol",
+      "concern": "Breastfeeding", "consequence": "No effects on the breastfed infant anticipated.", "action": "Can be used during breastfeeding.",
+      "sourceWording": "can be used during breast-feeding",
+      "src": [{ "s": "emc-1025", "q": "Movicol can be used during breast-feeding." }, { "s": "sps-laxatives-breastfeeding", "q": "Macrogol 3350 can be used during breastfeeding." }]
+    }
+  ]
+}

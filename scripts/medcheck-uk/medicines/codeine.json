@@ -1058,6 +1058,119 @@
           "q": "Consider the use of a parenteral antiplatelet agent in acute coronary syndrome patients requiring co-administration of morphine or other opioid agonists."
         }
       ]
+    },
+    {
+      "id": "codeine:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "codeine",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "cns-respiratory-depression",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "The depressant effects of codeine may be enhanced.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may be enhanced by tricyclic antidepressants",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "The depressant effects of opioid analgesics may be enhanced by tricyclic antidepressants."
+        }
+      ]
+    },
+    {
+      "id": "codeine:interaction:maoi",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "codeine",
+      "other": "group:maoi",
+      "concern": "MAO inhibitors (now or within 2 weeks)",
+      "consequence": "Severe CNS excitation or depression seen with pethidine; a similar interaction with codeine is possible.",
+      "action": "Avoid while taking an MAOI and for 2 weeks after stopping; if essential, great care.",
+      "sourceWording": "the use of codeine should be avoided",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "the use of codeine should be avoided while the patient is taking MAOIs and for 2 weeks after MAOI discontinuation"
+        },
+        {
+          "s": "emc-2375",
+          "q": "great care should be taken in patients taking MAOIs or within 14 days of stopping MAOIs"
+        }
+      ]
+    },
+    {
+      "id": "codeine:interaction:sedating-antihistamine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "codeine",
+      "other": "group:sedating-antihistamine",
+      "effect": "cns-respiratory-depression",
+      "concern": "Sedating antihistamines",
+      "consequence": "Increased CNS depression, respiratory depression and/or hypotension.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "may cause increased CNS depression",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "concomitant administration of codeine and antihistamines with sedative properties may cause increased CNS depression and/or respiratory depression and/or hypotension"
+        }
+      ]
+    },
+    {
+      "id": "codeine:interaction:metoclopramide",
+      "kind": "interaction",
+      "level": "info",
+      "med": "codeine",
+      "other": "metoclopramide",
+      "concern": "Metoclopramide",
+      "consequence": "Codeine opposes the effect of metoclopramide on gut activity.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "codeine antagonises the effect",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "codeine antagonises the effect of cisapride, metoclopramide and domperidone on gastrointestinal activity"
+        }
+      ]
+    },
+    {
+      "id": "codeine:interaction:domperidone",
+      "kind": "interaction",
+      "level": "info",
+      "med": "codeine",
+      "other": "domperidone",
+      "concern": "Domperidone",
+      "consequence": "Codeine opposes the effect of domperidone on gut activity.",
+      "action": "No specific action stated in the SmPC.",
+      "sourceWording": "codeine antagonises the effect",
+      "src": [
+        {
+          "s": "emc-2375",
+          "q": "codeine antagonises the effect of cisapride, metoclopramide and domperidone on gastrointestinal activity"
+        }
+      ]
+    },
+    {
+      "id": "codeine:interaction:benzodiazepine",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "codeine",
+      "other": "group:benzodiazepine",
+      "effect": "cns-respiratory-depression",
+      "concern": "Benzodiazepines",
+      "consequence": "Risk of potentially fatal respiratory depression (MHRA).",
+      "action": "Only prescribe together if there is no alternative; lowest doses, shortest time.",
+      "sourceWording": "only prescribe benzodiazepines (or benzodiazepine-like drugs) and opioids together if there is no alternative",
+      "src": [
+        {
+          "s": "mhra-dsu-benzodiazepines-opioids-2020",
+          "q": "only prescribe benzodiazepines (or benzodiazepine-like drugs) and opioids together if there is no alternative"
+        },
+        {
+          "s": "emc-2375",
+          "q": "Anxiolytics and hypnotics: enhanced sedative effect."
+        }
+      ]
     }
   ]
 }

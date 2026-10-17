@@ -333,6 +333,65 @@
       ] },
     { "id": "omeprazole:interaction:diuretic", "kind": "interaction", "level": "monitor", "med": "omeprazole", "other": "group:diuretic",
       "concern": "Omeprazole (long-term) + diuretic", "consequence": "Additive risk of hypomagnesaemia.", "action": "Consider measuring magnesium before starting and periodically during treatment.", "sourceWording": "should consider measuring magnesium levels",
-      "src": [{ "s": "emc-1509", "q": "For patients expected to be on prolonged treatment or who take PPIs with digoxin or drugs that may cause hypomagnesaemia (e.g. diuretics), healthcare professionals should consider measuring magnesium levels before starting PPI treatment and periodically during treatment." }] }
+      "src": [{ "s": "emc-1509", "q": "For patients expected to be on prolonged treatment or who take PPIs with digoxin or drugs that may cause hypomagnesaemia (e.g. diuretics), healthcare professionals should consider measuring magnesium levels before starting PPI treatment and periodically during treatment." }] },
+    {
+      "id": "omeprazole:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "info",
+      "med": "omeprazole",
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "Omeprazole + CYP2C19 or CYP3A4 inhibitor",
+      "consequence": "May raise omeprazole levels.",
+      "action": "Omeprazole dose adjustment not generally required (consider in severe hepatic impairment with long-term treatment).",
+      "sourceWording": "adjustment of the omeprazole dose is not generally required",
+      "src": [
+        {
+          "s": "emc-1509",
+          "q": "active substances known to inhibit CYP2C19 or CYP3A4 (such as clarithromycin and voriconazole) may lead to increased omeprazole serum levels by decreasing omeprazole's rate of metabolism"
+        },
+        {
+          "s": "emc-1509",
+          "q": "As high doses of omeprazole have been well-tolerated adjustment of the omeprazole dose is not generally required."
+        }
+      ]
+    },
+    {
+      "id": "omeprazole:interaction:cyp2c19-inhibitor",
+      "kind": "interaction",
+      "level": "info",
+      "med": "omeprazole",
+      "other": "group:cyp2c19-inhibitor",
+      "concern": "Omeprazole + CYP2C19 or CYP3A4 inhibitor",
+      "consequence": "May raise omeprazole levels.",
+      "action": "Omeprazole dose adjustment not generally required (consider in severe hepatic impairment with long-term treatment).",
+      "sourceWording": "adjustment of the omeprazole dose is not generally required",
+      "src": [
+        {
+          "s": "emc-1509",
+          "q": "active substances known to inhibit CYP2C19 or CYP3A4 (such as clarithromycin and voriconazole) may lead to increased omeprazole serum levels by decreasing omeprazole's rate of metabolism"
+        },
+        {
+          "s": "emc-1509",
+          "q": "As high doses of omeprazole have been well-tolerated adjustment of the omeprazole dose is not generally required."
+        }
+      ]
+    },
+    {
+      "id": "omeprazole:interaction:carbamazepine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "omeprazole",
+      "other": "carbamazepine",
+      "concern": "Omeprazole + CYP3A4 inducer (carbamazepine)",
+      "consequence": "Inducers of CYP2C19 or CYP3A4 may lower omeprazole levels.",
+      "action": "No specific action stated; be aware of possible reduced effect.",
+      "sourceWording": "may lead to decreased omeprazole serum levels",
+      "src": [
+        {
+          "s": "emc-1509",
+          "q": "Active substances known to induce CYP2C19 or CYP3A4 or both (such as rifampicin and St John's wort) may lead to decreased omeprazole serum levels by increasing omeprazole's rate of metabolism."
+        }
+      ]
+    }
   ]
 }

@@ -844,6 +844,113 @@
           "q": "proton pump inhibitors (such as omeprazole and pantoprazole)"
         }
       ]
+    },
+    {
+      "id": "magnesium-glycerophosphate:interaction:tetracycline",
+      "kind": "interaction",
+      "med": "magnesium-glycerophosphate",
+      "level": "caution",
+      "other": "group:tetracycline",
+      "effect": "reduced-absorption",
+      "concern": "Magnesium with tetracyclines (e.g. doxycycline)",
+      "consequence": "Magnesium and tetracyclines may impair each other's absorption.",
+      "action": "If they must be used, separate doses by 2 to 3 hours or more.",
+      "sourceWording": "the doses must be separated by 2 to 3 hours or more",
+      "src": [
+        {
+          "s": "emc-2678",
+          "q": "if they must be used, the doses must be separated by 2 to 3 hours or more to prevent their admixture in the gut"
+        }
+      ]
+    },
+    {
+      "id": "magnesium-glycerophosphate:interaction:nitrofurantoin",
+      "kind": "interaction",
+      "med": "magnesium-glycerophosphate",
+      "level": "caution",
+      "other": "nitrofurantoin",
+      "effect": "reduced-absorption",
+      "concern": "Magnesium with nitrofurantoin",
+      "consequence": "Impaired absorption.",
+      "action": "Take magnesium 3 to 4 hours before or after nitrofurantoin.",
+      "sourceWording": "magnesium preparations should be taken 3 to 4 hours before or after",
+      "src": [
+        {
+          "s": "emc-2678",
+          "q": "Aminoquinolines, quinidine and quinidine derivatives, nitrofurantoin, penicillamine, iron, bisphosphonates"
+        },
+        {
+          "s": "emc-2678",
+          "q": "to avoid impairment of absorption, magnesium preparations should be taken 3 to 4 hours before or after the administration of those drugs"
+        }
+      ]
+    },
+    {
+      "id": "magnesium-glycerophosphate:interaction:loop-diuretic",
+      "kind": "interaction",
+      "med": "magnesium-glycerophosphate",
+      "level": "dose",
+      "other": "group:loop-diuretic",
+      "concern": "Loop diuretics (e.g. furosemide) increase magnesium losses",
+      "consequence": "Magnesium balance may be affected; replacement may be less effective.",
+      "action": "A dose adjustment of magnesium may be necessary; look for other electrolyte disturbances (hypokalaemia, hypocalcaemia).",
+      "sourceWording": "a dose adjustment of magnesium may be necessary",
+      "src": [
+        {
+          "s": "emc-2678",
+          "q": "Digoxin and loop diuretics are magnesiuretic drugs and may affect magnesium balance."
+        },
+        {
+          "s": "emc-2678",
+          "q": "Because of increased magnesium losses, a dose adjustment of magnesium may be necessary when taking the following substances"
+        },
+        {
+          "s": "emc-2678",
+          "q": "Diuretics (such as thiazide and furosemide)"
+        }
+      ]
+    },
+    {
+      "id": "magnesium-glycerophosphate:interaction:thiazide",
+      "kind": "interaction",
+      "med": "magnesium-glycerophosphate",
+      "level": "dose",
+      "other": "group:thiazide",
+      "concern": "Thiazide diuretics increase magnesium losses",
+      "consequence": "Magnesium replacement may be less effective.",
+      "action": "A dose adjustment of magnesium may be necessary; look for other electrolyte disturbances (hypokalaemia, hypocalcaemia).",
+      "sourceWording": "a dose adjustment of magnesium may be necessary",
+      "src": [
+        {
+          "s": "emc-2678",
+          "q": "Because of increased magnesium losses, a dose adjustment of magnesium may be necessary when taking the following substances"
+        },
+        {
+          "s": "emc-2678",
+          "q": "Diuretics (such as thiazide and furosemide)"
+        }
+      ]
+    },
+    {
+      "id": "magnesium-glycerophosphate:interaction:pantoprazole",
+      "kind": "interaction",
+      "med": "magnesium-glycerophosphate",
+      "level": "dose",
+      "other": "pantoprazole",
+      "concern": "Pantoprazole (PPIs) increase magnesium losses",
+      "consequence": "Magnesium replacement may be less effective.",
+      "action": "A dose adjustment of magnesium may be necessary.",
+      "sourceWording": "a dose adjustment of magnesium may be necessary",
+      "src": [
+        {
+          "s": "emc-2678",
+          "q": "Because of increased magnesium losses, a dose adjustment of magnesium may be necessary when taking the following substances"
+        },
+        {
+          "s": "emc-2678",
+          "q": "proton pump inhibitors (such as omeprazole and pantoprazole)"
+        }
+      ]
     }
   ]
 }

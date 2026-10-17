@@ -1,0 +1,1186 @@
+{
+  "id": "alginate-antacid",
+  "name": "Sodium alginate/sodium bicarbonate/calcium carbonate",
+  "ingredients": [
+    "alginate",
+    "sodium-bicarbonate",
+    "calcium"
+  ],
+  "className": "Alginate raft-forming preparation with antacids",
+  "groups": [
+    "antacid",
+    "calcium-preparation",
+    "polyvalent-cation"
+  ],
+  "searchTerms": [
+    "sodium alginate",
+    "alginate antacid",
+    "alginate raft",
+    "sodium alginate sodium bicarbonate calcium carbonate",
+    "sodium hydrogen carbonate"
+  ],
+  "formulations": [
+    {
+      "id": "alginate-antacid-susp-double",
+      "label": "Oral suspension (double-strength antacid)",
+      "route": "oral",
+      "strengths": "Sodium alginate 500 mg, sodium bicarbonate 213 mg, calcium carbonate 325 mg per 10 ml",
+      "release": "n/a",
+      "note": "Clinic product strength is not stated. UK products come in a standard strength and a double-strength (more calcium carbonate) version, which differ in sodium, calcium and contraindications. Check which one the clinic stocks.",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "Each 10 ml dose contains sodium alginate 500 mg, sodium bicarbonate 213 mg and calcium carbonate 325 mg."
+        }
+      ],
+      "sourceIds": [
+        "emc-5609"
+      ]
+    },
+    {
+      "id": "alginate-antacid-susp",
+      "label": "Oral suspension (standard)",
+      "route": "oral",
+      "strengths": "Sodium alginate 250 mg, sodium bicarbonate 133.5 mg, calcium carbonate 80 mg per 5 ml",
+      "release": "n/a",
+      "note": "Clinic product strength is not stated. UK products come in a standard strength and a double-strength (more calcium carbonate) version, which differ in sodium, calcium and contraindications. Check which one the clinic stocks.",
+      "src": [
+        {
+          "s": "emc-113",
+          "q": "contains 250mg sodium alginate, 133.5mg sodium bicarbonate and 80mg calcium carbonate per 5ml."
+        }
+      ],
+      "sourceIds": [
+        "emc-113"
+      ]
+    },
+    {
+      "id": "alginate-antacid-chew-double",
+      "label": "Chewable tablets (double-strength antacid)",
+      "route": "oral",
+      "strengths": "Sodium alginate 250 mg, sodium bicarbonate 106.5 mg, calcium carbonate 187.5 mg per tablet",
+      "release": "immediate",
+      "note": "Clinic product strength is not stated. UK products come in a standard strength and a double-strength (more calcium carbonate) version, which differ in sodium, calcium and contraindications. Check which one the clinic stocks.",
+      "src": [
+        {
+          "s": "emc-5329",
+          "q": "Each tablet contains sodium alginate 250 mg, sodium bicarbonate 106.5 mg and calcium carbonate 187.5 mg."
+        }
+      ],
+      "sourceIds": [
+        "emc-5329"
+      ]
+    },
+    {
+      "id": "alginate-antacid-chew",
+      "label": "Chewable tablets (standard)",
+      "route": "oral",
+      "strengths": "Sodium alginate 250 mg, sodium hydrogen carbonate 133.5 mg, calcium carbonate 80 mg per tablet",
+      "release": "immediate",
+      "note": "Clinic product strength is not stated. UK products come in a standard strength and a double-strength (more calcium carbonate) version, which differ in sodium, calcium and contraindications. Check which one the clinic stocks.",
+      "src": [
+        {
+          "s": "emc-4856",
+          "q": "Each tablet contains sodium alginate 250 mg, sodium hydrogen carbonate 133.5 mg and calcium carbonate 80 mg."
+        }
+      ],
+      "sourceIds": [
+        "emc-4856"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Symptoms of gastro-oesophageal reflux such as acid regurgitation, heartburn and indigestion, including after meals and in pregnancy.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Treatment of symptoms resulting from the reflux of acid, bile and pepsin into the oesophagus such as acid regurgitation, heartburn and indigestion"
+            },
+            {
+              "s": "emc-4856",
+              "q": "Treatment of symptoms of gastro-oesophageal reflux such as acid regurgitation, heartburn and indigestion (related to reflux)"
+            }
+          ]
+        },
+        {
+          "t": "Double-strength products also: symptoms of excess stomach acid (hyperacidity), and reflux symptoms during or after stopping acid-suppressing therapy.",
+          "formulations": [
+            "alginate-antacid-susp-double",
+            "alginate-antacid-chew-double"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "for symptoms of excess stomach acid (hyperacidity)"
+            },
+            {
+              "s": "emc-5609",
+              "q": "Can also be used to treat the symptoms of gastro-oesophageal reflux during concomitant treatment with or following withdrawal of acid suppressing therapy."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restrictions stated in the four UK SmPCs checked."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "10-20 ml after meals and at bedtime, up to four times a day.",
+          "tag": "Adults and children 12 years and over (double-strength suspension)",
+          "formulations": [
+            "alginate-antacid-susp-double"
+          ],
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Adults and children 12 years and over: 10-20 ml after meals and at bedtime, up to four times per day."
+            }
+          ]
+        },
+        {
+          "t": "10-20 ml after meals and at bedtime.",
+          "tag": "Adults and children over 12 years (standard suspension)",
+          "formulations": [
+            "alginate-antacid-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-113",
+              "q": "Adults and children over 12 years: 10-20ml after meals and at bedtime."
+            }
+          ]
+        },
+        {
+          "t": "2-4 tablets, chewed, after meals and at bedtime, up to four times a day.",
+          "tag": "Adults and children 12 years and over (double-strength tablets)",
+          "formulations": [
+            "alginate-antacid-chew-double"
+          ],
+          "src": [
+            {
+              "s": "emc-5329",
+              "q": "Two to four tablets after meals and at bedtime, up to four times per day."
+            }
+          ]
+        },
+        {
+          "t": "2-4 tablets, chewed, after meals and at bedtime.",
+          "tag": "Adults and children 12 years and over (standard tablets)",
+          "formulations": [
+            "alginate-antacid-chew"
+          ],
+          "src": [
+            {
+              "s": "emc-4856",
+              "q": "Two to four tablets after meals and at bedtime."
+            }
+          ]
+        },
+        {
+          "t": "Elderly and hepatic impairment: no dose change needed.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Elderly: No dose modifications necessary for this age group."
+            },
+            {
+              "s": "emc-5609",
+              "q": "Hepatic Impairment: No dose modification necessary."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Under 12 years: give only on medical advice.",
+          "formulations": [
+            "alginate-antacid-susp-double",
+            "alginate-antacid-chew-double",
+            "alginate-antacid-susp"
+          ],
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Children under 12 years: Should be given only on medical advice."
+            },
+            {
+              "s": "emc-113",
+              "q": "Children under 12 years: Should be given only on medical advice."
+            }
+          ]
+        },
+        {
+          "t": "Double-strength products: treatment of children under 12 years is not generally recommended, except on medical advice.",
+          "formulations": [
+            "alginate-antacid-susp-double",
+            "alginate-antacid-chew-double"
+          ],
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Treatment of children younger than 12 years of age is not generally recommended, except on medical advice."
+            },
+            {
+              "s": "emc-5329",
+              "q": "Treatment of children younger than 12 years of age is not generally recommended, except on medical advice."
+            }
+          ]
+        },
+        {
+          "t": "Standard tablets: dose given for adults and children 12 years and over only; no statement for younger children.",
+          "formulations": [
+            "alginate-antacid-chew"
+          ],
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-4856",
+              "q": "Adults and children 12 years and over: Two to four tablets after meals and at bedtime."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to sodium alginate, sodium bicarbonate, calcium carbonate or any excipient (suspensions: including parahydroxybenzoates).",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Hypersensitivity to sodium alginate, sodium bicarbonate, calcium carbonate, the esters of hydroxybenzoates (parabens) or to any of the excipients listed in section 6.1."
+            },
+            {
+              "s": "emc-4856",
+              "q": "contraindicated in patients with known or suspected hypersensitivity to the active substances or to any of the excipients"
+            }
+          ]
+        },
+        {
+          "t": "Double-strength suspension only: moderate or severe renal insufficiency. No eGFR/CrCl threshold given.",
+          "formulations": [
+            "alginate-antacid-susp-double"
+          ],
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "This product should not be used in patients with moderate or severe renal insufficiency"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "High in sodium: double-strength suspension 127.88 mg per 10 ml; standard suspension 285.2 mg (12.4 mmol) per 20 ml; double-strength tablets 223.56 mg (9.72 mmol) per 4 tablets; standard tablets 235 mg (11 mmol) per 4 tablets. Take into account on a low-salt diet (e.g. some cases of congestive heart failure and renal impairment).",
+          "tag": "Sodium content",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "This medicinal product contains 127.88 mg sodium per 10ml dose"
+            },
+            {
+              "s": "emc-113",
+              "q": "This medicinal product contains 285.2 mg (12.4 mmol) sodium per 20 ml dose"
+            },
+            {
+              "s": "emc-5329",
+              "q": "This medicinal product contains 223.56 mg (9.72 mmol) sodium per 4 tablet dose"
+            },
+            {
+              "s": "emc-4856",
+              "q": "This medicinal product contains 235 mg (11 mmol) of sodium per four-tablet dose"
+            },
+            {
+              "s": "emc-5609",
+              "q": "This product is considered high in sodium."
+            },
+            {
+              "s": "emc-5609",
+              "q": "This should be particularly taken into account for those on a low salt diet (e.g. in some cases of congestive heart failure and renal impairment)."
+            }
+          ]
+        },
+        {
+          "t": "Calcium: double-strength suspension 260 mg (6.5 mmol) calcium per 20 ml; double-strength tablets 300 mg (7.5 mmol) calcium per 4 tablets; standard suspension 160 mg calcium carbonate per 10 ml; standard tablets 320 mg calcium carbonate per 4 tablets. Take care in hypercalcaemia, nephrocalcinosis and recurrent calcium-containing renal stones.",
+          "tag": "Calcium content",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Each 20 ml contains 260 mg (6.5 mmol) of calcium."
+            },
+            {
+              "s": "emc-5329",
+              "q": "Each 4 tablet dose contains 300 mg (7.5 mmol) of calcium."
+            },
+            {
+              "s": "emc-113",
+              "q": "Each 10 ml dose contains 160 mg (1.6 mmol) of calcium carbonate."
+            },
+            {
+              "s": "emc-4856",
+              "q": "Each four-tablet dose contains 320 mg (3.2 mmol) of calcium carbonate."
+            },
+            {
+              "s": "emc-5609",
+              "q": "Care needs to be taken in treating patients with hypercalcaemia, nephrocalcinosis and recurrent calcium containing renal calculi."
+            }
+          ]
+        },
+        {
+          "t": "Seek medical advice if symptoms persist or treatment is needed for more than 7 days (double-strength); review if no improvement after 7 days (standard). Antacids can mask symptoms of more serious underlying conditions.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "If symptoms persist, or treatment is required for more than 7 days continuously, medical advice should be sought."
+            },
+            {
+              "s": "emc-113",
+              "q": "If symptoms do not improve after 7 days, the clinical situation should be reviewed."
+            },
+            {
+              "s": "emc-5609",
+              "q": "taking this product can mask the symptoms of other more serious, underlying medical conditions"
+            }
+          ]
+        },
+        {
+          "t": "Phenylketonuria (tablets contain aspartame): standard tablets should not be given; double-strength tablets may be harmful.",
+          "formulations": [
+            "alginate-antacid-chew-double",
+            "alginate-antacid-chew"
+          ],
+          "src": [
+            {
+              "s": "emc-4856",
+              "q": "Due to its aspartame content this product should not be given to patients with phenylketonuria."
+            },
+            {
+              "s": "emc-5329",
+              "q": "May be harmful for people with phenylketonuria."
+            }
+          ]
+        },
+        {
+          "t": "Suspensions contain parahydroxybenzoates; double-strength tablets contain carmoisine (E122). Both may cause allergic reactions.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "which may cause allergic reactions (possibly delayed)"
+            },
+            {
+              "s": "emc-5329",
+              "q": "This medicine contains Carmoisine lake (E122). This may cause allergic reactions."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Leave 2 hours between this product and other medicines, especially tetracyclines, fluoroquinolones, iron salts, thyroid hormones (levothyroxine), beta-blockers (atenolol, metoprolol, propranolol), glucocorticoids, chloroquine, bisphosphonates, digoxin, ketoconazole, neuroleptics, penicillamine and estramustine (double-strength SmPCs also list H2-antihistamines).",
+          "tag": "Separation interval: 2 hours",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+            },
+            {
+              "s": "emc-5609",
+              "q": "especially H2-antihistaminics, tetracyclines, digoxine, fluoroquinolones, iron salts, thyroid hormones"
+            },
+            {
+              "s": "emc-5609",
+              "q": "ketoconazole, neuroleptics, thyroxine, penicilamine, beta-blockers (atenolol, metoprolol, propanolol), glucocorticoid, chloroquine, diphosphonates, and estramustine"
+            },
+            {
+              "s": "emc-113",
+              "q": "A time-interval of 2 hours should be considered between Gaviscon intake and the administration of other medicinal products"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Double-strength suspension: should not be used in moderate or severe renal insufficiency (SmPC 4.3). No eGFR/CrCl threshold given.",
+          "formulations": [
+            "alginate-antacid-susp-double"
+          ],
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "This product should not be used in patients with moderate or severe renal insufficiency"
+            }
+          ]
+        },
+        {
+          "t": "All products: caution in renal insufficiency if a highly restricted salt diet is needed (high sodium content).",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Renal Insufficiency: Caution if highly restricted salt diet is necessary (see section 4.4)."
+            },
+            {
+              "s": "emc-4856",
+              "q": "Renal Insufficiency: Caution if highly restricted salt diet is necessary (see section 4.4)."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No dose change needed in hepatic impairment.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Hepatic Impairment: No dose modification necessary."
+            },
+            {
+              "s": "emc-113",
+              "q": "Hepatic Impairment: No dose modification necessary."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Can be used in pregnancy if clinically needed; studies in pregnant women showed no significant adverse effects on pregnancy or the fetus/newborn.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "the medicinal product may be used during pregnancy, if clinically needed."
+            },
+            {
+              "s": "emc-113",
+              "q": "Gaviscon can be used during pregnancy, if clinically needed."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "UK SmPCs: can be used during breastfeeding (double-strength: if clinically needed).",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "This product can be used during breast-feeding if clinically needed."
+            },
+            {
+              "s": "emc-113",
+              "q": "Gaviscon can be used during breast-feeding."
+            }
+          ]
+        },
+        {
+          "t": "SPS: alginates, calcium carbonate (at heartburn doses) and sodium bicarbonate can be used during breastfeeding; no specific infant monitoring usually needed.",
+          "src": [
+            {
+              "s": "sps-heartburn-breastfeeding",
+              "q": "Alginates can be used during breastfeeding."
+            },
+            {
+              "s": "sps-heartburn-breastfeeding",
+              "q": "Calcium carbonate can be used during breastfeeding at recommended doses used for heartburn and dyspepsia"
+            },
+            {
+              "s": "sps-heartburn-breastfeeding",
+              "q": "Sodium bicarbonate can be used during breastfeeding."
+            },
+            {
+              "s": "sps-heartburn-breastfeeding",
+              "q": "No specific infant monitoring is usually required."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Clinical data do not suggest an effect on human fertility.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Clinical data do not suggest that this product has an effect on human fertility."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "status": "not-stated",
+      "note": "The four UK SmPCs list no common or very common adverse effects; listed effects are very rare or of unknown frequency."
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Very rare: anaphylactic or anaphylactoid reactions, hypersensitivity (urticaria) and bronchospasm.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Very Rarely Anaphylactic reaction, anaphylactoid reaction."
+            },
+            {
+              "s": "emc-5609",
+              "q": "Very Rarely Respiratory effects such as bronchospasm."
+            }
+          ]
+        },
+        {
+          "t": "Frequency not known, usually after larger than recommended doses: alkalosis, acid rebound, hypercalcaemia, milk-alkali syndrome and constipation.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Alkalosis1, acid rebound1, Hypercalcaemia1, Milk-alkali Syndrome1"
+            },
+            {
+              "s": "emc-5609",
+              "q": "Usually occurs following larger than recommended dosages."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Symptoms persisting, or treatment needed for more than 7 days: seek medical advice / review the clinical situation.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "If symptoms persist, or treatment is required for more than 7 days continuously, medical advice should be sought."
+            },
+            {
+              "s": "emc-113",
+              "q": "If symptoms do not improve after 7 days, the clinical situation should be reviewed."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Take after meals and at bedtime.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "Adults and children 12 years and over: 10-20 ml after meals and at bedtime, up to four times per day."
+            }
+          ]
+        },
+        {
+          "t": "Tablets: chew thoroughly before swallowing.",
+          "formulations": [
+            "alginate-antacid-chew-double",
+            "alginate-antacid-chew"
+          ],
+          "src": [
+            {
+              "s": "emc-5329",
+              "q": "For oral administration, after being thoroughly chewed."
+            },
+            {
+              "s": "emc-4856",
+              "q": "For oral use, after being thoroughly chewed."
+            }
+          ]
+        },
+        {
+          "t": "Leave 2 hours between this product and other medicines.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "High in sodium: patients on a low-salt diet (e.g. some people with heart failure or kidney problems) should take this into account.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "This product is considered high in sodium."
+            },
+            {
+              "s": "emc-5609",
+              "q": "This should be particularly taken into account for those on a low salt diet (e.g. in some cases of congestive heart failure and renal impairment)."
+            }
+          ]
+        },
+        {
+          "t": "See a doctor if symptoms persist or treatment is needed for more than 7 days.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "If symptoms persist, or treatment is required for more than 7 days continuously, medical advice should be sought."
+            }
+          ]
+        },
+        {
+          "t": "Do not take other medicines within 2 hours of this product.",
+          "src": [
+            {
+              "s": "emc-5609",
+              "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "alginate-antacid:allergy:own-ingredients",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "alginate-antacid",
+      "allergen": [
+        "alginate",
+        "sodium-bicarbonate",
+        "calcium"
+      ],
+      "concern": "Hypersensitivity to sodium alginate, sodium bicarbonate, calcium carbonate or excipients (e.g. parahydroxybenzoates in suspensions)",
+      "consequence": "Allergic reaction.",
+      "action": "Do not use (listed in SmPC 4.3).",
+      "sourceWording": "Hypersensitivity to sodium alginate, sodium bicarbonate, calcium carbonate",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "Hypersensitivity to sodium alginate, sodium bicarbonate, calcium carbonate, the esters of hydroxybenzoates (parabens) or to any of the excipients listed in section 6.1."
+        },
+        {
+          "s": "emc-4856",
+          "q": "contraindicated in patients with known or suspected hypersensitivity to the active substances or to any of the excipients"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:condition:moderate-severe-renal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "alginate-antacid",
+      "condition": "moderate-severe-renal-impairment",
+      "formulations": [
+        "alginate-antacid-susp-double"
+      ],
+      "concern": "Moderate or severe renal insufficiency (double-strength suspension)",
+      "consequence": "Not stated in 4.3; the SmPC notes high sodium and calcium content.",
+      "action": "Do not use the double-strength suspension (SmPC 4.3). No eGFR/CrCl threshold given.",
+      "sourceWording": "should not be used in patients with moderate or severe renal insufficiency",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "This product should not be used in patients with moderate or severe renal insufficiency"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:condition:severe-renal",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "alginate-antacid",
+      "condition": "severe-renal-impairment",
+      "formulations": [
+        "alginate-antacid-susp-double"
+      ],
+      "concern": "Severe renal insufficiency (double-strength suspension)",
+      "consequence": "Not stated in 4.3; the SmPC notes high sodium and calcium content.",
+      "action": "Do not use the double-strength suspension (SmPC 4.3). No eGFR/CrCl threshold given.",
+      "sourceWording": "should not be used in patients with moderate or severe renal insufficiency",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "This product should not be used in patients with moderate or severe renal insufficiency"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:condition:renal-impairment-sodium",
+      "kind": "condition",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment: high sodium (and calcium) content",
+      "consequence": "Sodium load on a restricted-salt diet.",
+      "action": "Caution if a highly restricted salt diet is needed. Double-strength suspension: do not use in moderate or severe renal insufficiency.",
+      "sourceWording": "Caution if highly restricted salt diet is necessary",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "Renal Insufficiency: Caution if highly restricted salt diet is necessary (see section 4.4)."
+        },
+        {
+          "s": "emc-5609",
+          "q": "This should be particularly taken into account for those on a low salt diet (e.g. in some cases of congestive heart failure and renal impairment)."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:condition:low-sodium-diet",
+      "kind": "condition",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "condition": "low-sodium-diet",
+      "concern": "Low-sodium (low-salt) diet",
+      "consequence": "High in sodium (up to about half the WHO maximum daily sodium intake at the maximum daily dose).",
+      "action": "Take the sodium content into account.",
+      "sourceWording": "This should be particularly taken into account for those on a low salt diet",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "This product is considered high in sodium."
+        },
+        {
+          "s": "emc-5609",
+          "q": "This should be particularly taken into account for those on a low salt diet (e.g. in some cases of congestive heart failure and renal impairment)."
+        },
+        {
+          "s": "emc-5609",
+          "q": "The maximum daily dose of this product is equivalent to 51.15% of the WHO recommended maximum daily intake for sodium."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:condition:heart-failure-sodium",
+      "kind": "condition",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "condition": "heart-failure",
+      "concern": "Congestive heart failure on a low-salt diet",
+      "consequence": "High sodium content.",
+      "action": "Take the sodium content into account.",
+      "sourceWording": "This should be particularly taken into account for those on a low salt diet",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "This product is considered high in sodium."
+        },
+        {
+          "s": "emc-5609",
+          "q": "This should be particularly taken into account for those on a low salt diet (e.g. in some cases of congestive heart failure and renal impairment)."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:condition:hypercalcaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "condition": "hypercalcaemia",
+      "concern": "Hypercalcaemia",
+      "consequence": "Contains calcium carbonate.",
+      "action": "Take care.",
+      "sourceWording": "Care needs to be taken",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "Care needs to be taken in treating patients with hypercalcaemia, nephrocalcinosis and recurrent calcium containing renal calculi."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:condition:nephrocalcinosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "condition": "nephrocalcinosis",
+      "concern": "Nephrocalcinosis",
+      "consequence": "Contains calcium carbonate.",
+      "action": "Take care.",
+      "sourceWording": "Care needs to be taken",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "Care needs to be taken in treating patients with hypercalcaemia, nephrocalcinosis and recurrent calcium containing renal calculi."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:condition:renal-calculi",
+      "kind": "condition",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "condition": "renal-calculi",
+      "concern": "Recurrent calcium-containing renal stones",
+      "consequence": "Contains calcium carbonate.",
+      "action": "Take care.",
+      "sourceWording": "Care needs to be taken",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "Care needs to be taken in treating patients with hypercalcaemia, nephrocalcinosis and recurrent calcium containing renal calculi."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:condition:pku-standard-tab",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "alginate-antacid",
+      "condition": "phenylketonuria",
+      "formulations": [
+        "alginate-antacid-chew"
+      ],
+      "concern": "Phenylketonuria (aspartame in standard tablets)",
+      "consequence": "Source of phenylalanine.",
+      "action": "Should not be given (standard tablets). Use a product without aspartame.",
+      "sourceWording": "should not be given to patients with phenylketonuria",
+      "src": [
+        {
+          "s": "emc-4856",
+          "q": "Due to its aspartame content this product should not be given to patients with phenylketonuria."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:condition:pku-double-tab",
+      "kind": "condition",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "condition": "phenylketonuria",
+      "formulations": [
+        "alginate-antacid-chew-double"
+      ],
+      "concern": "Phenylketonuria (aspartame in double-strength tablets)",
+      "consequence": "Source of phenylalanine; may be harmful.",
+      "action": "Take care: may be harmful in phenylketonuria.",
+      "sourceWording": "May be harmful for people with phenylketonuria",
+      "src": [
+        {
+          "s": "emc-5329",
+          "q": "May be harmful for people with phenylketonuria."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:age:under-12-double",
+      "kind": "age",
+      "level": "avoid",
+      "med": "alginate-antacid",
+      "age": {
+        "maxYears": 12
+      },
+      "formulations": [
+        "alginate-antacid-susp-double",
+        "alginate-antacid-chew-double"
+      ],
+      "concern": "Child under 12 years (double-strength products)",
+      "consequence": "Not stated.",
+      "action": "Not generally recommended under 12 years, except on medical advice.",
+      "sourceWording": "not generally recommended, except on medical advice",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "Treatment of children younger than 12 years of age is not generally recommended, except on medical advice."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:age:under-12-standard",
+      "kind": "age",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "age": {
+        "maxYears": 12
+      },
+      "formulations": [
+        "alginate-antacid-susp"
+      ],
+      "concern": "Child under 12 years (standard suspension)",
+      "consequence": "Not stated.",
+      "action": "Give only on medical advice.",
+      "sourceWording": "Should be given only on medical advice",
+      "src": [
+        {
+          "s": "emc-113",
+          "q": "Children under 12 years: Should be given only on medical advice."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:interaction:tetracycline",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "other": "group:tetracycline",
+      "effect": "reduced-absorption",
+      "concern": "Tetracyclines: separate doses",
+      "consequence": "Calcium and carbonates act as an antacid and may affect absorption of the other medicine.",
+      "action": "Leave 2 hours between this product and the other medicine.",
+      "sourceWording": "a time-interval of 2 hours should be considered",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "especially H2-antihistaminics, tetracyclines, digoxine, fluoroquinolones, iron salts, thyroid hormones"
+        },
+        {
+          "s": "emc-5609",
+          "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+        },
+        {
+          "s": "emc-113",
+          "q": "A time-interval of 2 hours should be considered between Gaviscon intake and the administration of other medicinal products"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:interaction:fluoroquinolone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "other": "group:fluoroquinolone",
+      "effect": "reduced-absorption",
+      "concern": "Fluoroquinolones: separate doses",
+      "consequence": "Calcium and carbonates act as an antacid and may affect absorption of the other medicine.",
+      "action": "Leave 2 hours between this product and the other medicine.",
+      "sourceWording": "a time-interval of 2 hours should be considered",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "especially H2-antihistaminics, tetracyclines, digoxine, fluoroquinolones, iron salts, thyroid hormones"
+        },
+        {
+          "s": "emc-5609",
+          "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+        },
+        {
+          "s": "emc-113",
+          "q": "A time-interval of 2 hours should be considered between Gaviscon intake and the administration of other medicinal products"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:interaction:iron",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "other": "group:iron-preparation",
+      "effect": "reduced-absorption",
+      "concern": "Iron salts: separate doses",
+      "consequence": "Calcium and carbonates act as an antacid and may affect absorption of the other medicine.",
+      "action": "Leave 2 hours between this product and the other medicine.",
+      "sourceWording": "a time-interval of 2 hours should be considered",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "especially H2-antihistaminics, tetracyclines, digoxine, fluoroquinolones, iron salts, thyroid hormones"
+        },
+        {
+          "s": "emc-5609",
+          "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+        },
+        {
+          "s": "emc-113",
+          "q": "A time-interval of 2 hours should be considered between Gaviscon intake and the administration of other medicinal products"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:interaction:levothyroxine",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "other": "levothyroxine",
+      "effect": "reduced-absorption",
+      "concern": "Levothyroxine (thyroid hormone): separate doses",
+      "consequence": "Calcium and carbonates act as an antacid and may affect absorption of the other medicine.",
+      "action": "Leave 2 hours between this product and the other medicine.",
+      "sourceWording": "a time-interval of 2 hours should be considered",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "especially H2-antihistaminics, tetracyclines, digoxine, fluoroquinolones, iron salts, thyroid hormones"
+        },
+        {
+          "s": "emc-5609",
+          "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+        },
+        {
+          "s": "emc-113",
+          "q": "A time-interval of 2 hours should be considered between Gaviscon intake and the administration of other medicinal products"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:interaction:atenolol",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "other": "atenolol",
+      "effect": "reduced-absorption",
+      "concern": "Atenolol: separate doses",
+      "consequence": "Calcium and carbonates act as an antacid and may affect absorption of the other medicine.",
+      "action": "Leave 2 hours between this product and the other medicine.",
+      "sourceWording": "a time-interval of 2 hours should be considered",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "beta-blockers (atenolol, metoprolol, propanolol)"
+        },
+        {
+          "s": "emc-5609",
+          "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+        },
+        {
+          "s": "emc-113",
+          "q": "A time-interval of 2 hours should be considered between Gaviscon intake and the administration of other medicinal products"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:interaction:propranolol",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "other": "propranolol",
+      "effect": "reduced-absorption",
+      "concern": "Propranolol: separate doses",
+      "consequence": "Calcium and carbonates act as an antacid and may affect absorption of the other medicine.",
+      "action": "Leave 2 hours between this product and the other medicine.",
+      "sourceWording": "a time-interval of 2 hours should be considered",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "beta-blockers (atenolol, metoprolol, propanolol)"
+        },
+        {
+          "s": "emc-5609",
+          "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+        },
+        {
+          "s": "emc-113",
+          "q": "A time-interval of 2 hours should be considered between Gaviscon intake and the administration of other medicinal products"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:interaction:prednisolone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "other": "prednisolone",
+      "effect": "reduced-absorption",
+      "concern": "Prednisolone (oral glucocorticoid): separate doses",
+      "consequence": "Calcium and carbonates act as an antacid and may affect absorption of the other medicine.",
+      "action": "Leave 2 hours between this product and the other medicine.",
+      "sourceWording": "a time-interval of 2 hours should be considered",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "beta-blockers (atenolol, metoprolol, propanolol), glucocorticoid, chloroquine"
+        },
+        {
+          "s": "emc-5609",
+          "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+        },
+        {
+          "s": "emc-113",
+          "q": "A time-interval of 2 hours should be considered between Gaviscon intake and the administration of other medicinal products"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:interaction:dexamethasone",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "alginate-antacid",
+      "other": "dexamethasone",
+      "effect": "reduced-absorption",
+      "concern": "Dexamethasone (oral glucocorticoid): separate doses",
+      "consequence": "Calcium and carbonates act as an antacid and may affect absorption of the other medicine.",
+      "action": "Leave 2 hours between this product and the other medicine.",
+      "sourceWording": "a time-interval of 2 hours should be considered",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "beta-blockers (atenolol, metoprolol, propanolol), glucocorticoid, chloroquine"
+        },
+        {
+          "s": "emc-5609",
+          "q": "a time-interval of 2 hours should be considered between intake of this product and the administration of other medicinal products"
+        },
+        {
+          "s": "emc-113",
+          "q": "A time-interval of 2 hours should be considered between Gaviscon intake and the administration of other medicinal products"
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:pregnancy:any",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "alginate-antacid",
+      "concern": "Pregnancy",
+      "consequence": "Studies in pregnant women showed no significant adverse effects on the pregnancy or the fetus/newborn.",
+      "action": "Can be used during pregnancy if clinically needed (UK SmPCs).",
+      "sourceWording": "may be used during pregnancy, if clinically needed",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "the medicinal product may be used during pregnancy, if clinically needed."
+        },
+        {
+          "s": "emc-113",
+          "q": "Gaviscon can be used during pregnancy, if clinically needed."
+        }
+      ]
+    },
+    {
+      "id": "alginate-antacid:breastfeeding:any",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "alginate-antacid",
+      "concern": "Breastfeeding",
+      "consequence": "No effects shown in breastfed infants of treated mothers.",
+      "action": "Can be used during breastfeeding (double-strength SmPCs: if clinically needed). SPS: alginates, calcium carbonate and sodium bicarbonate can be used.",
+      "sourceWording": "can be used during breast-feeding",
+      "src": [
+        {
+          "s": "emc-5609",
+          "q": "This product can be used during breast-feeding if clinically needed."
+        },
+        {
+          "s": "emc-113",
+          "q": "Gaviscon can be used during breast-feeding."
+        },
+        {
+          "s": "sps-heartburn-breastfeeding",
+          "q": "Alginates can be used during breastfeeding."
+        }
+      ]
+    }
+  ]
+}

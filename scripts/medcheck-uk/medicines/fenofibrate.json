@@ -1,0 +1,923 @@
+{
+  "id": "fenofibrate",
+  "name": "Fenofibrate",
+  "availability": {
+    "status": "uk"
+  },
+  "ingredients": [
+    "fenofibrate"
+  ],
+  "className": "Fibrate (fibric acid derivative)",
+  "groups": [
+    "fibrate",
+    "cyp2c9-inhibitor"
+  ],
+  "searchTerms": [
+    "fenofibric acid",
+    "micronised fenofibrate"
+  ],
+  "formulations": [
+    {
+      "id": "fenofibrate-tab",
+      "label": "Film-coated tablets",
+      "route": "oral",
+      "strengths": "160 mg (UK SmPC used)",
+      "release": "immediate",
+      "note": "The clinic's 145 mg tablet has no UK SmPC on emc or MHRA products (UK fenofibrate products are 67, 160, 200 and 267 mg). Information here is from the UK 160 mg film-coated tablet SmPC (same active ingredient and route). Doses, the renal dose cap and the excipient warnings (lactose, soya lecithin) are for that 160 mg product: check the clinic product's own leaflet for its excipients.",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "Each tablet contains 160.0 mg fenofibrate."
+        },
+        {
+          "s": "emc-2198",
+          "q": "138.4 mg of Lactose monohydrate - 0.56 mg of Soybean lecithin"
+        }
+      ],
+      "sourceIds": [
+        "emc-2198"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Adjunct to diet and other non-drug measures for: severe hypertriglyceridaemia (with or without low HDL); mixed hyperlipidaemia when a statin is contraindicated or not tolerated; mixed hyperlipidaemia at high cardiovascular risk added to a statin when triglycerides and HDL are not controlled.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Treatment of severe hypertriglyceridaemia with or without low HDL cholesterol."
+            },
+            {
+              "s": "emc-2198",
+              "q": "Mixed hyperlipidaemia when a statin is contraindicated or not tolerated."
+            },
+            {
+              "s": "emc-2198",
+              "q": "Mixed hyperlipidaemia in patients at high cardiovascular risk in addition to a statin when triglycerides and HDL cholesterol are not adequately controlled."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA: fibrates should not be prescribed first line to newly diagnosed patients, except those with severe hypertriglyceridaemia or who cannot take statins.",
+          "src": [
+            {
+              "s": "mhra-dsu-fibrates-first-line",
+              "q": "healthcare professionals should not prescribe them to newly diagnosed patients as first-line treatment, except for those with severe hypertriglyceridaemia or those who cannot take statins"
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults: 160 mg once daily (160 mg tablet SmPC). Review lipid response; if not adequate after several months, consider other measures.",
+          "tag": "Hyperlipidaemia (160 mg tablet)",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "The recommended dose is one tablet containing 160 mg fenofibrate taken once daily."
+            },
+            {
+              "s": "emc-2198",
+              "q": "If an adequate response has not been achieved after several months, complementary or different therapeutic measures should be considered."
+            }
+          ]
+        },
+        {
+          "t": "Elderly (65 years or over): usual dose unless eGFR <60 mL/min/1.73 m².",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "The usual dose is recommended, except for decreased renal function with estimated glomerular filtration rate < 60 mL/min/1.73"
+            }
+          ]
+        },
+        {
+          "t": "eGFR 30-59 mL/min/1.73 m²: do not exceed 100 mg standard or 67 mg micronised fenofibrate once daily (the 160 mg tablet is above this limit). eGFR <30: do not use; stop if eGFR falls persistently below 30.",
+          "tag": "Renal impairment",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "If eGFR is between 30 and 59 mL/min per 1.73 m2, the dose of fenofibrate should not exceed 100 mg standard or 67 mg micronized once daily."
+            },
+            {
+              "s": "emc-2198",
+              "q": "If, during follow-up, the eGFR decreases persistently to <30 mL/min per 1.73 m2, fenofibrate should be discontinued."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Not recommended under 18 years (safety and efficacy not established; no data).",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Therefore the use of fenofibrate is not recommended in paediatric subjects under 18 years."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hepatic insufficiency (including biliary cirrhosis and unexplained persistent liver function abnormality); known gallbladder disease.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Hepatic insufficiency (including biliary cirrhosis and unexplained persistent liver function abnormality Known gallbladder disease"
+            }
+          ]
+        },
+        {
+          "t": "Severe renal insufficiency (eGFR <30 mL/min/1.73 m²).",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Severe renal insufficiency (estimated glomerular filtration rate < 30 mL/min/1.73 m2)"
+            }
+          ]
+        },
+        {
+          "t": "Chronic or acute pancreatitis, except acute pancreatitis due to severe hypertriglyceridaemia.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Chronic or acute pancreatitis with the exception of acute pancreatitis due to severe hypertriglyceridemia"
+            }
+          ]
+        },
+        {
+          "t": "Known photoallergy or phototoxic reaction with fibrates or ketoprofen; hypersensitivity to fenofibrate or excipients; allergy to peanut, arachis oil, soya lecithin or related products.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Known photoallergy or phototoxic reaction during treatment with fibrates or ketoprofen"
+            },
+            {
+              "s": "emc-2198",
+              "q": "should not be taken in patients allergic to peanut or arachis oil or soya lecithin or related products due to the risk of hypersensitivity reactions"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Treat secondary causes (uncontrolled type 2 diabetes, hypothyroidism, nephrotic syndrome, dysproteinaemia, obstructive liver disease, alcoholism) before starting.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "should be adequately treated before fenofibrate therapy is considered"
+            }
+          ]
+        },
+        {
+          "t": "Muscle toxicity, including rare rhabdomyolysis: higher risk with age over 70, hereditary muscle disorders, renal impairment, hypothyroidism, high alcohol intake, low albumin. Weigh benefit and risk. Stop if diffuse myalgia, myositis, cramps, weakness or CPK >5 x ULN.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "including age above 70 years, personal or familial history of hereditary muscular disorders, renal impairment, hypothyroidism and high alcohol intake, may be at an increased risk of developing rhabdomyolysis"
+            },
+            {
+              "s": "emc-2198",
+              "q": "the putative benefits and risks of fenofibrate therapy should be carefully weighed up"
+            },
+            {
+              "s": "emc-2198",
+              "q": "In such cases treatment with fenofibrate should be stopped."
+            }
+          ]
+        },
+        {
+          "t": "With a statin or another fibrate: reserve for severe combined dyslipidaemia at high cardiovascular risk with no history of muscle disease, and monitor closely for muscle toxicity.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "the co-prescription of fenofibrate with HMG-CoA reductase inhibitor or another fibrate should be reserved to patients with severe combined dyslipidaemia and high cardiovascular risk without any history of muscular disease"
+            }
+          ]
+        },
+        {
+          "t": "Pancreatitis has been reported. Liver: stop if AST/ALT rise above 3 x ULN or if hepatitis is confirmed.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Pancreatitis has been reported in patients taking fenofibrate"
+            },
+            {
+              "s": "emc-2198",
+              "q": "therapy should be discontinued if AST (SGOT) and ALT (SGPT) levels increase to more than 3 times the upper limit of the normal range"
+            }
+          ]
+        },
+        {
+          "t": "Renal: use with caution in mild to moderate renal insufficiency; reversible rises in creatinine occur. Interrupt if creatinine is 50% above ULN.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "should be used with caution in patients with mild to moderate renal insufficiency"
+            },
+            {
+              "s": "emc-2198",
+              "q": "Treatment should be interrupted when creatinine level is 50% above the upper limit of normal."
+            }
+          ]
+        },
+        {
+          "t": "Contains lactose: patients with hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Oral anticoagulants (warfarin): fenofibrate increases the anticoagulant effect and bleeding risk. Reduce the anticoagulant dose by about one third at the start, then adjust by INR.",
+          "tag": "Warfarin",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Fenofibrate enhances oral anticoagulant effect and may increase risk of bleeding."
+            },
+            {
+              "s": "emc-2198",
+              "q": "It is recommended that the dose of anticoagulants is reduced by about one third at the start of treatment and then gradually adjusted if necessary according to INR (International Normalised Ratio) monitoring."
+            }
+          ]
+        },
+        {
+          "t": "Statins and other fibrates: increased risk of serious muscle toxicity. Use with caution and monitor closely.",
+          "tag": "Statins",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "The risk of serious muscle toxicity is increased if a fibrate is used concomitantly with HMG-CoA reductase inhibitors or other fibrates."
+            },
+            {
+              "s": "emc-2198",
+              "q": "Such combination therapy should be used with caution and patients monitored closely for signs of muscle toxicity"
+            }
+          ]
+        },
+        {
+          "t": "CYP2C9 (and weakly CYP2C19, CYP2A6) inhibitor: monitor narrow-therapeutic-index drugs metabolised by these enzymes and adjust their dose if needed.",
+          "tag": "CYP2C9 substrates",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Patients co-administered fenofibrate and CYP2C19, CYP2A6, and especially CYP2C9 metabolised drugs with a narrow therapeutic index should be carefully monitored and, if necessary, dose adjustment of these drugs is recommended."
+            }
+          ]
+        },
+        {
+          "t": "Ciclosporin: severe reversible renal impairment reported; monitor renal function closely. Glitazones: paradoxical fall in HDL reported; monitor HDL.",
+          "tag": "Ciclosporin, glitazones",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "The renal function of these patients must therefore be closely monitored and the treatment with fenofibrate stopped in the case of severe alteration of laboratory parameters."
+            },
+            {
+              "s": "emc-2198",
+              "q": "it is recommended to monitor HDL-cholesterol if one of these components is added to the other"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "eGFR <30 mL/min/1.73 m²: contraindicated; stop if eGFR falls persistently below 30.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Fenofibrate should not be used if severe renal impairment, defined as eGFR <30 mL/min per 1.73 m2, is present."
+            },
+            {
+              "s": "emc-2198",
+              "q": "If, during follow-up, the eGFR decreases persistently to <30 mL/min per 1.73 m2, fenofibrate should be discontinued."
+            }
+          ]
+        },
+        {
+          "t": "eGFR 30-59 mL/min/1.73 m²: maximum 100 mg standard or 67 mg micronised once daily; use with caution.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "If eGFR is between 30 and 59 mL/min per 1.73 m2, the dose of fenofibrate should not exceed 100 mg standard or 67 mg micronized once daily."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Contraindicated in hepatic insufficiency (SmPC 4.3); the 160 mg tablet is also not recommended in hepatic impairment due to lack of data.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Supralip 160 mg is not recommended for use in patients with hepatic impairment due to the lack of data."
+            },
+            {
+              "s": "emc-2198",
+              "q": "4.3 Contraindications Hepatic insufficiency"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "No adequate human data; human risk unknown. Use only after a careful benefit/risk assessment. No BUMPS leaflet for fenofibrate was found.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "should only be used during pregnancy after a careful benefit/risk assessment"
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Unknown whether it passes into milk; a risk to the infant cannot be excluded. Should not be used during breastfeeding. No SPS breastfeeding page for fibrates was found.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "A risk to the suckling child cannot be excluded. Therefore fenofibrate should not be used during breast-feeding."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Reversible effects on fertility seen in animals; no human data.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Reversible effects on fertility have been observed in animals"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: gastrointestinal symptoms (abdominal pain, nausea, vomiting, diarrhoea, flatulence), raised transaminases, raised blood homocysteine. Digestive effects are the most often reported.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "The most commonly reported ADRs during fenofibrate therapy are digestive, gastric or intestinal disorders."
+            },
+            {
+              "s": "emc-2198",
+              "q": "Gastrointestinal signs and symptoms (abdominal pain, nausea, vomiting, diarrhoea, flatulence)"
+            },
+            {
+              "s": "emc-2198",
+              "q": "Transaminases increased (see section 4.4)"
+            },
+            {
+              "s": "emc-2198",
+              "q": "Blood homocysteine level increased"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Uncommon: pancreatitis, gallstones, thromboembolism (pulmonary embolism, deep vein thrombosis), muscle disorders. Rhabdomyolysis, hepatitis/jaundice and severe skin reactions (SJS, TEN) also reported. Stop if CPK >5 x ULN or muscle toxicity is suspected.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Thromboembolism (pulmonary embolism, deep vein thrombosis)"
+            },
+            {
+              "s": "emc-2198",
+              "q": "Cholelithiasis (see section 4.4)"
+            },
+            {
+              "s": "emc-2198",
+              "q": "Severe cutaneous reactionsa (e.g erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis)"
+            },
+            {
+              "s": "emc-2198",
+              "q": "marked increases in CPK (levels exceeding 5 times the upper normal range). In such cases treatment with fenofibrate should be stopped."
+            }
+          ]
+        },
+        {
+          "t": "Photosensitivity reactions (rare) and interstitial lung disease (frequency not known).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Alopecia Photosensitivity reactions"
+            },
+            {
+              "s": "emc-2198",
+              "q": "Interstitial lung diseasea"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Lipid response by serum lipid levels.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Response to therapy should be monitored by determination of serum lipid values."
+            }
+          ]
+        },
+        {
+          "t": "Transaminases every 3 months for the first 12 months, then periodically. Creatinine during the first 3 months, then periodically.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "It is recommended that transaminase levels are monitored every 3 months during the first 12 months of treatment and thereafter periodically."
+            },
+            {
+              "s": "emc-2198",
+              "q": "It is recommended that creatinine is measured during the first 3 months after initiation of treatment and periodically thereafter."
+            }
+          ]
+        },
+        {
+          "t": "Stop if AST/ALT >3 x ULN, confirmed hepatitis, CPK >5 x ULN or muscle toxicity; interrupt if creatinine is 50% above ULN; stop if eGFR persistently <30.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "therapy should be discontinued if AST (SGOT) and ALT (SGPT) levels increase to more than 3 times the upper limit of the normal range"
+            },
+            {
+              "s": "emc-2198",
+              "q": "Treatment should be interrupted when creatinine level is 50% above the upper limit of normal."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Swallow the tablet whole during a meal. Continue dietary measures.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Tablet should be swallowed whole during a meal."
+            },
+            {
+              "s": "emc-2198",
+              "q": "Dietary measures initiated before therapy should be continued."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Report muscle pain, cramps or weakness, and symptoms of hepatitis such as jaundice or itching.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "Muscle toxicity should be suspected in patients presenting diffuse myalgia, myositis, muscular cramps and weakness"
+            },
+            {
+              "s": "emc-2198",
+              "q": "When symptoms indicative of hepatitis occur (e.g. jaundice, pruritus)"
+            }
+          ]
+        },
+        {
+          "t": "Do not take if allergic to peanut, arachis oil or soya.",
+          "src": [
+            {
+              "s": "emc-2198",
+              "q": "should not be taken in patients allergic to peanut or arachis oil or soya lecithin or related products due to the risk of hypersensitivity reactions"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "fenofibrate:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "fenofibrate",
+      "allergen": [
+        "fenofibrate"
+      ],
+      "concern": "Hypersensitivity to fenofibrate",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use (SmPC section 4.3).",
+      "sourceWording": "Contraindications Hypersensitivity",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:allergy:fibrate-photoallergy",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "fenofibrate",
+      "allergen": [
+        "group:fibrate"
+      ],
+      "concern": "Previous photoallergy or phototoxic reaction with a fibrate (or ketoprofen)",
+      "consequence": "Risk of recurrent photoallergic or phototoxic reaction.",
+      "action": "Do not use (SmPC section 4.3).",
+      "sourceWording": "Contraindications Known photoallergy or phototoxic reaction",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "Known photoallergy or phototoxic reaction during treatment with fibrates or ketoprofen"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:condition:peanut-soya",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "fenofibrate",
+      "condition": "peanut-soya-allergy",
+      "concern": "Allergy to peanut, arachis oil or soya lecithin (UK 160 mg tablet contains soya lecithin; check the clinic product)",
+      "consequence": "Risk of hypersensitivity reactions (tablet contains soya lecithin).",
+      "action": "Do not use this product.",
+      "sourceWording": "should not be taken (section 4.3)",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "should not be taken in patients allergic to peanut or arachis oil or soya lecithin or related products due to the risk of hypersensitivity reactions"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:hepatic:any",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "fenofibrate",
+      "hepatic": [
+        "any"
+      ],
+      "concern": "Hepatic insufficiency (including biliary cirrhosis)",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hepatic insufficiency",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "Hepatic insufficiency (including biliary cirrhosis and unexplained persistent liver function abnormality"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:condition:active-liver-disease",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "fenofibrate",
+      "condition": "active-liver-disease",
+      "concern": "Unexplained persistent liver function abnormality",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "Hepatic insufficiency (including biliary cirrhosis and unexplained persistent liver function abnormality"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:condition:gallbladder-disease",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "fenofibrate",
+      "condition": "gallbladder-disease",
+      "concern": "Known gallbladder disease",
+      "consequence": "Listed in SmPC section 4.3; fenofibrate can cause gallstones.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Known gallbladder disease",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "Known gallbladder disease"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:condition:pancreatitis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "fenofibrate",
+      "condition": "pancreatitis",
+      "concern": "Chronic or acute pancreatitis (except acute pancreatitis due to severe hypertriglyceridaemia)",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "Chronic or acute pancreatitis with the exception of acute pancreatitis due to severe hypertriglyceridemia"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:renal:egfr-30",
+      "kind": "renal",
+      "level": "contraindicated",
+      "med": "fenofibrate",
+      "renal": {
+        "measure": "eGFR",
+        "max": 30
+      },
+      "concern": "Severe renal impairment (eGFR <30 mL/min/1.73 m²)",
+      "consequence": "Listed in SmPC section 4.3.",
+      "action": "Do not use; stop if eGFR falls persistently below 30.",
+      "sourceWording": "Contraindications Severe renal insufficiency",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "Severe renal insufficiency (estimated glomerular filtration rate < 30 mL/min/1.73 m2)"
+        },
+        {
+          "s": "emc-2198",
+          "q": "If, during follow-up, the eGFR decreases persistently to <30 mL/min per 1.73 m2, fenofibrate should be discontinued."
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:renal:egfr-30-59",
+      "kind": "renal",
+      "level": "dose",
+      "med": "fenofibrate",
+      "renal": {
+        "measure": "eGFR",
+        "min": 30,
+        "max": 60
+      },
+      "concern": "eGFR 30-59 mL/min/1.73 m²",
+      "consequence": "Dose cap: the 160 mg (and the clinic's 145 mg) tablet is above it.",
+      "action": "Do not exceed 100 mg standard or 67 mg micronised fenofibrate once daily; use with caution.",
+      "sourceWording": "the dose of fenofibrate should not exceed 100 mg standard or 67 mg micronized once daily",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "If eGFR is between 30 and 59 mL/min per 1.73 m2, the dose of fenofibrate should not exceed 100 mg standard or 67 mg micronized once daily."
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:condition:renal-impairment",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fenofibrate",
+      "condition": "renal-impairment",
+      "effect": "myopathy",
+      "concern": "Mild to moderate renal impairment",
+      "consequence": "Reversible rises in serum creatinine; renal impairment also raises the risk of rhabdomyolysis.",
+      "action": "Use with caution; dose cap if eGFR 30-59 mL/min/1.73 m²; interrupt if creatinine is 50% above the upper limit of normal.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "should be used with caution in patients with mild to moderate renal insufficiency"
+        },
+        {
+          "s": "emc-2198",
+          "q": "Treatment should be interrupted when creatinine level is 50% above the upper limit of normal."
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:interaction:vka",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "fenofibrate",
+      "other": "group:vitamin-k-antagonist",
+      "effect": "bleeding",
+      "concern": "Oral anticoagulants (warfarin)",
+      "consequence": "Enhanced anticoagulant effect; increased bleeding risk.",
+      "action": "Reduce the anticoagulant dose by about one third at the start, then adjust by INR.",
+      "sourceWording": "It is recommended that the dose of anticoagulants is reduced by about one third",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "Fenofibrate enhances oral anticoagulant effect and may increase risk of bleeding."
+        },
+        {
+          "s": "emc-2198",
+          "q": "It is recommended that the dose of anticoagulants is reduced by about one third at the start of treatment and then gradually adjusted if necessary according to INR (International Normalised Ratio) monitoring."
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:interaction:statin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fenofibrate",
+      "other": "group:statin",
+      "effect": "myopathy",
+      "concern": "Statins (HMG-CoA reductase inhibitors)",
+      "consequence": "Increased risk of serious muscle toxicity.",
+      "action": "Use with caution only in severe combined dyslipidaemia at high cardiovascular risk without muscle disease; monitor closely for muscle toxicity.",
+      "sourceWording": "should be used with caution and patients monitored closely",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "The risk of serious muscle toxicity is increased if a fibrate is used concomitantly with HMG-CoA reductase inhibitors or other fibrates."
+        },
+        {
+          "s": "emc-2198",
+          "q": "Such combination therapy should be used with caution and patients monitored closely for signs of muscle toxicity"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fenofibrate",
+      "condition": "hypothyroidism",
+      "effect": "myopathy",
+      "concern": "Hypothyroidism",
+      "consequence": "Increased risk of rhabdomyolysis; also a secondary cause of hyperlipidaemia.",
+      "action": "Treat first; weigh benefits and risks carefully.",
+      "sourceWording": "should be carefully weighed up",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "including age above 70 years, personal or familial history of hereditary muscular disorders, renal impairment, hypothyroidism and high alcohol intake, may be at an increased risk of developing rhabdomyolysis"
+        },
+        {
+          "s": "emc-2198",
+          "q": "the putative benefits and risks of fenofibrate therapy should be carefully weighed up"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:condition:alcohol",
+      "kind": "condition",
+      "level": "caution",
+      "med": "fenofibrate",
+      "condition": "alcohol-dependence",
+      "effect": "myopathy",
+      "concern": "High alcohol intake",
+      "consequence": "Increased risk of rhabdomyolysis.",
+      "action": "Weigh benefits and risks carefully.",
+      "sourceWording": "should be carefully weighed up",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "including age above 70 years, personal or familial history of hereditary muscular disorders, renal impairment, hypothyroidism and high alcohol intake, may be at an increased risk of developing rhabdomyolysis"
+        },
+        {
+          "s": "emc-2198",
+          "q": "the putative benefits and risks of fenofibrate therapy should be carefully weighed up"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:condition:galactose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "fenofibrate",
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption (UK 160 mg tablet contains lactose; check the clinic product)",
+      "consequence": "Tablet contains lactose.",
+      "action": "Should not take this product.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "fenofibrate",
+      "concern": "Pregnancy",
+      "consequence": "No adequate human data; potential risk unknown.",
+      "action": "Use only after a careful benefit/risk assessment.",
+      "sourceWording": "should only be used during pregnancy after a careful benefit/risk assessment",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "should only be used during pregnancy after a careful benefit/risk assessment"
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "fenofibrate",
+      "concern": "Breastfeeding",
+      "consequence": "A risk to the infant cannot be excluded.",
+      "action": "Should not be used during breastfeeding.",
+      "sourceWording": "should not be used during breast-feeding",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "A risk to the suckling child cannot be excluded. Therefore fenofibrate should not be used during breast-feeding."
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:age:under-18",
+      "kind": "age",
+      "level": "avoid",
+      "med": "fenofibrate",
+      "age": {
+        "minYears": 0,
+        "maxYears": 18
+      },
+      "concern": "Under 18 years",
+      "consequence": "Safety and efficacy not established; no data.",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended in paediatric subjects under 18 years",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "Therefore the use of fenofibrate is not recommended in paediatric subjects under 18 years."
+        }
+      ]
+    },
+    {
+      "id": "fenofibrate:age:over-70",
+      "kind": "age",
+      "level": "caution",
+      "med": "fenofibrate",
+      "age": {
+        "minYears": 70
+      },
+      "effect": "myopathy",
+      "concern": "Age over 70 years",
+      "consequence": "Increased risk of rhabdomyolysis.",
+      "action": "Weigh benefits and risks carefully.",
+      "sourceWording": "should be carefully weighed up",
+      "src": [
+        {
+          "s": "emc-2198",
+          "q": "including age above 70 years, personal or familial history of hereditary muscular disorders, renal impairment, hypothyroidism and high alcohol intake, may be at an increased risk of developing rhabdomyolysis"
+        },
+        {
+          "s": "emc-2198",
+          "q": "the putative benefits and risks of fenofibrate therapy should be carefully weighed up"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1270 @@
+{
+  "id": "budesonide-formoterol",
+  "name": "Budesonide/formoterol (inhaler)",
+  "ingredients": [
+    "budesonide",
+    "formoterol"
+  ],
+  "className": "Inhaled corticosteroid with long-acting beta2 agonist (ICS/LABA)",
+  "groups": [
+    "inhaled-corticosteroid",
+    "beta2-agonist",
+    "long-acting-beta2-agonist"
+  ],
+  "searchTerms": [
+    "budesonide formoterol",
+    "formoterol budesonide",
+    "budesonide/formoterol fumarate dihydrate"
+  ],
+  "availability": {
+    "status": "uk"
+  },
+  "formulations": [
+    {
+      "id": "budesonide-formoterol-dpi-200-6",
+      "label": "Inhalation powder (dry powder inhaler) 200/6",
+      "route": "inhalation",
+      "strengths": "budesonide 160 micrograms + formoterol fumarate dihydrate 4.5 micrograms per delivered dose (200/6 micrograms metered)",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Each delivered dose (the dose that leaves the mouthpiece) contains: budesonide 160 micrograms/inhalation and formoterol fumarate dihydrate 4.5 micrograms/inhalation."
+        }
+      ],
+      "sourceIds": [
+        "emc-1327"
+      ]
+    }
+  ],
+  "brandPrescribing": {
+    "t": "SPS: prescribing by brand is necessary when devices have different instructions for use and need patient training; dry powder inhalers are named as an example. Generic prescribing of inhalers can lead to an unfamiliar device, which could affect use and adherence.",
+    "src": [
+      {
+        "s": "sps-brand-generic-principles",
+        "q": "When administration devices have different instructions for use and patients require training to use them."
+      },
+      {
+        "s": "sps-brand-generic-principles",
+        "q": "adrenaline auto-injectors, dry powder inhalers"
+      },
+      {
+        "s": "sps-brand-examples",
+        "q": "Generic prescribing of inhalers can lead to people being given an unfamiliar device which could affect usage and adherence."
+      }
+    ]
+  },
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Asthma (adults and adolescents 12 years and over): regular treatment where an ICS/LABA combination is appropriate (not controlled on ICS plus as-needed SABA, or already controlled on ICS and LABA). Also as-needed reliever therapy in mild asthma.",
+          "tag": "Asthma",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "is indicated in adults and adolescents (12 years and older) for the regular treatment of asthma, where use of a combination (inhaled corticosteroid and long-acting β2 adrenoceptor agonist) is appropriate"
+            },
+            {
+              "s": "emc-1327",
+              "q": "is also indicated as reliever therapy for adults and adolescents (12 years and older) with mild asthma."
+            }
+          ]
+        },
+        {
+          "t": "COPD (adults 18 years and over): symptomatic treatment with FEV1 <70% predicted (post-bronchodilator) and a history of exacerbations despite regular bronchodilators.",
+          "tag": "COPD",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "is indicated in adults, aged 18 years and older, for the symptomatic treatment of patients with COPD with forced expiratory volume in 1 second (FEV1) <70% predicted normal (post bronchodilator) and an exacerbation history despite regular bronchodilator therapy"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA (asthma): always prescribe a LABA with an inhaled corticosteroid, and only when ICS alone does not control symptoms; do not start a LABA in rapidly deteriorating asthma; review regularly, use the lowest effective dose and stop if no benefit. (This product already contains an ICS.)",
+          "tag": "LABA safety (MHRA)",
+          "src": [
+            {
+              "s": "mhra-dsu-laba-2010",
+              "q": "always prescribe LABA with concomitant ICS and only when ICS alone are not sufficient to control asthma symptoms"
+            },
+            {
+              "s": "mhra-dsu-laba-2010",
+              "q": "LABA should not be initiated in patients with rapidly deteriorating asthma"
+            },
+            {
+              "s": "mhra-dsu-laba-2010",
+              "q": "review LABA therapy regularly, prescribe the lowest effective dose, and stop if there is no benefit"
+            }
+          ]
+        },
+        {
+          "t": "Device and brand (SPS): prescribe by brand when devices differ in use and need training; dry powder inhalers are an example.",
+          "tag": "Brand prescribing",
+          "src": [
+            {
+              "s": "sps-brand-generic-principles",
+              "q": "When administration devices have different instructions for use and patients require training to use them."
+            },
+            {
+              "s": "sps-brand-generic-principles",
+              "q": "adrenaline auto-injectors, dry powder inhalers"
+            }
+          ]
+        },
+        {
+          "t": "NICE (asthma): if possible, use the same type of device for preventer and reliever when more than one inhaler is needed.",
+          "tag": "Device choice",
+          "detail": true,
+          "src": [
+            {
+              "s": "nice-ng245",
+              "q": "If possible, prescribe the same type of device to deliver preventer and reliever treatments where more than one inhaler is needed."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Maintenance therapy (separate reliever): adults 1-2 inhalations twice daily (some need up to 4 inhalations twice daily maximum); adolescents 12-17 years 1-2 inhalations twice daily. Titrate to the lowest effective dose.",
+          "tag": "Asthma: maintenance",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Adults (18 years and older): 1-2 inhalations twice daily. Some patients may require up to a maximum of 4 inhalations twice daily."
+            },
+            {
+              "s": "emc-1327",
+              "q": "Adolescents (12 - 17 years): 1-2 inhalations twice daily."
+            }
+          ]
+        },
+        {
+          "t": "Maintenance and reliever therapy (12 years and over): maintenance 2 inhalations a day (1 morning and evening, or 2 once daily; some patients 2 twice daily) plus 1 extra inhalation as needed, another after a few minutes if needed; no more than 6 inhalations on one occasion. More than 8 inhalations a day is not normally needed; up to 12 a day for a limited period. Patients using more than 8 a day should seek medical advice.",
+          "tag": "Asthma: maintenance and reliever",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "The recommended maintenance dose is 2 inhalations per day, given either as one inhalation in the morning and evening or as 2 inhalations in either the morning or evening."
+            },
+            {
+              "s": "emc-1327",
+              "q": "Patients should take 1 additional inhalation as needed in response to symptoms."
+            },
+            {
+              "s": "emc-1327",
+              "q": "Not more than 6 inhalations should be taken on any single occasion."
+            },
+            {
+              "s": "emc-1327",
+              "q": "A total daily dose of more than 8 inhalations is not normally needed; however, a total daily dose of up to 12 inhalations could be used for a limited period."
+            },
+            {
+              "s": "emc-1327",
+              "q": "Patients using more than 8 inhalations daily should be strongly recommended to seek medical advice."
+            }
+          ]
+        },
+        {
+          "t": "Reliever-only therapy, mild asthma (12 years and over): 1 inhalation as needed, another after a few minutes if symptoms persist; no more than 6 on one occasion; up to 12 a day for a limited period. Over 8 a day: reassess.",
+          "tag": "Asthma: reliever only",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Patients should take 1 inhalation as needed in response to symptoms."
+            },
+            {
+              "s": "emc-1327",
+              "q": "Patients using more than 8 inhalations daily should be reassessed for alternative explanations of persisting symptoms."
+            }
+          ]
+        },
+        {
+          "t": "COPD, adults: 2 inhalations twice daily.",
+          "tag": "COPD",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "COPD Recommended doses: Adults: 2 inhalations twice daily"
+            }
+          ]
+        },
+        {
+          "t": "Elderly: no special dosing requirements.",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "There are no special dosing requirements for elderly patients."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "This 200/6 strength is for 12 years and over. A lower strength (100/6) is available for 6-11 years. Not recommended under 6 years. Maintenance-and-reliever and reliever-only regimens are not recommended in children.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "A lower strength (100 micrograms/6 micrograms/inhalation) is available for children 6-11 years."
+            },
+            {
+              "s": "emc-1327",
+              "q": "Symbicort is not recommended for children younger than 6 years"
+            },
+            {
+              "s": "emc-1327",
+              "q": "Symbicort maintenance and reliever therapy is not recommended for children."
+            },
+            {
+              "s": "emc-1327",
+              "q": "Symbicort reliever therapy is not recommended for children."
+            }
+          ]
+        },
+        {
+          "t": "Monitor height regularly in children on prolonged inhaled corticosteroid.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "It is recommended that the height of children receiving prolonged treatment with inhaled corticosteroids is regularly monitored."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to budesonide, formoterol or the lactose excipient (contains small amounts of milk proteins).",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Hypersensitivity to the active substances or to the excipient listed in section 6.1 (lactose, which contains small amounts of milk proteins)."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Do not start during an exacerbation or in significantly worsening or acutely deteriorating asthma. Do not stop abruptly; taper the maintenance dose.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Patients should not be initiated on Symbicort during an exacerbation, or if they have significantly worsening or acutely deteriorating asthma."
+            },
+            {
+              "s": "emc-1327",
+              "q": "It is recommended that the maintenance dose is tapered when the treatment is discontinued and the dosing should not be stopped abruptly."
+            }
+          ]
+        },
+        {
+          "t": "Use with caution in thyrotoxicosis, phaeochromocytoma, diabetes, untreated hypokalaemia, HOCM, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders (ischaemic heart disease, tachyarrhythmias, severe heart failure). Caution with QTc prolongation (formoterol can prolong QTc).",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+            },
+            {
+              "s": "emc-1327",
+              "q": "such as ischaemic heart disease, tachyarrhythmias or severe heart failure"
+            },
+            {
+              "s": "emc-1327",
+              "q": "Caution should be observed when treating patients with prolongation of the QTc-interval."
+            }
+          ]
+        },
+        {
+          "t": "Hypokalaemia: high-dose beta2 agonists can cause serious hypokalaemia; xanthines, steroids and diuretics add to it. Particular caution in unstable or acute severe asthma; monitor serum potassium then.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Potentially serious hypokalaemia may result from high doses of β2 adrenoceptor agonists."
+            },
+            {
+              "s": "emc-1327",
+              "q": "It is recommended that serum potassium levels are monitored during these circumstances."
+            }
+          ]
+        },
+        {
+          "t": "Adrenal suppression: consider extra systemic steroid cover in stress (severe infection, elective surgery); rapid dose reduction can cause acute adrenal crisis. Take care when transferring from oral steroids.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "additional systemic corticosteroid cover should be considered during periods of stress such as severe infections or elective surgery"
+            },
+            {
+              "s": "emc-1327",
+              "q": "Rapid reduction in the dose of steroids can induce acute adrenal crisis."
+            }
+          ]
+        },
+        {
+          "t": "COPD: increased pneumonia incidence with inhaled corticosteroids; stay vigilant.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "An increase in the incidence of pneumonia, including pneumonia requiring hospitalisation, has been observed in patients with COPD receiving inhaled corticosteroids."
+            }
+          ]
+        },
+        {
+          "t": "Re-evaluate the inhaled corticosteroid in active or quiescent pulmonary tuberculosis and fungal or viral airway infections. Refer to an ophthalmologist if blurred vision or other visual disturbance.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "The need for, and dose of inhaled corticosteroids should be re-evaluated in patients with active or quiescent pulmonary tuberculosis, fungal and viral infections in the airways."
+            },
+            {
+              "s": "emc-1327",
+              "q": "If a patient presents with symptoms such as blurred vision or other visual disturbances, the patient should be considered for referral to an ophthalmologist"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Potent CYP3A4 inhibitors (e.g. ketoconazole, itraconazole, clarithromycin, HIV protease inhibitors): avoid; if unavoidable, separate the doses as much as possible. Maintenance-and-reliever use is not recommended with them.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "clarithromycin, telithromycin, nefazodone and HIV protease inhibitors) are likely to markedly increase plasma levels of budesonide and concomitant use should be avoided"
+            },
+            {
+              "s": "emc-1327",
+              "q": "In patients using potent CYP3A4 inhibitors, Symbicort maintenance and reliever therapy is not recommended."
+            }
+          ]
+        },
+        {
+          "t": "Beta-blockers (including eye drops): do not give together unless there are compelling reasons.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Symbicort should therefore not be given together with beta-adrenergic blockers (including eye drops) unless there are compelling reasons."
+            }
+          ]
+        },
+        {
+          "t": "QTc-prolonging drugs (quinidine, disopyramide, procainamide, phenothiazines, terfenadine, tricyclic antidepressants): increased risk of ventricular arrhythmias.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Concomitant treatment with quinidine, disopyramide, procainamide, phenothiazines, antihistamines (terfenadine) and tricyclic antidepressants can prolong the QTc-interval and increase the risk of ventricular arrhythmias."
+            }
+          ]
+        },
+        {
+          "t": "Xanthines, corticosteroids and diuretics may potentiate beta2-agonist hypokalaemia.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Hypokalaemia may result from β2-agonist therapy and may be potentiated by concomitant treatment with xanthine derivatives, corticosteroids and diuretics"
+            }
+          ]
+        },
+        {
+          "t": "MAO inhibitors may precipitate hypertensive reactions. Levodopa, levothyroxine, oxytocin and alcohol can impair cardiac tolerance to beta2 sympathomimetics. Higher arrhythmia risk with halogenated hydrocarbon anaesthesia.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Concomitant treatment with monoamine oxidase inhibitors, including agents with similar properties such as furazolidone and procarbazine, may precipitate hypertensive reactions."
+            },
+            {
+              "s": "emc-1327",
+              "q": "In addition L-Dopa, L-thyroxine, oxytocin and alcohol can impair cardiac tolerance towards β2 sympathomimetics."
+            },
+            {
+              "s": "emc-1327",
+              "q": "There is an elevated risk of arrhythmias in patients receiving concomitant anaesthesia with halogenated hydrocarbons."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No data in renal impairment; no renal dose advice stated.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "There are no data available for use of Symbicort in patients with hepatic or renal impairment."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No data in hepatic impairment. Increased exposure is expected in severe liver cirrhosis (both drugs are mainly cleared by the liver).",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "There are no data available for use of Symbicort in patients with hepatic or renal impairment."
+            },
+            {
+              "s": "emc-1327",
+              "q": "an increased exposure can be expected in patients with severe liver cirrhosis"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: no clinical data with the combination; about 2000 pregnancies with inhaled budesonide show no increased teratogenic risk. Use only when benefits outweigh risks, at the lowest effective budesonide dose.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Data on approximately 2000 exposed pregnancies indicate no increased teratogenic risk associated with the use of inhaled budesonide."
+            },
+            {
+              "s": "emc-1327",
+              "q": "During pregnancy, Symbicort should only be used when the benefits outweigh the potential risks. The lowest effective dose of budesonide needed to maintain adequate asthma control should be used."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: inhaled corticosteroids should be continued in pregnancy; no evidence they harm the baby. ICS/LABA (usually formoterol) inhalers are standard asthma treatment; do not stop asthma treatment because of pregnancy unless advised.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-inhaled-corticosteroids",
+              "q": "Inhaled corticosteroids should be continued throughout pregnancy to ensure that breathing problems do not occur."
+            },
+            {
+              "s": "bumps-inhaled-corticosteroids",
+              "q": "There is no evidence that use of inhaled corticosteroids in pregnancy harms the baby."
+            },
+            {
+              "s": "bumps-asthma",
+              "q": "ICS/long-acting beta-2 agonist (LABA) combination inhalers, usually containing the LABA formoterol"
+            },
+            {
+              "s": "bumps-asthma",
+              "q": "Do not stop your asthma treatment because you are pregnant unless advised by a healthcare professional."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: budesonide passes into breast milk but no effect on the infant is expected at therapeutic doses; formoterol excretion unknown. Use only if benefit to the mother outweighs any risk to the child.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Budesonide is excreted in breast milk. However, at therapeutic doses no effects on the suckling child are anticipated."
+            },
+            {
+              "s": "emc-1327",
+              "q": "Administration of Symbicort to women who are breast-feeding should only be considered if the expected benefit to the mother is greater than any possible risk to the child."
+            }
+          ]
+        },
+        {
+          "t": "SPS: inhaled budesonide can be used during breastfeeding (formoterol not covered on this page).",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-ics-breastfeeding",
+              "q": "Rectal, inhaled or intranasal budesonide can be used during breastfeeding."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "No fertility data for budesonide; formoterol reduced fertility in male rats at high systemic exposure.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "There is no data available on the potential effect of budesonide on fertility."
+            },
+            {
+              "s": "emc-1327",
+              "q": "Animal reproduction studies with formoterol have shown a somewhat reduced fertility in male rats at high systemic exposure"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: oropharyngeal candida, pneumonia (COPD), headache, tremor, palpitations, throat irritation, cough, hoarseness. Tremor and palpitations are usually mild and settle within days.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Common Candida infections in the oropharynx Pneumonia (in COPD patients)"
+            },
+            {
+              "s": "emc-1327",
+              "q": "Common Headache, tremor"
+            },
+            {
+              "s": "emc-1327",
+              "q": "Common Palpitations"
+            },
+            {
+              "s": "emc-1327",
+              "q": "Common Mild irritation in the throat, coughing, dysphonia including hoarseness"
+            },
+            {
+              "s": "emc-1327",
+              "q": "These tend to be mild and usually disappear within a few days of treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Paradoxical bronchospasm (wheeze straight after a dose): treat at once with a rapid-acting bronchodilator, stop this inhaler and assess.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "If the patient experiences paradoxical bronchospasm Symbicort should be discontinued immediately"
+            },
+            {
+              "s": "emc-1327",
+              "q": "Paradoxical bronchospasm responds to a rapid-acting inhaled bronchodilator and should be treated straightaway"
+            }
+          ]
+        },
+        {
+          "t": "Rare: hypersensitivity including angioedema and anaphylaxis; cardiac arrhythmias (AF, SVT, extrasystoles); hypokalaemia.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Rare Immediate and delayed hypersensitivity reactions, e.g. exanthema, urticaria, pruritus, dermatitis, angioedema and anaphylactic reaction"
+            },
+            {
+              "s": "emc-1327",
+              "q": "Rare Cardiac arrhythmias, e.g. atrial fibrillation, supraventricular tachycardia, extrasystoles"
+            }
+          ]
+        },
+        {
+          "t": "Sudden, progressive loss of asthma or COPD control is potentially life-threatening: urgent medical assessment.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Sudden and progressive deterioration in control of asthma or COPD is potentially life threatening and the patient should undergo urgent medical assessment."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Reassess regularly so use stays optimal; assess more often when starting or changing dose.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Patients should be regularly reassessed by their prescriber/health care provider so that the usage of Symbicort remains optimal."
+            }
+          ]
+        },
+        {
+          "t": "Serum potassium in unstable or acute severe asthma; extra blood glucose checks in diabetes.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "It is recommended that serum potassium levels are monitored during these circumstances."
+            },
+            {
+              "s": "emc-1327",
+              "q": "additional blood glucose controls should be considered in diabetic patients"
+            }
+          ]
+        },
+        {
+          "t": "HPA axis function regularly in patients transferred from oral steroids; height in children on prolonged treatment.",
+          "tag": "ongoing",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "In such circumstances HPA axis function should be monitored regularly."
+            },
+            {
+              "s": "emc-1327",
+              "q": "It is recommended that the height of children receiving prolonged treatment with inhaled corticosteroids is regularly monitored."
+            }
+          ]
+        },
+        {
+          "t": "Stop at once if paradoxical bronchospasm occurs.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "If the patient experiences paradoxical bronchospasm Symbicort should be discontinued immediately"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Breathe in forcefully and deeply through the mouthpiece; never breathe out through it; replace the cover. Rinse mouth with water after the maintenance dose to reduce thrush.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "to breathe in forcefully and deeply through the mouthpiece to ensure that an optimal dose is delivered to the lungs."
+            },
+            {
+              "s": "emc-1327",
+              "q": "never to breathe out through the mouthpiece."
+            },
+            {
+              "s": "emc-1327",
+              "q": "to rinse their mouth out with water after inhaling the maintenance dose to minimise the risk of oropharyngeal thrush."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Keep the reliever (separate inhaler, or this inhaler if on maintenance-and-reliever) with you at all times; take maintenance doses even when well.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "Patients should be advised to have their rescue inhaler available at all times"
+            },
+            {
+              "s": "emc-1327",
+              "q": "they should be reminded to take their Symbicort maintenance dose as prescribed, even when asymptomatic"
+            }
+          ]
+        },
+        {
+          "t": "Get medical help if the inhaler works less well or more inhalations than usual are needed. All asthma patients should have a written personal asthma action plan.",
+          "src": [
+            {
+              "s": "emc-1327",
+              "q": "If patients find the treatment less effective, or need more inhalations than usual, medical attention must be sought"
+            },
+            {
+              "s": "emc-1327",
+              "q": "It is recommended that all patients with asthma are provided with a written personal asthma action plan."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "budesonide-formoterol:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "budesonide-formoterol",
+      "allergen": [
+        "budesonide",
+        "formoterol"
+      ],
+      "concern": "Hypersensitivity to budesonide or formoterol",
+      "consequence": "Risk of hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Hypersensitivity to the active substances or to the excipient listed in section 6.1 (lactose, which contains small amounts of milk proteins)."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:cows-milk-protein-allergy",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "budesonide-formoterol",
+      "condition": "cows-milk-protein-allergy",
+      "concern": "Milk protein allergy (lactose excipient contains milk proteins)",
+      "consequence": "The lactose excipient contains small amounts of milk proteins, which may cause allergic reactions.",
+      "action": "Do not use (hypersensitivity to the excipient is a contraindication).",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Hypersensitivity to the active substances or to the excipient listed in section 6.1 (lactose, which contains small amounts of milk proteins)."
+        },
+        {
+          "s": "emc-1327",
+          "q": "The excipient lactose contains small amounts of milk proteins, which may cause allergic reactions."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:thyrotoxicosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "thyrotoxicosis",
+      "concern": "Thyrotoxicosis",
+      "consequence": "Beta2 agonist (formoterol) effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:phaeochromocytoma",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "phaeochromocytoma",
+      "concern": "Phaeochromocytoma",
+      "consequence": "Beta2 agonist (formoterol) effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:hypokalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "hypokalaemia",
+      "concern": "Untreated hypokalaemia",
+      "consequence": "Beta2 agonist (formoterol) effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:hocm",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "hocm",
+      "concern": "Hypertrophic obstructive cardiomyopathy / idiopathic subvalvular aortic stenosis",
+      "consequence": "Beta2 agonist (formoterol) effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:hypertension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "hypertension",
+      "concern": "Severe hypertension",
+      "consequence": "Beta2 agonist (formoterol) effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:aortic-aneurysm",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "aortic-aneurysm",
+      "concern": "Aneurysm",
+      "consequence": "Beta2 agonist (formoterol) effects may worsen the condition.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Ischaemic heart disease",
+      "consequence": "Severe cardiovascular disorder; beta2 agonist effects may worsen it.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+        },
+        {
+          "s": "emc-1327",
+          "q": "such as ischaemic heart disease, tachyarrhythmias or severe heart failure"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:cardiac-arrhythmia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "cardiac-arrhythmia",
+      "concern": "Tachyarrhythmias",
+      "consequence": "Severe cardiovascular disorder; beta2 agonist effects may worsen it.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+        },
+        {
+          "s": "emc-1327",
+          "q": "such as ischaemic heart disease, tachyarrhythmias or severe heart failure"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "severe-heart-failure",
+      "concern": "Severe heart failure",
+      "consequence": "Severe cardiovascular disorder; beta2 agonist effects may worsen it.",
+      "action": "Use with caution.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+        },
+        {
+          "s": "emc-1327",
+          "q": "such as ischaemic heart disease, tachyarrhythmias or severe heart failure"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "diabetes",
+      "concern": "Diabetes mellitus",
+      "consequence": "Beta2 agonists can raise blood glucose.",
+      "action": "Use with caution; consider extra blood glucose checks.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should be administered with caution in patients with thyrotoxicosis, phaeochromocytoma, diabetes mellitus, untreated hypokalaemia, hypertrophic obstructive cardiomyopathy, idiopathic subvalvular aortic stenosis, severe hypertension, aneurysm or other severe cardiovascular disorders"
+        },
+        {
+          "s": "emc-1327",
+          "q": "additional blood glucose controls should be considered in diabetic patients"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:qt-prolongation",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "qt-prolongation",
+      "effect": "qt-prolongation",
+      "concern": "QTc prolongation",
+      "consequence": "Formoterol itself may prolong the QTc interval.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be observed",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Caution should be observed when treating patients with prolongation of the QTc-interval. Formoterol itself may induce prolongation of the QTc-interval."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:acute-asthma-attack",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "budesonide-formoterol",
+      "condition": "acute-asthma-attack",
+      "concern": "Asthma exacerbation or acutely deteriorating asthma",
+      "consequence": "Not suitable to start during an exacerbation.",
+      "action": "Do not start during an exacerbation or significantly worsening/acutely deteriorating asthma.",
+      "sourceWording": "should not be initiated",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Patients should not be initiated on Symbicort during an exacerbation, or if they have significantly worsening or acutely deteriorating asthma."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:condition:pulmonary-tuberculosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "condition": "pulmonary-tuberculosis",
+      "concern": "Pulmonary tuberculosis or fungal/viral airway infection",
+      "consequence": "Inhaled corticosteroid may worsen airway infection.",
+      "action": "Re-evaluate the need for and dose of the inhaled corticosteroid.",
+      "sourceWording": "should be re-evaluated",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "The need for, and dose of inhaled corticosteroids should be re-evaluated in patients with active or quiescent pulmonary tuberculosis, fungal and viral infections in the airways."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:interaction:clarithromycin",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "budesonide-formoterol",
+      "other": "clarithromycin",
+      "concern": "Potent CYP3A4 inhibitor (clarithromycin)",
+      "consequence": "Likely to markedly increase budesonide levels (systemic corticosteroid effects).",
+      "action": "Avoid. If unavoidable, separate the doses as much as possible; maintenance-and-reliever use is not recommended.",
+      "sourceWording": "concomitant use should be avoided",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "clarithromycin, telithromycin, nefazodone and HIV protease inhibitors) are likely to markedly increase plasma levels of budesonide and concomitant use should be avoided"
+        },
+        {
+          "s": "emc-1327",
+          "q": "In patients using potent CYP3A4 inhibitors, Symbicort maintenance and reliever therapy is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:interaction:beta-blocker",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "budesonide-formoterol",
+      "other": "group:beta-blocker",
+      "concern": "Beta-blockers (including eye drops)",
+      "consequence": "Beta-blockers can weaken or inhibit the effect of formoterol.",
+      "action": "Do not give together unless there are compelling reasons.",
+      "sourceWording": "should therefore not be given together",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Beta-adrenergic blockers can weaken or inhibit the effect of formoterol."
+        },
+        {
+          "s": "emc-1327",
+          "q": "Symbicort should therefore not be given together with beta-adrenergic blockers (including eye drops) unless there are compelling reasons."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "budesonide-formoterol",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "qt-prolongation",
+      "concern": "Tricyclic antidepressants",
+      "consequence": "Can prolong the QTc interval and increase the risk of ventricular arrhythmias.",
+      "action": "No specific action stated; QTc caution applies (formoterol can prolong QTc).",
+      "sourceWording": "can prolong the QTc-interval",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Concomitant treatment with quinidine, disopyramide, procainamide, phenothiazines, antihistamines (terfenadine) and tricyclic antidepressants can prolong the QTc-interval and increase the risk of ventricular arrhythmias."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:interaction:maoi",
+      "kind": "interaction",
+      "level": "info",
+      "med": "budesonide-formoterol",
+      "other": "group:maoi",
+      "concern": "MAO inhibitors",
+      "consequence": "May precipitate hypertensive reactions.",
+      "action": "No specific action stated.",
+      "sourceWording": "may precipitate hypertensive reactions",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Concomitant treatment with monoamine oxidase inhibitors, including agents with similar properties such as furazolidone and procarbazine, may precipitate hypertensive reactions."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:interaction:levothyroxine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "budesonide-formoterol",
+      "other": "levothyroxine",
+      "concern": "Levothyroxine",
+      "consequence": "Can impair cardiac tolerance to beta2 sympathomimetics.",
+      "action": "No specific action stated.",
+      "sourceWording": "can impair cardiac tolerance",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "In addition L-Dopa, L-thyroxine, oxytocin and alcohol can impair cardiac tolerance towards β2 sympathomimetics."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:interaction:corticosteroid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "other": "group:corticosteroid",
+      "concern": "Corticosteroids (systemic)",
+      "consequence": "May potentiate beta2-agonist hypokalaemia.",
+      "action": "Particular caution in unstable or acute severe asthma; monitor serum potassium in these situations.",
+      "sourceWording": "Particular caution is recommended",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Hypokalaemia may result from β2-agonist therapy and may be potentiated by concomitant treatment with xanthine derivatives, corticosteroids and diuretics"
+        },
+        {
+          "s": "emc-1327",
+          "q": "Particular caution is recommended in unstable asthma with variable use of rescue bronchodilators, in acute severe asthma"
+        },
+        {
+          "s": "emc-1327",
+          "q": "It is recommended that serum potassium levels are monitored during these circumstances."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:interaction:diuretic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "other": "group:diuretic",
+      "concern": "Diuretics",
+      "consequence": "May potentiate beta2-agonist hypokalaemia.",
+      "action": "Particular caution in unstable or acute severe asthma; monitor serum potassium in these situations.",
+      "sourceWording": "Particular caution is recommended",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Hypokalaemia may result from β2-agonist therapy and may be potentiated by concomitant treatment with xanthine derivatives, corticosteroids and diuretics"
+        },
+        {
+          "s": "emc-1327",
+          "q": "Particular caution is recommended in unstable asthma with variable use of rescue bronchodilators, in acute severe asthma"
+        },
+        {
+          "s": "emc-1327",
+          "q": "It is recommended that serum potassium levels are monitored during these circumstances."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:hepatic:severe",
+      "kind": "hepatic",
+      "level": "info",
+      "med": "budesonide-formoterol",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe liver cirrhosis",
+      "consequence": "Increased exposure to budesonide and formoterol can be expected (no data).",
+      "action": "No dose advice stated; no data in hepatic impairment.",
+      "sourceWording": "increased exposure can be expected",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "As budesonide and formoterol are primarily eliminated via hepatic metabolism, an increased exposure can be expected in patients with severe liver cirrhosis."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "concern": "Pregnancy",
+      "consequence": "No clinical data with the combination; inhaled budesonide data (about 2000 pregnancies) show no increased teratogenic risk.",
+      "action": "Use only when benefits outweigh risks; lowest effective budesonide dose.",
+      "sourceWording": "should only be used when the benefits outweigh the potential risks",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "During pregnancy, Symbicort should only be used when the benefits outweigh the potential risks."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:pregnancy:bumps-ics",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "budesonide-formoterol",
+      "concern": "Pregnancy (BUMPS, inhaled corticosteroids)",
+      "consequence": "BUMPS: no evidence inhaled corticosteroids harm the baby; continue them in pregnancy. ICS/LABA inhalers (usually with formoterol) are standard asthma treatment. This differs in strength from the SmPC.",
+      "action": "Do not stop asthma treatment because of pregnancy unless advised.",
+      "sourceWording": "should be continued throughout pregnancy",
+      "src": [
+        {
+          "s": "bumps-inhaled-corticosteroids",
+          "q": "Inhaled corticosteroids should be continued throughout pregnancy to ensure that breathing problems do not occur."
+        },
+        {
+          "s": "bumps-inhaled-corticosteroids",
+          "q": "There is no evidence that use of inhaled corticosteroids in pregnancy harms the baby."
+        },
+        {
+          "s": "bumps-asthma",
+          "q": "ICS/long-acting beta-2 agonist (LABA) combination inhalers, usually containing the LABA formoterol"
+        },
+        {
+          "s": "bumps-asthma",
+          "q": "Do not stop your asthma treatment because you are pregnant unless advised by a healthcare professional."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "budesonide-formoterol",
+      "concern": "Breastfeeding",
+      "consequence": "Budesonide passes into milk (no effect expected at therapeutic doses); formoterol unknown.",
+      "action": "Consider only if expected benefit to the mother is greater than any possible risk to the child.",
+      "sourceWording": "should only be considered if the expected benefit",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Administration of Symbicort to women who are breast-feeding should only be considered if the expected benefit to the mother is greater than any possible risk to the child."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:breastfeeding:sps-budesonide",
+      "kind": "breastfeeding",
+      "level": "info",
+      "med": "budesonide-formoterol",
+      "concern": "Breastfeeding (SPS, budesonide component)",
+      "consequence": "SPS: inhaled budesonide can be used in breastfeeding (formoterol not covered by this SPS page).",
+      "action": "No infant monitoring usually needed.",
+      "sourceWording": "can be used during breastfeeding",
+      "src": [
+        {
+          "s": "sps-ics-breastfeeding",
+          "q": "Rectal, inhaled or intranasal budesonide can be used during breastfeeding."
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:age:under-6",
+      "kind": "age",
+      "level": "avoid",
+      "med": "budesonide-formoterol",
+      "age": {
+        "minYears": 0,
+        "maxYears": 6
+      },
+      "concern": "Child under 6 years",
+      "consequence": "Only limited data in children under 6 years.",
+      "action": "Not recommended under 6 years.",
+      "sourceWording": "is not recommended for children younger than 6 years",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "Symbicort is not recommended for children younger than 6 years"
+        }
+      ]
+    },
+    {
+      "id": "budesonide-formoterol:age:6-11",
+      "kind": "age",
+      "level": "dose",
+      "med": "budesonide-formoterol",
+      "age": {
+        "minYears": 6,
+        "maxYears": 12
+      },
+      "concern": "Child 6 to 11 years (this 200/6 strength is licensed from 12 years)",
+      "consequence": "This strength is indicated for adults and adolescents 12 years and over; a lower strength (100/6) is available for children 6 to 11 years.",
+      "action": "Use the lower 100/6 strength for maintenance therapy in children 6 to 11 years. Maintenance-and-reliever and reliever-only use are not recommended in children.",
+      "sourceWording": "A lower strength (100 micrograms/6 micrograms/inhalation) is available for children 6-11 years",
+      "src": [
+        {
+          "s": "emc-1327",
+          "q": "is indicated in adults and adolescents (12 years and older) for the regular treatment of asthma"
+        },
+        {
+          "s": "emc-1327",
+          "q": "A lower strength (100 micrograms/6 micrograms/inhalation) is available for children 6-11 years."
+        },
+        {
+          "s": "emc-1327",
+          "q": "Symbicort maintenance and reliever therapy is not recommended for children."
+        },
+        {
+          "s": "emc-1327",
+          "q": "Symbicort reliever therapy is not recommended for children."
+        }
+      ]
+    }
+  ]
+}

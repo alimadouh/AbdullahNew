@@ -1,0 +1,403 @@
+{
+  "id": "beclometasone-nasal",
+  "name": "Beclometasone dipropionate (nasal spray or inhaler)",
+  "ingredients": ["beclometasone"],
+  "className": "Corticosteroid (nasal spray; also inhaled)",
+  "groups": ["inhaled-corticosteroid"],
+  "searchTerms": ["beclometasone", "beclomethasone", "beclometasone dipropionate", "beclometasone nasal spray", "beclometasone inhaler"],
+  "formulations": [
+    {
+      "id": "beclometasone-nasal-spray",
+      "label": "Aqueous nasal spray",
+      "route": "nasal",
+      "strengths": "50 micrograms per spray",
+      "release": "n/a",
+      "note": "Contains benzalkonium chloride.",
+      "src": [
+        { "s": "emc-844", "q": "Beclometasone Dipropionate 50μg (as monohydrate, micronised)" },
+        { "s": "emc-844", "q": "Excipient with known effect: Benzalkonium Chloride" }
+      ],
+      "sourceIds": ["emc-844"]
+    },
+    {
+      "id": "beclometasone-inhaler-250",
+      "label": "Pressurised inhaler (CFC-free) 250 micrograms",
+      "route": "inhalation",
+      "strengths": "250 micrograms per actuation",
+      "release": "n/a",
+      "note": "The clinic's inhaler product has no UK SmPC; a different UK CFC-free 250 micrograms beclometasone pressurised inhaler SmPC was used. CFC-free beclometasone inhalers differ in potency (extra-fine products are about twice as potent), so check which product is given.",
+      "src": [
+        { "s": "emc-6977", "q": "Beclometasone dipropionate 250 micrograms per metered (ex-valve) dose" },
+        { "s": "mhra-dsu-inhaled-corticosteroids-2008", "q": "They have different potencies because of their different formulations, which may have implications for both safety and efficacy." }
+      ],
+      "sourceIds": ["emc-6977"]
+    }
+  ],
+  "brandPrescribing": {
+    "t": "Inhaler only: MHRA and SPS advise prescribing CFC-free beclometasone pressurised inhalers by brand name, because products are not interchangeable (extra-fine products are more potent). Does not apply to the nasal spray.",
+    "src": [
+      { "s": "mhra-dsu-inhaled-corticosteroids-2008", "q": "prescribe CFC-free beclometasone metered-dose inhalers by brand name to reduce the risk of dosing errors" },
+      { "s": "sps-brand-name-examples", "q": "Beclometasone dipropionate pressurised metered-dose inhalers are not interchangeable." }
+    ]
+  },
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Nasal spray: prevention and treatment of perennial and seasonal allergic rhinitis (including hay fever) and vasomotor rhinitis.",
+        "formulations": ["beclometasone-nasal-spray"],
+        "src": [{ "s": "emc-844", "q": "indicated for the prophylaxis and treatment of perennial and seasonal allergic rhinitis including hayfever, and vasomotor rhinitis" }] },
+      { "t": "Inhaler: preventive management of mild, moderate or severe asthma.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [{ "s": "emc-6977", "q": "indicated for the prophylactic management of mild, moderate, or severe asthma in adults or children" }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "Inhaler: prescribe CFC-free beclometasone inhalers by brand; products are not interchangeable.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [
+          { "s": "mhra-dsu-inhaled-corticosteroids-2008", "q": "prescribe CFC-free beclometasone metered-dose inhalers by brand name to reduce the risk of dosing errors" },
+          { "s": "sps-brand-name-examples", "q": "Beclometasone dipropionate pressurised metered-dose inhalers are not interchangeable." }
+        ] }
+    ] },
+    "dosing": { "items": [
+      { "t": "2 sprays into each nostril twice daily (400 micrograms a day); may reduce to 1 spray each nostril twice daily once controlled. Total daily use should not normally exceed 8 sprays.",
+        "tag": "Rhinitis, adults and children over 6 years (nasal spray)",
+        "formulations": ["beclometasone-nasal-spray"],
+        "src": [
+          { "s": "emc-844", "q": "The recommended dosage is two sprays into each nostril twice daily (400 micrograms/day)." },
+          { "s": "emc-844", "q": "Total daily administration should not normally exceed eight sprays." }
+        ] },
+      { "t": "Usually 1000 micrograms a day, may increase to 2000 micrograms a day, in 2 to 4 divided doses; reduce when stable. Use a spacer for total daily doses of 1000 micrograms or more (16 years and over).",
+        "tag": "Asthma, adults including elderly (inhaler 250 micrograms)",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [
+          { "s": "emc-6977", "q": "Usually 1000 micrograms daily, which may be increased to 2000 micrograms daily." },
+          { "s": "emc-6977", "q": "The total daily dosage should be administered as two to four divided doses." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Nasal spray: from 6 years (adult dose); insufficient data under 6 years.",
+        "formulations": ["beclometasone-nasal-spray"],
+        "src": [{ "s": "emc-844", "q": "For children under six years old, there are insufficient clinical data to recommend use." }] },
+      { "t": "250 micrograms inhaler: not recommended for children.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [{ "s": "emc-6977", "q": "Clenil Modulite 250 is not recommended for children." }] },
+      { "t": "Monitor height in children on prolonged treatment; if growth slows, reduce to the lowest effective dose and consider specialist referral.",
+        "src": [
+          { "s": "emc-844", "q": "It is recommended that the height of children receiving prolonged treatment with nasal corticosteroids is regularly monitored." },
+          { "s": "emc-6977", "q": "It is recommended that the height of children receiving prolonged treatment with inhaled corticosteroids is regularly monitored." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to beclometasone or any excipient.",
+        "src": [
+          { "s": "emc-844", "q": "Hypersensitivity to the active substance or any of the excipients listed in section 6.1." },
+          { "s": "emc-6977", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }
+        ] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Systemic steroid effects possible, mainly at high doses for long periods (adrenal suppression, growth slowing, reduced bone density, cataract, glaucoma, mood or behaviour changes). Above-recommended or prolonged high doses: consider systemic steroid cover during stress or elective surgery.",
+        "src": [
+          { "s": "emc-844", "q": "Systemic effects of nasal corticosteroids may occur, particularly at high doses prescribed for prolonged periods." },
+          { "s": "emc-6977", "q": "Additional systemic corticosteroid cover should be considered during periods of stress or elective surgery." }
+        ] },
+      { "t": "Nasal spray: treat nasal or sinus infections appropriately (not a contraindication). Contains benzalkonium chloride, which may cause bronchospasm or nasal irritation.",
+        "formulations": ["beclometasone-nasal-spray"],
+        "src": [
+          { "s": "emc-844", "q": "Infections of the nasal passages and paranasal sinuses should be appropriately treated but do not constitute a specific contra-indication" },
+          { "s": "emc-844", "q": "Beconase Aqueous Nasal Spray contains 0.02 mg Benzalkonium Chloride in each unit dose, which may cause bronchospasm." }
+        ] },
+      { "t": "Inhaler: not for acute asthma relief; do not stop abruptly. Special care in active or quiescent pulmonary tuberculosis. Moving from long-term or high-dose systemic steroids needs special care and slow oral steroid reduction.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [
+          { "s": "emc-6977", "q": "Clenil Modulite does not provide relief of acute asthma symptoms, which require a short-acting inhaled bronchodilator." },
+          { "s": "emc-6977", "q": "Treatment with Clenil Modulite should not be stopped abruptly." },
+          { "s": "emc-6977", "q": "special care is necessary in patients with active or quiescent pulmonary tuberculosis" }
+        ] },
+      { "t": "Blurred vision or other visual disturbance: consider referral to an ophthalmologist.",
+        "detail": true,
+        "src": [{ "s": "emc-844", "q": "the patient should be considered for referral to an ophthalmologist for evaluation of possible causes" }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Beclometasone depends less on CYP3A than some other corticosteroids and interactions are generally unlikely, but systemic effects with strong CYP3A inhibitors (for example ritonavir, cobicistat) cannot be excluded: use caution and monitor.",
+        "src": [
+          { "s": "emc-844", "q": "Beclomethasone is less dependent on CYP3A metabolism than some other corticosteroids, and in general interactions are unlikely" },
+          { "s": "emc-844", "q": "caution and appropriate monitoring is advised with the use of such agents" }
+        ] },
+      { "t": "MHRA: where a steroid is needed with ritonavir or cobicistat, consider beclometasone where possible (lower, but not zero, interaction risk).",
+        "detail": true,
+        "src": [{ "s": "mhra-dsu-cobicistat-ritonavir-steroids-2016", "q": "use of beclomethasone should be considered where possible-particularly for long-term use" }] },
+      { "t": "Inhaler contains a small amount of ethanol: theoretical interaction in particularly sensitive patients on disulfiram or metronidazole.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "detail": true,
+        "src": [{ "s": "emc-6977", "q": "There is a theoretical potential for interaction in particularly sensitive patients taking disulfiram or metronidazole." }] }
+    ] },
+    "renal": { "items": [
+      { "t": "Inhaler: no dose adjustment needed in renal impairment. Nasal spray SmPC: not stated.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [{ "s": "emc-6977", "q": "No dosage adjustment is needed in patients with hepatic or renal impairment." }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Inhaler: no dose adjustment needed in hepatic impairment. Nasal spray SmPC: not stated.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [{ "s": "emc-6977", "q": "No dosage adjustment is needed in patients with hepatic or renal impairment." }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "Nasal spray SmPC: inadequate evidence of safety; avoid in pregnancy unless thought essential by the doctor (direct nasal delivery minimises systemic exposure).",
+        "formulations": ["beclometasone-nasal-spray"],
+        "src": [{ "s": "emc-844", "q": "The use of beclometasone dipropionate should be avoided during pregnancy unless thought essential by the doctor." }] },
+      { "t": "Inhaler SmPC: should not be used in pregnancy unless the expected benefit to the mother outweighs any risk to the fetus.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [{ "s": "emc-6977", "q": "It should not be used in pregnancy or lactation unless the expected benefits to the mother are thought to outweigh any potential risks to the fetus or neonate." }] },
+      { "t": "BUMPS: inhaled corticosteroids (including beclometasone) should be continued throughout pregnancy; no evidence of harm to the baby.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [
+          { "s": "bumps-corticosteroids-inhaled", "q": "Inhaled corticosteroids should be continued throughout pregnancy to ensure that breathing problems do not occur." },
+          { "s": "bumps-corticosteroids-inhaled", "q": "There is no evidence that use of inhaled corticosteroids in pregnancy harms the baby." }
+        ] },
+      { "t": "SPS and BUMPS (allergic rhinitis in pregnancy): intranasal corticosteroids can be considered if non-drug measures are not enough.",
+        "formulations": ["beclometasone-nasal-spray"],
+        "src": [
+          { "s": "sps-hayfever-pregnancy", "q": "intranasal corticosteroids (for example, fluticasone) can be considered if non-pharmacological management is insufficient" },
+          { "s": "bumps-hay-fever", "q": "If this does not help, you can consider using nasal sprays containing medicines called corticosteroids" }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "Nasal spray SmPC: low potential for significant milk levels; weigh benefits against potential hazards.",
+        "formulations": ["beclometasone-nasal-spray"],
+        "src": [{ "s": "emc-844", "q": "The use of beclometasone dipropionate in mothers breast feeding their babies requires that the therapeutic benefits of the drug be weighed against the potential hazards to the mother and baby." }] },
+      { "t": "Inhaler SmPC: should not be used in lactation unless the expected benefit outweighs any potential risk to the neonate.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [{ "s": "emc-6977", "q": "It should not be used in pregnancy or lactation unless the expected benefits to the mother are thought to outweigh any potential risks to the fetus or neonate." }] },
+      { "t": "SPS: intranasal or inhaled beclometasone can be used during breastfeeding; no specific infant monitoring usually needed.",
+        "src": [
+          { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "When applied to the skin, used intranasally, or inhaled, beclomethasone can be used during breastfeeding." },
+          { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "No specific infant monitoring is usually required." }
+        ] }
+    ] },
+    "reproductive": { "status": "not-stated", "note": "No fertility or contraception statement in the UK nasal spray and inhaler SmPCs checked." },
+    "adverseCommon": { "items": [
+      { "t": "Nasal spray: unpleasant taste or smell, nosebleed, nasal or throat dryness and irritation.",
+        "formulations": ["beclometasone-nasal-spray"],
+        "src": [
+          { "s": "emc-844", "q": "Unpleasant taste, unpleasant smell. Common" },
+          { "s": "emc-844", "q": "Epistaxis, nasal dryness, nasal irritation, throat dryness, throat irritation. Common" }
+        ] },
+      { "t": "Inhaler: oral thrush (very common; more above 400 micrograms a day), hoarseness, throat irritation.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [
+          { "s": "emc-6977", "q": "Oral candidiasis (of the mouth and throat) Very Common" },
+          { "s": "emc-6977", "q": "Hoarseness, throat irritation Common" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Inhaler: paradoxical bronchospasm (wheeze, breathlessness, cough straight after a dose): treat with a fast-acting bronchodilator, stop beclometasone at once, assess.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [{ "s": "emc-6977", "q": "This should be treated immediately with a fast-acting inhaled bronchodilator. Clenil Modulite should be discontinued immediately" }] },
+      { "t": "Hypersensitivity including angioedema and anaphylactic reactions (very rare).",
+        "src": [
+          { "s": "emc-844", "q": "Angioedema Very rare" },
+          { "s": "emc-844", "q": "Anaphylactoid/anaphylactic reactions Very rare" }
+        ] },
+      { "t": "Nasal septum perforation; glaucoma, raised eye pressure, cataract (very rare).",
+        "formulations": ["beclometasone-nasal-spray"],
+        "detail": true,
+        "src": [
+          { "s": "emc-844", "q": "Nasal septum perforation. Very rare" },
+          { "s": "emc-844", "q": "Glaucoma, raised intraocular pressure, cataract." }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Height in children on prolonged treatment.",
+        "tag": "ongoing",
+        "src": [{ "s": "emc-844", "q": "It is recommended that the height of children receiving prolonged treatment with nasal corticosteroids is regularly monitored." }] },
+      { "t": "Inhaler: severe asthma needs regular assessment including lung function; monitor adrenal function while reducing systemic steroids.",
+        "tag": "ongoing",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [
+          { "s": "emc-6977", "q": "Severe asthma requires regular medical assessment, including lung-function testing" },
+          { "s": "emc-6977", "q": "Adrenocortical function should be monitored regularly as the dose of systemic steroid is gradually reduced." }
+        ] },
+      { "t": "If on a strong CYP3A inhibitor: caution and appropriate monitoring.",
+        "tag": "ongoing",
+        "src": [{ "s": "emc-844", "q": "caution and appropriate monitoring is advised with the use of such agents" }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Nasal spray: intranasal use only; use regularly for full benefit.",
+        "formulations": ["beclometasone-nasal-spray"],
+        "src": [
+          { "s": "emc-844", "q": "Beconase Aqueous Nasal Spray is for administration by the intranasal route only." },
+          { "s": "emc-844", "q": "For full therapeutic benefit regular usage is essential." }
+        ] },
+      { "t": "Inhaler: inhale slowly and deeply through the mouth, press while breathing in, hold breath 5-10 seconds; wait 30 seconds before a second puff. Use a spacer if coordination is difficult. Clean at least weekly; do not put in water.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [
+          { "s": "emc-6977", "q": "hold their breath for about 5 to 10 seconds, or as long as is comfortable, and then breathe out slowly" },
+          { "s": "emc-6977", "q": "If another dose is required, the patient should be advised to wait 30 seconds before repeating the procedure just described." },
+          { "s": "emc-6977", "q": "The inhaler must not be washed or put in water." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Inhaler: rinse mouth, gargle or brush teeth after each use. Use every day even when well. Seek medical help if the reliever works less well or is needed more often.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "src": [
+          { "s": "emc-6977", "q": "Advise the patient to thoroughly rinse the mouth or gargle with water or brush the teeth immediately after using the inhaler." },
+          { "s": "emc-6977", "q": "Clenil Modulite should be used on a regular basis, even when they are asymptomatic." },
+          { "s": "emc-6977", "q": "Patients should be instructed to seek medical attention if short-acting relief bronchodilator treatment becomes less effective" }
+        ] },
+      { "t": "Nasal spray: maximum relief may take more than a few doses; keep to the regular schedule.",
+        "formulations": ["beclometasone-nasal-spray"],
+        "src": [{ "s": "emc-844", "q": "it should be explained that maximum relief may not be obtained within the first few applications" }] },
+      { "t": "Patients weaned off oral steroids with impaired adrenal function should carry a steroid warning card.",
+        "formulations": ["beclometasone-inhaler-250"],
+        "detail": true,
+        "src": [{ "s": "emc-6977", "q": "should carry a steroid warning card indicating that they may need supplementary systemic steroids during periods of stress" }] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "beclometasone-nasal:allergy:beclometasone",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "beclometasone-nasal",
+      "allergen": ["beclometasone"],
+      "concern": "Hypersensitivity to beclometasone",
+      "consequence": "Hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity",
+      "src": [
+        { "s": "emc-844", "q": "Hypersensitivity to the active substance or any of the excipients listed in section 6.1." },
+        { "s": "emc-6977", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }
+      ]
+    },
+    {
+      "id": "beclometasone-nasal:condition:pulmonary-tuberculosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "beclometasone-nasal",
+      "formulations": ["beclometasone-inhaler-250"],
+      "condition": "pulmonary-tuberculosis",
+      "concern": "Active or quiescent pulmonary tuberculosis (inhaler)",
+      "consequence": "Corticosteroid may worsen or reactivate infection.",
+      "action": "Special care.",
+      "sourceWording": "special care is necessary",
+      "src": [{ "s": "emc-6977", "q": "As with all inhaled corticosteroids, special care is necessary in patients with active or quiescent pulmonary tuberculosis." }]
+    },
+    {
+      "id": "beclometasone-nasal:age:children-inhaler-250",
+      "kind": "age",
+      "level": "avoid",
+      "med": "beclometasone-nasal",
+      "formulations": ["beclometasone-inhaler-250"],
+      "age": { "minYears": 0, "maxYears": 16 },
+      "concern": "Children - 250 micrograms inhaler",
+      "consequence": "The 250 micrograms strength is not recommended for children. The SmPC does not define the age; its adult dosing refers to adults and adolescents 16 years and over.",
+      "action": "Not recommended; use a lower-strength product if appropriate.",
+      "sourceWording": "is not recommended for children",
+      "src": [
+        { "s": "emc-6977", "q": "Clenil Modulite 250 is not recommended for children." },
+        { "s": "emc-6977", "q": "adults and adolescents 16 years of age and older taking total daily doses of 1000 micrograms or greater" }
+      ]
+    },
+    {
+      "id": "beclometasone-nasal:age:lt6-nasal",
+      "kind": "age",
+      "level": "info",
+      "med": "beclometasone-nasal",
+      "formulations": ["beclometasone-nasal-spray"],
+      "age": { "minYears": 0, "maxYears": 6 },
+      "concern": "Under 6 years - nasal spray",
+      "consequence": "Insufficient clinical data to recommend use.",
+      "action": "Not recommended by the SmPC at this age (no data).",
+      "sourceWording": "there are insufficient clinical data to recommend use",
+      "src": [{ "s": "emc-844", "q": "For children under six years old, there are insufficient clinical data to recommend use." }]
+    },
+    {
+      "id": "beclometasone-nasal:pregnancy:nasal",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "beclometasone-nasal",
+      "formulations": ["beclometasone-nasal-spray"],
+      "concern": "Pregnancy (nasal spray)",
+      "consequence": "Inadequate human safety evidence; animal studies at high systemic exposure showed cleft palate and growth restriction. Nasal delivery minimises exposure.",
+      "action": "SmPC: avoid unless thought essential by the doctor. SPS/BUMPS: intranasal corticosteroids can be considered for rhinitis in pregnancy if non-drug measures fail.",
+      "sourceWording": "should be avoided during pregnancy unless thought essential by the doctor",
+      "src": [
+        { "s": "emc-844", "q": "The use of beclometasone dipropionate should be avoided during pregnancy unless thought essential by the doctor." },
+        { "s": "sps-hayfever-pregnancy", "q": "intranasal corticosteroids (for example, fluticasone) can be considered if non-pharmacological management is insufficient" }
+      ]
+    },
+    {
+      "id": "beclometasone-nasal:pregnancy:inhaler",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "beclometasone-nasal",
+      "formulations": ["beclometasone-inhaler-250"],
+      "concern": "Pregnancy (inhaler)",
+      "consequence": "No human experience with this product; inhaled route avoids high systemic exposure.",
+      "action": "SmPC: should not be used unless benefits outweigh risks. BUMPS: inhaled corticosteroids should be continued throughout pregnancy to keep asthma controlled.",
+      "sourceWording": "should not be used in pregnancy or lactation unless the expected benefits to the mother are thought to outweigh any potential risks",
+      "src": [
+        { "s": "emc-6977", "q": "It should not be used in pregnancy or lactation unless the expected benefits to the mother are thought to outweigh any potential risks to the fetus or neonate." },
+        { "s": "bumps-corticosteroids-inhaled", "q": "Inhaled corticosteroids should be continued throughout pregnancy to ensure that breathing problems do not occur." }
+      ]
+    },
+    {
+      "id": "beclometasone-nasal:breastfeeding:nasal",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "beclometasone-nasal",
+      "formulations": ["beclometasone-nasal-spray"],
+      "concern": "Breastfeeding (nasal spray)",
+      "consequence": "Low potential for significant milk levels at nasal doses. SPS: intranasal beclometasone can be used during breastfeeding.",
+      "action": "SmPC: weigh therapeutic benefit against potential hazards.",
+      "sourceWording": "requires that the therapeutic benefits of the drug be weighed against the potential hazards",
+      "src": [
+        { "s": "emc-844", "q": "The use of beclometasone dipropionate in mothers breast feeding their babies requires that the therapeutic benefits of the drug be weighed against the potential hazards to the mother and baby." },
+        { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "When applied to the skin, used intranasally, or inhaled, beclomethasone can be used during breastfeeding." }
+      ]
+    },
+    {
+      "id": "beclometasone-nasal:breastfeeding:inhaler",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "beclometasone-nasal",
+      "formulations": ["beclometasone-inhaler-250"],
+      "concern": "Breastfeeding (inhaler)",
+      "consequence": "No human experience with this product; low potential for significant milk levels. SPS: inhaled beclometasone can be used during breastfeeding.",
+      "action": "SmPC: should not be used unless the expected benefit outweighs the risk to the neonate.",
+      "sourceWording": "should not be used in pregnancy or lactation unless the expected benefits to the mother are thought to outweigh any potential risks",
+      "src": [
+        { "s": "emc-6977", "q": "It should not be used in pregnancy or lactation unless the expected benefits to the mother are thought to outweigh any potential risks to the fetus or neonate." },
+        { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "When applied to the skin, used intranasally, or inhaled, beclomethasone can be used during breastfeeding." }
+      ]
+    },
+    {
+      "id": "beclometasone-nasal:interaction:strong-cyp3a4-inhibitors",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "beclometasone-nasal",
+      "other": "group:strong-cyp3a4-inhibitor",
+      "concern": "Strong CYP3A inhibitors (for example ritonavir, cobicistat)",
+      "consequence": "Interactions generally unlikely, but systemic corticosteroid effects cannot be excluded.",
+      "action": "Caution and appropriate monitoring.",
+      "sourceWording": "caution and appropriate monitoring is advised",
+      "src": [
+        { "s": "emc-844", "q": "the possibility of systemic effects with concomitant use of strong CYP3A inhibitors (e.g. ritonavir, cobicistat) cannot be excluded, and therefore caution and appropriate monitoring is advised with the use of such agents" },
+        { "s": "emc-6977", "q": "the possibility of systemic effects with concomitant use of strong CYP3A inhibitors (e.g. ritonavir, cobicistat) cannot be excluded, and therefore caution and appropriate monitoring is advised with the use of such agents" }
+      ]
+    },
+    {
+      "id": "beclometasone-nasal:interaction:metronidazole",
+      "kind": "interaction",
+      "level": "info",
+      "med": "beclometasone-nasal",
+      "formulations": ["beclometasone-inhaler-250"],
+      "other": "metronidazole",
+      "concern": "Metronidazole (inhaler contains a small amount of ethanol)",
+      "consequence": "Theoretical interaction in particularly sensitive patients.",
+      "action": "Be aware; no action stated.",
+      "sourceWording": "There is a theoretical potential for interaction",
+      "src": [{ "s": "emc-6977", "q": "There is a theoretical potential for interaction in particularly sensitive patients taking disulfiram or metronidazole." }]
+    }
+  ]
+}

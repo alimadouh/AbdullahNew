@@ -1,0 +1,256 @@
+{
+  "id": "fluticasone-furoate-nasal",
+  "name": "Fluticasone furoate (nasal spray)",
+  "ingredients": ["fluticasone-furoate"],
+  "className": "Corticosteroid nasal spray",
+  "groups": [],
+  "searchTerms": ["fluticasone furoate", "fluticasone furoate nasal spray"],
+  "formulations": [
+    {
+      "id": "fluticasone-furoate-nasal-spray",
+      "label": "Nasal spray suspension",
+      "route": "nasal",
+      "strengths": "27.5 micrograms per spray",
+      "release": "n/a",
+      "note": "Contains benzalkonium chloride. Fluticasone furoate is a different substance from fluticasone propionate.",
+      "src": [
+        { "s": "emc-6439", "q": "Each spray actuation delivers 27.5 micrograms of fluticasone furoate" },
+        { "s": "emc-6439", "q": "This medicinal product contains benzalkonium chloride." },
+        { "s": "emc-6439", "q": "Based on data with another glucocorticoid (fluticasone propionate)" }
+      ],
+      "sourceIds": ["emc-6439"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Symptoms of allergic rhinitis in adults, adolescents and children 6 years and over.",
+        "src": [
+          { "s": "emc-6439", "q": "Avamys is indicated in adults, adolescents and children (6 years and over)" },
+          { "s": "emc-6439", "q": "Avamys is indicated for the treatment of the symptoms of allergic rhinitis." }
+        ] }
+    ] },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions stated in the UK nasal spray SmPC checked." },
+    "dosing": { "items": [
+      { "t": "Start with 2 sprays in each nostril once daily (110 micrograms a day); once controlled, 1 spray each nostril once daily (55 micrograms) may be enough. Use the lowest effective dose; limit treatment to the period of allergen exposure.",
+        "tag": "Allergic rhinitis, adults and adolescents 12 years and over",
+        "src": [
+          { "s": "emc-6439", "q": "The recommended starting dose is two spray actuations (27.5 micrograms of fluticasone furoate per spray actuation) in each nostril once daily (total daily dose, 110 micrograms)." },
+          { "s": "emc-6439", "q": "dose reduction to one spray actuation in each nostril (total daily dose 55 micrograms) may be effective for maintenance" },
+          { "s": "emc-6439", "q": "The duration of treatment should be restricted to the period that corresponds to allergenic exposure." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "6-11 years: 1 spray in each nostril once daily (55 micrograms); may go up to 2 sprays each nostril (110 micrograms) if needed, then back to 1 spray once controlled. Not established under 6 years.",
+        "src": [
+          { "s": "emc-6439", "q": "The recommended starting dose is one spray actuation (27.5 micrograms of fluticasone furoate per spray actuation) in each nostril once daily (total daily dose, 55 micrograms)." },
+          { "s": "emc-6439", "q": "may use two spray actuations in each nostril once daily (total daily dose, 110 micrograms)" },
+          { "s": "emc-6439", "q": "The safety and efficacy of Avamys in children under the age of 6 years has not been established." }
+        ] },
+      { "t": "Growth velocity fell (-0.27 cm a year) in children on 110 micrograms daily for one year: keep children on the lowest effective dose and monitor growth on prolonged treatment.",
+        "src": [
+          { "s": "emc-6439", "q": "A reduction in growth velocity has been observed in children treated with fluticasone furoate 110 micrograms daily for one year" },
+          { "s": "emc-6439", "q": "children should be maintained on the lowest possible efficacious dose which delivers adequate symptom control" }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to fluticasone furoate or any excipient.",
+        "src": [{ "s": "emc-6439", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Systemic steroid effects possible, mainly at high doses for long periods. Above-recommended doses can cause adrenal suppression: consider systemic steroid cover during stress or elective surgery. Consider the total corticosteroid load when other steroid forms are used.",
+        "src": [
+          { "s": "emc-6439", "q": "Systemic effects of nasal corticosteroid may occur, particularly at high doses prescribed for prolonged periods." },
+          { "s": "emc-6439", "q": "the total systemic burden of corticosteroids should be considered whenever other forms of corticosteroid treatment are prescribed concurrently" }
+        ] },
+      { "t": "Care when transferring from systemic steroids if adrenal function may be impaired.",
+        "src": [{ "s": "emc-6439", "q": "If there is any reason to believe that adrenal function is impaired, care must be taken when transferring patients from systemic steroid treatment to fluticasone furoate." }] },
+      { "t": "Blurred vision or other visual disturbance: consider referral to an ophthalmologist.",
+        "detail": true,
+        "src": [{ "s": "emc-6439", "q": "the patient should be considered for referral to an ophthalmologist for evaluation of possible causes" }] },
+      { "t": "Ritonavir: co-administration not recommended (increased systemic exposure).",
+        "src": [{ "s": "emc-6439", "q": "Concomitant administration with ritonavir is not recommended because of the risk of increased systemic exposure of fluticasone furoate" }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Potent CYP3A inhibitors, including cobicistat-containing products: caution; avoid unless the benefit outweighs the increased risk of systemic steroid effects, and if used monitor for them. Ritonavir: not recommended. Ketoconazole caused only a small rise in exposure without a significant cortisol change in a study.",
+        "src": [
+          { "s": "emc-6439", "q": "Caution is recommended when co-administering fluticasone furoate with potent CYP3A inhibitors including cobicistat-containing products" },
+          { "s": "emc-6439", "q": "Co-administration should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid side effects" },
+          { "s": "emc-6439", "q": "This small increase in exposure did not result in a statistically significant difference in 24 hour serum cortisol levels between the two groups." }
+        ] },
+      { "t": "Not expected to affect the CYP450 metabolism of other medicines at nasal doses.",
+        "detail": true,
+        "src": [{ "s": "emc-6439", "q": "there is no theoretical basis for anticipating metabolic interactions between fluticasone furoate and the cytochrome P450 mediated metabolism of other compounds at clinically relevant intranasal doses" }] }
+    ] },
+    "renal": { "items": [
+      { "t": "No dose adjustment needed.",
+        "src": [{ "s": "emc-6439", "q": "Renal Impairment No dose adjustment is required in this population" }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "No dose adjustment needed in hepatic impairment.",
+        "src": [{ "s": "emc-6439", "q": "No dose adjustment is required in patients with hepatic impairment" }] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: no adequate human data; animal effects at high systemic exposure are unlikely to be relevant at nasal doses. Use only if the benefit to the mother outweighs the possible risk.",
+        "src": [
+          { "s": "emc-6439", "q": "This is not likely to be relevant for humans given recommended nasal doses which results in minimal systemic exposure" },
+          { "s": "emc-6439", "q": "Fluticasone furoate should be used in pregnancy only if the benefits to the mother outweigh the potential risks to the foetus or child." }
+        ] },
+      { "t": "SPS: intranasal corticosteroids (fluticasone given as an example) can be considered for hay fever in pregnancy if non-drug measures are not enough; they are the most effective rhinitis treatment.",
+        "src": [
+          { "s": "sps-hayfever-pregnancy", "q": "intranasal corticosteroids (for example, fluticasone) can be considered if non-pharmacological management is insufficient" },
+          { "s": "sps-hayfever-pregnancy", "q": "Intranasal corticosteroids are also the most effective treatment for allergic rhinitis." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: excretion in milk unknown; consider only if the expected benefit to the mother is greater than any possible risk to the child.",
+        "src": [{ "s": "emc-6439", "q": "Administration of fluticasone furoate to women who are breast-feeding should only be considered if the expected benefit to the mother is greater than any possible risk to the child." }] },
+      { "t": "SPS: inhaled or intranasal fluticasone can be used during breastfeeding; no specific infant monitoring usually needed.",
+        "src": [
+          { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "When applied to the skin, inhaled or used intranasally, fluticasone can be used during breastfeeding." },
+          { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "No specific infant monitoring is usually required." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "No human fertility data.",
+        "src": [{ "s": "emc-6439", "q": "There are no fertility data in humans." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Very common: nosebleed (usually mild to moderate; more with use over 6 weeks). Common: nasal ulceration, headache, breathlessness.",
+        "src": [
+          { "s": "emc-6439", "q": "Very common *Epistaxis Common Nasal ulceration, dyspnoea**" },
+          { "s": "emc-6439", "q": "Common Headache." }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Hypersensitivity including anaphylaxis, angioedema, rash and urticaria (rare).",
+        "src": [{ "s": "emc-6439", "q": "Rare Hypersensitivity reactions including anaphylaxis, angioedema, rash, and urticaria." }] },
+      { "t": "Nasal septum perforation (very rare); growth slowing in children.",
+        "detail": true,
+        "src": [
+          { "s": "emc-6439", "q": "Very rare Nasal septum perforation" },
+          { "s": "emc-6439", "q": "Growth retardation has been reported in children receiving nasal corticosteroids." }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Growth in children on prolonged treatment; if slowed, reduce dose and consider referral to a paediatric specialist.",
+        "tag": "ongoing",
+        "src": [{ "s": "emc-6439", "q": "It is recommended that the growth of children receiving prolonged treatment with nasal corticosteroids is regularly monitored." }] },
+      { "t": "If used with a potent CYP3A inhibitor: monitor for systemic corticosteroid side effects.",
+        "tag": "ongoing",
+        "src": [{ "s": "emc-6439", "q": "in which case patients should be monitored for systemic corticosteroid side effects" }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Nasal use only. Shake before use. Prime with at least 6 sprays; re-prime if the cap was left off for 5 days or not used for 30 days or more. Clean after each use and replace the cap.",
+        "src": [
+          { "s": "emc-6439", "q": "Avamys nasal spray is for administration by the intranasal route only." },
+          { "s": "emc-6439", "q": "The device is primed by pressing the mist release button for at least six spray actuations" },
+          { "s": "emc-6439", "q": "Re-priming (approximately 6 sprays until a fine mist is seen) is only necessary if the cap is left off for 5 days or the intranasal device has not been used for 30 days or more." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Use regularly every day. It can start working within 8 hours but may take several days for full benefit.",
+        "src": [
+          { "s": "emc-6439", "q": "Onset of action has been observed as early as 8 hours after initial administration." },
+          { "s": "emc-6439", "q": "it may take several days of treatment to achieve maximum benefit" }
+        ] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "fluticasone-furoate-nasal:allergy:fluticasone-furoate",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "fluticasone-furoate-nasal",
+      "allergen": ["fluticasone-furoate"],
+      "concern": "Hypersensitivity to fluticasone furoate",
+      "consequence": "Hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-6439", "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }]
+    },
+    {
+      "id": "fluticasone-furoate-nasal:age:lt6",
+      "kind": "age",
+      "level": "info",
+      "med": "fluticasone-furoate-nasal",
+      "age": { "minYears": 0, "maxYears": 6 },
+      "concern": "Under 6 years",
+      "consequence": "Safety and efficacy not established; no dose recommendation can be made.",
+      "action": "Not licensed at this age.",
+      "sourceWording": "has not been established",
+      "src": [
+        { "s": "emc-6439", "q": "The safety and efficacy of Avamys in children under the age of 6 years has not been established." },
+        { "s": "emc-6439", "q": "no recommendation on a posology can be made" }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-nasal:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "fluticasone-furoate-nasal",
+      "concern": "Pregnancy",
+      "consequence": "No adequate human data; minimal systemic exposure at nasal doses.",
+      "action": "Use only if the benefit to the mother outweighs the risk. SPS: intranasal corticosteroids can be considered for hay fever in pregnancy.",
+      "sourceWording": "should be used in pregnancy only if the benefits to the mother outweigh the potential risks",
+      "src": [
+        { "s": "emc-6439", "q": "Fluticasone furoate should be used in pregnancy only if the benefits to the mother outweigh the potential risks to the foetus or child." },
+        { "s": "sps-hayfever-pregnancy", "q": "intranasal corticosteroids (for example, fluticasone) can be considered if non-pharmacological management is insufficient" }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-nasal:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "fluticasone-furoate-nasal",
+      "concern": "Breastfeeding",
+      "consequence": "Excretion in milk unknown (SmPC). SPS: intranasal fluticasone can be used during breastfeeding.",
+      "action": "SmPC: consider only if expected benefit to the mother is greater than any possible risk to the child.",
+      "sourceWording": "should only be considered if the expected benefit to the mother is greater than any possible risk to the child",
+      "src": [
+        { "s": "emc-6439", "q": "Administration of fluticasone furoate to women who are breast-feeding should only be considered if the expected benefit to the mother is greater than any possible risk to the child." },
+        { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "When applied to the skin, inhaled or used intranasally, fluticasone can be used during breastfeeding." }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-nasal:interaction:strong-cyp3a4-inhibitors",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "fluticasone-furoate-nasal",
+      "other": "group:strong-cyp3a4-inhibitor",
+      "concern": "Potent CYP3A inhibitors (including cobicistat-containing products; ritonavir)",
+      "consequence": "Expected increase in the risk of systemic corticosteroid side effects (ritonavir: increased systemic exposure).",
+      "action": "Use caution; avoid unless the benefit outweighs the risk, and if used monitor for systemic corticosteroid side effects. Ritonavir is not recommended.",
+      "sourceWording": "Co-administration should be avoided unless the benefit outweighs the increased risk",
+      "src": [
+        { "s": "emc-6439", "q": "Caution is recommended when co-administering fluticasone furoate with potent CYP3A inhibitors including cobicistat-containing products as an increase in the risk of systemic side effects is expected." },
+        { "s": "emc-6439", "q": "Co-administration should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid side effects, in which case patients should be monitored for systemic corticosteroid side effects." }
+      ]
+    },
+    {
+      "id": "fluticasone-furoate-nasal:interaction:corticosteroids",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-furoate-nasal",
+      "other": "group:corticosteroid",
+      "concern": "Systemic corticosteroids given at the same time",
+      "consequence": "Adds to the total systemic corticosteroid load.",
+      "action": "Consider the total systemic burden of corticosteroids.",
+      "sourceWording": "the total systemic burden of corticosteroids should be considered",
+      "src": [{ "s": "emc-6439", "q": "As with all intranasal corticosteroids, the total systemic burden of corticosteroids should be considered whenever other forms of corticosteroid treatment are prescribed concurrently." }]
+    },
+    {
+      "id": "fluticasone-furoate-nasal:interaction:inhaled-corticosteroids",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "fluticasone-furoate-nasal",
+      "other": "group:inhaled-corticosteroid",
+      "concern": "Inhaled corticosteroids given at the same time",
+      "consequence": "Adds to the total systemic corticosteroid load.",
+      "action": "Consider the total systemic burden of corticosteroids.",
+      "sourceWording": "the total systemic burden of corticosteroids should be considered",
+      "src": [{ "s": "emc-6439", "q": "As with all intranasal corticosteroids, the total systemic burden of corticosteroids should be considered whenever other forms of corticosteroid treatment are prescribed concurrently." }]
+    }
+  ]
+}

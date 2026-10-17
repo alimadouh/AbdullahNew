@@ -1,0 +1,312 @@
+{
+  "id": "mometasone-nasal",
+  "name": "Mometasone furoate (nasal spray)",
+  "ingredients": ["mometasone"],
+  "className": "Corticosteroid nasal spray",
+  "groups": [],
+  "searchTerms": ["mometasone", "mometasone furoate", "mometasone furoate monohydrate", "mometasone nasal spray"],
+  "formulations": [
+    {
+      "id": "mometasone-nasal-spray",
+      "label": "Nasal spray suspension",
+      "route": "nasal",
+      "strengths": "50 micrograms per actuation",
+      "release": "n/a",
+      "note": "Contains benzalkonium chloride.",
+      "src": [
+        { "s": "emc-1663", "q": "Mometasone furoate (as the monohydrate) 50 micrograms/actuation" },
+        { "s": "emc-1663", "q": "NASONEX Nasal Spray contains benzalkonium chloride." }
+      ],
+      "sourceIds": ["emc-1663"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Symptoms of seasonal allergic or perennial rhinitis in adults and children 3 years and over; nasal polyps in adults 18 years and over.",
+        "src": [
+          { "s": "emc-1663", "q": "indicated for use in adults and children 3 years of age and older to treat the symptoms of seasonal allergic or perennial rhinitis" },
+          { "s": "emc-1663", "q": "indicated for the treatment of nasal polyps in adults 18 years of age and older" }
+        ] }
+    ] },
+    "restrictions": { "status": "not-stated", "note": "No prescribing restrictions stated in the UK nasal spray SmPC checked." },
+    "dosing": { "items": [
+      { "t": "2 sprays (50 micrograms each) in each nostril once daily (200 micrograms). Maintenance may be 1 spray each nostril (100 micrograms). If not controlled, up to 4 sprays each nostril once daily (400 micrograms); reduce once controlled.",
+        "tag": "Allergic rhinitis, adults and children 12 years and over",
+        "src": [
+          { "s": "emc-1663", "q": "The usual recommended dose is two actuations (50 micrograms/actuation) in each nostril once daily (total dose 200 micrograms)." },
+          { "s": "emc-1663", "q": "the dose may be increased to a maximum daily dose of four actuations in each nostril once daily (total dose 400 micrograms)" }
+        ] },
+      { "t": "2 sprays in each nostril once daily (200 micrograms); if not controlled after 5-6 weeks, 2 sprays each nostril twice daily (400 micrograms). Re-evaluate if no improvement after 5-6 weeks of twice-daily use.",
+        "tag": "Nasal polyps, adults",
+        "src": [
+          { "s": "emc-1663", "q": "The usual recommended starting dose for polyposis is two actuations (50 micrograms/actuation) in each nostril once daily (total daily dose of 200 micrograms)." },
+          { "s": "emc-1663", "q": "the dose may be increased to a daily dose of two sprays in each nostril twice daily (total daily dose of 400 micrograms)" }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Rhinitis, 3-11 years: 1 spray in each nostril once daily (100 micrograms). Not established under 3 years (rhinitis) or under 18 years (nasal polyps).",
+        "src": [
+          { "s": "emc-1663", "q": "Children between the ages of 3 and 11 years: The usual recommended dose is one actuation (50 micrograms/actuation) in each nostril once daily (total dose 100 micrograms)." },
+          { "s": "emc-1663", "q": "The safety and efficacy of NASONEX Nasal Spray in children under 3 years of age have not been established." },
+          { "s": "emc-1663", "q": "The safety and efficacy of NASONEX Nasal Spray in children and adolescents under 18 years of age have not been established." }
+        ] },
+      { "t": "Monitor height in children on prolonged treatment; if growth slows, reduce to the lowest effective dose and consider referral to a paediatric specialist.",
+        "src": [{ "s": "emc-1663", "q": "It is recommended that the height of children receiving prolonged treatment with nasal corticosteroids is regularly monitored." }] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to mometasone furoate or any excipient.",
+        "src": [{ "s": "emc-1663", "q": "Hypersensitivity to the active substance, mometasone furoate, or to any of the excipients listed in section 6.1." }] },
+      { "t": "Untreated localised infection of the nasal mucosa, such as herpes simplex.",
+        "src": [{ "s": "emc-1663", "q": "NASONEX Nasal Spray should not be used in the presence of untreated localised infection involving the nasal mucosa, such as herpes simplex." }] },
+      { "t": "Recent nasal surgery or trauma, until healed.",
+        "src": [{ "s": "emc-1663", "q": "patients who have experienced recent nasal surgery or trauma should not use a nasal corticosteroid until healing has occurred" }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Use with caution, if at all, in active or quiescent respiratory tuberculosis, or untreated fungal, bacterial or systemic viral infections. Warn about exposure to chickenpox or measles.",
+        "src": [
+          { "s": "emc-1663", "q": "should be used with caution, if at all, in patients with active or quiescent tuberculous infections of the respiratory tract, or in untreated fungal, bacterial, or systemic viral infections" },
+          { "s": "emc-1663", "q": "should be warned of the risk of exposure to certain infections (e.g., chickenpox, measles)" }
+        ] },
+      { "t": "Not recommended with nasal septum perforation.",
+        "src": [{ "s": "emc-1663", "q": "Nasonex is not recommended in case of nasal septum perforation" }] },
+      { "t": "Systemic steroid effects are possible, mainly at high doses for long periods. Above-recommended doses can cause adrenal suppression: consider systemic steroid cover during stress or elective surgery. Moving from long-term systemic steroids needs care (adrenal insufficiency may last months).",
+        "src": [
+          { "s": "emc-1663", "q": "Systemic effects of nasal corticosteroids may occur, particularly at high doses prescribed for prolonged periods." },
+          { "s": "emc-1663", "q": "Patients who are transferred from long-term administration of systemically active corticosteroids to NASONEX Nasal Spray require careful attention." }
+        ] },
+      { "t": "Raised intraocular pressure has been reported; refer to an ophthalmologist for blurred vision or other visual disturbance.",
+        "src": [
+          { "s": "emc-1663", "q": "Following the use of intranasal corticosteroids, instances of increased intraocular pressure have been reported" },
+          { "s": "emc-1663", "q": "the patient should be considered for referral to an ophthalmologist" }
+        ] },
+      { "t": "Nasal polyps: one-sided, unusual, ulcerating or bleeding polyps need further evaluation.",
+        "detail": true,
+        "src": [{ "s": "emc-1663", "q": "Unilateral polyps that are unusual or irregular in appearance, especially if ulcerating or bleeding, should be further evaluated." }] }
+    ] },
+    "interactions": { "items": [
+      { "t": "CYP3A inhibitors, including cobicistat-containing products, are expected to raise the risk of systemic steroid effects: avoid unless the benefit outweighs the risk, and if used monitor for systemic corticosteroid effects.",
+        "src": [
+          { "s": "emc-1663", "q": "Co-treatment with CYP3A inhibitors, including cobicistat-containing products, is expected to increase the risk of systemic side-effects." },
+          { "s": "emc-1663", "q": "The combination should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid side-effects" }
+        ] },
+      { "t": "No interaction seen with loratadine.",
+        "detail": true,
+        "src": [{ "s": "emc-1663", "q": "A clinical interaction study was conducted with loratadine. No interactions were observed." }] },
+      { "t": "MHRA: corticosteroids metabolised by CYP3A, including intranasal, with ritonavir or cobicistat are not recommended unless benefit outweighs risk; consider beclometasone where possible.",
+        "detail": true,
+        "src": [
+          { "s": "mhra-dsu-cobicistat-ritonavir-steroids-2016", "q": "there is potential for this interaction to occur even with non-systemically administered steroid formulations, including intranasal, inhaled, and intra-articular routes" },
+          { "s": "mhra-dsu-cobicistat-ritonavir-steroids-2016", "q": "use of beclomethasone should be considered where possible-particularly for long-term use" }
+        ] }
+    ] },
+    "renal": { "status": "not-stated", "note": "No renal dose advice in the UK nasal spray SmPC checked." },
+    "hepatic": { "status": "not-stated", "note": "No hepatic dose advice in the UK nasal spray SmPC checked." },
+    "pregnancy": { "items": [
+      { "t": "SmPC: limited human data; animal studies showed reproductive toxicity. Should not be used in pregnancy unless the potential benefit justifies the risk. Observe infants of treated mothers for hypoadrenalism.",
+        "src": [
+          { "s": "emc-1663", "q": "NASONEX Nasal Spray should not be used in pregnancy unless the potential benefit to the mother justifies any potential risk to the mother, foetus or infant." },
+          { "s": "emc-1663", "q": "Infants born of mothers who received corticosteroids during pregnancy should be observed carefully for hypoadrenalism." }
+        ] },
+      { "t": "SPS and BUMPS (allergic rhinitis in pregnancy): intranasal corticosteroids can be considered if non-drug measures are not enough; the dose reaching the baby is very small.",
+        "src": [
+          { "s": "sps-hayfever-pregnancy", "q": "intranasal corticosteroids (for example, fluticasone) can be considered if non-pharmacological management is insufficient" },
+          { "s": "bumps-hay-fever", "q": "The dose of medicine that reaches the baby in the womb is therefore very small and would not be expected to cause any adverse effects." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: excretion in milk unknown; decide whether to stop breastfeeding or the spray, weighing benefit to child and mother.",
+        "src": [{ "s": "emc-1663", "q": "a decision must be made whether to discontinue breast-feeding or to discontinue/abstain from NASONEX Nasal Spray therapy" }] },
+      { "t": "SPS: inhaled or intranasal mometasone can be used during breastfeeding; no specific infant monitoring usually needed.",
+        "src": [
+          { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "When applied to the skin, inhaled or used intranasally, mometasone can be used during breastfeeding." },
+          { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "No specific infant monitoring is usually required." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "No clinical fertility data; animal studies showed no effect on fertility.",
+        "src": [{ "s": "emc-1663", "q": "There are no clinical data concerning the effect of mometasone furoate on fertility." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Nosebleed (very common with twice-daily polyp dosing), headache, pharyngitis, upper respiratory infection, nasal burning or irritation, nasal ulceration, throat irritation.",
+        "src": [
+          { "s": "emc-1663", "q": "Epistaxis was generally self-limiting and mild in severity, and occurred at a higher incidence compared to placebo (5%)" },
+          { "s": "emc-1663", "q": "Epistaxis Nasal burning Nasal irritation Nasal ulceration" }
+        ] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Hypersensitivity including anaphylaxis, angioedema, bronchospasm and breathlessness.",
+        "src": [{ "s": "emc-1663", "q": "Hypersensitivity including anaphylactic reactions, angioedema, bronchospasm, and dyspnoea" }] },
+      { "t": "Nasal septum perforation; glaucoma, raised eye pressure or cataract (frequency not known).",
+        "detail": true,
+        "src": [
+          { "s": "emc-1663", "q": "Nasal septum perforation" },
+          { "s": "emc-1663", "q": "Glaucoma Increased intraocular pressure Cataracts" }
+        ] },
+      { "t": "Adrenal insufficiency or steroid withdrawal (joint/muscle pain, tiredness, low mood) after moving from systemic steroids: restart systemic steroid.",
+        "detail": true,
+        "src": [{ "s": "emc-1663", "q": "systemic corticosteroid administration should be resumed and other modes of therapy and appropriate measures instituted" }] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Examine the nasal mucosa periodically with use over several months.",
+        "tag": "ongoing",
+        "src": [{ "s": "emc-1663", "q": "patients using NASONEX Nasal Spray over several months or longer should be examined periodically for possible changes in the nasal mucosa" }] },
+      { "t": "Height in children on prolonged treatment.",
+        "tag": "ongoing",
+        "src": [{ "s": "emc-1663", "q": "It is recommended that the height of children receiving prolonged treatment with nasal corticosteroids is regularly monitored." }] },
+      { "t": "Persistent nasopharyngeal irritation or local fungal infection may require stopping.",
+        "tag": "stop",
+        "src": [
+          { "s": "emc-1663", "q": "Persistence of nasopharyngeal irritation may be an indication for discontinuing NASONEX Nasal Spray." },
+          { "s": "emc-1663", "q": "If localised fungal infection of the nose or pharynx develops, discontinuance of NASONEX Nasal Spray therapy or appropriate treatment may be required." }
+        ] }
+    ] },
+    "administration": { "items": [
+      { "t": "Shake well. Prime with 10 sprays before first use; re-prime with 2 sprays if not used for 14 days or more. Discard after the labelled number of sprays or 2 months after opening.",
+        "src": [
+          { "s": "emc-1663", "q": "Prior to administration of the first dose, shake container well and actuate the pump 10 times (until a uniform spray is obtained)." },
+          { "s": "emc-1663", "q": "If the pump is not used for 14 days or longer, reprime the pump with 2 actuations" },
+          { "s": "emc-1663", "q": "The bottle should be discarded after the labelled number of actuations or within 2 months of first use." }
+        ] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Use regularly; full benefit may take more than 48 hours. For seasonal rhinitis, start some days before the pollen season if symptoms are usually moderate to severe.",
+        "src": [
+          { "s": "emc-1663", "q": "full benefit of treatment may not be achieved in the first 48 hours" },
+          { "s": "emc-1663", "q": "may need to be initiated some days before the expected start of the pollen season" }
+        ] },
+      { "t": "Get medical advice if exposed to chickenpox or measles.",
+        "src": [{ "s": "emc-1663", "q": "of the importance of obtaining medical advice if such exposure occurs" }] }
+    ] }
+  },
+  "rules": [
+    {
+      "id": "mometasone-nasal:allergy:mometasone",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "mometasone-nasal",
+      "allergen": ["mometasone"],
+      "concern": "Hypersensitivity to mometasone furoate",
+      "consequence": "Hypersensitivity reaction, including anaphylaxis.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Hypersensitivity",
+      "src": [{ "s": "emc-1663", "q": "Hypersensitivity to the active substance, mometasone furoate, or to any of the excipients listed in section 6.1." }]
+    },
+    {
+      "id": "mometasone-nasal:condition:untreated-nasal-infection",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "mometasone-nasal",
+      "condition": "untreated-nasal-infection",
+      "concern": "Untreated localised infection of the nasal mucosa (for example herpes simplex)",
+      "consequence": "Corticosteroid may worsen local infection.",
+      "action": "Do not use until treated.",
+      "sourceWording": "4.3 Contraindications ... should not be used in the presence of untreated localised infection",
+      "src": [{ "s": "emc-1663", "q": "NASONEX Nasal Spray should not be used in the presence of untreated localised infection involving the nasal mucosa, such as herpes simplex." }]
+    },
+    {
+      "id": "mometasone-nasal:condition:herpes-oronasal-ocular",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "mometasone-nasal",
+      "condition": "herpes-oronasal-ocular",
+      "concern": "Untreated herpes simplex infection of the nasal mucosa",
+      "consequence": "Corticosteroid may worsen local infection.",
+      "action": "Do not use while the nasal infection is untreated.",
+      "sourceWording": "4.3 Contraindications ... untreated localised infection involving the nasal mucosa, such as herpes simplex",
+      "src": [{ "s": "emc-1663", "q": "NASONEX Nasal Spray should not be used in the presence of untreated localised infection involving the nasal mucosa, such as herpes simplex." }]
+    },
+    {
+      "id": "mometasone-nasal:condition:recent-nasal-surgery-trauma",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "mometasone-nasal",
+      "condition": "recent-nasal-surgery-trauma",
+      "concern": "Recent nasal surgery or trauma",
+      "consequence": "Corticosteroids inhibit wound healing.",
+      "action": "Do not use until healing has occurred.",
+      "sourceWording": "4.3 Contraindications ... should not use a nasal corticosteroid until healing has occurred",
+      "src": [{ "s": "emc-1663", "q": "Because of the inhibitory effect of corticosteroids on wound healing, patients who have experienced recent nasal surgery or trauma should not use a nasal corticosteroid until healing has occurred." }]
+    },
+    {
+      "id": "mometasone-nasal:condition:nasal-septum-perforation",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "mometasone-nasal",
+      "condition": "nasal-septum-perforation",
+      "concern": "Nasal septum perforation",
+      "consequence": "Septal perforation is a known adverse effect of nasal corticosteroids.",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [{ "s": "emc-1663", "q": "Nasonex is not recommended in case of nasal septum perforation" }]
+    },
+    {
+      "id": "mometasone-nasal:condition:pulmonary-tuberculosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "mometasone-nasal",
+      "condition": "pulmonary-tuberculosis",
+      "concern": "Active or quiescent tuberculosis of the respiratory tract",
+      "consequence": "Corticosteroid may worsen or reactivate infection.",
+      "action": "Use with caution, if at all.",
+      "sourceWording": "should be used with caution, if at all",
+      "src": [{ "s": "emc-1663", "q": "should be used with caution, if at all, in patients with active or quiescent tuberculous infections of the respiratory tract" }]
+    },
+    {
+      "id": "mometasone-nasal:age:lt3",
+      "kind": "age",
+      "level": "info",
+      "med": "mometasone-nasal",
+      "age": { "minYears": 0, "maxYears": 3 },
+      "concern": "Under 3 years",
+      "consequence": "Safety and efficacy not established (rhinitis); nasal polyps not established under 18 years.",
+      "action": "Not licensed at this age.",
+      "sourceWording": "have not been established",
+      "src": [{ "s": "emc-1663", "q": "The safety and efficacy of NASONEX Nasal Spray in children under 3 years of age have not been established." }]
+    },
+    {
+      "id": "mometasone-nasal:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "mometasone-nasal",
+      "concern": "Pregnancy",
+      "consequence": "Limited human data; animal reproductive toxicity. Infants of treated mothers may have hypoadrenalism.",
+      "action": "SmPC: should not be used unless the potential benefit justifies the risk; observe the newborn for hypoadrenalism. SPS/BUMPS: intranasal corticosteroids can be considered for rhinitis in pregnancy if non-drug measures fail.",
+      "sourceWording": "should not be used in pregnancy unless the potential benefit to the mother justifies any potential risk",
+      "src": [
+        { "s": "emc-1663", "q": "NASONEX Nasal Spray should not be used in pregnancy unless the potential benefit to the mother justifies any potential risk to the mother, foetus or infant." },
+        { "s": "sps-hayfever-pregnancy", "q": "intranasal corticosteroids (for example, fluticasone) can be considered if non-pharmacological management is insufficient" }
+      ]
+    },
+    {
+      "id": "mometasone-nasal:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "mometasone-nasal",
+      "concern": "Breastfeeding",
+      "consequence": "Excretion in milk unknown (SmPC). SPS: intranasal mometasone can be used during breastfeeding.",
+      "action": "SmPC: weigh the benefit of breastfeeding against the benefit of therapy.",
+      "sourceWording": "a decision must be made whether to discontinue breast-feeding or to discontinue/abstain",
+      "src": [
+        { "s": "emc-1663", "q": "a decision must be made whether to discontinue breast-feeding or to discontinue/abstain from NASONEX Nasal Spray therapy" },
+        { "s": "sps-inhaled-topical-cs-breastfeeding", "q": "When applied to the skin, inhaled or used intranasally, mometasone can be used during breastfeeding." }
+      ]
+    },
+    {
+      "id": "mometasone-nasal:interaction:cyp3a4-inhibitors",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "mometasone-nasal",
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "CYP3A inhibitors, including cobicistat-containing products",
+      "consequence": "Expected increase in the risk of systemic corticosteroid side effects.",
+      "action": "Avoid unless the benefit outweighs the risk; if used, monitor for systemic corticosteroid side effects.",
+      "sourceWording": "The combination should be avoided unless the benefit outweighs the increased risk",
+      "src": [
+        { "s": "emc-1663", "q": "Co-treatment with CYP3A inhibitors, including cobicistat-containing products, is expected to increase the risk of systemic side-effects." },
+        { "s": "emc-1663", "q": "The combination should be avoided unless the benefit outweighs the increased risk of systemic corticosteroid side-effects, in which case patients should be monitored for systemic corticosteroid side-effects." }
+      ]
+    }
+  ]
+}

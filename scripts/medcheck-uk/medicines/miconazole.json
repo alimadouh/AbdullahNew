@@ -1,0 +1,901 @@
+{
+  "id": "miconazole",
+  "name": "Miconazole",
+  "ingredients": ["miconazole"],
+  "className": "Imidazole antifungal",
+  "groups": ["azole-antifungal", "imidazole-antifungal", "antifungal"],
+  "searchTerms": ["miconazole nitrate", "miconazole oral gel"],
+  "formulations": [
+    {
+      "id": "miconazole-oral-gel",
+      "label": "Oral gel",
+      "route": "oromucosal",
+      "strengths": "20 mg/g",
+      "release": "n/a",
+      "note": "Two UK oral gel SmPCs differ on warfarin: the prescription-only gel says use with caution and close monitoring; the sugar-free 2% gel (pharmacy) lists warfarin as a contraindication. The oral gel is absorbed into the body and has systemic interactions.",
+      "src": [
+        { "s": "emc-14746", "q": "Each g of gel contains 20 mg of miconazole." },
+        { "s": "emc-6597", "q": "Triazolam and oral midazolam - Warfarin" },
+        { "s": "emc-14746", "q": "Miconazole is systemically absorbed and is known to inhibit CYP2C9 and CYP3A4" }
+      ],
+      "sourceIds": ["emc-14746", "emc-6597"]
+    },
+    {
+      "id": "miconazole-cream",
+      "label": "Cream",
+      "route": "cutaneous",
+      "strengths": "2% w/w (miconazole nitrate 20 mg/g)",
+      "release": "n/a",
+      "src": [{ "s": "emc-443", "q": "Miconazole nitrate 2% w/w (Each gram of cream contains 20mg of miconazole nitrate)." }],
+      "sourceIds": ["emc-443", "emc-14745"]
+    },
+    {
+      "id": "miconazole-vaginal",
+      "label": "Vaginal pessary",
+      "route": "vaginal",
+      "strengths": "Clinic product: 400 mg. UK product found: 2% w/w vaginal cream (20 mg/g).",
+      "release": "n/a",
+      "note": "No UK miconazole 400 mg pessary/suppository was found (emc and MHRA Products searched). Content here comes from the UK miconazole 20 mg/g vaginal cream SPC; its dosing (one applicator nightly for 7 days) does not apply to a 400 mg pessary.",
+      "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "Miconazole nitrate 2% w/w. (Each gram of cream contains 20mg miconazole nitrate)" }],
+      "sourceIds": ["mhra-gyno-daktarin-cream"]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "availability": { "status": "uk" },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Oral gel: candidosis of the oropharynx in adults, children and infants 4 months and older.",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "Oral treatment of candidosis of the oropharynx." },
+            { "s": "emc-14746", "q": "Miconazole gel is for use in adults, children and infants 4 months and older." }
+          ]
+        },
+        {
+          "t": "Cream: fungal infections of the skin and nails, and superinfections due to Gram-positive bacteria.",
+          "formulations": ["miconazole-cream"],
+          "src": [{ "s": "emc-443", "q": "For the treatment of mycotic infections of the skin and nails and superinfections due to Gram-positive bacteria." }]
+        },
+        {
+          "t": "Vaginal (UK vaginal cream): local treatment of vulvovaginal candidosis and Gram-positive superinfections.",
+          "formulations": ["miconazole-vaginal"],
+          "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "For the local treatment of vulvovaginal candidosis and superinfections due to gram- positive bacteria." }]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "MHRA: patients taking warfarin should not use over-the-counter miconazole oral gel; prescribe the oral gel to a warfarin patient only with close monitoring.",
+          "tag": "Warfarin (MHRA)",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "mhra-dsu-miconazole-warfarin-2017", "q": "patients taking warfarin should not use over-the-counter miconazole oral gel available from pharmacies" },
+            { "s": "mhra-dsu-miconazole-warfarin-2017", "q": "If you plan to prescribe miconazole oral gel in a patient on warfarin, you should closely monitor them" }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Oral gel, adults and children 2 years and over: 2.5 mL four times a day after meals; keep in the mouth as long as possible before swallowing. Continue for at least a week after symptoms have gone.",
+          "tag": "Oropharyngeal candidosis",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "Adults and children 2 years of age and older: 2.5 mL (1/2 measuring spoon) of gel, applied four times a day after meals." },
+            { "s": "emc-14746", "q": "The treatment should be continued for at least a week after the symptoms have disappeared." }
+          ]
+        },
+        {
+          "t": "Cream: apply to lesions twice daily for 2 to 6 weeks, continuing for at least a week after all signs have gone. Nails: once or twice daily, continuing 10 days after lesions have gone.",
+          "tag": "Skin and nail infections",
+          "formulations": ["miconazole-cream"],
+          "src": [
+            { "s": "emc-443", "q": "Apply some cream to the lesions two times daily." },
+            { "s": "emc-443", "q": "The duration of therapy varies from 2 to 6 weeks depending on the localisation and the severity of the lesion." },
+            { "s": "emc-443", "q": "Treatment should be prolonged for 10 days after all lesions have disappeared to prevent relapse." }
+          ]
+        },
+        {
+          "t": "UK vaginal cream (adults 18 and over): one applicator (about 5 g) deep into the vagina at bedtime for 7 days. No UK dosing found for the 400 mg pessary.",
+          "tag": "Vulvovaginal candidosis",
+          "formulations": ["miconazole-vaginal"],
+          "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "Administer the contents of one applicator (about 5g of cream) once daily before bedtime deeply into vagina for 7 days." }]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Oral gel, infants 4 to 24 months: 1.25 mL four times a day after meals, divided into small portions and applied with a clean finger, not to the back of the throat. Not under 4 months; in pre-term or slowly developing infants raise the lower age limit to 5 to 6 months.",
+          "tag": "Oral gel",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "Infants: 4-24 months: 1.25 ml (1/4 measuring spoon) of gel, applied four times a day after meals." },
+            { "s": "emc-14746", "q": "The lower age limit should be increased to 5-6 months of age for infants who are pre-term, or infants exhibiting slow neuromuscular development." }
+          ]
+        },
+        {
+          "t": "Cream: same dose for all ages.",
+          "tag": "Cream",
+          "formulations": ["miconazole-cream"],
+          "src": [{ "s": "emc-443", "q": "Recommended dosage: For all ages:" }]
+        },
+        {
+          "t": "Vaginal cream: not studied under 18 years.",
+          "tag": "Vaginal",
+          "formulations": ["miconazole-vaginal"],
+          "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "The safety and efficacy of Gyno-Daktarin vaginal cream in children and adolescents has not been studied." }]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "All forms: hypersensitivity to miconazole, other imidazoles or any excipient.",
+          "src": [
+            { "s": "emc-14746", "q": "Known hypersensitivity to miconazole, other imidazole derivatives or to any of the excipients listed in section 6.1." },
+            { "s": "emc-443", "q": "Hypersensitivity to the active substance, other imidazole derivatives or to any of the excipients listed in section 6.1." }
+          ]
+        },
+        {
+          "t": "Oral gel: infants under 4 months or with an immature swallowing reflex; liver dysfunction.",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "In infants less than 4 months of age or in those whose swallowing reflex is not yet sufficiently developed" },
+            { "s": "emc-14746", "q": "In patients with liver dysfunction." }
+          ]
+        },
+        {
+          "t": "Oral gel: medicines metabolised by CYP3A4 that prolong the QT interval (e.g. cisapride, pimozide, quinidine, terfenadine), ergot alkaloids, statins such as simvastatin and lovastatin, triazolam and oral midazolam.",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "Coadministration of the following drugs that are subject to metabolism by CYP3A4" },
+            { "s": "emc-14746", "q": "Substrates known to prolong the QT-interval e.g. astemizole, cisapride, dofetilide, mizolastine, pimozide, quinidine, sertindole and terfenadine" },
+            { "s": "emc-14746", "q": "HMG-CoA reductase inhibitors such as simvastatin and lovastatin" }
+          ]
+        },
+        {
+          "t": "Oral gel, sugar-free 2% gel SmPC only: warfarin is also listed as a contraindication (the prescription-only gel SmPC lists it as a caution).",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-6597", "q": "Triazolam and oral midazolam - Warfarin" },
+            { "s": "emc-6597", "q": "WARNING: Do not use if you are taking warfarin" }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Oral gel and warfarin: the gel is absorbed and inhibits CYP2C9 and CYP3A4. Bleeding, some fatal, has been reported. If use with warfarin is planned, monitor and titrate the anticoagulant effect carefully; tell the patient to stop the gel and seek advice at any sign of bleeding.",
+          "tag": "Warfarin",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "Bleeding events, some with fatal outcomes, have been reported with concurrent use of miconazole oral gel and warfarin" },
+            { "s": "emc-14746", "q": "caution should be exercised and the anticoagulant effect must be carefully monitored and titrated" }
+          ]
+        },
+        {
+          "t": "Oral gel, choking risk in infants and young children (4 months to 2 years): divide each dose, apply with a clean finger, not to the back of the throat; observe for choking. Do not apply to a breastfeeding mother's nipple.",
+          "tag": "Choking",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "Particularly in infants and young children (aged 4 months - 2 years), caution is required, to ensure that the gel does not obstruct the throat." },
+            { "s": "emc-14746", "q": "the gel must not be applied to the nipple of a breastfeeding woman for administration to an infant." }
+          ]
+        },
+        {
+          "t": "Oral gel and sulfonylureas: enhanced effect with hypoglycaemia may occur; take appropriate measures. Monitor phenytoin and miconazole levels if used together.",
+          "tag": "Sulfonylureas",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [{ "s": "emc-14746", "q": "In patients using certain oral hypoglycaemics such as sulphonylureas, an enhanced therapeutic effect leading to hypoglycaemia may occur" }]
+        },
+        {
+          "t": "Cream: absorption is limited, but use with warfarin or other vitamin K antagonists with caution and monitor/titrate the anticoagulant effect. Keep away from the eyes.",
+          "tag": "Cream",
+          "formulations": ["miconazole-cream"],
+          "src": [
+            { "s": "emc-443", "q": "the concomitant use of Daktarin 2% Cream and warfarin or other vitamin K antagonists should be done with caution and the anticoagulant effect should be carefully monitored and titrated." },
+            { "s": "emc-443", "q": "Daktarin Cream must not come into contact with the mucosa of the eyes." }
+          ]
+        },
+        {
+          "t": "Vaginal cream: do not use with latex condoms or diaphragms (may damage latex and reduce contraceptive effect). Treat the sexual partner if also infected.",
+          "tag": "Vaginal / latex",
+          "formulations": ["miconazole-vaginal"],
+          "src": [
+            { "s": "mhra-gyno-daktarin-cream", "q": "should not be used concurrently with a latex condom or latex diaphragm." },
+            { "s": "mhra-gyno-daktarin-cream", "q": "Appropriate therapy is indicated when the sexual partner is also infected." }
+          ]
+        },
+        {
+          "t": "All forms: severe hypersensitivity (anaphylaxis, angioedema) reported; stop if hypersensitivity or irritation occurs. Oral gel: stop at the first sign of skin rash (SJS/TEN reported).",
+          "tag": "Hypersensitivity",
+          "src": [
+            { "s": "emc-14746", "q": "If a reaction suggesting hypersensitivity or irritation should occur, the treatment should be discontinued." },
+            { "s": "emc-14746", "q": "use of miconazole be discontinued at the first appearance of skin rash." }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Oral gel contraindicated with CYP3A4-metabolised QT-prolonging medicines, ergot alkaloids, statins such as simvastatin and lovastatin, triazolam and oral midazolam. (Atorvastatin is not named in the gel SmPC; its own SmPC says it is metabolised by CYP3A4, but no UK source gives a level for this pair.)",
+          "tag": "Oral gel: contraindicated",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "Oral miconazole is contraindicated with the coadministration of the following drugs that are subject to metabolism by CYP3A4" },
+            { "s": "emc-1059", "q": "Atorvastatin is metabolised by cytochrome P450 3A4 (CYP3A4)" }
+          ]
+        },
+        {
+          "t": "Warfarin and oral gel: the prescription-only gel SmPC says use with caution and carefully monitor and titrate; the sugar-free 2% gel SmPC contraindicates warfarin. MHRA: over-the-counter gel must not be used with warfarin; if prescribed, monitor closely and tell the patient to stop the gel and seek immediate help with signs of bleeding.",
+          "tag": "Warfarin",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "Oral anticoagulants such as warfarin" },
+            { "s": "mhra-dsu-miconazole-warfarin-2017", "q": "they should stop using miconazole and seek immediate medical attention" }
+          ]
+        },
+        {
+          "t": "Oral gel, use with caution and reduce the dose/monitor levels if needed: sulfonylureas, phenytoin, dihydropyridine calcium-channel blockers and verapamil, carbamazepine, sildenafil, ciclosporin, tacrolimus and other CYP3A4 or CYP2C9 substrates.",
+          "tag": "Oral gel: caution",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "If necessary, their dosage should be reduced and, where appropriate, plasma levels monitored" },
+            { "s": "emc-14746", "q": "Certain calcium channel blockers such as dihydropyridines and verapamil" },
+            { "s": "emc-14746", "q": "Others: carbamazepine, cilostazol, disopyramide, buspirone, alfentanil, sildenafil" }
+          ]
+        },
+        {
+          "t": "Cream: clinically relevant interactions are rare; with warfarin or other vitamin K antagonists use caution and monitor the anticoagulant effect.",
+          "tag": "Cream",
+          "formulations": ["miconazole-cream"],
+          "src": [{ "s": "emc-443", "q": "However, in patients on warfarin or other vitamin K antagonists, caution should be exercised and anticoagulant effect should be monitored." }]
+        },
+        {
+          "t": "Vaginal cream: interactions very rare; with warfarin use caution and monitor; caution with oral hypoglycaemics, phenytoin, simvastatin, dihydropyridines and verapamil.",
+          "tag": "Vaginal",
+          "formulations": ["miconazole-vaginal"],
+          "src": [
+            { "s": "mhra-gyno-daktarin-cream", "q": "In patients on oral anticoagulants, such as warfarin, caution should be exercised and anticoagulant effect should be monitored." },
+            { "s": "mhra-gyno-daktarin-cream", "q": "when co-administered with miconazole, can be increased and caution should be exercised." }
+          ]
+        },
+        {
+          "t": "MHRA: miconazole, including the topical gel, can enhance the anticoagulant effect of warfarin.",
+          "tag": "MHRA",
+          "detail": true,
+          "src": [{ "s": "mhra-dsu-miconazole-warfarin-2016", "q": "Miconazole, including the topical gel formulation, can enhance the anticoagulant effect of warfarin" }]
+        }
+      ]
+    },
+    "renal": {
+      "status": "not-stated",
+      "note": "No renal dosing statement in the UK oral gel, cream or vaginal cream SmPCs."
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Oral gel: contraindicated in liver dysfunction.",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [{ "s": "emc-14746", "q": "In patients with liver dysfunction." }]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "Oral gel: as a precaution, preferably avoid unless the benefit outweighs the risk to the fetus.",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [{ "s": "emc-14746", "q": "As a precautionary measure, it is preferable to avoid the use of miconazole during pregnancy unless the benefit of therapy to the patient is considered to outweigh the risks to the foetus." }]
+        },
+        {
+          "t": "Cream: small amounts absorbed; use with caution in pregnancy.",
+          "formulations": ["miconazole-cream"],
+          "src": [{ "s": "emc-443", "q": "as with other imidazoles, miconazole nitrate should be used with caution during pregnancy." }]
+        },
+        {
+          "t": "Vaginal cream: in the first trimester use only if the benefit outweighs the risk.",
+          "formulations": ["miconazole-vaginal"],
+          "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "should be used in the first trimester of pregnancy only if, in the judgement of the physician, the potential benefits outweigh the possible risks." }]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "Oral gel: not known if it passes into milk; use with caution. Do not apply gel to the nipple to treat the infant (choking).",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "Caution should be exercised when prescribing miconazole oral gel to nursing mothers." },
+            { "s": "emc-14746", "q": "the gel must not be applied to the nipple of a breastfeeding woman for administration to an infant." }
+          ]
+        },
+        {
+          "t": "Cream: minimal absorption; use with caution.",
+          "formulations": ["miconazole-cream"],
+          "src": [{ "s": "emc-443", "q": "Caution should be exercised when using topically applied miconazole products during lactation." }]
+        },
+        {
+          "t": "Vaginal cream: use with caution.",
+          "formulations": ["miconazole-vaginal"],
+          "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "Caution should be exercised when using Gyno-Daktarin vaginal cream during breastfeeding." }]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Vaginal cream may damage latex condoms and diaphragms: use another contraceptive method during treatment.",
+          "formulations": ["miconazole-vaginal"],
+          "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "Contact should be avoided between certain latex products such as contraceptive diaphragms or condoms and Gyno-Daktarin vaginal cream since the constituents of the cream may damage the latex" }]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Oral gel (adults): nausea, abnormal taste, oral discomfort, dry mouth, vomiting. Children: nausea and vomiting very common, regurgitation common.",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "common adverse reactions reported included nausea (4.5%), product taste abnormal (4.5%), oral discomfort (3.4%), dry mouth (2.3%), dysgeusia (1.1%), and vomiting (1.1%)." },
+            { "s": "emc-14746", "q": "the frequency of nausea (13.0%) and vomiting (13.0%) was very common, and regurgitation (8.7%) was common." }
+          ]
+        },
+        {
+          "t": "Cream: uncommon skin burning, inflammation or hypopigmentation; application-site irritation.",
+          "formulations": ["miconazole-cream"],
+          "src": [{ "s": "emc-443", "q": "Skin burning sensation Skin inflammation Skin hypopigmentation" }]
+        },
+        {
+          "t": "Vaginal cream: very common genital itching, vaginal burning and vulvovaginal discomfort; common rash and dysmenorrhoea.",
+          "formulations": ["miconazole-vaginal"],
+          "src": [
+            { "s": "mhra-gyno-daktarin-cream", "q": "Genital pruritus female, vaginal burning sensation, vulvovaginal" },
+            { "s": "mhra-gyno-daktarin-cream", "q": "Common Rash" }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Oral gel with warfarin: raised INR and bleeding (nosebleeds, bruising, blood in urine, black stools, vomiting blood), some fatal. Stop the gel and seek medical advice.",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "Increases in INR and bleeding events such as epistaxis, contusion, haematuria, melaena, haematemesis, haematoma and haemorrhages have been reported" },
+            { "s": "emc-14746", "q": "to stop treatment with miconazole and seek medical advice." }
+          ]
+        },
+        {
+          "t": "Oral gel: choking in infants and young children.",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [{ "s": "emc-14746", "q": "As identified through post-marketing experience, choking may occur in infants and young children" }]
+        },
+        {
+          "t": "Anaphylaxis and angioedema (all forms); SJS/TEN, DRESS and hepatitis (oral gel): stop treatment.",
+          "src": [
+            { "s": "emc-443", "q": "Severe hypersensitivity reactions, including anaphylaxis and angioedema, have been reported during treatment with Daktarin Cream and with other miconazole topical formulations" },
+            { "s": "emc-14746", "q": "Serious skin reactions (e.g. Toxic epidermal necrolysis and Stevens-Johnson syndrome) have been reported in patients receiving miconazole" }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Oral gel (and cream/vaginal) with warfarin: monitor INR/anticoagulant effect closely and titrate the warfarin dose.",
+          "tag": "ongoing",
+          "src": [
+            { "s": "mhra-dsu-miconazole-warfarin-2017", "q": "exercise caution and ensure that you monitor and titrate the anticoagulant effect carefully" },
+            { "s": "emc-443", "q": "However, in patients on warfarin or other vitamin K antagonists, caution should be exercised and anticoagulant effect should be monitored." }
+          ]
+        },
+        {
+          "t": "Oral gel with phenytoin: monitor phenytoin and miconazole levels.",
+          "tag": "ongoing",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [{ "s": "emc-14746", "q": "It is advisable to monitor miconazole and phenytoin levels, if these two drugs are used concomitantly." }]
+        },
+        {
+          "t": "Stop if hypersensitivity, irritation or skin rash appears.",
+          "tag": "stop",
+          "src": [{ "s": "emc-14746", "q": "If a reaction suggesting hypersensitivity or irritation should occur, the treatment should be discontinued." }]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral gel: apply after meals, keep in the mouth as long as possible before swallowing. Infants: small portions with a clean finger, never to the back of the throat. Dentures: remove at night and brush with the gel.",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [
+            { "s": "emc-14746", "q": "The gel should not be swallowed immediately, but kept in the mouth as long as possible." },
+            { "s": "emc-14746", "q": "For oral candidosis, dental prostheses should be removed at night and brushed with the gel." }
+          ]
+        },
+        {
+          "t": "Cream: rub into the lesions until absorbed.",
+          "formulations": ["miconazole-cream"],
+          "src": [{ "s": "emc-443", "q": "Rub the cream into the skin with your finger until it has fully penetrated." }]
+        },
+        {
+          "t": "Vaginal cream: insert deeply at bedtime; continue even if itching stops or menstruation starts.",
+          "formulations": ["miconazole-vaginal"],
+          "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "Continue the course of treatment even after pruritus and leukorrhoea have disappeared or menstruation begins." }]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Tell your doctor or pharmacist if you take warfarin before using any miconazole product; seek advice for unexplained bruising, nosebleeds or blood in the urine.",
+          "src": [{ "s": "mhra-dsu-miconazole-warfarin-2016", "q": "Patients should be advised to tell their doctor or pharmacist if they are receiving warfarin before using products that contain miconazole" }]
+        },
+        {
+          "t": "Oral gel in infants: watch for choking.",
+          "formulations": ["miconazole-oral-gel"],
+          "src": [{ "s": "emc-14746", "q": "Observe the patient for possible choking." }]
+        },
+        {
+          "t": "If symptoms persist, worsen or new symptoms occur, stop and see a doctor.",
+          "src": [{ "s": "emc-14746", "q": "If symptoms persist or get worse, or if new symptoms occur, stop use and consult a doctor." }]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "miconazole:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "miconazole",
+      "allergen": ["miconazole", "group:imidazole-antifungal"],
+      "concern": "Hypersensitivity to miconazole or other imidazoles",
+      "consequence": "Risk of hypersensitivity reaction, including anaphylaxis and angioedema.",
+      "action": "Do not use (all forms).",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-14746", "q": "Known hypersensitivity to miconazole, other imidazole derivatives or to any of the excipients listed in section 6.1." },
+        { "s": "emc-443", "q": "Hypersensitivity to the active substance, other imidazole derivatives or to any of the excipients listed in section 6.1." },
+        { "s": "mhra-gyno-daktarin-cream", "q": "is contraindicated in individuals with a known hypersensitivity to miconazole/miconazole nitrate, other imidazole derivatives" }
+      ]
+    },
+    {
+      "id": "miconazole:age:under-4-months",
+      "kind": "age",
+      "level": "contraindicated",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "age": { "maxYears": 0.3333 },
+      "concern": "Infant under 4 months (oral gel)",
+      "consequence": "Risk of choking.",
+      "action": "Do not use the oral gel.",
+      "sourceWording": "Contraindications",
+      "src": [{ "s": "emc-14746", "q": "In infants less than 4 months of age or in those whose swallowing reflex is not yet sufficiently developed" }]
+    },
+    {
+      "id": "miconazole:age:4m-2y-choking",
+      "kind": "age",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "age": { "minYears": 0.3333, "maxYears": 2 },
+      "concern": "Infant or young child 4 months to 2 years (oral gel)",
+      "consequence": "Gel may obstruct the throat (choking).",
+      "action": "Caution: divide each dose into small portions, apply with a clean finger, not to the back of the throat; observe for choking. Pre-term or slowly developing infants: raise the lower age limit to 5 to 6 months.",
+      "sourceWording": "caution is required",
+      "src": [
+        { "s": "emc-14746", "q": "Particularly in infants and young children (aged 4 months - 2 years), caution is required, to ensure that the gel does not obstruct the throat." },
+        { "s": "emc-14746", "q": "The lower age limit should be increased to 5-6 months of age for infants who are pre-term, or infants exhibiting slow neuromuscular development." }
+      ]
+    },
+    {
+      "id": "miconazole:condition:swallowing",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "condition": "swallowing-difficulty",
+      "age": { "maxYears": 2 },
+      "concern": "Infant or young child whose swallowing reflex is not yet sufficiently developed (oral gel)",
+      "consequence": "Risk of choking.",
+      "action": "Do not use the oral gel. (The SmPC states this for infants; the age limit of 2 years follows the SmPC choking warning for infants and young children aged 4 months to 2 years.)",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-14746", "q": "In infants less than 4 months of age or in those whose swallowing reflex is not yet sufficiently developed" },
+        { "s": "emc-14746", "q": "Particularly in infants and young children (aged 4 months - 2 years), caution is required, to ensure that the gel does not obstruct the throat." }
+      ]
+    },
+    {
+      "id": "miconazole:hepatic:any",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "hepatic": ["any"],
+      "concern": "Liver dysfunction (oral gel)",
+      "consequence": "Oral gel is absorbed systemically.",
+      "action": "Do not use the oral gel.",
+      "sourceWording": "Contraindications",
+      "src": [
+        { "s": "emc-14746", "q": "In patients with liver dysfunction." },
+        { "s": "emc-6597", "q": "In patients with liver dysfunction." }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:warfarin-gel-otc",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin with oral gel (sugar-free 2% gel SmPC; MHRA: over-the-counter gel)",
+      "consequence": "Miconazole inhibits CYP2C9: raised INR and bleeding, some fatal.",
+      "action": "Sugar-free 2% gel SmPC and MHRA (over-the-counter gel): do not use with warfarin. If a prescriber still plans the gel, see the caution rule: monitor INR closely and stop the gel at any sign of bleeding.",
+      "sourceWording": "contraindicated",
+      "src": [
+        { "s": "emc-6597", "q": "Triazolam and oral midazolam - Warfarin" },
+        { "s": "mhra-dsu-miconazole-warfarin-2017", "q": "patients taking warfarin should not use over-the-counter miconazole oral gel available from pharmacies" },
+        { "s": "mhra-dsu-miconazole-warfarin-2017", "q": "bleeding events, some with fatal outcome, have been reported with use of miconazole oral gel by patients on warfarin" }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:warfarin-gel",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin with prescribed oral gel (prescription-only gel SmPC; MHRA)",
+      "consequence": "Raised INR and bleeding, some fatal.",
+      "action": "If planned, use caution: carefully monitor and titrate the anticoagulant effect; tell the patient to stop the gel and seek immediate help if bleeding or bruising occurs.",
+      "sourceWording": "caution should be exercised and the anticoagulant effect must be carefully monitored and titrated",
+      "src": [
+        { "s": "emc-14746", "q": "caution should be exercised and the anticoagulant effect must be carefully monitored and titrated" },
+        { "s": "mhra-dsu-miconazole-warfarin-2017", "q": "exercise caution and ensure that you monitor and titrate the anticoagulant effect carefully" }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:simvastatin-gel",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "other": "simvastatin",
+      "effect": "myopathy",
+      "concern": "Simvastatin with oral gel",
+      "consequence": "Miconazole inhibits CYP3A4 metabolism of simvastatin.",
+      "action": "Do not use together.",
+      "sourceWording": "Oral miconazole is contraindicated with the coadministration",
+      "src": [
+        { "s": "emc-14746", "q": "Oral miconazole is contraindicated with the coadministration of the following drugs that are subject to metabolism by CYP3A4" },
+        { "s": "emc-14746", "q": "HMG-CoA reductase inhibitors such as simvastatin and lovastatin" }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:atorvastatin-gel",
+      "kind": "interaction",
+      "level": "info",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "other": "atorvastatin",
+      "effect": "myopathy",
+      "concern": "Atorvastatin with oral gel (pair not named in any UK source found)",
+      "consequence": "The oral gel SmPC says miconazole can inhibit the metabolism of drugs metabolised by CYP3A4, increasing their effects including adverse effects; it names simvastatin and lovastatin as contraindicated statins. The atorvastatin SmPC says atorvastatin is metabolised by CYP3A4.",
+      "action": "No UK source gives an action or level for atorvastatin with miconazole oral gel; it is not stated to be contraindicated.",
+      "sourceWording": "can inhibit the metabolism of drugs metabolised by the CYP3A4",
+      "src": [
+        { "s": "emc-14746", "q": "Miconazole can inhibit the metabolism of drugs metabolised by the CYP3A4 and CYP2C9 enzyme systems." },
+        { "s": "emc-14746", "q": "This can result in an increase and/or prolongation of their effects, including adverse effects." },
+        { "s": "emc-14746", "q": "HMG-CoA reductase inhibitors such as simvastatin and lovastatin" },
+        { "s": "emc-1059", "q": "Atorvastatin is metabolised by cytochrome P450 3A4 (CYP3A4)" }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:qt-cyp3a4-substrate-gel",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "other": "group:qt-cyp3a4-substrate",
+      "effect": "qt-prolongation",
+      "concern": "QT-prolonging medicine metabolised by CYP3A4, with oral gel",
+      "consequence": "Raised levels of the other medicine: risk of QT prolongation.",
+      "action": "Do not use together.",
+      "sourceWording": "Oral miconazole is contraindicated with the coadministration",
+      "src": [
+        { "s": "emc-14746", "q": "Oral miconazole is contraindicated with the coadministration of the following drugs that are subject to metabolism by CYP3A4" },
+        { "s": "emc-14746", "q": "Substrates known to prolong the QT-interval e.g. astemizole, cisapride, dofetilide, mizolastine, pimozide, quinidine, sertindole and terfenadine" }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:sulfonylurea-gel",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "other": "group:sulfonylurea",
+      "effect": "hypoglycaemia",
+      "concern": "Sulfonylurea with oral gel",
+      "consequence": "Enhanced effect with hypoglycaemia (CYP2C9 inhibition).",
+      "action": "Use with caution; reduce the sulfonylurea dose if necessary and take appropriate measures against hypoglycaemia.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-14746", "q": "In patients using certain oral hypoglycaemics such as sulphonylureas, an enhanced therapeutic effect leading to hypoglycaemia may occur" },
+        { "s": "emc-14746", "q": "If necessary, their dosage should be reduced and, where appropriate, plasma levels monitored" }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:dihydropyridine-gel",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "other": "group:dihydropyridine",
+      "concern": "Dihydropyridine calcium-channel blocker with oral gel",
+      "consequence": "Possible increase or prolongation of effect and adverse effects (CYP3A4).",
+      "action": "Use with caution; reduce the dose if necessary.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-14746", "q": "When coadministered with oral miconazole the following drugs should be used with caution" },
+        { "s": "emc-14746", "q": "Certain calcium channel blockers such as dihydropyridines and verapamil" }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:verapamil-gel",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "other": "verapamil",
+      "concern": "Verapamil with oral gel",
+      "consequence": "Possible increase or prolongation of effect and adverse effects (CYP3A4).",
+      "action": "Use with caution; reduce the dose if necessary.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-14746", "q": "When coadministered with oral miconazole the following drugs should be used with caution" },
+        { "s": "emc-14746", "q": "Certain calcium channel blockers such as dihydropyridines and verapamil" }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:carbamazepine-gel",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "other": "carbamazepine",
+      "concern": "Carbamazepine with oral gel",
+      "consequence": "Possible increase or prolongation of effect and adverse effects (CYP3A4).",
+      "action": "Use with caution; reduce the dose and monitor levels if necessary.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-14746", "q": "When coadministered with oral miconazole the following drugs should be used with caution" },
+        { "s": "emc-14746", "q": "Others: carbamazepine, cilostazol, disopyramide, buspirone, alfentanil, sildenafil" }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:sildenafil-gel",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "other": "sildenafil",
+      "concern": "Sildenafil with oral gel",
+      "consequence": "Possible increase or prolongation of effect and adverse effects (CYP3A4).",
+      "action": "Use with caution; reduce the dose if necessary.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        { "s": "emc-14746", "q": "When coadministered with oral miconazole the following drugs should be used with caution" },
+        { "s": "emc-14746", "q": "Others: carbamazepine, cilostazol, disopyramide, buspirone, alfentanil, sildenafil" }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:warfarin-cream",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-cream"],
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin with skin cream",
+      "consequence": "Limited absorption, but miconazole can prolong the effect of warfarin (CYP2C9).",
+      "action": "Use with caution; monitor and titrate the anticoagulant effect; stop the cream and seek advice if bleeding occurs.",
+      "sourceWording": "should be done with caution",
+      "src": [
+        { "s": "emc-443", "q": "the concomitant use of Daktarin 2% Cream and warfarin or other vitamin K antagonists should be done with caution and the anticoagulant effect should be carefully monitored and titrated." }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:warfarin-vaginal",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-vaginal"],
+      "other": "warfarin",
+      "effect": "bleeding",
+      "concern": "Warfarin with vaginal miconazole",
+      "consequence": "Limited absorption, but the anticoagulant effect may increase.",
+      "action": "Use with caution and monitor the anticoagulant effect.",
+      "sourceWording": "caution should be exercised",
+      "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "In patients on oral anticoagulants, such as warfarin, caution should be exercised and anticoagulant effect should be monitored." }]
+    },
+    {
+      "id": "miconazole:interaction:sulfonylurea-vaginal",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-vaginal"],
+      "other": "group:sulfonylurea",
+      "effect": "hypoglycaemia",
+      "concern": "Oral hypoglycaemic (CYP2C9 substrate) with vaginal miconazole",
+      "consequence": "Effects and side effects may increase.",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        { "s": "mhra-gyno-daktarin-cream", "q": "(e.g.,oral hypoglycemics and phenytoin)" },
+        { "s": "mhra-gyno-daktarin-cream", "q": "when co-administered with miconazole, can be increased and caution should be exercised." }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:simvastatin-vaginal",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-vaginal"],
+      "other": "simvastatin",
+      "effect": "myopathy",
+      "concern": "Simvastatin with vaginal miconazole",
+      "consequence": "Effects and side effects may increase (CYP3A4).",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        { "s": "mhra-gyno-daktarin-cream", "q": "HMG-CoA reductase inhibitors such as simvastatin and lovastatin" },
+        { "s": "mhra-gyno-daktarin-cream", "q": "when co-administered with miconazole, can be increased and caution should be exercised." }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:dihydropyridine-vaginal",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-vaginal"],
+      "other": "group:dihydropyridine",
+      "concern": "Dihydropyridine calcium-channel blocker with vaginal miconazole",
+      "consequence": "Effects and side effects may increase (CYP3A4).",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        { "s": "mhra-gyno-daktarin-cream", "q": "calcium channel blockers such as dihydropyridines and verapamil" },
+        { "s": "mhra-gyno-daktarin-cream", "q": "when co-administered with miconazole, can be increased and caution should be exercised." }
+      ]
+    },
+    {
+      "id": "miconazole:interaction:verapamil-vaginal",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-vaginal"],
+      "other": "verapamil",
+      "concern": "Verapamil with vaginal miconazole",
+      "consequence": "Effects and side effects may increase (CYP3A4).",
+      "action": "Use with caution.",
+      "sourceWording": "caution should be exercised",
+      "src": [
+        { "s": "mhra-gyno-daktarin-cream", "q": "calcium channel blockers such as dihydropyridines and verapamil" },
+        { "s": "mhra-gyno-daktarin-cream", "q": "when co-administered with miconazole, can be increased and caution should be exercised." }
+      ]
+    },
+    {
+      "id": "miconazole:pregnancy:gel",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "concern": "Pregnancy (oral gel)",
+      "consequence": "Precautionary: animal studies show no direct harm.",
+      "action": "Preferably avoid unless the benefit outweighs the risk to the fetus.",
+      "sourceWording": "it is preferable to avoid",
+      "src": [{ "s": "emc-14746", "q": "As a precautionary measure, it is preferable to avoid the use of miconazole during pregnancy unless the benefit of therapy to the patient is considered to outweigh the risks to the foetus." }]
+    },
+    {
+      "id": "miconazole:pregnancy:cream",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-cream"],
+      "concern": "Pregnancy (skin cream)",
+      "consequence": "Only small amounts are absorbed.",
+      "action": "Use with caution.",
+      "sourceWording": "should be used with caution during pregnancy",
+      "src": [{ "s": "emc-443", "q": "as with other imidazoles, miconazole nitrate should be used with caution during pregnancy." }]
+    },
+    {
+      "id": "miconazole:pregnancy:vaginal-t1",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-vaginal"],
+      "trimesters": [1],
+      "concern": "First trimester (vaginal)",
+      "consequence": "Limited intravaginal absorption.",
+      "action": "Use in the first trimester only if the benefit outweighs the risk.",
+      "sourceWording": "only if, in the judgement of the physician, the potential benefits outweigh the possible risks",
+      "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "should be used in the first trimester of pregnancy only if, in the judgement of the physician, the potential benefits outweigh the possible risks." }]
+    },
+    {
+      "id": "miconazole:breastfeeding:gel",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-oral-gel"],
+      "concern": "Breastfeeding (oral gel)",
+      "consequence": "Not known whether miconazole passes into milk.",
+      "action": "Use with caution. Do not apply the gel to the nipple to treat the infant (choking risk).",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        { "s": "emc-14746", "q": "Caution should be exercised when prescribing miconazole oral gel to nursing mothers." },
+        { "s": "emc-14746", "q": "the gel must not be applied to the nipple of a breastfeeding woman for administration to an infant." }
+      ]
+    },
+    {
+      "id": "miconazole:breastfeeding:cream",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-cream"],
+      "concern": "Breastfeeding (skin cream)",
+      "consequence": "Minimal absorption; milk excretion not known.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be exercised",
+      "src": [{ "s": "emc-443", "q": "Caution should be exercised when using topically applied miconazole products during lactation." }]
+    },
+    {
+      "id": "miconazole:breastfeeding:vaginal",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "miconazole",
+      "formulations": ["miconazole-vaginal"],
+      "concern": "Breastfeeding (vaginal)",
+      "consequence": "Not known whether miconazole passes into milk.",
+      "action": "Use with caution.",
+      "sourceWording": "Caution should be exercised",
+      "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "Caution should be exercised when using Gyno-Daktarin vaginal cream during breastfeeding." }]
+    },
+    {
+      "id": "miconazole:age:neonate-cream",
+      "kind": "age",
+      "level": "info",
+      "med": "miconazole",
+      "formulations": ["miconazole-cream"],
+      "age": { "maxYears": 0.0767 },
+      "concern": "Newborn up to 4 weeks (skin cream)",
+      "consequence": "The benzoic acid excipient may increase jaundice in newborns (absorbed through immature skin).",
+      "action": "Be aware of this excipient effect.",
+      "sourceWording": "may increase jaundice",
+      "src": [{ "s": "emc-443", "q": "Benzoic acid may increase jaundice (yellowing of the skin and eyes) in newborn babies (up to 4 weeks old)" }]
+    },
+    {
+      "id": "miconazole:age:under-18-vaginal",
+      "kind": "age",
+      "level": "info",
+      "med": "miconazole",
+      "formulations": ["miconazole-vaginal"],
+      "age": { "maxYears": 18 },
+      "concern": "Under 18 years (vaginal)",
+      "consequence": "Safety and efficacy not studied in children and adolescents.",
+      "action": "UK dosing is for adults 18 and over only.",
+      "sourceWording": "has not been studied",
+      "src": [{ "s": "mhra-gyno-daktarin-cream", "q": "The safety and efficacy of Gyno-Daktarin vaginal cream in children and adolescents has not been studied." }]
+    }
+  ]
+}

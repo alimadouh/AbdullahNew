@@ -1,0 +1,1571 @@
+{
+  "id": "telmisartan",
+  "name": "Telmisartan",
+  "ingredients": [
+    "telmisartan"
+  ],
+  "className": "Angiotensin II receptor blocker (ARB)",
+  "groups": [
+    "arb",
+    "antihypertensive"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "telmisartan-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "40 mg, 80 mg",
+      "release": "immediate",
+      "note": "Tablets contain sorbitol (about 169 mg per 40 mg tablet, 337 mg per 80 mg tablet).",
+      "src": [
+        {
+          "s": "emc-3165",
+          "q": "Each tablet contains 40 mg telmisartan."
+        },
+        {
+          "s": "emc-3165",
+          "q": "Each 40 mg tablet contains 169 mg sorbitol (E420)."
+        },
+        {
+          "s": "emc-3164",
+          "q": "Each tablet contains 80 mg telmisartan."
+        },
+        {
+          "s": "emc-3164",
+          "q": "Each 80 mg tablet contains 337 mg sorbitol (E420)."
+        }
+      ],
+      "sourceIds": [
+        "emc-3165",
+        "emc-3164"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Essential hypertension in adults.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Treatment of essential hypertension in adults."
+            }
+          ]
+        },
+        {
+          "t": "Reduction of cardiovascular morbidity in adults with manifest atherothrombotic cardiovascular disease (coronary heart disease, stroke or peripheral arterial disease) or type 2 diabetes with documented target organ damage.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Reduction of cardiovascular morbidity in adults with: manifest atherothrombotic cardiovascular disease (history of coronary heart disease, stroke, or peripheral arterial disease) or type 2 diabetes mellitus with documented target organ damage"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No specialist-only or shared-care restriction stated in the telmisartan SmPCs. Dual RAAS blockade only under specialist supervision (see cautions)."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Hypertension: usually 40 mg once daily (some respond to 20 mg); maximum 80 mg once daily. Maximum effect usually 4-8 weeks after starting.",
+          "tag": "Hypertension",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "The usually effective dose is 40 mg once daily."
+            },
+            {
+              "s": "emc-3164",
+              "q": "the dose of telmisartan can be increased to a maximum of 80 mg once daily"
+            },
+            {
+              "s": "emc-3164",
+              "q": "maximum antihypertensive effect is generally attained 4 to 8 weeks after the start of treatment"
+            }
+          ]
+        },
+        {
+          "t": "Cardiovascular prevention: 80 mg once daily (lower doses not known to be effective). Monitor blood pressure closely when starting.",
+          "tag": "Cardiovascular prevention",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "The recommended dose is 80 mg once daily."
+            },
+            {
+              "s": "emc-3164",
+              "q": "When initiating telmisartan therapy for the reduction of cardiovascular morbidity, close monitoring of blood pressure is recommended"
+            }
+          ]
+        },
+        {
+          "t": "Elderly: no dose adjustment needed.",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "No dose adjustment is necessary for elderly patients."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Under 18 years: safety and efficacy not established; no dose recommendation.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "The safety and efficacy of Micardis in children and adolescents aged below 18 years have not been established."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to telmisartan or any excipient.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1"
+            }
+          ]
+        },
+        {
+          "t": "Second and third trimesters of pregnancy.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Second and third trimesters of pregnancy"
+            }
+          ]
+        },
+        {
+          "t": "Biliary obstructive disorders; severe hepatic impairment.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Biliary obstructive disorders Severe hepatic impairment"
+            }
+          ]
+        },
+        {
+          "t": "With aliskiren-containing products in patients with diabetes mellitus or renal impairment (GFR below 60 mL/min/1.73 m²).",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "The concomitant use of Micardis with aliskiren-containing products is contraindicated in patients with diabetes mellitus or renal impairment (GFR < 60 mL/min/1.73 m2)"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Dual RAAS blockade (ACE inhibitor, ARB or aliskiren together) is not recommended; if absolutely necessary, only under specialist supervision with close monitoring. Do not combine an ACE inhibitor and an ARB in diabetic nephropathy.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Dual blockade of RAAS through the combined use of ACE-inhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended"
+            },
+            {
+              "s": "emc-3164",
+              "q": "ACE-inhibitors and angiotensin II receptor blockers should not be used concomitantly in patients with diabetic nephropathy."
+            }
+          ]
+        },
+        {
+          "t": "Hyperkalaemia can be fatal in the elderly, renal insufficiency, diabetes, with other potassium-raising drugs, or intercurrent illness (dehydration, acute cardiac decompensation, acidosis). Weigh risk/benefit; monitor potassium closely in at-risk patients.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "hyperkalaemia may be fatal"
+            },
+            {
+              "s": "emc-3164",
+              "q": "Close monitoring of serum potassium in at risk patients is recommended"
+            }
+          ]
+        },
+        {
+          "t": "Volume or sodium depletion (diuretics, salt restriction, diarrhoea, vomiting): correct before starting (first-dose hypotension).",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Volume and/or sodium depletion should be corrected prior to administration of Micardis."
+            }
+          ]
+        },
+        {
+          "t": "Renal artery stenosis (bilateral or single functioning kidney): increased risk of severe hypotension and renal insufficiency. Renal impairment: monitor potassium and creatinine periodically.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "There is an increased risk of severe hypotension and renal insufficiency when patients with bilateral renal artery stenosis or stenosis of the artery to a single functioning kidney"
+            },
+            {
+              "s": "emc-3164",
+              "q": "periodic monitoring of potassium and creatinine serum levels is recommended"
+            }
+          ]
+        },
+        {
+          "t": "Diabetes treated with insulin or antidiabetics: hypoglycaemia may occur; consider glucose monitoring and dose adjustment.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "In these patients hypoglycaemia may occur under telmisartan treatment."
+            },
+            {
+              "s": "emc-3164",
+              "q": "appropriate blood glucose monitoring should be considered"
+            }
+          ]
+        },
+        {
+          "t": "Mild to moderate hepatic impairment: caution (mostly eliminated in bile). Aortic or mitral stenosis, obstructive cardiomyopathy: special caution. Primary aldosteronism: not recommended.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Micardis should be used only with caution in patients with mild to moderate hepatic impairment."
+            },
+            {
+              "s": "emc-3164",
+              "q": "special caution is indicated in patients suffering from aortic or mitral stenosis, or obstructive hypertrophic cardiomyopathy"
+            },
+            {
+              "s": "emc-3164",
+              "q": "Therefore, the use of telmisartan is not recommended."
+            }
+          ]
+        },
+        {
+          "t": "Ischaemic heart or cerebrovascular disease: excessive blood pressure fall could cause MI or stroke. Intestinal angioedema: stop and monitor.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "excessive reduction of blood pressure in patients with ischaemic cardiopathy or ischaemic cardiovascular disease could result in a myocardial infarction or stroke"
+            },
+            {
+              "s": "emc-3164",
+              "q": "If intestinal angioedema is diagnosed, telmisartan should be discontinued"
+            }
+          ]
+        },
+        {
+          "t": "Contains sorbitol: hereditary fructose intolerance should not take it. No experience after recent kidney transplantation; not removed by haemofiltration or dialysis.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Patients with hereditary fructose intolerance (HFI) should not take this medicinal product."
+            },
+            {
+              "s": "emc-3164",
+              "q": "There is no experience regarding the administration of Micardis in patients with recent kidney transplantation."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Potassium-sparing diuretics (e.g. spironolactone), potassium supplements, potassium salt substitutes: concomitant use not recommended (significant potassium rise); if used for documented hypokalaemia, use with caution and frequent potassium monitoring.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Concomitant use not recommended. Potassium sparing diuretics or potassium supplements"
+            },
+            {
+              "s": "emc-3164",
+              "q": "If concomitant use is indicated because of documented hypokalaemia, they should be used with caution and with frequent monitoring of serum potassium."
+            }
+          ]
+        },
+        {
+          "t": "Other potassium-raising medicines (ACE inhibitors, ARBs, NSAIDs, heparin, ciclosporin, tacrolimus, trimethoprim): increased hyperkalaemia risk; monitor potassium closely in at-risk patients.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "salt substitutes containing potassium, potassium-sparing diuretics, ACE inhibitors, angiotensin II receptor blockers, non steroidal anti-inflammatory medicinal products (NSAIDs, including selective COX-2 inhibitors), heparin, immunosuppressives (cyclosporin or tacrolimus), and trimethoprim"
+            }
+          ]
+        },
+        {
+          "t": "NSAIDs (including COX-2 inhibitors and aspirin at anti-inflammatory doses): reduced antihypertensive effect; possible acute renal failure in compromised renal function. Use with caution, especially in the elderly; hydrate; consider monitoring renal function.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "NSAIDs (i.e. acetylsalicylic acid at anti-inflammatory dosage regimens, COX-2 inhibitors and non-selective NSAIDs) may reduce the antihypertensive effect of angiotensin II receptor blockers."
+            },
+            {
+              "s": "emc-3164",
+              "q": "Therefore, the combination should be administered with caution, especially in the elderly."
+            }
+          ]
+        },
+        {
+          "t": "Lithium: concomitant use not recommended (raised lithium levels and toxicity); if the combination proves necessary, monitor lithium carefully. Digoxin: levels rise; monitor digoxin when starting, adjusting or stopping telmisartan.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Concomitant use not recommended. Potassium sparing diuretics or potassium supplements"
+            },
+            {
+              "s": "emc-3164",
+              "q": "Reversible increases in serum lithium concentrations and toxicity have been reported"
+            },
+            {
+              "s": "emc-3164",
+              "q": "If use of the combination proves necessary, careful monitoring of serum lithium levels is recommended."
+            },
+            {
+              "s": "emc-3164",
+              "q": "When initiating, adjusting, and discontinuing telmisartan, monitor digoxin levels in order to maintain levels within the therapeutic range."
+            }
+          ]
+        },
+        {
+          "t": "High-dose diuretics before starting: volume depletion and hypotension risk. Other antihypertensives, baclofen, amifostine: more blood pressure lowering. Alcohol, barbiturates, opioids or antidepressants may aggravate orthostatic hypotension. Systemic corticosteroids reduce the antihypertensive effect.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "may result in volume depletion, and in a risk of hypotension when initiating therapy with telmisartan"
+            },
+            {
+              "s": "emc-3164",
+              "q": "orthostatic hypotension may be aggravated by alcohol, barbiturates, narcotics, or antidepressants"
+            },
+            {
+              "s": "emc-3164",
+              "q": "Corticosteroids (systemic route) Reduction of the antihypertensive effect."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "Mild to moderate renal impairment: no dose adjustment.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "No posology adjustment is required for patients with mild to moderate renal impairment."
+            }
+          ]
+        },
+        {
+          "t": "Severe renal impairment or haemodialysis: limited experience; start at 20 mg. Not removed by haemofiltration or dialysis.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Limited experience is available in patients with severe renal impairment or haemodialysis. A lower starting dose of 20 mg is recommended in these patients"
+            }
+          ]
+        },
+        {
+          "t": "Renal impairment: monitor potassium and creatinine periodically.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "When Micardis is used in patients with impaired renal function, periodic monitoring of potassium and creatinine serum levels is recommended."
+            }
+          ]
+        },
+        {
+          "t": "SPS: seek specialist advice before starting if eGFR is below 30 mL/min/1.73 m².",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Mild to moderate hepatic impairment: maximum 40 mg once daily; use with caution.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "In patients with mild to moderate hepatic impairment, the posology should not exceed 40 mg once daily"
+            }
+          ]
+        },
+        {
+          "t": "Severe hepatic impairment, cholestasis or biliary obstructive disorders: contraindicated (reduced biliary clearance).",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Micardis is not to be given to patients with cholestasis, biliary obstructive disorders or severe hepatic impairment"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "First trimester: not recommended. Second and third trimesters: contraindicated (fetotoxicity: reduced renal function, oligohydramnios, skull ossification retardation; neonatal renal failure, hypotension, hyperkalaemia).",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "The use of angiotensin II receptor blockers is not recommended during the first trimester of pregnancy"
+            },
+            {
+              "s": "emc-3164",
+              "q": "The use of angiotensin II receptor blockers is contraindicated during the second and third trimesters of pregnancy"
+            },
+            {
+              "s": "emc-3164",
+              "q": "Exposure to angiotensin II receptor blocker therapy during the second and third trimesters is known to induce human fetotoxicity"
+            }
+          ]
+        },
+        {
+          "t": "Do not start in pregnancy; stop immediately on diagnosis and switch if appropriate. After exposure from the second trimester: ultrasound of fetal renal function and skull; observe the infant for hypotension.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Angiotensin II receptor blockers should not be initiated during pregnancy."
+            },
+            {
+              "s": "emc-3164",
+              "q": "Should exposure to angiotensin II receptor blockers have occurred from the second trimester of pregnancy, ultrasound check of renal function and skull is recommended."
+            },
+            {
+              "s": "emc-3164",
+              "q": "Infants whose mothers have taken angiotensin II receptor blockers should be closely observed for hypotension"
+            }
+          ]
+        },
+        {
+          "t": "MHRA: ACE inhibitors and ARBs should not be used at any stage of pregnancy unless absolutely necessary; stop as soon as possible on diagnosis.",
+          "tag": "MHRA",
+          "src": [
+            {
+              "s": "mhra-dsu-acei-arb-breastfeeding",
+              "q": "ACE inhibitors and angiotensin II receptor antagonists should not be used at any stage of pregnancy unless absolutely necessary"
+            },
+            {
+              "s": "mhra-dsu-acei-arb-pregnancy",
+              "q": "On diagnosis of pregnancy, treatment with an ACE inhibitor or angiotensin II receptor antagonist should be stopped as soon as possible"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: early-pregnancy use is unlikely to harm the baby but the ARB should usually be stopped; use after 20 weeks can cause problems in up to 1 in 3 exposed babies, and needs extra monitoring.",
+          "tag": "UKTIS/BUMPS",
+          "detail": true,
+          "src": [
+            {
+              "s": "bumps-arbs",
+              "q": "Taking an ARB in early pregnancy is unlikely to harm your baby."
+            },
+            {
+              "s": "bumps-arbs",
+              "q": "an ARB should usually be stopped as soon as you find out you are pregnant"
+            },
+            {
+              "s": "bumps-arbs",
+              "q": "Studies show that up to one in every three babies exposed in the womb to an ARB after 20 weeks of pregnancy develop some or all of these problems."
+            },
+            {
+              "s": "bumps-arbs",
+              "q": "If you take an ARB after around 20 weeks you will require additional monitoring to assess amniotic fluid levels and your baby's growth and wellbeing."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: not recommended (no information); prefer alternatives, especially with a newborn or preterm infant. MHRA: not recommended for any ARB.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Because no information is available regarding the use of Micardis during breast-feeding, Micardis is not recommended"
+            },
+            {
+              "s": "mhra-dsu-acei-arb-breastfeeding",
+              "q": "For all angiotensin II receptor antagonists, use in mothers breastfeeding is not recommended."
+            }
+          ]
+        },
+        {
+          "t": "SPS: telmisartan can be used with caution if specifically indicated, but it is among the least preferred ARBs (long half-life, higher bioavailability) and another class is preferred. Monitor the infant for hypotension and wet nappies; neonates and infants under 2 months are at most risk.",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-arb-breastfeeding",
+              "q": "Irbesartan and telmisartan have the longest half-lives and highest bioavailability and therefore are the least preferred options from this class."
+            },
+            {
+              "s": "sps-arb-breastfeeding",
+              "q": "Telmisartan has less favourable pharmacokinetics than candesartan, losartan or valsartan."
+            },
+            {
+              "s": "sps-arb-breastfeeding",
+              "q": "Neonates and infants less than 2 months are at the most risk from the side-effects of angiotensin-II receptor antagonists, particularly hypotension"
+            },
+            {
+              "s": "sps-arb-breastfeeding",
+              "q": "As a precaution, monitor the infant for hypotension which may manifest as drowsiness, lethargy, looking pale, poor feeding and inadequate weight gain."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Patients planning pregnancy should be switched to an alternative with an established pregnancy safety profile unless continued treatment is essential. No effect on fertility in preclinical studies.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "patients planning pregnancy should be changed to alternative antihypertensive treatments which have an established safety profile for use in pregnancy"
+            },
+            {
+              "s": "emc-3164",
+              "q": "In preclinical studies, no effects of Micardis on male and female fertility were observed."
+            },
+            {
+              "s": "mhra-dsu-acei-arb-pregnancy",
+              "q": "women who are planning pregnancy should be switched to alternative antihypertensive treatments that have an established safety profile for use in pregnancy"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "No very common or common adverse effects listed for hypertension; hypotension was common in the cardiovascular prevention population. Uncommon: urinary and upper respiratory infections, anaemia, hyperkalaemia, dizziness, vertigo, hypotension, dyspnoea, cough, abdominal pain, diarrhoea, back pain, myalgia, raised creatinine.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "This adverse reaction was reported as common in patients with controlled blood pressure who were treated with telmisartan for the reduction of cardiovascular morbidity"
+            },
+            {
+              "s": "emc-3164",
+              "q": "Renal and urinary disorders Uncommon: Renal impairment (including acute kidney injury)"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Anaphylaxis and angioedema (rare, including fatal angioedema); acute renal failure. Intestinal angioedema: stop telmisartan.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Serious adverse drug reactions include anaphylactic reaction and angioedema which may occur rarely"
+            },
+            {
+              "s": "emc-3164",
+              "q": "and acute renal failure"
+            },
+            {
+              "s": "emc-3164",
+              "q": "If intestinal angioedema is diagnosed, telmisartan should be discontinued"
+            }
+          ]
+        },
+        {
+          "t": "Sepsis (rare, including fatal; higher incidence seen in one trial); interstitial lung disease (very rare); hypoglycaemia in diabetes.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "Sepsis including fatal outcome1"
+            },
+            {
+              "s": "emc-3164",
+              "q": "In the PRoFESS trial, an increased incidence of sepsis was observed with telmisartan compared with placebo."
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Baseline: blood pressure, eGFR or serum creatinine, potassium, sodium.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Baseline Blood pressure Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Serum potassium Serum sodium"
+            }
+          ]
+        },
+        {
+          "t": "Hypertension: renal function, sodium and potassium within 1-2 weeks of starting or a dose change; blood pressure within 1 month; then annually. Cardiovascular prevention: close blood pressure monitoring at the start.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Hypertension Within 1 - 2 weeks Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance) Serum sodium Serum potassium Within 1 month Blood pressure"
+            },
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Hypertension Annually Serum sodium Serum potassium Estimated glomerular filtration rate or Serum creatinine (for creatinine clearance)"
+            },
+            {
+              "s": "emc-3164",
+              "q": "close monitoring of blood pressure is recommended"
+            }
+          ]
+        },
+        {
+          "t": "Diabetes on insulin or antidiabetics: consider blood glucose monitoring.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "appropriate blood glucose monitoring should be considered"
+            }
+          ]
+        },
+        {
+          "t": "Potassium 6.0 mmol/L or above in CKD: stop the ARB after stopping other potassium-raising drugs and seek specialist advice. Sodium below 132 mmol/L: specialist advice. Creatinine rise over 50%: follow local guidelines.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Value 6.0 mmol/L or above in people with CKD Stop ACEI/ARB after stopping other drugs that may increase potassium and seek specialist advice."
+            },
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Value is below 132mmol/L Obtain specialist advice"
+            },
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "A transient decrease in renal function should not prompt stopping ACEI/ARB"
+            },
+            {
+              "s": "sps-acei-arb-monitoring",
+              "q": "Creatinine increase more than 50% Follow local guidelines"
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Once daily; swallow whole with liquid, with or without food. Keep in the sealed blister and remove just before taking (hygroscopic).",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "should be swallowed whole with liquid, with or without food"
+            },
+            {
+              "s": "emc-3164",
+              "q": "Tablets should be taken out of the blister shortly before administration"
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Fainting or vertigo may occasionally occur; take care when driving or using machines.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "it should be taken into account that syncope or vertigo may occasionally occur"
+            }
+          ]
+        },
+        {
+          "t": "Tell the prescriber straight away if pregnant or planning pregnancy.",
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "When pregnancy is diagnosed, treatment with angiotensin II receptor blockers should be stopped immediately"
+            }
+          ]
+        },
+        {
+          "t": "People with diabetes: watch for low blood sugar.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3164",
+              "q": "In these patients hypoglycaemia may occur under telmisartan treatment."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "telmisartan:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "telmisartan",
+      "allergen": [
+        "telmisartan"
+      ],
+      "concern": "Hypersensitivity to telmisartan",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Hypersensitivity to the active substance or to any of the excipients listed in section 6.1"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:pregnancy:t2-t3",
+      "kind": "pregnancy",
+      "level": "contraindicated",
+      "med": "telmisartan",
+      "trimesters": [
+        2,
+        3
+      ],
+      "concern": "Second or third trimester",
+      "consequence": "Fetotoxicity (reduced renal function, oligohydramnios, skull ossification retardation) and neonatal toxicity (renal failure, hypotension, hyperkalaemia).",
+      "action": "Do not use; stop and switch to an alternative.",
+      "sourceWording": "contraindicated during the second and third trimesters",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "The use of angiotensin II receptor blockers is contraindicated during the second and third trimesters of pregnancy"
+        },
+        {
+          "s": "emc-3164",
+          "q": "Exposure to angiotensin II receptor blocker therapy during the second and third trimesters is known to induce human fetotoxicity"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:pregnancy:t1",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "telmisartan",
+      "trimesters": [
+        1
+      ],
+      "concern": "First trimester",
+      "consequence": "A small increase in teratogenic risk cannot be excluded.",
+      "action": "Not recommended; stop when pregnancy is diagnosed and start an alternative if appropriate.",
+      "sourceWording": "not recommended during the first trimester",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "The use of angiotensin II receptor blockers is not recommended during the first trimester of pregnancy"
+        },
+        {
+          "s": "emc-3164",
+          "q": "When pregnancy is diagnosed, treatment with angiotensin II receptor blockers should be stopped immediately"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:pregnancy:mhra",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "telmisartan",
+      "concern": "Pregnancy (MHRA advice, any stage)",
+      "consequence": "Late-pregnancy renal dysfunction, oligohydramnios, neonatal anuria, skull ossification defects; possible first-trimester anomaly risk.",
+      "action": "Do not use at any stage unless absolutely necessary; stop as soon as possible on diagnosis.",
+      "sourceWording": "should not be used at any stage of pregnancy unless absolutely necessary",
+      "src": [
+        {
+          "s": "mhra-dsu-acei-arb-breastfeeding",
+          "q": "ACE inhibitors and angiotensin II receptor antagonists should not be used at any stage of pregnancy unless absolutely necessary"
+        },
+        {
+          "s": "mhra-dsu-acei-arb-pregnancy",
+          "q": "On diagnosis of pregnancy, treatment with an ACE inhibitor or angiotensin II receptor antagonist should be stopped as soon as possible"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:breastfeeding:smpc-mhra",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "telmisartan",
+      "concern": "Breastfeeding (SmPC and MHRA)",
+      "consequence": "No information on use in breastfeeding.",
+      "action": "Not recommended; prefer alternatives, especially with a newborn or preterm infant.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Because no information is available regarding the use of Micardis during breast-feeding, Micardis is not recommended"
+        },
+        {
+          "s": "mhra-dsu-acei-arb-breastfeeding",
+          "q": "For all angiotensin II receptor antagonists, use in mothers breastfeeding is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "telmisartan",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Least preferred ARB in breastfeeding (long half-life); infants under 2 months most at risk of hypotension.",
+      "action": "Can be used with caution only if specifically indicated; prefer another class (or candesartan, losartan, valsartan within the class). Monitor the infant.",
+      "sourceWording": "Use with caution",
+      "src": [
+        {
+          "s": "sps-arb-breastfeeding",
+          "q": "It can be used with caution during breastfeeding if there are specific clinical indications for it."
+        },
+        {
+          "s": "sps-arb-breastfeeding",
+          "q": "Irbesartan and telmisartan have the longest half-lives and highest bioavailability and therefore are the least preferred options from this class."
+        },
+        {
+          "s": "sps-arb-breastfeeding",
+          "q": "Neonates and infants less than 2 months are at the most risk from the side-effects of angiotensin-II receptor antagonists, particularly hypotension"
+        },
+        {
+          "s": "sps-arb-breastfeeding",
+          "q": "As a precaution, monitor the infant for hypotension which may manifest as drowsiness, lethargy, looking pale, poor feeding and inadequate weight gain."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:hepatic:severe",
+      "kind": "hepatic",
+      "level": "contraindicated",
+      "med": "telmisartan",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe hepatic impairment",
+      "consequence": "Telmisartan is mostly eliminated in bile; reduced clearance.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Biliary obstructive disorders Severe hepatic impairment"
+        },
+        {
+          "s": "emc-3164",
+          "q": "since telmisartan is mostly eliminated with the bile"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:cholestasis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "telmisartan",
+      "condition": "cholestasis-biliary-obstruction",
+      "concern": "Cholestasis or biliary obstructive disorder",
+      "consequence": "Telmisartan is mostly eliminated in bile; reduced clearance.",
+      "action": "Do not use.",
+      "sourceWording": "is not to be given",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Micardis is not to be given to patients with cholestasis, biliary obstructive disorders or severe hepatic impairment"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:hepatic:mild-moderate",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "telmisartan",
+      "hepatic": [
+        "mild",
+        "moderate"
+      ],
+      "concern": "Mild to moderate hepatic impairment",
+      "consequence": "Reduced hepatic clearance.",
+      "action": "Maximum 40 mg once daily; use with caution.",
+      "sourceWording": "should not exceed 40 mg once daily",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "In patients with mild to moderate hepatic impairment, the posology should not exceed 40 mg once daily"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:age:under-18",
+      "kind": "age",
+      "level": "info",
+      "med": "telmisartan",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Under 18 years",
+      "consequence": "Safety and efficacy not established.",
+      "action": "No dose recommendation can be made.",
+      "sourceWording": "have not been established",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "The safety and efficacy of Micardis in children and adolescents aged below 18 years have not been established."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:severe-renal-impairment",
+      "kind": "condition",
+      "level": "dose",
+      "med": "telmisartan",
+      "condition": "severe-renal-impairment",
+      "concern": "Severe renal impairment or haemodialysis",
+      "consequence": "Limited experience.",
+      "action": "Start at 20 mg.",
+      "sourceWording": "A lower starting dose of 20 mg is recommended",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Limited experience is available in patients with severe renal impairment or haemodialysis. A lower starting dose of 20 mg is recommended in these patients"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:renal-impairment",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "telmisartan",
+      "condition": "renal-impairment",
+      "concern": "Renal impairment",
+      "consequence": "Risk of hyperkalaemia and rising creatinine.",
+      "action": "Monitor potassium and creatinine periodically.",
+      "sourceWording": "periodic monitoring ... is recommended",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "When Micardis is used in patients with impaired renal function, periodic monitoring of potassium and creatinine serum levels is recommended."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:renal:egfr-under-30-sps",
+      "kind": "renal",
+      "level": "caution",
+      "med": "telmisartan",
+      "renal": {
+        "measure": "eGFR",
+        "max": 30
+      },
+      "concern": "eGFR below 30 mL/min/1.73 m² (SPS)",
+      "consequence": "Higher risk of renal deterioration and hyperkalaemia.",
+      "action": "Seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease eGFR less than 30ml/min/1.73m2"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:primary-hyperaldosteronism",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "telmisartan",
+      "condition": "primary-hyperaldosteronism",
+      "concern": "Primary aldosteronism",
+      "consequence": "Will not generally respond.",
+      "action": "Not recommended.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Patients with primary aldosteronism generally will not respond to antihypertensive medicinal products acting through inhibition of the renin-angiotensin system."
+        },
+        {
+          "s": "emc-3164",
+          "q": "Therefore, the use of telmisartan is not recommended."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:renal-artery-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "telmisartan",
+      "condition": "renal-artery-stenosis",
+      "concern": "Renal artery stenosis / renovascular disease",
+      "consequence": "Increased risk of severe hypotension and renal insufficiency (bilateral or single functioning kidney).",
+      "action": "SPS: seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "There is an increased risk of severe hypotension and renal insufficiency when patients with bilateral renal artery stenosis or stenosis of the artery to a single functioning kidney"
+        },
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure renovascular disease"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:recent-kidney-transplant",
+      "kind": "condition",
+      "level": "info",
+      "med": "telmisartan",
+      "condition": "recent-kidney-transplant",
+      "concern": "Recent kidney transplant",
+      "consequence": "No experience.",
+      "action": "No experience in this group.",
+      "sourceWording": "There is no experience",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "There is no experience regarding the administration of Micardis in patients with recent kidney transplantation."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:aortic-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "telmisartan",
+      "condition": "aortic-stenosis",
+      "concern": "Aortic stenosis / obstructive hypertrophic cardiomyopathy",
+      "consequence": "Vasodilatation with fixed outflow obstruction.",
+      "action": "Special caution.",
+      "sourceWording": "special caution is indicated",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "special caution is indicated in patients suffering from aortic or mitral stenosis, or obstructive hypertrophic cardiomyopathy"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:mitral-stenosis",
+      "kind": "condition",
+      "level": "caution",
+      "med": "telmisartan",
+      "condition": "mitral-stenosis",
+      "concern": "Mitral stenosis",
+      "consequence": "Vasodilatation with fixed valve obstruction.",
+      "action": "Special caution.",
+      "sourceWording": "special caution is indicated",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "special caution is indicated in patients suffering from aortic or mitral stenosis, or obstructive hypertrophic cardiomyopathy"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:dehydration",
+      "kind": "condition",
+      "level": "caution",
+      "med": "telmisartan",
+      "condition": "dehydration-hypovolaemia",
+      "concern": "Volume or sodium depletion",
+      "consequence": "Symptomatic hypotension, especially after the first dose.",
+      "action": "Correct before starting. SPS: specialist advice before starting in hypovolaemia.",
+      "sourceWording": "should be corrected prior to administration",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Volume and/or sodium depletion should be corrected prior to administration of Micardis."
+        },
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "hyponatraemia (sodium less than 130mmol/L) hypovolaemia"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:hyperkalaemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "telmisartan",
+      "condition": "hyperkalaemia",
+      "concern": "Raised potassium before starting",
+      "consequence": "Telmisartan may provoke hyperkalaemia, which can be fatal in at-risk patients.",
+      "action": "SPS: starting not normally appropriate if potassium is above 5.0 mmol/L; SmPC: monitor potassium closely in at-risk patients.",
+      "sourceWording": "Initiation not normally appropriate",
+      "src": [
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "Initiation not normally appropriate if pre-treatment potassium greater than 5.0mmol/L"
+        },
+        {
+          "s": "emc-3164",
+          "q": "Close monitoring of serum potassium in at risk patients is recommended"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "caution",
+      "med": "telmisartan",
+      "condition": "hyponatraemia",
+      "concern": "Hyponatraemia (sodium below 130 mmol/L)",
+      "consequence": "Higher risk of symptomatic hypotension.",
+      "action": "SPS: seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "hyponatraemia (sodium less than 130mmol/L)"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:hypotension",
+      "kind": "condition",
+      "level": "caution",
+      "med": "telmisartan",
+      "condition": "hypotension",
+      "concern": "Hypotension (systolic BP below 90 mmHg)",
+      "consequence": "Further fall in blood pressure.",
+      "action": "SPS: seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "hypotension (systolic blood pressure less than 90mmHg)"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:severe-heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "telmisartan",
+      "condition": "severe-heart-failure",
+      "concern": "Severe or unstable heart failure",
+      "consequence": "Acute hypotension, hyperazotaemia, oliguria or rarely acute renal failure in RAAS-dependent patients.",
+      "action": "SPS: seek specialist advice before starting.",
+      "sourceWording": "Seek specialist advice prior to initiation",
+      "src": [
+        {
+          "s": "sps-acei-arb-monitoring",
+          "q": "Seek specialist advice prior to initiation for patients where there is: severe or unstable heart failure"
+        },
+        {
+          "s": "emc-3164",
+          "q": "has been associated with acute hypotension, hyperazotaemia, oliguria, or rarely acute renal failure"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:diabetes",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "telmisartan",
+      "condition": "diabetes",
+      "concern": "Diabetes treated with insulin or antidiabetics",
+      "consequence": "Hypoglycaemia may occur; diabetes is also a hyperkalaemia risk factor.",
+      "action": "Consider blood glucose monitoring; insulin or antidiabetic dose may need adjusting.",
+      "sourceWording": "appropriate blood glucose monitoring should be considered",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "In these patients hypoglycaemia may occur under telmisartan treatment."
+        },
+        {
+          "s": "emc-3164",
+          "q": "appropriate blood glucose monitoring should be considered"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "info",
+      "med": "telmisartan",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Ischaemic heart disease",
+      "consequence": "An excessive fall in blood pressure could cause myocardial infarction.",
+      "action": "Avoid excessive blood pressure lowering.",
+      "sourceWording": "could result in a myocardial infarction or stroke",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "excessive reduction of blood pressure in patients with ischaemic cardiopathy or ischaemic cardiovascular disease could result in a myocardial infarction or stroke"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:condition:hereditary-fructose-intolerance",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "telmisartan",
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance",
+      "consequence": "Tablets contain sorbitol.",
+      "action": "Should not take this medicine.",
+      "sourceWording": "should not take this medicinal product",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Patients with hereditary fructose intolerance (HFI) should not take this medicinal product."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:ace-inhibitor",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "telmisartan",
+      "other": "group:ace-inhibitor",
+      "effect": "hyperkalaemia",
+      "concern": "ACE inhibitors (dual RAAS blockade)",
+      "consequence": "More hypotension, hyperkalaemia and decreased renal function.",
+      "action": "Not recommended; if absolutely necessary, only under specialist supervision with close monitoring. Do not combine in diabetic nephropathy.",
+      "sourceWording": "is therefore not recommended",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Dual blockade of RAAS through the combined use of ACE-inhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended"
+        },
+        {
+          "s": "emc-3164",
+          "q": "ACE-inhibitors and angiotensin II receptor blockers should not be used concomitantly in patients with diabetic nephropathy."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:arb",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "telmisartan",
+      "other": "group:arb",
+      "effect": "hyperkalaemia",
+      "concern": "Another ARB (dual RAAS blockade)",
+      "consequence": "More hypotension, hyperkalaemia and decreased renal function.",
+      "action": "Not recommended.",
+      "sourceWording": "is therefore not recommended",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Dual blockade of RAAS through the combined use of ACE-inhibitors, angiotensin II receptor blockers or aliskiren is therefore not recommended"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:potassium-sparing-diuretic",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "telmisartan",
+      "other": "group:potassium-sparing-diuretic",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium-sparing diuretics (e.g. spironolactone)",
+      "consequence": "Significant rise in serum potassium; risk is particularly high with this combination.",
+      "action": "Not recommended; if used for documented hypokalaemia, use with caution and frequent potassium monitoring.",
+      "sourceWording": "Concomitant use not recommended",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Concomitant use not recommended. Potassium sparing diuretics or potassium supplements"
+        },
+        {
+          "s": "emc-3164",
+          "q": "The risk is particularly high in combination with potassium sparing-diuretics"
+        },
+        {
+          "s": "emc-3164",
+          "q": "If concomitant use is indicated because of documented hypokalaemia, they should be used with caution and with frequent monitoring of serum potassium."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:potassium-supplement",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "telmisartan",
+      "other": "group:potassium-supplement",
+      "effect": "hyperkalaemia",
+      "concern": "Potassium supplements or potassium salt substitutes",
+      "consequence": "Significant rise in serum potassium.",
+      "action": "Not recommended; if used for documented hypokalaemia, use with caution and frequent potassium monitoring.",
+      "sourceWording": "Concomitant use not recommended",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Concomitant use not recommended. Potassium sparing diuretics or potassium supplements"
+        },
+        {
+          "s": "emc-3164",
+          "q": "If concomitant use is indicated because of documented hypokalaemia, they should be used with caution and with frequent monitoring of serum potassium."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:trimethoprim",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "telmisartan",
+      "other": "trimethoprim",
+      "effect": "hyperkalaemia",
+      "concern": "Trimethoprim (including co-trimoxazole)",
+      "consequence": "Increased risk of hyperkalaemia.",
+      "action": "Monitor serum potassium closely in at-risk patients.",
+      "sourceWording": "Close monitoring of serum potassium in at risk patients is recommended",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "The risk may increase in case of treatment combination with other medicinal products that may also provoke hyperkalaemia"
+        },
+        {
+          "s": "emc-3164",
+          "q": "immunosuppressives (cyclosporin or tacrolimus), and trimethoprim"
+        },
+        {
+          "s": "emc-3164",
+          "q": "Close monitoring of serum potassium in at risk patients is recommended"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:nsaid",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "telmisartan",
+      "other": "group:nsaid",
+      "effect": "nephrotoxicity",
+      "concern": "NSAIDs (including COX-2 inhibitors)",
+      "consequence": "Reduced antihypertensive effect; further deterioration of renal function (possible acute renal failure) in compromised renal function; hyperkalaemia risk.",
+      "action": "Use with caution, especially in the elderly; keep hydrated; consider monitoring renal function at start and periodically.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "may result in further deterioration of renal function, including possible acute renal failure, which is usually reversible"
+        },
+        {
+          "s": "emc-3164",
+          "q": "Therefore, the combination should be administered with caution, especially in the elderly."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:aspirin",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "telmisartan",
+      "other": "aspirin",
+      "otherFormulations": [
+        "aspirin-analgesic"
+      ],
+      "concern": "Aspirin at anti-inflammatory doses only; not low-dose aspirin",
+      "consequence": "Reduced antihypertensive effect and possible renal deterioration. Low-dose aspirin is not covered by this warning.",
+      "action": "Applies only when aspirin is taken at anti-inflammatory doses; low-dose (75 mg) aspirin is not covered, so this rule is limited to the analgesic-dose aspirin entry. At those doses: use with caution, especially in the elderly; keep hydrated; consider monitoring renal function after starting and periodically.",
+      "sourceWording": "should be administered with caution",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "NSAIDs (i.e. acetylsalicylic acid at anti-inflammatory dosage regimens, COX-2 inhibitors and non-selective NSAIDs) may reduce the antihypertensive effect of angiotensin II receptor blockers."
+        },
+        {
+          "s": "emc-3164",
+          "q": "Therefore, the combination should be administered with caution, especially in the elderly."
+        }
+      ],
+      "effect": "nephrotoxicity"
+    },
+    {
+      "id": "telmisartan:interaction:diuretic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "telmisartan",
+      "other": "group:diuretic",
+      "effect": "hypotension",
+      "concern": "Diuretics (high-dose loop or thiazide)",
+      "consequence": "Prior high-dose diuretic treatment may cause volume depletion and hypotension when telmisartan is started.",
+      "action": "Take into account when starting; correct volume depletion first.",
+      "sourceWording": "To be taken into account with concomitant use",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "may result in volume depletion, and in a risk of hypotension when initiating therapy with telmisartan"
+        },
+        {
+          "s": "emc-3164",
+          "q": "To be taken into account with concomitant use."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:antihypertensive",
+      "kind": "interaction",
+      "level": "info",
+      "med": "telmisartan",
+      "other": "group:antihypertensive",
+      "effect": "hypotension",
+      "concern": "Other antihypertensives",
+      "consequence": "Increased blood pressure lowering.",
+      "action": "Be aware of the additive effect.",
+      "sourceWording": "can be increased",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "The blood pressure lowering effect of telmisartan can be increased by concomitant use of other antihypertensive medicinal products."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:prednisolone",
+      "kind": "interaction",
+      "level": "info",
+      "med": "telmisartan",
+      "other": "prednisolone",
+      "concern": "Systemic corticosteroids (oral prednisolone)",
+      "consequence": "Reduced antihypertensive effect.",
+      "action": "Be aware that the antihypertensive effect may be reduced (no specific action stated in the SmPC).",
+      "sourceWording": "Reduction of the antihypertensive effect",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Corticosteroids (systemic route) Reduction of the antihypertensive effect."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:dexamethasone",
+      "kind": "interaction",
+      "level": "info",
+      "med": "telmisartan",
+      "other": "dexamethasone",
+      "concern": "Systemic corticosteroids (oral dexamethasone)",
+      "consequence": "Reduced antihypertensive effect.",
+      "action": "Be aware that the antihypertensive effect may be reduced (no specific action stated in the SmPC).",
+      "sourceWording": "Reduction of the antihypertensive effect",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Corticosteroids (systemic route) Reduction of the antihypertensive effect."
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "telmisartan",
+      "other": "group:antidiabetic",
+      "effect": "hypoglycaemia",
+      "concern": "Insulin or antidiabetic medicines",
+      "consequence": "Hypoglycaemia may occur.",
+      "action": "Consider blood glucose monitoring; dose adjustment of insulin or antidiabetics may be required.",
+      "sourceWording": "appropriate blood glucose monitoring should be considered",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "Diabetic patients treated with insulin or antidiabetics In these patients hypoglycaemia may occur under telmisartan treatment."
+        },
+        {
+          "s": "emc-3164",
+          "q": "appropriate blood glucose monitoring should be considered"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:opioid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "telmisartan",
+      "other": "group:opioid",
+      "effect": "hypotension",
+      "concern": "Opioids (\"narcotics\")",
+      "consequence": "May aggravate orthostatic hypotension.",
+      "action": "Be aware.",
+      "sourceWording": "may be aggravated",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "orthostatic hypotension may be aggravated by alcohol, barbiturates, narcotics, or antidepressants"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:ssri",
+      "kind": "interaction",
+      "level": "info",
+      "med": "telmisartan",
+      "other": "group:ssri",
+      "effect": "hypotension",
+      "concern": "Antidepressants",
+      "consequence": "May aggravate orthostatic hypotension.",
+      "action": "Be aware.",
+      "sourceWording": "may be aggravated",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "orthostatic hypotension may be aggravated by alcohol, barbiturates, narcotics, or antidepressants"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:snri",
+      "kind": "interaction",
+      "level": "info",
+      "med": "telmisartan",
+      "other": "group:snri",
+      "effect": "hypotension",
+      "concern": "Antidepressants",
+      "consequence": "May aggravate orthostatic hypotension.",
+      "action": "Be aware.",
+      "sourceWording": "may be aggravated",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "orthostatic hypotension may be aggravated by alcohol, barbiturates, narcotics, or antidepressants"
+        }
+      ]
+    },
+    {
+      "id": "telmisartan:interaction:tricyclic-antidepressant",
+      "kind": "interaction",
+      "level": "info",
+      "med": "telmisartan",
+      "other": "group:tricyclic-antidepressant",
+      "effect": "hypotension",
+      "concern": "Antidepressants",
+      "consequence": "May aggravate orthostatic hypotension.",
+      "action": "Be aware.",
+      "sourceWording": "may be aggravated",
+      "src": [
+        {
+          "s": "emc-3164",
+          "q": "orthostatic hypotension may be aggravated by alcohol, barbiturates, narcotics, or antidepressants"
+        }
+      ]
+    }
+  ]
+}

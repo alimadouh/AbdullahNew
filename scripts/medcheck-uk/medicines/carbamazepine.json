@@ -1,0 +1,2047 @@
+{
+  "id": "carbamazepine",
+  "name": "Carbamazepine",
+  "ingredients": [
+    "carbamazepine"
+  ],
+  "className": "Antiepileptic (dibenzazepine derivative)",
+  "groups": [
+    "antiepileptic",
+    "cyp3a4-inducer",
+    "cyp3a4-strong-inducer"
+  ],
+  "searchTerms": [
+    "carbamazepine tablets"
+  ],
+  "formulations": [
+    {
+      "id": "carbamazepine-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "100 mg, 200 mg, 400 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Each tablet contains 100mg / 200mg / 400mg carbamazepine Ph.Eur."
+        }
+      ],
+      "sourceIds": [
+        "emc-1040"
+      ]
+    }
+  ],
+  "brandPrescribing": {
+    "t": "Epilepsy: carbamazepine is an MHRA category 1 antiepileptic. Keep the patient on the same manufacturer's product; prescribe by brand name, or by generic name plus manufacturer. SPS: switching is not usually an issue for non-epilepsy uses (e.g. neuropathic pain, mood disorders).",
+    "src": [
+      {
+        "s": "mhra-dsu-aed-switching-2017",
+        "q": "Ensure that the patient is maintained on a specific manufacturer's product."
+      },
+      {
+        "s": "mhra-dsu-aed-switching-2017",
+        "q": "if you think a patient should be maintained on a specific manufacturer's product, prescribe either by specifying brand name or by using the generic drug name and name of the manufacturer"
+      },
+      {
+        "s": "sps-carbamazepine-monitoring",
+        "q": "Carbamazepine is classified by the MHRA as a category 1 medicine. People treated for epilepsy should be maintained on a specific manufacturer's preparation of carbamazepine."
+      },
+      {
+        "s": "sps-antiseizure-switching",
+        "q": "Switching is not usually an issue when ASMs are used for non-epilepsy indications, such as neuropathic pain or mood disorders."
+      }
+    ]
+  },
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Epilepsy: generalised tonic-clonic and partial seizures (not usually effective in absences or myoclonic seizures). Paroxysmal pain of trigeminal neuralgia. Prophylaxis of manic-depressive psychosis unresponsive to lithium.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Epilepsy - generalised tonic-clonic and partial seizures."
+            },
+            {
+              "s": "emc-1040",
+              "q": "is not usually effective in absences (petit mal) and myoclonic seizures"
+            },
+            {
+              "s": "emc-1040",
+              "q": "The paroxysmal pain of trigeminal neuralgia. For the prophylaxis of manic-depressive psychosis in patients unresponsive to lithium therapy."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "items": [
+        {
+          "t": "Epilepsy: MHRA category 1. Maintain on a specific manufacturer's product (brand name or generic name plus manufacturer).",
+          "src": [
+            {
+              "s": "mhra-dsu-aed-switching-2017",
+              "q": "Ensure that the patient is maintained on a specific manufacturer's product."
+            },
+            {
+              "s": "sps-antiseizure-switching",
+              "q": "Maintain on the same manufacturer's product for the following: carbamazepine phenobarbital phenytoin primidone"
+            }
+          ]
+        },
+        {
+          "t": "Han Chinese and Thai patients: screen for HLA-B*1502 whenever possible before starting; if positive, do not start unless there is no other option.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Before deciding to initiate treatment, patients of Han Chinese and Thai origin should whenever possible be screened for HLA-B*1502"
+            },
+            {
+              "s": "emc-1040",
+              "q": "If these individuals test positive, carbamazepine should not be started unless there is no other therapeutic option."
+            }
+          ]
+        },
+        {
+          "t": "Women of childbearing potential: should not be used unless the benefit outweighs the risks after considering alternatives; highly effective contraception needed.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Carbamazepine should not be used in women of childbearing potential unless the benefit is judged to outweigh the risks following careful consideration of alternative suitable treatment options."
+            }
+          ]
+        }
+      ]
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Start 100 to 200 mg once or twice daily; increase slowly to best response, often 800 to 1200 mg daily in divided doses (some need 1600 to 2000 mg). Target total plasma level about 4 to 12 micrograms/mL. Add to other antiepileptics gradually.",
+          "tag": "Epilepsy, adults",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "initially 100-200mg once or twice daily is recommended"
+            },
+            {
+              "s": "emc-1040",
+              "q": "This may be followed by a slow increase until the best response is obtained, often 800-1200mg daily. In some instances, 1600mg or even 2000mg daily may be necessary."
+            },
+            {
+              "s": "emc-1040",
+              "q": "usually requires total plasma-carbamazepine concentrations of about 4 to 12 micrograms/mL (17 to 50 micromoles/litre)"
+            }
+          ]
+        },
+        {
+          "t": "Start 200 to 400 mg daily and raise slowly until pain-free (usually 200 mg 3 to 4 times daily). Maximum recommended 1200 mg/day (the same section also says some need 1600 mg). Once in remission reduce to the lowest maintenance dose and try to stop until another attack.",
+          "tag": "Trigeminal neuralgia, adults",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Slowly raise the initial dosage of 200-400mg daily until freedom from pain is achieved (normally at 200mg 3-4 times daily)."
+            },
+            {
+              "s": "emc-1040",
+              "q": "In some instances, doses of 1600mg Tegretol daily may be needed."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Maximum recommended dose is 1200mg/day. When pain relief has been obtained, attempts should be made to gradually discontinue therapy, until another attack occurs."
+            }
+          ]
+        },
+        {
+          "t": "Elderly with trigeminal neuralgia: start 100 mg twice daily, raise slowly; maximum 1200 mg/day. All elderly: choose dose with caution (interactions, pharmacokinetics).",
+          "tag": "Elderly (65 years or above)",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "In elderly patients, an initial dose of 100mg twice daily is recommended."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Due to the potential for drug interactions, the dosage of Tegretol should be selected with caution in elderly patients."
+            }
+          ]
+        },
+        {
+          "t": "Start 400 mg daily in divided doses, increase gradually until controlled or up to 1600 mg daily. Usual 400 to 600 mg daily in divided doses.",
+          "tag": "Bipolar prophylaxis (unresponsive to lithium), adults",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Initial starting dose of 400mg daily, in divided doses, increasing gradually until symptoms are controlled or a total of 1600mg given in divided doses is reached."
+            },
+            {
+              "s": "emc-1040",
+              "q": "The usual dosage range is 400-600mg daily, given in divided doses."
+            }
+          ]
+        },
+        {
+          "t": "Stopping: do not stop abruptly (may precipitate seizures); withdraw gradually.",
+          "tag": "Stopping",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Abrupt withdrawal of Tegretol may precipitate seizures, therefore carbamazepine withdrawal should be gradual."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Epilepsy: usually 10 to 20 mg/kg daily in several divided doses, with gradual increase. 5 to 10 years: 400 to 600 mg daily; 10 to 15 years: 600 to 1000 mg daily; over 15 years: 800 to 1200 mg daily. Maximum: up to 6 years 35 mg/kg/day; 6 to 15 years 1000 mg/day; over 15 years 1200 mg/day. Tablets not recommended for very young children.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Usual dosage 10-20mg/kg bodyweight daily taken in several divided doses."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Tegretol tablets are not recommended for very young children."
+            },
+            {
+              "s": "emc-1040",
+              "q": "5-10 years: 400 to 600 mg daily"
+            },
+            {
+              "s": "emc-1040",
+              "q": "10-15 years: 600 to 1000mg daily"
+            },
+            {
+              "s": "emc-1040",
+              "q": "Maximum recommended dose Up to 6 years of age: 35mg/kg/day 6 to15 years of age: 1000mg/day >15 years of age: 1200mg/day."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to carbamazepine, structurally related drugs (e.g. tricyclic antidepressants) or any component.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Known hypersensitivity to carbamazepine or structurally related drugs (e.g. tricyclic antidepressants) or any other component of the formulation."
+            }
+          ]
+        },
+        {
+          "t": "Atrioventricular block; history of bone marrow depression; history of hepatic porphyrias (acute intermittent, variegate, porphyria cutanea tarda).",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Patients with atrioventricular block, a history of bone marrow depression or a history of hepatic porphyrias (e.g. acute intermittent porphyria, variegate porphyria, porphyria cutanea tarda)."
+            }
+          ]
+        },
+        {
+          "t": "MAOIs: contraindicated; stop MAOIs at least 2 weeks before starting carbamazepine.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "The use of Tegretol is contraindicated in combination with monoamine oxidase inhibitors (MAOIs)"
+            },
+            {
+              "s": "emc-1040",
+              "q": "before administering Tegretol MAOIs should be discontinued for a minimum of 2 weeks, or longer if the clinical situation permits"
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Serious skin reactions (SJS/TEN), mostly in the first months; about 10 times higher risk in some Asian countries. HLA-B*1502 (Han Chinese, Thai): screen before starting whenever possible; if positive do not start unless no other option. Consider testing other at-risk Asian groups (e.g. Philippines, Malaysia). Withdraw at once if severe skin reaction signs appear.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "the risk in some Asian countries is estimated to be about 10 times higher"
+            },
+            {
+              "s": "emc-1040",
+              "q": "Whenever possible, these individuals should be screened for this allele before starting treatment with carbamazepine"
+            },
+            {
+              "s": "emc-1040",
+              "q": "testing genetically at risk populations for the presence of HLA-B*1502 may be considered"
+            },
+            {
+              "s": "emc-1040",
+              "q": "Tegretol should be withdrawn at once and alternative therapy should be considered"
+            }
+          ]
+        },
+        {
+          "t": "HLA-A*3101 (European descent, Japanese): higher risk of skin reactions including SJS, TEN, DRESS; routine screening not recommended. If known positive, use only after careful benefit-risk consideration (MHRA).",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "There are insufficient data supporting a recommendation for HLA-A*3101 screening before starting carbamazepine treatment."
+            },
+            {
+              "s": "mhra-dsu-carbamazepine-skin-2012",
+              "q": "if patients of European descent or Japanese origin are known to be positive for HLA A*3101 they should only receive carbamazepine, oxcarbazepine, or eslicarbazepine after careful consideration of the benefits and risks"
+            }
+          ]
+        },
+        {
+          "t": "Hypersensitivity (including anaphylaxis, angioedema, DRESS, multi-organ reactions): stop immediately. 25 to 30% of patients hypersensitive to carbamazepine may react to oxcarbazepine; cross-hypersensitivity with phenytoin, primidone, phenobarbital possible.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "In general, if signs and symptoms suggestive of hypersensitivity reactions occur, Tegretol should be withdrawn immediately."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Cross-hypersensitivity can occur between carbamazepine and aromatic antiepileptic drugs (e.g. phenytoin, primidone and phenobarbital)."
+            }
+          ]
+        },
+        {
+          "t": "Blood disorders (agranulocytosis, aplastic anaemia; low platelets or white cells): baseline and periodic full blood count. Stop if leucopenia is severe, progressive or symptomatic, or if significant bone marrow depression.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "complete pre-treatment blood counts, including platelets and possibly reticulocytes and serum iron, should be obtained as a baseline, and periodically thereafter"
+            },
+            {
+              "s": "emc-1040",
+              "q": "treatment with Tegretol should be discontinued if the patient develops leucopenia which is severe, progressive or accompanied by clinical manifestations"
+            }
+          ]
+        },
+        {
+          "t": "Liver: LFTs before and periodically, especially with liver disease history and in the elderly. Withdraw immediately if liver dysfunction worsens or acute liver disease. Raised GGT/ALP from enzyme induction alone is not a reason to stop.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Liver function tests should also be performed before commencing treatment and periodically thereafter, particularly in patients with a history of liver disease and in elderly patients."
+            },
+            {
+              "s": "emc-1040",
+              "q": "The drug should be withdrawn immediately in cases of aggravated liver dysfunction or acute liver disease."
+            },
+            {
+              "s": "emc-1040",
+              "q": "These enhancements of hepatic metabolising capacity are not an indication for the withdrawal of carbamazepine."
+            }
+          ]
+        },
+        {
+          "t": "History of cardiac, hepatic or renal damage, haematological reactions to other drugs, or interrupted courses: prescribe only after critical benefit-risk appraisal and under close monitoring. Baseline and periodic urinalysis and BUN recommended.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Tegretol should be prescribed only after a critical benefit-risk appraisal and under close monitoring in patients with a history of cardiac, hepatic or renal damage"
+            },
+            {
+              "s": "emc-1040",
+              "q": "Baseline and periodic complete urinalysis and BUN determinations are recommended."
+            }
+          ]
+        },
+        {
+          "t": "Hyponatraemia: with renal conditions causing low sodium or sodium-lowering drugs (e.g. diuretics), check sodium before starting, after about 2 weeks, then monthly for 3 months. Especially in the elderly.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "serum sodium levels should be measured prior to initiating carbamazepine therapy"
+            },
+            {
+              "s": "emc-1040",
+              "q": "serum sodium levels should be measured after approximately two weeks and then at monthly intervals for the first three months during therapy, or according to clinical need"
+            }
+          ]
+        },
+        {
+          "t": "Mixed seizures including absences (typical or atypical): use with caution; may worsen seizures, stop if so.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Tegretol should be used with caution in patients with mixed seizures which include absences, either typical or atypical."
+            },
+            {
+              "s": "emc-1040",
+              "q": "In case of exacerbation of seizures, Tegretol should be discontinued."
+            }
+          ]
+        },
+        {
+          "t": "Suicidal ideation and behaviour (antiepileptic class effect): monitor and advise patients to seek help.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "patients should be monitored for signs of suicidal ideation and behaviours and appropriate treatment should be considered"
+            }
+          ]
+        },
+        {
+          "t": "Hypothyroidism: thyroid hormone levels may fall (enzyme induction); monitor thyroid function and adjust replacement.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Carbamazepine may reduce serum concentrations of thyroid hormones through enzyme induction requiring an increase in dose of thyroid replacement therapy in patients with hypothyroidism."
+            }
+          ]
+        },
+        {
+          "t": "Mild anticholinergic activity: closely observe patients with raised intraocular pressure or urinary retention. Latent psychosis may be activated; elderly may become confused or agitated.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "patients with increased intraocular pressure and urinary retention should therefore be closely observed during therapy"
+            },
+            {
+              "s": "emc-1040",
+              "q": "The possibility of activation of a latent psychosis and, in elderly patients, of confusion or agitation should be borne in mind."
+            }
+          ]
+        },
+        {
+          "t": "Falls (ataxia, dizziness, somnolence, hypotension, confusion): reassess fall risk in long-term use. Bone: long-term use linked with reduced bone density and fractures; consider vitamin D for at-risk patients (MHRA).",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "complete risk assessment of fall should be considered recurrently for patients on long-term Tegretol treatment"
+            },
+            {
+              "s": "mhra-dsu-aed-bone-2009",
+              "q": "vitamin D supplementation should be considered for at-risk patients who receive long-term treatment with primidone, phenytoin, carbamazepine, phenobarbital, or sodium valproate"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Potent CYP3A4 inducer: lowers levels of many co-medications. Contraindicated with MAOIs.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Carbamazepine is a potent inducer of CYP3A4 and other phase I and phase II enzyme systems in the liver"
+            },
+            {
+              "s": "emc-1040",
+              "q": "The use of Tegretol is contraindicated in combination with monoamine-oxidase inhibitors (MAOIs)"
+            }
+          ]
+        },
+        {
+          "t": "Raise carbamazepine levels (adjust dose and/or monitor levels): macrolides (e.g. clarithromycin), ciprofloxacin, fluoxetine, azole antifungals (e.g. fluconazole, itraconazole), diltiazem, verapamil, possibly omeprazole, isoniazid, danazol, grapefruit juice.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "the dosage of Tegretol should be adjusted accordingly and/or the plasma levels monitored when used concomitantly with the substances described below"
+            },
+            {
+              "s": "emc-1040",
+              "q": "Antibiotics: macrolide antibiotics (e.g. erythromycin, clarithromycin), ciprofloxacine. Antidepressants: fluoxetine, fluvoxamine, paroxetine, trazodone."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Antifungals: azoles (e.g. itraconazole, ketoconazole, fluconazole, voriconazole)."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Cardiovascular drugs: diltiazem, verapamil. Gastrointestinal drugs: possibly cimetidine, omeprazole. Other interactions: grapefruit juice"
+            }
+          ]
+        },
+        {
+          "t": "Lower carbamazepine levels: phenytoin, phenobarbital, primidone, oxcarbazepine, rifampicin, theophylline, St John's wort. MHRA: advise patients with epilepsy not to use St John's wort.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Other interactions: herbal preparations containing St John's wort (Hypericum perforatum)."
+            },
+            {
+              "s": "mhra-dsu-sjw-antiepileptics",
+              "q": "concomitant use of St John's wort and antiepileptic medicine is not recommended"
+            }
+          ]
+        },
+        {
+          "t": "Carbamazepine lowers levels of (dose may need adjusting): warfarin and DOACs (thrombosis risk), hormonal contraceptives and oestrogen/progestogen products, levothyroxine, corticosteroids (prednisolone, dexamethasone), simvastatin, atorvastatin, dihydropyridine calcium-channel blockers, sertraline, tricyclics (e.g. amitriptyline), doxycycline, tramadol, paracetamol, many antiepileptics, antipsychotics and immunosuppressants.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Anticoagulants: oral anticoagulants (e.g. warfarin, acenocoumarol, rivaroxaban, dabigatran, apixaban and edoxaban)."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Contraceptives: hormonal contraceptives (alternative contraceptive methods should be considered)."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Corticosteroids: corticosteroids (e.g. prednisolone, dexamethasone)."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Thyroid agents: levothyroxine."
+            }
+          ]
+        },
+        {
+          "t": "Paracetamol long-term with carbamazepine may be associated with hepatotoxicity.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "long term administration of carbamazepine and paracetamol (acetaminophen) may be associated with hepatotoxicity"
+            }
+          ]
+        },
+        {
+          "t": "Diuretics (hydrochlorothiazide, furosemide): may cause symptomatic hyponatraemia. Lithium: enhanced neurotoxicity. Metoclopramide or major tranquillisers: more neurological side effects. Alcohol: reduced tolerance, advise abstaining.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Concomitant medication with Tegretol and some diuretics (hydrochlorothiazide, furosemide) may lead to symptomatic hyponatraemia."
+            },
+            {
+              "s": "emc-1040",
+              "q": "The combination of lithium and carbamazepine may cause enhanced neurotoxicity in spite of lithium plasma concentrations being within the therapeutic range."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Combined use of carbamazepine with metoclopramide or major tranquillisers, e.g. haloperidol, thioridazine, may also result in an increase in neurological side-effects."
+            },
+            {
+              "s": "emc-1040",
+              "q": "It is therefore advisable for the patient to abstain from alcohol."
+            }
+          ]
+        },
+        {
+          "t": "Direct oral anticoagulants (rivaroxaban, dabigatran, apixaban, edoxaban): reduced levels with thrombosis risk; if needed, monitor closely for thrombosis.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "if a concomitant use is necessary, closer monitoring of signs and symptoms of thrombosis is recommended"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No pharmacokinetic data in renal impairment. History of renal damage: prescribe only after critical benefit-risk appraisal and under close monitoring; baseline and periodic urinalysis and BUN.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "No data are available on the pharmacokinetics of carbamazepine in patients with impaired hepatic or renal function."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Tegretol should be prescribed only after a critical benefit-risk appraisal and under close monitoring in patients with a history of cardiac, hepatic or renal damage"
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "No pharmacokinetic data in hepatic impairment. History of hepatic damage: critical benefit-risk appraisal and close monitoring; LFTs before and periodically. Withdraw immediately if liver dysfunction worsens or acute liver disease; suspend while urgently evaluating signs of liver dysfunction.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "No data are available on the pharmacokinetics of carbamazepine in patients with impaired hepatic or renal function."
+            },
+            {
+              "s": "emc-1040",
+              "q": "The drug should be withdrawn immediately in cases of aggravated liver dysfunction or acute liver disease."
+            },
+            {
+              "s": "emc-1040",
+              "q": "The development of signs and symptoms of liver dysfunction or active liver disease should be urgently evaluated and treatment with Tegretol suspended pending the outcome of the evaluation."
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: increased risk of major malformations after first-trimester exposure (about 4.93% vs 2 to 3% background: neural tube defects, cleft lip/palate, cardiac, hypospadias); neurodevelopmental risk cannot be excluded. Should not be used in pregnancy unless the benefit outweighs the risks after considering alternatives. If continued: monotherapy, lowest effective dose, monitor plasma levels; specialised antenatal surveillance.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "are at an increased risk of major congenital malformations"
+            },
+            {
+              "s": "emc-1040",
+              "q": "4.93% of children of epileptic women exposed to carbamazepine monotherapy during first trimester of pregnancy suffer from congenital malformations"
+            },
+            {
+              "s": "emc-1040",
+              "q": "Carbamazepine should not be used during pregnancy unless the benefit is judged to outweigh the risks following careful consideration of alternative suitable treatment options."
+            },
+            {
+              "s": "emc-1040",
+              "q": "monotherapy and the lowest effective dose of carbamazepine should be used and monitoring of plasma levels is recommended"
+            }
+          ]
+        },
+        {
+          "t": "Folic acid before and during pregnancy (MHRA: 5 mg/day for women planning pregnancy). Vitamin K1 to mother in the last weeks and to the neonate has been recommended. Do not stop antiepileptics suddenly. Refer pregnant women to a specialist.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Folic acid supplementation is recommended before and during pregnancy."
+            },
+            {
+              "s": "mhra-dsu-aed-pregnancy-2021",
+              "q": "All women using antiepileptic drugs who are planning to become pregnant should be offered 5mg per day of folic acid before any possibility of pregnancy"
+            },
+            {
+              "s": "emc-1040",
+              "q": "Sudden discontinuation of antiepileptic drug (AED) therapy should be avoided"
+            },
+            {
+              "s": "emc-1040",
+              "q": "she should be referred to a specialist to reassess carbamazepine treatment and consider alternative treatment options"
+            }
+          ]
+        },
+        {
+          "t": "MHRA (2021): carbamazepine is associated with an increased risk of major congenital malformations; the risk is dose-dependent.",
+          "src": [
+            {
+              "s": "mhra-dsu-aed-pregnancy-2021",
+              "q": "the risk of major congenital malformations with carbamazepine, phenobarbital, and topiramate is dose-dependent"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS (UKTIS): can be used in pregnancy if recommended by a specialist, only when there is no safer treatment; most babies are healthy. High-dose folic acid (5 mg/day). Do not stop without advice.",
+          "src": [
+            {
+              "s": "bumps-carbamazepine",
+              "q": "Carbamazepine can be used in pregnancy if recommended by a specialist."
+            },
+            {
+              "s": "bumps-carbamazepine",
+              "q": "As a precaution, carbamazepine is only prescribed in pregnancy when there is no other safer treatment, and the benefits outweigh the possible risks."
+            },
+            {
+              "s": "bumps-carbamazepine",
+              "q": "your doctor will prescribe you a high dose folic acid supplement (5 mg/day)"
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: passes into milk (about 25 to 60% of plasma levels). May breastfeed if the infant is observed for adverse effects (excessive sleepiness, allergic skin reaction) and for liver/bile problems (cholestatic hepatitis reported).",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Mothers taking Tegretol may breast-feed their infants, provided the infant is observed for possible adverse reactions (e.g. excessive somnolence, allergic skin reaction)."
+            },
+            {
+              "s": "emc-1040",
+              "q": "breast-fed infants of mothers treated with carbamazepine should be carefully observed for adverse hepatobiliary effects"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Women of childbearing potential: consider a pregnancy test before starting; use highly effective contraception during treatment and for at least 2 weeks after stopping. Carbamazepine can make hormonal contraception fail: use at least one effective method (e.g. IUD) or two complementary methods including a barrier method. Plan any pregnancy with the doctor.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Pregnancy testing in women of childbearing potential should be considered prior to initiating treatment with carbamazepine."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Women of childbearing potential should use highly effective contraception during treatment and for at least two weeks after stopping treatment."
+            },
+            {
+              "s": "emc-1040",
+              "q": "At least one effective method of contraception (such as an intra-uterine device) or two complementary forms of contraception including a barrier method should be used."
+            }
+          ]
+        },
+        {
+          "t": "Hormonal contraception: alternative non-hormonal methods are recommended; breakthrough bleeding reported. If hormonal contraception is used, a preparation with not less than 50 micrograms oestrogen, or a non-hormonal method, should be considered.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Alternative non-hormonal forms of contraception are recommended when using Tegretol"
+            },
+            {
+              "s": "emc-1040",
+              "q": "Patients taking Tegretol and requiring hormonal contraception should receive a preparation containing not less than 50µg oestrogen"
+            }
+          ]
+        },
+        {
+          "t": "Men: very rare reports of impaired fertility and/or abnormal spermatogenesis.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "There have been very rare reports of impaired male fertility and/or abnormal spermatogenesis."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Very common or common, especially at the start, at high initial doses or in the elderly: dizziness, headache, ataxia, drowsiness, fatigue, double vision; nausea, vomiting; allergic skin reactions. Usually settle within days or with a short dose reduction.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "CNS adverse reactions (dizziness, headache, ataxia, drowsiness, fatigue, diplopia), gastrointestinal disturbances (nausea, vomiting), as well as allergic skin reactions"
+            },
+            {
+              "s": "emc-1040",
+              "q": "The dose-related adverse reactions usually abate within a few days, either spontaneously or after a transient dosage reduction."
+            }
+          ]
+        },
+        {
+          "t": "Raised GGT from enzyme induction is very common and usually not clinically relevant.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "gamma-glutamyltransferase increased (due to hepatic enzyme induction), usually not clinically relevant"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Stevens-Johnson syndrome / toxic epidermal necrolysis (mostly first months; higher risk with HLA-B*1502): withdraw at once.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Most of the SJS/TEN cases appear in the first few months of treatment with Tegretol."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Tegretol should be withdrawn at once and alternative therapy should be considered"
+            }
+          ]
+        },
+        {
+          "t": "DRESS and other hypersensitivity (anaphylaxis, angioedema, multi-organ): stop immediately.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "If a patient develops these reactions after treatment with Tegretol, the drug must be discontinued, and an alternative treatment started."
+            }
+          ]
+        },
+        {
+          "t": "Agranulocytosis, aplastic anaemia, bone marrow depression: patient should seek advice at once for fever, sore throat, rash, mouth ulcers, easy bruising or bleeding.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "If reactions such as fever, sore throat, rash, ulcers in the mouth, easy bruising, petechial or purpuric haemorrhage appear, the patient should be advised to consult the physician immediately."
+            }
+          ]
+        },
+        {
+          "t": "Hepatitis, hepatic failure, vanishing bile duct syndrome (rare/very rare).",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Severe hepatic reactions to carbamazepine occur very rarely."
+            }
+          ]
+        },
+        {
+          "t": "Hyponatraemia and water intoxication (lethargy, vomiting, headache, confusion). Cardiac conduction disorders, AV block, arrhythmia (rare).",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "leading in rare cases to water intoxication accompanied by lethargy, vomiting, headache, confusional state, neurological disorders"
+            },
+            {
+              "s": "emc-1040",
+              "q": "arrhythmia, atrioventricular block with syncope, bradycardia, cardiac failure congestive"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Before starting: full blood count (platelets; possibly reticulocytes and serum iron), liver function tests, urinalysis and BUN; serum sodium if renal sodium loss or sodium-lowering drugs. SPS: also weight/BMI, U&Es, sodium, and HLA-B*1502 if Han Chinese or Thai origin.",
+          "tag": "baseline",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "complete pre-treatment blood counts, including platelets and possibly reticulocytes and serum iron, should be obtained as a baseline, and periodically thereafter"
+            },
+            {
+              "s": "emc-1040",
+              "q": "Baseline and periodic complete urinalysis and BUN determinations are recommended."
+            },
+            {
+              "s": "sps-carbamazepine-monitoring",
+              "q": "Screen for HLA-B*1502 allele genotype for individuals with Han Chinese, or Thai ancestry."
+            }
+          ]
+        },
+        {
+          "t": "Sodium after about 2 weeks then monthly for 3 months (if at risk). Periodic full blood count, LFTs, U&Es. Thyroid function in hypothyroid patients (SPS: within 2 to 3 months). Plasma levels when needed (adherence, loss of seizure control, toxicity, interactions, pregnancy); optimum about 4 to 12 mg/litre. Watch for suicidal ideation.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "serum sodium levels should be measured after approximately two weeks and then at monthly intervals for the first three months during therapy, or according to clinical need"
+            },
+            {
+              "s": "sps-carbamazepine-monitoring",
+              "q": "Routine monitoring of plasma carbamazepine concentrations is not recommended."
+            },
+            {
+              "s": "sps-carbamazepine-monitoring",
+              "q": "The plasma carbamazepine concentration for optimum response 4 to 12 mg/litre (20 to 50 micromol/litre)."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Hence thyroid function monitoring is suggested to adjust the dosage of thyroid replacement therapy."
+            }
+          ]
+        },
+        {
+          "t": "Stop if leucopenia is severe, progressive or with fever/sore throat; significant bone marrow depression; aggravated liver dysfunction or acute liver disease; signs of SJS/TEN or hypersensitivity; seizure worsening in mixed/absence seizures. SPS: sodium below 120 mmol/L or symptomatic: review treatment.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Tegretol should also be discontinued if any evidence of significant bone marrow depression appears."
+            },
+            {
+              "s": "emc-1040",
+              "q": "The drug should be withdrawn immediately in cases of aggravated liver dysfunction or acute liver disease."
+            },
+            {
+              "s": "sps-carbamazepine-monitoring",
+              "q": "Review carbamazepine treatment and correct sodium as clinically appropriate for patients with symptoms or a sodium level less than 120 mmol/L."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral, usually in 2 or 3 divided doses; may be taken during, after or between meals with a little liquid (e.g. a glass of water).",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Tegretol is given orally, usually in two or three divided doses."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Tegretol may be taken during, after or between meals, with a little liquid e.g. a glass of water."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Seek medical advice at once for fever, sore throat, rash, mouth ulcers, easy bruising or bleeding, or signs of liver problems. Report mood changes or suicidal thoughts.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Patients and their relatives should be made aware of early toxic signs and symptoms indicative of a potential haematological problem, as well as symptoms of dermatological or hepatic reactions."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Patients (and caregivers of patients) should be advised to seek medical advice should signs of suicidal ideation or behaviour emerge."
+            }
+          ]
+        },
+        {
+          "t": "Do not stop suddenly. Avoid alcohol. Take care driving (dizziness, drowsiness, blurred or double vision), especially at the start or after dose changes. Avoid grapefruit juice and St John's wort.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "It is therefore advisable for the patient to abstain from alcohol."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Patients should therefore exercise due caution when driving a vehicle or operating machinery."
+            },
+            {
+              "s": "mhra-dsu-sjw-antiepileptics",
+              "q": "healthcare professionals should advise patients with epilepsy not to use products that contain St John's wort"
+            }
+          ]
+        },
+        {
+          "t": "Women: hormonal contraception may fail; use highly effective non-hormonal contraception and tell the doctor at once if pregnant or planning pregnancy.",
+          "src": [
+            {
+              "s": "emc-1040",
+              "q": "Female patients of child-bearing potential should be warned that the concurrent use of Tegretol with hormonal contraceptives may render this type of contraceptive ineffective."
+            },
+            {
+              "s": "emc-1040",
+              "q": "Women of childbearing potential should be counselled to contact the doctor immediately if they become pregnant or think they might be pregnant and are taking carbamazepine."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "carbamazepine:allergy:carbamazepine",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "carbamazepine",
+      "allergen": [
+        "carbamazepine"
+      ],
+      "concern": "Hypersensitivity to carbamazepine",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Known hypersensitivity",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Known hypersensitivity to carbamazepine or structurally related drugs (e.g. tricyclic antidepressants) or any other component of the formulation."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:allergy:tricyclic",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "carbamazepine",
+      "allergen": [
+        "group:tricyclic-antidepressant"
+      ],
+      "concern": "Hypersensitivity to structurally related drugs (e.g. tricyclic antidepressants)",
+      "consequence": "Possible cross-hypersensitivity.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Known hypersensitivity",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Known hypersensitivity to carbamazepine or structurally related drugs (e.g. tricyclic antidepressants) or any other component of the formulation."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:av-block-1st",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "carbamazepine",
+      "condition": "av-block-1st-degree",
+      "concern": "Atrioventricular block",
+      "consequence": "Conduction disorders, AV block with syncope reported.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Patients with atrioventricular block",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Patients with atrioventricular block, a history of bone marrow depression or a history of hepatic porphyrias"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:av-block-2nd-3rd",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "carbamazepine",
+      "condition": "av-block-2nd-3rd",
+      "concern": "Atrioventricular block",
+      "consequence": "Conduction disorders, AV block with syncope reported.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications Patients with atrioventricular block",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Patients with atrioventricular block, a history of bone marrow depression or a history of hepatic porphyrias"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:bone-marrow",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "carbamazepine",
+      "condition": "bone-marrow-depression-history",
+      "effect": "bone-marrow-suppression",
+      "concern": "History of bone marrow depression",
+      "consequence": "Agranulocytosis, aplastic anaemia and bone marrow depression are associated with carbamazepine.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications a history of bone marrow depression",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Patients with atrioventricular block, a history of bone marrow depression or a history of hepatic porphyrias"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:porphyria",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "carbamazepine",
+      "condition": "porphyria",
+      "concern": "History of hepatic porphyria (acute intermittent, variegate)",
+      "consequence": "Can precipitate porphyria.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications a history of hepatic porphyrias",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "a history of hepatic porphyrias (e.g. acute intermittent porphyria, variegate porphyria, porphyria cutanea tarda)"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:pct",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "carbamazepine",
+      "condition": "porphyria-cutanea-tarda",
+      "concern": "History of porphyria cutanea tarda",
+      "consequence": "Can precipitate porphyria.",
+      "action": "Do not use.",
+      "sourceWording": "Contraindications a history of hepatic porphyrias",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "a history of hepatic porphyrias (e.g. acute intermittent porphyria, variegate porphyria, porphyria cutanea tarda)"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:maoi",
+      "kind": "interaction",
+      "level": "contraindicated",
+      "med": "carbamazepine",
+      "other": "group:maoi",
+      "concern": "MAOIs",
+      "consequence": "Contraindicated combination.",
+      "action": "Do not combine; stop MAOIs at least 2 weeks before starting carbamazepine.",
+      "sourceWording": "is contraindicated in combination with monoamine oxidase inhibitors",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "The use of Tegretol is contraindicated in combination with monoamine oxidase inhibitors (MAOIs)"
+        },
+        {
+          "s": "emc-1040",
+          "q": "before administering Tegretol MAOIs should be discontinued for a minimum of 2 weeks, or longer if the clinical situation permits"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:hla-b1502",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "carbamazepine",
+      "condition": "hla-b1502-positive",
+      "concern": "HLA-B*1502 positive",
+      "consequence": "Strongly predicts carbamazepine-induced Stevens-Johnson syndrome.",
+      "action": "Do not start unless there is no other therapeutic option.",
+      "sourceWording": "carbamazepine should not be started unless there is no other therapeutic option",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "If these individuals test positive, carbamazepine should not be started unless there is no other therapeutic option."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:hla-b1502-ancestry",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "carbamazepine",
+      "condition": "hla-b1502-risk-ancestry",
+      "concern": "Han Chinese, Thai or other at-risk Asian ancestry (e.g. Philippines, Malaysia)",
+      "consequence": "HLA-B*1502 carriage (about 10% in Han Chinese and Thai; above 15% in Philippines and Malaysia) strongly predicts SJS.",
+      "action": "Screen for HLA-B*1502 before starting whenever possible (Han Chinese, Thai); consider testing other at-risk Asian populations.",
+      "sourceWording": "should whenever possible be screened for HLA-B*1502",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Before deciding to initiate treatment, patients of Han Chinese and Thai origin should whenever possible be screened for HLA-B*1502"
+        },
+        {
+          "s": "emc-1040",
+          "q": "testing genetically at risk populations for the presence of HLA-B*1502 may be considered"
+        },
+        {
+          "s": "sps-carbamazepine-monitoring",
+          "q": "Screen for HLA-B*1502 allele genotype for individuals with Han Chinese, or Thai ancestry."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:hla-a3101",
+      "kind": "condition",
+      "level": "caution",
+      "med": "carbamazepine",
+      "condition": "hla-a3101-positive",
+      "concern": "Known HLA-A*3101 positive (European descent or Japanese origin)",
+      "consequence": "Increased risk of cutaneous reactions including SJS, TEN, DRESS.",
+      "action": "Use only after careful consideration of benefits and risks.",
+      "sourceWording": "may be considered if the benefits are thought to exceed risks",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "If patients of European descent or Japanese origin are known to be positive for HLA-A*3101 allele, the use of carbamazepine may be considered if the benefits are thought to exceed risks."
+        },
+        {
+          "s": "mhra-dsu-carbamazepine-skin-2012",
+          "q": "if patients of European descent or Japanese origin are known to be positive for HLA A*3101 they should only receive carbamazepine, oxcarbazepine, or eslicarbazepine after careful consideration of the benefits and risks"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:absence-seizures",
+      "kind": "condition",
+      "level": "caution",
+      "med": "carbamazepine",
+      "condition": "absence-or-mixed-seizures",
+      "concern": "Mixed seizures including absences (typical or atypical); myoclonic seizures",
+      "consequence": "May exacerbate seizures; not usually effective in absences or myoclonic seizures.",
+      "action": "Use with caution; stop if seizures worsen.",
+      "sourceWording": "should be used with caution",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Tegretol should be used with caution in patients with mixed seizures which include absences, either typical or atypical."
+        },
+        {
+          "s": "emc-1040",
+          "q": "In case of exacerbation of seizures, Tegretol should be discontinued."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:childbearing",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "carbamazepine",
+      "condition": "childbearing-potential",
+      "concern": "Woman of childbearing potential",
+      "consequence": "Fetal harm: major congenital malformations and other adverse developmental outcomes.",
+      "action": "Do not use unless the benefit outweighs the risks after considering alternatives; consider pregnancy test; highly effective contraception during and for at least 2 weeks after treatment.",
+      "sourceWording": "should not be used in women of childbearing potential unless",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine should not be used in women of childbearing potential unless the benefit is judged to outweigh the risks following careful consideration of alternative suitable treatment options."
+        },
+        {
+          "s": "emc-1040",
+          "q": "Women of childbearing potential should use highly effective contraception during treatment and for at least two weeks after stopping treatment."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:no-contraception",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "carbamazepine",
+      "condition": "childbearing-potential-no-contraception",
+      "concern": "Woman of childbearing potential not using effective contraception",
+      "consequence": "Fetal harm if pregnancy occurs.",
+      "action": "Should not be used unless benefit outweighs risk; highly effective contraception needed during and for at least 2 weeks after treatment.",
+      "sourceWording": "should not be used in women of childbearing potential unless",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine should not be used in women of childbearing potential unless the benefit is judged to outweigh the risks following careful consideration of alternative suitable treatment options."
+        },
+        {
+          "s": "emc-1040",
+          "q": "Women of childbearing potential should use highly effective contraception during treatment and for at least two weeks after stopping treatment."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:hormonal-contraception",
+      "kind": "condition",
+      "level": "caution",
+      "med": "carbamazepine",
+      "condition": "hormonal-contraception",
+      "concern": "Using hormonal contraception",
+      "consequence": "Enzyme induction may make hormonal contraception ineffective (breakthrough bleeding, unplanned pregnancy).",
+      "action": "Alternative non-hormonal contraception is recommended (or at least 50 micrograms oestrogen if hormonal contraception is needed).",
+      "sourceWording": "Alternative non-hormonal forms of contraception are recommended",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Female patients of child-bearing potential should be warned that the concurrent use of Tegretol with hormonal contraceptives may render this type of contraceptive ineffective."
+        },
+        {
+          "s": "emc-1040",
+          "q": "Alternative non-hormonal forms of contraception are recommended when using Tegretol"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:hyponatraemia",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "carbamazepine",
+      "condition": "hyponatraemia",
+      "effect": "hyponatraemia",
+      "concern": "Low sodium or renal conditions with low sodium",
+      "consequence": "Hyponatraemia, water intoxication.",
+      "action": "Check sodium before starting, after about 2 weeks, then monthly for 3 months.",
+      "sourceWording": "serum sodium levels should be measured",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "In patients with pre-existing renal conditions associated with low sodium or in patients treated concomitantly with sodium-lowering medicinal products"
+        },
+        {
+          "s": "emc-1040",
+          "q": "serum sodium levels should be measured prior to initiating carbamazepine therapy"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:renal",
+      "kind": "condition",
+      "level": "caution",
+      "med": "carbamazepine",
+      "condition": "renal-impairment",
+      "concern": "History of renal damage",
+      "consequence": "No pharmacokinetic data in renal impairment.",
+      "action": "Prescribe only after critical benefit-risk appraisal and under close monitoring; urinalysis and BUN.",
+      "sourceWording": "should be prescribed only after a critical benefit-risk appraisal and under close monitoring",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Tegretol should be prescribed only after a critical benefit-risk appraisal and under close monitoring in patients with a history of cardiac, hepatic or renal damage"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:cardiac",
+      "kind": "condition",
+      "level": "caution",
+      "med": "carbamazepine",
+      "condition": "cardiac-disease",
+      "concern": "History of cardiac damage",
+      "consequence": "Conduction disorders and arrhythmias reported.",
+      "action": "Prescribe only after critical benefit-risk appraisal and under close monitoring.",
+      "sourceWording": "should be prescribed only after a critical benefit-risk appraisal and under close monitoring",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Tegretol should be prescribed only after a critical benefit-risk appraisal and under close monitoring in patients with a history of cardiac, hepatic or renal damage"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:hepatic:any",
+      "kind": "hepatic",
+      "level": "caution",
+      "med": "carbamazepine",
+      "hepatic": [
+        "any"
+      ],
+      "effect": "hepatotoxicity",
+      "concern": "Liver disease or history of hepatic damage",
+      "consequence": "No pharmacokinetic data; rare severe hepatic reactions.",
+      "action": "Critical benefit-risk appraisal and close monitoring; LFTs before and periodically; withdraw immediately if liver dysfunction worsens or acute liver disease.",
+      "sourceWording": "should be prescribed only after a critical benefit-risk appraisal and under close monitoring",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Tegretol should be prescribed only after a critical benefit-risk appraisal and under close monitoring in patients with a history of cardiac, hepatic or renal damage"
+        },
+        {
+          "s": "emc-1040",
+          "q": "The drug should be withdrawn immediately in cases of aggravated liver dysfunction or acute liver disease."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:hypothyroidism",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "carbamazepine",
+      "condition": "hypothyroidism",
+      "concern": "Hypothyroidism on thyroid replacement",
+      "consequence": "Enzyme induction lowers thyroid hormone levels.",
+      "action": "Monitor thyroid function; the replacement dose may need increasing.",
+      "sourceWording": "thyroid function monitoring is suggested",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may reduce serum concentrations of thyroid hormones through enzyme induction requiring an increase in dose of thyroid replacement therapy in patients with hypothyroidism."
+        },
+        {
+          "s": "emc-1040",
+          "q": "Hence thyroid function monitoring is suggested to adjust the dosage of thyroid replacement therapy."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:glaucoma",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "carbamazepine",
+      "condition": "angle-closure-glaucoma",
+      "concern": "Raised intraocular pressure",
+      "consequence": "Mild anticholinergic activity.",
+      "action": "Observe closely during therapy.",
+      "sourceWording": "should therefore be closely observed",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "patients with increased intraocular pressure and urinary retention should therefore be closely observed during therapy"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:urinary-retention",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "carbamazepine",
+      "condition": "urinary-retention",
+      "concern": "Urinary retention",
+      "consequence": "Mild anticholinergic activity.",
+      "action": "Observe closely during therapy.",
+      "sourceWording": "should therefore be closely observed",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "patients with increased intraocular pressure and urinary retention should therefore be closely observed during therapy"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:suicidality",
+      "kind": "condition",
+      "level": "monitor",
+      "med": "carbamazepine",
+      "condition": "depression-suicidality",
+      "concern": "Depression or suicidal thoughts",
+      "consequence": "Antiepileptics carry a small increased risk of suicidal ideation and behaviour.",
+      "action": "Monitor for suicidal ideation; advise patients and carers to seek help.",
+      "sourceWording": "patients should be monitored for signs of suicidal ideation",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "patients should be monitored for signs of suicidal ideation and behaviours and appropriate treatment should be considered"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:condition:bone",
+      "kind": "condition",
+      "level": "caution",
+      "med": "carbamazepine",
+      "condition": "osteoporosis-risk",
+      "concern": "Osteoporosis or risk factors (immobility, little sun, low calcium intake)",
+      "consequence": "Long-term use linked with reduced bone density, osteoporosis and fractures.",
+      "action": "Consider vitamin D supplementation for at-risk patients on long-term treatment.",
+      "sourceWording": "vitamin D supplementation should be considered",
+      "src": [
+        {
+          "s": "mhra-dsu-aed-bone-2009",
+          "q": "vitamin D supplementation should be considered for at-risk patients who receive long-term treatment with primidone, phenytoin, carbamazepine, phenobarbital, or sodium valproate"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:age:elderly",
+      "kind": "age",
+      "level": "caution",
+      "med": "carbamazepine",
+      "age": {
+        "minYears": 65
+      },
+      "concern": "65 years or above",
+      "consequence": "Drug interactions and different pharmacokinetics; confusion or agitation; falls.",
+      "action": "Select the dose with caution (trigeminal neuralgia: start 100 mg twice daily).",
+      "sourceWording": "should be selected with caution in elderly patients",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Elderly population (65 years or above): Due to the potential for drug interactions, the dosage of Tegretol should be selected with caution in elderly patients."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "carbamazepine",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "Major congenital malformations (first trimester, about 4.93%), possible neurodevelopmental effects and growth restriction.",
+      "action": "Should not be used unless benefit outweighs risks after considering alternatives; if continued, monotherapy at lowest effective dose with plasma level monitoring; folic acid; specialist referral.",
+      "sourceWording": "should not be used during pregnancy unless",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine should not be used during pregnancy unless the benefit is judged to outweigh the risks following careful consideration of alternative suitable treatment options."
+        },
+        {
+          "s": "emc-1040",
+          "q": "she should be referred to a specialist to reassess carbamazepine treatment and consider alternative treatment options"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:pregnancy:bumps",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "carbamazepine",
+      "concern": "Pregnancy (BUMPS)",
+      "consequence": "Slightly increased chance of some birth defects; most babies healthy.",
+      "action": "Use only on specialist advice when there is no safer treatment; high-dose folic acid; do not stop without advice.",
+      "sourceWording": "only prescribed in pregnancy when there is no other safer treatment",
+      "src": [
+        {
+          "s": "bumps-carbamazepine",
+          "q": "As a precaution, carbamazepine is only prescribed in pregnancy when there is no other safer treatment, and the benefits outweigh the possible risks."
+        },
+        {
+          "s": "bumps-carbamazepine",
+          "q": "Do not stop carbamazepine without speaking to your GP or specialist."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "monitor",
+      "med": "carbamazepine",
+      "concern": "Breastfeeding",
+      "consequence": "Passes into milk (25 to 60% of plasma levels); cholestatic hepatitis reported in neonates.",
+      "action": "May breastfeed; observe the infant for excessive sleepiness, allergic skin reaction and hepatobiliary effects.",
+      "sourceWording": "provided the infant is observed for possible adverse reactions",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Mothers taking Tegretol may breast-feed their infants, provided the infant is observed for possible adverse reactions (e.g. excessive somnolence, allergic skin reaction)."
+        },
+        {
+          "s": "emc-1040",
+          "q": "breast-fed infants of mothers treated with carbamazepine should be carefully observed for adverse hepatobiliary effects"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:macrolide",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "group:macrolide",
+      "concern": "Macrolide antibiotics (e.g. clarithromycin)",
+      "consequence": "May raise carbamazepine levels (dizziness, drowsiness, ataxia, diplopia).",
+      "action": "Adjust the carbamazepine dose and/or monitor carbamazepine plasma levels.",
+      "sourceWording": "should be adjusted accordingly and/or the plasma levels monitored",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Since raised plasma carbamazepine levels may result in adverse reactions (e.g. dizziness, drowsiness, ataxia, diplopia)"
+        },
+        {
+          "s": "emc-1040",
+          "q": "the dosage of Tegretol should be adjusted accordingly and/or the plasma levels monitored when used concomitantly with the substances described below"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Antibiotics: macrolide antibiotics (e.g. erythromycin, clarithromycin), ciprofloxacine."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:ciprofloxacin",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "ciprofloxacin",
+      "otherFormulations": [
+        "ciprofloxacin-tab",
+        "ciprofloxacin-susp"
+      ],
+      "concern": "Ciprofloxacin (systemic)",
+      "consequence": "May raise carbamazepine levels (dizziness, drowsiness, ataxia, diplopia).",
+      "action": "Adjust the carbamazepine dose and/or monitor carbamazepine plasma levels.",
+      "sourceWording": "should be adjusted accordingly and/or the plasma levels monitored",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Since raised plasma carbamazepine levels may result in adverse reactions (e.g. dizziness, drowsiness, ataxia, diplopia)"
+        },
+        {
+          "s": "emc-1040",
+          "q": "the dosage of Tegretol should be adjusted accordingly and/or the plasma levels monitored when used concomitantly with the substances described below"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Antibiotics: macrolide antibiotics (e.g. erythromycin, clarithromycin), ciprofloxacine."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:fluoxetine",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "fluoxetine",
+      "concern": "Fluoxetine",
+      "consequence": "May raise carbamazepine levels (dizziness, drowsiness, ataxia, diplopia).",
+      "action": "Adjust the carbamazepine dose and/or monitor carbamazepine plasma levels.",
+      "sourceWording": "should be adjusted accordingly and/or the plasma levels monitored",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Since raised plasma carbamazepine levels may result in adverse reactions (e.g. dizziness, drowsiness, ataxia, diplopia)"
+        },
+        {
+          "s": "emc-1040",
+          "q": "the dosage of Tegretol should be adjusted accordingly and/or the plasma levels monitored when used concomitantly with the substances described below"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Antidepressants: fluoxetine, fluvoxamine, paroxetine, trazodone."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:fluconazole",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "fluconazole",
+      "concern": "Fluconazole",
+      "consequence": "May raise carbamazepine levels (dizziness, drowsiness, ataxia, diplopia).",
+      "action": "Adjust the carbamazepine dose and/or monitor carbamazepine plasma levels.",
+      "sourceWording": "should be adjusted accordingly and/or the plasma levels monitored",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Since raised plasma carbamazepine levels may result in adverse reactions (e.g. dizziness, drowsiness, ataxia, diplopia)"
+        },
+        {
+          "s": "emc-1040",
+          "q": "the dosage of Tegretol should be adjusted accordingly and/or the plasma levels monitored when used concomitantly with the substances described below"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Antifungals: azoles (e.g. itraconazole, ketoconazole, fluconazole, voriconazole)."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "CYP3A4 inhibitors (e.g. diltiazem, verapamil, clarithromycin)",
+      "consequence": "May raise carbamazepine levels (dizziness, drowsiness, ataxia, diplopia).",
+      "action": "Adjust the carbamazepine dose and/or monitor carbamazepine plasma levels.",
+      "sourceWording": "should be adjusted accordingly and/or the plasma levels monitored",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Since raised plasma carbamazepine levels may result in adverse reactions (e.g. dizziness, drowsiness, ataxia, diplopia)"
+        },
+        {
+          "s": "emc-1040",
+          "q": "the dosage of Tegretol should be adjusted accordingly and/or the plasma levels monitored when used concomitantly with the substances described below"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Cardiovascular drugs: diltiazem, verapamil."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:omeprazole",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "omeprazole",
+      "concern": "Omeprazole (listed as \"possibly\")",
+      "consequence": "May raise carbamazepine levels (dizziness, drowsiness, ataxia, diplopia).",
+      "action": "Adjust the carbamazepine dose and/or monitor carbamazepine plasma levels.",
+      "sourceWording": "should be adjusted accordingly and/or the plasma levels monitored",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Since raised plasma carbamazepine levels may result in adverse reactions (e.g. dizziness, drowsiness, ataxia, diplopia)"
+        },
+        {
+          "s": "emc-1040",
+          "q": "the dosage of Tegretol should be adjusted accordingly and/or the plasma levels monitored when used concomitantly with the substances described below"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Gastrointestinal drugs: possibly cimetidine, omeprazole."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:st-johns-wort",
+      "kind": "interaction",
+      "level": "avoid",
+      "med": "carbamazepine",
+      "other": "st-johns-wort",
+      "concern": "St John's wort",
+      "consequence": "May lower carbamazepine levels; MHRA: any antiepileptic may interact, with worse seizure control reported.",
+      "action": "Not recommended (MHRA): advise patients with epilepsy not to use St John's wort. SmPC: carbamazepine dose may need adjusting.",
+      "sourceWording": "is not recommended",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Other interactions: herbal preparations containing St John's wort (Hypericum perforatum)."
+        },
+        {
+          "s": "mhra-dsu-sjw-antiepileptics",
+          "q": "concomitant use of St John's wort and antiepileptic medicine is not recommended"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:paracetamol",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "carbamazepine",
+      "other": "paracetamol",
+      "effect": "hepatotoxicity",
+      "concern": "Paracetamol (long-term use)",
+      "consequence": "Carbamazepine may lower paracetamol levels; long-term combined use may be associated with hepatotoxicity.",
+      "action": "Be cautious with long-term combined use; paracetamol dose may need adjusting.",
+      "sourceWording": "may be associated with hepatotoxicity",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "long term administration of carbamazepine and paracetamol (acetaminophen) may be associated with hepatotoxicity"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:tramadol",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "tramadol",
+      "concern": "Tramadol",
+      "consequence": "Carbamazepine (enzyme inducer) may lower its levels and reduce or abolish its effect.",
+      "action": "The dose of the other medicine may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "paracetamol (long term administration of carbamazepine and paracetamol (acetaminophen) may be associated with hepatotoxicity), tramadol."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:doxycycline",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "doxycycline",
+      "concern": "Doxycycline",
+      "consequence": "Carbamazepine (enzyme inducer) may lower its levels and reduce or abolish its effect.",
+      "action": "The dose of the other medicine may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Antibiotics: doxycycline, rifabutin."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:warfarin",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "warfarin",
+      "concern": "Warfarin",
+      "consequence": "Carbamazepine may lower warfarin levels and reduce or abolish its anticoagulant effect.",
+      "action": "Warfarin dose may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Anticoagulants: oral anticoagulants (e.g. warfarin, acenocoumarol, rivaroxaban, dabigatran, apixaban and edoxaban)."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:sertraline",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "sertraline",
+      "concern": "Sertraline",
+      "consequence": "Carbamazepine (enzyme inducer) may lower its levels and reduce or abolish its effect.",
+      "action": "The dose of the other medicine may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Antidepressants: bupropion, citalopram, mianserin, sertraline, trazodone, tricyclic antidepressants (e.g. imipramine, amitriptyline, nortriptyline, clomipramine)."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:tricyclic",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "group:tricyclic-antidepressant",
+      "concern": "Tricyclic antidepressants (e.g. amitriptyline)",
+      "consequence": "Carbamazepine (enzyme inducer) may lower its levels and reduce or abolish its effect.",
+      "action": "The dose of the other medicine may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Antidepressants: bupropion, citalopram, mianserin, sertraline, trazodone, tricyclic antidepressants (e.g. imipramine, amitriptyline, nortriptyline, clomipramine)."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:progestogen",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "group:progestogen",
+      "concern": "Progestogen and oestrogen products (including hormonal contraceptives)",
+      "consequence": "Carbamazepine may lower their levels; hormonal contraception may fail.",
+      "action": "The dose of the other medicine may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Other drug interactions: products containing oestrogens and/or progesterones."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:dihydropyridine",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "group:dihydropyridine",
+      "concern": "Dihydropyridine calcium-channel blockers (e.g. felodipine)",
+      "consequence": "Carbamazepine (enzyme inducer) may lower its levels and reduce or abolish its effect.",
+      "action": "The dose of the other medicine may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Cardiovascular drugs: calcium channel blockers (dihydropyridine group) e.g. felodipine, digoxin, simvastatin, atorvastatin, lovastatin, cerivastatin, ivabradine."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:simvastatin",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "simvastatin",
+      "concern": "Simvastatin",
+      "consequence": "Carbamazepine (enzyme inducer) may lower its levels and reduce or abolish its effect.",
+      "action": "The dose of the other medicine may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Cardiovascular drugs: calcium channel blockers (dihydropyridine group) e.g. felodipine, digoxin, simvastatin, atorvastatin, lovastatin, cerivastatin, ivabradine."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:atorvastatin",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "atorvastatin",
+      "concern": "Atorvastatin",
+      "consequence": "Carbamazepine (enzyme inducer) may lower its levels and reduce or abolish its effect.",
+      "action": "The dose of the other medicine may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Cardiovascular drugs: calcium channel blockers (dihydropyridine group) e.g. felodipine, digoxin, simvastatin, atorvastatin, lovastatin, cerivastatin, ivabradine."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:prednisolone",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "prednisolone",
+      "concern": "Prednisolone (systemic)",
+      "consequence": "Carbamazepine (enzyme inducer) may lower its levels and reduce or abolish its effect.",
+      "action": "The dose of the other medicine may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Corticosteroids: corticosteroids (e.g. prednisolone, dexamethasone)."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:dexamethasone",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "dexamethasone",
+      "concern": "Dexamethasone (systemic)",
+      "consequence": "Carbamazepine (enzyme inducer) may lower its levels and reduce or abolish its effect.",
+      "action": "The dose of the other medicine may need adjusting to clinical need.",
+      "sourceWording": "may have to be adjusted to clinical requirement",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may lower the plasma level, diminish or even abolish the activity of certain drugs."
+        },
+        {
+          "s": "emc-1040",
+          "q": "The dosage of the following drugs may have to be adjusted to clinical requirement"
+        },
+        {
+          "s": "emc-1040",
+          "q": "Corticosteroids: corticosteroids (e.g. prednisolone, dexamethasone)."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:levothyroxine",
+      "kind": "interaction",
+      "level": "dose",
+      "med": "carbamazepine",
+      "other": "levothyroxine",
+      "concern": "Levothyroxine",
+      "consequence": "Enzyme induction lowers thyroid hormone levels.",
+      "action": "Monitor thyroid function; levothyroxine dose may need increasing.",
+      "sourceWording": "requiring an increase in dose of thyroid replacement therapy",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Thyroid agents: levothyroxine."
+        },
+        {
+          "s": "emc-1040",
+          "q": "Carbamazepine may reduce serum concentrations of thyroid hormones through enzyme induction requiring an increase in dose of thyroid replacement therapy in patients with hypothyroidism."
+        },
+        {
+          "s": "emc-1040",
+          "q": "Hence thyroid function monitoring is suggested to adjust the dosage of thyroid replacement therapy."
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:hydrochlorothiazide",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "carbamazepine",
+      "other": "hydrochlorothiazide",
+      "effect": "hyponatraemia",
+      "concern": "Hydrochlorothiazide",
+      "consequence": "May lead to symptomatic hyponatraemia.",
+      "action": "Check sodium before starting, after about 2 weeks, then monthly for 3 months.",
+      "sourceWording": "serum sodium levels should be measured",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Concomitant medication with Tegretol and some diuretics (hydrochlorothiazide, furosemide) may lead to symptomatic hyponatraemia."
+        },
+        {
+          "s": "emc-1040",
+          "q": "serum sodium levels should be measured after approximately two weeks and then at monthly intervals for the first three months during therapy, or according to clinical need"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:furosemide",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "carbamazepine",
+      "other": "furosemide",
+      "effect": "hyponatraemia",
+      "concern": "Furosemide",
+      "consequence": "May lead to symptomatic hyponatraemia.",
+      "action": "Check sodium before starting, after about 2 weeks, then monthly for 3 months.",
+      "sourceWording": "serum sodium levels should be measured",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Concomitant medication with Tegretol and some diuretics (hydrochlorothiazide, furosemide) may lead to symptomatic hyponatraemia."
+        },
+        {
+          "s": "emc-1040",
+          "q": "serum sodium levels should be measured after approximately two weeks and then at monthly intervals for the first three months during therapy, or according to clinical need"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:diuretic",
+      "kind": "interaction",
+      "level": "monitor",
+      "med": "carbamazepine",
+      "other": "group:diuretic",
+      "effect": "hyponatraemia",
+      "concern": "Diuretics and other sodium-lowering medicines",
+      "consequence": "Hyponatraemia.",
+      "action": "Check sodium before starting, after about 2 weeks, then monthly for 3 months.",
+      "sourceWording": "serum sodium levels should be measured",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "in patients treated concomitantly with sodium-lowering medicinal products (e.g. diuretics, medicinal products associated with inappropriate ADH secretion)"
+        },
+        {
+          "s": "emc-1040",
+          "q": "serum sodium levels should be measured prior to initiating carbamazepine therapy"
+        }
+      ]
+    },
+    {
+      "id": "carbamazepine:interaction:metoclopramide",
+      "kind": "interaction",
+      "level": "info",
+      "med": "carbamazepine",
+      "other": "metoclopramide",
+      "concern": "Metoclopramide",
+      "consequence": "May increase neurological side effects.",
+      "action": "Be aware of possible increased neurological side effects.",
+      "sourceWording": "may also result in an increase in neurological side-effects",
+      "src": [
+        {
+          "s": "emc-1040",
+          "q": "Combined use of carbamazepine with metoclopramide or major tranquillisers, e.g. haloperidol, thioridazine, may also result in an increase in neurological side-effects."
+        }
+      ]
+    }
+  ]
+}

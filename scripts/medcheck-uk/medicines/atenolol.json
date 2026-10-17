@@ -1,0 +1,1331 @@
+{
+  "id": "atenolol",
+  "name": "Atenolol",
+  "ingredients": [
+    "atenolol"
+  ],
+  "className": "Beta1-selective beta-blocker",
+  "groups": [
+    "beta-blocker",
+    "antihypertensive"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "atenolol-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "50 mg, 100 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "Atenolol 50 mg."
+        },
+        {
+          "s": "emc-12854",
+          "q": "Atenolol 100 mg."
+        }
+      ],
+      "sourceIds": [
+        "emc-3861",
+        "emc-12854"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Hypertension; angina pectoris; cardiac arrhythmias; myocardial infarction (early intervention in the acute phase).",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Management of hypertension. Management of angina pectoris. Management of cardiac arrhythmias. Management of myocardial infarction. Early intervention in the acute phase."
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the UK atenolol 50 mg and 100 mg tablets SmPCs."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults: most respond to 100 mg once daily; some respond to 50 mg once daily. Full effect after 1-2 weeks. Use the lowest possible starting dose.",
+          "tag": "Hypertension",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Most patients respond to 100 mg daily given orally as a single dose. Some patients, however, will respond to 50 mg given as a single daily dose."
+            },
+            {
+              "s": "emc-3861",
+              "q": "The effect will be fully established after one to two weeks."
+            },
+            {
+              "s": "emc-3861",
+              "q": "with the lowest possible starting dosage"
+            }
+          ]
+        },
+        {
+          "t": "Adults: 100 mg once daily or 50 mg twice daily. Higher doses are unlikely to add benefit.",
+          "tag": "Angina",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Most patients with angina pectoris will respond to 100 mg given orally once daily or 50 mg given twice daily."
+            },
+            {
+              "s": "emc-3861",
+              "q": "It is unlikely that additional benefit will be gained by increasing the dose."
+            }
+          ]
+        },
+        {
+          "t": "Oral maintenance after arrhythmia control: 50-100 mg once daily.",
+          "tag": "Arrhythmias",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "a suitable oral maintenance dosage is 50-100 mg daily, given as a single dose."
+            }
+          ]
+        },
+        {
+          "t": "Acute MI (within 12 hours, after IV atenolol): 50 mg orally about 15 minutes after the IV dose, 50 mg 12 hours later, then 100 mg once daily. Stop if bradycardia or hypotension needing treatment occurs.",
+          "tag": "Myocardial infarction",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "followed by Tenormin 50 mg orally about 15 minutes later"
+            },
+            {
+              "s": "emc-3861",
+              "q": "This should be followed by a further 50 mg orally 12 hours after the intravenous dose, and then 12 hours later by 100 mg orally, once daily."
+            },
+            {
+              "s": "emc-3861",
+              "q": "If bradycardia and/or hypotension requiring treatment, or any other untoward effects occur, Tenormin should be discontinued."
+            }
+          ]
+        },
+        {
+          "t": "Elderly: dose needs may be lower, especially with impaired renal function; use with caution and start with a lower dose.",
+          "tag": "Elderly",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Dosage requirements may be reduced, especially in patients with impaired renal function."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Should be used with caution in the elderly, starting with a lesser dose"
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "No paediatric experience; not recommended for use in children.",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "There is no paediatric experience with Tenormin and for this reason it is not recommended for use in children."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to atenolol or any excipient.",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "should not be used in patients with any of the following:"
+            },
+            {
+              "s": "emc-3861",
+              "q": "hypersensitivity to the active substance, or to any of the excipients listed in section 6.1"
+            }
+          ]
+        },
+        {
+          "t": "Cardiogenic shock; uncontrolled heart failure; sick sinus syndrome; second- or third-degree heart block.",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "should not be used in patients with any of the following:"
+            },
+            {
+              "s": "emc-3861",
+              "q": "cardiogenic shock uncontrolled heart failure sick sinus syndrome second-or third-degree heart block"
+            }
+          ]
+        },
+        {
+          "t": "Untreated phaeochromocytoma; metabolic acidosis; bradycardia (<45 bpm); hypotension; severe peripheral arterial circulatory disturbances.",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "should not be used in patients with any of the following:"
+            },
+            {
+              "s": "emc-3861",
+              "q": "untreated phaeochromocytoma metabolic acidosis bradycardia (<45 bpm) hypotension severe peripheral arterial circulatory disturbances."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Do not stop abruptly: withdraw gradually over 7-14 days, following patients during withdrawal (especially ischaemic heart disease).",
+          "tag": "Withdrawal",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Should not be withdrawn abruptly. The dosage should be withdrawn gradually over a period of 7-14 days"
+            },
+            {
+              "s": "emc-3861",
+              "q": "Patients should be followed during withdrawal, especially those with ischaemic heart disease."
+            }
+          ]
+        },
+        {
+          "t": "Reversible obstructive airways disease (asthma): avoid unless there are compelling clinical reasons; then use with caution.",
+          "tag": "Asthma",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "these should be avoided in patients with reversible obstructive airways disease, unless there are compelling clinical reasons for their use."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Where such reasons exist, Tenormin may be used with caution."
+            }
+          ]
+        },
+        {
+          "t": "Controlled heart failure: may be used; caution if cardiac reserve is poor. First-degree heart block: caution.",
+          "tag": "Heart failure, conduction",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "may be used in patients whose signs of heart failure have been controlled. Caution must be exercised in patients whose cardiac reserve is poor."
+            },
+            {
+              "s": "emc-3861",
+              "q": "caution must be exercised if it is given to patients with first-degree heart block."
+            }
+          ]
+        },
+        {
+          "t": "Diabetes: may mask hypoglycaemia (especially tachycardia); with sulfonylureas the risk of severe hypoglycaemia may increase. Advise careful blood glucose monitoring.",
+          "tag": "Diabetes",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "May mask the symptoms of hypoglycaemia, in particular, tachycardia."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Beta-blockers could further increase the risk of severe hypoglycaemia when used concurrently with sulfonylureas."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Diabetic patients should be advised to carefully monitor blood glucose levels."
+            }
+          ]
+        },
+        {
+          "t": "Prinzmetal's angina: may increase angina attacks; use only with utmost caution.",
+          "tag": "Prinzmetal's angina",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "May increase the number and duration of angina attacks in patients with Prinzmetal's angina"
+            },
+            {
+              "s": "emc-3861",
+              "q": "its use may be considered although utmost caution must be exercised."
+            }
+          ]
+        },
+        {
+          "t": "History of anaphylaxis: reactions to allergens may be more severe and may not respond to usual adrenaline doses.",
+          "tag": "Anaphylaxis history",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "May cause a more severe reaction to a variety of allergens when given to patients with a history of anaphylactic reaction to such allergens."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Such patients may be unresponsive to the usual doses of adrenaline (epinephrine) used to treat the allergic reactions."
+            }
+          ]
+        },
+        {
+          "t": "Surgery: if stopping before surgery, stop at least 24 hours before; if continued, choose an anaesthetic with little negative inotropic activity.",
+          "tag": "Surgery",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "this should be done at least 24 hours prior to the procedure."
+            },
+            {
+              "s": "emc-3861",
+              "q": "If treatment is continued, an anaesthetic with little negative inotropic activity should be selected to minimise the risk of myocardial depression."
+            }
+          ]
+        },
+        {
+          "t": "May mask signs of thyrotoxicosis; may aggravate less severe peripheral arterial disease; in phaeochromocytoma give an alpha-blocker as well.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "May mask the signs of thyrotoxicosis."
+            },
+            {
+              "s": "emc-3861",
+              "q": "may also aggravate less severe peripheral arterial circulatory disturbances."
+            },
+            {
+              "s": "emc-3861",
+              "q": "in patients with a phaeochromocytoma, an alpha-blocker should be given concomitantly."
+            }
+          ]
+        },
+        {
+          "t": "If symptomatic bradycardia with resting pulse below 50-55 bpm develops, reduce the dose.",
+          "tag": "Bradycardia",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "the pulse rate drops to less than 50-55 bpm at rest, the dose should be reduced."
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "Verapamil or diltiazem (negative inotropic calcium-channel blockers): exaggerated effects possible, especially with impaired ventricular function or SA/AV conduction problems; may cause severe hypotension, bradycardia and cardiac failure. Do not give either one intravenously within 48 hours of stopping the other.",
+          "tag": "Verapamil, diltiazem",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Combined use of beta-blockers and calcium channel blockers with negative inotropic effects, e.g. verapamil and diltiazem, can lead to an exaggeration of these effects"
+            },
+            {
+              "s": "emc-3861",
+              "q": "This may result in severe hypotension, bradycardia and cardiac failure."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Neither the beta-blocker nor the calcium channel blocker should be administered intravenously within 48 hours of discontinuing the other."
+            }
+          ]
+        },
+        {
+          "t": "Dihydropyridines (e.g. nifedipine): increased risk of hypotension; cardiac failure may occur with latent cardiac insufficiency.",
+          "tag": "Dihydropyridines",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Concomitant therapy with dihydropyridines, e.g. nifedipine, may increase the risk of hypotension, and cardiac failure may occur in patients with latent cardiac insufficiency."
+            }
+          ]
+        },
+        {
+          "t": "Insulin and oral antidiabetics: blood glucose lowering may be intensified; with sulfonylureas the risk of severe hypoglycaemia may increase; hypoglycaemia symptoms may be masked.",
+          "tag": "Antidiabetics",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Concomitant use with insulin and oral antidiabetic drugs may lead to the intensification of the blood sugar lowering effects of these drugs."
+            },
+            {
+              "s": "emc-3861",
+              "q": "The concomitant use of beta-blockers with sulfonylureas could increase the risk of severe hypoglycaemia."
+            }
+          ]
+        },
+        {
+          "t": "NSAIDs (e.g. ibuprofen): may reduce the blood pressure lowering effect.",
+          "tag": "NSAIDs",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Concomitant use of prostaglandin synthetase-inhibiting drugs, e.g. ibuprofen and indometacin, may decrease the hypotensive effects of beta-blockers."
+            }
+          ]
+        },
+        {
+          "t": "Sympathomimetics (e.g. adrenaline) may counteract beta-blockade.",
+          "tag": "Sympathomimetics",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Concomitant use of sympathomimetic agents, e.g. adrenaline (epinephrine), may counteract the effect of beta-blockers."
+            }
+          ]
+        },
+        {
+          "t": "Clonidine: beta-blockers may worsen rebound hypertension; stop the beta-blocker several days before stopping clonidine. Digoxin, class I antiarrhythmics and amiodarone: additive conduction effects. Anaesthetics: choose an agent with little negative inotropic activity.",
+          "tag": "Other",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "the beta-blocker should be withdrawn several days before discontinuing clonidine."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Digitalis glycosides, in association with beta-blockers, may increase atrioventricular conduction time."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Class I anti-arrhythmic drugs (e.g. disopyramide) and amiodarone may have a potentiating effect on atrial-conduction time and induce negative inotropic effect."
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No significant accumulation if CrCl is above 35 ml/min/1.73 m2.",
+          "tag": "CrCl >35",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "No significant accumulation of Tenormin occurs in patients who have a creatinine clearance greater than 35 ml/min/1.73 m2"
+            }
+          ]
+        },
+        {
+          "t": "CrCl 15-35 ml/min/1.73 m2: oral dose 50 mg daily.",
+          "tag": "CrCl 15-35",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "For patients with a creatinine clearance of 15-35 ml/min/1.73 m2 (equivalent to serum creatinine of 300-600 micromol/litre), the oral dose should be 50 mg daily"
+            }
+          ]
+        },
+        {
+          "t": "CrCl below 15 ml/min/1.73 m2: oral dose 25 mg daily or 50 mg on alternate days.",
+          "tag": "CrCl <15",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "For patients with a creatinine clearance of less than 15 ml/min/1.73 m2 (equivalent to serum creatinine of greater than 600 micromol/litre), the oral dose should be 25 mg daily or 50 mg on alternate days"
+            }
+          ]
+        },
+        {
+          "t": "Haemodialysis: 50 mg orally after each dialysis, under hospital supervision (marked falls in blood pressure can occur).",
+          "tag": "Haemodialysis",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Patients on haemodialysis should be given 50 mg orally after each dialysis; this should be done under hospital supervision as marked falls in blood pressure can occur."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "status": "not-stated",
+      "note": "No hepatic dose advice in the UK atenolol tablets SmPC (no significant hepatic metabolism stated in 5.2)."
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: use with caution. Crosses the placenta; associated with intra-uterine growth retardation; weigh benefit against risk, particularly in the first and second trimesters.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Caution should be exercised when Tenormin is administered during pregnancy or to a woman who is breast-feeding."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Administration of Tenormin to pregnant women in the management of mild to moderate hypertension has been associated with intra-uterine growth retardation."
+            },
+            {
+              "s": "emc-3861",
+              "q": "requires that the anticipated benefit be weighed against the possible risks, particularly in the first and second trimesters"
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: can be used in pregnancy if recommended by a doctor; no concern about birth defects; babies may be smaller; extra growth scans may be offered at around 32 and 36 weeks.",
+          "tag": "BUMPS",
+          "src": [
+            {
+              "s": "bumps-atenolol",
+              "q": "Atenolol can be used in pregnancy if recommended by a doctor."
+            },
+            {
+              "s": "bumps-atenolol",
+              "q": "There are no concerns that beta blockers cause birth defects, stillbirth or preterm birth."
+            },
+            {
+              "s": "bumps-atenolol",
+              "q": "Women taking atenolol may be more likely to have a smaller baby."
+            },
+            {
+              "s": "bumps-atenolol",
+              "q": "you may be offered extra scans at around 32 and 36 weeks to check the growth of your baby."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: use with caution. Significant accumulation in breast milk; breastfed neonates may be at risk of hypoglycaemia and bradycardia.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "There is significant accumulation of Tenormin in breast milk."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Neonates born to mothers who are receiving Tenormin at parturition or breast-feeding may be at risk of hypoglycaemia and bradycardia."
+            }
+          ]
+        },
+        {
+          "t": "SPS: use with caution; labetalol, metoprolol or propranolol are preferred. Monitor the infant for bradycardia or hypoglycaemia (drowsiness, lethargy, poor feeding, poor weight gain); risk of accumulation, especially in neonates.",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-beta-blockers-breastfeeding",
+              "q": "It can be used with caution during breastfeeding, but labetalol, metoprolol, or propranolol are preferred if clinically appropriate.."
+            },
+            {
+              "s": "sps-beta-blockers-breastfeeding",
+              "q": "There is therefore significant risk of accumulation of atenolol in breastfed infants, particularly neonates, resulting in increased risk of adverse effects."
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "status": "not-stated",
+      "note": "No fertility or contraception advice in the UK atenolol tablets SmPC. BUMPS: no increased risk expected if the father takes atenolol."
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Common: bradycardia, cold extremities, gastrointestinal disturbances, fatigue.",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Cardiac disorders Common Bradycardia"
+            },
+            {
+              "s": "emc-3861",
+              "q": "Vascular disorders Common Cold extremities"
+            },
+            {
+              "s": "emc-3861",
+              "q": "Gastrointestinal disorders Common Gastrointestinal disturbances"
+            },
+            {
+              "s": "emc-3861",
+              "q": "General disorders and administration site conditions Common Fatigue"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Rare: worsening heart failure, heart block, bronchospasm in asthma, hepatic toxicity (intrahepatic cholestasis), thrombocytopenia/purpura. Not known: angioedema, urticaria, lupus-like syndrome.",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Rare Heart failure deterioration, precipitation of heart block"
+            },
+            {
+              "s": "emc-3861",
+              "q": "Rare Bronchospasm may occur in patients with bronchial asthma or a history of asthmatic complaints"
+            },
+            {
+              "s": "emc-3861",
+              "q": "Rare Hepatic toxicity including intrahepatic cholestasis"
+            },
+            {
+              "s": "emc-3861",
+              "q": "Rare Purpura, thrombocytopenia"
+            },
+            {
+              "s": "emc-3861",
+              "q": "Not known Hypersensitivity reactions, including angioedema and urticaria"
+            }
+          ]
+        },
+        {
+          "t": "Overdose: bradycardia, hypotension, acute cardiac insufficiency, bronchospasm; needs intensive care.",
+          "tag": "Overdose",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "The symptoms of overdosage may include bradycardia, hypotension, acute cardiac insufficiency and bronchospasm."
+            },
+            {
+              "s": "emc-3861",
+              "q": "treatment in an intensive care ward"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "items": [
+        {
+          "t": "Heart rate: reduce the dose if symptomatic bradycardia with resting pulse below 50-55 bpm.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "the pulse rate drops to less than 50-55 bpm at rest, the dose should be reduced."
+            }
+          ]
+        },
+        {
+          "t": "Diabetes: patients should monitor blood glucose carefully.",
+          "tag": "ongoing",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Diabetic patients should be advised to carefully monitor blood glucose levels."
+            }
+          ]
+        },
+        {
+          "t": "During withdrawal: follow patients, especially with ischaemic heart disease.",
+          "tag": "stop",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Patients should be followed during withdrawal, especially those with ischaemic heart disease."
+            }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Oral, usually once daily as a single dose.",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "For administration by the oral route."
+            },
+            {
+              "s": "emc-3861",
+              "q": "Most patients respond to 100 mg daily given orally as a single dose."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Do not stop suddenly; the dose is reduced gradually.",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "Should not be withdrawn abruptly."
+            }
+          ]
+        },
+        {
+          "t": "Dizziness or tiredness may occur occasionally; take this into account for driving.",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "it should be taken into account that occasionally dizziness or fatigue may occur."
+            }
+          ]
+        },
+        {
+          "t": "Tell the doctor about any history of asthma or wheezing before taking.",
+          "src": [
+            {
+              "s": "emc-3861",
+              "q": "\"If you have ever had asthma or wheezing, you should not take this medicine unless you have discussed these symptoms with the prescribing doctor\""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "atenolol:allergy:self",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "atenolol",
+      "allergen": [
+        "atenolol"
+      ],
+      "concern": "Hypersensitivity to atenolol",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "should not be used in patients with any of the following:"
+        },
+        {
+          "s": "emc-3861",
+          "q": "hypersensitivity to the active substance, or to any of the excipients listed in section 6.1"
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:cardiogenic-shock",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "atenolol",
+      "condition": "cardiogenic-shock",
+      "concern": "Cardiogenic shock",
+      "consequence": "Negative inotropic effect.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "should not be used in patients with any of the following:"
+        },
+        {
+          "s": "emc-3861",
+          "q": "cardiogenic shock"
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:uncontrolled-heart-failure",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "atenolol",
+      "condition": "uncontrolled-heart-failure",
+      "concern": "Uncontrolled heart failure",
+      "consequence": "Negative inotropic effect may worsen heart failure.",
+      "action": "Do not use in uncontrolled heart failure.",
+      "sourceWording": "should not be used",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "should not be used in patients with any of the following:"
+        },
+        {
+          "s": "emc-3861",
+          "q": "uncontrolled heart failure"
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:heart-failure",
+      "kind": "condition",
+      "level": "caution",
+      "med": "atenolol",
+      "condition": "heart-failure",
+      "concern": "Heart failure (controlled)",
+      "consequence": "May be used once signs of heart failure are controlled; poor cardiac reserve needs care.",
+      "action": "Use with caution if cardiac reserve is poor.",
+      "sourceWording": "Caution must be exercised",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "may be used in patients whose signs of heart failure have been controlled. Caution must be exercised in patients whose cardiac reserve is poor."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:sick-sinus-syndrome",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "atenolol",
+      "condition": "sick-sinus-syndrome",
+      "concern": "Sick sinus syndrome",
+      "consequence": "Risk of severe bradycardia or conduction block.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "should not be used in patients with any of the following:"
+        },
+        {
+          "s": "emc-3861",
+          "q": "sick sinus syndrome"
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:av-block",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "atenolol",
+      "condition": "av-block-2nd-3rd",
+      "concern": "Second- or third-degree heart block",
+      "consequence": "Slows AV conduction.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "should not be used in patients with any of the following:"
+        },
+        {
+          "s": "emc-3861",
+          "q": "second-or third-degree heart block"
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:first-degree-block",
+      "kind": "condition",
+      "level": "caution",
+      "med": "atenolol",
+      "condition": "cardiac-conduction-disturbance",
+      "concern": "First-degree heart block",
+      "consequence": "Negative effect on conduction time.",
+      "action": "Use with caution.",
+      "sourceWording": "caution must be exercised",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "Due to its negative effect on conduction time, caution must be exercised if it is given to patients with first-degree heart block."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:phaeochromocytoma",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "atenolol",
+      "condition": "phaeochromocytoma-untreated",
+      "concern": "Untreated phaeochromocytoma",
+      "consequence": "Unopposed alpha stimulation.",
+      "action": "Do not use untreated; in phaeochromocytoma give an alpha-blocker as well.",
+      "sourceWording": "should not be used",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "should not be used in patients with any of the following:"
+        },
+        {
+          "s": "emc-3861",
+          "q": "untreated phaeochromocytoma"
+        },
+        {
+          "s": "emc-3861",
+          "q": "in patients with a phaeochromocytoma, an alpha-blocker should be given concomitantly."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:metabolic-acidosis",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "atenolol",
+      "condition": "metabolic-acidosis",
+      "concern": "Metabolic acidosis",
+      "consequence": "Listed contraindication.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "should not be used in patients with any of the following:"
+        },
+        {
+          "s": "emc-3861",
+          "q": "metabolic acidosis"
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:bradycardia",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "atenolol",
+      "condition": "bradycardia",
+      "concern": "Bradycardia (<45 bpm)",
+      "consequence": "Further slowing of heart rate.",
+      "action": "Do not use if heart rate is below 45 bpm.",
+      "sourceWording": "should not be used",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "should not be used in patients with any of the following:"
+        },
+        {
+          "s": "emc-3861",
+          "q": "bradycardia (<45 bpm)"
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:hypotension",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "atenolol",
+      "condition": "hypotension",
+      "concern": "Hypotension",
+      "consequence": "Further fall in blood pressure.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "should not be used in patients with any of the following:"
+        },
+        {
+          "s": "emc-3861",
+          "q": "hypotension severe peripheral arterial circulatory disturbances."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:severe-pad",
+      "kind": "condition",
+      "level": "contraindicated",
+      "med": "atenolol",
+      "condition": "severe-peripheral-arterial-disease",
+      "concern": "Severe peripheral arterial circulatory disturbances",
+      "consequence": "May worsen peripheral circulation.",
+      "action": "Do not use.",
+      "sourceWording": "should not be used",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "should not be used in patients with any of the following:"
+        },
+        {
+          "s": "emc-3861",
+          "q": "severe peripheral arterial circulatory disturbances."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:pad",
+      "kind": "condition",
+      "level": "caution",
+      "med": "atenolol",
+      "condition": "peripheral-arterial-disease",
+      "concern": "Less severe peripheral arterial disease",
+      "consequence": "May aggravate less severe peripheral arterial circulatory disturbances.",
+      "action": "Be aware it may worsen symptoms.",
+      "sourceWording": "may also aggravate",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "may also aggravate less severe peripheral arterial circulatory disturbances."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:asthma",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "atenolol",
+      "condition": "asthma",
+      "concern": "Asthma (reversible obstructive airways disease)",
+      "consequence": "Increase in airways resistance; bronchospasm may occur.",
+      "action": "Avoid unless there are compelling clinical reasons; then use with caution.",
+      "sourceWording": "should be avoided",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "these should be avoided in patients with reversible obstructive airways disease, unless there are compelling clinical reasons for their use."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:prinzmetal",
+      "kind": "condition",
+      "level": "caution",
+      "med": "atenolol",
+      "condition": "prinzmetal-angina",
+      "concern": "Prinzmetal's angina",
+      "consequence": "May increase number and duration of angina attacks.",
+      "action": "Use only with utmost caution.",
+      "sourceWording": "utmost caution must be exercised",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "May increase the number and duration of angina attacks in patients with Prinzmetal's angina"
+        },
+        {
+          "s": "emc-3861",
+          "q": "its use may be considered although utmost caution must be exercised."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:diabetes",
+      "kind": "condition",
+      "level": "caution",
+      "med": "atenolol",
+      "condition": "diabetes",
+      "concern": "Diabetes",
+      "consequence": "May mask hypoglycaemia (tachycardia); severe hypoglycaemia risk with sulfonylureas.",
+      "action": "Advise careful blood glucose monitoring.",
+      "sourceWording": "should be advised to carefully monitor blood glucose levels",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "May mask the symptoms of hypoglycaemia, in particular, tachycardia."
+        },
+        {
+          "s": "emc-3861",
+          "q": "Diabetic patients should be advised to carefully monitor blood glucose levels."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:thyrotoxicosis",
+      "kind": "condition",
+      "level": "info",
+      "med": "atenolol",
+      "condition": "thyrotoxicosis",
+      "concern": "Thyrotoxicosis",
+      "consequence": "May mask the signs of thyrotoxicosis.",
+      "action": "Be aware signs may be masked.",
+      "sourceWording": "May mask",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "May mask the signs of thyrotoxicosis."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:anaphylaxis-history",
+      "kind": "condition",
+      "level": "caution",
+      "med": "atenolol",
+      "condition": "anaphylaxis-history",
+      "concern": "History of anaphylaxis",
+      "consequence": "More severe allergic reactions; may not respond to usual adrenaline doses.",
+      "action": "Be aware; adrenaline may be less effective.",
+      "sourceWording": "may be unresponsive to the usual doses of adrenaline",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "May cause a more severe reaction to a variety of allergens when given to patients with a history of anaphylactic reaction to such allergens."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:ischaemic-heart-disease",
+      "kind": "condition",
+      "level": "caution",
+      "med": "atenolol",
+      "condition": "ischaemic-heart-disease",
+      "concern": "Ischaemic heart disease (withdrawal)",
+      "consequence": "Abrupt withdrawal is risky.",
+      "action": "Withdraw gradually over 7-14 days and follow the patient.",
+      "sourceWording": "Should not be withdrawn abruptly",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "Should not be withdrawn abruptly. The dosage should be withdrawn gradually over a period of 7-14 days"
+        },
+        {
+          "s": "emc-3861",
+          "q": "Patients should be followed during withdrawal, especially those with ischaemic heart disease."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:condition:surgery",
+      "kind": "condition",
+      "level": "caution",
+      "med": "atenolol",
+      "condition": "surgery-planned",
+      "concern": "Planned surgery / anaesthesia",
+      "consequence": "Risk of myocardial depression with anaesthetics.",
+      "action": "If stopping, stop at least 24 hours before; if continued, use an anaesthetic with little negative inotropic activity and inform the anaesthetist.",
+      "sourceWording": "should be done at least 24 hours prior to the procedure",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "this should be done at least 24 hours prior to the procedure."
+        },
+        {
+          "s": "emc-3861",
+          "q": "If treatment is continued, an anaesthetic with little negative inotropic activity should be selected to minimise the risk of myocardial depression."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:renal:crcl-15-35",
+      "kind": "renal",
+      "level": "dose",
+      "med": "atenolol",
+      "renal": {
+        "measure": "CrCl",
+        "min": 15,
+        "max": 35,
+        "maxInclusive": true
+      },
+      "concern": "CrCl 15-35 ml/min/1.73 m2",
+      "consequence": "Atenolol is renally excreted and accumulates.",
+      "action": "Oral dose 50 mg daily.",
+      "sourceWording": "the oral dose should be 50 mg daily",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "For patients with a creatinine clearance of 15-35 ml/min/1.73 m2 (equivalent to serum creatinine of 300-600 micromol/litre), the oral dose should be 50 mg daily"
+        }
+      ]
+    },
+    {
+      "id": "atenolol:renal:crcl-lt-15",
+      "kind": "renal",
+      "level": "dose",
+      "med": "atenolol",
+      "renal": {
+        "measure": "CrCl",
+        "max": 15
+      },
+      "concern": "CrCl below 15 ml/min/1.73 m2",
+      "consequence": "Atenolol is renally excreted and accumulates.",
+      "action": "Oral dose 25 mg daily or 50 mg on alternate days; haemodialysis: 50 mg after each dialysis under hospital supervision.",
+      "sourceWording": "the oral dose should be 25 mg daily or 50 mg on alternate days",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "For patients with a creatinine clearance of less than 15 ml/min/1.73 m2 (equivalent to serum creatinine of greater than 600 micromol/litre), the oral dose should be 25 mg daily or 50 mg on alternate days"
+        },
+        {
+          "s": "emc-3861",
+          "q": "Patients on haemodialysis should be given 50 mg orally after each dialysis"
+        }
+      ]
+    },
+    {
+      "id": "atenolol:age:child",
+      "kind": "age",
+      "level": "avoid",
+      "med": "atenolol",
+      "age": {
+        "maxYears": 18
+      },
+      "concern": "Child",
+      "consequence": "No paediatric experience.",
+      "action": "Not recommended for use in children.",
+      "sourceWording": "not recommended for use in children",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "There is no paediatric experience with Tenormin and for this reason it is not recommended for use in children."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:pregnancy",
+      "kind": "pregnancy",
+      "level": "caution",
+      "med": "atenolol",
+      "concern": "Pregnancy",
+      "consequence": "Crosses the placenta; associated with intra-uterine growth retardation; beta-blockers reduce placental perfusion.",
+      "action": "Use with caution; weigh benefit against risk, particularly in the first and second trimesters. BUMPS: can be used if recommended by a doctor; extra growth scans may be offered.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "Caution should be exercised when Tenormin is administered during pregnancy"
+        },
+        {
+          "s": "emc-3861",
+          "q": "requires that the anticipated benefit be weighed against the possible risks, particularly in the first and second trimesters"
+        },
+        {
+          "s": "bumps-atenolol",
+          "q": "Atenolol can be used in pregnancy if recommended by a doctor."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:breastfeeding",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "atenolol",
+      "concern": "Breastfeeding",
+      "consequence": "Significant accumulation in breast milk; infant risk of hypoglycaemia and bradycardia, especially neonates.",
+      "action": "Use with caution; SPS prefers labetalol, metoprolol or propranolol. Monitor the infant for bradycardia and hypoglycaemia.",
+      "sourceWording": "Caution should be exercised",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "Caution should be exercised when Tenormin is administered during pregnancy or to a woman who is breast-feeding."
+        },
+        {
+          "s": "emc-3861",
+          "q": "There is significant accumulation of Tenormin in breast milk."
+        },
+        {
+          "s": "sps-beta-blockers-breastfeeding",
+          "q": "It can be used with caution during breastfeeding, but labetalol, metoprolol, or propranolol are preferred if clinically appropriate.."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:interaction:rate-limiting-ccb",
+      "kind": "interaction",
+      "level": "info",
+      "med": "atenolol",
+      "other": "group:rate-limiting-ccb",
+      "effect": "hypotension",
+      "concern": "Verapamil or diltiazem",
+      "consequence": "Exaggerated negative inotropic effects: severe hypotension, bradycardia and cardiac failure, especially with impaired ventricular function or conduction problems.",
+      "action": "Be aware (no action stated for oral use); neither should be given intravenously within 48 hours of stopping the other.",
+      "sourceWording": "can lead to an exaggeration of these effects",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "Combined use of beta-blockers and calcium channel blockers with negative inotropic effects, e.g. verapamil and diltiazem, can lead to an exaggeration of these effects"
+        },
+        {
+          "s": "emc-3861",
+          "q": "This may result in severe hypotension, bradycardia and cardiac failure."
+        },
+        {
+          "s": "emc-3861",
+          "q": "Neither the beta-blocker nor the calcium channel blocker should be administered intravenously within 48 hours of discontinuing the other."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:interaction:dihydropyridine",
+      "kind": "interaction",
+      "level": "info",
+      "med": "atenolol",
+      "other": "group:dihydropyridine",
+      "effect": "hypotension",
+      "concern": "Dihydropyridine calcium-channel blockers (e.g. nifedipine)",
+      "consequence": "Increased risk of hypotension; cardiac failure possible with latent cardiac insufficiency.",
+      "action": "Be aware of hypotension and heart failure risk.",
+      "sourceWording": "may increase the risk of hypotension",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "Concomitant therapy with dihydropyridines, e.g. nifedipine, may increase the risk of hypotension, and cardiac failure may occur in patients with latent cardiac insufficiency."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:interaction:antidiabetic",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "atenolol",
+      "other": "group:antidiabetic",
+      "effect": "hypoglycaemia",
+      "concern": "Insulin and oral antidiabetics",
+      "consequence": "Blood glucose lowering may be intensified; hypoglycaemia symptoms (tachycardia) may be masked.",
+      "action": "Advise careful blood glucose monitoring.",
+      "sourceWording": "may lead to the intensification of the blood sugar lowering effects",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "Concomitant use with insulin and oral antidiabetic drugs may lead to the intensification of the blood sugar lowering effects of these drugs."
+        },
+        {
+          "s": "emc-3861",
+          "q": "Diabetic patients should be advised to carefully monitor blood glucose levels."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:interaction:sulfonylurea",
+      "kind": "interaction",
+      "level": "caution",
+      "med": "atenolol",
+      "other": "group:sulfonylurea",
+      "effect": "hypoglycaemia",
+      "concern": "Sulfonylureas",
+      "consequence": "Could increase the risk of severe hypoglycaemia.",
+      "action": "Advise careful blood glucose monitoring.",
+      "sourceWording": "could increase the risk of severe hypoglycaemia",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "The concomitant use of beta-blockers with sulfonylureas could increase the risk of severe hypoglycaemia."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:interaction:nsaid",
+      "kind": "interaction",
+      "level": "info",
+      "med": "atenolol",
+      "other": "group:nsaid",
+      "concern": "NSAIDs (e.g. ibuprofen)",
+      "consequence": "May reduce the blood pressure lowering effect.",
+      "action": "Be aware of reduced antihypertensive effect.",
+      "sourceWording": "may decrease the hypotensive effects",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "Concomitant use of prostaglandin synthetase-inhibiting drugs, e.g. ibuprofen and indometacin, may decrease the hypotensive effects of beta-blockers."
+        }
+      ]
+    },
+    {
+      "id": "atenolol:interaction:sympathomimetic",
+      "kind": "interaction",
+      "level": "info",
+      "med": "atenolol",
+      "other": "group:sympathomimetic",
+      "concern": "Sympathomimetics (e.g. adrenaline)",
+      "consequence": "May counteract the effect of beta-blockers.",
+      "action": "Be aware of the interaction.",
+      "sourceWording": "may counteract the effect of beta-blockers",
+      "src": [
+        {
+          "s": "emc-3861",
+          "q": "Concomitant use of sympathomimetic agents, e.g. adrenaline (epinephrine), may counteract the effect of beta-blockers."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+  "id": "loratadine",
+  "name": "Loratadine",
+  "ingredients": [
+    "loratadine"
+  ],
+  "className": "Antihistamine (H1 antagonist)",
+  "groups": [
+    "antihistamine"
+  ],
+  "searchTerms": [],
+  "formulations": [
+    {
+      "id": "loratadine-tab",
+      "label": "Tablets",
+      "route": "oral",
+      "strengths": "10 mg",
+      "release": "immediate",
+      "src": [
+        {
+          "s": "emc-3505",
+          "q": "Each tablets contains 10mg loratadine"
+        }
+      ],
+      "sourceIds": [
+        "emc-3505"
+      ]
+    },
+    {
+      "id": "loratadine-syrup",
+      "label": "Syrup 1 mg/ml (5 mg/5 ml)",
+      "route": "oral",
+      "strengths": "1 mg/ml (5 mg/5 ml)",
+      "release": "n/a",
+      "src": [
+        {
+          "s": "emc-13696",
+          "q": "Each ml of syrup contains 1mg loratadine."
+        }
+      ],
+      "sourceIds": [
+        "emc-13696"
+      ]
+    }
+  ],
+  "brandPrescribing": null,
+  "bnf": {
+    "status": "not-accessed",
+    "note": "BNF/BNFC is only available in the UK; not accessed."
+  },
+  "sections": {
+    "indications": {
+      "items": [
+        {
+          "t": "Symptoms of allergic rhinitis and chronic idiopathic urticaria (syrup: adults and children over 2 years).",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "indicated for the symptomatic treatment of allergic rhinitis and chronic idiopathic urticaria"
+            },
+            {
+              "s": "emc-13696",
+              "q": "in adults and children over the age of 2 years"
+            }
+          ]
+        }
+      ]
+    },
+    "restrictions": {
+      "status": "not-stated",
+      "note": "No prescribing restriction stated in the UK SmPCs accessed (tablets and syrup)."
+    },
+    "dosing": {
+      "items": [
+        {
+          "t": "Adults and children over 12 years: 10 mg once daily (1 tablet or 10 ml syrup).",
+          "tag": "Allergic rhinitis, urticaria",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "Adults: One tablet once daily."
+            },
+            {
+              "s": "emc-13696",
+              "q": "Adults and children over 12 years of age: 10ml (10mg) of the syrup once daily."
+            }
+          ]
+        },
+        {
+          "t": "Elderly and renal impairment: no dose change.",
+          "tag": "Elderly",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "No dosage adjustments are required in the elderly."
+            },
+            {
+              "s": "emc-3505",
+              "q": "No dosage adjustments are required in patients with renal insufficiency."
+            }
+          ]
+        }
+      ]
+    },
+    "paediatric": {
+      "items": [
+        {
+          "t": "Tablets: children 6 years and over weighing more than 30 kg: 10 mg once daily. Younger or lighter children: other formulations are more suitable.",
+          "formulations": [
+            "loratadine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "Children 6 years of age and older with a body weight greater than 30 kg: One tablet once daily."
+            },
+            {
+              "s": "emc-3505",
+              "q": "For appropriate dosing in children younger than 6 years or with body weight of 30 kg or less, there are other formulations more suitable."
+            }
+          ]
+        },
+        {
+          "t": "Syrup, children 2-12 years by weight: more than 30 kg: 10 ml (10 mg) once daily; 30 kg or less: 5 ml (5 mg) once daily.",
+          "formulations": [
+            "loratadine-syrup"
+          ],
+          "src": [
+            {
+              "s": "emc-13696",
+              "q": "Children 2 to 12 years of age are dosed by weight"
+            },
+            {
+              "s": "emc-13696",
+              "q": "5ml (5mg) of the syrup once daily"
+            }
+          ]
+        },
+        {
+          "t": "Under 2 years: safety and efficacy not established; no data.",
+          "src": [
+            {
+              "s": "emc-13696",
+              "q": "in children under 2 years of age has not been established. No data are available."
+            },
+            {
+              "s": "emc-3505",
+              "q": "Children under 2 years of age: The safety and efficacy of Clarityn Allergy Tablets have not been established."
+            }
+          ]
+        }
+      ]
+    },
+    "contraindications": {
+      "items": [
+        {
+          "t": "Hypersensitivity to loratadine or any excipient.",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+            }
+          ]
+        }
+      ]
+    },
+    "cautions": {
+      "items": [
+        {
+          "t": "Severe liver impairment: use with caution; lower starting dose (see hepatic).",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "should be administered with caution in patients with severe liver impairment"
+            }
+          ]
+        },
+        {
+          "t": "Tablets contain lactose: patients with galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption should not take them.",
+          "formulations": [
+            "loratadine-tab"
+          ],
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine"
+            }
+          ]
+        },
+        {
+          "t": "Syrup contains maltitol and sorbitol: patients with hereditary fructose intolerance should not take it.",
+          "formulations": [
+            "loratadine-syrup"
+          ],
+          "src": [
+            {
+              "s": "emc-13696",
+              "q": "patients with rare hereditary problems of fructose intolerance should not take this medicine"
+            }
+          ]
+        },
+        {
+          "t": "Stop at least 48 hours before skin tests.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "should be discontinued at least 48 hours before skin tests"
+            }
+          ]
+        }
+      ]
+    },
+    "interactions": {
+      "items": [
+        {
+          "t": "CYP3A4 or CYP2D6 inhibitors may raise loratadine levels and increase adverse events. Ketoconazole, erythromycin and cimetidine raised levels in trials without clinically significant changes (including ECG).",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "Potential interaction may occur with all known inhibitors of CYP3A4 or CYP2D6 resulting in elevated levels of loratadine"
+            },
+            {
+              "s": "emc-3505",
+              "q": "which may cause an increase in adverse events"
+            },
+            {
+              "s": "emc-3505",
+              "q": "Increase in plasma concentrations of loratadine has been reported after concomitant use with ketoconazole, erythromycin, and cimetidine in controlled trials, but without clinically significant changes (including electrocardiographic)."
+            }
+          ]
+        },
+        {
+          "t": "Alcohol: no potentiation in psychomotor studies.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "have no potentiating effects as measured by psychomotor performance studies"
+            }
+          ]
+        }
+      ]
+    },
+    "renal": {
+      "items": [
+        {
+          "t": "No dose change in renal insufficiency.",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "No dosage adjustments are required in patients with renal insufficiency."
+            }
+          ]
+        }
+      ]
+    },
+    "hepatic": {
+      "items": [
+        {
+          "t": "Severe liver impairment: start lower, 10 mg every other day (adults and children over 30 kg); syrup in children 30 kg or less: 5 mg (5 ml) every other day.",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "Patients with severe liver impairment should be administered a lower initial dose because they may have reduced clearance of loratadine."
+            },
+            {
+              "s": "emc-3505",
+              "q": "An initial dose of 10mg every other day is recommended for adults and children weighing more than 30kg."
+            },
+            {
+              "s": "emc-13696",
+              "q": "for children weighing 30kg or less, 5ml (5mg) every other day is recommended"
+            }
+          ]
+        }
+      ]
+    },
+    "pregnancy": {
+      "items": [
+        {
+          "t": "SmPC: large data (over 1000 outcomes) show no malformations or fetal/neonatal toxicity, but as a precaution it is preferable to avoid in pregnancy.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "A large amount of data on pregnant women (more than 1000 exposed outcomes) indicate no malformative nor feto/ neonatal toxicity of loratadine."
+            },
+            {
+              "s": "emc-3505",
+              "q": "As a precautionary measure, it is preferable to avoid the use of Clarityn Allergy Tablets during pregnancy."
+            }
+          ]
+        },
+        {
+          "t": "BUMPS: loratadine can be used in pregnancy. SPS: if topical treatment fails, loratadine and cetirizine are the preferred oral antihistamines.",
+          "tag": "BUMPS / SPS",
+          "src": [
+            {
+              "s": "bumps-loratadine",
+              "q": "Loratadine can be used during pregnancy."
+            },
+            {
+              "s": "sps-hayfever-pregnancy",
+              "q": "Loratadine and cetirizine are the preferred antihistamines for pregnant women."
+            }
+          ]
+        }
+      ]
+    },
+    "breastfeeding": {
+      "items": [
+        {
+          "t": "SmPC: excreted in breast milk; not recommended when breastfeeding.",
+          "tag": "SmPC",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "Loratadine is excreted in breast milk. Therefore, the use of Clarityn Allergy Tablets is not recommended in breast-feeding women."
+            }
+          ]
+        },
+        {
+          "t": "SPS: a preferred antihistamine in breastfeeding; use with caution and monitor the infant for drowsiness, irritability, poor feeding and poor weight gain.",
+          "tag": "SPS",
+          "src": [
+            {
+              "s": "sps-antihistamines-breastfeeding",
+              "q": "Loratadine is a preferred choice during breastfeeding, but infant monitoring is still required."
+            },
+            {
+              "s": "sps-antihistamines-breastfeeding",
+              "q": "monitor the infant for potential side effects including drowsiness, irritability, poor feeding and inadequate weight gain"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductive": {
+      "items": [
+        {
+          "t": "Fertility: no data.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "There are no data available on male and female fertility."
+            }
+          ]
+        }
+      ]
+    },
+    "adverseCommon": {
+      "items": [
+        {
+          "t": "Adults: most frequent above placebo were somnolence (1.2%), headache, increased appetite and insomnia. Children 2-12 years (common): headache, nervousness, fatigue.",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "The most frequent adverse reactions reported in excess of placebo were somnolence (1.2%), headache (0.6%), increased appetite (0.5%) and insomnia (0.1%)."
+            },
+            {
+              "s": "emc-3505",
+              "q": "common adverse reactions reported in excess of placebo were headache (2.7%), nervousness (2.3%), and fatigue (1%)"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseSerious": {
+      "items": [
+        {
+          "t": "Hypersensitivity including angioedema and anaphylaxis (very rare).",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "Very rare Hypersensitivity reactions (including angioedema and anaphylaxis)"
+            }
+          ]
+        },
+        {
+          "t": "Very rare: convulsion, tachycardia, palpitation, abnormal liver function.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "Very rare Dizziness, convulsion"
+            },
+            {
+              "s": "emc-3505",
+              "q": "Very rare Tachycardia, palpitation"
+            },
+            {
+              "s": "emc-3505",
+              "q": "Very rare Abnormal hepatic function"
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "status": "not-stated",
+      "note": "No monitoring requirements stated in the UK SmPCs accessed; no SPS monitoring page for loratadine found."
+    },
+    "administration": {
+      "items": [
+        {
+          "t": "Take with or without food. The tablet score line is for easier swallowing only, not for dividing into equal doses.",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "The tablet may be taken without regard to mealtime."
+            },
+            {
+              "s": "emc-3505",
+              "q": "The score line of the tablet is only to facilitate breaking for ease of swallowing and not to divide into equal doses."
+            },
+            {
+              "s": "emc-13696",
+              "q": "The syrup may be taken without regard to meal time."
+            }
+          ]
+        }
+      ]
+    },
+    "counselling": {
+      "items": [
+        {
+          "t": "Drowsiness is very rare, but can affect driving or using machines.",
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "patients should be informed that very rarely some people experience drowsiness, which may affect their ability to drive or use machines"
+            }
+          ]
+        },
+        {
+          "t": "Stop at least 48 hours before allergy skin tests.",
+          "detail": true,
+          "src": [
+            {
+              "s": "emc-3505",
+              "q": "should be discontinued at least 48 hours before skin tests"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "loratadine:allergy:own",
+      "kind": "allergy",
+      "level": "contraindicated",
+      "med": "loratadine",
+      "allergen": [
+        "loratadine"
+      ],
+      "concern": "Loratadine hypersensitivity",
+      "consequence": "Hypersensitivity reaction.",
+      "action": "Do not use.",
+      "sourceWording": "4.3 Contraindications: Hypersensitivity to the active substance",
+      "src": [
+        {
+          "s": "emc-3505",
+          "q": "4.3 Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1."
+        }
+      ]
+    },
+    {
+      "id": "loratadine:hepatic:severe",
+      "kind": "hepatic",
+      "level": "dose",
+      "med": "loratadine",
+      "hepatic": [
+        "severe"
+      ],
+      "concern": "Severe liver impairment",
+      "consequence": "Reduced loratadine clearance.",
+      "action": "Use with caution; start 10 mg every other day (adults and children over 30 kg); syrup, children 30 kg or less: 5 mg every other day.",
+      "sourceWording": "should be administered a lower initial dose",
+      "src": [
+        {
+          "s": "emc-3505",
+          "q": "Patients with severe liver impairment should be administered a lower initial dose because they may have reduced clearance of loratadine."
+        },
+        {
+          "s": "emc-3505",
+          "q": "An initial dose of 10mg every other day is recommended for adults and children weighing more than 30kg."
+        },
+        {
+          "s": "emc-13696",
+          "q": "for children weighing 30kg or less, 5ml (5mg) every other day is recommended"
+        }
+      ]
+    },
+    {
+      "id": "loratadine:condition:galactose-tab",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "loratadine",
+      "formulations": [
+        "loratadine-tab"
+      ],
+      "condition": "galactose-intolerance-lactase-deficiency",
+      "concern": "Galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption (tablets contain lactose)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the tablets.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-3505",
+          "q": "patients with rare hereditary problems of galactose intolerance, the Lapp lactase deficiency or glucose-galactose malabsorption should not take this medicine"
+        }
+      ]
+    },
+    {
+      "id": "loratadine:condition:fructose-syrup",
+      "kind": "condition",
+      "level": "avoid",
+      "med": "loratadine",
+      "formulations": [
+        "loratadine-syrup"
+      ],
+      "condition": "hereditary-fructose-intolerance",
+      "concern": "Hereditary fructose intolerance (syrup contains maltitol and sorbitol)",
+      "consequence": "Excipient intolerance.",
+      "action": "Should not take the syrup.",
+      "sourceWording": "should not take this medicine",
+      "src": [
+        {
+          "s": "emc-13696",
+          "q": "patients with rare hereditary problems of fructose intolerance should not take this medicine"
+        }
+      ]
+    },
+    {
+      "id": "loratadine:age:under-2",
+      "kind": "age",
+      "level": "info",
+      "med": "loratadine",
+      "age": {
+        "maxYears": 2
+      },
+      "concern": "Child under 2 years",
+      "consequence": "Safety and efficacy not established; no data.",
+      "action": "Not established in this age group (no action stated).",
+      "sourceWording": "has not been established. No data are available.",
+      "src": [
+        {
+          "s": "emc-13696",
+          "q": "in children under 2 years of age has not been established. No data are available."
+        },
+        {
+          "s": "emc-3505",
+          "q": "Children under 2 years of age: The safety and efficacy of Clarityn Allergy Tablets have not been established."
+        }
+      ]
+    },
+    {
+      "id": "loratadine:pregnancy:smpc",
+      "kind": "pregnancy",
+      "level": "avoid",
+      "med": "loratadine",
+      "concern": "Pregnancy (SmPC)",
+      "consequence": "No malformative or fetal/neonatal toxicity in over 1000 outcomes; avoided as a precaution.",
+      "action": "Preferable to avoid (SmPC). Note: BUMPS says it can be used and SPS lists it as a preferred antihistamine (see separate rule).",
+      "sourceWording": "it is preferable to avoid",
+      "src": [
+        {
+          "s": "emc-3505",
+          "q": "As a precautionary measure, it is preferable to avoid the use of Clarityn Allergy Tablets during pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "loratadine:pregnancy:bumps-sps",
+      "kind": "pregnancy",
+      "level": "info",
+      "med": "loratadine",
+      "concern": "Pregnancy (BUMPS / SPS)",
+      "consequence": "No evidence of harm to mother or baby.",
+      "action": "BUMPS: can be used in pregnancy; SPS: a preferred oral antihistamine if topical treatment fails.",
+      "sourceWording": "can be used during pregnancy",
+      "src": [
+        {
+          "s": "bumps-loratadine",
+          "q": "Loratadine can be used during pregnancy."
+        },
+        {
+          "s": "sps-hayfever-pregnancy",
+          "q": "Loratadine and cetirizine are the preferred antihistamines for pregnant women."
+        }
+      ]
+    },
+    {
+      "id": "loratadine:breastfeeding:smpc",
+      "kind": "breastfeeding",
+      "level": "avoid",
+      "med": "loratadine",
+      "concern": "Breastfeeding (SmPC)",
+      "consequence": "Excreted in breast milk.",
+      "action": "Not recommended (SmPC). Note: SPS considers it a preferred antihistamine with infant monitoring (see separate rule).",
+      "sourceWording": "is not recommended in breast-feeding women",
+      "src": [
+        {
+          "s": "emc-3505",
+          "q": "Loratadine is excreted in breast milk. Therefore, the use of Clarityn Allergy Tablets is not recommended in breast-feeding women."
+        }
+      ]
+    },
+    {
+      "id": "loratadine:breastfeeding:sps",
+      "kind": "breastfeeding",
+      "level": "caution",
+      "med": "loratadine",
+      "concern": "Breastfeeding (SPS)",
+      "consequence": "Very small amounts in milk; minor infant sedation reported rarely.",
+      "action": "Use with caution; monitor the infant for drowsiness, irritability, poor feeding and weight gain.",
+      "sourceWording": "Use with Caution",
+      "src": [
+        {
+          "s": "sps-antihistamines-breastfeeding",
+          "q": "Loratadine is a preferred choice during breastfeeding, but infant monitoring is still required."
+        },
+        {
+          "s": "sps-antihistamines-breastfeeding",
+          "q": "monitor the infant for potential side effects including drowsiness, irritability, poor feeding and inadequate weight gain"
+        }
+      ]
+    },
+    {
+      "id": "loratadine:interaction:cyp3a4-inhibitor",
+      "kind": "interaction",
+      "level": "info",
+      "med": "loratadine",
+      "other": "group:cyp3a4-inhibitor",
+      "concern": "CYP3A4 inhibitors",
+      "consequence": "May raise loratadine levels and increase adverse events (ketoconazole and erythromycin raised levels without clinically significant change).",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "Potential interaction may occur",
+      "src": [
+        {
+          "s": "emc-3505",
+          "q": "Potential interaction may occur with all known inhibitors of CYP3A4 or CYP2D6 resulting in elevated levels of loratadine"
+        },
+        {
+          "s": "emc-3505",
+          "q": "which may cause an increase in adverse events"
+        }
+      ]
+    },
+    {
+      "id": "loratadine:interaction:cyp2d6-inhibitor",
+      "kind": "interaction",
+      "level": "info",
+      "med": "loratadine",
+      "other": "group:cyp2d6-inhibitor",
+      "concern": "CYP2D6 inhibitors",
+      "consequence": "May raise loratadine levels and increase adverse events.",
+      "action": "Be aware; no specific action stated.",
+      "sourceWording": "Potential interaction may occur",
+      "src": [
+        {
+          "s": "emc-3505",
+          "q": "Potential interaction may occur with all known inhibitors of CYP3A4 or CYP2D6 resulting in elevated levels of loratadine"
+        },
+        {
+          "s": "emc-3505",
+          "q": "which may cause an increase in adverse events"
+        }
+      ]
+    }
+  ]
+}

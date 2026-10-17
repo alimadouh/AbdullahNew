@@ -1,0 +1,350 @@
+{
+  "id": "liraglutide",
+  "name": "Liraglutide",
+  "ingredients": ["liraglutide"],
+  "className": "Glucagon-like peptide-1 (GLP-1) receptor agonist (GLP-1 analogue)",
+  "groups": ["glp1-agonist", "antidiabetic"],
+  "searchTerms": ["GLP-1 receptor agonist", "GLP-1 analogue"],
+  "formulations": [
+    {
+      "id": "liraglutide-pen",
+      "label": "Solution for injection in pre-filled pen (6 mg/mL, 3 mL)",
+      "route": "subcutaneous",
+      "strengths": "6 mg/mL (18 mg in 3 mL); doses 0.6 mg, 1.2 mg, 1.8 mg",
+      "release": "n/a",
+      "note": "The original clinic brand has no current UK SmPC on emc; this entry uses UK liraglutide 6 mg/mL pen SmPCs for type 2 diabetes. A weight-management liraglutide product (different doses and indication) is not covered here.",
+      "src": [
+        { "s": "emc-100178", "q": "1 ml of solution contains 6 mg of liraglutide produced by chemical synthesis. One pre-filled pen contains 18 mg liraglutide in 3ml." },
+        { "s": "emc-100248", "q": "One pre-filled pen contains 18 mg liraglutide in 3 ml." }
+      ],
+      "sourceIds": ["emc-100178", "emc-100248"]
+    }
+  ],
+  "brandPrescribing": {
+    "t": "SPS: liraglutide is a biological medicine and must be prescribed and dispensed by brand name. The SmPC also asks that the product name and batch number be recorded (traceability).",
+    "src": [
+      { "s": "sps-glp1-considerations", "q": "Biological medicines such as semaglutide, dulaglutide, liraglutide, and tirzepatide must be prescribed and dispensed by brand name." },
+      { "s": "emc-100178", "q": "In order to improve the traceability of biological medicinal products, the name and the batch number of the administered product should be clearly recorded." }
+    ]
+  },
+  "bnf": { "status": "not-accessed", "note": "BNF/BNFC is only available in the UK; not accessed." },
+  "sections": {
+    "indications": { "items": [
+      { "t": "Insufficiently controlled type 2 diabetes in adults, adolescents and children aged 10 years and above, with diet and exercise: monotherapy when metformin is inappropriate (intolerance or contraindication), or added to other diabetes medicines.",
+        "src": [{ "s": "emc-100178", "q": "Liraglutide is indicated for the treatment of adults, adolescents and children aged 10 years and above with insufficiently controlled type 2 diabetes mellitus as an adjunct to diet and exercise" }] }
+    ] },
+    "restrictions": { "items": [
+      { "t": "SPS: prescribe and dispense by brand name (biological medicine). Only prescribe for licensed indications.",
+        "src": [
+          { "s": "sps-glp1-considerations", "q": "Biological medicines such as semaglutide, dulaglutide, liraglutide, and tirzepatide must be prescribed and dispensed by brand name." },
+          { "s": "sps-glp1-considerations", "q": "Only prescribe GLP-1 RAs, or incretin mimetics, for their licensed indication and follow NHS guidance." }
+        ] },
+      { "t": "Combination with a sulphonylurea is only valid for adults.",
+        "src": [{ "s": "emc-100178", "q": "Combination therapy with sulfonylurea is only valid for adult patients." }] }
+    ] },
+    "dosing": { "items": [
+      { "t": "Start 0.6 mg once daily; after at least 1 week increase to 1.2 mg. If needed, after at least another week increase to 1.8 mg. Doses above 1.8 mg daily are not recommended.", "tag": "Type 2 diabetes (adults and children 10 years and over)",
+        "src": [
+          { "s": "emc-100178", "q": "the starting dose is 0.6 mg liraglutide daily. After at least one week, the dose should be increased to 1.2 mg." },
+          { "s": "emc-100178", "q": "after at least one week, the dose can be increased to 1.8 mg to further improve glycaemic control. Daily doses higher than 1.8 mg are not recommended." }
+        ] },
+      { "t": "Added to a sulphonylurea or insulin: consider reducing the sulphonylurea or insulin dose; reduce insulin stepwise. Blood glucose self-monitoring is needed to adjust these, especially when starting liraglutide and reducing insulin.", "tag": "With sulphonylurea or insulin",
+        "src": [
+          { "s": "emc-100178", "q": "When Liraglutide is added to a sulfonylurea or insulin, a reduction in the dose of sulfonylurea or insulin should be considered to reduce the risk of hypoglycaemia" },
+          { "s": "emc-100178", "q": "Blood glucose self-monitoring is necessary to adjust the dose of sulfonylurea and insulin, particularly when liraglutide therapy is started and insulin is reduced. A stepwise approach to insulin dose reduction is recommended." }
+        ] },
+      { "t": "Elderly, mild to severe renal impairment, mild or moderate hepatic impairment: no dose adjustment.", "tag": "Special populations", "detail": true,
+        "src": [
+          { "s": "emc-100178", "q": "No dose adjustment is required based on age" },
+          { "s": "emc-100178", "q": "No dose adjustment is required for patients with mild, moderate or severe renal impairment." }
+        ] }
+    ] },
+    "paediatric": { "items": [
+      { "t": "Children and adolescents 10 years and over: same dosing, no adjustment. No data under 10 years. Combination with a sulphonylurea is for adults only.",
+        "src": [
+          { "s": "emc-100178", "q": "No dose adjustment is required for adolescents and children aged 10 years and above. No data are available for children below 10 years of age" },
+          { "s": "emc-100178", "q": "Combination therapy with sulfonylurea is only valid for adult patients." }
+        ] }
+    ] },
+    "contraindications": { "items": [
+      { "t": "Hypersensitivity to liraglutide or any excipient.",
+        "src": [{ "s": "emc-100178", "q": "Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] }
+    ] },
+    "cautions": { "items": [
+      { "t": "Should not be used in type 1 diabetes or to treat diabetic ketoacidosis; not a substitute for insulin. Diabetic ketoacidosis has been reported in insulin-dependent patients after rapid stopping or reduction of insulin.",
+        "src": [
+          { "s": "emc-100178", "q": "Liraglutide should not be used in patients with type 1 diabetes mellitus or for the treatment of diabetic ketoacidosis. Liraglutide is not a substitute for insulin." },
+          { "s": "emc-100178", "q": "Diabetic ketoacidosis has been reported in insulin-dependent patients after rapid discontinuation or dose reduction of insulin" }
+        ] },
+      { "t": "Heart failure NYHA class IV: no experience; not recommended.",
+        "src": [{ "s": "emc-100178", "q": "There is no therapeutic experience in patients with congestive heart failure New York Heart Association (NYHA) class IV, and liraglutide is therefore not recommended for use in these patients." }] },
+      { "t": "Inflammatory bowel disease and diabetic gastroparesis: not recommended (limited experience; gastrointestinal side effects).",
+        "src": [
+          { "s": "emc-100178", "q": "There is limited experience in patients with inflammatory bowel disease and diabetic gastroparesis." },
+          { "s": "emc-100178", "q": "Use of liraglutide is not recommended in these patients" }
+        ] },
+      { "t": "General anaesthesia or deep sedation: pulmonary aspiration reported with GLP-1 receptor agonists (delayed gastric emptying); consider before procedures. MHRA: anaesthetists should assess aspiration risk; ask patients about GLP-1 use.",
+        "src": [
+          { "s": "emc-100178", "q": "Cases of pulmonary aspiration have been reported in patients receiving GLP-1 receptor agonists undergoing general anaesthesia or deep sedation." },
+          { "s": "mhra-dsu-glp1-aspiration-2025", "q": "anaesthetists should consider the potential risk of aspiration within their risk assessment of patients being treated with GLP-1 or dual GIP/GLP-1 receptor agonists" }
+        ] },
+      { "t": "Acute pancreatitis (including necrotising and fatal cases): caution with a history of pancreatitis (not studied). Stop if suspected; do not restart if confirmed. Raised pancreatic enzymes alone do not predict pancreatitis.",
+        "src": [
+          { "s": "emc-100178", "q": "Liraglutide has not been studied in patients with a history of pancreatitis, and should be used with caution in these patients." },
+          { "s": "emc-100178", "q": "If pancreatitis is suspected, liraglutide should be discontinued. If the diagnosis of pancreatitis is confirmed, liraglutide should not be restarted." },
+          { "s": "emc-100178", "q": "elevations in pancreatic enzymes alone are not predictive of acute pancreatitis" }
+        ] },
+      { "t": "Pre-existing thyroid disease: use with caution (thyroid events such as goitre reported).",
+        "src": [
+          { "s": "emc-100178", "q": "Thyroid adverse events, such as goitre, have been reported in clinical trials and in particular in patients with pre-existing thyroid disease." },
+          { "s": "emc-100178", "q": "Liraglutide should therefore be used with caution in these patients." }
+        ] },
+      { "t": "Hypoglycaemia with a sulphonylurea or insulin: lowered by reducing their dose.",
+        "src": [{ "s": "emc-100178", "q": "The risk of hypoglycaemia can be lowered by a reduction in the dose of sulfonylurea or insulin." }] },
+      { "t": "Dehydration, renal impairment and acute renal failure reported: warn patients about fluid loss with gastrointestinal side effects.",
+        "src": [
+          { "s": "emc-100178", "q": "Signs and symptoms of dehydration, including renal impairment and acute renal failure, have been reported in patients treated with liraglutide." },
+          { "s": "emc-100178", "q": "take precautions to avoid fluid depletion" }
+        ] }
+    ] },
+    "interactions": { "items": [
+      { "t": "Warfarin and other coumarins: a clinically relevant interaction cannot be excluded; monitor INR more often when starting liraglutide.",
+        "src": [
+          { "s": "emc-100178", "q": "A clinically relevant interaction with active substances with poor solubility or with narrow therapeutic index such as warfarin cannot be excluded." },
+          { "s": "emc-100178", "q": "Upon initiation of liraglutide treatment in patients on warfarin or other coumarin derivatives, more frequent monitoring of INR (International Normalised Ratio) is recommended." }
+        ] },
+      { "t": "Sulphonylureas or insulin: hypoglycaemia; a dose reduction should be considered. MHRA: diabetic ketoacidosis reported when insulin was rapidly reduced or stopped; reduce insulin stepwise with glucose self-monitoring.",
+        "src": [
+          { "s": "emc-100178", "q": "Patients receiving liraglutide in combination with a sulfonylurea or insulin may have an increased risk of hypoglycaemia" },
+          { "s": "mhra-dsu-glp1-dka-insulin-2019", "q": "if the insulin dose is to be reduced, a stepwise approach is recommended" }
+        ] },
+      { "t": "Oral medicines: slightly delayed gastric emptying may affect absorption, but studies showed no clinically relevant delay; no dose adjustment (paracetamol, atorvastatin, digoxin, lisinopril, griseofulvin, oral contraceptives). Severe diarrhoea may affect absorption.", "detail": true,
+        "src": [
+          { "s": "emc-100178", "q": "Interaction studies did not show any clinically relevant delay of absorption and therefore no dose adjustment is required." },
+          { "s": "emc-100178", "q": "Diarrhoea may affect the absorption of concomitant oral medicinal products." }
+        ] },
+      { "t": "SPS: use with caution with time-critical or narrow therapeutic window medicines (e.g. levodopa); extra monitoring may be needed.", "detail": true,
+        "src": [
+          { "s": "sps-glp1-considerations", "q": "Use GLP-1 RAs with caution in people who are taking medicines which are time critical, such as levodopa for Parkinson's disease." },
+          { "s": "sps-glp1-considerations", "q": "These people may require additional monitoring." }
+        ] }
+    ] },
+    "renal": { "items": [
+      { "t": "Mild, moderate or severe renal impairment: no dose adjustment.",
+        "src": [{ "s": "emc-100178", "q": "No dose adjustment is required for patients with mild, moderate or severe renal impairment." }] },
+      { "t": "End-stage renal disease: no experience; not recommended. (The SmPC gives no numeric threshold for this.)",
+        "src": [{ "s": "emc-100178", "q": "There is no therapeutic experience in patients with end-stage renal disease, and liraglutide is therefore not recommended for use in these patients" }] },
+      { "t": "Dehydration from gastrointestinal effects can cause renal impairment or acute renal failure.", "detail": true,
+        "src": [{ "s": "emc-100178", "q": "Signs and symptoms of dehydration, including renal impairment and acute renal failure, have been reported in patients treated with liraglutide." }] }
+    ] },
+    "hepatic": { "items": [
+      { "t": "Mild or moderate: no dose adjustment. Severe hepatic impairment: not recommended.",
+        "src": [
+          { "s": "emc-100178", "q": "No dose adjustment is recommended for patients with mild or moderate hepatic impairment." },
+          { "s": "emc-100178", "q": "Liraglutide is not recommended for use in patients with severe hepatic impairment" }
+        ] }
+    ] },
+    "pregnancy": { "items": [
+      { "t": "SmPC: should not be used in pregnancy; use insulin instead. Stop if pregnancy is planned or occurs.",
+        "src": [
+          { "s": "emc-100178", "q": "Liraglutide should not be used during pregnancy, and the use of insulin is recommended instead." },
+          { "s": "emc-100178", "q": "If a patient wishes to become pregnant, or pregnancy occurs, treatment with liraglutide should be discontinued." }
+        ] },
+      { "t": "BUMPS: GLP-1 receptor agonists should not be used in pregnancy. If used by accident in early pregnancy, available data (about 47,000 pregnancies) are reassuring; no extra monitoring for birth defects is needed.",
+        "src": [
+          { "s": "bumps-glp1-receptor-agonists", "q": "GLP-1 receptor agonists should not be used in pregnancy." },
+          { "s": "bumps-glp1-receptor-agonists", "q": "If you accidentally used a GLP-1 receptor agonist in early pregnancy, you can be reassured that the available information suggests that it does not harm the baby." },
+          { "s": "bumps-glp1-receptor-agonists", "q": "No extra monitoring for major birth defects is required following use in early pregnancy of a GLP-1 receptor agonist." }
+        ] }
+    ] },
+    "breastfeeding": { "items": [
+      { "t": "SmPC: not known if excreted in human milk; should not be used during breastfeeding (lack of experience).",
+        "src": [{ "s": "emc-100178", "q": "Because of lack of experience, liraglutide should not be used during breast-feeding." }] },
+      { "t": "SPS: MHRA advise GLP-1 receptor agonists should not be taken while breastfeeding (lack of safety data); contact SPS for patient-specific advice. Insulin or metformin are preferred choices.",
+        "src": [
+          { "s": "sps-glp1-considerations", "q": "The MHRA advise GLP-1 RAs should not be taken by people who are breastfeeding due to a lack of safety data ." },
+          { "s": "sps-antidiabetic-bf", "q": "Insulin or metformin are the preferred choices during breastfeeding." }
+        ] }
+    ] },
+    "reproductive": { "items": [
+      { "t": "SPS: MHRA advise contraception throughout GLP-1 receptor agonist treatment as a precaution. Liraglutide is not expected to reduce oral contraceptive effect.",
+        "src": [
+          { "s": "sps-glp1-considerations", "q": "They advise contraceptive use throughout GLP-1 RA treatment as a cautionary measure." },
+          { "s": "emc-100178", "q": "The contraceptive effect is therefore anticipated to be unaffected when co-administered with liraglutide." }
+        ] },
+      { "t": "Fertility: animal studies showed no harmful effect apart from a slight decrease in live implants.", "detail": true,
+        "src": [{ "s": "emc-100178", "q": "Apart from a slight decrease in the number of live implants, animal studies did not indicate harmful effects with respect to fertility." }] }
+    ] },
+    "adverseCommon": { "items": [
+      { "t": "Very common: nausea, diarrhoea. Common: vomiting, constipation, abdominal pain, dyspepsia, headache, nasopharyngitis. Gastrointestinal effects are worse at the start and usually settle within days or weeks.",
+        "src": [
+          { "s": "emc-100178", "q": "nausea and diarrhoea were very common, whereas vomiting, constipation, abdominal pain, and dyspepsia were common" },
+          { "s": "emc-100178", "q": "Headache and nasopharyngitis were also common." },
+          { "s": "emc-100178", "q": "These reactions usually diminish within a few days or weeks on continued treatment." }
+        ] },
+      { "t": "Hypoglycaemia: common; very common with a sulphonylurea (severe hypoglycaemia mainly with a sulphonylurea).",
+        "src": [
+          { "s": "emc-100178", "q": "hypoglycaemia was common, and very common when liraglutide is used in combination with a sulfonylurea" },
+          { "s": "emc-100178", "q": "Severe hypoglycaemia has primarily been observed when combined with a sulfonylurea." }
+        ] },
+      { "t": "Injection site reactions (about 2%), usually mild.", "detail": true,
+        "src": [{ "s": "emc-100178", "q": "Injection site reactions have been reported in approximately 2% of patients receiving liraglutide" }] }
+    ] },
+    "adverseSerious": { "items": [
+      { "t": "Acute pancreatitis, including necrotising and fatal cases: persistent, severe abdominal pain. Stop liraglutide if suspected; do not restart if confirmed. Patients should seek urgent medical attention.",
+        "src": [
+          { "s": "emc-100178", "q": "This includes post-marketing reports of necrotising pancreatitis and reports with a fatal outcome." },
+          { "s": "mhra-dsu-glp1-pancreatitis-2026", "q": "if pancreatitis is suspected, discontinue treatment with the GLP-1 or GLP-1/GIP receptor agonist immediately; do not restart therapy if the diagnosis of pancreatitis is confirmed" }
+        ] },
+      { "t": "Dehydration with renal impairment or acute renal failure (after vomiting/diarrhoea).",
+        "src": [{ "s": "emc-100178", "q": "Signs and symptoms of dehydration, including renal impairment and acute renal failure, have been reported in patients treated with liraglutide." }] },
+      { "t": "Anaphylactic reactions and angioedema (few cases); cholelithiasis and cholecystitis; intestinal obstruction.", "detail": true,
+        "src": [
+          { "s": "emc-100178", "q": "Few cases of anaphylactic reactions with additional symptoms such as hypotension, palpitations, dyspnoea and oedema have been reported with marketed use of liraglutide." },
+          { "s": "emc-100178", "q": "Few cases of cholelithiasis (0.4%) and cholecystitis (0.1%) have been reported" },
+          { "s": "emc-100178", "q": "Delayed gastric emptying Intestinal obstruction" }
+        ] }
+    ] },
+    "monitoring": { "items": [
+      { "t": "Blood glucose self-monitoring is not needed for liraglutide itself, but is needed to adjust sulphonylurea or insulin doses, especially at the start.", "tag": "ongoing",
+        "src": [
+          { "s": "emc-100178", "q": "Self-monitoring of blood glucose is not needed in order to adjust the dose of liraglutide." },
+          { "s": "emc-100178", "q": "Blood glucose self-monitoring is necessary to adjust the dose of sulfonylurea and insulin" }
+        ] },
+      { "t": "On warfarin or another coumarin: more frequent INR checks when starting liraglutide.", "tag": "ongoing",
+        "src": [{ "s": "emc-100178", "q": "more frequent monitoring of INR (International Normalised Ratio) is recommended" }] },
+      { "t": "Stop if pancreatitis is suspected; do not restart if confirmed.", "tag": "stop",
+        "src": [{ "s": "emc-100178", "q": "If pancreatitis is suspected, liraglutide should be discontinued." }] }
+    ] },
+    "administration": { "items": [
+      { "t": "Subcutaneous injection once daily at any time, independent of meals, into the abdomen, thigh or upper arm; preferably about the same time each day. Never intravenous or intramuscular.",
+        "src": [
+          { "s": "emc-100178", "q": "Liraglutide must not be administered intravenously or intramuscularly." },
+          { "s": "emc-100178", "q": "Liraglutide is administered once daily at any time, independent of meals, and can be injected subcutaneously in the abdomen, in the thigh or in the upper arm." },
+          { "s": "emc-100178", "q": "it is preferable that liraglutide is injected around the same time of the day" }
+        ] },
+      { "t": "Rotate injection sites to reduce the risk of amyloid deposits at the site.",
+        "src": [{ "s": "emc-100178", "q": "Injection sites should always be rotated in order to reduce the risk of injection site amyloid deposits" }] }
+    ] },
+    "counselling": { "items": [
+      { "t": "Seek urgent medical help for severe, persistent abdominal pain that may go through to the back, with or without nausea and vomiting (possible pancreatitis).",
+        "src": [{ "s": "mhra-dsu-glp1-pancreatitis-2026", "q": "seek urgent medical attention if you experience severe, persistent abdominal pain, that may radiate to your back and may be accompanied by nausea and vomiting" }] },
+      { "t": "Drink plenty of fluids to avoid dehydration, especially if you have vomiting or diarrhoea.",
+        "src": [{ "s": "mhra-dsu-glp1-side-effects-2024", "q": "throughout treatment stay well hydrated by drinking plenty of fluids (such as water) to avoid dehydration" }] },
+      { "t": "Tell your healthcare team and anaesthetist before any surgery or sedation that you use this medicine; do not stop it without discussing with your doctor.",
+        "src": [
+          { "s": "mhra-dsu-glp1-aspiration-2025", "q": "make sure you inform your healthcare team including the anaesthetist about this prior to your surgical procedure" },
+          { "s": "mhra-dsu-glp1-aspiration-2025", "q": "take your prescribed medicine(s) as usual and do not stop your treatment without first discussing this with your doctor" }
+        ] },
+      { "t": "If you also use insulin: learn the signs of diabetic ketoacidosis (nausea, vomiting, abdominal pain, excessive thirst, passing urine often, difficulty breathing, confusion, unusual tiredness or sleepiness) and get urgent help if they occur.",
+        "src": [{ "s": "mhra-dsu-glp1-dka-insulin-2019", "q": "Inform patients of the signs and symptoms of diabetic ketoacidosis (nausea, vomiting, abdominal pain, excessive thirst, increased frequency of urination, difficulty breathing, confusion, unusual fatigue, or sleepiness)" }] },
+      { "t": "With a sulphonylurea or insulin, take precautions to avoid low blood sugar while driving.", "detail": true,
+        "src": [{ "s": "emc-100178", "q": "Patients should be advised to take precautions to avoid hypoglycaemia while driving and using machines" }] }
+    ] }
+  },
+  "rules": [
+    { "id": "liraglutide:allergy:liraglutide", "kind": "allergy", "level": "contraindicated", "med": "liraglutide", "allergen": ["liraglutide"],
+      "concern": "Hypersensitivity to liraglutide", "consequence": "Hypersensitivity reaction, including anaphylaxis.", "action": "Do not use.", "sourceWording": "Contraindications Hypersensitivity to the active substance",
+      "src": [{ "s": "emc-100178", "q": "Contraindications Hypersensitivity to the active substance or to any of the excipients listed in section 6.1." }] },
+    { "id": "liraglutide:condition:type-1-diabetes", "kind": "condition", "level": "avoid", "med": "liraglutide", "condition": "type-1-diabetes",
+      "concern": "Type 1 diabetes", "consequence": "Not a substitute for insulin.", "action": "Should not be used in type 1 diabetes.", "sourceWording": "should not be used in patients with type 1 diabetes mellitus",
+      "src": [{ "s": "emc-100178", "q": "Liraglutide should not be used in patients with type 1 diabetes mellitus or for the treatment of diabetic ketoacidosis. Liraglutide is not a substitute for insulin." }] },
+    { "id": "liraglutide:condition:diabetic-ketoacidosis", "kind": "condition", "level": "avoid", "med": "liraglutide", "condition": "diabetic-ketoacidosis",
+      "concern": "Diabetic ketoacidosis", "consequence": "Not an appropriate treatment.", "action": "Should not be used to treat diabetic ketoacidosis.", "sourceWording": "should not be used ... for the treatment of diabetic ketoacidosis",
+      "src": [{ "s": "emc-100178", "q": "Liraglutide should not be used in patients with type 1 diabetes mellitus or for the treatment of diabetic ketoacidosis." }] },
+    { "id": "liraglutide:condition:severe-heart-failure", "kind": "condition", "level": "avoid", "med": "liraglutide", "condition": "severe-heart-failure",
+      "concern": "Heart failure NYHA class IV", "consequence": "No therapeutic experience.", "action": "Not recommended.", "sourceWording": "liraglutide is therefore not recommended",
+      "src": [{ "s": "emc-100178", "q": "There is no therapeutic experience in patients with congestive heart failure New York Heart Association (NYHA) class IV, and liraglutide is therefore not recommended for use in these patients." }] },
+    { "id": "liraglutide:condition:inflammatory-bowel-disease", "kind": "condition", "level": "avoid", "med": "liraglutide", "condition": "inflammatory-bowel-disease",
+      "concern": "Inflammatory bowel disease", "consequence": "Limited experience; transient gastrointestinal adverse reactions (nausea, vomiting, diarrhoea).", "action": "Not recommended.", "sourceWording": "Use of liraglutide is not recommended in these patients",
+      "src": [
+        { "s": "emc-100178", "q": "There is limited experience in patients with inflammatory bowel disease and diabetic gastroparesis." },
+        { "s": "emc-100178", "q": "Use of liraglutide is not recommended in these patients since it is associated with transient gastrointestinal adverse reactions, including nausea, vomiting and diarrhoea." }
+      ] },
+    { "id": "liraglutide:condition:gastroparesis", "kind": "condition", "level": "avoid", "med": "liraglutide", "condition": "gastroparesis",
+      "concern": "Diabetic gastroparesis", "consequence": "Limited experience; gastrointestinal adverse reactions; delayed gastric emptying.", "action": "Not recommended.", "sourceWording": "Use of liraglutide is not recommended in these patients",
+      "src": [
+        { "s": "emc-100178", "q": "There is limited experience in patients with inflammatory bowel disease and diabetic gastroparesis." },
+        { "s": "emc-100178", "q": "Use of liraglutide is not recommended in these patients since it is associated with transient gastrointestinal adverse reactions, including nausea, vomiting and diarrhoea." }
+      ] },
+    { "id": "liraglutide:condition:pancreatitis-history", "kind": "condition", "level": "caution", "med": "liraglutide", "condition": "pancreatitis-history",
+      "concern": "History of pancreatitis", "consequence": "Not studied; acute pancreatitis (including necrotising and fatal cases) reported with GLP-1 receptor agonists.", "action": "Use with caution; stop if pancreatitis is suspected and do not restart if confirmed.", "sourceWording": "should be used with caution in these patients",
+      "src": [
+        { "s": "emc-100178", "q": "Liraglutide has not been studied in patients with a history of pancreatitis, and should be used with caution in these patients." },
+        { "s": "mhra-dsu-glp1-pancreatitis-2026", "q": "GLP-1 and GLP-1/GIP receptor agonists should be used with caution in patients with a history of pancreatitis" }
+      ] },
+    { "id": "liraglutide:condition:pancreatitis-current", "kind": "condition", "level": "avoid", "med": "liraglutide", "condition": "pancreatitis",
+      "concern": "Acute pancreatitis, current or suspected (for past or chronic pancreatitis see the history rule: use with caution)", "consequence": "Acute pancreatitis, including necrotising and fatal cases, is reported with GLP-1 receptor agonists.", "action": "Stop if pancreatitis is suspected; do not restart if acute pancreatitis is confirmed.", "sourceWording": "should be discontinued … should not be restarted",
+      "src": [
+        { "s": "emc-100178", "q": "If pancreatitis is suspected, liraglutide should be discontinued. If the diagnosis of pancreatitis is confirmed, liraglutide should not be restarted." },
+        { "s": "mhra-dsu-glp1-pancreatitis-2026", "q": "if pancreatitis is suspected, discontinue treatment with the GLP-1 or GLP-1/GIP receptor agonist immediately; do not restart therapy if the diagnosis of pancreatitis is confirmed" }
+      ] },
+    { "id": "liraglutide:condition:hypothyroidism", "kind": "condition", "level": "caution", "med": "liraglutide", "condition": "hypothyroidism",
+      "concern": "Pre-existing thyroid disease (e.g. hypothyroidism)", "consequence": "Thyroid adverse events such as goitre reported, particularly with pre-existing thyroid disease.", "action": "Use with caution.", "sourceWording": "should therefore be used with caution",
+      "src": [
+        { "s": "emc-100178", "q": "Thyroid adverse events, such as goitre, have been reported in clinical trials and in particular in patients with pre-existing thyroid disease." },
+        { "s": "emc-100178", "q": "Liraglutide should therefore be used with caution in these patients." }
+      ] },
+    { "id": "liraglutide:condition:thyrotoxicosis", "kind": "condition", "level": "caution", "med": "liraglutide", "condition": "thyrotoxicosis",
+      "concern": "Pre-existing thyroid disease (e.g. hyperthyroidism)", "consequence": "Thyroid adverse events such as goitre reported, particularly with pre-existing thyroid disease.", "action": "Use with caution.", "sourceWording": "should therefore be used with caution",
+      "src": [
+        { "s": "emc-100178", "q": "Thyroid adverse events, such as goitre, have been reported in clinical trials and in particular in patients with pre-existing thyroid disease." },
+        { "s": "emc-100178", "q": "Liraglutide should therefore be used with caution in these patients." }
+      ] },
+    { "id": "liraglutide:condition:thyroid-dysfunction", "kind": "condition", "level": "caution", "med": "liraglutide", "condition": "thyroid-dysfunction",
+      "concern": "Pre-existing thyroid disease", "consequence": "Thyroid adverse events such as goitre reported, particularly with pre-existing thyroid disease.", "action": "Use with caution.", "sourceWording": "should therefore be used with caution",
+      "src": [
+        { "s": "emc-100178", "q": "Thyroid adverse events, such as goitre, have been reported in clinical trials and in particular in patients with pre-existing thyroid disease." },
+        { "s": "emc-100178", "q": "Liraglutide should therefore be used with caution in these patients." }
+      ] },
+    { "id": "liraglutide:condition:surgery", "kind": "condition", "level": "caution", "med": "liraglutide", "condition": "surgery-planned",
+      "concern": "Procedure under general anaesthesia or deep sedation", "consequence": "Pulmonary aspiration risk from residual gastric contents (delayed gastric emptying), even after fasting.", "action": "Consider the aspiration risk before the procedure; anaesthetist to assess. Patients should not stop treatment without discussing with their doctor.", "sourceWording": "should be considered prior to performing procedures",
+      "src": [
+        { "s": "emc-100178", "q": "the increased risk of residual gastric content due to delayed gastric emptying (see section 4.8) should be considered prior to performing procedures with general anaesthesia or deep sedation" },
+        { "s": "mhra-dsu-glp1-aspiration-2025", "q": "anaesthetists should provide an individualised assessment of the aspiration risk" }
+      ] },
+    { "id": "liraglutide:condition:end-stage-renal-disease", "kind": "condition", "level": "avoid", "med": "liraglutide", "condition": "end-stage-renal-disease",
+      "concern": "End-stage renal disease", "consequence": "No therapeutic experience.", "action": "Not recommended (no dose adjustment needed in mild, moderate or severe renal impairment).", "sourceWording": "liraglutide is therefore not recommended",
+      "src": [{ "s": "emc-100178", "q": "There is no therapeutic experience in patients with end-stage renal disease, and liraglutide is therefore not recommended for use in these patients" }] },
+    { "id": "liraglutide:hepatic:severe", "kind": "hepatic", "level": "avoid", "med": "liraglutide", "hepatic": ["severe"],
+      "concern": "Severe hepatic impairment", "consequence": "Lower exposure; limited experience.", "action": "Not recommended.", "sourceWording": "is not recommended",
+      "src": [{ "s": "emc-100178", "q": "Liraglutide is not recommended for use in patients with severe hepatic impairment" }] },
+    { "id": "liraglutide:age:lt10", "kind": "age", "level": "info", "med": "liraglutide", "age": { "minYears": 0, "maxYears": 10 },
+      "concern": "Child under 10 years", "consequence": "No data.", "action": "Licensed from 10 years only.", "sourceWording": "No data are available for children below 10 years of age",
+      "src": [{ "s": "emc-100178", "q": "No data are available for children below 10 years of age" }] },
+    { "id": "liraglutide:pregnancy", "kind": "pregnancy", "level": "avoid", "med": "liraglutide",
+      "concern": "Pregnancy", "consequence": "No adequate human data; animal reproductive toxicity.", "action": "Should not be used; use insulin instead. Stop if pregnancy is planned or occurs. BUMPS: accidental early exposure is reassuring.", "sourceWording": "should not be used during pregnancy",
+      "src": [
+        { "s": "emc-100178", "q": "Liraglutide should not be used during pregnancy, and the use of insulin is recommended instead." },
+        { "s": "bumps-glp1-receptor-agonists", "q": "GLP-1 receptor agonists should not be used in pregnancy." }
+      ] },
+    { "id": "liraglutide:breastfeeding", "kind": "breastfeeding", "level": "avoid", "med": "liraglutide",
+      "concern": "Breastfeeding", "consequence": "Lack of experience; reduced growth in suckling rat pups.", "action": "Should not be used during breastfeeding (SmPC; MHRA via SPS).", "sourceWording": "should not be used during breast-feeding",
+      "src": [
+        { "s": "emc-100178", "q": "Because of lack of experience, liraglutide should not be used during breast-feeding." },
+        { "s": "sps-glp1-considerations", "q": "The MHRA advise GLP-1 RAs should not be taken by people who are breastfeeding due to a lack of safety data ." }
+      ] },
+    { "id": "liraglutide:interaction:sulfonylurea", "kind": "interaction", "level": "dose", "med": "liraglutide", "other": "group:sulfonylurea", "effect": "hypoglycaemia",
+      "concern": "Liraglutide + sulphonylurea", "consequence": "Hypoglycaemia (very common; severe hypoglycaemia mainly with a sulphonylurea).", "action": "A reduction in the sulphonylurea dose should be considered; self-monitor blood glucose to adjust it.", "sourceWording": "a reduction in the dose of sulfonylurea or insulin should be considered",
+      "src": [
+        { "s": "emc-100178", "q": "When Liraglutide is added to a sulfonylurea or insulin, a reduction in the dose of sulfonylurea or insulin should be considered to reduce the risk of hypoglycaemia" },
+        { "s": "emc-100178", "q": "Severe hypoglycaemia has primarily been observed when combined with a sulfonylurea." }
+      ] },
+    { "id": "liraglutide:interaction:sulfonylurea:child", "kind": "interaction", "level": "info", "med": "liraglutide", "other": "group:sulfonylurea", "age": { "minYears": 0, "maxYears": 18 },
+      "concern": "Liraglutide + sulphonylurea in a child or adolescent", "consequence": "Combination not covered by the licence below 18 years.", "action": "Combination therapy with a sulphonylurea is only valid for adults.", "sourceWording": "Combination therapy with sulfonylurea is only valid for adult patients",
+      "src": [{ "s": "emc-100178", "q": "Combination therapy with sulfonylurea is only valid for adult patients." }] },
+    { "id": "liraglutide:interaction:insulin", "kind": "interaction", "level": "dose", "med": "liraglutide", "other": "group:insulin", "effect": "hypoglycaemia",
+      "concern": "Liraglutide + insulin", "consequence": "Hypoglycaemia; but rapid insulin reduction or withdrawal has led to diabetic ketoacidosis (MHRA).", "action": "Consider reducing the insulin dose, stepwise, with blood glucose self-monitoring, especially when starting liraglutide.", "sourceWording": "a reduction in the dose of sulfonylurea or insulin should be considered",
+      "src": [
+        { "s": "emc-100178", "q": "When Liraglutide is added to a sulfonylurea or insulin, a reduction in the dose of sulfonylurea or insulin should be considered to reduce the risk of hypoglycaemia" },
+        { "s": "emc-100178", "q": "A stepwise approach to insulin dose reduction is recommended." },
+        { "s": "mhra-dsu-glp1-dka-insulin-2019", "q": "serious and life-threatening cases of diabetic ketoacidosis have been reported in association with exenatide, liraglutide, and dulaglutide, particularly after discontinuation or reduction of concomitant insulin" }
+      ] },
+    { "id": "liraglutide:interaction:warfarin", "kind": "interaction", "level": "monitor", "med": "liraglutide", "other": "warfarin",
+      "concern": "Liraglutide + warfarin (or other coumarin)", "consequence": "A clinically relevant interaction cannot be excluded (narrow therapeutic index).", "action": "Monitor INR more frequently when starting liraglutide.", "sourceWording": "more frequent monitoring of INR (International Normalised Ratio) is recommended",
+      "src": [
+        { "s": "emc-100178", "q": "A clinically relevant interaction with active substances with poor solubility or with narrow therapeutic index such as warfarin cannot be excluded." },
+        { "s": "emc-100178", "q": "Upon initiation of liraglutide treatment in patients on warfarin or other coumarin derivatives, more frequent monitoring of INR (International Normalised Ratio) is recommended." }
+      ] }
+  ]
+}
