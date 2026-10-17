@@ -165,7 +165,7 @@ export default function App() {
   // Tools that open as their own page (not a popup): ?section=tools&tool=<key>
   // Tools still being checked: shown as "Coming soon" on the live site, usable only on localhost
   const LOCAL = import.meta.env.DEV || ['localhost', '127.0.0.1'].includes(window.location.hostname)
-  const COMING_SOON = LOCAL ? [] : ['osteo', 'medcheck']
+  const COMING_SOON = LOCAL ? [] : ['osteo']
   const TOOL_PAGES = ['growth', 'milestones', 'phq9-ar', 'phq9-en', 'gad7-ar', 'gad7-en', 'fib4', 'ckd', 'curb65', 'osteo', 'cvd', 'medcheck'].filter(k => !COMING_SOON.includes(k))
   // Tools page: specialty filter chip ('all' or a group name)
   const [toolFilter, setToolFilter] = useState('all')
