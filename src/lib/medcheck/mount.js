@@ -179,7 +179,7 @@ export function mountMedCheck(root, kb) {
     const first = cut > 0 ? text.slice(0, cut + 1) : text;
     const rest = cut > 0 ? text.slice(cut + 1).trim() : '';
     return `<article class="alert sev-${a.severity ?? 'none'}" data-keys="${esc(keys)}">
-      <div class="alert-head"><span class="cat">${CATEGORY[a.category]}</span><span class="sev">${esc(a.severityLabel)}</span>${a.reviewStatus === 'pending-review' ? '<span class="tag draft">draft rule</span>' : ''}</div>
+      <div class="alert-head"><span class="cat">${CATEGORY[a.category]}</span><span class="sev">${esc(a.severityLabel)}</span></div>
       <div class="involves">${involves(a)}</div>
       <p>${esc(first)}</p>
       ${actions.slice(0, 1).map((q) => `<div class="action"><span class="lbl">Action</span>${esc(q)}</div>`).join('')}
